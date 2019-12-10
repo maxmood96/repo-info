@@ -377,14 +377,13 @@ Licenses: (parsed from: `/usr/share/doc/libcairo-gobject2/copyright`, `/usr/shar
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cairo=1.16.0-4
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.16.0-4.dsc' cairo_1.16.0-4.dsc 2806 SHA256:cd511a989ea189a15527f0b745196185df71dd3ab7396228cee0709d8b1c9616
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.16.0.orig.tar.xz' cairo_1.16.0.orig.tar.xz 41997432 SHA256:5e7b29b3f113ef870d1e3ecf8adf21f923396401604bda16d44be45e66052331
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.16.0-4.debian.tar.xz' cairo_1.16.0-4.debian.tar.xz 30248 SHA256:e2b4c5aae085857e91de4529c00043997b55bb17ebccd3744bf04ac4ccfd31df
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/cairo/1.16.0-4/
+
 
 ### `dpkg` source package: `cdebconf=0.249ubuntu1`
 
@@ -980,14 +979,9 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `LGPL-2+`
 - `MPL-1.1-or-LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.40.0+dfsg-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.40.0+dfsg-1build1.dsc' gdk-pixbuf_2.40.0+dfsg-1build1.dsc 2934 SHA256:9bba08384862bd10b759abf9210df27af64f4edec9ee9ea22e5827880acb364f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.40.0+dfsg.orig.tar.xz' gdk-pixbuf_2.40.0+dfsg.orig.tar.xz 5626144 SHA256:bdb3820005dc3c02ec8b1e2916a1d060f65f44d30ba48ab88704c3380d5a47b8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.40.0+dfsg-1build1.debian.tar.xz' gdk-pixbuf_2.40.0+dfsg-1build1.debian.tar.xz 17080 SHA256:1116d82dc9eef0481dfdc84c4ec56a8b0884cb14048c8b0c3ecfdd85e0de48c9
-```
 
 ### `dpkg` source package: `git=1:2.20.1-2ubuntu1`
 
@@ -1365,15 +1359,9 @@ Licenses: (parsed from: `/usr/share/doc/libilmbase-dev/copyright`, `/usr/share/d
 - `boost`
 - `ilmbase`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ilmbase=2.2.1-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/ilmbase/ilmbase_2.2.1-2ubuntu1.dsc' ilmbase_2.2.1-2ubuntu1.dsc 2401 SHA256:bd4e4f6d751ce4fbb111e7eec1591c70b4e150e86b7adb3f8a24d96c7897e485
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/ilmbase/ilmbase_2.2.1.orig.tar.gz' ilmbase_2.2.1.orig.tar.gz 573073 SHA256:cac206e63be68136ef556c2b555df659f45098c159ce24804e9d5e9e0286609e
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/ilmbase/ilmbase_2.2.1.orig.tar.gz.asc' ilmbase_2.2.1.orig.tar.gz.asc 566 SHA256:81f3e8947b240ffcae9178574ca7ebadeffa6071f9d03f7810e624e9d0060df0
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/ilmbase/ilmbase_2.2.1-2ubuntu1.debian.tar.xz' ilmbase_2.2.1-2ubuntu1.debian.tar.xz 14108 SHA256:56af498f0567bc49745c224b09065a59777f600b576353a93bdf2fd1e687d36a
-```
 
 ### `dpkg` source package: `imagemagick=8:6.9.10.23+dfsg-2.1ubuntu8`
 
@@ -2242,15 +2230,9 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh=0.9.0-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.0-1ubuntu1.dsc' libssh_0.9.0-1ubuntu1.dsc 2808 SHA256:080d380ed4e5f35267671241a52a19eb7f846f52555c40de40e4fcf1bae5b3df
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.0.orig.tar.xz' libssh_0.9.0.orig.tar.xz 487628 SHA256:25303c2995e663cd169fdd902bae88106f48242d7e96311d74f812023482c7a5
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.0.orig.tar.xz.asc' libssh_0.9.0.orig.tar.xz.asc 833 SHA256:376c3d17bd252290b911903cae6a0bacae7864194224d5bf6f3a0073baf7b83a
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.0-1ubuntu1.debian.tar.xz' libssh_0.9.0-1ubuntu1.debian.tar.xz 26432 SHA256:06fd3e68f95687f39ce5b33301c48058b2a5fcd1132fec2c670e89e78724bf50
-```
 
 ### `dpkg` source package: `libtasn1-6=4.14-3`
 
@@ -2382,14 +2364,13 @@ Licenses: (parsed from: `/usr/share/doc/libwmf-dev/copyright`, `/usr/share/doc/l
 
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libwmf=0.2.8.4-15
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwmf/libwmf_0.2.8.4-15.dsc' libwmf_0.2.8.4-15.dsc 1955 SHA256:0abfd39f3637d7d41ca2a8e74b922d332f9078c28609ea9bf136be00c6860d2f
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwmf/libwmf_0.2.8.4.orig.tar.gz' libwmf_0.2.8.4.orig.tar.gz 2169375 SHA256:5b345c69220545d003ad52bfd035d5d6f4f075e65204114a9e875e84895a7cf8
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwmf/libwmf_0.2.8.4-15.debian.tar.xz' libwmf_0.2.8.4-15.debian.tar.xz 12656 SHA256:4027eb1b7ea8bdd33ec8ec6be48275ded6cba895ccb79272b0f98211b26baeaa
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libwmf/0.2.8.4-15/
+
 
 ### `dpkg` source package: `libx11=2:1.6.8-1`
 
@@ -3075,14 +3056,9 @@ Licenses: (parsed from: `/usr/share/doc/libopenexr-dev/copyright`, `/usr/share/d
 
 - `openexr`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openexr=2.2.1-4.1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/openexr/openexr_2.2.1-4.1ubuntu1.dsc' openexr_2.2.1-4.1ubuntu1.dsc 2377 SHA256:b85994b01154c6af482ab06c7dba782395c29fc830c68810c39dd95992bb6466
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/openexr/openexr_2.2.1.orig.tar.gz' openexr_2.2.1.orig.tar.gz 18176639 SHA256:8f9a5af6131583404261931d9a5c83de0a425cb4b8b25ddab2b169fbf113aecd
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/openexr/openexr_2.2.1-4.1ubuntu1.debian.tar.xz' openexr_2.2.1-4.1ubuntu1.debian.tar.xz 22508 SHA256:ec4517647154f86430af15e101537d4d06eea71bc6918f0d6f7bf95fddfbce81
-```
 
 ### `dpkg` source package: `openldap=2.4.48+dfsg-1ubuntu3`
 
@@ -3190,14 +3166,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.3.1-5ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu1.dsc' pam_1.3.1-5ubuntu1.dsc 2736 SHA256:353c2f0c7d99f900e0dace4ab21386024cfa281d4709bd40e74ac7cae45d12b8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1.orig.tar.xz' pam_1.3.1.orig.tar.xz 912332 SHA256:eff47a4ecd833fbf18de9686632a70ee8d0794b79aecb217ebd0ce11db4cd0db
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu1.debian.tar.xz' pam_1.3.1-5ubuntu1.debian.tar.xz 158852 SHA256:344d8334b8f91cd14187d0f687a0b1e43270f850991c618fdba8a928630887f7
-```
 
 ### `dpkg` source package: `pango1.0=1.42.4-7`
 
@@ -3257,14 +3228,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcre2=10.32-5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.32-5.dsc' pcre2_10.32-5.dsc 2342 SHA256:df327f59608e018603b138cf5a557fe5febfa5f24281152d68f3a52ba542d504
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.32.orig.tar.gz' pcre2_10.32.orig.tar.gz 2169349 SHA256:9ca9be72e1a04f22be308323caa8c06ebd0c51efe99ee11278186cafbc4fe3af
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.32-5.diff.gz' pcre2_10.32-5.diff.gz 5187 SHA256:bfe23d2661bf5727a10a1c1e49660c35afc0a4ad1c151bdcefb7c5a52e71e685
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pcre2/10.32-5/
+
 
 ### `dpkg` source package: `pcre3=2:8.39-12`
 

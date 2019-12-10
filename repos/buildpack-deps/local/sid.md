@@ -737,19 +737,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=4.9
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.9.dsc' debianutils_4.9.dsc 1584 SHA256:c8bd2e3fa77382430511183ba83dd169d1719c2182d9dabbb9f6ae93f922e591
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.9.tar.xz' debianutils_4.9.tar.xz 157104 SHA256:20975c5cb8cb305f28c2ac35dd99fd9f594f25b6140b5d478a0a364e9fa8073f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debianutils/4.9/
 
-- https://sources.debian.net/src/debianutils/4.9/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/4.9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/4.9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.7-3`
 
@@ -3152,20 +3146,13 @@ Licenses: (parsed from: `/usr/share/doc/libwmf-dev/copyright`, `/usr/share/doc/l
 
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libwmf=0.2.8.4-15
-'http://deb.debian.org/debian/pool/main/libw/libwmf/libwmf_0.2.8.4-15.dsc' libwmf_0.2.8.4-15.dsc 1955 SHA256:0abfd39f3637d7d41ca2a8e74b922d332f9078c28609ea9bf136be00c6860d2f
-'http://deb.debian.org/debian/pool/main/libw/libwmf/libwmf_0.2.8.4.orig.tar.gz' libwmf_0.2.8.4.orig.tar.gz 2169375 SHA256:5b345c69220545d003ad52bfd035d5d6f4f075e65204114a9e875e84895a7cf8
-'http://deb.debian.org/debian/pool/main/libw/libwmf/libwmf_0.2.8.4-15.debian.tar.xz' libwmf_0.2.8.4-15.debian.tar.xz 12656 SHA256:4027eb1b7ea8bdd33ec8ec6be48275ded6cba895ccb79272b0f98211b26baeaa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libwmf/0.2.8.4-15/
 
-- https://sources.debian.net/src/libwmf/0.2.8.4-15/ (for browsing the source)
-- https://sources.debian.net/src/libwmf/0.2.8.4-15/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libwmf/0.2.8.4-15/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libx11=2:1.6.8-1`
 
@@ -3712,21 +3699,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=5.2-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_5.2-1.dsc' mercurial_5.2-1.dsc 2737 SHA256:771155d0476c27a82dc12ba9a116a4f4d2733d74f6e64a7287644235f4559da6
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_5.2.orig.tar.gz' mercurial_5.2.orig.tar.gz 7330557 SHA256:ff030e923f03ee15c91191996fcb099bfcfa60c7df263be227f67b6a65d36194
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_5.2.orig.tar.gz.asc' mercurial_5.2.orig.tar.gz.asc 833 SHA256:ed24c21d8f35311f61073505bb57a8be617894a1b3b49da27da2274dab09b780
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_5.2-1.debian.tar.xz' mercurial_5.2-1.debian.tar.xz 62512 SHA256:e8aad1c863dbc59cbb4a1d99699cb3f2176c0dda019f107369473a4e8e6ccb77
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/5.2-1/
 
-- https://sources.debian.net/src/mercurial/5.2-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/5.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/5.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.64`
 
@@ -5291,20 +5270,13 @@ Licenses: (parsed from: `/usr/share/doc/libx265-179/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris x265=3.2-2
-'http://deb.debian.org/debian/pool/main/x/x265/x265_3.2-2.dsc' x265_3.2-2.dsc 2229 SHA256:a323ff06939ca1cd33f7184a024f9aa3ebf05d7b6b3fad92864766367a1d20c4
-'http://deb.debian.org/debian/pool/main/x/x265/x265_3.2.orig.tar.gz' x265_3.2.orig.tar.gz 1425689 SHA256:364d79bcd56116a9e070fdeb1d9d2aaef1a786b4970163fb56ff0991a183133b
-'http://deb.debian.org/debian/pool/main/x/x265/x265_3.2-2.debian.tar.xz' x265_3.2-2.debian.tar.xz 13080 SHA256:0bb0d4339d521d47387b3c469fd793ec6fd63e21f2840603bf7e474acb87318d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/x265/3.2-2/
 
-- https://sources.debian.net/src/x265/3.2-2/ (for browsing the source)
-- https://sources.debian.net/src/x265/3.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/x265/3.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xorg-sgml-doctools=1:1.11-1`
 

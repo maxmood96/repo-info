@@ -575,20 +575,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.66.0-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.66.0-1.dsc' curl_7.66.0-1.dsc 2645 SHA256:ccbb6c4afc1cd645588c7df71bac4e5927d921044add1db5f44237e40c9217d2
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.66.0.orig.tar.gz' curl_7.66.0.orig.tar.gz 4066716 SHA256:d0393da38ac74ffac67313072d7fe75b1fa1010eb5987f63f349b024a36b7ffb
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.66.0-1.debian.tar.xz' curl_7.66.0-1.debian.tar.xz 29132 SHA256:c2de2c6f4de94b74ae78e9d2ebff10172a2c38609389b691de3e9638c775fd8f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.66.0-1/
 
-- https://sources.debian.net/src/curl/7.66.0-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.66.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.66.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-1`
 
@@ -1910,20 +1903,13 @@ Licenses: (parsed from: `/usr/share/doc/libisl21/copyright`)
 - `LGPL-2.1+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris isl=0.21-2
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.21-2.dsc' isl_0.21-2.dsc 1846 SHA256:561e5a9234ff4f1dcab8f57b703ed8fc4a5aadbf3cc0a31ece57a00b4d65f7d5
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.21.orig.tar.xz' isl_0.21.orig.tar.xz 1621680 SHA256:777058852a3db9500954361e294881214f6ecd4b594c00da5eee974cd6a54960
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.21-2.debian.tar.xz' isl_0.21-2.debian.tar.xz 23724 SHA256:ca40ff6d2a6e80dabf018a6c249d9899866af20c30fb828d7194711d3e9cb9bd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/isl/0.21-2/
 
-- https://sources.debian.net/src/isl/0.21-2/ (for browsing the source)
-- https://sources.debian.net/src/isl/0.21-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/isl/0.21-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `jbigkit=2.1-3.1`
 
@@ -3713,21 +3699,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=5.2-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_5.2-1.dsc' mercurial_5.2-1.dsc 2737 SHA256:771155d0476c27a82dc12ba9a116a4f4d2733d74f6e64a7287644235f4559da6
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_5.2.orig.tar.gz' mercurial_5.2.orig.tar.gz 7330557 SHA256:ff030e923f03ee15c91191996fcb099bfcfa60c7df263be227f67b6a65d36194
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_5.2.orig.tar.gz.asc' mercurial_5.2.orig.tar.gz.asc 833 SHA256:ed24c21d8f35311f61073505bb57a8be617894a1b3b49da27da2274dab09b780
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_5.2-1.debian.tar.xz' mercurial_5.2-1.debian.tar.xz 62512 SHA256:e8aad1c863dbc59cbb4a1d99699cb3f2176c0dda019f107369473a4e8e6ccb77
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/5.2-1/
 
-- https://sources.debian.net/src/mercurial/5.2-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/5.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/5.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.64`
 
@@ -5279,20 +5257,13 @@ Licenses: (parsed from: `/usr/share/doc/libx265-179/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris x265=3.2-2
-'http://deb.debian.org/debian/pool/main/x/x265/x265_3.2-2.dsc' x265_3.2-2.dsc 2229 SHA256:a323ff06939ca1cd33f7184a024f9aa3ebf05d7b6b3fad92864766367a1d20c4
-'http://deb.debian.org/debian/pool/main/x/x265/x265_3.2.orig.tar.gz' x265_3.2.orig.tar.gz 1425689 SHA256:364d79bcd56116a9e070fdeb1d9d2aaef1a786b4970163fb56ff0991a183133b
-'http://deb.debian.org/debian/pool/main/x/x265/x265_3.2-2.debian.tar.xz' x265_3.2-2.debian.tar.xz 13080 SHA256:0bb0d4339d521d47387b3c469fd793ec6fd63e21f2840603bf7e474acb87318d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/x265/3.2-2/
 
-- https://sources.debian.net/src/x265/3.2-2/ (for browsing the source)
-- https://sources.debian.net/src/x265/3.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/x265/3.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xorg-sgml-doctools=1:1.11-1`
 
