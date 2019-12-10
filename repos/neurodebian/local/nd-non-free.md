@@ -434,19 +434,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=4.9
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.9.dsc' debianutils_4.9.dsc 1584 SHA256:c8bd2e3fa77382430511183ba83dd169d1719c2182d9dabbb9f6ae93f922e591
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.9.tar.xz' debianutils_4.9.tar.xz 157104 SHA256:20975c5cb8cb305f28c2ac35dd99fd9f594f25b6140b5d478a0a364e9fa8073f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debianutils/4.9/
 
-- https://sources.debian.net/src/debianutils/4.9/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/4.9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/4.9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.7-3`
 
