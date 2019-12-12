@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:52f7c6fb16b9e24691d5b200d81b2db1c3dae95d2a744ac5db72b858db6f70ef`
-- Created: `2019-11-14T22:48:23.891959415Z`
-- Virtual Size: ~ 215.72 Mb  
+- Image ID: `sha256:8e347affc72a211a0fa374a5a4b0cacc9bcdf83c3dedbceb971ea41f82d29eb1`
+- Created: `2019-12-11T23:20:58.201618916Z`
+- Virtual Size: ~ 222.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -153,6 +153,23 @@ OpenSSL
 
 ```
 
+### `apk` package: `libedit`
+
+```console
+libedit-20190324.3.1-r0 description:
+BSD line editing library
+
+libedit-20190324.3.1-r0 webpage:
+https://www.thrysoee.dk/editline
+
+libedit-20190324.3.1-r0 installed size:
+200704
+
+libedit-20190324.3.1-r0 license:
+BSD-3-Clause
+
+```
+
 ### `apk` package: `libssl1.1`
 
 ```console
@@ -218,6 +235,91 @@ musl-utils-1.1.22-r3 installed size:
 
 musl-utils-1.1.22-r3 license:
 MIT BSD GPL2+
+
+```
+
+### `apk` package: `ncurses-libs`
+
+```console
+ncurses-libs-6.1_p20190518-r0 description:
+Ncurses libraries
+
+ncurses-libs-6.1_p20190518-r0 webpage:
+https://www.gnu.org/software/ncurses/
+
+ncurses-libs-6.1_p20190518-r0 installed size:
+503808
+
+ncurses-libs-6.1_p20190518-r0 license:
+MIT
+
+```
+
+### `apk` package: `ncurses-terminfo`
+
+```console
+ncurses-terminfo-6.1_p20190518-r0 description:
+Console display library (other terminfo files)
+
+ncurses-terminfo-6.1_p20190518-r0 webpage:
+https://www.gnu.org/software/ncurses/
+
+ncurses-terminfo-6.1_p20190518-r0 installed size:
+7307264
+
+ncurses-terminfo-6.1_p20190518-r0 license:
+MIT
+
+```
+
+### `apk` package: `ncurses-terminfo-base`
+
+```console
+ncurses-terminfo-base-6.1_p20190518-r0 description:
+Descriptions of common terminals
+
+ncurses-terminfo-base-6.1_p20190518-r0 webpage:
+https://www.gnu.org/software/ncurses/
+
+ncurses-terminfo-base-6.1_p20190518-r0 installed size:
+94208
+
+ncurses-terminfo-base-6.1_p20190518-r0 license:
+MIT
+
+```
+
+### `apk` package: `openssh-client`
+
+```console
+openssh-client-8.1_p1-r0 description:
+OpenBSD's SSH client
+
+openssh-client-8.1_p1-r0 webpage:
+https://www.openssh.com/portable.html
+
+openssh-client-8.1_p1-r0 installed size:
+3485696
+
+openssh-client-8.1_p1-r0 license:
+BSD
+
+```
+
+### `apk` package: `openssh-keygen`
+
+```console
+openssh-keygen-8.1_p1-r0 description:
+ssh helper program for generating keys
+
+openssh-keygen-8.1_p1-r0 webpage:
+https://www.openssh.com/portable.html
+
+openssh-keygen-8.1_p1-r0 installed size:
+409600
+
+openssh-keygen-8.1_p1-r0 license:
+BSD
 
 ```
 

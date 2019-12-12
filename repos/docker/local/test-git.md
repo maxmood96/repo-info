@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:76b11bbf1650e01589eeba2a70477db90f913bb04eb9559fda2d54de5e15a8a1`
-- Created: `2019-11-14T22:49:03.114283971Z`
-- Virtual Size: ~ 237.52 Mb  
+- Image ID: `sha256:cd6fefe517a89d818bcbdf3465b0bf9657cc4b3bc72f3cb9bc098ff9169ace33`
+- Created: `2019-12-11T23:21:36.480944202Z`
+- Virtual Size: ~ 237.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -139,16 +139,16 @@ MIT
 ### `apk` package: `git`
 
 ```console
-git-2.22.0-r0 description:
+git-2.22.2-r0 description:
 Distributed version control system
 
-git-2.22.0-r0 webpage:
+git-2.22.2-r0 webpage:
 https://www.git-scm.com/
 
-git-2.22.0-r0 installed size:
-13901824
+git-2.22.2-r0 installed size:
+13930496
 
-git-2.22.0-r0 license:
+git-2.22.2-r0 license:
 GPL-2.0-or-later
 
 ```
