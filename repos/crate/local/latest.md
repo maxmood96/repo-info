@@ -1,10 +1,10 @@
-# `crate:4.0.9`
+# `crate:4.0.10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ae587d1068ef3305ab5ca8cc89d0818a22a765a91ce7c27aef0b875baea4742b`
-- Created: `2019-11-28T17:20:43.198402016Z`
-- Virtual Size: ~ 678.32 Mb  
+- Image ID: `sha256:c4b9ab0ca643af2d1e36797cc0f3449f16e8db5dcee5f3742391368a8122e225`
+- Created: `2019-12-16T23:22:14.670301969Z`
+- Virtual Size: ~ 678.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `CRATE_HEAP_SIZE=512M`
 - Labels:
   - `maintainer=Crate.io <office@crate.io>`
-  - `org.label-schema.build-date=2019-11-25T16:34:26.710137`
+  - `org.label-schema.build-date=2019-12-10T13:14:43.986536`
   - `org.label-schema.description=CrateDB is a distributed SQL database handles massive amounts of machine data in real-time.`
   - `org.label-schema.license=GPLv2`
   - `org.label-schema.name=crate`
@@ -23,7 +23,7 @@
   - `org.label-schema.url=https://crate.io/products/cratedb/`
   - `org.label-schema.vcs-url=https://github.com/crate/docker-crate`
   - `org.label-schema.vendor=Crate.io`
-  - `org.label-schema.version=4.0.9`
+  - `org.label-schema.version=4.0.10`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -36,6 +36,8 @@ Source:
 ```console
 $ yumdownloader --quiet --source --urls acl-2.2.51-14.el7
 Enabling epel-source repository
+https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/7/SRPMS/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
+Trying other mirror.
 Enabling updates-source repository
 Enabling base-source repository
 Enabling ius-source repository
