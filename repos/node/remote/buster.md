@@ -1,7 +1,7 @@
 ## `node:buster`
 
 ```console
-$ docker pull node@sha256:35d90df26e132c90fb845e0a6adb35a7c3be29f1189bd9c57167b4fb0128bc92
+$ docker pull node@sha256:53101b3b3997f44dfd58fa8a6673386b40c5e7ba3dbdc3f251e5d79a8c0261ce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15,14 +15,14 @@ $ docker pull node@sha256:35d90df26e132c90fb845e0a6adb35a7c3be29f1189bd9c57167b4
 ### `node:buster` - linux; amd64
 
 ```console
-$ docker pull node@sha256:b300af3f4b3464629c73106ee89432b50918fddd08c27eec489abe54c9edcbd7
+$ docker pull node@sha256:e3d6fded1691dd96fe9097071fce91a2d1ba5c675092cc04b81745e9a6b9ccdc
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **346.4 MB (346357798 bytes)**  
+-	Total Size: **347.5 MB (347541348 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f9ecc0dc567f51f30bd8a4a2e98325df4dddd8e58299a08a40f68f24297775e3`
+-	Image ID: `sha256:13607d3cc1e154c4a2351388152e735ff1f587e3e6932239b24b6146112bd96e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
@@ -41,19 +41,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercuri
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
 # Sat, 23 Nov 2019 14:16:54 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
-# Fri, 06 Dec 2019 23:23:14 GMT
-ENV NODE_VERSION=13.3.0
-# Fri, 06 Dec 2019 23:23:20 GMT
+# Wed, 18 Dec 2019 16:25:17 GMT
+ENV NODE_VERSION=13.4.0
+# Wed, 18 Dec 2019 16:25:23 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && set -ex   && for key in     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     B9AE9905FFD7803F25714661B63B535A4C206CA9     77984A986EBC2AA786BC0F66B01FBB92821C587A     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     4ED778F539E3634C779C87C6D7062848A1AB005C     A48C2BEE680E841632CD4E44F07496B3EB3C1762     B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
-# Fri, 06 Dec 2019 23:23:20 GMT
-ENV YARN_VERSION=1.19.2
-# Fri, 06 Dec 2019 23:23:21 GMT
+# Wed, 18 Dec 2019 16:25:23 GMT
+ENV YARN_VERSION=1.21.1
+# Wed, 18 Dec 2019 16:25:25 GMT
 RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz
-# Fri, 06 Dec 2019 23:23:22 GMT
+# Wed, 18 Dec 2019 16:25:25 GMT
 COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ 
-# Fri, 06 Dec 2019 23:23:22 GMT
+# Wed, 18 Dec 2019 16:25:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 06 Dec 2019 23:23:22 GMT
+# Wed, 18 Dec 2019 16:25:25 GMT
 CMD ["node"]
 ```
 
@@ -82,16 +82,16 @@ CMD ["node"]
 		Last Modified: Sat, 23 Nov 2019 14:21:46 GMT  
 		Size: 4.2 KB (4178 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:171637872e97701b46bb346f9a2d189ff8c13ec76b7c8257543b22a63b602070`  
-		Last Modified: Fri, 06 Dec 2019 23:26:39 GMT  
-		Size: 33.0 MB (33001082 bytes)  
+	-	`sha256:88ea92024ac082db9bad350db13dada7c35a7cd5cc7650ebaba554ebbee7ded6`  
+		Last Modified: Wed, 18 Dec 2019 16:35:26 GMT  
+		Size: 34.2 MB (34183703 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1ea8caab0b831c12381f3333f8263db044f721c24f07b1d77fc3cc36833d277`  
-		Last Modified: Fri, 06 Dec 2019 23:26:32 GMT  
-		Size: 1.3 MB (1333186 bytes)  
+	-	`sha256:59886e399b40c03cb45ff276e31a33374704ef95062022618f8124c694244f18`  
+		Last Modified: Wed, 18 Dec 2019 16:35:20 GMT  
+		Size: 1.3 MB (1334115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6c9c2d56da9a818b320ff3683a24f08117442f289eb089584097e2470559b26`  
-		Last Modified: Fri, 06 Dec 2019 23:26:32 GMT  
+	-	`sha256:fc71eafcd744f94d747e4849031f9578f1606d98bf96882a88ba32b465317a57`  
+		Last Modified: Wed, 18 Dec 2019 16:35:19 GMT  
 		Size: 283.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 

@@ -1,7 +1,7 @@
 ## `node:dubnium-slim`
 
 ```console
-$ docker pull node@sha256:2fa03d4ee9b4a61115426c25e4a999c035acdde662993c73d8a0e1f927f759fd
+$ docker pull node@sha256:49d298084dc93e35ef1d2785bf9c33ca11c9af02f05cac7b47db5cb2ad58bf75
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15,14 +15,14 @@ $ docker pull node@sha256:2fa03d4ee9b4a61115426c25e4a999c035acdde662993c73d8a0e1
 ### `node:dubnium-slim` - linux; amd64
 
 ```console
-$ docker pull node@sha256:9b2b101f06f70fcf7a74368c4f9468277f06165e8c21aa7c90a32ed08969020e
+$ docker pull node@sha256:9e1e5707a761283210976ae8aabf4fcfd2a144bd4fa973619dd7629857e3728f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.8 MB (54758827 bytes)**  
+-	Total Size: **55.9 MB (55937438 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:123ce64aa15035ddab6b855129724e7b37ece4a848dd9652354be56fcd95751a`
+-	Image ID: `sha256:9f77df43d29f2d3171490222f0924d9d653c288515ac4ec0171811057230878f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
@@ -33,19 +33,19 @@ ADD file:2c1f5e08834f13ccb9c2326204eb2556e03239d00171e75755c7195289374c61 in /
 CMD ["bash"]
 # Fri, 22 Nov 2019 15:11:03 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
-# Fri, 22 Nov 2019 15:18:29 GMT
-ENV NODE_VERSION=10.17.0
-# Fri, 22 Nov 2019 15:18:55 GMT
+# Wed, 18 Dec 2019 16:30:41 GMT
+ENV NODE_VERSION=10.18.0
+# Wed, 18 Dec 2019 16:30:57 GMT
 RUN buildDeps='xz-utils'     && ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64';;       ppc64el) ARCH='ppc64le';;       s390x) ARCH='s390x';;       arm64) ARCH='arm64';;       armhf) ARCH='armv7l';;       i386) ARCH='x86';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr $buildDeps --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && for key in       94AE36675C464D64BAFA68DD7434390BDBE9B9C5       FD3A5288F042B6850C66B31F09FE44734EB7990E       71DCFD284A79C3B38668286BC97EC7A07EDE3FC1       DD8F2338BAE7501E3DD5AC78C273792F7D83545D       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8       B9AE9905FFD7803F25714661B63B535A4C206CA9       77984A986EBC2AA786BC0F66B01FBB92821C587A       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       4ED778F539E3634C779C87C6D7062848A1AB005C       A48C2BEE680E841632CD4E44F07496B3EB3C1762       B9E2F5981AA6E0CD28160D9FF13993A75599653C     ; do       gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||       gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||       gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && apt-get purge -y --auto-remove $buildDeps     && ln -s /usr/local/bin/node /usr/local/bin/nodejs
-# Fri, 22 Nov 2019 15:18:55 GMT
-ENV YARN_VERSION=1.19.1
-# Fri, 22 Nov 2019 15:18:59 GMT
+# Wed, 18 Dec 2019 16:30:58 GMT
+ENV YARN_VERSION=1.21.1
+# Wed, 18 Dec 2019 16:31:01 GMT
 RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz
-# Fri, 22 Nov 2019 15:19:00 GMT
+# Wed, 18 Dec 2019 16:31:01 GMT
 COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ 
-# Fri, 22 Nov 2019 15:19:00 GMT
+# Wed, 18 Dec 2019 16:31:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 22 Nov 2019 15:19:00 GMT
+# Wed, 18 Dec 2019 16:31:02 GMT
 CMD ["node"]
 ```
 
@@ -58,17 +58,17 @@ CMD ["node"]
 		Last Modified: Fri, 22 Nov 2019 15:22:04 GMT  
 		Size: 4.1 KB (4148 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:138e53be105ff1a5f20fbd2f609b0353c250c8177aeaecc30dfe9ec3599b0f38`  
-		Last Modified: Fri, 22 Nov 2019 15:24:42 GMT  
-		Size: 30.8 MB (30830030 bytes)  
+	-	`sha256:7adec37b3bda9eca20a43973c19b638177b9adeca4eb39cd6c62dc725b776a85`  
+		Last Modified: Wed, 18 Dec 2019 16:38:18 GMT  
+		Size: 32.0 MB (32007118 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86cff783ee2723d6b5ba98895b6819975514d795984d67df2333053c57dc7be8`  
-		Last Modified: Fri, 22 Nov 2019 15:24:31 GMT  
-		Size: 1.4 MB (1399785 bytes)  
+	-	`sha256:3b7159092ced856d5de0803c3647aa9293ff22befa4ffe72451db3fff559c097`  
+		Last Modified: Wed, 18 Dec 2019 16:38:12 GMT  
+		Size: 1.4 MB (1401306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7ec8981b5f9f80605eb06f9de0d59a904f35987db02fb2736d8a110d6d66ae8`  
-		Last Modified: Fri, 22 Nov 2019 15:24:31 GMT  
-		Size: 292.0 B  
+	-	`sha256:fba52de0556e1a1a3465e808effd5064bd24a783276cf9deb699b7b697e7b062`  
+		Last Modified: Wed, 18 Dec 2019 16:38:12 GMT  
+		Size: 294.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `node:dubnium-slim` - linux; arm variant v7
