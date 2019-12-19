@@ -1,10 +1,10 @@
-# `drupal:8.7.10-fpm-alpine`
+# `drupal:8.8.1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:34433d84d8d4fe03473cf3cc61486530ea27a4634f9238da16508d7cc0cb9215`
-- Created: `2019-12-06T01:51:27.292751578Z`
-- Virtual Size: ~ 154.24 Mb  
+- Image ID: `sha256:fc4e4f67a5a6c635510e0779b16eb913b5e5716e9b8e8ae5da168d3cc69ca64b`
+- Created: `2019-12-19T03:13:02.312144649Z`
+- Virtual Size: ~ 159.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -18,13 +18,13 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.12`
-  - `PHP_URL=https://www.php.net/get/php-7.3.12.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.3.12.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=aafe5e9861ad828860c6af8c88cdc1488314785962328eb1783607c1fdd855df`
+  - `PHP_VERSION=7.3.13`
+  - `PHP_URL=https://www.php.net/get/php-7.3.13.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.3.13.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=57ac55fe442d2da650abeb9e6fa161bd3a98ba6528c029f076f8bba43dd5c228`
   - `PHP_MD5=`
-  - `DRUPAL_VERSION=8.7.10`
-  - `DRUPAL_MD5=83a01a3f8bcb2a8db5e91ad1dfdde24f`
+  - `DRUPAL_VERSION=8.8.1`
+  - `DRUPAL_MD5=0e0af2652e6ad4da27c0f7bf35c5e1e1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -592,16 +592,16 @@ GPL-2.0
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.28.0-r1 description:
+sqlite-libs-3.28.0-r2 description:
 Sqlite3 library
 
-sqlite-libs-3.28.0-r1 webpage:
+sqlite-libs-3.28.0-r2 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.28.0-r1 installed size:
+sqlite-libs-3.28.0-r2 installed size:
 925696
 
-sqlite-libs-3.28.0-r1 license:
+sqlite-libs-3.28.0-r2 license:
 Public-Domain
 
 ```
