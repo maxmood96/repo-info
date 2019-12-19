@@ -43,7 +43,7 @@
 ## `swift:4`
 
 ```console
-$ docker pull swift@sha256:85311efc468f5ce1968a46687cccb5d32c563bf2f8781f47d28bf0c5f377aa0e
+$ docker pull swift@sha256:be424c824b74373531f4f752da8a6b2c3e9e76a127470a1ff12ef65407fb495e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -53,77 +53,77 @@ $ docker pull swift@sha256:85311efc468f5ce1968a46687cccb5d32c563bf2f8781f47d28bf
 ### `swift:4` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:351feb9b5ed38fa2a755fcb5fa1e282985a5e505ecd3ab7a7fcf2fc1efba43aa
+$ docker pull swift@sha256:9e4870eb751e6c1b75cd7bdd4312901deaf39b44b9702e7c834698ab563ed5b7
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **496.8 MB (496758868 bytes)**  
+-	Total Size: **496.7 MB (496740977 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:baebdfa112bb8b90f110ed1042f465d812d8a4160a28a44e2b9563818e4acb49`
+-	Image ID: `sha256:aef096e8aacb66a942ba74235527bae2efe2fa97d85d2792805a6fc06695f75c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 Nov 2019 00:22:54 GMT
-ADD file:4eb02fc768cad452a37e8df30bbfcc728f3e6e7ca33af177fd4de06fd07c2098 in / 
-# Wed, 27 Nov 2019 00:22:55 GMT
+# Thu, 19 Dec 2019 04:24:35 GMT
+ADD file:f0b8eaa718bc3965b1e8395f5a6bea97c16651b50614e676bb3eaf31335a0045 in / 
+# Thu, 19 Dec 2019 04:24:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:37 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 CMD ["/bin/bash"]
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:37 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Wed, 27 Nov 2019 01:44:04 GMT
+# Thu, 19 Dec 2019 09:07:06 GMT
 RUN apt-get -q update &&     apt-get -q install -y     make     libc6-dev     clang-3.8     curl     libedit-dev     libpython2.7     libicu-dev     libssl-dev     libxml2     tzdata     git     libcurl4-openssl-dev     pkg-config     && update-alternatives --quiet --install /usr/bin/clang clang /usr/bin/clang-3.8 100     && update-alternatives --quiet --install /usr/bin/clang++ clang++ /usr/bin/clang++-3.8 100     && rm -r /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 01:44:05 GMT
+# Thu, 19 Dec 2019 09:07:06 GMT
 ARG SWIFT_PLATFORM=ubuntu16.04
-# Wed, 27 Nov 2019 01:44:05 GMT
+# Thu, 19 Dec 2019 09:07:07 GMT
 ARG SWIFT_BRANCH=swift-4.2.4-release
-# Wed, 27 Nov 2019 01:44:05 GMT
+# Thu, 19 Dec 2019 09:07:07 GMT
 ARG SWIFT_VERSION=swift-4.2.4-RELEASE
-# Wed, 27 Nov 2019 01:44:06 GMT
+# Thu, 19 Dec 2019 09:07:07 GMT
 ENV SWIFT_PLATFORM=ubuntu16.04 SWIFT_BRANCH=swift-4.2.4-release SWIFT_VERSION=swift-4.2.4-RELEASE
-# Wed, 27 Nov 2019 01:44:56 GMT
+# Thu, 19 Dec 2019 09:07:52 GMT
 RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | tr -d .)/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz     && curl -fSsL $SWIFT_URL -o swift.tar.gz     && curl -fSsL $SWIFT_URL.sig -o swift.tar.gz.sig     && export GNUPGHOME="$(mktemp -d)"     && set -e;         for key in           8513444E2DA36B7C1659AF4D7638F1FB2B2B08C4           A3BAFD3556A59079C06894BD63BC1CFE91D306C6           5E4DF843FB065D7F7E24FBA2EF5430F071E1B235         ; do           gpg --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";         done     && gpg --batch --verify --quiet swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && rm -r "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && chmod -R o+r /usr/lib/swift
-# Wed, 27 Nov 2019 01:45:02 GMT
+# Thu, 19 Dec 2019 09:07:53 GMT
 RUN swift --version
 ```
 
 -	Layers:
-	-	`sha256:976a760c94fcdd7d105269ae621e8269e7bb25a58c52ae667b4029a6bc7e33cb`  
-		Last Modified: Sat, 09 Nov 2019 00:25:10 GMT  
-		Size: 44.1 MB (44145376 bytes)  
+	-	`sha256:3386e6af03b043219225367632569465e5ecd47391d1f99a6d265e51bd463a83`  
+		Last Modified: Thu, 12 Dec 2019 08:26:09 GMT  
+		Size: 44.1 MB (44123254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c58992f3c37bb64aeba18910408cda9a7a63e212fe27e95065a8d54130ca5926`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
+	-	`sha256:49ac0bbe6c8eeb959337b336ceaa5c3bbbae81e316025f9b94ede453540f2377`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
 		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca0e5e7f12e6eb512246aea5579fcb771fe7203bc60944384d5cd7962f87ddb`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 846.0 B  
+	-	`sha256:d1983a67e104e801fceb1850a375a71fe6b62636ba7a8403d9644f308a6a43f9`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2a274cc00ca5f671b1740c43672dbc96504760cee585e7604029a3fe56854a8`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 168.0 B  
+	-	`sha256:1a0f3a523f04f61db942018321ae122f90d8e3303e243b005e8de9817daf7028`  
+		Last Modified: Thu, 19 Dec 2019 04:25:59 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd89ec4b5d308403e11d9c2f85aa4e6ab7c2b05742efda8b8f0bffd6f7b4a42a`  
-		Last Modified: Wed, 27 Nov 2019 01:53:36 GMT  
-		Size: 224.4 MB (224445807 bytes)  
+	-	`sha256:480bb4f8623911f9052441150588b986a5f1835dba1fcb0532902826aa64d986`  
+		Last Modified: Thu, 19 Dec 2019 09:16:47 GMT  
+		Size: 224.5 MB (224450033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d22ec8e069dc958226adab35f8db1bd2e9d4520c8c972ef2a66fd3838a1006c`  
-		Last Modified: Wed, 27 Nov 2019 01:53:33 GMT  
-		Size: 228.2 MB (228166142 bytes)  
+	-	`sha256:7ef37879ffb3094b7dc023e93702bc5acb75ec3db8c4948fefa5ae5f771d2a27`  
+		Last Modified: Thu, 19 Dec 2019 09:16:45 GMT  
+		Size: 228.2 MB (228166143 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:4.0`
 
 ```console
-$ docker pull swift@sha256:92c97a54956eb164dc71ca49c5a6c5ce9f3c1fada53da9a72f3ef85c914258fe
+$ docker pull swift@sha256:9861923e227cd741c77eaf7c1ebd65e9e165f0bd693cbe6e48b503f394e3b51d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -133,77 +133,77 @@ $ docker pull swift@sha256:92c97a54956eb164dc71ca49c5a6c5ce9f3c1fada53da9a72f3ef
 ### `swift:4.0` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:e72a03eca5a6b2a52604bff8039be5b9f14dcc589c3a483293ba92e39f503e28
+$ docker pull swift@sha256:4a3e923d01ba1d63085d4b3fc04f659ebe9bfa09176fc525d000bfb8ec32a4b8
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **439.2 MB (439230759 bytes)**  
+-	Total Size: **439.2 MB (439212291 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bef5227ad5845e327730461fb1e9d39792375410c574a69e0a71fd4a44f26d26`
+-	Image ID: `sha256:c32cf31c878ed726974128ca4e02b15b421bfba7805a354be088d4079f3bd9c1`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 Nov 2019 00:22:54 GMT
-ADD file:4eb02fc768cad452a37e8df30bbfcc728f3e6e7ca33af177fd4de06fd07c2098 in / 
-# Wed, 27 Nov 2019 00:22:55 GMT
+# Thu, 19 Dec 2019 04:24:35 GMT
+ADD file:f0b8eaa718bc3965b1e8395f5a6bea97c16651b50614e676bb3eaf31335a0045 in / 
+# Thu, 19 Dec 2019 04:24:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:37 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 CMD ["/bin/bash"]
-# Wed, 27 Nov 2019 01:45:12 GMT
+# Thu, 19 Dec 2019 09:08:08 GMT
 LABEL maintainer=Haris Amin <aminharis7@gmail.com>
-# Wed, 27 Nov 2019 01:45:13 GMT
+# Thu, 19 Dec 2019 09:08:08 GMT
 LABEL Description=Docker Container for the Apple's Swift programming language
-# Wed, 27 Nov 2019 01:46:16 GMT
+# Thu, 19 Dec 2019 09:08:53 GMT
 RUN apt-get -q update &&     apt-get -q install -y     make     libc6-dev     clang-3.8     curl     libedit-dev     libpython2.7     libicu-dev     libssl-dev     libxml2     tzdata     git     libcurl4-openssl-dev     pkg-config     && update-alternatives --quiet --install /usr/bin/clang clang /usr/bin/clang-3.8 100     && update-alternatives --quiet --install /usr/bin/clang++ clang++ /usr/bin/clang++-3.8 100     && rm -r /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 01:46:17 GMT
+# Thu, 19 Dec 2019 09:08:53 GMT
 ARG SWIFT_PLATFORM=ubuntu16.04
-# Wed, 27 Nov 2019 01:47:12 GMT
+# Thu, 19 Dec 2019 09:09:37 GMT
 ARG SWIFT_BRANCH=swift-4.0.3-release
-# Wed, 27 Nov 2019 01:47:12 GMT
+# Thu, 19 Dec 2019 09:09:37 GMT
 ARG SWIFT_VERSION=swift-4.0.3-RELEASE
-# Wed, 27 Nov 2019 01:47:12 GMT
+# Thu, 19 Dec 2019 09:09:37 GMT
 ENV SWIFT_PLATFORM=ubuntu16.04 SWIFT_BRANCH=swift-4.0.3-release SWIFT_VERSION=swift-4.0.3-RELEASE
-# Wed, 27 Nov 2019 01:47:52 GMT
+# Thu, 19 Dec 2019 09:10:12 GMT
 RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | tr -d .)/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz     && curl -fSsL $SWIFT_URL -o swift.tar.gz     && curl -fSsL $SWIFT_URL.sig -o swift.tar.gz.sig     && export GNUPGHOME="$(mktemp -d)"     && set -e;         for key in           8513444E2DA36B7C1659AF4D7638F1FB2B2B08C4           A3BAFD3556A59079C06894BD63BC1CFE91D306C6           5E4DF843FB065D7F7E24FBA2EF5430F071E1B235         ; do           gpg --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";         done     && gpg --batch --verify --quiet swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && rm -r "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && chmod -R o+r /usr/lib/swift
-# Wed, 27 Nov 2019 01:48:00 GMT
+# Thu, 19 Dec 2019 09:10:13 GMT
 RUN swift --version
 ```
 
 -	Layers:
-	-	`sha256:976a760c94fcdd7d105269ae621e8269e7bb25a58c52ae667b4029a6bc7e33cb`  
-		Last Modified: Sat, 09 Nov 2019 00:25:10 GMT  
-		Size: 44.1 MB (44145376 bytes)  
+	-	`sha256:3386e6af03b043219225367632569465e5ecd47391d1f99a6d265e51bd463a83`  
+		Last Modified: Thu, 12 Dec 2019 08:26:09 GMT  
+		Size: 44.1 MB (44123254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c58992f3c37bb64aeba18910408cda9a7a63e212fe27e95065a8d54130ca5926`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
+	-	`sha256:49ac0bbe6c8eeb959337b336ceaa5c3bbbae81e316025f9b94ede453540f2377`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
 		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca0e5e7f12e6eb512246aea5579fcb771fe7203bc60944384d5cd7962f87ddb`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 846.0 B  
+	-	`sha256:d1983a67e104e801fceb1850a375a71fe6b62636ba7a8403d9644f308a6a43f9`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2a274cc00ca5f671b1740c43672dbc96504760cee585e7604029a3fe56854a8`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 168.0 B  
+	-	`sha256:1a0f3a523f04f61db942018321ae122f90d8e3303e243b005e8de9817daf7028`  
+		Last Modified: Thu, 19 Dec 2019 04:25:59 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f656373091bed3d1989086bb5e425cbafdd076d3952e119db67c6fc2f4890931`  
-		Last Modified: Wed, 27 Nov 2019 01:54:33 GMT  
-		Size: 224.4 MB (224445913 bytes)  
+	-	`sha256:f873896753ea63480d5153f5aecd4988c629e23108855790442c54826cfd6bf6`  
+		Last Modified: Thu, 19 Dec 2019 09:17:39 GMT  
+		Size: 224.4 MB (224449554 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98c622b4f066ba1a2c0bbb0d0e35b042e535f6759eb48f7a24a6f37cec67cb4d`  
-		Last Modified: Wed, 27 Nov 2019 01:55:21 GMT  
-		Size: 170.6 MB (170637927 bytes)  
+	-	`sha256:9f5302510a880e6df1bfe88f4338098ed153984851dafcf54e722f205f2d1394`  
+		Last Modified: Thu, 19 Dec 2019 09:18:34 GMT  
+		Size: 170.6 MB (170637936 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:4.0.3`
 
 ```console
-$ docker pull swift@sha256:92c97a54956eb164dc71ca49c5a6c5ce9f3c1fada53da9a72f3ef85c914258fe
+$ docker pull swift@sha256:9861923e227cd741c77eaf7c1ebd65e9e165f0bd693cbe6e48b503f394e3b51d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -213,77 +213,77 @@ $ docker pull swift@sha256:92c97a54956eb164dc71ca49c5a6c5ce9f3c1fada53da9a72f3ef
 ### `swift:4.0.3` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:e72a03eca5a6b2a52604bff8039be5b9f14dcc589c3a483293ba92e39f503e28
+$ docker pull swift@sha256:4a3e923d01ba1d63085d4b3fc04f659ebe9bfa09176fc525d000bfb8ec32a4b8
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **439.2 MB (439230759 bytes)**  
+-	Total Size: **439.2 MB (439212291 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bef5227ad5845e327730461fb1e9d39792375410c574a69e0a71fd4a44f26d26`
+-	Image ID: `sha256:c32cf31c878ed726974128ca4e02b15b421bfba7805a354be088d4079f3bd9c1`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 Nov 2019 00:22:54 GMT
-ADD file:4eb02fc768cad452a37e8df30bbfcc728f3e6e7ca33af177fd4de06fd07c2098 in / 
-# Wed, 27 Nov 2019 00:22:55 GMT
+# Thu, 19 Dec 2019 04:24:35 GMT
+ADD file:f0b8eaa718bc3965b1e8395f5a6bea97c16651b50614e676bb3eaf31335a0045 in / 
+# Thu, 19 Dec 2019 04:24:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:37 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 CMD ["/bin/bash"]
-# Wed, 27 Nov 2019 01:45:12 GMT
+# Thu, 19 Dec 2019 09:08:08 GMT
 LABEL maintainer=Haris Amin <aminharis7@gmail.com>
-# Wed, 27 Nov 2019 01:45:13 GMT
+# Thu, 19 Dec 2019 09:08:08 GMT
 LABEL Description=Docker Container for the Apple's Swift programming language
-# Wed, 27 Nov 2019 01:46:16 GMT
+# Thu, 19 Dec 2019 09:08:53 GMT
 RUN apt-get -q update &&     apt-get -q install -y     make     libc6-dev     clang-3.8     curl     libedit-dev     libpython2.7     libicu-dev     libssl-dev     libxml2     tzdata     git     libcurl4-openssl-dev     pkg-config     && update-alternatives --quiet --install /usr/bin/clang clang /usr/bin/clang-3.8 100     && update-alternatives --quiet --install /usr/bin/clang++ clang++ /usr/bin/clang++-3.8 100     && rm -r /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 01:46:17 GMT
+# Thu, 19 Dec 2019 09:08:53 GMT
 ARG SWIFT_PLATFORM=ubuntu16.04
-# Wed, 27 Nov 2019 01:47:12 GMT
+# Thu, 19 Dec 2019 09:09:37 GMT
 ARG SWIFT_BRANCH=swift-4.0.3-release
-# Wed, 27 Nov 2019 01:47:12 GMT
+# Thu, 19 Dec 2019 09:09:37 GMT
 ARG SWIFT_VERSION=swift-4.0.3-RELEASE
-# Wed, 27 Nov 2019 01:47:12 GMT
+# Thu, 19 Dec 2019 09:09:37 GMT
 ENV SWIFT_PLATFORM=ubuntu16.04 SWIFT_BRANCH=swift-4.0.3-release SWIFT_VERSION=swift-4.0.3-RELEASE
-# Wed, 27 Nov 2019 01:47:52 GMT
+# Thu, 19 Dec 2019 09:10:12 GMT
 RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | tr -d .)/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz     && curl -fSsL $SWIFT_URL -o swift.tar.gz     && curl -fSsL $SWIFT_URL.sig -o swift.tar.gz.sig     && export GNUPGHOME="$(mktemp -d)"     && set -e;         for key in           8513444E2DA36B7C1659AF4D7638F1FB2B2B08C4           A3BAFD3556A59079C06894BD63BC1CFE91D306C6           5E4DF843FB065D7F7E24FBA2EF5430F071E1B235         ; do           gpg --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";         done     && gpg --batch --verify --quiet swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && rm -r "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && chmod -R o+r /usr/lib/swift
-# Wed, 27 Nov 2019 01:48:00 GMT
+# Thu, 19 Dec 2019 09:10:13 GMT
 RUN swift --version
 ```
 
 -	Layers:
-	-	`sha256:976a760c94fcdd7d105269ae621e8269e7bb25a58c52ae667b4029a6bc7e33cb`  
-		Last Modified: Sat, 09 Nov 2019 00:25:10 GMT  
-		Size: 44.1 MB (44145376 bytes)  
+	-	`sha256:3386e6af03b043219225367632569465e5ecd47391d1f99a6d265e51bd463a83`  
+		Last Modified: Thu, 12 Dec 2019 08:26:09 GMT  
+		Size: 44.1 MB (44123254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c58992f3c37bb64aeba18910408cda9a7a63e212fe27e95065a8d54130ca5926`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
+	-	`sha256:49ac0bbe6c8eeb959337b336ceaa5c3bbbae81e316025f9b94ede453540f2377`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
 		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca0e5e7f12e6eb512246aea5579fcb771fe7203bc60944384d5cd7962f87ddb`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 846.0 B  
+	-	`sha256:d1983a67e104e801fceb1850a375a71fe6b62636ba7a8403d9644f308a6a43f9`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2a274cc00ca5f671b1740c43672dbc96504760cee585e7604029a3fe56854a8`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 168.0 B  
+	-	`sha256:1a0f3a523f04f61db942018321ae122f90d8e3303e243b005e8de9817daf7028`  
+		Last Modified: Thu, 19 Dec 2019 04:25:59 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f656373091bed3d1989086bb5e425cbafdd076d3952e119db67c6fc2f4890931`  
-		Last Modified: Wed, 27 Nov 2019 01:54:33 GMT  
-		Size: 224.4 MB (224445913 bytes)  
+	-	`sha256:f873896753ea63480d5153f5aecd4988c629e23108855790442c54826cfd6bf6`  
+		Last Modified: Thu, 19 Dec 2019 09:17:39 GMT  
+		Size: 224.4 MB (224449554 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98c622b4f066ba1a2c0bbb0d0e35b042e535f6759eb48f7a24a6f37cec67cb4d`  
-		Last Modified: Wed, 27 Nov 2019 01:55:21 GMT  
-		Size: 170.6 MB (170637927 bytes)  
+	-	`sha256:9f5302510a880e6df1bfe88f4338098ed153984851dafcf54e722f205f2d1394`  
+		Last Modified: Thu, 19 Dec 2019 09:18:34 GMT  
+		Size: 170.6 MB (170637936 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:4.1`
 
 ```console
-$ docker pull swift@sha256:9e1f8cd78b1e71fc0826ac6b17aa85bedb087ce6d4aee775e421111557670980
+$ docker pull swift@sha256:87d6496f95a83d52641984b3e380e8f81f397cc7ce5ef35ae3f4ade01c8792fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -293,77 +293,77 @@ $ docker pull swift@sha256:9e1f8cd78b1e71fc0826ac6b17aa85bedb087ce6d4aee775e4211
 ### `swift:4.1` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:17232305d10c851ab745f403a8bebb12216589d3ce3e9bf4b2f0b246ad8a1f1d
+$ docker pull swift@sha256:14dc80cc21c4dca6896cb8d3cb0c606dba292d19ddb9993c513e2762ce5e2863
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **451.8 MB (451825108 bytes)**  
+-	Total Size: **451.8 MB (451806630 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a6cecf0e5e773495f3bb6758c2004be50af8a41d5bbe6cb3cf557ad38e25fac`
+-	Image ID: `sha256:aaff8d4fc5cfd2f334a394044027c84970c1ac4e2d0cd326357fca16b3c96a15`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 Nov 2019 00:22:54 GMT
-ADD file:4eb02fc768cad452a37e8df30bbfcc728f3e6e7ca33af177fd4de06fd07c2098 in / 
-# Wed, 27 Nov 2019 00:22:55 GMT
+# Thu, 19 Dec 2019 04:24:35 GMT
+ADD file:f0b8eaa718bc3965b1e8395f5a6bea97c16651b50614e676bb3eaf31335a0045 in / 
+# Thu, 19 Dec 2019 04:24:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:37 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 CMD ["/bin/bash"]
-# Wed, 27 Nov 2019 01:45:12 GMT
+# Thu, 19 Dec 2019 09:08:08 GMT
 LABEL maintainer=Haris Amin <aminharis7@gmail.com>
-# Wed, 27 Nov 2019 01:45:13 GMT
+# Thu, 19 Dec 2019 09:08:08 GMT
 LABEL Description=Docker Container for the Apple's Swift programming language
-# Wed, 27 Nov 2019 01:46:16 GMT
+# Thu, 19 Dec 2019 09:08:53 GMT
 RUN apt-get -q update &&     apt-get -q install -y     make     libc6-dev     clang-3.8     curl     libedit-dev     libpython2.7     libicu-dev     libssl-dev     libxml2     tzdata     git     libcurl4-openssl-dev     pkg-config     && update-alternatives --quiet --install /usr/bin/clang clang /usr/bin/clang-3.8 100     && update-alternatives --quiet --install /usr/bin/clang++ clang++ /usr/bin/clang++-3.8 100     && rm -r /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 01:46:17 GMT
+# Thu, 19 Dec 2019 09:08:53 GMT
 ARG SWIFT_PLATFORM=ubuntu16.04
-# Wed, 27 Nov 2019 01:46:17 GMT
+# Thu, 19 Dec 2019 09:08:53 GMT
 ARG SWIFT_BRANCH=swift-4.1.3-release
-# Wed, 27 Nov 2019 01:46:17 GMT
+# Thu, 19 Dec 2019 09:08:54 GMT
 ARG SWIFT_VERSION=swift-4.1.3-RELEASE
-# Wed, 27 Nov 2019 01:46:17 GMT
+# Thu, 19 Dec 2019 09:08:54 GMT
 ENV SWIFT_PLATFORM=ubuntu16.04 SWIFT_BRANCH=swift-4.1.3-release SWIFT_VERSION=swift-4.1.3-RELEASE
-# Wed, 27 Nov 2019 01:46:59 GMT
+# Thu, 19 Dec 2019 09:09:30 GMT
 RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | tr -d .)/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz     && curl -fSsL $SWIFT_URL -o swift.tar.gz     && curl -fSsL $SWIFT_URL.sig -o swift.tar.gz.sig     && export GNUPGHOME="$(mktemp -d)"     && set -e;         for key in           8513444E2DA36B7C1659AF4D7638F1FB2B2B08C4           A3BAFD3556A59079C06894BD63BC1CFE91D306C6           5E4DF843FB065D7F7E24FBA2EF5430F071E1B235         ; do           gpg --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";         done     && gpg --batch --verify --quiet swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && rm -r "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && chmod -R o+r /usr/lib/swift
-# Wed, 27 Nov 2019 01:47:00 GMT
+# Thu, 19 Dec 2019 09:09:31 GMT
 RUN swift --version
 ```
 
 -	Layers:
-	-	`sha256:976a760c94fcdd7d105269ae621e8269e7bb25a58c52ae667b4029a6bc7e33cb`  
-		Last Modified: Sat, 09 Nov 2019 00:25:10 GMT  
-		Size: 44.1 MB (44145376 bytes)  
+	-	`sha256:3386e6af03b043219225367632569465e5ecd47391d1f99a6d265e51bd463a83`  
+		Last Modified: Thu, 12 Dec 2019 08:26:09 GMT  
+		Size: 44.1 MB (44123254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c58992f3c37bb64aeba18910408cda9a7a63e212fe27e95065a8d54130ca5926`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
+	-	`sha256:49ac0bbe6c8eeb959337b336ceaa5c3bbbae81e316025f9b94ede453540f2377`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
 		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca0e5e7f12e6eb512246aea5579fcb771fe7203bc60944384d5cd7962f87ddb`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 846.0 B  
+	-	`sha256:d1983a67e104e801fceb1850a375a71fe6b62636ba7a8403d9644f308a6a43f9`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2a274cc00ca5f671b1740c43672dbc96504760cee585e7604029a3fe56854a8`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 168.0 B  
+	-	`sha256:1a0f3a523f04f61db942018321ae122f90d8e3303e243b005e8de9817daf7028`  
+		Last Modified: Thu, 19 Dec 2019 04:25:59 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f656373091bed3d1989086bb5e425cbafdd076d3952e119db67c6fc2f4890931`  
-		Last Modified: Wed, 27 Nov 2019 01:54:33 GMT  
-		Size: 224.4 MB (224445913 bytes)  
+	-	`sha256:f873896753ea63480d5153f5aecd4988c629e23108855790442c54826cfd6bf6`  
+		Last Modified: Thu, 19 Dec 2019 09:17:39 GMT  
+		Size: 224.4 MB (224449554 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f480645e4186f2ffc36741637a2c7e058fc58531e7f19b0f0cf2404571c5aea5`  
-		Last Modified: Wed, 27 Nov 2019 01:54:21 GMT  
-		Size: 183.2 MB (183232276 bytes)  
+	-	`sha256:cfd72828fc5c10dcb872788ce4a2618f427299b8ee2ae5818bdd6dbc9d954d84`  
+		Last Modified: Thu, 19 Dec 2019 09:17:31 GMT  
+		Size: 183.2 MB (183232275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:4.1.3`
 
 ```console
-$ docker pull swift@sha256:9e1f8cd78b1e71fc0826ac6b17aa85bedb087ce6d4aee775e421111557670980
+$ docker pull swift@sha256:87d6496f95a83d52641984b3e380e8f81f397cc7ce5ef35ae3f4ade01c8792fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -373,77 +373,77 @@ $ docker pull swift@sha256:9e1f8cd78b1e71fc0826ac6b17aa85bedb087ce6d4aee775e4211
 ### `swift:4.1.3` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:17232305d10c851ab745f403a8bebb12216589d3ce3e9bf4b2f0b246ad8a1f1d
+$ docker pull swift@sha256:14dc80cc21c4dca6896cb8d3cb0c606dba292d19ddb9993c513e2762ce5e2863
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **451.8 MB (451825108 bytes)**  
+-	Total Size: **451.8 MB (451806630 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a6cecf0e5e773495f3bb6758c2004be50af8a41d5bbe6cb3cf557ad38e25fac`
+-	Image ID: `sha256:aaff8d4fc5cfd2f334a394044027c84970c1ac4e2d0cd326357fca16b3c96a15`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 Nov 2019 00:22:54 GMT
-ADD file:4eb02fc768cad452a37e8df30bbfcc728f3e6e7ca33af177fd4de06fd07c2098 in / 
-# Wed, 27 Nov 2019 00:22:55 GMT
+# Thu, 19 Dec 2019 04:24:35 GMT
+ADD file:f0b8eaa718bc3965b1e8395f5a6bea97c16651b50614e676bb3eaf31335a0045 in / 
+# Thu, 19 Dec 2019 04:24:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:37 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 CMD ["/bin/bash"]
-# Wed, 27 Nov 2019 01:45:12 GMT
+# Thu, 19 Dec 2019 09:08:08 GMT
 LABEL maintainer=Haris Amin <aminharis7@gmail.com>
-# Wed, 27 Nov 2019 01:45:13 GMT
+# Thu, 19 Dec 2019 09:08:08 GMT
 LABEL Description=Docker Container for the Apple's Swift programming language
-# Wed, 27 Nov 2019 01:46:16 GMT
+# Thu, 19 Dec 2019 09:08:53 GMT
 RUN apt-get -q update &&     apt-get -q install -y     make     libc6-dev     clang-3.8     curl     libedit-dev     libpython2.7     libicu-dev     libssl-dev     libxml2     tzdata     git     libcurl4-openssl-dev     pkg-config     && update-alternatives --quiet --install /usr/bin/clang clang /usr/bin/clang-3.8 100     && update-alternatives --quiet --install /usr/bin/clang++ clang++ /usr/bin/clang++-3.8 100     && rm -r /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 01:46:17 GMT
+# Thu, 19 Dec 2019 09:08:53 GMT
 ARG SWIFT_PLATFORM=ubuntu16.04
-# Wed, 27 Nov 2019 01:46:17 GMT
+# Thu, 19 Dec 2019 09:08:53 GMT
 ARG SWIFT_BRANCH=swift-4.1.3-release
-# Wed, 27 Nov 2019 01:46:17 GMT
+# Thu, 19 Dec 2019 09:08:54 GMT
 ARG SWIFT_VERSION=swift-4.1.3-RELEASE
-# Wed, 27 Nov 2019 01:46:17 GMT
+# Thu, 19 Dec 2019 09:08:54 GMT
 ENV SWIFT_PLATFORM=ubuntu16.04 SWIFT_BRANCH=swift-4.1.3-release SWIFT_VERSION=swift-4.1.3-RELEASE
-# Wed, 27 Nov 2019 01:46:59 GMT
+# Thu, 19 Dec 2019 09:09:30 GMT
 RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | tr -d .)/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz     && curl -fSsL $SWIFT_URL -o swift.tar.gz     && curl -fSsL $SWIFT_URL.sig -o swift.tar.gz.sig     && export GNUPGHOME="$(mktemp -d)"     && set -e;         for key in           8513444E2DA36B7C1659AF4D7638F1FB2B2B08C4           A3BAFD3556A59079C06894BD63BC1CFE91D306C6           5E4DF843FB065D7F7E24FBA2EF5430F071E1B235         ; do           gpg --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";         done     && gpg --batch --verify --quiet swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && rm -r "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && chmod -R o+r /usr/lib/swift
-# Wed, 27 Nov 2019 01:47:00 GMT
+# Thu, 19 Dec 2019 09:09:31 GMT
 RUN swift --version
 ```
 
 -	Layers:
-	-	`sha256:976a760c94fcdd7d105269ae621e8269e7bb25a58c52ae667b4029a6bc7e33cb`  
-		Last Modified: Sat, 09 Nov 2019 00:25:10 GMT  
-		Size: 44.1 MB (44145376 bytes)  
+	-	`sha256:3386e6af03b043219225367632569465e5ecd47391d1f99a6d265e51bd463a83`  
+		Last Modified: Thu, 12 Dec 2019 08:26:09 GMT  
+		Size: 44.1 MB (44123254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c58992f3c37bb64aeba18910408cda9a7a63e212fe27e95065a8d54130ca5926`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
+	-	`sha256:49ac0bbe6c8eeb959337b336ceaa5c3bbbae81e316025f9b94ede453540f2377`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
 		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca0e5e7f12e6eb512246aea5579fcb771fe7203bc60944384d5cd7962f87ddb`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 846.0 B  
+	-	`sha256:d1983a67e104e801fceb1850a375a71fe6b62636ba7a8403d9644f308a6a43f9`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2a274cc00ca5f671b1740c43672dbc96504760cee585e7604029a3fe56854a8`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 168.0 B  
+	-	`sha256:1a0f3a523f04f61db942018321ae122f90d8e3303e243b005e8de9817daf7028`  
+		Last Modified: Thu, 19 Dec 2019 04:25:59 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f656373091bed3d1989086bb5e425cbafdd076d3952e119db67c6fc2f4890931`  
-		Last Modified: Wed, 27 Nov 2019 01:54:33 GMT  
-		Size: 224.4 MB (224445913 bytes)  
+	-	`sha256:f873896753ea63480d5153f5aecd4988c629e23108855790442c54826cfd6bf6`  
+		Last Modified: Thu, 19 Dec 2019 09:17:39 GMT  
+		Size: 224.4 MB (224449554 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f480645e4186f2ffc36741637a2c7e058fc58531e7f19b0f0cf2404571c5aea5`  
-		Last Modified: Wed, 27 Nov 2019 01:54:21 GMT  
-		Size: 183.2 MB (183232276 bytes)  
+	-	`sha256:cfd72828fc5c10dcb872788ce4a2618f427299b8ee2ae5818bdd6dbc9d954d84`  
+		Last Modified: Thu, 19 Dec 2019 09:17:31 GMT  
+		Size: 183.2 MB (183232275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:4.2`
 
 ```console
-$ docker pull swift@sha256:85311efc468f5ce1968a46687cccb5d32c563bf2f8781f47d28bf0c5f377aa0e
+$ docker pull swift@sha256:be424c824b74373531f4f752da8a6b2c3e9e76a127470a1ff12ef65407fb495e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -453,77 +453,77 @@ $ docker pull swift@sha256:85311efc468f5ce1968a46687cccb5d32c563bf2f8781f47d28bf
 ### `swift:4.2` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:351feb9b5ed38fa2a755fcb5fa1e282985a5e505ecd3ab7a7fcf2fc1efba43aa
+$ docker pull swift@sha256:9e4870eb751e6c1b75cd7bdd4312901deaf39b44b9702e7c834698ab563ed5b7
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **496.8 MB (496758868 bytes)**  
+-	Total Size: **496.7 MB (496740977 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:baebdfa112bb8b90f110ed1042f465d812d8a4160a28a44e2b9563818e4acb49`
+-	Image ID: `sha256:aef096e8aacb66a942ba74235527bae2efe2fa97d85d2792805a6fc06695f75c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 Nov 2019 00:22:54 GMT
-ADD file:4eb02fc768cad452a37e8df30bbfcc728f3e6e7ca33af177fd4de06fd07c2098 in / 
-# Wed, 27 Nov 2019 00:22:55 GMT
+# Thu, 19 Dec 2019 04:24:35 GMT
+ADD file:f0b8eaa718bc3965b1e8395f5a6bea97c16651b50614e676bb3eaf31335a0045 in / 
+# Thu, 19 Dec 2019 04:24:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:37 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 CMD ["/bin/bash"]
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:37 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Wed, 27 Nov 2019 01:44:04 GMT
+# Thu, 19 Dec 2019 09:07:06 GMT
 RUN apt-get -q update &&     apt-get -q install -y     make     libc6-dev     clang-3.8     curl     libedit-dev     libpython2.7     libicu-dev     libssl-dev     libxml2     tzdata     git     libcurl4-openssl-dev     pkg-config     && update-alternatives --quiet --install /usr/bin/clang clang /usr/bin/clang-3.8 100     && update-alternatives --quiet --install /usr/bin/clang++ clang++ /usr/bin/clang++-3.8 100     && rm -r /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 01:44:05 GMT
+# Thu, 19 Dec 2019 09:07:06 GMT
 ARG SWIFT_PLATFORM=ubuntu16.04
-# Wed, 27 Nov 2019 01:44:05 GMT
+# Thu, 19 Dec 2019 09:07:07 GMT
 ARG SWIFT_BRANCH=swift-4.2.4-release
-# Wed, 27 Nov 2019 01:44:05 GMT
+# Thu, 19 Dec 2019 09:07:07 GMT
 ARG SWIFT_VERSION=swift-4.2.4-RELEASE
-# Wed, 27 Nov 2019 01:44:06 GMT
+# Thu, 19 Dec 2019 09:07:07 GMT
 ENV SWIFT_PLATFORM=ubuntu16.04 SWIFT_BRANCH=swift-4.2.4-release SWIFT_VERSION=swift-4.2.4-RELEASE
-# Wed, 27 Nov 2019 01:44:56 GMT
+# Thu, 19 Dec 2019 09:07:52 GMT
 RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | tr -d .)/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz     && curl -fSsL $SWIFT_URL -o swift.tar.gz     && curl -fSsL $SWIFT_URL.sig -o swift.tar.gz.sig     && export GNUPGHOME="$(mktemp -d)"     && set -e;         for key in           8513444E2DA36B7C1659AF4D7638F1FB2B2B08C4           A3BAFD3556A59079C06894BD63BC1CFE91D306C6           5E4DF843FB065D7F7E24FBA2EF5430F071E1B235         ; do           gpg --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";         done     && gpg --batch --verify --quiet swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && rm -r "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && chmod -R o+r /usr/lib/swift
-# Wed, 27 Nov 2019 01:45:02 GMT
+# Thu, 19 Dec 2019 09:07:53 GMT
 RUN swift --version
 ```
 
 -	Layers:
-	-	`sha256:976a760c94fcdd7d105269ae621e8269e7bb25a58c52ae667b4029a6bc7e33cb`  
-		Last Modified: Sat, 09 Nov 2019 00:25:10 GMT  
-		Size: 44.1 MB (44145376 bytes)  
+	-	`sha256:3386e6af03b043219225367632569465e5ecd47391d1f99a6d265e51bd463a83`  
+		Last Modified: Thu, 12 Dec 2019 08:26:09 GMT  
+		Size: 44.1 MB (44123254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c58992f3c37bb64aeba18910408cda9a7a63e212fe27e95065a8d54130ca5926`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
+	-	`sha256:49ac0bbe6c8eeb959337b336ceaa5c3bbbae81e316025f9b94ede453540f2377`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
 		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca0e5e7f12e6eb512246aea5579fcb771fe7203bc60944384d5cd7962f87ddb`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 846.0 B  
+	-	`sha256:d1983a67e104e801fceb1850a375a71fe6b62636ba7a8403d9644f308a6a43f9`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2a274cc00ca5f671b1740c43672dbc96504760cee585e7604029a3fe56854a8`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 168.0 B  
+	-	`sha256:1a0f3a523f04f61db942018321ae122f90d8e3303e243b005e8de9817daf7028`  
+		Last Modified: Thu, 19 Dec 2019 04:25:59 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd89ec4b5d308403e11d9c2f85aa4e6ab7c2b05742efda8b8f0bffd6f7b4a42a`  
-		Last Modified: Wed, 27 Nov 2019 01:53:36 GMT  
-		Size: 224.4 MB (224445807 bytes)  
+	-	`sha256:480bb4f8623911f9052441150588b986a5f1835dba1fcb0532902826aa64d986`  
+		Last Modified: Thu, 19 Dec 2019 09:16:47 GMT  
+		Size: 224.5 MB (224450033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d22ec8e069dc958226adab35f8db1bd2e9d4520c8c972ef2a66fd3838a1006c`  
-		Last Modified: Wed, 27 Nov 2019 01:53:33 GMT  
-		Size: 228.2 MB (228166142 bytes)  
+	-	`sha256:7ef37879ffb3094b7dc023e93702bc5acb75ec3db8c4948fefa5ae5f771d2a27`  
+		Last Modified: Thu, 19 Dec 2019 09:16:45 GMT  
+		Size: 228.2 MB (228166143 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:4.2.4`
 
 ```console
-$ docker pull swift@sha256:85311efc468f5ce1968a46687cccb5d32c563bf2f8781f47d28bf0c5f377aa0e
+$ docker pull swift@sha256:be424c824b74373531f4f752da8a6b2c3e9e76a127470a1ff12ef65407fb495e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -533,77 +533,77 @@ $ docker pull swift@sha256:85311efc468f5ce1968a46687cccb5d32c563bf2f8781f47d28bf
 ### `swift:4.2.4` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:351feb9b5ed38fa2a755fcb5fa1e282985a5e505ecd3ab7a7fcf2fc1efba43aa
+$ docker pull swift@sha256:9e4870eb751e6c1b75cd7bdd4312901deaf39b44b9702e7c834698ab563ed5b7
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **496.8 MB (496758868 bytes)**  
+-	Total Size: **496.7 MB (496740977 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:baebdfa112bb8b90f110ed1042f465d812d8a4160a28a44e2b9563818e4acb49`
+-	Image ID: `sha256:aef096e8aacb66a942ba74235527bae2efe2fa97d85d2792805a6fc06695f75c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 Nov 2019 00:22:54 GMT
-ADD file:4eb02fc768cad452a37e8df30bbfcc728f3e6e7ca33af177fd4de06fd07c2098 in / 
-# Wed, 27 Nov 2019 00:22:55 GMT
+# Thu, 19 Dec 2019 04:24:35 GMT
+ADD file:f0b8eaa718bc3965b1e8395f5a6bea97c16651b50614e676bb3eaf31335a0045 in / 
+# Thu, 19 Dec 2019 04:24:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:37 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 CMD ["/bin/bash"]
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:37 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Wed, 27 Nov 2019 01:44:04 GMT
+# Thu, 19 Dec 2019 09:07:06 GMT
 RUN apt-get -q update &&     apt-get -q install -y     make     libc6-dev     clang-3.8     curl     libedit-dev     libpython2.7     libicu-dev     libssl-dev     libxml2     tzdata     git     libcurl4-openssl-dev     pkg-config     && update-alternatives --quiet --install /usr/bin/clang clang /usr/bin/clang-3.8 100     && update-alternatives --quiet --install /usr/bin/clang++ clang++ /usr/bin/clang++-3.8 100     && rm -r /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 01:44:05 GMT
+# Thu, 19 Dec 2019 09:07:06 GMT
 ARG SWIFT_PLATFORM=ubuntu16.04
-# Wed, 27 Nov 2019 01:44:05 GMT
+# Thu, 19 Dec 2019 09:07:07 GMT
 ARG SWIFT_BRANCH=swift-4.2.4-release
-# Wed, 27 Nov 2019 01:44:05 GMT
+# Thu, 19 Dec 2019 09:07:07 GMT
 ARG SWIFT_VERSION=swift-4.2.4-RELEASE
-# Wed, 27 Nov 2019 01:44:06 GMT
+# Thu, 19 Dec 2019 09:07:07 GMT
 ENV SWIFT_PLATFORM=ubuntu16.04 SWIFT_BRANCH=swift-4.2.4-release SWIFT_VERSION=swift-4.2.4-RELEASE
-# Wed, 27 Nov 2019 01:44:56 GMT
+# Thu, 19 Dec 2019 09:07:52 GMT
 RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | tr -d .)/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz     && curl -fSsL $SWIFT_URL -o swift.tar.gz     && curl -fSsL $SWIFT_URL.sig -o swift.tar.gz.sig     && export GNUPGHOME="$(mktemp -d)"     && set -e;         for key in           8513444E2DA36B7C1659AF4D7638F1FB2B2B08C4           A3BAFD3556A59079C06894BD63BC1CFE91D306C6           5E4DF843FB065D7F7E24FBA2EF5430F071E1B235         ; do           gpg --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";         done     && gpg --batch --verify --quiet swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && rm -r "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && chmod -R o+r /usr/lib/swift
-# Wed, 27 Nov 2019 01:45:02 GMT
+# Thu, 19 Dec 2019 09:07:53 GMT
 RUN swift --version
 ```
 
 -	Layers:
-	-	`sha256:976a760c94fcdd7d105269ae621e8269e7bb25a58c52ae667b4029a6bc7e33cb`  
-		Last Modified: Sat, 09 Nov 2019 00:25:10 GMT  
-		Size: 44.1 MB (44145376 bytes)  
+	-	`sha256:3386e6af03b043219225367632569465e5ecd47391d1f99a6d265e51bd463a83`  
+		Last Modified: Thu, 12 Dec 2019 08:26:09 GMT  
+		Size: 44.1 MB (44123254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c58992f3c37bb64aeba18910408cda9a7a63e212fe27e95065a8d54130ca5926`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
+	-	`sha256:49ac0bbe6c8eeb959337b336ceaa5c3bbbae81e316025f9b94ede453540f2377`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
 		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca0e5e7f12e6eb512246aea5579fcb771fe7203bc60944384d5cd7962f87ddb`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 846.0 B  
+	-	`sha256:d1983a67e104e801fceb1850a375a71fe6b62636ba7a8403d9644f308a6a43f9`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2a274cc00ca5f671b1740c43672dbc96504760cee585e7604029a3fe56854a8`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 168.0 B  
+	-	`sha256:1a0f3a523f04f61db942018321ae122f90d8e3303e243b005e8de9817daf7028`  
+		Last Modified: Thu, 19 Dec 2019 04:25:59 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd89ec4b5d308403e11d9c2f85aa4e6ab7c2b05742efda8b8f0bffd6f7b4a42a`  
-		Last Modified: Wed, 27 Nov 2019 01:53:36 GMT  
-		Size: 224.4 MB (224445807 bytes)  
+	-	`sha256:480bb4f8623911f9052441150588b986a5f1835dba1fcb0532902826aa64d986`  
+		Last Modified: Thu, 19 Dec 2019 09:16:47 GMT  
+		Size: 224.5 MB (224450033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d22ec8e069dc958226adab35f8db1bd2e9d4520c8c972ef2a66fd3838a1006c`  
-		Last Modified: Wed, 27 Nov 2019 01:53:33 GMT  
-		Size: 228.2 MB (228166142 bytes)  
+	-	`sha256:7ef37879ffb3094b7dc023e93702bc5acb75ec3db8c4948fefa5ae5f771d2a27`  
+		Last Modified: Thu, 19 Dec 2019 09:16:45 GMT  
+		Size: 228.2 MB (228166143 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.0`
 
 ```console
-$ docker pull swift@sha256:931422036dea1e6419b0ea20d5d7242a81f2098aa11d93b34e538dcac9354775
+$ docker pull swift@sha256:867264cce2b412ee9381adaf35d346bde020fae59d78f1d17078ed01bb8aeb56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -613,77 +613,77 @@ $ docker pull swift@sha256:931422036dea1e6419b0ea20d5d7242a81f2098aa11d93b34e538
 ### `swift:5.0` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:b940d28f29b64962762e737dc561a59e301c0e0851d635aaa44b5cd95b8b8df8
+$ docker pull swift@sha256:c48e3cc961eb75a5cfa3f9e73197a7a855edf018a662187725b9cae665b6d856
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **462.6 MB (462642020 bytes)**  
+-	Total Size: **462.7 MB (462706587 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13dbb3e68c8ed66a5bc2b2bad0218b6dfc61b8951f8a695188e26491e8f25285`
+-	Image ID: `sha256:3c515fab1a86b7c0bbba913eedf2d216a4377714b759960665436c1fa2baf033`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 31 Oct 2019 22:20:35 GMT
-ADD file:a48a5dc1b9dbfc632f6cf86fe27b770b63f07a115c98c4465dc184e303a4efa1 in / 
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:25 GMT
+ADD file:53f100793e6c0adfca99977a42bb65cb7971c26e4d6e4499d1c30a1f51f06854 in / 
+# Thu, 19 Dec 2019 04:21:26 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Fri, 01 Nov 2019 00:09:23 GMT
+# Thu, 19 Dec 2019 08:59:59 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libbsd0     libcurl4     libxml2     libedit2     libsqlite3-0     libc6-dev     binutils     libgcc-5-dev     libstdc++-5-dev     libpython2.7     tzdata     git     pkg-config     && rm -r /var/lib/apt/lists/*
-# Fri, 01 Nov 2019 00:09:23 GMT
+# Thu, 19 Dec 2019 08:59:59 GMT
 ARG SWIFT_PLATFORM=ubuntu18.04
-# Fri, 01 Nov 2019 00:09:23 GMT
+# Thu, 19 Dec 2019 09:00:00 GMT
 ARG SWIFT_BRANCH=swift-5.0.3-release
-# Fri, 01 Nov 2019 00:09:24 GMT
+# Thu, 19 Dec 2019 09:00:00 GMT
 ARG SWIFT_VERSION=swift-5.0.3-RELEASE
-# Fri, 01 Nov 2019 00:09:24 GMT
+# Thu, 19 Dec 2019 09:00:00 GMT
 ENV SWIFT_PLATFORM=ubuntu18.04 SWIFT_BRANCH=swift-5.0.3-release SWIFT_VERSION=swift-5.0.3-RELEASE
-# Fri, 01 Nov 2019 00:10:29 GMT
+# Thu, 19 Dec 2019 09:01:03 GMT
 RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | tr -d .)/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz     && apt-get update     && apt-get install -y curl     && curl -fSsL $SWIFT_URL -o swift.tar.gz     && curl -fSsL $SWIFT_URL.sig -o swift.tar.gz.sig     && apt-get purge -y curl     && apt-get -y autoremove     && export GNUPGHOME="$(mktemp -d)"     && set -e;         for key in           A62AE125BBBFBB96A6E042EC925CC1CCED3D1561         ; do           gpg --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";         done     && gpg --batch --verify --quiet swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && rm -r "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && chmod -R o+r /usr/lib/swift
-# Fri, 01 Nov 2019 00:10:33 GMT
+# Thu, 19 Dec 2019 09:01:09 GMT
 RUN swift --version
 ```
 
 -	Layers:
-	-	`sha256:7ddbc47eeb70dc7f08e410a6667948b87ff3883024eb41478b44ef9a81bf400c`  
-		Last Modified: Wed, 30 Oct 2019 00:25:34 GMT  
-		Size: 26.7 MB (26688847 bytes)  
+	-	`sha256:2746a4a261c9e18bfd7ff0429c18fd7522acc14fa4c7ec8ab37ba5ebaadbc584`  
+		Last Modified: Mon, 02 Dec 2019 13:22:09 GMT  
+		Size: 26.7 MB (26689544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1bbdc448b7263673926b8fe2e88491e5083a8b4b06ddfabf311f2fc5f27e2ff`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 35.4 KB (35362 bytes)  
+	-	`sha256:4c1d20cdee96111c8acf1858b62655a37ce81ae48648993542b7ac363ac5c0e5`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 35.4 KB (35361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c3b70e3904492c753652606df4726430426f42ea56e06ea924d6fea7ae162a1`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 845.0 B  
+	-	`sha256:0d3160e1d0de4061b5b32ee09af687b898921d36ed9556df5910ddc3104449cd`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d437916d5781043432f2d72608049dcf74ddbd27daa01a25fa63c8f1b9adc4`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 162.0 B  
+	-	`sha256:c8e37668deea784f47c8726d934adc12b8d20a2b1c50b0b0c18cb62771cd3684`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d22992215400fb73647fb8872bbb472c7b2048279b096af5bde18afc48a55397`  
-		Last Modified: Fri, 01 Nov 2019 00:23:56 GMT  
-		Size: 117.1 MB (117070781 bytes)  
+	-	`sha256:89a473a03c77f67b696eeef85758378378807b25a9c803b6c24367c17b71b5cf`  
+		Last Modified: Thu, 19 Dec 2019 09:14:01 GMT  
+		Size: 116.9 MB (116937783 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c557208083581134361e1e4400f48466aa3827124917b1aed3070aa89369d45`  
-		Last Modified: Fri, 01 Nov 2019 00:24:28 GMT  
-		Size: 318.8 MB (318846023 bytes)  
+	-	`sha256:e7f986d1e676e4204b7aed1efaa1f5f903152de4768d59e186e6350ba7470570`  
+		Last Modified: Thu, 19 Dec 2019 09:14:32 GMT  
+		Size: 319.0 MB (319042882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.0.3`
 
 ```console
-$ docker pull swift@sha256:931422036dea1e6419b0ea20d5d7242a81f2098aa11d93b34e538dcac9354775
+$ docker pull swift@sha256:867264cce2b412ee9381adaf35d346bde020fae59d78f1d17078ed01bb8aeb56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -693,77 +693,77 @@ $ docker pull swift@sha256:931422036dea1e6419b0ea20d5d7242a81f2098aa11d93b34e538
 ### `swift:5.0.3` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:b940d28f29b64962762e737dc561a59e301c0e0851d635aaa44b5cd95b8b8df8
+$ docker pull swift@sha256:c48e3cc961eb75a5cfa3f9e73197a7a855edf018a662187725b9cae665b6d856
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **462.6 MB (462642020 bytes)**  
+-	Total Size: **462.7 MB (462706587 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13dbb3e68c8ed66a5bc2b2bad0218b6dfc61b8951f8a695188e26491e8f25285`
+-	Image ID: `sha256:3c515fab1a86b7c0bbba913eedf2d216a4377714b759960665436c1fa2baf033`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 31 Oct 2019 22:20:35 GMT
-ADD file:a48a5dc1b9dbfc632f6cf86fe27b770b63f07a115c98c4465dc184e303a4efa1 in / 
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:25 GMT
+ADD file:53f100793e6c0adfca99977a42bb65cb7971c26e4d6e4499d1c30a1f51f06854 in / 
+# Thu, 19 Dec 2019 04:21:26 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Fri, 01 Nov 2019 00:09:23 GMT
+# Thu, 19 Dec 2019 08:59:59 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libbsd0     libcurl4     libxml2     libedit2     libsqlite3-0     libc6-dev     binutils     libgcc-5-dev     libstdc++-5-dev     libpython2.7     tzdata     git     pkg-config     && rm -r /var/lib/apt/lists/*
-# Fri, 01 Nov 2019 00:09:23 GMT
+# Thu, 19 Dec 2019 08:59:59 GMT
 ARG SWIFT_PLATFORM=ubuntu18.04
-# Fri, 01 Nov 2019 00:09:23 GMT
+# Thu, 19 Dec 2019 09:00:00 GMT
 ARG SWIFT_BRANCH=swift-5.0.3-release
-# Fri, 01 Nov 2019 00:09:24 GMT
+# Thu, 19 Dec 2019 09:00:00 GMT
 ARG SWIFT_VERSION=swift-5.0.3-RELEASE
-# Fri, 01 Nov 2019 00:09:24 GMT
+# Thu, 19 Dec 2019 09:00:00 GMT
 ENV SWIFT_PLATFORM=ubuntu18.04 SWIFT_BRANCH=swift-5.0.3-release SWIFT_VERSION=swift-5.0.3-RELEASE
-# Fri, 01 Nov 2019 00:10:29 GMT
+# Thu, 19 Dec 2019 09:01:03 GMT
 RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | tr -d .)/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz     && apt-get update     && apt-get install -y curl     && curl -fSsL $SWIFT_URL -o swift.tar.gz     && curl -fSsL $SWIFT_URL.sig -o swift.tar.gz.sig     && apt-get purge -y curl     && apt-get -y autoremove     && export GNUPGHOME="$(mktemp -d)"     && set -e;         for key in           A62AE125BBBFBB96A6E042EC925CC1CCED3D1561         ; do           gpg --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";         done     && gpg --batch --verify --quiet swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && rm -r "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && chmod -R o+r /usr/lib/swift
-# Fri, 01 Nov 2019 00:10:33 GMT
+# Thu, 19 Dec 2019 09:01:09 GMT
 RUN swift --version
 ```
 
 -	Layers:
-	-	`sha256:7ddbc47eeb70dc7f08e410a6667948b87ff3883024eb41478b44ef9a81bf400c`  
-		Last Modified: Wed, 30 Oct 2019 00:25:34 GMT  
-		Size: 26.7 MB (26688847 bytes)  
+	-	`sha256:2746a4a261c9e18bfd7ff0429c18fd7522acc14fa4c7ec8ab37ba5ebaadbc584`  
+		Last Modified: Mon, 02 Dec 2019 13:22:09 GMT  
+		Size: 26.7 MB (26689544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1bbdc448b7263673926b8fe2e88491e5083a8b4b06ddfabf311f2fc5f27e2ff`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 35.4 KB (35362 bytes)  
+	-	`sha256:4c1d20cdee96111c8acf1858b62655a37ce81ae48648993542b7ac363ac5c0e5`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 35.4 KB (35361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c3b70e3904492c753652606df4726430426f42ea56e06ea924d6fea7ae162a1`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 845.0 B  
+	-	`sha256:0d3160e1d0de4061b5b32ee09af687b898921d36ed9556df5910ddc3104449cd`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d437916d5781043432f2d72608049dcf74ddbd27daa01a25fa63c8f1b9adc4`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 162.0 B  
+	-	`sha256:c8e37668deea784f47c8726d934adc12b8d20a2b1c50b0b0c18cb62771cd3684`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d22992215400fb73647fb8872bbb472c7b2048279b096af5bde18afc48a55397`  
-		Last Modified: Fri, 01 Nov 2019 00:23:56 GMT  
-		Size: 117.1 MB (117070781 bytes)  
+	-	`sha256:89a473a03c77f67b696eeef85758378378807b25a9c803b6c24367c17b71b5cf`  
+		Last Modified: Thu, 19 Dec 2019 09:14:01 GMT  
+		Size: 116.9 MB (116937783 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c557208083581134361e1e4400f48466aa3827124917b1aed3070aa89369d45`  
-		Last Modified: Fri, 01 Nov 2019 00:24:28 GMT  
-		Size: 318.8 MB (318846023 bytes)  
+	-	`sha256:e7f986d1e676e4204b7aed1efaa1f5f903152de4768d59e186e6350ba7470570`  
+		Last Modified: Thu, 19 Dec 2019 09:14:32 GMT  
+		Size: 319.0 MB (319042882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.0.3-bionic`
 
 ```console
-$ docker pull swift@sha256:931422036dea1e6419b0ea20d5d7242a81f2098aa11d93b34e538dcac9354775
+$ docker pull swift@sha256:867264cce2b412ee9381adaf35d346bde020fae59d78f1d17078ed01bb8aeb56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -773,77 +773,77 @@ $ docker pull swift@sha256:931422036dea1e6419b0ea20d5d7242a81f2098aa11d93b34e538
 ### `swift:5.0.3-bionic` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:b940d28f29b64962762e737dc561a59e301c0e0851d635aaa44b5cd95b8b8df8
+$ docker pull swift@sha256:c48e3cc961eb75a5cfa3f9e73197a7a855edf018a662187725b9cae665b6d856
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **462.6 MB (462642020 bytes)**  
+-	Total Size: **462.7 MB (462706587 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13dbb3e68c8ed66a5bc2b2bad0218b6dfc61b8951f8a695188e26491e8f25285`
+-	Image ID: `sha256:3c515fab1a86b7c0bbba913eedf2d216a4377714b759960665436c1fa2baf033`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 31 Oct 2019 22:20:35 GMT
-ADD file:a48a5dc1b9dbfc632f6cf86fe27b770b63f07a115c98c4465dc184e303a4efa1 in / 
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:25 GMT
+ADD file:53f100793e6c0adfca99977a42bb65cb7971c26e4d6e4499d1c30a1f51f06854 in / 
+# Thu, 19 Dec 2019 04:21:26 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Fri, 01 Nov 2019 00:09:23 GMT
+# Thu, 19 Dec 2019 08:59:59 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libbsd0     libcurl4     libxml2     libedit2     libsqlite3-0     libc6-dev     binutils     libgcc-5-dev     libstdc++-5-dev     libpython2.7     tzdata     git     pkg-config     && rm -r /var/lib/apt/lists/*
-# Fri, 01 Nov 2019 00:09:23 GMT
+# Thu, 19 Dec 2019 08:59:59 GMT
 ARG SWIFT_PLATFORM=ubuntu18.04
-# Fri, 01 Nov 2019 00:09:23 GMT
+# Thu, 19 Dec 2019 09:00:00 GMT
 ARG SWIFT_BRANCH=swift-5.0.3-release
-# Fri, 01 Nov 2019 00:09:24 GMT
+# Thu, 19 Dec 2019 09:00:00 GMT
 ARG SWIFT_VERSION=swift-5.0.3-RELEASE
-# Fri, 01 Nov 2019 00:09:24 GMT
+# Thu, 19 Dec 2019 09:00:00 GMT
 ENV SWIFT_PLATFORM=ubuntu18.04 SWIFT_BRANCH=swift-5.0.3-release SWIFT_VERSION=swift-5.0.3-RELEASE
-# Fri, 01 Nov 2019 00:10:29 GMT
+# Thu, 19 Dec 2019 09:01:03 GMT
 RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | tr -d .)/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz     && apt-get update     && apt-get install -y curl     && curl -fSsL $SWIFT_URL -o swift.tar.gz     && curl -fSsL $SWIFT_URL.sig -o swift.tar.gz.sig     && apt-get purge -y curl     && apt-get -y autoremove     && export GNUPGHOME="$(mktemp -d)"     && set -e;         for key in           A62AE125BBBFBB96A6E042EC925CC1CCED3D1561         ; do           gpg --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";         done     && gpg --batch --verify --quiet swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && rm -r "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && chmod -R o+r /usr/lib/swift
-# Fri, 01 Nov 2019 00:10:33 GMT
+# Thu, 19 Dec 2019 09:01:09 GMT
 RUN swift --version
 ```
 
 -	Layers:
-	-	`sha256:7ddbc47eeb70dc7f08e410a6667948b87ff3883024eb41478b44ef9a81bf400c`  
-		Last Modified: Wed, 30 Oct 2019 00:25:34 GMT  
-		Size: 26.7 MB (26688847 bytes)  
+	-	`sha256:2746a4a261c9e18bfd7ff0429c18fd7522acc14fa4c7ec8ab37ba5ebaadbc584`  
+		Last Modified: Mon, 02 Dec 2019 13:22:09 GMT  
+		Size: 26.7 MB (26689544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1bbdc448b7263673926b8fe2e88491e5083a8b4b06ddfabf311f2fc5f27e2ff`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 35.4 KB (35362 bytes)  
+	-	`sha256:4c1d20cdee96111c8acf1858b62655a37ce81ae48648993542b7ac363ac5c0e5`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 35.4 KB (35361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c3b70e3904492c753652606df4726430426f42ea56e06ea924d6fea7ae162a1`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 845.0 B  
+	-	`sha256:0d3160e1d0de4061b5b32ee09af687b898921d36ed9556df5910ddc3104449cd`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d437916d5781043432f2d72608049dcf74ddbd27daa01a25fa63c8f1b9adc4`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 162.0 B  
+	-	`sha256:c8e37668deea784f47c8726d934adc12b8d20a2b1c50b0b0c18cb62771cd3684`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d22992215400fb73647fb8872bbb472c7b2048279b096af5bde18afc48a55397`  
-		Last Modified: Fri, 01 Nov 2019 00:23:56 GMT  
-		Size: 117.1 MB (117070781 bytes)  
+	-	`sha256:89a473a03c77f67b696eeef85758378378807b25a9c803b6c24367c17b71b5cf`  
+		Last Modified: Thu, 19 Dec 2019 09:14:01 GMT  
+		Size: 116.9 MB (116937783 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c557208083581134361e1e4400f48466aa3827124917b1aed3070aa89369d45`  
-		Last Modified: Fri, 01 Nov 2019 00:24:28 GMT  
-		Size: 318.8 MB (318846023 bytes)  
+	-	`sha256:e7f986d1e676e4204b7aed1efaa1f5f903152de4768d59e186e6350ba7470570`  
+		Last Modified: Thu, 19 Dec 2019 09:14:32 GMT  
+		Size: 319.0 MB (319042882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.0.3-bionic-slim`
 
 ```console
-$ docker pull swift@sha256:1aca7ffb951548329b1fb6625ef2fd2c8909d3e99daef118184f66d6324dc446
+$ docker pull swift@sha256:23ef051ab9f76d054d5af7dc5a7f931ac1e605025c3347782022c4f8fedcb579
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -853,75 +853,75 @@ $ docker pull swift@sha256:1aca7ffb951548329b1fb6625ef2fd2c8909d3e99daef118184f6
 ### `swift:5.0.3-bionic-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:0ab008289d778f381d90d804c1aeedbc447963cf9c9c2fbb9a972cdc0a34295b
+$ docker pull swift@sha256:f6783f8bf59bbac62340a6e6e6fb6bc6c44b945d146072b4d76820bddbc6977f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **75.2 MB (75154852 bytes)**  
+-	Total Size: **75.2 MB (75155819 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d9ecacb9b7d31228b20a90322aca2f5d4369f29200bd004fbf3cb5ad7b274ef`
+-	Image ID: `sha256:c08445a7a9f1e0c0a96d57b492fb349c52624d54a2b4009cb95807743b8e148c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 31 Oct 2019 22:20:35 GMT
-ADD file:a48a5dc1b9dbfc632f6cf86fe27b770b63f07a115c98c4465dc184e303a4efa1 in / 
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:25 GMT
+ADD file:53f100793e6c0adfca99977a42bb65cb7971c26e4d6e4499d1c30a1f51f06854 in / 
+# Thu, 19 Dec 2019 04:21:26 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Fri, 01 Nov 2019 00:13:03 GMT
+# Thu, 19 Dec 2019 09:03:23 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libbsd0     libcurl4     libxml2     tzdata     && rm -r /var/lib/apt/lists/*
-# Fri, 01 Nov 2019 00:13:05 GMT
+# Thu, 19 Dec 2019 09:03:28 GMT
 ARG SWIFT_PLATFORM=ubuntu18.04
-# Fri, 01 Nov 2019 00:13:09 GMT
+# Thu, 19 Dec 2019 09:03:28 GMT
 ARG SWIFT_BRANCH=swift-5.0.3-release
-# Fri, 01 Nov 2019 00:13:09 GMT
+# Thu, 19 Dec 2019 09:03:29 GMT
 ARG SWIFT_VERSION=swift-5.0.3-RELEASE
-# Fri, 01 Nov 2019 00:13:09 GMT
+# Thu, 19 Dec 2019 09:03:29 GMT
 ENV SWIFT_PLATFORM=ubuntu18.04 SWIFT_BRANCH=swift-5.0.3-release SWIFT_VERSION=swift-5.0.3-RELEASE
-# Fri, 01 Nov 2019 00:14:04 GMT
+# Thu, 19 Dec 2019 09:04:27 GMT
 RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | tr -d .)/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz     && apt-get update     && apt-get install -y curl gpg     && curl -fSsL $SWIFT_URL -o swift.tar.gz     && curl -fSsL $SWIFT_URL.sig -o swift.tar.gz.sig     && export GNUPGHOME="$(mktemp -d)"     && set -e;         for key in           A62AE125BBBFBB96A6E042EC925CC1CCED3D1561         ; do           gpg --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";         done     && gpg --batch --verify --quiet swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1 $SWIFT_VERSION-$SWIFT_PLATFORM/usr/lib/swift/linux     && apt-get purge -y curl gpg     && apt-get -y autoremove     && rm -r /var/lib/apt/lists/*     && rm -r "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && chmod -R o+r /usr/lib/swift
 ```
 
 -	Layers:
-	-	`sha256:7ddbc47eeb70dc7f08e410a6667948b87ff3883024eb41478b44ef9a81bf400c`  
-		Last Modified: Wed, 30 Oct 2019 00:25:34 GMT  
-		Size: 26.7 MB (26688847 bytes)  
+	-	`sha256:2746a4a261c9e18bfd7ff0429c18fd7522acc14fa4c7ec8ab37ba5ebaadbc584`  
+		Last Modified: Mon, 02 Dec 2019 13:22:09 GMT  
+		Size: 26.7 MB (26689544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1bbdc448b7263673926b8fe2e88491e5083a8b4b06ddfabf311f2fc5f27e2ff`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 35.4 KB (35362 bytes)  
+	-	`sha256:4c1d20cdee96111c8acf1858b62655a37ce81ae48648993542b7ac363ac5c0e5`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 35.4 KB (35361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c3b70e3904492c753652606df4726430426f42ea56e06ea924d6fea7ae162a1`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 845.0 B  
+	-	`sha256:0d3160e1d0de4061b5b32ee09af687b898921d36ed9556df5910ddc3104449cd`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d437916d5781043432f2d72608049dcf74ddbd27daa01a25fa63c8f1b9adc4`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 162.0 B  
+	-	`sha256:c8e37668deea784f47c8726d934adc12b8d20a2b1c50b0b0c18cb62771cd3684`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03148ea105b3748bd23084d3a2e30b43756ca361b92d95a03849a6b7e7170842`  
-		Last Modified: Fri, 01 Nov 2019 00:25:51 GMT  
-		Size: 20.5 MB (20531053 bytes)  
+	-	`sha256:de17c17d0088300c4594a9ab967b2e91dfc6ebe05b44ce1cd6befdbf19ebc5a3`  
+		Last Modified: Thu, 19 Dec 2019 09:15:43 GMT  
+		Size: 20.5 MB (20531306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95655eb89d774e5b47b9a402afc427cb82a8c05e0ec9b8b6ddf207af5df04318`  
-		Last Modified: Fri, 01 Nov 2019 00:25:52 GMT  
-		Size: 27.9 MB (27898583 bytes)  
+	-	`sha256:cb3bd82ef650983f02b47aa08a79bff68cd6f30be76f25c7ed7c7914c3b55e1a`  
+		Last Modified: Thu, 19 Dec 2019 09:15:44 GMT  
+		Size: 27.9 MB (27898591 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.0.3-slim`
 
 ```console
-$ docker pull swift@sha256:1aca7ffb951548329b1fb6625ef2fd2c8909d3e99daef118184f66d6324dc446
+$ docker pull swift@sha256:23ef051ab9f76d054d5af7dc5a7f931ac1e605025c3347782022c4f8fedcb579
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -931,75 +931,75 @@ $ docker pull swift@sha256:1aca7ffb951548329b1fb6625ef2fd2c8909d3e99daef118184f6
 ### `swift:5.0.3-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:0ab008289d778f381d90d804c1aeedbc447963cf9c9c2fbb9a972cdc0a34295b
+$ docker pull swift@sha256:f6783f8bf59bbac62340a6e6e6fb6bc6c44b945d146072b4d76820bddbc6977f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **75.2 MB (75154852 bytes)**  
+-	Total Size: **75.2 MB (75155819 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d9ecacb9b7d31228b20a90322aca2f5d4369f29200bd004fbf3cb5ad7b274ef`
+-	Image ID: `sha256:c08445a7a9f1e0c0a96d57b492fb349c52624d54a2b4009cb95807743b8e148c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 31 Oct 2019 22:20:35 GMT
-ADD file:a48a5dc1b9dbfc632f6cf86fe27b770b63f07a115c98c4465dc184e303a4efa1 in / 
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:25 GMT
+ADD file:53f100793e6c0adfca99977a42bb65cb7971c26e4d6e4499d1c30a1f51f06854 in / 
+# Thu, 19 Dec 2019 04:21:26 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Fri, 01 Nov 2019 00:13:03 GMT
+# Thu, 19 Dec 2019 09:03:23 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libbsd0     libcurl4     libxml2     tzdata     && rm -r /var/lib/apt/lists/*
-# Fri, 01 Nov 2019 00:13:05 GMT
+# Thu, 19 Dec 2019 09:03:28 GMT
 ARG SWIFT_PLATFORM=ubuntu18.04
-# Fri, 01 Nov 2019 00:13:09 GMT
+# Thu, 19 Dec 2019 09:03:28 GMT
 ARG SWIFT_BRANCH=swift-5.0.3-release
-# Fri, 01 Nov 2019 00:13:09 GMT
+# Thu, 19 Dec 2019 09:03:29 GMT
 ARG SWIFT_VERSION=swift-5.0.3-RELEASE
-# Fri, 01 Nov 2019 00:13:09 GMT
+# Thu, 19 Dec 2019 09:03:29 GMT
 ENV SWIFT_PLATFORM=ubuntu18.04 SWIFT_BRANCH=swift-5.0.3-release SWIFT_VERSION=swift-5.0.3-RELEASE
-# Fri, 01 Nov 2019 00:14:04 GMT
+# Thu, 19 Dec 2019 09:04:27 GMT
 RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | tr -d .)/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz     && apt-get update     && apt-get install -y curl gpg     && curl -fSsL $SWIFT_URL -o swift.tar.gz     && curl -fSsL $SWIFT_URL.sig -o swift.tar.gz.sig     && export GNUPGHOME="$(mktemp -d)"     && set -e;         for key in           A62AE125BBBFBB96A6E042EC925CC1CCED3D1561         ; do           gpg --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";         done     && gpg --batch --verify --quiet swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1 $SWIFT_VERSION-$SWIFT_PLATFORM/usr/lib/swift/linux     && apt-get purge -y curl gpg     && apt-get -y autoremove     && rm -r /var/lib/apt/lists/*     && rm -r "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && chmod -R o+r /usr/lib/swift
 ```
 
 -	Layers:
-	-	`sha256:7ddbc47eeb70dc7f08e410a6667948b87ff3883024eb41478b44ef9a81bf400c`  
-		Last Modified: Wed, 30 Oct 2019 00:25:34 GMT  
-		Size: 26.7 MB (26688847 bytes)  
+	-	`sha256:2746a4a261c9e18bfd7ff0429c18fd7522acc14fa4c7ec8ab37ba5ebaadbc584`  
+		Last Modified: Mon, 02 Dec 2019 13:22:09 GMT  
+		Size: 26.7 MB (26689544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1bbdc448b7263673926b8fe2e88491e5083a8b4b06ddfabf311f2fc5f27e2ff`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 35.4 KB (35362 bytes)  
+	-	`sha256:4c1d20cdee96111c8acf1858b62655a37ce81ae48648993542b7ac363ac5c0e5`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 35.4 KB (35361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c3b70e3904492c753652606df4726430426f42ea56e06ea924d6fea7ae162a1`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 845.0 B  
+	-	`sha256:0d3160e1d0de4061b5b32ee09af687b898921d36ed9556df5910ddc3104449cd`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d437916d5781043432f2d72608049dcf74ddbd27daa01a25fa63c8f1b9adc4`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 162.0 B  
+	-	`sha256:c8e37668deea784f47c8726d934adc12b8d20a2b1c50b0b0c18cb62771cd3684`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03148ea105b3748bd23084d3a2e30b43756ca361b92d95a03849a6b7e7170842`  
-		Last Modified: Fri, 01 Nov 2019 00:25:51 GMT  
-		Size: 20.5 MB (20531053 bytes)  
+	-	`sha256:de17c17d0088300c4594a9ab967b2e91dfc6ebe05b44ce1cd6befdbf19ebc5a3`  
+		Last Modified: Thu, 19 Dec 2019 09:15:43 GMT  
+		Size: 20.5 MB (20531306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95655eb89d774e5b47b9a402afc427cb82a8c05e0ec9b8b6ddf207af5df04318`  
-		Last Modified: Fri, 01 Nov 2019 00:25:52 GMT  
-		Size: 27.9 MB (27898583 bytes)  
+	-	`sha256:cb3bd82ef650983f02b47aa08a79bff68cd6f30be76f25c7ed7c7914c3b55e1a`  
+		Last Modified: Thu, 19 Dec 2019 09:15:44 GMT  
+		Size: 27.9 MB (27898591 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.0.3-xenial`
 
 ```console
-$ docker pull swift@sha256:e89c0ad45679b1b89fb56f6fec020d5e66c1e7793f8730056198e7719042cd29
+$ docker pull swift@sha256:0a1fe9c497f8c8d1008f1a5c0e18fb215c7a638eb4635f7a835cc673c43501cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1009,77 +1009,77 @@ $ docker pull swift@sha256:e89c0ad45679b1b89fb56f6fec020d5e66c1e7793f8730056198e
 ### `swift:5.0.3-xenial` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:3503d5662ddbb50d7f566e1c6e112e7b39913b8ad97edccb71109d5b214b5b94
+$ docker pull swift@sha256:eee5b6cac74ab31dc09dd70921afb09a13f9a38dc20fa6921f57364d4c970317
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **477.9 MB (477852072 bytes)**  
+-	Total Size: **477.9 MB (477863673 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:573069ae81ad17447429670ebae6d979dc1585a830af82a95d81e92d511c2564`
+-	Image ID: `sha256:532afebe9b6fb80a79572d1c7edac9623eae600c30b163055fdc48e87465f0e9`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 Nov 2019 00:22:54 GMT
-ADD file:4eb02fc768cad452a37e8df30bbfcc728f3e6e7ca33af177fd4de06fd07c2098 in / 
-# Wed, 27 Nov 2019 00:22:55 GMT
+# Thu, 19 Dec 2019 04:24:35 GMT
+ADD file:f0b8eaa718bc3965b1e8395f5a6bea97c16651b50614e676bb3eaf31335a0045 in / 
+# Thu, 19 Dec 2019 04:24:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:37 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 CMD ["/bin/bash"]
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:37 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Wed, 27 Nov 2019 01:40:11 GMT
+# Thu, 19 Dec 2019 09:01:48 GMT
 RUN apt-get -q update &&     apt-get -q install -y     libatomic1     libbsd0     libcurl3     libxml2     libedit2     libsqlite3-0     libc6-dev     binutils     libgcc-5-dev     libstdc++-5-dev     libpython2.7     tzdata     git     pkg-config     && rm -r /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 01:40:11 GMT
+# Thu, 19 Dec 2019 09:01:48 GMT
 ARG SWIFT_PLATFORM=ubuntu16.04
-# Wed, 27 Nov 2019 01:40:11 GMT
+# Thu, 19 Dec 2019 09:01:48 GMT
 ARG SWIFT_BRANCH=swift-5.0.3-release
-# Wed, 27 Nov 2019 01:40:12 GMT
+# Thu, 19 Dec 2019 09:01:49 GMT
 ARG SWIFT_VERSION=swift-5.0.3-RELEASE
-# Wed, 27 Nov 2019 01:40:12 GMT
+# Thu, 19 Dec 2019 09:01:49 GMT
 ENV SWIFT_PLATFORM=ubuntu16.04 SWIFT_BRANCH=swift-5.0.3-release SWIFT_VERSION=swift-5.0.3-RELEASE
-# Wed, 27 Nov 2019 01:41:17 GMT
+# Thu, 19 Dec 2019 09:02:56 GMT
 RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | tr -d .)/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz     && apt-get -q update     && apt-get -q install -y curl     && curl -fSsL $SWIFT_URL -o swift.tar.gz     && curl -fSsL $SWIFT_URL.sig -o swift.tar.gz.sig     && apt-get purge -y curl     && apt-get -y autoremove     && export GNUPGHOME="$(mktemp -d)"     && set -e;         for key in           A62AE125BBBFBB96A6E042EC925CC1CCED3D1561         ; do           gpg --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";         done     && gpg --batch --verify --quiet swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && rm -r "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && chmod -R o+r /usr/lib/swift
-# Wed, 27 Nov 2019 01:41:20 GMT
+# Thu, 19 Dec 2019 09:03:02 GMT
 RUN swift --version
 ```
 
 -	Layers:
-	-	`sha256:976a760c94fcdd7d105269ae621e8269e7bb25a58c52ae667b4029a6bc7e33cb`  
-		Last Modified: Sat, 09 Nov 2019 00:25:10 GMT  
-		Size: 44.1 MB (44145376 bytes)  
+	-	`sha256:3386e6af03b043219225367632569465e5ecd47391d1f99a6d265e51bd463a83`  
+		Last Modified: Thu, 12 Dec 2019 08:26:09 GMT  
+		Size: 44.1 MB (44123254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c58992f3c37bb64aeba18910408cda9a7a63e212fe27e95065a8d54130ca5926`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
+	-	`sha256:49ac0bbe6c8eeb959337b336ceaa5c3bbbae81e316025f9b94ede453540f2377`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
 		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca0e5e7f12e6eb512246aea5579fcb771fe7203bc60944384d5cd7962f87ddb`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 846.0 B  
+	-	`sha256:d1983a67e104e801fceb1850a375a71fe6b62636ba7a8403d9644f308a6a43f9`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2a274cc00ca5f671b1740c43672dbc96504760cee585e7604029a3fe56854a8`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 168.0 B  
+	-	`sha256:1a0f3a523f04f61db942018321ae122f90d8e3303e243b005e8de9817daf7028`  
+		Last Modified: Thu, 19 Dec 2019 04:25:59 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a646c553bb8d5a50fb030cc0ad921b7e590b7c3ad58bf7745cca033173af7b0`  
-		Last Modified: Wed, 27 Nov 2019 01:51:17 GMT  
-		Size: 111.4 MB (111376081 bytes)  
+	-	`sha256:bd2e3790560d74219a8a6321a549ec1f16e3a46707b4c1fb597e8e5222ac27fa`  
+		Last Modified: Thu, 19 Dec 2019 09:15:01 GMT  
+		Size: 111.4 MB (111380530 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d2ac5fba49c9899984db04a3014899c0b32c47862fb7a3e9cb569654f728cac`  
-		Last Modified: Wed, 27 Nov 2019 01:51:52 GMT  
-		Size: 322.3 MB (322329072 bytes)  
+	-	`sha256:350971565e5e706f7c903820d753a9175839b28287d04dc5d2b3d694f1f5ebe1`  
+		Last Modified: Thu, 19 Dec 2019 09:15:35 GMT  
+		Size: 322.4 MB (322358342 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.0.3-xenial-slim`
 
 ```console
-$ docker pull swift@sha256:f8b62ed1a229649cc162d838d466bd2c9f708c751478eb0792373fd7755f17d2
+$ docker pull swift@sha256:692a99d733f5af0d26146622b119023064f8eaab984da92ba5cc8854bd9accb0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1089,75 +1089,75 @@ $ docker pull swift@sha256:f8b62ed1a229649cc162d838d466bd2c9f708c751478eb0792373
 ### `swift:5.0.3-xenial-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:1b29d31044fb84c02698408d1e312be3e5b9cf6b0595bbb08899378a8d7938b8
+$ docker pull swift@sha256:fb6b4a76d238d1e55277bc3dc6bfed3f8c49a388487d65c28ef6059cc7c1aec3
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.9 MB (92859778 bytes)**  
+-	Total Size: **92.8 MB (92837750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c724aff523c09214baefe9631cd86112a9962fc0fcb163410092dfdbce83bfd3`
+-	Image ID: `sha256:21cc9b78d4bad71e6c701349f6e96eb1fb3f4c471d569c775399c8f01ecdb2f7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 Nov 2019 00:22:54 GMT
-ADD file:4eb02fc768cad452a37e8df30bbfcc728f3e6e7ca33af177fd4de06fd07c2098 in / 
-# Wed, 27 Nov 2019 00:22:55 GMT
+# Thu, 19 Dec 2019 04:24:35 GMT
+ADD file:f0b8eaa718bc3965b1e8395f5a6bea97c16651b50614e676bb3eaf31335a0045 in / 
+# Thu, 19 Dec 2019 04:24:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:37 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 CMD ["/bin/bash"]
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:37 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Wed, 27 Nov 2019 01:41:43 GMT
+# Thu, 19 Dec 2019 09:04:52 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libbsd0     libcurl3     libxml2     tzdata     && rm -r /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 01:41:43 GMT
+# Thu, 19 Dec 2019 09:04:52 GMT
 ARG SWIFT_PLATFORM=ubuntu16.04
-# Wed, 27 Nov 2019 01:41:43 GMT
+# Thu, 19 Dec 2019 09:04:52 GMT
 ARG SWIFT_BRANCH=swift-5.0.3-release
-# Wed, 27 Nov 2019 01:41:44 GMT
+# Thu, 19 Dec 2019 09:04:52 GMT
 ARG SWIFT_VERSION=swift-5.0.3-RELEASE
-# Wed, 27 Nov 2019 01:41:44 GMT
+# Thu, 19 Dec 2019 09:04:53 GMT
 ENV SWIFT_PLATFORM=ubuntu16.04 SWIFT_BRANCH=swift-5.0.3-release SWIFT_VERSION=swift-5.0.3-RELEASE
-# Wed, 27 Nov 2019 01:42:46 GMT
+# Thu, 19 Dec 2019 09:05:52 GMT
 RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | tr -d .)/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz     && apt-get update     && apt-get install -y curl     && curl -fSsL $SWIFT_URL -o swift.tar.gz     && curl -fSsL $SWIFT_URL.sig -o swift.tar.gz.sig     && export GNUPGHOME="$(mktemp -d)"     && set -e;         for key in           A62AE125BBBFBB96A6E042EC925CC1CCED3D1561         ; do           gpg --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";         done     && gpg --batch --verify --quiet swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1 $SWIFT_VERSION-$SWIFT_PLATFORM/usr/lib/swift/linux     && apt-get purge -y curl     && apt-get -y autoremove     && rm -r /var/lib/apt/lists/*     && rm -r "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && chmod -R o+r /usr/lib/swift
 ```
 
 -	Layers:
-	-	`sha256:976a760c94fcdd7d105269ae621e8269e7bb25a58c52ae667b4029a6bc7e33cb`  
-		Last Modified: Sat, 09 Nov 2019 00:25:10 GMT  
-		Size: 44.1 MB (44145376 bytes)  
+	-	`sha256:3386e6af03b043219225367632569465e5ecd47391d1f99a6d265e51bd463a83`  
+		Last Modified: Thu, 12 Dec 2019 08:26:09 GMT  
+		Size: 44.1 MB (44123254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c58992f3c37bb64aeba18910408cda9a7a63e212fe27e95065a8d54130ca5926`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
+	-	`sha256:49ac0bbe6c8eeb959337b336ceaa5c3bbbae81e316025f9b94ede453540f2377`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
 		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca0e5e7f12e6eb512246aea5579fcb771fe7203bc60944384d5cd7962f87ddb`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 846.0 B  
+	-	`sha256:d1983a67e104e801fceb1850a375a71fe6b62636ba7a8403d9644f308a6a43f9`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2a274cc00ca5f671b1740c43672dbc96504760cee585e7604029a3fe56854a8`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 168.0 B  
+	-	`sha256:1a0f3a523f04f61db942018321ae122f90d8e3303e243b005e8de9817daf7028`  
+		Last Modified: Thu, 19 Dec 2019 04:25:59 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a14cec8ee6b00d5fa0c591fdcfbf80f0c4a818f7b31657ced5f9ebd3929c9c0`  
-		Last Modified: Wed, 27 Nov 2019 01:52:08 GMT  
-		Size: 20.9 MB (20927216 bytes)  
+	-	`sha256:380b2f3b4e5a2d3a2f390de5bfef3eccfce875b1d49badfa366f318b51b92713`  
+		Last Modified: Thu, 19 Dec 2019 09:15:54 GMT  
+		Size: 20.9 MB (20927243 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4227a6554c90d509740299a1575bdb25555db2281707952527c232efc1b3671`  
-		Last Modified: Wed, 27 Nov 2019 01:52:09 GMT  
-		Size: 27.8 MB (27785643 bytes)  
+	-	`sha256:7e372d513897ab369f07bb576452922367b4dcfc4f6257c8bb98a98d88a25816`  
+		Last Modified: Thu, 19 Dec 2019 09:15:55 GMT  
+		Size: 27.8 MB (27785706 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.0-bionic`
 
 ```console
-$ docker pull swift@sha256:931422036dea1e6419b0ea20d5d7242a81f2098aa11d93b34e538dcac9354775
+$ docker pull swift@sha256:867264cce2b412ee9381adaf35d346bde020fae59d78f1d17078ed01bb8aeb56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1167,77 +1167,77 @@ $ docker pull swift@sha256:931422036dea1e6419b0ea20d5d7242a81f2098aa11d93b34e538
 ### `swift:5.0-bionic` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:b940d28f29b64962762e737dc561a59e301c0e0851d635aaa44b5cd95b8b8df8
+$ docker pull swift@sha256:c48e3cc961eb75a5cfa3f9e73197a7a855edf018a662187725b9cae665b6d856
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **462.6 MB (462642020 bytes)**  
+-	Total Size: **462.7 MB (462706587 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13dbb3e68c8ed66a5bc2b2bad0218b6dfc61b8951f8a695188e26491e8f25285`
+-	Image ID: `sha256:3c515fab1a86b7c0bbba913eedf2d216a4377714b759960665436c1fa2baf033`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 31 Oct 2019 22:20:35 GMT
-ADD file:a48a5dc1b9dbfc632f6cf86fe27b770b63f07a115c98c4465dc184e303a4efa1 in / 
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:25 GMT
+ADD file:53f100793e6c0adfca99977a42bb65cb7971c26e4d6e4499d1c30a1f51f06854 in / 
+# Thu, 19 Dec 2019 04:21:26 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Fri, 01 Nov 2019 00:09:23 GMT
+# Thu, 19 Dec 2019 08:59:59 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libbsd0     libcurl4     libxml2     libedit2     libsqlite3-0     libc6-dev     binutils     libgcc-5-dev     libstdc++-5-dev     libpython2.7     tzdata     git     pkg-config     && rm -r /var/lib/apt/lists/*
-# Fri, 01 Nov 2019 00:09:23 GMT
+# Thu, 19 Dec 2019 08:59:59 GMT
 ARG SWIFT_PLATFORM=ubuntu18.04
-# Fri, 01 Nov 2019 00:09:23 GMT
+# Thu, 19 Dec 2019 09:00:00 GMT
 ARG SWIFT_BRANCH=swift-5.0.3-release
-# Fri, 01 Nov 2019 00:09:24 GMT
+# Thu, 19 Dec 2019 09:00:00 GMT
 ARG SWIFT_VERSION=swift-5.0.3-RELEASE
-# Fri, 01 Nov 2019 00:09:24 GMT
+# Thu, 19 Dec 2019 09:00:00 GMT
 ENV SWIFT_PLATFORM=ubuntu18.04 SWIFT_BRANCH=swift-5.0.3-release SWIFT_VERSION=swift-5.0.3-RELEASE
-# Fri, 01 Nov 2019 00:10:29 GMT
+# Thu, 19 Dec 2019 09:01:03 GMT
 RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | tr -d .)/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz     && apt-get update     && apt-get install -y curl     && curl -fSsL $SWIFT_URL -o swift.tar.gz     && curl -fSsL $SWIFT_URL.sig -o swift.tar.gz.sig     && apt-get purge -y curl     && apt-get -y autoremove     && export GNUPGHOME="$(mktemp -d)"     && set -e;         for key in           A62AE125BBBFBB96A6E042EC925CC1CCED3D1561         ; do           gpg --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";         done     && gpg --batch --verify --quiet swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && rm -r "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && chmod -R o+r /usr/lib/swift
-# Fri, 01 Nov 2019 00:10:33 GMT
+# Thu, 19 Dec 2019 09:01:09 GMT
 RUN swift --version
 ```
 
 -	Layers:
-	-	`sha256:7ddbc47eeb70dc7f08e410a6667948b87ff3883024eb41478b44ef9a81bf400c`  
-		Last Modified: Wed, 30 Oct 2019 00:25:34 GMT  
-		Size: 26.7 MB (26688847 bytes)  
+	-	`sha256:2746a4a261c9e18bfd7ff0429c18fd7522acc14fa4c7ec8ab37ba5ebaadbc584`  
+		Last Modified: Mon, 02 Dec 2019 13:22:09 GMT  
+		Size: 26.7 MB (26689544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1bbdc448b7263673926b8fe2e88491e5083a8b4b06ddfabf311f2fc5f27e2ff`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 35.4 KB (35362 bytes)  
+	-	`sha256:4c1d20cdee96111c8acf1858b62655a37ce81ae48648993542b7ac363ac5c0e5`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 35.4 KB (35361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c3b70e3904492c753652606df4726430426f42ea56e06ea924d6fea7ae162a1`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 845.0 B  
+	-	`sha256:0d3160e1d0de4061b5b32ee09af687b898921d36ed9556df5910ddc3104449cd`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d437916d5781043432f2d72608049dcf74ddbd27daa01a25fa63c8f1b9adc4`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 162.0 B  
+	-	`sha256:c8e37668deea784f47c8726d934adc12b8d20a2b1c50b0b0c18cb62771cd3684`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d22992215400fb73647fb8872bbb472c7b2048279b096af5bde18afc48a55397`  
-		Last Modified: Fri, 01 Nov 2019 00:23:56 GMT  
-		Size: 117.1 MB (117070781 bytes)  
+	-	`sha256:89a473a03c77f67b696eeef85758378378807b25a9c803b6c24367c17b71b5cf`  
+		Last Modified: Thu, 19 Dec 2019 09:14:01 GMT  
+		Size: 116.9 MB (116937783 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c557208083581134361e1e4400f48466aa3827124917b1aed3070aa89369d45`  
-		Last Modified: Fri, 01 Nov 2019 00:24:28 GMT  
-		Size: 318.8 MB (318846023 bytes)  
+	-	`sha256:e7f986d1e676e4204b7aed1efaa1f5f903152de4768d59e186e6350ba7470570`  
+		Last Modified: Thu, 19 Dec 2019 09:14:32 GMT  
+		Size: 319.0 MB (319042882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.0-bionic-slim`
 
 ```console
-$ docker pull swift@sha256:1aca7ffb951548329b1fb6625ef2fd2c8909d3e99daef118184f66d6324dc446
+$ docker pull swift@sha256:23ef051ab9f76d054d5af7dc5a7f931ac1e605025c3347782022c4f8fedcb579
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1247,75 +1247,75 @@ $ docker pull swift@sha256:1aca7ffb951548329b1fb6625ef2fd2c8909d3e99daef118184f6
 ### `swift:5.0-bionic-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:0ab008289d778f381d90d804c1aeedbc447963cf9c9c2fbb9a972cdc0a34295b
+$ docker pull swift@sha256:f6783f8bf59bbac62340a6e6e6fb6bc6c44b945d146072b4d76820bddbc6977f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **75.2 MB (75154852 bytes)**  
+-	Total Size: **75.2 MB (75155819 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d9ecacb9b7d31228b20a90322aca2f5d4369f29200bd004fbf3cb5ad7b274ef`
+-	Image ID: `sha256:c08445a7a9f1e0c0a96d57b492fb349c52624d54a2b4009cb95807743b8e148c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 31 Oct 2019 22:20:35 GMT
-ADD file:a48a5dc1b9dbfc632f6cf86fe27b770b63f07a115c98c4465dc184e303a4efa1 in / 
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:25 GMT
+ADD file:53f100793e6c0adfca99977a42bb65cb7971c26e4d6e4499d1c30a1f51f06854 in / 
+# Thu, 19 Dec 2019 04:21:26 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Fri, 01 Nov 2019 00:13:03 GMT
+# Thu, 19 Dec 2019 09:03:23 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libbsd0     libcurl4     libxml2     tzdata     && rm -r /var/lib/apt/lists/*
-# Fri, 01 Nov 2019 00:13:05 GMT
+# Thu, 19 Dec 2019 09:03:28 GMT
 ARG SWIFT_PLATFORM=ubuntu18.04
-# Fri, 01 Nov 2019 00:13:09 GMT
+# Thu, 19 Dec 2019 09:03:28 GMT
 ARG SWIFT_BRANCH=swift-5.0.3-release
-# Fri, 01 Nov 2019 00:13:09 GMT
+# Thu, 19 Dec 2019 09:03:29 GMT
 ARG SWIFT_VERSION=swift-5.0.3-RELEASE
-# Fri, 01 Nov 2019 00:13:09 GMT
+# Thu, 19 Dec 2019 09:03:29 GMT
 ENV SWIFT_PLATFORM=ubuntu18.04 SWIFT_BRANCH=swift-5.0.3-release SWIFT_VERSION=swift-5.0.3-RELEASE
-# Fri, 01 Nov 2019 00:14:04 GMT
+# Thu, 19 Dec 2019 09:04:27 GMT
 RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | tr -d .)/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz     && apt-get update     && apt-get install -y curl gpg     && curl -fSsL $SWIFT_URL -o swift.tar.gz     && curl -fSsL $SWIFT_URL.sig -o swift.tar.gz.sig     && export GNUPGHOME="$(mktemp -d)"     && set -e;         for key in           A62AE125BBBFBB96A6E042EC925CC1CCED3D1561         ; do           gpg --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";         done     && gpg --batch --verify --quiet swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1 $SWIFT_VERSION-$SWIFT_PLATFORM/usr/lib/swift/linux     && apt-get purge -y curl gpg     && apt-get -y autoremove     && rm -r /var/lib/apt/lists/*     && rm -r "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && chmod -R o+r /usr/lib/swift
 ```
 
 -	Layers:
-	-	`sha256:7ddbc47eeb70dc7f08e410a6667948b87ff3883024eb41478b44ef9a81bf400c`  
-		Last Modified: Wed, 30 Oct 2019 00:25:34 GMT  
-		Size: 26.7 MB (26688847 bytes)  
+	-	`sha256:2746a4a261c9e18bfd7ff0429c18fd7522acc14fa4c7ec8ab37ba5ebaadbc584`  
+		Last Modified: Mon, 02 Dec 2019 13:22:09 GMT  
+		Size: 26.7 MB (26689544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1bbdc448b7263673926b8fe2e88491e5083a8b4b06ddfabf311f2fc5f27e2ff`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 35.4 KB (35362 bytes)  
+	-	`sha256:4c1d20cdee96111c8acf1858b62655a37ce81ae48648993542b7ac363ac5c0e5`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 35.4 KB (35361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c3b70e3904492c753652606df4726430426f42ea56e06ea924d6fea7ae162a1`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 845.0 B  
+	-	`sha256:0d3160e1d0de4061b5b32ee09af687b898921d36ed9556df5910ddc3104449cd`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d437916d5781043432f2d72608049dcf74ddbd27daa01a25fa63c8f1b9adc4`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 162.0 B  
+	-	`sha256:c8e37668deea784f47c8726d934adc12b8d20a2b1c50b0b0c18cb62771cd3684`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03148ea105b3748bd23084d3a2e30b43756ca361b92d95a03849a6b7e7170842`  
-		Last Modified: Fri, 01 Nov 2019 00:25:51 GMT  
-		Size: 20.5 MB (20531053 bytes)  
+	-	`sha256:de17c17d0088300c4594a9ab967b2e91dfc6ebe05b44ce1cd6befdbf19ebc5a3`  
+		Last Modified: Thu, 19 Dec 2019 09:15:43 GMT  
+		Size: 20.5 MB (20531306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95655eb89d774e5b47b9a402afc427cb82a8c05e0ec9b8b6ddf207af5df04318`  
-		Last Modified: Fri, 01 Nov 2019 00:25:52 GMT  
-		Size: 27.9 MB (27898583 bytes)  
+	-	`sha256:cb3bd82ef650983f02b47aa08a79bff68cd6f30be76f25c7ed7c7914c3b55e1a`  
+		Last Modified: Thu, 19 Dec 2019 09:15:44 GMT  
+		Size: 27.9 MB (27898591 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.0-slim`
 
 ```console
-$ docker pull swift@sha256:1aca7ffb951548329b1fb6625ef2fd2c8909d3e99daef118184f66d6324dc446
+$ docker pull swift@sha256:23ef051ab9f76d054d5af7dc5a7f931ac1e605025c3347782022c4f8fedcb579
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1325,75 +1325,75 @@ $ docker pull swift@sha256:1aca7ffb951548329b1fb6625ef2fd2c8909d3e99daef118184f6
 ### `swift:5.0-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:0ab008289d778f381d90d804c1aeedbc447963cf9c9c2fbb9a972cdc0a34295b
+$ docker pull swift@sha256:f6783f8bf59bbac62340a6e6e6fb6bc6c44b945d146072b4d76820bddbc6977f
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **75.2 MB (75154852 bytes)**  
+-	Total Size: **75.2 MB (75155819 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d9ecacb9b7d31228b20a90322aca2f5d4369f29200bd004fbf3cb5ad7b274ef`
+-	Image ID: `sha256:c08445a7a9f1e0c0a96d57b492fb349c52624d54a2b4009cb95807743b8e148c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 31 Oct 2019 22:20:35 GMT
-ADD file:a48a5dc1b9dbfc632f6cf86fe27b770b63f07a115c98c4465dc184e303a4efa1 in / 
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:25 GMT
+ADD file:53f100793e6c0adfca99977a42bb65cb7971c26e4d6e4499d1c30a1f51f06854 in / 
+# Thu, 19 Dec 2019 04:21:26 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Fri, 01 Nov 2019 00:13:03 GMT
+# Thu, 19 Dec 2019 09:03:23 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libbsd0     libcurl4     libxml2     tzdata     && rm -r /var/lib/apt/lists/*
-# Fri, 01 Nov 2019 00:13:05 GMT
+# Thu, 19 Dec 2019 09:03:28 GMT
 ARG SWIFT_PLATFORM=ubuntu18.04
-# Fri, 01 Nov 2019 00:13:09 GMT
+# Thu, 19 Dec 2019 09:03:28 GMT
 ARG SWIFT_BRANCH=swift-5.0.3-release
-# Fri, 01 Nov 2019 00:13:09 GMT
+# Thu, 19 Dec 2019 09:03:29 GMT
 ARG SWIFT_VERSION=swift-5.0.3-RELEASE
-# Fri, 01 Nov 2019 00:13:09 GMT
+# Thu, 19 Dec 2019 09:03:29 GMT
 ENV SWIFT_PLATFORM=ubuntu18.04 SWIFT_BRANCH=swift-5.0.3-release SWIFT_VERSION=swift-5.0.3-RELEASE
-# Fri, 01 Nov 2019 00:14:04 GMT
+# Thu, 19 Dec 2019 09:04:27 GMT
 RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | tr -d .)/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz     && apt-get update     && apt-get install -y curl gpg     && curl -fSsL $SWIFT_URL -o swift.tar.gz     && curl -fSsL $SWIFT_URL.sig -o swift.tar.gz.sig     && export GNUPGHOME="$(mktemp -d)"     && set -e;         for key in           A62AE125BBBFBB96A6E042EC925CC1CCED3D1561         ; do           gpg --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";         done     && gpg --batch --verify --quiet swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1 $SWIFT_VERSION-$SWIFT_PLATFORM/usr/lib/swift/linux     && apt-get purge -y curl gpg     && apt-get -y autoremove     && rm -r /var/lib/apt/lists/*     && rm -r "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && chmod -R o+r /usr/lib/swift
 ```
 
 -	Layers:
-	-	`sha256:7ddbc47eeb70dc7f08e410a6667948b87ff3883024eb41478b44ef9a81bf400c`  
-		Last Modified: Wed, 30 Oct 2019 00:25:34 GMT  
-		Size: 26.7 MB (26688847 bytes)  
+	-	`sha256:2746a4a261c9e18bfd7ff0429c18fd7522acc14fa4c7ec8ab37ba5ebaadbc584`  
+		Last Modified: Mon, 02 Dec 2019 13:22:09 GMT  
+		Size: 26.7 MB (26689544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1bbdc448b7263673926b8fe2e88491e5083a8b4b06ddfabf311f2fc5f27e2ff`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 35.4 KB (35362 bytes)  
+	-	`sha256:4c1d20cdee96111c8acf1858b62655a37ce81ae48648993542b7ac363ac5c0e5`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 35.4 KB (35361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c3b70e3904492c753652606df4726430426f42ea56e06ea924d6fea7ae162a1`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 845.0 B  
+	-	`sha256:0d3160e1d0de4061b5b32ee09af687b898921d36ed9556df5910ddc3104449cd`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d437916d5781043432f2d72608049dcf74ddbd27daa01a25fa63c8f1b9adc4`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 162.0 B  
+	-	`sha256:c8e37668deea784f47c8726d934adc12b8d20a2b1c50b0b0c18cb62771cd3684`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03148ea105b3748bd23084d3a2e30b43756ca361b92d95a03849a6b7e7170842`  
-		Last Modified: Fri, 01 Nov 2019 00:25:51 GMT  
-		Size: 20.5 MB (20531053 bytes)  
+	-	`sha256:de17c17d0088300c4594a9ab967b2e91dfc6ebe05b44ce1cd6befdbf19ebc5a3`  
+		Last Modified: Thu, 19 Dec 2019 09:15:43 GMT  
+		Size: 20.5 MB (20531306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95655eb89d774e5b47b9a402afc427cb82a8c05e0ec9b8b6ddf207af5df04318`  
-		Last Modified: Fri, 01 Nov 2019 00:25:52 GMT  
-		Size: 27.9 MB (27898583 bytes)  
+	-	`sha256:cb3bd82ef650983f02b47aa08a79bff68cd6f30be76f25c7ed7c7914c3b55e1a`  
+		Last Modified: Thu, 19 Dec 2019 09:15:44 GMT  
+		Size: 27.9 MB (27898591 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.0-xenial`
 
 ```console
-$ docker pull swift@sha256:e89c0ad45679b1b89fb56f6fec020d5e66c1e7793f8730056198e7719042cd29
+$ docker pull swift@sha256:0a1fe9c497f8c8d1008f1a5c0e18fb215c7a638eb4635f7a835cc673c43501cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1403,77 +1403,77 @@ $ docker pull swift@sha256:e89c0ad45679b1b89fb56f6fec020d5e66c1e7793f8730056198e
 ### `swift:5.0-xenial` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:3503d5662ddbb50d7f566e1c6e112e7b39913b8ad97edccb71109d5b214b5b94
+$ docker pull swift@sha256:eee5b6cac74ab31dc09dd70921afb09a13f9a38dc20fa6921f57364d4c970317
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **477.9 MB (477852072 bytes)**  
+-	Total Size: **477.9 MB (477863673 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:573069ae81ad17447429670ebae6d979dc1585a830af82a95d81e92d511c2564`
+-	Image ID: `sha256:532afebe9b6fb80a79572d1c7edac9623eae600c30b163055fdc48e87465f0e9`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 Nov 2019 00:22:54 GMT
-ADD file:4eb02fc768cad452a37e8df30bbfcc728f3e6e7ca33af177fd4de06fd07c2098 in / 
-# Wed, 27 Nov 2019 00:22:55 GMT
+# Thu, 19 Dec 2019 04:24:35 GMT
+ADD file:f0b8eaa718bc3965b1e8395f5a6bea97c16651b50614e676bb3eaf31335a0045 in / 
+# Thu, 19 Dec 2019 04:24:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:37 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 CMD ["/bin/bash"]
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:37 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Wed, 27 Nov 2019 01:40:11 GMT
+# Thu, 19 Dec 2019 09:01:48 GMT
 RUN apt-get -q update &&     apt-get -q install -y     libatomic1     libbsd0     libcurl3     libxml2     libedit2     libsqlite3-0     libc6-dev     binutils     libgcc-5-dev     libstdc++-5-dev     libpython2.7     tzdata     git     pkg-config     && rm -r /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 01:40:11 GMT
+# Thu, 19 Dec 2019 09:01:48 GMT
 ARG SWIFT_PLATFORM=ubuntu16.04
-# Wed, 27 Nov 2019 01:40:11 GMT
+# Thu, 19 Dec 2019 09:01:48 GMT
 ARG SWIFT_BRANCH=swift-5.0.3-release
-# Wed, 27 Nov 2019 01:40:12 GMT
+# Thu, 19 Dec 2019 09:01:49 GMT
 ARG SWIFT_VERSION=swift-5.0.3-RELEASE
-# Wed, 27 Nov 2019 01:40:12 GMT
+# Thu, 19 Dec 2019 09:01:49 GMT
 ENV SWIFT_PLATFORM=ubuntu16.04 SWIFT_BRANCH=swift-5.0.3-release SWIFT_VERSION=swift-5.0.3-RELEASE
-# Wed, 27 Nov 2019 01:41:17 GMT
+# Thu, 19 Dec 2019 09:02:56 GMT
 RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | tr -d .)/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz     && apt-get -q update     && apt-get -q install -y curl     && curl -fSsL $SWIFT_URL -o swift.tar.gz     && curl -fSsL $SWIFT_URL.sig -o swift.tar.gz.sig     && apt-get purge -y curl     && apt-get -y autoremove     && export GNUPGHOME="$(mktemp -d)"     && set -e;         for key in           A62AE125BBBFBB96A6E042EC925CC1CCED3D1561         ; do           gpg --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";         done     && gpg --batch --verify --quiet swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && rm -r "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && chmod -R o+r /usr/lib/swift
-# Wed, 27 Nov 2019 01:41:20 GMT
+# Thu, 19 Dec 2019 09:03:02 GMT
 RUN swift --version
 ```
 
 -	Layers:
-	-	`sha256:976a760c94fcdd7d105269ae621e8269e7bb25a58c52ae667b4029a6bc7e33cb`  
-		Last Modified: Sat, 09 Nov 2019 00:25:10 GMT  
-		Size: 44.1 MB (44145376 bytes)  
+	-	`sha256:3386e6af03b043219225367632569465e5ecd47391d1f99a6d265e51bd463a83`  
+		Last Modified: Thu, 12 Dec 2019 08:26:09 GMT  
+		Size: 44.1 MB (44123254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c58992f3c37bb64aeba18910408cda9a7a63e212fe27e95065a8d54130ca5926`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
+	-	`sha256:49ac0bbe6c8eeb959337b336ceaa5c3bbbae81e316025f9b94ede453540f2377`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
 		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca0e5e7f12e6eb512246aea5579fcb771fe7203bc60944384d5cd7962f87ddb`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 846.0 B  
+	-	`sha256:d1983a67e104e801fceb1850a375a71fe6b62636ba7a8403d9644f308a6a43f9`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2a274cc00ca5f671b1740c43672dbc96504760cee585e7604029a3fe56854a8`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 168.0 B  
+	-	`sha256:1a0f3a523f04f61db942018321ae122f90d8e3303e243b005e8de9817daf7028`  
+		Last Modified: Thu, 19 Dec 2019 04:25:59 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a646c553bb8d5a50fb030cc0ad921b7e590b7c3ad58bf7745cca033173af7b0`  
-		Last Modified: Wed, 27 Nov 2019 01:51:17 GMT  
-		Size: 111.4 MB (111376081 bytes)  
+	-	`sha256:bd2e3790560d74219a8a6321a549ec1f16e3a46707b4c1fb597e8e5222ac27fa`  
+		Last Modified: Thu, 19 Dec 2019 09:15:01 GMT  
+		Size: 111.4 MB (111380530 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d2ac5fba49c9899984db04a3014899c0b32c47862fb7a3e9cb569654f728cac`  
-		Last Modified: Wed, 27 Nov 2019 01:51:52 GMT  
-		Size: 322.3 MB (322329072 bytes)  
+	-	`sha256:350971565e5e706f7c903820d753a9175839b28287d04dc5d2b3d694f1f5ebe1`  
+		Last Modified: Thu, 19 Dec 2019 09:15:35 GMT  
+		Size: 322.4 MB (322358342 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.0-xenial-slim`
 
 ```console
-$ docker pull swift@sha256:f8b62ed1a229649cc162d838d466bd2c9f708c751478eb0792373fd7755f17d2
+$ docker pull swift@sha256:692a99d733f5af0d26146622b119023064f8eaab984da92ba5cc8854bd9accb0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1483,75 +1483,75 @@ $ docker pull swift@sha256:f8b62ed1a229649cc162d838d466bd2c9f708c751478eb0792373
 ### `swift:5.0-xenial-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:1b29d31044fb84c02698408d1e312be3e5b9cf6b0595bbb08899378a8d7938b8
+$ docker pull swift@sha256:fb6b4a76d238d1e55277bc3dc6bfed3f8c49a388487d65c28ef6059cc7c1aec3
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.9 MB (92859778 bytes)**  
+-	Total Size: **92.8 MB (92837750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c724aff523c09214baefe9631cd86112a9962fc0fcb163410092dfdbce83bfd3`
+-	Image ID: `sha256:21cc9b78d4bad71e6c701349f6e96eb1fb3f4c471d569c775399c8f01ecdb2f7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 Nov 2019 00:22:54 GMT
-ADD file:4eb02fc768cad452a37e8df30bbfcc728f3e6e7ca33af177fd4de06fd07c2098 in / 
-# Wed, 27 Nov 2019 00:22:55 GMT
+# Thu, 19 Dec 2019 04:24:35 GMT
+ADD file:f0b8eaa718bc3965b1e8395f5a6bea97c16651b50614e676bb3eaf31335a0045 in / 
+# Thu, 19 Dec 2019 04:24:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:37 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 CMD ["/bin/bash"]
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:37 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Wed, 27 Nov 2019 01:41:43 GMT
+# Thu, 19 Dec 2019 09:04:52 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libbsd0     libcurl3     libxml2     tzdata     && rm -r /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 01:41:43 GMT
+# Thu, 19 Dec 2019 09:04:52 GMT
 ARG SWIFT_PLATFORM=ubuntu16.04
-# Wed, 27 Nov 2019 01:41:43 GMT
+# Thu, 19 Dec 2019 09:04:52 GMT
 ARG SWIFT_BRANCH=swift-5.0.3-release
-# Wed, 27 Nov 2019 01:41:44 GMT
+# Thu, 19 Dec 2019 09:04:52 GMT
 ARG SWIFT_VERSION=swift-5.0.3-RELEASE
-# Wed, 27 Nov 2019 01:41:44 GMT
+# Thu, 19 Dec 2019 09:04:53 GMT
 ENV SWIFT_PLATFORM=ubuntu16.04 SWIFT_BRANCH=swift-5.0.3-release SWIFT_VERSION=swift-5.0.3-RELEASE
-# Wed, 27 Nov 2019 01:42:46 GMT
+# Thu, 19 Dec 2019 09:05:52 GMT
 RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | tr -d .)/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz     && apt-get update     && apt-get install -y curl     && curl -fSsL $SWIFT_URL -o swift.tar.gz     && curl -fSsL $SWIFT_URL.sig -o swift.tar.gz.sig     && export GNUPGHOME="$(mktemp -d)"     && set -e;         for key in           A62AE125BBBFBB96A6E042EC925CC1CCED3D1561         ; do           gpg --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";         done     && gpg --batch --verify --quiet swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1 $SWIFT_VERSION-$SWIFT_PLATFORM/usr/lib/swift/linux     && apt-get purge -y curl     && apt-get -y autoremove     && rm -r /var/lib/apt/lists/*     && rm -r "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && chmod -R o+r /usr/lib/swift
 ```
 
 -	Layers:
-	-	`sha256:976a760c94fcdd7d105269ae621e8269e7bb25a58c52ae667b4029a6bc7e33cb`  
-		Last Modified: Sat, 09 Nov 2019 00:25:10 GMT  
-		Size: 44.1 MB (44145376 bytes)  
+	-	`sha256:3386e6af03b043219225367632569465e5ecd47391d1f99a6d265e51bd463a83`  
+		Last Modified: Thu, 12 Dec 2019 08:26:09 GMT  
+		Size: 44.1 MB (44123254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c58992f3c37bb64aeba18910408cda9a7a63e212fe27e95065a8d54130ca5926`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
+	-	`sha256:49ac0bbe6c8eeb959337b336ceaa5c3bbbae81e316025f9b94ede453540f2377`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
 		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca0e5e7f12e6eb512246aea5579fcb771fe7203bc60944384d5cd7962f87ddb`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 846.0 B  
+	-	`sha256:d1983a67e104e801fceb1850a375a71fe6b62636ba7a8403d9644f308a6a43f9`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2a274cc00ca5f671b1740c43672dbc96504760cee585e7604029a3fe56854a8`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 168.0 B  
+	-	`sha256:1a0f3a523f04f61db942018321ae122f90d8e3303e243b005e8de9817daf7028`  
+		Last Modified: Thu, 19 Dec 2019 04:25:59 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a14cec8ee6b00d5fa0c591fdcfbf80f0c4a818f7b31657ced5f9ebd3929c9c0`  
-		Last Modified: Wed, 27 Nov 2019 01:52:08 GMT  
-		Size: 20.9 MB (20927216 bytes)  
+	-	`sha256:380b2f3b4e5a2d3a2f390de5bfef3eccfce875b1d49badfa366f318b51b92713`  
+		Last Modified: Thu, 19 Dec 2019 09:15:54 GMT  
+		Size: 20.9 MB (20927243 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4227a6554c90d509740299a1575bdb25555db2281707952527c232efc1b3671`  
-		Last Modified: Wed, 27 Nov 2019 01:52:09 GMT  
-		Size: 27.8 MB (27785643 bytes)  
+	-	`sha256:7e372d513897ab369f07bb576452922367b4dcfc4f6257c8bb98a98d88a25816`  
+		Last Modified: Thu, 19 Dec 2019 09:15:55 GMT  
+		Size: 27.8 MB (27785706 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.1`
 
 ```console
-$ docker pull swift@sha256:2f8eb501a5e918a21fedc878f0126b5a94db321e2f4c1ef087a96330c2c26cd6
+$ docker pull swift@sha256:72d7e583452031ae88251263649fc56ea79f98f4147474080426fb5c1ff904aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1561,81 +1561,81 @@ $ docker pull swift@sha256:2f8eb501a5e918a21fedc878f0126b5a94db321e2f4c1ef087a96
 ### `swift:5.1` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:83e2bc43d994382d7b8d1b3b012a6579d0055b2c1a2d6f4b689958fc520192be
+$ docker pull swift@sha256:08d053d8889f79987e1816aa3716f986a29ea17ee5afd8e8c5ced11dba81ffbf
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **488.9 MB (488924348 bytes)**  
+-	Total Size: **488.8 MB (488792052 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f54e96eb49bc6c32417e95aaca896d36cae9046c20567d95543e0328a5dc852`
+-	Image ID: `sha256:1fc468cb2d3951e48b11e7c56b3b87deaf88996c11da3f2d9499a4ff67c0012e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 31 Oct 2019 22:20:35 GMT
-ADD file:a48a5dc1b9dbfc632f6cf86fe27b770b63f07a115c98c4465dc184e303a4efa1 in / 
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:25 GMT
+ADD file:53f100793e6c0adfca99977a42bb65cb7971c26e4d6e4499d1c30a1f51f06854 in / 
+# Thu, 19 Dec 2019 04:21:26 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Fri, 01 Nov 2019 00:01:46 GMT
+# Thu, 19 Dec 2019 08:52:13 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libcurl4     libxml2     libedit2     libsqlite3-0     libc6-dev     binutils     libgcc-5-dev     libstdc++-5-dev     libpython2.7     tzdata     git     pkg-config     && rm -r /var/lib/apt/lists/*
-# Fri, 01 Nov 2019 00:01:46 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
-# Fri, 01 Nov 2019 00:01:47 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_PLATFORM=ubuntu18.04
-# Mon, 16 Dec 2019 23:30:48 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_BRANCH=swift-5.1.3-release
-# Mon, 16 Dec 2019 23:30:48 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_VERSION=swift-5.1.3-RELEASE
-# Mon, 16 Dec 2019 23:30:48 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:30:49 GMT
+# Thu, 19 Dec 2019 08:52:15 GMT
 ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=ubuntu18.04 SWIFT_BRANCH=swift-5.1.3-release SWIFT_VERSION=swift-5.1.3-RELEASE SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:32:00 GMT
+# Thu, 19 Dec 2019 08:53:24 GMT
 RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)/"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export DEBIAN_FRONTEND=noninteractive     && apt-get -q update && apt-get -q install -y curl && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && apt-get purge --auto-remove -y curl
-# Mon, 16 Dec 2019 23:32:02 GMT
+# Thu, 19 Dec 2019 08:53:27 GMT
 RUN swift --version
 ```
 
 -	Layers:
-	-	`sha256:7ddbc47eeb70dc7f08e410a6667948b87ff3883024eb41478b44ef9a81bf400c`  
-		Last Modified: Wed, 30 Oct 2019 00:25:34 GMT  
-		Size: 26.7 MB (26688847 bytes)  
+	-	`sha256:2746a4a261c9e18bfd7ff0429c18fd7522acc14fa4c7ec8ab37ba5ebaadbc584`  
+		Last Modified: Mon, 02 Dec 2019 13:22:09 GMT  
+		Size: 26.7 MB (26689544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1bbdc448b7263673926b8fe2e88491e5083a8b4b06ddfabf311f2fc5f27e2ff`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 35.4 KB (35362 bytes)  
+	-	`sha256:4c1d20cdee96111c8acf1858b62655a37ce81ae48648993542b7ac363ac5c0e5`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 35.4 KB (35361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c3b70e3904492c753652606df4726430426f42ea56e06ea924d6fea7ae162a1`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 845.0 B  
+	-	`sha256:0d3160e1d0de4061b5b32ee09af687b898921d36ed9556df5910ddc3104449cd`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d437916d5781043432f2d72608049dcf74ddbd27daa01a25fa63c8f1b9adc4`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 162.0 B  
+	-	`sha256:c8e37668deea784f47c8726d934adc12b8d20a2b1c50b0b0c18cb62771cd3684`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31400cff7f02441779e72cb64afa10a457e1b548f0e4e5af3b869c137effb092`  
-		Last Modified: Fri, 01 Nov 2019 00:20:54 GMT  
-		Size: 117.1 MB (117070613 bytes)  
+	-	`sha256:e2eb3c3401944867985bb2115c35ec699301909aa37e2b87615a93020d0fe36e`  
+		Last Modified: Thu, 19 Dec 2019 09:11:02 GMT  
+		Size: 116.9 MB (116937740 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f26497bd97ba17f7410be3e2b6dc0b12b3b31c8b0785cb2cef496ac724464261`  
-		Last Modified: Mon, 16 Dec 2019 23:37:45 GMT  
-		Size: 345.1 MB (345128519 bytes)  
+	-	`sha256:b5d1069a5aa43da44663c74f8a19ac2e54e05c2ead4142e4b8ad3c4b5ebb39b5`  
+		Last Modified: Thu, 19 Dec 2019 09:11:35 GMT  
+		Size: 345.1 MB (345128390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.1.3`
 
 ```console
-$ docker pull swift@sha256:2f8eb501a5e918a21fedc878f0126b5a94db321e2f4c1ef087a96330c2c26cd6
+$ docker pull swift@sha256:72d7e583452031ae88251263649fc56ea79f98f4147474080426fb5c1ff904aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1645,81 +1645,81 @@ $ docker pull swift@sha256:2f8eb501a5e918a21fedc878f0126b5a94db321e2f4c1ef087a96
 ### `swift:5.1.3` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:83e2bc43d994382d7b8d1b3b012a6579d0055b2c1a2d6f4b689958fc520192be
+$ docker pull swift@sha256:08d053d8889f79987e1816aa3716f986a29ea17ee5afd8e8c5ced11dba81ffbf
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **488.9 MB (488924348 bytes)**  
+-	Total Size: **488.8 MB (488792052 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f54e96eb49bc6c32417e95aaca896d36cae9046c20567d95543e0328a5dc852`
+-	Image ID: `sha256:1fc468cb2d3951e48b11e7c56b3b87deaf88996c11da3f2d9499a4ff67c0012e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 31 Oct 2019 22:20:35 GMT
-ADD file:a48a5dc1b9dbfc632f6cf86fe27b770b63f07a115c98c4465dc184e303a4efa1 in / 
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:25 GMT
+ADD file:53f100793e6c0adfca99977a42bb65cb7971c26e4d6e4499d1c30a1f51f06854 in / 
+# Thu, 19 Dec 2019 04:21:26 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Fri, 01 Nov 2019 00:01:46 GMT
+# Thu, 19 Dec 2019 08:52:13 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libcurl4     libxml2     libedit2     libsqlite3-0     libc6-dev     binutils     libgcc-5-dev     libstdc++-5-dev     libpython2.7     tzdata     git     pkg-config     && rm -r /var/lib/apt/lists/*
-# Fri, 01 Nov 2019 00:01:46 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
-# Fri, 01 Nov 2019 00:01:47 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_PLATFORM=ubuntu18.04
-# Mon, 16 Dec 2019 23:30:48 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_BRANCH=swift-5.1.3-release
-# Mon, 16 Dec 2019 23:30:48 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_VERSION=swift-5.1.3-RELEASE
-# Mon, 16 Dec 2019 23:30:48 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:30:49 GMT
+# Thu, 19 Dec 2019 08:52:15 GMT
 ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=ubuntu18.04 SWIFT_BRANCH=swift-5.1.3-release SWIFT_VERSION=swift-5.1.3-RELEASE SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:32:00 GMT
+# Thu, 19 Dec 2019 08:53:24 GMT
 RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)/"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export DEBIAN_FRONTEND=noninteractive     && apt-get -q update && apt-get -q install -y curl && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && apt-get purge --auto-remove -y curl
-# Mon, 16 Dec 2019 23:32:02 GMT
+# Thu, 19 Dec 2019 08:53:27 GMT
 RUN swift --version
 ```
 
 -	Layers:
-	-	`sha256:7ddbc47eeb70dc7f08e410a6667948b87ff3883024eb41478b44ef9a81bf400c`  
-		Last Modified: Wed, 30 Oct 2019 00:25:34 GMT  
-		Size: 26.7 MB (26688847 bytes)  
+	-	`sha256:2746a4a261c9e18bfd7ff0429c18fd7522acc14fa4c7ec8ab37ba5ebaadbc584`  
+		Last Modified: Mon, 02 Dec 2019 13:22:09 GMT  
+		Size: 26.7 MB (26689544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1bbdc448b7263673926b8fe2e88491e5083a8b4b06ddfabf311f2fc5f27e2ff`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 35.4 KB (35362 bytes)  
+	-	`sha256:4c1d20cdee96111c8acf1858b62655a37ce81ae48648993542b7ac363ac5c0e5`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 35.4 KB (35361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c3b70e3904492c753652606df4726430426f42ea56e06ea924d6fea7ae162a1`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 845.0 B  
+	-	`sha256:0d3160e1d0de4061b5b32ee09af687b898921d36ed9556df5910ddc3104449cd`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d437916d5781043432f2d72608049dcf74ddbd27daa01a25fa63c8f1b9adc4`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 162.0 B  
+	-	`sha256:c8e37668deea784f47c8726d934adc12b8d20a2b1c50b0b0c18cb62771cd3684`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31400cff7f02441779e72cb64afa10a457e1b548f0e4e5af3b869c137effb092`  
-		Last Modified: Fri, 01 Nov 2019 00:20:54 GMT  
-		Size: 117.1 MB (117070613 bytes)  
+	-	`sha256:e2eb3c3401944867985bb2115c35ec699301909aa37e2b87615a93020d0fe36e`  
+		Last Modified: Thu, 19 Dec 2019 09:11:02 GMT  
+		Size: 116.9 MB (116937740 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f26497bd97ba17f7410be3e2b6dc0b12b3b31c8b0785cb2cef496ac724464261`  
-		Last Modified: Mon, 16 Dec 2019 23:37:45 GMT  
-		Size: 345.1 MB (345128519 bytes)  
+	-	`sha256:b5d1069a5aa43da44663c74f8a19ac2e54e05c2ead4142e4b8ad3c4b5ebb39b5`  
+		Last Modified: Thu, 19 Dec 2019 09:11:35 GMT  
+		Size: 345.1 MB (345128390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.1.3-bionic`
 
 ```console
-$ docker pull swift@sha256:2f8eb501a5e918a21fedc878f0126b5a94db321e2f4c1ef087a96330c2c26cd6
+$ docker pull swift@sha256:72d7e583452031ae88251263649fc56ea79f98f4147474080426fb5c1ff904aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1729,81 +1729,81 @@ $ docker pull swift@sha256:2f8eb501a5e918a21fedc878f0126b5a94db321e2f4c1ef087a96
 ### `swift:5.1.3-bionic` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:83e2bc43d994382d7b8d1b3b012a6579d0055b2c1a2d6f4b689958fc520192be
+$ docker pull swift@sha256:08d053d8889f79987e1816aa3716f986a29ea17ee5afd8e8c5ced11dba81ffbf
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **488.9 MB (488924348 bytes)**  
+-	Total Size: **488.8 MB (488792052 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f54e96eb49bc6c32417e95aaca896d36cae9046c20567d95543e0328a5dc852`
+-	Image ID: `sha256:1fc468cb2d3951e48b11e7c56b3b87deaf88996c11da3f2d9499a4ff67c0012e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 31 Oct 2019 22:20:35 GMT
-ADD file:a48a5dc1b9dbfc632f6cf86fe27b770b63f07a115c98c4465dc184e303a4efa1 in / 
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:25 GMT
+ADD file:53f100793e6c0adfca99977a42bb65cb7971c26e4d6e4499d1c30a1f51f06854 in / 
+# Thu, 19 Dec 2019 04:21:26 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Fri, 01 Nov 2019 00:01:46 GMT
+# Thu, 19 Dec 2019 08:52:13 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libcurl4     libxml2     libedit2     libsqlite3-0     libc6-dev     binutils     libgcc-5-dev     libstdc++-5-dev     libpython2.7     tzdata     git     pkg-config     && rm -r /var/lib/apt/lists/*
-# Fri, 01 Nov 2019 00:01:46 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
-# Fri, 01 Nov 2019 00:01:47 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_PLATFORM=ubuntu18.04
-# Mon, 16 Dec 2019 23:30:48 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_BRANCH=swift-5.1.3-release
-# Mon, 16 Dec 2019 23:30:48 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_VERSION=swift-5.1.3-RELEASE
-# Mon, 16 Dec 2019 23:30:48 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:30:49 GMT
+# Thu, 19 Dec 2019 08:52:15 GMT
 ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=ubuntu18.04 SWIFT_BRANCH=swift-5.1.3-release SWIFT_VERSION=swift-5.1.3-RELEASE SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:32:00 GMT
+# Thu, 19 Dec 2019 08:53:24 GMT
 RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)/"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export DEBIAN_FRONTEND=noninteractive     && apt-get -q update && apt-get -q install -y curl && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && apt-get purge --auto-remove -y curl
-# Mon, 16 Dec 2019 23:32:02 GMT
+# Thu, 19 Dec 2019 08:53:27 GMT
 RUN swift --version
 ```
 
 -	Layers:
-	-	`sha256:7ddbc47eeb70dc7f08e410a6667948b87ff3883024eb41478b44ef9a81bf400c`  
-		Last Modified: Wed, 30 Oct 2019 00:25:34 GMT  
-		Size: 26.7 MB (26688847 bytes)  
+	-	`sha256:2746a4a261c9e18bfd7ff0429c18fd7522acc14fa4c7ec8ab37ba5ebaadbc584`  
+		Last Modified: Mon, 02 Dec 2019 13:22:09 GMT  
+		Size: 26.7 MB (26689544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1bbdc448b7263673926b8fe2e88491e5083a8b4b06ddfabf311f2fc5f27e2ff`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 35.4 KB (35362 bytes)  
+	-	`sha256:4c1d20cdee96111c8acf1858b62655a37ce81ae48648993542b7ac363ac5c0e5`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 35.4 KB (35361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c3b70e3904492c753652606df4726430426f42ea56e06ea924d6fea7ae162a1`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 845.0 B  
+	-	`sha256:0d3160e1d0de4061b5b32ee09af687b898921d36ed9556df5910ddc3104449cd`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d437916d5781043432f2d72608049dcf74ddbd27daa01a25fa63c8f1b9adc4`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 162.0 B  
+	-	`sha256:c8e37668deea784f47c8726d934adc12b8d20a2b1c50b0b0c18cb62771cd3684`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31400cff7f02441779e72cb64afa10a457e1b548f0e4e5af3b869c137effb092`  
-		Last Modified: Fri, 01 Nov 2019 00:20:54 GMT  
-		Size: 117.1 MB (117070613 bytes)  
+	-	`sha256:e2eb3c3401944867985bb2115c35ec699301909aa37e2b87615a93020d0fe36e`  
+		Last Modified: Thu, 19 Dec 2019 09:11:02 GMT  
+		Size: 116.9 MB (116937740 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f26497bd97ba17f7410be3e2b6dc0b12b3b31c8b0785cb2cef496ac724464261`  
-		Last Modified: Mon, 16 Dec 2019 23:37:45 GMT  
-		Size: 345.1 MB (345128519 bytes)  
+	-	`sha256:b5d1069a5aa43da44663c74f8a19ac2e54e05c2ead4142e4b8ad3c4b5ebb39b5`  
+		Last Modified: Thu, 19 Dec 2019 09:11:35 GMT  
+		Size: 345.1 MB (345128390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.1.3-bionic-sim`
 
 ```console
-$ docker pull swift@sha256:97dc0358a1c1496ac698c0b464a9a776f5527f6654722b0a35a5a724785b525e
+$ docker pull swift@sha256:31186888eb55fdc81861c1e2f10b2ace527b90862ebc651c8ec4a6f2eb574395
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1813,79 +1813,79 @@ $ docker pull swift@sha256:97dc0358a1c1496ac698c0b464a9a776f5527f6654722b0a35a5a
 ### `swift:5.1.3-bionic-sim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:7fb4399b74819fd0edd6f6a2747eef4a69e5330b9914975681107a08cf530169
+$ docker pull swift@sha256:c8a88d1078ad5a522112f61bf0a841fb51af6a07db95434c8a0216030505b6b7
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **78.3 MB (78298082 bytes)**  
+-	Total Size: **78.3 MB (78299085 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b261cd21bfe011b43b03a8555ade3b0f2f8c1eaaebfef54af6989e5857d09a6a`
+-	Image ID: `sha256:745916b625aac56b0529ac87f4ef589d66ef377c4fbb7637a2a852486cb6b5e2`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 31 Oct 2019 22:20:35 GMT
-ADD file:a48a5dc1b9dbfc632f6cf86fe27b770b63f07a115c98c4465dc184e303a4efa1 in / 
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:25 GMT
+ADD file:53f100793e6c0adfca99977a42bb65cb7971c26e4d6e4499d1c30a1f51f06854 in / 
+# Thu, 19 Dec 2019 04:21:26 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Fri, 01 Nov 2019 00:06:09 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libcurl4     libxml2     tzdata     && rm -r /var/lib/apt/lists/*
-# Fri, 01 Nov 2019 00:06:09 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
-# Fri, 01 Nov 2019 00:06:09 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 ARG SWIFT_PLATFORM=ubuntu18.04
-# Mon, 16 Dec 2019 23:33:49 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 ARG SWIFT_BRANCH=swift-5.1.3-release
-# Mon, 16 Dec 2019 23:33:49 GMT
+# Thu, 19 Dec 2019 08:56:46 GMT
 ARG SWIFT_VERSION=swift-5.1.3-RELEASE
-# Mon, 16 Dec 2019 23:33:49 GMT
+# Thu, 19 Dec 2019 08:56:46 GMT
 ARG SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:33:50 GMT
+# Thu, 19 Dec 2019 08:56:46 GMT
 ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=ubuntu18.04 SWIFT_BRANCH=swift-5.1.3-release SWIFT_VERSION=swift-5.1.3-RELEASE SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:34:55 GMT
+# Thu, 19 Dec 2019 08:57:49 GMT
 RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)/"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export DEBIAN_FRONTEND=noninteractive     && apt-get -q update && apt-get -q install -y curl gnupg && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1 $SWIFT_VERSION-$SWIFT_PLATFORM/usr/lib/swift/linux     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && apt-get purge --auto-remove -y curl gnupg
 ```
 
 -	Layers:
-	-	`sha256:7ddbc47eeb70dc7f08e410a6667948b87ff3883024eb41478b44ef9a81bf400c`  
-		Last Modified: Wed, 30 Oct 2019 00:25:34 GMT  
-		Size: 26.7 MB (26688847 bytes)  
+	-	`sha256:2746a4a261c9e18bfd7ff0429c18fd7522acc14fa4c7ec8ab37ba5ebaadbc584`  
+		Last Modified: Mon, 02 Dec 2019 13:22:09 GMT  
+		Size: 26.7 MB (26689544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1bbdc448b7263673926b8fe2e88491e5083a8b4b06ddfabf311f2fc5f27e2ff`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 35.4 KB (35362 bytes)  
+	-	`sha256:4c1d20cdee96111c8acf1858b62655a37ce81ae48648993542b7ac363ac5c0e5`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 35.4 KB (35361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c3b70e3904492c753652606df4726430426f42ea56e06ea924d6fea7ae162a1`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 845.0 B  
+	-	`sha256:0d3160e1d0de4061b5b32ee09af687b898921d36ed9556df5910ddc3104449cd`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d437916d5781043432f2d72608049dcf74ddbd27daa01a25fa63c8f1b9adc4`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 162.0 B  
+	-	`sha256:c8e37668deea784f47c8726d934adc12b8d20a2b1c50b0b0c18cb62771cd3684`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f17b42397ff1804136108f5565c6d518bf80a52d73bfc2f325e88ae4c611533`  
-		Last Modified: Fri, 01 Nov 2019 00:23:03 GMT  
-		Size: 20.5 MB (20487219 bytes)  
+	-	`sha256:6c4dbd05131842cfea027a5005f70e841e33e8c30cc33f8ca6301ec08965fbe9`  
+		Last Modified: Thu, 19 Dec 2019 09:12:59 GMT  
+		Size: 20.5 MB (20487567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc456dc353f7c26019a13c95e22d3b21803ad5416860e4094706806620f1a9b9`  
-		Last Modified: Mon, 16 Dec 2019 23:39:11 GMT  
-		Size: 31.1 MB (31085647 bytes)  
+	-	`sha256:ad51dd94be6144081f1c40cc214c15a3fa0817d16008f48f12a7a69c7d28ffef`  
+		Last Modified: Thu, 19 Dec 2019 09:13:01 GMT  
+		Size: 31.1 MB (31085596 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.1.3-slim`
 
 ```console
-$ docker pull swift@sha256:97dc0358a1c1496ac698c0b464a9a776f5527f6654722b0a35a5a724785b525e
+$ docker pull swift@sha256:31186888eb55fdc81861c1e2f10b2ace527b90862ebc651c8ec4a6f2eb574395
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1895,79 +1895,79 @@ $ docker pull swift@sha256:97dc0358a1c1496ac698c0b464a9a776f5527f6654722b0a35a5a
 ### `swift:5.1.3-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:7fb4399b74819fd0edd6f6a2747eef4a69e5330b9914975681107a08cf530169
+$ docker pull swift@sha256:c8a88d1078ad5a522112f61bf0a841fb51af6a07db95434c8a0216030505b6b7
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **78.3 MB (78298082 bytes)**  
+-	Total Size: **78.3 MB (78299085 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b261cd21bfe011b43b03a8555ade3b0f2f8c1eaaebfef54af6989e5857d09a6a`
+-	Image ID: `sha256:745916b625aac56b0529ac87f4ef589d66ef377c4fbb7637a2a852486cb6b5e2`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 31 Oct 2019 22:20:35 GMT
-ADD file:a48a5dc1b9dbfc632f6cf86fe27b770b63f07a115c98c4465dc184e303a4efa1 in / 
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:25 GMT
+ADD file:53f100793e6c0adfca99977a42bb65cb7971c26e4d6e4499d1c30a1f51f06854 in / 
+# Thu, 19 Dec 2019 04:21:26 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Fri, 01 Nov 2019 00:06:09 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libcurl4     libxml2     tzdata     && rm -r /var/lib/apt/lists/*
-# Fri, 01 Nov 2019 00:06:09 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
-# Fri, 01 Nov 2019 00:06:09 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 ARG SWIFT_PLATFORM=ubuntu18.04
-# Mon, 16 Dec 2019 23:33:49 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 ARG SWIFT_BRANCH=swift-5.1.3-release
-# Mon, 16 Dec 2019 23:33:49 GMT
+# Thu, 19 Dec 2019 08:56:46 GMT
 ARG SWIFT_VERSION=swift-5.1.3-RELEASE
-# Mon, 16 Dec 2019 23:33:49 GMT
+# Thu, 19 Dec 2019 08:56:46 GMT
 ARG SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:33:50 GMT
+# Thu, 19 Dec 2019 08:56:46 GMT
 ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=ubuntu18.04 SWIFT_BRANCH=swift-5.1.3-release SWIFT_VERSION=swift-5.1.3-RELEASE SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:34:55 GMT
+# Thu, 19 Dec 2019 08:57:49 GMT
 RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)/"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export DEBIAN_FRONTEND=noninteractive     && apt-get -q update && apt-get -q install -y curl gnupg && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1 $SWIFT_VERSION-$SWIFT_PLATFORM/usr/lib/swift/linux     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && apt-get purge --auto-remove -y curl gnupg
 ```
 
 -	Layers:
-	-	`sha256:7ddbc47eeb70dc7f08e410a6667948b87ff3883024eb41478b44ef9a81bf400c`  
-		Last Modified: Wed, 30 Oct 2019 00:25:34 GMT  
-		Size: 26.7 MB (26688847 bytes)  
+	-	`sha256:2746a4a261c9e18bfd7ff0429c18fd7522acc14fa4c7ec8ab37ba5ebaadbc584`  
+		Last Modified: Mon, 02 Dec 2019 13:22:09 GMT  
+		Size: 26.7 MB (26689544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1bbdc448b7263673926b8fe2e88491e5083a8b4b06ddfabf311f2fc5f27e2ff`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 35.4 KB (35362 bytes)  
+	-	`sha256:4c1d20cdee96111c8acf1858b62655a37ce81ae48648993542b7ac363ac5c0e5`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 35.4 KB (35361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c3b70e3904492c753652606df4726430426f42ea56e06ea924d6fea7ae162a1`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 845.0 B  
+	-	`sha256:0d3160e1d0de4061b5b32ee09af687b898921d36ed9556df5910ddc3104449cd`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d437916d5781043432f2d72608049dcf74ddbd27daa01a25fa63c8f1b9adc4`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 162.0 B  
+	-	`sha256:c8e37668deea784f47c8726d934adc12b8d20a2b1c50b0b0c18cb62771cd3684`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f17b42397ff1804136108f5565c6d518bf80a52d73bfc2f325e88ae4c611533`  
-		Last Modified: Fri, 01 Nov 2019 00:23:03 GMT  
-		Size: 20.5 MB (20487219 bytes)  
+	-	`sha256:6c4dbd05131842cfea027a5005f70e841e33e8c30cc33f8ca6301ec08965fbe9`  
+		Last Modified: Thu, 19 Dec 2019 09:12:59 GMT  
+		Size: 20.5 MB (20487567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc456dc353f7c26019a13c95e22d3b21803ad5416860e4094706806620f1a9b9`  
-		Last Modified: Mon, 16 Dec 2019 23:39:11 GMT  
-		Size: 31.1 MB (31085647 bytes)  
+	-	`sha256:ad51dd94be6144081f1c40cc214c15a3fa0817d16008f48f12a7a69c7d28ffef`  
+		Last Modified: Thu, 19 Dec 2019 09:13:01 GMT  
+		Size: 31.1 MB (31085596 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.1.3-xenial`
 
 ```console
-$ docker pull swift@sha256:50b4f100679f74e0706fc8a9fd8248e0ff91b9ee6d6868a2b1ec986c0ea12a33
+$ docker pull swift@sha256:c653758b8ca7b05c94965a8aeb8a470f84ec9828e25b0abf612aefd83b869d18
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1977,81 +1977,81 @@ $ docker pull swift@sha256:50b4f100679f74e0706fc8a9fd8248e0ff91b9ee6d6868a2b1ec9
 ### `swift:5.1.3-xenial` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:97ae96c5b629330196c870ed6ab30e2b9da483c0a1e6bf904cc899d437465b33
+$ docker pull swift@sha256:d0df9a0dbdeae8976b27eb27d69e5441fcff741e00b53ae65c3fe224806da3cb
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **507.0 MB (506980734 bytes)**  
+-	Total Size: **507.0 MB (506962508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73b4dab7be47887e2a7b4a84cb0af4855c19dc53249e41dd3f26efa7baff7965`
+-	Image ID: `sha256:ea67485cfa3159d017d4b8db98c18587cd2ec3ecc31b90f089fecdd3c78193e8`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 Nov 2019 00:22:54 GMT
-ADD file:4eb02fc768cad452a37e8df30bbfcc728f3e6e7ca33af177fd4de06fd07c2098 in / 
-# Wed, 27 Nov 2019 00:22:55 GMT
+# Thu, 19 Dec 2019 04:24:35 GMT
+ADD file:f0b8eaa718bc3965b1e8395f5a6bea97c16651b50614e676bb3eaf31335a0045 in / 
+# Thu, 19 Dec 2019 04:24:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:37 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 CMD ["/bin/bash"]
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:37 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Wed, 27 Nov 2019 01:36:35 GMT
+# Thu, 19 Dec 2019 08:55:03 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libcurl3     libxml2     libedit2     libsqlite3-0     libc6-dev     binutils     libgcc-5-dev     libstdc++-5-dev     libpython2.7     tzdata     git     pkg-config     && rm -r /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 01:36:35 GMT
+# Thu, 19 Dec 2019 08:55:04 GMT
 ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
-# Wed, 27 Nov 2019 01:36:35 GMT
+# Thu, 19 Dec 2019 08:55:04 GMT
 ARG SWIFT_PLATFORM=ubuntu16.04
-# Mon, 16 Dec 2019 23:32:17 GMT
+# Thu, 19 Dec 2019 08:55:04 GMT
 ARG SWIFT_BRANCH=swift-5.1.3-release
-# Mon, 16 Dec 2019 23:32:17 GMT
+# Thu, 19 Dec 2019 08:55:04 GMT
 ARG SWIFT_VERSION=swift-5.1.3-RELEASE
-# Mon, 16 Dec 2019 23:32:17 GMT
+# Thu, 19 Dec 2019 08:55:04 GMT
 ARG SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:32:17 GMT
+# Thu, 19 Dec 2019 08:55:04 GMT
 ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=ubuntu16.04 SWIFT_BRANCH=swift-5.1.3-release SWIFT_VERSION=swift-5.1.3-RELEASE SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:33:34 GMT
+# Thu, 19 Dec 2019 08:56:18 GMT
 RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)/"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export DEBIAN_FRONTEND=noninteractive     && apt-get -q update && apt-get -q install -y curl && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && apt-get purge --auto-remove -y curl
-# Mon, 16 Dec 2019 23:33:35 GMT
+# Thu, 19 Dec 2019 08:56:19 GMT
 RUN swift --version
 ```
 
 -	Layers:
-	-	`sha256:976a760c94fcdd7d105269ae621e8269e7bb25a58c52ae667b4029a6bc7e33cb`  
-		Last Modified: Sat, 09 Nov 2019 00:25:10 GMT  
-		Size: 44.1 MB (44145376 bytes)  
+	-	`sha256:3386e6af03b043219225367632569465e5ecd47391d1f99a6d265e51bd463a83`  
+		Last Modified: Thu, 12 Dec 2019 08:26:09 GMT  
+		Size: 44.1 MB (44123254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c58992f3c37bb64aeba18910408cda9a7a63e212fe27e95065a8d54130ca5926`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
+	-	`sha256:49ac0bbe6c8eeb959337b336ceaa5c3bbbae81e316025f9b94ede453540f2377`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
 		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca0e5e7f12e6eb512246aea5579fcb771fe7203bc60944384d5cd7962f87ddb`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 846.0 B  
+	-	`sha256:d1983a67e104e801fceb1850a375a71fe6b62636ba7a8403d9644f308a6a43f9`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2a274cc00ca5f671b1740c43672dbc96504760cee585e7604029a3fe56854a8`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 168.0 B  
+	-	`sha256:1a0f3a523f04f61db942018321ae122f90d8e3303e243b005e8de9817daf7028`  
+		Last Modified: Thu, 19 Dec 2019 04:25:59 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:416b78803214ca5473564be86272f5e764b0bd94af457c316d27b2f1d0d8bb41`  
-		Last Modified: Wed, 27 Nov 2019 01:49:08 GMT  
-		Size: 111.4 MB (111376646 bytes)  
+	-	`sha256:20bcfbb26bcc2dd1038c8f5e9c4c68a57d212eb7a07029a2cf66472c12b81b57`  
+		Last Modified: Thu, 19 Dec 2019 09:12:07 GMT  
+		Size: 111.4 MB (111380521 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5cece0486bbedaacf976f5725cee73a3f5627e142e6c0232ebda3480afda75d`  
-		Last Modified: Mon, 16 Dec 2019 23:38:56 GMT  
-		Size: 351.5 MB (351457169 bytes)  
+	-	`sha256:08aca6c905cb66b340f22397702722f6144606e8e4ef42b77a58043ecdf3a299`  
+		Last Modified: Thu, 19 Dec 2019 09:12:48 GMT  
+		Size: 351.5 MB (351457186 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.1.3-xenial-slim`
 
 ```console
-$ docker pull swift@sha256:4bc8aad11657893f9afdfe737ac18be8ab0a126a2aa0600f2003fce472f6fd9f
+$ docker pull swift@sha256:99ef694af62eef35ab3ebc496de7956a2a3974905f960d7ace725cf14024452c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2061,79 +2061,79 @@ $ docker pull swift@sha256:4bc8aad11657893f9afdfe737ac18be8ab0a126a2aa0600f2003f
 ### `swift:5.1.3-xenial-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:bc20fd13ad491d7a54c6779808ad0024667e47266c7ff9930a5ff0f7d99ea10e
+$ docker pull swift@sha256:ef45f06bfb0383176f867ef96c1cee7ebd6d68f3b8e69aec4b8c4e721c88a7c8
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.0 MB (95974664 bytes)**  
+-	Total Size: **96.0 MB (95952585 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c70471b2b0fa69b0a6ae5961d5b6b27bb481503e345084e548a8cb785542d769`
+-	Image ID: `sha256:14a836928dceb65e2f4e9a1e2c4f8f00f7f2b45599f9b94abc744b2a9c353472`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 Nov 2019 00:22:54 GMT
-ADD file:4eb02fc768cad452a37e8df30bbfcc728f3e6e7ca33af177fd4de06fd07c2098 in / 
-# Wed, 27 Nov 2019 00:22:55 GMT
+# Thu, 19 Dec 2019 04:24:35 GMT
+ADD file:f0b8eaa718bc3965b1e8395f5a6bea97c16651b50614e676bb3eaf31335a0045 in / 
+# Thu, 19 Dec 2019 04:24:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:37 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 CMD ["/bin/bash"]
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:37 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Wed, 27 Nov 2019 01:38:20 GMT
+# Thu, 19 Dec 2019 08:58:12 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libcurl3     libxml2     tzdata     && rm -r /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 01:38:21 GMT
+# Thu, 19 Dec 2019 08:58:12 GMT
 ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
-# Wed, 27 Nov 2019 01:38:21 GMT
+# Thu, 19 Dec 2019 08:58:12 GMT
 ARG SWIFT_PLATFORM=ubuntu16.04
-# Mon, 16 Dec 2019 23:35:00 GMT
+# Thu, 19 Dec 2019 08:58:13 GMT
 ARG SWIFT_BRANCH=swift-5.1.3-release
-# Mon, 16 Dec 2019 23:35:00 GMT
+# Thu, 19 Dec 2019 08:58:13 GMT
 ARG SWIFT_VERSION=swift-5.1.3-RELEASE
-# Mon, 16 Dec 2019 23:35:00 GMT
+# Thu, 19 Dec 2019 08:58:13 GMT
 ARG SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:35:00 GMT
+# Thu, 19 Dec 2019 08:58:13 GMT
 ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=ubuntu16.04 SWIFT_BRANCH=swift-5.1.3-release SWIFT_VERSION=swift-5.1.3-RELEASE SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:36:06 GMT
+# Thu, 19 Dec 2019 08:59:16 GMT
 RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)/"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export DEBIAN_FRONTEND=noninteractive     && apt-get -q update && apt-get -q install -y curl && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1 $SWIFT_VERSION-$SWIFT_PLATFORM/usr/lib/swift/linux     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && apt-get purge --auto-remove -y curl
 ```
 
 -	Layers:
-	-	`sha256:976a760c94fcdd7d105269ae621e8269e7bb25a58c52ae667b4029a6bc7e33cb`  
-		Last Modified: Sat, 09 Nov 2019 00:25:10 GMT  
-		Size: 44.1 MB (44145376 bytes)  
+	-	`sha256:3386e6af03b043219225367632569465e5ecd47391d1f99a6d265e51bd463a83`  
+		Last Modified: Thu, 12 Dec 2019 08:26:09 GMT  
+		Size: 44.1 MB (44123254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c58992f3c37bb64aeba18910408cda9a7a63e212fe27e95065a8d54130ca5926`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
+	-	`sha256:49ac0bbe6c8eeb959337b336ceaa5c3bbbae81e316025f9b94ede453540f2377`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
 		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca0e5e7f12e6eb512246aea5579fcb771fe7203bc60944384d5cd7962f87ddb`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 846.0 B  
+	-	`sha256:d1983a67e104e801fceb1850a375a71fe6b62636ba7a8403d9644f308a6a43f9`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2a274cc00ca5f671b1740c43672dbc96504760cee585e7604029a3fe56854a8`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 168.0 B  
+	-	`sha256:1a0f3a523f04f61db942018321ae122f90d8e3303e243b005e8de9817daf7028`  
+		Last Modified: Thu, 19 Dec 2019 04:25:59 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b87ea66deab0bd2b2dbbbf4224d0dd397e3d35768a207a00f1a07f1d6860df3e`  
-		Last Modified: Wed, 27 Nov 2019 01:50:21 GMT  
-		Size: 20.9 MB (20874144 bytes)  
+	-	`sha256:f3ca2c50f1dddc153644da831a3f1fc119b315fe71cf91ec7cb2fe26233d584d`  
+		Last Modified: Thu, 19 Dec 2019 09:13:13 GMT  
+		Size: 20.9 MB (20874149 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ab883b9344e7a6dffac1b25b1b61f49b1f3495bd14439af48567c5e7ef33163`  
-		Last Modified: Mon, 16 Dec 2019 23:39:25 GMT  
-		Size: 31.0 MB (30953601 bytes)  
+	-	`sha256:1df2be3ba87a26d007081acf1ed012e90c1da9ab1de073cb70195aefd198c46b`  
+		Last Modified: Thu, 19 Dec 2019 09:13:15 GMT  
+		Size: 31.0 MB (30953635 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.1-bionic`
 
 ```console
-$ docker pull swift@sha256:2f8eb501a5e918a21fedc878f0126b5a94db321e2f4c1ef087a96330c2c26cd6
+$ docker pull swift@sha256:72d7e583452031ae88251263649fc56ea79f98f4147474080426fb5c1ff904aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2143,81 +2143,81 @@ $ docker pull swift@sha256:2f8eb501a5e918a21fedc878f0126b5a94db321e2f4c1ef087a96
 ### `swift:5.1-bionic` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:83e2bc43d994382d7b8d1b3b012a6579d0055b2c1a2d6f4b689958fc520192be
+$ docker pull swift@sha256:08d053d8889f79987e1816aa3716f986a29ea17ee5afd8e8c5ced11dba81ffbf
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **488.9 MB (488924348 bytes)**  
+-	Total Size: **488.8 MB (488792052 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f54e96eb49bc6c32417e95aaca896d36cae9046c20567d95543e0328a5dc852`
+-	Image ID: `sha256:1fc468cb2d3951e48b11e7c56b3b87deaf88996c11da3f2d9499a4ff67c0012e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 31 Oct 2019 22:20:35 GMT
-ADD file:a48a5dc1b9dbfc632f6cf86fe27b770b63f07a115c98c4465dc184e303a4efa1 in / 
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:25 GMT
+ADD file:53f100793e6c0adfca99977a42bb65cb7971c26e4d6e4499d1c30a1f51f06854 in / 
+# Thu, 19 Dec 2019 04:21:26 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Fri, 01 Nov 2019 00:01:46 GMT
+# Thu, 19 Dec 2019 08:52:13 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libcurl4     libxml2     libedit2     libsqlite3-0     libc6-dev     binutils     libgcc-5-dev     libstdc++-5-dev     libpython2.7     tzdata     git     pkg-config     && rm -r /var/lib/apt/lists/*
-# Fri, 01 Nov 2019 00:01:46 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
-# Fri, 01 Nov 2019 00:01:47 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_PLATFORM=ubuntu18.04
-# Mon, 16 Dec 2019 23:30:48 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_BRANCH=swift-5.1.3-release
-# Mon, 16 Dec 2019 23:30:48 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_VERSION=swift-5.1.3-RELEASE
-# Mon, 16 Dec 2019 23:30:48 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:30:49 GMT
+# Thu, 19 Dec 2019 08:52:15 GMT
 ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=ubuntu18.04 SWIFT_BRANCH=swift-5.1.3-release SWIFT_VERSION=swift-5.1.3-RELEASE SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:32:00 GMT
+# Thu, 19 Dec 2019 08:53:24 GMT
 RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)/"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export DEBIAN_FRONTEND=noninteractive     && apt-get -q update && apt-get -q install -y curl && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && apt-get purge --auto-remove -y curl
-# Mon, 16 Dec 2019 23:32:02 GMT
+# Thu, 19 Dec 2019 08:53:27 GMT
 RUN swift --version
 ```
 
 -	Layers:
-	-	`sha256:7ddbc47eeb70dc7f08e410a6667948b87ff3883024eb41478b44ef9a81bf400c`  
-		Last Modified: Wed, 30 Oct 2019 00:25:34 GMT  
-		Size: 26.7 MB (26688847 bytes)  
+	-	`sha256:2746a4a261c9e18bfd7ff0429c18fd7522acc14fa4c7ec8ab37ba5ebaadbc584`  
+		Last Modified: Mon, 02 Dec 2019 13:22:09 GMT  
+		Size: 26.7 MB (26689544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1bbdc448b7263673926b8fe2e88491e5083a8b4b06ddfabf311f2fc5f27e2ff`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 35.4 KB (35362 bytes)  
+	-	`sha256:4c1d20cdee96111c8acf1858b62655a37ce81ae48648993542b7ac363ac5c0e5`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 35.4 KB (35361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c3b70e3904492c753652606df4726430426f42ea56e06ea924d6fea7ae162a1`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 845.0 B  
+	-	`sha256:0d3160e1d0de4061b5b32ee09af687b898921d36ed9556df5910ddc3104449cd`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d437916d5781043432f2d72608049dcf74ddbd27daa01a25fa63c8f1b9adc4`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 162.0 B  
+	-	`sha256:c8e37668deea784f47c8726d934adc12b8d20a2b1c50b0b0c18cb62771cd3684`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31400cff7f02441779e72cb64afa10a457e1b548f0e4e5af3b869c137effb092`  
-		Last Modified: Fri, 01 Nov 2019 00:20:54 GMT  
-		Size: 117.1 MB (117070613 bytes)  
+	-	`sha256:e2eb3c3401944867985bb2115c35ec699301909aa37e2b87615a93020d0fe36e`  
+		Last Modified: Thu, 19 Dec 2019 09:11:02 GMT  
+		Size: 116.9 MB (116937740 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f26497bd97ba17f7410be3e2b6dc0b12b3b31c8b0785cb2cef496ac724464261`  
-		Last Modified: Mon, 16 Dec 2019 23:37:45 GMT  
-		Size: 345.1 MB (345128519 bytes)  
+	-	`sha256:b5d1069a5aa43da44663c74f8a19ac2e54e05c2ead4142e4b8ad3c4b5ebb39b5`  
+		Last Modified: Thu, 19 Dec 2019 09:11:35 GMT  
+		Size: 345.1 MB (345128390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.1-bionic-slim`
 
 ```console
-$ docker pull swift@sha256:97dc0358a1c1496ac698c0b464a9a776f5527f6654722b0a35a5a724785b525e
+$ docker pull swift@sha256:31186888eb55fdc81861c1e2f10b2ace527b90862ebc651c8ec4a6f2eb574395
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2227,79 +2227,79 @@ $ docker pull swift@sha256:97dc0358a1c1496ac698c0b464a9a776f5527f6654722b0a35a5a
 ### `swift:5.1-bionic-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:7fb4399b74819fd0edd6f6a2747eef4a69e5330b9914975681107a08cf530169
+$ docker pull swift@sha256:c8a88d1078ad5a522112f61bf0a841fb51af6a07db95434c8a0216030505b6b7
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **78.3 MB (78298082 bytes)**  
+-	Total Size: **78.3 MB (78299085 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b261cd21bfe011b43b03a8555ade3b0f2f8c1eaaebfef54af6989e5857d09a6a`
+-	Image ID: `sha256:745916b625aac56b0529ac87f4ef589d66ef377c4fbb7637a2a852486cb6b5e2`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 31 Oct 2019 22:20:35 GMT
-ADD file:a48a5dc1b9dbfc632f6cf86fe27b770b63f07a115c98c4465dc184e303a4efa1 in / 
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:25 GMT
+ADD file:53f100793e6c0adfca99977a42bb65cb7971c26e4d6e4499d1c30a1f51f06854 in / 
+# Thu, 19 Dec 2019 04:21:26 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Fri, 01 Nov 2019 00:06:09 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libcurl4     libxml2     tzdata     && rm -r /var/lib/apt/lists/*
-# Fri, 01 Nov 2019 00:06:09 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
-# Fri, 01 Nov 2019 00:06:09 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 ARG SWIFT_PLATFORM=ubuntu18.04
-# Mon, 16 Dec 2019 23:33:49 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 ARG SWIFT_BRANCH=swift-5.1.3-release
-# Mon, 16 Dec 2019 23:33:49 GMT
+# Thu, 19 Dec 2019 08:56:46 GMT
 ARG SWIFT_VERSION=swift-5.1.3-RELEASE
-# Mon, 16 Dec 2019 23:33:49 GMT
+# Thu, 19 Dec 2019 08:56:46 GMT
 ARG SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:33:50 GMT
+# Thu, 19 Dec 2019 08:56:46 GMT
 ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=ubuntu18.04 SWIFT_BRANCH=swift-5.1.3-release SWIFT_VERSION=swift-5.1.3-RELEASE SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:34:55 GMT
+# Thu, 19 Dec 2019 08:57:49 GMT
 RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)/"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export DEBIAN_FRONTEND=noninteractive     && apt-get -q update && apt-get -q install -y curl gnupg && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1 $SWIFT_VERSION-$SWIFT_PLATFORM/usr/lib/swift/linux     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && apt-get purge --auto-remove -y curl gnupg
 ```
 
 -	Layers:
-	-	`sha256:7ddbc47eeb70dc7f08e410a6667948b87ff3883024eb41478b44ef9a81bf400c`  
-		Last Modified: Wed, 30 Oct 2019 00:25:34 GMT  
-		Size: 26.7 MB (26688847 bytes)  
+	-	`sha256:2746a4a261c9e18bfd7ff0429c18fd7522acc14fa4c7ec8ab37ba5ebaadbc584`  
+		Last Modified: Mon, 02 Dec 2019 13:22:09 GMT  
+		Size: 26.7 MB (26689544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1bbdc448b7263673926b8fe2e88491e5083a8b4b06ddfabf311f2fc5f27e2ff`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 35.4 KB (35362 bytes)  
+	-	`sha256:4c1d20cdee96111c8acf1858b62655a37ce81ae48648993542b7ac363ac5c0e5`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 35.4 KB (35361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c3b70e3904492c753652606df4726430426f42ea56e06ea924d6fea7ae162a1`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 845.0 B  
+	-	`sha256:0d3160e1d0de4061b5b32ee09af687b898921d36ed9556df5910ddc3104449cd`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d437916d5781043432f2d72608049dcf74ddbd27daa01a25fa63c8f1b9adc4`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 162.0 B  
+	-	`sha256:c8e37668deea784f47c8726d934adc12b8d20a2b1c50b0b0c18cb62771cd3684`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f17b42397ff1804136108f5565c6d518bf80a52d73bfc2f325e88ae4c611533`  
-		Last Modified: Fri, 01 Nov 2019 00:23:03 GMT  
-		Size: 20.5 MB (20487219 bytes)  
+	-	`sha256:6c4dbd05131842cfea027a5005f70e841e33e8c30cc33f8ca6301ec08965fbe9`  
+		Last Modified: Thu, 19 Dec 2019 09:12:59 GMT  
+		Size: 20.5 MB (20487567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc456dc353f7c26019a13c95e22d3b21803ad5416860e4094706806620f1a9b9`  
-		Last Modified: Mon, 16 Dec 2019 23:39:11 GMT  
-		Size: 31.1 MB (31085647 bytes)  
+	-	`sha256:ad51dd94be6144081f1c40cc214c15a3fa0817d16008f48f12a7a69c7d28ffef`  
+		Last Modified: Thu, 19 Dec 2019 09:13:01 GMT  
+		Size: 31.1 MB (31085596 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.1-slim`
 
 ```console
-$ docker pull swift@sha256:97dc0358a1c1496ac698c0b464a9a776f5527f6654722b0a35a5a724785b525e
+$ docker pull swift@sha256:31186888eb55fdc81861c1e2f10b2ace527b90862ebc651c8ec4a6f2eb574395
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2309,79 +2309,79 @@ $ docker pull swift@sha256:97dc0358a1c1496ac698c0b464a9a776f5527f6654722b0a35a5a
 ### `swift:5.1-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:7fb4399b74819fd0edd6f6a2747eef4a69e5330b9914975681107a08cf530169
+$ docker pull swift@sha256:c8a88d1078ad5a522112f61bf0a841fb51af6a07db95434c8a0216030505b6b7
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **78.3 MB (78298082 bytes)**  
+-	Total Size: **78.3 MB (78299085 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b261cd21bfe011b43b03a8555ade3b0f2f8c1eaaebfef54af6989e5857d09a6a`
+-	Image ID: `sha256:745916b625aac56b0529ac87f4ef589d66ef377c4fbb7637a2a852486cb6b5e2`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 31 Oct 2019 22:20:35 GMT
-ADD file:a48a5dc1b9dbfc632f6cf86fe27b770b63f07a115c98c4465dc184e303a4efa1 in / 
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:25 GMT
+ADD file:53f100793e6c0adfca99977a42bb65cb7971c26e4d6e4499d1c30a1f51f06854 in / 
+# Thu, 19 Dec 2019 04:21:26 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Fri, 01 Nov 2019 00:06:09 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libcurl4     libxml2     tzdata     && rm -r /var/lib/apt/lists/*
-# Fri, 01 Nov 2019 00:06:09 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
-# Fri, 01 Nov 2019 00:06:09 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 ARG SWIFT_PLATFORM=ubuntu18.04
-# Mon, 16 Dec 2019 23:33:49 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 ARG SWIFT_BRANCH=swift-5.1.3-release
-# Mon, 16 Dec 2019 23:33:49 GMT
+# Thu, 19 Dec 2019 08:56:46 GMT
 ARG SWIFT_VERSION=swift-5.1.3-RELEASE
-# Mon, 16 Dec 2019 23:33:49 GMT
+# Thu, 19 Dec 2019 08:56:46 GMT
 ARG SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:33:50 GMT
+# Thu, 19 Dec 2019 08:56:46 GMT
 ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=ubuntu18.04 SWIFT_BRANCH=swift-5.1.3-release SWIFT_VERSION=swift-5.1.3-RELEASE SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:34:55 GMT
+# Thu, 19 Dec 2019 08:57:49 GMT
 RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)/"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export DEBIAN_FRONTEND=noninteractive     && apt-get -q update && apt-get -q install -y curl gnupg && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1 $SWIFT_VERSION-$SWIFT_PLATFORM/usr/lib/swift/linux     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && apt-get purge --auto-remove -y curl gnupg
 ```
 
 -	Layers:
-	-	`sha256:7ddbc47eeb70dc7f08e410a6667948b87ff3883024eb41478b44ef9a81bf400c`  
-		Last Modified: Wed, 30 Oct 2019 00:25:34 GMT  
-		Size: 26.7 MB (26688847 bytes)  
+	-	`sha256:2746a4a261c9e18bfd7ff0429c18fd7522acc14fa4c7ec8ab37ba5ebaadbc584`  
+		Last Modified: Mon, 02 Dec 2019 13:22:09 GMT  
+		Size: 26.7 MB (26689544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1bbdc448b7263673926b8fe2e88491e5083a8b4b06ddfabf311f2fc5f27e2ff`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 35.4 KB (35362 bytes)  
+	-	`sha256:4c1d20cdee96111c8acf1858b62655a37ce81ae48648993542b7ac363ac5c0e5`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 35.4 KB (35361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c3b70e3904492c753652606df4726430426f42ea56e06ea924d6fea7ae162a1`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 845.0 B  
+	-	`sha256:0d3160e1d0de4061b5b32ee09af687b898921d36ed9556df5910ddc3104449cd`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d437916d5781043432f2d72608049dcf74ddbd27daa01a25fa63c8f1b9adc4`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 162.0 B  
+	-	`sha256:c8e37668deea784f47c8726d934adc12b8d20a2b1c50b0b0c18cb62771cd3684`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f17b42397ff1804136108f5565c6d518bf80a52d73bfc2f325e88ae4c611533`  
-		Last Modified: Fri, 01 Nov 2019 00:23:03 GMT  
-		Size: 20.5 MB (20487219 bytes)  
+	-	`sha256:6c4dbd05131842cfea027a5005f70e841e33e8c30cc33f8ca6301ec08965fbe9`  
+		Last Modified: Thu, 19 Dec 2019 09:12:59 GMT  
+		Size: 20.5 MB (20487567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc456dc353f7c26019a13c95e22d3b21803ad5416860e4094706806620f1a9b9`  
-		Last Modified: Mon, 16 Dec 2019 23:39:11 GMT  
-		Size: 31.1 MB (31085647 bytes)  
+	-	`sha256:ad51dd94be6144081f1c40cc214c15a3fa0817d16008f48f12a7a69c7d28ffef`  
+		Last Modified: Thu, 19 Dec 2019 09:13:01 GMT  
+		Size: 31.1 MB (31085596 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.1-xenial`
 
 ```console
-$ docker pull swift@sha256:50b4f100679f74e0706fc8a9fd8248e0ff91b9ee6d6868a2b1ec986c0ea12a33
+$ docker pull swift@sha256:c653758b8ca7b05c94965a8aeb8a470f84ec9828e25b0abf612aefd83b869d18
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2391,81 +2391,81 @@ $ docker pull swift@sha256:50b4f100679f74e0706fc8a9fd8248e0ff91b9ee6d6868a2b1ec9
 ### `swift:5.1-xenial` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:97ae96c5b629330196c870ed6ab30e2b9da483c0a1e6bf904cc899d437465b33
+$ docker pull swift@sha256:d0df9a0dbdeae8976b27eb27d69e5441fcff741e00b53ae65c3fe224806da3cb
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **507.0 MB (506980734 bytes)**  
+-	Total Size: **507.0 MB (506962508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73b4dab7be47887e2a7b4a84cb0af4855c19dc53249e41dd3f26efa7baff7965`
+-	Image ID: `sha256:ea67485cfa3159d017d4b8db98c18587cd2ec3ecc31b90f089fecdd3c78193e8`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 Nov 2019 00:22:54 GMT
-ADD file:4eb02fc768cad452a37e8df30bbfcc728f3e6e7ca33af177fd4de06fd07c2098 in / 
-# Wed, 27 Nov 2019 00:22:55 GMT
+# Thu, 19 Dec 2019 04:24:35 GMT
+ADD file:f0b8eaa718bc3965b1e8395f5a6bea97c16651b50614e676bb3eaf31335a0045 in / 
+# Thu, 19 Dec 2019 04:24:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:37 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 CMD ["/bin/bash"]
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:37 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Wed, 27 Nov 2019 01:36:35 GMT
+# Thu, 19 Dec 2019 08:55:03 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libcurl3     libxml2     libedit2     libsqlite3-0     libc6-dev     binutils     libgcc-5-dev     libstdc++-5-dev     libpython2.7     tzdata     git     pkg-config     && rm -r /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 01:36:35 GMT
+# Thu, 19 Dec 2019 08:55:04 GMT
 ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
-# Wed, 27 Nov 2019 01:36:35 GMT
+# Thu, 19 Dec 2019 08:55:04 GMT
 ARG SWIFT_PLATFORM=ubuntu16.04
-# Mon, 16 Dec 2019 23:32:17 GMT
+# Thu, 19 Dec 2019 08:55:04 GMT
 ARG SWIFT_BRANCH=swift-5.1.3-release
-# Mon, 16 Dec 2019 23:32:17 GMT
+# Thu, 19 Dec 2019 08:55:04 GMT
 ARG SWIFT_VERSION=swift-5.1.3-RELEASE
-# Mon, 16 Dec 2019 23:32:17 GMT
+# Thu, 19 Dec 2019 08:55:04 GMT
 ARG SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:32:17 GMT
+# Thu, 19 Dec 2019 08:55:04 GMT
 ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=ubuntu16.04 SWIFT_BRANCH=swift-5.1.3-release SWIFT_VERSION=swift-5.1.3-RELEASE SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:33:34 GMT
+# Thu, 19 Dec 2019 08:56:18 GMT
 RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)/"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export DEBIAN_FRONTEND=noninteractive     && apt-get -q update && apt-get -q install -y curl && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && apt-get purge --auto-remove -y curl
-# Mon, 16 Dec 2019 23:33:35 GMT
+# Thu, 19 Dec 2019 08:56:19 GMT
 RUN swift --version
 ```
 
 -	Layers:
-	-	`sha256:976a760c94fcdd7d105269ae621e8269e7bb25a58c52ae667b4029a6bc7e33cb`  
-		Last Modified: Sat, 09 Nov 2019 00:25:10 GMT  
-		Size: 44.1 MB (44145376 bytes)  
+	-	`sha256:3386e6af03b043219225367632569465e5ecd47391d1f99a6d265e51bd463a83`  
+		Last Modified: Thu, 12 Dec 2019 08:26:09 GMT  
+		Size: 44.1 MB (44123254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c58992f3c37bb64aeba18910408cda9a7a63e212fe27e95065a8d54130ca5926`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
+	-	`sha256:49ac0bbe6c8eeb959337b336ceaa5c3bbbae81e316025f9b94ede453540f2377`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
 		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca0e5e7f12e6eb512246aea5579fcb771fe7203bc60944384d5cd7962f87ddb`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 846.0 B  
+	-	`sha256:d1983a67e104e801fceb1850a375a71fe6b62636ba7a8403d9644f308a6a43f9`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2a274cc00ca5f671b1740c43672dbc96504760cee585e7604029a3fe56854a8`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 168.0 B  
+	-	`sha256:1a0f3a523f04f61db942018321ae122f90d8e3303e243b005e8de9817daf7028`  
+		Last Modified: Thu, 19 Dec 2019 04:25:59 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:416b78803214ca5473564be86272f5e764b0bd94af457c316d27b2f1d0d8bb41`  
-		Last Modified: Wed, 27 Nov 2019 01:49:08 GMT  
-		Size: 111.4 MB (111376646 bytes)  
+	-	`sha256:20bcfbb26bcc2dd1038c8f5e9c4c68a57d212eb7a07029a2cf66472c12b81b57`  
+		Last Modified: Thu, 19 Dec 2019 09:12:07 GMT  
+		Size: 111.4 MB (111380521 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5cece0486bbedaacf976f5725cee73a3f5627e142e6c0232ebda3480afda75d`  
-		Last Modified: Mon, 16 Dec 2019 23:38:56 GMT  
-		Size: 351.5 MB (351457169 bytes)  
+	-	`sha256:08aca6c905cb66b340f22397702722f6144606e8e4ef42b77a58043ecdf3a299`  
+		Last Modified: Thu, 19 Dec 2019 09:12:48 GMT  
+		Size: 351.5 MB (351457186 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:5.1-xenial-slim`
 
 ```console
-$ docker pull swift@sha256:4bc8aad11657893f9afdfe737ac18be8ab0a126a2aa0600f2003fce472f6fd9f
+$ docker pull swift@sha256:99ef694af62eef35ab3ebc496de7956a2a3974905f960d7ace725cf14024452c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2475,79 +2475,79 @@ $ docker pull swift@sha256:4bc8aad11657893f9afdfe737ac18be8ab0a126a2aa0600f2003f
 ### `swift:5.1-xenial-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:bc20fd13ad491d7a54c6779808ad0024667e47266c7ff9930a5ff0f7d99ea10e
+$ docker pull swift@sha256:ef45f06bfb0383176f867ef96c1cee7ebd6d68f3b8e69aec4b8c4e721c88a7c8
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.0 MB (95974664 bytes)**  
+-	Total Size: **96.0 MB (95952585 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c70471b2b0fa69b0a6ae5961d5b6b27bb481503e345084e548a8cb785542d769`
+-	Image ID: `sha256:14a836928dceb65e2f4e9a1e2c4f8f00f7f2b45599f9b94abc744b2a9c353472`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 Nov 2019 00:22:54 GMT
-ADD file:4eb02fc768cad452a37e8df30bbfcc728f3e6e7ca33af177fd4de06fd07c2098 in / 
-# Wed, 27 Nov 2019 00:22:55 GMT
+# Thu, 19 Dec 2019 04:24:35 GMT
+ADD file:f0b8eaa718bc3965b1e8395f5a6bea97c16651b50614e676bb3eaf31335a0045 in / 
+# Thu, 19 Dec 2019 04:24:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:37 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 CMD ["/bin/bash"]
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:37 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Wed, 27 Nov 2019 01:38:20 GMT
+# Thu, 19 Dec 2019 08:58:12 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libcurl3     libxml2     tzdata     && rm -r /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 01:38:21 GMT
+# Thu, 19 Dec 2019 08:58:12 GMT
 ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
-# Wed, 27 Nov 2019 01:38:21 GMT
+# Thu, 19 Dec 2019 08:58:12 GMT
 ARG SWIFT_PLATFORM=ubuntu16.04
-# Mon, 16 Dec 2019 23:35:00 GMT
+# Thu, 19 Dec 2019 08:58:13 GMT
 ARG SWIFT_BRANCH=swift-5.1.3-release
-# Mon, 16 Dec 2019 23:35:00 GMT
+# Thu, 19 Dec 2019 08:58:13 GMT
 ARG SWIFT_VERSION=swift-5.1.3-RELEASE
-# Mon, 16 Dec 2019 23:35:00 GMT
+# Thu, 19 Dec 2019 08:58:13 GMT
 ARG SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:35:00 GMT
+# Thu, 19 Dec 2019 08:58:13 GMT
 ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=ubuntu16.04 SWIFT_BRANCH=swift-5.1.3-release SWIFT_VERSION=swift-5.1.3-RELEASE SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:36:06 GMT
+# Thu, 19 Dec 2019 08:59:16 GMT
 RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)/"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export DEBIAN_FRONTEND=noninteractive     && apt-get -q update && apt-get -q install -y curl && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1 $SWIFT_VERSION-$SWIFT_PLATFORM/usr/lib/swift/linux     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && apt-get purge --auto-remove -y curl
 ```
 
 -	Layers:
-	-	`sha256:976a760c94fcdd7d105269ae621e8269e7bb25a58c52ae667b4029a6bc7e33cb`  
-		Last Modified: Sat, 09 Nov 2019 00:25:10 GMT  
-		Size: 44.1 MB (44145376 bytes)  
+	-	`sha256:3386e6af03b043219225367632569465e5ecd47391d1f99a6d265e51bd463a83`  
+		Last Modified: Thu, 12 Dec 2019 08:26:09 GMT  
+		Size: 44.1 MB (44123254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c58992f3c37bb64aeba18910408cda9a7a63e212fe27e95065a8d54130ca5926`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
+	-	`sha256:49ac0bbe6c8eeb959337b336ceaa5c3bbbae81e316025f9b94ede453540f2377`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
 		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca0e5e7f12e6eb512246aea5579fcb771fe7203bc60944384d5cd7962f87ddb`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 846.0 B  
+	-	`sha256:d1983a67e104e801fceb1850a375a71fe6b62636ba7a8403d9644f308a6a43f9`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2a274cc00ca5f671b1740c43672dbc96504760cee585e7604029a3fe56854a8`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 168.0 B  
+	-	`sha256:1a0f3a523f04f61db942018321ae122f90d8e3303e243b005e8de9817daf7028`  
+		Last Modified: Thu, 19 Dec 2019 04:25:59 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b87ea66deab0bd2b2dbbbf4224d0dd397e3d35768a207a00f1a07f1d6860df3e`  
-		Last Modified: Wed, 27 Nov 2019 01:50:21 GMT  
-		Size: 20.9 MB (20874144 bytes)  
+	-	`sha256:f3ca2c50f1dddc153644da831a3f1fc119b315fe71cf91ec7cb2fe26233d584d`  
+		Last Modified: Thu, 19 Dec 2019 09:13:13 GMT  
+		Size: 20.9 MB (20874149 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ab883b9344e7a6dffac1b25b1b61f49b1f3495bd14439af48567c5e7ef33163`  
-		Last Modified: Mon, 16 Dec 2019 23:39:25 GMT  
-		Size: 31.0 MB (30953601 bytes)  
+	-	`sha256:1df2be3ba87a26d007081acf1ed012e90c1da9ab1de073cb70195aefd198c46b`  
+		Last Modified: Thu, 19 Dec 2019 09:13:15 GMT  
+		Size: 31.0 MB (30953635 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:bionic`
 
 ```console
-$ docker pull swift@sha256:2f8eb501a5e918a21fedc878f0126b5a94db321e2f4c1ef087a96330c2c26cd6
+$ docker pull swift@sha256:72d7e583452031ae88251263649fc56ea79f98f4147474080426fb5c1ff904aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2557,81 +2557,81 @@ $ docker pull swift@sha256:2f8eb501a5e918a21fedc878f0126b5a94db321e2f4c1ef087a96
 ### `swift:bionic` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:83e2bc43d994382d7b8d1b3b012a6579d0055b2c1a2d6f4b689958fc520192be
+$ docker pull swift@sha256:08d053d8889f79987e1816aa3716f986a29ea17ee5afd8e8c5ced11dba81ffbf
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **488.9 MB (488924348 bytes)**  
+-	Total Size: **488.8 MB (488792052 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f54e96eb49bc6c32417e95aaca896d36cae9046c20567d95543e0328a5dc852`
+-	Image ID: `sha256:1fc468cb2d3951e48b11e7c56b3b87deaf88996c11da3f2d9499a4ff67c0012e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 31 Oct 2019 22:20:35 GMT
-ADD file:a48a5dc1b9dbfc632f6cf86fe27b770b63f07a115c98c4465dc184e303a4efa1 in / 
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:25 GMT
+ADD file:53f100793e6c0adfca99977a42bb65cb7971c26e4d6e4499d1c30a1f51f06854 in / 
+# Thu, 19 Dec 2019 04:21:26 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Fri, 01 Nov 2019 00:01:46 GMT
+# Thu, 19 Dec 2019 08:52:13 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libcurl4     libxml2     libedit2     libsqlite3-0     libc6-dev     binutils     libgcc-5-dev     libstdc++-5-dev     libpython2.7     tzdata     git     pkg-config     && rm -r /var/lib/apt/lists/*
-# Fri, 01 Nov 2019 00:01:46 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
-# Fri, 01 Nov 2019 00:01:47 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_PLATFORM=ubuntu18.04
-# Mon, 16 Dec 2019 23:30:48 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_BRANCH=swift-5.1.3-release
-# Mon, 16 Dec 2019 23:30:48 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_VERSION=swift-5.1.3-RELEASE
-# Mon, 16 Dec 2019 23:30:48 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:30:49 GMT
+# Thu, 19 Dec 2019 08:52:15 GMT
 ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=ubuntu18.04 SWIFT_BRANCH=swift-5.1.3-release SWIFT_VERSION=swift-5.1.3-RELEASE SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:32:00 GMT
+# Thu, 19 Dec 2019 08:53:24 GMT
 RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)/"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export DEBIAN_FRONTEND=noninteractive     && apt-get -q update && apt-get -q install -y curl && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && apt-get purge --auto-remove -y curl
-# Mon, 16 Dec 2019 23:32:02 GMT
+# Thu, 19 Dec 2019 08:53:27 GMT
 RUN swift --version
 ```
 
 -	Layers:
-	-	`sha256:7ddbc47eeb70dc7f08e410a6667948b87ff3883024eb41478b44ef9a81bf400c`  
-		Last Modified: Wed, 30 Oct 2019 00:25:34 GMT  
-		Size: 26.7 MB (26688847 bytes)  
+	-	`sha256:2746a4a261c9e18bfd7ff0429c18fd7522acc14fa4c7ec8ab37ba5ebaadbc584`  
+		Last Modified: Mon, 02 Dec 2019 13:22:09 GMT  
+		Size: 26.7 MB (26689544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1bbdc448b7263673926b8fe2e88491e5083a8b4b06ddfabf311f2fc5f27e2ff`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 35.4 KB (35362 bytes)  
+	-	`sha256:4c1d20cdee96111c8acf1858b62655a37ce81ae48648993542b7ac363ac5c0e5`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 35.4 KB (35361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c3b70e3904492c753652606df4726430426f42ea56e06ea924d6fea7ae162a1`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 845.0 B  
+	-	`sha256:0d3160e1d0de4061b5b32ee09af687b898921d36ed9556df5910ddc3104449cd`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d437916d5781043432f2d72608049dcf74ddbd27daa01a25fa63c8f1b9adc4`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 162.0 B  
+	-	`sha256:c8e37668deea784f47c8726d934adc12b8d20a2b1c50b0b0c18cb62771cd3684`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31400cff7f02441779e72cb64afa10a457e1b548f0e4e5af3b869c137effb092`  
-		Last Modified: Fri, 01 Nov 2019 00:20:54 GMT  
-		Size: 117.1 MB (117070613 bytes)  
+	-	`sha256:e2eb3c3401944867985bb2115c35ec699301909aa37e2b87615a93020d0fe36e`  
+		Last Modified: Thu, 19 Dec 2019 09:11:02 GMT  
+		Size: 116.9 MB (116937740 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f26497bd97ba17f7410be3e2b6dc0b12b3b31c8b0785cb2cef496ac724464261`  
-		Last Modified: Mon, 16 Dec 2019 23:37:45 GMT  
-		Size: 345.1 MB (345128519 bytes)  
+	-	`sha256:b5d1069a5aa43da44663c74f8a19ac2e54e05c2ead4142e4b8ad3c4b5ebb39b5`  
+		Last Modified: Thu, 19 Dec 2019 09:11:35 GMT  
+		Size: 345.1 MB (345128390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:bionic-slim`
 
 ```console
-$ docker pull swift@sha256:97dc0358a1c1496ac698c0b464a9a776f5527f6654722b0a35a5a724785b525e
+$ docker pull swift@sha256:31186888eb55fdc81861c1e2f10b2ace527b90862ebc651c8ec4a6f2eb574395
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2641,79 +2641,79 @@ $ docker pull swift@sha256:97dc0358a1c1496ac698c0b464a9a776f5527f6654722b0a35a5a
 ### `swift:bionic-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:7fb4399b74819fd0edd6f6a2747eef4a69e5330b9914975681107a08cf530169
+$ docker pull swift@sha256:c8a88d1078ad5a522112f61bf0a841fb51af6a07db95434c8a0216030505b6b7
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **78.3 MB (78298082 bytes)**  
+-	Total Size: **78.3 MB (78299085 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b261cd21bfe011b43b03a8555ade3b0f2f8c1eaaebfef54af6989e5857d09a6a`
+-	Image ID: `sha256:745916b625aac56b0529ac87f4ef589d66ef377c4fbb7637a2a852486cb6b5e2`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 31 Oct 2019 22:20:35 GMT
-ADD file:a48a5dc1b9dbfc632f6cf86fe27b770b63f07a115c98c4465dc184e303a4efa1 in / 
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:25 GMT
+ADD file:53f100793e6c0adfca99977a42bb65cb7971c26e4d6e4499d1c30a1f51f06854 in / 
+# Thu, 19 Dec 2019 04:21:26 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Fri, 01 Nov 2019 00:06:09 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libcurl4     libxml2     tzdata     && rm -r /var/lib/apt/lists/*
-# Fri, 01 Nov 2019 00:06:09 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
-# Fri, 01 Nov 2019 00:06:09 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 ARG SWIFT_PLATFORM=ubuntu18.04
-# Mon, 16 Dec 2019 23:33:49 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 ARG SWIFT_BRANCH=swift-5.1.3-release
-# Mon, 16 Dec 2019 23:33:49 GMT
+# Thu, 19 Dec 2019 08:56:46 GMT
 ARG SWIFT_VERSION=swift-5.1.3-RELEASE
-# Mon, 16 Dec 2019 23:33:49 GMT
+# Thu, 19 Dec 2019 08:56:46 GMT
 ARG SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:33:50 GMT
+# Thu, 19 Dec 2019 08:56:46 GMT
 ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=ubuntu18.04 SWIFT_BRANCH=swift-5.1.3-release SWIFT_VERSION=swift-5.1.3-RELEASE SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:34:55 GMT
+# Thu, 19 Dec 2019 08:57:49 GMT
 RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)/"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export DEBIAN_FRONTEND=noninteractive     && apt-get -q update && apt-get -q install -y curl gnupg && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1 $SWIFT_VERSION-$SWIFT_PLATFORM/usr/lib/swift/linux     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && apt-get purge --auto-remove -y curl gnupg
 ```
 
 -	Layers:
-	-	`sha256:7ddbc47eeb70dc7f08e410a6667948b87ff3883024eb41478b44ef9a81bf400c`  
-		Last Modified: Wed, 30 Oct 2019 00:25:34 GMT  
-		Size: 26.7 MB (26688847 bytes)  
+	-	`sha256:2746a4a261c9e18bfd7ff0429c18fd7522acc14fa4c7ec8ab37ba5ebaadbc584`  
+		Last Modified: Mon, 02 Dec 2019 13:22:09 GMT  
+		Size: 26.7 MB (26689544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1bbdc448b7263673926b8fe2e88491e5083a8b4b06ddfabf311f2fc5f27e2ff`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 35.4 KB (35362 bytes)  
+	-	`sha256:4c1d20cdee96111c8acf1858b62655a37ce81ae48648993542b7ac363ac5c0e5`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 35.4 KB (35361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c3b70e3904492c753652606df4726430426f42ea56e06ea924d6fea7ae162a1`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 845.0 B  
+	-	`sha256:0d3160e1d0de4061b5b32ee09af687b898921d36ed9556df5910ddc3104449cd`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d437916d5781043432f2d72608049dcf74ddbd27daa01a25fa63c8f1b9adc4`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 162.0 B  
+	-	`sha256:c8e37668deea784f47c8726d934adc12b8d20a2b1c50b0b0c18cb62771cd3684`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f17b42397ff1804136108f5565c6d518bf80a52d73bfc2f325e88ae4c611533`  
-		Last Modified: Fri, 01 Nov 2019 00:23:03 GMT  
-		Size: 20.5 MB (20487219 bytes)  
+	-	`sha256:6c4dbd05131842cfea027a5005f70e841e33e8c30cc33f8ca6301ec08965fbe9`  
+		Last Modified: Thu, 19 Dec 2019 09:12:59 GMT  
+		Size: 20.5 MB (20487567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc456dc353f7c26019a13c95e22d3b21803ad5416860e4094706806620f1a9b9`  
-		Last Modified: Mon, 16 Dec 2019 23:39:11 GMT  
-		Size: 31.1 MB (31085647 bytes)  
+	-	`sha256:ad51dd94be6144081f1c40cc214c15a3fa0817d16008f48f12a7a69c7d28ffef`  
+		Last Modified: Thu, 19 Dec 2019 09:13:01 GMT  
+		Size: 31.1 MB (31085596 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:latest`
 
 ```console
-$ docker pull swift@sha256:2f8eb501a5e918a21fedc878f0126b5a94db321e2f4c1ef087a96330c2c26cd6
+$ docker pull swift@sha256:72d7e583452031ae88251263649fc56ea79f98f4147474080426fb5c1ff904aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2723,81 +2723,81 @@ $ docker pull swift@sha256:2f8eb501a5e918a21fedc878f0126b5a94db321e2f4c1ef087a96
 ### `swift:latest` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:83e2bc43d994382d7b8d1b3b012a6579d0055b2c1a2d6f4b689958fc520192be
+$ docker pull swift@sha256:08d053d8889f79987e1816aa3716f986a29ea17ee5afd8e8c5ced11dba81ffbf
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **488.9 MB (488924348 bytes)**  
+-	Total Size: **488.8 MB (488792052 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f54e96eb49bc6c32417e95aaca896d36cae9046c20567d95543e0328a5dc852`
+-	Image ID: `sha256:1fc468cb2d3951e48b11e7c56b3b87deaf88996c11da3f2d9499a4ff67c0012e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 31 Oct 2019 22:20:35 GMT
-ADD file:a48a5dc1b9dbfc632f6cf86fe27b770b63f07a115c98c4465dc184e303a4efa1 in / 
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:25 GMT
+ADD file:53f100793e6c0adfca99977a42bb65cb7971c26e4d6e4499d1c30a1f51f06854 in / 
+# Thu, 19 Dec 2019 04:21:26 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Fri, 01 Nov 2019 00:01:46 GMT
+# Thu, 19 Dec 2019 08:52:13 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libcurl4     libxml2     libedit2     libsqlite3-0     libc6-dev     binutils     libgcc-5-dev     libstdc++-5-dev     libpython2.7     tzdata     git     pkg-config     && rm -r /var/lib/apt/lists/*
-# Fri, 01 Nov 2019 00:01:46 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
-# Fri, 01 Nov 2019 00:01:47 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_PLATFORM=ubuntu18.04
-# Mon, 16 Dec 2019 23:30:48 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_BRANCH=swift-5.1.3-release
-# Mon, 16 Dec 2019 23:30:48 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_VERSION=swift-5.1.3-RELEASE
-# Mon, 16 Dec 2019 23:30:48 GMT
+# Thu, 19 Dec 2019 08:52:14 GMT
 ARG SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:30:49 GMT
+# Thu, 19 Dec 2019 08:52:15 GMT
 ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=ubuntu18.04 SWIFT_BRANCH=swift-5.1.3-release SWIFT_VERSION=swift-5.1.3-RELEASE SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:32:00 GMT
+# Thu, 19 Dec 2019 08:53:24 GMT
 RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)/"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export DEBIAN_FRONTEND=noninteractive     && apt-get -q update && apt-get -q install -y curl && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && apt-get purge --auto-remove -y curl
-# Mon, 16 Dec 2019 23:32:02 GMT
+# Thu, 19 Dec 2019 08:53:27 GMT
 RUN swift --version
 ```
 
 -	Layers:
-	-	`sha256:7ddbc47eeb70dc7f08e410a6667948b87ff3883024eb41478b44ef9a81bf400c`  
-		Last Modified: Wed, 30 Oct 2019 00:25:34 GMT  
-		Size: 26.7 MB (26688847 bytes)  
+	-	`sha256:2746a4a261c9e18bfd7ff0429c18fd7522acc14fa4c7ec8ab37ba5ebaadbc584`  
+		Last Modified: Mon, 02 Dec 2019 13:22:09 GMT  
+		Size: 26.7 MB (26689544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1bbdc448b7263673926b8fe2e88491e5083a8b4b06ddfabf311f2fc5f27e2ff`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 35.4 KB (35362 bytes)  
+	-	`sha256:4c1d20cdee96111c8acf1858b62655a37ce81ae48648993542b7ac363ac5c0e5`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 35.4 KB (35361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c3b70e3904492c753652606df4726430426f42ea56e06ea924d6fea7ae162a1`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 845.0 B  
+	-	`sha256:0d3160e1d0de4061b5b32ee09af687b898921d36ed9556df5910ddc3104449cd`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d437916d5781043432f2d72608049dcf74ddbd27daa01a25fa63c8f1b9adc4`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 162.0 B  
+	-	`sha256:c8e37668deea784f47c8726d934adc12b8d20a2b1c50b0b0c18cb62771cd3684`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31400cff7f02441779e72cb64afa10a457e1b548f0e4e5af3b869c137effb092`  
-		Last Modified: Fri, 01 Nov 2019 00:20:54 GMT  
-		Size: 117.1 MB (117070613 bytes)  
+	-	`sha256:e2eb3c3401944867985bb2115c35ec699301909aa37e2b87615a93020d0fe36e`  
+		Last Modified: Thu, 19 Dec 2019 09:11:02 GMT  
+		Size: 116.9 MB (116937740 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f26497bd97ba17f7410be3e2b6dc0b12b3b31c8b0785cb2cef496ac724464261`  
-		Last Modified: Mon, 16 Dec 2019 23:37:45 GMT  
-		Size: 345.1 MB (345128519 bytes)  
+	-	`sha256:b5d1069a5aa43da44663c74f8a19ac2e54e05c2ead4142e4b8ad3c4b5ebb39b5`  
+		Last Modified: Thu, 19 Dec 2019 09:11:35 GMT  
+		Size: 345.1 MB (345128390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:slim`
 
 ```console
-$ docker pull swift@sha256:97dc0358a1c1496ac698c0b464a9a776f5527f6654722b0a35a5a724785b525e
+$ docker pull swift@sha256:31186888eb55fdc81861c1e2f10b2ace527b90862ebc651c8ec4a6f2eb574395
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2807,79 +2807,79 @@ $ docker pull swift@sha256:97dc0358a1c1496ac698c0b464a9a776f5527f6654722b0a35a5a
 ### `swift:slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:7fb4399b74819fd0edd6f6a2747eef4a69e5330b9914975681107a08cf530169
+$ docker pull swift@sha256:c8a88d1078ad5a522112f61bf0a841fb51af6a07db95434c8a0216030505b6b7
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **78.3 MB (78298082 bytes)**  
+-	Total Size: **78.3 MB (78299085 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b261cd21bfe011b43b03a8555ade3b0f2f8c1eaaebfef54af6989e5857d09a6a`
+-	Image ID: `sha256:745916b625aac56b0529ac87f4ef589d66ef377c4fbb7637a2a852486cb6b5e2`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 31 Oct 2019 22:20:35 GMT
-ADD file:a48a5dc1b9dbfc632f6cf86fe27b770b63f07a115c98c4465dc184e303a4efa1 in / 
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:25 GMT
+ADD file:53f100793e6c0adfca99977a42bb65cb7971c26e4d6e4499d1c30a1f51f06854 in / 
+# Thu, 19 Dec 2019 04:21:26 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 31 Oct 2019 22:20:36 GMT
+# Thu, 19 Dec 2019 04:21:27 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 31 Oct 2019 22:20:37 GMT
+# Thu, 19 Dec 2019 04:21:28 GMT
 CMD ["/bin/bash"]
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Fri, 01 Nov 2019 00:01:08 GMT
+# Thu, 19 Dec 2019 08:51:34 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Fri, 01 Nov 2019 00:06:09 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libcurl4     libxml2     tzdata     && rm -r /var/lib/apt/lists/*
-# Fri, 01 Nov 2019 00:06:09 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
-# Fri, 01 Nov 2019 00:06:09 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 ARG SWIFT_PLATFORM=ubuntu18.04
-# Mon, 16 Dec 2019 23:33:49 GMT
+# Thu, 19 Dec 2019 08:56:45 GMT
 ARG SWIFT_BRANCH=swift-5.1.3-release
-# Mon, 16 Dec 2019 23:33:49 GMT
+# Thu, 19 Dec 2019 08:56:46 GMT
 ARG SWIFT_VERSION=swift-5.1.3-RELEASE
-# Mon, 16 Dec 2019 23:33:49 GMT
+# Thu, 19 Dec 2019 08:56:46 GMT
 ARG SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:33:50 GMT
+# Thu, 19 Dec 2019 08:56:46 GMT
 ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=ubuntu18.04 SWIFT_BRANCH=swift-5.1.3-release SWIFT_VERSION=swift-5.1.3-RELEASE SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:34:55 GMT
+# Thu, 19 Dec 2019 08:57:49 GMT
 RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)/"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export DEBIAN_FRONTEND=noninteractive     && apt-get -q update && apt-get -q install -y curl gnupg && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1 $SWIFT_VERSION-$SWIFT_PLATFORM/usr/lib/swift/linux     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && apt-get purge --auto-remove -y curl gnupg
 ```
 
 -	Layers:
-	-	`sha256:7ddbc47eeb70dc7f08e410a6667948b87ff3883024eb41478b44ef9a81bf400c`  
-		Last Modified: Wed, 30 Oct 2019 00:25:34 GMT  
-		Size: 26.7 MB (26688847 bytes)  
+	-	`sha256:2746a4a261c9e18bfd7ff0429c18fd7522acc14fa4c7ec8ab37ba5ebaadbc584`  
+		Last Modified: Mon, 02 Dec 2019 13:22:09 GMT  
+		Size: 26.7 MB (26689544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1bbdc448b7263673926b8fe2e88491e5083a8b4b06ddfabf311f2fc5f27e2ff`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 35.4 KB (35362 bytes)  
+	-	`sha256:4c1d20cdee96111c8acf1858b62655a37ce81ae48648993542b7ac363ac5c0e5`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 35.4 KB (35361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c3b70e3904492c753652606df4726430426f42ea56e06ea924d6fea7ae162a1`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 845.0 B  
+	-	`sha256:0d3160e1d0de4061b5b32ee09af687b898921d36ed9556df5910ddc3104449cd`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45d437916d5781043432f2d72608049dcf74ddbd27daa01a25fa63c8f1b9adc4`  
-		Last Modified: Thu, 31 Oct 2019 22:21:39 GMT  
-		Size: 162.0 B  
+	-	`sha256:c8e37668deea784f47c8726d934adc12b8d20a2b1c50b0b0c18cb62771cd3684`  
+		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f17b42397ff1804136108f5565c6d518bf80a52d73bfc2f325e88ae4c611533`  
-		Last Modified: Fri, 01 Nov 2019 00:23:03 GMT  
-		Size: 20.5 MB (20487219 bytes)  
+	-	`sha256:6c4dbd05131842cfea027a5005f70e841e33e8c30cc33f8ca6301ec08965fbe9`  
+		Last Modified: Thu, 19 Dec 2019 09:12:59 GMT  
+		Size: 20.5 MB (20487567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc456dc353f7c26019a13c95e22d3b21803ad5416860e4094706806620f1a9b9`  
-		Last Modified: Mon, 16 Dec 2019 23:39:11 GMT  
-		Size: 31.1 MB (31085647 bytes)  
+	-	`sha256:ad51dd94be6144081f1c40cc214c15a3fa0817d16008f48f12a7a69c7d28ffef`  
+		Last Modified: Thu, 19 Dec 2019 09:13:01 GMT  
+		Size: 31.1 MB (31085596 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:xenial`
 
 ```console
-$ docker pull swift@sha256:50b4f100679f74e0706fc8a9fd8248e0ff91b9ee6d6868a2b1ec986c0ea12a33
+$ docker pull swift@sha256:c653758b8ca7b05c94965a8aeb8a470f84ec9828e25b0abf612aefd83b869d18
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2889,81 +2889,81 @@ $ docker pull swift@sha256:50b4f100679f74e0706fc8a9fd8248e0ff91b9ee6d6868a2b1ec9
 ### `swift:xenial` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:97ae96c5b629330196c870ed6ab30e2b9da483c0a1e6bf904cc899d437465b33
+$ docker pull swift@sha256:d0df9a0dbdeae8976b27eb27d69e5441fcff741e00b53ae65c3fe224806da3cb
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **507.0 MB (506980734 bytes)**  
+-	Total Size: **507.0 MB (506962508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73b4dab7be47887e2a7b4a84cb0af4855c19dc53249e41dd3f26efa7baff7965`
+-	Image ID: `sha256:ea67485cfa3159d017d4b8db98c18587cd2ec3ecc31b90f089fecdd3c78193e8`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 Nov 2019 00:22:54 GMT
-ADD file:4eb02fc768cad452a37e8df30bbfcc728f3e6e7ca33af177fd4de06fd07c2098 in / 
-# Wed, 27 Nov 2019 00:22:55 GMT
+# Thu, 19 Dec 2019 04:24:35 GMT
+ADD file:f0b8eaa718bc3965b1e8395f5a6bea97c16651b50614e676bb3eaf31335a0045 in / 
+# Thu, 19 Dec 2019 04:24:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:37 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 CMD ["/bin/bash"]
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:37 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Wed, 27 Nov 2019 01:36:35 GMT
+# Thu, 19 Dec 2019 08:55:03 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libcurl3     libxml2     libedit2     libsqlite3-0     libc6-dev     binutils     libgcc-5-dev     libstdc++-5-dev     libpython2.7     tzdata     git     pkg-config     && rm -r /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 01:36:35 GMT
+# Thu, 19 Dec 2019 08:55:04 GMT
 ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
-# Wed, 27 Nov 2019 01:36:35 GMT
+# Thu, 19 Dec 2019 08:55:04 GMT
 ARG SWIFT_PLATFORM=ubuntu16.04
-# Mon, 16 Dec 2019 23:32:17 GMT
+# Thu, 19 Dec 2019 08:55:04 GMT
 ARG SWIFT_BRANCH=swift-5.1.3-release
-# Mon, 16 Dec 2019 23:32:17 GMT
+# Thu, 19 Dec 2019 08:55:04 GMT
 ARG SWIFT_VERSION=swift-5.1.3-RELEASE
-# Mon, 16 Dec 2019 23:32:17 GMT
+# Thu, 19 Dec 2019 08:55:04 GMT
 ARG SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:32:17 GMT
+# Thu, 19 Dec 2019 08:55:04 GMT
 ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=ubuntu16.04 SWIFT_BRANCH=swift-5.1.3-release SWIFT_VERSION=swift-5.1.3-RELEASE SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:33:34 GMT
+# Thu, 19 Dec 2019 08:56:18 GMT
 RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)/"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export DEBIAN_FRONTEND=noninteractive     && apt-get -q update && apt-get -q install -y curl && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && apt-get purge --auto-remove -y curl
-# Mon, 16 Dec 2019 23:33:35 GMT
+# Thu, 19 Dec 2019 08:56:19 GMT
 RUN swift --version
 ```
 
 -	Layers:
-	-	`sha256:976a760c94fcdd7d105269ae621e8269e7bb25a58c52ae667b4029a6bc7e33cb`  
-		Last Modified: Sat, 09 Nov 2019 00:25:10 GMT  
-		Size: 44.1 MB (44145376 bytes)  
+	-	`sha256:3386e6af03b043219225367632569465e5ecd47391d1f99a6d265e51bd463a83`  
+		Last Modified: Thu, 12 Dec 2019 08:26:09 GMT  
+		Size: 44.1 MB (44123254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c58992f3c37bb64aeba18910408cda9a7a63e212fe27e95065a8d54130ca5926`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
+	-	`sha256:49ac0bbe6c8eeb959337b336ceaa5c3bbbae81e316025f9b94ede453540f2377`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
 		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca0e5e7f12e6eb512246aea5579fcb771fe7203bc60944384d5cd7962f87ddb`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 846.0 B  
+	-	`sha256:d1983a67e104e801fceb1850a375a71fe6b62636ba7a8403d9644f308a6a43f9`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2a274cc00ca5f671b1740c43672dbc96504760cee585e7604029a3fe56854a8`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 168.0 B  
+	-	`sha256:1a0f3a523f04f61db942018321ae122f90d8e3303e243b005e8de9817daf7028`  
+		Last Modified: Thu, 19 Dec 2019 04:25:59 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:416b78803214ca5473564be86272f5e764b0bd94af457c316d27b2f1d0d8bb41`  
-		Last Modified: Wed, 27 Nov 2019 01:49:08 GMT  
-		Size: 111.4 MB (111376646 bytes)  
+	-	`sha256:20bcfbb26bcc2dd1038c8f5e9c4c68a57d212eb7a07029a2cf66472c12b81b57`  
+		Last Modified: Thu, 19 Dec 2019 09:12:07 GMT  
+		Size: 111.4 MB (111380521 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5cece0486bbedaacf976f5725cee73a3f5627e142e6c0232ebda3480afda75d`  
-		Last Modified: Mon, 16 Dec 2019 23:38:56 GMT  
-		Size: 351.5 MB (351457169 bytes)  
+	-	`sha256:08aca6c905cb66b340f22397702722f6144606e8e4ef42b77a58043ecdf3a299`  
+		Last Modified: Thu, 19 Dec 2019 09:12:48 GMT  
+		Size: 351.5 MB (351457186 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `swift:xenial-slim`
 
 ```console
-$ docker pull swift@sha256:4bc8aad11657893f9afdfe737ac18be8ab0a126a2aa0600f2003fce472f6fd9f
+$ docker pull swift@sha256:99ef694af62eef35ab3ebc496de7956a2a3974905f960d7ace725cf14024452c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2973,71 +2973,71 @@ $ docker pull swift@sha256:4bc8aad11657893f9afdfe737ac18be8ab0a126a2aa0600f2003f
 ### `swift:xenial-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:bc20fd13ad491d7a54c6779808ad0024667e47266c7ff9930a5ff0f7d99ea10e
+$ docker pull swift@sha256:ef45f06bfb0383176f867ef96c1cee7ebd6d68f3b8e69aec4b8c4e721c88a7c8
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.0 MB (95974664 bytes)**  
+-	Total Size: **96.0 MB (95952585 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c70471b2b0fa69b0a6ae5961d5b6b27bb481503e345084e548a8cb785542d769`
+-	Image ID: `sha256:14a836928dceb65e2f4e9a1e2c4f8f00f7f2b45599f9b94abc744b2a9c353472`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 27 Nov 2019 00:22:54 GMT
-ADD file:4eb02fc768cad452a37e8df30bbfcc728f3e6e7ca33af177fd4de06fd07c2098 in / 
-# Wed, 27 Nov 2019 00:22:55 GMT
+# Thu, 19 Dec 2019 04:24:35 GMT
+ADD file:f0b8eaa718bc3965b1e8395f5a6bea97c16651b50614e676bb3eaf31335a0045 in / 
+# Thu, 19 Dec 2019 04:24:36 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:37 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 27 Nov 2019 00:22:56 GMT
+# Thu, 19 Dec 2019 04:24:38 GMT
 CMD ["/bin/bash"]
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:34 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
-# Wed, 27 Nov 2019 01:36:02 GMT
+# Thu, 19 Dec 2019 08:53:37 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Wed, 27 Nov 2019 01:38:20 GMT
+# Thu, 19 Dec 2019 08:58:12 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libcurl3     libxml2     tzdata     && rm -r /var/lib/apt/lists/*
-# Wed, 27 Nov 2019 01:38:21 GMT
+# Thu, 19 Dec 2019 08:58:12 GMT
 ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
-# Wed, 27 Nov 2019 01:38:21 GMT
+# Thu, 19 Dec 2019 08:58:12 GMT
 ARG SWIFT_PLATFORM=ubuntu16.04
-# Mon, 16 Dec 2019 23:35:00 GMT
+# Thu, 19 Dec 2019 08:58:13 GMT
 ARG SWIFT_BRANCH=swift-5.1.3-release
-# Mon, 16 Dec 2019 23:35:00 GMT
+# Thu, 19 Dec 2019 08:58:13 GMT
 ARG SWIFT_VERSION=swift-5.1.3-RELEASE
-# Mon, 16 Dec 2019 23:35:00 GMT
+# Thu, 19 Dec 2019 08:58:13 GMT
 ARG SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:35:00 GMT
+# Thu, 19 Dec 2019 08:58:13 GMT
 ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=ubuntu16.04 SWIFT_BRANCH=swift-5.1.3-release SWIFT_VERSION=swift-5.1.3-RELEASE SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 16 Dec 2019 23:36:06 GMT
+# Thu, 19 Dec 2019 08:59:16 GMT
 RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)/"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export DEBIAN_FRONTEND=noninteractive     && apt-get -q update && apt-get -q install -y curl && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1 $SWIFT_VERSION-$SWIFT_PLATFORM/usr/lib/swift/linux     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && apt-get purge --auto-remove -y curl
 ```
 
 -	Layers:
-	-	`sha256:976a760c94fcdd7d105269ae621e8269e7bb25a58c52ae667b4029a6bc7e33cb`  
-		Last Modified: Sat, 09 Nov 2019 00:25:10 GMT  
-		Size: 44.1 MB (44145376 bytes)  
+	-	`sha256:3386e6af03b043219225367632569465e5ecd47391d1f99a6d265e51bd463a83`  
+		Last Modified: Thu, 12 Dec 2019 08:26:09 GMT  
+		Size: 44.1 MB (44123254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c58992f3c37bb64aeba18910408cda9a7a63e212fe27e95065a8d54130ca5926`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
+	-	`sha256:49ac0bbe6c8eeb959337b336ceaa5c3bbbae81e316025f9b94ede453540f2377`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
 		Size: 529.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca0e5e7f12e6eb512246aea5579fcb771fe7203bc60944384d5cd7962f87ddb`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 846.0 B  
+	-	`sha256:d1983a67e104e801fceb1850a375a71fe6b62636ba7a8403d9644f308a6a43f9`  
+		Last Modified: Thu, 19 Dec 2019 04:26:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2a274cc00ca5f671b1740c43672dbc96504760cee585e7604029a3fe56854a8`  
-		Last Modified: Wed, 27 Nov 2019 00:23:39 GMT  
-		Size: 168.0 B  
+	-	`sha256:1a0f3a523f04f61db942018321ae122f90d8e3303e243b005e8de9817daf7028`  
+		Last Modified: Thu, 19 Dec 2019 04:25:59 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b87ea66deab0bd2b2dbbbf4224d0dd397e3d35768a207a00f1a07f1d6860df3e`  
-		Last Modified: Wed, 27 Nov 2019 01:50:21 GMT  
-		Size: 20.9 MB (20874144 bytes)  
+	-	`sha256:f3ca2c50f1dddc153644da831a3f1fc119b315fe71cf91ec7cb2fe26233d584d`  
+		Last Modified: Thu, 19 Dec 2019 09:13:13 GMT  
+		Size: 20.9 MB (20874149 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ab883b9344e7a6dffac1b25b1b61f49b1f3495bd14439af48567c5e7ef33163`  
-		Last Modified: Mon, 16 Dec 2019 23:39:25 GMT  
-		Size: 31.0 MB (30953601 bytes)  
+	-	`sha256:1df2be3ba87a26d007081acf1ed012e90c1da9ab1de073cb70195aefd198c46b`  
+		Last Modified: Thu, 19 Dec 2019 09:13:15 GMT  
+		Size: 31.0 MB (30953635 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
