@@ -17,12 +17,98 @@
 
 ## `alpine:20191219`
 
-**does not exist** (yet?)
+```console
+$ docker pull alpine@sha256:3e47e62802e6fb536efb023dc6f5523ed93917ea0b0f7f8ad47c2d1b20aa175c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+	-	linux; 386
+	-	linux; ppc64le
+
+### `alpine:20191219` - linux; amd64
+
+```console
+$ docker pull alpine@sha256:5b94d101a874c5355bd02b05a1a81d26ae63e43234926bf6d951ef02d8f110f9
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.8 MB (2802171 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:607e613a0a25c1792030d95a93c67b8463ceb5459a13c56965bbdb3545846991`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Thu, 19 Dec 2019 23:21:32 GMT
+ADD file:a6ab58189626123bf14b54bbe74fa502276f16216923f0d9cb277f681420f696 in / 
+# Thu, 19 Dec 2019 23:21:32 GMT
+CMD ["/bin/sh"]
+```
+
+-	Layers:
+	-	`sha256:d95bb1b66adbd2be511a060cb57ed3d0115b6cffa8d4dceb03ffc848950d338b`  
+		Last Modified: Thu, 19 Dec 2019 23:22:14 GMT  
+		Size: 2.8 MB (2802171 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `alpine:20191219` - linux; 386
+
+```console
+$ docker pull alpine@sha256:abe500b56242b1b762f9de2fe066d2520640541a04c821f56ac240605e447f88
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.8 MB (2804853 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:389f1cb853d429b01015c5fa3f2b87f4d07b1124670cac6d40eb26994eb76d1f`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Thu, 19 Dec 2019 23:38:49 GMT
+ADD file:ea6b94adbd43b15502ed06dbe04b7940996ff75315ca67f58c7c29ea030f0133 in / 
+# Thu, 19 Dec 2019 23:38:49 GMT
+CMD ["/bin/sh"]
+```
+
+-	Layers:
+	-	`sha256:5b11af3e40f6ad84926adaac828e4443a3c90d002ba6e1afac518153636ec4ed`  
+		Last Modified: Thu, 19 Dec 2019 23:39:28 GMT  
+		Size: 2.8 MB (2804853 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `alpine:20191219` - linux; ppc64le
+
+```console
+$ docker pull alpine@sha256:1a4839802b9242aa55b309ad469e0dd77d0a88a48e432f950d1319f944ce5e8b
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.8 MB (2815450 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:559fd51dca2ada0a9af6bd927ee4feb6a0ecb62bc83c7bb81769a68adb55f203`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Thu, 19 Dec 2019 23:34:53 GMT
+ADD file:640da090cb19657acabe3a6752414ce0941a38772b317ee2064e4fcc737b84ac in / 
+# Thu, 19 Dec 2019 23:34:55 GMT
+CMD ["/bin/sh"]
+```
+
+-	Layers:
+	-	`sha256:723b8e02cec469b35c79daa81bb4a7b9cbac511defaea664be1761bb4d23b13b`  
+		Last Modified: Thu, 19 Dec 2019 23:37:36 GMT  
+		Size: 2.8 MB (2815450 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `alpine:3`
 
 ```console
-$ docker pull alpine@sha256:c19173c5ada610a5989151111163d28a67368362762534d8a8121ce95cf2bd5a
+$ docker pull alpine@sha256:4a691b2b827d86985f9f0ac1bc68f4674f2867a766df812fab2fb394987b98ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -38,27 +124,27 @@ $ docker pull alpine@sha256:c19173c5ada610a5989151111163d28a67368362762534d8a812
 ### `alpine:3` - linux; amd64
 
 ```console
-$ docker pull alpine@sha256:e4355b66995c96b4b468159fc5c7e3540fcef961189ca13fee877798649f531a
+$ docker pull alpine@sha256:d371657a4f661a854ff050898003f4cb6c7f36d968a943c1d5cde0952bd93c80
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.8 MB (2787134 bytes)**  
+-	Total Size: **2.8 MB (2801746 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:965ea09ff2ebd2b9eeec88cd822ce156f6674c7e99be082c7efac3c62f3ff652`
+-	Image ID: `sha256:c85b8f829d1f93a25fe91d2ce7dccf7ec723794873a77bb19623d38e926c788c`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Mon, 21 Oct 2019 17:21:42 GMT
-ADD file:fe1f09249227e2da2089afb4d07e16cbf832eeb804120074acd2b8192876cd28 in / 
-# Mon, 21 Oct 2019 17:21:42 GMT
+# Thu, 19 Dec 2019 23:21:54 GMT
+ADD file:c7d28fcb71c026d7956b381180e4792c8219b04904e726a9266322ef5b256df8 in / 
+# Thu, 19 Dec 2019 23:21:54 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:89d9c30c1d48bac627e5c6cb0d1ed1eec28e7dbdfbcc04712e4c79c0f83faf17`  
-		Last Modified: Mon, 21 Oct 2019 17:22:48 GMT  
-		Size: 2.8 MB (2787134 bytes)  
+	-	`sha256:63bc94deeb2884fd684a72d356164664538ee55cd82a9e65afe300a432092744`  
+		Last Modified: Thu, 19 Dec 2019 23:22:17 GMT  
+		Size: 2.8 MB (2801746 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `alpine:3` - linux; arm variant v6
@@ -142,53 +228,53 @@ CMD ["/bin/sh"]
 ### `alpine:3` - linux; 386
 
 ```console
-$ docker pull alpine@sha256:77cbe97593c890eb1c4cadcbca37809ebff2b5f46a036666866c99f08a708967
+$ docker pull alpine@sha256:d965afc5cd134c484d26a74aca4592b843cc7f3349af63498535f5486f28bb60
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.8 MB (2785939 bytes)**  
+-	Total Size: **2.8 MB (2805033 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f59ce9265e2e09bae1cdb89b04e0c74d043b08004c0b69a8beb8c488c5057a2b`
+-	Image ID: `sha256:496be6792bfc206067544f65873b5dae40ad4e20439b6ea52b50e0687b025629`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Mon, 21 Oct 2019 16:46:04 GMT
-ADD file:dd3b3676fd9c1e0983ade68242b9b9ac5c477f3e4bfc97c2e78fd5db93a441c9 in / 
-# Mon, 21 Oct 2019 16:46:04 GMT
+# Thu, 19 Dec 2019 23:39:07 GMT
+ADD file:1673706680d7b52c2ebbcedb7487d7f409ac30dd981113b1054768dfe313d34d in / 
+# Thu, 19 Dec 2019 23:39:08 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:f913bd05bf684aaa4bc173d73cfbb58abb45587962d74f0aa71df36b6b489def`  
-		Last Modified: Mon, 21 Oct 2019 16:46:25 GMT  
-		Size: 2.8 MB (2785939 bytes)  
+	-	`sha256:9680c0e936f79794dbf7ca3d1bfa62665de2eab226477692ae1b5dea6790cad6`  
+		Last Modified: Thu, 19 Dec 2019 23:39:33 GMT  
+		Size: 2.8 MB (2805033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `alpine:3` - linux; ppc64le
 
 ```console
-$ docker pull alpine@sha256:6dff84dbd39db7cb0fc928291e220b3cff846e59334fd66f27ace0bcfd471b75
+$ docker pull alpine@sha256:9026e194fffefc65996f84fdfd9d0fc48d17f455c0191d4652a73fa0555c4142
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.8 MB (2808504 bytes)**  
+-	Total Size: **2.8 MB (2816542 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:803924e7a6c178a7b4c466cf6a70c9463e9192ef439063e6f00d783f4deb336e`
+-	Image ID: `sha256:eafe88729a96f3848e0fa8507404120a3433c2a22e3885ca68bbd9b58b0d340a`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Mon, 21 Oct 2019 17:52:55 GMT
-ADD file:11a2dd0058b1642e9ee52239d03223819a53ca346fd42826eead7729c50e1257 in / 
-# Mon, 21 Oct 2019 17:53:00 GMT
+# Thu, 19 Dec 2019 23:37:02 GMT
+ADD file:f3e7e107e2972b4b00970eb9be40652042303a7783596a6c9cd1212a26309bc8 in / 
+# Thu, 19 Dec 2019 23:37:04 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:cd18d16ea896a0f0eb99be52a9722ffae9a5ac35cf28cb8b96f589352f8e71d6`  
-		Last Modified: Mon, 21 Oct 2019 17:53:53 GMT  
-		Size: 2.8 MB (2808504 bytes)  
+	-	`sha256:cc1702756cf1ed12718b42717fddaa5c49572ef0e8f7d94ab4b77f403e335899`  
+		Last Modified: Thu, 19 Dec 2019 23:37:45 GMT  
+		Size: 2.8 MB (2816542 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `alpine:3` - linux; s390x
@@ -615,11 +701,183 @@ CMD ["/bin/sh"]
 
 ## `alpine:3.11`
 
-**does not exist** (yet?)
+```console
+$ docker pull alpine@sha256:6d4d880e80ea7806cd9de895a46664caf8c0d186f258bfec98f44e9a430ecf98
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+	-	linux; 386
+	-	linux; ppc64le
+
+### `alpine:3.11` - linux; amd64
+
+```console
+$ docker pull alpine@sha256:d371657a4f661a854ff050898003f4cb6c7f36d968a943c1d5cde0952bd93c80
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.8 MB (2801746 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c85b8f829d1f93a25fe91d2ce7dccf7ec723794873a77bb19623d38e926c788c`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Thu, 19 Dec 2019 23:21:54 GMT
+ADD file:c7d28fcb71c026d7956b381180e4792c8219b04904e726a9266322ef5b256df8 in / 
+# Thu, 19 Dec 2019 23:21:54 GMT
+CMD ["/bin/sh"]
+```
+
+-	Layers:
+	-	`sha256:63bc94deeb2884fd684a72d356164664538ee55cd82a9e65afe300a432092744`  
+		Last Modified: Thu, 19 Dec 2019 23:22:17 GMT  
+		Size: 2.8 MB (2801746 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `alpine:3.11` - linux; 386
+
+```console
+$ docker pull alpine@sha256:d965afc5cd134c484d26a74aca4592b843cc7f3349af63498535f5486f28bb60
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.8 MB (2805033 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:496be6792bfc206067544f65873b5dae40ad4e20439b6ea52b50e0687b025629`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Thu, 19 Dec 2019 23:39:07 GMT
+ADD file:1673706680d7b52c2ebbcedb7487d7f409ac30dd981113b1054768dfe313d34d in / 
+# Thu, 19 Dec 2019 23:39:08 GMT
+CMD ["/bin/sh"]
+```
+
+-	Layers:
+	-	`sha256:9680c0e936f79794dbf7ca3d1bfa62665de2eab226477692ae1b5dea6790cad6`  
+		Last Modified: Thu, 19 Dec 2019 23:39:33 GMT  
+		Size: 2.8 MB (2805033 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `alpine:3.11` - linux; ppc64le
+
+```console
+$ docker pull alpine@sha256:9026e194fffefc65996f84fdfd9d0fc48d17f455c0191d4652a73fa0555c4142
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.8 MB (2816542 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:eafe88729a96f3848e0fa8507404120a3433c2a22e3885ca68bbd9b58b0d340a`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Thu, 19 Dec 2019 23:37:02 GMT
+ADD file:f3e7e107e2972b4b00970eb9be40652042303a7783596a6c9cd1212a26309bc8 in / 
+# Thu, 19 Dec 2019 23:37:04 GMT
+CMD ["/bin/sh"]
+```
+
+-	Layers:
+	-	`sha256:cc1702756cf1ed12718b42717fddaa5c49572ef0e8f7d94ab4b77f403e335899`  
+		Last Modified: Thu, 19 Dec 2019 23:37:45 GMT  
+		Size: 2.8 MB (2816542 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `alpine:3.11.0`
 
-**does not exist** (yet?)
+```console
+$ docker pull alpine@sha256:6d4d880e80ea7806cd9de895a46664caf8c0d186f258bfec98f44e9a430ecf98
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+	-	linux; 386
+	-	linux; ppc64le
+
+### `alpine:3.11.0` - linux; amd64
+
+```console
+$ docker pull alpine@sha256:d371657a4f661a854ff050898003f4cb6c7f36d968a943c1d5cde0952bd93c80
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.8 MB (2801746 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c85b8f829d1f93a25fe91d2ce7dccf7ec723794873a77bb19623d38e926c788c`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Thu, 19 Dec 2019 23:21:54 GMT
+ADD file:c7d28fcb71c026d7956b381180e4792c8219b04904e726a9266322ef5b256df8 in / 
+# Thu, 19 Dec 2019 23:21:54 GMT
+CMD ["/bin/sh"]
+```
+
+-	Layers:
+	-	`sha256:63bc94deeb2884fd684a72d356164664538ee55cd82a9e65afe300a432092744`  
+		Last Modified: Thu, 19 Dec 2019 23:22:17 GMT  
+		Size: 2.8 MB (2801746 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `alpine:3.11.0` - linux; 386
+
+```console
+$ docker pull alpine@sha256:d965afc5cd134c484d26a74aca4592b843cc7f3349af63498535f5486f28bb60
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.8 MB (2805033 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:496be6792bfc206067544f65873b5dae40ad4e20439b6ea52b50e0687b025629`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Thu, 19 Dec 2019 23:39:07 GMT
+ADD file:1673706680d7b52c2ebbcedb7487d7f409ac30dd981113b1054768dfe313d34d in / 
+# Thu, 19 Dec 2019 23:39:08 GMT
+CMD ["/bin/sh"]
+```
+
+-	Layers:
+	-	`sha256:9680c0e936f79794dbf7ca3d1bfa62665de2eab226477692ae1b5dea6790cad6`  
+		Last Modified: Thu, 19 Dec 2019 23:39:33 GMT  
+		Size: 2.8 MB (2805033 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `alpine:3.11.0` - linux; ppc64le
+
+```console
+$ docker pull alpine@sha256:9026e194fffefc65996f84fdfd9d0fc48d17f455c0191d4652a73fa0555c4142
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.8 MB (2816542 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:eafe88729a96f3848e0fa8507404120a3433c2a22e3885ca68bbd9b58b0d340a`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Thu, 19 Dec 2019 23:37:02 GMT
+ADD file:f3e7e107e2972b4b00970eb9be40652042303a7783596a6c9cd1212a26309bc8 in / 
+# Thu, 19 Dec 2019 23:37:04 GMT
+CMD ["/bin/sh"]
+```
+
+-	Layers:
+	-	`sha256:cc1702756cf1ed12718b42717fddaa5c49572ef0e8f7d94ab4b77f403e335899`  
+		Last Modified: Thu, 19 Dec 2019 23:37:45 GMT  
+		Size: 2.8 MB (2816542 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `alpine:3.8`
 
@@ -1362,7 +1620,7 @@ CMD ["/bin/sh"]
 ## `alpine:edge`
 
 ```console
-$ docker pull alpine@sha256:2f0fcd44f200bb1c0ddaed7370f042e66df1b7106c081285ad894e2fb9ba5bd2
+$ docker pull alpine@sha256:4a7a12a1d34b075918c013ac5004b41f9b10224c9ff17803a18a09d865a73341
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1378,27 +1636,27 @@ $ docker pull alpine@sha256:2f0fcd44f200bb1c0ddaed7370f042e66df1b7106c081285ad89
 ### `alpine:edge` - linux; amd64
 
 ```console
-$ docker pull alpine@sha256:63f10f6f38e4471b044d318ac0b0768fbc7c46e6bbfd0787b58de8ba43496b50
+$ docker pull alpine@sha256:5b94d101a874c5355bd02b05a1a81d26ae63e43234926bf6d951ef02d8f110f9
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.8 MB (2800710 bytes)**  
+-	Total Size: **2.8 MB (2802171 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60d63d8e1431962d47b266192f3caa2147c43c3701e2f639d3b5cdb443c5771f`
+-	Image ID: `sha256:607e613a0a25c1792030d95a93c67b8463ceb5459a13c56965bbdb3545846991`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Thu, 14 Nov 2019 22:19:47 GMT
-ADD file:394f159189498ec037469c4eee495e3d868bc78fb76196a2360260b0cfc65c2c in / 
-# Thu, 14 Nov 2019 22:19:47 GMT
+# Thu, 19 Dec 2019 23:21:32 GMT
+ADD file:a6ab58189626123bf14b54bbe74fa502276f16216923f0d9cb277f681420f696 in / 
+# Thu, 19 Dec 2019 23:21:32 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:8c15e203d0ebd478f20c6b59f625fe01022722434fbb99a2cb2ac043b11356df`  
-		Last Modified: Thu, 14 Nov 2019 22:20:13 GMT  
-		Size: 2.8 MB (2800710 bytes)  
+	-	`sha256:d95bb1b66adbd2be511a060cb57ed3d0115b6cffa8d4dceb03ffc848950d338b`  
+		Last Modified: Thu, 19 Dec 2019 23:22:14 GMT  
+		Size: 2.8 MB (2802171 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `alpine:edge` - linux; arm variant v6
@@ -1482,53 +1740,53 @@ CMD ["/bin/sh"]
 ### `alpine:edge` - linux; 386
 
 ```console
-$ docker pull alpine@sha256:4cacc7777b719f9257c3a6bdf750c8eda7a3932d94d6f8f44b72979b50046268
+$ docker pull alpine@sha256:abe500b56242b1b762f9de2fe066d2520640541a04c821f56ac240605e447f88
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.8 MB (2803279 bytes)**  
+-	Total Size: **2.8 MB (2804853 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d16e37dd3857d4b2ef7d5b615b93e56692ebcda4fa8bbbff6a4b6a95025665c`
+-	Image ID: `sha256:389f1cb853d429b01015c5fa3f2b87f4d07b1124670cac6d40eb26994eb76d1f`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Thu, 14 Nov 2019 21:38:35 GMT
-ADD file:1be5737eafec3fc7c3e9744dea5fa806a5c5a8259ffab3f5742c290098b87a92 in / 
-# Thu, 14 Nov 2019 21:38:35 GMT
+# Thu, 19 Dec 2019 23:38:49 GMT
+ADD file:ea6b94adbd43b15502ed06dbe04b7940996ff75315ca67f58c7c29ea030f0133 in / 
+# Thu, 19 Dec 2019 23:38:49 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:777315a44ebcd2b8bcbece27aaf657de386cf1f51fb391557908b1cf6751a90d`  
-		Last Modified: Thu, 14 Nov 2019 21:39:14 GMT  
-		Size: 2.8 MB (2803279 bytes)  
+	-	`sha256:5b11af3e40f6ad84926adaac828e4443a3c90d002ba6e1afac518153636ec4ed`  
+		Last Modified: Thu, 19 Dec 2019 23:39:28 GMT  
+		Size: 2.8 MB (2804853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `alpine:edge` - linux; ppc64le
 
 ```console
-$ docker pull alpine@sha256:6b4a5423c7c0b11a76ca14f86c4c3723239ec717a56c19a56d6f26474f9cc690
+$ docker pull alpine@sha256:1a4839802b9242aa55b309ad469e0dd77d0a88a48e432f950d1319f944ce5e8b
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.8 MB (2814348 bytes)**  
+-	Total Size: **2.8 MB (2815450 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d40982a726c65dbf7a10db7b0ddccd8c2018eee2344962521233c6ab5b3bf26f`
+-	Image ID: `sha256:559fd51dca2ada0a9af6bd927ee4feb6a0ecb62bc83c7bb81769a68adb55f203`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Thu, 14 Nov 2019 22:22:41 GMT
-ADD file:24d6b885160275bdfb521f00d6d434b5f0f49f448786ce65bdaea5049531e40d in / 
-# Thu, 14 Nov 2019 22:22:42 GMT
+# Thu, 19 Dec 2019 23:34:53 GMT
+ADD file:640da090cb19657acabe3a6752414ce0941a38772b317ee2064e4fcc737b84ac in / 
+# Thu, 19 Dec 2019 23:34:55 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:b8adbd823aeb40ef812f003c25dc0dd0bc5827e523fea590f38f27ae3474407c`  
-		Last Modified: Thu, 14 Nov 2019 22:23:17 GMT  
-		Size: 2.8 MB (2814348 bytes)  
+	-	`sha256:723b8e02cec469b35c79daa81bb4a7b9cbac511defaea664be1761bb4d23b13b`  
+		Last Modified: Thu, 19 Dec 2019 23:37:36 GMT  
+		Size: 2.8 MB (2815450 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `alpine:edge` - linux; s390x
@@ -1560,7 +1818,7 @@ CMD ["/bin/sh"]
 ## `alpine:latest`
 
 ```console
-$ docker pull alpine@sha256:c19173c5ada610a5989151111163d28a67368362762534d8a8121ce95cf2bd5a
+$ docker pull alpine@sha256:4a691b2b827d86985f9f0ac1bc68f4674f2867a766df812fab2fb394987b98ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1576,27 +1834,27 @@ $ docker pull alpine@sha256:c19173c5ada610a5989151111163d28a67368362762534d8a812
 ### `alpine:latest` - linux; amd64
 
 ```console
-$ docker pull alpine@sha256:e4355b66995c96b4b468159fc5c7e3540fcef961189ca13fee877798649f531a
+$ docker pull alpine@sha256:d371657a4f661a854ff050898003f4cb6c7f36d968a943c1d5cde0952bd93c80
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.8 MB (2787134 bytes)**  
+-	Total Size: **2.8 MB (2801746 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:965ea09ff2ebd2b9eeec88cd822ce156f6674c7e99be082c7efac3c62f3ff652`
+-	Image ID: `sha256:c85b8f829d1f93a25fe91d2ce7dccf7ec723794873a77bb19623d38e926c788c`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Mon, 21 Oct 2019 17:21:42 GMT
-ADD file:fe1f09249227e2da2089afb4d07e16cbf832eeb804120074acd2b8192876cd28 in / 
-# Mon, 21 Oct 2019 17:21:42 GMT
+# Thu, 19 Dec 2019 23:21:54 GMT
+ADD file:c7d28fcb71c026d7956b381180e4792c8219b04904e726a9266322ef5b256df8 in / 
+# Thu, 19 Dec 2019 23:21:54 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:89d9c30c1d48bac627e5c6cb0d1ed1eec28e7dbdfbcc04712e4c79c0f83faf17`  
-		Last Modified: Mon, 21 Oct 2019 17:22:48 GMT  
-		Size: 2.8 MB (2787134 bytes)  
+	-	`sha256:63bc94deeb2884fd684a72d356164664538ee55cd82a9e65afe300a432092744`  
+		Last Modified: Thu, 19 Dec 2019 23:22:17 GMT  
+		Size: 2.8 MB (2801746 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `alpine:latest` - linux; arm variant v6
@@ -1680,53 +1938,53 @@ CMD ["/bin/sh"]
 ### `alpine:latest` - linux; 386
 
 ```console
-$ docker pull alpine@sha256:77cbe97593c890eb1c4cadcbca37809ebff2b5f46a036666866c99f08a708967
+$ docker pull alpine@sha256:d965afc5cd134c484d26a74aca4592b843cc7f3349af63498535f5486f28bb60
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.8 MB (2785939 bytes)**  
+-	Total Size: **2.8 MB (2805033 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f59ce9265e2e09bae1cdb89b04e0c74d043b08004c0b69a8beb8c488c5057a2b`
+-	Image ID: `sha256:496be6792bfc206067544f65873b5dae40ad4e20439b6ea52b50e0687b025629`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Mon, 21 Oct 2019 16:46:04 GMT
-ADD file:dd3b3676fd9c1e0983ade68242b9b9ac5c477f3e4bfc97c2e78fd5db93a441c9 in / 
-# Mon, 21 Oct 2019 16:46:04 GMT
+# Thu, 19 Dec 2019 23:39:07 GMT
+ADD file:1673706680d7b52c2ebbcedb7487d7f409ac30dd981113b1054768dfe313d34d in / 
+# Thu, 19 Dec 2019 23:39:08 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:f913bd05bf684aaa4bc173d73cfbb58abb45587962d74f0aa71df36b6b489def`  
-		Last Modified: Mon, 21 Oct 2019 16:46:25 GMT  
-		Size: 2.8 MB (2785939 bytes)  
+	-	`sha256:9680c0e936f79794dbf7ca3d1bfa62665de2eab226477692ae1b5dea6790cad6`  
+		Last Modified: Thu, 19 Dec 2019 23:39:33 GMT  
+		Size: 2.8 MB (2805033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `alpine:latest` - linux; ppc64le
 
 ```console
-$ docker pull alpine@sha256:6dff84dbd39db7cb0fc928291e220b3cff846e59334fd66f27ace0bcfd471b75
+$ docker pull alpine@sha256:9026e194fffefc65996f84fdfd9d0fc48d17f455c0191d4652a73fa0555c4142
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.8 MB (2808504 bytes)**  
+-	Total Size: **2.8 MB (2816542 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:803924e7a6c178a7b4c466cf6a70c9463e9192ef439063e6f00d783f4deb336e`
+-	Image ID: `sha256:eafe88729a96f3848e0fa8507404120a3433c2a22e3885ca68bbd9b58b0d340a`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Mon, 21 Oct 2019 17:52:55 GMT
-ADD file:11a2dd0058b1642e9ee52239d03223819a53ca346fd42826eead7729c50e1257 in / 
-# Mon, 21 Oct 2019 17:53:00 GMT
+# Thu, 19 Dec 2019 23:37:02 GMT
+ADD file:f3e7e107e2972b4b00970eb9be40652042303a7783596a6c9cd1212a26309bc8 in / 
+# Thu, 19 Dec 2019 23:37:04 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:cd18d16ea896a0f0eb99be52a9722ffae9a5ac35cf28cb8b96f589352f8e71d6`  
-		Last Modified: Mon, 21 Oct 2019 17:53:53 GMT  
-		Size: 2.8 MB (2808504 bytes)  
+	-	`sha256:cc1702756cf1ed12718b42717fddaa5c49572ef0e8f7d94ab4b77f403e335899`  
+		Last Modified: Thu, 19 Dec 2019 23:37:45 GMT  
+		Size: 2.8 MB (2816542 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `alpine:latest` - linux; s390x
