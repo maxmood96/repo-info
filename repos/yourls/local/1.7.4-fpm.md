@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b00f15a3ee29d9759c49de0bd09860ee92b78b51883a7ecddf93e5b964082568`
-- Created: `2019-12-06T03:10:49.21164785Z`
-- Virtual Size: ~ 404.18 Mb  
+- Image ID: `sha256:7deab63c0364a7087d3d121ad2c873a71bac6464aef71e8dad3af7915c56b2a8`
+- Created: `2019-12-19T06:21:05.9915452Z`
+- Virtual Size: ~ 404.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.25`
-  - `PHP_URL=https://www.php.net/get/php-7.2.25.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.2.25.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=746efeedc38e6ff7b1ec1432440f5fa801537adf6cd21e4afb3f040e5b0760a9`
+  - `PHP_VERSION=7.2.26`
+  - `PHP_URL=https://www.php.net/get/php-7.2.26.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.2.26.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=1dd3bc875e105f5c9d21fb4dc240670bd2c22037820ff03890f5ab883c88b78d`
   - `PHP_MD5=`
   - `YOURLS_VERSION=1.7.4`
   - `YOURLS_SHA256=ffdf0f94b66cdbeaaa62bed3fde14d4eeb2bb1669c3c342eef369ce6165a0276`
