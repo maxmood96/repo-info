@@ -1,18 +1,18 @@
-# `ruby:2.7.0-preview3-slim-buster`
+# `ruby:2.7.0-rc1-slim-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f42a75e52f3b40a74ad90073ec80b3b31baa6c92714fc30b62db24b054eaec3c`
-- Created: `2019-11-27T02:28:21.115292254Z`
-- Virtual Size: ~ 149.00 Mb  
+- Image ID: `sha256:da6b4fa215dc81838515bf67ee46a09641dafc0eab78f3e45bf715ba7db9d731`
+- Created: `2019-12-19T04:08:15.149417502Z`
+- Virtual Size: ~ 149.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUBY_MAJOR=2.7-rc`
-  - `RUBY_VERSION=2.7.0-preview3`
-  - `RUBY_DOWNLOAD_SHA256=ad9d61e55ac224e3447a762e001965839846f9658f87a0e792840887cfe61b8c`
+  - `RUBY_VERSION=2.7.0-rc1`
+  - `RUBY_DOWNLOAD_SHA256=7528db87df7a8cbfdcbd053073839f5a00b2a38f807771e3e45000e72fc86732`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_PATH=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
