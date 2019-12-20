@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c57869eb515264e73c928146abd5a6126665e26765f7e81f9b90eebd6dec0b51`
-- Created: `2019-11-28T20:24:02.003744777Z`
+- Image ID: `sha256:547399f68a3363cd633dde8f2f8c5c874b622b06cc7d359536ccb72dae57cc2e`
+- Created: `2019-12-19T07:46:43.003194467Z`
 - Virtual Size: ~ 312.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1014,20 +1014,26 @@ $ apt-get source -qq --print-uris nettle=3.4-1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.4-1.debian.tar.xz' nettle_3.4-1.debian.tar.xz 19884 SHA256:9bfc25562ed36449e75741b0473e0e558bc9ef5c20ca24e7c650fea87d631c03
 ```
 
-### `dpkg` source package: `openssl=1.1.1-1ubuntu2.1~18.04.4`
+### `dpkg` source package: `openssl=1.1.1-1ubuntu2.1~18.04.5`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1-1ubuntu2.1~18.04.4`
-- `openssl=1.1.1-1ubuntu2.1~18.04.4`
+- `libssl1.1:amd64=1.1.1-1ubuntu2.1~18.04.5`
+- `openssl=1.1.1-1ubuntu2.1~18.04.5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1-1ubuntu2.1~18.04.5
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.5.dsc' openssl_1.1.1-1ubuntu2.1~18.04.5.dsc 2751 SHA256:9ee1d4dc064a27657581df4a6f3fc2d27c8e76379df816688c8e0182453b08e7
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz' openssl_1.1.1.orig.tar.gz 8337920 SHA256:2836875a0f89c03d0fdf483941512613a50cfb421d6fd94b9f41d7279d586a3d
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz.asc' openssl_1.1.1.orig.tar.gz.asc 488 SHA256:f3296150114069ea73a72eafbfdcbb295b770e7cbf3266f9590f3d0932498b3e
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.5.debian.tar.xz' openssl_1.1.1-1ubuntu2.1~18.04.5.debian.tar.xz 96024 SHA256:0f7f2ebf8410c5c62465bf981a1d70e007294eac3aebac33c80793bc111cb3fd
+```
 
 ### `dpkg` source package: `p11-kit=0.23.9-2`
 
@@ -1226,12 +1232,12 @@ $ apt-get source -qq --print-uris shadow=1:4.5-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5-1ubuntu2.debian.tar.xz' shadow_4.5-1ubuntu2.debian.tar.xz 471472 SHA256:0025e344b478aae6e2d9ad7657b5e1fd0ebd1fda7a55e7fc144840f75b92d358
 ```
 
-### `dpkg` source package: `systemd=237-3ubuntu10.31`
+### `dpkg` source package: `systemd=237-3ubuntu10.33`
 
 Binary Packages:
 
-- `libsystemd0:amd64=237-3ubuntu10.31`
-- `libudev1:amd64=237-3ubuntu10.31`
+- `libsystemd0:amd64=237-3ubuntu10.33`
+- `libudev1:amd64=237-3ubuntu10.33`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1243,9 +1249,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=237-3ubuntu10.33
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.33.dsc' systemd_237-3ubuntu10.33.dsc 5182 SHA256:78101584287f635d1212912eff26b4fd9bcec505f73e38e2f8fd09506577df55
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA256:c83dabbe1c9de6b9db1dafdb7e04140c7d0535705c68842f6c0768653ba4913c
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.33.debian.tar.xz' systemd_237-3ubuntu10.33.debian.tar.xz 237528 SHA256:7530e3de2264645ba057564dbb4d6c23a34362292441ebb075839e11963c38c7
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
