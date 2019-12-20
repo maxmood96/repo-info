@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0689e911150c66c3f03c9b184239ff5578685f0de9f913e1fbfff71a6bb77461`
-- Created: `2019-06-14T22:36:44.570639862Z`
-- Virtual Size: ~ 120.00 Mb  
+- Image ID: `sha256:7a48d88db48123fa3a3d39e4849a02fc1bc3be3e5d5be019ac4453b08cf39da0`
+- Created: `2019-12-20T01:48:04.579657345Z`
+- Virtual Size: ~ 120.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -123,15 +123,15 @@ $ yumdownloader --quiet --source --urls cracklib-dicts-2.8.16-4.el6
 https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/cracklib-2.8.16-4.el6.src.rpm
 ```
 
-### `rpm` package: `curl-7.19.7-53.0.2.el6_9.x86_64`
+### `rpm` package: `curl-7.19.7-54.0.1.el6_10.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls curl-7.19.7-53.0.2.el6_9
-https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/curl-7.19.7-53.0.2.el6_9.src.rpm
+$ yumdownloader --quiet --source --urls curl-7.19.7-54.0.1.el6_10
+https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/curl-7.19.7-54.0.1.el6_10.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.23-15.el6_6.2.x86_64`
@@ -426,15 +426,15 @@ $ yumdownloader --quiet --source --urls libcom_err-1.42.8-1.0.3.el6
 https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/e2fsprogs-1.42.8-1.0.3.el6.src.rpm
 ```
 
-### `rpm` package: `libcurl-7.19.7-53.0.2.el6_9.x86_64`
+### `rpm` package: `libcurl-7.19.7-54.0.1.el6_10.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libcurl-7.19.7-53.0.2.el6_9
-https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/curl-7.19.7-53.0.2.el6_9.src.rpm
+$ yumdownloader --quiet --source --urls libcurl-7.19.7-54.0.1.el6_10
+https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/curl-7.19.7-54.0.1.el6_10.src.rpm
 ```
 
 ### `rpm` package: `libffi-3.0.5-3.2.el6.x86_64`
@@ -525,15 +525,15 @@ $ yumdownloader --quiet --source --urls libsepol-2.0.41-4.el6
 https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/libsepol-2.0.41-4.el6.src.rpm
 ```
 
-### `rpm` package: `libssh2-1.4.2-2.el6_7.1.x86_64`
+### `rpm` package: `libssh2-1.4.2-3.0.1.el6_10.1.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libssh2-1.4.2-2.el6_7.1
-https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/libssh2-1.4.2-2.el6_7.1.src.rpm
+$ yumdownloader --quiet --source --urls libssh2-1.4.2-3.0.1.el6_10.1
+https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/libssh2-1.4.2-3.0.1.el6_10.1.src.rpm
 ```
 
 ### `rpm` package: `libstdc++-4.4.7-23.0.1.el6.x86_64`
@@ -635,81 +635,81 @@ $ yumdownloader --quiet --source --urls ncurses-libs-5.7-4.20090207.el6
 https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/ncurses-5.7-4.20090207.el6.src.rpm
 ```
 
-### `rpm` package: `nspr-4.19.0-1.el6.x86_64`
+### `rpm` package: `nspr-4.21.0-1.el6_10.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nspr-4.19.0-1.el6
-https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/nspr-4.19.0-1.el6.src.rpm
+$ yumdownloader --quiet --source --urls nspr-4.21.0-1.el6_10
+https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/nspr-4.21.0-1.el6_10.src.rpm
 ```
 
-### `rpm` package: `nss-3.36.0-9.0.1.el6_10.x86_64`
+### `rpm` package: `nss-3.44.0-7.0.1.el6_10.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nss-3.36.0-9.0.1.el6_10
-https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/nss-3.36.0-9.0.1.el6_10.src.rpm
+$ yumdownloader --quiet --source --urls nss-3.44.0-7.0.1.el6_10
+https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/nss-3.44.0-7.0.1.el6_10.src.rpm
 ```
 
-### `rpm` package: `nss-softokn-3.14.3-23.3.0.1.el6_8.x86_64`
+### `rpm` package: `nss-softokn-3.44.0-6.0.1.el6_10.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nss-softokn-3.14.3-23.3.0.1.el6_8
-https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/nss-softokn-3.14.3-23.3.0.1.el6_8.src.rpm
+$ yumdownloader --quiet --source --urls nss-softokn-3.44.0-6.0.1.el6_10
+https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/nss-softokn-3.44.0-6.0.1.el6_10.src.rpm
 ```
 
-### `rpm` package: `nss-softokn-freebl-3.14.3-23.3.0.1.el6_8.x86_64`
+### `rpm` package: `nss-softokn-freebl-3.44.0-6.0.1.el6_10.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nss-softokn-freebl-3.14.3-23.3.0.1.el6_8
-https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/nss-softokn-3.14.3-23.3.0.1.el6_8.src.rpm
+$ yumdownloader --quiet --source --urls nss-softokn-freebl-3.44.0-6.0.1.el6_10
+https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/nss-softokn-3.44.0-6.0.1.el6_10.src.rpm
 ```
 
-### `rpm` package: `nss-sysinit-3.36.0-9.0.1.el6_10.x86_64`
+### `rpm` package: `nss-sysinit-3.44.0-7.0.1.el6_10.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nss-sysinit-3.36.0-9.0.1.el6_10
-https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/nss-3.36.0-9.0.1.el6_10.src.rpm
+$ yumdownloader --quiet --source --urls nss-sysinit-3.44.0-7.0.1.el6_10
+https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/nss-3.44.0-7.0.1.el6_10.src.rpm
 ```
 
-### `rpm` package: `nss-tools-3.36.0-9.0.1.el6_10.x86_64`
+### `rpm` package: `nss-tools-3.44.0-7.0.1.el6_10.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nss-tools-3.36.0-9.0.1.el6_10
-https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/nss-3.36.0-9.0.1.el6_10.src.rpm
+$ yumdownloader --quiet --source --urls nss-tools-3.44.0-7.0.1.el6_10
+https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/nss-3.44.0-7.0.1.el6_10.src.rpm
 ```
 
-### `rpm` package: `nss-util-3.36.0-1.el6.x86_64`
+### `rpm` package: `nss-util-3.44.0-1.el6_10.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nss-util-3.36.0-1.el6
-https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/nss-util-3.36.0-1.el6.src.rpm
+$ yumdownloader --quiet --source --urls nss-util-3.44.0-1.el6_10
+https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/nss-util-3.44.0-1.el6_10.src.rpm
 ```
 
 ### `rpm` package: `openldap-2.4.40-16.el6.x86_64`
@@ -723,15 +723,15 @@ $ yumdownloader --quiet --source --urls openldap-2.4.40-16.el6
 https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/openldap-2.4.40-16.el6.src.rpm
 ```
 
-### `rpm` package: `openssl-1.0.1e-57.0.6.el6.x86_64`
+### `rpm` package: `openssl-1.0.1e-58.0.1.el6_10.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls openssl-1.0.1e-57.0.6.el6
-https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/openssl-1.0.1e-57.0.6.el6.src.rpm
+$ yumdownloader --quiet --source --urls openssl-1.0.1e-58.0.1.el6_10
+https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/openssl-1.0.1e-58.0.1.el6_10.src.rpm
 ```
 
 ### `rpm` package: `oraclelinux-release-6Server-10.0.2.x86_64`
@@ -844,15 +844,15 @@ $ yumdownloader --quiet --source --urls pygpgme-0.1-18.20090824bzr68.el6
 https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/pygpgme-0.1-18.20090824bzr68.el6.src.rpm
 ```
 
-### `rpm` package: `python-2.6.6-68.0.1.el6_10.x86_64`
+### `rpm` package: `python-2.6.6-68.0.2.el6_10.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls python-2.6.6-68.0.1.el6_10
-https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/python-2.6.6-68.0.1.el6_10.src.rpm
+$ yumdownloader --quiet --source --urls python-2.6.6-68.0.2.el6_10
+https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/python-2.6.6-68.0.2.el6_10.src.rpm
 ```
 
 ### `rpm` package: `python-iniparse-0.3.1-2.1.el6.noarch`
@@ -866,15 +866,15 @@ $ yumdownloader --quiet --source --urls python-iniparse-0.3.1-2.1.el6.noarch
 https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/python-iniparse-0.3.1-2.1.el6.src.rpm
 ```
 
-### `rpm` package: `python-libs-2.6.6-68.0.1.el6_10.x86_64`
+### `rpm` package: `python-libs-2.6.6-68.0.2.el6_10.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls python-libs-2.6.6-68.0.1.el6_10
-https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/python-2.6.6-68.0.1.el6_10.src.rpm
+$ yumdownloader --quiet --source --urls python-libs-2.6.6-68.0.2.el6_10
+https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/python-2.6.6-68.0.2.el6_10.src.rpm
 ```
 
 ### `rpm` package: `python-pycurl-7.19.0-9.0.1.el6.x86_64`
@@ -1009,15 +1009,15 @@ $ yumdownloader --quiet --source --urls sqlite-3.6.20-1.el6_7.2
 https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/sqlite-3.6.20-1.el6_7.2.src.rpm
 ```
 
-### `rpm` package: `tzdata-2019a-1.el6.noarch`
+### `rpm` package: `tzdata-2019c-1.el6.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls tzdata-2019a-1.el6.noarch
-https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/tzdata-2019a-1.el6.src.rpm
+$ yumdownloader --quiet --source --urls tzdata-2019c-1.el6.noarch
+https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/tzdata-2019c-1.el6.src.rpm
 ```
 
 ### `rpm` package: `ustr-1.0.4-9.1.el6.x86_64`
