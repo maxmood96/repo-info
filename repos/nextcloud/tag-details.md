@@ -2383,19 +2383,39 @@ CMD ["apache2-foreground"]
 
 ## `nextcloud:15.0.14`
 
-**does not exist** (yet?)
+```console
+$ docker pull nextcloud@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `nextcloud:15.0.14-apache`
 
-**does not exist** (yet?)
+```console
+$ docker pull nextcloud@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `nextcloud:15.0.14-fpm`
 
-**does not exist** (yet?)
+```console
+$ docker pull nextcloud@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `nextcloud:15.0.14-fpm-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull nextcloud@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `nextcloud:15.0-apache`
 
@@ -10895,19 +10915,39 @@ CMD ["apache2-foreground"]
 
 ## `nextcloud:16.0.7`
 
-**does not exist** (yet?)
+```console
+$ docker pull nextcloud@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `nextcloud:16.0.7-apache`
 
-**does not exist** (yet?)
+```console
+$ docker pull nextcloud@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `nextcloud:16.0.7-fpm`
 
-**does not exist** (yet?)
+```console
+$ docker pull nextcloud@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `nextcloud:16.0.7-fpm-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull nextcloud@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `nextcloud:16.0-apache`
 
@@ -19407,19 +19447,39 @@ CMD ["apache2-foreground"]
 
 ## `nextcloud:17.0.2`
 
-**does not exist** (yet?)
+```console
+$ docker pull nextcloud@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `nextcloud:17.0.2-apache`
 
-**does not exist** (yet?)
+```console
+$ docker pull nextcloud@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `nextcloud:17.0.2-fpm`
 
-**does not exist** (yet?)
+```console
+$ docker pull nextcloud@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `nextcloud:17.0.2-fpm-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull nextcloud@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `nextcloud:17.0-apache`
 
@@ -26758,19 +26818,39 @@ CMD ["apache2-foreground"]
 
 ## `nextcloud:18.0.0beta3`
 
-**does not exist** (yet?)
+```console
+$ docker pull nextcloud@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `nextcloud:18.0.0beta3-apache`
 
-**does not exist** (yet?)
+```console
+$ docker pull nextcloud@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `nextcloud:18.0.0beta3-fpm`
 
-**does not exist** (yet?)
+```console
+$ docker pull nextcloud@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `nextcloud:18.0.0beta3-fpm-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull nextcloud@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `nextcloud:18.0.0-beta-apache`
 
