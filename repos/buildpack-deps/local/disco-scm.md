@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3bc883adc0e9fe9cc089cf71eb125b033ba5f103d61cab97431f6b37f388082b`
-- Created: `2019-11-01T00:43:12.343618323Z`
-- Virtual Size: ~ 236.28 Mb  
+- Image ID: `sha256:416b8e4d61faf18ccc059fed1c229a93c469b5ed10995b55edcebce964b0db24`
+- Created: `2019-12-19T07:26:16.107741565Z`
+- Virtual Size: ~ 236.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -611,12 +611,12 @@ $ apt-get source -qq --print-uris gdbm=1.18.1-4
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.18.1-4.debian.tar.xz' gdbm_1.18.1-4.debian.tar.xz 16460 SHA256:1a7771cf18cacf86b8415cbdeafa4e54dd2dadee59f0c29833aba476726594c5
 ```
 
-### `dpkg` source package: `git=1:2.20.1-2ubuntu1`
+### `dpkg` source package: `git=1:2.20.1-2ubuntu1.19.04.1`
 
 Binary Packages:
 
-- `git=1:2.20.1-2ubuntu1`
-- `git-man=1:2.20.1-2ubuntu1`
+- `git=1:2.20.1-2ubuntu1.19.04.1`
+- `git-man=1:2.20.1-2ubuntu1.19.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -642,10 +642,10 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris git=1:2.20.1-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.20.1-2ubuntu1.dsc' git_2.20.1-2ubuntu1.dsc 2969 SHA256:05546857626a3c786da1f2e13a69ebc804e693857206a7c32c44fcc6327652b1
+$ apt-get source -qq --print-uris git=1:2.20.1-2ubuntu1.19.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.20.1-2ubuntu1.19.04.1.dsc' git_2.20.1-2ubuntu1.19.04.1.dsc 3001 SHA256:134e68eb9d978b614a6cf7a3290593a6b463c42cd9eddff7665398bc1fc6c8fd
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.20.1.orig.tar.xz' git_2.20.1.orig.tar.xz 5359872 SHA256:9d2e91e2faa2ea61ba0a70201d023b36f54d846314591a002c610ea2ab81c3e9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.20.1-2ubuntu1.debian.tar.xz' git_2.20.1-2ubuntu1.debian.tar.xz 600188 SHA256:e17b064564b1e1a5ec5ccdccea1dae6553c5b6e7215c55d58aca459266e2a809
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.20.1-2ubuntu1.19.04.1.debian.tar.xz' git_2.20.1-2ubuntu1.19.04.1.debian.tar.xz 630768 SHA256:007f7ff6fad4ec54521e1c907e3838fbc4b2e4e98c79d43f608e53788bb4ea89
 ```
 
 ### `dpkg` source package: `glibc=2.29-0ubuntu2`
@@ -1253,11 +1253,11 @@ $ apt-get source -qq --print-uris libsepol=2.8-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_2.8-1.debian.tar.xz' libsepol_2.8-1.debian.tar.xz 14076 SHA256:7b8d0b47396c96830754db2e5b679d294486aeffd93cfd21ac68202031374a00
 ```
 
-### `dpkg` source package: `libssh=0.8.6-3`
+### `dpkg` source package: `libssh=0.8.6-3ubuntu0.3`
 
 Binary Packages:
 
-- `libssh-4:amd64=0.8.6-3`
+- `libssh-4:amd64=0.8.6-3ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 
@@ -1270,10 +1270,10 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libssh=0.8.6-3
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.8.6-3.dsc' libssh_0.8.6-3.dsc 2426 SHA256:5d7650f979bc263f38116754029e43ae0d97c161203d5b07133184443decaaf5
+$ apt-get source -qq --print-uris libssh=0.8.6-3ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.8.6-3ubuntu0.3.dsc' libssh_0.8.6-3ubuntu0.3.dsc 2541 SHA256:5180f894285191ba1ad0146dcb719588235c395755588e1d27767ea17a5ef802
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.8.6.orig.tar.xz' libssh_0.8.6.orig.tar.xz 433680 SHA256:1046b95632a07fc00b1ea70ee683072d0c8a23f544f4535440b727812002fd01
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.8.6-3.debian.tar.xz' libssh_0.8.6-3.debian.tar.xz 27824 SHA256:d0436f614531bc884c7aa21a15fd67c27ba3d006d3e85fa5ce29e41f775c1547
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.8.6-3ubuntu0.3.debian.tar.xz' libssh_0.8.6-3ubuntu0.3.debian.tar.xz 36448 SHA256:2a83941a4b25e3fa72634620d1315734671eccddaa3404a7a41fe9a2d85d95b3
 ```
 
 ### `dpkg` source package: `libtasn1-6=4.13-3`
@@ -2024,11 +2024,11 @@ $ apt-get source -qq --print-uris six=1.12.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/six/six_1.12.0-1.debian.tar.xz' six_1.12.0-1.debian.tar.xz 4092 SHA256:f749f1a5531970b517aa39eca2599623fab09703512df82ed1a58f4f92b73568
 ```
 
-### `dpkg` source package: `sqlite3=3.27.2-2ubuntu0.1`
+### `dpkg` source package: `sqlite3=3.27.2-2ubuntu0.2`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.27.2-2ubuntu0.1`
+- `libsqlite3-0:amd64=3.27.2-2ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2036,9 +2036,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.27.2-2ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.27.2-2ubuntu0.2.dsc' sqlite3_3.27.2-2ubuntu0.2.dsc 2497 SHA256:80886d55ee7ed85c61c1367928f26c8244a9d6249bd3987bef80be164dc3205b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.27.2.orig-www.tar.xz' sqlite3_3.27.2.orig-www.tar.xz 5602752 SHA256:b50bea0e1974b33bcb2cec4c29fcdeecd8f960020ce0310b15fb123938844bee
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.27.2.orig.tar.xz' sqlite3_3.27.2.orig.tar.xz 6844832 SHA256:6cb1606bbc38270739d256b5ab1cf94dccf5b2a3b4cbceb0545aac76f6ef40f2
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.27.2-2ubuntu0.2.debian.tar.xz' sqlite3_3.27.2-2ubuntu0.2.debian.tar.xz 31788 SHA256:f3630c76ad40eff49918a7a7e89c0ba96da8a4342cfbfc45822d902e21ca39ff
+```
 
 ### `dpkg` source package: `subversion=1.10.0-2ubuntu3`
 
@@ -2063,12 +2069,12 @@ $ apt-get source -qq --print-uris subversion=1.10.0-2ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.10.0-2ubuntu3.debian.tar.xz' subversion_1.10.0-2ubuntu3.debian.tar.xz 2407216 SHA256:6ea12d08a1903039e7c58fea862a25352f25da29a6980046f1effbde8ec2c775
 ```
 
-### `dpkg` source package: `systemd=240-6ubuntu5.7`
+### `dpkg` source package: `systemd=240-6ubuntu5.8`
 
 Binary Packages:
 
-- `libsystemd0:amd64=240-6ubuntu5.7`
-- `libudev1:amd64=240-6ubuntu5.7`
+- `libsystemd0:amd64=240-6ubuntu5.8`
+- `libudev1:amd64=240-6ubuntu5.8`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -2083,10 +2089,10 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=240-6ubuntu5.7
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_240-6ubuntu5.7.dsc' systemd_240-6ubuntu5.7.dsc 4771 SHA256:db224a231b09cd23eaacdc535a974aa4acf39b5c88d56418595e94c8de6bedfe
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_240.orig.tar.gz' systemd_240.orig.tar.gz 7582001 SHA256:8f15aec1ac926e13a21a04d0ca3fe371f7004951448142a6f8952075c5b5f0b5
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_240-6ubuntu5.7.debian.tar.xz' systemd_240-6ubuntu5.7.debian.tar.xz 228844 SHA256:fbce6c246f30db52f4b8408fd31972c5be29345411008919ba987615332b433c
+$ apt-get source -qq --print-uris systemd=240-6ubuntu5.8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_240-6ubuntu5.8.dsc' systemd_240-6ubuntu5.8.dsc 5112 SHA256:5630073d122b86f9fa52d3eecb506760fa7a433d47a0694c2249ff1922239908
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_240.orig.tar.gz' systemd_240.orig.tar.gz 7582001 SHA256:8f15aec1ac926e13a21a04d0ca3fe371f7004951448142a6f8952075c5b5f0b5
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_240-6ubuntu5.8.debian.tar.xz' systemd_240-6ubuntu5.8.debian.tar.xz 232360 SHA256:928bcbdfcde10136c1c34e2ea499a966d4ff7a31315cf42ae80d6fca9d35f9fe
 ```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu2`
