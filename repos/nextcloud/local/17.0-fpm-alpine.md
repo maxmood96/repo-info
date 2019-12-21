@@ -1,10 +1,10 @@
-# `nextcloud:17.0.1-fpm-alpine`
+# `nextcloud:17.0.2-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1a19873f81d153a8d5cb406423ccca399e38d7bea71d93a758346cc6dc0f958c`
-- Created: `2019-12-06T02:43:18.347545954Z`
-- Virtual Size: ~ 349.76 Mb  
+- Image ID: `sha256:7838c59592f45f1b642f9240ec6477b274bdcc1416aef9bfe36381ce12ba6c2a`
+- Created: `2019-12-20T01:34:53.915054569Z`
+- Virtual Size: ~ 351.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -18,12 +18,12 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.12`
-  - `PHP_URL=https://www.php.net/get/php-7.3.12.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.3.12.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=aafe5e9861ad828860c6af8c88cdc1488314785962328eb1783607c1fdd855df`
+  - `PHP_VERSION=7.3.13`
+  - `PHP_URL=https://www.php.net/get/php-7.3.13.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.3.13.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=57ac55fe442d2da650abeb9e6fa161bd3a98ba6528c029f076f8bba43dd5c228`
   - `PHP_MD5=`
-  - `NEXTCLOUD_VERSION=17.0.1`
+  - `NEXTCLOUD_VERSION=17.0.2`
 
 ## `apk` (`.apk`-based packages)
 
@@ -268,16 +268,16 @@ MIT ICU Unicode-TOU
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.0.8.58-r0 description:
+imagemagick-libs-7.0.8.68-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.0.8.58-r0 webpage:
+imagemagick-libs-7.0.8.68-r0 webpage:
 https://www.imagemagick.org/
 
-imagemagick-libs-7.0.8.58-r0 installed size:
+imagemagick-libs-7.0.8.68-r0 installed size:
 3260416
 
-imagemagick-libs-7.0.8.58-r0 license:
+imagemagick-libs-7.0.8.68-r0 license:
 ImageMagick
 
 ```
@@ -965,16 +965,16 @@ GPL-2.0
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.28.0-r1 description:
+sqlite-libs-3.28.0-r2 description:
 Sqlite3 library
 
-sqlite-libs-3.28.0-r1 webpage:
+sqlite-libs-3.28.0-r2 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.28.0-r1 installed size:
+sqlite-libs-3.28.0-r2 installed size:
 925696
 
-sqlite-libs-3.28.0-r1 license:
+sqlite-libs-3.28.0-r2 license:
 Public-Domain
 
 ```
