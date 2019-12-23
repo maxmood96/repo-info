@@ -1,10 +1,10 @@
-# `mediawiki:1.32.5`
+# `mediawiki:1.33.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:74a00910978b3965a1377a673b4d2fc351f528696d8351ffe7a281584d619971`
-- Created: `2019-12-19T06:25:23.563725966Z`
-- Virtual Size: ~ 727.65 Mb  
+- Image ID: `sha256:d806c3787af6ebe41b4f214a77f75bcb6a6506889c9a42fbe2675e37c3daca43`
+- Created: `2019-12-20T21:22:36.652105277Z`
+- Virtual Size: ~ 732.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -26,10 +26,10 @@
   - `PHP_ASC_URL=https://www.php.net/get/php-7.2.26.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=1dd3bc875e105f5c9d21fb4dc240670bd2c22037820ff03890f5ab883c88b78d`
   - `PHP_MD5=`
-  - `MEDIAWIKI_MAJOR_VERSION=1.32`
-  - `MEDIAWIKI_BRANCH=REL1_32`
-  - `MEDIAWIKI_VERSION=1.32.5`
-  - `MEDIAWIKI_SHA512=bc0c74392cb724278e9f981bf2adac5a77a8568aa20a2b29b9e44dc21d06cd709b7e2af793a10958bad37de6ed2c6b12e94729e89e62944bab927a2c2a143d25`
+  - `MEDIAWIKI_MAJOR_VERSION=1.33`
+  - `MEDIAWIKI_BRANCH=REL1_33`
+  - `MEDIAWIKI_VERSION=1.33.2`
+  - `MEDIAWIKI_SHA512=bdbdd508360ab84a611dc1c57b1504fa5591d08ac24c511430bdb802999f8c7f7e323f1a9a2dd7a405291889f4bff8ca7a8b8911bfed0bd460444bfae52b271c`
 
 ## `dpkg` (`.deb`-based packages)
 

@@ -1,10 +1,10 @@
-# `mediawiki:1.33.1`
+# `mediawiki:1.34.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2b6ad2e10711743a1d5b9b5a9046fa18fee57c7c2252b0d2ca5a114368455e34`
-- Created: `2019-12-19T06:25:06.655535889Z`
-- Virtual Size: ~ 732.56 Mb  
+- Image ID: `sha256:4cf1708ff54df303776a08335b35de88c4bbf608472821c6f6bf15a12d0a9d6e`
+- Created: `2019-12-20T21:22:23.625874954Z`
+- Virtual Size: ~ 741.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -20,16 +20,16 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
-  - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.26`
-  - `PHP_URL=https://www.php.net/get/php-7.2.26.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.2.26.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=1dd3bc875e105f5c9d21fb4dc240670bd2c22037820ff03890f5ab883c88b78d`
+  - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
+  - `PHP_VERSION=7.3.13`
+  - `PHP_URL=https://www.php.net/get/php-7.3.13.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.3.13.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=57ac55fe442d2da650abeb9e6fa161bd3a98ba6528c029f076f8bba43dd5c228`
   - `PHP_MD5=`
-  - `MEDIAWIKI_MAJOR_VERSION=1.33`
-  - `MEDIAWIKI_BRANCH=REL1_33`
-  - `MEDIAWIKI_VERSION=1.33.1`
-  - `MEDIAWIKI_SHA512=0cf786872714546fb13843bc5f8b851bfcc665f7459a0326a3fb77efb0d1976b618d4e2206d3fb0852a60b7fa375e98aa0b5600b03209ce9eabd9e3dc5db7d1a`
+  - `MEDIAWIKI_MAJOR_VERSION=1.34`
+  - `MEDIAWIKI_BRANCH=REL1_34`
+  - `MEDIAWIKI_VERSION=1.34.0`
+  - `MEDIAWIKI_SHA512=b6b1aeec26a1c114eeec0bdf18d4b3160fe02dac2920a39a045acb74e62aa8f8a28e6a81c01fedba7976e4dd0c96463e0f1badfddd3015eef9197b01586a236d`
 
 ## `dpkg` (`.deb`-based packages)
 
