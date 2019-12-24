@@ -1,23 +1,23 @@
-# `neo4j:4.0.0-enterprise`
+# `neo4j:3.5.14-enterprise`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0946f4e4a2dc7888612aed39d755b20632b843ad6baed1e521b31e5d2591191d`
-- Created: `2019-12-18T01:03:57.623391698Z`
-- Virtual Size: ~ 581.00 Mb  
+- Image ID: `sha256:c682830385d46ee307bda1de5fa089bd56823fb39c23673b34de3c675103fb69`
+- Created: `2019-12-18T01:04:47.302793234Z`
+- Virtual Size: ~ 402.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/sbin/tini","-g","--","/docker-entrypoint.sh"]`
 - Command: `["neo4j"]`
 - Environment:
-  - `PATH=/var/lib/neo4j/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/var/lib/neo4j/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `JAVA_HOME=/usr/local/openjdk-11`
-  - `JAVA_VERSION=11.0.5`
-  - `JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.5%2B10/OpenJDK11U-jdk_`
-  - `JAVA_URL_VERSION=11.0.5_10`
-  - `NEO4J_SHA256=97060ce09086fa089516a2a3581b3db0d3d0dc4d2dd60daa470fa9ba090a7184`
-  - `NEO4J_TARBALL=neo4j-enterprise-4.0.0-unix.tar.gz`
+  - `JAVA_HOME=/usr/local/openjdk-8`
+  - `JAVA_VERSION=8u232`
+  - `JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u232-b09/OpenJDK8U-jre_`
+  - `JAVA_URL_VERSION=8u232b09`
+  - `NEO4J_SHA256=8d02047f3196c23849f7b6dda605b98098dbdc694747f1708e119715af3d3e06`
+  - `NEO4J_TARBALL=neo4j-enterprise-3.5.14-unix.tar.gz`
   - `NEO4J_EDITION=enterprise`
   - `NEO4J_HOME=/var/lib/neo4j`
   - `TINI_VERSION=v0.18.0`
