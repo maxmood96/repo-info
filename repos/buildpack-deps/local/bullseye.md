@@ -332,19 +332,13 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.5.46
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.46.dsc' base-passwd_3.5.46.dsc 1651 SHA256:98b5d79c9f06e05e9f41013f8fee48b08d0ffe398653b6f8bbd93c1ae1f24bd4
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.46.tar.xz' base-passwd_3.5.46.tar.xz 52780 SHA256:da15e380557b5a00cdc14018e3da6cbeaaadc786f2c3cb5b8f1fb4acc150b3da
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-passwd/3.5.46/
 
-- https://sources.debian.net/src/base-passwd/3.5.46/ (for browsing the source)
-- https://sources.debian.net/src/base-passwd/3.5.46/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-passwd/3.5.46/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bash=5.0-5`
 
@@ -2782,20 +2776,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 - `Sun-permissive`
 - `Unlicense`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.44.14-1
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.44.14-1.dsc' librsvg_2.44.14-1.dsc 2978 SHA256:f596544130f3f390c37e187649bb3122fbf78ef01b08e8220f917794a907fb72
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.44.14.orig.tar.xz' librsvg_2.44.14.orig.tar.xz 9898828 SHA256:d74564349548f91c863ad3c518dd059f63c2bd267be22dcada396efe83d07397
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.44.14-1.debian.tar.xz' librsvg_2.44.14-1.debian.tar.xz 23760 SHA256:3b5225976fb1e73a5f75113243ea3ed7339e525350e90de3c42873b140b814aa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/librsvg/2.44.14-1/
 
-- https://sources.debian.net/src/librsvg/2.44.14-1/ (for browsing the source)
-- https://sources.debian.net/src/librsvg/2.44.14-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/librsvg/2.44.14-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.4.1-2`
 

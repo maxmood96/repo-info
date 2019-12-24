@@ -30,10 +30,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris acl=2.2.53-5
-'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.2.53-5.dsc' acl_2.2.53-5.dsc 2336 SHA256:dd721715ea9a0514e90feddd17661b45e21a07415e87047a31d31f5c7ea1aab1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.2.53-5ubuntu1.dsc' acl_2.2.53-5ubuntu1.dsc 2480 SHA256:926f984b2b0a546290247154b73e716eb16c79831c2adea74fc0e4f1e0e4f6a1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.2.53.orig.tar.gz' acl_2.2.53.orig.tar.gz 524300 SHA256:06be9865c6f418d851ff4494e12406568353b891ffe1f596b34693c387af26c7
 'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.2.53.orig.tar.gz.asc' acl_2.2.53.orig.tar.gz.asc 833 SHA256:06849bece0b56a6a7269173abe101cff223bb9346d74027a3cd5ff80914abf4b
-'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.2.53-5.debian.tar.xz' acl_2.2.53-5.debian.tar.xz 22320 SHA256:e212867beb37f5ec30097b016b81ce4dc45663e1e81845754f8c4974dc19b5ac
+'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.2.53-5ubuntu1.debian.tar.xz' acl_2.2.53-5ubuntu1.debian.tar.xz 22460 SHA256:2d92cc49cab36f19d2ae0c89aa9a27aa94519cc1b6a75f1932a2e482c8036f15
 ```
 
 ### `dpkg` source package: `adduser=3.118ubuntu1`
@@ -299,14 +299,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.33.1-6ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.33.1-6ubuntu1.dsc' binutils_2.33.1-6ubuntu1.dsc 8593 SHA256:1310394671050d30fe12bb9bb8252f0da443af8eeb276d04e18b7e42861cf08c
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.33.1.orig.tar.xz' binutils_2.33.1.orig.tar.xz 21490848 SHA256:ab66fc2d1c3ec0359b8e08843c9f33b63e8707efdff5e4cc5c200eae24722cbf
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.33.1-6ubuntu1.debian.tar.xz' binutils_2.33.1-6ubuntu1.debian.tar.xz 98552 SHA256:61259c59e3a46cb97f284d803c76723cb371483d22a8ff4a2c4b1c24fae35b94
-```
 
 ### `dpkg` source package: `brotli=1.0.7-5`
 
@@ -440,14 +435,13 @@ Licenses: (parsed from: `/usr/share/doc/python-configobj/copyright`)
 
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris configobj=5.0.6-3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6-3.dsc' configobj_5.0.6-3.dsc 2123 SHA256:bb0b6f41099734c9930109acd4473e84fcca47fadb14949710e5ff8032786299
-'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6.orig.tar.gz' configobj_5.0.6.orig.tar.gz 143664 SHA256:2e140354efcca6f558ff9ee941b435ae09a617bc071797bef62c8d6ed2033d5e
-'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6-3.debian.tar.xz' configobj_5.0.6-3.debian.tar.xz 6848 SHA256:8a278320a37b3953a5b372f12f9a6ef6f35b1680c9c7583062f4ab0b01106efc
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/configobj/5.0.6-3/
+
 
 ### `dpkg` source package: `coreutils=8.30-3ubuntu2`
 
@@ -1079,14 +1073,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.63.1-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.63.1-2ubuntu1.dsc' glib2.0_2.63.1-2ubuntu1.dsc 3355 SHA256:80df49f3f235a5e1eadf2e02427ee1f6f0d4e1d06b963f68cab3d21e859fa3e8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.63.1.orig.tar.xz' glib2.0_2.63.1.orig.tar.xz 4698844 SHA256:6bd00b8e410501f0fb76078b970b8d1bcb290507f1c02288dee2b3a75c2fa082
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.63.1-2ubuntu1.debian.tar.xz' glib2.0_2.63.1-2ubuntu1.debian.tar.xz 99420 SHA256:5ecd86079f3f606039c3a160d7a7f24542a5f26e226d42448f196ac59c46b4d2
-```
 
 ### `dpkg` source package: `glibc=2.30-0ubuntu2`
 
@@ -1767,14 +1756,13 @@ Licenses: (parsed from: `/usr/share/doc/libedit2/copyright`)
 
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libedit=3.1-20191025-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libedit/libedit_3.1-20191025-1.dsc' libedit_3.1-20191025-1.dsc 2129 SHA256:b127497a2e3e71858a6128be1b40e714a963b4f88c99ad95755d96eb8233d9cc
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libedit/libedit_3.1-20191025.orig.tar.gz' libedit_3.1-20191025.orig.tar.gz 516599 SHA256:6dff036660d478bfaa14e407fc5de26d22da1087118c897b1a3ad2e90cb7bf39
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libedit/libedit_3.1-20191025-1.debian.tar.xz' libedit_3.1-20191025-1.debian.tar.xz 14092 SHA256:1ffdaf6c9ee5d3b542b680dd0ed927eac3542e43f7a4bc6efa3d4802bf723920
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libedit/3.1-20191025-1/
+
 
 ### `dpkg` source package: `liberror-perl=0.17028-1`
 

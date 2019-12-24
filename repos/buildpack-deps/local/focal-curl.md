@@ -30,10 +30,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris acl=2.2.53-5
-'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.2.53-5.dsc' acl_2.2.53-5.dsc 2336 SHA256:dd721715ea9a0514e90feddd17661b45e21a07415e87047a31d31f5c7ea1aab1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.2.53-5ubuntu1.dsc' acl_2.2.53-5ubuntu1.dsc 2480 SHA256:926f984b2b0a546290247154b73e716eb16c79831c2adea74fc0e4f1e0e4f6a1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.2.53.orig.tar.gz' acl_2.2.53.orig.tar.gz 524300 SHA256:06be9865c6f418d851ff4494e12406568353b891ffe1f596b34693c387af26c7
 'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.2.53.orig.tar.gz.asc' acl_2.2.53.orig.tar.gz.asc 833 SHA256:06849bece0b56a6a7269173abe101cff223bb9346d74027a3cd5ff80914abf4b
-'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.2.53-5.debian.tar.xz' acl_2.2.53-5.debian.tar.xz 22320 SHA256:e212867beb37f5ec30097b016b81ce4dc45663e1e81845754f8c4974dc19b5ac
+'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.2.53-5ubuntu1.debian.tar.xz' acl_2.2.53-5ubuntu1.debian.tar.xz 22460 SHA256:2d92cc49cab36f19d2ae0c89aa9a27aa94519cc1b6a75f1932a2e482c8036f15
 ```
 
 ### `dpkg` source package: `adduser=3.118ubuntu1`
@@ -1629,14 +1629,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=243-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_243-3ubuntu1.dsc' systemd_243-3ubuntu1.dsc 5122 SHA256:f5f3b8898bc5e217deb7065d400aed1d23768f7fa48ec74ecf69675d2466bca2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_243.orig.tar.gz' systemd_243.orig.tar.gz 8242522 SHA256:0611843c2407f8b125b1b7cb93533bdebd4ccf91c99dffa64ec61556a258c7d1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_243-3ubuntu1.debian.tar.xz' systemd_243-3ubuntu1.debian.tar.xz 213192 SHA256:a18903ebcc5943297f58576a4241c5bcc292b114a0bc2a0fb2e5bb8f8b4ad1ed
-```
 
 ### `dpkg` source package: `sysvinit=2.96-1ubuntu1`
 
