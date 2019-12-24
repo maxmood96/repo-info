@@ -30,10 +30,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris acl=2.2.53-5
-'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.2.53-5.dsc' acl_2.2.53-5.dsc 2336 SHA256:dd721715ea9a0514e90feddd17661b45e21a07415e87047a31d31f5c7ea1aab1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.2.53-5ubuntu1.dsc' acl_2.2.53-5ubuntu1.dsc 2480 SHA256:926f984b2b0a546290247154b73e716eb16c79831c2adea74fc0e4f1e0e4f6a1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.2.53.orig.tar.gz' acl_2.2.53.orig.tar.gz 524300 SHA256:06be9865c6f418d851ff4494e12406568353b891ffe1f596b34693c387af26c7
 'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.2.53.orig.tar.gz.asc' acl_2.2.53.orig.tar.gz.asc 833 SHA256:06849bece0b56a6a7269173abe101cff223bb9346d74027a3cd5ff80914abf4b
-'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.2.53-5.debian.tar.xz' acl_2.2.53-5.debian.tar.xz 22320 SHA256:e212867beb37f5ec30097b016b81ce4dc45663e1e81845754f8c4974dc19b5ac
+'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.2.53-5ubuntu1.debian.tar.xz' acl_2.2.53-5ubuntu1.debian.tar.xz 22460 SHA256:2d92cc49cab36f19d2ae0c89aa9a27aa94519cc1b6a75f1932a2e482c8036f15
 ```
 
 ### `dpkg` source package: `adduser=3.118ubuntu1`
@@ -139,13 +139,13 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.5.46
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.5.46.dsc' base-passwd_3.5.46.dsc 1651 SHA256:98b5d79c9f06e05e9f41013f8fee48b08d0ffe398653b6f8bbd93c1ae1f24bd4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.5.46.tar.xz' base-passwd_3.5.46.tar.xz 52780 SHA256:da15e380557b5a00cdc14018e3da6cbeaaadc786f2c3cb5b8f1fb4acc150b3da
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/base-passwd/3.5.46/
+
 
 ### `dpkg` source package: `bash=5.0-5ubuntu1`
 
@@ -497,15 +497,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.6.10-5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.10-5.dsc' gnutls28_3.6.10-5.dsc 3479 SHA256:839309d2dfe7234bc884dbe7b4c91090a4dd1a06d46d78832f66c64c5524d1a9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.10.orig.tar.xz' gnutls28_3.6.10.orig.tar.xz 5795984 SHA256:b1f3ca67673b05b746a961acf2243eaae0ffe658b6a6494265c648e7c7812293
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.10.orig.tar.xz.asc' gnutls28_3.6.10.orig.tar.xz.asc 488 SHA256:a16fa799ab33be0842bcc0b90b74e1bc504f8bdf6089ea820e57e6eac4cfd024
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.10-5.debian.tar.xz' gnutls28_3.6.10-5.debian.tar.xz 60620 SHA256:59b20be4ac56bd711ce7b0a744fe5b83cd3a3c2d61174517aa03ff668541b87d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gnutls28/3.6.10-5/
+
 
 ### `dpkg` source package: `grep=3.3-1build1`
 
@@ -537,14 +535,9 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gzip=1.10-0ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10-0ubuntu3.dsc' gzip_1.10-0ubuntu3.dsc 2074 SHA256:93339de815b59c0c677ff3099c449c1de52b717389fc9a46372d5e7386dc453a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10.orig.tar.gz' gzip_1.10.orig.tar.gz 1201421 SHA256:c91f74430bf7bc20402e1f657d0b252cb80aa66ba333a25704512af346633c68
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10-0ubuntu3.debian.tar.xz' gzip_1.10-0ubuntu3.debian.tar.xz 26464 SHA256:560bbe53c94934a09f0c883df5a160b31ea3fdee30e495769368be32fab368d8
-```
 
 ### `dpkg` source package: `hostname=3.23`
 
@@ -705,14 +698,9 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.4.1-0ubuntu0.19.10.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.4.1-0ubuntu0.19.10.3.dsc' libseccomp_2.4.1-0ubuntu0.19.10.3.dsc 2580 SHA256:c8f4b886479df834b2a49254ed8595d44ab10d4842e35bc02123c5211e40ad7b
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.4.1.orig.tar.gz' libseccomp_2.4.1.orig.tar.gz 606860 SHA256:1ca3735249af66a1b2f762fe6e710fcc294ad7185f1cc961e5bd83f9988006e8
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.4.1-0ubuntu0.19.10.3.debian.tar.xz' libseccomp_2.4.1-0ubuntu0.19.10.3.debian.tar.xz 11164 SHA256:169a96e2234830b418544a450d7b5da8a5c075c95de2a2afc96e5cfc445a6943
-```
 
 ### `dpkg` source package: `libselinux=2.9-3`
 
@@ -1187,14 +1175,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=243-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_243-3ubuntu1.dsc' systemd_243-3ubuntu1.dsc 5122 SHA256:f5f3b8898bc5e217deb7065d400aed1d23768f7fa48ec74ecf69675d2466bca2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_243.orig.tar.gz' systemd_243.orig.tar.gz 8242522 SHA256:0611843c2407f8b125b1b7cb93533bdebd4ccf91c99dffa64ec61556a258c7d1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_243-3ubuntu1.debian.tar.xz' systemd_243-3ubuntu1.debian.tar.xz 213192 SHA256:a18903ebcc5943297f58576a4241c5bcc292b114a0bc2a0fb2e5bb8f8b4ad1ed
-```
 
 ### `dpkg` source package: `sysvinit=2.96-1ubuntu1`
 
