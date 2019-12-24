@@ -34,6 +34,7 @@
 -	[`kong:2.0.0rc1`](#kong200rc1)
 -	[`kong:2.0.0rc1-alpine`](#kong200rc1-alpine)
 -	[`kong:2.0.0rc1-centos`](#kong200rc1-centos)
+-	[`kong:2.0.0rc1-ubuntu`](#kong200rc1-ubuntu)
 -	[`kong:alpine`](#kongalpine)
 -	[`kong:centos`](#kongcentos)
 -	[`kong:latest`](#konglatest)
@@ -2339,6 +2340,10 @@ CMD ["kong" "docker-start"]
 **does not exist** (yet?)
 
 ## `kong:2.0.0rc1-centos`
+
+**does not exist** (yet?)
+
+## `kong:2.0.0rc1-ubuntu`
 
 **does not exist** (yet?)
 
