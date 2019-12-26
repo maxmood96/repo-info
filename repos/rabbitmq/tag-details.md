@@ -4335,19 +4335,39 @@ EXPOSE 15671 15672
 
 ## `rabbitmq:3.7.24-beta.1`
 
-**does not exist** (yet?)
+```console
+$ docker pull rabbitmq@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `rabbitmq:3.7.24-beta.1-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull rabbitmq@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `rabbitmq:3.7.24-beta.1-management`
 
-**does not exist** (yet?)
+```console
+$ docker pull rabbitmq@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `rabbitmq:3.7.24-beta.1-management-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull rabbitmq@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `rabbitmq:3.7-alpine`
 
@@ -13235,19 +13255,39 @@ EXPOSE 15671 15672
 
 ## `rabbitmq:3.8.3-beta.2`
 
-**does not exist** (yet?)
+```console
+$ docker pull rabbitmq@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `rabbitmq:3.8.3-beta.2-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull rabbitmq@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `rabbitmq:3.8.3-beta.2-management`
 
-**does not exist** (yet?)
+```console
+$ docker pull rabbitmq@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `rabbitmq:3.8.3-beta.2-management-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull rabbitmq@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `rabbitmq:3.8-alpine`
 
