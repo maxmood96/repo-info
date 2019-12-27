@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dca462abc5662593152b3ac965930daed0c63a69060d778d176bcec23700e88d`
-- Created: `2019-12-20T22:25:18.864133605Z`
-- Virtual Size: ~ 110.68 Mb  
+- Image ID: `sha256:377044776e632b9dcde6eb7207d55af3169a87199cc1afdcac239820f53214f4`
+- Created: `2019-12-26T23:52:37.006900627Z`
+- Virtual Size: ~ 113.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
@@ -260,16 +260,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1d-r0 description:
+libcrypto1.1-1.1.1d-r2 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1d-r0 webpage:
+libcrypto1.1-1.1.1d-r2 webpage:
 https://www.openssl.org
 
-libcrypto1.1-1.1.1d-r0 installed size:
-2736128
+libcrypto1.1-1.1.1d-r2 installed size:
+2740224
 
-libcrypto1.1-1.1.1d-r0 license:
+libcrypto1.1-1.1.1d-r2 license:
 OpenSSL
 
 ```
@@ -328,16 +328,16 @@ LGPL-2.0-or-later
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1d-r0 description:
+libssl1.1-1.1.1d-r2 description:
 SSL shared libraries
 
-libssl1.1-1.1.1d-r0 webpage:
+libssl1.1-1.1.1d-r2 webpage:
 https://www.openssl.org
 
-libssl1.1-1.1.1d-r0 installed size:
+libssl1.1-1.1.1d-r2 installed size:
 532480
 
-libssl1.1-1.1.1d-r0 license:
+libssl1.1-1.1.1d-r2 license:
 OpenSSL
 
 ```
