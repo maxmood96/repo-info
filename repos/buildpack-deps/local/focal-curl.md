@@ -301,14 +301,9 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.27+dfsg-1build3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27+dfsg-1build3.dsc' cyrus-sasl2_2.1.27+dfsg-1build3.dsc 3442 SHA256:6e467fd255e0a547c6de92592885e1838e2fbd751aa1c6dc513b5660b0beff99
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27+dfsg.orig.tar.xz' cyrus-sasl2_2.1.27+dfsg.orig.tar.xz 2058596 SHA256:108b0c691c423837264f05abb559ea76c3dfdd91246555e8abe87c129a6e37cd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27+dfsg-1build3.debian.tar.xz' cyrus-sasl2_2.1.27+dfsg-1build3.debian.tar.xz 99772 SHA256:41f456759be1d32dbbc6f56d93460785bda9b534897e3dddc350ebcd5cc9d534
-```
 
 ### `dpkg` source package: `dash=0.5.10.2-6`
 

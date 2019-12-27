@@ -2237,20 +2237,13 @@ Licenses: (parsed from: `/usr/share/doc/libedit2/copyright`)
 
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libedit=3.1-20191025-1
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20191025-1.dsc' libedit_3.1-20191025-1.dsc 2129 SHA256:b127497a2e3e71858a6128be1b40e714a963b4f88c99ad95755d96eb8233d9cc
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20191025.orig.tar.gz' libedit_3.1-20191025.orig.tar.gz 516599 SHA256:6dff036660d478bfaa14e407fc5de26d22da1087118c897b1a3ad2e90cb7bf39
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20191025-1.debian.tar.xz' libedit_3.1-20191025-1.debian.tar.xz 14092 SHA256:1ffdaf6c9ee5d3b542b680dd0ed927eac3542e43f7a4bc6efa3d4802bf723920
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libedit/3.1-20191025-1/
 
-- https://sources.debian.net/src/libedit/3.1-20191025-1/ (for browsing the source)
-- https://sources.debian.net/src/libedit/3.1-20191025-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libedit/3.1-20191025-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `liberror-perl=0.17028-1`
 
@@ -2455,20 +2448,13 @@ Licenses: (parsed from: `/usr/share/doc/libheif1/copyright`)
 - `LGPL-3+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.6.0-1
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.6.0-1.dsc' libheif_1.6.0-1.dsc 2239 SHA256:e8fd04ef500417ec21d635808a6b507a810386b1a40da5cb78438d3b2455cc06
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.6.0.orig.tar.gz' libheif_1.6.0.orig.tar.gz 1512262 SHA256:f00ad182cb21aa57218cb7ba222163376e74e3b7de1723fd789508a296c9e868
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.6.0-1.debian.tar.xz' libheif_1.6.0-1.debian.tar.xz 6392 SHA256:34517288ce42f3f5dbc05b21f8367f75e56f114621604cf07a3bf1e49c98a545
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libheif/1.6.0-1/
 
-- https://sources.debian.net/src/libheif/1.6.0-1/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.6.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.6.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.0.9-2`
 
