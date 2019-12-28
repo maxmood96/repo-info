@@ -1,17 +1,17 @@
-# `pypy:3.6-7.2.0-slim`
+# `pypy:3.6-7.3.0-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f7b5cefde88fe87203f51e6480246770d88f00ab44d5dbb4c18f8feb3de1f769`
-- Created: `2019-11-23T01:09:49.336880822Z`
-- Virtual Size: ~ 192.26 Mb  
+- Image ID: `sha256:dd941f1698768b297459de215234f0adc7d29450d40638ae147275cad6bd4979`
+- Created: `2019-12-28T14:20:39.35486331Z`
+- Virtual Size: ~ 200.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy3"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `PYPY_VERSION=7.2.0`
+  - `PYPY_VERSION=7.3.0`
   - `PYTHON_PIP_VERSION=19.3.1`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/ffe826207a010164265d9cc807978e3604d18ca0/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=b86f36cc4345ae87bfd4f10ef6b2dbfa7a872fbff70608a1e43944d283fd0eee`
@@ -1093,7 +1093,6 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libncurses5:amd64=6.0+20161126-1+deb9u2`
 - `libncursesw5:amd64=6.0+20161126-1+deb9u2`
 - `libtinfo5:amd64=6.0+20161126-1+deb9u2`
 - `ncurses-base=6.0+20161126-1+deb9u2`
