@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:56196bb146f32f35d16ef528ad03ced298e1af4e7e534cf8acf19a5a7a8ff180`
-- Created: `2019-11-23T23:31:48.279646151Z`
-- Virtual Size: ~ 200.80 Mb  
+- Image ID: `sha256:99d68dec6564e173eaa64a43ff220c1de3adb31304dc95fcbe48fd33cc32eac3`
+- Created: `2019-12-27T04:18:23.462238979Z`
+- Virtual Size: ~ 209.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `PYPY_VERSION=7.2.0`
+  - `PYPY_VERSION=7.3.0`
   - `PYTHON_PIP_VERSION=19.3.1`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/ffe826207a010164265d9cc807978e3604d18ca0/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=b86f36cc4345ae87bfd4f10ef6b2dbfa7a872fbff70608a1e43944d283fd0eee`
@@ -1094,7 +1094,6 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libncurses5:amd64=6.0+20161126-1+deb9u2`
 - `libncursesw5:amd64=6.0+20161126-1+deb9u2`
 - `libtinfo5:amd64=6.0+20161126-1+deb9u2`
 - `ncurses-base=6.0+20161126-1+deb9u2`
