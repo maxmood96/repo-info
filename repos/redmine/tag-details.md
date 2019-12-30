@@ -18,6 +18,12 @@
 -	[`redmine:4.0.6-passenger`](#redmine406-passenger)
 -	[`redmine:4.0-alpine`](#redmine40-alpine)
 -	[`redmine:4.0-passenger`](#redmine40-passenger)
+-	[`redmine:4.1`](#redmine41)
+-	[`redmine:4.1.0`](#redmine410)
+-	[`redmine:4.1.0-alpine`](#redmine410-alpine)
+-	[`redmine:4.1.0-passenger`](#redmine410-passenger)
+-	[`redmine:4.1-alpine`](#redmine41-alpine)
+-	[`redmine:4.1-passenger`](#redmine41-passenger)
 -	[`redmine:4-alpine`](#redmine4-alpine)
 -	[`redmine:4-passenger`](#redmine4-passenger)
 -	[`redmine:alpine`](#redminealpine)
@@ -7041,6 +7047,30 @@ CMD ["passenger" "start"]
 		Last Modified: Sun, 29 Dec 2019 10:19:11 GMT  
 		Size: 4.9 MB (4917847 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `redmine:4.1`
+
+**does not exist** (yet?)
+
+## `redmine:4.1.0`
+
+**does not exist** (yet?)
+
+## `redmine:4.1.0-alpine`
+
+**does not exist** (yet?)
+
+## `redmine:4.1.0-passenger`
+
+**does not exist** (yet?)
+
+## `redmine:4.1-alpine`
+
+**does not exist** (yet?)
+
+## `redmine:4.1-passenger`
+
+**does not exist** (yet?)
 
 ## `redmine:4-alpine`
 
