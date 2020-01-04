@@ -1,10 +1,10 @@
-# `julia:1.3.0-stretch`
+# `julia:1.3.1-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1cf682120441a5deb5669ac409de8fddc20fa48b1e1bed8caef4fcb68c5a43c7`
-- Created: `2019-12-28T13:54:59.741025336Z`
-- Virtual Size: ~ 425.12 Mb  
+- Image ID: `sha256:dc32377d28a4967899f2033678aade53114f6db9f95f11831184506c4364b6c8`
+- Created: `2020-01-03T01:24:23.519559739Z`
+- Virtual Size: ~ 426.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["julia"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JULIA_PATH=/usr/local/julia`
   - `JULIA_GPG=3673DF529D9049477F76B37566E3C7DC03D6E495`
-  - `JULIA_VERSION=1.3.0`
+  - `JULIA_VERSION=1.3.1`
 
 ## `dpkg` (`.deb`-based packages)
 
