@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4e0eb34a540e646b07474f4f77675967d3fe9d65a3be00868b4625912f538520`
-- Created: `2019-12-24T20:50:20.687136846Z`
-- Virtual Size: ~ 109.19 Mb  
+- Image ID: `sha256:52862a02e4e998212dbf2206b4ccbe69143423f8afc4e08906a891f0a4843fbd`
+- Created: `2020-01-03T01:23:08.056515471Z`
+- Virtual Size: ~ 112.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
@@ -115,6 +115,23 @@ apr-util-1.6.1-r6 installed size:
 204800
 
 apr-util-1.6.1-r6 license:
+Apache-2.0
+
+```
+
+### `apk` package: `apr-util-dbm_db`
+
+```console
+apr-util-dbm_db-1.6.1-r6 description:
+The Apache Portable Runtime Utility Library - Berkley DB driver
+
+apr-util-dbm_db-1.6.1-r6 webpage:
+http://apr.apache.org/
+
+apr-util-dbm_db-1.6.1-r6 installed size:
+32768
+
+apr-util-dbm_db-1.6.1-r6 license:
 Apache-2.0
 
 ```
@@ -428,16 +445,16 @@ BSD
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1d-r2 description:
+libcrypto1.1-1.1.1d-r3 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1d-r2 webpage:
+libcrypto1.1-1.1.1d-r3 webpage:
 https://www.openssl.org
 
-libcrypto1.1-1.1.1d-r2 installed size:
+libcrypto1.1-1.1.1d-r3 installed size:
 2748416
 
-libcrypto1.1-1.1.1d-r2 license:
+libcrypto1.1-1.1.1d-r3 license:
 OpenSSL
 
 ```
@@ -581,16 +598,16 @@ GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1d-r2 description:
+libssl1.1-1.1.1d-r3 description:
 SSL shared libraries
 
-libssl1.1-1.1.1d-r2 webpage:
+libssl1.1-1.1.1d-r3 webpage:
 https://www.openssl.org
 
-libssl1.1-1.1.1d-r2 installed size:
+libssl1.1-1.1.1d-r3 installed size:
 536576
 
-libssl1.1-1.1.1d-r2 license:
+libssl1.1-1.1.1d-r3 license:
 OpenSSL
 
 ```
@@ -887,16 +904,16 @@ custom
 ### `apk` package: `openssl-dev`
 
 ```console
-openssl-dev-1.1.1d-r2 description:
+openssl-dev-1.1.1d-r3 description:
 Toolkit for Transport Layer Security (TLS) (development files)
 
-openssl-dev-1.1.1d-r2 webpage:
+openssl-dev-1.1.1d-r3 webpage:
 https://www.openssl.org
 
-openssl-dev-1.1.1d-r2 installed size:
+openssl-dev-1.1.1d-r3 installed size:
 1634304
 
-openssl-dev-1.1.1d-r2 license:
+openssl-dev-1.1.1d-r3 license:
 OpenSSL
 
 ```
