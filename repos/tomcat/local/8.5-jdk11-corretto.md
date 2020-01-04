@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ba875cbbde3be9fd05232df645aa7ece28eadaa300c5c5b07b43b6f8add5c530`
-- Created: `2019-12-13T23:52:17.382463884Z`
-- Virtual Size: ~ 546.33 Mb  
+- Image ID: `sha256:80d00c4becb2c52a127feb12e308575a3353e0592a9dd9d98f86f754b4a82696`
+- Created: `2020-01-04T05:06:36.371254493Z`
+- Virtual Size: ~ 548.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -435,16 +435,16 @@ Enabling amzn2-core-source repository
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ad458334ba97a6861552534386dff84bed6c9ab6645904a4861f617f5d7d06cd//../../../../../blobstore/1579dc52bd90d64e68d663da4dfa4462afa9df1cfbef30d47b64add0dd12210e/keyutils-1.5.8-3.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.15.1-20.amzn2.0.1.x86_64`
+### `rpm` package: `krb5-libs-1.15.1-37.amzn2.2.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls krb5-libs-1.15.1-20.amzn2.0.1
+$ yumdownloader --quiet --source --urls krb5-libs-1.15.1-37.amzn2.2.1
 Enabling amzn2-core-source repository
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ad458334ba97a6861552534386dff84bed6c9ab6645904a4861f617f5d7d06cd//../../../../../blobstore/a5e0f86daa25170a0edfeabe844cce9dcc58eb4c8c0df18f26a6b612322105d3/krb5-1.15.1-20.amzn2.0.1.src.rpm
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ad458334ba97a6861552534386dff84bed6c9ab6645904a4861f617f5d7d06cd//../../../../../blobstore/e714e4857d1e4610af39bdfeca2ef2ba1ff8f9fb1b24f99a8e55ab7952b1f2d1/krb5-1.15.1-37.amzn2.2.1.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.2.51-14.amzn2.x86_64`
