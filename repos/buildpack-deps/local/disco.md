@@ -2699,14 +2699,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.0.0-37.40
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.0.0-37.40.dsc' linux_5.0.0-37.40.dsc 7290 SHA256:8fcf8639f9a879ad169378be0f1367918cd86ba8d4bee5e5898d2391c1398919
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.0.0.orig.tar.gz' linux_5.0.0.orig.tar.gz 162593848 SHA256:d9dcf8bafdd5778274c3f9d2634500d4cc186f3ba80fc71ea1a1a100aa65ad6f
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.0.0-37.40.diff.gz' linux_5.0.0-37.40.diff.gz 6104306 SHA256:cf3162fb77cbc84d1abf260c63b19b17d26b37af9f2370628aac0e09a694c406
-```
 
 ### `dpkg` source package: `lsb=10.2019031300ubuntu1`
 

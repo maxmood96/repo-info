@@ -975,21 +975,13 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 - `MIT-Old-Style-with-legal-disclaimer-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris file=1:5.37-6
-'http://deb.debian.org/debian/pool/main/f/file/file_5.37-6.dsc' file_5.37-6.dsc 2214 SHA256:9e549c158d657c6345f5a33d4c151a7c4a383953c2ea9c74171e10b942dddd69
-'http://deb.debian.org/debian/pool/main/f/file/file_5.37.orig.tar.gz' file_5.37.orig.tar.gz 887682 SHA256:e9c13967f7dd339a3c241b7710ba093560b9a33013491318e88e6b8b57bae07f
-'http://deb.debian.org/debian/pool/main/f/file/file_5.37.orig.tar.gz.asc' file_5.37.orig.tar.gz.asc 169 SHA256:f73642d84908665dad226f247ae223e6bf52da8b2ca20ca88bd4e4966eef6bc7
-'http://deb.debian.org/debian/pool/main/f/file/file_5.37-6.debian.tar.xz' file_5.37-6.debian.tar.xz 37648 SHA256:a20a1af3ece8b33c6da832d1dd04e3ff8b79a7d4833311b335b3f2c6fa09bd5a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/file/1:5.37-6/
 
-- https://sources.debian.net/src/file/1:5.37-6/ (for browsing the source)
-- https://sources.debian.net/src/file/1:5.37-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/file/1:5.37-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.7.0-1`
 
@@ -5256,20 +5248,13 @@ Licenses: (parsed from: `/usr/share/doc/libutf8proc2/copyright`)
 - `Expat`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris utf8proc=2.4.0-1
-'http://deb.debian.org/debian/pool/main/u/utf8proc/utf8proc_2.4.0-1.dsc' utf8proc_2.4.0-1.dsc 2129 SHA256:b214c9cefb3acbd4011c2ce266e3640952e97e69acceca28f4e3226b7087d809
-'http://deb.debian.org/debian/pool/main/u/utf8proc/utf8proc_2.4.0.orig.tar.gz' utf8proc_2.4.0.orig.tar.gz 154936 SHA256:b2e5d547c1d94762a6d03a7e05cea46092aab68636460ff8648f1295e2cdfbd7
-'http://deb.debian.org/debian/pool/main/u/utf8proc/utf8proc_2.4.0-1.debian.tar.xz' utf8proc_2.4.0-1.debian.tar.xz 4508 SHA256:44ff1481d4156be9d843ac97496220fa495099d726908a982dbec43b056d7d20
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/utf8proc/2.4.0-1/
 
-- https://sources.debian.net/src/utf8proc/2.4.0-1/ (for browsing the source)
-- https://sources.debian.net/src/utf8proc/2.4.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/utf8proc/2.4.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.34-0.1`
 

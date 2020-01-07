@@ -969,14 +969,9 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsemanage=2.9-3build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_2.9-3build1.dsc' libsemanage_2.9-3build1.dsc 2675 SHA256:41591809dbc6e9fc69933d3a224325be2807dc09901bcdecd703f4b084225239
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_2.9.orig.tar.gz' libsemanage_2.9.orig.tar.gz 157690 SHA256:2576349d344492e73b468059767268dec1dabd8c35f3c7222c3ec2448737bc1c
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_2.9-3build1.debian.tar.xz' libsemanage_2.9-3build1.debian.tar.xz 17276 SHA256:fdd05d88b07e0d3afaddb753f15740471f252f98c6418d9fce700a3df46f065e
-```
 
 ### `dpkg` source package: `libsepol=2.9-2`
 

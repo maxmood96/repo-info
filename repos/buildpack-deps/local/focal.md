@@ -313,14 +313,13 @@ Licenses: (parsed from: `/usr/share/doc/libbrotli1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris brotli=1.0.7-5
-'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.0.7-5.dsc' brotli_1.0.7-5.dsc 2491 SHA256:25ff0a01848020e00ecff028df3ab25a5e651670932cc55cec2c93775d6f63da
-'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.0.7.orig.tar.gz' brotli_1.0.7.orig.tar.gz 23827908 SHA256:4c61bfb0faca87219ea587326c467b95acb25555b53d1a421ffa3c8a9296ee2c
-'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.0.7-5.debian.tar.xz' brotli_1.0.7-5.debian.tar.xz 4456 SHA256:c1c2475f1acf0b15f75f870120d30c220d9af149cb44d2422f198cf6580648ae
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/brotli/1.0.7-5/
+
 
 ### `dpkg` source package: `bzip2=1.0.8-2`
 
@@ -417,13 +416,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.250ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.250ubuntu1.dsc' cdebconf_0.250ubuntu1.dsc 2858 SHA256:bed77f0e55d2fa9212d108c6be741ff2e19e39e77ae9b3c5d3215b36fe9fed1a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.250ubuntu1.tar.xz' cdebconf_0.250ubuntu1.tar.xz 276512 SHA256:00dfbfc507ad5761de0a92580fe7838cce191e667460bfe5cc99cb430fef8626
-```
 
 ### `dpkg` source package: `configobj=5.0.6-3`
 
@@ -767,15 +762,13 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 - `MIT-Old-Style-with-legal-disclaimer-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris file=1:5.37-6
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.37-6.dsc' file_5.37-6.dsc 2214 SHA256:9e549c158d657c6345f5a33d4c151a7c4a383953c2ea9c74171e10b942dddd69
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.37.orig.tar.gz' file_5.37.orig.tar.gz 887682 SHA256:e9c13967f7dd339a3c241b7710ba093560b9a33013491318e88e6b8b57bae07f
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.37.orig.tar.gz.asc' file_5.37.orig.tar.gz.asc 169 SHA256:f73642d84908665dad226f247ae223e6bf52da8b2ca20ca88bd4e4966eef6bc7
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.37-6.debian.tar.xz' file_5.37-6.debian.tar.xz 37648 SHA256:a20a1af3ece8b33c6da832d1dd04e3ff8b79a7d4833311b335b3f2c6fa09bd5a
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/file/1:5.37-6/
+
 
 ### `dpkg` source package: `findutils=4.6.0+git+20190209-2ubuntu1`
 
@@ -1327,14 +1320,9 @@ Licenses: (parsed from: `/usr/share/doc/libasn1-8-heimdal/copyright`, `/usr/shar
 - `custom`
 - `none`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris heimdal=7.5.0+dfsg-3build1
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.5.0+dfsg-3build1.dsc' heimdal_7.5.0+dfsg-3build1.dsc 3628 SHA256:7e971aad47d4518dc4d487c5d9508c3711949509e540d2a84fd8ede16530e67f
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.5.0+dfsg.orig.tar.gz' heimdal_7.5.0+dfsg.orig.tar.gz 8955005 SHA256:489119b7a1a900b88163765654dc59cba9a321b078fafc76629e2b85ef140867
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.5.0+dfsg-3build1.debian.tar.xz' heimdal_7.5.0+dfsg-3build1.debian.tar.xz 461560 SHA256:f5e7d09ab71cdc18ce2776bc1c047681d6daacdc55cb637cb9520bc11f528324
-```
 
 ### `dpkg` source package: `hicolor-icon-theme=0.17-2`
 
@@ -2669,14 +2657,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.3.0-24.26
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.3.0-24.26.dsc' linux_5.3.0-24.26.dsc 8323 SHA256:9a0f40c9239a8146d0530686c16dfa34c881ad05da3ae886554bb0ed068fdbc7
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.3.0.orig.tar.gz' linux_5.3.0.orig.tar.gz 168029263 SHA256:44edffd835819ac7156f2f4bb7512d25f8cf6eab098b09c9ef0c3c06a01148ef
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.3.0-24.26.diff.gz' linux_5.3.0-24.26.diff.gz 3057437 SHA256:86849df3d725b3977043f4b57c1fbb7284efa4a7dfd40b37406cd60417b668fa
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu1`
 
@@ -3960,14 +3943,13 @@ Licenses: (parsed from: `/usr/share/doc/libutf8proc2/copyright`)
 - `Expat`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris utf8proc=2.4.0-1
-'http://archive.ubuntu.com/ubuntu/pool/universe/u/utf8proc/utf8proc_2.4.0-1.dsc' utf8proc_2.4.0-1.dsc 2129 SHA256:b214c9cefb3acbd4011c2ce266e3640952e97e69acceca28f4e3226b7087d809
-'http://archive.ubuntu.com/ubuntu/pool/universe/u/utf8proc/utf8proc_2.4.0.orig.tar.gz' utf8proc_2.4.0.orig.tar.gz 154936 SHA256:b2e5d547c1d94762a6d03a7e05cea46092aab68636460ff8648f1295e2cdfbd7
-'http://archive.ubuntu.com/ubuntu/pool/universe/u/utf8proc/utf8proc_2.4.0-1.debian.tar.xz' utf8proc_2.4.0-1.debian.tar.xz 4508 SHA256:44ff1481d4156be9d843ac97496220fa495099d726908a982dbec43b056d7d20
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/utf8proc/2.4.0-1/
+
 
 ### `dpkg` source package: `util-linux=2.34-0.1ubuntu2`
 
