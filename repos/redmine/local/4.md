@@ -2,20 +2,19 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5eb3ccf68fca5937641b161fa4de4bbc2173680aff170e799eb3544766f544fd`
-- Created: `2019-12-30T23:34:06.109574502Z`
-- Virtual Size: ~ 504.87 Mb  
+- Image ID: `sha256:1afbfb924539f2ae972502b921d03bbf0cb6bd0e1836229082890799b893c30d`
+- Created: `2020-01-07T02:44:51.110518795Z`
+- Virtual Size: ~ 504.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["rails","server","-b","0.0.0.0"]`
 - Environment:
-  - `PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUBY_MAJOR=2.6`
   - `RUBY_VERSION=2.6.5`
   - `RUBY_DOWNLOAD_SHA256=d5d6da717fd48524596f9b78ac5a2eeb9691753da5c06923a6c31190abe01a62`
   - `GEM_HOME=/usr/local/bundle`
-  - `BUNDLE_PATH=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
   - `RAILS_ENV=production`

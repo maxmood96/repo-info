@@ -2,20 +2,19 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5c694f4a650c98037c231fb541bba077c4ac025ce4e958ec10d6cef8a92e273e`
-- Created: `2019-12-30T23:36:13.926452787Z`
-- Virtual Size: ~ 369.12 Mb  
+- Image ID: `sha256:bf81687f1858b7e3e68cb96429e13784daab9529bcdd17245a342687cf999877`
+- Created: `2020-01-07T02:47:20.759471547Z`
+- Virtual Size: ~ 362.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["rails","server","-b","0.0.0.0"]`
 - Environment:
-  - `PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUBY_MAJOR=2.6`
   - `RUBY_VERSION=2.6.5`
   - `RUBY_DOWNLOAD_SHA256=d5d6da717fd48524596f9b78ac5a2eeb9691753da5c06923a6c31190abe01a62`
   - `GEM_HOME=/usr/local/bundle`
-  - `BUNDLE_PATH=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
   - `RAILS_ENV=production`
@@ -368,16 +367,16 @@ FTL GPL-2.0-or-later
 ### `apk` package: `fribidi`
 
 ```console
-fribidi-1.0.5-r1 description:
+fribidi-1.0.5-r2 description:
 Free Implementation of the Unicode Bidirectional Algorithm
 
-fribidi-1.0.5-r1 webpage:
+fribidi-1.0.5-r2 webpage:
 https://github.com/fribidi/fribidi
 
-fribidi-1.0.5-r1 installed size:
+fribidi-1.0.5-r2 installed size:
 159744
 
-fribidi-1.0.5-r1 license:
+fribidi-1.0.5-r2 license:
 LGPL-2.0-or-later
 
 ```
@@ -419,16 +418,16 @@ LGPL-2.0-or-later
 ### `apk` package: `ghostscript`
 
 ```console
-ghostscript-9.27-r4 description:
+ghostscript-9.27-r5 description:
 An interpreter for the PostScript language and for PDF
 
-ghostscript-9.27-r4 webpage:
+ghostscript-9.27-r5 webpage:
 https://ghostscript.com/
 
-ghostscript-9.27-r4 installed size:
-50577408
+ghostscript-9.27-r5 installed size:
+50642944
 
-ghostscript-9.27-r4 license:
+ghostscript-9.27-r5 license:
 AGPL-3.0-or-later
 
 ```
@@ -453,16 +452,16 @@ GPL
 ### `apk` package: `git`
 
 ```console
-git-2.22.0-r0 description:
+git-2.22.2-r0 description:
 Distributed version control system
 
-git-2.22.0-r0 webpage:
+git-2.22.2-r0 webpage:
 https://www.git-scm.com/
 
-git-2.22.0-r0 installed size:
-13901824
+git-2.22.2-r0 installed size:
+13930496
 
-git-2.22.0-r0 license:
+git-2.22.2-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -572,16 +571,16 @@ MIT
 ### `apk` package: `imagemagick6`
 
 ```console
-imagemagick6-6.9.10.68-r0 description:
+imagemagick6-6.9.10.69-r0 description:
 A collection of tools and libraries for many image formats (legacy version 6)
 
-imagemagick6-6.9.10.68-r0 webpage:
+imagemagick6-6.9.10.69-r0 webpage:
 https://www.imagemagick.org/
 
-imagemagick6-6.9.10.68-r0 installed size:
+imagemagick6-6.9.10.69-r0 installed size:
 196608
 
-imagemagick6-6.9.10.68-r0 license:
+imagemagick6-6.9.10.69-r0 license:
 Apache-2.0
 
 ```
@@ -878,16 +877,16 @@ LGPL-2.1+
 ### `apk` package: `libjpeg-turbo`
 
 ```console
-libjpeg-turbo-2.0.2-r0 description:
+libjpeg-turbo-2.0.3-r0 description:
 Accelerated baseline JPEG compression and decompression library
 
-libjpeg-turbo-2.0.2-r0 webpage:
+libjpeg-turbo-2.0.3-r0 webpage:
 https://libjpeg-turbo.org/
 
-libjpeg-turbo-2.0.2-r0 installed size:
+libjpeg-turbo-2.0.3-r0 installed size:
 1343488
 
-libjpeg-turbo-2.0.2-r0 license:
+libjpeg-turbo-2.0.3-r0 license:
 BSD-3-Clause IJG Zlib
 
 ```
@@ -1014,16 +1013,16 @@ LGPL-2.0+
 ### `apk` package: `libsasl`
 
 ```console
-libsasl-2.1.27-r3 description:
+libsasl-2.1.27-r4 description:
 Cyrus Simple Authentication and Security Layer (SASL) library
 
-libsasl-2.1.27-r3 webpage:
+libsasl-2.1.27-r4 webpage:
 https://cyrusimap.org/
 
-libsasl-2.1.27-r3 installed size:
+libsasl-2.1.27-r4 installed size:
 180224
 
-libsasl-2.1.27-r3 license:
+libsasl-2.1.27-r4 license:
 custom
 
 ```
@@ -1235,16 +1234,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.9.9-r2 description:
+libxml2-2.9.9-r3 description:
 XML parsing library, version 2
 
-libxml2-2.9.9-r2 webpage:
+libxml2-2.9.9-r3 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.9.9-r2 installed size:
+libxml2-2.9.9-r3 installed size:
 1216512
 
-libxml2-2.9.9-r2 license:
+libxml2-2.9.9-r3 license:
 MIT
 
 ```
@@ -1779,16 +1778,16 @@ Apache-2.0 BSD
 ### `apk` package: `tiff`
 
 ```console
-tiff-4.0.10-r1 description:
+tiff-4.0.10-r3 description:
 Provides support for the Tag Image File Format or TIFF
 
-tiff-4.0.10-r1 webpage:
+tiff-4.0.10-r3 webpage:
 http://www.libtiff.org
 
-tiff-4.0.10-r1 installed size:
+tiff-4.0.10-r3 installed size:
 442368
 
-tiff-4.0.10-r1 license:
+tiff-4.0.10-r3 license:
 libtiff
 
 ```
