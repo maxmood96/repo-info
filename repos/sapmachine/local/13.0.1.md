@@ -666,15 +666,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.18-1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18-1ubuntu1.1.dsc' gnutls28_3.5.18-1ubuntu1.1.dsc 3434 SHA256:67a024bd669c6388d38f350a08179fc43eca7fcaeb2664bf546597244fcd09b3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18.orig.tar.xz' gnutls28_3.5.18.orig.tar.xz 7261980 SHA256:ae2248d9e78747cf9c469dde81ff8f90b56838b707a0637f3f7d4eee90e80234
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18.orig.tar.xz.asc' gnutls28_3.5.18.orig.tar.xz.asc 534 SHA256:50bb942469be0639bbab925de630fb921aa8cac5f40072cb1c2cf1fb7ae7977b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18-1ubuntu1.1.debian.tar.xz' gnutls28_3.5.18-1ubuntu1.1.debian.tar.xz 71784 SHA256:75c26de0d6ff4db9853d495d5e04146891018631d65adfbdbe4ed1d9ce9a63ff
-```
 
 ### `dpkg` source package: `grep=3.1-2build1`
 
@@ -1497,14 +1491,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.35-2ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35-2ubuntu2.6.dsc' nss_3.35-2ubuntu2.6.dsc 2331 SHA256:e1634eb8e3dea8b7d4f2d6e5b8989dd248b1ecd2715c3c3b698ec485c42c951b
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35.orig.tar.gz' nss_3.35.orig.tar.gz 9620041 SHA256:f4127de09bede39f5fd0f789d33c3504c5d261e69ea03022d46b319b3e32f6fa
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35-2ubuntu2.6.debian.tar.xz' nss_3.35-2ubuntu2.6.debian.tar.xz 43964 SHA256:83e03f40182645dd9e12319155c943504858d7502f0f981596fb9ab34b5ef352
-```
 
 ### `dpkg` source package: `openldap=2.4.45+dfsg-1ubuntu1.4`
 

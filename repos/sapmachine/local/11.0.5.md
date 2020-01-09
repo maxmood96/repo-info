@@ -1497,14 +1497,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.35-2ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35-2ubuntu2.6.dsc' nss_3.35-2ubuntu2.6.dsc 2331 SHA256:e1634eb8e3dea8b7d4f2d6e5b8989dd248b1ecd2715c3c3b698ec485c42c951b
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35.orig.tar.gz' nss_3.35.orig.tar.gz 9620041 SHA256:f4127de09bede39f5fd0f789d33c3504c5d261e69ea03022d46b319b3e32f6fa
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35-2ubuntu2.6.debian.tar.xz' nss_3.35-2ubuntu2.6.debian.tar.xz 43964 SHA256:83e03f40182645dd9e12319155c943504858d7502f0f981596fb9ab34b5ef352
-```
 
 ### `dpkg` source package: `openldap=2.4.45+dfsg-1ubuntu1.4`
 
