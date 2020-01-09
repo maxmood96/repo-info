@@ -5191,14 +5191,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.15.0-72.81
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-72.81.dsc' linux_4.15.0-72.81.dsc 7304 SHA256:9e788a6a4a4fe7e0282e053cc36666194e70b8c54804ba19ded38ebfd42352d7
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-72.81.diff.gz' linux_4.15.0-72.81.diff.gz 8678130 SHA256:3823d6377e28c15c046acda73ef177907b7e557877a62c6b64172a665421622c
-```
 
 ### `dpkg` source package: `llvm-toolchain-8=1:8-3~ubuntu18.04.1`
 
@@ -5820,14 +5815,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.35-2ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35-2ubuntu2.6.dsc' nss_3.35-2ubuntu2.6.dsc 2331 SHA256:e1634eb8e3dea8b7d4f2d6e5b8989dd248b1ecd2715c3c3b698ec485c42c951b
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35.orig.tar.gz' nss_3.35.orig.tar.gz 9620041 SHA256:f4127de09bede39f5fd0f789d33c3504c5d261e69ea03022d46b319b3e32f6fa
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35-2ubuntu2.6.debian.tar.xz' nss_3.35-2ubuntu2.6.debian.tar.xz 43964 SHA256:83e03f40182645dd9e12319155c943504858d7502f0f981596fb9ab34b5ef352
-```
 
 ### `dpkg` source package: `numactl=2.0.11-2.1ubuntu0.1`
 
