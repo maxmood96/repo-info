@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ebe94530ce97093072c078f2b734fba001d2425d8cd0dc6de0e2874907917a53`
-- Created: `2019-12-03T23:43:45.884077843Z`
+- Image ID: `sha256:7627a7481044a21cd54ea6e2a21c8cb2eaa487d177e463809fbfd17a0df8f517`
+- Created: `2020-01-07T23:33:40.295723861Z`
 - Virtual Size: ~ 176.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `build-date=20191203`
+  - `build-date=20200107`
   - `name=SL7 Base Image`
   - `vendor=Scientific Linux`
 
@@ -1137,18 +1137,11 @@ Enabling repos-source repository
 http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/nspr-4.21.0-1.el7.src.rpm
 ```
 
-### `rpm` package: `nss-3.44.0-4.el7.x86_64`
+### `rpm` package: `nss-3.44.0-7.el7_7.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls nss-3.44.0-4.el7
-Enabling sl-source repository
-Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/nss-3.44.0-4.el7.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `nss-pem-1.0.3-7.el7.x86_64`
 
@@ -1163,70 +1156,35 @@ Enabling repos-source repository
 http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/nss-pem-1.0.3-7.el7.src.rpm
 ```
 
-### `rpm` package: `nss-softokn-3.44.0-5.el7.x86_64`
+### `rpm` package: `nss-softokn-3.44.0-8.el7_7.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-Source:
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-```console
-$ yumdownloader --quiet --source --urls nss-softokn-3.44.0-5.el7
-Enabling sl-source repository
-Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/nss-softokn-3.44.0-5.el7.src.rpm
-```
-
-### `rpm` package: `nss-softokn-freebl-3.44.0-5.el7.x86_64`
+### `rpm` package: `nss-softokn-freebl-3.44.0-8.el7_7.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-Source:
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-```console
-$ yumdownloader --quiet --source --urls nss-softokn-freebl-3.44.0-5.el7
-Enabling sl-source repository
-Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/nss-softokn-3.44.0-5.el7.src.rpm
-```
-
-### `rpm` package: `nss-sysinit-3.44.0-4.el7.x86_64`
+### `rpm` package: `nss-sysinit-3.44.0-7.el7_7.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-Source:
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-```console
-$ yumdownloader --quiet --source --urls nss-sysinit-3.44.0-4.el7
-Enabling sl-source repository
-Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/nss-3.44.0-4.el7.src.rpm
-```
-
-### `rpm` package: `nss-tools-3.44.0-4.el7.x86_64`
+### `rpm` package: `nss-tools-3.44.0-7.el7_7.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-Source:
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-```console
-$ yumdownloader --quiet --source --urls nss-tools-3.44.0-4.el7
-Enabling sl-source repository
-Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/nss-3.44.0-4.el7.src.rpm
-```
-
-### `rpm` package: `nss-util-3.44.0-3.el7.x86_64`
+### `rpm` package: `nss-util-3.44.0-4.el7_7.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls nss-util-3.44.0-3.el7
-Enabling sl-source repository
-Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/nss-util-3.44.0-3.el7.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `openldap-2.4.44-21.el7_6.x86_64`
 
