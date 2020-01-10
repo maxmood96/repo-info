@@ -1,16 +1,16 @@
-# `nginx:1.17.6-alpine`
+# `nginx:1.17.7-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a624d888d69ffdc185ed3b9c9c0645e8eaaac843ce59e89f1fbe45b0581e4ef6`
-- Created: `2019-11-20T01:16:50.939316846Z`
+- Image ID: `sha256:36189e6707f43e39466f047ff9564fa55e217821aa7e2326b3f3c32166ca63b0`
+- Created: `2020-01-09T22:20:56.334367375Z`
 - Virtual Size: ~ 21.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.17.6`
+  - `NGINX_VERSION=1.17.7`
   - `NJS_VERSION=0.3.7`
   - `PKG_RELEASE=1`
 - Labels:
@@ -276,16 +276,16 @@ LGPL-2.1+
 ### `apk` package: `libjpeg-turbo`
 
 ```console
-libjpeg-turbo-2.0.3-r0 description:
+libjpeg-turbo-2.0.4-r0 description:
 Accelerated baseline JPEG compression and decompression library
 
-libjpeg-turbo-2.0.3-r0 webpage:
+libjpeg-turbo-2.0.4-r0 webpage:
 https://libjpeg-turbo.org/
 
-libjpeg-turbo-2.0.3-r0 installed size:
+libjpeg-turbo-2.0.4-r0 installed size:
 1343488
 
-libjpeg-turbo-2.0.3-r0 license:
+libjpeg-turbo-2.0.4-r0 license:
 BSD-3-Clause IJG Zlib
 
 ```
@@ -361,16 +361,16 @@ BSD-3-Clause
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.9.9-r2 description:
+libxml2-2.9.9-r3 description:
 XML parsing library, version 2
 
-libxml2-2.9.9-r2 webpage:
+libxml2-2.9.9-r3 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.9.9-r2 installed size:
+libxml2-2.9.9-r3 installed size:
 1216512
 
-libxml2-2.9.9-r2 license:
+libxml2-2.9.9-r3 license:
 MIT
 
 ```
@@ -378,16 +378,16 @@ MIT
 ### `apk` package: `libxslt`
 
 ```console
-libxslt-1.1.33-r2 description:
+libxslt-1.1.33-r3 description:
 XML stylesheet transformation library
 
-libxslt-1.1.33-r2 webpage:
+libxslt-1.1.33-r3 webpage:
 http://xmlsoft.org/XSLT/
 
-libxslt-1.1.33-r2 installed size:
+libxslt-1.1.33-r3 installed size:
 368640
 
-libxslt-1.1.33-r2 license:
+libxslt-1.1.33-r3 license:
 custom
 
 ```
@@ -480,16 +480,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.17.6-r1 description:
+nginx-1.17.7-r1 description:
 High performance web server
 
-nginx-1.17.6-r1 webpage:
+nginx-1.17.7-r1 webpage:
 http://nginx.org/
 
-nginx-1.17.6-r1 installed size:
+nginx-1.17.7-r1 installed size:
 2555904
 
-nginx-1.17.6-r1 license:
+nginx-1.17.7-r1 license:
 2-clause BSD-like license
 
 ```
@@ -497,16 +497,16 @@ nginx-1.17.6-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.17.6-r1 description:
+nginx-module-geoip-1.17.7-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.17.6-r1 webpage:
+nginx-module-geoip-1.17.7-r1 webpage:
 http://nginx.org/
 
-nginx-module-geoip-1.17.6-r1 installed size:
+nginx-module-geoip-1.17.7-r1 installed size:
 118784
 
-nginx-module-geoip-1.17.6-r1 license:
+nginx-module-geoip-1.17.7-r1 license:
 2-clause BSD-like license
 
 ```
@@ -514,16 +514,16 @@ nginx-module-geoip-1.17.6-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.17.6-r1 description:
+nginx-module-image-filter-1.17.7-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.17.6-r1 webpage:
+nginx-module-image-filter-1.17.7-r1 webpage:
 http://nginx.org/
 
-nginx-module-image-filter-1.17.6-r1 installed size:
+nginx-module-image-filter-1.17.7-r1 installed size:
 90112
 
-nginx-module-image-filter-1.17.6-r1 license:
+nginx-module-image-filter-1.17.7-r1 license:
 2-clause BSD-like license
 
 ```
@@ -531,16 +531,16 @@ nginx-module-image-filter-1.17.6-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.17.6.0.3.7-r1 description:
+nginx-module-njs-1.17.7.0.3.7-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.17.6.0.3.7-r1 webpage:
+nginx-module-njs-1.17.7.0.3.7-r1 webpage:
 http://nginx.org/
 
-nginx-module-njs-1.17.6.0.3.7-r1 installed size:
+nginx-module-njs-1.17.7.0.3.7-r1 installed size:
 2347008
 
-nginx-module-njs-1.17.6.0.3.7-r1 license:
+nginx-module-njs-1.17.7.0.3.7-r1 license:
 2-clause BSD-like license
 
 ```
@@ -548,16 +548,16 @@ nginx-module-njs-1.17.6.0.3.7-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.17.6-r1 description:
+nginx-module-xslt-1.17.7-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.17.6-r1 webpage:
+nginx-module-xslt-1.17.7-r1 webpage:
 http://nginx.org/
 
-nginx-module-xslt-1.17.6-r1 installed size:
+nginx-module-xslt-1.17.7-r1 installed size:
 86016
 
-nginx-module-xslt-1.17.6-r1 license:
+nginx-module-xslt-1.17.7-r1 license:
 2-clause BSD-like license
 
 ```
