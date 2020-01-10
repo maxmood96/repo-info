@@ -197,13 +197,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.250ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.250ubuntu1.dsc' cdebconf_0.250ubuntu1.dsc 2858 SHA256:bed77f0e55d2fa9212d108c6be741ff2e19e39e77ae9b3c5d3215b36fe9fed1a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.250ubuntu1.tar.xz' cdebconf_0.250ubuntu1.tar.xz 276512 SHA256:00dfbfc507ad5761de0a92580fe7838cce191e667460bfe5cc99cb430fef8626
-```
 
 ### `dpkg` source package: `coreutils=8.30-3ubuntu2`
 
