@@ -1,18 +1,18 @@
-# `kong:1.4.2-alpine`
+# `kong:1.4.3-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:75cf2d6ba0b072e73094e8a1762d102655481daa1b32fd8a6347962f8e4a11f7`
-- Created: `2019-12-11T22:19:59.195133518Z`
-- Virtual Size: ~ 128.57 Mb  
+- Image ID: `sha256:047d4996f6afd73e35643ce1250fe4aa6504fa1e8e190942a0f154075af6420f`
+- Created: `2020-01-14T22:20:11.366122454Z`
+- Virtual Size: ~ 128.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["kong","docker-start"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `KONG_VERSION=1.4.2`
-  - `KONG_SHA256=edf917d956d697abb70f5f3f630d420ee699c6428bf953221cd8548eda490dcf`
+  - `KONG_VERSION=1.4.3`
+  - `KONG_SHA256=419d4e3d19f2d5c35ec6367e736b0d5509be4a7577d203008514a90f8dd5fdf1`
 - Labels:
   - `maintainer=Kong Core Team <team-core@konghq.com>`
 
@@ -259,16 +259,16 @@ MIT BSD GPL2+
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1d-r0 description:
+openssl-1.1.1d-r2 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-1.1.1d-r0 webpage:
+openssl-1.1.1d-r2 webpage:
 https://www.openssl.org
 
-openssl-1.1.1d-r0 installed size:
+openssl-1.1.1d-r2 installed size:
 679936
 
-openssl-1.1.1d-r0 license:
+openssl-1.1.1d-r2 license:
 OpenSSL
 
 ```

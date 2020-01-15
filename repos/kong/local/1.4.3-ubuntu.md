@@ -1,17 +1,17 @@
-# `kong:1.4.2-ubuntu`
+# `kong:1.4.3-ubuntu`
 
 ## Docker Metadata
 
-- Image ID: `sha256:511c55c319378c081f734f2cd21aa0d6e116e8c791f1ea8f81f5bbcca38a8ee5`
-- Created: `2019-12-19T07:52:19.426368897Z`
-- Virtual Size: ~ 246.88 Mb  
+- Image ID: `sha256:081d6e7431e5276cb4f9ca276daba2bf2b5c880e8a568dd6b48fef8be7e0098c`
+- Created: `2020-01-14T22:20:43.258859272Z`
+- Virtual Size: ~ 246.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["kong","docker-start"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `KONG_VERSION=1.4.2`
+  - `KONG_VERSION=1.4.3`
 - Labels:
   - `maintainer=Kong Core Team <team-core@konghq.com>`
 
@@ -658,11 +658,11 @@ $ apt-get source -qq --print-uris kmod=22-1ubuntu5.2
 'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.2.debian.tar.xz' kmod_22-1ubuntu5.2.debian.tar.xz 14524 SHA256:f8dd1134e6cff72a458e66d2e86ef413be07a29cc66c87d02544bb5c2037bfb7
 ```
 
-### `dpkg` source package: `kong=1.4.2`
+### `dpkg` source package: `kong=1.4.3`
 
 Binary Packages:
 
-- `kong=1.4.2`
+- `kong=1.4.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -705,14 +705,9 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.6.5-2ubuntu0.5
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.5.dsc' libgcrypt20_1.6.5-2ubuntu0.5.dsc 2653 SHA256:50681c783bf4da254f6fd45b674fea02ac90304cbdd94dbf498d46c2ace937f9
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5.orig.tar.bz2' libgcrypt20_1.6.5.orig.tar.bz2 2549601 SHA256:f49ebc5842d455ae7019def33eb5a014a0f07a2a8353dc3aa50a76fd1dafa924
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.5.debian.tar.xz' libgcrypt20_1.6.5-2ubuntu0.5.debian.tar.xz 37732 SHA256:f7d5ac6d8014f0d40c49cb32cbded6655d410a417512d4bde977a5a5175a987c
-```
 
 ### `dpkg` source package: `libgpg-error=1.21-2ubuntu1`
 
