@@ -1,7 +1,7 @@
 ## `rethinkdb:latest`
 
 ```console
-$ docker pull rethinkdb@sha256:aaf31e57f72e55df235da40676b4cf06abefa679719e35c7d93c0db986ba9608
+$ docker pull rethinkdb@sha256:cd9c7d91bc7b28e9704184e9994ef1f5ba175f0f5b1383bfed677c7167b0e480
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,75 +11,75 @@ $ docker pull rethinkdb@sha256:aaf31e57f72e55df235da40676b4cf06abefa679719e35c7d
 ### `rethinkdb:latest` - linux; amd64
 
 ```console
-$ docker pull rethinkdb@sha256:c528395667f46b8ede88de36cf8d476577e67ff2ed9170ff102625aafd0f69c0
+$ docker pull rethinkdb@sha256:8286c7c79be95b275233e799b940b6d47373e76a22320d842e84b27c95e48a01
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.0 MB (50977656 bytes)**  
+-	Total Size: **51.0 MB (50978621 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:705ba8188cf08d4efb4c27c297e2a2664afd9d0fc167532c9253364787327586`
+-	Image ID: `sha256:3aded4fb3124ee843dafd9c88fc677c11ce1a32a00969ea01f2ed6de90e2eee9`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Thu, 19 Dec 2019 04:21:25 GMT
-ADD file:53f100793e6c0adfca99977a42bb65cb7971c26e4d6e4499d1c30a1f51f06854 in / 
-# Thu, 19 Dec 2019 04:21:26 GMT
+# Thu, 16 Jan 2020 01:20:31 GMT
+ADD file:08e718ed0796013f5957a1be7da3bef6225f3d82d8be0a86a7114e5caad50cbc in / 
+# Thu, 16 Jan 2020 01:20:32 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 19 Dec 2019 04:21:27 GMT
+# Thu, 16 Jan 2020 01:20:33 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 19 Dec 2019 04:21:28 GMT
+# Thu, 16 Jan 2020 01:20:34 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 19 Dec 2019 04:21:28 GMT
+# Thu, 16 Jan 2020 01:20:34 GMT
 CMD ["/bin/bash"]
-# Thu, 19 Dec 2019 08:11:29 GMT
+# Thu, 16 Jan 2020 03:21:47 GMT
 RUN apt-get -qqy update     && apt-get install -y --no-install-recommends ca-certificates gnupg2     && rm -rf /var/lib/apt/lists/*
-# Thu, 19 Dec 2019 08:11:30 GMT
+# Thu, 16 Jan 2020 03:21:49 GMT
 RUN apt-key adv --keyserver keys.gnupg.net --recv-keys "539A 3A8C 6692 E6E3 F69B 3FE8 1D85 E93F 801B B43F"     && echo "deb https://download.rethinkdb.com/apt bionic main" > /etc/apt/sources.list.d/rethinkdb.list
-# Thu, 19 Dec 2019 23:42:01 GMT
+# Thu, 16 Jan 2020 03:21:50 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.4.0~0bionic
-# Thu, 19 Dec 2019 23:42:12 GMT
+# Thu, 16 Jan 2020 03:21:57 GMT
 RUN apt-get -qqy update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 19 Dec 2019 23:42:12 GMT
+# Thu, 16 Jan 2020 03:21:57 GMT
 VOLUME [/data]
-# Thu, 19 Dec 2019 23:42:12 GMT
+# Thu, 16 Jan 2020 03:21:58 GMT
 WORKDIR /data
-# Thu, 19 Dec 2019 23:42:12 GMT
+# Thu, 16 Jan 2020 03:21:58 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Thu, 19 Dec 2019 23:42:12 GMT
+# Thu, 16 Jan 2020 03:21:58 GMT
 EXPOSE 28015 29015 8080
 ```
 
 -	Layers:
-	-	`sha256:2746a4a261c9e18bfd7ff0429c18fd7522acc14fa4c7ec8ab37ba5ebaadbc584`  
-		Last Modified: Mon, 02 Dec 2019 13:22:09 GMT  
-		Size: 26.7 MB (26689544 bytes)  
+	-	`sha256:5c939e3a4d1097af8d3292ad3a41d3caa846f6333b91f2dd22b972bc2d19c5b5`  
+		Last Modified: Mon, 13 Jan 2020 13:21:09 GMT  
+		Size: 26.7 MB (26690191 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c1d20cdee96111c8acf1858b62655a37ce81ae48648993542b7ac363ac5c0e5`  
-		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
-		Size: 35.4 KB (35361 bytes)  
+	-	`sha256:c63719cdbe7ae254b453dba06fb446f583b503f2a2c15becc83f8c5bc7a705e0`  
+		Last Modified: Thu, 16 Jan 2020 01:21:44 GMT  
+		Size: 35.4 KB (35366 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d3160e1d0de4061b5b32ee09af687b898921d36ed9556df5910ddc3104449cd`  
-		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
-		Size: 854.0 B  
+	-	`sha256:19a861ea6baff71b05cd577478984c3e62cf0177bf74468d0aca551f5fcb891c`  
+		Last Modified: Thu, 16 Jan 2020 01:21:44 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8e37668deea784f47c8726d934adc12b8d20a2b1c50b0b0c18cb62771cd3684`  
-		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
-		Size: 163.0 B  
+	-	`sha256:651c9d2d6c4f37c56a221259e033e7e2353b698139c2ff950623ca28d64a9837`  
+		Last Modified: Thu, 16 Jan 2020 01:21:44 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7d1bf5200ebcbb62ef3a7bcc69984d1b445a348fd72c0bf75dd593d69812cc5`  
-		Last Modified: Thu, 19 Dec 2019 08:11:48 GMT  
-		Size: 7.2 MB (7213385 bytes)  
+	-	`sha256:7a0721f5dcb662935180d832ac9b667bed93bd835f90a113f63922fd508d4953`  
+		Last Modified: Thu, 16 Jan 2020 03:22:08 GMT  
+		Size: 7.2 MB (7213597 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6b24861af7c0fe8fd7f7cb18e8f3781935d10f4d1041145b4cd241fe17dde63`  
-		Last Modified: Thu, 19 Dec 2019 08:11:46 GMT  
-		Size: 2.6 KB (2598 bytes)  
+	-	`sha256:30a5693cd8c4c2729b1889d1c4139a264d20e5cd5d9b42082216ef92b783cf79`  
+		Last Modified: Thu, 16 Jan 2020 03:22:06 GMT  
+		Size: 2.6 KB (2596 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:faeed0d46cc6882043c2ea4472f9b9edd23fa42ebfd4abaf3ebfe2b79d5ab7db`  
-		Last Modified: Thu, 19 Dec 2019 23:42:22 GMT  
-		Size: 17.0 MB (17035658 bytes)  
+	-	`sha256:01388a12e37127f9282274abd7c78710156ef0dc4bd6035bb6cd1d7246f1447a`  
+		Last Modified: Thu, 16 Jan 2020 03:22:09 GMT  
+		Size: 17.0 MB (17035767 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50971ebbb6718240aae26d01f993e327665d7a39949f4a579c06ba2d3081c8f4`  
-		Last Modified: Thu, 19 Dec 2019 23:42:19 GMT  
+	-	`sha256:bd2e02c1fe7a4a04931efe1465783ef4efa48d720ad96ae414f5303a875d6f9c`  
+		Last Modified: Thu, 16 Jan 2020 03:22:07 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
