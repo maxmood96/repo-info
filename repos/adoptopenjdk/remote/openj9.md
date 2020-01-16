@@ -1,7 +1,7 @@
 ## `adoptopenjdk:openj9`
 
 ```console
-$ docker pull adoptopenjdk@sha256:a530816164ea223db8d53640ebb389f67801240a22ddb343d83664fac8a65808
+$ docker pull adoptopenjdk@sha256:3c346edb6c2270e76c066bc0208703c9b5161799b387a40d36f99c72d192d11c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,133 +16,133 @@ $ docker pull adoptopenjdk@sha256:a530816164ea223db8d53640ebb389f67801240a22ddb3
 ### `adoptopenjdk:openj9` - linux; amd64
 
 ```console
-$ docker pull adoptopenjdk@sha256:a6ade68fbf49318cf4506bd2db2e1534b6250b1567d746e2970f7a1f673e8e4e
+$ docker pull adoptopenjdk@sha256:eda45237af80a9e4cddbd08ab0b0b4351cd9fb43fcd8cf932cdaf5ec76624ec8
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **246.2 MB (246155249 bytes)**  
+-	Total Size: **246.2 MB (246156042 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19ee8e44009c8e4592e8f087634fcbfb3067ce79773699a20c6ccc4a7704ad87`
+-	Image ID: `sha256:ea57261ad486f9e0dcea98c11f6695ba4b3ceb992998156ab4b90bb8f0b253c3`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Thu, 19 Dec 2019 04:21:25 GMT
-ADD file:53f100793e6c0adfca99977a42bb65cb7971c26e4d6e4499d1c30a1f51f06854 in / 
-# Thu, 19 Dec 2019 04:21:26 GMT
+# Thu, 16 Jan 2020 01:20:31 GMT
+ADD file:08e718ed0796013f5957a1be7da3bef6225f3d82d8be0a86a7114e5caad50cbc in / 
+# Thu, 16 Jan 2020 01:20:32 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 19 Dec 2019 04:21:27 GMT
+# Thu, 16 Jan 2020 01:20:33 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 19 Dec 2019 04:21:28 GMT
+# Thu, 16 Jan 2020 01:20:34 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 19 Dec 2019 04:21:28 GMT
+# Thu, 16 Jan 2020 01:20:34 GMT
 CMD ["/bin/bash"]
-# Thu, 19 Dec 2019 06:43:30 GMT
+# Thu, 16 Jan 2020 01:44:50 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 19 Dec 2019 06:44:09 GMT
+# Thu, 16 Jan 2020 01:45:08 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Thu, 19 Dec 2019 06:46:24 GMT
+# Thu, 16 Jan 2020 01:47:33 GMT
 ENV JAVA_VERSION=jdk-13.0.1+9_openj9-0.17.0
-# Thu, 19 Dec 2019 06:46:39 GMT
+# Thu, 16 Jan 2020 01:47:47 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='fb7f74e69665a747bdb1c1bab7895b6f3bc39c2a18e54777e70477cc2cefca0b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.1%2B9_openj9-0.17.0/OpenJDK13U-jdk_ppc64le_linux_openj9_13.0.1_9_openj9-0.17.0.tar.gz';          ;;        s390x)          ESUM='f975db6af84a3c90f8193ae4e31af100801bd859c916106ee4c1ab90a6b3ea69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.1%2B9_openj9-0.17.0/OpenJDK13U-jdk_s390x_linux_openj9_13.0.1_9_openj9-0.17.0.tar.gz';          ;;        amd64|x86_64)          ESUM='13f0d693d9888dc7893a34996a9f64aef6d6c0a2b8442f9aa17973f2c1d1bf8b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.1%2B9_openj9-0.17.0/OpenJDK13U-jdk_x64_linux_openj9_13.0.1_9_openj9-0.17.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 19 Dec 2019 06:46:39 GMT
+# Thu, 16 Jan 2020 01:47:47 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 19 Dec 2019 06:46:39 GMT
+# Thu, 16 Jan 2020 01:47:47 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Thu, 19 Dec 2019 06:46:40 GMT
+# Thu, 16 Jan 2020 01:47:47 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:2746a4a261c9e18bfd7ff0429c18fd7522acc14fa4c7ec8ab37ba5ebaadbc584`  
-		Last Modified: Mon, 02 Dec 2019 13:22:09 GMT  
-		Size: 26.7 MB (26689544 bytes)  
+	-	`sha256:5c939e3a4d1097af8d3292ad3a41d3caa846f6333b91f2dd22b972bc2d19c5b5`  
+		Last Modified: Mon, 13 Jan 2020 13:21:09 GMT  
+		Size: 26.7 MB (26690191 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c1d20cdee96111c8acf1858b62655a37ce81ae48648993542b7ac363ac5c0e5`  
-		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
-		Size: 35.4 KB (35361 bytes)  
+	-	`sha256:c63719cdbe7ae254b453dba06fb446f583b503f2a2c15becc83f8c5bc7a705e0`  
+		Last Modified: Thu, 16 Jan 2020 01:21:44 GMT  
+		Size: 35.4 KB (35366 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d3160e1d0de4061b5b32ee09af687b898921d36ed9556df5910ddc3104449cd`  
-		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
-		Size: 854.0 B  
+	-	`sha256:19a861ea6baff71b05cd577478984c3e62cf0177bf74468d0aca551f5fcb891c`  
+		Last Modified: Thu, 16 Jan 2020 01:21:44 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8e37668deea784f47c8726d934adc12b8d20a2b1c50b0b0c18cb62771cd3684`  
-		Last Modified: Thu, 19 Dec 2019 04:24:53 GMT  
-		Size: 163.0 B  
+	-	`sha256:651c9d2d6c4f37c56a221259e033e7e2353b698139c2ff950623ca28d64a9837`  
+		Last Modified: Thu, 16 Jan 2020 01:21:44 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12ff21ce7d875874bffbded53d145025fc53273ed43e60390bfb159ce785b0aa`  
-		Last Modified: Thu, 19 Dec 2019 06:47:19 GMT  
-		Size: 13.3 MB (13323051 bytes)  
+	-	`sha256:86e1a6e1ff3c935882f4005a6063541af139f9244769187488ef236e2052ce19`  
+		Last Modified: Thu, 16 Jan 2020 01:48:24 GMT  
+		Size: 13.3 MB (13323265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e75bd3d0487f156dd5435e2e4d013f6a442f34fad446461b0b49ff24ed0cad41`  
-		Last Modified: Thu, 19 Dec 2019 06:50:27 GMT  
-		Size: 206.1 MB (206106276 bytes)  
+	-	`sha256:54cc37bca2b97eb2dda919635ee2b911f0ccf0096ec88fbb3281d5f4a21bb0ad`  
+		Last Modified: Thu, 16 Jan 2020 01:52:41 GMT  
+		Size: 206.1 MB (206106209 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:openj9` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:623d76b0c2ef7fba6423a8a91b4f6d0faf55c16fd84c7319a09547d18c7a5a34
+$ docker pull adoptopenjdk@sha256:a84eeebbab74f25e8ba3186f1305b9f502aa6100105f1f417baecbfc5c1ae8fe
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.6 MB (252601530 bytes)**  
+-	Total Size: **252.6 MB (252601853 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08ead68feb52245da40473e10a02e0659a3bc4dd2873812815cc2694f1e60531`
+-	Image ID: `sha256:f61cea67bb708b86fd288308b00af59ea4a5ccf49293aba04b181ba838385e4d`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Thu, 19 Dec 2019 04:17:50 GMT
-ADD file:04095d1b229274e65c9beb48f6cf33050e58d8ee2cd59c0063d23301a1b68f40 in / 
-# Thu, 19 Dec 2019 04:17:56 GMT
+# Thu, 16 Jan 2020 01:16:57 GMT
+ADD file:9a1a27f07b5eac878569b1a3279d14f876400a0bbb293be818f5554662ac82e9 in / 
+# Thu, 16 Jan 2020 01:17:05 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Thu, 19 Dec 2019 04:18:00 GMT
+# Thu, 16 Jan 2020 01:17:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 19 Dec 2019 04:18:06 GMT
+# Thu, 16 Jan 2020 01:17:17 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 19 Dec 2019 04:18:08 GMT
+# Thu, 16 Jan 2020 01:17:19 GMT
 CMD ["/bin/bash"]
-# Thu, 19 Dec 2019 08:46:29 GMT
+# Thu, 16 Jan 2020 01:43:10 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 19 Dec 2019 08:47:19 GMT
+# Thu, 16 Jan 2020 01:44:08 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Thu, 19 Dec 2019 08:51:39 GMT
+# Thu, 16 Jan 2020 01:48:19 GMT
 ENV JAVA_VERSION=jdk-13.0.1+9_openj9-0.17.0
-# Thu, 19 Dec 2019 08:51:58 GMT
+# Thu, 16 Jan 2020 01:48:37 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='fb7f74e69665a747bdb1c1bab7895b6f3bc39c2a18e54777e70477cc2cefca0b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.1%2B9_openj9-0.17.0/OpenJDK13U-jdk_ppc64le_linux_openj9_13.0.1_9_openj9-0.17.0.tar.gz';          ;;        s390x)          ESUM='f975db6af84a3c90f8193ae4e31af100801bd859c916106ee4c1ab90a6b3ea69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.1%2B9_openj9-0.17.0/OpenJDK13U-jdk_s390x_linux_openj9_13.0.1_9_openj9-0.17.0.tar.gz';          ;;        amd64|x86_64)          ESUM='13f0d693d9888dc7893a34996a9f64aef6d6c0a2b8442f9aa17973f2c1d1bf8b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.1%2B9_openj9-0.17.0/OpenJDK13U-jdk_x64_linux_openj9_13.0.1_9_openj9-0.17.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 19 Dec 2019 08:52:02 GMT
+# Thu, 16 Jan 2020 01:48:41 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 19 Dec 2019 08:52:06 GMT
+# Thu, 16 Jan 2020 01:48:43 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Thu, 19 Dec 2019 08:52:08 GMT
+# Thu, 16 Jan 2020 01:48:45 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:fc185e8867852536dd99638d9087ed0059bd4d581436d4c2aac0d0e17666457a`  
-		Last Modified: Mon, 02 Dec 2019 15:30:19 GMT  
-		Size: 30.4 MB (30400283 bytes)  
+	-	`sha256:5592aacf4ac7489bb730c3e5b1799876d68000b7bbf6e9377ca30e16bff059be`  
+		Last Modified: Mon, 13 Jan 2020 15:33:24 GMT  
+		Size: 30.4 MB (30400610 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e561dfe3fdb898460f7652cbe0a7bb83e64b240d2504cec93d1b4a1cff37951`  
-		Last Modified: Thu, 19 Dec 2019 04:24:04 GMT  
-		Size: 35.2 KB (35212 bytes)  
+	-	`sha256:66f7f270f33afb11e2590bebf54c54fcb052048417bc01b24e357117d730d26a`  
+		Last Modified: Thu, 16 Jan 2020 01:19:43 GMT  
+		Size: 35.2 KB (35217 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce5731b4e21c4ef8f9ab7c0d9535bc069ed88e51e1701f2c89b9260bbabc3ab4`  
-		Last Modified: Thu, 19 Dec 2019 04:24:04 GMT  
-		Size: 852.0 B  
+	-	`sha256:242585cde72a9805b281397c8fe3b84a8260c6523a4c290da82e6209845c3690`  
+		Last Modified: Thu, 16 Jan 2020 01:19:42 GMT  
+		Size: 858.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f66c7d0deb99d27ed750b5a40c0b038d79913a8644af69d2954631935aab9d88`  
-		Last Modified: Thu, 19 Dec 2019 04:24:04 GMT  
-		Size: 188.0 B  
+	-	`sha256:509fc799f2e0e3149ea8c75fb5b36528e147c5e7123e226d9da46be9c3c79f36`  
+		Last Modified: Thu, 16 Jan 2020 01:19:42 GMT  
+		Size: 186.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eddd4570d010c9a2d4fd57c621236bfbbae04b13d8823f25bed3bdc65606e5a7`  
-		Last Modified: Thu, 19 Dec 2019 08:53:54 GMT  
-		Size: 14.0 MB (13969113 bytes)  
+	-	`sha256:6f5515694a6e8bfc9e87d0ae9d3b2046662f7a29cfbcb1eaa00c8c3d1a2ba211`  
+		Last Modified: Thu, 16 Jan 2020 01:50:01 GMT  
+		Size: 14.0 MB (13969109 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae514da56d462ac12b4ccc74cc05ec3c9c4b4ad220da73237c4c18f40a8614a9`  
-		Last Modified: Thu, 19 Dec 2019 08:59:50 GMT  
-		Size: 208.2 MB (208195882 bytes)  
+	-	`sha256:7faf106bca09c4eb6442c32de61cd70edf3e8c09c8ac19c18f02167a5822b10a`  
+		Last Modified: Thu, 16 Jan 2020 01:55:10 GMT  
+		Size: 208.2 MB (208195873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:openj9` - linux; s390x
