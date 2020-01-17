@@ -2,20 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f3e07c0138fbe05abcb7a9cc7d63d9bd4c980c3f61fea5efa32e7c4217ef4da`
-- Created: `2019-10-01T23:19:57.105928163Z`
-- Virtual Size: ~ 219.58 Mb  
+- Image ID: `sha256:589dc4d40385ebd01340594e66c2ead3b193460efd6270f0e2dffd6db0e2f1c4`
+- Created: `2020-01-15T01:19:50.874788817Z`
+- Virtual Size: ~ 237.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `org.label-schema.build-date=20190927`
-  - `org.label-schema.license=GPLv2`
-  - `org.label-schema.name=CentOS Base Image`
-  - `org.label-schema.schema-version=1.0`
-  - `org.label-schema.vendor=CentOS`
+  - `=org.label-schema.schema-version=1.0     org.label-schema.name=CentOS Base Image     org.label-schema.vendor=CentOS     org.label-schema.license=GPLv2     org.label-schema.build-date=20200114     org.opencontainers.image.title=CentOS Base Image     org.opencontainers.image.vendor=CentOS     org.opencontainers.image.licenses=GPL-2.0-only     org.opencontainers.image.created=2020-01-14 00:00:00-08:00`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -37,19 +33,19 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `bash-4.4.19-7.el8.x86_64`
+### `rpm` package: `bash-4.4.19-10.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `bind-export-libs-9.11.4-16.P2.el8.x86_64`
+### `rpm` package: `bind-export-libs-9.11.4-26.P2.el8.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `binutils-2.30-49.el8.x86_64`
+### `rpm` package: `binutils-2.30-58.el8.0.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
@@ -61,13 +57,25 @@ Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `ca-certificates-2018.2.24-6.el8.noarch`
+### `rpm` package: `ca-certificates-2019.2.32-80.0.el8_1.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `centos-release-8.0-0.1905.0.9.el8.x86_64`
+### `rpm` package: `centos-gpg-keys-8.1-1.1911.0.8.el8.noarch`
+
+Licenses (from `rpm --query`): GPLv2
+
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
+
+### `rpm` package: `centos-release-8.1-1.1911.0.8.el8.x86_64`
+
+Licenses (from `rpm --query`): GPLv2
+
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
+
+### `rpm` package: `centos-repos-8.1-1.1911.0.8.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
@@ -97,139 +105,139 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `crypto-policies-20181217-6.git9a35207.el8.noarch`
+### `rpm` package: `crypto-policies-20190807-1.git9b1477b.el8.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `cryptsetup-libs-2.0.6-1.el8.x86_64`
+### `rpm` package: `cryptsetup-libs-2.2.0-2.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `curl-7.61.1-8.el8.x86_64`
+### `rpm` package: `curl-7.61.1-11.el8.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `cyrus-sasl-lib-2.1.27-0.3rc7.el8.x86_64`
+### `rpm` package: `cyrus-sasl-lib-2.1.27-1.el8.x86_64`
 
 Licenses (from `rpm --query`): BSD with advertising
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `dbus-1.12.8-7.el8.x86_64`
+### `rpm` package: `dbus-1.12.8-9.el8.x86_64`
 
 Licenses (from `rpm --query`): (GPLv2+ or AFL) and GPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `dbus-common-1.12.8-7.el8.noarch`
+### `rpm` package: `dbus-common-1.12.8-9.el8.noarch`
 
 Licenses (from `rpm --query`): (GPLv2+ or AFL) and GPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `dbus-daemon-1.12.8-7.el8.x86_64`
+### `rpm` package: `dbus-daemon-1.12.8-9.el8.x86_64`
 
 Licenses (from `rpm --query`): (GPLv2+ or AFL) and GPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `dbus-libs-1.12.8-7.el8.x86_64`
+### `rpm` package: `dbus-libs-1.12.8-9.el8.x86_64`
 
 Licenses (from `rpm --query`): (GPLv2+ or AFL) and GPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `dbus-tools-1.12.8-7.el8.x86_64`
+### `rpm` package: `dbus-tools-1.12.8-9.el8.x86_64`
 
 Licenses (from `rpm --query`): (GPLv2+ or AFL) and GPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `device-mapper-1.02.155-6.el8.x86_64`
+### `rpm` package: `device-mapper-1.02.163-5.el8.0.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `device-mapper-libs-1.02.155-6.el8.x86_64`
+### `rpm` package: `device-mapper-libs-1.02.163-5.el8.0.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `dhcp-client-4.3.6-30.el8.x86_64`
+### `rpm` package: `dhcp-client-4.3.6-34.el8.x86_64`
 
 Licenses (from `rpm --query`): ISC
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `dhcp-common-4.3.6-30.el8.noarch`
+### `rpm` package: `dhcp-common-4.3.6-34.el8.noarch`
 
 Licenses (from `rpm --query`): ISC
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `dhcp-libs-4.3.6-30.el8.x86_64`
+### `rpm` package: `dhcp-libs-4.3.6-34.el8.x86_64`
 
 Licenses (from `rpm --query`): ISC
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `dnf-4.0.9.2-5.el8.noarch`
+### `rpm` package: `dnf-4.2.7-7.el8_1.noarch`
 
 Licenses (from `rpm --query`): GPLv2+ and GPLv2 and GPL
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `dnf-data-4.0.9.2-5.el8.noarch`
+### `rpm` package: `dnf-data-4.2.7-7.el8_1.noarch`
 
 Licenses (from `rpm --query`): GPLv2+ and GPLv2 and GPL
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `dracut-049-10.git20190115.el8.x86_64`
+### `rpm` package: `dracut-049-27.git20190906.el8_1.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `dracut-network-049-10.git20190115.el8.x86_64`
+### `rpm` package: `dracut-network-049-27.git20190906.el8_1.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `dracut-squash-049-10.git20190115.el8.x86_64`
+### `rpm` package: `dracut-squash-049-27.git20190906.el8_1.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `elfutils-default-yama-scope-0.174-6.el8.noarch`
+### `rpm` package: `elfutils-default-yama-scope-0.176-5.el8.noarch`
 
 Licenses (from `rpm --query`): GPLv2+ or LGPLv3+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `elfutils-libelf-0.174-6.el8.x86_64`
+### `rpm` package: `elfutils-libelf-0.176-5.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ or LGPLv3+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `elfutils-libs-0.174-6.el8.x86_64`
+### `rpm` package: `elfutils-libs-0.176-5.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ or LGPLv3+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `ethtool-4.16-1.el8.x86_64`
+### `rpm` package: `ethtool-5.0-2.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
@@ -277,31 +285,31 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `glib2-2.56.4-1.el8.x86_64`
+### `rpm` package: `glib2-2.56.4-7.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `glibc-2.28-42.el8.1.x86_64`
+### `rpm` package: `glibc-2.28-72.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `glibc-common-2.28-42.el8.1.x86_64`
+### `rpm` package: `glibc-common-2.28-72.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `glibc-minimal-langpack-2.28-42.el8.1.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.28-72.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `gmp-6.1.2-8.el8.x86_64`
+### `rpm` package: `gmp-6.1.2-10.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv3+ or GPLv2+
 
@@ -313,7 +321,7 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `gnutls-3.6.5-2.el8.x86_64`
+### `rpm` package: `gnutls-3.6.8-8.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and LGPLv2+
 
@@ -331,7 +339,7 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `gzip-1.9-4.el8.x86_64`
+### `rpm` package: `gzip-1.9-9.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GFDL
 
@@ -343,7 +351,7 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `ima-evm-utils-1.1-4.el8.x86_64`
+### `rpm` package: `ima-evm-utils-1.1-5.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
@@ -361,19 +369,19 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `iproute-4.18.0-11.el8.x86_64`
+### `rpm` package: `iproute-4.18.0-15.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and Public Domain
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `iptables-libs-1.8.2-9.el8.x86_64`
+### `rpm` package: `iptables-libs-1.8.2-16.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2 and Artistic 2.0 and ISC
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `iputils-20180629-1.el8.x86_64`
+### `rpm` package: `iputils-20180629-2.el8.x86_64`
 
 Licenses (from `rpm --query`): BSD and GPLv2+
 
@@ -385,7 +393,7 @@ Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `kexec-tools-2.0.17-28.el8.x86_64`
+### `rpm` package: `kexec-tools-2.0.19-12.el8_1.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
@@ -397,19 +405,19 @@ Licenses (from `rpm --query`): GPLv2+ and LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `kmod-25-11.el8.x86_64`
+### `rpm` package: `kmod-25-13.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `kmod-libs-25-11.el8.x86_64`
+### `rpm` package: `kmod-libs-25-13.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `krb5-libs-1.16.1-22.el8.x86_64`
+### `rpm` package: `krb5-libs-1.17-9.el8.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -433,7 +441,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libarchive-3.3.2-3.el8.x86_64`
+### `rpm` package: `libarchive-3.3.2-7.el8.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
@@ -451,13 +459,13 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libblkid-2.32.1-8.el8.x86_64`
+### `rpm` package: `libblkid-2.32.1-17.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libcap-2.25-9.el8.x86_64`
+### `rpm` package: `libcap-2.26-1.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
@@ -469,61 +477,61 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libcom_err-1.44.3-2.el8.x86_64`
+### `rpm` package: `libcom_err-1.44.6-3.el8.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libcomps-0.1.8-13.el8.x86_64`
+### `rpm` package: `libcomps-0.1.11-2.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libcurl-minimal-7.61.1-8.el8.x86_64`
+### `rpm` package: `libcurl-minimal-7.61.1-11.el8.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libdb-5.3.28-36.el8.x86_64`
+### `rpm` package: `libdb-5.3.28-37.el8.x86_64`
 
 Licenses (from `rpm --query`): BSD and LGPLv2 and Sleepycat
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libdb-utils-5.3.28-36.el8.x86_64`
+### `rpm` package: `libdb-utils-5.3.28-37.el8.x86_64`
 
 Licenses (from `rpm --query`): BSD and LGPLv2 and Sleepycat
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libdnf-0.22.5-4.el8.x86_64`
+### `rpm` package: `libdnf-0.35.1-9.el8_1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libfdisk-2.32.1-8.el8.x86_64`
+### `rpm` package: `libfdisk-2.32.1-17.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libffi-3.1-18.el8.x86_64`
+### `rpm` package: `libffi-3.1-21.el8.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libgcc-8.2.1-3.5.el8.x86_64`
+### `rpm` package: `libgcc-8.3.1-4.5.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libgcrypt-1.8.3-2.el8.x86_64`
+### `rpm` package: `libgcrypt-1.8.3-4.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -535,7 +543,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libidn2-2.0.5-1.el8.x86_64`
+### `rpm` package: `libidn2-2.2.0-1.el8.x86_64`
 
 Licenses (from `rpm --query`): (GPLv2+ or LGPLv3+) and GPLv3+
 
@@ -571,19 +579,19 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libmodulemd1-1.8.0-5.el8.x86_64`
+### `rpm` package: `libmodulemd1-1.8.11-4.el8_1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libmount-2.32.1-8.el8.x86_64`
+### `rpm` package: `libmount-2.32.1-17.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libnghttp2-1.33.0-1.el8.x86_64`
+### `rpm` package: `libnghttp2-1.33.0-1.el8_0.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -595,15 +603,9 @@ Licenses (from `rpm --query`): BSD and LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libpcap-1.9.0-1.el8.x86_64`
+### `rpm` package: `libpcap-1.9.0-3.el8.x86_64`
 
 Licenses (from `rpm --query`): BSD with advertising
-
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
-
-### `rpm` package: `libpkgconf-1.4.2-1.el8.x86_64`
-
-Licenses (from `rpm --query`): ISC
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
@@ -613,37 +615,37 @@ Licenses (from `rpm --query`): BSD or GPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `librepo-1.9.2-1.el8.x86_64`
+### `rpm` package: `librepo-1.10.3-3.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libreport-filesystem-2.9.5-6.el8.x86_64`
+### `rpm` package: `libreport-filesystem-2.9.5-9.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libseccomp-2.3.3-3.el8.x86_64`
+### `rpm` package: `libseccomp-2.4.1-1.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libselinux-2.8-6.el8.x86_64`
+### `rpm` package: `libselinux-2.9-2.1.el8.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libsemanage-2.8-5.el8.x86_64`
+### `rpm` package: `libsemanage-2.9-1.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libsepol-2.8-2.el8.x86_64`
+### `rpm` package: `libsepol-2.9-1.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -655,19 +657,19 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libsmartcols-2.32.1-8.el8.x86_64`
+### `rpm` package: `libsmartcols-2.32.1-17.el8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libsolv-0.6.35-6.el8.x86_64`
+### `rpm` package: `libsolv-0.7.4-3.el8.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libstdc++-8.2.1-3.5.el8.x86_64`
+### `rpm` package: `libstdc++-8.3.1-4.5.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
 
@@ -679,7 +681,7 @@ Licenses (from `rpm --query`): GPLv3+ and LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libtirpc-1.1.4-3.el8.x86_64`
+### `rpm` package: `libtirpc-1.1.4-4.el8.x86_64`
 
 Licenses (from `rpm --query`): SISSL and BSD
 
@@ -703,7 +705,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libuuid-2.32.1-8.el8.x86_64`
+### `rpm` package: `libuuid-2.32.1-17.el8.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
@@ -733,7 +735,7 @@ Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `lua-libs-5.3.4-10.el8.x86_64`
+### `rpm` package: `lua-libs-5.3.4-11.el8.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -781,25 +783,25 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `openldap-2.4.46-9.el8.x86_64`
+### `rpm` package: `openldap-2.4.46-10.el8.x86_64`
 
 Licenses (from `rpm --query`): OpenLDAP
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `openssl-libs-1.1.1-8.el8.x86_64`
+### `rpm` package: `openssl-libs-1.1.1c-2.el8.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `p11-kit-0.23.14-4.el8.x86_64`
+### `rpm` package: `p11-kit-0.23.14-5.el8_0.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `p11-kit-trust-0.23.14-4.el8.x86_64`
+### `rpm` package: `p11-kit-trust-0.23.14-5.el8_0.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
@@ -823,37 +825,19 @@ Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `pkgconf-1.4.2-1.el8.x86_64`
-
-Licenses (from `rpm --query`): ISC
-
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
-
-### `rpm` package: `pkgconf-m4-1.4.2-1.el8.noarch`
-
-Licenses (from `rpm --query`): GPLv2+ with exceptions
-
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
-
-### `rpm` package: `pkgconf-pkg-config-1.4.2-1.el8.x86_64`
-
-Licenses (from `rpm --query`): ISC
-
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
-
-### `rpm` package: `platform-python-3.6.8-1.el8.0.1.x86_64`
+### `rpm` package: `platform-python-3.6.8-15.1.el8.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `platform-python-pip-9.0.3-13.el8.noarch`
+### `rpm` package: `platform-python-pip-9.0.3-15.el8.noarch`
 
 Licenses (from `rpm --query`): MIT and Python and ASL 2.0 and BSD and ISC and LGPLv2 and MPLv2.0 and (ASL 2.0 or BSD)
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `platform-python-setuptools-39.2.0-4.el8.noarch`
+### `rpm` package: `platform-python-setuptools-39.2.0-5.el8.noarch`
 
 Licenses (from `rpm --query`): MIT
 
@@ -871,7 +855,7 @@ Licenses (from `rpm --query`): GPL+ and GPLv2 and GPLv2+ and GPLv3+ and LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `python3-dnf-4.0.9.2-5.el8.noarch`
+### `rpm` package: `python3-dnf-4.2.7-7.el8_1.noarch`
 
 Licenses (from `rpm --query`): GPLv2+ and GPLv2 and GPL
 
@@ -883,43 +867,43 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `python3-hawkey-0.22.5-4.el8.x86_64`
+### `rpm` package: `python3-hawkey-0.35.1-9.el8_1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `python3-iniparse-0.4-31.el8.noarch`
-
-Licenses (from `rpm --query`): MIT and Python
-
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
-
-### `rpm` package: `python3-libcomps-0.1.8-13.el8.x86_64`
+### `rpm` package: `python3-libcomps-0.1.11-2.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `python3-libdnf-0.22.5-4.el8.x86_64`
+### `rpm` package: `python3-libdnf-0.35.1-9.el8_1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `python3-libs-3.6.8-1.el8.0.1.x86_64`
+### `rpm` package: `python3-libs-3.6.8-15.1.el8.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `python3-rpm-4.14.2-9.el8.x86_64`
+### `rpm` package: `python3-pip-wheel-9.0.3-15.el8.noarch`
+
+Licenses (from `rpm --query`): MIT and Python and ASL 2.0 and BSD and ISC and LGPLv2 and MPLv2.0 and (ASL 2.0 or BSD)
+
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
+
+### `rpm` package: `python3-rpm-4.14.2-25.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `python3-six-1.11.0-8.el8.noarch`
+### `rpm` package: `python3-setuptools-wheel-39.2.0-5.el8.noarch`
 
 Licenses (from `rpm --query`): MIT
 
@@ -937,19 +921,19 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `rpm-4.14.2-9.el8.x86_64`
+### `rpm` package: `rpm-4.14.2-25.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `rpm-build-libs-4.14.2-9.el8.x86_64`
+### `rpm` package: `rpm-build-libs-4.14.2-25.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `rpm-libs-4.14.2-9.el8.x86_64`
+### `rpm` package: `rpm-libs-4.14.2-25.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
@@ -961,13 +945,13 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `setup-2.12.2-1.el8.noarch`
+### `rpm` package: `setup-2.12.2-2.el8_1.1.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `shadow-utils-4.6-7.el8.x86_64`
+### `rpm` package: `shadow-utils-4.6-8.el8.x86_64`
 
 Licenses (from `rpm --query`): BSD and GPLv2+
 
@@ -985,31 +969,31 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `squashfs-tools-4.3-17.el8.x86_64`
+### `rpm` package: `squashfs-tools-4.3-19.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `systemd-239-13.el8.x86_64`
+### `rpm` package: `systemd-239-18.el8_1.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `systemd-libs-239-13.el8.x86_64`
+### `rpm` package: `systemd-libs-239-18.el8_1.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `systemd-pam-239-13.el8.x86_64`
+### `rpm` package: `systemd-pam-239-18.el8_1.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `systemd-udev-239-13.el8.x86_64`
+### `rpm` package: `systemd-udev-239-18.el8_1.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -1021,19 +1005,19 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `tzdata-2019a-1.el8.noarch`
+### `rpm` package: `tzdata-2019c-1.el8.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `util-linux-2.32.1-8.el8.x86_64`
+### `rpm` package: `util-linux-2.32.1-17.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2 and GPLv2+ and LGPLv2+ and BSD with advertising and Public Domain
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `vim-minimal-8.0.1763-10.el8.x86_64`
+### `rpm` package: `vim-minimal-8.0.1763-13.el8.x86_64`
 
 Licenses (from `rpm --query`): Vim and MIT
 
@@ -1051,7 +1035,7 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `yum-4.0.9.2-5.el8.noarch`
+### `rpm` package: `yum-4.2.7-7.el8_1.noarch`
 
 Licenses (from `rpm --query`): GPLv2+ and GPLv2 and GPL
 
