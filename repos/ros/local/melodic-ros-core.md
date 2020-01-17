@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a30b7b2faeb653ede7f6ad75b823b2a3bcf33aaee8ca468c506816815cbb6ea2`
-- Created: `2019-12-19T08:26:23.810791621Z`
+- Image ID: `sha256:71a0b423471bc8cab29d2ffc4d6cafcdc6e8f1e4231e2cf962c4785a02edf901`
+- Created: `2020-01-16T04:14:43.026193675Z`
 - Virtual Size: ~ 1.03 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1318,11 +1318,11 @@ $ apt-get source -qq --print-uris gnupg2=2.2.4-1ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4-1ubuntu1.2.debian.tar.bz2' gnupg2_2.2.4-1ubuntu1.2.debian.tar.bz2 82238 SHA256:ad2e70205e5d5f52c092c58e619ee58e5f5bc2b44f44a2c462296fc34a1960de
 ```
 
-### `dpkg` source package: `gnutls28=3.5.18-1ubuntu1.1`
+### `dpkg` source package: `gnutls28=3.5.18-1ubuntu1.2`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.5.18-1ubuntu1.1`
+- `libgnutls30:amd64=3.5.18-1ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -1336,9 +1336,15 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls28=3.5.18-1ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18-1ubuntu1.2.dsc' gnutls28_3.5.18-1ubuntu1.2.dsc 3434 SHA256:a0b3b9553aaec9d14c66c3dbdef54ac2496089119dfd18124a69649f793f518b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18.orig.tar.xz' gnutls28_3.5.18.orig.tar.xz 7261980 SHA256:ae2248d9e78747cf9c469dde81ff8f90b56838b707a0637f3f7d4eee90e80234
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18.orig.tar.xz.asc' gnutls28_3.5.18.orig.tar.xz.asc 534 SHA256:50bb942469be0639bbab925de630fb921aa8cac5f40072cb1c2cf1fb7ae7977b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18-1ubuntu1.2.debian.tar.xz' gnutls28_3.5.18-1ubuntu1.2.debian.tar.xz 80128 SHA256:c79dc9cb5bdb4c5bdac332b911c4d5af46eea22e3c1b6de37df9da9c73c5ad83
+```
 
 ### `dpkg` source package: `gobject-introspection=1.56.1-1`
 
@@ -1986,15 +1992,9 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.8.1-4ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.8.1-4ubuntu1.1.dsc' libgcrypt20_1.8.1-4ubuntu1.1.dsc 3035 SHA256:45b6a3177046c0a9a78187b817e374d5fffd6d37e28efb98d7a6c3a0c292ace8
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.8.1.orig.tar.bz2' libgcrypt20_1.8.1.orig.tar.bz2 2967344 SHA256:7a2875f8b1ae0301732e878c0cca2c9664ff09ef71408f085c50e332656a78b3
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.8.1.orig.tar.bz2.asc' libgcrypt20_1.8.1.orig.tar.bz2.asc 310 SHA256:9e08f467824855084594a14c4a0455963dac9a359d543e8c2a91ca3498ad031b
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.8.1-4ubuntu1.1.debian.tar.xz' libgcrypt20_1.8.1-4ubuntu1.1.debian.tar.xz 31408 SHA256:897cb9aacc7d1cc8c1de6f81c2690eb8cdcb5d6a5fa8dc99b56275d9c00c511b
-```
 
 ### `dpkg` source package: `libgpg-error=1.27-6`
 
@@ -2458,19 +2458,24 @@ $ apt-get source -qq --print-uris libzstd=1.3.3+dfsg-2ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.3+dfsg-2ubuntu1.1.debian.tar.xz' libzstd_1.3.3+dfsg-2ubuntu1.1.debian.tar.xz 12808 SHA256:9c7421170f0a1e6234147a89ba7fa5933c0771177423e962e6faf3fd13dcbb64
 ```
 
-### `dpkg` source package: `linux=4.15.0-72.81`
+### `dpkg` source package: `linux=4.15.0-74.84`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.15.0-72.81`
+- `linux-libc-dev:amd64=4.15.0-74.84`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.15.0-74.84
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-74.84.dsc' linux_4.15.0-74.84.dsc 7304 SHA256:f49dfeefa80b097d44f0c43d36091749673ece58266eaf898880da397c11f1d8
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-74.84.diff.gz' linux_4.15.0-74.84.diff.gz 8882248 SHA256:3ae820395b55ec97a5f8994d6c4eccf46dda562b727a9852ea6d1f5a945ef9c1
+```
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-2`
 
@@ -3734,33 +3739,43 @@ $ apt-get source -qq --print-uris python-rosinstall=0.7.8-1
 'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosinstall/python-rosinstall_0.7.8.orig.tar.gz' python-rosinstall_0.7.8.orig.tar.gz 26425 SHA512:013b313b9e442e9b68f7aad0a372d2c1dfb9efeb66b9f20d01943bf58808e0e0bc69db848ba1c2460f0ecfaba89d385e987ccb574a7139b6500d5f958eda4d1b
 ```
 
-### `dpkg` source package: `python-rospkg-modules=1.2.2-1`
+### `dpkg` source package: `python-rospkg-modules=1.2.3-1`
 
 Binary Packages:
 
-- `python-rospkg-modules=1.2.2-1`
+- `python-rospkg-modules=1.2.3-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rospkg-modules=1.2.3-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.2.3-1.debian.tar.xz' python-rospkg-modules_1.2.3-1.debian.tar.xz 1104 SHA512:a4f92d4eec12891b9f79f4c7e93324f842f81e92b936985e106718a1e8a6ebd2b9c6adc4b964b8a2ad60b11970059e8f301d5801a6636276fe5b261a3a71bc90
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.2.3-1.dsc' python-rospkg-modules_1.2.3-1.dsc 953 SHA512:510ac95386181887b72905e1c0166b9de3608d234dccc8cf7bf61ec3b0055e9fad7939a3e0ef0eca265d2b45a744e0d5cba9f4dbf4cc9e1a2cb91422c131b0df
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.2.3.orig.tar.gz' python-rospkg-modules_1.2.3.orig.tar.gz 41475 SHA512:eb00300554faa3a17fe6564153afcfd4aa80e495d26c76a0dd328f6f693a0ca2112650e924587cf5ca2ecc9f0a1d862cec2ade70c96b5ebbbb6ad1a62b7a5afb
+```
 
-### `dpkg` source package: `python-rospkg=1.2.2-100`
+### `dpkg` source package: `python-rospkg=1.2.3-100`
 
 Binary Packages:
 
-- `python-rospkg=1.2.2-100`
+- `python-rospkg=1.2.3-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rospkg=1.2.3-100
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.2.3-100.debian.tar.xz' python-rospkg_1.2.3-100.debian.tar.xz 1084 SHA512:dd4feb913605d5fa4b496c1dfc34b50f612a3c7dd9c9e877c86170b12c58c5b791009cac00003a142e2859ab3fbe2dcf3895a4acb6e57f66bde336ff5434b508
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.2.3-100.dsc' python-rospkg_1.2.3-100.dsc 889 SHA512:5fdfc1c638ea008a56bf012e80b1934dd54b6a4bc8f6503c1ff54cdd28565c6fc878d4a395d9135118d568d3b45df74496cd7cb374ae7ac8d1b776872f945e0d
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.2.3.orig.tar.gz' python-rospkg_1.2.3.orig.tar.gz 18150 SHA512:ce62059a94eb72f71cfe7f9e70ac509b66b8f7c10aa199b2fc8026b0ac719d51080c7dbbed5a7e401ed6fb33abe301b63a872d25b74d695bce33e23e7762fe2d
+```
 
 ### `dpkg` source package: `python-setuptools=39.0.1-2`
 

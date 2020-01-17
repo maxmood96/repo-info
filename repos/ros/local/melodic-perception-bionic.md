@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9ed7b4d6cf1eff66c3f545520735f73bb983f2851219a786e0c20d133c1858d5`
-- Created: `2019-12-19T08:34:25.241439712Z`
+- Image ID: `sha256:11088ba5f50df179c2b22e21e2f815ad7d6cc9644ccee7eb001014bd8e8f941a`
+- Created: `2020-01-16T04:22:57.15042509Z`
 - Virtual Size: ~ 2.43 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2597,11 +2597,11 @@ $ apt-get source -qq --print-uris gnupg2=2.2.4-1ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4-1ubuntu1.2.debian.tar.bz2' gnupg2_2.2.4-1ubuntu1.2.debian.tar.bz2 82238 SHA256:ad2e70205e5d5f52c092c58e619ee58e5f5bc2b44f44a2c462296fc34a1960de
 ```
 
-### `dpkg` source package: `gnutls28=3.5.18-1ubuntu1.1`
+### `dpkg` source package: `gnutls28=3.5.18-1ubuntu1.2`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.5.18-1ubuntu1.1`
+- `libgnutls30:amd64=3.5.18-1ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -2615,9 +2615,15 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls28=3.5.18-1ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18-1ubuntu1.2.dsc' gnutls28_3.5.18-1ubuntu1.2.dsc 3434 SHA256:a0b3b9553aaec9d14c66c3dbdef54ac2496089119dfd18124a69649f793f518b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18.orig.tar.xz' gnutls28_3.5.18.orig.tar.xz 7261980 SHA256:ae2248d9e78747cf9c469dde81ff8f90b56838b707a0637f3f7d4eee90e80234
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18.orig.tar.xz.asc' gnutls28_3.5.18.orig.tar.xz.asc 534 SHA256:50bb942469be0639bbab925de630fb921aa8cac5f40072cb1c2cf1fb7ae7977b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18-1ubuntu1.2.debian.tar.xz' gnutls28_3.5.18-1ubuntu1.2.debian.tar.xz 80128 SHA256:c79dc9cb5bdb4c5bdac332b911c4d5af46eea22e3c1b6de37df9da9c73c5ad83
+```
 
 ### `dpkg` source package: `gobject-introspection=1.56.1-1`
 
@@ -4117,14 +4123,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdrm=2.4.97-1ubuntu1~18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.97-1ubuntu1~18.04.1.dsc' libdrm_2.4.97-1ubuntu1~18.04.1.dsc 3020 SHA256:f56adf4f421f6fcdfc3a1a881450c7c5fe558105644d4ce2831b48cd2bcb3ae6
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.97.orig.tar.gz' libdrm_2.4.97.orig.tar.gz 1124510 SHA256:8c6f4d0934f5e005cc61bc05a917463b0c867403de176499256965f6797092f1
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.97-1ubuntu1~18.04.1.diff.gz' libdrm_2.4.97-1ubuntu1~18.04.1.diff.gz 52342 SHA256:644fc2b764a1e87f91b8d20451403b68a88c950d07808ea04fa199197b7d1313
-```
 
 ### `dpkg` source package: `libedit=3.1-20170329-1`
 
@@ -6363,19 +6364,24 @@ $ apt-get source -qq --print-uris libzstd=1.3.3+dfsg-2ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.3+dfsg-2ubuntu1.1.debian.tar.xz' libzstd_1.3.3+dfsg-2ubuntu1.1.debian.tar.xz 12808 SHA256:9c7421170f0a1e6234147a89ba7fa5933c0771177423e962e6faf3fd13dcbb64
 ```
 
-### `dpkg` source package: `linux=4.15.0-72.81`
+### `dpkg` source package: `linux=4.15.0-74.84`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.15.0-72.81`
+- `linux-libc-dev:amd64=4.15.0-74.84`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.15.0-74.84
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-74.84.dsc' linux_4.15.0-74.84.dsc 7304 SHA256:f49dfeefa80b097d44f0c43d36091749673ece58266eaf898880da397c11f1d8
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-74.84.diff.gz' linux_4.15.0-74.84.diff.gz 8882248 SHA256:3ae820395b55ec97a5f8994d6c4eccf46dda562b727a9852ea6d1f5a945ef9c1
+```
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-2`
 
@@ -6401,11 +6407,11 @@ $ apt-get source -qq --print-uris lksctp-tools=1.0.17+dfsg-2
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lksctp-tools/lksctp-tools_1.0.17+dfsg-2.debian.tar.xz' lksctp-tools_1.0.17+dfsg-2.debian.tar.xz 9436 SHA256:c8e05a29ffbca99428cf2c59a50dd26a4bf73f42487db8231b810882a5f5c779
 ```
 
-### `dpkg` source package: `llvm-toolchain-8=1:8-3~ubuntu18.04.1`
+### `dpkg` source package: `llvm-toolchain-8=1:8-3~ubuntu18.04.2`
 
 Binary Packages:
 
-- `libllvm8:amd64=1:8-3~ubuntu18.04.1`
+- `libllvm8:amd64=1:8-3~ubuntu18.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libllvm8/copyright`)
 
@@ -6423,9 +6429,23 @@ Licenses: (parsed from: `/usr/share/doc/libllvm8/copyright`)
 - `public-domain`
 - `solar-public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris llvm-toolchain-8=1:8-3~ubuntu18.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-8/llvm-toolchain-8_8-3~ubuntu18.04.2.dsc' llvm-toolchain-8_8-3~ubuntu18.04.2.dsc 7895 SHA256:a13f84f07b54c8b150f602819e672d08cd2c31206f01220e109a77ce1f40e2a7
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-8/llvm-toolchain-8_8.orig-clang-tools-extra.tar.bz2' llvm-toolchain-8_8.orig-clang-tools-extra.tar.bz2 2129367 SHA256:6a96ced8af8a7c16fc1d7195ddd6255ebcf9bf06d2694c45dcc5d6d68854bc8f
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-8/llvm-toolchain-8_8.orig-clang.tar.bz2' llvm-toolchain-8_8.orig-clang.tar.bz2 14325146 SHA256:1dd2ec383b100e9bc2ea4d47bb760a02bb7e56fa94aae6cf861731a63416490d
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-8/llvm-toolchain-8_8.orig-compiler-rt.tar.bz2' llvm-toolchain-8_8.orig-compiler-rt.tar.bz2 2460362 SHA256:4986e0c32cfa0d92054214f6f061c097f13f1d824b82262a57fc99698bf77659
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-8/llvm-toolchain-8_8.orig-libcxx.tar.bz2' llvm-toolchain-8_8.orig-libcxx.tar.bz2 1891480 SHA256:11409a03a790d13d815bc533eca8110451f666e55e6e69eaf137fdfddddfd7a9
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-8/llvm-toolchain-8_8.orig-libcxxabi.tar.bz2' llvm-toolchain-8_8.orig-libcxxabi.tar.bz2 546067 SHA256:11e69234050922c7c6178265968438d9b4570ea4f47b8c4aa64a0cfc95bc8e11
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-8/llvm-toolchain-8_8.orig-lld.tar.bz2' llvm-toolchain-8_8.orig-lld.tar.bz2 1076500 SHA256:71aae0b007062fb563ac45e015c2e2aa624e26ca7aee4c38b6916b1ece0e6ca9
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-8/llvm-toolchain-8_8.orig-lldb.tar.bz2' llvm-toolchain-8_8.orig-lldb.tar.bz2 11530159 SHA256:e7c311f6bb578999d6940d950e52ed1222d3835569860b290a923030190e0157
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-8/llvm-toolchain-8_8.orig-openmp.tar.bz2' llvm-toolchain-8_8.orig-openmp.tar.bz2 1024483 SHA256:f4a2318cb63d57d3b1972cde26d4846a2674576a886555c2fb2f4762829bbd4d
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-8/llvm-toolchain-8_8.orig-polly.tar.bz2' llvm-toolchain-8_8.orig-polly.tar.bz2 3918518 SHA256:3907dece52b1c5a48c6d895339c09dbc66a9ab7b4dc6669863e69fc36966bba6
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-8/llvm-toolchain-8_8.orig.tar.bz2' llvm-toolchain-8_8.orig.tar.bz2 35994378 SHA256:2981e27192b5b189ad62f8522453c6d7790bac506d64ae8c04ee08873baa5ca3
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-8/llvm-toolchain-8_8-3~ubuntu18.04.2.debian.tar.xz' llvm-toolchain-8_8-3~ubuntu18.04.2.debian.tar.xz 110524 SHA256:d31b207222fb0124718f3b918987488259f90eda3978015a67348067e7911e4f
+```
 
 ### `dpkg` source package: `lm-sensors=1:3.4.0-4`
 
@@ -6713,15 +6733,9 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `MLAA`
 - `SGI`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=19.0.8-0ubuntu0~18.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_19.0.8-0ubuntu0~18.04.3.dsc' mesa_19.0.8-0ubuntu0~18.04.3.dsc 5502 SHA256:4564e7339092a1026912ddef3699a307b4a6faeaafaee58818c432591c4a223a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_19.0.8.orig.tar.gz' mesa_19.0.8.orig.tar.gz 20086282 SHA256:1a3dc3f2af853c76aadb4a1e03c9ba420361c04a742d457a702b781671a96a57
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_19.0.8.orig.tar.gz.asc' mesa_19.0.8.orig.tar.gz.asc 274 SHA256:4b12c42521c106a29a542316ed9079c242824c24cd13255654e9caa3c72ac738
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_19.0.8-0ubuntu0~18.04.3.diff.gz' mesa_19.0.8-0ubuntu0~18.04.3.diff.gz 123984 SHA256:1bfb69d3ac40347779982ca0fcd985a22e59aaf82651dba26509101aa23005c0
-```
 
 ### `dpkg` source package: `mime-support=3.60ubuntu1`
 
@@ -7255,19 +7269,24 @@ $ apt-get source -qq --print-uris nss-mdns=0.10-8ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nss-mdns/nss-mdns_0.10-8ubuntu1.debian.tar.xz' nss-mdns_0.10-8ubuntu1.debian.tar.xz 12304 SHA256:fe914266969313943a6a311096c9bcaaf672fd38310cb86a0a1c4f6b8ed17a66
 ```
 
-### `dpkg` source package: `nss=2:3.35-2ubuntu2.6`
+### `dpkg` source package: `nss=2:3.35-2ubuntu2.7`
 
 Binary Packages:
 
-- `libnss3:amd64=2:3.35-2ubuntu2.6`
+- `libnss3:amd64=2:3.35-2ubuntu2.7`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris nss=2:3.35-2ubuntu2.7
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35-2ubuntu2.7.dsc' nss_3.35-2ubuntu2.7.dsc 2331 SHA256:d4c619606e24d2ece258749767638daf27ef274e87d214c4ad0d75400cca40e8
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35.orig.tar.gz' nss_3.35.orig.tar.gz 9620041 SHA256:f4127de09bede39f5fd0f789d33c3504c5d261e69ea03022d46b319b3e32f6fa
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35-2ubuntu2.7.debian.tar.xz' nss_3.35-2ubuntu2.7.debian.tar.xz 45568 SHA256:e39cdab85456bea8631becd276985e17f003ddc0782025b647a38d2cf16cb793
+```
 
 ### `dpkg` source package: `numactl=2.0.11-2.1ubuntu0.1`
 
@@ -8894,33 +8913,43 @@ $ apt-get source -qq --print-uris python-rosinstall=0.7.8-1
 'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosinstall/python-rosinstall_0.7.8.orig.tar.gz' python-rosinstall_0.7.8.orig.tar.gz 26425 SHA512:013b313b9e442e9b68f7aad0a372d2c1dfb9efeb66b9f20d01943bf58808e0e0bc69db848ba1c2460f0ecfaba89d385e987ccb574a7139b6500d5f958eda4d1b
 ```
 
-### `dpkg` source package: `python-rospkg-modules=1.2.2-1`
+### `dpkg` source package: `python-rospkg-modules=1.2.3-1`
 
 Binary Packages:
 
-- `python-rospkg-modules=1.2.2-1`
+- `python-rospkg-modules=1.2.3-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rospkg-modules=1.2.3-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.2.3-1.debian.tar.xz' python-rospkg-modules_1.2.3-1.debian.tar.xz 1104 SHA512:a4f92d4eec12891b9f79f4c7e93324f842f81e92b936985e106718a1e8a6ebd2b9c6adc4b964b8a2ad60b11970059e8f301d5801a6636276fe5b261a3a71bc90
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.2.3-1.dsc' python-rospkg-modules_1.2.3-1.dsc 953 SHA512:510ac95386181887b72905e1c0166b9de3608d234dccc8cf7bf61ec3b0055e9fad7939a3e0ef0eca265d2b45a744e0d5cba9f4dbf4cc9e1a2cb91422c131b0df
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.2.3.orig.tar.gz' python-rospkg-modules_1.2.3.orig.tar.gz 41475 SHA512:eb00300554faa3a17fe6564153afcfd4aa80e495d26c76a0dd328f6f693a0ca2112650e924587cf5ca2ecc9f0a1d862cec2ade70c96b5ebbbb6ad1a62b7a5afb
+```
 
-### `dpkg` source package: `python-rospkg=1.2.2-100`
+### `dpkg` source package: `python-rospkg=1.2.3-100`
 
 Binary Packages:
 
-- `python-rospkg=1.2.2-100`
+- `python-rospkg=1.2.3-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rospkg=1.2.3-100
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.2.3-100.debian.tar.xz' python-rospkg_1.2.3-100.debian.tar.xz 1084 SHA512:dd4feb913605d5fa4b496c1dfc34b50f612a3c7dd9c9e877c86170b12c58c5b791009cac00003a142e2859ab3fbe2dcf3895a4acb6e57f66bde336ff5434b508
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.2.3-100.dsc' python-rospkg_1.2.3-100.dsc 889 SHA512:5fdfc1c638ea008a56bf012e80b1934dd54b6a4bc8f6503c1ff54cdd28565c6fc878d4a395d9135118d568d3b45df74496cd7cb374ae7ac8d1b776872f945e0d
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.2.3.orig.tar.gz' python-rospkg_1.2.3.orig.tar.gz 18150 SHA512:ce62059a94eb72f71cfe7f9e70ac509b66b8f7c10aa199b2fc8026b0ac719d51080c7dbbed5a7e401ed6fb33abe301b63a872d25b74d695bce33e23e7762fe2d
+```
 
 ### `dpkg` source package: `python-service-identity=16.0.0-2`
 
