@@ -1,10 +1,10 @@
-# `fluentd:v1.6.2-1.0`
+# `fluentd:v1.8.1-1.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4d4d1e46695845fe2b663fe65829e7cf079ea2e99f95119470929d1cf194d25c`
-- Created: `2019-07-23T19:51:23.118932443Z`
-- Virtual Size: ~ 44.05 Mb  
+- Image ID: `sha256:ae89db7897cdef8cf033f76dc4f780e299e5db0154dda91673b0596680fcfbac`
+- Created: `2020-01-15T21:22:11.674827213Z`
+- Virtual Size: ~ 45.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/bin/entrypoint.sh"]`
@@ -16,7 +16,7 @@
 - Labels:
   - `Description=Fluentd docker image`
   - `Vendor=Fluent Organization`
-  - `Version=1.6.2`
+  - `Version=1.8.1`
   - `maintainer=Fluentd developers <fluentd@googlegroups.com>`
 
 ## `apk` (`.apk`-based packages)
@@ -211,16 +211,16 @@ ISC
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.20-r4 description:
+musl-1.1.20-r5 description:
 the musl c library (libc) implementation
 
-musl-1.1.20-r4 webpage:
+musl-1.1.20-r5 webpage:
 http://www.musl-libc.org/
 
-musl-1.1.20-r4 installed size:
+musl-1.1.20-r5 installed size:
 602112
 
-musl-1.1.20-r4 license:
+musl-1.1.20-r5 license:
 MIT
 
 ```
@@ -228,16 +228,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.20-r4 description:
+musl-utils-1.1.20-r5 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.20-r4 webpage:
+musl-utils-1.1.20-r5 webpage:
 http://www.musl-libc.org/
 
-musl-utils-1.1.20-r4 installed size:
+musl-utils-1.1.20-r5 installed size:
 139264
 
-musl-utils-1.1.20-r4 license:
+musl-utils-1.1.20-r5 license:
 MIT BSD GPL2+
 
 ```
@@ -313,16 +313,16 @@ GPL
 ### `apk` package: `ruby`
 
 ```console
-ruby-2.5.5-r0 description:
+ruby-2.5.7-r0 description:
 An object-oriented language for quick and easy programming
 
-ruby-2.5.5-r0 webpage:
+ruby-2.5.7-r0 webpage:
 http://www.ruby-lang.org/en/
 
-ruby-2.5.5-r0 installed size:
+ruby-2.5.7-r0 installed size:
 40960
 
-ruby-2.5.5-r0 license:
+ruby-2.5.7-r0 license:
 Ruby BSD-2-Clause
 
 ```
@@ -330,16 +330,16 @@ Ruby BSD-2-Clause
 ### `apk` package: `ruby-etc`
 
 ```console
-ruby-etc-2.5.5-r0 description:
+ruby-etc-2.5.7-r0 description:
 Provides access to information typically stored in UNIX /etc directory
 
-ruby-etc-2.5.5-r0 webpage:
+ruby-etc-2.5.7-r0 webpage:
 http://www.ruby-lang.org/en/
 
-ruby-etc-2.5.5-r0 installed size:
+ruby-etc-2.5.7-r0 installed size:
 77824
 
-ruby-etc-2.5.5-r0 license:
+ruby-etc-2.5.7-r0 license:
 BSD-2-Clause
 
 ```
@@ -347,16 +347,16 @@ BSD-2-Clause
 ### `apk` package: `ruby-irb`
 
 ```console
-ruby-irb-2.5.5-r0 description:
+ruby-irb-2.5.7-r0 description:
 The Interactive Ruby
 
-ruby-irb-2.5.5-r0 webpage:
+ruby-irb-2.5.7-r0 webpage:
 http://www.ruby-lang.org/en/
 
-ruby-irb-2.5.5-r0 installed size:
+ruby-irb-2.5.7-r0 installed size:
 319488
 
-ruby-irb-2.5.5-r0 license:
+ruby-irb-2.5.7-r0 license:
 Ruby BSD-2-Clause
 
 ```
@@ -364,16 +364,16 @@ Ruby BSD-2-Clause
 ### `apk` package: `ruby-libs`
 
 ```console
-ruby-libs-2.5.5-r0 description:
+ruby-libs-2.5.7-r0 description:
 Libraries necessary to run Ruby
 
-ruby-libs-2.5.5-r0 webpage:
+ruby-libs-2.5.7-r0 webpage:
 http://www.ruby-lang.org/en/
 
-ruby-libs-2.5.5-r0 installed size:
-13103104
+ruby-libs-2.5.7-r0 installed size:
+13094912
 
-ruby-libs-2.5.5-r0 license:
+ruby-libs-2.5.7-r0 license:
 Ruby BSD-2-Clause
 
 ```
@@ -381,16 +381,16 @@ Ruby BSD-2-Clause
 ### `apk` package: `ruby-webrick`
 
 ```console
-ruby-webrick-2.5.5-r0 description:
+ruby-webrick-2.5.7-r0 description:
 HTTP server toolkit for Ruby
 
-ruby-webrick-2.5.5-r0 webpage:
+ruby-webrick-2.5.7-r0 webpage:
 http://www.ruby-lang.org/en/
 
-ruby-webrick-2.5.5-r0 installed size:
+ruby-webrick-2.5.7-r0 installed size:
 315392
 
-ruby-webrick-2.5.5-r0 license:
+ruby-webrick-2.5.7-r0 license:
 BSD-2-Clause
 
 ```
