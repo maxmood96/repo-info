@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:081d6e7431e5276cb4f9ca276daba2bf2b5c880e8a568dd6b48fef8be7e0098c`
-- Created: `2020-01-14T22:20:43.258859272Z`
-- Virtual Size: ~ 246.90 Mb  
+- Image ID: `sha256:6dcf1dcf7719f1f7e765f548f97c9771f4f8b584b9fa91aa6ee08b0eaf516b46`
+- Created: `2020-01-16T03:59:01.873800321Z`
+- Virtual Size: ~ 247.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -694,20 +694,25 @@ $ apt-get source -qq --print-uris libcap2=1:2.24-12
 'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.24-12.debian.tar.xz' libcap2_2.24-12.debian.tar.xz 18704 SHA256:34be2e791ec96095cc0b405e532874e8c79aeb2125981ebc6896a0ad0b999cf2
 ```
 
-### `dpkg` source package: `libgcrypt20=1.6.5-2ubuntu0.5`
+### `dpkg` source package: `libgcrypt20=1.6.5-2ubuntu0.6`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.6.5-2ubuntu0.5`
+- `libgcrypt20:amd64=1.6.5-2ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
 - `GPL-2`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libgcrypt20=1.6.5-2ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.6.dsc' libgcrypt20_1.6.5-2ubuntu0.6.dsc 2653 SHA256:9a49e72112a7a42d54960a8f170117970d5751ecad0ccdb186dfea360fdd3fe4
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5.orig.tar.bz2' libgcrypt20_1.6.5.orig.tar.bz2 2549601 SHA256:f49ebc5842d455ae7019def33eb5a014a0f07a2a8353dc3aa50a76fd1dafa924
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.6.debian.tar.xz' libgcrypt20_1.6.5-2ubuntu0.6.debian.tar.xz 38412 SHA256:1024930d785a1d5a4345821e923cde1fe20bdfd1aa3a46689374e9822472df9d
+```
 
 ### `dpkg` source package: `libgpg-error=1.21-2ubuntu1`
 
