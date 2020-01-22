@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b02efded7ec8009b7a35bf247573592efffbe0f382d3c0e3dd07becb80565505`
-- Created: `2019-12-27T03:48:50.222577614Z`
-- Virtual Size: ~ 184.59 Mb  
+- Image ID: `sha256:9fbd4d96ca1e325010cbe0b523e3a2e29bbf91340a80a49a56bc8bc64f07b5e9`
+- Created: `2020-01-18T05:28:03.775203849Z`
+- Virtual Size: ~ 181.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/bin/sh","/docker-entrypoint.sh"]`
@@ -150,16 +150,16 @@ GPL-3.0-or-later
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.31.1-r8 description:
+busybox-1.31.1-r9 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.31.1-r8 webpage:
+busybox-1.31.1-r9 webpage:
 https://busybox.net/
 
-busybox-1.31.1-r8 installed size:
+busybox-1.31.1-r9 installed size:
 962560
 
-busybox-1.31.1-r8 license:
+busybox-1.31.1-r9 license:
 GPL-2.0-only
 
 ```
@@ -813,16 +813,16 @@ BSD-3-Clause
 ### `apk` package: `python3`
 
 ```console
-python3-3.8.0-r0 description:
+python3-3.8.1-r0 description:
 A high-level scripting language
 
-python3-3.8.0-r0 webpage:
+python3-3.8.1-r0 webpage:
 https://www.python.org/
 
-python3-3.8.0-r0 installed size:
-58773504
+python3-3.8.1-r0 installed size:
+58806272
 
-python3-3.8.0-r0 license:
+python3-3.8.1-r0 license:
 custom
 
 ```
@@ -898,16 +898,16 @@ Public-Domain
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.31.1-r8 description:
+ssl_client-1.31.1-r9 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.31.1-r8 webpage:
+ssl_client-1.31.1-r9 webpage:
 https://busybox.net/
 
-ssl_client-1.31.1-r8 installed size:
+ssl_client-1.31.1-r9 installed size:
 28672
 
-ssl_client-1.31.1-r8 license:
+ssl_client-1.31.1-r9 license:
 GPL-2.0-only
 
 ```
