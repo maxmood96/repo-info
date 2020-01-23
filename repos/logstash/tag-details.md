@@ -127,4 +127,120 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 
 ## `logstash:7.5.2`
 
-**does not exist** (yet?)
+```console
+$ docker pull logstash@sha256:c8e84ccb995518ba8060ed06d7d8ac4f35e6d9a720eed99c0e8a35085e736f2d
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `logstash:7.5.2` - linux; amd64
+
+```console
+$ docker pull logstash@sha256:843afb4dfc558984b3aff7126c051b1cca8b562549e08dd74b2b869793f747ae
+```
+
+-	Docker Version: 19.03.5
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **348.6 MB (348588425 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b6518c95ed2f52a8993997746b00e1c8e5626fcc90f2cb00b3e03540636e31e8`
+-	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint"]`
+
+```dockerfile
+# Tue, 12 Nov 2019 00:20:33 GMT
+ADD file:45a381049c52b5664e5e911dead277b25fadbae689c0bb35be3c42dff0f2dffe in / 
+# Tue, 12 Nov 2019 00:20:33 GMT
+LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20191001
+# Tue, 12 Nov 2019 00:20:33 GMT
+CMD ["/bin/bash"]
+# Wed, 15 Jan 2020 13:45:24 GMT
+RUN yum update -y && yum install -y java-11-openjdk-devel which &&     yum clean all
+# Wed, 15 Jan 2020 13:45:24 GMT
+RUN groupadd --gid 1000 logstash &&     adduser --uid 1000 --gid 1000       --home-dir /usr/share/logstash --no-create-home       logstash
+# Wed, 15 Jan 2020 13:45:33 GMT
+RUN curl -Lo - http://localhost:8000/logstash-7.5.2.tar.gz |     tar zxf - -C /usr/share &&     mv /usr/share/logstash-7.5.2 /usr/share/logstash &&     chown --recursive logstash:logstash /usr/share/logstash/ &&     chown -R logstash:root /usr/share/logstash &&     chmod -R g=u /usr/share/logstash &&     find /usr/share/logstash -type d -exec chmod g+s {} \; &&     ln -s /usr/share/logstash /opt/logstash
+# Wed, 15 Jan 2020 13:45:33 GMT
+WORKDIR /usr/share/logstash
+# Wed, 15 Jan 2020 13:45:33 GMT
+ENV ELASTIC_CONTAINER=true
+# Wed, 15 Jan 2020 13:45:33 GMT
+ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 15 Jan 2020 13:45:33 GMT
+ADD file:1183410472ec370104718a08e1144081518db1d006a8cc82de824a34455ab3f3 in config/pipelines.yml 
+# Wed, 15 Jan 2020 13:45:34 GMT
+ADD file:83ab096464b764c812ae68c2872c05d48ee1620e6a1629948d52c13ac6dcfe11 in config/logstash.yml 
+# Wed, 15 Jan 2020 13:45:34 GMT
+ADD file:2ef21d4766eab3ac48ed3847c8b8d05554f1fd0b39061cba66c9ac93240087fa in config/ 
+# Wed, 15 Jan 2020 13:45:34 GMT
+ADD file:0cd9cc51daf5f37b2aa8aae8cf3570a3680e22852afb2803ccb87ddcd3369f52 in pipeline/logstash.conf 
+# Wed, 15 Jan 2020 13:45:35 GMT
+RUN chown --recursive logstash:root config/ pipeline/
+# Wed, 15 Jan 2020 13:45:35 GMT
+ENV LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
+# Wed, 15 Jan 2020 13:45:35 GMT
+ADD file:29dd60f159d64086c20a7a02f84a9314f44b2290304547233fb96744325b1245 in /usr/local/bin/ 
+# Wed, 15 Jan 2020 13:45:35 GMT
+RUN chmod 0755 /usr/local/bin/docker-entrypoint
+# Wed, 15 Jan 2020 13:45:36 GMT
+USER 1000
+# Wed, 15 Jan 2020 13:45:36 GMT
+ADD file:5c5ccdd4a384a7e48f2bbf2c337adb705946473c1c2a21ccf4079e623da60dcb in /usr/local/bin/ 
+# Wed, 15 Jan 2020 13:45:36 GMT
+EXPOSE 5044 9600
+# Wed, 15 Jan 2020 13:45:36 GMT
+LABEL org.label-schema.schema-version=1.0 org.label-schema.vendor=Elastic org.label-schema.name=logstash org.label-schema.version=7.5.2 org.label-schema.url=https://www.elastic.co/products/logstash org.label-schema.vcs-url=https://github.com/elastic/logstash license=Elastic License
+# Wed, 15 Jan 2020 13:45:36 GMT
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
+```
+
+-	Layers:
+	-	`sha256:ab5ef0e5819490abe86106fd9f4381123e37a03e80e650be39f7938d30ecb530`  
+		Last Modified: Tue, 12 Nov 2019 00:23:38 GMT  
+		Size: 75.8 MB (75780712 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c1f5ec15fab87f5b6b2de8f913e8c66c9842de9f892feb8805f88128ab29a653`  
+		Last Modified: Tue, 21 Jan 2020 21:31:12 GMT  
+		Size: 104.9 MB (104862892 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5f01c340c838bce3763ea0cb65bf6cc8dfad08975ca7b27d085022fafe7044eb`  
+		Last Modified: Tue, 21 Jan 2020 21:30:37 GMT  
+		Size: 1.9 KB (1853 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ed63b0df496637c82dd742aa9c6879b934eb0af0075dc0fbacabad40469e1212`  
+		Last Modified: Tue, 21 Jan 2020 22:34:15 GMT  
+		Size: 166.9 MB (166933934 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:97492a0a9b0aa32ea7eabcd7f593cc56a7af6a925d06d02c8b76d4b017a544ca`  
+		Last Modified: Tue, 21 Jan 2020 22:33:54 GMT  
+		Size: 392.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4e8abbac21f620b43478601edd154507537bcdf9a12d821fd3868667ca3765a3`  
+		Last Modified: Tue, 21 Jan 2020 22:33:55 GMT  
+		Size: 291.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:20cf14e5c38294c82e67aa6e2295fd415e86238cd32b75cf810430313cd511f6`  
+		Last Modified: Tue, 21 Jan 2020 22:33:54 GMT  
+		Size: 454.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3bb43a20bcf4d92e95da2f932da7dbef9a8478142c20cc6272c3d76a022d7387`  
+		Last Modified: Tue, 21 Jan 2020 22:33:52 GMT  
+		Size: 291.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ebdc653ed045fe8d445042e9da6e5c90b827c371afb3b7587c15a6f509e49e34`  
+		Last Modified: Tue, 21 Jan 2020 22:33:52 GMT  
+		Size: 2.7 KB (2734 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4451a44526a94426b0e5d024b34bfcfd7bac67a921074f55c8cae65ea3742a64`  
+		Last Modified: Tue, 21 Jan 2020 22:33:52 GMT  
+		Size: 502.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4451a44526a94426b0e5d024b34bfcfd7bac67a921074f55c8cae65ea3742a64`  
+		Last Modified: Tue, 21 Jan 2020 22:33:52 GMT  
+		Size: 502.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:af3f3cc5ef2a43f563a0f0c70d09020650bfdecec1e965c77229b65fe9963c51`  
+		Last Modified: Tue, 21 Jan 2020 22:33:52 GMT  
+		Size: 1.0 MB (1003868 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
