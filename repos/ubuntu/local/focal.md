@@ -66,13 +66,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.9.5
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.9.5.dsc' apt_1.9.5.dsc 2744 SHA256:8bb29a4123f230d74db7ba1a1d9a47fdc0fcfb5be3a2b2b359592b5176329be9
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.9.5.tar.xz' apt_1.9.5.tar.xz 2175232 SHA256:55b28967d76d364c0628d9462c4b6bcfde133882cebfa7948804de6da01f4b22
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/1.9.5/
+
 
 ### `dpkg` source package: `attr=1:2.4.48-5`
 
@@ -1189,14 +1189,9 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.5-1.1ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5-1.1ubuntu4.dsc' shadow_4.5-1.1ubuntu4.dsc 1761 SHA256:8fff4bad2a5512aebe79427ca3f9e42afbd6ff5efb1080df01ccfd2417697d2e
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5.orig.tar.xz' shadow_4.5.orig.tar.xz 1344524 SHA256:22b0952dc944b163e2370bb911b11ca275fc80ad024267cf21e496b28c23d500
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5-1.1ubuntu4.debian.tar.xz' shadow_4.5-1.1ubuntu4.debian.tar.xz 472436 SHA256:4eaa200a5d65a63bc53761be36ac0f2b972f8758fd47c405714875d14d37d0d4
-```
 
 ### `dpkg` source package: `systemd=244-3ubuntu1`
 
@@ -1215,14 +1210,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=244-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_244-3ubuntu1.dsc' systemd_244-3ubuntu1.dsc 5122 SHA256:b27ea36e7d6ec26b682dea69e7d2a462918ae61785093e2fc0a1fc57ad08139b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_244.orig.tar.gz' systemd_244.orig.tar.gz 8445963 SHA256:2207ceece44108a04bdd5459aa74413d765a829848109da6f5f836c25aa393aa
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_244-3ubuntu1.debian.tar.xz' systemd_244-3ubuntu1.debian.tar.xz 178520 SHA256:a52513356ca169a246b0da59a4757d835e6bba96f3fe2f58a4951fb338c7f456
-```
 
 ### `dpkg` source package: `sysvinit=2.96-1ubuntu1`
 
@@ -1316,14 +1306,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.34-0.1ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.34-0.1ubuntu4.dsc' util-linux_2.34-0.1ubuntu4.dsc 4063 SHA256:008f382db9570a3412d20ec621bd9c5d4bc499201840d81e73b293c396597696
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.34.orig.tar.xz' util-linux_2.34.orig.tar.xz 4974812 SHA256:743f9d0c7252b6db246b659c1e1ce0bd45d8d4508b4dfa427bbb4a3e9b9f62b5
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.34-0.1ubuntu4.debian.tar.xz' util-linux_2.34-0.1ubuntu4.debian.tar.xz 86132 SHA256:ea49c33a3636c36f6a0fde35ad2f8f1ac48117c868f0c16454dbdc4625f2f866
-```
 
 ### `dpkg` source package: `xz-utils=5.2.4-1`
 
