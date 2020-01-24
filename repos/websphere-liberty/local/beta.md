@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d9ace87be3a1c8356730947c04aa08df876dc28852a2abc5ec8a916c0eca7fca`
-- Created: `2020-01-16T05:11:13.446898913Z`
-- Virtual Size: ~ 388.23 Mb  
+- Image ID: `sha256:35117a74e45c9fc3073d708e825aa4657f733de23a01a51c611af607631883df`
+- Created: `2020-01-22T05:02:32.911162317Z`
+- Virtual Size: ~ 389.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/ibm/wlp/bin/server","run","defaultServer"]`
@@ -13,16 +13,16 @@
   - `JAVA_VERSION=1.8.0_sr6`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
-  - `LIBERTY_VERSION=2019.12.0_0`
+  - `LIBERTY_VERSION=2020.1.0_0`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ibm/wlp/output`
 - Labels:
   - `org.opencontainers.image.authors=Arthur De Magalhaes, Chris Potter`
   - `org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html`
-  - `org.opencontainers.image.revision=cl191020191002-0300`
+  - `org.opencontainers.image.revision=cl200120200108-0300`
   - `org.opencontainers.image.url=http://wasdev.net`
   - `org.opencontainers.image.vendor=IBM`
-  - `org.opencontainers.image.version=2019.12.0.0`
+  - `org.opencontainers.image.version=2020.1.0.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -390,15 +390,9 @@ Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/li
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.44.1-1ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.1-1ubuntu1.2.dsc' e2fsprogs_1.44.1-1ubuntu1.2.dsc 3188 SHA256:1df3a9138e27642d0f254bdf59764db0d9b30d3f87651160aa4cce080f578513
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.1.orig.tar.gz' e2fsprogs_1.44.1.orig.tar.gz 7544908 SHA256:a5a8068dfe105050d8c63d67515a0ae5fff3f37232f725e0aa72b389eeb6c1e6
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.1.orig.tar.gz.asc' e2fsprogs_1.44.1.orig.tar.gz.asc 488 SHA256:6e8eb8df52f5cd577f5eae489108c6fbe2c5381e01f83c325873e034d5a84e46
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.44.1-1ubuntu1.2.debian.tar.xz' e2fsprogs_1.44.1-1ubuntu1.2.debian.tar.xz 80184 SHA256:851ccaa85dfb4b5f4c12b52b37321e4de18ec78f8c0893dc51a0fe43c1e71338
-```
 
 ### `dpkg` source package: `findutils=4.6.0+git+20170828-2`
 
@@ -537,15 +531,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.18-1ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18-1ubuntu1.2.dsc' gnutls28_3.5.18-1ubuntu1.2.dsc 3434 SHA256:a0b3b9553aaec9d14c66c3dbdef54ac2496089119dfd18124a69649f793f518b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18.orig.tar.xz' gnutls28_3.5.18.orig.tar.xz 7261980 SHA256:ae2248d9e78747cf9c469dde81ff8f90b56838b707a0637f3f7d4eee90e80234
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18.orig.tar.xz.asc' gnutls28_3.5.18.orig.tar.xz.asc 534 SHA256:50bb942469be0639bbab925de630fb921aa8cac5f40072cb1c2cf1fb7ae7977b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18-1ubuntu1.2.debian.tar.xz' gnutls28_3.5.18-1ubuntu1.2.debian.tar.xz 80128 SHA256:c79dc9cb5bdb4c5bdac332b911c4d5af46eea22e3c1b6de37df9da9c73c5ad83
-```
 
 ### `dpkg` source package: `grep=3.1-2build1`
 
