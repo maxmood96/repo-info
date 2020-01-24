@@ -1,7 +1,7 @@
 ## `python:3-alpine3.10`
 
 ```console
-$ docker pull python@sha256:8df0a22414bf07b4c7758d92ffd0c034a8f5983c5541aec5726c2be4553100a0
+$ docker pull python@sha256:a41443ff5d5901348e839016c8fb7f9108e8a67fa9cf67d96bde80bc6a80d676
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -215,14 +215,14 @@ CMD ["python3"]
 ### `python:3-alpine3.10` - linux; arm64 variant v8
 
 ```console
-$ docker pull python@sha256:1880f95bc1223cd69c8f4241f27aca72967f2d9d2f1fea3f076ddf0b412eb0bd
+$ docker pull python@sha256:a5e7a697cc146568302e81343805c63a9c88c74bb8b2b47a0f1aea1c53420138
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.9 MB (35878248 bytes)**  
+-	Total Size: **36.0 MB (35953943 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38ff5ebd9621d61477990727abbc82c55cdc82a1e376b7b0b2b11a2e4ce247c2`
+-	Image ID: `sha256:c4930a56684d7ba6862781fd06b6d04c9c365a063d26c11a8bb8fdd2fb8b3f3f`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -244,15 +244,15 @@ ENV PYTHON_VERSION=3.8.1
 RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		gnupg 		tar 		xz 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& { command -v gpgconf > /dev/null && gpgconf --kill all || :; } 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& apk add --no-cache --virtual .build-deps  		bluez-dev 		bzip2-dev 		coreutils 		dpkg-dev dpkg 		expat-dev 		findutils 		gcc 		gdbm-dev 		libc-dev 		libffi-dev 		libnsl-dev 		libtirpc-dev 		linux-headers 		make 		ncurses-dev 		openssl-dev 		pax-utils 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		util-linux-dev 		xz-dev 		zlib-dev 	&& apk del --no-network .fetch-deps 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 		EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000" 	&& make install 		&& find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 		| xargs -rt apk add --no-cache --virtual .python-rundeps 	&& apk del --no-network .build-deps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python 		&& python3 --version
 # Thu, 23 Jan 2020 21:16:05 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Thu, 23 Jan 2020 21:16:06 GMT
-ENV PYTHON_PIP_VERSION=19.3.1
-# Thu, 23 Jan 2020 21:16:07 GMT
+# Fri, 24 Jan 2020 09:10:33 GMT
+ENV PYTHON_PIP_VERSION=20.0.1
+# Fri, 24 Jan 2020 09:10:34 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/ffe826207a010164265d9cc807978e3604d18ca0/get-pip.py
-# Thu, 23 Jan 2020 21:16:08 GMT
+# Fri, 24 Jan 2020 09:10:34 GMT
 ENV PYTHON_GET_PIP_SHA256=b86f36cc4345ae87bfd4f10ef6b2dbfa7a872fbff70608a1e43944d283fd0eee
-# Thu, 23 Jan 2020 21:16:23 GMT
+# Fri, 24 Jan 2020 09:10:49 GMT
 RUN set -ex; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Thu, 23 Jan 2020 21:16:24 GMT
+# Fri, 24 Jan 2020 09:10:50 GMT
 CMD ["python3"]
 ```
 
@@ -273,9 +273,9 @@ CMD ["python3"]
 		Last Modified: Thu, 23 Jan 2020 22:00:43 GMT  
 		Size: 232.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3fda151ec1fca10d9be87cfd5ed8c25ba2e5b18139259a8030b11304731e6bef`  
-		Last Modified: Thu, 23 Jan 2020 22:00:44 GMT  
-		Size: 1.9 MB (1870868 bytes)  
+	-	`sha256:555dad215e5d8a39b5a99a05093de8408f468d118235e4ed2d46be16d122652f`  
+		Last Modified: Fri, 24 Jan 2020 09:27:32 GMT  
+		Size: 1.9 MB (1946563 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:3-alpine3.10` - linux; 386
