@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:87bf3eb6b71a0bf05a1582b82b74592536399b5a6e06e8c6d3e02fa4e0bbc4c5`
-- Created: `2019-10-21T19:03:23.835277641Z`
-- Virtual Size: ~ 56.97 Mb  
+- Image ID: `sha256:c9207ecaccf8213873e3008d253c285a87809b8122d52038b50f932b94d878ad`
+- Created: `2020-01-23T19:30:35.904066851Z`
+- Virtual Size: ~ 57.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NGINX_VERSION=1.16.1`
-  - `NJS_VERSION=0.3.5`
+  - `NJS_VERSION=0.3.8`
   - `PKG_RELEASE=1`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
@@ -72,16 +72,16 @@ GPL2
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.30.1-r2 description:
+busybox-1.30.1-r3 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.30.1-r2 webpage:
+busybox-1.30.1-r3 webpage:
 https://busybox.net/
 
-busybox-1.30.1-r2 installed size:
+busybox-1.30.1-r3 installed size:
 942080
 
-busybox-1.30.1-r2 license:
+busybox-1.30.1-r3 license:
 GPL-2.0
 
 ```
@@ -174,16 +174,16 @@ BSD
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1d-r0 description:
+libcrypto1.1-1.1.1d-r2 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1d-r0 webpage:
+libcrypto1.1-1.1.1d-r2 webpage:
 https://www.openssl.org
 
-libcrypto1.1-1.1.1d-r0 installed size:
-2736128
+libcrypto1.1-1.1.1d-r2 installed size:
+2740224
 
-libcrypto1.1-1.1.1d-r0 license:
+libcrypto1.1-1.1.1d-r2 license:
 OpenSSL
 
 ```
@@ -276,16 +276,16 @@ LGPL-2.1+
 ### `apk` package: `libjpeg-turbo`
 
 ```console
-libjpeg-turbo-2.0.2-r0 description:
+libjpeg-turbo-2.0.4-r0 description:
 Accelerated baseline JPEG compression and decompression library
 
-libjpeg-turbo-2.0.2-r0 webpage:
+libjpeg-turbo-2.0.4-r0 webpage:
 https://libjpeg-turbo.org/
 
-libjpeg-turbo-2.0.2-r0 installed size:
+libjpeg-turbo-2.0.4-r0 installed size:
 1343488
 
-libjpeg-turbo-2.0.2-r0 license:
+libjpeg-turbo-2.0.4-r0 license:
 BSD-3-Clause IJG Zlib
 
 ```
@@ -310,16 +310,16 @@ Libpng
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1d-r0 description:
+libssl1.1-1.1.1d-r2 description:
 SSL shared libraries
 
-libssl1.1-1.1.1d-r0 webpage:
+libssl1.1-1.1.1d-r2 webpage:
 https://www.openssl.org
 
-libssl1.1-1.1.1d-r0 installed size:
+libssl1.1-1.1.1d-r2 installed size:
 532480
 
-libssl1.1-1.1.1d-r0 license:
+libssl1.1-1.1.1d-r2 license:
 OpenSSL
 
 ```
@@ -361,16 +361,16 @@ BSD-3-Clause
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.9.9-r2 description:
+libxml2-2.9.9-r3 description:
 XML parsing library, version 2
 
-libxml2-2.9.9-r2 webpage:
+libxml2-2.9.9-r3 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.9.9-r2 installed size:
+libxml2-2.9.9-r3 installed size:
 1216512
 
-libxml2-2.9.9-r2 license:
+libxml2-2.9.9-r3 license:
 MIT
 
 ```
@@ -378,16 +378,16 @@ MIT
 ### `apk` package: `libxslt`
 
 ```console
-libxslt-1.1.33-r1 description:
+libxslt-1.1.33-r3 description:
 XML stylesheet transformation library
 
-libxslt-1.1.33-r1 webpage:
+libxslt-1.1.33-r3 webpage:
 http://xmlsoft.org/XSLT/
 
-libxslt-1.1.33-r1 installed size:
+libxslt-1.1.33-r3 installed size:
 368640
 
-libxslt-1.1.33-r1 license:
+libxslt-1.1.33-r3 license:
 custom
 
 ```
@@ -531,16 +531,16 @@ nginx-module-image-filter-1.16.1-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.16.1.0.3.5-r1 description:
+nginx-module-njs-1.16.1.0.3.8-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.16.1.0.3.5-r1 webpage:
+nginx-module-njs-1.16.1.0.3.8-r1 webpage:
 http://nginx.org/
 
-nginx-module-njs-1.16.1.0.3.5-r1 installed size:
-2093056
+nginx-module-njs-1.16.1.0.3.8-r1 installed size:
+2666496
 
-nginx-module-njs-1.16.1.0.3.5-r1 license:
+nginx-module-njs-1.16.1.0.3.8-r1 license:
 2-clause BSD-like license
 
 ```
@@ -633,16 +633,16 @@ GPL-2.0
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.30.1-r2 description:
+ssl_client-1.30.1-r3 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.30.1-r2 webpage:
+ssl_client-1.30.1-r3 webpage:
 https://busybox.net/
 
-ssl_client-1.30.1-r2 installed size:
+ssl_client-1.30.1-r3 installed size:
 28672
 
-ssl_client-1.30.1-r2 license:
+ssl_client-1.30.1-r3 license:
 GPL-2.0
 
 ```

@@ -1,17 +1,17 @@
-# `nginx:1.17.7-alpine-perl`
+# `nginx:1.17.8-alpine-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cc04228c8f7428fb672059d6c68eb7520cc14e9914c8ad850b1a38f0ef4bd97a`
-- Created: `2020-01-09T22:21:05.958827166Z`
-- Virtual Size: ~ 57.25 Mb  
+- Image ID: `sha256:e74c51ae34a9b59ce0460007e94c482d36680047ce02da96513d5b0c87c78abd`
+- Created: `2020-01-23T19:29:55.275055103Z`
+- Virtual Size: ~ 57.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.17.7`
-  - `NJS_VERSION=0.3.7`
+  - `NGINX_VERSION=1.17.8`
+  - `NJS_VERSION=0.3.8`
   - `PKG_RELEASE=1`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
@@ -72,16 +72,16 @@ GPL2
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.30.1-r2 description:
+busybox-1.30.1-r3 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.30.1-r2 webpage:
+busybox-1.30.1-r3 webpage:
 https://busybox.net/
 
-busybox-1.30.1-r2 installed size:
+busybox-1.30.1-r3 installed size:
 942080
 
-busybox-1.30.1-r2 license:
+busybox-1.30.1-r3 license:
 GPL-2.0
 
 ```
@@ -174,16 +174,16 @@ BSD
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1d-r0 description:
+libcrypto1.1-1.1.1d-r2 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1d-r0 webpage:
+libcrypto1.1-1.1.1d-r2 webpage:
 https://www.openssl.org
 
-libcrypto1.1-1.1.1d-r0 installed size:
-2736128
+libcrypto1.1-1.1.1d-r2 installed size:
+2740224
 
-libcrypto1.1-1.1.1d-r0 license:
+libcrypto1.1-1.1.1d-r2 license:
 OpenSSL
 
 ```
@@ -310,16 +310,16 @@ Libpng
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1d-r0 description:
+libssl1.1-1.1.1d-r2 description:
 SSL shared libraries
 
-libssl1.1-1.1.1d-r0 webpage:
+libssl1.1-1.1.1d-r2 webpage:
 https://www.openssl.org
 
-libssl1.1-1.1.1d-r0 installed size:
+libssl1.1-1.1.1d-r2 installed size:
 532480
 
-libssl1.1-1.1.1d-r0 license:
+libssl1.1-1.1.1d-r2 license:
 OpenSSL
 
 ```
@@ -480,16 +480,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.17.7-r1 description:
+nginx-1.17.8-r1 description:
 High performance web server
 
-nginx-1.17.7-r1 webpage:
+nginx-1.17.8-r1 webpage:
 http://nginx.org/
 
-nginx-1.17.7-r1 installed size:
+nginx-1.17.8-r1 installed size:
 2555904
 
-nginx-1.17.7-r1 license:
+nginx-1.17.8-r1 license:
 2-clause BSD-like license
 
 ```
@@ -497,16 +497,16 @@ nginx-1.17.7-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.17.7-r1 description:
+nginx-module-geoip-1.17.8-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.17.7-r1 webpage:
+nginx-module-geoip-1.17.8-r1 webpage:
 http://nginx.org/
 
-nginx-module-geoip-1.17.7-r1 installed size:
+nginx-module-geoip-1.17.8-r1 installed size:
 118784
 
-nginx-module-geoip-1.17.7-r1 license:
+nginx-module-geoip-1.17.8-r1 license:
 2-clause BSD-like license
 
 ```
@@ -514,16 +514,16 @@ nginx-module-geoip-1.17.7-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.17.7-r1 description:
+nginx-module-image-filter-1.17.8-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.17.7-r1 webpage:
+nginx-module-image-filter-1.17.8-r1 webpage:
 http://nginx.org/
 
-nginx-module-image-filter-1.17.7-r1 installed size:
+nginx-module-image-filter-1.17.8-r1 installed size:
 90112
 
-nginx-module-image-filter-1.17.7-r1 license:
+nginx-module-image-filter-1.17.8-r1 license:
 2-clause BSD-like license
 
 ```
@@ -531,16 +531,16 @@ nginx-module-image-filter-1.17.7-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.17.7.0.3.7-r1 description:
+nginx-module-njs-1.17.8.0.3.8-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.17.7.0.3.7-r1 webpage:
+nginx-module-njs-1.17.8.0.3.8-r1 webpage:
 http://nginx.org/
 
-nginx-module-njs-1.17.7.0.3.7-r1 installed size:
-2347008
+nginx-module-njs-1.17.8.0.3.8-r1 installed size:
+2666496
 
-nginx-module-njs-1.17.7.0.3.7-r1 license:
+nginx-module-njs-1.17.8.0.3.8-r1 license:
 2-clause BSD-like license
 
 ```
@@ -548,16 +548,16 @@ nginx-module-njs-1.17.7.0.3.7-r1 license:
 ### `apk` package: `nginx-module-perl`
 
 ```console
-nginx-module-perl-1.17.7-r1 description:
+nginx-module-perl-1.17.8-r1 description:
 nginx Perl dynamic module
 
-nginx-module-perl-1.17.7-r1 webpage:
+nginx-module-perl-1.17.8-r1 webpage:
 http://nginx.org/
 
-nginx-module-perl-1.17.7-r1 installed size:
+nginx-module-perl-1.17.8-r1 installed size:
 163840
 
-nginx-module-perl-1.17.7-r1 license:
+nginx-module-perl-1.17.8-r1 license:
 2-clause BSD-like license
 
 ```
@@ -565,16 +565,16 @@ nginx-module-perl-1.17.7-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.17.7-r1 description:
+nginx-module-xslt-1.17.8-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.17.7-r1 webpage:
+nginx-module-xslt-1.17.8-r1 webpage:
 http://nginx.org/
 
-nginx-module-xslt-1.17.7-r1 installed size:
+nginx-module-xslt-1.17.8-r1 installed size:
 86016
 
-nginx-module-xslt-1.17.7-r1 license:
+nginx-module-xslt-1.17.8-r1 license:
 2-clause BSD-like license
 
 ```
@@ -633,16 +633,16 @@ GPL-2.0
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.30.1-r2 description:
+ssl_client-1.30.1-r3 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.30.1-r2 webpage:
+ssl_client-1.30.1-r3 webpage:
 https://busybox.net/
 
-ssl_client-1.30.1-r2 installed size:
+ssl_client-1.30.1-r3 installed size:
 28672
 
-ssl_client-1.30.1-r2 license:
+ssl_client-1.30.1-r3 license:
 GPL-2.0
 
 ```
