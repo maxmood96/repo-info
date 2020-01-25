@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ae89db7897cdef8cf033f76dc4f780e299e5db0154dda91673b0596680fcfbac`
-- Created: `2020-01-15T21:22:11.674827213Z`
-- Virtual Size: ~ 45.37 Mb  
+- Image ID: `sha256:41a6ad1233ce7c9046c13db2fd1f97364149ad549a512ab72dedd2bef5e63b6b`
+- Created: `2020-01-23T17:22:42.855684111Z`
+- Virtual Size: ~ 44.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/bin/entrypoint.sh"]`
@@ -160,16 +160,16 @@ BSD
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1b-r1 description:
+libcrypto1.1-1.1.1d-r2 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1b-r1 webpage:
+libcrypto1.1-1.1.1d-r2 webpage:
 https://www.openssl.org
 
-libcrypto1.1-1.1.1b-r1 installed size:
+libcrypto1.1-1.1.1d-r2 installed size:
 2748416
 
-libcrypto1.1-1.1.1b-r1 license:
+libcrypto1.1-1.1.1d-r2 license:
 OpenSSL
 
 ```
@@ -177,16 +177,16 @@ OpenSSL
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1b-r1 description:
+libssl1.1-1.1.1d-r2 description:
 SSL shared libraries
 
-libssl1.1-1.1.1b-r1 webpage:
+libssl1.1-1.1.1d-r2 webpage:
 https://www.openssl.org
 
-libssl1.1-1.1.1b-r1 installed size:
+libssl1.1-1.1.1d-r2 installed size:
 536576
 
-libssl1.1-1.1.1b-r1 license:
+libssl1.1-1.1.1d-r2 license:
 OpenSSL
 
 ```
