@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bf81687f1858b7e3e68cb96429e13784daab9529bcdd17245a342687cf999877`
-- Created: `2020-01-07T02:47:20.759471547Z`
-- Virtual Size: ~ 362.10 Mb  
+- Image ID: `sha256:0aea4d9afbc8b24ba2b8683642b3634cb4af5a361967bf5da6fcafaa4ae3a439`
+- Created: `2020-01-25T03:04:25.595703767Z`
+- Virtual Size: ~ 366.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -146,16 +146,16 @@ GPL-3.0-or-later
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.30.1-r2 description:
+busybox-1.30.1-r3 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.30.1-r2 webpage:
+busybox-1.30.1-r3 webpage:
 https://busybox.net/
 
-busybox-1.30.1-r2 installed size:
+busybox-1.30.1-r3 installed size:
 942080
 
-busybox-1.30.1-r2 license:
+busybox-1.30.1-r3 license:
 GPL-2.0
 
 ```
@@ -568,37 +568,37 @@ MIT
 
 ```
 
-### `apk` package: `imagemagick6`
+### `apk` package: `imagemagick`
 
 ```console
-imagemagick6-6.9.10.69-r0 description:
-A collection of tools and libraries for many image formats (legacy version 6)
+imagemagick-7.0.8.68-r0 description:
+Collection of tools and libraries for many image formats
 
-imagemagick6-6.9.10.69-r0 webpage:
+imagemagick-7.0.8.68-r0 webpage:
 https://www.imagemagick.org/
 
-imagemagick6-6.9.10.69-r0 installed size:
-196608
+imagemagick-7.0.8.68-r0 installed size:
+4493312
 
-imagemagick6-6.9.10.69-r0 license:
-Apache-2.0
+imagemagick-7.0.8.68-r0 license:
+ImageMagick
 
 ```
 
-### `apk` package: `imagemagick6-libs`
+### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick6-libs-6.9.10.69-r0 description:
-A collection of tools and libraries for many image formats (legacy version 6) (libraries)
+imagemagick-libs-7.0.8.68-r0 description:
+Collection of tools and libraries for many image formats (libraries)
 
-imagemagick6-libs-6.9.10.69-r0 webpage:
+imagemagick-libs-7.0.8.68-r0 webpage:
 https://www.imagemagick.org/
 
-imagemagick6-libs-6.9.10.69-r0 installed size:
-6942720
+imagemagick-libs-7.0.8.68-r0 installed size:
+3260416
 
-imagemagick6-libs-6.9.10.69-r0 license:
-Apache-2.0
+imagemagick-libs-7.0.8.68-r0 license:
+ImageMagick
 
 ```
 
@@ -755,6 +755,23 @@ MIT
 
 ```
 
+### `apk` package: `libde265`
+
+```console
+libde265-1.0.3-r0 description:
+Open h.265 video codec implementation
+
+libde265-1.0.3-r0 webpage:
+https://github.com/strukturag/libde265
+
+libde265-1.0.3-r0 installed size:
+819200
+
+libde265-1.0.3-r0 license:
+LGPL-3.0-or-later
+
+```
+
 ### `apk` package: `libedit`
 
 ```console
@@ -840,20 +857,20 @@ LGPL-3.0
 
 ```
 
-### `apk` package: `libgomp`
+### `apk` package: `libheif`
 
 ```console
-libgomp-8.3.0-r0 description:
-GCC shared-memory parallel programming API library
+libheif-1.3.2-r2 description:
+ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
 
-libgomp-8.3.0-r0 webpage:
-http://gcc.gnu.org
+libheif-1.3.2-r2 webpage:
+https://www.libde265.org
 
-libgomp-8.3.0-r0 installed size:
-155648
+libheif-1.3.2-r2 installed size:
+401408
 
-libgomp-8.3.0-r0 license:
-GPL LGPL
+libheif-1.3.2-r2 license:
+LGPL-3.0-or-later
 
 ```
 
@@ -877,16 +894,16 @@ LGPL-2.1+
 ### `apk` package: `libjpeg-turbo`
 
 ```console
-libjpeg-turbo-2.0.3-r0 description:
+libjpeg-turbo-2.0.4-r0 description:
 Accelerated baseline JPEG compression and decompression library
 
-libjpeg-turbo-2.0.3-r0 webpage:
+libjpeg-turbo-2.0.4-r0 webpage:
 https://libjpeg-turbo.org/
 
-libjpeg-turbo-2.0.3-r0 installed size:
+libjpeg-turbo-2.0.4-r0 installed size:
 1343488
 
-libjpeg-turbo-2.0.3-r0 license:
+libjpeg-turbo-2.0.4-r0 license:
 BSD-3-Clause IJG Zlib
 
 ```
@@ -1126,6 +1143,23 @@ libuuid-2.33.2-r0 installed size:
 
 libuuid-2.33.2-r0 license:
 GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
+
+```
+
+### `apk` package: `libwebp`
+
+```console
+libwebp-1.0.2-r0 description:
+Libraries for working with WebP images
+
+libwebp-1.0.2-r0 webpage:
+https://developers.google.com/speed/webp
+
+libwebp-1.0.2-r0 installed size:
+581632
+
+libwebp-1.0.2-r0 license:
+BSD-3-Clause
 
 ```
 
@@ -1608,16 +1642,16 @@ GPL-2.0 LGPL-2.1+
 ### `apk` package: `python2`
 
 ```console
-python2-2.7.16-r1 description:
+python2-2.7.16-r2 description:
 A high-level scripting language
 
-python2-2.7.16-r1 webpage:
+python2-2.7.16-r2 webpage:
 https://www.python.org
 
-python2-2.7.16-r1 installed size:
+python2-2.7.16-r2 installed size:
 39821312
 
-python2-2.7.16-r1 license:
+python2-2.7.16-r2 license:
 custom
 
 ```
@@ -1710,16 +1744,16 @@ Public-Domain
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.30.1-r2 description:
+ssl_client-1.30.1-r3 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.30.1-r2 webpage:
+ssl_client-1.30.1-r3 webpage:
 https://busybox.net/
 
-ssl_client-1.30.1-r2 installed size:
+ssl_client-1.30.1-r3 installed size:
 28672
 
-ssl_client-1.30.1-r2 license:
+ssl_client-1.30.1-r3 license:
 GPL-2.0
 
 ```
@@ -1857,6 +1891,23 @@ wget-1.20.3-r0 installed size:
 
 wget-1.20.3-r0 license:
 GPL-3.0-or-later
+
+```
+
+### `apk` package: `x265-libs`
+
+```console
+x265-libs-3.0-r0 description:
+Open Source H265/HEVC video encoder (libraries)
+
+x265-libs-3.0-r0 webpage:
+http://x265.org
+
+x265-libs-3.0-r0 installed size:
+5824512
+
+x265-libs-3.0-r0 license:
+GPL-2.0-or-later
 
 ```
 
