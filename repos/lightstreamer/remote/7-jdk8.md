@@ -1,7 +1,7 @@
 ## `lightstreamer:7-jdk8`
 
 ```console
-$ docker pull lightstreamer@sha256:053ee9877e61a6d00b39ba55271dd638d97711f89f02d43ed17ba865d2cf2da4
+$ docker pull lightstreamer@sha256:b2d4ee71d98572c552570e52e86f3ea6449e82b33921931d482795b4459d792c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull lightstreamer@sha256:053ee9877e61a6d00b39ba55271dd638d97711f89f02d
 ### `lightstreamer:7-jdk8` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:409103ad0c4000a90534a2137f6c4a6e6a17bba6ae7189f7d8a28dce37c05d16
+$ docker pull lightstreamer@sha256:dfbd75141d7e9e3741bf1cf6318c421871346039157eae3884f77ad63aa90c99
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **259.6 MB (259628360 bytes)**  
+-	Total Size: **266.4 MB (266410106 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0c10e9ea6ea63cf8308f5ad5140696681f21b00456a1f692a6cb798fafd3d00c`
+-	Image ID: `sha256:6b29affac5f1ae32cbfee2d5a310e7cc0c1f5c816bcc4f49c6bdab8df5649cb3`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -54,19 +54,19 @@ RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
 # Thu, 23 Jan 2020 03:10:46 GMT
 RUN gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Thu, 23 Jan 2020 03:10:47 GMT
-ENV LIGHTSTREAMER_VERSION=7_0_3_20190107
-# Thu, 23 Jan 2020 03:10:47 GMT
-ENV LIGHTSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_7_0_3_20190107.tar.gz
-# Thu, 23 Jan 2020 03:10:55 GMT
+# Tue, 28 Jan 2020 00:38:06 GMT
+ENV LIGHTSTREAMER_VERSION=7_1_0_20200124
+# Tue, 28 Jan 2020 00:38:06 GMT
+ENV LIGHTSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_7_1_0_20200124.tar.gz
+# Tue, 28 Jan 2020 00:38:10 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && rm -fr /lightstreamer/DOC-SDKs         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Thu, 23 Jan 2020 03:10:56 GMT
+# Tue, 28 Jan 2020 00:38:10 GMT
 USER lightstreamer
-# Thu, 23 Jan 2020 03:10:56 GMT
+# Tue, 28 Jan 2020 00:38:10 GMT
 EXPOSE 8080
-# Thu, 23 Jan 2020 03:10:56 GMT
+# Tue, 28 Jan 2020 00:38:10 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Thu, 23 Jan 2020 03:10:56 GMT
+# Tue, 28 Jan 2020 00:38:11 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -103,7 +103,7 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Thu, 23 Jan 2020 03:11:50 GMT  
 		Size: 2.0 KB (2012 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:723d27e9bbafc5e4e69c133b57618bb1a31174f4a2179d8cda1803bbf6eb7151`  
-		Last Modified: Thu, 23 Jan 2020 03:12:10 GMT  
-		Size: 39.9 MB (39885278 bytes)  
+	-	`sha256:7b78b5ba55d8b15751683e1efd6188c8c2115e883ebbc768586a8bbb6e6a8bf6`  
+		Last Modified: Tue, 28 Jan 2020 00:38:38 GMT  
+		Size: 46.7 MB (46667024 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
