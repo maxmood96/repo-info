@@ -1,7 +1,7 @@
 ## `geonetwork:postgres`
 
 ```console
-$ docker pull geonetwork@sha256:f25c61912c7f52bd1790c60e07e2380926bd86555a8343e12a45a16f911e3e23
+$ docker pull geonetwork@sha256:783f9ededa14a21855c0f5ce8d412386a26d35587c5cca1abd25430c1c328f16
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull geonetwork@sha256:f25c61912c7f52bd1790c60e07e2380926bd86555a8343e1
 ### `geonetwork:postgres` - linux; amd64
 
 ```console
-$ docker pull geonetwork@sha256:04b63e9376f191e86f195b4a4007c71e640cd1d6015a090e96376321b9543268
+$ docker pull geonetwork@sha256:1251e46cbb256e7daa4f63a4ea36717ce08efc88b8c2b8891e68c8e51bbe365d
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **452.3 MB (452303693 bytes)**  
+-	Total Size: **437.7 MB (437674510 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf678b186bdc2388be1930a33c0ba20a854ba2229f42f4de56a3390fbbbd7340`
+-	Image ID: `sha256:090062e0e0af83987e076b8ce115dcd7d6dba33a34ea45ded81daa06fad8c13b`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
@@ -85,31 +85,31 @@ ENV GN_FILE=geonetwork.war
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
 # Thu, 23 Jan 2020 04:49:59 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:+UseConcMarkSweepGC
-# Thu, 23 Jan 2020 04:50:35 GMT
-ENV GN_VERSION=3.8.2
-# Thu, 23 Jan 2020 04:50:35 GMT
-ENV GN_DOWNLOAD_MD5=da014d9cdef0a855cf04a8aaeb418895
-# Thu, 23 Jan 2020 04:50:35 GMT
+# Tue, 28 Jan 2020 00:29:32 GMT
+ENV GN_VERSION=3.10.0
+# Tue, 28 Jan 2020 00:29:32 GMT
+ENV GN_DOWNLOAD_MD5=86b18cd2ef60f11dd1dbe055054cee97
+# Tue, 28 Jan 2020 00:29:32 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Thu, 23 Jan 2020 04:50:58 GMT
+# Tue, 28 Jan 2020 00:30:18 GMT
 RUN curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/geonetwork.war/download &&      echo "$GN_DOWNLOAD_MD5 *$GN_FILE" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Thu, 23 Jan 2020 04:50:58 GMT
+# Tue, 28 Jan 2020 00:30:19 GMT
 COPY file:0804862fd42c05f06dfa65cb1e5dad9a956d8ac6a3ddd4d962847ba159f5cfe6 in /entrypoint.sh 
-# Thu, 23 Jan 2020 04:50:58 GMT
+# Tue, 28 Jan 2020 00:30:19 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 23 Jan 2020 04:50:59 GMT
+# Tue, 28 Jan 2020 00:30:19 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 23 Jan 2020 04:51:12 GMT
+# Tue, 28 Jan 2020 00:30:35 GMT
 RUN apt-get update && apt-get install -y postgresql-client &&     rm -rf /var/lib/apt/lists/*
-# Thu, 23 Jan 2020 04:51:13 GMT
+# Tue, 28 Jan 2020 00:30:36 GMT
 RUN sed -i -e 's#<import resource="../config-db/h2.xml"/>#<!--<import resource="../config-db/h2.xml"/> -->#g' $CATALINA_HOME/webapps/geonetwork/WEB-INF/config-node/srv.xml && sed -i -e 's#<!--<import resource="../config-db/postgres.xml"/>-->#<import resource="../config-db/postgres.xml"/>#g' $CATALINA_HOME/webapps/geonetwork/WEB-INF/config-node/srv.xml
-# Thu, 23 Jan 2020 04:51:13 GMT
+# Tue, 28 Jan 2020 00:30:36 GMT
 COPY file:2dedfd940a86106b2ae284c537f14d365881c03a01b212f81b49177bb22c8d7a in /usr/local/tomcat/webapps/geonetwork/WEB-INF/config-db/jdbc.properties 
-# Thu, 23 Jan 2020 04:51:13 GMT
+# Tue, 28 Jan 2020 00:30:36 GMT
 COPY file:c88411abba7ad9b7bb75019f08755dbfa163d2fc7fdd80676bf9350c4c56a19c in /entrypoint.sh 
-# Thu, 23 Jan 2020 04:51:13 GMT
+# Tue, 28 Jan 2020 00:30:36 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 23 Jan 2020 04:51:13 GMT
+# Tue, 28 Jan 2020 00:30:36 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -154,27 +154,27 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 23 Jan 2020 04:16:05 GMT  
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d83146204f899e7fa916436101b87312f200c7277b550af055a1ed3f976f646d`  
-		Last Modified: Thu, 23 Jan 2020 04:55:49 GMT  
-		Size: 208.7 MB (208724890 bytes)  
+	-	`sha256:02a3964ab6e2c8c5bf46121b9c4e1971bf194181160a920355211fd7c4afd972`  
+		Last Modified: Tue, 28 Jan 2020 00:31:38 GMT  
+		Size: 194.1 MB (194095669 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff7de1968f8966c5f3efcf35724e34b29fa65e8700a1516f98e0bbbf73b19741`  
-		Last Modified: Thu, 23 Jan 2020 04:53:44 GMT  
+	-	`sha256:794ab9a44f3190b2e58c94a9f7f4d293bde04c786f1fadefef675b2f2bdc2210`  
+		Last Modified: Tue, 28 Jan 2020 00:31:23 GMT  
 		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e85df91541b7d5f258e6689b8f975e3f05782f76dcb1a16eb9085c332e49fae5`  
-		Last Modified: Thu, 23 Jan 2020 04:56:00 GMT  
-		Size: 12.6 MB (12607189 bytes)  
+	-	`sha256:be59707f4da51366cb97b4d0d635236bde16319a43fbe0d6754dbc88291c68fe`  
+		Last Modified: Tue, 28 Jan 2020 00:31:46 GMT  
+		Size: 12.6 MB (12607225 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c5e900270d92c37d8bb9da9a02fda9b4f93ef1d3e42ea2a8c16b79bcf6020c2`  
-		Last Modified: Thu, 23 Jan 2020 04:55:58 GMT  
-		Size: 1.3 KB (1279 bytes)  
+	-	`sha256:929ee65709e4bd16b7d7617e2a1d1fdfe23c9c3184e8f346d36ef829aac16318`  
+		Last Modified: Tue, 28 Jan 2020 00:31:43 GMT  
+		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bed0223db6b6203d28964c80d75d127fa0c17f0889e10a571c8642d5f2ece4e6`  
-		Last Modified: Thu, 23 Jan 2020 04:55:58 GMT  
-		Size: 555.0 B  
+	-	`sha256:ac4f7451433988278b04ee31ec98275dbac0bcc79745adde04d36995a2fbcb49`  
+		Last Modified: Tue, 28 Jan 2020 00:31:43 GMT  
+		Size: 554.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51dc6b0c93211c82c2288d9229b02ba64c27c25c767cd59636bee0ff6868591a`  
-		Last Modified: Thu, 23 Jan 2020 04:55:58 GMT  
-		Size: 973.0 B  
+	-	`sha256:6c5fd1374213eaeefda0a8f2ed702d815f353784269311afe07494f49a1a2411`  
+		Last Modified: Tue, 28 Jan 2020 00:31:43 GMT  
+		Size: 974.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
