@@ -1,7 +1,7 @@
 ## `clojure:openjdk-14-tools-deps-alpine`
 
 ```console
-$ docker pull clojure@sha256:e37bbb90920c4dffd563904ce244a2d41f3a2dc9f969bdc6a57684e734b0f6e0
+$ docker pull clojure@sha256:5874f17f654e23172962a93e5b74638375af996c3f8deb4b4b8fdd8b8b18d36c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull clojure@sha256:e37bbb90920c4dffd563904ce244a2d41f3a2dc9f969bdc6a57
 ### `clojure:openjdk-14-tools-deps-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:953391e0491bfd51f893ae823f445405049e32d9d4d1361f8043dc8a7c9dd860
+$ docker pull clojure@sha256:1c3a20b3c7c77f060d850a895a6c0cd1399c88f7e301818188168de9e026f9e5
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **224.5 MB (224451919 bytes)**  
+-	Total Size: **226.1 MB (226080695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ea831c5f55902822b8a0379509e681b818d01054f6b51fce3ee976d9d7f3b4d`
+-	Image ID: `sha256:d493106d4c7e1643b6e6374efa48745a1a22053d29e686be1a3222f90c7ae9d7`
 -	Default Command: `["sh","-c","sleep 1 && exec clj"]`
 
 ```dockerfile
@@ -30,23 +30,23 @@ CMD ["/bin/sh"]
 ENV JAVA_HOME=/opt/openjdk-14
 # Thu, 23 Jan 2020 22:15:00 GMT
 ENV PATH=/opt/openjdk-14/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Jan 2020 22:15:00 GMT
-ENV JAVA_VERSION=14-ea+15
-# Thu, 23 Jan 2020 22:15:00 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/alpine/15/binaries/openjdk-14-ea+15_linux-x64-musl_bin.tar.gz
-# Thu, 23 Jan 2020 22:15:01 GMT
-ENV JAVA_SHA256=76091da1b6ed29788f0cf85454d23900a4134286e5feb571247e5861f618d3cd
-# Thu, 23 Jan 2020 22:16:42 GMT
+# Tue, 28 Jan 2020 01:03:57 GMT
+ENV JAVA_VERSION=14-ea+33
+# Tue, 28 Jan 2020 01:03:57 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/alpine/33/binaries/openjdk-14-ea+33_linux-x64-musl_bin.tar.gz
+# Tue, 28 Jan 2020 01:03:58 GMT
+ENV JAVA_SHA256=25344fdf7438d05166fb3471a591aacf72e5fc7ca334b59b3f90ff34ee3b27e5
+# Tue, 28 Jan 2020 01:05:39 GMT
 RUN set -eux; 		wget -O /openjdk.tgz "$JAVA_URL"; 	echo "$JAVA_SHA256 */openjdk.tgz" | sha256sum -c -; 	mkdir -p "$JAVA_HOME"; 	tar --extract --file /openjdk.tgz --directory "$JAVA_HOME" --strip-components 1; 	rm /openjdk.tgz; 		java -Xshare:dump; 		java --version; 	javac --version
-# Thu, 23 Jan 2020 22:16:42 GMT
+# Tue, 28 Jan 2020 01:05:39 GMT
 CMD ["jshell"]
-# Fri, 24 Jan 2020 15:04:12 GMT
+# Tue, 28 Jan 2020 02:31:32 GMT
 ENV CLOJURE_VERSION=1.10.1.502
-# Fri, 24 Jan 2020 15:04:12 GMT
+# Tue, 28 Jan 2020 02:31:33 GMT
 WORKDIR /tmp
-# Fri, 24 Jan 2020 15:04:21 GMT
+# Tue, 28 Jan 2020 02:31:41 GMT
 RUN apk add --update --no-cache curl bash make && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apk del curl
-# Fri, 24 Jan 2020 15:04:21 GMT
+# Tue, 28 Jan 2020 02:31:41 GMT
 CMD ["sh" "-c" "sleep 1 && exec clj"]
 ```
 
@@ -55,11 +55,11 @@ CMD ["sh" "-c" "sleep 1 && exec clj"]
 		Last Modified: Thu, 23 Jan 2020 16:53:38 GMT  
 		Size: 2.8 MB (2786962 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7429ae8c261d6aa4d644ad3ea6a358cb2363e002bc4b2ca644cf5968e1ed3eb`  
-		Last Modified: Thu, 23 Jan 2020 22:19:12 GMT  
-		Size: 198.7 MB (198727049 bytes)  
+	-	`sha256:345cf19c142c73b4673b7f5195d90723d77f452a902206b91c63c6ddca4e6bb7`  
+		Last Modified: Tue, 28 Jan 2020 01:09:10 GMT  
+		Size: 200.4 MB (200355870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5fe372e5c788e22453d7dd0abc7e8a7efaba7d335c41001f3c82c228c337644`  
-		Last Modified: Fri, 24 Jan 2020 15:06:19 GMT  
-		Size: 22.9 MB (22937908 bytes)  
+	-	`sha256:0703dacb21a8837971f39fc3beea0a6c17c58c13664828d6d4c087cec9e07a0f`  
+		Last Modified: Tue, 28 Jan 2020 02:32:49 GMT  
+		Size: 22.9 MB (22937863 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

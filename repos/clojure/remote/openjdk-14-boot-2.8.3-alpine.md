@@ -1,7 +1,7 @@
 ## `clojure:openjdk-14-boot-2.8.3-alpine`
 
 ```console
-$ docker pull clojure@sha256:7faa699e3c7e9f90612bc21ff6e7e71b07c783909bf65331eb321759afb5fb48
+$ docker pull clojure@sha256:14a9574741752f3ff6e53a053bf02007d3e0c012fd198696d58d85b6456eb472
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull clojure@sha256:7faa699e3c7e9f90612bc21ff6e7e71b07c783909bf65331eb3
 ### `clojure:openjdk-14-boot-2.8.3-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:9e497894fb89a6940bdb8e9626b55b1e8a9f93051bbfccd32c8e8b0a07d7cb1b
+$ docker pull clojure@sha256:bf0956ac4b3b8bc300a527e48c937837fd3ead6f6087b4c10ab1ca7e5c9a3807
 ```
 
 -	Docker Version: 18.06.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **261.6 MB (261552278 bytes)**  
+-	Total Size: **263.2 MB (263181326 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c1e7f31007d709b7e7b1f8685f11865fea5235a6882707d6ac0cee02aedea086`
+-	Image ID: `sha256:61cbd50b691cc8a95eb2f0045448f225c7f41fb586457100e5bbb2f549bcc3ef`
 -	Default Command: `["boot","repl"]`
 
 ```dockerfile
@@ -30,31 +30,31 @@ CMD ["/bin/sh"]
 ENV JAVA_HOME=/opt/openjdk-14
 # Thu, 23 Jan 2020 22:15:00 GMT
 ENV PATH=/opt/openjdk-14/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Jan 2020 22:15:00 GMT
-ENV JAVA_VERSION=14-ea+15
-# Thu, 23 Jan 2020 22:15:00 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/alpine/15/binaries/openjdk-14-ea+15_linux-x64-musl_bin.tar.gz
-# Thu, 23 Jan 2020 22:15:01 GMT
-ENV JAVA_SHA256=76091da1b6ed29788f0cf85454d23900a4134286e5feb571247e5861f618d3cd
-# Thu, 23 Jan 2020 22:16:42 GMT
+# Tue, 28 Jan 2020 01:03:57 GMT
+ENV JAVA_VERSION=14-ea+33
+# Tue, 28 Jan 2020 01:03:57 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/alpine/33/binaries/openjdk-14-ea+33_linux-x64-musl_bin.tar.gz
+# Tue, 28 Jan 2020 01:03:58 GMT
+ENV JAVA_SHA256=25344fdf7438d05166fb3471a591aacf72e5fc7ca334b59b3f90ff34ee3b27e5
+# Tue, 28 Jan 2020 01:05:39 GMT
 RUN set -eux; 		wget -O /openjdk.tgz "$JAVA_URL"; 	echo "$JAVA_SHA256 */openjdk.tgz" | sha256sum -c -; 	mkdir -p "$JAVA_HOME"; 	tar --extract --file /openjdk.tgz --directory "$JAVA_HOME" --strip-components 1; 	rm /openjdk.tgz; 		java -Xshare:dump; 		java --version; 	javac --version
-# Thu, 23 Jan 2020 22:16:42 GMT
+# Tue, 28 Jan 2020 01:05:39 GMT
 CMD ["jshell"]
-# Fri, 24 Jan 2020 15:03:09 GMT
+# Tue, 28 Jan 2020 02:30:18 GMT
 ENV BOOT_VERSION=2.8.3
-# Fri, 24 Jan 2020 15:03:09 GMT
+# Tue, 28 Jan 2020 02:30:18 GMT
 ENV BOOT_INSTALL=/usr/local/bin/
-# Fri, 24 Jan 2020 15:03:09 GMT
+# Tue, 28 Jan 2020 02:30:18 GMT
 WORKDIR /tmp
-# Fri, 24 Jan 2020 15:03:11 GMT
+# Tue, 28 Jan 2020 02:30:20 GMT
 RUN apk add --update --no-cache bash openssl && mkdir -p $BOOT_INSTALL && wget -q https://github.com/boot-clj/boot-bin/releases/download/latest/boot.sh && echo "Comparing installer checksum..." && echo "f717ef381f2863a4cad47bf0dcc61e923b3d2afb *boot.sh" | sha1sum -c - && mv boot.sh $BOOT_INSTALL/boot && chmod 0755 $BOOT_INSTALL/boot && apk del openssl
-# Fri, 24 Jan 2020 15:03:11 GMT
+# Tue, 28 Jan 2020 02:30:20 GMT
 ENV PATH=/opt/openjdk-14/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Fri, 24 Jan 2020 15:03:11 GMT
+# Tue, 28 Jan 2020 02:30:20 GMT
 ENV BOOT_AS_ROOT=yes
-# Fri, 24 Jan 2020 15:04:07 GMT
+# Tue, 28 Jan 2020 02:31:25 GMT
 RUN boot
-# Fri, 24 Jan 2020 15:04:07 GMT
+# Tue, 28 Jan 2020 02:31:25 GMT
 CMD ["boot" "repl"]
 ```
 
@@ -63,15 +63,15 @@ CMD ["boot" "repl"]
 		Last Modified: Thu, 23 Jan 2020 16:53:38 GMT  
 		Size: 2.8 MB (2786962 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7429ae8c261d6aa4d644ad3ea6a358cb2363e002bc4b2ca644cf5968e1ed3eb`  
-		Last Modified: Thu, 23 Jan 2020 22:19:12 GMT  
-		Size: 198.7 MB (198727049 bytes)  
+	-	`sha256:345cf19c142c73b4673b7f5195d90723d77f452a902206b91c63c6ddca4e6bb7`  
+		Last Modified: Tue, 28 Jan 2020 01:09:10 GMT  
+		Size: 200.4 MB (200355870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95b33294ee4e1c6f5adbddb49468093628321ea09dc3832a24cae192f296385b`  
-		Last Modified: Fri, 24 Jan 2020 15:05:22 GMT  
-		Size: 1.2 MB (1217249 bytes)  
+	-	`sha256:da69aa6d8bf01753acbfd1950e27df60ec278b6f7b9843994d8f255bd18a434f`  
+		Last Modified: Tue, 28 Jan 2020 02:32:39 GMT  
+		Size: 1.2 MB (1217237 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a096e464a1b498cac74e8bbc1c6f4418ba7a25bd70785aaf0344b790674b56a`  
-		Last Modified: Fri, 24 Jan 2020 15:05:59 GMT  
-		Size: 58.8 MB (58821018 bytes)  
+	-	`sha256:0a4c124e11fa25e5008b95f4ba9d3ee878271e785be1d53190a988df8b185177`  
+		Last Modified: Tue, 28 Jan 2020 02:32:43 GMT  
+		Size: 58.8 MB (58821257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
