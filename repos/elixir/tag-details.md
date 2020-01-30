@@ -2,6 +2,12 @@
 
 # Tags of `elixir`
 
+-	[`elixir:1.10`](#elixir110)
+-	[`elixir:1.10.0`](#elixir1100)
+-	[`elixir:1.10.0-alpine`](#elixir1100-alpine)
+-	[`elixir:1.10.0-slim`](#elixir1100-slim)
+-	[`elixir:1.10-alpine`](#elixir110-alpine)
+-	[`elixir:1.10-slim`](#elixir110-slim)
 -	[`elixir:1.4`](#elixir14)
 -	[`elixir:1.4.5`](#elixir145)
 -	[`elixir:1.4.5-slim`](#elixir145-slim)
@@ -47,6 +53,30 @@
 -	[`elixir:alpine`](#elixiralpine)
 -	[`elixir:latest`](#elixirlatest)
 -	[`elixir:slim`](#elixirslim)
+
+## `elixir:1.10`
+
+**does not exist** (yet?)
+
+## `elixir:1.10.0`
+
+**does not exist** (yet?)
+
+## `elixir:1.10.0-alpine`
+
+**does not exist** (yet?)
+
+## `elixir:1.10.0-slim`
+
+**does not exist** (yet?)
+
+## `elixir:1.10-alpine`
+
+**does not exist** (yet?)
+
+## `elixir:1.10-slim`
+
+**does not exist** (yet?)
 
 ## `elixir:1.4`
 
