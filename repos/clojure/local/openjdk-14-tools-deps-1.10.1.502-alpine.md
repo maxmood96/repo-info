@@ -2,18 +2,18 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5ea831c5f55902822b8a0379509e681b818d01054f6b51fce3ee976d9d7f3b4d`
-- Created: `2020-01-24T15:04:21.450836744Z`
-- Virtual Size: ~ 365.91 Mb  
+- Image ID: `sha256:d493106d4c7e1643b6e6374efa48745a1a22053d29e686be1a3222f90c7ae9d7`
+- Created: `2020-01-28T02:31:41.986646907Z`
+- Virtual Size: ~ 368.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["sh","-c","sleep 1 && exec clj"]`
 - Environment:
   - `PATH=/opt/openjdk-14/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/openjdk-14`
-  - `JAVA_VERSION=14-ea+15`
-  - `JAVA_URL=https://download.java.net/java/early_access/alpine/15/binaries/openjdk-14-ea+15_linux-x64-musl_bin.tar.gz`
-  - `JAVA_SHA256=76091da1b6ed29788f0cf85454d23900a4134286e5feb571247e5861f618d3cd`
+  - `JAVA_VERSION=14-ea+33`
+  - `JAVA_URL=https://download.java.net/java/early_access/alpine/33/binaries/openjdk-14-ea+33_linux-x64-musl_bin.tar.gz`
+  - `JAVA_SHA256=25344fdf7438d05166fb3471a591aacf72e5fc7ca334b59b3f90ff34ee3b27e5`
   - `CLOJURE_VERSION=1.10.1.502`
 
 ## `apk` (`.apk`-based packages)
