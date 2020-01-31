@@ -1,7 +1,7 @@
 ## `openjdk:14-buster`
 
 ```console
-$ docker pull openjdk@sha256:0d43198c658da7088e80804ac55830320ed741bc7894023bd1643f47861003ba
+$ docker pull openjdk@sha256:899a165bae3b9b0e786171a017858e0a80631b220654bd6d060c74e5397c45cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull openjdk@sha256:0d43198c658da7088e80804ac55830320ed741bc7894023bd16
 ### `openjdk:14-buster` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:eab4b52f009a8c484150fc4a71ba9afa44c307e153b19f511e55a3d6cfad21a3
+$ docker pull openjdk@sha256:d7bc3c94c90ddfc38214f92d67bb4bf03e3105d40ea658f5f717e5e7aa5e805c
 ```
 
--	Docker Version: 18.06.1-ce
+-	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **333.6 MB (333622883 bytes)**  
+-	Total Size: **333.1 MB (333069402 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:41645694e4b870f4ac609557d3224fbb773f659974f77aa9d24464e822617443`
+-	Image ID: `sha256:3b603d8e06b5c145f0935157f8033f28ea8393fe56220639d68bf2a8a1117c1c`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -42,15 +42,15 @@ ENV JAVA_HOME=/usr/java/openjdk-14
 ENV PATH=/usr/java/openjdk-14/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Sat, 28 Dec 2019 08:50:52 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Sat, 25 Jan 2020 02:37:36 GMT
-ENV JAVA_VERSION=14-ea+33
-# Sat, 25 Jan 2020 02:37:36 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk14/33/GPL/openjdk-14-ea+33_linux-x64_bin.tar.gz
-# Sat, 25 Jan 2020 02:37:36 GMT
-ENV JAVA_SHA256=5ab11e33d3c622b0c8b8833329b9d557c5b7b23750e025746b28f01bb9216928
-# Sat, 25 Jan 2020 02:37:50 GMT
+# Fri, 31 Jan 2020 17:24:11 GMT
+ENV JAVA_VERSION=14-ea+34
+# Fri, 31 Jan 2020 17:24:11 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk14/34/GPL/openjdk-14-ea+34_linux-x64_bin.tar.gz
+# Fri, 31 Jan 2020 17:24:12 GMT
+ENV JAVA_SHA256=51d9dd2161a912ab7bd2bf2e08043cdd175ce22b28608442e0d06bc777286158
+# Fri, 31 Jan 2020 17:24:22 GMT
 RUN set -eux; 		wget -O openjdk.tgz "$JAVA_URL"; 	echo "$JAVA_SHA256 */openjdk.tgz" | sha256sum -c -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		javac --version; 	java --version
-# Sat, 25 Jan 2020 02:37:52 GMT
+# Fri, 31 Jan 2020 17:24:22 GMT
 CMD ["jshell"]
 ```
 
@@ -79,7 +79,7 @@ CMD ["jshell"]
 		Last Modified: Sat, 28 Dec 2019 08:59:29 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de5e309dea5760f9f87c4f4adabcd103840465a07c75d9444bc4892390b5aeff`  
-		Last Modified: Sat, 25 Jan 2020 02:42:26 GMT  
-		Size: 199.7 MB (199724258 bytes)  
+	-	`sha256:db7d94ccd1a1df47f45f421b50527df0fe70966c4587968c0e468823a1b4c156`  
+		Last Modified: Fri, 31 Jan 2020 17:29:51 GMT  
+		Size: 199.2 MB (199170777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
