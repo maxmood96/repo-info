@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0d49b70bc4329cbd792dfb32b21f96889277f26cdeb0243fd1ffa92e46715192`
-- Created: `2019-12-20T01:46:44.052885017Z`
+- Image ID: `sha256:07991a9e97a0a0ba1ebca2fc97e927a10391e4a3717768bc6b8df922b0d3be54`
+- Created: `2020-01-28T21:36:06.079618129Z`
 - Virtual Size: ~ 118.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1086,15 +1086,15 @@ $ yumdownloader --quiet --source --urls shared-mime-info-1.8-4.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/shared-mime-info-1.8-4.el7.src.rpm
 ```
 
-### `rpm` package: `sqlite-3.7.17-8.el7.x86_64`
+### `rpm` package: `sqlite-3.7.17-8.el7_7.1.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls sqlite-3.7.17-8.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/sqlite-3.7.17-8.el7.src.rpm
+$ yumdownloader --quiet --source --urls sqlite-3.7.17-8.el7_7.1
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/sqlite-3.7.17-8.el7_7.1.src.rpm
 ```
 
 ### `rpm` package: `tzdata-2019c-1.el7.noarch`
