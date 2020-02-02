@@ -1,7 +1,7 @@
 ## `maven:slim`
 
 ```console
-$ docker pull maven@sha256:4597f89b9f8101b26fb29d093ea3abb5a201efb9808330955dd105d3ed60a255
+$ docker pull maven@sha256:4b4ba8cc2f170c1e37ab03be8524704fdd99f2e4c66762ebafa138a162df2f33
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -113,100 +113,100 @@ CMD ["mvn"]
 ### `maven:slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:cc80cde1e052a1bd393fc1ede7898db2f04c273247958f2b232c2eb0ed118fb9
+$ docker pull maven@sha256:c0a4368b736fb6113c718de7f08bcb20f4f4a8fb9f3033758e56379ceafa5632
 ```
 
--	Docker Version: 18.06.1-ce
+-	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.2 MB (235181515 bytes)**  
+-	Total Size: **235.2 MB (235181152 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb06815b8926d5bb9e7b2b5067977da796a8c7f582c5935f10b671ef7499732f`
+-	Image ID: `sha256:bdc75a4d22fcb84c3524359b4e06a396b025afa87c0c42a4bb968fe6307c9460`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Sat, 28 Dec 2019 04:41:08 GMT
-ADD file:b45fd612576b682e93ab91addbc4387a6609ace4bc092e5b615323964bba33c3 in / 
-# Sat, 28 Dec 2019 04:41:11 GMT
+# Sat, 01 Feb 2020 16:41:11 GMT
+ADD file:cd38c10a494a1bdab0bab5baef1886651931e96b6db2d34ff4415660a299470f in / 
+# Sat, 01 Feb 2020 16:41:12 GMT
 CMD ["bash"]
-# Sat, 28 Dec 2019 18:27:43 GMT
+# Sat, 01 Feb 2020 21:36:04 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 28 Dec 2019 18:27:44 GMT
+# Sat, 01 Feb 2020 21:36:05 GMT
 ENV LANG=C.UTF-8
-# Sat, 28 Dec 2019 18:27:45 GMT
+# Sat, 01 Feb 2020 21:36:05 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Sat, 28 Dec 2019 18:27:46 GMT
+# Sat, 01 Feb 2020 21:36:06 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 28 Dec 2019 18:27:48 GMT
+# Sat, 01 Feb 2020 21:36:08 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 15 Jan 2020 21:51:24 GMT
+# Sat, 01 Feb 2020 21:36:09 GMT
 ENV JAVA_VERSION=11.0.6
-# Wed, 15 Jan 2020 21:51:27 GMT
+# Sat, 01 Feb 2020 21:36:09 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.6%2B10/OpenJDK11U-jdk_
-# Wed, 15 Jan 2020 21:51:32 GMT
+# Sat, 01 Feb 2020 21:36:10 GMT
 ENV JAVA_URL_VERSION=11.0.6_10
-# Wed, 15 Jan 2020 21:52:22 GMT
+# Sat, 01 Feb 2020 21:36:45 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac --version; 	java --version
-# Wed, 15 Jan 2020 21:52:24 GMT
+# Sat, 01 Feb 2020 21:36:48 GMT
 CMD ["jshell"]
-# Wed, 15 Jan 2020 21:57:36 GMT
+# Sun, 02 Feb 2020 15:21:50 GMT
 ARG MAVEN_VERSION=3.6.3
-# Wed, 15 Jan 2020 21:57:37 GMT
+# Sun, 02 Feb 2020 15:21:51 GMT
 ARG USER_HOME_DIR=/root
-# Wed, 15 Jan 2020 21:57:37 GMT
+# Sun, 02 Feb 2020 15:21:52 GMT
 ARG SHA=c35a1803a6e70a126e80b2b3ae33eed961f83ed74d18fcd16909b2d44d7dada3203f1ffe726c17ef8dcca2dcaa9fca676987befeadc9b9f759967a8cb77181c0
-# Wed, 15 Jan 2020 21:57:38 GMT
+# Sun, 02 Feb 2020 15:21:53 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.6.3/binaries
-# Wed, 15 Jan 2020 21:57:51 GMT
+# Sun, 02 Feb 2020 15:22:07 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.6.3/binaries MAVEN_VERSION=3.6.3 SHA=c35a1803a6e70a126e80b2b3ae33eed961f83ed74d18fcd16909b2d44d7dada3203f1ffe726c17ef8dcca2dcaa9fca676987befeadc9b9f759967a8cb77181c0 USER_HOME_DIR=/root
 RUN apt-get update &&     apt-get install -y       curl procps   && rm -rf /var/lib/apt/lists/*
-# Wed, 15 Jan 2020 21:57:57 GMT
+# Sun, 02 Feb 2020 15:22:15 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.6.3/binaries MAVEN_VERSION=3.6.3 SHA=c35a1803a6e70a126e80b2b3ae33eed961f83ed74d18fcd16909b2d44d7dada3203f1ffe726c17ef8dcca2dcaa9fca676987befeadc9b9f759967a8cb77181c0 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Wed, 15 Jan 2020 21:57:58 GMT
+# Sun, 02 Feb 2020 15:22:16 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Wed, 15 Jan 2020 21:57:58 GMT
+# Sun, 02 Feb 2020 15:22:17 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Wed, 15 Jan 2020 21:57:59 GMT
+# Sun, 02 Feb 2020 15:22:17 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Wed, 15 Jan 2020 21:57:59 GMT
+# Sun, 02 Feb 2020 15:22:18 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Wed, 15 Jan 2020 21:58:00 GMT
+# Sun, 02 Feb 2020 15:22:19 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Wed, 15 Jan 2020 21:58:00 GMT
+# Sun, 02 Feb 2020 15:22:19 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:fb62b7c746da1f79992359282f2d8b7f93da8c48dc138ec6b2a36130efd42635`  
-		Last Modified: Sat, 28 Dec 2019 04:46:58 GMT  
-		Size: 25.9 MB (25850702 bytes)  
+	-	`sha256:f7ca645dfd2fe61e7661b7f3b3951c589ccbff71aa054611475de455650bd8a8`  
+		Last Modified: Sat, 01 Feb 2020 16:46:28 GMT  
+		Size: 25.9 MB (25850659 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac316ff102c6235e01468230219a62f821a499509c6730780405e333e112a586`  
-		Last Modified: Sat, 28 Dec 2019 18:31:14 GMT  
-		Size: 3.1 MB (3101169 bytes)  
+	-	`sha256:7287ac749aa332ed447e74edb6931a9e4a1876ffdac8b86aaf0d5b3550fca7b3`  
+		Last Modified: Sat, 01 Feb 2020 21:39:18 GMT  
+		Size: 3.1 MB (3101147 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f89ba1ce3f076ce617159b446596e6c42e70669a63d47a41caa23e655fb1fbb`  
-		Last Modified: Sat, 28 Dec 2019 18:31:14 GMT  
-		Size: 212.0 B  
+	-	`sha256:f6e3c971707a058e79ee3763665dddcee8af3b239f8391a954248d2062699910`  
+		Last Modified: Sat, 01 Feb 2020 21:39:17 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f47d5641004e32f3faab9cacbc487b1a0274916c187c8a6466e725f9573faa67`  
-		Last Modified: Wed, 15 Jan 2020 21:54:58 GMT  
-		Size: 194.0 MB (194015250 bytes)  
+	-	`sha256:707018a7a353c312a30a9e75f64829691c43a6d8a627d19775356f08c0011982`  
+		Last Modified: Sat, 01 Feb 2020 21:39:46 GMT  
+		Size: 194.0 MB (194014985 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95bc4106ec72f9a4475b63a7ea1be954429ce22c8dd432f37c514d4ad50659fe`  
-		Last Modified: Wed, 15 Jan 2020 21:59:34 GMT  
-		Size: 2.6 MB (2631774 bytes)  
+	-	`sha256:7d72e1ca1b287bdfd1486f527bebf41b6dce6447f23f1436234fd435bcf9766a`  
+		Last Modified: Sun, 02 Feb 2020 15:23:23 GMT  
+		Size: 2.6 MB (2631737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:271a58aa3f99c74f61804ed21ddef247db709d3b4e6519b9684cf2707407defe`  
-		Last Modified: Wed, 15 Jan 2020 21:59:35 GMT  
-		Size: 9.6 MB (9581194 bytes)  
+	-	`sha256:3a8242e30bf507c0a3f1061ecd485bdfed2c6207beaa667f683c077ccbe66c4a`  
+		Last Modified: Sun, 02 Feb 2020 15:23:24 GMT  
+		Size: 9.6 MB (9581198 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:875fb2b08c14f594f6e937a5c229dad814c59a6e4a1a518e2bc712ab3ea1d035`  
-		Last Modified: Wed, 15 Jan 2020 21:59:33 GMT  
+	-	`sha256:3cd7e0359d08bd150e1f52f5f5b56bad7ed73eee4ca4d3e269da32c73f4be0b5`  
+		Last Modified: Sun, 02 Feb 2020 15:23:21 GMT  
 		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4e3a11299c7ce7edd5370baf266783ed030a29de4f15dcbd9c0c738dc59e26d`  
-		Last Modified: Wed, 15 Jan 2020 21:59:34 GMT  
-		Size: 359.0 B  
+	-	`sha256:b02a3155854ff773b576455d7ac63f4ff4c16db0779a7b95fc54976cba4383b5`  
+		Last Modified: Sun, 02 Feb 2020 15:23:22 GMT  
+		Size: 361.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
