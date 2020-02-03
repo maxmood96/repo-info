@@ -1,7 +1,7 @@
 ## `sonarqube:8-community-beta`
 
 ```console
-$ docker pull sonarqube@sha256:150fe29bcacc3845e523c3e5afd6f1283102338485356dcf7bf2095492f0a173
+$ docker pull sonarqube@sha256:d7d65bbd753c4a8f2cded27a1993620aba9a564961d164b229b44a480f29ca3f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,104 +11,104 @@ $ docker pull sonarqube@sha256:150fe29bcacc3845e523c3e5afd6f1283102338485356dcf7
 ### `sonarqube:8-community-beta` - linux; amd64
 
 ```console
-$ docker pull sonarqube@sha256:2d53c7a3080935302bf9a620fcec438473d402f75a2c5ddc70f2bdc9643323ff
+$ docker pull sonarqube@sha256:fc5de461dfe25bccb54704c35cd0af08f823d92ba7489e76a29738cea6ff43c7
 ```
 
--	Docker Version: 18.06.1-ce
+-	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **370.4 MB (370350407 bytes)**  
+-	Total Size: **370.4 MB (370350451 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c078910db00284765a8dd5ddce5a0e79194392893e3ea365057023acccdcc009`
+-	Image ID: `sha256:9f896e5a7de453e8f0265d79f297c860ea47c416acbc8f2389b6803789766b16`
 -	Entrypoint: `[".\/bin\/run.sh"]`
 -	`SHELL`: `["\/bin\/bash","-c"]`
 
 ```dockerfile
-# Sat, 28 Dec 2019 04:21:22 GMT
-ADD file:04caaf303199c81ff1a94e2e39d5096f9d02b73294b82758e5bc6e23aff94272 in / 
-# Sat, 28 Dec 2019 04:21:23 GMT
+# Sat, 01 Feb 2020 17:20:54 GMT
+ADD file:ba0c39345ccc4a882289d473ae8a67087056aa4475a26f3492fff75933d707de in / 
+# Sat, 01 Feb 2020 17:20:54 GMT
 CMD ["bash"]
-# Sat, 28 Dec 2019 08:50:14 GMT
+# Sun, 02 Feb 2020 06:19:43 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 28 Dec 2019 08:50:14 GMT
+# Sun, 02 Feb 2020 06:19:43 GMT
 ENV LANG=C.UTF-8
-# Sat, 28 Dec 2019 08:55:04 GMT
+# Sun, 02 Feb 2020 06:26:39 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Sat, 28 Dec 2019 08:55:04 GMT
+# Sun, 02 Feb 2020 06:26:40 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 28 Dec 2019 08:55:05 GMT
+# Sun, 02 Feb 2020 06:26:41 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 15 Jan 2020 21:28:59 GMT
+# Sun, 02 Feb 2020 06:26:41 GMT
 ENV JAVA_VERSION=11.0.6
-# Wed, 15 Jan 2020 21:29:35 GMT
+# Sun, 02 Feb 2020 06:27:49 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.6%2B10/OpenJDK11U-jre_
-# Wed, 15 Jan 2020 21:29:35 GMT
+# Sun, 02 Feb 2020 06:27:49 GMT
 ENV JAVA_URL_VERSION=11.0.6_10
-# Wed, 15 Jan 2020 21:29:47 GMT
+# Sun, 02 Feb 2020 06:28:07 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Wed, 15 Jan 2020 22:10:13 GMT
+# Sun, 02 Feb 2020 22:37:34 GMT
 RUN apt-get update     && apt-get install -y curl unzip libfreetype6 libfontconfig1     && rm -rf /var/lib/apt/lists/*
-# Wed, 15 Jan 2020 22:10:14 GMT
+# Sun, 02 Feb 2020 22:37:34 GMT
 EXPOSE 9000
-# Wed, 15 Jan 2020 22:10:14 GMT
+# Sun, 02 Feb 2020 22:37:35 GMT
 RUN groupadd -r sonarqube && useradd -r -g sonarqube sonarqube
-# Wed, 15 Jan 2020 22:10:15 GMT
+# Sun, 02 Feb 2020 22:37:35 GMT
 ARG SONARQUBE_VERSION=8.1.0.31237
-# Wed, 15 Jan 2020 22:10:15 GMT
+# Sun, 02 Feb 2020 22:37:35 GMT
 ARG SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.1.0.31237.zip
-# Wed, 15 Jan 2020 22:10:15 GMT
+# Sun, 02 Feb 2020 22:37:35 GMT
 ENV SONAR_VERSION=8.1.0.31237 SONARQUBE_HOME=/opt/sq SONARQUBE_PUBLIC_HOME=/opt/sonarqube
-# Wed, 15 Jan 2020 22:10:15 GMT
+# Sun, 02 Feb 2020 22:37:35 GMT
 SHELL [/bin/bash -c]
-# Wed, 15 Jan 2020 22:10:16 GMT
+# Sun, 02 Feb 2020 22:37:36 GMT
 # ARGS: SONARQUBE_VERSION=8.1.0.31237 SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.1.0.31237.zip
 RUN sed -i -e "s?securerandom.source=file:/dev/random?securerandom.source=file:/dev/urandom?g"   "$JAVA_HOME/conf/security/java.security"
-# Wed, 15 Jan 2020 22:10:29 GMT
+# Sun, 02 Feb 2020 22:38:05 GMT
 # ARGS: SONARQUBE_VERSION=8.1.0.31237 SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.1.0.31237.zip
 RUN set -x     && cd /opt     && curl -o sonarqube.zip -fsSL "$SONARQUBE_ZIP_URL"     && unzip -q sonarqube.zip     && mv "sonarqube-${SONARQUBE_VERSION}" sq     && rm sonarqube.zip*     && rm --recursive --force "$SONARQUBE_HOME/bin"/*     && mv "$SONARQUBE_HOME/conf" "$SONARQUBE_HOME/conf_save"     && mv "$SONARQUBE_HOME/extensions" "$SONARQUBE_HOME/extensions_save"     && rm --recursive --force "$SONARQUBE_HOME/logs"     && rm --recursive --force "$SONARQUBE_HOME/data"     && mkdir --parents "$SONARQUBE_PUBLIC_HOME/conf"     && mkdir --parents "$SONARQUBE_PUBLIC_HOME/extensions"     && mkdir --parents "$SONARQUBE_PUBLIC_HOME/logs"     && mkdir --parents "$SONARQUBE_PUBLIC_HOME/data"     && cp --recursive "$SONARQUBE_HOME/conf_save"/* "$SONARQUBE_PUBLIC_HOME/conf/"     && cp --recursive "$SONARQUBE_HOME/extensions_save"/* "$SONARQUBE_PUBLIC_HOME/extensions/"     && ln -s "$SONARQUBE_PUBLIC_HOME/conf" "$SONARQUBE_HOME/conf"     && ln -s "$SONARQUBE_PUBLIC_HOME/extensions" "$SONARQUBE_HOME/extensions"     && ln -s "$SONARQUBE_PUBLIC_HOME/logs" "$SONARQUBE_HOME/logs"     && ln -s "$SONARQUBE_PUBLIC_HOME/data" "$SONARQUBE_HOME/data"     && chown --recursive sonarqube:sonarqube "$SONARQUBE_HOME" "$SONARQUBE_PUBLIC_HOME"
-# Wed, 15 Jan 2020 22:10:29 GMT
+# Sun, 02 Feb 2020 22:38:05 GMT
 COPY --chown=sonarqube:sonarqubefile:7e8bed266915cfbc07c846686c59039a89cda10c59553d4ba545b4c34d032e46 in /opt/sq/bin/ 
-# Wed, 15 Jan 2020 22:10:29 GMT
+# Sun, 02 Feb 2020 22:38:05 GMT
 USER sonarqube
-# Wed, 15 Jan 2020 22:10:29 GMT
+# Sun, 02 Feb 2020 22:38:06 GMT
 WORKDIR /opt/sq
-# Wed, 15 Jan 2020 22:10:30 GMT
+# Sun, 02 Feb 2020 22:38:06 GMT
 ENTRYPOINT ["./bin/run.sh"]
 ```
 
 -	Layers:
-	-	`sha256:8ec398bc03560e0fa56440e96da307cdf0b1ad153f459b52bca53ae7ddb8236d`  
-		Last Modified: Sat, 28 Dec 2019 04:25:53 GMT  
-		Size: 27.1 MB (27092274 bytes)  
+	-	`sha256:bc51dd8edc1b1132bb97827ed6bd16aac332b03fb03d4c02d2088067a5fbb499`  
+		Last Modified: Sat, 01 Feb 2020 17:26:19 GMT  
+		Size: 27.1 MB (27092260 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e866b0959566a21a8fa7eb2f7f12da0d12aa3498d6c31bb25a6ede1fa632ac2`  
-		Last Modified: Sat, 28 Dec 2019 08:58:53 GMT  
-		Size: 3.2 MB (3249103 bytes)  
+	-	`sha256:d1d06863bb82bdc3f4cd17d49c0dee8720f91c4d9e40cce1b4a691f9459266be`  
+		Last Modified: Sun, 02 Feb 2020 06:31:53 GMT  
+		Size: 3.2 MB (3249109 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb5d513ad8c41aa8c04e4398490b3ccfa0ee2ad433dbc3038dc96cd48a9366cf`  
-		Last Modified: Sat, 28 Dec 2019 09:02:04 GMT  
-		Size: 212.0 B  
+	-	`sha256:adf4d10a782b71ea3c226ce20c1acdfb0aeefb137fb5c5fa3100aaa275ec71cd`  
+		Last Modified: Sun, 02 Feb 2020 06:35:40 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fab0db7e765974cb03e718d6334471c86189f3ed546e608ca12ddbf2ede72062`  
-		Last Modified: Wed, 15 Jan 2020 21:35:14 GMT  
-		Size: 42.2 MB (42172491 bytes)  
+	-	`sha256:7db4424ff27024b682967e5ca869ba018b8667fdc7cbd2718db9ebba95c5e601`  
+		Last Modified: Sun, 02 Feb 2020 06:36:47 GMT  
+		Size: 42.2 MB (42172493 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5b1c96fce5b988644d8c26df3ac44fe32d79ccb9b6d172da05be5503a54af21`  
-		Last Modified: Wed, 15 Jan 2020 22:11:52 GMT  
-		Size: 5.0 MB (5030502 bytes)  
+	-	`sha256:2133960a87b548c19b0dd6d96f71d4301f2c4f1682106c3647a88b27acbe9095`  
+		Last Modified: Sun, 02 Feb 2020 22:40:06 GMT  
+		Size: 5.0 MB (5030519 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1d1257d3231139743a8132322b0e9488957d513fb15ddf90f03a9500f142a46`  
-		Last Modified: Wed, 15 Jan 2020 22:11:51 GMT  
+	-	`sha256:d40fa02f8c8f3b513da3537e638921b644151a1a96eb9fc5a75fe9ca10fa42d0`  
+		Last Modified: Sun, 02 Feb 2020 22:40:04 GMT  
 		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe05c565fb35ec5caa25f3f4b4a92f889b23197c82bd19334a365fc512dc006f`  
-		Last Modified: Wed, 15 Jan 2020 22:11:51 GMT  
-		Size: 15.0 KB (14986 bytes)  
+	-	`sha256:ea770dd7ac2fc00b9004aa168f2bbc95730103073cb8fddac174a2a4b1a6f718`  
+		Last Modified: Sun, 02 Feb 2020 22:40:04 GMT  
+		Size: 15.0 KB (14988 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:509bc80592f4c19101ce07b4acbafa9be8eafd31aa89bcc96dadad77aea11863`  
-		Last Modified: Wed, 15 Jan 2020 22:12:10 GMT  
-		Size: 292.8 MB (292788004 bytes)  
+	-	`sha256:8b3a5d7fc280fbb90082658eb538a5371f7185f04deb1f07f1d9670509fd9f13`  
+		Last Modified: Sun, 02 Feb 2020 22:40:48 GMT  
+		Size: 292.8 MB (292788040 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a215890cb4712ad6be5a884108e9da520ea7823c7a97dcde01b113e9edbee6d9`  
-		Last Modified: Wed, 15 Jan 2020 22:11:51 GMT  
-		Size: 1.1 KB (1087 bytes)  
+	-	`sha256:276e4c74c6fa0999c6133d98f31ab675e349657cc3cdcb1e98a8b6ffabc0e88e`  
+		Last Modified: Sun, 02 Feb 2020 22:40:04 GMT  
+		Size: 1.1 KB (1084 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
