@@ -1,17 +1,17 @@
-# `mongo-express:0.49.0`
+# `mongo-express:0.54.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:982dae7910da48a4c28a5e473eed2b139b25dfdb0cc4d4ee8fc3f82185f859ec`
-- Created: `2019-12-24T21:14:03.175328997Z`
-- Virtual Size: ~ 104.57 Mb  
+- Image ID: `sha256:c275557f80617665181b4c157dd84cffed7c1cccdd02a43e7a2c82c1b572bea1`
+- Created: `2020-02-01T16:07:58.635108646Z`
+- Virtual Size: ~ 126.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
 - Command: `["mongo-express"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=8.17.0`
+  - `NODE_VERSION=12.14.1`
   - `YARN_VERSION=1.21.1`
   - `ME_CONFIG_EDITORTHEME=default`
   - `ME_CONFIG_MONGODB_SERVER=mongo`
@@ -19,7 +19,7 @@
   - `ME_CONFIG_BASICAUTH_USERNAME=`
   - `ME_CONFIG_BASICAUTH_PASSWORD=`
   - `VCAP_APP_HOST=0.0.0.0`
-  - `MONGO_EXPRESS=0.49.0`
+  - `MONGO_EXPRESS=0.54.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -94,16 +94,16 @@ GPL-3.0-or-later
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.31.1-r8 description:
+busybox-1.31.1-r9 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.31.1-r8 webpage:
+busybox-1.31.1-r9 webpage:
 https://busybox.net/
 
-busybox-1.31.1-r8 installed size:
+busybox-1.31.1-r9 installed size:
 962560
 
-busybox-1.31.1-r8 license:
+busybox-1.31.1-r9 license:
 GPL-2.0-only
 
 ```
@@ -145,16 +145,16 @@ BSD
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1d-r2 description:
+libcrypto1.1-1.1.1d-r3 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1d-r2 webpage:
+libcrypto1.1-1.1.1d-r3 webpage:
 https://www.openssl.org
 
-libcrypto1.1-1.1.1d-r2 installed size:
+libcrypto1.1-1.1.1d-r3 installed size:
 2748416
 
-libcrypto1.1-1.1.1d-r2 license:
+libcrypto1.1-1.1.1d-r3 license:
 OpenSSL
 
 ```
@@ -179,16 +179,16 @@ GPL LGPL
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1d-r2 description:
+libssl1.1-1.1.1d-r3 description:
 SSL shared libraries
 
-libssl1.1-1.1.1d-r2 webpage:
+libssl1.1-1.1.1d-r3 webpage:
 https://www.openssl.org
 
-libssl1.1-1.1.1d-r2 installed size:
+libssl1.1-1.1.1d-r3 installed size:
 536576
 
-libssl1.1-1.1.1d-r2 license:
+libssl1.1-1.1.1d-r3 license:
 OpenSSL
 
 ```
@@ -349,16 +349,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.31.1-r8 description:
+ssl_client-1.31.1-r9 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.31.1-r8 webpage:
+ssl_client-1.31.1-r9 webpage:
 https://busybox.net/
 
-ssl_client-1.31.1-r8 installed size:
+ssl_client-1.31.1-r9 installed size:
 28672
 
-ssl_client-1.31.1-r8 license:
+ssl_client-1.31.1-r9 license:
 GPL-2.0-only
 
 ```
