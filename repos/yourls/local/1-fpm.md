@@ -1,9 +1,9 @@
-# `yourls:1.7.5-fpm`
+# `yourls:1.7.6-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1a70ed93dae4e69dae94eb75be121b4736186e51afb371aa803e227c6d0768d2`
-- Created: `2020-01-30T02:21:39.218547155Z`
+- Image ID: `sha256:3fb4cfb2dbcff08b8d588d3c75e654a04cadd49bbe727d1355c51cc38d48430f`
+- Created: `2020-02-02T12:41:38.511666555Z`
 - Virtual Size: ~ 404.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -23,8 +23,8 @@
   - `PHP_ASC_URL=https://www.php.net/get/php-7.2.27.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=7bd0fb9e3b63cfe53176d1f3565cd686f90b3926217158de5ba57091f49e4c32`
   - `PHP_MD5=`
-  - `YOURLS_VERSION=1.7.5`
-  - `YOURLS_SHA256=e8251bc99def425f647577b066d3489725a3cefde7a72f83ceab0b68e9910e9c`
+  - `YOURLS_VERSION=1.7.6`
+  - `YOURLS_SHA256=f3623af6e4cabee61a39d3deca3c941717c5e0a60bc288b6f3a668f87a20ae2e`
 
 ## `dpkg` (`.deb`-based packages)
 
