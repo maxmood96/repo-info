@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c46fdc1cd96ec69f17bdd9abbe94370b208be3ac13c6caa97878539dc16d3712`
-- Created: `2020-01-13T21:32:44.026491087Z`
-- Virtual Size: ~ 833.62 Mb  
+- Image ID: `sha256:1b89ff0452ce555a4ab23ae6cf287a57c401b10e2da2228d510a6699badfd1d0`
+- Created: `2020-02-01T18:28:44.235361647Z`
+- Virtual Size: ~ 833.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node","main.js"]`
@@ -1192,24 +1192,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libffi/3.1-2+deb8u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libffi/3.1-2+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libgcrypt20=1.6.3-2+deb8u7`
+### `dpkg` source package: `libgcrypt20=1.6.3-2+deb8u8`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.6.3-2+deb8u7`
+- `libgcrypt20:amd64=1.6.3-2+deb8u8`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
 - `GPL-2`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libgcrypt20=1.6.3-2+deb8u8
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u8.dsc' libgcrypt20_1.6.3-2+deb8u8.dsc 2587 SHA256:ea55179c07cf8938d197c81024dd3090c40d1bfbbc6b3dad13f2abb9b48f5eda
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3.orig.tar.bz2' libgcrypt20_1.6.3.orig.tar.bz2 2494052 SHA256:41b4917b93ae34c6a0e2127378d7a4d66d805a2a86a09911d4f9bd871db7025f
+'http://security.debian.org/debian-security/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u8.debian.tar.xz' libgcrypt20_1.6.3-2+deb8u8.debian.tar.xz 36572 SHA256:fbaadf6c59fd0bbcfa7bd57329f00c94829cf1ab9b0f17699af30c469db03e76
+```
 
-- http://snapshot.debian.org/package/libgcrypt20/1.6.3-2+deb8u7/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u8/ (for browsing the source)
+- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libgcrypt20/1.6.3-2+deb8u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgpg-error=1.17-3`
 
@@ -2336,11 +2343,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/xz-utils/5.1.1alpha+20120614-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/xz-utils/5.1.1alpha+20120614-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zlib=1:1.2.8.dfsg-2`
+### `dpkg` source package: `zlib=1:1.2.8.dfsg-2+deb8u1`
 
 Binary Packages:
 
-- `zlib1g:amd64=1:1.2.8.dfsg-2+b1`
+- `zlib1g:amd64=1:1.2.8.dfsg-2+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2349,14 +2356,14 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris zlib=1:1.2.8.dfsg-2
-'http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.2.8.dfsg-2.dsc' zlib_1.2.8.dfsg-2.dsc 2458 SHA256:5dddd28d2b15fc0881177d720a3b5bf41a87eee7aaec296e4b20719a9fe18b7e
-'http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.2.8.dfsg.orig.tar.gz' zlib_1.2.8.dfsg.orig.tar.gz 361943 SHA256:2caecc2c3f1ef8b87b8f72b128a03e61c307e8c14f5ec9b422ef7914ba75cf9f
-'http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.2.8.dfsg-2.debian.tar.xz' zlib_1.2.8.dfsg-2.debian.tar.xz 14768 SHA256:39af7ea4b264c229f856ed342bb316a796cb2f1e1278a059f2dc5a4f3ffc9f31
+$ apt-get source -qq --print-uris zlib=1:1.2.8.dfsg-2+deb8u1
+'http://security.debian.org/debian-security/pool/updates/main/z/zlib/zlib_1.2.8.dfsg-2+deb8u1.dsc' zlib_1.2.8.dfsg-2+deb8u1.dsc 2661 SHA256:30356ac08b7b18f9f1f0ca1f2a4d9a85a7b2554a94001938c4ec95b69e3c787b
+'http://security.debian.org/debian-security/pool/updates/main/z/zlib/zlib_1.2.8.dfsg.orig.tar.gz' zlib_1.2.8.dfsg.orig.tar.gz 361943 SHA256:2caecc2c3f1ef8b87b8f72b128a03e61c307e8c14f5ec9b422ef7914ba75cf9f
+'http://security.debian.org/debian-security/pool/updates/main/z/zlib/zlib_1.2.8.dfsg-2+deb8u1.debian.tar.xz' zlib_1.2.8.dfsg-2+deb8u1.debian.tar.xz 17444 SHA256:81a745765a43f8ff16c66d7dbac7ef735bda39adefa52bb2734e3a4c13cf545b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/zlib/1:1.2.8.dfsg-2/ (for browsing the source)
-- https://sources.debian.net/src/zlib/1:1.2.8.dfsg-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/zlib/1:1.2.8.dfsg-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/zlib/1:1.2.8.dfsg-2+deb8u1/ (for browsing the source)
+- https://sources.debian.net/src/zlib/1:1.2.8.dfsg-2+deb8u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/zlib/1:1.2.8.dfsg-2+deb8u1/ (for access to the source package after it no longer exists in the archive)
