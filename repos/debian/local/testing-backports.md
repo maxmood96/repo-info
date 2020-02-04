@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b33de1bd280d9512f6475d1329178a825918f9e1989ade1fcc2a29086bd3f1d0`
-- Created: `2019-12-28T04:24:03.58722621Z`
-- Virtual Size: ~ 116.68 Mb  
+- Image ID: `sha256:0768aa7e5cd079faa7eff4c6bfe23810e54dedc305ea302b3bba4563f2480697`
+- Created: `2020-02-01T17:24:17.380801032Z`
+- Virtual Size: ~ 117.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -474,28 +474,36 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/dpkg/1.19.7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/dpkg/1.19.7/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `e2fsprogs=1.45.4-1`
+### `dpkg` source package: `e2fsprogs=1.45.5-2`
 
 Binary Packages:
 
-- `e2fsprogs=1.45.4-1`
-- `libcom-err2:amd64=1.45.4-1`
-- `libext2fs2:amd64=1.45.4-1`
-- `libss2:amd64=1.45.4-1`
-- `logsave=1.45.4-1`
+- `e2fsprogs=1.45.5-2`
+- `libcom-err2:amd64=1.45.5-2`
+- `libext2fs2:amd64=1.45.5-2`
+- `libss2:amd64=1.45.5-2`
+- `logsave=1.45.5-2`
 
 Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/libcom-err2/copyright`, `/usr/share/doc/libext2fs2/copyright`, `/usr/share/doc/libss2/copyright`, `/usr/share/doc/logsave/copyright`)
 
 - `GPL-2`
 - `LGPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris e2fsprogs=1.45.5-2
+'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.45.5-2.dsc' e2fsprogs_1.45.5-2.dsc 2969 SHA256:8aaed11ca66ef98d171db0f6331b8826d6544ca9e4862b762a18730b11f0cd29
+'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.45.5.orig.tar.gz' e2fsprogs_1.45.5.orig.tar.gz 7938826 SHA256:91e72a2f6fee21b89624d8ece5a4b3751a17b28775d32cd048921050b4760ed9
+'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.45.5.orig.tar.gz.asc' e2fsprogs_1.45.5.orig.tar.gz.asc 488 SHA256:0f900698a89e3e1996cd86966e5ae0dc6f8d866e2cd8a0f4285c23e7ea696720
+'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.45.5-2.debian.tar.xz' e2fsprogs_1.45.5-2.debian.tar.xz 80748 SHA256:2b929d6471a3d432a6dc7d632503e609df9c25ba8f9c2d9e0a4735a744bd7b62
+```
 
-- http://snapshot.debian.org/package/e2fsprogs/1.45.4-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/e2fsprogs/1.45.5-2/ (for browsing the source)
+- https://sources.debian.net/src/e2fsprogs/1.45.5-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/e2fsprogs/1.45.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `elfutils=0.176-1.1`
 
@@ -552,13 +560,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/findutils/4.7.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/findutils/4.7.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gcc-9=9.2.1-21`
+### `dpkg` source package: `gcc-9=9.2.1-25`
 
 Binary Packages:
 
-- `gcc-9-base:amd64=9.2.1-21`
-- `libgcc1:amd64=1:9.2.1-21`
-- `libstdc++6:amd64=9.2.1-21`
+- `gcc-9-base:amd64=9.2.1-25`
+- `libgcc1:amd64=1:9.2.1-25`
+- `libstdc++6:amd64=9.2.1-25`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-9-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -573,24 +581,24 @@ Licenses: (parsed from: `/usr/share/doc/gcc-9-base/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-9=9.2.1-21
-'http://deb.debian.org/debian/pool/main/g/gcc-9/gcc-9_9.2.1-21.dsc' gcc-9_9.2.1-21.dsc 27011 SHA256:e4f2b0cbcd8498cb094e4ba81e3067ea7018841efaa3eb2ac9c413ad5439536d
+$ apt-get source -qq --print-uris gcc-9=9.2.1-25
+'http://deb.debian.org/debian/pool/main/g/gcc-9/gcc-9_9.2.1-25.dsc' gcc-9_9.2.1-25.dsc 27011 SHA256:99f8e96e4d240b272c85be22f1685f6365e1e52bc6f21780413fbf2ab5c63ac2
 'http://deb.debian.org/debian/pool/main/g/gcc-9/gcc-9_9.2.1.orig.tar.gz' gcc-9_9.2.1.orig.tar.gz 92887421 SHA256:f259d1c6344f5d89fee3a182d7a211925f507d477d3659d53ac64c76cea8bb11
-'http://deb.debian.org/debian/pool/main/g/gcc-9/gcc-9_9.2.1-21.debian.tar.xz' gcc-9_9.2.1-21.debian.tar.xz 878128 SHA256:5e94d98a0210f4dff530d442753d53cc89cad35aee236483eecd21a1ada9639b
+'http://deb.debian.org/debian/pool/main/g/gcc-9/gcc-9_9.2.1-25.debian.tar.xz' gcc-9_9.2.1-25.debian.tar.xz 955780 SHA256:359e7ef44dbe32fe849e9b479236bdd81e992a6c640eb5e02eb86c8783a6ee20
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gcc-9/9.2.1-21/ (for browsing the source)
-- https://sources.debian.net/src/gcc-9/9.2.1-21/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-9/9.2.1-21/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gcc-9/9.2.1-25/ (for browsing the source)
+- https://sources.debian.net/src/gcc-9/9.2.1-25/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gcc-9/9.2.1-25/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.29-3`
+### `dpkg` source package: `glibc=2.29-9`
 
 Binary Packages:
 
-- `libc-bin=2.29-3`
-- `libc6:amd64=2.29-3`
+- `libc-bin=2.29-9`
+- `libc6:amd64=2.29-9`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -600,17 +608,17 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.29-3
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.29-3.dsc' glibc_2.29-3.dsc 8735 SHA256:f4c5edd6ffc97dff1846acaee47c46afca17eb01207234155e29345be15230e6
+$ apt-get source -qq --print-uris glibc=2.29-9
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.29-9.dsc' glibc_2.29-9.dsc 8735 SHA256:8fecfded06e93b182184b87a9f195fd5d42b4a706f08cd99c747656fa57a1e01
 'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.29.orig.tar.xz' glibc_2.29.orig.tar.xz 17103228 SHA256:c1eb5652c94680cb40bad4393b06d838237645f0f5760b8d0e6a98a1463e09f3
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.29-3.debian.tar.xz' glibc_2.29-3.debian.tar.xz 853764 SHA256:13001db28f70be4d635617ec6ebbc6ea1da34199f06e84d1363100b816b5a2ea
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.29-9.debian.tar.xz' glibc_2.29-9.debian.tar.xz 868392 SHA256:39fea8eabae86eadf191469a0315cfebae031b3140cb40c710c25ddc20a2bd06
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/glibc/2.29-3/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.29-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.29-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/glibc/2.29-9/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.29-9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.29-9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-4`
 
@@ -640,11 +648,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gmp/2:6.1.2+dfsg-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gmp/2:6.1.2+dfsg-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnupg2=2.2.17-3`
+### `dpkg` source package: `gnupg2=2.2.19-1`
 
 Binary Packages:
 
-- `gpgv=2.2.17-3`
+- `gpgv=2.2.19-1`
 
 Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 
@@ -664,18 +672,18 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg2=2.2.17-3
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.17-3.dsc' gnupg2_2.2.17-3.dsc 3241 SHA256:e8210d8ddf6b27f54776c2fee967e17bea6ba87fdc20620df015ae6a3df9ba4d
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.17.orig.tar.bz2' gnupg2_2.2.17.orig.tar.bz2 6717554 SHA256:afa262868e39b651a2db4c071fba90415154243e83a830ca00516f9a807fd514
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.17.orig.tar.bz2.asc' gnupg2_2.2.17.orig.tar.bz2.asc 488 SHA256:b719d78c3b3d91ae6c5569c6ce48b8b71cfd9ac53cc95c681ea196720b9d7000
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.17-3.debian.tar.xz' gnupg2_2.2.17-3.debian.tar.xz 64484 SHA256:29ca36fb03e5863812617b9480c7fc06ce7008b51d4f7a7f3abdbeb119e5ff62
+$ apt-get source -qq --print-uris gnupg2=2.2.19-1
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.19-1.dsc' gnupg2_2.2.19-1.dsc 3238 SHA256:958502240d50a73c62ef47c53b19c111c754341f4001ac4585beb892846ad80a
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.19.orig.tar.bz2' gnupg2_2.2.19.orig.tar.bz2 6754972 SHA256:242554c0e06f3a83c420b052f750b65ead711cc3fddddb5e7274fcdbb4e9dec0
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.19.orig.tar.bz2.asc' gnupg2_2.2.19.orig.tar.bz2.asc 906 SHA256:9665fd179a29412115289bd18109629b855bf78adb6d262cfd4fb00ea09491d7
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.19-1.debian.tar.xz' gnupg2_2.2.19-1.debian.tar.xz 62404 SHA256:5a1680501e4a6b2da3ac4d019ef3266088f4adf2f59906d1c1882a866089a04e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnupg2/2.2.17-3/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.17-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.17-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnupg2/2.2.19-1/ (for browsing the source)
+- https://sources.debian.net/src/gnupg2/2.2.19-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnupg2/2.2.19-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.6.11.1-2`
 
@@ -1300,6 +1308,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libunistring/0.9.10-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libunistring/0.9.10-2/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `libxcrypt=1:4.4.10-10`
+
+Binary Packages:
+
+- `libcrypt1:amd64=1:4.4.10-10`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libxcrypt=1:4.4.10-10
+'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.10-10.dsc' libxcrypt_4.4.10-10.dsc 2049 SHA256:e912895b04fbcfc981b3e17a32e3638209c7d93946ecf2c2b477aad4f664cb5e
+'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.10.orig.tar.xz' libxcrypt_4.4.10.orig.tar.xz 372652 SHA256:f790a8eac4e4af3124d2844a24a7afb3a972368e4dff63d701599c2f2d065fd3
+'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.10-10.debian.tar.xz' libxcrypt_4.4.10-10.debian.tar.xz 4984 SHA256:399ef5187a9cc3a9b60d090e361e985d25c5a7eeab660f1b6b740eb31db417bb
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libxcrypt/1:4.4.10-10/ (for browsing the source)
+- https://sources.debian.net/src/libxcrypt/1:4.4.10-10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxcrypt/1:4.4.10-10/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `libzstd=1.4.4+dfsg-1`
 
 Binary Packages:
@@ -1381,11 +1414,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/lz4/1.9.2-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/lz4/1.9.2-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mawk=1.3.3-17`
+### `dpkg` source package: `mawk=1.3.3-20`
 
 Binary Packages:
 
-- `mawk=1.3.3-17+b3`
+- `mawk=1.3.3-20`
 
 Licenses: (parsed from: `/usr/share/doc/mawk/copyright`)
 
@@ -1396,7 +1429,7 @@ This is *usually* due to a new package version being released and the old versio
 
 The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/mawk/1.3.3-17/
+- http://snapshot.debian.org/package/mawk/1.3.3-20/
 
 
 ### `dpkg` source package: `ncurses=6.1+20191019-1`
@@ -1650,24 +1683,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sed/4.7-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sed/4.7-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `shadow=1:4.7-2`
+### `dpkg` source package: `shadow=1:4.8-1`
 
 Binary Packages:
 
-- `login=1:4.7-2`
-- `passwd=1:4.7-2`
+- `login=1:4.8-1`
+- `passwd=1:4.8-1`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris shadow=1:4.8-1
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.8-1.dsc' shadow_4.8-1.dsc 2201 SHA256:1878eff238725e13997042366f3d45c5a92da2cb3050c9f43afdcca00b4ccd19
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.8.orig.tar.xz' shadow_4.8.orig.tar.xz 1609060 SHA256:64b46683b9c1f35b2cd2da9fa87a1383917666e85a56b35e081c7257d10dac64
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.8-1.debian.tar.xz' shadow_4.8-1.debian.tar.xz 74780 SHA256:7b40fb942045d97ec523725df1907eeb90b6faa365188ded76e15b439880cef7
+```
 
-- http://snapshot.debian.org/package/shadow/1:4.7-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/shadow/1:4.8-1/ (for browsing the source)
+- https://sources.debian.net/src/shadow/1:4.8-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/shadow/1:4.8-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=244-3`
 
@@ -1694,24 +1734,32 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/systemd/244-3/
 
 
-### `dpkg` source package: `sysvinit=2.96-1`
+### `dpkg` source package: `sysvinit=2.96-2.1`
 
 Binary Packages:
 
-- `sysvinit-utils=2.96-1`
+- `sysvinit-utils=2.96-2.1`
 
 Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris sysvinit=2.96-2.1
+'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.96-2.1.dsc' sysvinit_2.96-2.1.dsc 2607 SHA256:fe5e8f60f225dc1a2af6b68f5d99e0af4e09e02f8da0a4883a52e579819d8f97
+'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.96.orig.tar.xz' sysvinit_2.96.orig.tar.xz 122164 SHA256:2a2e26b72aa235a23ab1c8471005f890309ce1196c83fbc9413c57b9ab62b587
+'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.96.orig.tar.xz.asc' sysvinit_2.96.orig.tar.xz.asc 313 SHA256:dfc184b95da12c8c888c8ae6b0f26fe8a23b07fbcdd240f6600a8a78b9439fa0
+'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.96-2.1.debian.tar.xz' sysvinit_2.96-2.1.debian.tar.xz 128084 SHA256:f2459926be2d0ce07c75b2c93548ac7fedd1e445f17879109ab28dde8fe4829b
+```
 
-- http://snapshot.debian.org/package/sysvinit/2.96-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/sysvinit/2.96-2.1/ (for browsing the source)
+- https://sources.debian.net/src/sysvinit/2.96-2.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sysvinit/2.96-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.30+dfsg-6`
 
