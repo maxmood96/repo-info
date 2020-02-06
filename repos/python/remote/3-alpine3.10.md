@@ -1,7 +1,7 @@
 ## `python:3-alpine3.10`
 
 ```console
-$ docker pull python@sha256:8743daa1544a17bb198abe44361e6d5cd6069303e2d1cc48f32dba0a88d776c3
+$ docker pull python@sha256:2033b676e40dc17f44ad1eb3fb2dbdca09ecc2ac7d40a0a5b6dacd4689f49a9b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -149,14 +149,14 @@ CMD ["python3"]
 ### `python:3-alpine3.10` - linux; arm variant v7
 
 ```console
-$ docker pull python@sha256:2b9af2e54ece7a8994e6832b26e9a076b2ff1d7ab942d17d6e7bb74758d287d0
+$ docker pull python@sha256:20bd516e7893ebd24348f6d2b58533329554dc18b4c31eed335949457d4ad2d7
 ```
 
--	Docker Version: 18.06.1-ce
+-	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.3 MB (33299037 bytes)**  
+-	Total Size: **33.3 MB (33303681 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f0d33ed830b6297d8689f624657638681b76cdcd6e95dc76844273fbecbc5fa6`
+-	Image ID: `sha256:d20ac5d269640808d389eca9a3b1f5f31b31a3cf53a603512280a860f7b53a65`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -180,13 +180,13 @@ RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		gnupg 		tar 		xz 		&&
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
 # Sat, 25 Jan 2020 02:29:01 GMT
 ENV PYTHON_PIP_VERSION=20.0.2
-# Sat, 25 Jan 2020 02:29:02 GMT
-ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/42ad3426cb1ef05863521d7988d5f7fec0c99560/get-pip.py
-# Sat, 25 Jan 2020 02:29:03 GMT
-ENV PYTHON_GET_PIP_SHA256=da288fc002d0bb2b90f6fbabc91048c1fa18d567ad067ee713c6e331d3a32b45
-# Sat, 25 Jan 2020 02:29:15 GMT
+# Thu, 06 Feb 2020 02:16:11 GMT
+ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/d59197a3c169cef378a22428a3fa99d33e080a5d/get-pip.py
+# Thu, 06 Feb 2020 02:16:12 GMT
+ENV PYTHON_GET_PIP_SHA256=421ac1d44c0cf9730a088e337867d974b91bdce4ea2636099275071878cc189e
+# Thu, 06 Feb 2020 02:16:26 GMT
 RUN set -ex; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Sat, 25 Jan 2020 02:29:15 GMT
+# Thu, 06 Feb 2020 02:16:27 GMT
 CMD ["python3"]
 ```
 
@@ -207,22 +207,22 @@ CMD ["python3"]
 		Last Modified: Thu, 23 Jan 2020 20:17:25 GMT  
 		Size: 230.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c18d4addb3f321a6b606c844bd092385a64c2cb659af0cefe97792802bf81126`  
-		Last Modified: Sat, 25 Jan 2020 02:48:03 GMT  
-		Size: 1.9 MB (1887841 bytes)  
+	-	`sha256:4080dc8b778b7d8387b3741a758cee0435055457718917661722fb35e8b3dac3`  
+		Last Modified: Thu, 06 Feb 2020 02:32:26 GMT  
+		Size: 1.9 MB (1892485 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:3-alpine3.10` - linux; arm64 variant v8
 
 ```console
-$ docker pull python@sha256:1262b7309f65b0b386ee650db581c3d60da04d325cc567435853112aa2351954
+$ docker pull python@sha256:413d8bcbf3af1e92066ec223c8bca994d3acb1d31c669834f38e7d368468f1e1
 ```
 
--	Docker Version: 18.06.1-ce
+-	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.9 MB (35895170 bytes)**  
+-	Total Size: **35.9 MB (35899846 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0017dd41a0b90e974d45de3f25ed74e180472c751d1de1558f479244349d2749`
+-	Image ID: `sha256:c872381e8fce9769c892f8b0111fa16c2053959b6cae6029e51ac44140208d45`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -246,13 +246,13 @@ RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		gnupg 		tar 		xz 		&&
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
 # Sat, 25 Jan 2020 02:13:21 GMT
 ENV PYTHON_PIP_VERSION=20.0.2
-# Sat, 25 Jan 2020 02:13:22 GMT
-ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/42ad3426cb1ef05863521d7988d5f7fec0c99560/get-pip.py
-# Sat, 25 Jan 2020 02:13:24 GMT
-ENV PYTHON_GET_PIP_SHA256=da288fc002d0bb2b90f6fbabc91048c1fa18d567ad067ee713c6e331d3a32b45
-# Sat, 25 Jan 2020 02:13:37 GMT
+# Thu, 06 Feb 2020 01:52:01 GMT
+ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/d59197a3c169cef378a22428a3fa99d33e080a5d/get-pip.py
+# Thu, 06 Feb 2020 01:52:02 GMT
+ENV PYTHON_GET_PIP_SHA256=421ac1d44c0cf9730a088e337867d974b91bdce4ea2636099275071878cc189e
+# Thu, 06 Feb 2020 01:52:15 GMT
 RUN set -ex; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Sat, 25 Jan 2020 02:13:38 GMT
+# Thu, 06 Feb 2020 01:52:16 GMT
 CMD ["python3"]
 ```
 
@@ -273,9 +273,9 @@ CMD ["python3"]
 		Last Modified: Thu, 23 Jan 2020 22:00:43 GMT  
 		Size: 232.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc1583f8f6d97928cd56cbb3dcb061ee3468e6bffbc5de5cd5b4d123979bf112`  
-		Last Modified: Sat, 25 Jan 2020 02:29:22 GMT  
-		Size: 1.9 MB (1887790 bytes)  
+	-	`sha256:9f534bb455f844d6695ff34e47423d4cc8307fc672fcc0a0b51f7f88665f0e2c`  
+		Last Modified: Thu, 06 Feb 2020 02:10:36 GMT  
+		Size: 1.9 MB (1892466 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:3-alpine3.10` - linux; 386
