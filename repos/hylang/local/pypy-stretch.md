@@ -1,10 +1,10 @@
-# `hylang:0.17.0-pypy3.6-stretch`
+# `hylang:0.18.0-pypy3.6-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:be53d2c25d4c82fc73a5ee8eb51b6f8e890d0382ad4fc48326368979d0b43037`
-- Created: `2020-02-02T22:55:48.025577526Z`
-- Virtual Size: ~ 209.19 Mb  
+- Image ID: `sha256:e7b112e2007b15fc3210ba628e4d327f2bd6646a86f74f78a1a1bf2b6afad311`
+- Created: `2020-02-06T00:43:54.918574571Z`
+- Virtual Size: ~ 209.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -13,9 +13,9 @@
   - `LANG=C.UTF-8`
   - `PYPY_VERSION=7.3.0`
   - `PYTHON_PIP_VERSION=20.0.2`
-  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/42ad3426cb1ef05863521d7988d5f7fec0c99560/get-pip.py`
-  - `PYTHON_GET_PIP_SHA256=da288fc002d0bb2b90f6fbabc91048c1fa18d567ad067ee713c6e331d3a32b45`
-  - `HY_VERSION=0.17.0`
+  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/d59197a3c169cef378a22428a3fa99d33e080a5d/get-pip.py`
+  - `PYTHON_GET_PIP_SHA256=421ac1d44c0cf9730a088e337867d974b91bdce4ea2636099275071878cc189e`
+  - `HY_VERSION=0.18.0`
 
 ## `dpkg` (`.deb`-based packages)
 
