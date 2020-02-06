@@ -1,7 +1,7 @@
 ## `ros:dashing-ros-core-bionic`
 
 ```console
-$ docker pull ros@sha256:f2ef14e81bf41c9339a95ca4557ec445c530c14b8ea9ed668613c5857a2c3af0
+$ docker pull ros@sha256:10577432c29c16809de9c41a05d1f16eab84f7ab55397c450b18061525ca6146
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,14 +13,14 @@ $ docker pull ros@sha256:f2ef14e81bf41c9339a95ca4557ec445c530c14b8ea9ed668613c58
 ### `ros:dashing-ros-core-bionic` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:6c274db76976e2163022cc68ec9f10a9dd3a55cfef69b30a7d01fe2f53ab9836
+$ docker pull ros@sha256:dcd9ee809309546b134e9af533c63f4ec3bf18e1731912455d2728f280e92078
 ```
 
--	Docker Version: 18.06.1-ce
+-	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **276.8 MB (276807605 bytes)**  
+-	Total Size: **276.7 MB (276694397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2b386bf9ae4d439a4de9f78e0e236a31b6190f5ca566e55430cec0b35ead432`
+-	Image ID: `sha256:168656cbbec26faa13e7291301571d0fc14e437f85eaad9d28e28d931bd536da`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -49,21 +49,21 @@ RUN apt-get update && apt-get install --no-install-recommends -y     git     pyt
 ENV LANG=C.UTF-8
 # Thu, 16 Jan 2020 04:26:33 GMT
 ENV LC_ALL=C.UTF-8
-# Thu, 16 Jan 2020 04:26:40 GMT
-RUN rosdep init     && rosdep update
-# Thu, 16 Jan 2020 04:26:43 GMT
-RUN colcon mixin add default       https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml &&     colcon mixin update &&     colcon metadata add default       https://raw.githubusercontent.com/colcon/colcon-metadata-repository/master/index.yaml &&     colcon metadata update
-# Thu, 16 Jan 2020 04:26:45 GMT
-RUN pip3 install -U     argcomplete
-# Thu, 16 Jan 2020 04:26:45 GMT
+# Thu, 06 Feb 2020 00:09:48 GMT
 ENV ROS_DISTRO=dashing
-# Thu, 16 Jan 2020 04:27:23 GMT
+# Thu, 06 Feb 2020 00:09:58 GMT
+RUN rosdep init &&   rosdep update --rosdistro $ROS_DISTRO
+# Thu, 06 Feb 2020 00:10:01 GMT
+RUN colcon mixin add default       https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml &&     colcon mixin update &&     colcon metadata add default       https://raw.githubusercontent.com/colcon/colcon-metadata-repository/master/index.yaml &&     colcon metadata update
+# Thu, 06 Feb 2020 00:10:04 GMT
+RUN pip3 install -U     argcomplete
+# Thu, 06 Feb 2020 00:11:09 GMT
 RUN apt-get update && apt-get install -y     ros-dashing-ros-core=0.7.3-1*     && rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jan 2020 04:27:23 GMT
+# Thu, 06 Feb 2020 00:11:10 GMT
 COPY file:57f71198b74c2c1967889acdfddb85d428137580d18be4211971fc7381557b6c in / 
-# Thu, 16 Jan 2020 04:27:24 GMT
+# Thu, 06 Feb 2020 00:11:10 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 16 Jan 2020 04:27:24 GMT
+# Thu, 06 Feb 2020 00:11:10 GMT
 CMD ["bash"]
 ```
 
@@ -104,38 +104,38 @@ CMD ["bash"]
 		Last Modified: Thu, 16 Jan 2020 04:35:43 GMT  
 		Size: 28.4 MB (28400883 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0154aadde3bc6886f4ae1cd0478e12f15430ece84dd0be057a356250c83ec9bd`  
-		Last Modified: Thu, 16 Jan 2020 04:35:34 GMT  
-		Size: 418.7 KB (418733 bytes)  
+	-	`sha256:02d80473d577902e970488d192e0a9e784232e0d918b8eae515435404e58cb71`  
+		Last Modified: Thu, 06 Feb 2020 00:28:15 GMT  
+		Size: 422.9 KB (422941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a98a41ae0e9c930de9e11baf6e18df13233215d9c2d8b3d26140f4c3298502b`  
-		Last Modified: Thu, 16 Jan 2020 04:35:34 GMT  
-		Size: 1.9 KB (1853 bytes)  
+	-	`sha256:2195c8b0918b6c70a35b0d305b015a97e6131163f61897ab0371b60627164b05`  
+		Last Modified: Thu, 06 Feb 2020 00:28:15 GMT  
+		Size: 1.8 KB (1849 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9998fabedb931db5162a69b65d36c0214dcc243d770e7dbc69a845786aad3c8`  
-		Last Modified: Thu, 16 Jan 2020 04:35:34 GMT  
-		Size: 327.0 KB (327023 bytes)  
+	-	`sha256:e038f4e576021d68facc2ace967c82e6f2efe78ada302a90e2051db8975a4d60`  
+		Last Modified: Thu, 06 Feb 2020 00:28:16 GMT  
+		Size: 206.1 KB (206146 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3b06fc78bb1a7619588ec20b904f6bcb7cde5310456fe3ccf489ed7c18fbc40`  
-		Last Modified: Thu, 16 Jan 2020 04:35:58 GMT  
-		Size: 68.1 MB (68085760 bytes)  
+	-	`sha256:0f1666e7ceddbb1cb50a39d47290aa053c729fb6a1a483f345443119f3fe1484`  
+		Last Modified: Thu, 06 Feb 2020 00:28:37 GMT  
+		Size: 68.1 MB (68089225 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:478b974d53d11b0a5797da673f187a1c4a901cc1864e4d30d20338a34d99ef0c`  
-		Last Modified: Thu, 16 Jan 2020 04:35:34 GMT  
+	-	`sha256:77e6105f0e10479311f4a887e5c7a3b2e3c6035d729cbc4c5677112b2066166b`  
+		Last Modified: Thu, 06 Feb 2020 00:28:15 GMT  
 		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:dashing-ros-core-bionic` - linux; arm variant v7
 
 ```console
-$ docker pull ros@sha256:5ecd10e82e1fdb22479ca774d76740f58a23a10555e38efc179e474279a39718
+$ docker pull ros@sha256:fe04cdff2d74d1ce8255f08cebfe3c3e76e2502beeac0577ac8a48d685fe8459
 ```
 
--	Docker Version: 18.06.1-ce
+-	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **232.1 MB (232095755 bytes)**  
+-	Total Size: **232.0 MB (231978896 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7d10b59ab958f2aa84a84cb181e23fbeffc861d6e64703870acc5388ff5a4a1`
+-	Image ID: `sha256:ba6eb75144a778fb4868aba881617117da5f1c395150618c3753e1bdab28c685`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -164,21 +164,21 @@ RUN apt-get update && apt-get install --no-install-recommends -y     git     pyt
 ENV LANG=C.UTF-8
 # Thu, 16 Jan 2020 03:12:15 GMT
 ENV LC_ALL=C.UTF-8
-# Thu, 16 Jan 2020 03:12:30 GMT
-RUN rosdep init     && rosdep update
-# Thu, 16 Jan 2020 03:12:36 GMT
-RUN colcon mixin add default       https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml &&     colcon mixin update &&     colcon metadata add default       https://raw.githubusercontent.com/colcon/colcon-metadata-repository/master/index.yaml &&     colcon metadata update
-# Thu, 16 Jan 2020 03:12:42 GMT
-RUN pip3 install -U     argcomplete
-# Thu, 16 Jan 2020 03:12:48 GMT
+# Wed, 05 Feb 2020 23:20:00 GMT
 ENV ROS_DISTRO=dashing
-# Thu, 16 Jan 2020 03:14:44 GMT
+# Wed, 05 Feb 2020 23:20:19 GMT
+RUN rosdep init &&   rosdep update --rosdistro $ROS_DISTRO
+# Wed, 05 Feb 2020 23:20:25 GMT
+RUN colcon mixin add default       https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml &&     colcon mixin update &&     colcon metadata add default       https://raw.githubusercontent.com/colcon/colcon-metadata-repository/master/index.yaml &&     colcon metadata update
+# Wed, 05 Feb 2020 23:20:30 GMT
+RUN pip3 install -U     argcomplete
+# Wed, 05 Feb 2020 23:21:54 GMT
 RUN apt-get update && apt-get install -y     ros-dashing-ros-core=0.7.3-1*     && rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jan 2020 03:14:50 GMT
+# Wed, 05 Feb 2020 23:21:57 GMT
 COPY file:57f71198b74c2c1967889acdfddb85d428137580d18be4211971fc7381557b6c in / 
-# Thu, 16 Jan 2020 03:14:51 GMT
+# Wed, 05 Feb 2020 23:21:58 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 16 Jan 2020 03:14:52 GMT
+# Wed, 05 Feb 2020 23:21:59 GMT
 CMD ["bash"]
 ```
 
@@ -219,38 +219,38 @@ CMD ["bash"]
 		Last Modified: Thu, 16 Jan 2020 03:26:45 GMT  
 		Size: 25.4 MB (25371604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:260d22681f1fd118397473071bc4ce97fcabccc30f0c832c1e53bd16cf3b2ac6`  
-		Last Modified: Thu, 16 Jan 2020 03:26:33 GMT  
-		Size: 418.8 KB (418810 bytes)  
+	-	`sha256:101ee8166afacc4c7cd7f3afedd457768515c788246fe33d5970176c33566c80`  
+		Last Modified: Wed, 05 Feb 2020 23:40:37 GMT  
+		Size: 423.0 KB (423002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8a6eb7a2755d8f67f86b2526d328c0cd9096589052358e3e614bde9b3d1c78e`  
-		Last Modified: Thu, 16 Jan 2020 03:26:33 GMT  
-		Size: 1.9 KB (1907 bytes)  
+	-	`sha256:19d6bc7508d94f24754e3539740403c9b341cf7cea59c46219d3b5712727748e`  
+		Last Modified: Wed, 05 Feb 2020 23:40:36 GMT  
+		Size: 1.9 KB (1908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5e9b65605aa5f53341ef81cf09ef3191ff6f7b3bd1d1e228fdf138c437f62e8`  
-		Last Modified: Thu, 16 Jan 2020 03:26:33 GMT  
-		Size: 327.3 KB (327329 bytes)  
+	-	`sha256:3296df0ffd6f33d214c88f9869bebea494bec79f59ab8816d4e45d83557924d4`  
+		Last Modified: Wed, 05 Feb 2020 23:40:36 GMT  
+		Size: 206.4 KB (206412 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e955036ba0d39235062d7a8018f72c1ea0ba80897662b0e923abcdd472b620f5`  
-		Last Modified: Thu, 16 Jan 2020 03:26:58 GMT  
-		Size: 49.3 MB (49262089 bytes)  
+	-	`sha256:877ceee9535c14def5fe46c7f5a6ee615c72f785e091480a08bd4229e0f76a81`  
+		Last Modified: Wed, 05 Feb 2020 23:40:57 GMT  
+		Size: 49.3 MB (49261953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eefe2e51c51328a1ef21dbba0a5ac08c333556f85c79646c6d349cc71da603cb`  
-		Last Modified: Thu, 16 Jan 2020 03:26:33 GMT  
-		Size: 194.0 B  
+	-	`sha256:ce6787de398a46ccff55c19425fe7537ab524839a999b01e4aa2c790d42fd834`  
+		Last Modified: Wed, 05 Feb 2020 23:40:36 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:dashing-ros-core-bionic` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:132c8befbe3833135711af4619d2497cef3e2fbf20f3acebd608a56a89debe75
+$ docker pull ros@sha256:8944406c39f43cc5c7e638d07cf9870f28460e3d4e929ee73b42d9d6936450fd
 ```
 
--	Docker Version: 18.06.1-ce
+-	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.2 MB (251170639 bytes)**  
+-	Total Size: **251.1 MB (251055534 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08dd27e2e378c30e42792fd7bdbd981ef258670affa1c907faa1e29f57bab91d`
+-	Image ID: `sha256:308eef90e7409593da4066a6a2733d30256d8e79f1d2223ddd98e9e8e6fb6092`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -279,21 +279,21 @@ RUN apt-get update && apt-get install --no-install-recommends -y     git     pyt
 ENV LANG=C.UTF-8
 # Thu, 16 Jan 2020 03:01:37 GMT
 ENV LC_ALL=C.UTF-8
-# Thu, 16 Jan 2020 03:02:06 GMT
-RUN rosdep init     && rosdep update
-# Thu, 16 Jan 2020 03:02:19 GMT
-RUN colcon mixin add default       https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml &&     colcon mixin update &&     colcon metadata add default       https://raw.githubusercontent.com/colcon/colcon-metadata-repository/master/index.yaml &&     colcon metadata update
-# Thu, 16 Jan 2020 03:02:31 GMT
-RUN pip3 install -U     argcomplete
-# Thu, 16 Jan 2020 03:02:36 GMT
+# Thu, 06 Feb 2020 00:58:21 GMT
 ENV ROS_DISTRO=dashing
-# Thu, 16 Jan 2020 03:06:46 GMT
+# Thu, 06 Feb 2020 00:59:00 GMT
+RUN rosdep init &&   rosdep update --rosdistro $ROS_DISTRO
+# Thu, 06 Feb 2020 00:59:14 GMT
+RUN colcon mixin add default       https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml &&     colcon mixin update &&     colcon metadata add default       https://raw.githubusercontent.com/colcon/colcon-metadata-repository/master/index.yaml &&     colcon metadata update
+# Thu, 06 Feb 2020 00:59:25 GMT
+RUN pip3 install -U     argcomplete
+# Thu, 06 Feb 2020 01:01:21 GMT
 RUN apt-get update && apt-get install -y     ros-dashing-ros-core=0.7.3-1*     && rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jan 2020 03:06:55 GMT
+# Thu, 06 Feb 2020 01:01:24 GMT
 COPY file:57f71198b74c2c1967889acdfddb85d428137580d18be4211971fc7381557b6c in / 
-# Thu, 16 Jan 2020 03:07:02 GMT
+# Thu, 06 Feb 2020 01:01:25 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 16 Jan 2020 03:07:06 GMT
+# Thu, 06 Feb 2020 01:01:26 GMT
 CMD ["bash"]
 ```
 
@@ -334,23 +334,23 @@ CMD ["bash"]
 		Last Modified: Thu, 16 Jan 2020 03:21:41 GMT  
 		Size: 27.1 MB (27087735 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92288e9e0112e1d58483bbe59270b3d072c83ec5ba073ee1cc8c313f27eac85f`  
-		Last Modified: Thu, 16 Jan 2020 03:21:30 GMT  
-		Size: 418.8 KB (418813 bytes)  
+	-	`sha256:ada8b11ee43958bdd0a5c8b4b0ffa86be7bcb2eb4e831271d47e2857d560d34e`  
+		Last Modified: Thu, 06 Feb 2020 01:23:48 GMT  
+		Size: 424.0 KB (423997 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d991ae3725db52c36fedba586155a2df9d44ca823d46cdf7fe023b50432a0025`  
-		Last Modified: Thu, 16 Jan 2020 03:21:30 GMT  
-		Size: 1.9 KB (1931 bytes)  
+	-	`sha256:68b0a9cdbb2c47daea6f3bb0dadb4c5efe9c64cce2a1a624e2e7c40c61a31b70`  
+		Last Modified: Thu, 06 Feb 2020 01:23:48 GMT  
+		Size: 1.9 KB (1917 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f64069bbf592deb57b4720e5f3eb1574afda76d5f9a8b6556faeaa68e78944e7`  
-		Last Modified: Thu, 16 Jan 2020 03:21:30 GMT  
-		Size: 327.3 KB (327347 bytes)  
+	-	`sha256:886f72985428d106df3591c362308ee63a6e4325debba5bd490082ca26467f2b`  
+		Last Modified: Thu, 06 Feb 2020 01:23:48 GMT  
+		Size: 206.4 KB (206450 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a14961574783cff8a9199cba06c4a4138c094ba97299bc01407a7435d936626`  
-		Last Modified: Thu, 16 Jan 2020 03:21:53 GMT  
-		Size: 55.6 MB (55560242 bytes)  
+	-	`sha256:22dc9cb6be82146c45fdeca0da005e7b3483e9f7f8963e681972a7e4b2b4afd9`  
+		Last Modified: Thu, 06 Feb 2020 01:24:26 GMT  
+		Size: 55.6 MB (55560862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74b3b97300169f54c95c1c0abe10c6978b18c174ee2a9afe2fd13859901f0907`  
-		Last Modified: Thu, 16 Jan 2020 03:21:30 GMT  
-		Size: 193.0 B  
+	-	`sha256:a52a6971d87232e964c7abd20cf8ee0c5b3bfddbd9d5482372731950a3daa4e3`  
+		Last Modified: Thu, 06 Feb 2020 01:23:48 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

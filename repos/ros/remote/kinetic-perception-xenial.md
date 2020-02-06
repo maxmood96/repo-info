@@ -1,7 +1,7 @@
 ## `ros:kinetic-perception-xenial`
 
 ```console
-$ docker pull ros@sha256:8230f241170322bf548761417eb700524b1facd4f0e9848dd2c6af3c4cc34b4c
+$ docker pull ros@sha256:6475bfb9fb9567648110ca2838a04d5868e9a01515be4a6c5111ef68e3e95340
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,14 +13,14 @@ $ docker pull ros@sha256:8230f241170322bf548761417eb700524b1facd4f0e9848dd2c6af3
 ### `ros:kinetic-perception-xenial` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:bcf983a0a0a934b67b14d7a9ca586d31f2a070059e0c3241233c48a05cf6e728
+$ docker pull ros@sha256:42fad00d363d12de75edfb170c160db2d97d9aaa41825e53b2f84640bce283d5
 ```
 
--	Docker Version: 18.06.1-ce
+-	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **725.8 MB (725780011 bytes)**  
+-	Total Size: **734.2 MB (734183077 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4b48aecb4dc5eed4d9dff47229949a91b7f444b5b0ac85814e77e30e16314914`
+-	Image ID: `sha256:f7a4abafbeaceb4fe27f6b6469c3675f33b36441d7f47073ff153bf253386fc3`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -47,21 +47,21 @@ RUN apt-get update && apt-get install --no-install-recommends -y     python-rosd
 ENV LANG=C.UTF-8
 # Thu, 16 Jan 2020 04:02:03 GMT
 ENV LC_ALL=C.UTF-8
-# Thu, 16 Jan 2020 04:02:12 GMT
-RUN rosdep init     && rosdep update
-# Thu, 16 Jan 2020 04:02:12 GMT
+# Wed, 05 Feb 2020 23:43:36 GMT
 ENV ROS_DISTRO=kinetic
-# Thu, 16 Jan 2020 04:03:57 GMT
+# Wed, 05 Feb 2020 23:43:46 GMT
+RUN rosdep init &&   rosdep update --rosdistro $ROS_DISTRO
+# Wed, 05 Feb 2020 23:46:16 GMT
 RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jan 2020 04:03:58 GMT
+# Wed, 05 Feb 2020 23:46:18 GMT
 COPY file:cbbaa0f5d6a276512315f5b4d7347e94a120cefbda9058ebb0d678847ff4837f in / 
-# Thu, 16 Jan 2020 04:03:58 GMT
+# Wed, 05 Feb 2020 23:46:18 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 16 Jan 2020 04:03:59 GMT
+# Wed, 05 Feb 2020 23:46:18 GMT
 CMD ["bash"]
-# Thu, 16 Jan 2020 04:05:26 GMT
+# Wed, 05 Feb 2020 23:48:22 GMT
 RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jan 2020 04:10:28 GMT
+# Wed, 05 Feb 2020 23:53:29 GMT
 RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
@@ -98,38 +98,38 @@ RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.2-0*    
 		Last Modified: Thu, 16 Jan 2020 04:29:11 GMT  
 		Size: 54.8 MB (54775919 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d4eeacdef1b910fd8f881a1c08a8932662896fe4384b5afcbb99431b5fbca01`  
-		Last Modified: Thu, 16 Jan 2020 04:28:55 GMT  
-		Size: 412.1 KB (412109 bytes)  
+	-	`sha256:069db0370dc21fa81e537c1b636e14ec41dce351b51314970303a52cfca86678`  
+		Last Modified: Thu, 06 Feb 2020 00:12:55 GMT  
+		Size: 416.3 KB (416297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1cd7f1bf131196a8f6ac1ec153e78523a6d2ffa038707e0f2613d7fe1f424999`  
-		Last Modified: Thu, 16 Jan 2020 04:29:40 GMT  
-		Size: 193.6 MB (193556074 bytes)  
+	-	`sha256:3f639c54fb08d6d68d76d7729a4a5070058a3fec0c7aa9830ae375cd51818ecb`  
+		Last Modified: Thu, 06 Feb 2020 00:13:38 GMT  
+		Size: 193.6 MB (193587589 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac605ca46bc5fc154751bfab37718cbc6b5f9ae502eb985bebe6c02fcda6ad93`  
-		Last Modified: Thu, 16 Jan 2020 04:28:55 GMT  
-		Size: 193.0 B  
+	-	`sha256:cf46e0d7da84b62b401740c009e0cb04f72e920f9c7167a56369773805bd833f`  
+		Last Modified: Thu, 06 Feb 2020 00:12:53 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb5a5e8549d86e70d3ef8ef7574bf1dc57e41604d836f288001338d4162d6d03`  
-		Last Modified: Thu, 16 Jan 2020 04:30:04 GMT  
-		Size: 85.5 MB (85524136 bytes)  
+	-	`sha256:9079f19912a4a98aa81a5bbddc80d05b6682bfe5acc8bd81ae1a254cbf01fb44`  
+		Last Modified: Thu, 06 Feb 2020 00:14:56 GMT  
+		Size: 93.8 MB (93763182 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:580331cb7fff8bf72f628ba76e17656f071ecbe6d26254aed9f052931e2aec4c`  
-		Last Modified: Thu, 16 Jan 2020 04:31:53 GMT  
-		Size: 340.4 MB (340408776 bytes)  
+	-	`sha256:7cd805ff6a1186ac7fd65a57c6dc0f3c42ff1855f1672415cbc4e4929d7ccb54`  
+		Last Modified: Thu, 06 Feb 2020 00:16:34 GMT  
+		Size: 340.5 MB (340537091 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:kinetic-perception-xenial` - linux; arm variant v7
 
 ```console
-$ docker pull ros@sha256:1b9658312983761fbf685ee9ee5cd0777d3453027dcdb45bc2932e729a16c851
+$ docker pull ros@sha256:6c1d502ed2f3dc626689252010077008d94fc7234fb9f6a6374316efe004f121
 ```
 
--	Docker Version: 18.06.1-ce
+-	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **617.1 MB (617119300 bytes)**  
+-	Total Size: **624.6 MB (624570899 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:83936009b0b20af566033a891d7f527c3bd6d22a966ea43d645f94072bd814a4`
+-	Image ID: `sha256:378676e95fd1c917b7f7a65f27d51824b37e5c4346201e32e54966baa5ccd462`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -156,21 +156,21 @@ RUN apt-get update && apt-get install --no-install-recommends -y     python-rosd
 ENV LANG=C.UTF-8
 # Thu, 16 Jan 2020 02:29:46 GMT
 ENV LC_ALL=C.UTF-8
-# Thu, 16 Jan 2020 02:30:04 GMT
-RUN rosdep init     && rosdep update
-# Thu, 16 Jan 2020 02:30:05 GMT
+# Wed, 05 Feb 2020 23:02:07 GMT
 ENV ROS_DISTRO=kinetic
-# Thu, 16 Jan 2020 02:34:06 GMT
+# Wed, 05 Feb 2020 23:02:30 GMT
+RUN rosdep init &&   rosdep update --rosdistro $ROS_DISTRO
+# Wed, 05 Feb 2020 23:04:32 GMT
 RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jan 2020 02:34:09 GMT
+# Wed, 05 Feb 2020 23:04:37 GMT
 COPY file:cbbaa0f5d6a276512315f5b4d7347e94a120cefbda9058ebb0d678847ff4837f in / 
-# Thu, 16 Jan 2020 02:34:10 GMT
+# Wed, 05 Feb 2020 23:04:38 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 16 Jan 2020 02:34:11 GMT
+# Wed, 05 Feb 2020 23:04:38 GMT
 CMD ["bash"]
-# Thu, 16 Jan 2020 02:36:52 GMT
+# Wed, 05 Feb 2020 23:06:20 GMT
 RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jan 2020 02:45:33 GMT
+# Wed, 05 Feb 2020 23:10:38 GMT
 RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
@@ -207,38 +207,38 @@ RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.2-0*    
 		Last Modified: Thu, 16 Jan 2020 03:18:49 GMT  
 		Size: 50.3 MB (50348271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c59b926cb02815487a322cd1941f82b1e29f5fce6368ab34c3c74e2e1342617a`  
-		Last Modified: Thu, 16 Jan 2020 03:18:30 GMT  
-		Size: 412.1 KB (412069 bytes)  
+	-	`sha256:2bb97ba7035a53d7ab9d221ce391811c4b5887eb56facbd4d09d01b953324005`  
+		Last Modified: Wed, 05 Feb 2020 23:25:16 GMT  
+		Size: 416.2 KB (416220 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4abaa2962a935dd4e57a0e25e4fbd76cf1c7e99a5e759c7948f736bbf68396af`  
-		Last Modified: Thu, 16 Jan 2020 03:19:27 GMT  
-		Size: 165.0 MB (164958438 bytes)  
+	-	`sha256:9a2c000d394b1e4efd773fd74cfa027e4cf9834e70618731841db597808cf834`  
+		Last Modified: Wed, 05 Feb 2020 23:26:43 GMT  
+		Size: 165.0 MB (164974334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9042d1b58ba351b5a7796833c505ecad1ad0c916d9f6f30a11bd16ba5699b9b8`  
-		Last Modified: Thu, 16 Jan 2020 03:18:30 GMT  
-		Size: 194.0 B  
+	-	`sha256:e964335ef5d1fe049f983adabb5223afbceb92092045c0a348199f04dba54db9`  
+		Last Modified: Wed, 05 Feb 2020 23:25:15 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a046a80c8e1698972206899f3517c1b14b083ba91d012a69b98b1d496830b26`  
-		Last Modified: Thu, 16 Jan 2020 03:20:01 GMT  
-		Size: 76.3 MB (76325441 bytes)  
+	-	`sha256:8d49315ad59cb97841be8aeea3d70ce4aaa69a187507f4413c8e78f9fa88ff4c`  
+		Last Modified: Wed, 05 Feb 2020 23:27:25 GMT  
+		Size: 83.6 MB (83639114 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb435f169eacecc640515489d5893ff82333b27c13460d216602cb61fc265785`  
-		Last Modified: Thu, 16 Jan 2020 03:22:23 GMT  
-		Size: 280.5 MB (280509998 bytes)  
+	-	`sha256:beb415a9e5cd34bc94960c179c596c06503e69be5649bb6fb98ed0d44a1c094b`  
+		Last Modified: Wed, 05 Feb 2020 23:31:42 GMT  
+		Size: 280.6 MB (280627876 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:kinetic-perception-xenial` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:efa6a0ae13cb69d75e81ad726a9f70bb0afc8135f509ddce0748580b2bcc660b
+$ docker pull ros@sha256:78625668221e66b841c902e5377157f4f28abd3c6814fd477d6b8dd4b0cc6679
 ```
 
--	Docker Version: 18.06.1-ce
+-	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **641.4 MB (641377198 bytes)**  
+-	Total Size: **648.8 MB (648764372 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba6c240e950e47d709da18d91504b85fd12e980afd3c7c5b3616db0473102330`
+-	Image ID: `sha256:8a4b4f32cc4ddeb79b70c058a2969359d14349d408d0e7f4d1701f8b064acab3`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -265,21 +265,21 @@ RUN apt-get update && apt-get install --no-install-recommends -y     python-rosd
 ENV LANG=C.UTF-8
 # Thu, 16 Jan 2020 02:17:36 GMT
 ENV LC_ALL=C.UTF-8
-# Thu, 16 Jan 2020 02:17:54 GMT
-RUN rosdep init     && rosdep update
-# Thu, 16 Jan 2020 02:17:55 GMT
+# Thu, 06 Feb 2020 00:25:51 GMT
 ENV ROS_DISTRO=kinetic
-# Thu, 16 Jan 2020 02:21:40 GMT
+# Thu, 06 Feb 2020 00:26:11 GMT
+RUN rosdep init &&   rosdep update --rosdistro $ROS_DISTRO
+# Thu, 06 Feb 2020 00:28:14 GMT
 RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jan 2020 02:21:51 GMT
+# Thu, 06 Feb 2020 00:28:19 GMT
 COPY file:cbbaa0f5d6a276512315f5b4d7347e94a120cefbda9058ebb0d678847ff4837f in / 
-# Thu, 16 Jan 2020 02:21:52 GMT
+# Thu, 06 Feb 2020 00:28:20 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 16 Jan 2020 02:21:52 GMT
+# Thu, 06 Feb 2020 00:28:21 GMT
 CMD ["bash"]
-# Thu, 16 Jan 2020 02:23:39 GMT
+# Thu, 06 Feb 2020 00:30:06 GMT
 RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jan 2020 02:32:09 GMT
+# Thu, 06 Feb 2020 00:34:59 GMT
 RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.2-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
@@ -316,23 +316,23 @@ RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.2-0*    
 		Last Modified: Thu, 16 Jan 2020 03:12:29 GMT  
 		Size: 52.1 MB (52072633 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0742cddec8c616de16fc668ac3f8e310aa6b6f1afdccc2b4d4acf4baa0888de`  
-		Last Modified: Thu, 16 Jan 2020 03:12:11 GMT  
-		Size: 412.2 KB (412160 bytes)  
+	-	`sha256:4627057362d472ac6e31e60853ce99ff2037b2f43320aa4b28e22fafe79945fb`  
+		Last Modified: Thu, 06 Feb 2020 01:06:31 GMT  
+		Size: 417.3 KB (417341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e12e24bdd50ca9c0196c66fe74e8ac74366559174d0643e94f9b1029268a7630`  
-		Last Modified: Thu, 16 Jan 2020 03:13:04 GMT  
-		Size: 174.2 MB (174248716 bytes)  
+	-	`sha256:43ebdc1776f2fff6c4da8cd60169c3a18d4c8f1c612705589505d029d6f00347`  
+		Last Modified: Thu, 06 Feb 2020 01:07:33 GMT  
+		Size: 174.3 MB (174264756 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44b33e51ce7794d8770ba74cb28f0312e59c72ecfe23ea6711337db42cf14159`  
-		Last Modified: Thu, 16 Jan 2020 03:12:11 GMT  
+	-	`sha256:7f02f7cbda866be9363cf48ff2093c29c81ccce9afc635f284f3d73a39fc96f7`  
+		Last Modified: Thu, 06 Feb 2020 01:06:31 GMT  
 		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8973c559ce2026b1ae03fa797235c10a6c9e186e5a06bd9f483b1bf291530d5a`  
-		Last Modified: Thu, 16 Jan 2020 03:13:37 GMT  
-		Size: 77.8 MB (77819851 bytes)  
+	-	`sha256:b900ed17f6a602e08b967078bd2c019f82dda8e6ac0e09a5c73444ef03ece792`  
+		Last Modified: Thu, 06 Feb 2020 01:08:40 GMT  
+		Size: 85.1 MB (85059736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe216118715188ef41dd0042da40ce57ed6dbd6c59af91372d10a0b93c7fa5e0`  
-		Last Modified: Thu, 16 Jan 2020 03:16:20 GMT  
-		Size: 291.0 MB (290958060 bytes)  
+	-	`sha256:6688d3fa20709ec93d9cf059db39bc9ae0c8abace4d88af48cf2c6d1797b13b8`  
+		Last Modified: Thu, 06 Feb 2020 01:12:20 GMT  
+		Size: 291.1 MB (291084128 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
