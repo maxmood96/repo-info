@@ -1,29 +1,32 @@
-# `crate:4.0.10`
+# `crate:4.1.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c4b9ab0ca643af2d1e36797cc0f3449f16e8db5dcee5f3742391368a8122e225`
-- Created: `2019-12-16T23:22:14.670301969Z`
-- Virtual Size: ~ 678.35 Mb  
+- Image ID: `sha256:071837bdc45b0be524eb1864865d8ea3ef53f4929b30788f211b48fc2eb99593`
+- Created: `2020-02-05T23:27:04.966982382Z`
+- Virtual Size: ~ 675.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["crate"]`
 - Environment:
   - `PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/opt/jdk-12.0.1`
+  - `JAVA_HOME=/opt/jdk-13.0.1`
   - `CRATE_HEAP_SIZE=512M`
 - Labels:
   - `maintainer=Crate.io <office@crate.io>`
-  - `org.label-schema.build-date=2019-12-10T13:14:43.986536`
-  - `org.label-schema.description=CrateDB is a distributed SQL database handles massive amounts of machine data in real-time.`
+  - `org.label-schema.build-date=20191001`
   - `org.label-schema.license=GPLv2`
-  - `org.label-schema.name=crate`
+  - `org.label-schema.name=CentOS Base Image`
   - `org.label-schema.schema-version=1.0`
-  - `org.label-schema.url=https://crate.io/products/cratedb/`
-  - `org.label-schema.vcs-url=https://github.com/crate/docker-crate`
-  - `org.label-schema.vendor=Crate.io`
-  - `org.label-schema.version=4.0.10`
+  - `org.label-schema.vendor=CentOS`
+  - `org.opencontainers.image.created=2020-01-30T16:58:47.735176`
+  - `org.opencontainers.image.description=CrateDB is a distributed SQL database handles massive amounts of machine data in real-time.`
+  - `org.opencontainers.image.source=https://github.com/crate/docker-crate`
+  - `org.opencontainers.image.title=crate`
+  - `org.opencontainers.image.url=https://crate.io/products/cratedb/`
+  - `org.opencontainers.image.vendor=Crate.io`
+  - `org.opencontainers.image.version=4.1.1`
 
 ## `rpm` (`.rpm`-based packages)
 
