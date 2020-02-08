@@ -1,9 +1,9 @@
-# `node:13.7.0-buster-slim`
+# `node:13.8.0-buster-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:93859e6c73e8c00ac83abf8626b791727089c99c5ceaf45c0ead44950c22b596`
-- Created: `2020-02-01T18:11:40.960056617Z`
+- Image ID: `sha256:0db561d6d0904b31212e611698c11f1ec0a1e1a9ab4192be97a5891c174783c0`
+- Created: `2020-02-06T23:17:09.335189537Z`
 - Virtual Size: ~ 177.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=13.7.0`
+  - `NODE_VERSION=13.8.0`
   - `YARN_VERSION=1.21.1`
 
 ## `dpkg` (`.deb`-based packages)

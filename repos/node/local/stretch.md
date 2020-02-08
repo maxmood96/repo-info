@@ -1,9 +1,9 @@
-# `node:13.7.0-stretch`
+# `node:13.8.0-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2a0d8959c8e1b967d926059e555fdd23926c8fff809a0cf5fab373e694bbce64`
-- Created: `2020-01-23T00:47:32.622680091Z`
+- Image ID: `sha256:07e774543bdfc6eaedff62e24eee25cb09cf4ee564c8451b6ca8949486774284`
+- Created: `2020-02-06T23:14:52.696660969Z`
 - Virtual Size: ~ 939.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=13.7.0`
+  - `NODE_VERSION=13.8.0`
   - `YARN_VERSION=1.21.1`
 
 ## `dpkg` (`.deb`-based packages)
