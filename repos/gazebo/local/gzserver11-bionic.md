@@ -1,10 +1,10 @@
-# `gazebo:gzserver10`
+# `gazebo:gzserver11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f0176ce757467a36036921fc7b3ee28771905d45990af98a387eacf8fe07912`
-- Created: `2020-02-04T23:35:53.046208837Z`
-- Virtual Size: ~ 749.08 Mb  
+- Image ID: `sha256:b788e3a81f151f28d3121a3fee17a8f07f0bde5d7239a57f9d904e53aaa36a78`
+- Created: `2020-02-07T23:23:40.154767764Z`
+- Virtual Size: ~ 759.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -1265,16 +1265,16 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.2-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.2-1.debian.tar.xz' game-music-emu_0.6.2-1.debian.tar.xz 4412 SHA256:8ea69035bd72261ec85e5f0486707d448f7491733ae055040a9995cebb0ea820
 ```
 
-### `dpkg` source package: `gazebo10=10.2.0-1~bionic`
+### `dpkg` source package: `gazebo11=11.0.0-1~bionic`
 
 Binary Packages:
 
-- `gazebo10=10.2.0-1~bionic`
-- `gazebo10-common=10.2.0-1~bionic`
-- `gazebo10-plugin-base=10.2.0-1~bionic`
-- `libgazebo10:amd64=10.2.0-1~bionic`
+- `gazebo11=11.0.0-1~bionic`
+- `gazebo11-common=11.0.0-1~bionic`
+- `gazebo11-plugin-base=11.0.0-1~bionic`
+- `libgazebo11:amd64=11.0.0-1~bionic`
 
-Licenses: (parsed from: `/usr/share/doc/gazebo10/copyright`, `/usr/share/doc/gazebo10-common/copyright`, `/usr/share/doc/gazebo10-plugin-base/copyright`, `/usr/share/doc/libgazebo10/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gazebo11/copyright`, `/usr/share/doc/gazebo11-common/copyright`, `/usr/share/doc/gazebo11-plugin-base/copyright`, `/usr/share/doc/libgazebo11/copyright`)
 
 - `Apache`
 - `Apache-2.0`
@@ -1288,9 +1288,14 @@ Licenses: (parsed from: `/usr/share/doc/gazebo10/copyright`, `/usr/share/doc/gaz
 - `LGPL-3+`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gazebo11=11.0.0-1~bionic
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.0.0-1~bionic.dsc' gazebo11_11.0.0-1~bionic.dsc 2270 SHA256:b28b680ae748916fd68ee284969876e1095d267e39d911deb9242129f6d8dc8d
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.0.0.orig.tar.bz2' gazebo11_11.0.0.orig.tar.bz2 53806265 SHA256:3c823e3ed6fbf79a23663eade5f33460c5334dde3b99e376dcb69fa2561886f5
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.0.0-1~bionic.debian.tar.xz' gazebo11_11.0.0-1~bionic.debian.tar.xz 6560 SHA256:cebaa36d945df88fe39f33931e19560b107ba3551c44afffd0e7c152c5b9dfdd
+```
 
 ### `dpkg` source package: `gcc-7=7.4.0-1ubuntu1~18.04.1`
 
@@ -1898,13 +1903,13 @@ $ apt-get source -qq --print-uris icu=60.2-3ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_60.2-3ubuntu3.debian.tar.xz' icu_60.2-3ubuntu3.debian.tar.xz 27588 SHA256:f9f9a7aa4a70c8ce4e2f324956b9883ce4faeecfc3799800595594620824140e
 ```
 
-### `dpkg` source package: `ignition-common=1.1.1-1~bionic`
+### `dpkg` source package: `ignition-common3=3.3.0-1~bionic`
 
 Binary Packages:
 
-- `libignition-common:amd64=1.1.1-1~bionic`
+- `libignition-common3:amd64=3.3.0-1~bionic`
 
-Licenses: (parsed from: `/usr/share/doc/libignition-common/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libignition-common3/copyright`)
 
 - `Apache`
 - `Apache-2.0`
@@ -1913,13 +1918,48 @@ Licenses: (parsed from: `/usr/share/doc/libignition-common/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ignition-fuel-tools1=1.2.0-1~bionic`
+### `dpkg` source package: `ignition-fuel-tools4=4.0.0-1~bionic`
 
 Binary Packages:
 
-- `libignition-fuel-tools1-1:amd64=1.2.0-1~bionic`
+- `libignition-fuel-tools4:amd64=4.0.0-1~bionic`
 
-Licenses: (parsed from: `/usr/share/doc/libignition-fuel-tools1-1/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libignition-fuel-tools4/copyright`)
+
+- `Apache`
+- `Apache-2.0`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris ignition-fuel-tools4=4.0.0-1~bionic
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-fuel-tools4/ignition-fuel-tools4_4.0.0-1~bionic.dsc' ignition-fuel-tools4_4.0.0-1~bionic.dsc 1102 SHA256:9beba4d63785a991eb5ea299b186224481b7bcf1ead131e3d3537283ae55f140
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-fuel-tools4/ignition-fuel-tools4_4.0.0-1~bionic.tar.xz' ignition-fuel-tools4_4.0.0-1~bionic.tar.xz 313464 SHA256:a54a4ddd73430d1f07e83c0d7025dc22520693f5f4689e6c40e5b4842ad2c0b0
+```
+
+### `dpkg` source package: `ignition-math6=6.4.0-1~bionic`
+
+Binary Packages:
+
+- `libignition-math6:amd64=6.4.0-1~bionic`
+
+Licenses: (parsed from: `/usr/share/doc/libignition-math6/copyright`)
+
+- `Apache`
+- `Apache-2.0`
+- `BSD-3-clause`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ignition-msgs5=5.1.0-1~bionic`
+
+Binary Packages:
+
+- `libignition-msgs5:amd64=5.1.0-1~bionic`
+
+Licenses: (parsed from: `/usr/share/doc/libignition-msgs5/copyright`)
 
 - `Apache`
 - `Apache-2.0`
@@ -1928,13 +1968,13 @@ Licenses: (parsed from: `/usr/share/doc/libignition-fuel-tools1-1/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ignition-math4=4.0.0+dfsg1-4`
+### `dpkg` source package: `ignition-transport8=8.0.0-1~bionic`
 
 Binary Packages:
 
-- `libignition-math4:amd64=4.0.0+dfsg1-4`
+- `libignition-transport8:amd64=8.0.0-1~bionic`
 
-Licenses: (parsed from: `/usr/share/doc/libignition-math4/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libignition-transport8/copyright`)
 
 - `Apache`
 - `Apache-2.0`
@@ -1943,53 +1983,10 @@ Licenses: (parsed from: `/usr/share/doc/libignition-math4/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ignition-math4=4.0.0+dfsg1-4
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/ignition-math4/ignition-math4_4.0.0+dfsg1-4.dsc' ignition-math4_4.0.0+dfsg1-4.dsc 1957 SHA256:28535a35128a72bd6d9d9bb2ae4aab474c2913d901f9657478dca3da6a74e8de
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/ignition-math4/ignition-math4_4.0.0+dfsg1.orig.tar.bz2' ignition-math4_4.0.0+dfsg1.orig.tar.bz2 215647 SHA256:e66e02479c6227cb11f5becddca6de05913ffd2eb92282fef687fff7a9445950
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/ignition-math4/ignition-math4_4.0.0+dfsg1-4.debian.tar.xz' ignition-math4_4.0.0+dfsg1-4.debian.tar.xz 5256 SHA256:fc8ba9c23fe6c5a5f40c399794b19143d998452185a0c415020dfc5446e37d7c
-```
-
-### `dpkg` source package: `ignition-msgs=1.0.0+dfsg1-5`
-
-Binary Packages:
-
-- `libignition-msgs:amd64=1.0.0+dfsg1-5`
-
-Licenses: (parsed from: `/usr/share/doc/libignition-msgs/copyright`)
-
-- `Apache`
-- `Apache-2.0`
-- `BSD-3-clause`
-- `GPL`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris ignition-msgs=1.0.0+dfsg1-5
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/ignition-msgs/ignition-msgs_1.0.0+dfsg1-5.dsc' ignition-msgs_1.0.0+dfsg1-5.dsc 2061 SHA256:2b3044e53547e20a67dcd566108c544a043a5d404fda54a430de5aba3a09c710
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/ignition-msgs/ignition-msgs_1.0.0+dfsg1.orig.tar.bz2' ignition-msgs_1.0.0+dfsg1.orig.tar.bz2 140544 SHA256:4ea1615b8998dfb212e6adb4c368bb3194fa230033393362bc2afc57ac71f339
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/ignition-msgs/ignition-msgs_1.0.0+dfsg1-5.debian.tar.xz' ignition-msgs_1.0.0+dfsg1-5.debian.tar.xz 4024 SHA256:eb0643a07d40c9ccffc130ad7e50b95f60d89863aedeaa350ad903a0b0858312
-```
-
-### `dpkg` source package: `ignition-transport=4.0.0+dfsg-4`
-
-Binary Packages:
-
-- `libignition-transport4:amd64=4.0.0+dfsg-4`
-
-Licenses: (parsed from: `/usr/share/doc/libignition-transport4/copyright`)
-
-- `Apache`
-- `Apache-2.0`
-- `BSD-3-clause`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris ignition-transport=4.0.0+dfsg-4
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/ignition-transport/ignition-transport_4.0.0+dfsg-4.dsc' ignition-transport_4.0.0+dfsg-4.dsc 2241 SHA256:86385c54f9e8dbaf92c5a34634c0e02bb6ed42c11f67a6db29fc586da4eb8e3e
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/ignition-transport/ignition-transport_4.0.0+dfsg.orig.tar.xz' ignition-transport_4.0.0+dfsg.orig.tar.xz 194328 SHA256:18c3104694614f80f99ff295309d771d2f0ef61718f2647f760e23965d62ef6c
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/ignition-transport/ignition-transport_4.0.0+dfsg-4.debian.tar.xz' ignition-transport_4.0.0+dfsg-4.debian.tar.xz 4752 SHA256:5b63a43a71521a9c75a85916e373657d639863bd3075d71c25daf2f2d52fe9b9
+$ apt-get source -qq --print-uris ignition-transport8=8.0.0-1~bionic
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-transport8/ignition-transport8_8.0.0-1~bionic.dsc' ignition-transport8_8.0.0-1~bionic.dsc 1772 SHA256:41b69303bc63a6fc0f863c5b9f1bfd95fba9d20f46aea6553fb1564f9c7d09c4
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-transport8/ignition-transport8_8.0.0.orig.tar.bz2' ignition-transport8_8.0.0.orig.tar.bz2 438451 SHA256:d0963783c4db87fa71bacebd424c573331fed5d713d610b20b3552effe6d3ce3
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-transport8/ignition-transport8_8.0.0-1~bionic.debian.tar.xz' ignition-transport8_8.0.0-1~bionic.debian.tar.xz 3072 SHA256:10beb00c3e6e16d448208d27282db3df1b0139d4c81011253133c3d6644c81e6
 ```
 
 ### `dpkg` source package: `ilmbase=2.2.0-11ubuntu2`
@@ -2687,24 +2684,30 @@ $ apt-get source -qq --print-uris libdc1394-22=2.2.5-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/libd/libdc1394-22/libdc1394-22_2.2.5-1.debian.tar.xz' libdc1394-22_2.2.5-1.debian.tar.xz 8244 SHA256:895eeea4458059ae65a879a7d1c625508b854eb5f3d472192b94bd5ba281e316
 ```
 
-### `dpkg` source package: `libdrm=2.4.99-1ubuntu1~18.04.1`
+### `dpkg` source package: `libdrm=2.4.99-1ubuntu1~18.04.2`
 
 Binary Packages:
 
-- `libdrm-amdgpu1:amd64=2.4.99-1ubuntu1~18.04.1`
-- `libdrm-common=2.4.99-1ubuntu1~18.04.1`
-- `libdrm-intel1:amd64=2.4.99-1ubuntu1~18.04.1`
-- `libdrm-nouveau2:amd64=2.4.99-1ubuntu1~18.04.1`
-- `libdrm-radeon1:amd64=2.4.99-1ubuntu1~18.04.1`
-- `libdrm2:amd64=2.4.99-1ubuntu1~18.04.1`
+- `libdrm-amdgpu1:amd64=2.4.99-1ubuntu1~18.04.2`
+- `libdrm-common=2.4.99-1ubuntu1~18.04.2`
+- `libdrm-intel1:amd64=2.4.99-1ubuntu1~18.04.2`
+- `libdrm-nouveau2:amd64=2.4.99-1ubuntu1~18.04.2`
+- `libdrm-radeon1:amd64=2.4.99-1ubuntu1~18.04.2`
+- `libdrm2:amd64=2.4.99-1ubuntu1~18.04.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libdrm=2.4.99-1ubuntu1~18.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.99-1ubuntu1~18.04.2.dsc' libdrm_2.4.99-1ubuntu1~18.04.2.dsc 3346 SHA256:35bc17f86a80d86521789adf670581b76ea16a810c3b348e28468e2e24b2d1bd
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.99.orig.tar.gz' libdrm_2.4.99.orig.tar.gz 1145338 SHA256:597fb879e2f45193431a0d352d10cd79ef61a24ab31f44320168583e10cb6302
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.99.orig.tar.gz.asc' libdrm_2.4.99.orig.tar.gz.asc 1068 SHA256:1d2af3f55f54d10383b81822ce38bf1f37f4e461a9abc6dfb18baeed0e6d0ed4
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.99-1ubuntu1~18.04.2.diff.gz' libdrm_2.4.99-1ubuntu1~18.04.2.diff.gz 53629 SHA256:70ce509ef22574b689672060bb48cb825c88e0911b0ee7332422783b5c1f385d
+```
 
 ### `dpkg` source package: `libedit=3.1-20170329-1`
 
@@ -4561,11 +4564,11 @@ $ apt-get source -qq --print-uris libzstd=1.3.3+dfsg-2ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.3+dfsg-2ubuntu1.1.debian.tar.xz' libzstd_1.3.3+dfsg-2ubuntu1.1.debian.tar.xz 12808 SHA256:9c7421170f0a1e6234147a89ba7fa5933c0771177423e962e6faf3fd13dcbb64
 ```
 
-### `dpkg` source package: `llvm-toolchain-9=1:9-2~ubuntu18.04.1`
+### `dpkg` source package: `llvm-toolchain-9=1:9-2~ubuntu18.04.2`
 
 Binary Packages:
 
-- `libllvm9:amd64=1:9-2~ubuntu18.04.1`
+- `libllvm9:amd64=1:9-2~ubuntu18.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libllvm9/copyright`)
 
@@ -4581,9 +4584,23 @@ Licenses: (parsed from: `/usr/share/doc/libllvm9/copyright`)
 - `public-domain`
 - `solar-public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris llvm-toolchain-9=1:9-2~ubuntu18.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9-2~ubuntu18.04.2.dsc' llvm-toolchain-9_9-2~ubuntu18.04.2.dsc 8717 SHA256:18d9cd00177b592c8f0b04459e51cf4e66ea89b66ae10f47e0dae1ffb71620ea
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-clang-tools-extra.tar.bz2' llvm-toolchain-9_9.orig-clang-tools-extra.tar.bz2 2335322 SHA256:8890e967ab29b703d3270c6ecb7e3f948de8732c80c69fb2932d3eb986aadb0e
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-clang.tar.bz2' llvm-toolchain-9_9.orig-clang.tar.bz2 15071631 SHA256:059a886693c55991f6cc26ebb64db9f5fbdc20ea7b5f6ae593a4f2ccbadd6769
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-compiler-rt.tar.bz2' llvm-toolchain-9_9.orig-compiler-rt.tar.bz2 2553210 SHA256:3966f2a92b7c4aef79159a626b5fdccb554a5418179f212602238be1c1d2d0ce
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-libcxx.tar.bz2' llvm-toolchain-9_9.orig-libcxx.tar.bz2 1980360 SHA256:d0ddf9033eed136f622253f3d143d4058efe455dc6b4bcd3c38ad00de01e3d3b
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-libcxxabi.tar.bz2' llvm-toolchain-9_9.orig-libcxxabi.tar.bz2 559888 SHA256:8b08561bdf578b8e82d2c6febdd92ce6b3acdf072b690293cd5ced0d69720822
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-lld.tar.bz2' llvm-toolchain-9_9.orig-lld.tar.bz2 1203720 SHA256:0a89c9b919c9f3b2ef48f4494f11aa188d432d53f7288fde98ab96b56b832b5d
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-lldb.tar.bz2' llvm-toolchain-9_9.orig-lldb.tar.bz2 11796309 SHA256:69769dc99ab6649c53447126c556f9420bf0737eb47b4b4af70a60a98cf9319e
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-openmp.tar.bz2' llvm-toolchain-9_9.orig-openmp.tar.bz2 1035091 SHA256:6047d1d442783685b231304db41e27e2a91a76bbdbb0801992b2b38bae42343f
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-polly.tar.bz2' llvm-toolchain-9_9.orig-polly.tar.bz2 3939392 SHA256:62cc1eb26711ffd71bee0391ced1cf119c3f9b8359d9d5821f97321f996910ba
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig.tar.bz2' llvm-toolchain-9_9.orig.tar.bz2 39126886 SHA256:a87320e6680b93dfb26f1dc90c8910c5ca03912b8cd97ecd04928739918726b5
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9-2~ubuntu18.04.2.debian.tar.xz' llvm-toolchain-9_9-2~ubuntu18.04.2.debian.tar.xz 110300 SHA256:08a28bf536c620c0b9a309e67bd7f455ffb55eb7fb98e3975c0791ed68e55042
+```
 
 ### `dpkg` source package: `lm-sensors=1:3.4.0-4`
 
@@ -4665,19 +4682,19 @@ $ apt-get source -qq --print-uris mawk=1.3.3-17ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3-17ubuntu3.diff.gz' mawk_1.3.3-17ubuntu3.diff.gz 64052 SHA256:d1be148525885cb1869e35514f55005b5043f3310b08c444625005a3e14c81fc
 ```
 
-### `dpkg` source package: `mesa=19.2.8-0ubuntu0~18.04.1`
+### `dpkg` source package: `mesa=19.2.8-0ubuntu0~18.04.2`
 
 Binary Packages:
 
-- `libegl-mesa0:amd64=19.2.8-0ubuntu0~18.04.1`
-- `libegl1-mesa:amd64=19.2.8-0ubuntu0~18.04.1`
-- `libgbm1:amd64=19.2.8-0ubuntu0~18.04.1`
-- `libgl1-mesa-dri:amd64=19.2.8-0ubuntu0~18.04.1`
-- `libglapi-mesa:amd64=19.2.8-0ubuntu0~18.04.1`
-- `libglx-mesa0:amd64=19.2.8-0ubuntu0~18.04.1`
-- `libwayland-egl1-mesa:amd64=19.2.8-0ubuntu0~18.04.1`
-- `mesa-va-drivers:amd64=19.2.8-0ubuntu0~18.04.1`
-- `mesa-vdpau-drivers:amd64=19.2.8-0ubuntu0~18.04.1`
+- `libegl-mesa0:amd64=19.2.8-0ubuntu0~18.04.2`
+- `libegl1-mesa:amd64=19.2.8-0ubuntu0~18.04.2`
+- `libgbm1:amd64=19.2.8-0ubuntu0~18.04.2`
+- `libgl1-mesa-dri:amd64=19.2.8-0ubuntu0~18.04.2`
+- `libglapi-mesa:amd64=19.2.8-0ubuntu0~18.04.2`
+- `libglx-mesa0:amd64=19.2.8-0ubuntu0~18.04.2`
+- `libwayland-egl1-mesa:amd64=19.2.8-0ubuntu0~18.04.2`
+- `mesa-va-drivers:amd64=19.2.8-0ubuntu0~18.04.2`
+- `mesa-vdpau-drivers:amd64=19.2.8-0ubuntu0~18.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc/libegl1-mesa/copyright`, `/usr/share/doc/libgbm1/copyright`, `/usr/share/doc/libgl1-mesa-dri/copyright`, `/usr/share/doc/libglapi-mesa/copyright`, `/usr/share/doc/libglx-mesa0/copyright`, `/usr/share/doc/libwayland-egl1-mesa/copyright`, `/usr/share/doc/mesa-va-drivers/copyright`, `/usr/share/doc/mesa-vdpau-drivers/copyright`)
 
@@ -4691,9 +4708,14 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `MLAA`
 - `SGI`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mesa=19.2.8-0ubuntu0~18.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_19.2.8-0ubuntu0~18.04.2.dsc' mesa_19.2.8-0ubuntu0~18.04.2.dsc 5306 SHA256:3f430affe5fb6b7c11eb8f80380b2ffe11a9d263b6c51ab3df8d5eab45a15990
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_19.2.8.orig.tar.gz' mesa_19.2.8.orig.tar.gz 17662298 SHA256:49230604cc3f2847b29fce7481d57461f79902a766df9c48bcf53fb8d394b224
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_19.2.8-0ubuntu0~18.04.2.diff.gz' mesa_19.2.8-0ubuntu0~18.04.2.diff.gz 124983 SHA256:bf5f44ab273aa31f188ec352cb34bcf2f244935454a43238bd2fa16a192bc5e3
+```
 
 ### `dpkg` source package: `mime-support=3.60ubuntu1`
 
@@ -5889,14 +5911,14 @@ $ apt-get source -qq --print-uris rubberband=1.8.1-7ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/universe/r/rubberband/rubberband_1.8.1-7ubuntu2.debian.tar.xz' rubberband_1.8.1-7ubuntu2.debian.tar.xz 9424 SHA256:2e1af1831dc0223fc5df26d131e633fc5f9ccbb68c705cfa95823db9584df15f
 ```
 
-### `dpkg` source package: `sdformat6=6.2.0-1~bionic`
+### `dpkg` source package: `sdformat9=9.1.0-1~bionic`
 
 Binary Packages:
 
-- `libsdformat6:amd64=6.2.0-1~bionic`
-- `sdformat-sdf=6.2.0-1~bionic`
+- `libsdformat9:amd64=9.1.0-1~bionic`
+- `sdformat9-sdf=9.1.0-1~bionic`
 
-Licenses: (parsed from: `/usr/share/doc/libsdformat6/copyright`, `/usr/share/doc/sdformat-sdf/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libsdformat9/copyright`, `/usr/share/doc/sdformat9-sdf/copyright`)
 
 - `Apache`
 - `Apache-2.0`
@@ -6538,22 +6560,26 @@ $ apt-get source -qq --print-uris wavpack=5.1.0-2ubuntu1.4
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_5.1.0-2ubuntu1.4.debian.tar.xz' wavpack_5.1.0-2ubuntu1.4.debian.tar.xz 11632 SHA256:693d918df7f4d69ba87bad1678f1dc179fb3ab23c017f44d20ee7c3065a59438
 ```
 
-### `dpkg` source package: `wayland=1.16.0-1ubuntu1.1~18.04.1`
+### `dpkg` source package: `wayland=1.16.0-1ubuntu1.1~18.04.3`
 
 Binary Packages:
 
-- `libwayland-client0:amd64=1.16.0-1ubuntu1.1~18.04.1`
-- `libwayland-cursor0:amd64=1.16.0-1ubuntu1.1~18.04.1`
-- `libwayland-egl1:amd64=1.16.0-1ubuntu1.1~18.04.1`
-- `libwayland-server0:amd64=1.16.0-1ubuntu1.1~18.04.1`
+- `libwayland-client0:amd64=1.16.0-1ubuntu1.1~18.04.3`
+- `libwayland-cursor0:amd64=1.16.0-1ubuntu1.1~18.04.3`
+- `libwayland-egl1:amd64=1.16.0-1ubuntu1.1~18.04.3`
+- `libwayland-server0:amd64=1.16.0-1ubuntu1.1~18.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/libwayland-client0/copyright`, `/usr/share/doc/libwayland-cursor0/copyright`, `/usr/share/doc/libwayland-egl1/copyright`, `/usr/share/doc/libwayland-server0/copyright`)
 
 - `X11`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris wayland=1.16.0-1ubuntu1.1~18.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.16.0-1ubuntu1.1~18.04.3.dsc' wayland_1.16.0-1ubuntu1.1~18.04.3.dsc 2468 SHA256:03cdef8cf7b7a37556b9be30ae8c4b73914c1e2c82e68aa11bd7fd69b7e8aad6
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.16.0-1ubuntu1.1~18.04.3.tar.gz' wayland_1.16.0-1ubuntu1.1~18.04.3.tar.gz 325074 SHA256:71b3f7d7bb8c3077146d289d60bff4f8b92425e15cd4c257ea762c3d4d5768f6
+```
 
 ### `dpkg` source package: `x264=2:0.152.2854+gite9a5903-2`
 

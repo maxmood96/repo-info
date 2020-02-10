@@ -3284,15 +3284,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdrm=2.4.99-1ubuntu1~18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.99-1ubuntu1~18.04.1.dsc' libdrm_2.4.99-1ubuntu1~18.04.1.dsc 3267 SHA256:852e7c42c02fd2937c203ffa57a77913e3b94e711de1842c90f3cb177ff890d3
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.99.orig.tar.gz' libdrm_2.4.99.orig.tar.gz 1145338 SHA256:597fb879e2f45193431a0d352d10cd79ef61a24ab31f44320168583e10cb6302
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.99.orig.tar.gz.asc' libdrm_2.4.99.orig.tar.gz.asc 1068 SHA256:1d2af3f55f54d10383b81822ce38bf1f37f4e461a9abc6dfb18baeed0e6d0ed4
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.99-1ubuntu1~18.04.1.diff.gz' libdrm_2.4.99-1ubuntu1~18.04.1.diff.gz 53519 SHA256:d01db59ceccbdbd69dce6bae99161cd915e79dd1ac2f0c4fa8cb311d98d79dc2
-```
 
 ### `dpkg` source package: `libedit=3.1-20170329-1`
 
@@ -5370,23 +5364,9 @@ Licenses: (parsed from: `/usr/share/doc/libllvm9/copyright`)
 - `public-domain`
 - `solar-public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris llvm-toolchain-9=1:9-2~ubuntu18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9-2~ubuntu18.04.1.dsc' llvm-toolchain-9_9-2~ubuntu18.04.1.dsc 8638 SHA256:c0c354801465f14cd315388c4b8c463466041a205e3e2b3af2f029d54aa3236c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-clang-tools-extra.tar.bz2' llvm-toolchain-9_9.orig-clang-tools-extra.tar.bz2 2335322 SHA256:8890e967ab29b703d3270c6ecb7e3f948de8732c80c69fb2932d3eb986aadb0e
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-clang.tar.bz2' llvm-toolchain-9_9.orig-clang.tar.bz2 15071631 SHA256:059a886693c55991f6cc26ebb64db9f5fbdc20ea7b5f6ae593a4f2ccbadd6769
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-compiler-rt.tar.bz2' llvm-toolchain-9_9.orig-compiler-rt.tar.bz2 2553210 SHA256:3966f2a92b7c4aef79159a626b5fdccb554a5418179f212602238be1c1d2d0ce
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-libcxx.tar.bz2' llvm-toolchain-9_9.orig-libcxx.tar.bz2 1980360 SHA256:d0ddf9033eed136f622253f3d143d4058efe455dc6b4bcd3c38ad00de01e3d3b
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-libcxxabi.tar.bz2' llvm-toolchain-9_9.orig-libcxxabi.tar.bz2 559888 SHA256:8b08561bdf578b8e82d2c6febdd92ce6b3acdf072b690293cd5ced0d69720822
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-lld.tar.bz2' llvm-toolchain-9_9.orig-lld.tar.bz2 1203720 SHA256:0a89c9b919c9f3b2ef48f4494f11aa188d432d53f7288fde98ab96b56b832b5d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-lldb.tar.bz2' llvm-toolchain-9_9.orig-lldb.tar.bz2 11796309 SHA256:69769dc99ab6649c53447126c556f9420bf0737eb47b4b4af70a60a98cf9319e
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-openmp.tar.bz2' llvm-toolchain-9_9.orig-openmp.tar.bz2 1035091 SHA256:6047d1d442783685b231304db41e27e2a91a76bbdbb0801992b2b38bae42343f
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-polly.tar.bz2' llvm-toolchain-9_9.orig-polly.tar.bz2 3939392 SHA256:62cc1eb26711ffd71bee0391ced1cf119c3f9b8359d9d5821f97321f996910ba
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig.tar.bz2' llvm-toolchain-9_9.orig.tar.bz2 39126886 SHA256:a87320e6680b93dfb26f1dc90c8910c5ca03912b8cd97ecd04928739918726b5
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9-2~ubuntu18.04.1.debian.tar.xz' llvm-toolchain-9_9-2~ubuntu18.04.1.debian.tar.xz 110204 SHA256:c611772d3d81db1c6a26f90341e5f5341d916a1c9abe25542510225138aca8ce
-```
 
 ### `dpkg` source package: `lm-sensors=1:3.4.0-4`
 
@@ -5566,14 +5546,9 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `MLAA`
 - `SGI`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=19.2.8-0ubuntu0~18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_19.2.8-0ubuntu0~18.04.1.dsc' mesa_19.2.8-0ubuntu0~18.04.1.dsc 5306 SHA256:86d989ed0af478e6d3d12e3ad5c7a86d9fe5b3fcebf6aee764c362452b736eae
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_19.2.8.orig.tar.gz' mesa_19.2.8.orig.tar.gz 17662298 SHA256:49230604cc3f2847b29fce7481d57461f79902a766df9c48bcf53fb8d394b224
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_19.2.8-0ubuntu0~18.04.1.diff.gz' mesa_19.2.8-0ubuntu0~18.04.1.diff.gz 124893 SHA256:ca8a81246f1ccffbef06689ca18dba9b5d9d3a386e25921c9de4bf76b281a59f
-```
 
 ### `dpkg` source package: `mime-support=3.60ubuntu1`
 
@@ -7858,13 +7833,9 @@ Licenses: (parsed from: `/usr/share/doc/libwayland-bin/copyright`, `/usr/share/d
 
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wayland=1.16.0-1ubuntu1.1~18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.16.0-1ubuntu1.1~18.04.1.dsc' wayland_1.16.0-1ubuntu1.1~18.04.1.dsc 2389 SHA256:3485caf43ff9eafcc275e7d75450985d8592920cc028b107d829a994feb2863a
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.16.0-1ubuntu1.1~18.04.1.tar.gz' wayland_1.16.0-1ubuntu1.1~18.04.1.tar.gz 324969 SHA256:5ea61767340ec029b99186ffd91ad341645b54f6fb8879bac05e756bd42da10d
-```
 
 ### `dpkg` source package: `x264=2:0.152.2854+gite9a5903-2`
 
