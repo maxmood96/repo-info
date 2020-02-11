@@ -228,14 +228,13 @@ Licenses: (parsed from: `/usr/share/doc/brz/copyright`, `/usr/share/doc/python3-
 - `GPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris breezy=3.0.2-2
-'http://archive.ubuntu.com/ubuntu/pool/universe/b/breezy/breezy_3.0.2-2.dsc' breezy_3.0.2-2.dsc 2661 SHA256:7456c4cb5c0a840192692740b1a9561427dd73281a4a7534b2331182b6f6a243
-'http://archive.ubuntu.com/ubuntu/pool/universe/b/breezy/breezy_3.0.2.orig.tar.gz' breezy_3.0.2.orig.tar.gz 15271219 SHA256:50f16bc7faf299f98fe58573da55b0664078f94b1a0e7f0ce9e1e6a0d47e68e0
-'http://archive.ubuntu.com/ubuntu/pool/universe/b/breezy/breezy_3.0.2-2.debian.tar.xz' breezy_3.0.2-2.debian.tar.xz 57256 SHA256:c367db563571c561495298027aa71f96f150de8c598cb0545c15bef091407685
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/breezy/3.0.2-2/
+
 
 ### `dpkg` source package: `brotli=1.0.7-6`
 
@@ -942,14 +941,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.17-6ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu3.dsc' krb5_1.17-6ubuntu3.dsc 3629 SHA256:dcd054f1bccb16ccfd6b9f957da8a45427adc6bb0995dd3ebf5cc1bc5023d435
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA256:5a6e2284a53de5702d3dc2be3b9339c963f9b5397d3fbbc53beb249380a781f5
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu3.debian.tar.xz' krb5_1.17-6ubuntu3.debian.tar.xz 144544 SHA256:91357114f40927df24f07c96acccc2b78a3f320f6755d9b70a4e87ee7d2360de
-```
 
 ### `dpkg` source package: `libassuan=2.5.3-7ubuntu1`
 
@@ -1645,14 +1639,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.48+dfsg-1ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.48+dfsg-1ubuntu4.dsc' openldap_2.4.48+dfsg-1ubuntu4.dsc 2986 SHA256:c41810dc5bfa15988ed39145ef8f9901cab6ddc6df51ae92062c87fc94c040fa
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.48+dfsg.orig.tar.gz' openldap_2.4.48+dfsg.orig.tar.gz 4875429 SHA256:8645601c28f094b01baed02a604479b175a45ba010e407212d214313bc6a80ba
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.48+dfsg-1ubuntu4.debian.tar.xz' openldap_2.4.48+dfsg-1ubuntu4.debian.tar.xz 179312 SHA256:e9ba979914a77e80c96d38b1ea0c8e95dc7e63e6a912fd0325510a0082975e7e
-```
 
 ### `dpkg` source package: `openssh=1:8.1p1-5`
 
@@ -2345,14 +2334,9 @@ Licenses: (parsed from: `/usr/share/doc/libutf8proc2/copyright`)
 - `Expat`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris utf8proc=2.4.0-2build1
-'http://archive.ubuntu.com/ubuntu/pool/universe/u/utf8proc/utf8proc_2.4.0-2build1.dsc' utf8proc_2.4.0-2build1.dsc 2215 SHA256:b56c82de5012d71ea549b8147c3fcc00d883578ebeba9e16f0535091d629ef37
-'http://archive.ubuntu.com/ubuntu/pool/universe/u/utf8proc/utf8proc_2.4.0.orig.tar.gz' utf8proc_2.4.0.orig.tar.gz 154936 SHA256:b2e5d547c1d94762a6d03a7e05cea46092aab68636460ff8648f1295e2cdfbd7
-'http://archive.ubuntu.com/ubuntu/pool/universe/u/utf8proc/utf8proc_2.4.0-2build1.debian.tar.xz' utf8proc_2.4.0-2build1.debian.tar.xz 5260 SHA256:7ee8c950c813e193f7639f6f55f86f7cb93fcc780d442fec8a8fa8dc8c3ffb0a
-```
 
 ### `dpkg` source package: `util-linux=2.34-0.1ubuntu4`
 

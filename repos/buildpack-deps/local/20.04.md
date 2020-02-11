@@ -322,14 +322,13 @@ Licenses: (parsed from: `/usr/share/doc/brz/copyright`, `/usr/share/doc/python3-
 - `GPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris breezy=3.0.2-2
-'http://archive.ubuntu.com/ubuntu/pool/universe/b/breezy/breezy_3.0.2-2.dsc' breezy_3.0.2-2.dsc 2661 SHA256:7456c4cb5c0a840192692740b1a9561427dd73281a4a7534b2331182b6f6a243
-'http://archive.ubuntu.com/ubuntu/pool/universe/b/breezy/breezy_3.0.2.orig.tar.gz' breezy_3.0.2.orig.tar.gz 15271219 SHA256:50f16bc7faf299f98fe58573da55b0664078f94b1a0e7f0ce9e1e6a0d47e68e0
-'http://archive.ubuntu.com/ubuntu/pool/universe/b/breezy/breezy_3.0.2-2.debian.tar.xz' breezy_3.0.2-2.debian.tar.xz 57256 SHA256:c367db563571c561495298027aa71f96f150de8c598cb0545c15bef091407685
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/breezy/3.0.2-2/
+
 
 ### `dpkg` source package: `brotli=1.0.7-6`
 
@@ -1622,14 +1621,9 @@ Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/do
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.17-6ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu3.dsc' krb5_1.17-6ubuntu3.dsc 3629 SHA256:dcd054f1bccb16ccfd6b9f957da8a45427adc6bb0995dd3ebf5cc1bc5023d435
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA256:5a6e2284a53de5702d3dc2be3b9339c963f9b5397d3fbbc53beb249380a781f5
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu3.debian.tar.xz' krb5_1.17-6ubuntu3.debian.tar.xz 144544 SHA256:91357114f40927df24f07c96acccc2b78a3f320f6755d9b70a4e87ee7d2360de
-```
 
 ### `dpkg` source package: `lcms2=2.9-4`
 
@@ -2414,15 +2408,13 @@ Licenses: (parsed from: `/usr/share/doc/libltdl-dev/copyright`, `/usr/share/doc/
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtool=2.4.6-11
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtool/libtool_2.4.6-11.dsc' libtool_2.4.6-11.dsc 2489 SHA256:ce91f8392456c133e203e68e203b114f43f038760ec116e9e9361fe6f72e407e
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtool/libtool_2.4.6.orig.tar.xz' libtool_2.4.6.orig.tar.xz 973080 SHA256:7c87a8c2c8c0fc9cd5019e402bed4292462d00a718a7cd5f11218153bf28b26f
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtool/libtool_2.4.6.orig.tar.xz.asc' libtool_2.4.6.orig.tar.xz.asc 380 SHA256:ab68ebc45d60128a71fc36167cd29dcf3c3d6d639fd28663905ebaf3e2f43d6a
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtool/libtool_2.4.6-11.debian.tar.xz' libtool_2.4.6-11.debian.tar.xz 48948 SHA256:2e1ff4e0bf7ef53fc772c61d6a33dd2e6128525621a0e734fa5a3071785e5ec6
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libtool/2.4.6-11/
+
 
 ### `dpkg` source package: `libunistring=0.9.10-2`
 
@@ -3171,14 +3163,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.48+dfsg-1ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.48+dfsg-1ubuntu4.dsc' openldap_2.4.48+dfsg-1ubuntu4.dsc 2986 SHA256:c41810dc5bfa15988ed39145ef8f9901cab6ddc6df51ae92062c87fc94c040fa
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.48+dfsg.orig.tar.gz' openldap_2.4.48+dfsg.orig.tar.gz 4875429 SHA256:8645601c28f094b01baed02a604479b175a45ba010e407212d214313bc6a80ba
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.48+dfsg-1ubuntu4.debian.tar.xz' openldap_2.4.48+dfsg-1ubuntu4.debian.tar.xz 179312 SHA256:e9ba979914a77e80c96d38b1ea0c8e95dc7e63e6a912fd0325510a0082975e7e
-```
 
 ### `dpkg` source package: `openssh=1:8.1p1-5`
 
@@ -4099,14 +4086,9 @@ Licenses: (parsed from: `/usr/share/doc/libutf8proc2/copyright`)
 - `Expat`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris utf8proc=2.4.0-2build1
-'http://archive.ubuntu.com/ubuntu/pool/universe/u/utf8proc/utf8proc_2.4.0-2build1.dsc' utf8proc_2.4.0-2build1.dsc 2215 SHA256:b56c82de5012d71ea549b8147c3fcc00d883578ebeba9e16f0535091d629ef37
-'http://archive.ubuntu.com/ubuntu/pool/universe/u/utf8proc/utf8proc_2.4.0.orig.tar.gz' utf8proc_2.4.0.orig.tar.gz 154936 SHA256:b2e5d547c1d94762a6d03a7e05cea46092aab68636460ff8648f1295e2cdfbd7
-'http://archive.ubuntu.com/ubuntu/pool/universe/u/utf8proc/utf8proc_2.4.0-2build1.debian.tar.xz' utf8proc_2.4.0-2build1.debian.tar.xz 5260 SHA256:7ee8c950c813e193f7639f6f55f86f7cb93fcc780d442fec8a8fa8dc8c3ffb0a
-```
 
 ### `dpkg` source package: `util-linux=2.34-0.1ubuntu4`
 
@@ -4231,13 +4213,9 @@ Licenses: (parsed from: `/usr/share/doc/x11-common/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xorg=1:7.7+19ubuntu13
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xorg/xorg_7.7+19ubuntu13.dsc' xorg_7.7+19ubuntu13.dsc 2119 SHA256:36a9d9fef2cadf29f13f7968968a7e3ae9073c7824dc52d4e1e85ae3f35c02d9
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xorg/xorg_7.7+19ubuntu13.tar.gz' xorg_7.7+19ubuntu13.tar.gz 299231 SHA256:967c0f2b03d3f6a38f96fe83eb9470198ad6d8b5eb59baeafa455b3abc9f9a82
-```
 
 ### `dpkg` source package: `xorgproto=2018.4-4`
 

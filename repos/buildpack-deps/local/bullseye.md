@@ -388,20 +388,13 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.33.90.20200122-2
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.33.90.20200122-2.dsc' binutils_2.33.90.20200122-2.dsc 11325 SHA256:60bf79b0c2b08e2bd2bdcd04a0a02e8d4579432c5170f6084356e26616c4f419
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.33.90.20200122.orig.tar.xz' binutils_2.33.90.20200122.orig.tar.xz 21274228 SHA256:3291fa7388d048c22c954df03c5b66c0fdebf83851513cf02b0973860934ec5a
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.33.90.20200122-2.debian.tar.xz' binutils_2.33.90.20200122-2.debian.tar.xz 90416 SHA256:e0e1531e6bc7ed6f2ffe446d85add0d712244515541f21cb12a7258e0983bf3d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/binutils/2.33.90.20200122-2/
 
-- https://sources.debian.net/src/binutils/2.33.90.20200122-2/ (for browsing the source)
-- https://sources.debian.net/src/binutils/2.33.90.20200122-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/binutils/2.33.90.20200122-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `brotli=1.0.7-6`
 
@@ -1314,20 +1307,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.24.1-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.24.1-1.dsc' git_2.24.1-1.dsc 2891 SHA256:41f11c26a6e60a6e7d48887e1672d57ba7fdb62c680b00748eb4f5375ce0bcd1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.24.1.orig.tar.xz' git_2.24.1.orig.tar.xz 5772304 SHA256:723f24dce8fdd621a308b6187553fce7d5244205c065fe0a3aebd0b7c3f88562
-'http://deb.debian.org/debian/pool/main/g/git/git_2.24.1-1.debian.tar.xz' git_2.24.1-1.debian.tar.xz 629952 SHA256:286dbc915839e2a919b09e823189e6adf48263b2566fdfb9f89e5d4a7a6f4e80
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.24.1-1/
 
-- https://sources.debian.net/src/git/1:2.24.1-1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.24.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.24.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.62.4-1`
 
@@ -1866,20 +1852,13 @@ Licenses: (parsed from: `/usr/share/doc/libxtables12/copyright`)
 - `GPL-2+`
 - `custom`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iptables=1.8.3-2
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.8.3-2.dsc' iptables_1.8.3-2.dsc 2710 SHA256:c45ea9c603f32117c74ae80ff5a091a742aa79b53d2d0ff712819ebf0f9167cc
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.8.3.orig.tar.bz2' iptables_1.8.3.orig.tar.bz2 716257 SHA256:a23cac034181206b4545f4e7e730e76e08b5f3dd78771ba9645a6756de9cdd80
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.8.3-2.debian.tar.xz' iptables_1.8.3-2.debian.tar.xz 64524 SHA256:2284374e820ec203b7cbac2562366335fb7a2124e139296067c1a1758cd5a7a0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iptables/1.8.3-2/
 
-- https://sources.debian.net/src/iptables/1.8.3-2/ (for browsing the source)
-- https://sources.debian.net/src/iptables/1.8.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iptables/1.8.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iputils=3:20190709-2`
 
@@ -4255,21 +4234,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit-dev/copyright`, `/usr/share/d
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.23.18.1-2
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.18.1-2.dsc' p11-kit_0.23.18.1-2.dsc 2440 SHA256:608a5664e8a0c379d86e7a5696c1e86b2079e379e4b318103a1b8eb769edac50
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.18.1.orig.tar.gz' p11-kit_0.23.18.1.orig.tar.gz 1305755 SHA256:34c3bd8c0050dd7c4e6228aecf0f168de0a1b34562ddbf74a1c70904c2523c6f
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.18.1.orig.tar.gz.asc' p11-kit_0.23.18.1.orig.tar.gz.asc 854 SHA256:25e209a0eec76740d9906d86df0120505901f99a813e31f2bb1f7607416ec042
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.18.1-2.debian.tar.xz' p11-kit_0.23.18.1-2.debian.tar.xz 21648 SHA256:4f970522a2fdc301879edf8215ef6045423366c0e9b610c6d86b03d2a3e296aa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.23.18.1-2/
 
-- https://sources.debian.net/src/p11-kit/0.23.18.1-2/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.23.18.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.23.18.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.3.1-5`
 
@@ -4979,20 +4950,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.31.0+really3.30.1+fossil191229-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.31.0+really3.30.1+fossil191229-1.dsc' sqlite3_3.31.0+really3.30.1+fossil191229-1.dsc 2330 SHA256:8baf5d40c566efbb474fa4a0aac682ae15ff4949649a3d707b77e4bce769a9ab
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.31.0+really3.30.1+fossil191229.orig.tar.xz' sqlite3_3.31.0+really3.30.1+fossil191229.orig.tar.xz 17399656 SHA256:981e038dd2babe1628bd54c50e4bfc4bb9f794360dce8cc89a14eb5399bbdedc
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.31.0+really3.30.1+fossil191229-1.debian.tar.xz' sqlite3_3.31.0+really3.30.1+fossil191229-1.debian.tar.xz 19704 SHA256:3eaa29e7a65a9f1784fe955be4f5b2e1b2ccab02655eb343ef4f1aeb354786de
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.31.0+really3.30.1+fossil191229-1/
 
-- https://sources.debian.net/src/sqlite3/3.31.0+really3.30.1+fossil191229-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.31.0+really3.30.1+fossil191229-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.31.0+really3.30.1+fossil191229-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `subversion=1.13.0-1`
 
