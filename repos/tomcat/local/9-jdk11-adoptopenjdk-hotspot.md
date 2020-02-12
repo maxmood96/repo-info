@@ -1,10 +1,10 @@
-# `tomcat:9.0.30-jdk11-adoptopenjdk-hotspot`
+# `tomcat:9.0.31-jdk11-adoptopenjdk-hotspot`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7401045b47cce37aa2ee06a3806d1c4c26a299d0df3ed32f8512e2668bc09158`
-- Created: `2020-01-28T02:11:19.646247019Z`
-- Virtual Size: ~ 442.47 Mb  
+- Image ID: `sha256:eec5c176398020493107d4c47c09a9d092658d01f3fd1319f14360da17b8fb7c`
+- Created: `2020-02-11T21:39:06.1683827Z`
+- Virtual Size: ~ 442.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,8 +20,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.30`
-  - `TOMCAT_SHA512=40bf428a534816317e5e8732b679e6d73f6ed977aab4ac5e2b9eaf1eb087eaa68a18b0fd3da8c39ca4b96f5b6fd919dec84517abba0d5e797285ade934a92990`
+  - `TOMCAT_VERSION=9.0.31`
+  - `TOMCAT_SHA512=75045ce54ad1b6ea66fd112e8b2ffa32a0740c018ab9392c7217a6dd6b829e8645b6810ab4b28dd186c12ce6045c1eb18ed19743c5d4b22c9e613e76294f22f5`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1668,11 +1668,10 @@ Binary Packages:
 - `libfdisk1:amd64=2.31.1-0.4ubuntu3.4`
 - `libmount1:amd64=2.31.1-0.4ubuntu3.4`
 - `libsmartcols1:amd64=2.31.1-0.4ubuntu3.4`
-- `libuuid1:amd64=2.31.1-0.4ubuntu3.4`
 - `mount=2.31.1-0.4ubuntu3.4`
 - `util-linux=2.31.1-0.4ubuntu3.4`
 
-Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdisk/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
+Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdisk/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
 - `BSD-2-clause`
 - `BSD-3-clause`
@@ -1694,6 +1693,40 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `util-linux=2.31.1-0.4ubuntu3.5`
+
+Binary Packages:
+
+- `libuuid1:amd64=2.31.1-0.4ubuntu3.5`
+
+Licenses: (parsed from: `/usr/share/doc/libuuid1/copyright`)
+
+- `BSD-2-clause`
+- `BSD-3-clause`
+- `BSD-4-clause`
+- `GPL-2`
+- `GPL-2+`
+- `GPL-3`
+- `GPL-3+`
+- `LGPL`
+- `LGPL-2`
+- `LGPL-2+`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+- `LGPL-3`
+- `LGPL-3+`
+- `MIT`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris util-linux=2.31.1-0.4ubuntu3.5
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.5.dsc' util-linux_2.31.1-0.4ubuntu3.5.dsc 4147 SHA256:1e7e4c5ae02514beb07ab0ab20fbb93444b6e321c358362a7621fba5f2a1159b
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1.orig.tar.xz' util-linux_2.31.1.orig.tar.xz 4514032 SHA256:cfd5789570e9ff75e079471faeca1511ade1607f650523a6ad25d1e26516ae4e
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.5.debian.tar.xz' util-linux_2.31.1-0.4ubuntu3.5.debian.tar.xz 101300 SHA256:e246c635b9c383a300e622aa64c9088c1fa5699dd1af44856f957053140306bf
+```
 
 ### `dpkg` source package: `xz-utils=5.2.2-1.3`
 
