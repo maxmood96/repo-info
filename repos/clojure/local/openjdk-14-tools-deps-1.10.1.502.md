@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:51998fea001b2e9cb57b2af46fb18d406ce96a325877ef90c3a90ca1c27f747f`
-- Created: `2020-02-02T21:46:08.93758319Z`
+- Image ID: `sha256:c298ea41c7717bc5d185681e2d9ba70f8b3054927543781b8fb29e8c57997842`
+- Created: `2020-02-11T02:02:38.999170671Z`
 - Virtual Size: ~ 521.69 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,9 +12,9 @@
   - `PATH=/usr/java/openjdk-14/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/java/openjdk-14`
-  - `JAVA_VERSION=14-ea+34`
-  - `JAVA_URL=https://download.java.net/java/early_access/jdk14/34/GPL/openjdk-14-ea+34_linux-x64_bin.tar.gz`
-  - `JAVA_SHA256=51d9dd2161a912ab7bd2bf2e08043cdd175ce22b28608442e0d06bc777286158`
+  - `JAVA_VERSION=14`
+  - `JAVA_URL=https://download.java.net/java/GA/jdk14/076bab302c7b4508975440c56f6cc26a/36/GPL/openjdk-14_linux-x64_bin.tar.gz`
+  - `JAVA_SHA256=c7006154dfb8b66328c6475447a396feb0042608ee07a96956547f574a911c09`
   - `CLOJURE_VERSION=1.10.1.502`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1918,14 +1918,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python3-defaults/3.7.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python3-defaults/3.7.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python3.7=3.7.3-2`
+### `dpkg` source package: `python3.7=3.7.3-2+deb10u1`
 
 Binary Packages:
 
-- `libpython3.7-minimal:amd64=3.7.3-2`
-- `libpython3.7-stdlib:amd64=3.7.3-2`
-- `python3.7=3.7.3-2`
-- `python3.7-minimal=3.7.3-2`
+- `libpython3.7-minimal:amd64=3.7.3-2+deb10u1`
+- `libpython3.7-stdlib:amd64=3.7.3-2+deb10u1`
+- `python3.7=3.7.3-2+deb10u1`
+- `python3.7-minimal=3.7.3-2+deb10u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.7-minimal/copyright`, `/usr/share/doc/libpython3.7-stdlib/copyright`, `/usr/share/doc/python3.7/copyright`, `/usr/share/doc/python3.7-minimal/copyright`)
 
@@ -1947,13 +1947,20 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.7-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris python3.7=3.7.3-2+deb10u1
+'http://deb.debian.org/debian/pool/main/p/python3.7/python3.7_3.7.3-2+deb10u1.dsc' python3.7_3.7.3-2+deb10u1.dsc 3404 SHA256:0ddf97878c8fa2b619d034b88b94c7900d3c506c5c99b8682adaeb8409aa31a3
+'http://deb.debian.org/debian/pool/main/p/python3.7/python3.7_3.7.3.orig.tar.xz' python3.7_3.7.3.orig.tar.xz 17108364 SHA256:da60b54064d4cfcd9c26576f6df2690e62085123826cff2e667e72a91952d318
+'http://deb.debian.org/debian/pool/main/p/python3.7/python3.7_3.7.3-2+deb10u1.debian.tar.xz' python3.7_3.7.3-2+deb10u1.debian.tar.xz 216340 SHA256:21d5287cd148d35c0a7db8cd45fe4f3ad70b2c0606e4a1dc40dd56f272201491
+```
 
-- http://snapshot.debian.org/package/python3.7/3.7.3-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/python3.7/3.7.3-2+deb10u1/ (for browsing the source)
+- https://sources.debian.net/src/python3.7/3.7.3-2+deb10u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python3.7/3.7.3-2+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=7.0-5`
 
