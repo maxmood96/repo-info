@@ -245,13 +245,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.250ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.250ubuntu2.dsc' cdebconf_0.250ubuntu2.dsc 2858 SHA256:03967c55bd64adb678410b8ba7cad32fcb884e3d2dadf3f4c400d91115803056
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.250ubuntu2.tar.xz' cdebconf_0.250ubuntu2.tar.xz 276660 SHA256:7e1ef956d2d3ac312a23faf707aed33ac37fb2a98f13c1b78822e9f35d5138fc
-```
 
 ### `dpkg` source package: `coreutils=8.30-3ubuntu2`
 
@@ -620,14 +616,9 @@ Licenses: (parsed from: `/usr/share/doc/grep/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris grep=3.3-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.3-1build1.dsc' grep_3.3-1build1.dsc 2071 SHA256:06d804485087fb2a22da76190b60dc800971dc8e6b6c8f3088fdce41bd8469c3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.3.orig.tar.xz' grep_3.3.orig.tar.xz 1473056 SHA256:b960541c499619efd6afe1fa795402e4733c8e11ebf9fafccc0bb4bccdc5b514
-'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.3-1build1.debian.tar.xz' grep_3.3-1build1.debian.tar.xz 104360 SHA256:a08e6e88ada40dc5e0195dfea04f4c8aea9e2b57a3272185fedc85a2ad575d23
-```
 
 ### `dpkg` source package: `gzip=1.10-0ubuntu4`
 
@@ -752,14 +743,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.17-6ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu3.dsc' krb5_1.17-6ubuntu3.dsc 3629 SHA256:dcd054f1bccb16ccfd6b9f957da8a45427adc6bb0995dd3ebf5cc1bc5023d435
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA256:5a6e2284a53de5702d3dc2be3b9339c963f9b5397d3fbbc53beb249380a781f5
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu3.debian.tar.xz' krb5_1.17-6ubuntu3.debian.tar.xz 144544 SHA256:91357114f40927df24f07c96acccc2b78a3f320f6755d9b70a4e87ee7d2360de
-```
 
 ### `dpkg` source package: `libassuan=2.5.3-7ubuntu1`
 
@@ -860,15 +846,13 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 - `LGPL-2.1+`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgpg-error=1.36-7
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.36-7.dsc' libgpg-error_1.36-7.dsc 2220 SHA256:08d532f83371e4e2def8ba8c80ab3c830eb2a749a9d40d7a529ee8cf3e058bce
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.36.orig.tar.bz2' libgpg-error_1.36.orig.tar.bz2 920542 SHA256:babd98437208c163175c29453f8681094bcaf92968a15cafb1a276076b33c97c
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.36.orig.tar.bz2.asc' libgpg-error_1.36.orig.tar.bz2.asc 534 SHA256:ef7b12e7a2c348d8e9cb3fb63b4069feeadcfb69074786559064381d179f1df7
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.36-7.debian.tar.xz' libgpg-error_1.36-7.debian.tar.xz 17208 SHA256:2ece6be72b1cea60990d75f7806f8dabb94114c89367b09fe8964cd343f5aebd
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libgpg-error/1.36-7/
+
 
 ### `dpkg` source package: `libidn2=2.2.0-2`
 
@@ -1297,14 +1281,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.48+dfsg-1ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.48+dfsg-1ubuntu4.dsc' openldap_2.4.48+dfsg-1ubuntu4.dsc 2986 SHA256:c41810dc5bfa15988ed39145ef8f9901cab6ddc6df51ae92062c87fc94c040fa
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.48+dfsg.orig.tar.gz' openldap_2.4.48+dfsg.orig.tar.gz 4875429 SHA256:8645601c28f094b01baed02a604479b175a45ba010e407212d214313bc6a80ba
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.48+dfsg-1ubuntu4.debian.tar.xz' openldap_2.4.48+dfsg-1ubuntu4.debian.tar.xz 179312 SHA256:e9ba979914a77e80c96d38b1ea0c8e95dc7e63e6a912fd0325510a0082975e7e
-```
 
 ### `dpkg` source package: `openssl=1.1.1c-1ubuntu4`
 
