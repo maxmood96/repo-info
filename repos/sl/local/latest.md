@@ -138,7 +138,14 @@ http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/bzip2-1.0.6-13.e
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
+Source:
+
+```console
+$ yumdownloader --quiet --source --urls ca-certificates-2019.2.32-76.el7_7.noarch
+Enabling sl-source repository
+Enabling repos-source repository
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/ca-certificates-2019.2.32-76.el7_7.src.rpm
+```
 
 ### `rpm` package: `chkconfig-1.7.4-1.el7.x86_64`
 
@@ -222,7 +229,14 @@ http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/cryptsetup-2.0.3
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
+Source:
+
+```console
+$ yumdownloader --quiet --source --urls curl-7.29.0-54.el7_7.1
+Enabling sl-source repository
+Enabling repos-source repository
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/curl-7.29.0-54.el7_7.1.src.rpm
+```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.26-23.el7.x86_64`
 
@@ -747,7 +761,14 @@ http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/attr-2.4.46-13.e
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
+Source:
+
+```console
+$ yumdownloader --quiet --source --urls libblkid-2.23.2-61.el7_7.1
+Enabling sl-source repository
+Enabling repos-source repository
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/util-linux-2.23.2-61.el7_7.1.src.rpm
+```
 
 ### `rpm` package: `libcap-2.22-10.el7.x86_64`
 
@@ -792,7 +813,14 @@ http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/e2fsprogs-1.42.9
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
+Source:
+
+```console
+$ yumdownloader --quiet --source --urls libcurl-7.29.0-54.el7_7.1
+Enabling sl-source repository
+Enabling repos-source repository
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/curl-7.29.0-54.el7_7.1.src.rpm
+```
 
 ### `rpm` package: `libdb-5.3.21-25.el7.x86_64`
 
@@ -889,7 +917,14 @@ http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/libidn-1.28-4.el
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
+Source:
+
+```console
+$ yumdownloader --quiet --source --urls libmount-2.23.2-61.el7_7.1
+Enabling sl-source repository
+Enabling repos-source repository
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/util-linux-2.23.2-61.el7_7.1.src.rpm
+```
 
 ### `rpm` package: `libpwquality-1.2.3-5.el7.x86_64`
 
@@ -947,7 +982,14 @@ http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/libsepol-2.5-10.
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
+Source:
+
+```console
+$ yumdownloader --quiet --source --urls libsmartcols-2.23.2-61.el7_7.1
+Enabling sl-source repository
+Enabling repos-source repository
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/util-linux-2.23.2-61.el7_7.1.src.rpm
+```
 
 ### `rpm` package: `libssh2-1.8.0-3.el7.x86_64`
 
@@ -1018,7 +1060,14 @@ http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/libutempter-1.1.
 
 Licenses (from `rpm --query`): BSD
 
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
+Source:
+
+```console
+$ yumdownloader --quiet --source --urls libuuid-2.23.2-61.el7_7.1
+Enabling sl-source repository
+Enabling repos-source repository
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/util-linux-2.23.2-61.el7_7.1.src.rpm
+```
 
 ### `rpm` package: `libverto-0.2.5-4.el7.x86_64`
 
@@ -1141,7 +1190,14 @@ http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/nspr-4.21.0-1.el
 
 Licenses (from `rpm --query`): MPLv2.0
 
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
+Source:
+
+```console
+$ yumdownloader --quiet --source --urls nss-3.44.0-7.el7_7
+Enabling sl-source repository
+Enabling repos-source repository
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/nss-3.44.0-7.el7_7.src.rpm
+```
 
 ### `rpm` package: `nss-pem-1.0.3-7.el7.x86_64`
 
@@ -1160,31 +1216,66 @@ http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/nss-pem-1.0.3-7.
 
 Licenses (from `rpm --query`): MPLv2.0
 
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
+Source:
+
+```console
+$ yumdownloader --quiet --source --urls nss-softokn-3.44.0-8.el7_7
+Enabling sl-source repository
+Enabling repos-source repository
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/nss-softokn-3.44.0-8.el7_7.src.rpm
+```
 
 ### `rpm` package: `nss-softokn-freebl-3.44.0-8.el7_7.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
+Source:
+
+```console
+$ yumdownloader --quiet --source --urls nss-softokn-freebl-3.44.0-8.el7_7
+Enabling sl-source repository
+Enabling repos-source repository
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/nss-softokn-3.44.0-8.el7_7.src.rpm
+```
 
 ### `rpm` package: `nss-sysinit-3.44.0-7.el7_7.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
+Source:
+
+```console
+$ yumdownloader --quiet --source --urls nss-sysinit-3.44.0-7.el7_7
+Enabling sl-source repository
+Enabling repos-source repository
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/nss-3.44.0-7.el7_7.src.rpm
+```
 
 ### `rpm` package: `nss-tools-3.44.0-7.el7_7.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
+Source:
+
+```console
+$ yumdownloader --quiet --source --urls nss-tools-3.44.0-7.el7_7
+Enabling sl-source repository
+Enabling repos-source repository
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/nss-3.44.0-7.el7_7.src.rpm
+```
 
 ### `rpm` package: `nss-util-3.44.0-4.el7_7.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
+Source:
+
+```console
+$ yumdownloader --quiet --source --urls nss-util-3.44.0-4.el7_7
+Enabling sl-source repository
+Enabling repos-source repository
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/nss-util-3.44.0-4.el7_7.src.rpm
+```
 
 ### `rpm` package: `openldap-2.4.44-21.el7_6.x86_64`
 
@@ -1606,7 +1697,14 @@ http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//SL/sl-release-7.7-2.sl7
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
+Source:
+
+```console
+$ yumdownloader --quiet --source --urls sqlite-3.7.17-8.el7_7.1
+Enabling sl-source repository
+Enabling repos-source repository
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/sqlite-3.7.17-8.el7_7.1.src.rpm
+```
 
 ### `rpm` package: `systemd-219-67.el7_7.2.x86_64`
 
@@ -1677,7 +1775,14 @@ http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/ustr-1.0.4-16.el
 
 Licenses (from `rpm --query`): GPLv2 and GPLv2+ and LGPLv2+ and BSD with advertising and Public Domain
 
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
+Source:
+
+```console
+$ yumdownloader --quiet --source --urls util-linux-2.23.2-61.el7_7.1
+Enabling sl-source repository
+Enabling repos-source repository
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/util-linux-2.23.2-61.el7_7.1.src.rpm
+```
 
 ### `rpm` package: `vim-minimal-7.4.629-6.el7.x86_64`
 
