@@ -9814,14 +9814,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-12=12.1-1.pgdg100+1
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-12/postgresql-12_12.1-1.pgdg100+1.dsc' postgresql-12_12.1-1.pgdg100+1.dsc 2748 SHA256:33ba07c621597b9ffbd42f91f4bfbceaf459ab634bf41cf2b7bf86180d5ccb7c
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-12/postgresql-12_12.1.orig.tar.bz2' postgresql-12_12.1.orig.tar.bz2 20213711 SHA256:a09bf3abbaf6763980d0f8acbb943b7629a8b20073de18d867aecdb7988483ed
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-12/postgresql-12_12.1-1.pgdg100+1.debian.tar.xz' postgresql-12_12.1-1.pgdg100+1.debian.tar.xz 22496 SHA256:7ede4bb089c4c21d335df6e8647cb7d9c19eda4a34d9e2c9ddf6b755a88eb90f
-```
 
 ### `dpkg` source package: `postgresql-common=210.pgdg100+1`
 
@@ -9835,13 +9830,9 @@ Licenses: (parsed from: `/usr/share/doc/postgresql-client/copyright`, `/usr/shar
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-common=210.pgdg100+1
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_210.pgdg100+1.dsc' postgresql-common_210.pgdg100+1.dsc 1568 SHA256:b4bf4cacf526811751ea4867d588283294a0601fe005808714cad4689b76bd17
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_210.pgdg100+1.tar.xz' postgresql-common_210.pgdg100+1.tar.xz 216056 SHA256:5c44210477bee2bbfcb4853f2fd0adaf41362a6fc7b528f153cba30562edeb03
-```
 
 ### `dpkg` source package: `psycopg2=2.8.4-1~pgdg100+1`
 
