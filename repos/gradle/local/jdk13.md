@@ -1,10 +1,10 @@
-# `gradle:6.1.1-jdk13`
+# `gradle:6.2.0-jdk13`
 
 ## Docker Metadata
 
-- Image ID: `sha256:dca0243c773f48a894fb88be94782dd2cbd5551c367e11ce7e144d2052addadb`
-- Created: `2020-01-28T00:35:08.625118055Z`
-- Virtual Size: ~ 697.03 Mb  
+- Image ID: `sha256:fc33a9a344362df33c6a8a8011c35a6f906d0afc6d91d84e68f9754f90362229`
+- Created: `2020-02-17T20:24:09.437301242Z`
+- Virtual Size: ~ 697.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -16,7 +16,7 @@
   - `JAVA_VERSION=jdk-13.0.2+8`
   - `JAVA_HOME=/opt/java/openjdk`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=6.1.1`
+  - `GRADLE_VERSION=6.2`
 
 ## `dpkg` (`.deb`-based packages)
 
