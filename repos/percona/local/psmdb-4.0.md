@@ -1,19 +1,19 @@
-# `percona:psmdb-4.0.14`
+# `percona:psmdb-4.0.16`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3dad05fffb9bc15ab6fa0b1d52645ff6b5f90b025fbd7e1dec243dea12382e38`
-- Created: `2020-01-29T19:38:18.808578993Z`
-- Virtual Size: ~ 437.37 Mb  
+- Image ID: `sha256:e1446e5e945f4771c7bd93baaac12ec4e859b36986eefb5327f53f50dfbf1ed1`
+- Created: `2020-02-17T21:20:59.482455356Z`
+- Virtual Size: ~ 437.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["mongod"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PSMDB_VERSION=4.0.14-8`
+  - `PSMDB_VERSION=4.0.16-9`
   - `OS_VER=el7`
-  - `FULL_PERCONA_VERSION=4.0.14-8.el7`
+  - `FULL_PERCONA_VERSION=4.0.16-9.el7`
   - `K8S_TOOLS_VERSION=0.4.2`
   - `GOSU_VERSION=1.11`
 - Labels:
@@ -21,14 +21,14 @@
   - `org.label-schema.description=Percona Server for MongoDB is our free and open-source drop-in replacement for MongoDB Community Edition. It offers all the features and benefits of MongoDB Community Edition, plus additional enterprise-grade functionality.`
   - `org.label-schema.license=SSPLv1`
   - `org.label-schema.name=Percona Server for MongoDB`
-  - `org.label-schema.schema-version=4.0.14-8`
+  - `org.label-schema.schema-version=4.0.16-9`
   - `org.label-schema.vendor=Percona`
   - `org.opencontainers.image.authors=info@percona.com`
   - `org.opencontainers.image.description=Percona Server for MongoDB is our free and open-source drop-in replacement for MongoDB Community Edition. It offers all the features and benefits of MongoDB Community Edition, plus additional enterprise-grade functionality.`
   - `org.opencontainers.image.license=SSPLv1`
   - `org.opencontainers.image.title=Percona Server for MongoDB`
   - `org.opencontainers.image.vendor=Percona`
-  - `org.opencontainers.image.version=4.0.14-8`
+  - `org.opencontainers.image.version=4.0.16-9`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -242,18 +242,18 @@ Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/cryptsetup-2.0.3-5.el7.src.rpm
 ```
 
-### `rpm` package: `curl-7.29.0-54.el7_7.1.x86_64`
+### `rpm` package: `curl-7.29.0-54.el7_7.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls curl-7.29.0-54.el7_7.1
+$ yumdownloader --quiet --source --urls curl-7.29.0-54.el7_7.2
 Enabling updates-source repository
 Enabling base-source repository
 Enabling extras-source repository
-http://vault.centos.org/centos/7/updates/Source//SPackages/curl-7.29.0-54.el7_7.1.src.rpm
+http://vault.centos.org/centos/7/updates/Source//SPackages/curl-7.29.0-54.el7_7.2.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.26-23.el7.x86_64`
@@ -916,18 +916,18 @@ Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/e2fsprogs-1.42.9-16.el7.src.rpm
 ```
 
-### `rpm` package: `libcurl-7.29.0-54.el7_7.1.x86_64`
+### `rpm` package: `libcurl-7.29.0-54.el7_7.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libcurl-7.29.0-54.el7_7.1
+$ yumdownloader --quiet --source --urls libcurl-7.29.0-54.el7_7.2
 Enabling updates-source repository
 Enabling base-source repository
 Enabling extras-source repository
-http://vault.centos.org/centos/7/updates/Source//SPackages/curl-7.29.0-54.el7_7.1.src.rpm
+http://vault.centos.org/centos/7/updates/Source//SPackages/curl-7.29.0-54.el7_7.2.src.rpm
 ```
 
 ### `rpm` package: `libdb-5.3.21-25.el7.x86_64`
@@ -1530,19 +1530,19 @@ Licenses (from `rpm --query`): GPL-3.0+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-mongos-4.0.14-8.el7.x86_64`
+### `rpm` package: `percona-server-mongodb-mongos-4.0.16-9.el7.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-server-4.0.14-8.el7.x86_64`
+### `rpm` package: `percona-server-mongodb-server-4.0.16-9.el7.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-shell-4.0.14-8.el7.x86_64`
+### `rpm` package: `percona-server-mongodb-shell-4.0.16-9.el7.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
