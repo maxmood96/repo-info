@@ -1,7 +1,7 @@
 ## `amazonlinux:with-sources`
 
 ```console
-$ docker pull amazonlinux@sha256:4c783009560a5f08a4d623c73eaeda37fe1ee471eadedd3367134b2312a1c253
+$ docker pull amazonlinux@sha256:cb2197f3097f3900a36bf572b2805b3272eff03b617e48cc7fe60f1ab6c763bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,63 +12,63 @@ $ docker pull amazonlinux@sha256:4c783009560a5f08a4d623c73eaeda37fe1ee471eadedd3
 ### `amazonlinux:with-sources` - linux; amd64
 
 ```console
-$ docker pull amazonlinux@sha256:0d9f1e0225df93bd2bba70f617f89179a127521cad15e17a6dbcde76dbfdc843
+$ docker pull amazonlinux@sha256:50c28a33157555b4372c1e98cd9c70c161e78e944683322bbfb2b8f44c7729ef
 ```
 
--	Docker Version: 18.06.1-ce
+-	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **476.6 MB (476630585 bytes)**  
+-	Total Size: **476.8 MB (476800172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87cf287040157831d59644400a2ebe9282a4a2958806dd9aaec89f45a4b60676`
+-	Image ID: `sha256:6c25bb04918e2ddc50ce74762ffbc0c89b25cd45ba721f2798a172c42234316c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 10 Jan 2020 00:19:43 GMT
-ADD file:21f17d9ead4aa13446f2144c5042f6f83bc7dc26163bdc2ea6de306b67154747 in / 
-# Fri, 10 Jan 2020 00:19:44 GMT
+# Wed, 19 Feb 2020 23:19:52 GMT
+ADD file:c43f05fa78d78f998cd8e2e45f089e0572877490c7df425e514d44f15d958fad in / 
+# Wed, 19 Feb 2020 23:19:52 GMT
 CMD ["/bin/bash"]
-# Fri, 10 Jan 2020 00:20:07 GMT
-RUN mkdir /usr/src/srpm  && curl -o /usr/src/srpm/srpm-bundle.tar.gz "https://amazon-linux-docker-sources.s3-accelerate.amazonaws.com/srpm-bundle-ecb5177bc6769961844d6bbc8632ca9f4326737db8dba1aae6875d6021507dfa.tar.gz"  && echo "5bc97d65c81fdc544a92c8b1bd8ccc56b730c4354e0fc9b4529e147056eef82d  /usr/src/srpm/srpm-bundle.tar.gz" | sha256sum -c -
+# Wed, 19 Feb 2020 23:20:16 GMT
+RUN mkdir /usr/src/srpm  && curl -o /usr/src/srpm/srpm-bundle.tar.gz "https://amazon-linux-docker-sources.s3-accelerate.amazonaws.com/srpm-bundle-9d577ed8f0e2cbd076b6f144ec0c470c9c81012109b3d19515b8287114f96859.tar.gz"  && echo "88b2385d08e0f3df72a3d6b411c6b418af927ef411549cea48a3dfd887bf0f29  /usr/src/srpm/srpm-bundle.tar.gz" | sha256sum -c -
 ```
 
 -	Layers:
-	-	`sha256:67e0556e0c29917bdaa234432962153167e628b99444a27333976b499590d8c9`  
-		Last Modified: Fri, 10 Jan 2020 00:20:43 GMT  
-		Size: 61.6 MB (61552853 bytes)  
+	-	`sha256:a7583ef20c9db3e6539d4160e9914383701901b24979656a228000718b0d5bea`  
+		Last Modified: Wed, 19 Feb 2020 23:20:55 GMT  
+		Size: 61.7 MB (61669860 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e46f1f3757b9b441219f29d7c37d98f714a2d5d0043cc2a6b4151e4041bfb47c`  
-		Last Modified: Fri, 10 Jan 2020 00:21:18 GMT  
-		Size: 415.1 MB (415077732 bytes)  
+	-	`sha256:2696d5ea6c170fee8b13d7cc50cf08e8da5934fb7ebec062fbcd1db4171450be`  
+		Last Modified: Wed, 19 Feb 2020 23:21:19 GMT  
+		Size: 415.1 MB (415130312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `amazonlinux:with-sources` - linux; arm64 variant v8
 
 ```console
-$ docker pull amazonlinux@sha256:333ab3c09fcd688afb8ff5c72ae49a75124e92f75a06905dba9f762aeaaf8de9
+$ docker pull amazonlinux@sha256:14dbc80a40025e5418a8635a18a5bce9c7337211057ca7626d03d83bda7c7b13
 ```
 
--	Docker Version: 18.06.1-ce
+-	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **477.9 MB (477874498 bytes)**  
+-	Total Size: **478.2 MB (478193302 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba0c7fbcfbe94cabe2f0115ee5fc3f669abb53d528cf8dd34fe81e7a893f8f3b`
+-	Image ID: `sha256:bacff54cac3e0a26b7b6e3738fd6a9517c85f215b8d05d3202ebee5dd1e81309`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jan 2020 23:45:53 GMT
-ADD file:add3cf2f51e227816df93be763f4c623b743cf37786e5c11118149dbfaa4ad67 in / 
-# Thu, 09 Jan 2020 23:45:57 GMT
+# Wed, 19 Feb 2020 22:39:49 GMT
+ADD file:bf00dcc4d3caeda14a7a6b3afb7f5dca29d64b43fe428f5713b88cec1a82f2a0 in / 
+# Wed, 19 Feb 2020 22:39:52 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jan 2020 23:46:21 GMT
-RUN mkdir /usr/src/srpm  && curl -o /usr/src/srpm/srpm-bundle.tar.gz "https://amazon-linux-docker-sources.s3-accelerate.amazonaws.com/srpm-bundle-ecb5177bc6769961844d6bbc8632ca9f4326737db8dba1aae6875d6021507dfa.tar.gz"  && echo "5bc97d65c81fdc544a92c8b1bd8ccc56b730c4354e0fc9b4529e147056eef82d  /usr/src/srpm/srpm-bundle.tar.gz" | sha256sum -c -
+# Wed, 19 Feb 2020 22:40:17 GMT
+RUN mkdir /usr/src/srpm  && curl -o /usr/src/srpm/srpm-bundle.tar.gz "https://amazon-linux-docker-sources.s3-accelerate.amazonaws.com/srpm-bundle-9d577ed8f0e2cbd076b6f144ec0c470c9c81012109b3d19515b8287114f96859.tar.gz"  && echo "88b2385d08e0f3df72a3d6b411c6b418af927ef411549cea48a3dfd887bf0f29  /usr/src/srpm/srpm-bundle.tar.gz" | sha256sum -c -
 ```
 
 -	Layers:
-	-	`sha256:9606ab06f949f5879fcb558b6c4a487afd285954e409f8741df95b27c6e0c5b2`  
-		Last Modified: Thu, 09 Jan 2020 23:46:50 GMT  
-		Size: 62.8 MB (62796733 bytes)  
+	-	`sha256:7f2fa3024eb129e832d7fd7cee7209fdab8adadbc3dc31675f191ac0414fb93c`  
+		Last Modified: Wed, 19 Feb 2020 22:40:47 GMT  
+		Size: 63.1 MB (63062950 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a34e86703318f8a60930cd62ad26d01ef97a89085a74d36f8924c8584468424`  
-		Last Modified: Thu, 09 Jan 2020 23:48:04 GMT  
-		Size: 415.1 MB (415077765 bytes)  
+	-	`sha256:1f38b153acbda095a943079f45ede45d802f3e3d6cfd1cf21c113a65da7d45f6`  
+		Last Modified: Wed, 19 Feb 2020 22:41:35 GMT  
+		Size: 415.1 MB (415130352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
