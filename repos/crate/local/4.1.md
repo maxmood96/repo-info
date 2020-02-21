@@ -1,10 +1,10 @@
-# `crate:4.1.1`
+# `crate:4.1.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:071837bdc45b0be524eb1864865d8ea3ef53f4929b30788f211b48fc2eb99593`
-- Created: `2020-02-05T23:27:04.966982382Z`
-- Virtual Size: ~ 675.23 Mb  
+- Image ID: `sha256:8e82ce545128e3e6d44851caf6fb5cf10da40ae50da92db7fa420ea9e41eebf1`
+- Created: `2020-02-18T23:19:59.090981764Z`
+- Virtual Size: ~ 675.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -20,13 +20,13 @@
   - `org.label-schema.name=CentOS Base Image`
   - `org.label-schema.schema-version=1.0`
   - `org.label-schema.vendor=CentOS`
-  - `org.opencontainers.image.created=2020-01-30T16:58:47.735176`
+  - `org.opencontainers.image.created=2020-02-14T15:29:55.666729`
   - `org.opencontainers.image.description=CrateDB is a distributed SQL database handles massive amounts of machine data in real-time.`
   - `org.opencontainers.image.source=https://github.com/crate/docker-crate`
   - `org.opencontainers.image.title=crate`
   - `org.opencontainers.image.url=https://crate.io/products/cratedb/`
   - `org.opencontainers.image.vendor=Crate.io`
-  - `org.opencontainers.image.version=4.1.1`
+  - `org.opencontainers.image.version=4.1.2`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -38,12 +38,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls acl-2.2.51-14.el7
-Enabling epel-source repository
-https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/7/SRPMS/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found
-Trying other mirror.
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/acl-2.2.51-14.el7.src.rpm
 ```
@@ -56,10 +52,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls audit-libs-2.8.5-4.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/audit-2.8.5-4.el7.src.rpm
 ```
@@ -72,10 +66,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls basesystem-10.0-7.el7.centos.noarch
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/basesystem-10.0-7.el7.centos.src.rpm
 ```
@@ -88,10 +80,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls bash-4.2.46-33.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/bash-4.2.46-33.el7.src.rpm
 ```
@@ -104,10 +94,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls bind-license-9.11.4-9.P2.el7.noarch
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/bind-9.11.4-9.P2.el7.src.rpm
 ```
@@ -120,10 +108,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls binutils-2.27-41.base.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/binutils-2.27-41.base.el7.src.rpm
 ```
@@ -136,10 +122,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls bzip2-libs-1.0.6-13.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/bzip2-1.0.6-13.el7.src.rpm
 ```
@@ -152,10 +136,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls ca-certificates-2018.2.22-70.0.el7_5.noarch
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/ca-certificates-2018.2.22-70.0.el7_5.src.rpm
 ```
@@ -168,10 +150,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls centos-release-7-7.1908.0.el7.centos
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/centos-release-7-7.1908.0.el7.centos.src.rpm
 ```
@@ -184,10 +164,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls chkconfig-1.7.4-1.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/chkconfig-1.7.4-1.el7.src.rpm
 ```
@@ -200,10 +178,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls coreutils-8.22-24.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/coreutils-8.22-24.el7.src.rpm
 ```
@@ -216,10 +192,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls cpio-2.11-27.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/cpio-2.11-27.el7.src.rpm
 ```
@@ -232,10 +206,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls cracklib-2.9.0-11.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/cracklib-2.9.0-11.el7.src.rpm
 ```
@@ -248,10 +220,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls cracklib-dicts-2.9.0-11.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/cracklib-2.9.0-11.el7.src.rpm
 ```
@@ -264,10 +234,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls cryptsetup-libs-2.0.3-5.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/cryptsetup-2.0.3-5.el7.src.rpm
 ```
@@ -280,10 +248,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls curl-7.29.0-54.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/curl-7.29.0-54.el7.src.rpm
 ```
@@ -296,10 +262,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls cyrus-sasl-lib-2.1.26-23.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/cyrus-sasl-2.1.26-23.el7.src.rpm
 ```
@@ -312,10 +276,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls dbus-1.10.24-13.el7_6
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/dbus-1.10.24-13.el7_6.src.rpm
 ```
@@ -328,10 +290,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls dbus-glib-0.100-7.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/dbus-glib-0.100-7.el7.src.rpm
 ```
@@ -344,10 +304,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls dbus-libs-1.10.24-13.el7_6
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/dbus-1.10.24-13.el7_6.src.rpm
 ```
@@ -360,10 +318,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls dbus-python-1.1.1-9.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/dbus-python-1.1.1-9.el7.src.rpm
 ```
@@ -376,10 +332,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls device-mapper-1.02.158-2.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/lvm2-2.02.185-2.el7.src.rpm
 ```
@@ -392,10 +346,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls device-mapper-libs-1.02.158-2.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/lvm2-2.02.185-2.el7.src.rpm
 ```
@@ -408,10 +360,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls diffutils-3.3-5.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/diffutils-3.3-5.el7.src.rpm
 ```
@@ -424,10 +374,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls dracut-033-564.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/dracut-033-564.el7.src.rpm
 ```
@@ -440,10 +388,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls elfutils-default-yama-scope-0.176-2.el7.noarch
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/elfutils-0.176-2.el7.src.rpm
 ```
@@ -456,10 +402,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls elfutils-libelf-0.176-2.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/elfutils-0.176-2.el7.src.rpm
 ```
@@ -472,19 +416,11 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls elfutils-libs-0.176-2.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/elfutils-0.176-2.el7.src.rpm
 ```
-
-### `rpm` package: `epel-release-7-11.noarch`
-
-Licenses (from `rpm --query`): GPLv2
-
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `expat-2.1.0-10.el7_3.x86_64`
 
@@ -494,10 +430,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls expat-2.1.0-10.el7_3
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/expat-2.1.0-10.el7_3.src.rpm
 ```
@@ -510,10 +444,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls file-libs-5.11-35.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/file-5.11-35.el7.src.rpm
 ```
@@ -526,10 +458,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls filesystem-3.2-25.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/filesystem-3.2-25.el7.src.rpm
 ```
@@ -542,10 +472,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls findutils-4.5.11-6.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/findutils-4.5.11-6.el7.src.rpm
 ```
@@ -558,10 +486,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls gawk-4.0.2-4.el7_3.1
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/gawk-4.0.2-4.el7_3.1.src.rpm
 ```
@@ -574,10 +500,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls gdbm-1.10-8.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/gdbm-1.10-8.el7.src.rpm
 ```
@@ -590,10 +514,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls geoipupdate-2.5.0-1.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/geoipupdate-2.5.0-1.el7.src.rpm
 ```
@@ -606,10 +528,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls glib2-2.56.1-5.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/glib2-2.56.1-5.el7.src.rpm
 ```
@@ -622,10 +542,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls glibc-2.17-292.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/glibc-2.17-292.el7.src.rpm
 ```
@@ -638,10 +556,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls glibc-common-2.17-292.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/glibc-2.17-292.el7.src.rpm
 ```
@@ -654,10 +570,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls gmp-6.0.0-15.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/gmp-6.0.0-15.el7.src.rpm
 ```
@@ -670,10 +584,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls gnupg2-2.0.22-5.el7_5
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/gnupg2-2.0.22-5.el7_5.src.rpm
 ```
@@ -686,10 +598,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls gobject-introspection-1.56.1-1.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/gobject-introspection-1.56.1-1.el7.src.rpm
 ```
@@ -708,10 +618,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls gpgme-1.3.2-5.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/gpgme-1.3.2-5.el7.src.rpm
 ```
@@ -724,10 +632,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls grep-2.20-3.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/grep-2.20-3.el7.src.rpm
 ```
@@ -740,10 +646,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls gzip-1.5-10.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/gzip-1.5-10.el7.src.rpm
 ```
@@ -756,10 +660,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls hardlink-1.0-19.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/hardlink-1.0-19.el7.src.rpm
 ```
@@ -772,10 +674,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls hostname-3.13-3.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/hostname-3.13-3.el7.src.rpm
 ```
@@ -788,10 +688,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls info-5.1-5.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/texinfo-5.1-5.el7.src.rpm
 ```
@@ -804,28 +702,10 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls iputils-20160308-10.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/iputils-20160308-10.el7.src.rpm
-```
-
-### `rpm` package: `ius-release-2-1.el7.ius.noarch`
-
-Licenses (from `rpm --query`): MIT
-
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls ius-release-2-1.el7.ius.noarch
-Enabling epel-source repository
-Enabling updates-source repository
-Enabling base-source repository
-Enabling ius-source repository
-Enabling extras-source repository
-https://repo.ius.io/7/src//packages/i/ius-release-2-1.el7.ius.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.11-4.el7_0.x86_64`
@@ -836,10 +716,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls json-c-0.11-4.el7_0
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/json-c-0.11-4.el7_0.src.rpm
 ```
@@ -852,10 +730,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls keyutils-libs-1.5.8-3.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/keyutils-1.5.8-3.el7.src.rpm
 ```
@@ -868,10 +744,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls kmod-20-25.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/kmod-20-25.el7.src.rpm
 ```
@@ -884,10 +758,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls kmod-libs-20-25.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/kmod-20-25.el7.src.rpm
 ```
@@ -900,10 +772,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls kpartx-0.4.9-127.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/device-mapper-multipath-0.4.9-127.el7.src.rpm
 ```
@@ -916,10 +786,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls krb5-libs-1.15.1-37.el7_7.2
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/updates/Source//SPackages/krb5-1.15.1-37.el7_7.2.src.rpm
 ```
@@ -932,10 +800,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libacl-2.2.51-14.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/acl-2.2.51-14.el7.src.rpm
 ```
@@ -948,10 +814,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libassuan-2.1.0-3.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/libassuan-2.1.0-3.el7.src.rpm
 ```
@@ -964,10 +828,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libattr-2.4.46-13.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/attr-2.4.46-13.el7.src.rpm
 ```
@@ -980,10 +842,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libblkid-2.23.2-61.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/util-linux-2.23.2-61.el7.src.rpm
 ```
@@ -996,10 +856,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libcap-2.22-10.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/libcap-2.22-10.el7.src.rpm
 ```
@@ -1012,10 +870,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libcap-ng-0.7.5-4.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/libcap-ng-0.7.5-4.el7.src.rpm
 ```
@@ -1028,10 +884,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libcom_err-1.42.9-16.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/e2fsprogs-1.42.9-16.el7.src.rpm
 ```
@@ -1044,10 +898,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libcurl-7.29.0-54.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/curl-7.29.0-54.el7.src.rpm
 ```
@@ -1060,10 +912,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libdb-5.3.21-25.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/libdb-5.3.21-25.el7.src.rpm
 ```
@@ -1076,10 +926,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libdb-utils-5.3.21-25.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/libdb-5.3.21-25.el7.src.rpm
 ```
@@ -1092,10 +940,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libffi-3.0.13-18.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/libffi-3.0.13-18.el7.src.rpm
 ```
@@ -1108,10 +954,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libgcc-4.8.5-39.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/gcc-4.8.5-39.el7.src.rpm
 ```
@@ -1124,10 +968,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libgcrypt-1.5.3-14.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/libgcrypt-1.5.3-14.el7.src.rpm
 ```
@@ -1140,10 +982,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libgpg-error-1.12-3.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/libgpg-error-1.12-3.el7.src.rpm
 ```
@@ -1156,10 +996,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libidn-1.28-4.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/libidn-1.28-4.el7.src.rpm
 ```
@@ -1172,10 +1010,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libmount-2.23.2-61.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/util-linux-2.23.2-61.el7.src.rpm
 ```
@@ -1188,10 +1024,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libpwquality-1.2.3-5.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/libpwquality-1.2.3-5.el7.src.rpm
 ```
@@ -1204,10 +1038,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libselinux-2.5-14.1.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/libselinux-2.5-14.1.el7.src.rpm
 ```
@@ -1220,10 +1052,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libsemanage-2.5-14.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/libsemanage-2.5-14.el7.src.rpm
 ```
@@ -1236,10 +1066,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libsepol-2.5-10.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/libsepol-2.5-10.el7.src.rpm
 ```
@@ -1252,10 +1080,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libsmartcols-2.23.2-61.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/util-linux-2.23.2-61.el7.src.rpm
 ```
@@ -1268,10 +1094,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libssh2-1.8.0-3.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/libssh2-1.8.0-3.el7.src.rpm
 ```
@@ -1284,10 +1108,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libstdc++-4.8.5-39.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/gcc-4.8.5-39.el7.src.rpm
 ```
@@ -1300,10 +1122,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libtasn1-4.10-1.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/libtasn1-4.10-1.el7.src.rpm
 ```
@@ -1316,10 +1136,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libtirpc-0.2.4-0.16.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/libtirpc-0.2.4-0.16.el7.src.rpm
 ```
@@ -1332,10 +1150,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libuser-0.60-9.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/libuser-0.60-9.el7.src.rpm
 ```
@@ -1348,10 +1164,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libutempter-1.1.6-4.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/libutempter-1.1.6-4.el7.src.rpm
 ```
@@ -1364,10 +1178,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libuuid-2.23.2-61.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/util-linux-2.23.2-61.el7.src.rpm
 ```
@@ -1380,10 +1192,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libverto-0.2.5-4.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/libverto-0.2.5-4.el7.src.rpm
 ```
@@ -1396,10 +1206,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libxml2-2.9.1-6.el7_2.3
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/libxml2-2.9.1-6.el7_2.3.src.rpm
 ```
@@ -1412,10 +1220,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls libxml2-python-2.9.1-6.el7_2.3
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/libxml2-2.9.1-6.el7_2.3.src.rpm
 ```
@@ -1428,10 +1234,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls lua-5.1.4-15.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/lua-5.1.4-15.el7.src.rpm
 ```
@@ -1444,10 +1248,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls lz4-1.7.5-3.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/lz4-1.7.5-3.el7.src.rpm
 ```
@@ -1460,10 +1262,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls make-3.82-24.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/make-3.82-24.el7.src.rpm
 ```
@@ -1476,10 +1276,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls ncurses-5.9-14.20130511.el7_4
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/ncurses-5.9-14.20130511.el7_4.src.rpm
 ```
@@ -1492,10 +1290,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls ncurses-base-5.9-14.20130511.el7_4.noarch
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/ncurses-5.9-14.20130511.el7_4.src.rpm
 ```
@@ -1508,10 +1304,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls ncurses-libs-5.9-14.20130511.el7_4
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/ncurses-5.9-14.20130511.el7_4.src.rpm
 ```
@@ -1524,10 +1318,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls nspr-4.21.0-1.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/nspr-4.21.0-1.el7.src.rpm
 ```
@@ -1540,10 +1332,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls nss-3.44.0-4.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/nss-3.44.0-4.el7.src.rpm
 ```
@@ -1556,10 +1346,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls nss-pem-1.0.3-7.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/nss-pem-1.0.3-7.el7.src.rpm
 ```
@@ -1572,10 +1360,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls nss-softokn-3.44.0-5.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/nss-softokn-3.44.0-5.el7.src.rpm
 ```
@@ -1588,10 +1374,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls nss-softokn-freebl-3.44.0-5.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/nss-softokn-3.44.0-5.el7.src.rpm
 ```
@@ -1604,10 +1388,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls nss-sysinit-3.44.0-4.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/nss-3.44.0-4.el7.src.rpm
 ```
@@ -1620,10 +1402,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls nss-tools-3.44.0-4.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/nss-3.44.0-4.el7.src.rpm
 ```
@@ -1636,10 +1416,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls nss-util-3.44.0-3.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/nss-util-3.44.0-3.el7.src.rpm
 ```
@@ -1652,10 +1430,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls openldap-2.4.44-21.el7_6
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/openldap-2.4.44-21.el7_6.src.rpm
 ```
@@ -1668,10 +1444,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls openssl-1.0.2k-19.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/openssl-1.0.2k-19.el7.src.rpm
 ```
@@ -1684,10 +1458,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls openssl-libs-1.0.2k-19.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/openssl-1.0.2k-19.el7.src.rpm
 ```
@@ -1700,10 +1472,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls p11-kit-0.23.5-3.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/p11-kit-0.23.5-3.el7.src.rpm
 ```
@@ -1716,10 +1486,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls p11-kit-trust-0.23.5-3.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/p11-kit-0.23.5-3.el7.src.rpm
 ```
@@ -1732,10 +1500,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls pam-1.1.8-22.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/pam-1.1.8-22.el7.src.rpm
 ```
@@ -1748,10 +1514,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls passwd-0.79-5.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/passwd-0.79-5.el7.src.rpm
 ```
@@ -1764,10 +1528,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls pcre-8.32-17.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/pcre-8.32-17.el7.src.rpm
 ```
@@ -1780,10 +1542,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls pinentry-0.8.1-17.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/pinentry-0.8.1-17.el7.src.rpm
 ```
@@ -1796,10 +1556,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls pkgconfig-0.27.1-4.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/pkgconfig-0.27.1-4.el7.src.rpm
 ```
@@ -1812,10 +1570,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls popt-1.13-16.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/popt-1.13-16.el7.src.rpm
 ```
@@ -1828,10 +1584,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls procps-ng-3.3.10-26.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/procps-ng-3.3.10-26.el7.src.rpm
 ```
@@ -1844,10 +1598,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls pth-2.0.7-23.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/pth-2.0.7-23.el7.src.rpm
 ```
@@ -1860,10 +1612,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls pygpgme-0.3-9.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/pygpgme-0.3-9.el7.src.rpm
 ```
@@ -1876,10 +1626,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls pyliblzma-0.5.3-11.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/pyliblzma-0.5.3-11.el7.src.rpm
 ```
@@ -1892,10 +1640,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls python-2.7.5-86.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/python-2.7.5-86.el7.src.rpm
 ```
@@ -1908,10 +1654,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls python-chardet-2.2.1-3.el7.noarch
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/python-chardet-2.2.1-3.el7.src.rpm
 ```
@@ -1924,10 +1668,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls python-gobject-base-3.22.0-1.el7_4.1
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/pygobject3-3.22.0-1.el7_4.1.src.rpm
 ```
@@ -1940,10 +1682,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls python-iniparse-0.4-9.el7.noarch
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/python-iniparse-0.4-9.el7.src.rpm
 ```
@@ -1956,10 +1696,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls python-kitchen-1.1.1-5.el7.noarch
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/python-kitchen-1.1.1-5.el7.src.rpm
 ```
@@ -1972,10 +1710,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls python-libs-2.7.5-86.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/python-2.7.5-86.el7.src.rpm
 ```
@@ -1988,10 +1724,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls python-pycurl-7.19.0-19.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/python-pycurl-7.19.0-19.el7.src.rpm
 ```
@@ -2004,10 +1738,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls python-urlgrabber-3.10-9.el7.noarch
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/python-urlgrabber-3.10-9.el7.src.rpm
 ```
@@ -2020,10 +1752,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls python3-3.6.8-10.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/python3-3.6.8-10.el7.src.rpm
 ```
@@ -2036,10 +1766,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls python3-libs-3.6.8-10.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/python3-3.6.8-10.el7.src.rpm
 ```
@@ -2052,10 +1780,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls python3-pip-9.0.3-5.el7.noarch
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/python-pip-9.0.3-5.el7.src.rpm
 ```
@@ -2068,10 +1794,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls python3-setuptools-39.2.0-10.el7.noarch
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/python3-setuptools-39.2.0-10.el7.src.rpm
 ```
@@ -2084,10 +1808,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls pyxattr-0.5.1-5.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/pyxattr-0.5.1-5.el7.src.rpm
 ```
@@ -2100,10 +1822,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls qrencode-libs-3.4.1-3.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/qrencode-3.4.1-3.el7.src.rpm
 ```
@@ -2116,10 +1836,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls readline-6.2-11.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/readline-6.2-11.el7.src.rpm
 ```
@@ -2132,10 +1850,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls rootfiles-8.1-11.el7.noarch
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/rootfiles-8.1-11.el7.src.rpm
 ```
@@ -2148,10 +1864,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls rpm-4.11.3-40.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/rpm-4.11.3-40.el7.src.rpm
 ```
@@ -2164,10 +1878,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls rpm-build-libs-4.11.3-40.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/rpm-4.11.3-40.el7.src.rpm
 ```
@@ -2180,10 +1892,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls rpm-libs-4.11.3-40.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/rpm-4.11.3-40.el7.src.rpm
 ```
@@ -2196,10 +1906,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls rpm-python-4.11.3-40.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/rpm-4.11.3-40.el7.src.rpm
 ```
@@ -2212,10 +1920,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls sed-4.2.2-5.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/sed-4.2.2-5.el7.src.rpm
 ```
@@ -2228,10 +1934,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls setup-2.8.71-10.el7.noarch
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/setup-2.8.71-10.el7.src.rpm
 ```
@@ -2244,10 +1948,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls shadow-utils-4.6-5.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/shadow-utils-4.6-5.el7.src.rpm
 ```
@@ -2260,10 +1962,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls shared-mime-info-1.8-4.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/shared-mime-info-1.8-4.el7.src.rpm
 ```
@@ -2276,10 +1976,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls sqlite-3.7.17-8.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/sqlite-3.7.17-8.el7.src.rpm
 ```
@@ -2292,10 +1990,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls systemd-219-67.el7_7.1
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/updates/Source//SPackages/systemd-219-67.el7_7.1.src.rpm
 ```
@@ -2308,10 +2004,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls systemd-libs-219-67.el7_7.1
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/updates/Source//SPackages/systemd-219-67.el7_7.1.src.rpm
 ```
@@ -2324,10 +2018,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls tar-1.26-35.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/tar-1.26-35.el7.src.rpm
 ```
@@ -2340,10 +2032,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls tzdata-2019b-1.el7.noarch
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/tzdata-2019b-1.el7.src.rpm
 ```
@@ -2356,10 +2046,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls ustr-1.0.4-16.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/ustr-1.0.4-16.el7.src.rpm
 ```
@@ -2372,10 +2060,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls util-linux-2.23.2-61.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/util-linux-2.23.2-61.el7.src.rpm
 ```
@@ -2388,10 +2074,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls vim-minimal-7.4.629-6.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/vim-7.4.629-6.el7.src.rpm
 ```
@@ -2404,10 +2088,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls xz-5.2.2-1.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/xz-5.2.2-1.el7.src.rpm
 ```
@@ -2420,10 +2102,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls xz-libs-5.2.2-1.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/xz-5.2.2-1.el7.src.rpm
 ```
@@ -2436,10 +2116,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls yum-3.4.3-163.el7.centos.noarch
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/yum-3.4.3-163.el7.centos.src.rpm
 ```
@@ -2452,10 +2130,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls yum-metadata-parser-1.1.4-10.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/yum-metadata-parser-1.1.4-10.el7.src.rpm
 ```
@@ -2468,10 +2144,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls yum-plugin-fastestmirror-1.1.31-52.el7.noarch
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/yum-utils-1.1.31-52.el7.src.rpm
 ```
@@ -2484,10 +2158,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls yum-plugin-ovl-1.1.31-52.el7.noarch
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/yum-utils-1.1.31-52.el7.src.rpm
 ```
@@ -2500,10 +2172,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls yum-utils-1.1.31-52.el7.noarch
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/yum-utils-1.1.31-52.el7.src.rpm
 ```
@@ -2516,10 +2186,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls zlib-1.2.7-18.el7
-Enabling epel-source repository
 Enabling updates-source repository
 Enabling base-source repository
-Enabling ius-source repository
 Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/zlib-1.2.7-18.el7.src.rpm
 ```
