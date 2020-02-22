@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3decead68bce733aa2827787cd4774be04b3392c458afd9103662895a8f93673`
-- Created: `2020-01-29T19:31:40.378660812Z`
-- Virtual Size: ~ 137.75 Mb  
+- Image ID: `sha256:be62b34d5d8fd7728c0d84d4617a9c9ff81ce4d2693854c6eaaf8c5c258bc66f`
+- Created: `2020-02-21T06:02:31.686972682Z`
+- Virtual Size: ~ 137.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.2`
-  - `PHP_URL=https://www.php.net/get/php-7.4.2.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.4.2.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=98284deac017da0d426117ecae7599a1f1bf62ae3911e8bc16c4403a8f4bdf13`
+  - `PHP_VERSION=7.4.3`
+  - `PHP_URL=https://www.php.net/get/php-7.4.3.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.4.3.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=cf1f856d877c268124ded1ede40c9fb6142b125fdaafdc54f855120b8bc6982a`
   - `PHP_MD5=`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=3.9.15`
@@ -391,16 +391,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-12.1-r0 description:
+libpq-12.2-r0 description:
 PostgreSQL libraries
 
-libpq-12.1-r0 webpage:
+libpq-12.2-r0 webpage:
 https://www.postgresql.org/
 
-libpq-12.1-r0 installed size:
+libpq-12.2-r0 installed size:
 327680
 
-libpq-12.1-r0 license:
+libpq-12.2-r0 license:
 PostgreSQL
 
 ```
@@ -493,16 +493,16 @@ ISC
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.9.10-r1 description:
+libxml2-2.9.10-r2 description:
 XML parsing library, version 2
 
-libxml2-2.9.10-r1 webpage:
+libxml2-2.9.10-r2 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.9.10-r1 installed size:
+libxml2-2.9.10-r2 installed size:
 1220608
 
-libxml2-2.9.10-r1 license:
+libxml2-2.9.10-r2 license:
 MIT
 
 ```

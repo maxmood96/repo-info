@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5512ba705e3781e809cc518ae5af6f859ed406e150525c80b5b724c084da5e27`
-- Created: `2020-01-29T19:30:43.098707817Z`
-- Virtual Size: ~ 130.36 Mb  
+- Image ID: `sha256:df2cdaff3e87ab3fc5c62e85f47d351fd03f2b140e86d700170fec3a4884a764`
+- Created: `2020-02-21T05:51:12.74985084Z`
+- Virtual Size: ~ 130.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.27`
-  - `PHP_URL=https://www.php.net/get/php-7.2.27.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.2.27.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=7bd0fb9e3b63cfe53176d1f3565cd686f90b3926217158de5ba57091f49e4c32`
+  - `PHP_VERSION=7.2.28`
+  - `PHP_URL=https://www.php.net/get/php-7.2.28.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.2.28.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=afe1863301da572dee2e0bad8014813bcced162f980ddc8ec8e41fd72263eb2d`
   - `PHP_MD5=`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=3.9.15`
@@ -391,16 +391,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-12.1-r0 description:
+libpq-12.2-r0 description:
 PostgreSQL libraries
 
-libpq-12.1-r0 webpage:
+libpq-12.2-r0 webpage:
 https://www.postgresql.org/
 
-libpq-12.1-r0 installed size:
+libpq-12.2-r0 installed size:
 327680
 
-libpq-12.1-r0 license:
+libpq-12.2-r0 license:
 PostgreSQL
 
 ```
@@ -493,16 +493,16 @@ ISC
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.9.10-r1 description:
+libxml2-2.9.10-r2 description:
 XML parsing library, version 2
 
-libxml2-2.9.10-r1 webpage:
+libxml2-2.9.10-r2 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.9.10-r1 installed size:
+libxml2-2.9.10-r2 installed size:
 1220608
 
-libxml2-2.9.10-r1 license:
+libxml2-2.9.10-r2 license:
 MIT
 
 ```
