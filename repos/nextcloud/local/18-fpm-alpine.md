@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bea4b436a43a26b4288d47db7a903a3293667d75a892aca0d96caf09ee566671`
-- Created: `2020-02-14T02:21:11.666500788Z`
-- Virtual Size: ~ 393.53 Mb  
+- Image ID: `sha256:15a8a835f94d9f09599f914231eccccc9912caf1b0de7691e2a7c19a9bd54443`
+- Created: `2020-02-21T05:39:26.570906541Z`
+- Virtual Size: ~ 393.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.14`
-  - `PHP_URL=https://www.php.net/get/php-7.3.14.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.3.14.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=cc05dd373ca5d36652800762f65c10e828a17de35aaf246262e3efa99d00cdb0`
+  - `PHP_VERSION=7.3.15`
+  - `PHP_URL=https://www.php.net/get/php-7.3.15.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.3.15.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=de7ae7cf3d1dbb2824975b26b32991dac2b732886ec22075b8c53b261b018166`
   - `PHP_MD5=`
   - `NEXTCLOUD_VERSION=18.0.1`
 
@@ -523,16 +523,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-12.1-r0 description:
+libpq-12.2-r0 description:
 PostgreSQL libraries
 
-libpq-12.1-r0 webpage:
+libpq-12.2-r0 webpage:
 https://www.postgresql.org/
 
-libpq-12.1-r0 installed size:
+libpq-12.2-r0 installed size:
 327680
 
-libpq-12.1-r0 license:
+libpq-12.2-r0 license:
 PostgreSQL
 
 ```
@@ -744,16 +744,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.9.10-r1 description:
+libxml2-2.9.10-r2 description:
 XML parsing library, version 2
 
-libxml2-2.9.10-r1 webpage:
+libxml2-2.9.10-r2 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.9.10-r1 installed size:
+libxml2-2.9.10-r2 installed size:
 1220608
 
-libxml2-2.9.10-r1 license:
+libxml2-2.9.10-r2 license:
 MIT
 
 ```
