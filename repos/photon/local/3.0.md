@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e6e84a333eca98650afe6e41578464a0b50c9673d848fb730520b932bb3b6ced`
-- Created: `2020-02-15T01:30:46.958327771Z`
+- Image ID: `sha256:c65e332a65aca41780253d0c994f5c1c5959aa512523d79032bd11bb24e13f2b`
+- Created: `2020-02-21T21:20:25.518037453Z`
 - Virtual Size: ~ 35.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `build-date=20200214`
+  - `build-date=20200221`
   - `name=Photon OS x86_64/3.0 Base Image`
   - `vendor=VMware`
 
@@ -167,13 +167,13 @@ Licenses (from `rpm --query`): OpenSSL
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `photon-release-3.0-3.ph3.noarch`
+### `rpm` package: `photon-release-3.0-4.ph3.noarch`
 
 Licenses (from `rpm --query`): Apache License
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `photon-repos-3.0-3.ph3.noarch`
+### `rpm` package: `photon-repos-3.0-4.ph3.noarch`
 
 Licenses (from `rpm --query`): Apache License
 
@@ -191,7 +191,7 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `rpm-libs-4.14.2-5.ph3.x86_64`
+### `rpm` package: `rpm-libs-4.14.2-6.ph3.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
