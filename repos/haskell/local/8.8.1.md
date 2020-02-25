@@ -300,13 +300,9 @@ Licenses: (parsed from: `/usr/share/doc/cabal-install-3.0/copyright`)
 
 - `BSD-3-Clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cabal-install-3.0=3.0+git20190827.1.f2b2ab7-6~deb9
-'http://downloads.haskell.org/debian/pool/main/c/cabal-install-3.0/cabal-install-3.0_3.0+git20190827.1.f2b2ab7-6~deb9.dsc' cabal-install-3.0_3.0+git20190827.1.f2b2ab7-6~deb9.dsc 1651 SHA256:8c1fb2f0661723c61952696517bfff61969b4b9aab0e4a121040a584d457ce74
-'http://downloads.haskell.org/debian/pool/main/c/cabal-install-3.0/cabal-install-3.0_3.0+git20190827.1.f2b2ab7-6~deb9.tar.xz' cabal-install-3.0_3.0+git20190827.1.f2b2ab7-6~deb9.tar.xz 1776316 SHA256:e2c5fc7b4252b0faf58117f1b18e77d3cf97a88839cf15fd1adba1d71b67aba4
-```
 
 ### `dpkg` source package: `cdebconf=0.227`
 
