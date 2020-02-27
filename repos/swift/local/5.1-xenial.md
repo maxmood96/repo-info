@@ -2415,14 +2415,9 @@ Licenses: (parsed from: `/usr/share/doc/rsync/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rsync=3.1.1-3ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.1.1-3ubuntu1.2.dsc' rsync_3.1.1-3ubuntu1.2.dsc 1789 SHA256:729a915f80bc3fad0bd25064b85af4cab61e0ac5250f39bdddde6253668d58a1
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.1.1.orig.tar.gz' rsync_3.1.1.orig.tar.gz 890124 SHA256:7de4364fcf5fe42f3bdb514417f1c40d10bbca896abe7e7f2c581c6ea08a2621
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.1.1-3ubuntu1.2.debian.tar.xz' rsync_3.1.1-3ubuntu1.2.debian.tar.xz 25088 SHA256:aa43805f1689e2ba769994fceaef99ce42c89e6c9abaa7bd274698939e8ce84d
-```
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d-1ubuntu0.1`
 
