@@ -266,14 +266,9 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.0-5ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0-5ubuntu1.dsc' bash_5.0-5ubuntu1.dsc 2447 SHA256:f819523a8bf9ea8048c0f6115d213a355e8bfac7caac66b9d4e57552b7b3b473
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0.orig.tar.xz' bash_5.0.orig.tar.xz 5554808 SHA256:893858ba233d65bda38039e99dd96a4102b2f6a2d5e6c1c546e0794a60beed97
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0-5ubuntu1.debian.tar.xz' bash_5.0-5ubuntu1.debian.tar.xz 71348 SHA256:83f318783c9a1b5014d3b9c2a0e8fc045fb01d2c675c4aeb1136c31538a15afe
-```
 
 ### `dpkg` source package: `binutils=2.33.90.20200122-1ubuntu2`
 
@@ -1308,14 +1303,9 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=2.6.4-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_2.6.4-1ubuntu1.dsc' harfbuzz_2.6.4-1ubuntu1.dsc 2878 SHA256:b827934b81f1115eaffd848ee19e7e9dc5f958d843d7e9b56c11f6334db9ce46
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_2.6.4.orig.tar.xz' harfbuzz_2.6.4.orig.tar.xz 5967468 SHA256:9413b8d96132d699687ef914ebb8c50440efc87b3f775d25856d7ec347c03c12
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_2.6.4-1ubuntu1.debian.tar.xz' harfbuzz_2.6.4-1ubuntu1.debian.tar.xz 11152 SHA256:1ab2ebdb4a41858c9a461fb8be6553d3981af3ebd40a29888fb173d40f5f99ce
-```
 
 ### `dpkg` source package: `heimdal=7.7.0+dfsg-1`
 
@@ -1398,14 +1388,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris icu=63.2-2
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_63.2-2.dsc' icu_63.2-2.dsc 1965 SHA256:b11e7fb65cce3bf22e7549c8291a5e058171a8eaf9e37ca8c30b45971e4ad97f
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_63.2.orig.tar.xz' icu_63.2.orig.tar.xz 13630108 SHA256:ab79c7bf11eacc0e3368b29ebba5cff67f41860a522f6a3957377353d5bc8d71
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_63.2-2.debian.tar.xz' icu_63.2-2.debian.tar.xz 34300 SHA256:2a9fb8ab29527e985b24dc7b15dd116be0b4a2edd9f106dca77c6f75b9baab7d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/icu/63.2-2/
+
 
 ### `dpkg` source package: `ilmbase=2.3.0-6`
 
@@ -2190,14 +2179,13 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`, `/usr/share/doc/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libselinux=3.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.0-1.dsc' libselinux_3.0-1.dsc 2220 SHA256:9f147a02241eb6e3db4b2bcad55cf5fd516702788f6561abbe82e9fd5faed6d7
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.0.orig.tar.gz' libselinux_3.0.orig.tar.gz 212096 SHA256:2ea2b30f671dae9d6b1391cbe8fb2ce5d36a3ee4fb1cd3c32f0d933c31b82433
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.0-1.debian.tar.xz' libselinux_3.0-1.debian.tar.xz 23568 SHA256:765b937149864b2fe265c1e9df7d8f5f8f1d384c1ef351458a996f284a4392ef
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libselinux/3.0-1/
+
 
 ### `dpkg` source package: `libsemanage=3.0-1`
 
@@ -2552,14 +2540,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-8ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-8ubuntu3.dsc' libxml2_2.9.4+dfsg1-8ubuntu3.dsc 2294 SHA256:abd09b6e80384f37cbbf3fb24e21b17dda0be8b725fd5a90d020ff73d9771751
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-8ubuntu3.debian.tar.xz' libxml2_2.9.4+dfsg1-8ubuntu3.debian.tar.xz 39904 SHA256:f18d3a518aeb59a27ce37029ec5231e6b6fcb9a01461b21d906a65e1e6056d09
-```
 
 ### `dpkg` source package: `libxrender=1:0.9.10-1`
 
@@ -2860,14 +2843,13 @@ Licenses: (parsed from: `/usr/share/doc/libmpdec2/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mpdecimal=2.4.2-2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpdecimal/mpdecimal_2.4.2-2.dsc' mpdecimal_2.4.2-2.dsc 1932 SHA256:716e61fc8315a22804adf8403e4d332c1883235b5c3801b6769e6040dc962fe3
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpdecimal/mpdecimal_2.4.2.orig.tar.gz' mpdecimal_2.4.2.orig.tar.gz 2271529 SHA256:83c628b90f009470981cf084c5418329c88b19835d8af3691b930afccb7d79c7
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpdecimal/mpdecimal_2.4.2-2.debian.tar.xz' mpdecimal_2.4.2-2.debian.tar.xz 5256 SHA256:159113f11169afc675a431840792e1ed8c2d00438bf3e1c5a3eb2c17d9e8da3d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/mpdecimal/2.4.2-2/
+
 
 ### `dpkg` source package: `mpfr4=4.0.2-1`
 
@@ -2952,15 +2934,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ncurses=6.1+20191019-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1+20191019-1ubuntu1.dsc' ncurses_6.1+20191019-1ubuntu1.dsc 4581 SHA256:847e7864196f3192f379cb56088f0cb1861f1cdf55426b9702d830d28062c919
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1+20191019.orig.tar.gz' ncurses_6.1+20191019.orig.tar.gz 3463374 SHA256:b42ca297f1823c1b1f2baaf46da5a61f690dc857600c7eb95d02432bd9905d3a
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1+20191019.orig.tar.gz.asc' ncurses_6.1+20191019.orig.tar.gz.asc 265 SHA256:670ab32ca07bf61d08d62731b1beef62194f684761bb73b2de1143949b0e88b6
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1+20191019-1ubuntu1.debian.tar.xz' ncurses_6.1+20191019-1ubuntu1.debian.tar.xz 63684 SHA256:6bcbc221c02ea3bb89a4059370fe3f548fb4085f5fed1a42eb3bf115aa382db0
-```
 
 ### `dpkg` source package: `netbase=6.0`
 
@@ -3419,14 +3395,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-12=12.1-2build1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.1-2build1.dsc' postgresql-12_12.1-2build1.dsc 3622 SHA256:03fc23795d06d8aa585d1d397d50f76d7b226845b032781cc0a1d770bfa32df9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.1.orig.tar.bz2' postgresql-12_12.1.orig.tar.bz2 20213711 SHA256:a09bf3abbaf6763980d0f8acbb943b7629a8b20073de18d867aecdb7988483ed
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.1-2build1.debian.tar.xz' postgresql-12_12.1-2build1.debian.tar.xz 22692 SHA256:b42100b3c94c626b26d7b5509fbad801c54e6f406587c649ea130d5436614729
-```
 
 ### `dpkg` source package: `procps=2:3.3.15-2ubuntu3`
 
@@ -3520,14 +3491,9 @@ Licenses: (parsed from: `/usr/share/doc/python3-urllib3/copyright`)
 - `Expat`
 - `PSF-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-urllib3=1.24.1-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.24.1-1ubuntu2.dsc' python-urllib3_1.24.1-1ubuntu2.dsc 2607 SHA256:9afd7d88e10ea3fe30276e9b1cde8b7d076d443422c10598f7fc135582123667
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.24.1.orig.tar.gz' python-urllib3_1.24.1.orig.tar.gz 229688 SHA256:de9529817c93f27c8ccbfead6985011db27bd0ddfcdb2d86f3f663385c6a9c22
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.24.1-1ubuntu2.debian.tar.xz' python-urllib3_1.24.1-1ubuntu2.debian.tar.xz 15048 SHA256:b325f80d116de2045ff513057bf850f1a9fd1eacc3cbe754c9f34c04d6d6f678
-```
 
 ### `dpkg` source package: `python2.7=2.7.17-1ubuntu5`
 
@@ -3593,14 +3559,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-stdlib-extensions=3.8.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.8.0-1.dsc' python3-stdlib-extensions_3.8.0-1.dsc 2523 SHA256:3b3c79e49f713337cf3e30f8b67baa9dc4945f42e20f5ea695b9c7c1a486310a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.8.0.orig.tar.xz' python3-stdlib-extensions_3.8.0.orig.tar.xz 1058456 SHA256:e4a158e0c1571a831c51cff2e785b9c06340b363756ffe9615593b11f63b2a3f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.8.0-1.debian.tar.xz' python3-stdlib-extensions_3.8.0-1.debian.tar.xz 17240 SHA256:a132c69fab4afb8940c1fc10848edcc8382face3516bde7fe238e574cbe0c958
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3-stdlib-extensions/3.8.0-1/
+
 
 ### `dpkg` source package: `python3.7=3.7.6-1ubuntu2`
 
@@ -3648,14 +3613,13 @@ Licenses: (parsed from: `/usr/share/doc/libreadline-dev/copyright`, `/usr/share/
 - `GFDL`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris readline=8.0-3
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.0-3.dsc' readline_8.0-3.dsc 2434 SHA256:c1a879cf7675fa5333a5ec4383e668a5f04b1d4b641f2a9e2150526678d94a0d
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.0.orig.tar.gz' readline_8.0.orig.tar.gz 2975937 SHA256:e339f51971478d369f8a053a330a190781acb9864cf4c541060f12078948e461
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.0-3.debian.tar.xz' readline_8.0-3.debian.tar.xz 29140 SHA256:8262f010dc55b79bbdf885d27252dbb695549c2da065f417af81462b6660e6fb
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/readline/8.0-3/
+
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-2build1`
 
@@ -4109,15 +4073,13 @@ Licenses: (parsed from: `/usr/share/doc/x11proto-core-dev/copyright`, `/usr/shar
 - `MIT`
 - `SGI`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xorgproto=2018.4-4
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xorgproto/xorgproto_2018.4-4.dsc' xorgproto_2018.4-4.dsc 4059 SHA256:6279a145ce040d9301a0e2efdf203dd7d2822bc9a90e94de08d545c4b724d8e3
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xorgproto/xorgproto_2018.4.orig.tar.gz' xorgproto_2018.4.orig.tar.gz 493597 SHA256:8e48d851efea0e951bcb6cf0d537f84ba3803de95e488bd039fe59fc75ec8f7d
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xorgproto/xorgproto_2018.4.orig.tar.gz.asc' xorgproto_2018.4.orig.tar.gz.asc 241 SHA256:3ab131cf8f497d315043b2c791912c22045da557e6894f1e5db533a0b0baed2f
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xorgproto/xorgproto_2018.4-4.diff.gz' xorgproto_2018.4-4.diff.gz 20976 SHA256:a9b27658c7c9e53372679bbb26099abed6cb9215355a99995858164de3fa5048
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/xorgproto/2018.4-4/
+
 
 ### `dpkg` source package: `xtrans=1.3.5-1build1`
 
@@ -4129,14 +4091,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xtrans=1.3.5-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xtrans/xtrans_1.3.5-1build1.dsc' xtrans_1.3.5-1build1.dsc 1966 SHA256:0827372b3889b0d9a9f79cc6cc9f453ee2190af57a8e8e995051525791c17223
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xtrans/xtrans_1.3.5.orig.tar.gz' xtrans_1.3.5.orig.tar.gz 227536 SHA256:b7a577c1b6c75030145e53b4793db9c88f9359ac49e7d771d4385d21b3e5945d
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xtrans/xtrans_1.3.5-1build1.diff.gz' xtrans_1.3.5-1build1.diff.gz 16003 SHA256:9cde9143cc720fcfbfbd40e5c4c555c3c51e47e5fc59d686bec5ed7ec3f7c097
-```
 
 ### `dpkg` source package: `xz-utils=5.2.4-1`
 

@@ -193,14 +193,9 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.0-5ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0-5ubuntu1.dsc' bash_5.0-5ubuntu1.dsc 2447 SHA256:f819523a8bf9ea8048c0f6115d213a355e8bfac7caac66b9d4e57552b7b3b473
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0.orig.tar.xz' bash_5.0.orig.tar.xz 5554808 SHA256:893858ba233d65bda38039e99dd96a4102b2f6a2d5e6c1c546e0794a60beed97
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0-5ubuntu1.debian.tar.xz' bash_5.0-5ubuntu1.debian.tar.xz 71348 SHA256:83f318783c9a1b5014d3b9c2a0e8fc045fb01d2c675c4aeb1136c31538a15afe
-```
 
 ### `dpkg` source package: `breezy=3.0.2-2`
 
@@ -1206,14 +1201,13 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libselinux=3.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.0-1.dsc' libselinux_3.0-1.dsc 2220 SHA256:9f147a02241eb6e3db4b2bcad55cf5fd516702788f6561abbe82e9fd5faed6d7
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.0.orig.tar.gz' libselinux_3.0.orig.tar.gz 212096 SHA256:2ea2b30f671dae9d6b1391cbe8fb2ce5d36a3ee4fb1cd3c32f0d933c31b82433
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.0-1.debian.tar.xz' libselinux_3.0-1.debian.tar.xz 23568 SHA256:765b937149864b2fe265c1e9df7d8f5f8f1d384c1ef351458a996f284a4392ef
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libselinux/3.0-1/
+
 
 ### `dpkg` source package: `libsemanage=3.0-1`
 
@@ -1449,14 +1443,13 @@ Licenses: (parsed from: `/usr/share/doc/libmpdec2/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mpdecimal=2.4.2-2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpdecimal/mpdecimal_2.4.2-2.dsc' mpdecimal_2.4.2-2.dsc 1932 SHA256:716e61fc8315a22804adf8403e4d332c1883235b5c3801b6769e6040dc962fe3
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpdecimal/mpdecimal_2.4.2.orig.tar.gz' mpdecimal_2.4.2.orig.tar.gz 2271529 SHA256:83c628b90f009470981cf084c5418329c88b19835d8af3691b930afccb7d79c7
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpdecimal/mpdecimal_2.4.2-2.debian.tar.xz' mpdecimal_2.4.2-2.debian.tar.xz 5256 SHA256:159113f11169afc675a431840792e1ed8c2d00438bf3e1c5a3eb2c17d9e8da3d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/mpdecimal/2.4.2-2/
+
 
 ### `dpkg` source package: `ncurses=6.1+20191019-1ubuntu1`
 
@@ -1472,15 +1465,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ncurses=6.1+20191019-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1+20191019-1ubuntu1.dsc' ncurses_6.1+20191019-1ubuntu1.dsc 4581 SHA256:847e7864196f3192f379cb56088f0cb1861f1cdf55426b9702d830d28062c919
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1+20191019.orig.tar.gz' ncurses_6.1+20191019.orig.tar.gz 3463374 SHA256:b42ca297f1823c1b1f2baaf46da5a61f690dc857600c7eb95d02432bd9905d3a
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1+20191019.orig.tar.gz.asc' ncurses_6.1+20191019.orig.tar.gz.asc 265 SHA256:670ab32ca07bf61d08d62731b1beef62194f684761bb73b2de1143949b0e88b6
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.1+20191019-1ubuntu1.debian.tar.xz' ncurses_6.1+20191019-1ubuntu1.debian.tar.xz 63684 SHA256:6bcbc221c02ea3bb89a4059370fe3f548fb4085f5fed1a42eb3bf115aa382db0
-```
 
 ### `dpkg` source package: `netbase=6.0`
 
@@ -1879,14 +1866,9 @@ Licenses: (parsed from: `/usr/share/doc/python3-urllib3/copyright`)
 - `Expat`
 - `PSF-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-urllib3=1.24.1-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.24.1-1ubuntu2.dsc' python-urllib3_1.24.1-1ubuntu2.dsc 2607 SHA256:9afd7d88e10ea3fe30276e9b1cde8b7d076d443422c10598f7fc135582123667
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.24.1.orig.tar.gz' python-urllib3_1.24.1.orig.tar.gz 229688 SHA256:de9529817c93f27c8ccbfead6985011db27bd0ddfcdb2d86f3f663385c6a9c22
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.24.1-1ubuntu2.debian.tar.xz' python-urllib3_1.24.1-1ubuntu2.debian.tar.xz 15048 SHA256:b325f80d116de2045ff513057bf850f1a9fd1eacc3cbe754c9f34c04d6d6f678
-```
 
 ### `dpkg` source package: `python2.7=2.7.17-1ubuntu5`
 
@@ -1986,14 +1968,13 @@ Licenses: (parsed from: `/usr/share/doc/libreadline8/copyright`, `/usr/share/doc
 - `GFDL`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris readline=8.0-3
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.0-3.dsc' readline_8.0-3.dsc 2434 SHA256:c1a879cf7675fa5333a5ec4383e668a5f04b1d4b641f2a9e2150526678d94a0d
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.0.orig.tar.gz' readline_8.0.orig.tar.gz 2975937 SHA256:e339f51971478d369f8a053a330a190781acb9864cf4c541060f12078948e461
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.0-3.debian.tar.xz' readline_8.0-3.debian.tar.xz 29140 SHA256:8262f010dc55b79bbdf885d27252dbb695549c2da065f417af81462b6660e6fb
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/readline/8.0-3/
+
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-2build1`
 
