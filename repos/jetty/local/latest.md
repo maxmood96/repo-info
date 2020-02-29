@@ -1,10 +1,10 @@
-# `jetty:9.4.26`
+# `jetty:9.4.27`
 
 ## Docker Metadata
 
-- Image ID: `sha256:93ceb730f24ef32e6bd8bb0332fa09cc1536803f20534e3e72b50773fb39d87a`
-- Created: `2020-01-28T22:21:22.182581358Z`
-- Virtual Size: ~ 501.64 Mb  
+- Image ID: `sha256:ca606e4eb9ae6bc832d6cc097008ad833d0921dd411c7d05fc083bb535e6bd52`
+- Created: `2020-02-28T22:28:59.118886279Z`
+- Virtual Size: ~ 501.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -16,11 +16,11 @@
   - `JAVA_VERSION=13.0.2`
   - `JAVA_URL=https://download.java.net/java/GA/jdk13.0.2/d4173c853231432d94f001e99d882ca7/8/GPL/openjdk-13.0.2_linux-x64_bin.tar.gz`
   - `JAVA_SHA256=acc7a6aabced44e62ec3b83e3b5959df2b1aa6b3d610d58ee45f0c21a7821a71`
-  - `JETTY_VERSION=9.4.26.v20200117`
+  - `JETTY_VERSION=9.4.27.v20200227`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
   - `TMPDIR=/tmp/jetty`
-  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.26.v20200117/jetty-home-9.4.26.v20200117.tar.gz`
+  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.27.v20200227/jetty-home-9.4.27.v20200227.tar.gz`
   - `JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	FBA2B18D238AB852DF95745C76157BDF03D0DCD6 	5C9579B3DB2E506429319AAEF33B071B29559E1E`
 
 ## `rpm` (`.rpm`-based packages)
