@@ -32,7 +32,9 @@
 -	[`tomcat:8.5.51-jdk11-corretto`](#tomcat8551-jdk11-corretto)
 -	[`tomcat:8.5.51-jdk11-openjdk`](#tomcat8551-jdk11-openjdk)
 -	[`tomcat:8.5.51-jdk11-openjdk-slim`](#tomcat8551-jdk11-openjdk-slim)
+-	[`tomcat:8.5.51-jdk13-openjdk-buster`](#tomcat8551-jdk13-openjdk-buster)
 -	[`tomcat:8.5.51-jdk13-openjdk-oracle`](#tomcat8551-jdk13-openjdk-oracle)
+-	[`tomcat:8.5.51-jdk13-openjdk-slim-buster`](#tomcat8551-jdk13-openjdk-slim-buster)
 -	[`tomcat:8.5.51-jdk8`](#tomcat8551-jdk8)
 -	[`tomcat:8.5.51-jdk8-adoptopenjdk-hotspot`](#tomcat8551-jdk8-adoptopenjdk-hotspot)
 -	[`tomcat:8.5.51-jdk8-adoptopenjdk-openj9`](#tomcat8551-jdk8-adoptopenjdk-openj9)
@@ -45,7 +47,9 @@
 -	[`tomcat:8.5-jdk11-corretto`](#tomcat85-jdk11-corretto)
 -	[`tomcat:8.5-jdk11-openjdk`](#tomcat85-jdk11-openjdk)
 -	[`tomcat:8.5-jdk11-openjdk-slim`](#tomcat85-jdk11-openjdk-slim)
+-	[`tomcat:8.5-jdk13-openjdk-buster`](#tomcat85-jdk13-openjdk-buster)
 -	[`tomcat:8.5-jdk13-openjdk-oracle`](#tomcat85-jdk13-openjdk-oracle)
+-	[`tomcat:8.5-jdk13-openjdk-slim-buster`](#tomcat85-jdk13-openjdk-slim-buster)
 -	[`tomcat:8.5-jdk8`](#tomcat85-jdk8)
 -	[`tomcat:8.5-jdk8-adoptopenjdk-hotspot`](#tomcat85-jdk8-adoptopenjdk-hotspot)
 -	[`tomcat:8.5-jdk8-adoptopenjdk-openj9`](#tomcat85-jdk8-adoptopenjdk-openj9)
@@ -58,7 +62,9 @@
 -	[`tomcat:8-jdk11-corretto`](#tomcat8-jdk11-corretto)
 -	[`tomcat:8-jdk11-openjdk`](#tomcat8-jdk11-openjdk)
 -	[`tomcat:8-jdk11-openjdk-slim`](#tomcat8-jdk11-openjdk-slim)
+-	[`tomcat:8-jdk13-openjdk-buster`](#tomcat8-jdk13-openjdk-buster)
 -	[`tomcat:8-jdk13-openjdk-oracle`](#tomcat8-jdk13-openjdk-oracle)
+-	[`tomcat:8-jdk13-openjdk-slim-buster`](#tomcat8-jdk13-openjdk-slim-buster)
 -	[`tomcat:8-jdk8`](#tomcat8-jdk8)
 -	[`tomcat:8-jdk8-adoptopenjdk-hotspot`](#tomcat8-jdk8-adoptopenjdk-hotspot)
 -	[`tomcat:8-jdk8-adoptopenjdk-openj9`](#tomcat8-jdk8-adoptopenjdk-openj9)
@@ -74,7 +80,9 @@
 -	[`tomcat:9.0.31-jdk11-corretto`](#tomcat9031-jdk11-corretto)
 -	[`tomcat:9.0.31-jdk11-openjdk`](#tomcat9031-jdk11-openjdk)
 -	[`tomcat:9.0.31-jdk11-openjdk-slim`](#tomcat9031-jdk11-openjdk-slim)
+-	[`tomcat:9.0.31-jdk13-openjdk-buster`](#tomcat9031-jdk13-openjdk-buster)
 -	[`tomcat:9.0.31-jdk13-openjdk-oracle`](#tomcat9031-jdk13-openjdk-oracle)
+-	[`tomcat:9.0.31-jdk13-openjdk-slim-buster`](#tomcat9031-jdk13-openjdk-slim-buster)
 -	[`tomcat:9.0.31-jdk8`](#tomcat9031-jdk8)
 -	[`tomcat:9.0.31-jdk8-adoptopenjdk-hotspot`](#tomcat9031-jdk8-adoptopenjdk-hotspot)
 -	[`tomcat:9.0.31-jdk8-adoptopenjdk-openj9`](#tomcat9031-jdk8-adoptopenjdk-openj9)
@@ -87,7 +95,9 @@
 -	[`tomcat:9.0-jdk11-corretto`](#tomcat90-jdk11-corretto)
 -	[`tomcat:9.0-jdk11-openjdk`](#tomcat90-jdk11-openjdk)
 -	[`tomcat:9.0-jdk11-openjdk-slim`](#tomcat90-jdk11-openjdk-slim)
+-	[`tomcat:9.0-jdk13-openjdk-buster`](#tomcat90-jdk13-openjdk-buster)
 -	[`tomcat:9.0-jdk13-openjdk-oracle`](#tomcat90-jdk13-openjdk-oracle)
+-	[`tomcat:9.0-jdk13-openjdk-slim-buster`](#tomcat90-jdk13-openjdk-slim-buster)
 -	[`tomcat:9.0-jdk8`](#tomcat90-jdk8)
 -	[`tomcat:9.0-jdk8-adoptopenjdk-hotspot`](#tomcat90-jdk8-adoptopenjdk-hotspot)
 -	[`tomcat:9.0-jdk8-adoptopenjdk-openj9`](#tomcat90-jdk8-adoptopenjdk-openj9)
@@ -100,7 +110,9 @@
 -	[`tomcat:9-jdk11-corretto`](#tomcat9-jdk11-corretto)
 -	[`tomcat:9-jdk11-openjdk`](#tomcat9-jdk11-openjdk)
 -	[`tomcat:9-jdk11-openjdk-slim`](#tomcat9-jdk11-openjdk-slim)
+-	[`tomcat:9-jdk13-openjdk-buster`](#tomcat9-jdk13-openjdk-buster)
 -	[`tomcat:9-jdk13-openjdk-oracle`](#tomcat9-jdk13-openjdk-oracle)
+-	[`tomcat:9-jdk13-openjdk-slim-buster`](#tomcat9-jdk13-openjdk-slim-buster)
 -	[`tomcat:9-jdk8`](#tomcat9-jdk8)
 -	[`tomcat:9-jdk8-adoptopenjdk-hotspot`](#tomcat9-jdk8-adoptopenjdk-hotspot)
 -	[`tomcat:9-jdk8-adoptopenjdk-openj9`](#tomcat9-jdk8-adoptopenjdk-openj9)
@@ -113,7 +125,9 @@
 -	[`tomcat:jdk11-corretto`](#tomcatjdk11-corretto)
 -	[`tomcat:jdk11-openjdk`](#tomcatjdk11-openjdk)
 -	[`tomcat:jdk11-openjdk-slim`](#tomcatjdk11-openjdk-slim)
+-	[`tomcat:jdk13-openjdk-buster`](#tomcatjdk13-openjdk-buster)
 -	[`tomcat:jdk13-openjdk-oracle`](#tomcatjdk13-openjdk-oracle)
+-	[`tomcat:jdk13-openjdk-slim-buster`](#tomcatjdk13-openjdk-slim-buster)
 -	[`tomcat:jdk8`](#tomcatjdk8)
 -	[`tomcat:jdk8-adoptopenjdk-hotspot`](#tomcatjdk8-adoptopenjdk-hotspot)
 -	[`tomcat:jdk8-adoptopenjdk-openj9`](#tomcatjdk8-adoptopenjdk-openj9)
@@ -6769,6 +6783,10 @@ CMD ["catalina.sh" "run"]
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `tomcat:8.5.51-jdk13-openjdk-buster`
+
+**does not exist** (yet?)
+
 ## `tomcat:8.5.51-jdk13-openjdk-oracle`
 
 ```console
@@ -6872,6 +6890,10 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 11 Feb 2020 21:59:00 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `tomcat:8.5.51-jdk13-openjdk-slim-buster`
+
+**does not exist** (yet?)
 
 ## `tomcat:8.5.51-jdk8`
 
@@ -10002,6 +10024,10 @@ CMD ["catalina.sh" "run"]
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `tomcat:8.5-jdk13-openjdk-buster`
+
+**does not exist** (yet?)
+
 ## `tomcat:8.5-jdk13-openjdk-oracle`
 
 ```console
@@ -10105,6 +10131,10 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 11 Feb 2020 21:59:00 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `tomcat:8.5-jdk13-openjdk-slim-buster`
+
+**does not exist** (yet?)
 
 ## `tomcat:8.5-jdk8`
 
@@ -13235,6 +13265,10 @@ CMD ["catalina.sh" "run"]
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `tomcat:8-jdk13-openjdk-buster`
+
+**does not exist** (yet?)
+
 ## `tomcat:8-jdk13-openjdk-oracle`
 
 ```console
@@ -13338,6 +13372,10 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 11 Feb 2020 21:59:00 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `tomcat:8-jdk13-openjdk-slim-buster`
+
+**does not exist** (yet?)
 
 ## `tomcat:8-jdk8`
 
@@ -17197,6 +17235,10 @@ CMD ["catalina.sh" "run"]
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `tomcat:9.0.31-jdk13-openjdk-buster`
+
+**does not exist** (yet?)
+
 ## `tomcat:9.0.31-jdk13-openjdk-oracle`
 
 ```console
@@ -17300,6 +17342,10 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 11 Feb 2020 21:57:52 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `tomcat:9.0.31-jdk13-openjdk-slim-buster`
+
+**does not exist** (yet?)
 
 ## `tomcat:9.0.31-jdk8`
 
@@ -20430,6 +20476,10 @@ CMD ["catalina.sh" "run"]
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `tomcat:9.0-jdk13-openjdk-buster`
+
+**does not exist** (yet?)
+
 ## `tomcat:9.0-jdk13-openjdk-oracle`
 
 ```console
@@ -20533,6 +20583,10 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 11 Feb 2020 21:57:52 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `tomcat:9.0-jdk13-openjdk-slim-buster`
+
+**does not exist** (yet?)
 
 ## `tomcat:9.0-jdk8`
 
@@ -23663,6 +23717,10 @@ CMD ["catalina.sh" "run"]
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `tomcat:9-jdk13-openjdk-buster`
+
+**does not exist** (yet?)
+
 ## `tomcat:9-jdk13-openjdk-oracle`
 
 ```console
@@ -23766,6 +23824,10 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 11 Feb 2020 21:57:52 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `tomcat:9-jdk13-openjdk-slim-buster`
+
+**does not exist** (yet?)
 
 ## `tomcat:9-jdk8`
 
@@ -26896,6 +26958,10 @@ CMD ["catalina.sh" "run"]
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `tomcat:jdk13-openjdk-buster`
+
+**does not exist** (yet?)
+
 ## `tomcat:jdk13-openjdk-oracle`
 
 ```console
@@ -26999,6 +27065,10 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 11 Feb 2020 21:59:00 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `tomcat:jdk13-openjdk-slim-buster`
+
+**does not exist** (yet?)
 
 ## `tomcat:jdk8`
 
