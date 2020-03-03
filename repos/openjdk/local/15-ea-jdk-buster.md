@@ -1,10 +1,10 @@
-# `openjdk:15-ea-11-jdk-buster`
+# `openjdk:15-ea-12-jdk-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:09626313087679fca9fe151a06c91bdf3a70da3fb7fe3707735dc26bfca2f70c`
-- Created: `2020-02-26T20:15:02.375561241Z`
-- Virtual Size: ~ 665.76 Mb  
+- Image ID: `sha256:9a0ce54c9b79dac3b029d01a9ceb4bcd5bbf494016f0b143ddc2809fcd47bce4`
+- Created: `2020-02-29T03:19:12.370738271Z`
+- Virtual Size: ~ 666.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,9 +12,9 @@
   - `PATH=/usr/java/openjdk-15/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/java/openjdk-15`
-  - `JAVA_VERSION=15-ea+11`
-  - `JAVA_URL=https://download.java.net/java/early_access/jdk15/11/GPL/openjdk-15-ea+11_linux-x64_bin.tar.gz`
-  - `JAVA_SHA256=dbaed2c9b6a3158494de3a5d87e772a9950535f9053a239c5dcbc1baee5b967d`
+  - `JAVA_VERSION=15-ea+12`
+  - `JAVA_URL=https://download.java.net/java/early_access/jdk15/12/GPL/openjdk-15-ea+12_linux-x64_bin.tar.gz`
+  - `JAVA_SHA256=ff430463b92de38a39224ada330253f9d6381621d99a0822a40e6c6b81d68bb1`
 
 ## `dpkg` (`.deb`-based packages)
 
