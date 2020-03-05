@@ -1,10 +1,10 @@
-# `docker:19.03.6-git`
+# `docker:19.03.7-git`
 
 ## Docker Metadata
 
-- Image ID: `sha256:895a2649338c1215953aef154b3318c6e68fdb7e12d87001851a53bb7c894ac2`
-- Created: `2020-02-14T01:20:14.045811076Z`
-- Virtual Size: ~ 239.61 Mb  
+- Image ID: `sha256:c5b07c76f69789275285e37277861497724fec9ef91933183d21746098859a8e`
+- Created: `2020-03-04T17:22:33.552851286Z`
+- Virtual Size: ~ 239.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_CHANNEL=stable`
-  - `DOCKER_VERSION=19.03.6`
+  - `DOCKER_VERSION=19.03.7`
   - `DOCKER_TLS_CERTDIR=/certs`
 
 ## `apk` (`.apk`-based packages)

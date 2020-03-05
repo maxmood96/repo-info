@@ -1,17 +1,17 @@
-# `docker:19.03.6-dind-rootless`
+# `docker:19.03.7-dind-rootless`
 
 ## Docker Metadata
 
-- Image ID: `sha256:89527d117bacd314548142760ceabb86b486fdc2e48f7267bf0919452775990a`
-- Created: `2020-02-14T01:20:06.8110548Z`
-- Virtual Size: ~ 304.49 Mb  
+- Image ID: `sha256:c88504cd9a3f192922c817319508a9c5f9f5b506682835c320873b17dd12deee`
+- Created: `2020-03-04T17:22:28.674736094Z`
+- Virtual Size: ~ 304.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_CHANNEL=stable`
-  - `DOCKER_VERSION=19.03.6`
+  - `DOCKER_VERSION=19.03.7`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=37498f009d8bf25fbb6199e8ccd34bed84f2874b`
   - `ROOTLESSKIT_VERSION=0.7.1`
@@ -769,16 +769,16 @@ GPL-2.0-or-later Public-Domain
 ### `apk` package: `zfs`
 
 ```console
-zfs-0.8.2-r1 description:
+zfs-0.8.3-r1 description:
 ZFS for Linux
 
-zfs-0.8.2-r1 webpage:
+zfs-0.8.3-r1 webpage:
 http://zfsonlinux.org
 
-zfs-0.8.2-r1 installed size:
-1241088
+zfs-0.8.3-r1 installed size:
+1249280
 
-zfs-0.8.2-r1 license:
+zfs-0.8.3-r1 license:
 CDDL-1.0
 
 ```
@@ -786,16 +786,16 @@ CDDL-1.0
 ### `apk` package: `zfs-libs`
 
 ```console
-zfs-libs-0.8.2-r1 description:
+zfs-libs-0.8.3-r1 description:
 ZFS for Linux (libraries)
 
-zfs-libs-0.8.2-r1 webpage:
+zfs-libs-0.8.3-r1 webpage:
 http://zfsonlinux.org
 
-zfs-libs-0.8.2-r1 installed size:
-3121152
+zfs-libs-0.8.3-r1 installed size:
+3145728
 
-zfs-libs-0.8.2-r1 license:
+zfs-libs-0.8.3-r1 license:
 CDDL-1.0
 
 ```
