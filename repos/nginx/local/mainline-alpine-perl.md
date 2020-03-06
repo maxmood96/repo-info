@@ -1,17 +1,17 @@
-# `nginx:1.17.8-alpine-perl`
+# `nginx:1.17.9-alpine-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e74c51ae34a9b59ce0460007e94c482d36680047ce02da96513d5b0c87c78abd`
-- Created: `2020-01-23T19:29:55.275055103Z`
-- Virtual Size: ~ 57.57 Mb  
+- Image ID: `sha256:7550e0bda0da8b1b671d6733b2f9942092518c8507e0d012e92fde547e4a1779`
+- Created: `2020-03-04T17:32:44.270008874Z`
+- Virtual Size: ~ 55.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.17.8`
-  - `NJS_VERSION=0.3.8`
+  - `NGINX_VERSION=1.17.9`
+  - `NJS_VERSION=0.3.9`
   - `PKG_RELEASE=1`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
@@ -429,33 +429,16 @@ MIT BSD GPL2+
 ### `apk` package: `ncurses-libs`
 
 ```console
-ncurses-libs-6.1_p20190518-r0 description:
+ncurses-libs-6.1_p20190518-r2 description:
 Ncurses libraries
 
-ncurses-libs-6.1_p20190518-r0 webpage:
+ncurses-libs-6.1_p20190518-r2 webpage:
 https://www.gnu.org/software/ncurses/
 
-ncurses-libs-6.1_p20190518-r0 installed size:
+ncurses-libs-6.1_p20190518-r2 installed size:
 503808
 
-ncurses-libs-6.1_p20190518-r0 license:
-MIT
-
-```
-
-### `apk` package: `ncurses-terminfo`
-
-```console
-ncurses-terminfo-6.1_p20190518-r0 description:
-Console display library (other terminfo files)
-
-ncurses-terminfo-6.1_p20190518-r0 webpage:
-https://www.gnu.org/software/ncurses/
-
-ncurses-terminfo-6.1_p20190518-r0 installed size:
-7307264
-
-ncurses-terminfo-6.1_p20190518-r0 license:
+ncurses-libs-6.1_p20190518-r2 license:
 MIT
 
 ```
@@ -463,16 +446,16 @@ MIT
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.1_p20190518-r0 description:
+ncurses-terminfo-base-6.1_p20190518-r2 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.1_p20190518-r0 webpage:
+ncurses-terminfo-base-6.1_p20190518-r2 webpage:
 https://www.gnu.org/software/ncurses/
 
-ncurses-terminfo-base-6.1_p20190518-r0 installed size:
-94208
+ncurses-terminfo-base-6.1_p20190518-r2 installed size:
+212992
 
-ncurses-terminfo-base-6.1_p20190518-r0 license:
+ncurses-terminfo-base-6.1_p20190518-r2 license:
 MIT
 
 ```
@@ -480,16 +463,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.17.8-r1 description:
+nginx-1.17.9-r1 description:
 High performance web server
 
-nginx-1.17.8-r1 webpage:
+nginx-1.17.9-r1 webpage:
 http://nginx.org/
 
-nginx-1.17.8-r1 installed size:
+nginx-1.17.9-r1 installed size:
 2555904
 
-nginx-1.17.8-r1 license:
+nginx-1.17.9-r1 license:
 2-clause BSD-like license
 
 ```
@@ -497,16 +480,16 @@ nginx-1.17.8-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.17.8-r1 description:
+nginx-module-geoip-1.17.9-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.17.8-r1 webpage:
+nginx-module-geoip-1.17.9-r1 webpage:
 http://nginx.org/
 
-nginx-module-geoip-1.17.8-r1 installed size:
+nginx-module-geoip-1.17.9-r1 installed size:
 118784
 
-nginx-module-geoip-1.17.8-r1 license:
+nginx-module-geoip-1.17.9-r1 license:
 2-clause BSD-like license
 
 ```
@@ -514,16 +497,16 @@ nginx-module-geoip-1.17.8-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.17.8-r1 description:
+nginx-module-image-filter-1.17.9-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.17.8-r1 webpage:
+nginx-module-image-filter-1.17.9-r1 webpage:
 http://nginx.org/
 
-nginx-module-image-filter-1.17.8-r1 installed size:
+nginx-module-image-filter-1.17.9-r1 installed size:
 90112
 
-nginx-module-image-filter-1.17.8-r1 license:
+nginx-module-image-filter-1.17.9-r1 license:
 2-clause BSD-like license
 
 ```
@@ -531,16 +514,16 @@ nginx-module-image-filter-1.17.8-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.17.8.0.3.8-r1 description:
+nginx-module-njs-1.17.9.0.3.9-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.17.8.0.3.8-r1 webpage:
+nginx-module-njs-1.17.9.0.3.9-r1 webpage:
 http://nginx.org/
 
-nginx-module-njs-1.17.8.0.3.8-r1 installed size:
-2666496
+nginx-module-njs-1.17.9.0.3.9-r1 installed size:
+2732032
 
-nginx-module-njs-1.17.8.0.3.8-r1 license:
+nginx-module-njs-1.17.9.0.3.9-r1 license:
 2-clause BSD-like license
 
 ```
@@ -548,16 +531,16 @@ nginx-module-njs-1.17.8.0.3.8-r1 license:
 ### `apk` package: `nginx-module-perl`
 
 ```console
-nginx-module-perl-1.17.8-r1 description:
+nginx-module-perl-1.17.9-r1 description:
 nginx Perl dynamic module
 
-nginx-module-perl-1.17.8-r1 webpage:
+nginx-module-perl-1.17.9-r1 webpage:
 http://nginx.org/
 
-nginx-module-perl-1.17.8-r1 installed size:
+nginx-module-perl-1.17.9-r1 installed size:
 163840
 
-nginx-module-perl-1.17.8-r1 license:
+nginx-module-perl-1.17.9-r1 license:
 2-clause BSD-like license
 
 ```
@@ -565,16 +548,16 @@ nginx-module-perl-1.17.8-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.17.8-r1 description:
+nginx-module-xslt-1.17.9-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.17.8-r1 webpage:
+nginx-module-xslt-1.17.9-r1 webpage:
 http://nginx.org/
 
-nginx-module-xslt-1.17.8-r1 installed size:
+nginx-module-xslt-1.17.9-r1 installed size:
 86016
 
-nginx-module-xslt-1.17.8-r1 license:
+nginx-module-xslt-1.17.9-r1 license:
 2-clause BSD-like license
 
 ```
