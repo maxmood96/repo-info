@@ -1,7 +1,7 @@
 ## `aerospike:latest`
 
 ```console
-$ docker pull aerospike@sha256:7a56a9844788ecffa84015c9c39ae6a14f6a0e5073a12f87203573b52d541837
+$ docker pull aerospike@sha256:106986d2ceaabc92465c2d6a2a0e1b25277128760bc22611f40b26f3f9c248a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull aerospike@sha256:7a56a9844788ecffa84015c9c39ae6a14f6a0e5073a12f872
 ### `aerospike:latest` - linux; amd64
 
 ```console
-$ docker pull aerospike@sha256:3206d71d79a6b418023ac435d9b79c3f825910451209351429ca4375235a17e3
+$ docker pull aerospike@sha256:d473166f84caa2ad15e89fed04da3f6b133a1bc522ca4907a9c464d5bf01d27d
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.8 MB (51844305 bytes)**  
+-	Total Size: **51.8 MB (51845164 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19ff77adff3cbe4e62a381ce1de8e29be58531e210f38f095e81c577bd17a12c`
+-	Image ID: `sha256:f4dbdcbadf81c6b87e5e4dbd70895f64550df618a892d16be3d1872259752e56`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["asd"]`
 
@@ -27,23 +27,23 @@ $ docker pull aerospike@sha256:3206d71d79a6b418023ac435d9b79c3f82591045120935142
 ADD file:1256c62f77a54c982fdb2790d682049b2ad64c8466466e846f3d33ad1ed4035d in / 
 # Wed, 26 Feb 2020 00:41:38 GMT
 CMD ["bash"]
-# Wed, 26 Feb 2020 01:25:51 GMT
-ENV AEROSPIKE_VERSION=4.8.0.5
-# Wed, 26 Feb 2020 01:25:51 GMT
-ENV AEROSPIKE_SHA256=b7082c51eee268992a55c5f0751b3de006cda857d93ed9d3e14624ca7118a1e8
-# Wed, 26 Feb 2020 01:26:10 GMT
+# Mon, 09 Mar 2020 22:20:13 GMT
+ENV AEROSPIKE_VERSION=4.8.0.6
+# Mon, 09 Mar 2020 22:20:13 GMT
+ENV AEROSPIKE_SHA256=8794e877abcc68faf3e2ccf461e3d9436343addcdccd3daba1c2e4e9154f8ef3
+# Mon, 09 Mar 2020 22:20:29 GMT
 RUN apt-get update -y   && apt-get install -y wget python lua5.2 gettext-base   && wget "https://www.aerospike.com/artifacts/aerospike-server-community/${AEROSPIKE_VERSION}/aerospike-server-community-${AEROSPIKE_VERSION}-debian9.tgz" -O aerospike-server.tgz   && echo "$AEROSPIKE_SHA256 *aerospike-server.tgz" | sha256sum -c -   && mkdir aerospike   && tar xzf aerospike-server.tgz --strip-components=1 -C aerospike   && dpkg -i aerospike/aerospike-server-*.deb   && dpkg -i aerospike/aerospike-tools-*.deb   && mkdir -p /var/log/aerospike/   && mkdir -p /var/run/aerospike/   && rm -rf aerospike-server.tgz aerospike /var/lib/apt/lists/*   && rm -rf /opt/aerospike/lib/java   && dpkg -r wget ca-certificates openssl xz-utils  && dpkg --purge wget ca-certificates openssl xz-utils  && apt-get purge -y   && apt autoremove -y
-# Wed, 26 Feb 2020 01:26:11 GMT
+# Mon, 09 Mar 2020 22:20:30 GMT
 COPY file:b2afebdf574a22640dc0687630172a267f2dc7857e8cd93254039deab3b62213 in /etc/aerospike/aerospike.template.conf 
-# Wed, 26 Feb 2020 01:26:11 GMT
+# Mon, 09 Mar 2020 22:20:30 GMT
 COPY file:688bc1b7dea55c1dc5575a99640936049823d07bac5c920bbace2369fbb27428 in /entrypoint.sh 
-# Wed, 26 Feb 2020 01:26:11 GMT
+# Mon, 09 Mar 2020 22:20:30 GMT
 VOLUME [/opt/aerospike/data]
-# Wed, 26 Feb 2020 01:26:11 GMT
+# Mon, 09 Mar 2020 22:20:30 GMT
 EXPOSE 3000 3001 3002 3003
-# Wed, 26 Feb 2020 01:26:11 GMT
+# Mon, 09 Mar 2020 22:20:30 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 26 Feb 2020 01:26:12 GMT
+# Mon, 09 Mar 2020 22:20:31 GMT
 CMD ["asd"]
 ```
 
@@ -52,15 +52,15 @@ CMD ["asd"]
 		Last Modified: Wed, 26 Feb 2020 00:47:21 GMT  
 		Size: 22.5 MB (22513365 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7fc788786cb038dcbafaff5d99e6662bb74545a7c44cf28cc7bd068f68f57b6`  
-		Last Modified: Wed, 26 Feb 2020 01:26:42 GMT  
-		Size: 29.3 MB (29328922 bytes)  
+	-	`sha256:59b5c68ac2bed929971899a5cd199e795e8d55c91284b8947d0b67b7670d477b`  
+		Last Modified: Mon, 09 Mar 2020 22:21:47 GMT  
+		Size: 29.3 MB (29329784 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:96eef7ff4d848152ffdb5588ddfb58040e607554568dab40c2ecd8ec30f5743b`  
-		Last Modified: Wed, 26 Feb 2020 01:26:36 GMT  
-		Size: 1.1 KB (1135 bytes)  
+	-	`sha256:e0609a1262f16e085038d62561b1c5c9edb28a75bbd53535bfae158990a25337`  
+		Last Modified: Mon, 09 Mar 2020 22:21:25 GMT  
+		Size: 1.1 KB (1131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad93b59d4a01fb6ee0d5d109d89fb8e379283c38e257a7c5653d4cc22f0aa8b9`  
-		Last Modified: Wed, 26 Feb 2020 01:26:37 GMT  
-		Size: 883.0 B  
+	-	`sha256:41e8fabb1be83bac1a46fc9462511cbf0640873906c1c921fad496b3361854d9`  
+		Last Modified: Mon, 09 Mar 2020 22:21:25 GMT  
+		Size: 884.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
