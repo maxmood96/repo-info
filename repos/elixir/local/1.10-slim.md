@@ -1,9 +1,9 @@
-# `elixir:1.10.1-slim`
+# `elixir:1.10.2-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1d0120372c4de184e589e4f1ad58b0224aecc44544bdeb5ce629685833b491b7`
-- Created: `2020-02-29T04:32:14.469157985Z`
+- Image ID: `sha256:25898ea631b5c88db0d8c130c7d73d275fd876aaa27fc6d73a92810d53668610`
+- Created: `2020-03-06T23:27:17.835717909Z`
 - Virtual Size: ~ 271.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `OTP_VERSION=22.2.8`
-  - `ELIXIR_VERSION=v1.10.1`
+  - `ELIXIR_VERSION=v1.10.2`
   - `LANG=C.UTF-8`
 - Labels:
   - `org.opencontainers.image.version=22.2.8`
