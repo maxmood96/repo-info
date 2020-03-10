@@ -3782,15 +3782,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.29.0-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.29.0-2ubuntu0.1.dsc' sqlite3_3.29.0-2ubuntu0.1.dsc 2497 SHA256:301390f6cacf8b9c36573634ce67176510ae846d10053f5a1a304685a98e0a44
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.29.0.orig-www.tar.xz' sqlite3_3.29.0.orig-www.tar.xz 5653816 SHA256:879d852db191f0a9ce0c65cc701e0a1eb6ed232eb112deb64c4288f17ded3a29
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.29.0.orig.tar.xz' sqlite3_3.29.0.orig.tar.xz 7004564 SHA256:b0c904b6b04cd377f949e07561df6068614d1eb66a6abb99157750638f9e69c2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.29.0-2ubuntu0.1.debian.tar.xz' sqlite3_3.29.0-2ubuntu0.1.debian.tar.xz 20912 SHA256:bcbba7668811d7bf8ce078a3c3f577d35df76d916f841830c4e13b639e2984ae
-```
 
 ### `dpkg` source package: `subversion=1.10.6-1`
 
@@ -4023,14 +4017,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.34-0.1ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.34-0.1ubuntu2.2.dsc' util-linux_2.34-0.1ubuntu2.2.dsc 4067 SHA256:22990c9f6ddb0c40940e6eb41e94e38319ca18418fb6386983fce7edf72e5391
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.34.orig.tar.xz' util-linux_2.34.orig.tar.xz 4974812 SHA256:743f9d0c7252b6db246b659c1e1ce0bd45d8d4508b4dfa427bbb4a3e9b9f62b5
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.34-0.1ubuntu2.2.debian.tar.xz' util-linux_2.34-0.1ubuntu2.2.debian.tar.xz 87340 SHA256:dac35580cf8c8778e81dc67ab9e107d8aba5112f13af13247882abb6e64b1885
-```
 
 ### `dpkg` source package: `wget=1.20.3-1ubuntu1`
 

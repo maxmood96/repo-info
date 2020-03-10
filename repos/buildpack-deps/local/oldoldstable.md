@@ -3150,20 +3150,13 @@ Licenses: (parsed from: `/usr/share/doc/libvpx1/copyright`)
 - `Artistic`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libvpx=1.3.0-3+deb8u2
-'http://security.debian.org/debian-security/pool/updates/main/libv/libvpx/libvpx_1.3.0-3+deb8u2.dsc' libvpx_1.3.0-3+deb8u2.dsc 2066 SHA256:d06e571f4bc90d9d41145e524ddcaf607fcf290c15ff14b079ac64b13ceb0969
-'http://security.debian.org/debian-security/pool/updates/main/libv/libvpx/libvpx_1.3.0.orig.tar.bz2' libvpx_1.3.0.orig.tar.bz2 2077846 SHA256:bd5af97b74d53a111b48852dfcd1791b2c758f1fe972833b363fe34a83a7750a
-'http://security.debian.org/debian-security/pool/updates/main/libv/libvpx/libvpx_1.3.0-3+deb8u2.debian.tar.xz' libvpx_1.3.0-3+deb8u2.debian.tar.xz 12672 SHA256:78e837947e540bb1e35c870ced7757ead5e41e6afb57bd83e9bed9cfb349657e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libvpx/1.3.0-3+deb8u2/
 
-- https://sources.debian.net/src/libvpx/1.3.0-3+deb8u2/ (for browsing the source)
-- https://sources.debian.net/src/libvpx/1.3.0-3+deb8u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libvpx/1.3.0-3+deb8u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libwebp=0.4.1-1.2`
 
