@@ -1,10 +1,10 @@
-# `openjdk:15-ea-12-jdk-oraclelinux7`
+# `openjdk:15-ea-13-jdk-oraclelinux7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:37825e968c76b79581e4b3146108246bf017368b8addc641fe718e7ac5c3da8a`
-- Created: `2020-02-29T03:18:42.33774269Z`
-- Virtual Size: ~ 493.87 Mb  
+- Image ID: `sha256:8016d639fff6a7cca58dfc83c2e6928dfd649eea4fcea6be1295abcbc0fe936e`
+- Created: `2020-03-10T02:38:44.630283526Z`
+- Virtual Size: ~ 493.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,9 +12,9 @@
   - `PATH=/usr/java/openjdk-15/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.UTF-8`
   - `JAVA_HOME=/usr/java/openjdk-15`
-  - `JAVA_VERSION=15-ea+12`
-  - `JAVA_URL=https://download.java.net/java/early_access/jdk15/12/GPL/openjdk-15-ea+12_linux-x64_bin.tar.gz`
-  - `JAVA_SHA256=ff430463b92de38a39224ada330253f9d6381621d99a0822a40e6c6b81d68bb1`
+  - `JAVA_VERSION=15-ea+13`
+  - `JAVA_URL=https://download.java.net/java/early_access/jdk15/13/GPL/openjdk-15-ea+13_linux-x64_bin.tar.gz`
+  - `JAVA_SHA256=4c3132ba41129cec900517c684fc14c64dc82dd46b673c3ef4a6ef3272938b1f`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -51,15 +51,15 @@ $ yumdownloader --quiet --source --urls bash-4.2.46-33.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/bash-4.2.46-33.el7.src.rpm
 ```
 
-### `rpm` package: `binutils-2.27-41.base.0.5.el7_7.1.x86_64`
+### `rpm` package: `binutils-2.27-41.base.0.7.el7_7.2.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls binutils-2.27-41.base.0.5.el7_7.1
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/binutils-2.27-41.base.0.5.el7_7.1.src.rpm
+$ yumdownloader --quiet --source --urls binutils-2.27-41.base.0.7.el7_7.2
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/binutils-2.27-41.base.0.7.el7_7.2.src.rpm
 ```
 
 ### `rpm` package: `bzip2-libs-1.0.6-13.el7.x86_64`
@@ -117,15 +117,15 @@ $ yumdownloader --quiet --source --urls cpio-2.11-27.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/cpio-2.11-27.el7.src.rpm
 ```
 
-### `rpm` package: `curl-7.29.0-54.0.1.el7_7.1.x86_64`
+### `rpm` package: `curl-7.29.0-54.0.5.el7_7.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls curl-7.29.0-54.0.1.el7_7.1
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/curl-7.29.0-54.0.1.el7_7.1.src.rpm
+$ yumdownloader --quiet --source --urls curl-7.29.0-54.0.5.el7_7.2
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/curl-7.29.0-54.0.5.el7_7.2.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.26-23.el7.x86_64`
@@ -497,15 +497,15 @@ $ yumdownloader --quiet --source --urls libcom_err-1.42.9-16.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/e2fsprogs-1.42.9-16.el7.src.rpm
 ```
 
-### `rpm` package: `libcurl-7.29.0-54.0.1.el7_7.1.x86_64`
+### `rpm` package: `libcurl-7.29.0-54.0.5.el7_7.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libcurl-7.29.0-54.0.1.el7_7.1
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/curl-7.29.0-54.0.1.el7_7.1.src.rpm
+$ yumdownloader --quiet --source --urls libcurl-7.29.0-54.0.5.el7_7.2
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/curl-7.29.0-54.0.5.el7_7.2.src.rpm
 ```
 
 ### `rpm` package: `libdb-5.3.21-25.el7.x86_64`
