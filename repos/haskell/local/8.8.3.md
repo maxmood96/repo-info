@@ -1,16 +1,15 @@
-# `haskell:8.8.1`
+# `haskell:8.8.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e3a1d23ed99599337abcafa33649354ea16fd53b68fe4867337c9938e18e5571`
-- Created: `2020-02-26T02:07:45.44535846Z`
+- Image ID: `sha256:597e930f7b603688d193fe9fc5998e49201b0ed6ebd1cd97fa35a601e149f92b`
+- Created: `2020-03-06T23:31:49.508277153Z`
 - Virtual Size: ~ 1.47 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["ghci"]`
 - Environment:
-  - `PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/3.0/bin:/opt/ghc/8.8.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `LANG=C.UTF-8`
+  - `PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/3.0/bin:/opt/ghc/8.8.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -806,23 +805,23 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.8.3-14/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.8.3-14/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ghc-8.8.1=8.8.1-12~deb9`
+### `dpkg` source package: `ghc-8.8.3=8.8.3-17~deb9`
 
 Binary Packages:
 
-- `ghc-8.8.1=8.8.1-12~deb9`
+- `ghc-8.8.3=8.8.3-17~deb9`
 
-Licenses: (parsed from: `/usr/share/doc/ghc-8.8.1/copyright`)
+Licenses: (parsed from: `/usr/share/doc/ghc-8.8.3/copyright`)
 
 - `BSD-3-Clause`
 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ghc-8.8.1=8.8.1-12~deb9
-'http://downloads.haskell.org/debian/pool/main/g/ghc-8.8.1/ghc-8.8.1_8.8.1-12~deb9.dsc' ghc-8.8.1_8.8.1-12~deb9.dsc 2104 SHA256:7febe2e7a01f175a41154c9f8035ae4698894acf6e4ff5a6b76395a19e3811fe
-'http://downloads.haskell.org/debian/pool/main/g/ghc-8.8.1/ghc-8.8.1_8.8.1.orig.tar.xz' ghc-8.8.1_8.8.1.orig.tar.xz 19233112 SHA256:0c264362ddc0703297b6dcc7d0a47eab0bea4c700cee023fcd11dc10365e43e8
-'http://downloads.haskell.org/debian/pool/main/g/ghc-8.8.1/ghc-8.8.1_8.8.1-12~deb9.debian.tar.xz' ghc-8.8.1_8.8.1-12~deb9.debian.tar.xz 6492 SHA256:c23847afa200e2075f5d89c7728db0f76b85ac258e103897dee526e17b2223ff
+$ apt-get source -qq --print-uris ghc-8.8.3=8.8.3-17~deb9
+'http://downloads.haskell.org/debian/pool/main/g/ghc-8.8.3/ghc-8.8.3_8.8.3-17~deb9.dsc' ghc-8.8.3_8.8.3-17~deb9.dsc 2104 SHA256:29457be601048286624d33a5415aeb809099e6e8ffa8f2fa18fc69eb6a774b2a
+'http://downloads.haskell.org/debian/pool/main/g/ghc-8.8.3/ghc-8.8.3_8.8.3.orig.tar.xz' ghc-8.8.3_8.8.3.orig.tar.xz 19255396 SHA256:433d9d96be9dea64341f01a36bb1fc86cd3360a987e4dcea8ab22ed1ec16dca4
+'http://downloads.haskell.org/debian/pool/main/g/ghc-8.8.3/ghc-8.8.3_8.8.3-17~deb9.debian.tar.xz' ghc-8.8.3_8.8.3-17~deb9.debian.tar.xz 7560 SHA256:dd932a8a803e547922697440824ce06848732094c76588bf55ee3ad15f25be8d
 ```
 
 ### `dpkg` source package: `git=1:2.11.0-3+deb9u5`
@@ -2018,6 +2017,7 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libncurses5:amd64=6.0+20161126-1+deb9u2`
+- `libncurses5-dev:amd64=6.0+20161126-1+deb9u2`
 - `libncursesw5:amd64=6.0+20161126-1+deb9u2`
 - `libtinfo-dev:amd64=6.0+20161126-1+deb9u2`
 - `libtinfo5:amd64=6.0+20161126-1+deb9u2`
