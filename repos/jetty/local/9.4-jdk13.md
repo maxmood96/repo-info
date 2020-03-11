@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ca606e4eb9ae6bc832d6cc097008ad833d0921dd411c7d05fc083bb535e6bd52`
-- Created: `2020-02-28T22:28:59.118886279Z`
+- Image ID: `sha256:cc7100647695e3917da6a103cd4852e50c22f3f3fdc4ea6a51f9c1dfdd8daaf5`
+- Created: `2020-03-10T22:59:00.55930753Z`
 - Virtual Size: ~ 501.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -58,15 +58,15 @@ $ yumdownloader --quiet --source --urls bash-4.2.46-33.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/bash-4.2.46-33.el7.src.rpm
 ```
 
-### `rpm` package: `binutils-2.27-41.base.0.5.el7_7.1.x86_64`
+### `rpm` package: `binutils-2.27-41.base.0.7.el7_7.2.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls binutils-2.27-41.base.0.5.el7_7.1
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/binutils-2.27-41.base.0.5.el7_7.1.src.rpm
+$ yumdownloader --quiet --source --urls binutils-2.27-41.base.0.7.el7_7.2
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/binutils-2.27-41.base.0.7.el7_7.2.src.rpm
 ```
 
 ### `rpm` package: `bzip2-libs-1.0.6-13.el7.x86_64`
@@ -124,15 +124,15 @@ $ yumdownloader --quiet --source --urls cpio-2.11-27.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/cpio-2.11-27.el7.src.rpm
 ```
 
-### `rpm` package: `curl-7.29.0-54.0.1.el7_7.1.x86_64`
+### `rpm` package: `curl-7.29.0-54.0.5.el7_7.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls curl-7.29.0-54.0.1.el7_7.1
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/curl-7.29.0-54.0.1.el7_7.1.src.rpm
+$ yumdownloader --quiet --source --urls curl-7.29.0-54.0.5.el7_7.2
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/curl-7.29.0-54.0.5.el7_7.2.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.26-23.el7.x86_64`
@@ -504,15 +504,15 @@ $ yumdownloader --quiet --source --urls libcom_err-1.42.9-16.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/e2fsprogs-1.42.9-16.el7.src.rpm
 ```
 
-### `rpm` package: `libcurl-7.29.0-54.0.1.el7_7.1.x86_64`
+### `rpm` package: `libcurl-7.29.0-54.0.5.el7_7.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libcurl-7.29.0-54.0.1.el7_7.1
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/curl-7.29.0-54.0.1.el7_7.1.src.rpm
+$ yumdownloader --quiet --source --urls libcurl-7.29.0-54.0.5.el7_7.2
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/curl-7.29.0-54.0.5.el7_7.2.src.rpm
 ```
 
 ### `rpm` package: `libdb-5.3.21-25.el7.x86_64`
