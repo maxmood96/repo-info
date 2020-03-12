@@ -1,20 +1,20 @@
-# `docker:19.03.7-dind-rootless`
+# `docker:19.03.8-dind-rootless`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c88504cd9a3f192922c817319508a9c5f9f5b506682835c320873b17dd12deee`
-- Created: `2020-03-04T17:22:28.674736094Z`
-- Virtual Size: ~ 304.65 Mb  
+- Image ID: `sha256:131e19ccffdf6245ad57a0ca98e0abd6e6cc5eb4495fe9358f90e1c9837de9c5`
+- Created: `2020-03-11T21:20:09.290147931Z`
+- Virtual Size: ~ 307.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_CHANNEL=stable`
-  - `DOCKER_VERSION=19.03.7`
+  - `DOCKER_VERSION=19.03.8`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=37498f009d8bf25fbb6199e8ccd34bed84f2874b`
-  - `ROOTLESSKIT_VERSION=0.7.1`
+  - `ROOTLESSKIT_VERSION=0.9.1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -514,16 +514,16 @@ GPL
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.24-r0 description:
+musl-1.1.24-r1 description:
 the musl c library (libc) implementation
 
-musl-1.1.24-r0 webpage:
-http://www.musl-libc.org/
+musl-1.1.24-r1 webpage:
+https://musl.libc.org/
 
-musl-1.1.24-r0 installed size:
-610304
+musl-1.1.24-r1 installed size:
+614400
 
-musl-1.1.24-r0 license:
+musl-1.1.24-r1 license:
 MIT
 
 ```
