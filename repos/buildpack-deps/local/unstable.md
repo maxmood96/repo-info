@@ -1159,20 +1159,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-10-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-10=10-20200222-1
-'http://deb.debian.org/debian/pool/main/g/gcc-10/gcc-10_10-20200222-1.dsc' gcc-10_10-20200222-1.dsc 27973 SHA256:2bc097210263b7fc706933aaad5084fc3078fd0aca1bdd863db34a2d8796b4bf
-'http://deb.debian.org/debian/pool/main/g/gcc-10/gcc-10_10-20200222.orig.tar.gz' gcc-10_10-20200222.orig.tar.gz 75848571 SHA256:35647e1a11870a542dca6c8b1cdd84a91f6fd6059d9fe55286d1b061c055b790
-'http://deb.debian.org/debian/pool/main/g/gcc-10/gcc-10_10-20200222-1.debian.tar.xz' gcc-10_10-20200222-1.debian.tar.xz 556632 SHA256:fb0399fee90b3e31e6debbac64fb7e21ebf4ab9d5e9e59a1ab465a507dd5430d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-10/10-20200222-1/
 
-- https://sources.debian.net/src/gcc-10/10-20200222-1/ (for browsing the source)
-- https://sources.debian.net/src/gcc-10/10-20200222-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-10/10-20200222-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-9=9.2.1-30`
 
@@ -1196,20 +1189,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp-9/copyright`, `/usr/share/doc/g++-9/
 - `LGPL`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-9=9.2.1-30
-'http://deb.debian.org/debian/pool/main/g/gcc-9/gcc-9_9.2.1-30.dsc' gcc-9_9.2.1-30.dsc 22431 SHA256:7de087464ba3d24e69c016b458c832bae35ac0aadbb08917f75e01968f24d61d
-'http://deb.debian.org/debian/pool/main/g/gcc-9/gcc-9_9.2.1.orig.tar.gz' gcc-9_9.2.1.orig.tar.gz 92887421 SHA256:f259d1c6344f5d89fee3a182d7a211925f507d477d3659d53ac64c76cea8bb11
-'http://deb.debian.org/debian/pool/main/g/gcc-9/gcc-9_9.2.1-30.debian.tar.xz' gcc-9_9.2.1-30.debian.tar.xz 988772 SHA256:7e442ef60948e6738bacdeb8941d7ff8aa70c83bc69cd427c89bbea745ef357a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-9/9.2.1-30/
 
-- https://sources.debian.net/src/gcc-9/9.2.1-30/ (for browsing the source)
-- https://sources.debian.net/src/gcc-9/9.2.1-30/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-9/9.2.1-30/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.185.1`
 
@@ -1354,20 +1340,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.62.5-1
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.62.5-1.dsc' glib2.0_2.62.5-1.dsc 3444 SHA256:152bcee5717e85c23b056b110f0d37338d02639c06327951dd54e8144779acc4
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.62.5.orig.tar.xz' glib2.0_2.62.5.orig.tar.xz 4702492 SHA256:b8d1cdafa46658b63d7512efbe2cd21bd36cd7be83140e44930c47b79f82452e
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.62.5-1.debian.tar.xz' glib2.0_2.62.5-1.debian.tar.xz 92412 SHA256:6ea8bfecc89dd4bfe6bfc1c35f93396d9a352be40fab586d1ab374360cc269c9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.62.5-1/
 
-- https://sources.debian.net/src/glib2.0/2.62.5-1/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.62.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.62.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.29-10`
 
@@ -1714,20 +1693,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris icu=63.2-2
-'http://deb.debian.org/debian/pool/main/i/icu/icu_63.2-2.dsc' icu_63.2-2.dsc 1965 SHA256:b11e7fb65cce3bf22e7549c8291a5e058171a8eaf9e37ca8c30b45971e4ad97f
-'http://deb.debian.org/debian/pool/main/i/icu/icu_63.2.orig.tar.xz' icu_63.2.orig.tar.xz 13630108 SHA256:ab79c7bf11eacc0e3368b29ebba5cff67f41860a522f6a3957377353d5bc8d71
-'http://deb.debian.org/debian/pool/main/i/icu/icu_63.2-2.debian.tar.xz' icu_63.2-2.debian.tar.xz 34300 SHA256:2a9fb8ab29527e985b24dc7b15dd116be0b4a2edd9f106dca77c6f75b9baab7d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/icu/63.2-2/
 
-- https://sources.debian.net/src/icu/63.2-2/ (for browsing the source)
-- https://sources.debian.net/src/icu/63.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/icu/63.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ilmbase=2.3.0-6`
 
@@ -2906,20 +2878,13 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.4.2-2
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.4.2-2.dsc' libseccomp_2.4.2-2.dsc 2413 SHA256:cb9c0bc4e318250850ec3a13bff5fe2494fd3e46bedeb453bdb0bb13c69de08b
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.4.2.orig.tar.gz' libseccomp_2.4.2.orig.tar.gz 601014 SHA256:b54f27b53884caacc932e75e6b44304ac83586e2abe7a83eca6daecc5440585b
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.4.2-2.debian.tar.xz' libseccomp_2.4.2-2.debian.tar.xz 7736 SHA256:7bbc0a96fbb8123ce11a946547d6479f481367b5a1342f2ad2a06f8f80de833f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libseccomp/2.4.2-2/
 
-- https://sources.debian.net/src/libseccomp/2.4.2-2/ (for browsing the source)
-- https://sources.debian.net/src/libseccomp/2.4.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libseccomp/2.4.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libselinux=3.0-1`
 
@@ -3803,21 +3768,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=5.2.2-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_5.2.2-1.dsc' mercurial_5.2.2-1.dsc 2771 SHA256:317bdac2a46617dedaaca4104f4c753d9292537aa956f6d07fee10ec69af11d9
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_5.2.2.orig.tar.gz' mercurial_5.2.2.orig.tar.gz 7333065 SHA256:ffc5ff47488c7b5dae6ead3d99f08ef469500d6567592a25311838320106c03b
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_5.2.2.orig.tar.gz.asc' mercurial_5.2.2.orig.tar.gz.asc 833 SHA256:eb0b593430b961624d37df6328846df217c25a99d4f5c2ba92a22ac6661e4417
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_5.2.2-1.debian.tar.xz' mercurial_5.2.2-1.debian.tar.xz 59492 SHA256:5bc0d3182531409ddb59229736c06875435875f8edd76ceeb2b43d647d79c372
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/5.2.2-1/
 
-- https://sources.debian.net/src/mercurial/5.2.2-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/5.2.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/5.2.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mime-support=3.64`
 
@@ -4768,20 +4725,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.7-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.7=3.7.6-1
-'http://deb.debian.org/debian/pool/main/p/python3.7/python3.7_3.7.6-1.dsc' python3.7_3.7.6-1.dsc 3419 SHA256:876813147196de00c6a170f7dfb1a64f1b15e89762cd5b24e7b65f086340ee70
-'http://deb.debian.org/debian/pool/main/p/python3.7/python3.7_3.7.6.orig.tar.xz' python3.7_3.7.6.orig.tar.xz 17246360 SHA256:55a2cce72049f0794e9a11a84862e9039af9183603b78bc60d89539f82cf533f
-'http://deb.debian.org/debian/pool/main/p/python3.7/python3.7_3.7.6-1.debian.tar.xz' python3.7_3.7.6-1.debian.tar.xz 210836 SHA256:79d6a096101ac426a15a8d58971455715170d5ccc291a70b3d5b4700b203395f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.7/3.7.6-1/
 
-- https://sources.debian.net/src/python3.7/3.7.6-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.7/3.7.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.7/3.7.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.0-4`
 
@@ -5037,20 +4987,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=244.3-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_244.3-1.dsc' systemd_244.3-1.dsc 5021 SHA256:d7d85eec660b8ef508ddeaeb74352d31dd1fc8d471c547d9cb5d0fad422e3cfd
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_244.3.orig.tar.gz' systemd_244.3.orig.tar.gz 8484735 SHA256:e6b463733da5eb37075352a64112d030b8612935a54e5b3468279a4f15a4cec4
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_244.3-1.debian.tar.xz' systemd_244.3-1.debian.tar.xz 146912 SHA256:d2626042bf41acaf5a9c83dfaa4792e3cf89722e267356b4e2a8f48fc09f1475
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/244.3-1/
 
-- https://sources.debian.net/src/systemd/244.3-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/244.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/244.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.96-2.1`
 
