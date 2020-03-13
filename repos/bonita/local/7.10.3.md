@@ -1,19 +1,19 @@
-# `bonita:7.10.1`
+# `bonita:7.10.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e70a75148dcd05612ebad832452f6ad148c0bb48d11518dec2948c0c27952f98`
-- Created: `2020-02-21T23:07:29.482292968Z`
-- Virtual Size: ~ 452.17 Mb  
+- Image ID: `sha256:838dd4c3162e4a1352a5cf3f7e3b52398f87580bfe0211c801fd4dfd1cc6efb2`
+- Created: `2020-03-11T22:39:16.079641528Z`
+- Virtual Size: ~ 452.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/files/startup.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `BONITA_VERSION=7.10.1`
-  - `BONITA_SHA256=29d79e96aa5ab094d758aeacc7e8d435327fe3d8b651554d1077bae03b14f585`
+  - `BONITA_VERSION=7.10.3`
+  - `BONITA_SHA256=e6789736e97f10c9ca0ccbbe15f6977708edaed724ec81b69f5d66ce5dbee850`
   - `BASE_URL=https://release.ow2.org/bonita`
-  - `BONITA_URL=https://release.ow2.org/bonita/BonitaCommunity-7.10.1.zip`
+  - `BONITA_URL=https://release.ow2.org/bonita/BonitaCommunity-7.10.3.zip`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -743,14 +743,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8.3.0-6ubuntu1~18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.04.1.dsc' gcc-8_8.3.0-6ubuntu1~18.04.1.dsc 35751 SHA256:6d73229917cfc03f826c967f61a065d1f8faba2faa20cdee8c130b3b97554bbc
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0.orig.tar.gz' gcc-8_8.3.0.orig.tar.gz 85259886 SHA256:561c1bc647ade738c14efe5a298fc0cee2e2efd3dec9fefb66b724dbd50437e6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-6ubuntu1~18.04.1.diff.gz' gcc-8_8.3.0-6ubuntu1~18.04.1.diff.gz 566564 SHA256:a3b1c9a26470622c308fa6f9194b87cc806fa4c7b58a63889c66553ae85719d7
-```
 
 ### `dpkg` source package: `glibc=2.27-3ubuntu1`
 
@@ -2483,15 +2478,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.22.0-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0-1ubuntu0.2.dsc' sqlite3_3.22.0-1ubuntu0.2.dsc 2496 SHA256:9c6d8f8a019956a7cdba24564a9bb34a9afd681efc1ba377e6676a4320160a37
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0.orig-www.tar.xz' sqlite3_3.22.0.orig-www.tar.xz 3564688 SHA256:a61a14d6f457bb31ca32f4844398140050597fe4403dc0ee19576111f407e231
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0.orig.tar.xz' sqlite3_3.22.0.orig.tar.xz 6019648 SHA256:f973ba63b5a1ea1d72e80c585bfb945e71d3f8b74fbecccdf345a84f8c91e5d1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0-1ubuntu0.2.debian.tar.xz' sqlite3_3.22.0-1ubuntu0.2.debian.tar.xz 38128 SHA256:1695ce72e9415445e3f6399b8a89a0f0df59982527dd9b7d54a892a47582fe14
-```
 
 ### `dpkg` source package: `systemd=237-3ubuntu10.39`
 
