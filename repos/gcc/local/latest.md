@@ -1,9 +1,9 @@
-# `gcc:9.2.0`
+# `gcc:9.3.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8ecca286b8b800c811ffaf44b90e17453a4c248e437fdb23ce8f5b2516510e72`
-- Created: `2020-02-27T02:28:04.943282648Z`
+- Image ID: `sha256:d81d27c4c8c4d1d0dfa965926212d738bd8fbc116f99a1cf04a97f945a27f237`
+- Created: `2020-03-13T22:48:24.615211988Z`
 - Virtual Size: ~ 1.14 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06`
   - `GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		https://mirrors-usa.go-parts.com/gcc/releases 		https://mirrors.concertpass.com/gcc/releases 		http://www.netgull.com/gcc/releases`
-  - `GCC_VERSION=9.2.0`
+  - `GCC_VERSION=9.3.0`
 
 ## `dpkg` (`.deb`-based packages)
 
