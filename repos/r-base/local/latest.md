@@ -947,20 +947,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-foreign/copyright`)
 - `GPL`
 - `GPL `
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris foreign=0.8.75-1
-'http://deb.debian.org/debian/pool/main/f/foreign/foreign_0.8.75-1.dsc' foreign_0.8.75-1.dsc 1832 SHA256:433eecf776a3163d1af9686a06f0f754e6223aaf37cc89deea06aa21ab28c641
-'http://deb.debian.org/debian/pool/main/f/foreign/foreign_0.8.75.orig.tar.gz' foreign_0.8.75.orig.tar.gz 346249 SHA256:742b3c2d025783911d0d06194929907d5452d0a050ace64fa04b661d4088953c
-'http://deb.debian.org/debian/pool/main/f/foreign/foreign_0.8.75-1.debian.tar.xz' foreign_0.8.75-1.debian.tar.xz 4188 SHA256:598d64d74dfbdafa606e3d3120ee1788e0f916b7a4bedc853457cad6cddd41dd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/foreign/0.8.75-1/
 
-- https://sources.debian.net/src/foreign/0.8.75-1/ (for browsing the source)
-- https://sources.debian.net/src/foreign/0.8.75-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/foreign/0.8.75-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `freetype=2.10.1-2`
 
@@ -1060,20 +1053,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-10-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-10=10-20200222-1
-'http://deb.debian.org/debian/pool/main/g/gcc-10/gcc-10_10-20200222-1.dsc' gcc-10_10-20200222-1.dsc 27973 SHA256:2bc097210263b7fc706933aaad5084fc3078fd0aca1bdd863db34a2d8796b4bf
-'http://deb.debian.org/debian/pool/main/g/gcc-10/gcc-10_10-20200222.orig.tar.gz' gcc-10_10-20200222.orig.tar.gz 75848571 SHA256:35647e1a11870a542dca6c8b1cdd84a91f6fd6059d9fe55286d1b061c055b790
-'http://deb.debian.org/debian/pool/main/g/gcc-10/gcc-10_10-20200222-1.debian.tar.xz' gcc-10_10-20200222-1.debian.tar.xz 556632 SHA256:fb0399fee90b3e31e6debbac64fb7e21ebf4ab9d5e9e59a1ab465a507dd5430d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-10/10-20200222-1/
 
-- https://sources.debian.net/src/gcc-10/10-20200222-1/ (for browsing the source)
-- https://sources.debian.net/src/gcc-10/10-20200222-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-10/10-20200222-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-9=9.2.1-30`
 
@@ -1099,20 +1085,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp-9/copyright`, `/usr/share/doc/g++-9/
 - `LGPL`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-9=9.2.1-30
-'http://deb.debian.org/debian/pool/main/g/gcc-9/gcc-9_9.2.1-30.dsc' gcc-9_9.2.1-30.dsc 22431 SHA256:7de087464ba3d24e69c016b458c832bae35ac0aadbb08917f75e01968f24d61d
-'http://deb.debian.org/debian/pool/main/g/gcc-9/gcc-9_9.2.1.orig.tar.gz' gcc-9_9.2.1.orig.tar.gz 92887421 SHA256:f259d1c6344f5d89fee3a182d7a211925f507d477d3659d53ac64c76cea8bb11
-'http://deb.debian.org/debian/pool/main/g/gcc-9/gcc-9_9.2.1-30.debian.tar.xz' gcc-9_9.2.1-30.debian.tar.xz 988772 SHA256:7e442ef60948e6738bacdeb8941d7ff8aa70c83bc69cd427c89bbea745ef357a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-9/9.2.1-30/
 
-- https://sources.debian.net/src/gcc-9/9.2.1-30/ (for browsing the source)
-- https://sources.debian.net/src/gcc-9/9.2.1-30/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-9/9.2.1-30/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.185.1`
 
@@ -3113,20 +3092,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-nlme/copyright`)
 - `GPL`
 - `GPL `
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nlme=3.1.144-1
-'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.144-1.dsc' nlme_3.1.144-1.dsc 1837 SHA256:54fc9436e2e7fb4a4c15c22275fdf39925b8c996e7fc98ba2aa00186099f1fcf
-'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.144.orig.tar.gz' nlme_3.1.144.orig.tar.gz 778660 SHA256:e91cd15dec019577e9b7b454f551d820165bc9dbc91237a2e643e0e646c11ebf
-'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.144-1.debian.tar.xz' nlme_3.1.144-1.debian.tar.xz 7068 SHA256:57d4459bc26bf999d9eca8721ed439889cc2b44a802d9222fee66b89bf356917
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nlme/3.1.144-1/
 
-- https://sources.debian.net/src/nlme/3.1.144-1/ (for browsing the source)
-- https://sources.debian.net/src/nlme/3.1.144-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nlme/3.1.144-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.49+dfsg-1`
 
@@ -3139,20 +3111,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.49+dfsg-1
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.49+dfsg-1.dsc' openldap_2.4.49+dfsg-1.dsc 3021 SHA256:7de1a33e64558670082c02565c3cabf5d8e16f20b6bd621742276ad0865a92b8
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.49+dfsg.orig.tar.gz' openldap_2.4.49+dfsg.orig.tar.gz 4844726 SHA256:240022395b438f327aa860a631c1d4eef9b17e63ec8965d3aca2aa983e6d81e6
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.49+dfsg-1.debian.tar.xz' openldap_2.4.49+dfsg-1.debian.tar.xz 166556 SHA256:28a6a0c853b8b934958121ead4c62d6ea50091775c389b5b4f1bb78f08d7d74a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openldap/2.4.49+dfsg-1/
 
-- https://sources.debian.net/src/openldap/2.4.49+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.4.49+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.4.49+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.1d-2`
 
