@@ -1,9 +1,9 @@
-# `swift:5.1.4-slim`
+# `swift:5.1.5-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:693acfa687dab8e0e2717d7ff92157f0247e7f44b7640314d372a68ed9a76433`
-- Created: `2020-02-22T00:07:55.296284539Z`
+- Image ID: `sha256:e14bba190fe7dc3af7987aeef1281764929e3d31d5d18a9e2b29e256d1062359`
+- Created: `2020-03-13T01:31:06.056977862Z`
 - Virtual Size: ~ 205.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561`
   - `SWIFT_PLATFORM=ubuntu18.04`
-  - `SWIFT_BRANCH=swift-5.1.4-release`
-  - `SWIFT_VERSION=swift-5.1.4-RELEASE`
+  - `SWIFT_BRANCH=swift-5.1.5-release`
+  - `SWIFT_VERSION=swift-5.1.5-RELEASE`
   - `SWIFT_WEBROOT=https://swift.org/builds/`
 - Labels:
   - `Description=Docker Container for the Swift programming language`

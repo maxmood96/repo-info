@@ -1,9 +1,9 @@
-# `swift:5.1.4-xenial`
+# `swift:5.1.5-xenial`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a625c0d64a949ae1fa41b624f4bef687705e29cc26de3c89bf544f80baa6864e`
-- Created: `2020-02-22T00:06:26.466563157Z`
+- Image ID: `sha256:69ff652aea089ceee0cc1940f36888585e955c15faf2a7b25dc71046f30ddb14`
+- Created: `2020-03-13T01:29:55.578675028Z`
 - Virtual Size: ~ 1.51 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561`
   - `SWIFT_PLATFORM=ubuntu16.04`
-  - `SWIFT_BRANCH=swift-5.1.4-release`
-  - `SWIFT_VERSION=swift-5.1.4-RELEASE`
+  - `SWIFT_BRANCH=swift-5.1.5-release`
+  - `SWIFT_VERSION=swift-5.1.5-RELEASE`
   - `SWIFT_WEBROOT=https://swift.org/builds/`
 - Labels:
   - `Description=Docker Container for the Swift programming language`
@@ -2405,19 +2405,24 @@ $ apt-get source -qq --print-uris rename=0.20-4
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rename/rename_0.20-4.debian.tar.xz' rename_0.20-4.debian.tar.xz 1952 SHA256:90c832ea5170f50b3f1be82957f3a6a1b7d12327fd0f9f0bc3e570669314442a
 ```
 
-### `dpkg` source package: `rsync=3.1.1-3ubuntu1.2`
+### `dpkg` source package: `rsync=3.1.1-3ubuntu1.3`
 
 Binary Packages:
 
-- `rsync=3.1.1-3ubuntu1.2`
+- `rsync=3.1.1-3ubuntu1.3`
 
 Licenses: (parsed from: `/usr/share/doc/rsync/copyright`)
 
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris rsync=3.1.1-3ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.1.1-3ubuntu1.3.dsc' rsync_3.1.1-3ubuntu1.3.dsc 1631 SHA256:59c2b647b683040433fc85c545f8cb7f5140fad492a228992f1a30adc49ee907
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.1.1.orig.tar.gz' rsync_3.1.1.orig.tar.gz 890124 SHA256:7de4364fcf5fe42f3bdb514417f1c40d10bbca896abe7e7f2c581c6ea08a2621
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.1.1-3ubuntu1.3.debian.tar.xz' rsync_3.1.1-3ubuntu1.3.debian.tar.xz 28668 SHA256:3432a9323a08f8a2cee604c62fb7a1ffd0e5b8051b675770bea53656d8011243
+```
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d-1ubuntu0.1`
 
@@ -2533,11 +2538,11 @@ $ apt-get source -qq --print-uris shared-mime-info=1.5-2ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shared-mime-info/shared-mime-info_1.5-2ubuntu0.2.debian.tar.xz' shared-mime-info_1.5-2ubuntu0.2.debian.tar.xz 10548 SHA256:7687ced629abcb5e53fb5686403393c99a89dec08a8a8070b9818242b0bf4b92
 ```
 
-### `dpkg` source package: `sqlite3=3.11.0-1ubuntu1.3`
+### `dpkg` source package: `sqlite3=3.11.0-1ubuntu1.4`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.11.0-1ubuntu1.3`
+- `libsqlite3-0:amd64=3.11.0-1ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2545,9 +2550,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.11.0-1ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.11.0-1ubuntu1.4.dsc' sqlite3_3.11.0-1ubuntu1.4.dsc 2625 SHA256:27faea84fc3f08501a8d650a1e9d28621138353732282d0c5553a8299de961e0
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.11.0.orig-www.tar.xz' sqlite3_3.11.0.orig-www.tar.xz 3135012 SHA256:99843a91a1da29cf07269df49b37b0cd8a75035a88aacdb1186f94a9a217bab3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.11.0.orig.tar.xz' sqlite3_3.11.0.orig.tar.xz 5122440 SHA256:79fb8800b8744337d5317270899a5a40612bb76f81517e131bf496c26b044490
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.11.0-1ubuntu1.4.debian.tar.xz' sqlite3_3.11.0-1ubuntu1.4.debian.tar.xz 43992 SHA256:1fb43634500681355c3fa916c8fbaec4a5a45566d6a40bd506e27a9cf0947cc7
+```
 
 ### `dpkg` source package: `systemd=229-4ubuntu21.27`
 
@@ -2815,6 +2826,7 @@ $ apt-get source -qq --print-uris xz-utils=5.1.1alpha+20120614-2ubuntu2
 Binary Packages:
 
 - `zlib1g:amd64=1:1.2.8.dfsg-2ubuntu4.3`
+- `zlib1g-dev:amd64=1:1.2.8.dfsg-2ubuntu4.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
