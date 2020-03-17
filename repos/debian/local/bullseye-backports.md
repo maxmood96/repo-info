@@ -70,19 +70,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.8.4
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.8.4.dsc' apt_1.8.4.dsc 2766 SHA256:492d4d6de28a26d46b63ac360c3ea3bcc106970a6521f3812dd86ae33cbeaccc
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.8.4.tar.xz' apt_1.8.4.tar.xz 2188876 SHA256:f40fe4475f3ab775a915569911326ff31c12c09eb8518bd82ba87aa570d6c43e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/1.8.4/
 
-- https://sources.debian.net/src/apt/1.8.4/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.8.4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.8.4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.48-5`
 
@@ -1037,21 +1031,13 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.8.5-3
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.8.5-3.dsc' libgcrypt20_1.8.5-3.dsc 2800 SHA256:ef350e54eb285cfe08436ff4ba637c1d7d29852cb5c03d694015dfb46e6c21d1
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.8.5.orig.tar.bz2' libgcrypt20_1.8.5.orig.tar.bz2 2991291 SHA256:3b4a2a94cb637eff5bdebbcaf46f4d95c4f25206f459809339cdada0eb577ac3
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.8.5.orig.tar.bz2.asc' libgcrypt20_1.8.5.orig.tar.bz2.asc 488 SHA256:4b24fda7847cd2b70ab19f4c38004a76bbdac46a1ddccff973ae88ba1296a22d
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.8.5-3.debian.tar.xz' libgcrypt20_1.8.5-3.debian.tar.xz 29196 SHA256:3b6bdabf8b4cca03c4621a509d4685e7846e555db68372664d913cbccf0f55db
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libgcrypt20/1.8.5-3/
 
-- https://sources.debian.net/src/libgcrypt20/1.8.5-3/ (for browsing the source)
-- https://sources.debian.net/src/libgcrypt20/1.8.5-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgcrypt20/1.8.5-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgpg-error=1.37-1`
 
