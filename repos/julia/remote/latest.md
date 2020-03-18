@@ -1,7 +1,7 @@
 ## `julia:latest`
 
 ```console
-$ docker pull julia@sha256:4059b62ff6c1f9fbf4f9d22d4465f920f80079f62f97a8227153eef85cea0148
+$ docker pull julia@sha256:1fc9b476bac3818933f7b6de1475994679c1a60262f879aa4bca9849b8b97f9b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10,7 +10,7 @@ $ docker pull julia@sha256:4059b62ff6c1f9fbf4f9d22d4465f920f80079f62f97a8227153e
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
-	-	windows version 10.0.14393.3506; amd64
+	-	windows version 10.0.14393.3568; amd64
 	-	windows version 10.0.17763.1098; amd64
 
 ### `julia:latest` - linux; amd64
@@ -205,34 +205,34 @@ CMD ["julia"]
 		Size: 99.3 MB (99275002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `julia:latest` - windows version 10.0.14393.3506; amd64
+### `julia:latest` - windows version 10.0.14393.3568; amd64
 
 ```console
-$ docker pull julia@sha256:659412cf9463e43b6f83ea129e891cd43062f491700bae5bf6d84df316f71768
+$ docker pull julia@sha256:cc254f602fc148bbc48e4b8cca5f88cdd1cb6eaf92267b398c196fd53a06092a
 ```
 
--	Docker Version: 18.03.1-ee-4
+-	Docker Version: 18.09.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 GB (5856097730 bytes)**  
+-	Total Size: **5.9 GB (5857827755 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4dd928920a5cc2b14f1c10a39acdd77ae966f2084eb22d82b27f8770f7bf324f`
+-	Image ID: `sha256:de55589cce1675b08a09966eb4cd803fc6e161cf488c15663ca771474a4f0346`
 -	Default Command: `["julia"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sat, 19 Nov 2016 17:05:00 GMT
 RUN Apply image 1607-RTM-amd64
-# Fri, 14 Feb 2020 21:42:00 GMT
+# Tue, 10 Mar 2020 08:14:00 GMT
 RUN Install update ltsc2016-amd64
-# Thu, 20 Feb 2020 01:48:27 GMT
+# Fri, 13 Mar 2020 21:32:46 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Thu, 20 Feb 2020 05:54:19 GMT
+# Wed, 18 Mar 2020 13:28:16 GMT
 ENV JULIA_VERSION=1.3.1
-# Thu, 20 Feb 2020 05:54:20 GMT
+# Wed, 18 Mar 2020 13:28:17 GMT
 ENV JULIA_SHA256=8350ca66f80484c5ca6f7341ffbdb9d5182f8d4231762d585e229567b227ef7f
-# Thu, 20 Feb 2020 05:58:16 GMT
+# Wed, 18 Mar 2020 13:31:35 GMT
 RUN $url = ('https://julialang-s3.julialang.org/bin/winnt/x64/{1}/julia-{0}-win64.exe' -f $env:JULIA_VERSION, ($env:JULIA_VERSION.Split('.')[0..1] -Join '.')); 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'julia.exe'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:JULIA_SHA256); 	if ((Get-FileHash julia.exe -Algorithm sha256).Hash -ne $env:JULIA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process -Wait -NoNewWindow 		-FilePath '.\julia.exe' 		-ArgumentList @( 			'/S', 			'/D=C:\julia' 		); 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\julia\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("julia --version") ...'; 	julia --version; 		Write-Host 'Removing ...'; 	Remove-Item julia.exe -Force; 		Write-Host 'Complete.'
-# Thu, 20 Feb 2020 05:58:18 GMT
+# Wed, 18 Mar 2020 13:31:36 GMT
 CMD ["julia"]
 ```
 
@@ -241,28 +241,28 @@ CMD ["julia"]
 		Last Modified: Tue, 18 Sep 2018 20:20:50 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:846a2223e9e7a88a2a07d706553f144d380483d72fb9f0697c4fcd71773a8693`  
-		Size: 1.7 GB (1657079102 bytes)  
+	-	`sha256:a5d20b7a2294a0d2631f74f49fc34574484a692913559546ef0bceae789fd7a8`  
+		Size: 1.7 GB (1658775203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:72c4471958f7f0f07260f0f430bcffb0bc07811088c24cffba1439d250ea1ae3`  
-		Last Modified: Thu, 20 Feb 2020 03:04:52 GMT  
-		Size: 1.2 KB (1181 bytes)  
+	-	`sha256:f08cc5bf7287bc1d8f72edfe2439c99210e433230a22fc73264fcf1685850ed2`  
+		Last Modified: Fri, 13 Mar 2020 22:09:47 GMT  
+		Size: 1.1 KB (1101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e48c5e6f3ff403b264008be9aa0ac4a6c1ec87cf25779b258df127290a67822b`  
-		Last Modified: Thu, 20 Feb 2020 06:14:15 GMT  
-		Size: 1.2 KB (1198 bytes)  
+	-	`sha256:316405659f04ca21761ac8a994d6f596fbf7912c0c86d68bac8dd6e7c16e0d1c`  
+		Last Modified: Wed, 18 Mar 2020 13:36:28 GMT  
+		Size: 1.1 KB (1125 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95d2af9527e6fb3788c8c62ac765f531ea6805446829870177ec8a017a6594ce`  
-		Last Modified: Thu, 20 Feb 2020 06:14:16 GMT  
-		Size: 1.2 KB (1181 bytes)  
+	-	`sha256:f9710c250fd025499a505cc843fca82cccb47753eb9cd7c9f944f6dd59996dbd`  
+		Last Modified: Wed, 18 Mar 2020 13:36:28 GMT  
+		Size: 1.1 KB (1122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dfe3120b6bdcafc4cc909a34e201e47b43a36992b63686965026aca4b86974ca`  
-		Last Modified: Thu, 20 Feb 2020 06:14:51 GMT  
-		Size: 129.0 MB (129027985 bytes)  
+	-	`sha256:252088daa9e7639c45d06bc5d4b94a4381d0c199f4ddb22724da25356546604b`  
+		Last Modified: Wed, 18 Mar 2020 13:36:57 GMT  
+		Size: 129.1 MB (129062160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64ae4d80ca53a99d12172579c946b51ae6a7ee554ba96b1da028ce45393efa66`  
-		Last Modified: Thu, 20 Feb 2020 06:14:16 GMT  
-		Size: 1.2 KB (1183 bytes)  
+	-	`sha256:154e1b2b245483a4f3aa9000c197903c7a6eba5e4a89acb6d498410e473483fc`  
+		Last Modified: Wed, 18 Mar 2020 13:36:28 GMT  
+		Size: 1.1 KB (1144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `julia:latest` - windows version 10.0.17763.1098; amd64
