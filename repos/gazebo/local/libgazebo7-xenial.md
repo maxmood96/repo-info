@@ -1823,14 +1823,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris icu=55.1-7ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1-7ubuntu0.4.dsc' icu_55.1-7ubuntu0.4.dsc 2130 SHA256:2acd6485f45d74747a3b47278e129be2d827d97d2a91a8d32d099a65deac7a18
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1.orig.tar.gz' icu_55.1.orig.tar.gz 25600847 SHA256:e16b22cbefdd354bec114541f7849a12f8fc2015320ca5282ee4fd787571457b
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1-7ubuntu0.4.debian.tar.xz' icu_55.1-7ubuntu0.4.debian.tar.xz 31856 SHA256:dbdafcb148992e087b8495855421f515c90a7c40d3286b5d861a5afa9fcc562e
-```
 
 ### `dpkg` source package: `ifupdown=0.8.10ubuntu1.4`
 
@@ -3881,14 +3876,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `GPL-2`
 - `redpine-signals`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-174.204
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-174.204.dsc' linux_4.4.0-174.204.dsc 11909 SHA256:683cba07c1a9d97701129d5ff77548c9118ac8bee2301650d7593baf4fd9d116
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-174.204.diff.gz' linux_4.4.0-174.204.diff.gz 16211207 SHA256:c5294bf6bd1d9d176aa7da620d7e78966e3747c18f1655e7c34c2d2fb3f89f05
-```
 
 ### `dpkg` source package: `llvm-toolchain-6.0=1:6.0-1ubuntu2~16.04.1`
 
