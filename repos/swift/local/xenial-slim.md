@@ -741,14 +741,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris icu=55.1-7ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1-7ubuntu0.4.dsc' icu_55.1-7ubuntu0.4.dsc 2130 SHA256:2acd6485f45d74747a3b47278e129be2d827d97d2a91a8d32d099a65deac7a18
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1.orig.tar.gz' icu_55.1.orig.tar.gz 25600847 SHA256:e16b22cbefdd354bec114541f7849a12f8fc2015320ca5282ee4fd787571457b
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1-7ubuntu0.4.debian.tar.xz' icu_55.1-7ubuntu0.4.debian.tar.xz 31856 SHA256:dbdafcb148992e087b8495855421f515c90a7c40d3286b5d861a5afa9fcc562e
-```
 
 ### `dpkg` source package: `init-system-helpers=1.29ubuntu4`
 
