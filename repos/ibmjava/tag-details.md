@@ -20,7 +20,7 @@
 ## `ibmjava:8`
 
 ```console
-$ docker pull ibmjava@sha256:f60bb7a9ce06e5d3aa070195e2fa3cbb8fd7efe28f37c352ae5935c70dfc9502
+$ docker pull ibmjava@sha256:50fb1fb2c5000313cc96534c8814c8a9bc3dd0d3a0468a0808cd8d4a347edc7a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -95,63 +95,63 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ### `ibmjava:8` - linux; 386
 
 ```console
-$ docker pull ibmjava@sha256:c4e532b9a9bd4f623663ff80a972b127e8408e0aae4fcbe19d56ccc37d70b29d
+$ docker pull ibmjava@sha256:e614c930ce14a079b6403cfc8ad3d0bb7fd75fa9064fee9f2569866012cc4e26
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.9 MB (148909052 bytes)**  
+-	Total Size: **148.9 MB (148906927 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3542bad02603389e35d6d9f3efb0bf6266f3fff87e9d59057fc9842c82ba110a`
+-	Image ID: `sha256:7ef3d0d95256f341a4a8039d7f7d12dff4ef11874c394eb03446e22df12c73cf`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 21 Feb 2020 21:39:03 GMT
-ADD file:df203cc2574204629c69613fcea4942faa0f9224ff0c8bacb908b85d73604628 in / 
-# Fri, 21 Feb 2020 21:39:04 GMT
+# Fri, 20 Mar 2020 18:38:55 GMT
+ADD file:d859d389e38b7ac70fd56f97e38d52a77b58e72b96237a4302d1984cdd912a55 in / 
+# Fri, 20 Mar 2020 18:38:56 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 21 Feb 2020 21:39:05 GMT
+# Fri, 20 Mar 2020 18:38:57 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 21 Feb 2020 21:39:05 GMT
+# Fri, 20 Mar 2020 18:38:58 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 21 Feb 2020 21:39:06 GMT
+# Fri, 20 Mar 2020 18:38:58 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Feb 2020 21:55:45 GMT
+# Fri, 20 Mar 2020 19:06:34 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Fri, 21 Feb 2020 21:55:54 GMT
+# Fri, 20 Mar 2020 19:06:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Fri, 28 Feb 2020 22:38:25 GMT
+# Fri, 20 Mar 2020 19:06:42 GMT
 ENV JAVA_VERSION=1.8.0_sr6fp6
-# Tue, 17 Mar 2020 21:52:33 GMT
+# Fri, 20 Mar 2020 19:07:25 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='87f9d45b7e1fa65ec018479f3ca7da69a03b52b0da10b8d1555142eec8ab0093';          YML_FILE='jre/linux/x86_64/index.yml';          ;;        i386)          ESUM='b5f825047c9bb5d360fb83694f12e17b1a5a15abf94ac82cd0a3aea32c9a361c';          YML_FILE='jre/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='f3c04cd07ef269c24373840eae6f59c7db7a16d2e206d393ba93efa6dbb8d74f';          YML_FILE='jre/linux/ppc64le/index.yml';          ;;        s390)          ESUM='2bbefda96f7d1a5f1694893961e92ccc59dfa50375ae5450675d7a4213d5812e';          YML_FILE='jre/linux/s390/index.yml';          ;;        s390x)          ESUM='d5b0508d53d1c7382c06f5bc1daf3d57c19c70d851e86e6b1162bcd93f616f7e';          YML_FILE='jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;
-# Tue, 17 Mar 2020 21:52:33 GMT
+# Fri, 20 Mar 2020 19:07:26 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:ddc482e6a4fa5e364980052ab9f5d236f29ae9b217ed672b3dba44669f4041de`  
-		Last Modified: Fri, 21 Feb 2020 21:39:58 GMT  
-		Size: 27.1 MB (27123823 bytes)  
+	-	`sha256:765ce743592771b94ad8ff27e281e66c13f6039962c7dde4dbe47123081e015b`  
+		Last Modified: Mon, 16 Mar 2020 15:38:41 GMT  
+		Size: 27.1 MB (27122453 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42d2b8bf2fa50513ca7c508e44ac1a15c7ec42b1a3369a91380663868309ab46`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
+	-	`sha256:59dc9c4739090a3d2f7265f1f8184b1cbd8ae133b863f8aa93ec5cf1761ee7a5`  
+		Last Modified: Fri, 20 Mar 2020 18:39:35 GMT  
 		Size: 34.6 KB (34625 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d84c193628e4067b419327ffa1bfef4b73161d9b1e3ce1e4ee83e714fd1d14e8`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
-		Size: 844.0 B  
+	-	`sha256:05a5b698281c077f48fc598e698f0619e4d00a2fedc1832fc95e9cf281408f63`  
+		Last Modified: Fri, 20 Mar 2020 18:39:34 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5271c42d486e4bb18cadbdf885d057c29384a032113047030f7c4bd6253bbf10`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
+	-	`sha256:aaebe599891b1e1befc10d752a117cc5615ec2dd3913d399fd66e26e0cace3e5`  
+		Last Modified: Fri, 20 Mar 2020 18:39:34 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88d6ec2d33bfaf511d9237ee4ecaaf9d1f6b9aea99231bf1bdeb23a03997d84e`  
-		Last Modified: Fri, 21 Feb 2020 21:58:25 GMT  
-		Size: 3.0 MB (2992872 bytes)  
+	-	`sha256:2f829150bc8a53a37ac17eb34838fa33c990881a4031bc650a9dae26b3f7880e`  
+		Last Modified: Fri, 20 Mar 2020 19:09:23 GMT  
+		Size: 3.0 MB (2992132 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6bce12cb4f27608a9ebc28d1b144c5e09150faef5521120babe34f46e3981553`  
-		Last Modified: Tue, 17 Mar 2020 21:55:11 GMT  
-		Size: 118.8 MB (118756726 bytes)  
+	-	`sha256:d17b9ccc4baf3a1ffa517a03c7c3d01900136b128b36a83558c67c42e6c1cbaa`  
+		Last Modified: Fri, 20 Mar 2020 19:09:35 GMT  
+		Size: 118.8 MB (118756706 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ibmjava:8` - linux; ppc64le
@@ -219,69 +219,69 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ### `ibmjava:8` - linux; s390x
 
 ```console
-$ docker pull ibmjava@sha256:fe0e8eb601949e190db94dac9685d2123abde4762ffba4b05b481da9a50b30c7
+$ docker pull ibmjava@sha256:909ebc85fd2ea1e7e5af1ecbd774f1edca2743692028372b532328654377990b
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.6 MB (155645010 bytes)**  
+-	Total Size: **155.6 MB (155643980 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b388b931ac6a9aae0d18328ac6bbce3951a35df68f3f88ee60ebb1b9ae0ee3df`
+-	Image ID: `sha256:f8499300184228ede6364cecc89561837b803d6c2658257e53557e6cd67ec43f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 21 Feb 2020 21:57:46 GMT
-ADD file:7925c9b35ffa1870e7d336ddcdd6c3434715178c7d08ff2ce9796b651302c347 in / 
-# Fri, 21 Feb 2020 21:57:50 GMT
+# Fri, 20 Mar 2020 18:42:06 GMT
+ADD file:9a9f44c69cdb84f93d495237619b0c7b6d02c3a86cac5ff3c3150d1f46fdba17 in / 
+# Fri, 20 Mar 2020 18:42:09 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 21 Feb 2020 21:57:51 GMT
+# Fri, 20 Mar 2020 18:42:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 21 Feb 2020 21:57:53 GMT
+# Fri, 20 Mar 2020 18:42:11 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 21 Feb 2020 21:57:53 GMT
+# Fri, 20 Mar 2020 18:42:11 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Feb 2020 22:31:02 GMT
+# Fri, 20 Mar 2020 19:46:08 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Fri, 21 Feb 2020 22:31:15 GMT
+# Fri, 20 Mar 2020 19:46:15 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Tue, 17 Mar 2020 20:07:31 GMT
+# Fri, 20 Mar 2020 19:46:15 GMT
 ENV JAVA_VERSION=1.8.0_sr6fp6
-# Tue, 17 Mar 2020 20:08:13 GMT
+# Fri, 20 Mar 2020 19:46:56 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='87f9d45b7e1fa65ec018479f3ca7da69a03b52b0da10b8d1555142eec8ab0093';          YML_FILE='jre/linux/x86_64/index.yml';          ;;        i386)          ESUM='b5f825047c9bb5d360fb83694f12e17b1a5a15abf94ac82cd0a3aea32c9a361c';          YML_FILE='jre/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='f3c04cd07ef269c24373840eae6f59c7db7a16d2e206d393ba93efa6dbb8d74f';          YML_FILE='jre/linux/ppc64le/index.yml';          ;;        s390)          ESUM='2bbefda96f7d1a5f1694893961e92ccc59dfa50375ae5450675d7a4213d5812e';          YML_FILE='jre/linux/s390/index.yml';          ;;        s390x)          ESUM='d5b0508d53d1c7382c06f5bc1daf3d57c19c70d851e86e6b1162bcd93f616f7e';          YML_FILE='jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;
-# Tue, 17 Mar 2020 20:08:15 GMT
+# Fri, 20 Mar 2020 19:46:59 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:b84fcb37dc33cf7416e0f1cf1219e16a15ab0d1c3aa4638d362f19c2679451de`  
-		Last Modified: Fri, 21 Feb 2020 21:59:09 GMT  
-		Size: 25.4 MB (25365672 bytes)  
+	-	`sha256:345ee2b1c666cad4104ddd5596e148e5c29087184128bb6099412591c696a492`  
+		Last Modified: Mon, 16 Mar 2020 15:40:41 GMT  
+		Size: 25.4 MB (25364606 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9594931f903b7b3c4f5cb63196d29d715c50b567c128a5572131c12a25f04139`  
-		Last Modified: Fri, 21 Feb 2020 21:59:06 GMT  
-		Size: 36.2 KB (36186 bytes)  
+	-	`sha256:6259e081be079eda34010ff7e7c4be7d6d6d927b64ddaa77f8a7f09e30a69229`  
+		Last Modified: Fri, 20 Mar 2020 18:42:50 GMT  
+		Size: 36.2 KB (36183 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66af13675c2330803d61d2198bb4f69c36bb7eed2d2b2bc3660fed8e873dce59`  
-		Last Modified: Fri, 21 Feb 2020 21:59:11 GMT  
-		Size: 847.0 B  
+	-	`sha256:5d110c40c78a87ebc1e1430d0fb68dd1aec06706c6b2d6d7c82a661f8b74f89a`  
+		Last Modified: Fri, 20 Mar 2020 18:42:49 GMT  
+		Size: 846.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fae0fb7b2ee5c5bc387374bdd08f53541bdfcf678d9b9f83489c3923af65fed0`  
-		Last Modified: Fri, 21 Feb 2020 21:59:21 GMT  
-		Size: 188.0 B  
+	-	`sha256:b7af2dd09f8eef8efc3d1215ffd89f820bc87f6dc5cd490b3322258ab8e2466e`  
+		Last Modified: Fri, 20 Mar 2020 18:42:55 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9381eb8b0a499263e6b76868e9412c47073e4d805bb897325f5e2de25846c6e7`  
-		Last Modified: Fri, 21 Feb 2020 22:34:51 GMT  
-		Size: 2.7 MB (2678898 bytes)  
+	-	`sha256:3df40b3ea19d171d590d718df04e53e994c0397dc1ecf983d66ae8944f17e436`  
+		Last Modified: Fri, 20 Mar 2020 19:48:49 GMT  
+		Size: 2.7 MB (2678789 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35f12d51958634384472b004f772b04e01b3be892b80b5ff55922a076c451799`  
-		Last Modified: Tue, 17 Mar 2020 20:10:08 GMT  
-		Size: 127.6 MB (127563219 bytes)  
+	-	`sha256:17efdd385db38700338072a70e4fde76626839b7d06559f78fad135b34bc816f`  
+		Last Modified: Fri, 20 Mar 2020 19:49:03 GMT  
+		Size: 127.6 MB (127563366 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ibmjava:8-jre`
 
 ```console
-$ docker pull ibmjava@sha256:f60bb7a9ce06e5d3aa070195e2fa3cbb8fd7efe28f37c352ae5935c70dfc9502
+$ docker pull ibmjava@sha256:50fb1fb2c5000313cc96534c8814c8a9bc3dd0d3a0468a0808cd8d4a347edc7a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -356,63 +356,63 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ### `ibmjava:8-jre` - linux; 386
 
 ```console
-$ docker pull ibmjava@sha256:c4e532b9a9bd4f623663ff80a972b127e8408e0aae4fcbe19d56ccc37d70b29d
+$ docker pull ibmjava@sha256:e614c930ce14a079b6403cfc8ad3d0bb7fd75fa9064fee9f2569866012cc4e26
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.9 MB (148909052 bytes)**  
+-	Total Size: **148.9 MB (148906927 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3542bad02603389e35d6d9f3efb0bf6266f3fff87e9d59057fc9842c82ba110a`
+-	Image ID: `sha256:7ef3d0d95256f341a4a8039d7f7d12dff4ef11874c394eb03446e22df12c73cf`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 21 Feb 2020 21:39:03 GMT
-ADD file:df203cc2574204629c69613fcea4942faa0f9224ff0c8bacb908b85d73604628 in / 
-# Fri, 21 Feb 2020 21:39:04 GMT
+# Fri, 20 Mar 2020 18:38:55 GMT
+ADD file:d859d389e38b7ac70fd56f97e38d52a77b58e72b96237a4302d1984cdd912a55 in / 
+# Fri, 20 Mar 2020 18:38:56 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 21 Feb 2020 21:39:05 GMT
+# Fri, 20 Mar 2020 18:38:57 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 21 Feb 2020 21:39:05 GMT
+# Fri, 20 Mar 2020 18:38:58 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 21 Feb 2020 21:39:06 GMT
+# Fri, 20 Mar 2020 18:38:58 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Feb 2020 21:55:45 GMT
+# Fri, 20 Mar 2020 19:06:34 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Fri, 21 Feb 2020 21:55:54 GMT
+# Fri, 20 Mar 2020 19:06:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Fri, 28 Feb 2020 22:38:25 GMT
+# Fri, 20 Mar 2020 19:06:42 GMT
 ENV JAVA_VERSION=1.8.0_sr6fp6
-# Tue, 17 Mar 2020 21:52:33 GMT
+# Fri, 20 Mar 2020 19:07:25 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='87f9d45b7e1fa65ec018479f3ca7da69a03b52b0da10b8d1555142eec8ab0093';          YML_FILE='jre/linux/x86_64/index.yml';          ;;        i386)          ESUM='b5f825047c9bb5d360fb83694f12e17b1a5a15abf94ac82cd0a3aea32c9a361c';          YML_FILE='jre/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='f3c04cd07ef269c24373840eae6f59c7db7a16d2e206d393ba93efa6dbb8d74f';          YML_FILE='jre/linux/ppc64le/index.yml';          ;;        s390)          ESUM='2bbefda96f7d1a5f1694893961e92ccc59dfa50375ae5450675d7a4213d5812e';          YML_FILE='jre/linux/s390/index.yml';          ;;        s390x)          ESUM='d5b0508d53d1c7382c06f5bc1daf3d57c19c70d851e86e6b1162bcd93f616f7e';          YML_FILE='jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;
-# Tue, 17 Mar 2020 21:52:33 GMT
+# Fri, 20 Mar 2020 19:07:26 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:ddc482e6a4fa5e364980052ab9f5d236f29ae9b217ed672b3dba44669f4041de`  
-		Last Modified: Fri, 21 Feb 2020 21:39:58 GMT  
-		Size: 27.1 MB (27123823 bytes)  
+	-	`sha256:765ce743592771b94ad8ff27e281e66c13f6039962c7dde4dbe47123081e015b`  
+		Last Modified: Mon, 16 Mar 2020 15:38:41 GMT  
+		Size: 27.1 MB (27122453 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42d2b8bf2fa50513ca7c508e44ac1a15c7ec42b1a3369a91380663868309ab46`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
+	-	`sha256:59dc9c4739090a3d2f7265f1f8184b1cbd8ae133b863f8aa93ec5cf1761ee7a5`  
+		Last Modified: Fri, 20 Mar 2020 18:39:35 GMT  
 		Size: 34.6 KB (34625 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d84c193628e4067b419327ffa1bfef4b73161d9b1e3ce1e4ee83e714fd1d14e8`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
-		Size: 844.0 B  
+	-	`sha256:05a5b698281c077f48fc598e698f0619e4d00a2fedc1832fc95e9cf281408f63`  
+		Last Modified: Fri, 20 Mar 2020 18:39:34 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5271c42d486e4bb18cadbdf885d057c29384a032113047030f7c4bd6253bbf10`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
+	-	`sha256:aaebe599891b1e1befc10d752a117cc5615ec2dd3913d399fd66e26e0cace3e5`  
+		Last Modified: Fri, 20 Mar 2020 18:39:34 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88d6ec2d33bfaf511d9237ee4ecaaf9d1f6b9aea99231bf1bdeb23a03997d84e`  
-		Last Modified: Fri, 21 Feb 2020 21:58:25 GMT  
-		Size: 3.0 MB (2992872 bytes)  
+	-	`sha256:2f829150bc8a53a37ac17eb34838fa33c990881a4031bc650a9dae26b3f7880e`  
+		Last Modified: Fri, 20 Mar 2020 19:09:23 GMT  
+		Size: 3.0 MB (2992132 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6bce12cb4f27608a9ebc28d1b144c5e09150faef5521120babe34f46e3981553`  
-		Last Modified: Tue, 17 Mar 2020 21:55:11 GMT  
-		Size: 118.8 MB (118756726 bytes)  
+	-	`sha256:d17b9ccc4baf3a1ffa517a03c7c3d01900136b128b36a83558c67c42e6c1cbaa`  
+		Last Modified: Fri, 20 Mar 2020 19:09:35 GMT  
+		Size: 118.8 MB (118756706 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ibmjava:8-jre` - linux; ppc64le
@@ -480,63 +480,63 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ### `ibmjava:8-jre` - linux; s390x
 
 ```console
-$ docker pull ibmjava@sha256:fe0e8eb601949e190db94dac9685d2123abde4762ffba4b05b481da9a50b30c7
+$ docker pull ibmjava@sha256:909ebc85fd2ea1e7e5af1ecbd774f1edca2743692028372b532328654377990b
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.6 MB (155645010 bytes)**  
+-	Total Size: **155.6 MB (155643980 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b388b931ac6a9aae0d18328ac6bbce3951a35df68f3f88ee60ebb1b9ae0ee3df`
+-	Image ID: `sha256:f8499300184228ede6364cecc89561837b803d6c2658257e53557e6cd67ec43f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 21 Feb 2020 21:57:46 GMT
-ADD file:7925c9b35ffa1870e7d336ddcdd6c3434715178c7d08ff2ce9796b651302c347 in / 
-# Fri, 21 Feb 2020 21:57:50 GMT
+# Fri, 20 Mar 2020 18:42:06 GMT
+ADD file:9a9f44c69cdb84f93d495237619b0c7b6d02c3a86cac5ff3c3150d1f46fdba17 in / 
+# Fri, 20 Mar 2020 18:42:09 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 21 Feb 2020 21:57:51 GMT
+# Fri, 20 Mar 2020 18:42:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 21 Feb 2020 21:57:53 GMT
+# Fri, 20 Mar 2020 18:42:11 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 21 Feb 2020 21:57:53 GMT
+# Fri, 20 Mar 2020 18:42:11 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Feb 2020 22:31:02 GMT
+# Fri, 20 Mar 2020 19:46:08 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Fri, 21 Feb 2020 22:31:15 GMT
+# Fri, 20 Mar 2020 19:46:15 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Tue, 17 Mar 2020 20:07:31 GMT
+# Fri, 20 Mar 2020 19:46:15 GMT
 ENV JAVA_VERSION=1.8.0_sr6fp6
-# Tue, 17 Mar 2020 20:08:13 GMT
+# Fri, 20 Mar 2020 19:46:56 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='87f9d45b7e1fa65ec018479f3ca7da69a03b52b0da10b8d1555142eec8ab0093';          YML_FILE='jre/linux/x86_64/index.yml';          ;;        i386)          ESUM='b5f825047c9bb5d360fb83694f12e17b1a5a15abf94ac82cd0a3aea32c9a361c';          YML_FILE='jre/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='f3c04cd07ef269c24373840eae6f59c7db7a16d2e206d393ba93efa6dbb8d74f';          YML_FILE='jre/linux/ppc64le/index.yml';          ;;        s390)          ESUM='2bbefda96f7d1a5f1694893961e92ccc59dfa50375ae5450675d7a4213d5812e';          YML_FILE='jre/linux/s390/index.yml';          ;;        s390x)          ESUM='d5b0508d53d1c7382c06f5bc1daf3d57c19c70d851e86e6b1162bcd93f616f7e';          YML_FILE='jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;
-# Tue, 17 Mar 2020 20:08:15 GMT
+# Fri, 20 Mar 2020 19:46:59 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:b84fcb37dc33cf7416e0f1cf1219e16a15ab0d1c3aa4638d362f19c2679451de`  
-		Last Modified: Fri, 21 Feb 2020 21:59:09 GMT  
-		Size: 25.4 MB (25365672 bytes)  
+	-	`sha256:345ee2b1c666cad4104ddd5596e148e5c29087184128bb6099412591c696a492`  
+		Last Modified: Mon, 16 Mar 2020 15:40:41 GMT  
+		Size: 25.4 MB (25364606 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9594931f903b7b3c4f5cb63196d29d715c50b567c128a5572131c12a25f04139`  
-		Last Modified: Fri, 21 Feb 2020 21:59:06 GMT  
-		Size: 36.2 KB (36186 bytes)  
+	-	`sha256:6259e081be079eda34010ff7e7c4be7d6d6d927b64ddaa77f8a7f09e30a69229`  
+		Last Modified: Fri, 20 Mar 2020 18:42:50 GMT  
+		Size: 36.2 KB (36183 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66af13675c2330803d61d2198bb4f69c36bb7eed2d2b2bc3660fed8e873dce59`  
-		Last Modified: Fri, 21 Feb 2020 21:59:11 GMT  
-		Size: 847.0 B  
+	-	`sha256:5d110c40c78a87ebc1e1430d0fb68dd1aec06706c6b2d6d7c82a661f8b74f89a`  
+		Last Modified: Fri, 20 Mar 2020 18:42:49 GMT  
+		Size: 846.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fae0fb7b2ee5c5bc387374bdd08f53541bdfcf678d9b9f83489c3923af65fed0`  
-		Last Modified: Fri, 21 Feb 2020 21:59:21 GMT  
-		Size: 188.0 B  
+	-	`sha256:b7af2dd09f8eef8efc3d1215ffd89f820bc87f6dc5cd490b3322258ab8e2466e`  
+		Last Modified: Fri, 20 Mar 2020 18:42:55 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9381eb8b0a499263e6b76868e9412c47073e4d805bb897325f5e2de25846c6e7`  
-		Last Modified: Fri, 21 Feb 2020 22:34:51 GMT  
-		Size: 2.7 MB (2678898 bytes)  
+	-	`sha256:3df40b3ea19d171d590d718df04e53e994c0397dc1ecf983d66ae8944f17e436`  
+		Last Modified: Fri, 20 Mar 2020 19:48:49 GMT  
+		Size: 2.7 MB (2678789 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35f12d51958634384472b004f772b04e01b3be892b80b5ff55922a076c451799`  
-		Last Modified: Tue, 17 Mar 2020 20:10:08 GMT  
-		Size: 127.6 MB (127563219 bytes)  
+	-	`sha256:17efdd385db38700338072a70e4fde76626839b7d06559f78fad135b34bc816f`  
+		Last Modified: Fri, 20 Mar 2020 19:49:03 GMT  
+		Size: 127.6 MB (127563366 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ibmjava:8-jre-alpine`
@@ -602,7 +602,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ## `ibmjava:8-sdk`
 
 ```console
-$ docker pull ibmjava@sha256:7bcedddcfbddaec521fee72f6032117bc2e67ed6c48777a9a290a18670dbce31
+$ docker pull ibmjava@sha256:60181dc82b502e7d2d40d7c92fe882d99dd6540e451b94c676126894cdcec176
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -677,63 +677,63 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 ### `ibmjava:8-sdk` - linux; 386
 
 ```console
-$ docker pull ibmjava@sha256:4de9f58e57e9a2f06a5b27e83b4d09b82f5b58340b668c6276102b5dc7d97a6c
+$ docker pull ibmjava@sha256:e5bf894ea0b649d695507b82061e9cf16e210c65a5ad2155b5a3c9bdb9f07502
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **186.0 MB (185962242 bytes)**  
+-	Total Size: **186.0 MB (185959899 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1a0fba875b159b9e0b1b35d3e4ef0e4275640d59b03a6f9aea8069146de2c0e4`
+-	Image ID: `sha256:f978c14c98e74afdac4aaab6c6c32e9c364ed888f4f77d2cf2dd51c9bb1a319c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 21 Feb 2020 21:39:03 GMT
-ADD file:df203cc2574204629c69613fcea4942faa0f9224ff0c8bacb908b85d73604628 in / 
-# Fri, 21 Feb 2020 21:39:04 GMT
+# Fri, 20 Mar 2020 18:38:55 GMT
+ADD file:d859d389e38b7ac70fd56f97e38d52a77b58e72b96237a4302d1984cdd912a55 in / 
+# Fri, 20 Mar 2020 18:38:56 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 21 Feb 2020 21:39:05 GMT
+# Fri, 20 Mar 2020 18:38:57 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 21 Feb 2020 21:39:05 GMT
+# Fri, 20 Mar 2020 18:38:58 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 21 Feb 2020 21:39:06 GMT
+# Fri, 20 Mar 2020 18:38:58 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Feb 2020 21:55:45 GMT
+# Fri, 20 Mar 2020 19:06:34 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Fri, 21 Feb 2020 21:55:54 GMT
+# Fri, 20 Mar 2020 19:06:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Fri, 28 Feb 2020 22:38:25 GMT
+# Fri, 20 Mar 2020 19:06:42 GMT
 ENV JAVA_VERSION=1.8.0_sr6fp6
-# Tue, 17 Mar 2020 21:54:31 GMT
+# Fri, 20 Mar 2020 19:09:06 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='c1fd9c8ad1cf5e93dd6dfb70a04d41d33e6b554fda314841a6a9443b15317be8';          YML_FILE='sdk/linux/x86_64/index.yml';          ;;        i386)          ESUM='9fc780849de963e43639a633996acef4a86577084ac493bf3a166eef2abe1a8f';          YML_FILE='sdk/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='07f2af68e1e64a903cda5223c41a8d463d2317bad7998435ce9181ac3d07337d';          YML_FILE='sdk/linux/ppc64le/index.yml';          ;;        s390)          ESUM='5e043e66a7d7b55619ac0fcc3b8b713b172dfa76d5db72ffb4252fa8aa52edc0';          YML_FILE='sdk/linux/s390/index.yml';          ;;        s390x)          ESUM='1783d826d64ff6b3d2e4fe6f5f581d4e6464f2597eddbfda7fd0e13d52fa2794';          YML_FILE='sdk/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;
-# Tue, 17 Mar 2020 21:54:31 GMT
+# Fri, 20 Mar 2020 19:09:06 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:ddc482e6a4fa5e364980052ab9f5d236f29ae9b217ed672b3dba44669f4041de`  
-		Last Modified: Fri, 21 Feb 2020 21:39:58 GMT  
-		Size: 27.1 MB (27123823 bytes)  
+	-	`sha256:765ce743592771b94ad8ff27e281e66c13f6039962c7dde4dbe47123081e015b`  
+		Last Modified: Mon, 16 Mar 2020 15:38:41 GMT  
+		Size: 27.1 MB (27122453 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42d2b8bf2fa50513ca7c508e44ac1a15c7ec42b1a3369a91380663868309ab46`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
+	-	`sha256:59dc9c4739090a3d2f7265f1f8184b1cbd8ae133b863f8aa93ec5cf1761ee7a5`  
+		Last Modified: Fri, 20 Mar 2020 18:39:35 GMT  
 		Size: 34.6 KB (34625 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d84c193628e4067b419327ffa1bfef4b73161d9b1e3ce1e4ee83e714fd1d14e8`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
-		Size: 844.0 B  
+	-	`sha256:05a5b698281c077f48fc598e698f0619e4d00a2fedc1832fc95e9cf281408f63`  
+		Last Modified: Fri, 20 Mar 2020 18:39:34 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5271c42d486e4bb18cadbdf885d057c29384a032113047030f7c4bd6253bbf10`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
+	-	`sha256:aaebe599891b1e1befc10d752a117cc5615ec2dd3913d399fd66e26e0cace3e5`  
+		Last Modified: Fri, 20 Mar 2020 18:39:34 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88d6ec2d33bfaf511d9237ee4ecaaf9d1f6b9aea99231bf1bdeb23a03997d84e`  
-		Last Modified: Fri, 21 Feb 2020 21:58:25 GMT  
-		Size: 3.0 MB (2992872 bytes)  
+	-	`sha256:2f829150bc8a53a37ac17eb34838fa33c990881a4031bc650a9dae26b3f7880e`  
+		Last Modified: Fri, 20 Mar 2020 19:09:23 GMT  
+		Size: 3.0 MB (2992132 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a7ef74059c466992c007cd2f862e0561bebd26590e01663fdf0986d905f9642`  
-		Last Modified: Tue, 17 Mar 2020 21:55:57 GMT  
-		Size: 155.8 MB (155809916 bytes)  
+	-	`sha256:f98a6829047ce15683469a566950899b9cc37fecf40cf1535933c7b932a992dc`  
+		Last Modified: Fri, 20 Mar 2020 19:10:09 GMT  
+		Size: 155.8 MB (155809678 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ibmjava:8-sdk` - linux; ppc64le
@@ -801,63 +801,63 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 ### `ibmjava:8-sdk` - linux; s390x
 
 ```console
-$ docker pull ibmjava@sha256:9f5f2d754b0eebacc11fda65740e54d3700e75524fcebd2edeb18c681aaa1827
+$ docker pull ibmjava@sha256:3a874f573a1ce8c35ef060c380f0f68fa861314010133b3c7fa1b1e8e3a9654b
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **185.9 MB (185904721 bytes)**  
+-	Total Size: **185.9 MB (185903936 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:09c00fc3246cf30dcf7d75e0466aae94a8862a6bc383e226780addf03afa209a`
+-	Image ID: `sha256:9a75ab8c50019e94e15ee94e37a2b3aef718ea0566e6c5047464190ad2c313a7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 21 Feb 2020 21:57:46 GMT
-ADD file:7925c9b35ffa1870e7d336ddcdd6c3434715178c7d08ff2ce9796b651302c347 in / 
-# Fri, 21 Feb 2020 21:57:50 GMT
+# Fri, 20 Mar 2020 18:42:06 GMT
+ADD file:9a9f44c69cdb84f93d495237619b0c7b6d02c3a86cac5ff3c3150d1f46fdba17 in / 
+# Fri, 20 Mar 2020 18:42:09 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 21 Feb 2020 21:57:51 GMT
+# Fri, 20 Mar 2020 18:42:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 21 Feb 2020 21:57:53 GMT
+# Fri, 20 Mar 2020 18:42:11 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 21 Feb 2020 21:57:53 GMT
+# Fri, 20 Mar 2020 18:42:11 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Feb 2020 22:31:02 GMT
+# Fri, 20 Mar 2020 19:46:08 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Fri, 21 Feb 2020 22:31:15 GMT
+# Fri, 20 Mar 2020 19:46:15 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Tue, 17 Mar 2020 20:07:31 GMT
+# Fri, 20 Mar 2020 19:46:15 GMT
 ENV JAVA_VERSION=1.8.0_sr6fp6
-# Tue, 17 Mar 2020 20:09:46 GMT
+# Fri, 20 Mar 2020 19:48:30 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='c1fd9c8ad1cf5e93dd6dfb70a04d41d33e6b554fda314841a6a9443b15317be8';          YML_FILE='sdk/linux/x86_64/index.yml';          ;;        i386)          ESUM='9fc780849de963e43639a633996acef4a86577084ac493bf3a166eef2abe1a8f';          YML_FILE='sdk/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='07f2af68e1e64a903cda5223c41a8d463d2317bad7998435ce9181ac3d07337d';          YML_FILE='sdk/linux/ppc64le/index.yml';          ;;        s390)          ESUM='5e043e66a7d7b55619ac0fcc3b8b713b172dfa76d5db72ffb4252fa8aa52edc0';          YML_FILE='sdk/linux/s390/index.yml';          ;;        s390x)          ESUM='1783d826d64ff6b3d2e4fe6f5f581d4e6464f2597eddbfda7fd0e13d52fa2794';          YML_FILE='sdk/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;
-# Tue, 17 Mar 2020 20:09:49 GMT
+# Fri, 20 Mar 2020 19:48:33 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:b84fcb37dc33cf7416e0f1cf1219e16a15ab0d1c3aa4638d362f19c2679451de`  
-		Last Modified: Fri, 21 Feb 2020 21:59:09 GMT  
-		Size: 25.4 MB (25365672 bytes)  
+	-	`sha256:345ee2b1c666cad4104ddd5596e148e5c29087184128bb6099412591c696a492`  
+		Last Modified: Mon, 16 Mar 2020 15:40:41 GMT  
+		Size: 25.4 MB (25364606 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9594931f903b7b3c4f5cb63196d29d715c50b567c128a5572131c12a25f04139`  
-		Last Modified: Fri, 21 Feb 2020 21:59:06 GMT  
-		Size: 36.2 KB (36186 bytes)  
+	-	`sha256:6259e081be079eda34010ff7e7c4be7d6d6d927b64ddaa77f8a7f09e30a69229`  
+		Last Modified: Fri, 20 Mar 2020 18:42:50 GMT  
+		Size: 36.2 KB (36183 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66af13675c2330803d61d2198bb4f69c36bb7eed2d2b2bc3660fed8e873dce59`  
-		Last Modified: Fri, 21 Feb 2020 21:59:11 GMT  
-		Size: 847.0 B  
+	-	`sha256:5d110c40c78a87ebc1e1430d0fb68dd1aec06706c6b2d6d7c82a661f8b74f89a`  
+		Last Modified: Fri, 20 Mar 2020 18:42:49 GMT  
+		Size: 846.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fae0fb7b2ee5c5bc387374bdd08f53541bdfcf678d9b9f83489c3923af65fed0`  
-		Last Modified: Fri, 21 Feb 2020 21:59:21 GMT  
-		Size: 188.0 B  
+	-	`sha256:b7af2dd09f8eef8efc3d1215ffd89f820bc87f6dc5cd490b3322258ab8e2466e`  
+		Last Modified: Fri, 20 Mar 2020 18:42:55 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9381eb8b0a499263e6b76868e9412c47073e4d805bb897325f5e2de25846c6e7`  
-		Last Modified: Fri, 21 Feb 2020 22:34:51 GMT  
-		Size: 2.7 MB (2678898 bytes)  
+	-	`sha256:3df40b3ea19d171d590d718df04e53e994c0397dc1ecf983d66ae8944f17e436`  
+		Last Modified: Fri, 20 Mar 2020 19:48:49 GMT  
+		Size: 2.7 MB (2678789 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cb3d7a79c0fbc77b94b602c26866cc0a410193f1294e242b2f137dca4dfe4d5`  
-		Last Modified: Tue, 17 Mar 2020 20:10:37 GMT  
-		Size: 157.8 MB (157822930 bytes)  
+	-	`sha256:de001c7fc288fc7c96175b1a9e89a5e835451cb469d612617545f283492e1b98`  
+		Last Modified: Fri, 20 Mar 2020 19:49:31 GMT  
+		Size: 157.8 MB (157823322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ibmjava:8-sdk-alpine`
@@ -923,7 +923,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 ## `ibmjava:8-sfj`
 
 ```console
-$ docker pull ibmjava@sha256:5d17556fcba7546608ff01d7f26f92c7d362a4f6512d7cd4d59e7e153a6e9750
+$ docker pull ibmjava@sha256:9e601f4bef3e4101415588ca991cbe4d74c1b6d2e326c29e420fafb02588161f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -998,63 +998,63 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ### `ibmjava:8-sfj` - linux; 386
 
 ```console
-$ docker pull ibmjava@sha256:ca3d6da45be87618e136cd167dfd3580a1b013951672f24858954a8630ced4d3
+$ docker pull ibmjava@sha256:512d432d4352b3e68a928ca8d08698e6cf8f2fc316c00a4f0a026c9e883c1d50
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **93.1 MB (93145458 bytes)**  
+-	Total Size: **93.1 MB (93143365 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c549a2d88a34165677b17341435fcd9120d4d377d13753649bea392573cecd36`
+-	Image ID: `sha256:4fb8d2fd47a9dbbd4512c67287b42f93aac04b15ebf51ed797b74ff6c7dc6328`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 21 Feb 2020 21:39:03 GMT
-ADD file:df203cc2574204629c69613fcea4942faa0f9224ff0c8bacb908b85d73604628 in / 
-# Fri, 21 Feb 2020 21:39:04 GMT
+# Fri, 20 Mar 2020 18:38:55 GMT
+ADD file:d859d389e38b7ac70fd56f97e38d52a77b58e72b96237a4302d1984cdd912a55 in / 
+# Fri, 20 Mar 2020 18:38:56 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 21 Feb 2020 21:39:05 GMT
+# Fri, 20 Mar 2020 18:38:57 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 21 Feb 2020 21:39:05 GMT
+# Fri, 20 Mar 2020 18:38:58 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 21 Feb 2020 21:39:06 GMT
+# Fri, 20 Mar 2020 18:38:58 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Feb 2020 21:55:45 GMT
+# Fri, 20 Mar 2020 19:06:34 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Fri, 21 Feb 2020 21:55:54 GMT
+# Fri, 20 Mar 2020 19:06:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Fri, 28 Feb 2020 22:38:25 GMT
+# Fri, 20 Mar 2020 19:06:42 GMT
 ENV JAVA_VERSION=1.8.0_sr6fp6
-# Tue, 17 Mar 2020 21:53:23 GMT
+# Fri, 20 Mar 2020 19:08:11 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='7d7a7b6e761282a6c233ec19363e4716b7bb1a2d0cf6bf023cb735180167eb53';          YML_FILE='sfj/linux/x86_64/index.yml';          ;;        i386)          ESUM='771f7d113a01bfae2386cfd467549144e60342004067c442bae51c532525c126';          YML_FILE='sfj/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='7fbbcf11851d42fcdc96801ad104316cda30cfd4cd82d7406d93c6d636a4f183';          YML_FILE='sfj/linux/ppc64le/index.yml';          ;;        s390)          ESUM='063e61faf3ed8bada1cb94b45beb429ad616c4fb11538cfa841a6b6c69bd416a';          YML_FILE='sfj/linux/s390/index.yml';          ;;        s390x)          ESUM='8ff6d142dd1acaf34c3f8a72eb45cae1ae518e0ee732bbae60e393d9eebecfff';          YML_FILE='sfj/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;
-# Tue, 17 Mar 2020 21:53:23 GMT
+# Fri, 20 Mar 2020 19:08:11 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:ddc482e6a4fa5e364980052ab9f5d236f29ae9b217ed672b3dba44669f4041de`  
-		Last Modified: Fri, 21 Feb 2020 21:39:58 GMT  
-		Size: 27.1 MB (27123823 bytes)  
+	-	`sha256:765ce743592771b94ad8ff27e281e66c13f6039962c7dde4dbe47123081e015b`  
+		Last Modified: Mon, 16 Mar 2020 15:38:41 GMT  
+		Size: 27.1 MB (27122453 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42d2b8bf2fa50513ca7c508e44ac1a15c7ec42b1a3369a91380663868309ab46`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
+	-	`sha256:59dc9c4739090a3d2f7265f1f8184b1cbd8ae133b863f8aa93ec5cf1761ee7a5`  
+		Last Modified: Fri, 20 Mar 2020 18:39:35 GMT  
 		Size: 34.6 KB (34625 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d84c193628e4067b419327ffa1bfef4b73161d9b1e3ce1e4ee83e714fd1d14e8`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
-		Size: 844.0 B  
+	-	`sha256:05a5b698281c077f48fc598e698f0619e4d00a2fedc1832fc95e9cf281408f63`  
+		Last Modified: Fri, 20 Mar 2020 18:39:34 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5271c42d486e4bb18cadbdf885d057c29384a032113047030f7c4bd6253bbf10`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
+	-	`sha256:aaebe599891b1e1befc10d752a117cc5615ec2dd3913d399fd66e26e0cace3e5`  
+		Last Modified: Fri, 20 Mar 2020 18:39:34 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88d6ec2d33bfaf511d9237ee4ecaaf9d1f6b9aea99231bf1bdeb23a03997d84e`  
-		Last Modified: Fri, 21 Feb 2020 21:58:25 GMT  
-		Size: 3.0 MB (2992872 bytes)  
+	-	`sha256:2f829150bc8a53a37ac17eb34838fa33c990881a4031bc650a9dae26b3f7880e`  
+		Last Modified: Fri, 20 Mar 2020 19:09:23 GMT  
+		Size: 3.0 MB (2992132 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3594fc891fa2a2c77c7d4c9bfaa0eb79c38c9b78716926b8fac2c1414462e51c`  
-		Last Modified: Tue, 17 Mar 2020 21:55:34 GMT  
-		Size: 63.0 MB (62993132 bytes)  
+	-	`sha256:9fea3a6c11f0a31143078f32a5cb363d7e21dbf736d10106900fc6b133bd480b`  
+		Last Modified: Fri, 20 Mar 2020 19:09:49 GMT  
+		Size: 63.0 MB (62993144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ibmjava:8-sfj` - linux; ppc64le
@@ -1122,63 +1122,63 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ### `ibmjava:8-sfj` - linux; s390x
 
 ```console
-$ docker pull ibmjava@sha256:c649c10e2093b3229316c08ed81566085c6f7df2466f6499728e3b5cfe2fe62e
+$ docker pull ibmjava@sha256:32a67b84170f580942684032331cfe03b9bfa22090ae1fd5cf3b4697c887ecfb
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.8 MB (92786602 bytes)**  
+-	Total Size: **92.8 MB (92785442 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5a44d1d249fe49097151e5492dd9b1e9524e8eac6f1f86ec3ec7c00c5a6ecd3b`
+-	Image ID: `sha256:ba992fe20ce59839d900dddc25130e495ef9f6d639ece2c95c7f49522109aa4e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 21 Feb 2020 21:57:46 GMT
-ADD file:7925c9b35ffa1870e7d336ddcdd6c3434715178c7d08ff2ce9796b651302c347 in / 
-# Fri, 21 Feb 2020 21:57:50 GMT
+# Fri, 20 Mar 2020 18:42:06 GMT
+ADD file:9a9f44c69cdb84f93d495237619b0c7b6d02c3a86cac5ff3c3150d1f46fdba17 in / 
+# Fri, 20 Mar 2020 18:42:09 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 21 Feb 2020 21:57:51 GMT
+# Fri, 20 Mar 2020 18:42:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 21 Feb 2020 21:57:53 GMT
+# Fri, 20 Mar 2020 18:42:11 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 21 Feb 2020 21:57:53 GMT
+# Fri, 20 Mar 2020 18:42:11 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Feb 2020 22:31:02 GMT
+# Fri, 20 Mar 2020 19:46:08 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Fri, 21 Feb 2020 22:31:15 GMT
+# Fri, 20 Mar 2020 19:46:15 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Tue, 17 Mar 2020 20:07:31 GMT
+# Fri, 20 Mar 2020 19:46:15 GMT
 ENV JAVA_VERSION=1.8.0_sr6fp6
-# Tue, 17 Mar 2020 20:08:51 GMT
+# Fri, 20 Mar 2020 19:47:34 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='7d7a7b6e761282a6c233ec19363e4716b7bb1a2d0cf6bf023cb735180167eb53';          YML_FILE='sfj/linux/x86_64/index.yml';          ;;        i386)          ESUM='771f7d113a01bfae2386cfd467549144e60342004067c442bae51c532525c126';          YML_FILE='sfj/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='7fbbcf11851d42fcdc96801ad104316cda30cfd4cd82d7406d93c6d636a4f183';          YML_FILE='sfj/linux/ppc64le/index.yml';          ;;        s390)          ESUM='063e61faf3ed8bada1cb94b45beb429ad616c4fb11538cfa841a6b6c69bd416a';          YML_FILE='sfj/linux/s390/index.yml';          ;;        s390x)          ESUM='8ff6d142dd1acaf34c3f8a72eb45cae1ae518e0ee732bbae60e393d9eebecfff';          YML_FILE='sfj/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;
-# Tue, 17 Mar 2020 20:08:52 GMT
+# Fri, 20 Mar 2020 19:47:36 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:b84fcb37dc33cf7416e0f1cf1219e16a15ab0d1c3aa4638d362f19c2679451de`  
-		Last Modified: Fri, 21 Feb 2020 21:59:09 GMT  
-		Size: 25.4 MB (25365672 bytes)  
+	-	`sha256:345ee2b1c666cad4104ddd5596e148e5c29087184128bb6099412591c696a492`  
+		Last Modified: Mon, 16 Mar 2020 15:40:41 GMT  
+		Size: 25.4 MB (25364606 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9594931f903b7b3c4f5cb63196d29d715c50b567c128a5572131c12a25f04139`  
-		Last Modified: Fri, 21 Feb 2020 21:59:06 GMT  
-		Size: 36.2 KB (36186 bytes)  
+	-	`sha256:6259e081be079eda34010ff7e7c4be7d6d6d927b64ddaa77f8a7f09e30a69229`  
+		Last Modified: Fri, 20 Mar 2020 18:42:50 GMT  
+		Size: 36.2 KB (36183 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66af13675c2330803d61d2198bb4f69c36bb7eed2d2b2bc3660fed8e873dce59`  
-		Last Modified: Fri, 21 Feb 2020 21:59:11 GMT  
-		Size: 847.0 B  
+	-	`sha256:5d110c40c78a87ebc1e1430d0fb68dd1aec06706c6b2d6d7c82a661f8b74f89a`  
+		Last Modified: Fri, 20 Mar 2020 18:42:49 GMT  
+		Size: 846.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fae0fb7b2ee5c5bc387374bdd08f53541bdfcf678d9b9f83489c3923af65fed0`  
-		Last Modified: Fri, 21 Feb 2020 21:59:21 GMT  
-		Size: 188.0 B  
+	-	`sha256:b7af2dd09f8eef8efc3d1215ffd89f820bc87f6dc5cd490b3322258ab8e2466e`  
+		Last Modified: Fri, 20 Mar 2020 18:42:55 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9381eb8b0a499263e6b76868e9412c47073e4d805bb897325f5e2de25846c6e7`  
-		Last Modified: Fri, 21 Feb 2020 22:34:51 GMT  
-		Size: 2.7 MB (2678898 bytes)  
+	-	`sha256:3df40b3ea19d171d590d718df04e53e994c0397dc1ecf983d66ae8944f17e436`  
+		Last Modified: Fri, 20 Mar 2020 19:48:49 GMT  
+		Size: 2.7 MB (2678789 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe32b4a7799959aa018913a858ed1e10a11f8447080826733a25e162b5dc5ef5`  
-		Last Modified: Tue, 17 Mar 2020 20:10:21 GMT  
-		Size: 64.7 MB (64704811 bytes)  
+	-	`sha256:6e17ff999a0a67ae05f7ab04bb88ece4fa4865bc028b237b62e2e06cb8e39602`  
+		Last Modified: Fri, 20 Mar 2020 19:49:16 GMT  
+		Size: 64.7 MB (64704828 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ibmjava:8-sfj-alpine`
@@ -1244,7 +1244,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ## `ibmjava:jre`
 
 ```console
-$ docker pull ibmjava@sha256:f60bb7a9ce06e5d3aa070195e2fa3cbb8fd7efe28f37c352ae5935c70dfc9502
+$ docker pull ibmjava@sha256:50fb1fb2c5000313cc96534c8814c8a9bc3dd0d3a0468a0808cd8d4a347edc7a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1319,63 +1319,63 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ### `ibmjava:jre` - linux; 386
 
 ```console
-$ docker pull ibmjava@sha256:c4e532b9a9bd4f623663ff80a972b127e8408e0aae4fcbe19d56ccc37d70b29d
+$ docker pull ibmjava@sha256:e614c930ce14a079b6403cfc8ad3d0bb7fd75fa9064fee9f2569866012cc4e26
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.9 MB (148909052 bytes)**  
+-	Total Size: **148.9 MB (148906927 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3542bad02603389e35d6d9f3efb0bf6266f3fff87e9d59057fc9842c82ba110a`
+-	Image ID: `sha256:7ef3d0d95256f341a4a8039d7f7d12dff4ef11874c394eb03446e22df12c73cf`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 21 Feb 2020 21:39:03 GMT
-ADD file:df203cc2574204629c69613fcea4942faa0f9224ff0c8bacb908b85d73604628 in / 
-# Fri, 21 Feb 2020 21:39:04 GMT
+# Fri, 20 Mar 2020 18:38:55 GMT
+ADD file:d859d389e38b7ac70fd56f97e38d52a77b58e72b96237a4302d1984cdd912a55 in / 
+# Fri, 20 Mar 2020 18:38:56 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 21 Feb 2020 21:39:05 GMT
+# Fri, 20 Mar 2020 18:38:57 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 21 Feb 2020 21:39:05 GMT
+# Fri, 20 Mar 2020 18:38:58 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 21 Feb 2020 21:39:06 GMT
+# Fri, 20 Mar 2020 18:38:58 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Feb 2020 21:55:45 GMT
+# Fri, 20 Mar 2020 19:06:34 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Fri, 21 Feb 2020 21:55:54 GMT
+# Fri, 20 Mar 2020 19:06:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Fri, 28 Feb 2020 22:38:25 GMT
+# Fri, 20 Mar 2020 19:06:42 GMT
 ENV JAVA_VERSION=1.8.0_sr6fp6
-# Tue, 17 Mar 2020 21:52:33 GMT
+# Fri, 20 Mar 2020 19:07:25 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='87f9d45b7e1fa65ec018479f3ca7da69a03b52b0da10b8d1555142eec8ab0093';          YML_FILE='jre/linux/x86_64/index.yml';          ;;        i386)          ESUM='b5f825047c9bb5d360fb83694f12e17b1a5a15abf94ac82cd0a3aea32c9a361c';          YML_FILE='jre/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='f3c04cd07ef269c24373840eae6f59c7db7a16d2e206d393ba93efa6dbb8d74f';          YML_FILE='jre/linux/ppc64le/index.yml';          ;;        s390)          ESUM='2bbefda96f7d1a5f1694893961e92ccc59dfa50375ae5450675d7a4213d5812e';          YML_FILE='jre/linux/s390/index.yml';          ;;        s390x)          ESUM='d5b0508d53d1c7382c06f5bc1daf3d57c19c70d851e86e6b1162bcd93f616f7e';          YML_FILE='jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;
-# Tue, 17 Mar 2020 21:52:33 GMT
+# Fri, 20 Mar 2020 19:07:26 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:ddc482e6a4fa5e364980052ab9f5d236f29ae9b217ed672b3dba44669f4041de`  
-		Last Modified: Fri, 21 Feb 2020 21:39:58 GMT  
-		Size: 27.1 MB (27123823 bytes)  
+	-	`sha256:765ce743592771b94ad8ff27e281e66c13f6039962c7dde4dbe47123081e015b`  
+		Last Modified: Mon, 16 Mar 2020 15:38:41 GMT  
+		Size: 27.1 MB (27122453 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42d2b8bf2fa50513ca7c508e44ac1a15c7ec42b1a3369a91380663868309ab46`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
+	-	`sha256:59dc9c4739090a3d2f7265f1f8184b1cbd8ae133b863f8aa93ec5cf1761ee7a5`  
+		Last Modified: Fri, 20 Mar 2020 18:39:35 GMT  
 		Size: 34.6 KB (34625 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d84c193628e4067b419327ffa1bfef4b73161d9b1e3ce1e4ee83e714fd1d14e8`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
-		Size: 844.0 B  
+	-	`sha256:05a5b698281c077f48fc598e698f0619e4d00a2fedc1832fc95e9cf281408f63`  
+		Last Modified: Fri, 20 Mar 2020 18:39:34 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5271c42d486e4bb18cadbdf885d057c29384a032113047030f7c4bd6253bbf10`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
+	-	`sha256:aaebe599891b1e1befc10d752a117cc5615ec2dd3913d399fd66e26e0cace3e5`  
+		Last Modified: Fri, 20 Mar 2020 18:39:34 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88d6ec2d33bfaf511d9237ee4ecaaf9d1f6b9aea99231bf1bdeb23a03997d84e`  
-		Last Modified: Fri, 21 Feb 2020 21:58:25 GMT  
-		Size: 3.0 MB (2992872 bytes)  
+	-	`sha256:2f829150bc8a53a37ac17eb34838fa33c990881a4031bc650a9dae26b3f7880e`  
+		Last Modified: Fri, 20 Mar 2020 19:09:23 GMT  
+		Size: 3.0 MB (2992132 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6bce12cb4f27608a9ebc28d1b144c5e09150faef5521120babe34f46e3981553`  
-		Last Modified: Tue, 17 Mar 2020 21:55:11 GMT  
-		Size: 118.8 MB (118756726 bytes)  
+	-	`sha256:d17b9ccc4baf3a1ffa517a03c7c3d01900136b128b36a83558c67c42e6c1cbaa`  
+		Last Modified: Fri, 20 Mar 2020 19:09:35 GMT  
+		Size: 118.8 MB (118756706 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ibmjava:jre` - linux; ppc64le
@@ -1443,63 +1443,63 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ### `ibmjava:jre` - linux; s390x
 
 ```console
-$ docker pull ibmjava@sha256:fe0e8eb601949e190db94dac9685d2123abde4762ffba4b05b481da9a50b30c7
+$ docker pull ibmjava@sha256:909ebc85fd2ea1e7e5af1ecbd774f1edca2743692028372b532328654377990b
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.6 MB (155645010 bytes)**  
+-	Total Size: **155.6 MB (155643980 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b388b931ac6a9aae0d18328ac6bbce3951a35df68f3f88ee60ebb1b9ae0ee3df`
+-	Image ID: `sha256:f8499300184228ede6364cecc89561837b803d6c2658257e53557e6cd67ec43f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 21 Feb 2020 21:57:46 GMT
-ADD file:7925c9b35ffa1870e7d336ddcdd6c3434715178c7d08ff2ce9796b651302c347 in / 
-# Fri, 21 Feb 2020 21:57:50 GMT
+# Fri, 20 Mar 2020 18:42:06 GMT
+ADD file:9a9f44c69cdb84f93d495237619b0c7b6d02c3a86cac5ff3c3150d1f46fdba17 in / 
+# Fri, 20 Mar 2020 18:42:09 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 21 Feb 2020 21:57:51 GMT
+# Fri, 20 Mar 2020 18:42:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 21 Feb 2020 21:57:53 GMT
+# Fri, 20 Mar 2020 18:42:11 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 21 Feb 2020 21:57:53 GMT
+# Fri, 20 Mar 2020 18:42:11 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Feb 2020 22:31:02 GMT
+# Fri, 20 Mar 2020 19:46:08 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Fri, 21 Feb 2020 22:31:15 GMT
+# Fri, 20 Mar 2020 19:46:15 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Tue, 17 Mar 2020 20:07:31 GMT
+# Fri, 20 Mar 2020 19:46:15 GMT
 ENV JAVA_VERSION=1.8.0_sr6fp6
-# Tue, 17 Mar 2020 20:08:13 GMT
+# Fri, 20 Mar 2020 19:46:56 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='87f9d45b7e1fa65ec018479f3ca7da69a03b52b0da10b8d1555142eec8ab0093';          YML_FILE='jre/linux/x86_64/index.yml';          ;;        i386)          ESUM='b5f825047c9bb5d360fb83694f12e17b1a5a15abf94ac82cd0a3aea32c9a361c';          YML_FILE='jre/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='f3c04cd07ef269c24373840eae6f59c7db7a16d2e206d393ba93efa6dbb8d74f';          YML_FILE='jre/linux/ppc64le/index.yml';          ;;        s390)          ESUM='2bbefda96f7d1a5f1694893961e92ccc59dfa50375ae5450675d7a4213d5812e';          YML_FILE='jre/linux/s390/index.yml';          ;;        s390x)          ESUM='d5b0508d53d1c7382c06f5bc1daf3d57c19c70d851e86e6b1162bcd93f616f7e';          YML_FILE='jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;
-# Tue, 17 Mar 2020 20:08:15 GMT
+# Fri, 20 Mar 2020 19:46:59 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:b84fcb37dc33cf7416e0f1cf1219e16a15ab0d1c3aa4638d362f19c2679451de`  
-		Last Modified: Fri, 21 Feb 2020 21:59:09 GMT  
-		Size: 25.4 MB (25365672 bytes)  
+	-	`sha256:345ee2b1c666cad4104ddd5596e148e5c29087184128bb6099412591c696a492`  
+		Last Modified: Mon, 16 Mar 2020 15:40:41 GMT  
+		Size: 25.4 MB (25364606 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9594931f903b7b3c4f5cb63196d29d715c50b567c128a5572131c12a25f04139`  
-		Last Modified: Fri, 21 Feb 2020 21:59:06 GMT  
-		Size: 36.2 KB (36186 bytes)  
+	-	`sha256:6259e081be079eda34010ff7e7c4be7d6d6d927b64ddaa77f8a7f09e30a69229`  
+		Last Modified: Fri, 20 Mar 2020 18:42:50 GMT  
+		Size: 36.2 KB (36183 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66af13675c2330803d61d2198bb4f69c36bb7eed2d2b2bc3660fed8e873dce59`  
-		Last Modified: Fri, 21 Feb 2020 21:59:11 GMT  
-		Size: 847.0 B  
+	-	`sha256:5d110c40c78a87ebc1e1430d0fb68dd1aec06706c6b2d6d7c82a661f8b74f89a`  
+		Last Modified: Fri, 20 Mar 2020 18:42:49 GMT  
+		Size: 846.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fae0fb7b2ee5c5bc387374bdd08f53541bdfcf678d9b9f83489c3923af65fed0`  
-		Last Modified: Fri, 21 Feb 2020 21:59:21 GMT  
-		Size: 188.0 B  
+	-	`sha256:b7af2dd09f8eef8efc3d1215ffd89f820bc87f6dc5cd490b3322258ab8e2466e`  
+		Last Modified: Fri, 20 Mar 2020 18:42:55 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9381eb8b0a499263e6b76868e9412c47073e4d805bb897325f5e2de25846c6e7`  
-		Last Modified: Fri, 21 Feb 2020 22:34:51 GMT  
-		Size: 2.7 MB (2678898 bytes)  
+	-	`sha256:3df40b3ea19d171d590d718df04e53e994c0397dc1ecf983d66ae8944f17e436`  
+		Last Modified: Fri, 20 Mar 2020 19:48:49 GMT  
+		Size: 2.7 MB (2678789 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35f12d51958634384472b004f772b04e01b3be892b80b5ff55922a076c451799`  
-		Last Modified: Tue, 17 Mar 2020 20:10:08 GMT  
-		Size: 127.6 MB (127563219 bytes)  
+	-	`sha256:17efdd385db38700338072a70e4fde76626839b7d06559f78fad135b34bc816f`  
+		Last Modified: Fri, 20 Mar 2020 19:49:03 GMT  
+		Size: 127.6 MB (127563366 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ibmjava:jre-alpine`
@@ -1565,7 +1565,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ## `ibmjava:latest`
 
 ```console
-$ docker pull ibmjava@sha256:f60bb7a9ce06e5d3aa070195e2fa3cbb8fd7efe28f37c352ae5935c70dfc9502
+$ docker pull ibmjava@sha256:50fb1fb2c5000313cc96534c8814c8a9bc3dd0d3a0468a0808cd8d4a347edc7a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1640,63 +1640,63 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ### `ibmjava:latest` - linux; 386
 
 ```console
-$ docker pull ibmjava@sha256:c4e532b9a9bd4f623663ff80a972b127e8408e0aae4fcbe19d56ccc37d70b29d
+$ docker pull ibmjava@sha256:e614c930ce14a079b6403cfc8ad3d0bb7fd75fa9064fee9f2569866012cc4e26
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.9 MB (148909052 bytes)**  
+-	Total Size: **148.9 MB (148906927 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3542bad02603389e35d6d9f3efb0bf6266f3fff87e9d59057fc9842c82ba110a`
+-	Image ID: `sha256:7ef3d0d95256f341a4a8039d7f7d12dff4ef11874c394eb03446e22df12c73cf`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 21 Feb 2020 21:39:03 GMT
-ADD file:df203cc2574204629c69613fcea4942faa0f9224ff0c8bacb908b85d73604628 in / 
-# Fri, 21 Feb 2020 21:39:04 GMT
+# Fri, 20 Mar 2020 18:38:55 GMT
+ADD file:d859d389e38b7ac70fd56f97e38d52a77b58e72b96237a4302d1984cdd912a55 in / 
+# Fri, 20 Mar 2020 18:38:56 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 21 Feb 2020 21:39:05 GMT
+# Fri, 20 Mar 2020 18:38:57 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 21 Feb 2020 21:39:05 GMT
+# Fri, 20 Mar 2020 18:38:58 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 21 Feb 2020 21:39:06 GMT
+# Fri, 20 Mar 2020 18:38:58 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Feb 2020 21:55:45 GMT
+# Fri, 20 Mar 2020 19:06:34 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Fri, 21 Feb 2020 21:55:54 GMT
+# Fri, 20 Mar 2020 19:06:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Fri, 28 Feb 2020 22:38:25 GMT
+# Fri, 20 Mar 2020 19:06:42 GMT
 ENV JAVA_VERSION=1.8.0_sr6fp6
-# Tue, 17 Mar 2020 21:52:33 GMT
+# Fri, 20 Mar 2020 19:07:25 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='87f9d45b7e1fa65ec018479f3ca7da69a03b52b0da10b8d1555142eec8ab0093';          YML_FILE='jre/linux/x86_64/index.yml';          ;;        i386)          ESUM='b5f825047c9bb5d360fb83694f12e17b1a5a15abf94ac82cd0a3aea32c9a361c';          YML_FILE='jre/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='f3c04cd07ef269c24373840eae6f59c7db7a16d2e206d393ba93efa6dbb8d74f';          YML_FILE='jre/linux/ppc64le/index.yml';          ;;        s390)          ESUM='2bbefda96f7d1a5f1694893961e92ccc59dfa50375ae5450675d7a4213d5812e';          YML_FILE='jre/linux/s390/index.yml';          ;;        s390x)          ESUM='d5b0508d53d1c7382c06f5bc1daf3d57c19c70d851e86e6b1162bcd93f616f7e';          YML_FILE='jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;
-# Tue, 17 Mar 2020 21:52:33 GMT
+# Fri, 20 Mar 2020 19:07:26 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:ddc482e6a4fa5e364980052ab9f5d236f29ae9b217ed672b3dba44669f4041de`  
-		Last Modified: Fri, 21 Feb 2020 21:39:58 GMT  
-		Size: 27.1 MB (27123823 bytes)  
+	-	`sha256:765ce743592771b94ad8ff27e281e66c13f6039962c7dde4dbe47123081e015b`  
+		Last Modified: Mon, 16 Mar 2020 15:38:41 GMT  
+		Size: 27.1 MB (27122453 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42d2b8bf2fa50513ca7c508e44ac1a15c7ec42b1a3369a91380663868309ab46`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
+	-	`sha256:59dc9c4739090a3d2f7265f1f8184b1cbd8ae133b863f8aa93ec5cf1761ee7a5`  
+		Last Modified: Fri, 20 Mar 2020 18:39:35 GMT  
 		Size: 34.6 KB (34625 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d84c193628e4067b419327ffa1bfef4b73161d9b1e3ce1e4ee83e714fd1d14e8`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
-		Size: 844.0 B  
+	-	`sha256:05a5b698281c077f48fc598e698f0619e4d00a2fedc1832fc95e9cf281408f63`  
+		Last Modified: Fri, 20 Mar 2020 18:39:34 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5271c42d486e4bb18cadbdf885d057c29384a032113047030f7c4bd6253bbf10`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
+	-	`sha256:aaebe599891b1e1befc10d752a117cc5615ec2dd3913d399fd66e26e0cace3e5`  
+		Last Modified: Fri, 20 Mar 2020 18:39:34 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88d6ec2d33bfaf511d9237ee4ecaaf9d1f6b9aea99231bf1bdeb23a03997d84e`  
-		Last Modified: Fri, 21 Feb 2020 21:58:25 GMT  
-		Size: 3.0 MB (2992872 bytes)  
+	-	`sha256:2f829150bc8a53a37ac17eb34838fa33c990881a4031bc650a9dae26b3f7880e`  
+		Last Modified: Fri, 20 Mar 2020 19:09:23 GMT  
+		Size: 3.0 MB (2992132 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6bce12cb4f27608a9ebc28d1b144c5e09150faef5521120babe34f46e3981553`  
-		Last Modified: Tue, 17 Mar 2020 21:55:11 GMT  
-		Size: 118.8 MB (118756726 bytes)  
+	-	`sha256:d17b9ccc4baf3a1ffa517a03c7c3d01900136b128b36a83558c67c42e6c1cbaa`  
+		Last Modified: Fri, 20 Mar 2020 19:09:35 GMT  
+		Size: 118.8 MB (118756706 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ibmjava:latest` - linux; ppc64le
@@ -1764,69 +1764,69 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ### `ibmjava:latest` - linux; s390x
 
 ```console
-$ docker pull ibmjava@sha256:fe0e8eb601949e190db94dac9685d2123abde4762ffba4b05b481da9a50b30c7
+$ docker pull ibmjava@sha256:909ebc85fd2ea1e7e5af1ecbd774f1edca2743692028372b532328654377990b
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.6 MB (155645010 bytes)**  
+-	Total Size: **155.6 MB (155643980 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b388b931ac6a9aae0d18328ac6bbce3951a35df68f3f88ee60ebb1b9ae0ee3df`
+-	Image ID: `sha256:f8499300184228ede6364cecc89561837b803d6c2658257e53557e6cd67ec43f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 21 Feb 2020 21:57:46 GMT
-ADD file:7925c9b35ffa1870e7d336ddcdd6c3434715178c7d08ff2ce9796b651302c347 in / 
-# Fri, 21 Feb 2020 21:57:50 GMT
+# Fri, 20 Mar 2020 18:42:06 GMT
+ADD file:9a9f44c69cdb84f93d495237619b0c7b6d02c3a86cac5ff3c3150d1f46fdba17 in / 
+# Fri, 20 Mar 2020 18:42:09 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 21 Feb 2020 21:57:51 GMT
+# Fri, 20 Mar 2020 18:42:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 21 Feb 2020 21:57:53 GMT
+# Fri, 20 Mar 2020 18:42:11 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 21 Feb 2020 21:57:53 GMT
+# Fri, 20 Mar 2020 18:42:11 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Feb 2020 22:31:02 GMT
+# Fri, 20 Mar 2020 19:46:08 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Fri, 21 Feb 2020 22:31:15 GMT
+# Fri, 20 Mar 2020 19:46:15 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Tue, 17 Mar 2020 20:07:31 GMT
+# Fri, 20 Mar 2020 19:46:15 GMT
 ENV JAVA_VERSION=1.8.0_sr6fp6
-# Tue, 17 Mar 2020 20:08:13 GMT
+# Fri, 20 Mar 2020 19:46:56 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='87f9d45b7e1fa65ec018479f3ca7da69a03b52b0da10b8d1555142eec8ab0093';          YML_FILE='jre/linux/x86_64/index.yml';          ;;        i386)          ESUM='b5f825047c9bb5d360fb83694f12e17b1a5a15abf94ac82cd0a3aea32c9a361c';          YML_FILE='jre/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='f3c04cd07ef269c24373840eae6f59c7db7a16d2e206d393ba93efa6dbb8d74f';          YML_FILE='jre/linux/ppc64le/index.yml';          ;;        s390)          ESUM='2bbefda96f7d1a5f1694893961e92ccc59dfa50375ae5450675d7a4213d5812e';          YML_FILE='jre/linux/s390/index.yml';          ;;        s390x)          ESUM='d5b0508d53d1c7382c06f5bc1daf3d57c19c70d851e86e6b1162bcd93f616f7e';          YML_FILE='jre/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;
-# Tue, 17 Mar 2020 20:08:15 GMT
+# Fri, 20 Mar 2020 19:46:59 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:b84fcb37dc33cf7416e0f1cf1219e16a15ab0d1c3aa4638d362f19c2679451de`  
-		Last Modified: Fri, 21 Feb 2020 21:59:09 GMT  
-		Size: 25.4 MB (25365672 bytes)  
+	-	`sha256:345ee2b1c666cad4104ddd5596e148e5c29087184128bb6099412591c696a492`  
+		Last Modified: Mon, 16 Mar 2020 15:40:41 GMT  
+		Size: 25.4 MB (25364606 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9594931f903b7b3c4f5cb63196d29d715c50b567c128a5572131c12a25f04139`  
-		Last Modified: Fri, 21 Feb 2020 21:59:06 GMT  
-		Size: 36.2 KB (36186 bytes)  
+	-	`sha256:6259e081be079eda34010ff7e7c4be7d6d6d927b64ddaa77f8a7f09e30a69229`  
+		Last Modified: Fri, 20 Mar 2020 18:42:50 GMT  
+		Size: 36.2 KB (36183 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66af13675c2330803d61d2198bb4f69c36bb7eed2d2b2bc3660fed8e873dce59`  
-		Last Modified: Fri, 21 Feb 2020 21:59:11 GMT  
-		Size: 847.0 B  
+	-	`sha256:5d110c40c78a87ebc1e1430d0fb68dd1aec06706c6b2d6d7c82a661f8b74f89a`  
+		Last Modified: Fri, 20 Mar 2020 18:42:49 GMT  
+		Size: 846.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fae0fb7b2ee5c5bc387374bdd08f53541bdfcf678d9b9f83489c3923af65fed0`  
-		Last Modified: Fri, 21 Feb 2020 21:59:21 GMT  
-		Size: 188.0 B  
+	-	`sha256:b7af2dd09f8eef8efc3d1215ffd89f820bc87f6dc5cd490b3322258ab8e2466e`  
+		Last Modified: Fri, 20 Mar 2020 18:42:55 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9381eb8b0a499263e6b76868e9412c47073e4d805bb897325f5e2de25846c6e7`  
-		Last Modified: Fri, 21 Feb 2020 22:34:51 GMT  
-		Size: 2.7 MB (2678898 bytes)  
+	-	`sha256:3df40b3ea19d171d590d718df04e53e994c0397dc1ecf983d66ae8944f17e436`  
+		Last Modified: Fri, 20 Mar 2020 19:48:49 GMT  
+		Size: 2.7 MB (2678789 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35f12d51958634384472b004f772b04e01b3be892b80b5ff55922a076c451799`  
-		Last Modified: Tue, 17 Mar 2020 20:10:08 GMT  
-		Size: 127.6 MB (127563219 bytes)  
+	-	`sha256:17efdd385db38700338072a70e4fde76626839b7d06559f78fad135b34bc816f`  
+		Last Modified: Fri, 20 Mar 2020 19:49:03 GMT  
+		Size: 127.6 MB (127563366 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ibmjava:sdk`
 
 ```console
-$ docker pull ibmjava@sha256:7bcedddcfbddaec521fee72f6032117bc2e67ed6c48777a9a290a18670dbce31
+$ docker pull ibmjava@sha256:60181dc82b502e7d2d40d7c92fe882d99dd6540e451b94c676126894cdcec176
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1901,63 +1901,63 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 ### `ibmjava:sdk` - linux; 386
 
 ```console
-$ docker pull ibmjava@sha256:4de9f58e57e9a2f06a5b27e83b4d09b82f5b58340b668c6276102b5dc7d97a6c
+$ docker pull ibmjava@sha256:e5bf894ea0b649d695507b82061e9cf16e210c65a5ad2155b5a3c9bdb9f07502
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **186.0 MB (185962242 bytes)**  
+-	Total Size: **186.0 MB (185959899 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1a0fba875b159b9e0b1b35d3e4ef0e4275640d59b03a6f9aea8069146de2c0e4`
+-	Image ID: `sha256:f978c14c98e74afdac4aaab6c6c32e9c364ed888f4f77d2cf2dd51c9bb1a319c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 21 Feb 2020 21:39:03 GMT
-ADD file:df203cc2574204629c69613fcea4942faa0f9224ff0c8bacb908b85d73604628 in / 
-# Fri, 21 Feb 2020 21:39:04 GMT
+# Fri, 20 Mar 2020 18:38:55 GMT
+ADD file:d859d389e38b7ac70fd56f97e38d52a77b58e72b96237a4302d1984cdd912a55 in / 
+# Fri, 20 Mar 2020 18:38:56 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 21 Feb 2020 21:39:05 GMT
+# Fri, 20 Mar 2020 18:38:57 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 21 Feb 2020 21:39:05 GMT
+# Fri, 20 Mar 2020 18:38:58 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 21 Feb 2020 21:39:06 GMT
+# Fri, 20 Mar 2020 18:38:58 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Feb 2020 21:55:45 GMT
+# Fri, 20 Mar 2020 19:06:34 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Fri, 21 Feb 2020 21:55:54 GMT
+# Fri, 20 Mar 2020 19:06:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Fri, 28 Feb 2020 22:38:25 GMT
+# Fri, 20 Mar 2020 19:06:42 GMT
 ENV JAVA_VERSION=1.8.0_sr6fp6
-# Tue, 17 Mar 2020 21:54:31 GMT
+# Fri, 20 Mar 2020 19:09:06 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='c1fd9c8ad1cf5e93dd6dfb70a04d41d33e6b554fda314841a6a9443b15317be8';          YML_FILE='sdk/linux/x86_64/index.yml';          ;;        i386)          ESUM='9fc780849de963e43639a633996acef4a86577084ac493bf3a166eef2abe1a8f';          YML_FILE='sdk/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='07f2af68e1e64a903cda5223c41a8d463d2317bad7998435ce9181ac3d07337d';          YML_FILE='sdk/linux/ppc64le/index.yml';          ;;        s390)          ESUM='5e043e66a7d7b55619ac0fcc3b8b713b172dfa76d5db72ffb4252fa8aa52edc0';          YML_FILE='sdk/linux/s390/index.yml';          ;;        s390x)          ESUM='1783d826d64ff6b3d2e4fe6f5f581d4e6464f2597eddbfda7fd0e13d52fa2794';          YML_FILE='sdk/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;
-# Tue, 17 Mar 2020 21:54:31 GMT
+# Fri, 20 Mar 2020 19:09:06 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:ddc482e6a4fa5e364980052ab9f5d236f29ae9b217ed672b3dba44669f4041de`  
-		Last Modified: Fri, 21 Feb 2020 21:39:58 GMT  
-		Size: 27.1 MB (27123823 bytes)  
+	-	`sha256:765ce743592771b94ad8ff27e281e66c13f6039962c7dde4dbe47123081e015b`  
+		Last Modified: Mon, 16 Mar 2020 15:38:41 GMT  
+		Size: 27.1 MB (27122453 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42d2b8bf2fa50513ca7c508e44ac1a15c7ec42b1a3369a91380663868309ab46`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
+	-	`sha256:59dc9c4739090a3d2f7265f1f8184b1cbd8ae133b863f8aa93ec5cf1761ee7a5`  
+		Last Modified: Fri, 20 Mar 2020 18:39:35 GMT  
 		Size: 34.6 KB (34625 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d84c193628e4067b419327ffa1bfef4b73161d9b1e3ce1e4ee83e714fd1d14e8`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
-		Size: 844.0 B  
+	-	`sha256:05a5b698281c077f48fc598e698f0619e4d00a2fedc1832fc95e9cf281408f63`  
+		Last Modified: Fri, 20 Mar 2020 18:39:34 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5271c42d486e4bb18cadbdf885d057c29384a032113047030f7c4bd6253bbf10`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
+	-	`sha256:aaebe599891b1e1befc10d752a117cc5615ec2dd3913d399fd66e26e0cace3e5`  
+		Last Modified: Fri, 20 Mar 2020 18:39:34 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88d6ec2d33bfaf511d9237ee4ecaaf9d1f6b9aea99231bf1bdeb23a03997d84e`  
-		Last Modified: Fri, 21 Feb 2020 21:58:25 GMT  
-		Size: 3.0 MB (2992872 bytes)  
+	-	`sha256:2f829150bc8a53a37ac17eb34838fa33c990881a4031bc650a9dae26b3f7880e`  
+		Last Modified: Fri, 20 Mar 2020 19:09:23 GMT  
+		Size: 3.0 MB (2992132 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a7ef74059c466992c007cd2f862e0561bebd26590e01663fdf0986d905f9642`  
-		Last Modified: Tue, 17 Mar 2020 21:55:57 GMT  
-		Size: 155.8 MB (155809916 bytes)  
+	-	`sha256:f98a6829047ce15683469a566950899b9cc37fecf40cf1535933c7b932a992dc`  
+		Last Modified: Fri, 20 Mar 2020 19:10:09 GMT  
+		Size: 155.8 MB (155809678 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ibmjava:sdk` - linux; ppc64le
@@ -2025,63 +2025,63 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 ### `ibmjava:sdk` - linux; s390x
 
 ```console
-$ docker pull ibmjava@sha256:9f5f2d754b0eebacc11fda65740e54d3700e75524fcebd2edeb18c681aaa1827
+$ docker pull ibmjava@sha256:3a874f573a1ce8c35ef060c380f0f68fa861314010133b3c7fa1b1e8e3a9654b
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **185.9 MB (185904721 bytes)**  
+-	Total Size: **185.9 MB (185903936 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:09c00fc3246cf30dcf7d75e0466aae94a8862a6bc383e226780addf03afa209a`
+-	Image ID: `sha256:9a75ab8c50019e94e15ee94e37a2b3aef718ea0566e6c5047464190ad2c313a7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 21 Feb 2020 21:57:46 GMT
-ADD file:7925c9b35ffa1870e7d336ddcdd6c3434715178c7d08ff2ce9796b651302c347 in / 
-# Fri, 21 Feb 2020 21:57:50 GMT
+# Fri, 20 Mar 2020 18:42:06 GMT
+ADD file:9a9f44c69cdb84f93d495237619b0c7b6d02c3a86cac5ff3c3150d1f46fdba17 in / 
+# Fri, 20 Mar 2020 18:42:09 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 21 Feb 2020 21:57:51 GMT
+# Fri, 20 Mar 2020 18:42:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 21 Feb 2020 21:57:53 GMT
+# Fri, 20 Mar 2020 18:42:11 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 21 Feb 2020 21:57:53 GMT
+# Fri, 20 Mar 2020 18:42:11 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Feb 2020 22:31:02 GMT
+# Fri, 20 Mar 2020 19:46:08 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Fri, 21 Feb 2020 22:31:15 GMT
+# Fri, 20 Mar 2020 19:46:15 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Tue, 17 Mar 2020 20:07:31 GMT
+# Fri, 20 Mar 2020 19:46:15 GMT
 ENV JAVA_VERSION=1.8.0_sr6fp6
-# Tue, 17 Mar 2020 20:09:46 GMT
+# Fri, 20 Mar 2020 19:48:30 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='c1fd9c8ad1cf5e93dd6dfb70a04d41d33e6b554fda314841a6a9443b15317be8';          YML_FILE='sdk/linux/x86_64/index.yml';          ;;        i386)          ESUM='9fc780849de963e43639a633996acef4a86577084ac493bf3a166eef2abe1a8f';          YML_FILE='sdk/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='07f2af68e1e64a903cda5223c41a8d463d2317bad7998435ce9181ac3d07337d';          YML_FILE='sdk/linux/ppc64le/index.yml';          ;;        s390)          ESUM='5e043e66a7d7b55619ac0fcc3b8b713b172dfa76d5db72ffb4252fa8aa52edc0';          YML_FILE='sdk/linux/s390/index.yml';          ;;        s390x)          ESUM='1783d826d64ff6b3d2e4fe6f5f581d4e6464f2597eddbfda7fd0e13d52fa2794';          YML_FILE='sdk/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;
-# Tue, 17 Mar 2020 20:09:49 GMT
+# Fri, 20 Mar 2020 19:48:33 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:b84fcb37dc33cf7416e0f1cf1219e16a15ab0d1c3aa4638d362f19c2679451de`  
-		Last Modified: Fri, 21 Feb 2020 21:59:09 GMT  
-		Size: 25.4 MB (25365672 bytes)  
+	-	`sha256:345ee2b1c666cad4104ddd5596e148e5c29087184128bb6099412591c696a492`  
+		Last Modified: Mon, 16 Mar 2020 15:40:41 GMT  
+		Size: 25.4 MB (25364606 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9594931f903b7b3c4f5cb63196d29d715c50b567c128a5572131c12a25f04139`  
-		Last Modified: Fri, 21 Feb 2020 21:59:06 GMT  
-		Size: 36.2 KB (36186 bytes)  
+	-	`sha256:6259e081be079eda34010ff7e7c4be7d6d6d927b64ddaa77f8a7f09e30a69229`  
+		Last Modified: Fri, 20 Mar 2020 18:42:50 GMT  
+		Size: 36.2 KB (36183 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66af13675c2330803d61d2198bb4f69c36bb7eed2d2b2bc3660fed8e873dce59`  
-		Last Modified: Fri, 21 Feb 2020 21:59:11 GMT  
-		Size: 847.0 B  
+	-	`sha256:5d110c40c78a87ebc1e1430d0fb68dd1aec06706c6b2d6d7c82a661f8b74f89a`  
+		Last Modified: Fri, 20 Mar 2020 18:42:49 GMT  
+		Size: 846.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fae0fb7b2ee5c5bc387374bdd08f53541bdfcf678d9b9f83489c3923af65fed0`  
-		Last Modified: Fri, 21 Feb 2020 21:59:21 GMT  
-		Size: 188.0 B  
+	-	`sha256:b7af2dd09f8eef8efc3d1215ffd89f820bc87f6dc5cd490b3322258ab8e2466e`  
+		Last Modified: Fri, 20 Mar 2020 18:42:55 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9381eb8b0a499263e6b76868e9412c47073e4d805bb897325f5e2de25846c6e7`  
-		Last Modified: Fri, 21 Feb 2020 22:34:51 GMT  
-		Size: 2.7 MB (2678898 bytes)  
+	-	`sha256:3df40b3ea19d171d590d718df04e53e994c0397dc1ecf983d66ae8944f17e436`  
+		Last Modified: Fri, 20 Mar 2020 19:48:49 GMT  
+		Size: 2.7 MB (2678789 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cb3d7a79c0fbc77b94b602c26866cc0a410193f1294e242b2f137dca4dfe4d5`  
-		Last Modified: Tue, 17 Mar 2020 20:10:37 GMT  
-		Size: 157.8 MB (157822930 bytes)  
+	-	`sha256:de001c7fc288fc7c96175b1a9e89a5e835451cb469d612617545f283492e1b98`  
+		Last Modified: Fri, 20 Mar 2020 19:49:31 GMT  
+		Size: 157.8 MB (157823322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ibmjava:sdk-alpine`
@@ -2147,7 +2147,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 ## `ibmjava:sfj`
 
 ```console
-$ docker pull ibmjava@sha256:5d17556fcba7546608ff01d7f26f92c7d362a4f6512d7cd4d59e7e153a6e9750
+$ docker pull ibmjava@sha256:9e601f4bef3e4101415588ca991cbe4d74c1b6d2e326c29e420fafb02588161f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2222,63 +2222,63 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ### `ibmjava:sfj` - linux; 386
 
 ```console
-$ docker pull ibmjava@sha256:ca3d6da45be87618e136cd167dfd3580a1b013951672f24858954a8630ced4d3
+$ docker pull ibmjava@sha256:512d432d4352b3e68a928ca8d08698e6cf8f2fc316c00a4f0a026c9e883c1d50
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **93.1 MB (93145458 bytes)**  
+-	Total Size: **93.1 MB (93143365 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c549a2d88a34165677b17341435fcd9120d4d377d13753649bea392573cecd36`
+-	Image ID: `sha256:4fb8d2fd47a9dbbd4512c67287b42f93aac04b15ebf51ed797b74ff6c7dc6328`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 21 Feb 2020 21:39:03 GMT
-ADD file:df203cc2574204629c69613fcea4942faa0f9224ff0c8bacb908b85d73604628 in / 
-# Fri, 21 Feb 2020 21:39:04 GMT
+# Fri, 20 Mar 2020 18:38:55 GMT
+ADD file:d859d389e38b7ac70fd56f97e38d52a77b58e72b96237a4302d1984cdd912a55 in / 
+# Fri, 20 Mar 2020 18:38:56 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 21 Feb 2020 21:39:05 GMT
+# Fri, 20 Mar 2020 18:38:57 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 21 Feb 2020 21:39:05 GMT
+# Fri, 20 Mar 2020 18:38:58 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 21 Feb 2020 21:39:06 GMT
+# Fri, 20 Mar 2020 18:38:58 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Feb 2020 21:55:45 GMT
+# Fri, 20 Mar 2020 19:06:34 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Fri, 21 Feb 2020 21:55:54 GMT
+# Fri, 20 Mar 2020 19:06:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Fri, 28 Feb 2020 22:38:25 GMT
+# Fri, 20 Mar 2020 19:06:42 GMT
 ENV JAVA_VERSION=1.8.0_sr6fp6
-# Tue, 17 Mar 2020 21:53:23 GMT
+# Fri, 20 Mar 2020 19:08:11 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='7d7a7b6e761282a6c233ec19363e4716b7bb1a2d0cf6bf023cb735180167eb53';          YML_FILE='sfj/linux/x86_64/index.yml';          ;;        i386)          ESUM='771f7d113a01bfae2386cfd467549144e60342004067c442bae51c532525c126';          YML_FILE='sfj/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='7fbbcf11851d42fcdc96801ad104316cda30cfd4cd82d7406d93c6d636a4f183';          YML_FILE='sfj/linux/ppc64le/index.yml';          ;;        s390)          ESUM='063e61faf3ed8bada1cb94b45beb429ad616c4fb11538cfa841a6b6c69bd416a';          YML_FILE='sfj/linux/s390/index.yml';          ;;        s390x)          ESUM='8ff6d142dd1acaf34c3f8a72eb45cae1ae518e0ee732bbae60e393d9eebecfff';          YML_FILE='sfj/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;
-# Tue, 17 Mar 2020 21:53:23 GMT
+# Fri, 20 Mar 2020 19:08:11 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:ddc482e6a4fa5e364980052ab9f5d236f29ae9b217ed672b3dba44669f4041de`  
-		Last Modified: Fri, 21 Feb 2020 21:39:58 GMT  
-		Size: 27.1 MB (27123823 bytes)  
+	-	`sha256:765ce743592771b94ad8ff27e281e66c13f6039962c7dde4dbe47123081e015b`  
+		Last Modified: Mon, 16 Mar 2020 15:38:41 GMT  
+		Size: 27.1 MB (27122453 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42d2b8bf2fa50513ca7c508e44ac1a15c7ec42b1a3369a91380663868309ab46`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
+	-	`sha256:59dc9c4739090a3d2f7265f1f8184b1cbd8ae133b863f8aa93ec5cf1761ee7a5`  
+		Last Modified: Fri, 20 Mar 2020 18:39:35 GMT  
 		Size: 34.6 KB (34625 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d84c193628e4067b419327ffa1bfef4b73161d9b1e3ce1e4ee83e714fd1d14e8`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
-		Size: 844.0 B  
+	-	`sha256:05a5b698281c077f48fc598e698f0619e4d00a2fedc1832fc95e9cf281408f63`  
+		Last Modified: Fri, 20 Mar 2020 18:39:34 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5271c42d486e4bb18cadbdf885d057c29384a032113047030f7c4bd6253bbf10`  
-		Last Modified: Fri, 21 Feb 2020 21:39:52 GMT  
+	-	`sha256:aaebe599891b1e1befc10d752a117cc5615ec2dd3913d399fd66e26e0cace3e5`  
+		Last Modified: Fri, 20 Mar 2020 18:39:34 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88d6ec2d33bfaf511d9237ee4ecaaf9d1f6b9aea99231bf1bdeb23a03997d84e`  
-		Last Modified: Fri, 21 Feb 2020 21:58:25 GMT  
-		Size: 3.0 MB (2992872 bytes)  
+	-	`sha256:2f829150bc8a53a37ac17eb34838fa33c990881a4031bc650a9dae26b3f7880e`  
+		Last Modified: Fri, 20 Mar 2020 19:09:23 GMT  
+		Size: 3.0 MB (2992132 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3594fc891fa2a2c77c7d4c9bfaa0eb79c38c9b78716926b8fac2c1414462e51c`  
-		Last Modified: Tue, 17 Mar 2020 21:55:34 GMT  
-		Size: 63.0 MB (62993132 bytes)  
+	-	`sha256:9fea3a6c11f0a31143078f32a5cb363d7e21dbf736d10106900fc6b133bd480b`  
+		Last Modified: Fri, 20 Mar 2020 19:09:49 GMT  
+		Size: 63.0 MB (62993144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ibmjava:sfj` - linux; ppc64le
@@ -2346,63 +2346,63 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 ### `ibmjava:sfj` - linux; s390x
 
 ```console
-$ docker pull ibmjava@sha256:c649c10e2093b3229316c08ed81566085c6f7df2466f6499728e3b5cfe2fe62e
+$ docker pull ibmjava@sha256:32a67b84170f580942684032331cfe03b9bfa22090ae1fd5cf3b4697c887ecfb
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.8 MB (92786602 bytes)**  
+-	Total Size: **92.8 MB (92785442 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5a44d1d249fe49097151e5492dd9b1e9524e8eac6f1f86ec3ec7c00c5a6ecd3b`
+-	Image ID: `sha256:ba992fe20ce59839d900dddc25130e495ef9f6d639ece2c95c7f49522109aa4e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 21 Feb 2020 21:57:46 GMT
-ADD file:7925c9b35ffa1870e7d336ddcdd6c3434715178c7d08ff2ce9796b651302c347 in / 
-# Fri, 21 Feb 2020 21:57:50 GMT
+# Fri, 20 Mar 2020 18:42:06 GMT
+ADD file:9a9f44c69cdb84f93d495237619b0c7b6d02c3a86cac5ff3c3150d1f46fdba17 in / 
+# Fri, 20 Mar 2020 18:42:09 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 21 Feb 2020 21:57:51 GMT
+# Fri, 20 Mar 2020 18:42:10 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 21 Feb 2020 21:57:53 GMT
+# Fri, 20 Mar 2020 18:42:11 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 21 Feb 2020 21:57:53 GMT
+# Fri, 20 Mar 2020 18:42:11 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Feb 2020 22:31:02 GMT
+# Fri, 20 Mar 2020 19:46:08 GMT
 MAINTAINER Jayashree Gopi <jayasg12@in.ibm.com> (@jayasg12)
-# Fri, 21 Feb 2020 22:31:15 GMT
+# Fri, 20 Mar 2020 19:46:15 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Tue, 17 Mar 2020 20:07:31 GMT
+# Fri, 20 Mar 2020 19:46:15 GMT
 ENV JAVA_VERSION=1.8.0_sr6fp6
-# Tue, 17 Mar 2020 20:08:51 GMT
+# Fri, 20 Mar 2020 19:47:34 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='7d7a7b6e761282a6c233ec19363e4716b7bb1a2d0cf6bf023cb735180167eb53';          YML_FILE='sfj/linux/x86_64/index.yml';          ;;        i386)          ESUM='771f7d113a01bfae2386cfd467549144e60342004067c442bae51c532525c126';          YML_FILE='sfj/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='7fbbcf11851d42fcdc96801ad104316cda30cfd4cd82d7406d93c6d636a4f183';          YML_FILE='sfj/linux/ppc64le/index.yml';          ;;        s390)          ESUM='063e61faf3ed8bada1cb94b45beb429ad616c4fb11538cfa841a6b6c69bd416a';          YML_FILE='sfj/linux/s390/index.yml';          ;;        s390x)          ESUM='8ff6d142dd1acaf34c3f8a72eb45cae1ae518e0ee732bbae60e393d9eebecfff';          YML_FILE='sfj/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(sed -n '/^'${JAVA_VERSION}:'/{n;s/\s*uri:\s//p}'< /tmp/index.yml);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;
-# Tue, 17 Mar 2020 20:08:52 GMT
+# Fri, 20 Mar 2020 19:47:36 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin IBM_JAVA_OPTIONS=-XX:+UseContainerSupport
 ```
 
 -	Layers:
-	-	`sha256:b84fcb37dc33cf7416e0f1cf1219e16a15ab0d1c3aa4638d362f19c2679451de`  
-		Last Modified: Fri, 21 Feb 2020 21:59:09 GMT  
-		Size: 25.4 MB (25365672 bytes)  
+	-	`sha256:345ee2b1c666cad4104ddd5596e148e5c29087184128bb6099412591c696a492`  
+		Last Modified: Mon, 16 Mar 2020 15:40:41 GMT  
+		Size: 25.4 MB (25364606 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9594931f903b7b3c4f5cb63196d29d715c50b567c128a5572131c12a25f04139`  
-		Last Modified: Fri, 21 Feb 2020 21:59:06 GMT  
-		Size: 36.2 KB (36186 bytes)  
+	-	`sha256:6259e081be079eda34010ff7e7c4be7d6d6d927b64ddaa77f8a7f09e30a69229`  
+		Last Modified: Fri, 20 Mar 2020 18:42:50 GMT  
+		Size: 36.2 KB (36183 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66af13675c2330803d61d2198bb4f69c36bb7eed2d2b2bc3660fed8e873dce59`  
-		Last Modified: Fri, 21 Feb 2020 21:59:11 GMT  
-		Size: 847.0 B  
+	-	`sha256:5d110c40c78a87ebc1e1430d0fb68dd1aec06706c6b2d6d7c82a661f8b74f89a`  
+		Last Modified: Fri, 20 Mar 2020 18:42:49 GMT  
+		Size: 846.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fae0fb7b2ee5c5bc387374bdd08f53541bdfcf678d9b9f83489c3923af65fed0`  
-		Last Modified: Fri, 21 Feb 2020 21:59:21 GMT  
-		Size: 188.0 B  
+	-	`sha256:b7af2dd09f8eef8efc3d1215ffd89f820bc87f6dc5cd490b3322258ab8e2466e`  
+		Last Modified: Fri, 20 Mar 2020 18:42:55 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9381eb8b0a499263e6b76868e9412c47073e4d805bb897325f5e2de25846c6e7`  
-		Last Modified: Fri, 21 Feb 2020 22:34:51 GMT  
-		Size: 2.7 MB (2678898 bytes)  
+	-	`sha256:3df40b3ea19d171d590d718df04e53e994c0397dc1ecf983d66ae8944f17e436`  
+		Last Modified: Fri, 20 Mar 2020 19:48:49 GMT  
+		Size: 2.7 MB (2678789 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe32b4a7799959aa018913a858ed1e10a11f8447080826733a25e162b5dc5ef5`  
-		Last Modified: Tue, 17 Mar 2020 20:10:21 GMT  
-		Size: 64.7 MB (64704811 bytes)  
+	-	`sha256:6e17ff999a0a67ae05f7ab04bb88ece4fa4865bc028b237b62e2e06cb8e39602`  
+		Last Modified: Fri, 20 Mar 2020 19:49:16 GMT  
+		Size: 64.7 MB (64704828 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `ibmjava:sfj-alpine`
