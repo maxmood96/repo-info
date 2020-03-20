@@ -1,10 +1,10 @@
-# `alpine:20200122`
+# `alpine:20200319`
 
 ## Docker Metadata
 
-- Image ID: `sha256:13d22f83f248957d0a553f14154d5f3fd413b6c0c595ebb094b0e12cbac71797`
-- Created: `2020-01-23T00:19:46.820558394Z`
-- Virtual Size: ~ 5.60 Mb  
+- Image ID: `sha256:24cae4d038c0d43d75994a08181150170b991b7e4331a23fe74cf9d4c1115962`
+- Created: `2020-03-20T03:25:08.131782336Z`
+- Virtual Size: ~ 5.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -16,16 +16,16 @@
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.2.0-r3 description:
+alpine-baselayout-3.2.0-r5 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.2.0-r3 webpage:
+alpine-baselayout-3.2.0-r5 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.2.0-r3 installed size:
-413696
+alpine-baselayout-3.2.0-r5 installed size:
+430080
 
-alpine-baselayout-3.2.0-r3 license:
+alpine-baselayout-3.2.0-r5 license:
 GPL-2.0-only
 
 ```
@@ -33,16 +33,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-keys`
 
 ```console
-alpine-keys-2.1-r2 description:
+alpine-keys-2.2-r0 description:
 Public keys for Alpine Linux packages
 
-alpine-keys-2.1-r2 webpage:
+alpine-keys-2.2-r0 webpage:
 https://alpinelinux.org
 
-alpine-keys-2.1-r2 installed size:
-98304
+alpine-keys-2.2-r0 installed size:
+106496
 
-alpine-keys-2.1-r2 license:
+alpine-keys-2.2-r0 license:
 MIT
 
 ```
@@ -50,16 +50,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.10.4-r3 description:
+apk-tools-2.10.5-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.10.4-r3 webpage:
+apk-tools-2.10.5-r0 webpage:
 https://git.alpinelinux.org/cgit/apk-tools/
 
-apk-tools-2.10.4-r3 installed size:
+apk-tools-2.10.5-r0 installed size:
 262144
 
-apk-tools-2.10.4-r3 license:
+apk-tools-2.10.5-r0 license:
 GPL2
 
 ```
@@ -67,33 +67,33 @@ GPL2
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.31.1-r9 description:
+busybox-1.31.1-r13 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.31.1-r9 webpage:
+busybox-1.31.1-r13 webpage:
 https://busybox.net/
 
-busybox-1.31.1-r9 installed size:
+busybox-1.31.1-r13 installed size:
 962560
 
-busybox-1.31.1-r9 license:
+busybox-1.31.1-r13 license:
 GPL-2.0-only
 
 ```
 
-### `apk` package: `ca-certificates-cacert`
+### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-cacert-20191127-r0 description:
-Mozilla bundled certificates
+ca-certificates-bundle-20191127-r2 description:
+Pre generated bundle of Mozilla certificates
 
-ca-certificates-cacert-20191127-r0 webpage:
+ca-certificates-bundle-20191127-r2 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-cacert-20191127-r0 installed size:
-245760
+ca-certificates-bundle-20191127-r2 installed size:
+233472
 
-ca-certificates-cacert-20191127-r0 license:
+ca-certificates-bundle-20191127-r2 license:
 MPL-2.0 GPL-2.0-or-later
 
 ```
@@ -101,33 +101,33 @@ MPL-2.0 GPL-2.0-or-later
 ### `apk` package: `libc-utils`
 
 ```console
-libc-utils-0.7.2-r0 description:
+libc-utils-0.7.2-r1 description:
 Meta package to pull in correct libc
 
-libc-utils-0.7.2-r0 webpage:
-http://alpinelinux.org
+libc-utils-0.7.2-r1 webpage:
+https://alpinelinux.org
 
-libc-utils-0.7.2-r0 installed size:
+libc-utils-0.7.2-r1 installed size:
 4096
 
-libc-utils-0.7.2-r0 license:
-BSD
+libc-utils-0.7.2-r1 license:
+BSD-2-Clause AND BSD-3-Clause
 
 ```
 
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1d-r4 description:
+libcrypto1.1-1.1.1d-r5 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1d-r4 webpage:
+libcrypto1.1-1.1.1d-r5 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1d-r4 installed size:
+libcrypto1.1-1.1.1d-r5 installed size:
 2748416
 
-libcrypto1.1-1.1.1d-r4 license:
+libcrypto1.1-1.1.1d-r5 license:
 OpenSSL
 
 ```
@@ -135,16 +135,16 @@ OpenSSL
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1d-r4 description:
+libssl1.1-1.1.1d-r5 description:
 SSL shared libraries
 
-libssl1.1-1.1.1d-r4 webpage:
+libssl1.1-1.1.1d-r5 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1d-r4 installed size:
+libssl1.1-1.1.1d-r5 installed size:
 536576
 
-libssl1.1-1.1.1d-r4 license:
+libssl1.1-1.1.1d-r5 license:
 OpenSSL
 
 ```
@@ -169,16 +169,16 @@ ISC
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.24-r0 description:
+musl-1.1.24-r2 description:
 the musl c library (libc) implementation
 
-musl-1.1.24-r0 webpage:
-http://www.musl-libc.org/
+musl-1.1.24-r2 webpage:
+https://musl.libc.org/
 
-musl-1.1.24-r0 installed size:
+musl-1.1.24-r2 installed size:
 614400
 
-musl-1.1.24-r0 license:
+musl-1.1.24-r2 license:
 MIT
 
 ```
@@ -186,16 +186,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.24-r0 description:
+musl-utils-1.1.24-r2 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.24-r0 webpage:
-http://www.musl-libc.org/
+musl-utils-1.1.24-r2 webpage:
+https://musl.libc.org/
 
-musl-utils-1.1.24-r0 installed size:
+musl-utils-1.1.24-r2 installed size:
 151552
 
-musl-utils-1.1.24-r0 license:
+musl-utils-1.1.24-r2 license:
 MIT BSD GPL2+
 
 ```
@@ -203,16 +203,16 @@ MIT BSD GPL2+
 ### `apk` package: `scanelf`
 
 ```console
-scanelf-1.2.4-r0 description:
+scanelf-1.2.5-r0 description:
 Scan ELF binaries for stuff
 
-scanelf-1.2.4-r0 webpage:
+scanelf-1.2.5-r0 webpage:
 https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities
 
-scanelf-1.2.4-r0 installed size:
-98304
+scanelf-1.2.5-r0 installed size:
+94208
 
-scanelf-1.2.4-r0 license:
+scanelf-1.2.5-r0 license:
 GPL-2.0-only
 
 ```
@@ -220,16 +220,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.31.1-r9 description:
+ssl_client-1.31.1-r13 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.31.1-r9 webpage:
+ssl_client-1.31.1-r13 webpage:
 https://busybox.net/
 
-ssl_client-1.31.1-r9 installed size:
+ssl_client-1.31.1-r13 installed size:
 28672
 
-ssl_client-1.31.1-r9 license:
+ssl_client-1.31.1-r13 license:
 GPL-2.0-only
 
 ```
