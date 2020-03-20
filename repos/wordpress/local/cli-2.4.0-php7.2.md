@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6cd5e10149bbf1f81f35e0909707bd4364161f710b485c0d42d93746ca7cf22d`
-- Created: `2020-02-21T06:28:16.146978295Z`
-- Virtual Size: ~ 132.92 Mb  
+- Image ID: `sha256:31a86f9fdd5ac168e24f9b3ab916c95d4694b7e5971e10f3a2ce315dfc00f39f`
+- Created: `2020-03-20T05:57:39.202120739Z`
+- Virtual Size: ~ 130.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.28`
-  - `PHP_URL=https://www.php.net/get/php-7.2.28.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.2.28.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=afe1863301da572dee2e0bad8014813bcced162f980ddc8ec8e41fd72263eb2d`
+  - `PHP_VERSION=7.2.29`
+  - `PHP_URL=https://www.php.net/get/php-7.2.29.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.2.29.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=b117de74136bf4b439d663be9cf0c8e06a260c1f340f6b75ccadb609153a7fe8`
   - `PHP_MD5=`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.4.0`
@@ -694,16 +694,16 @@ GPL-2.0-or-later
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.24-r0 description:
+musl-1.1.24-r1 description:
 the musl c library (libc) implementation
 
-musl-1.1.24-r0 webpage:
-http://www.musl-libc.org/
+musl-1.1.24-r1 webpage:
+https://musl.libc.org/
 
-musl-1.1.24-r0 installed size:
-610304
+musl-1.1.24-r1 installed size:
+614400
 
-musl-1.1.24-r0 license:
+musl-1.1.24-r1 license:
 MIT
 
 ```
@@ -745,33 +745,16 @@ GPL-2.0-or-later
 ### `apk` package: `ncurses-libs`
 
 ```console
-ncurses-libs-6.1_p20191130-r0 description:
+ncurses-libs-6.1_p20200118-r2 description:
 Ncurses libraries
 
-ncurses-libs-6.1_p20191130-r0 webpage:
+ncurses-libs-6.1_p20200118-r2 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-libs-6.1_p20191130-r0 installed size:
+ncurses-libs-6.1_p20200118-r2 installed size:
 507904
 
-ncurses-libs-6.1_p20191130-r0 license:
-MIT
-
-```
-
-### `apk` package: `ncurses-terminfo`
-
-```console
-ncurses-terminfo-6.1_p20191130-r0 description:
-Console display library (other terminfo files)
-
-ncurses-terminfo-6.1_p20191130-r0 webpage:
-https://invisible-island.net/ncurses/
-
-ncurses-terminfo-6.1_p20191130-r0 installed size:
-7348224
-
-ncurses-terminfo-6.1_p20191130-r0 license:
+ncurses-libs-6.1_p20200118-r2 license:
 MIT
 
 ```
@@ -779,16 +762,16 @@ MIT
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.1_p20191130-r0 description:
+ncurses-terminfo-base-6.1_p20200118-r2 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.1_p20191130-r0 webpage:
+ncurses-terminfo-base-6.1_p20200118-r2 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.1_p20191130-r0 installed size:
-94208
+ncurses-terminfo-base-6.1_p20200118-r2 installed size:
+217088
 
-ncurses-terminfo-base-6.1_p20191130-r0 license:
+ncurses-terminfo-base-6.1_p20200118-r2 license:
 MIT
 
 ```
