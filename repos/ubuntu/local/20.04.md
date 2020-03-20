@@ -118,13 +118,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=11ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu2.dsc' base-files_11ubuntu2.dsc 1604 SHA256:8b727a4d6f7762370074e90e22883a39b6cc6c8982e70969c145070f7fad4fac
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu2.tar.xz' base-files_11ubuntu2.tar.xz 79024 SHA256:f66982e8d98678a117707deb98478d1098d623104d6ce6dea471da52212f470d
-```
 
 ### `dpkg` source package: `base-passwd=3.5.47`
 
@@ -397,14 +393,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.30-0ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.30-0ubuntu3.dsc' glibc_2.30-0ubuntu3.dsc 9228 SHA256:0d63090ad8836a71237cf7ce69e8fe369aeed7d2e20537e5149ba1555d80892e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.30.orig.tar.xz' glibc_2.30.orig.tar.xz 17080288 SHA256:88b5b39b80a4cb4d7b17bded91a2a9e99ff00190377321446f55d00a97611870
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.30-0ubuntu3.debian.tar.xz' glibc_2.30-0ubuntu3.debian.tar.xz 850808 SHA256:fb17aa2731b83b1468dd7e2b0fb0dce06f127b53557eee60011cdf3c561a9a85
-```
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-4`
 
@@ -448,15 +439,9 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.17-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.17-3ubuntu1.dsc' gnupg2_2.2.17-3ubuntu1.dsc 3945 SHA256:2b986fd198f0873279071a9fb074549f5b0a4ba4e44ceebabe546b39d175e49f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.17.orig.tar.bz2' gnupg2_2.2.17.orig.tar.bz2 6717554 SHA256:afa262868e39b651a2db4c071fba90415154243e83a830ca00516f9a807fd514
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.17.orig.tar.bz2.asc' gnupg2_2.2.17.orig.tar.bz2.asc 488 SHA256:b719d78c3b3d91ae6c5569c6ce48b8b71cfd9ac53cc95c681ea196720b9d7000
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.17-3ubuntu1.debian.tar.xz' gnupg2_2.2.17-3ubuntu1.debian.tar.xz 66684 SHA256:a6d07fb9d1c8cecff84d9b68a7dc282b6da685fc1c76ed81a7d1ed661a4b0ba7
-```
 
 ### `dpkg` source package: `gnutls28=3.6.11.1-2`
 
@@ -1031,10 +1016,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris perl=5.30.0-9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.30.0-9.dsc' perl_5.30.0-9.dsc 2983 SHA256:05eb4e5e304ed6d5d198405fa2f85d0d3decc7342536508d240c3f41e07906b1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.30.0-9build1.dsc' perl_5.30.0-9build1.dsc 2896 SHA256:11a7a3cf75fe92fd8ea4469ff836c6372f7f17b20fad44d009495c9cf44480cd
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.30.0.orig-regen-configure.tar.gz' perl_5.30.0.orig-regen-configure.tar.gz 833235 SHA256:fc55a7309f9e2c404119b005774fc85a8488bad047aee611d17bbe2d608bf4de
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.30.0.orig.tar.xz' perl_5.30.0.orig.tar.xz 12419868 SHA256:ac501cad4af904d33370a9ea39dbb7a8ad4cb19bc7bc8a9c17d8dc3e81ef6306
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.30.0-9.debian.tar.xz' perl_5.30.0-9.debian.tar.xz 161876 SHA256:6140c1b94ba811aad5cab98041f5ccae26a86f619fc738194956ef7fb707b552
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.30.0-9build1.debian.tar.xz' perl_5.30.0-9build1.debian.tar.xz 161952 SHA256:74258880aa63b6248f9b2eba432dd08a8d72a9bbaeed40cd5070f73ca9d6ffeb
 ```
 
 ### `dpkg` source package: `procps=2:3.3.15-2ubuntu3`
