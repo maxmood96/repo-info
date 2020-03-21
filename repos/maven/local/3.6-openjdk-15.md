@@ -1,21 +1,21 @@
-# `maven:3.6.3-jdk-13`
+# `maven:3.6.3-openjdk-15`
 
 ## Docker Metadata
 
-- Image ID: `sha256:519129fab259565defca4af840d2422b9186b160dd6fc051efb9ad9d74a2190f`
-- Created: `2020-03-10T23:08:10.135848879Z`
-- Virtual Size: ~ 501.79 Mb  
+- Image ID: `sha256:6bd062a9551656d3bbb1ef99eea8063dbc3ad73ece9e455ef381599c4e9c4e92`
+- Created: `2020-03-20T03:43:35.574397883Z`
+- Virtual Size: ~ 505.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
 - Command: `["mvn"]`
 - Environment:
-  - `PATH=/usr/java/openjdk-13/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/usr/java/openjdk-15/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.UTF-8`
-  - `JAVA_HOME=/usr/java/openjdk-13`
-  - `JAVA_VERSION=13.0.2`
-  - `JAVA_URL=https://download.java.net/java/GA/jdk13.0.2/d4173c853231432d94f001e99d882ca7/8/GPL/openjdk-13.0.2_linux-x64_bin.tar.gz`
-  - `JAVA_SHA256=acc7a6aabced44e62ec3b83e3b5959df2b1aa6b3d610d58ee45f0c21a7821a71`
+  - `JAVA_HOME=/usr/java/openjdk-15`
+  - `JAVA_VERSION=15-ea+14`
+  - `JAVA_URL=https://download.java.net/java/early_access/jdk15/14/GPL/openjdk-15-ea+14_linux-x64_bin.tar.gz`
+  - `JAVA_SHA256=cb73cbc3b60fb67351fd6f01924f8c6861a3951bb6e4fbae8e42dabb55ee8b75`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 
