@@ -3807,20 +3807,13 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.30+dfsg-6
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.30+dfsg-6.dsc' tar_1.30+dfsg-6.dsc 1995 SHA256:1515951c8a2fc9a43e822efd82d9043cdec4bec47ddca9e7f1311c73e6b00d0c
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.30+dfsg.orig.tar.xz' tar_1.30+dfsg.orig.tar.xz 1883220 SHA256:c02f3747ffe02017878303dde8b78e79cd220364c5e8048cf92320232e38912d
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.30+dfsg-6.debian.tar.xz' tar_1.30+dfsg-6.debian.tar.xz 22124 SHA256:b7caae6287992536353413e7a9b21301b29c32066bb6f36b7190074af9dd5c50
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tar/1.30+dfsg-6/
 
-- https://sources.debian.net/src/tar/1.30+dfsg-6/ (for browsing the source)
-- https://sources.debian.net/src/tar/1.30+dfsg-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tar/1.30+dfsg-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tcl8.6=8.6.10+dfsg-1`
 
@@ -4156,20 +4149,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xdg-utils=1.1.3-1
-'http://deb.debian.org/debian/pool/main/x/xdg-utils/xdg-utils_1.1.3-1.dsc' xdg-utils_1.1.3-1.dsc 2059 SHA256:60a01003f5688462347e664fd42762a24578b8f325f473effd956e3bcc958ae5
-'http://deb.debian.org/debian/pool/main/x/xdg-utils/xdg-utils_1.1.3.orig.tar.gz' xdg-utils_1.1.3.orig.tar.gz 297170 SHA256:d798b08af8a8e2063ddde6c9fa3398ca81484f27dec642c5627ffcaa0d4051d9
-'http://deb.debian.org/debian/pool/main/x/xdg-utils/xdg-utils_1.1.3-1.debian.tar.xz' xdg-utils_1.1.3-1.debian.tar.xz 9876 SHA256:71f5241bac2216c0ba650563b09e3b03be51c4818e532cac8ffad3c0f8d27057
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/xdg-utils/1.1.3-1/
 
-- https://sources.debian.net/src/xdg-utils/1.1.3-1/ (for browsing the source)
-- https://sources.debian.net/src/xdg-utils/1.1.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xdg-utils/1.1.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xft=2.3.2-2`
 
