@@ -2,7 +2,7 @@
 
 # Tags of `sonarqube`
 
--	[`sonarqube:7.9.2-community`](#sonarqube792-community)
+-	[`sonarqube:7.9.3-community`](#sonarqube793-community)
 -	[`sonarqube:7.9-community`](#sonarqube79-community)
 -	[`sonarqube:8.2-community`](#sonarqube82-community)
 -	[`sonarqube:8.2-developer`](#sonarqube82-developer)
@@ -16,113 +16,9 @@
 -	[`sonarqube:latest`](#sonarqubelatest)
 -	[`sonarqube:lts`](#sonarqubelts)
 
-## `sonarqube:7.9.2-community`
+## `sonarqube:7.9.3-community`
 
-```console
-$ docker pull sonarqube@sha256:73d9e4d96a5e15c0cb80478a4ce0813c915e775c69a9ef66bd70e1b7b075ba51
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
-	-	linux; amd64
-
-### `sonarqube:7.9.2-community` - linux; amd64
-
-```console
-$ docker pull sonarqube@sha256:424190b911668686f12cf9a0ae2b7c22aca718097da4c8c16509b332580a0b83
-```
-
--	Docker Version: 18.09.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **286.6 MB (286637460 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d6a8d3467cda7fdcc50c119df8fb27e311abf8d91d18ae6292cac2e49b318dcc`
--	Entrypoint: `[".\/bin\/run.sh"]`
-
-```dockerfile
-# Wed, 26 Feb 2020 00:37:39 GMT
-ADD file:e5a364615e0f6961626089c7d658adbf8c8d95b3ae95a390a8bb33875317d434 in / 
-# Wed, 26 Feb 2020 00:37:39 GMT
-CMD ["bash"]
-# Wed, 26 Feb 2020 20:15:15 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 26 Feb 2020 20:15:15 GMT
-ENV LANG=C.UTF-8
-# Wed, 26 Feb 2020 20:20:22 GMT
-ENV JAVA_HOME=/usr/local/openjdk-11
-# Wed, 26 Feb 2020 20:20:23 GMT
-ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 26 Feb 2020 20:20:23 GMT
-RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 26 Feb 2020 20:20:24 GMT
-ENV JAVA_VERSION=11.0.6
-# Wed, 26 Feb 2020 20:21:10 GMT
-ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.6%2B10/OpenJDK11U-jre_
-# Wed, 26 Feb 2020 20:21:11 GMT
-ENV JAVA_URL_VERSION=11.0.6_10
-# Wed, 26 Feb 2020 20:21:25 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Thu, 27 Feb 2020 07:20:52 GMT
-RUN apt-get update     && apt-get install -y curl gnupg2 unzip     && rm -rf /var/lib/apt/lists/*
-# Thu, 27 Feb 2020 07:20:52 GMT
-ENV SONAR_VERSION=7.9.2 SONARQUBE_HOME=/opt/sonarqube SONARQUBE_JDBC_USERNAME=sonar SONARQUBE_JDBC_PASSWORD=sonar SONARQUBE_JDBC_URL=
-# Thu, 27 Feb 2020 07:20:52 GMT
-EXPOSE 9000
-# Thu, 27 Feb 2020 07:20:53 GMT
-RUN groupadd -r sonarqube && useradd -r -g sonarqube sonarqube
-# Thu, 27 Feb 2020 07:20:54 GMT
-RUN for server in $(shuf -e ha.pool.sks-keyservers.net                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys F1182E81C792928921DBCAB4CFCA4A29D26468DE && break || : ;     done
-# Thu, 27 Feb 2020 07:21:08 GMT
-RUN set -x     && cd /opt     && curl -o sonarqube.zip -fSL https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip     && curl -o sonarqube.zip.asc -fSL https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip.asc     && gpg --batch --verify sonarqube.zip.asc sonarqube.zip     && unzip -q sonarqube.zip     && mv sonarqube-$SONAR_VERSION sonarqube     && chown -R sonarqube:sonarqube sonarqube     && rm sonarqube.zip*     && rm -rf $SONARQUBE_HOME/bin/*
-# Thu, 27 Feb 2020 07:21:08 GMT
-VOLUME [/opt/sonarqube/data]
-# Thu, 27 Feb 2020 07:21:08 GMT
-WORKDIR /opt/sonarqube
-# Thu, 27 Feb 2020 07:21:09 GMT
-COPY file:aa007fcc6be4125cbbb27fe345978294add03a4f05e942a5208a37be832addca in /opt/sonarqube/bin/ 
-# Thu, 27 Feb 2020 07:21:09 GMT
-USER sonarqube
-# Thu, 27 Feb 2020 07:21:09 GMT
-ENTRYPOINT ["./bin/run.sh"]
-```
-
--	Layers:
-	-	`sha256:68ced04f60ab5c7a5f1d0b0b4e7572c5a4c8cce44866513d30d9df1a15277d6b`  
-		Last Modified: Wed, 26 Feb 2020 00:44:23 GMT  
-		Size: 27.1 MB (27091819 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4874c5772968dcab87c114bee2baf2c7e9a06dda36e63bdfeab71bd4d6f02890`  
-		Last Modified: Wed, 26 Feb 2020 20:23:57 GMT  
-		Size: 3.2 MB (3249096 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8afa8e973e226cdc57cde0ef199d85ee1aa93b5f6a04abf68dc4952cdab931d5`  
-		Last Modified: Wed, 26 Feb 2020 20:26:51 GMT  
-		Size: 212.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5c28bc4eb5532356cd06f142ed9cd6cee0811be74e992fdd2190fee8cbcf710`  
-		Last Modified: Wed, 26 Feb 2020 20:27:41 GMT  
-		Size: 42.2 MB (42172601 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2957eef62897b494f5fad58ad830ee3c768cc92a39370668cae9e94523db9ff`  
-		Last Modified: Thu, 27 Feb 2020 07:24:47 GMT  
-		Size: 6.0 MB (5984841 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fa699c8985c80f74766a6c735f90af528d36aa4701a2c22a7d10ee288743fc7`  
-		Last Modified: Thu, 27 Feb 2020 07:24:46 GMT  
-		Size: 1.7 KB (1747 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44ad058c8db50c0e15fdc0776ffae5e919fee86a150b58e6c24159db33f56f23`  
-		Last Modified: Thu, 27 Feb 2020 07:24:46 GMT  
-		Size: 1.8 KB (1765 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72083ac3a5c4bb1719d038c5de3a105ef31ad771a4de92226e72fc2b12f3db77`  
-		Last Modified: Thu, 27 Feb 2020 07:24:59 GMT  
-		Size: 208.1 MB (208134592 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c58abbc492549958003acd220da17df686cdf5e7d095e159d0cfe8b8ef4447a2`  
-		Last Modified: Thu, 27 Feb 2020 07:24:45 GMT  
-		Size: 787.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+**does not exist** (yet?)
 
 ## `sonarqube:7.9-community`
 
