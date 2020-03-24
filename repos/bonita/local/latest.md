@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:838dd4c3162e4a1352a5cf3f7e3b52398f87580bfe0211c801fd4dfd1cc6efb2`
-- Created: `2020-03-11T22:39:16.079641528Z`
+- Image ID: `sha256:de9cb458b9ebd9735f6f22a822b26677725c3ce62d2f67dd1008d25073823dd9`
+- Created: `2020-03-20T20:05:41.714722652Z`
 - Virtual Size: ~ 452.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -67,14 +67,9 @@ Licenses: (parsed from: `/usr/share/doc/libasound2/copyright`, `/usr/share/doc/l
 - `LGPL-2.1`
 - `LPGL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris alsa-lib=1.1.3-5ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.1.3-5ubuntu0.2.dsc' alsa-lib_1.1.3-5ubuntu0.2.dsc 1922 SHA256:d062d2bc17dce5c04a3f6c8b26bdf262ac2c5c3ef891707be242e4665311b04c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.1.3.orig.tar.bz2' alsa-lib_1.1.3.orig.tar.bz2 962001 SHA256:71282502184c592c1a008e256c22ed0ba5728ca65e05273ceb480c70f515969c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.1.3-5ubuntu0.2.debian.tar.xz' alsa-lib_1.1.3-5ubuntu0.2.debian.tar.xz 139596 SHA256:36d180b22704d6ae686f4cca2bd0fcc81645bfac6233908c6cdf414d81ac3958
-```
 
 ### `dpkg` source package: `apparmor=2.12-4ubuntu5.1`
 
@@ -726,13 +721,13 @@ $ apt-get source -qq --print-uris freetype=2.8.1-2ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.8.1-2ubuntu2.diff.gz' freetype_2.8.1-2ubuntu2.diff.gz 44335 SHA256:ec498da97b3c1715b67f8d6ed85e6d9a2eb8b709cabce38519a8ab5ca995b85a
 ```
 
-### `dpkg` source package: `gcc-8=8.3.0-6ubuntu1~18.04.1`
+### `dpkg` source package: `gcc-8=8.3.0-26ubuntu1~18.04`
 
 Binary Packages:
 
-- `gcc-8-base:amd64=8.3.0-6ubuntu1~18.04.1`
-- `libgcc1:amd64=1:8.3.0-6ubuntu1~18.04.1`
-- `libstdc++6:amd64=8.3.0-6ubuntu1~18.04.1`
+- `gcc-8-base:amd64=8.3.0-26ubuntu1~18.04`
+- `libgcc1:amd64=1:8.3.0-26ubuntu1~18.04`
+- `libstdc++6:amd64=8.3.0-26ubuntu1~18.04`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -743,9 +738,14 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gcc-8=8.3.0-26ubuntu1~18.04
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-26ubuntu1~18.04.dsc' gcc-8_8.3.0-26ubuntu1~18.04.dsc 36386 SHA256:865f941ff32f365d17946dbd1243bbdb8bb2e6dad1d0fab909bd543a2111d68f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0.orig.tar.gz' gcc-8_8.3.0.orig.tar.gz 85259886 SHA256:561c1bc647ade738c14efe5a298fc0cee2e2efd3dec9fefb66b724dbd50437e6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-26ubuntu1~18.04.diff.gz' gcc-8_8.3.0-26ubuntu1~18.04.diff.gz 960430 SHA256:06a0f32c62a63685a95925c4fb3e73167bf69a87fc55470ea94b69dfe62ded62
+```
 
 ### `dpkg` source package: `glibc=2.27-3ubuntu1`
 
@@ -2466,11 +2466,11 @@ $ apt-get source -qq --print-uris shadow=1:4.5-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5-1ubuntu2.debian.tar.xz' shadow_4.5-1ubuntu2.debian.tar.xz 471472 SHA256:0025e344b478aae6e2d9ad7657b5e1fd0ebd1fda7a55e7fc144840f75b92d358
 ```
 
-### `dpkg` source package: `sqlite3=3.22.0-1ubuntu0.2`
+### `dpkg` source package: `sqlite3=3.22.0-1ubuntu0.3`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.22.0-1ubuntu0.2`
+- `libsqlite3-0:amd64=3.22.0-1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2478,9 +2478,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.22.0-1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0-1ubuntu0.3.dsc' sqlite3_3.22.0-1ubuntu0.3.dsc 2512 SHA256:54b2afc4ed367051c216ee8c96abce9a511f1b8ca7b05c76cefd667cf3e5746b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0.orig-www.tar.xz' sqlite3_3.22.0.orig-www.tar.xz 3564688 SHA256:a61a14d6f457bb31ca32f4844398140050597fe4403dc0ee19576111f407e231
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0.orig.tar.xz' sqlite3_3.22.0.orig.tar.xz 6019648 SHA256:f973ba63b5a1ea1d72e80c585bfb945e71d3f8b74fbecccdf345a84f8c91e5d1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0-1ubuntu0.3.debian.tar.xz' sqlite3_3.22.0-1ubuntu0.3.debian.tar.xz 45120 SHA256:153d65bf0d6957a1c6e47cb4f1ab79e96190317576859003e0b96d656f1f78a6
+```
 
 ### `dpkg` source package: `systemd=237-3ubuntu10.39`
 
@@ -2635,14 +2641,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.31.1-0.4ubuntu3.5
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.5.dsc' util-linux_2.31.1-0.4ubuntu3.5.dsc 4147 SHA256:1e7e4c5ae02514beb07ab0ab20fbb93444b6e321c358362a7621fba5f2a1159b
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1.orig.tar.xz' util-linux_2.31.1.orig.tar.xz 4514032 SHA256:cfd5789570e9ff75e079471faeca1511ade1607f650523a6ad25d1e26516ae4e
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.5.debian.tar.xz' util-linux_2.31.1-0.4ubuntu3.5.debian.tar.xz 101300 SHA256:e246c635b9c383a300e622aa64c9088c1fa5699dd1af44856f957053140306bf
-```
 
 ### `dpkg` source package: `xorg=1:7.7+19ubuntu7.1`
 
