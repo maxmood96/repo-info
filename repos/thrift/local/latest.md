@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:31624a167b39e30a0529c7e3222572965f15a68e7c20a0f3628777bed7b8e130`
-- Created: `2020-02-21T22:52:23.495165707Z`
+- Image ID: `sha256:af884b36b20629452be1f1bb0c76ba9f983cc79c289be298e9191cb08caf4a49`
+- Created: `2020-03-20T20:03:47.522734684Z`
 - Virtual Size: ~ 125.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -388,11 +388,11 @@ $ apt-get source -qq --print-uris findutils=4.6.0+git+20170828-2
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.6.0+git+20170828-2.debian.tar.xz' findutils_4.6.0+git+20170828-2.debian.tar.xz 26532 SHA256:5b13792a14edec982fddcf74fe01b4380b909703d76aaba2860da51c6248de73
 ```
 
-### `dpkg` source package: `gcc-7=7.4.0-1ubuntu1~18.04.1`
+### `dpkg` source package: `gcc-7=7.5.0-3ubuntu1~18.04`
 
 Binary Packages:
 
-- `gcc-7-base:amd64=7.4.0-1ubuntu1~18.04.1`
+- `gcc-7-base:amd64=7.5.0-3ubuntu1~18.04`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`)
 
@@ -403,17 +403,22 @@ Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`)
 - `GPL-3`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gcc-7=7.5.0-3ubuntu1~18.04
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.5.0-3ubuntu1~18.04.dsc' gcc-7_7.5.0-3ubuntu1~18.04.dsc 28071 SHA256:3e93f39cd8c8ac5d05e5f1af16674864c9cfe7fdbe23274c756cf07e1ff81548
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.5.0.orig.tar.gz' gcc-7_7.5.0.orig.tar.gz 73877115 SHA256:dd7f095be2cd6aa61bd914b5b8e78daccae741a816cf19357cd767bef24ec390
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.5.0-3ubuntu1~18.04.diff.gz' gcc-7_7.5.0-3ubuntu1~18.04.diff.gz 574614 SHA256:42d3fef17cd5561df6187ce0c11bdb61f78cbb2da56bfd6e9983b138077f82f2
+```
 
-### `dpkg` source package: `gcc-8=8.3.0-6ubuntu1~18.04.1`
+### `dpkg` source package: `gcc-8=8.3.0-26ubuntu1~18.04`
 
 Binary Packages:
 
-- `gcc-8-base:amd64=8.3.0-6ubuntu1~18.04.1`
-- `libgcc1:amd64=1:8.3.0-6ubuntu1~18.04.1`
-- `libstdc++6:amd64=8.3.0-6ubuntu1~18.04.1`
+- `gcc-8-base:amd64=8.3.0-26ubuntu1~18.04`
+- `libgcc1:amd64=1:8.3.0-26ubuntu1~18.04`
+- `libstdc++6:amd64=8.3.0-26ubuntu1~18.04`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -424,9 +429,14 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gcc-8=8.3.0-26ubuntu1~18.04
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-26ubuntu1~18.04.dsc' gcc-8_8.3.0-26ubuntu1~18.04.dsc 36386 SHA256:865f941ff32f365d17946dbd1243bbdb8bb2e6dad1d0fab909bd543a2111d68f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0.orig.tar.gz' gcc-8_8.3.0.orig.tar.gz 85259886 SHA256:561c1bc647ade738c14efe5a298fc0cee2e2efd3dec9fefb66b724dbd50437e6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-26ubuntu1~18.04.diff.gz' gcc-8_8.3.0-26ubuntu1~18.04.diff.gz 960430 SHA256:06a0f32c62a63685a95925c4fb3e73167bf69a87fc55470ea94b69dfe62ded62
+```
 
 ### `dpkg` source package: `glibc=2.27-3ubuntu1`
 
@@ -1299,14 +1309,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.31.1-0.4ubuntu3.5
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.5.dsc' util-linux_2.31.1-0.4ubuntu3.5.dsc 4147 SHA256:1e7e4c5ae02514beb07ab0ab20fbb93444b6e321c358362a7621fba5f2a1159b
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1.orig.tar.xz' util-linux_2.31.1.orig.tar.xz 4514032 SHA256:cfd5789570e9ff75e079471faeca1511ade1607f650523a6ad25d1e26516ae4e
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.5.debian.tar.xz' util-linux_2.31.1-0.4ubuntu3.5.debian.tar.xz 101300 SHA256:e246c635b9c383a300e622aa64c9088c1fa5699dd1af44856f957053140306bf
-```
 
 ### `dpkg` source package: `xz-utils=5.2.2-1.3`
 
