@@ -28,6 +28,10 @@
 -	[`haproxy:2.1.3`](#haproxy213)
 -	[`haproxy:2.1.3-alpine`](#haproxy213-alpine)
 -	[`haproxy:2.1-alpine`](#haproxy21-alpine)
+-	[`haproxy:2.2-dev5`](#haproxy22-dev5)
+-	[`haproxy:2.2-dev5-alpine`](#haproxy22-dev5-alpine)
+-	[`haproxy:2.2-rc`](#haproxy22-rc)
+-	[`haproxy:2.2-rc-alpine`](#haproxy22-rc-alpine)
 -	[`haproxy:alpine`](#haproxyalpine)
 -	[`haproxy:latest`](#haproxylatest)
 
@@ -9364,6 +9368,22 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Last Modified: Mon, 23 Mar 2020 22:32:07 GMT  
 		Size: 380.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `haproxy:2.2-dev5`
+
+**does not exist** (yet?)
+
+## `haproxy:2.2-dev5-alpine`
+
+**does not exist** (yet?)
+
+## `haproxy:2.2-rc`
+
+**does not exist** (yet?)
+
+## `haproxy:2.2-rc-alpine`
+
+**does not exist** (yet?)
 
 ## `haproxy:alpine`
 
