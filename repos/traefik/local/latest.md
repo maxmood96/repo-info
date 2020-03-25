@@ -1,10 +1,10 @@
-# `traefik:v2.1.8`
+# `traefik:v2.1.9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cf6b3f6db569d5961269273a3809c6f990ee82aee9b53e95eb2d4d44d5789541`
-- Created: `2020-03-20T03:48:01.822901988Z`
-- Virtual Size: ~ 70.46 Mb  
+- Image ID: `sha256:72bfc37343a47ef437767e7f10ec6c47b5dfb7d5a7fde99a78063f0217b6edfb`
+- Created: `2020-03-23T23:46:08.83913484Z`
+- Virtual Size: ~ 68.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `org.opencontainers.image.title=Traefik`
   - `org.opencontainers.image.url=https://traefik.io`
   - `org.opencontainers.image.vendor=Containous`
-  - `org.opencontainers.image.version=v2.1.8`
+  - `org.opencontainers.image.version=v2.1.9`
 
 ## `apk` (`.apk`-based packages)
 
@@ -109,16 +109,16 @@ MPL-2.0 GPL-2.0-or-later
 ### `apk` package: `ca-certificates-cacert`
 
 ```console
-ca-certificates-cacert-20191127-r0 description:
+ca-certificates-cacert-20191127-r1 description:
 Mozilla bundled certificates
 
-ca-certificates-cacert-20191127-r0 webpage:
+ca-certificates-cacert-20191127-r1 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-cacert-20191127-r0 installed size:
+ca-certificates-cacert-20191127-r1 installed size:
 245760
 
-ca-certificates-cacert-20191127-r0 license:
+ca-certificates-cacert-20191127-r1 license:
 MPL-2.0 GPL-2.0-or-later
 
 ```
@@ -194,16 +194,16 @@ ISC
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.24-r0 description:
+musl-1.1.24-r2 description:
 the musl c library (libc) implementation
 
-musl-1.1.24-r0 webpage:
-http://www.musl-libc.org/
+musl-1.1.24-r2 webpage:
+https://musl.libc.org/
 
-musl-1.1.24-r0 installed size:
-610304
+musl-1.1.24-r2 installed size:
+614400
 
-musl-1.1.24-r0 license:
+musl-1.1.24-r2 license:
 MIT
 
 ```
@@ -211,16 +211,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.24-r0 description:
+musl-utils-1.1.24-r2 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.24-r0 webpage:
-http://www.musl-libc.org/
+musl-utils-1.1.24-r2 webpage:
+https://musl.libc.org/
 
-musl-utils-1.1.24-r0 installed size:
-147456
+musl-utils-1.1.24-r2 installed size:
+151552
 
-musl-utils-1.1.24-r0 license:
+musl-utils-1.1.24-r2 license:
 MIT BSD GPL2+
 
 ```
