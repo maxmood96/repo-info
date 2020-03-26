@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dc9abde2874739c518e1533e38e737c63924ba32492b553623351a61bfa521bf`
-- Created: `2020-02-26T20:13:39.906293646Z`
+- Image ID: `sha256:3e64007059f2bf0a704900b4172bd3c00b82ac9e22aed9b55928a17b21e9cfdf`
+- Created: `2020-03-25T21:32:32.748353848Z`
 - Virtual Size: ~ 180.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-varnish-entrypoint"]`
-- Command: `["varnishd","-F","-f","/etc/varnish/default.vcl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `VARNISH_VERSION=6.0.6-1~stretch`
+  - `VARNISH_SIZE=100M`
 
 ## `dpkg` (`.deb`-based packages)
 
