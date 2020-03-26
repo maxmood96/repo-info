@@ -102,6 +102,56 @@
 -	[`adoptopenjdk:13-openj9-windowsservercore`](#adoptopenjdk13-openj9-windowsservercore)
 -	[`adoptopenjdk:13-openj9-windowsservercore-1809`](#adoptopenjdk13-openj9-windowsservercore-1809)
 -	[`adoptopenjdk:13-openj9-windowsservercore-ltsc2016`](#adoptopenjdk13-openj9-windowsservercore-ltsc2016)
+-	[`adoptopenjdk:14_36.1-jdk-openj9-0.19.0`](#adoptopenjdk14_361-jdk-openj9-0190)
+-	[`adoptopenjdk:14_36.1-jdk-openj9-0.19.0-bionic`](#adoptopenjdk14_361-jdk-openj9-0190-bionic)
+-	[`adoptopenjdk:14_36.1-jdk-openj9-0.19.0-windowsservercore`](#adoptopenjdk14_361-jdk-openj9-0190-windowsservercore)
+-	[`adoptopenjdk:14_36.1-jdk-openj9-0.19.0-windowsservercore-1809`](#adoptopenjdk14_361-jdk-openj9-0190-windowsservercore-1809)
+-	[`adoptopenjdk:14_36.1-jdk-openj9-0.19.0-windowsservercore-ltsc2016`](#adoptopenjdk14_361-jdk-openj9-0190-windowsservercore-ltsc2016)
+-	[`adoptopenjdk:14_36.1-jre-openj9-0.19.0`](#adoptopenjdk14_361-jre-openj9-0190)
+-	[`adoptopenjdk:14_36.1-jre-openj9-0.19.0-bionic`](#adoptopenjdk14_361-jre-openj9-0190-bionic)
+-	[`adoptopenjdk:14_36.1-jre-openj9-0.19.0-windowsservercore`](#adoptopenjdk14_361-jre-openj9-0190-windowsservercore)
+-	[`adoptopenjdk:14_36.1-jre-openj9-0.19.0-windowsservercore-1809`](#adoptopenjdk14_361-jre-openj9-0190-windowsservercore-1809)
+-	[`adoptopenjdk:14_36.1-jre-openj9-0.19.0-windowsservercore-ltsc2016`](#adoptopenjdk14_361-jre-openj9-0190-windowsservercore-ltsc2016)
+-	[`adoptopenjdk:14_36-jdk-hotspot`](#adoptopenjdk14_36-jdk-hotspot)
+-	[`adoptopenjdk:14_36-jdk-hotspot-bionic`](#adoptopenjdk14_36-jdk-hotspot-bionic)
+-	[`adoptopenjdk:14_36-jdk-hotspot-windowsservercore`](#adoptopenjdk14_36-jdk-hotspot-windowsservercore)
+-	[`adoptopenjdk:14_36-jdk-hotspot-windowsservercore-1809`](#adoptopenjdk14_36-jdk-hotspot-windowsservercore-1809)
+-	[`adoptopenjdk:14_36-jdk-hotspot-windowsservercore-ltsc2016`](#adoptopenjdk14_36-jdk-hotspot-windowsservercore-ltsc2016)
+-	[`adoptopenjdk:14_36-jre-hotspot`](#adoptopenjdk14_36-jre-hotspot)
+-	[`adoptopenjdk:14_36-jre-hotspot-bionic`](#adoptopenjdk14_36-jre-hotspot-bionic)
+-	[`adoptopenjdk:14_36-jre-hotspot-windowsservercore`](#adoptopenjdk14_36-jre-hotspot-windowsservercore)
+-	[`adoptopenjdk:14_36-jre-hotspot-windowsservercore-1809`](#adoptopenjdk14_36-jre-hotspot-windowsservercore-1809)
+-	[`adoptopenjdk:14_36-jre-hotspot-windowsservercore-ltsc2016`](#adoptopenjdk14_36-jre-hotspot-windowsservercore-ltsc2016)
+-	[`adoptopenjdk:14-hotspot`](#adoptopenjdk14-hotspot)
+-	[`adoptopenjdk:14-hotspot-bionic`](#adoptopenjdk14-hotspot-bionic)
+-	[`adoptopenjdk:14-hotspot-windowsservercore`](#adoptopenjdk14-hotspot-windowsservercore)
+-	[`adoptopenjdk:14-hotspot-windowsservercore-1809`](#adoptopenjdk14-hotspot-windowsservercore-1809)
+-	[`adoptopenjdk:14-hotspot-windowsservercore-ltsc2016`](#adoptopenjdk14-hotspot-windowsservercore-ltsc2016)
+-	[`adoptopenjdk:14-jdk-hotspot`](#adoptopenjdk14-jdk-hotspot)
+-	[`adoptopenjdk:14-jdk-hotspot-bionic`](#adoptopenjdk14-jdk-hotspot-bionic)
+-	[`adoptopenjdk:14-jdk-hotspot-windowsservercore`](#adoptopenjdk14-jdk-hotspot-windowsservercore)
+-	[`adoptopenjdk:14-jdk-hotspot-windowsservercore-1809`](#adoptopenjdk14-jdk-hotspot-windowsservercore-1809)
+-	[`adoptopenjdk:14-jdk-hotspot-windowsservercore-ltsc2016`](#adoptopenjdk14-jdk-hotspot-windowsservercore-ltsc2016)
+-	[`adoptopenjdk:14-jdk-openj9`](#adoptopenjdk14-jdk-openj9)
+-	[`adoptopenjdk:14-jdk-openj9-bionic`](#adoptopenjdk14-jdk-openj9-bionic)
+-	[`adoptopenjdk:14-jdk-openj9-windowsservercore`](#adoptopenjdk14-jdk-openj9-windowsservercore)
+-	[`adoptopenjdk:14-jdk-openj9-windowsservercore-1809`](#adoptopenjdk14-jdk-openj9-windowsservercore-1809)
+-	[`adoptopenjdk:14-jdk-openj9-windowsservercore-ltsc2016`](#adoptopenjdk14-jdk-openj9-windowsservercore-ltsc2016)
+-	[`adoptopenjdk:14-jre-hotspot`](#adoptopenjdk14-jre-hotspot)
+-	[`adoptopenjdk:14-jre-hotspot-bionic`](#adoptopenjdk14-jre-hotspot-bionic)
+-	[`adoptopenjdk:14-jre-hotspot-windowsservercore`](#adoptopenjdk14-jre-hotspot-windowsservercore)
+-	[`adoptopenjdk:14-jre-hotspot-windowsservercore-1809`](#adoptopenjdk14-jre-hotspot-windowsservercore-1809)
+-	[`adoptopenjdk:14-jre-hotspot-windowsservercore-ltsc2016`](#adoptopenjdk14-jre-hotspot-windowsservercore-ltsc2016)
+-	[`adoptopenjdk:14-jre-openj9`](#adoptopenjdk14-jre-openj9)
+-	[`adoptopenjdk:14-jre-openj9-bionic`](#adoptopenjdk14-jre-openj9-bionic)
+-	[`adoptopenjdk:14-jre-openj9-windowsservercore`](#adoptopenjdk14-jre-openj9-windowsservercore)
+-	[`adoptopenjdk:14-jre-openj9-windowsservercore-1809`](#adoptopenjdk14-jre-openj9-windowsservercore-1809)
+-	[`adoptopenjdk:14-jre-openj9-windowsservercore-ltsc2016`](#adoptopenjdk14-jre-openj9-windowsservercore-ltsc2016)
+-	[`adoptopenjdk:14-openj9`](#adoptopenjdk14-openj9)
+-	[`adoptopenjdk:14-openj9-bionic`](#adoptopenjdk14-openj9-bionic)
+-	[`adoptopenjdk:14-openj9-windowsservercore`](#adoptopenjdk14-openj9-windowsservercore)
+-	[`adoptopenjdk:14-openj9-windowsservercore-1809`](#adoptopenjdk14-openj9-windowsservercore-1809)
+-	[`adoptopenjdk:14-openj9-windowsservercore-ltsc2016`](#adoptopenjdk14-openj9-windowsservercore-ltsc2016)
 -	[`adoptopenjdk:8-hotspot`](#adoptopenjdk8-hotspot)
 -	[`adoptopenjdk:8-hotspot-bionic`](#adoptopenjdk8-hotspot-bionic)
 -	[`adoptopenjdk:8-hotspot-windowsservercore`](#adoptopenjdk8-hotspot-windowsservercore)
@@ -17678,6 +17728,206 @@ CMD ["jshell"]
 		Last Modified: Wed, 18 Mar 2020 14:53:39 GMT  
 		Size: 1.1 KB (1129 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `adoptopenjdk:14_36.1-jdk-openj9-0.19.0`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14_36.1-jdk-openj9-0.19.0-bionic`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14_36.1-jdk-openj9-0.19.0-windowsservercore`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14_36.1-jdk-openj9-0.19.0-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14_36.1-jdk-openj9-0.19.0-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14_36.1-jre-openj9-0.19.0`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14_36.1-jre-openj9-0.19.0-bionic`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14_36.1-jre-openj9-0.19.0-windowsservercore`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14_36.1-jre-openj9-0.19.0-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14_36.1-jre-openj9-0.19.0-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14_36-jdk-hotspot`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14_36-jdk-hotspot-bionic`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14_36-jdk-hotspot-windowsservercore`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14_36-jdk-hotspot-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14_36-jdk-hotspot-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14_36-jre-hotspot`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14_36-jre-hotspot-bionic`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14_36-jre-hotspot-windowsservercore`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14_36-jre-hotspot-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14_36-jre-hotspot-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-hotspot`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-hotspot-bionic`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-hotspot-windowsservercore`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-hotspot-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-hotspot-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-jdk-hotspot`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-jdk-hotspot-bionic`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-jdk-hotspot-windowsservercore`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-jdk-hotspot-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-jdk-hotspot-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-jdk-openj9`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-jdk-openj9-bionic`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-jdk-openj9-windowsservercore`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-jdk-openj9-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-jdk-openj9-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-jre-hotspot`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-jre-hotspot-bionic`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-jre-hotspot-windowsservercore`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-jre-hotspot-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-jre-hotspot-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-jre-openj9`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-jre-openj9-bionic`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-jre-openj9-windowsservercore`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-jre-openj9-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-jre-openj9-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-openj9`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-openj9-bionic`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-openj9-windowsservercore`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-openj9-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `adoptopenjdk:14-openj9-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
 
 ## `adoptopenjdk:8-hotspot`
 
