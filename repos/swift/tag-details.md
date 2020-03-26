@@ -33,6 +33,12 @@
 -	[`swift:5.1-slim`](#swift51-slim)
 -	[`swift:5.1-xenial`](#swift51-xenial)
 -	[`swift:5.1-xenial-slim`](#swift51-xenial-slim)
+-	[`swift:5.2`](#swift52)
+-	[`swift:5.2-bionic`](#swift52-bionic)
+-	[`swift:5.2-bionic-slim`](#swift52-bionic-slim)
+-	[`swift:5.2-slim`](#swift52-slim)
+-	[`swift:5.2-xenial`](#swift52-xenial)
+-	[`swift:5.2-xenial-slim`](#swift52-xenial-slim)
 -	[`swift:bionic`](#swiftbionic)
 -	[`swift:bionic-slim`](#swiftbionic-slim)
 -	[`swift:latest`](#swiftlatest)
@@ -2543,6 +2549,30 @@ RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFOR
 		Last Modified: Fri, 13 Mar 2020 01:35:25 GMT  
 		Size: 31.0 MB (30953527 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `swift:5.2`
+
+**does not exist** (yet?)
+
+## `swift:5.2-bionic`
+
+**does not exist** (yet?)
+
+## `swift:5.2-bionic-slim`
+
+**does not exist** (yet?)
+
+## `swift:5.2-slim`
+
+**does not exist** (yet?)
+
+## `swift:5.2-xenial`
+
+**does not exist** (yet?)
+
+## `swift:5.2-xenial-slim`
+
+**does not exist** (yet?)
 
 ## `swift:bionic`
 
