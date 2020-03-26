@@ -88,13 +88,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.9.10
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.9.10.dsc' apt_1.9.10.dsc 2762 SHA256:40d95d8e4db192684143e4d76208ea0e38f08e0f24c03c621ff8a2b6fc11916c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.9.10.tar.xz' apt_1.9.10.tar.xz 2179100 SHA256:43cb8a6125063103700d66a2e24fd9d78ea42c1d113f11795abe05d89985aa24
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/1.9.10/
+
 
 ### `dpkg` source package: `attr=1:2.4.48-5`
 
@@ -326,14 +326,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris db5.3=5.3.28+dfsg1-0.6ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28+dfsg1-0.6ubuntu1.dsc' db5.3_5.3.28+dfsg1-0.6ubuntu1.dsc 3220 SHA256:9374bf67244c85ea18442d804d4055b12493d73692f35e05c54d2f77ce979df1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28+dfsg1.orig.tar.xz' db5.3_5.3.28+dfsg1.orig.tar.xz 19723860 SHA256:b19bf3dd8ce74b95a7b215be9a7c8489e8e8f18da60d64d6340a06e75f497749
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28+dfsg1-0.6ubuntu1.debian.tar.xz' db5.3_5.3.28+dfsg1-0.6ubuntu1.debian.tar.xz 30108 SHA256:d22388b6e2b7e588b1ee16816878bd67c4edb79efb8ea47daf4edfb79605f26f
-```
 
 ### `dpkg` source package: `debconf=1.5.73`
 
@@ -452,9 +447,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris expat=2.2.9-1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9-1.dsc' expat_2.2.9-1.dsc 1949 SHA256:58db7b5ac8431570f47921ff545493334d09070a9afab9aaf8282e3c1dfc66ad
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9-1build1.dsc' expat_2.2.9-1build1.dsc 1998 SHA256:9f2d2e3bf2aec22907e3bf818fac7acc5f1e917821907bdea016f69a5cfe4da0
 'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9.orig.tar.gz' expat_2.2.9.orig.tar.gz 8273174 SHA256:c341ac8c79e021cc3392a6d76e138e62d1dd287592cb455148540331756a2208
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9-1.debian.tar.xz' expat_2.2.9-1.debian.tar.xz 10740 SHA256:85d13af9777815b77a478044604902d9a04eb05f4f0dbcaedcbe1193670239d4
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9-1build1.debian.tar.xz' expat_2.2.9-1build1.debian.tar.xz 10780 SHA256:400872937adfb41255914391a172237cfe317e57f129562ff2ec66773b2b5bbf
 ```
 
 ### `dpkg` source package: `findutils=4.7.0-1ubuntu1`
@@ -575,14 +570,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-10-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-10=10-20200307-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10-20200307-0ubuntu1.dsc' gcc-10_10-20200307-0ubuntu1.dsc 30816 SHA256:814c9a9ffd64ca1548a1eae1be2e497b0190b6c92e8a964bee2ea08707db4b52
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10-20200307.orig.tar.gz' gcc-10_10-20200307.orig.tar.gz 77132000 SHA256:0510027ed5a633ee88f49f0fb74b16268a46183db96e29e3116d748c58f212a2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10-20200307-0ubuntu1.debian.tar.xz' gcc-10_10-20200307-0ubuntu1.debian.tar.xz 560304 SHA256:1b6cadf848a36264c4173213b5da7743d4aac20177dfee5a08082141af8e6112
-```
 
 ### `dpkg` source package: `glibc=2.31-0ubuntu6`
 
@@ -1082,14 +1072,9 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libselinux=3.0-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.0-1build1.dsc' libselinux_3.0-1build1.dsc 2590 SHA256:811d54dfff3c8dcc368688ebe307ce35641a54ccd7cae85e2052eee523f8abb2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.0.orig.tar.gz' libselinux_3.0.orig.tar.gz 212096 SHA256:2ea2b30f671dae9d6b1391cbe8fb2ce5d36a3ee4fb1cd3c32f0d933c31b82433
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.0-1build1.debian.tar.xz' libselinux_3.0-1build1.debian.tar.xz 23640 SHA256:ea3bf8e52d095cc378464c968aa1b710ca8c96dfd763a8ccbb2d4787148aee2c
-```
 
 ### `dpkg` source package: `libsemanage=3.0-1build1`
 
@@ -1103,14 +1088,9 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsemanage=3.0-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.0-1build1.dsc' libsemanage_3.0-1build1.dsc 2703 SHA256:fe3fb5d2eef313cc29db3d23abcb06ae18b228ddd137203f232dfaf73fdc443b
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.0.orig.tar.gz' libsemanage_3.0.orig.tar.gz 180745 SHA256:a497b0720d54eac427f1f3f618eed417e50ed8f4e47ed0f7a1d391bd416e84cf
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.0-1build1.debian.tar.xz' libsemanage_3.0-1build1.debian.tar.xz 17108 SHA256:f671fb2e6bdfe9bbbee61541daa7873f9b19ddbced47b326eb136a2bd39fe624
-```
 
 ### `dpkg` source package: `libsepol=3.0-1`
 
