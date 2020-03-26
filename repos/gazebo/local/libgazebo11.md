@@ -93,14 +93,9 @@ Licenses: (parsed from: `/usr/share/doc/libasound2/copyright`, `/usr/share/doc/l
 - `LGPL-2.1`
 - `LPGL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris alsa-lib=1.1.3-5ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.1.3-5ubuntu0.2.dsc' alsa-lib_1.1.3-5ubuntu0.2.dsc 1922 SHA256:d062d2bc17dce5c04a3f6c8b26bdf262ac2c5c3ef891707be242e4665311b04c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.1.3.orig.tar.bz2' alsa-lib_1.1.3.orig.tar.bz2 962001 SHA256:71282502184c592c1a008e256c22ed0ba5728ca65e05273ceb480c70f515969c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.1.3-5ubuntu0.2.debian.tar.xz' alsa-lib_1.1.3-5ubuntu0.2.debian.tar.xz 139596 SHA256:36d180b22704d6ae686f4cca2bd0fcc81645bfac6233908c6cdf414d81ac3958
-```
 
 ### `dpkg` source package: `apparmor=2.12-4ubuntu5.1`
 
@@ -1875,14 +1870,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.56.4-0ubuntu0.18.04.4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.4-0ubuntu0.18.04.4.dsc' glib2.0_2.56.4-0ubuntu0.18.04.4.dsc 3567 SHA256:cf6c1bad61ca8f19bdb5aa12df05999e2812b46d50413ac1534c0c4df2a48489
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.4.orig.tar.xz' glib2.0_2.56.4.orig.tar.xz 7029768 SHA256:27f703d125efb07f8a743666b580df0b4095c59fc8750e8890132c91d437504c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.4-0ubuntu0.18.04.4.debian.tar.xz' glib2.0_2.56.4-0ubuntu0.18.04.4.debian.tar.xz 82472 SHA256:da8273fc3f78390ce1e4f7d5a2818352ab85a5ef790306d2f1b61d50cbd0718c
-```
 
 ### `dpkg` source package: `glibc=2.27-3ubuntu1`
 
@@ -8111,14 +8101,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.31.1-0.4ubuntu3.5
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.5.dsc' util-linux_2.31.1-0.4ubuntu3.5.dsc 4147 SHA256:1e7e4c5ae02514beb07ab0ab20fbb93444b6e321c358362a7621fba5f2a1159b
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1.orig.tar.xz' util-linux_2.31.1.orig.tar.xz 4514032 SHA256:cfd5789570e9ff75e079471faeca1511ade1607f650523a6ad25d1e26516ae4e
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.5.debian.tar.xz' util-linux_2.31.1-0.4ubuntu3.5.debian.tar.xz 101300 SHA256:e246c635b9c383a300e622aa64c9088c1fa5699dd1af44856f957053140306bf
-```
 
 ### `dpkg` source package: `wavpack=5.1.0-2ubuntu1.4`
 

@@ -1260,14 +1260,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.48.2-0ubuntu4.4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu4.4.dsc' glib2.0_2.48.2-0ubuntu4.4.dsc 3157 SHA256:634120712a9b8c88e44cc5fdb0088a7006f667f7d74859aca494057e01c95a13
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2.orig.tar.xz' glib2.0_2.48.2.orig.tar.xz 6408644 SHA256:f25e751589cb1a58826eac24fbd4186cda4518af772806b666a3f91f66e6d3f4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu4.4.debian.tar.xz' glib2.0_2.48.2-0ubuntu4.4.debian.tar.xz 73724 SHA256:0b1544430db9b73d49dfb25e77d6223cc1afe2f296b5db31ad493ea47877183e
-```
 
 ### `dpkg` source package: `glibc=2.23-0ubuntu11`
 
@@ -4673,9 +4668,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris postgresql-9.5=9.5.19-0ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.19-0ubuntu0.16.04.1.dsc' postgresql-9.5_9.5.19-0ubuntu0.16.04.1.dsc 3678 SHA256:ca6876c5aba55931f867aba213136850543eafdd466200b793b9a9811a93f3ff
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.19.orig.tar.bz2' postgresql-9.5_9.5.19.orig.tar.bz2 17571998 SHA256:960caa26612bca8a3791d1c0bdc5c6d24b3d15841becb617470424edbc5e1bb3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.19-0ubuntu0.16.04.1.debian.tar.xz' postgresql-9.5_9.5.19-0ubuntu0.16.04.1.debian.tar.xz 27480 SHA256:59d45160ee46fb64f800b37a0017dc285e16847a04d344f4097cfc9b1269ff3b
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.19-0ubuntu0.16.04.1.dsc' postgresql-9.5_9.5.19-0ubuntu0.16.04.1.dsc 3678 SHA256:ca6876c5aba55931f867aba213136850543eafdd466200b793b9a9811a93f3ff
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.19.orig.tar.bz2' postgresql-9.5_9.5.19.orig.tar.bz2 17571998 SHA256:960caa26612bca8a3791d1c0bdc5c6d24b3d15841becb617470424edbc5e1bb3
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.19-0ubuntu0.16.04.1.debian.tar.xz' postgresql-9.5_9.5.19-0ubuntu0.16.04.1.debian.tar.xz 27480 SHA256:59d45160ee46fb64f800b37a0017dc285e16847a04d344f4097cfc9b1269ff3b
 ```
 
 ### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.4`
