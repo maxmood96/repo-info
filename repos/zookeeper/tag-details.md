@@ -6,6 +6,8 @@
 -	[`zookeeper:3.4.14`](#zookeeper3414)
 -	[`zookeeper:3.5`](#zookeeper35)
 -	[`zookeeper:3.5.7`](#zookeeper357)
+-	[`zookeeper:3.6`](#zookeeper36)
+-	[`zookeeper:3.6.0`](#zookeeper360)
 -	[`zookeeper:latest`](#zookeeperlatest)
 
 ## `zookeeper:3.4`
@@ -451,6 +453,14 @@ CMD ["zkServer.sh" "start-foreground"]
 		Last Modified: Mon, 09 Mar 2020 22:24:08 GMT  
 		Size: 750.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `zookeeper:3.6`
+
+**does not exist** (yet?)
+
+## `zookeeper:3.6.0`
+
+**does not exist** (yet?)
 
 ## `zookeeper:latest`
 
