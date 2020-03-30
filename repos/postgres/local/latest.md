@@ -1999,14 +1999,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-12=12.2-2.pgdg100+1
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-12/postgresql-12_12.2-2.pgdg100+1.dsc' postgresql-12_12.2-2.pgdg100+1.dsc 2748 SHA256:4f91de4ea242fda7af9bcc62adbd9f6c74a6f0e84f1d3dbef8f1a83c59db11d1
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-12/postgresql-12_12.2.orig.tar.bz2' postgresql-12_12.2.orig.tar.bz2 20363545 SHA256:ad1dcc4c4fc500786b745635a9e1eba950195ce20b8913f50345bb7d5369b5de
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-12/postgresql-12_12.2-2.pgdg100+1.debian.tar.xz' postgresql-12_12.2-2.pgdg100+1.debian.tar.xz 22916 SHA256:182268464d5e6ec2259eec02f069d6b53bfd97ceb3c9c7e89b21cd78650092d6
-```
 
 ### `dpkg` source package: `postgresql-common=213.pgdg100+1`
 
