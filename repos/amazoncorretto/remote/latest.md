@@ -1,7 +1,7 @@
 ## `amazoncorretto:latest`
 
 ```console
-$ docker pull amazoncorretto@sha256:a3e357af0113c95f95b5f14fcad53aa073bbc2a880131afb622986981a176733
+$ docker pull amazoncorretto@sha256:7a5eb629e8d13b46a3ef1a79ff386638c4265ecc0f3afcab17f4b3b22e6dc9e8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -59,46 +59,46 @@ ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto
 ### `amazoncorretto:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull amazoncorretto@sha256:853cedecb0bc8c03996f25e14f540d2bb52d1d0832f7143bbb1669c8f2d67558
+$ docker pull amazoncorretto@sha256:f1f2edd2811c891c40caa419ba985f0d66f176611b3b2edabd1ece100bdd4656
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.0 MB (168024104 bytes)**  
+-	Total Size: **168.0 MB (168046929 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:993f4d7c609613532ecf2b2a49c3deda4eeca566daccdc9916769a01cc9af6cc`
+-	Image ID: `sha256:613c2fa7083aba3dc20cbf42b6fc6f1366e85158678096ce820f7b3cd65e2d92`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 19 Feb 2020 22:39:49 GMT
-ADD file:bf00dcc4d3caeda14a7a6b3afb7f5dca29d64b43fe428f5713b88cec1a82f2a0 in / 
-# Wed, 19 Feb 2020 22:39:52 GMT
+# Wed, 01 Apr 2020 05:22:43 GMT
+ADD file:40b8f329ad6d591029e1a4cde76c1d097315b136796d31bb9d3df35183423c14 in / 
+# Wed, 01 Apr 2020 05:22:46 GMT
 CMD ["/bin/bash"]
-# Thu, 20 Feb 2020 00:31:30 GMT
+# Wed, 01 Apr 2020 08:29:02 GMT
 ARG rpm_x64=java-1.8.0-amazon-corretto-devel-1.8.0_242.b08-1.x86_64.rpm
-# Thu, 20 Feb 2020 00:31:31 GMT
+# Wed, 01 Apr 2020 08:29:02 GMT
 ARG path_x64=https://corretto.aws/downloads/resources/8.242.08.1
-# Thu, 20 Feb 2020 00:31:31 GMT
+# Wed, 01 Apr 2020 08:29:03 GMT
 ARG key_x64=6DC3636DAE534049C8B94623A122542AB04F24E3
-# Thu, 20 Feb 2020 00:31:32 GMT
+# Wed, 01 Apr 2020 08:29:03 GMT
 ARG rpm_aarch64=java-1.8.0-amazon-corretto-devel-1.8.0_242.b08-1.aarch64.rpm
-# Thu, 20 Feb 2020 00:31:34 GMT
+# Wed, 01 Apr 2020 08:29:04 GMT
 ARG path_aarch64=https://corretto.aws/downloads/resources/8.242.08.1
-# Thu, 20 Feb 2020 00:31:35 GMT
+# Wed, 01 Apr 2020 08:29:04 GMT
 ARG key_aarch64=6DC3636DAE534049C8B94623A122542AB04F24E3
-# Thu, 20 Feb 2020 00:32:14 GMT
+# Wed, 01 Apr 2020 08:29:27 GMT
 # ARGS: key_aarch64=6DC3636DAE534049C8B94623A122542AB04F24E3 key_x64=6DC3636DAE534049C8B94623A122542AB04F24E3 path_aarch64=https://corretto.aws/downloads/resources/8.242.08.1 path_x64=https://corretto.aws/downloads/resources/8.242.08.1 rpm_aarch64=java-1.8.0-amazon-corretto-devel-1.8.0_242.b08-1.aarch64.rpm rpm_x64=java-1.8.0-amazon-corretto-devel-1.8.0_242.b08-1.x86_64.rpm
 RUN set -eux;     case "$(uname -p)" in         x86_64) rpm=$rpm_x64; path=$path_x64; key=$key_x64 ;;         aarch64) rpm=$rpm_aarch64; path=$path_aarch64; key=$key_aarch64 ;;         *) echo >&2 "Unsupported architecture $(uname -p)."; exit 1 ;;     esac;         curl -O $path/$rpm     && export GNUPGHOME="$(mktemp -d)"     && gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys $key     && gpg --armor --export $key > corretto.asc     && rpm --import corretto.asc     && rpm -K $rpm     && rpm -i $rpm     && rm -r $GNUPGHOME corretto.asc $rpm     && yum install -y fontconfig     && yum clean all
-# Thu, 20 Feb 2020 00:32:16 GMT
+# Wed, 01 Apr 2020 08:29:28 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto
 ```
 
 -	Layers:
-	-	`sha256:7f2fa3024eb129e832d7fd7cee7209fdab8adadbc3dc31675f191ac0414fb93c`  
-		Last Modified: Wed, 19 Feb 2020 22:40:47 GMT  
-		Size: 63.1 MB (63062950 bytes)  
+	-	`sha256:01d0a3bd5b98a6512409a10e5e5b065e87b794f924f3f9f7662939925aac631b`  
+		Last Modified: Wed, 01 Apr 2020 05:24:01 GMT  
+		Size: 63.1 MB (63072580 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c071c89646a02bc6799ef6114f771b308c0b973ce76319ad5518f64ad00986af`  
-		Last Modified: Thu, 20 Feb 2020 00:33:35 GMT  
-		Size: 105.0 MB (104961154 bytes)  
+	-	`sha256:05b897bb90f24638d350f41e113472509d7732f6a6d4f27763cf180b28a4f8c6`  
+		Last Modified: Wed, 01 Apr 2020 08:30:57 GMT  
+		Size: 105.0 MB (104974349 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
