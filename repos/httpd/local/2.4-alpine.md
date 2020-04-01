@@ -1,18 +1,18 @@
-# `httpd:2.4.41-alpine`
+# `httpd:2.4.43-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:54b0995a630527d5e8db6dfee1fedace23d145d7b916a455e0c8380db974d81c`
-- Created: `2020-03-23T21:56:12.242759855Z`
-- Virtual Size: ~ 107.35 Mb  
+- Image ID: `sha256:41de79c581c3cf70c1f28f46cafa4ab2946f53ba868e77bc1b48ae6801ad1953`
+- Created: `2020-03-31T00:29:28.330174034Z`
+- Virtual Size: ~ 107.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
 - Environment:
   - `PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HTTPD_PREFIX=/usr/local/apache2`
-  - `HTTPD_VERSION=2.4.41`
-  - `HTTPD_SHA256=133d48298fe5315ae9366a0ec66282fa4040efa5d566174481077ade7d18ea40`
+  - `HTTPD_VERSION=2.4.43`
+  - `HTTPD_SHA256=a497652ab3fc81318cdc2a203090a999150d86461acff97c1065dc910fe10f43`
   - `HTTPD_PATCHES=`
 
 ## `apk` (`.apk`-based packages)
