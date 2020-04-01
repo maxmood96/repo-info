@@ -16,7 +16,7 @@
 ## `kapacitor:1.4`
 
 ```console
-$ docker pull kapacitor@sha256:335fa1fc24a2b49354cae3e9aaeed683d937d346dbea9338f24cb3c5daff8ce7
+$ docker pull kapacitor@sha256:d0352bc0a05d0e2a42d3af49d701deffc9c31f3db1768895386cdc197638cd66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -28,80 +28,80 @@ $ docker pull kapacitor@sha256:335fa1fc24a2b49354cae3e9aaeed683d937d346dbea9338f
 ### `kapacitor:1.4` - linux; amd64
 
 ```console
-$ docker pull kapacitor@sha256:fb4dfbf4399867e46ccaebb80f3d5e8c1fce3b229965a7ad939cb0199d62c0ad
+$ docker pull kapacitor@sha256:04f51c8f59f38a6a597ed57946265a679f401fe4ad59b3916ed0f9c2f894ade4
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.3 MB (96305220 bytes)**  
+-	Total Size: **96.3 MB (96304574 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:05b10679e1ef3446ba059c9e182e5ab1ae27f97d5a6eb0a49b1fe07ada41a267`
+-	Image ID: `sha256:0c868f7aee0faf1b6fd117015b2e4bc24c81437ad5f8f8096eda8a455e93de15`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["kapacitord"]`
 
 ```dockerfile
-# Wed, 26 Feb 2020 00:41:14 GMT
-ADD file:08c5ab7c53526da155d6be40a9795fc08afc9f47bd333c096e90185fe9fab2b1 in / 
-# Wed, 26 Feb 2020 00:41:14 GMT
+# Tue, 31 Mar 2020 01:23:50 GMT
+ADD file:774b5e2033bb42ad97daa64267a5f041124cc0b05ec0198f1b5578ceea5a48e4 in / 
+# Tue, 31 Mar 2020 01:23:51 GMT
 CMD ["bash"]
-# Wed, 26 Feb 2020 01:17:11 GMT
+# Tue, 31 Mar 2020 02:06:41 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 26 Feb 2020 01:17:19 GMT
+# Tue, 31 Mar 2020 02:06:47 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 27 Feb 2020 03:45:44 GMT
+# Wed, 01 Apr 2020 01:25:02 GMT
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y bash-completion &&     awk 'f{if(sub(/^#/,"",$0)==0){f=0}};/^# enable bash completion/{f=1};{print;}' /etc/bash.bashrc > /etc/bash.bashrc.new &&     mv /etc/bash.bashrc.new /etc/bash.bashrc
-# Thu, 27 Feb 2020 03:45:47 GMT
+# Wed, 01 Apr 2020 01:25:05 GMT
 RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Thu, 27 Feb 2020 03:45:47 GMT
+# Wed, 01 Apr 2020 01:25:05 GMT
 ENV KAPACITOR_VERSION=1.4.1
-# Thu, 27 Feb 2020 03:45:50 GMT
+# Wed, 01 Apr 2020 01:25:08 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}_${ARCH}.deb &&     gpg --batch --verify kapacitor_${KAPACITOR_VERSION}_${ARCH}.deb.asc kapacitor_${KAPACITOR_VERSION}_${ARCH}.deb &&     dpkg -i kapacitor_${KAPACITOR_VERSION}_${ARCH}.deb &&     rm -f kapacitor_${KAPACITOR_VERSION}_${ARCH}.deb*
-# Thu, 27 Feb 2020 03:45:50 GMT
+# Wed, 01 Apr 2020 01:25:08 GMT
 COPY file:9450c5dcbc0a583243f987f682dc6c44d9e4a3f1c31d1bb9957f313457e444ec in /etc/kapacitor/kapacitor.conf 
-# Thu, 27 Feb 2020 03:45:50 GMT
+# Wed, 01 Apr 2020 01:25:08 GMT
 EXPOSE 9092
-# Thu, 27 Feb 2020 03:45:50 GMT
+# Wed, 01 Apr 2020 01:25:09 GMT
 VOLUME [/var/lib/kapacitor]
-# Thu, 27 Feb 2020 03:45:50 GMT
+# Wed, 01 Apr 2020 01:25:09 GMT
 COPY file:a229567085df49450fcc70ed6d49efcbdfc41ca92b6c5bdb3b541cb803165dbc in /entrypoint.sh 
-# Thu, 27 Feb 2020 03:45:51 GMT
+# Wed, 01 Apr 2020 01:25:09 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 27 Feb 2020 03:45:51 GMT
+# Wed, 01 Apr 2020 01:25:09 GMT
 CMD ["kapacitord"]
 ```
 
 -	Layers:
-	-	`sha256:c0c53f743a403d45480d026864d9611d6eb898e897d60c13ae854ad453d462a4`  
-		Last Modified: Wed, 26 Feb 2020 00:47:05 GMT  
-		Size: 45.4 MB (45375932 bytes)  
+	-	`sha256:56da78ce36e97a8ba1f860575bb1422d1cb6ab4dade70b06ddf1651302dde955`  
+		Last Modified: Tue, 31 Mar 2020 01:29:15 GMT  
+		Size: 45.4 MB (45375928 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66997431d390aecfd02e57222c9b5752d314a4508de82c9b43c66812c3434ed4`  
-		Last Modified: Wed, 26 Feb 2020 01:23:37 GMT  
-		Size: 10.8 MB (10797283 bytes)  
+	-	`sha256:fbfe0f13ac4531fb6d077fda0e94ced4b9ed8a354c54b4efced9b7755d3f39d1`  
+		Last Modified: Tue, 31 Mar 2020 02:12:44 GMT  
+		Size: 10.8 MB (10797329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ea865e2909f355d736daef9076ecda63b3075c6267b858d9eaaf2e3966fc0d2`  
-		Last Modified: Wed, 26 Feb 2020 01:23:36 GMT  
-		Size: 4.3 MB (4340193 bytes)  
+	-	`sha256:6254ff6d0e6052b7bead70e37703002eda28ac40f9a1167ea9bf813bf9c17d7f`  
+		Last Modified: Tue, 31 Mar 2020 02:12:43 GMT  
+		Size: 4.3 MB (4340113 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31bc43f4da75e578f24047203272c5e96318a3a854bd288fb4b7ec08211bf008`  
-		Last Modified: Thu, 27 Feb 2020 03:46:16 GMT  
-		Size: 13.1 MB (13094294 bytes)  
+	-	`sha256:c409365aa2a1a55a954ea370d21673c7c9bf49341bf51f67a888d4223f912e45`  
+		Last Modified: Wed, 01 Apr 2020 01:25:36 GMT  
+		Size: 13.1 MB (13093715 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ababb2175d176c3f868822a958f4d2e7b03fe0a862768f44c944868b1ce912c`  
-		Last Modified: Thu, 27 Feb 2020 03:46:15 GMT  
+	-	`sha256:fa3db17e507e043f8b260f037d4440d9edfaf88a6586a0c089670caab0fd3db5`  
+		Last Modified: Wed, 01 Apr 2020 01:25:34 GMT  
 		Size: 2.8 KB (2775 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa3670641643da0a766b6f6c31f4a3c73c41d46849ac69daf22db7ae421b2590`  
-		Last Modified: Thu, 27 Feb 2020 03:46:20 GMT  
-		Size: 22.7 MB (22694287 bytes)  
+	-	`sha256:d83781a8917c73a923bf2d163979c61c8380db0dabb792dfc30aa36ccbc40269`  
+		Last Modified: Wed, 01 Apr 2020 01:25:40 GMT  
+		Size: 22.7 MB (22694256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9e737225a0514f7f407b60afa35604f046ce3f3c1a5f2886a2a335ea5c8b234`  
-		Last Modified: Thu, 27 Feb 2020 03:46:15 GMT  
-		Size: 225.0 B  
+	-	`sha256:a2fbbe8a17b727bc72126c75c14c304e26b930b221f03c21b8bef87b44d24f7f`  
+		Last Modified: Wed, 01 Apr 2020 01:25:34 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2cb2324a6a899053d75b8c4679d46663364eae12824f81c96a546e4f9b78c04d`  
-		Last Modified: Thu, 27 Feb 2020 03:46:15 GMT  
-		Size: 231.0 B  
+	-	`sha256:ed6aae57b798ffb6c69fa31e608efa24ad802ef263ed4a90822e8337db5fc5af`  
+		Last Modified: Wed, 01 Apr 2020 01:25:34 GMT  
+		Size: 232.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `kapacitor:1.4` - linux; arm variant v7
@@ -265,7 +265,7 @@ CMD ["kapacitord"]
 ## `kapacitor:1.4.1`
 
 ```console
-$ docker pull kapacitor@sha256:335fa1fc24a2b49354cae3e9aaeed683d937d346dbea9338f24cb3c5daff8ce7
+$ docker pull kapacitor@sha256:d0352bc0a05d0e2a42d3af49d701deffc9c31f3db1768895386cdc197638cd66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -277,80 +277,80 @@ $ docker pull kapacitor@sha256:335fa1fc24a2b49354cae3e9aaeed683d937d346dbea9338f
 ### `kapacitor:1.4.1` - linux; amd64
 
 ```console
-$ docker pull kapacitor@sha256:fb4dfbf4399867e46ccaebb80f3d5e8c1fce3b229965a7ad939cb0199d62c0ad
+$ docker pull kapacitor@sha256:04f51c8f59f38a6a597ed57946265a679f401fe4ad59b3916ed0f9c2f894ade4
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.3 MB (96305220 bytes)**  
+-	Total Size: **96.3 MB (96304574 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:05b10679e1ef3446ba059c9e182e5ab1ae27f97d5a6eb0a49b1fe07ada41a267`
+-	Image ID: `sha256:0c868f7aee0faf1b6fd117015b2e4bc24c81437ad5f8f8096eda8a455e93de15`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["kapacitord"]`
 
 ```dockerfile
-# Wed, 26 Feb 2020 00:41:14 GMT
-ADD file:08c5ab7c53526da155d6be40a9795fc08afc9f47bd333c096e90185fe9fab2b1 in / 
-# Wed, 26 Feb 2020 00:41:14 GMT
+# Tue, 31 Mar 2020 01:23:50 GMT
+ADD file:774b5e2033bb42ad97daa64267a5f041124cc0b05ec0198f1b5578ceea5a48e4 in / 
+# Tue, 31 Mar 2020 01:23:51 GMT
 CMD ["bash"]
-# Wed, 26 Feb 2020 01:17:11 GMT
+# Tue, 31 Mar 2020 02:06:41 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 26 Feb 2020 01:17:19 GMT
+# Tue, 31 Mar 2020 02:06:47 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 27 Feb 2020 03:45:44 GMT
+# Wed, 01 Apr 2020 01:25:02 GMT
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y bash-completion &&     awk 'f{if(sub(/^#/,"",$0)==0){f=0}};/^# enable bash completion/{f=1};{print;}' /etc/bash.bashrc > /etc/bash.bashrc.new &&     mv /etc/bash.bashrc.new /etc/bash.bashrc
-# Thu, 27 Feb 2020 03:45:47 GMT
+# Wed, 01 Apr 2020 01:25:05 GMT
 RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Thu, 27 Feb 2020 03:45:47 GMT
+# Wed, 01 Apr 2020 01:25:05 GMT
 ENV KAPACITOR_VERSION=1.4.1
-# Thu, 27 Feb 2020 03:45:50 GMT
+# Wed, 01 Apr 2020 01:25:08 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}_${ARCH}.deb &&     gpg --batch --verify kapacitor_${KAPACITOR_VERSION}_${ARCH}.deb.asc kapacitor_${KAPACITOR_VERSION}_${ARCH}.deb &&     dpkg -i kapacitor_${KAPACITOR_VERSION}_${ARCH}.deb &&     rm -f kapacitor_${KAPACITOR_VERSION}_${ARCH}.deb*
-# Thu, 27 Feb 2020 03:45:50 GMT
+# Wed, 01 Apr 2020 01:25:08 GMT
 COPY file:9450c5dcbc0a583243f987f682dc6c44d9e4a3f1c31d1bb9957f313457e444ec in /etc/kapacitor/kapacitor.conf 
-# Thu, 27 Feb 2020 03:45:50 GMT
+# Wed, 01 Apr 2020 01:25:08 GMT
 EXPOSE 9092
-# Thu, 27 Feb 2020 03:45:50 GMT
+# Wed, 01 Apr 2020 01:25:09 GMT
 VOLUME [/var/lib/kapacitor]
-# Thu, 27 Feb 2020 03:45:50 GMT
+# Wed, 01 Apr 2020 01:25:09 GMT
 COPY file:a229567085df49450fcc70ed6d49efcbdfc41ca92b6c5bdb3b541cb803165dbc in /entrypoint.sh 
-# Thu, 27 Feb 2020 03:45:51 GMT
+# Wed, 01 Apr 2020 01:25:09 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 27 Feb 2020 03:45:51 GMT
+# Wed, 01 Apr 2020 01:25:09 GMT
 CMD ["kapacitord"]
 ```
 
 -	Layers:
-	-	`sha256:c0c53f743a403d45480d026864d9611d6eb898e897d60c13ae854ad453d462a4`  
-		Last Modified: Wed, 26 Feb 2020 00:47:05 GMT  
-		Size: 45.4 MB (45375932 bytes)  
+	-	`sha256:56da78ce36e97a8ba1f860575bb1422d1cb6ab4dade70b06ddf1651302dde955`  
+		Last Modified: Tue, 31 Mar 2020 01:29:15 GMT  
+		Size: 45.4 MB (45375928 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66997431d390aecfd02e57222c9b5752d314a4508de82c9b43c66812c3434ed4`  
-		Last Modified: Wed, 26 Feb 2020 01:23:37 GMT  
-		Size: 10.8 MB (10797283 bytes)  
+	-	`sha256:fbfe0f13ac4531fb6d077fda0e94ced4b9ed8a354c54b4efced9b7755d3f39d1`  
+		Last Modified: Tue, 31 Mar 2020 02:12:44 GMT  
+		Size: 10.8 MB (10797329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ea865e2909f355d736daef9076ecda63b3075c6267b858d9eaaf2e3966fc0d2`  
-		Last Modified: Wed, 26 Feb 2020 01:23:36 GMT  
-		Size: 4.3 MB (4340193 bytes)  
+	-	`sha256:6254ff6d0e6052b7bead70e37703002eda28ac40f9a1167ea9bf813bf9c17d7f`  
+		Last Modified: Tue, 31 Mar 2020 02:12:43 GMT  
+		Size: 4.3 MB (4340113 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31bc43f4da75e578f24047203272c5e96318a3a854bd288fb4b7ec08211bf008`  
-		Last Modified: Thu, 27 Feb 2020 03:46:16 GMT  
-		Size: 13.1 MB (13094294 bytes)  
+	-	`sha256:c409365aa2a1a55a954ea370d21673c7c9bf49341bf51f67a888d4223f912e45`  
+		Last Modified: Wed, 01 Apr 2020 01:25:36 GMT  
+		Size: 13.1 MB (13093715 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ababb2175d176c3f868822a958f4d2e7b03fe0a862768f44c944868b1ce912c`  
-		Last Modified: Thu, 27 Feb 2020 03:46:15 GMT  
+	-	`sha256:fa3db17e507e043f8b260f037d4440d9edfaf88a6586a0c089670caab0fd3db5`  
+		Last Modified: Wed, 01 Apr 2020 01:25:34 GMT  
 		Size: 2.8 KB (2775 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa3670641643da0a766b6f6c31f4a3c73c41d46849ac69daf22db7ae421b2590`  
-		Last Modified: Thu, 27 Feb 2020 03:46:20 GMT  
-		Size: 22.7 MB (22694287 bytes)  
+	-	`sha256:d83781a8917c73a923bf2d163979c61c8380db0dabb792dfc30aa36ccbc40269`  
+		Last Modified: Wed, 01 Apr 2020 01:25:40 GMT  
+		Size: 22.7 MB (22694256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9e737225a0514f7f407b60afa35604f046ce3f3c1a5f2886a2a335ea5c8b234`  
-		Last Modified: Thu, 27 Feb 2020 03:46:15 GMT  
-		Size: 225.0 B  
+	-	`sha256:a2fbbe8a17b727bc72126c75c14c304e26b930b221f03c21b8bef87b44d24f7f`  
+		Last Modified: Wed, 01 Apr 2020 01:25:34 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2cb2324a6a899053d75b8c4679d46663364eae12824f81c96a546e4f9b78c04d`  
-		Last Modified: Thu, 27 Feb 2020 03:46:15 GMT  
-		Size: 231.0 B  
+	-	`sha256:ed6aae57b798ffb6c69fa31e608efa24ad802ef263ed4a90822e8337db5fc5af`  
+		Last Modified: Wed, 01 Apr 2020 01:25:34 GMT  
+		Size: 232.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `kapacitor:1.4.1` - linux; arm variant v7
@@ -668,7 +668,7 @@ CMD ["kapacitord"]
 ## `kapacitor:1.5`
 
 ```console
-$ docker pull kapacitor@sha256:ce85cde2a8d33da7b8071ebef67bccf00106924af7357b7824ae656ade0a3ab0
+$ docker pull kapacitor@sha256:45be5095f0da73f6ae622d9a1bd1722db3d801372b007ceafa712a53aa518a3a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -680,80 +680,80 @@ $ docker pull kapacitor@sha256:ce85cde2a8d33da7b8071ebef67bccf00106924af7357b782
 ### `kapacitor:1.5` - linux; amd64
 
 ```console
-$ docker pull kapacitor@sha256:e3db59d4fd3e0412b8971114d7a63bbbbdf8cc53f183387b33b015d5eb13b56b
+$ docker pull kapacitor@sha256:4af5793e3e0531e8c597e9d537d175524ac88c175b0545bbb4c09e53736a1941
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **109.9 MB (109921585 bytes)**  
+-	Total Size: **109.9 MB (109920886 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a59cd84d65697816541763258610a272628b3d9685b6b48f2cdafe671cb72fb3`
+-	Image ID: `sha256:b41dac2c983e46ae15718c3d99baabf1425d911f3123cf5943e9f0704f70b0ab`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["kapacitord"]`
 
 ```dockerfile
-# Wed, 26 Feb 2020 00:41:14 GMT
-ADD file:08c5ab7c53526da155d6be40a9795fc08afc9f47bd333c096e90185fe9fab2b1 in / 
-# Wed, 26 Feb 2020 00:41:14 GMT
+# Tue, 31 Mar 2020 01:23:50 GMT
+ADD file:774b5e2033bb42ad97daa64267a5f041124cc0b05ec0198f1b5578ceea5a48e4 in / 
+# Tue, 31 Mar 2020 01:23:51 GMT
 CMD ["bash"]
-# Wed, 26 Feb 2020 01:17:11 GMT
+# Tue, 31 Mar 2020 02:06:41 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 26 Feb 2020 01:17:19 GMT
+# Tue, 31 Mar 2020 02:06:47 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 27 Feb 2020 03:45:44 GMT
+# Wed, 01 Apr 2020 01:25:02 GMT
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y bash-completion &&     awk 'f{if(sub(/^#/,"",$0)==0){f=0}};/^# enable bash completion/{f=1};{print;}' /etc/bash.bashrc > /etc/bash.bashrc.new &&     mv /etc/bash.bashrc.new /etc/bash.bashrc
-# Thu, 27 Feb 2020 03:45:47 GMT
+# Wed, 01 Apr 2020 01:25:05 GMT
 RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Thu, 27 Feb 2020 03:45:59 GMT
+# Wed, 01 Apr 2020 01:25:17 GMT
 ENV KAPACITOR_VERSION=1.5.4
-# Thu, 27 Feb 2020 03:46:02 GMT
+# Wed, 01 Apr 2020 01:25:20 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}-1_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}-1_${ARCH}.deb &&     gpg --batch --verify kapacitor_${KAPACITOR_VERSION}-1_${ARCH}.deb.asc kapacitor_${KAPACITOR_VERSION}-1_${ARCH}.deb &&     dpkg -i kapacitor_${KAPACITOR_VERSION}-1_${ARCH}.deb &&     rm -f kapacitor_${KAPACITOR_VERSION}-1_${ARCH}.deb*
-# Thu, 27 Feb 2020 03:46:03 GMT
+# Wed, 01 Apr 2020 01:25:20 GMT
 COPY file:9450c5dcbc0a583243f987f682dc6c44d9e4a3f1c31d1bb9957f313457e444ec in /etc/kapacitor/kapacitor.conf 
-# Thu, 27 Feb 2020 03:46:03 GMT
+# Wed, 01 Apr 2020 01:25:21 GMT
 EXPOSE 9092
-# Thu, 27 Feb 2020 03:46:03 GMT
+# Wed, 01 Apr 2020 01:25:21 GMT
 VOLUME [/var/lib/kapacitor]
-# Thu, 27 Feb 2020 03:46:03 GMT
+# Wed, 01 Apr 2020 01:25:21 GMT
 COPY file:a229567085df49450fcc70ed6d49efcbdfc41ca92b6c5bdb3b541cb803165dbc in /entrypoint.sh 
-# Thu, 27 Feb 2020 03:46:03 GMT
+# Wed, 01 Apr 2020 01:25:21 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 27 Feb 2020 03:46:04 GMT
+# Wed, 01 Apr 2020 01:25:21 GMT
 CMD ["kapacitord"]
 ```
 
 -	Layers:
-	-	`sha256:c0c53f743a403d45480d026864d9611d6eb898e897d60c13ae854ad453d462a4`  
-		Last Modified: Wed, 26 Feb 2020 00:47:05 GMT  
-		Size: 45.4 MB (45375932 bytes)  
+	-	`sha256:56da78ce36e97a8ba1f860575bb1422d1cb6ab4dade70b06ddf1651302dde955`  
+		Last Modified: Tue, 31 Mar 2020 01:29:15 GMT  
+		Size: 45.4 MB (45375928 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66997431d390aecfd02e57222c9b5752d314a4508de82c9b43c66812c3434ed4`  
-		Last Modified: Wed, 26 Feb 2020 01:23:37 GMT  
-		Size: 10.8 MB (10797283 bytes)  
+	-	`sha256:fbfe0f13ac4531fb6d077fda0e94ced4b9ed8a354c54b4efced9b7755d3f39d1`  
+		Last Modified: Tue, 31 Mar 2020 02:12:44 GMT  
+		Size: 10.8 MB (10797329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ea865e2909f355d736daef9076ecda63b3075c6267b858d9eaaf2e3966fc0d2`  
-		Last Modified: Wed, 26 Feb 2020 01:23:36 GMT  
-		Size: 4.3 MB (4340193 bytes)  
+	-	`sha256:6254ff6d0e6052b7bead70e37703002eda28ac40f9a1167ea9bf813bf9c17d7f`  
+		Last Modified: Tue, 31 Mar 2020 02:12:43 GMT  
+		Size: 4.3 MB (4340113 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31bc43f4da75e578f24047203272c5e96318a3a854bd288fb4b7ec08211bf008`  
-		Last Modified: Thu, 27 Feb 2020 03:46:16 GMT  
-		Size: 13.1 MB (13094294 bytes)  
+	-	`sha256:c409365aa2a1a55a954ea370d21673c7c9bf49341bf51f67a888d4223f912e45`  
+		Last Modified: Wed, 01 Apr 2020 01:25:36 GMT  
+		Size: 13.1 MB (13093715 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ababb2175d176c3f868822a958f4d2e7b03fe0a862768f44c944868b1ce912c`  
-		Last Modified: Thu, 27 Feb 2020 03:46:15 GMT  
+	-	`sha256:fa3db17e507e043f8b260f037d4440d9edfaf88a6586a0c089670caab0fd3db5`  
+		Last Modified: Wed, 01 Apr 2020 01:25:34 GMT  
 		Size: 2.8 KB (2775 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15557de99a32aa2424540e26625343668366613b85a961ad98a36aecc73d3380`  
-		Last Modified: Thu, 27 Feb 2020 03:46:30 GMT  
-		Size: 36.3 MB (36310652 bytes)  
+	-	`sha256:6daa1830c9c5eb6095350117e70442976a4f0a5567fb0969f316eb33ee03262f`  
+		Last Modified: Wed, 01 Apr 2020 01:25:51 GMT  
+		Size: 36.3 MB (36310568 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f5e4e59e69fd4fab3d68f080e2887f875c4e865cfa11a838397871ea13592a3`  
-		Last Modified: Thu, 27 Feb 2020 03:46:25 GMT  
-		Size: 225.0 B  
+	-	`sha256:ecce27dd0470af3668e16e7e33aa766ee3674d26bf783a7a57745f31cb4c30cc`  
+		Last Modified: Wed, 01 Apr 2020 01:25:46 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15a714ff265cd309cedcb8009192fa0e33f9ba860cdc98ac217c1ff2b9bf70cf`  
-		Last Modified: Thu, 27 Feb 2020 03:46:25 GMT  
-		Size: 231.0 B  
+	-	`sha256:7945c15cd8024112c21732204a2a33d2667feb72b4289b0f987303447e85286d`  
+		Last Modified: Wed, 01 Apr 2020 01:25:45 GMT  
+		Size: 232.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `kapacitor:1.5` - linux; arm variant v7
@@ -917,7 +917,7 @@ CMD ["kapacitord"]
 ## `kapacitor:1.5.4`
 
 ```console
-$ docker pull kapacitor@sha256:ce85cde2a8d33da7b8071ebef67bccf00106924af7357b7824ae656ade0a3ab0
+$ docker pull kapacitor@sha256:45be5095f0da73f6ae622d9a1bd1722db3d801372b007ceafa712a53aa518a3a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -929,80 +929,80 @@ $ docker pull kapacitor@sha256:ce85cde2a8d33da7b8071ebef67bccf00106924af7357b782
 ### `kapacitor:1.5.4` - linux; amd64
 
 ```console
-$ docker pull kapacitor@sha256:e3db59d4fd3e0412b8971114d7a63bbbbdf8cc53f183387b33b015d5eb13b56b
+$ docker pull kapacitor@sha256:4af5793e3e0531e8c597e9d537d175524ac88c175b0545bbb4c09e53736a1941
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **109.9 MB (109921585 bytes)**  
+-	Total Size: **109.9 MB (109920886 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a59cd84d65697816541763258610a272628b3d9685b6b48f2cdafe671cb72fb3`
+-	Image ID: `sha256:b41dac2c983e46ae15718c3d99baabf1425d911f3123cf5943e9f0704f70b0ab`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["kapacitord"]`
 
 ```dockerfile
-# Wed, 26 Feb 2020 00:41:14 GMT
-ADD file:08c5ab7c53526da155d6be40a9795fc08afc9f47bd333c096e90185fe9fab2b1 in / 
-# Wed, 26 Feb 2020 00:41:14 GMT
+# Tue, 31 Mar 2020 01:23:50 GMT
+ADD file:774b5e2033bb42ad97daa64267a5f041124cc0b05ec0198f1b5578ceea5a48e4 in / 
+# Tue, 31 Mar 2020 01:23:51 GMT
 CMD ["bash"]
-# Wed, 26 Feb 2020 01:17:11 GMT
+# Tue, 31 Mar 2020 02:06:41 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 26 Feb 2020 01:17:19 GMT
+# Tue, 31 Mar 2020 02:06:47 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 27 Feb 2020 03:45:44 GMT
+# Wed, 01 Apr 2020 01:25:02 GMT
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y bash-completion &&     awk 'f{if(sub(/^#/,"",$0)==0){f=0}};/^# enable bash completion/{f=1};{print;}' /etc/bash.bashrc > /etc/bash.bashrc.new &&     mv /etc/bash.bashrc.new /etc/bash.bashrc
-# Thu, 27 Feb 2020 03:45:47 GMT
+# Wed, 01 Apr 2020 01:25:05 GMT
 RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Thu, 27 Feb 2020 03:45:59 GMT
+# Wed, 01 Apr 2020 01:25:17 GMT
 ENV KAPACITOR_VERSION=1.5.4
-# Thu, 27 Feb 2020 03:46:02 GMT
+# Wed, 01 Apr 2020 01:25:20 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}-1_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}-1_${ARCH}.deb &&     gpg --batch --verify kapacitor_${KAPACITOR_VERSION}-1_${ARCH}.deb.asc kapacitor_${KAPACITOR_VERSION}-1_${ARCH}.deb &&     dpkg -i kapacitor_${KAPACITOR_VERSION}-1_${ARCH}.deb &&     rm -f kapacitor_${KAPACITOR_VERSION}-1_${ARCH}.deb*
-# Thu, 27 Feb 2020 03:46:03 GMT
+# Wed, 01 Apr 2020 01:25:20 GMT
 COPY file:9450c5dcbc0a583243f987f682dc6c44d9e4a3f1c31d1bb9957f313457e444ec in /etc/kapacitor/kapacitor.conf 
-# Thu, 27 Feb 2020 03:46:03 GMT
+# Wed, 01 Apr 2020 01:25:21 GMT
 EXPOSE 9092
-# Thu, 27 Feb 2020 03:46:03 GMT
+# Wed, 01 Apr 2020 01:25:21 GMT
 VOLUME [/var/lib/kapacitor]
-# Thu, 27 Feb 2020 03:46:03 GMT
+# Wed, 01 Apr 2020 01:25:21 GMT
 COPY file:a229567085df49450fcc70ed6d49efcbdfc41ca92b6c5bdb3b541cb803165dbc in /entrypoint.sh 
-# Thu, 27 Feb 2020 03:46:03 GMT
+# Wed, 01 Apr 2020 01:25:21 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 27 Feb 2020 03:46:04 GMT
+# Wed, 01 Apr 2020 01:25:21 GMT
 CMD ["kapacitord"]
 ```
 
 -	Layers:
-	-	`sha256:c0c53f743a403d45480d026864d9611d6eb898e897d60c13ae854ad453d462a4`  
-		Last Modified: Wed, 26 Feb 2020 00:47:05 GMT  
-		Size: 45.4 MB (45375932 bytes)  
+	-	`sha256:56da78ce36e97a8ba1f860575bb1422d1cb6ab4dade70b06ddf1651302dde955`  
+		Last Modified: Tue, 31 Mar 2020 01:29:15 GMT  
+		Size: 45.4 MB (45375928 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66997431d390aecfd02e57222c9b5752d314a4508de82c9b43c66812c3434ed4`  
-		Last Modified: Wed, 26 Feb 2020 01:23:37 GMT  
-		Size: 10.8 MB (10797283 bytes)  
+	-	`sha256:fbfe0f13ac4531fb6d077fda0e94ced4b9ed8a354c54b4efced9b7755d3f39d1`  
+		Last Modified: Tue, 31 Mar 2020 02:12:44 GMT  
+		Size: 10.8 MB (10797329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ea865e2909f355d736daef9076ecda63b3075c6267b858d9eaaf2e3966fc0d2`  
-		Last Modified: Wed, 26 Feb 2020 01:23:36 GMT  
-		Size: 4.3 MB (4340193 bytes)  
+	-	`sha256:6254ff6d0e6052b7bead70e37703002eda28ac40f9a1167ea9bf813bf9c17d7f`  
+		Last Modified: Tue, 31 Mar 2020 02:12:43 GMT  
+		Size: 4.3 MB (4340113 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31bc43f4da75e578f24047203272c5e96318a3a854bd288fb4b7ec08211bf008`  
-		Last Modified: Thu, 27 Feb 2020 03:46:16 GMT  
-		Size: 13.1 MB (13094294 bytes)  
+	-	`sha256:c409365aa2a1a55a954ea370d21673c7c9bf49341bf51f67a888d4223f912e45`  
+		Last Modified: Wed, 01 Apr 2020 01:25:36 GMT  
+		Size: 13.1 MB (13093715 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ababb2175d176c3f868822a958f4d2e7b03fe0a862768f44c944868b1ce912c`  
-		Last Modified: Thu, 27 Feb 2020 03:46:15 GMT  
+	-	`sha256:fa3db17e507e043f8b260f037d4440d9edfaf88a6586a0c089670caab0fd3db5`  
+		Last Modified: Wed, 01 Apr 2020 01:25:34 GMT  
 		Size: 2.8 KB (2775 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15557de99a32aa2424540e26625343668366613b85a961ad98a36aecc73d3380`  
-		Last Modified: Thu, 27 Feb 2020 03:46:30 GMT  
-		Size: 36.3 MB (36310652 bytes)  
+	-	`sha256:6daa1830c9c5eb6095350117e70442976a4f0a5567fb0969f316eb33ee03262f`  
+		Last Modified: Wed, 01 Apr 2020 01:25:51 GMT  
+		Size: 36.3 MB (36310568 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f5e4e59e69fd4fab3d68f080e2887f875c4e865cfa11a838397871ea13592a3`  
-		Last Modified: Thu, 27 Feb 2020 03:46:25 GMT  
-		Size: 225.0 B  
+	-	`sha256:ecce27dd0470af3668e16e7e33aa766ee3674d26bf783a7a57745f31cb4c30cc`  
+		Last Modified: Wed, 01 Apr 2020 01:25:46 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15a714ff265cd309cedcb8009192fa0e33f9ba860cdc98ac217c1ff2b9bf70cf`  
-		Last Modified: Thu, 27 Feb 2020 03:46:25 GMT  
-		Size: 231.0 B  
+	-	`sha256:7945c15cd8024112c21732204a2a33d2667feb72b4289b0f987303447e85286d`  
+		Last Modified: Wed, 01 Apr 2020 01:25:45 GMT  
+		Size: 232.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `kapacitor:1.5.4` - linux; arm variant v7
@@ -1397,7 +1397,7 @@ CMD ["kapacitord"]
 ## `kapacitor:latest`
 
 ```console
-$ docker pull kapacitor@sha256:ce85cde2a8d33da7b8071ebef67bccf00106924af7357b7824ae656ade0a3ab0
+$ docker pull kapacitor@sha256:45be5095f0da73f6ae622d9a1bd1722db3d801372b007ceafa712a53aa518a3a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1409,80 +1409,80 @@ $ docker pull kapacitor@sha256:ce85cde2a8d33da7b8071ebef67bccf00106924af7357b782
 ### `kapacitor:latest` - linux; amd64
 
 ```console
-$ docker pull kapacitor@sha256:e3db59d4fd3e0412b8971114d7a63bbbbdf8cc53f183387b33b015d5eb13b56b
+$ docker pull kapacitor@sha256:4af5793e3e0531e8c597e9d537d175524ac88c175b0545bbb4c09e53736a1941
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **109.9 MB (109921585 bytes)**  
+-	Total Size: **109.9 MB (109920886 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a59cd84d65697816541763258610a272628b3d9685b6b48f2cdafe671cb72fb3`
+-	Image ID: `sha256:b41dac2c983e46ae15718c3d99baabf1425d911f3123cf5943e9f0704f70b0ab`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["kapacitord"]`
 
 ```dockerfile
-# Wed, 26 Feb 2020 00:41:14 GMT
-ADD file:08c5ab7c53526da155d6be40a9795fc08afc9f47bd333c096e90185fe9fab2b1 in / 
-# Wed, 26 Feb 2020 00:41:14 GMT
+# Tue, 31 Mar 2020 01:23:50 GMT
+ADD file:774b5e2033bb42ad97daa64267a5f041124cc0b05ec0198f1b5578ceea5a48e4 in / 
+# Tue, 31 Mar 2020 01:23:51 GMT
 CMD ["bash"]
-# Wed, 26 Feb 2020 01:17:11 GMT
+# Tue, 31 Mar 2020 02:06:41 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 26 Feb 2020 01:17:19 GMT
+# Tue, 31 Mar 2020 02:06:47 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 27 Feb 2020 03:45:44 GMT
+# Wed, 01 Apr 2020 01:25:02 GMT
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y bash-completion &&     awk 'f{if(sub(/^#/,"",$0)==0){f=0}};/^# enable bash completion/{f=1};{print;}' /etc/bash.bashrc > /etc/bash.bashrc.new &&     mv /etc/bash.bashrc.new /etc/bash.bashrc
-# Thu, 27 Feb 2020 03:45:47 GMT
+# Wed, 01 Apr 2020 01:25:05 GMT
 RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Thu, 27 Feb 2020 03:45:59 GMT
+# Wed, 01 Apr 2020 01:25:17 GMT
 ENV KAPACITOR_VERSION=1.5.4
-# Thu, 27 Feb 2020 03:46:02 GMT
+# Wed, 01 Apr 2020 01:25:20 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}-1_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}-1_${ARCH}.deb &&     gpg --batch --verify kapacitor_${KAPACITOR_VERSION}-1_${ARCH}.deb.asc kapacitor_${KAPACITOR_VERSION}-1_${ARCH}.deb &&     dpkg -i kapacitor_${KAPACITOR_VERSION}-1_${ARCH}.deb &&     rm -f kapacitor_${KAPACITOR_VERSION}-1_${ARCH}.deb*
-# Thu, 27 Feb 2020 03:46:03 GMT
+# Wed, 01 Apr 2020 01:25:20 GMT
 COPY file:9450c5dcbc0a583243f987f682dc6c44d9e4a3f1c31d1bb9957f313457e444ec in /etc/kapacitor/kapacitor.conf 
-# Thu, 27 Feb 2020 03:46:03 GMT
+# Wed, 01 Apr 2020 01:25:21 GMT
 EXPOSE 9092
-# Thu, 27 Feb 2020 03:46:03 GMT
+# Wed, 01 Apr 2020 01:25:21 GMT
 VOLUME [/var/lib/kapacitor]
-# Thu, 27 Feb 2020 03:46:03 GMT
+# Wed, 01 Apr 2020 01:25:21 GMT
 COPY file:a229567085df49450fcc70ed6d49efcbdfc41ca92b6c5bdb3b541cb803165dbc in /entrypoint.sh 
-# Thu, 27 Feb 2020 03:46:03 GMT
+# Wed, 01 Apr 2020 01:25:21 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 27 Feb 2020 03:46:04 GMT
+# Wed, 01 Apr 2020 01:25:21 GMT
 CMD ["kapacitord"]
 ```
 
 -	Layers:
-	-	`sha256:c0c53f743a403d45480d026864d9611d6eb898e897d60c13ae854ad453d462a4`  
-		Last Modified: Wed, 26 Feb 2020 00:47:05 GMT  
-		Size: 45.4 MB (45375932 bytes)  
+	-	`sha256:56da78ce36e97a8ba1f860575bb1422d1cb6ab4dade70b06ddf1651302dde955`  
+		Last Modified: Tue, 31 Mar 2020 01:29:15 GMT  
+		Size: 45.4 MB (45375928 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66997431d390aecfd02e57222c9b5752d314a4508de82c9b43c66812c3434ed4`  
-		Last Modified: Wed, 26 Feb 2020 01:23:37 GMT  
-		Size: 10.8 MB (10797283 bytes)  
+	-	`sha256:fbfe0f13ac4531fb6d077fda0e94ced4b9ed8a354c54b4efced9b7755d3f39d1`  
+		Last Modified: Tue, 31 Mar 2020 02:12:44 GMT  
+		Size: 10.8 MB (10797329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ea865e2909f355d736daef9076ecda63b3075c6267b858d9eaaf2e3966fc0d2`  
-		Last Modified: Wed, 26 Feb 2020 01:23:36 GMT  
-		Size: 4.3 MB (4340193 bytes)  
+	-	`sha256:6254ff6d0e6052b7bead70e37703002eda28ac40f9a1167ea9bf813bf9c17d7f`  
+		Last Modified: Tue, 31 Mar 2020 02:12:43 GMT  
+		Size: 4.3 MB (4340113 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31bc43f4da75e578f24047203272c5e96318a3a854bd288fb4b7ec08211bf008`  
-		Last Modified: Thu, 27 Feb 2020 03:46:16 GMT  
-		Size: 13.1 MB (13094294 bytes)  
+	-	`sha256:c409365aa2a1a55a954ea370d21673c7c9bf49341bf51f67a888d4223f912e45`  
+		Last Modified: Wed, 01 Apr 2020 01:25:36 GMT  
+		Size: 13.1 MB (13093715 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ababb2175d176c3f868822a958f4d2e7b03fe0a862768f44c944868b1ce912c`  
-		Last Modified: Thu, 27 Feb 2020 03:46:15 GMT  
+	-	`sha256:fa3db17e507e043f8b260f037d4440d9edfaf88a6586a0c089670caab0fd3db5`  
+		Last Modified: Wed, 01 Apr 2020 01:25:34 GMT  
 		Size: 2.8 KB (2775 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15557de99a32aa2424540e26625343668366613b85a961ad98a36aecc73d3380`  
-		Last Modified: Thu, 27 Feb 2020 03:46:30 GMT  
-		Size: 36.3 MB (36310652 bytes)  
+	-	`sha256:6daa1830c9c5eb6095350117e70442976a4f0a5567fb0969f316eb33ee03262f`  
+		Last Modified: Wed, 01 Apr 2020 01:25:51 GMT  
+		Size: 36.3 MB (36310568 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f5e4e59e69fd4fab3d68f080e2887f875c4e865cfa11a838397871ea13592a3`  
-		Last Modified: Thu, 27 Feb 2020 03:46:25 GMT  
-		Size: 225.0 B  
+	-	`sha256:ecce27dd0470af3668e16e7e33aa766ee3674d26bf783a7a57745f31cb4c30cc`  
+		Last Modified: Wed, 01 Apr 2020 01:25:46 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15a714ff265cd309cedcb8009192fa0e33f9ba860cdc98ac217c1ff2b9bf70cf`  
-		Last Modified: Thu, 27 Feb 2020 03:46:25 GMT  
-		Size: 231.0 B  
+	-	`sha256:7945c15cd8024112c21732204a2a33d2667feb72b4289b0f987303447e85286d`  
+		Last Modified: Wed, 01 Apr 2020 01:25:45 GMT  
+		Size: 232.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `kapacitor:latest` - linux; arm variant v7
