@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fb945c8b9afee2aeb343bcc9f1fe6e435a20676462ef29a092eff6b9b931b12b`
-- Created: `2020-02-26T06:47:03.084776943Z`
-- Virtual Size: ~ 691.15 Mb  
+- Image ID: `sha256:a30f5a8d3acc02d7988fa90a9a3851dbbf6f1a2496a775a6416f3415854920e9`
+- Created: `2020-03-31T03:28:53.367069137Z`
+- Virtual Size: ~ 691.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -921,28 +921,35 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/dpkg/1.17.27/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/dpkg/1.17.27/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `e2fsprogs=1.42.12-2+deb8u1`
+### `dpkg` source package: `e2fsprogs=1.42.12-2+deb8u2`
 
 Binary Packages:
 
-- `comerr-dev=2.1-1.42.12-2+deb8u1`
-- `e2fslibs:amd64=1.42.12-2+deb8u1`
-- `e2fsprogs=1.42.12-2+deb8u1`
-- `libcomerr2:amd64=1.42.12-2+deb8u1`
-- `libss2:amd64=1.42.12-2+deb8u1`
+- `comerr-dev=2.1-1.42.12-2+deb8u2`
+- `e2fslibs:amd64=1.42.12-2+deb8u2`
+- `e2fsprogs=1.42.12-2+deb8u2`
+- `libcomerr2:amd64=1.42.12-2+deb8u2`
+- `libss2:amd64=1.42.12-2+deb8u2`
 
 Licenses: (parsed from: `/usr/share/doc/comerr-dev/copyright`, `/usr/share/doc/e2fslibs/copyright`, `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/libcomerr2/copyright`, `/usr/share/doc/libss2/copyright`)
 
 - `GPL-2`
 - `LGPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris e2fsprogs=1.42.12-2+deb8u2
+'http://security.debian.org/debian-security/pool/updates/main/e/e2fsprogs/e2fsprogs_1.42.12-2+deb8u2.dsc' e2fsprogs_1.42.12-2+deb8u2.dsc 2747 SHA256:fb5ac1998defa86a99046f08f537a7ec22a41fc30401a7e28117107af3a2aea6
+'http://security.debian.org/debian-security/pool/updates/main/e/e2fsprogs/e2fsprogs_1.42.12.orig.tar.gz' e2fsprogs_1.42.12.orig.tar.gz 6381695 SHA256:e17846d91a0edd89fa59b064bde8f8e5cec5851e35f587bcccb4014dbd63186c
+'http://security.debian.org/debian-security/pool/updates/main/e/e2fsprogs/e2fsprogs_1.42.12-2+deb8u2.debian.tar.xz' e2fsprogs_1.42.12-2+deb8u2.debian.tar.xz 71488 SHA256:a86df6f1b0734b42b79f0a06da52667666c73c79f394c66f9a4450e505f34848
+```
 
-- http://snapshot.debian.org/package/e2fsprogs/1.42.12-2+deb8u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/e2fsprogs/1.42.12-2+deb8u2/ (for browsing the source)
+- https://sources.debian.net/src/e2fsprogs/1.42.12-2+deb8u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/e2fsprogs/1.42.12-2+deb8u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.1.0-6+deb8u6`
 
@@ -1730,11 +1737,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/hostname/3.15/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/hostname/3.15/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `icu=52.1-8+deb8u7`
+### `dpkg` source package: `icu=52.1-8+deb8u8`
 
 Binary Packages:
 
-- `libicu52:amd64=52.1-8+deb8u7`
+- `libicu52:amd64=52.1-8+deb8u8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1743,17 +1750,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris icu=52.1-8+deb8u7
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1-8+deb8u7.dsc' icu_52.1-8+deb8u7.dsc 2015 SHA256:6962e61f1a0d2be8aba69ff118bfca747f92953fae78d37b15faa670c3ac0619
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1-8+deb8u7.debian.tar.xz' icu_52.1-8+deb8u7.debian.tar.xz 39320 SHA256:55e88af0c29a614f150f0b39579f1f946560dd75bc2b96ded28ebd96449f2692
+$ apt-get source -qq --print-uris icu=52.1-8+deb8u8
+'http://security.debian.org/debian-security/pool/updates/main/i/icu/icu_52.1-8+deb8u8.dsc' icu_52.1-8+deb8u8.dsc 2015 SHA256:56a5b2c5bdd0e80a23296a59b77d876d15a288c7386ad5283ec95ae037a0780e
+'http://security.debian.org/debian-security/pool/updates/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
+'http://security.debian.org/debian-security/pool/updates/main/i/icu/icu_52.1-8+deb8u8.debian.tar.xz' icu_52.1-8+deb8u8.debian.tar.xz 39736 SHA256:48c47216c5768505d437cd421d268e27b23966796d3dc55beaf9597d3b6e2ad6
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/icu/52.1-8+deb8u7/ (for browsing the source)
-- https://sources.debian.net/src/icu/52.1-8+deb8u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/icu/52.1-8+deb8u7/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/icu/52.1-8+deb8u8/ (for browsing the source)
+- https://sources.debian.net/src/icu/52.1-8+deb8u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/icu/52.1-8+deb8u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ilmbase=1.0.1-6.1`
 
@@ -3135,24 +3142,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libusb/2:0.1.12-25/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libusb/2:0.1.12-25/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libvpx=1.3.0-3+deb8u2`
+### `dpkg` source package: `libvpx=1.3.0-3+deb8u3`
 
 Binary Packages:
 
-- `libvpx1:amd64=1.3.0-3+deb8u2`
+- `libvpx1:amd64=1.3.0-3+deb8u3`
 
 Licenses: (parsed from: `/usr/share/doc/libvpx1/copyright`)
 
 - `Artistic`
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libvpx=1.3.0-3+deb8u3
+'http://security.debian.org/debian-security/pool/updates/main/libv/libvpx/libvpx_1.3.0-3+deb8u3.dsc' libvpx_1.3.0-3+deb8u3.dsc 2041 SHA256:b9be36d941f9b1b64d80dddfe17a35bfc239384c0f34308d4769b1ad3df4b69a
+'http://security.debian.org/debian-security/pool/updates/main/libv/libvpx/libvpx_1.3.0.orig.tar.bz2' libvpx_1.3.0.orig.tar.bz2 2077846 SHA256:bd5af97b74d53a111b48852dfcd1791b2c758f1fe972833b363fe34a83a7750a
+'http://security.debian.org/debian-security/pool/updates/main/libv/libvpx/libvpx_1.3.0-3+deb8u3.debian.tar.xz' libvpx_1.3.0-3+deb8u3.debian.tar.xz 13144 SHA256:5b7d62567f4bfb357a9344815b4cef5416c7bee82832ec6671340f6bba083182
+```
 
-- http://snapshot.debian.org/package/libvpx/1.3.0-3+deb8u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libvpx/1.3.0-3+deb8u3/ (for browsing the source)
+- https://sources.debian.net/src/libvpx/1.3.0-3+deb8u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libvpx/1.3.0-3+deb8u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libwebp=0.4.1-1.2`
 
