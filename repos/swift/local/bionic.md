@@ -1,10 +1,10 @@
-# `swift:5.2`
+# `swift:5.2.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0d5a9f0da40c3e3abd2e3f97ebac65a614683e5bf5dc25f8283ceadaa0a455f6`
-- Created: `2020-03-26T20:53:05.655340446Z`
-- Virtual Size: ~ 1.65 Gb  
+- Image ID: `sha256:000366daa6eb04f31a7ea7ee35d98dbad18077b2355b04c2bbc68878fd6dc602`
+- Created: `2020-04-01T07:13:33.730968799Z`
+- Virtual Size: ~ 1.64 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561`
   - `SWIFT_PLATFORM=ubuntu18.04`
-  - `SWIFT_BRANCH=swift-5.2-release`
-  - `SWIFT_VERSION=swift-5.2-RELEASE`
+  - `SWIFT_BRANCH=swift-5.2.1-release`
+  - `SWIFT_VERSION=swift-5.2.1-RELEASE`
   - `SWIFT_WEBROOT=https://swift.org/builds/`
 - Labels:
   - `Description=Docker Container for the Swift programming language`
@@ -656,14 +656,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-8=8.3.0-26ubuntu1~18.04
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-26ubuntu1~18.04.dsc' gcc-8_8.3.0-26ubuntu1~18.04.dsc 36386 SHA256:865f941ff32f365d17946dbd1243bbdb8bb2e6dad1d0fab909bd543a2111d68f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0.orig.tar.gz' gcc-8_8.3.0.orig.tar.gz 85259886 SHA256:561c1bc647ade738c14efe5a298fc0cee2e2efd3dec9fefb66b724dbd50437e6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.3.0-26ubuntu1~18.04.diff.gz' gcc-8_8.3.0-26ubuntu1~18.04.diff.gz 960430 SHA256:06a0f32c62a63685a95925c4fb3e73167bf69a87fc55470ea94b69dfe62ded62
-```
 
 ### `dpkg` source package: `gcc-defaults=1.176ubuntu2.3`
 
