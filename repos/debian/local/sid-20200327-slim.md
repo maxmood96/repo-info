@@ -1555,20 +1555,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=245.2-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_245.2-1.dsc' systemd_245.2-1.dsc 5029 SHA256:0d8830947aa82160a0c184acc5ae551b552f3716113cb8fd3907951306b649d8
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_245.2.orig.tar.gz' systemd_245.2.orig.tar.gz 8999428 SHA256:c0ded503eec746c5d39bcb55f73564dbcbaff6f48f28b6d9e0951ba5777dbdf7
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_245.2-1.debian.tar.xz' systemd_245.2-1.debian.tar.xz 148032 SHA256:d37278a425bdeb12ee27cc238ee3b7ee95ed66ecd7161ae050e9be722c37e60d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/245.2-1/
 
-- https://sources.debian.net/src/systemd/245.2-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/245.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/245.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.96-3`
 
