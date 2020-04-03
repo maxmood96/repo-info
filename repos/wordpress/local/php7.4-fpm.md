@@ -1,10 +1,10 @@
-# `wordpress:5.3.2-php7.4-fpm`
+# `wordpress:5.4.0-php7.4-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:439ff12813b3a39db930bc832e8b80fd4abf5ad5794bedc2f8b1591977650304`
-- Created: `2020-03-20T05:54:58.151243676Z`
-- Virtual Size: ~ 534.45 Mb  
+- Image ID: `sha256:7e26d0e57f89ad705246fc207dfea221f4d2d27570af8e22bd4cdb266e9f7305`
+- Created: `2020-04-02T00:32:32.306697684Z`
+- Virtual Size: ~ 535.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -23,8 +23,8 @@
   - `PHP_ASC_URL=https://www.php.net/get/php-7.4.4.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=1873c4cefdd3df9a78dcffb2198bba5c2f0464f55c9c960720c84df483fca74c`
   - `PHP_MD5=`
-  - `WORDPRESS_VERSION=5.3.2`
-  - `WORDPRESS_SHA1=fded476f112dbab14e3b5acddd2bcfa550e7b01b`
+  - `WORDPRESS_VERSION=5.4`
+  - `WORDPRESS_SHA1=d5f1e6d7cadd72c11d086a2e1ede0a72f23d993e`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1390,11 +1390,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/hostname/3.21/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/hostname/3.21/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `icu=63.1-6`
+### `dpkg` source package: `icu=63.1-6+deb10u1`
 
 Binary Packages:
 
-- `libicu63:amd64=63.1-6`
+- `libicu63:amd64=63.1-6+deb10u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1403,17 +1403,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris icu=63.1-6
-'http://deb.debian.org/debian/pool/main/i/icu/icu_63.1-6.dsc' icu_63.1-6.dsc 1965 SHA256:dfb3387f8e80c7de6704967694cf74ef7dd407c562b8cc7653156308e924404f
-'http://deb.debian.org/debian/pool/main/i/icu/icu_63.1.orig.tar.xz' icu_63.1.orig.tar.xz 13638120 SHA256:347d0e6c39c3538b812c10c6c83815d4a089d578380387ae7d94c5b820948e82
-'http://deb.debian.org/debian/pool/main/i/icu/icu_63.1-6.debian.tar.xz' icu_63.1-6.debian.tar.xz 24624 SHA256:c63fc607cb6420136d78f706baf17b7ca68346386e82ca4f30dacc81e1e56681
+$ apt-get source -qq --print-uris icu=63.1-6+deb10u1
+'http://security.debian.org/debian-security/pool/updates/main/i/icu/icu_63.1-6+deb10u1.dsc' icu_63.1-6+deb10u1.dsc 1997 SHA256:c33329e44a83af47cdfd6ca2639611d960b163a5cce39e71945b0ed4b6971ec9
+'http://security.debian.org/debian-security/pool/updates/main/i/icu/icu_63.1.orig.tar.xz' icu_63.1.orig.tar.xz 13638120 SHA256:347d0e6c39c3538b812c10c6c83815d4a089d578380387ae7d94c5b820948e82
+'http://security.debian.org/debian-security/pool/updates/main/i/icu/icu_63.1-6+deb10u1.debian.tar.xz' icu_63.1-6+deb10u1.debian.tar.xz 25004 SHA256:d65fde3a61d0ba935b493b46fd42addeb24e0398b8d778124cb489770ec50a6d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/icu/63.1-6/ (for browsing the source)
-- https://sources.debian.net/src/icu/63.1-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/icu/63.1-6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/icu/63.1-6+deb10u1/ (for browsing the source)
+- https://sources.debian.net/src/icu/63.1-6+deb10u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/icu/63.1-6+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ijs=0.35-14`
 
