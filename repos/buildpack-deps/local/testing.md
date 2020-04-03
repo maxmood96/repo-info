@@ -180,20 +180,13 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:2.8.5-2
-'http://deb.debian.org/debian/pool/main/a/audit/audit_2.8.5-2.dsc' audit_2.8.5-2.dsc 2311 SHA256:c3b566cad955fc631f4a17207378e6039169dfeb8b2e7712ec17f422a92955f3
-'http://deb.debian.org/debian/pool/main/a/audit/audit_2.8.5.orig.tar.gz' audit_2.8.5.orig.tar.gz 1140694 SHA256:0e5d4103646e00f8d1981e1cd2faea7a2ae28e854c31a803e907a383c5e2ecb7
-'http://deb.debian.org/debian/pool/main/a/audit/audit_2.8.5-2.debian.tar.xz' audit_2.8.5-2.debian.tar.xz 16304 SHA256:d54bbc862779f872239676ebf9757784144a7c00012bf2769d3b1eb5ff7aca5a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/audit/1:2.8.5-2/
 
-- https://sources.debian.net/src/audit/1:2.8.5-2/ (for browsing the source)
-- https://sources.debian.net/src/audit/1:2.8.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/audit/1:2.8.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `autoconf=2.69-11.1`
 
@@ -624,20 +617,13 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.10.2-6
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.10.2-6.dsc' dash_0.5.10.2-6.dsc 1756 SHA256:d509a23ebdc4f107c911914590c1400e5a24383f35c5d6904e48d2afeff168ac
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.10.2.orig.tar.gz' dash_0.5.10.2.orig.tar.gz 225196 SHA256:3c663919dc5c66ec991da14c7cf7e0be8ad00f3db73986a987c118862b5f6071
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.10.2-6.debian.tar.xz' dash_0.5.10.2-6.debian.tar.xz 44232 SHA256:1448fbfc2541be52787da81ce03bb81ad6b1f380cba1b7e747abefdcd44f6c86
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dash/0.5.10.2-6/
 
-- https://sources.debian.net/src/dash/0.5.10.2-6/ (for browsing the source)
-- https://sources.debian.net/src/dash/0.5.10.2-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dash/0.5.10.2-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db-defaults=5.3.1+nmu1`
 
@@ -1549,20 +1535,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `LGPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.62.0-5
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.62.0-5.dsc' gobject-introspection_1.62.0-5.dsc 3046 SHA256:6eb4e0c04a9b223fde9a880200a6f7b4d7c38c02fd870aa1d240039b9e7b371c
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.62.0.orig.tar.xz' gobject-introspection_1.62.0.orig.tar.xz 980732 SHA256:b1ee7ed257fdbc008702bdff0ff3e78a660e7e602efa8f211dc89b9d1e7d90a2
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.62.0-5.debian.tar.xz' gobject-introspection_1.62.0-5.debian.tar.xz 22692 SHA256:757d4d648ff2ff681ac7742da87c2372fb277c22bb793528419c5209f993270d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gobject-introspection/1.62.0-5/
 
-- https://sources.debian.net/src/gobject-introspection/1.62.0-5/ (for browsing the source)
-- https://sources.debian.net/src/gobject-introspection/1.62.0-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gobject-introspection/1.62.0-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.13-11`
 
@@ -4678,20 +4657,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-12=12.2-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-12/postgresql-12_12.2-1.dsc' postgresql-12_12.2-1.dsc 3591 SHA256:2a1f0fe2f9187579b7d6be5811c2c9e8246a4fc6576bf866d5b041080b0173c4
-'http://deb.debian.org/debian/pool/main/p/postgresql-12/postgresql-12_12.2.orig.tar.bz2' postgresql-12_12.2.orig.tar.bz2 20363545 SHA256:ad1dcc4c4fc500786b745635a9e1eba950195ce20b8913f50345bb7d5369b5de
-'http://deb.debian.org/debian/pool/main/p/postgresql-12/postgresql-12_12.2-1.debian.tar.xz' postgresql-12_12.2-1.debian.tar.xz 22796 SHA256:cf7bba725dfd2d8094ef0d1c808761f20868a001f0de2ca0affe046fb5407648
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-12/12.2-1/
 
-- https://sources.debian.net/src/postgresql-12/12.2-1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-12/12.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-12/12.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.16-4`
 
@@ -5055,20 +5027,13 @@ Licenses: (parsed from: `/usr/share/doc/shared-mime-info/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shared-mime-info=1.10-1
-'http://deb.debian.org/debian/pool/main/s/shared-mime-info/shared-mime-info_1.10-1.dsc' shared-mime-info_1.10-1.dsc 2197 SHA256:49efdf90a3b97a58fbe8a5b241f721d89d43f03ad52dc8254a4642f12a20d641
-'http://deb.debian.org/debian/pool/main/s/shared-mime-info/shared-mime-info_1.10.orig.tar.xz' shared-mime-info_1.10.orig.tar.xz 616800 SHA256:c625a83b4838befc8cafcd54e3619946515d9e44d63d61c4adf7f5513ddfbebf
-'http://deb.debian.org/debian/pool/main/s/shared-mime-info/shared-mime-info_1.10-1.debian.tar.xz' shared-mime-info_1.10-1.debian.tar.xz 10020 SHA256:7b78639aeac9ba261bcccd572739c2cac813541a7ae7799e8e56de0df693295d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shared-mime-info/1.10-1/
 
-- https://sources.debian.net/src/shared-mime-info/1.10-1/ (for browsing the source)
-- https://sources.debian.net/src/shared-mime-info/1.10-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shared-mime-info/1.10-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sqlite3=3.31.1-4`
 
@@ -5375,20 +5340,13 @@ Licenses: (parsed from: `/usr/share/doc/libutf8proc2/copyright`)
 - `Expat`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris utf8proc=2.4.0-2
-'http://deb.debian.org/debian/pool/main/u/utf8proc/utf8proc_2.4.0-2.dsc' utf8proc_2.4.0-2.dsc 2179 SHA256:0659ec6e1bb112c3ba3c34c8437fff9a29e4091d26f52707951105a776af5a49
-'http://deb.debian.org/debian/pool/main/u/utf8proc/utf8proc_2.4.0.orig.tar.gz' utf8proc_2.4.0.orig.tar.gz 154936 SHA256:b2e5d547c1d94762a6d03a7e05cea46092aab68636460ff8648f1295e2cdfbd7
-'http://deb.debian.org/debian/pool/main/u/utf8proc/utf8proc_2.4.0-2.debian.tar.xz' utf8proc_2.4.0-2.debian.tar.xz 5176 SHA256:c7bc0f534b4be6574c91250b57902c47a6552a66faa95385218fb7f9d7a9063d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/utf8proc/2.4.0-2/
 
-- https://sources.debian.net/src/utf8proc/2.4.0-2/ (for browsing the source)
-- https://sources.debian.net/src/utf8proc/2.4.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/utf8proc/2.4.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.34-0.1`
 
