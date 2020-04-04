@@ -1,10 +1,10 @@
-# `groovy:3.0.1-jre11`
+# `groovy:3.0.2-jre11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:eb795c4719a2bcf57685cbf35a1acbbaeb7b87bedbf85190589e69cf0c8fe709`
-- Created: `2020-02-22T01:27:10.675009391Z`
-- Virtual Size: ~ 280.42 Mb  
+- Image ID: `sha256:10cd591d2a923d77b1adaecef0e4a3c5d6eaa0fd9a968494ab3b6116f31d1df8`
+- Created: `2020-04-02T00:22:21.509749419Z`
+- Virtual Size: ~ 280.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
@@ -16,7 +16,7 @@
   - `JAVA_VERSION=jdk-11.0.6+10`
   - `JAVA_HOME=/opt/java/openjdk`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=3.0.1`
+  - `GROOVY_VERSION=3.0.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -548,13 +548,13 @@ $ apt-get source -qq --print-uris freetype=2.8.1-2ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.8.1-2ubuntu2.diff.gz' freetype_2.8.1-2ubuntu2.diff.gz 44335 SHA256:ec498da97b3c1715b67f8d6ed85e6d9a2eb8b709cabce38519a8ab5ca995b85a
 ```
 
-### `dpkg` source package: `gcc-8=8.3.0-6ubuntu1~18.04.1`
+### `dpkg` source package: `gcc-8=8.3.0-26ubuntu1~18.04`
 
 Binary Packages:
 
-- `gcc-8-base:amd64=8.3.0-6ubuntu1~18.04.1`
-- `libgcc1:amd64=1:8.3.0-6ubuntu1~18.04.1`
-- `libstdc++6:amd64=8.3.0-6ubuntu1~18.04.1`
+- `gcc-8-base:amd64=8.3.0-26ubuntu1~18.04`
+- `libgcc1:amd64=1:8.3.0-26ubuntu1~18.04`
+- `libstdc++6:amd64=8.3.0-26ubuntu1~18.04`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-8-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -1656,11 +1656,11 @@ $ apt-get source -qq --print-uris shadow=1:4.5-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5-1ubuntu2.debian.tar.xz' shadow_4.5-1ubuntu2.debian.tar.xz 471472 SHA256:0025e344b478aae6e2d9ad7657b5e1fd0ebd1fda7a55e7fc144840f75b92d358
 ```
 
-### `dpkg` source package: `sqlite3=3.22.0-1ubuntu0.2`
+### `dpkg` source package: `sqlite3=3.22.0-1ubuntu0.3`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.22.0-1ubuntu0.2`
+- `libsqlite3-0:amd64=3.22.0-1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -1668,9 +1668,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.22.0-1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0-1ubuntu0.3.dsc' sqlite3_3.22.0-1ubuntu0.3.dsc 2512 SHA256:54b2afc4ed367051c216ee8c96abce9a511f1b8ca7b05c76cefd667cf3e5746b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0.orig-www.tar.xz' sqlite3_3.22.0.orig-www.tar.xz 3564688 SHA256:a61a14d6f457bb31ca32f4844398140050597fe4403dc0ee19576111f407e231
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0.orig.tar.xz' sqlite3_3.22.0.orig.tar.xz 6019648 SHA256:f973ba63b5a1ea1d72e80c585bfb945e71d3f8b74fbecccdf345a84f8c91e5d1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0-1ubuntu0.3.debian.tar.xz' sqlite3_3.22.0-1ubuntu0.3.debian.tar.xz 45120 SHA256:153d65bf0d6957a1c6e47cb4f1ab79e96190317576859003e0b96d656f1f78a6
+```
 
 ### `dpkg` source package: `systemd=237-3ubuntu10.39`
 
