@@ -136,20 +136,13 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:2.8.5-2
-'http://deb.debian.org/debian/pool/main/a/audit/audit_2.8.5-2.dsc' audit_2.8.5-2.dsc 2311 SHA256:c3b566cad955fc631f4a17207378e6039169dfeb8b2e7712ec17f422a92955f3
-'http://deb.debian.org/debian/pool/main/a/audit/audit_2.8.5.orig.tar.gz' audit_2.8.5.orig.tar.gz 1140694 SHA256:0e5d4103646e00f8d1981e1cd2faea7a2ae28e854c31a803e907a383c5e2ecb7
-'http://deb.debian.org/debian/pool/main/a/audit/audit_2.8.5-2.debian.tar.xz' audit_2.8.5-2.debian.tar.xz 16304 SHA256:d54bbc862779f872239676ebf9757784144a7c00012bf2769d3b1eb5ff7aca5a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/audit/1:2.8.5-2/
 
-- https://sources.debian.net/src/audit/1:2.8.5-2/ (for browsing the source)
-- https://sources.debian.net/src/audit/1:2.8.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/audit/1:2.8.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-files=11`
 
@@ -578,20 +571,13 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.10.2-6
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.10.2-6.dsc' dash_0.5.10.2-6.dsc 1756 SHA256:d509a23ebdc4f107c911914590c1400e5a24383f35c5d6904e48d2afeff168ac
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.10.2.orig.tar.gz' dash_0.5.10.2.orig.tar.gz 225196 SHA256:3c663919dc5c66ec991da14c7cf7e0be8ad00f3db73986a987c118862b5f6071
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.10.2-6.debian.tar.xz' dash_0.5.10.2-6.debian.tar.xz 44232 SHA256:1448fbfc2541be52787da81ce03bb81ad6b1f380cba1b7e747abefdcd44f6c86
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dash/0.5.10.2-6/
 
-- https://sources.debian.net/src/dash/0.5.10.2-6/ (for browsing the source)
-- https://sources.debian.net/src/dash/0.5.10.2-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dash/0.5.10.2-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db5.3=5.3.28+dfsg1-0.6`
 
@@ -1219,10 +1205,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glibc=2.30-4
-'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.30-4.dsc' glibc_2.30-4.dsc 8731 SHA256:84c8d7c231ba1f683023391f794e9dc39710af1e3ae70b15dee73453cb9b7d9f
-'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.30.orig.tar.xz' glibc_2.30.orig.tar.xz 17158704 SHA256:70126104e388f74a1b37c95b9b947c4db5f23af4e7ec84df6de9113d4d57217c
-'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.30-4.debian.tar.xz' glibc_2.30-4.debian.tar.xz 843820 SHA256:d223a88aff38b11c414b17f8e1be6a0a392115fb5451c7e9f5bf6c12955c4275
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.30-4.dsc' glibc_2.30-4.dsc 8731 SHA256:84c8d7c231ba1f683023391f794e9dc39710af1e3ae70b15dee73453cb9b7d9f
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.30.orig.tar.xz' glibc_2.30.orig.tar.xz 17158704 SHA256:70126104e388f74a1b37c95b9b947c4db5f23af4e7ec84df6de9113d4d57217c
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.30-4.debian.tar.xz' glibc_2.30-4.debian.tar.xz 843820 SHA256:d223a88aff38b11c414b17f8e1be6a0a392115fb5451c7e9f5bf6c12955c4275
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/glibc/2.30-4/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.30-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.30-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-4`
 
@@ -2549,10 +2541,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libxcb=1.14-2
-'http://http.debian.net/debian/pool/main/libx/libxcb/libxcb_1.14-2.dsc' libxcb_1.14-2.dsc 5344 SHA256:997dfadefa35a243a7160b62d628bb25e45439f61687459d581502905bcf1fb2
-'http://http.debian.net/debian/pool/main/libx/libxcb/libxcb_1.14.orig.tar.gz' libxcb_1.14.orig.tar.gz 640322 SHA256:2c7fcddd1da34d9b238c9caeda20d3bd7486456fc50b3cc6567185dbd5b0ad02
-'http://http.debian.net/debian/pool/main/libx/libxcb/libxcb_1.14-2.diff.gz' libxcb_1.14-2.diff.gz 25716 SHA256:92d7e0a80c3c7f2a5b5afd0c0702183f1c483338d678d67d8d0e61fd8989ba85
+'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.14-2.dsc' libxcb_1.14-2.dsc 5344 SHA256:997dfadefa35a243a7160b62d628bb25e45439f61687459d581502905bcf1fb2
+'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.14.orig.tar.gz' libxcb_1.14.orig.tar.gz 640322 SHA256:2c7fcddd1da34d9b238c9caeda20d3bd7486456fc50b3cc6567185dbd5b0ad02
+'http://deb.debian.org/debian/pool/main/libx/libxcb/libxcb_1.14-2.diff.gz' libxcb_1.14-2.diff.gz 25716 SHA256:92d7e0a80c3c7f2a5b5afd0c0702183f1c483338d678d67d8d0e61fd8989ba85
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libxcb/1.14-2/ (for browsing the source)
+- https://sources.debian.net/src/libxcb/1.14-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxcb/1.14-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxcrypt=1:4.4.15-1`
 
@@ -3497,10 +3495,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris r-cran-class=7.3-16-1
-'http://http.debian.net/debian/pool/main/r/r-cran-class/r-cran-class_7.3-16-1.dsc' r-cran-class_7.3-16-1.dsc 1870 SHA256:73600ac50ee9d7c7812f949b78386d053cbb4d473592d8f87cf56da9b2347cad
-'http://http.debian.net/debian/pool/main/r/r-cran-class/r-cran-class_7.3-16.orig.tar.gz' r-cran-class_7.3-16.orig.tar.gz 20741 SHA256:940e395e39c750fadbe5c61fd123e4c634c41340dcc1852bc0c0444d817cedca
-'http://http.debian.net/debian/pool/main/r/r-cran-class/r-cran-class_7.3-16-1.debian.tar.xz' r-cran-class_7.3-16-1.debian.tar.xz 3092 SHA256:a1363ec17c1e1b839a816bada3558c87b5c88d6ac643ee76f7354b42a0b41244
+'http://deb.debian.org/debian/pool/main/r/r-cran-class/r-cran-class_7.3-16-1.dsc' r-cran-class_7.3-16-1.dsc 1870 SHA256:73600ac50ee9d7c7812f949b78386d053cbb4d473592d8f87cf56da9b2347cad
+'http://deb.debian.org/debian/pool/main/r/r-cran-class/r-cran-class_7.3-16.orig.tar.gz' r-cran-class_7.3-16.orig.tar.gz 20741 SHA256:940e395e39c750fadbe5c61fd123e4c634c41340dcc1852bc0c0444d817cedca
+'http://deb.debian.org/debian/pool/main/r/r-cran-class/r-cran-class_7.3-16-1.debian.tar.xz' r-cran-class_7.3-16-1.debian.tar.xz 3092 SHA256:a1363ec17c1e1b839a816bada3558c87b5c88d6ac643ee76f7354b42a0b41244
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/r-cran-class/7.3-16-1/ (for browsing the source)
+- https://sources.debian.net/src/r-cran-class/7.3-16-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/r-cran-class/7.3-16-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-mass=7.3-51.5-2`
 
