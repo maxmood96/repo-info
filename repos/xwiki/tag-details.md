@@ -13,6 +13,9 @@
 -	[`xwiki:11-postgres-tomcat`](#xwiki11-postgres-tomcat)
 -	[`xwiki:12`](#xwiki12)
 -	[`xwiki:12.2`](#xwiki122)
+-	[`xwiki:12.2.1`](#xwiki1221)
+-	[`xwiki:12.2.1-mysql-tomcat`](#xwiki1221-mysql-tomcat)
+-	[`xwiki:12.2.1-postgres-tomcat`](#xwiki1221-postgres-tomcat)
 -	[`xwiki:12.2-mysql-tomcat`](#xwiki122-mysql-tomcat)
 -	[`xwiki:12.2-postgres-tomcat`](#xwiki122-postgres-tomcat)
 -	[`xwiki:12-mysql-tomcat`](#xwiki12-mysql-tomcat)
@@ -2397,6 +2400,18 @@ CMD ["xwiki"]
 		Last Modified: Wed, 01 Apr 2020 05:26:30 GMT  
 		Size: 2.5 KB (2454 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `xwiki:12.2.1`
+
+**does not exist** (yet?)
+
+## `xwiki:12.2.1-mysql-tomcat`
+
+**does not exist** (yet?)
+
+## `xwiki:12.2.1-postgres-tomcat`
+
+**does not exist** (yet?)
 
 ## `xwiki:12.2-mysql-tomcat`
 
