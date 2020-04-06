@@ -752,14 +752,13 @@ Licenses: (parsed from: `/usr/share/doc/libasn1-8-heimdal/copyright`, `/usr/shar
 - `custom`
 - `none`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris heimdal=7.7.0+dfsg-1
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.7.0+dfsg-1.dsc' heimdal_7.7.0+dfsg-1.dsc 3579 SHA256:5df44a05cf68d0190ce7c8ae41387477b6654d540dd4c59f61e0a2c41b4c6162
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.7.0+dfsg.orig.tar.xz' heimdal_7.7.0+dfsg.orig.tar.xz 5945252 SHA256:6822c9547188b753b6325047fda9255744e4ebbbe02bb0dade78c261061fefac
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.7.0+dfsg-1.debian.tar.xz' heimdal_7.7.0+dfsg-1.debian.tar.xz 128316 SHA256:54a11a42d02e4ec2d37d4f759758bd6c2d2436ab6a0bbe5754f507a03934623e
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/heimdal/7.7.0+dfsg-1/
+
 
 ### `dpkg` source package: `hostname=3.23`
 
@@ -1214,14 +1213,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxcb=1.13.1-5build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb_1.13.1-5build1.dsc' libxcb_1.13.1-5build1.dsc 5401 SHA256:ea6f0a351ed37bc37b483f66bdcb7c8d2638293185a4ed2a285ef98586eba464
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb_1.13.1.orig.tar.gz' libxcb_1.13.1.orig.tar.gz 636748 SHA256:f09a76971437780a602303170fd51b5f7474051722bc39d566a272d2c4bde1b5
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb_1.13.1-5build1.diff.gz' libxcb_1.13.1-5build1.diff.gz 25717 SHA256:8e184150265d5d703df5f8ffb0a719a8b39cb2bb612c5fde54a2e72d5da6587d
-```
 
 ### `dpkg` source package: `libxcrypt=1:4.4.10-10ubuntu4`
 
