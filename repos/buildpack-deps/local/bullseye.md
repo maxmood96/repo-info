@@ -1502,21 +1502,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls-dane0/copyright`, `/usr/share/
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.6.12-2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.12-2.dsc' gnutls28_3.6.12-2.dsc 3479 SHA256:79f63f438da4f770a38933620a294e48aecd3d03ea98a94cfc16a8305c299e99
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.12.orig.tar.xz' gnutls28_3.6.12.orig.tar.xz 5942064 SHA256:bfacf16e342949ffd977a9232556092c47164bd26e166736cf3459a870506c4b
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.12.orig.tar.xz.asc' gnutls28_3.6.12.orig.tar.xz.asc 488 SHA256:5dbf3c4e473dfc45268a524298be83210aeec09a1d2b6bf15d31ae1c1d1e8333
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.12-2.debian.tar.xz' gnutls28_3.6.12-2.debian.tar.xz 60708 SHA256:52ab28b6d3c344fb830e02f7f669bcd7663ce0a677fe28fc78003e5949ec9443
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.6.12-2/
 
-- https://sources.debian.net/src/gnutls28/3.6.12-2/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.6.12-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.6.12-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gobject-introspection=1.62.0-5`
 
@@ -1562,20 +1554,13 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 - `custom-sil-open-font-license`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris graphite2=1.3.13-11
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.13-11.dsc' graphite2_1.3.13-11.dsc 2587 SHA256:cfd46b34cf1a33e2c54be2815c17573b68fe567362b4fdb4f19f841271302691
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.13.orig.tar.gz' graphite2_1.3.13.orig.tar.gz 6664941 SHA256:2f9f609deeddfe2b193502adc8df3b0396694b799a433c36e85fd1242e654cd9
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.13-11.debian.tar.xz' graphite2_1.3.13-11.debian.tar.xz 12068 SHA256:ecac95e52d550a271ec5c506489c82c1561301c641df3caf0048ea0d572abc11
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/graphite2/1.3.13-11/
 
-- https://sources.debian.net/src/graphite2/1.3.13-11/ (for browsing the source)
-- https://sources.debian.net/src/graphite2/1.3.13-11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/graphite2/1.3.13-11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.4-1`
 
@@ -2895,20 +2880,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 - `Sun-permissive`
 - `Unlicense`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.46.4-1
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.46.4-1.dsc' librsvg_2.46.4-1.dsc 2843 SHA256:f24180cd730fb805af8aee79a3e577031f065982f1ad2d65f74f8537a1e14afd
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.46.4.orig.tar.xz' librsvg_2.46.4.orig.tar.xz 12680904 SHA256:b45b9ee3b64c58baaf800bcdff5fcd04d79930dba4c56e46e0d3b0aead40cc29
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.46.4-1.debian.tar.xz' librsvg_2.46.4-1.debian.tar.xz 22876 SHA256:f120e434c898aeb6b1a13a2dbcb2024c425aabbdb99d51a3b393a0301084ecb5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/librsvg/2.46.4-1/
 
-- https://sources.debian.net/src/librsvg/2.46.4-1/ (for browsing the source)
-- https://sources.debian.net/src/librsvg/2.46.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/librsvg/2.46.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.4.3-1`
 
