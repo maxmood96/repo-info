@@ -1,7 +1,7 @@
 ## `ghost:3-alpine`
 
 ```console
-$ docker pull ghost@sha256:21504992ee046980c14256a3a122d3c7a7629ad5c940fada57c608e34246d88f
+$ docker pull ghost@sha256:fa527cefc346f171b87ff63776f27da258b664f6772162bb0afaca2fa3573d23
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull ghost@sha256:21504992ee046980c14256a3a122d3c7a7629ad5c940fada57c60
 ### `ghost:3-alpine` - linux; amd64
 
 ```console
-$ docker pull ghost@sha256:966c6857977bbdfd23cb0ebf139e16927f091d45d9af5dd6e6205981c1b9342e
+$ docker pull ghost@sha256:59fd716a15fa7000e4b5090355649429d86ea0e76eebd6fd064dd75101177838
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **118.0 MB (117979921 bytes)**  
+-	Total Size: **118.0 MB (118047589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e62dcee248afa6682943991f6ce2550331e6962b744cd34d0b0c6cc62e163ff`
+-	Image ID: `sha256:8770967d98fca56255561702a389f8e54193fc808bb697be110cc9e4d55606fb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
@@ -33,49 +33,49 @@ $ docker pull ghost@sha256:966c6857977bbdfd23cb0ebf139e16927f091d45d9af5dd6e6205
 ADD file:0c4555f363c2672e350001f1293e689875a3760afe7b3f9146886afe67121cba in / 
 # Mon, 23 Mar 2020 21:19:34 GMT
 CMD ["/bin/sh"]
-# Mon, 23 Mar 2020 22:56:32 GMT
-ENV NODE_VERSION=12.16.1
-# Mon, 23 Mar 2020 22:56:37 GMT
-RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64)           ARCH='x64'           CHECKSUM="7606d86e842b710e4321fe1c7f7a32a8e145f5e0659de406399cda5a37411d92"           ;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python     && for key in       94AE36675C464D64BAFA68DD7434390BDBE9B9C5       FD3A5288F042B6850C66B31F09FE44734EB7990E       71DCFD284A79C3B38668286BC97EC7A07EDE3FC1       DD8F2338BAE7501E3DD5AC78C273792F7D83545D       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8       B9AE9905FFD7803F25714661B63B535A4C206CA9       77984A986EBC2AA786BC0F66B01FBB92821C587A       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       4ED778F539E3634C779C87C6D7062848A1AB005C       A48C2BEE680E841632CD4E44F07496B3EB3C1762       B9E2F5981AA6E0CD28160D9FF13993A75599653C     ; do       gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||       gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||       gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && apk del .build-deps   && node --version   && npm --version
-# Mon, 23 Mar 2020 22:56:37 GMT
-ENV YARN_VERSION=1.22.0
-# Mon, 23 Mar 2020 22:56:40 GMT
+# Thu, 09 Apr 2020 19:46:49 GMT
+ENV NODE_VERSION=12.16.2
+# Thu, 09 Apr 2020 19:47:00 GMT
+RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64)           ARCH='x64'           CHECKSUM="f6b8bb0ee376cd1e7096f15b68efc3bb6adbd2cb33a12002d5982384b733dcab"           ;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python     && for key in       94AE36675C464D64BAFA68DD7434390BDBE9B9C5       FD3A5288F042B6850C66B31F09FE44734EB7990E       71DCFD284A79C3B38668286BC97EC7A07EDE3FC1       DD8F2338BAE7501E3DD5AC78C273792F7D83545D       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8       B9AE9905FFD7803F25714661B63B535A4C206CA9       77984A986EBC2AA786BC0F66B01FBB92821C587A       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       4ED778F539E3634C779C87C6D7062848A1AB005C       A48C2BEE680E841632CD4E44F07496B3EB3C1762       B9E2F5981AA6E0CD28160D9FF13993A75599653C     ; do       gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||       gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||       gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && apk del .build-deps   && node --version   && npm --version
+# Thu, 09 Apr 2020 19:47:00 GMT
+ENV YARN_VERSION=1.22.4
+# Thu, 09 Apr 2020 19:47:05 GMT
 RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version
-# Mon, 23 Mar 2020 22:56:40 GMT
+# Thu, 09 Apr 2020 19:47:05 GMT
 COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ 
-# Mon, 23 Mar 2020 22:56:40 GMT
+# Thu, 09 Apr 2020 19:47:06 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Mar 2020 22:56:40 GMT
+# Thu, 09 Apr 2020 19:47:06 GMT
 CMD ["node"]
-# Tue, 24 Mar 2020 04:11:46 GMT
+# Thu, 09 Apr 2020 20:33:53 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Tue, 24 Mar 2020 04:11:48 GMT
+# Thu, 09 Apr 2020 20:33:54 GMT
 RUN apk add --no-cache 		bash
-# Tue, 24 Mar 2020 04:11:48 GMT
+# Thu, 09 Apr 2020 20:33:54 GMT
 ENV NODE_ENV=production
-# Tue, 24 Mar 2020 04:11:48 GMT
+# Thu, 09 Apr 2020 20:33:54 GMT
 ENV GHOST_CLI_VERSION=1.13.1
-# Tue, 24 Mar 2020 04:12:13 GMT
+# Thu, 09 Apr 2020 20:34:31 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force
-# Tue, 24 Mar 2020 04:12:14 GMT
+# Thu, 09 Apr 2020 20:34:32 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Tue, 24 Mar 2020 04:12:14 GMT
+# Thu, 09 Apr 2020 20:34:32 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Thu, 09 Apr 2020 00:20:43 GMT
+# Thu, 09 Apr 2020 20:34:33 GMT
 ENV GHOST_VERSION=3.13.1
-# Thu, 09 Apr 2020 00:21:40 GMT
+# Thu, 09 Apr 2020 20:36:02 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		su-exec node ghost install "$GHOST_VERSION" --db sqlite3 --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"; 		cd "$GHOST_INSTALL"; 	su-exec node ghost config --ip 0.0.0.0 --port 2368 --no-prompt --db sqlite3 --url http://localhost:2368 --dbpath "$GHOST_CONTENT/data/ghost.db"; 	su-exec node ghost config paths.contentPath "$GHOST_CONTENT"; 		su-exec node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	sqlite3Version="$(node -p 'require("./package.json").optionalDependencies.sqlite3')"; 	if ! su-exec node yarn add "sqlite3@$sqlite3Version" --force; then 		apk add --no-cache --virtual .build-deps python make gcc g++ libc-dev; 				su-exec node yarn add "sqlite3@$sqlite3Version" --force --build-from-source; 				apk del --no-network .build-deps; 	fi; 		su-exec node yarn cache clean; 	su-exec node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8*
-# Thu, 09 Apr 2020 00:21:40 GMT
+# Thu, 09 Apr 2020 20:36:03 GMT
 WORKDIR /var/lib/ghost
-# Thu, 09 Apr 2020 00:21:40 GMT
+# Thu, 09 Apr 2020 20:36:03 GMT
 VOLUME [/var/lib/ghost/content]
-# Thu, 09 Apr 2020 00:21:41 GMT
+# Thu, 09 Apr 2020 20:36:04 GMT
 COPY file:87209c4c75826f5d839c2f3270a782740f42eecf4bc96b2f6dbae79b08c17e21 in /usr/local/bin 
-# Thu, 09 Apr 2020 00:21:41 GMT
+# Thu, 09 Apr 2020 20:36:04 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 09 Apr 2020 00:21:41 GMT
+# Thu, 09 Apr 2020 20:36:04 GMT
 EXPOSE 2368
-# Thu, 09 Apr 2020 00:21:41 GMT
+# Thu, 09 Apr 2020 20:36:04 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -84,50 +84,50 @@ CMD ["node" "current/index.js"]
 		Last Modified: Mon, 23 Mar 2020 21:19:53 GMT  
 		Size: 2.8 MB (2803255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:edd41271d385d2b7237c0dc7529efec09c24b814210f63ed880556227dc5f48a`  
-		Last Modified: Mon, 23 Mar 2020 23:00:41 GMT  
-		Size: 24.5 MB (24481434 bytes)  
+	-	`sha256:1e6875f31a79a89ba75198be98bcf8542ebf5bedc72e713643f8051c1de5f953`  
+		Last Modified: Thu, 09 Apr 2020 19:52:56 GMT  
+		Size: 24.6 MB (24575127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd731a7214510cbae667108943d0e07b96c7beb3a3ade18bd756445b2b79a209`  
-		Last Modified: Mon, 23 Mar 2020 23:00:33 GMT  
-		Size: 2.2 MB (2238680 bytes)  
+	-	`sha256:dee60dddbbe0d354499cf6e1b0202cad13fc488549b4e4c7d8dcf6c2a1a03bbf`  
+		Last Modified: Thu, 09 Apr 2020 19:52:49 GMT  
+		Size: 2.2 MB (2239181 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:495807fcdd3718329576cee98e15dc29b9fd68fb864a89c4f415d7ba011b9ffb`  
-		Last Modified: Mon, 23 Mar 2020 23:00:32 GMT  
-		Size: 282.0 B  
+	-	`sha256:ea56792bc485065256bba51dc1b589b188c453a852865d0b49d7736684ed33a6`  
+		Last Modified: Thu, 09 Apr 2020 19:52:48 GMT  
+		Size: 281.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:646ef71e27691d80a96dacc1334f33a7b5f4c66d6301e63579ee63edf5ea1d7a`  
-		Last Modified: Tue, 24 Mar 2020 04:17:43 GMT  
-		Size: 9.9 KB (9906 bytes)  
+	-	`sha256:fd430d6d719c6b97e8ea3e4d0badb4326821fcbc7b9459e866c624460ac30a01`  
+		Last Modified: Thu, 09 Apr 2020 20:37:30 GMT  
+		Size: 9.9 KB (9904 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b98b913546642772383288939202d33a9bd4bd876774f1374d48b3cb89ebebe`  
-		Last Modified: Tue, 24 Mar 2020 04:17:43 GMT  
-		Size: 780.5 KB (780523 bytes)  
+	-	`sha256:05be2e14c55d4990e999a0d2ee485d014c7c38837ef4938609b908dbb4af8b38`  
+		Last Modified: Thu, 09 Apr 2020 20:37:31 GMT  
+		Size: 780.5 KB (780539 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60fdd7a70519c4905f8f7177d9bf4057dffed8681f6392e4051ee896c147f9da`  
-		Last Modified: Tue, 24 Mar 2020 04:17:47 GMT  
-		Size: 6.8 MB (6791357 bytes)  
+	-	`sha256:1dbe043c0b9da05d71114b85dd28c70fcba0d68aa62ba2b1571123625aa0445a`  
+		Last Modified: Thu, 09 Apr 2020 20:37:35 GMT  
+		Size: 6.8 MB (6766354 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02e8ce2b2c1f098c25f65feea50802e3212159b1d2d1505089d6e1c547db884a`  
-		Last Modified: Thu, 09 Apr 2020 00:25:07 GMT  
-		Size: 80.9 MB (80873934 bytes)  
+	-	`sha256:1cbac2b2d9c24cfab00c97eb291e670d46762ce8b0c4c625a1688c1638b347ae`  
+		Last Modified: Thu, 09 Apr 2020 20:37:51 GMT  
+		Size: 80.9 MB (80872400 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f87c1b81e7c58507aa0bc081187578d42cd9447ec2e3b5bdf6091720ab1a9666`  
-		Last Modified: Thu, 09 Apr 2020 00:24:39 GMT  
-		Size: 550.0 B  
+	-	`sha256:1266df4e7f66b395eb2b602d1f48b814068ad7aaa91d40cb65b71eaf100558d1`  
+		Last Modified: Thu, 09 Apr 2020 20:37:30 GMT  
+		Size: 548.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ghost:3-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull ghost@sha256:798b0fb4c452b4b9e86dbd2041308c22e29568a7086114c32a38813131f0a9e3
+$ docker pull ghost@sha256:09a81c047b96fa042e92648634a5ba54ca11500152bf2651118ae261dc1b043f
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **108.3 MB (108331570 bytes)**  
+-	Total Size: **108.4 MB (108388714 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ffde4f5f4300d504150c8d0112174ed6ad64c1adef2b2f7b0790a821b370b4be`
+-	Image ID: `sha256:2a480f9d993a23381fc6d1b6fb2fa7d2939cf6de8694b139125af7933af6e1bb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
@@ -136,49 +136,49 @@ $ docker pull ghost@sha256:798b0fb4c452b4b9e86dbd2041308c22e29568a7086114c32a388
 ADD file:e2fdfc637b534345942caf4097883508a5ed23be97d85ccc3357b8277aaa5430 in / 
 # Mon, 23 Mar 2020 21:49:27 GMT
 CMD ["/bin/sh"]
-# Tue, 24 Mar 2020 00:05:38 GMT
-ENV NODE_VERSION=12.16.1
-# Tue, 24 Mar 2020 00:17:52 GMT
-RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64)           ARCH='x64'           CHECKSUM="7606d86e842b710e4321fe1c7f7a32a8e145f5e0659de406399cda5a37411d92"           ;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python     && for key in       94AE36675C464D64BAFA68DD7434390BDBE9B9C5       FD3A5288F042B6850C66B31F09FE44734EB7990E       71DCFD284A79C3B38668286BC97EC7A07EDE3FC1       DD8F2338BAE7501E3DD5AC78C273792F7D83545D       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8       B9AE9905FFD7803F25714661B63B535A4C206CA9       77984A986EBC2AA786BC0F66B01FBB92821C587A       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       4ED778F539E3634C779C87C6D7062848A1AB005C       A48C2BEE680E841632CD4E44F07496B3EB3C1762       B9E2F5981AA6E0CD28160D9FF13993A75599653C     ; do       gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||       gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||       gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && apk del .build-deps   && node --version   && npm --version
-# Tue, 24 Mar 2020 00:17:54 GMT
-ENV YARN_VERSION=1.22.0
-# Tue, 24 Mar 2020 00:18:01 GMT
+# Thu, 09 Apr 2020 18:21:39 GMT
+ENV NODE_VERSION=12.16.2
+# Thu, 09 Apr 2020 18:33:20 GMT
+RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64)           ARCH='x64'           CHECKSUM="f6b8bb0ee376cd1e7096f15b68efc3bb6adbd2cb33a12002d5982384b733dcab"           ;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python     && for key in       94AE36675C464D64BAFA68DD7434390BDBE9B9C5       FD3A5288F042B6850C66B31F09FE44734EB7990E       71DCFD284A79C3B38668286BC97EC7A07EDE3FC1       DD8F2338BAE7501E3DD5AC78C273792F7D83545D       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8       B9AE9905FFD7803F25714661B63B535A4C206CA9       77984A986EBC2AA786BC0F66B01FBB92821C587A       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       4ED778F539E3634C779C87C6D7062848A1AB005C       A48C2BEE680E841632CD4E44F07496B3EB3C1762       B9E2F5981AA6E0CD28160D9FF13993A75599653C     ; do       gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||       gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||       gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && apk del .build-deps   && node --version   && npm --version
+# Thu, 09 Apr 2020 18:33:23 GMT
+ENV YARN_VERSION=1.22.4
+# Thu, 09 Apr 2020 18:33:29 GMT
 RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version
-# Tue, 24 Mar 2020 00:18:02 GMT
+# Thu, 09 Apr 2020 18:33:29 GMT
 COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ 
-# Tue, 24 Mar 2020 00:18:03 GMT
+# Thu, 09 Apr 2020 18:33:30 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 24 Mar 2020 00:18:04 GMT
+# Thu, 09 Apr 2020 18:33:31 GMT
 CMD ["node"]
-# Tue, 24 Mar 2020 03:48:37 GMT
+# Thu, 09 Apr 2020 19:01:14 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Tue, 24 Mar 2020 03:48:41 GMT
+# Thu, 09 Apr 2020 19:01:17 GMT
 RUN apk add --no-cache 		bash
-# Tue, 24 Mar 2020 03:48:41 GMT
+# Thu, 09 Apr 2020 19:01:19 GMT
 ENV NODE_ENV=production
-# Tue, 24 Mar 2020 03:48:42 GMT
+# Thu, 09 Apr 2020 19:01:20 GMT
 ENV GHOST_CLI_VERSION=1.13.1
-# Tue, 24 Mar 2020 03:49:26 GMT
+# Thu, 09 Apr 2020 19:02:11 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force
-# Tue, 24 Mar 2020 03:49:29 GMT
+# Thu, 09 Apr 2020 19:02:13 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Tue, 24 Mar 2020 03:49:30 GMT
+# Thu, 09 Apr 2020 19:02:15 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 08 Apr 2020 23:49:26 GMT
+# Thu, 09 Apr 2020 19:02:15 GMT
 ENV GHOST_VERSION=3.13.1
-# Wed, 08 Apr 2020 23:55:53 GMT
+# Thu, 09 Apr 2020 19:08:50 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		su-exec node ghost install "$GHOST_VERSION" --db sqlite3 --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"; 		cd "$GHOST_INSTALL"; 	su-exec node ghost config --ip 0.0.0.0 --port 2368 --no-prompt --db sqlite3 --url http://localhost:2368 --dbpath "$GHOST_CONTENT/data/ghost.db"; 	su-exec node ghost config paths.contentPath "$GHOST_CONTENT"; 		su-exec node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	sqlite3Version="$(node -p 'require("./package.json").optionalDependencies.sqlite3')"; 	if ! su-exec node yarn add "sqlite3@$sqlite3Version" --force; then 		apk add --no-cache --virtual .build-deps python make gcc g++ libc-dev; 				su-exec node yarn add "sqlite3@$sqlite3Version" --force --build-from-source; 				apk del --no-network .build-deps; 	fi; 		su-exec node yarn cache clean; 	su-exec node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8*
-# Wed, 08 Apr 2020 23:56:01 GMT
+# Thu, 09 Apr 2020 19:08:55 GMT
 WORKDIR /var/lib/ghost
-# Wed, 08 Apr 2020 23:56:01 GMT
+# Thu, 09 Apr 2020 19:08:56 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 08 Apr 2020 23:56:02 GMT
+# Thu, 09 Apr 2020 19:08:57 GMT
 COPY file:87209c4c75826f5d839c2f3270a782740f42eecf4bc96b2f6dbae79b08c17e21 in /usr/local/bin 
-# Wed, 08 Apr 2020 23:56:03 GMT
+# Thu, 09 Apr 2020 19:08:57 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 08 Apr 2020 23:56:03 GMT
+# Thu, 09 Apr 2020 19:08:58 GMT
 EXPOSE 2368
-# Wed, 08 Apr 2020 23:56:04 GMT
+# Thu, 09 Apr 2020 19:08:59 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -187,50 +187,50 @@ CMD ["node" "current/index.js"]
 		Last Modified: Mon, 23 Mar 2020 21:49:50 GMT  
 		Size: 2.6 MB (2618579 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b960f9ebb83029c8e9fb3689bd4aac92cdd6bd03ad745bf33999052d16dff07`  
-		Last Modified: Tue, 24 Mar 2020 00:27:12 GMT  
-		Size: 23.9 MB (23933195 bytes)  
+	-	`sha256:7c04838c689a8166630ba4a67242af00480e12097bf2cee47cfa85cb13c17f52`  
+		Last Modified: Thu, 09 Apr 2020 18:35:15 GMT  
+		Size: 24.0 MB (24013587 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:004e42e6ed8495795b74aea40ea4ee887778c2101a310c124894325a6d2188db`  
-		Last Modified: Tue, 24 Mar 2020 00:27:01 GMT  
-		Size: 2.3 MB (2294376 bytes)  
+	-	`sha256:62c9c11ecabe370871e0c68030771af5638fbbe5b229b65da739bee2b7dceea8`  
+		Last Modified: Thu, 09 Apr 2020 18:35:07 GMT  
+		Size: 2.3 MB (2294518 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6619b0e8f04857b54d8beea55aefc427b2d2a592f2f430bfcebfddbd28b345bf`  
-		Last Modified: Tue, 24 Mar 2020 00:27:00 GMT  
-		Size: 281.0 B  
+	-	`sha256:38947859853927c5a89dad29b4807a57b5c248379380490e272d0e86446def7c`  
+		Last Modified: Thu, 09 Apr 2020 18:35:06 GMT  
+		Size: 278.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e7b8896d90e2c95b529bb259ba8edaddb658e1be9d1b3c8ba7beef36722f0d0`  
-		Last Modified: Tue, 24 Mar 2020 04:14:48 GMT  
-		Size: 9.7 KB (9730 bytes)  
+	-	`sha256:d99c561a2adaec4cf5dcfcad314d2539eaaf7e99c82cdbe368d8bbc63716bd45`  
+		Last Modified: Thu, 09 Apr 2020 19:09:36 GMT  
+		Size: 9.7 KB (9731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d259a27b709805a62fc14e25bc3402fdb6da11ae4580c07290c5db4f00374e8`  
-		Last Modified: Tue, 24 Mar 2020 04:14:48 GMT  
-		Size: 733.4 KB (733443 bytes)  
+	-	`sha256:08aa7a32439ab0d724236aac3e70bc7b4ab86c8d03b153e51a5240147a900ead`  
+		Last Modified: Thu, 09 Apr 2020 19:09:36 GMT  
+		Size: 733.4 KB (733437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7744a72adb6a9842513c74b0bcf27f16892581073cbeaf1ff58a743158bc3c59`  
-		Last Modified: Tue, 24 Mar 2020 04:14:53 GMT  
-		Size: 6.8 MB (6791439 bytes)  
+	-	`sha256:aa7abf3476136105369871008cf29490d022b1b0f1ee6f335eed71cfa50e96ae`  
+		Last Modified: Thu, 09 Apr 2020 19:09:40 GMT  
+		Size: 6.8 MB (6766754 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d513805460739e4c91d5bdb7bece4b0ca6d04e2b4404f39c4a80d4aee892d2bf`  
-		Last Modified: Thu, 09 Apr 2020 00:03:04 GMT  
-		Size: 71.9 MB (71949981 bytes)  
+	-	`sha256:b4228d0e23be6b8cd045b375032c84c83e07494712324c09f3478d9990818193`  
+		Last Modified: Thu, 09 Apr 2020 19:10:08 GMT  
+		Size: 72.0 MB (71951285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0891b88d849e23ed32198f1fd937551e59c5fae56211a3302055d3ca3e5d728`  
-		Last Modified: Thu, 09 Apr 2020 00:02:37 GMT  
-		Size: 546.0 B  
+	-	`sha256:6387a2370f6cf6755fc5a4b0fcb2bf30b0b3a1b755fa0bcfa4657e860dfdb9c3`  
+		Last Modified: Thu, 09 Apr 2020 19:09:36 GMT  
+		Size: 545.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ghost:3-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull ghost@sha256:327adb4dc57b27e2545c811eb8a14f13fb66dc52e5e2d806161c9c69ac06e295
+$ docker pull ghost@sha256:9bced0cf80e036d63d2904176606b7263bfcd37275ff5c317dc34807e4fe10e3
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **106.7 MB (106699337 bytes)**  
+-	Total Size: **106.8 MB (106757612 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d85312e8a6106396294b1bdbf461c203c0e5046fd59caf75f659eaf5bf1ea0b6`
+-	Image ID: `sha256:a89d7126a6986affa997c0a18127d7b1c511f46f8c3d54ba7344abbb0d6f19cc`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
@@ -239,49 +239,49 @@ $ docker pull ghost@sha256:327adb4dc57b27e2545c811eb8a14f13fb66dc52e5e2d806161c9
 ADD file:3bde6b6fd06efbf24e66446c6d32f72294fc749ae9ee6191776242e92b2f8ab4 in / 
 # Mon, 23 Mar 2020 21:57:56 GMT
 CMD ["/bin/sh"]
-# Mon, 23 Mar 2020 23:12:45 GMT
-ENV NODE_VERSION=12.16.1
-# Mon, 23 Mar 2020 23:21:37 GMT
-RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64)           ARCH='x64'           CHECKSUM="7606d86e842b710e4321fe1c7f7a32a8e145f5e0659de406399cda5a37411d92"           ;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python     && for key in       94AE36675C464D64BAFA68DD7434390BDBE9B9C5       FD3A5288F042B6850C66B31F09FE44734EB7990E       71DCFD284A79C3B38668286BC97EC7A07EDE3FC1       DD8F2338BAE7501E3DD5AC78C273792F7D83545D       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8       B9AE9905FFD7803F25714661B63B535A4C206CA9       77984A986EBC2AA786BC0F66B01FBB92821C587A       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       4ED778F539E3634C779C87C6D7062848A1AB005C       A48C2BEE680E841632CD4E44F07496B3EB3C1762       B9E2F5981AA6E0CD28160D9FF13993A75599653C     ; do       gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||       gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||       gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && apk del .build-deps   && node --version   && npm --version
-# Mon, 23 Mar 2020 23:21:40 GMT
-ENV YARN_VERSION=1.22.0
-# Mon, 23 Mar 2020 23:21:44 GMT
+# Thu, 09 Apr 2020 18:37:00 GMT
+ENV NODE_VERSION=12.16.2
+# Thu, 09 Apr 2020 18:45:40 GMT
+RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64)           ARCH='x64'           CHECKSUM="f6b8bb0ee376cd1e7096f15b68efc3bb6adbd2cb33a12002d5982384b733dcab"           ;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python     && for key in       94AE36675C464D64BAFA68DD7434390BDBE9B9C5       FD3A5288F042B6850C66B31F09FE44734EB7990E       71DCFD284A79C3B38668286BC97EC7A07EDE3FC1       DD8F2338BAE7501E3DD5AC78C273792F7D83545D       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8       B9AE9905FFD7803F25714661B63B535A4C206CA9       77984A986EBC2AA786BC0F66B01FBB92821C587A       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       4ED778F539E3634C779C87C6D7062848A1AB005C       A48C2BEE680E841632CD4E44F07496B3EB3C1762       B9E2F5981AA6E0CD28160D9FF13993A75599653C     ; do       gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||       gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||       gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && apk del .build-deps   && node --version   && npm --version
+# Thu, 09 Apr 2020 18:45:42 GMT
+ENV YARN_VERSION=1.22.4
+# Thu, 09 Apr 2020 18:45:46 GMT
 RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version
-# Mon, 23 Mar 2020 23:21:45 GMT
+# Thu, 09 Apr 2020 18:45:47 GMT
 COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ 
-# Mon, 23 Mar 2020 23:21:45 GMT
+# Thu, 09 Apr 2020 18:45:48 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Mar 2020 23:21:46 GMT
+# Thu, 09 Apr 2020 18:45:48 GMT
 CMD ["node"]
-# Tue, 24 Mar 2020 02:18:22 GMT
+# Thu, 09 Apr 2020 19:39:23 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Tue, 24 Mar 2020 02:18:31 GMT
+# Thu, 09 Apr 2020 19:39:25 GMT
 RUN apk add --no-cache 		bash
-# Tue, 24 Mar 2020 02:18:33 GMT
+# Thu, 09 Apr 2020 19:39:26 GMT
 ENV NODE_ENV=production
-# Tue, 24 Mar 2020 02:18:35 GMT
+# Thu, 09 Apr 2020 19:39:26 GMT
 ENV GHOST_CLI_VERSION=1.13.1
-# Tue, 24 Mar 2020 02:19:11 GMT
+# Thu, 09 Apr 2020 19:39:54 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force
-# Tue, 24 Mar 2020 02:19:13 GMT
+# Thu, 09 Apr 2020 19:39:56 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Tue, 24 Mar 2020 02:19:13 GMT
+# Thu, 09 Apr 2020 19:39:57 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Thu, 09 Apr 2020 00:03:03 GMT
+# Thu, 09 Apr 2020 19:39:58 GMT
 ENV GHOST_VERSION=3.13.1
-# Thu, 09 Apr 2020 00:07:34 GMT
+# Thu, 09 Apr 2020 19:44:15 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		su-exec node ghost install "$GHOST_VERSION" --db sqlite3 --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"; 		cd "$GHOST_INSTALL"; 	su-exec node ghost config --ip 0.0.0.0 --port 2368 --no-prompt --db sqlite3 --url http://localhost:2368 --dbpath "$GHOST_CONTENT/data/ghost.db"; 	su-exec node ghost config paths.contentPath "$GHOST_CONTENT"; 		su-exec node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	sqlite3Version="$(node -p 'require("./package.json").optionalDependencies.sqlite3')"; 	if ! su-exec node yarn add "sqlite3@$sqlite3Version" --force; then 		apk add --no-cache --virtual .build-deps python make gcc g++ libc-dev; 				su-exec node yarn add "sqlite3@$sqlite3Version" --force --build-from-source; 				apk del --no-network .build-deps; 	fi; 		su-exec node yarn cache clean; 	su-exec node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8*
-# Thu, 09 Apr 2020 00:07:39 GMT
+# Thu, 09 Apr 2020 19:44:21 GMT
 WORKDIR /var/lib/ghost
-# Thu, 09 Apr 2020 00:07:39 GMT
+# Thu, 09 Apr 2020 19:44:21 GMT
 VOLUME [/var/lib/ghost/content]
-# Thu, 09 Apr 2020 00:07:40 GMT
+# Thu, 09 Apr 2020 19:44:22 GMT
 COPY file:87209c4c75826f5d839c2f3270a782740f42eecf4bc96b2f6dbae79b08c17e21 in /usr/local/bin 
-# Thu, 09 Apr 2020 00:07:40 GMT
+# Thu, 09 Apr 2020 19:44:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 09 Apr 2020 00:07:41 GMT
+# Thu, 09 Apr 2020 19:44:23 GMT
 EXPOSE 2368
-# Thu, 09 Apr 2020 00:07:42 GMT
+# Thu, 09 Apr 2020 19:44:24 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -290,50 +290,50 @@ CMD ["node" "current/index.js"]
 		Last Modified: Mon, 23 Mar 2020 21:58:16 GMT  
 		Size: 2.4 MB (2420493 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05f462b27032291962f65896d2d56a038c7d192675f532e6dc83c7b58759232c`  
-		Last Modified: Mon, 23 Mar 2020 23:29:46 GMT  
-		Size: 23.5 MB (23496708 bytes)  
+	-	`sha256:4b4994eeda864243d462592220b252e4eb7129653f3b31afad65fbfd18d7b922`  
+		Last Modified: Thu, 09 Apr 2020 18:50:03 GMT  
+		Size: 23.6 MB (23578355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a67d7062b0aff379ef5ca55dc9d75a26d50a5eab6ca102a147daad2cefdc818b`  
-		Last Modified: Mon, 23 Mar 2020 23:29:38 GMT  
-		Size: 2.3 MB (2294324 bytes)  
+	-	`sha256:f8bed5082b29f6fcf31b7568d1cf6127b93b2371d7e32f488d70b2c2bd242c92`  
+		Last Modified: Thu, 09 Apr 2020 18:49:55 GMT  
+		Size: 2.3 MB (2294603 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:374b2e5695f35a3e6c5cc6de0ac12fda523f323705a63c2fe18f88b2e565c116`  
-		Last Modified: Mon, 23 Mar 2020 23:29:38 GMT  
-		Size: 283.0 B  
+	-	`sha256:c088f84e4e7e5bc0d00ecc4c99b15098e5699ef7e278d3545aec7a0e2eb4f9a1`  
+		Last Modified: Thu, 09 Apr 2020 18:49:55 GMT  
+		Size: 279.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7ca30da3b7045ce68d6f90338d928bb2905ddaf25494ca65922556869e72b8b`  
-		Last Modified: Tue, 24 Mar 2020 02:34:12 GMT  
-		Size: 9.5 KB (9514 bytes)  
+	-	`sha256:ab464cfcce584e474acf0faab284d96f277c2dbf8f87e5c365702f7a88133c9f`  
+		Last Modified: Thu, 09 Apr 2020 19:45:54 GMT  
+		Size: 9.5 KB (9518 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc2be70874728d68733693ba854e8455d32673c7e33bf76a9dc7b6f7a7410c94`  
-		Last Modified: Tue, 24 Mar 2020 02:34:11 GMT  
-		Size: 669.0 KB (669020 bytes)  
+	-	`sha256:545ef5e1eb256b13b85c6ea46a58050a616194071d67a3d81eda7e2114729358`  
+		Last Modified: Thu, 09 Apr 2020 19:45:54 GMT  
+		Size: 669.0 KB (669027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35a37850d4084b74693e507a7d357212dd037af506fe577e4d5191dd66e32774`  
-		Last Modified: Tue, 24 Mar 2020 02:34:13 GMT  
-		Size: 6.8 MB (6791286 bytes)  
+	-	`sha256:b44e0d696b1238fdd84543679a8c1c61a03c777d960f6ad4948e89122d32d572`  
+		Last Modified: Thu, 09 Apr 2020 19:45:59 GMT  
+		Size: 6.8 MB (6766682 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9bef0b45eb9d0f334a44d4cdafd170335453a86fb189056996bd041929c90ecf`  
-		Last Modified: Thu, 09 Apr 2020 00:17:45 GMT  
-		Size: 71.0 MB (71017164 bytes)  
+	-	`sha256:e81a33327f24a2ef6e68220e28a7bda9c7a368e6a93a8def67008f859e1ad847`  
+		Last Modified: Thu, 09 Apr 2020 19:46:21 GMT  
+		Size: 71.0 MB (71018110 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57371e8db9842d6b33c8747eb5b4e4eb04ec08a98ede86360ae1c5224ffafe08`  
-		Last Modified: Thu, 09 Apr 2020 00:17:20 GMT  
+	-	`sha256:273fbd294ea4821282e8440080594ae7db50bbdd347f97ac0a273955f56d03fa`  
+		Last Modified: Thu, 09 Apr 2020 19:45:54 GMT  
 		Size: 545.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ghost:3-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull ghost@sha256:32a7f30f456ad6231dea155bc2bb6c3e7b3bb9fb97559f56cd2af0062c162530
+$ docker pull ghost@sha256:1beb4ba48ddf8ac55b3e2227b1390f2faa6bad19e52f0e820d853e2e439b4c73
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **109.5 MB (109527200 bytes)**  
+-	Total Size: **109.6 MB (109575848 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ed6eff836b55a25bdeaf6f184eb9ef01f788f3b5b5243f6650d4ec3f4659268`
+-	Image ID: `sha256:a13ea6e3866d18319df8168f7e7cb0eff955c4eb789908092ad01eb78254fce2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
@@ -342,49 +342,49 @@ $ docker pull ghost@sha256:32a7f30f456ad6231dea155bc2bb6c3e7b3bb9fb97559f56cd2af
 ADD file:746a5c3838a898d6acf7877552ff13d1ab40d0036ace7a662e7c747018315ddb in / 
 # Mon, 23 Mar 2020 21:39:53 GMT
 CMD ["/bin/sh"]
-# Tue, 24 Mar 2020 00:04:00 GMT
-ENV NODE_VERSION=12.16.1
-# Tue, 24 Mar 2020 00:15:29 GMT
-RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64)           ARCH='x64'           CHECKSUM="7606d86e842b710e4321fe1c7f7a32a8e145f5e0659de406399cda5a37411d92"           ;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python     && for key in       94AE36675C464D64BAFA68DD7434390BDBE9B9C5       FD3A5288F042B6850C66B31F09FE44734EB7990E       71DCFD284A79C3B38668286BC97EC7A07EDE3FC1       DD8F2338BAE7501E3DD5AC78C273792F7D83545D       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8       B9AE9905FFD7803F25714661B63B535A4C206CA9       77984A986EBC2AA786BC0F66B01FBB92821C587A       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       4ED778F539E3634C779C87C6D7062848A1AB005C       A48C2BEE680E841632CD4E44F07496B3EB3C1762       B9E2F5981AA6E0CD28160D9FF13993A75599653C     ; do       gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||       gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||       gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && apk del .build-deps   && node --version   && npm --version
-# Tue, 24 Mar 2020 00:15:30 GMT
-ENV YARN_VERSION=1.22.0
-# Tue, 24 Mar 2020 00:15:34 GMT
+# Thu, 09 Apr 2020 18:05:29 GMT
+ENV NODE_VERSION=12.16.2
+# Thu, 09 Apr 2020 18:17:46 GMT
+RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64)           ARCH='x64'           CHECKSUM="f6b8bb0ee376cd1e7096f15b68efc3bb6adbd2cb33a12002d5982384b733dcab"           ;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python     && for key in       94AE36675C464D64BAFA68DD7434390BDBE9B9C5       FD3A5288F042B6850C66B31F09FE44734EB7990E       71DCFD284A79C3B38668286BC97EC7A07EDE3FC1       DD8F2338BAE7501E3DD5AC78C273792F7D83545D       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8       B9AE9905FFD7803F25714661B63B535A4C206CA9       77984A986EBC2AA786BC0F66B01FBB92821C587A       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       4ED778F539E3634C779C87C6D7062848A1AB005C       A48C2BEE680E841632CD4E44F07496B3EB3C1762       B9E2F5981AA6E0CD28160D9FF13993A75599653C     ; do       gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||       gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||       gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && apk del .build-deps   && node --version   && npm --version
+# Thu, 09 Apr 2020 18:17:48 GMT
+ENV YARN_VERSION=1.22.4
+# Thu, 09 Apr 2020 18:17:53 GMT
 RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version
-# Tue, 24 Mar 2020 00:15:35 GMT
+# Thu, 09 Apr 2020 18:17:54 GMT
 COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ 
-# Tue, 24 Mar 2020 00:15:35 GMT
+# Thu, 09 Apr 2020 18:17:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 24 Mar 2020 00:15:36 GMT
+# Thu, 09 Apr 2020 18:17:55 GMT
 CMD ["node"]
-# Tue, 24 Mar 2020 06:11:07 GMT
+# Thu, 09 Apr 2020 18:47:24 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Tue, 24 Mar 2020 06:11:09 GMT
+# Thu, 09 Apr 2020 18:47:26 GMT
 RUN apk add --no-cache 		bash
-# Tue, 24 Mar 2020 06:11:09 GMT
+# Thu, 09 Apr 2020 18:47:27 GMT
 ENV NODE_ENV=production
-# Tue, 24 Mar 2020 06:11:10 GMT
+# Thu, 09 Apr 2020 18:47:28 GMT
 ENV GHOST_CLI_VERSION=1.13.1
-# Tue, 24 Mar 2020 06:11:34 GMT
+# Thu, 09 Apr 2020 18:47:54 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force
-# Tue, 24 Mar 2020 06:11:36 GMT
+# Thu, 09 Apr 2020 18:47:56 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Tue, 24 Mar 2020 06:11:37 GMT
+# Thu, 09 Apr 2020 18:47:57 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 08 Apr 2020 23:44:49 GMT
+# Thu, 09 Apr 2020 18:47:57 GMT
 ENV GHOST_VERSION=3.13.1
-# Wed, 08 Apr 2020 23:49:23 GMT
+# Thu, 09 Apr 2020 18:52:37 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		su-exec node ghost install "$GHOST_VERSION" --db sqlite3 --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"; 		cd "$GHOST_INSTALL"; 	su-exec node ghost config --ip 0.0.0.0 --port 2368 --no-prompt --db sqlite3 --url http://localhost:2368 --dbpath "$GHOST_CONTENT/data/ghost.db"; 	su-exec node ghost config paths.contentPath "$GHOST_CONTENT"; 		su-exec node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	sqlite3Version="$(node -p 'require("./package.json").optionalDependencies.sqlite3')"; 	if ! su-exec node yarn add "sqlite3@$sqlite3Version" --force; then 		apk add --no-cache --virtual .build-deps python make gcc g++ libc-dev; 				su-exec node yarn add "sqlite3@$sqlite3Version" --force --build-from-source; 				apk del --no-network .build-deps; 	fi; 		su-exec node yarn cache clean; 	su-exec node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8*
-# Wed, 08 Apr 2020 23:49:32 GMT
+# Thu, 09 Apr 2020 18:52:43 GMT
 WORKDIR /var/lib/ghost
-# Wed, 08 Apr 2020 23:49:33 GMT
+# Thu, 09 Apr 2020 18:52:44 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 08 Apr 2020 23:49:34 GMT
+# Thu, 09 Apr 2020 18:52:45 GMT
 COPY file:87209c4c75826f5d839c2f3270a782740f42eecf4bc96b2f6dbae79b08c17e21 in /usr/local/bin 
-# Wed, 08 Apr 2020 23:49:35 GMT
+# Thu, 09 Apr 2020 18:52:46 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 08 Apr 2020 23:49:36 GMT
+# Thu, 09 Apr 2020 18:52:48 GMT
 EXPOSE 2368
-# Wed, 08 Apr 2020 23:49:37 GMT
+# Thu, 09 Apr 2020 18:52:49 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -393,50 +393,50 @@ CMD ["node" "current/index.js"]
 		Last Modified: Mon, 23 Mar 2020 21:40:19 GMT  
 		Size: 2.7 MB (2723139 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cae83d6cf561de522630ffbd8a33786609687a3214a91921074853052083e81b`  
-		Last Modified: Tue, 24 Mar 2020 00:25:22 GMT  
-		Size: 24.7 MB (24664754 bytes)  
+	-	`sha256:695e551189cd0ee595a4bfa68fb097a011be1124a04463a9c25c3081bd1e92f8`  
+		Last Modified: Thu, 09 Apr 2020 18:22:42 GMT  
+		Size: 24.7 MB (24735479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:628a2d4ecfce483b5a53f3d29ef73910447f3f623afafa8bb2c060f4dc105888`  
-		Last Modified: Tue, 24 Mar 2020 00:25:15 GMT  
-		Size: 2.3 MB (2302059 bytes)  
+	-	`sha256:9054bafad0b503cd31a36a93d80cdc6318e91b119295b36c0812aa3b266e9ff0`  
+		Last Modified: Thu, 09 Apr 2020 18:22:33 GMT  
+		Size: 2.3 MB (2302286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c54e22b9da614c080eb77945d19e5b1702635adc51ec7aee19e8c3745d40aa88`  
-		Last Modified: Tue, 24 Mar 2020 00:25:14 GMT  
-		Size: 282.0 B  
+	-	`sha256:b80ee948777ae708a28b028c090e78a3026ac1a5265708b0903b99aa4d209eea`  
+		Last Modified: Thu, 09 Apr 2020 18:22:32 GMT  
+		Size: 280.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:434031c56b4d28a4c7260a3b3ca197b82f94b0a09d9266db3715f27c52d3b82f`  
-		Last Modified: Tue, 24 Mar 2020 06:26:14 GMT  
-		Size: 9.8 KB (9844 bytes)  
+	-	`sha256:158e684fc78f8637054c414b712c9d3648f806164a2d6c9097df88cbc54242ba`  
+		Last Modified: Thu, 09 Apr 2020 18:54:07 GMT  
+		Size: 9.8 KB (9843 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b22c032740a3274e0b68e7b233ca956ffdd0fc57f40eda4308fc982d7e7c39ee`  
-		Last Modified: Tue, 24 Mar 2020 06:26:14 GMT  
-		Size: 792.1 KB (792139 bytes)  
+	-	`sha256:b21bfb33fce3e350aa3195d0ee8e68a296df74e625799dfdb2bbf037548afba0`  
+		Last Modified: Thu, 09 Apr 2020 18:54:07 GMT  
+		Size: 792.1 KB (792136 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ed95e8544f2eb848ea463f1a89a3ec3425a72e5502be946056db89accd8c1ce`  
-		Last Modified: Tue, 24 Mar 2020 06:26:18 GMT  
-		Size: 6.8 MB (6791251 bytes)  
+	-	`sha256:a7d62691a7f521e17cb3d18eb909ee52f9738bbc93eaad4193c28962db1e7dcb`  
+		Last Modified: Thu, 09 Apr 2020 18:54:12 GMT  
+		Size: 6.8 MB (6766269 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba6d2c4159e4bce8f00b9a17b8a39029a0a43aac2e7167dfa827f0e0220094ec`  
-		Last Modified: Wed, 08 Apr 2020 23:59:43 GMT  
-		Size: 72.2 MB (72243185 bytes)  
+	-	`sha256:275099193901ba1b9b81fd2247a42408f37ac3223e65b23322677d5ec7428db4`  
+		Last Modified: Thu, 09 Apr 2020 18:54:34 GMT  
+		Size: 72.2 MB (72245871 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b9feaa9b4a97ec9cb797707203d2ffbb9d63a013619c526d45cbc4da8f17cce`  
-		Last Modified: Wed, 08 Apr 2020 23:59:18 GMT  
-		Size: 547.0 B  
+	-	`sha256:7b325672d7b86c008c06d091c199d603bab5dd98df507d92b7e0c02afc628897`  
+		Last Modified: Thu, 09 Apr 2020 18:54:07 GMT  
+		Size: 545.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ghost:3-alpine` - linux; 386
 
 ```console
-$ docker pull ghost@sha256:93939e8cd92dda61d4a41b0c977b947e22d50e9c556e312f65b3795abbfde74c
+$ docker pull ghost@sha256:68730a29efa887591fcceceffce4cabeb371fed902365d0cb485006b7a60acb6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **110.0 MB (109952428 bytes)**  
+-	Total Size: **110.0 MB (110005298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:015cf576019e106245304d64416b3d0bcbfdc28e17d361d6e514ecd41b6d8352`
+-	Image ID: `sha256:1e5dca77abdc34ebc4dec3300bdd73f3b4603ac6680fcb76259d30c67809b979`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
@@ -445,49 +445,49 @@ $ docker pull ghost@sha256:93939e8cd92dda61d4a41b0c977b947e22d50e9c556e312f65b37
 ADD file:99c8234abafd4fa915c0b826eb0e3be0e6aaa7c1e33cb1214ef71a99e9c02e06 in / 
 # Mon, 23 Mar 2020 21:38:28 GMT
 CMD ["/bin/sh"]
-# Mon, 23 Mar 2020 22:56:35 GMT
-ENV NODE_VERSION=12.16.1
-# Mon, 23 Mar 2020 23:48:21 GMT
-RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64)           ARCH='x64'           CHECKSUM="7606d86e842b710e4321fe1c7f7a32a8e145f5e0659de406399cda5a37411d92"           ;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python     && for key in       94AE36675C464D64BAFA68DD7434390BDBE9B9C5       FD3A5288F042B6850C66B31F09FE44734EB7990E       71DCFD284A79C3B38668286BC97EC7A07EDE3FC1       DD8F2338BAE7501E3DD5AC78C273792F7D83545D       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8       B9AE9905FFD7803F25714661B63B535A4C206CA9       77984A986EBC2AA786BC0F66B01FBB92821C587A       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       4ED778F539E3634C779C87C6D7062848A1AB005C       A48C2BEE680E841632CD4E44F07496B3EB3C1762       B9E2F5981AA6E0CD28160D9FF13993A75599653C     ; do       gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||       gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||       gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && apk del .build-deps   && node --version   && npm --version
-# Mon, 23 Mar 2020 23:48:21 GMT
-ENV YARN_VERSION=1.22.0
-# Mon, 23 Mar 2020 23:48:24 GMT
+# Thu, 09 Apr 2020 19:19:08 GMT
+ENV NODE_VERSION=12.16.2
+# Thu, 09 Apr 2020 20:12:39 GMT
+RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64)           ARCH='x64'           CHECKSUM="f6b8bb0ee376cd1e7096f15b68efc3bb6adbd2cb33a12002d5982384b733dcab"           ;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python     && for key in       94AE36675C464D64BAFA68DD7434390BDBE9B9C5       FD3A5288F042B6850C66B31F09FE44734EB7990E       71DCFD284A79C3B38668286BC97EC7A07EDE3FC1       DD8F2338BAE7501E3DD5AC78C273792F7D83545D       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8       B9AE9905FFD7803F25714661B63B535A4C206CA9       77984A986EBC2AA786BC0F66B01FBB92821C587A       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       4ED778F539E3634C779C87C6D7062848A1AB005C       A48C2BEE680E841632CD4E44F07496B3EB3C1762       B9E2F5981AA6E0CD28160D9FF13993A75599653C     ; do       gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||       gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||       gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && apk del .build-deps   && node --version   && npm --version
+# Thu, 09 Apr 2020 20:12:40 GMT
+ENV YARN_VERSION=1.22.4
+# Thu, 09 Apr 2020 20:12:43 GMT
 RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version
-# Mon, 23 Mar 2020 23:48:25 GMT
+# Thu, 09 Apr 2020 20:12:43 GMT
 COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ 
-# Mon, 23 Mar 2020 23:48:25 GMT
+# Thu, 09 Apr 2020 20:12:43 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Mar 2020 23:48:25 GMT
+# Thu, 09 Apr 2020 20:12:44 GMT
 CMD ["node"]
-# Tue, 24 Mar 2020 05:53:33 GMT
+# Thu, 09 Apr 2020 21:03:38 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Tue, 24 Mar 2020 05:53:34 GMT
+# Thu, 09 Apr 2020 21:03:40 GMT
 RUN apk add --no-cache 		bash
-# Tue, 24 Mar 2020 05:53:34 GMT
+# Thu, 09 Apr 2020 21:03:40 GMT
 ENV NODE_ENV=production
-# Tue, 24 Mar 2020 05:53:35 GMT
+# Thu, 09 Apr 2020 21:03:40 GMT
 ENV GHOST_CLI_VERSION=1.13.1
-# Tue, 24 Mar 2020 05:53:53 GMT
+# Thu, 09 Apr 2020 21:04:09 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force
-# Tue, 24 Mar 2020 05:53:53 GMT
+# Thu, 09 Apr 2020 21:04:09 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Tue, 24 Mar 2020 05:53:54 GMT
+# Thu, 09 Apr 2020 21:04:10 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 08 Apr 2020 23:50:39 GMT
+# Thu, 09 Apr 2020 21:04:10 GMT
 ENV GHOST_VERSION=3.13.1
-# Wed, 08 Apr 2020 23:53:38 GMT
+# Thu, 09 Apr 2020 21:07:09 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		su-exec node ghost install "$GHOST_VERSION" --db sqlite3 --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"; 		cd "$GHOST_INSTALL"; 	su-exec node ghost config --ip 0.0.0.0 --port 2368 --no-prompt --db sqlite3 --url http://localhost:2368 --dbpath "$GHOST_CONTENT/data/ghost.db"; 	su-exec node ghost config paths.contentPath "$GHOST_CONTENT"; 		su-exec node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	sqlite3Version="$(node -p 'require("./package.json").optionalDependencies.sqlite3')"; 	if ! su-exec node yarn add "sqlite3@$sqlite3Version" --force; then 		apk add --no-cache --virtual .build-deps python make gcc g++ libc-dev; 				su-exec node yarn add "sqlite3@$sqlite3Version" --force --build-from-source; 				apk del --no-network .build-deps; 	fi; 		su-exec node yarn cache clean; 	su-exec node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8*
-# Wed, 08 Apr 2020 23:53:39 GMT
+# Thu, 09 Apr 2020 21:07:10 GMT
 WORKDIR /var/lib/ghost
-# Wed, 08 Apr 2020 23:53:39 GMT
+# Thu, 09 Apr 2020 21:07:11 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 08 Apr 2020 23:53:40 GMT
+# Thu, 09 Apr 2020 21:07:11 GMT
 COPY file:87209c4c75826f5d839c2f3270a782740f42eecf4bc96b2f6dbae79b08c17e21 in /usr/local/bin 
-# Wed, 08 Apr 2020 23:53:40 GMT
+# Thu, 09 Apr 2020 21:07:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 08 Apr 2020 23:53:40 GMT
+# Thu, 09 Apr 2020 21:07:11 GMT
 EXPOSE 2368
-# Wed, 08 Apr 2020 23:53:40 GMT
+# Thu, 09 Apr 2020 21:07:11 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -496,50 +496,50 @@ CMD ["node" "current/index.js"]
 		Last Modified: Mon, 23 Mar 2020 21:38:48 GMT  
 		Size: 2.8 MB (2806122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9dcb303c7a458ddb7fb13f8c8f33c8de75c45104187bc5eae5b4c87a3245ab8d`  
-		Last Modified: Tue, 24 Mar 2020 00:35:36 GMT  
-		Size: 24.8 MB (24805465 bytes)  
+	-	`sha256:9c2ff1546e7e7e7f4746b72c49165a6be0bf84230b053f4b2205e748b3ca09d3`  
+		Last Modified: Thu, 09 Apr 2020 20:14:09 GMT  
+		Size: 24.9 MB (24883020 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a07310f5a3d021d435b78a77e2a78c5db6a03772ff6ea613b6872407a9c41bf9`  
-		Last Modified: Tue, 24 Mar 2020 00:35:30 GMT  
-		Size: 2.3 MB (2294219 bytes)  
+	-	`sha256:da3b3d5639eff6493a7acfe8bdc9f01943becadd4fa3ed31914a14de47e65b4b`  
+		Last Modified: Thu, 09 Apr 2020 20:14:02 GMT  
+		Size: 2.3 MB (2294458 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ea20132dcfb099691cd776af92a4a7502619eca84026a94c9e685786d54cd27`  
-		Last Modified: Tue, 24 Mar 2020 00:35:29 GMT  
-		Size: 280.0 B  
+	-	`sha256:16eb2339d924d2d283f898060fa590aba27c295a5bdbf0ca9b89154a2728e443`  
+		Last Modified: Thu, 09 Apr 2020 20:14:01 GMT  
+		Size: 282.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:086a41a4c0a4a70c088c01be3b957a594c37fa56cabf1ba1a38ec72898644bcf`  
-		Last Modified: Tue, 24 Mar 2020 06:06:52 GMT  
-		Size: 10.0 KB (9985 bytes)  
+	-	`sha256:e9094dfe3935aa90ea960db4e8bb378afc273b0fa5b3ac76600445594fdbfd27`  
+		Last Modified: Thu, 09 Apr 2020 21:07:40 GMT  
+		Size: 10.0 KB (9982 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e4120e464a58540938d5fb23662b7327769e5b927c302456fbcaa0383773faa`  
-		Last Modified: Tue, 24 Mar 2020 06:06:52 GMT  
-		Size: 831.1 KB (831111 bytes)  
+	-	`sha256:ae60e9fea726391836927fc743d9da64e2a182fbab30e240a6da770b2bc66749`  
+		Last Modified: Thu, 09 Apr 2020 21:07:40 GMT  
+		Size: 831.1 KB (831092 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e2c1a240523e49778caae076a5c9fd6a7280a7cea22c1d032958a5b97be7a3ea`  
-		Last Modified: Tue, 24 Mar 2020 06:06:56 GMT  
-		Size: 6.8 MB (6791160 bytes)  
+	-	`sha256:57159f86b0cff5743f3b0d04170d6fbbd03f776cf98ebaebdfa637e612d99cc7`  
+		Last Modified: Thu, 09 Apr 2020 21:07:44 GMT  
+		Size: 6.8 MB (6765752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db3fcf643a7c0d535fd3034ef8e87be571b5c3846f9095929f41f536cfc38025`  
-		Last Modified: Thu, 09 Apr 2020 00:04:02 GMT  
-		Size: 72.4 MB (72413536 bytes)  
+	-	`sha256:2e793d271d47529de06742f3cff79de8c1c7e6addeade50547bdb7dcf3695a65`  
+		Last Modified: Thu, 09 Apr 2020 21:08:00 GMT  
+		Size: 72.4 MB (72414049 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd9e902b825aad3f650cf8f5e06ba86f36c8e7f763c1fe1c50073b4541981a71`  
-		Last Modified: Thu, 09 Apr 2020 00:03:41 GMT  
-		Size: 550.0 B  
+	-	`sha256:fed3ede41959002544e57a831bf1f756dbe0b0220d158d3349c6cb8b9e73fc4c`  
+		Last Modified: Thu, 09 Apr 2020 21:07:40 GMT  
+		Size: 541.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ghost:3-alpine` - linux; ppc64le
 
 ```console
-$ docker pull ghost@sha256:e2dd5f7984f70c615762f36c2d2fd5d1d8796dbf1b4c66a3be6453969f01f552
+$ docker pull ghost@sha256:94942070c926cf4897cb435f80496a610425ed90587a8a7d2899c0341791bd04
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **113.6 MB (113611084 bytes)**  
+-	Total Size: **113.7 MB (113675616 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d6096e5bd71eb0665d6119c2007db0963ca0a3da537de35b15028cf006058d8`
+-	Image ID: `sha256:16b680ac2a98d1b76ccdc179a5a58d110a4bf5972149f8a3e7badff518fd88bd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
@@ -548,49 +548,49 @@ $ docker pull ghost@sha256:e2dd5f7984f70c615762f36c2d2fd5d1d8796dbf1b4c66a3be645
 ADD file:4b35131542b9682214e1c2c72fe3cea215a10e2f775e87befecd80fe2228d5a0 in / 
 # Mon, 23 Mar 2020 21:21:32 GMT
 CMD ["/bin/sh"]
-# Mon, 23 Mar 2020 22:56:36 GMT
-ENV NODE_VERSION=12.16.1
-# Mon, 23 Mar 2020 23:13:24 GMT
-RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64)           ARCH='x64'           CHECKSUM="7606d86e842b710e4321fe1c7f7a32a8e145f5e0659de406399cda5a37411d92"           ;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python     && for key in       94AE36675C464D64BAFA68DD7434390BDBE9B9C5       FD3A5288F042B6850C66B31F09FE44734EB7990E       71DCFD284A79C3B38668286BC97EC7A07EDE3FC1       DD8F2338BAE7501E3DD5AC78C273792F7D83545D       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8       B9AE9905FFD7803F25714661B63B535A4C206CA9       77984A986EBC2AA786BC0F66B01FBB92821C587A       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       4ED778F539E3634C779C87C6D7062848A1AB005C       A48C2BEE680E841632CD4E44F07496B3EB3C1762       B9E2F5981AA6E0CD28160D9FF13993A75599653C     ; do       gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||       gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||       gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && apk del .build-deps   && node --version   && npm --version
-# Mon, 23 Mar 2020 23:13:32 GMT
-ENV YARN_VERSION=1.22.0
-# Mon, 23 Mar 2020 23:13:42 GMT
+# Thu, 09 Apr 2020 19:57:49 GMT
+ENV NODE_VERSION=12.16.2
+# Thu, 09 Apr 2020 20:15:04 GMT
+RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64)           ARCH='x64'           CHECKSUM="f6b8bb0ee376cd1e7096f15b68efc3bb6adbd2cb33a12002d5982384b733dcab"           ;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python     && for key in       94AE36675C464D64BAFA68DD7434390BDBE9B9C5       FD3A5288F042B6850C66B31F09FE44734EB7990E       71DCFD284A79C3B38668286BC97EC7A07EDE3FC1       DD8F2338BAE7501E3DD5AC78C273792F7D83545D       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8       B9AE9905FFD7803F25714661B63B535A4C206CA9       77984A986EBC2AA786BC0F66B01FBB92821C587A       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       4ED778F539E3634C779C87C6D7062848A1AB005C       A48C2BEE680E841632CD4E44F07496B3EB3C1762       B9E2F5981AA6E0CD28160D9FF13993A75599653C     ; do       gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||       gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||       gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && apk del .build-deps   && node --version   && npm --version
+# Thu, 09 Apr 2020 20:15:09 GMT
+ENV YARN_VERSION=1.22.4
+# Thu, 09 Apr 2020 20:15:26 GMT
 RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version
-# Mon, 23 Mar 2020 23:13:44 GMT
+# Thu, 09 Apr 2020 20:15:31 GMT
 COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ 
-# Mon, 23 Mar 2020 23:13:48 GMT
+# Thu, 09 Apr 2020 20:15:36 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Mar 2020 23:13:54 GMT
+# Thu, 09 Apr 2020 20:15:40 GMT
 CMD ["node"]
-# Tue, 24 Mar 2020 03:05:10 GMT
+# Thu, 09 Apr 2020 21:07:07 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Tue, 24 Mar 2020 03:05:18 GMT
+# Thu, 09 Apr 2020 21:07:15 GMT
 RUN apk add --no-cache 		bash
-# Tue, 24 Mar 2020 03:05:21 GMT
+# Thu, 09 Apr 2020 21:07:18 GMT
 ENV NODE_ENV=production
-# Tue, 24 Mar 2020 03:05:24 GMT
+# Thu, 09 Apr 2020 21:07:20 GMT
 ENV GHOST_CLI_VERSION=1.13.1
-# Tue, 24 Mar 2020 03:06:09 GMT
+# Thu, 09 Apr 2020 21:07:53 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force
-# Tue, 24 Mar 2020 03:06:14 GMT
+# Thu, 09 Apr 2020 21:07:57 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Tue, 24 Mar 2020 03:06:16 GMT
+# Thu, 09 Apr 2020 21:07:58 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Thu, 09 Apr 2020 00:26:37 GMT
+# Thu, 09 Apr 2020 21:08:02 GMT
 ENV GHOST_VERSION=3.13.1
-# Thu, 09 Apr 2020 00:31:38 GMT
+# Thu, 09 Apr 2020 21:11:50 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		su-exec node ghost install "$GHOST_VERSION" --db sqlite3 --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"; 		cd "$GHOST_INSTALL"; 	su-exec node ghost config --ip 0.0.0.0 --port 2368 --no-prompt --db sqlite3 --url http://localhost:2368 --dbpath "$GHOST_CONTENT/data/ghost.db"; 	su-exec node ghost config paths.contentPath "$GHOST_CONTENT"; 		su-exec node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	sqlite3Version="$(node -p 'require("./package.json").optionalDependencies.sqlite3')"; 	if ! su-exec node yarn add "sqlite3@$sqlite3Version" --force; then 		apk add --no-cache --virtual .build-deps python make gcc g++ libc-dev; 				su-exec node yarn add "sqlite3@$sqlite3Version" --force --build-from-source; 				apk del --no-network .build-deps; 	fi; 		su-exec node yarn cache clean; 	su-exec node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8*
-# Thu, 09 Apr 2020 00:31:48 GMT
+# Thu, 09 Apr 2020 21:11:58 GMT
 WORKDIR /var/lib/ghost
-# Thu, 09 Apr 2020 00:31:52 GMT
+# Thu, 09 Apr 2020 21:12:01 GMT
 VOLUME [/var/lib/ghost/content]
-# Thu, 09 Apr 2020 00:31:54 GMT
+# Thu, 09 Apr 2020 21:12:01 GMT
 COPY file:87209c4c75826f5d839c2f3270a782740f42eecf4bc96b2f6dbae79b08c17e21 in /usr/local/bin 
-# Thu, 09 Apr 2020 00:31:57 GMT
+# Thu, 09 Apr 2020 21:12:04 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 09 Apr 2020 00:32:00 GMT
+# Thu, 09 Apr 2020 21:12:07 GMT
 EXPOSE 2368
-# Thu, 09 Apr 2020 00:32:04 GMT
+# Thu, 09 Apr 2020 21:12:09 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -599,50 +599,50 @@ CMD ["node" "current/index.js"]
 		Last Modified: Mon, 23 Mar 2020 21:22:12 GMT  
 		Size: 2.8 MB (2820052 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66001588e98b68c12a2b67a7ed4dea9b64b26bd6c45a61b4c55697ec95eda60e`  
-		Last Modified: Mon, 23 Mar 2020 23:29:10 GMT  
-		Size: 26.8 MB (26798233 bytes)  
+	-	`sha256:4fa9c6d564f5d2c04c600505fb882547f271ed450500286be98c5951337f6e15`  
+		Last Modified: Thu, 09 Apr 2020 20:23:42 GMT  
+		Size: 26.9 MB (26889318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:478ad4c3eca91fd3e18b0e69d4905136d020f72d2570684339ec498e4339f6cf`  
-		Last Modified: Mon, 23 Mar 2020 23:29:04 GMT  
-		Size: 2.3 MB (2301835 bytes)  
+	-	`sha256:7757d911883c1ddebf7746ce2d5b0b1ee25ef653cd64c521cd1459f6d4a96131`  
+		Last Modified: Thu, 09 Apr 2020 20:23:36 GMT  
+		Size: 2.3 MB (2302086 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d7de88bef8d697c5008b0f57c58cbbb330419f3b8c67f8e194e75fa239b02a79`  
-		Last Modified: Mon, 23 Mar 2020 23:29:03 GMT  
-		Size: 282.0 B  
+	-	`sha256:16d10f8cd5662c3924478f0528b5db5d0a047266cbd52c1a18aab003a3d6a619`  
+		Last Modified: Thu, 09 Apr 2020 20:23:35 GMT  
+		Size: 284.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:685de773e4568e304b393e111839a76827a857f9a03d99e29f4c7247c1ccac7e`  
-		Last Modified: Tue, 24 Mar 2020 03:23:51 GMT  
-		Size: 10.4 KB (10394 bytes)  
+	-	`sha256:9028a7c8698acf9a60e276b8e79abd673ba4d523eb77d5d7bf9a9422d8d15046`  
+		Last Modified: Thu, 09 Apr 2020 21:14:14 GMT  
+		Size: 10.4 KB (10396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:307d5bb5cf2f6b29c8cfa4af2d36b1f2060dd3b8c53b45c578ce8fe57d7a87d8`  
-		Last Modified: Tue, 24 Mar 2020 03:23:51 GMT  
-		Size: 862.6 KB (862600 bytes)  
+	-	`sha256:6a7501c33fb17d3a78054c82759874321f4fac748c24f1eeb39ad47a24c2df32`  
+		Last Modified: Thu, 09 Apr 2020 21:14:15 GMT  
+		Size: 862.6 KB (862593 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d68b7673719473cb58ffbd0d962c295a5e09496810ae8ad990bad3265694b87b`  
-		Last Modified: Tue, 24 Mar 2020 03:24:07 GMT  
-		Size: 6.8 MB (6791295 bytes)  
+	-	`sha256:3667bbbbc2b9a0371be4c7a805ba5117b0fa0c38e1416909080def33aa30ef43`  
+		Last Modified: Thu, 09 Apr 2020 21:14:25 GMT  
+		Size: 6.8 MB (6766352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:360589108a6346e4ce9c0ff3e7c95faf668e568274479725e718de78be02c348`  
-		Last Modified: Thu, 09 Apr 2020 00:59:23 GMT  
-		Size: 74.0 MB (74025846 bytes)  
+	-	`sha256:46fc7eeb86eedcdda90062b271fc92e152fc4526916ce4eba87bf2d2b2f48baf`  
+		Last Modified: Thu, 09 Apr 2020 21:14:32 GMT  
+		Size: 74.0 MB (74023990 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7b0ac372833be5acd0d44738c670de01c15e91e17ac645a782c50dc335fb274`  
-		Last Modified: Thu, 09 Apr 2020 00:56:50 GMT  
-		Size: 547.0 B  
+	-	`sha256:46e8b97851c3419025010c9c1e49f6d2e3ed3c89dd6cb80aac1184b2986d4cf8`  
+		Last Modified: Thu, 09 Apr 2020 21:14:14 GMT  
+		Size: 545.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ghost:3-alpine` - linux; s390x
 
 ```console
-$ docker pull ghost@sha256:19112fa7fa0ec64e51da21bbde009511d091af5b499deb3f32a2c1b6e1e1f52d
+$ docker pull ghost@sha256:0511411c5c32c5761da6bb1d38c0678d3126042046c32ac80cdbafcf4a960f01
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **109.1 MB (109118837 bytes)**  
+-	Total Size: **109.2 MB (109178382 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df1faa0290be8c34b4f4e05ffabfa550780cc8ac0e4bf47da523cd39348b88f4`
+-	Image ID: `sha256:529168b8d0f74759156fa95a33ead650378a352f4a854e0f7d1f3f953ddafac9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
@@ -651,49 +651,49 @@ $ docker pull ghost@sha256:19112fa7fa0ec64e51da21bbde009511d091af5b499deb3f32a2c
 ADD file:b6d4ad8fd0ec7f66e6d54b8cd8937ba7821b44096806af78692b4cab6d087a9c in / 
 # Mon, 23 Mar 2020 21:41:34 GMT
 CMD ["/bin/sh"]
-# Mon, 23 Mar 2020 23:49:02 GMT
-ENV NODE_VERSION=12.16.1
-# Tue, 24 Mar 2020 00:06:29 GMT
-RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64)           ARCH='x64'           CHECKSUM="7606d86e842b710e4321fe1c7f7a32a8e145f5e0659de406399cda5a37411d92"           ;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python     && for key in       94AE36675C464D64BAFA68DD7434390BDBE9B9C5       FD3A5288F042B6850C66B31F09FE44734EB7990E       71DCFD284A79C3B38668286BC97EC7A07EDE3FC1       DD8F2338BAE7501E3DD5AC78C273792F7D83545D       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8       B9AE9905FFD7803F25714661B63B535A4C206CA9       77984A986EBC2AA786BC0F66B01FBB92821C587A       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       4ED778F539E3634C779C87C6D7062848A1AB005C       A48C2BEE680E841632CD4E44F07496B3EB3C1762       B9E2F5981AA6E0CD28160D9FF13993A75599653C     ; do       gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||       gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||       gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && apk del .build-deps   && node --version   && npm --version
-# Tue, 24 Mar 2020 00:06:31 GMT
-ENV YARN_VERSION=1.22.0
-# Tue, 24 Mar 2020 00:06:33 GMT
+# Thu, 09 Apr 2020 18:33:43 GMT
+ENV NODE_VERSION=12.16.2
+# Thu, 09 Apr 2020 18:49:46 GMT
+RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64)           ARCH='x64'           CHECKSUM="f6b8bb0ee376cd1e7096f15b68efc3bb6adbd2cb33a12002d5982384b733dcab"           ;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python     && for key in       94AE36675C464D64BAFA68DD7434390BDBE9B9C5       FD3A5288F042B6850C66B31F09FE44734EB7990E       71DCFD284A79C3B38668286BC97EC7A07EDE3FC1       DD8F2338BAE7501E3DD5AC78C273792F7D83545D       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8       B9AE9905FFD7803F25714661B63B535A4C206CA9       77984A986EBC2AA786BC0F66B01FBB92821C587A       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       4ED778F539E3634C779C87C6D7062848A1AB005C       A48C2BEE680E841632CD4E44F07496B3EB3C1762       B9E2F5981AA6E0CD28160D9FF13993A75599653C     ; do       gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||       gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||       gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && apk del .build-deps   && node --version   && npm --version
+# Thu, 09 Apr 2020 18:49:48 GMT
+ENV YARN_VERSION=1.22.4
+# Thu, 09 Apr 2020 18:49:50 GMT
 RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version
-# Tue, 24 Mar 2020 00:06:34 GMT
+# Thu, 09 Apr 2020 18:49:50 GMT
 COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ 
-# Tue, 24 Mar 2020 00:06:34 GMT
+# Thu, 09 Apr 2020 18:49:50 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 24 Mar 2020 00:06:34 GMT
+# Thu, 09 Apr 2020 18:49:51 GMT
 CMD ["node"]
-# Tue, 24 Mar 2020 02:00:50 GMT
+# Thu, 09 Apr 2020 20:01:20 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Tue, 24 Mar 2020 02:00:51 GMT
+# Thu, 09 Apr 2020 20:01:21 GMT
 RUN apk add --no-cache 		bash
-# Tue, 24 Mar 2020 02:00:51 GMT
+# Thu, 09 Apr 2020 20:01:21 GMT
 ENV NODE_ENV=production
-# Tue, 24 Mar 2020 02:00:51 GMT
+# Thu, 09 Apr 2020 20:01:22 GMT
 ENV GHOST_CLI_VERSION=1.13.1
-# Tue, 24 Mar 2020 02:01:05 GMT
+# Thu, 09 Apr 2020 20:01:36 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force
-# Tue, 24 Mar 2020 02:01:06 GMT
+# Thu, 09 Apr 2020 20:01:38 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Tue, 24 Mar 2020 02:01:06 GMT
+# Thu, 09 Apr 2020 20:01:38 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 08 Apr 2020 23:14:13 GMT
+# Thu, 09 Apr 2020 20:01:38 GMT
 ENV GHOST_VERSION=3.13.1
-# Wed, 08 Apr 2020 23:16:02 GMT
+# Thu, 09 Apr 2020 20:03:29 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		su-exec node ghost install "$GHOST_VERSION" --db sqlite3 --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"; 		cd "$GHOST_INSTALL"; 	su-exec node ghost config --ip 0.0.0.0 --port 2368 --no-prompt --db sqlite3 --url http://localhost:2368 --dbpath "$GHOST_CONTENT/data/ghost.db"; 	su-exec node ghost config paths.contentPath "$GHOST_CONTENT"; 		su-exec node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	sqlite3Version="$(node -p 'require("./package.json").optionalDependencies.sqlite3')"; 	if ! su-exec node yarn add "sqlite3@$sqlite3Version" --force; then 		apk add --no-cache --virtual .build-deps python make gcc g++ libc-dev; 				su-exec node yarn add "sqlite3@$sqlite3Version" --force --build-from-source; 				apk del --no-network .build-deps; 	fi; 		su-exec node yarn cache clean; 	su-exec node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8*
-# Wed, 08 Apr 2020 23:16:07 GMT
+# Thu, 09 Apr 2020 20:03:34 GMT
 WORKDIR /var/lib/ghost
-# Wed, 08 Apr 2020 23:16:07 GMT
+# Thu, 09 Apr 2020 20:03:34 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 08 Apr 2020 23:16:07 GMT
+# Thu, 09 Apr 2020 20:03:34 GMT
 COPY file:87209c4c75826f5d839c2f3270a782740f42eecf4bc96b2f6dbae79b08c17e21 in /usr/local/bin 
-# Wed, 08 Apr 2020 23:16:08 GMT
+# Thu, 09 Apr 2020 20:03:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 08 Apr 2020 23:16:08 GMT
+# Thu, 09 Apr 2020 20:03:35 GMT
 EXPOSE 2368
-# Wed, 08 Apr 2020 23:16:08 GMT
+# Thu, 09 Apr 2020 20:03:35 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -702,35 +702,35 @@ CMD ["node" "current/index.js"]
 		Last Modified: Mon, 23 Mar 2020 21:41:56 GMT  
 		Size: 2.6 MB (2582073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3f08b531d31e8ba334976893a531e9a6c0b35e2b3ae4daa26fe10f0cc5281a0`  
-		Last Modified: Tue, 24 Mar 2020 00:19:15 GMT  
-		Size: 24.6 MB (24569650 bytes)  
+	-	`sha256:0221c867201a9f8c22c9f77de1bebab187b3dd0313f20d05fcd74d9b81b4162f`  
+		Last Modified: Thu, 09 Apr 2020 18:53:14 GMT  
+		Size: 24.7 MB (24653174 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:556fe4a382c614f903360decdf2f447d071b3fbe3e5f19c728ef64704d05f92c`  
-		Last Modified: Tue, 24 Mar 2020 00:19:11 GMT  
-		Size: 2.3 MB (2304127 bytes)  
+	-	`sha256:89b94f5db0261f9f9b1098fdbc2693a2dcb43a5d560d09542c8e3e617b0d0ce8`  
+		Last Modified: Thu, 09 Apr 2020 18:53:16 GMT  
+		Size: 2.3 MB (2304541 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:165836b35ce11f2f6462597ed45ecaf44f3692af44aaca5e965b1e390cd9cbd3`  
-		Last Modified: Tue, 24 Mar 2020 00:19:16 GMT  
-		Size: 278.0 B  
+	-	`sha256:165dd442be7ea6c2192015606cc338b2747021ee592c3f7bff41e28524e41b82`  
+		Last Modified: Thu, 09 Apr 2020 18:53:10 GMT  
+		Size: 279.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a6468ae00e258d0ea57eb2e5215db0423f3ead42c174477fb520d55aa225cb4`  
-		Last Modified: Tue, 24 Mar 2020 02:09:27 GMT  
-		Size: 10.0 KB (9978 bytes)  
+	-	`sha256:edefbc00db19d7e7eb618c032cf13e588c870f1babd6959e53e287cf4917444c`  
+		Last Modified: Thu, 09 Apr 2020 20:04:35 GMT  
+		Size: 10.0 KB (9984 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e31bb04c3f04c627d05863508e1cf9b7773e508674dd1ad242835966f269890`  
-		Last Modified: Tue, 24 Mar 2020 02:09:33 GMT  
-		Size: 813.9 KB (813869 bytes)  
+	-	`sha256:bf0314bc320395cabd102d094185daa8cc63f43fd5d0c670195e0c5685310090`  
+		Last Modified: Thu, 09 Apr 2020 20:04:35 GMT  
+		Size: 813.9 KB (813865 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a00d21f979d24bd990a0d15ce105125eb54f633ca014d413646e673293b5d168`  
-		Last Modified: Tue, 24 Mar 2020 02:09:29 GMT  
-		Size: 6.8 MB (6790953 bytes)  
+	-	`sha256:1c9f350be965e84b27d68cc754792454c0740eb64ae7f0af514a3f431d624c45`  
+		Last Modified: Thu, 09 Apr 2020 20:04:37 GMT  
+		Size: 6.8 MB (6765569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb93e4adcc6bb691a30d978c7a1b6675c5e3e4e3d9fd3332fcb300419131294f`  
-		Last Modified: Wed, 08 Apr 2020 23:25:58 GMT  
-		Size: 72.0 MB (72047361 bytes)  
+	-	`sha256:824d8e1c8b98ef5e3085711dd5d70cb338f55cca8614e4f56ced34e6c9ff3385`  
+		Last Modified: Thu, 09 Apr 2020 20:04:51 GMT  
+		Size: 72.0 MB (72048355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a712e877c07e9231305e63f098a5b55f4d787a9958db0cb811a3161d37a6cc6`  
-		Last Modified: Wed, 08 Apr 2020 23:26:01 GMT  
-		Size: 548.0 B  
+	-	`sha256:260f8cea7fcfab315dd4450469c11ee3fc360b26cd2459133dde52f7ba8f04af`  
+		Last Modified: Thu, 09 Apr 2020 20:04:40 GMT  
+		Size: 542.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
