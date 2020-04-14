@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9048b2f730c9463fc0e0c4874d16ab294b2798db764a8b765166fe2a41306a4b`
-- Created: `2020-04-06T21:27:10.935312527Z`
-- Virtual Size: ~ 390.44 Mb  
+- Image ID: `sha256:b179d3bda6fb201c0c2e1d1b60127126e1f1b18bb938a57180c8dc3ef736428f`
+- Created: `2020-04-14T00:37:36.890581983Z`
+- Virtual Size: ~ 390.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/ibm/wlp/bin/server","run","defaultServer"]`
@@ -13,16 +13,16 @@
   - `JAVA_VERSION=1.8.0_sr6fp7`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
-  - `LIBERTY_VERSION=2020.3.0_0`
+  - `LIBERTY_VERSION=2020.4.0_0`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ibm/wlp/output`
 - Labels:
   - `org.opencontainers.image.authors=Arthur De Magalhaes, Chris Potter`
   - `org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html`
-  - `org.opencontainers.image.revision=cl200320200305-1433`
+  - `org.opencontainers.image.revision=cl200420200401-1714`
   - `org.opencontainers.image.url=http://wasdev.net`
   - `org.opencontainers.image.vendor=IBM`
-  - `org.opencontainers.image.version=2020.3.0.0`
+  - `org.opencontainers.image.version=2020.4.0.0`
 
 ## `dpkg` (`.deb`-based packages)
 

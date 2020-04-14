@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3323753e284a4d5e957e457dca75a775e049b12722851eb146f0b0d9d08984a3`
-- Created: `2020-04-06T21:27:41.566649565Z`
-- Virtual Size: ~ 310.62 Mb  
+- Image ID: `sha256:704d623f9e4061238957b4774c0a8da6adaf76a0a36287b8aa0a32ecfa408113`
+- Created: `2020-04-14T00:38:14.527232673Z`
+- Virtual Size: ~ 311.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
@@ -14,22 +14,22 @@
   - `JAVA_VERSION=1.8.0_sr6fp7`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/ -XX:+UseContainerSupport`
-  - `LIBERTY_VERSION=20.0.0_03`
+  - `LIBERTY_VERSION=20.0.0_04`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ibm/wlp/output`
   - `OPENJ9_SCC=true`
   - `RANDFILE=/tmp/.rnd`
 - Labels:
-  - `BuildLabel=cl200320200305-1433`
+  - `BuildLabel=cl200420200401-1714`
   - `ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd`
   - `ProductName=WebSphere Application Server Liberty`
-  - `ProductVersion=20.0.0.3`
+  - `ProductVersion=20.0.0.4`
   - `org.opencontainers.image.authors=Arthur De Magalhaes, Chris Potter`
   - `org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html`
-  - `org.opencontainers.image.revision=cl200320200305-1433`
+  - `org.opencontainers.image.revision=cl200420200401-1714`
   - `org.opencontainers.image.url=http://wasdev.net`
   - `org.opencontainers.image.vendor=IBM`
-  - `org.opencontainers.image.version=20.0.0.3`
+  - `org.opencontainers.image.version=20.0.0.4`
 
 ## `dpkg` (`.deb`-based packages)
 
