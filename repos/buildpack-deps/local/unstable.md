@@ -245,20 +245,13 @@ Licenses: (parsed from: `/usr/share/doc/automake/copyright`)
 - `GPL-3+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris automake-1.16=1:1.16.1-4
-'http://deb.debian.org/debian/pool/main/a/automake-1.16/automake-1.16_1.16.1-4.dsc' automake-1.16_1.16.1-4.dsc 2274 SHA256:a130f56cbf41534f70f5484e30e8da473fd7d4e3ff1f25f29791bf3bc306214f
-'http://deb.debian.org/debian/pool/main/a/automake-1.16/automake-1.16_1.16.1.orig.tar.xz' automake-1.16_1.16.1.orig.tar.xz 1534936 SHA256:5d05bb38a23fd3312b10aea93840feec685bdf4a41146e78882848165d3ae921
-'http://deb.debian.org/debian/pool/main/a/automake-1.16/automake-1.16_1.16.1-4.debian.tar.xz' automake-1.16_1.16.1-4.debian.tar.xz 14692 SHA256:18641eabde4266f6c0a493b8b3e6796b74a962a5be946463856a2d428df96552
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/automake-1.16/1:1.16.1-4/
 
-- https://sources.debian.net/src/automake-1.16/1:1.16.1-4/ (for browsing the source)
-- https://sources.debian.net/src/automake-1.16/1:1.16.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/automake-1.16/1:1.16.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `autotools-dev=20180224.1`
 
@@ -1528,20 +1521,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `LGPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.64.0-2
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.64.0-2.dsc' gobject-introspection_1.64.0-2.dsc 2614 SHA256:05bff32a5dba30cd6a738cf2657f2863a58f2ae92673f6bf824386ff98eb83ab
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.64.0.orig.tar.xz' gobject-introspection_1.64.0.orig.tar.xz 1000240 SHA256:eac05a63091c81adfdc8ef34820bcc7e7778c5b9e34734d344fc9e69ddf4fc82
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.64.0-2.debian.tar.xz' gobject-introspection_1.64.0-2.debian.tar.xz 23672 SHA256:10260a7759cf9244327d4c3dff1e2a241e71a58f9dd8d042eb23ef0ddcc84b7b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gobject-introspection/1.64.0-2/
 
-- https://sources.debian.net/src/gobject-introspection/1.64.0-2/ (for browsing the source)
-- https://sources.debian.net/src/gobject-introspection/1.64.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gobject-introspection/1.64.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.13-11`
 
@@ -2760,20 +2746,13 @@ Licenses: (parsed from: `/usr/share/doc/libmnl0/copyright`)
 - `GPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libmnl=1.0.4-2
-'http://deb.debian.org/debian/pool/main/libm/libmnl/libmnl_1.0.4-2.dsc' libmnl_1.0.4-2.dsc 1994 SHA256:131106bb7eb4a94fa8e8c135f92c38068d0b42681f166eb159137f171c568630
-'http://deb.debian.org/debian/pool/main/libm/libmnl/libmnl_1.0.4.orig.tar.bz2' libmnl_1.0.4.orig.tar.bz2 301270 SHA256:171f89699f286a5854b72b91d06e8f8e3683064c5901fb09d954a9ab6f551f81
-'http://deb.debian.org/debian/pool/main/libm/libmnl/libmnl_1.0.4-2.debian.tar.xz' libmnl_1.0.4-2.debian.tar.xz 7512 SHA256:208d62777081ffe6d7dffde0d7370cefb03fe0a6a0486a1b50f6b7b8e9a5b068
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libmnl/1.0.4-2/
 
-- https://sources.debian.net/src/libmnl/1.0.4-2/ (for browsing the source)
-- https://sources.debian.net/src/libmnl/1.0.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libmnl/1.0.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpng1.6=1.6.37-2`
 
@@ -3428,20 +3407,13 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.10+dfsg-4
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.10+dfsg-4.dsc' libxml2_2.9.10+dfsg-4.dsc 2908 SHA256:9c8b0a57b17f93df6b744b56e58338ad9cc4a601d7dcbd2d1589d133e24c349b
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.10+dfsg.orig.tar.xz' libxml2_2.9.10+dfsg.orig.tar.xz 2503560 SHA256:65ee7a2f5e100c64ddf7beb92297c9b2a30b994a76cd1fab67470cf22db6b7d0
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.10+dfsg-4.debian.tar.xz' libxml2_2.9.10+dfsg-4.debian.tar.xz 27048 SHA256:3795084e5cdba26431de89cf6cede4278dd6bd71666bb477e9b95a50bfda5287
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.9.10+dfsg-4/
 
-- https://sources.debian.net/src/libxml2/2.9.10+dfsg-4/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.10+dfsg-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.10+dfsg-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrender=1:0.9.10-1`
 
@@ -5006,21 +4978,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.31.1-4
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.31.1-4.dsc' sqlite3_3.31.1-4.dsc 2404 SHA256:41ffa0d6feb3aa9c0bb814c789dc18bcaeeb17a9fdaea0f0d3600e3d00ba70b4
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.31.1.orig-www.tar.xz' sqlite3_3.31.1.orig-www.tar.xz 5764424 SHA256:cab01c285fad4eb08bd1e3659cde5a44e17e024badbe9ed01b2de9c625ed0831
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.31.1.orig.tar.xz' sqlite3_3.31.1.orig.tar.xz 7108036 SHA256:dfa6eda312d391d33b7790b061f533d723dc5c30b60720ddd98c89a6fb29272f
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.31.1-4.debian.tar.xz' sqlite3_3.31.1-4.debian.tar.xz 25496 SHA256:ebb69bd20097c81a691e8b3b02ce30eee0c6ecde1a4dd64f866ee8355c9b885c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.31.1-4/
 
-- https://sources.debian.net/src/sqlite3/3.31.1-4/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.31.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.31.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `subversion=1.13.0-3`
 

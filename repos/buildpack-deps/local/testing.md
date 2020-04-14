@@ -4744,19 +4744,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.8.2-2
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.8.2-2.dsc' python3-defaults_3.8.2-2.dsc 2772 SHA256:2941ef61e9071c0644b5ac4dd38b434c5d22c91d50156114bab43c803276f6f8
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.8.2-2.tar.gz' python3-defaults_3.8.2-2.tar.gz 138553 SHA256:72a4c841c051521d4ac9a4669987ef729eddc4f14e907b56b220e06d14084111
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-defaults/3.8.2-2/
 
-- https://sources.debian.net/src/python3-defaults/3.8.2-2/ (for browsing the source)
-- https://sources.debian.net/src/python3-defaults/3.8.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-defaults/3.8.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-stdlib-extensions=3.8.2-2`
 

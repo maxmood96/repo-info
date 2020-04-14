@@ -343,14 +343,9 @@ Licenses: (parsed from: `/usr/share/doc/python3-configobj/copyright`)
 
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris configobj=5.0.6-3build1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6-3build1.dsc' configobj_5.0.6-3build1.dsc 2489 SHA256:204e4ac8dc98bbe78dcc5e09901d9c0d9fda6dad4a7d983277d6f03d78f967cb
-'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6.orig.tar.gz' configobj_5.0.6.orig.tar.gz 143664 SHA256:2e140354efcca6f558ff9ee941b435ae09a617bc071797bef62c8d6ed2033d5e
-'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6-3build1.debian.tar.xz' configobj_5.0.6-3build1.debian.tar.xz 6936 SHA256:614be0c017a64adeab311ec68cf8b8b190f219c7c306b4998462bd9542578c25
-```
 
 ### `dpkg` source package: `coreutils=8.30-3ubuntu2`
 
@@ -2280,13 +2275,9 @@ Licenses: (parsed from: `/usr/share/doc/ubuntu-keyring/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ubuntu-keyring=2020.02.11.1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2020.02.11.1.dsc' ubuntu-keyring_2020.02.11.1.dsc 1863 SHA256:599bb994e31047c5a99c2328146c18a919d46a45e3b9caa9bd5251845b75031c
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2020.02.11.1.tar.gz' ubuntu-keyring_2020.02.11.1.tar.gz 37735 SHA256:57385b37f6b02365940edbe96a75125ff973c68e7254cc3de7840d736fee70b6
-```
 
 ### `dpkg` source package: `ucf=3.0038+nmu1`
 
