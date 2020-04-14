@@ -84,6 +84,50 @@
 -	[`openjdk:11-windowsservercore-1809`](#openjdk11-windowsservercore-1809)
 -	[`openjdk:11-windowsservercore-ltsc2016`](#openjdk11-windowsservercore-ltsc2016)
 -	[`openjdk:14`](#openjdk14)
+-	[`openjdk:14.0`](#openjdk140)
+-	[`openjdk:14.0.1`](#openjdk1401)
+-	[`openjdk:14.0.1-buster`](#openjdk1401-buster)
+-	[`openjdk:14.0.1-jdk`](#openjdk1401-jdk)
+-	[`openjdk:14.0.1-jdk-buster`](#openjdk1401-jdk-buster)
+-	[`openjdk:14.0.1-jdk-nanoserver`](#openjdk1401-jdk-nanoserver)
+-	[`openjdk:14.0.1-jdk-nanoserver-1809`](#openjdk1401-jdk-nanoserver-1809)
+-	[`openjdk:14.0.1-jdk-oracle`](#openjdk1401-jdk-oracle)
+-	[`openjdk:14.0.1-jdk-oraclelinux7`](#openjdk1401-jdk-oraclelinux7)
+-	[`openjdk:14.0.1-jdk-slim`](#openjdk1401-jdk-slim)
+-	[`openjdk:14.0.1-jdk-slim-buster`](#openjdk1401-jdk-slim-buster)
+-	[`openjdk:14.0.1-jdk-windowsservercore`](#openjdk1401-jdk-windowsservercore)
+-	[`openjdk:14.0.1-jdk-windowsservercore-1809`](#openjdk1401-jdk-windowsservercore-1809)
+-	[`openjdk:14.0.1-jdk-windowsservercore-ltsc2016`](#openjdk1401-jdk-windowsservercore-ltsc2016)
+-	[`openjdk:14.0.1-nanoserver`](#openjdk1401-nanoserver)
+-	[`openjdk:14.0.1-nanoserver-1809`](#openjdk1401-nanoserver-1809)
+-	[`openjdk:14.0.1-oracle`](#openjdk1401-oracle)
+-	[`openjdk:14.0.1-oraclelinux7`](#openjdk1401-oraclelinux7)
+-	[`openjdk:14.0.1-slim`](#openjdk1401-slim)
+-	[`openjdk:14.0.1-slim-buster`](#openjdk1401-slim-buster)
+-	[`openjdk:14.0.1-windowsservercore`](#openjdk1401-windowsservercore)
+-	[`openjdk:14.0.1-windowsservercore-1809`](#openjdk1401-windowsservercore-1809)
+-	[`openjdk:14.0.1-windowsservercore-ltsc2016`](#openjdk1401-windowsservercore-ltsc2016)
+-	[`openjdk:14.0-buster`](#openjdk140-buster)
+-	[`openjdk:14.0-jdk`](#openjdk140-jdk)
+-	[`openjdk:14.0-jdk-buster`](#openjdk140-jdk-buster)
+-	[`openjdk:14.0-jdk-nanoserver`](#openjdk140-jdk-nanoserver)
+-	[`openjdk:14.0-jdk-nanoserver-1809`](#openjdk140-jdk-nanoserver-1809)
+-	[`openjdk:14.0-jdk-oracle`](#openjdk140-jdk-oracle)
+-	[`openjdk:14.0-jdk-oraclelinux7`](#openjdk140-jdk-oraclelinux7)
+-	[`openjdk:14.0-jdk-slim`](#openjdk140-jdk-slim)
+-	[`openjdk:14.0-jdk-slim-buster`](#openjdk140-jdk-slim-buster)
+-	[`openjdk:14.0-jdk-windowsservercore`](#openjdk140-jdk-windowsservercore)
+-	[`openjdk:14.0-jdk-windowsservercore-1809`](#openjdk140-jdk-windowsservercore-1809)
+-	[`openjdk:14.0-jdk-windowsservercore-ltsc2016`](#openjdk140-jdk-windowsservercore-ltsc2016)
+-	[`openjdk:14.0-nanoserver`](#openjdk140-nanoserver)
+-	[`openjdk:14.0-nanoserver-1809`](#openjdk140-nanoserver-1809)
+-	[`openjdk:14.0-oracle`](#openjdk140-oracle)
+-	[`openjdk:14.0-oraclelinux7`](#openjdk140-oraclelinux7)
+-	[`openjdk:14.0-slim`](#openjdk140-slim)
+-	[`openjdk:14.0-slim-buster`](#openjdk140-slim-buster)
+-	[`openjdk:14.0-windowsservercore`](#openjdk140-windowsservercore)
+-	[`openjdk:14.0-windowsservercore-1809`](#openjdk140-windowsservercore-1809)
+-	[`openjdk:14.0-windowsservercore-ltsc2016`](#openjdk140-windowsservercore-ltsc2016)
 -	[`openjdk:14-buster`](#openjdk14-buster)
 -	[`openjdk:14-jdk`](#openjdk14-jdk)
 -	[`openjdk:14-jdk-buster`](#openjdk14-jdk-buster)
@@ -11542,6 +11586,182 @@ CMD ["jshell"]
 		Last Modified: Fri, 13 Mar 2020 22:11:36 GMT  
 		Size: 1.2 KB (1194 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:14.0`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0.1`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0.1-buster`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0.1-jdk`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0.1-jdk-buster`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0.1-jdk-nanoserver`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0.1-jdk-nanoserver-1809`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0.1-jdk-oracle`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0.1-jdk-oraclelinux7`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0.1-jdk-slim`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0.1-jdk-slim-buster`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0.1-jdk-windowsservercore`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0.1-jdk-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0.1-jdk-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0.1-nanoserver`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0.1-nanoserver-1809`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0.1-oracle`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0.1-oraclelinux7`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0.1-slim`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0.1-slim-buster`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0.1-windowsservercore`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0.1-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0.1-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0-buster`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0-jdk`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0-jdk-buster`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0-jdk-nanoserver`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0-jdk-nanoserver-1809`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0-jdk-oracle`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0-jdk-oraclelinux7`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0-jdk-slim`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0-jdk-slim-buster`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0-jdk-windowsservercore`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0-jdk-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0-jdk-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0-nanoserver`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0-nanoserver-1809`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0-oracle`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0-oraclelinux7`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0-slim`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0-slim-buster`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0-windowsservercore`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `openjdk:14.0-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
 
 ## `openjdk:14-buster`
 
