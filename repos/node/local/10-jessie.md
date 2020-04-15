@@ -1,9 +1,9 @@
-# `node:10.20.0-jessie`
+# `node:10.20.1-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e0ac31822a7ce628bab39599c011726aae6f9b6b74232b836c81750292dd3aec`
-- Created: `2020-04-08T21:35:02.571609976Z`
+- Image ID: `sha256:7c7c854268663135eaea9e6be581ca0b60af555190cc80dc3c46f76b4a0942f0`
+- Created: `2020-04-13T23:25:07.167947543Z`
 - Virtual Size: ~ 691.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=10.20.0`
+  - `NODE_VERSION=10.20.1`
   - `YARN_VERSION=1.22.4`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1352,20 +1352,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.1.4-2.1+deb8u8
-'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.1.4-2.1+deb8u8.dsc' git_2.1.4-2.1+deb8u8.dsc 2817 SHA256:6166d5a5fca03f9be612c5fad2406f0b6a65f60cd1f04bb5600a0924be076a3b
-'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.1.4.orig.tar.xz' git_2.1.4.orig.tar.xz 3544804 SHA256:a04968b9b10cbcb31a7054aa3a0d11ac47c83556ecd270ddef1987df5d3d053e
-'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.1.4-2.1+deb8u8.debian.tar.xz' git_2.1.4-2.1+deb8u8.debian.tar.xz 525864 SHA256:cceceba83fc2106c2b75a5f979d04e700360df8a55628102fe2e08f3bc1c2982
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.1.4-2.1+deb8u8/
 
-- https://sources.debian.net/src/git/1:2.1.4-2.1+deb8u8/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.1.4-2.1+deb8u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.1.4-2.1+deb8u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.42.1-1+deb8u3`
 
