@@ -93,14 +93,9 @@ Licenses: (parsed from: `/usr/share/doc/libasound2/copyright`, `/usr/share/doc/l
 - `LGPL-2.1`
 - `LPGL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris alsa-lib=1.1.3-5ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.1.3-5ubuntu0.4.dsc' alsa-lib_1.1.3-5ubuntu0.4.dsc 2612 SHA256:862b4f37b0e359002ffedac36e20da9cf5b803f970867cdeeb058f4068c49fa0
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.1.3.orig.tar.bz2' alsa-lib_1.1.3.orig.tar.bz2 962001 SHA256:71282502184c592c1a008e256c22ed0ba5728ca65e05273ceb480c70f515969c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.1.3-5ubuntu0.4.debian.tar.xz' alsa-lib_1.1.3-5ubuntu0.4.debian.tar.xz 141272 SHA256:459846076376c98fcf9cc93c472bbb643d4ac5794d9e63a842c32a0f29fb9df4
-```
 
 ### `dpkg` source package: `apparmor=2.12-4ubuntu5.1`
 
