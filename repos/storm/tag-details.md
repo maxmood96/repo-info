@@ -13,7 +13,7 @@
 ## `storm:1.1`
 
 ```console
-$ docker pull storm@sha256:3226e29781983c0ed334402f41bd2d183fe5ff0cc56f6e05b3b879b38ffe049c
+$ docker pull storm@sha256:2aff29df477a4d0316b0277ba5cb53269c632fb27dc4b38fc761e7cd80696cc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23,14 +23,14 @@ $ docker pull storm@sha256:3226e29781983c0ed334402f41bd2d183fe5ff0cc56f6e05b3b87
 ### `storm:1.1` - linux; amd64
 
 ```console
-$ docker pull storm@sha256:fbcdd8c60fba1d4f3c3a2e30c724cd799088575215b1b43ddd13113393cfbd5f
+$ docker pull storm@sha256:39f39825e67cfb020f1953bedc79e89bb87550369f256d56a81b2bfba22c096a
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **167.3 MB (167298048 bytes)**  
+-	Total Size: **167.4 MB (167426582 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b41cb7a66dd346cdc25a44c9e1e1da5dc84cb4edaebeea7c5d90de82c30c834f`
+-	Image ID: `sha256:994bf26eb68685bb1bb16fb5f4d688817ebad186fb7d8c757774714811baa0ef`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -48,34 +48,34 @@ ENV JAVA_HOME=/usr/local/openjdk-8
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 31 Mar 2020 01:34:09 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 31 Mar 2020 01:34:09 GMT
-ENV JAVA_VERSION=8u242
-# Tue, 31 Mar 2020 01:34:32 GMT
-ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u242-b08/OpenJDK8U-jre_
-# Tue, 31 Mar 2020 01:34:32 GMT
-ENV JAVA_URL_VERSION=8u242b08
-# Tue, 31 Mar 2020 01:34:43 GMT
+# Thu, 16 Apr 2020 00:29:40 GMT
+ENV JAVA_VERSION=8u252
+# Thu, 16 Apr 2020 00:30:08 GMT
+ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_
+# Thu, 16 Apr 2020 00:30:08 GMT
+ENV JAVA_URL_VERSION=8u252b09
+# Thu, 16 Apr 2020 00:30:19 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Wed, 01 Apr 2020 08:14:45 GMT
+# Thu, 16 Apr 2020 02:38:58 GMT
 ENV STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Wed, 01 Apr 2020 08:14:46 GMT
+# Thu, 16 Apr 2020 02:38:59 GMT
 RUN set -eux;     groupadd -r storm --gid=1000;     useradd -r -g storm --uid=1000 storm;     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R storm:storm "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Wed, 01 Apr 2020 08:14:55 GMT
+# Thu, 16 Apr 2020 02:39:09 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         bash         ca-certificates         dirmngr         gosu         gnupg         python         procps         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Wed, 01 Apr 2020 08:14:55 GMT
+# Thu, 16 Apr 2020 02:39:09 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Wed, 01 Apr 2020 08:14:56 GMT
+# Thu, 16 Apr 2020 02:39:09 GMT
 ARG DISTRO_NAME=apache-storm-1.1.3
-# Wed, 01 Apr 2020 08:16:17 GMT
+# Thu, 16 Apr 2020 02:39:21 GMT
 # ARGS: DISTRO_NAME=apache-storm-1.1.3 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R storm:storm "$DISTRO_NAME"
-# Wed, 01 Apr 2020 08:16:18 GMT
+# Thu, 16 Apr 2020 02:39:21 GMT
 WORKDIR /apache-storm-1.1.3
-# Wed, 01 Apr 2020 08:16:18 GMT
+# Thu, 16 Apr 2020 02:39:21 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-1.1.3/bin
-# Wed, 01 Apr 2020 08:16:18 GMT
+# Thu, 16 Apr 2020 02:39:22 GMT
 COPY file:c74c732450146abc9cc672380c7829a8d892099ec5aa1f81e3fe02c4e8f97f32 in / 
-# Wed, 01 Apr 2020 08:16:18 GMT
+# Thu, 16 Apr 2020 02:39:22 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -92,31 +92,31 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Tue, 31 Mar 2020 01:37:20 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d19b80457d69d27e51f14d8a436ca82d4f6e1108d90ae09cfc24b970d25567d4`  
-		Last Modified: Tue, 31 Mar 2020 01:37:46 GMT  
-		Size: 40.5 MB (40464373 bytes)  
+	-	`sha256:5b5592c3225b44ab9640bdb6d7478ee80e7811f08938eee2db03b72a3508463e`  
+		Last Modified: Thu, 16 Apr 2020 00:34:14 GMT  
+		Size: 40.6 MB (40592797 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f07a69e797cc1c12581b39d82367691c5310ad11f3766b45b0208a8ffb83ba46`  
-		Last Modified: Wed, 01 Apr 2020 08:22:43 GMT  
+	-	`sha256:2f0457782efba16f6da10cbe76d459bf982506f94d0a3c79ae17ad72e62ea912`  
+		Last Modified: Thu, 16 Apr 2020 02:48:09 GMT  
 		Size: 1.8 KB (1788 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8dfe4c186ac807c2a8c421434c7d3c47132a9c56c7706e7e4374aef4bb6d0b7`  
-		Last Modified: Wed, 01 Apr 2020 08:22:45 GMT  
-		Size: 13.1 MB (13125071 bytes)  
+	-	`sha256:0fdf31abd1492cb3fdb1f904fb33c344f9a49c66bc70bf6b1567c08e93b12128`  
+		Last Modified: Thu, 16 Apr 2020 02:48:13 GMT  
+		Size: 13.1 MB (13125080 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbc394db7c59d555fdff7ee6860686111511961564eded75c37f9843ab7a9b58`  
-		Last Modified: Wed, 01 Apr 2020 08:22:49 GMT  
-		Size: 83.4 MB (83365242 bytes)  
+	-	`sha256:74dbaac4d49f1b0c8c735e4335741c235202ee5567eaffe45f154cc500761c50`  
+		Last Modified: Thu, 16 Apr 2020 02:48:19 GMT  
+		Size: 83.4 MB (83365343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af422d51414a83565b83de550eef57a47fe3a3af59103fe08f7c4fdeda028a4a`  
-		Last Modified: Wed, 01 Apr 2020 08:22:43 GMT  
+	-	`sha256:21afa89bfab30b7573e2cd0a64300d013a5feeb620a9e7fa12eb1aab59415b92`  
+		Last Modified: Thu, 16 Apr 2020 02:48:09 GMT  
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `storm:1.1.3`
 
 ```console
-$ docker pull storm@sha256:3226e29781983c0ed334402f41bd2d183fe5ff0cc56f6e05b3b879b38ffe049c
+$ docker pull storm@sha256:2aff29df477a4d0316b0277ba5cb53269c632fb27dc4b38fc761e7cd80696cc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -126,14 +126,14 @@ $ docker pull storm@sha256:3226e29781983c0ed334402f41bd2d183fe5ff0cc56f6e05b3b87
 ### `storm:1.1.3` - linux; amd64
 
 ```console
-$ docker pull storm@sha256:fbcdd8c60fba1d4f3c3a2e30c724cd799088575215b1b43ddd13113393cfbd5f
+$ docker pull storm@sha256:39f39825e67cfb020f1953bedc79e89bb87550369f256d56a81b2bfba22c096a
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **167.3 MB (167298048 bytes)**  
+-	Total Size: **167.4 MB (167426582 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b41cb7a66dd346cdc25a44c9e1e1da5dc84cb4edaebeea7c5d90de82c30c834f`
+-	Image ID: `sha256:994bf26eb68685bb1bb16fb5f4d688817ebad186fb7d8c757774714811baa0ef`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -151,34 +151,34 @@ ENV JAVA_HOME=/usr/local/openjdk-8
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 31 Mar 2020 01:34:09 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 31 Mar 2020 01:34:09 GMT
-ENV JAVA_VERSION=8u242
-# Tue, 31 Mar 2020 01:34:32 GMT
-ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u242-b08/OpenJDK8U-jre_
-# Tue, 31 Mar 2020 01:34:32 GMT
-ENV JAVA_URL_VERSION=8u242b08
-# Tue, 31 Mar 2020 01:34:43 GMT
+# Thu, 16 Apr 2020 00:29:40 GMT
+ENV JAVA_VERSION=8u252
+# Thu, 16 Apr 2020 00:30:08 GMT
+ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_
+# Thu, 16 Apr 2020 00:30:08 GMT
+ENV JAVA_URL_VERSION=8u252b09
+# Thu, 16 Apr 2020 00:30:19 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Wed, 01 Apr 2020 08:14:45 GMT
+# Thu, 16 Apr 2020 02:38:58 GMT
 ENV STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Wed, 01 Apr 2020 08:14:46 GMT
+# Thu, 16 Apr 2020 02:38:59 GMT
 RUN set -eux;     groupadd -r storm --gid=1000;     useradd -r -g storm --uid=1000 storm;     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R storm:storm "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Wed, 01 Apr 2020 08:14:55 GMT
+# Thu, 16 Apr 2020 02:39:09 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         bash         ca-certificates         dirmngr         gosu         gnupg         python         procps         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Wed, 01 Apr 2020 08:14:55 GMT
+# Thu, 16 Apr 2020 02:39:09 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Wed, 01 Apr 2020 08:14:56 GMT
+# Thu, 16 Apr 2020 02:39:09 GMT
 ARG DISTRO_NAME=apache-storm-1.1.3
-# Wed, 01 Apr 2020 08:16:17 GMT
+# Thu, 16 Apr 2020 02:39:21 GMT
 # ARGS: DISTRO_NAME=apache-storm-1.1.3 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R storm:storm "$DISTRO_NAME"
-# Wed, 01 Apr 2020 08:16:18 GMT
+# Thu, 16 Apr 2020 02:39:21 GMT
 WORKDIR /apache-storm-1.1.3
-# Wed, 01 Apr 2020 08:16:18 GMT
+# Thu, 16 Apr 2020 02:39:21 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-1.1.3/bin
-# Wed, 01 Apr 2020 08:16:18 GMT
+# Thu, 16 Apr 2020 02:39:22 GMT
 COPY file:c74c732450146abc9cc672380c7829a8d892099ec5aa1f81e3fe02c4e8f97f32 in / 
-# Wed, 01 Apr 2020 08:16:18 GMT
+# Thu, 16 Apr 2020 02:39:22 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -195,31 +195,31 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Tue, 31 Mar 2020 01:37:20 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d19b80457d69d27e51f14d8a436ca82d4f6e1108d90ae09cfc24b970d25567d4`  
-		Last Modified: Tue, 31 Mar 2020 01:37:46 GMT  
-		Size: 40.5 MB (40464373 bytes)  
+	-	`sha256:5b5592c3225b44ab9640bdb6d7478ee80e7811f08938eee2db03b72a3508463e`  
+		Last Modified: Thu, 16 Apr 2020 00:34:14 GMT  
+		Size: 40.6 MB (40592797 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f07a69e797cc1c12581b39d82367691c5310ad11f3766b45b0208a8ffb83ba46`  
-		Last Modified: Wed, 01 Apr 2020 08:22:43 GMT  
+	-	`sha256:2f0457782efba16f6da10cbe76d459bf982506f94d0a3c79ae17ad72e62ea912`  
+		Last Modified: Thu, 16 Apr 2020 02:48:09 GMT  
 		Size: 1.8 KB (1788 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8dfe4c186ac807c2a8c421434c7d3c47132a9c56c7706e7e4374aef4bb6d0b7`  
-		Last Modified: Wed, 01 Apr 2020 08:22:45 GMT  
-		Size: 13.1 MB (13125071 bytes)  
+	-	`sha256:0fdf31abd1492cb3fdb1f904fb33c344f9a49c66bc70bf6b1567c08e93b12128`  
+		Last Modified: Thu, 16 Apr 2020 02:48:13 GMT  
+		Size: 13.1 MB (13125080 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbc394db7c59d555fdff7ee6860686111511961564eded75c37f9843ab7a9b58`  
-		Last Modified: Wed, 01 Apr 2020 08:22:49 GMT  
-		Size: 83.4 MB (83365242 bytes)  
+	-	`sha256:74dbaac4d49f1b0c8c735e4335741c235202ee5567eaffe45f154cc500761c50`  
+		Last Modified: Thu, 16 Apr 2020 02:48:19 GMT  
+		Size: 83.4 MB (83365343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af422d51414a83565b83de550eef57a47fe3a3af59103fe08f7c4fdeda028a4a`  
-		Last Modified: Wed, 01 Apr 2020 08:22:43 GMT  
+	-	`sha256:21afa89bfab30b7573e2cd0a64300d013a5feeb620a9e7fa12eb1aab59415b92`  
+		Last Modified: Thu, 16 Apr 2020 02:48:09 GMT  
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `storm:1.2`
 
 ```console
-$ docker pull storm@sha256:a8f13e11529c540d22f31bac659ea4830e8569a1991c3c5ecfe763fb77c5e2c1
+$ docker pull storm@sha256:26fca6dbc39fca6f93342f20222d3f887a9d0b4f4815f5ad0cfc240443eea61e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -229,14 +229,14 @@ $ docker pull storm@sha256:a8f13e11529c540d22f31bac659ea4830e8569a1991c3c5ecfe76
 ### `storm:1.2` - linux; amd64
 
 ```console
-$ docker pull storm@sha256:57267f37c9fa218fa545f21701d7440050d392ba859dc5efb5c3ffb2fca55ba0
+$ docker pull storm@sha256:44a5bff63b51067ec8689470171bd1c3febebbc04e6c55ba8b122538c4695077
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **253.1 MB (253069701 bytes)**  
+-	Total Size: **253.2 MB (253198124 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fd8565dd09c4a8a2495bf91448aca87b8ff1571de3067fe90cdf0a6132084ebe`
+-	Image ID: `sha256:cd165d45a20480d2773f37dabff37a21cb12b6ea2523879c568a96f3625cd811`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -254,34 +254,34 @@ ENV JAVA_HOME=/usr/local/openjdk-8
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 31 Mar 2020 01:34:09 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 31 Mar 2020 01:34:09 GMT
-ENV JAVA_VERSION=8u242
-# Tue, 31 Mar 2020 01:34:32 GMT
-ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u242-b08/OpenJDK8U-jre_
-# Tue, 31 Mar 2020 01:34:32 GMT
-ENV JAVA_URL_VERSION=8u242b08
-# Tue, 31 Mar 2020 01:34:43 GMT
+# Thu, 16 Apr 2020 00:29:40 GMT
+ENV JAVA_VERSION=8u252
+# Thu, 16 Apr 2020 00:30:08 GMT
+ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_
+# Thu, 16 Apr 2020 00:30:08 GMT
+ENV JAVA_URL_VERSION=8u252b09
+# Thu, 16 Apr 2020 00:30:19 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Wed, 01 Apr 2020 08:14:45 GMT
+# Thu, 16 Apr 2020 02:38:58 GMT
 ENV STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Wed, 01 Apr 2020 08:14:46 GMT
+# Thu, 16 Apr 2020 02:38:59 GMT
 RUN set -eux;     groupadd -r storm --gid=1000;     useradd -r -g storm --uid=1000 storm;     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R storm:storm "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Wed, 01 Apr 2020 08:14:55 GMT
+# Thu, 16 Apr 2020 02:39:09 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         bash         ca-certificates         dirmngr         gosu         gnupg         python         procps         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Wed, 01 Apr 2020 08:14:55 GMT
+# Thu, 16 Apr 2020 02:39:09 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Wed, 01 Apr 2020 08:16:29 GMT
+# Thu, 16 Apr 2020 02:39:27 GMT
 ARG DISTRO_NAME=apache-storm-1.2.3
-# Wed, 01 Apr 2020 08:21:52 GMT
+# Thu, 16 Apr 2020 02:44:54 GMT
 # ARGS: DISTRO_NAME=apache-storm-1.2.3 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R storm:storm "$DISTRO_NAME"
-# Wed, 01 Apr 2020 08:21:52 GMT
+# Thu, 16 Apr 2020 02:44:54 GMT
 WORKDIR /apache-storm-1.2.3
-# Wed, 01 Apr 2020 08:21:52 GMT
+# Thu, 16 Apr 2020 02:44:54 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-1.2.3/bin
-# Wed, 01 Apr 2020 08:21:53 GMT
+# Thu, 16 Apr 2020 02:44:55 GMT
 COPY file:c74c732450146abc9cc672380c7829a8d892099ec5aa1f81e3fe02c4e8f97f32 in / 
-# Wed, 01 Apr 2020 08:21:53 GMT
+# Thu, 16 Apr 2020 02:44:55 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -298,31 +298,31 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Tue, 31 Mar 2020 01:37:20 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d19b80457d69d27e51f14d8a436ca82d4f6e1108d90ae09cfc24b970d25567d4`  
-		Last Modified: Tue, 31 Mar 2020 01:37:46 GMT  
-		Size: 40.5 MB (40464373 bytes)  
+	-	`sha256:5b5592c3225b44ab9640bdb6d7478ee80e7811f08938eee2db03b72a3508463e`  
+		Last Modified: Thu, 16 Apr 2020 00:34:14 GMT  
+		Size: 40.6 MB (40592797 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f07a69e797cc1c12581b39d82367691c5310ad11f3766b45b0208a8ffb83ba46`  
-		Last Modified: Wed, 01 Apr 2020 08:22:43 GMT  
+	-	`sha256:2f0457782efba16f6da10cbe76d459bf982506f94d0a3c79ae17ad72e62ea912`  
+		Last Modified: Thu, 16 Apr 2020 02:48:09 GMT  
 		Size: 1.8 KB (1788 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8dfe4c186ac807c2a8c421434c7d3c47132a9c56c7706e7e4374aef4bb6d0b7`  
-		Last Modified: Wed, 01 Apr 2020 08:22:45 GMT  
-		Size: 13.1 MB (13125071 bytes)  
+	-	`sha256:0fdf31abd1492cb3fdb1f904fb33c344f9a49c66bc70bf6b1567c08e93b12128`  
+		Last Modified: Thu, 16 Apr 2020 02:48:13 GMT  
+		Size: 13.1 MB (13125080 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88c060966be4bb5460b4625712d11852e5698059e645be3cc7cece69d5c9b5fe`  
-		Last Modified: Wed, 01 Apr 2020 08:23:04 GMT  
-		Size: 169.1 MB (169136895 bytes)  
+	-	`sha256:db975deea218950ff589caad03b36115c4cd8efd2b38be9c73a68e569149aa48`  
+		Last Modified: Thu, 16 Apr 2020 02:48:42 GMT  
+		Size: 169.1 MB (169136885 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:864a51cdcfb167e3766a206c00f274e172d6cf6201c4182338924344a93a96cf`  
-		Last Modified: Wed, 01 Apr 2020 08:22:54 GMT  
+	-	`sha256:ed0b42cb1f032abf522884171c024ddfccda9a7520b5f72cef441ad8d694155f`  
+		Last Modified: Thu, 16 Apr 2020 02:48:27 GMT  
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `storm:1.2.3`
 
 ```console
-$ docker pull storm@sha256:a8f13e11529c540d22f31bac659ea4830e8569a1991c3c5ecfe763fb77c5e2c1
+$ docker pull storm@sha256:26fca6dbc39fca6f93342f20222d3f887a9d0b4f4815f5ad0cfc240443eea61e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -332,14 +332,14 @@ $ docker pull storm@sha256:a8f13e11529c540d22f31bac659ea4830e8569a1991c3c5ecfe76
 ### `storm:1.2.3` - linux; amd64
 
 ```console
-$ docker pull storm@sha256:57267f37c9fa218fa545f21701d7440050d392ba859dc5efb5c3ffb2fca55ba0
+$ docker pull storm@sha256:44a5bff63b51067ec8689470171bd1c3febebbc04e6c55ba8b122538c4695077
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **253.1 MB (253069701 bytes)**  
+-	Total Size: **253.2 MB (253198124 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fd8565dd09c4a8a2495bf91448aca87b8ff1571de3067fe90cdf0a6132084ebe`
+-	Image ID: `sha256:cd165d45a20480d2773f37dabff37a21cb12b6ea2523879c568a96f3625cd811`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -357,34 +357,34 @@ ENV JAVA_HOME=/usr/local/openjdk-8
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 31 Mar 2020 01:34:09 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 31 Mar 2020 01:34:09 GMT
-ENV JAVA_VERSION=8u242
-# Tue, 31 Mar 2020 01:34:32 GMT
-ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u242-b08/OpenJDK8U-jre_
-# Tue, 31 Mar 2020 01:34:32 GMT
-ENV JAVA_URL_VERSION=8u242b08
-# Tue, 31 Mar 2020 01:34:43 GMT
+# Thu, 16 Apr 2020 00:29:40 GMT
+ENV JAVA_VERSION=8u252
+# Thu, 16 Apr 2020 00:30:08 GMT
+ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_
+# Thu, 16 Apr 2020 00:30:08 GMT
+ENV JAVA_URL_VERSION=8u252b09
+# Thu, 16 Apr 2020 00:30:19 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Wed, 01 Apr 2020 08:14:45 GMT
+# Thu, 16 Apr 2020 02:38:58 GMT
 ENV STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Wed, 01 Apr 2020 08:14:46 GMT
+# Thu, 16 Apr 2020 02:38:59 GMT
 RUN set -eux;     groupadd -r storm --gid=1000;     useradd -r -g storm --uid=1000 storm;     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R storm:storm "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Wed, 01 Apr 2020 08:14:55 GMT
+# Thu, 16 Apr 2020 02:39:09 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         bash         ca-certificates         dirmngr         gosu         gnupg         python         procps         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Wed, 01 Apr 2020 08:14:55 GMT
+# Thu, 16 Apr 2020 02:39:09 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Wed, 01 Apr 2020 08:16:29 GMT
+# Thu, 16 Apr 2020 02:39:27 GMT
 ARG DISTRO_NAME=apache-storm-1.2.3
-# Wed, 01 Apr 2020 08:21:52 GMT
+# Thu, 16 Apr 2020 02:44:54 GMT
 # ARGS: DISTRO_NAME=apache-storm-1.2.3 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R storm:storm "$DISTRO_NAME"
-# Wed, 01 Apr 2020 08:21:52 GMT
+# Thu, 16 Apr 2020 02:44:54 GMT
 WORKDIR /apache-storm-1.2.3
-# Wed, 01 Apr 2020 08:21:52 GMT
+# Thu, 16 Apr 2020 02:44:54 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-1.2.3/bin
-# Wed, 01 Apr 2020 08:21:53 GMT
+# Thu, 16 Apr 2020 02:44:55 GMT
 COPY file:c74c732450146abc9cc672380c7829a8d892099ec5aa1f81e3fe02c4e8f97f32 in / 
-# Wed, 01 Apr 2020 08:21:53 GMT
+# Thu, 16 Apr 2020 02:44:55 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -401,31 +401,31 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Tue, 31 Mar 2020 01:37:20 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d19b80457d69d27e51f14d8a436ca82d4f6e1108d90ae09cfc24b970d25567d4`  
-		Last Modified: Tue, 31 Mar 2020 01:37:46 GMT  
-		Size: 40.5 MB (40464373 bytes)  
+	-	`sha256:5b5592c3225b44ab9640bdb6d7478ee80e7811f08938eee2db03b72a3508463e`  
+		Last Modified: Thu, 16 Apr 2020 00:34:14 GMT  
+		Size: 40.6 MB (40592797 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f07a69e797cc1c12581b39d82367691c5310ad11f3766b45b0208a8ffb83ba46`  
-		Last Modified: Wed, 01 Apr 2020 08:22:43 GMT  
+	-	`sha256:2f0457782efba16f6da10cbe76d459bf982506f94d0a3c79ae17ad72e62ea912`  
+		Last Modified: Thu, 16 Apr 2020 02:48:09 GMT  
 		Size: 1.8 KB (1788 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8dfe4c186ac807c2a8c421434c7d3c47132a9c56c7706e7e4374aef4bb6d0b7`  
-		Last Modified: Wed, 01 Apr 2020 08:22:45 GMT  
-		Size: 13.1 MB (13125071 bytes)  
+	-	`sha256:0fdf31abd1492cb3fdb1f904fb33c344f9a49c66bc70bf6b1567c08e93b12128`  
+		Last Modified: Thu, 16 Apr 2020 02:48:13 GMT  
+		Size: 13.1 MB (13125080 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88c060966be4bb5460b4625712d11852e5698059e645be3cc7cece69d5c9b5fe`  
-		Last Modified: Wed, 01 Apr 2020 08:23:04 GMT  
-		Size: 169.1 MB (169136895 bytes)  
+	-	`sha256:db975deea218950ff589caad03b36115c4cd8efd2b38be9c73a68e569149aa48`  
+		Last Modified: Thu, 16 Apr 2020 02:48:42 GMT  
+		Size: 169.1 MB (169136885 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:864a51cdcfb167e3766a206c00f274e172d6cf6201c4182338924344a93a96cf`  
-		Last Modified: Wed, 01 Apr 2020 08:22:54 GMT  
+	-	`sha256:ed0b42cb1f032abf522884171c024ddfccda9a7520b5f72cef441ad8d694155f`  
+		Last Modified: Thu, 16 Apr 2020 02:48:27 GMT  
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `storm:2.1`
 
 ```console
-$ docker pull storm@sha256:8828a48fc0e606c6a453c142ffe251eb89796962da9b2202b958a6bcf0cd19f2
+$ docker pull storm@sha256:5215b9160c497cf017a8061ac94747f26fd282f1fc1f2edf87c4fc48b3a65534
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -435,14 +435,14 @@ $ docker pull storm@sha256:8828a48fc0e606c6a453c142ffe251eb89796962da9b2202b958a
 ### `storm:2.1` - linux; amd64
 
 ```console
-$ docker pull storm@sha256:ed5c43402274e101503874c4c57be2339d68be79adf46597417d55af93a93338
+$ docker pull storm@sha256:33913d270ba0f4a2f9efc08a2b08a85ec58ef6d42027c2a6bfa7f814141cfa78
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **396.1 MB (396144005 bytes)**  
+-	Total Size: **396.3 MB (396272405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d5707269b39bd3981bca0a0a5d9a8cb850ff84e040ba58e99b2146e01e828db`
+-	Image ID: `sha256:9a35125f7d51feb04b72dc0ed0f9f9fea066e00ca78550baec701e40e27c1b63`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -460,34 +460,34 @@ ENV JAVA_HOME=/usr/local/openjdk-8
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 31 Mar 2020 01:34:09 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 31 Mar 2020 01:34:09 GMT
-ENV JAVA_VERSION=8u242
-# Tue, 31 Mar 2020 01:34:32 GMT
-ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u242-b08/OpenJDK8U-jre_
-# Tue, 31 Mar 2020 01:34:32 GMT
-ENV JAVA_URL_VERSION=8u242b08
-# Tue, 31 Mar 2020 01:34:43 GMT
+# Thu, 16 Apr 2020 00:29:40 GMT
+ENV JAVA_VERSION=8u252
+# Thu, 16 Apr 2020 00:30:08 GMT
+ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_
+# Thu, 16 Apr 2020 00:30:08 GMT
+ENV JAVA_URL_VERSION=8u252b09
+# Thu, 16 Apr 2020 00:30:19 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Wed, 01 Apr 2020 08:14:45 GMT
+# Thu, 16 Apr 2020 02:38:58 GMT
 ENV STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Wed, 01 Apr 2020 08:14:46 GMT
+# Thu, 16 Apr 2020 02:38:59 GMT
 RUN set -eux;     groupadd -r storm --gid=1000;     useradd -r -g storm --uid=1000 storm;     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R storm:storm "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Wed, 01 Apr 2020 08:14:55 GMT
+# Thu, 16 Apr 2020 02:39:09 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         bash         ca-certificates         dirmngr         gosu         gnupg         python         procps         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Wed, 01 Apr 2020 08:22:00 GMT
+# Thu, 16 Apr 2020 02:45:01 GMT
 ARG GPG_KEY=5167DE337E7370373499FC1DA4A672F11B5050C8
-# Wed, 01 Apr 2020 08:22:01 GMT
+# Thu, 16 Apr 2020 02:45:01 GMT
 ARG DISTRO_NAME=apache-storm-2.1.0
-# Wed, 01 Apr 2020 08:22:30 GMT
+# Thu, 16 Apr 2020 02:47:46 GMT
 # ARGS: DISTRO_NAME=apache-storm-2.1.0 GPG_KEY=5167DE337E7370373499FC1DA4A672F11B5050C8
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R storm:storm "$DISTRO_NAME"
-# Wed, 01 Apr 2020 08:22:30 GMT
+# Thu, 16 Apr 2020 02:47:46 GMT
 WORKDIR /apache-storm-2.1.0
-# Wed, 01 Apr 2020 08:22:30 GMT
+# Thu, 16 Apr 2020 02:47:47 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-2.1.0/bin
-# Wed, 01 Apr 2020 08:22:30 GMT
+# Thu, 16 Apr 2020 02:47:47 GMT
 COPY file:c74c732450146abc9cc672380c7829a8d892099ec5aa1f81e3fe02c4e8f97f32 in / 
-# Wed, 01 Apr 2020 08:22:31 GMT
+# Thu, 16 Apr 2020 02:47:47 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -504,31 +504,31 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Tue, 31 Mar 2020 01:37:20 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d19b80457d69d27e51f14d8a436ca82d4f6e1108d90ae09cfc24b970d25567d4`  
-		Last Modified: Tue, 31 Mar 2020 01:37:46 GMT  
-		Size: 40.5 MB (40464373 bytes)  
+	-	`sha256:5b5592c3225b44ab9640bdb6d7478ee80e7811f08938eee2db03b72a3508463e`  
+		Last Modified: Thu, 16 Apr 2020 00:34:14 GMT  
+		Size: 40.6 MB (40592797 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f07a69e797cc1c12581b39d82367691c5310ad11f3766b45b0208a8ffb83ba46`  
-		Last Modified: Wed, 01 Apr 2020 08:22:43 GMT  
+	-	`sha256:2f0457782efba16f6da10cbe76d459bf982506f94d0a3c79ae17ad72e62ea912`  
+		Last Modified: Thu, 16 Apr 2020 02:48:09 GMT  
 		Size: 1.8 KB (1788 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8dfe4c186ac807c2a8c421434c7d3c47132a9c56c7706e7e4374aef4bb6d0b7`  
-		Last Modified: Wed, 01 Apr 2020 08:22:45 GMT  
-		Size: 13.1 MB (13125071 bytes)  
+	-	`sha256:0fdf31abd1492cb3fdb1f904fb33c344f9a49c66bc70bf6b1567c08e93b12128`  
+		Last Modified: Thu, 16 Apr 2020 02:48:13 GMT  
+		Size: 13.1 MB (13125080 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84475b6455113cd1046a4d1f056caa702ffeaaff02ea1d1ddca4cd936fb2e00a`  
-		Last Modified: Wed, 01 Apr 2020 08:23:27 GMT  
-		Size: 312.2 MB (312211199 bytes)  
+	-	`sha256:4fc4f82bef97d93bec0b44e78563bfcd7a78b7b95ecbada32f9a091e14fba548`  
+		Last Modified: Thu, 16 Apr 2020 02:49:34 GMT  
+		Size: 312.2 MB (312211165 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97b0d9c05f0d03aa1f36c5276f3a9b356dcc1eddd406ed80c205f7baaa80a90e`  
-		Last Modified: Wed, 01 Apr 2020 08:23:09 GMT  
-		Size: 413.0 B  
+	-	`sha256:f2c978fc865c214f3f3fd65d54a00902c321a9aa3edf2b07cd776307b8d56552`  
+		Last Modified: Thu, 16 Apr 2020 02:48:47 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `storm:2.1.0`
 
 ```console
-$ docker pull storm@sha256:8828a48fc0e606c6a453c142ffe251eb89796962da9b2202b958a6bcf0cd19f2
+$ docker pull storm@sha256:5215b9160c497cf017a8061ac94747f26fd282f1fc1f2edf87c4fc48b3a65534
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -538,14 +538,14 @@ $ docker pull storm@sha256:8828a48fc0e606c6a453c142ffe251eb89796962da9b2202b958a
 ### `storm:2.1.0` - linux; amd64
 
 ```console
-$ docker pull storm@sha256:ed5c43402274e101503874c4c57be2339d68be79adf46597417d55af93a93338
+$ docker pull storm@sha256:33913d270ba0f4a2f9efc08a2b08a85ec58ef6d42027c2a6bfa7f814141cfa78
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **396.1 MB (396144005 bytes)**  
+-	Total Size: **396.3 MB (396272405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d5707269b39bd3981bca0a0a5d9a8cb850ff84e040ba58e99b2146e01e828db`
+-	Image ID: `sha256:9a35125f7d51feb04b72dc0ed0f9f9fea066e00ca78550baec701e40e27c1b63`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -563,34 +563,34 @@ ENV JAVA_HOME=/usr/local/openjdk-8
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 31 Mar 2020 01:34:09 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 31 Mar 2020 01:34:09 GMT
-ENV JAVA_VERSION=8u242
-# Tue, 31 Mar 2020 01:34:32 GMT
-ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u242-b08/OpenJDK8U-jre_
-# Tue, 31 Mar 2020 01:34:32 GMT
-ENV JAVA_URL_VERSION=8u242b08
-# Tue, 31 Mar 2020 01:34:43 GMT
+# Thu, 16 Apr 2020 00:29:40 GMT
+ENV JAVA_VERSION=8u252
+# Thu, 16 Apr 2020 00:30:08 GMT
+ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_
+# Thu, 16 Apr 2020 00:30:08 GMT
+ENV JAVA_URL_VERSION=8u252b09
+# Thu, 16 Apr 2020 00:30:19 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Wed, 01 Apr 2020 08:14:45 GMT
+# Thu, 16 Apr 2020 02:38:58 GMT
 ENV STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Wed, 01 Apr 2020 08:14:46 GMT
+# Thu, 16 Apr 2020 02:38:59 GMT
 RUN set -eux;     groupadd -r storm --gid=1000;     useradd -r -g storm --uid=1000 storm;     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R storm:storm "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Wed, 01 Apr 2020 08:14:55 GMT
+# Thu, 16 Apr 2020 02:39:09 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         bash         ca-certificates         dirmngr         gosu         gnupg         python         procps         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Wed, 01 Apr 2020 08:22:00 GMT
+# Thu, 16 Apr 2020 02:45:01 GMT
 ARG GPG_KEY=5167DE337E7370373499FC1DA4A672F11B5050C8
-# Wed, 01 Apr 2020 08:22:01 GMT
+# Thu, 16 Apr 2020 02:45:01 GMT
 ARG DISTRO_NAME=apache-storm-2.1.0
-# Wed, 01 Apr 2020 08:22:30 GMT
+# Thu, 16 Apr 2020 02:47:46 GMT
 # ARGS: DISTRO_NAME=apache-storm-2.1.0 GPG_KEY=5167DE337E7370373499FC1DA4A672F11B5050C8
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R storm:storm "$DISTRO_NAME"
-# Wed, 01 Apr 2020 08:22:30 GMT
+# Thu, 16 Apr 2020 02:47:46 GMT
 WORKDIR /apache-storm-2.1.0
-# Wed, 01 Apr 2020 08:22:30 GMT
+# Thu, 16 Apr 2020 02:47:47 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-2.1.0/bin
-# Wed, 01 Apr 2020 08:22:30 GMT
+# Thu, 16 Apr 2020 02:47:47 GMT
 COPY file:c74c732450146abc9cc672380c7829a8d892099ec5aa1f81e3fe02c4e8f97f32 in / 
-# Wed, 01 Apr 2020 08:22:31 GMT
+# Thu, 16 Apr 2020 02:47:47 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -607,31 +607,31 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Tue, 31 Mar 2020 01:37:20 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d19b80457d69d27e51f14d8a436ca82d4f6e1108d90ae09cfc24b970d25567d4`  
-		Last Modified: Tue, 31 Mar 2020 01:37:46 GMT  
-		Size: 40.5 MB (40464373 bytes)  
+	-	`sha256:5b5592c3225b44ab9640bdb6d7478ee80e7811f08938eee2db03b72a3508463e`  
+		Last Modified: Thu, 16 Apr 2020 00:34:14 GMT  
+		Size: 40.6 MB (40592797 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f07a69e797cc1c12581b39d82367691c5310ad11f3766b45b0208a8ffb83ba46`  
-		Last Modified: Wed, 01 Apr 2020 08:22:43 GMT  
+	-	`sha256:2f0457782efba16f6da10cbe76d459bf982506f94d0a3c79ae17ad72e62ea912`  
+		Last Modified: Thu, 16 Apr 2020 02:48:09 GMT  
 		Size: 1.8 KB (1788 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8dfe4c186ac807c2a8c421434c7d3c47132a9c56c7706e7e4374aef4bb6d0b7`  
-		Last Modified: Wed, 01 Apr 2020 08:22:45 GMT  
-		Size: 13.1 MB (13125071 bytes)  
+	-	`sha256:0fdf31abd1492cb3fdb1f904fb33c344f9a49c66bc70bf6b1567c08e93b12128`  
+		Last Modified: Thu, 16 Apr 2020 02:48:13 GMT  
+		Size: 13.1 MB (13125080 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84475b6455113cd1046a4d1f056caa702ffeaaff02ea1d1ddca4cd936fb2e00a`  
-		Last Modified: Wed, 01 Apr 2020 08:23:27 GMT  
-		Size: 312.2 MB (312211199 bytes)  
+	-	`sha256:4fc4f82bef97d93bec0b44e78563bfcd7a78b7b95ecbada32f9a091e14fba548`  
+		Last Modified: Thu, 16 Apr 2020 02:49:34 GMT  
+		Size: 312.2 MB (312211165 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97b0d9c05f0d03aa1f36c5276f3a9b356dcc1eddd406ed80c205f7baaa80a90e`  
-		Last Modified: Wed, 01 Apr 2020 08:23:09 GMT  
-		Size: 413.0 B  
+	-	`sha256:f2c978fc865c214f3f3fd65d54a00902c321a9aa3edf2b07cd776307b8d56552`  
+		Last Modified: Thu, 16 Apr 2020 02:48:47 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `storm:latest`
 
 ```console
-$ docker pull storm@sha256:8828a48fc0e606c6a453c142ffe251eb89796962da9b2202b958a6bcf0cd19f2
+$ docker pull storm@sha256:5215b9160c497cf017a8061ac94747f26fd282f1fc1f2edf87c4fc48b3a65534
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -641,14 +641,14 @@ $ docker pull storm@sha256:8828a48fc0e606c6a453c142ffe251eb89796962da9b2202b958a
 ### `storm:latest` - linux; amd64
 
 ```console
-$ docker pull storm@sha256:ed5c43402274e101503874c4c57be2339d68be79adf46597417d55af93a93338
+$ docker pull storm@sha256:33913d270ba0f4a2f9efc08a2b08a85ec58ef6d42027c2a6bfa7f814141cfa78
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **396.1 MB (396144005 bytes)**  
+-	Total Size: **396.3 MB (396272405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d5707269b39bd3981bca0a0a5d9a8cb850ff84e040ba58e99b2146e01e828db`
+-	Image ID: `sha256:9a35125f7d51feb04b72dc0ed0f9f9fea066e00ca78550baec701e40e27c1b63`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -666,34 +666,34 @@ ENV JAVA_HOME=/usr/local/openjdk-8
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 31 Mar 2020 01:34:09 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 31 Mar 2020 01:34:09 GMT
-ENV JAVA_VERSION=8u242
-# Tue, 31 Mar 2020 01:34:32 GMT
-ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u242-b08/OpenJDK8U-jre_
-# Tue, 31 Mar 2020 01:34:32 GMT
-ENV JAVA_URL_VERSION=8u242b08
-# Tue, 31 Mar 2020 01:34:43 GMT
+# Thu, 16 Apr 2020 00:29:40 GMT
+ENV JAVA_VERSION=8u252
+# Thu, 16 Apr 2020 00:30:08 GMT
+ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_
+# Thu, 16 Apr 2020 00:30:08 GMT
+ENV JAVA_URL_VERSION=8u252b09
+# Thu, 16 Apr 2020 00:30:19 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Wed, 01 Apr 2020 08:14:45 GMT
+# Thu, 16 Apr 2020 02:38:58 GMT
 ENV STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Wed, 01 Apr 2020 08:14:46 GMT
+# Thu, 16 Apr 2020 02:38:59 GMT
 RUN set -eux;     groupadd -r storm --gid=1000;     useradd -r -g storm --uid=1000 storm;     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R storm:storm "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Wed, 01 Apr 2020 08:14:55 GMT
+# Thu, 16 Apr 2020 02:39:09 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         bash         ca-certificates         dirmngr         gosu         gnupg         python         procps         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Wed, 01 Apr 2020 08:22:00 GMT
+# Thu, 16 Apr 2020 02:45:01 GMT
 ARG GPG_KEY=5167DE337E7370373499FC1DA4A672F11B5050C8
-# Wed, 01 Apr 2020 08:22:01 GMT
+# Thu, 16 Apr 2020 02:45:01 GMT
 ARG DISTRO_NAME=apache-storm-2.1.0
-# Wed, 01 Apr 2020 08:22:30 GMT
+# Thu, 16 Apr 2020 02:47:46 GMT
 # ARGS: DISTRO_NAME=apache-storm-2.1.0 GPG_KEY=5167DE337E7370373499FC1DA4A672F11B5050C8
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R storm:storm "$DISTRO_NAME"
-# Wed, 01 Apr 2020 08:22:30 GMT
+# Thu, 16 Apr 2020 02:47:46 GMT
 WORKDIR /apache-storm-2.1.0
-# Wed, 01 Apr 2020 08:22:30 GMT
+# Thu, 16 Apr 2020 02:47:47 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-2.1.0/bin
-# Wed, 01 Apr 2020 08:22:30 GMT
+# Thu, 16 Apr 2020 02:47:47 GMT
 COPY file:c74c732450146abc9cc672380c7829a8d892099ec5aa1f81e3fe02c4e8f97f32 in / 
-# Wed, 01 Apr 2020 08:22:31 GMT
+# Thu, 16 Apr 2020 02:47:47 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -710,23 +710,23 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Tue, 31 Mar 2020 01:37:20 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d19b80457d69d27e51f14d8a436ca82d4f6e1108d90ae09cfc24b970d25567d4`  
-		Last Modified: Tue, 31 Mar 2020 01:37:46 GMT  
-		Size: 40.5 MB (40464373 bytes)  
+	-	`sha256:5b5592c3225b44ab9640bdb6d7478ee80e7811f08938eee2db03b72a3508463e`  
+		Last Modified: Thu, 16 Apr 2020 00:34:14 GMT  
+		Size: 40.6 MB (40592797 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f07a69e797cc1c12581b39d82367691c5310ad11f3766b45b0208a8ffb83ba46`  
-		Last Modified: Wed, 01 Apr 2020 08:22:43 GMT  
+	-	`sha256:2f0457782efba16f6da10cbe76d459bf982506f94d0a3c79ae17ad72e62ea912`  
+		Last Modified: Thu, 16 Apr 2020 02:48:09 GMT  
 		Size: 1.8 KB (1788 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8dfe4c186ac807c2a8c421434c7d3c47132a9c56c7706e7e4374aef4bb6d0b7`  
-		Last Modified: Wed, 01 Apr 2020 08:22:45 GMT  
-		Size: 13.1 MB (13125071 bytes)  
+	-	`sha256:0fdf31abd1492cb3fdb1f904fb33c344f9a49c66bc70bf6b1567c08e93b12128`  
+		Last Modified: Thu, 16 Apr 2020 02:48:13 GMT  
+		Size: 13.1 MB (13125080 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84475b6455113cd1046a4d1f056caa702ffeaaff02ea1d1ddca4cd936fb2e00a`  
-		Last Modified: Wed, 01 Apr 2020 08:23:27 GMT  
-		Size: 312.2 MB (312211199 bytes)  
+	-	`sha256:4fc4f82bef97d93bec0b44e78563bfcd7a78b7b95ecbada32f9a091e14fba548`  
+		Last Modified: Thu, 16 Apr 2020 02:49:34 GMT  
+		Size: 312.2 MB (312211165 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97b0d9c05f0d03aa1f36c5276f3a9b356dcc1eddd406ed80c205f7baaa80a90e`  
-		Last Modified: Wed, 01 Apr 2020 08:23:09 GMT  
-		Size: 413.0 B  
+	-	`sha256:f2c978fc865c214f3f3fd65d54a00902c321a9aa3edf2b07cd776307b8d56552`  
+		Last Modified: Thu, 16 Apr 2020 02:48:47 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
