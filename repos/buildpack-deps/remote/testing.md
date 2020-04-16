@@ -1,7 +1,7 @@
 ## `buildpack-deps:testing`
 
 ```console
-$ docker pull buildpack-deps@sha256:f27195f537e96722286197fcae0bef5de85e74881b5c447bb08d3a81f2c64fb6
+$ docker pull buildpack-deps@sha256:4eef883d252729f2eec72e924008edbb96fc8bb4e2cc9afbd310f77fab23222e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,6 +11,7 @@ $ docker pull buildpack-deps@sha256:f27195f537e96722286197fcae0bef5de85e74881b5c
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
+	-	linux; mips64le
 	-	linux; ppc64le
 	-	linux; s390x
 
@@ -262,6 +263,56 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 	-	`sha256:b41edbb06b555fa22e066e67cdce8398634dd1bbbea141496567ac3ea4c85579`  
 		Last Modified: Thu, 16 Apr 2020 02:37:10 GMT  
 		Size: 203.9 MB (203864181 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `buildpack-deps:testing` - linux; mips64le
+
+```console
+$ docker pull buildpack-deps@sha256:15d62a64bc68c8e94ab4ef3dab78e5f1558f1330096bd3b88c2d972470aba9de
+```
+
+-	Docker Version: 19.03.8
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **305.3 MB (305332952 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:01d9ada546f2d4ea4bc6d8336727bbc6c9f66f2cb62eaa3e3d14b289c9de44d5`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Thu, 16 Apr 2020 03:29:03 GMT
+ADD file:571d620a73f63f0bce6937ced0e2a2f7dbd127e0fecf9e97790d0941cc6bce5b in / 
+# Thu, 16 Apr 2020 03:29:05 GMT
+CMD ["bash"]
+# Thu, 16 Apr 2020 04:06:32 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 16 Apr 2020 04:06:59 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 16 Apr 2020 04:08:06 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 16 Apr 2020 04:12:10 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+```
+
+-	Layers:
+	-	`sha256:02267d0e0eb88e51f19069b5cba14fd409e92034ffa2d476e3692b85e83addca`  
+		Last Modified: Thu, 16 Apr 2020 03:54:44 GMT  
+		Size: 50.7 MB (50678841 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5bb4f080ce8cb9f9c9b928bdf65ce27246d82edfff61aa1f7897eacde7012a6b`  
+		Last Modified: Thu, 16 Apr 2020 04:31:14 GMT  
+		Size: 7.5 MB (7459912 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:82100df7296466c11c6b4ac15634db8168d4618b3226c40897edace4a237a2a0`  
+		Last Modified: Thu, 16 Apr 2020 04:31:16 GMT  
+		Size: 10.3 MB (10324443 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a1a595cb267827df6d653c7f6bb665d87184787ea82d990902cf4edb2b88804d`  
+		Last Modified: Thu, 16 Apr 2020 04:32:43 GMT  
+		Size: 54.3 MB (54264268 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a543bf9e555b60ce6b3af7377dbe1367a18dd96d8342c365c2b5069140aced94`  
+		Last Modified: Thu, 16 Apr 2020 04:36:45 GMT  
+		Size: 182.6 MB (182605488 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:testing` - linux; ppc64le

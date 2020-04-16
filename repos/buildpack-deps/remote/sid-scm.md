@@ -1,7 +1,7 @@
 ## `buildpack-deps:sid-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:633884747be3e3db54dc85fb46f64b1d0c749e21737c7fb3bd8216ec7adf11cb
+$ docker pull buildpack-deps@sha256:32b384a3d3503efdffa06c3804a9fa56829caa296382859cbb475e9600980533
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,6 +11,7 @@ $ docker pull buildpack-deps@sha256:633884747be3e3db54dc85fb46f64b1d0c749e21737c
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
+	-	linux; mips64le
 	-	linux; ppc64le
 	-	linux; s390x
 
@@ -232,6 +233,50 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercuri
 	-	`sha256:7351fce1761580c1a90469f6a39ce4b504f9c1b1c46ac9de64a36b5067846200`  
 		Last Modified: Thu, 16 Apr 2020 02:40:03 GMT  
 		Size: 57.6 MB (57552290 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `buildpack-deps:sid-scm` - linux; mips64le
+
+```console
+$ docker pull buildpack-deps@sha256:2cbf6b2cf76529fb3f567d2dbf839830c402f1390c24ca58e6481156bf2b93e9
+```
+
+-	Docker Version: 19.03.8
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **123.1 MB (123117552 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:22445fdeb5e75ceaa4594ae6d1d3bcb53a03f404ed579bdc6e57b1587e2dcd40`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Thu, 16 Apr 2020 03:31:58 GMT
+ADD file:4c8da98109a760f1d6fe331f6b242401bd519a727c19c13f3f490f0bcb3158db in / 
+# Thu, 16 Apr 2020 03:32:00 GMT
+CMD ["bash"]
+# Thu, 16 Apr 2020 04:19:01 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 16 Apr 2020 04:19:29 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 16 Apr 2020 04:20:37 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Layers:
+	-	`sha256:6757dff0382d5411b1004ff5edeb85cdd1f3776f5d3176d7d12e44563a4577ab`  
+		Last Modified: Thu, 16 Apr 2020 03:58:56 GMT  
+		Size: 50.7 MB (50691556 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f6d36c2768c5b8693d65638ec047a971f014d1bbc98bfc09ce530b37a44c150b`  
+		Last Modified: Thu, 16 Apr 2020 04:43:09 GMT  
+		Size: 7.5 MB (7460540 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8f85fba4b2539f3e581194e8e5bd60f526b459fd2de0bfca983c44dda1df3d02`  
+		Last Modified: Thu, 16 Apr 2020 04:43:10 GMT  
+		Size: 10.3 MB (10324511 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9d06feb02a41d4bc159332669937d6dff1c06a6abb82e40834ef1e85a7002a42`  
+		Last Modified: Thu, 16 Apr 2020 04:44:35 GMT  
+		Size: 54.6 MB (54640945 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:sid-scm` - linux; ppc64le
