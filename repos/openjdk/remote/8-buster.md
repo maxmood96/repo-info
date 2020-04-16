@@ -1,7 +1,7 @@
 ## `openjdk:8-buster`
 
 ```console
-$ docker pull openjdk@sha256:6df966ec16cf225b2a190d7c9ee4814c410142983ee26d362c7c79dc80391564
+$ docker pull openjdk@sha256:7bf5c6f8c26ead1fab70e2de4559f54303bfe14556a30107438141ff40e7350e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull openjdk@sha256:6df966ec16cf225b2a190d7c9ee4814c410142983ee26d362c7
 ### `openjdk:8-buster` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:3df52c4d414526f57880a50174ec2a4cf57fcbffeda607f0e9c545be2a5478fe
+$ docker pull openjdk@sha256:d6e78627d195a8dfd8f3d12507e4cb03171b05a59021691696420110e783f697
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **229.5 MB (229462587 bytes)**  
+-	Total Size: **229.7 MB (229707472 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d54b885dc70478c0103ee144b5892f310869ee67126dda12944ea2970ffafe9`
+-	Image ID: `sha256:a8f144fe8de9b5efec943c1832fb031f9cc7e54ed3e21a8678df6f945988aafd`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -42,13 +42,13 @@ ENV JAVA_HOME=/usr/local/openjdk-8
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 31 Mar 2020 21:34:32 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 31 Mar 2020 21:34:32 GMT
-ENV JAVA_VERSION=8u242
-# Tue, 31 Mar 2020 21:34:32 GMT
-ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u242-b08/OpenJDK8U-jdk_
-# Tue, 31 Mar 2020 21:34:32 GMT
-ENV JAVA_URL_VERSION=8u242b08
-# Tue, 31 Mar 2020 21:34:40 GMT
+# Thu, 16 Apr 2020 00:29:28 GMT
+ENV JAVA_VERSION=8u252
+# Thu, 16 Apr 2020 00:29:28 GMT
+ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_
+# Thu, 16 Apr 2020 00:29:28 GMT
+ENV JAVA_URL_VERSION=8u252b09
+# Thu, 16 Apr 2020 00:29:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
 ```
 
@@ -77,7 +77,7 @@ RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		
 		Last Modified: Tue, 31 Mar 2020 21:37:35 GMT  
 		Size: 209.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:208407758d735e38f572f8025f77e930fa97708390bc2c4ed0c66c5297af49a9`  
-		Last Modified: Tue, 31 Mar 2020 21:37:55 GMT  
-		Size: 104.2 MB (104196945 bytes)  
+	-	`sha256:8c8a4c4376876069dba34d52273a4a7b5a3f9a0fb5778b6fa1c5df6c39ee69c4`  
+		Last Modified: Thu, 16 Apr 2020 00:33:12 GMT  
+		Size: 104.4 MB (104441830 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
