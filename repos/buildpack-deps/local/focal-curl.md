@@ -129,13 +129,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=11ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu4.dsc' base-files_11ubuntu4.dsc 1629 SHA256:982295cd9a885a48f46ee20b8759ef71c83a7bbf5864417ca8f3fe5d8dc70ce5
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu4.tar.xz' base-files_11ubuntu4.tar.xz 79064 SHA256:110bb9a2ec70e2bb71e5ff2213743438dce971382984163df2cd7affb061c76b
-```
 
 ### `dpkg` source package: `base-passwd=3.5.47`
 

@@ -246,13 +246,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=11ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu4.dsc' base-files_11ubuntu4.dsc 1629 SHA256:982295cd9a885a48f46ee20b8759ef71c83a7bbf5864417ca8f3fe5d8dc70ce5
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu4.tar.xz' base-files_11ubuntu4.tar.xz 79064 SHA256:110bb9a2ec70e2bb71e5ff2213743438dce971382984163df2cd7affb061c76b
-```
 
 ### `dpkg` source package: `base-passwd=3.5.47`
 
@@ -1092,14 +1088,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.25.1-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu1.dsc' git_2.25.1-1ubuntu1.dsc 2991 SHA256:3dd33fbcffe0da1b8647bd6afcc1f9386c23c70d9a12b49a85a1ed32b95dfd22
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1.orig.tar.xz' git_2.25.1.orig.tar.xz 5875548 SHA256:222796cc6e3bf2f9fd765f8f097daa3c3999bb7865ac88a8c974d98182e29f26
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu1.debian.tar.xz' git_2.25.1-1ubuntu1.debian.tar.xz 638604 SHA256:10be99685ba7ba7cb655c3e351ef8e02ae76626079401bd915502b84686cd669
-```
 
 ### `dpkg` source package: `glib2.0=2.64.1-1`
 
@@ -3148,15 +3139,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1d-2ubuntu6
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1d-2ubuntu6.dsc' openssl_1.1.1d-2ubuntu6.dsc 2702 SHA256:8c36ae00a404ccfb08a889a6438da89c97839404e4fc3ec2ad7f87ddf19e26fa
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1d.orig.tar.gz' openssl_1.1.1d.orig.tar.gz 8845861 SHA256:1e3a91bc1f9dfce01af26026f856e064eab4c8ee0a8f457b5ae30b40b8b711f2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1d.orig.tar.gz.asc' openssl_1.1.1d.orig.tar.gz.asc 488 SHA256:f3fd3299a79421fffd51d35f62636b8e987dab1d3033d93a19d7685868e15395
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1d-2ubuntu6.debian.tar.xz' openssl_1.1.1d-2ubuntu6.debian.tar.xz 1206416 SHA256:92d1e09cf0021a8de3712d4608d38d33bd2cb645932ef66177d2a3955d3f136b
-```
 
 ### `dpkg` source package: `p11-kit=0.23.20-1build1`
 
