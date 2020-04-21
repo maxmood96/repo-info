@@ -1,10 +1,10 @@
-# `caddy:2.0.0-rc.3`
+# `caddy:2.0.0-rc.3-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3a14b8af6e7a6b5d59c4ddbaa92e503d72f04f9a1379dcea1c6af1d7d1650699`
-- Created: `2020-04-16T00:19:31.954384061Z`
-- Virtual Size: ~ 52.38 Mb  
+- Image ID: `sha256:cc9477d0c347fd32b124a4d4dc0c3270d2453f7b118b3d607731e3f220da3f05`
+- Created: `2020-04-21T00:24:22.906204646Z`
+- Virtual Size: ~ 40.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["caddy","run","--config","/etc/caddy/Caddyfile","--adapter","caddyfile"]`
