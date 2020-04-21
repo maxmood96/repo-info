@@ -1,10 +1,10 @@
-# `python:2.7.17-stretch`
+# `python:2.7.18-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5c34b46b5699bccbf09b65734d1c63365a9ee83ad36a0d925ffb6adb180c9061`
-- Created: `2020-04-16T20:39:46.607092222Z`
-- Virtual Size: ~ 928.00 Mb  
+- Image ID: `sha256:e71fc5c0fcb1f3dde916cb124834175cabf8d70196d5b3d093012e1b928a6f11`
+- Created: `2020-04-20T19:41:06.391068201Z`
+- Virtual Size: ~ 928.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `PYTHONIOENCODING=UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
-  - `PYTHON_VERSION=2.7.17`
+  - `PYTHON_VERSION=2.7.18`
   - `PYTHON_PIP_VERSION=20.0.2`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/d59197a3c169cef378a22428a3fa99d33e080a5d/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=421ac1d44c0cf9730a088e337867d974b91bdce4ea2636099275071878cc189e`
@@ -1449,20 +1449,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.11.0-3+deb9u6
-'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.11.0-3+deb9u6.dsc' git_2.11.0-3+deb9u6.dsc 2944 SHA256:f51ffaa3f77f93f311f19d7b35d6832695fc2c79eadffeaaff3af723f76f5aaa
-'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.11.0.orig.tar.xz' git_2.11.0.orig.tar.xz 4197984 SHA256:7e7e8d69d494892373b87007674be5820a4bc1ef596a0117d03ea3169119fd0b
-'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.11.0-3+deb9u6.debian.tar.xz' git_2.11.0-3+deb9u6.debian.tar.xz 601716 SHA256:72788b660a860138106aa106ed35a99177ca1503f007661f53750ebf6faecf24
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.11.0-3+deb9u6/
 
-- https://sources.debian.net/src/git/1:2.11.0-3+deb9u6/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.11.0-3+deb9u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.11.0-3+deb9u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.50.3-2+deb9u2`
 

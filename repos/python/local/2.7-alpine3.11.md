@@ -1,10 +1,10 @@
-# `python:2.7.17-alpine3.11`
+# `python:2.7.18-alpine3.11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:037e005d160a014cfa3ad01e907ab4483f8611392de54788990a5d0f60f9651b`
-- Created: `2020-03-24T03:39:38.658974127Z`
-- Virtual Size: ~ 71.13 Mb  
+- Image ID: `sha256:8579e446340f415fece00398a37dbdc4fff1f16901af2e173d6ae8c0bdbb9505`
+- Created: `2020-04-20T19:52:15.851172775Z`
+- Virtual Size: ~ 71.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `PYTHONIOENCODING=UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
-  - `PYTHON_VERSION=2.7.17`
+  - `PYTHON_VERSION=2.7.18`
   - `PYTHON_PIP_VERSION=20.0.2`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/d59197a3c169cef378a22428a3fa99d33e080a5d/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=421ac1d44c0cf9730a088e337867d974b91bdce4ea2636099275071878cc189e`
@@ -431,16 +431,16 @@ MIT BSD GPL2+
 ### `apk` package: `ncurses-libs`
 
 ```console
-ncurses-libs-6.1_p20200118-r2 description:
+ncurses-libs-6.1_p20200118-r3 description:
 Ncurses libraries
 
-ncurses-libs-6.1_p20200118-r2 webpage:
+ncurses-libs-6.1_p20200118-r3 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-libs-6.1_p20200118-r2 installed size:
+ncurses-libs-6.1_p20200118-r3 installed size:
 507904
 
-ncurses-libs-6.1_p20200118-r2 license:
+ncurses-libs-6.1_p20200118-r3 license:
 MIT
 
 ```
@@ -448,16 +448,16 @@ MIT
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.1_p20200118-r2 description:
+ncurses-terminfo-base-6.1_p20200118-r3 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.1_p20200118-r2 webpage:
+ncurses-terminfo-base-6.1_p20200118-r3 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.1_p20200118-r2 installed size:
+ncurses-terminfo-base-6.1_p20200118-r3 installed size:
 217088
 
-ncurses-terminfo-base-6.1_p20200118-r2 license:
+ncurses-terminfo-base-6.1_p20200118-r3 license:
 MIT
 
 ```

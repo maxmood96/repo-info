@@ -1,10 +1,10 @@
-# `python:2.7.17-buster`
+# `python:2.7.18-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:01c23fcbab3fff0b8d9c987ec1b0d565ec9d3c884c8487cfe152ee0d59a36739`
-- Created: `2020-04-16T20:26:02.618226096Z`
-- Virtual Size: ~ 901.75 Mb  
+- Image ID: `sha256:68e7be49c28c89833fc91b44a8c1db6982b52695749d57c3d6fe995a9bb1df5f`
+- Created: `2020-04-20T19:28:33.441519819Z`
+- Virtual Size: ~ 901.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `PYTHONIOENCODING=UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
-  - `PYTHON_VERSION=2.7.17`
+  - `PYTHON_VERSION=2.7.18`
   - `PYTHON_PIP_VERSION=20.0.2`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/d59197a3c169cef378a22428a3fa99d33e080a5d/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=421ac1d44c0cf9730a088e337867d974b91bdce4ea2636099275071878cc189e`
@@ -1288,20 +1288,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.20.1-2+deb10u2
-'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.20.1-2+deb10u2.dsc' git_2.20.1-2+deb10u2.dsc 2923 SHA256:6aabffbb0392172cbe82c9f585c0e7b7a98e1741d7280310f212e44e1731413a
-'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.20.1.orig.tar.xz' git_2.20.1.orig.tar.xz 5359872 SHA256:9d2e91e2faa2ea61ba0a70201d023b36f54d846314591a002c610ea2ab81c3e9
-'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.20.1-2+deb10u2.debian.tar.xz' git_2.20.1-2+deb10u2.debian.tar.xz 636904 SHA256:6ab6020d82ef9991c4fe2bc1bc2c517c744c21e0e541a094e1952dff39c55357
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.20.1-2+deb10u2/
 
-- https://sources.debian.net/src/git/1:2.20.1-2+deb10u2/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.20.1-2+deb10u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.20.1-2+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.58.3-2+deb10u2`
 

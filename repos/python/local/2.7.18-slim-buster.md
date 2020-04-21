@@ -1,10 +1,10 @@
-# `python:2.7.17-slim-buster`
+# `python:2.7.18-slim-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9b6691391e153d48b1ed05bc0d4485ab5afbd082843ebaee5aacec9be93005ea`
-- Created: `2020-04-16T20:33:32.318944785Z`
-- Virtual Size: ~ 147.82 Mb  
+- Image ID: `sha256:eeb27ee6b89303f04a917e457eda70d032b1574ec80d0b4ea410d478a714538f`
+- Created: `2020-04-20T19:35:46.135435015Z`
+- Virtual Size: ~ 147.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `PYTHONIOENCODING=UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
-  - `PYTHON_VERSION=2.7.17`
+  - `PYTHON_VERSION=2.7.18`
   - `PYTHON_PIP_VERSION=20.0.2`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/d59197a3c169cef378a22428a3fa99d33e080a5d/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=421ac1d44c0cf9730a088e337867d974b91bdce4ea2636099275071878cc189e`
