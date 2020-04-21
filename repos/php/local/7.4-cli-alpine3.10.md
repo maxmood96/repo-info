@@ -1,9 +1,9 @@
-# `php:7.4.4-cli-alpine3.10`
+# `php:7.4.5-cli-alpine3.10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6a81f5989339734d5daa2541ccd5d3014f8f969a169c52275414a2cbeed92c9c`
-- Created: `2020-03-19T23:01:31.431179936Z`
+- Image ID: `sha256:20cc2c84d374164983acfc1355c120cfdf5b7d5a39217f486f574c2c873b3003`
+- Created: `2020-04-17T12:15:34.666559443Z`
 - Virtual Size: ~ 81.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,12 +15,12 @@
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
-  - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
+  - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.4`
-  - `PHP_URL=https://www.php.net/get/php-7.4.4.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.4.4.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=1873c4cefdd3df9a78dcffb2198bba5c2f0464f55c9c960720c84df483fca74c`
+  - `PHP_VERSION=7.4.5`
+  - `PHP_URL=https://www.php.net/get/php-7.4.5.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.4.5.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=d059fd7f55bdc4d2eada15a00a2976697010d3631ef6f83149cc5289e1f23c2c`
   - `PHP_MD5=`
 
 ## `apk` (`.apk`-based packages)

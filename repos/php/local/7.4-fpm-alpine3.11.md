@@ -1,10 +1,10 @@
-# `php:7.4.4-fpm-alpine3.11`
+# `php:7.4.5-fpm-alpine3.11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0e798217e66f4619eee287dbe26839956ebae92a68a69d0ea0b18e4b9ee882ca`
-- Created: `2020-03-24T01:35:48.317072483Z`
-- Virtual Size: ~ 81.39 Mb  
+- Image ID: `sha256:0422b12abbef2223a2de94bc3530f93ccb8e7cd8135a97d0d1faea6fee7b8176`
+- Created: `2020-04-17T12:04:24.062176716Z`
+- Virtual Size: ~ 81.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -16,12 +16,12 @@
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi`
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
-  - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
+  - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.4`
-  - `PHP_URL=https://www.php.net/get/php-7.4.4.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.4.4.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=1873c4cefdd3df9a78dcffb2198bba5c2f0464f55c9c960720c84df483fca74c`
+  - `PHP_VERSION=7.4.5`
+  - `PHP_URL=https://www.php.net/get/php-7.4.5.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.4.5.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=d059fd7f55bdc4d2eada15a00a2976697010d3631ef6f83149cc5289e1f23c2c`
   - `PHP_MD5=`
 
 ## `apk` (`.apk`-based packages)
@@ -352,16 +352,16 @@ MIT BSD GPL2+
 ### `apk` package: `ncurses-libs`
 
 ```console
-ncurses-libs-6.1_p20200118-r2 description:
+ncurses-libs-6.1_p20200118-r3 description:
 Ncurses libraries
 
-ncurses-libs-6.1_p20200118-r2 webpage:
+ncurses-libs-6.1_p20200118-r3 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-libs-6.1_p20200118-r2 installed size:
+ncurses-libs-6.1_p20200118-r3 installed size:
 507904
 
-ncurses-libs-6.1_p20200118-r2 license:
+ncurses-libs-6.1_p20200118-r3 license:
 MIT
 
 ```
@@ -369,16 +369,16 @@ MIT
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.1_p20200118-r2 description:
+ncurses-terminfo-base-6.1_p20200118-r3 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.1_p20200118-r2 webpage:
+ncurses-terminfo-base-6.1_p20200118-r3 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.1_p20200118-r2 installed size:
+ncurses-terminfo-base-6.1_p20200118-r3 installed size:
 217088
 
-ncurses-terminfo-base-6.1_p20200118-r2 license:
+ncurses-terminfo-base-6.1_p20200118-r3 license:
 MIT
 
 ```
