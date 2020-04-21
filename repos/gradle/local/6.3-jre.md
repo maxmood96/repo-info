@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:976528d9bfb362c022fc87ed6bdadbf0b342569d4f1a27c008c59df37c2b5524`
-- Created: `2020-03-26T18:46:08.169773751Z`
-- Virtual Size: ~ 461.81 Mb  
+- Image ID: `sha256:a657419a30f6ae86b0b75ce5bbbe684be6dbe2a9e47e08ed0d072ac3a8af5bb5`
+- Created: `2020-04-20T18:51:18.178594346Z`
+- Virtual Size: ~ 462.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u242-b08`
+  - `JAVA_VERSION=jdk8u252-b09`
   - `JAVA_HOME=/opt/java/openjdk`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=6.3`
@@ -691,12 +691,12 @@ $ apt-get source -qq --print-uris git-lfs=2.3.4-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_2.3.4-1.debian.tar.xz' git-lfs_2.3.4-1.debian.tar.xz 2732 SHA256:a39c2308d562dd52f7425d2c4a152ac15d296c27b796ad7abbe704680f62f98f
 ```
 
-### `dpkg` source package: `git=1:2.17.1-1ubuntu0.5`
+### `dpkg` source package: `git=1:2.17.1-1ubuntu0.6`
 
 Binary Packages:
 
-- `git=1:2.17.1-1ubuntu0.5`
-- `git-man=1:2.17.1-1ubuntu0.5`
+- `git=1:2.17.1-1ubuntu0.6`
+- `git-man=1:2.17.1-1ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -719,9 +719,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.17.1-1ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.6.dsc' git_2.17.1-1ubuntu0.6.dsc 2959 SHA256:a00eadba14b18ff32db5c215bd2acf970bffa00f15b9a0606fb1510d40579cba
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1.orig.tar.xz' git_2.17.1.orig.tar.xz 5015484 SHA256:79136e7aa83abae4d8a25c8111f113d3c5a63aeb5fd93cc72c26d49c6d5ba65e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.6.debian.tar.xz' git_2.17.1-1ubuntu0.6.debian.tar.xz 605972 SHA256:8f856f7c95f55aa4eb11c1b2978c98d80fa0a83c224eab868e05ef5602bfcdb7
+```
 
 ### `dpkg` source package: `glibc=2.27-3ubuntu1`
 
