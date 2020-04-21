@@ -46,13 +46,9 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris adduser=3.118ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.118ubuntu1.dsc' adduser_3.118ubuntu1.dsc 1808 SHA256:415e093e945d4a37679504f4f54e0fcd903c4f524dd90526440965aea7bba77c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.118ubuntu1.tar.xz' adduser_3.118ubuntu1.tar.xz 217300 SHA256:16e8d59231d814af0701a24195246f169a26df1b39d59e3cea04db882a31973a
-```
 
 ### `dpkg` source package: `apt=1.9.10`
 
@@ -129,13 +125,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=11ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu4.dsc' base-files_11ubuntu4.dsc 1629 SHA256:982295cd9a885a48f46ee20b8759ef71c83a7bbf5864417ca8f3fe5d8dc70ce5
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu4.tar.xz' base-files_11ubuntu4.tar.xz 79064 SHA256:110bb9a2ec70e2bb71e5ff2213743438dce971382984163df2cd7affb061c76b
-```
 
 ### `dpkg` source package: `base-passwd=3.5.47`
 
@@ -1243,13 +1235,9 @@ Licenses: (parsed from: `/usr/share/doc/ubuntu-keyring/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ubuntu-keyring=2020.02.11.1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2020.02.11.1.dsc' ubuntu-keyring_2020.02.11.1.dsc 1863 SHA256:599bb994e31047c5a99c2328146c18a919d46a45e3b9caa9bd5251845b75031c
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2020.02.11.1.tar.gz' ubuntu-keyring_2020.02.11.1.tar.gz 37735 SHA256:57385b37f6b02365940edbe96a75125ff973c68e7254cc3de7840d736fee70b6
-```
 
 ### `dpkg` source package: `util-linux=2.34-0.1ubuntu8`
 
