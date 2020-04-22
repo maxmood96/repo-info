@@ -1,10 +1,10 @@
-# `convertigo:7.7.0`
+# `convertigo:7.8.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e99be37adacf1d50a48ff5ac7f1f2b131947c9f1faa586e1c98955e591d5170b`
-- Created: `2020-04-17T18:20:49.262943834Z`
-- Virtual Size: ~ 770.03 Mb  
+- Image ID: `sha256:8851fe3602fb6f1dbc94ab84863cbc7c601078b4b9c7ccef5bcbae1a4cb3122f`
+- Created: `2020-04-21T18:24:44.198971283Z`
+- Virtual Size: ~ 770.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -28,8 +28,8 @@
   - `GOSU_GPG_KEYS=B42F6819007F00F88E364FD4036A9C25BF357DD4`
   - `TINI_VERSION=0.18.0`
   - `TINI_GPG_KEYS=6380DC428747F6C393FEACA59A84159D7001A4E5`
-  - `CONVERTIGO_VERSION=7.7.0`
-  - `CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/7.7.0/convertigo-7.7.0.war`
+  - `CONVERTIGO_VERSION=7.8.0`
+  - `CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/7.8.0/convertigo-7.8.0.war`
   - `CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F`
 
 ## `dpkg` (`.deb`-based packages)
@@ -931,20 +931,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.20.1-2+deb10u2
-'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.20.1-2+deb10u2.dsc' git_2.20.1-2+deb10u2.dsc 2923 SHA256:6aabffbb0392172cbe82c9f585c0e7b7a98e1741d7280310f212e44e1731413a
-'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.20.1.orig.tar.xz' git_2.20.1.orig.tar.xz 5359872 SHA256:9d2e91e2faa2ea61ba0a70201d023b36f54d846314591a002c610ea2ab81c3e9
-'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.20.1-2+deb10u2.debian.tar.xz' git_2.20.1-2+deb10u2.debian.tar.xz 636904 SHA256:6ab6020d82ef9991c4fe2bc1bc2c517c744c21e0e541a094e1952dff39c55357
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.20.1-2+deb10u2/
 
-- https://sources.debian.net/src/git/1:2.20.1-2+deb10u2/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.20.1-2+deb10u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.20.1-2+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.28-10`
 
