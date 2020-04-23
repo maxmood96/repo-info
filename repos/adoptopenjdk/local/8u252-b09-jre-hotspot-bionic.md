@@ -1,10 +1,10 @@
-# `adoptopenjdk:14_36-jre-hotspot-bionic`
+# `adoptopenjdk:8u252-b09-jre-hotspot-bionic`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3d147f33065e57bb8ee99006cd9c6a0d265c998073b6101c807b86989110ae83`
-- Created: `2020-03-26T18:20:48.882582092Z`
-- Virtual Size: ~ 265.24 Mb  
+- Image ID: `sha256:91cf554a1fba00278db13950ff224117f00ef66a0d6f1c00ef056b6305451733`
+- Created: `2020-04-20T17:22:07.279108726Z`
+- Virtual Size: ~ 205.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-14+36`
+  - `JAVA_VERSION=jdk8u252-b09`
   - `JAVA_HOME=/opt/java/openjdk`
 
 ## `dpkg` (`.deb`-based packages)

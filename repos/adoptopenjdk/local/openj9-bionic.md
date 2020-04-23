@@ -1,10 +1,10 @@
-# `adoptopenjdk:14_36.1-jdk-openj9-0.19.0-bionic`
+# `adoptopenjdk:14.0.1_7-jdk-openj9-0.20.0-bionic`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0c7550835648b59fa87a7354d25d179b556e78de011e8e385f884e951ca79ad3`
-- Created: `2020-03-26T18:21:27.082829949Z`
-- Virtual Size: ~ 432.99 Mb  
+- Image ID: `sha256:e1179cba6d8555f14b09414f3d78b0e2987e999c28e5dae1265b2fbdeef9b0c9`
+- Created: `2020-04-20T17:24:01.942305281Z`
+- Virtual Size: ~ 420.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-14+36.1_openj9-0.19.0`
+  - `JAVA_VERSION=jdk-14.0.1+7_openj9-0.20.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle`
 
