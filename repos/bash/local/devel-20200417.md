@@ -1,18 +1,18 @@
-# `bash:devel-20200410`
+# `bash:devel-20200417`
 
 ## Docker Metadata
 
-- Image ID: `sha256:aacf5e6352ced84230d3cfe1d82a51e2b215959f8ece4b605af8487011719133`
-- Created: `2020-04-13T23:21:16.415206325Z`
-- Virtual Size: ~ 13.52 Mb  
+- Image ID: `sha256:e8c4e3540f7563a3960c1884c43efbe58e85653acd8925b7e4edf1900786888c`
+- Created: `2020-04-20T17:29:20.394193445Z`
+- Virtual Size: ~ 12.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `_BASH_COMMIT=0db5ff012950bd5c0a8607b0c78602ce8ac55dc8`
-  - `_BASH_COMMIT_DESC=commit bash-20200410 snapshot`
+  - `_BASH_COMMIT=3235014e5b3d227ccd617b0be72d897eb476d23d`
+  - `_BASH_COMMIT_DESC=commit bash-20200417 snapshot`
 
 ## `apk` (`.apk`-based packages)
 
@@ -206,16 +206,16 @@ MIT BSD GPL2+
 ### `apk` package: `ncurses-libs`
 
 ```console
-ncurses-libs-6.1_p20200118-r2 description:
+ncurses-libs-6.1_p20200118-r3 description:
 Ncurses libraries
 
-ncurses-libs-6.1_p20200118-r2 webpage:
+ncurses-libs-6.1_p20200118-r3 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-libs-6.1_p20200118-r2 installed size:
+ncurses-libs-6.1_p20200118-r3 installed size:
 507904
 
-ncurses-libs-6.1_p20200118-r2 license:
+ncurses-libs-6.1_p20200118-r3 license:
 MIT
 
 ```
@@ -223,16 +223,16 @@ MIT
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.1_p20200118-r2 description:
+ncurses-terminfo-base-6.1_p20200118-r3 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.1_p20200118-r2 webpage:
+ncurses-terminfo-base-6.1_p20200118-r3 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.1_p20200118-r2 installed size:
+ncurses-terminfo-base-6.1_p20200118-r3 installed size:
 217088
 
-ncurses-terminfo-base-6.1_p20200118-r2 license:
+ncurses-terminfo-base-6.1_p20200118-r3 license:
 MIT
 
 ```
