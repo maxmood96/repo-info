@@ -1,7 +1,7 @@
 ## `adoptopenjdk:11-jdk-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:5bf869bf8593eaa5bb711f53dba662453cbe1cfc049fef22ae67f98361c0dd89
+$ docker pull adoptopenjdk@sha256:56dcefb0ad82c725568410c1d348e3e3185f5e4a482863d3af23ea1e08594e7a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -273,65 +273,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:11-jdk-hotspot` - linux; s390x
 
 ```console
-$ docker pull adoptopenjdk@sha256:eb66602334d2db2bf5e4081ff915cc661224b667d8d9e58e2a05ab4a6ef43561
+$ docker pull adoptopenjdk@sha256:272a6a534b900ba115963623175c6cd7f3ef92be6542941dde9d991f6035d9a1
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.0 MB (207954325 bytes)**  
+-	Total Size: **208.0 MB (207955010 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2fc3983d1761d0a339481a25aebfbb2025c81dc37a9a4c4e945a3dc25eacf55c`
+-	Image ID: `sha256:3d8e262b1b9df0509f72d53a0d1ff222cf62c5790da4efece0ba1f14a7922b86`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Fri, 20 Mar 2020 18:42:06 GMT
-ADD file:9a9f44c69cdb84f93d495237619b0c7b6d02c3a86cac5ff3c3150d1f46fdba17 in / 
-# Fri, 20 Mar 2020 18:42:09 GMT
+# Thu, 23 Apr 2020 17:52:20 GMT
+ADD file:ea66ef2a01c547f771866bfa221969f8a30489c28d2a81be8dde7f40e73da33b in / 
+# Thu, 23 Apr 2020 17:52:26 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 20 Mar 2020 18:42:10 GMT
+# Thu, 23 Apr 2020 17:52:28 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 20 Mar 2020 18:42:11 GMT
+# Thu, 23 Apr 2020 17:52:30 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 20 Mar 2020 18:42:11 GMT
+# Thu, 23 Apr 2020 17:52:31 GMT
 CMD ["/bin/bash"]
-# Fri, 20 Mar 2020 19:38:36 GMT
+# Fri, 24 Apr 2020 07:36:55 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 20 Mar 2020 19:38:50 GMT
+# Fri, 24 Apr 2020 07:37:07 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 20 Apr 2020 18:49:36 GMT
+# Fri, 24 Apr 2020 07:37:36 GMT
 ENV JAVA_VERSION=jdk-11.0.7+10
-# Mon, 20 Apr 2020 18:49:52 GMT
+# Fri, 24 Apr 2020 07:37:47 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='3b8b8bba6a0472ec7de5271cbf67f11e6ab525de6dd5d4729300375f1d56b7a1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.7_10.tar.gz';          ;;        armhf|armv7l)          ESUM='45c235af67498f87e3dc99642771e57547cf226335eaee8a55d195173e66a2e9';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_arm_linux_hotspot_11.0.7_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='a417db0295b1f4b538ecbaf7c774f3a177fab9657a665940170936c0eca4e71a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.7_10.tar.gz';          ;;        s390x)          ESUM='d9b72e87a1d3ebc0c9552f72ae5eb150fffc0298a7cb841f1ce7bfc70dcd1059';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.7_10.tar.gz';          ;;        amd64|x86_64)          ESUM='ee60304d782c9d5654bf1a6b3f38c683921c1711045e1db94525a51b7024a2ca';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.7_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 20 Apr 2020 18:49:55 GMT
+# Fri, 24 Apr 2020 07:37:50 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 20 Apr 2020 18:49:55 GMT
+# Fri, 24 Apr 2020 07:37:51 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:345ee2b1c666cad4104ddd5596e148e5c29087184128bb6099412591c696a492`  
-		Last Modified: Mon, 16 Mar 2020 15:40:41 GMT  
-		Size: 25.4 MB (25364606 bytes)  
+	-	`sha256:13b4c2e4bb97a2a80bb0e557eeba41e4adea0f5e18352e359bca3f847193899c`  
+		Last Modified: Mon, 06 Apr 2020 15:41:16 GMT  
+		Size: 25.4 MB (25365338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6259e081be079eda34010ff7e7c4be7d6d6d927b64ddaa77f8a7f09e30a69229`  
-		Last Modified: Fri, 20 Mar 2020 18:42:50 GMT  
-		Size: 36.2 KB (36183 bytes)  
+	-	`sha256:471a80e39fb485b86610de915eaaad3d867cc97e460b6da3bb656e03520e8a63`  
+		Last Modified: Thu, 23 Apr 2020 17:54:13 GMT  
+		Size: 36.2 KB (36171 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d110c40c78a87ebc1e1430d0fb68dd1aec06706c6b2d6d7c82a661f8b74f89a`  
-		Last Modified: Fri, 20 Mar 2020 18:42:49 GMT  
-		Size: 846.0 B  
+	-	`sha256:fdb0c128ddabc6a980ec71426ade04fc9bba2e1afcdc243e2d09c316b635f814`  
+		Last Modified: Thu, 23 Apr 2020 17:54:13 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7af2dd09f8eef8efc3d1215ffd89f820bc87f6dc5cd490b3322258ab8e2466e`  
-		Last Modified: Fri, 20 Mar 2020 18:42:55 GMT  
-		Size: 190.0 B  
+	-	`sha256:678052ac148ee123df2f0773eb3a0f5f90490ada8b9a5705363b18a2f45fbe88`  
+		Last Modified: Thu, 23 Apr 2020 17:54:13 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a46c87faf3e6b36db60f122e065a6d270147409d2b806f06443b02248d6187ad`  
-		Last Modified: Fri, 20 Mar 2020 19:42:19 GMT  
-		Size: 13.0 MB (13043890 bytes)  
+	-	`sha256:2cda817e3f7c865b0840c4d8029ccd310418aaf7af7a0aeda3eaa4cb945fca4b`  
+		Last Modified: Fri, 24 Apr 2020 07:41:58 GMT  
+		Size: 13.0 MB (13043886 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:392c16590d3a596eabdb7491e710535679e1d8e10d92d5ae50198c8295c2808a`  
-		Last Modified: Mon, 20 Apr 2020 18:53:05 GMT  
-		Size: 169.5 MB (169508610 bytes)  
+	-	`sha256:1370fd85cedd5c7700ae4fa8a81fc148d58be918f99211f85c77ce21f3746eb0`  
+		Last Modified: Fri, 24 Apr 2020 07:42:35 GMT  
+		Size: 169.5 MB (169508577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:11-jdk-hotspot` - windows version 10.0.14393.3630; amd64
