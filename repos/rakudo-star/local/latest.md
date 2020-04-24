@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f8d74a5b2c0ce74f2447067aa37c3ba6d5565d13782c577a86b669db4372da0c`
-- Created: `2020-04-17T07:06:31.27874321Z`
-- Virtual Size: ~ 368.80 Mb  
+- Image ID: `sha256:5d428b1817d23585ecfb07813236e50cdfc83d4fcfd13ec76adecfdf23689047`
+- Created: `2020-04-23T21:41:11.147244332Z`
+- Virtual Size: ~ 368.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["perl6"]`
@@ -845,12 +845,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.8.3-14/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.8.3-14/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `git=1:2.11.0-3+deb9u6`
+### `dpkg` source package: `git=1:2.11.0-3+deb9u7`
 
 Binary Packages:
 
-- `git=1:2.11.0-3+deb9u6`
-- `git-man=1:2.11.0-3+deb9u6`
+- `git=1:2.11.0-3+deb9u7`
+- `git-man=1:2.11.0-3+deb9u7`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -873,13 +873,20 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris git=1:2.11.0-3+deb9u7
+'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.11.0-3+deb9u7.dsc' git_2.11.0-3+deb9u7.dsc 2944 SHA256:7f2be1b1709c216ad06590687cc8fc0ff6b55a6c3e0ad6ec32b2567ce10adec1
+'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.11.0.orig.tar.xz' git_2.11.0.orig.tar.xz 4197984 SHA256:7e7e8d69d494892373b87007674be5820a4bc1ef596a0117d03ea3169119fd0b
+'http://security.debian.org/debian-security/pool/updates/main/g/git/git_2.11.0-3+deb9u7.debian.tar.xz' git_2.11.0-3+deb9u7.debian.tar.xz 610188 SHA256:3f54b7ea7b8cda477ddb559c63de063c5bd49d8ab772330c05c79ace546ce38d
+```
 
-- http://snapshot.debian.org/package/git/1:2.11.0-3+deb9u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/git/1:2.11.0-3+deb9u7/ (for browsing the source)
+- https://sources.debian.net/src/git/1:2.11.0-3+deb9u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/git/1:2.11.0-3+deb9u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.24-11+deb9u4`
 
