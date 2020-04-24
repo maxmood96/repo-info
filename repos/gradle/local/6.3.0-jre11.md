@@ -719,14 +719,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.17.1-1ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.6.dsc' git_2.17.1-1ubuntu0.6.dsc 2959 SHA256:a00eadba14b18ff32db5c215bd2acf970bffa00f15b9a0606fb1510d40579cba
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1.orig.tar.xz' git_2.17.1.orig.tar.xz 5015484 SHA256:79136e7aa83abae4d8a25c8111f113d3c5a63aeb5fd93cc72c26d49c6d5ba65e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.6.debian.tar.xz' git_2.17.1-1ubuntu0.6.debian.tar.xz 605972 SHA256:8f856f7c95f55aa4eb11c1b2978c98d80fa0a83c224eab868e05ef5602bfcdb7
-```
 
 ### `dpkg` source package: `glibc=2.27-3ubuntu1`
 
@@ -1826,14 +1821,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.17-1~18.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17-1~18.04.dsc' python2.7_2.7.17-1~18.04.dsc 3388 SHA256:6d68c4706e44e567668345435b521190cc8b8e8ee78a38078d16223c19ddb15d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17.orig.tar.gz' python2.7_2.7.17.orig.tar.gz 17535962 SHA256:f22059d09cdf9625e0a7284d24a13062044f5bf59d93a7f3382190dfa94cecde
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17-1~18.04.diff.gz' python2.7_2.7.17-1~18.04.diff.gz 287074 SHA256:d2088da2c791fbdf4e209593f82cc05f08711efa2b9050abc62f204db966e16e
-```
 
 ### `dpkg` source package: `readline=7.0-3`
 

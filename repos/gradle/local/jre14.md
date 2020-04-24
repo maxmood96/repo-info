@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:06eb758f7786278fc67924a767eaa1025734940668c62a6987544cad86a87474`
-- Created: `2020-04-02T00:26:02.938715451Z`
-- Virtual Size: ~ 521.76 Mb  
+- Image ID: `sha256:4c540d04afd3763bfce44ac5891041cf35ff237e3991366f845dd748839a4e0a`
+- Created: `2020-04-21T18:39:17.065491008Z`
+- Virtual Size: ~ 521.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-14+36`
+  - `JAVA_VERSION=jdk-14.0.1+7`
   - `JAVA_HOME=/opt/java/openjdk`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=6.3`
@@ -691,12 +691,12 @@ $ apt-get source -qq --print-uris git-lfs=2.3.4-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_2.3.4-1.debian.tar.xz' git-lfs_2.3.4-1.debian.tar.xz 2732 SHA256:a39c2308d562dd52f7425d2c4a152ac15d296c27b796ad7abbe704680f62f98f
 ```
 
-### `dpkg` source package: `git=1:2.17.1-1ubuntu0.5`
+### `dpkg` source package: `git=1:2.17.1-1ubuntu0.7`
 
 Binary Packages:
 
-- `git=1:2.17.1-1ubuntu0.5`
-- `git-man=1:2.17.1-1ubuntu0.5`
+- `git=1:2.17.1-1ubuntu0.7`
+- `git-man=1:2.17.1-1ubuntu0.7`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -719,9 +719,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.17.1-1ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.7.dsc' git_2.17.1-1ubuntu0.7.dsc 2959 SHA256:b1458c126514fe76de4fb2be7b2850f6b69ecaa35f89f64defb37200a46da2e3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1.orig.tar.xz' git_2.17.1.orig.tar.xz 5015484 SHA256:79136e7aa83abae4d8a25c8111f113d3c5a63aeb5fd93cc72c26d49c6d5ba65e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.7.debian.tar.xz' git_2.17.1-1ubuntu0.7.debian.tar.xz 614088 SHA256:169a0d8139dbe57dc4e7300b3677f100b1fdc660dae66e6b81b338d4eaa9c54a
+```
 
 ### `dpkg` source package: `glibc=2.27-3ubuntu1`
 
@@ -1793,14 +1798,14 @@ $ apt-get source -qq --print-uris python-defaults=2.7.15~rc1-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.15~rc1-1.tar.gz' python-defaults_2.7.15~rc1-1.tar.gz 1958015 SHA256:f3bed2b81091821d2e514c2e17c6846f7e744487fd15f7d3c48fa1c91b9cd49b
 ```
 
-### `dpkg` source package: `python2.7=2.7.17-1~18.04`
+### `dpkg` source package: `python2.7=2.7.17-1~18.04ubuntu1`
 
 Binary Packages:
 
-- `libpython2.7-minimal:amd64=2.7.17-1~18.04`
-- `libpython2.7-stdlib:amd64=2.7.17-1~18.04`
-- `python2.7=2.7.17-1~18.04`
-- `python2.7-minimal=2.7.17-1~18.04`
+- `libpython2.7-minimal:amd64=2.7.17-1~18.04ubuntu1`
+- `libpython2.7-stdlib:amd64=2.7.17-1~18.04ubuntu1`
+- `python2.7=2.7.17-1~18.04ubuntu1`
+- `python2.7-minimal=2.7.17-1~18.04ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/share/doc/libpython2.7-stdlib/copyright`, `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/python2.7-minimal/copyright`)
 
@@ -1824,10 +1829,10 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python2.7=2.7.17-1~18.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17-1~18.04.dsc' python2.7_2.7.17-1~18.04.dsc 3388 SHA256:6d68c4706e44e567668345435b521190cc8b8e8ee78a38078d16223c19ddb15d
+$ apt-get source -qq --print-uris python2.7=2.7.17-1~18.04ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17-1~18.04ubuntu1.dsc' python2.7_2.7.17-1~18.04ubuntu1.dsc 3475 SHA256:b258c6ca2dad2d49b84b4657b21efd8e3a0db64bf88394c567b6325c91943804
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17.orig.tar.gz' python2.7_2.7.17.orig.tar.gz 17535962 SHA256:f22059d09cdf9625e0a7284d24a13062044f5bf59d93a7f3382190dfa94cecde
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17-1~18.04.diff.gz' python2.7_2.7.17-1~18.04.diff.gz 287074 SHA256:d2088da2c791fbdf4e209593f82cc05f08711efa2b9050abc62f204db966e16e
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17-1~18.04ubuntu1.diff.gz' python2.7_2.7.17-1~18.04ubuntu1.diff.gz 289562 SHA256:aa84d777881498f18036ece85689444d8542056cef25a59cd94eec7ecae73b78
 ```
 
 ### `dpkg` source package: `readline=7.0-3`
