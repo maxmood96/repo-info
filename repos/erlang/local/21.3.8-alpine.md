@@ -1,19 +1,19 @@
-# `erlang:21.3.8.14-alpine`
+# `erlang:21.3.8.15-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2e2862e64bdb9f1145bc6c3405657702cecd49180a59138930b24a04cabb986b`
-- Created: `2020-03-06T02:18:01.533172242Z`
-- Virtual Size: ~ 73.36 Mb  
+- Image ID: `sha256:0fa42a763165d4fdf25147f057f4d9b6dfe88898ec02c33a7f78314972c62be8`
+- Created: `2020-04-28T01:20:21.239418483Z`
+- Virtual Size: ~ 73.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=21.3.8.14`
+  - `OTP_VERSION=21.3.8.15`
   - `REBAR3_VERSION=3.13.1`
 - Labels:
-  - `org.opencontainers.image.version=21.3.8.14`
+  - `org.opencontainers.image.version=21.3.8.15`
 
 ## `apk` (`.apk`-based packages)
 
@@ -88,16 +88,16 @@ GPL-2.0
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20190108-r0 description:
+ca-certificates-20191127-r0 description:
 Common CA certificates PEM files
 
-ca-certificates-20190108-r0 webpage:
+ca-certificates-20191127-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20190108-r0 installed size:
-737280
+ca-certificates-20191127-r0 installed size:
+741376
 
-ca-certificates-20190108-r0 license:
+ca-certificates-20191127-r0 license:
 MPL-2.0 GPL-2.0-or-later
 
 ```
@@ -105,16 +105,16 @@ MPL-2.0 GPL-2.0-or-later
 ### `apk` package: `ca-certificates-cacert`
 
 ```console
-ca-certificates-cacert-20190108-r0 description:
+ca-certificates-cacert-20191127-r0 description:
 Mozilla bundled certificates
 
-ca-certificates-cacert-20190108-r0 webpage:
+ca-certificates-cacert-20191127-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-cacert-20190108-r0 installed size:
+ca-certificates-cacert-20191127-r0 installed size:
 245760
 
-ca-certificates-cacert-20190108-r0 license:
+ca-certificates-cacert-20191127-r0 license:
 MPL-2.0 GPL-2.0-or-later
 
 ```
@@ -139,16 +139,16 @@ BSD
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1d-r2 description:
+libcrypto1.1-1.1.1g-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1d-r2 webpage:
+libcrypto1.1-1.1.1g-r0 webpage:
 https://www.openssl.org
 
-libcrypto1.1-1.1.1d-r2 installed size:
-2748416
+libcrypto1.1-1.1.1g-r0 installed size:
+2760704
 
-libcrypto1.1-1.1.1d-r2 license:
+libcrypto1.1-1.1.1g-r0 license:
 OpenSSL
 
 ```
@@ -156,16 +156,16 @@ OpenSSL
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1d-r2 description:
+libssl1.1-1.1.1g-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1d-r2 webpage:
+libssl1.1-1.1.1g-r0 webpage:
 https://www.openssl.org
 
-libssl1.1-1.1.1d-r2 installed size:
+libssl1.1-1.1.1g-r0 installed size:
 536576
 
-libssl1.1-1.1.1d-r2 license:
+libssl1.1-1.1.1g-r0 license:
 OpenSSL
 
 ```
