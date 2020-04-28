@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:97f6083bca31cb91c221467afe32b7f0d523fd412fabf5ff0325a0b58eb7b397`
-- Created: `2020-04-13T23:56:16.911260292Z`
-- Virtual Size: ~ 118.01 Mb  
+- Image ID: `sha256:4b74fb5edaede295ed5658cd1da5c5b30f63d35e492eda6ffea39297ca620b54`
+- Created: `2020-04-24T13:50:32.686196426Z`
+- Virtual Size: ~ 118.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -59,16 +59,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.10.4-r3 description:
+apk-tools-2.10.5-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.10.4-r3 webpage:
+apk-tools-2.10.5-r0 webpage:
 https://git.alpinelinux.org/cgit/apk-tools/
 
-apk-tools-2.10.4-r3 installed size:
+apk-tools-2.10.5-r0 installed size:
 262144
 
-apk-tools-2.10.4-r3 license:
+apk-tools-2.10.5-r0 license:
 GPL2
 
 ```
@@ -127,16 +127,16 @@ BSD
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1d-r3 description:
+libcrypto1.1-1.1.1g-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1d-r3 webpage:
+libcrypto1.1-1.1.1g-r0 webpage:
 https://www.openssl.org
 
-libcrypto1.1-1.1.1d-r3 installed size:
-2748416
+libcrypto1.1-1.1.1g-r0 installed size:
+2760704
 
-libcrypto1.1-1.1.1d-r3 license:
+libcrypto1.1-1.1.1g-r0 license:
 OpenSSL
 
 ```
@@ -161,16 +161,16 @@ GPL LGPL
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1d-r3 description:
+libssl1.1-1.1.1g-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1d-r3 webpage:
+libssl1.1-1.1.1g-r0 webpage:
 https://www.openssl.org
 
-libssl1.1-1.1.1d-r3 installed size:
-536576
+libssl1.1-1.1.1g-r0 installed size:
+540672
 
-libssl1.1-1.1.1d-r3 license:
+libssl1.1-1.1.1g-r0 license:
 OpenSSL
 
 ```
