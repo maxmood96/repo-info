@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:af26cf64bba77dfc96bf19c2e65f31a3f8403cd6a919a3e1040488ab94a8b82d`
-- Created: `2020-04-20T20:36:39.267448036Z`
+- Image ID: `sha256:fceca34eb09fa86061c7c3e55cebc66a1bee0e3cbacb6610f16dcf6f9b805896`
+- Created: `2020-04-25T07:30:18.524085767Z`
 - Virtual Size: ~ 1.29 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -510,15 +510,9 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.7-1ubuntu2.7
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7-1ubuntu2.7.dsc' cups_2.2.7-1ubuntu2.7.dsc 3339 SHA256:48a48cc93a931a3a22b04f68cdaa736421759888e72e54dee2acfd3dae9fe1ea
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7.orig.tar.gz' cups_2.2.7.orig.tar.gz 10330296 SHA256:3c4b637b737077565ccdfbd5f61785d03f49461ae736fcc2c0ffaf41d2c6ea6a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7.orig.tar.gz.asc' cups_2.2.7.orig.tar.gz.asc 872 SHA256:2b17bef166e1f8a0dece544c0e4f0d847f6d2c8e784298898966352f4e47581a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.7-1ubuntu2.7.debian.tar.xz' cups_2.2.7-1ubuntu2.7.debian.tar.xz 362500 SHA256:9d603bfc13ffa9ba8ad8f94ab3ca0e5779eeaa546809381e1580fc3da132cfe9
-```
 
 ### `dpkg` source package: `curl=7.58.0-2ubuntu3.8`
 
@@ -1515,12 +1509,12 @@ $ apt-get source -qq --print-uris jbigkit=2.1-3.1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/j/jbigkit/jbigkit_2.1-3.1build1.debian.tar.xz' jbigkit_2.1-3.1build1.debian.tar.xz 7672 SHA256:d7151df94f409045aa4d27dab88e538398196330d1ce135b60564dbc5db0a5c4
 ```
 
-### `dpkg` source package: `json-glib=1.4.2-3`
+### `dpkg` source package: `json-glib=1.4.2-3ubuntu0.18.04.1`
 
 Binary Packages:
 
-- `libjson-glib-1.0-0:amd64=1.4.2-3`
-- `libjson-glib-1.0-common=1.4.2-3`
+- `libjson-glib-1.0-0:amd64=1.4.2-3ubuntu0.18.04.1`
+- `libjson-glib-1.0-common=1.4.2-3ubuntu0.18.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libjson-glib-1.0-0/copyright`, `/usr/share/doc/libjson-glib-1.0-common/copyright`)
 
@@ -1530,10 +1524,10 @@ Licenses: (parsed from: `/usr/share/doc/libjson-glib-1.0-0/copyright`, `/usr/sha
 Source:
 
 ```console
-$ apt-get source -qq --print-uris json-glib=1.4.2-3
-'http://archive.ubuntu.com/ubuntu/pool/main/j/json-glib/json-glib_1.4.2-3.dsc' json-glib_1.4.2-3.dsc 2619 SHA256:b59d33f0d92e3b33754e6f1ece87d3769af1507b322b3b702fba01ef24168874
+$ apt-get source -qq --print-uris json-glib=1.4.2-3ubuntu0.18.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/j/json-glib/json-glib_1.4.2-3ubuntu0.18.04.1.dsc' json-glib_1.4.2-3ubuntu0.18.04.1.dsc 2112 SHA256:8b7e878616e72e7da2a91cbf8bcd5e4573bf6f199ec56eb5d68b70308236e4da
 'http://archive.ubuntu.com/ubuntu/pool/main/j/json-glib/json-glib_1.4.2.orig.tar.xz' json-glib_1.4.2.orig.tar.xz 148404 SHA256:ea185056d95f26a549590677cb532a0b2955e58b118b4486d6587ee9ccaf73c1
-'http://archive.ubuntu.com/ubuntu/pool/main/j/json-glib/json-glib_1.4.2-3.debian.tar.xz' json-glib_1.4.2-3.debian.tar.xz 8160 SHA256:ef8dd5682bdb8e7b2ae55149d86186aa6d0c90ed522e7dda2a0ed12abb14108f
+'http://archive.ubuntu.com/ubuntu/pool/main/j/json-glib/json-glib_1.4.2-3ubuntu0.18.04.1.debian.tar.xz' json-glib_1.4.2-3ubuntu0.18.04.1.debian.tar.xz 9072 SHA256:3f793d1decf6f82ea5b3b0e099bbea5009793d39933ecc1ded1f0b02a30394be
 ```
 
 ### `dpkg` source package: `keyutils=1.5.9-9.2ubuntu2`
@@ -3688,15 +3682,15 @@ $ apt-get source -qq --print-uris python3-defaults=3.6.7-1~18.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.6.7-1~18.04.tar.gz' python3-defaults_3.6.7-1~18.04.tar.gz 137600 SHA256:df14f4993ac87537415f1abaa69d80790fb01e51033416bc123038f731286ed4
 ```
 
-### `dpkg` source package: `python3.6=3.6.9-1~18.04`
+### `dpkg` source package: `python3.6=3.6.9-1~18.04ubuntu1`
 
 Binary Packages:
 
-- `libpython3.6:amd64=3.6.9-1~18.04`
-- `libpython3.6-minimal:amd64=3.6.9-1~18.04`
-- `libpython3.6-stdlib:amd64=3.6.9-1~18.04`
-- `python3.6=3.6.9-1~18.04`
-- `python3.6-minimal=3.6.9-1~18.04`
+- `libpython3.6:amd64=3.6.9-1~18.04ubuntu1`
+- `libpython3.6-minimal:amd64=3.6.9-1~18.04ubuntu1`
+- `libpython3.6-stdlib:amd64=3.6.9-1~18.04ubuntu1`
+- `python3.6=3.6.9-1~18.04ubuntu1`
+- `python3.6-minimal=3.6.9-1~18.04ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.6/copyright`, `/usr/share/doc/libpython3.6-minimal/copyright`, `/usr/share/doc/libpython3.6-stdlib/copyright`, `/usr/share/doc/python3.6/copyright`, `/usr/share/doc/python3.6-minimal/copyright`)
 
@@ -3718,9 +3712,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.6/copyright`, `/usr/share/doc
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.6=3.6.9-1~18.04ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.9-1~18.04ubuntu1.dsc' python3.6_3.6.9-1~18.04ubuntu1.dsc 3446 SHA256:602a9d82c945589c2c7a30f2dc0233a4d6c8fa75e63f941900c75d50093781f8
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.9.orig.tar.xz' python3.6_3.6.9.orig.tar.xz 17212164 SHA256:5e2f5f554e3f8f7f0296f7e73d8600c4e9acbaee6b2555b83206edf5153870da
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.9-1~18.04ubuntu1.debian.tar.xz' python3.6_3.6.9-1~18.04ubuntu1.debian.tar.xz 215804 SHA256:d0ed504ea18389f932eb8f5c6b713ec86edfbac0b4f294017ffd6219665e902d
+```
 
 ### `dpkg` source package: `raptor2=2.0.14-1build1`
 
@@ -4120,49 +4119,21 @@ $ apt-get source -qq --print-uris unzip=6.0-21ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-21ubuntu1.debian.tar.xz' unzip_6.0-21ubuntu1.debian.tar.xz 21080 SHA256:8db974c22a5ef50029eb9a7e5429ff099e1cf7cfd36d3951fa4e00e4fd47843f
 ```
 
-### `dpkg` source package: `util-linux=2.31.1-0.4ubuntu3.5`
-
-Binary Packages:
-
-- `bsdutils=1:2.31.1-0.4ubuntu3.5`
-- `fdisk=2.31.1-0.4ubuntu3.5`
-- `libblkid1:amd64=2.31.1-0.4ubuntu3.5`
-- `libfdisk1:amd64=2.31.1-0.4ubuntu3.5`
-- `libmount1:amd64=2.31.1-0.4ubuntu3.5`
-- `libsmartcols1:amd64=2.31.1-0.4ubuntu3.5`
-- `mount=2.31.1-0.4ubuntu3.5`
-- `util-linux=2.31.1-0.4ubuntu3.5`
-
-Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdisk/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
-
-- `BSD-2-clause`
-- `BSD-3-clause`
-- `BSD-4-clause`
-- `GPL-2`
-- `GPL-2+`
-- `GPL-3`
-- `GPL-3+`
-- `LGPL`
-- `LGPL-2`
-- `LGPL-2+`
-- `LGPL-2.1`
-- `LGPL-2.1+`
-- `LGPL-3`
-- `LGPL-3+`
-- `MIT`
-- `public-domain`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `util-linux=2.31.1-0.4ubuntu3.6`
 
 Binary Packages:
 
+- `bsdutils=1:2.31.1-0.4ubuntu3.6`
+- `fdisk=2.31.1-0.4ubuntu3.6`
+- `libblkid1:amd64=2.31.1-0.4ubuntu3.6`
+- `libfdisk1:amd64=2.31.1-0.4ubuntu3.6`
+- `libmount1:amd64=2.31.1-0.4ubuntu3.6`
+- `libsmartcols1:amd64=2.31.1-0.4ubuntu3.6`
 - `libuuid1:amd64=2.31.1-0.4ubuntu3.6`
+- `mount=2.31.1-0.4ubuntu3.6`
+- `util-linux=2.31.1-0.4ubuntu3.6`
 
-Licenses: (parsed from: `/usr/share/doc/libuuid1/copyright`)
+Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdisk/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
 - `BSD-2-clause`
 - `BSD-3-clause`
