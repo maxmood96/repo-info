@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ffa03af468a67e5e2abb685fb7df26fe482c23995fef5bf9896f279c5295a40b`
-- Created: `2020-04-21T01:26:06.721072194Z`
-- Virtual Size: ~ 678.93 Mb  
+- Image ID: `sha256:f8f2b0d3d3a165309cec700260a6d9d6880ac7949767872ba04cc876b99c0275`
+- Created: `2020-04-24T20:19:06.305799697Z`
+- Virtual Size: ~ 678.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -54,11 +54,11 @@ $ apt-get source -qq --print-uris adduser=3.118ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.118ubuntu1.tar.xz' adduser_3.118ubuntu1.tar.xz 217300 SHA256:16e8d59231d814af0701a24195246f169a26df1b39d59e3cea04db882a31973a
 ```
 
-### `dpkg` source package: `apr-util=1.6.1-4build1`
+### `dpkg` source package: `apr-util=1.6.1-4ubuntu0.1`
 
 Binary Packages:
 
-- `libaprutil1:amd64=1.6.1-4build1`
+- `libaprutil1:amd64=1.6.1-4ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libaprutil1/copyright`)
 
@@ -67,11 +67,10 @@ Licenses: (parsed from: `/usr/share/doc/libaprutil1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apr-util=1.6.1-4build1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr-util/apr-util_1.6.1-4build1.dsc' apr-util_1.6.1-4build1.dsc 2838 SHA256:eb38c2580ebca1cb794cac38dc0f38fc1b313b6a95740b9bde3fd0f2aecb1bc1
+$ apt-get source -qq --print-uris apr-util=1.6.1-4ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apr-util/apr-util_1.6.1-4ubuntu0.1.dsc' apr-util_1.6.1-4ubuntu0.1.dsc 2693 SHA256:ff82b62c3ac02a98b758aa2e3dff9bae38ebcda64ef38d9cfddd3ac359153bfa
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr-util/apr-util_1.6.1.orig.tar.bz2' apr-util_1.6.1.orig.tar.bz2 428595 SHA256:d3e12f7b6ad12687572a3a39475545a072608f4ba03a6ce8a3778f607dd0035b
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr-util/apr-util_1.6.1.orig.tar.bz2.asc' apr-util_1.6.1.orig.tar.bz2.asc 801 SHA256:47837b605290c0d7659b73734e4a9d5e6c0c24c13185cd4d91837afe63c07ca4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr-util/apr-util_1.6.1-4build1.debian.tar.xz' apr-util_1.6.1-4build1.debian.tar.xz 212508 SHA256:62d45d064dabcced9dcf418a5ecaff3de56a082cb8edb064becf89eb2cba05c4
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apr-util/apr-util_1.6.1-4ubuntu0.1.debian.tar.xz' apr-util_1.6.1-4ubuntu0.1.debian.tar.xz 212860 SHA256:e944f857f1c3f93b853ff51a62c4ba7e05bc1a27a4869f0a3ace4758c4a138bf
 ```
 
 ### `dpkg` source package: `apr=1.6.5-1`
@@ -1013,12 +1012,12 @@ $ apt-get source -qq --print-uris gdk-pixbuf=2.40.0+dfsg-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.40.0+dfsg-1build1.debian.tar.xz' gdk-pixbuf_2.40.0+dfsg-1build1.debian.tar.xz 17080 SHA256:1116d82dc9eef0481dfdc84c4ec56a8b0884cb14048c8b0c3ecfdd85e0de48c9
 ```
 
-### `dpkg` source package: `git=1:2.20.1-2ubuntu1.19.10.1`
+### `dpkg` source package: `git=1:2.20.1-2ubuntu1.19.10.3`
 
 Binary Packages:
 
-- `git=1:2.20.1-2ubuntu1.19.10.1`
-- `git-man=1:2.20.1-2ubuntu1.19.10.1`
+- `git=1:2.20.1-2ubuntu1.19.10.3`
+- `git-man=1:2.20.1-2ubuntu1.19.10.3`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1041,9 +1040,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.20.1-2ubuntu1.19.10.3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.20.1-2ubuntu1.19.10.3.dsc' git_2.20.1-2ubuntu1.19.10.3.dsc 3001 SHA256:6f26214007543efbf4d7856bb9c8834e7a5f61132ca08542d3a42721be6a922b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.20.1.orig.tar.xz' git_2.20.1.orig.tar.xz 5359872 SHA256:9d2e91e2faa2ea61ba0a70201d023b36f54d846314591a002c610ea2ab81c3e9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.20.1-2ubuntu1.19.10.3.debian.tar.xz' git_2.20.1-2ubuntu1.19.10.3.debian.tar.xz 642024 SHA256:f5e0e0453205723b0cfa7751b10f3d368ced6cfc60db2d24c1a0f025e9559c59
+```
 
 ### `dpkg` source package: `glib2.0=2.62.4-1~ubuntu19.10.2`
 
@@ -1158,11 +1162,11 @@ $ apt-get source -qq --print-uris gnupg2=2.2.12-1ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.12-1ubuntu3.debian.tar.xz' gnupg2_2.2.12-1ubuntu3.debian.tar.xz 65876 SHA256:d95527c25e4c4eb404b1b29096044235eab56b2f5e29a94d764c2063b31016fe
 ```
 
-### `dpkg` source package: `gnutls28=3.6.9-5ubuntu1`
+### `dpkg` source package: `gnutls28=3.6.9-5ubuntu1.1`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.6.9-5ubuntu1`
+- `libgnutls30:amd64=3.6.9-5ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -1182,11 +1186,11 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.6.9-5ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.9-5ubuntu1.dsc' gnutls28_3.6.9-5ubuntu1.dsc 3515 SHA256:3990f1d4d72f1c962a27b7a9db64281e35a2421e7ee718f6e63e789f5a4d5928
+$ apt-get source -qq --print-uris gnutls28=3.6.9-5ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.9-5ubuntu1.1.dsc' gnutls28_3.6.9-5ubuntu1.1.dsc 3486 SHA256:ed4675711367f8e9c129b5ee1fbcd7e6e652e04b6a27faac06d9a6196fcb0d04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.9.orig.tar.xz' gnutls28_3.6.9.orig.tar.xz 5773928 SHA256:4331fca55817ecdd74450b908a6c29b4f05bb24dd13144c6284aa34d872e1fcb
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.9.orig.tar.xz.asc' gnutls28_3.6.9.orig.tar.xz.asc 488 SHA256:7956ffdddad8495f6933233b6ad04bb6b4e8ff9a2977fc0fd7ae95aa33ae245d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.9-5ubuntu1.debian.tar.xz' gnutls28_3.6.9-5ubuntu1.debian.tar.xz 70032 SHA256:9dc3c47c0837ab414873aa6b9ca2b5bd7cfa95d0af7ecebc3c44abd128944fba
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.9-5ubuntu1.1.debian.tar.xz' gnutls28_3.6.9-5ubuntu1.1.debian.tar.xz 70552 SHA256:469782f4617d16819ca3581bd7b1c46c73380a522a51c97ef917a7a02d67708e
 ```
 
 ### `dpkg` source package: `gobject-introspection=1.62.0-1`
@@ -2265,11 +2269,11 @@ $ apt-get source -qq --print-uris libsm=2:1.2.3-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsm/libsm_1.2.3-1.diff.gz' libsm_1.2.3-1.diff.gz 8929 SHA256:7eb99ab50b19f26d1470f89e4b46891f6a697cb1794a58ed0d1376cceaf1b6a9
 ```
 
-### `dpkg` source package: `libssh=0.9.0-1ubuntu1.3`
+### `dpkg` source package: `libssh=0.9.0-1ubuntu1.4`
 
 Binary Packages:
 
-- `libssh-4:amd64=0.9.0-1ubuntu1.3`
+- `libssh-4:amd64=0.9.0-1ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 
@@ -2279,9 +2283,15 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libssh=0.9.0-1ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.0-1ubuntu1.4.dsc' libssh_0.9.0-1ubuntu1.4.dsc 2779 SHA256:ac9fc4183cd1952f3cb087e6972b2b31be6e488b5ced9d7d86e7299288c3d0b9
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.0.orig.tar.xz' libssh_0.9.0.orig.tar.xz 487628 SHA256:25303c2995e663cd169fdd902bae88106f48242d7e96311d74f812023482c7a5
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.0.orig.tar.xz.asc' libssh_0.9.0.orig.tar.xz.asc 833 SHA256:376c3d17bd252290b911903cae6a0bacae7864194224d5bf6f3a0073baf7b83a
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.0-1ubuntu1.4.debian.tar.xz' libssh_0.9.0-1ubuntu1.4.debian.tar.xz 38080 SHA256:434ea3bd8403fbaf60aaf52eba2bae8255eca10856ae332d54eef0ece355af37
+```
 
 ### `dpkg` source package: `libtasn1-6=4.14-3`
 
@@ -3564,14 +3574,14 @@ $ apt-get source -qq --print-uris python3-stdlib-extensions=3.7.5-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.7.5-1build1.debian.tar.xz' python3-stdlib-extensions_3.7.5-1build1.debian.tar.xz 17260 SHA256:e3e5da632a94f45ac802c358fbc6130e2ef0035755263d3046f343b6e087e910
 ```
 
-### `dpkg` source package: `python3.7=3.7.5-2~19.10`
+### `dpkg` source package: `python3.7=3.7.5-2~19.10ubuntu1`
 
 Binary Packages:
 
-- `libpython3.7-minimal:amd64=3.7.5-2~19.10`
-- `libpython3.7-stdlib:amd64=3.7.5-2~19.10`
-- `python3.7=3.7.5-2~19.10`
-- `python3.7-minimal=3.7.5-2~19.10`
+- `libpython3.7-minimal:amd64=3.7.5-2~19.10ubuntu1`
+- `libpython3.7-stdlib:amd64=3.7.5-2~19.10ubuntu1`
+- `python3.7=3.7.5-2~19.10ubuntu1`
+- `python3.7-minimal=3.7.5-2~19.10ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.7-minimal/copyright`, `/usr/share/doc/libpython3.7-stdlib/copyright`, `/usr/share/doc/python3.7/copyright`, `/usr/share/doc/python3.7-minimal/copyright`)
 
@@ -3593,9 +3603,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.7-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.7=3.7.5-2~19.10ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.7/python3.7_3.7.5-2~19.10ubuntu1.dsc' python3.7_3.7.5-2~19.10ubuntu1.dsc 3514 SHA256:0f6ec7dcd15f270f502c4d664d946c318da3c2c9a9466958a2764808200c1bfc
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.7/python3.7_3.7.5.orig.tar.xz' python3.7_3.7.5.orig.tar.xz 17236432 SHA256:e85a76ea9f3d6c485ec1780fca4e500725a4a7bbc63c78ebc44170de9b619d94
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.7/python3.7_3.7.5-2~19.10ubuntu1.debian.tar.xz' python3.7_3.7.5-2~19.10ubuntu1.debian.tar.xz 213296 SHA256:5b773cf4db8a194003661b3d1b8eba6373329686ad87713acf6ecdfa9ab01bee
+```
 
 ### `dpkg` source package: `readline=8.0-3`
 
@@ -3976,52 +3991,24 @@ $ apt-get source -qq --print-uris utf8proc=2.4.0-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/u/utf8proc/utf8proc_2.4.0-1.debian.tar.xz' utf8proc_2.4.0-1.debian.tar.xz 4508 SHA256:44ff1481d4156be9d843ac97496220fa495099d726908a982dbec43b056d7d20
 ```
 
-### `dpkg` source package: `util-linux=2.34-0.1ubuntu2.3`
-
-Binary Packages:
-
-- `bsdutils=1:2.34-0.1ubuntu2.3`
-- `fdisk=2.34-0.1ubuntu2.3`
-- `libfdisk1:amd64=2.34-0.1ubuntu2.3`
-- `libsmartcols1:amd64=2.34-0.1ubuntu2.3`
-- `mount=2.34-0.1ubuntu2.3`
-- `util-linux=2.34-0.1ubuntu2.3`
-
-Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdisk/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
-
-- `BSD-2-clause`
-- `BSD-3-clause`
-- `BSD-4-clause`
-- `GPL-2`
-- `GPL-2+`
-- `GPL-3`
-- `GPL-3+`
-- `LGPL`
-- `LGPL-2`
-- `LGPL-2+`
-- `LGPL-2.1`
-- `LGPL-2.1+`
-- `LGPL-3`
-- `LGPL-3+`
-- `MIT`
-- `public-domain`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `util-linux=2.34-0.1ubuntu2.4`
 
 Binary Packages:
 
+- `bsdutils=1:2.34-0.1ubuntu2.4`
+- `fdisk=2.34-0.1ubuntu2.4`
 - `libblkid-dev:amd64=2.34-0.1ubuntu2.4`
 - `libblkid1:amd64=2.34-0.1ubuntu2.4`
+- `libfdisk1:amd64=2.34-0.1ubuntu2.4`
 - `libmount-dev:amd64=2.34-0.1ubuntu2.4`
 - `libmount1:amd64=2.34-0.1ubuntu2.4`
+- `libsmartcols1:amd64=2.34-0.1ubuntu2.4`
 - `libuuid1:amd64=2.34-0.1ubuntu2.4`
+- `mount=2.34-0.1ubuntu2.4`
+- `util-linux=2.34-0.1ubuntu2.4`
 - `uuid-dev:amd64=2.34-0.1ubuntu2.4`
 
-Licenses: (parsed from: `/usr/share/doc/libblkid-dev/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount-dev/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/uuid-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdisk/copyright`, `/usr/share/doc/libblkid-dev/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount-dev/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/uuid-dev/copyright`)
 
 - `BSD-2-clause`
 - `BSD-3-clause`

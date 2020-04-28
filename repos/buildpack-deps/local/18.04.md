@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:340e12f44d41ca6a89bd11be728d6d1fe52ed5a26235886a857d1fb24b1aa334`
-- Created: `2020-04-21T01:21:31.465605955Z`
-- Virtual Size: ~ 621.31 Mb  
+- Image ID: `sha256:5d109dc6d8a04aa1a008955e7513cf161c43c09b3c8a26483656b0e0346fabc4`
+- Created: `2020-04-24T20:15:14.643450619Z`
+- Virtual Size: ~ 619.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -287,14 +287,14 @@ $ apt-get source -qq --print-uris bash=4.4.18-2ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.4.18-2ubuntu1.2.debian.tar.xz' bash_4.4.18-2ubuntu1.2.debian.tar.xz 65236 SHA256:b0191aab30dd0531d7acbeab7c64014a1c9e484f417678a18ad1655a77b7b6f9
 ```
 
-### `dpkg` source package: `binutils=2.30-21ubuntu1~18.04.2`
+### `dpkg` source package: `binutils=2.30-21ubuntu1~18.04.3`
 
 Binary Packages:
 
-- `binutils=2.30-21ubuntu1~18.04.2`
-- `binutils-common:amd64=2.30-21ubuntu1~18.04.2`
-- `binutils-x86-64-linux-gnu=2.30-21ubuntu1~18.04.2`
-- `libbinutils:amd64=2.30-21ubuntu1~18.04.2`
+- `binutils=2.30-21ubuntu1~18.04.3`
+- `binutils-common:amd64=2.30-21ubuntu1~18.04.3`
+- `binutils-x86-64-linux-gnu=2.30-21ubuntu1~18.04.3`
+- `libbinutils:amd64=2.30-21ubuntu1~18.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`)
 
@@ -302,9 +302,14 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris binutils=2.30-21ubuntu1~18.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30-21ubuntu1~18.04.3.dsc' binutils_2.30-21ubuntu1~18.04.3.dsc 11670 SHA256:277baf59cd0eeca9f624afbcef484f88726cd309bcf5ba11d95aea0a91673feb
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30.orig.tar.xz' binutils_2.30.orig.tar.xz 20286700 SHA256:6e46b8aeae2f727a36f0bd9505e405768a72218f1796f0d09757d45209871ae6
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30-21ubuntu1~18.04.3.debian.tar.xz' binutils_2.30-21ubuntu1~18.04.3.debian.tar.xz 621320 SHA256:38cffa307e197c63ec5631dc57cafd0d48f904c146559a43d2fcb3b8e56b45e9
+```
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1ubuntu0.2`
 
@@ -989,12 +994,12 @@ $ apt-get source -qq --print-uris gdk-pixbuf=2.36.11-2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.11-2.debian.tar.xz' gdk-pixbuf_2.36.11-2.debian.tar.xz 15204 SHA256:064020524e80e3ac713dd6bdf861660df26c61d9aceb75be74df44a9979c0a0c
 ```
 
-### `dpkg` source package: `git=1:2.17.1-1ubuntu0.5`
+### `dpkg` source package: `git=1:2.17.1-1ubuntu0.7`
 
 Binary Packages:
 
-- `git=1:2.17.1-1ubuntu0.5`
-- `git-man=1:2.17.1-1ubuntu0.5`
+- `git=1:2.17.1-1ubuntu0.7`
+- `git-man=1:2.17.1-1ubuntu0.7`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1017,9 +1022,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.17.1-1ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.7.dsc' git_2.17.1-1ubuntu0.7.dsc 2959 SHA256:b1458c126514fe76de4fb2be7b2850f6b69ecaa35f89f64defb37200a46da2e3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1.orig.tar.xz' git_2.17.1.orig.tar.xz 5015484 SHA256:79136e7aa83abae4d8a25c8111f113d3c5a63aeb5fd93cc72c26d49c6d5ba65e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.7.debian.tar.xz' git_2.17.1-1ubuntu0.7.debian.tar.xz 614088 SHA256:169a0d8139dbe57dc4e7300b3677f100b1fdc660dae66e6b81b338d4eaa9c54a
+```
 
 ### `dpkg` source package: `glib2.0=2.56.4-0ubuntu0.18.04.6`
 
@@ -3042,14 +3052,9 @@ Licenses: (parsed from: `/usr/share/doc/libopenexr-dev/copyright`, `/usr/share/d
 
 - `openexr`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openexr=2.2.0-11.1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openexr/openexr_2.2.0-11.1ubuntu1.1.dsc' openexr_2.2.0-11.1ubuntu1.1.dsc 2403 SHA256:23039826ef42788b518e7a1e9cab5e87b74b15f80f4c6988b86f2297805dd8e9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openexr/openexr_2.2.0.orig.tar.gz' openexr_2.2.0.orig.tar.gz 14489661 SHA256:36a012f6c43213f840ce29a8b182700f6cf6b214bea0d5735594136b44914231
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openexr/openexr_2.2.0-11.1ubuntu1.1.debian.tar.xz' openexr_2.2.0-11.1ubuntu1.1.debian.tar.xz 22244 SHA256:e9e41f0f62ae9c0b2cb5d4b1f793735d64bbe29ca18782bfaa0e2e368944e9ac
-```
 
 ### `dpkg` source package: `openldap=2.4.45+dfsg-1ubuntu1.4`
 
@@ -3440,14 +3445,14 @@ $ apt-get source -qq --print-uris python-defaults=2.7.15~rc1-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.15~rc1-1.tar.gz' python-defaults_2.7.15~rc1-1.tar.gz 1958015 SHA256:f3bed2b81091821d2e514c2e17c6846f7e744487fd15f7d3c48fa1c91b9cd49b
 ```
 
-### `dpkg` source package: `python2.7=2.7.17-1~18.04`
+### `dpkg` source package: `python2.7=2.7.17-1~18.04ubuntu1`
 
 Binary Packages:
 
-- `libpython2.7-minimal:amd64=2.7.17-1~18.04`
-- `libpython2.7-stdlib:amd64=2.7.17-1~18.04`
-- `python2.7=2.7.17-1~18.04`
-- `python2.7-minimal=2.7.17-1~18.04`
+- `libpython2.7-minimal:amd64=2.7.17-1~18.04ubuntu1`
+- `libpython2.7-stdlib:amd64=2.7.17-1~18.04ubuntu1`
+- `python2.7=2.7.17-1~18.04ubuntu1`
+- `python2.7-minimal=2.7.17-1~18.04ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/share/doc/libpython2.7-stdlib/copyright`, `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/python2.7-minimal/copyright`)
 
@@ -3468,9 +3473,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python2.7=2.7.17-1~18.04ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17-1~18.04ubuntu1.dsc' python2.7_2.7.17-1~18.04ubuntu1.dsc 3475 SHA256:b258c6ca2dad2d49b84b4657b21efd8e3a0db64bf88394c567b6325c91943804
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17.orig.tar.gz' python2.7_2.7.17.orig.tar.gz 17535962 SHA256:f22059d09cdf9625e0a7284d24a13062044f5bf59d93a7f3382190dfa94cecde
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17-1~18.04ubuntu1.diff.gz' python2.7_2.7.17-1~18.04ubuntu1.diff.gz 289562 SHA256:aa84d777881498f18036ece85689444d8542056cef25a59cd94eec7ecae73b78
+```
 
 ### `dpkg` source package: `python3-defaults=3.6.7-1~18.04`
 
@@ -3512,14 +3522,14 @@ $ apt-get source -qq --print-uris python3-stdlib-extensions=3.6.9-1~18.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.6.9-1~18.04.debian.tar.xz' python3-stdlib-extensions_3.6.9-1~18.04.debian.tar.xz 16908 SHA256:befdd346165a9baa7fc42b54c24db9b975870651c9578b03d0511e0b77578f84
 ```
 
-### `dpkg` source package: `python3.6=3.6.9-1~18.04`
+### `dpkg` source package: `python3.6=3.6.9-1~18.04ubuntu1`
 
 Binary Packages:
 
-- `libpython3.6-minimal:amd64=3.6.9-1~18.04`
-- `libpython3.6-stdlib:amd64=3.6.9-1~18.04`
-- `python3.6=3.6.9-1~18.04`
-- `python3.6-minimal=3.6.9-1~18.04`
+- `libpython3.6-minimal:amd64=3.6.9-1~18.04ubuntu1`
+- `libpython3.6-stdlib:amd64=3.6.9-1~18.04ubuntu1`
+- `python3.6=3.6.9-1~18.04ubuntu1`
+- `python3.6-minimal=3.6.9-1~18.04ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.6-minimal/copyright`, `/usr/share/doc/libpython3.6-stdlib/copyright`, `/usr/share/doc/python3.6/copyright`, `/usr/share/doc/python3.6-minimal/copyright`)
 
@@ -3541,9 +3551,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.6-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.6=3.6.9-1~18.04ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.9-1~18.04ubuntu1.dsc' python3.6_3.6.9-1~18.04ubuntu1.dsc 3446 SHA256:602a9d82c945589c2c7a30f2dc0233a4d6c8fa75e63f941900c75d50093781f8
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.9.orig.tar.xz' python3.6_3.6.9.orig.tar.xz 17212164 SHA256:5e2f5f554e3f8f7f0296f7e73d8600c4e9acbaee6b2555b83206edf5153870da
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.9-1~18.04ubuntu1.debian.tar.xz' python3.6_3.6.9-1~18.04ubuntu1.debian.tar.xz 215804 SHA256:d0ed504ea18389f932eb8f5c6b713ec86edfbac0b4f294017ffd6219665e902d
+```
 
 ### `dpkg` source package: `readline=7.0-3`
 
@@ -3893,19 +3908,19 @@ $ apt-get source -qq --print-uris unzip=6.0-21ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-21ubuntu1.debian.tar.xz' unzip_6.0-21ubuntu1.debian.tar.xz 21080 SHA256:8db974c22a5ef50029eb9a7e5429ff099e1cf7cfd36d3951fa4e00e4fd47843f
 ```
 
-### `dpkg` source package: `util-linux=2.31.1-0.4ubuntu3.5`
+### `dpkg` source package: `util-linux=2.31.1-0.4ubuntu3.6`
 
 Binary Packages:
 
-- `bsdutils=1:2.31.1-0.4ubuntu3.5`
-- `fdisk=2.31.1-0.4ubuntu3.5`
-- `libblkid1:amd64=2.31.1-0.4ubuntu3.5`
-- `libfdisk1:amd64=2.31.1-0.4ubuntu3.5`
-- `libmount1:amd64=2.31.1-0.4ubuntu3.5`
-- `libsmartcols1:amd64=2.31.1-0.4ubuntu3.5`
-- `libuuid1:amd64=2.31.1-0.4ubuntu3.5`
-- `mount=2.31.1-0.4ubuntu3.5`
-- `util-linux=2.31.1-0.4ubuntu3.5`
+- `bsdutils=1:2.31.1-0.4ubuntu3.6`
+- `fdisk=2.31.1-0.4ubuntu3.6`
+- `libblkid1:amd64=2.31.1-0.4ubuntu3.6`
+- `libfdisk1:amd64=2.31.1-0.4ubuntu3.6`
+- `libmount1:amd64=2.31.1-0.4ubuntu3.6`
+- `libsmartcols1:amd64=2.31.1-0.4ubuntu3.6`
+- `libuuid1:amd64=2.31.1-0.4ubuntu3.6`
+- `mount=2.31.1-0.4ubuntu3.6`
+- `util-linux=2.31.1-0.4ubuntu3.6`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdisk/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -3926,9 +3941,14 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/fdi
 - `MIT`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris util-linux=2.31.1-0.4ubuntu3.6
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.6.dsc' util-linux_2.31.1-0.4ubuntu3.6.dsc 4147 SHA256:e1bd0d6290ebeefdeb6b2f4925d04c01b833292efcf59441343254db51f7bbf0
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1.orig.tar.xz' util-linux_2.31.1.orig.tar.xz 4514032 SHA256:cfd5789570e9ff75e079471faeca1511ade1607f650523a6ad25d1e26516ae4e
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.31.1-0.4ubuntu3.6.debian.tar.xz' util-linux_2.31.1-0.4ubuntu3.6.debian.tar.xz 101672 SHA256:b019ef3e51f6dee11811afb6943bacc59fb8fb961785bfc6448a92c4a5c0f8c2
+```
 
 ### `dpkg` source package: `wget=1.19.4-1ubuntu2.2`
 

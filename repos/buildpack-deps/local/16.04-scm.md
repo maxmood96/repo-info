@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b023953f4b010e2d43bd532d0d025de5585f8ac9c6c9920cd70c599b62ec5c2e`
-- Created: `2020-02-21T23:01:08.695918507Z`
-- Virtual Size: ~ 263.92 Mb  
+- Image ID: `sha256:85fa952f1014e673ffa2e858f8937def0552b8187a9bddb90329a366310b0c8a`
+- Created: `2020-04-24T20:24:20.874290495Z`
+- Virtual Size: ~ 264.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -679,12 +679,12 @@ $ apt-get source -qq --print-uris gdbm=1.8.3-13.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.8.3-13.1.debian.tar.xz' gdbm_1.8.3-13.1.debian.tar.xz 14748 SHA256:251401e1f5210226f384e936b1b7ea1df40119a918d9f3dbf48b2e51d4df8983
 ```
 
-### `dpkg` source package: `git=1:2.7.4-0ubuntu1.7`
+### `dpkg` source package: `git=1:2.7.4-0ubuntu1.9`
 
 Binary Packages:
 
-- `git=1:2.7.4-0ubuntu1.7`
-- `git-man=1:2.7.4-0ubuntu1.7`
+- `git=1:2.7.4-0ubuntu1.9`
+- `git-man=1:2.7.4-0ubuntu1.9`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -707,9 +707,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.7.4-0ubuntu1.9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.9.dsc' git_2.7.4-0ubuntu1.9.dsc 2897 SHA256:a7c83276d876be29656f08a3e1f6ef153c21f6556b31bb0abb9cbb15c0fd0b03
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4.orig.tar.xz' git_2.7.4.orig.tar.xz 3909636 SHA256:dee574defbe05ec7356a0842ddbda51315926f2fa7e39c2539f2c3dcc52e457b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.9.debian.tar.xz' git_2.7.4-0ubuntu1.9.debian.tar.xz 572052 SHA256:2ab39ce8a9d1d94a549be4d086e6b59ae2c4201bc022dd1368a38eebe98cdf24
+```
 
 ### `dpkg` source package: `glibc=2.23-0ubuntu11`
 
@@ -1677,12 +1682,12 @@ $ apt-get source -qq --print-uris perl=5.22.1-9ubuntu0.6
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.6.debian.tar.xz' perl_5.22.1-9ubuntu0.6.debian.tar.xz 161972 SHA256:8ada4467517b405493c876ba78121ff4ec25eed15cfbbc65682da461050a1f6b
 ```
 
-### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.4`
+### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.5`
 
 Binary Packages:
 
-- `libprocps4:amd64=2:3.3.10-4ubuntu2.4`
-- `procps=2:3.3.10-4ubuntu2.4`
+- `libprocps4:amd64=2:3.3.10-4ubuntu2.5`
+- `procps=2:3.3.10-4ubuntu2.5`
 
 Licenses: (parsed from: `/usr/share/doc/libprocps4/copyright`, `/usr/share/doc/procps/copyright`)
 
@@ -1696,10 +1701,10 @@ Licenses: (parsed from: `/usr/share/doc/libprocps4/copyright`, `/usr/share/doc/p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris procps=2:3.3.10-4ubuntu2.4
-'http://security.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.4.dsc' procps_3.3.10-4ubuntu2.4.dsc 2243 SHA256:f7f14b0b818e21ad1f1f4be7fdedbd375b9c19b7f3ecf92a94f3bc4a1a625f5f
-'http://security.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10.orig.tar.xz' procps_3.3.10.orig.tar.xz 814816 SHA256:40a3d2b0489e057d85564f4f304083b24fc699b39ea828610183fb9f0a6ebe97
-'http://security.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.4.debian.tar.xz' procps_3.3.10-4ubuntu2.4.debian.tar.xz 44376 SHA256:99854cab3c75853ec70cdda95d09fc22ee431c828e16dcdb9a0feaf65a3f74d1
+$ apt-get source -qq --print-uris procps=2:3.3.10-4ubuntu2.5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.5.dsc' procps_3.3.10-4ubuntu2.5.dsc 2227 SHA256:bf17eb5a055ff767dcc10ce3696f2e7622da96bbe8ac3c9d2d5aa92697a23282
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10.orig.tar.xz' procps_3.3.10.orig.tar.xz 814816 SHA256:40a3d2b0489e057d85564f4f304083b24fc699b39ea828610183fb9f0a6ebe97
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.5.debian.tar.xz' procps_3.3.10-4ubuntu2.5.debian.tar.xz 44704 SHA256:e0f01bc3e2569fbe3780f0c5943d916e8f9c0a74bd065b3f328383bf8ff10a40
 ```
 
 ### `dpkg` source package: `python-defaults=2.7.12-1~16.04`
@@ -1722,14 +1727,14 @@ $ apt-get source -qq --print-uris python-defaults=2.7.12-1~16.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.12-1~16.04.tar.gz' python-defaults_2.7.12-1~16.04.tar.gz 280070 SHA256:843d90debb74aedf336532f90d181e109a7d685275177e069a1df02faa42d732
 ```
 
-### `dpkg` source package: `python2.7=2.7.12-1ubuntu0~16.04.9`
+### `dpkg` source package: `python2.7=2.7.12-1ubuntu0~16.04.11`
 
 Binary Packages:
 
-- `libpython2.7-minimal:amd64=2.7.12-1ubuntu0~16.04.9`
-- `libpython2.7-stdlib:amd64=2.7.12-1ubuntu0~16.04.9`
-- `python2.7=2.7.12-1ubuntu0~16.04.9`
-- `python2.7-minimal=2.7.12-1ubuntu0~16.04.9`
+- `libpython2.7-minimal:amd64=2.7.12-1ubuntu0~16.04.11`
+- `libpython2.7-stdlib:amd64=2.7.12-1ubuntu0~16.04.11`
+- `python2.7=2.7.12-1ubuntu0~16.04.11`
+- `python2.7-minimal=2.7.12-1ubuntu0~16.04.11`
 
 Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/share/doc/libpython2.7-stdlib/copyright`, `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/python2.7-minimal/copyright`)
 
@@ -1750,9 +1755,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python2.7=2.7.12-1ubuntu0~16.04.11
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.11.dsc' python2.7_2.7.12-1ubuntu0~16.04.11.dsc 3391 SHA256:e3f7a2d1e2236a16c68923b1ebfd3b2155b00a6cd202df5a0a45c5cd41db36c0
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12.orig.tar.gz' python2.7_2.7.12.orig.tar.gz 16935960 SHA256:3cb522d17463dfa69a155ab18cffa399b358c966c0363d6c8b5b3bf1384da4b6
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.11.diff.gz' python2.7_2.7.12-1ubuntu0~16.04.11.diff.gz 307242 SHA256:480ce1e226cf617faf0c830a68fb54b40e3ea78d3614dc21270253ab2725bc38
+```
 
 ### `dpkg` source package: `readline6=6.3-8ubuntu2`
 
@@ -1888,11 +1898,11 @@ $ apt-get source -qq --print-uris six=1.10.0-3
 'http://archive.ubuntu.com/ubuntu/pool/main/s/six/six_1.10.0-3.debian.tar.xz' six_1.10.0-3.debian.tar.xz 3668 SHA256:860cc57244ea4e69eb4ee3ad1b823472c20d868c1cc25745b236ba6c9e1f3563
 ```
 
-### `dpkg` source package: `sqlite3=3.11.0-1ubuntu1.3`
+### `dpkg` source package: `sqlite3=3.11.0-1ubuntu1.4`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.11.0-1ubuntu1.3`
+- `libsqlite3-0:amd64=3.11.0-1ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -1900,9 +1910,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.11.0-1ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.11.0-1ubuntu1.4.dsc' sqlite3_3.11.0-1ubuntu1.4.dsc 2625 SHA256:27faea84fc3f08501a8d650a1e9d28621138353732282d0c5553a8299de961e0
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.11.0.orig-www.tar.xz' sqlite3_3.11.0.orig-www.tar.xz 3135012 SHA256:99843a91a1da29cf07269df49b37b0cd8a75035a88aacdb1186f94a9a217bab3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.11.0.orig.tar.xz' sqlite3_3.11.0.orig.tar.xz 5122440 SHA256:79fb8800b8744337d5317270899a5a40612bb76f81517e131bf496c26b044490
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.11.0-1ubuntu1.4.debian.tar.xz' sqlite3_3.11.0-1ubuntu1.4.debian.tar.xz 43992 SHA256:1fb43634500681355c3fa916c8fbaec4a5a45566d6a40bd506e27a9cf0947cc7
+```
 
 ### `dpkg` source package: `subversion=1.9.3-2ubuntu1.3`
 
