@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9f13d093f129c105f3f77ab164e228f09d340f31d3321c98e47fc61c4e66e609`
-- Created: `2020-04-23T22:15:28.91969725Z`
-- Virtual Size: ~ 371.43 Mb  
+- Image ID: `sha256:e42b7094834623548b70793b321569478e1421907b41397fc3e3c65efb2f15ee`
+- Created: `2020-04-30T21:33:36.622500514Z`
+- Virtual Size: ~ 371.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -23,10 +23,6 @@
   - `SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/6.6.6/solr-6.6.6.tgz&action=download`
   - `SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/6.6.6/solr-6.6.6.tgz`
   - `SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/6.6.6/solr-6.6.6.tgz`
-  - `GOSU_VERSION=1.11`
-  - `GOSU_KEY=B42F6819007F00F88E364FD4036A9C25BF357DD4`
-  - `TINI_VERSION=v0.18.0`
-  - `TINI_KEY=595E85A6B1B4779EA4DAAEC70B588DFF0527A9B7`
 - Labels:
   - `maintainer=Martijn Koster "mak-docker@greenhills.co.uk"`
   - `repository=https://github.com/docker-solr/docker-solr`
@@ -775,6 +771,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u3/ (for browsing the source)
 - https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnutls28/3.6.7-4+deb10u3/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `gosu=1.10-1`
+
+Binary Packages:
+
+- `gosu=1.10-1+b23`
+
+Licenses: (parsed from: `/usr/share/doc/gosu/copyright`)
+
+- `GPL-3`
+- `GPL-3+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris gosu=1.10-1
+'http://deb.debian.org/debian/pool/main/g/gosu/gosu_1.10-1.dsc' gosu_1.10-1.dsc 2000 SHA256:4a1c7ae5b4110890a8df73d05c02b32c8dc739604bce17226e4008fcc9811221
+'http://deb.debian.org/debian/pool/main/g/gosu/gosu_1.10.orig.tar.gz' gosu_1.10.orig.tar.gz 17683 SHA256:bcbe8ada8c435a253b1fa438f505dd311832a88f52316fd7d30342b106a4242c
+'http://deb.debian.org/debian/pool/main/g/gosu/gosu_1.10-1.debian.tar.xz' gosu_1.10-1.debian.tar.xz 2900 SHA256:9893c3b098b392a9bb9b0a621e671025dbc5ea6c42c3a9b7ea171e36e956e78e
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/gosu/1.10-1/ (for browsing the source)
+- https://sources.debian.net/src/gosu/1.10-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gosu/1.10-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gpm=1.20.7-5`
 
@@ -1559,12 +1581,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/npth/1.6-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/npth/1.6-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openldap=2.4.47+dfsg-3+deb10u1`
+### `dpkg` source package: `openldap=2.4.47+dfsg-3+deb10u2`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.47+dfsg-3+deb10u1`
-- `libldap-common=2.4.47+dfsg-3+deb10u1`
+- `libldap-2.4-2:amd64=2.4.47+dfsg-3+deb10u2`
+- `libldap-common=2.4.47+dfsg-3+deb10u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1573,17 +1595,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openldap=2.4.47+dfsg-3+deb10u1
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.47+dfsg-3+deb10u1.dsc' openldap_2.4.47+dfsg-3+deb10u1.dsc 2888 SHA256:ff503d526d22d0301ff34b0009023d00419e7744a3d7a9048cad07698e94b1bf
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.47+dfsg.orig.tar.gz' openldap_2.4.47+dfsg.orig.tar.gz 4872293 SHA256:8f1ac7a4be7dd8ef158361efbfe16509756d3d9b396f5f378c3cf5c727807651
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.47+dfsg-3+deb10u1.debian.tar.xz' openldap_2.4.47+dfsg-3+deb10u1.debian.tar.xz 167928 SHA256:9dbde8632c9eb32f6282f0b37e9849a5a3a8d69b8bd9571d215230923ec5607d
+$ apt-get source -qq --print-uris openldap=2.4.47+dfsg-3+deb10u2
+'http://security.debian.org/debian-security/pool/updates/main/o/openldap/openldap_2.4.47+dfsg-3+deb10u2.dsc' openldap_2.4.47+dfsg-3+deb10u2.dsc 3022 SHA256:e909c6be4bfd1bacf644959bc18ebeebaa13606879f11a7876d044cd688a6f62
+'http://security.debian.org/debian-security/pool/updates/main/o/openldap/openldap_2.4.47+dfsg.orig.tar.gz' openldap_2.4.47+dfsg.orig.tar.gz 4872293 SHA256:8f1ac7a4be7dd8ef158361efbfe16509756d3d9b396f5f378c3cf5c727807651
+'http://security.debian.org/debian-security/pool/updates/main/o/openldap/openldap_2.4.47+dfsg-3+deb10u2.debian.tar.xz' openldap_2.4.47+dfsg-3+deb10u2.debian.tar.xz 168684 SHA256:0f6f81f18a2407bd1a6c6003659d8b33145f31033b6f7fd026607554f0bdfcb0
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openldap/2.4.47+dfsg-3+deb10u1/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.4.47+dfsg-3+deb10u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.4.47+dfsg-3+deb10u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openldap/2.4.47+dfsg-3+deb10u2/ (for browsing the source)
+- https://sources.debian.net/src/openldap/2.4.47+dfsg-3+deb10u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openldap/2.4.47+dfsg-3+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.1d-0+deb10u3`
 
@@ -2077,6 +2099,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.30+dfsg-6/ (for browsing the source)
 - https://sources.debian.net/src/tar/1.30+dfsg-6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.30+dfsg-6/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `tini=0.18.0-1`
+
+Binary Packages:
+
+- `tini=0.18.0-1`
+
+Licenses: (parsed from: `/usr/share/doc/tini/copyright`)
+
+- `Expat`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris tini=0.18.0-1
+'http://deb.debian.org/debian/pool/main/t/tini/tini_0.18.0-1.dsc' tini_0.18.0-1.dsc 1804 SHA256:e4d749a5dba0bacb22f57182163766733e3a318bd745b38db112614626bc46f0
+'http://deb.debian.org/debian/pool/main/t/tini/tini_0.18.0.orig.tar.gz' tini_0.18.0.orig.tar.gz 32152 SHA256:1097675352d6317b547e73f9dc7c6839fd0bb0d96dafc2e5c95506bb324049a2
+'http://deb.debian.org/debian/pool/main/t/tini/tini_0.18.0-1.debian.tar.xz' tini_0.18.0-1.debian.tar.xz 1804 SHA256:fd17df866484221af45d0be8cdb7be38b3764d4382253a5b4bdf3f2c3442b0db
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/tini/0.18.0-1/ (for browsing the source)
+- https://sources.debian.net/src/tini/0.18.0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tini/0.18.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2019c-0+deb10u1`
 

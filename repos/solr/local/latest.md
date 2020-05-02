@@ -1,10 +1,10 @@
-# `solr:8.5.0`
+# `solr:8.5.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:62a225d7ab1844af67f33d203870c5bb684e08bd86fe35444bbd206d43377cdb`
-- Created: `2020-04-23T22:04:54.002299555Z`
-- Virtual Size: ~ 508.87 Mb  
+- Image ID: `sha256:122af6e03d3434571ce36652a401ec54df74f463656d84db58daab12e18e2942`
+- Created: `2020-04-30T21:23:08.355573086Z`
+- Virtual Size: ~ 508.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -20,18 +20,14 @@
   - `SOLR_UID=8983`
   - `SOLR_GROUP=solr`
   - `SOLR_GID=8983`
-  - `SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.5.0/solr-8.5.0.tgz&action=download`
-  - `SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.5.0/solr-8.5.0.tgz`
-  - `SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.5.0/solr-8.5.0.tgz`
+  - `SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.5.1/solr-8.5.1.tgz&action=download`
+  - `SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.5.1/solr-8.5.1.tgz`
+  - `SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.5.1/solr-8.5.1.tgz`
   - `SOLR_INCLUDE=/etc/default/solr.in.sh`
   - `SOLR_HOME=/var/solr/data`
   - `SOLR_PID_DIR=/var/solr`
   - `SOLR_LOGS_DIR=/var/solr/logs`
   - `LOG4J_PROPS=/var/solr/log4j2.xml`
-  - `GOSU_VERSION=1.11`
-  - `GOSU_KEY=B42F6819007F00F88E364FD4036A9C25BF357DD4`
-  - `TINI_VERSION=v0.18.0`
-  - `TINI_KEY=595E85A6B1B4779EA4DAAEC70B588DFF0527A9B7`
 - Labels:
   - `maintainer=Martijn Koster "mak-docker@greenhills.co.uk"`
   - `repository=https://github.com/docker-solr/docker-solr`
@@ -961,6 +957,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u3/ (for browsing the source)
 - https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnutls28/3.6.7-4+deb10u3/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `gosu=1.10-1`
+
+Binary Packages:
+
+- `gosu=1.10-1+b23`
+
+Licenses: (parsed from: `/usr/share/doc/gosu/copyright`)
+
+- `GPL-3`
+- `GPL-3+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris gosu=1.10-1
+'http://deb.debian.org/debian/pool/main/g/gosu/gosu_1.10-1.dsc' gosu_1.10-1.dsc 2000 SHA256:4a1c7ae5b4110890a8df73d05c02b32c8dc739604bce17226e4008fcc9811221
+'http://deb.debian.org/debian/pool/main/g/gosu/gosu_1.10.orig.tar.gz' gosu_1.10.orig.tar.gz 17683 SHA256:bcbe8ada8c435a253b1fa438f505dd311832a88f52316fd7d30342b106a4242c
+'http://deb.debian.org/debian/pool/main/g/gosu/gosu_1.10-1.debian.tar.xz' gosu_1.10-1.debian.tar.xz 2900 SHA256:9893c3b098b392a9bb9b0a621e671025dbc5ea6c42c3a9b7ea171e36e956e78e
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/gosu/1.10-1/ (for browsing the source)
+- https://sources.debian.net/src/gosu/1.10-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gosu/1.10-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gpm=1.20.7-5`
 
@@ -2592,6 +2614,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.30+dfsg-6/ (for browsing the source)
 - https://sources.debian.net/src/tar/1.30+dfsg-6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.30+dfsg-6/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `tini=0.18.0-1`
+
+Binary Packages:
+
+- `tini=0.18.0-1`
+
+Licenses: (parsed from: `/usr/share/doc/tini/copyright`)
+
+- `Expat`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris tini=0.18.0-1
+'http://deb.debian.org/debian/pool/main/t/tini/tini_0.18.0-1.dsc' tini_0.18.0-1.dsc 1804 SHA256:e4d749a5dba0bacb22f57182163766733e3a318bd745b38db112614626bc46f0
+'http://deb.debian.org/debian/pool/main/t/tini/tini_0.18.0.orig.tar.gz' tini_0.18.0.orig.tar.gz 32152 SHA256:1097675352d6317b547e73f9dc7c6839fd0bb0d96dafc2e5c95506bb324049a2
+'http://deb.debian.org/debian/pool/main/t/tini/tini_0.18.0-1.debian.tar.xz' tini_0.18.0-1.debian.tar.xz 1804 SHA256:fd17df866484221af45d0be8cdb7be38b3764d4382253a5b4bdf3f2c3442b0db
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/tini/0.18.0-1/ (for browsing the source)
+- https://sources.debian.net/src/tini/0.18.0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tini/0.18.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2019c-0+deb10u1`
 
