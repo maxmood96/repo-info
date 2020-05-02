@@ -7,6 +7,7 @@
 -	[`couchbase:community-6.5.1`](#couchbasecommunity-651)
 -	[`couchbase:enterprise`](#couchbaseenterprise)
 -	[`couchbase:enterprise-6.5.0`](#couchbaseenterprise-650)
+-	[`couchbase:enterprise-6.5.1`](#couchbaseenterprise-651)
 -	[`couchbase:latest`](#couchbaselatest)
 
 ## `couchbase:6.5.1`
@@ -678,6 +679,10 @@ VOLUME [/opt/couchbase/var]
 		Last Modified: Fri, 24 Apr 2020 13:58:20 GMT  
 		Size: 858.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `couchbase:enterprise-6.5.1`
+
+**does not exist** (yet?)
 
 ## `couchbase:latest`
 
