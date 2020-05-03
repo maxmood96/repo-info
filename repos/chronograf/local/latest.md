@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:92d29b4e6dede12825a25906cc63b8d733e439dd8ce04dba7fb890640fc30070`
-- Created: `2020-04-23T01:14:03.91101525Z`
-- Virtual Size: ~ 193.73 Mb  
+- Image ID: `sha256:87200728c5deeaeb6cb69d89d0d15bc4be7bc55d0a09ce043fb6cd5079278b36`
+- Created: `2020-05-02T01:26:54.062341705Z`
+- Virtual Size: ~ 193.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["chronograf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `CHRONOGRAF_VERSION=1.8.2`
+  - `CHRONOGRAF_VERSION=1.8.4`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -294,11 +294,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cdebconf/0.227/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cdebconf/0.227/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `chronograf=1.8.2-1`
+### `dpkg` source package: `chronograf=1.8.4-1`
 
 Binary Packages:
 
-- `chronograf=1.8.2-1`
+- `chronograf=1.8.4-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
