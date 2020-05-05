@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:29d537aaeac65063505d08bca7f51553590becc065dd1f45210eec4e9b86f5c9`
-- Created: `2020-04-24T12:27:54.754530151Z`
-- Virtual Size: ~ 416.19 Mb  
+- Image ID: `sha256:1d248cee6f7fee9733622d510ff04c4e9a5dd8e360612ba6985a9068a155f8b9`
+- Created: `2020-05-02T01:49:54.610051775Z`
+- Virtual Size: ~ 420.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -20,11 +20,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.30`
-  - `PHP_URL=https://www.php.net/get/php-7.2.30.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.2.30.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=aa93df27b58a45d6c9800ac813245dfdca03490a918ebe515b3a70189b1bf8c3`
+  - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
+  - `PHP_VERSION=7.4.5`
+  - `PHP_URL=https://www.php.net/get/php-7.4.5.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://www.php.net/get/php-7.4.5.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=d059fd7f55bdc4d2eada15a00a2976697010d3631ef6f83149cc5289e1f23c2c`
   - `PHP_MD5=`
   - `YOURLS_VERSION=1.7.9`
   - `YOURLS_SHA256=0d9106b2936289d2fe5d4d6c017a77f96c79f4b2cacf1b59a0837d0032ca96d7`
@@ -1614,6 +1614,33 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libidn2/2.0.5-1+deb10u1/ (for browsing the source)
 - https://sources.debian.net/src/libidn2/2.0.5-1+deb10u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libidn2/2.0.5-1+deb10u1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `libonig=6.9.1-1`
+
+Binary Packages:
+
+- `libonig5:amd64=6.9.1-1`
+
+Licenses: (parsed from: `/usr/share/doc/libonig5/copyright`)
+
+- `BSD-2-clause`
+- `GPL-2`
+- `GPL-2+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libonig=6.9.1-1
+'http://deb.debian.org/debian/pool/main/libo/libonig/libonig_6.9.1-1.dsc' libonig_6.9.1-1.dsc 1854 SHA256:597b84337f078a46e9212eeedf39ba22723bf7447cf3d117a15c5635a390f955
+'http://deb.debian.org/debian/pool/main/libo/libonig/libonig_6.9.1.orig.tar.gz' libonig_6.9.1.orig.tar.gz 535443 SHA256:733a91e257c20cb17b81596db48fd0fbd2e0074fe922ae4c2bc4fefcec110aae
+'http://deb.debian.org/debian/pool/main/libo/libonig/libonig_6.9.1-1.debian.tar.xz' libonig_6.9.1-1.debian.tar.xz 7800 SHA256:29e99f42ee8dcf7498b85de13c4e2b07548e52fed9f40bd85f90431db7f03ab6
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libonig/6.9.1-1/ (for browsing the source)
+- https://sources.debian.net/src/libonig/6.9.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libonig/6.9.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.20.2-2`
 
