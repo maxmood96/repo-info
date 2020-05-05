@@ -1120,20 +1120,13 @@ Licenses: (parsed from: `/usr/share/doc/eatmydata/copyright`, `/usr/share/doc/li
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libeatmydata=105-7
-'http://deb.debian.org/debian/pool/main/libe/libeatmydata/libeatmydata_105-7.dsc' libeatmydata_105-7.dsc 2066 SHA256:d529d46a9253f416be67f5b04b5e329bceb828ef7728dca4d44e45b08a20fe23
-'http://deb.debian.org/debian/pool/main/libe/libeatmydata/libeatmydata_105.orig.tar.gz' libeatmydata_105.orig.tar.gz 419427 SHA256:bdd2d068b6b27cf47cd22aa4c5da43b3d4a05944cfe0ad1b0d843d360ed3a8dd
-'http://deb.debian.org/debian/pool/main/libe/libeatmydata/libeatmydata_105-7.debian.tar.xz' libeatmydata_105-7.debian.tar.xz 47384 SHA256:3b2b3144293c5e94357f3fd7c5d90ce9fe2107b339761e02c5e4fd200b992563
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libeatmydata/105-7/
 
-- https://sources.debian.net/src/libeatmydata/105-7/ (for browsing the source)
-- https://sources.debian.net/src/libeatmydata/105-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libeatmydata/105-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.3-4`
 
@@ -1734,20 +1727,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.49+dfsg-4
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.49+dfsg-4.dsc' openldap_2.4.49+dfsg-4.dsc 3060 SHA256:14cf0e93c8cdc55b1919c99b477b716745842df22f5e6855c690743c74aae6b3
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.49+dfsg.orig.tar.gz' openldap_2.4.49+dfsg.orig.tar.gz 4844726 SHA256:240022395b438f327aa860a631c1d4eef9b17e63ec8965d3aca2aa983e6d81e6
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.49+dfsg-4.debian.tar.xz' openldap_2.4.49+dfsg-4.debian.tar.xz 172104 SHA256:f513e6489512ad94659dbbb1d76e0fa16a19849ba29dcb0af4f59a50924932ad
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openldap/2.4.49+dfsg-4/
 
-- https://sources.debian.net/src/openldap/2.4.49+dfsg-4/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.4.49+dfsg-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.4.49+dfsg-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.20-1`
 
@@ -2062,20 +2048,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=245.5-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_245.5-1.dsc' systemd_245.5-1.dsc 5093 SHA256:c89286e55e73f37a7f09dbf099769a7b7df315ad70f8099006d60232647a8806
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_245.5.orig.tar.gz' systemd_245.5.orig.tar.gz 9020836 SHA256:b754d75617665a53bd0a1e8f5ec526b383f17e1cc06d1056399e5859e0b6fe06
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_245.5-1.debian.tar.xz' systemd_245.5-1.debian.tar.xz 155344 SHA256:cc69a46bbc3cf98903c25a00de5eeab8a64e7fa0b7d622d61be941adc33ee0a4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/245.5-1/
 
-- https://sources.debian.net/src/systemd/245.5-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/245.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/245.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.96-3`
 
