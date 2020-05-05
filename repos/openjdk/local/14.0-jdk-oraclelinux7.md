@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0ce6496aae7402e2a40a9588c478edfe51f1696492be811c405992d4d8163dec`
-- Created: `2020-04-14T21:29:14.294337746Z`
+- Image ID: `sha256:db8922a539031226dae31a6d244bc952d2f7a0e0eb826ed9aeb016e24fc3b081`
+- Created: `2020-05-04T20:39:28.434868118Z`
 - Virtual Size: ~ 496.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1201,15 +1201,15 @@ $ yumdownloader --quiet --source --urls tar-1.26-35.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/tar-1.26-35.el7.src.rpm
 ```
 
-### `rpm` package: `tzdata-2019c-1.el7.noarch`
+### `rpm` package: `tzdata-2020a-1.el7.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls tzdata-2019c-1.el7.noarch
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/tzdata-2019c-1.el7.src.rpm
+$ yumdownloader --quiet --source --urls tzdata-2020a-1.el7.noarch
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/tzdata-2020a-1.el7.src.rpm
 ```
 
 ### `rpm` package: `ustr-1.0.4-16.el7.x86_64`
