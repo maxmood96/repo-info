@@ -2474,14 +2474,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-5.7=5.7.29-0ubuntu0.18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.29-0ubuntu0.18.04.1.dsc' mysql-5.7_5.7.29-0ubuntu0.18.04.1.dsc 3446 SHA256:d7a42cb2e7e73390958ab226110560bd64924918ab91bebc6c93085ad6d5744a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.29.orig.tar.gz' mysql-5.7_5.7.29.orig.tar.gz 51417554 SHA256:00f514124de2bad1ba7b380cbbd46e316cae7fc7bc3a5621456cabf352f27978
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.29-0ubuntu0.18.04.1.debian.tar.xz' mysql-5.7_5.7.29-0ubuntu0.18.04.1.debian.tar.xz 156956 SHA256:8b0d551fb408334827c2347a7488a5cefc7be303dd82770816e52542c299daa8
-```
 
 ### `dpkg` source package: `mysql-defaults=1.0.4`
 
@@ -4258,14 +4253,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-rospkg-modules=1.2.4-1
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rospkg-modules/python3-rospkg-modules_1.2.4-1.debian.tar.xz' python3-rospkg-modules_1.2.4-1.debian.tar.xz 1172 SHA512:45637697f84760ebffe0443b77c9a75c2113ff101c583b4e44adf9cd747d758d963afd1129d304c501b8a3acefc2bc3852984a3f099ac77f22f4228349032790
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rospkg-modules/python3-rospkg-modules_1.2.4-1.dsc' python3-rospkg-modules_1.2.4-1.dsc 940 SHA512:6963eaeba396b13a0e8be6ad6ff60c30dc83dea84be8b498eb9b21e7ac8da5bcc80863f33dc912cdf686c6b2fad7afea2aaa90c15d6fc6e9ac63ed062d0e8924
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rospkg-modules/python3-rospkg-modules_1.2.4.orig.tar.gz' python3-rospkg-modules_1.2.4.orig.tar.gz 41327 SHA512:efc1c36e42839afdd1ddb2a3f65f1594f425d3eee97447b888d5ef4fa66719a46a63b59584d31f32fed64f64ea43b2455e86653e2b48b1d05db073fd2534951a
-```
 
 ### `dpkg` source package: `python3-rospkg=1.2.4-100`
 
@@ -4277,14 +4267,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-rospkg=1.2.4-100
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rospkg/python3-rospkg_1.2.4-100.debian.tar.xz' python3-rospkg_1.2.4-100.debian.tar.xz 1124 SHA512:39960832305bd6633b00e9766fc78faa8bcf6d3a885d1d65e1cd3453722a53a064abf4042d920cd581a7141952029113a8b9135223a03b623fa08642b0bbab05
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rospkg/python3-rospkg_1.2.4-100.dsc' python3-rospkg_1.2.4-100.dsc 876 SHA512:023cbb5ebaeca8005c8947b49739290cbf92754d551c0bf081016fbac9c8083b730b9c3787e6e66bb0dc7de0a1263a38739943d08b04b5bd3c3503367c3c1eb0
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rospkg/python3-rospkg_1.2.4.orig.tar.gz' python3-rospkg_1.2.4.orig.tar.gz 17504 SHA512:ef33c9ed8c859acb520c0de0f793d2b55022e8d075ba28340ae9d67ebe502af5d87c7a4fbb8b8f4ecdc199c95c4ae5ce0479cde6f8dbe2feadf8f90cf12d1822
-```
 
 ### `dpkg` source package: `python3-stdlib-extensions=3.6.9-1~18.04`
 
