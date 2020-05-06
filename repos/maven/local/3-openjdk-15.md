@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b99b06c99b4ecda98fe0a74d3aeef4a27bfa847c7280713336311c2ad45d9c03`
-- Created: `2020-05-01T00:43:34.774853794Z`
-- Virtual Size: ~ 496.45 Mb  
+- Image ID: `sha256:294e6d487ed948fa67f4543c7eb9307a539f5fe6bd4d3252816b52a2209b0f10`
+- Created: `2020-05-04T21:17:55.098952219Z`
+- Virtual Size: ~ 496.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -1204,15 +1204,15 @@ $ yumdownloader --quiet --source --urls tar-1.26-35.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/tar-1.26-35.el7.src.rpm
 ```
 
-### `rpm` package: `tzdata-2019c-1.el7.noarch`
+### `rpm` package: `tzdata-2020a-1.el7.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls tzdata-2019c-1.el7.noarch
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/tzdata-2019c-1.el7.src.rpm
+$ yumdownloader --quiet --source --urls tzdata-2020a-1.el7.noarch
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/tzdata-2020a-1.el7.src.rpm
 ```
 
 ### `rpm` package: `ustr-1.0.4-16.el7.x86_64`
