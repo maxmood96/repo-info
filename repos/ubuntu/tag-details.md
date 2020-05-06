@@ -7,6 +7,7 @@
 -	[`ubuntu:18.04`](#ubuntu1804)
 -	[`ubuntu:19.10`](#ubuntu1910)
 -	[`ubuntu:20.04`](#ubuntu2004)
+-	[`ubuntu:20.10`](#ubuntu2010)
 -	[`ubuntu:bionic`](#ubuntubionic)
 -	[`ubuntu:bionic-20200403`](#ubuntubionic-20200403)
 -	[`ubuntu:devel`](#ubuntudevel)
@@ -14,6 +15,8 @@
 -	[`ubuntu:eoan-20200410`](#ubuntueoan-20200410)
 -	[`ubuntu:focal`](#ubuntufocal)
 -	[`ubuntu:focal-20200423`](#ubuntufocal-20200423)
+-	[`ubuntu:groovy`](#ubuntugroovy)
+-	[`ubuntu:groovy-20200505`](#ubuntugroovy-20200505)
 -	[`ubuntu:latest`](#ubuntulatest)
 -	[`ubuntu:rolling`](#ubunturolling)
 -	[`ubuntu:trusty`](#ubuntutrusty)
@@ -1305,6 +1308,10 @@ CMD ["/bin/bash"]
 		Last Modified: Thu, 23 Apr 2020 17:54:42 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ubuntu:20.10`
+
+**does not exist** (yet?)
 
 ## `ubuntu:bionic`
 
@@ -3078,6 +3085,14 @@ CMD ["/bin/bash"]
 		Last Modified: Thu, 23 Apr 2020 17:54:42 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ubuntu:groovy`
+
+**does not exist** (yet?)
+
+## `ubuntu:groovy-20200505`
+
+**does not exist** (yet?)
 
 ## `ubuntu:latest`
 
