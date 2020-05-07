@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9cf47b002a277be17e38215af085846ab131c5ec676b45c3654fdc50f5d46f08`
-- Created: `2020-04-24T11:38:49.524887953Z`
+- Image ID: `sha256:b03863da4c6345e395405a774b7b0f2f0ad6be1b250c50419d44761448a4e255`
+- Created: `2020-05-07T03:18:20.218769117Z`
 - Virtual Size: ~ 381.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -19,8 +19,8 @@
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
   - `PHP_VERSION=7.3.17`
-  - `PHP_URL=https://www.php.net/get/php-7.3.17.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://www.php.net/get/php-7.3.17.tar.xz.asc/from/this/mirror`
+  - `PHP_URL=https://www.php.net/distributions/php-7.3.17.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.17.tar.xz.asc`
   - `PHP_SHA256=6a30304c27f7e7a94538f5ffec599f600ee93aedbbecad8aa4f8bec539b10ad8`
   - `PHP_MD5=`
   - `DRUPAL_VERSION=7.69`
