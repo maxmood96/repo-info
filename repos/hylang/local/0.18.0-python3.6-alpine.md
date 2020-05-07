@@ -1,4 +1,4 @@
-# `hylang:0.18.0-python3.6-alpine`
+# `hylang:0.18.0-python3.6-alpine3.11`
 
 ## Docker Metadata
 
