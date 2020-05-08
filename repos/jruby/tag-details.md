@@ -16,15 +16,31 @@
 -	[`jruby:9.2.11`](#jruby9211)
 -	[`jruby:9.2.11.1`](#jruby92111)
 -	[`jruby:9.2.11.1-jdk`](#jruby92111-jdk)
+-	[`jruby:9.2.11.1-jdk11`](#jruby92111-jdk11)
+-	[`jruby:9.2.11.1-jdk14`](#jruby92111-jdk14)
+-	[`jruby:9.2.11.1-jdk8`](#jruby92111-jdk8)
 -	[`jruby:9.2.11.1-jre`](#jruby92111-jre)
+-	[`jruby:9.2.11.1-jre11`](#jruby92111-jre11)
+-	[`jruby:9.2.11.1-jre8`](#jruby92111-jre8)
 -	[`jruby:9.2.11.1-onbuild`](#jruby92111-onbuild)
 -	[`jruby:9.2.11-jdk`](#jruby9211-jdk)
+-	[`jruby:9.2.11-jdk11`](#jruby9211-jdk11)
+-	[`jruby:9.2.11-jdk14`](#jruby9211-jdk14)
+-	[`jruby:9.2.11-jdk8`](#jruby9211-jdk8)
 -	[`jruby:9.2.11-jre`](#jruby9211-jre)
+-	[`jruby:9.2.11-jre11`](#jruby9211-jre11)
+-	[`jruby:9.2.11-jre8`](#jruby9211-jre8)
 -	[`jruby:9.2.11-onbuild`](#jruby9211-onbuild)
 -	[`jruby:9.2-jdk`](#jruby92-jdk)
+-	[`jruby:9.2-jdk11`](#jruby92-jdk11)
+-	[`jruby:9.2-jdk14`](#jruby92-jdk14)
+-	[`jruby:9.2-jdk8`](#jruby92-jdk8)
 -	[`jruby:9.2-jre`](#jruby92-jre)
+-	[`jruby:9.2-jre11`](#jruby92-jre11)
+-	[`jruby:9.2-jre8`](#jruby92-jre8)
 -	[`jruby:9.2-onbuild`](#jruby92-onbuild)
 -	[`jruby:9-jdk`](#jruby9-jdk)
+-	[`jruby:9-jdk8`](#jruby9-jdk8)
 -	[`jruby:9-onbuild`](#jruby9-onbuild)
 -	[`jruby:latest`](#jrubylatest)
 
@@ -1760,6 +1776,18 @@ CMD ["irb"]
 		Size: 159.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `jruby:9.2.11.1-jdk11`
+
+**does not exist** (yet?)
+
+## `jruby:9.2.11.1-jdk14`
+
+**does not exist** (yet?)
+
+## `jruby:9.2.11.1-jdk8`
+
+**does not exist** (yet?)
+
 ## `jruby:9.2.11.1-jre`
 
 ```console
@@ -1881,6 +1909,14 @@ CMD ["irb"]
 		Last Modified: Thu, 23 Apr 2020 22:02:58 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `jruby:9.2.11.1-jre11`
+
+**does not exist** (yet?)
+
+## `jruby:9.2.11.1-jre8`
+
+**does not exist** (yet?)
 
 ## `jruby:9.2.11.1-onbuild`
 
@@ -2154,6 +2190,18 @@ CMD ["irb"]
 		Size: 159.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `jruby:9.2.11-jdk11`
+
+**does not exist** (yet?)
+
+## `jruby:9.2.11-jdk14`
+
+**does not exist** (yet?)
+
+## `jruby:9.2.11-jdk8`
+
+**does not exist** (yet?)
+
 ## `jruby:9.2.11-jre`
 
 ```console
@@ -2275,6 +2323,14 @@ CMD ["irb"]
 		Last Modified: Thu, 23 Apr 2020 22:02:58 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `jruby:9.2.11-jre11`
+
+**does not exist** (yet?)
+
+## `jruby:9.2.11-jre8`
+
+**does not exist** (yet?)
 
 ## `jruby:9.2.11-onbuild`
 
@@ -2548,6 +2604,18 @@ CMD ["irb"]
 		Size: 159.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `jruby:9.2-jdk11`
+
+**does not exist** (yet?)
+
+## `jruby:9.2-jdk14`
+
+**does not exist** (yet?)
+
+## `jruby:9.2-jdk8`
+
+**does not exist** (yet?)
+
 ## `jruby:9.2-jre`
 
 ```console
@@ -2669,6 +2737,14 @@ CMD ["irb"]
 		Last Modified: Thu, 23 Apr 2020 22:02:58 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `jruby:9.2-jre11`
+
+**does not exist** (yet?)
+
+## `jruby:9.2-jre8`
+
+**does not exist** (yet?)
 
 ## `jruby:9.2-onbuild`
 
@@ -2941,6 +3017,10 @@ CMD ["irb"]
 		Last Modified: Thu, 23 Apr 2020 22:03:09 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `jruby:9-jdk8`
+
+**does not exist** (yet?)
 
 ## `jruby:9-onbuild`
 
