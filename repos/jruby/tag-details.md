@@ -1778,15 +1778,30 @@ CMD ["irb"]
 
 ## `jruby:9.2.11.1-jdk11`
 
-**does not exist** (yet?)
+```console
+$ docker pull jruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `jruby:9.2.11.1-jdk14`
 
-**does not exist** (yet?)
+```console
+$ docker pull jruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `jruby:9.2.11.1-jdk8`
 
-**does not exist** (yet?)
+```console
+$ docker pull jruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `jruby:9.2.11.1-jre`
 
@@ -1912,11 +1927,21 @@ CMD ["irb"]
 
 ## `jruby:9.2.11.1-jre11`
 
-**does not exist** (yet?)
+```console
+$ docker pull jruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `jruby:9.2.11.1-jre8`
 
-**does not exist** (yet?)
+```console
+$ docker pull jruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `jruby:9.2.11.1-onbuild`
 
@@ -2192,15 +2217,30 @@ CMD ["irb"]
 
 ## `jruby:9.2.11-jdk11`
 
-**does not exist** (yet?)
+```console
+$ docker pull jruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `jruby:9.2.11-jdk14`
 
-**does not exist** (yet?)
+```console
+$ docker pull jruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `jruby:9.2.11-jdk8`
 
-**does not exist** (yet?)
+```console
+$ docker pull jruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `jruby:9.2.11-jre`
 
@@ -2326,11 +2366,21 @@ CMD ["irb"]
 
 ## `jruby:9.2.11-jre11`
 
-**does not exist** (yet?)
+```console
+$ docker pull jruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `jruby:9.2.11-jre8`
 
-**does not exist** (yet?)
+```console
+$ docker pull jruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `jruby:9.2.11-onbuild`
 
@@ -2606,15 +2656,30 @@ CMD ["irb"]
 
 ## `jruby:9.2-jdk11`
 
-**does not exist** (yet?)
+```console
+$ docker pull jruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `jruby:9.2-jdk14`
 
-**does not exist** (yet?)
+```console
+$ docker pull jruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `jruby:9.2-jdk8`
 
-**does not exist** (yet?)
+```console
+$ docker pull jruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `jruby:9.2-jre`
 
@@ -2740,11 +2805,21 @@ CMD ["irb"]
 
 ## `jruby:9.2-jre11`
 
-**does not exist** (yet?)
+```console
+$ docker pull jruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `jruby:9.2-jre8`
 
-**does not exist** (yet?)
+```console
+$ docker pull jruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `jruby:9.2-onbuild`
 
@@ -3020,7 +3095,12 @@ CMD ["irb"]
 
 ## `jruby:9-jdk8`
 
-**does not exist** (yet?)
+```console
+$ docker pull jruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `jruby:9-onbuild`
 
