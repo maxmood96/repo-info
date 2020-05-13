@@ -1,10 +1,10 @@
-# `tomcat:9.0.34-jdk8-adoptopenjdk-hotspot`
+# `tomcat:9.0.35-jdk8-adoptopenjdk-hotspot`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ccd45de806663bb5da54af893cbd46976cd82bb5e7a533a8cbdfdb154d4f748e`
-- Created: `2020-04-24T23:55:22.949833986Z`
-- Virtual Size: ~ 320.14 Mb  
+- Image ID: `sha256:720ff80c6791b044cba942ab38e7fa0d53503a3f90911946299bdabd5ef61a32`
+- Created: `2020-05-13T02:13:17.111033909Z`
+- Virtual Size: ~ 320.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,8 +20,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.34`
-  - `TOMCAT_SHA512=9cb32f8807c0e8d2457d52ac032bb496ae7921e1ea0a0c8e6082bf8da60bb57c317a3f2376589962123dd803fdd2816ff960339cb851d9859b2241165fbc278e`
+  - `TOMCAT_VERSION=9.0.35`
+  - `TOMCAT_SHA512=0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1596,14 +1596,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=237-3ubuntu10.39
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.39.dsc' systemd_237-3ubuntu10.39.dsc 5182 SHA256:ec8c8f85de36fa2c44d9264920cba0561e492b8dbf8450e46ec3f0332b77d394
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA256:c83dabbe1c9de6b9db1dafdb7e04140c7d0535705c68842f6c0768653ba4913c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.39.debian.tar.xz' systemd_237-3ubuntu10.39.debian.tar.xz 258608 SHA256:9a4cc7f45b17c8577217aedaa78d970352ea00857c954832b3cfc0b53f649cb9
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
