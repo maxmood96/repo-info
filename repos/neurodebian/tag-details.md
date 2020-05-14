@@ -457,11 +457,21 @@ RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurod
 
 ## `neurodebian:focal`
 
-**does not exist** (yet?)
+```console
+$ docker pull neurodebian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `neurodebian:focal-non-free`
 
-**does not exist** (yet?)
+```console
+$ docker pull neurodebian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `neurodebian:jessie`
 
@@ -1441,11 +1451,21 @@ RUN sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurod
 
 ## `neurodebian:nd20.04`
 
-**does not exist** (yet?)
+```console
+$ docker pull neurodebian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `neurodebian:nd20.04-non-free`
 
-**does not exist** (yet?)
+```console
+$ docker pull neurodebian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `neurodebian:nd80`
 
