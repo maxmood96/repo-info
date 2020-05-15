@@ -1218,14 +1218,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=242-7ubuntu3.7
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_242-7ubuntu3.7.dsc' systemd_242-7ubuntu3.7.dsc 5163 SHA256:9e9b8cc30d8b293c781e171c5cfc2188e68ecfe51ed8626d74c840ab90f3fc3d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_242.orig.tar.gz' systemd_242.orig.tar.gz 7831435 SHA256:ec22be9a5dd94c9640e6348ed8391d1499af8ca2c2f01109198a414cff6c6cba
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_242-7ubuntu3.7.debian.tar.xz' systemd_242-7ubuntu3.7.debian.tar.xz 210516 SHA256:1bccabc98f853f00f41cefdc1c867725a7917dab07e88c6b584c78b1e38a4240
-```
 
 ### `dpkg` source package: `sysvinit=2.95-5ubuntu2`
 
