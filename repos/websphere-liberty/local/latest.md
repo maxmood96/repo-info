@@ -2,36 +2,36 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2f82febf1470bbfc251121874396065e269621c978ef258345257884b586071a`
-- Created: `2020-05-02T00:39:28.881760149Z`
-- Virtual Size: ~ 623.78 Mb  
+- Image ID: `sha256:a8f10c0370c9a924dbd2e15ffd4eb123b86cfc2d2eef405a6497d841286c7cfc`
+- Created: `2020-05-13T01:44:47.430363794Z`
+- Virtual Size: ~ 624.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
 - Command: `["/opt/ibm/wlp/bin/server","run","defaultServer"]`
 - Environment:
   - `PATH=/opt/ibm/wlp/bin:/opt/ibm/helpers/build:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr6fp7`
+  - `JAVA_VERSION=1.8.0_sr6fp10`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/ -XX:+UseContainerSupport`
-  - `LIBERTY_VERSION=20.0.0_04`
+  - `LIBERTY_VERSION=20.0.0_05`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ibm/wlp/output`
   - `OPENJ9_SCC=true`
   - `RANDFILE=/tmp/.rnd`
 - Labels:
-  - `BuildLabel=cl200420200401-1714`
+  - `BuildLabel=cl200520200429-1655`
   - `ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd`
   - `ProductName=WebSphere Application Server Liberty`
-  - `ProductVersion=20.0.0.4`
+  - `ProductVersion=20.0.0.5`
   - `org.opencontainers.image.authors=Arthur De Magalhaes, Chris Potter`
   - `org.opencontainers.image.description=This image contains the WebSphere Liberty runtime with IBM's Java and Ubuntu as the base OS.  For more information on this image please see https://github.com/WASdev/ci.docker#building-an-application-image`
   - `org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html`
-  - `org.opencontainers.image.revision=cl200420200401-1714`
+  - `org.opencontainers.image.revision=cl200520200429-1655`
   - `org.opencontainers.image.title=IBM WebSphere Liberty`
   - `org.opencontainers.image.url=http://wasdev.net`
   - `org.opencontainers.image.vendor=IBM`
-  - `org.opencontainers.image.version=20.0.0.4`
+  - `org.opencontainers.image.version=20.0.0.5`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -85,13 +85,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6.12
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.12.dsc' apt_1.6.12.dsc 2796 SHA256:061d7de8e9faea48b69b37f01a54b2eac04d39eaab143ec4ffb7cd534fa01cfd
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.12.tar.xz' apt_1.6.12.tar.xz 2171176 SHA256:d4e2ae405a1ff12bd108a5a530a24d52afde9cde40065ed508fdea33302c8a35
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 

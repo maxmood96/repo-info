@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f458444f0a1a975e28dffb6a422961b51301c91dc708d7241bc7bb24dbe1f933`
-- Created: `2020-05-06T18:58:33.610969862Z`
-- Virtual Size: ~ 390.44 Mb  
+- Image ID: `sha256:b67266e65da444cf16376f8a9fb67dc50f0e6c2398ac4fe569bcace2cfc859bf`
+- Created: `2020-05-13T01:40:42.847115295Z`
+- Virtual Size: ~ 387.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/ibm/wlp/bin/server","run","defaultServer"]`
@@ -13,16 +13,16 @@
   - `JAVA_VERSION=1.8.0_sr6fp10`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
-  - `LIBERTY_VERSION=2020.4.0_0`
+  - `LIBERTY_VERSION=2020.5.0_0`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ibm/wlp/output`
 - Labels:
   - `org.opencontainers.image.authors=Arthur De Magalhaes, Chris Potter`
   - `org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html`
-  - `org.opencontainers.image.revision=cl200420200401-1714`
+  - `org.opencontainers.image.revision=cl200520200429-1655`
   - `org.opencontainers.image.url=http://wasdev.net`
   - `org.opencontainers.image.vendor=IBM`
-  - `org.opencontainers.image.version=2020.4.0.0`
+  - `org.opencontainers.image.version=2020.5.0.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -76,13 +76,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6.12
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.12.dsc' apt_1.6.12.dsc 2796 SHA256:061d7de8e9faea48b69b37f01a54b2eac04d39eaab143ec4ffb7cd534fa01cfd
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.12.tar.xz' apt_1.6.12.tar.xz 2171176 SHA256:d4e2ae405a1ff12bd108a5a530a24d52afde9cde40065ed508fdea33302c8a35
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
