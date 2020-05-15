@@ -2149,7 +2149,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ## `caddy:2.0.0-builder`
 
 ```console
-$ docker pull caddy@sha256:f0273bdbb51a4934a687dd3216c5b26d88a420e07d7802eec2cdb45f5b13ab08
+$ docker pull caddy@sha256:947815b862ef57234283964272eb6b862a7adb3d6fba78f6cc81d6f837211a65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2654,14 +2654,14 @@ WORKDIR /src/custom-caddy/cmd/caddy
 ### `caddy:2.0.0-builder` - linux; s390x
 
 ```console
-$ docker pull caddy@sha256:0f5c2888fcc9b63afc21ac013c2442563752d1bd4472ded95c123280bc22f095
+$ docker pull caddy@sha256:577597322d9dfafa1285515c8fad56c80e2e6666687c460c504ff9057ec8051e
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **322.3 MB (322280883 bytes)**  
+-	Total Size: **322.4 MB (322380651 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8473d2b3c5d9c385a8546015faa2191c7f389502e5726c63d97c11b401effdb5`
+-	Image ID: `sha256:67498fdb89e44ca98ffe0ed90f15059e1c785c58d997469a86c95815bca8e153`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -2673,33 +2673,33 @@ CMD ["/bin/sh"]
 RUN apk add --no-cache 		ca-certificates
 # Thu, 23 Apr 2020 20:01:11 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Thu, 23 Apr 2020 20:01:11 GMT
-ENV GOLANG_VERSION=1.14.2
-# Thu, 23 Apr 2020 20:02:31 GMT
-RUN set -eux; 	apk add --no-cache --virtual .build-deps 		bash 		gcc 		musl-dev 		openssl 		go 	; 	export 		GOROOT_BOOTSTRAP="$(go env GOROOT)" 		GOOS="$(go env GOOS)" 		GOARCH="$(go env GOARCH)" 		GOHOSTOS="$(go env GOHOSTOS)" 		GOHOSTARCH="$(go env GOHOSTARCH)" 	; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) export GOARM='6' ;; 		armv7) export GOARM='7' ;; 		x86) export GO386='387' ;; 	esac; 		wget -O go.tgz "https://golang.org/dl/go$GOLANG_VERSION.src.tar.gz"; 	echo '98de84e69726a66da7b4e58eac41b99cbe274d7e8906eeb8a5b7eb0aadee7f7c *go.tgz' | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		cd /usr/local/go/src; 	./make.bash; 		rm -rf 		/usr/local/go/pkg/bootstrap 		/usr/local/go/pkg/obj 	; 	apk del .build-deps; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
-# Thu, 23 Apr 2020 20:02:38 GMT
+# Fri, 15 May 2020 20:44:43 GMT
+ENV GOLANG_VERSION=1.14.3
+# Fri, 15 May 2020 20:45:51 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		bash 		gcc 		musl-dev 		openssl 		go 	; 	export 		GOROOT_BOOTSTRAP="$(go env GOROOT)" 		GOOS="$(go env GOOS)" 		GOARCH="$(go env GOARCH)" 		GOHOSTOS="$(go env GOHOSTOS)" 		GOHOSTARCH="$(go env GOHOSTARCH)" 	; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) export GOARM='6' ;; 		armv7) export GOARM='7' ;; 		x86) export GO386='387' ;; 	esac; 		wget -O go.tgz "https://golang.org/dl/go$GOLANG_VERSION.src.tar.gz"; 	echo '93023778d4d1797b7bc6a53e86c3a9b150c923953225f8a48a2d5fabc971af56 *go.tgz' | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		cd /usr/local/go/src; 	./make.bash; 		rm -rf 		/usr/local/go/pkg/bootstrap 		/usr/local/go/pkg/obj 	; 	apk del .build-deps; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
+# Fri, 15 May 2020 20:45:56 GMT
 ENV GOPATH=/go
-# Thu, 23 Apr 2020 20:02:38 GMT
+# Fri, 15 May 2020 20:45:56 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Apr 2020 20:02:38 GMT
+# Fri, 15 May 2020 20:45:57 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 23 Apr 2020 20:02:39 GMT
+# Fri, 15 May 2020 20:45:57 GMT
 WORKDIR /go
-# Wed, 06 May 2020 15:30:28 GMT
+# Fri, 15 May 2020 21:45:40 GMT
 WORKDIR /src
-# Wed, 06 May 2020 15:30:31 GMT
+# Fri, 15 May 2020 21:45:42 GMT
 RUN apk add --no-cache     git     ca-certificates
-# Wed, 06 May 2020 15:30:32 GMT
+# Fri, 15 May 2020 21:45:42 GMT
 ENV CADDY_SOURCE_VERSION=v2.0.0
-# Wed, 06 May 2020 15:30:35 GMT
+# Fri, 15 May 2020 21:45:47 GMT
 RUN git clone -b $CADDY_SOURCE_VERSION https://github.com/caddyserver/caddy.git --single-branch
-# Wed, 06 May 2020 15:30:36 GMT
+# Fri, 15 May 2020 21:45:47 GMT
 WORKDIR /src/caddy/cmd/caddy
-# Wed, 06 May 2020 15:31:35 GMT
+# Fri, 15 May 2020 21:46:02 GMT
 RUN go get -d ./...
-# Wed, 06 May 2020 15:31:59 GMT
+# Fri, 15 May 2020 21:46:09 GMT
 COPY file:83b813b69aee8796ce6cdf324efd1e9890d70da3ae40d917ee2f320c487134c6 in /usr/bin/caddy-builder 
-# Wed, 06 May 2020 15:32:00 GMT
+# Fri, 15 May 2020 21:46:09 GMT
 WORKDIR /src/custom-caddy/cmd/caddy
 ```
 
@@ -2716,36 +2716,36 @@ WORKDIR /src/custom-caddy/cmd/caddy
 		Last Modified: Thu, 23 Apr 2020 20:06:33 GMT  
 		Size: 153.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b740a6c801ac078d5a8e6ecd7d6c250dc1597367b4426b9d3b3d20ab05b44b48`  
-		Last Modified: Thu, 23 Apr 2020 20:06:50 GMT  
-		Size: 131.8 MB (131754635 bytes)  
+	-	`sha256:953996d17e01ab26a510ab21d1b8e140a2a82a3a6d470890ee321abc0bd59fd3`  
+		Last Modified: Fri, 15 May 2020 20:50:46 GMT  
+		Size: 131.9 MB (131858758 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:791aa96d58566b08b0752b97c24a2f95d300212fdfabcce9ea1bf47436c09005`  
-		Last Modified: Thu, 23 Apr 2020 20:06:33 GMT  
-		Size: 156.0 B  
+	-	`sha256:8ef8c1c28767148ade729d11932d2312b1410b36186d0a9cde1e36c9ba3d301e`  
+		Last Modified: Fri, 15 May 2020 20:50:44 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:834c5428194522d37fcd75f8529cc1bce856a7462bc892b4ad3a4a5e2001a062`  
-		Last Modified: Wed, 06 May 2020 15:32:45 GMT  
+	-	`sha256:21ed906c938756832f1f51a17e0d0646a48609eb7bb7748b193efcee9dab0764`  
+		Last Modified: Fri, 15 May 2020 21:46:22 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f11fa11c7cebb00d651b44fe5affb6267ffee9a3b3d706bfc2252d3802ae023`  
-		Last Modified: Wed, 06 May 2020 15:32:43 GMT  
-		Size: 8.2 MB (8212440 bytes)  
+	-	`sha256:d53c7446c5e8e872a9d2bdfc7cc7f72ca494f91a3e1f8cb14508032e27f6abc2`  
+		Last Modified: Fri, 15 May 2020 21:46:22 GMT  
+		Size: 8.2 MB (8212441 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:757ee1cd779e9012fc309f54cafd07ee078b3278162517b362b6bb18aa37d268`  
-		Last Modified: Wed, 06 May 2020 15:32:44 GMT  
-		Size: 2.7 MB (2711740 bytes)  
+	-	`sha256:7d78bef69b13c0f6ef34dee6b17c2db47e19e4c33287e433e415481d9b3a3ce9`  
+		Last Modified: Fri, 15 May 2020 21:46:21 GMT  
+		Size: 2.7 MB (2708215 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad303cb182bfa145e712dc4bf0675d585026945bfb83d97b5b1f5916a8f57674`  
-		Last Modified: Wed, 06 May 2020 15:33:23 GMT  
-		Size: 176.7 MB (176716175 bytes)  
+	-	`sha256:6c5eb0f1d42c2b99f724659a6fdfe4ed355920ecd7849c101c2f4fd300bf6f01`  
+		Last Modified: Fri, 15 May 2020 21:46:42 GMT  
+		Size: 176.7 MB (176715349 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2723277a2ed88bb3dfb9588f8db0ea41baa129e23045e5eb6111c3555b89c28`  
-		Last Modified: Wed, 06 May 2020 15:32:43 GMT  
-		Size: 508.0 B  
+	-	`sha256:473a5b493d958f1054c96c252c5d6147a49bcc11a5262b58b54319e9b9fe558c`  
+		Last Modified: Fri, 15 May 2020 21:46:52 GMT  
+		Size: 504.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92912690ccbf0456f7708007fc898f7c68bfd429ce01189c85993d68b9a3621d`  
-		Last Modified: Wed, 06 May 2020 15:33:29 GMT  
+	-	`sha256:47634dd72ea6c819d83f449fe1b61d55c6a3866fcf9c2f0cb9fb92e1cf93d341`  
+		Last Modified: Fri, 15 May 2020 21:46:52 GMT  
 		Size: 183.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -3914,7 +3914,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ## `caddy:2-builder`
 
 ```console
-$ docker pull caddy@sha256:f0273bdbb51a4934a687dd3216c5b26d88a420e07d7802eec2cdb45f5b13ab08
+$ docker pull caddy@sha256:947815b862ef57234283964272eb6b862a7adb3d6fba78f6cc81d6f837211a65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4419,14 +4419,14 @@ WORKDIR /src/custom-caddy/cmd/caddy
 ### `caddy:2-builder` - linux; s390x
 
 ```console
-$ docker pull caddy@sha256:0f5c2888fcc9b63afc21ac013c2442563752d1bd4472ded95c123280bc22f095
+$ docker pull caddy@sha256:577597322d9dfafa1285515c8fad56c80e2e6666687c460c504ff9057ec8051e
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **322.3 MB (322280883 bytes)**  
+-	Total Size: **322.4 MB (322380651 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8473d2b3c5d9c385a8546015faa2191c7f389502e5726c63d97c11b401effdb5`
+-	Image ID: `sha256:67498fdb89e44ca98ffe0ed90f15059e1c785c58d997469a86c95815bca8e153`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -4438,33 +4438,33 @@ CMD ["/bin/sh"]
 RUN apk add --no-cache 		ca-certificates
 # Thu, 23 Apr 2020 20:01:11 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Thu, 23 Apr 2020 20:01:11 GMT
-ENV GOLANG_VERSION=1.14.2
-# Thu, 23 Apr 2020 20:02:31 GMT
-RUN set -eux; 	apk add --no-cache --virtual .build-deps 		bash 		gcc 		musl-dev 		openssl 		go 	; 	export 		GOROOT_BOOTSTRAP="$(go env GOROOT)" 		GOOS="$(go env GOOS)" 		GOARCH="$(go env GOARCH)" 		GOHOSTOS="$(go env GOHOSTOS)" 		GOHOSTARCH="$(go env GOHOSTARCH)" 	; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) export GOARM='6' ;; 		armv7) export GOARM='7' ;; 		x86) export GO386='387' ;; 	esac; 		wget -O go.tgz "https://golang.org/dl/go$GOLANG_VERSION.src.tar.gz"; 	echo '98de84e69726a66da7b4e58eac41b99cbe274d7e8906eeb8a5b7eb0aadee7f7c *go.tgz' | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		cd /usr/local/go/src; 	./make.bash; 		rm -rf 		/usr/local/go/pkg/bootstrap 		/usr/local/go/pkg/obj 	; 	apk del .build-deps; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
-# Thu, 23 Apr 2020 20:02:38 GMT
+# Fri, 15 May 2020 20:44:43 GMT
+ENV GOLANG_VERSION=1.14.3
+# Fri, 15 May 2020 20:45:51 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		bash 		gcc 		musl-dev 		openssl 		go 	; 	export 		GOROOT_BOOTSTRAP="$(go env GOROOT)" 		GOOS="$(go env GOOS)" 		GOARCH="$(go env GOARCH)" 		GOHOSTOS="$(go env GOHOSTOS)" 		GOHOSTARCH="$(go env GOHOSTARCH)" 	; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) export GOARM='6' ;; 		armv7) export GOARM='7' ;; 		x86) export GO386='387' ;; 	esac; 		wget -O go.tgz "https://golang.org/dl/go$GOLANG_VERSION.src.tar.gz"; 	echo '93023778d4d1797b7bc6a53e86c3a9b150c923953225f8a48a2d5fabc971af56 *go.tgz' | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		cd /usr/local/go/src; 	./make.bash; 		rm -rf 		/usr/local/go/pkg/bootstrap 		/usr/local/go/pkg/obj 	; 	apk del .build-deps; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
+# Fri, 15 May 2020 20:45:56 GMT
 ENV GOPATH=/go
-# Thu, 23 Apr 2020 20:02:38 GMT
+# Fri, 15 May 2020 20:45:56 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Apr 2020 20:02:38 GMT
+# Fri, 15 May 2020 20:45:57 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 23 Apr 2020 20:02:39 GMT
+# Fri, 15 May 2020 20:45:57 GMT
 WORKDIR /go
-# Wed, 06 May 2020 15:30:28 GMT
+# Fri, 15 May 2020 21:45:40 GMT
 WORKDIR /src
-# Wed, 06 May 2020 15:30:31 GMT
+# Fri, 15 May 2020 21:45:42 GMT
 RUN apk add --no-cache     git     ca-certificates
-# Wed, 06 May 2020 15:30:32 GMT
+# Fri, 15 May 2020 21:45:42 GMT
 ENV CADDY_SOURCE_VERSION=v2.0.0
-# Wed, 06 May 2020 15:30:35 GMT
+# Fri, 15 May 2020 21:45:47 GMT
 RUN git clone -b $CADDY_SOURCE_VERSION https://github.com/caddyserver/caddy.git --single-branch
-# Wed, 06 May 2020 15:30:36 GMT
+# Fri, 15 May 2020 21:45:47 GMT
 WORKDIR /src/caddy/cmd/caddy
-# Wed, 06 May 2020 15:31:35 GMT
+# Fri, 15 May 2020 21:46:02 GMT
 RUN go get -d ./...
-# Wed, 06 May 2020 15:31:59 GMT
+# Fri, 15 May 2020 21:46:09 GMT
 COPY file:83b813b69aee8796ce6cdf324efd1e9890d70da3ae40d917ee2f320c487134c6 in /usr/bin/caddy-builder 
-# Wed, 06 May 2020 15:32:00 GMT
+# Fri, 15 May 2020 21:46:09 GMT
 WORKDIR /src/custom-caddy/cmd/caddy
 ```
 
@@ -4481,36 +4481,36 @@ WORKDIR /src/custom-caddy/cmd/caddy
 		Last Modified: Thu, 23 Apr 2020 20:06:33 GMT  
 		Size: 153.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b740a6c801ac078d5a8e6ecd7d6c250dc1597367b4426b9d3b3d20ab05b44b48`  
-		Last Modified: Thu, 23 Apr 2020 20:06:50 GMT  
-		Size: 131.8 MB (131754635 bytes)  
+	-	`sha256:953996d17e01ab26a510ab21d1b8e140a2a82a3a6d470890ee321abc0bd59fd3`  
+		Last Modified: Fri, 15 May 2020 20:50:46 GMT  
+		Size: 131.9 MB (131858758 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:791aa96d58566b08b0752b97c24a2f95d300212fdfabcce9ea1bf47436c09005`  
-		Last Modified: Thu, 23 Apr 2020 20:06:33 GMT  
-		Size: 156.0 B  
+	-	`sha256:8ef8c1c28767148ade729d11932d2312b1410b36186d0a9cde1e36c9ba3d301e`  
+		Last Modified: Fri, 15 May 2020 20:50:44 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:834c5428194522d37fcd75f8529cc1bce856a7462bc892b4ad3a4a5e2001a062`  
-		Last Modified: Wed, 06 May 2020 15:32:45 GMT  
+	-	`sha256:21ed906c938756832f1f51a17e0d0646a48609eb7bb7748b193efcee9dab0764`  
+		Last Modified: Fri, 15 May 2020 21:46:22 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f11fa11c7cebb00d651b44fe5affb6267ffee9a3b3d706bfc2252d3802ae023`  
-		Last Modified: Wed, 06 May 2020 15:32:43 GMT  
-		Size: 8.2 MB (8212440 bytes)  
+	-	`sha256:d53c7446c5e8e872a9d2bdfc7cc7f72ca494f91a3e1f8cb14508032e27f6abc2`  
+		Last Modified: Fri, 15 May 2020 21:46:22 GMT  
+		Size: 8.2 MB (8212441 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:757ee1cd779e9012fc309f54cafd07ee078b3278162517b362b6bb18aa37d268`  
-		Last Modified: Wed, 06 May 2020 15:32:44 GMT  
-		Size: 2.7 MB (2711740 bytes)  
+	-	`sha256:7d78bef69b13c0f6ef34dee6b17c2db47e19e4c33287e433e415481d9b3a3ce9`  
+		Last Modified: Fri, 15 May 2020 21:46:21 GMT  
+		Size: 2.7 MB (2708215 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad303cb182bfa145e712dc4bf0675d585026945bfb83d97b5b1f5916a8f57674`  
-		Last Modified: Wed, 06 May 2020 15:33:23 GMT  
-		Size: 176.7 MB (176716175 bytes)  
+	-	`sha256:6c5eb0f1d42c2b99f724659a6fdfe4ed355920ecd7849c101c2f4fd300bf6f01`  
+		Last Modified: Fri, 15 May 2020 21:46:42 GMT  
+		Size: 176.7 MB (176715349 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2723277a2ed88bb3dfb9588f8db0ea41baa129e23045e5eb6111c3555b89c28`  
-		Last Modified: Wed, 06 May 2020 15:32:43 GMT  
-		Size: 508.0 B  
+	-	`sha256:473a5b493d958f1054c96c252c5d6147a49bcc11a5262b58b54319e9b9fe558c`  
+		Last Modified: Fri, 15 May 2020 21:46:52 GMT  
+		Size: 504.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92912690ccbf0456f7708007fc898f7c68bfd429ce01189c85993d68b9a3621d`  
-		Last Modified: Wed, 06 May 2020 15:33:29 GMT  
+	-	`sha256:47634dd72ea6c819d83f449fe1b61d55c6a3866fcf9c2f0cb9fb92e1cf93d341`  
+		Last Modified: Fri, 15 May 2020 21:46:52 GMT  
 		Size: 183.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -5679,7 +5679,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ## `caddy:builder`
 
 ```console
-$ docker pull caddy@sha256:f0273bdbb51a4934a687dd3216c5b26d88a420e07d7802eec2cdb45f5b13ab08
+$ docker pull caddy@sha256:947815b862ef57234283964272eb6b862a7adb3d6fba78f6cc81d6f837211a65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6184,14 +6184,14 @@ WORKDIR /src/custom-caddy/cmd/caddy
 ### `caddy:builder` - linux; s390x
 
 ```console
-$ docker pull caddy@sha256:0f5c2888fcc9b63afc21ac013c2442563752d1bd4472ded95c123280bc22f095
+$ docker pull caddy@sha256:577597322d9dfafa1285515c8fad56c80e2e6666687c460c504ff9057ec8051e
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **322.3 MB (322280883 bytes)**  
+-	Total Size: **322.4 MB (322380651 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8473d2b3c5d9c385a8546015faa2191c7f389502e5726c63d97c11b401effdb5`
+-	Image ID: `sha256:67498fdb89e44ca98ffe0ed90f15059e1c785c58d997469a86c95815bca8e153`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -6203,33 +6203,33 @@ CMD ["/bin/sh"]
 RUN apk add --no-cache 		ca-certificates
 # Thu, 23 Apr 2020 20:01:11 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Thu, 23 Apr 2020 20:01:11 GMT
-ENV GOLANG_VERSION=1.14.2
-# Thu, 23 Apr 2020 20:02:31 GMT
-RUN set -eux; 	apk add --no-cache --virtual .build-deps 		bash 		gcc 		musl-dev 		openssl 		go 	; 	export 		GOROOT_BOOTSTRAP="$(go env GOROOT)" 		GOOS="$(go env GOOS)" 		GOARCH="$(go env GOARCH)" 		GOHOSTOS="$(go env GOHOSTOS)" 		GOHOSTARCH="$(go env GOHOSTARCH)" 	; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) export GOARM='6' ;; 		armv7) export GOARM='7' ;; 		x86) export GO386='387' ;; 	esac; 		wget -O go.tgz "https://golang.org/dl/go$GOLANG_VERSION.src.tar.gz"; 	echo '98de84e69726a66da7b4e58eac41b99cbe274d7e8906eeb8a5b7eb0aadee7f7c *go.tgz' | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		cd /usr/local/go/src; 	./make.bash; 		rm -rf 		/usr/local/go/pkg/bootstrap 		/usr/local/go/pkg/obj 	; 	apk del .build-deps; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
-# Thu, 23 Apr 2020 20:02:38 GMT
+# Fri, 15 May 2020 20:44:43 GMT
+ENV GOLANG_VERSION=1.14.3
+# Fri, 15 May 2020 20:45:51 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		bash 		gcc 		musl-dev 		openssl 		go 	; 	export 		GOROOT_BOOTSTRAP="$(go env GOROOT)" 		GOOS="$(go env GOOS)" 		GOARCH="$(go env GOARCH)" 		GOHOSTOS="$(go env GOHOSTOS)" 		GOHOSTARCH="$(go env GOHOSTARCH)" 	; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) export GOARM='6' ;; 		armv7) export GOARM='7' ;; 		x86) export GO386='387' ;; 	esac; 		wget -O go.tgz "https://golang.org/dl/go$GOLANG_VERSION.src.tar.gz"; 	echo '93023778d4d1797b7bc6a53e86c3a9b150c923953225f8a48a2d5fabc971af56 *go.tgz' | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		cd /usr/local/go/src; 	./make.bash; 		rm -rf 		/usr/local/go/pkg/bootstrap 		/usr/local/go/pkg/obj 	; 	apk del .build-deps; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
+# Fri, 15 May 2020 20:45:56 GMT
 ENV GOPATH=/go
-# Thu, 23 Apr 2020 20:02:38 GMT
+# Fri, 15 May 2020 20:45:56 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Apr 2020 20:02:38 GMT
+# Fri, 15 May 2020 20:45:57 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 23 Apr 2020 20:02:39 GMT
+# Fri, 15 May 2020 20:45:57 GMT
 WORKDIR /go
-# Wed, 06 May 2020 15:30:28 GMT
+# Fri, 15 May 2020 21:45:40 GMT
 WORKDIR /src
-# Wed, 06 May 2020 15:30:31 GMT
+# Fri, 15 May 2020 21:45:42 GMT
 RUN apk add --no-cache     git     ca-certificates
-# Wed, 06 May 2020 15:30:32 GMT
+# Fri, 15 May 2020 21:45:42 GMT
 ENV CADDY_SOURCE_VERSION=v2.0.0
-# Wed, 06 May 2020 15:30:35 GMT
+# Fri, 15 May 2020 21:45:47 GMT
 RUN git clone -b $CADDY_SOURCE_VERSION https://github.com/caddyserver/caddy.git --single-branch
-# Wed, 06 May 2020 15:30:36 GMT
+# Fri, 15 May 2020 21:45:47 GMT
 WORKDIR /src/caddy/cmd/caddy
-# Wed, 06 May 2020 15:31:35 GMT
+# Fri, 15 May 2020 21:46:02 GMT
 RUN go get -d ./...
-# Wed, 06 May 2020 15:31:59 GMT
+# Fri, 15 May 2020 21:46:09 GMT
 COPY file:83b813b69aee8796ce6cdf324efd1e9890d70da3ae40d917ee2f320c487134c6 in /usr/bin/caddy-builder 
-# Wed, 06 May 2020 15:32:00 GMT
+# Fri, 15 May 2020 21:46:09 GMT
 WORKDIR /src/custom-caddy/cmd/caddy
 ```
 
@@ -6246,36 +6246,36 @@ WORKDIR /src/custom-caddy/cmd/caddy
 		Last Modified: Thu, 23 Apr 2020 20:06:33 GMT  
 		Size: 153.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b740a6c801ac078d5a8e6ecd7d6c250dc1597367b4426b9d3b3d20ab05b44b48`  
-		Last Modified: Thu, 23 Apr 2020 20:06:50 GMT  
-		Size: 131.8 MB (131754635 bytes)  
+	-	`sha256:953996d17e01ab26a510ab21d1b8e140a2a82a3a6d470890ee321abc0bd59fd3`  
+		Last Modified: Fri, 15 May 2020 20:50:46 GMT  
+		Size: 131.9 MB (131858758 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:791aa96d58566b08b0752b97c24a2f95d300212fdfabcce9ea1bf47436c09005`  
-		Last Modified: Thu, 23 Apr 2020 20:06:33 GMT  
-		Size: 156.0 B  
+	-	`sha256:8ef8c1c28767148ade729d11932d2312b1410b36186d0a9cde1e36c9ba3d301e`  
+		Last Modified: Fri, 15 May 2020 20:50:44 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:834c5428194522d37fcd75f8529cc1bce856a7462bc892b4ad3a4a5e2001a062`  
-		Last Modified: Wed, 06 May 2020 15:32:45 GMT  
+	-	`sha256:21ed906c938756832f1f51a17e0d0646a48609eb7bb7748b193efcee9dab0764`  
+		Last Modified: Fri, 15 May 2020 21:46:22 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f11fa11c7cebb00d651b44fe5affb6267ffee9a3b3d706bfc2252d3802ae023`  
-		Last Modified: Wed, 06 May 2020 15:32:43 GMT  
-		Size: 8.2 MB (8212440 bytes)  
+	-	`sha256:d53c7446c5e8e872a9d2bdfc7cc7f72ca494f91a3e1f8cb14508032e27f6abc2`  
+		Last Modified: Fri, 15 May 2020 21:46:22 GMT  
+		Size: 8.2 MB (8212441 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:757ee1cd779e9012fc309f54cafd07ee078b3278162517b362b6bb18aa37d268`  
-		Last Modified: Wed, 06 May 2020 15:32:44 GMT  
-		Size: 2.7 MB (2711740 bytes)  
+	-	`sha256:7d78bef69b13c0f6ef34dee6b17c2db47e19e4c33287e433e415481d9b3a3ce9`  
+		Last Modified: Fri, 15 May 2020 21:46:21 GMT  
+		Size: 2.7 MB (2708215 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad303cb182bfa145e712dc4bf0675d585026945bfb83d97b5b1f5916a8f57674`  
-		Last Modified: Wed, 06 May 2020 15:33:23 GMT  
-		Size: 176.7 MB (176716175 bytes)  
+	-	`sha256:6c5eb0f1d42c2b99f724659a6fdfe4ed355920ecd7849c101c2f4fd300bf6f01`  
+		Last Modified: Fri, 15 May 2020 21:46:42 GMT  
+		Size: 176.7 MB (176715349 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2723277a2ed88bb3dfb9588f8db0ea41baa129e23045e5eb6111c3555b89c28`  
-		Last Modified: Wed, 06 May 2020 15:32:43 GMT  
-		Size: 508.0 B  
+	-	`sha256:473a5b493d958f1054c96c252c5d6147a49bcc11a5262b58b54319e9b9fe558c`  
+		Last Modified: Fri, 15 May 2020 21:46:52 GMT  
+		Size: 504.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92912690ccbf0456f7708007fc898f7c68bfd429ce01189c85993d68b9a3621d`  
-		Last Modified: Wed, 06 May 2020 15:33:29 GMT  
+	-	`sha256:47634dd72ea6c819d83f449fe1b61d55c6a3866fcf9c2f0cb9fb92e1cf93d341`  
+		Last Modified: Fri, 15 May 2020 21:46:52 GMT  
 		Size: 183.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
