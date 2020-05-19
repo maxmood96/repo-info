@@ -4287,14 +4287,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-vcstool=0.2.7-1
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-vcstool/python3-vcstool_0.2.7-1.debian.tar.xz' python3-vcstool_0.2.7-1.debian.tar.xz 1116 SHA512:67d420b6523f11c6fb393f62eb175b83d5cbb7ce6335a0f0cec52b8dc261252cde9760413664fc4ce7053b1978f3b3f0f6ebbc7171fe2d4af5767e596faffe89
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-vcstool/python3-vcstool_0.2.7-1.dsc' python3-vcstool_0.2.7-1.dsc 883 SHA512:ae3373513baeb4af0d93b1719a21c970578fe8ccc71b914abdddbeb61955db2e0bedefed24682901491411a71182615d920b6e3af431d6f4d1e59aa291f124cf
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-vcstool/python3-vcstool_0.2.7.orig.tar.gz' python3-vcstool_0.2.7.orig.tar.gz 28751 SHA512:769c2dacd2c141c80355f809eb46e58ccacdcc3f4333b70ba1e1798b84760617aefacad1fe2e7492d3fca0ed350279bb9cc9c0b6b6c363ca1e9f4119044550e1
-```
 
 ### `dpkg` source package: `python3.6=3.6.9-1~18.04ubuntu1`
 
