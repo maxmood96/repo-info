@@ -1,9 +1,9 @@
-# `gradle:6.4.0-jdk11`
+# `gradle:6.4.1-jdk11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:72fdeedb788963022ad9a890d9750d1cf99901335568ee661de28324f67e8b32`
-- Created: `2020-05-06T16:22:18.049377631Z`
+- Image ID: `sha256:8a4ea29d78c4430a52a8a9906f2c269d5b24ca61d339b6a44199446f6ef90fae`
+- Created: `2020-05-18T18:24:38.88104946Z`
 - Virtual Size: ~ 677.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,7 +16,7 @@
   - `JAVA_VERSION=jdk-11.0.7+10`
   - `JAVA_HOME=/opt/java/openjdk`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=6.4`
+  - `GRADLE_VERSION=6.4.1`
 
 ## `dpkg` (`.deb`-based packages)
 
