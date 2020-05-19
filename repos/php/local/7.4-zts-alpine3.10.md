@@ -1,10 +1,10 @@
-# `php:7.4.5-zts-alpine3.10`
+# `php:7.4.6-zts-alpine3.10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:567fb45673e71af9a656dcadd6b2316066c38a28c8cb5cfeb90a950a885d2e32`
-- Created: `2020-05-06T22:32:29.879567649Z`
-- Virtual Size: ~ 64.45 Mb  
+- Image ID: `sha256:a7d658107ef884c8eafc3d898441f197e6ca68ec6e36704c1535f9ba23d8f3e2`
+- Created: `2020-05-15T02:22:40.390798483Z`
+- Virtual Size: ~ 64.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.5`
-  - `PHP_URL=https://www.php.net/distributions/php-7.4.5.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.5.tar.xz.asc`
-  - `PHP_SHA256=d059fd7f55bdc4d2eada15a00a2976697010d3631ef6f83149cc5289e1f23c2c`
+  - `PHP_VERSION=7.4.6`
+  - `PHP_URL=https://www.php.net/distributions/php-7.4.6.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.6.tar.xz.asc`
+  - `PHP_SHA256=d740322f84f63019622b9f369d64ea5ab676547d2bdcf12be77a5a4cffd06832`
   - `PHP_MD5=`
 
 ## `apk` (`.apk`-based packages)
@@ -437,16 +437,16 @@ GPL-2.0
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.28.0-r2 description:
+sqlite-libs-3.28.0-r3 description:
 Sqlite3 library
 
-sqlite-libs-3.28.0-r2 webpage:
+sqlite-libs-3.28.0-r3 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.28.0-r2 installed size:
+sqlite-libs-3.28.0-r3 installed size:
 925696
 
-sqlite-libs-3.28.0-r2 license:
+sqlite-libs-3.28.0-r3 license:
 Public-Domain
 
 ```
