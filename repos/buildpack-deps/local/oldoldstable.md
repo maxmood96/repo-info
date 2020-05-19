@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c96f285a599fc0b6e4ff2ec21dc5dfc6b08a462239f5265714e489dc83032020`
-- Created: `2020-05-13T22:36:43.39781236Z`
+- Image ID: `sha256:b0c75413ab9c410af9ea1d8c968b233086e2ce40030f43a629bbefb3dbd00aeb`
+- Created: `2020-05-15T17:40:50.666234434Z`
 - Virtual Size: ~ 615.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2381,20 +2381,13 @@ Licenses: (parsed from: `/usr/share/doc/libexif-dev/copyright`, `/usr/share/doc/
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libexif=0.6.21-2+deb8u1
-'http://security.debian.org/debian-security/pool/updates/main/libe/libexif/libexif_0.6.21-2+deb8u1.dsc' libexif_0.6.21-2+deb8u1.dsc 1921 SHA256:87e6dc4c3bba660c7e50e1f8a71fc3c75c1534f34bf36025f6ba1766a5f73ca7
-'http://security.debian.org/debian-security/pool/updates/main/libe/libexif/libexif_0.6.21.orig.tar.gz' libexif_0.6.21.orig.tar.gz 2081615 SHA256:edb7eb13664cf950a6edd132b75e99afe61c5effe2f16494e6d27bc404b287bf
-'http://security.debian.org/debian-security/pool/updates/main/libe/libexif/libexif_0.6.21-2+deb8u1.debian.tar.xz' libexif_0.6.21-2+deb8u1.debian.tar.xz 9892 SHA256:554b08a7e6ee583473bb4d0aa7ce91d6470db44d4403443be2313f2e5faec1f2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libexif/0.6.21-2+deb8u1/
 
-- https://sources.debian.net/src/libexif/0.6.21-2+deb8u1/ (for browsing the source)
-- https://sources.debian.net/src/libexif/0.6.21-2+deb8u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libexif/0.6.21-2+deb8u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.1-2+deb8u1`
 

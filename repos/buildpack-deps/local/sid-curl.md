@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:06bba400b0ce9a3e4a0d0f55ee9e42334b1e39c13575c1e26d82ab753a96e981`
-- Created: `2020-05-13T22:37:17.837310035Z`
-- Virtual Size: ~ 152.31 Mb  
+- Image ID: `sha256:c0ce16b6daa8ec4550d16f65f636cb53a50549f3c2ee06fb3a5e8f65f5202083`
+- Created: `2020-05-15T17:41:26.276778047Z`
+- Virtual Size: ~ 152.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -66,25 +66,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.118/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.118/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apt=2.1.1`
+### `dpkg` source package: `apt=2.1.2`
 
 Binary Packages:
 
-- `apt=2.1.1`
-- `libapt-pkg6.0:amd64=2.1.1`
+- `apt=2.1.2`
+- `libapt-pkg6.0:amd64=2.1.2`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg6.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris apt=2.1.2
+'http://deb.debian.org/debian/pool/main/a/apt/apt_2.1.2.dsc' apt_2.1.2.dsc 2756 SHA256:36e1c9a508439d01fdcce3a78be944b46159f8e0797f6cc9497293fb0a0f9e52
+'http://deb.debian.org/debian/pool/main/a/apt/apt_2.1.2.tar.xz' apt_2.1.2.tar.xz 2170192 SHA256:5de743e516705e4df2c9fc94481acc730ccbbf960db604193360145165a79e27
+```
 
-- http://snapshot.debian.org/package/apt/2.1.1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/apt/2.1.2/ (for browsing the source)
+- https://sources.debian.net/src/apt/2.1.2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apt/2.1.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.48-5`
 
@@ -734,12 +740,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-9/9.3.0-12/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-9/9.3.0-12/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.30-7`
+### `dpkg` source package: `glibc=2.30-8`
 
 Binary Packages:
 
-- `libc-bin=2.30-7`
-- `libc6:amd64=2.30-7`
+- `libc-bin=2.30-8`
+- `libc6:amd64=2.30-8`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -749,17 +755,17 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.30-7
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.30-7.dsc' glibc_2.30-7.dsc 8649 SHA256:1e49d18c5891611f7bb3c4a6b0a18b568b118b23cce592cec6d8b1f38240d7eb
+$ apt-get source -qq --print-uris glibc=2.30-8
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.30-8.dsc' glibc_2.30-8.dsc 8649 SHA256:9af27d065c6250a2b0777984a8576338de9ede8b6681d31f16643b8e17aa0e0e
 'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.30.orig.tar.xz' glibc_2.30.orig.tar.xz 17158704 SHA256:70126104e388f74a1b37c95b9b947c4db5f23af4e7ec84df6de9113d4d57217c
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.30-7.debian.tar.xz' glibc_2.30-7.debian.tar.xz 848172 SHA256:f416f74e99137ee8754f75d8134bd88eebd7c6bd94f37d93f167c8b671097220
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.30-8.debian.tar.xz' glibc_2.30-8.debian.tar.xz 848324 SHA256:05838b4003b999422a0eac9646d9d7e33d03482fd809f7c2e1db27a67ea7d09c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/glibc/2.30-7/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.30-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.30-7/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/glibc/2.30-8/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.30-8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.30-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-4`
 
@@ -1220,12 +1226,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libcap-ng/0.7.9-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libcap-ng/0.7.9-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libcap2=1:2.33-1`
+### `dpkg` source package: `libcap2=1:2.34-1`
 
 Binary Packages:
 
-- `libcap2:amd64=1:2.33-1`
-- `libcap2-bin=1:2.33-1`
+- `libcap2:amd64=1:2.34-1`
+- `libcap2-bin=1:2.34-1`
 
 Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`, `/usr/share/doc/libcap2-bin/copyright`)
 
@@ -1236,17 +1242,17 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`, `/usr/share/doc/libc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libcap2=1:2.33-1
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.33-1.dsc' libcap2_2.33-1.dsc 2200 SHA256:39901204f7ada8dc1b28c4ac17175550ea9d1b41badc93c501a98a575c720ce1
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.33.orig.tar.xz' libcap2_2.33.orig.tar.xz 111280 SHA256:08edeaba2757021aeec45c4eeec52566675e0e0f5d4f057284d729e04f2643d6
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.33-1.debian.tar.xz' libcap2_2.33-1.debian.tar.xz 28044 SHA256:cd9365d5ac5f587dd0cb5bd492da6de49ea2b6f82f1de208e200d82b4e986c69
+$ apt-get source -qq --print-uris libcap2=1:2.34-1
+'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.34-1.dsc' libcap2_2.34-1.dsc 2179 SHA256:bb16fea17ad82017cb662ff5105d6e38f36eb18ebf69335439b9d49c2ea25b62
+'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.34.orig.tar.xz' libcap2_2.34.orig.tar.xz 111556 SHA256:aecdd42015955068d3d94b7caa9590fcb2de5df53ce53c61a21b912bfc0b1611
+'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.34-1.debian.tar.xz' libcap2_2.34-1.debian.tar.xz 28128 SHA256:c8dfac7ce6fc9fbd1b4b5f6ae1c0ea1aac97b2caa4f7292bf5ef3944cde93526
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libcap2/1:2.33-1/ (for browsing the source)
-- https://sources.debian.net/src/libcap2/1:2.33-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libcap2/1:2.33-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libcap2/1:2.34-1/ (for browsing the source)
+- https://sources.debian.net/src/libcap2/1:2.34-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libcap2/1:2.34-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.3-4`
 
@@ -2402,17 +2408,17 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tzdata/2020a-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tzdata/2020a-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `util-linux=2.35.1-2`
+### `dpkg` source package: `util-linux=2.35.1-5`
 
 Binary Packages:
 
-- `bsdutils=1:2.35.1-2`
-- `libblkid1:amd64=2.35.1-2`
-- `libmount1:amd64=2.35.1-2`
-- `libsmartcols1:amd64=2.35.1-2`
-- `libuuid1:amd64=2.35.1-2`
-- `mount=2.35.1-2`
-- `util-linux=2.35.1-2`
+- `bsdutils=1:2.35.1-5`
+- `libblkid1:amd64=2.35.1-5`
+- `libmount1:amd64=2.35.1-5`
+- `libsmartcols1:amd64=2.35.1-5`
+- `libuuid1:amd64=2.35.1-5`
+- `mount=2.35.1-5`
+- `util-linux=2.35.1-5`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -2433,13 +2439,20 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris util-linux=2.35.1-5
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.35.1-5.dsc' util-linux_2.35.1-5.dsc 4232 SHA256:7062bda677ed760f1ce4074f3fe4ee16e42958dbaf6b6f87ac1bfcbe55f238ad
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.35.1.orig.tar.xz' util-linux_2.35.1.orig.tar.xz 5138360 SHA256:d9de3edd287366cd908e77677514b9387b22bc7b88f45b83e1922c3597f1d7f9
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.35.1-5.debian.tar.xz' util-linux_2.35.1-5.debian.tar.xz 95572 SHA256:f2f7ee584c3f4b896f4faa601015c8cacc193b84781594f18f470c8ccb36ac2f
+```
 
-- http://snapshot.debian.org/package/util-linux/2.35.1-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/util-linux/2.35.1-5/ (for browsing the source)
+- https://sources.debian.net/src/util-linux/2.35.1-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/util-linux/2.35.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.20.3-1`
 
