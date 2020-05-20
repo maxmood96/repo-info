@@ -34,6 +34,8 @@
 -	[`haproxy:2.2-rc-alpine`](#haproxy22-rc-alpine)
 -	[`haproxy:alpine`](#haproxyalpine)
 -	[`haproxy:latest`](#haproxylatest)
+-	[`haproxy:lts`](#haproxylts)
+-	[`haproxy:lts-alpine`](#haproxylts-alpine)
 
 ## `haproxy:1`
 
@@ -12594,3 +12596,11 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Last Modified: Fri, 15 May 2020 04:39:57 GMT  
 		Size: 380.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `haproxy:lts`
+
+**does not exist** (yet?)
+
+## `haproxy:lts-alpine`
+
+**does not exist** (yet?)
