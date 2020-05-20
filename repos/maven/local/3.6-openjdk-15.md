@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:83bbcc334a501a0c7ee6b41239242f37aac91003216718d58b6c63065c2ce254`
-- Created: `2020-05-07T21:23:41.698634281Z`
+- Image ID: `sha256:ee00013ed6ce1babb51a285c6357900b5143fe0a180a833265c1e3450803370c`
+- Created: `2020-05-16T11:28:47.759150004Z`
 - Virtual Size: ~ 496.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,9 +13,9 @@
   - `PATH=/usr/java/openjdk-15/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.UTF-8`
   - `JAVA_HOME=/usr/java/openjdk-15`
-  - `JAVA_VERSION=15-ea+22`
-  - `JAVA_URL=https://download.java.net/java/early_access/jdk15/22/GPL/openjdk-15-ea+22_linux-x64_bin.tar.gz`
-  - `JAVA_SHA256=c123e6d67ef5be47d5cc9a9b2c2940e31a4bad55af56e34f50e52f4dfec07c78`
+  - `JAVA_VERSION=15-ea+23`
+  - `JAVA_URL=https://download.java.net/java/early_access/jdk15/23/GPL/openjdk-15-ea+23_linux-x64_bin.tar.gz`
+  - `JAVA_SHA256=0a3a3f2bb3005d848f9a579c46c1cb581b46d6805faf673a7c1b5a2f158cd1b0`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 
