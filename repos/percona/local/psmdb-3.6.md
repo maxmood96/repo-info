@@ -1,26 +1,26 @@
-# `percona:psmdb-3.6.17`
+# `percona:psmdb-3.6.18`
 
 ## Docker Metadata
 
-- Image ID: `sha256:28fb287b76168d4d12c8a0058ecc18a1389a4b11c116aaed47cbadc177969259`
-- Created: `2020-05-07T15:25:08.127887762Z`
-- Virtual Size: ~ 429.00 Mb  
+- Image ID: `sha256:6e345b88346dbe7d5ebea17197723bbecd80db3daa07f0bb636835d5dc0f09c4`
+- Created: `2020-05-19T19:05:34.888554164Z`
+- Virtual Size: ~ 431.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["mongod"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PSMDB_VERSION=3.6.17-4.0`
+  - `PSMDB_VERSION=3.6.18-5.0`
   - `OS_VER=el7`
-  - `FULL_PERCONA_VERSION=3.6.17-4.0.el7`
-  - `K8S_TOOLS_VERSION=0.4.2`
+  - `FULL_PERCONA_VERSION=3.6.18-5.0.el7`
+  - `K8S_TOOLS_VERSION=0.5.0`
 - Labels:
   - `org.label-schema.build-date=20200504`
   - `org.label-schema.description=Percona Server for MongoDB is our free and open-source drop-in replacement for MongoDB Community Edition. It offers all the features and benefits of MongoDB Community Edition, plus additional enterprise-grade functionality.`
   - `org.label-schema.license=SSPLv1`
   - `org.label-schema.name=Percona Server for MongoDB`
-  - `org.label-schema.schema-version=3.6.17-4.0`
+  - `org.label-schema.schema-version=3.6.18-5.0`
   - `org.label-schema.vendor=Percona`
   - `org.opencontainers.image.authors=info@percona.com`
   - `org.opencontainers.image.created=2020-05-04 00:00:00+01:00`
@@ -29,23 +29,23 @@
   - `org.opencontainers.image.licenses=GPL-2.0-only`
   - `org.opencontainers.image.title=Percona Server for MongoDB`
   - `org.opencontainers.image.vendor=Percona`
-  - `org.opencontainers.image.version=3.6.17-4.0`
+  - `org.opencontainers.image.version=3.6.18-5.0`
 
 ## `rpm` (`.rpm`-based packages)
 
-### `rpm` package: `Percona-Server-MongoDB-36-mongos-3.6.17-4.0.el7.x86_64`
+### `rpm` package: `Percona-Server-MongoDB-36-mongos-3.6.18-5.0.el7.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `Percona-Server-MongoDB-36-server-3.6.17-4.0.el7.x86_64`
+### `rpm` package: `Percona-Server-MongoDB-36-server-3.6.18-5.0.el7.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `Percona-Server-MongoDB-36-shell-3.6.17-4.0.el7.x86_64`
+### `rpm` package: `Percona-Server-MongoDB-36-shell-3.6.18-5.0.el7.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
@@ -1543,7 +1543,7 @@ Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/pcre-8.32-17.el7.src.rpm
 ```
 
-### `rpm` package: `percona-release-1.0-17.noarch`
+### `rpm` package: `percona-release-1.0-18.noarch`
 
 Licenses (from `rpm --query`): GPL-3.0+
 
@@ -2137,18 +2137,18 @@ Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/yum-utils-1.1.31-53.el7.src.rpm
 ```
 
-### `rpm` package: `yum-utils-1.1.31-53.el7.noarch`
+### `rpm` package: `yum-utils-1.1.31-54.el7_8.noarch`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls yum-utils-1.1.31-53.el7.noarch
+$ yumdownloader --quiet --source --urls yum-utils-1.1.31-54.el7_8.noarch
 Enabling updates-source repository
 Enabling base-source repository
 Enabling extras-source repository
-http://vault.centos.org/centos/7/os/Source//SPackages/yum-utils-1.1.31-53.el7.src.rpm
+http://vault.centos.org/centos/7/updates/Source//SPackages/yum-utils-1.1.31-54.el7_8.src.rpm
 ```
 
 ### `rpm` package: `zlib-1.2.7-18.el7.x86_64`
