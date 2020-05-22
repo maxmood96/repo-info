@@ -1909,7 +1909,7 @@ CMD ["irb"]
 ## `jruby:9.2.11.1-jdk14`
 
 ```console
-$ docker pull jruby@sha256:3343cb05251ef838a37a937ec7846d5838b455e91175d6ddfc2fdd8883cd7dcc
+$ docker pull jruby@sha256:da7792cb82b9fc5cd4cde6d1b56ef1480c438396b8147d49285f078741eb7d52
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1919,14 +1919,14 @@ $ docker pull jruby@sha256:3343cb05251ef838a37a937ec7846d5838b455e91175d6ddfc2fd
 ### `jruby:9.2.11.1-jdk14` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:51a575581f4db1896d14f07bad2bba14769d903e8b70ea01b8f5a57b3c3835a0
+$ docker pull jruby@sha256:7d187b554a381c21c80be57b1963bf22e7eed93ea5dab76f490fb6db44c28b69
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **367.5 MB (367542139 bytes)**  
+-	Total Size: **367.5 MB (367540503 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4903c509a689ba7406519121660bb9c3e08d84c73ee2b5f9f221c1c53e79e486`
+-	Image ID: `sha256:7693eab0bea9e30e45bc24176b63cc985ddb72b4f57f231157a1dc2997c0524d`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -1952,37 +1952,33 @@ ENV PATH=/usr/java/openjdk-14/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
 # Fri, 15 May 2020 21:00:50 GMT
 ENV JAVA_VERSION=14.0.1
-# Fri, 15 May 2020 21:00:50 GMT
-ENV JAVA_URL=https://download.java.net/java/GA/jdk14.0.1/664493ef4a6946b186ff29eb326336a2/7/GPL/openjdk-14.0.1_linux-x64_bin.tar.gz
-# Fri, 15 May 2020 21:00:50 GMT
-ENV JAVA_SHA256=22ce248e0bd69f23028625bede9d1b3080935b68d011eaaf9e241f84d6b9c4cc
-# Fri, 15 May 2020 21:01:14 GMT
-RUN set -eux; 		wget -O openjdk.tgz "$JAVA_URL"; 	echo "$JAVA_SHA256 */openjdk.tgz" | sha256sum -c -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		javac --version; 	java --version
-# Fri, 15 May 2020 21:01:15 GMT
+# Fri, 22 May 2020 01:24:15 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | i386:x86-64) 			downloadUrl=https://download.java.net/java/GA/jdk14.0.1/664493ef4a6946b186ff29eb326336a2/7/GPL/openjdk-14.0.1_linux-x64_bin.tar.gz; 			downloadSha256=22ce248e0bd69f23028625bede9d1b3080935b68d011eaaf9e241f84d6b9c4cc; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 */openjdk.tgz" | sha256sum -c -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		javac --version; 	java --version
+# Fri, 22 May 2020 01:24:15 GMT
 CMD ["jshell"]
-# Sat, 16 May 2020 11:24:36 GMT
+# Fri, 22 May 2020 02:19:59 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Sat, 16 May 2020 11:24:36 GMT
+# Fri, 22 May 2020 02:19:59 GMT
 ENV JRUBY_VERSION=9.2.11.1
-# Sat, 16 May 2020 11:24:37 GMT
+# Fri, 22 May 2020 02:19:59 GMT
 ENV JRUBY_SHA256=f10449c82567133908e5e1ac076438307a7f0916f617f40fa314b78873a195dc
-# Sat, 16 May 2020 11:24:39 GMT
+# Fri, 22 May 2020 02:20:02 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Sat, 16 May 2020 11:24:39 GMT
+# Fri, 22 May 2020 02:20:02 GMT
 ENV PATH=/opt/jruby/bin:/usr/java/openjdk-14/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 16 May 2020 11:24:40 GMT
+# Fri, 22 May 2020 02:20:03 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Sat, 16 May 2020 11:24:53 GMT
+# Fri, 22 May 2020 02:20:16 GMT
 RUN gem install bundler rake net-telnet xmlrpc
-# Sat, 16 May 2020 11:24:53 GMT
+# Fri, 22 May 2020 02:20:17 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Sat, 16 May 2020 11:24:54 GMT
+# Fri, 22 May 2020 02:20:17 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Sat, 16 May 2020 11:24:54 GMT
+# Fri, 22 May 2020 02:20:17 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/java/openjdk-14/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 16 May 2020 11:24:55 GMT
+# Fri, 22 May 2020 02:20:18 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Sat, 16 May 2020 11:24:55 GMT
+# Fri, 22 May 2020 02:20:18 GMT
 CMD ["irb"]
 ```
 
@@ -2011,29 +2007,29 @@ CMD ["irb"]
 		Last Modified: Fri, 15 May 2020 21:07:57 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c28ad8b7692431cb0ac65107eae784b381505703214ae4b31a39ab1b0bd8ff49`  
-		Last Modified: Fri, 15 May 2020 21:08:23 GMT  
-		Size: 199.3 MB (199264537 bytes)  
+	-	`sha256:1080f9ff870502738bda533d612ec318875f409fcdf8a69768f404e154e886ef`  
+		Last Modified: Fri, 22 May 2020 01:28:27 GMT  
+		Size: 199.3 MB (199262792 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1720218fb3406a82c4f3fd5df66571a579ecbb134c0953fdb0002ed11622d97`  
-		Last Modified: Sat, 16 May 2020 11:26:36 GMT  
-		Size: 7.7 MB (7702083 bytes)  
+	-	`sha256:843711e7dddce230acfb2a453af3a1d101b1020e683ab34dd1f3c616e1821d45`  
+		Last Modified: Fri, 22 May 2020 02:21:11 GMT  
+		Size: 7.7 MB (7702189 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a8aaa9d28ad275d9a5411af95b60ac9e933bd9940e7255ddb038f4a262a0c37`  
-		Last Modified: Sat, 16 May 2020 11:26:37 GMT  
-		Size: 25.6 MB (25613451 bytes)  
+	-	`sha256:654d5a2115031de4fd63e43eec6a6793d29b8ba622f389dc7e6f1392dfbfce85`  
+		Last Modified: Fri, 22 May 2020 02:21:11 GMT  
+		Size: 25.6 MB (25613439 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd09bc85632ea329d5b2330fea0ecffb4ac76f372e1984259fb71f9681b36ad1`  
-		Last Modified: Sat, 16 May 2020 11:26:33 GMT  
+	-	`sha256:1918779beada9bfb1e229e88bb70c12f7fe0dd1731329bfeadb97433443acb6a`  
+		Last Modified: Fri, 22 May 2020 02:21:09 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df458faa914f041341dab048560215c960811de1f073b60763679c2f10f85db1`  
-		Last Modified: Sat, 16 May 2020 11:26:34 GMT  
-		Size: 1.0 MB (1014135 bytes)  
+	-	`sha256:b73aa5ebd600e0df0acd22aae3f58dc1527a2c305f7a0c18c4aec6eb6941f708`  
+		Last Modified: Fri, 22 May 2020 02:21:09 GMT  
+		Size: 1.0 MB (1014151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cad253b0e2b977b51d12cd0d63dc5ed57bddea30befad24e67989711518b6d9`  
-		Last Modified: Sat, 16 May 2020 11:26:34 GMT  
-		Size: 158.0 B  
+	-	`sha256:5078bbc56fc18952bbfeb26afa5941e2805289ec9506f870ff73b84b6886dfc3`  
+		Last Modified: Fri, 22 May 2020 02:21:09 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jruby:9.2.11.1-jdk8`
@@ -2935,7 +2931,7 @@ CMD ["irb"]
 ## `jruby:9.2.11-jdk14`
 
 ```console
-$ docker pull jruby@sha256:3343cb05251ef838a37a937ec7846d5838b455e91175d6ddfc2fdd8883cd7dcc
+$ docker pull jruby@sha256:da7792cb82b9fc5cd4cde6d1b56ef1480c438396b8147d49285f078741eb7d52
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2945,14 +2941,14 @@ $ docker pull jruby@sha256:3343cb05251ef838a37a937ec7846d5838b455e91175d6ddfc2fd
 ### `jruby:9.2.11-jdk14` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:51a575581f4db1896d14f07bad2bba14769d903e8b70ea01b8f5a57b3c3835a0
+$ docker pull jruby@sha256:7d187b554a381c21c80be57b1963bf22e7eed93ea5dab76f490fb6db44c28b69
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **367.5 MB (367542139 bytes)**  
+-	Total Size: **367.5 MB (367540503 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4903c509a689ba7406519121660bb9c3e08d84c73ee2b5f9f221c1c53e79e486`
+-	Image ID: `sha256:7693eab0bea9e30e45bc24176b63cc985ddb72b4f57f231157a1dc2997c0524d`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -2978,37 +2974,33 @@ ENV PATH=/usr/java/openjdk-14/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
 # Fri, 15 May 2020 21:00:50 GMT
 ENV JAVA_VERSION=14.0.1
-# Fri, 15 May 2020 21:00:50 GMT
-ENV JAVA_URL=https://download.java.net/java/GA/jdk14.0.1/664493ef4a6946b186ff29eb326336a2/7/GPL/openjdk-14.0.1_linux-x64_bin.tar.gz
-# Fri, 15 May 2020 21:00:50 GMT
-ENV JAVA_SHA256=22ce248e0bd69f23028625bede9d1b3080935b68d011eaaf9e241f84d6b9c4cc
-# Fri, 15 May 2020 21:01:14 GMT
-RUN set -eux; 		wget -O openjdk.tgz "$JAVA_URL"; 	echo "$JAVA_SHA256 */openjdk.tgz" | sha256sum -c -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		javac --version; 	java --version
-# Fri, 15 May 2020 21:01:15 GMT
+# Fri, 22 May 2020 01:24:15 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | i386:x86-64) 			downloadUrl=https://download.java.net/java/GA/jdk14.0.1/664493ef4a6946b186ff29eb326336a2/7/GPL/openjdk-14.0.1_linux-x64_bin.tar.gz; 			downloadSha256=22ce248e0bd69f23028625bede9d1b3080935b68d011eaaf9e241f84d6b9c4cc; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 */openjdk.tgz" | sha256sum -c -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		javac --version; 	java --version
+# Fri, 22 May 2020 01:24:15 GMT
 CMD ["jshell"]
-# Sat, 16 May 2020 11:24:36 GMT
+# Fri, 22 May 2020 02:19:59 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Sat, 16 May 2020 11:24:36 GMT
+# Fri, 22 May 2020 02:19:59 GMT
 ENV JRUBY_VERSION=9.2.11.1
-# Sat, 16 May 2020 11:24:37 GMT
+# Fri, 22 May 2020 02:19:59 GMT
 ENV JRUBY_SHA256=f10449c82567133908e5e1ac076438307a7f0916f617f40fa314b78873a195dc
-# Sat, 16 May 2020 11:24:39 GMT
+# Fri, 22 May 2020 02:20:02 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Sat, 16 May 2020 11:24:39 GMT
+# Fri, 22 May 2020 02:20:02 GMT
 ENV PATH=/opt/jruby/bin:/usr/java/openjdk-14/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 16 May 2020 11:24:40 GMT
+# Fri, 22 May 2020 02:20:03 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Sat, 16 May 2020 11:24:53 GMT
+# Fri, 22 May 2020 02:20:16 GMT
 RUN gem install bundler rake net-telnet xmlrpc
-# Sat, 16 May 2020 11:24:53 GMT
+# Fri, 22 May 2020 02:20:17 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Sat, 16 May 2020 11:24:54 GMT
+# Fri, 22 May 2020 02:20:17 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Sat, 16 May 2020 11:24:54 GMT
+# Fri, 22 May 2020 02:20:17 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/java/openjdk-14/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 16 May 2020 11:24:55 GMT
+# Fri, 22 May 2020 02:20:18 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Sat, 16 May 2020 11:24:55 GMT
+# Fri, 22 May 2020 02:20:18 GMT
 CMD ["irb"]
 ```
 
@@ -3037,29 +3029,29 @@ CMD ["irb"]
 		Last Modified: Fri, 15 May 2020 21:07:57 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c28ad8b7692431cb0ac65107eae784b381505703214ae4b31a39ab1b0bd8ff49`  
-		Last Modified: Fri, 15 May 2020 21:08:23 GMT  
-		Size: 199.3 MB (199264537 bytes)  
+	-	`sha256:1080f9ff870502738bda533d612ec318875f409fcdf8a69768f404e154e886ef`  
+		Last Modified: Fri, 22 May 2020 01:28:27 GMT  
+		Size: 199.3 MB (199262792 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1720218fb3406a82c4f3fd5df66571a579ecbb134c0953fdb0002ed11622d97`  
-		Last Modified: Sat, 16 May 2020 11:26:36 GMT  
-		Size: 7.7 MB (7702083 bytes)  
+	-	`sha256:843711e7dddce230acfb2a453af3a1d101b1020e683ab34dd1f3c616e1821d45`  
+		Last Modified: Fri, 22 May 2020 02:21:11 GMT  
+		Size: 7.7 MB (7702189 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a8aaa9d28ad275d9a5411af95b60ac9e933bd9940e7255ddb038f4a262a0c37`  
-		Last Modified: Sat, 16 May 2020 11:26:37 GMT  
-		Size: 25.6 MB (25613451 bytes)  
+	-	`sha256:654d5a2115031de4fd63e43eec6a6793d29b8ba622f389dc7e6f1392dfbfce85`  
+		Last Modified: Fri, 22 May 2020 02:21:11 GMT  
+		Size: 25.6 MB (25613439 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd09bc85632ea329d5b2330fea0ecffb4ac76f372e1984259fb71f9681b36ad1`  
-		Last Modified: Sat, 16 May 2020 11:26:33 GMT  
+	-	`sha256:1918779beada9bfb1e229e88bb70c12f7fe0dd1731329bfeadb97433443acb6a`  
+		Last Modified: Fri, 22 May 2020 02:21:09 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df458faa914f041341dab048560215c960811de1f073b60763679c2f10f85db1`  
-		Last Modified: Sat, 16 May 2020 11:26:34 GMT  
-		Size: 1.0 MB (1014135 bytes)  
+	-	`sha256:b73aa5ebd600e0df0acd22aae3f58dc1527a2c305f7a0c18c4aec6eb6941f708`  
+		Last Modified: Fri, 22 May 2020 02:21:09 GMT  
+		Size: 1.0 MB (1014151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cad253b0e2b977b51d12cd0d63dc5ed57bddea30befad24e67989711518b6d9`  
-		Last Modified: Sat, 16 May 2020 11:26:34 GMT  
-		Size: 158.0 B  
+	-	`sha256:5078bbc56fc18952bbfeb26afa5941e2805289ec9506f870ff73b84b6886dfc3`  
+		Last Modified: Fri, 22 May 2020 02:21:09 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jruby:9.2.11-jdk8`
@@ -3961,7 +3953,7 @@ CMD ["irb"]
 ## `jruby:9.2-jdk14`
 
 ```console
-$ docker pull jruby@sha256:3343cb05251ef838a37a937ec7846d5838b455e91175d6ddfc2fdd8883cd7dcc
+$ docker pull jruby@sha256:da7792cb82b9fc5cd4cde6d1b56ef1480c438396b8147d49285f078741eb7d52
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3971,14 +3963,14 @@ $ docker pull jruby@sha256:3343cb05251ef838a37a937ec7846d5838b455e91175d6ddfc2fd
 ### `jruby:9.2-jdk14` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:51a575581f4db1896d14f07bad2bba14769d903e8b70ea01b8f5a57b3c3835a0
+$ docker pull jruby@sha256:7d187b554a381c21c80be57b1963bf22e7eed93ea5dab76f490fb6db44c28b69
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **367.5 MB (367542139 bytes)**  
+-	Total Size: **367.5 MB (367540503 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4903c509a689ba7406519121660bb9c3e08d84c73ee2b5f9f221c1c53e79e486`
+-	Image ID: `sha256:7693eab0bea9e30e45bc24176b63cc985ddb72b4f57f231157a1dc2997c0524d`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -4004,37 +3996,33 @@ ENV PATH=/usr/java/openjdk-14/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
 # Fri, 15 May 2020 21:00:50 GMT
 ENV JAVA_VERSION=14.0.1
-# Fri, 15 May 2020 21:00:50 GMT
-ENV JAVA_URL=https://download.java.net/java/GA/jdk14.0.1/664493ef4a6946b186ff29eb326336a2/7/GPL/openjdk-14.0.1_linux-x64_bin.tar.gz
-# Fri, 15 May 2020 21:00:50 GMT
-ENV JAVA_SHA256=22ce248e0bd69f23028625bede9d1b3080935b68d011eaaf9e241f84d6b9c4cc
-# Fri, 15 May 2020 21:01:14 GMT
-RUN set -eux; 		wget -O openjdk.tgz "$JAVA_URL"; 	echo "$JAVA_SHA256 */openjdk.tgz" | sha256sum -c -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		javac --version; 	java --version
-# Fri, 15 May 2020 21:01:15 GMT
+# Fri, 22 May 2020 01:24:15 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | i386:x86-64) 			downloadUrl=https://download.java.net/java/GA/jdk14.0.1/664493ef4a6946b186ff29eb326336a2/7/GPL/openjdk-14.0.1_linux-x64_bin.tar.gz; 			downloadSha256=22ce248e0bd69f23028625bede9d1b3080935b68d011eaaf9e241f84d6b9c4cc; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 */openjdk.tgz" | sha256sum -c -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		javac --version; 	java --version
+# Fri, 22 May 2020 01:24:15 GMT
 CMD ["jshell"]
-# Sat, 16 May 2020 11:24:36 GMT
+# Fri, 22 May 2020 02:19:59 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Sat, 16 May 2020 11:24:36 GMT
+# Fri, 22 May 2020 02:19:59 GMT
 ENV JRUBY_VERSION=9.2.11.1
-# Sat, 16 May 2020 11:24:37 GMT
+# Fri, 22 May 2020 02:19:59 GMT
 ENV JRUBY_SHA256=f10449c82567133908e5e1ac076438307a7f0916f617f40fa314b78873a195dc
-# Sat, 16 May 2020 11:24:39 GMT
+# Fri, 22 May 2020 02:20:02 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Sat, 16 May 2020 11:24:39 GMT
+# Fri, 22 May 2020 02:20:02 GMT
 ENV PATH=/opt/jruby/bin:/usr/java/openjdk-14/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 16 May 2020 11:24:40 GMT
+# Fri, 22 May 2020 02:20:03 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Sat, 16 May 2020 11:24:53 GMT
+# Fri, 22 May 2020 02:20:16 GMT
 RUN gem install bundler rake net-telnet xmlrpc
-# Sat, 16 May 2020 11:24:53 GMT
+# Fri, 22 May 2020 02:20:17 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Sat, 16 May 2020 11:24:54 GMT
+# Fri, 22 May 2020 02:20:17 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Sat, 16 May 2020 11:24:54 GMT
+# Fri, 22 May 2020 02:20:17 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/java/openjdk-14/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 16 May 2020 11:24:55 GMT
+# Fri, 22 May 2020 02:20:18 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Sat, 16 May 2020 11:24:55 GMT
+# Fri, 22 May 2020 02:20:18 GMT
 CMD ["irb"]
 ```
 
@@ -4063,29 +4051,29 @@ CMD ["irb"]
 		Last Modified: Fri, 15 May 2020 21:07:57 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c28ad8b7692431cb0ac65107eae784b381505703214ae4b31a39ab1b0bd8ff49`  
-		Last Modified: Fri, 15 May 2020 21:08:23 GMT  
-		Size: 199.3 MB (199264537 bytes)  
+	-	`sha256:1080f9ff870502738bda533d612ec318875f409fcdf8a69768f404e154e886ef`  
+		Last Modified: Fri, 22 May 2020 01:28:27 GMT  
+		Size: 199.3 MB (199262792 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1720218fb3406a82c4f3fd5df66571a579ecbb134c0953fdb0002ed11622d97`  
-		Last Modified: Sat, 16 May 2020 11:26:36 GMT  
-		Size: 7.7 MB (7702083 bytes)  
+	-	`sha256:843711e7dddce230acfb2a453af3a1d101b1020e683ab34dd1f3c616e1821d45`  
+		Last Modified: Fri, 22 May 2020 02:21:11 GMT  
+		Size: 7.7 MB (7702189 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a8aaa9d28ad275d9a5411af95b60ac9e933bd9940e7255ddb038f4a262a0c37`  
-		Last Modified: Sat, 16 May 2020 11:26:37 GMT  
-		Size: 25.6 MB (25613451 bytes)  
+	-	`sha256:654d5a2115031de4fd63e43eec6a6793d29b8ba622f389dc7e6f1392dfbfce85`  
+		Last Modified: Fri, 22 May 2020 02:21:11 GMT  
+		Size: 25.6 MB (25613439 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd09bc85632ea329d5b2330fea0ecffb4ac76f372e1984259fb71f9681b36ad1`  
-		Last Modified: Sat, 16 May 2020 11:26:33 GMT  
+	-	`sha256:1918779beada9bfb1e229e88bb70c12f7fe0dd1731329bfeadb97433443acb6a`  
+		Last Modified: Fri, 22 May 2020 02:21:09 GMT  
 		Size: 198.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df458faa914f041341dab048560215c960811de1f073b60763679c2f10f85db1`  
-		Last Modified: Sat, 16 May 2020 11:26:34 GMT  
-		Size: 1.0 MB (1014135 bytes)  
+	-	`sha256:b73aa5ebd600e0df0acd22aae3f58dc1527a2c305f7a0c18c4aec6eb6941f708`  
+		Last Modified: Fri, 22 May 2020 02:21:09 GMT  
+		Size: 1.0 MB (1014151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cad253b0e2b977b51d12cd0d63dc5ed57bddea30befad24e67989711518b6d9`  
-		Last Modified: Sat, 16 May 2020 11:26:34 GMT  
-		Size: 158.0 B  
+	-	`sha256:5078bbc56fc18952bbfeb26afa5941e2805289ec9506f870ff73b84b6886dfc3`  
+		Last Modified: Fri, 22 May 2020 02:21:09 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jruby:9.2-jdk8`
