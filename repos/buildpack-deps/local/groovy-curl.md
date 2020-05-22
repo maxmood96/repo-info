@@ -493,14 +493,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-10-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-10=10-20200425-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10-20200425-1ubuntu2.dsc' gcc-10_10-20200425-1ubuntu2.dsc 31141 SHA256:8d0167312d670abf937820156396f7f92426330daf359a586e812fb6236a2a52
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10-20200425.orig.tar.gz' gcc-10_10-20200425.orig.tar.gz 90425057 SHA256:6f2061a1676be3f26e8b0384d4c212896a0402e777531c2c0dea0b007c16936d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10-20200425-1ubuntu2.debian.tar.xz' gcc-10_10-20200425-1ubuntu2.debian.tar.xz 558048 SHA256:1155915f0f65f94953f659439fa5157d54b7ccfd98644cb2c9f1c191a6a78fdb
-```
 
 ### `dpkg` source package: `glibc=2.31-0ubuntu9`
 
@@ -1108,14 +1103,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxcrypt=1:4.4.10-10ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.10-10ubuntu4.dsc' libxcrypt_4.4.10-10ubuntu4.dsc 2216 SHA256:457576b36eaa34dcf28b19e942908221d0618e9e4a2c0b9e11ba9693770756a2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.10.orig.tar.xz' libxcrypt_4.4.10.orig.tar.xz 372652 SHA256:f790a8eac4e4af3124d2844a24a7afb3a972368e4dff63d701599c2f2d065fd3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.10-10ubuntu4.debian.tar.xz' libxcrypt_4.4.10-10ubuntu4.debian.tar.xz 5760 SHA256:b2e665b5224911d24dbcbddfc61b7a27428c3ecb744f29ceea1b2984496f2ffa
-```
 
 ### `dpkg` source package: `libzstd=1.4.4+dfsg-3`
 
@@ -1330,14 +1320,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.49+dfsg-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.49+dfsg-2ubuntu1.dsc' openldap_2.4.49+dfsg-2ubuntu1.dsc 3128 SHA256:a645ae4ae1e2ddbc4c040a643df98d7da6c4cba0b2b0fd329b73bc72126ca76a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.49+dfsg.orig.tar.gz' openldap_2.4.49+dfsg.orig.tar.gz 4844726 SHA256:240022395b438f327aa860a631c1d4eef9b17e63ec8965d3aca2aa983e6d81e6
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.49+dfsg-2ubuntu1.debian.tar.xz' openldap_2.4.49+dfsg-2ubuntu1.debian.tar.xz 180948 SHA256:a89f3f042ad71ef6304b6cca3db27251df0cbf8de595e0556ed8dfb821f2ecfd
-```
 
 ### `dpkg` source package: `openssl=1.1.1f-1ubuntu2`
 

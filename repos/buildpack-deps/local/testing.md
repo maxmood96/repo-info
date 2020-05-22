@@ -2421,20 +2421,13 @@ Licenses: (parsed from: `/usr/share/doc/libexif-dev/copyright`, `/usr/share/doc/
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libexif=0.6.21-6
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.21-6.dsc' libexif_0.6.21-6.dsc 2114 SHA256:aa9fb80b036a5162782edf08055ddc54bd55881b7850a4cca4dc47a6a4ea10a4
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.21.orig.tar.gz' libexif_0.6.21.orig.tar.gz 2081615 SHA256:edb7eb13664cf950a6edd132b75e99afe61c5effe2f16494e6d27bc404b287bf
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.21-6.debian.tar.xz' libexif_0.6.21-6.debian.tar.xz 14412 SHA256:42ec61a88746a23d211dfded1ef620797959f45b90497d888562968eb3dfe17c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libexif/0.6.21-6/
 
-- https://sources.debian.net/src/libexif/0.6.21-6/ (for browsing the source)
-- https://sources.debian.net/src/libexif/0.6.21-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libexif/0.6.21-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.3-4`
 
@@ -5096,20 +5089,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=245.5-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_245.5-2.dsc' systemd_245.5-2.dsc 5093 SHA256:5601e3e44d26fde90e9d33cb2dea9a28390fe6c5887264a9d285695645ffac2c
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_245.5.orig.tar.gz' systemd_245.5.orig.tar.gz 9020836 SHA256:b754d75617665a53bd0a1e8f5ec526b383f17e1cc06d1056399e5859e0b6fe06
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_245.5-2.debian.tar.xz' systemd_245.5-2.debian.tar.xz 161988 SHA256:f3b5dbcd47c61a616bfa34db314755b43fd7882bbd804c737abfb0069652f99d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/245.5-2/
 
-- https://sources.debian.net/src/systemd/245.5-2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/245.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/245.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.96-3`
 
@@ -5265,20 +5251,13 @@ Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris unbound=1.10.0-1
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.10.0-1.dsc' unbound_1.10.0-1.dsc 2801 SHA256:7ac3f56a099a376f7db47d1991756d52317ba3fb9a0aac9a5e3d3779d7545005
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.10.0.orig.tar.gz' unbound_1.10.0.orig.tar.gz 5727902 SHA256:152f486578242fe5c36e89995d0440b78d64c05123990aae16246b7f776ce955
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.10.0-1.debian.tar.xz' unbound_1.10.0-1.debian.tar.xz 19380 SHA256:dd5f6562f214690bbd4b5cfcb86d1137a49f9bf53d5393f1c206e54213cd5a65
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/unbound/1.10.0-1/
 
-- https://sources.debian.net/src/unbound/1.10.0-1/ (for browsing the source)
-- https://sources.debian.net/src/unbound/1.10.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unbound/1.10.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unzip=6.0-25`
 
