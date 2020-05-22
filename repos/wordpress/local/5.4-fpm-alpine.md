@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:09b790ec7a3f64ad28a8133f291145b573e994204d2337ea0cc0d06117a249c9`
-- Created: `2020-05-15T17:10:56.906001004Z`
-- Virtual Size: ~ 193.89 Mb  
+- Image ID: `sha256:d5a356f41b6affda593a8da0e27ede08aafbb9b389c2940f328b757a3d89088a`
+- Created: `2020-05-21T05:45:34.186810343Z`
+- Virtual Size: ~ 224.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -181,6 +181,23 @@ MPL-2.0 GPL-2.0-or-later
 
 ```
 
+### `apk` package: `cairo`
+
+```console
+cairo-1.16.0-r2 description:
+A vector graphics library
+
+cairo-1.16.0-r2 webpage:
+https://cairographics.org/
+
+cairo-1.16.0-r2 installed size:
+1150976
+
+cairo-1.16.0-r2 license:
+LGPL-2.0-or-later MPL-1.1
+
+```
+
 ### `apk` package: `cups-libs`
 
 ```console
@@ -283,6 +300,40 @@ FTL GPL-2.0-or-later
 
 ```
 
+### `apk` package: `fribidi`
+
+```console
+fribidi-1.0.8-r0 description:
+Free Implementation of the Unicode Bidirectional Algorithm
+
+fribidi-1.0.8-r0 webpage:
+https://github.com/fribidi/fribidi
+
+fribidi-1.0.8-r0 installed size:
+159744
+
+fribidi-1.0.8-r0 license:
+LGPL-2.0-or-later
+
+```
+
+### `apk` package: `gdk-pixbuf`
+
+```console
+gdk-pixbuf-2.40.0-r0 description:
+GTK+ image loading library
+
+gdk-pixbuf-2.40.0-r0 webpage:
+https://wiki.gnome.org/Projects/GdkPixbuf
+
+gdk-pixbuf-2.40.0-r0 installed size:
+634880
+
+gdk-pixbuf-2.40.0-r0 license:
+LGPL-2.0-or-later
+
+```
+
 ### `apk` package: `ghostscript`
 
 ```console
@@ -297,6 +348,23 @@ ghostscript-9.50-r0 installed size:
 
 ghostscript-9.50-r0 license:
 AGPL-3.0-or-later
+
+```
+
+### `apk` package: `glib`
+
+```console
+glib-2.62.6-r0 description:
+Common C routines used by Gtk+ and other libs
+
+glib-2.62.6-r0 webpage:
+https://developer.gnome.org/glib/
+
+glib-2.62.6-r0 installed size:
+3272704
+
+glib-2.62.6-r0 license:
+LGPL-2.1-or-later
 
 ```
 
@@ -331,6 +399,57 @@ gnutls-3.6.10-r1 installed size:
 
 gnutls-3.6.10-r1 license:
 GPL-3.0-or-later
+
+```
+
+### `apk` package: `graphite2`
+
+```console
+graphite2-1.3.13-r1 description:
+reimplementation of the SIL Graphite text processing engine
+
+graphite2-1.3.13-r1 webpage:
+http://graphite.sil.org/
+
+graphite2-1.3.13-r1 installed size:
+172032
+
+graphite2-1.3.13-r1 license:
+LGPL-2.1-or-later OR MPL-2.0 OR GPL-2.0-or-later
+
+```
+
+### `apk` package: `harfbuzz`
+
+```console
+harfbuzz-2.6.4-r0 description:
+Text shaping library
+
+harfbuzz-2.6.4-r0 webpage:
+https://freedesktop.org/wiki/Software/HarfBuzz
+
+harfbuzz-2.6.4-r0 installed size:
+1183744
+
+harfbuzz-2.6.4-r0 license:
+MIT
+
+```
+
+### `apk` package: `imagemagick`
+
+```console
+imagemagick-7.0.9.7-r0 description:
+Collection of tools and libraries for many image formats
+
+imagemagick-7.0.9.7-r0 webpage:
+https://www.imagemagick.org/
+
+imagemagick-7.0.9.7-r0 installed size:
+4489216
+
+imagemagick-7.0.9.7-r0 license:
+ImageMagick
 
 ```
 
@@ -402,6 +521,23 @@ LGPL-2.1-or-later AND GPL-2.0-or-later
 
 ```
 
+### `apk` package: `libblkid`
+
+```console
+libblkid-2.34-r1 description:
+Block device identification library from util-linux
+
+libblkid-2.34-r1 webpage:
+https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+
+libblkid-2.34-r1 installed size:
+311296
+
+libblkid-2.34-r1 license:
+GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
+
+```
+
 ### `apk` package: `libbsd`
 
 ```console
@@ -453,6 +589,23 @@ BSD
 
 ```
 
+### `apk` package: `libcroco`
+
+```console
+libcroco-0.6.13-r1 description:
+GNOME CSS2 parsing and manipulation toolkit
+
+libcroco-0.6.13-r1 webpage:
+http://www.gnome.org
+
+libcroco-0.6.13-r1 installed size:
+262144
+
+libcroco-0.6.13-r1 license:
+LGPL-2.1-only
+
+```
+
 ### `apk` package: `libcrypto1.1`
 
 ```console
@@ -487,6 +640,23 @@ MIT
 
 ```
 
+### `apk` package: `libde265`
+
+```console
+libde265-1.0.3-r0 description:
+Open h.265 video codec implementation
+
+libde265-1.0.3-r0 webpage:
+https://github.com/strukturag/libde265
+
+libde265-1.0.3-r0 installed size:
+815104
+
+libde265-1.0.3-r0 license:
+LGPL-3.0-or-later
+
+```
+
 ### `apk` package: `libedit`
 
 ```console
@@ -518,6 +688,40 @@ libffi-3.2.1-r6 installed size:
 
 libffi-3.2.1-r6 license:
 MIT
+
+```
+
+### `apk` package: `libgcc`
+
+```console
+libgcc-9.2.0-r4 description:
+GNU C compiler runtime libraries
+
+libgcc-9.2.0-r4 webpage:
+http://gcc.gnu.org
+
+libgcc-9.2.0-r4 installed size:
+90112
+
+libgcc-9.2.0-r4 license:
+GPL LGPL
+
+```
+
+### `apk` package: `libheif`
+
+```console
+libheif-1.6.0-r0 description:
+ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
+
+libheif-1.6.0-r0 webpage:
+https://www.libde265.org
+
+libheif-1.6.0-r0 installed size:
+512000
+
+libheif-1.6.0-r0 license:
+LGPL-3.0-or-later
 
 ```
 
@@ -572,6 +776,23 @@ LGPL-2.0+
 
 ```
 
+### `apk` package: `libmount`
+
+```console
+libmount-2.34-r1 description:
+Block device identification library from util-linux
+
+libmount-2.34-r1 webpage:
+https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+
+libmount-2.34-r1 installed size:
+344064
+
+libmount-2.34-r1 license:
+GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
+
+```
+
 ### `apk` package: `libpng`
 
 ```console
@@ -586,6 +807,23 @@ libpng-1.6.37-r1 installed size:
 
 libpng-1.6.37-r1 license:
 Libpng
+
+```
+
+### `apk` package: `librsvg`
+
+```console
+librsvg-2.46.4-r0 description:
+SAX-based renderer for SVG files into a GdkPixbuf
+
+librsvg-2.46.4-r0 webpage:
+https://wiki.gnome.org/Projects/LibRsvg
+
+librsvg-2.46.4-r0 installed size:
+4046848
+
+librsvg-2.46.4-r0 license:
+LGPL-2.1-or-later
 
 ```
 
@@ -620,6 +858,23 @@ libssl1.1-1.1.1g-r0 installed size:
 
 libssl1.1-1.1.1g-r0 license:
 OpenSSL
+
+```
+
+### `apk` package: `libstdc++`
+
+```console
+libstdc++-9.2.0-r4 description:
+GNU C++ standard runtime library
+
+libstdc++-9.2.0-r4 webpage:
+http://gcc.gnu.org
+
+libstdc++-9.2.0-r4 installed size:
+1671168
+
+libstdc++-9.2.0-r4 license:
+GPL LGPL
 
 ```
 
@@ -688,6 +943,23 @@ libuuid-2.34-r1 installed size:
 
 libuuid-2.34-r1 license:
 GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
+
+```
+
+### `apk` package: `libwebp`
+
+```console
+libwebp-1.0.3-r0 description:
+Libraries for working with WebP images
+
+libwebp-1.0.3-r0 webpage:
+https://developers.google.com/speed/webp
+
+libwebp-1.0.3-r0 installed size:
+589824
+
+libwebp-1.0.3-r0 license:
+BSD-3-Clause
 
 ```
 
@@ -776,6 +1048,23 @@ MIT
 
 ```
 
+### `apk` package: `libxft`
+
+```console
+libxft-2.3.3-r0 description:
+FreeType-based font drawing library for X
+
+libxft-2.3.3-r0 webpage:
+http://xorg.freedesktop.org/
+
+libxft-2.3.3-r0 installed size:
+94208
+
+libxft-2.3.3-r0 license:
+MIT
+
+```
+
 ### `apk` package: `libxml2`
 
 ```console
@@ -790,6 +1079,23 @@ libxml2-2.9.10-r3 installed size:
 
 libxml2-2.9.10-r3 license:
 MIT
+
+```
+
+### `apk` package: `libxrender`
+
+```console
+libxrender-0.9.10-r3 description:
+X Rendering Extension client library
+
+libxrender-0.9.10-r3 webpage:
+http://xorg.freedesktop.org/
+
+libxrender-0.9.10-r3 installed size:
+57344
+
+libxrender-0.9.10-r3 license:
+custom
 
 ```
 
@@ -946,6 +1252,74 @@ BSD-3-Clause
 
 ```
 
+### `apk` package: `pango`
+
+```console
+pango-1.44.7-r0 description:
+A library for layout and rendering of text
+
+pango-1.44.7-r0 webpage:
+https://www.pango.org/
+
+pango-1.44.7-r0 installed size:
+585728
+
+pango-1.44.7-r0 license:
+LGPL-2.1-or-later
+
+```
+
+### `apk` package: `pcre`
+
+```console
+pcre-8.43-r0 description:
+Perl-compatible regular expression library
+
+pcre-8.43-r0 webpage:
+http://pcre.sourceforge.net
+
+pcre-8.43-r0 installed size:
+401408
+
+pcre-8.43-r0 license:
+BSD-3-Clause
+
+```
+
+### `apk` package: `pixman`
+
+```console
+pixman-0.38.4-r0 description:
+Low-level pixel manipulation library
+
+pixman-0.38.4-r0 webpage:
+http://xorg.freedesktop.org
+
+pixman-0.38.4-r0 installed size:
+593920
+
+pixman-0.38.4-r0 license:
+MIT
+
+```
+
+### `apk` package: `pkgconf`
+
+```console
+pkgconf-1.6.3-r0 description:
+development framework configuration tools
+
+pkgconf-1.6.3-r0 webpage:
+https://git.dereferenced.org/pkgconf/pkgconf
+
+pkgconf-1.6.3-r0 installed size:
+143360
+
+pkgconf-1.6.3-r0 license:
+ISC
+
+```
+
 ### `apk` package: `readline`
 
 ```console
@@ -994,6 +1368,23 @@ sed-4.7-r0 installed size:
 
 sed-4.7-r0 license:
 GPL-3.0+
+
+```
+
+### `apk` package: `shared-mime-info`
+
+```console
+shared-mime-info-1.15-r0 description:
+Freedesktop.org Shared MIME Info
+
+shared-mime-info-1.15-r0 webpage:
+http://freedesktop.org/Software/shared-mime-info
+
+shared-mime-info-1.15-r0 installed size:
+2396160
+
+shared-mime-info-1.15-r0 license:
+GPL-2.0-or-later
 
 ```
 
@@ -1062,6 +1453,23 @@ tiff-4.1.0-r0 installed size:
 
 tiff-4.1.0-r0 license:
 libtiff
+
+```
+
+### `apk` package: `x265-libs`
+
+```console
+x265-libs-3.2.1-r0 description:
+Open Source H265/HEVC video encoder (libraries)
+
+x265-libs-3.2.1-r0 webpage:
+http://x265.org
+
+x265-libs-3.2.1-r0 installed size:
+5672960
+
+x265-libs-3.2.1-r0 license:
+GPL-2.0-or-later
 
 ```
 
