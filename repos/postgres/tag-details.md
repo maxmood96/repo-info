@@ -14,6 +14,10 @@
 -	[`postgres:12.3`](#postgres123)
 -	[`postgres:12.3-alpine`](#postgres123-alpine)
 -	[`postgres:12-alpine`](#postgres12-alpine)
+-	[`postgres:13`](#postgres13)
+-	[`postgres:13-alpine`](#postgres13-alpine)
+-	[`postgres:13-beta1`](#postgres13-beta1)
+-	[`postgres:13-beta1-alpine`](#postgres13-beta1-alpine)
 -	[`postgres:9`](#postgres9)
 -	[`postgres:9.5`](#postgres95)
 -	[`postgres:9.5.22`](#postgres9522)
@@ -10046,6 +10050,22 @@ CMD ["postgres"]
 		Last Modified: Fri, 15 May 2020 21:42:40 GMT  
 		Size: 4.3 KB (4259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `postgres:13`
+
+**does not exist** (yet?)
+
+## `postgres:13-alpine`
+
+**does not exist** (yet?)
+
+## `postgres:13-beta1`
+
+**does not exist** (yet?)
+
+## `postgres:13-beta1-alpine`
+
+**does not exist** (yet?)
 
 ## `postgres:9`
 
