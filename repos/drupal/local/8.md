@@ -1,9 +1,9 @@
-# `drupal:8.8.5-apache`
+# `drupal:8.8.6-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ae473d5830d42652e5097fc40f8c6a51f9f5bf81fd06f7491de437817b118b96`
-- Created: `2020-05-15T15:20:41.814716267Z`
+- Image ID: `sha256:d100ad5f11f5c41620727849dab8067473f314005a855a6285ad09879dac28bf`
+- Created: `2020-05-21T05:16:46.668129635Z`
 - Virtual Size: ~ 454.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -26,8 +26,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.18.tar.xz.asc`
   - `PHP_SHA256=7b3e2479a8d6fd7666dcdef8aec50d49c4599cc6ee86e48d41724cfd99cc9e58`
   - `PHP_MD5=`
-  - `DRUPAL_VERSION=8.8.5`
-  - `DRUPAL_MD5=11e595f6aa42fca4ab4423bff0b09c28`
+  - `DRUPAL_VERSION=8.8.6`
+  - `DRUPAL_MD5=b88151bb2edc48f5f6950dda6c758260`
 
 ## `dpkg` (`.deb`-based packages)
 
