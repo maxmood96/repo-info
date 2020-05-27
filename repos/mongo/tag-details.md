@@ -38,6 +38,16 @@
 -	[`mongo:4.2-windowsservercore`](#mongo42-windowsservercore)
 -	[`mongo:4.2-windowsservercore-1809`](#mongo42-windowsservercore-1809)
 -	[`mongo:4.2-windowsservercore-ltsc2016`](#mongo42-windowsservercore-ltsc2016)
+-	[`mongo:4.4.0-rc7`](#mongo440-rc7)
+-	[`mongo:4.4.0-rc7-bionic`](#mongo440-rc7-bionic)
+-	[`mongo:4.4.0-rc7-windowsservercore`](#mongo440-rc7-windowsservercore)
+-	[`mongo:4.4.0-rc7-windowsservercore-1809`](#mongo440-rc7-windowsservercore-1809)
+-	[`mongo:4.4.0-rc7-windowsservercore-ltsc2016`](#mongo440-rc7-windowsservercore-ltsc2016)
+-	[`mongo:4.4-rc`](#mongo44-rc)
+-	[`mongo:4.4-rc-bionic`](#mongo44-rc-bionic)
+-	[`mongo:4.4-rc-windowsservercore`](#mongo44-rc-windowsservercore)
+-	[`mongo:4.4-rc-windowsservercore-1809`](#mongo44-rc-windowsservercore-1809)
+-	[`mongo:4.4-rc-windowsservercore-ltsc2016`](#mongo44-rc-windowsservercore-ltsc2016)
 -	[`mongo:4-bionic`](#mongo4-bionic)
 -	[`mongo:4-windowsservercore`](#mongo4-windowsservercore)
 -	[`mongo:4-windowsservercore-1809`](#mongo4-windowsservercore-1809)
@@ -8055,6 +8065,46 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Tue, 26 May 2020 23:00:41 GMT  
 		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:4.4.0-rc7`
+
+**does not exist** (yet?)
+
+## `mongo:4.4.0-rc7-bionic`
+
+**does not exist** (yet?)
+
+## `mongo:4.4.0-rc7-windowsservercore`
+
+**does not exist** (yet?)
+
+## `mongo:4.4.0-rc7-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `mongo:4.4.0-rc7-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `mongo:4.4-rc`
+
+**does not exist** (yet?)
+
+## `mongo:4.4-rc-bionic`
+
+**does not exist** (yet?)
+
+## `mongo:4.4-rc-windowsservercore`
+
+**does not exist** (yet?)
+
+## `mongo:4.4-rc-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `mongo:4.4-rc-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
 
 ## `mongo:4-bionic`
 
