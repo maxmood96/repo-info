@@ -4,10 +4,14 @@
 
 -	[`amazoncorretto:11`](#amazoncorretto11)
 -	[`amazoncorretto:11.0.7`](#amazoncorretto1107)
+-	[`amazoncorretto:11.0.7-al2`](#amazoncorretto1107-al2)
 -	[`amazoncorretto:11-al2-full`](#amazoncorretto11-al2-full)
+-	[`amazoncorretto:11-al2-jdk`](#amazoncorretto11-al2-jdk)
 -	[`amazoncorretto:8`](#amazoncorretto8)
 -	[`amazoncorretto:8-al2-full`](#amazoncorretto8-al2-full)
+-	[`amazoncorretto:8-al2-jdk`](#amazoncorretto8-al2-jdk)
 -	[`amazoncorretto:8u252`](#amazoncorretto8u252)
+-	[`amazoncorretto:8u252-al2`](#amazoncorretto8u252-al2)
 -	[`amazoncorretto:latest`](#amazoncorrettolatest)
 
 ## `amazoncorretto:11`
@@ -180,6 +184,10 @@ ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 		Size: 144.0 MB (143963197 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `amazoncorretto:11.0.7-al2`
+
+**does not exist** (yet?)
+
 ## `amazoncorretto:11-al2-full`
 
 ```console
@@ -264,6 +272,10 @@ ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 		Last Modified: Wed, 29 Apr 2020 23:42:00 GMT  
 		Size: 144.0 MB (143963197 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `amazoncorretto:11-al2-jdk`
+
+**does not exist** (yet?)
 
 ## `amazoncorretto:8`
 
@@ -435,6 +447,10 @@ ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto
 		Size: 58.3 MB (58325222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `amazoncorretto:8-al2-jdk`
+
+**does not exist** (yet?)
+
 ## `amazoncorretto:8u252`
 
 ```console
@@ -519,6 +535,10 @@ ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto
 		Last Modified: Wed, 29 Apr 2020 23:41:28 GMT  
 		Size: 58.3 MB (58325222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `amazoncorretto:8u252-al2`
+
+**does not exist** (yet?)
 
 ## `amazoncorretto:latest`
 
