@@ -5063,9 +5063,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=5.4.0-31.35
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-31.35.dsc' linux_5.4.0-31.35.dsc 7204 SHA256:6c9eeaa515619f983f6073ed81c2c0b74f29bacf5328f6bfc338b18d8bff767d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA256:805f3ed93854317814c59caf2dbfd2097745685f95c8c18b509c9347dcc7d51f
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-31.35.diff.gz' linux_5.4.0-31.35.diff.gz 4325211 SHA256:361b6ab7fbbec69e084da4b8062ec317f4e4a5c6a37be450b099116e730f5991
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-31.35.dsc' linux_5.4.0-31.35.dsc 7204 SHA256:6c9eeaa515619f983f6073ed81c2c0b74f29bacf5328f6bfc338b18d8bff767d
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA256:805f3ed93854317814c59caf2dbfd2097745685f95c8c18b509c9347dcc7d51f
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-31.35.diff.gz' linux_5.4.0-31.35.diff.gz 4325211 SHA256:361b6ab7fbbec69e084da4b8062ec317f4e4a5c6a37be450b099116e730f5991
 ```
 
 ### `dpkg` source package: `llvm-toolchain-9=1:9.0.1-12`
