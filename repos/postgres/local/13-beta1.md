@@ -1998,9 +1998,14 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 - `nagaysau-ishii`
 - `rijndael`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-13=13~beta1-1.pgdg100+1
+'http://apt.postgresql.org/pub/repos/apt/pool/13/p/postgresql-13/postgresql-13_13~beta1-1.pgdg100+1.dsc' postgresql-13_13~beta1-1.pgdg100+1.dsc 2888 SHA256:87b289d25c2579230250884e2f0e49ce568c1767e47d5f8557f41a2745b79f6b
+'http://apt.postgresql.org/pub/repos/apt/pool/13/p/postgresql-13/postgresql-13_13~beta1.orig.tar.bz2' postgresql-13_13~beta1.orig.tar.bz2 21361108 SHA256:249ba0d0227d5393b83d397f2543354bfee579276cb1e821e9b7d904a42039e1
+'http://apt.postgresql.org/pub/repos/apt/pool/13/p/postgresql-13/postgresql-13_13~beta1-1.pgdg100+1.debian.tar.xz' postgresql-13_13~beta1-1.pgdg100+1.debian.tar.xz 22252 SHA256:68435c496814105ab497eba776c8af6612259e22853303912ccc9226bd15e1c9
+```
 
 ### `dpkg` source package: `postgresql-common=215.pgdg100+1`
 
