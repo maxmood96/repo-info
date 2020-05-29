@@ -1546,14 +1546,9 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `TatcherUlrichPublicDomain`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.10.23+dfsg-2.1ubuntu11
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_6.9.10.23+dfsg-2.1ubuntu11.dsc' imagemagick_6.9.10.23+dfsg-2.1ubuntu11.dsc 5235 SHA256:b2e37544c0cfeb47d4d84ab03b73565896d8fbc3f1a0e8092ed1d5b51ff36f51
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_6.9.10.23+dfsg.orig.tar.xz' imagemagick_6.9.10.23+dfsg.orig.tar.xz 9081188 SHA256:44249112b624f2cc315573fa96685e547da27ebb321432259290c407023c531e
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_6.9.10.23+dfsg-2.1ubuntu11.debian.tar.xz' imagemagick_6.9.10.23+dfsg-2.1ubuntu11.debian.tar.xz 241120 SHA256:0120a5812c45203cccaba24ee915e78a0577b03f6d04f16ca20dcf474bc59366
-```
 
 ### `dpkg` source package: `init-system-helpers=1.57`
 
@@ -3463,15 +3458,13 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.30/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.30.0-10
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.30.0-10.dsc' perl_5.30.0-10.dsc 2988 SHA256:f5fa6b863cf67944312f19dc2ffbea18c6528b0e6b41d3a843561173ad776188
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.30.0.orig-regen-configure.tar.gz' perl_5.30.0.orig-regen-configure.tar.gz 833235 SHA256:fc55a7309f9e2c404119b005774fc85a8488bad047aee611d17bbe2d608bf4de
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.30.0.orig.tar.xz' perl_5.30.0.orig.tar.xz 12419868 SHA256:ac501cad4af904d33370a9ea39dbb7a8ad4cb19bc7bc8a9c17d8dc3e81ef6306
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.30.0-10.debian.tar.xz' perl_5.30.0-10.debian.tar.xz 163544 SHA256:4352c4bbb44d40cb7e275068a750b8ed883325e1ddb9843d92ad40a59a45dcc5
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/perl/5.30.0-10/
+
 
 ### `dpkg` source package: `pinentry=1.1.0-3build1`
 
@@ -4140,13 +4133,13 @@ Licenses: (parsed from: `/usr/share/doc/ucf/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ucf=3.0038+nmu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ucf/ucf_3.0038+nmu1.dsc' ucf_3.0038+nmu1.dsc 1420 SHA256:89b6f921a30e04a946f62e6996be7c16f2f7c383d20783cd4704b502c6d5b125
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ucf/ucf_3.0038+nmu1.tar.xz' ucf_3.0038+nmu1.tar.xz 65860 SHA256:d00bc3dd8d2f91317f52b5352fe129023c72babad55bc0dd4ece7b34183c7436
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/ucf/3.0038+nmu1/
+
 
 ### `dpkg` source package: `unzip=6.0-25ubuntu1`
 
