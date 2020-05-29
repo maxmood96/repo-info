@@ -7414,7 +7414,7 @@ CMD ["redis-server"]
 ## `redis:6`
 
 ```console
-$ docker pull redis@sha256:1196cc530fd868df55145fed5cf0dba0043bd819eae2e46764e69051f129436e
+$ docker pull redis@sha256:d27740b5bd12087efc2b30ac9102fa767d6cc83611dc0fc28f0edb042e835996
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7656,14 +7656,14 @@ CMD ["redis-server"]
 ### `redis:6` - linux; arm64 variant v8
 
 ```console
-$ docker pull redis@sha256:a38a3885fd87c101e796159fcb887b28a8a4fba7c95c8a2d2bfa2645fd1aed17
+$ docker pull redis@sha256:a957642810a2c9abab42b074b47e02ff1a9f6888df08fb29c409686f76fa1926
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **36.7 MB (36725283 bytes)**  
+-	Total Size: **36.7 MB (36726158 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:afa01487733aa6981dc66ba9caad6cdf3c55c2de2715631145f77c269b0212ac`
+-	Image ID: `sha256:265efb292bfc685c3a16e90aece869e8b94cfa37c7a07002a347003b1acd8c20`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -7678,27 +7678,27 @@ RUN groupadd -r -g 999 redis && useradd -r -g redis -u 999 redis
 ENV GOSU_VERSION=1.12
 # Sat, 16 May 2020 08:24:36 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Mon, 18 May 2020 19:06:20 GMT
-ENV REDIS_VERSION=6.0.3
-# Mon, 18 May 2020 19:06:21 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.3.tar.gz
-# Mon, 18 May 2020 19:06:21 GMT
-ENV REDIS_DOWNLOAD_SHA=bca46dce81fe92f7b2de4cf8ae41fbc4b94fbd5674def7f12c87e7f9165cbb3a
-# Mon, 18 May 2020 19:07:30 GMT
+# Fri, 29 May 2020 00:45:41 GMT
+ENV REDIS_VERSION=6.0.4
+# Fri, 29 May 2020 00:45:41 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.4.tar.gz
+# Fri, 29 May 2020 00:45:42 GMT
+ENV REDIS_DOWNLOAD_SHA=3337005a1e0c3aa293c87c313467ea8ac11984921fab08807998ba765c9943de
+# Fri, 29 May 2020 01:21:02 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version
-# Mon, 18 May 2020 19:07:32 GMT
+# Fri, 29 May 2020 01:21:04 GMT
 RUN mkdir /data && chown redis:redis /data
-# Mon, 18 May 2020 19:07:33 GMT
+# Fri, 29 May 2020 01:21:05 GMT
 VOLUME [/data]
-# Mon, 18 May 2020 19:07:33 GMT
+# Fri, 29 May 2020 01:21:05 GMT
 WORKDIR /data
-# Mon, 18 May 2020 19:07:34 GMT
+# Fri, 29 May 2020 01:21:06 GMT
 COPY file:df205a0ef6e6df8947ce0a7ae9e37b6a5588035647f38a49b8b07321003a8a01 in /usr/local/bin/ 
-# Mon, 18 May 2020 19:07:35 GMT
+# Fri, 29 May 2020 01:21:07 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 18 May 2020 19:07:35 GMT
+# Fri, 29 May 2020 01:21:08 GMT
 EXPOSE 6379
-# Mon, 18 May 2020 19:07:36 GMT
+# Fri, 29 May 2020 01:21:09 GMT
 CMD ["redis-server"]
 ```
 
@@ -7715,17 +7715,17 @@ CMD ["redis-server"]
 		Last Modified: Sat, 16 May 2020 08:28:43 GMT  
 		Size: 1.4 MB (1352995 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49dc65eb7e7cdf5a97a2244cf083eb8690669ae4822e869f779cc47a03467e8e`  
-		Last Modified: Mon, 18 May 2020 19:09:26 GMT  
-		Size: 9.5 MB (9512816 bytes)  
+	-	`sha256:dd36e8fa0393c8ad121ec88a07a93caa4abcb3ebe4664b38f65549cdf07cfcd8`  
+		Last Modified: Fri, 29 May 2020 02:14:17 GMT  
+		Size: 9.5 MB (9513689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68e7392e3d707dda96a22639202800900a6aa6a3b5e1fd8401df7b70806881fe`  
-		Last Modified: Mon, 18 May 2020 19:09:19 GMT  
-		Size: 134.0 B  
+	-	`sha256:dc225d346638fdac2bd0d553ae48d32bf914337c44c23786a6cadb065df2f091`  
+		Last Modified: Fri, 29 May 2020 02:14:14 GMT  
+		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e7ab6e50e421292c0fe1be0665fe1e6af6bacd8a6e430782c00ec5d73327565`  
-		Last Modified: Mon, 18 May 2020 19:09:20 GMT  
-		Size: 410.0 B  
+	-	`sha256:858e371a1b90d0d1428b756dc8bfc66775e71882c99caa76278ffd28e5f460fc`  
+		Last Modified: Fri, 29 May 2020 02:14:14 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:6` - linux; 386
@@ -8031,7 +8031,7 @@ CMD ["redis-server"]
 ## `redis:6.0`
 
 ```console
-$ docker pull redis@sha256:1196cc530fd868df55145fed5cf0dba0043bd819eae2e46764e69051f129436e
+$ docker pull redis@sha256:d27740b5bd12087efc2b30ac9102fa767d6cc83611dc0fc28f0edb042e835996
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8273,14 +8273,14 @@ CMD ["redis-server"]
 ### `redis:6.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull redis@sha256:a38a3885fd87c101e796159fcb887b28a8a4fba7c95c8a2d2bfa2645fd1aed17
+$ docker pull redis@sha256:a957642810a2c9abab42b074b47e02ff1a9f6888df08fb29c409686f76fa1926
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **36.7 MB (36725283 bytes)**  
+-	Total Size: **36.7 MB (36726158 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:afa01487733aa6981dc66ba9caad6cdf3c55c2de2715631145f77c269b0212ac`
+-	Image ID: `sha256:265efb292bfc685c3a16e90aece869e8b94cfa37c7a07002a347003b1acd8c20`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -8295,27 +8295,27 @@ RUN groupadd -r -g 999 redis && useradd -r -g redis -u 999 redis
 ENV GOSU_VERSION=1.12
 # Sat, 16 May 2020 08:24:36 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Mon, 18 May 2020 19:06:20 GMT
-ENV REDIS_VERSION=6.0.3
-# Mon, 18 May 2020 19:06:21 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.3.tar.gz
-# Mon, 18 May 2020 19:06:21 GMT
-ENV REDIS_DOWNLOAD_SHA=bca46dce81fe92f7b2de4cf8ae41fbc4b94fbd5674def7f12c87e7f9165cbb3a
-# Mon, 18 May 2020 19:07:30 GMT
+# Fri, 29 May 2020 00:45:41 GMT
+ENV REDIS_VERSION=6.0.4
+# Fri, 29 May 2020 00:45:41 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.4.tar.gz
+# Fri, 29 May 2020 00:45:42 GMT
+ENV REDIS_DOWNLOAD_SHA=3337005a1e0c3aa293c87c313467ea8ac11984921fab08807998ba765c9943de
+# Fri, 29 May 2020 01:21:02 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version
-# Mon, 18 May 2020 19:07:32 GMT
+# Fri, 29 May 2020 01:21:04 GMT
 RUN mkdir /data && chown redis:redis /data
-# Mon, 18 May 2020 19:07:33 GMT
+# Fri, 29 May 2020 01:21:05 GMT
 VOLUME [/data]
-# Mon, 18 May 2020 19:07:33 GMT
+# Fri, 29 May 2020 01:21:05 GMT
 WORKDIR /data
-# Mon, 18 May 2020 19:07:34 GMT
+# Fri, 29 May 2020 01:21:06 GMT
 COPY file:df205a0ef6e6df8947ce0a7ae9e37b6a5588035647f38a49b8b07321003a8a01 in /usr/local/bin/ 
-# Mon, 18 May 2020 19:07:35 GMT
+# Fri, 29 May 2020 01:21:07 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 18 May 2020 19:07:35 GMT
+# Fri, 29 May 2020 01:21:08 GMT
 EXPOSE 6379
-# Mon, 18 May 2020 19:07:36 GMT
+# Fri, 29 May 2020 01:21:09 GMT
 CMD ["redis-server"]
 ```
 
@@ -8332,17 +8332,17 @@ CMD ["redis-server"]
 		Last Modified: Sat, 16 May 2020 08:28:43 GMT  
 		Size: 1.4 MB (1352995 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49dc65eb7e7cdf5a97a2244cf083eb8690669ae4822e869f779cc47a03467e8e`  
-		Last Modified: Mon, 18 May 2020 19:09:26 GMT  
-		Size: 9.5 MB (9512816 bytes)  
+	-	`sha256:dd36e8fa0393c8ad121ec88a07a93caa4abcb3ebe4664b38f65549cdf07cfcd8`  
+		Last Modified: Fri, 29 May 2020 02:14:17 GMT  
+		Size: 9.5 MB (9513689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68e7392e3d707dda96a22639202800900a6aa6a3b5e1fd8401df7b70806881fe`  
-		Last Modified: Mon, 18 May 2020 19:09:19 GMT  
-		Size: 134.0 B  
+	-	`sha256:dc225d346638fdac2bd0d553ae48d32bf914337c44c23786a6cadb065df2f091`  
+		Last Modified: Fri, 29 May 2020 02:14:14 GMT  
+		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e7ab6e50e421292c0fe1be0665fe1e6af6bacd8a6e430782c00ec5d73327565`  
-		Last Modified: Mon, 18 May 2020 19:09:20 GMT  
-		Size: 410.0 B  
+	-	`sha256:858e371a1b90d0d1428b756dc8bfc66775e71882c99caa76278ffd28e5f460fc`  
+		Last Modified: Fri, 29 May 2020 02:14:14 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:6.0` - linux; 386
@@ -8648,7 +8648,7 @@ CMD ["redis-server"]
 ## `redis:6.0.4`
 
 ```console
-$ docker pull redis@sha256:b0f3209566ca20f718387ef71417fa8aaff325b0293c0d735bd57255ba275eba
+$ docker pull redis@sha256:e804ab4a0c56d13a65dbe7dcb3b2b1eeaea62b3462efafa2ae73bfc51ca417f0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8656,6 +8656,7 @@ $ docker pull redis@sha256:b0f3209566ca20f718387ef71417fa8aaff325b0293c0d735bd57
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 	-	linux; s390x
@@ -8883,6 +8884,81 @@ CMD ["redis-server"]
 	-	`sha256:c65bbae98d49b7baaa9c79af6a238f5bac354d0994765d120f17e5722bab70ba`  
 		Last Modified: Fri, 29 May 2020 00:15:58 GMT  
 		Size: 411.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `redis:6.0.4` - linux; arm64 variant v8
+
+```console
+$ docker pull redis@sha256:a957642810a2c9abab42b074b47e02ff1a9f6888df08fb29c409686f76fa1926
+```
+
+-	Docker Version: 18.09.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **36.7 MB (36726158 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:265efb292bfc685c3a16e90aece869e8b94cfa37c7a07002a347003b1acd8c20`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Fri, 15 May 2020 12:44:06 GMT
+ADD file:b305c1792102142f183d3084026f0fc6be3ddf8d1959b32f0a5d22d35eebcd15 in / 
+# Fri, 15 May 2020 12:44:07 GMT
+CMD ["bash"]
+# Sat, 16 May 2020 08:24:10 GMT
+RUN groupadd -r -g 999 redis && useradd -r -g redis -u 999 redis
+# Sat, 16 May 2020 08:24:10 GMT
+ENV GOSU_VERSION=1.12
+# Sat, 16 May 2020 08:24:36 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
+# Fri, 29 May 2020 00:45:41 GMT
+ENV REDIS_VERSION=6.0.4
+# Fri, 29 May 2020 00:45:41 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.4.tar.gz
+# Fri, 29 May 2020 00:45:42 GMT
+ENV REDIS_DOWNLOAD_SHA=3337005a1e0c3aa293c87c313467ea8ac11984921fab08807998ba765c9943de
+# Fri, 29 May 2020 01:21:02 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version
+# Fri, 29 May 2020 01:21:04 GMT
+RUN mkdir /data && chown redis:redis /data
+# Fri, 29 May 2020 01:21:05 GMT
+VOLUME [/data]
+# Fri, 29 May 2020 01:21:05 GMT
+WORKDIR /data
+# Fri, 29 May 2020 01:21:06 GMT
+COPY file:df205a0ef6e6df8947ce0a7ae9e37b6a5588035647f38a49b8b07321003a8a01 in /usr/local/bin/ 
+# Fri, 29 May 2020 01:21:07 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Fri, 29 May 2020 01:21:08 GMT
+EXPOSE 6379
+# Fri, 29 May 2020 01:21:09 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:8a7e1e68c24e5cac20ef26d29505c58456b561c431f0c683b66d1a0943f40dd4`  
+		Last Modified: Fri, 15 May 2020 12:53:36 GMT  
+		Size: 25.9 MB (25857195 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2cfc5ca4e8f484b410989ac557169938b5fe6288ed5add0839e05a790ef47676`  
+		Last Modified: Sat, 16 May 2020 08:28:42 GMT  
+		Size: 1.7 KB (1733 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2eccfc30e2be16f57d04f487ed80dd2b52ada557753eca7c79eb2ff88ab421f2`  
+		Last Modified: Sat, 16 May 2020 08:28:43 GMT  
+		Size: 1.4 MB (1352995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dd36e8fa0393c8ad121ec88a07a93caa4abcb3ebe4664b38f65549cdf07cfcd8`  
+		Last Modified: Fri, 29 May 2020 02:14:17 GMT  
+		Size: 9.5 MB (9513689 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dc225d346638fdac2bd0d553ae48d32bf914337c44c23786a6cadb065df2f091`  
+		Last Modified: Fri, 29 May 2020 02:14:14 GMT  
+		Size: 133.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:858e371a1b90d0d1428b756dc8bfc66775e71882c99caa76278ffd28e5f460fc`  
+		Last Modified: Fri, 29 May 2020 02:14:14 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:6.0.4` - linux; 386
@@ -9113,7 +9189,7 @@ CMD ["redis-server"]
 ## `redis:6.0.4-alpine`
 
 ```console
-$ docker pull redis@sha256:1e52acbe1e81ae5013703e563f2b178c1e35571e31808263cf04e12cabd36e72
+$ docker pull redis@sha256:43524b12420e141ff08e05d44a4278d1d4e6c26f538cc7309515d32be21c07bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9121,6 +9197,7 @@ $ docker pull redis@sha256:1e52acbe1e81ae5013703e563f2b178c1e35571e31808263cf04e
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 	-	linux; s390x
@@ -9342,6 +9419,79 @@ CMD ["redis-server"]
 	-	`sha256:82b4e357355af163110a0944ef11237512a8ccc689d13720de6c4547285fb4d5`  
 		Last Modified: Fri, 29 May 2020 00:16:13 GMT  
 		Size: 417.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `redis:6.0.4-alpine` - linux; arm64 variant v8
+
+```console
+$ docker pull redis@sha256:2d966211869b1108f47049164f851072b85aff288afbaf3b857af7558e1e5b41
+```
+
+-	Docker Version: 18.09.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **10.5 MB (10521296 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9b859cab0e9018f979149629ddeeeb18e9d8ba0a85c42d9d60f2b49d3ca74027`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Fri, 24 Apr 2020 00:14:18 GMT
+ADD file:85ae77bc1e43353ff14e6fe1658be1ed4ecbf4330212ac3d7ab7462add32dd39 in / 
+# Fri, 24 Apr 2020 00:14:21 GMT
+CMD ["/bin/sh"]
+# Fri, 24 Apr 2020 12:45:10 GMT
+RUN addgroup -S -g 1000 redis && adduser -S -G redis -u 999 redis
+# Fri, 24 Apr 2020 12:45:13 GMT
+RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
+# Fri, 29 May 2020 01:21:28 GMT
+ENV REDIS_VERSION=6.0.4
+# Fri, 29 May 2020 01:21:28 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.4.tar.gz
+# Fri, 29 May 2020 01:21:29 GMT
+ENV REDIS_DOWNLOAD_SHA=3337005a1e0c3aa293c87c313467ea8ac11984921fab08807998ba765c9943de
+# Fri, 29 May 2020 02:30:06 GMT
+RUN set -eux; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		linux-headers 		make 		musl-dev 		openssl-dev 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .redis-rundeps $runDeps; 	apk del --no-network .build-deps; 		redis-cli --version; 	redis-server --version
+# Fri, 29 May 2020 02:30:08 GMT
+RUN mkdir /data && chown redis:redis /data
+# Fri, 29 May 2020 02:30:08 GMT
+VOLUME [/data]
+# Fri, 29 May 2020 02:30:09 GMT
+WORKDIR /data
+# Fri, 29 May 2020 02:30:10 GMT
+COPY file:c48b97ea65422782310396358f838c38c0747767dd606a88d4c3d0b034a60762 in /usr/local/bin/ 
+# Fri, 29 May 2020 02:30:11 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Fri, 29 May 2020 02:30:11 GMT
+EXPOSE 6379
+# Fri, 29 May 2020 02:30:12 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:29e5d40040c18c692ed73df24511071725b74956ca1a61fe6056a651d86a13bd`  
+		Last Modified: Fri, 24 Apr 2020 00:15:41 GMT  
+		Size: 2.7 MB (2724424 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7c7050d23898adae8e4a2e0ab67eaeab9f9a9ec0fa5b88b128eeff4de1570877`  
+		Last Modified: Fri, 24 Apr 2020 12:48:50 GMT  
+		Size: 1.3 KB (1255 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8982b178d819b1f2f10c3375b2c7ed054157cc5e711b58b6a2dcb376686e5d59`  
+		Last Modified: Fri, 24 Apr 2020 12:48:50 GMT  
+		Size: 404.7 KB (404661 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b5bfc88da00a67d1bf93c8898683efca1b232f0fd642c3400a200ca173607e8c`  
+		Last Modified: Fri, 29 May 2020 02:31:02 GMT  
+		Size: 7.4 MB (7390408 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:125d0b35bc5ae215d9aad5e820504bf4555adc52d617312613416751333fff67`  
+		Last Modified: Fri, 29 May 2020 02:30:59 GMT  
+		Size: 135.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5d09eceec3e8a8d53a2df0550933f21ae8f083fa03c095bc7ca20c6c116c34ab`  
+		Last Modified: Fri, 29 May 2020 02:30:59 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:6.0.4-alpine` - linux; 386
@@ -9566,7 +9716,7 @@ CMD ["redis-server"]
 ## `redis:6.0.4-alpine3.11`
 
 ```console
-$ docker pull redis@sha256:1e52acbe1e81ae5013703e563f2b178c1e35571e31808263cf04e12cabd36e72
+$ docker pull redis@sha256:43524b12420e141ff08e05d44a4278d1d4e6c26f538cc7309515d32be21c07bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9574,6 +9724,7 @@ $ docker pull redis@sha256:1e52acbe1e81ae5013703e563f2b178c1e35571e31808263cf04e
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 	-	linux; s390x
@@ -9795,6 +9946,79 @@ CMD ["redis-server"]
 	-	`sha256:82b4e357355af163110a0944ef11237512a8ccc689d13720de6c4547285fb4d5`  
 		Last Modified: Fri, 29 May 2020 00:16:13 GMT  
 		Size: 417.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `redis:6.0.4-alpine3.11` - linux; arm64 variant v8
+
+```console
+$ docker pull redis@sha256:2d966211869b1108f47049164f851072b85aff288afbaf3b857af7558e1e5b41
+```
+
+-	Docker Version: 18.09.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **10.5 MB (10521296 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9b859cab0e9018f979149629ddeeeb18e9d8ba0a85c42d9d60f2b49d3ca74027`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Fri, 24 Apr 2020 00:14:18 GMT
+ADD file:85ae77bc1e43353ff14e6fe1658be1ed4ecbf4330212ac3d7ab7462add32dd39 in / 
+# Fri, 24 Apr 2020 00:14:21 GMT
+CMD ["/bin/sh"]
+# Fri, 24 Apr 2020 12:45:10 GMT
+RUN addgroup -S -g 1000 redis && adduser -S -G redis -u 999 redis
+# Fri, 24 Apr 2020 12:45:13 GMT
+RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
+# Fri, 29 May 2020 01:21:28 GMT
+ENV REDIS_VERSION=6.0.4
+# Fri, 29 May 2020 01:21:28 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.4.tar.gz
+# Fri, 29 May 2020 01:21:29 GMT
+ENV REDIS_DOWNLOAD_SHA=3337005a1e0c3aa293c87c313467ea8ac11984921fab08807998ba765c9943de
+# Fri, 29 May 2020 02:30:06 GMT
+RUN set -eux; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		linux-headers 		make 		musl-dev 		openssl-dev 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .redis-rundeps $runDeps; 	apk del --no-network .build-deps; 		redis-cli --version; 	redis-server --version
+# Fri, 29 May 2020 02:30:08 GMT
+RUN mkdir /data && chown redis:redis /data
+# Fri, 29 May 2020 02:30:08 GMT
+VOLUME [/data]
+# Fri, 29 May 2020 02:30:09 GMT
+WORKDIR /data
+# Fri, 29 May 2020 02:30:10 GMT
+COPY file:c48b97ea65422782310396358f838c38c0747767dd606a88d4c3d0b034a60762 in /usr/local/bin/ 
+# Fri, 29 May 2020 02:30:11 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Fri, 29 May 2020 02:30:11 GMT
+EXPOSE 6379
+# Fri, 29 May 2020 02:30:12 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:29e5d40040c18c692ed73df24511071725b74956ca1a61fe6056a651d86a13bd`  
+		Last Modified: Fri, 24 Apr 2020 00:15:41 GMT  
+		Size: 2.7 MB (2724424 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7c7050d23898adae8e4a2e0ab67eaeab9f9a9ec0fa5b88b128eeff4de1570877`  
+		Last Modified: Fri, 24 Apr 2020 12:48:50 GMT  
+		Size: 1.3 KB (1255 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8982b178d819b1f2f10c3375b2c7ed054157cc5e711b58b6a2dcb376686e5d59`  
+		Last Modified: Fri, 24 Apr 2020 12:48:50 GMT  
+		Size: 404.7 KB (404661 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b5bfc88da00a67d1bf93c8898683efca1b232f0fd642c3400a200ca173607e8c`  
+		Last Modified: Fri, 29 May 2020 02:31:02 GMT  
+		Size: 7.4 MB (7390408 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:125d0b35bc5ae215d9aad5e820504bf4555adc52d617312613416751333fff67`  
+		Last Modified: Fri, 29 May 2020 02:30:59 GMT  
+		Size: 135.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5d09eceec3e8a8d53a2df0550933f21ae8f083fa03c095bc7ca20c6c116c34ab`  
+		Last Modified: Fri, 29 May 2020 02:30:59 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:6.0.4-alpine3.11` - linux; 386
@@ -10019,7 +10243,7 @@ CMD ["redis-server"]
 ## `redis:6.0.4-buster`
 
 ```console
-$ docker pull redis@sha256:b0f3209566ca20f718387ef71417fa8aaff325b0293c0d735bd57255ba275eba
+$ docker pull redis@sha256:e804ab4a0c56d13a65dbe7dcb3b2b1eeaea62b3462efafa2ae73bfc51ca417f0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10027,6 +10251,7 @@ $ docker pull redis@sha256:b0f3209566ca20f718387ef71417fa8aaff325b0293c0d735bd57
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 	-	linux; s390x
@@ -10254,6 +10479,81 @@ CMD ["redis-server"]
 	-	`sha256:c65bbae98d49b7baaa9c79af6a238f5bac354d0994765d120f17e5722bab70ba`  
 		Last Modified: Fri, 29 May 2020 00:15:58 GMT  
 		Size: 411.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `redis:6.0.4-buster` - linux; arm64 variant v8
+
+```console
+$ docker pull redis@sha256:a957642810a2c9abab42b074b47e02ff1a9f6888df08fb29c409686f76fa1926
+```
+
+-	Docker Version: 18.09.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **36.7 MB (36726158 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:265efb292bfc685c3a16e90aece869e8b94cfa37c7a07002a347003b1acd8c20`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Fri, 15 May 2020 12:44:06 GMT
+ADD file:b305c1792102142f183d3084026f0fc6be3ddf8d1959b32f0a5d22d35eebcd15 in / 
+# Fri, 15 May 2020 12:44:07 GMT
+CMD ["bash"]
+# Sat, 16 May 2020 08:24:10 GMT
+RUN groupadd -r -g 999 redis && useradd -r -g redis -u 999 redis
+# Sat, 16 May 2020 08:24:10 GMT
+ENV GOSU_VERSION=1.12
+# Sat, 16 May 2020 08:24:36 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
+# Fri, 29 May 2020 00:45:41 GMT
+ENV REDIS_VERSION=6.0.4
+# Fri, 29 May 2020 00:45:41 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.4.tar.gz
+# Fri, 29 May 2020 00:45:42 GMT
+ENV REDIS_DOWNLOAD_SHA=3337005a1e0c3aa293c87c313467ea8ac11984921fab08807998ba765c9943de
+# Fri, 29 May 2020 01:21:02 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version
+# Fri, 29 May 2020 01:21:04 GMT
+RUN mkdir /data && chown redis:redis /data
+# Fri, 29 May 2020 01:21:05 GMT
+VOLUME [/data]
+# Fri, 29 May 2020 01:21:05 GMT
+WORKDIR /data
+# Fri, 29 May 2020 01:21:06 GMT
+COPY file:df205a0ef6e6df8947ce0a7ae9e37b6a5588035647f38a49b8b07321003a8a01 in /usr/local/bin/ 
+# Fri, 29 May 2020 01:21:07 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Fri, 29 May 2020 01:21:08 GMT
+EXPOSE 6379
+# Fri, 29 May 2020 01:21:09 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:8a7e1e68c24e5cac20ef26d29505c58456b561c431f0c683b66d1a0943f40dd4`  
+		Last Modified: Fri, 15 May 2020 12:53:36 GMT  
+		Size: 25.9 MB (25857195 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2cfc5ca4e8f484b410989ac557169938b5fe6288ed5add0839e05a790ef47676`  
+		Last Modified: Sat, 16 May 2020 08:28:42 GMT  
+		Size: 1.7 KB (1733 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2eccfc30e2be16f57d04f487ed80dd2b52ada557753eca7c79eb2ff88ab421f2`  
+		Last Modified: Sat, 16 May 2020 08:28:43 GMT  
+		Size: 1.4 MB (1352995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dd36e8fa0393c8ad121ec88a07a93caa4abcb3ebe4664b38f65549cdf07cfcd8`  
+		Last Modified: Fri, 29 May 2020 02:14:17 GMT  
+		Size: 9.5 MB (9513689 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dc225d346638fdac2bd0d553ae48d32bf914337c44c23786a6cadb065df2f091`  
+		Last Modified: Fri, 29 May 2020 02:14:14 GMT  
+		Size: 133.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:858e371a1b90d0d1428b756dc8bfc66775e71882c99caa76278ffd28e5f460fc`  
+		Last Modified: Fri, 29 May 2020 02:14:14 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:6.0.4-buster` - linux; 386
@@ -10484,7 +10784,7 @@ CMD ["redis-server"]
 ## `redis:6.0-alpine`
 
 ```console
-$ docker pull redis@sha256:14c4cc14918b25a57fe6b213fce0dbe7e45eb4f23ec57df63c028b7effbfe593
+$ docker pull redis@sha256:43524b12420e141ff08e05d44a4278d1d4e6c26f538cc7309515d32be21c07bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10719,14 +11019,14 @@ CMD ["redis-server"]
 ### `redis:6.0-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull redis@sha256:eb1c183c4d29b88061954ed35d2f240cdcb6a835b408ef9039d42b8c6efed24e
+$ docker pull redis@sha256:2d966211869b1108f47049164f851072b85aff288afbaf3b857af7558e1e5b41
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10519910 bytes)**  
+-	Total Size: **10.5 MB (10521296 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:997a3cf8b241b11dbfde7b72a94018bbb7376c35ae1c8a4eb27989df571e8e93`
+-	Image ID: `sha256:9b859cab0e9018f979149629ddeeeb18e9d8ba0a85c42d9d60f2b49d3ca74027`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -10739,27 +11039,27 @@ CMD ["/bin/sh"]
 RUN addgroup -S -g 1000 redis && adduser -S -G redis -u 999 redis
 # Fri, 24 Apr 2020 12:45:13 GMT
 RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
-# Mon, 18 May 2020 19:07:50 GMT
-ENV REDIS_VERSION=6.0.3
-# Mon, 18 May 2020 19:07:50 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.3.tar.gz
-# Mon, 18 May 2020 19:07:51 GMT
-ENV REDIS_DOWNLOAD_SHA=bca46dce81fe92f7b2de4cf8ae41fbc4b94fbd5674def7f12c87e7f9165cbb3a
-# Mon, 18 May 2020 19:08:43 GMT
+# Fri, 29 May 2020 01:21:28 GMT
+ENV REDIS_VERSION=6.0.4
+# Fri, 29 May 2020 01:21:28 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.4.tar.gz
+# Fri, 29 May 2020 01:21:29 GMT
+ENV REDIS_DOWNLOAD_SHA=3337005a1e0c3aa293c87c313467ea8ac11984921fab08807998ba765c9943de
+# Fri, 29 May 2020 02:30:06 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		linux-headers 		make 		musl-dev 		openssl-dev 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .redis-rundeps $runDeps; 	apk del --no-network .build-deps; 		redis-cli --version; 	redis-server --version
-# Mon, 18 May 2020 19:08:45 GMT
+# Fri, 29 May 2020 02:30:08 GMT
 RUN mkdir /data && chown redis:redis /data
-# Mon, 18 May 2020 19:08:46 GMT
+# Fri, 29 May 2020 02:30:08 GMT
 VOLUME [/data]
-# Mon, 18 May 2020 19:08:47 GMT
+# Fri, 29 May 2020 02:30:09 GMT
 WORKDIR /data
-# Mon, 18 May 2020 19:08:47 GMT
+# Fri, 29 May 2020 02:30:10 GMT
 COPY file:c48b97ea65422782310396358f838c38c0747767dd606a88d4c3d0b034a60762 in /usr/local/bin/ 
-# Mon, 18 May 2020 19:08:48 GMT
+# Fri, 29 May 2020 02:30:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 18 May 2020 19:08:49 GMT
+# Fri, 29 May 2020 02:30:11 GMT
 EXPOSE 6379
-# Mon, 18 May 2020 19:08:49 GMT
+# Fri, 29 May 2020 02:30:12 GMT
 CMD ["redis-server"]
 ```
 
@@ -10776,17 +11076,17 @@ CMD ["redis-server"]
 		Last Modified: Fri, 24 Apr 2020 12:48:50 GMT  
 		Size: 404.7 KB (404661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7cfd546da404cb50a22a58a6b26264df2ed40f2801868b2552b8ec15715df158`  
-		Last Modified: Mon, 18 May 2020 19:09:41 GMT  
-		Size: 7.4 MB (7389022 bytes)  
+	-	`sha256:b5bfc88da00a67d1bf93c8898683efca1b232f0fd642c3400a200ca173607e8c`  
+		Last Modified: Fri, 29 May 2020 02:31:02 GMT  
+		Size: 7.4 MB (7390408 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aafc899ec8c5db1119b5738c59cf736aa32b7d1ab69d2aab0b1e54b11cc7b7c4`  
-		Last Modified: Mon, 18 May 2020 19:09:39 GMT  
-		Size: 136.0 B  
+	-	`sha256:125d0b35bc5ae215d9aad5e820504bf4555adc52d617312613416751333fff67`  
+		Last Modified: Fri, 29 May 2020 02:30:59 GMT  
+		Size: 135.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fd3ad8ec34c1fd0ee2b330544d96f604886f9d7a4200d0b9e016bd96e48bdb7`  
-		Last Modified: Mon, 18 May 2020 19:09:39 GMT  
-		Size: 412.0 B  
+	-	`sha256:5d09eceec3e8a8d53a2df0550933f21ae8f083fa03c095bc7ca20c6c116c34ab`  
+		Last Modified: Fri, 29 May 2020 02:30:59 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:6.0-alpine` - linux; 386
@@ -11011,7 +11311,7 @@ CMD ["redis-server"]
 ## `redis:6.0-alpine3.11`
 
 ```console
-$ docker pull redis@sha256:14c4cc14918b25a57fe6b213fce0dbe7e45eb4f23ec57df63c028b7effbfe593
+$ docker pull redis@sha256:43524b12420e141ff08e05d44a4278d1d4e6c26f538cc7309515d32be21c07bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11246,14 +11546,14 @@ CMD ["redis-server"]
 ### `redis:6.0-alpine3.11` - linux; arm64 variant v8
 
 ```console
-$ docker pull redis@sha256:eb1c183c4d29b88061954ed35d2f240cdcb6a835b408ef9039d42b8c6efed24e
+$ docker pull redis@sha256:2d966211869b1108f47049164f851072b85aff288afbaf3b857af7558e1e5b41
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10519910 bytes)**  
+-	Total Size: **10.5 MB (10521296 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:997a3cf8b241b11dbfde7b72a94018bbb7376c35ae1c8a4eb27989df571e8e93`
+-	Image ID: `sha256:9b859cab0e9018f979149629ddeeeb18e9d8ba0a85c42d9d60f2b49d3ca74027`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -11266,27 +11566,27 @@ CMD ["/bin/sh"]
 RUN addgroup -S -g 1000 redis && adduser -S -G redis -u 999 redis
 # Fri, 24 Apr 2020 12:45:13 GMT
 RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
-# Mon, 18 May 2020 19:07:50 GMT
-ENV REDIS_VERSION=6.0.3
-# Mon, 18 May 2020 19:07:50 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.3.tar.gz
-# Mon, 18 May 2020 19:07:51 GMT
-ENV REDIS_DOWNLOAD_SHA=bca46dce81fe92f7b2de4cf8ae41fbc4b94fbd5674def7f12c87e7f9165cbb3a
-# Mon, 18 May 2020 19:08:43 GMT
+# Fri, 29 May 2020 01:21:28 GMT
+ENV REDIS_VERSION=6.0.4
+# Fri, 29 May 2020 01:21:28 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.4.tar.gz
+# Fri, 29 May 2020 01:21:29 GMT
+ENV REDIS_DOWNLOAD_SHA=3337005a1e0c3aa293c87c313467ea8ac11984921fab08807998ba765c9943de
+# Fri, 29 May 2020 02:30:06 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		linux-headers 		make 		musl-dev 		openssl-dev 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .redis-rundeps $runDeps; 	apk del --no-network .build-deps; 		redis-cli --version; 	redis-server --version
-# Mon, 18 May 2020 19:08:45 GMT
+# Fri, 29 May 2020 02:30:08 GMT
 RUN mkdir /data && chown redis:redis /data
-# Mon, 18 May 2020 19:08:46 GMT
+# Fri, 29 May 2020 02:30:08 GMT
 VOLUME [/data]
-# Mon, 18 May 2020 19:08:47 GMT
+# Fri, 29 May 2020 02:30:09 GMT
 WORKDIR /data
-# Mon, 18 May 2020 19:08:47 GMT
+# Fri, 29 May 2020 02:30:10 GMT
 COPY file:c48b97ea65422782310396358f838c38c0747767dd606a88d4c3d0b034a60762 in /usr/local/bin/ 
-# Mon, 18 May 2020 19:08:48 GMT
+# Fri, 29 May 2020 02:30:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 18 May 2020 19:08:49 GMT
+# Fri, 29 May 2020 02:30:11 GMT
 EXPOSE 6379
-# Mon, 18 May 2020 19:08:49 GMT
+# Fri, 29 May 2020 02:30:12 GMT
 CMD ["redis-server"]
 ```
 
@@ -11303,17 +11603,17 @@ CMD ["redis-server"]
 		Last Modified: Fri, 24 Apr 2020 12:48:50 GMT  
 		Size: 404.7 KB (404661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7cfd546da404cb50a22a58a6b26264df2ed40f2801868b2552b8ec15715df158`  
-		Last Modified: Mon, 18 May 2020 19:09:41 GMT  
-		Size: 7.4 MB (7389022 bytes)  
+	-	`sha256:b5bfc88da00a67d1bf93c8898683efca1b232f0fd642c3400a200ca173607e8c`  
+		Last Modified: Fri, 29 May 2020 02:31:02 GMT  
+		Size: 7.4 MB (7390408 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aafc899ec8c5db1119b5738c59cf736aa32b7d1ab69d2aab0b1e54b11cc7b7c4`  
-		Last Modified: Mon, 18 May 2020 19:09:39 GMT  
-		Size: 136.0 B  
+	-	`sha256:125d0b35bc5ae215d9aad5e820504bf4555adc52d617312613416751333fff67`  
+		Last Modified: Fri, 29 May 2020 02:30:59 GMT  
+		Size: 135.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fd3ad8ec34c1fd0ee2b330544d96f604886f9d7a4200d0b9e016bd96e48bdb7`  
-		Last Modified: Mon, 18 May 2020 19:09:39 GMT  
-		Size: 412.0 B  
+	-	`sha256:5d09eceec3e8a8d53a2df0550933f21ae8f083fa03c095bc7ca20c6c116c34ab`  
+		Last Modified: Fri, 29 May 2020 02:30:59 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:6.0-alpine3.11` - linux; 386
@@ -11538,7 +11838,7 @@ CMD ["redis-server"]
 ## `redis:6.0-buster`
 
 ```console
-$ docker pull redis@sha256:1196cc530fd868df55145fed5cf0dba0043bd819eae2e46764e69051f129436e
+$ docker pull redis@sha256:d27740b5bd12087efc2b30ac9102fa767d6cc83611dc0fc28f0edb042e835996
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11780,14 +12080,14 @@ CMD ["redis-server"]
 ### `redis:6.0-buster` - linux; arm64 variant v8
 
 ```console
-$ docker pull redis@sha256:a38a3885fd87c101e796159fcb887b28a8a4fba7c95c8a2d2bfa2645fd1aed17
+$ docker pull redis@sha256:a957642810a2c9abab42b074b47e02ff1a9f6888df08fb29c409686f76fa1926
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **36.7 MB (36725283 bytes)**  
+-	Total Size: **36.7 MB (36726158 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:afa01487733aa6981dc66ba9caad6cdf3c55c2de2715631145f77c269b0212ac`
+-	Image ID: `sha256:265efb292bfc685c3a16e90aece869e8b94cfa37c7a07002a347003b1acd8c20`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -11802,27 +12102,27 @@ RUN groupadd -r -g 999 redis && useradd -r -g redis -u 999 redis
 ENV GOSU_VERSION=1.12
 # Sat, 16 May 2020 08:24:36 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Mon, 18 May 2020 19:06:20 GMT
-ENV REDIS_VERSION=6.0.3
-# Mon, 18 May 2020 19:06:21 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.3.tar.gz
-# Mon, 18 May 2020 19:06:21 GMT
-ENV REDIS_DOWNLOAD_SHA=bca46dce81fe92f7b2de4cf8ae41fbc4b94fbd5674def7f12c87e7f9165cbb3a
-# Mon, 18 May 2020 19:07:30 GMT
+# Fri, 29 May 2020 00:45:41 GMT
+ENV REDIS_VERSION=6.0.4
+# Fri, 29 May 2020 00:45:41 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.4.tar.gz
+# Fri, 29 May 2020 00:45:42 GMT
+ENV REDIS_DOWNLOAD_SHA=3337005a1e0c3aa293c87c313467ea8ac11984921fab08807998ba765c9943de
+# Fri, 29 May 2020 01:21:02 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version
-# Mon, 18 May 2020 19:07:32 GMT
+# Fri, 29 May 2020 01:21:04 GMT
 RUN mkdir /data && chown redis:redis /data
-# Mon, 18 May 2020 19:07:33 GMT
+# Fri, 29 May 2020 01:21:05 GMT
 VOLUME [/data]
-# Mon, 18 May 2020 19:07:33 GMT
+# Fri, 29 May 2020 01:21:05 GMT
 WORKDIR /data
-# Mon, 18 May 2020 19:07:34 GMT
+# Fri, 29 May 2020 01:21:06 GMT
 COPY file:df205a0ef6e6df8947ce0a7ae9e37b6a5588035647f38a49b8b07321003a8a01 in /usr/local/bin/ 
-# Mon, 18 May 2020 19:07:35 GMT
+# Fri, 29 May 2020 01:21:07 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 18 May 2020 19:07:35 GMT
+# Fri, 29 May 2020 01:21:08 GMT
 EXPOSE 6379
-# Mon, 18 May 2020 19:07:36 GMT
+# Fri, 29 May 2020 01:21:09 GMT
 CMD ["redis-server"]
 ```
 
@@ -11839,17 +12139,17 @@ CMD ["redis-server"]
 		Last Modified: Sat, 16 May 2020 08:28:43 GMT  
 		Size: 1.4 MB (1352995 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49dc65eb7e7cdf5a97a2244cf083eb8690669ae4822e869f779cc47a03467e8e`  
-		Last Modified: Mon, 18 May 2020 19:09:26 GMT  
-		Size: 9.5 MB (9512816 bytes)  
+	-	`sha256:dd36e8fa0393c8ad121ec88a07a93caa4abcb3ebe4664b38f65549cdf07cfcd8`  
+		Last Modified: Fri, 29 May 2020 02:14:17 GMT  
+		Size: 9.5 MB (9513689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68e7392e3d707dda96a22639202800900a6aa6a3b5e1fd8401df7b70806881fe`  
-		Last Modified: Mon, 18 May 2020 19:09:19 GMT  
-		Size: 134.0 B  
+	-	`sha256:dc225d346638fdac2bd0d553ae48d32bf914337c44c23786a6cadb065df2f091`  
+		Last Modified: Fri, 29 May 2020 02:14:14 GMT  
+		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e7ab6e50e421292c0fe1be0665fe1e6af6bacd8a6e430782c00ec5d73327565`  
-		Last Modified: Mon, 18 May 2020 19:09:20 GMT  
-		Size: 410.0 B  
+	-	`sha256:858e371a1b90d0d1428b756dc8bfc66775e71882c99caa76278ffd28e5f460fc`  
+		Last Modified: Fri, 29 May 2020 02:14:14 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:6.0-buster` - linux; 386
@@ -12155,7 +12455,7 @@ CMD ["redis-server"]
 ## `redis:6-alpine`
 
 ```console
-$ docker pull redis@sha256:14c4cc14918b25a57fe6b213fce0dbe7e45eb4f23ec57df63c028b7effbfe593
+$ docker pull redis@sha256:43524b12420e141ff08e05d44a4278d1d4e6c26f538cc7309515d32be21c07bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12390,14 +12690,14 @@ CMD ["redis-server"]
 ### `redis:6-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull redis@sha256:eb1c183c4d29b88061954ed35d2f240cdcb6a835b408ef9039d42b8c6efed24e
+$ docker pull redis@sha256:2d966211869b1108f47049164f851072b85aff288afbaf3b857af7558e1e5b41
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10519910 bytes)**  
+-	Total Size: **10.5 MB (10521296 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:997a3cf8b241b11dbfde7b72a94018bbb7376c35ae1c8a4eb27989df571e8e93`
+-	Image ID: `sha256:9b859cab0e9018f979149629ddeeeb18e9d8ba0a85c42d9d60f2b49d3ca74027`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -12410,27 +12710,27 @@ CMD ["/bin/sh"]
 RUN addgroup -S -g 1000 redis && adduser -S -G redis -u 999 redis
 # Fri, 24 Apr 2020 12:45:13 GMT
 RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
-# Mon, 18 May 2020 19:07:50 GMT
-ENV REDIS_VERSION=6.0.3
-# Mon, 18 May 2020 19:07:50 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.3.tar.gz
-# Mon, 18 May 2020 19:07:51 GMT
-ENV REDIS_DOWNLOAD_SHA=bca46dce81fe92f7b2de4cf8ae41fbc4b94fbd5674def7f12c87e7f9165cbb3a
-# Mon, 18 May 2020 19:08:43 GMT
+# Fri, 29 May 2020 01:21:28 GMT
+ENV REDIS_VERSION=6.0.4
+# Fri, 29 May 2020 01:21:28 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.4.tar.gz
+# Fri, 29 May 2020 01:21:29 GMT
+ENV REDIS_DOWNLOAD_SHA=3337005a1e0c3aa293c87c313467ea8ac11984921fab08807998ba765c9943de
+# Fri, 29 May 2020 02:30:06 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		linux-headers 		make 		musl-dev 		openssl-dev 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .redis-rundeps $runDeps; 	apk del --no-network .build-deps; 		redis-cli --version; 	redis-server --version
-# Mon, 18 May 2020 19:08:45 GMT
+# Fri, 29 May 2020 02:30:08 GMT
 RUN mkdir /data && chown redis:redis /data
-# Mon, 18 May 2020 19:08:46 GMT
+# Fri, 29 May 2020 02:30:08 GMT
 VOLUME [/data]
-# Mon, 18 May 2020 19:08:47 GMT
+# Fri, 29 May 2020 02:30:09 GMT
 WORKDIR /data
-# Mon, 18 May 2020 19:08:47 GMT
+# Fri, 29 May 2020 02:30:10 GMT
 COPY file:c48b97ea65422782310396358f838c38c0747767dd606a88d4c3d0b034a60762 in /usr/local/bin/ 
-# Mon, 18 May 2020 19:08:48 GMT
+# Fri, 29 May 2020 02:30:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 18 May 2020 19:08:49 GMT
+# Fri, 29 May 2020 02:30:11 GMT
 EXPOSE 6379
-# Mon, 18 May 2020 19:08:49 GMT
+# Fri, 29 May 2020 02:30:12 GMT
 CMD ["redis-server"]
 ```
 
@@ -12447,17 +12747,17 @@ CMD ["redis-server"]
 		Last Modified: Fri, 24 Apr 2020 12:48:50 GMT  
 		Size: 404.7 KB (404661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7cfd546da404cb50a22a58a6b26264df2ed40f2801868b2552b8ec15715df158`  
-		Last Modified: Mon, 18 May 2020 19:09:41 GMT  
-		Size: 7.4 MB (7389022 bytes)  
+	-	`sha256:b5bfc88da00a67d1bf93c8898683efca1b232f0fd642c3400a200ca173607e8c`  
+		Last Modified: Fri, 29 May 2020 02:31:02 GMT  
+		Size: 7.4 MB (7390408 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aafc899ec8c5db1119b5738c59cf736aa32b7d1ab69d2aab0b1e54b11cc7b7c4`  
-		Last Modified: Mon, 18 May 2020 19:09:39 GMT  
-		Size: 136.0 B  
+	-	`sha256:125d0b35bc5ae215d9aad5e820504bf4555adc52d617312613416751333fff67`  
+		Last Modified: Fri, 29 May 2020 02:30:59 GMT  
+		Size: 135.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fd3ad8ec34c1fd0ee2b330544d96f604886f9d7a4200d0b9e016bd96e48bdb7`  
-		Last Modified: Mon, 18 May 2020 19:09:39 GMT  
-		Size: 412.0 B  
+	-	`sha256:5d09eceec3e8a8d53a2df0550933f21ae8f083fa03c095bc7ca20c6c116c34ab`  
+		Last Modified: Fri, 29 May 2020 02:30:59 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:6-alpine` - linux; 386
@@ -12682,7 +12982,7 @@ CMD ["redis-server"]
 ## `redis:6-alpine3.11`
 
 ```console
-$ docker pull redis@sha256:14c4cc14918b25a57fe6b213fce0dbe7e45eb4f23ec57df63c028b7effbfe593
+$ docker pull redis@sha256:43524b12420e141ff08e05d44a4278d1d4e6c26f538cc7309515d32be21c07bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12917,14 +13217,14 @@ CMD ["redis-server"]
 ### `redis:6-alpine3.11` - linux; arm64 variant v8
 
 ```console
-$ docker pull redis@sha256:eb1c183c4d29b88061954ed35d2f240cdcb6a835b408ef9039d42b8c6efed24e
+$ docker pull redis@sha256:2d966211869b1108f47049164f851072b85aff288afbaf3b857af7558e1e5b41
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10519910 bytes)**  
+-	Total Size: **10.5 MB (10521296 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:997a3cf8b241b11dbfde7b72a94018bbb7376c35ae1c8a4eb27989df571e8e93`
+-	Image ID: `sha256:9b859cab0e9018f979149629ddeeeb18e9d8ba0a85c42d9d60f2b49d3ca74027`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -12937,27 +13237,27 @@ CMD ["/bin/sh"]
 RUN addgroup -S -g 1000 redis && adduser -S -G redis -u 999 redis
 # Fri, 24 Apr 2020 12:45:13 GMT
 RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
-# Mon, 18 May 2020 19:07:50 GMT
-ENV REDIS_VERSION=6.0.3
-# Mon, 18 May 2020 19:07:50 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.3.tar.gz
-# Mon, 18 May 2020 19:07:51 GMT
-ENV REDIS_DOWNLOAD_SHA=bca46dce81fe92f7b2de4cf8ae41fbc4b94fbd5674def7f12c87e7f9165cbb3a
-# Mon, 18 May 2020 19:08:43 GMT
+# Fri, 29 May 2020 01:21:28 GMT
+ENV REDIS_VERSION=6.0.4
+# Fri, 29 May 2020 01:21:28 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.4.tar.gz
+# Fri, 29 May 2020 01:21:29 GMT
+ENV REDIS_DOWNLOAD_SHA=3337005a1e0c3aa293c87c313467ea8ac11984921fab08807998ba765c9943de
+# Fri, 29 May 2020 02:30:06 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		linux-headers 		make 		musl-dev 		openssl-dev 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .redis-rundeps $runDeps; 	apk del --no-network .build-deps; 		redis-cli --version; 	redis-server --version
-# Mon, 18 May 2020 19:08:45 GMT
+# Fri, 29 May 2020 02:30:08 GMT
 RUN mkdir /data && chown redis:redis /data
-# Mon, 18 May 2020 19:08:46 GMT
+# Fri, 29 May 2020 02:30:08 GMT
 VOLUME [/data]
-# Mon, 18 May 2020 19:08:47 GMT
+# Fri, 29 May 2020 02:30:09 GMT
 WORKDIR /data
-# Mon, 18 May 2020 19:08:47 GMT
+# Fri, 29 May 2020 02:30:10 GMT
 COPY file:c48b97ea65422782310396358f838c38c0747767dd606a88d4c3d0b034a60762 in /usr/local/bin/ 
-# Mon, 18 May 2020 19:08:48 GMT
+# Fri, 29 May 2020 02:30:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 18 May 2020 19:08:49 GMT
+# Fri, 29 May 2020 02:30:11 GMT
 EXPOSE 6379
-# Mon, 18 May 2020 19:08:49 GMT
+# Fri, 29 May 2020 02:30:12 GMT
 CMD ["redis-server"]
 ```
 
@@ -12974,17 +13274,17 @@ CMD ["redis-server"]
 		Last Modified: Fri, 24 Apr 2020 12:48:50 GMT  
 		Size: 404.7 KB (404661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7cfd546da404cb50a22a58a6b26264df2ed40f2801868b2552b8ec15715df158`  
-		Last Modified: Mon, 18 May 2020 19:09:41 GMT  
-		Size: 7.4 MB (7389022 bytes)  
+	-	`sha256:b5bfc88da00a67d1bf93c8898683efca1b232f0fd642c3400a200ca173607e8c`  
+		Last Modified: Fri, 29 May 2020 02:31:02 GMT  
+		Size: 7.4 MB (7390408 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aafc899ec8c5db1119b5738c59cf736aa32b7d1ab69d2aab0b1e54b11cc7b7c4`  
-		Last Modified: Mon, 18 May 2020 19:09:39 GMT  
-		Size: 136.0 B  
+	-	`sha256:125d0b35bc5ae215d9aad5e820504bf4555adc52d617312613416751333fff67`  
+		Last Modified: Fri, 29 May 2020 02:30:59 GMT  
+		Size: 135.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fd3ad8ec34c1fd0ee2b330544d96f604886f9d7a4200d0b9e016bd96e48bdb7`  
-		Last Modified: Mon, 18 May 2020 19:09:39 GMT  
-		Size: 412.0 B  
+	-	`sha256:5d09eceec3e8a8d53a2df0550933f21ae8f083fa03c095bc7ca20c6c116c34ab`  
+		Last Modified: Fri, 29 May 2020 02:30:59 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:6-alpine3.11` - linux; 386
@@ -13209,7 +13509,7 @@ CMD ["redis-server"]
 ## `redis:6-buster`
 
 ```console
-$ docker pull redis@sha256:1196cc530fd868df55145fed5cf0dba0043bd819eae2e46764e69051f129436e
+$ docker pull redis@sha256:d27740b5bd12087efc2b30ac9102fa767d6cc83611dc0fc28f0edb042e835996
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13451,14 +13751,14 @@ CMD ["redis-server"]
 ### `redis:6-buster` - linux; arm64 variant v8
 
 ```console
-$ docker pull redis@sha256:a38a3885fd87c101e796159fcb887b28a8a4fba7c95c8a2d2bfa2645fd1aed17
+$ docker pull redis@sha256:a957642810a2c9abab42b074b47e02ff1a9f6888df08fb29c409686f76fa1926
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **36.7 MB (36725283 bytes)**  
+-	Total Size: **36.7 MB (36726158 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:afa01487733aa6981dc66ba9caad6cdf3c55c2de2715631145f77c269b0212ac`
+-	Image ID: `sha256:265efb292bfc685c3a16e90aece869e8b94cfa37c7a07002a347003b1acd8c20`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -13473,27 +13773,27 @@ RUN groupadd -r -g 999 redis && useradd -r -g redis -u 999 redis
 ENV GOSU_VERSION=1.12
 # Sat, 16 May 2020 08:24:36 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Mon, 18 May 2020 19:06:20 GMT
-ENV REDIS_VERSION=6.0.3
-# Mon, 18 May 2020 19:06:21 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.3.tar.gz
-# Mon, 18 May 2020 19:06:21 GMT
-ENV REDIS_DOWNLOAD_SHA=bca46dce81fe92f7b2de4cf8ae41fbc4b94fbd5674def7f12c87e7f9165cbb3a
-# Mon, 18 May 2020 19:07:30 GMT
+# Fri, 29 May 2020 00:45:41 GMT
+ENV REDIS_VERSION=6.0.4
+# Fri, 29 May 2020 00:45:41 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.4.tar.gz
+# Fri, 29 May 2020 00:45:42 GMT
+ENV REDIS_DOWNLOAD_SHA=3337005a1e0c3aa293c87c313467ea8ac11984921fab08807998ba765c9943de
+# Fri, 29 May 2020 01:21:02 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version
-# Mon, 18 May 2020 19:07:32 GMT
+# Fri, 29 May 2020 01:21:04 GMT
 RUN mkdir /data && chown redis:redis /data
-# Mon, 18 May 2020 19:07:33 GMT
+# Fri, 29 May 2020 01:21:05 GMT
 VOLUME [/data]
-# Mon, 18 May 2020 19:07:33 GMT
+# Fri, 29 May 2020 01:21:05 GMT
 WORKDIR /data
-# Mon, 18 May 2020 19:07:34 GMT
+# Fri, 29 May 2020 01:21:06 GMT
 COPY file:df205a0ef6e6df8947ce0a7ae9e37b6a5588035647f38a49b8b07321003a8a01 in /usr/local/bin/ 
-# Mon, 18 May 2020 19:07:35 GMT
+# Fri, 29 May 2020 01:21:07 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 18 May 2020 19:07:35 GMT
+# Fri, 29 May 2020 01:21:08 GMT
 EXPOSE 6379
-# Mon, 18 May 2020 19:07:36 GMT
+# Fri, 29 May 2020 01:21:09 GMT
 CMD ["redis-server"]
 ```
 
@@ -13510,17 +13810,17 @@ CMD ["redis-server"]
 		Last Modified: Sat, 16 May 2020 08:28:43 GMT  
 		Size: 1.4 MB (1352995 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49dc65eb7e7cdf5a97a2244cf083eb8690669ae4822e869f779cc47a03467e8e`  
-		Last Modified: Mon, 18 May 2020 19:09:26 GMT  
-		Size: 9.5 MB (9512816 bytes)  
+	-	`sha256:dd36e8fa0393c8ad121ec88a07a93caa4abcb3ebe4664b38f65549cdf07cfcd8`  
+		Last Modified: Fri, 29 May 2020 02:14:17 GMT  
+		Size: 9.5 MB (9513689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68e7392e3d707dda96a22639202800900a6aa6a3b5e1fd8401df7b70806881fe`  
-		Last Modified: Mon, 18 May 2020 19:09:19 GMT  
-		Size: 134.0 B  
+	-	`sha256:dc225d346638fdac2bd0d553ae48d32bf914337c44c23786a6cadb065df2f091`  
+		Last Modified: Fri, 29 May 2020 02:14:14 GMT  
+		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e7ab6e50e421292c0fe1be0665fe1e6af6bacd8a6e430782c00ec5d73327565`  
-		Last Modified: Mon, 18 May 2020 19:09:20 GMT  
-		Size: 410.0 B  
+	-	`sha256:858e371a1b90d0d1428b756dc8bfc66775e71882c99caa76278ffd28e5f460fc`  
+		Last Modified: Fri, 29 May 2020 02:14:14 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:6-buster` - linux; 386
@@ -13826,7 +14126,7 @@ CMD ["redis-server"]
 ## `redis:alpine`
 
 ```console
-$ docker pull redis@sha256:14c4cc14918b25a57fe6b213fce0dbe7e45eb4f23ec57df63c028b7effbfe593
+$ docker pull redis@sha256:43524b12420e141ff08e05d44a4278d1d4e6c26f538cc7309515d32be21c07bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14061,14 +14361,14 @@ CMD ["redis-server"]
 ### `redis:alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull redis@sha256:eb1c183c4d29b88061954ed35d2f240cdcb6a835b408ef9039d42b8c6efed24e
+$ docker pull redis@sha256:2d966211869b1108f47049164f851072b85aff288afbaf3b857af7558e1e5b41
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10519910 bytes)**  
+-	Total Size: **10.5 MB (10521296 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:997a3cf8b241b11dbfde7b72a94018bbb7376c35ae1c8a4eb27989df571e8e93`
+-	Image ID: `sha256:9b859cab0e9018f979149629ddeeeb18e9d8ba0a85c42d9d60f2b49d3ca74027`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -14081,27 +14381,27 @@ CMD ["/bin/sh"]
 RUN addgroup -S -g 1000 redis && adduser -S -G redis -u 999 redis
 # Fri, 24 Apr 2020 12:45:13 GMT
 RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
-# Mon, 18 May 2020 19:07:50 GMT
-ENV REDIS_VERSION=6.0.3
-# Mon, 18 May 2020 19:07:50 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.3.tar.gz
-# Mon, 18 May 2020 19:07:51 GMT
-ENV REDIS_DOWNLOAD_SHA=bca46dce81fe92f7b2de4cf8ae41fbc4b94fbd5674def7f12c87e7f9165cbb3a
-# Mon, 18 May 2020 19:08:43 GMT
+# Fri, 29 May 2020 01:21:28 GMT
+ENV REDIS_VERSION=6.0.4
+# Fri, 29 May 2020 01:21:28 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.4.tar.gz
+# Fri, 29 May 2020 01:21:29 GMT
+ENV REDIS_DOWNLOAD_SHA=3337005a1e0c3aa293c87c313467ea8ac11984921fab08807998ba765c9943de
+# Fri, 29 May 2020 02:30:06 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		linux-headers 		make 		musl-dev 		openssl-dev 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .redis-rundeps $runDeps; 	apk del --no-network .build-deps; 		redis-cli --version; 	redis-server --version
-# Mon, 18 May 2020 19:08:45 GMT
+# Fri, 29 May 2020 02:30:08 GMT
 RUN mkdir /data && chown redis:redis /data
-# Mon, 18 May 2020 19:08:46 GMT
+# Fri, 29 May 2020 02:30:08 GMT
 VOLUME [/data]
-# Mon, 18 May 2020 19:08:47 GMT
+# Fri, 29 May 2020 02:30:09 GMT
 WORKDIR /data
-# Mon, 18 May 2020 19:08:47 GMT
+# Fri, 29 May 2020 02:30:10 GMT
 COPY file:c48b97ea65422782310396358f838c38c0747767dd606a88d4c3d0b034a60762 in /usr/local/bin/ 
-# Mon, 18 May 2020 19:08:48 GMT
+# Fri, 29 May 2020 02:30:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 18 May 2020 19:08:49 GMT
+# Fri, 29 May 2020 02:30:11 GMT
 EXPOSE 6379
-# Mon, 18 May 2020 19:08:49 GMT
+# Fri, 29 May 2020 02:30:12 GMT
 CMD ["redis-server"]
 ```
 
@@ -14118,17 +14418,17 @@ CMD ["redis-server"]
 		Last Modified: Fri, 24 Apr 2020 12:48:50 GMT  
 		Size: 404.7 KB (404661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7cfd546da404cb50a22a58a6b26264df2ed40f2801868b2552b8ec15715df158`  
-		Last Modified: Mon, 18 May 2020 19:09:41 GMT  
-		Size: 7.4 MB (7389022 bytes)  
+	-	`sha256:b5bfc88da00a67d1bf93c8898683efca1b232f0fd642c3400a200ca173607e8c`  
+		Last Modified: Fri, 29 May 2020 02:31:02 GMT  
+		Size: 7.4 MB (7390408 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aafc899ec8c5db1119b5738c59cf736aa32b7d1ab69d2aab0b1e54b11cc7b7c4`  
-		Last Modified: Mon, 18 May 2020 19:09:39 GMT  
-		Size: 136.0 B  
+	-	`sha256:125d0b35bc5ae215d9aad5e820504bf4555adc52d617312613416751333fff67`  
+		Last Modified: Fri, 29 May 2020 02:30:59 GMT  
+		Size: 135.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fd3ad8ec34c1fd0ee2b330544d96f604886f9d7a4200d0b9e016bd96e48bdb7`  
-		Last Modified: Mon, 18 May 2020 19:09:39 GMT  
-		Size: 412.0 B  
+	-	`sha256:5d09eceec3e8a8d53a2df0550933f21ae8f083fa03c095bc7ca20c6c116c34ab`  
+		Last Modified: Fri, 29 May 2020 02:30:59 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:alpine` - linux; 386
@@ -14353,7 +14653,7 @@ CMD ["redis-server"]
 ## `redis:alpine3.11`
 
 ```console
-$ docker pull redis@sha256:14c4cc14918b25a57fe6b213fce0dbe7e45eb4f23ec57df63c028b7effbfe593
+$ docker pull redis@sha256:43524b12420e141ff08e05d44a4278d1d4e6c26f538cc7309515d32be21c07bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14588,14 +14888,14 @@ CMD ["redis-server"]
 ### `redis:alpine3.11` - linux; arm64 variant v8
 
 ```console
-$ docker pull redis@sha256:eb1c183c4d29b88061954ed35d2f240cdcb6a835b408ef9039d42b8c6efed24e
+$ docker pull redis@sha256:2d966211869b1108f47049164f851072b85aff288afbaf3b857af7558e1e5b41
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 MB (10519910 bytes)**  
+-	Total Size: **10.5 MB (10521296 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:997a3cf8b241b11dbfde7b72a94018bbb7376c35ae1c8a4eb27989df571e8e93`
+-	Image ID: `sha256:9b859cab0e9018f979149629ddeeeb18e9d8ba0a85c42d9d60f2b49d3ca74027`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -14608,27 +14908,27 @@ CMD ["/bin/sh"]
 RUN addgroup -S -g 1000 redis && adduser -S -G redis -u 999 redis
 # Fri, 24 Apr 2020 12:45:13 GMT
 RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
-# Mon, 18 May 2020 19:07:50 GMT
-ENV REDIS_VERSION=6.0.3
-# Mon, 18 May 2020 19:07:50 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.3.tar.gz
-# Mon, 18 May 2020 19:07:51 GMT
-ENV REDIS_DOWNLOAD_SHA=bca46dce81fe92f7b2de4cf8ae41fbc4b94fbd5674def7f12c87e7f9165cbb3a
-# Mon, 18 May 2020 19:08:43 GMT
+# Fri, 29 May 2020 01:21:28 GMT
+ENV REDIS_VERSION=6.0.4
+# Fri, 29 May 2020 01:21:28 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.4.tar.gz
+# Fri, 29 May 2020 01:21:29 GMT
+ENV REDIS_DOWNLOAD_SHA=3337005a1e0c3aa293c87c313467ea8ac11984921fab08807998ba765c9943de
+# Fri, 29 May 2020 02:30:06 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		coreutils 		gcc 		linux-headers 		make 		musl-dev 		openssl-dev 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .redis-rundeps $runDeps; 	apk del --no-network .build-deps; 		redis-cli --version; 	redis-server --version
-# Mon, 18 May 2020 19:08:45 GMT
+# Fri, 29 May 2020 02:30:08 GMT
 RUN mkdir /data && chown redis:redis /data
-# Mon, 18 May 2020 19:08:46 GMT
+# Fri, 29 May 2020 02:30:08 GMT
 VOLUME [/data]
-# Mon, 18 May 2020 19:08:47 GMT
+# Fri, 29 May 2020 02:30:09 GMT
 WORKDIR /data
-# Mon, 18 May 2020 19:08:47 GMT
+# Fri, 29 May 2020 02:30:10 GMT
 COPY file:c48b97ea65422782310396358f838c38c0747767dd606a88d4c3d0b034a60762 in /usr/local/bin/ 
-# Mon, 18 May 2020 19:08:48 GMT
+# Fri, 29 May 2020 02:30:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 18 May 2020 19:08:49 GMT
+# Fri, 29 May 2020 02:30:11 GMT
 EXPOSE 6379
-# Mon, 18 May 2020 19:08:49 GMT
+# Fri, 29 May 2020 02:30:12 GMT
 CMD ["redis-server"]
 ```
 
@@ -14645,17 +14945,17 @@ CMD ["redis-server"]
 		Last Modified: Fri, 24 Apr 2020 12:48:50 GMT  
 		Size: 404.7 KB (404661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7cfd546da404cb50a22a58a6b26264df2ed40f2801868b2552b8ec15715df158`  
-		Last Modified: Mon, 18 May 2020 19:09:41 GMT  
-		Size: 7.4 MB (7389022 bytes)  
+	-	`sha256:b5bfc88da00a67d1bf93c8898683efca1b232f0fd642c3400a200ca173607e8c`  
+		Last Modified: Fri, 29 May 2020 02:31:02 GMT  
+		Size: 7.4 MB (7390408 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aafc899ec8c5db1119b5738c59cf736aa32b7d1ab69d2aab0b1e54b11cc7b7c4`  
-		Last Modified: Mon, 18 May 2020 19:09:39 GMT  
-		Size: 136.0 B  
+	-	`sha256:125d0b35bc5ae215d9aad5e820504bf4555adc52d617312613416751333fff67`  
+		Last Modified: Fri, 29 May 2020 02:30:59 GMT  
+		Size: 135.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fd3ad8ec34c1fd0ee2b330544d96f604886f9d7a4200d0b9e016bd96e48bdb7`  
-		Last Modified: Mon, 18 May 2020 19:09:39 GMT  
-		Size: 412.0 B  
+	-	`sha256:5d09eceec3e8a8d53a2df0550933f21ae8f083fa03c095bc7ca20c6c116c34ab`  
+		Last Modified: Fri, 29 May 2020 02:30:59 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:alpine3.11` - linux; 386
@@ -14880,7 +15180,7 @@ CMD ["redis-server"]
 ## `redis:buster`
 
 ```console
-$ docker pull redis@sha256:1196cc530fd868df55145fed5cf0dba0043bd819eae2e46764e69051f129436e
+$ docker pull redis@sha256:d27740b5bd12087efc2b30ac9102fa767d6cc83611dc0fc28f0edb042e835996
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15122,14 +15422,14 @@ CMD ["redis-server"]
 ### `redis:buster` - linux; arm64 variant v8
 
 ```console
-$ docker pull redis@sha256:a38a3885fd87c101e796159fcb887b28a8a4fba7c95c8a2d2bfa2645fd1aed17
+$ docker pull redis@sha256:a957642810a2c9abab42b074b47e02ff1a9f6888df08fb29c409686f76fa1926
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **36.7 MB (36725283 bytes)**  
+-	Total Size: **36.7 MB (36726158 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:afa01487733aa6981dc66ba9caad6cdf3c55c2de2715631145f77c269b0212ac`
+-	Image ID: `sha256:265efb292bfc685c3a16e90aece869e8b94cfa37c7a07002a347003b1acd8c20`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -15144,27 +15444,27 @@ RUN groupadd -r -g 999 redis && useradd -r -g redis -u 999 redis
 ENV GOSU_VERSION=1.12
 # Sat, 16 May 2020 08:24:36 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Mon, 18 May 2020 19:06:20 GMT
-ENV REDIS_VERSION=6.0.3
-# Mon, 18 May 2020 19:06:21 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.3.tar.gz
-# Mon, 18 May 2020 19:06:21 GMT
-ENV REDIS_DOWNLOAD_SHA=bca46dce81fe92f7b2de4cf8ae41fbc4b94fbd5674def7f12c87e7f9165cbb3a
-# Mon, 18 May 2020 19:07:30 GMT
+# Fri, 29 May 2020 00:45:41 GMT
+ENV REDIS_VERSION=6.0.4
+# Fri, 29 May 2020 00:45:41 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.4.tar.gz
+# Fri, 29 May 2020 00:45:42 GMT
+ENV REDIS_DOWNLOAD_SHA=3337005a1e0c3aa293c87c313467ea8ac11984921fab08807998ba765c9943de
+# Fri, 29 May 2020 01:21:02 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version
-# Mon, 18 May 2020 19:07:32 GMT
+# Fri, 29 May 2020 01:21:04 GMT
 RUN mkdir /data && chown redis:redis /data
-# Mon, 18 May 2020 19:07:33 GMT
+# Fri, 29 May 2020 01:21:05 GMT
 VOLUME [/data]
-# Mon, 18 May 2020 19:07:33 GMT
+# Fri, 29 May 2020 01:21:05 GMT
 WORKDIR /data
-# Mon, 18 May 2020 19:07:34 GMT
+# Fri, 29 May 2020 01:21:06 GMT
 COPY file:df205a0ef6e6df8947ce0a7ae9e37b6a5588035647f38a49b8b07321003a8a01 in /usr/local/bin/ 
-# Mon, 18 May 2020 19:07:35 GMT
+# Fri, 29 May 2020 01:21:07 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 18 May 2020 19:07:35 GMT
+# Fri, 29 May 2020 01:21:08 GMT
 EXPOSE 6379
-# Mon, 18 May 2020 19:07:36 GMT
+# Fri, 29 May 2020 01:21:09 GMT
 CMD ["redis-server"]
 ```
 
@@ -15181,17 +15481,17 @@ CMD ["redis-server"]
 		Last Modified: Sat, 16 May 2020 08:28:43 GMT  
 		Size: 1.4 MB (1352995 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49dc65eb7e7cdf5a97a2244cf083eb8690669ae4822e869f779cc47a03467e8e`  
-		Last Modified: Mon, 18 May 2020 19:09:26 GMT  
-		Size: 9.5 MB (9512816 bytes)  
+	-	`sha256:dd36e8fa0393c8ad121ec88a07a93caa4abcb3ebe4664b38f65549cdf07cfcd8`  
+		Last Modified: Fri, 29 May 2020 02:14:17 GMT  
+		Size: 9.5 MB (9513689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68e7392e3d707dda96a22639202800900a6aa6a3b5e1fd8401df7b70806881fe`  
-		Last Modified: Mon, 18 May 2020 19:09:19 GMT  
-		Size: 134.0 B  
+	-	`sha256:dc225d346638fdac2bd0d553ae48d32bf914337c44c23786a6cadb065df2f091`  
+		Last Modified: Fri, 29 May 2020 02:14:14 GMT  
+		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e7ab6e50e421292c0fe1be0665fe1e6af6bacd8a6e430782c00ec5d73327565`  
-		Last Modified: Mon, 18 May 2020 19:09:20 GMT  
-		Size: 410.0 B  
+	-	`sha256:858e371a1b90d0d1428b756dc8bfc66775e71882c99caa76278ffd28e5f460fc`  
+		Last Modified: Fri, 29 May 2020 02:14:14 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:buster` - linux; 386
@@ -15497,7 +15797,7 @@ CMD ["redis-server"]
 ## `redis:latest`
 
 ```console
-$ docker pull redis@sha256:1196cc530fd868df55145fed5cf0dba0043bd819eae2e46764e69051f129436e
+$ docker pull redis@sha256:d27740b5bd12087efc2b30ac9102fa767d6cc83611dc0fc28f0edb042e835996
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15739,14 +16039,14 @@ CMD ["redis-server"]
 ### `redis:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull redis@sha256:a38a3885fd87c101e796159fcb887b28a8a4fba7c95c8a2d2bfa2645fd1aed17
+$ docker pull redis@sha256:a957642810a2c9abab42b074b47e02ff1a9f6888df08fb29c409686f76fa1926
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **36.7 MB (36725283 bytes)**  
+-	Total Size: **36.7 MB (36726158 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:afa01487733aa6981dc66ba9caad6cdf3c55c2de2715631145f77c269b0212ac`
+-	Image ID: `sha256:265efb292bfc685c3a16e90aece869e8b94cfa37c7a07002a347003b1acd8c20`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -15761,27 +16061,27 @@ RUN groupadd -r -g 999 redis && useradd -r -g redis -u 999 redis
 ENV GOSU_VERSION=1.12
 # Sat, 16 May 2020 08:24:36 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Mon, 18 May 2020 19:06:20 GMT
-ENV REDIS_VERSION=6.0.3
-# Mon, 18 May 2020 19:06:21 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.3.tar.gz
-# Mon, 18 May 2020 19:06:21 GMT
-ENV REDIS_DOWNLOAD_SHA=bca46dce81fe92f7b2de4cf8ae41fbc4b94fbd5674def7f12c87e7f9165cbb3a
-# Mon, 18 May 2020 19:07:30 GMT
+# Fri, 29 May 2020 00:45:41 GMT
+ENV REDIS_VERSION=6.0.4
+# Fri, 29 May 2020 00:45:41 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.4.tar.gz
+# Fri, 29 May 2020 00:45:42 GMT
+ENV REDIS_DOWNLOAD_SHA=3337005a1e0c3aa293c87c313467ea8ac11984921fab08807998ba765c9943de
+# Fri, 29 May 2020 01:21:02 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version
-# Mon, 18 May 2020 19:07:32 GMT
+# Fri, 29 May 2020 01:21:04 GMT
 RUN mkdir /data && chown redis:redis /data
-# Mon, 18 May 2020 19:07:33 GMT
+# Fri, 29 May 2020 01:21:05 GMT
 VOLUME [/data]
-# Mon, 18 May 2020 19:07:33 GMT
+# Fri, 29 May 2020 01:21:05 GMT
 WORKDIR /data
-# Mon, 18 May 2020 19:07:34 GMT
+# Fri, 29 May 2020 01:21:06 GMT
 COPY file:df205a0ef6e6df8947ce0a7ae9e37b6a5588035647f38a49b8b07321003a8a01 in /usr/local/bin/ 
-# Mon, 18 May 2020 19:07:35 GMT
+# Fri, 29 May 2020 01:21:07 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 18 May 2020 19:07:35 GMT
+# Fri, 29 May 2020 01:21:08 GMT
 EXPOSE 6379
-# Mon, 18 May 2020 19:07:36 GMT
+# Fri, 29 May 2020 01:21:09 GMT
 CMD ["redis-server"]
 ```
 
@@ -15798,17 +16098,17 @@ CMD ["redis-server"]
 		Last Modified: Sat, 16 May 2020 08:28:43 GMT  
 		Size: 1.4 MB (1352995 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49dc65eb7e7cdf5a97a2244cf083eb8690669ae4822e869f779cc47a03467e8e`  
-		Last Modified: Mon, 18 May 2020 19:09:26 GMT  
-		Size: 9.5 MB (9512816 bytes)  
+	-	`sha256:dd36e8fa0393c8ad121ec88a07a93caa4abcb3ebe4664b38f65549cdf07cfcd8`  
+		Last Modified: Fri, 29 May 2020 02:14:17 GMT  
+		Size: 9.5 MB (9513689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68e7392e3d707dda96a22639202800900a6aa6a3b5e1fd8401df7b70806881fe`  
-		Last Modified: Mon, 18 May 2020 19:09:19 GMT  
-		Size: 134.0 B  
+	-	`sha256:dc225d346638fdac2bd0d553ae48d32bf914337c44c23786a6cadb065df2f091`  
+		Last Modified: Fri, 29 May 2020 02:14:14 GMT  
+		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e7ab6e50e421292c0fe1be0665fe1e6af6bacd8a6e430782c00ec5d73327565`  
-		Last Modified: Mon, 18 May 2020 19:09:20 GMT  
-		Size: 410.0 B  
+	-	`sha256:858e371a1b90d0d1428b756dc8bfc66775e71882c99caa76278ffd28e5f460fc`  
+		Last Modified: Fri, 29 May 2020 02:14:14 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:latest` - linux; 386
