@@ -1,7 +1,7 @@
 ## `bash:devel`
 
 ```console
-$ docker pull bash@sha256:1776bb87708689373bce0f189a26b49c84615a18c4cf51e1e7c5e3f08a14615e
+$ docker pull bash@sha256:f6b08fceee2d4b10a9df277599f2ee3afc2bd7cfe01454078ae4e19aaa76c6d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,328 +17,328 @@ $ docker pull bash@sha256:1776bb87708689373bce0f189a26b49c84615a18c4cf51e1e7c5e3
 ### `bash:devel` - linux; amd64
 
 ```console
-$ docker pull bash@sha256:468fcd1548a33c397ff72cacebc68f21f04ecb19d2bd8217645825f029e3276b
+$ docker pull bash@sha256:d63ea27bf03909f53e90db3c00d9bec6b6c8fd16e7ac95ecda23cdc0a9450189
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.7 MB (5747649 bytes)**  
+-	Total Size: **5.7 MB (5738283 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e38d51e6be903782375f4f232d9506a927b7c814b956612a0e02d6d4f276b3f2`
+-	Image ID: `sha256:a66a7cc67c769cb4e75e22b407b7400cc9216aa4e97be6624a05416b023a4094`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 24 Apr 2020 01:05:03 GMT
-ADD file:b91adb67b670d3a6ff9463e48b7def903ed516be66fc4282d22c53e41512be49 in / 
-# Fri, 24 Apr 2020 01:05:03 GMT
+# Fri, 29 May 2020 21:19:46 GMT
+ADD file:c92c248239f8c7b9b3c067650954815f391b7bcb09023f984972c082ace2a8d0 in / 
+# Fri, 29 May 2020 21:19:46 GMT
 CMD ["/bin/sh"]
-# Wed, 27 May 2020 18:19:35 GMT
-ENV _BASH_COMMIT=ce1a3c07c4e17ed176edccd75892dfcf8242de60
-# Wed, 27 May 2020 18:19:35 GMT
-ENV _BASH_COMMIT_DESC=commit bash-20200520 snapshot
-# Wed, 27 May 2020 18:20:21 GMT
+# Sat, 30 May 2020 00:19:35 GMT
+ENV _BASH_COMMIT=37adc8b99d4c15dcb9e6582aa19a2ef61afb592f
+# Sat, 30 May 2020 00:19:36 GMT
+ENV _BASH_COMMIT_DESC=commit bash-20200527 snapshot
+# Sat, 30 May 2020 00:20:25 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		bison 		coreutils 		dpkg-dev dpkg 		gcc 		libc-dev 		make 		ncurses-dev 		tar 	; 		wget -O bash.tar.gz "https://git.savannah.gnu.org/cgit/bash.git/snapshot/bash-$_BASH_COMMIT.tar.gz"; 		mkdir -p /usr/src/bash; 	tar 		--extract 		--file=bash.tar.gz 		--strip-components=1 		--directory=/usr/src/bash 	; 	rm bash.tar.gz; 		if [ -d bash-patches ]; then 		for p in bash-patches/*; do 			patch 				--directory=/usr/src/bash 				--input="$(readlink -f "$p")" 				--strip=0 			; 			rm "$p"; 		done; 		rmdir bash-patches; 	fi; 		cd /usr/src/bash; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-readline 		--with-curses 		--without-bash-malloc 	|| { 		cat >&2 config.log; 		false; 	}; 	make -j "$(nproc)"; 	make install; 	cd /; 	rm -r /usr/src/bash; 		rm -r 		/usr/local/share/doc/bash/*.html 		/usr/local/share/info 		/usr/local/share/man 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .bash-rundeps $runDeps; 	apk del .build-deps; 		[ "$(which bash)" = '/usr/local/bin/bash' ]; 	bash --version
-# Wed, 27 May 2020 18:20:21 GMT
+# Sat, 30 May 2020 00:20:25 GMT
 COPY file:651b3bebeba8be9162c56b3eb561199905235f3e1c7811232b6c9f48ac333651 in /usr/local/bin/ 
-# Wed, 27 May 2020 18:20:21 GMT
+# Sat, 30 May 2020 00:20:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 27 May 2020 18:20:22 GMT
+# Sat, 30 May 2020 00:20:26 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:cbdbe7a5bc2a134ca8ec91be58565ec07d037386d1f1d8385412d224deafca08`  
-		Last Modified: Thu, 23 Apr 2020 14:07:19 GMT  
-		Size: 2.8 MB (2813316 bytes)  
+	-	`sha256:df20fa9351a15782c64e6dddb2d4a6f50bf6d3688060a34c4014b0d9a752eb4c`  
+		Last Modified: Fri, 29 May 2020 21:20:06 GMT  
+		Size: 2.8 MB (2797541 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78d32efae9bd65e8c6867aaeec179183b45d70e4e81777d0bc39293a79ed3b3a`  
-		Last Modified: Wed, 27 May 2020 18:21:09 GMT  
-		Size: 2.9 MB (2933991 bytes)  
+	-	`sha256:2af9823da86aecfbe733f68bdcb10ee571e99f640600898d59fefe70da3587e9`  
+		Last Modified: Sat, 30 May 2020 00:31:42 GMT  
+		Size: 2.9 MB (2940399 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:880d4962d00abff8ed95349ad1ad1bb0507541727a8960d6224c382ae1b4a471`  
-		Last Modified: Wed, 27 May 2020 18:21:09 GMT  
-		Size: 342.0 B  
+	-	`sha256:eeb6f9f404726f8113ee92857acb42c316f96fbf706d3b5fa7c4cee41d8b8391`  
+		Last Modified: Sat, 30 May 2020 00:31:41 GMT  
+		Size: 343.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `bash:devel` - linux; arm variant v6
 
 ```console
-$ docker pull bash@sha256:8aaf80d3220279424d86b87699bc9313f65b49ca3b8f3f558c7351ff337dad2b
+$ docker pull bash@sha256:e70d9c52860cc246e9d7af05d617864047d01fe2cbcdda00ad6fc8e6f1bd24c1
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5439206 bytes)**  
+-	Total Size: **5.4 MB (5430153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1fd2aa69f354163b6e38be5210fb71a2f6d97a2a726d4e5d6a93df6b75993f36`
+-	Image ID: `sha256:1242deae1c0edc0d76e31cad5f84bb5c5c838021246f4b7259cacdf40e66e7f7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Thu, 23 Apr 2020 15:51:24 GMT
-ADD file:cc0770cddff6b50d5e31f39886420eb8a0b4af55664d6f7599207c9aeaf6a501 in / 
-# Thu, 23 Apr 2020 15:51:25 GMT
+# Fri, 29 May 2020 21:50:55 GMT
+ADD file:f46e997a56849423db17e5fc9f0249ab6c73b155245927dba5fcb9dfd65f622f in / 
+# Fri, 29 May 2020 21:50:56 GMT
 CMD ["/bin/sh"]
-# Wed, 27 May 2020 18:49:32 GMT
-ENV _BASH_COMMIT=ce1a3c07c4e17ed176edccd75892dfcf8242de60
-# Wed, 27 May 2020 18:49:32 GMT
-ENV _BASH_COMMIT_DESC=commit bash-20200520 snapshot
-# Wed, 27 May 2020 18:50:42 GMT
+# Sat, 30 May 2020 00:49:32 GMT
+ENV _BASH_COMMIT=37adc8b99d4c15dcb9e6582aa19a2ef61afb592f
+# Sat, 30 May 2020 00:49:32 GMT
+ENV _BASH_COMMIT_DESC=commit bash-20200527 snapshot
+# Sat, 30 May 2020 00:50:36 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		bison 		coreutils 		dpkg-dev dpkg 		gcc 		libc-dev 		make 		ncurses-dev 		tar 	; 		wget -O bash.tar.gz "https://git.savannah.gnu.org/cgit/bash.git/snapshot/bash-$_BASH_COMMIT.tar.gz"; 		mkdir -p /usr/src/bash; 	tar 		--extract 		--file=bash.tar.gz 		--strip-components=1 		--directory=/usr/src/bash 	; 	rm bash.tar.gz; 		if [ -d bash-patches ]; then 		for p in bash-patches/*; do 			patch 				--directory=/usr/src/bash 				--input="$(readlink -f "$p")" 				--strip=0 			; 			rm "$p"; 		done; 		rmdir bash-patches; 	fi; 		cd /usr/src/bash; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-readline 		--with-curses 		--without-bash-malloc 	|| { 		cat >&2 config.log; 		false; 	}; 	make -j "$(nproc)"; 	make install; 	cd /; 	rm -r /usr/src/bash; 		rm -r 		/usr/local/share/doc/bash/*.html 		/usr/local/share/info 		/usr/local/share/man 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .bash-rundeps $runDeps; 	apk del .build-deps; 		[ "$(which bash)" = '/usr/local/bin/bash' ]; 	bash --version
-# Wed, 27 May 2020 18:50:43 GMT
+# Sat, 30 May 2020 00:50:39 GMT
 COPY file:651b3bebeba8be9162c56b3eb561199905235f3e1c7811232b6c9f48ac333651 in /usr/local/bin/ 
-# Wed, 27 May 2020 18:50:44 GMT
+# Sat, 30 May 2020 00:50:42 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 27 May 2020 18:50:45 GMT
+# Sat, 30 May 2020 00:50:43 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:b9e3228833e92f0688e0f87234e75965e62e47cfbb9ca8cc5fa19c2e7cd13f80`  
-		Last Modified: Thu, 23 Apr 2020 15:52:05 GMT  
-		Size: 2.6 MB (2619936 bytes)  
+	-	`sha256:b4b72e716706d29f5d2351709c20bf737b94f876a5472a43ff1b6e203c65d27f`  
+		Last Modified: Fri, 29 May 2020 21:51:30 GMT  
+		Size: 2.6 MB (2603286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:819055096e65845a4aa299b2bc82fe0760ab2f9a7ea42e01ade81d7bc534393d`  
-		Last Modified: Wed, 27 May 2020 18:51:58 GMT  
-		Size: 2.8 MB (2818926 bytes)  
+	-	`sha256:55643b4dbf1c64852a5ca4f6a62d007eec5b829b49898c222dabc57847ab77bc`  
+		Last Modified: Sat, 30 May 2020 01:06:41 GMT  
+		Size: 2.8 MB (2826524 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4986d08634130ad435b8f09f6fcd6db43b2129f29815b85d16cb223ad585b9df`  
-		Last Modified: Wed, 27 May 2020 18:51:57 GMT  
-		Size: 344.0 B  
+	-	`sha256:9f731a71742a10fb0db1468809f8de3591fa817d4a4c3bf12e49f60b50768cb7`  
+		Last Modified: Sat, 30 May 2020 01:06:40 GMT  
+		Size: 343.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `bash:devel` - linux; arm variant v7
 
 ```console
-$ docker pull bash@sha256:2e15b851b9f3c19094ca8cd8db127558aae043adb6fc54329109c947857872fe
+$ docker pull bash@sha256:b41857cb4f65d1a46157efb01c795723d9704e7b71266c1aa8eefe9933a6dea2
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5186026 bytes)**  
+-	Total Size: **5.2 MB (5177836 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f0c16c8b4bd7391905a02f94d31019da943a2f41c2ca5c052571c1534990bd6a`
+-	Image ID: `sha256:29c54117b82ceb5058da0d0e92374dc5d44e73d01f8c878f6e41c67c230f40f0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Thu, 23 Apr 2020 22:04:19 GMT
-ADD file:33578d3cacfab86c195d99396dd012ec511796a1d2d8d6f0a02b8a055673c294 in / 
-# Thu, 23 Apr 2020 22:04:22 GMT
+# Fri, 29 May 2020 21:02:07 GMT
+ADD file:e97bf0d217846312b19a9f7264604851aedd125c23b4d291eed4c69b880dce26 in / 
+# Fri, 29 May 2020 21:02:08 GMT
 CMD ["/bin/sh"]
-# Wed, 27 May 2020 18:57:36 GMT
-ENV _BASH_COMMIT=ce1a3c07c4e17ed176edccd75892dfcf8242de60
-# Wed, 27 May 2020 18:57:39 GMT
-ENV _BASH_COMMIT_DESC=commit bash-20200520 snapshot
-# Wed, 27 May 2020 18:59:13 GMT
+# Sat, 30 May 2020 00:57:33 GMT
+ENV _BASH_COMMIT=37adc8b99d4c15dcb9e6582aa19a2ef61afb592f
+# Sat, 30 May 2020 00:57:34 GMT
+ENV _BASH_COMMIT_DESC=commit bash-20200527 snapshot
+# Sat, 30 May 2020 00:58:33 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		bison 		coreutils 		dpkg-dev dpkg 		gcc 		libc-dev 		make 		ncurses-dev 		tar 	; 		wget -O bash.tar.gz "https://git.savannah.gnu.org/cgit/bash.git/snapshot/bash-$_BASH_COMMIT.tar.gz"; 		mkdir -p /usr/src/bash; 	tar 		--extract 		--file=bash.tar.gz 		--strip-components=1 		--directory=/usr/src/bash 	; 	rm bash.tar.gz; 		if [ -d bash-patches ]; then 		for p in bash-patches/*; do 			patch 				--directory=/usr/src/bash 				--input="$(readlink -f "$p")" 				--strip=0 			; 			rm "$p"; 		done; 		rmdir bash-patches; 	fi; 		cd /usr/src/bash; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-readline 		--with-curses 		--without-bash-malloc 	|| { 		cat >&2 config.log; 		false; 	}; 	make -j "$(nproc)"; 	make install; 	cd /; 	rm -r /usr/src/bash; 		rm -r 		/usr/local/share/doc/bash/*.html 		/usr/local/share/info 		/usr/local/share/man 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .bash-rundeps $runDeps; 	apk del .build-deps; 		[ "$(which bash)" = '/usr/local/bin/bash' ]; 	bash --version
-# Wed, 27 May 2020 18:59:15 GMT
+# Sat, 30 May 2020 00:58:34 GMT
 COPY file:651b3bebeba8be9162c56b3eb561199905235f3e1c7811232b6c9f48ac333651 in /usr/local/bin/ 
-# Wed, 27 May 2020 18:59:16 GMT
+# Sat, 30 May 2020 00:58:34 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 27 May 2020 18:59:17 GMT
+# Sat, 30 May 2020 00:58:35 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:3cfb62949d9d8613854db4d5fe502a9219c2b55a153043500078a64e880ae234`  
-		Last Modified: Thu, 23 Apr 2020 22:05:12 GMT  
-		Size: 2.4 MB (2422063 bytes)  
+	-	`sha256:52278dd8e57993669c5b72a9620e89bebdc098f2af2379caaa8945f7403f77a2`  
+		Last Modified: Fri, 29 May 2020 21:02:38 GMT  
+		Size: 2.4 MB (2406763 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:803908c9f15ca51c450e3c0e8784cf550898a6a3e25c1336936fbab5722bcd9d`  
-		Last Modified: Wed, 27 May 2020 19:00:59 GMT  
-		Size: 2.8 MB (2763619 bytes)  
+	-	`sha256:07a9b07b6b895613a83ff46a443699d9eba96ac8f6068cc892931368c46a5ae5`  
+		Last Modified: Sat, 30 May 2020 01:13:37 GMT  
+		Size: 2.8 MB (2770733 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e890b61f17b31e2e809d60ddea230d6ea6f6f6da80e1da14074cff83e9fb2b8`  
-		Last Modified: Wed, 27 May 2020 19:00:59 GMT  
-		Size: 344.0 B  
+	-	`sha256:b4196e0ec14d542ec52e64c8aacb510a6c906f33ba8832c24e9a2cbb4df70c76`  
+		Last Modified: Sat, 30 May 2020 01:13:36 GMT  
+		Size: 340.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `bash:devel` - linux; arm64 variant v8
 
 ```console
-$ docker pull bash@sha256:8b5fbb71f644a5c28243c8992a8b3d6a3da541421c5fdd63013820df324e9d12
+$ docker pull bash@sha256:b9edbc0cfce08e801d7138af41abad9c39fd88ff9f6b9736d6fce450bdf40346
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.7 MB (5656491 bytes)**  
+-	Total Size: **5.6 MB (5646569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:85fdd05ded41d1bf094e92a5c29238db8902a152b6a2e10a58f3b8f69bd682a9`
+-	Image ID: `sha256:277e1ca9646577a3e35498fce224b307543f039035e6e212515a5748f01779b9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 24 Apr 2020 00:14:18 GMT
-ADD file:85ae77bc1e43353ff14e6fe1658be1ed4ecbf4330212ac3d7ab7462add32dd39 in / 
-# Fri, 24 Apr 2020 00:14:21 GMT
+# Fri, 29 May 2020 21:43:19 GMT
+ADD file:7574aee4e37a85460ab889212d52912723a9b30dda1c060548f0deb4a05fc398 in / 
+# Fri, 29 May 2020 21:43:20 GMT
 CMD ["/bin/sh"]
-# Wed, 27 May 2020 18:39:34 GMT
-ENV _BASH_COMMIT=ce1a3c07c4e17ed176edccd75892dfcf8242de60
-# Wed, 27 May 2020 18:39:35 GMT
-ENV _BASH_COMMIT_DESC=commit bash-20200520 snapshot
-# Wed, 27 May 2020 18:40:30 GMT
+# Sat, 30 May 2020 00:39:42 GMT
+ENV _BASH_COMMIT=37adc8b99d4c15dcb9e6582aa19a2ef61afb592f
+# Sat, 30 May 2020 00:39:43 GMT
+ENV _BASH_COMMIT_DESC=commit bash-20200527 snapshot
+# Sat, 30 May 2020 00:40:40 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		bison 		coreutils 		dpkg-dev dpkg 		gcc 		libc-dev 		make 		ncurses-dev 		tar 	; 		wget -O bash.tar.gz "https://git.savannah.gnu.org/cgit/bash.git/snapshot/bash-$_BASH_COMMIT.tar.gz"; 		mkdir -p /usr/src/bash; 	tar 		--extract 		--file=bash.tar.gz 		--strip-components=1 		--directory=/usr/src/bash 	; 	rm bash.tar.gz; 		if [ -d bash-patches ]; then 		for p in bash-patches/*; do 			patch 				--directory=/usr/src/bash 				--input="$(readlink -f "$p")" 				--strip=0 			; 			rm "$p"; 		done; 		rmdir bash-patches; 	fi; 		cd /usr/src/bash; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-readline 		--with-curses 		--without-bash-malloc 	|| { 		cat >&2 config.log; 		false; 	}; 	make -j "$(nproc)"; 	make install; 	cd /; 	rm -r /usr/src/bash; 		rm -r 		/usr/local/share/doc/bash/*.html 		/usr/local/share/info 		/usr/local/share/man 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .bash-rundeps $runDeps; 	apk del .build-deps; 		[ "$(which bash)" = '/usr/local/bin/bash' ]; 	bash --version
-# Wed, 27 May 2020 18:40:31 GMT
+# Sat, 30 May 2020 00:40:41 GMT
 COPY file:651b3bebeba8be9162c56b3eb561199905235f3e1c7811232b6c9f48ac333651 in /usr/local/bin/ 
-# Wed, 27 May 2020 18:40:31 GMT
+# Sat, 30 May 2020 00:40:42 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 27 May 2020 18:40:32 GMT
+# Sat, 30 May 2020 00:40:43 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:29e5d40040c18c692ed73df24511071725b74956ca1a61fe6056a651d86a13bd`  
-		Last Modified: Fri, 24 Apr 2020 00:15:41 GMT  
-		Size: 2.7 MB (2724424 bytes)  
+	-	`sha256:b538f80385f9b48122e3da068c932a96ea5018afa3c7be79da00437414bd18cd`  
+		Last Modified: Fri, 29 May 2020 21:43:57 GMT  
+		Size: 2.7 MB (2707964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa7ac8555497c23c0127f5a0f4c9e53820921d63d918bfb55c023bea17e3d9c8`  
-		Last Modified: Wed, 27 May 2020 18:41:37 GMT  
-		Size: 2.9 MB (2931724 bytes)  
+	-	`sha256:99389cce2b8624eafa1f89945d2647ea570a1a74e16c5c2d4f71956b17430a14`  
+		Last Modified: Sat, 30 May 2020 00:54:49 GMT  
+		Size: 2.9 MB (2938261 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b097acda2ca4b47ba32f797427e75431cae8d67f8371b880ff09a96d5dc46f3`  
-		Last Modified: Wed, 27 May 2020 18:41:36 GMT  
-		Size: 343.0 B  
+	-	`sha256:8ce091437e6f071efda80d81b56814d654407f56eabe1b9243f07467f807dfa4`  
+		Last Modified: Sat, 30 May 2020 00:54:48 GMT  
+		Size: 344.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `bash:devel` - linux; 386
 
 ```console
-$ docker pull bash@sha256:3ceb1ed98e46a149e303bcd37edc2658a9ff9b50dc001ff4cf99fdbcfffe78ff
+$ docker pull bash@sha256:31646cd11d79ba2b4a967c11ed2389e3b51760e96b7fb50a8d3fded8e82fd2a2
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.7 MB (5681013 bytes)**  
+-	Total Size: **5.7 MB (5670365 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ffb44a2dedfb14237e8abda6c0e19f9d90303239118fb92a71ab2ddfc9cfff5b`
+-	Image ID: `sha256:8bd38fa570dd6b2ccd3a679b6524948636781536a9cfec5d9e2b84f18fa5ba8c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Thu, 23 Apr 2020 21:16:04 GMT
-ADD file:63bd8a316cba8c404cc2e32a5120406c24aee8db3224c469a6077b941d900863 in / 
-# Thu, 23 Apr 2020 21:16:04 GMT
+# Fri, 29 May 2020 21:38:33 GMT
+ADD file:5624441d97aca5eeb82a582941efc3586397098b8391227a9040ebe434cc1d6b in / 
+# Fri, 29 May 2020 21:38:33 GMT
 CMD ["/bin/sh"]
-# Wed, 27 May 2020 18:38:29 GMT
-ENV _BASH_COMMIT=ce1a3c07c4e17ed176edccd75892dfcf8242de60
-# Wed, 27 May 2020 18:38:29 GMT
-ENV _BASH_COMMIT_DESC=commit bash-20200520 snapshot
-# Wed, 27 May 2020 18:39:39 GMT
+# Sat, 30 May 2020 00:38:23 GMT
+ENV _BASH_COMMIT=37adc8b99d4c15dcb9e6582aa19a2ef61afb592f
+# Sat, 30 May 2020 00:38:23 GMT
+ENV _BASH_COMMIT_DESC=commit bash-20200527 snapshot
+# Sat, 30 May 2020 00:39:25 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		bison 		coreutils 		dpkg-dev dpkg 		gcc 		libc-dev 		make 		ncurses-dev 		tar 	; 		wget -O bash.tar.gz "https://git.savannah.gnu.org/cgit/bash.git/snapshot/bash-$_BASH_COMMIT.tar.gz"; 		mkdir -p /usr/src/bash; 	tar 		--extract 		--file=bash.tar.gz 		--strip-components=1 		--directory=/usr/src/bash 	; 	rm bash.tar.gz; 		if [ -d bash-patches ]; then 		for p in bash-patches/*; do 			patch 				--directory=/usr/src/bash 				--input="$(readlink -f "$p")" 				--strip=0 			; 			rm "$p"; 		done; 		rmdir bash-patches; 	fi; 		cd /usr/src/bash; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-readline 		--with-curses 		--without-bash-malloc 	|| { 		cat >&2 config.log; 		false; 	}; 	make -j "$(nproc)"; 	make install; 	cd /; 	rm -r /usr/src/bash; 		rm -r 		/usr/local/share/doc/bash/*.html 		/usr/local/share/info 		/usr/local/share/man 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .bash-rundeps $runDeps; 	apk del .build-deps; 		[ "$(which bash)" = '/usr/local/bin/bash' ]; 	bash --version
-# Wed, 27 May 2020 18:39:39 GMT
+# Sat, 30 May 2020 00:39:25 GMT
 COPY file:651b3bebeba8be9162c56b3eb561199905235f3e1c7811232b6c9f48ac333651 in /usr/local/bin/ 
-# Wed, 27 May 2020 18:39:39 GMT
+# Sat, 30 May 2020 00:39:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 27 May 2020 18:39:40 GMT
+# Sat, 30 May 2020 00:39:26 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:2826c1e79865da7e0da0a993a2a38db61c3911e05b5df617439a86d4deac90fb`  
-		Last Modified: Thu, 23 Apr 2020 21:16:32 GMT  
-		Size: 2.8 MB (2808418 bytes)  
+	-	`sha256:0625b4155e2a59f647ece47c0cd77ed3196b1f84454fa64ce80cad90e2b9b79e`  
+		Last Modified: Fri, 29 May 2020 21:38:53 GMT  
+		Size: 2.8 MB (2792298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14b4ff6d20c24b21ff458fc8fad770ad83c2eeb1caeabbe1a9044abfba326f85`  
-		Last Modified: Wed, 27 May 2020 18:40:27 GMT  
-		Size: 2.9 MB (2872254 bytes)  
+	-	`sha256:e54c4154a77e532ea375529824e8425d55f9654c2a85f6ae0961f25f2de85d0c`  
+		Last Modified: Sat, 30 May 2020 00:51:49 GMT  
+		Size: 2.9 MB (2877726 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:33b54bac94a46bcdb45c635d9e34c5bf0bfd26d0369f3bca6aa9c766da26b040`  
-		Last Modified: Wed, 27 May 2020 18:40:25 GMT  
+	-	`sha256:f9f48f34627581ca115e863c2e213640c7d4d680ba4bf4468b7c91f8ffd84107`  
+		Last Modified: Sat, 30 May 2020 00:51:49 GMT  
 		Size: 341.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `bash:devel` - linux; ppc64le
 
 ```console
-$ docker pull bash@sha256:643369832980096ae475b917d8c6ad62bb1b1eb08174bdc998bc3469be1438ca
+$ docker pull bash@sha256:e015d5f6dba6ec3d85b75e22ed6d4abe26a8b708f2ea7414166f1e8f78a5bcc0
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 MB (5998915 bytes)**  
+-	Total Size: **6.0 MB (5988184 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:18528f0a50a634b29f9f19beb3abc051214a614765aba84cb8c34f464af2789a`
+-	Image ID: `sha256:de250cc4745216aeb978b1f4630182f3cd6d51f57ad9678b7ed7bb16c0c841c5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Thu, 23 Apr 2020 20:39:04 GMT
-ADD file:1aaebe252dfb1885e066fcbc84aaa915bae149c3608f19600855ad1d4f7450c1 in / 
-# Thu, 23 Apr 2020 20:39:06 GMT
+# Fri, 29 May 2020 21:23:03 GMT
+ADD file:8194808a812370fd2202d80d1667f851bd9eac4c560d69d347fe1964f54343de in / 
+# Fri, 29 May 2020 21:23:06 GMT
 CMD ["/bin/sh"]
-# Wed, 27 May 2020 18:16:57 GMT
-ENV _BASH_COMMIT=ce1a3c07c4e17ed176edccd75892dfcf8242de60
-# Wed, 27 May 2020 18:17:01 GMT
-ENV _BASH_COMMIT_DESC=commit bash-20200520 snapshot
-# Wed, 27 May 2020 18:18:05 GMT
+# Sat, 30 May 2020 01:14:19 GMT
+ENV _BASH_COMMIT=37adc8b99d4c15dcb9e6582aa19a2ef61afb592f
+# Sat, 30 May 2020 01:14:24 GMT
+ENV _BASH_COMMIT_DESC=commit bash-20200527 snapshot
+# Sat, 30 May 2020 01:15:27 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		bison 		coreutils 		dpkg-dev dpkg 		gcc 		libc-dev 		make 		ncurses-dev 		tar 	; 		wget -O bash.tar.gz "https://git.savannah.gnu.org/cgit/bash.git/snapshot/bash-$_BASH_COMMIT.tar.gz"; 		mkdir -p /usr/src/bash; 	tar 		--extract 		--file=bash.tar.gz 		--strip-components=1 		--directory=/usr/src/bash 	; 	rm bash.tar.gz; 		if [ -d bash-patches ]; then 		for p in bash-patches/*; do 			patch 				--directory=/usr/src/bash 				--input="$(readlink -f "$p")" 				--strip=0 			; 			rm "$p"; 		done; 		rmdir bash-patches; 	fi; 		cd /usr/src/bash; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-readline 		--with-curses 		--without-bash-malloc 	|| { 		cat >&2 config.log; 		false; 	}; 	make -j "$(nproc)"; 	make install; 	cd /; 	rm -r /usr/src/bash; 		rm -r 		/usr/local/share/doc/bash/*.html 		/usr/local/share/info 		/usr/local/share/man 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .bash-rundeps $runDeps; 	apk del .build-deps; 		[ "$(which bash)" = '/usr/local/bin/bash' ]; 	bash --version
-# Wed, 27 May 2020 18:18:06 GMT
+# Sat, 30 May 2020 01:15:29 GMT
 COPY file:651b3bebeba8be9162c56b3eb561199905235f3e1c7811232b6c9f48ac333651 in /usr/local/bin/ 
-# Wed, 27 May 2020 18:18:09 GMT
+# Sat, 30 May 2020 01:15:30 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 27 May 2020 18:18:14 GMT
+# Sat, 30 May 2020 01:15:34 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:9a8fdc5b698322331ee7eba7dd6f66f3a4e956554db22dd1e834d519415b4f8e`  
-		Last Modified: Thu, 23 Apr 2020 20:41:33 GMT  
-		Size: 2.8 MB (2821843 bytes)  
+	-	`sha256:5077f8601dceb5744d875d7740ebc203f674b108a0188f3a31e292b21a4bee64`  
+		Last Modified: Fri, 29 May 2020 21:23:37 GMT  
+		Size: 2.8 MB (2805199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b40ac39fa2462a33837fd82f306d55fc3fa2eb72e2ca1eddccdaa91b6b13eba9`  
-		Last Modified: Wed, 27 May 2020 18:19:09 GMT  
-		Size: 3.2 MB (3176730 bytes)  
+	-	`sha256:985dd55918d55389fa632020186f016097dcbe04f0f7c19dd141816cb0ff77b7`  
+		Last Modified: Sat, 30 May 2020 01:32:43 GMT  
+		Size: 3.2 MB (3182642 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18bdb96be173ca54b3b67af69d875d10d73459e7670b4b979b096a30ae454c7a`  
-		Last Modified: Wed, 27 May 2020 18:19:08 GMT  
-		Size: 342.0 B  
+	-	`sha256:a760788687625f2425552ec56f3c455e006f06fe68c22a955001451aff56dec4`  
+		Last Modified: Sat, 30 May 2020 01:32:42 GMT  
+		Size: 343.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `bash:devel` - linux; s390x
 
 ```console
-$ docker pull bash@sha256:80e7877f676628c88e1448ee17fd89a0a6c2f91566ed70f7d6a8183fb1a6b2d7
+$ docker pull bash@sha256:2f1ab28fbde4589fcf8eece0f840b84132ac15797c9dc50cd99e5d59b1b0c24d
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5506584 bytes)**  
+-	Total Size: **5.5 MB (5493140 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf69261ca65514188f13d0ea765702bf0b5da4ea817980ac82a6876df3d9bd94`
+-	Image ID: `sha256:1a6d5dcedf88c4e5ec65ba1a3043eb6a4c692c048447ba4becee203f52577260`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Thu, 23 Apr 2020 17:50:57 GMT
-ADD file:a59a30c2fd43c9f3b820751a6f5a54688c14440a1ddace1ab255475f46e6ba2d in / 
-# Thu, 23 Apr 2020 17:50:58 GMT
+# Fri, 29 May 2020 21:41:39 GMT
+ADD file:9799ce3b2f782a28e10b1846cd9b3db827fa99c9bc601feb268456195856814e in / 
+# Fri, 29 May 2020 21:41:39 GMT
 CMD ["/bin/sh"]
-# Wed, 27 May 2020 18:41:27 GMT
-ENV _BASH_COMMIT=ce1a3c07c4e17ed176edccd75892dfcf8242de60
-# Wed, 27 May 2020 18:41:28 GMT
-ENV _BASH_COMMIT_DESC=commit bash-20200520 snapshot
-# Wed, 27 May 2020 18:42:10 GMT
+# Sat, 30 May 2020 00:41:24 GMT
+ENV _BASH_COMMIT=37adc8b99d4c15dcb9e6582aa19a2ef61afb592f
+# Sat, 30 May 2020 00:41:25 GMT
+ENV _BASH_COMMIT_DESC=commit bash-20200527 snapshot
+# Sat, 30 May 2020 00:41:52 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		bison 		coreutils 		dpkg-dev dpkg 		gcc 		libc-dev 		make 		ncurses-dev 		tar 	; 		wget -O bash.tar.gz "https://git.savannah.gnu.org/cgit/bash.git/snapshot/bash-$_BASH_COMMIT.tar.gz"; 		mkdir -p /usr/src/bash; 	tar 		--extract 		--file=bash.tar.gz 		--strip-components=1 		--directory=/usr/src/bash 	; 	rm bash.tar.gz; 		if [ -d bash-patches ]; then 		for p in bash-patches/*; do 			patch 				--directory=/usr/src/bash 				--input="$(readlink -f "$p")" 				--strip=0 			; 			rm "$p"; 		done; 		rmdir bash-patches; 	fi; 		cd /usr/src/bash; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-readline 		--with-curses 		--without-bash-malloc 	|| { 		cat >&2 config.log; 		false; 	}; 	make -j "$(nproc)"; 	make install; 	cd /; 	rm -r /usr/src/bash; 		rm -r 		/usr/local/share/doc/bash/*.html 		/usr/local/share/info 		/usr/local/share/man 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .bash-rundeps $runDeps; 	apk del .build-deps; 		[ "$(which bash)" = '/usr/local/bin/bash' ]; 	bash --version
-# Wed, 27 May 2020 18:42:11 GMT
+# Sat, 30 May 2020 00:41:52 GMT
 COPY file:651b3bebeba8be9162c56b3eb561199905235f3e1c7811232b6c9f48ac333651 in /usr/local/bin/ 
-# Wed, 27 May 2020 18:42:11 GMT
+# Sat, 30 May 2020 00:41:52 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 27 May 2020 18:42:11 GMT
+# Sat, 30 May 2020 00:41:53 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:7184c046fdf17da4c16ca482e5ede36e1f2d41ac8cea9c036e488fd149d6e8e7`  
-		Last Modified: Thu, 23 Apr 2020 17:51:38 GMT  
-		Size: 2.6 MB (2582859 bytes)  
+	-	`sha256:8fb3d41b2e9a59630b51745f257cd2561f96bcd15cf309fcc20120d5fcee8c5b`  
+		Last Modified: Fri, 29 May 2020 21:42:03 GMT  
+		Size: 2.6 MB (2566189 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7855597d563154b7f4d335eeec433948ec050620bde94642893b09fc44dec7b`  
-		Last Modified: Wed, 27 May 2020 18:43:07 GMT  
-		Size: 2.9 MB (2923381 bytes)  
+	-	`sha256:20def7e3e9e452440903393db8d94c5e3f4c256923f7d3d3a9f9ef82dadf2b59`  
+		Last Modified: Sat, 30 May 2020 00:50:14 GMT  
+		Size: 2.9 MB (2926611 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5cd5b7c151c578217959891c23261b84475e0c70af8df3da73f2a110eb7e2de4`  
-		Last Modified: Wed, 27 May 2020 18:43:11 GMT  
-		Size: 344.0 B  
+	-	`sha256:73589a3035b0b24709dc13ef3f0bfb5d312cdb3d74c3f60f93ef17c5bc28a008`  
+		Last Modified: Sat, 30 May 2020 00:50:13 GMT  
+		Size: 340.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
