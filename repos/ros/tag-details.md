@@ -12,6 +12,11 @@
 -	[`ros:eloquent-ros-base-bionic`](#roseloquent-ros-base-bionic)
 -	[`ros:eloquent-ros-core`](#roseloquent-ros-core)
 -	[`ros:eloquent-ros-core-bionic`](#roseloquent-ros-core-bionic)
+-	[`ros:foxy`](#rosfoxy)
+-	[`ros:foxy-ros-base`](#rosfoxy-ros-base)
+-	[`ros:foxy-ros-base-focal`](#rosfoxy-ros-base-focal)
+-	[`ros:foxy-ros-core`](#rosfoxy-ros-core)
+-	[`ros:foxy-ros-core-focal`](#rosfoxy-ros-core-focal)
 -	[`ros:kinetic`](#roskinetic)
 -	[`ros:kinetic-perception`](#roskinetic-perception)
 -	[`ros:kinetic-perception-xenial`](#roskinetic-perception-xenial)
@@ -3330,6 +3335,26 @@ CMD ["bash"]
 		Last Modified: Wed, 27 May 2020 01:37:37 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ros:foxy`
+
+**does not exist** (yet?)
+
+## `ros:foxy-ros-base`
+
+**does not exist** (yet?)
+
+## `ros:foxy-ros-base-focal`
+
+**does not exist** (yet?)
+
+## `ros:foxy-ros-core`
+
+**does not exist** (yet?)
+
+## `ros:foxy-ros-core-focal`
+
+**does not exist** (yet?)
 
 ## `ros:kinetic`
 
