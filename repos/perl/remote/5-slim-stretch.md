@@ -1,7 +1,7 @@
 ## `perl:5-slim-stretch`
 
 ```console
-$ docker pull perl@sha256:53bb4ba197347fe92111a954c747630029b034675d871186dd4e14c487dade5a
+$ docker pull perl@sha256:98493f75be3d750137f672f33bbaa697845a8435d9ffbdf3a1cd090a4c897424
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,15 +16,15 @@ $ docker pull perl@sha256:53bb4ba197347fe92111a954c747630029b034675d871186dd4e14
 ### `perl:5-slim-stretch` - linux; amd64
 
 ```console
-$ docker pull perl@sha256:45831cab3e4638bb58ba737ac86bd1fa32cd63af8ba63c33259feef4d4e40bcc
+$ docker pull perl@sha256:5183c1c5065ba6f0b2d80146ae24bc6a1432a0a02c12a0135d3467d1819cff9f
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **36.9 MB (36856422 bytes)**  
+-	Total Size: **36.9 MB (36859863 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:940ebef014dca2fbacda904f7e6a896363b034e31e6a9bf9e53de6ed7ec1f0c7`
--	Default Command: `["perl5.30.2","-de0"]`
+-	Image ID: `sha256:249610907675f75f50e6b895652e5e74ed10f9e07c71af00892f932f26b984f1`
+-	Default Command: `["perl5.30.3","-de0"]`
 
 ```dockerfile
 # Fri, 15 May 2020 06:33:44 GMT
@@ -37,12 +37,12 @@ LABEL maintainer=Peter Martini <PeterCMartini@GMail.com>, Zak B. Elep <zakame@cp
 COPY file:15650064fd29deac721f0aa084ddb3d41db77b78e2907775e257bd67e116ade4 in /usr/src/perl/ 
 # Fri, 15 May 2020 21:49:27 GMT
 WORKDIR /usr/src/perl
-# Fri, 15 May 2020 22:01:44 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends        bzip2        ca-certificates        curl        dpkg-dev        gcc        libc6-dev        make        netbase        patch        xz-utils     && curl -SL https://www.cpan.org/src/5.0/perl-5.30.2.tar.xz -o perl-5.30.2.tar.xz     && echo 'a1aa88bd6fbbdc2e82938afbb76c408b0ea847317737b712dc196cc7907a5259 *perl-5.30.2.tar.xz' | sha256sum -c -     && tar --strip-components=1 -xaf perl-5.30.2.tar.xz -C /usr/src/perl     && rm perl-5.30.2.tar.xz     && cat *.patch | patch -p1     && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"     && archBits="$(dpkg-architecture --query DEB_BUILD_ARCH_BITS)"     && archFlag="$([ "$archBits" = '64' ] && echo '-Duse64bitall' || echo '-Duse64bitint')"     && ./Configure -Darchname="$gnuArch" "$archFlag" -Duseshrplib -Dvendorprefix=/usr/local  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://www.cpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.7044.tar.gz     && echo '9b60767fe40752ef7a9d3f13f19060a63389a5c23acc3e9827e19b75500f81f3 *App-cpanminus-1.7044.tar.gz' | sha256sum -c -     && tar -xzf App-cpanminus-1.7044.tar.gz && cd App-cpanminus-1.7044 && perl bin/cpanm . && cd /root     && savedPackages="make netbase"     && apt-mark auto '.*' > /dev/null     && apt-mark manual $savedPackages     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && rm -fr /var/cache/apt/* /var/lib/apt/lists/*     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /usr/src/App-cpanminus-1.7044* /tmp/*
-# Fri, 15 May 2020 22:01:44 GMT
+# Fri, 05 Jun 2020 21:15:54 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends        bzip2        ca-certificates        curl        dpkg-dev        gcc        libc6-dev        make        netbase        patch        xz-utils     && curl -SL https://www.cpan.org/src/5.0/perl-5.30.3.tar.xz -o perl-5.30.3.tar.xz     && echo '6967595f2e3f3a94544c35152f9a25e0cb8ea24ae45f4bf1882f2e33f4a400f4 *perl-5.30.3.tar.xz' | sha256sum -c -     && tar --strip-components=1 -xaf perl-5.30.3.tar.xz -C /usr/src/perl     && rm perl-5.30.3.tar.xz     && cat *.patch | patch -p1     && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"     && archBits="$(dpkg-architecture --query DEB_BUILD_ARCH_BITS)"     && archFlag="$([ "$archBits" = '64' ] && echo '-Duse64bitall' || echo '-Duse64bitint')"     && ./Configure -Darchname="$gnuArch" "$archFlag" -Duseshrplib -Dvendorprefix=/usr/local  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://www.cpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.7044.tar.gz     && echo '9b60767fe40752ef7a9d3f13f19060a63389a5c23acc3e9827e19b75500f81f3 *App-cpanminus-1.7044.tar.gz' | sha256sum -c -     && tar -xzf App-cpanminus-1.7044.tar.gz && cd App-cpanminus-1.7044 && perl bin/cpanm . && cd /root     && savedPackages="make netbase"     && apt-mark auto '.*' > /dev/null     && apt-mark manual $savedPackages     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && rm -fr /var/cache/apt/* /var/lib/apt/lists/*     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /usr/src/App-cpanminus-1.7044* /tmp/*
+# Fri, 05 Jun 2020 21:15:55 GMT
 WORKDIR /
-# Fri, 15 May 2020 22:01:45 GMT
-CMD ["perl5.30.2" "-de0"]
+# Fri, 05 Jun 2020 21:15:55 GMT
+CMD ["perl5.30.3" "-de0"]
 ```
 
 -	Layers:
@@ -54,9 +54,9 @@ CMD ["perl5.30.2" "-de0"]
 		Last Modified: Sat, 16 May 2020 01:56:24 GMT  
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7063d09a7fc47aa83ce261f349eefb190682d0e950ff9c3d5a4b9c0eaf7e9e48`  
-		Last Modified: Sat, 16 May 2020 01:56:29 GMT  
-		Size: 14.3 MB (14336122 bytes)  
+	-	`sha256:9d932c52aa44cc6941b5e170cbb369e66f77ff05128bec3081e865bd9e809fe0`  
+		Last Modified: Sat, 06 Jun 2020 01:10:43 GMT  
+		Size: 14.3 MB (14339563 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `perl:5-slim-stretch` - linux; arm variant v7
