@@ -1,7 +1,7 @@
 ## `r-base:latest`
 
 ```console
-$ docker pull r-base@sha256:e7a2e5e9d7c62e6a5d34824c767a03f2787b447ae06e8a7f5f96264068bc788a
+$ docker pull r-base@sha256:56d20a04e8d162b68f93cb5b1a252ddfaff25da2d4ee730dcf07a8bf1e59f060
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull r-base@sha256:e7a2e5e9d7c62e6a5d34824c767a03f2787b447ae06e8a7f5f96
 ### `r-base:latest` - linux; amd64
 
 ```console
-$ docker pull r-base@sha256:ef11624b74507cf573c3382a5f5940674d3e86d14f67f3f2981fdf3d7750def7
+$ docker pull r-base@sha256:fa178dc85c3eb4a4871a7daad3c4e89c602997c550b47baa98fa1d26a14988c4
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **300.8 MB (300826872 bytes)**  
+-	Total Size: **303.2 MB (303161724 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:502b38518c3c0d5a64763e4e9406ad236c1b85e5402f8c9e3c2c4c7e7cef8bb1`
+-	Image ID: `sha256:0836c59d7d075653c7dc6666ada9f10e54ed39d1ae56cd8981fc5c6f4a858e62`
 -	Default Command: `["R"]`
 
 ```dockerfile
@@ -41,11 +41,11 @@ ENV LC_ALL=en_US.UTF-8
 ENV LANG=en_US.UTF-8
 # Sat, 16 May 2020 02:08:41 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default
-# Sat, 16 May 2020 02:08:42 GMT
-ENV R_BASE_VERSION=4.0.0
-# Tue, 19 May 2020 19:07:20 GMT
-RUN apt-get update 	&& apt-get install -t unstable -y --no-install-recommends 		littler                 r-cran-littler 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-* 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& install.r docopt 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 19 May 2020 19:07:21 GMT
+# Mon, 08 Jun 2020 18:20:33 GMT
+ENV R_BASE_VERSION=4.0.1
+# Mon, 08 Jun 2020 18:21:22 GMT
+RUN apt-get update 	&& apt-get install -t unstable -y --no-install-recommends                 gcc-9-base 		littler                 r-cran-littler 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-* 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& install.r docopt 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/*
+# Mon, 08 Jun 2020 18:21:23 GMT
 CMD ["R"]
 ```
 
@@ -70,22 +70,22 @@ CMD ["R"]
 		Last Modified: Sat, 16 May 2020 02:10:11 GMT  
 		Size: 294.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a66a6cf7e78fba23136a3a841f8d1abde1d2a48d698a8238234928957f4a0ee3`  
-		Last Modified: Tue, 19 May 2020 19:08:07 GMT  
-		Size: 221.2 MB (221232488 bytes)  
+	-	`sha256:25ddcb7376ee7d789c7d57394949832135a0dce4f52fb4fcc5a91788cd66d653`  
+		Last Modified: Mon, 08 Jun 2020 18:25:38 GMT  
+		Size: 223.6 MB (223567340 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `r-base:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull r-base@sha256:85261a68c7f8d9366c2fd59a1a885ac55f097d33ab49c05fa681433d3e697092
+$ docker pull r-base@sha256:c310a29df9f5ddb2f151652c44a102bb9da357c5c09d8b764ec340a20461bea5
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **290.5 MB (290480130 bytes)**  
+-	Total Size: **292.8 MB (292775801 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2f93e56f7f8852ccb6c40d8ce1b8eae204af95cefcdfbe01ebdc306041f26be3`
+-	Image ID: `sha256:ec044253d58d42bdab72fb17aaf4795be59f1836ce75e85b0df936fb0f2683e7`
 -	Default Command: `["R"]`
 
 ```dockerfile
@@ -107,11 +107,11 @@ ENV LC_ALL=en_US.UTF-8
 ENV LANG=en_US.UTF-8
 # Wed, 20 May 2020 23:32:22 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default
-# Wed, 20 May 2020 23:32:23 GMT
-ENV R_BASE_VERSION=4.0.0
-# Wed, 20 May 2020 23:34:50 GMT
-RUN apt-get update 	&& apt-get install -t unstable -y --no-install-recommends 		littler                 r-cran-littler 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-* 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& install.r docopt 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 20 May 2020 23:34:55 GMT
+# Mon, 08 Jun 2020 18:40:25 GMT
+ENV R_BASE_VERSION=4.0.1
+# Mon, 08 Jun 2020 18:42:37 GMT
+RUN apt-get update 	&& apt-get install -t unstable -y --no-install-recommends                 gcc-9-base 		littler                 r-cran-littler 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-* 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& install.r docopt 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/*
+# Mon, 08 Jun 2020 18:42:41 GMT
 CMD ["R"]
 ```
 
@@ -136,7 +136,7 @@ CMD ["R"]
 		Last Modified: Wed, 20 May 2020 23:35:07 GMT  
 		Size: 299.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:949d6760e310563f7dc0dff58055c522d97e6e8cd455f76350a3d6beb17c828e`  
-		Last Modified: Wed, 20 May 2020 23:35:59 GMT  
-		Size: 212.1 MB (212080133 bytes)  
+	-	`sha256:d653fed26620678cd87f6fd2fe34ba77c9ad42f1ba56f8b4ed4c93bfaf712c4a`  
+		Last Modified: Mon, 08 Jun 2020 18:43:47 GMT  
+		Size: 214.4 MB (214375804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
