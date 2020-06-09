@@ -1,7 +1,7 @@
 ## `r-base:latest`
 
 ```console
-$ docker pull r-base@sha256:51789a75c2cbaf6ad20e557c15be7f159dc1da97dca3cfb87dbdf4506cc6a56f
+$ docker pull r-base@sha256:ca7003c8c4a6b5642289616d30f9b3f66947ba7255631f20f2c76248a927ad96
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,67 +12,67 @@ $ docker pull r-base@sha256:51789a75c2cbaf6ad20e557c15be7f159dc1da97dca3cfb87dbd
 ### `r-base:latest` - linux; amd64
 
 ```console
-$ docker pull r-base@sha256:fa178dc85c3eb4a4871a7daad3c4e89c602997c550b47baa98fa1d26a14988c4
+$ docker pull r-base@sha256:122e45ba647762e7c8616c058f2a39fa44e7ea1b306d1d12c651df15fe01d5e6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **303.2 MB (303161724 bytes)**  
+-	Total Size: **296.7 MB (296728722 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0836c59d7d075653c7dc6666ada9f10e54ed39d1ae56cd8981fc5c6f4a858e62`
+-	Image ID: `sha256:5135ed9f0c8f25cb714ee85bcaa5f07d8eb92bc74f879ab8aa11a3ef4f018633`
 -	Default Command: `["R"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:34:02 GMT
-ADD file:c41a0865e07732f39eac6e95bce852221ac58f789ea781bbeff5b6416bc468f5 in / 
-# Fri, 15 May 2020 06:34:03 GMT
+# Tue, 09 Jun 2020 01:23:49 GMT
+ADD file:63ef8f38bb25d9c0e944d04e91b6d6c6eb32289709829d3bb80998e94ff2a506 in / 
+# Tue, 09 Jun 2020 01:23:49 GMT
 CMD ["bash"]
-# Sat, 16 May 2020 02:08:23 GMT
+# Tue, 09 Jun 2020 16:53:26 GMT
 LABEL org.label-schema.license=GPL-2.0 org.label-schema.vcs-url=https://github.com/rocker-org/r-base org.label-schema.vendor=Rocker Project maintainer=Dirk Eddelbuettel <edd@debian.org>
-# Sat, 16 May 2020 02:08:24 GMT
+# Tue, 09 Jun 2020 16:53:26 GMT
 RUN useradd docker 	&& mkdir /home/docker 	&& chown docker:docker /home/docker 	&& addgroup docker staff
-# Sat, 16 May 2020 02:08:37 GMT
+# Tue, 09 Jun 2020 16:53:36 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		ed 		less 		locales 		vim-tiny 		wget 		ca-certificates 		fonts-texgyre 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 16 May 2020 02:08:40 GMT
+# Tue, 09 Jun 2020 16:53:39 GMT
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen 	&& locale-gen en_US.utf8 	&& /usr/sbin/update-locale LANG=en_US.UTF-8
-# Sat, 16 May 2020 02:08:40 GMT
+# Tue, 09 Jun 2020 16:53:39 GMT
 ENV LC_ALL=en_US.UTF-8
-# Sat, 16 May 2020 02:08:40 GMT
+# Tue, 09 Jun 2020 16:53:40 GMT
 ENV LANG=en_US.UTF-8
-# Sat, 16 May 2020 02:08:41 GMT
+# Tue, 09 Jun 2020 16:53:40 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default
-# Mon, 08 Jun 2020 18:20:33 GMT
+# Tue, 09 Jun 2020 16:53:40 GMT
 ENV R_BASE_VERSION=4.0.1
-# Mon, 08 Jun 2020 18:21:22 GMT
+# Tue, 09 Jun 2020 16:54:28 GMT
 RUN apt-get update 	&& apt-get install -t unstable -y --no-install-recommends                 gcc-9-base 		littler                 r-cran-littler 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-* 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& install.r docopt 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 08 Jun 2020 18:21:23 GMT
+# Tue, 09 Jun 2020 16:54:29 GMT
 CMD ["R"]
 ```
 
 -	Layers:
-	-	`sha256:6ba462f539c181ddb608207b74df288fff28dc61404be8bafe0a5f2744c0c743`  
-		Last Modified: Fri, 15 May 2020 06:40:58 GMT  
-		Size: 51.4 MB (51391137 bytes)  
+	-	`sha256:0ab9185ddfe50c951de582032c5e29e21a851a328056e6bee6299e0ff55ec807`  
+		Last Modified: Tue, 09 Jun 2020 01:28:27 GMT  
+		Size: 51.4 MB (51413498 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f5c0df656397793dd5751eba6e530bbc06c24a3acddad167faa9500463e69a8`  
-		Last Modified: Sat, 16 May 2020 02:10:13 GMT  
-		Size: 1.8 KB (1844 bytes)  
+	-	`sha256:abe522cb8773f50b648207a771978f0815a06186e0161550134a9f1d0de90b7c`  
+		Last Modified: Tue, 09 Jun 2020 16:54:45 GMT  
+		Size: 1.8 KB (1843 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90624a13808b54c1952d7570f551011d554d5dcc8a23f747aefbe14c0836eb01`  
-		Last Modified: Sat, 16 May 2020 02:10:16 GMT  
-		Size: 27.3 MB (27337717 bytes)  
+	-	`sha256:27eab703bf1e186115f3189a1eea62e8e6aa53fa0db81fb1ca2bcf78b43078b6`  
+		Last Modified: Tue, 09 Jun 2020 16:54:50 GMT  
+		Size: 27.3 MB (27340715 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de46b85c477ac212b2b4a5ced5df4616a23c00f65c46d038f24f8eb57a905a36`  
-		Last Modified: Sat, 16 May 2020 02:10:12 GMT  
-		Size: 863.4 KB (863392 bytes)  
+	-	`sha256:aea3885c55a302cb44bfb5e9e1d1779665790f28bbcf6bcd796d97becd8df4e7`  
+		Last Modified: Tue, 09 Jun 2020 16:54:45 GMT  
+		Size: 863.4 KB (863390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19d6bab95ae5e8d07f11ff7ed748da87e592428bdde97056f0e9a35b1438e8d1`  
-		Last Modified: Sat, 16 May 2020 02:10:11 GMT  
-		Size: 294.0 B  
+	-	`sha256:617ce4a72943a95a48c077b1d62af317e3a71a25d277d4ace5cd6a1de6b33c81`  
+		Last Modified: Tue, 09 Jun 2020 16:54:45 GMT  
+		Size: 295.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25ddcb7376ee7d789c7d57394949832135a0dce4f52fb4fcc5a91788cd66d653`  
-		Last Modified: Mon, 08 Jun 2020 18:25:38 GMT  
-		Size: 223.6 MB (223567340 bytes)  
+	-	`sha256:99c8daaa4dfa3791324bada7af86db6b11b0bf04f49b0ea90ac99990bb0112c4`  
+		Last Modified: Tue, 09 Jun 2020 16:55:18 GMT  
+		Size: 217.1 MB (217108981 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `r-base:latest` - linux; arm64 variant v8
