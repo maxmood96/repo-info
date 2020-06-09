@@ -1,10 +1,10 @@
-# `matomo:3.13.5-fpm-alpine`
+# `matomo:3.13.6-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e7f51b4832044fa1efc497e1e99dc1a739c23b965e1069a24539e10b58525bd3`
-- Created: `2020-06-02T22:06:55.154485929Z`
-- Virtual Size: ~ 142.71 Mb  
+- Image ID: `sha256:b08d4b9e86f2eb8902d6328a15885f133b33d7e32227cdb9e531b5317b08df25`
+- Created: `2020-06-05T20:21:33.958564032Z`
+- Virtual Size: ~ 142.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.6.tar.xz.asc`
   - `PHP_SHA256=d740322f84f63019622b9f369d64ea5ab676547d2bdcf12be77a5a4cffd06832`
   - `PHP_MD5=`
-  - `MATOMO_VERSION=3.13.5`
+  - `MATOMO_VERSION=3.13.6`
 - Labels:
   - `maintainer=pierre@piwik.org`
 
