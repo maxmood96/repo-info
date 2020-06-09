@@ -1083,14 +1083,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `LGPL-2+`
 - `MPL-1.1-or-LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.40.0+dfsg-3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.40.0+dfsg-3.dsc' gdk-pixbuf_2.40.0+dfsg-3.dsc 2626 SHA256:1887476fc8c8df93fdaa4fb8a2c7ec5e16f50ea2bc8a8504df7fc0002db3deba
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.40.0+dfsg.orig.tar.xz' gdk-pixbuf_2.40.0+dfsg.orig.tar.xz 5626144 SHA256:bdb3820005dc3c02ec8b1e2916a1d060f65f44d30ba48ab88704c3380d5a47b8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.40.0+dfsg-3.debian.tar.xz' gdk-pixbuf_2.40.0+dfsg-3.debian.tar.xz 17296 SHA256:1e2759e423f8fbd071ecf88a24828628e5c4f03aa279f68eaef5e713312f3e34
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gdk-pixbuf/2.40.0+dfsg-3/
+
 
 ### `dpkg` source package: `git=1:2.25.1-1ubuntu3`
 
@@ -1140,14 +1139,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.64.2-1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.64.2-1.dsc' glib2.0_2.64.2-1.dsc 3243 SHA256:5029a24aba41b0322fffbecf4acf9a704cf223512b7f4771b9618bbb07b43572
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.64.2.orig.tar.xz' glib2.0_2.64.2.orig.tar.xz 4760436 SHA256:9a2f21ed8f13b9303399de13a0252b7cbcede593d26971378ec6cb90e87f2277
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.64.2-1.debian.tar.xz' glib2.0_2.64.2-1.debian.tar.xz 91816 SHA256:050e5763ca6f0bc7cf405738eff870b25b64bb75e4aac9aa5f2f2f3f9d4f43cb
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glib2.0/2.64.2-1/
+
 
 ### `dpkg` source package: `glibc=2.31-0ubuntu9`
 
@@ -3217,15 +3215,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:8.2p1-4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1-4.dsc' openssh_8.2p1-4.dsc 3342 SHA256:30f2c2742f9429ac684e0d848e710df5f9a0f3308394f1b3f93967fc1735fd7c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1.orig.tar.gz' openssh_8.2p1.orig.tar.gz 1701197 SHA256:43925151e6cf6cee1450190c0e9af4dc36b41c12737619edff8bcebdff64e671
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1.orig.tar.gz.asc' openssh_8.2p1.orig.tar.gz.asc 683 SHA256:4f358bb57cb5446a7a8bf986ff5cd835fd1e03f33561df883dfd3f893cd6fe86
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1-4.debian.tar.xz' openssh_8.2p1-4.debian.tar.xz 174172 SHA256:118dd16d95718e6a7fd399abc14f5141d6c9eba63d039a0cb1c2e411d27182e4
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/openssh/1:8.2p1-4/
+
 
 ### `dpkg` source package: `openssl=1.1.1f-1ubuntu2`
 
