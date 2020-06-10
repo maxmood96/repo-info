@@ -1648,7 +1648,7 @@ CMD ["solr-foreground"]
 ## `solr:7`
 
 ```console
-$ docker pull solr@sha256:8677395061ee646c6a890161fb03031d2af38e36bf512777b1a39de62b877aab
+$ docker pull solr@sha256:14716391bd9327ab075f0bfb2f90e4e64250c835d16167306554efb7ba3ec145
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1659,130 +1659,130 @@ $ docker pull solr@sha256:8677395061ee646c6a890161fb03031d2af38e36bf512777b1a39d
 ### `solr:7` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:3a59c162400bd2919d799d73323f8e4e7a7b35cb4fb8759dd0bc1150a81d9cbb
+$ docker pull solr@sha256:b58eaafdb993b89679da1d16fa4c7611be324907929c11386b2beb4c3d7e3b39
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **289.7 MB (289744594 bytes)**  
+-	Total Size: **289.7 MB (289742404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53c33b6c6a1018a6444b7a2e16d89c83d336ed6ef757a1d850a0b73829bfb1fd`
+-	Image ID: `sha256:d63048b7e3c2c88b6126e901fb5c626a610165dce3a1eaa0accc5b8f4b43596e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:12 GMT
-ADD file:fb54c709daa205bf9d04eb3d90ba068db4c34dfe3b6ec0d7691f677286120903 in / 
-# Fri, 15 May 2020 06:28:13 GMT
+# Tue, 09 Jun 2020 01:20:39 GMT
+ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
+# Tue, 09 Jun 2020 01:20:39 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 17:32:13 GMT
+# Tue, 09 Jun 2020 01:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 17:32:19 GMT
+# Tue, 09 Jun 2020 01:46:41 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:33 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:03:38 GMT
+# Tue, 09 Jun 2020 16:38:12 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:31:45 GMT
+# Wed, 10 Jun 2020 07:47:39 GMT
 ARG SOLR_VERSION=7.7.3
-# Mon, 08 Jun 2020 19:31:45 GMT
+# Wed, 10 Jun 2020 07:47:39 GMT
 ARG SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed
-# Mon, 08 Jun 2020 19:31:46 GMT
+# Wed, 10 Jun 2020 07:47:39 GMT
 ARG SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E
-# Mon, 08 Jun 2020 19:31:46 GMT
+# Wed, 10 Jun 2020 07:47:40 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:31:46 GMT
+# Wed, 10 Jun 2020 07:47:40 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:31:51 GMT
+# Wed, 10 Jun 2020 07:47:45 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:31:51 GMT
+# Wed, 10 Jun 2020 07:47:45 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/7.7.3/solr-7.7.3.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/7.7.3/solr-7.7.3.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/7.7.3/solr-7.7.3.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 08 Jun 2020 19:31:52 GMT
+# Wed, 10 Jun 2020 07:47:46 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:31:53 GMT
+# Wed, 10 Jun 2020 07:47:47 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:32:07 GMT
+# Wed, 10 Jun 2020 07:47:56 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   mv "/opt/solr-$SOLR_VERSION" /opt/solr;   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   mkdir -p /opt/solr/server/solr/mycores /opt/solr/server/logs /opt/mysolrhome;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   if [ -f "/opt/solr/contrib/prometheus-exporter/bin/solr-exporter" ]; then chmod 0755 "/opt/solr/contrib/prometheus-exporter/bin/solr-exporter"; fi;   chmod -R 0755 /opt/solr/server/scripts/cloud-scripts;   chown -R "$SOLR_USER:$SOLR_GROUP" /opt/solr /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:$SOLR_GROUP" /opt/mysolrhome;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:32:08 GMT
+# Wed, 10 Jun 2020 07:47:57 GMT
 COPY --chown=solr:solrdir:24d14aedda51f56007d2c3091bd65f0167210afaf1c88aa50fac48af9e1d6037 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:32:08 GMT
+# Wed, 10 Jun 2020 07:47:57 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:32:08 GMT
+# Wed, 10 Jun 2020 07:47:57 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:32:09 GMT
+# Wed, 10 Jun 2020 07:47:57 GMT
 USER solr
-# Mon, 08 Jun 2020 19:32:09 GMT
+# Wed, 10 Jun 2020 07:47:57 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:32:09 GMT
+# Wed, 10 Jun 2020 07:47:57 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:376057ac6fa17f65688c56977118e2e764b27c348b3f70637fa829cd2a12b200`  
-		Last Modified: Fri, 15 May 2020 06:37:20 GMT  
-		Size: 50.4 MB (50391294 bytes)  
+	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
+		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
+		Size: 50.4 MB (50389504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a63a0a859d859478f30461786a49c2fca3ae7d89ab5b5ce3c81c54951d30f88`  
-		Last Modified: Fri, 15 May 2020 17:50:44 GMT  
-		Size: 7.8 MB (7812354 bytes)  
+	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 7.8 MB (7811709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:496548a8c952b37bdf149ab3654f9085d721ee126b8c73b16860778be5137f5e`  
-		Last Modified: Fri, 15 May 2020 17:50:49 GMT  
-		Size: 10.0 MB (9996284 bytes)  
+	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 10.0 MB (9996168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94b2daf7a1b5f537cba1c514f668125cbe30051a963fceee666de62352eb49ca`  
-		Last Modified: Fri, 15 May 2020 21:10:23 GMT  
-		Size: 5.5 MB (5529320 bytes)  
+	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
+		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
+		Size: 5.5 MB (5529317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8058d73803f3a05ad139e4bb713b7d93fb29f671441f1be35e844bb94a47152a`  
-		Last Modified: Fri, 15 May 2020 21:10:22 GMT  
-		Size: 211.0 B  
+	-	`sha256:e440f69a0a762646d5aed47652c8a122f43b415f52b87a90eb14690e1426fd0f`  
+		Last Modified: Tue, 09 Jun 2020 16:45:02 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dc4c151e7bebd2e3066851d6bc5ed2cfa0a9299b7e89cea9181a8994fa09abc`  
-		Last Modified: Fri, 15 May 2020 21:10:31 GMT  
-		Size: 41.9 MB (41941113 bytes)  
+	-	`sha256:837b533a935df78a47a09e44fd06c8ec7af6624ef1eec0d69e8d7d208efe2434`  
+		Last Modified: Tue, 09 Jun 2020 16:45:14 GMT  
+		Size: 41.9 MB (41941557 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:052111439f0ac3955fc8c8d5989996a0f939fc0d181b4c087804029106ac5c23`  
-		Last Modified: Mon, 08 Jun 2020 20:00:57 GMT  
-		Size: 2.5 MB (2545737 bytes)  
+	-	`sha256:195c0f65de1f78e03d3113177172909bf27d1fd181f2840ab7a523820a0da5e1`  
+		Last Modified: Wed, 10 Jun 2020 07:57:30 GMT  
+		Size: 2.5 MB (2545711 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:987521ca409eecafeaf97d466747705852b43fd9af1abf3e3ba72c98a0026dd6`  
-		Last Modified: Mon, 08 Jun 2020 20:00:53 GMT  
-		Size: 4.3 KB (4289 bytes)  
+	-	`sha256:795d2776a6fb97ab73de9532dec94b24262c7e4408466d0e4d00b1d9793601ba`  
+		Last Modified: Wed, 10 Jun 2020 07:57:30 GMT  
+		Size: 4.3 KB (4286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b684d12cfbdffce03234302c5f0ff152fcff43578f0f5c83f1002d570b6caf9`  
-		Last Modified: Mon, 08 Jun 2020 20:00:52 GMT  
-		Size: 2.9 KB (2870 bytes)  
+	-	`sha256:06248c7cc496f8ccd3cc40f1045afebbc2f051177d013200c10d48cc252faef2`  
+		Last Modified: Wed, 10 Jun 2020 07:57:30 GMT  
+		Size: 2.9 KB (2881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca6a84753a4f9692e95b3678b152ad016a7eb662c2019d0615158de70d965991`  
-		Last Modified: Mon, 08 Jun 2020 20:01:21 GMT  
-		Size: 171.5 MB (171515066 bytes)  
+	-	`sha256:2367dc67f3956e77513b645d25656622259e43b180c4af6538cc4963d4073328`  
+		Last Modified: Wed, 10 Jun 2020 07:57:40 GMT  
+		Size: 171.5 MB (171515003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43730dfb498e8d78d2b551a0e5daa4b3d6c79d02894011f4c197b6156f4942f1`  
-		Last Modified: Mon, 08 Jun 2020 20:00:53 GMT  
-		Size: 6.1 KB (6056 bytes)  
+	-	`sha256:455a5965490867dcc30e4255c7b0bbdb0731060255d45a00b48cb177e299e893`  
+		Last Modified: Wed, 10 Jun 2020 07:57:30 GMT  
+		Size: 6.1 KB (6058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:7` - linux; arm64 variant v8
@@ -1917,7 +1917,7 @@ CMD ["solr-foreground"]
 ## `solr:7.7`
 
 ```console
-$ docker pull solr@sha256:8677395061ee646c6a890161fb03031d2af38e36bf512777b1a39de62b877aab
+$ docker pull solr@sha256:14716391bd9327ab075f0bfb2f90e4e64250c835d16167306554efb7ba3ec145
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1928,130 +1928,130 @@ $ docker pull solr@sha256:8677395061ee646c6a890161fb03031d2af38e36bf512777b1a39d
 ### `solr:7.7` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:3a59c162400bd2919d799d73323f8e4e7a7b35cb4fb8759dd0bc1150a81d9cbb
+$ docker pull solr@sha256:b58eaafdb993b89679da1d16fa4c7611be324907929c11386b2beb4c3d7e3b39
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **289.7 MB (289744594 bytes)**  
+-	Total Size: **289.7 MB (289742404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53c33b6c6a1018a6444b7a2e16d89c83d336ed6ef757a1d850a0b73829bfb1fd`
+-	Image ID: `sha256:d63048b7e3c2c88b6126e901fb5c626a610165dce3a1eaa0accc5b8f4b43596e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:12 GMT
-ADD file:fb54c709daa205bf9d04eb3d90ba068db4c34dfe3b6ec0d7691f677286120903 in / 
-# Fri, 15 May 2020 06:28:13 GMT
+# Tue, 09 Jun 2020 01:20:39 GMT
+ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
+# Tue, 09 Jun 2020 01:20:39 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 17:32:13 GMT
+# Tue, 09 Jun 2020 01:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 17:32:19 GMT
+# Tue, 09 Jun 2020 01:46:41 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:33 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:03:38 GMT
+# Tue, 09 Jun 2020 16:38:12 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:31:45 GMT
+# Wed, 10 Jun 2020 07:47:39 GMT
 ARG SOLR_VERSION=7.7.3
-# Mon, 08 Jun 2020 19:31:45 GMT
+# Wed, 10 Jun 2020 07:47:39 GMT
 ARG SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed
-# Mon, 08 Jun 2020 19:31:46 GMT
+# Wed, 10 Jun 2020 07:47:39 GMT
 ARG SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E
-# Mon, 08 Jun 2020 19:31:46 GMT
+# Wed, 10 Jun 2020 07:47:40 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:31:46 GMT
+# Wed, 10 Jun 2020 07:47:40 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:31:51 GMT
+# Wed, 10 Jun 2020 07:47:45 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:31:51 GMT
+# Wed, 10 Jun 2020 07:47:45 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/7.7.3/solr-7.7.3.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/7.7.3/solr-7.7.3.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/7.7.3/solr-7.7.3.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 08 Jun 2020 19:31:52 GMT
+# Wed, 10 Jun 2020 07:47:46 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:31:53 GMT
+# Wed, 10 Jun 2020 07:47:47 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:32:07 GMT
+# Wed, 10 Jun 2020 07:47:56 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   mv "/opt/solr-$SOLR_VERSION" /opt/solr;   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   mkdir -p /opt/solr/server/solr/mycores /opt/solr/server/logs /opt/mysolrhome;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   if [ -f "/opt/solr/contrib/prometheus-exporter/bin/solr-exporter" ]; then chmod 0755 "/opt/solr/contrib/prometheus-exporter/bin/solr-exporter"; fi;   chmod -R 0755 /opt/solr/server/scripts/cloud-scripts;   chown -R "$SOLR_USER:$SOLR_GROUP" /opt/solr /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:$SOLR_GROUP" /opt/mysolrhome;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:32:08 GMT
+# Wed, 10 Jun 2020 07:47:57 GMT
 COPY --chown=solr:solrdir:24d14aedda51f56007d2c3091bd65f0167210afaf1c88aa50fac48af9e1d6037 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:32:08 GMT
+# Wed, 10 Jun 2020 07:47:57 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:32:08 GMT
+# Wed, 10 Jun 2020 07:47:57 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:32:09 GMT
+# Wed, 10 Jun 2020 07:47:57 GMT
 USER solr
-# Mon, 08 Jun 2020 19:32:09 GMT
+# Wed, 10 Jun 2020 07:47:57 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:32:09 GMT
+# Wed, 10 Jun 2020 07:47:57 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:376057ac6fa17f65688c56977118e2e764b27c348b3f70637fa829cd2a12b200`  
-		Last Modified: Fri, 15 May 2020 06:37:20 GMT  
-		Size: 50.4 MB (50391294 bytes)  
+	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
+		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
+		Size: 50.4 MB (50389504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a63a0a859d859478f30461786a49c2fca3ae7d89ab5b5ce3c81c54951d30f88`  
-		Last Modified: Fri, 15 May 2020 17:50:44 GMT  
-		Size: 7.8 MB (7812354 bytes)  
+	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 7.8 MB (7811709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:496548a8c952b37bdf149ab3654f9085d721ee126b8c73b16860778be5137f5e`  
-		Last Modified: Fri, 15 May 2020 17:50:49 GMT  
-		Size: 10.0 MB (9996284 bytes)  
+	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 10.0 MB (9996168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94b2daf7a1b5f537cba1c514f668125cbe30051a963fceee666de62352eb49ca`  
-		Last Modified: Fri, 15 May 2020 21:10:23 GMT  
-		Size: 5.5 MB (5529320 bytes)  
+	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
+		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
+		Size: 5.5 MB (5529317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8058d73803f3a05ad139e4bb713b7d93fb29f671441f1be35e844bb94a47152a`  
-		Last Modified: Fri, 15 May 2020 21:10:22 GMT  
-		Size: 211.0 B  
+	-	`sha256:e440f69a0a762646d5aed47652c8a122f43b415f52b87a90eb14690e1426fd0f`  
+		Last Modified: Tue, 09 Jun 2020 16:45:02 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dc4c151e7bebd2e3066851d6bc5ed2cfa0a9299b7e89cea9181a8994fa09abc`  
-		Last Modified: Fri, 15 May 2020 21:10:31 GMT  
-		Size: 41.9 MB (41941113 bytes)  
+	-	`sha256:837b533a935df78a47a09e44fd06c8ec7af6624ef1eec0d69e8d7d208efe2434`  
+		Last Modified: Tue, 09 Jun 2020 16:45:14 GMT  
+		Size: 41.9 MB (41941557 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:052111439f0ac3955fc8c8d5989996a0f939fc0d181b4c087804029106ac5c23`  
-		Last Modified: Mon, 08 Jun 2020 20:00:57 GMT  
-		Size: 2.5 MB (2545737 bytes)  
+	-	`sha256:195c0f65de1f78e03d3113177172909bf27d1fd181f2840ab7a523820a0da5e1`  
+		Last Modified: Wed, 10 Jun 2020 07:57:30 GMT  
+		Size: 2.5 MB (2545711 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:987521ca409eecafeaf97d466747705852b43fd9af1abf3e3ba72c98a0026dd6`  
-		Last Modified: Mon, 08 Jun 2020 20:00:53 GMT  
-		Size: 4.3 KB (4289 bytes)  
+	-	`sha256:795d2776a6fb97ab73de9532dec94b24262c7e4408466d0e4d00b1d9793601ba`  
+		Last Modified: Wed, 10 Jun 2020 07:57:30 GMT  
+		Size: 4.3 KB (4286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b684d12cfbdffce03234302c5f0ff152fcff43578f0f5c83f1002d570b6caf9`  
-		Last Modified: Mon, 08 Jun 2020 20:00:52 GMT  
-		Size: 2.9 KB (2870 bytes)  
+	-	`sha256:06248c7cc496f8ccd3cc40f1045afebbc2f051177d013200c10d48cc252faef2`  
+		Last Modified: Wed, 10 Jun 2020 07:57:30 GMT  
+		Size: 2.9 KB (2881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca6a84753a4f9692e95b3678b152ad016a7eb662c2019d0615158de70d965991`  
-		Last Modified: Mon, 08 Jun 2020 20:01:21 GMT  
-		Size: 171.5 MB (171515066 bytes)  
+	-	`sha256:2367dc67f3956e77513b645d25656622259e43b180c4af6538cc4963d4073328`  
+		Last Modified: Wed, 10 Jun 2020 07:57:40 GMT  
+		Size: 171.5 MB (171515003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43730dfb498e8d78d2b551a0e5daa4b3d6c79d02894011f4c197b6156f4942f1`  
-		Last Modified: Mon, 08 Jun 2020 20:00:53 GMT  
-		Size: 6.1 KB (6056 bytes)  
+	-	`sha256:455a5965490867dcc30e4255c7b0bbdb0731060255d45a00b48cb177e299e893`  
+		Last Modified: Wed, 10 Jun 2020 07:57:30 GMT  
+		Size: 6.1 KB (6058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:7.7` - linux; arm64 variant v8
@@ -2186,7 +2186,7 @@ CMD ["solr-foreground"]
 ## `solr:7.7.3`
 
 ```console
-$ docker pull solr@sha256:8677395061ee646c6a890161fb03031d2af38e36bf512777b1a39de62b877aab
+$ docker pull solr@sha256:14716391bd9327ab075f0bfb2f90e4e64250c835d16167306554efb7ba3ec145
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2197,130 +2197,130 @@ $ docker pull solr@sha256:8677395061ee646c6a890161fb03031d2af38e36bf512777b1a39d
 ### `solr:7.7.3` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:3a59c162400bd2919d799d73323f8e4e7a7b35cb4fb8759dd0bc1150a81d9cbb
+$ docker pull solr@sha256:b58eaafdb993b89679da1d16fa4c7611be324907929c11386b2beb4c3d7e3b39
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **289.7 MB (289744594 bytes)**  
+-	Total Size: **289.7 MB (289742404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53c33b6c6a1018a6444b7a2e16d89c83d336ed6ef757a1d850a0b73829bfb1fd`
+-	Image ID: `sha256:d63048b7e3c2c88b6126e901fb5c626a610165dce3a1eaa0accc5b8f4b43596e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:12 GMT
-ADD file:fb54c709daa205bf9d04eb3d90ba068db4c34dfe3b6ec0d7691f677286120903 in / 
-# Fri, 15 May 2020 06:28:13 GMT
+# Tue, 09 Jun 2020 01:20:39 GMT
+ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
+# Tue, 09 Jun 2020 01:20:39 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 17:32:13 GMT
+# Tue, 09 Jun 2020 01:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 17:32:19 GMT
+# Tue, 09 Jun 2020 01:46:41 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:33 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:03:38 GMT
+# Tue, 09 Jun 2020 16:38:12 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:31:45 GMT
+# Wed, 10 Jun 2020 07:47:39 GMT
 ARG SOLR_VERSION=7.7.3
-# Mon, 08 Jun 2020 19:31:45 GMT
+# Wed, 10 Jun 2020 07:47:39 GMT
 ARG SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed
-# Mon, 08 Jun 2020 19:31:46 GMT
+# Wed, 10 Jun 2020 07:47:39 GMT
 ARG SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E
-# Mon, 08 Jun 2020 19:31:46 GMT
+# Wed, 10 Jun 2020 07:47:40 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:31:46 GMT
+# Wed, 10 Jun 2020 07:47:40 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:31:51 GMT
+# Wed, 10 Jun 2020 07:47:45 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:31:51 GMT
+# Wed, 10 Jun 2020 07:47:45 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/7.7.3/solr-7.7.3.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/7.7.3/solr-7.7.3.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/7.7.3/solr-7.7.3.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 08 Jun 2020 19:31:52 GMT
+# Wed, 10 Jun 2020 07:47:46 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:31:53 GMT
+# Wed, 10 Jun 2020 07:47:47 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:32:07 GMT
+# Wed, 10 Jun 2020 07:47:56 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   mv "/opt/solr-$SOLR_VERSION" /opt/solr;   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   mkdir -p /opt/solr/server/solr/mycores /opt/solr/server/logs /opt/mysolrhome;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   if [ -f "/opt/solr/contrib/prometheus-exporter/bin/solr-exporter" ]; then chmod 0755 "/opt/solr/contrib/prometheus-exporter/bin/solr-exporter"; fi;   chmod -R 0755 /opt/solr/server/scripts/cloud-scripts;   chown -R "$SOLR_USER:$SOLR_GROUP" /opt/solr /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:$SOLR_GROUP" /opt/mysolrhome;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:32:08 GMT
+# Wed, 10 Jun 2020 07:47:57 GMT
 COPY --chown=solr:solrdir:24d14aedda51f56007d2c3091bd65f0167210afaf1c88aa50fac48af9e1d6037 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:32:08 GMT
+# Wed, 10 Jun 2020 07:47:57 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:32:08 GMT
+# Wed, 10 Jun 2020 07:47:57 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:32:09 GMT
+# Wed, 10 Jun 2020 07:47:57 GMT
 USER solr
-# Mon, 08 Jun 2020 19:32:09 GMT
+# Wed, 10 Jun 2020 07:47:57 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:32:09 GMT
+# Wed, 10 Jun 2020 07:47:57 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:376057ac6fa17f65688c56977118e2e764b27c348b3f70637fa829cd2a12b200`  
-		Last Modified: Fri, 15 May 2020 06:37:20 GMT  
-		Size: 50.4 MB (50391294 bytes)  
+	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
+		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
+		Size: 50.4 MB (50389504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a63a0a859d859478f30461786a49c2fca3ae7d89ab5b5ce3c81c54951d30f88`  
-		Last Modified: Fri, 15 May 2020 17:50:44 GMT  
-		Size: 7.8 MB (7812354 bytes)  
+	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 7.8 MB (7811709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:496548a8c952b37bdf149ab3654f9085d721ee126b8c73b16860778be5137f5e`  
-		Last Modified: Fri, 15 May 2020 17:50:49 GMT  
-		Size: 10.0 MB (9996284 bytes)  
+	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 10.0 MB (9996168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94b2daf7a1b5f537cba1c514f668125cbe30051a963fceee666de62352eb49ca`  
-		Last Modified: Fri, 15 May 2020 21:10:23 GMT  
-		Size: 5.5 MB (5529320 bytes)  
+	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
+		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
+		Size: 5.5 MB (5529317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8058d73803f3a05ad139e4bb713b7d93fb29f671441f1be35e844bb94a47152a`  
-		Last Modified: Fri, 15 May 2020 21:10:22 GMT  
-		Size: 211.0 B  
+	-	`sha256:e440f69a0a762646d5aed47652c8a122f43b415f52b87a90eb14690e1426fd0f`  
+		Last Modified: Tue, 09 Jun 2020 16:45:02 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dc4c151e7bebd2e3066851d6bc5ed2cfa0a9299b7e89cea9181a8994fa09abc`  
-		Last Modified: Fri, 15 May 2020 21:10:31 GMT  
-		Size: 41.9 MB (41941113 bytes)  
+	-	`sha256:837b533a935df78a47a09e44fd06c8ec7af6624ef1eec0d69e8d7d208efe2434`  
+		Last Modified: Tue, 09 Jun 2020 16:45:14 GMT  
+		Size: 41.9 MB (41941557 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:052111439f0ac3955fc8c8d5989996a0f939fc0d181b4c087804029106ac5c23`  
-		Last Modified: Mon, 08 Jun 2020 20:00:57 GMT  
-		Size: 2.5 MB (2545737 bytes)  
+	-	`sha256:195c0f65de1f78e03d3113177172909bf27d1fd181f2840ab7a523820a0da5e1`  
+		Last Modified: Wed, 10 Jun 2020 07:57:30 GMT  
+		Size: 2.5 MB (2545711 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:987521ca409eecafeaf97d466747705852b43fd9af1abf3e3ba72c98a0026dd6`  
-		Last Modified: Mon, 08 Jun 2020 20:00:53 GMT  
-		Size: 4.3 KB (4289 bytes)  
+	-	`sha256:795d2776a6fb97ab73de9532dec94b24262c7e4408466d0e4d00b1d9793601ba`  
+		Last Modified: Wed, 10 Jun 2020 07:57:30 GMT  
+		Size: 4.3 KB (4286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b684d12cfbdffce03234302c5f0ff152fcff43578f0f5c83f1002d570b6caf9`  
-		Last Modified: Mon, 08 Jun 2020 20:00:52 GMT  
-		Size: 2.9 KB (2870 bytes)  
+	-	`sha256:06248c7cc496f8ccd3cc40f1045afebbc2f051177d013200c10d48cc252faef2`  
+		Last Modified: Wed, 10 Jun 2020 07:57:30 GMT  
+		Size: 2.9 KB (2881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca6a84753a4f9692e95b3678b152ad016a7eb662c2019d0615158de70d965991`  
-		Last Modified: Mon, 08 Jun 2020 20:01:21 GMT  
-		Size: 171.5 MB (171515066 bytes)  
+	-	`sha256:2367dc67f3956e77513b645d25656622259e43b180c4af6538cc4963d4073328`  
+		Last Modified: Wed, 10 Jun 2020 07:57:40 GMT  
+		Size: 171.5 MB (171515003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43730dfb498e8d78d2b551a0e5daa4b3d6c79d02894011f4c197b6156f4942f1`  
-		Last Modified: Mon, 08 Jun 2020 20:00:53 GMT  
-		Size: 6.1 KB (6056 bytes)  
+	-	`sha256:455a5965490867dcc30e4255c7b0bbdb0731060255d45a00b48cb177e299e893`  
+		Last Modified: Wed, 10 Jun 2020 07:57:30 GMT  
+		Size: 6.1 KB (6058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:7.7.3` - linux; arm64 variant v8
@@ -2455,7 +2455,7 @@ CMD ["solr-foreground"]
 ## `solr:7.7.3-slim`
 
 ```console
-$ docker pull solr@sha256:efb53992b9960724c06ccd87c825b39bdea8548fbf595697c5a9b96b9adfdc1b
+$ docker pull solr@sha256:b868a5f9eb61c15a0d0484a81cc2a1d2958d37ffef02a6df7d5c3324c5119e75
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2466,118 +2466,118 @@ $ docker pull solr@sha256:efb53992b9960724c06ccd87c825b39bdea8548fbf595697c5a9b9
 ### `solr:7.7.3-slim` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:fce2550293512f0bbb59d91ee6ddc035ef63d7f2048984703fc302c30aa36102
+$ docker pull solr@sha256:4528893c518334799a4e8dbac9ecfe010def6fffdd2ec26bd5ec780fd1d69659
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **250.5 MB (250544533 bytes)**  
+-	Total Size: **250.5 MB (250544849 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:781988f7dea60d1f4e6411a2100f9ee35d3e8bb6ee266a754d26425a12057725`
+-	Image ID: `sha256:e9324bdddafe62a1b21f84c9cb66b0d76b2a81115af71c7c4872243215d5e0ff`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:44 GMT
-ADD file:7780c81c33e6cc5b6261af4a6c611cce0f39dec3131009bb297e65f12020c150 in / 
-# Fri, 15 May 2020 06:28:44 GMT
+# Tue, 09 Jun 2020 01:20:56 GMT
+ADD file:4d35f6c8bbbe6801cc5f44989730fb6d349a644ecb36eca481e7df25842d6321 in / 
+# Tue, 09 Jun 2020 01:20:56 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:37 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:02:50 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:02:51 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:04:03 GMT
+# Tue, 09 Jun 2020 16:38:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:32:14 GMT
+# Wed, 10 Jun 2020 07:48:04 GMT
 ARG SOLR_VERSION=7.7.3
-# Mon, 08 Jun 2020 19:32:14 GMT
+# Wed, 10 Jun 2020 07:48:05 GMT
 ARG SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed
-# Mon, 08 Jun 2020 19:32:15 GMT
+# Wed, 10 Jun 2020 07:48:05 GMT
 ARG SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E
-# Mon, 08 Jun 2020 19:32:15 GMT
+# Wed, 10 Jun 2020 07:48:05 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:32:15 GMT
+# Wed, 10 Jun 2020 07:48:05 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:32:22 GMT
+# Wed, 10 Jun 2020 07:48:12 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:32:22 GMT
+# Wed, 10 Jun 2020 07:48:13 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/7.7.3/solr-7.7.3.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/7.7.3/solr-7.7.3.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/7.7.3/solr-7.7.3.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 08 Jun 2020 19:32:23 GMT
+# Wed, 10 Jun 2020 07:48:13 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:32:24 GMT
+# Wed, 10 Jun 2020 07:48:14 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:32:38 GMT
+# Wed, 10 Jun 2020 07:48:54 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   mv "/opt/solr-$SOLR_VERSION" /opt/solr;   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   mkdir -p /opt/solr/server/solr/mycores /opt/solr/server/logs /opt/mysolrhome;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   if [ -f "/opt/solr/contrib/prometheus-exporter/bin/solr-exporter" ]; then chmod 0755 "/opt/solr/contrib/prometheus-exporter/bin/solr-exporter"; fi;   chmod -R 0755 /opt/solr/server/scripts/cloud-scripts;   chown -R "$SOLR_USER:$SOLR_GROUP" /opt/solr /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:$SOLR_GROUP" /opt/mysolrhome;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:32:39 GMT
+# Wed, 10 Jun 2020 07:48:55 GMT
 COPY --chown=solr:solrdir:24d14aedda51f56007d2c3091bd65f0167210afaf1c88aa50fac48af9e1d6037 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:32:40 GMT
+# Wed, 10 Jun 2020 07:48:55 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:32:40 GMT
+# Wed, 10 Jun 2020 07:48:55 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:32:40 GMT
+# Wed, 10 Jun 2020 07:48:55 GMT
 USER solr
-# Mon, 08 Jun 2020 19:32:40 GMT
+# Wed, 10 Jun 2020 07:48:55 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:32:40 GMT
+# Wed, 10 Jun 2020 07:48:55 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:afb6ec6fdc1c3ba04f7a56db32c5ff5ff38962dc4cd0ffdef5beaa0ce2eb77e2`  
-		Last Modified: Fri, 15 May 2020 06:37:39 GMT  
-		Size: 27.1 MB (27098756 bytes)  
+	-	`sha256:8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df`  
+		Last Modified: Tue, 09 Jun 2020 01:25:50 GMT  
+		Size: 27.1 MB (27098265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee19e84e8bd1140527176689c9c1a75f28c0462c0c714e549536452708cbfb64`  
-		Last Modified: Fri, 15 May 2020 21:07:16 GMT  
-		Size: 3.2 MB (3249166 bytes)  
+	-	`sha256:65306eca6b8ea03d29cd8d10a31e9d7a6a1cf8766fe4ca3913e75e00fc47be79`  
+		Last Modified: Tue, 09 Jun 2020 16:41:33 GMT  
+		Size: 3.2 MB (3248452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ac787417531d48ce82f6180741b078086d62631806d5b1ca0d2763fd63b3826`  
-		Last Modified: Fri, 15 May 2020 21:09:46 GMT  
-		Size: 211.0 B  
+	-	`sha256:ddbf88050b6e7cbe8b76b77196134f31015ef5cb69123ba6af35da6f5b101459`  
+		Last Modified: Tue, 09 Jun 2020 16:44:15 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3f781d4d83e8b462ca228cb269f0d69cfac7973216d1937b288373a01e01e58`  
-		Last Modified: Fri, 15 May 2020 21:10:46 GMT  
-		Size: 42.2 MB (42214711 bytes)  
+	-	`sha256:0cb03c61bf260965ae2dc495175ab87e56951ad9ee8dc26f028c430e770f77fe`  
+		Last Modified: Tue, 09 Jun 2020 16:45:32 GMT  
+		Size: 42.2 MB (42216357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2e82a1376a99ff4fe58ca6f680bd4540c9dc35a849a641ee964c434c0dd6b1f`  
-		Last Modified: Mon, 08 Jun 2020 20:01:30 GMT  
-		Size: 6.5 MB (6453337 bytes)  
+	-	`sha256:2dba54e554120856a5e6201177513a9b4580ceb2d2111eeaac6c96532dc059a8`  
+		Last Modified: Wed, 10 Jun 2020 07:57:49 GMT  
+		Size: 6.5 MB (6453263 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:adbc9b813d62b2b4aa16c0426d15871d842191082ef9776cc5e7fa3e7fc93b7d`  
-		Last Modified: Mon, 08 Jun 2020 20:01:28 GMT  
-		Size: 4.3 KB (4290 bytes)  
+	-	`sha256:ec9a60dd873c0405aa29f477700dd178027282b64157396686588c9a4e318e01`  
+		Last Modified: Wed, 10 Jun 2020 07:57:47 GMT  
+		Size: 4.3 KB (4285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7565ce688a295c2a21a5d546cf779c268daf26755e94b74debb6622059eb6512`  
-		Last Modified: Mon, 08 Jun 2020 20:01:28 GMT  
-		Size: 2.9 KB (2871 bytes)  
+	-	`sha256:ecabd861e8e836c266778ab8a9c66a44d8a931fff2fbcf40cebe5667d7b70066`  
+		Last Modified: Wed, 10 Jun 2020 07:57:47 GMT  
+		Size: 2.9 KB (2870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee25f570930a1d65d3cad087a8015397411a5782853a8ea15649a2877b41eaab`  
-		Last Modified: Mon, 08 Jun 2020 20:03:47 GMT  
-		Size: 171.5 MB (171515132 bytes)  
+	-	`sha256:dcd774f8d5c36335400943745e07cc47a264cba7e920c06f17a48878d32435af`  
+		Last Modified: Wed, 10 Jun 2020 07:57:57 GMT  
+		Size: 171.5 MB (171515089 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:802c3c6c55a5f02cf6184ba0d8afb826df957e77f5c8e788a92b83da4ebf35d2`  
-		Last Modified: Mon, 08 Jun 2020 20:01:28 GMT  
-		Size: 6.1 KB (6059 bytes)  
+	-	`sha256:a1a6fb09b2e8abca7e4efc478df70d8f30b9625f78ab62649289686798e8928f`  
+		Last Modified: Wed, 10 Jun 2020 07:57:47 GMT  
+		Size: 6.1 KB (6058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:7.7.3-slim` - linux; arm64 variant v8
@@ -2700,7 +2700,7 @@ CMD ["solr-foreground"]
 ## `solr:7.7-slim`
 
 ```console
-$ docker pull solr@sha256:efb53992b9960724c06ccd87c825b39bdea8548fbf595697c5a9b96b9adfdc1b
+$ docker pull solr@sha256:b868a5f9eb61c15a0d0484a81cc2a1d2958d37ffef02a6df7d5c3324c5119e75
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2711,118 +2711,118 @@ $ docker pull solr@sha256:efb53992b9960724c06ccd87c825b39bdea8548fbf595697c5a9b9
 ### `solr:7.7-slim` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:fce2550293512f0bbb59d91ee6ddc035ef63d7f2048984703fc302c30aa36102
+$ docker pull solr@sha256:4528893c518334799a4e8dbac9ecfe010def6fffdd2ec26bd5ec780fd1d69659
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **250.5 MB (250544533 bytes)**  
+-	Total Size: **250.5 MB (250544849 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:781988f7dea60d1f4e6411a2100f9ee35d3e8bb6ee266a754d26425a12057725`
+-	Image ID: `sha256:e9324bdddafe62a1b21f84c9cb66b0d76b2a81115af71c7c4872243215d5e0ff`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:44 GMT
-ADD file:7780c81c33e6cc5b6261af4a6c611cce0f39dec3131009bb297e65f12020c150 in / 
-# Fri, 15 May 2020 06:28:44 GMT
+# Tue, 09 Jun 2020 01:20:56 GMT
+ADD file:4d35f6c8bbbe6801cc5f44989730fb6d349a644ecb36eca481e7df25842d6321 in / 
+# Tue, 09 Jun 2020 01:20:56 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:37 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:02:50 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:02:51 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:04:03 GMT
+# Tue, 09 Jun 2020 16:38:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:32:14 GMT
+# Wed, 10 Jun 2020 07:48:04 GMT
 ARG SOLR_VERSION=7.7.3
-# Mon, 08 Jun 2020 19:32:14 GMT
+# Wed, 10 Jun 2020 07:48:05 GMT
 ARG SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed
-# Mon, 08 Jun 2020 19:32:15 GMT
+# Wed, 10 Jun 2020 07:48:05 GMT
 ARG SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E
-# Mon, 08 Jun 2020 19:32:15 GMT
+# Wed, 10 Jun 2020 07:48:05 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:32:15 GMT
+# Wed, 10 Jun 2020 07:48:05 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:32:22 GMT
+# Wed, 10 Jun 2020 07:48:12 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:32:22 GMT
+# Wed, 10 Jun 2020 07:48:13 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/7.7.3/solr-7.7.3.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/7.7.3/solr-7.7.3.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/7.7.3/solr-7.7.3.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 08 Jun 2020 19:32:23 GMT
+# Wed, 10 Jun 2020 07:48:13 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:32:24 GMT
+# Wed, 10 Jun 2020 07:48:14 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:32:38 GMT
+# Wed, 10 Jun 2020 07:48:54 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   mv "/opt/solr-$SOLR_VERSION" /opt/solr;   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   mkdir -p /opt/solr/server/solr/mycores /opt/solr/server/logs /opt/mysolrhome;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   if [ -f "/opt/solr/contrib/prometheus-exporter/bin/solr-exporter" ]; then chmod 0755 "/opt/solr/contrib/prometheus-exporter/bin/solr-exporter"; fi;   chmod -R 0755 /opt/solr/server/scripts/cloud-scripts;   chown -R "$SOLR_USER:$SOLR_GROUP" /opt/solr /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:$SOLR_GROUP" /opt/mysolrhome;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:32:39 GMT
+# Wed, 10 Jun 2020 07:48:55 GMT
 COPY --chown=solr:solrdir:24d14aedda51f56007d2c3091bd65f0167210afaf1c88aa50fac48af9e1d6037 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:32:40 GMT
+# Wed, 10 Jun 2020 07:48:55 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:32:40 GMT
+# Wed, 10 Jun 2020 07:48:55 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:32:40 GMT
+# Wed, 10 Jun 2020 07:48:55 GMT
 USER solr
-# Mon, 08 Jun 2020 19:32:40 GMT
+# Wed, 10 Jun 2020 07:48:55 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:32:40 GMT
+# Wed, 10 Jun 2020 07:48:55 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:afb6ec6fdc1c3ba04f7a56db32c5ff5ff38962dc4cd0ffdef5beaa0ce2eb77e2`  
-		Last Modified: Fri, 15 May 2020 06:37:39 GMT  
-		Size: 27.1 MB (27098756 bytes)  
+	-	`sha256:8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df`  
+		Last Modified: Tue, 09 Jun 2020 01:25:50 GMT  
+		Size: 27.1 MB (27098265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee19e84e8bd1140527176689c9c1a75f28c0462c0c714e549536452708cbfb64`  
-		Last Modified: Fri, 15 May 2020 21:07:16 GMT  
-		Size: 3.2 MB (3249166 bytes)  
+	-	`sha256:65306eca6b8ea03d29cd8d10a31e9d7a6a1cf8766fe4ca3913e75e00fc47be79`  
+		Last Modified: Tue, 09 Jun 2020 16:41:33 GMT  
+		Size: 3.2 MB (3248452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ac787417531d48ce82f6180741b078086d62631806d5b1ca0d2763fd63b3826`  
-		Last Modified: Fri, 15 May 2020 21:09:46 GMT  
-		Size: 211.0 B  
+	-	`sha256:ddbf88050b6e7cbe8b76b77196134f31015ef5cb69123ba6af35da6f5b101459`  
+		Last Modified: Tue, 09 Jun 2020 16:44:15 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3f781d4d83e8b462ca228cb269f0d69cfac7973216d1937b288373a01e01e58`  
-		Last Modified: Fri, 15 May 2020 21:10:46 GMT  
-		Size: 42.2 MB (42214711 bytes)  
+	-	`sha256:0cb03c61bf260965ae2dc495175ab87e56951ad9ee8dc26f028c430e770f77fe`  
+		Last Modified: Tue, 09 Jun 2020 16:45:32 GMT  
+		Size: 42.2 MB (42216357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2e82a1376a99ff4fe58ca6f680bd4540c9dc35a849a641ee964c434c0dd6b1f`  
-		Last Modified: Mon, 08 Jun 2020 20:01:30 GMT  
-		Size: 6.5 MB (6453337 bytes)  
+	-	`sha256:2dba54e554120856a5e6201177513a9b4580ceb2d2111eeaac6c96532dc059a8`  
+		Last Modified: Wed, 10 Jun 2020 07:57:49 GMT  
+		Size: 6.5 MB (6453263 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:adbc9b813d62b2b4aa16c0426d15871d842191082ef9776cc5e7fa3e7fc93b7d`  
-		Last Modified: Mon, 08 Jun 2020 20:01:28 GMT  
-		Size: 4.3 KB (4290 bytes)  
+	-	`sha256:ec9a60dd873c0405aa29f477700dd178027282b64157396686588c9a4e318e01`  
+		Last Modified: Wed, 10 Jun 2020 07:57:47 GMT  
+		Size: 4.3 KB (4285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7565ce688a295c2a21a5d546cf779c268daf26755e94b74debb6622059eb6512`  
-		Last Modified: Mon, 08 Jun 2020 20:01:28 GMT  
-		Size: 2.9 KB (2871 bytes)  
+	-	`sha256:ecabd861e8e836c266778ab8a9c66a44d8a931fff2fbcf40cebe5667d7b70066`  
+		Last Modified: Wed, 10 Jun 2020 07:57:47 GMT  
+		Size: 2.9 KB (2870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee25f570930a1d65d3cad087a8015397411a5782853a8ea15649a2877b41eaab`  
-		Last Modified: Mon, 08 Jun 2020 20:03:47 GMT  
-		Size: 171.5 MB (171515132 bytes)  
+	-	`sha256:dcd774f8d5c36335400943745e07cc47a264cba7e920c06f17a48878d32435af`  
+		Last Modified: Wed, 10 Jun 2020 07:57:57 GMT  
+		Size: 171.5 MB (171515089 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:802c3c6c55a5f02cf6184ba0d8afb826df957e77f5c8e788a92b83da4ebf35d2`  
-		Last Modified: Mon, 08 Jun 2020 20:01:28 GMT  
-		Size: 6.1 KB (6059 bytes)  
+	-	`sha256:a1a6fb09b2e8abca7e4efc478df70d8f30b9625f78ab62649289686798e8928f`  
+		Last Modified: Wed, 10 Jun 2020 07:57:47 GMT  
+		Size: 6.1 KB (6058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:7.7-slim` - linux; arm64 variant v8
@@ -2945,7 +2945,7 @@ CMD ["solr-foreground"]
 ## `solr:7-slim`
 
 ```console
-$ docker pull solr@sha256:efb53992b9960724c06ccd87c825b39bdea8548fbf595697c5a9b96b9adfdc1b
+$ docker pull solr@sha256:b868a5f9eb61c15a0d0484a81cc2a1d2958d37ffef02a6df7d5c3324c5119e75
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2956,118 +2956,118 @@ $ docker pull solr@sha256:efb53992b9960724c06ccd87c825b39bdea8548fbf595697c5a9b9
 ### `solr:7-slim` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:fce2550293512f0bbb59d91ee6ddc035ef63d7f2048984703fc302c30aa36102
+$ docker pull solr@sha256:4528893c518334799a4e8dbac9ecfe010def6fffdd2ec26bd5ec780fd1d69659
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **250.5 MB (250544533 bytes)**  
+-	Total Size: **250.5 MB (250544849 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:781988f7dea60d1f4e6411a2100f9ee35d3e8bb6ee266a754d26425a12057725`
+-	Image ID: `sha256:e9324bdddafe62a1b21f84c9cb66b0d76b2a81115af71c7c4872243215d5e0ff`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:44 GMT
-ADD file:7780c81c33e6cc5b6261af4a6c611cce0f39dec3131009bb297e65f12020c150 in / 
-# Fri, 15 May 2020 06:28:44 GMT
+# Tue, 09 Jun 2020 01:20:56 GMT
+ADD file:4d35f6c8bbbe6801cc5f44989730fb6d349a644ecb36eca481e7df25842d6321 in / 
+# Tue, 09 Jun 2020 01:20:56 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:37 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:02:50 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:02:51 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:04:03 GMT
+# Tue, 09 Jun 2020 16:38:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:32:14 GMT
+# Wed, 10 Jun 2020 07:48:04 GMT
 ARG SOLR_VERSION=7.7.3
-# Mon, 08 Jun 2020 19:32:14 GMT
+# Wed, 10 Jun 2020 07:48:05 GMT
 ARG SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed
-# Mon, 08 Jun 2020 19:32:15 GMT
+# Wed, 10 Jun 2020 07:48:05 GMT
 ARG SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E
-# Mon, 08 Jun 2020 19:32:15 GMT
+# Wed, 10 Jun 2020 07:48:05 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:32:15 GMT
+# Wed, 10 Jun 2020 07:48:05 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:32:22 GMT
+# Wed, 10 Jun 2020 07:48:12 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:32:22 GMT
+# Wed, 10 Jun 2020 07:48:13 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/7.7.3/solr-7.7.3.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/7.7.3/solr-7.7.3.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/7.7.3/solr-7.7.3.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 08 Jun 2020 19:32:23 GMT
+# Wed, 10 Jun 2020 07:48:13 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:32:24 GMT
+# Wed, 10 Jun 2020 07:48:14 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:32:38 GMT
+# Wed, 10 Jun 2020 07:48:54 GMT
 # ARGS: SOLR_KEYS=CFCE5FBB920C3C745CEEE084C38FF5EC3FCFDB3E SOLR_SHA512=ca9200c18cc19ab723fd4d10f257e27eb81dc8bc33401ebc4eb99178faf4033a2684f0f8b12ae7b659cfeb0f4c9d9e24aaac518a4e00fd28b69854a359a666ed SOLR_VERSION=7.7.3
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   mv "/opt/solr-$SOLR_VERSION" /opt/solr;   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   mkdir -p /opt/solr/server/solr/mycores /opt/solr/server/logs /opt/mysolrhome;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   if [ -f "/opt/solr/contrib/prometheus-exporter/bin/solr-exporter" ]; then chmod 0755 "/opt/solr/contrib/prometheus-exporter/bin/solr-exporter"; fi;   chmod -R 0755 /opt/solr/server/scripts/cloud-scripts;   chown -R "$SOLR_USER:$SOLR_GROUP" /opt/solr /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:$SOLR_GROUP" /opt/mysolrhome;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:32:39 GMT
+# Wed, 10 Jun 2020 07:48:55 GMT
 COPY --chown=solr:solrdir:24d14aedda51f56007d2c3091bd65f0167210afaf1c88aa50fac48af9e1d6037 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:32:40 GMT
+# Wed, 10 Jun 2020 07:48:55 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:32:40 GMT
+# Wed, 10 Jun 2020 07:48:55 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:32:40 GMT
+# Wed, 10 Jun 2020 07:48:55 GMT
 USER solr
-# Mon, 08 Jun 2020 19:32:40 GMT
+# Wed, 10 Jun 2020 07:48:55 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:32:40 GMT
+# Wed, 10 Jun 2020 07:48:55 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:afb6ec6fdc1c3ba04f7a56db32c5ff5ff38962dc4cd0ffdef5beaa0ce2eb77e2`  
-		Last Modified: Fri, 15 May 2020 06:37:39 GMT  
-		Size: 27.1 MB (27098756 bytes)  
+	-	`sha256:8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df`  
+		Last Modified: Tue, 09 Jun 2020 01:25:50 GMT  
+		Size: 27.1 MB (27098265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee19e84e8bd1140527176689c9c1a75f28c0462c0c714e549536452708cbfb64`  
-		Last Modified: Fri, 15 May 2020 21:07:16 GMT  
-		Size: 3.2 MB (3249166 bytes)  
+	-	`sha256:65306eca6b8ea03d29cd8d10a31e9d7a6a1cf8766fe4ca3913e75e00fc47be79`  
+		Last Modified: Tue, 09 Jun 2020 16:41:33 GMT  
+		Size: 3.2 MB (3248452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ac787417531d48ce82f6180741b078086d62631806d5b1ca0d2763fd63b3826`  
-		Last Modified: Fri, 15 May 2020 21:09:46 GMT  
-		Size: 211.0 B  
+	-	`sha256:ddbf88050b6e7cbe8b76b77196134f31015ef5cb69123ba6af35da6f5b101459`  
+		Last Modified: Tue, 09 Jun 2020 16:44:15 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3f781d4d83e8b462ca228cb269f0d69cfac7973216d1937b288373a01e01e58`  
-		Last Modified: Fri, 15 May 2020 21:10:46 GMT  
-		Size: 42.2 MB (42214711 bytes)  
+	-	`sha256:0cb03c61bf260965ae2dc495175ab87e56951ad9ee8dc26f028c430e770f77fe`  
+		Last Modified: Tue, 09 Jun 2020 16:45:32 GMT  
+		Size: 42.2 MB (42216357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2e82a1376a99ff4fe58ca6f680bd4540c9dc35a849a641ee964c434c0dd6b1f`  
-		Last Modified: Mon, 08 Jun 2020 20:01:30 GMT  
-		Size: 6.5 MB (6453337 bytes)  
+	-	`sha256:2dba54e554120856a5e6201177513a9b4580ceb2d2111eeaac6c96532dc059a8`  
+		Last Modified: Wed, 10 Jun 2020 07:57:49 GMT  
+		Size: 6.5 MB (6453263 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:adbc9b813d62b2b4aa16c0426d15871d842191082ef9776cc5e7fa3e7fc93b7d`  
-		Last Modified: Mon, 08 Jun 2020 20:01:28 GMT  
-		Size: 4.3 KB (4290 bytes)  
+	-	`sha256:ec9a60dd873c0405aa29f477700dd178027282b64157396686588c9a4e318e01`  
+		Last Modified: Wed, 10 Jun 2020 07:57:47 GMT  
+		Size: 4.3 KB (4285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7565ce688a295c2a21a5d546cf779c268daf26755e94b74debb6622059eb6512`  
-		Last Modified: Mon, 08 Jun 2020 20:01:28 GMT  
-		Size: 2.9 KB (2871 bytes)  
+	-	`sha256:ecabd861e8e836c266778ab8a9c66a44d8a931fff2fbcf40cebe5667d7b70066`  
+		Last Modified: Wed, 10 Jun 2020 07:57:47 GMT  
+		Size: 2.9 KB (2870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee25f570930a1d65d3cad087a8015397411a5782853a8ea15649a2877b41eaab`  
-		Last Modified: Mon, 08 Jun 2020 20:03:47 GMT  
-		Size: 171.5 MB (171515132 bytes)  
+	-	`sha256:dcd774f8d5c36335400943745e07cc47a264cba7e920c06f17a48878d32435af`  
+		Last Modified: Wed, 10 Jun 2020 07:57:57 GMT  
+		Size: 171.5 MB (171515089 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:802c3c6c55a5f02cf6184ba0d8afb826df957e77f5c8e788a92b83da4ebf35d2`  
-		Last Modified: Mon, 08 Jun 2020 20:01:28 GMT  
-		Size: 6.1 KB (6059 bytes)  
+	-	`sha256:a1a6fb09b2e8abca7e4efc478df70d8f30b9625f78ab62649289686798e8928f`  
+		Last Modified: Wed, 10 Jun 2020 07:57:47 GMT  
+		Size: 6.1 KB (6058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:7-slim` - linux; arm64 variant v8
@@ -3190,7 +3190,7 @@ CMD ["solr-foreground"]
 ## `solr:8`
 
 ```console
-$ docker pull solr@sha256:ff5ce9be5f6687ac5d9b6e1c2cdac6d9fc8ed242cba52b20ead0226e0de809be
+$ docker pull solr@sha256:671d11bda54007aeb05fefae80f201156b14f2a6bc173fec9daecfc0a60d081b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3201,131 +3201,131 @@ $ docker pull solr@sha256:ff5ce9be5f6687ac5d9b6e1c2cdac6d9fc8ed242cba52b20ead022
 ### `solr:8` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:b031a39aab1a2a622d55462513a45948f9827caef34ac42ff26a2acc68af5cf4
+$ docker pull solr@sha256:8d789db7144a71e88f59799e71210d73e0e59f3b770648d5aa6ce4f3bdffa620
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **308.9 MB (308855414 bytes)**  
+-	Total Size: **308.9 MB (308853270 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f764e07184186bb56994f39d7ff42c0dd03100b28419f06979830ff89f18ed44`
+-	Image ID: `sha256:7d9cd085372de1cd04f14dbfa61c784b9b4ff04fb0c3a560c1fa167cf5e96653`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:12 GMT
-ADD file:fb54c709daa205bf9d04eb3d90ba068db4c34dfe3b6ec0d7691f677286120903 in / 
-# Fri, 15 May 2020 06:28:13 GMT
+# Tue, 09 Jun 2020 01:20:39 GMT
+ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
+# Tue, 09 Jun 2020 01:20:39 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 17:32:13 GMT
+# Tue, 09 Jun 2020 01:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 17:32:19 GMT
+# Tue, 09 Jun 2020 01:46:41 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:33 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:03:38 GMT
+# Tue, 09 Jun 2020 16:38:12 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 ARG SOLR_VERSION=8.5.2
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:37 GMT
 ARG SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:37 GMT
 ARG SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E
-# Mon, 08 Jun 2020 19:25:28 GMT
+# Wed, 10 Jun 2020 07:40:37 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:25:28 GMT
+# Wed, 10 Jun 2020 07:40:37 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:25:34 GMT
+# Wed, 10 Jun 2020 07:40:43 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:25:34 GMT
+# Wed, 10 Jun 2020 07:40:43 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.5.2/solr-8.5.2.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.5.2/solr-8.5.2.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.5.2/solr-8.5.2.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:25:35 GMT
+# Wed, 10 Jun 2020 07:40:44 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:25:36 GMT
+# Wed, 10 Jun 2020 07:40:45 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:25:48 GMT
+# Wed, 10 Jun 2020 07:41:00 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:25:48 GMT
+# Wed, 10 Jun 2020 07:41:01 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:25:48 GMT
+# Wed, 10 Jun 2020 07:41:01 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:25:49 GMT
+# Wed, 10 Jun 2020 07:41:01 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:25:49 GMT
+# Wed, 10 Jun 2020 07:41:01 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:25:49 GMT
+# Wed, 10 Jun 2020 07:41:01 GMT
 USER solr
-# Mon, 08 Jun 2020 19:25:49 GMT
+# Wed, 10 Jun 2020 07:41:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:25:49 GMT
+# Wed, 10 Jun 2020 07:41:02 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:376057ac6fa17f65688c56977118e2e764b27c348b3f70637fa829cd2a12b200`  
-		Last Modified: Fri, 15 May 2020 06:37:20 GMT  
-		Size: 50.4 MB (50391294 bytes)  
+	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
+		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
+		Size: 50.4 MB (50389504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a63a0a859d859478f30461786a49c2fca3ae7d89ab5b5ce3c81c54951d30f88`  
-		Last Modified: Fri, 15 May 2020 17:50:44 GMT  
-		Size: 7.8 MB (7812354 bytes)  
+	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 7.8 MB (7811709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:496548a8c952b37bdf149ab3654f9085d721ee126b8c73b16860778be5137f5e`  
-		Last Modified: Fri, 15 May 2020 17:50:49 GMT  
-		Size: 10.0 MB (9996284 bytes)  
+	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 10.0 MB (9996168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94b2daf7a1b5f537cba1c514f668125cbe30051a963fceee666de62352eb49ca`  
-		Last Modified: Fri, 15 May 2020 21:10:23 GMT  
-		Size: 5.5 MB (5529320 bytes)  
+	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
+		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
+		Size: 5.5 MB (5529317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8058d73803f3a05ad139e4bb713b7d93fb29f671441f1be35e844bb94a47152a`  
-		Last Modified: Fri, 15 May 2020 21:10:22 GMT  
-		Size: 211.0 B  
+	-	`sha256:e440f69a0a762646d5aed47652c8a122f43b415f52b87a90eb14690e1426fd0f`  
+		Last Modified: Tue, 09 Jun 2020 16:45:02 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dc4c151e7bebd2e3066851d6bc5ed2cfa0a9299b7e89cea9181a8994fa09abc`  
-		Last Modified: Fri, 15 May 2020 21:10:31 GMT  
-		Size: 41.9 MB (41941113 bytes)  
+	-	`sha256:837b533a935df78a47a09e44fd06c8ec7af6624ef1eec0d69e8d7d208efe2434`  
+		Last Modified: Tue, 09 Jun 2020 16:45:14 GMT  
+		Size: 41.9 MB (41941557 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:270b1408d58de905dfd4ed704b62f3309a537ac1fc23f286e66008694bc9af63`  
-		Last Modified: Mon, 08 Jun 2020 19:35:05 GMT  
-		Size: 2.5 MB (2545780 bytes)  
+	-	`sha256:2df9b8b5d142a662ef1fa22558f7c994877e29eff4ca263399c8a86bf228a64e`  
+		Last Modified: Wed, 10 Jun 2020 07:54:21 GMT  
+		Size: 2.5 MB (2545749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f36a9165e5824089c441b0595ad56a2df3aa25f2a723146d51c8647283edc8d6`  
-		Last Modified: Mon, 08 Jun 2020 19:35:05 GMT  
-		Size: 4.3 KB (4290 bytes)  
+	-	`sha256:0eb4ef5b01adc4bc3e35a1384b23555e9fb2df4ffd4c7f4d4c295c94e65b546f`  
+		Last Modified: Wed, 10 Jun 2020 07:54:21 GMT  
+		Size: 4.3 KB (4283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21ac4d74ef69df11dd66d71fbb4ee124f0d59efb33590b23f199bac0ed2659a9`  
-		Last Modified: Mon, 08 Jun 2020 19:35:05 GMT  
-		Size: 3.4 KB (3442 bytes)  
+	-	`sha256:2a223a8f7eacf31b91a063b3b1691d535a06ee930f28dc4c49f8cff698dc4db7`  
+		Last Modified: Wed, 10 Jun 2020 07:54:21 GMT  
+		Size: 3.5 KB (3451 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8eaa88982333e8149b11fa256580100122a9f3a43f1f95dd4c25a8d7411ece40`  
-		Last Modified: Mon, 08 Jun 2020 19:37:43 GMT  
-		Size: 190.6 MB (190625079 bytes)  
+	-	`sha256:b09044e85a869fa16d25babd23d46d2bf98a7e398799923f3f3a3644c575683e`  
+		Last Modified: Wed, 10 Jun 2020 07:54:32 GMT  
+		Size: 190.6 MB (190625075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a79e0d69720708cc8fea70488495b1d83b8a63b779ef975173d68fde07aa48e3`  
-		Last Modified: Mon, 08 Jun 2020 19:35:06 GMT  
+	-	`sha256:d2db09755929453ecdf4f7ce27397647c0a132b5e4df237930bca7c9fd310ce2`  
+		Last Modified: Wed, 10 Jun 2020 07:54:21 GMT  
 		Size: 6.2 KB (6247 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -3463,7 +3463,7 @@ CMD ["solr-foreground"]
 ## `solr:8.0`
 
 ```console
-$ docker pull solr@sha256:ac92709fbb7a427bddf017d366d162b799967c5ad237e6baf46689dee41a4656
+$ docker pull solr@sha256:6a6ab0581ef8aac52e5bdada50c2bd0a824338f38a02f1ec93c53505a47b3f0f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3474,132 +3474,132 @@ $ docker pull solr@sha256:ac92709fbb7a427bddf017d366d162b799967c5ad237e6baf46689
 ### `solr:8.0` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:65e05a67b9c94b567d172ec52435dee9dfd3691bec9efe8fdd3142260cffdc3d
+$ docker pull solr@sha256:2480ec038f4492e54f2fbd7154d957c764d3651d9469e0d58bd0df1ee5753dc0
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **290.3 MB (290263388 bytes)**  
+-	Total Size: **290.3 MB (290261217 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:92f82febd61e2dd2a0ec5c47eef30dad4febe280f76dd61005fab9e739e73f7a`
+-	Image ID: `sha256:53f13860209bfada61ec9e2e65775a1c850919380dc0407b1e2040418e1e5d62`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:12 GMT
-ADD file:fb54c709daa205bf9d04eb3d90ba068db4c34dfe3b6ec0d7691f677286120903 in / 
-# Fri, 15 May 2020 06:28:13 GMT
+# Tue, 09 Jun 2020 01:20:39 GMT
+ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
+# Tue, 09 Jun 2020 01:20:39 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 17:32:13 GMT
+# Tue, 09 Jun 2020 01:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 17:32:19 GMT
+# Tue, 09 Jun 2020 01:46:41 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:33 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:03:38 GMT
+# Tue, 09 Jun 2020 16:38:12 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:30:42 GMT
+# Wed, 10 Jun 2020 07:46:31 GMT
 ARG SOLR_VERSION=8.0.0
-# Mon, 08 Jun 2020 19:30:42 GMT
+# Wed, 10 Jun 2020 07:46:31 GMT
 ARG SOLR_SHA512=c587f22bd07839e01d9eb391156e6624ca3bc6dd5dda2439c85f14e71d2e63da54f8800f3af887bf8d68fb4aa64d30f47d4006a03e3e6d5d4c0cdcb332704f9c
-# Mon, 08 Jun 2020 19:30:42 GMT
+# Wed, 10 Jun 2020 07:46:31 GMT
 ARG SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8
-# Mon, 08 Jun 2020 19:30:43 GMT
+# Wed, 10 Jun 2020 07:46:32 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:30:43 GMT
+# Wed, 10 Jun 2020 07:46:32 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:30:48 GMT
+# Wed, 10 Jun 2020 07:46:37 GMT
 # ARGS: SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8 SOLR_SHA512=c587f22bd07839e01d9eb391156e6624ca3bc6dd5dda2439c85f14e71d2e63da54f8800f3af887bf8d68fb4aa64d30f47d4006a03e3e6d5d4c0cdcb332704f9c SOLR_VERSION=8.0.0
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:30:48 GMT
+# Wed, 10 Jun 2020 07:46:37 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.0.0/solr-8.0.0.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.0.0/solr-8.0.0.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.0.0/solr-8.0.0.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:30:49 GMT
+# Wed, 10 Jun 2020 07:46:38 GMT
 # ARGS: SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8 SOLR_SHA512=c587f22bd07839e01d9eb391156e6624ca3bc6dd5dda2439c85f14e71d2e63da54f8800f3af887bf8d68fb4aa64d30f47d4006a03e3e6d5d4c0cdcb332704f9c SOLR_VERSION=8.0.0
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:30:50 GMT
+# Wed, 10 Jun 2020 07:46:39 GMT
 # ARGS: SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8 SOLR_SHA512=c587f22bd07839e01d9eb391156e6624ca3bc6dd5dda2439c85f14e71d2e63da54f8800f3af887bf8d68fb4aa64d30f47d4006a03e3e6d5d4c0cdcb332704f9c SOLR_VERSION=8.0.0
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:31:06 GMT
+# Wed, 10 Jun 2020 07:46:57 GMT
 # ARGS: SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8 SOLR_SHA512=c587f22bd07839e01d9eb391156e6624ca3bc6dd5dda2439c85f14e71d2e63da54f8800f3af887bf8d68fb4aa64d30f47d4006a03e3e6d5d4c0cdcb332704f9c SOLR_VERSION=8.0.0
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:31:06 GMT
+# Wed, 10 Jun 2020 07:46:57 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:31:06 GMT
+# Wed, 10 Jun 2020 07:46:57 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:31:06 GMT
+# Wed, 10 Jun 2020 07:46:58 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:31:06 GMT
+# Wed, 10 Jun 2020 07:46:58 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:31:07 GMT
+# Wed, 10 Jun 2020 07:46:58 GMT
 USER solr
-# Mon, 08 Jun 2020 19:31:07 GMT
+# Wed, 10 Jun 2020 07:46:58 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:31:07 GMT
+# Wed, 10 Jun 2020 07:46:58 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:376057ac6fa17f65688c56977118e2e764b27c348b3f70637fa829cd2a12b200`  
-		Last Modified: Fri, 15 May 2020 06:37:20 GMT  
-		Size: 50.4 MB (50391294 bytes)  
+	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
+		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
+		Size: 50.4 MB (50389504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a63a0a859d859478f30461786a49c2fca3ae7d89ab5b5ce3c81c54951d30f88`  
-		Last Modified: Fri, 15 May 2020 17:50:44 GMT  
-		Size: 7.8 MB (7812354 bytes)  
+	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 7.8 MB (7811709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:496548a8c952b37bdf149ab3654f9085d721ee126b8c73b16860778be5137f5e`  
-		Last Modified: Fri, 15 May 2020 17:50:49 GMT  
-		Size: 10.0 MB (9996284 bytes)  
+	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 10.0 MB (9996168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94b2daf7a1b5f537cba1c514f668125cbe30051a963fceee666de62352eb49ca`  
-		Last Modified: Fri, 15 May 2020 21:10:23 GMT  
-		Size: 5.5 MB (5529320 bytes)  
+	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
+		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
+		Size: 5.5 MB (5529317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8058d73803f3a05ad139e4bb713b7d93fb29f671441f1be35e844bb94a47152a`  
-		Last Modified: Fri, 15 May 2020 21:10:22 GMT  
-		Size: 211.0 B  
+	-	`sha256:e440f69a0a762646d5aed47652c8a122f43b415f52b87a90eb14690e1426fd0f`  
+		Last Modified: Tue, 09 Jun 2020 16:45:02 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dc4c151e7bebd2e3066851d6bc5ed2cfa0a9299b7e89cea9181a8994fa09abc`  
-		Last Modified: Fri, 15 May 2020 21:10:31 GMT  
-		Size: 41.9 MB (41941113 bytes)  
+	-	`sha256:837b533a935df78a47a09e44fd06c8ec7af6624ef1eec0d69e8d7d208efe2434`  
+		Last Modified: Tue, 09 Jun 2020 16:45:14 GMT  
+		Size: 41.9 MB (41941557 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d1aba737dfdeb45b5de99d61b4e6abae7cda0e51c14f4775883d1c212bf0456`  
-		Last Modified: Mon, 08 Jun 2020 19:58:26 GMT  
-		Size: 2.5 MB (2545787 bytes)  
+	-	`sha256:a3e04658c1d14f1c4850f8da1014b4280cc81f08336393c7d841799148be4512`  
+		Last Modified: Wed, 10 Jun 2020 07:57:00 GMT  
+		Size: 2.5 MB (2545731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce14e632e450400788551a4fc89bd73fda08bc2b830ae3d4b9f9ad4627a9417b`  
-		Last Modified: Mon, 08 Jun 2020 19:58:25 GMT  
-		Size: 4.3 KB (4290 bytes)  
+	-	`sha256:1164ec595e43d97983fb689a0f9fc66381a03c9a880c68566bcec6ffd0b56046`  
+		Last Modified: Wed, 10 Jun 2020 07:57:00 GMT  
+		Size: 4.3 KB (4287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3414a90534d61ec98c6e1f01a5d98c077dbf5db93888c93cc064876c9a2a869d`  
-		Last Modified: Mon, 08 Jun 2020 19:58:25 GMT  
-		Size: 3.4 KB (3418 bytes)  
+	-	`sha256:d176774309cd815ec2b70efa5897923282a08fb0ad72be9d95b04d1e4e0e777f`  
+		Last Modified: Wed, 10 Jun 2020 07:57:00 GMT  
+		Size: 3.4 KB (3415 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:096c209d7c2e9b7cb0faf681e1e6758c562ce89d4ad8d003d8a66b02abd832d3`  
-		Last Modified: Mon, 08 Jun 2020 19:58:44 GMT  
-		Size: 172.0 MB (172033071 bytes)  
+	-	`sha256:114a6ae8fdd752bdddacfc76696e5be936ba83b7fb135dcb9b02947cc5235112`  
+		Last Modified: Wed, 10 Jun 2020 07:57:10 GMT  
+		Size: 172.0 MB (172033070 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4066e2395a1b911c8373ab33f2e34f5724250539a40357454284bcaeb448f645`  
-		Last Modified: Mon, 08 Jun 2020 19:58:26 GMT  
-		Size: 6.2 KB (6246 bytes)  
+	-	`sha256:ba9fa7c7bc8688580d9ce56b1f9bcb3b6b259aa91c40b911a0addcd7d3537293`  
+		Last Modified: Wed, 10 Jun 2020 07:57:01 GMT  
+		Size: 6.2 KB (6249 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:8.0` - linux; arm64 variant v8
@@ -3736,7 +3736,7 @@ CMD ["solr-foreground"]
 ## `solr:8.0.0`
 
 ```console
-$ docker pull solr@sha256:ac92709fbb7a427bddf017d366d162b799967c5ad237e6baf46689dee41a4656
+$ docker pull solr@sha256:6a6ab0581ef8aac52e5bdada50c2bd0a824338f38a02f1ec93c53505a47b3f0f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3747,132 +3747,132 @@ $ docker pull solr@sha256:ac92709fbb7a427bddf017d366d162b799967c5ad237e6baf46689
 ### `solr:8.0.0` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:65e05a67b9c94b567d172ec52435dee9dfd3691bec9efe8fdd3142260cffdc3d
+$ docker pull solr@sha256:2480ec038f4492e54f2fbd7154d957c764d3651d9469e0d58bd0df1ee5753dc0
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **290.3 MB (290263388 bytes)**  
+-	Total Size: **290.3 MB (290261217 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:92f82febd61e2dd2a0ec5c47eef30dad4febe280f76dd61005fab9e739e73f7a`
+-	Image ID: `sha256:53f13860209bfada61ec9e2e65775a1c850919380dc0407b1e2040418e1e5d62`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:12 GMT
-ADD file:fb54c709daa205bf9d04eb3d90ba068db4c34dfe3b6ec0d7691f677286120903 in / 
-# Fri, 15 May 2020 06:28:13 GMT
+# Tue, 09 Jun 2020 01:20:39 GMT
+ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
+# Tue, 09 Jun 2020 01:20:39 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 17:32:13 GMT
+# Tue, 09 Jun 2020 01:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 17:32:19 GMT
+# Tue, 09 Jun 2020 01:46:41 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:33 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:03:38 GMT
+# Tue, 09 Jun 2020 16:38:12 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:30:42 GMT
+# Wed, 10 Jun 2020 07:46:31 GMT
 ARG SOLR_VERSION=8.0.0
-# Mon, 08 Jun 2020 19:30:42 GMT
+# Wed, 10 Jun 2020 07:46:31 GMT
 ARG SOLR_SHA512=c587f22bd07839e01d9eb391156e6624ca3bc6dd5dda2439c85f14e71d2e63da54f8800f3af887bf8d68fb4aa64d30f47d4006a03e3e6d5d4c0cdcb332704f9c
-# Mon, 08 Jun 2020 19:30:42 GMT
+# Wed, 10 Jun 2020 07:46:31 GMT
 ARG SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8
-# Mon, 08 Jun 2020 19:30:43 GMT
+# Wed, 10 Jun 2020 07:46:32 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:30:43 GMT
+# Wed, 10 Jun 2020 07:46:32 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:30:48 GMT
+# Wed, 10 Jun 2020 07:46:37 GMT
 # ARGS: SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8 SOLR_SHA512=c587f22bd07839e01d9eb391156e6624ca3bc6dd5dda2439c85f14e71d2e63da54f8800f3af887bf8d68fb4aa64d30f47d4006a03e3e6d5d4c0cdcb332704f9c SOLR_VERSION=8.0.0
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:30:48 GMT
+# Wed, 10 Jun 2020 07:46:37 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.0.0/solr-8.0.0.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.0.0/solr-8.0.0.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.0.0/solr-8.0.0.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:30:49 GMT
+# Wed, 10 Jun 2020 07:46:38 GMT
 # ARGS: SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8 SOLR_SHA512=c587f22bd07839e01d9eb391156e6624ca3bc6dd5dda2439c85f14e71d2e63da54f8800f3af887bf8d68fb4aa64d30f47d4006a03e3e6d5d4c0cdcb332704f9c SOLR_VERSION=8.0.0
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:30:50 GMT
+# Wed, 10 Jun 2020 07:46:39 GMT
 # ARGS: SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8 SOLR_SHA512=c587f22bd07839e01d9eb391156e6624ca3bc6dd5dda2439c85f14e71d2e63da54f8800f3af887bf8d68fb4aa64d30f47d4006a03e3e6d5d4c0cdcb332704f9c SOLR_VERSION=8.0.0
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:31:06 GMT
+# Wed, 10 Jun 2020 07:46:57 GMT
 # ARGS: SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8 SOLR_SHA512=c587f22bd07839e01d9eb391156e6624ca3bc6dd5dda2439c85f14e71d2e63da54f8800f3af887bf8d68fb4aa64d30f47d4006a03e3e6d5d4c0cdcb332704f9c SOLR_VERSION=8.0.0
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:31:06 GMT
+# Wed, 10 Jun 2020 07:46:57 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:31:06 GMT
+# Wed, 10 Jun 2020 07:46:57 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:31:06 GMT
+# Wed, 10 Jun 2020 07:46:58 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:31:06 GMT
+# Wed, 10 Jun 2020 07:46:58 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:31:07 GMT
+# Wed, 10 Jun 2020 07:46:58 GMT
 USER solr
-# Mon, 08 Jun 2020 19:31:07 GMT
+# Wed, 10 Jun 2020 07:46:58 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:31:07 GMT
+# Wed, 10 Jun 2020 07:46:58 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:376057ac6fa17f65688c56977118e2e764b27c348b3f70637fa829cd2a12b200`  
-		Last Modified: Fri, 15 May 2020 06:37:20 GMT  
-		Size: 50.4 MB (50391294 bytes)  
+	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
+		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
+		Size: 50.4 MB (50389504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a63a0a859d859478f30461786a49c2fca3ae7d89ab5b5ce3c81c54951d30f88`  
-		Last Modified: Fri, 15 May 2020 17:50:44 GMT  
-		Size: 7.8 MB (7812354 bytes)  
+	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 7.8 MB (7811709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:496548a8c952b37bdf149ab3654f9085d721ee126b8c73b16860778be5137f5e`  
-		Last Modified: Fri, 15 May 2020 17:50:49 GMT  
-		Size: 10.0 MB (9996284 bytes)  
+	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 10.0 MB (9996168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94b2daf7a1b5f537cba1c514f668125cbe30051a963fceee666de62352eb49ca`  
-		Last Modified: Fri, 15 May 2020 21:10:23 GMT  
-		Size: 5.5 MB (5529320 bytes)  
+	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
+		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
+		Size: 5.5 MB (5529317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8058d73803f3a05ad139e4bb713b7d93fb29f671441f1be35e844bb94a47152a`  
-		Last Modified: Fri, 15 May 2020 21:10:22 GMT  
-		Size: 211.0 B  
+	-	`sha256:e440f69a0a762646d5aed47652c8a122f43b415f52b87a90eb14690e1426fd0f`  
+		Last Modified: Tue, 09 Jun 2020 16:45:02 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dc4c151e7bebd2e3066851d6bc5ed2cfa0a9299b7e89cea9181a8994fa09abc`  
-		Last Modified: Fri, 15 May 2020 21:10:31 GMT  
-		Size: 41.9 MB (41941113 bytes)  
+	-	`sha256:837b533a935df78a47a09e44fd06c8ec7af6624ef1eec0d69e8d7d208efe2434`  
+		Last Modified: Tue, 09 Jun 2020 16:45:14 GMT  
+		Size: 41.9 MB (41941557 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d1aba737dfdeb45b5de99d61b4e6abae7cda0e51c14f4775883d1c212bf0456`  
-		Last Modified: Mon, 08 Jun 2020 19:58:26 GMT  
-		Size: 2.5 MB (2545787 bytes)  
+	-	`sha256:a3e04658c1d14f1c4850f8da1014b4280cc81f08336393c7d841799148be4512`  
+		Last Modified: Wed, 10 Jun 2020 07:57:00 GMT  
+		Size: 2.5 MB (2545731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce14e632e450400788551a4fc89bd73fda08bc2b830ae3d4b9f9ad4627a9417b`  
-		Last Modified: Mon, 08 Jun 2020 19:58:25 GMT  
-		Size: 4.3 KB (4290 bytes)  
+	-	`sha256:1164ec595e43d97983fb689a0f9fc66381a03c9a880c68566bcec6ffd0b56046`  
+		Last Modified: Wed, 10 Jun 2020 07:57:00 GMT  
+		Size: 4.3 KB (4287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3414a90534d61ec98c6e1f01a5d98c077dbf5db93888c93cc064876c9a2a869d`  
-		Last Modified: Mon, 08 Jun 2020 19:58:25 GMT  
-		Size: 3.4 KB (3418 bytes)  
+	-	`sha256:d176774309cd815ec2b70efa5897923282a08fb0ad72be9d95b04d1e4e0e777f`  
+		Last Modified: Wed, 10 Jun 2020 07:57:00 GMT  
+		Size: 3.4 KB (3415 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:096c209d7c2e9b7cb0faf681e1e6758c562ce89d4ad8d003d8a66b02abd832d3`  
-		Last Modified: Mon, 08 Jun 2020 19:58:44 GMT  
-		Size: 172.0 MB (172033071 bytes)  
+	-	`sha256:114a6ae8fdd752bdddacfc76696e5be936ba83b7fb135dcb9b02947cc5235112`  
+		Last Modified: Wed, 10 Jun 2020 07:57:10 GMT  
+		Size: 172.0 MB (172033070 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4066e2395a1b911c8373ab33f2e34f5724250539a40357454284bcaeb448f645`  
-		Last Modified: Mon, 08 Jun 2020 19:58:26 GMT  
-		Size: 6.2 KB (6246 bytes)  
+	-	`sha256:ba9fa7c7bc8688580d9ce56b1f9bcb3b6b259aa91c40b911a0addcd7d3537293`  
+		Last Modified: Wed, 10 Jun 2020 07:57:01 GMT  
+		Size: 6.2 KB (6249 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:8.0.0` - linux; arm64 variant v8
@@ -4009,7 +4009,7 @@ CMD ["solr-foreground"]
 ## `solr:8.0.0-slim`
 
 ```console
-$ docker pull solr@sha256:f6ba15c9e1a182fd653cae3c930645784c3c3c09fa6f965803b0312d9cc76221
+$ docker pull solr@sha256:8095ac27b8bc44a2b4bd0c3fb566c4224eddc6582040bcc204e0a81488959767
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4020,120 +4020,120 @@ $ docker pull solr@sha256:f6ba15c9e1a182fd653cae3c930645784c3c3c09fa6f965803b031
 ### `solr:8.0.0-slim` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:936c20edf94e15c98f58e4bafcca6b4560fc7a286201acd686002675259081af
+$ docker pull solr@sha256:a9ad7b73c62ef5b02bc9dbc8aa40ade710329d05ece1c520e7f789b4620f7eaa
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.1 MB (251063132 bytes)**  
+-	Total Size: **251.1 MB (251063490 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70f7c64bc245af4b6e07ab9a3fdae7a18ab9e85bd940a439c040b4cb58c0a866`
+-	Image ID: `sha256:310116494fd51489643b82dc1506c55b04b4037e751581b25988d95fc17fdd9d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:44 GMT
-ADD file:7780c81c33e6cc5b6261af4a6c611cce0f39dec3131009bb297e65f12020c150 in / 
-# Fri, 15 May 2020 06:28:44 GMT
+# Tue, 09 Jun 2020 01:20:56 GMT
+ADD file:4d35f6c8bbbe6801cc5f44989730fb6d349a644ecb36eca481e7df25842d6321 in / 
+# Tue, 09 Jun 2020 01:20:56 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:37 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:02:50 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:02:51 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:04:03 GMT
+# Tue, 09 Jun 2020 16:38:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:31:11 GMT
+# Wed, 10 Jun 2020 07:47:05 GMT
 ARG SOLR_VERSION=8.0.0
-# Mon, 08 Jun 2020 19:31:11 GMT
+# Wed, 10 Jun 2020 07:47:05 GMT
 ARG SOLR_SHA512=c587f22bd07839e01d9eb391156e6624ca3bc6dd5dda2439c85f14e71d2e63da54f8800f3af887bf8d68fb4aa64d30f47d4006a03e3e6d5d4c0cdcb332704f9c
-# Mon, 08 Jun 2020 19:31:12 GMT
+# Wed, 10 Jun 2020 07:47:06 GMT
 ARG SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8
-# Mon, 08 Jun 2020 19:31:12 GMT
+# Wed, 10 Jun 2020 07:47:06 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:31:12 GMT
+# Wed, 10 Jun 2020 07:47:06 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:31:19 GMT
+# Wed, 10 Jun 2020 07:47:13 GMT
 # ARGS: SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8 SOLR_SHA512=c587f22bd07839e01d9eb391156e6624ca3bc6dd5dda2439c85f14e71d2e63da54f8800f3af887bf8d68fb4aa64d30f47d4006a03e3e6d5d4c0cdcb332704f9c SOLR_VERSION=8.0.0
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:31:20 GMT
+# Wed, 10 Jun 2020 07:47:13 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.0.0/solr-8.0.0.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.0.0/solr-8.0.0.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.0.0/solr-8.0.0.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:31:20 GMT
+# Wed, 10 Jun 2020 07:47:14 GMT
 # ARGS: SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8 SOLR_SHA512=c587f22bd07839e01d9eb391156e6624ca3bc6dd5dda2439c85f14e71d2e63da54f8800f3af887bf8d68fb4aa64d30f47d4006a03e3e6d5d4c0cdcb332704f9c SOLR_VERSION=8.0.0
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:31:21 GMT
+# Wed, 10 Jun 2020 07:47:15 GMT
 # ARGS: SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8 SOLR_SHA512=c587f22bd07839e01d9eb391156e6624ca3bc6dd5dda2439c85f14e71d2e63da54f8800f3af887bf8d68fb4aa64d30f47d4006a03e3e6d5d4c0cdcb332704f9c SOLR_VERSION=8.0.0
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:31:36 GMT
+# Wed, 10 Jun 2020 07:47:30 GMT
 # ARGS: SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8 SOLR_SHA512=c587f22bd07839e01d9eb391156e6624ca3bc6dd5dda2439c85f14e71d2e63da54f8800f3af887bf8d68fb4aa64d30f47d4006a03e3e6d5d4c0cdcb332704f9c SOLR_VERSION=8.0.0
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:31:37 GMT
+# Wed, 10 Jun 2020 07:47:30 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:31:37 GMT
+# Wed, 10 Jun 2020 07:47:30 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:31:37 GMT
+# Wed, 10 Jun 2020 07:47:30 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:31:37 GMT
+# Wed, 10 Jun 2020 07:47:30 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:31:37 GMT
+# Wed, 10 Jun 2020 07:47:31 GMT
 USER solr
-# Mon, 08 Jun 2020 19:31:37 GMT
+# Wed, 10 Jun 2020 07:47:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:31:38 GMT
+# Wed, 10 Jun 2020 07:47:31 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:afb6ec6fdc1c3ba04f7a56db32c5ff5ff38962dc4cd0ffdef5beaa0ce2eb77e2`  
-		Last Modified: Fri, 15 May 2020 06:37:39 GMT  
-		Size: 27.1 MB (27098756 bytes)  
+	-	`sha256:8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df`  
+		Last Modified: Tue, 09 Jun 2020 01:25:50 GMT  
+		Size: 27.1 MB (27098265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee19e84e8bd1140527176689c9c1a75f28c0462c0c714e549536452708cbfb64`  
-		Last Modified: Fri, 15 May 2020 21:07:16 GMT  
-		Size: 3.2 MB (3249166 bytes)  
+	-	`sha256:65306eca6b8ea03d29cd8d10a31e9d7a6a1cf8766fe4ca3913e75e00fc47be79`  
+		Last Modified: Tue, 09 Jun 2020 16:41:33 GMT  
+		Size: 3.2 MB (3248452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ac787417531d48ce82f6180741b078086d62631806d5b1ca0d2763fd63b3826`  
-		Last Modified: Fri, 15 May 2020 21:09:46 GMT  
-		Size: 211.0 B  
+	-	`sha256:ddbf88050b6e7cbe8b76b77196134f31015ef5cb69123ba6af35da6f5b101459`  
+		Last Modified: Tue, 09 Jun 2020 16:44:15 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3f781d4d83e8b462ca228cb269f0d69cfac7973216d1937b288373a01e01e58`  
-		Last Modified: Fri, 15 May 2020 21:10:46 GMT  
-		Size: 42.2 MB (42214711 bytes)  
+	-	`sha256:0cb03c61bf260965ae2dc495175ab87e56951ad9ee8dc26f028c430e770f77fe`  
+		Last Modified: Tue, 09 Jun 2020 16:45:32 GMT  
+		Size: 42.2 MB (42216357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64a7faddb5fbfdb2df6665d03c26d76457cb8d1ef9e26fd4d00c51ec0bda5b13`  
-		Last Modified: Mon, 08 Jun 2020 19:58:52 GMT  
-		Size: 6.5 MB (6453283 bytes)  
+	-	`sha256:5a5417e303c1113e406bd61d4b1e887a83b97dff5f42c7f7921a22cd460820c1`  
+		Last Modified: Wed, 10 Jun 2020 07:57:16 GMT  
+		Size: 6.5 MB (6453209 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95ae8f89520fc343da599541a81692f1d255efcc14839d64c81941f38e39843e`  
-		Last Modified: Mon, 08 Jun 2020 19:58:49 GMT  
-		Size: 4.3 KB (4288 bytes)  
+	-	`sha256:61c0af9af3f5746912245660c72502bb4340fa482896b37f0eb9499aeaa4d1ff`  
+		Last Modified: Wed, 10 Jun 2020 07:57:15 GMT  
+		Size: 4.3 KB (4284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed35cb253554a8cb0ae180c6487cf8791a3a2eae885ba93d5c87417eeff70e9e`  
-		Last Modified: Mon, 08 Jun 2020 19:58:49 GMT  
-		Size: 3.4 KB (3417 bytes)  
+	-	`sha256:93136447fec4507c11764a156ed936935202d81e4455e6b5546cea3fccb84c6c`  
+		Last Modified: Wed, 10 Jun 2020 07:57:15 GMT  
+		Size: 3.4 KB (3419 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:452d1d2d9d638cac1e24dc698c64f8288bcde1f6275fa5519aa41a6cb629cda5`  
-		Last Modified: Mon, 08 Jun 2020 20:00:47 GMT  
+	-	`sha256:8ed86e915e95aa110f50b68b8bb8e25f829a334faff5804264893ce271d375d3`  
+		Last Modified: Wed, 10 Jun 2020 07:57:26 GMT  
 		Size: 172.0 MB (172033048 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38651e421e25d5a0ba15af537db604f3d7bfc8361f98bbaa0c2eeb0b5cb5a03a`  
-		Last Modified: Mon, 08 Jun 2020 19:58:49 GMT  
-		Size: 6.3 KB (6252 bytes)  
+	-	`sha256:e500a46f340494590f2fa5758b12abdc661cb3823e72039f50e2b581adfe58e3`  
+		Last Modified: Wed, 10 Jun 2020 07:57:15 GMT  
+		Size: 6.2 KB (6246 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:8.0.0-slim` - linux; arm64 variant v8
@@ -4258,7 +4258,7 @@ CMD ["solr-foreground"]
 ## `solr:8.0-slim`
 
 ```console
-$ docker pull solr@sha256:f6ba15c9e1a182fd653cae3c930645784c3c3c09fa6f965803b0312d9cc76221
+$ docker pull solr@sha256:8095ac27b8bc44a2b4bd0c3fb566c4224eddc6582040bcc204e0a81488959767
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4269,120 +4269,120 @@ $ docker pull solr@sha256:f6ba15c9e1a182fd653cae3c930645784c3c3c09fa6f965803b031
 ### `solr:8.0-slim` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:936c20edf94e15c98f58e4bafcca6b4560fc7a286201acd686002675259081af
+$ docker pull solr@sha256:a9ad7b73c62ef5b02bc9dbc8aa40ade710329d05ece1c520e7f789b4620f7eaa
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.1 MB (251063132 bytes)**  
+-	Total Size: **251.1 MB (251063490 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70f7c64bc245af4b6e07ab9a3fdae7a18ab9e85bd940a439c040b4cb58c0a866`
+-	Image ID: `sha256:310116494fd51489643b82dc1506c55b04b4037e751581b25988d95fc17fdd9d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:44 GMT
-ADD file:7780c81c33e6cc5b6261af4a6c611cce0f39dec3131009bb297e65f12020c150 in / 
-# Fri, 15 May 2020 06:28:44 GMT
+# Tue, 09 Jun 2020 01:20:56 GMT
+ADD file:4d35f6c8bbbe6801cc5f44989730fb6d349a644ecb36eca481e7df25842d6321 in / 
+# Tue, 09 Jun 2020 01:20:56 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:37 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:02:50 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:02:51 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:04:03 GMT
+# Tue, 09 Jun 2020 16:38:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:31:11 GMT
+# Wed, 10 Jun 2020 07:47:05 GMT
 ARG SOLR_VERSION=8.0.0
-# Mon, 08 Jun 2020 19:31:11 GMT
+# Wed, 10 Jun 2020 07:47:05 GMT
 ARG SOLR_SHA512=c587f22bd07839e01d9eb391156e6624ca3bc6dd5dda2439c85f14e71d2e63da54f8800f3af887bf8d68fb4aa64d30f47d4006a03e3e6d5d4c0cdcb332704f9c
-# Mon, 08 Jun 2020 19:31:12 GMT
+# Wed, 10 Jun 2020 07:47:06 GMT
 ARG SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8
-# Mon, 08 Jun 2020 19:31:12 GMT
+# Wed, 10 Jun 2020 07:47:06 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:31:12 GMT
+# Wed, 10 Jun 2020 07:47:06 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:31:19 GMT
+# Wed, 10 Jun 2020 07:47:13 GMT
 # ARGS: SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8 SOLR_SHA512=c587f22bd07839e01d9eb391156e6624ca3bc6dd5dda2439c85f14e71d2e63da54f8800f3af887bf8d68fb4aa64d30f47d4006a03e3e6d5d4c0cdcb332704f9c SOLR_VERSION=8.0.0
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:31:20 GMT
+# Wed, 10 Jun 2020 07:47:13 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.0.0/solr-8.0.0.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.0.0/solr-8.0.0.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.0.0/solr-8.0.0.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:31:20 GMT
+# Wed, 10 Jun 2020 07:47:14 GMT
 # ARGS: SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8 SOLR_SHA512=c587f22bd07839e01d9eb391156e6624ca3bc6dd5dda2439c85f14e71d2e63da54f8800f3af887bf8d68fb4aa64d30f47d4006a03e3e6d5d4c0cdcb332704f9c SOLR_VERSION=8.0.0
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:31:21 GMT
+# Wed, 10 Jun 2020 07:47:15 GMT
 # ARGS: SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8 SOLR_SHA512=c587f22bd07839e01d9eb391156e6624ca3bc6dd5dda2439c85f14e71d2e63da54f8800f3af887bf8d68fb4aa64d30f47d4006a03e3e6d5d4c0cdcb332704f9c SOLR_VERSION=8.0.0
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:31:36 GMT
+# Wed, 10 Jun 2020 07:47:30 GMT
 # ARGS: SOLR_KEYS=052C5B48A480B9CEA9E218A5F98C13CFA5A135D8 SOLR_SHA512=c587f22bd07839e01d9eb391156e6624ca3bc6dd5dda2439c85f14e71d2e63da54f8800f3af887bf8d68fb4aa64d30f47d4006a03e3e6d5d4c0cdcb332704f9c SOLR_VERSION=8.0.0
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:31:37 GMT
+# Wed, 10 Jun 2020 07:47:30 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:31:37 GMT
+# Wed, 10 Jun 2020 07:47:30 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:31:37 GMT
+# Wed, 10 Jun 2020 07:47:30 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:31:37 GMT
+# Wed, 10 Jun 2020 07:47:30 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:31:37 GMT
+# Wed, 10 Jun 2020 07:47:31 GMT
 USER solr
-# Mon, 08 Jun 2020 19:31:37 GMT
+# Wed, 10 Jun 2020 07:47:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:31:38 GMT
+# Wed, 10 Jun 2020 07:47:31 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:afb6ec6fdc1c3ba04f7a56db32c5ff5ff38962dc4cd0ffdef5beaa0ce2eb77e2`  
-		Last Modified: Fri, 15 May 2020 06:37:39 GMT  
-		Size: 27.1 MB (27098756 bytes)  
+	-	`sha256:8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df`  
+		Last Modified: Tue, 09 Jun 2020 01:25:50 GMT  
+		Size: 27.1 MB (27098265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee19e84e8bd1140527176689c9c1a75f28c0462c0c714e549536452708cbfb64`  
-		Last Modified: Fri, 15 May 2020 21:07:16 GMT  
-		Size: 3.2 MB (3249166 bytes)  
+	-	`sha256:65306eca6b8ea03d29cd8d10a31e9d7a6a1cf8766fe4ca3913e75e00fc47be79`  
+		Last Modified: Tue, 09 Jun 2020 16:41:33 GMT  
+		Size: 3.2 MB (3248452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ac787417531d48ce82f6180741b078086d62631806d5b1ca0d2763fd63b3826`  
-		Last Modified: Fri, 15 May 2020 21:09:46 GMT  
-		Size: 211.0 B  
+	-	`sha256:ddbf88050b6e7cbe8b76b77196134f31015ef5cb69123ba6af35da6f5b101459`  
+		Last Modified: Tue, 09 Jun 2020 16:44:15 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3f781d4d83e8b462ca228cb269f0d69cfac7973216d1937b288373a01e01e58`  
-		Last Modified: Fri, 15 May 2020 21:10:46 GMT  
-		Size: 42.2 MB (42214711 bytes)  
+	-	`sha256:0cb03c61bf260965ae2dc495175ab87e56951ad9ee8dc26f028c430e770f77fe`  
+		Last Modified: Tue, 09 Jun 2020 16:45:32 GMT  
+		Size: 42.2 MB (42216357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64a7faddb5fbfdb2df6665d03c26d76457cb8d1ef9e26fd4d00c51ec0bda5b13`  
-		Last Modified: Mon, 08 Jun 2020 19:58:52 GMT  
-		Size: 6.5 MB (6453283 bytes)  
+	-	`sha256:5a5417e303c1113e406bd61d4b1e887a83b97dff5f42c7f7921a22cd460820c1`  
+		Last Modified: Wed, 10 Jun 2020 07:57:16 GMT  
+		Size: 6.5 MB (6453209 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95ae8f89520fc343da599541a81692f1d255efcc14839d64c81941f38e39843e`  
-		Last Modified: Mon, 08 Jun 2020 19:58:49 GMT  
-		Size: 4.3 KB (4288 bytes)  
+	-	`sha256:61c0af9af3f5746912245660c72502bb4340fa482896b37f0eb9499aeaa4d1ff`  
+		Last Modified: Wed, 10 Jun 2020 07:57:15 GMT  
+		Size: 4.3 KB (4284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed35cb253554a8cb0ae180c6487cf8791a3a2eae885ba93d5c87417eeff70e9e`  
-		Last Modified: Mon, 08 Jun 2020 19:58:49 GMT  
-		Size: 3.4 KB (3417 bytes)  
+	-	`sha256:93136447fec4507c11764a156ed936935202d81e4455e6b5546cea3fccb84c6c`  
+		Last Modified: Wed, 10 Jun 2020 07:57:15 GMT  
+		Size: 3.4 KB (3419 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:452d1d2d9d638cac1e24dc698c64f8288bcde1f6275fa5519aa41a6cb629cda5`  
-		Last Modified: Mon, 08 Jun 2020 20:00:47 GMT  
+	-	`sha256:8ed86e915e95aa110f50b68b8bb8e25f829a334faff5804264893ce271d375d3`  
+		Last Modified: Wed, 10 Jun 2020 07:57:26 GMT  
 		Size: 172.0 MB (172033048 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38651e421e25d5a0ba15af537db604f3d7bfc8361f98bbaa0c2eeb0b5cb5a03a`  
-		Last Modified: Mon, 08 Jun 2020 19:58:49 GMT  
-		Size: 6.3 KB (6252 bytes)  
+	-	`sha256:e500a46f340494590f2fa5758b12abdc661cb3823e72039f50e2b581adfe58e3`  
+		Last Modified: Wed, 10 Jun 2020 07:57:15 GMT  
+		Size: 6.2 KB (6246 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:8.0-slim` - linux; arm64 variant v8
@@ -4507,7 +4507,7 @@ CMD ["solr-foreground"]
 ## `solr:8.1`
 
 ```console
-$ docker pull solr@sha256:076380c00989c278a63b42f786445e186d61de62c8ad03eeb8f513db7614d2c1
+$ docker pull solr@sha256:a6d59bba15ccf77be5b6455de5c2b0f5685540872d517b7f0bd3becf6cd8fb34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4518,132 +4518,132 @@ $ docker pull solr@sha256:076380c00989c278a63b42f786445e186d61de62c8ad03eeb8f513
 ### `solr:8.1` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:d4816ad554031fa791f2dd1322b4327a9c8ebb116e793bbb2299ff575c7c4145
+$ docker pull solr@sha256:1ca5e3819d4c9ac080f635d64e9e65b758fa33232c8470ee87ad1d0bfd7737d8
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **294.0 MB (293981340 bytes)**  
+-	Total Size: **294.0 MB (293979063 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:505a4f9f1ffd6c44afba47e5a5a7c505a4a2246a0ce7417f0abdc90c4460f559`
+-	Image ID: `sha256:a84c7086b4a860625998ccbfd0dcde8ae710239a041e64a7986c606f3340677f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:12 GMT
-ADD file:fb54c709daa205bf9d04eb3d90ba068db4c34dfe3b6ec0d7691f677286120903 in / 
-# Fri, 15 May 2020 06:28:13 GMT
+# Tue, 09 Jun 2020 01:20:39 GMT
+ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
+# Tue, 09 Jun 2020 01:20:39 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 17:32:13 GMT
+# Tue, 09 Jun 2020 01:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 17:32:19 GMT
+# Tue, 09 Jun 2020 01:46:41 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:33 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:03:38 GMT
+# Tue, 09 Jun 2020 16:38:12 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:29:39 GMT
+# Wed, 10 Jun 2020 07:45:28 GMT
 ARG SOLR_VERSION=8.1.1
-# Mon, 08 Jun 2020 19:29:39 GMT
+# Wed, 10 Jun 2020 07:45:28 GMT
 ARG SOLR_SHA512=abb669374f06412b7827a0059de5622497f5ceb2a36d4b769a4d3bae88d820703b9b9f6caff110793f69a7f11c73b3cf86b256dad2c06542159efffd54ff20cc
-# Mon, 08 Jun 2020 19:29:39 GMT
+# Wed, 10 Jun 2020 07:45:28 GMT
 ARG SOLR_KEYS=F23F054D9EC50F2397FF2B814E67A2711D053DDB
-# Mon, 08 Jun 2020 19:29:40 GMT
+# Wed, 10 Jun 2020 07:45:28 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:29:40 GMT
+# Wed, 10 Jun 2020 07:45:28 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:29:45 GMT
+# Wed, 10 Jun 2020 07:45:34 GMT
 # ARGS: SOLR_KEYS=F23F054D9EC50F2397FF2B814E67A2711D053DDB SOLR_SHA512=abb669374f06412b7827a0059de5622497f5ceb2a36d4b769a4d3bae88d820703b9b9f6caff110793f69a7f11c73b3cf86b256dad2c06542159efffd54ff20cc SOLR_VERSION=8.1.1
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:29:46 GMT
+# Wed, 10 Jun 2020 07:45:34 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.1.1/solr-8.1.1.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.1.1/solr-8.1.1.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.1.1/solr-8.1.1.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:29:46 GMT
+# Wed, 10 Jun 2020 07:45:35 GMT
 # ARGS: SOLR_KEYS=F23F054D9EC50F2397FF2B814E67A2711D053DDB SOLR_SHA512=abb669374f06412b7827a0059de5622497f5ceb2a36d4b769a4d3bae88d820703b9b9f6caff110793f69a7f11c73b3cf86b256dad2c06542159efffd54ff20cc SOLR_VERSION=8.1.1
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:29:47 GMT
+# Wed, 10 Jun 2020 07:45:36 GMT
 # ARGS: SOLR_KEYS=F23F054D9EC50F2397FF2B814E67A2711D053DDB SOLR_SHA512=abb669374f06412b7827a0059de5622497f5ceb2a36d4b769a4d3bae88d820703b9b9f6caff110793f69a7f11c73b3cf86b256dad2c06542159efffd54ff20cc SOLR_VERSION=8.1.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:30:03 GMT
+# Wed, 10 Jun 2020 07:45:52 GMT
 # ARGS: SOLR_KEYS=F23F054D9EC50F2397FF2B814E67A2711D053DDB SOLR_SHA512=abb669374f06412b7827a0059de5622497f5ceb2a36d4b769a4d3bae88d820703b9b9f6caff110793f69a7f11c73b3cf86b256dad2c06542159efffd54ff20cc SOLR_VERSION=8.1.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:30:03 GMT
+# Wed, 10 Jun 2020 07:45:52 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:30:03 GMT
+# Wed, 10 Jun 2020 07:45:52 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:30:03 GMT
+# Wed, 10 Jun 2020 07:45:52 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:30:04 GMT
+# Wed, 10 Jun 2020 07:45:52 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:30:04 GMT
+# Wed, 10 Jun 2020 07:45:53 GMT
 USER solr
-# Mon, 08 Jun 2020 19:30:04 GMT
+# Wed, 10 Jun 2020 07:45:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:30:04 GMT
+# Wed, 10 Jun 2020 07:45:53 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:376057ac6fa17f65688c56977118e2e764b27c348b3f70637fa829cd2a12b200`  
-		Last Modified: Fri, 15 May 2020 06:37:20 GMT  
-		Size: 50.4 MB (50391294 bytes)  
+	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
+		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
+		Size: 50.4 MB (50389504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a63a0a859d859478f30461786a49c2fca3ae7d89ab5b5ce3c81c54951d30f88`  
-		Last Modified: Fri, 15 May 2020 17:50:44 GMT  
-		Size: 7.8 MB (7812354 bytes)  
+	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 7.8 MB (7811709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:496548a8c952b37bdf149ab3654f9085d721ee126b8c73b16860778be5137f5e`  
-		Last Modified: Fri, 15 May 2020 17:50:49 GMT  
-		Size: 10.0 MB (9996284 bytes)  
+	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 10.0 MB (9996168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94b2daf7a1b5f537cba1c514f668125cbe30051a963fceee666de62352eb49ca`  
-		Last Modified: Fri, 15 May 2020 21:10:23 GMT  
-		Size: 5.5 MB (5529320 bytes)  
+	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
+		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
+		Size: 5.5 MB (5529317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8058d73803f3a05ad139e4bb713b7d93fb29f671441f1be35e844bb94a47152a`  
-		Last Modified: Fri, 15 May 2020 21:10:22 GMT  
-		Size: 211.0 B  
+	-	`sha256:e440f69a0a762646d5aed47652c8a122f43b415f52b87a90eb14690e1426fd0f`  
+		Last Modified: Tue, 09 Jun 2020 16:45:02 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dc4c151e7bebd2e3066851d6bc5ed2cfa0a9299b7e89cea9181a8994fa09abc`  
-		Last Modified: Fri, 15 May 2020 21:10:31 GMT  
-		Size: 41.9 MB (41941113 bytes)  
+	-	`sha256:837b533a935df78a47a09e44fd06c8ec7af6624ef1eec0d69e8d7d208efe2434`  
+		Last Modified: Tue, 09 Jun 2020 16:45:14 GMT  
+		Size: 41.9 MB (41941557 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9e3af099f1998e114923e35692265bf92eccdf2540e7177a34f2043a037ebf8`  
-		Last Modified: Mon, 08 Jun 2020 19:54:54 GMT  
-		Size: 2.5 MB (2545788 bytes)  
+	-	`sha256:ccd40568788a3a05c0808c5adcd72310cd94c886610c94300399bb1979d657b8`  
+		Last Modified: Wed, 10 Jun 2020 07:56:32 GMT  
+		Size: 2.5 MB (2545767 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6e8eff3451a69ea5bc065b4b79a61ea85831a51cd43cdd0a68b0e448320ffde`  
-		Last Modified: Mon, 08 Jun 2020 19:54:53 GMT  
-		Size: 4.3 KB (4289 bytes)  
+	-	`sha256:a0741899a051492e65ed6d1ea26348f1d0d898c2c49ec9d450bc1899ba1beb0b`  
+		Last Modified: Wed, 10 Jun 2020 07:56:31 GMT  
+		Size: 4.3 KB (4285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc7672d4cc682f41168141467b5ae68a18ba4f08b20a47f9a633622d64f10af4`  
-		Last Modified: Mon, 08 Jun 2020 19:54:53 GMT  
-		Size: 2.9 KB (2882 bytes)  
+	-	`sha256:3671f5d26f67f5523e29e6f8a3e8ad635f80d32eb919a661144ce229d3e98126`  
+		Last Modified: Wed, 10 Jun 2020 07:56:31 GMT  
+		Size: 2.9 KB (2881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97388f6fbdeb0a706135833de2a729cda7289af35bcae2686eca0ae90e243dc8`  
-		Last Modified: Mon, 08 Jun 2020 19:55:12 GMT  
-		Size: 175.8 MB (175751558 bytes)  
+	-	`sha256:cb82c5d515f51db7027ff3e6a2ba49dca97ead37a6c186e63e3a46f99ece637c`  
+		Last Modified: Wed, 10 Jun 2020 07:56:41 GMT  
+		Size: 175.8 MB (175751416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee72100f58abb2d5aa78eddd285971e3c81e6dabba41b1f08c3c30bb07fab827`  
-		Last Modified: Mon, 08 Jun 2020 19:54:53 GMT  
-		Size: 6.2 KB (6247 bytes)  
+	-	`sha256:2f658c9483f1a4857752449f6159f7fe2437507c3b317d946002c4e8ac8dfe20`  
+		Last Modified: Wed, 10 Jun 2020 07:56:31 GMT  
+		Size: 6.2 KB (6249 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:8.1` - linux; arm64 variant v8
@@ -4780,7 +4780,7 @@ CMD ["solr-foreground"]
 ## `solr:8.1.1`
 
 ```console
-$ docker pull solr@sha256:076380c00989c278a63b42f786445e186d61de62c8ad03eeb8f513db7614d2c1
+$ docker pull solr@sha256:a6d59bba15ccf77be5b6455de5c2b0f5685540872d517b7f0bd3becf6cd8fb34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4791,132 +4791,132 @@ $ docker pull solr@sha256:076380c00989c278a63b42f786445e186d61de62c8ad03eeb8f513
 ### `solr:8.1.1` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:d4816ad554031fa791f2dd1322b4327a9c8ebb116e793bbb2299ff575c7c4145
+$ docker pull solr@sha256:1ca5e3819d4c9ac080f635d64e9e65b758fa33232c8470ee87ad1d0bfd7737d8
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **294.0 MB (293981340 bytes)**  
+-	Total Size: **294.0 MB (293979063 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:505a4f9f1ffd6c44afba47e5a5a7c505a4a2246a0ce7417f0abdc90c4460f559`
+-	Image ID: `sha256:a84c7086b4a860625998ccbfd0dcde8ae710239a041e64a7986c606f3340677f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:12 GMT
-ADD file:fb54c709daa205bf9d04eb3d90ba068db4c34dfe3b6ec0d7691f677286120903 in / 
-# Fri, 15 May 2020 06:28:13 GMT
+# Tue, 09 Jun 2020 01:20:39 GMT
+ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
+# Tue, 09 Jun 2020 01:20:39 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 17:32:13 GMT
+# Tue, 09 Jun 2020 01:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 17:32:19 GMT
+# Tue, 09 Jun 2020 01:46:41 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:33 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:03:38 GMT
+# Tue, 09 Jun 2020 16:38:12 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:29:39 GMT
+# Wed, 10 Jun 2020 07:45:28 GMT
 ARG SOLR_VERSION=8.1.1
-# Mon, 08 Jun 2020 19:29:39 GMT
+# Wed, 10 Jun 2020 07:45:28 GMT
 ARG SOLR_SHA512=abb669374f06412b7827a0059de5622497f5ceb2a36d4b769a4d3bae88d820703b9b9f6caff110793f69a7f11c73b3cf86b256dad2c06542159efffd54ff20cc
-# Mon, 08 Jun 2020 19:29:39 GMT
+# Wed, 10 Jun 2020 07:45:28 GMT
 ARG SOLR_KEYS=F23F054D9EC50F2397FF2B814E67A2711D053DDB
-# Mon, 08 Jun 2020 19:29:40 GMT
+# Wed, 10 Jun 2020 07:45:28 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:29:40 GMT
+# Wed, 10 Jun 2020 07:45:28 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:29:45 GMT
+# Wed, 10 Jun 2020 07:45:34 GMT
 # ARGS: SOLR_KEYS=F23F054D9EC50F2397FF2B814E67A2711D053DDB SOLR_SHA512=abb669374f06412b7827a0059de5622497f5ceb2a36d4b769a4d3bae88d820703b9b9f6caff110793f69a7f11c73b3cf86b256dad2c06542159efffd54ff20cc SOLR_VERSION=8.1.1
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:29:46 GMT
+# Wed, 10 Jun 2020 07:45:34 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.1.1/solr-8.1.1.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.1.1/solr-8.1.1.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.1.1/solr-8.1.1.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:29:46 GMT
+# Wed, 10 Jun 2020 07:45:35 GMT
 # ARGS: SOLR_KEYS=F23F054D9EC50F2397FF2B814E67A2711D053DDB SOLR_SHA512=abb669374f06412b7827a0059de5622497f5ceb2a36d4b769a4d3bae88d820703b9b9f6caff110793f69a7f11c73b3cf86b256dad2c06542159efffd54ff20cc SOLR_VERSION=8.1.1
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:29:47 GMT
+# Wed, 10 Jun 2020 07:45:36 GMT
 # ARGS: SOLR_KEYS=F23F054D9EC50F2397FF2B814E67A2711D053DDB SOLR_SHA512=abb669374f06412b7827a0059de5622497f5ceb2a36d4b769a4d3bae88d820703b9b9f6caff110793f69a7f11c73b3cf86b256dad2c06542159efffd54ff20cc SOLR_VERSION=8.1.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:30:03 GMT
+# Wed, 10 Jun 2020 07:45:52 GMT
 # ARGS: SOLR_KEYS=F23F054D9EC50F2397FF2B814E67A2711D053DDB SOLR_SHA512=abb669374f06412b7827a0059de5622497f5ceb2a36d4b769a4d3bae88d820703b9b9f6caff110793f69a7f11c73b3cf86b256dad2c06542159efffd54ff20cc SOLR_VERSION=8.1.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:30:03 GMT
+# Wed, 10 Jun 2020 07:45:52 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:30:03 GMT
+# Wed, 10 Jun 2020 07:45:52 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:30:03 GMT
+# Wed, 10 Jun 2020 07:45:52 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:30:04 GMT
+# Wed, 10 Jun 2020 07:45:52 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:30:04 GMT
+# Wed, 10 Jun 2020 07:45:53 GMT
 USER solr
-# Mon, 08 Jun 2020 19:30:04 GMT
+# Wed, 10 Jun 2020 07:45:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:30:04 GMT
+# Wed, 10 Jun 2020 07:45:53 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:376057ac6fa17f65688c56977118e2e764b27c348b3f70637fa829cd2a12b200`  
-		Last Modified: Fri, 15 May 2020 06:37:20 GMT  
-		Size: 50.4 MB (50391294 bytes)  
+	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
+		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
+		Size: 50.4 MB (50389504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a63a0a859d859478f30461786a49c2fca3ae7d89ab5b5ce3c81c54951d30f88`  
-		Last Modified: Fri, 15 May 2020 17:50:44 GMT  
-		Size: 7.8 MB (7812354 bytes)  
+	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 7.8 MB (7811709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:496548a8c952b37bdf149ab3654f9085d721ee126b8c73b16860778be5137f5e`  
-		Last Modified: Fri, 15 May 2020 17:50:49 GMT  
-		Size: 10.0 MB (9996284 bytes)  
+	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 10.0 MB (9996168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94b2daf7a1b5f537cba1c514f668125cbe30051a963fceee666de62352eb49ca`  
-		Last Modified: Fri, 15 May 2020 21:10:23 GMT  
-		Size: 5.5 MB (5529320 bytes)  
+	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
+		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
+		Size: 5.5 MB (5529317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8058d73803f3a05ad139e4bb713b7d93fb29f671441f1be35e844bb94a47152a`  
-		Last Modified: Fri, 15 May 2020 21:10:22 GMT  
-		Size: 211.0 B  
+	-	`sha256:e440f69a0a762646d5aed47652c8a122f43b415f52b87a90eb14690e1426fd0f`  
+		Last Modified: Tue, 09 Jun 2020 16:45:02 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dc4c151e7bebd2e3066851d6bc5ed2cfa0a9299b7e89cea9181a8994fa09abc`  
-		Last Modified: Fri, 15 May 2020 21:10:31 GMT  
-		Size: 41.9 MB (41941113 bytes)  
+	-	`sha256:837b533a935df78a47a09e44fd06c8ec7af6624ef1eec0d69e8d7d208efe2434`  
+		Last Modified: Tue, 09 Jun 2020 16:45:14 GMT  
+		Size: 41.9 MB (41941557 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9e3af099f1998e114923e35692265bf92eccdf2540e7177a34f2043a037ebf8`  
-		Last Modified: Mon, 08 Jun 2020 19:54:54 GMT  
-		Size: 2.5 MB (2545788 bytes)  
+	-	`sha256:ccd40568788a3a05c0808c5adcd72310cd94c886610c94300399bb1979d657b8`  
+		Last Modified: Wed, 10 Jun 2020 07:56:32 GMT  
+		Size: 2.5 MB (2545767 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6e8eff3451a69ea5bc065b4b79a61ea85831a51cd43cdd0a68b0e448320ffde`  
-		Last Modified: Mon, 08 Jun 2020 19:54:53 GMT  
-		Size: 4.3 KB (4289 bytes)  
+	-	`sha256:a0741899a051492e65ed6d1ea26348f1d0d898c2c49ec9d450bc1899ba1beb0b`  
+		Last Modified: Wed, 10 Jun 2020 07:56:31 GMT  
+		Size: 4.3 KB (4285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc7672d4cc682f41168141467b5ae68a18ba4f08b20a47f9a633622d64f10af4`  
-		Last Modified: Mon, 08 Jun 2020 19:54:53 GMT  
-		Size: 2.9 KB (2882 bytes)  
+	-	`sha256:3671f5d26f67f5523e29e6f8a3e8ad635f80d32eb919a661144ce229d3e98126`  
+		Last Modified: Wed, 10 Jun 2020 07:56:31 GMT  
+		Size: 2.9 KB (2881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97388f6fbdeb0a706135833de2a729cda7289af35bcae2686eca0ae90e243dc8`  
-		Last Modified: Mon, 08 Jun 2020 19:55:12 GMT  
-		Size: 175.8 MB (175751558 bytes)  
+	-	`sha256:cb82c5d515f51db7027ff3e6a2ba49dca97ead37a6c186e63e3a46f99ece637c`  
+		Last Modified: Wed, 10 Jun 2020 07:56:41 GMT  
+		Size: 175.8 MB (175751416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee72100f58abb2d5aa78eddd285971e3c81e6dabba41b1f08c3c30bb07fab827`  
-		Last Modified: Mon, 08 Jun 2020 19:54:53 GMT  
-		Size: 6.2 KB (6247 bytes)  
+	-	`sha256:2f658c9483f1a4857752449f6159f7fe2437507c3b317d946002c4e8ac8dfe20`  
+		Last Modified: Wed, 10 Jun 2020 07:56:31 GMT  
+		Size: 6.2 KB (6249 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:8.1.1` - linux; arm64 variant v8
@@ -5053,7 +5053,7 @@ CMD ["solr-foreground"]
 ## `solr:8.1.1-slim`
 
 ```console
-$ docker pull solr@sha256:f6c26f6d17665de147682d2c26efffaad25ac40e41fab0fc523a580b8ed3fbad
+$ docker pull solr@sha256:cb26d6bd75c7905cb9bd5c6e964468bc6fbde4103f2c9ed966b512df0d564771
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5064,120 +5064,120 @@ $ docker pull solr@sha256:f6c26f6d17665de147682d2c26efffaad25ac40e41fab0fc523a58
 ### `solr:8.1.1-slim` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:4d731154e83019bae0d493aea3f4a8c137063368fd6ec8684d7a70780eac0664
+$ docker pull solr@sha256:820152e1544a81abb46085f5eadf7149562c4d5d34945a20b2d7eb3b38a5f7b2
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.8 MB (254781032 bytes)**  
+-	Total Size: **254.8 MB (254781427 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8097648e9434e4c0c569b8d08e050310d68d6a7f49371159f71703a97d6cd7b4`
+-	Image ID: `sha256:db2d7df5e97ccde583adbdca29f939b691ffb2d9122cfe8300a8219028ce3562`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:44 GMT
-ADD file:7780c81c33e6cc5b6261af4a6c611cce0f39dec3131009bb297e65f12020c150 in / 
-# Fri, 15 May 2020 06:28:44 GMT
+# Tue, 09 Jun 2020 01:20:56 GMT
+ADD file:4d35f6c8bbbe6801cc5f44989730fb6d349a644ecb36eca481e7df25842d6321 in / 
+# Tue, 09 Jun 2020 01:20:56 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:37 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:02:50 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:02:51 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:04:03 GMT
+# Tue, 09 Jun 2020 16:38:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:30:08 GMT
+# Wed, 10 Jun 2020 07:45:57 GMT
 ARG SOLR_VERSION=8.1.1
-# Mon, 08 Jun 2020 19:30:08 GMT
+# Wed, 10 Jun 2020 07:45:57 GMT
 ARG SOLR_SHA512=abb669374f06412b7827a0059de5622497f5ceb2a36d4b769a4d3bae88d820703b9b9f6caff110793f69a7f11c73b3cf86b256dad2c06542159efffd54ff20cc
-# Mon, 08 Jun 2020 19:30:08 GMT
+# Wed, 10 Jun 2020 07:45:57 GMT
 ARG SOLR_KEYS=F23F054D9EC50F2397FF2B814E67A2711D053DDB
-# Mon, 08 Jun 2020 19:30:09 GMT
+# Wed, 10 Jun 2020 07:45:58 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:30:09 GMT
+# Wed, 10 Jun 2020 07:45:58 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:30:16 GMT
+# Wed, 10 Jun 2020 07:46:05 GMT
 # ARGS: SOLR_KEYS=F23F054D9EC50F2397FF2B814E67A2711D053DDB SOLR_SHA512=abb669374f06412b7827a0059de5622497f5ceb2a36d4b769a4d3bae88d820703b9b9f6caff110793f69a7f11c73b3cf86b256dad2c06542159efffd54ff20cc SOLR_VERSION=8.1.1
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:30:16 GMT
+# Wed, 10 Jun 2020 07:46:05 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.1.1/solr-8.1.1.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.1.1/solr-8.1.1.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.1.1/solr-8.1.1.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:30:17 GMT
+# Wed, 10 Jun 2020 07:46:06 GMT
 # ARGS: SOLR_KEYS=F23F054D9EC50F2397FF2B814E67A2711D053DDB SOLR_SHA512=abb669374f06412b7827a0059de5622497f5ceb2a36d4b769a4d3bae88d820703b9b9f6caff110793f69a7f11c73b3cf86b256dad2c06542159efffd54ff20cc SOLR_VERSION=8.1.1
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:30:18 GMT
+# Wed, 10 Jun 2020 07:46:07 GMT
 # ARGS: SOLR_KEYS=F23F054D9EC50F2397FF2B814E67A2711D053DDB SOLR_SHA512=abb669374f06412b7827a0059de5622497f5ceb2a36d4b769a4d3bae88d820703b9b9f6caff110793f69a7f11c73b3cf86b256dad2c06542159efffd54ff20cc SOLR_VERSION=8.1.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:30:33 GMT
+# Wed, 10 Jun 2020 07:46:22 GMT
 # ARGS: SOLR_KEYS=F23F054D9EC50F2397FF2B814E67A2711D053DDB SOLR_SHA512=abb669374f06412b7827a0059de5622497f5ceb2a36d4b769a4d3bae88d820703b9b9f6caff110793f69a7f11c73b3cf86b256dad2c06542159efffd54ff20cc SOLR_VERSION=8.1.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:30:33 GMT
+# Wed, 10 Jun 2020 07:46:23 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:30:34 GMT
+# Wed, 10 Jun 2020 07:46:23 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:30:34 GMT
+# Wed, 10 Jun 2020 07:46:24 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:30:34 GMT
+# Wed, 10 Jun 2020 07:46:24 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:30:34 GMT
+# Wed, 10 Jun 2020 07:46:24 GMT
 USER solr
-# Mon, 08 Jun 2020 19:30:34 GMT
+# Wed, 10 Jun 2020 07:46:24 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:30:35 GMT
+# Wed, 10 Jun 2020 07:46:24 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:afb6ec6fdc1c3ba04f7a56db32c5ff5ff38962dc4cd0ffdef5beaa0ce2eb77e2`  
-		Last Modified: Fri, 15 May 2020 06:37:39 GMT  
-		Size: 27.1 MB (27098756 bytes)  
+	-	`sha256:8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df`  
+		Last Modified: Tue, 09 Jun 2020 01:25:50 GMT  
+		Size: 27.1 MB (27098265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee19e84e8bd1140527176689c9c1a75f28c0462c0c714e549536452708cbfb64`  
-		Last Modified: Fri, 15 May 2020 21:07:16 GMT  
-		Size: 3.2 MB (3249166 bytes)  
+	-	`sha256:65306eca6b8ea03d29cd8d10a31e9d7a6a1cf8766fe4ca3913e75e00fc47be79`  
+		Last Modified: Tue, 09 Jun 2020 16:41:33 GMT  
+		Size: 3.2 MB (3248452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ac787417531d48ce82f6180741b078086d62631806d5b1ca0d2763fd63b3826`  
-		Last Modified: Fri, 15 May 2020 21:09:46 GMT  
-		Size: 211.0 B  
+	-	`sha256:ddbf88050b6e7cbe8b76b77196134f31015ef5cb69123ba6af35da6f5b101459`  
+		Last Modified: Tue, 09 Jun 2020 16:44:15 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3f781d4d83e8b462ca228cb269f0d69cfac7973216d1937b288373a01e01e58`  
-		Last Modified: Fri, 15 May 2020 21:10:46 GMT  
-		Size: 42.2 MB (42214711 bytes)  
+	-	`sha256:0cb03c61bf260965ae2dc495175ab87e56951ad9ee8dc26f028c430e770f77fe`  
+		Last Modified: Tue, 09 Jun 2020 16:45:32 GMT  
+		Size: 42.2 MB (42216357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:389de13a0d2fc8fd197f2909e06fc91a651c2732175b575675bfdfe0a801ed70`  
-		Last Modified: Mon, 08 Jun 2020 19:55:21 GMT  
-		Size: 6.5 MB (6453334 bytes)  
+	-	`sha256:9e04546b07bb9af47f7c1c32d9b695ff0be6b2ea7496a6b0a22177123b017fe6`  
+		Last Modified: Wed, 10 Jun 2020 07:56:47 GMT  
+		Size: 6.5 MB (6453266 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e553aa0d7f2d15e7e36673101770f537ec2fb96fbeb7b4a8845c3846dea5011`  
-		Last Modified: Mon, 08 Jun 2020 19:55:19 GMT  
-		Size: 4.3 KB (4291 bytes)  
+	-	`sha256:4cbbbcb6c39b18934480b6c11a4ef61b1905ed23ee7a6bb3da460cbb26f6015e`  
+		Last Modified: Wed, 10 Jun 2020 07:56:46 GMT  
+		Size: 4.3 KB (4283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc79bcbfbedf2461286e8479cbcd278528bd8c86e325071d14fbed3a619ce706`  
-		Last Modified: Mon, 08 Jun 2020 19:55:18 GMT  
-		Size: 2.9 KB (2878 bytes)  
+	-	`sha256:3a05b5d2f0bceb15fd27fc08fec969a36a00cd8cf6a59a62c951ac2cd6a0ab61`  
+		Last Modified: Wed, 10 Jun 2020 07:56:46 GMT  
+		Size: 2.9 KB (2876 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:96bffe952e1d8d35f7b56b181dbcd2d7da04a939b974c3e7c507fd56a36e6d05`  
-		Last Modified: Mon, 08 Jun 2020 19:58:19 GMT  
-		Size: 175.8 MB (175751440 bytes)  
+	-	`sha256:cf9038e4e7d3e9c363768947a0b8f5dd5794c95a94d09e4bb310c7a5aec50acf`  
+		Last Modified: Wed, 10 Jun 2020 07:56:56 GMT  
+		Size: 175.8 MB (175751470 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:00f67831942430ac2ef77146d095ad90541d9a6ba63d5e1024f5a57b6fd0dad8`  
-		Last Modified: Mon, 08 Jun 2020 19:55:18 GMT  
-		Size: 6.2 KB (6245 bytes)  
+	-	`sha256:20bb22b4f9e5ad489b5d84ef90e39118e433a61e41825e37416d34a6df576613`  
+		Last Modified: Wed, 10 Jun 2020 07:56:46 GMT  
+		Size: 6.2 KB (6248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:8.1.1-slim` - linux; arm64 variant v8
@@ -5302,7 +5302,7 @@ CMD ["solr-foreground"]
 ## `solr:8.1-slim`
 
 ```console
-$ docker pull solr@sha256:f6c26f6d17665de147682d2c26efffaad25ac40e41fab0fc523a580b8ed3fbad
+$ docker pull solr@sha256:cb26d6bd75c7905cb9bd5c6e964468bc6fbde4103f2c9ed966b512df0d564771
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5313,120 +5313,120 @@ $ docker pull solr@sha256:f6c26f6d17665de147682d2c26efffaad25ac40e41fab0fc523a58
 ### `solr:8.1-slim` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:4d731154e83019bae0d493aea3f4a8c137063368fd6ec8684d7a70780eac0664
+$ docker pull solr@sha256:820152e1544a81abb46085f5eadf7149562c4d5d34945a20b2d7eb3b38a5f7b2
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.8 MB (254781032 bytes)**  
+-	Total Size: **254.8 MB (254781427 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8097648e9434e4c0c569b8d08e050310d68d6a7f49371159f71703a97d6cd7b4`
+-	Image ID: `sha256:db2d7df5e97ccde583adbdca29f939b691ffb2d9122cfe8300a8219028ce3562`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:44 GMT
-ADD file:7780c81c33e6cc5b6261af4a6c611cce0f39dec3131009bb297e65f12020c150 in / 
-# Fri, 15 May 2020 06:28:44 GMT
+# Tue, 09 Jun 2020 01:20:56 GMT
+ADD file:4d35f6c8bbbe6801cc5f44989730fb6d349a644ecb36eca481e7df25842d6321 in / 
+# Tue, 09 Jun 2020 01:20:56 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:37 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:02:50 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:02:51 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:04:03 GMT
+# Tue, 09 Jun 2020 16:38:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:30:08 GMT
+# Wed, 10 Jun 2020 07:45:57 GMT
 ARG SOLR_VERSION=8.1.1
-# Mon, 08 Jun 2020 19:30:08 GMT
+# Wed, 10 Jun 2020 07:45:57 GMT
 ARG SOLR_SHA512=abb669374f06412b7827a0059de5622497f5ceb2a36d4b769a4d3bae88d820703b9b9f6caff110793f69a7f11c73b3cf86b256dad2c06542159efffd54ff20cc
-# Mon, 08 Jun 2020 19:30:08 GMT
+# Wed, 10 Jun 2020 07:45:57 GMT
 ARG SOLR_KEYS=F23F054D9EC50F2397FF2B814E67A2711D053DDB
-# Mon, 08 Jun 2020 19:30:09 GMT
+# Wed, 10 Jun 2020 07:45:58 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:30:09 GMT
+# Wed, 10 Jun 2020 07:45:58 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:30:16 GMT
+# Wed, 10 Jun 2020 07:46:05 GMT
 # ARGS: SOLR_KEYS=F23F054D9EC50F2397FF2B814E67A2711D053DDB SOLR_SHA512=abb669374f06412b7827a0059de5622497f5ceb2a36d4b769a4d3bae88d820703b9b9f6caff110793f69a7f11c73b3cf86b256dad2c06542159efffd54ff20cc SOLR_VERSION=8.1.1
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:30:16 GMT
+# Wed, 10 Jun 2020 07:46:05 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.1.1/solr-8.1.1.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.1.1/solr-8.1.1.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.1.1/solr-8.1.1.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:30:17 GMT
+# Wed, 10 Jun 2020 07:46:06 GMT
 # ARGS: SOLR_KEYS=F23F054D9EC50F2397FF2B814E67A2711D053DDB SOLR_SHA512=abb669374f06412b7827a0059de5622497f5ceb2a36d4b769a4d3bae88d820703b9b9f6caff110793f69a7f11c73b3cf86b256dad2c06542159efffd54ff20cc SOLR_VERSION=8.1.1
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:30:18 GMT
+# Wed, 10 Jun 2020 07:46:07 GMT
 # ARGS: SOLR_KEYS=F23F054D9EC50F2397FF2B814E67A2711D053DDB SOLR_SHA512=abb669374f06412b7827a0059de5622497f5ceb2a36d4b769a4d3bae88d820703b9b9f6caff110793f69a7f11c73b3cf86b256dad2c06542159efffd54ff20cc SOLR_VERSION=8.1.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:30:33 GMT
+# Wed, 10 Jun 2020 07:46:22 GMT
 # ARGS: SOLR_KEYS=F23F054D9EC50F2397FF2B814E67A2711D053DDB SOLR_SHA512=abb669374f06412b7827a0059de5622497f5ceb2a36d4b769a4d3bae88d820703b9b9f6caff110793f69a7f11c73b3cf86b256dad2c06542159efffd54ff20cc SOLR_VERSION=8.1.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:30:33 GMT
+# Wed, 10 Jun 2020 07:46:23 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:30:34 GMT
+# Wed, 10 Jun 2020 07:46:23 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:30:34 GMT
+# Wed, 10 Jun 2020 07:46:24 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:30:34 GMT
+# Wed, 10 Jun 2020 07:46:24 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:30:34 GMT
+# Wed, 10 Jun 2020 07:46:24 GMT
 USER solr
-# Mon, 08 Jun 2020 19:30:34 GMT
+# Wed, 10 Jun 2020 07:46:24 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:30:35 GMT
+# Wed, 10 Jun 2020 07:46:24 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:afb6ec6fdc1c3ba04f7a56db32c5ff5ff38962dc4cd0ffdef5beaa0ce2eb77e2`  
-		Last Modified: Fri, 15 May 2020 06:37:39 GMT  
-		Size: 27.1 MB (27098756 bytes)  
+	-	`sha256:8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df`  
+		Last Modified: Tue, 09 Jun 2020 01:25:50 GMT  
+		Size: 27.1 MB (27098265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee19e84e8bd1140527176689c9c1a75f28c0462c0c714e549536452708cbfb64`  
-		Last Modified: Fri, 15 May 2020 21:07:16 GMT  
-		Size: 3.2 MB (3249166 bytes)  
+	-	`sha256:65306eca6b8ea03d29cd8d10a31e9d7a6a1cf8766fe4ca3913e75e00fc47be79`  
+		Last Modified: Tue, 09 Jun 2020 16:41:33 GMT  
+		Size: 3.2 MB (3248452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ac787417531d48ce82f6180741b078086d62631806d5b1ca0d2763fd63b3826`  
-		Last Modified: Fri, 15 May 2020 21:09:46 GMT  
-		Size: 211.0 B  
+	-	`sha256:ddbf88050b6e7cbe8b76b77196134f31015ef5cb69123ba6af35da6f5b101459`  
+		Last Modified: Tue, 09 Jun 2020 16:44:15 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3f781d4d83e8b462ca228cb269f0d69cfac7973216d1937b288373a01e01e58`  
-		Last Modified: Fri, 15 May 2020 21:10:46 GMT  
-		Size: 42.2 MB (42214711 bytes)  
+	-	`sha256:0cb03c61bf260965ae2dc495175ab87e56951ad9ee8dc26f028c430e770f77fe`  
+		Last Modified: Tue, 09 Jun 2020 16:45:32 GMT  
+		Size: 42.2 MB (42216357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:389de13a0d2fc8fd197f2909e06fc91a651c2732175b575675bfdfe0a801ed70`  
-		Last Modified: Mon, 08 Jun 2020 19:55:21 GMT  
-		Size: 6.5 MB (6453334 bytes)  
+	-	`sha256:9e04546b07bb9af47f7c1c32d9b695ff0be6b2ea7496a6b0a22177123b017fe6`  
+		Last Modified: Wed, 10 Jun 2020 07:56:47 GMT  
+		Size: 6.5 MB (6453266 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e553aa0d7f2d15e7e36673101770f537ec2fb96fbeb7b4a8845c3846dea5011`  
-		Last Modified: Mon, 08 Jun 2020 19:55:19 GMT  
-		Size: 4.3 KB (4291 bytes)  
+	-	`sha256:4cbbbcb6c39b18934480b6c11a4ef61b1905ed23ee7a6bb3da460cbb26f6015e`  
+		Last Modified: Wed, 10 Jun 2020 07:56:46 GMT  
+		Size: 4.3 KB (4283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc79bcbfbedf2461286e8479cbcd278528bd8c86e325071d14fbed3a619ce706`  
-		Last Modified: Mon, 08 Jun 2020 19:55:18 GMT  
-		Size: 2.9 KB (2878 bytes)  
+	-	`sha256:3a05b5d2f0bceb15fd27fc08fec969a36a00cd8cf6a59a62c951ac2cd6a0ab61`  
+		Last Modified: Wed, 10 Jun 2020 07:56:46 GMT  
+		Size: 2.9 KB (2876 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:96bffe952e1d8d35f7b56b181dbcd2d7da04a939b974c3e7c507fd56a36e6d05`  
-		Last Modified: Mon, 08 Jun 2020 19:58:19 GMT  
-		Size: 175.8 MB (175751440 bytes)  
+	-	`sha256:cf9038e4e7d3e9c363768947a0b8f5dd5794c95a94d09e4bb310c7a5aec50acf`  
+		Last Modified: Wed, 10 Jun 2020 07:56:56 GMT  
+		Size: 175.8 MB (175751470 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:00f67831942430ac2ef77146d095ad90541d9a6ba63d5e1024f5a57b6fd0dad8`  
-		Last Modified: Mon, 08 Jun 2020 19:55:18 GMT  
-		Size: 6.2 KB (6245 bytes)  
+	-	`sha256:20bb22b4f9e5ad489b5d84ef90e39118e433a61e41825e37416d34a6df576613`  
+		Last Modified: Wed, 10 Jun 2020 07:56:46 GMT  
+		Size: 6.2 KB (6248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:8.1-slim` - linux; arm64 variant v8
@@ -5551,7 +5551,7 @@ CMD ["solr-foreground"]
 ## `solr:8.2`
 
 ```console
-$ docker pull solr@sha256:372c20758ce44068e37ef53d75a5b492a346536fdf77d922c23d287748ece423
+$ docker pull solr@sha256:34dbdb0cbedc6da1528e63adbdf38e6164adf7fbbfda0589e8dd90dbb9702a0f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5562,132 +5562,132 @@ $ docker pull solr@sha256:372c20758ce44068e37ef53d75a5b492a346536fdf77d922c23d28
 ### `solr:8.2` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:35df696d154870c7d0bbb87d50360628f4f6afbf40e1b5e977eeb98581fe3618
+$ docker pull solr@sha256:efe0cbc16df62a5e4c8177a7a8258f385f811d4a65b96c5a30f6d3f769e37656
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **300.3 MB (300262317 bytes)**  
+-	Total Size: **300.3 MB (300260155 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfcad4bf30efe8164c570e5dd4dac6e5410f36b61efe5708d0091fd68658ac9b`
+-	Image ID: `sha256:1969f1c992c6608655759496aa6998d643de56a54eb7ac77273fc2578d482350`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:12 GMT
-ADD file:fb54c709daa205bf9d04eb3d90ba068db4c34dfe3b6ec0d7691f677286120903 in / 
-# Fri, 15 May 2020 06:28:13 GMT
+# Tue, 09 Jun 2020 01:20:39 GMT
+ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
+# Tue, 09 Jun 2020 01:20:39 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 17:32:13 GMT
+# Tue, 09 Jun 2020 01:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 17:32:19 GMT
+# Tue, 09 Jun 2020 01:46:41 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:33 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:03:38 GMT
+# Tue, 09 Jun 2020 16:38:12 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:28:36 GMT
+# Wed, 10 Jun 2020 07:44:03 GMT
 ARG SOLR_VERSION=8.2.0
-# Mon, 08 Jun 2020 19:28:36 GMT
+# Wed, 10 Jun 2020 07:44:03 GMT
 ARG SOLR_SHA512=beb4e37fc21bf483e3b6bae43cb06a49bc420a0f2b920c97909a69a5efeacba1e7d2ff09ae8018446c87bf007f88f06a59de73cd1923f0967e8206629b0509b6
-# Mon, 08 Jun 2020 19:28:36 GMT
+# Wed, 10 Jun 2020 07:44:04 GMT
 ARG SOLR_KEYS=E58A6F4D5B2B48AC66D5E53BD4F181881A42F9E6
-# Mon, 08 Jun 2020 19:28:36 GMT
+# Wed, 10 Jun 2020 07:44:04 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:28:37 GMT
+# Wed, 10 Jun 2020 07:44:04 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:28:42 GMT
+# Wed, 10 Jun 2020 07:44:09 GMT
 # ARGS: SOLR_KEYS=E58A6F4D5B2B48AC66D5E53BD4F181881A42F9E6 SOLR_SHA512=beb4e37fc21bf483e3b6bae43cb06a49bc420a0f2b920c97909a69a5efeacba1e7d2ff09ae8018446c87bf007f88f06a59de73cd1923f0967e8206629b0509b6 SOLR_VERSION=8.2.0
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:28:42 GMT
+# Wed, 10 Jun 2020 07:44:09 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.2.0/solr-8.2.0.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.2.0/solr-8.2.0.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.2.0/solr-8.2.0.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:28:43 GMT
+# Wed, 10 Jun 2020 07:44:10 GMT
 # ARGS: SOLR_KEYS=E58A6F4D5B2B48AC66D5E53BD4F181881A42F9E6 SOLR_SHA512=beb4e37fc21bf483e3b6bae43cb06a49bc420a0f2b920c97909a69a5efeacba1e7d2ff09ae8018446c87bf007f88f06a59de73cd1923f0967e8206629b0509b6 SOLR_VERSION=8.2.0
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:28:44 GMT
+# Wed, 10 Jun 2020 07:44:11 GMT
 # ARGS: SOLR_KEYS=E58A6F4D5B2B48AC66D5E53BD4F181881A42F9E6 SOLR_SHA512=beb4e37fc21bf483e3b6bae43cb06a49bc420a0f2b920c97909a69a5efeacba1e7d2ff09ae8018446c87bf007f88f06a59de73cd1923f0967e8206629b0509b6 SOLR_VERSION=8.2.0
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:28:59 GMT
+# Wed, 10 Jun 2020 07:44:27 GMT
 # ARGS: SOLR_KEYS=E58A6F4D5B2B48AC66D5E53BD4F181881A42F9E6 SOLR_SHA512=beb4e37fc21bf483e3b6bae43cb06a49bc420a0f2b920c97909a69a5efeacba1e7d2ff09ae8018446c87bf007f88f06a59de73cd1923f0967e8206629b0509b6 SOLR_VERSION=8.2.0
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:29:00 GMT
+# Wed, 10 Jun 2020 07:44:27 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:29:00 GMT
+# Wed, 10 Jun 2020 07:44:28 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:29:00 GMT
+# Wed, 10 Jun 2020 07:44:28 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:29:00 GMT
+# Wed, 10 Jun 2020 07:44:28 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:29:00 GMT
+# Wed, 10 Jun 2020 07:44:28 GMT
 USER solr
-# Mon, 08 Jun 2020 19:29:01 GMT
+# Wed, 10 Jun 2020 07:44:28 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:29:01 GMT
+# Wed, 10 Jun 2020 07:44:29 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:376057ac6fa17f65688c56977118e2e764b27c348b3f70637fa829cd2a12b200`  
-		Last Modified: Fri, 15 May 2020 06:37:20 GMT  
-		Size: 50.4 MB (50391294 bytes)  
+	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
+		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
+		Size: 50.4 MB (50389504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a63a0a859d859478f30461786a49c2fca3ae7d89ab5b5ce3c81c54951d30f88`  
-		Last Modified: Fri, 15 May 2020 17:50:44 GMT  
-		Size: 7.8 MB (7812354 bytes)  
+	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 7.8 MB (7811709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:496548a8c952b37bdf149ab3654f9085d721ee126b8c73b16860778be5137f5e`  
-		Last Modified: Fri, 15 May 2020 17:50:49 GMT  
-		Size: 10.0 MB (9996284 bytes)  
+	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 10.0 MB (9996168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94b2daf7a1b5f537cba1c514f668125cbe30051a963fceee666de62352eb49ca`  
-		Last Modified: Fri, 15 May 2020 21:10:23 GMT  
-		Size: 5.5 MB (5529320 bytes)  
+	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
+		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
+		Size: 5.5 MB (5529317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8058d73803f3a05ad139e4bb713b7d93fb29f671441f1be35e844bb94a47152a`  
-		Last Modified: Fri, 15 May 2020 21:10:22 GMT  
-		Size: 211.0 B  
+	-	`sha256:e440f69a0a762646d5aed47652c8a122f43b415f52b87a90eb14690e1426fd0f`  
+		Last Modified: Tue, 09 Jun 2020 16:45:02 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dc4c151e7bebd2e3066851d6bc5ed2cfa0a9299b7e89cea9181a8994fa09abc`  
-		Last Modified: Fri, 15 May 2020 21:10:31 GMT  
-		Size: 41.9 MB (41941113 bytes)  
+	-	`sha256:837b533a935df78a47a09e44fd06c8ec7af6624ef1eec0d69e8d7d208efe2434`  
+		Last Modified: Tue, 09 Jun 2020 16:45:14 GMT  
+		Size: 41.9 MB (41941557 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:906b7bc40a3a80f7b875b4eea208a2e467e96c7c2fe18a001f84151a0d8483f4`  
-		Last Modified: Mon, 08 Jun 2020 19:52:17 GMT  
-		Size: 2.5 MB (2545752 bytes)  
+	-	`sha256:22f10f31577e018956c93b5a95f2168fd7b60a7781a5b56aeeceae7f92007b33`  
+		Last Modified: Wed, 10 Jun 2020 07:56:00 GMT  
+		Size: 2.5 MB (2545729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc1ad0b392bb0ad9c3d66a91000b376499924e111b3c9453181a0a112d78b594`  
-		Last Modified: Mon, 08 Jun 2020 19:52:17 GMT  
-		Size: 4.3 KB (4288 bytes)  
+	-	`sha256:59d9e84d841f7a409ac34ad3b0a1c6a8405292ac4efa2a3e8c7a59a84315e03a`  
+		Last Modified: Wed, 10 Jun 2020 07:56:00 GMT  
+		Size: 4.3 KB (4287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05da3e63f4ad246ae56b5e29e6e10ec9a8b70c673e7a5ceb1df157342a78b1b7`  
-		Last Modified: Mon, 08 Jun 2020 19:52:16 GMT  
-		Size: 2.9 KB (2885 bytes)  
+	-	`sha256:e1a69eea83d73b64ef69308db1c3fc1ddf3395dd842f0d79d073efbb55d30e17`  
+		Last Modified: Wed, 10 Jun 2020 07:56:00 GMT  
+		Size: 2.9 KB (2877 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb7e85819b3c5cecbe2174fee1f8d080675bf7bfd5d79a489fbc269e2ec91159`  
-		Last Modified: Mon, 08 Jun 2020 19:54:21 GMT  
-		Size: 182.0 MB (182032566 bytes)  
+	-	`sha256:0e7399bef7ee8a30cbf600849296d10ec757d56b6de6a1f4434d0b9b24c3aff0`  
+		Last Modified: Wed, 10 Jun 2020 07:56:10 GMT  
+		Size: 182.0 MB (182032552 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a49d95b075c8ffeb39114e008aa64b9739e0f82504ffda6007900c2e28c74a76`  
-		Last Modified: Mon, 08 Jun 2020 19:52:16 GMT  
-		Size: 6.2 KB (6250 bytes)  
+	-	`sha256:e2ecd974dd94d5f65944535464f95859a2ae6568253814d9733ff2d0600cf7c0`  
+		Last Modified: Wed, 10 Jun 2020 07:56:00 GMT  
+		Size: 6.2 KB (6245 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:8.2` - linux; arm64 variant v8
@@ -5824,7 +5824,7 @@ CMD ["solr-foreground"]
 ## `solr:8.2.0`
 
 ```console
-$ docker pull solr@sha256:372c20758ce44068e37ef53d75a5b492a346536fdf77d922c23d287748ece423
+$ docker pull solr@sha256:34dbdb0cbedc6da1528e63adbdf38e6164adf7fbbfda0589e8dd90dbb9702a0f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5835,132 +5835,132 @@ $ docker pull solr@sha256:372c20758ce44068e37ef53d75a5b492a346536fdf77d922c23d28
 ### `solr:8.2.0` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:35df696d154870c7d0bbb87d50360628f4f6afbf40e1b5e977eeb98581fe3618
+$ docker pull solr@sha256:efe0cbc16df62a5e4c8177a7a8258f385f811d4a65b96c5a30f6d3f769e37656
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **300.3 MB (300262317 bytes)**  
+-	Total Size: **300.3 MB (300260155 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfcad4bf30efe8164c570e5dd4dac6e5410f36b61efe5708d0091fd68658ac9b`
+-	Image ID: `sha256:1969f1c992c6608655759496aa6998d643de56a54eb7ac77273fc2578d482350`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:12 GMT
-ADD file:fb54c709daa205bf9d04eb3d90ba068db4c34dfe3b6ec0d7691f677286120903 in / 
-# Fri, 15 May 2020 06:28:13 GMT
+# Tue, 09 Jun 2020 01:20:39 GMT
+ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
+# Tue, 09 Jun 2020 01:20:39 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 17:32:13 GMT
+# Tue, 09 Jun 2020 01:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 17:32:19 GMT
+# Tue, 09 Jun 2020 01:46:41 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:33 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:03:38 GMT
+# Tue, 09 Jun 2020 16:38:12 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:28:36 GMT
+# Wed, 10 Jun 2020 07:44:03 GMT
 ARG SOLR_VERSION=8.2.0
-# Mon, 08 Jun 2020 19:28:36 GMT
+# Wed, 10 Jun 2020 07:44:03 GMT
 ARG SOLR_SHA512=beb4e37fc21bf483e3b6bae43cb06a49bc420a0f2b920c97909a69a5efeacba1e7d2ff09ae8018446c87bf007f88f06a59de73cd1923f0967e8206629b0509b6
-# Mon, 08 Jun 2020 19:28:36 GMT
+# Wed, 10 Jun 2020 07:44:04 GMT
 ARG SOLR_KEYS=E58A6F4D5B2B48AC66D5E53BD4F181881A42F9E6
-# Mon, 08 Jun 2020 19:28:36 GMT
+# Wed, 10 Jun 2020 07:44:04 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:28:37 GMT
+# Wed, 10 Jun 2020 07:44:04 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:28:42 GMT
+# Wed, 10 Jun 2020 07:44:09 GMT
 # ARGS: SOLR_KEYS=E58A6F4D5B2B48AC66D5E53BD4F181881A42F9E6 SOLR_SHA512=beb4e37fc21bf483e3b6bae43cb06a49bc420a0f2b920c97909a69a5efeacba1e7d2ff09ae8018446c87bf007f88f06a59de73cd1923f0967e8206629b0509b6 SOLR_VERSION=8.2.0
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:28:42 GMT
+# Wed, 10 Jun 2020 07:44:09 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.2.0/solr-8.2.0.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.2.0/solr-8.2.0.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.2.0/solr-8.2.0.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:28:43 GMT
+# Wed, 10 Jun 2020 07:44:10 GMT
 # ARGS: SOLR_KEYS=E58A6F4D5B2B48AC66D5E53BD4F181881A42F9E6 SOLR_SHA512=beb4e37fc21bf483e3b6bae43cb06a49bc420a0f2b920c97909a69a5efeacba1e7d2ff09ae8018446c87bf007f88f06a59de73cd1923f0967e8206629b0509b6 SOLR_VERSION=8.2.0
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:28:44 GMT
+# Wed, 10 Jun 2020 07:44:11 GMT
 # ARGS: SOLR_KEYS=E58A6F4D5B2B48AC66D5E53BD4F181881A42F9E6 SOLR_SHA512=beb4e37fc21bf483e3b6bae43cb06a49bc420a0f2b920c97909a69a5efeacba1e7d2ff09ae8018446c87bf007f88f06a59de73cd1923f0967e8206629b0509b6 SOLR_VERSION=8.2.0
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:28:59 GMT
+# Wed, 10 Jun 2020 07:44:27 GMT
 # ARGS: SOLR_KEYS=E58A6F4D5B2B48AC66D5E53BD4F181881A42F9E6 SOLR_SHA512=beb4e37fc21bf483e3b6bae43cb06a49bc420a0f2b920c97909a69a5efeacba1e7d2ff09ae8018446c87bf007f88f06a59de73cd1923f0967e8206629b0509b6 SOLR_VERSION=8.2.0
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:29:00 GMT
+# Wed, 10 Jun 2020 07:44:27 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:29:00 GMT
+# Wed, 10 Jun 2020 07:44:28 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:29:00 GMT
+# Wed, 10 Jun 2020 07:44:28 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:29:00 GMT
+# Wed, 10 Jun 2020 07:44:28 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:29:00 GMT
+# Wed, 10 Jun 2020 07:44:28 GMT
 USER solr
-# Mon, 08 Jun 2020 19:29:01 GMT
+# Wed, 10 Jun 2020 07:44:28 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:29:01 GMT
+# Wed, 10 Jun 2020 07:44:29 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:376057ac6fa17f65688c56977118e2e764b27c348b3f70637fa829cd2a12b200`  
-		Last Modified: Fri, 15 May 2020 06:37:20 GMT  
-		Size: 50.4 MB (50391294 bytes)  
+	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
+		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
+		Size: 50.4 MB (50389504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a63a0a859d859478f30461786a49c2fca3ae7d89ab5b5ce3c81c54951d30f88`  
-		Last Modified: Fri, 15 May 2020 17:50:44 GMT  
-		Size: 7.8 MB (7812354 bytes)  
+	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 7.8 MB (7811709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:496548a8c952b37bdf149ab3654f9085d721ee126b8c73b16860778be5137f5e`  
-		Last Modified: Fri, 15 May 2020 17:50:49 GMT  
-		Size: 10.0 MB (9996284 bytes)  
+	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 10.0 MB (9996168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94b2daf7a1b5f537cba1c514f668125cbe30051a963fceee666de62352eb49ca`  
-		Last Modified: Fri, 15 May 2020 21:10:23 GMT  
-		Size: 5.5 MB (5529320 bytes)  
+	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
+		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
+		Size: 5.5 MB (5529317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8058d73803f3a05ad139e4bb713b7d93fb29f671441f1be35e844bb94a47152a`  
-		Last Modified: Fri, 15 May 2020 21:10:22 GMT  
-		Size: 211.0 B  
+	-	`sha256:e440f69a0a762646d5aed47652c8a122f43b415f52b87a90eb14690e1426fd0f`  
+		Last Modified: Tue, 09 Jun 2020 16:45:02 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dc4c151e7bebd2e3066851d6bc5ed2cfa0a9299b7e89cea9181a8994fa09abc`  
-		Last Modified: Fri, 15 May 2020 21:10:31 GMT  
-		Size: 41.9 MB (41941113 bytes)  
+	-	`sha256:837b533a935df78a47a09e44fd06c8ec7af6624ef1eec0d69e8d7d208efe2434`  
+		Last Modified: Tue, 09 Jun 2020 16:45:14 GMT  
+		Size: 41.9 MB (41941557 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:906b7bc40a3a80f7b875b4eea208a2e467e96c7c2fe18a001f84151a0d8483f4`  
-		Last Modified: Mon, 08 Jun 2020 19:52:17 GMT  
-		Size: 2.5 MB (2545752 bytes)  
+	-	`sha256:22f10f31577e018956c93b5a95f2168fd7b60a7781a5b56aeeceae7f92007b33`  
+		Last Modified: Wed, 10 Jun 2020 07:56:00 GMT  
+		Size: 2.5 MB (2545729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc1ad0b392bb0ad9c3d66a91000b376499924e111b3c9453181a0a112d78b594`  
-		Last Modified: Mon, 08 Jun 2020 19:52:17 GMT  
-		Size: 4.3 KB (4288 bytes)  
+	-	`sha256:59d9e84d841f7a409ac34ad3b0a1c6a8405292ac4efa2a3e8c7a59a84315e03a`  
+		Last Modified: Wed, 10 Jun 2020 07:56:00 GMT  
+		Size: 4.3 KB (4287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05da3e63f4ad246ae56b5e29e6e10ec9a8b70c673e7a5ceb1df157342a78b1b7`  
-		Last Modified: Mon, 08 Jun 2020 19:52:16 GMT  
-		Size: 2.9 KB (2885 bytes)  
+	-	`sha256:e1a69eea83d73b64ef69308db1c3fc1ddf3395dd842f0d79d073efbb55d30e17`  
+		Last Modified: Wed, 10 Jun 2020 07:56:00 GMT  
+		Size: 2.9 KB (2877 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb7e85819b3c5cecbe2174fee1f8d080675bf7bfd5d79a489fbc269e2ec91159`  
-		Last Modified: Mon, 08 Jun 2020 19:54:21 GMT  
-		Size: 182.0 MB (182032566 bytes)  
+	-	`sha256:0e7399bef7ee8a30cbf600849296d10ec757d56b6de6a1f4434d0b9b24c3aff0`  
+		Last Modified: Wed, 10 Jun 2020 07:56:10 GMT  
+		Size: 182.0 MB (182032552 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a49d95b075c8ffeb39114e008aa64b9739e0f82504ffda6007900c2e28c74a76`  
-		Last Modified: Mon, 08 Jun 2020 19:52:16 GMT  
-		Size: 6.2 KB (6250 bytes)  
+	-	`sha256:e2ecd974dd94d5f65944535464f95859a2ae6568253814d9733ff2d0600cf7c0`  
+		Last Modified: Wed, 10 Jun 2020 07:56:00 GMT  
+		Size: 6.2 KB (6245 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:8.2.0` - linux; arm64 variant v8
@@ -6097,7 +6097,7 @@ CMD ["solr-foreground"]
 ## `solr:8.2.0-slim`
 
 ```console
-$ docker pull solr@sha256:0da8937498795b763ac9103b53b52c1edde437fc7c2e9966f9d9fc8a660230b8
+$ docker pull solr@sha256:625604260037d8ad597d5d5006159e3c08433fc964d0f163bac471c3a9d454a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6108,120 +6108,120 @@ $ docker pull solr@sha256:0da8937498795b763ac9103b53b52c1edde437fc7c2e9966f9d9fc
 ### `solr:8.2.0-slim` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:fc5d9bd345409f4022c47acb35286df33a44bd18ae6b6cd4919b06890dc40084
+$ docker pull solr@sha256:6b003b984ed72d46702967213e1e7044cafdd09cf05128b1bb2f7bca9733b031
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **261.1 MB (261062116 bytes)**  
+-	Total Size: **261.1 MB (261062493 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36c1b61b71a50a130300268372e3e6def598f6443f699b2a37ddd536cd425022`
+-	Image ID: `sha256:ccf8301c3d597a7123af7fc0de281b07c3fd48c8ad31fdac6e006b3d5e1707b2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:44 GMT
-ADD file:7780c81c33e6cc5b6261af4a6c611cce0f39dec3131009bb297e65f12020c150 in / 
-# Fri, 15 May 2020 06:28:44 GMT
+# Tue, 09 Jun 2020 01:20:56 GMT
+ADD file:4d35f6c8bbbe6801cc5f44989730fb6d349a644ecb36eca481e7df25842d6321 in / 
+# Tue, 09 Jun 2020 01:20:56 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:37 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:02:50 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:02:51 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:04:03 GMT
+# Tue, 09 Jun 2020 16:38:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:29:05 GMT
+# Wed, 10 Jun 2020 07:44:33 GMT
 ARG SOLR_VERSION=8.2.0
-# Mon, 08 Jun 2020 19:29:05 GMT
+# Wed, 10 Jun 2020 07:44:33 GMT
 ARG SOLR_SHA512=beb4e37fc21bf483e3b6bae43cb06a49bc420a0f2b920c97909a69a5efeacba1e7d2ff09ae8018446c87bf007f88f06a59de73cd1923f0967e8206629b0509b6
-# Mon, 08 Jun 2020 19:29:05 GMT
+# Wed, 10 Jun 2020 07:44:33 GMT
 ARG SOLR_KEYS=E58A6F4D5B2B48AC66D5E53BD4F181881A42F9E6
-# Mon, 08 Jun 2020 19:29:06 GMT
+# Wed, 10 Jun 2020 07:44:33 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:29:06 GMT
+# Wed, 10 Jun 2020 07:44:33 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:29:13 GMT
+# Wed, 10 Jun 2020 07:44:41 GMT
 # ARGS: SOLR_KEYS=E58A6F4D5B2B48AC66D5E53BD4F181881A42F9E6 SOLR_SHA512=beb4e37fc21bf483e3b6bae43cb06a49bc420a0f2b920c97909a69a5efeacba1e7d2ff09ae8018446c87bf007f88f06a59de73cd1923f0967e8206629b0509b6 SOLR_VERSION=8.2.0
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:29:13 GMT
+# Wed, 10 Jun 2020 07:44:41 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.2.0/solr-8.2.0.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.2.0/solr-8.2.0.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.2.0/solr-8.2.0.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:29:14 GMT
+# Wed, 10 Jun 2020 07:44:42 GMT
 # ARGS: SOLR_KEYS=E58A6F4D5B2B48AC66D5E53BD4F181881A42F9E6 SOLR_SHA512=beb4e37fc21bf483e3b6bae43cb06a49bc420a0f2b920c97909a69a5efeacba1e7d2ff09ae8018446c87bf007f88f06a59de73cd1923f0967e8206629b0509b6 SOLR_VERSION=8.2.0
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:29:15 GMT
+# Wed, 10 Jun 2020 07:44:43 GMT
 # ARGS: SOLR_KEYS=E58A6F4D5B2B48AC66D5E53BD4F181881A42F9E6 SOLR_SHA512=beb4e37fc21bf483e3b6bae43cb06a49bc420a0f2b920c97909a69a5efeacba1e7d2ff09ae8018446c87bf007f88f06a59de73cd1923f0967e8206629b0509b6 SOLR_VERSION=8.2.0
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:29:31 GMT
+# Wed, 10 Jun 2020 07:45:21 GMT
 # ARGS: SOLR_KEYS=E58A6F4D5B2B48AC66D5E53BD4F181881A42F9E6 SOLR_SHA512=beb4e37fc21bf483e3b6bae43cb06a49bc420a0f2b920c97909a69a5efeacba1e7d2ff09ae8018446c87bf007f88f06a59de73cd1923f0967e8206629b0509b6 SOLR_VERSION=8.2.0
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:29:31 GMT
+# Wed, 10 Jun 2020 07:45:21 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:29:31 GMT
+# Wed, 10 Jun 2020 07:45:21 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:29:31 GMT
+# Wed, 10 Jun 2020 07:45:22 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:29:32 GMT
+# Wed, 10 Jun 2020 07:45:22 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:29:32 GMT
+# Wed, 10 Jun 2020 07:45:22 GMT
 USER solr
-# Mon, 08 Jun 2020 19:29:32 GMT
+# Wed, 10 Jun 2020 07:45:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:29:32 GMT
+# Wed, 10 Jun 2020 07:45:22 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:afb6ec6fdc1c3ba04f7a56db32c5ff5ff38962dc4cd0ffdef5beaa0ce2eb77e2`  
-		Last Modified: Fri, 15 May 2020 06:37:39 GMT  
-		Size: 27.1 MB (27098756 bytes)  
+	-	`sha256:8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df`  
+		Last Modified: Tue, 09 Jun 2020 01:25:50 GMT  
+		Size: 27.1 MB (27098265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee19e84e8bd1140527176689c9c1a75f28c0462c0c714e549536452708cbfb64`  
-		Last Modified: Fri, 15 May 2020 21:07:16 GMT  
-		Size: 3.2 MB (3249166 bytes)  
+	-	`sha256:65306eca6b8ea03d29cd8d10a31e9d7a6a1cf8766fe4ca3913e75e00fc47be79`  
+		Last Modified: Tue, 09 Jun 2020 16:41:33 GMT  
+		Size: 3.2 MB (3248452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ac787417531d48ce82f6180741b078086d62631806d5b1ca0d2763fd63b3826`  
-		Last Modified: Fri, 15 May 2020 21:09:46 GMT  
-		Size: 211.0 B  
+	-	`sha256:ddbf88050b6e7cbe8b76b77196134f31015ef5cb69123ba6af35da6f5b101459`  
+		Last Modified: Tue, 09 Jun 2020 16:44:15 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3f781d4d83e8b462ca228cb269f0d69cfac7973216d1937b288373a01e01e58`  
-		Last Modified: Fri, 15 May 2020 21:10:46 GMT  
-		Size: 42.2 MB (42214711 bytes)  
+	-	`sha256:0cb03c61bf260965ae2dc495175ab87e56951ad9ee8dc26f028c430e770f77fe`  
+		Last Modified: Tue, 09 Jun 2020 16:45:32 GMT  
+		Size: 42.2 MB (42216357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81893a929e26622fc669a435b0e3a864e8fa0e7628edf3472e3d1a3df0952529`  
-		Last Modified: Mon, 08 Jun 2020 19:54:27 GMT  
-		Size: 6.5 MB (6453311 bytes)  
+	-	`sha256:15cc2f1041e48a18d0e39d36048f242eb746598e8c92de74b2ab8b99f7a0cbf2`  
+		Last Modified: Wed, 10 Jun 2020 07:56:16 GMT  
+		Size: 6.5 MB (6453253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0e4ec1f8bcf789868ee5226c668100a503d0ee1cfdba39cc806dd005579f1b3`  
-		Last Modified: Mon, 08 Jun 2020 19:54:26 GMT  
-		Size: 4.3 KB (4291 bytes)  
+	-	`sha256:fc331cdde87d2485297d5f06d6ca14484e55bf1d072d8d698c6ff7526b817b6c`  
+		Last Modified: Wed, 10 Jun 2020 07:56:15 GMT  
+		Size: 4.3 KB (4284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30ff83f64fca60f5d1564ea823fdfd91cd506650a3be6330337f118bf53baf18`  
-		Last Modified: Mon, 08 Jun 2020 19:54:25 GMT  
+	-	`sha256:15206e27d282acef897b4424b153363dece1d366cd28662f5cebb0c98526b298`  
+		Last Modified: Wed, 10 Jun 2020 07:56:14 GMT  
 		Size: 2.9 KB (2876 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc1048fcc6f44f86d457809090ff305c6a940e59ebdf7bc9e02ef4b16ba9266b`  
-		Last Modified: Mon, 08 Jun 2020 19:54:47 GMT  
-		Size: 182.0 MB (182032546 bytes)  
+	-	`sha256:9e1a62a1fa46b1765cc96a695b7a7b03b12898003975137f786f0506588a095a`  
+		Last Modified: Wed, 10 Jun 2020 07:56:25 GMT  
+		Size: 182.0 MB (182032547 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e630f60b04638815fbab6b0f55c330ce3c0c73f706a16387135ca5b767b4c02e`  
-		Last Modified: Mon, 08 Jun 2020 19:54:25 GMT  
-		Size: 6.2 KB (6248 bytes)  
+	-	`sha256:75fa5b98fcf5733c66daae12562a88c54d2b56d8940b088e376dd6c17c19cda6`  
+		Last Modified: Wed, 10 Jun 2020 07:56:15 GMT  
+		Size: 6.2 KB (6249 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:8.2.0-slim` - linux; arm64 variant v8
@@ -6346,7 +6346,7 @@ CMD ["solr-foreground"]
 ## `solr:8.2-slim`
 
 ```console
-$ docker pull solr@sha256:0da8937498795b763ac9103b53b52c1edde437fc7c2e9966f9d9fc8a660230b8
+$ docker pull solr@sha256:625604260037d8ad597d5d5006159e3c08433fc964d0f163bac471c3a9d454a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6357,120 +6357,120 @@ $ docker pull solr@sha256:0da8937498795b763ac9103b53b52c1edde437fc7c2e9966f9d9fc
 ### `solr:8.2-slim` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:fc5d9bd345409f4022c47acb35286df33a44bd18ae6b6cd4919b06890dc40084
+$ docker pull solr@sha256:6b003b984ed72d46702967213e1e7044cafdd09cf05128b1bb2f7bca9733b031
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **261.1 MB (261062116 bytes)**  
+-	Total Size: **261.1 MB (261062493 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36c1b61b71a50a130300268372e3e6def598f6443f699b2a37ddd536cd425022`
+-	Image ID: `sha256:ccf8301c3d597a7123af7fc0de281b07c3fd48c8ad31fdac6e006b3d5e1707b2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:44 GMT
-ADD file:7780c81c33e6cc5b6261af4a6c611cce0f39dec3131009bb297e65f12020c150 in / 
-# Fri, 15 May 2020 06:28:44 GMT
+# Tue, 09 Jun 2020 01:20:56 GMT
+ADD file:4d35f6c8bbbe6801cc5f44989730fb6d349a644ecb36eca481e7df25842d6321 in / 
+# Tue, 09 Jun 2020 01:20:56 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:37 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:02:50 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:02:51 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:04:03 GMT
+# Tue, 09 Jun 2020 16:38:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:29:05 GMT
+# Wed, 10 Jun 2020 07:44:33 GMT
 ARG SOLR_VERSION=8.2.0
-# Mon, 08 Jun 2020 19:29:05 GMT
+# Wed, 10 Jun 2020 07:44:33 GMT
 ARG SOLR_SHA512=beb4e37fc21bf483e3b6bae43cb06a49bc420a0f2b920c97909a69a5efeacba1e7d2ff09ae8018446c87bf007f88f06a59de73cd1923f0967e8206629b0509b6
-# Mon, 08 Jun 2020 19:29:05 GMT
+# Wed, 10 Jun 2020 07:44:33 GMT
 ARG SOLR_KEYS=E58A6F4D5B2B48AC66D5E53BD4F181881A42F9E6
-# Mon, 08 Jun 2020 19:29:06 GMT
+# Wed, 10 Jun 2020 07:44:33 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:29:06 GMT
+# Wed, 10 Jun 2020 07:44:33 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:29:13 GMT
+# Wed, 10 Jun 2020 07:44:41 GMT
 # ARGS: SOLR_KEYS=E58A6F4D5B2B48AC66D5E53BD4F181881A42F9E6 SOLR_SHA512=beb4e37fc21bf483e3b6bae43cb06a49bc420a0f2b920c97909a69a5efeacba1e7d2ff09ae8018446c87bf007f88f06a59de73cd1923f0967e8206629b0509b6 SOLR_VERSION=8.2.0
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:29:13 GMT
+# Wed, 10 Jun 2020 07:44:41 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.2.0/solr-8.2.0.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.2.0/solr-8.2.0.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.2.0/solr-8.2.0.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:29:14 GMT
+# Wed, 10 Jun 2020 07:44:42 GMT
 # ARGS: SOLR_KEYS=E58A6F4D5B2B48AC66D5E53BD4F181881A42F9E6 SOLR_SHA512=beb4e37fc21bf483e3b6bae43cb06a49bc420a0f2b920c97909a69a5efeacba1e7d2ff09ae8018446c87bf007f88f06a59de73cd1923f0967e8206629b0509b6 SOLR_VERSION=8.2.0
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:29:15 GMT
+# Wed, 10 Jun 2020 07:44:43 GMT
 # ARGS: SOLR_KEYS=E58A6F4D5B2B48AC66D5E53BD4F181881A42F9E6 SOLR_SHA512=beb4e37fc21bf483e3b6bae43cb06a49bc420a0f2b920c97909a69a5efeacba1e7d2ff09ae8018446c87bf007f88f06a59de73cd1923f0967e8206629b0509b6 SOLR_VERSION=8.2.0
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:29:31 GMT
+# Wed, 10 Jun 2020 07:45:21 GMT
 # ARGS: SOLR_KEYS=E58A6F4D5B2B48AC66D5E53BD4F181881A42F9E6 SOLR_SHA512=beb4e37fc21bf483e3b6bae43cb06a49bc420a0f2b920c97909a69a5efeacba1e7d2ff09ae8018446c87bf007f88f06a59de73cd1923f0967e8206629b0509b6 SOLR_VERSION=8.2.0
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:29:31 GMT
+# Wed, 10 Jun 2020 07:45:21 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:29:31 GMT
+# Wed, 10 Jun 2020 07:45:21 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:29:31 GMT
+# Wed, 10 Jun 2020 07:45:22 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:29:32 GMT
+# Wed, 10 Jun 2020 07:45:22 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:29:32 GMT
+# Wed, 10 Jun 2020 07:45:22 GMT
 USER solr
-# Mon, 08 Jun 2020 19:29:32 GMT
+# Wed, 10 Jun 2020 07:45:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:29:32 GMT
+# Wed, 10 Jun 2020 07:45:22 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:afb6ec6fdc1c3ba04f7a56db32c5ff5ff38962dc4cd0ffdef5beaa0ce2eb77e2`  
-		Last Modified: Fri, 15 May 2020 06:37:39 GMT  
-		Size: 27.1 MB (27098756 bytes)  
+	-	`sha256:8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df`  
+		Last Modified: Tue, 09 Jun 2020 01:25:50 GMT  
+		Size: 27.1 MB (27098265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee19e84e8bd1140527176689c9c1a75f28c0462c0c714e549536452708cbfb64`  
-		Last Modified: Fri, 15 May 2020 21:07:16 GMT  
-		Size: 3.2 MB (3249166 bytes)  
+	-	`sha256:65306eca6b8ea03d29cd8d10a31e9d7a6a1cf8766fe4ca3913e75e00fc47be79`  
+		Last Modified: Tue, 09 Jun 2020 16:41:33 GMT  
+		Size: 3.2 MB (3248452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ac787417531d48ce82f6180741b078086d62631806d5b1ca0d2763fd63b3826`  
-		Last Modified: Fri, 15 May 2020 21:09:46 GMT  
-		Size: 211.0 B  
+	-	`sha256:ddbf88050b6e7cbe8b76b77196134f31015ef5cb69123ba6af35da6f5b101459`  
+		Last Modified: Tue, 09 Jun 2020 16:44:15 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3f781d4d83e8b462ca228cb269f0d69cfac7973216d1937b288373a01e01e58`  
-		Last Modified: Fri, 15 May 2020 21:10:46 GMT  
-		Size: 42.2 MB (42214711 bytes)  
+	-	`sha256:0cb03c61bf260965ae2dc495175ab87e56951ad9ee8dc26f028c430e770f77fe`  
+		Last Modified: Tue, 09 Jun 2020 16:45:32 GMT  
+		Size: 42.2 MB (42216357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81893a929e26622fc669a435b0e3a864e8fa0e7628edf3472e3d1a3df0952529`  
-		Last Modified: Mon, 08 Jun 2020 19:54:27 GMT  
-		Size: 6.5 MB (6453311 bytes)  
+	-	`sha256:15cc2f1041e48a18d0e39d36048f242eb746598e8c92de74b2ab8b99f7a0cbf2`  
+		Last Modified: Wed, 10 Jun 2020 07:56:16 GMT  
+		Size: 6.5 MB (6453253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0e4ec1f8bcf789868ee5226c668100a503d0ee1cfdba39cc806dd005579f1b3`  
-		Last Modified: Mon, 08 Jun 2020 19:54:26 GMT  
-		Size: 4.3 KB (4291 bytes)  
+	-	`sha256:fc331cdde87d2485297d5f06d6ca14484e55bf1d072d8d698c6ff7526b817b6c`  
+		Last Modified: Wed, 10 Jun 2020 07:56:15 GMT  
+		Size: 4.3 KB (4284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30ff83f64fca60f5d1564ea823fdfd91cd506650a3be6330337f118bf53baf18`  
-		Last Modified: Mon, 08 Jun 2020 19:54:25 GMT  
+	-	`sha256:15206e27d282acef897b4424b153363dece1d366cd28662f5cebb0c98526b298`  
+		Last Modified: Wed, 10 Jun 2020 07:56:14 GMT  
 		Size: 2.9 KB (2876 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc1048fcc6f44f86d457809090ff305c6a940e59ebdf7bc9e02ef4b16ba9266b`  
-		Last Modified: Mon, 08 Jun 2020 19:54:47 GMT  
-		Size: 182.0 MB (182032546 bytes)  
+	-	`sha256:9e1a62a1fa46b1765cc96a695b7a7b03b12898003975137f786f0506588a095a`  
+		Last Modified: Wed, 10 Jun 2020 07:56:25 GMT  
+		Size: 182.0 MB (182032547 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e630f60b04638815fbab6b0f55c330ce3c0c73f706a16387135ca5b767b4c02e`  
-		Last Modified: Mon, 08 Jun 2020 19:54:25 GMT  
-		Size: 6.2 KB (6248 bytes)  
+	-	`sha256:75fa5b98fcf5733c66daae12562a88c54d2b56d8940b088e376dd6c17c19cda6`  
+		Last Modified: Wed, 10 Jun 2020 07:56:15 GMT  
+		Size: 6.2 KB (6249 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:8.2-slim` - linux; arm64 variant v8
@@ -6595,7 +6595,7 @@ CMD ["solr-foreground"]
 ## `solr:8.3`
 
 ```console
-$ docker pull solr@sha256:b7d89fcf256457fedb1e400e198907f2b73738154bea551f4e52a78c0085e17b
+$ docker pull solr@sha256:e725279a6020b62672c22663b39f5aa4720bb908bdf3291b2399c9d8d1643e82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6606,132 +6606,132 @@ $ docker pull solr@sha256:b7d89fcf256457fedb1e400e198907f2b73738154bea551f4e52a7
 ### `solr:8.3` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:a8fb8e6702662834520c5f6e22bffd5eaf96b2768b7495015b9ed50e9e0e9389
+$ docker pull solr@sha256:870c4b3c2e6491564522139709f4d26fd12c71bd426247bbbb33cd9cd26fd37c
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **304.5 MB (304456774 bytes)**  
+-	Total Size: **304.5 MB (304454635 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2a63bdd6d53523909211e2a3e72b26f19839093ad859e261052e543d113899a`
+-	Image ID: `sha256:542ebe35e1ccadf31b7be57c8307eee9d40f76c6c6c8399bfcd3ea3a3ae49319`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:12 GMT
-ADD file:fb54c709daa205bf9d04eb3d90ba068db4c34dfe3b6ec0d7691f677286120903 in / 
-# Fri, 15 May 2020 06:28:13 GMT
+# Tue, 09 Jun 2020 01:20:39 GMT
+ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
+# Tue, 09 Jun 2020 01:20:39 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 17:32:13 GMT
+# Tue, 09 Jun 2020 01:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 17:32:19 GMT
+# Tue, 09 Jun 2020 01:46:41 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:33 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:03:38 GMT
+# Tue, 09 Jun 2020 16:38:12 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:27:33 GMT
+# Wed, 10 Jun 2020 07:42:54 GMT
 ARG SOLR_VERSION=8.3.1
-# Mon, 08 Jun 2020 19:27:33 GMT
+# Wed, 10 Jun 2020 07:42:54 GMT
 ARG SOLR_SHA512=75472c1bceb5813f4af3b8c62a200e3fcfa70b1d30bb801d5f307ffe5280b963841bb47670afb94243d3eb8faf3472514e41a6ea8fba598a6b7f003174457ad4
-# Mon, 08 Jun 2020 19:27:33 GMT
+# Wed, 10 Jun 2020 07:42:55 GMT
 ARG SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C
-# Mon, 08 Jun 2020 19:27:33 GMT
+# Wed, 10 Jun 2020 07:42:55 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:27:34 GMT
+# Wed, 10 Jun 2020 07:42:55 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:27:39 GMT
+# Wed, 10 Jun 2020 07:43:00 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=75472c1bceb5813f4af3b8c62a200e3fcfa70b1d30bb801d5f307ffe5280b963841bb47670afb94243d3eb8faf3472514e41a6ea8fba598a6b7f003174457ad4 SOLR_VERSION=8.3.1
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:27:39 GMT
+# Wed, 10 Jun 2020 07:43:00 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.3.1/solr-8.3.1.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.3.1/solr-8.3.1.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.3.1/solr-8.3.1.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:27:40 GMT
+# Wed, 10 Jun 2020 07:43:01 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=75472c1bceb5813f4af3b8c62a200e3fcfa70b1d30bb801d5f307ffe5280b963841bb47670afb94243d3eb8faf3472514e41a6ea8fba598a6b7f003174457ad4 SOLR_VERSION=8.3.1
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:27:41 GMT
+# Wed, 10 Jun 2020 07:43:02 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=75472c1bceb5813f4af3b8c62a200e3fcfa70b1d30bb801d5f307ffe5280b963841bb47670afb94243d3eb8faf3472514e41a6ea8fba598a6b7f003174457ad4 SOLR_VERSION=8.3.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:27:56 GMT
+# Wed, 10 Jun 2020 07:43:18 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=75472c1bceb5813f4af3b8c62a200e3fcfa70b1d30bb801d5f307ffe5280b963841bb47670afb94243d3eb8faf3472514e41a6ea8fba598a6b7f003174457ad4 SOLR_VERSION=8.3.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:27:56 GMT
+# Wed, 10 Jun 2020 07:43:18 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:27:56 GMT
+# Wed, 10 Jun 2020 07:43:19 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:27:57 GMT
+# Wed, 10 Jun 2020 07:43:19 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:27:57 GMT
+# Wed, 10 Jun 2020 07:43:19 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:27:57 GMT
+# Wed, 10 Jun 2020 07:43:19 GMT
 USER solr
-# Mon, 08 Jun 2020 19:27:57 GMT
+# Wed, 10 Jun 2020 07:43:19 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:27:57 GMT
+# Wed, 10 Jun 2020 07:43:20 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:376057ac6fa17f65688c56977118e2e764b27c348b3f70637fa829cd2a12b200`  
-		Last Modified: Fri, 15 May 2020 06:37:20 GMT  
-		Size: 50.4 MB (50391294 bytes)  
+	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
+		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
+		Size: 50.4 MB (50389504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a63a0a859d859478f30461786a49c2fca3ae7d89ab5b5ce3c81c54951d30f88`  
-		Last Modified: Fri, 15 May 2020 17:50:44 GMT  
-		Size: 7.8 MB (7812354 bytes)  
+	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 7.8 MB (7811709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:496548a8c952b37bdf149ab3654f9085d721ee126b8c73b16860778be5137f5e`  
-		Last Modified: Fri, 15 May 2020 17:50:49 GMT  
-		Size: 10.0 MB (9996284 bytes)  
+	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 10.0 MB (9996168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94b2daf7a1b5f537cba1c514f668125cbe30051a963fceee666de62352eb49ca`  
-		Last Modified: Fri, 15 May 2020 21:10:23 GMT  
-		Size: 5.5 MB (5529320 bytes)  
+	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
+		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
+		Size: 5.5 MB (5529317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8058d73803f3a05ad139e4bb713b7d93fb29f671441f1be35e844bb94a47152a`  
-		Last Modified: Fri, 15 May 2020 21:10:22 GMT  
-		Size: 211.0 B  
+	-	`sha256:e440f69a0a762646d5aed47652c8a122f43b415f52b87a90eb14690e1426fd0f`  
+		Last Modified: Tue, 09 Jun 2020 16:45:02 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dc4c151e7bebd2e3066851d6bc5ed2cfa0a9299b7e89cea9181a8994fa09abc`  
-		Last Modified: Fri, 15 May 2020 21:10:31 GMT  
-		Size: 41.9 MB (41941113 bytes)  
+	-	`sha256:837b533a935df78a47a09e44fd06c8ec7af6624ef1eec0d69e8d7d208efe2434`  
+		Last Modified: Tue, 09 Jun 2020 16:45:14 GMT  
+		Size: 41.9 MB (41941557 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2eedd37ce70f81c6db138cfd6d15b9876c10e6783b8b22e616d755c842726f7`  
-		Last Modified: Mon, 08 Jun 2020 19:42:17 GMT  
-		Size: 2.5 MB (2545769 bytes)  
+	-	`sha256:b0abe459749b339781cd6acb87999f09465e332c788981537dd067002ecc378a`  
+		Last Modified: Wed, 10 Jun 2020 07:55:29 GMT  
+		Size: 2.5 MB (2545713 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1240fee1a342d791a3fa36218a3d4713a4a351db8b2f51877b09466522bed5c3`  
-		Last Modified: Mon, 08 Jun 2020 19:42:15 GMT  
-		Size: 4.3 KB (4288 bytes)  
+	-	`sha256:d510555bfc920611a13d19a69b8f07cb1e25a19753e4109a54e56f7eefbef216`  
+		Last Modified: Wed, 10 Jun 2020 07:55:29 GMT  
+		Size: 4.3 KB (4286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed265445f827f09cd1353a96f948d3fbd2e7ea819b9ca931d22f181f45c9a70c`  
-		Last Modified: Mon, 08 Jun 2020 19:42:15 GMT  
-		Size: 2.9 KB (2861 bytes)  
+	-	`sha256:45652cb48e9f3088a0c94b102ec3ff6974290939161c05414c4441f001a3d499`  
+		Last Modified: Wed, 10 Jun 2020 07:55:29 GMT  
+		Size: 2.9 KB (2860 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0bc841dcfb107722144061f42dbe97a7f7326078dddee22cb3b172b783a4b3fc`  
-		Last Modified: Mon, 08 Jun 2020 19:49:38 GMT  
-		Size: 186.2 MB (186227033 bytes)  
+	-	`sha256:d3577555d7797488eb955c562ad5d3ac021c69384508b9043ea46abf7608a08e`  
+		Last Modified: Wed, 10 Jun 2020 07:55:40 GMT  
+		Size: 186.2 MB (186227062 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7fb94c5c85bda513d271779bfff90759e7105499ad8def4fafb30feb5cc3aca`  
-		Last Modified: Mon, 08 Jun 2020 19:42:15 GMT  
-		Size: 6.2 KB (6247 bytes)  
+	-	`sha256:656f2244b7f1f5acebaa01fa942dd008cc94c5f05cd88475f1fd76c83cd6847f`  
+		Last Modified: Wed, 10 Jun 2020 07:55:29 GMT  
+		Size: 6.2 KB (6249 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:8.3` - linux; arm64 variant v8
@@ -6868,7 +6868,7 @@ CMD ["solr-foreground"]
 ## `solr:8.3.1`
 
 ```console
-$ docker pull solr@sha256:b7d89fcf256457fedb1e400e198907f2b73738154bea551f4e52a78c0085e17b
+$ docker pull solr@sha256:e725279a6020b62672c22663b39f5aa4720bb908bdf3291b2399c9d8d1643e82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6879,132 +6879,132 @@ $ docker pull solr@sha256:b7d89fcf256457fedb1e400e198907f2b73738154bea551f4e52a7
 ### `solr:8.3.1` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:a8fb8e6702662834520c5f6e22bffd5eaf96b2768b7495015b9ed50e9e0e9389
+$ docker pull solr@sha256:870c4b3c2e6491564522139709f4d26fd12c71bd426247bbbb33cd9cd26fd37c
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **304.5 MB (304456774 bytes)**  
+-	Total Size: **304.5 MB (304454635 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2a63bdd6d53523909211e2a3e72b26f19839093ad859e261052e543d113899a`
+-	Image ID: `sha256:542ebe35e1ccadf31b7be57c8307eee9d40f76c6c6c8399bfcd3ea3a3ae49319`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:12 GMT
-ADD file:fb54c709daa205bf9d04eb3d90ba068db4c34dfe3b6ec0d7691f677286120903 in / 
-# Fri, 15 May 2020 06:28:13 GMT
+# Tue, 09 Jun 2020 01:20:39 GMT
+ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
+# Tue, 09 Jun 2020 01:20:39 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 17:32:13 GMT
+# Tue, 09 Jun 2020 01:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 17:32:19 GMT
+# Tue, 09 Jun 2020 01:46:41 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:33 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:03:38 GMT
+# Tue, 09 Jun 2020 16:38:12 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:27:33 GMT
+# Wed, 10 Jun 2020 07:42:54 GMT
 ARG SOLR_VERSION=8.3.1
-# Mon, 08 Jun 2020 19:27:33 GMT
+# Wed, 10 Jun 2020 07:42:54 GMT
 ARG SOLR_SHA512=75472c1bceb5813f4af3b8c62a200e3fcfa70b1d30bb801d5f307ffe5280b963841bb47670afb94243d3eb8faf3472514e41a6ea8fba598a6b7f003174457ad4
-# Mon, 08 Jun 2020 19:27:33 GMT
+# Wed, 10 Jun 2020 07:42:55 GMT
 ARG SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C
-# Mon, 08 Jun 2020 19:27:33 GMT
+# Wed, 10 Jun 2020 07:42:55 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:27:34 GMT
+# Wed, 10 Jun 2020 07:42:55 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:27:39 GMT
+# Wed, 10 Jun 2020 07:43:00 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=75472c1bceb5813f4af3b8c62a200e3fcfa70b1d30bb801d5f307ffe5280b963841bb47670afb94243d3eb8faf3472514e41a6ea8fba598a6b7f003174457ad4 SOLR_VERSION=8.3.1
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:27:39 GMT
+# Wed, 10 Jun 2020 07:43:00 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.3.1/solr-8.3.1.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.3.1/solr-8.3.1.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.3.1/solr-8.3.1.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:27:40 GMT
+# Wed, 10 Jun 2020 07:43:01 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=75472c1bceb5813f4af3b8c62a200e3fcfa70b1d30bb801d5f307ffe5280b963841bb47670afb94243d3eb8faf3472514e41a6ea8fba598a6b7f003174457ad4 SOLR_VERSION=8.3.1
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:27:41 GMT
+# Wed, 10 Jun 2020 07:43:02 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=75472c1bceb5813f4af3b8c62a200e3fcfa70b1d30bb801d5f307ffe5280b963841bb47670afb94243d3eb8faf3472514e41a6ea8fba598a6b7f003174457ad4 SOLR_VERSION=8.3.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:27:56 GMT
+# Wed, 10 Jun 2020 07:43:18 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=75472c1bceb5813f4af3b8c62a200e3fcfa70b1d30bb801d5f307ffe5280b963841bb47670afb94243d3eb8faf3472514e41a6ea8fba598a6b7f003174457ad4 SOLR_VERSION=8.3.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:27:56 GMT
+# Wed, 10 Jun 2020 07:43:18 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:27:56 GMT
+# Wed, 10 Jun 2020 07:43:19 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:27:57 GMT
+# Wed, 10 Jun 2020 07:43:19 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:27:57 GMT
+# Wed, 10 Jun 2020 07:43:19 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:27:57 GMT
+# Wed, 10 Jun 2020 07:43:19 GMT
 USER solr
-# Mon, 08 Jun 2020 19:27:57 GMT
+# Wed, 10 Jun 2020 07:43:19 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:27:57 GMT
+# Wed, 10 Jun 2020 07:43:20 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:376057ac6fa17f65688c56977118e2e764b27c348b3f70637fa829cd2a12b200`  
-		Last Modified: Fri, 15 May 2020 06:37:20 GMT  
-		Size: 50.4 MB (50391294 bytes)  
+	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
+		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
+		Size: 50.4 MB (50389504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a63a0a859d859478f30461786a49c2fca3ae7d89ab5b5ce3c81c54951d30f88`  
-		Last Modified: Fri, 15 May 2020 17:50:44 GMT  
-		Size: 7.8 MB (7812354 bytes)  
+	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 7.8 MB (7811709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:496548a8c952b37bdf149ab3654f9085d721ee126b8c73b16860778be5137f5e`  
-		Last Modified: Fri, 15 May 2020 17:50:49 GMT  
-		Size: 10.0 MB (9996284 bytes)  
+	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 10.0 MB (9996168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94b2daf7a1b5f537cba1c514f668125cbe30051a963fceee666de62352eb49ca`  
-		Last Modified: Fri, 15 May 2020 21:10:23 GMT  
-		Size: 5.5 MB (5529320 bytes)  
+	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
+		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
+		Size: 5.5 MB (5529317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8058d73803f3a05ad139e4bb713b7d93fb29f671441f1be35e844bb94a47152a`  
-		Last Modified: Fri, 15 May 2020 21:10:22 GMT  
-		Size: 211.0 B  
+	-	`sha256:e440f69a0a762646d5aed47652c8a122f43b415f52b87a90eb14690e1426fd0f`  
+		Last Modified: Tue, 09 Jun 2020 16:45:02 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dc4c151e7bebd2e3066851d6bc5ed2cfa0a9299b7e89cea9181a8994fa09abc`  
-		Last Modified: Fri, 15 May 2020 21:10:31 GMT  
-		Size: 41.9 MB (41941113 bytes)  
+	-	`sha256:837b533a935df78a47a09e44fd06c8ec7af6624ef1eec0d69e8d7d208efe2434`  
+		Last Modified: Tue, 09 Jun 2020 16:45:14 GMT  
+		Size: 41.9 MB (41941557 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2eedd37ce70f81c6db138cfd6d15b9876c10e6783b8b22e616d755c842726f7`  
-		Last Modified: Mon, 08 Jun 2020 19:42:17 GMT  
-		Size: 2.5 MB (2545769 bytes)  
+	-	`sha256:b0abe459749b339781cd6acb87999f09465e332c788981537dd067002ecc378a`  
+		Last Modified: Wed, 10 Jun 2020 07:55:29 GMT  
+		Size: 2.5 MB (2545713 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1240fee1a342d791a3fa36218a3d4713a4a351db8b2f51877b09466522bed5c3`  
-		Last Modified: Mon, 08 Jun 2020 19:42:15 GMT  
-		Size: 4.3 KB (4288 bytes)  
+	-	`sha256:d510555bfc920611a13d19a69b8f07cb1e25a19753e4109a54e56f7eefbef216`  
+		Last Modified: Wed, 10 Jun 2020 07:55:29 GMT  
+		Size: 4.3 KB (4286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed265445f827f09cd1353a96f948d3fbd2e7ea819b9ca931d22f181f45c9a70c`  
-		Last Modified: Mon, 08 Jun 2020 19:42:15 GMT  
-		Size: 2.9 KB (2861 bytes)  
+	-	`sha256:45652cb48e9f3088a0c94b102ec3ff6974290939161c05414c4441f001a3d499`  
+		Last Modified: Wed, 10 Jun 2020 07:55:29 GMT  
+		Size: 2.9 KB (2860 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0bc841dcfb107722144061f42dbe97a7f7326078dddee22cb3b172b783a4b3fc`  
-		Last Modified: Mon, 08 Jun 2020 19:49:38 GMT  
-		Size: 186.2 MB (186227033 bytes)  
+	-	`sha256:d3577555d7797488eb955c562ad5d3ac021c69384508b9043ea46abf7608a08e`  
+		Last Modified: Wed, 10 Jun 2020 07:55:40 GMT  
+		Size: 186.2 MB (186227062 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7fb94c5c85bda513d271779bfff90759e7105499ad8def4fafb30feb5cc3aca`  
-		Last Modified: Mon, 08 Jun 2020 19:42:15 GMT  
-		Size: 6.2 KB (6247 bytes)  
+	-	`sha256:656f2244b7f1f5acebaa01fa942dd008cc94c5f05cd88475f1fd76c83cd6847f`  
+		Last Modified: Wed, 10 Jun 2020 07:55:29 GMT  
+		Size: 6.2 KB (6249 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:8.3.1` - linux; arm64 variant v8
@@ -7141,7 +7141,7 @@ CMD ["solr-foreground"]
 ## `solr:8.3.1-slim`
 
 ```console
-$ docker pull solr@sha256:9c83d27e9247d248c3853671d1beae4b89da8445a15e10eb1346f4ee2beb8553
+$ docker pull solr@sha256:3a38d963ab2759f999503c3e95384a69e0aa0e2e01ef00de81d53c1e37d1c3d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7152,120 +7152,120 @@ $ docker pull solr@sha256:9c83d27e9247d248c3853671d1beae4b89da8445a15e10eb1346f4
 ### `solr:8.3.1-slim` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:ba4b78b2e1ad95c30542970f15cff311d81029095bab5e3e682db53283dd9938
+$ docker pull solr@sha256:56829856d86d9fc1fe53a833fab7ad50ebaeebd8b37df6f5162435a4927037d0
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.3 MB (265256563 bytes)**  
+-	Total Size: **265.3 MB (265256942 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f6937127751c8351e0d99bfb6361c0dc399d3c1293464fc6eeb1cbb7051070c`
+-	Image ID: `sha256:50d91181309fcb41bc4033a17d16a76070f6339d08cae8f6768162456af8a408`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:44 GMT
-ADD file:7780c81c33e6cc5b6261af4a6c611cce0f39dec3131009bb297e65f12020c150 in / 
-# Fri, 15 May 2020 06:28:44 GMT
+# Tue, 09 Jun 2020 01:20:56 GMT
+ADD file:4d35f6c8bbbe6801cc5f44989730fb6d349a644ecb36eca481e7df25842d6321 in / 
+# Tue, 09 Jun 2020 01:20:56 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:37 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:02:50 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:02:51 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:04:03 GMT
+# Tue, 09 Jun 2020 16:38:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:28:02 GMT
+# Wed, 10 Jun 2020 07:43:24 GMT
 ARG SOLR_VERSION=8.3.1
-# Mon, 08 Jun 2020 19:28:02 GMT
+# Wed, 10 Jun 2020 07:43:24 GMT
 ARG SOLR_SHA512=75472c1bceb5813f4af3b8c62a200e3fcfa70b1d30bb801d5f307ffe5280b963841bb47670afb94243d3eb8faf3472514e41a6ea8fba598a6b7f003174457ad4
-# Mon, 08 Jun 2020 19:28:02 GMT
+# Wed, 10 Jun 2020 07:43:24 GMT
 ARG SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C
-# Mon, 08 Jun 2020 19:28:03 GMT
+# Wed, 10 Jun 2020 07:43:24 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:28:03 GMT
+# Wed, 10 Jun 2020 07:43:24 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:28:10 GMT
+# Wed, 10 Jun 2020 07:43:32 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=75472c1bceb5813f4af3b8c62a200e3fcfa70b1d30bb801d5f307ffe5280b963841bb47670afb94243d3eb8faf3472514e41a6ea8fba598a6b7f003174457ad4 SOLR_VERSION=8.3.1
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:28:10 GMT
+# Wed, 10 Jun 2020 07:43:32 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.3.1/solr-8.3.1.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.3.1/solr-8.3.1.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.3.1/solr-8.3.1.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:28:11 GMT
+# Wed, 10 Jun 2020 07:43:33 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=75472c1bceb5813f4af3b8c62a200e3fcfa70b1d30bb801d5f307ffe5280b963841bb47670afb94243d3eb8faf3472514e41a6ea8fba598a6b7f003174457ad4 SOLR_VERSION=8.3.1
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:28:12 GMT
+# Wed, 10 Jun 2020 07:43:33 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=75472c1bceb5813f4af3b8c62a200e3fcfa70b1d30bb801d5f307ffe5280b963841bb47670afb94243d3eb8faf3472514e41a6ea8fba598a6b7f003174457ad4 SOLR_VERSION=8.3.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:28:27 GMT
+# Wed, 10 Jun 2020 07:43:53 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=75472c1bceb5813f4af3b8c62a200e3fcfa70b1d30bb801d5f307ffe5280b963841bb47670afb94243d3eb8faf3472514e41a6ea8fba598a6b7f003174457ad4 SOLR_VERSION=8.3.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:28:28 GMT
+# Wed, 10 Jun 2020 07:43:54 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:28:28 GMT
+# Wed, 10 Jun 2020 07:43:54 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:28:28 GMT
+# Wed, 10 Jun 2020 07:43:54 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:28:28 GMT
+# Wed, 10 Jun 2020 07:43:54 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:28:28 GMT
+# Wed, 10 Jun 2020 07:43:54 GMT
 USER solr
-# Mon, 08 Jun 2020 19:28:29 GMT
+# Wed, 10 Jun 2020 07:43:55 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:28:29 GMT
+# Wed, 10 Jun 2020 07:43:55 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:afb6ec6fdc1c3ba04f7a56db32c5ff5ff38962dc4cd0ffdef5beaa0ce2eb77e2`  
-		Last Modified: Fri, 15 May 2020 06:37:39 GMT  
-		Size: 27.1 MB (27098756 bytes)  
+	-	`sha256:8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df`  
+		Last Modified: Tue, 09 Jun 2020 01:25:50 GMT  
+		Size: 27.1 MB (27098265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee19e84e8bd1140527176689c9c1a75f28c0462c0c714e549536452708cbfb64`  
-		Last Modified: Fri, 15 May 2020 21:07:16 GMT  
-		Size: 3.2 MB (3249166 bytes)  
+	-	`sha256:65306eca6b8ea03d29cd8d10a31e9d7a6a1cf8766fe4ca3913e75e00fc47be79`  
+		Last Modified: Tue, 09 Jun 2020 16:41:33 GMT  
+		Size: 3.2 MB (3248452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ac787417531d48ce82f6180741b078086d62631806d5b1ca0d2763fd63b3826`  
-		Last Modified: Fri, 15 May 2020 21:09:46 GMT  
-		Size: 211.0 B  
+	-	`sha256:ddbf88050b6e7cbe8b76b77196134f31015ef5cb69123ba6af35da6f5b101459`  
+		Last Modified: Tue, 09 Jun 2020 16:44:15 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3f781d4d83e8b462ca228cb269f0d69cfac7973216d1937b288373a01e01e58`  
-		Last Modified: Fri, 15 May 2020 21:10:46 GMT  
-		Size: 42.2 MB (42214711 bytes)  
+	-	`sha256:0cb03c61bf260965ae2dc495175ab87e56951ad9ee8dc26f028c430e770f77fe`  
+		Last Modified: Tue, 09 Jun 2020 16:45:32 GMT  
+		Size: 42.2 MB (42216357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26e7859fdbc1a5d1d2eeddc63e410902a65b7fef5d39df99b521017f92248b1a`  
-		Last Modified: Mon, 08 Jun 2020 19:49:49 GMT  
-		Size: 6.5 MB (6453318 bytes)  
+	-	`sha256:8a1414c6dacdf5caec9d5243ac46a1ee069a07e72fe1b9b420644b0429ba1a29`  
+		Last Modified: Wed, 10 Jun 2020 07:55:46 GMT  
+		Size: 6.5 MB (6453273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2cd76c20116e9d662377149e9ae10bd059c408f826d0a2c7a2df39152ee427a`  
-		Last Modified: Mon, 08 Jun 2020 19:49:44 GMT  
-		Size: 4.3 KB (4291 bytes)  
+	-	`sha256:6995f2d233b113682f279a67563e38223bf660c55f4956cf0592963191524fd9`  
+		Last Modified: Wed, 10 Jun 2020 07:55:45 GMT  
+		Size: 4.3 KB (4283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a361964110c729254eeb5230f4465482894a7a9473d65719012dd7119c3dfa77`  
-		Last Modified: Mon, 08 Jun 2020 19:49:44 GMT  
-		Size: 2.9 KB (2865 bytes)  
+	-	`sha256:6acfec3bccbef5f22f36eab5297acf1de5332a8e3a5c1a4ffe1b6398a8867056`  
+		Last Modified: Wed, 10 Jun 2020 07:55:44 GMT  
+		Size: 2.9 KB (2860 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e1bd538147a0d517bf59209daacdaa9fcb1da0c3f7e937f1b839d603ddec1de`  
-		Last Modified: Mon, 08 Jun 2020 19:51:52 GMT  
-		Size: 186.2 MB (186226998 bytes)  
+	-	`sha256:ec95e13cf99de2baa41f6e6437ac98f71158695c29f0c2d72250fef4ca73941d`  
+		Last Modified: Wed, 10 Jun 2020 07:55:56 GMT  
+		Size: 186.2 MB (186226993 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db207a602b7078d7fdf69c8432ba7a09c20e335c54ac86afac0fcbaa6e269cf9`  
-		Last Modified: Mon, 08 Jun 2020 19:49:44 GMT  
-		Size: 6.2 KB (6247 bytes)  
+	-	`sha256:83c59b2d5084d1f534c744fc653005941cc296d881ab6f0d0609846155d51070`  
+		Last Modified: Wed, 10 Jun 2020 07:55:45 GMT  
+		Size: 6.2 KB (6249 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:8.3.1-slim` - linux; arm64 variant v8
@@ -7390,7 +7390,7 @@ CMD ["solr-foreground"]
 ## `solr:8.3-slim`
 
 ```console
-$ docker pull solr@sha256:9c83d27e9247d248c3853671d1beae4b89da8445a15e10eb1346f4ee2beb8553
+$ docker pull solr@sha256:3a38d963ab2759f999503c3e95384a69e0aa0e2e01ef00de81d53c1e37d1c3d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7401,120 +7401,120 @@ $ docker pull solr@sha256:9c83d27e9247d248c3853671d1beae4b89da8445a15e10eb1346f4
 ### `solr:8.3-slim` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:ba4b78b2e1ad95c30542970f15cff311d81029095bab5e3e682db53283dd9938
+$ docker pull solr@sha256:56829856d86d9fc1fe53a833fab7ad50ebaeebd8b37df6f5162435a4927037d0
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.3 MB (265256563 bytes)**  
+-	Total Size: **265.3 MB (265256942 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f6937127751c8351e0d99bfb6361c0dc399d3c1293464fc6eeb1cbb7051070c`
+-	Image ID: `sha256:50d91181309fcb41bc4033a17d16a76070f6339d08cae8f6768162456af8a408`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:44 GMT
-ADD file:7780c81c33e6cc5b6261af4a6c611cce0f39dec3131009bb297e65f12020c150 in / 
-# Fri, 15 May 2020 06:28:44 GMT
+# Tue, 09 Jun 2020 01:20:56 GMT
+ADD file:4d35f6c8bbbe6801cc5f44989730fb6d349a644ecb36eca481e7df25842d6321 in / 
+# Tue, 09 Jun 2020 01:20:56 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:37 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:02:50 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:02:51 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:04:03 GMT
+# Tue, 09 Jun 2020 16:38:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:28:02 GMT
+# Wed, 10 Jun 2020 07:43:24 GMT
 ARG SOLR_VERSION=8.3.1
-# Mon, 08 Jun 2020 19:28:02 GMT
+# Wed, 10 Jun 2020 07:43:24 GMT
 ARG SOLR_SHA512=75472c1bceb5813f4af3b8c62a200e3fcfa70b1d30bb801d5f307ffe5280b963841bb47670afb94243d3eb8faf3472514e41a6ea8fba598a6b7f003174457ad4
-# Mon, 08 Jun 2020 19:28:02 GMT
+# Wed, 10 Jun 2020 07:43:24 GMT
 ARG SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C
-# Mon, 08 Jun 2020 19:28:03 GMT
+# Wed, 10 Jun 2020 07:43:24 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:28:03 GMT
+# Wed, 10 Jun 2020 07:43:24 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:28:10 GMT
+# Wed, 10 Jun 2020 07:43:32 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=75472c1bceb5813f4af3b8c62a200e3fcfa70b1d30bb801d5f307ffe5280b963841bb47670afb94243d3eb8faf3472514e41a6ea8fba598a6b7f003174457ad4 SOLR_VERSION=8.3.1
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:28:10 GMT
+# Wed, 10 Jun 2020 07:43:32 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.3.1/solr-8.3.1.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.3.1/solr-8.3.1.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.3.1/solr-8.3.1.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:28:11 GMT
+# Wed, 10 Jun 2020 07:43:33 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=75472c1bceb5813f4af3b8c62a200e3fcfa70b1d30bb801d5f307ffe5280b963841bb47670afb94243d3eb8faf3472514e41a6ea8fba598a6b7f003174457ad4 SOLR_VERSION=8.3.1
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:28:12 GMT
+# Wed, 10 Jun 2020 07:43:33 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=75472c1bceb5813f4af3b8c62a200e3fcfa70b1d30bb801d5f307ffe5280b963841bb47670afb94243d3eb8faf3472514e41a6ea8fba598a6b7f003174457ad4 SOLR_VERSION=8.3.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:28:27 GMT
+# Wed, 10 Jun 2020 07:43:53 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=75472c1bceb5813f4af3b8c62a200e3fcfa70b1d30bb801d5f307ffe5280b963841bb47670afb94243d3eb8faf3472514e41a6ea8fba598a6b7f003174457ad4 SOLR_VERSION=8.3.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:28:28 GMT
+# Wed, 10 Jun 2020 07:43:54 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:28:28 GMT
+# Wed, 10 Jun 2020 07:43:54 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:28:28 GMT
+# Wed, 10 Jun 2020 07:43:54 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:28:28 GMT
+# Wed, 10 Jun 2020 07:43:54 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:28:28 GMT
+# Wed, 10 Jun 2020 07:43:54 GMT
 USER solr
-# Mon, 08 Jun 2020 19:28:29 GMT
+# Wed, 10 Jun 2020 07:43:55 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:28:29 GMT
+# Wed, 10 Jun 2020 07:43:55 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:afb6ec6fdc1c3ba04f7a56db32c5ff5ff38962dc4cd0ffdef5beaa0ce2eb77e2`  
-		Last Modified: Fri, 15 May 2020 06:37:39 GMT  
-		Size: 27.1 MB (27098756 bytes)  
+	-	`sha256:8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df`  
+		Last Modified: Tue, 09 Jun 2020 01:25:50 GMT  
+		Size: 27.1 MB (27098265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee19e84e8bd1140527176689c9c1a75f28c0462c0c714e549536452708cbfb64`  
-		Last Modified: Fri, 15 May 2020 21:07:16 GMT  
-		Size: 3.2 MB (3249166 bytes)  
+	-	`sha256:65306eca6b8ea03d29cd8d10a31e9d7a6a1cf8766fe4ca3913e75e00fc47be79`  
+		Last Modified: Tue, 09 Jun 2020 16:41:33 GMT  
+		Size: 3.2 MB (3248452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ac787417531d48ce82f6180741b078086d62631806d5b1ca0d2763fd63b3826`  
-		Last Modified: Fri, 15 May 2020 21:09:46 GMT  
-		Size: 211.0 B  
+	-	`sha256:ddbf88050b6e7cbe8b76b77196134f31015ef5cb69123ba6af35da6f5b101459`  
+		Last Modified: Tue, 09 Jun 2020 16:44:15 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3f781d4d83e8b462ca228cb269f0d69cfac7973216d1937b288373a01e01e58`  
-		Last Modified: Fri, 15 May 2020 21:10:46 GMT  
-		Size: 42.2 MB (42214711 bytes)  
+	-	`sha256:0cb03c61bf260965ae2dc495175ab87e56951ad9ee8dc26f028c430e770f77fe`  
+		Last Modified: Tue, 09 Jun 2020 16:45:32 GMT  
+		Size: 42.2 MB (42216357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26e7859fdbc1a5d1d2eeddc63e410902a65b7fef5d39df99b521017f92248b1a`  
-		Last Modified: Mon, 08 Jun 2020 19:49:49 GMT  
-		Size: 6.5 MB (6453318 bytes)  
+	-	`sha256:8a1414c6dacdf5caec9d5243ac46a1ee069a07e72fe1b9b420644b0429ba1a29`  
+		Last Modified: Wed, 10 Jun 2020 07:55:46 GMT  
+		Size: 6.5 MB (6453273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2cd76c20116e9d662377149e9ae10bd059c408f826d0a2c7a2df39152ee427a`  
-		Last Modified: Mon, 08 Jun 2020 19:49:44 GMT  
-		Size: 4.3 KB (4291 bytes)  
+	-	`sha256:6995f2d233b113682f279a67563e38223bf660c55f4956cf0592963191524fd9`  
+		Last Modified: Wed, 10 Jun 2020 07:55:45 GMT  
+		Size: 4.3 KB (4283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a361964110c729254eeb5230f4465482894a7a9473d65719012dd7119c3dfa77`  
-		Last Modified: Mon, 08 Jun 2020 19:49:44 GMT  
-		Size: 2.9 KB (2865 bytes)  
+	-	`sha256:6acfec3bccbef5f22f36eab5297acf1de5332a8e3a5c1a4ffe1b6398a8867056`  
+		Last Modified: Wed, 10 Jun 2020 07:55:44 GMT  
+		Size: 2.9 KB (2860 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e1bd538147a0d517bf59209daacdaa9fcb1da0c3f7e937f1b839d603ddec1de`  
-		Last Modified: Mon, 08 Jun 2020 19:51:52 GMT  
-		Size: 186.2 MB (186226998 bytes)  
+	-	`sha256:ec95e13cf99de2baa41f6e6437ac98f71158695c29f0c2d72250fef4ca73941d`  
+		Last Modified: Wed, 10 Jun 2020 07:55:56 GMT  
+		Size: 186.2 MB (186226993 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db207a602b7078d7fdf69c8432ba7a09c20e335c54ac86afac0fcbaa6e269cf9`  
-		Last Modified: Mon, 08 Jun 2020 19:49:44 GMT  
-		Size: 6.2 KB (6247 bytes)  
+	-	`sha256:83c59b2d5084d1f534c744fc653005941cc296d881ab6f0d0609846155d51070`  
+		Last Modified: Wed, 10 Jun 2020 07:55:45 GMT  
+		Size: 6.2 KB (6249 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:8.3-slim` - linux; arm64 variant v8
@@ -7639,7 +7639,7 @@ CMD ["solr-foreground"]
 ## `solr:8.4`
 
 ```console
-$ docker pull solr@sha256:64b805e49187f87664aa8df3651fa394a8ba9c6ef56fdc7057988fcad1281cfc
+$ docker pull solr@sha256:e6e152aae8871c4d9c4d196aac0d4ab44b2d4244306f689042481491199a3605
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7650,132 +7650,132 @@ $ docker pull solr@sha256:64b805e49187f87664aa8df3651fa394a8ba9c6ef56fdc7057988f
 ### `solr:8.4` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:3bad53d021e41423473c24759384f7c9ec13e111b4e5469964f9b6f2b880c856
+$ docker pull solr@sha256:50eb80e65055a27705e104ac361b75bebf15753d82ce0e2b22f2893a4f451ab1
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **305.2 MB (305221980 bytes)**  
+-	Total Size: **305.2 MB (305219847 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:393d60fd895521285a87f84e7bea438a38fb190afa512a8b6fa494ebb96fc593`
+-	Image ID: `sha256:9dd6cbba09bf50cbbe577bd2387ab7627b0d99ecc446a21ab06f660990ef9d23`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:12 GMT
-ADD file:fb54c709daa205bf9d04eb3d90ba068db4c34dfe3b6ec0d7691f677286120903 in / 
-# Fri, 15 May 2020 06:28:13 GMT
+# Tue, 09 Jun 2020 01:20:39 GMT
+ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
+# Tue, 09 Jun 2020 01:20:39 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 17:32:13 GMT
+# Tue, 09 Jun 2020 01:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 17:32:19 GMT
+# Tue, 09 Jun 2020 01:46:41 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:33 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:03:38 GMT
+# Tue, 09 Jun 2020 16:38:12 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:26:25 GMT
+# Wed, 10 Jun 2020 07:41:46 GMT
 ARG SOLR_VERSION=8.4.1
-# Mon, 08 Jun 2020 19:26:25 GMT
+# Wed, 10 Jun 2020 07:41:46 GMT
 ARG SOLR_SHA512=2f210dae8d6a07b111ede22005fbd16aa6848900cda8adb352a33e08229783a170dddb529a7eb990f5157d4f5427c199df2114b9c0ffecdf9490a2ac07c6bb09
-# Mon, 08 Jun 2020 19:26:25 GMT
+# Wed, 10 Jun 2020 07:41:46 GMT
 ARG SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C
-# Mon, 08 Jun 2020 19:26:25 GMT
+# Wed, 10 Jun 2020 07:41:46 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:26:26 GMT
+# Wed, 10 Jun 2020 07:41:47 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:26:31 GMT
+# Wed, 10 Jun 2020 07:41:52 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=2f210dae8d6a07b111ede22005fbd16aa6848900cda8adb352a33e08229783a170dddb529a7eb990f5157d4f5427c199df2114b9c0ffecdf9490a2ac07c6bb09 SOLR_VERSION=8.4.1
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:26:31 GMT
+# Wed, 10 Jun 2020 07:41:52 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.4.1/solr-8.4.1.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.4.1/solr-8.4.1.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.4.1/solr-8.4.1.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:26:32 GMT
+# Wed, 10 Jun 2020 07:41:53 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=2f210dae8d6a07b111ede22005fbd16aa6848900cda8adb352a33e08229783a170dddb529a7eb990f5157d4f5427c199df2114b9c0ffecdf9490a2ac07c6bb09 SOLR_VERSION=8.4.1
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:26:33 GMT
+# Wed, 10 Jun 2020 07:41:54 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=2f210dae8d6a07b111ede22005fbd16aa6848900cda8adb352a33e08229783a170dddb529a7eb990f5157d4f5427c199df2114b9c0ffecdf9490a2ac07c6bb09 SOLR_VERSION=8.4.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:26:50 GMT
+# Wed, 10 Jun 2020 07:42:10 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=2f210dae8d6a07b111ede22005fbd16aa6848900cda8adb352a33e08229783a170dddb529a7eb990f5157d4f5427c199df2114b9c0ffecdf9490a2ac07c6bb09 SOLR_VERSION=8.4.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:26:51 GMT
+# Wed, 10 Jun 2020 07:42:11 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:26:51 GMT
+# Wed, 10 Jun 2020 07:42:11 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:26:51 GMT
+# Wed, 10 Jun 2020 07:42:11 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:26:51 GMT
+# Wed, 10 Jun 2020 07:42:11 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:26:51 GMT
+# Wed, 10 Jun 2020 07:42:11 GMT
 USER solr
-# Mon, 08 Jun 2020 19:26:51 GMT
+# Wed, 10 Jun 2020 07:42:12 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:26:52 GMT
+# Wed, 10 Jun 2020 07:42:12 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:376057ac6fa17f65688c56977118e2e764b27c348b3f70637fa829cd2a12b200`  
-		Last Modified: Fri, 15 May 2020 06:37:20 GMT  
-		Size: 50.4 MB (50391294 bytes)  
+	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
+		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
+		Size: 50.4 MB (50389504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a63a0a859d859478f30461786a49c2fca3ae7d89ab5b5ce3c81c54951d30f88`  
-		Last Modified: Fri, 15 May 2020 17:50:44 GMT  
-		Size: 7.8 MB (7812354 bytes)  
+	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 7.8 MB (7811709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:496548a8c952b37bdf149ab3654f9085d721ee126b8c73b16860778be5137f5e`  
-		Last Modified: Fri, 15 May 2020 17:50:49 GMT  
-		Size: 10.0 MB (9996284 bytes)  
+	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 10.0 MB (9996168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94b2daf7a1b5f537cba1c514f668125cbe30051a963fceee666de62352eb49ca`  
-		Last Modified: Fri, 15 May 2020 21:10:23 GMT  
-		Size: 5.5 MB (5529320 bytes)  
+	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
+		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
+		Size: 5.5 MB (5529317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8058d73803f3a05ad139e4bb713b7d93fb29f671441f1be35e844bb94a47152a`  
-		Last Modified: Fri, 15 May 2020 21:10:22 GMT  
-		Size: 211.0 B  
+	-	`sha256:e440f69a0a762646d5aed47652c8a122f43b415f52b87a90eb14690e1426fd0f`  
+		Last Modified: Tue, 09 Jun 2020 16:45:02 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dc4c151e7bebd2e3066851d6bc5ed2cfa0a9299b7e89cea9181a8994fa09abc`  
-		Last Modified: Fri, 15 May 2020 21:10:31 GMT  
-		Size: 41.9 MB (41941113 bytes)  
+	-	`sha256:837b533a935df78a47a09e44fd06c8ec7af6624ef1eec0d69e8d7d208efe2434`  
+		Last Modified: Tue, 09 Jun 2020 16:45:14 GMT  
+		Size: 41.9 MB (41941557 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17b8e091afbd791ec7392996970550399ea3db4667bfacdb076d373835187b76`  
-		Last Modified: Mon, 08 Jun 2020 19:40:36 GMT  
-		Size: 2.5 MB (2545761 bytes)  
+	-	`sha256:131b09244be603642cf8c369c3ef112514b3ef563c750a2052a834e0a336514c`  
+		Last Modified: Wed, 10 Jun 2020 07:54:57 GMT  
+		Size: 2.5 MB (2545741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d38a8ae07e60baba362c0c8d3e0039d55ad6c28f386ed85fd589a6c455d9648b`  
-		Last Modified: Mon, 08 Jun 2020 19:40:34 GMT  
-		Size: 4.3 KB (4289 bytes)  
+	-	`sha256:f1293f9c02d00e7630d585b5bf7009a638ad0188c492d6f899603aac906ffe8f`  
+		Last Modified: Wed, 10 Jun 2020 07:54:56 GMT  
+		Size: 4.3 KB (4283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50ad6d359da207a1ec8bb0b95776e5da4dfb9e4d325a0c053eb97fc4e589662e`  
-		Last Modified: Mon, 08 Jun 2020 19:40:35 GMT  
-		Size: 2.9 KB (2861 bytes)  
+	-	`sha256:5fd812cdfd7b3b2afbecfa576330c363b6edfeba2eb67f910b7d2c4e9c895283`  
+		Last Modified: Wed, 10 Jun 2020 07:54:56 GMT  
+		Size: 2.9 KB (2862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac343d033c076e607957d3c53daa4ce9bc82df1c9a2a0511aa4382c83b5b3a53`  
-		Last Modified: Mon, 08 Jun 2020 19:41:21 GMT  
+	-	`sha256:9870302d6ab11260cb13cfcadfd88675f9cd9570ac133f85df56241715de2f86`  
+		Last Modified: Wed, 10 Jun 2020 07:55:07 GMT  
 		Size: 187.0 MB (186992245 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f24b81d2b93d8afd0d0d8fb2b249b3764b323ede70039802a3445186af3fb6c`  
-		Last Modified: Mon, 08 Jun 2020 19:40:35 GMT  
-		Size: 6.2 KB (6248 bytes)  
+	-	`sha256:2c0d5f328e41ec5bc6487a3d450d7823b6967a8ac90514a4bfd32bb52d5fa0a2`  
+		Last Modified: Wed, 10 Jun 2020 07:54:57 GMT  
+		Size: 6.3 KB (6251 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:8.4` - linux; arm64 variant v8
@@ -7912,7 +7912,7 @@ CMD ["solr-foreground"]
 ## `solr:8.4.1`
 
 ```console
-$ docker pull solr@sha256:64b805e49187f87664aa8df3651fa394a8ba9c6ef56fdc7057988fcad1281cfc
+$ docker pull solr@sha256:e6e152aae8871c4d9c4d196aac0d4ab44b2d4244306f689042481491199a3605
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7923,132 +7923,132 @@ $ docker pull solr@sha256:64b805e49187f87664aa8df3651fa394a8ba9c6ef56fdc7057988f
 ### `solr:8.4.1` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:3bad53d021e41423473c24759384f7c9ec13e111b4e5469964f9b6f2b880c856
+$ docker pull solr@sha256:50eb80e65055a27705e104ac361b75bebf15753d82ce0e2b22f2893a4f451ab1
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **305.2 MB (305221980 bytes)**  
+-	Total Size: **305.2 MB (305219847 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:393d60fd895521285a87f84e7bea438a38fb190afa512a8b6fa494ebb96fc593`
+-	Image ID: `sha256:9dd6cbba09bf50cbbe577bd2387ab7627b0d99ecc446a21ab06f660990ef9d23`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:12 GMT
-ADD file:fb54c709daa205bf9d04eb3d90ba068db4c34dfe3b6ec0d7691f677286120903 in / 
-# Fri, 15 May 2020 06:28:13 GMT
+# Tue, 09 Jun 2020 01:20:39 GMT
+ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
+# Tue, 09 Jun 2020 01:20:39 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 17:32:13 GMT
+# Tue, 09 Jun 2020 01:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 17:32:19 GMT
+# Tue, 09 Jun 2020 01:46:41 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:33 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:03:38 GMT
+# Tue, 09 Jun 2020 16:38:12 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:26:25 GMT
+# Wed, 10 Jun 2020 07:41:46 GMT
 ARG SOLR_VERSION=8.4.1
-# Mon, 08 Jun 2020 19:26:25 GMT
+# Wed, 10 Jun 2020 07:41:46 GMT
 ARG SOLR_SHA512=2f210dae8d6a07b111ede22005fbd16aa6848900cda8adb352a33e08229783a170dddb529a7eb990f5157d4f5427c199df2114b9c0ffecdf9490a2ac07c6bb09
-# Mon, 08 Jun 2020 19:26:25 GMT
+# Wed, 10 Jun 2020 07:41:46 GMT
 ARG SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C
-# Mon, 08 Jun 2020 19:26:25 GMT
+# Wed, 10 Jun 2020 07:41:46 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:26:26 GMT
+# Wed, 10 Jun 2020 07:41:47 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:26:31 GMT
+# Wed, 10 Jun 2020 07:41:52 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=2f210dae8d6a07b111ede22005fbd16aa6848900cda8adb352a33e08229783a170dddb529a7eb990f5157d4f5427c199df2114b9c0ffecdf9490a2ac07c6bb09 SOLR_VERSION=8.4.1
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:26:31 GMT
+# Wed, 10 Jun 2020 07:41:52 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.4.1/solr-8.4.1.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.4.1/solr-8.4.1.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.4.1/solr-8.4.1.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:26:32 GMT
+# Wed, 10 Jun 2020 07:41:53 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=2f210dae8d6a07b111ede22005fbd16aa6848900cda8adb352a33e08229783a170dddb529a7eb990f5157d4f5427c199df2114b9c0ffecdf9490a2ac07c6bb09 SOLR_VERSION=8.4.1
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:26:33 GMT
+# Wed, 10 Jun 2020 07:41:54 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=2f210dae8d6a07b111ede22005fbd16aa6848900cda8adb352a33e08229783a170dddb529a7eb990f5157d4f5427c199df2114b9c0ffecdf9490a2ac07c6bb09 SOLR_VERSION=8.4.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:26:50 GMT
+# Wed, 10 Jun 2020 07:42:10 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=2f210dae8d6a07b111ede22005fbd16aa6848900cda8adb352a33e08229783a170dddb529a7eb990f5157d4f5427c199df2114b9c0ffecdf9490a2ac07c6bb09 SOLR_VERSION=8.4.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:26:51 GMT
+# Wed, 10 Jun 2020 07:42:11 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:26:51 GMT
+# Wed, 10 Jun 2020 07:42:11 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:26:51 GMT
+# Wed, 10 Jun 2020 07:42:11 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:26:51 GMT
+# Wed, 10 Jun 2020 07:42:11 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:26:51 GMT
+# Wed, 10 Jun 2020 07:42:11 GMT
 USER solr
-# Mon, 08 Jun 2020 19:26:51 GMT
+# Wed, 10 Jun 2020 07:42:12 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:26:52 GMT
+# Wed, 10 Jun 2020 07:42:12 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:376057ac6fa17f65688c56977118e2e764b27c348b3f70637fa829cd2a12b200`  
-		Last Modified: Fri, 15 May 2020 06:37:20 GMT  
-		Size: 50.4 MB (50391294 bytes)  
+	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
+		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
+		Size: 50.4 MB (50389504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a63a0a859d859478f30461786a49c2fca3ae7d89ab5b5ce3c81c54951d30f88`  
-		Last Modified: Fri, 15 May 2020 17:50:44 GMT  
-		Size: 7.8 MB (7812354 bytes)  
+	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 7.8 MB (7811709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:496548a8c952b37bdf149ab3654f9085d721ee126b8c73b16860778be5137f5e`  
-		Last Modified: Fri, 15 May 2020 17:50:49 GMT  
-		Size: 10.0 MB (9996284 bytes)  
+	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 10.0 MB (9996168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94b2daf7a1b5f537cba1c514f668125cbe30051a963fceee666de62352eb49ca`  
-		Last Modified: Fri, 15 May 2020 21:10:23 GMT  
-		Size: 5.5 MB (5529320 bytes)  
+	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
+		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
+		Size: 5.5 MB (5529317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8058d73803f3a05ad139e4bb713b7d93fb29f671441f1be35e844bb94a47152a`  
-		Last Modified: Fri, 15 May 2020 21:10:22 GMT  
-		Size: 211.0 B  
+	-	`sha256:e440f69a0a762646d5aed47652c8a122f43b415f52b87a90eb14690e1426fd0f`  
+		Last Modified: Tue, 09 Jun 2020 16:45:02 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dc4c151e7bebd2e3066851d6bc5ed2cfa0a9299b7e89cea9181a8994fa09abc`  
-		Last Modified: Fri, 15 May 2020 21:10:31 GMT  
-		Size: 41.9 MB (41941113 bytes)  
+	-	`sha256:837b533a935df78a47a09e44fd06c8ec7af6624ef1eec0d69e8d7d208efe2434`  
+		Last Modified: Tue, 09 Jun 2020 16:45:14 GMT  
+		Size: 41.9 MB (41941557 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17b8e091afbd791ec7392996970550399ea3db4667bfacdb076d373835187b76`  
-		Last Modified: Mon, 08 Jun 2020 19:40:36 GMT  
-		Size: 2.5 MB (2545761 bytes)  
+	-	`sha256:131b09244be603642cf8c369c3ef112514b3ef563c750a2052a834e0a336514c`  
+		Last Modified: Wed, 10 Jun 2020 07:54:57 GMT  
+		Size: 2.5 MB (2545741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d38a8ae07e60baba362c0c8d3e0039d55ad6c28f386ed85fd589a6c455d9648b`  
-		Last Modified: Mon, 08 Jun 2020 19:40:34 GMT  
-		Size: 4.3 KB (4289 bytes)  
+	-	`sha256:f1293f9c02d00e7630d585b5bf7009a638ad0188c492d6f899603aac906ffe8f`  
+		Last Modified: Wed, 10 Jun 2020 07:54:56 GMT  
+		Size: 4.3 KB (4283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50ad6d359da207a1ec8bb0b95776e5da4dfb9e4d325a0c053eb97fc4e589662e`  
-		Last Modified: Mon, 08 Jun 2020 19:40:35 GMT  
-		Size: 2.9 KB (2861 bytes)  
+	-	`sha256:5fd812cdfd7b3b2afbecfa576330c363b6edfeba2eb67f910b7d2c4e9c895283`  
+		Last Modified: Wed, 10 Jun 2020 07:54:56 GMT  
+		Size: 2.9 KB (2862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac343d033c076e607957d3c53daa4ce9bc82df1c9a2a0511aa4382c83b5b3a53`  
-		Last Modified: Mon, 08 Jun 2020 19:41:21 GMT  
+	-	`sha256:9870302d6ab11260cb13cfcadfd88675f9cd9570ac133f85df56241715de2f86`  
+		Last Modified: Wed, 10 Jun 2020 07:55:07 GMT  
 		Size: 187.0 MB (186992245 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f24b81d2b93d8afd0d0d8fb2b249b3764b323ede70039802a3445186af3fb6c`  
-		Last Modified: Mon, 08 Jun 2020 19:40:35 GMT  
-		Size: 6.2 KB (6248 bytes)  
+	-	`sha256:2c0d5f328e41ec5bc6487a3d450d7823b6967a8ac90514a4bfd32bb52d5fa0a2`  
+		Last Modified: Wed, 10 Jun 2020 07:54:57 GMT  
+		Size: 6.3 KB (6251 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:8.4.1` - linux; arm64 variant v8
@@ -8185,7 +8185,7 @@ CMD ["solr-foreground"]
 ## `solr:8.4.1-slim`
 
 ```console
-$ docker pull solr@sha256:9103f8e750029ccf2f9d2950f9f73a7433f956a7b7c8c4f0e099488fa2f1c62d
+$ docker pull solr@sha256:1a3d6d43a6e31e94de07f5f9aabd8124a1ba9357a38da543e405c50c58fbe79e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8196,120 +8196,120 @@ $ docker pull solr@sha256:9103f8e750029ccf2f9d2950f9f73a7433f956a7b7c8c4f0e09948
 ### `solr:8.4.1-slim` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:b8dea6317c957dab64c67f5ade18e2b10c8426e29bdb2ee3d05e33f382842e87
+$ docker pull solr@sha256:3ac4285ecce1784d079bcdd91c6d6e7d80091650faf16f02e8ce5b6c233b582c
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **266.0 MB (266021897 bytes)**  
+-	Total Size: **266.0 MB (266022167 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d86d8487a6bd5b48d99aefc73b8feff2d7bd4cc27bc865e6acd890f69d9a8bd`
+-	Image ID: `sha256:57561b48896905326438face5cb7487c9bee4485567cd7da638beacddf455c4c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:44 GMT
-ADD file:7780c81c33e6cc5b6261af4a6c611cce0f39dec3131009bb297e65f12020c150 in / 
-# Fri, 15 May 2020 06:28:44 GMT
+# Tue, 09 Jun 2020 01:20:56 GMT
+ADD file:4d35f6c8bbbe6801cc5f44989730fb6d349a644ecb36eca481e7df25842d6321 in / 
+# Tue, 09 Jun 2020 01:20:56 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:37 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:02:50 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:02:51 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:04:03 GMT
+# Tue, 09 Jun 2020 16:38:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:26:59 GMT
+# Wed, 10 Jun 2020 07:42:20 GMT
 ARG SOLR_VERSION=8.4.1
-# Mon, 08 Jun 2020 19:26:59 GMT
+# Wed, 10 Jun 2020 07:42:20 GMT
 ARG SOLR_SHA512=2f210dae8d6a07b111ede22005fbd16aa6848900cda8adb352a33e08229783a170dddb529a7eb990f5157d4f5427c199df2114b9c0ffecdf9490a2ac07c6bb09
-# Mon, 08 Jun 2020 19:26:59 GMT
+# Wed, 10 Jun 2020 07:42:20 GMT
 ARG SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C
-# Mon, 08 Jun 2020 19:26:59 GMT
+# Wed, 10 Jun 2020 07:42:21 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:27:00 GMT
+# Wed, 10 Jun 2020 07:42:21 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:27:08 GMT
+# Wed, 10 Jun 2020 07:42:28 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=2f210dae8d6a07b111ede22005fbd16aa6848900cda8adb352a33e08229783a170dddb529a7eb990f5157d4f5427c199df2114b9c0ffecdf9490a2ac07c6bb09 SOLR_VERSION=8.4.1
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:27:08 GMT
+# Wed, 10 Jun 2020 07:42:28 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.4.1/solr-8.4.1.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.4.1/solr-8.4.1.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.4.1/solr-8.4.1.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:27:09 GMT
+# Wed, 10 Jun 2020 07:42:29 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=2f210dae8d6a07b111ede22005fbd16aa6848900cda8adb352a33e08229783a170dddb529a7eb990f5157d4f5427c199df2114b9c0ffecdf9490a2ac07c6bb09 SOLR_VERSION=8.4.1
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:27:10 GMT
+# Wed, 10 Jun 2020 07:42:30 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=2f210dae8d6a07b111ede22005fbd16aa6848900cda8adb352a33e08229783a170dddb529a7eb990f5157d4f5427c199df2114b9c0ffecdf9490a2ac07c6bb09 SOLR_VERSION=8.4.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:27:26 GMT
+# Wed, 10 Jun 2020 07:42:46 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=2f210dae8d6a07b111ede22005fbd16aa6848900cda8adb352a33e08229783a170dddb529a7eb990f5157d4f5427c199df2114b9c0ffecdf9490a2ac07c6bb09 SOLR_VERSION=8.4.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:27:27 GMT
+# Wed, 10 Jun 2020 07:42:46 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:27:27 GMT
+# Wed, 10 Jun 2020 07:42:46 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:27:27 GMT
+# Wed, 10 Jun 2020 07:42:46 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:27:27 GMT
+# Wed, 10 Jun 2020 07:42:47 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:27:27 GMT
+# Wed, 10 Jun 2020 07:42:47 GMT
 USER solr
-# Mon, 08 Jun 2020 19:27:28 GMT
+# Wed, 10 Jun 2020 07:42:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:27:28 GMT
+# Wed, 10 Jun 2020 07:42:47 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:afb6ec6fdc1c3ba04f7a56db32c5ff5ff38962dc4cd0ffdef5beaa0ce2eb77e2`  
-		Last Modified: Fri, 15 May 2020 06:37:39 GMT  
-		Size: 27.1 MB (27098756 bytes)  
+	-	`sha256:8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df`  
+		Last Modified: Tue, 09 Jun 2020 01:25:50 GMT  
+		Size: 27.1 MB (27098265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee19e84e8bd1140527176689c9c1a75f28c0462c0c714e549536452708cbfb64`  
-		Last Modified: Fri, 15 May 2020 21:07:16 GMT  
-		Size: 3.2 MB (3249166 bytes)  
+	-	`sha256:65306eca6b8ea03d29cd8d10a31e9d7a6a1cf8766fe4ca3913e75e00fc47be79`  
+		Last Modified: Tue, 09 Jun 2020 16:41:33 GMT  
+		Size: 3.2 MB (3248452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ac787417531d48ce82f6180741b078086d62631806d5b1ca0d2763fd63b3826`  
-		Last Modified: Fri, 15 May 2020 21:09:46 GMT  
-		Size: 211.0 B  
+	-	`sha256:ddbf88050b6e7cbe8b76b77196134f31015ef5cb69123ba6af35da6f5b101459`  
+		Last Modified: Tue, 09 Jun 2020 16:44:15 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3f781d4d83e8b462ca228cb269f0d69cfac7973216d1937b288373a01e01e58`  
-		Last Modified: Fri, 15 May 2020 21:10:46 GMT  
-		Size: 42.2 MB (42214711 bytes)  
+	-	`sha256:0cb03c61bf260965ae2dc495175ab87e56951ad9ee8dc26f028c430e770f77fe`  
+		Last Modified: Tue, 09 Jun 2020 16:45:32 GMT  
+		Size: 42.2 MB (42216357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0aa278771d780ead89f81d7fe7aa515372ad8acce149d73dc6afe76fcd1ad370`  
-		Last Modified: Mon, 08 Jun 2020 19:41:32 GMT  
-		Size: 6.5 MB (6453370 bytes)  
+	-	`sha256:6f1fbb8e24a3e0ea618e33bd806cf3dc6b08678810d39e1cb20842b0c4b4a754`  
+		Last Modified: Wed, 10 Jun 2020 07:55:15 GMT  
+		Size: 6.5 MB (6453249 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9390810a0958d591ffb38d44c389ac55381139ada73f2a8bfcda114a2a79e6c9`  
-		Last Modified: Mon, 08 Jun 2020 19:41:27 GMT  
-		Size: 4.3 KB (4290 bytes)  
+	-	`sha256:edd7761de149ba8b419da2d14e2e0825bfff388d100bab84b1ffa7d04396dc56`  
+		Last Modified: Wed, 10 Jun 2020 07:55:14 GMT  
+		Size: 4.3 KB (4282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f195b5db48e00c48b2e83558f2d976a7d4c104436dea7d7778e5cc8dd41d4316`  
-		Last Modified: Mon, 08 Jun 2020 19:41:28 GMT  
-		Size: 2.9 KB (2861 bytes)  
+	-	`sha256:56969431a077c67e846633a9a271e0789617f3547c70f93c430039b63639d288`  
+		Last Modified: Wed, 10 Jun 2020 07:55:13 GMT  
+		Size: 2.9 KB (2872 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b46b4c021aa2dc4f223dbce9cbab9207faa45965641b8a772601609f855af69`  
-		Last Modified: Mon, 08 Jun 2020 19:42:10 GMT  
-		Size: 187.0 MB (186992285 bytes)  
+	-	`sha256:8592738dfbaca8d9701b1f2032d23306ff04d3ce7f8090fca49050f87e3a13da`  
+		Last Modified: Wed, 10 Jun 2020 07:55:24 GMT  
+		Size: 187.0 MB (186992232 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1aefc8105a31e54db98eddf30b508f248d42ccdd7cefa929a41ffdc43365c29`  
-		Last Modified: Mon, 08 Jun 2020 19:41:27 GMT  
-		Size: 6.2 KB (6247 bytes)  
+	-	`sha256:eca3f75403b472809baf33c07246c4b8ab906c10e775790d8d432f160403b814`  
+		Last Modified: Wed, 10 Jun 2020 07:55:13 GMT  
+		Size: 6.2 KB (6248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:8.4.1-slim` - linux; arm64 variant v8
@@ -8434,7 +8434,7 @@ CMD ["solr-foreground"]
 ## `solr:8.4-slim`
 
 ```console
-$ docker pull solr@sha256:9103f8e750029ccf2f9d2950f9f73a7433f956a7b7c8c4f0e099488fa2f1c62d
+$ docker pull solr@sha256:1a3d6d43a6e31e94de07f5f9aabd8124a1ba9357a38da543e405c50c58fbe79e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8445,120 +8445,120 @@ $ docker pull solr@sha256:9103f8e750029ccf2f9d2950f9f73a7433f956a7b7c8c4f0e09948
 ### `solr:8.4-slim` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:b8dea6317c957dab64c67f5ade18e2b10c8426e29bdb2ee3d05e33f382842e87
+$ docker pull solr@sha256:3ac4285ecce1784d079bcdd91c6d6e7d80091650faf16f02e8ce5b6c233b582c
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **266.0 MB (266021897 bytes)**  
+-	Total Size: **266.0 MB (266022167 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d86d8487a6bd5b48d99aefc73b8feff2d7bd4cc27bc865e6acd890f69d9a8bd`
+-	Image ID: `sha256:57561b48896905326438face5cb7487c9bee4485567cd7da638beacddf455c4c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:44 GMT
-ADD file:7780c81c33e6cc5b6261af4a6c611cce0f39dec3131009bb297e65f12020c150 in / 
-# Fri, 15 May 2020 06:28:44 GMT
+# Tue, 09 Jun 2020 01:20:56 GMT
+ADD file:4d35f6c8bbbe6801cc5f44989730fb6d349a644ecb36eca481e7df25842d6321 in / 
+# Tue, 09 Jun 2020 01:20:56 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:37 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:02:50 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:02:51 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:04:03 GMT
+# Tue, 09 Jun 2020 16:38:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:26:59 GMT
+# Wed, 10 Jun 2020 07:42:20 GMT
 ARG SOLR_VERSION=8.4.1
-# Mon, 08 Jun 2020 19:26:59 GMT
+# Wed, 10 Jun 2020 07:42:20 GMT
 ARG SOLR_SHA512=2f210dae8d6a07b111ede22005fbd16aa6848900cda8adb352a33e08229783a170dddb529a7eb990f5157d4f5427c199df2114b9c0ffecdf9490a2ac07c6bb09
-# Mon, 08 Jun 2020 19:26:59 GMT
+# Wed, 10 Jun 2020 07:42:20 GMT
 ARG SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C
-# Mon, 08 Jun 2020 19:26:59 GMT
+# Wed, 10 Jun 2020 07:42:21 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:27:00 GMT
+# Wed, 10 Jun 2020 07:42:21 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:27:08 GMT
+# Wed, 10 Jun 2020 07:42:28 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=2f210dae8d6a07b111ede22005fbd16aa6848900cda8adb352a33e08229783a170dddb529a7eb990f5157d4f5427c199df2114b9c0ffecdf9490a2ac07c6bb09 SOLR_VERSION=8.4.1
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:27:08 GMT
+# Wed, 10 Jun 2020 07:42:28 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.4.1/solr-8.4.1.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.4.1/solr-8.4.1.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.4.1/solr-8.4.1.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:27:09 GMT
+# Wed, 10 Jun 2020 07:42:29 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=2f210dae8d6a07b111ede22005fbd16aa6848900cda8adb352a33e08229783a170dddb529a7eb990f5157d4f5427c199df2114b9c0ffecdf9490a2ac07c6bb09 SOLR_VERSION=8.4.1
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:27:10 GMT
+# Wed, 10 Jun 2020 07:42:30 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=2f210dae8d6a07b111ede22005fbd16aa6848900cda8adb352a33e08229783a170dddb529a7eb990f5157d4f5427c199df2114b9c0ffecdf9490a2ac07c6bb09 SOLR_VERSION=8.4.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:27:26 GMT
+# Wed, 10 Jun 2020 07:42:46 GMT
 # ARGS: SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C SOLR_SHA512=2f210dae8d6a07b111ede22005fbd16aa6848900cda8adb352a33e08229783a170dddb529a7eb990f5157d4f5427c199df2114b9c0ffecdf9490a2ac07c6bb09 SOLR_VERSION=8.4.1
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:27:27 GMT
+# Wed, 10 Jun 2020 07:42:46 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:27:27 GMT
+# Wed, 10 Jun 2020 07:42:46 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:27:27 GMT
+# Wed, 10 Jun 2020 07:42:46 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:27:27 GMT
+# Wed, 10 Jun 2020 07:42:47 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:27:27 GMT
+# Wed, 10 Jun 2020 07:42:47 GMT
 USER solr
-# Mon, 08 Jun 2020 19:27:28 GMT
+# Wed, 10 Jun 2020 07:42:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:27:28 GMT
+# Wed, 10 Jun 2020 07:42:47 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:afb6ec6fdc1c3ba04f7a56db32c5ff5ff38962dc4cd0ffdef5beaa0ce2eb77e2`  
-		Last Modified: Fri, 15 May 2020 06:37:39 GMT  
-		Size: 27.1 MB (27098756 bytes)  
+	-	`sha256:8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df`  
+		Last Modified: Tue, 09 Jun 2020 01:25:50 GMT  
+		Size: 27.1 MB (27098265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee19e84e8bd1140527176689c9c1a75f28c0462c0c714e549536452708cbfb64`  
-		Last Modified: Fri, 15 May 2020 21:07:16 GMT  
-		Size: 3.2 MB (3249166 bytes)  
+	-	`sha256:65306eca6b8ea03d29cd8d10a31e9d7a6a1cf8766fe4ca3913e75e00fc47be79`  
+		Last Modified: Tue, 09 Jun 2020 16:41:33 GMT  
+		Size: 3.2 MB (3248452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ac787417531d48ce82f6180741b078086d62631806d5b1ca0d2763fd63b3826`  
-		Last Modified: Fri, 15 May 2020 21:09:46 GMT  
-		Size: 211.0 B  
+	-	`sha256:ddbf88050b6e7cbe8b76b77196134f31015ef5cb69123ba6af35da6f5b101459`  
+		Last Modified: Tue, 09 Jun 2020 16:44:15 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3f781d4d83e8b462ca228cb269f0d69cfac7973216d1937b288373a01e01e58`  
-		Last Modified: Fri, 15 May 2020 21:10:46 GMT  
-		Size: 42.2 MB (42214711 bytes)  
+	-	`sha256:0cb03c61bf260965ae2dc495175ab87e56951ad9ee8dc26f028c430e770f77fe`  
+		Last Modified: Tue, 09 Jun 2020 16:45:32 GMT  
+		Size: 42.2 MB (42216357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0aa278771d780ead89f81d7fe7aa515372ad8acce149d73dc6afe76fcd1ad370`  
-		Last Modified: Mon, 08 Jun 2020 19:41:32 GMT  
-		Size: 6.5 MB (6453370 bytes)  
+	-	`sha256:6f1fbb8e24a3e0ea618e33bd806cf3dc6b08678810d39e1cb20842b0c4b4a754`  
+		Last Modified: Wed, 10 Jun 2020 07:55:15 GMT  
+		Size: 6.5 MB (6453249 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9390810a0958d591ffb38d44c389ac55381139ada73f2a8bfcda114a2a79e6c9`  
-		Last Modified: Mon, 08 Jun 2020 19:41:27 GMT  
-		Size: 4.3 KB (4290 bytes)  
+	-	`sha256:edd7761de149ba8b419da2d14e2e0825bfff388d100bab84b1ffa7d04396dc56`  
+		Last Modified: Wed, 10 Jun 2020 07:55:14 GMT  
+		Size: 4.3 KB (4282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f195b5db48e00c48b2e83558f2d976a7d4c104436dea7d7778e5cc8dd41d4316`  
-		Last Modified: Mon, 08 Jun 2020 19:41:28 GMT  
-		Size: 2.9 KB (2861 bytes)  
+	-	`sha256:56969431a077c67e846633a9a271e0789617f3547c70f93c430039b63639d288`  
+		Last Modified: Wed, 10 Jun 2020 07:55:13 GMT  
+		Size: 2.9 KB (2872 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b46b4c021aa2dc4f223dbce9cbab9207faa45965641b8a772601609f855af69`  
-		Last Modified: Mon, 08 Jun 2020 19:42:10 GMT  
-		Size: 187.0 MB (186992285 bytes)  
+	-	`sha256:8592738dfbaca8d9701b1f2032d23306ff04d3ce7f8090fca49050f87e3a13da`  
+		Last Modified: Wed, 10 Jun 2020 07:55:24 GMT  
+		Size: 187.0 MB (186992232 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1aefc8105a31e54db98eddf30b508f248d42ccdd7cefa929a41ffdc43365c29`  
-		Last Modified: Mon, 08 Jun 2020 19:41:27 GMT  
-		Size: 6.2 KB (6247 bytes)  
+	-	`sha256:eca3f75403b472809baf33c07246c4b8ab906c10e775790d8d432f160403b814`  
+		Last Modified: Wed, 10 Jun 2020 07:55:13 GMT  
+		Size: 6.2 KB (6248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:8.4-slim` - linux; arm64 variant v8
@@ -8683,7 +8683,7 @@ CMD ["solr-foreground"]
 ## `solr:8.5`
 
 ```console
-$ docker pull solr@sha256:ff5ce9be5f6687ac5d9b6e1c2cdac6d9fc8ed242cba52b20ead0226e0de809be
+$ docker pull solr@sha256:671d11bda54007aeb05fefae80f201156b14f2a6bc173fec9daecfc0a60d081b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8694,131 +8694,131 @@ $ docker pull solr@sha256:ff5ce9be5f6687ac5d9b6e1c2cdac6d9fc8ed242cba52b20ead022
 ### `solr:8.5` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:b031a39aab1a2a622d55462513a45948f9827caef34ac42ff26a2acc68af5cf4
+$ docker pull solr@sha256:8d789db7144a71e88f59799e71210d73e0e59f3b770648d5aa6ce4f3bdffa620
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **308.9 MB (308855414 bytes)**  
+-	Total Size: **308.9 MB (308853270 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f764e07184186bb56994f39d7ff42c0dd03100b28419f06979830ff89f18ed44`
+-	Image ID: `sha256:7d9cd085372de1cd04f14dbfa61c784b9b4ff04fb0c3a560c1fa167cf5e96653`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:12 GMT
-ADD file:fb54c709daa205bf9d04eb3d90ba068db4c34dfe3b6ec0d7691f677286120903 in / 
-# Fri, 15 May 2020 06:28:13 GMT
+# Tue, 09 Jun 2020 01:20:39 GMT
+ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
+# Tue, 09 Jun 2020 01:20:39 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 17:32:13 GMT
+# Tue, 09 Jun 2020 01:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 17:32:19 GMT
+# Tue, 09 Jun 2020 01:46:41 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:33 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:03:38 GMT
+# Tue, 09 Jun 2020 16:38:12 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 ARG SOLR_VERSION=8.5.2
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:37 GMT
 ARG SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:37 GMT
 ARG SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E
-# Mon, 08 Jun 2020 19:25:28 GMT
+# Wed, 10 Jun 2020 07:40:37 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:25:28 GMT
+# Wed, 10 Jun 2020 07:40:37 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:25:34 GMT
+# Wed, 10 Jun 2020 07:40:43 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:25:34 GMT
+# Wed, 10 Jun 2020 07:40:43 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.5.2/solr-8.5.2.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.5.2/solr-8.5.2.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.5.2/solr-8.5.2.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:25:35 GMT
+# Wed, 10 Jun 2020 07:40:44 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:25:36 GMT
+# Wed, 10 Jun 2020 07:40:45 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:25:48 GMT
+# Wed, 10 Jun 2020 07:41:00 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:25:48 GMT
+# Wed, 10 Jun 2020 07:41:01 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:25:48 GMT
+# Wed, 10 Jun 2020 07:41:01 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:25:49 GMT
+# Wed, 10 Jun 2020 07:41:01 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:25:49 GMT
+# Wed, 10 Jun 2020 07:41:01 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:25:49 GMT
+# Wed, 10 Jun 2020 07:41:01 GMT
 USER solr
-# Mon, 08 Jun 2020 19:25:49 GMT
+# Wed, 10 Jun 2020 07:41:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:25:49 GMT
+# Wed, 10 Jun 2020 07:41:02 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:376057ac6fa17f65688c56977118e2e764b27c348b3f70637fa829cd2a12b200`  
-		Last Modified: Fri, 15 May 2020 06:37:20 GMT  
-		Size: 50.4 MB (50391294 bytes)  
+	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
+		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
+		Size: 50.4 MB (50389504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a63a0a859d859478f30461786a49c2fca3ae7d89ab5b5ce3c81c54951d30f88`  
-		Last Modified: Fri, 15 May 2020 17:50:44 GMT  
-		Size: 7.8 MB (7812354 bytes)  
+	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 7.8 MB (7811709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:496548a8c952b37bdf149ab3654f9085d721ee126b8c73b16860778be5137f5e`  
-		Last Modified: Fri, 15 May 2020 17:50:49 GMT  
-		Size: 10.0 MB (9996284 bytes)  
+	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 10.0 MB (9996168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94b2daf7a1b5f537cba1c514f668125cbe30051a963fceee666de62352eb49ca`  
-		Last Modified: Fri, 15 May 2020 21:10:23 GMT  
-		Size: 5.5 MB (5529320 bytes)  
+	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
+		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
+		Size: 5.5 MB (5529317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8058d73803f3a05ad139e4bb713b7d93fb29f671441f1be35e844bb94a47152a`  
-		Last Modified: Fri, 15 May 2020 21:10:22 GMT  
-		Size: 211.0 B  
+	-	`sha256:e440f69a0a762646d5aed47652c8a122f43b415f52b87a90eb14690e1426fd0f`  
+		Last Modified: Tue, 09 Jun 2020 16:45:02 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dc4c151e7bebd2e3066851d6bc5ed2cfa0a9299b7e89cea9181a8994fa09abc`  
-		Last Modified: Fri, 15 May 2020 21:10:31 GMT  
-		Size: 41.9 MB (41941113 bytes)  
+	-	`sha256:837b533a935df78a47a09e44fd06c8ec7af6624ef1eec0d69e8d7d208efe2434`  
+		Last Modified: Tue, 09 Jun 2020 16:45:14 GMT  
+		Size: 41.9 MB (41941557 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:270b1408d58de905dfd4ed704b62f3309a537ac1fc23f286e66008694bc9af63`  
-		Last Modified: Mon, 08 Jun 2020 19:35:05 GMT  
-		Size: 2.5 MB (2545780 bytes)  
+	-	`sha256:2df9b8b5d142a662ef1fa22558f7c994877e29eff4ca263399c8a86bf228a64e`  
+		Last Modified: Wed, 10 Jun 2020 07:54:21 GMT  
+		Size: 2.5 MB (2545749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f36a9165e5824089c441b0595ad56a2df3aa25f2a723146d51c8647283edc8d6`  
-		Last Modified: Mon, 08 Jun 2020 19:35:05 GMT  
-		Size: 4.3 KB (4290 bytes)  
+	-	`sha256:0eb4ef5b01adc4bc3e35a1384b23555e9fb2df4ffd4c7f4d4c295c94e65b546f`  
+		Last Modified: Wed, 10 Jun 2020 07:54:21 GMT  
+		Size: 4.3 KB (4283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21ac4d74ef69df11dd66d71fbb4ee124f0d59efb33590b23f199bac0ed2659a9`  
-		Last Modified: Mon, 08 Jun 2020 19:35:05 GMT  
-		Size: 3.4 KB (3442 bytes)  
+	-	`sha256:2a223a8f7eacf31b91a063b3b1691d535a06ee930f28dc4c49f8cff698dc4db7`  
+		Last Modified: Wed, 10 Jun 2020 07:54:21 GMT  
+		Size: 3.5 KB (3451 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8eaa88982333e8149b11fa256580100122a9f3a43f1f95dd4c25a8d7411ece40`  
-		Last Modified: Mon, 08 Jun 2020 19:37:43 GMT  
-		Size: 190.6 MB (190625079 bytes)  
+	-	`sha256:b09044e85a869fa16d25babd23d46d2bf98a7e398799923f3f3a3644c575683e`  
+		Last Modified: Wed, 10 Jun 2020 07:54:32 GMT  
+		Size: 190.6 MB (190625075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a79e0d69720708cc8fea70488495b1d83b8a63b779ef975173d68fde07aa48e3`  
-		Last Modified: Mon, 08 Jun 2020 19:35:06 GMT  
+	-	`sha256:d2db09755929453ecdf4f7ce27397647c0a132b5e4df237930bca7c9fd310ce2`  
+		Last Modified: Wed, 10 Jun 2020 07:54:21 GMT  
 		Size: 6.2 KB (6247 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -8956,7 +8956,7 @@ CMD ["solr-foreground"]
 ## `solr:8.5.2`
 
 ```console
-$ docker pull solr@sha256:ff5ce9be5f6687ac5d9b6e1c2cdac6d9fc8ed242cba52b20ead0226e0de809be
+$ docker pull solr@sha256:671d11bda54007aeb05fefae80f201156b14f2a6bc173fec9daecfc0a60d081b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8967,131 +8967,131 @@ $ docker pull solr@sha256:ff5ce9be5f6687ac5d9b6e1c2cdac6d9fc8ed242cba52b20ead022
 ### `solr:8.5.2` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:b031a39aab1a2a622d55462513a45948f9827caef34ac42ff26a2acc68af5cf4
+$ docker pull solr@sha256:8d789db7144a71e88f59799e71210d73e0e59f3b770648d5aa6ce4f3bdffa620
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **308.9 MB (308855414 bytes)**  
+-	Total Size: **308.9 MB (308853270 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f764e07184186bb56994f39d7ff42c0dd03100b28419f06979830ff89f18ed44`
+-	Image ID: `sha256:7d9cd085372de1cd04f14dbfa61c784b9b4ff04fb0c3a560c1fa167cf5e96653`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:12 GMT
-ADD file:fb54c709daa205bf9d04eb3d90ba068db4c34dfe3b6ec0d7691f677286120903 in / 
-# Fri, 15 May 2020 06:28:13 GMT
+# Tue, 09 Jun 2020 01:20:39 GMT
+ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
+# Tue, 09 Jun 2020 01:20:39 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 17:32:13 GMT
+# Tue, 09 Jun 2020 01:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 17:32:19 GMT
+# Tue, 09 Jun 2020 01:46:41 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:33 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:03:38 GMT
+# Tue, 09 Jun 2020 16:38:12 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 ARG SOLR_VERSION=8.5.2
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:37 GMT
 ARG SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:37 GMT
 ARG SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E
-# Mon, 08 Jun 2020 19:25:28 GMT
+# Wed, 10 Jun 2020 07:40:37 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:25:28 GMT
+# Wed, 10 Jun 2020 07:40:37 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:25:34 GMT
+# Wed, 10 Jun 2020 07:40:43 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:25:34 GMT
+# Wed, 10 Jun 2020 07:40:43 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.5.2/solr-8.5.2.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.5.2/solr-8.5.2.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.5.2/solr-8.5.2.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:25:35 GMT
+# Wed, 10 Jun 2020 07:40:44 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:25:36 GMT
+# Wed, 10 Jun 2020 07:40:45 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:25:48 GMT
+# Wed, 10 Jun 2020 07:41:00 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:25:48 GMT
+# Wed, 10 Jun 2020 07:41:01 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:25:48 GMT
+# Wed, 10 Jun 2020 07:41:01 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:25:49 GMT
+# Wed, 10 Jun 2020 07:41:01 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:25:49 GMT
+# Wed, 10 Jun 2020 07:41:01 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:25:49 GMT
+# Wed, 10 Jun 2020 07:41:01 GMT
 USER solr
-# Mon, 08 Jun 2020 19:25:49 GMT
+# Wed, 10 Jun 2020 07:41:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:25:49 GMT
+# Wed, 10 Jun 2020 07:41:02 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:376057ac6fa17f65688c56977118e2e764b27c348b3f70637fa829cd2a12b200`  
-		Last Modified: Fri, 15 May 2020 06:37:20 GMT  
-		Size: 50.4 MB (50391294 bytes)  
+	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
+		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
+		Size: 50.4 MB (50389504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a63a0a859d859478f30461786a49c2fca3ae7d89ab5b5ce3c81c54951d30f88`  
-		Last Modified: Fri, 15 May 2020 17:50:44 GMT  
-		Size: 7.8 MB (7812354 bytes)  
+	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 7.8 MB (7811709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:496548a8c952b37bdf149ab3654f9085d721ee126b8c73b16860778be5137f5e`  
-		Last Modified: Fri, 15 May 2020 17:50:49 GMT  
-		Size: 10.0 MB (9996284 bytes)  
+	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 10.0 MB (9996168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94b2daf7a1b5f537cba1c514f668125cbe30051a963fceee666de62352eb49ca`  
-		Last Modified: Fri, 15 May 2020 21:10:23 GMT  
-		Size: 5.5 MB (5529320 bytes)  
+	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
+		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
+		Size: 5.5 MB (5529317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8058d73803f3a05ad139e4bb713b7d93fb29f671441f1be35e844bb94a47152a`  
-		Last Modified: Fri, 15 May 2020 21:10:22 GMT  
-		Size: 211.0 B  
+	-	`sha256:e440f69a0a762646d5aed47652c8a122f43b415f52b87a90eb14690e1426fd0f`  
+		Last Modified: Tue, 09 Jun 2020 16:45:02 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dc4c151e7bebd2e3066851d6bc5ed2cfa0a9299b7e89cea9181a8994fa09abc`  
-		Last Modified: Fri, 15 May 2020 21:10:31 GMT  
-		Size: 41.9 MB (41941113 bytes)  
+	-	`sha256:837b533a935df78a47a09e44fd06c8ec7af6624ef1eec0d69e8d7d208efe2434`  
+		Last Modified: Tue, 09 Jun 2020 16:45:14 GMT  
+		Size: 41.9 MB (41941557 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:270b1408d58de905dfd4ed704b62f3309a537ac1fc23f286e66008694bc9af63`  
-		Last Modified: Mon, 08 Jun 2020 19:35:05 GMT  
-		Size: 2.5 MB (2545780 bytes)  
+	-	`sha256:2df9b8b5d142a662ef1fa22558f7c994877e29eff4ca263399c8a86bf228a64e`  
+		Last Modified: Wed, 10 Jun 2020 07:54:21 GMT  
+		Size: 2.5 MB (2545749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f36a9165e5824089c441b0595ad56a2df3aa25f2a723146d51c8647283edc8d6`  
-		Last Modified: Mon, 08 Jun 2020 19:35:05 GMT  
-		Size: 4.3 KB (4290 bytes)  
+	-	`sha256:0eb4ef5b01adc4bc3e35a1384b23555e9fb2df4ffd4c7f4d4c295c94e65b546f`  
+		Last Modified: Wed, 10 Jun 2020 07:54:21 GMT  
+		Size: 4.3 KB (4283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21ac4d74ef69df11dd66d71fbb4ee124f0d59efb33590b23f199bac0ed2659a9`  
-		Last Modified: Mon, 08 Jun 2020 19:35:05 GMT  
-		Size: 3.4 KB (3442 bytes)  
+	-	`sha256:2a223a8f7eacf31b91a063b3b1691d535a06ee930f28dc4c49f8cff698dc4db7`  
+		Last Modified: Wed, 10 Jun 2020 07:54:21 GMT  
+		Size: 3.5 KB (3451 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8eaa88982333e8149b11fa256580100122a9f3a43f1f95dd4c25a8d7411ece40`  
-		Last Modified: Mon, 08 Jun 2020 19:37:43 GMT  
-		Size: 190.6 MB (190625079 bytes)  
+	-	`sha256:b09044e85a869fa16d25babd23d46d2bf98a7e398799923f3f3a3644c575683e`  
+		Last Modified: Wed, 10 Jun 2020 07:54:32 GMT  
+		Size: 190.6 MB (190625075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a79e0d69720708cc8fea70488495b1d83b8a63b779ef975173d68fde07aa48e3`  
-		Last Modified: Mon, 08 Jun 2020 19:35:06 GMT  
+	-	`sha256:d2db09755929453ecdf4f7ce27397647c0a132b5e4df237930bca7c9fd310ce2`  
+		Last Modified: Wed, 10 Jun 2020 07:54:21 GMT  
 		Size: 6.2 KB (6247 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -9229,7 +9229,7 @@ CMD ["solr-foreground"]
 ## `solr:8.5.2-slim`
 
 ```console
-$ docker pull solr@sha256:820cbc58d3f6d228b2e03bc75405317eaa01339a81ef7a15a8e31f2c0ddc1f3b
+$ docker pull solr@sha256:e9f98365dbc54867a18aee616847818ca54bb368e78213bfa9b198dc85398d2e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9240,119 +9240,119 @@ $ docker pull solr@sha256:820cbc58d3f6d228b2e03bc75405317eaa01339a81ef7a15a8e31f
 ### `solr:8.5.2-slim` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:5b9798c9c8e710e6d34a599a8dac7b64b4bc8bd3b24bb1b60a66ecdc209600e0
+$ docker pull solr@sha256:998b9ff38f0070ec05243f977b7101a523634b15c0fa65790822512653b78699
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.7 MB (269655214 bytes)**  
+-	Total Size: **269.7 MB (269655579 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5dd9fb5c5b7dd1824de429e624a75895db942478132f6e5109898dd905648e39`
+-	Image ID: `sha256:ffcbe80743ab8d8fe10ca17d3c60cc8ae96b0f7cdfe4e8d2c8b257a4a64d2246`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:44 GMT
-ADD file:7780c81c33e6cc5b6261af4a6c611cce0f39dec3131009bb297e65f12020c150 in / 
-# Fri, 15 May 2020 06:28:44 GMT
+# Tue, 09 Jun 2020 01:20:56 GMT
+ADD file:4d35f6c8bbbe6801cc5f44989730fb6d349a644ecb36eca481e7df25842d6321 in / 
+# Tue, 09 Jun 2020 01:20:56 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:37 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:02:50 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:02:51 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:04:03 GMT
+# Tue, 09 Jun 2020 16:38:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 ARG SOLR_VERSION=8.5.2
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 ARG SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544
-# Mon, 08 Jun 2020 19:25:57 GMT
+# Wed, 10 Jun 2020 07:41:07 GMT
 ARG SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E
-# Mon, 08 Jun 2020 19:25:57 GMT
+# Wed, 10 Jun 2020 07:41:07 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:25:57 GMT
+# Wed, 10 Jun 2020 07:41:07 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:26:05 GMT
+# Wed, 10 Jun 2020 07:41:15 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:26:05 GMT
+# Wed, 10 Jun 2020 07:41:15 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.5.2/solr-8.5.2.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.5.2/solr-8.5.2.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.5.2/solr-8.5.2.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:26:06 GMT
+# Wed, 10 Jun 2020 07:41:16 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:26:07 GMT
+# Wed, 10 Jun 2020 07:41:17 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:26:18 GMT
+# Wed, 10 Jun 2020 07:41:37 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:37 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:37 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:37 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:37 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:38 GMT
 USER solr
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:38 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:26:20 GMT
+# Wed, 10 Jun 2020 07:41:38 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:afb6ec6fdc1c3ba04f7a56db32c5ff5ff38962dc4cd0ffdef5beaa0ce2eb77e2`  
-		Last Modified: Fri, 15 May 2020 06:37:39 GMT  
-		Size: 27.1 MB (27098756 bytes)  
+	-	`sha256:8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df`  
+		Last Modified: Tue, 09 Jun 2020 01:25:50 GMT  
+		Size: 27.1 MB (27098265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee19e84e8bd1140527176689c9c1a75f28c0462c0c714e549536452708cbfb64`  
-		Last Modified: Fri, 15 May 2020 21:07:16 GMT  
-		Size: 3.2 MB (3249166 bytes)  
+	-	`sha256:65306eca6b8ea03d29cd8d10a31e9d7a6a1cf8766fe4ca3913e75e00fc47be79`  
+		Last Modified: Tue, 09 Jun 2020 16:41:33 GMT  
+		Size: 3.2 MB (3248452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ac787417531d48ce82f6180741b078086d62631806d5b1ca0d2763fd63b3826`  
-		Last Modified: Fri, 15 May 2020 21:09:46 GMT  
-		Size: 211.0 B  
+	-	`sha256:ddbf88050b6e7cbe8b76b77196134f31015ef5cb69123ba6af35da6f5b101459`  
+		Last Modified: Tue, 09 Jun 2020 16:44:15 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3f781d4d83e8b462ca228cb269f0d69cfac7973216d1937b288373a01e01e58`  
-		Last Modified: Fri, 15 May 2020 21:10:46 GMT  
-		Size: 42.2 MB (42214711 bytes)  
+	-	`sha256:0cb03c61bf260965ae2dc495175ab87e56951ad9ee8dc26f028c430e770f77fe`  
+		Last Modified: Tue, 09 Jun 2020 16:45:32 GMT  
+		Size: 42.2 MB (42216357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd1245e69d402075bae0646003c3a6b9e97899327c9592f3c38f44a8b4e9c220`  
-		Last Modified: Mon, 08 Jun 2020 19:37:56 GMT  
-		Size: 6.5 MB (6453317 bytes)  
+	-	`sha256:fc83cfb1af0857a11abb4da5b2cc6310f1a3f21633d3daf1318415e35ec6285d`  
+		Last Modified: Wed, 10 Jun 2020 07:54:40 GMT  
+		Size: 6.5 MB (6453241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d05855522bc387fd9f35520ab6dfec4776931dd0f49d525fbde9da9f1a51fdf5`  
-		Last Modified: Mon, 08 Jun 2020 19:37:51 GMT  
-		Size: 4.3 KB (4291 bytes)  
+	-	`sha256:9d14a03efe013125c170c96d47b3152c705ad60df72718c8e0fb76fa5f8659f6`  
+		Last Modified: Wed, 10 Jun 2020 07:54:39 GMT  
+		Size: 4.3 KB (4286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb2e4091e43c10fc003970e73b58c4cf7a29751efa84c1b66a5910ba532d55bb`  
-		Last Modified: Mon, 08 Jun 2020 19:37:50 GMT  
-		Size: 3.4 KB (3440 bytes)  
+	-	`sha256:d73c92d8cd59e18aa26139ec791d9aa9585586a13ea8f36fc184f5adf13b0b0f`  
+		Last Modified: Wed, 10 Jun 2020 07:54:39 GMT  
+		Size: 3.4 KB (3442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f64b92aa8406743ddc261c24538df3c29e0d91de4fc32e2240eecb20f8a3070`  
-		Last Modified: Mon, 08 Jun 2020 19:40:26 GMT  
-		Size: 190.6 MB (190625074 bytes)  
+	-	`sha256:9f553d9201d97361d23cd3889704c2859f6aeec1548e0add5d2f80a66b972359`  
+		Last Modified: Wed, 10 Jun 2020 07:54:50 GMT  
+		Size: 190.6 MB (190625078 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc343fec089abd5d98a4b40fefff65d804e5d256bb6d378ab40bc02cf2cd4925`  
-		Last Modified: Mon, 08 Jun 2020 19:37:51 GMT  
+	-	`sha256:d69812c7b0473af5aecca4812914c3ae3558b7eaec85e109006bf1bf340cd28e`  
+		Last Modified: Wed, 10 Jun 2020 07:54:39 GMT  
 		Size: 6.2 KB (6248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -9478,7 +9478,7 @@ CMD ["solr-foreground"]
 ## `solr:8.5-slim`
 
 ```console
-$ docker pull solr@sha256:820cbc58d3f6d228b2e03bc75405317eaa01339a81ef7a15a8e31f2c0ddc1f3b
+$ docker pull solr@sha256:e9f98365dbc54867a18aee616847818ca54bb368e78213bfa9b198dc85398d2e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9489,119 +9489,119 @@ $ docker pull solr@sha256:820cbc58d3f6d228b2e03bc75405317eaa01339a81ef7a15a8e31f
 ### `solr:8.5-slim` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:5b9798c9c8e710e6d34a599a8dac7b64b4bc8bd3b24bb1b60a66ecdc209600e0
+$ docker pull solr@sha256:998b9ff38f0070ec05243f977b7101a523634b15c0fa65790822512653b78699
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.7 MB (269655214 bytes)**  
+-	Total Size: **269.7 MB (269655579 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5dd9fb5c5b7dd1824de429e624a75895db942478132f6e5109898dd905648e39`
+-	Image ID: `sha256:ffcbe80743ab8d8fe10ca17d3c60cc8ae96b0f7cdfe4e8d2c8b257a4a64d2246`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:44 GMT
-ADD file:7780c81c33e6cc5b6261af4a6c611cce0f39dec3131009bb297e65f12020c150 in / 
-# Fri, 15 May 2020 06:28:44 GMT
+# Tue, 09 Jun 2020 01:20:56 GMT
+ADD file:4d35f6c8bbbe6801cc5f44989730fb6d349a644ecb36eca481e7df25842d6321 in / 
+# Tue, 09 Jun 2020 01:20:56 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:37 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:02:50 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:02:51 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:04:03 GMT
+# Tue, 09 Jun 2020 16:38:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 ARG SOLR_VERSION=8.5.2
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 ARG SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544
-# Mon, 08 Jun 2020 19:25:57 GMT
+# Wed, 10 Jun 2020 07:41:07 GMT
 ARG SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E
-# Mon, 08 Jun 2020 19:25:57 GMT
+# Wed, 10 Jun 2020 07:41:07 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:25:57 GMT
+# Wed, 10 Jun 2020 07:41:07 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:26:05 GMT
+# Wed, 10 Jun 2020 07:41:15 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:26:05 GMT
+# Wed, 10 Jun 2020 07:41:15 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.5.2/solr-8.5.2.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.5.2/solr-8.5.2.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.5.2/solr-8.5.2.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:26:06 GMT
+# Wed, 10 Jun 2020 07:41:16 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:26:07 GMT
+# Wed, 10 Jun 2020 07:41:17 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:26:18 GMT
+# Wed, 10 Jun 2020 07:41:37 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:37 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:37 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:37 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:37 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:38 GMT
 USER solr
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:38 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:26:20 GMT
+# Wed, 10 Jun 2020 07:41:38 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:afb6ec6fdc1c3ba04f7a56db32c5ff5ff38962dc4cd0ffdef5beaa0ce2eb77e2`  
-		Last Modified: Fri, 15 May 2020 06:37:39 GMT  
-		Size: 27.1 MB (27098756 bytes)  
+	-	`sha256:8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df`  
+		Last Modified: Tue, 09 Jun 2020 01:25:50 GMT  
+		Size: 27.1 MB (27098265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee19e84e8bd1140527176689c9c1a75f28c0462c0c714e549536452708cbfb64`  
-		Last Modified: Fri, 15 May 2020 21:07:16 GMT  
-		Size: 3.2 MB (3249166 bytes)  
+	-	`sha256:65306eca6b8ea03d29cd8d10a31e9d7a6a1cf8766fe4ca3913e75e00fc47be79`  
+		Last Modified: Tue, 09 Jun 2020 16:41:33 GMT  
+		Size: 3.2 MB (3248452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ac787417531d48ce82f6180741b078086d62631806d5b1ca0d2763fd63b3826`  
-		Last Modified: Fri, 15 May 2020 21:09:46 GMT  
-		Size: 211.0 B  
+	-	`sha256:ddbf88050b6e7cbe8b76b77196134f31015ef5cb69123ba6af35da6f5b101459`  
+		Last Modified: Tue, 09 Jun 2020 16:44:15 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3f781d4d83e8b462ca228cb269f0d69cfac7973216d1937b288373a01e01e58`  
-		Last Modified: Fri, 15 May 2020 21:10:46 GMT  
-		Size: 42.2 MB (42214711 bytes)  
+	-	`sha256:0cb03c61bf260965ae2dc495175ab87e56951ad9ee8dc26f028c430e770f77fe`  
+		Last Modified: Tue, 09 Jun 2020 16:45:32 GMT  
+		Size: 42.2 MB (42216357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd1245e69d402075bae0646003c3a6b9e97899327c9592f3c38f44a8b4e9c220`  
-		Last Modified: Mon, 08 Jun 2020 19:37:56 GMT  
-		Size: 6.5 MB (6453317 bytes)  
+	-	`sha256:fc83cfb1af0857a11abb4da5b2cc6310f1a3f21633d3daf1318415e35ec6285d`  
+		Last Modified: Wed, 10 Jun 2020 07:54:40 GMT  
+		Size: 6.5 MB (6453241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d05855522bc387fd9f35520ab6dfec4776931dd0f49d525fbde9da9f1a51fdf5`  
-		Last Modified: Mon, 08 Jun 2020 19:37:51 GMT  
-		Size: 4.3 KB (4291 bytes)  
+	-	`sha256:9d14a03efe013125c170c96d47b3152c705ad60df72718c8e0fb76fa5f8659f6`  
+		Last Modified: Wed, 10 Jun 2020 07:54:39 GMT  
+		Size: 4.3 KB (4286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb2e4091e43c10fc003970e73b58c4cf7a29751efa84c1b66a5910ba532d55bb`  
-		Last Modified: Mon, 08 Jun 2020 19:37:50 GMT  
-		Size: 3.4 KB (3440 bytes)  
+	-	`sha256:d73c92d8cd59e18aa26139ec791d9aa9585586a13ea8f36fc184f5adf13b0b0f`  
+		Last Modified: Wed, 10 Jun 2020 07:54:39 GMT  
+		Size: 3.4 KB (3442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f64b92aa8406743ddc261c24538df3c29e0d91de4fc32e2240eecb20f8a3070`  
-		Last Modified: Mon, 08 Jun 2020 19:40:26 GMT  
-		Size: 190.6 MB (190625074 bytes)  
+	-	`sha256:9f553d9201d97361d23cd3889704c2859f6aeec1548e0add5d2f80a66b972359`  
+		Last Modified: Wed, 10 Jun 2020 07:54:50 GMT  
+		Size: 190.6 MB (190625078 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc343fec089abd5d98a4b40fefff65d804e5d256bb6d378ab40bc02cf2cd4925`  
-		Last Modified: Mon, 08 Jun 2020 19:37:51 GMT  
+	-	`sha256:d69812c7b0473af5aecca4812914c3ae3558b7eaec85e109006bf1bf340cd28e`  
+		Last Modified: Wed, 10 Jun 2020 07:54:39 GMT  
 		Size: 6.2 KB (6248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -9727,7 +9727,7 @@ CMD ["solr-foreground"]
 ## `solr:8-slim`
 
 ```console
-$ docker pull solr@sha256:820cbc58d3f6d228b2e03bc75405317eaa01339a81ef7a15a8e31f2c0ddc1f3b
+$ docker pull solr@sha256:e9f98365dbc54867a18aee616847818ca54bb368e78213bfa9b198dc85398d2e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9738,119 +9738,119 @@ $ docker pull solr@sha256:820cbc58d3f6d228b2e03bc75405317eaa01339a81ef7a15a8e31f
 ### `solr:8-slim` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:5b9798c9c8e710e6d34a599a8dac7b64b4bc8bd3b24bb1b60a66ecdc209600e0
+$ docker pull solr@sha256:998b9ff38f0070ec05243f977b7101a523634b15c0fa65790822512653b78699
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.7 MB (269655214 bytes)**  
+-	Total Size: **269.7 MB (269655579 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5dd9fb5c5b7dd1824de429e624a75895db942478132f6e5109898dd905648e39`
+-	Image ID: `sha256:ffcbe80743ab8d8fe10ca17d3c60cc8ae96b0f7cdfe4e8d2c8b257a4a64d2246`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:44 GMT
-ADD file:7780c81c33e6cc5b6261af4a6c611cce0f39dec3131009bb297e65f12020c150 in / 
-# Fri, 15 May 2020 06:28:44 GMT
+# Tue, 09 Jun 2020 01:20:56 GMT
+ADD file:4d35f6c8bbbe6801cc5f44989730fb6d349a644ecb36eca481e7df25842d6321 in / 
+# Tue, 09 Jun 2020 01:20:56 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:37 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:02:50 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:02:51 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:04:03 GMT
+# Tue, 09 Jun 2020 16:38:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 ARG SOLR_VERSION=8.5.2
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 ARG SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544
-# Mon, 08 Jun 2020 19:25:57 GMT
+# Wed, 10 Jun 2020 07:41:07 GMT
 ARG SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E
-# Mon, 08 Jun 2020 19:25:57 GMT
+# Wed, 10 Jun 2020 07:41:07 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:25:57 GMT
+# Wed, 10 Jun 2020 07:41:07 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:26:05 GMT
+# Wed, 10 Jun 2020 07:41:15 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:26:05 GMT
+# Wed, 10 Jun 2020 07:41:15 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.5.2/solr-8.5.2.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.5.2/solr-8.5.2.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.5.2/solr-8.5.2.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:26:06 GMT
+# Wed, 10 Jun 2020 07:41:16 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:26:07 GMT
+# Wed, 10 Jun 2020 07:41:17 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:26:18 GMT
+# Wed, 10 Jun 2020 07:41:37 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:37 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:37 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:37 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:37 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:38 GMT
 USER solr
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:38 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:26:20 GMT
+# Wed, 10 Jun 2020 07:41:38 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:afb6ec6fdc1c3ba04f7a56db32c5ff5ff38962dc4cd0ffdef5beaa0ce2eb77e2`  
-		Last Modified: Fri, 15 May 2020 06:37:39 GMT  
-		Size: 27.1 MB (27098756 bytes)  
+	-	`sha256:8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df`  
+		Last Modified: Tue, 09 Jun 2020 01:25:50 GMT  
+		Size: 27.1 MB (27098265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee19e84e8bd1140527176689c9c1a75f28c0462c0c714e549536452708cbfb64`  
-		Last Modified: Fri, 15 May 2020 21:07:16 GMT  
-		Size: 3.2 MB (3249166 bytes)  
+	-	`sha256:65306eca6b8ea03d29cd8d10a31e9d7a6a1cf8766fe4ca3913e75e00fc47be79`  
+		Last Modified: Tue, 09 Jun 2020 16:41:33 GMT  
+		Size: 3.2 MB (3248452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ac787417531d48ce82f6180741b078086d62631806d5b1ca0d2763fd63b3826`  
-		Last Modified: Fri, 15 May 2020 21:09:46 GMT  
-		Size: 211.0 B  
+	-	`sha256:ddbf88050b6e7cbe8b76b77196134f31015ef5cb69123ba6af35da6f5b101459`  
+		Last Modified: Tue, 09 Jun 2020 16:44:15 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3f781d4d83e8b462ca228cb269f0d69cfac7973216d1937b288373a01e01e58`  
-		Last Modified: Fri, 15 May 2020 21:10:46 GMT  
-		Size: 42.2 MB (42214711 bytes)  
+	-	`sha256:0cb03c61bf260965ae2dc495175ab87e56951ad9ee8dc26f028c430e770f77fe`  
+		Last Modified: Tue, 09 Jun 2020 16:45:32 GMT  
+		Size: 42.2 MB (42216357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd1245e69d402075bae0646003c3a6b9e97899327c9592f3c38f44a8b4e9c220`  
-		Last Modified: Mon, 08 Jun 2020 19:37:56 GMT  
-		Size: 6.5 MB (6453317 bytes)  
+	-	`sha256:fc83cfb1af0857a11abb4da5b2cc6310f1a3f21633d3daf1318415e35ec6285d`  
+		Last Modified: Wed, 10 Jun 2020 07:54:40 GMT  
+		Size: 6.5 MB (6453241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d05855522bc387fd9f35520ab6dfec4776931dd0f49d525fbde9da9f1a51fdf5`  
-		Last Modified: Mon, 08 Jun 2020 19:37:51 GMT  
-		Size: 4.3 KB (4291 bytes)  
+	-	`sha256:9d14a03efe013125c170c96d47b3152c705ad60df72718c8e0fb76fa5f8659f6`  
+		Last Modified: Wed, 10 Jun 2020 07:54:39 GMT  
+		Size: 4.3 KB (4286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb2e4091e43c10fc003970e73b58c4cf7a29751efa84c1b66a5910ba532d55bb`  
-		Last Modified: Mon, 08 Jun 2020 19:37:50 GMT  
-		Size: 3.4 KB (3440 bytes)  
+	-	`sha256:d73c92d8cd59e18aa26139ec791d9aa9585586a13ea8f36fc184f5adf13b0b0f`  
+		Last Modified: Wed, 10 Jun 2020 07:54:39 GMT  
+		Size: 3.4 KB (3442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f64b92aa8406743ddc261c24538df3c29e0d91de4fc32e2240eecb20f8a3070`  
-		Last Modified: Mon, 08 Jun 2020 19:40:26 GMT  
-		Size: 190.6 MB (190625074 bytes)  
+	-	`sha256:9f553d9201d97361d23cd3889704c2859f6aeec1548e0add5d2f80a66b972359`  
+		Last Modified: Wed, 10 Jun 2020 07:54:50 GMT  
+		Size: 190.6 MB (190625078 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc343fec089abd5d98a4b40fefff65d804e5d256bb6d378ab40bc02cf2cd4925`  
-		Last Modified: Mon, 08 Jun 2020 19:37:51 GMT  
+	-	`sha256:d69812c7b0473af5aecca4812914c3ae3558b7eaec85e109006bf1bf340cd28e`  
+		Last Modified: Wed, 10 Jun 2020 07:54:39 GMT  
 		Size: 6.2 KB (6248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -9976,7 +9976,7 @@ CMD ["solr-foreground"]
 ## `solr:latest`
 
 ```console
-$ docker pull solr@sha256:ff5ce9be5f6687ac5d9b6e1c2cdac6d9fc8ed242cba52b20ead0226e0de809be
+$ docker pull solr@sha256:671d11bda54007aeb05fefae80f201156b14f2a6bc173fec9daecfc0a60d081b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9987,131 +9987,131 @@ $ docker pull solr@sha256:ff5ce9be5f6687ac5d9b6e1c2cdac6d9fc8ed242cba52b20ead022
 ### `solr:latest` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:b031a39aab1a2a622d55462513a45948f9827caef34ac42ff26a2acc68af5cf4
+$ docker pull solr@sha256:8d789db7144a71e88f59799e71210d73e0e59f3b770648d5aa6ce4f3bdffa620
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **308.9 MB (308855414 bytes)**  
+-	Total Size: **308.9 MB (308853270 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f764e07184186bb56994f39d7ff42c0dd03100b28419f06979830ff89f18ed44`
+-	Image ID: `sha256:7d9cd085372de1cd04f14dbfa61c784b9b4ff04fb0c3a560c1fa167cf5e96653`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:12 GMT
-ADD file:fb54c709daa205bf9d04eb3d90ba068db4c34dfe3b6ec0d7691f677286120903 in / 
-# Fri, 15 May 2020 06:28:13 GMT
+# Tue, 09 Jun 2020 01:20:39 GMT
+ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
+# Tue, 09 Jun 2020 01:20:39 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 17:32:13 GMT
+# Tue, 09 Jun 2020 01:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 17:32:19 GMT
+# Tue, 09 Jun 2020 01:46:41 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:03:31 GMT
+# Tue, 09 Jun 2020 16:38:02 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:32 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:33 GMT
+# Tue, 09 Jun 2020 16:38:03 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:03:38 GMT
+# Tue, 09 Jun 2020 16:38:12 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:36 GMT
 ARG SOLR_VERSION=8.5.2
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:37 GMT
 ARG SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544
-# Mon, 08 Jun 2020 19:25:27 GMT
+# Wed, 10 Jun 2020 07:40:37 GMT
 ARG SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E
-# Mon, 08 Jun 2020 19:25:28 GMT
+# Wed, 10 Jun 2020 07:40:37 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:25:28 GMT
+# Wed, 10 Jun 2020 07:40:37 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:25:34 GMT
+# Wed, 10 Jun 2020 07:40:43 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:25:34 GMT
+# Wed, 10 Jun 2020 07:40:43 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.5.2/solr-8.5.2.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.5.2/solr-8.5.2.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.5.2/solr-8.5.2.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:25:35 GMT
+# Wed, 10 Jun 2020 07:40:44 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:25:36 GMT
+# Wed, 10 Jun 2020 07:40:45 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:25:48 GMT
+# Wed, 10 Jun 2020 07:41:00 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:25:48 GMT
+# Wed, 10 Jun 2020 07:41:01 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:25:48 GMT
+# Wed, 10 Jun 2020 07:41:01 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:25:49 GMT
+# Wed, 10 Jun 2020 07:41:01 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:25:49 GMT
+# Wed, 10 Jun 2020 07:41:01 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:25:49 GMT
+# Wed, 10 Jun 2020 07:41:01 GMT
 USER solr
-# Mon, 08 Jun 2020 19:25:49 GMT
+# Wed, 10 Jun 2020 07:41:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:25:49 GMT
+# Wed, 10 Jun 2020 07:41:02 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:376057ac6fa17f65688c56977118e2e764b27c348b3f70637fa829cd2a12b200`  
-		Last Modified: Fri, 15 May 2020 06:37:20 GMT  
-		Size: 50.4 MB (50391294 bytes)  
+	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
+		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
+		Size: 50.4 MB (50389504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a63a0a859d859478f30461786a49c2fca3ae7d89ab5b5ce3c81c54951d30f88`  
-		Last Modified: Fri, 15 May 2020 17:50:44 GMT  
-		Size: 7.8 MB (7812354 bytes)  
+	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 7.8 MB (7811709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:496548a8c952b37bdf149ab3654f9085d721ee126b8c73b16860778be5137f5e`  
-		Last Modified: Fri, 15 May 2020 17:50:49 GMT  
-		Size: 10.0 MB (9996284 bytes)  
+	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
+		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
+		Size: 10.0 MB (9996168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94b2daf7a1b5f537cba1c514f668125cbe30051a963fceee666de62352eb49ca`  
-		Last Modified: Fri, 15 May 2020 21:10:23 GMT  
-		Size: 5.5 MB (5529320 bytes)  
+	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
+		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
+		Size: 5.5 MB (5529317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8058d73803f3a05ad139e4bb713b7d93fb29f671441f1be35e844bb94a47152a`  
-		Last Modified: Fri, 15 May 2020 21:10:22 GMT  
-		Size: 211.0 B  
+	-	`sha256:e440f69a0a762646d5aed47652c8a122f43b415f52b87a90eb14690e1426fd0f`  
+		Last Modified: Tue, 09 Jun 2020 16:45:02 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dc4c151e7bebd2e3066851d6bc5ed2cfa0a9299b7e89cea9181a8994fa09abc`  
-		Last Modified: Fri, 15 May 2020 21:10:31 GMT  
-		Size: 41.9 MB (41941113 bytes)  
+	-	`sha256:837b533a935df78a47a09e44fd06c8ec7af6624ef1eec0d69e8d7d208efe2434`  
+		Last Modified: Tue, 09 Jun 2020 16:45:14 GMT  
+		Size: 41.9 MB (41941557 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:270b1408d58de905dfd4ed704b62f3309a537ac1fc23f286e66008694bc9af63`  
-		Last Modified: Mon, 08 Jun 2020 19:35:05 GMT  
-		Size: 2.5 MB (2545780 bytes)  
+	-	`sha256:2df9b8b5d142a662ef1fa22558f7c994877e29eff4ca263399c8a86bf228a64e`  
+		Last Modified: Wed, 10 Jun 2020 07:54:21 GMT  
+		Size: 2.5 MB (2545749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f36a9165e5824089c441b0595ad56a2df3aa25f2a723146d51c8647283edc8d6`  
-		Last Modified: Mon, 08 Jun 2020 19:35:05 GMT  
-		Size: 4.3 KB (4290 bytes)  
+	-	`sha256:0eb4ef5b01adc4bc3e35a1384b23555e9fb2df4ffd4c7f4d4c295c94e65b546f`  
+		Last Modified: Wed, 10 Jun 2020 07:54:21 GMT  
+		Size: 4.3 KB (4283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21ac4d74ef69df11dd66d71fbb4ee124f0d59efb33590b23f199bac0ed2659a9`  
-		Last Modified: Mon, 08 Jun 2020 19:35:05 GMT  
-		Size: 3.4 KB (3442 bytes)  
+	-	`sha256:2a223a8f7eacf31b91a063b3b1691d535a06ee930f28dc4c49f8cff698dc4db7`  
+		Last Modified: Wed, 10 Jun 2020 07:54:21 GMT  
+		Size: 3.5 KB (3451 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8eaa88982333e8149b11fa256580100122a9f3a43f1f95dd4c25a8d7411ece40`  
-		Last Modified: Mon, 08 Jun 2020 19:37:43 GMT  
-		Size: 190.6 MB (190625079 bytes)  
+	-	`sha256:b09044e85a869fa16d25babd23d46d2bf98a7e398799923f3f3a3644c575683e`  
+		Last Modified: Wed, 10 Jun 2020 07:54:32 GMT  
+		Size: 190.6 MB (190625075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a79e0d69720708cc8fea70488495b1d83b8a63b779ef975173d68fde07aa48e3`  
-		Last Modified: Mon, 08 Jun 2020 19:35:06 GMT  
+	-	`sha256:d2db09755929453ecdf4f7ce27397647c0a132b5e4df237930bca7c9fd310ce2`  
+		Last Modified: Wed, 10 Jun 2020 07:54:21 GMT  
 		Size: 6.2 KB (6247 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -10249,7 +10249,7 @@ CMD ["solr-foreground"]
 ## `solr:slim`
 
 ```console
-$ docker pull solr@sha256:820cbc58d3f6d228b2e03bc75405317eaa01339a81ef7a15a8e31f2c0ddc1f3b
+$ docker pull solr@sha256:e9f98365dbc54867a18aee616847818ca54bb368e78213bfa9b198dc85398d2e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10260,119 +10260,119 @@ $ docker pull solr@sha256:820cbc58d3f6d228b2e03bc75405317eaa01339a81ef7a15a8e31f
 ### `solr:slim` - linux; amd64
 
 ```console
-$ docker pull solr@sha256:5b9798c9c8e710e6d34a599a8dac7b64b4bc8bd3b24bb1b60a66ecdc209600e0
+$ docker pull solr@sha256:998b9ff38f0070ec05243f977b7101a523634b15c0fa65790822512653b78699
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.7 MB (269655214 bytes)**  
+-	Total Size: **269.7 MB (269655579 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5dd9fb5c5b7dd1824de429e624a75895db942478132f6e5109898dd905648e39`
+-	Image ID: `sha256:ffcbe80743ab8d8fe10ca17d3c60cc8ae96b0f7cdfe4e8d2c8b257a4a64d2246`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 15 May 2020 06:28:44 GMT
-ADD file:7780c81c33e6cc5b6261af4a6c611cce0f39dec3131009bb297e65f12020c150 in / 
-# Fri, 15 May 2020 06:28:44 GMT
+# Tue, 09 Jun 2020 01:20:56 GMT
+ADD file:4d35f6c8bbbe6801cc5f44989730fb6d349a644ecb36eca481e7df25842d6321 in / 
+# Tue, 09 Jun 2020 01:20:56 GMT
 CMD ["bash"]
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 15 May 2020 21:00:03 GMT
+# Tue, 09 Jun 2020 16:34:37 GMT
 ENV LANG=C.UTF-8
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 15 May 2020 21:02:49 GMT
+# Tue, 09 Jun 2020 16:37:19 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 15 May 2020 21:02:50 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 15 May 2020 21:02:51 GMT
+# Tue, 09 Jun 2020 16:37:20 GMT
 ENV JAVA_VERSION=11.0.7
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_
-# Fri, 15 May 2020 21:03:45 GMT
+# Tue, 09 Jun 2020 16:38:22 GMT
 ENV JAVA_URL_VERSION=11.0.7_10
-# Fri, 15 May 2020 21:04:03 GMT
+# Tue, 09 Jun 2020 16:38:35 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java --version
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL maintainer=The Apache Lucene/Solr Project
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 LABEL repository=https://github.com/docker-solr/docker-solr
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 ARG SOLR_VERSION=8.5.2
-# Mon, 08 Jun 2020 19:25:56 GMT
+# Wed, 10 Jun 2020 07:41:06 GMT
 ARG SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544
-# Mon, 08 Jun 2020 19:25:57 GMT
+# Wed, 10 Jun 2020 07:41:07 GMT
 ARG SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E
-# Mon, 08 Jun 2020 19:25:57 GMT
+# Wed, 10 Jun 2020 07:41:07 GMT
 ARG SOLR_DOWNLOAD_URL
-# Mon, 08 Jun 2020 19:25:57 GMT
+# Wed, 10 Jun 2020 07:41:07 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Mon, 08 Jun 2020 19:26:05 GMT
+# Wed, 10 Jun 2020 07:41:15 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   apt-get update;   apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini;   rm -rf /var/lib/apt/lists/*;   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach;   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach";   sha512sum -c jattach.sha512; rm jattach.sha512
-# Mon, 08 Jun 2020 19:26:05 GMT
+# Wed, 10 Jun 2020 07:41:15 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.5.2/solr-8.5.2.tgz&action=download SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.5.2/solr-8.5.2.tgz SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.5.2/solr-8.5.2.tgz PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml
-# Mon, 08 Jun 2020 19:26:06 GMT
+# Wed, 10 Jun 2020 07:41:16 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Mon, 08 Jun 2020 19:26:07 GMT
+# Wed, 10 Jun 2020 07:41:17 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;       gpg --batch --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Mon, 08 Jun 2020 19:26:18 GMT
+# Wed, 10 Jun 2020 07:41:37 GMT
 # ARGS: SOLR_KEYS=86EDB9C33B8517228E88A8F93E48C0C6EF362B9E SOLR_SHA512=02b9b90468f399701dba26695c9af6cd205f47916a06e26838613fe238594e9902de6ef3b42ec8257d195e37589adf8427d9b7962557731e91949fbef06bb544 SOLR_VERSION=8.5.2
 RUN set -ex;   export GNUPGHOME="/tmp/gnupg_home";   MAX_REDIRECTS=1;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   tar -C /opt --extract --file "/opt/solr-$SOLR_VERSION.tgz";   (cd /opt; ln -s "solr-$SOLR_VERSION" solr);   rm "/opt/solr-$SOLR_VERSION.tgz"*;   rm -Rf /opt/solr/docs/ /opt/solr/dist/{solr-core-$SOLR_VERSION.jar,solr-solrj-$SOLR_VERSION.jar,solrj-lib,solr-test-framework-$SOLR_VERSION.jar,test-framework};   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R 0:0 "/opt/solr-$SOLR_VERSION";   find "/opt/solr-$SOLR_VERSION" -type d -print0 | xargs -0 chmod 0755;   find "/opt/solr-$SOLR_VERSION" -type f -print0 | xargs -0 chmod 0644;   chmod -R 0755 "/opt/solr-$SOLR_VERSION/bin" "/opt/solr-$SOLR_VERSION/contrib/prometheus-exporter/bin/solr-exporter" /opt/solr-$SOLR_VERSION/server/scripts/cloud-scripts;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chown root:0 /etc/default/solr.in.sh;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p /var/solr/data /var/solr/logs;   (cd /opt/solr/server/solr; cp solr.xml zoo.cfg /var/solr/data/);   cp /opt/solr/server/resources/log4j2.xml /var/solr/log4j2.xml;   find /var/solr -type d -print0 | xargs -0 chmod 0770;   find /var/solr -type f -print0 | xargs -0 chmod 0660;   sed -i -e "s/\"\$(whoami)\" == \"root\"/\$(id -u) == 0/" /opt/solr/bin/solr;   sed -i -e 's/lsof -PniTCP:/lsof -t -PniTCP:/' /opt/solr/bin/solr;   chown -R "0:0" /opt/solr-$SOLR_VERSION /docker-entrypoint-initdb.d /opt/docker-solr;   chown -R "$SOLR_USER:0" /var/solr;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME"
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:37 GMT
 COPY --chown=0:0dir:9bc5f3733a819401f8f06067a2f41713605d2c3bb03bbbe92d04dc2f83bd0265 in /opt/docker-solr/scripts 
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:37 GMT
 VOLUME [/var/solr]
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:37 GMT
 EXPOSE 8983
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:37 GMT
 WORKDIR /opt/solr
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:38 GMT
 USER solr
-# Mon, 08 Jun 2020 19:26:19 GMT
+# Wed, 10 Jun 2020 07:41:38 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 08 Jun 2020 19:26:20 GMT
+# Wed, 10 Jun 2020 07:41:38 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:afb6ec6fdc1c3ba04f7a56db32c5ff5ff38962dc4cd0ffdef5beaa0ce2eb77e2`  
-		Last Modified: Fri, 15 May 2020 06:37:39 GMT  
-		Size: 27.1 MB (27098756 bytes)  
+	-	`sha256:8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df`  
+		Last Modified: Tue, 09 Jun 2020 01:25:50 GMT  
+		Size: 27.1 MB (27098265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee19e84e8bd1140527176689c9c1a75f28c0462c0c714e549536452708cbfb64`  
-		Last Modified: Fri, 15 May 2020 21:07:16 GMT  
-		Size: 3.2 MB (3249166 bytes)  
+	-	`sha256:65306eca6b8ea03d29cd8d10a31e9d7a6a1cf8766fe4ca3913e75e00fc47be79`  
+		Last Modified: Tue, 09 Jun 2020 16:41:33 GMT  
+		Size: 3.2 MB (3248452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ac787417531d48ce82f6180741b078086d62631806d5b1ca0d2763fd63b3826`  
-		Last Modified: Fri, 15 May 2020 21:09:46 GMT  
-		Size: 211.0 B  
+	-	`sha256:ddbf88050b6e7cbe8b76b77196134f31015ef5cb69123ba6af35da6f5b101459`  
+		Last Modified: Tue, 09 Jun 2020 16:44:15 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3f781d4d83e8b462ca228cb269f0d69cfac7973216d1937b288373a01e01e58`  
-		Last Modified: Fri, 15 May 2020 21:10:46 GMT  
-		Size: 42.2 MB (42214711 bytes)  
+	-	`sha256:0cb03c61bf260965ae2dc495175ab87e56951ad9ee8dc26f028c430e770f77fe`  
+		Last Modified: Tue, 09 Jun 2020 16:45:32 GMT  
+		Size: 42.2 MB (42216357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd1245e69d402075bae0646003c3a6b9e97899327c9592f3c38f44a8b4e9c220`  
-		Last Modified: Mon, 08 Jun 2020 19:37:56 GMT  
-		Size: 6.5 MB (6453317 bytes)  
+	-	`sha256:fc83cfb1af0857a11abb4da5b2cc6310f1a3f21633d3daf1318415e35ec6285d`  
+		Last Modified: Wed, 10 Jun 2020 07:54:40 GMT  
+		Size: 6.5 MB (6453241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d05855522bc387fd9f35520ab6dfec4776931dd0f49d525fbde9da9f1a51fdf5`  
-		Last Modified: Mon, 08 Jun 2020 19:37:51 GMT  
-		Size: 4.3 KB (4291 bytes)  
+	-	`sha256:9d14a03efe013125c170c96d47b3152c705ad60df72718c8e0fb76fa5f8659f6`  
+		Last Modified: Wed, 10 Jun 2020 07:54:39 GMT  
+		Size: 4.3 KB (4286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb2e4091e43c10fc003970e73b58c4cf7a29751efa84c1b66a5910ba532d55bb`  
-		Last Modified: Mon, 08 Jun 2020 19:37:50 GMT  
-		Size: 3.4 KB (3440 bytes)  
+	-	`sha256:d73c92d8cd59e18aa26139ec791d9aa9585586a13ea8f36fc184f5adf13b0b0f`  
+		Last Modified: Wed, 10 Jun 2020 07:54:39 GMT  
+		Size: 3.4 KB (3442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f64b92aa8406743ddc261c24538df3c29e0d91de4fc32e2240eecb20f8a3070`  
-		Last Modified: Mon, 08 Jun 2020 19:40:26 GMT  
-		Size: 190.6 MB (190625074 bytes)  
+	-	`sha256:9f553d9201d97361d23cd3889704c2859f6aeec1548e0add5d2f80a66b972359`  
+		Last Modified: Wed, 10 Jun 2020 07:54:50 GMT  
+		Size: 190.6 MB (190625078 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc343fec089abd5d98a4b40fefff65d804e5d256bb6d378ab40bc02cf2cd4925`  
-		Last Modified: Mon, 08 Jun 2020 19:37:51 GMT  
+	-	`sha256:d69812c7b0473af5aecca4812914c3ae3558b7eaec85e109006bf1bf340cd28e`  
+		Last Modified: Wed, 10 Jun 2020 07:54:39 GMT  
 		Size: 6.2 KB (6248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
