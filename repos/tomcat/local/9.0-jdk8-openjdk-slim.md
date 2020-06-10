@@ -1,10 +1,10 @@
-# `tomcat:9.0.35-jdk8-openjdk-slim`
+# `tomcat:9.0.36-jdk8-openjdk-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:aab3ece1d0f0a112113990f071c9150cc40ec7b32c2be734c58b9bb6a74f43c3`
-- Created: `2020-05-16T12:07:57.16224822Z`
-- Virtual Size: ~ 304.51 Mb  
+- Image ID: `sha256:aacd6f347e2fcf386fd5819f29ead6d864ff9fc5ec5324b4a42454526714937f`
+- Created: `2020-06-10T08:23:33.42175067Z`
+- Virtual Size: ~ 304.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,8 +20,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.35`
-  - `TOMCAT_SHA512=0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98`
+  - `TOMCAT_VERSION=9.0.36`
+  - `TOMCAT_SHA512=75e16a00e02782961a7753dc9afaf6d209afa5f22d320319778fd0ee5e3b47009da522ac735599f1739bff6e809c2da9081dbbd4b8de54a82cf5b8cfbd8030ff`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -287,11 +287,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.6-9.2~deb10u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.6-9.2~deb10u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20190110`
+### `dpkg` source package: `ca-certificates=20200601~deb10u1`
 
 Binary Packages:
 
-- `ca-certificates=20190110`
+- `ca-certificates=20200601~deb10u1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -302,16 +302,16 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20190110
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20190110.dsc' ca-certificates_20190110.dsc 1805 SHA256:bffbfe63a1ad2a07c6094502f05899c65edba93aefe58682f440e000fc65f6f0
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20190110.tar.xz' ca-certificates_20190110.tar.xz 243472 SHA256:ee4bf0f4c6398005f5b5ca4e0b87b82837ac5c3b0280a1cb3a63c47555c3a675
+$ apt-get source -qq --print-uris ca-certificates=20200601~deb10u1
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20200601~deb10u1.dsc' ca-certificates_20200601~deb10u1.dsc 1837 SHA256:41120aa922b9520b73b88ef3fef18b807c7e5b6dd98c9dec51a3841dabe7fcb8
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20200601~deb10u1.tar.xz' ca-certificates_20200601~deb10u1.tar.xz 245828 SHA256:5911c0471fd83141285c56c414be7f6e7176f28dc8d14a3c55f06303b79a92aa
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates/20190110/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20190110/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20190110/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ca-certificates/20200601~deb10u1/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20200601~deb10u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20200601~deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.249`
 
@@ -718,11 +718,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnupg2/2.2.12-1+deb10u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnupg2/2.2.12-1+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnutls28=3.6.7-4+deb10u3`
+### `dpkg` source package: `gnutls28=3.6.7-4+deb10u4`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.6.7-4+deb10u3`
+- `libgnutls30:amd64=3.6.7-4+deb10u4`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -741,18 +741,18 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.6.7-4+deb10u3
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7-4+deb10u3.dsc' gnutls28_3.6.7-4+deb10u3.dsc 3509 SHA256:a5acd2ff3e275baabbe42f949f9ce365e9fd53ea4a14a306be395dae2a7589d5
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz' gnutls28_3.6.7.orig.tar.xz 8153728 SHA256:5b3409ad5aaf239808730d1ee12fdcd148c0be00262c7edf157af655a8a188e2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz.asc' gnutls28_3.6.7.orig.tar.xz.asc 534 SHA256:a14d0a7b9295b65ae797a70f8e765024a2e363dca03d008bfce0aec2b3f292b0
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7-4+deb10u3.debian.tar.xz' gnutls28_3.6.7-4+deb10u3.debian.tar.xz 77948 SHA256:cd03a0f7f16b7bdff8b7ecd0ebccd6c51b2ba6615df88de4a63a87bd47a8998e
+$ apt-get source -qq --print-uris gnutls28=3.6.7-4+deb10u4
+'http://security.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.6.7-4+deb10u4.dsc' gnutls28_3.6.7-4+deb10u4.dsc 3509 SHA256:0d633cb281152d025b49fa398930c8f5ea2e9af529bc9a2d288813679e75d88f
+'http://security.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz' gnutls28_3.6.7.orig.tar.xz 8153728 SHA256:5b3409ad5aaf239808730d1ee12fdcd148c0be00262c7edf157af655a8a188e2
+'http://security.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz.asc' gnutls28_3.6.7.orig.tar.xz.asc 534 SHA256:a14d0a7b9295b65ae797a70f8e765024a2e363dca03d008bfce0aec2b3f292b0
+'http://security.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.6.7-4+deb10u4.debian.tar.xz' gnutls28_3.6.7-4+deb10u4.debian.tar.xz 78712 SHA256:2bf9e2ce3603e46ad2a47762e4e96c2f64729fe5bd784274025aa99f33a11688
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u3/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.6.7-4+deb10u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u4/ (for browsing the source)
+- https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnutls28/3.6.7-4+deb10u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.3-1`
 

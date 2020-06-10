@@ -1,10 +1,10 @@
-# `tomcat:9.0.35-jdk8-adoptopenjdk-hotspot`
+# `tomcat:9.0.36-jdk8-adoptopenjdk-hotspot`
 
 ## Docker Metadata
 
-- Image ID: `sha256:720ff80c6791b044cba942ab38e7fa0d53503a3f90911946299bdabd5ef61a32`
-- Created: `2020-05-13T02:13:17.111033909Z`
-- Virtual Size: ~ 320.17 Mb  
+- Image ID: `sha256:d832cc1801b03652b43516fb6cec5fd76d0b1df15aca194ed35b3291a574d131`
+- Created: `2020-06-10T08:24:20.271569146Z`
+- Virtual Size: ~ 325.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,8 +20,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.35`
-  - `TOMCAT_SHA512=0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98`
+  - `TOMCAT_VERSION=9.0.36`
+  - `TOMCAT_SHA512=75e16a00e02782961a7753dc9afaf6d209afa5f22d320319778fd0ee5e3b47009da522ac735599f1739bff6e809c2da9081dbbd4b8de54a82cf5b8cfbd8030ff`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -217,11 +217,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.6-8.1ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-8.1ubuntu0.2.debian.tar.bz2' bzip2_1.0.6-8.1ubuntu0.2.debian.tar.bz2 61477 SHA256:b4fede4240afa43e0e666e5a539da8d9744b2b2917388cfe93574f967e328e6a
 ```
 
-### `dpkg` source package: `ca-certificates=20180409`
+### `dpkg` source package: `ca-certificates=20190110~18.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20180409`
+- `ca-certificates=20190110~18.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -232,9 +232,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20180409
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20180409.dsc' ca-certificates_20180409.dsc 1420 SHA256:cd1f6540d0dab28f897e0e0cb2191130cdbf897f8ce3f52c8e483b2ed1555d30
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20180409.tar.xz' ca-certificates_20180409.tar.xz 246908 SHA256:7af6f5bfc619fd29cbf0258c1d95107c38ce840ad6274e343e1e0d971fc72b51
+$ apt-get source -qq --print-uris ca-certificates=20190110~18.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20190110~18.04.1.dsc' ca-certificates_20190110~18.04.1.dsc 1830 SHA256:b5bcd791eb1c232b228766301a7513b404a376fe380c8b19bce504fd1f2312c6
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20190110~18.04.1.tar.xz' ca-certificates_20190110~18.04.1.tar.xz 243664 SHA256:ec23bbc58d8e6bc8b6aa8c0a9081965635a54b474cfd99829e51e2aa25ca6550
 ```
 
 ### `dpkg` source package: `cdebconf=0.213ubuntu1`
@@ -1319,7 +1319,6 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1-1ubuntu2.1~18.04.5`
 - `openssl=1.1.1-1ubuntu2.1~18.04.5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -1329,6 +1328,26 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `openssl=1.1.1-1ubuntu2.1~18.04.6`
+
+Binary Packages:
+
+- `libssl1.1:amd64=1.1.1-1ubuntu2.1~18.04.6`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1-1ubuntu2.1~18.04.6
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.6.dsc' openssl_1.1.1-1ubuntu2.1~18.04.6.dsc 2754 SHA256:e35516df9f2b2798065730bbc87f1b5a6b87ff4716f5ae2d3ed4a2ce32f7029f
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz' openssl_1.1.1.orig.tar.gz 8337920 SHA256:2836875a0f89c03d0fdf483941512613a50cfb421d6fd94b9f41d7279d586a3d
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz.asc' openssl_1.1.1.orig.tar.gz.asc 488 SHA256:f3296150114069ea73a72eafbfdcbb295b770e7cbf3266f9590f3d0932498b3e
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.6.debian.tar.xz' openssl_1.1.1-1ubuntu2.1~18.04.6.debian.tar.xz 104692 SHA256:8251b6f87af26364a341f7beeeef26ed99c7f90819804dba3c1e6bf2f698bb99
+```
 
 ### `dpkg` source package: `p11-kit=0.23.9-2`
 
@@ -1559,15 +1578,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.22.0-1ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0-1ubuntu0.3.dsc' sqlite3_3.22.0-1ubuntu0.3.dsc 2512 SHA256:54b2afc4ed367051c216ee8c96abce9a511f1b8ca7b05c76cefd667cf3e5746b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0.orig-www.tar.xz' sqlite3_3.22.0.orig-www.tar.xz 3564688 SHA256:a61a14d6f457bb31ca32f4844398140050597fe4403dc0ee19576111f407e231
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0.orig.tar.xz' sqlite3_3.22.0.orig.tar.xz 6019648 SHA256:f973ba63b5a1ea1d72e80c585bfb945e71d3f8b74fbecccdf345a84f8c91e5d1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0-1ubuntu0.3.debian.tar.xz' sqlite3_3.22.0-1ubuntu0.3.debian.tar.xz 45120 SHA256:153d65bf0d6957a1c6e47cb4f1ab79e96190317576859003e0b96d656f1f78a6
-```
 
 ### `dpkg` source package: `systemd=237-3ubuntu10.39`
 
