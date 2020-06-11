@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:409ae902066139831a8551310b2b7f6553e3b65a61dcffc6abd9ebe740cd02da`
-- Created: `2020-05-15T20:22:23.364010522Z`
+- Image ID: `sha256:cba0bc07b0e68f048ab24cdaef5a4d9e7f7fc09741f2be12d8407a5ab8632446`
+- Created: `2020-06-09T08:22:49.870600706Z`
 - Virtual Size: ~ 1.17 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -355,11 +355,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/c-ares/1.14.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/c-ares/1.14.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20190110`
+### `dpkg` source package: `ca-certificates=20200601~deb10u1`
 
 Binary Packages:
 
-- `ca-certificates=20190110`
+- `ca-certificates=20200601~deb10u1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -370,16 +370,16 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20190110
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20190110.dsc' ca-certificates_20190110.dsc 1805 SHA256:bffbfe63a1ad2a07c6094502f05899c65edba93aefe58682f440e000fc65f6f0
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20190110.tar.xz' ca-certificates_20190110.tar.xz 243472 SHA256:ee4bf0f4c6398005f5b5ca4e0b87b82837ac5c3b0280a1cb3a63c47555c3a675
+$ apt-get source -qq --print-uris ca-certificates=20200601~deb10u1
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20200601~deb10u1.dsc' ca-certificates_20200601~deb10u1.dsc 1837 SHA256:41120aa922b9520b73b88ef3fef18b807c7e5b6dd98c9dec51a3841dabe7fcb8
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20200601~deb10u1.tar.xz' ca-certificates_20200601~deb10u1.tar.xz 245828 SHA256:5911c0471fd83141285c56c414be7f6e7176f28dc8d14a3c55f06303b79a92aa
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates/20190110/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20190110/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20190110/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ca-certificates/20200601~deb10u1/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20200601~deb10u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20200601~deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cached-property=1.5.1-3`
 
@@ -1211,11 +1211,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnupg2/2.2.12-1+deb10u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnupg2/2.2.12-1+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnutls28=3.6.7-4+deb10u3`
+### `dpkg` source package: `gnutls28=3.6.7-4+deb10u4`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.6.7-4+deb10u3`
+- `libgnutls30:amd64=3.6.7-4+deb10u4`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -1234,18 +1234,18 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.6.7-4+deb10u3
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7-4+deb10u3.dsc' gnutls28_3.6.7-4+deb10u3.dsc 3509 SHA256:a5acd2ff3e275baabbe42f949f9ce365e9fd53ea4a14a306be395dae2a7589d5
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz' gnutls28_3.6.7.orig.tar.xz 8153728 SHA256:5b3409ad5aaf239808730d1ee12fdcd148c0be00262c7edf157af655a8a188e2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz.asc' gnutls28_3.6.7.orig.tar.xz.asc 534 SHA256:a14d0a7b9295b65ae797a70f8e765024a2e363dca03d008bfce0aec2b3f292b0
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7-4+deb10u3.debian.tar.xz' gnutls28_3.6.7-4+deb10u3.debian.tar.xz 77948 SHA256:cd03a0f7f16b7bdff8b7ecd0ebccd6c51b2ba6615df88de4a63a87bd47a8998e
+$ apt-get source -qq --print-uris gnutls28=3.6.7-4+deb10u4
+'http://security.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.6.7-4+deb10u4.dsc' gnutls28_3.6.7-4+deb10u4.dsc 3509 SHA256:0d633cb281152d025b49fa398930c8f5ea2e9af529bc9a2d288813679e75d88f
+'http://security.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz' gnutls28_3.6.7.orig.tar.xz 8153728 SHA256:5b3409ad5aaf239808730d1ee12fdcd148c0be00262c7edf157af655a8a188e2
+'http://security.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz.asc' gnutls28_3.6.7.orig.tar.xz.asc 534 SHA256:a14d0a7b9295b65ae797a70f8e765024a2e363dca03d008bfce0aec2b3f292b0
+'http://security.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.6.7-4+deb10u4.debian.tar.xz' gnutls28_3.6.7-4+deb10u4.debian.tar.xz 78712 SHA256:2bf9e2ce3603e46ad2a47762e4e96c2f64729fe5bd784274025aa99f33a11688
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u3/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.6.7-4+deb10u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u4/ (for browsing the source)
+- https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnutls28/3.6.7-4+deb10u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.13-7`
 
@@ -9362,13 +9362,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/node-yargs/10.0.3-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/node-yargs/10.0.3-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nodejs=10.19.0~dfsg1-1`
+### `dpkg` source package: `nodejs=10.21.0~dfsg-1~deb10u1`
 
 Binary Packages:
 
-- `libnode-dev:amd64=10.19.0~dfsg1-1`
-- `libnode64:amd64=10.19.0~dfsg1-1`
-- `nodejs=10.19.0~dfsg1-1`
+- `libnode-dev:amd64=10.21.0~dfsg-1~deb10u1`
+- `libnode64:amd64=10.21.0~dfsg-1~deb10u1`
+- `nodejs=10.21.0~dfsg-1~deb10u1`
 
 Licenses: (parsed from: `/usr/share/doc/libnode-dev/copyright`, `/usr/share/doc/libnode64/copyright`, `/usr/share/doc/nodejs/copyright`)
 
@@ -9403,17 +9403,17 @@ Licenses: (parsed from: `/usr/share/doc/libnode-dev/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nodejs=10.19.0~dfsg1-1
-'http://deb.debian.org/debian/pool/main/n/nodejs/nodejs_10.19.0~dfsg1-1.dsc' nodejs_10.19.0~dfsg1-1.dsc 3029 SHA256:57d41dae05ef7490e3db756e597c259c90f49a97a8aebc5fd9b89688fb236725
-'http://deb.debian.org/debian/pool/main/n/nodejs/nodejs_10.19.0~dfsg1.orig.tar.xz' nodejs_10.19.0~dfsg1.orig.tar.xz 16629716 SHA256:34aa03e4867498ea65423d2d4396d1e0e4d6a711e0025536fe0b6933b53aa92e
-'http://deb.debian.org/debian/pool/main/n/nodejs/nodejs_10.19.0~dfsg1-1.debian.tar.xz' nodejs_10.19.0~dfsg1-1.debian.tar.xz 99564 SHA256:43fa38defde996b09d466399e2fd5a326ed5047194e1448a93712b650e8a38ea
+$ apt-get source -qq --print-uris nodejs=10.21.0~dfsg-1~deb10u1
+'http://security.debian.org/debian-security/pool/updates/main/n/nodejs/nodejs_10.21.0~dfsg-1~deb10u1.dsc' nodejs_10.21.0~dfsg-1~deb10u1.dsc 3057 SHA256:7af4de314f97b66f3aca0a5c863feb205d244a1e02177d738c049552f496b7b2
+'http://security.debian.org/debian-security/pool/updates/main/n/nodejs/nodejs_10.21.0~dfsg.orig.tar.xz' nodejs_10.21.0~dfsg.orig.tar.xz 16231704 SHA256:111d0a59a5d0ed8c2f64d46e344e14ea152b0b23f4e892d166a37e5b15c8cb99
+'http://security.debian.org/debian-security/pool/updates/main/n/nodejs/nodejs_10.21.0~dfsg-1~deb10u1.debian.tar.xz' nodejs_10.21.0~dfsg-1~deb10u1.debian.tar.xz 100040 SHA256:e6328598b1b72cdf9d28f1071214a5f71d6dab8a6c6dc5565d96856c61100d48
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/nodejs/10.19.0~dfsg1-1/ (for browsing the source)
-- https://sources.debian.net/src/nodejs/10.19.0~dfsg1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nodejs/10.19.0~dfsg1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/nodejs/10.21.0~dfsg-1~deb10u1/ (for browsing the source)
+- https://sources.debian.net/src/nodejs/10.21.0~dfsg-1~deb10u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nodejs/10.21.0~dfsg-1~deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npm=5.8.0+ds6-4+deb10u1`
 
