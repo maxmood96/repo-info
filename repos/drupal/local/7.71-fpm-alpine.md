@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b472cebfa83a2beb7079ae33eadc3f4adc2371486ee44162e36e6a2faaac01b9`
-- Created: `2020-06-03T19:26:09.645429654Z`
-- Virtual Size: ~ 95.35 Mb  
+- Image ID: `sha256:1440fc2ef8a0c34bba661e78e9b3b23b1efe9f3e1661696b8bd7de35bd8e3b99`
+- Created: `2020-06-10T05:03:06.448392116Z`
+- Virtual Size: ~ 102.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,11 +17,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.18`
-  - `PHP_URL=https://www.php.net/distributions/php-7.3.18.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.18.tar.xz.asc`
-  - `PHP_SHA256=7b3e2479a8d6fd7666dcdef8aec50d49c4599cc6ee86e48d41724cfd99cc9e58`
+  - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
+  - `PHP_VERSION=7.4.6`
+  - `PHP_URL=https://www.php.net/distributions/php-7.4.6.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.6.tar.xz.asc`
+  - `PHP_SHA256=d740322f84f63019622b9f369d64ea5ab676547d2bdcf12be77a5a4cffd06832`
   - `PHP_MD5=`
   - `DRUPAL_VERSION=7.71`
   - `DRUPAL_MD5=559227e04b8fa86e0374dbed6a228109`
@@ -552,6 +552,23 @@ nghttp2-libs-1.40.0-r0 installed size:
 
 nghttp2-libs-1.40.0-r0 license:
 MIT
+
+```
+
+### `apk` package: `oniguruma`
+
+```console
+oniguruma-6.9.4-r0 description:
+a regular expressions library
+
+oniguruma-6.9.4-r0 webpage:
+https://github.com/kkos/oniguruma
+
+oniguruma-6.9.4-r0 installed size:
+561152
+
+oniguruma-6.9.4-r0 license:
+BSD-2-Clause
 
 ```
 
