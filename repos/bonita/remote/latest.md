@@ -1,7 +1,7 @@
 ## `bonita:latest`
 
 ```console
-$ docker pull bonita@sha256:836af6b3245f9827f02eea26a172d58df5fe24ddc88f5aacf990cd68812338f3
+$ docker pull bonita@sha256:1d9b7cb3f296e18dcc2e45222a30dd4255c21eb699b68466ebac5d22b3c09964
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -129,14 +129,14 @@ CMD ["/opt/files/startup.sh"]
 ### `bonita:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull bonita@sha256:5e3ab73d89b5394d0e981ce2ac94549a06ed1a76262e5198138a200c90415c1e
+$ docker pull bonita@sha256:5cce3f8e49539011d82f8bbedb4e6b9969d26536c07f5b0ca68e29fc38922714
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **215.1 MB (215098289 bytes)**  
+-	Total Size: **215.2 MB (215159921 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf7d8f981bf568189e3f1d4ea0ccf59f7c771c4921b0e8182d969063e79509e7`
+-	Image ID: `sha256:75bb57298ce381c9294214b3b0b1550f18e082840ce2e7e63c01fe7205a67c33`
 -	Default Command: `["\/opt\/files\/startup.sh"]`
 
 ```dockerfile
@@ -168,31 +168,31 @@ ARG BONITA_SHA256
 ARG BASE_URL
 # Fri, 24 Apr 2020 14:51:22 GMT
 ARG BONITA_URL
-# Fri, 24 Apr 2020 14:51:22 GMT
-ENV BONITA_VERSION=7.10.4
-# Fri, 24 Apr 2020 14:51:23 GMT
-ENV BONITA_SHA256=dfc3d6d43a6fda7e0e57a60238e63c754d1a948f3c3e36f460f9c7867bf25d6d
-# Fri, 24 Apr 2020 14:51:23 GMT
+# Thu, 11 Jun 2020 20:36:56 GMT
+ENV BONITA_VERSION=7.10.5
+# Thu, 11 Jun 2020 20:36:56 GMT
+ENV BONITA_SHA256=bc2bb1048df1b9d8a293635924fd1e7eb2cf0652f65d3fd64c0f1bc22e435dff
+# Thu, 11 Jun 2020 20:36:57 GMT
 ENV BASE_URL=https://release.ow2.org/bonita
-# Fri, 24 Apr 2020 14:51:24 GMT
-ENV BONITA_URL=https://release.ow2.org/bonita/BonitaCommunity-7.10.4.zip
-# Fri, 24 Apr 2020 14:51:26 GMT
+# Thu, 11 Jun 2020 20:36:58 GMT
+ENV BONITA_URL=https://release.ow2.org/bonita/BonitaCommunity-7.10.5.zip
+# Thu, 11 Jun 2020 20:37:04 GMT
 RUN echo "Downloading Bonita from url: $BONITA_URL"
-# Fri, 24 Apr 2020 14:51:33 GMT
+# Thu, 11 Jun 2020 20:37:23 GMT
 RUN mkdir /opt/files   && curl -fsSL ${BONITA_URL} -o /opt/files/BonitaCommunity-${BONITA_VERSION}.zip
-# Fri, 24 Apr 2020 14:51:35 GMT
+# Thu, 11 Jun 2020 20:37:26 GMT
 RUN sha256sum /opt/files/BonitaCommunity-${BONITA_VERSION}.zip
-# Fri, 24 Apr 2020 14:51:38 GMT
+# Thu, 11 Jun 2020 20:37:29 GMT
 RUN echo "$BONITA_SHA256" /opt/files/BonitaCommunity-${BONITA_VERSION}.zip | sha256sum -c -
-# Fri, 24 Apr 2020 14:51:38 GMT
+# Thu, 11 Jun 2020 20:37:30 GMT
 VOLUME [/opt/bonita]
-# Fri, 24 Apr 2020 14:51:39 GMT
+# Thu, 11 Jun 2020 20:37:30 GMT
 COPY dir:6d2b12bd97418487ddd1a174f34d85d11b3e6487e01e6d3f80d99fffcff78e82 in /opt/files 
-# Fri, 24 Apr 2020 14:51:40 GMT
+# Thu, 11 Jun 2020 20:37:31 GMT
 COPY dir:157c135edc1215565cc6815861e1a1728bdf09f6cfceca03c1639b2262f1cd65 in /opt/templates 
-# Fri, 24 Apr 2020 14:51:40 GMT
+# Thu, 11 Jun 2020 20:37:32 GMT
 EXPOSE 8080
-# Fri, 24 Apr 2020 14:51:41 GMT
+# Thu, 11 Jun 2020 20:37:33 GMT
 CMD ["/opt/files/startup.sh"]
 ```
 
@@ -229,17 +229,17 @@ CMD ["/opt/files/startup.sh"]
 		Last Modified: Fri, 24 Apr 2020 14:51:52 GMT  
 		Size: 541.8 KB (541813 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b74ef6fa8c44c6d7a7262cea5643600646c3cd6143a3201dd397b94fab9fd497`  
-		Last Modified: Fri, 24 Apr 2020 14:52:52 GMT  
-		Size: 97.9 MB (97894347 bytes)  
+	-	`sha256:0a2cc6e1e78a6bcf2d971f44859eff8bcc9e8211058055858707e8eeb2432180`  
+		Last Modified: Thu, 11 Jun 2020 20:37:59 GMT  
+		Size: 98.0 MB (97955969 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:732442ba8a617240da60ddab3494eb4639e3600bb03951f225a648742e04779f`  
-		Last Modified: Fri, 24 Apr 2020 14:52:24 GMT  
-		Size: 7.6 KB (7621 bytes)  
+	-	`sha256:891e38cf7ceded7640d84fd9fb18bbeec8b82e41233400f02d8fcc75de727955`  
+		Last Modified: Thu, 11 Jun 2020 20:37:48 GMT  
+		Size: 7.6 KB (7622 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9c4cbc9dc278dda6da0df07664d2a1166d9f4cfefdb9983cce796cb2869ee4b`  
-		Last Modified: Fri, 24 Apr 2020 14:52:25 GMT  
-		Size: 1.6 KB (1649 bytes)  
+	-	`sha256:e6e61b89e2cad740721f947939badbbee49b1c89246067b9a02fab942e944262`  
+		Last Modified: Thu, 11 Jun 2020 20:37:48 GMT  
+		Size: 1.7 KB (1658 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `bonita:latest` - linux; ppc64le
