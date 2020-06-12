@@ -1,10 +1,10 @@
-# `crate:4.1.5`
+# `crate:4.1.6`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2f52c09a2c68171d4426b3283ac9adb21320d08150c8c272d2a8eb69bb5554ca`
-- Created: `2020-05-05T21:47:50.202814811Z`
-- Virtual Size: ~ 675.83 Mb  
+- Image ID: `sha256:26e2f7f0075c0ebbc9b283dc6c899e29079e3724f9c8836060c6e72c3169914e`
+- Created: `2020-06-10T18:20:06.651228838Z`
+- Virtual Size: ~ 676.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -20,14 +20,14 @@
   - `org.label-schema.name=CentOS Base Image`
   - `org.label-schema.schema-version=1.0`
   - `org.label-schema.vendor=CentOS`
-  - `org.opencontainers.image.created=2020-04-24T09:34:17.477377`
+  - `org.opencontainers.image.created=2020-06-08T09:38:55.376569`
   - `org.opencontainers.image.description=CrateDB is a distributed SQL database handles massive amounts of machine data in real-time.`
   - `org.opencontainers.image.licenses=GPL-2.0-only`
   - `org.opencontainers.image.source=https://github.com/crate/docker-crate`
   - `org.opencontainers.image.title=crate`
   - `org.opencontainers.image.url=https://crate.io/products/cratedb/`
   - `org.opencontainers.image.vendor=Crate.io`
-  - `org.opencontainers.image.version=4.1.5`
+  - `org.opencontainers.image.version=4.1.6`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -2157,18 +2157,18 @@ Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/yum-utils-1.1.31-53.el7.src.rpm
 ```
 
-### `rpm` package: `yum-utils-1.1.31-53.el7.noarch`
+### `rpm` package: `yum-utils-1.1.31-54.el7_8.noarch`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls yum-utils-1.1.31-53.el7.noarch
+$ yumdownloader --quiet --source --urls yum-utils-1.1.31-54.el7_8.noarch
 Enabling updates-source repository
 Enabling base-source repository
 Enabling extras-source repository
-http://vault.centos.org/centos/7/os/Source//SPackages/yum-utils-1.1.31-53.el7.src.rpm
+http://vault.centos.org/centos/7/updates/Source//SPackages/yum-utils-1.1.31-54.el7_8.src.rpm
 ```
 
 ### `rpm` package: `zlib-1.2.7-18.el7.x86_64`
