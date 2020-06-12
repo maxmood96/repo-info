@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:45c3b475d023dfa8186a606b7d1371e90494694ca0de5baf5f6e79fe68e66bf2`
-- Created: `2020-05-16T04:15:33.509468342Z`
+- Image ID: `sha256:c8f57026f13567c54b3141696a23fbeb4ef709f40459bb84eafd634aa19de918`
+- Created: `2020-06-09T20:23:06.290855151Z`
 - Virtual Size: ~ 100.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -660,11 +660,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnupg2/2.2.12-1+deb10u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnupg2/2.2.12-1+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnutls28=3.6.7-4+deb10u3`
+### `dpkg` source package: `gnutls28=3.6.7-4+deb10u4`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.6.7-4+deb10u3`
+- `libgnutls30:amd64=3.6.7-4+deb10u4`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -683,18 +683,18 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.6.7-4+deb10u3
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7-4+deb10u3.dsc' gnutls28_3.6.7-4+deb10u3.dsc 3509 SHA256:a5acd2ff3e275baabbe42f949f9ce365e9fd53ea4a14a306be395dae2a7589d5
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz' gnutls28_3.6.7.orig.tar.xz 8153728 SHA256:5b3409ad5aaf239808730d1ee12fdcd148c0be00262c7edf157af655a8a188e2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz.asc' gnutls28_3.6.7.orig.tar.xz.asc 534 SHA256:a14d0a7b9295b65ae797a70f8e765024a2e363dca03d008bfce0aec2b3f292b0
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7-4+deb10u3.debian.tar.xz' gnutls28_3.6.7-4+deb10u3.debian.tar.xz 77948 SHA256:cd03a0f7f16b7bdff8b7ecd0ebccd6c51b2ba6615df88de4a63a87bd47a8998e
+$ apt-get source -qq --print-uris gnutls28=3.6.7-4+deb10u4
+'http://security.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.6.7-4+deb10u4.dsc' gnutls28_3.6.7-4+deb10u4.dsc 3509 SHA256:0d633cb281152d025b49fa398930c8f5ea2e9af529bc9a2d288813679e75d88f
+'http://security.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz' gnutls28_3.6.7.orig.tar.xz 8153728 SHA256:5b3409ad5aaf239808730d1ee12fdcd148c0be00262c7edf157af655a8a188e2
+'http://security.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz.asc' gnutls28_3.6.7.orig.tar.xz.asc 534 SHA256:a14d0a7b9295b65ae797a70f8e765024a2e363dca03d008bfce0aec2b3f292b0
+'http://security.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.6.7-4+deb10u4.debian.tar.xz' gnutls28_3.6.7-4+deb10u4.debian.tar.xz 78712 SHA256:2bf9e2ce3603e46ad2a47762e4e96c2f64729fe5bd784274025aa99f33a11688
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u3/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.6.7-4+deb10u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u4/ (for browsing the source)
+- https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnutls28/3.6.7-4+deb10u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.3-1`
 
@@ -1136,11 +1136,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.3.8+dfsg-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.3.8+dfsg-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.19.118-2`
+### `dpkg` source package: `linux=4.19.118-2+deb10u1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.19.118-2`
+- `linux-libc-dev:amd64=4.19.118-2+deb10u1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1155,17 +1155,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.19.118-2
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.19.118-2.dsc' linux_4.19.118-2.dsc 189286 SHA256:254ddd763173ed6af41ab9e6df7ca718aa3fcebb988d2983d15360f0f8b3249f
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.19.118.orig.tar.xz' linux_4.19.118.orig.tar.xz 107469088 SHA256:353b99a93364cc9c54cd889acc71ffd3190101ad67f19238150691a3c6f95aaf
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.19.118-2.debian.tar.xz' linux_4.19.118-2.debian.tar.xz 3283568 SHA256:9481dd2018c83eeb15020e6d437ebb9ba8cd8db79a5f1e76b979929079463a5d
+$ apt-get source -qq --print-uris linux=4.19.118-2+deb10u1
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.19.118-2+deb10u1.dsc' linux_4.19.118-2+deb10u1.dsc 189318 SHA256:955087d295f3a75078f5ffcd46168cb2852345683af30cc22ce1b2db583609d7
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.19.118.orig.tar.xz' linux_4.19.118.orig.tar.xz 107469088 SHA256:353b99a93364cc9c54cd889acc71ffd3190101ad67f19238150691a3c6f95aaf
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.19.118-2+deb10u1.debian.tar.xz' linux_4.19.118-2+deb10u1.debian.tar.xz 3306732 SHA256:d77e14c94986c0ef783588fb0829ff69a5e4bc3ae678c4f2e6aad8184db29edf
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/4.19.118-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.19.118-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.19.118-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/4.19.118-2+deb10u1/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.19.118-2+deb10u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.19.118-2+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.8.3-1`
 
