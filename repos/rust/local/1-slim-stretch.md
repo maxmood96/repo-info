@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a97bb366086e900d4275a04a5c2e9a895ffeded5486c629fe5a09fc6068d45e4`
-- Created: `2020-06-04T22:27:57.658605398Z`
-- Virtual Size: ~ 570.77 Mb  
+- Image ID: `sha256:7bb77ed93e05a46f573baa16eaa4062455211da527272696e56671bd91bc8303`
+- Created: `2020-06-09T20:17:57.070983473Z`
+- Virtual Size: ~ 570.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -272,11 +272,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.6-8.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.6-8.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20161130+nmu1+deb9u1`
+### `dpkg` source package: `ca-certificates=20200601~deb9u1`
 
 Binary Packages:
 
-- `ca-certificates=20161130+nmu1+deb9u1`
+- `ca-certificates=20200601~deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -287,16 +287,16 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20161130+nmu1+deb9u1
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20161130+nmu1+deb9u1.dsc' ca-certificates_20161130+nmu1+deb9u1.dsc 1900 SHA256:c2f23c84c06abb9e982fa54ea6b061369711824d472039e89aa3fe46d2f37715
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20161130+nmu1+deb9u1.tar.xz' ca-certificates_20161130+nmu1+deb9u1.tar.xz 247788 SHA256:3b9b56e55a92acdabdae700340f36c5243105c2a022993407632bb08bb4c0197
+$ apt-get source -qq --print-uris ca-certificates=20200601~deb9u1
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20200601~deb9u1.dsc' ca-certificates_20200601~deb9u1.dsc 1855 SHA256:81772ce188acf4ef93aface3dc9fc0516fb193d1e7242c23a6e18a002a455302
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20200601~deb9u1.tar.xz' ca-certificates_20200601~deb9u1.tar.xz 245956 SHA256:873a9eb9ec66db1d9bc7c6829ee789fe6b1ba4ed497745df699b35145a3c98cd
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates/20161130+nmu1+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20161130+nmu1+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20161130+nmu1+deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ca-certificates/20200601~deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20200601~deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20200601~deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.227`
 
@@ -1028,11 +1028,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libsepol/2.6-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libsepol/2.6-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.9.210-1`
+### `dpkg` source package: `linux=4.9.210-1+deb9u1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.9.210-1`
+- `linux-libc-dev:amd64=4.9.210-1+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1045,17 +1045,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.9.210-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.210-1.dsc' linux_4.9.210-1.dsc 125025 SHA256:f16e4a27ca2f36fc78746b706a0df5c28860c18a7e6bf53d7392f115edb5868d
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.210.orig.tar.xz' linux_4.9.210.orig.tar.xz 94867552 SHA256:4e3d283a6fdc8f6bdf74df8a79d0367c6d3f6033da25a23119b153a7e22ace57
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.210-1.debian.tar.xz' linux_4.9.210-1.debian.tar.xz 1277320 SHA256:930d4102fb0ecf86af74186b0081aabd3855d1fd525441e0b7bb30095c4aec2f
+$ apt-get source -qq --print-uris linux=4.9.210-1+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.210-1+deb9u1.dsc' linux_4.9.210-1+deb9u1.dsc 125053 SHA256:d8bbf8f546c103ef1426b5be83f928fb12053fb86a6410123dcca3bfb48bf5b9
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.210.orig.tar.xz' linux_4.9.210.orig.tar.xz 94867552 SHA256:4e3d283a6fdc8f6bdf74df8a79d0367c6d3f6033da25a23119b153a7e22ace57
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.210-1+deb9u1.debian.tar.xz' linux_4.9.210-1+deb9u1.debian.tar.xz 2781364 SHA256:ee8c3c7fa8c0819a2330ef1d3c2cdc6a1041137102a7bf11d6d8c0e125593857
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/4.9.210-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.9.210-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.9.210-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/4.9.210-1+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.9.210-1+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.9.210-1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
