@@ -1,7 +1,7 @@
 ## `ros:eloquent-ros1-bridge-bionic`
 
 ```console
-$ docker pull ros@sha256:5ff22eca51feaf082fb96764c18c74d433dd520c3af057d949e3040950640819
+$ docker pull ros@sha256:e11f68c271416af5ffa3109c4deb078df7f4ccbf00f2f42fb5a6b5ae1fedd32c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,14 +13,14 @@ $ docker pull ros@sha256:5ff22eca51feaf082fb96764c18c74d433dd520c3af057d949e3040
 ### `ros:eloquent-ros1-bridge-bionic` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:8c4fdc5ce9fb809ec26cc72c22429424d77f1b77586dde8b793c29ff5275ccfb
+$ docker pull ros@sha256:b7c14f3e9d2727b6328aa00f1452df90987ce03febc022498cd3413f94b58d37
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **423.9 MB (423890019 bytes)**  
+-	Total Size: **423.9 MB (423911609 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c1a14c55458c8e648e3ce945bbcbadcb63df1ec4266cf540b294a2aaffd4d6d0`
+-	Image ID: `sha256:9662101c0bb1cddde500b2d3ce3ccdc74fc0c11391d26f9edf79afb02f5d0210`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -73,13 +73,13 @@ RUN echo "deb http://packages.ros.org/ros/ubuntu bionic main" > /etc/apt/sources
 ENV ROS1_DISTRO=melodic
 # Mon, 08 Jun 2020 22:24:02 GMT
 ENV ROS2_DISTRO=eloquent
-# Mon, 08 Jun 2020 22:24:58 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-melodic-ros-comm=1.14.5-1*     ros-melodic-roscpp-tutorials=0.9.2-1*     ros-melodic-rospy-tutorials=0.9.2-1*     && rm -rf /var/lib/apt/lists/*
-# Mon, 08 Jun 2020 22:25:11 GMT
+# Mon, 15 Jun 2020 23:25:01 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-melodic-ros-comm=1.14.6-1*     ros-melodic-roscpp-tutorials=0.9.2-1*     ros-melodic-rospy-tutorials=0.9.2-1*     && rm -rf /var/lib/apt/lists/*
+# Mon, 15 Jun 2020 23:25:12 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-eloquent-ros1-bridge=0.8.2-1*     ros-eloquent-demo-nodes-cpp=0.8.4-1*     ros-eloquent-demo-nodes-py=0.8.4-1*     && rm -rf /var/lib/apt/lists/*
-# Mon, 08 Jun 2020 22:25:16 GMT
+# Mon, 15 Jun 2020 23:25:18 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     python-rosdep     && rm -rf /var/lib/apt/lists/*
-# Mon, 08 Jun 2020 22:25:17 GMT
+# Mon, 15 Jun 2020 23:25:18 GMT
 COPY file:f2fca591c0e2a31379c7ea28a9948ef5ee9d4a95b4831016253c1ef1a4f39718 in / 
 ```
 
@@ -148,34 +148,34 @@ COPY file:f2fca591c0e2a31379c7ea28a9948ef5ee9d4a95b4831016253c1ef1a4f39718 in /
 		Last Modified: Mon, 08 Jun 2020 22:29:11 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7bf263833178a844fe672ed01cefefe17072ba1159d7f77ea7e2590cb4592e44`  
-		Last Modified: Mon, 08 Jun 2020 22:29:33 GMT  
-		Size: 117.7 MB (117668089 bytes)  
+	-	`sha256:50b9d81792efdc49420fa75848bbeede99a96c38888b97036dc378d005264ab7`  
+		Last Modified: Mon, 15 Jun 2020 23:26:55 GMT  
+		Size: 117.7 MB (117671655 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d064785f1d086df9e62dde4122e176a7937563ecfeaea7708f3930a23fdcf8a`  
-		Last Modified: Mon, 08 Jun 2020 22:29:17 GMT  
-		Size: 21.9 MB (21923177 bytes)  
+	-	`sha256:f0afb7774735ac402c06f259406d2285630fa77a27cbf1e15296be64968c81a2`  
+		Last Modified: Mon, 15 Jun 2020 23:26:39 GMT  
+		Size: 21.9 MB (21941266 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae473676edd7c6cc603d83dd48b8dfc98ab40c3cc6500eda199a71d8c810d648`  
-		Last Modified: Mon, 08 Jun 2020 22:29:11 GMT  
-		Size: 645.7 KB (645724 bytes)  
+	-	`sha256:6546b45ada73401a47429de572cfe5477da3e1c452a71ddd288a2096a79a00eb`  
+		Last Modified: Mon, 15 Jun 2020 23:26:33 GMT  
+		Size: 645.7 KB (645661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3651afa1388d4efbc72dcc04c8f812f7d65fef2f6e8c9b46f1747963bfd30968`  
-		Last Modified: Mon, 08 Jun 2020 22:29:11 GMT  
-		Size: 245.0 B  
+	-	`sha256:ab7eddc784166f99950062a3fa4cabf7b755b6b97bec68a5bc7cf27ff236756f`  
+		Last Modified: Mon, 15 Jun 2020 23:26:33 GMT  
+		Size: 243.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:eloquent-ros1-bridge-bionic` - linux; arm variant v7
 
 ```console
-$ docker pull ros@sha256:4d4b7003abe0144e1f909cc54fbb7babc9c71e14a412440e95de3816f7f157d5
+$ docker pull ros@sha256:c4ab331ccce758d7ed14675f7c98217a7764d1109a715c35ef213af8463bf435
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **359.6 MB (359601377 bytes)**  
+-	Total Size: **359.6 MB (359619148 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be45369b92e77d07febf059392788e43f3622502271326a67c6bfec59da43ab6`
+-	Image ID: `sha256:e7b331b1e9ec66cbf4a0fc28f7f78a0211656e05e668c7d2a7e41fbb500cb5e2`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -228,13 +228,13 @@ RUN echo "deb http://packages.ros.org/ros/ubuntu bionic main" > /etc/apt/sources
 ENV ROS1_DISTRO=melodic
 # Mon, 08 Jun 2020 23:05:18 GMT
 ENV ROS2_DISTRO=eloquent
-# Mon, 08 Jun 2020 23:08:05 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-melodic-ros-comm=1.14.5-1*     ros-melodic-roscpp-tutorials=0.9.2-1*     ros-melodic-rospy-tutorials=0.9.2-1*     && rm -rf /var/lib/apt/lists/*
-# Mon, 08 Jun 2020 23:08:32 GMT
+# Mon, 15 Jun 2020 23:05:40 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-melodic-ros-comm=1.14.6-1*     ros-melodic-roscpp-tutorials=0.9.2-1*     ros-melodic-rospy-tutorials=0.9.2-1*     && rm -rf /var/lib/apt/lists/*
+# Mon, 15 Jun 2020 23:06:06 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-eloquent-ros1-bridge=0.8.2-1*     ros-eloquent-demo-nodes-cpp=0.8.4-1*     ros-eloquent-demo-nodes-py=0.8.4-1*     && rm -rf /var/lib/apt/lists/*
-# Mon, 08 Jun 2020 23:08:47 GMT
+# Mon, 15 Jun 2020 23:06:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     python-rosdep     && rm -rf /var/lib/apt/lists/*
-# Mon, 08 Jun 2020 23:08:49 GMT
+# Mon, 15 Jun 2020 23:06:18 GMT
 COPY file:f2fca591c0e2a31379c7ea28a9948ef5ee9d4a95b4831016253c1ef1a4f39718 in / 
 ```
 
@@ -303,34 +303,34 @@ COPY file:f2fca591c0e2a31379c7ea28a9948ef5ee9d4a95b4831016253c1ef1a4f39718 in /
 		Last Modified: Mon, 08 Jun 2020 23:10:06 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e83413f86daffde17e369fb0d311458d7e3af139f09126322665dfb1a99178eb`  
-		Last Modified: Mon, 08 Jun 2020 23:10:48 GMT  
-		Size: 110.5 MB (110546102 bytes)  
+	-	`sha256:5ddb7a3e0665b763806ef7bc7ad5f4e8d4622ce978b68f06730fe6ad7ffc85e7`  
+		Last Modified: Mon, 15 Jun 2020 23:08:10 GMT  
+		Size: 110.5 MB (110548498 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8cc504b6b6076ed685d7259ce2bf219f23d2cb33d1b23b0b46473cb03f6cdce1`  
-		Last Modified: Mon, 08 Jun 2020 23:10:13 GMT  
-		Size: 13.0 MB (13017872 bytes)  
+	-	`sha256:68facb9489f1d49ec0e68d7bfa7d3f3b0ecc104ae474640044c7259ee5115906`  
+		Last Modified: Mon, 15 Jun 2020 23:07:40 GMT  
+		Size: 13.0 MB (13033445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5599568a16f4cdb951af5fa01538d21ffdf6d5a6a1c16ec6bcfa4cb963e717e`  
-		Last Modified: Mon, 08 Jun 2020 23:10:07 GMT  
-		Size: 642.7 KB (642743 bytes)  
+	-	`sha256:5a17f6f66f7463d127f6777205f3279750f14659db2cdea6f44912ad6ad0b21d`  
+		Last Modified: Mon, 15 Jun 2020 23:07:34 GMT  
+		Size: 642.5 KB (642547 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30ee5d29c9303c099d4bb95d228f45ea4382f194788337bc932292e15b03c7c7`  
-		Last Modified: Mon, 08 Jun 2020 23:10:06 GMT  
-		Size: 246.0 B  
+	-	`sha256:73690cf89f82e3eca89f4dede2ed02dcf000a16055866d44398572526a783883`  
+		Last Modified: Mon, 15 Jun 2020 23:07:34 GMT  
+		Size: 244.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:eloquent-ros1-bridge-bionic` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:3e3655eba0d5b6a66e0c2b15916c1612c5a1432adfcc3b0afb5dc043b83b8b35
+$ docker pull ros@sha256:d92f959c13b4f1a0a3466bcf3c4324dc6e0723260ec3ed35cd8983e49e0a3552
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **391.9 MB (391909143 bytes)**  
+-	Total Size: **391.9 MB (391929115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9792ed6e4130495fa70336ff15bdc8115ad3923600237c38ee204c68f209473`
+-	Image ID: `sha256:aa020fe5ac2aeff0d806eef174fd1443ff6635322408e3ad29fb81423100026b`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -383,13 +383,13 @@ RUN echo "deb http://packages.ros.org/ros/ubuntu bionic main" > /etc/apt/sources
 ENV ROS1_DISTRO=melodic
 # Mon, 08 Jun 2020 22:46:45 GMT
 ENV ROS2_DISTRO=eloquent
-# Mon, 08 Jun 2020 22:49:32 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-melodic-ros-comm=1.14.5-1*     ros-melodic-roscpp-tutorials=0.9.2-1*     ros-melodic-rospy-tutorials=0.9.2-1*     && rm -rf /var/lib/apt/lists/*
-# Mon, 08 Jun 2020 22:50:05 GMT
+# Mon, 15 Jun 2020 22:48:57 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-melodic-ros-comm=1.14.6-1*     ros-melodic-roscpp-tutorials=0.9.2-1*     ros-melodic-rospy-tutorials=0.9.2-1*     && rm -rf /var/lib/apt/lists/*
+# Mon, 15 Jun 2020 22:49:25 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-eloquent-ros1-bridge=0.8.2-1*     ros-eloquent-demo-nodes-cpp=0.8.4-1*     ros-eloquent-demo-nodes-py=0.8.4-1*     && rm -rf /var/lib/apt/lists/*
-# Mon, 08 Jun 2020 22:50:21 GMT
+# Mon, 15 Jun 2020 22:49:37 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     python-rosdep     && rm -rf /var/lib/apt/lists/*
-# Mon, 08 Jun 2020 22:50:22 GMT
+# Mon, 15 Jun 2020 22:49:37 GMT
 COPY file:f2fca591c0e2a31379c7ea28a9948ef5ee9d4a95b4831016253c1ef1a4f39718 in / 
 ```
 
@@ -458,19 +458,19 @@ COPY file:f2fca591c0e2a31379c7ea28a9948ef5ee9d4a95b4831016253c1ef1a4f39718 in /
 		Last Modified: Mon, 08 Jun 2020 22:55:55 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91b4a9e0cc8e43849ec1928d7d332ef06a0aad4fdf59fafdc2108d1470cdda7f`  
-		Last Modified: Mon, 08 Jun 2020 22:56:32 GMT  
-		Size: 116.6 MB (116614366 bytes)  
+	-	`sha256:c692b31d60704b8615200cf33aaa6ca1e267150857f5194d27f26376be4c904e`  
+		Last Modified: Mon, 15 Jun 2020 22:52:00 GMT  
+		Size: 116.6 MB (116615593 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:168885798c96c9247015d28d2880a9f3b8b11a2af6b7065f9dfd2396c6440df4`  
-		Last Modified: Mon, 08 Jun 2020 22:56:02 GMT  
-		Size: 16.9 MB (16870323 bytes)  
+	-	`sha256:eea0e7bf8ebb5bbec6326c1d6361d618da986ef1ca963f18f1322ca66acf5195`  
+		Last Modified: Mon, 15 Jun 2020 22:51:30 GMT  
+		Size: 16.9 MB (16889615 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:468d40fa9405c04b6911b14317dfa6342219ada49b67539d08a1b19b75be0656`  
-		Last Modified: Mon, 08 Jun 2020 22:55:55 GMT  
-		Size: 644.8 KB (644768 bytes)  
+	-	`sha256:703ca6b89ffad555f429bf871f9620f23881b75e02512aa4f5d88f6aa92358c0`  
+		Last Modified: Mon, 15 Jun 2020 22:51:24 GMT  
+		Size: 644.2 KB (644221 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2452edd5ab8a679b16f07a4ca5953fcd6d1f458c284e037f80d2f35f91ee0c54`  
-		Last Modified: Mon, 08 Jun 2020 22:55:55 GMT  
+	-	`sha256:5618d77b1eb97db6938980954c518b5cb4f0deef5948697c9889e7d27c522ea4`  
+		Last Modified: Mon, 15 Jun 2020 22:51:24 GMT  
 		Size: 244.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
