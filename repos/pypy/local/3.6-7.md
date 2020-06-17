@@ -1,20 +1,20 @@
-# `pypy:3.6-7.3.0`
+# `pypy:3.6-7.3.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:58a1ec1a987a7492624529b6471be35eb3c0dfd3ff75d1a789cfe9bde873b2c6`
-- Created: `2020-06-10T23:46:22.219044533Z`
-- Virtual Size: ~ 930.19 Mb  
+- Image ID: `sha256:4baea7bd01de25d8ac19866865e8a55412e3e3ca8c5db8713af6520948b994f0`
+- Created: `2020-06-17T00:32:56.382968141Z`
+- Virtual Size: ~ 931.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy3"]`
 - Environment:
-  - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `PYPY_VERSION=7.3.0`
-  - `PYTHON_PIP_VERSION=20.0.2`
-  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/d59197a3c169cef378a22428a3fa99d33e080a5d/get-pip.py`
-  - `PYTHON_GET_PIP_SHA256=421ac1d44c0cf9730a088e337867d974b91bdce4ea2636099275071878cc189e`
+  - `PYPY_VERSION=7.3.1`
+  - `PYTHON_PIP_VERSION=20.1.1`
+  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/eff16c878c7fd6b688b9b4c4267695cf1a0bf01b/get-pip.py`
+  - `PYTHON_GET_PIP_SHA256=b3153ec0cf7b7bbf9556932aa37e4981c35dc2a2c501d70d91d2795aa532be79`
 
 ## `dpkg` (`.deb`-based packages)
 
