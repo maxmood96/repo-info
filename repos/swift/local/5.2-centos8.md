@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:01737d192d4261b41df3a1b51f7a8cb8840a081c93d1360b1525ee0a681d431c`
-- Created: `2020-06-05T01:49:36.474073424Z`
-- Virtual Size: ~ 1.98 Gb  
+- Image ID: `sha256:3678c629101e3b6c922738049111e92c8fa40d10a322d4625aeac7f1a17b3762`
+- Created: `2020-06-17T00:48:22.979417834Z`
+- Virtual Size: ~ 1.83 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -18,12 +18,8 @@
 - Labels:
   - `description=Docker Container for the Swift programming language`
   - `maintainer=Swift Infrastructure <swift-infrastructure@swift.org>`
-  - `org.label-schema.build-date=20200114`
+  - `org.label-schema.build-date=20200611`
   - `org.label-schema.license=GPLv2`
   - `org.label-schema.name=CentOS Base Image`
   - `org.label-schema.schema-version=1.0`
   - `org.label-schema.vendor=CentOS`
-  - `org.opencontainers.image.created=2020-01-14 00:00:00-08:00`
-  - `org.opencontainers.image.licenses=GPL-2.0-only`
-  - `org.opencontainers.image.title=CentOS Base Image`
-  - `org.opencontainers.image.vendor=CentOS`
