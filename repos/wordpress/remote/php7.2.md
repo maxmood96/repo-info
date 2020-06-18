@@ -1,7 +1,7 @@
 ## `wordpress:php7.2`
 
 ```console
-$ docker pull wordpress@sha256:d37be13817f5e743e586e5042d3b7fb5ea27c0cde3044c574169fd851d03b30a
+$ docker pull wordpress@sha256:4c10cdc130e9cfd20d2e948c7e17c0c8f59283f0b5dcb49f574981dc1cc8018a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull wordpress@sha256:d37be13817f5e743e586e5042d3b7fb5ea27c0cde3044c574
 ### `wordpress:php7.2` - linux; amd64
 
 ```console
-$ docker pull wordpress@sha256:6d228f420091eba8ae8765f2fed32e01f9047b96f3a9acacf4e74e8ded8192e3
+$ docker pull wordpress@sha256:aed32fe26915010854ef5ba2b09d584ae82dd79788bdce60aa16793faae55e81
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **187.2 MB (187189498 bytes)**  
+-	Total Size: **187.2 MB (187189726 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0dd3b142e56dba9fa934c882783ad1e8917ffa5d60f6a75a79c6ece93a731626`
+-	Image ID: `sha256:6881ff4aa1c3548345cd12143a8dac5be426ea753f4ac1602e1d8ab8afebcdaa`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -113,11 +113,11 @@ ENV WORDPRESS_SHA1=e5631f812232fbd45d3431783d3db2e0d5670d2d
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
 # Wed, 17 Jun 2020 00:36:29 GMT
 VOLUME [/var/www/html]
-# Wed, 17 Jun 2020 00:36:29 GMT
-COPY file:23b9be1c8107c393ba35bb0d8b8cc2e5883059949fdfa06a4f02595b3f8a452b in /usr/local/bin/ 
-# Wed, 17 Jun 2020 00:36:29 GMT
+# Thu, 18 Jun 2020 20:43:53 GMT
+COPY file:f56966eeac957656aead5cb65d1531bfe029ddac03ee3ffefdafd2f0d4252925 in /usr/local/bin/ 
+# Thu, 18 Jun 2020 20:43:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Jun 2020 00:36:30 GMT
+# Thu, 18 Jun 2020 20:43:53 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -202,22 +202,22 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 17 Jun 2020 00:39:31 GMT  
 		Size: 12.1 MB (12082661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd7976531ceada88c2538597ec5eddda0487e0749ad6109f9e1f2f91e7250465`  
-		Last Modified: Wed, 17 Jun 2020 00:39:28 GMT  
-		Size: 3.9 KB (3920 bytes)  
+	-	`sha256:bd501fea78e47ca5c96f9a8c7b82c48dfd1562d08a3f67115b6536718267d32a`  
+		Last Modified: Thu, 18 Jun 2020 20:45:52 GMT  
+		Size: 4.1 KB (4148 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:php7.2` - linux; arm variant v5
 
 ```console
-$ docker pull wordpress@sha256:680018c3f75007aa0cdb8447fa8e858c4262573dce98174a30b7a57b0360bf92
+$ docker pull wordpress@sha256:0677f51362dacfcbff9670477df5cc43dd622fbfccca9b71c1441c7b2ccac18f
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **163.9 MB (163942668 bytes)**  
+-	Total Size: **163.9 MB (163942901 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c48148ab206388a75d6fb38e8783429191a63bc7dee96f6c6222e0d46d8f868`
+-	Image ID: `sha256:07065f3707f16d5bc4fec8943b6e3e095581f8e91ed4d54d3a8153547d81c133`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -306,11 +306,11 @@ ENV WORDPRESS_SHA1=e5631f812232fbd45d3431783d3db2e0d5670d2d
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
 # Wed, 17 Jun 2020 00:49:19 GMT
 VOLUME [/var/www/html]
-# Wed, 17 Jun 2020 00:49:21 GMT
-COPY file:23b9be1c8107c393ba35bb0d8b8cc2e5883059949fdfa06a4f02595b3f8a452b in /usr/local/bin/ 
-# Wed, 17 Jun 2020 00:49:22 GMT
+# Thu, 18 Jun 2020 19:48:47 GMT
+COPY file:f56966eeac957656aead5cb65d1531bfe029ddac03ee3ffefdafd2f0d4252925 in /usr/local/bin/ 
+# Thu, 18 Jun 2020 19:48:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Jun 2020 00:49:24 GMT
+# Thu, 18 Jun 2020 19:48:48 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -395,22 +395,22 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 17 Jun 2020 00:53:18 GMT  
 		Size: 12.1 MB (12082694 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5fc51a1603dab90ee32982321ac34a9ec05261c505c4896a086c557dd97d1cb`  
-		Last Modified: Wed, 17 Jun 2020 00:53:14 GMT  
-		Size: 3.9 KB (3916 bytes)  
+	-	`sha256:75fda1300eb1b76c59873c122f62cf5eef18e66fa15da266068fda1ee8bdd27f`  
+		Last Modified: Thu, 18 Jun 2020 19:50:29 GMT  
+		Size: 4.1 KB (4149 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:php7.2` - linux; arm variant v7
 
 ```console
-$ docker pull wordpress@sha256:28e75ab68a5716886d48b4e09a87cdbe814389645223a33e22780e3ead6390ca
+$ docker pull wordpress@sha256:9d50547510d8a86b359dfec556a26267e0a93be2c36bdd88f9c9a892ff43b3be
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.0 MB (159978557 bytes)**  
+-	Total Size: **160.0 MB (159978789 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:078e9b3cafbd49ea3814d2b1a72b28f998f68e0577775bad3a857371624d3626`
+-	Image ID: `sha256:d1ae5831a985a595db2641741a472b301ccc94f24057c44c7f54f53d5a31d1e6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -499,11 +499,11 @@ ENV WORDPRESS_SHA1=e5631f812232fbd45d3431783d3db2e0d5670d2d
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
 # Wed, 17 Jun 2020 01:18:15 GMT
 VOLUME [/var/www/html]
-# Wed, 17 Jun 2020 01:18:16 GMT
-COPY file:23b9be1c8107c393ba35bb0d8b8cc2e5883059949fdfa06a4f02595b3f8a452b in /usr/local/bin/ 
-# Wed, 17 Jun 2020 01:18:16 GMT
+# Thu, 18 Jun 2020 21:10:05 GMT
+COPY file:f56966eeac957656aead5cb65d1531bfe029ddac03ee3ffefdafd2f0d4252925 in /usr/local/bin/ 
+# Thu, 18 Jun 2020 21:10:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Jun 2020 01:18:17 GMT
+# Thu, 18 Jun 2020 21:10:09 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -588,9 +588,9 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 17 Jun 2020 01:23:38 GMT  
 		Size: 12.1 MB (12082695 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:633ca9c36ba6aaef5a0a9b9c489bfd0d77d2ffb5711291d3c19f51f2f48a1a6b`  
-		Last Modified: Wed, 17 Jun 2020 01:23:33 GMT  
-		Size: 3.9 KB (3917 bytes)  
+	-	`sha256:7291e803fdd7d2d66d6fcc1716e83057f5e61bbeccdaefd0583b79cc19dbede6`  
+		Last Modified: Thu, 18 Jun 2020 21:12:53 GMT  
+		Size: 4.1 KB (4149 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:php7.2` - linux; arm64 variant v8
@@ -789,14 +789,14 @@ CMD ["apache2-foreground"]
 ### `wordpress:php7.2` - linux; 386
 
 ```console
-$ docker pull wordpress@sha256:da4ddb5b78d57dd7c9385a39ffd7c746cd0fb27629ade87171d76b40f3695407
+$ docker pull wordpress@sha256:ac7aee598f1e1a68086a93f16e4781bce616fe2912ba8e2cc9f665f38b9e3d97
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.7 MB (192708394 bytes)**  
+-	Total Size: **192.7 MB (192708619 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:16b0c36c6dd496b8b613366b9a09ccfa6d0dfbd8645b9b627dee272e90cf81f9`
+-	Image ID: `sha256:ac67a510d93817f7835f7c497097df5ae6ae8ace31c2976a8e3a341e165e14dd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -885,11 +885,11 @@ ENV WORDPRESS_SHA1=e5631f812232fbd45d3431783d3db2e0d5670d2d
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
 # Wed, 17 Jun 2020 00:52:53 GMT
 VOLUME [/var/www/html]
-# Wed, 17 Jun 2020 00:52:53 GMT
-COPY file:23b9be1c8107c393ba35bb0d8b8cc2e5883059949fdfa06a4f02595b3f8a452b in /usr/local/bin/ 
-# Wed, 17 Jun 2020 00:52:53 GMT
+# Thu, 18 Jun 2020 20:45:40 GMT
+COPY file:f56966eeac957656aead5cb65d1531bfe029ddac03ee3ffefdafd2f0d4252925 in /usr/local/bin/ 
+# Thu, 18 Jun 2020 20:45:41 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Jun 2020 00:52:53 GMT
+# Thu, 18 Jun 2020 20:45:41 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -974,9 +974,9 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 17 Jun 2020 00:55:40 GMT  
 		Size: 12.1 MB (12082661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f16dddd5346aec6fe75176fc7bf0f14050c297677e52fff23eb298f2d2844745`  
-		Last Modified: Wed, 17 Jun 2020 00:55:36 GMT  
-		Size: 3.9 KB (3918 bytes)  
+	-	`sha256:a6e9b2748994e340000716d67bd7746c0688ad739817cb0738d1117a19e093c5`  
+		Last Modified: Thu, 18 Jun 2020 20:47:39 GMT  
+		Size: 4.1 KB (4143 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:php7.2` - linux; ppc64le
@@ -1175,14 +1175,14 @@ CMD ["apache2-foreground"]
 ### `wordpress:php7.2` - linux; s390x
 
 ```console
-$ docker pull wordpress@sha256:8e4ff0045a5b1010a0bc2a4f6b898d4ba0bb1803ab15ab821ca87c59021c8b04
+$ docker pull wordpress@sha256:47f7a73265c4a9f0b507d3398fb8e11672e81b0e2a76849c26f82c0a46d5225f
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.5 MB (171450063 bytes)**  
+-	Total Size: **171.5 MB (171450293 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f8120292466dd0623ecd9636f08f9bee1ba35e6f47ab92f37fff5de3166310f5`
+-	Image ID: `sha256:891987f585a7166e60b2b1862f41abe3cea6240a3eb848ddfb51bccf68ebb5a4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1271,11 +1271,11 @@ ENV WORDPRESS_SHA1=e5631f812232fbd45d3431783d3db2e0d5670d2d
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
 # Wed, 17 Jun 2020 00:53:59 GMT
 VOLUME [/var/www/html]
-# Wed, 17 Jun 2020 00:53:59 GMT
-COPY file:23b9be1c8107c393ba35bb0d8b8cc2e5883059949fdfa06a4f02595b3f8a452b in /usr/local/bin/ 
-# Wed, 17 Jun 2020 00:53:59 GMT
+# Thu, 18 Jun 2020 21:02:45 GMT
+COPY file:f56966eeac957656aead5cb65d1531bfe029ddac03ee3ffefdafd2f0d4252925 in /usr/local/bin/ 
+# Thu, 18 Jun 2020 21:02:45 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Jun 2020 00:53:59 GMT
+# Thu, 18 Jun 2020 21:02:46 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1360,7 +1360,7 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 17 Jun 2020 00:56:15 GMT  
 		Size: 12.1 MB (12082684 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d34f6d3cbf9e3e95f27683ae4cab0a035a613d67d27133c453961f3dac4dfdeb`  
-		Last Modified: Wed, 17 Jun 2020 00:56:13 GMT  
-		Size: 3.9 KB (3919 bytes)  
+	-	`sha256:f5102b7e16b1eec4f25aad965511ad8f03f2095fe6acb48b0efbd156e2668eb3`  
+		Last Modified: Thu, 18 Jun 2020 21:05:17 GMT  
+		Size: 4.1 KB (4149 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
