@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f6cf8a984cec00395382338de648082ff69a4c66440ac51bf07c53899d9c6b42`
-- Created: `2020-05-06T18:54:19.622500595Z`
-- Virtual Size: ~ 273.66 Mb  
+- Image ID: `sha256:ec43ad1d93a3ec2fab8a9fbfd2748e1ab78c5c25d0daf5c268cb613746b37696`
+- Created: `2020-06-19T19:40:20.387434762Z`
+- Virtual Size: ~ 273.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -22,16 +22,16 @@
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.1.2-r0 description:
+alpine-baselayout-3.2.0-r6 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.1.2-r0 webpage:
+alpine-baselayout-3.2.0-r6 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.1.2-r0 installed size:
-405504
+alpine-baselayout-3.2.0-r6 installed size:
+409600
 
-alpine-baselayout-3.1.2-r0 license:
+alpine-baselayout-3.2.0-r6 license:
 GPL-2.0-only
 
 ```
@@ -39,16 +39,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-keys`
 
 ```console
-alpine-keys-2.1-r2 description:
+alpine-keys-2.2-r0 description:
 Public keys for Alpine Linux packages
 
-alpine-keys-2.1-r2 webpage:
+alpine-keys-2.2-r0 webpage:
 https://alpinelinux.org
 
-alpine-keys-2.1-r2 installed size:
-98304
+alpine-keys-2.2-r0 installed size:
+106496
 
-alpine-keys-2.1-r2 license:
+alpine-keys-2.2-r0 license:
 MIT
 
 ```
@@ -56,33 +56,33 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.10.4-r2 description:
+apk-tools-2.10.5-r1 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.10.4-r2 webpage:
-https://git.alpinelinux.org/cgit/apk-tools/
+apk-tools-2.10.5-r1 webpage:
+https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.10.4-r2 installed size:
+apk-tools-2.10.5-r1 installed size:
 262144
 
-apk-tools-2.10.4-r2 license:
-GPL2
+apk-tools-2.10.5-r1 license:
+GPL-2.0-only
 
 ```
 
 ### `apk` package: `bash`
 
 ```console
-bash-5.0.0-r0 description:
+bash-5.0.17-r0 description:
 The GNU Bourne Again shell
 
-bash-5.0.0-r0 webpage:
+bash-5.0.17-r0 webpage:
 https://www.gnu.org/software/bash/bash.html
 
-bash-5.0.0-r0 installed size:
+bash-5.0.17-r0 installed size:
 1200128
 
-bash-5.0.0-r0 license:
+bash-5.0.17-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -90,50 +90,50 @@ GPL-3.0-or-later
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.30.1-r3 description:
+busybox-1.31.1-r16 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.30.1-r3 webpage:
+busybox-1.31.1-r16 webpage:
 https://busybox.net/
 
-busybox-1.30.1-r3 installed size:
-942080
+busybox-1.31.1-r16 installed size:
+962560
 
-busybox-1.30.1-r3 license:
-GPL-2.0
+busybox-1.31.1-r16 license:
+GPL-2.0-only
 
 ```
 
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20191127-r0 description:
-Common CA certificates PEM files
+ca-certificates-20191127-r4 description:
+Common CA certificates PEM files from Mozilla
 
-ca-certificates-20191127-r0 webpage:
+ca-certificates-20191127-r4 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20191127-r0 installed size:
-741376
+ca-certificates-20191127-r4 installed size:
+688128
 
-ca-certificates-20191127-r0 license:
+ca-certificates-20191127-r4 license:
 MPL-2.0 GPL-2.0-or-later
 
 ```
 
-### `apk` package: `ca-certificates-cacert`
+### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-cacert-20191127-r0 description:
-Mozilla bundled certificates
+ca-certificates-bundle-20191127-r2 description:
+Pre generated bundle of Mozilla certificates
 
-ca-certificates-cacert-20191127-r0 webpage:
+ca-certificates-bundle-20191127-r2 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-cacert-20191127-r0 installed size:
-245760
+ca-certificates-bundle-20191127-r2 installed size:
+233472
 
-ca-certificates-cacert-20191127-r0 license:
+ca-certificates-bundle-20191127-r2 license:
 MPL-2.0 GPL-2.0-or-later
 
 ```
@@ -141,16 +141,16 @@ MPL-2.0 GPL-2.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-7.66.0-r0 description:
+curl-7.69.1-r0 description:
 URL retrival utility and library
 
-curl-7.66.0-r0 webpage:
+curl-7.69.1-r0 webpage:
 https://curl.haxx.se/
 
-curl-7.66.0-r0 installed size:
-225280
+curl-7.69.1-r0 installed size:
+229376
 
-curl-7.66.0-r0 license:
+curl-7.69.1-r0 license:
 MIT
 
 ```
@@ -172,20 +172,37 @@ LGPL
 
 ```
 
+### `apk` package: `libacl`
+
+```console
+libacl-2.2.53-r0 description:
+Dynamic library for access control list support
+
+libacl-2.2.53-r0 webpage:
+https://savannah.nongnu.org/projects/acl
+
+libacl-2.2.53-r0 installed size:
+45056
+
+libacl-2.2.53-r0 license:
+LGPL-2.1-or-later AND GPL-2.0-or-later
+
+```
+
 ### `apk` package: `libc-utils`
 
 ```console
-libc-utils-0.7.1-r0 description:
+libc-utils-0.7.2-r3 description:
 Meta package to pull in correct libc
 
-libc-utils-0.7.1-r0 webpage:
-http://alpinelinux.org
+libc-utils-0.7.2-r3 webpage:
+https://alpinelinux.org
 
-libc-utils-0.7.1-r0 installed size:
+libc-utils-0.7.2-r3 installed size:
 4096
 
-libc-utils-0.7.1-r0 license:
-BSD
+libc-utils-0.7.2-r3 license:
+BSD-2-Clause AND BSD-3-Clause
 
 ```
 
@@ -196,10 +213,10 @@ libcrypto1.1-1.1.1g-r0 description:
 Crypto library from openssl
 
 libcrypto1.1-1.1.1g-r0 webpage:
-https://www.openssl.org
+https://www.openssl.org/
 
 libcrypto1.1-1.1.1g-r0 installed size:
-2756608
+2760704
 
 libcrypto1.1-1.1.1g-r0 license:
 OpenSSL
@@ -209,16 +226,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.66.0-r0 description:
+libcurl-7.69.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-7.66.0-r0 webpage:
+libcurl-7.69.1-r0 webpage:
 https://curl.haxx.se/
 
-libcurl-7.66.0-r0 installed size:
-454656
+libcurl-7.69.1-r0 installed size:
+458752
 
-libcurl-7.66.0-r0 license:
+libcurl-7.69.1-r0 license:
 MIT
 
 ```
@@ -226,33 +243,33 @@ MIT
 ### `apk` package: `libintl`
 
 ```console
-libintl-0.19.8.1-r4 description:
+libintl-0.20.2-r0 description:
 GNU gettext runtime library
 
-libintl-0.19.8.1-r4 webpage:
+libintl-0.20.2-r0 webpage:
 https://www.gnu.org/software/gettext/gettext.html
 
-libintl-0.19.8.1-r4 installed size:
-73728
+libintl-0.20.2-r0 installed size:
+57344
 
-libintl-0.19.8.1-r4 license:
-LGPL-2.1+
+libintl-0.20.2-r0 license:
+LGPL-2.1-or-later
 
 ```
 
 ### `apk` package: `libproc`
 
 ```console
-libproc-3.3.15-r0 description:
+libproc-3.3.16-r0 description:
 Library for monitoring system and processes
 
-libproc-3.3.15-r0 webpage:
+libproc-3.3.16-r0 webpage:
 https://gitlab.com/procps-ng/procps
 
-libproc-3.3.15-r0 installed size:
+libproc-3.3.16-r0 installed size:
 86016
 
-libproc-3.3.15-r0 license:
+libproc-3.3.16-r0 license:
 GPL-2.0 LGPL-2.1+
 
 ```
@@ -264,10 +281,10 @@ libssl1.1-1.1.1g-r0 description:
 SSL shared libraries
 
 libssl1.1-1.1.1g-r0 webpage:
-https://www.openssl.org
+https://www.openssl.org/
 
 libssl1.1-1.1.1g-r0 installed size:
-536576
+540672
 
 libssl1.1-1.1.1g-r0 license:
 OpenSSL
@@ -277,16 +294,16 @@ OpenSSL
 ### `apk` package: `libtls-standalone`
 
 ```console
-libtls-standalone-2.9.1-r0 description:
+libtls-standalone-2.9.1-r1 description:
 libtls extricated from libressl sources
 
-libtls-standalone-2.9.1-r0 webpage:
+libtls-standalone-2.9.1-r1 webpage:
 https://www.libressl.org/
 
-libtls-standalone-2.9.1-r0 installed size:
+libtls-standalone-2.9.1-r1 installed size:
 110592
 
-libtls-standalone-2.9.1-r0 license:
+libtls-standalone-2.9.1-r1 license:
 ISC
 
 ```
@@ -294,16 +311,16 @@ ISC
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.22-r3 description:
+musl-1.1.24-r8 description:
 the musl c library (libc) implementation
 
-musl-1.1.22-r3 webpage:
-http://www.musl-libc.org/
+musl-1.1.24-r8 webpage:
+https://musl.libc.org/
 
-musl-1.1.22-r3 installed size:
-598016
+musl-1.1.24-r8 installed size:
+614400
 
-musl-1.1.22-r3 license:
+musl-1.1.24-r8 license:
 MIT
 
 ```
@@ -311,16 +328,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.22-r3 description:
+musl-utils-1.1.24-r8 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.22-r3 webpage:
-http://www.musl-libc.org/
+musl-utils-1.1.24-r8 webpage:
+https://musl.libc.org/
 
-musl-utils-1.1.22-r3 installed size:
-147456
+musl-utils-1.1.24-r8 installed size:
+151552
 
-musl-utils-1.1.22-r3 license:
+musl-utils-1.1.24-r8 license:
 MIT BSD GPL2+
 
 ```
@@ -328,16 +345,16 @@ MIT BSD GPL2+
 ### `apk` package: `ncurses-libs`
 
 ```console
-ncurses-libs-6.1_p20190518-r2 description:
+ncurses-libs-6.2_p20200523-r0 description:
 Ncurses libraries
 
-ncurses-libs-6.1_p20190518-r2 webpage:
-https://www.gnu.org/software/ncurses/
+ncurses-libs-6.2_p20200523-r0 webpage:
+https://invisible-island.net/ncurses/
 
-ncurses-libs-6.1_p20190518-r2 installed size:
-503808
+ncurses-libs-6.2_p20200523-r0 installed size:
+507904
 
-ncurses-libs-6.1_p20190518-r2 license:
+ncurses-libs-6.2_p20200523-r0 license:
 MIT
 
 ```
@@ -345,16 +362,16 @@ MIT
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.1_p20190518-r2 description:
+ncurses-terminfo-base-6.2_p20200523-r0 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.1_p20190518-r2 webpage:
-https://www.gnu.org/software/ncurses/
+ncurses-terminfo-base-6.2_p20200523-r0 webpage:
+https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.1_p20190518-r2 installed size:
-212992
+ncurses-terminfo-base-6.2_p20200523-r0 installed size:
+217088
 
-ncurses-terminfo-base-6.1_p20190518-r2 license:
+ncurses-terminfo-base-6.2_p20200523-r0 license:
 MIT
 
 ```
@@ -362,16 +379,16 @@ MIT
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.39.2-r0 description:
+nghttp2-libs-1.41.0-r0 description:
 Experimental HTTP/2 client, server and proxy (libraries)
 
-nghttp2-libs-1.39.2-r0 webpage:
+nghttp2-libs-1.41.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.39.2-r0 installed size:
-155648
+nghttp2-libs-1.41.0-r0 installed size:
+159744
 
-nghttp2-libs-1.39.2-r0 license:
+nghttp2-libs-1.41.0-r0 license:
 MIT
 
 ```
@@ -383,10 +400,10 @@ openssl-1.1.1g-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
 openssl-1.1.1g-r0 webpage:
-https://www.openssl.org
+https://www.openssl.org/
 
 openssl-1.1.1g-r0 installed size:
-679936
+675840
 
 openssl-1.1.1g-r0 license:
 OpenSSL
@@ -396,16 +413,16 @@ OpenSSL
 ### `apk` package: `procps`
 
 ```console
-procps-3.3.15-r0 description:
+procps-3.3.16-r0 description:
 Utilities for monitoring your system and processes on your system
 
-procps-3.3.15-r0 webpage:
+procps-3.3.16-r0 webpage:
 https://gitlab.com/procps-ng/procps
 
-procps-3.3.15-r0 installed size:
+procps-3.3.16-r0 installed size:
 557056
 
-procps-3.3.15-r0 license:
+procps-3.3.16-r0 license:
 GPL-2.0 LGPL-2.1+
 
 ```
@@ -413,84 +430,84 @@ GPL-2.0 LGPL-2.1+
 ### `apk` package: `readline`
 
 ```console
-readline-8.0.0-r0 description:
+readline-8.0.4-r0 description:
 GNU readline library
 
-readline-8.0.0-r0 webpage:
+readline-8.0.4-r0 webpage:
 https://tiswww.cwru.edu/php/chet/readline/rltop.html
 
-readline-8.0.0-r0 installed size:
+readline-8.0.4-r0 installed size:
 299008
 
-readline-8.0.0-r0 license:
-GPL
+readline-8.0.4-r0 license:
+GPL-2.0-or-later
 
 ```
 
 ### `apk` package: `scanelf`
 
 ```console
-scanelf-1.2.3-r0 description:
+scanelf-1.2.6-r0 description:
 Scan ELF binaries for stuff
 
-scanelf-1.2.3-r0 webpage:
+scanelf-1.2.6-r0 webpage:
 https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities
 
-scanelf-1.2.3-r0 installed size:
-98304
+scanelf-1.2.6-r0 installed size:
+94208
 
-scanelf-1.2.3-r0 license:
-GPL-2.0
+scanelf-1.2.6-r0 license:
+GPL-2.0-only
 
 ```
 
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.30.1-r3 description:
+ssl_client-1.31.1-r16 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.30.1-r3 webpage:
+ssl_client-1.31.1-r16 webpage:
 https://busybox.net/
 
-ssl_client-1.30.1-r3 installed size:
+ssl_client-1.31.1-r16 installed size:
 28672
 
-ssl_client-1.30.1-r3 license:
-GPL-2.0
+ssl_client-1.31.1-r16 license:
+GPL-2.0-only
 
 ```
 
 ### `apk` package: `tar`
 
 ```console
-tar-1.32-r0 description:
+tar-1.32-r1 description:
 Utility used to store, backup, and transport files
 
-tar-1.32-r0 webpage:
-https://www.gnu.org
+tar-1.32-r1 webpage:
+https://www.gnu.org/software/tar/
 
-tar-1.32-r0 installed size:
-491520
+tar-1.32-r1 installed size:
+499712
 
-tar-1.32-r0 license:
-GPL
+tar-1.32-r1 license:
+GPL-3.0-or-later
 
 ```
 
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.2.11-r1 description:
+zlib-1.2.11-r3 description:
 A compression/decompression Library
 
-zlib-1.2.11-r1 webpage:
-http://zlib.net
+zlib-1.2.11-r3 webpage:
+https://zlib.net/
 
-zlib-1.2.11-r1 installed size:
+zlib-1.2.11-r3 installed size:
 110592
 
-zlib-1.2.11-r1 license:
-zlib
+zlib-1.2.11-r3 license:
+Zlib
 
 ```
