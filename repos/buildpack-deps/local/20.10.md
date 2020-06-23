@@ -705,13 +705,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-de
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.19.7ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.7ubuntu3.dsc' dpkg_1.19.7ubuntu3.dsc 2254 SHA256:462ecb9f8af5612f7fbc1181484d8376569f95bb0dc7b7c53891819a0434e81a
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.7ubuntu3.tar.xz' dpkg_1.19.7ubuntu3.tar.xz 4731220 SHA256:598eba200da2e1b6097f11537c49e9ad7eb2292e148259bd76f9cd184f281853
-```
 
 ### `dpkg` source package: `dulwich=0.19.15-1build1`
 
@@ -1206,14 +1202,13 @@ Licenses: (parsed from: `/usr/share/doc/libgmp-dev/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gmp=2:6.2.0+dfsg-4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.2.0+dfsg-4.dsc' gmp_6.2.0+dfsg-4.dsc 2144 SHA256:4ca8c5bca982c78eb7679256a5d41b2c9363a6c3e3ee15ed765515bc328e9989
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.2.0+dfsg.orig.tar.xz' gmp_6.2.0+dfsg.orig.tar.xz 1842912 SHA256:5d7610449498a79aa62d4b9a8f6baaef91b8716726e1009e02b879962dff32ab
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.2.0+dfsg-4.debian.tar.xz' gmp_6.2.0+dfsg-4.debian.tar.xz 21120 SHA256:a0772595583dbcf2147e8457602ccf4b524b18227d6804c4a74050df64ece912
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gmp/2:6.2.0+dfsg-4/
+
 
 ### `dpkg` source package: `gnupg2=2.2.20-1ubuntu1`
 
@@ -2632,14 +2627,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxcrypt=1:4.4.15-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.15-1ubuntu1.dsc' libxcrypt_4.4.15-1ubuntu1.dsc 2212 SHA256:0fd3f2f108b13fa0e952e4b96cbf58c971fa9cacc76df4dc30038a0d4a5e768d
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.15.orig.tar.xz' libxcrypt_4.4.15.orig.tar.xz 354556 SHA256:a8b2335819084e16396a11189b8ea1393f28556b1d5118cb83fad2cc0d061146
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcrypt/libxcrypt_4.4.15-1ubuntu1.debian.tar.xz' libxcrypt_4.4.15-1ubuntu1.debian.tar.xz 5776 SHA256:cdd082b9a474574e0f6e025401fcf4a58bdfb1d954ef6d0b9ea38014b990743a
-```
 
 ### `dpkg` source package: `libxdmcp=1:1.1.3-0ubuntu1`
 
@@ -3039,14 +3029,13 @@ Licenses: (parsed from: `/usr/share/doc/libmpfr6/copyright`)
 - `GFDL-1.2`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mpfr4=4.0.2-1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.0.2-1.dsc' mpfr4_4.0.2-1.dsc 1972 SHA256:9021ec2462ed0e73ea1379266740473abf5f826be819226497729f6c6b02e672
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.0.2.orig.tar.xz' mpfr4_4.0.2.orig.tar.xz 1441996 SHA256:1d3be708604eae0e42d578ba93b390c2a145f17743a744d8f3f8c2ad5855a38a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.0.2-1.debian.tar.xz' mpfr4_4.0.2-1.debian.tar.xz 10544 SHA256:99c4d35654f33340f0efdec67142a34753157b20334cadad9018f5eab29738da
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/mpfr4/4.0.2-1/
+
 
 ### `dpkg` source package: `mysql-8.0=8.0.19-0ubuntu5`
 
@@ -3284,14 +3273,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.50+dfsg-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.50+dfsg-1ubuntu1.dsc' openldap_2.4.50+dfsg-1ubuntu1.dsc 3154 SHA256:f2d066a448a3f8b9c8cc59c626416f6a9536b4d17c5b78ca01ec56169204a652
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.50+dfsg.orig.tar.gz' openldap_2.4.50+dfsg.orig.tar.gz 4891077 SHA256:77e5be35661d2fb51c4425fc5985c668fa0e53cbc83a6c0962470fd240fd7655
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.50+dfsg-1ubuntu1.debian.tar.xz' openldap_2.4.50+dfsg-1ubuntu1.debian.tar.xz 181008 SHA256:529215000113332cfbd70079fd1c15a126bde4c179e147f20d182f02887e0112
-```
 
 ### `dpkg` source package: `openssh=1:8.3p1-1`
 
@@ -3519,15 +3503,13 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.30/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.30.2-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.30.2-1.dsc' perl_5.30.2-1.dsc 2868 SHA256:b7f57b8075f40b9d5184b3a68a96a15a01c87d25087b19f7f9ed7e60a784f6d0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.30.2.orig-regen-configure.tar.gz' perl_5.30.2.orig-regen-configure.tar.gz 870970 SHA256:99174174fbfc550f801076ab8a1a5831c92f75c1b81e553150351f14a111dcf8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.30.2.orig.tar.xz' perl_5.30.2.orig.tar.xz 12373480 SHA256:a1aa88bd6fbbdc2e82938afbb76c408b0ea847317737b712dc196cc7907a5259
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.30.2-1.debian.tar.xz' perl_5.30.2-1.debian.tar.xz 162372 SHA256:dfbf0e2a1d9840beca5098bf728e05e554aeb616e77f9e63bbc52bfad7a852e9
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/perl/5.30.2-1/
+
 
 ### `dpkg` source package: `pinentry=1.1.0-3build1`
 
@@ -4042,15 +4024,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `Unicode`
 - `Utfwidth`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.13.0-4
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.13.0-4.dsc' subversion_1.13.0-4.dsc 3647 SHA256:0ae682543686f68432fc424abb4e9d7a2b9148d074e1faa1c0157c3418becb78
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.13.0.orig.tar.gz' subversion_1.13.0.orig.tar.gz 11544359 SHA256:daad440c03b8a86fcca804ea82217bb1902cfcae1b7d28c624143c58dcb96931
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.13.0.orig.tar.gz.asc' subversion_1.13.0.orig.tar.gz.asc 2954 SHA256:ed4f87b947b8172fcaa4c741d8ccc7929914b18cf1ccffc32b4f159fdee3070d
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.13.0-4.debian.tar.xz' subversion_1.13.0-4.debian.tar.xz 421148 SHA256:f3c74ab64fa750cc4db94510dcae0fe7291e1e56143c70c81867b684fd535a49
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/subversion/1.13.0-4/
+
 
 ### `dpkg` source package: `systemd=245.5-3ubuntu1`
 
@@ -4070,14 +4050,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=245.5-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.5-3ubuntu1.dsc' systemd_245.5-3ubuntu1.dsc 5284 SHA256:cb065981f938c77ad1037bba019239511220a57430a7441de9fdce4a1365e1ba
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.5.orig.tar.gz' systemd_245.5.orig.tar.gz 9020836 SHA256:b754d75617665a53bd0a1e8f5ec526b383f17e1cc06d1056399e5859e0b6fe06
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.5-3ubuntu1.debian.tar.xz' systemd_245.5-3ubuntu1.debian.tar.xz 210644 SHA256:bd5f232cea5a749f9a9b7f81dca076b27776e4f014accabb678a4d6a2dcaa1d4
-```
 
 ### `dpkg` source package: `sysvinit=2.96-3ubuntu1`
 

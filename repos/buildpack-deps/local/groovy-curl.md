@@ -66,13 +66,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.1.1.dsc' apt_2.1.1.dsc 2756 SHA256:dcd48c2691b74c277082ac6f38350588c37cbb5ad860b1fda2adf45d5c31994b
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.1.1.tar.xz' apt_2.1.1.tar.xz 2169316 SHA256:f49d33d9376eda440e8176e6171cb0edb070b2cfab9e27aa81aef6b7d46a5b49
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/2.1.1/
+
 
 ### `dpkg` source package: `attr=1:2.4.48-5`
 
@@ -1143,14 +1143,13 @@ Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 - `GPL-2+`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libzstd=1.4.4+dfsg-3
-'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4+dfsg-3.dsc' libzstd_1.4.4+dfsg-3.dsc 2266 SHA256:f6e3cc2b022b9812daca4f427a00fc6e109e6e1e72e64d6a254add040853b110
-'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4+dfsg.orig.tar.xz' libzstd_1.4.4+dfsg.orig.tar.xz 1357144 SHA256:be9f9bfd3f6816f21e1108869a9acad6efdc4882ed3f7a1f58ec752f67864890
-'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4+dfsg-3.debian.tar.xz' libzstd_1.4.4+dfsg-3.debian.tar.xz 16068 SHA256:f7fec89f1fae04dfa551d124973167e09e84c864a25961aa20727cc91277b0e6
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libzstd/1.4.4+dfsg-3/
+
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
 
@@ -1541,14 +1540,9 @@ Licenses: (parsed from: `/usr/share/doc/libprocps8/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:3.3.16-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16-4ubuntu1.dsc' procps_3.3.16-4ubuntu1.dsc 2248 SHA256:612c08acd98c76c493b591253ddbec91645140c1bef5e6e735ae9c51eeffd7c5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16.orig.tar.xz' procps_3.3.16.orig.tar.xz 621892 SHA256:2919299e579d29be3501a802dfe77e6f23be228149d0396d83d0ffbe8fa7efbf
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16-4ubuntu1.debian.tar.xz' procps_3.3.16-4ubuntu1.debian.tar.xz 33492 SHA256:bd3fd7f8f545ff0679bceaacc13c9dc74139fb983fe44da03edf9d7763b70ad5
-```
 
 ### `dpkg` source package: `readline=8.0-4`
 
@@ -1752,13 +1746,9 @@ Licenses: (parsed from: `/usr/share/doc/ubuntu-keyring/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ubuntu-keyring=2020.02.11.2
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2020.02.11.2.dsc' ubuntu-keyring_2020.02.11.2.dsc 1863 SHA256:f8544b69a2e982c3f588a588b306ae8f6eefea8194324680c0676244e251314f
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2020.02.11.2.tar.gz' ubuntu-keyring_2020.02.11.2.tar.gz 39180 SHA256:d2ee9deedb99f5a2b8bee2c0f9e85834638bfbc46d7a59edba7ce2bb6229bcec
-```
 
 ### `dpkg` source package: `util-linux=2.34-0.1ubuntu9`
 
