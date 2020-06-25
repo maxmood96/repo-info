@@ -2207,9 +2207,14 @@ Licenses: (parsed from: `/usr/share/doc/libignition-fuel-tools4/copyright`, `/us
 - `Apache`
 - `Apache-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ignition-fuel-tools4=4.1.0-1~focal
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-fuel-tools4/ignition-fuel-tools4_4.1.0-1~focal.dsc' ignition-fuel-tools4_4.1.0-1~focal.dsc 1395 SHA256:0e9a423ea35b96896f3ee8a717276d27aeb01d820394e543a9e0160e57d3da84
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-fuel-tools4/ignition-fuel-tools4_4.1.0.orig.tar.bz2' ignition-fuel-tools4_4.1.0.orig.tar.bz2 348779 SHA256:81a82e472d59ccf852b7869f39ba70be2f1bf91e3ea95ef0503ca7ea55189d9c
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-fuel-tools4/ignition-fuel-tools4_4.1.0-1~focal.debian.tar.xz' ignition-fuel-tools4_4.1.0-1~focal.debian.tar.xz 1624 SHA256:e057f911e8ea9854fd34af9ccaf5e45fe2530c36b9441d0c60081585e78ffb5e
+```
 
 ### `dpkg` source package: `ignition-math6=6.4.0-1~focal`
 
@@ -2290,9 +2295,14 @@ Licenses: (parsed from: `/usr/share/doc/libignition-transport8/copyright`, `/usr
 - `Apache-2.0`
 - `BSD-3-clause`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ignition-transport8=8.0.0-1~focal
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-transport8/ignition-transport8_8.0.0-1~focal.dsc' ignition-transport8_8.0.0-1~focal.dsc 1769 SHA256:4c80f807e54935efa25310fdfc68d6d32b2c72eeac27f02260b13aee54f43556
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-transport8/ignition-transport8_8.0.0.orig.tar.bz2' ignition-transport8_8.0.0.orig.tar.bz2 438451 SHA256:d0963783c4db87fa71bacebd424c573331fed5d713d610b20b3552effe6d3ce3
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-transport8/ignition-transport8_8.0.0-1~focal.debian.tar.xz' ignition-transport8_8.0.0-1~focal.debian.tar.xz 2996 SHA256:2e8ca9cb6412e82f95307b1043ce951a851e62373a1b151dcb618a88d5eefd7e
+```
 
 ### `dpkg` source package: `ilmbase=2.3.0-6build1`
 
@@ -5076,9 +5086,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=5.4.0-37.41
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-37.41.dsc' linux_5.4.0-37.41.dsc 7070 SHA256:43fc63d39e9383ab24f7c5806ab83b3eac738f4a770e1d456c994f13465053ea
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA256:805f3ed93854317814c59caf2dbfd2097745685f95c8c18b509c9347dcc7d51f
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-37.41.diff.gz' linux_5.4.0-37.41.diff.gz 4517207 SHA256:b6dd98e0dfee87480e64db19b96fcf097f38effd07195c0dd3c5020aec1ec7eb
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-37.41.dsc' linux_5.4.0-37.41.dsc 7070 SHA256:43fc63d39e9383ab24f7c5806ab83b3eac738f4a770e1d456c994f13465053ea
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA256:805f3ed93854317814c59caf2dbfd2097745685f95c8c18b509c9347dcc7d51f
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-37.41.diff.gz' linux_5.4.0-37.41.diff.gz 4517207 SHA256:b6dd98e0dfee87480e64db19b96fcf097f38effd07195c0dd3c5020aec1ec7eb
 ```
 
 ### `dpkg` source package: `llvm-toolchain-9=1:9.0.1-12`
@@ -6966,9 +6976,14 @@ Licenses: (parsed from: `/usr/share/doc/libsdformat9/copyright`, `/usr/share/doc
 - `Apache-2.0`
 - `BSD-3-clause`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sdformat9=9.2.0-1~focal
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat9/sdformat9_9.2.0-1~focal.dsc' sdformat9_9.2.0-1~focal.dsc 1376 SHA256:337ee9cc045a1bfaf9f073c044eca2778833374d9b4a3cebbd83b637ee078523
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat9/sdformat9_9.2.0.orig.tar.bz2' sdformat9_9.2.0.orig.tar.bz2 644484 SHA256:18193e571877d06b679a476f52329f326d02b5f70bc90c7cdc92f7dae2f5d784
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat9/sdformat9_9.2.0-1~focal.debian.tar.xz' sdformat9_9.2.0-1~focal.debian.tar.xz 3348 SHA256:627ee60f583591fabe6497e5ae59975fe3df11971c75fb1002ba620ff04ffb24
+```
 
 ### `dpkg` source package: `sed=4.7-1`
 
