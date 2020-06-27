@@ -1,27 +1,25 @@
-# `jetty:9.4.27`
+# `jetty:9.4.30`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cc7100647695e3917da6a103cd4852e50c22f3f3fdc4ea6a51f9c1dfdd8daaf5`
-- Created: `2020-03-10T22:59:00.55930753Z`
-- Virtual Size: ~ 501.72 Mb  
+- Image ID: `sha256:e897994058a98b629ec898a286f5768b9e5bf542199de402935bf1c87f0f6936`
+- Created: `2020-06-24T20:24:23.963582336Z`
+- Virtual Size: ~ 508.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["java","-jar","/usr/local/jetty/start.jar"]`
 - Environment:
-  - `PATH=/usr/local/jetty/bin:/usr/java/openjdk-13/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/usr/local/jetty/bin:/usr/java/openjdk-14/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.UTF-8`
-  - `JAVA_HOME=/usr/java/openjdk-13`
-  - `JAVA_VERSION=13.0.2`
-  - `JAVA_URL=https://download.java.net/java/GA/jdk13.0.2/d4173c853231432d94f001e99d882ca7/8/GPL/openjdk-13.0.2_linux-x64_bin.tar.gz`
-  - `JAVA_SHA256=acc7a6aabced44e62ec3b83e3b5959df2b1aa6b3d610d58ee45f0c21a7821a71`
-  - `JETTY_VERSION=9.4.27.v20200227`
+  - `JAVA_HOME=/usr/java/openjdk-14`
+  - `JAVA_VERSION=14.0.1`
+  - `JETTY_VERSION=9.4.30.v20200611`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
   - `TMPDIR=/tmp/jetty`
-  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.27.v20200227/jetty-home-9.4.27.v20200227.tar.gz`
-  - `JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	FBA2B18D238AB852DF95745C76157BDF03D0DCD6 	5C9579B3DB2E506429319AAEF33B071B29559E1E`
+  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.30.v20200611/jetty-home-9.4.30.v20200611.tar.gz`
+  - `JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	FBA2B18D238AB852DF95745C76157BDF03D0DCD6 	5C9579B3DB2E506429319AAEF33B071B29559E1E 	F254B35617DC255D9344BCFA873A8E86B4372146`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -47,26 +45,26 @@ $ yumdownloader --quiet --source --urls basesystem-10.0-7.0.1.el7.noarch
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/basesystem-10.0-7.0.1.el7.src.rpm
 ```
 
-### `rpm` package: `bash-4.2.46-33.el7.x86_64`
+### `rpm` package: `bash-4.2.46-34.el7.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls bash-4.2.46-33.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/bash-4.2.46-33.el7.src.rpm
+$ yumdownloader --quiet --source --urls bash-4.2.46-34.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/bash-4.2.46-34.el7.src.rpm
 ```
 
-### `rpm` package: `binutils-2.27-41.base.0.7.el7_7.2.x86_64`
+### `rpm` package: `binutils-2.27-43.base.0.1.el7_8.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls binutils-2.27-41.base.0.7.el7_7.2
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/binutils-2.27-41.base.0.7.el7_7.2.src.rpm
+$ yumdownloader --quiet --source --urls binutils-2.27-43.base.0.1.el7_8.1
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/binutils-2.27-43.base.0.1.el7_8.1.src.rpm
 ```
 
 ### `rpm` package: `bzip2-libs-1.0.6-13.el7.x86_64`
@@ -124,15 +122,15 @@ $ yumdownloader --quiet --source --urls cpio-2.11-27.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/cpio-2.11-27.el7.src.rpm
 ```
 
-### `rpm` package: `curl-7.29.0-54.0.5.el7_7.2.x86_64`
+### `rpm` package: `curl-7.29.0-57.0.1.el7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls curl-7.29.0-54.0.5.el7_7.2
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/curl-7.29.0-54.0.5.el7_7.2.src.rpm
+$ yumdownloader --quiet --source --urls curl-7.29.0-57.0.1.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/curl-7.29.0-57.0.1.el7.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.26-23.el7.x86_64`
@@ -179,37 +177,37 @@ $ yumdownloader --quiet --source --urls diffutils-3.3-5.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/diffutils-3.3-5.el7.src.rpm
 ```
 
-### `rpm` package: `elfutils-libelf-0.176-2.el7.x86_64`
+### `rpm` package: `elfutils-libelf-0.176-4.el7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ or LGPLv3+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls elfutils-libelf-0.176-2.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/elfutils-0.176-2.el7.src.rpm
+$ yumdownloader --quiet --source --urls elfutils-libelf-0.176-4.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/elfutils-0.176-4.el7.src.rpm
 ```
 
-### `rpm` package: `expat-2.1.0-10.el7_3.x86_64`
+### `rpm` package: `expat-2.1.0-11.el7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls expat-2.1.0-10.el7_3
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/expat-2.1.0-10.el7_3.src.rpm
+$ yumdownloader --quiet --source --urls expat-2.1.0-11.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/expat-2.1.0-11.el7.src.rpm
 ```
 
-### `rpm` package: `file-libs-5.11-35.el7.x86_64`
+### `rpm` package: `file-libs-5.11-36.el7.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls file-libs-5.11-35.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/file-5.11-35.el7.src.rpm
+$ yumdownloader --quiet --source --urls file-libs-5.11-36.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/file-5.11-36.el7.src.rpm
 ```
 
 ### `rpm` package: `filesystem-3.2-25.el7.x86_64`
@@ -300,26 +298,26 @@ $ yumdownloader --quiet --source --urls glib2-2.56.1-5.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/glib2-2.56.1-5.el7.src.rpm
 ```
 
-### `rpm` package: `glibc-2.17-292.0.1.el7.x86_64`
+### `rpm` package: `glibc-2.17-307.0.1.el7.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls glibc-2.17-292.0.1.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/glibc-2.17-292.0.1.el7.src.rpm
+$ yumdownloader --quiet --source --urls glibc-2.17-307.0.1.el7.1
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/glibc-2.17-307.0.1.el7.1.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.17-292.0.1.el7.x86_64`
+### `rpm` package: `glibc-common-2.17-307.0.1.el7.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls glibc-common-2.17-292.0.1.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/glibc-2.17-292.0.1.el7.src.rpm
+$ yumdownloader --quiet --source --urls glibc-common-2.17-307.0.1.el7.1
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/glibc-2.17-307.0.1.el7.1.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.0.0-15.el7.x86_64`
@@ -416,26 +414,26 @@ $ yumdownloader --quiet --source --urls keyutils-libs-1.5.8-3.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/keyutils-1.5.8-3.el7.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.15.1-37.el7_7.2.x86_64`
+### `rpm` package: `krb5-libs-1.15.1-46.el7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls krb5-libs-1.15.1-37.el7_7.2
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/krb5-1.15.1-37.el7_7.2.src.rpm
+$ yumdownloader --quiet --source --urls krb5-libs-1.15.1-46.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/krb5-1.15.1-46.el7.src.rpm
 ```
 
-### `rpm` package: `libacl-2.2.51-14.el7.x86_64`
+### `rpm` package: `libacl-2.2.51-15.el7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libacl-2.2.51-14.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/acl-2.2.51-14.el7.src.rpm
+$ yumdownloader --quiet --source --urls libacl-2.2.51-15.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/acl-2.2.51-15.el7.src.rpm
 ```
 
 ### `rpm` package: `libassuan-2.1.0-3.el7.x86_64`
@@ -460,26 +458,26 @@ $ yumdownloader --quiet --source --urls libattr-2.4.46-13.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/attr-2.4.46-13.el7.src.rpm
 ```
 
-### `rpm` package: `libblkid-2.23.2-61.el7_7.1.x86_64`
+### `rpm` package: `libblkid-2.23.2-63.0.1.el7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libblkid-2.23.2-61.el7_7.1
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/util-linux-2.23.2-61.el7_7.1.src.rpm
+$ yumdownloader --quiet --source --urls libblkid-2.23.2-63.0.1.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/util-linux-2.23.2-63.0.1.el7.src.rpm
 ```
 
-### `rpm` package: `libcap-2.22-10.el7.x86_64`
+### `rpm` package: `libcap-2.22-11.el7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libcap-2.22-10.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/libcap-2.22-10.el7.src.rpm
+$ yumdownloader --quiet --source --urls libcap-2.22-11.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/libcap-2.22-11.el7.src.rpm
 ```
 
 ### `rpm` package: `libcap-ng-0.7.5-4.el7.x86_64`
@@ -493,26 +491,26 @@ $ yumdownloader --quiet --source --urls libcap-ng-0.7.5-4.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/libcap-ng-0.7.5-4.el7.src.rpm
 ```
 
-### `rpm` package: `libcom_err-1.42.9-16.el7.x86_64`
+### `rpm` package: `libcom_err-1.42.9-17.el7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libcom_err-1.42.9-16.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/e2fsprogs-1.42.9-16.el7.src.rpm
+$ yumdownloader --quiet --source --urls libcom_err-1.42.9-17.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/e2fsprogs-1.42.9-17.el7.src.rpm
 ```
 
-### `rpm` package: `libcurl-7.29.0-54.0.5.el7_7.2.x86_64`
+### `rpm` package: `libcurl-7.29.0-57.0.1.el7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libcurl-7.29.0-54.0.5.el7_7.2
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/curl-7.29.0-54.0.5.el7_7.2.src.rpm
+$ yumdownloader --quiet --source --urls libcurl-7.29.0-57.0.1.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/curl-7.29.0-57.0.1.el7.src.rpm
 ```
 
 ### `rpm` package: `libdb-5.3.21-25.el7.x86_64`
@@ -537,15 +535,15 @@ $ yumdownloader --quiet --source --urls libdb-utils-5.3.21-25.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/libdb-5.3.21-25.el7.src.rpm
 ```
 
-### `rpm` package: `libffi-3.0.13-18.el7.x86_64`
+### `rpm` package: `libffi-3.0.13-19.el7.x86_64`
 
 Licenses (from `rpm --query`): MIT and Public Domain
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libffi-3.0.13-18.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/libffi-3.0.13-18.el7.src.rpm
+$ yumdownloader --quiet --source --urls libffi-3.0.13-19.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/libffi-3.0.13-19.el7.src.rpm
 ```
 
 ### `rpm` package: `libgcc-4.8.5-39.0.3.el7.x86_64`
@@ -592,15 +590,15 @@ $ yumdownloader --quiet --source --urls libidn-1.28-4.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/libidn-1.28-4.el7.src.rpm
 ```
 
-### `rpm` package: `libmount-2.23.2-61.el7_7.1.x86_64`
+### `rpm` package: `libmount-2.23.2-63.0.1.el7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libmount-2.23.2-61.el7_7.1
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/util-linux-2.23.2-61.el7_7.1.src.rpm
+$ yumdownloader --quiet --source --urls libmount-2.23.2-63.0.1.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/util-linux-2.23.2-63.0.1.el7.src.rpm
 ```
 
 ### `rpm` package: `libpng-1.5.13-7.el7_2.x86_64`
@@ -614,15 +612,15 @@ $ yumdownloader --quiet --source --urls libpng-1.5.13-7.el7_2
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/libpng-1.5.13-7.el7_2.src.rpm
 ```
 
-### `rpm` package: `libselinux-2.5-14.1.el7.x86_64`
+### `rpm` package: `libselinux-2.5-15.el7.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libselinux-2.5-14.1.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/libselinux-2.5-14.1.el7.src.rpm
+$ yumdownloader --quiet --source --urls libselinux-2.5-15.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/libselinux-2.5-15.el7.src.rpm
 ```
 
 ### `rpm` package: `libsemanage-2.5-14.el7.x86_64`
@@ -680,15 +678,15 @@ $ yumdownloader --quiet --source --urls libtasn1-4.10-1.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/libtasn1-4.10-1.el7.src.rpm
 ```
 
-### `rpm` package: `libuuid-2.23.2-61.el7_7.1.x86_64`
+### `rpm` package: `libuuid-2.23.2-63.0.1.el7.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libuuid-2.23.2-61.el7_7.1
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/util-linux-2.23.2-61.el7_7.1.src.rpm
+$ yumdownloader --quiet --source --urls libuuid-2.23.2-63.0.1.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/util-linux-2.23.2-63.0.1.el7.src.rpm
 ```
 
 ### `rpm` package: `libverto-0.2.5-4.el7.x86_64`
@@ -702,26 +700,26 @@ $ yumdownloader --quiet --source --urls libverto-0.2.5-4.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/libverto-0.2.5-4.el7.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.1-6.0.1.el7_2.3.x86_64`
+### `rpm` package: `libxml2-2.9.1-6.0.1.el7.4.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libxml2-2.9.1-6.0.1.el7_2.3
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/libxml2-2.9.1-6.0.1.el7_2.3.src.rpm
+$ yumdownloader --quiet --source --urls libxml2-2.9.1-6.0.1.el7.4
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/libxml2-2.9.1-6.0.1.el7.4.src.rpm
 ```
 
-### `rpm` package: `libxml2-python-2.9.1-6.0.1.el7_2.3.x86_64`
+### `rpm` package: `libxml2-python-2.9.1-6.0.1.el7.4.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libxml2-python-2.9.1-6.0.1.el7_2.3
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/libxml2-2.9.1-6.0.1.el7_2.3.src.rpm
+$ yumdownloader --quiet --source --urls libxml2-python-2.9.1-6.0.1.el7.4
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/libxml2-2.9.1-6.0.1.el7.4.src.rpm
 ```
 
 ### `rpm` package: `lua-5.1.4-15.el7.x86_64`
@@ -878,26 +876,26 @@ $ yumdownloader --quiet --source --urls openssl-libs-1.0.2k-19.0.1.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/openssl-1.0.2k-19.0.1.el7.src.rpm
 ```
 
-### `rpm` package: `oraclelinux-release-7.7-1.0.5.el7.x86_64`
+### `rpm` package: `oraclelinux-release-7.8-1.0.7.el7.x86_64`
 
 Licenses (from `rpm --query`): GPL
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls oraclelinux-release-7.7-1.0.5.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/oraclelinux-release-7.7-1.0.5.el7.src.rpm
+$ yumdownloader --quiet --source --urls oraclelinux-release-7.8-1.0.7.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/oraclelinux-release-7.8-1.0.7.el7.src.rpm
 ```
 
-### `rpm` package: `oraclelinux-release-el7-1.0-8.el7.x86_64`
+### `rpm` package: `oraclelinux-release-el7-1.0-11.el7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls oraclelinux-release-el7-1.0-8.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/oraclelinux-release-el7-1.0-8.el7.src.rpm
+$ yumdownloader --quiet --source --urls oraclelinux-release-el7-1.0-11.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/oraclelinux-release-el7-1.0-11.el7.src.rpm
 ```
 
 ### `rpm` package: `p11-kit-0.23.5-3.el7.x86_64`
@@ -988,15 +986,15 @@ $ yumdownloader --quiet --source --urls pyliblzma-0.5.3-11.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/pyliblzma-0.5.3-11.el7.src.rpm
 ```
 
-### `rpm` package: `python-2.7.5-86.0.3.el7.x86_64`
+### `rpm` package: `python-2.7.5-88.0.1.el7.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls python-2.7.5-86.0.3.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/python-2.7.5-86.0.3.el7.src.rpm
+$ yumdownloader --quiet --source --urls python-2.7.5-88.0.1.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/python-2.7.5-88.0.1.el7.src.rpm
 ```
 
 ### `rpm` package: `python-chardet-2.2.1-3.el7.noarch`
@@ -1032,15 +1030,15 @@ $ yumdownloader --quiet --source --urls python-kitchen-1.1.1-5.el7.noarch
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/python-kitchen-1.1.1-5.el7.src.rpm
 ```
 
-### `rpm` package: `python-libs-2.7.5-86.0.3.el7.x86_64`
+### `rpm` package: `python-libs-2.7.5-88.0.1.el7.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls python-libs-2.7.5-86.0.3.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/python-2.7.5-86.0.3.el7.src.rpm
+$ yumdownloader --quiet --source --urls python-libs-2.7.5-88.0.1.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/python-2.7.5-88.0.1.el7.src.rpm
 ```
 
 ### `rpm` package: `python-pycurl-7.19.0-19.el7.x86_64`
@@ -1054,15 +1052,15 @@ $ yumdownloader --quiet --source --urls python-pycurl-7.19.0-19.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/python-pycurl-7.19.0-19.el7.src.rpm
 ```
 
-### `rpm` package: `python-urlgrabber-3.10-9.el7.noarch`
+### `rpm` package: `python-urlgrabber-3.10-10.el7.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls python-urlgrabber-3.10-9.el7.noarch
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/python-urlgrabber-3.10-9.el7.src.rpm
+$ yumdownloader --quiet --source --urls python-urlgrabber-3.10-10.el7.noarch
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/python-urlgrabber-3.10-10.el7.src.rpm
 ```
 
 ### `rpm` package: `pyxattr-0.5.1-5.el7.x86_64`
@@ -1087,81 +1085,81 @@ $ yumdownloader --quiet --source --urls readline-6.2-11.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/readline-6.2-11.el7.src.rpm
 ```
 
-### `rpm` package: `redhat-release-server-7.7-10.0.1.el7.x86_64`
+### `rpm` package: `redhat-release-server-7.8-2.0.1.el7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls redhat-release-server-7.7-10.0.1.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/redhat-release-server-7.7-10.0.1.el7.src.rpm
+$ yumdownloader --quiet --source --urls redhat-release-server-7.8-2.0.1.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/redhat-release-server-7.8-2.0.1.el7.src.rpm
 ```
 
-### `rpm` package: `rpm-4.11.3-40.el7.x86_64`
+### `rpm` package: `rpm-4.11.3-43.el7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls rpm-4.11.3-40.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/rpm-4.11.3-40.el7.src.rpm
+$ yumdownloader --quiet --source --urls rpm-4.11.3-43.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/rpm-4.11.3-43.el7.src.rpm
 ```
 
-### `rpm` package: `rpm-build-libs-4.11.3-40.el7.x86_64`
+### `rpm` package: `rpm-build-libs-4.11.3-43.el7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls rpm-build-libs-4.11.3-40.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/rpm-4.11.3-40.el7.src.rpm
+$ yumdownloader --quiet --source --urls rpm-build-libs-4.11.3-43.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/rpm-4.11.3-43.el7.src.rpm
 ```
 
-### `rpm` package: `rpm-libs-4.11.3-40.el7.x86_64`
+### `rpm` package: `rpm-libs-4.11.3-43.el7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls rpm-libs-4.11.3-40.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/rpm-4.11.3-40.el7.src.rpm
+$ yumdownloader --quiet --source --urls rpm-libs-4.11.3-43.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/rpm-4.11.3-43.el7.src.rpm
 ```
 
-### `rpm` package: `rpm-python-4.11.3-40.el7.x86_64`
+### `rpm` package: `rpm-python-4.11.3-43.el7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls rpm-python-4.11.3-40.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/rpm-4.11.3-40.el7.src.rpm
+$ yumdownloader --quiet --source --urls rpm-python-4.11.3-43.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/rpm-4.11.3-43.el7.src.rpm
 ```
 
-### `rpm` package: `sed-4.2.2-5.el7.x86_64`
+### `rpm` package: `sed-4.2.2-6.el7.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls sed-4.2.2-5.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/sed-4.2.2-5.el7.src.rpm
+$ yumdownloader --quiet --source --urls sed-4.2.2-6.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/sed-4.2.2-6.el7.src.rpm
 ```
 
-### `rpm` package: `setup-2.8.71-10.el7.noarch`
+### `rpm` package: `setup-2.8.71-11.el7.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls setup-2.8.71-10.el7.noarch
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/setup-2.8.71-10.el7.src.rpm
+$ yumdownloader --quiet --source --urls setup-2.8.71-11.el7.noarch
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/setup-2.8.71-11.el7.src.rpm
 ```
 
 ### `rpm` package: `shadow-utils-4.6-5.0.1.el7.x86_64`
@@ -1175,15 +1173,15 @@ $ yumdownloader --quiet --source --urls shadow-utils-4.6-5.0.1.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/shadow-utils-4.6-5.0.1.el7.src.rpm
 ```
 
-### `rpm` package: `shared-mime-info-1.8-4.el7.x86_64`
+### `rpm` package: `shared-mime-info-1.8-5.el7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls shared-mime-info-1.8-4.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/shared-mime-info-1.8-4.el7.src.rpm
+$ yumdownloader --quiet --source --urls shared-mime-info-1.8-5.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/shared-mime-info-1.8-5.el7.src.rpm
 ```
 
 ### `rpm` package: `sqlite-3.7.17-8.el7_7.1.x86_64`
@@ -1208,15 +1206,15 @@ $ yumdownloader --quiet --source --urls tar-1.26-35.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/tar-1.26-35.el7.src.rpm
 ```
 
-### `rpm` package: `tzdata-2019c-1.el7.noarch`
+### `rpm` package: `tzdata-2020a-1.el7.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls tzdata-2019c-1.el7.noarch
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/tzdata-2019c-1.el7.src.rpm
+$ yumdownloader --quiet --source --urls tzdata-2020a-1.el7.noarch
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/tzdata-2020a-1.el7.src.rpm
 ```
 
 ### `rpm` package: `ustr-1.0.4-16.el7.x86_64`
@@ -1241,15 +1239,15 @@ $ yumdownloader --quiet --source --urls xz-libs-5.2.2-1.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/xz-5.2.2-1.el7.src.rpm
 ```
 
-### `rpm` package: `yum-3.4.3-163.0.1.el7.noarch`
+### `rpm` package: `yum-3.4.3-167.0.1.el7.noarch`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls yum-3.4.3-163.0.1.el7.noarch
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/yum-3.4.3-163.0.1.el7.src.rpm
+$ yumdownloader --quiet --source --urls yum-3.4.3-167.0.1.el7.noarch
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/yum-3.4.3-167.0.1.el7.src.rpm
 ```
 
 ### `rpm` package: `yum-metadata-parser-1.1.4-10.el7.x86_64`
@@ -1263,26 +1261,26 @@ $ yumdownloader --quiet --source --urls yum-metadata-parser-1.1.4-10.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/yum-metadata-parser-1.1.4-10.el7.src.rpm
 ```
 
-### `rpm` package: `yum-plugin-ovl-1.1.31-52.0.1.el7.noarch`
+### `rpm` package: `yum-plugin-ovl-1.1.31-54.0.1.el7_8.noarch`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls yum-plugin-ovl-1.1.31-52.0.1.el7.noarch
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/yum-utils-1.1.31-52.0.1.el7.src.rpm
+$ yumdownloader --quiet --source --urls yum-plugin-ovl-1.1.31-54.0.1.el7_8.noarch
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/yum-utils-1.1.31-54.0.1.el7_8.src.rpm
 ```
 
-### `rpm` package: `yum-utils-1.1.31-52.0.1.el7.noarch`
+### `rpm` package: `yum-utils-1.1.31-54.0.1.el7_8.noarch`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls yum-utils-1.1.31-52.0.1.el7.noarch
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/yum-utils-1.1.31-52.0.1.el7.src.rpm
+$ yumdownloader --quiet --source --urls yum-utils-1.1.31-54.0.1.el7_8.noarch
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/yum-utils-1.1.31-54.0.1.el7_8.src.rpm
 ```
 
 ### `rpm` package: `zlib-1.2.7-18.el7.x86_64`

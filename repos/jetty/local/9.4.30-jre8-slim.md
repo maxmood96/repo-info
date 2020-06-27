@@ -1,21 +1,21 @@
-# `jetty:9.4.30-jre11-slim`
+# `jetty:9.4.30-jre8-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b9cbee5bc68a85e53e5c6b73ea146119a7f4e13feb1a1d723c3048d2f96f72dc`
-- Created: `2020-06-24T20:23:15.075235163Z`
-- Virtual Size: ~ 217.10 Mb  
+- Image ID: `sha256:6c16591d48826a3fdf165651fb8551f418357c0da1eb109b1d8185892b18d9f2`
+- Created: `2020-06-24T20:23:44.103959581Z`
+- Virtual Size: ~ 196.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["java","-jar","/usr/local/jetty/start.jar"]`
 - Environment:
-  - `PATH=/usr/local/jetty/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/usr/local/jetty/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `JAVA_HOME=/usr/local/openjdk-11`
-  - `JAVA_VERSION=11.0.7`
-  - `JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_`
-  - `JAVA_URL_VERSION=11.0.7_10`
+  - `JAVA_HOME=/usr/local/openjdk-8`
+  - `JAVA_VERSION=8u252`
+  - `JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_`
+  - `JAVA_URL_VERSION=8u252b09`
   - `JETTY_VERSION=9.4.30.v20200611`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
