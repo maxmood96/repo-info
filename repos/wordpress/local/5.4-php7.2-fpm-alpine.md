@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:805e710a781413698ffab27d19aa61ba952a38a2bcdce30998e91a6311a21a27`
-- Created: `2020-06-18T20:44:03.541801036Z`
-- Virtual Size: ~ 229.78 Mb  
+- Image ID: `sha256:ae8b41732f1cf4ff65b1d1131a6641c7589fbe530dd2c8bbe30ea76b93c7cc0e`
+- Created: `2020-06-26T22:40:50.827705706Z`
+- Virtual Size: ~ 231.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -762,16 +762,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libjpeg-turbo`
 
 ```console
-libjpeg-turbo-2.0.4-r1 description:
+libjpeg-turbo-2.0.5-r0 description:
 Accelerated baseline JPEG compression and decompression library
 
-libjpeg-turbo-2.0.4-r1 webpage:
+libjpeg-turbo-2.0.5-r0 webpage:
 https://libjpeg-turbo.org/
 
-libjpeg-turbo-2.0.4-r1 installed size:
+libjpeg-turbo-2.0.5-r0 installed size:
 1056768
 
-libjpeg-turbo-2.0.4-r1 license:
+libjpeg-turbo-2.0.5-r0 license:
 BSD-3-Clause IJG Zlib
 
 ```
@@ -1119,16 +1119,16 @@ custom
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.24-r8 description:
+musl-1.1.24-r9 description:
 the musl c library (libc) implementation
 
-musl-1.1.24-r8 webpage:
+musl-1.1.24-r9 webpage:
 https://musl.libc.org/
 
-musl-1.1.24-r8 installed size:
+musl-1.1.24-r9 installed size:
 614400
 
-musl-1.1.24-r8 license:
+musl-1.1.24-r9 license:
 MIT
 
 ```

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1814495bb50c40b9dd50c4d2cea7dfe9a2d3d9e641273087c39750d9a0e3ee33`
-- Created: `2020-06-18T20:44:20.095545311Z`
-- Virtual Size: ~ 230.23 Mb  
+- Image ID: `sha256:ea8cce0d193412eff235d4185f0920df358225240de5107e8317b249591cbb2a`
+- Created: `2020-06-26T22:52:36.900075347Z`
+- Virtual Size: ~ 238.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,11 +17,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.19`
-  - `PHP_URL=https://www.php.net/distributions/php-7.3.19.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.19.tar.xz.asc`
-  - `PHP_SHA256=6402faa19b1a8c4317c7612632bce985684a5bbae0980a5779a4019439882422`
+  - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
+  - `PHP_VERSION=7.4.7`
+  - `PHP_URL=https://www.php.net/distributions/php-7.4.7.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.7.tar.xz.asc`
+  - `PHP_SHA256=53558f8f24cd8ab6fa0ea252ca8198e2650160649681ce5230c1df1dc2b52faf`
   - `PHP_MD5=`
   - `WORDPRESS_VERSION=5.4.2`
   - `WORDPRESS_SHA1=e5631f812232fbd45d3431783d3db2e0d5670d2d`
@@ -762,16 +762,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libjpeg-turbo`
 
 ```console
-libjpeg-turbo-2.0.4-r1 description:
+libjpeg-turbo-2.0.5-r0 description:
 Accelerated baseline JPEG compression and decompression library
 
-libjpeg-turbo-2.0.4-r1 webpage:
+libjpeg-turbo-2.0.5-r0 webpage:
 https://libjpeg-turbo.org/
 
-libjpeg-turbo-2.0.4-r1 installed size:
+libjpeg-turbo-2.0.5-r0 installed size:
 1056768
 
-libjpeg-turbo-2.0.4-r1 license:
+libjpeg-turbo-2.0.5-r0 license:
 BSD-3-Clause IJG Zlib
 
 ```
@@ -1136,16 +1136,16 @@ BSD-3-Clause
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.24-r8 description:
+musl-1.1.24-r9 description:
 the musl c library (libc) implementation
 
-musl-1.1.24-r8 webpage:
+musl-1.1.24-r9 webpage:
 https://musl.libc.org/
 
-musl-1.1.24-r8 installed size:
+musl-1.1.24-r9 installed size:
 614400
 
-musl-1.1.24-r8 license:
+musl-1.1.24-r9 license:
 MIT
 
 ```
@@ -1232,6 +1232,23 @@ nghttp2-libs-1.41.0-r0 installed size:
 
 nghttp2-libs-1.41.0-r0 license:
 MIT
+
+```
+
+### `apk` package: `oniguruma`
+
+```console
+oniguruma-6.9.5-r1 description:
+a regular expressions library
+
+oniguruma-6.9.5-r1 webpage:
+https://github.com/kkos/oniguruma
+
+oniguruma-6.9.5-r1 installed size:
+569344
+
+oniguruma-6.9.5-r1 license:
+BSD-2-Clause
 
 ```
 

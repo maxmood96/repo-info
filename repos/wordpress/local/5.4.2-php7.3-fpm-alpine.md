@@ -1,10 +1,10 @@
-# `wordpress:5.4.2-fpm-alpine`
+# `wordpress:5.4.2-php7.3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1814495bb50c40b9dd50c4d2cea7dfe9a2d3d9e641273087c39750d9a0e3ee33`
-- Created: `2020-06-18T20:44:20.095545311Z`
-- Virtual Size: ~ 230.23 Mb  
+- Image ID: `sha256:e8d366fbcf23e5ffdf524a866c468da9a8ff460dcbdf85000038efa8f37ba1d1`
+- Created: `2020-06-26T22:46:39.879584558Z`
+- Virtual Size: ~ 231.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -762,16 +762,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libjpeg-turbo`
 
 ```console
-libjpeg-turbo-2.0.4-r1 description:
+libjpeg-turbo-2.0.5-r0 description:
 Accelerated baseline JPEG compression and decompression library
 
-libjpeg-turbo-2.0.4-r1 webpage:
+libjpeg-turbo-2.0.5-r0 webpage:
 https://libjpeg-turbo.org/
 
-libjpeg-turbo-2.0.4-r1 installed size:
+libjpeg-turbo-2.0.5-r0 installed size:
 1056768
 
-libjpeg-turbo-2.0.4-r1 license:
+libjpeg-turbo-2.0.5-r0 license:
 BSD-3-Clause IJG Zlib
 
 ```
@@ -1136,16 +1136,16 @@ BSD-3-Clause
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.24-r8 description:
+musl-1.1.24-r9 description:
 the musl c library (libc) implementation
 
-musl-1.1.24-r8 webpage:
+musl-1.1.24-r9 webpage:
 https://musl.libc.org/
 
-musl-1.1.24-r8 installed size:
+musl-1.1.24-r9 installed size:
 614400
 
-musl-1.1.24-r8 license:
+musl-1.1.24-r9 license:
 MIT
 
 ```
