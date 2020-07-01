@@ -2739,16 +2739,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=5.6.14-2
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.6.14-2.dsc' linux_5.6.14-2.dsc 197095 SHA256:50bd452eb5fe3c8ebb15efd297b28d8ee37948d1c763636c687d4b7edb01c1fd
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.6.14.orig.tar.xz' linux_5.6.14.orig.tar.xz 116098756 SHA256:7b32df762bdb1c0405deb034a302d282fdff4525ae1bbcdbab0e3425e1e09f39
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.6.14-2.debian.tar.xz' linux_5.6.14-2.debian.tar.xz 3796028 SHA256:07dd3ae0308a1958dc2bcd0cb10e0e17c0f1adf4efb009631289791a00be1b16
+'http://http.debian.net/debian/pool/main/l/linux/linux_5.6.14-2.dsc' linux_5.6.14-2.dsc 197095 SHA256:50bd452eb5fe3c8ebb15efd297b28d8ee37948d1c763636c687d4b7edb01c1fd
+'http://http.debian.net/debian/pool/main/l/linux/linux_5.6.14.orig.tar.xz' linux_5.6.14.orig.tar.xz 116098756 SHA256:7b32df762bdb1c0405deb034a302d282fdff4525ae1bbcdbab0e3425e1e09f39
+'http://http.debian.net/debian/pool/main/l/linux/linux_5.6.14-2.debian.tar.xz' linux_5.6.14-2.debian.tar.xz 3796028 SHA256:07dd3ae0308a1958dc2bcd0cb10e0e17c0f1adf4efb009631289791a00be1b16
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/linux/5.6.14-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.6.14-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.6.14-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `littler=0.3.10-1`
 
@@ -2839,14 +2833,13 @@ Licenses: (parsed from: `/usr/share/doc/make/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris make-dfsg=4.3-3
-'http://http.debian.net/debian/pool/main/m/make-dfsg/make-dfsg_4.3-3.dsc' make-dfsg_4.3-3.dsc 1917 SHA256:d446c035e2a59eaaf7957f3bb131b4ed061d9f69e5c7d3e7669c38d0353b6fdf
-'http://http.debian.net/debian/pool/main/m/make-dfsg/make-dfsg_4.3.orig.tar.gz' make-dfsg_4.3.orig.tar.gz 1845906 SHA256:be4c17542578824e745f83bcd2a9ba264206187247cb6a5f5df99b0a9d1f9047
-'http://http.debian.net/debian/pool/main/m/make-dfsg/make-dfsg_4.3-3.diff.gz' make-dfsg_4.3-3.diff.gz 50609 SHA256:aabc7aa84fa424e9de0f4a61e6b9d26dd7f5cd06722c0a580d93ca8df70c455b
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/make-dfsg/4.3-3/
+
 
 ### `dpkg` source package: `mawk=1.3.4.20200120-2`
 
