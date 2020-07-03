@@ -1,7 +1,7 @@
 ## `bonita:latest`
 
 ```console
-$ docker pull bonita@sha256:0cb5198b47ecbf67aba4212d98fc00bad35ba772d1a719bbc706ff1d9dbe2102
+$ docker pull bonita@sha256:b1736f0c00ff840bf57a74ad00f08827cf40358271f6bfcae9cadcfa29356fdb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,14 +13,14 @@ $ docker pull bonita@sha256:0cb5198b47ecbf67aba4212d98fc00bad35ba772d1a719bbc706
 ### `bonita:latest` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:8f25a10e64a66c248242b38e14b6d923164d8043d13f73f2905afaf8d1a527c0
+$ docker pull bonita@sha256:87bf83ab294c086d7f28b7dbd2c386bdecbc02069323199589eb52ffe6da5cf1
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.4 MB (242402735 bytes)**  
+-	Total Size: **242.4 MB (242402805 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:420b466e4c341441dc12981a93b43eaa05bc047c2a74b9369f673553ccbc1194`
+-	Image ID: `sha256:7f34fe4bef6577a474611b5ae6af13ee9bdd9a6764de73bb21ca63c502d6d655`
 -	Default Command: `["\/opt\/files\/startup.sh"]`
 
 ```dockerfile
@@ -70,13 +70,13 @@ RUN sha256sum /opt/files/BonitaCommunity-${BONITA_VERSION}.zip
 RUN echo "$BONITA_SHA256" /opt/files/BonitaCommunity-${BONITA_VERSION}.zip | sha256sum -c -
 # Wed, 24 Jun 2020 17:19:47 GMT
 VOLUME [/opt/bonita]
-# Wed, 24 Jun 2020 17:19:47 GMT
-COPY dir:c672ad28dbfe9a2883b2bf4dd1ee57e8105b3b64257dfcde169d2b46382aa776 in /opt/files 
-# Wed, 24 Jun 2020 17:19:47 GMT
-COPY dir:edbc47a136616a0dc23cc815a04901a718b4b03f3e0cebd47c82011441ca3ec0 in /opt/templates 
-# Wed, 24 Jun 2020 17:19:47 GMT
+# Fri, 03 Jul 2020 17:19:35 GMT
+COPY dir:7f0e6270bb2bea49c029cca8eb0e60f9f0c9c5d47fd807149e3e18c746693278 in /opt/files 
+# Fri, 03 Jul 2020 17:19:36 GMT
+COPY dir:173a816fed2c2b9f191c45b4238f2062102518ab7cf02e5e7c4ca6bd9caeb849 in /opt/templates 
+# Fri, 03 Jul 2020 17:19:36 GMT
 EXPOSE 8080
-# Wed, 24 Jun 2020 17:19:48 GMT
+# Fri, 03 Jul 2020 17:19:36 GMT
 CMD ["/opt/files/startup.sh"]
 ```
 
@@ -117,26 +117,26 @@ CMD ["/opt/files/startup.sh"]
 		Last Modified: Wed, 24 Jun 2020 17:20:03 GMT  
 		Size: 113.2 MB (113221581 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4437ca07b1a413bab43750ccb74c1a9bbf18daa71efdbb10ca8c0ea4da70af7c`  
-		Last Modified: Wed, 24 Jun 2020 17:19:56 GMT  
-		Size: 7.6 KB (7585 bytes)  
+	-	`sha256:88740b21e8e0e39e67baaadb939c5709422517e54fc9567622f9ce8779bd1098`  
+		Last Modified: Fri, 03 Jul 2020 17:19:46 GMT  
+		Size: 7.6 KB (7601 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df47e1d7c6da97dd8b0f49ed76e7010324efb5dfbe15f97a0a084f5aa39be31e`  
-		Last Modified: Wed, 24 Jun 2020 17:19:56 GMT  
-		Size: 1.6 KB (1620 bytes)  
+	-	`sha256:ead5c788f5c756edde7b60f2ee31d9e1c169d672615819d0ea60fdcdb3927ca3`  
+		Last Modified: Fri, 03 Jul 2020 17:19:46 GMT  
+		Size: 1.7 KB (1674 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `bonita:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull bonita@sha256:5729b009007c77574c5315c09728dc23a12be9ec94dc4d5cba14ed12459148d6
+$ docker pull bonita@sha256:65ba0e2092b7bafa8f4c812130451af1c212c08775aff508d87cd7e1cb9f83c6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.4 MB (230418660 bytes)**  
+-	Total Size: **230.4 MB (230418729 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:917ccd848ed502dbefe31927387730509698069f5948ce878ba49ced44dd824a`
+-	Image ID: `sha256:5464e79dfb5c4d44ac9d5c6408232297da9600beda3dac56079fc0d127efab8c`
 -	Default Command: `["\/opt\/files\/startup.sh"]`
 
 ```dockerfile
@@ -186,13 +186,13 @@ RUN sha256sum /opt/files/BonitaCommunity-${BONITA_VERSION}.zip
 RUN echo "$BONITA_SHA256" /opt/files/BonitaCommunity-${BONITA_VERSION}.zip | sha256sum -c -
 # Wed, 24 Jun 2020 17:40:34 GMT
 VOLUME [/opt/bonita]
-# Wed, 24 Jun 2020 17:40:34 GMT
-COPY dir:c672ad28dbfe9a2883b2bf4dd1ee57e8105b3b64257dfcde169d2b46382aa776 in /opt/files 
-# Wed, 24 Jun 2020 17:40:35 GMT
-COPY dir:edbc47a136616a0dc23cc815a04901a718b4b03f3e0cebd47c82011441ca3ec0 in /opt/templates 
-# Wed, 24 Jun 2020 17:40:35 GMT
+# Fri, 03 Jul 2020 17:39:47 GMT
+COPY dir:7f0e6270bb2bea49c029cca8eb0e60f9f0c9c5d47fd807149e3e18c746693278 in /opt/files 
+# Fri, 03 Jul 2020 17:39:48 GMT
+COPY dir:173a816fed2c2b9f191c45b4238f2062102518ab7cf02e5e7c4ca6bd9caeb849 in /opt/templates 
+# Fri, 03 Jul 2020 17:39:49 GMT
 EXPOSE 8080
-# Wed, 24 Jun 2020 17:40:36 GMT
+# Fri, 03 Jul 2020 17:39:49 GMT
 CMD ["/opt/files/startup.sh"]
 ```
 
@@ -233,26 +233,26 @@ CMD ["/opt/files/startup.sh"]
 		Last Modified: Wed, 24 Jun 2020 17:41:00 GMT  
 		Size: 113.2 MB (113221612 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:221143354cb462982888f96fa58b20041a9ac4b46ea3772f39c7fc7e841a967f`  
-		Last Modified: Wed, 24 Jun 2020 17:40:51 GMT  
-		Size: 7.6 KB (7614 bytes)  
+	-	`sha256:3693802575293a0aece91313aedab1a4c96463acb5c399ab24bf64eda2e15e6c`  
+		Last Modified: Fri, 03 Jul 2020 17:40:03 GMT  
+		Size: 7.6 KB (7632 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:48c86d769595e8e44a6670a005094aa08ea1bec9c93d18a1b87abbdd52747206`  
-		Last Modified: Wed, 24 Jun 2020 17:40:51 GMT  
-		Size: 1.7 KB (1654 bytes)  
+	-	`sha256:1103b7a50b8f307fffc3657789584c32b8df6e7097dcbf8a21981b7bd1309e12`  
+		Last Modified: Fri, 03 Jul 2020 17:40:03 GMT  
+		Size: 1.7 KB (1705 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `bonita:latest` - linux; ppc64le
 
 ```console
-$ docker pull bonita@sha256:817eda6fb02d19676eb008ea2ce90505a84003a567b6030741b0b961a9dd5f1e
+$ docker pull bonita@sha256:074dd328bd9f60e9f224e1418c5e3f6ba6e58e93b5dde515f9504bfb05602ca6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **239.1 MB (239067040 bytes)**  
+-	Total Size: **239.1 MB (239067118 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80f5d7bde8e365ac07a86deda28ea274d55f409c7605f0c3965b4f4aa9131e7d`
+-	Image ID: `sha256:e805741ce108e7ab3503465520e344b52a912c23dab697fb4dcbb209b0234c11`
 -	Default Command: `["\/opt\/files\/startup.sh"]`
 
 ```dockerfile
@@ -302,13 +302,13 @@ RUN sha256sum /opt/files/BonitaCommunity-${BONITA_VERSION}.zip
 RUN echo "$BONITA_SHA256" /opt/files/BonitaCommunity-${BONITA_VERSION}.zip | sha256sum -c -
 # Wed, 24 Jun 2020 17:17:19 GMT
 VOLUME [/opt/bonita]
-# Wed, 24 Jun 2020 17:17:22 GMT
-COPY dir:c672ad28dbfe9a2883b2bf4dd1ee57e8105b3b64257dfcde169d2b46382aa776 in /opt/files 
-# Wed, 24 Jun 2020 17:17:23 GMT
-COPY dir:edbc47a136616a0dc23cc815a04901a718b4b03f3e0cebd47c82011441ca3ec0 in /opt/templates 
-# Wed, 24 Jun 2020 17:17:25 GMT
+# Fri, 03 Jul 2020 17:17:39 GMT
+COPY dir:7f0e6270bb2bea49c029cca8eb0e60f9f0c9c5d47fd807149e3e18c746693278 in /opt/files 
+# Fri, 03 Jul 2020 17:17:41 GMT
+COPY dir:173a816fed2c2b9f191c45b4238f2062102518ab7cf02e5e7c4ca6bd9caeb849 in /opt/templates 
+# Fri, 03 Jul 2020 17:17:44 GMT
 EXPOSE 8080
-# Wed, 24 Jun 2020 17:17:27 GMT
+# Fri, 03 Jul 2020 17:17:51 GMT
 CMD ["/opt/files/startup.sh"]
 ```
 
@@ -349,11 +349,11 @@ CMD ["/opt/files/startup.sh"]
 		Last Modified: Wed, 24 Jun 2020 17:17:50 GMT  
 		Size: 113.2 MB (113221613 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39221060d09df021cdcd89b879a6a69f8204453f569d63030354cbc3012f70f7`  
-		Last Modified: Wed, 24 Jun 2020 17:17:43 GMT  
-		Size: 7.6 KB (7611 bytes)  
+	-	`sha256:413cbe4de414062ca6959238dc306d37a36007e2a03e1481b89166e722c649da`  
+		Last Modified: Fri, 03 Jul 2020 17:18:11 GMT  
+		Size: 7.6 KB (7632 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:252fa6417df0a88d5741707028f809590399bc718b869b509ec22cb4578e64d1`  
-		Last Modified: Wed, 24 Jun 2020 17:17:42 GMT  
-		Size: 1.6 KB (1646 bytes)  
+	-	`sha256:86f5464c690539e2980cc473cdc085e8b59ad34e0eb1a8dc9d30fd5297e04562`  
+		Last Modified: Fri, 03 Jul 2020 17:18:10 GMT  
+		Size: 1.7 KB (1703 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
