@@ -1,7 +1,7 @@
 ## `storm:latest`
 
 ```console
-$ docker pull storm@sha256:5752983597e31f88c1654f03433d143bca4b446cd72a49c28efddd8ace7c792c
+$ docker pull storm@sha256:2ad8fe59d931eea586aad254ce88298f6b3f8ede4564c117db157c5d5bebdc7a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull storm@sha256:5752983597e31f88c1654f03433d143bca4b446cd72a49c28efdd
 ### `storm:latest` - linux; amd64
 
 ```console
-$ docker pull storm@sha256:480fa14f9302d773a4c43fd76af9d2d1fea4f3cebdd394066df31a69d8b293e1
+$ docker pull storm@sha256:7651f80213b741b5ceba2b1d8e299815d1beaf91e22109150fb8a532bbd5cc3e
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **396.3 MB (396278784 bytes)**  
+-	Total Size: **401.3 MB (401336600 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d60b48bae40da083272416d62fdaea416974500eba39f908719ca0226d4a80a0`
+-	Image ID: `sha256:2ac2b75c3a2cb417c12981e6c9da9832981fe3dcf014c35cb6b0dc63ac384a3c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -50,20 +50,20 @@ ENV STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
 RUN set -eux;     groupadd -r storm --gid=1000;     useradd -r -g storm --uid=1000 storm;     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R storm:storm "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
 # Wed, 10 Jun 2020 07:59:27 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         bash         ca-certificates         dirmngr         gosu         gnupg         python         procps         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Wed, 10 Jun 2020 08:00:05 GMT
-ARG GPG_KEY=5167DE337E7370373499FC1DA4A672F11B5050C8
-# Wed, 10 Jun 2020 08:00:05 GMT
-ARG DISTRO_NAME=apache-storm-2.1.0
-# Wed, 10 Jun 2020 08:00:26 GMT
-# ARGS: DISTRO_NAME=apache-storm-2.1.0 GPG_KEY=5167DE337E7370373499FC1DA4A672F11B5050C8
+# Mon, 06 Jul 2020 21:06:54 GMT
+ARG GPG_KEY=79B03D059E628478FC9F1D8B152CAD0C46E87B61
+# Mon, 06 Jul 2020 21:06:55 GMT
+ARG DISTRO_NAME=apache-storm-2.2.0
+# Mon, 06 Jul 2020 21:07:11 GMT
+# ARGS: DISTRO_NAME=apache-storm-2.2.0 GPG_KEY=79B03D059E628478FC9F1D8B152CAD0C46E87B61
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R storm:storm "$DISTRO_NAME"
-# Wed, 10 Jun 2020 08:00:27 GMT
-WORKDIR /apache-storm-2.1.0
-# Wed, 10 Jun 2020 08:00:27 GMT
-ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-2.1.0/bin
-# Wed, 10 Jun 2020 08:00:27 GMT
+# Mon, 06 Jul 2020 21:07:12 GMT
+WORKDIR /apache-storm-2.2.0
+# Mon, 06 Jul 2020 21:07:12 GMT
+ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-2.2.0/bin
+# Mon, 06 Jul 2020 21:07:12 GMT
 COPY file:c74c732450146abc9cc672380c7829a8d892099ec5aa1f81e3fe02c4e8f97f32 in / 
-# Wed, 10 Jun 2020 08:00:27 GMT
+# Mon, 06 Jul 2020 21:07:12 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -92,11 +92,11 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Wed, 10 Jun 2020 08:00:41 GMT  
 		Size: 13.1 MB (13125016 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ca34342ebb870623215edd687c36e7624095368375851ceabc831da3c500dee`  
-		Last Modified: Wed, 10 Jun 2020 08:01:20 GMT  
-		Size: 312.2 MB (312210964 bytes)  
+	-	`sha256:b080ea08b84ab924c2e2dadc457a410d7860b411b8abeb34699f36391be2cbb8`  
+		Last Modified: Mon, 06 Jul 2020 21:07:53 GMT  
+		Size: 317.3 MB (317268781 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:371e7a63403932a778fd3a5aa23ec43a0427822f9eca59ce4223b9243012f893`  
-		Last Modified: Wed, 10 Jun 2020 08:01:03 GMT  
-		Size: 413.0 B  
+	-	`sha256:c4caeb692defb68b9c713dadcabe229badd46b03b3566a893af4bc5a160af982`  
+		Last Modified: Mon, 06 Jul 2020 21:07:25 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
