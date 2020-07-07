@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b191aff8388c80979a752a8235a2cca977a233c45d33ebf0febd89b49a7cf8b0`
-- Created: `2020-07-01T19:29:39.599826766Z`
+- Image ID: `sha256:905a05448080ec0f6057dbe379afbf06decbbfef6ec76d6fbd47a9c977567605`
+- Created: `2020-07-07T01:15:00.833583927Z`
 - Virtual Size: ~ 1.45 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1539,11 +1539,11 @@ $ apt-get source -qq --print-uris gnupg2=2.2.19-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.19-3ubuntu2.debian.tar.xz' gnupg2_2.2.19-3ubuntu2.debian.tar.xz 65068 SHA256:fd2dc1a844dbce1b989e8c6f7d8199c950bd3c35c8aefa553dcc27f9cb977ac6
 ```
 
-### `dpkg` source package: `gnutls28=3.6.13-2ubuntu1.1`
+### `dpkg` source package: `gnutls28=3.6.13-2ubuntu1.2`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.6.13-2ubuntu1.1`
+- `libgnutls30:amd64=3.6.13-2ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -1564,11 +1564,11 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.6.13-2ubuntu1.1
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.1.dsc' gnutls28_3.6.13-2ubuntu1.1.dsc 3594 SHA256:b55d3450b66c8ea66f04fa4c1255b241ad065bf94a7665cf486438c63f4398a1
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz' gnutls28_3.6.13.orig.tar.xz 5958956 SHA256:32041df447d9f4644570cf573c9f60358e865637d69b7e59d1159b7240b52f38
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz.asc' gnutls28_3.6.13.orig.tar.xz.asc 667 SHA256:79eb677b19a35de2f17d2ea87e863755cd53f0072b9435c8a4b57669360f57d0
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.1.debian.tar.xz' gnutls28_3.6.13-2ubuntu1.1.debian.tar.xz 63044 SHA256:b3576459a997c999fb628fa4cb83aa577200dd1f0653898c05b9d7451a502bd7
+$ apt-get source -qq --print-uris gnutls28=3.6.13-2ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.2.dsc' gnutls28_3.6.13-2ubuntu1.2.dsc 2940 SHA256:ede1726b6cff5e0d32835f44bdad07397438343a3c095c725d0cd2cb23189478
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz' gnutls28_3.6.13.orig.tar.xz 5958956 SHA256:32041df447d9f4644570cf573c9f60358e865637d69b7e59d1159b7240b52f38
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz.asc' gnutls28_3.6.13.orig.tar.xz.asc 667 SHA256:79eb677b19a35de2f17d2ea87e863755cd53f0072b9435c8a4b57669360f57d0
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.2.debian.tar.xz' gnutls28_3.6.13-2ubuntu1.2.debian.tar.xz 63676 SHA256:0f140bf0b589fbc3c4c1d46327c8fd968043f1814844687833e01808ffb5a70c
 ```
 
 ### `dpkg` source package: `googletest=1.10.0-2`
@@ -2736,11 +2736,11 @@ $ apt-get source -qq --print-uris libpsm2=11.2.86-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/libp/libpsm2/libpsm2_11.2.86-1.debian.tar.xz' libpsm2_11.2.86-1.debian.tar.xz 7104 SHA256:69433ff0dd7fb7a299a6d14f5c57ff3f8dd1ec908293449cb8f0d91fffb96926
 ```
 
-### `dpkg` source package: `libseccomp=2.4.3-1ubuntu1`
+### `dpkg` source package: `libseccomp=2.4.3-1ubuntu3.20.04.2`
 
 Binary Packages:
 
-- `libseccomp2:amd64=2.4.3-1ubuntu1`
+- `libseccomp2:amd64=2.4.3-1ubuntu3.20.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
@@ -2749,10 +2749,10 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libseccomp=2.4.3-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.4.3-1ubuntu1.dsc' libseccomp_2.4.3-1ubuntu1.dsc 2564 SHA256:ae6e39b00694bf48a5cec9aaf9001643ba6c724d4e807b380d8d4ffa64ddc94e
+$ apt-get source -qq --print-uris libseccomp=2.4.3-1ubuntu3.20.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.4.3-1ubuntu3.20.04.2.dsc' libseccomp_2.4.3-1ubuntu3.20.04.2.dsc 2263 SHA256:619f042a8ef40772943c9540bef6128b60c3c1ad1623859e745a60eb5d3ded8e
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.4.3.orig.tar.gz' libseccomp_2.4.3.orig.tar.gz 598147 SHA256:cf15d1421997fac45b936515af61d209c4fd788af11005d212b3d0fd71e7991d
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.4.3-1ubuntu1.debian.tar.xz' libseccomp_2.4.3-1ubuntu1.debian.tar.xz 18988 SHA256:a04203ef20dfa40f1c7c234d078e839655ad04bfbc393751b149cae10893325f
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.4.3-1ubuntu3.20.04.2.debian.tar.xz' libseccomp_2.4.3-1ubuntu3.20.04.2.debian.tar.xz 33716 SHA256:7378d2845b1c256d3412cf4e64e5aa5787237586c11c50805576cbbcb51eae64
 ```
 
 ### `dpkg` source package: `libselinux=3.0-1build2`
@@ -9567,12 +9567,12 @@ $ apt-get source -qq --print-uris sgml-base=1.29.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sgml-base/sgml-base_1.29.1.tar.xz' sgml-base_1.29.1.tar.xz 12260 SHA256:3cac1ae8527c8ea0b699f2fb3891a0d44e49ece74d4e127f306e43cdb57bd78e
 ```
 
-### `dpkg` source package: `shadow=1:4.8.1-1ubuntu5`
+### `dpkg` source package: `shadow=1:4.8.1-1ubuntu5.20.04`
 
 Binary Packages:
 
-- `login=1:4.8.1-1ubuntu5`
-- `passwd=1:4.8.1-1ubuntu5`
+- `login=1:4.8.1-1ubuntu5.20.04`
+- `passwd=1:4.8.1-1ubuntu5.20.04`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
@@ -9581,10 +9581,10 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 Source:
 
 ```console
-$ apt-get source -qq --print-uris shadow=1:4.8.1-1ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-1ubuntu5.dsc' shadow_4.8.1-1ubuntu5.dsc 1705 SHA256:dd5011afc1a0ad50c4a1aa1472e19f463c65b5c4a9c86993b024d6af78256c33
+$ apt-get source -qq --print-uris shadow=1:4.8.1-1ubuntu5.20.04
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-1ubuntu5.20.04.dsc' shadow_4.8.1-1ubuntu5.20.04.dsc 1729 SHA256:c72f775ec9bff0d88f805426d370e1b66b8bef2c8d3ff77af180987173245130
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1.orig.tar.xz' shadow_4.8.1.orig.tar.xz 1611196 SHA256:a3ad4630bdc41372f02a647278a8c3514844295d36eefe68ece6c3a641c1ae62
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-1ubuntu5.debian.tar.xz' shadow_4.8.1-1ubuntu5.debian.tar.xz 85340 SHA256:14eca75b8a22fb11763c6478b57082c2dc2b504e11dcbce5e9e65d32414369ec
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-1ubuntu5.20.04.debian.tar.xz' shadow_4.8.1-1ubuntu5.20.04.debian.tar.xz 85640 SHA256:d930def27e0015314820151132e6635cff5297cef7540d0d64d25d63f8100773
 ```
 
 ### `dpkg` source package: `six=1.14.0-2`
