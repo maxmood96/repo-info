@@ -28,6 +28,10 @@
 -	[`haproxy:2.2.0`](#haproxy220)
 -	[`haproxy:2.2.0-alpine`](#haproxy220-alpine)
 -	[`haproxy:2.2-alpine`](#haproxy22-alpine)
+-	[`haproxy:2.3-dev0`](#haproxy23-dev0)
+-	[`haproxy:2.3-dev0-alpine`](#haproxy23-dev0-alpine)
+-	[`haproxy:2.3-rc`](#haproxy23-rc)
+-	[`haproxy:2.3-rc-alpine`](#haproxy23-rc-alpine)
 -	[`haproxy:alpine`](#haproxyalpine)
 -	[`haproxy:latest`](#haproxylatest)
 -	[`haproxy:lts`](#haproxylts)
@@ -8720,6 +8724,22 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 **does not exist** (yet?)
 
 ## `haproxy:2.2-alpine`
+
+**does not exist** (yet?)
+
+## `haproxy:2.3-dev0`
+
+**does not exist** (yet?)
+
+## `haproxy:2.3-dev0-alpine`
+
+**does not exist** (yet?)
+
+## `haproxy:2.3-rc`
+
+**does not exist** (yet?)
+
+## `haproxy:2.3-rc-alpine`
 
 **does not exist** (yet?)
 
