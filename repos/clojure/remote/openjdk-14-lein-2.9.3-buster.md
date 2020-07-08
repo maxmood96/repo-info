@@ -1,7 +1,7 @@
 ## `clojure:openjdk-14-lein-2.9.3-buster`
 
 ```console
-$ docker pull clojure@sha256:405de027f7fa5aca402a7665a13edf3625a5d62c3f9b03d17f7ebbdb12b43e15
+$ docker pull clojure@sha256:754a967dd68eb845a6e692d07f85e5c1553e41dcd0fdc3dfdc89c7cff8a4d6fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull clojure@sha256:405de027f7fa5aca402a7665a13edf3625a5d62c3f9b03d17f7
 ### `clojure:openjdk-14-lein-2.9.3-buster` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:a1cd1023120a55e1a647605a0b40232a8bef82195e5b91e38c92d6930ad26753
+$ docker pull clojure@sha256:86e651f4a89d4f3214b61e46045e31097415638431da8b76fba59410761ac345
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **350.6 MB (350558920 bytes)**  
+-	Total Size: **350.9 MB (350919463 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4ddc47710c28885f92039841e686fa529bfb01288774233a663b6d639e6fa41`
+-	Image ID: `sha256:aaf29492686ce663b2219e4e26a341e74c2413b944b6f703d6da89bd928a73e0`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
@@ -54,15 +54,15 @@ ENV LEIN_VERSION=2.9.3
 ENV LEIN_INSTALL=/usr/local/bin/
 # Wed, 10 Jun 2020 06:57:16 GMT
 WORKDIR /tmp
-# Wed, 10 Jun 2020 06:57:19 GMT
-RUN mkdir -p $LEIN_INSTALL && wget -q https://raw.githubusercontent.com/technomancy/leiningen/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "42e18e8a833b863ddfba1c5565bd5d78b54bcee661ec86e94a8bdc67b1733e63 *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc && gpg --batch --keyserver keys.openpgp.org --recv-key 20242BACBBE95ADA22D0AFD7808A33D379C806C3 && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.zip.asc leiningen-$LEIN_VERSION-standalone.zip && rm leiningen-$LEIN_VERSION-standalone.zip.asc && mkdir -p /usr/share/java && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar
-# Wed, 10 Jun 2020 06:57:19 GMT
+# Tue, 07 Jul 2020 23:23:51 GMT
+RUN apt-get update && apt-get install -y gnupg && rm -rf /var/lib/apt/lists/* && mkdir -p $LEIN_INSTALL && wget -q https://raw.githubusercontent.com/technomancy/leiningen/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "42e18e8a833b863ddfba1c5565bd5d78b54bcee661ec86e94a8bdc67b1733e63 *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc && gpg --batch --keyserver keys.openpgp.org --recv-key 20242BACBBE95ADA22D0AFD7808A33D379C806C3 && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.zip.asc leiningen-$LEIN_VERSION-standalone.zip && rm leiningen-$LEIN_VERSION-standalone.zip.asc && mkdir -p /usr/share/java && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apt-get remove -y --purge gnupg && apt-get autoremove -y
+# Tue, 07 Jul 2020 23:23:51 GMT
 ENV PATH=/usr/java/openjdk-14/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Wed, 10 Jun 2020 06:57:19 GMT
+# Tue, 07 Jul 2020 23:23:51 GMT
 ENV LEIN_ROOT=1
-# Wed, 10 Jun 2020 06:57:23 GMT
+# Tue, 07 Jul 2020 23:23:55 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.10.1"]])' > project.clj   && lein deps && rm project.clj
-# Wed, 10 Jun 2020 06:57:23 GMT
+# Tue, 07 Jul 2020 23:23:55 GMT
 CMD ["lein" "repl"]
 ```
 
@@ -95,11 +95,11 @@ CMD ["lein" "repl"]
 		Last Modified: Tue, 09 Jun 2020 16:42:52 GMT  
 		Size: 199.3 MB (199264454 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47d086c7eb42710a2741ddcac1304640875b1ecb086bd3153213cc6af7885e33`  
-		Last Modified: Wed, 10 Jun 2020 07:05:22 GMT  
-		Size: 13.2 MB (13180891 bytes)  
+	-	`sha256:0b6a49dc3b54288dc42e85d4f2d1fe58ecff9f99a60692cb5b7a3d9fc6a25e44`  
+		Last Modified: Tue, 07 Jul 2020 23:28:51 GMT  
+		Size: 13.5 MB (13541448 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4a436b9d54886811f56aafe8841b716b2976a56f796f7fff55bada7406ad9cb`  
-		Last Modified: Wed, 10 Jun 2020 07:05:20 GMT  
-		Size: 4.2 MB (4168209 bytes)  
+	-	`sha256:a50d355c7bc08e633ccf43375ebf2afef0f7eb18505bdbd9860b17a47e286ae4`  
+		Last Modified: Tue, 07 Jul 2020 23:28:51 GMT  
+		Size: 4.2 MB (4168195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

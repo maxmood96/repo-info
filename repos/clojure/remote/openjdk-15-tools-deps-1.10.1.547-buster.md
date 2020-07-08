@@ -1,7 +1,7 @@
 ## `clojure:openjdk-15-tools-deps-1.10.1.547-buster`
 
 ```console
-$ docker pull clojure@sha256:bb0cf90751ca86c7c4fb543cfbd998f08fef90436f4c19c7399c13c3f197225c
+$ docker pull clojure@sha256:e7a9bc4edb7c7f3987584cb96ad8e09dd1f4499b0cc92f63324bd214316986d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull clojure@sha256:bb0cf90751ca86c7c4fb543cfbd998f08fef90436f4c19c7399
 ### `clojure:openjdk-15-tools-deps-1.10.1.547-buster` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:5b3002d7fe86057f50ad5175e61b69704c3e743f054f71bba03e5b8f53632000
+$ docker pull clojure@sha256:68585b692fc0e97011182b41bf3936fda143b5aed290d1d429465329795f5cbe
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **351.4 MB (351404907 bytes)**  
+-	Total Size: **361.0 MB (360960481 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f5acc554126dc1fe5d31714d8c8b0960453e37bcd0d397f28845c38c8cfe8d20`
+-	Image ID: `sha256:b4d0b1a39501db99c0692b0d8b766df5a8ec90d14d62dd676792a8a18e09dd9e`
 -	Default Command: `["sh","-c","sleep 1 && exec clj"]`
 
 ```dockerfile
@@ -52,9 +52,9 @@ CMD ["jshell"]
 ENV CLOJURE_VERSION=1.10.1.547
 # Mon, 06 Jul 2020 22:13:12 GMT
 WORKDIR /tmp
-# Mon, 06 Jul 2020 22:13:20 GMT
-RUN wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "779ce3bd2aea008fa4d7a0569d00b1a1011b88662960355bab54fb86851ae5ad *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)"
-# Mon, 06 Jul 2020 22:13:20 GMT
+# Tue, 07 Jul 2020 23:26:16 GMT
+RUN apt-get update && apt-get install -y make rlwrap && rm -rf /var/lib/apt/lists/* && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "779ce3bd2aea008fa4d7a0569d00b1a1011b88662960355bab54fb86851ae5ad *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)"
+# Tue, 07 Jul 2020 23:26:17 GMT
 CMD ["sh" "-c" "sleep 1 && exec clj"]
 ```
 
@@ -87,7 +87,7 @@ CMD ["sh" "-c" "sleep 1 && exec clj"]
 		Last Modified: Mon, 06 Jul 2020 20:33:22 GMT  
 		Size: 195.8 MB (195839093 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc520a795be524520982d0d81d0f85220445338e25b2d38b90db737b8af7c9d7`  
-		Last Modified: Mon, 06 Jul 2020 22:15:17 GMT  
-		Size: 21.6 MB (21620447 bytes)  
+	-	`sha256:c8e100d970aba31ac3617c723ba1e4be32f856e04254ad54c6d1a8134a29b39a`  
+		Last Modified: Tue, 07 Jul 2020 23:29:43 GMT  
+		Size: 31.2 MB (31176021 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

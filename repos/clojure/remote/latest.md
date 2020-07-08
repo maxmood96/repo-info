@@ -1,7 +1,7 @@
 ## `clojure:latest`
 
 ```console
-$ docker pull clojure@sha256:7c60779239f01e94784c329f5f49dac2fdea5776f46face4a21dbebf7c08a13b
+$ docker pull clojure@sha256:b1588021405daf37862e86f793415891eb0d4629cda450c635aba918e0ca6b9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull clojure@sha256:7c60779239f01e94784c329f5f49dac2fdea5776f46face4a21
 ### `clojure:latest` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:699d045a35245eb5812b004125b9324011dd50cfe318ccf0cdcfbd7b51c21e28
+$ docker pull clojure@sha256:148ad435f63c307a71ac2aad6b25b54a80fb43e59282bcc80a0ee3a4dac6f9d4
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **346.8 MB (346780118 bytes)**  
+-	Total Size: **342.0 MB (341956523 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f658f8c8a8359f376918aeff4c671a1a443a932bea9ee66dbfa97946c6956a20`
+-	Image ID: `sha256:76007a35aa5f19bc0049f28a317e738d4312752b96764e2199a55a50de1ab584`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
@@ -66,21 +66,21 @@ ENV LEIN_VERSION=2.9.3
 ENV LEIN_INSTALL=/usr/local/bin/
 # Wed, 10 Jun 2020 06:52:24 GMT
 WORKDIR /tmp
-# Wed, 10 Jun 2020 06:52:33 GMT
-RUN apt-get update && apt-get install -y gnupg wget && rm -rf /var/lib/apt/lists/* && mkdir -p $LEIN_INSTALL && wget -q https://raw.githubusercontent.com/technomancy/leiningen/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "42e18e8a833b863ddfba1c5565bd5d78b54bcee661ec86e94a8bdc67b1733e63 *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc && gpg --batch --keyserver keys.openpgp.org --recv-key 20242BACBBE95ADA22D0AFD7808A33D379C806C3 && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.zip.asc leiningen-$LEIN_VERSION-standalone.zip && rm leiningen-$LEIN_VERSION-standalone.zip.asc && mkdir -p /usr/share/java && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apt-get remove -y --purge gnupg wget
-# Wed, 10 Jun 2020 06:52:33 GMT
+# Tue, 07 Jul 2020 23:19:54 GMT
+RUN apt-get update && apt-get install -y gnupg wget && rm -rf /var/lib/apt/lists/* && mkdir -p $LEIN_INSTALL && wget -q https://raw.githubusercontent.com/technomancy/leiningen/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "42e18e8a833b863ddfba1c5565bd5d78b54bcee661ec86e94a8bdc67b1733e63 *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc && gpg --batch --keyserver keys.openpgp.org --recv-key 20242BACBBE95ADA22D0AFD7808A33D379C806C3 && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.zip.asc leiningen-$LEIN_VERSION-standalone.zip && rm leiningen-$LEIN_VERSION-standalone.zip.asc && mkdir -p /usr/share/java && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apt-get remove -y --purge gnupg wget && apt-get autoremove -y
+# Tue, 07 Jul 2020 23:19:54 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/:/usr/local/bin/
-# Wed, 10 Jun 2020 06:52:33 GMT
+# Tue, 07 Jul 2020 23:19:54 GMT
 ENV LEIN_ROOT=1
-# Wed, 10 Jun 2020 06:52:37 GMT
+# Tue, 07 Jul 2020 23:19:59 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.10.1"]])' > project.clj   && lein deps && rm project.clj
-# Mon, 06 Jul 2020 19:25:46 GMT
+# Tue, 07 Jul 2020 23:19:59 GMT
 ENV CLOJURE_VERSION=1.10.1.547
-# Mon, 06 Jul 2020 19:25:46 GMT
+# Tue, 07 Jul 2020 23:19:59 GMT
 WORKDIR /tmp
-# Mon, 06 Jul 2020 19:26:04 GMT
-RUN apt-get update && apt-get install -y curl make rlwrap wget && rm -rf /var/lib/apt/lists/* && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "779ce3bd2aea008fa4d7a0569d00b1a1011b88662960355bab54fb86851ae5ad *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apt-get remove -y --purge curl wget
-# Mon, 06 Jul 2020 19:26:05 GMT
+# Tue, 07 Jul 2020 23:20:19 GMT
+RUN apt-get update && apt-get install -y curl make rlwrap wget && rm -rf /var/lib/apt/lists/* && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "779ce3bd2aea008fa4d7a0569d00b1a1011b88662960355bab54fb86851ae5ad *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apt-get remove -y --purge curl wget && apt-get autoremove -y
+# Tue, 07 Jul 2020 23:20:19 GMT
 CMD ["lein" "repl"]
 ```
 
@@ -109,15 +109,15 @@ CMD ["lein" "repl"]
 		Last Modified: Wed, 10 Jun 2020 07:03:07 GMT  
 		Size: 58.8 MB (58820244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c18f5bf1761c91d69729f4cb81206e4b8e447485c92bb3346ee3a0e878b0029`  
-		Last Modified: Wed, 10 Jun 2020 07:03:07 GMT  
-		Size: 17.8 MB (17830738 bytes)  
+	-	`sha256:76c768a4ef5f91ab1e98fa4cf9a7b63e9392fa7b30d4f15e4beacb02d0afcdca`  
+		Last Modified: Tue, 07 Jul 2020 23:27:15 GMT  
+		Size: 13.5 MB (13465054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47ae858ebacb368bc2996e60a24fe7fed330f535d267be17f2d7f7e32133c710`  
-		Last Modified: Wed, 10 Jun 2020 07:03:02 GMT  
-		Size: 4.2 MB (4155678 bytes)  
+	-	`sha256:a725bb31957b48a63d8a2f5603c749fdaed4d0230a8b8130ea76dedf6f11864b`  
+		Last Modified: Tue, 07 Jul 2020 23:27:15 GMT  
+		Size: 4.2 MB (4155675 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b1b2f31c6e5075e6977e24bb023e31d498de47a8d4c154161b6a88bf7da980b`  
-		Last Modified: Mon, 06 Jul 2020 19:30:50 GMT  
-		Size: 38.9 MB (38867635 bytes)  
+	-	`sha256:042794bcb44d6663ca2b2c822da6b7da093ba08bb30791b3f29d4a6e6508feed`  
+		Last Modified: Tue, 07 Jul 2020 23:27:21 GMT  
+		Size: 38.4 MB (38409727 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
