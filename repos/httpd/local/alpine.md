@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6b2faa9ef9c1173458606b4f317582fb6814051221d9e460a926e3abad9938ab`
-- Created: `2020-06-11T22:33:40.026604187Z`
-- Virtual Size: ~ 314.50 Mb  
+- Image ID: `sha256:e7e8868c76974de9e867a76ccb25afd4415b313c2db3bdda7f92a789e3b5b6ae`
+- Created: `2020-07-06T20:20:46.381126451Z`
+- Virtual Size: ~ 56.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
@@ -85,23 +85,6 @@ Apache-2.0
 
 ```
 
-### `apk` package: `apr-dev`
-
-```console
-apr-dev-1.7.0-r0 description:
-The Apache Portable Runtime
-
-apr-dev-1.7.0-r0 webpage:
-http://apr.apache.org/
-
-apr-dev-1.7.0-r0 installed size:
-1441792
-
-apr-dev-1.7.0-r0 license:
-Apache-2.0
-
-```
-
 ### `apk` package: `apr-util`
 
 ```console
@@ -136,23 +119,6 @@ Apache-2.0
 
 ```
 
-### `apk` package: `apr-util-dev`
-
-```console
-apr-util-dev-1.6.1-r6 description:
-The Apache Portable Runtime Utility Library (development files)
-
-apr-util-dev-1.6.1-r6 webpage:
-http://apr.apache.org/
-
-apr-util-dev-1.6.1-r6 installed size:
-819200
-
-apr-util-dev-1.6.1-r6 license:
-Apache-2.0
-
-```
-
 ### `apk` package: `apr-util-ldap`
 
 ```console
@@ -167,40 +133,6 @@ apr-util-ldap-1.6.1-r6 installed size:
 
 apr-util-ldap-1.6.1-r6 license:
 Apache-2.0
-
-```
-
-### `apk` package: `bash`
-
-```console
-bash-5.0.17-r0 description:
-The GNU Bourne Again shell
-
-bash-5.0.17-r0 webpage:
-https://www.gnu.org/software/bash/bash.html
-
-bash-5.0.17-r0 installed size:
-1200128
-
-bash-5.0.17-r0 license:
-GPL-3.0-or-later
-
-```
-
-### `apk` package: `blkid`
-
-```console
-blkid-2.35.2-r0 description:
-blkid from util-linux
-
-blkid-2.35.2-r0 webpage:
-https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-
-blkid-2.35.2-r0 installed size:
-110592
-
-blkid-2.35.2-r0 license:
-GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
 
 ```
 
@@ -241,16 +173,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20191127-r3 description:
+ca-certificates-20191127-r4 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20191127-r3 webpage:
+ca-certificates-20191127-r4 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20191127-r3 installed size:
+ca-certificates-20191127-r4 installed size:
 688128
 
-ca-certificates-20191127-r3 license:
+ca-certificates-20191127-r4 license:
 MPL-2.0 GPL-2.0-or-later
 
 ```
@@ -272,74 +204,6 @@ MPL-2.0 GPL-2.0-or-later
 
 ```
 
-### `apk` package: `cfdisk`
-
-```console
-cfdisk-2.35.2-r0 description:
-cfdisk from util-linux
-
-cfdisk-2.35.2-r0 webpage:
-https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-
-cfdisk-2.35.2-r0 installed size:
-98304
-
-cfdisk-2.35.2-r0 license:
-GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
-
-```
-
-### `apk` package: `clang`
-
-```console
-clang-10.0.0-r2 description:
-A C language family front-end for LLVM
-
-clang-10.0.0-r2 webpage:
-https://llvm.org/
-
-clang-10.0.0-r2 installed size:
-28176384
-
-clang-10.0.0-r2 license:
-Apache-2.0
-
-```
-
-### `apk` package: `clang-libs`
-
-```console
-clang-libs-10.0.0-r2 description:
-A C language family front-end for LLVM (libraries)
-
-clang-libs-10.0.0-r2 webpage:
-https://llvm.org/
-
-clang-libs-10.0.0-r2 installed size:
-62976000
-
-clang-libs-10.0.0-r2 license:
-Apache-2.0
-
-```
-
-### `apk` package: `cyrus-sasl-dev`
-
-```console
-cyrus-sasl-dev-2.1.27-r6 description:
-Cyrus Simple Authentication Service Layer (SASL) (development files)
-
-cyrus-sasl-dev-2.1.27-r6 webpage:
-https://www.cyrusimap.org/sasl/
-
-cyrus-sasl-dev-2.1.27-r6 installed size:
-905216
-
-cyrus-sasl-dev-2.1.27-r6 license:
-custom
-
-```
-
 ### `apk` package: `db`
 
 ```console
@@ -353,40 +217,6 @@ db-5.3.28-r1 installed size:
 1564672
 
 db-5.3.28-r1 license:
-custom
-
-```
-
-### `apk` package: `db-c++`
-
-```console
-db-c++-5.3.28-r1 description:
-C++ binding for libdb
-
-db-c++-5.3.28-r1 webpage:
-https://www.oracle.com/technology/software/products/berkeley-db/index.html
-
-db-c++-5.3.28-r1 installed size:
-1708032
-
-db-c++-5.3.28-r1 license:
-custom
-
-```
-
-### `apk` package: `db-dev`
-
-```console
-db-dev-5.3.28-r1 description:
-The Berkeley DB embedded database system (development files)
-
-db-dev-5.3.28-r1 webpage:
-https://www.oracle.com/technology/software/products/berkeley-db/index.html
-
-db-dev-5.3.28-r1 installed size:
-200704
-
-db-dev-5.3.28-r1 license:
 custom
 
 ```
@@ -408,108 +238,6 @@ MIT
 
 ```
 
-### `apk` package: `expat-dev`
-
-```console
-expat-dev-2.2.9-r1 description:
-An XML Parser library written in C (development files)
-
-expat-dev-2.2.9-r1 webpage:
-http://www.libexpat.org/
-
-expat-dev-2.2.9-r1 installed size:
-81920
-
-expat-dev-2.2.9-r1 license:
-MIT
-
-```
-
-### `apk` package: `findmnt`
-
-```console
-findmnt-2.35.2-r0 description:
-findmnt from util-linux
-
-findmnt-2.35.2-r0 webpage:
-https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-
-findmnt-2.35.2-r0 installed size:
-69632
-
-findmnt-2.35.2-r0 license:
-GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
-
-```
-
-### `apk` package: `hexdump`
-
-```console
-hexdump-2.35.2-r0 description:
-hexdump from util-linux
-
-hexdump-2.35.2-r0 webpage:
-https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-
-hexdump-2.35.2-r0 installed size:
-65536
-
-hexdump-2.35.2-r0 license:
-GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
-
-```
-
-### `apk` package: `icu`
-
-```console
-icu-67.1-r0 description:
-International Components for Unicode library
-
-icu-67.1-r0 webpage:
-http://icu-project.org/
-
-icu-67.1-r0 installed size:
-663552
-
-icu-67.1-r0 license:
-MIT ICU Unicode-TOU
-
-```
-
-### `apk` package: `icu-dev`
-
-```console
-icu-dev-67.1-r0 description:
-International Components for Unicode library (development files)
-
-icu-dev-67.1-r0 webpage:
-http://icu-project.org/
-
-icu-dev-67.1-r0 installed size:
-5079040
-
-icu-dev-67.1-r0 license:
-MIT ICU Unicode-TOU
-
-```
-
-### `apk` package: `icu-libs`
-
-```console
-icu-libs-67.1-r0 description:
-International Components for Unicode library (libraries)
-
-icu-libs-67.1-r0 webpage:
-http://icu-project.org/
-
-icu-libs-67.1-r0 installed size:
-33095680
-
-icu-libs-67.1-r0 license:
-MIT ICU Unicode-TOU
-
-```
-
 ### `apk` package: `jansson`
 
 ```console
@@ -524,40 +252,6 @@ jansson-2.13.1-r0 installed size:
 
 jansson-2.13.1-r0 license:
 MIT
-
-```
-
-### `apk` package: `libaio`
-
-```console
-libaio-0.3.112-r1 description:
-Asynchronous input/output library
-
-libaio-0.3.112-r1 webpage:
-https://pagure.io/libaio
-
-libaio-0.3.112-r1 installed size:
-28672
-
-libaio-0.3.112-r1 license:
-LGPL-2.1-or-later
-
-```
-
-### `apk` package: `libblkid`
-
-```console
-libblkid-2.35.2-r0 description:
-Block device identification library from util-linux
-
-libblkid-2.35.2-r0 webpage:
-https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-
-libblkid-2.35.2-r0 installed size:
-299008
-
-libblkid-2.35.2-r0 license:
-GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
 
 ```
 
@@ -595,23 +289,6 @@ BSD-2-Clause AND BSD-3-Clause
 
 ```
 
-### `apk` package: `libcap-ng`
-
-```console
-libcap-ng-0.7.10-r0 description:
-POSIX capabilities library
-
-libcap-ng-0.7.10-r0 webpage:
-http://people.redhat.com/sgrubb/libcap-ng/index.html
-
-libcap-ng-0.7.10-r0 installed size:
-40960
-
-libcap-ng-0.7.10-r0 license:
-GPL-2.0-or-later LGPL-2.1-or-later
-
-```
-
 ### `apk` package: `libcrypto1.1`
 
 ```console
@@ -646,57 +323,6 @@ MIT
 
 ```
 
-### `apk` package: `libfdisk`
-
-```console
-libfdisk-2.35.2-r0 description:
-Partitioning library for fdisk-like programs
-
-libfdisk-2.35.2-r0 webpage:
-https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-
-libfdisk-2.35.2-r0 installed size:
-380928
-
-libfdisk-2.35.2-r0 license:
-GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
-
-```
-
-### `apk` package: `libffi`
-
-```console
-libffi-3.3-r2 description:
-A portable, high level programming interface to various calling conventions.
-
-libffi-3.3-r2 webpage:
-https://sourceware.org/libffi
-
-libffi-3.3-r2 installed size:
-53248
-
-libffi-3.3-r2 license:
-MIT
-
-```
-
-### `apk` package: `libgcc`
-
-```console
-libgcc-9.3.0-r2 description:
-GNU C compiler runtime libraries
-
-libgcc-9.3.0-r2 webpage:
-https://gcc.gnu.org
-
-libgcc-9.3.0-r2 installed size:
-90112
-
-libgcc-9.3.0-r2 license:
-GPL-2.0-or-later LGPL-2.1-or-later
-
-```
-
 ### `apk` package: `libldap`
 
 ```console
@@ -711,57 +337,6 @@ libldap-2.4.50-r0 installed size:
 
 libldap-2.4.50-r0 license:
 custom
-
-```
-
-### `apk` package: `libldapcpp`
-
-```console
-libldapcpp-2.4.50-r0 description:
-LDAPv3 C++ Class Library
-
-libldapcpp-2.4.50-r0 webpage:
-https://www.openldap.org
-
-libldapcpp-2.4.50-r0 installed size:
-221184
-
-libldapcpp-2.4.50-r0 license:
-custom
-
-```
-
-### `apk` package: `libmount`
-
-```console
-libmount-2.35.2-r0 description:
-Block device identification library from util-linux
-
-libmount-2.35.2-r0 webpage:
-https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-
-libmount-2.35.2-r0 installed size:
-335872
-
-libmount-2.35.2-r0 license:
-GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
-
-```
-
-### `apk` package: `libpq`
-
-```console
-libpq-12.3-r2 description:
-PostgreSQL libraries
-
-libpq-12.3-r2 webpage:
-https://www.postgresql.org/
-
-libpq-12.3-r2 installed size:
-327680
-
-libpq-12.3-r2 license:
-PostgreSQL
 
 ```
 
@@ -782,23 +357,6 @@ custom
 
 ```
 
-### `apk` package: `libsmartcols`
-
-```console
-libsmartcols-2.35.2-r0 description:
-Formatting library for ls-like programs.
-
-libsmartcols-2.35.2-r0 webpage:
-https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-
-libsmartcols-2.35.2-r0 installed size:
-208896
-
-libsmartcols-2.35.2-r0 license:
-GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
-
-```
-
 ### `apk` package: `libssl1.1`
 
 ```console
@@ -813,23 +371,6 @@ libssl1.1-1.1.1g-r0 installed size:
 
 libssl1.1-1.1.1g-r0 license:
 OpenSSL
-
-```
-
-### `apk` package: `libstdc++`
-
-```console
-libstdc++-9.3.0-r2 description:
-GNU C++ standard runtime library
-
-libstdc++-9.3.0-r2 webpage:
-https://gcc.gnu.org
-
-libstdc++-9.3.0-r2 installed size:
-1671168
-
-libstdc++-9.3.0-r2 license:
-GPL-2.0-or-later LGPL-2.1-or-later
 
 ```
 
@@ -884,57 +425,6 @@ MIT
 
 ```
 
-### `apk` package: `llvm10`
-
-```console
-llvm10-10.0.0-r2 description:
-Low Level Virtual Machine compiler system, version 10
-
-llvm10-10.0.0-r2 webpage:
-https://llvm.org/
-
-llvm10-10.0.0-r2 installed size:
-10448896
-
-llvm10-10.0.0-r2 license:
-Apache-2.0
-
-```
-
-### `apk` package: `llvm10-libs`
-
-```console
-llvm10-libs-10.0.0-r2 description:
-LLVM 10 runtime library
-
-llvm10-libs-10.0.0-r2 webpage:
-https://llvm.org/
-
-llvm10-libs-10.0.0-r2 installed size:
-63430656
-
-llvm10-libs-10.0.0-r2 license:
-Apache-2.0
-
-```
-
-### `apk` package: `lsblk`
-
-```console
-lsblk-2.35.2-r0 description:
-lsblk from util-linux
-
-lsblk-2.35.2-r0 webpage:
-https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-
-lsblk-2.35.2-r0 installed size:
-139264
-
-lsblk-2.35.2-r0 license:
-GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
-
-```
-
 ### `apk` package: `lua5.1-libs`
 
 ```console
@@ -952,121 +442,19 @@ MIT
 
 ```
 
-### `apk` package: `mariadb-common`
-
-```console
-mariadb-common-10.4.13-r0 description:
-MariaDB common files for both server and client
-
-mariadb-common-10.4.13-r0 webpage:
-https://www.mariadb.org/
-
-mariadb-common-10.4.13-r0 installed size:
-2265088
-
-mariadb-common-10.4.13-r0 license:
-GPL-2.0-or-later
-
-```
-
-### `apk` package: `mariadb-connector-c`
-
-```console
-mariadb-connector-c-3.1.8-r1 description:
-The MariaDB Native Client library (C driver)
-
-mariadb-connector-c-3.1.8-r1 webpage:
-https://mariadb.org/
-
-mariadb-connector-c-3.1.8-r1 installed size:
-479232
-
-mariadb-connector-c-3.1.8-r1 license:
-LGPL-2.1-or-later
-
-```
-
-### `apk` package: `mariadb-connector-c-dev`
-
-```console
-mariadb-connector-c-dev-3.1.8-r1 description:
-The MariaDB Native Client library (C driver) (development files)
-
-mariadb-connector-c-dev-3.1.8-r1 webpage:
-https://mariadb.org/
-
-mariadb-connector-c-dev-3.1.8-r1 installed size:
-258048
-
-mariadb-connector-c-dev-3.1.8-r1 license:
-LGPL-2.1-or-later
-
-```
-
-### `apk` package: `mariadb-dev`
-
-```console
-mariadb-dev-10.4.13-r0 description:
-A fast SQL database server (development files)
-
-mariadb-dev-10.4.13-r0 webpage:
-https://www.mariadb.org/
-
-mariadb-dev-10.4.13-r0 installed size:
-6238208
-
-mariadb-dev-10.4.13-r0 license:
-GPL-2.0-or-later
-
-```
-
-### `apk` package: `mariadb-embedded`
-
-```console
-mariadb-embedded-10.4.13-r0 description:
-MariaDB as an embeddable library
-
-mariadb-embedded-10.4.13-r0 webpage:
-https://www.mariadb.org/
-
-mariadb-embedded-10.4.13-r0 installed size:
-18427904
-
-mariadb-embedded-10.4.13-r0 license:
-GPL-2.0-or-later
-
-```
-
-### `apk` package: `mcookie`
-
-```console
-mcookie-2.35.2-r0 description:
-mcookie from util-linux
-
-mcookie-2.35.2-r0 webpage:
-https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-
-mcookie-2.35.2-r0 installed size:
-45056
-
-mcookie-2.35.2-r0 license:
-GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
-
-```
-
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.24-r8 description:
+musl-1.1.24-r9 description:
 the musl c library (libc) implementation
 
-musl-1.1.24-r8 webpage:
+musl-1.1.24-r9 webpage:
 https://musl.libc.org/
 
-musl-1.1.24-r8 installed size:
+musl-1.1.24-r9 installed size:
 614400
 
-musl-1.1.24-r8 license:
+musl-1.1.24-r9 license:
 MIT
 
 ```
@@ -1088,40 +476,6 @@ MIT BSD GPL2+
 
 ```
 
-### `apk` package: `ncurses-libs`
-
-```console
-ncurses-libs-6.2_p20200523-r0 description:
-Ncurses libraries
-
-ncurses-libs-6.2_p20200523-r0 webpage:
-https://invisible-island.net/ncurses/
-
-ncurses-libs-6.2_p20200523-r0 installed size:
-507904
-
-ncurses-libs-6.2_p20200523-r0 license:
-MIT
-
-```
-
-### `apk` package: `ncurses-terminfo-base`
-
-```console
-ncurses-terminfo-base-6.2_p20200523-r0 description:
-Descriptions of common terminals
-
-ncurses-terminfo-base-6.2_p20200523-r0 webpage:
-https://invisible-island.net/ncurses/
-
-ncurses-terminfo-base-6.2_p20200523-r0 installed size:
-217088
-
-ncurses-terminfo-base-6.2_p20200523-r0 license:
-MIT
-
-```
-
 ### `apk` package: `nghttp2-libs`
 
 ```console
@@ -1136,40 +490,6 @@ nghttp2-libs-1.41.0-r0 installed size:
 
 nghttp2-libs-1.41.0-r0 license:
 MIT
-
-```
-
-### `apk` package: `openldap-dev`
-
-```console
-openldap-dev-2.4.50-r0 description:
-LDAP Server (development files)
-
-openldap-dev-2.4.50-r0 webpage:
-https://www.openldap.org
-
-openldap-dev-2.4.50-r0 installed size:
-2433024
-
-openldap-dev-2.4.50-r0 license:
-custom
-
-```
-
-### `apk` package: `openssl-dev`
-
-```console
-openssl-dev-1.1.1g-r0 description:
-Toolkit for Transport Layer Security (TLS) (development files)
-
-openssl-dev-1.1.1g-r0 webpage:
-https://www.openssl.org/
-
-openssl-dev-1.1.1g-r0 installed size:
-1634304
-
-openssl-dev-1.1.1g-r0 license:
-OpenSSL
 
 ```
 
@@ -1193,85 +513,17 @@ BSD-3-Clause
 ### `apk` package: `perl`
 
 ```console
-perl-5.30.2-r0 description:
+perl-5.30.3-r0 description:
 Larry Wall's Practical Extraction and Report Language
 
-perl-5.30.2-r0 webpage:
+perl-5.30.3-r0 webpage:
 https://www.perl.org/
 
-perl-5.30.2-r0 installed size:
-38621184
+perl-5.30.3-r0 installed size:
+38625280
 
-perl-5.30.2-r0 license:
+perl-5.30.3-r0 license:
 Artistic-Perl OR GPL-1.0-or-later
-
-```
-
-### `apk` package: `pkgconf`
-
-```console
-pkgconf-1.7.2-r0 description:
-development framework configuration tools
-
-pkgconf-1.7.2-r0 webpage:
-https://git.sr.ht/~kaniini/pkgconf
-
-pkgconf-1.7.2-r0 installed size:
-143360
-
-pkgconf-1.7.2-r0 license:
-ISC
-
-```
-
-### `apk` package: `postgresql-dev`
-
-```console
-postgresql-dev-12.3-r2 description:
-A sophisticated object-relational DBMS (development files)
-
-postgresql-dev-12.3-r2 webpage:
-https://www.postgresql.org/
-
-postgresql-dev-12.3-r2 installed size:
-9105408
-
-postgresql-dev-12.3-r2 license:
-PostgreSQL
-
-```
-
-### `apk` package: `postgresql-libs`
-
-```console
-postgresql-libs-12.3-r2 description:
-A sophisticated object-relational DBMS (libraries)
-
-postgresql-libs-12.3-r2 webpage:
-https://www.postgresql.org/
-
-postgresql-libs-12.3-r2 installed size:
-221184
-
-postgresql-libs-12.3-r2 license:
-PostgreSQL
-
-```
-
-### `apk` package: `readline`
-
-```console
-readline-8.0.4-r0 description:
-GNU readline library
-
-readline-8.0.4-r0 webpage:
-https://tiswww.cwru.edu/php/chet/readline/rltop.html
-
-readline-8.0.4-r0 installed size:
-299008
-
-readline-8.0.4-r0 license:
-GPL-2.0-or-later
 
 ```
 
@@ -1292,74 +544,6 @@ GPL-2.0-only
 
 ```
 
-### `apk` package: `setpriv`
-
-```console
-setpriv-2.35.2-r0 description:
-setpriv from util-linux
-
-setpriv-2.35.2-r0 webpage:
-https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-
-setpriv-2.35.2-r0 installed size:
-53248
-
-setpriv-2.35.2-r0 license:
-GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
-
-```
-
-### `apk` package: `sfdisk`
-
-```console
-sfdisk-2.35.2-r0 description:
-sfdisk from util-linux
-
-sfdisk-2.35.2-r0 webpage:
-https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-
-sfdisk-2.35.2-r0 installed size:
-135168
-
-sfdisk-2.35.2-r0 license:
-GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
-
-```
-
-### `apk` package: `sqlite-dev`
-
-```console
-sqlite-dev-3.32.1-r0 description:
-C library that implements an SQL database engine (development files)
-
-sqlite-dev-3.32.1-r0 webpage:
-https://www.sqlite.org/
-
-sqlite-dev-3.32.1-r0 installed size:
-643072
-
-sqlite-dev-3.32.1-r0 license:
-Public-Domain
-
-```
-
-### `apk` package: `sqlite-libs`
-
-```console
-sqlite-libs-3.32.1-r0 description:
-Sqlite3 library
-
-sqlite-libs-3.32.1-r0 webpage:
-https://www.sqlite.org/
-
-sqlite-libs-3.32.1-r0 installed size:
-962560
-
-sqlite-libs-3.32.1-r0 license:
-Public-Domain
-
-```
-
 ### `apk` package: `ssl_client`
 
 ```console
@@ -1374,40 +558,6 @@ ssl_client-1.31.1-r16 installed size:
 
 ssl_client-1.31.1-r16 license:
 GPL-2.0-only
-
-```
-
-### `apk` package: `util-linux`
-
-```console
-util-linux-2.35.2-r0 description:
-Random collection of Linux utilities
-
-util-linux-2.35.2-r0 webpage:
-https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-
-util-linux-2.35.2-r0 installed size:
-3862528
-
-util-linux-2.35.2-r0 license:
-GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
-
-```
-
-### `apk` package: `util-linux-dev`
-
-```console
-util-linux-dev-2.35.2-r0 description:
-Random collection of Linux utilities (development files)
-
-util-linux-dev-2.35.2-r0 webpage:
-https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-
-util-linux-dev-2.35.2-r0 installed size:
-2945024
-
-util-linux-dev-2.35.2-r0 license:
-GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
 
 ```
 
@@ -1441,23 +591,6 @@ zlib-1.2.11-r3 installed size:
 110592
 
 zlib-1.2.11-r3 license:
-Zlib
-
-```
-
-### `apk` package: `zlib-dev`
-
-```console
-zlib-dev-1.2.11-r3 description:
-A compression/decompression Library (development files)
-
-zlib-dev-1.2.11-r3 webpage:
-https://zlib.net/
-
-zlib-dev-1.2.11-r3 installed size:
-143360
-
-zlib-dev-1.2.11-r3 license:
 Zlib
 
 ```
