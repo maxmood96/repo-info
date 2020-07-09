@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:53a4675e9b5c48b3161ba808d068881b1a633aac303e62f122138885acd3d9e0`
-- Created: `2020-06-29T20:28:48.779771736Z`
-- Virtual Size: ~ 312.42 Mb  
+- Image ID: `sha256:94ce57411be90bac0489c4cc69a683cb62382fbbc40261778e98c59a9572b08d`
+- Created: `2020-07-07T00:15:11.248037672Z`
+- Virtual Size: ~ 312.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -744,20 +744,25 @@ $ apt-get source -qq --print-uris libpsl=0.19.1-5build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.19.1-5build1.debian.tar.xz' libpsl_0.19.1-5build1.debian.tar.xz 9860 SHA256:53285bee66ac22a25dd41f7778cc4e94ae3d61929eb6701a8064a38a964e40e2
 ```
 
-### `dpkg` source package: `libseccomp=2.4.1-0ubuntu0.18.04.2`
+### `dpkg` source package: `libseccomp=2.4.3-1ubuntu3.18.04.2`
 
 Binary Packages:
 
-- `libseccomp2:amd64=2.4.1-0ubuntu0.18.04.2`
+- `libseccomp2:amd64=2.4.3-1ubuntu3.18.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
 - `LGPL-2`
 - `LGPL-2.0+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libseccomp=2.4.3-1ubuntu3.18.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.4.3-1ubuntu3.18.04.2.dsc' libseccomp_2.4.3-1ubuntu3.18.04.2.dsc 1988 SHA256:c0e1dd33400a0a7175e2a273252af837a454ce6c43bbb9a70a74f9eb2d3526d9
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.4.3.orig.tar.gz' libseccomp_2.4.3.orig.tar.gz 598147 SHA256:cf15d1421997fac45b936515af61d209c4fd788af11005d212b3d0fd71e7991d
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.4.3-1ubuntu3.18.04.2.debian.tar.xz' libseccomp_2.4.3-1ubuntu3.18.04.2.debian.tar.xz 24652 SHA256:7718022b4b251b5c279d5d56d533ce1791b1718cb9427498375ea89b6d1517b5
+```
 
 ### `dpkg` source package: `libselinux=2.7-2build2`
 
