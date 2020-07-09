@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7d849fdb12beaa69fb4c2145967a651f72fb2d5750ca0d3a302ba8d51e5c634f`
-- Created: `2020-06-04T17:20:41.8922775Z`
-- Virtual Size: ~ 176.94 Mb  
+- Image ID: `sha256:4347da07f57892a879d4a1ab2f4f456de53315b7e9c16a5836fe684900f3f16b`
+- Created: `2020-07-06T21:05:40.732817025Z`
+- Virtual Size: ~ 176.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `build-date=20200604`
+  - `build-date=20200706`
   - `name=SL7 Base Image`
   - `vendor=Scientific Linux`
 
@@ -134,17 +134,17 @@ Enabling repos-source repository
 http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/bzip2-1.0.6-13.el7.src.rpm
 ```
 
-### `rpm` package: `ca-certificates-2019.2.32-76.el7_7.noarch`
+### `rpm` package: `ca-certificates-2020.2.41-70.0.el7_8.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls ca-certificates-2019.2.32-76.el7_7.noarch
+$ yumdownloader --quiet --source --urls ca-certificates-2020.2.41-70.0.el7_8.noarch
 Enabling sl-source repository
 Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/ca-certificates-2019.2.32-76.el7_7.src.rpm
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/ca-certificates-2020.2.41-70.0.el7_8.src.rpm
 ```
 
 ### `rpm` package: `chkconfig-1.7.4-1.el7.x86_64`
@@ -1706,30 +1706,30 @@ Enabling repos-source repository
 http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/sqlite-3.7.17-8.el7_7.1.src.rpm
 ```
 
-### `rpm` package: `systemd-219-73.el7_8.6.x86_64`
+### `rpm` package: `systemd-219-73.el7_8.8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls systemd-219-73.el7_8.6
+$ yumdownloader --quiet --source --urls systemd-219-73.el7_8.8
 Enabling sl-source repository
 Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/systemd-219-73.el7_8.6.src.rpm
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/systemd-219-73.el7_8.8.src.rpm
 ```
 
-### `rpm` package: `systemd-libs-219-73.el7_8.6.x86_64`
+### `rpm` package: `systemd-libs-219-73.el7_8.8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls systemd-libs-219-73.el7_8.6
+$ yumdownloader --quiet --source --urls systemd-libs-219-73.el7_8.8
 Enabling sl-source repository
 Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/systemd-219-73.el7_8.6.src.rpm
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/systemd-219-73.el7_8.8.src.rpm
 ```
 
 ### `rpm` package: `tar-1.26-35.el7.x86_64`
