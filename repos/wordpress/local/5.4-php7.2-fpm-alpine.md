@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ae8b41732f1cf4ff65b1d1131a6641c7589fbe530dd2c8bbe30ea76b93c7cc0e`
-- Created: `2020-06-26T22:40:50.827705706Z`
-- Virtual Size: ~ 231.08 Mb  
+- Image ID: `sha256:4dc44f3bb0535eb63894de74e1feee1c2350234ca046af886b7bf8746138248a`
+- Created: `2020-07-10T06:26:12.39093768Z`
+- Virtual Size: ~ 230.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.31`
-  - `PHP_URL=https://www.php.net/distributions/php-7.2.31.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.2.31.tar.xz.asc`
-  - `PHP_SHA256=8beaa634bb878a96af9bc8643811ea46973f5f41ad2bfb6ab4cfd290e5a39806`
+  - `PHP_VERSION=7.2.32`
+  - `PHP_URL=https://www.php.net/distributions/php-7.2.32.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.2.32.tar.xz.asc`
+  - `PHP_SHA256=050fc16ca56d8d2365d980998220a4eb06439da71dfd38de49b42fea72310ef1`
   - `PHP_MD5=`
   - `WORDPRESS_VERSION=5.4.2`
   - `WORDPRESS_SHA1=e5631f812232fbd45d3431783d3db2e0d5670d2d`
@@ -388,16 +388,16 @@ AGPL-3.0-or-later
 ### `apk` package: `glib`
 
 ```console
-glib-2.64.3-r0 description:
+glib-2.64.4-r0 description:
 Common C routines used by Gtk+ and other libs
 
-glib-2.64.3-r0 webpage:
+glib-2.64.4-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.64.3-r0 installed size:
+glib-2.64.4-r0 installed size:
 3366912
 
-glib-2.64.3-r0 license:
+glib-2.64.4-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -830,16 +830,16 @@ Libpng
 ### `apk` package: `librsvg`
 
 ```console
-librsvg-2.48.7-r0 description:
+librsvg-2.48.8-r0 description:
 SAX-based renderer for SVG files into a GdkPixbuf
 
-librsvg-2.48.7-r0 webpage:
+librsvg-2.48.8-r0 webpage:
 https://wiki.gnome.org/Projects/LibRsvg
 
-librsvg-2.48.7-r0 installed size:
-9613312
+librsvg-2.48.8-r0 installed size:
+9695232
 
-librsvg-2.48.7-r0 license:
+librsvg-2.48.8-r0 license:
 LGPL-2.1-or-later
 
 ```
