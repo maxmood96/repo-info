@@ -86,19 +86,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.1.6
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.1.6.dsc' apt_2.1.6.dsc 2756 SHA256:2f67d337161de54faf006ffab369292b5b7e85811bda0211e28bce5230e71d18
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.1.6.tar.xz' apt_2.1.6.tar.xz 2173604 SHA256:9994f8e1f4f52ce85f41aed50d5d7897e7b3c19cd5838c8d42012a6fecb4b41a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.1.6/
 
-- https://sources.debian.net/src/apt/2.1.6/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.1.6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.1.6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.48-5`
 
@@ -426,19 +420,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.252
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.252.dsc' cdebconf_0.252.dsc 2750 SHA256:f0f6d4434923445c165812f87f91c986dbc42592bdce2fc8bd562534a3bbbe14
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.252.tar.xz' cdebconf_0.252.tar.xz 275488 SHA256:ebc377a6d605c9a2e93e904fdee6e82707c56c6adc600a4e65939fbcb791bb2f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cdebconf/0.252/
 
-- https://sources.debian.net/src/cdebconf/0.252/ (for browsing the source)
-- https://sources.debian.net/src/cdebconf/0.252/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cdebconf/0.252/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cluster=2.1.0-2`
 
@@ -1750,20 +1738,13 @@ Licenses: (parsed from: `/usr/share/doc/less/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris less=551-1
-'http://deb.debian.org/debian/pool/main/l/less/less_551-1.dsc' less_551-1.dsc 1631 SHA256:b6f0680e5187a0debb1b9a701e56fdae4a14fcb7e862cee5e1155b6db2077359
-'http://deb.debian.org/debian/pool/main/l/less/less_551.orig.tar.gz' less_551.orig.tar.gz 347007 SHA256:ff165275859381a63f19135a8f1f6c5a194d53ec3187f94121ecd8ef0795fe3d
-'http://deb.debian.org/debian/pool/main/l/less/less_551-1.debian.tar.xz' less_551-1.debian.tar.xz 18636 SHA256:b61427dea098bc5566efb385a14ccf7071a9eec07baf2bf8881101628c579cb3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/less/551-1/
 
-- https://sources.debian.net/src/less/551-1/ (for browsing the source)
-- https://sources.debian.net/src/less/551-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/less/551-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libbsd=0.10.0-1`
 
