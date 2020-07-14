@@ -1,10 +1,10 @@
-# `php:8.0.0alpha1-cli-alpine3.12`
+# `php:8.0.0alpha2-cli-alpine3.12`
 
 ## Docker Metadata
 
-- Image ID: `sha256:788ca7bd2765a440df904a1f3a97b4179ae1f6a21c96981726eda0f5f6b0f8b5`
-- Created: `2020-06-26T20:17:05.268016386Z`
-- Virtual Size: ~ 80.87 Mb  
+- Image ID: `sha256:2d9a956f76f06ccdd714bc3b2b8b35574eb89b1778caee4a95a4eb48f38190d8`
+- Created: `2020-07-09T22:50:20.010704397Z`
+- Virtual Size: ~ 80.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F`
-  - `PHP_VERSION=8.0.0alpha1`
-  - `PHP_URL=https://downloads.php.net/~pollita/php-8.0.0alpha1.tar.xz`
-  - `PHP_ASC_URL=https://downloads.php.net/~pollita/php-8.0.0alpha1.tar.xz.asc`
-  - `PHP_SHA256=2ab527b3b96908b123271ee390ea01169effeb5027a7f85dbe4d0d37d7da1628`
+  - `PHP_VERSION=8.0.0alpha2`
+  - `PHP_URL=https://downloads.php.net/~carusogabriel/php-8.0.0alpha2.tar.xz`
+  - `PHP_ASC_URL=https://downloads.php.net/~carusogabriel/php-8.0.0alpha2.tar.xz.asc`
+  - `PHP_SHA256=9071e16db76a91df4b8d485eff0d7a40f57053c97709ceb59912c99ac4b95d89`
   - `PHP_MD5=`
 
 ## `apk` (`.apk`-based packages)
