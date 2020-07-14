@@ -1,7 +1,7 @@
 ## `caddy:2-builder`
 
 ```console
-$ docker pull caddy@sha256:aaccc5619af0303dd34155904cd0a59126d806494344a82b50ae40b75474d221
+$ docker pull caddy@sha256:5537e0a96ca3d26fcc0d3f94d5f6e32d7d6821df6a08c904777322d75d97f160
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -114,14 +114,14 @@ WORKDIR /src/custom-caddy/cmd/caddy
 ### `caddy:2-builder` - linux; arm variant v6
 
 ```console
-$ docker pull caddy@sha256:e22e313c0b989a14734b7d6a870cbb161d3bbce596d0464c1a4a30e29eed42a2
+$ docker pull caddy@sha256:576976b3ab5f2a86f7a5ddd4ea437f28385e1b68b0658442f2899800cbd61e8c
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **326.4 MB (326364241 bytes)**  
+-	Total Size: **326.4 MB (326364244 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3c89d3a9be9f9b9317c9fb9f9595f14842ed72bee937e42e2c5dc9736a0184f7`
+-	Image ID: `sha256:14aaf79c281ac4dda260a4e7aa7314107e5fdf503bd14f38071a64776c624b13`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -157,9 +157,9 @@ RUN git clone -b $CADDY_SOURCE_VERSION https://github.com/caddyserver/caddy.git 
 WORKDIR /src/caddy/cmd/caddy
 # Tue, 30 Jun 2020 23:50:38 GMT
 RUN go get -d ./...
-# Tue, 30 Jun 2020 23:50:43 GMT
-COPY file:83b813b69aee8796ce6cdf324efd1e9890d70da3ae40d917ee2f320c487134c6 in /usr/bin/caddy-builder 
-# Tue, 30 Jun 2020 23:50:44 GMT
+# Tue, 14 Jul 2020 00:49:32 GMT
+COPY file:ed649bfc3baea8b334bfe88e6442632ecdc59b7c07d01b02a6c4558e5d77f98a in /usr/bin/caddy-builder 
+# Tue, 14 Jul 2020 00:49:32 GMT
 WORKDIR /src/custom-caddy/cmd/caddy
 ```
 
@@ -200,13 +200,13 @@ WORKDIR /src/custom-caddy/cmd/caddy
 		Last Modified: Tue, 30 Jun 2020 23:52:04 GMT  
 		Size: 184.2 MB (184239271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89ff94bab35f82fddff7da755a0e8be00e7eb4d5e609dd18f7f11973bc7a4b08`  
-		Last Modified: Tue, 30 Jun 2020 23:51:16 GMT  
-		Size: 513.0 B  
+	-	`sha256:15d2516156bc5b029c3cdb8ff73d5a14a1fa895581e22082d6ec51561e398246`  
+		Last Modified: Tue, 14 Jul 2020 00:49:45 GMT  
+		Size: 515.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46449ce8dce15ddfd740cdda07cd834fbea8324e44a8dc86e9418d8930d8fbe5`  
-		Last Modified: Tue, 30 Jun 2020 23:51:16 GMT  
-		Size: 183.0 B  
+	-	`sha256:990270e1d3af55a3669a82b4e9b7a9241550d8c746c91339b735be075273bb68`  
+		Last Modified: Tue, 14 Jul 2020 00:49:45 GMT  
+		Size: 184.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2-builder` - linux; arm variant v7
@@ -310,14 +310,14 @@ WORKDIR /src/custom-caddy/cmd/caddy
 ### `caddy:2-builder` - linux; arm64 variant v8
 
 ```console
-$ docker pull caddy@sha256:dd14a703ad5a26ffa7de82fbf23106617876e6542e6cae4bb11cdfd7fecf0985
+$ docker pull caddy@sha256:5506a78bc54fc30be64368450d33bf8ad6fe9c34e0eb431d6f1569a452d90e00
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **325.3 MB (325331656 bytes)**  
+-	Total Size: **325.3 MB (325331662 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:226bb48667615278e4dee44611a6f3bc288af0cbf1f080226dcc308275141482`
+-	Image ID: `sha256:6d691999d8f5fb04014d78265f6b7516d3e164e8c945a47e0004b6fa328db55e`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -353,9 +353,9 @@ RUN git clone -b $CADDY_SOURCE_VERSION https://github.com/caddyserver/caddy.git 
 WORKDIR /src/caddy/cmd/caddy
 # Tue, 30 Jun 2020 23:40:39 GMT
 RUN go get -d ./...
-# Tue, 30 Jun 2020 23:40:46 GMT
-COPY file:83b813b69aee8796ce6cdf324efd1e9890d70da3ae40d917ee2f320c487134c6 in /usr/bin/caddy-builder 
-# Tue, 30 Jun 2020 23:40:46 GMT
+# Tue, 14 Jul 2020 00:39:52 GMT
+COPY file:ed649bfc3baea8b334bfe88e6442632ecdc59b7c07d01b02a6c4558e5d77f98a in /usr/bin/caddy-builder 
+# Tue, 14 Jul 2020 00:39:53 GMT
 WORKDIR /src/custom-caddy/cmd/caddy
 ```
 
@@ -396,13 +396,13 @@ WORKDIR /src/custom-caddy/cmd/caddy
 		Last Modified: Tue, 30 Jun 2020 23:41:57 GMT  
 		Size: 184.2 MB (184237073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3bea5a4cbbd78d491a7e68e2416b08b338f44dc16391b392cfee8bc7402cdca0`  
-		Last Modified: Tue, 30 Jun 2020 23:41:15 GMT  
-		Size: 510.0 B  
+	-	`sha256:acff171601695c4eec7a859d160c7580c20bb6bbc4d9be626258471faaf2271c`  
+		Last Modified: Tue, 14 Jul 2020 00:40:05 GMT  
+		Size: 515.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8478b518bb5c87d93de66aee41cd91abdf4ef7f6132fb047b5437d86ce0f020`  
-		Last Modified: Tue, 30 Jun 2020 23:41:15 GMT  
-		Size: 183.0 B  
+	-	`sha256:9fb41e7930bed2f4006e871708175b451af98829c0df5cbe4d3bff198477b929`  
+		Last Modified: Tue, 14 Jul 2020 00:40:05 GMT  
+		Size: 184.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2-builder` - linux; ppc64le
@@ -506,14 +506,14 @@ WORKDIR /src/custom-caddy/cmd/caddy
 ### `caddy:2-builder` - linux; s390x
 
 ```console
-$ docker pull caddy@sha256:abece892e9c1d34cf4e58818b6e955f1245042d7c9af17a76e5d4871d05b680f
+$ docker pull caddy@sha256:f994b04eb82e925976a32e4ae57f3f4bee51deb381f8309b1e9015fff0b24e95
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **330.4 MB (330350401 bytes)**  
+-	Total Size: **330.4 MB (330350400 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c515a83c152d93961b4a06516fa3dfa07c586364f26f1032073d2f6a67cbb2b5`
+-	Image ID: `sha256:350053e99dd1b07d42622cbdb2095e61b6ef9c1eed37dd403caf95acfe468c55`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -549,9 +549,9 @@ RUN git clone -b $CADDY_SOURCE_VERSION https://github.com/caddyserver/caddy.git 
 WORKDIR /src/caddy/cmd/caddy
 # Tue, 30 Jun 2020 23:42:14 GMT
 RUN go get -d ./...
-# Tue, 30 Jun 2020 23:42:28 GMT
-COPY file:83b813b69aee8796ce6cdf324efd1e9890d70da3ae40d917ee2f320c487134c6 in /usr/bin/caddy-builder 
-# Tue, 30 Jun 2020 23:42:29 GMT
+# Tue, 14 Jul 2020 00:41:31 GMT
+COPY file:ed649bfc3baea8b334bfe88e6442632ecdc59b7c07d01b02a6c4558e5d77f98a in /usr/bin/caddy-builder 
+# Tue, 14 Jul 2020 00:41:32 GMT
 WORKDIR /src/custom-caddy/cmd/caddy
 ```
 
@@ -592,11 +592,11 @@ WORKDIR /src/custom-caddy/cmd/caddy
 		Last Modified: Tue, 30 Jun 2020 23:43:18 GMT  
 		Size: 184.2 MB (184233221 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a41d0d57ba486d3311fcc98ee48f170ee2f22db1f24ac5e20a7fa11bb8a6c025`  
-		Last Modified: Tue, 30 Jun 2020 23:42:56 GMT  
-		Size: 512.0 B  
+	-	`sha256:a406c4ee521764c51c342652e8a2cdca422111ef045b547581bfd61c5f05a76f`  
+		Last Modified: Tue, 14 Jul 2020 00:41:42 GMT  
+		Size: 511.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afa4634fdf0713a3dbf80607ad3b2210af124d3c2295c1e642e9f1371cfe5777`  
-		Last Modified: Tue, 30 Jun 2020 23:43:01 GMT  
+	-	`sha256:574690c50692595ac9bf784eab29a01c406c1e746859cf1e4b34f503f5aa8bdb`  
+		Last Modified: Tue, 14 Jul 2020 00:41:47 GMT  
 		Size: 182.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
