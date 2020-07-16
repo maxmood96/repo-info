@@ -4626,14 +4626,9 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `MLAA`
 - `SGI`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=19.2.8-0ubuntu0~18.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_19.2.8-0ubuntu0~18.04.3.dsc' mesa_19.2.8-0ubuntu0~18.04.3.dsc 5306 SHA256:ee0c2d52bc9e6db98477e7aeb9fff61b185e63787774439f557cba56bc243084
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_19.2.8.orig.tar.gz' mesa_19.2.8.orig.tar.gz 17662298 SHA256:49230604cc3f2847b29fce7481d57461f79902a766df9c48bcf53fb8d394b224
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_19.2.8-0ubuntu0~18.04.3.diff.gz' mesa_19.2.8-0ubuntu0~18.04.3.diff.gz 125216 SHA256:a7daf9875959d7322ce3544fcceeeacb99f3f31466228e92acf2c809f32c7aaf
-```
 
 ### `dpkg` source package: `mime-support=3.60ubuntu1`
 
