@@ -33,7 +33,7 @@
 ## `gradle:6.5`
 
 ```console
-$ docker pull gradle@sha256:10df187cb99774a208aaf54b139d58d654ec885a3a76419b8668656010ea703e
+$ docker pull gradle@sha256:79c80c35dbf760580bba9dcd99de07f32db6caa54e0c6e515ee139d82381df39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -45,14 +45,14 @@ $ docker pull gradle@sha256:10df187cb99774a208aaf54b139d58d654ec885a3a76419b8668
 ### `gradle:6.5` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:0c567e3c34943acde9b72e00300395f8148d27731d1b07706c81a2eb044b2d49
+$ docker pull gradle@sha256:2b3c57831088f8c767c009f441f2584f61c249ae928fad3599c14fdb13b51e60
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **293.8 MB (293773404 bytes)**  
+-	Total Size: **295.5 MB (295496791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63a06ad25ffc0fce6b9d30c05541ff32ef3bb8539e3c99cd13a1a2a96cf2aad4`
+-	Image ID: `sha256:864401413f8190c196649ab996fd27cb85e6d29f48b5f181f1129012480ff0ee`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -68,31 +68,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:03:21 GMT
-ENV JAVA_VERSION=jdk8u252-b09
-# Mon, 06 Jul 2020 23:03:28 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='536bf397d98174b376da9ed49d2f659d65c7310318d8211444f4b7ba7c15e453';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_aarch64_linux_hotspot_8u252b09.tar.gz';          ;;        armhf|armv7l)          ESUM='5b401ad3c9b246281bd6df34b1abaf75e10e5cad9c6b26b55232b016e90e411a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_arm_linux_hotspot_8u252b09.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='55f0453b1d28812154138cf52b17b7acd93b9e55263f1f508f559795d31b2671';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u252b09.tar.gz';          ;;        s390x)          ESUM='db39932666c37718b1c3c62a1adb4f8e9c33258cf15a85ddf9b4d71199edfb1d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_s390x_linux_hotspot_8u252b09.tar.gz';          ;;        amd64|x86_64)          ESUM='2b59b5282ff32bce7abba8ad6b9fde34c15a98f949ad8ae43e789bbd78fc8862';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_x64_linux_hotspot_8u252b09.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:03:29 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:19:52 GMT
+ENV JAVA_VERSION=jdk8u262-b10
+# Fri, 17 Jul 2020 22:20:00 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7be0b2a4c749a277302a54b456624c076b3a5b990ad502e2a72d803ab31aecab';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='dd85ebb9a64916b4b621a23729e3360adb363d430bf1e99e98f25397834d74bd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d2a16915fb85ba851145c91cda5666cb78f06bf4713a2b3bdce813779ff972c2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='a504af6924a095cfb6c392653dccd7299925048c91b399d05efa95a094820120';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='733755fd649fad6ae91fc083f7e5a5a0b56410fb6ac1815cff29f744b128b1b1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:20:00 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 03:26:30 GMT
+# Fri, 17 Jul 2020 22:58:11 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:26:30 GMT
+# Fri, 17 Jul 2020 22:58:11 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:26:57 GMT
+# Fri, 17 Jul 2020 22:58:34 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:26:58 GMT
+# Fri, 17 Jul 2020 22:58:35 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:26:58 GMT
+# Fri, 17 Jul 2020 22:58:35 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:27:03 GMT
+# Fri, 17 Jul 2020 22:58:40 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -114,25 +114,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ebafcb948fa26ecf0a81e1f030a5258f58fbbca5eb8d6669348a9df00eadcc2`  
-		Last Modified: Mon, 06 Jul 2020 23:07:34 GMT  
-		Size: 102.7 MB (102690072 bytes)  
+	-	`sha256:d119f9c502a13708ca69878c432d637073f2f7311ffd6b8e2b584a4f68c7fcf2`  
+		Last Modified: Fri, 17 Jul 2020 22:23:22 GMT  
+		Size: 103.7 MB (103736353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d65a8d0d90b871faa7911593e4aaeae568522ccf2855d74828b920ef6e1dec02`  
-		Last Modified: Tue, 07 Jul 2020 03:29:45 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:1d010a97e0ac828392f864109a0969f1db978057bfc826e95b19c9e297e75ae9`  
+		Last Modified: Fri, 17 Jul 2020 23:01:20 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b59f24a81e2677fcdb327c23d8afc692b121ae0dd4567d9c2e7e2b3c55d62c3e`  
-		Last Modified: Tue, 07 Jul 2020 03:29:55 GMT  
-		Size: 48.7 MB (48655113 bytes)  
+	-	`sha256:86cdd3c13fed9a7f9c3b78f300dc517ddfb1deafae45cbdc3ddf660bd1f7db5f`  
+		Last Modified: Fri, 17 Jul 2020 23:01:30 GMT  
+		Size: 48.8 MB (48768749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d63278ca4b835a2b21140f139c916d450042c9398f56db01ad0cd2cfb01defb`  
-		Last Modified: Tue, 07 Jul 2020 03:29:54 GMT  
-		Size: 102.4 MB (102379513 bytes)  
+	-	`sha256:a8d335b1e876145c7a468bb7fe04c71b8879ee5cfdbbe7e18566f5e180694575`  
+		Last Modified: Fri, 17 Jul 2020 23:01:27 GMT  
+		Size: 102.4 MB (102379484 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5` - linux; ppc64le
@@ -324,7 +324,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:6.5.1`
 
 ```console
-$ docker pull gradle@sha256:10df187cb99774a208aaf54b139d58d654ec885a3a76419b8668656010ea703e
+$ docker pull gradle@sha256:79c80c35dbf760580bba9dcd99de07f32db6caa54e0c6e515ee139d82381df39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -336,14 +336,14 @@ $ docker pull gradle@sha256:10df187cb99774a208aaf54b139d58d654ec885a3a76419b8668
 ### `gradle:6.5.1` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:0c567e3c34943acde9b72e00300395f8148d27731d1b07706c81a2eb044b2d49
+$ docker pull gradle@sha256:2b3c57831088f8c767c009f441f2584f61c249ae928fad3599c14fdb13b51e60
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **293.8 MB (293773404 bytes)**  
+-	Total Size: **295.5 MB (295496791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63a06ad25ffc0fce6b9d30c05541ff32ef3bb8539e3c99cd13a1a2a96cf2aad4`
+-	Image ID: `sha256:864401413f8190c196649ab996fd27cb85e6d29f48b5f181f1129012480ff0ee`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -359,31 +359,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:03:21 GMT
-ENV JAVA_VERSION=jdk8u252-b09
-# Mon, 06 Jul 2020 23:03:28 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='536bf397d98174b376da9ed49d2f659d65c7310318d8211444f4b7ba7c15e453';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_aarch64_linux_hotspot_8u252b09.tar.gz';          ;;        armhf|armv7l)          ESUM='5b401ad3c9b246281bd6df34b1abaf75e10e5cad9c6b26b55232b016e90e411a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_arm_linux_hotspot_8u252b09.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='55f0453b1d28812154138cf52b17b7acd93b9e55263f1f508f559795d31b2671';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u252b09.tar.gz';          ;;        s390x)          ESUM='db39932666c37718b1c3c62a1adb4f8e9c33258cf15a85ddf9b4d71199edfb1d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_s390x_linux_hotspot_8u252b09.tar.gz';          ;;        amd64|x86_64)          ESUM='2b59b5282ff32bce7abba8ad6b9fde34c15a98f949ad8ae43e789bbd78fc8862';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_x64_linux_hotspot_8u252b09.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:03:29 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:19:52 GMT
+ENV JAVA_VERSION=jdk8u262-b10
+# Fri, 17 Jul 2020 22:20:00 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7be0b2a4c749a277302a54b456624c076b3a5b990ad502e2a72d803ab31aecab';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='dd85ebb9a64916b4b621a23729e3360adb363d430bf1e99e98f25397834d74bd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d2a16915fb85ba851145c91cda5666cb78f06bf4713a2b3bdce813779ff972c2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='a504af6924a095cfb6c392653dccd7299925048c91b399d05efa95a094820120';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='733755fd649fad6ae91fc083f7e5a5a0b56410fb6ac1815cff29f744b128b1b1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:20:00 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 03:26:30 GMT
+# Fri, 17 Jul 2020 22:58:11 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:26:30 GMT
+# Fri, 17 Jul 2020 22:58:11 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:26:57 GMT
+# Fri, 17 Jul 2020 22:58:34 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:26:58 GMT
+# Fri, 17 Jul 2020 22:58:35 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:26:58 GMT
+# Fri, 17 Jul 2020 22:58:35 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:27:03 GMT
+# Fri, 17 Jul 2020 22:58:40 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -405,25 +405,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ebafcb948fa26ecf0a81e1f030a5258f58fbbca5eb8d6669348a9df00eadcc2`  
-		Last Modified: Mon, 06 Jul 2020 23:07:34 GMT  
-		Size: 102.7 MB (102690072 bytes)  
+	-	`sha256:d119f9c502a13708ca69878c432d637073f2f7311ffd6b8e2b584a4f68c7fcf2`  
+		Last Modified: Fri, 17 Jul 2020 22:23:22 GMT  
+		Size: 103.7 MB (103736353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d65a8d0d90b871faa7911593e4aaeae568522ccf2855d74828b920ef6e1dec02`  
-		Last Modified: Tue, 07 Jul 2020 03:29:45 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:1d010a97e0ac828392f864109a0969f1db978057bfc826e95b19c9e297e75ae9`  
+		Last Modified: Fri, 17 Jul 2020 23:01:20 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b59f24a81e2677fcdb327c23d8afc692b121ae0dd4567d9c2e7e2b3c55d62c3e`  
-		Last Modified: Tue, 07 Jul 2020 03:29:55 GMT  
-		Size: 48.7 MB (48655113 bytes)  
+	-	`sha256:86cdd3c13fed9a7f9c3b78f300dc517ddfb1deafae45cbdc3ddf660bd1f7db5f`  
+		Last Modified: Fri, 17 Jul 2020 23:01:30 GMT  
+		Size: 48.8 MB (48768749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d63278ca4b835a2b21140f139c916d450042c9398f56db01ad0cd2cfb01defb`  
-		Last Modified: Tue, 07 Jul 2020 03:29:54 GMT  
-		Size: 102.4 MB (102379513 bytes)  
+	-	`sha256:a8d335b1e876145c7a468bb7fe04c71b8879ee5cfdbbe7e18566f5e180694575`  
+		Last Modified: Fri, 17 Jul 2020 23:01:27 GMT  
+		Size: 102.4 MB (102379484 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5.1` - linux; ppc64le
@@ -615,7 +615,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:6.5.1-jdk`
 
 ```console
-$ docker pull gradle@sha256:10df187cb99774a208aaf54b139d58d654ec885a3a76419b8668656010ea703e
+$ docker pull gradle@sha256:79c80c35dbf760580bba9dcd99de07f32db6caa54e0c6e515ee139d82381df39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -627,14 +627,14 @@ $ docker pull gradle@sha256:10df187cb99774a208aaf54b139d58d654ec885a3a76419b8668
 ### `gradle:6.5.1-jdk` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:0c567e3c34943acde9b72e00300395f8148d27731d1b07706c81a2eb044b2d49
+$ docker pull gradle@sha256:2b3c57831088f8c767c009f441f2584f61c249ae928fad3599c14fdb13b51e60
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **293.8 MB (293773404 bytes)**  
+-	Total Size: **295.5 MB (295496791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63a06ad25ffc0fce6b9d30c05541ff32ef3bb8539e3c99cd13a1a2a96cf2aad4`
+-	Image ID: `sha256:864401413f8190c196649ab996fd27cb85e6d29f48b5f181f1129012480ff0ee`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -650,31 +650,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:03:21 GMT
-ENV JAVA_VERSION=jdk8u252-b09
-# Mon, 06 Jul 2020 23:03:28 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='536bf397d98174b376da9ed49d2f659d65c7310318d8211444f4b7ba7c15e453';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_aarch64_linux_hotspot_8u252b09.tar.gz';          ;;        armhf|armv7l)          ESUM='5b401ad3c9b246281bd6df34b1abaf75e10e5cad9c6b26b55232b016e90e411a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_arm_linux_hotspot_8u252b09.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='55f0453b1d28812154138cf52b17b7acd93b9e55263f1f508f559795d31b2671';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u252b09.tar.gz';          ;;        s390x)          ESUM='db39932666c37718b1c3c62a1adb4f8e9c33258cf15a85ddf9b4d71199edfb1d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_s390x_linux_hotspot_8u252b09.tar.gz';          ;;        amd64|x86_64)          ESUM='2b59b5282ff32bce7abba8ad6b9fde34c15a98f949ad8ae43e789bbd78fc8862';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_x64_linux_hotspot_8u252b09.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:03:29 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:19:52 GMT
+ENV JAVA_VERSION=jdk8u262-b10
+# Fri, 17 Jul 2020 22:20:00 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7be0b2a4c749a277302a54b456624c076b3a5b990ad502e2a72d803ab31aecab';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='dd85ebb9a64916b4b621a23729e3360adb363d430bf1e99e98f25397834d74bd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d2a16915fb85ba851145c91cda5666cb78f06bf4713a2b3bdce813779ff972c2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='a504af6924a095cfb6c392653dccd7299925048c91b399d05efa95a094820120';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='733755fd649fad6ae91fc083f7e5a5a0b56410fb6ac1815cff29f744b128b1b1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:20:00 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 03:26:30 GMT
+# Fri, 17 Jul 2020 22:58:11 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:26:30 GMT
+# Fri, 17 Jul 2020 22:58:11 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:26:57 GMT
+# Fri, 17 Jul 2020 22:58:34 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:26:58 GMT
+# Fri, 17 Jul 2020 22:58:35 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:26:58 GMT
+# Fri, 17 Jul 2020 22:58:35 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:27:03 GMT
+# Fri, 17 Jul 2020 22:58:40 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -696,25 +696,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ebafcb948fa26ecf0a81e1f030a5258f58fbbca5eb8d6669348a9df00eadcc2`  
-		Last Modified: Mon, 06 Jul 2020 23:07:34 GMT  
-		Size: 102.7 MB (102690072 bytes)  
+	-	`sha256:d119f9c502a13708ca69878c432d637073f2f7311ffd6b8e2b584a4f68c7fcf2`  
+		Last Modified: Fri, 17 Jul 2020 22:23:22 GMT  
+		Size: 103.7 MB (103736353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d65a8d0d90b871faa7911593e4aaeae568522ccf2855d74828b920ef6e1dec02`  
-		Last Modified: Tue, 07 Jul 2020 03:29:45 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:1d010a97e0ac828392f864109a0969f1db978057bfc826e95b19c9e297e75ae9`  
+		Last Modified: Fri, 17 Jul 2020 23:01:20 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b59f24a81e2677fcdb327c23d8afc692b121ae0dd4567d9c2e7e2b3c55d62c3e`  
-		Last Modified: Tue, 07 Jul 2020 03:29:55 GMT  
-		Size: 48.7 MB (48655113 bytes)  
+	-	`sha256:86cdd3c13fed9a7f9c3b78f300dc517ddfb1deafae45cbdc3ddf660bd1f7db5f`  
+		Last Modified: Fri, 17 Jul 2020 23:01:30 GMT  
+		Size: 48.8 MB (48768749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d63278ca4b835a2b21140f139c916d450042c9398f56db01ad0cd2cfb01defb`  
-		Last Modified: Tue, 07 Jul 2020 03:29:54 GMT  
-		Size: 102.4 MB (102379513 bytes)  
+	-	`sha256:a8d335b1e876145c7a468bb7fe04c71b8879ee5cfdbbe7e18566f5e180694575`  
+		Last Modified: Fri, 17 Jul 2020 23:01:27 GMT  
+		Size: 102.4 MB (102379484 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5.1-jdk` - linux; ppc64le
@@ -906,7 +906,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:6.5.1-jdk11`
 
 ```console
-$ docker pull gradle@sha256:ba54e8f658dd9a676ac839adb2adf3b432df89a2fb34010f3a996862a3eaef78
+$ docker pull gradle@sha256:41b1f0e07af7e9391dcfd8fec762fd98b58d7746a487fc300869b5a3762b8a59
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -918,14 +918,14 @@ $ docker pull gradle@sha256:ba54e8f658dd9a676ac839adb2adf3b432df89a2fb34010f3a99
 ### `gradle:6.5.1-jdk11` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:dfd049644e0ab46b5d8112ec686e2b0ae7baeeb56f92d50a1c5b8fd3599477ea
+$ docker pull gradle@sha256:b31990a058a34018948a99957cf467f57db91c35c60e521f7754cfddc4f0abe5
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **385.3 MB (385294091 bytes)**  
+-	Total Size: **386.0 MB (386026499 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d58f2d89bd62b7f774d810b468321cfdd132bb758217e844ddc7fc5727dcdd4`
+-	Image ID: `sha256:365df73aa399ba48003d3db6b90936098cffbc506f80a8f5fe0d01308e87598b`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -941,33 +941,33 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:03:41 GMT
-ENV JAVA_VERSION=jdk-11.0.7+10
-# Mon, 06 Jul 2020 23:03:53 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='3b8b8bba6a0472ec7de5271cbf67f11e6ab525de6dd5d4729300375f1d56b7a1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.7_10.tar.gz';          ;;        armhf|armv7l)          ESUM='45c235af67498f87e3dc99642771e57547cf226335eaee8a55d195173e66a2e9';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_arm_linux_hotspot_11.0.7_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='a417db0295b1f4b538ecbaf7c774f3a177fab9657a665940170936c0eca4e71a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.7_10.tar.gz';          ;;        s390x)          ESUM='d9b72e87a1d3ebc0c9552f72ae5eb150fffc0298a7cb841f1ce7bfc70dcd1059';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.7_10.tar.gz';          ;;        amd64|x86_64)          ESUM='ee60304d782c9d5654bf1a6b3f38c683921c1711045e1db94525a51b7024a2ca';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.7_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:03:53 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:20:16 GMT
+ENV JAVA_VERSION=jdk-11.0.8+10
+# Fri, 17 Jul 2020 22:20:27 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='fb27ea52ed901c14c9fe8ad2fc10b338b8cf47d6762571be1fe3fb7c426bab7c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.8_10.tar.gz';          ;;        armhf|armv7l)          ESUM='d00370967e4657e137cc511e81d6accbfdb08dba91e6268abef8219e735fbfc5';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_arm_linux_hotspot_11.0.8_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d206a63cd719b65717f7f20ee3fe49f0b8b2db922986b4811c828db57212699e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.8_10.tar.gz';          ;;        s390x)          ESUM='5619e1437c7cd400169eb7f1c831c2635fdb2776a401147a2fc1841b01f83ed6';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.8_10.tar.gz';          ;;        amd64|x86_64)          ESUM='6e4cead158037cb7747ca47416474d4f408c9126be5b96f9befd532e0a762b47';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.8_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:20:27 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:03:53 GMT
+# Fri, 17 Jul 2020 22:20:27 GMT
 CMD ["jshell"]
-# Tue, 07 Jul 2020 03:27:38 GMT
+# Fri, 17 Jul 2020 22:59:14 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:27:39 GMT
+# Fri, 17 Jul 2020 22:59:14 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:27:39 GMT
+# Fri, 17 Jul 2020 22:59:15 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:27:40 GMT
+# Fri, 17 Jul 2020 22:59:15 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:27:40 GMT
+# Fri, 17 Jul 2020 22:59:15 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:27:57 GMT
+# Fri, 17 Jul 2020 22:59:33 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:27:57 GMT
+# Fri, 17 Jul 2020 22:59:33 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:27:58 GMT
+# Fri, 17 Jul 2020 22:59:34 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:28:03 GMT
+# Fri, 17 Jul 2020 22:59:39 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -989,38 +989,38 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9648e8b5b6e12a552f92d1cc9b88f52be70cf376f7e4747c5d6e677e0a307fb2`  
-		Last Modified: Mon, 06 Jul 2020 23:08:06 GMT  
-		Size: 194.2 MB (194211003 bytes)  
+	-	`sha256:5f2256d745b1c9b7ad4ec6a87094065af4ab75985255affc89e3ad9e220ea48b`  
+		Last Modified: Fri, 17 Jul 2020 22:23:56 GMT  
+		Size: 194.3 MB (194266379 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72d53b71c2b01af3ad101f0912d17e82cdfa30c32f8006390f7ef15c3522fcce`  
-		Last Modified: Tue, 07 Jul 2020 03:30:27 GMT  
-		Size: 4.5 KB (4489 bytes)  
+	-	`sha256:0c857c3e217982eb5fb4e6a11d217cc7fafeb06e0045057ec23ba1702dcb5005`  
+		Last Modified: Fri, 17 Jul 2020 23:01:56 GMT  
+		Size: 4.5 KB (4491 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3394218381fe7197c36d588f5be67136d68482f9b6da643f7357dff4d8cd974d`  
-		Last Modified: Tue, 07 Jul 2020 03:30:37 GMT  
-		Size: 48.7 MB (48654881 bytes)  
+	-	`sha256:35d89e1980a91b2e9ccf95b4d20a38bb21e57ae2e0052a78808cd89d937e2ccb`  
+		Last Modified: Fri, 17 Jul 2020 23:02:06 GMT  
+		Size: 48.8 MB (48768426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24bcafcb7c76fd408c4b7cb3bf5e67abbd565b5aef8a4dd2e2fc692b0f0dfc0d`  
-		Last Modified: Tue, 07 Jul 2020 03:30:34 GMT  
-		Size: 102.4 MB (102379500 bytes)  
+	-	`sha256:7fff980f90be87dfae2056ca2ca25cebac1a6278ae56e052d1370e10c2f2e6e6`  
+		Last Modified: Fri, 17 Jul 2020 23:02:03 GMT  
+		Size: 102.4 MB (102379487 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5.1-jdk11` - linux; arm variant v7
 
 ```console
-$ docker pull gradle@sha256:20d1d8a79ea565f2db5bbf4c108d20950fed009c951be649856a1b5723d4cfb7
+$ docker pull gradle@sha256:545a3e6ea69c949aa35226276bf607f01e61ce08ae166a4d83134848b50a87ba
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **359.9 MB (359924251 bytes)**  
+-	Total Size: **364.6 MB (364552298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ac611656b7c852d0cb061f1f9f95a53fe8317519924bfb3b178cf13847bb6c6`
+-	Image ID: `sha256:622d19bc659e42dd4f36b97a20dd8ae85e617acbecafce853a0c664d8f6c518c`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -1036,33 +1036,33 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 21:54:44 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 21:55:12 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 21:55:46 GMT
-ENV JAVA_VERSION=jdk-11.0.7+10
-# Mon, 06 Jul 2020 21:56:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='3b8b8bba6a0472ec7de5271cbf67f11e6ab525de6dd5d4729300375f1d56b7a1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.7_10.tar.gz';          ;;        armhf|armv7l)          ESUM='45c235af67498f87e3dc99642771e57547cf226335eaee8a55d195173e66a2e9';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_arm_linux_hotspot_11.0.7_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='a417db0295b1f4b538ecbaf7c774f3a177fab9657a665940170936c0eca4e71a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.7_10.tar.gz';          ;;        s390x)          ESUM='d9b72e87a1d3ebc0c9552f72ae5eb150fffc0298a7cb841f1ce7bfc70dcd1059';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.7_10.tar.gz';          ;;        amd64|x86_64)          ESUM='ee60304d782c9d5654bf1a6b3f38c683921c1711045e1db94525a51b7024a2ca';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.7_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 21:56:05 GMT
+# Fri, 17 Jul 2020 20:58:22 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 20:59:02 GMT
+ENV JAVA_VERSION=jdk-11.0.8+10
+# Fri, 17 Jul 2020 20:59:19 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='fb27ea52ed901c14c9fe8ad2fc10b338b8cf47d6762571be1fe3fb7c426bab7c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.8_10.tar.gz';          ;;        armhf|armv7l)          ESUM='d00370967e4657e137cc511e81d6accbfdb08dba91e6268abef8219e735fbfc5';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_arm_linux_hotspot_11.0.8_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d206a63cd719b65717f7f20ee3fe49f0b8b2db922986b4811c828db57212699e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.8_10.tar.gz';          ;;        s390x)          ESUM='5619e1437c7cd400169eb7f1c831c2635fdb2776a401147a2fc1841b01f83ed6';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.8_10.tar.gz';          ;;        amd64|x86_64)          ESUM='6e4cead158037cb7747ca47416474d4f408c9126be5b96f9befd532e0a762b47';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.8_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 20:59:21 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 21:56:06 GMT
+# Fri, 17 Jul 2020 20:59:22 GMT
 CMD ["jshell"]
-# Mon, 06 Jul 2020 22:49:26 GMT
+# Fri, 17 Jul 2020 22:27:43 GMT
 CMD ["gradle"]
-# Mon, 06 Jul 2020 22:49:27 GMT
+# Fri, 17 Jul 2020 22:27:43 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Mon, 06 Jul 2020 22:49:29 GMT
+# Fri, 17 Jul 2020 22:27:45 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Mon, 06 Jul 2020 22:49:30 GMT
+# Fri, 17 Jul 2020 22:27:46 GMT
 VOLUME [/home/gradle/.gradle]
-# Mon, 06 Jul 2020 22:49:31 GMT
+# Fri, 17 Jul 2020 22:27:47 GMT
 WORKDIR /home/gradle
-# Mon, 06 Jul 2020 22:50:07 GMT
+# Fri, 17 Jul 2020 22:28:23 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 22:50:08 GMT
+# Fri, 17 Jul 2020 22:28:25 GMT
 ENV GRADLE_VERSION=6.5.1
-# Mon, 06 Jul 2020 22:50:09 GMT
+# Fri, 17 Jul 2020 22:28:25 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Mon, 06 Jul 2020 22:50:18 GMT
+# Fri, 17 Jul 2020 22:28:34 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -1084,25 +1084,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
 		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:968021a24b7f39d881bc26e80a8217879444a2ade35c75754dd7e622543f123a`  
-		Last Modified: Mon, 06 Jul 2020 21:58:06 GMT  
-		Size: 12.3 MB (12253478 bytes)  
+	-	`sha256:e4cc999ed63826a5b44acb46406a5dc7d80f1604cc4f06927d88bf6c5e79b497`  
+		Last Modified: Fri, 17 Jul 2020 21:00:57 GMT  
+		Size: 12.8 MB (12816746 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d768e5caa42aeedf2598c0609d23fb7ffc77625b634ce1c71f2388eca07c0809`  
-		Last Modified: Mon, 06 Jul 2020 21:59:17 GMT  
-		Size: 179.4 MB (179355784 bytes)  
+	-	`sha256:f7f60d8de63ee0c7cd439d5e89c1d3bf4772e39ff44e87240f889aaa0a0ac7b3`  
+		Last Modified: Fri, 17 Jul 2020 21:02:08 GMT  
+		Size: 183.3 MB (183306987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdbf7a0767caa9889f06ad2e90297fbad716b712632cc4b51c1f3b6b1af99977`  
-		Last Modified: Mon, 06 Jul 2020 22:51:37 GMT  
-		Size: 4.5 KB (4505 bytes)  
+	-	`sha256:4b8e35ffc66bc6edb009f972778a6f74e0dd5da91e93934df18ef91faa33be9a`  
+		Last Modified: Fri, 17 Jul 2020 22:29:52 GMT  
+		Size: 4.5 KB (4513 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a4ff4192a01c01987036921b8a85a45eaac50968ef1d53072c00e19eb337068`  
-		Last Modified: Mon, 06 Jul 2020 22:51:53 GMT  
-		Size: 43.6 MB (43617895 bytes)  
+	-	`sha256:1136583547f60b49259dbe465363d4afbb3048eee1d0bca046ecfc76eb7791c3`  
+		Last Modified: Fri, 17 Jul 2020 22:30:08 GMT  
+		Size: 43.7 MB (43731443 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccb207034be3875b1dcd45e1a547e0602c7df74568391b1b7c06e306982575e6`  
-		Last Modified: Mon, 06 Jul 2020 22:51:51 GMT  
-		Size: 102.4 MB (102379583 bytes)  
+	-	`sha256:5bd7f1e3091a9c962c2daf4d8b4e85bc43a65a5c48ba2255150ed82110c2e52d`  
+		Last Modified: Fri, 17 Jul 2020 22:30:07 GMT  
+		Size: 102.4 MB (102379603 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5.1-jdk11` - linux; ppc64le
@@ -1203,7 +1203,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:6.5.1-jdk14`
 
 ```console
-$ docker pull gradle@sha256:a075a783f6b760b6b71abf377d2e5663486847efca3b0caee801a7f07ec6e578
+$ docker pull gradle@sha256:f617fd967a0da481778d07bfd5fb592c70515e341ad9992b60452f3a38e1e918
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1217,14 +1217,14 @@ $ docker pull gradle@sha256:a075a783f6b760b6b71abf377d2e5663486847efca3b0caee801
 ### `gradle:6.5.1-jdk14` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:139e4128f623ac8b2488c9db1d6d8a625687cbe466a9a81736c799f8e284fd1c
+$ docker pull gradle@sha256:a57aee65923b9f014a6f05bf2d00ac93a4956949c794c609f57283f47fef4801
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **403.1 MB (403087093 bytes)**  
+-	Total Size: **403.6 MB (403567326 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a03bf95ac56e937c828f9f0175bccedbeb9e6f83b9e280ca32759af600b9411c`
+-	Image ID: `sha256:601c687379276f6b17456ec3b3efbcbf3e6116bcfeb812e8853afc0a0758896c`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -1240,33 +1240,33 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:04:38 GMT
-ENV JAVA_VERSION=jdk-14.0.1+7
-# Mon, 06 Jul 2020 23:04:51 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='81ca31ad90f9bd789a2ca1753d6d83d10f4927876b4a4b9f4b1c4c8cbce85feb';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.1_7.tar.gz';          ;;        armhf|armv7l)          ESUM='458d091756500dc3013737aa182a14752b3d4ffc358d09532201874ffb8cae22';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_arm_linux_hotspot_14.0.1_7.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='bfdd77112d81256d4e1a859a465dd4dcb670019a5d6cf8260c30e24a0e5947e4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.1_7.tar.gz';          ;;        s390x)          ESUM='c13545924e92cb9d495282e95270f299a28d5466f9741c67791f131c38ebbd0c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.1_7.tar.gz';          ;;        amd64|x86_64)          ESUM='9ddf9b35996fbd784a53fff3e0d59920a7d5acf1a82d4c8d70906957ac146cd1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_x64_linux_hotspot_14.0.1_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:04:51 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:20:49 GMT
+ENV JAVA_VERSION=jdk-14.0.2+12
+# Fri, 17 Jul 2020 22:21:03 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ee87e9f03b1fbe6f328429b78fe1a9f44900026d220c90dfd747fe0bcd62d904';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='65f193496c6977ba7aed1563edc4b5be091b5ff03e3d790074bb4e389a034b36';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='465a3b8e931896b8d95e452d479615c4bf543535c05b6ea246323ae114e67d7d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='7d27aea30e359cf0bb561f8dcca6f4591dbc3ae831981f8a19aa367d31a9709b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='7d5ee7e06909b8a99c0d029f512f67b092597aa5b0e78c109bd59405bbfa74fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:21:03 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:04:51 GMT
+# Fri, 17 Jul 2020 22:21:03 GMT
 CMD ["jshell"]
-# Tue, 07 Jul 2020 03:28:37 GMT
+# Fri, 17 Jul 2020 23:00:12 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:28:37 GMT
+# Fri, 17 Jul 2020 23:00:13 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:28:38 GMT
+# Fri, 17 Jul 2020 23:00:13 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:28:38 GMT
+# Fri, 17 Jul 2020 23:00:14 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:28:38 GMT
+# Fri, 17 Jul 2020 23:00:14 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:28:55 GMT
+# Fri, 17 Jul 2020 23:00:31 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:28:56 GMT
+# Fri, 17 Jul 2020 23:00:32 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:28:56 GMT
+# Fri, 17 Jul 2020 23:00:32 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:29:01 GMT
+# Fri, 17 Jul 2020 23:00:37 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -1288,38 +1288,38 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:848e110e804a6625b9d9a4b3f558e17b88e77b5ec60d0b24ac58431d705a8823`  
-		Last Modified: Mon, 06 Jul 2020 23:09:32 GMT  
-		Size: 212.0 MB (212004123 bytes)  
+	-	`sha256:7f3ff2208f08b667f998eaca1c8da3a4ef48f028799511f54f74d33d30575206`  
+		Last Modified: Fri, 17 Jul 2020 22:24:31 GMT  
+		Size: 211.8 MB (211806973 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24e5036ab989a070dff127962d6461878c9c021a454840762d7342ad47c41101`  
-		Last Modified: Tue, 07 Jul 2020 03:30:58 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:ec514bec384a1d96e3b620eda459437f856c8df1716c2a0f202451b7f875d987`  
+		Last Modified: Fri, 17 Jul 2020 23:02:32 GMT  
+		Size: 4.5 KB (4486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:920f8999d3b578fd3ed2321182f8a0b57abecc5ca2d4f72e03f4bb47713cbd7a`  
-		Last Modified: Tue, 07 Jul 2020 03:31:09 GMT  
-		Size: 48.7 MB (48654750 bytes)  
+	-	`sha256:4ddae2b647d4303ef58f9090960b21825277a9f0c4914a18ca027384475bf434`  
+		Last Modified: Fri, 17 Jul 2020 23:02:43 GMT  
+		Size: 48.8 MB (48768639 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ecb4d1d9437de88b733d15965e71a0e02d99d59908c911010d85679ba6e1fc5`  
-		Last Modified: Tue, 07 Jul 2020 03:31:24 GMT  
-		Size: 102.4 MB (102379514 bytes)  
+	-	`sha256:0cfca9faaf5fbdcf9e51c0e0f2dd63be263a5861a245d0313ab92977d2d454f9`  
+		Last Modified: Fri, 17 Jul 2020 23:02:39 GMT  
+		Size: 102.4 MB (102379512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5.1-jdk14` - linux; arm variant v7
 
 ```console
-$ docker pull gradle@sha256:7d52d8e9d432beef3daf6081dfe3d4159d1426d5a821b61421f3122ab734688d
+$ docker pull gradle@sha256:35872b179b3048f429ee8a658a5b092c0103ed862d79436ab4b1bdcdea649d6d
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **370.6 MB (370599466 bytes)**  
+-	Total Size: **379.3 MB (379250597 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb6bdcc7ff91966608e2ccd310d0007f0a652df4cdc223e3fd17401247da0a30`
+-	Image ID: `sha256:50943231527f0d5375c2c3e41421e8c7b7a353731b3faf2ddf05e5e96d8c9252`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -1335,33 +1335,33 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 21:54:44 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 21:55:12 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 21:56:57 GMT
-ENV JAVA_VERSION=jdk-14.0.1+7
-# Mon, 06 Jul 2020 21:57:15 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='81ca31ad90f9bd789a2ca1753d6d83d10f4927876b4a4b9f4b1c4c8cbce85feb';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.1_7.tar.gz';          ;;        armhf|armv7l)          ESUM='458d091756500dc3013737aa182a14752b3d4ffc358d09532201874ffb8cae22';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_arm_linux_hotspot_14.0.1_7.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='bfdd77112d81256d4e1a859a465dd4dcb670019a5d6cf8260c30e24a0e5947e4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.1_7.tar.gz';          ;;        s390x)          ESUM='c13545924e92cb9d495282e95270f299a28d5466f9741c67791f131c38ebbd0c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.1_7.tar.gz';          ;;        amd64|x86_64)          ESUM='9ddf9b35996fbd784a53fff3e0d59920a7d5acf1a82d4c8d70906957ac146cd1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_x64_linux_hotspot_14.0.1_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 21:57:16 GMT
+# Fri, 17 Jul 2020 20:58:22 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 20:59:49 GMT
+ENV JAVA_VERSION=jdk-14.0.2+12
+# Fri, 17 Jul 2020 21:00:07 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ee87e9f03b1fbe6f328429b78fe1a9f44900026d220c90dfd747fe0bcd62d904';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='65f193496c6977ba7aed1563edc4b5be091b5ff03e3d790074bb4e389a034b36';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='465a3b8e931896b8d95e452d479615c4bf543535c05b6ea246323ae114e67d7d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='7d27aea30e359cf0bb561f8dcca6f4591dbc3ae831981f8a19aa367d31a9709b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='7d5ee7e06909b8a99c0d029f512f67b092597aa5b0e78c109bd59405bbfa74fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 21:00:08 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 21:57:16 GMT
+# Fri, 17 Jul 2020 21:00:09 GMT
 CMD ["jshell"]
-# Mon, 06 Jul 2020 22:50:25 GMT
+# Fri, 17 Jul 2020 22:28:50 GMT
 CMD ["gradle"]
-# Mon, 06 Jul 2020 22:50:26 GMT
+# Fri, 17 Jul 2020 22:28:50 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Mon, 06 Jul 2020 22:50:28 GMT
+# Fri, 17 Jul 2020 22:28:52 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Mon, 06 Jul 2020 22:50:28 GMT
+# Fri, 17 Jul 2020 22:28:52 GMT
 VOLUME [/home/gradle/.gradle]
-# Mon, 06 Jul 2020 22:50:29 GMT
+# Fri, 17 Jul 2020 22:28:53 GMT
 WORKDIR /home/gradle
-# Mon, 06 Jul 2020 22:51:11 GMT
+# Fri, 17 Jul 2020 22:29:28 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 22:51:13 GMT
+# Fri, 17 Jul 2020 22:29:30 GMT
 ENV GRADLE_VERSION=6.5.1
-# Mon, 06 Jul 2020 22:51:14 GMT
+# Fri, 17 Jul 2020 22:29:30 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Mon, 06 Jul 2020 22:51:23 GMT
+# Fri, 17 Jul 2020 22:29:39 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -1383,38 +1383,38 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
 		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:968021a24b7f39d881bc26e80a8217879444a2ade35c75754dd7e622543f123a`  
-		Last Modified: Mon, 06 Jul 2020 21:58:06 GMT  
-		Size: 12.3 MB (12253478 bytes)  
+	-	`sha256:e4cc999ed63826a5b44acb46406a5dc7d80f1604cc4f06927d88bf6c5e79b497`  
+		Last Modified: Fri, 17 Jul 2020 21:00:57 GMT  
+		Size: 12.8 MB (12816746 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84818d56063f804ec8406f86e32cd794130483221f6d592e46d02892618a3fc2`  
-		Last Modified: Mon, 06 Jul 2020 22:01:06 GMT  
-		Size: 190.0 MB (190031026 bytes)  
+	-	`sha256:9d42d820e936c80a9306a536e32cc65ee06121f2833ce9e9dba550f8434cac88`  
+		Last Modified: Fri, 17 Jul 2020 21:03:20 GMT  
+		Size: 198.0 MB (198004338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:beaff1e50122207fc296d85c56f11c40279709d18027d441cdb56a30f6065ca0`  
-		Last Modified: Mon, 06 Jul 2020 22:52:00 GMT  
-		Size: 4.5 KB (4504 bytes)  
+	-	`sha256:e72d8f6fb865afbe9d625e0d456c22ac256ff07184c1275170ea9e3bc7191e7d`  
+		Last Modified: Fri, 17 Jul 2020 22:30:14 GMT  
+		Size: 4.5 KB (4508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26feecf857d039ce347a0db795a08736505f417d4b9d66dfa43d4212bee96483`  
-		Last Modified: Mon, 06 Jul 2020 22:52:17 GMT  
-		Size: 43.6 MB (43617847 bytes)  
+	-	`sha256:3aa06e22eb3b5bec1c4571b5dbc46c6ba52d8b71155018604e161af65129760a`  
+		Last Modified: Fri, 17 Jul 2020 22:30:30 GMT  
+		Size: 43.7 MB (43732391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df63be9d7f93d866b1c881b6eaab5bd70160679476cd1997b2292cf2915554b0`  
-		Last Modified: Mon, 06 Jul 2020 22:52:16 GMT  
-		Size: 102.4 MB (102379605 bytes)  
+	-	`sha256:4bbc492b2ee1f22f363c06e92c35b2c584623955959db206ac7c1d94717ace1c`  
+		Last Modified: Fri, 17 Jul 2020 22:30:29 GMT  
+		Size: 102.4 MB (102379608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5.1-jdk14` - linux; arm64 variant v8
 
 ```console
-$ docker pull gradle@sha256:f759cbe554fde25cc9361ea9edcd6e66973b52e6787c108a4e05a9af99f12113
+$ docker pull gradle@sha256:6e611bb7d9de7e90a07d127e8f3490e25e945b975aa86bb54cf3f3b193c56920
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **394.5 MB (394481847 bytes)**  
+-	Total Size: **395.0 MB (394966663 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33db09e633ce12ea2ce4498b4d465c9d13e72ad9758452a05d282a980b1b98fe`
+-	Image ID: `sha256:748da17cf6c5a897f34f4b36d3627ff3e93d120fe9b997ef2241b428c1d03743`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -1430,33 +1430,33 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Tue, 07 Jul 2020 01:12:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 07 Jul 2020 01:13:00 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 01:14:55 GMT
-ENV JAVA_VERSION=jdk-14.0.1+7
-# Tue, 07 Jul 2020 01:15:11 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='81ca31ad90f9bd789a2ca1753d6d83d10f4927876b4a4b9f4b1c4c8cbce85feb';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.1_7.tar.gz';          ;;        armhf|armv7l)          ESUM='458d091756500dc3013737aa182a14752b3d4ffc358d09532201874ffb8cae22';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_arm_linux_hotspot_14.0.1_7.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='bfdd77112d81256d4e1a859a465dd4dcb670019a5d6cf8260c30e24a0e5947e4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.1_7.tar.gz';          ;;        s390x)          ESUM='c13545924e92cb9d495282e95270f299a28d5466f9741c67791f131c38ebbd0c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.1_7.tar.gz';          ;;        amd64|x86_64)          ESUM='9ddf9b35996fbd784a53fff3e0d59920a7d5acf1a82d4c8d70906957ac146cd1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_x64_linux_hotspot_14.0.1_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Tue, 07 Jul 2020 01:15:13 GMT
+# Fri, 17 Jul 2020 20:42:18 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 20:44:00 GMT
+ENV JAVA_VERSION=jdk-14.0.2+12
+# Fri, 17 Jul 2020 20:44:16 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ee87e9f03b1fbe6f328429b78fe1a9f44900026d220c90dfd747fe0bcd62d904';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='65f193496c6977ba7aed1563edc4b5be091b5ff03e3d790074bb4e389a034b36';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='465a3b8e931896b8d95e452d479615c4bf543535c05b6ea246323ae114e67d7d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='7d27aea30e359cf0bb561f8dcca6f4591dbc3ae831981f8a19aa367d31a9709b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='7d5ee7e06909b8a99c0d029f512f67b092597aa5b0e78c109bd59405bbfa74fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 20:44:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 01:15:13 GMT
+# Fri, 17 Jul 2020 20:44:19 GMT
 CMD ["jshell"]
-# Tue, 07 Jul 2020 02:11:26 GMT
+# Fri, 17 Jul 2020 21:55:32 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 02:11:27 GMT
+# Fri, 17 Jul 2020 21:55:32 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 02:11:29 GMT
+# Fri, 17 Jul 2020 21:55:35 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 02:11:30 GMT
+# Fri, 17 Jul 2020 21:55:36 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 02:11:30 GMT
+# Fri, 17 Jul 2020 21:55:36 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 02:12:06 GMT
+# Fri, 17 Jul 2020 21:56:10 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 02:12:08 GMT
+# Fri, 17 Jul 2020 21:56:13 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 02:12:09 GMT
+# Fri, 17 Jul 2020 21:56:13 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 02:12:16 GMT
+# Fri, 17 Jul 2020 21:56:22 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -1478,25 +1478,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5427b5697c732a419d0ebcf481bdc2ee7263b7c5aa034f701221dea96bb72a18`  
-		Last Modified: Tue, 07 Jul 2020 01:16:08 GMT  
-		Size: 12.7 MB (12723255 bytes)  
+	-	`sha256:cf5858fe3213ff710f6c318742f085137ce8fcea1e001c321df12f5871e95b09`  
+		Last Modified: Fri, 17 Jul 2020 20:45:09 GMT  
+		Size: 13.3 MB (13284377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2206df2d11676e7da3f768169c63aca606dabdaf29dade017017bd357f013efc`  
-		Last Modified: Tue, 07 Jul 2020 01:19:32 GMT  
-		Size: 209.4 MB (209420316 bytes)  
+	-	`sha256:3808c2d5c4707411e814af79433d34876b7de5f3c7bb97fc1b97b58e5645e834`  
+		Last Modified: Fri, 17 Jul 2020 20:47:12 GMT  
+		Size: 209.2 MB (209228562 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b81fa37c645ca225037008e6eafd382297ca5efa5874860973323b9e09630ae4`  
-		Last Modified: Tue, 07 Jul 2020 02:13:53 GMT  
+	-	`sha256:99742ecc0cf17fad3f29d0118b4396a5dab42808c2fdf035b0d6340cd82e2dbf`  
+		Last Modified: Fri, 17 Jul 2020 21:58:01 GMT  
 		Size: 4.5 KB (4524 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16aefe52660f11a6e47f210f5d3f10b3a23ce95cb2279d6927dc872fea2e9e72`  
-		Last Modified: Tue, 07 Jul 2020 02:14:08 GMT  
-		Size: 46.2 MB (46198550 bytes)  
+	-	`sha256:47f2d49e46abf3f59e1962d1ec2d2fd5e65ad91bbca854d5c8276feb82ed9e7d`  
+		Last Modified: Fri, 17 Jul 2020 21:58:15 GMT  
+		Size: 46.3 MB (46314002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5eacc6828283fa1f966c263b7993a7635ee82b32dc9b440ec968aa9e87335414`  
-		Last Modified: Tue, 07 Jul 2020 02:14:05 GMT  
-		Size: 102.4 MB (102379609 bytes)  
+	-	`sha256:7a469595d7c0991656f6244467be5c5236f7f0ce1dbce9ecafb5f33164c09947`  
+		Last Modified: Fri, 17 Jul 2020 21:58:12 GMT  
+		Size: 102.4 MB (102379605 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5.1-jdk14` - linux; ppc64le
@@ -1692,7 +1692,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:6.5.1-jdk8`
 
 ```console
-$ docker pull gradle@sha256:10df187cb99774a208aaf54b139d58d654ec885a3a76419b8668656010ea703e
+$ docker pull gradle@sha256:79c80c35dbf760580bba9dcd99de07f32db6caa54e0c6e515ee139d82381df39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1704,14 +1704,14 @@ $ docker pull gradle@sha256:10df187cb99774a208aaf54b139d58d654ec885a3a76419b8668
 ### `gradle:6.5.1-jdk8` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:0c567e3c34943acde9b72e00300395f8148d27731d1b07706c81a2eb044b2d49
+$ docker pull gradle@sha256:2b3c57831088f8c767c009f441f2584f61c249ae928fad3599c14fdb13b51e60
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **293.8 MB (293773404 bytes)**  
+-	Total Size: **295.5 MB (295496791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63a06ad25ffc0fce6b9d30c05541ff32ef3bb8539e3c99cd13a1a2a96cf2aad4`
+-	Image ID: `sha256:864401413f8190c196649ab996fd27cb85e6d29f48b5f181f1129012480ff0ee`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -1727,31 +1727,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:03:21 GMT
-ENV JAVA_VERSION=jdk8u252-b09
-# Mon, 06 Jul 2020 23:03:28 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='536bf397d98174b376da9ed49d2f659d65c7310318d8211444f4b7ba7c15e453';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_aarch64_linux_hotspot_8u252b09.tar.gz';          ;;        armhf|armv7l)          ESUM='5b401ad3c9b246281bd6df34b1abaf75e10e5cad9c6b26b55232b016e90e411a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_arm_linux_hotspot_8u252b09.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='55f0453b1d28812154138cf52b17b7acd93b9e55263f1f508f559795d31b2671';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u252b09.tar.gz';          ;;        s390x)          ESUM='db39932666c37718b1c3c62a1adb4f8e9c33258cf15a85ddf9b4d71199edfb1d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_s390x_linux_hotspot_8u252b09.tar.gz';          ;;        amd64|x86_64)          ESUM='2b59b5282ff32bce7abba8ad6b9fde34c15a98f949ad8ae43e789bbd78fc8862';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_x64_linux_hotspot_8u252b09.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:03:29 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:19:52 GMT
+ENV JAVA_VERSION=jdk8u262-b10
+# Fri, 17 Jul 2020 22:20:00 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7be0b2a4c749a277302a54b456624c076b3a5b990ad502e2a72d803ab31aecab';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='dd85ebb9a64916b4b621a23729e3360adb363d430bf1e99e98f25397834d74bd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d2a16915fb85ba851145c91cda5666cb78f06bf4713a2b3bdce813779ff972c2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='a504af6924a095cfb6c392653dccd7299925048c91b399d05efa95a094820120';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='733755fd649fad6ae91fc083f7e5a5a0b56410fb6ac1815cff29f744b128b1b1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:20:00 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 03:26:30 GMT
+# Fri, 17 Jul 2020 22:58:11 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:26:30 GMT
+# Fri, 17 Jul 2020 22:58:11 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:26:57 GMT
+# Fri, 17 Jul 2020 22:58:34 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:26:58 GMT
+# Fri, 17 Jul 2020 22:58:35 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:26:58 GMT
+# Fri, 17 Jul 2020 22:58:35 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:27:03 GMT
+# Fri, 17 Jul 2020 22:58:40 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -1773,25 +1773,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ebafcb948fa26ecf0a81e1f030a5258f58fbbca5eb8d6669348a9df00eadcc2`  
-		Last Modified: Mon, 06 Jul 2020 23:07:34 GMT  
-		Size: 102.7 MB (102690072 bytes)  
+	-	`sha256:d119f9c502a13708ca69878c432d637073f2f7311ffd6b8e2b584a4f68c7fcf2`  
+		Last Modified: Fri, 17 Jul 2020 22:23:22 GMT  
+		Size: 103.7 MB (103736353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d65a8d0d90b871faa7911593e4aaeae568522ccf2855d74828b920ef6e1dec02`  
-		Last Modified: Tue, 07 Jul 2020 03:29:45 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:1d010a97e0ac828392f864109a0969f1db978057bfc826e95b19c9e297e75ae9`  
+		Last Modified: Fri, 17 Jul 2020 23:01:20 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b59f24a81e2677fcdb327c23d8afc692b121ae0dd4567d9c2e7e2b3c55d62c3e`  
-		Last Modified: Tue, 07 Jul 2020 03:29:55 GMT  
-		Size: 48.7 MB (48655113 bytes)  
+	-	`sha256:86cdd3c13fed9a7f9c3b78f300dc517ddfb1deafae45cbdc3ddf660bd1f7db5f`  
+		Last Modified: Fri, 17 Jul 2020 23:01:30 GMT  
+		Size: 48.8 MB (48768749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d63278ca4b835a2b21140f139c916d450042c9398f56db01ad0cd2cfb01defb`  
-		Last Modified: Tue, 07 Jul 2020 03:29:54 GMT  
-		Size: 102.4 MB (102379513 bytes)  
+	-	`sha256:a8d335b1e876145c7a468bb7fe04c71b8879ee5cfdbbe7e18566f5e180694575`  
+		Last Modified: Fri, 17 Jul 2020 23:01:27 GMT  
+		Size: 102.4 MB (102379484 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5.1-jdk8` - linux; ppc64le
@@ -1983,7 +1983,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:6.5.1-jre`
 
 ```console
-$ docker pull gradle@sha256:8ed6d618feb07aa1016cb7fc760f4b22c5e58947fa0a1a26df23e110437e3140
+$ docker pull gradle@sha256:8aaca3e01190b95836deade3e17867c92bd9bdcecffd8e19a01ac9873ba368ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1995,14 +1995,14 @@ $ docker pull gradle@sha256:8ed6d618feb07aa1016cb7fc760f4b22c5e58947fa0a1a26df23
 ### `gradle:6.5.1-jre` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:3e88feb1d68621bbd96a6b2727aa54b33b6b66bd64987e4c9430b1569b736110
+$ docker pull gradle@sha256:8b78ead4defc49175a129a17b7efdd67e3fa58970f4f7b47016564df140828f6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **232.5 MB (232536779 bytes)**  
+-	Total Size: **233.9 MB (233879210 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10f7bb03ee99c2e4147d33ab34bba4f9410e47f8d4f9a235682bb5eb871a9e2e`
+-	Image ID: `sha256:b52dccb61564c357fafb67c5aad52aaa3776058aaab6e9889c2cf449bdf5cdc4`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -2018,31 +2018,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:03:21 GMT
-ENV JAVA_VERSION=jdk8u252-b09
-# Mon, 06 Jul 2020 23:03:37 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='30bba4425497f5b4aabcba7b45db69d582d278fb17357d64c22c9dc6b2d29ca1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_aarch64_linux_hotspot_8u252b09.tar.gz';          ;;        armhf|armv7l)          ESUM='107699a88f611e0c2d57816be25821ef9b17db860b14402c4e9e5bf0b9cf16fd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_arm_linux_hotspot_8u252b09.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='fbc559e8f75107f3c2ef92b33938dd48aee5728d471774d04fa3f68ed3b992fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_ppc64le_linux_hotspot_8u252b09.tar.gz';          ;;        s390x)          ESUM='23daa316ebcd965197e74dff011708a050516cd108a27a40e5b5cfa3c88beaba';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_s390x_linux_hotspot_8u252b09.tar.gz';          ;;        amd64|x86_64)          ESUM='a93be303ed62398dba9acb0376fb3caf8f488fcde80dc62d0a8e46256b3adfb1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_x64_linux_hotspot_8u252b09.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:03:37 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:19:52 GMT
+ENV JAVA_VERSION=jdk8u262-b10
+# Fri, 17 Jul 2020 22:20:11 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:20:11 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 03:27:09 GMT
+# Fri, 17 Jul 2020 22:58:45 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:27:09 GMT
+# Fri, 17 Jul 2020 22:58:45 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:27:10 GMT
+# Fri, 17 Jul 2020 22:58:46 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:27:10 GMT
+# Fri, 17 Jul 2020 22:58:46 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:27:10 GMT
+# Fri, 17 Jul 2020 22:58:46 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:27:28 GMT
+# Fri, 17 Jul 2020 22:59:03 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:27:28 GMT
+# Fri, 17 Jul 2020 22:59:04 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:27:28 GMT
+# Fri, 17 Jul 2020 22:59:04 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:27:33 GMT
+# Fri, 17 Jul 2020 22:59:09 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -2064,25 +2064,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae7092168735a178c86270ca696ef6f3121c32c9fb7431c9472f72806f474d73`  
-		Last Modified: Mon, 06 Jul 2020 23:07:46 GMT  
-		Size: 41.5 MB (41453839 bytes)  
+	-	`sha256:b38587e18ed628aa15742a897954754fec3b97a3454dbfd1a5ae9ad4d7b13e4d`  
+		Last Modified: Fri, 17 Jul 2020 22:23:36 GMT  
+		Size: 42.1 MB (42118777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da3784f1dbdb3f11ca97c8ec1db98795e3a33ec90957e196ddec77d5d71d29e3`  
-		Last Modified: Tue, 07 Jul 2020 03:30:07 GMT  
-		Size: 4.5 KB (4491 bytes)  
+	-	`sha256:c0b9393a200ac938d5e2a39d00009cd08cae092d59479c10607366de3a6072f9`  
+		Last Modified: Fri, 17 Jul 2020 23:01:38 GMT  
+		Size: 4.5 KB (4487 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:645b913ed928a0a09d818f826b89dd0bc5e40d1ce60291e916451aaada11b6fc`  
-		Last Modified: Tue, 07 Jul 2020 03:30:18 GMT  
-		Size: 48.7 MB (48654747 bytes)  
+	-	`sha256:6986687daf4a2275a545c1520c9fb4e325b5bc175ba3a957f2ec3dc8d5ac276e`  
+		Last Modified: Fri, 17 Jul 2020 23:01:49 GMT  
+		Size: 48.8 MB (48768729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36c6f5e88a25b8f89e3bd2690fccd81cb1887874a4ed985765229bbc469874fb`  
-		Last Modified: Tue, 07 Jul 2020 03:30:15 GMT  
-		Size: 102.4 MB (102379484 bytes)  
+	-	`sha256:29b799999efe114b0bb7230c6747a4f9d78ac1b74d71f5b5a4188d860bd3c223`  
+		Last Modified: Fri, 17 Jul 2020 23:01:46 GMT  
+		Size: 102.4 MB (102379501 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5.1-jre` - linux; ppc64le
@@ -2274,7 +2274,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:6.5.1-jre11`
 
 ```console
-$ docker pull gradle@sha256:bcb1e7cf9a45ec783e71779cf328d4bbfc9f44502d03287bc55b3c4e6c616462
+$ docker pull gradle@sha256:d92cbfe86f7b02d2a7825862240e1fe7fd2e4ed03ac25518a00c504128ae2750
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2287,14 +2287,14 @@ $ docker pull gradle@sha256:bcb1e7cf9a45ec783e71779cf328d4bbfc9f44502d03287bc55b
 ### `gradle:6.5.1-jre11` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:8f655b8ab97347c56de5491f83f91f9bd49fe7bb60c85318e2839158f103df0f
+$ docker pull gradle@sha256:6bced78707af7c5158cc648c027a176eecc163189c44aa0e9f355b314594230d
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **234.7 MB (234722600 bytes)**  
+-	Total Size: **235.4 MB (235387641 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f1f633a92ca0f6d0013d866cc3b7e348c20263f1d7f4caadb02a7606a52acc2`
+-	Image ID: `sha256:5990d5ff007872e4df097f7ad0ec35a656fa86624baf554f39ac85c48529518e`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -2310,31 +2310,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:03:41 GMT
-ENV JAVA_VERSION=jdk-11.0.7+10
-# Mon, 06 Jul 2020 23:04:03 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='cfe504e9e9621b831a5cfd800a2005dafe90a1d11aa14ee35d7b674d68685698';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.7_10.tar.gz';          ;;        armhf|armv7l)          ESUM='581bae8efcaa40e209a780baa6f96b7c8c9397965bc6d54533f4fd8599d5c742';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_arm_linux_hotspot_11.0.7_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='364a030a4c5c10660d33988bd1d40e6a34f49ca6a2e04ff44b8cf809da75423a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.7_10.tar.gz';          ;;        s390x)          ESUM='8e14d11a84c67da457695cbc20a9d70628c741ffc09087d11b40a52f2e11dddc';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_s390x_linux_hotspot_11.0.7_10.tar.gz';          ;;        amd64|x86_64)          ESUM='74b493dd8a884dcbee29682ead51b182d9d3e52b40c3d4cbb3167c2fd0063503';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_x64_linux_hotspot_11.0.7_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:04:03 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:20:16 GMT
+ENV JAVA_VERSION=jdk-11.0.8+10
+# Fri, 17 Jul 2020 22:20:37 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='286c869dbaefda9b470ae71d1250fdecf9f06d8da97c0f7df9021d381d749106';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.8_10.tar.gz';          ;;        armhf|armv7l)          ESUM='ffa627b2d0c6001448bb8f1f24f7c9921dad37e67637f6ed0a9a479e680a3393';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_arm_linux_hotspot_11.0.8_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='89231e1667d7cc4202d1a401497bb287d4eb12281c90c17e2570211cc4e901a3';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.8_10.tar.gz';          ;;        s390x)          ESUM='dc0e715c17abcb12bedf77c638e58e67d828d3c4bf24a898f0d4b053caaeb25f';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_s390x_linux_hotspot_11.0.8_10.tar.gz';          ;;        amd64|x86_64)          ESUM='98615b1b369509965a612232622d39b5cefe117d6189179cbad4dcef2ee2f4e1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_x64_linux_hotspot_11.0.8_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:20:37 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 03:28:08 GMT
+# Fri, 17 Jul 2020 22:59:43 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:28:08 GMT
+# Fri, 17 Jul 2020 22:59:43 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:28:09 GMT
+# Fri, 17 Jul 2020 22:59:44 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:28:09 GMT
+# Fri, 17 Jul 2020 22:59:44 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:28:09 GMT
+# Fri, 17 Jul 2020 22:59:45 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:28:26 GMT
+# Fri, 17 Jul 2020 23:00:02 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:28:27 GMT
+# Fri, 17 Jul 2020 23:00:02 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:28:27 GMT
+# Fri, 17 Jul 2020 23:00:02 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:28:32 GMT
+# Fri, 17 Jul 2020 23:00:08 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -2356,38 +2356,38 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:425c0430f6c74b1e55da7625115a171a8055c9a69ab0b6ea1350e5d0d6f85089`  
-		Last Modified: Mon, 06 Jul 2020 23:08:17 GMT  
-		Size: 43.6 MB (43639531 bytes)  
+	-	`sha256:852a71b3b8da0f67a06e899ba670e762ebaf21324712355e22bf6b0801db3b24`  
+		Last Modified: Fri, 17 Jul 2020 22:24:09 GMT  
+		Size: 43.6 MB (43627149 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39e1561cf1aa0ff4c3f929d3ea2f8b2cb2f7f23765fe7d1e412087a13d5d6d38`  
-		Last Modified: Tue, 07 Jul 2020 03:30:42 GMT  
-		Size: 4.5 KB (4490 bytes)  
+	-	`sha256:16cf32d6eb3341473582d9cbed8599fdd68768a8fbda78bc22c5b959c370af8b`  
+		Last Modified: Fri, 17 Jul 2020 23:02:11 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aed46d02ffabc5a20930e78b846a954b468f26271d71350d91490f4ab50b8fc2`  
-		Last Modified: Tue, 07 Jul 2020 03:30:53 GMT  
-		Size: 48.7 MB (48654874 bytes)  
+	-	`sha256:1c9f3ae57a2b4943766d21b867d7acda81c580216dd09c1b9dce9774c798fe5a`  
+		Last Modified: Fri, 17 Jul 2020 23:02:22 GMT  
+		Size: 48.8 MB (48768789 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29fe02d22b59f51f2f2cbdb1df573152b5d299a751d4b6fb2ce0ce4715b4b2f5`  
-		Last Modified: Tue, 07 Jul 2020 03:30:50 GMT  
-		Size: 102.4 MB (102379487 bytes)  
+	-	`sha256:fd67261a1c69373fe4dafefe1f140668c67b4667d70b017db01954874da39b91`  
+		Last Modified: Fri, 17 Jul 2020 23:02:19 GMT  
+		Size: 102.4 MB (102379498 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5.1-jre11` - linux; arm64 variant v8
 
 ```console
-$ docker pull gradle@sha256:2f76814832aca953d53099ccfa8fc324df676f455576d836696b9ce73cfb53bb
+$ docker pull gradle@sha256:ebe35fb955b576c71b5d9e644852b22bdedba5796e7e5e79748a250e2c07f7b6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **227.0 MB (227026517 bytes)**  
+-	Total Size: **227.7 MB (227716616 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a42243c72865ac4aea78d42c31f8b04b8a7143c2b375de3835213343035f2dfa`
+-	Image ID: `sha256:33c89f2e96e743092fc2e225c298047b8db2fc2f10ff46bf1156dd0fe562a916`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -2403,31 +2403,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Tue, 07 Jul 2020 01:12:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 07 Jul 2020 01:13:00 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 01:13:34 GMT
-ENV JAVA_VERSION=jdk-11.0.7+10
-# Tue, 07 Jul 2020 01:14:06 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='cfe504e9e9621b831a5cfd800a2005dafe90a1d11aa14ee35d7b674d68685698';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.7_10.tar.gz';          ;;        armhf|armv7l)          ESUM='581bae8efcaa40e209a780baa6f96b7c8c9397965bc6d54533f4fd8599d5c742';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_arm_linux_hotspot_11.0.7_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='364a030a4c5c10660d33988bd1d40e6a34f49ca6a2e04ff44b8cf809da75423a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.7_10.tar.gz';          ;;        s390x)          ESUM='8e14d11a84c67da457695cbc20a9d70628c741ffc09087d11b40a52f2e11dddc';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_s390x_linux_hotspot_11.0.7_10.tar.gz';          ;;        amd64|x86_64)          ESUM='74b493dd8a884dcbee29682ead51b182d9d3e52b40c3d4cbb3167c2fd0063503';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_x64_linux_hotspot_11.0.7_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Tue, 07 Jul 2020 01:14:07 GMT
+# Fri, 17 Jul 2020 20:42:18 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 20:43:03 GMT
+ENV JAVA_VERSION=jdk-11.0.8+10
+# Fri, 17 Jul 2020 20:43:42 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='286c869dbaefda9b470ae71d1250fdecf9f06d8da97c0f7df9021d381d749106';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.8_10.tar.gz';          ;;        armhf|armv7l)          ESUM='ffa627b2d0c6001448bb8f1f24f7c9921dad37e67637f6ed0a9a479e680a3393';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_arm_linux_hotspot_11.0.8_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='89231e1667d7cc4202d1a401497bb287d4eb12281c90c17e2570211cc4e901a3';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.8_10.tar.gz';          ;;        s390x)          ESUM='dc0e715c17abcb12bedf77c638e58e67d828d3c4bf24a898f0d4b053caaeb25f';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_s390x_linux_hotspot_11.0.8_10.tar.gz';          ;;        amd64|x86_64)          ESUM='98615b1b369509965a612232622d39b5cefe117d6189179cbad4dcef2ee2f4e1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_x64_linux_hotspot_11.0.8_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 20:43:43 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 02:10:29 GMT
+# Fri, 17 Jul 2020 21:54:35 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 02:10:31 GMT
+# Fri, 17 Jul 2020 21:54:35 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 02:10:33 GMT
+# Fri, 17 Jul 2020 21:54:37 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 02:10:33 GMT
+# Fri, 17 Jul 2020 21:54:38 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 02:10:34 GMT
+# Fri, 17 Jul 2020 21:54:38 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 02:11:07 GMT
+# Fri, 17 Jul 2020 21:55:14 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 02:11:09 GMT
+# Fri, 17 Jul 2020 21:55:15 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 02:11:10 GMT
+# Fri, 17 Jul 2020 21:55:16 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 02:11:17 GMT
+# Fri, 17 Jul 2020 21:55:23 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -2449,25 +2449,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5427b5697c732a419d0ebcf481bdc2ee7263b7c5aa034f701221dea96bb72a18`  
-		Last Modified: Tue, 07 Jul 2020 01:16:08 GMT  
-		Size: 12.7 MB (12723255 bytes)  
+	-	`sha256:cf5858fe3213ff710f6c318742f085137ce8fcea1e001c321df12f5871e95b09`  
+		Last Modified: Fri, 17 Jul 2020 20:45:09 GMT  
+		Size: 13.3 MB (13284377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9bc585cece9cdefb8ef71d7292b6e27e46c1be509efe1b97471f5d83315a25e`  
-		Last Modified: Tue, 07 Jul 2020 01:17:57 GMT  
-		Size: 42.0 MB (41965111 bytes)  
+	-	`sha256:1e22a3aeffd5cd30eea95a35711dbca11aefd214a8e5cf32a8f537d766483421`  
+		Last Modified: Fri, 17 Jul 2020 20:46:33 GMT  
+		Size: 42.0 MB (41978765 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ef849badd091db3013d1ecb81ef10fa098dcf0bd41dbcd1f68526413bf32288`  
-		Last Modified: Tue, 07 Jul 2020 02:13:32 GMT  
+	-	`sha256:b99051d08f242432ee3ec34b6f7ae899c3eae7b6dfebf331b02c1139d0fe2d0e`  
+		Last Modified: Fri, 17 Jul 2020 21:57:34 GMT  
 		Size: 4.5 KB (4524 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40f87def99267f1d0e68fcebe4e40995b6d79bee47aae329adfea1d420f6165b`  
-		Last Modified: Tue, 07 Jul 2020 02:13:47 GMT  
-		Size: 46.2 MB (46198433 bytes)  
+	-	`sha256:2bb4184fa1763e38bd43e635cc8462e0ef7c6dcb3d18375260e7abbedeb42c3f`  
+		Last Modified: Fri, 17 Jul 2020 21:57:49 GMT  
+		Size: 46.3 MB (46313749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d5bcf9bdeaa14ad18c910e8ea1d2a0a6798c8130d36ee136e505a852938418e`  
-		Last Modified: Tue, 07 Jul 2020 02:13:44 GMT  
-		Size: 102.4 MB (102379601 bytes)  
+	-	`sha256:cafb1960ddd923ee3e47c19145170c64f36e0eab9378e378cad4f91fe768959a`  
+		Last Modified: Fri, 17 Jul 2020 21:57:51 GMT  
+		Size: 102.4 MB (102379608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5.1-jre11` - linux; ppc64le
@@ -2659,7 +2659,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:6.5.1-jre14`
 
 ```console
-$ docker pull gradle@sha256:dcd12cb1be1d53ffb2b9fd05c3ac08ca02ab3aadc91b07fcf33f03719496596d
+$ docker pull gradle@sha256:8bd146533828318b56e02fd897d6d815c5ccbe6a362647a53e6c5d656355a2b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2672,14 +2672,14 @@ $ docker pull gradle@sha256:dcd12cb1be1d53ffb2b9fd05c3ac08ca02ab3aadc91b07fcf33f
 ### `gradle:6.5.1-jre14` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:4fd0829ad70d1cceebdd6604633bca4be02ae843795daf30ab4ec45672044f70
+$ docker pull gradle@sha256:bcec30de25f4d45f0ab5b6010111e9187b7c1b089e375d49ff8c0866bfff3bb9
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **248.9 MB (248940976 bytes)**  
+-	Total Size: **249.5 MB (249482816 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b8251bd9d76f4514e1362efb72b5ec513bb4b89ffc30dcba87d97d1c1718adf9`
+-	Image ID: `sha256:d10c8d77dd4ac4beda468dafe0d8e5634791dc1c38075025746f09851ac7863e`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -2695,31 +2695,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:04:38 GMT
-ENV JAVA_VERSION=jdk-14.0.1+7
-# Mon, 06 Jul 2020 23:05:02 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='bf038c351337982082074ab818a6bd385c7ad31d23654a2db8cd05805fe48058';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_aarch64_linux_hotspot_14.0.1_7.tar.gz';          ;;        armhf|armv7l)          ESUM='277ae66d1db7613a7f02b1cbfc9acd8f5f6208eac0e61828d40d5a513b40e406';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_arm_linux_hotspot_14.0.1_7.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='8af51efdd25d93b120ee9ef22e2584cf8bf9441108fa0396a0ac9c5de86ec119';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_ppc64le_linux_hotspot_14.0.1_7.tar.gz';          ;;        s390x)          ESUM='97b15611f4238a20fde975cba5144477f06bb8416964ae79e2109778c25fa654';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_s390x_linux_hotspot_14.0.1_7.tar.gz';          ;;        amd64|x86_64)          ESUM='3f8a4d5939a66cadf9846bbae6392644165f75063ae31998764916da13810fca';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_x64_linux_hotspot_14.0.1_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:05:03 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:20:49 GMT
+ENV JAVA_VERSION=jdk-14.0.2+12
+# Fri, 17 Jul 2020 22:21:13 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='2b749ceead19d68dd7e3c28b143dc4f94bb0916378a98b7346e851318ea4da84';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='4468ecf74956783ae41a46e8ba023c003c69e4d111622944aad1af764a1bc4af';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='0f96998be562cfbe8a4114581349dbd2609d0a23091e538fe142dcd9c83e70cf';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='9c4a87ea44165ccbcab5124b997ec1af1551bd2a2b255fca57d7a4e19c2075d3';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='1107845947da56e6bdad0da0b79210a079a74ec5c806f815ec5db9d09e1a9236';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:21:13 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 03:29:06 GMT
+# Fri, 17 Jul 2020 23:00:42 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:29:06 GMT
+# Fri, 17 Jul 2020 23:00:42 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:29:07 GMT
+# Fri, 17 Jul 2020 23:00:43 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:29:07 GMT
+# Fri, 17 Jul 2020 23:00:43 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:29:07 GMT
+# Fri, 17 Jul 2020 23:00:43 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:29:25 GMT
+# Fri, 17 Jul 2020 23:01:01 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:29:25 GMT
+# Fri, 17 Jul 2020 23:01:01 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:29:25 GMT
+# Fri, 17 Jul 2020 23:01:01 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:29:30 GMT
+# Fri, 17 Jul 2020 23:01:06 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -2741,38 +2741,38 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc754a401449dc4a11cd95ca08fc96a412bdb15b71e9548d7f9e4c941109fcea`  
-		Last Modified: Mon, 06 Jul 2020 23:09:48 GMT  
-		Size: 57.9 MB (57858509 bytes)  
+	-	`sha256:da615a00062ab1cbd1ca32e446e8173aa022bab731a2205df30b3d07289adba7`  
+		Last Modified: Fri, 17 Jul 2020 22:24:46 GMT  
+		Size: 57.7 MB (57722384 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9cbf6fb5758271fc6a96fe71366b79c1277e57958d0baf6cdbc3698a02e6a01d`  
-		Last Modified: Tue, 07 Jul 2020 03:31:31 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:431ece7fe3c608386c1a00fe8e2a332b98280cb6739a7b4e5691c518d68a259f`  
+		Last Modified: Fri, 17 Jul 2020 23:02:47 GMT  
+		Size: 4.5 KB (4483 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea3b55d53c4e8499417659337d5b9574ff34712ef02ea942aab4471028e81bcd`  
-		Last Modified: Tue, 07 Jul 2020 03:31:41 GMT  
-		Size: 48.7 MB (48654262 bytes)  
+	-	`sha256:638372fee7c21a0bb88e9954424f47c0c88e9ab2031bb7ed85b4f182ecbedd26`  
+		Last Modified: Fri, 17 Jul 2020 23:02:58 GMT  
+		Size: 48.8 MB (48768734 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42b4ca7d9687954e68db5032675491ce63594fbf24f0a6147ec064de3c35a4d3`  
-		Last Modified: Tue, 07 Jul 2020 03:31:38 GMT  
+	-	`sha256:34274f34471c8f7cb8bad8f2b44659f02d06f279d7bb341f2363e3ce9eb1320d`  
+		Last Modified: Fri, 17 Jul 2020 23:02:54 GMT  
 		Size: 102.4 MB (102379499 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5.1-jre14` - linux; arm64 variant v8
 
 ```console
-$ docker pull gradle@sha256:8ec9209278ca66768ac0a85d7afe08d86643346b5fb64ea22dbf4bfe80b56d85
+$ docker pull gradle@sha256:5ff3b3ef82f59c1d8c556a62dcae7acdd8e593abc46ced8248dbc1397fe4d7ba
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.6 MB (241603828 bytes)**  
+-	Total Size: **242.2 MB (242176648 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7ed5fffe348352c437c53bc43dade6a2299f0d73e86c9051841cc3e1f8a2475a`
+-	Image ID: `sha256:bdbe6f9d084bb7ed0b7ab4b3ffbb8ba596ddbd14ba8e5cecb27a1d745f06bad5`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -2788,31 +2788,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Tue, 07 Jul 2020 01:12:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 07 Jul 2020 01:13:00 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 01:14:55 GMT
-ENV JAVA_VERSION=jdk-14.0.1+7
-# Tue, 07 Jul 2020 01:15:27 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='bf038c351337982082074ab818a6bd385c7ad31d23654a2db8cd05805fe48058';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_aarch64_linux_hotspot_14.0.1_7.tar.gz';          ;;        armhf|armv7l)          ESUM='277ae66d1db7613a7f02b1cbfc9acd8f5f6208eac0e61828d40d5a513b40e406';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_arm_linux_hotspot_14.0.1_7.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='8af51efdd25d93b120ee9ef22e2584cf8bf9441108fa0396a0ac9c5de86ec119';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_ppc64le_linux_hotspot_14.0.1_7.tar.gz';          ;;        s390x)          ESUM='97b15611f4238a20fde975cba5144477f06bb8416964ae79e2109778c25fa654';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_s390x_linux_hotspot_14.0.1_7.tar.gz';          ;;        amd64|x86_64)          ESUM='3f8a4d5939a66cadf9846bbae6392644165f75063ae31998764916da13810fca';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_x64_linux_hotspot_14.0.1_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Tue, 07 Jul 2020 01:15:29 GMT
+# Fri, 17 Jul 2020 20:42:18 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 20:44:00 GMT
+ENV JAVA_VERSION=jdk-14.0.2+12
+# Fri, 17 Jul 2020 20:44:34 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='2b749ceead19d68dd7e3c28b143dc4f94bb0916378a98b7346e851318ea4da84';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='4468ecf74956783ae41a46e8ba023c003c69e4d111622944aad1af764a1bc4af';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='0f96998be562cfbe8a4114581349dbd2609d0a23091e538fe142dcd9c83e70cf';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='9c4a87ea44165ccbcab5124b997ec1af1551bd2a2b255fca57d7a4e19c2075d3';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='1107845947da56e6bdad0da0b79210a079a74ec5c806f815ec5db9d09e1a9236';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 20:44:35 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 02:12:24 GMT
+# Fri, 17 Jul 2020 21:56:29 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 02:12:24 GMT
+# Fri, 17 Jul 2020 21:56:30 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 02:12:26 GMT
+# Fri, 17 Jul 2020 21:56:32 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 02:12:27 GMT
+# Fri, 17 Jul 2020 21:56:32 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 02:12:28 GMT
+# Fri, 17 Jul 2020 21:56:33 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 02:13:02 GMT
+# Fri, 17 Jul 2020 21:57:07 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 02:13:05 GMT
+# Fri, 17 Jul 2020 21:57:10 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 02:13:06 GMT
+# Fri, 17 Jul 2020 21:57:11 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 02:13:12 GMT
+# Fri, 17 Jul 2020 21:57:19 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -2834,25 +2834,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5427b5697c732a419d0ebcf481bdc2ee7263b7c5aa034f701221dea96bb72a18`  
-		Last Modified: Tue, 07 Jul 2020 01:16:08 GMT  
-		Size: 12.7 MB (12723255 bytes)  
+	-	`sha256:cf5858fe3213ff710f6c318742f085137ce8fcea1e001c321df12f5871e95b09`  
+		Last Modified: Fri, 17 Jul 2020 20:45:09 GMT  
+		Size: 13.3 MB (13284377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a0ee6620cd0d716b68964310a1b01df8aab9dd19b2d2113cdbabafb35da2095`  
-		Last Modified: Tue, 07 Jul 2020 01:20:08 GMT  
-		Size: 56.5 MB (56542282 bytes)  
+	-	`sha256:d315a953b2a7b3d4e68691ab7054a03977f57de8abfcf8906db6bacbee9c3e4d`  
+		Last Modified: Fri, 17 Jul 2020 20:47:37 GMT  
+		Size: 56.4 MB (56438505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0be74624ea70f81fbe71bd4979aab53d0d61d4e3d8addc61f238bfc62bfa4312`  
-		Last Modified: Tue, 07 Jul 2020 02:14:14 GMT  
-		Size: 4.5 KB (4522 bytes)  
+	-	`sha256:aaf78ceb47d864e2a5fd7f1e25c130aa979b85b9dd72661a0283e78b92088a2a`  
+		Last Modified: Fri, 17 Jul 2020 21:58:22 GMT  
+		Size: 4.5 KB (4521 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b1dfb220c81892fb9a90b6ed461c4d1d0e326fd10eb50db4959e6e973a226fa`  
-		Last Modified: Tue, 07 Jul 2020 02:14:29 GMT  
-		Size: 46.2 MB (46198634 bytes)  
+	-	`sha256:eb55ffdc866cb3c5583b815add7e5788a90834ac1943969f7ccf03c79d23b909`  
+		Last Modified: Fri, 17 Jul 2020 21:58:36 GMT  
+		Size: 46.3 MB (46314055 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad8edf0691bfb7713b9c9eaad97cdea58c946a8e6ac5d5f4d8f35dbd162f467a`  
-		Last Modified: Tue, 07 Jul 2020 02:14:28 GMT  
-		Size: 102.4 MB (102379542 bytes)  
+	-	`sha256:71372cea685e5310d5723d128b7c2439dc20c4b757d32c9867c9599cfebb12db`  
+		Last Modified: Fri, 17 Jul 2020 21:58:34 GMT  
+		Size: 102.4 MB (102379597 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5.1-jre14` - linux; ppc64le
@@ -3044,7 +3044,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:6.5.1-jre8`
 
 ```console
-$ docker pull gradle@sha256:8ed6d618feb07aa1016cb7fc760f4b22c5e58947fa0a1a26df23e110437e3140
+$ docker pull gradle@sha256:8aaca3e01190b95836deade3e17867c92bd9bdcecffd8e19a01ac9873ba368ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3056,14 +3056,14 @@ $ docker pull gradle@sha256:8ed6d618feb07aa1016cb7fc760f4b22c5e58947fa0a1a26df23
 ### `gradle:6.5.1-jre8` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:3e88feb1d68621bbd96a6b2727aa54b33b6b66bd64987e4c9430b1569b736110
+$ docker pull gradle@sha256:8b78ead4defc49175a129a17b7efdd67e3fa58970f4f7b47016564df140828f6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **232.5 MB (232536779 bytes)**  
+-	Total Size: **233.9 MB (233879210 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10f7bb03ee99c2e4147d33ab34bba4f9410e47f8d4f9a235682bb5eb871a9e2e`
+-	Image ID: `sha256:b52dccb61564c357fafb67c5aad52aaa3776058aaab6e9889c2cf449bdf5cdc4`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -3079,31 +3079,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:03:21 GMT
-ENV JAVA_VERSION=jdk8u252-b09
-# Mon, 06 Jul 2020 23:03:37 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='30bba4425497f5b4aabcba7b45db69d582d278fb17357d64c22c9dc6b2d29ca1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_aarch64_linux_hotspot_8u252b09.tar.gz';          ;;        armhf|armv7l)          ESUM='107699a88f611e0c2d57816be25821ef9b17db860b14402c4e9e5bf0b9cf16fd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_arm_linux_hotspot_8u252b09.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='fbc559e8f75107f3c2ef92b33938dd48aee5728d471774d04fa3f68ed3b992fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_ppc64le_linux_hotspot_8u252b09.tar.gz';          ;;        s390x)          ESUM='23daa316ebcd965197e74dff011708a050516cd108a27a40e5b5cfa3c88beaba';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_s390x_linux_hotspot_8u252b09.tar.gz';          ;;        amd64|x86_64)          ESUM='a93be303ed62398dba9acb0376fb3caf8f488fcde80dc62d0a8e46256b3adfb1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_x64_linux_hotspot_8u252b09.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:03:37 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:19:52 GMT
+ENV JAVA_VERSION=jdk8u262-b10
+# Fri, 17 Jul 2020 22:20:11 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:20:11 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 03:27:09 GMT
+# Fri, 17 Jul 2020 22:58:45 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:27:09 GMT
+# Fri, 17 Jul 2020 22:58:45 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:27:10 GMT
+# Fri, 17 Jul 2020 22:58:46 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:27:10 GMT
+# Fri, 17 Jul 2020 22:58:46 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:27:10 GMT
+# Fri, 17 Jul 2020 22:58:46 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:27:28 GMT
+# Fri, 17 Jul 2020 22:59:03 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:27:28 GMT
+# Fri, 17 Jul 2020 22:59:04 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:27:28 GMT
+# Fri, 17 Jul 2020 22:59:04 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:27:33 GMT
+# Fri, 17 Jul 2020 22:59:09 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -3125,25 +3125,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae7092168735a178c86270ca696ef6f3121c32c9fb7431c9472f72806f474d73`  
-		Last Modified: Mon, 06 Jul 2020 23:07:46 GMT  
-		Size: 41.5 MB (41453839 bytes)  
+	-	`sha256:b38587e18ed628aa15742a897954754fec3b97a3454dbfd1a5ae9ad4d7b13e4d`  
+		Last Modified: Fri, 17 Jul 2020 22:23:36 GMT  
+		Size: 42.1 MB (42118777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da3784f1dbdb3f11ca97c8ec1db98795e3a33ec90957e196ddec77d5d71d29e3`  
-		Last Modified: Tue, 07 Jul 2020 03:30:07 GMT  
-		Size: 4.5 KB (4491 bytes)  
+	-	`sha256:c0b9393a200ac938d5e2a39d00009cd08cae092d59479c10607366de3a6072f9`  
+		Last Modified: Fri, 17 Jul 2020 23:01:38 GMT  
+		Size: 4.5 KB (4487 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:645b913ed928a0a09d818f826b89dd0bc5e40d1ce60291e916451aaada11b6fc`  
-		Last Modified: Tue, 07 Jul 2020 03:30:18 GMT  
-		Size: 48.7 MB (48654747 bytes)  
+	-	`sha256:6986687daf4a2275a545c1520c9fb4e325b5bc175ba3a957f2ec3dc8d5ac276e`  
+		Last Modified: Fri, 17 Jul 2020 23:01:49 GMT  
+		Size: 48.8 MB (48768729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36c6f5e88a25b8f89e3bd2690fccd81cb1887874a4ed985765229bbc469874fb`  
-		Last Modified: Tue, 07 Jul 2020 03:30:15 GMT  
-		Size: 102.4 MB (102379484 bytes)  
+	-	`sha256:29b799999efe114b0bb7230c6747a4f9d78ac1b74d71f5b5a4188d860bd3c223`  
+		Last Modified: Fri, 17 Jul 2020 23:01:46 GMT  
+		Size: 102.4 MB (102379501 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5.1-jre8` - linux; ppc64le
@@ -3335,7 +3335,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:6.5-jdk`
 
 ```console
-$ docker pull gradle@sha256:10df187cb99774a208aaf54b139d58d654ec885a3a76419b8668656010ea703e
+$ docker pull gradle@sha256:79c80c35dbf760580bba9dcd99de07f32db6caa54e0c6e515ee139d82381df39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3347,14 +3347,14 @@ $ docker pull gradle@sha256:10df187cb99774a208aaf54b139d58d654ec885a3a76419b8668
 ### `gradle:6.5-jdk` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:0c567e3c34943acde9b72e00300395f8148d27731d1b07706c81a2eb044b2d49
+$ docker pull gradle@sha256:2b3c57831088f8c767c009f441f2584f61c249ae928fad3599c14fdb13b51e60
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **293.8 MB (293773404 bytes)**  
+-	Total Size: **295.5 MB (295496791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63a06ad25ffc0fce6b9d30c05541ff32ef3bb8539e3c99cd13a1a2a96cf2aad4`
+-	Image ID: `sha256:864401413f8190c196649ab996fd27cb85e6d29f48b5f181f1129012480ff0ee`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -3370,31 +3370,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:03:21 GMT
-ENV JAVA_VERSION=jdk8u252-b09
-# Mon, 06 Jul 2020 23:03:28 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='536bf397d98174b376da9ed49d2f659d65c7310318d8211444f4b7ba7c15e453';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_aarch64_linux_hotspot_8u252b09.tar.gz';          ;;        armhf|armv7l)          ESUM='5b401ad3c9b246281bd6df34b1abaf75e10e5cad9c6b26b55232b016e90e411a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_arm_linux_hotspot_8u252b09.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='55f0453b1d28812154138cf52b17b7acd93b9e55263f1f508f559795d31b2671';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u252b09.tar.gz';          ;;        s390x)          ESUM='db39932666c37718b1c3c62a1adb4f8e9c33258cf15a85ddf9b4d71199edfb1d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_s390x_linux_hotspot_8u252b09.tar.gz';          ;;        amd64|x86_64)          ESUM='2b59b5282ff32bce7abba8ad6b9fde34c15a98f949ad8ae43e789bbd78fc8862';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_x64_linux_hotspot_8u252b09.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:03:29 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:19:52 GMT
+ENV JAVA_VERSION=jdk8u262-b10
+# Fri, 17 Jul 2020 22:20:00 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7be0b2a4c749a277302a54b456624c076b3a5b990ad502e2a72d803ab31aecab';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='dd85ebb9a64916b4b621a23729e3360adb363d430bf1e99e98f25397834d74bd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d2a16915fb85ba851145c91cda5666cb78f06bf4713a2b3bdce813779ff972c2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='a504af6924a095cfb6c392653dccd7299925048c91b399d05efa95a094820120';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='733755fd649fad6ae91fc083f7e5a5a0b56410fb6ac1815cff29f744b128b1b1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:20:00 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 03:26:30 GMT
+# Fri, 17 Jul 2020 22:58:11 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:26:30 GMT
+# Fri, 17 Jul 2020 22:58:11 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:26:57 GMT
+# Fri, 17 Jul 2020 22:58:34 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:26:58 GMT
+# Fri, 17 Jul 2020 22:58:35 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:26:58 GMT
+# Fri, 17 Jul 2020 22:58:35 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:27:03 GMT
+# Fri, 17 Jul 2020 22:58:40 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -3416,25 +3416,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ebafcb948fa26ecf0a81e1f030a5258f58fbbca5eb8d6669348a9df00eadcc2`  
-		Last Modified: Mon, 06 Jul 2020 23:07:34 GMT  
-		Size: 102.7 MB (102690072 bytes)  
+	-	`sha256:d119f9c502a13708ca69878c432d637073f2f7311ffd6b8e2b584a4f68c7fcf2`  
+		Last Modified: Fri, 17 Jul 2020 22:23:22 GMT  
+		Size: 103.7 MB (103736353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d65a8d0d90b871faa7911593e4aaeae568522ccf2855d74828b920ef6e1dec02`  
-		Last Modified: Tue, 07 Jul 2020 03:29:45 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:1d010a97e0ac828392f864109a0969f1db978057bfc826e95b19c9e297e75ae9`  
+		Last Modified: Fri, 17 Jul 2020 23:01:20 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b59f24a81e2677fcdb327c23d8afc692b121ae0dd4567d9c2e7e2b3c55d62c3e`  
-		Last Modified: Tue, 07 Jul 2020 03:29:55 GMT  
-		Size: 48.7 MB (48655113 bytes)  
+	-	`sha256:86cdd3c13fed9a7f9c3b78f300dc517ddfb1deafae45cbdc3ddf660bd1f7db5f`  
+		Last Modified: Fri, 17 Jul 2020 23:01:30 GMT  
+		Size: 48.8 MB (48768749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d63278ca4b835a2b21140f139c916d450042c9398f56db01ad0cd2cfb01defb`  
-		Last Modified: Tue, 07 Jul 2020 03:29:54 GMT  
-		Size: 102.4 MB (102379513 bytes)  
+	-	`sha256:a8d335b1e876145c7a468bb7fe04c71b8879ee5cfdbbe7e18566f5e180694575`  
+		Last Modified: Fri, 17 Jul 2020 23:01:27 GMT  
+		Size: 102.4 MB (102379484 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5-jdk` - linux; ppc64le
@@ -3626,7 +3626,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:6.5-jdk11`
 
 ```console
-$ docker pull gradle@sha256:ba54e8f658dd9a676ac839adb2adf3b432df89a2fb34010f3a996862a3eaef78
+$ docker pull gradle@sha256:41b1f0e07af7e9391dcfd8fec762fd98b58d7746a487fc300869b5a3762b8a59
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3638,14 +3638,14 @@ $ docker pull gradle@sha256:ba54e8f658dd9a676ac839adb2adf3b432df89a2fb34010f3a99
 ### `gradle:6.5-jdk11` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:dfd049644e0ab46b5d8112ec686e2b0ae7baeeb56f92d50a1c5b8fd3599477ea
+$ docker pull gradle@sha256:b31990a058a34018948a99957cf467f57db91c35c60e521f7754cfddc4f0abe5
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **385.3 MB (385294091 bytes)**  
+-	Total Size: **386.0 MB (386026499 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d58f2d89bd62b7f774d810b468321cfdd132bb758217e844ddc7fc5727dcdd4`
+-	Image ID: `sha256:365df73aa399ba48003d3db6b90936098cffbc506f80a8f5fe0d01308e87598b`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -3661,33 +3661,33 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:03:41 GMT
-ENV JAVA_VERSION=jdk-11.0.7+10
-# Mon, 06 Jul 2020 23:03:53 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='3b8b8bba6a0472ec7de5271cbf67f11e6ab525de6dd5d4729300375f1d56b7a1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.7_10.tar.gz';          ;;        armhf|armv7l)          ESUM='45c235af67498f87e3dc99642771e57547cf226335eaee8a55d195173e66a2e9';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_arm_linux_hotspot_11.0.7_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='a417db0295b1f4b538ecbaf7c774f3a177fab9657a665940170936c0eca4e71a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.7_10.tar.gz';          ;;        s390x)          ESUM='d9b72e87a1d3ebc0c9552f72ae5eb150fffc0298a7cb841f1ce7bfc70dcd1059';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.7_10.tar.gz';          ;;        amd64|x86_64)          ESUM='ee60304d782c9d5654bf1a6b3f38c683921c1711045e1db94525a51b7024a2ca';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.7_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:03:53 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:20:16 GMT
+ENV JAVA_VERSION=jdk-11.0.8+10
+# Fri, 17 Jul 2020 22:20:27 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='fb27ea52ed901c14c9fe8ad2fc10b338b8cf47d6762571be1fe3fb7c426bab7c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.8_10.tar.gz';          ;;        armhf|armv7l)          ESUM='d00370967e4657e137cc511e81d6accbfdb08dba91e6268abef8219e735fbfc5';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_arm_linux_hotspot_11.0.8_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d206a63cd719b65717f7f20ee3fe49f0b8b2db922986b4811c828db57212699e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.8_10.tar.gz';          ;;        s390x)          ESUM='5619e1437c7cd400169eb7f1c831c2635fdb2776a401147a2fc1841b01f83ed6';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.8_10.tar.gz';          ;;        amd64|x86_64)          ESUM='6e4cead158037cb7747ca47416474d4f408c9126be5b96f9befd532e0a762b47';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.8_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:20:27 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:03:53 GMT
+# Fri, 17 Jul 2020 22:20:27 GMT
 CMD ["jshell"]
-# Tue, 07 Jul 2020 03:27:38 GMT
+# Fri, 17 Jul 2020 22:59:14 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:27:39 GMT
+# Fri, 17 Jul 2020 22:59:14 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:27:39 GMT
+# Fri, 17 Jul 2020 22:59:15 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:27:40 GMT
+# Fri, 17 Jul 2020 22:59:15 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:27:40 GMT
+# Fri, 17 Jul 2020 22:59:15 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:27:57 GMT
+# Fri, 17 Jul 2020 22:59:33 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:27:57 GMT
+# Fri, 17 Jul 2020 22:59:33 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:27:58 GMT
+# Fri, 17 Jul 2020 22:59:34 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:28:03 GMT
+# Fri, 17 Jul 2020 22:59:39 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -3709,38 +3709,38 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9648e8b5b6e12a552f92d1cc9b88f52be70cf376f7e4747c5d6e677e0a307fb2`  
-		Last Modified: Mon, 06 Jul 2020 23:08:06 GMT  
-		Size: 194.2 MB (194211003 bytes)  
+	-	`sha256:5f2256d745b1c9b7ad4ec6a87094065af4ab75985255affc89e3ad9e220ea48b`  
+		Last Modified: Fri, 17 Jul 2020 22:23:56 GMT  
+		Size: 194.3 MB (194266379 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72d53b71c2b01af3ad101f0912d17e82cdfa30c32f8006390f7ef15c3522fcce`  
-		Last Modified: Tue, 07 Jul 2020 03:30:27 GMT  
-		Size: 4.5 KB (4489 bytes)  
+	-	`sha256:0c857c3e217982eb5fb4e6a11d217cc7fafeb06e0045057ec23ba1702dcb5005`  
+		Last Modified: Fri, 17 Jul 2020 23:01:56 GMT  
+		Size: 4.5 KB (4491 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3394218381fe7197c36d588f5be67136d68482f9b6da643f7357dff4d8cd974d`  
-		Last Modified: Tue, 07 Jul 2020 03:30:37 GMT  
-		Size: 48.7 MB (48654881 bytes)  
+	-	`sha256:35d89e1980a91b2e9ccf95b4d20a38bb21e57ae2e0052a78808cd89d937e2ccb`  
+		Last Modified: Fri, 17 Jul 2020 23:02:06 GMT  
+		Size: 48.8 MB (48768426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24bcafcb7c76fd408c4b7cb3bf5e67abbd565b5aef8a4dd2e2fc692b0f0dfc0d`  
-		Last Modified: Tue, 07 Jul 2020 03:30:34 GMT  
-		Size: 102.4 MB (102379500 bytes)  
+	-	`sha256:7fff980f90be87dfae2056ca2ca25cebac1a6278ae56e052d1370e10c2f2e6e6`  
+		Last Modified: Fri, 17 Jul 2020 23:02:03 GMT  
+		Size: 102.4 MB (102379487 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5-jdk11` - linux; arm variant v7
 
 ```console
-$ docker pull gradle@sha256:20d1d8a79ea565f2db5bbf4c108d20950fed009c951be649856a1b5723d4cfb7
+$ docker pull gradle@sha256:545a3e6ea69c949aa35226276bf607f01e61ce08ae166a4d83134848b50a87ba
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **359.9 MB (359924251 bytes)**  
+-	Total Size: **364.6 MB (364552298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ac611656b7c852d0cb061f1f9f95a53fe8317519924bfb3b178cf13847bb6c6`
+-	Image ID: `sha256:622d19bc659e42dd4f36b97a20dd8ae85e617acbecafce853a0c664d8f6c518c`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -3756,33 +3756,33 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 21:54:44 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 21:55:12 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 21:55:46 GMT
-ENV JAVA_VERSION=jdk-11.0.7+10
-# Mon, 06 Jul 2020 21:56:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='3b8b8bba6a0472ec7de5271cbf67f11e6ab525de6dd5d4729300375f1d56b7a1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.7_10.tar.gz';          ;;        armhf|armv7l)          ESUM='45c235af67498f87e3dc99642771e57547cf226335eaee8a55d195173e66a2e9';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_arm_linux_hotspot_11.0.7_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='a417db0295b1f4b538ecbaf7c774f3a177fab9657a665940170936c0eca4e71a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.7_10.tar.gz';          ;;        s390x)          ESUM='d9b72e87a1d3ebc0c9552f72ae5eb150fffc0298a7cb841f1ce7bfc70dcd1059';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.7_10.tar.gz';          ;;        amd64|x86_64)          ESUM='ee60304d782c9d5654bf1a6b3f38c683921c1711045e1db94525a51b7024a2ca';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.7_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 21:56:05 GMT
+# Fri, 17 Jul 2020 20:58:22 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 20:59:02 GMT
+ENV JAVA_VERSION=jdk-11.0.8+10
+# Fri, 17 Jul 2020 20:59:19 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='fb27ea52ed901c14c9fe8ad2fc10b338b8cf47d6762571be1fe3fb7c426bab7c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.8_10.tar.gz';          ;;        armhf|armv7l)          ESUM='d00370967e4657e137cc511e81d6accbfdb08dba91e6268abef8219e735fbfc5';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_arm_linux_hotspot_11.0.8_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d206a63cd719b65717f7f20ee3fe49f0b8b2db922986b4811c828db57212699e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.8_10.tar.gz';          ;;        s390x)          ESUM='5619e1437c7cd400169eb7f1c831c2635fdb2776a401147a2fc1841b01f83ed6';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.8_10.tar.gz';          ;;        amd64|x86_64)          ESUM='6e4cead158037cb7747ca47416474d4f408c9126be5b96f9befd532e0a762b47';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.8_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 20:59:21 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 21:56:06 GMT
+# Fri, 17 Jul 2020 20:59:22 GMT
 CMD ["jshell"]
-# Mon, 06 Jul 2020 22:49:26 GMT
+# Fri, 17 Jul 2020 22:27:43 GMT
 CMD ["gradle"]
-# Mon, 06 Jul 2020 22:49:27 GMT
+# Fri, 17 Jul 2020 22:27:43 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Mon, 06 Jul 2020 22:49:29 GMT
+# Fri, 17 Jul 2020 22:27:45 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Mon, 06 Jul 2020 22:49:30 GMT
+# Fri, 17 Jul 2020 22:27:46 GMT
 VOLUME [/home/gradle/.gradle]
-# Mon, 06 Jul 2020 22:49:31 GMT
+# Fri, 17 Jul 2020 22:27:47 GMT
 WORKDIR /home/gradle
-# Mon, 06 Jul 2020 22:50:07 GMT
+# Fri, 17 Jul 2020 22:28:23 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 22:50:08 GMT
+# Fri, 17 Jul 2020 22:28:25 GMT
 ENV GRADLE_VERSION=6.5.1
-# Mon, 06 Jul 2020 22:50:09 GMT
+# Fri, 17 Jul 2020 22:28:25 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Mon, 06 Jul 2020 22:50:18 GMT
+# Fri, 17 Jul 2020 22:28:34 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -3804,25 +3804,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
 		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:968021a24b7f39d881bc26e80a8217879444a2ade35c75754dd7e622543f123a`  
-		Last Modified: Mon, 06 Jul 2020 21:58:06 GMT  
-		Size: 12.3 MB (12253478 bytes)  
+	-	`sha256:e4cc999ed63826a5b44acb46406a5dc7d80f1604cc4f06927d88bf6c5e79b497`  
+		Last Modified: Fri, 17 Jul 2020 21:00:57 GMT  
+		Size: 12.8 MB (12816746 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d768e5caa42aeedf2598c0609d23fb7ffc77625b634ce1c71f2388eca07c0809`  
-		Last Modified: Mon, 06 Jul 2020 21:59:17 GMT  
-		Size: 179.4 MB (179355784 bytes)  
+	-	`sha256:f7f60d8de63ee0c7cd439d5e89c1d3bf4772e39ff44e87240f889aaa0a0ac7b3`  
+		Last Modified: Fri, 17 Jul 2020 21:02:08 GMT  
+		Size: 183.3 MB (183306987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdbf7a0767caa9889f06ad2e90297fbad716b712632cc4b51c1f3b6b1af99977`  
-		Last Modified: Mon, 06 Jul 2020 22:51:37 GMT  
-		Size: 4.5 KB (4505 bytes)  
+	-	`sha256:4b8e35ffc66bc6edb009f972778a6f74e0dd5da91e93934df18ef91faa33be9a`  
+		Last Modified: Fri, 17 Jul 2020 22:29:52 GMT  
+		Size: 4.5 KB (4513 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a4ff4192a01c01987036921b8a85a45eaac50968ef1d53072c00e19eb337068`  
-		Last Modified: Mon, 06 Jul 2020 22:51:53 GMT  
-		Size: 43.6 MB (43617895 bytes)  
+	-	`sha256:1136583547f60b49259dbe465363d4afbb3048eee1d0bca046ecfc76eb7791c3`  
+		Last Modified: Fri, 17 Jul 2020 22:30:08 GMT  
+		Size: 43.7 MB (43731443 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccb207034be3875b1dcd45e1a547e0602c7df74568391b1b7c06e306982575e6`  
-		Last Modified: Mon, 06 Jul 2020 22:51:51 GMT  
-		Size: 102.4 MB (102379583 bytes)  
+	-	`sha256:5bd7f1e3091a9c962c2daf4d8b4e85bc43a65a5c48ba2255150ed82110c2e52d`  
+		Last Modified: Fri, 17 Jul 2020 22:30:07 GMT  
+		Size: 102.4 MB (102379603 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5-jdk11` - linux; ppc64le
@@ -3923,7 +3923,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:6.5-jdk14`
 
 ```console
-$ docker pull gradle@sha256:a075a783f6b760b6b71abf377d2e5663486847efca3b0caee801a7f07ec6e578
+$ docker pull gradle@sha256:f617fd967a0da481778d07bfd5fb592c70515e341ad9992b60452f3a38e1e918
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3937,14 +3937,14 @@ $ docker pull gradle@sha256:a075a783f6b760b6b71abf377d2e5663486847efca3b0caee801
 ### `gradle:6.5-jdk14` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:139e4128f623ac8b2488c9db1d6d8a625687cbe466a9a81736c799f8e284fd1c
+$ docker pull gradle@sha256:a57aee65923b9f014a6f05bf2d00ac93a4956949c794c609f57283f47fef4801
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **403.1 MB (403087093 bytes)**  
+-	Total Size: **403.6 MB (403567326 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a03bf95ac56e937c828f9f0175bccedbeb9e6f83b9e280ca32759af600b9411c`
+-	Image ID: `sha256:601c687379276f6b17456ec3b3efbcbf3e6116bcfeb812e8853afc0a0758896c`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -3960,33 +3960,33 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:04:38 GMT
-ENV JAVA_VERSION=jdk-14.0.1+7
-# Mon, 06 Jul 2020 23:04:51 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='81ca31ad90f9bd789a2ca1753d6d83d10f4927876b4a4b9f4b1c4c8cbce85feb';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.1_7.tar.gz';          ;;        armhf|armv7l)          ESUM='458d091756500dc3013737aa182a14752b3d4ffc358d09532201874ffb8cae22';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_arm_linux_hotspot_14.0.1_7.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='bfdd77112d81256d4e1a859a465dd4dcb670019a5d6cf8260c30e24a0e5947e4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.1_7.tar.gz';          ;;        s390x)          ESUM='c13545924e92cb9d495282e95270f299a28d5466f9741c67791f131c38ebbd0c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.1_7.tar.gz';          ;;        amd64|x86_64)          ESUM='9ddf9b35996fbd784a53fff3e0d59920a7d5acf1a82d4c8d70906957ac146cd1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_x64_linux_hotspot_14.0.1_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:04:51 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:20:49 GMT
+ENV JAVA_VERSION=jdk-14.0.2+12
+# Fri, 17 Jul 2020 22:21:03 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ee87e9f03b1fbe6f328429b78fe1a9f44900026d220c90dfd747fe0bcd62d904';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='65f193496c6977ba7aed1563edc4b5be091b5ff03e3d790074bb4e389a034b36';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='465a3b8e931896b8d95e452d479615c4bf543535c05b6ea246323ae114e67d7d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='7d27aea30e359cf0bb561f8dcca6f4591dbc3ae831981f8a19aa367d31a9709b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='7d5ee7e06909b8a99c0d029f512f67b092597aa5b0e78c109bd59405bbfa74fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:21:03 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:04:51 GMT
+# Fri, 17 Jul 2020 22:21:03 GMT
 CMD ["jshell"]
-# Tue, 07 Jul 2020 03:28:37 GMT
+# Fri, 17 Jul 2020 23:00:12 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:28:37 GMT
+# Fri, 17 Jul 2020 23:00:13 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:28:38 GMT
+# Fri, 17 Jul 2020 23:00:13 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:28:38 GMT
+# Fri, 17 Jul 2020 23:00:14 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:28:38 GMT
+# Fri, 17 Jul 2020 23:00:14 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:28:55 GMT
+# Fri, 17 Jul 2020 23:00:31 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:28:56 GMT
+# Fri, 17 Jul 2020 23:00:32 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:28:56 GMT
+# Fri, 17 Jul 2020 23:00:32 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:29:01 GMT
+# Fri, 17 Jul 2020 23:00:37 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -4008,38 +4008,38 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:848e110e804a6625b9d9a4b3f558e17b88e77b5ec60d0b24ac58431d705a8823`  
-		Last Modified: Mon, 06 Jul 2020 23:09:32 GMT  
-		Size: 212.0 MB (212004123 bytes)  
+	-	`sha256:7f3ff2208f08b667f998eaca1c8da3a4ef48f028799511f54f74d33d30575206`  
+		Last Modified: Fri, 17 Jul 2020 22:24:31 GMT  
+		Size: 211.8 MB (211806973 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24e5036ab989a070dff127962d6461878c9c021a454840762d7342ad47c41101`  
-		Last Modified: Tue, 07 Jul 2020 03:30:58 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:ec514bec384a1d96e3b620eda459437f856c8df1716c2a0f202451b7f875d987`  
+		Last Modified: Fri, 17 Jul 2020 23:02:32 GMT  
+		Size: 4.5 KB (4486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:920f8999d3b578fd3ed2321182f8a0b57abecc5ca2d4f72e03f4bb47713cbd7a`  
-		Last Modified: Tue, 07 Jul 2020 03:31:09 GMT  
-		Size: 48.7 MB (48654750 bytes)  
+	-	`sha256:4ddae2b647d4303ef58f9090960b21825277a9f0c4914a18ca027384475bf434`  
+		Last Modified: Fri, 17 Jul 2020 23:02:43 GMT  
+		Size: 48.8 MB (48768639 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ecb4d1d9437de88b733d15965e71a0e02d99d59908c911010d85679ba6e1fc5`  
-		Last Modified: Tue, 07 Jul 2020 03:31:24 GMT  
-		Size: 102.4 MB (102379514 bytes)  
+	-	`sha256:0cfca9faaf5fbdcf9e51c0e0f2dd63be263a5861a245d0313ab92977d2d454f9`  
+		Last Modified: Fri, 17 Jul 2020 23:02:39 GMT  
+		Size: 102.4 MB (102379512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5-jdk14` - linux; arm variant v7
 
 ```console
-$ docker pull gradle@sha256:7d52d8e9d432beef3daf6081dfe3d4159d1426d5a821b61421f3122ab734688d
+$ docker pull gradle@sha256:35872b179b3048f429ee8a658a5b092c0103ed862d79436ab4b1bdcdea649d6d
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **370.6 MB (370599466 bytes)**  
+-	Total Size: **379.3 MB (379250597 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb6bdcc7ff91966608e2ccd310d0007f0a652df4cdc223e3fd17401247da0a30`
+-	Image ID: `sha256:50943231527f0d5375c2c3e41421e8c7b7a353731b3faf2ddf05e5e96d8c9252`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -4055,33 +4055,33 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 21:54:44 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 21:55:12 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 21:56:57 GMT
-ENV JAVA_VERSION=jdk-14.0.1+7
-# Mon, 06 Jul 2020 21:57:15 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='81ca31ad90f9bd789a2ca1753d6d83d10f4927876b4a4b9f4b1c4c8cbce85feb';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.1_7.tar.gz';          ;;        armhf|armv7l)          ESUM='458d091756500dc3013737aa182a14752b3d4ffc358d09532201874ffb8cae22';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_arm_linux_hotspot_14.0.1_7.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='bfdd77112d81256d4e1a859a465dd4dcb670019a5d6cf8260c30e24a0e5947e4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.1_7.tar.gz';          ;;        s390x)          ESUM='c13545924e92cb9d495282e95270f299a28d5466f9741c67791f131c38ebbd0c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.1_7.tar.gz';          ;;        amd64|x86_64)          ESUM='9ddf9b35996fbd784a53fff3e0d59920a7d5acf1a82d4c8d70906957ac146cd1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_x64_linux_hotspot_14.0.1_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 21:57:16 GMT
+# Fri, 17 Jul 2020 20:58:22 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 20:59:49 GMT
+ENV JAVA_VERSION=jdk-14.0.2+12
+# Fri, 17 Jul 2020 21:00:07 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ee87e9f03b1fbe6f328429b78fe1a9f44900026d220c90dfd747fe0bcd62d904';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='65f193496c6977ba7aed1563edc4b5be091b5ff03e3d790074bb4e389a034b36';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='465a3b8e931896b8d95e452d479615c4bf543535c05b6ea246323ae114e67d7d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='7d27aea30e359cf0bb561f8dcca6f4591dbc3ae831981f8a19aa367d31a9709b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='7d5ee7e06909b8a99c0d029f512f67b092597aa5b0e78c109bd59405bbfa74fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 21:00:08 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 21:57:16 GMT
+# Fri, 17 Jul 2020 21:00:09 GMT
 CMD ["jshell"]
-# Mon, 06 Jul 2020 22:50:25 GMT
+# Fri, 17 Jul 2020 22:28:50 GMT
 CMD ["gradle"]
-# Mon, 06 Jul 2020 22:50:26 GMT
+# Fri, 17 Jul 2020 22:28:50 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Mon, 06 Jul 2020 22:50:28 GMT
+# Fri, 17 Jul 2020 22:28:52 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Mon, 06 Jul 2020 22:50:28 GMT
+# Fri, 17 Jul 2020 22:28:52 GMT
 VOLUME [/home/gradle/.gradle]
-# Mon, 06 Jul 2020 22:50:29 GMT
+# Fri, 17 Jul 2020 22:28:53 GMT
 WORKDIR /home/gradle
-# Mon, 06 Jul 2020 22:51:11 GMT
+# Fri, 17 Jul 2020 22:29:28 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 22:51:13 GMT
+# Fri, 17 Jul 2020 22:29:30 GMT
 ENV GRADLE_VERSION=6.5.1
-# Mon, 06 Jul 2020 22:51:14 GMT
+# Fri, 17 Jul 2020 22:29:30 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Mon, 06 Jul 2020 22:51:23 GMT
+# Fri, 17 Jul 2020 22:29:39 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -4103,38 +4103,38 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
 		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:968021a24b7f39d881bc26e80a8217879444a2ade35c75754dd7e622543f123a`  
-		Last Modified: Mon, 06 Jul 2020 21:58:06 GMT  
-		Size: 12.3 MB (12253478 bytes)  
+	-	`sha256:e4cc999ed63826a5b44acb46406a5dc7d80f1604cc4f06927d88bf6c5e79b497`  
+		Last Modified: Fri, 17 Jul 2020 21:00:57 GMT  
+		Size: 12.8 MB (12816746 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84818d56063f804ec8406f86e32cd794130483221f6d592e46d02892618a3fc2`  
-		Last Modified: Mon, 06 Jul 2020 22:01:06 GMT  
-		Size: 190.0 MB (190031026 bytes)  
+	-	`sha256:9d42d820e936c80a9306a536e32cc65ee06121f2833ce9e9dba550f8434cac88`  
+		Last Modified: Fri, 17 Jul 2020 21:03:20 GMT  
+		Size: 198.0 MB (198004338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:beaff1e50122207fc296d85c56f11c40279709d18027d441cdb56a30f6065ca0`  
-		Last Modified: Mon, 06 Jul 2020 22:52:00 GMT  
-		Size: 4.5 KB (4504 bytes)  
+	-	`sha256:e72d8f6fb865afbe9d625e0d456c22ac256ff07184c1275170ea9e3bc7191e7d`  
+		Last Modified: Fri, 17 Jul 2020 22:30:14 GMT  
+		Size: 4.5 KB (4508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26feecf857d039ce347a0db795a08736505f417d4b9d66dfa43d4212bee96483`  
-		Last Modified: Mon, 06 Jul 2020 22:52:17 GMT  
-		Size: 43.6 MB (43617847 bytes)  
+	-	`sha256:3aa06e22eb3b5bec1c4571b5dbc46c6ba52d8b71155018604e161af65129760a`  
+		Last Modified: Fri, 17 Jul 2020 22:30:30 GMT  
+		Size: 43.7 MB (43732391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df63be9d7f93d866b1c881b6eaab5bd70160679476cd1997b2292cf2915554b0`  
-		Last Modified: Mon, 06 Jul 2020 22:52:16 GMT  
-		Size: 102.4 MB (102379605 bytes)  
+	-	`sha256:4bbc492b2ee1f22f363c06e92c35b2c584623955959db206ac7c1d94717ace1c`  
+		Last Modified: Fri, 17 Jul 2020 22:30:29 GMT  
+		Size: 102.4 MB (102379608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5-jdk14` - linux; arm64 variant v8
 
 ```console
-$ docker pull gradle@sha256:f759cbe554fde25cc9361ea9edcd6e66973b52e6787c108a4e05a9af99f12113
+$ docker pull gradle@sha256:6e611bb7d9de7e90a07d127e8f3490e25e945b975aa86bb54cf3f3b193c56920
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **394.5 MB (394481847 bytes)**  
+-	Total Size: **395.0 MB (394966663 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33db09e633ce12ea2ce4498b4d465c9d13e72ad9758452a05d282a980b1b98fe`
+-	Image ID: `sha256:748da17cf6c5a897f34f4b36d3627ff3e93d120fe9b997ef2241b428c1d03743`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -4150,33 +4150,33 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Tue, 07 Jul 2020 01:12:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 07 Jul 2020 01:13:00 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 01:14:55 GMT
-ENV JAVA_VERSION=jdk-14.0.1+7
-# Tue, 07 Jul 2020 01:15:11 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='81ca31ad90f9bd789a2ca1753d6d83d10f4927876b4a4b9f4b1c4c8cbce85feb';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.1_7.tar.gz';          ;;        armhf|armv7l)          ESUM='458d091756500dc3013737aa182a14752b3d4ffc358d09532201874ffb8cae22';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_arm_linux_hotspot_14.0.1_7.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='bfdd77112d81256d4e1a859a465dd4dcb670019a5d6cf8260c30e24a0e5947e4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.1_7.tar.gz';          ;;        s390x)          ESUM='c13545924e92cb9d495282e95270f299a28d5466f9741c67791f131c38ebbd0c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.1_7.tar.gz';          ;;        amd64|x86_64)          ESUM='9ddf9b35996fbd784a53fff3e0d59920a7d5acf1a82d4c8d70906957ac146cd1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_x64_linux_hotspot_14.0.1_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Tue, 07 Jul 2020 01:15:13 GMT
+# Fri, 17 Jul 2020 20:42:18 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 20:44:00 GMT
+ENV JAVA_VERSION=jdk-14.0.2+12
+# Fri, 17 Jul 2020 20:44:16 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ee87e9f03b1fbe6f328429b78fe1a9f44900026d220c90dfd747fe0bcd62d904';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='65f193496c6977ba7aed1563edc4b5be091b5ff03e3d790074bb4e389a034b36';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='465a3b8e931896b8d95e452d479615c4bf543535c05b6ea246323ae114e67d7d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='7d27aea30e359cf0bb561f8dcca6f4591dbc3ae831981f8a19aa367d31a9709b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='7d5ee7e06909b8a99c0d029f512f67b092597aa5b0e78c109bd59405bbfa74fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 20:44:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 01:15:13 GMT
+# Fri, 17 Jul 2020 20:44:19 GMT
 CMD ["jshell"]
-# Tue, 07 Jul 2020 02:11:26 GMT
+# Fri, 17 Jul 2020 21:55:32 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 02:11:27 GMT
+# Fri, 17 Jul 2020 21:55:32 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 02:11:29 GMT
+# Fri, 17 Jul 2020 21:55:35 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 02:11:30 GMT
+# Fri, 17 Jul 2020 21:55:36 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 02:11:30 GMT
+# Fri, 17 Jul 2020 21:55:36 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 02:12:06 GMT
+# Fri, 17 Jul 2020 21:56:10 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 02:12:08 GMT
+# Fri, 17 Jul 2020 21:56:13 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 02:12:09 GMT
+# Fri, 17 Jul 2020 21:56:13 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 02:12:16 GMT
+# Fri, 17 Jul 2020 21:56:22 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -4198,25 +4198,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5427b5697c732a419d0ebcf481bdc2ee7263b7c5aa034f701221dea96bb72a18`  
-		Last Modified: Tue, 07 Jul 2020 01:16:08 GMT  
-		Size: 12.7 MB (12723255 bytes)  
+	-	`sha256:cf5858fe3213ff710f6c318742f085137ce8fcea1e001c321df12f5871e95b09`  
+		Last Modified: Fri, 17 Jul 2020 20:45:09 GMT  
+		Size: 13.3 MB (13284377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2206df2d11676e7da3f768169c63aca606dabdaf29dade017017bd357f013efc`  
-		Last Modified: Tue, 07 Jul 2020 01:19:32 GMT  
-		Size: 209.4 MB (209420316 bytes)  
+	-	`sha256:3808c2d5c4707411e814af79433d34876b7de5f3c7bb97fc1b97b58e5645e834`  
+		Last Modified: Fri, 17 Jul 2020 20:47:12 GMT  
+		Size: 209.2 MB (209228562 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b81fa37c645ca225037008e6eafd382297ca5efa5874860973323b9e09630ae4`  
-		Last Modified: Tue, 07 Jul 2020 02:13:53 GMT  
+	-	`sha256:99742ecc0cf17fad3f29d0118b4396a5dab42808c2fdf035b0d6340cd82e2dbf`  
+		Last Modified: Fri, 17 Jul 2020 21:58:01 GMT  
 		Size: 4.5 KB (4524 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16aefe52660f11a6e47f210f5d3f10b3a23ce95cb2279d6927dc872fea2e9e72`  
-		Last Modified: Tue, 07 Jul 2020 02:14:08 GMT  
-		Size: 46.2 MB (46198550 bytes)  
+	-	`sha256:47f2d49e46abf3f59e1962d1ec2d2fd5e65ad91bbca854d5c8276feb82ed9e7d`  
+		Last Modified: Fri, 17 Jul 2020 21:58:15 GMT  
+		Size: 46.3 MB (46314002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5eacc6828283fa1f966c263b7993a7635ee82b32dc9b440ec968aa9e87335414`  
-		Last Modified: Tue, 07 Jul 2020 02:14:05 GMT  
-		Size: 102.4 MB (102379609 bytes)  
+	-	`sha256:7a469595d7c0991656f6244467be5c5236f7f0ce1dbce9ecafb5f33164c09947`  
+		Last Modified: Fri, 17 Jul 2020 21:58:12 GMT  
+		Size: 102.4 MB (102379605 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5-jdk14` - linux; ppc64le
@@ -4412,7 +4412,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:6.5-jdk8`
 
 ```console
-$ docker pull gradle@sha256:10df187cb99774a208aaf54b139d58d654ec885a3a76419b8668656010ea703e
+$ docker pull gradle@sha256:79c80c35dbf760580bba9dcd99de07f32db6caa54e0c6e515ee139d82381df39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4424,14 +4424,14 @@ $ docker pull gradle@sha256:10df187cb99774a208aaf54b139d58d654ec885a3a76419b8668
 ### `gradle:6.5-jdk8` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:0c567e3c34943acde9b72e00300395f8148d27731d1b07706c81a2eb044b2d49
+$ docker pull gradle@sha256:2b3c57831088f8c767c009f441f2584f61c249ae928fad3599c14fdb13b51e60
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **293.8 MB (293773404 bytes)**  
+-	Total Size: **295.5 MB (295496791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63a06ad25ffc0fce6b9d30c05541ff32ef3bb8539e3c99cd13a1a2a96cf2aad4`
+-	Image ID: `sha256:864401413f8190c196649ab996fd27cb85e6d29f48b5f181f1129012480ff0ee`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -4447,31 +4447,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:03:21 GMT
-ENV JAVA_VERSION=jdk8u252-b09
-# Mon, 06 Jul 2020 23:03:28 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='536bf397d98174b376da9ed49d2f659d65c7310318d8211444f4b7ba7c15e453';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_aarch64_linux_hotspot_8u252b09.tar.gz';          ;;        armhf|armv7l)          ESUM='5b401ad3c9b246281bd6df34b1abaf75e10e5cad9c6b26b55232b016e90e411a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_arm_linux_hotspot_8u252b09.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='55f0453b1d28812154138cf52b17b7acd93b9e55263f1f508f559795d31b2671';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u252b09.tar.gz';          ;;        s390x)          ESUM='db39932666c37718b1c3c62a1adb4f8e9c33258cf15a85ddf9b4d71199edfb1d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_s390x_linux_hotspot_8u252b09.tar.gz';          ;;        amd64|x86_64)          ESUM='2b59b5282ff32bce7abba8ad6b9fde34c15a98f949ad8ae43e789bbd78fc8862';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_x64_linux_hotspot_8u252b09.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:03:29 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:19:52 GMT
+ENV JAVA_VERSION=jdk8u262-b10
+# Fri, 17 Jul 2020 22:20:00 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7be0b2a4c749a277302a54b456624c076b3a5b990ad502e2a72d803ab31aecab';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='dd85ebb9a64916b4b621a23729e3360adb363d430bf1e99e98f25397834d74bd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d2a16915fb85ba851145c91cda5666cb78f06bf4713a2b3bdce813779ff972c2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='a504af6924a095cfb6c392653dccd7299925048c91b399d05efa95a094820120';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='733755fd649fad6ae91fc083f7e5a5a0b56410fb6ac1815cff29f744b128b1b1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:20:00 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 03:26:30 GMT
+# Fri, 17 Jul 2020 22:58:11 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:26:30 GMT
+# Fri, 17 Jul 2020 22:58:11 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:26:57 GMT
+# Fri, 17 Jul 2020 22:58:34 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:26:58 GMT
+# Fri, 17 Jul 2020 22:58:35 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:26:58 GMT
+# Fri, 17 Jul 2020 22:58:35 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:27:03 GMT
+# Fri, 17 Jul 2020 22:58:40 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -4493,25 +4493,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ebafcb948fa26ecf0a81e1f030a5258f58fbbca5eb8d6669348a9df00eadcc2`  
-		Last Modified: Mon, 06 Jul 2020 23:07:34 GMT  
-		Size: 102.7 MB (102690072 bytes)  
+	-	`sha256:d119f9c502a13708ca69878c432d637073f2f7311ffd6b8e2b584a4f68c7fcf2`  
+		Last Modified: Fri, 17 Jul 2020 22:23:22 GMT  
+		Size: 103.7 MB (103736353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d65a8d0d90b871faa7911593e4aaeae568522ccf2855d74828b920ef6e1dec02`  
-		Last Modified: Tue, 07 Jul 2020 03:29:45 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:1d010a97e0ac828392f864109a0969f1db978057bfc826e95b19c9e297e75ae9`  
+		Last Modified: Fri, 17 Jul 2020 23:01:20 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b59f24a81e2677fcdb327c23d8afc692b121ae0dd4567d9c2e7e2b3c55d62c3e`  
-		Last Modified: Tue, 07 Jul 2020 03:29:55 GMT  
-		Size: 48.7 MB (48655113 bytes)  
+	-	`sha256:86cdd3c13fed9a7f9c3b78f300dc517ddfb1deafae45cbdc3ddf660bd1f7db5f`  
+		Last Modified: Fri, 17 Jul 2020 23:01:30 GMT  
+		Size: 48.8 MB (48768749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d63278ca4b835a2b21140f139c916d450042c9398f56db01ad0cd2cfb01defb`  
-		Last Modified: Tue, 07 Jul 2020 03:29:54 GMT  
-		Size: 102.4 MB (102379513 bytes)  
+	-	`sha256:a8d335b1e876145c7a468bb7fe04c71b8879ee5cfdbbe7e18566f5e180694575`  
+		Last Modified: Fri, 17 Jul 2020 23:01:27 GMT  
+		Size: 102.4 MB (102379484 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5-jdk8` - linux; ppc64le
@@ -4703,7 +4703,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:6.5-jre`
 
 ```console
-$ docker pull gradle@sha256:8ed6d618feb07aa1016cb7fc760f4b22c5e58947fa0a1a26df23e110437e3140
+$ docker pull gradle@sha256:8aaca3e01190b95836deade3e17867c92bd9bdcecffd8e19a01ac9873ba368ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4715,14 +4715,14 @@ $ docker pull gradle@sha256:8ed6d618feb07aa1016cb7fc760f4b22c5e58947fa0a1a26df23
 ### `gradle:6.5-jre` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:3e88feb1d68621bbd96a6b2727aa54b33b6b66bd64987e4c9430b1569b736110
+$ docker pull gradle@sha256:8b78ead4defc49175a129a17b7efdd67e3fa58970f4f7b47016564df140828f6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **232.5 MB (232536779 bytes)**  
+-	Total Size: **233.9 MB (233879210 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10f7bb03ee99c2e4147d33ab34bba4f9410e47f8d4f9a235682bb5eb871a9e2e`
+-	Image ID: `sha256:b52dccb61564c357fafb67c5aad52aaa3776058aaab6e9889c2cf449bdf5cdc4`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -4738,31 +4738,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:03:21 GMT
-ENV JAVA_VERSION=jdk8u252-b09
-# Mon, 06 Jul 2020 23:03:37 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='30bba4425497f5b4aabcba7b45db69d582d278fb17357d64c22c9dc6b2d29ca1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_aarch64_linux_hotspot_8u252b09.tar.gz';          ;;        armhf|armv7l)          ESUM='107699a88f611e0c2d57816be25821ef9b17db860b14402c4e9e5bf0b9cf16fd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_arm_linux_hotspot_8u252b09.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='fbc559e8f75107f3c2ef92b33938dd48aee5728d471774d04fa3f68ed3b992fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_ppc64le_linux_hotspot_8u252b09.tar.gz';          ;;        s390x)          ESUM='23daa316ebcd965197e74dff011708a050516cd108a27a40e5b5cfa3c88beaba';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_s390x_linux_hotspot_8u252b09.tar.gz';          ;;        amd64|x86_64)          ESUM='a93be303ed62398dba9acb0376fb3caf8f488fcde80dc62d0a8e46256b3adfb1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_x64_linux_hotspot_8u252b09.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:03:37 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:19:52 GMT
+ENV JAVA_VERSION=jdk8u262-b10
+# Fri, 17 Jul 2020 22:20:11 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:20:11 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 03:27:09 GMT
+# Fri, 17 Jul 2020 22:58:45 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:27:09 GMT
+# Fri, 17 Jul 2020 22:58:45 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:27:10 GMT
+# Fri, 17 Jul 2020 22:58:46 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:27:10 GMT
+# Fri, 17 Jul 2020 22:58:46 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:27:10 GMT
+# Fri, 17 Jul 2020 22:58:46 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:27:28 GMT
+# Fri, 17 Jul 2020 22:59:03 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:27:28 GMT
+# Fri, 17 Jul 2020 22:59:04 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:27:28 GMT
+# Fri, 17 Jul 2020 22:59:04 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:27:33 GMT
+# Fri, 17 Jul 2020 22:59:09 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -4784,25 +4784,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae7092168735a178c86270ca696ef6f3121c32c9fb7431c9472f72806f474d73`  
-		Last Modified: Mon, 06 Jul 2020 23:07:46 GMT  
-		Size: 41.5 MB (41453839 bytes)  
+	-	`sha256:b38587e18ed628aa15742a897954754fec3b97a3454dbfd1a5ae9ad4d7b13e4d`  
+		Last Modified: Fri, 17 Jul 2020 22:23:36 GMT  
+		Size: 42.1 MB (42118777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da3784f1dbdb3f11ca97c8ec1db98795e3a33ec90957e196ddec77d5d71d29e3`  
-		Last Modified: Tue, 07 Jul 2020 03:30:07 GMT  
-		Size: 4.5 KB (4491 bytes)  
+	-	`sha256:c0b9393a200ac938d5e2a39d00009cd08cae092d59479c10607366de3a6072f9`  
+		Last Modified: Fri, 17 Jul 2020 23:01:38 GMT  
+		Size: 4.5 KB (4487 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:645b913ed928a0a09d818f826b89dd0bc5e40d1ce60291e916451aaada11b6fc`  
-		Last Modified: Tue, 07 Jul 2020 03:30:18 GMT  
-		Size: 48.7 MB (48654747 bytes)  
+	-	`sha256:6986687daf4a2275a545c1520c9fb4e325b5bc175ba3a957f2ec3dc8d5ac276e`  
+		Last Modified: Fri, 17 Jul 2020 23:01:49 GMT  
+		Size: 48.8 MB (48768729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36c6f5e88a25b8f89e3bd2690fccd81cb1887874a4ed985765229bbc469874fb`  
-		Last Modified: Tue, 07 Jul 2020 03:30:15 GMT  
-		Size: 102.4 MB (102379484 bytes)  
+	-	`sha256:29b799999efe114b0bb7230c6747a4f9d78ac1b74d71f5b5a4188d860bd3c223`  
+		Last Modified: Fri, 17 Jul 2020 23:01:46 GMT  
+		Size: 102.4 MB (102379501 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5-jre` - linux; ppc64le
@@ -4994,7 +4994,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:6.5-jre11`
 
 ```console
-$ docker pull gradle@sha256:bcb1e7cf9a45ec783e71779cf328d4bbfc9f44502d03287bc55b3c4e6c616462
+$ docker pull gradle@sha256:d92cbfe86f7b02d2a7825862240e1fe7fd2e4ed03ac25518a00c504128ae2750
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5007,14 +5007,14 @@ $ docker pull gradle@sha256:bcb1e7cf9a45ec783e71779cf328d4bbfc9f44502d03287bc55b
 ### `gradle:6.5-jre11` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:8f655b8ab97347c56de5491f83f91f9bd49fe7bb60c85318e2839158f103df0f
+$ docker pull gradle@sha256:6bced78707af7c5158cc648c027a176eecc163189c44aa0e9f355b314594230d
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **234.7 MB (234722600 bytes)**  
+-	Total Size: **235.4 MB (235387641 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f1f633a92ca0f6d0013d866cc3b7e348c20263f1d7f4caadb02a7606a52acc2`
+-	Image ID: `sha256:5990d5ff007872e4df097f7ad0ec35a656fa86624baf554f39ac85c48529518e`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -5030,31 +5030,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:03:41 GMT
-ENV JAVA_VERSION=jdk-11.0.7+10
-# Mon, 06 Jul 2020 23:04:03 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='cfe504e9e9621b831a5cfd800a2005dafe90a1d11aa14ee35d7b674d68685698';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.7_10.tar.gz';          ;;        armhf|armv7l)          ESUM='581bae8efcaa40e209a780baa6f96b7c8c9397965bc6d54533f4fd8599d5c742';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_arm_linux_hotspot_11.0.7_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='364a030a4c5c10660d33988bd1d40e6a34f49ca6a2e04ff44b8cf809da75423a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.7_10.tar.gz';          ;;        s390x)          ESUM='8e14d11a84c67da457695cbc20a9d70628c741ffc09087d11b40a52f2e11dddc';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_s390x_linux_hotspot_11.0.7_10.tar.gz';          ;;        amd64|x86_64)          ESUM='74b493dd8a884dcbee29682ead51b182d9d3e52b40c3d4cbb3167c2fd0063503';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_x64_linux_hotspot_11.0.7_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:04:03 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:20:16 GMT
+ENV JAVA_VERSION=jdk-11.0.8+10
+# Fri, 17 Jul 2020 22:20:37 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='286c869dbaefda9b470ae71d1250fdecf9f06d8da97c0f7df9021d381d749106';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.8_10.tar.gz';          ;;        armhf|armv7l)          ESUM='ffa627b2d0c6001448bb8f1f24f7c9921dad37e67637f6ed0a9a479e680a3393';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_arm_linux_hotspot_11.0.8_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='89231e1667d7cc4202d1a401497bb287d4eb12281c90c17e2570211cc4e901a3';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.8_10.tar.gz';          ;;        s390x)          ESUM='dc0e715c17abcb12bedf77c638e58e67d828d3c4bf24a898f0d4b053caaeb25f';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_s390x_linux_hotspot_11.0.8_10.tar.gz';          ;;        amd64|x86_64)          ESUM='98615b1b369509965a612232622d39b5cefe117d6189179cbad4dcef2ee2f4e1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_x64_linux_hotspot_11.0.8_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:20:37 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 03:28:08 GMT
+# Fri, 17 Jul 2020 22:59:43 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:28:08 GMT
+# Fri, 17 Jul 2020 22:59:43 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:28:09 GMT
+# Fri, 17 Jul 2020 22:59:44 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:28:09 GMT
+# Fri, 17 Jul 2020 22:59:44 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:28:09 GMT
+# Fri, 17 Jul 2020 22:59:45 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:28:26 GMT
+# Fri, 17 Jul 2020 23:00:02 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:28:27 GMT
+# Fri, 17 Jul 2020 23:00:02 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:28:27 GMT
+# Fri, 17 Jul 2020 23:00:02 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:28:32 GMT
+# Fri, 17 Jul 2020 23:00:08 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -5076,38 +5076,38 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:425c0430f6c74b1e55da7625115a171a8055c9a69ab0b6ea1350e5d0d6f85089`  
-		Last Modified: Mon, 06 Jul 2020 23:08:17 GMT  
-		Size: 43.6 MB (43639531 bytes)  
+	-	`sha256:852a71b3b8da0f67a06e899ba670e762ebaf21324712355e22bf6b0801db3b24`  
+		Last Modified: Fri, 17 Jul 2020 22:24:09 GMT  
+		Size: 43.6 MB (43627149 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39e1561cf1aa0ff4c3f929d3ea2f8b2cb2f7f23765fe7d1e412087a13d5d6d38`  
-		Last Modified: Tue, 07 Jul 2020 03:30:42 GMT  
-		Size: 4.5 KB (4490 bytes)  
+	-	`sha256:16cf32d6eb3341473582d9cbed8599fdd68768a8fbda78bc22c5b959c370af8b`  
+		Last Modified: Fri, 17 Jul 2020 23:02:11 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aed46d02ffabc5a20930e78b846a954b468f26271d71350d91490f4ab50b8fc2`  
-		Last Modified: Tue, 07 Jul 2020 03:30:53 GMT  
-		Size: 48.7 MB (48654874 bytes)  
+	-	`sha256:1c9f3ae57a2b4943766d21b867d7acda81c580216dd09c1b9dce9774c798fe5a`  
+		Last Modified: Fri, 17 Jul 2020 23:02:22 GMT  
+		Size: 48.8 MB (48768789 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29fe02d22b59f51f2f2cbdb1df573152b5d299a751d4b6fb2ce0ce4715b4b2f5`  
-		Last Modified: Tue, 07 Jul 2020 03:30:50 GMT  
-		Size: 102.4 MB (102379487 bytes)  
+	-	`sha256:fd67261a1c69373fe4dafefe1f140668c67b4667d70b017db01954874da39b91`  
+		Last Modified: Fri, 17 Jul 2020 23:02:19 GMT  
+		Size: 102.4 MB (102379498 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5-jre11` - linux; arm64 variant v8
 
 ```console
-$ docker pull gradle@sha256:2f76814832aca953d53099ccfa8fc324df676f455576d836696b9ce73cfb53bb
+$ docker pull gradle@sha256:ebe35fb955b576c71b5d9e644852b22bdedba5796e7e5e79748a250e2c07f7b6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **227.0 MB (227026517 bytes)**  
+-	Total Size: **227.7 MB (227716616 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a42243c72865ac4aea78d42c31f8b04b8a7143c2b375de3835213343035f2dfa`
+-	Image ID: `sha256:33c89f2e96e743092fc2e225c298047b8db2fc2f10ff46bf1156dd0fe562a916`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -5123,31 +5123,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Tue, 07 Jul 2020 01:12:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 07 Jul 2020 01:13:00 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 01:13:34 GMT
-ENV JAVA_VERSION=jdk-11.0.7+10
-# Tue, 07 Jul 2020 01:14:06 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='cfe504e9e9621b831a5cfd800a2005dafe90a1d11aa14ee35d7b674d68685698';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.7_10.tar.gz';          ;;        armhf|armv7l)          ESUM='581bae8efcaa40e209a780baa6f96b7c8c9397965bc6d54533f4fd8599d5c742';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_arm_linux_hotspot_11.0.7_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='364a030a4c5c10660d33988bd1d40e6a34f49ca6a2e04ff44b8cf809da75423a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.7_10.tar.gz';          ;;        s390x)          ESUM='8e14d11a84c67da457695cbc20a9d70628c741ffc09087d11b40a52f2e11dddc';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_s390x_linux_hotspot_11.0.7_10.tar.gz';          ;;        amd64|x86_64)          ESUM='74b493dd8a884dcbee29682ead51b182d9d3e52b40c3d4cbb3167c2fd0063503';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_x64_linux_hotspot_11.0.7_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Tue, 07 Jul 2020 01:14:07 GMT
+# Fri, 17 Jul 2020 20:42:18 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 20:43:03 GMT
+ENV JAVA_VERSION=jdk-11.0.8+10
+# Fri, 17 Jul 2020 20:43:42 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='286c869dbaefda9b470ae71d1250fdecf9f06d8da97c0f7df9021d381d749106';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.8_10.tar.gz';          ;;        armhf|armv7l)          ESUM='ffa627b2d0c6001448bb8f1f24f7c9921dad37e67637f6ed0a9a479e680a3393';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_arm_linux_hotspot_11.0.8_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='89231e1667d7cc4202d1a401497bb287d4eb12281c90c17e2570211cc4e901a3';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.8_10.tar.gz';          ;;        s390x)          ESUM='dc0e715c17abcb12bedf77c638e58e67d828d3c4bf24a898f0d4b053caaeb25f';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_s390x_linux_hotspot_11.0.8_10.tar.gz';          ;;        amd64|x86_64)          ESUM='98615b1b369509965a612232622d39b5cefe117d6189179cbad4dcef2ee2f4e1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_x64_linux_hotspot_11.0.8_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 20:43:43 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 02:10:29 GMT
+# Fri, 17 Jul 2020 21:54:35 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 02:10:31 GMT
+# Fri, 17 Jul 2020 21:54:35 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 02:10:33 GMT
+# Fri, 17 Jul 2020 21:54:37 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 02:10:33 GMT
+# Fri, 17 Jul 2020 21:54:38 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 02:10:34 GMT
+# Fri, 17 Jul 2020 21:54:38 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 02:11:07 GMT
+# Fri, 17 Jul 2020 21:55:14 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 02:11:09 GMT
+# Fri, 17 Jul 2020 21:55:15 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 02:11:10 GMT
+# Fri, 17 Jul 2020 21:55:16 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 02:11:17 GMT
+# Fri, 17 Jul 2020 21:55:23 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -5169,25 +5169,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5427b5697c732a419d0ebcf481bdc2ee7263b7c5aa034f701221dea96bb72a18`  
-		Last Modified: Tue, 07 Jul 2020 01:16:08 GMT  
-		Size: 12.7 MB (12723255 bytes)  
+	-	`sha256:cf5858fe3213ff710f6c318742f085137ce8fcea1e001c321df12f5871e95b09`  
+		Last Modified: Fri, 17 Jul 2020 20:45:09 GMT  
+		Size: 13.3 MB (13284377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9bc585cece9cdefb8ef71d7292b6e27e46c1be509efe1b97471f5d83315a25e`  
-		Last Modified: Tue, 07 Jul 2020 01:17:57 GMT  
-		Size: 42.0 MB (41965111 bytes)  
+	-	`sha256:1e22a3aeffd5cd30eea95a35711dbca11aefd214a8e5cf32a8f537d766483421`  
+		Last Modified: Fri, 17 Jul 2020 20:46:33 GMT  
+		Size: 42.0 MB (41978765 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ef849badd091db3013d1ecb81ef10fa098dcf0bd41dbcd1f68526413bf32288`  
-		Last Modified: Tue, 07 Jul 2020 02:13:32 GMT  
+	-	`sha256:b99051d08f242432ee3ec34b6f7ae899c3eae7b6dfebf331b02c1139d0fe2d0e`  
+		Last Modified: Fri, 17 Jul 2020 21:57:34 GMT  
 		Size: 4.5 KB (4524 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40f87def99267f1d0e68fcebe4e40995b6d79bee47aae329adfea1d420f6165b`  
-		Last Modified: Tue, 07 Jul 2020 02:13:47 GMT  
-		Size: 46.2 MB (46198433 bytes)  
+	-	`sha256:2bb4184fa1763e38bd43e635cc8462e0ef7c6dcb3d18375260e7abbedeb42c3f`  
+		Last Modified: Fri, 17 Jul 2020 21:57:49 GMT  
+		Size: 46.3 MB (46313749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d5bcf9bdeaa14ad18c910e8ea1d2a0a6798c8130d36ee136e505a852938418e`  
-		Last Modified: Tue, 07 Jul 2020 02:13:44 GMT  
-		Size: 102.4 MB (102379601 bytes)  
+	-	`sha256:cafb1960ddd923ee3e47c19145170c64f36e0eab9378e378cad4f91fe768959a`  
+		Last Modified: Fri, 17 Jul 2020 21:57:51 GMT  
+		Size: 102.4 MB (102379608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5-jre11` - linux; ppc64le
@@ -5379,7 +5379,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:6.5-jre14`
 
 ```console
-$ docker pull gradle@sha256:dcd12cb1be1d53ffb2b9fd05c3ac08ca02ab3aadc91b07fcf33f03719496596d
+$ docker pull gradle@sha256:8bd146533828318b56e02fd897d6d815c5ccbe6a362647a53e6c5d656355a2b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5392,14 +5392,14 @@ $ docker pull gradle@sha256:dcd12cb1be1d53ffb2b9fd05c3ac08ca02ab3aadc91b07fcf33f
 ### `gradle:6.5-jre14` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:4fd0829ad70d1cceebdd6604633bca4be02ae843795daf30ab4ec45672044f70
+$ docker pull gradle@sha256:bcec30de25f4d45f0ab5b6010111e9187b7c1b089e375d49ff8c0866bfff3bb9
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **248.9 MB (248940976 bytes)**  
+-	Total Size: **249.5 MB (249482816 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b8251bd9d76f4514e1362efb72b5ec513bb4b89ffc30dcba87d97d1c1718adf9`
+-	Image ID: `sha256:d10c8d77dd4ac4beda468dafe0d8e5634791dc1c38075025746f09851ac7863e`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -5415,31 +5415,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:04:38 GMT
-ENV JAVA_VERSION=jdk-14.0.1+7
-# Mon, 06 Jul 2020 23:05:02 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='bf038c351337982082074ab818a6bd385c7ad31d23654a2db8cd05805fe48058';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_aarch64_linux_hotspot_14.0.1_7.tar.gz';          ;;        armhf|armv7l)          ESUM='277ae66d1db7613a7f02b1cbfc9acd8f5f6208eac0e61828d40d5a513b40e406';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_arm_linux_hotspot_14.0.1_7.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='8af51efdd25d93b120ee9ef22e2584cf8bf9441108fa0396a0ac9c5de86ec119';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_ppc64le_linux_hotspot_14.0.1_7.tar.gz';          ;;        s390x)          ESUM='97b15611f4238a20fde975cba5144477f06bb8416964ae79e2109778c25fa654';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_s390x_linux_hotspot_14.0.1_7.tar.gz';          ;;        amd64|x86_64)          ESUM='3f8a4d5939a66cadf9846bbae6392644165f75063ae31998764916da13810fca';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_x64_linux_hotspot_14.0.1_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:05:03 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:20:49 GMT
+ENV JAVA_VERSION=jdk-14.0.2+12
+# Fri, 17 Jul 2020 22:21:13 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='2b749ceead19d68dd7e3c28b143dc4f94bb0916378a98b7346e851318ea4da84';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='4468ecf74956783ae41a46e8ba023c003c69e4d111622944aad1af764a1bc4af';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='0f96998be562cfbe8a4114581349dbd2609d0a23091e538fe142dcd9c83e70cf';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='9c4a87ea44165ccbcab5124b997ec1af1551bd2a2b255fca57d7a4e19c2075d3';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='1107845947da56e6bdad0da0b79210a079a74ec5c806f815ec5db9d09e1a9236';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:21:13 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 03:29:06 GMT
+# Fri, 17 Jul 2020 23:00:42 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:29:06 GMT
+# Fri, 17 Jul 2020 23:00:42 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:29:07 GMT
+# Fri, 17 Jul 2020 23:00:43 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:29:07 GMT
+# Fri, 17 Jul 2020 23:00:43 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:29:07 GMT
+# Fri, 17 Jul 2020 23:00:43 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:29:25 GMT
+# Fri, 17 Jul 2020 23:01:01 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:29:25 GMT
+# Fri, 17 Jul 2020 23:01:01 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:29:25 GMT
+# Fri, 17 Jul 2020 23:01:01 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:29:30 GMT
+# Fri, 17 Jul 2020 23:01:06 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -5461,38 +5461,38 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc754a401449dc4a11cd95ca08fc96a412bdb15b71e9548d7f9e4c941109fcea`  
-		Last Modified: Mon, 06 Jul 2020 23:09:48 GMT  
-		Size: 57.9 MB (57858509 bytes)  
+	-	`sha256:da615a00062ab1cbd1ca32e446e8173aa022bab731a2205df30b3d07289adba7`  
+		Last Modified: Fri, 17 Jul 2020 22:24:46 GMT  
+		Size: 57.7 MB (57722384 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9cbf6fb5758271fc6a96fe71366b79c1277e57958d0baf6cdbc3698a02e6a01d`  
-		Last Modified: Tue, 07 Jul 2020 03:31:31 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:431ece7fe3c608386c1a00fe8e2a332b98280cb6739a7b4e5691c518d68a259f`  
+		Last Modified: Fri, 17 Jul 2020 23:02:47 GMT  
+		Size: 4.5 KB (4483 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea3b55d53c4e8499417659337d5b9574ff34712ef02ea942aab4471028e81bcd`  
-		Last Modified: Tue, 07 Jul 2020 03:31:41 GMT  
-		Size: 48.7 MB (48654262 bytes)  
+	-	`sha256:638372fee7c21a0bb88e9954424f47c0c88e9ab2031bb7ed85b4f182ecbedd26`  
+		Last Modified: Fri, 17 Jul 2020 23:02:58 GMT  
+		Size: 48.8 MB (48768734 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42b4ca7d9687954e68db5032675491ce63594fbf24f0a6147ec064de3c35a4d3`  
-		Last Modified: Tue, 07 Jul 2020 03:31:38 GMT  
+	-	`sha256:34274f34471c8f7cb8bad8f2b44659f02d06f279d7bb341f2363e3ce9eb1320d`  
+		Last Modified: Fri, 17 Jul 2020 23:02:54 GMT  
 		Size: 102.4 MB (102379499 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5-jre14` - linux; arm64 variant v8
 
 ```console
-$ docker pull gradle@sha256:8ec9209278ca66768ac0a85d7afe08d86643346b5fb64ea22dbf4bfe80b56d85
+$ docker pull gradle@sha256:5ff3b3ef82f59c1d8c556a62dcae7acdd8e593abc46ced8248dbc1397fe4d7ba
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.6 MB (241603828 bytes)**  
+-	Total Size: **242.2 MB (242176648 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7ed5fffe348352c437c53bc43dade6a2299f0d73e86c9051841cc3e1f8a2475a`
+-	Image ID: `sha256:bdbe6f9d084bb7ed0b7ab4b3ffbb8ba596ddbd14ba8e5cecb27a1d745f06bad5`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -5508,31 +5508,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Tue, 07 Jul 2020 01:12:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 07 Jul 2020 01:13:00 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 01:14:55 GMT
-ENV JAVA_VERSION=jdk-14.0.1+7
-# Tue, 07 Jul 2020 01:15:27 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='bf038c351337982082074ab818a6bd385c7ad31d23654a2db8cd05805fe48058';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_aarch64_linux_hotspot_14.0.1_7.tar.gz';          ;;        armhf|armv7l)          ESUM='277ae66d1db7613a7f02b1cbfc9acd8f5f6208eac0e61828d40d5a513b40e406';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_arm_linux_hotspot_14.0.1_7.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='8af51efdd25d93b120ee9ef22e2584cf8bf9441108fa0396a0ac9c5de86ec119';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_ppc64le_linux_hotspot_14.0.1_7.tar.gz';          ;;        s390x)          ESUM='97b15611f4238a20fde975cba5144477f06bb8416964ae79e2109778c25fa654';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_s390x_linux_hotspot_14.0.1_7.tar.gz';          ;;        amd64|x86_64)          ESUM='3f8a4d5939a66cadf9846bbae6392644165f75063ae31998764916da13810fca';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_x64_linux_hotspot_14.0.1_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Tue, 07 Jul 2020 01:15:29 GMT
+# Fri, 17 Jul 2020 20:42:18 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 20:44:00 GMT
+ENV JAVA_VERSION=jdk-14.0.2+12
+# Fri, 17 Jul 2020 20:44:34 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='2b749ceead19d68dd7e3c28b143dc4f94bb0916378a98b7346e851318ea4da84';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='4468ecf74956783ae41a46e8ba023c003c69e4d111622944aad1af764a1bc4af';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='0f96998be562cfbe8a4114581349dbd2609d0a23091e538fe142dcd9c83e70cf';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='9c4a87ea44165ccbcab5124b997ec1af1551bd2a2b255fca57d7a4e19c2075d3';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='1107845947da56e6bdad0da0b79210a079a74ec5c806f815ec5db9d09e1a9236';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 20:44:35 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 02:12:24 GMT
+# Fri, 17 Jul 2020 21:56:29 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 02:12:24 GMT
+# Fri, 17 Jul 2020 21:56:30 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 02:12:26 GMT
+# Fri, 17 Jul 2020 21:56:32 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 02:12:27 GMT
+# Fri, 17 Jul 2020 21:56:32 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 02:12:28 GMT
+# Fri, 17 Jul 2020 21:56:33 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 02:13:02 GMT
+# Fri, 17 Jul 2020 21:57:07 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 02:13:05 GMT
+# Fri, 17 Jul 2020 21:57:10 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 02:13:06 GMT
+# Fri, 17 Jul 2020 21:57:11 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 02:13:12 GMT
+# Fri, 17 Jul 2020 21:57:19 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -5554,25 +5554,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5427b5697c732a419d0ebcf481bdc2ee7263b7c5aa034f701221dea96bb72a18`  
-		Last Modified: Tue, 07 Jul 2020 01:16:08 GMT  
-		Size: 12.7 MB (12723255 bytes)  
+	-	`sha256:cf5858fe3213ff710f6c318742f085137ce8fcea1e001c321df12f5871e95b09`  
+		Last Modified: Fri, 17 Jul 2020 20:45:09 GMT  
+		Size: 13.3 MB (13284377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a0ee6620cd0d716b68964310a1b01df8aab9dd19b2d2113cdbabafb35da2095`  
-		Last Modified: Tue, 07 Jul 2020 01:20:08 GMT  
-		Size: 56.5 MB (56542282 bytes)  
+	-	`sha256:d315a953b2a7b3d4e68691ab7054a03977f57de8abfcf8906db6bacbee9c3e4d`  
+		Last Modified: Fri, 17 Jul 2020 20:47:37 GMT  
+		Size: 56.4 MB (56438505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0be74624ea70f81fbe71bd4979aab53d0d61d4e3d8addc61f238bfc62bfa4312`  
-		Last Modified: Tue, 07 Jul 2020 02:14:14 GMT  
-		Size: 4.5 KB (4522 bytes)  
+	-	`sha256:aaf78ceb47d864e2a5fd7f1e25c130aa979b85b9dd72661a0283e78b92088a2a`  
+		Last Modified: Fri, 17 Jul 2020 21:58:22 GMT  
+		Size: 4.5 KB (4521 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b1dfb220c81892fb9a90b6ed461c4d1d0e326fd10eb50db4959e6e973a226fa`  
-		Last Modified: Tue, 07 Jul 2020 02:14:29 GMT  
-		Size: 46.2 MB (46198634 bytes)  
+	-	`sha256:eb55ffdc866cb3c5583b815add7e5788a90834ac1943969f7ccf03c79d23b909`  
+		Last Modified: Fri, 17 Jul 2020 21:58:36 GMT  
+		Size: 46.3 MB (46314055 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad8edf0691bfb7713b9c9eaad97cdea58c946a8e6ac5d5f4d8f35dbd162f467a`  
-		Last Modified: Tue, 07 Jul 2020 02:14:28 GMT  
-		Size: 102.4 MB (102379542 bytes)  
+	-	`sha256:71372cea685e5310d5723d128b7c2439dc20c4b757d32c9867c9599cfebb12db`  
+		Last Modified: Fri, 17 Jul 2020 21:58:34 GMT  
+		Size: 102.4 MB (102379597 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5-jre14` - linux; ppc64le
@@ -5764,7 +5764,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:6.5-jre8`
 
 ```console
-$ docker pull gradle@sha256:8ed6d618feb07aa1016cb7fc760f4b22c5e58947fa0a1a26df23e110437e3140
+$ docker pull gradle@sha256:8aaca3e01190b95836deade3e17867c92bd9bdcecffd8e19a01ac9873ba368ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5776,14 +5776,14 @@ $ docker pull gradle@sha256:8ed6d618feb07aa1016cb7fc760f4b22c5e58947fa0a1a26df23
 ### `gradle:6.5-jre8` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:3e88feb1d68621bbd96a6b2727aa54b33b6b66bd64987e4c9430b1569b736110
+$ docker pull gradle@sha256:8b78ead4defc49175a129a17b7efdd67e3fa58970f4f7b47016564df140828f6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **232.5 MB (232536779 bytes)**  
+-	Total Size: **233.9 MB (233879210 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10f7bb03ee99c2e4147d33ab34bba4f9410e47f8d4f9a235682bb5eb871a9e2e`
+-	Image ID: `sha256:b52dccb61564c357fafb67c5aad52aaa3776058aaab6e9889c2cf449bdf5cdc4`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -5799,31 +5799,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:03:21 GMT
-ENV JAVA_VERSION=jdk8u252-b09
-# Mon, 06 Jul 2020 23:03:37 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='30bba4425497f5b4aabcba7b45db69d582d278fb17357d64c22c9dc6b2d29ca1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_aarch64_linux_hotspot_8u252b09.tar.gz';          ;;        armhf|armv7l)          ESUM='107699a88f611e0c2d57816be25821ef9b17db860b14402c4e9e5bf0b9cf16fd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_arm_linux_hotspot_8u252b09.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='fbc559e8f75107f3c2ef92b33938dd48aee5728d471774d04fa3f68ed3b992fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_ppc64le_linux_hotspot_8u252b09.tar.gz';          ;;        s390x)          ESUM='23daa316ebcd965197e74dff011708a050516cd108a27a40e5b5cfa3c88beaba';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_s390x_linux_hotspot_8u252b09.tar.gz';          ;;        amd64|x86_64)          ESUM='a93be303ed62398dba9acb0376fb3caf8f488fcde80dc62d0a8e46256b3adfb1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_x64_linux_hotspot_8u252b09.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:03:37 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:19:52 GMT
+ENV JAVA_VERSION=jdk8u262-b10
+# Fri, 17 Jul 2020 22:20:11 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:20:11 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 03:27:09 GMT
+# Fri, 17 Jul 2020 22:58:45 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:27:09 GMT
+# Fri, 17 Jul 2020 22:58:45 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:27:10 GMT
+# Fri, 17 Jul 2020 22:58:46 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:27:10 GMT
+# Fri, 17 Jul 2020 22:58:46 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:27:10 GMT
+# Fri, 17 Jul 2020 22:58:46 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:27:28 GMT
+# Fri, 17 Jul 2020 22:59:03 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:27:28 GMT
+# Fri, 17 Jul 2020 22:59:04 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:27:28 GMT
+# Fri, 17 Jul 2020 22:59:04 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:27:33 GMT
+# Fri, 17 Jul 2020 22:59:09 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -5845,25 +5845,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae7092168735a178c86270ca696ef6f3121c32c9fb7431c9472f72806f474d73`  
-		Last Modified: Mon, 06 Jul 2020 23:07:46 GMT  
-		Size: 41.5 MB (41453839 bytes)  
+	-	`sha256:b38587e18ed628aa15742a897954754fec3b97a3454dbfd1a5ae9ad4d7b13e4d`  
+		Last Modified: Fri, 17 Jul 2020 22:23:36 GMT  
+		Size: 42.1 MB (42118777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da3784f1dbdb3f11ca97c8ec1db98795e3a33ec90957e196ddec77d5d71d29e3`  
-		Last Modified: Tue, 07 Jul 2020 03:30:07 GMT  
-		Size: 4.5 KB (4491 bytes)  
+	-	`sha256:c0b9393a200ac938d5e2a39d00009cd08cae092d59479c10607366de3a6072f9`  
+		Last Modified: Fri, 17 Jul 2020 23:01:38 GMT  
+		Size: 4.5 KB (4487 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:645b913ed928a0a09d818f826b89dd0bc5e40d1ce60291e916451aaada11b6fc`  
-		Last Modified: Tue, 07 Jul 2020 03:30:18 GMT  
-		Size: 48.7 MB (48654747 bytes)  
+	-	`sha256:6986687daf4a2275a545c1520c9fb4e325b5bc175ba3a957f2ec3dc8d5ac276e`  
+		Last Modified: Fri, 17 Jul 2020 23:01:49 GMT  
+		Size: 48.8 MB (48768729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36c6f5e88a25b8f89e3bd2690fccd81cb1887874a4ed985765229bbc469874fb`  
-		Last Modified: Tue, 07 Jul 2020 03:30:15 GMT  
-		Size: 102.4 MB (102379484 bytes)  
+	-	`sha256:29b799999efe114b0bb7230c6747a4f9d78ac1b74d71f5b5a4188d860bd3c223`  
+		Last Modified: Fri, 17 Jul 2020 23:01:46 GMT  
+		Size: 102.4 MB (102379501 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6.5-jre8` - linux; ppc64le
@@ -6055,7 +6055,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:jdk`
 
 ```console
-$ docker pull gradle@sha256:10df187cb99774a208aaf54b139d58d654ec885a3a76419b8668656010ea703e
+$ docker pull gradle@sha256:79c80c35dbf760580bba9dcd99de07f32db6caa54e0c6e515ee139d82381df39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6067,14 +6067,14 @@ $ docker pull gradle@sha256:10df187cb99774a208aaf54b139d58d654ec885a3a76419b8668
 ### `gradle:jdk` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:0c567e3c34943acde9b72e00300395f8148d27731d1b07706c81a2eb044b2d49
+$ docker pull gradle@sha256:2b3c57831088f8c767c009f441f2584f61c249ae928fad3599c14fdb13b51e60
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **293.8 MB (293773404 bytes)**  
+-	Total Size: **295.5 MB (295496791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63a06ad25ffc0fce6b9d30c05541ff32ef3bb8539e3c99cd13a1a2a96cf2aad4`
+-	Image ID: `sha256:864401413f8190c196649ab996fd27cb85e6d29f48b5f181f1129012480ff0ee`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -6090,31 +6090,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:03:21 GMT
-ENV JAVA_VERSION=jdk8u252-b09
-# Mon, 06 Jul 2020 23:03:28 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='536bf397d98174b376da9ed49d2f659d65c7310318d8211444f4b7ba7c15e453';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_aarch64_linux_hotspot_8u252b09.tar.gz';          ;;        armhf|armv7l)          ESUM='5b401ad3c9b246281bd6df34b1abaf75e10e5cad9c6b26b55232b016e90e411a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_arm_linux_hotspot_8u252b09.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='55f0453b1d28812154138cf52b17b7acd93b9e55263f1f508f559795d31b2671';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u252b09.tar.gz';          ;;        s390x)          ESUM='db39932666c37718b1c3c62a1adb4f8e9c33258cf15a85ddf9b4d71199edfb1d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_s390x_linux_hotspot_8u252b09.tar.gz';          ;;        amd64|x86_64)          ESUM='2b59b5282ff32bce7abba8ad6b9fde34c15a98f949ad8ae43e789bbd78fc8862';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_x64_linux_hotspot_8u252b09.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:03:29 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:19:52 GMT
+ENV JAVA_VERSION=jdk8u262-b10
+# Fri, 17 Jul 2020 22:20:00 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7be0b2a4c749a277302a54b456624c076b3a5b990ad502e2a72d803ab31aecab';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='dd85ebb9a64916b4b621a23729e3360adb363d430bf1e99e98f25397834d74bd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d2a16915fb85ba851145c91cda5666cb78f06bf4713a2b3bdce813779ff972c2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='a504af6924a095cfb6c392653dccd7299925048c91b399d05efa95a094820120';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='733755fd649fad6ae91fc083f7e5a5a0b56410fb6ac1815cff29f744b128b1b1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:20:00 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 03:26:30 GMT
+# Fri, 17 Jul 2020 22:58:11 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:26:30 GMT
+# Fri, 17 Jul 2020 22:58:11 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:26:57 GMT
+# Fri, 17 Jul 2020 22:58:34 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:26:58 GMT
+# Fri, 17 Jul 2020 22:58:35 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:26:58 GMT
+# Fri, 17 Jul 2020 22:58:35 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:27:03 GMT
+# Fri, 17 Jul 2020 22:58:40 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -6136,25 +6136,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ebafcb948fa26ecf0a81e1f030a5258f58fbbca5eb8d6669348a9df00eadcc2`  
-		Last Modified: Mon, 06 Jul 2020 23:07:34 GMT  
-		Size: 102.7 MB (102690072 bytes)  
+	-	`sha256:d119f9c502a13708ca69878c432d637073f2f7311ffd6b8e2b584a4f68c7fcf2`  
+		Last Modified: Fri, 17 Jul 2020 22:23:22 GMT  
+		Size: 103.7 MB (103736353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d65a8d0d90b871faa7911593e4aaeae568522ccf2855d74828b920ef6e1dec02`  
-		Last Modified: Tue, 07 Jul 2020 03:29:45 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:1d010a97e0ac828392f864109a0969f1db978057bfc826e95b19c9e297e75ae9`  
+		Last Modified: Fri, 17 Jul 2020 23:01:20 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b59f24a81e2677fcdb327c23d8afc692b121ae0dd4567d9c2e7e2b3c55d62c3e`  
-		Last Modified: Tue, 07 Jul 2020 03:29:55 GMT  
-		Size: 48.7 MB (48655113 bytes)  
+	-	`sha256:86cdd3c13fed9a7f9c3b78f300dc517ddfb1deafae45cbdc3ddf660bd1f7db5f`  
+		Last Modified: Fri, 17 Jul 2020 23:01:30 GMT  
+		Size: 48.8 MB (48768749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d63278ca4b835a2b21140f139c916d450042c9398f56db01ad0cd2cfb01defb`  
-		Last Modified: Tue, 07 Jul 2020 03:29:54 GMT  
-		Size: 102.4 MB (102379513 bytes)  
+	-	`sha256:a8d335b1e876145c7a468bb7fe04c71b8879ee5cfdbbe7e18566f5e180694575`  
+		Last Modified: Fri, 17 Jul 2020 23:01:27 GMT  
+		Size: 102.4 MB (102379484 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:jdk` - linux; ppc64le
@@ -6346,7 +6346,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:jdk11`
 
 ```console
-$ docker pull gradle@sha256:ba54e8f658dd9a676ac839adb2adf3b432df89a2fb34010f3a996862a3eaef78
+$ docker pull gradle@sha256:41b1f0e07af7e9391dcfd8fec762fd98b58d7746a487fc300869b5a3762b8a59
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6358,14 +6358,14 @@ $ docker pull gradle@sha256:ba54e8f658dd9a676ac839adb2adf3b432df89a2fb34010f3a99
 ### `gradle:jdk11` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:dfd049644e0ab46b5d8112ec686e2b0ae7baeeb56f92d50a1c5b8fd3599477ea
+$ docker pull gradle@sha256:b31990a058a34018948a99957cf467f57db91c35c60e521f7754cfddc4f0abe5
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **385.3 MB (385294091 bytes)**  
+-	Total Size: **386.0 MB (386026499 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d58f2d89bd62b7f774d810b468321cfdd132bb758217e844ddc7fc5727dcdd4`
+-	Image ID: `sha256:365df73aa399ba48003d3db6b90936098cffbc506f80a8f5fe0d01308e87598b`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -6381,33 +6381,33 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:03:41 GMT
-ENV JAVA_VERSION=jdk-11.0.7+10
-# Mon, 06 Jul 2020 23:03:53 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='3b8b8bba6a0472ec7de5271cbf67f11e6ab525de6dd5d4729300375f1d56b7a1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.7_10.tar.gz';          ;;        armhf|armv7l)          ESUM='45c235af67498f87e3dc99642771e57547cf226335eaee8a55d195173e66a2e9';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_arm_linux_hotspot_11.0.7_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='a417db0295b1f4b538ecbaf7c774f3a177fab9657a665940170936c0eca4e71a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.7_10.tar.gz';          ;;        s390x)          ESUM='d9b72e87a1d3ebc0c9552f72ae5eb150fffc0298a7cb841f1ce7bfc70dcd1059';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.7_10.tar.gz';          ;;        amd64|x86_64)          ESUM='ee60304d782c9d5654bf1a6b3f38c683921c1711045e1db94525a51b7024a2ca';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.7_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:03:53 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:20:16 GMT
+ENV JAVA_VERSION=jdk-11.0.8+10
+# Fri, 17 Jul 2020 22:20:27 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='fb27ea52ed901c14c9fe8ad2fc10b338b8cf47d6762571be1fe3fb7c426bab7c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.8_10.tar.gz';          ;;        armhf|armv7l)          ESUM='d00370967e4657e137cc511e81d6accbfdb08dba91e6268abef8219e735fbfc5';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_arm_linux_hotspot_11.0.8_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d206a63cd719b65717f7f20ee3fe49f0b8b2db922986b4811c828db57212699e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.8_10.tar.gz';          ;;        s390x)          ESUM='5619e1437c7cd400169eb7f1c831c2635fdb2776a401147a2fc1841b01f83ed6';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.8_10.tar.gz';          ;;        amd64|x86_64)          ESUM='6e4cead158037cb7747ca47416474d4f408c9126be5b96f9befd532e0a762b47';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.8_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:20:27 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:03:53 GMT
+# Fri, 17 Jul 2020 22:20:27 GMT
 CMD ["jshell"]
-# Tue, 07 Jul 2020 03:27:38 GMT
+# Fri, 17 Jul 2020 22:59:14 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:27:39 GMT
+# Fri, 17 Jul 2020 22:59:14 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:27:39 GMT
+# Fri, 17 Jul 2020 22:59:15 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:27:40 GMT
+# Fri, 17 Jul 2020 22:59:15 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:27:40 GMT
+# Fri, 17 Jul 2020 22:59:15 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:27:57 GMT
+# Fri, 17 Jul 2020 22:59:33 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:27:57 GMT
+# Fri, 17 Jul 2020 22:59:33 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:27:58 GMT
+# Fri, 17 Jul 2020 22:59:34 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:28:03 GMT
+# Fri, 17 Jul 2020 22:59:39 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -6429,38 +6429,38 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9648e8b5b6e12a552f92d1cc9b88f52be70cf376f7e4747c5d6e677e0a307fb2`  
-		Last Modified: Mon, 06 Jul 2020 23:08:06 GMT  
-		Size: 194.2 MB (194211003 bytes)  
+	-	`sha256:5f2256d745b1c9b7ad4ec6a87094065af4ab75985255affc89e3ad9e220ea48b`  
+		Last Modified: Fri, 17 Jul 2020 22:23:56 GMT  
+		Size: 194.3 MB (194266379 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72d53b71c2b01af3ad101f0912d17e82cdfa30c32f8006390f7ef15c3522fcce`  
-		Last Modified: Tue, 07 Jul 2020 03:30:27 GMT  
-		Size: 4.5 KB (4489 bytes)  
+	-	`sha256:0c857c3e217982eb5fb4e6a11d217cc7fafeb06e0045057ec23ba1702dcb5005`  
+		Last Modified: Fri, 17 Jul 2020 23:01:56 GMT  
+		Size: 4.5 KB (4491 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3394218381fe7197c36d588f5be67136d68482f9b6da643f7357dff4d8cd974d`  
-		Last Modified: Tue, 07 Jul 2020 03:30:37 GMT  
-		Size: 48.7 MB (48654881 bytes)  
+	-	`sha256:35d89e1980a91b2e9ccf95b4d20a38bb21e57ae2e0052a78808cd89d937e2ccb`  
+		Last Modified: Fri, 17 Jul 2020 23:02:06 GMT  
+		Size: 48.8 MB (48768426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24bcafcb7c76fd408c4b7cb3bf5e67abbd565b5aef8a4dd2e2fc692b0f0dfc0d`  
-		Last Modified: Tue, 07 Jul 2020 03:30:34 GMT  
-		Size: 102.4 MB (102379500 bytes)  
+	-	`sha256:7fff980f90be87dfae2056ca2ca25cebac1a6278ae56e052d1370e10c2f2e6e6`  
+		Last Modified: Fri, 17 Jul 2020 23:02:03 GMT  
+		Size: 102.4 MB (102379487 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:jdk11` - linux; arm variant v7
 
 ```console
-$ docker pull gradle@sha256:20d1d8a79ea565f2db5bbf4c108d20950fed009c951be649856a1b5723d4cfb7
+$ docker pull gradle@sha256:545a3e6ea69c949aa35226276bf607f01e61ce08ae166a4d83134848b50a87ba
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **359.9 MB (359924251 bytes)**  
+-	Total Size: **364.6 MB (364552298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ac611656b7c852d0cb061f1f9f95a53fe8317519924bfb3b178cf13847bb6c6`
+-	Image ID: `sha256:622d19bc659e42dd4f36b97a20dd8ae85e617acbecafce853a0c664d8f6c518c`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -6476,33 +6476,33 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 21:54:44 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 21:55:12 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 21:55:46 GMT
-ENV JAVA_VERSION=jdk-11.0.7+10
-# Mon, 06 Jul 2020 21:56:04 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='3b8b8bba6a0472ec7de5271cbf67f11e6ab525de6dd5d4729300375f1d56b7a1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.7_10.tar.gz';          ;;        armhf|armv7l)          ESUM='45c235af67498f87e3dc99642771e57547cf226335eaee8a55d195173e66a2e9';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_arm_linux_hotspot_11.0.7_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='a417db0295b1f4b538ecbaf7c774f3a177fab9657a665940170936c0eca4e71a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.7_10.tar.gz';          ;;        s390x)          ESUM='d9b72e87a1d3ebc0c9552f72ae5eb150fffc0298a7cb841f1ce7bfc70dcd1059';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.7_10.tar.gz';          ;;        amd64|x86_64)          ESUM='ee60304d782c9d5654bf1a6b3f38c683921c1711045e1db94525a51b7024a2ca';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.7_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 21:56:05 GMT
+# Fri, 17 Jul 2020 20:58:22 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 20:59:02 GMT
+ENV JAVA_VERSION=jdk-11.0.8+10
+# Fri, 17 Jul 2020 20:59:19 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='fb27ea52ed901c14c9fe8ad2fc10b338b8cf47d6762571be1fe3fb7c426bab7c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.8_10.tar.gz';          ;;        armhf|armv7l)          ESUM='d00370967e4657e137cc511e81d6accbfdb08dba91e6268abef8219e735fbfc5';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_arm_linux_hotspot_11.0.8_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d206a63cd719b65717f7f20ee3fe49f0b8b2db922986b4811c828db57212699e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.8_10.tar.gz';          ;;        s390x)          ESUM='5619e1437c7cd400169eb7f1c831c2635fdb2776a401147a2fc1841b01f83ed6';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.8_10.tar.gz';          ;;        amd64|x86_64)          ESUM='6e4cead158037cb7747ca47416474d4f408c9126be5b96f9befd532e0a762b47';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.8_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 20:59:21 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 21:56:06 GMT
+# Fri, 17 Jul 2020 20:59:22 GMT
 CMD ["jshell"]
-# Mon, 06 Jul 2020 22:49:26 GMT
+# Fri, 17 Jul 2020 22:27:43 GMT
 CMD ["gradle"]
-# Mon, 06 Jul 2020 22:49:27 GMT
+# Fri, 17 Jul 2020 22:27:43 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Mon, 06 Jul 2020 22:49:29 GMT
+# Fri, 17 Jul 2020 22:27:45 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Mon, 06 Jul 2020 22:49:30 GMT
+# Fri, 17 Jul 2020 22:27:46 GMT
 VOLUME [/home/gradle/.gradle]
-# Mon, 06 Jul 2020 22:49:31 GMT
+# Fri, 17 Jul 2020 22:27:47 GMT
 WORKDIR /home/gradle
-# Mon, 06 Jul 2020 22:50:07 GMT
+# Fri, 17 Jul 2020 22:28:23 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 22:50:08 GMT
+# Fri, 17 Jul 2020 22:28:25 GMT
 ENV GRADLE_VERSION=6.5.1
-# Mon, 06 Jul 2020 22:50:09 GMT
+# Fri, 17 Jul 2020 22:28:25 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Mon, 06 Jul 2020 22:50:18 GMT
+# Fri, 17 Jul 2020 22:28:34 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -6524,25 +6524,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
 		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:968021a24b7f39d881bc26e80a8217879444a2ade35c75754dd7e622543f123a`  
-		Last Modified: Mon, 06 Jul 2020 21:58:06 GMT  
-		Size: 12.3 MB (12253478 bytes)  
+	-	`sha256:e4cc999ed63826a5b44acb46406a5dc7d80f1604cc4f06927d88bf6c5e79b497`  
+		Last Modified: Fri, 17 Jul 2020 21:00:57 GMT  
+		Size: 12.8 MB (12816746 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d768e5caa42aeedf2598c0609d23fb7ffc77625b634ce1c71f2388eca07c0809`  
-		Last Modified: Mon, 06 Jul 2020 21:59:17 GMT  
-		Size: 179.4 MB (179355784 bytes)  
+	-	`sha256:f7f60d8de63ee0c7cd439d5e89c1d3bf4772e39ff44e87240f889aaa0a0ac7b3`  
+		Last Modified: Fri, 17 Jul 2020 21:02:08 GMT  
+		Size: 183.3 MB (183306987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdbf7a0767caa9889f06ad2e90297fbad716b712632cc4b51c1f3b6b1af99977`  
-		Last Modified: Mon, 06 Jul 2020 22:51:37 GMT  
-		Size: 4.5 KB (4505 bytes)  
+	-	`sha256:4b8e35ffc66bc6edb009f972778a6f74e0dd5da91e93934df18ef91faa33be9a`  
+		Last Modified: Fri, 17 Jul 2020 22:29:52 GMT  
+		Size: 4.5 KB (4513 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a4ff4192a01c01987036921b8a85a45eaac50968ef1d53072c00e19eb337068`  
-		Last Modified: Mon, 06 Jul 2020 22:51:53 GMT  
-		Size: 43.6 MB (43617895 bytes)  
+	-	`sha256:1136583547f60b49259dbe465363d4afbb3048eee1d0bca046ecfc76eb7791c3`  
+		Last Modified: Fri, 17 Jul 2020 22:30:08 GMT  
+		Size: 43.7 MB (43731443 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccb207034be3875b1dcd45e1a547e0602c7df74568391b1b7c06e306982575e6`  
-		Last Modified: Mon, 06 Jul 2020 22:51:51 GMT  
-		Size: 102.4 MB (102379583 bytes)  
+	-	`sha256:5bd7f1e3091a9c962c2daf4d8b4e85bc43a65a5c48ba2255150ed82110c2e52d`  
+		Last Modified: Fri, 17 Jul 2020 22:30:07 GMT  
+		Size: 102.4 MB (102379603 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:jdk11` - linux; ppc64le
@@ -6643,7 +6643,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:jdk14`
 
 ```console
-$ docker pull gradle@sha256:a075a783f6b760b6b71abf377d2e5663486847efca3b0caee801a7f07ec6e578
+$ docker pull gradle@sha256:f617fd967a0da481778d07bfd5fb592c70515e341ad9992b60452f3a38e1e918
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6657,14 +6657,14 @@ $ docker pull gradle@sha256:a075a783f6b760b6b71abf377d2e5663486847efca3b0caee801
 ### `gradle:jdk14` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:139e4128f623ac8b2488c9db1d6d8a625687cbe466a9a81736c799f8e284fd1c
+$ docker pull gradle@sha256:a57aee65923b9f014a6f05bf2d00ac93a4956949c794c609f57283f47fef4801
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **403.1 MB (403087093 bytes)**  
+-	Total Size: **403.6 MB (403567326 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a03bf95ac56e937c828f9f0175bccedbeb9e6f83b9e280ca32759af600b9411c`
+-	Image ID: `sha256:601c687379276f6b17456ec3b3efbcbf3e6116bcfeb812e8853afc0a0758896c`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -6680,33 +6680,33 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:04:38 GMT
-ENV JAVA_VERSION=jdk-14.0.1+7
-# Mon, 06 Jul 2020 23:04:51 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='81ca31ad90f9bd789a2ca1753d6d83d10f4927876b4a4b9f4b1c4c8cbce85feb';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.1_7.tar.gz';          ;;        armhf|armv7l)          ESUM='458d091756500dc3013737aa182a14752b3d4ffc358d09532201874ffb8cae22';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_arm_linux_hotspot_14.0.1_7.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='bfdd77112d81256d4e1a859a465dd4dcb670019a5d6cf8260c30e24a0e5947e4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.1_7.tar.gz';          ;;        s390x)          ESUM='c13545924e92cb9d495282e95270f299a28d5466f9741c67791f131c38ebbd0c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.1_7.tar.gz';          ;;        amd64|x86_64)          ESUM='9ddf9b35996fbd784a53fff3e0d59920a7d5acf1a82d4c8d70906957ac146cd1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_x64_linux_hotspot_14.0.1_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:04:51 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:20:49 GMT
+ENV JAVA_VERSION=jdk-14.0.2+12
+# Fri, 17 Jul 2020 22:21:03 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ee87e9f03b1fbe6f328429b78fe1a9f44900026d220c90dfd747fe0bcd62d904';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='65f193496c6977ba7aed1563edc4b5be091b5ff03e3d790074bb4e389a034b36';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='465a3b8e931896b8d95e452d479615c4bf543535c05b6ea246323ae114e67d7d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='7d27aea30e359cf0bb561f8dcca6f4591dbc3ae831981f8a19aa367d31a9709b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='7d5ee7e06909b8a99c0d029f512f67b092597aa5b0e78c109bd59405bbfa74fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:21:03 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:04:51 GMT
+# Fri, 17 Jul 2020 22:21:03 GMT
 CMD ["jshell"]
-# Tue, 07 Jul 2020 03:28:37 GMT
+# Fri, 17 Jul 2020 23:00:12 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:28:37 GMT
+# Fri, 17 Jul 2020 23:00:13 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:28:38 GMT
+# Fri, 17 Jul 2020 23:00:13 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:28:38 GMT
+# Fri, 17 Jul 2020 23:00:14 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:28:38 GMT
+# Fri, 17 Jul 2020 23:00:14 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:28:55 GMT
+# Fri, 17 Jul 2020 23:00:31 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:28:56 GMT
+# Fri, 17 Jul 2020 23:00:32 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:28:56 GMT
+# Fri, 17 Jul 2020 23:00:32 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:29:01 GMT
+# Fri, 17 Jul 2020 23:00:37 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -6728,38 +6728,38 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:848e110e804a6625b9d9a4b3f558e17b88e77b5ec60d0b24ac58431d705a8823`  
-		Last Modified: Mon, 06 Jul 2020 23:09:32 GMT  
-		Size: 212.0 MB (212004123 bytes)  
+	-	`sha256:7f3ff2208f08b667f998eaca1c8da3a4ef48f028799511f54f74d33d30575206`  
+		Last Modified: Fri, 17 Jul 2020 22:24:31 GMT  
+		Size: 211.8 MB (211806973 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24e5036ab989a070dff127962d6461878c9c021a454840762d7342ad47c41101`  
-		Last Modified: Tue, 07 Jul 2020 03:30:58 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:ec514bec384a1d96e3b620eda459437f856c8df1716c2a0f202451b7f875d987`  
+		Last Modified: Fri, 17 Jul 2020 23:02:32 GMT  
+		Size: 4.5 KB (4486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:920f8999d3b578fd3ed2321182f8a0b57abecc5ca2d4f72e03f4bb47713cbd7a`  
-		Last Modified: Tue, 07 Jul 2020 03:31:09 GMT  
-		Size: 48.7 MB (48654750 bytes)  
+	-	`sha256:4ddae2b647d4303ef58f9090960b21825277a9f0c4914a18ca027384475bf434`  
+		Last Modified: Fri, 17 Jul 2020 23:02:43 GMT  
+		Size: 48.8 MB (48768639 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ecb4d1d9437de88b733d15965e71a0e02d99d59908c911010d85679ba6e1fc5`  
-		Last Modified: Tue, 07 Jul 2020 03:31:24 GMT  
-		Size: 102.4 MB (102379514 bytes)  
+	-	`sha256:0cfca9faaf5fbdcf9e51c0e0f2dd63be263a5861a245d0313ab92977d2d454f9`  
+		Last Modified: Fri, 17 Jul 2020 23:02:39 GMT  
+		Size: 102.4 MB (102379512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:jdk14` - linux; arm variant v7
 
 ```console
-$ docker pull gradle@sha256:7d52d8e9d432beef3daf6081dfe3d4159d1426d5a821b61421f3122ab734688d
+$ docker pull gradle@sha256:35872b179b3048f429ee8a658a5b092c0103ed862d79436ab4b1bdcdea649d6d
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **370.6 MB (370599466 bytes)**  
+-	Total Size: **379.3 MB (379250597 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb6bdcc7ff91966608e2ccd310d0007f0a652df4cdc223e3fd17401247da0a30`
+-	Image ID: `sha256:50943231527f0d5375c2c3e41421e8c7b7a353731b3faf2ddf05e5e96d8c9252`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -6775,33 +6775,33 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 21:54:44 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 21:55:12 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 21:56:57 GMT
-ENV JAVA_VERSION=jdk-14.0.1+7
-# Mon, 06 Jul 2020 21:57:15 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='81ca31ad90f9bd789a2ca1753d6d83d10f4927876b4a4b9f4b1c4c8cbce85feb';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.1_7.tar.gz';          ;;        armhf|armv7l)          ESUM='458d091756500dc3013737aa182a14752b3d4ffc358d09532201874ffb8cae22';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_arm_linux_hotspot_14.0.1_7.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='bfdd77112d81256d4e1a859a465dd4dcb670019a5d6cf8260c30e24a0e5947e4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.1_7.tar.gz';          ;;        s390x)          ESUM='c13545924e92cb9d495282e95270f299a28d5466f9741c67791f131c38ebbd0c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.1_7.tar.gz';          ;;        amd64|x86_64)          ESUM='9ddf9b35996fbd784a53fff3e0d59920a7d5acf1a82d4c8d70906957ac146cd1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_x64_linux_hotspot_14.0.1_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 21:57:16 GMT
+# Fri, 17 Jul 2020 20:58:22 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 20:59:49 GMT
+ENV JAVA_VERSION=jdk-14.0.2+12
+# Fri, 17 Jul 2020 21:00:07 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ee87e9f03b1fbe6f328429b78fe1a9f44900026d220c90dfd747fe0bcd62d904';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='65f193496c6977ba7aed1563edc4b5be091b5ff03e3d790074bb4e389a034b36';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='465a3b8e931896b8d95e452d479615c4bf543535c05b6ea246323ae114e67d7d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='7d27aea30e359cf0bb561f8dcca6f4591dbc3ae831981f8a19aa367d31a9709b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='7d5ee7e06909b8a99c0d029f512f67b092597aa5b0e78c109bd59405bbfa74fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 21:00:08 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 21:57:16 GMT
+# Fri, 17 Jul 2020 21:00:09 GMT
 CMD ["jshell"]
-# Mon, 06 Jul 2020 22:50:25 GMT
+# Fri, 17 Jul 2020 22:28:50 GMT
 CMD ["gradle"]
-# Mon, 06 Jul 2020 22:50:26 GMT
+# Fri, 17 Jul 2020 22:28:50 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Mon, 06 Jul 2020 22:50:28 GMT
+# Fri, 17 Jul 2020 22:28:52 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Mon, 06 Jul 2020 22:50:28 GMT
+# Fri, 17 Jul 2020 22:28:52 GMT
 VOLUME [/home/gradle/.gradle]
-# Mon, 06 Jul 2020 22:50:29 GMT
+# Fri, 17 Jul 2020 22:28:53 GMT
 WORKDIR /home/gradle
-# Mon, 06 Jul 2020 22:51:11 GMT
+# Fri, 17 Jul 2020 22:29:28 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 22:51:13 GMT
+# Fri, 17 Jul 2020 22:29:30 GMT
 ENV GRADLE_VERSION=6.5.1
-# Mon, 06 Jul 2020 22:51:14 GMT
+# Fri, 17 Jul 2020 22:29:30 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Mon, 06 Jul 2020 22:51:23 GMT
+# Fri, 17 Jul 2020 22:29:39 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -6823,38 +6823,38 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
 		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:968021a24b7f39d881bc26e80a8217879444a2ade35c75754dd7e622543f123a`  
-		Last Modified: Mon, 06 Jul 2020 21:58:06 GMT  
-		Size: 12.3 MB (12253478 bytes)  
+	-	`sha256:e4cc999ed63826a5b44acb46406a5dc7d80f1604cc4f06927d88bf6c5e79b497`  
+		Last Modified: Fri, 17 Jul 2020 21:00:57 GMT  
+		Size: 12.8 MB (12816746 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84818d56063f804ec8406f86e32cd794130483221f6d592e46d02892618a3fc2`  
-		Last Modified: Mon, 06 Jul 2020 22:01:06 GMT  
-		Size: 190.0 MB (190031026 bytes)  
+	-	`sha256:9d42d820e936c80a9306a536e32cc65ee06121f2833ce9e9dba550f8434cac88`  
+		Last Modified: Fri, 17 Jul 2020 21:03:20 GMT  
+		Size: 198.0 MB (198004338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:beaff1e50122207fc296d85c56f11c40279709d18027d441cdb56a30f6065ca0`  
-		Last Modified: Mon, 06 Jul 2020 22:52:00 GMT  
-		Size: 4.5 KB (4504 bytes)  
+	-	`sha256:e72d8f6fb865afbe9d625e0d456c22ac256ff07184c1275170ea9e3bc7191e7d`  
+		Last Modified: Fri, 17 Jul 2020 22:30:14 GMT  
+		Size: 4.5 KB (4508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26feecf857d039ce347a0db795a08736505f417d4b9d66dfa43d4212bee96483`  
-		Last Modified: Mon, 06 Jul 2020 22:52:17 GMT  
-		Size: 43.6 MB (43617847 bytes)  
+	-	`sha256:3aa06e22eb3b5bec1c4571b5dbc46c6ba52d8b71155018604e161af65129760a`  
+		Last Modified: Fri, 17 Jul 2020 22:30:30 GMT  
+		Size: 43.7 MB (43732391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df63be9d7f93d866b1c881b6eaab5bd70160679476cd1997b2292cf2915554b0`  
-		Last Modified: Mon, 06 Jul 2020 22:52:16 GMT  
-		Size: 102.4 MB (102379605 bytes)  
+	-	`sha256:4bbc492b2ee1f22f363c06e92c35b2c584623955959db206ac7c1d94717ace1c`  
+		Last Modified: Fri, 17 Jul 2020 22:30:29 GMT  
+		Size: 102.4 MB (102379608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:jdk14` - linux; arm64 variant v8
 
 ```console
-$ docker pull gradle@sha256:f759cbe554fde25cc9361ea9edcd6e66973b52e6787c108a4e05a9af99f12113
+$ docker pull gradle@sha256:6e611bb7d9de7e90a07d127e8f3490e25e945b975aa86bb54cf3f3b193c56920
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **394.5 MB (394481847 bytes)**  
+-	Total Size: **395.0 MB (394966663 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33db09e633ce12ea2ce4498b4d465c9d13e72ad9758452a05d282a980b1b98fe`
+-	Image ID: `sha256:748da17cf6c5a897f34f4b36d3627ff3e93d120fe9b997ef2241b428c1d03743`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -6870,33 +6870,33 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Tue, 07 Jul 2020 01:12:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 07 Jul 2020 01:13:00 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 01:14:55 GMT
-ENV JAVA_VERSION=jdk-14.0.1+7
-# Tue, 07 Jul 2020 01:15:11 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='81ca31ad90f9bd789a2ca1753d6d83d10f4927876b4a4b9f4b1c4c8cbce85feb';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.1_7.tar.gz';          ;;        armhf|armv7l)          ESUM='458d091756500dc3013737aa182a14752b3d4ffc358d09532201874ffb8cae22';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_arm_linux_hotspot_14.0.1_7.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='bfdd77112d81256d4e1a859a465dd4dcb670019a5d6cf8260c30e24a0e5947e4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.1_7.tar.gz';          ;;        s390x)          ESUM='c13545924e92cb9d495282e95270f299a28d5466f9741c67791f131c38ebbd0c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.1_7.tar.gz';          ;;        amd64|x86_64)          ESUM='9ddf9b35996fbd784a53fff3e0d59920a7d5acf1a82d4c8d70906957ac146cd1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jdk_x64_linux_hotspot_14.0.1_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Tue, 07 Jul 2020 01:15:13 GMT
+# Fri, 17 Jul 2020 20:42:18 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 20:44:00 GMT
+ENV JAVA_VERSION=jdk-14.0.2+12
+# Fri, 17 Jul 2020 20:44:16 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ee87e9f03b1fbe6f328429b78fe1a9f44900026d220c90dfd747fe0bcd62d904';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='65f193496c6977ba7aed1563edc4b5be091b5ff03e3d790074bb4e389a034b36';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='465a3b8e931896b8d95e452d479615c4bf543535c05b6ea246323ae114e67d7d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='7d27aea30e359cf0bb561f8dcca6f4591dbc3ae831981f8a19aa367d31a9709b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='7d5ee7e06909b8a99c0d029f512f67b092597aa5b0e78c109bd59405bbfa74fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 20:44:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 01:15:13 GMT
+# Fri, 17 Jul 2020 20:44:19 GMT
 CMD ["jshell"]
-# Tue, 07 Jul 2020 02:11:26 GMT
+# Fri, 17 Jul 2020 21:55:32 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 02:11:27 GMT
+# Fri, 17 Jul 2020 21:55:32 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 02:11:29 GMT
+# Fri, 17 Jul 2020 21:55:35 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 02:11:30 GMT
+# Fri, 17 Jul 2020 21:55:36 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 02:11:30 GMT
+# Fri, 17 Jul 2020 21:55:36 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 02:12:06 GMT
+# Fri, 17 Jul 2020 21:56:10 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 02:12:08 GMT
+# Fri, 17 Jul 2020 21:56:13 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 02:12:09 GMT
+# Fri, 17 Jul 2020 21:56:13 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 02:12:16 GMT
+# Fri, 17 Jul 2020 21:56:22 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -6918,25 +6918,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5427b5697c732a419d0ebcf481bdc2ee7263b7c5aa034f701221dea96bb72a18`  
-		Last Modified: Tue, 07 Jul 2020 01:16:08 GMT  
-		Size: 12.7 MB (12723255 bytes)  
+	-	`sha256:cf5858fe3213ff710f6c318742f085137ce8fcea1e001c321df12f5871e95b09`  
+		Last Modified: Fri, 17 Jul 2020 20:45:09 GMT  
+		Size: 13.3 MB (13284377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2206df2d11676e7da3f768169c63aca606dabdaf29dade017017bd357f013efc`  
-		Last Modified: Tue, 07 Jul 2020 01:19:32 GMT  
-		Size: 209.4 MB (209420316 bytes)  
+	-	`sha256:3808c2d5c4707411e814af79433d34876b7de5f3c7bb97fc1b97b58e5645e834`  
+		Last Modified: Fri, 17 Jul 2020 20:47:12 GMT  
+		Size: 209.2 MB (209228562 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b81fa37c645ca225037008e6eafd382297ca5efa5874860973323b9e09630ae4`  
-		Last Modified: Tue, 07 Jul 2020 02:13:53 GMT  
+	-	`sha256:99742ecc0cf17fad3f29d0118b4396a5dab42808c2fdf035b0d6340cd82e2dbf`  
+		Last Modified: Fri, 17 Jul 2020 21:58:01 GMT  
 		Size: 4.5 KB (4524 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16aefe52660f11a6e47f210f5d3f10b3a23ce95cb2279d6927dc872fea2e9e72`  
-		Last Modified: Tue, 07 Jul 2020 02:14:08 GMT  
-		Size: 46.2 MB (46198550 bytes)  
+	-	`sha256:47f2d49e46abf3f59e1962d1ec2d2fd5e65ad91bbca854d5c8276feb82ed9e7d`  
+		Last Modified: Fri, 17 Jul 2020 21:58:15 GMT  
+		Size: 46.3 MB (46314002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5eacc6828283fa1f966c263b7993a7635ee82b32dc9b440ec968aa9e87335414`  
-		Last Modified: Tue, 07 Jul 2020 02:14:05 GMT  
-		Size: 102.4 MB (102379609 bytes)  
+	-	`sha256:7a469595d7c0991656f6244467be5c5236f7f0ce1dbce9ecafb5f33164c09947`  
+		Last Modified: Fri, 17 Jul 2020 21:58:12 GMT  
+		Size: 102.4 MB (102379605 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:jdk14` - linux; ppc64le
@@ -7132,7 +7132,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:jdk8`
 
 ```console
-$ docker pull gradle@sha256:10df187cb99774a208aaf54b139d58d654ec885a3a76419b8668656010ea703e
+$ docker pull gradle@sha256:79c80c35dbf760580bba9dcd99de07f32db6caa54e0c6e515ee139d82381df39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7144,14 +7144,14 @@ $ docker pull gradle@sha256:10df187cb99774a208aaf54b139d58d654ec885a3a76419b8668
 ### `gradle:jdk8` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:0c567e3c34943acde9b72e00300395f8148d27731d1b07706c81a2eb044b2d49
+$ docker pull gradle@sha256:2b3c57831088f8c767c009f441f2584f61c249ae928fad3599c14fdb13b51e60
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **293.8 MB (293773404 bytes)**  
+-	Total Size: **295.5 MB (295496791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63a06ad25ffc0fce6b9d30c05541ff32ef3bb8539e3c99cd13a1a2a96cf2aad4`
+-	Image ID: `sha256:864401413f8190c196649ab996fd27cb85e6d29f48b5f181f1129012480ff0ee`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -7167,31 +7167,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:03:21 GMT
-ENV JAVA_VERSION=jdk8u252-b09
-# Mon, 06 Jul 2020 23:03:28 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='536bf397d98174b376da9ed49d2f659d65c7310318d8211444f4b7ba7c15e453';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_aarch64_linux_hotspot_8u252b09.tar.gz';          ;;        armhf|armv7l)          ESUM='5b401ad3c9b246281bd6df34b1abaf75e10e5cad9c6b26b55232b016e90e411a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_arm_linux_hotspot_8u252b09.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='55f0453b1d28812154138cf52b17b7acd93b9e55263f1f508f559795d31b2671';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u252b09.tar.gz';          ;;        s390x)          ESUM='db39932666c37718b1c3c62a1adb4f8e9c33258cf15a85ddf9b4d71199edfb1d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_s390x_linux_hotspot_8u252b09.tar.gz';          ;;        amd64|x86_64)          ESUM='2b59b5282ff32bce7abba8ad6b9fde34c15a98f949ad8ae43e789bbd78fc8862';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_x64_linux_hotspot_8u252b09.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:03:29 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:19:52 GMT
+ENV JAVA_VERSION=jdk8u262-b10
+# Fri, 17 Jul 2020 22:20:00 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7be0b2a4c749a277302a54b456624c076b3a5b990ad502e2a72d803ab31aecab';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='dd85ebb9a64916b4b621a23729e3360adb363d430bf1e99e98f25397834d74bd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d2a16915fb85ba851145c91cda5666cb78f06bf4713a2b3bdce813779ff972c2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='a504af6924a095cfb6c392653dccd7299925048c91b399d05efa95a094820120';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='733755fd649fad6ae91fc083f7e5a5a0b56410fb6ac1815cff29f744b128b1b1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:20:00 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 03:26:30 GMT
+# Fri, 17 Jul 2020 22:58:11 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:26:30 GMT
+# Fri, 17 Jul 2020 22:58:11 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:26:57 GMT
+# Fri, 17 Jul 2020 22:58:34 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:26:58 GMT
+# Fri, 17 Jul 2020 22:58:35 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:26:58 GMT
+# Fri, 17 Jul 2020 22:58:35 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:27:03 GMT
+# Fri, 17 Jul 2020 22:58:40 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -7213,25 +7213,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ebafcb948fa26ecf0a81e1f030a5258f58fbbca5eb8d6669348a9df00eadcc2`  
-		Last Modified: Mon, 06 Jul 2020 23:07:34 GMT  
-		Size: 102.7 MB (102690072 bytes)  
+	-	`sha256:d119f9c502a13708ca69878c432d637073f2f7311ffd6b8e2b584a4f68c7fcf2`  
+		Last Modified: Fri, 17 Jul 2020 22:23:22 GMT  
+		Size: 103.7 MB (103736353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d65a8d0d90b871faa7911593e4aaeae568522ccf2855d74828b920ef6e1dec02`  
-		Last Modified: Tue, 07 Jul 2020 03:29:45 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:1d010a97e0ac828392f864109a0969f1db978057bfc826e95b19c9e297e75ae9`  
+		Last Modified: Fri, 17 Jul 2020 23:01:20 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b59f24a81e2677fcdb327c23d8afc692b121ae0dd4567d9c2e7e2b3c55d62c3e`  
-		Last Modified: Tue, 07 Jul 2020 03:29:55 GMT  
-		Size: 48.7 MB (48655113 bytes)  
+	-	`sha256:86cdd3c13fed9a7f9c3b78f300dc517ddfb1deafae45cbdc3ddf660bd1f7db5f`  
+		Last Modified: Fri, 17 Jul 2020 23:01:30 GMT  
+		Size: 48.8 MB (48768749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d63278ca4b835a2b21140f139c916d450042c9398f56db01ad0cd2cfb01defb`  
-		Last Modified: Tue, 07 Jul 2020 03:29:54 GMT  
-		Size: 102.4 MB (102379513 bytes)  
+	-	`sha256:a8d335b1e876145c7a468bb7fe04c71b8879ee5cfdbbe7e18566f5e180694575`  
+		Last Modified: Fri, 17 Jul 2020 23:01:27 GMT  
+		Size: 102.4 MB (102379484 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:jdk8` - linux; ppc64le
@@ -7423,7 +7423,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:jre`
 
 ```console
-$ docker pull gradle@sha256:8ed6d618feb07aa1016cb7fc760f4b22c5e58947fa0a1a26df23e110437e3140
+$ docker pull gradle@sha256:8aaca3e01190b95836deade3e17867c92bd9bdcecffd8e19a01ac9873ba368ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7435,14 +7435,14 @@ $ docker pull gradle@sha256:8ed6d618feb07aa1016cb7fc760f4b22c5e58947fa0a1a26df23
 ### `gradle:jre` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:3e88feb1d68621bbd96a6b2727aa54b33b6b66bd64987e4c9430b1569b736110
+$ docker pull gradle@sha256:8b78ead4defc49175a129a17b7efdd67e3fa58970f4f7b47016564df140828f6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **232.5 MB (232536779 bytes)**  
+-	Total Size: **233.9 MB (233879210 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10f7bb03ee99c2e4147d33ab34bba4f9410e47f8d4f9a235682bb5eb871a9e2e`
+-	Image ID: `sha256:b52dccb61564c357fafb67c5aad52aaa3776058aaab6e9889c2cf449bdf5cdc4`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -7458,31 +7458,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:03:21 GMT
-ENV JAVA_VERSION=jdk8u252-b09
-# Mon, 06 Jul 2020 23:03:37 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='30bba4425497f5b4aabcba7b45db69d582d278fb17357d64c22c9dc6b2d29ca1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_aarch64_linux_hotspot_8u252b09.tar.gz';          ;;        armhf|armv7l)          ESUM='107699a88f611e0c2d57816be25821ef9b17db860b14402c4e9e5bf0b9cf16fd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_arm_linux_hotspot_8u252b09.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='fbc559e8f75107f3c2ef92b33938dd48aee5728d471774d04fa3f68ed3b992fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_ppc64le_linux_hotspot_8u252b09.tar.gz';          ;;        s390x)          ESUM='23daa316ebcd965197e74dff011708a050516cd108a27a40e5b5cfa3c88beaba';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_s390x_linux_hotspot_8u252b09.tar.gz';          ;;        amd64|x86_64)          ESUM='a93be303ed62398dba9acb0376fb3caf8f488fcde80dc62d0a8e46256b3adfb1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_x64_linux_hotspot_8u252b09.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:03:37 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:19:52 GMT
+ENV JAVA_VERSION=jdk8u262-b10
+# Fri, 17 Jul 2020 22:20:11 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:20:11 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 03:27:09 GMT
+# Fri, 17 Jul 2020 22:58:45 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:27:09 GMT
+# Fri, 17 Jul 2020 22:58:45 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:27:10 GMT
+# Fri, 17 Jul 2020 22:58:46 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:27:10 GMT
+# Fri, 17 Jul 2020 22:58:46 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:27:10 GMT
+# Fri, 17 Jul 2020 22:58:46 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:27:28 GMT
+# Fri, 17 Jul 2020 22:59:03 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:27:28 GMT
+# Fri, 17 Jul 2020 22:59:04 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:27:28 GMT
+# Fri, 17 Jul 2020 22:59:04 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:27:33 GMT
+# Fri, 17 Jul 2020 22:59:09 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -7504,25 +7504,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae7092168735a178c86270ca696ef6f3121c32c9fb7431c9472f72806f474d73`  
-		Last Modified: Mon, 06 Jul 2020 23:07:46 GMT  
-		Size: 41.5 MB (41453839 bytes)  
+	-	`sha256:b38587e18ed628aa15742a897954754fec3b97a3454dbfd1a5ae9ad4d7b13e4d`  
+		Last Modified: Fri, 17 Jul 2020 22:23:36 GMT  
+		Size: 42.1 MB (42118777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da3784f1dbdb3f11ca97c8ec1db98795e3a33ec90957e196ddec77d5d71d29e3`  
-		Last Modified: Tue, 07 Jul 2020 03:30:07 GMT  
-		Size: 4.5 KB (4491 bytes)  
+	-	`sha256:c0b9393a200ac938d5e2a39d00009cd08cae092d59479c10607366de3a6072f9`  
+		Last Modified: Fri, 17 Jul 2020 23:01:38 GMT  
+		Size: 4.5 KB (4487 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:645b913ed928a0a09d818f826b89dd0bc5e40d1ce60291e916451aaada11b6fc`  
-		Last Modified: Tue, 07 Jul 2020 03:30:18 GMT  
-		Size: 48.7 MB (48654747 bytes)  
+	-	`sha256:6986687daf4a2275a545c1520c9fb4e325b5bc175ba3a957f2ec3dc8d5ac276e`  
+		Last Modified: Fri, 17 Jul 2020 23:01:49 GMT  
+		Size: 48.8 MB (48768729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36c6f5e88a25b8f89e3bd2690fccd81cb1887874a4ed985765229bbc469874fb`  
-		Last Modified: Tue, 07 Jul 2020 03:30:15 GMT  
-		Size: 102.4 MB (102379484 bytes)  
+	-	`sha256:29b799999efe114b0bb7230c6747a4f9d78ac1b74d71f5b5a4188d860bd3c223`  
+		Last Modified: Fri, 17 Jul 2020 23:01:46 GMT  
+		Size: 102.4 MB (102379501 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:jre` - linux; ppc64le
@@ -7714,7 +7714,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:jre11`
 
 ```console
-$ docker pull gradle@sha256:bcb1e7cf9a45ec783e71779cf328d4bbfc9f44502d03287bc55b3c4e6c616462
+$ docker pull gradle@sha256:d92cbfe86f7b02d2a7825862240e1fe7fd2e4ed03ac25518a00c504128ae2750
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7727,14 +7727,14 @@ $ docker pull gradle@sha256:bcb1e7cf9a45ec783e71779cf328d4bbfc9f44502d03287bc55b
 ### `gradle:jre11` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:8f655b8ab97347c56de5491f83f91f9bd49fe7bb60c85318e2839158f103df0f
+$ docker pull gradle@sha256:6bced78707af7c5158cc648c027a176eecc163189c44aa0e9f355b314594230d
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **234.7 MB (234722600 bytes)**  
+-	Total Size: **235.4 MB (235387641 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f1f633a92ca0f6d0013d866cc3b7e348c20263f1d7f4caadb02a7606a52acc2`
+-	Image ID: `sha256:5990d5ff007872e4df097f7ad0ec35a656fa86624baf554f39ac85c48529518e`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -7750,31 +7750,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:03:41 GMT
-ENV JAVA_VERSION=jdk-11.0.7+10
-# Mon, 06 Jul 2020 23:04:03 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='cfe504e9e9621b831a5cfd800a2005dafe90a1d11aa14ee35d7b674d68685698';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.7_10.tar.gz';          ;;        armhf|armv7l)          ESUM='581bae8efcaa40e209a780baa6f96b7c8c9397965bc6d54533f4fd8599d5c742';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_arm_linux_hotspot_11.0.7_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='364a030a4c5c10660d33988bd1d40e6a34f49ca6a2e04ff44b8cf809da75423a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.7_10.tar.gz';          ;;        s390x)          ESUM='8e14d11a84c67da457695cbc20a9d70628c741ffc09087d11b40a52f2e11dddc';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_s390x_linux_hotspot_11.0.7_10.tar.gz';          ;;        amd64|x86_64)          ESUM='74b493dd8a884dcbee29682ead51b182d9d3e52b40c3d4cbb3167c2fd0063503';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_x64_linux_hotspot_11.0.7_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:04:03 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:20:16 GMT
+ENV JAVA_VERSION=jdk-11.0.8+10
+# Fri, 17 Jul 2020 22:20:37 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='286c869dbaefda9b470ae71d1250fdecf9f06d8da97c0f7df9021d381d749106';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.8_10.tar.gz';          ;;        armhf|armv7l)          ESUM='ffa627b2d0c6001448bb8f1f24f7c9921dad37e67637f6ed0a9a479e680a3393';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_arm_linux_hotspot_11.0.8_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='89231e1667d7cc4202d1a401497bb287d4eb12281c90c17e2570211cc4e901a3';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.8_10.tar.gz';          ;;        s390x)          ESUM='dc0e715c17abcb12bedf77c638e58e67d828d3c4bf24a898f0d4b053caaeb25f';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_s390x_linux_hotspot_11.0.8_10.tar.gz';          ;;        amd64|x86_64)          ESUM='98615b1b369509965a612232622d39b5cefe117d6189179cbad4dcef2ee2f4e1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_x64_linux_hotspot_11.0.8_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:20:37 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 03:28:08 GMT
+# Fri, 17 Jul 2020 22:59:43 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:28:08 GMT
+# Fri, 17 Jul 2020 22:59:43 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:28:09 GMT
+# Fri, 17 Jul 2020 22:59:44 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:28:09 GMT
+# Fri, 17 Jul 2020 22:59:44 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:28:09 GMT
+# Fri, 17 Jul 2020 22:59:45 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:28:26 GMT
+# Fri, 17 Jul 2020 23:00:02 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:28:27 GMT
+# Fri, 17 Jul 2020 23:00:02 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:28:27 GMT
+# Fri, 17 Jul 2020 23:00:02 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:28:32 GMT
+# Fri, 17 Jul 2020 23:00:08 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -7796,38 +7796,38 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:425c0430f6c74b1e55da7625115a171a8055c9a69ab0b6ea1350e5d0d6f85089`  
-		Last Modified: Mon, 06 Jul 2020 23:08:17 GMT  
-		Size: 43.6 MB (43639531 bytes)  
+	-	`sha256:852a71b3b8da0f67a06e899ba670e762ebaf21324712355e22bf6b0801db3b24`  
+		Last Modified: Fri, 17 Jul 2020 22:24:09 GMT  
+		Size: 43.6 MB (43627149 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39e1561cf1aa0ff4c3f929d3ea2f8b2cb2f7f23765fe7d1e412087a13d5d6d38`  
-		Last Modified: Tue, 07 Jul 2020 03:30:42 GMT  
-		Size: 4.5 KB (4490 bytes)  
+	-	`sha256:16cf32d6eb3341473582d9cbed8599fdd68768a8fbda78bc22c5b959c370af8b`  
+		Last Modified: Fri, 17 Jul 2020 23:02:11 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aed46d02ffabc5a20930e78b846a954b468f26271d71350d91490f4ab50b8fc2`  
-		Last Modified: Tue, 07 Jul 2020 03:30:53 GMT  
-		Size: 48.7 MB (48654874 bytes)  
+	-	`sha256:1c9f3ae57a2b4943766d21b867d7acda81c580216dd09c1b9dce9774c798fe5a`  
+		Last Modified: Fri, 17 Jul 2020 23:02:22 GMT  
+		Size: 48.8 MB (48768789 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29fe02d22b59f51f2f2cbdb1df573152b5d299a751d4b6fb2ce0ce4715b4b2f5`  
-		Last Modified: Tue, 07 Jul 2020 03:30:50 GMT  
-		Size: 102.4 MB (102379487 bytes)  
+	-	`sha256:fd67261a1c69373fe4dafefe1f140668c67b4667d70b017db01954874da39b91`  
+		Last Modified: Fri, 17 Jul 2020 23:02:19 GMT  
+		Size: 102.4 MB (102379498 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:jre11` - linux; arm64 variant v8
 
 ```console
-$ docker pull gradle@sha256:2f76814832aca953d53099ccfa8fc324df676f455576d836696b9ce73cfb53bb
+$ docker pull gradle@sha256:ebe35fb955b576c71b5d9e644852b22bdedba5796e7e5e79748a250e2c07f7b6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **227.0 MB (227026517 bytes)**  
+-	Total Size: **227.7 MB (227716616 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a42243c72865ac4aea78d42c31f8b04b8a7143c2b375de3835213343035f2dfa`
+-	Image ID: `sha256:33c89f2e96e743092fc2e225c298047b8db2fc2f10ff46bf1156dd0fe562a916`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -7843,31 +7843,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Tue, 07 Jul 2020 01:12:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 07 Jul 2020 01:13:00 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 01:13:34 GMT
-ENV JAVA_VERSION=jdk-11.0.7+10
-# Tue, 07 Jul 2020 01:14:06 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='cfe504e9e9621b831a5cfd800a2005dafe90a1d11aa14ee35d7b674d68685698';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.7_10.tar.gz';          ;;        armhf|armv7l)          ESUM='581bae8efcaa40e209a780baa6f96b7c8c9397965bc6d54533f4fd8599d5c742';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_arm_linux_hotspot_11.0.7_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='364a030a4c5c10660d33988bd1d40e6a34f49ca6a2e04ff44b8cf809da75423a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.7_10.tar.gz';          ;;        s390x)          ESUM='8e14d11a84c67da457695cbc20a9d70628c741ffc09087d11b40a52f2e11dddc';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_s390x_linux_hotspot_11.0.7_10.tar.gz';          ;;        amd64|x86_64)          ESUM='74b493dd8a884dcbee29682ead51b182d9d3e52b40c3d4cbb3167c2fd0063503';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10/OpenJDK11U-jre_x64_linux_hotspot_11.0.7_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Tue, 07 Jul 2020 01:14:07 GMT
+# Fri, 17 Jul 2020 20:42:18 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 20:43:03 GMT
+ENV JAVA_VERSION=jdk-11.0.8+10
+# Fri, 17 Jul 2020 20:43:42 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='286c869dbaefda9b470ae71d1250fdecf9f06d8da97c0f7df9021d381d749106';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.8_10.tar.gz';          ;;        armhf|armv7l)          ESUM='ffa627b2d0c6001448bb8f1f24f7c9921dad37e67637f6ed0a9a479e680a3393';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_arm_linux_hotspot_11.0.8_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='89231e1667d7cc4202d1a401497bb287d4eb12281c90c17e2570211cc4e901a3';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.8_10.tar.gz';          ;;        s390x)          ESUM='dc0e715c17abcb12bedf77c638e58e67d828d3c4bf24a898f0d4b053caaeb25f';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_s390x_linux_hotspot_11.0.8_10.tar.gz';          ;;        amd64|x86_64)          ESUM='98615b1b369509965a612232622d39b5cefe117d6189179cbad4dcef2ee2f4e1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_x64_linux_hotspot_11.0.8_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 20:43:43 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 02:10:29 GMT
+# Fri, 17 Jul 2020 21:54:35 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 02:10:31 GMT
+# Fri, 17 Jul 2020 21:54:35 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 02:10:33 GMT
+# Fri, 17 Jul 2020 21:54:37 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 02:10:33 GMT
+# Fri, 17 Jul 2020 21:54:38 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 02:10:34 GMT
+# Fri, 17 Jul 2020 21:54:38 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 02:11:07 GMT
+# Fri, 17 Jul 2020 21:55:14 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 02:11:09 GMT
+# Fri, 17 Jul 2020 21:55:15 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 02:11:10 GMT
+# Fri, 17 Jul 2020 21:55:16 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 02:11:17 GMT
+# Fri, 17 Jul 2020 21:55:23 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -7889,25 +7889,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5427b5697c732a419d0ebcf481bdc2ee7263b7c5aa034f701221dea96bb72a18`  
-		Last Modified: Tue, 07 Jul 2020 01:16:08 GMT  
-		Size: 12.7 MB (12723255 bytes)  
+	-	`sha256:cf5858fe3213ff710f6c318742f085137ce8fcea1e001c321df12f5871e95b09`  
+		Last Modified: Fri, 17 Jul 2020 20:45:09 GMT  
+		Size: 13.3 MB (13284377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9bc585cece9cdefb8ef71d7292b6e27e46c1be509efe1b97471f5d83315a25e`  
-		Last Modified: Tue, 07 Jul 2020 01:17:57 GMT  
-		Size: 42.0 MB (41965111 bytes)  
+	-	`sha256:1e22a3aeffd5cd30eea95a35711dbca11aefd214a8e5cf32a8f537d766483421`  
+		Last Modified: Fri, 17 Jul 2020 20:46:33 GMT  
+		Size: 42.0 MB (41978765 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ef849badd091db3013d1ecb81ef10fa098dcf0bd41dbcd1f68526413bf32288`  
-		Last Modified: Tue, 07 Jul 2020 02:13:32 GMT  
+	-	`sha256:b99051d08f242432ee3ec34b6f7ae899c3eae7b6dfebf331b02c1139d0fe2d0e`  
+		Last Modified: Fri, 17 Jul 2020 21:57:34 GMT  
 		Size: 4.5 KB (4524 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40f87def99267f1d0e68fcebe4e40995b6d79bee47aae329adfea1d420f6165b`  
-		Last Modified: Tue, 07 Jul 2020 02:13:47 GMT  
-		Size: 46.2 MB (46198433 bytes)  
+	-	`sha256:2bb4184fa1763e38bd43e635cc8462e0ef7c6dcb3d18375260e7abbedeb42c3f`  
+		Last Modified: Fri, 17 Jul 2020 21:57:49 GMT  
+		Size: 46.3 MB (46313749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d5bcf9bdeaa14ad18c910e8ea1d2a0a6798c8130d36ee136e505a852938418e`  
-		Last Modified: Tue, 07 Jul 2020 02:13:44 GMT  
-		Size: 102.4 MB (102379601 bytes)  
+	-	`sha256:cafb1960ddd923ee3e47c19145170c64f36e0eab9378e378cad4f91fe768959a`  
+		Last Modified: Fri, 17 Jul 2020 21:57:51 GMT  
+		Size: 102.4 MB (102379608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:jre11` - linux; ppc64le
@@ -8099,7 +8099,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:jre14`
 
 ```console
-$ docker pull gradle@sha256:dcd12cb1be1d53ffb2b9fd05c3ac08ca02ab3aadc91b07fcf33f03719496596d
+$ docker pull gradle@sha256:8bd146533828318b56e02fd897d6d815c5ccbe6a362647a53e6c5d656355a2b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8112,14 +8112,14 @@ $ docker pull gradle@sha256:dcd12cb1be1d53ffb2b9fd05c3ac08ca02ab3aadc91b07fcf33f
 ### `gradle:jre14` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:4fd0829ad70d1cceebdd6604633bca4be02ae843795daf30ab4ec45672044f70
+$ docker pull gradle@sha256:bcec30de25f4d45f0ab5b6010111e9187b7c1b089e375d49ff8c0866bfff3bb9
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **248.9 MB (248940976 bytes)**  
+-	Total Size: **249.5 MB (249482816 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b8251bd9d76f4514e1362efb72b5ec513bb4b89ffc30dcba87d97d1c1718adf9`
+-	Image ID: `sha256:d10c8d77dd4ac4beda468dafe0d8e5634791dc1c38075025746f09851ac7863e`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -8135,31 +8135,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:04:38 GMT
-ENV JAVA_VERSION=jdk-14.0.1+7
-# Mon, 06 Jul 2020 23:05:02 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='bf038c351337982082074ab818a6bd385c7ad31d23654a2db8cd05805fe48058';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_aarch64_linux_hotspot_14.0.1_7.tar.gz';          ;;        armhf|armv7l)          ESUM='277ae66d1db7613a7f02b1cbfc9acd8f5f6208eac0e61828d40d5a513b40e406';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_arm_linux_hotspot_14.0.1_7.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='8af51efdd25d93b120ee9ef22e2584cf8bf9441108fa0396a0ac9c5de86ec119';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_ppc64le_linux_hotspot_14.0.1_7.tar.gz';          ;;        s390x)          ESUM='97b15611f4238a20fde975cba5144477f06bb8416964ae79e2109778c25fa654';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_s390x_linux_hotspot_14.0.1_7.tar.gz';          ;;        amd64|x86_64)          ESUM='3f8a4d5939a66cadf9846bbae6392644165f75063ae31998764916da13810fca';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_x64_linux_hotspot_14.0.1_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:05:03 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:20:49 GMT
+ENV JAVA_VERSION=jdk-14.0.2+12
+# Fri, 17 Jul 2020 22:21:13 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='2b749ceead19d68dd7e3c28b143dc4f94bb0916378a98b7346e851318ea4da84';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='4468ecf74956783ae41a46e8ba023c003c69e4d111622944aad1af764a1bc4af';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='0f96998be562cfbe8a4114581349dbd2609d0a23091e538fe142dcd9c83e70cf';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='9c4a87ea44165ccbcab5124b997ec1af1551bd2a2b255fca57d7a4e19c2075d3';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='1107845947da56e6bdad0da0b79210a079a74ec5c806f815ec5db9d09e1a9236';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:21:13 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 03:29:06 GMT
+# Fri, 17 Jul 2020 23:00:42 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:29:06 GMT
+# Fri, 17 Jul 2020 23:00:42 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:29:07 GMT
+# Fri, 17 Jul 2020 23:00:43 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:29:07 GMT
+# Fri, 17 Jul 2020 23:00:43 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:29:07 GMT
+# Fri, 17 Jul 2020 23:00:43 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:29:25 GMT
+# Fri, 17 Jul 2020 23:01:01 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:29:25 GMT
+# Fri, 17 Jul 2020 23:01:01 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:29:25 GMT
+# Fri, 17 Jul 2020 23:01:01 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:29:30 GMT
+# Fri, 17 Jul 2020 23:01:06 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -8181,38 +8181,38 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc754a401449dc4a11cd95ca08fc96a412bdb15b71e9548d7f9e4c941109fcea`  
-		Last Modified: Mon, 06 Jul 2020 23:09:48 GMT  
-		Size: 57.9 MB (57858509 bytes)  
+	-	`sha256:da615a00062ab1cbd1ca32e446e8173aa022bab731a2205df30b3d07289adba7`  
+		Last Modified: Fri, 17 Jul 2020 22:24:46 GMT  
+		Size: 57.7 MB (57722384 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9cbf6fb5758271fc6a96fe71366b79c1277e57958d0baf6cdbc3698a02e6a01d`  
-		Last Modified: Tue, 07 Jul 2020 03:31:31 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:431ece7fe3c608386c1a00fe8e2a332b98280cb6739a7b4e5691c518d68a259f`  
+		Last Modified: Fri, 17 Jul 2020 23:02:47 GMT  
+		Size: 4.5 KB (4483 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea3b55d53c4e8499417659337d5b9574ff34712ef02ea942aab4471028e81bcd`  
-		Last Modified: Tue, 07 Jul 2020 03:31:41 GMT  
-		Size: 48.7 MB (48654262 bytes)  
+	-	`sha256:638372fee7c21a0bb88e9954424f47c0c88e9ab2031bb7ed85b4f182ecbedd26`  
+		Last Modified: Fri, 17 Jul 2020 23:02:58 GMT  
+		Size: 48.8 MB (48768734 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42b4ca7d9687954e68db5032675491ce63594fbf24f0a6147ec064de3c35a4d3`  
-		Last Modified: Tue, 07 Jul 2020 03:31:38 GMT  
+	-	`sha256:34274f34471c8f7cb8bad8f2b44659f02d06f279d7bb341f2363e3ce9eb1320d`  
+		Last Modified: Fri, 17 Jul 2020 23:02:54 GMT  
 		Size: 102.4 MB (102379499 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:jre14` - linux; arm64 variant v8
 
 ```console
-$ docker pull gradle@sha256:8ec9209278ca66768ac0a85d7afe08d86643346b5fb64ea22dbf4bfe80b56d85
+$ docker pull gradle@sha256:5ff3b3ef82f59c1d8c556a62dcae7acdd8e593abc46ced8248dbc1397fe4d7ba
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.6 MB (241603828 bytes)**  
+-	Total Size: **242.2 MB (242176648 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7ed5fffe348352c437c53bc43dade6a2299f0d73e86c9051841cc3e1f8a2475a`
+-	Image ID: `sha256:bdbe6f9d084bb7ed0b7ab4b3ffbb8ba596ddbd14ba8e5cecb27a1d745f06bad5`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -8228,31 +8228,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Tue, 07 Jul 2020 01:12:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 07 Jul 2020 01:13:00 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 01:14:55 GMT
-ENV JAVA_VERSION=jdk-14.0.1+7
-# Tue, 07 Jul 2020 01:15:27 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='bf038c351337982082074ab818a6bd385c7ad31d23654a2db8cd05805fe48058';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_aarch64_linux_hotspot_14.0.1_7.tar.gz';          ;;        armhf|armv7l)          ESUM='277ae66d1db7613a7f02b1cbfc9acd8f5f6208eac0e61828d40d5a513b40e406';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_arm_linux_hotspot_14.0.1_7.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='8af51efdd25d93b120ee9ef22e2584cf8bf9441108fa0396a0ac9c5de86ec119';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_ppc64le_linux_hotspot_14.0.1_7.tar.gz';          ;;        s390x)          ESUM='97b15611f4238a20fde975cba5144477f06bb8416964ae79e2109778c25fa654';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_s390x_linux_hotspot_14.0.1_7.tar.gz';          ;;        amd64|x86_64)          ESUM='3f8a4d5939a66cadf9846bbae6392644165f75063ae31998764916da13810fca';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7/OpenJDK14U-jre_x64_linux_hotspot_14.0.1_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Tue, 07 Jul 2020 01:15:29 GMT
+# Fri, 17 Jul 2020 20:42:18 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 20:44:00 GMT
+ENV JAVA_VERSION=jdk-14.0.2+12
+# Fri, 17 Jul 2020 20:44:34 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='2b749ceead19d68dd7e3c28b143dc4f94bb0916378a98b7346e851318ea4da84';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='4468ecf74956783ae41a46e8ba023c003c69e4d111622944aad1af764a1bc4af';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='0f96998be562cfbe8a4114581349dbd2609d0a23091e538fe142dcd9c83e70cf';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='9c4a87ea44165ccbcab5124b997ec1af1551bd2a2b255fca57d7a4e19c2075d3';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='1107845947da56e6bdad0da0b79210a079a74ec5c806f815ec5db9d09e1a9236';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 20:44:35 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 02:12:24 GMT
+# Fri, 17 Jul 2020 21:56:29 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 02:12:24 GMT
+# Fri, 17 Jul 2020 21:56:30 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 02:12:26 GMT
+# Fri, 17 Jul 2020 21:56:32 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 02:12:27 GMT
+# Fri, 17 Jul 2020 21:56:32 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 02:12:28 GMT
+# Fri, 17 Jul 2020 21:56:33 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 02:13:02 GMT
+# Fri, 17 Jul 2020 21:57:07 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 02:13:05 GMT
+# Fri, 17 Jul 2020 21:57:10 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 02:13:06 GMT
+# Fri, 17 Jul 2020 21:57:11 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 02:13:12 GMT
+# Fri, 17 Jul 2020 21:57:19 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -8274,25 +8274,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5427b5697c732a419d0ebcf481bdc2ee7263b7c5aa034f701221dea96bb72a18`  
-		Last Modified: Tue, 07 Jul 2020 01:16:08 GMT  
-		Size: 12.7 MB (12723255 bytes)  
+	-	`sha256:cf5858fe3213ff710f6c318742f085137ce8fcea1e001c321df12f5871e95b09`  
+		Last Modified: Fri, 17 Jul 2020 20:45:09 GMT  
+		Size: 13.3 MB (13284377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a0ee6620cd0d716b68964310a1b01df8aab9dd19b2d2113cdbabafb35da2095`  
-		Last Modified: Tue, 07 Jul 2020 01:20:08 GMT  
-		Size: 56.5 MB (56542282 bytes)  
+	-	`sha256:d315a953b2a7b3d4e68691ab7054a03977f57de8abfcf8906db6bacbee9c3e4d`  
+		Last Modified: Fri, 17 Jul 2020 20:47:37 GMT  
+		Size: 56.4 MB (56438505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0be74624ea70f81fbe71bd4979aab53d0d61d4e3d8addc61f238bfc62bfa4312`  
-		Last Modified: Tue, 07 Jul 2020 02:14:14 GMT  
-		Size: 4.5 KB (4522 bytes)  
+	-	`sha256:aaf78ceb47d864e2a5fd7f1e25c130aa979b85b9dd72661a0283e78b92088a2a`  
+		Last Modified: Fri, 17 Jul 2020 21:58:22 GMT  
+		Size: 4.5 KB (4521 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b1dfb220c81892fb9a90b6ed461c4d1d0e326fd10eb50db4959e6e973a226fa`  
-		Last Modified: Tue, 07 Jul 2020 02:14:29 GMT  
-		Size: 46.2 MB (46198634 bytes)  
+	-	`sha256:eb55ffdc866cb3c5583b815add7e5788a90834ac1943969f7ccf03c79d23b909`  
+		Last Modified: Fri, 17 Jul 2020 21:58:36 GMT  
+		Size: 46.3 MB (46314055 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad8edf0691bfb7713b9c9eaad97cdea58c946a8e6ac5d5f4d8f35dbd162f467a`  
-		Last Modified: Tue, 07 Jul 2020 02:14:28 GMT  
-		Size: 102.4 MB (102379542 bytes)  
+	-	`sha256:71372cea685e5310d5723d128b7c2439dc20c4b757d32c9867c9599cfebb12db`  
+		Last Modified: Fri, 17 Jul 2020 21:58:34 GMT  
+		Size: 102.4 MB (102379597 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:jre14` - linux; ppc64le
@@ -8484,7 +8484,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:jre8`
 
 ```console
-$ docker pull gradle@sha256:8ed6d618feb07aa1016cb7fc760f4b22c5e58947fa0a1a26df23e110437e3140
+$ docker pull gradle@sha256:8aaca3e01190b95836deade3e17867c92bd9bdcecffd8e19a01ac9873ba368ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8496,14 +8496,14 @@ $ docker pull gradle@sha256:8ed6d618feb07aa1016cb7fc760f4b22c5e58947fa0a1a26df23
 ### `gradle:jre8` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:3e88feb1d68621bbd96a6b2727aa54b33b6b66bd64987e4c9430b1569b736110
+$ docker pull gradle@sha256:8b78ead4defc49175a129a17b7efdd67e3fa58970f4f7b47016564df140828f6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **232.5 MB (232536779 bytes)**  
+-	Total Size: **233.9 MB (233879210 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10f7bb03ee99c2e4147d33ab34bba4f9410e47f8d4f9a235682bb5eb871a9e2e`
+-	Image ID: `sha256:b52dccb61564c357fafb67c5aad52aaa3776058aaab6e9889c2cf449bdf5cdc4`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -8519,31 +8519,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:03:21 GMT
-ENV JAVA_VERSION=jdk8u252-b09
-# Mon, 06 Jul 2020 23:03:37 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='30bba4425497f5b4aabcba7b45db69d582d278fb17357d64c22c9dc6b2d29ca1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_aarch64_linux_hotspot_8u252b09.tar.gz';          ;;        armhf|armv7l)          ESUM='107699a88f611e0c2d57816be25821ef9b17db860b14402c4e9e5bf0b9cf16fd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_arm_linux_hotspot_8u252b09.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='fbc559e8f75107f3c2ef92b33938dd48aee5728d471774d04fa3f68ed3b992fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_ppc64le_linux_hotspot_8u252b09.tar.gz';          ;;        s390x)          ESUM='23daa316ebcd965197e74dff011708a050516cd108a27a40e5b5cfa3c88beaba';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_s390x_linux_hotspot_8u252b09.tar.gz';          ;;        amd64|x86_64)          ESUM='a93be303ed62398dba9acb0376fb3caf8f488fcde80dc62d0a8e46256b3adfb1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jre_x64_linux_hotspot_8u252b09.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:03:37 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:19:52 GMT
+ENV JAVA_VERSION=jdk8u262-b10
+# Fri, 17 Jul 2020 22:20:11 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:20:11 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 03:27:09 GMT
+# Fri, 17 Jul 2020 22:58:45 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:27:09 GMT
+# Fri, 17 Jul 2020 22:58:45 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:27:10 GMT
+# Fri, 17 Jul 2020 22:58:46 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:27:10 GMT
+# Fri, 17 Jul 2020 22:58:46 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:27:10 GMT
+# Fri, 17 Jul 2020 22:58:46 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:27:28 GMT
+# Fri, 17 Jul 2020 22:59:03 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:27:28 GMT
+# Fri, 17 Jul 2020 22:59:04 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:27:28 GMT
+# Fri, 17 Jul 2020 22:59:04 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:27:33 GMT
+# Fri, 17 Jul 2020 22:59:09 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -8565,25 +8565,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae7092168735a178c86270ca696ef6f3121c32c9fb7431c9472f72806f474d73`  
-		Last Modified: Mon, 06 Jul 2020 23:07:46 GMT  
-		Size: 41.5 MB (41453839 bytes)  
+	-	`sha256:b38587e18ed628aa15742a897954754fec3b97a3454dbfd1a5ae9ad4d7b13e4d`  
+		Last Modified: Fri, 17 Jul 2020 22:23:36 GMT  
+		Size: 42.1 MB (42118777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da3784f1dbdb3f11ca97c8ec1db98795e3a33ec90957e196ddec77d5d71d29e3`  
-		Last Modified: Tue, 07 Jul 2020 03:30:07 GMT  
-		Size: 4.5 KB (4491 bytes)  
+	-	`sha256:c0b9393a200ac938d5e2a39d00009cd08cae092d59479c10607366de3a6072f9`  
+		Last Modified: Fri, 17 Jul 2020 23:01:38 GMT  
+		Size: 4.5 KB (4487 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:645b913ed928a0a09d818f826b89dd0bc5e40d1ce60291e916451aaada11b6fc`  
-		Last Modified: Tue, 07 Jul 2020 03:30:18 GMT  
-		Size: 48.7 MB (48654747 bytes)  
+	-	`sha256:6986687daf4a2275a545c1520c9fb4e325b5bc175ba3a957f2ec3dc8d5ac276e`  
+		Last Modified: Fri, 17 Jul 2020 23:01:49 GMT  
+		Size: 48.8 MB (48768729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36c6f5e88a25b8f89e3bd2690fccd81cb1887874a4ed985765229bbc469874fb`  
-		Last Modified: Tue, 07 Jul 2020 03:30:15 GMT  
-		Size: 102.4 MB (102379484 bytes)  
+	-	`sha256:29b799999efe114b0bb7230c6747a4f9d78ac1b74d71f5b5a4188d860bd3c223`  
+		Last Modified: Fri, 17 Jul 2020 23:01:46 GMT  
+		Size: 102.4 MB (102379501 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:jre8` - linux; ppc64le
@@ -8775,7 +8775,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ## `gradle:latest`
 
 ```console
-$ docker pull gradle@sha256:10df187cb99774a208aaf54b139d58d654ec885a3a76419b8668656010ea703e
+$ docker pull gradle@sha256:79c80c35dbf760580bba9dcd99de07f32db6caa54e0c6e515ee139d82381df39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8787,14 +8787,14 @@ $ docker pull gradle@sha256:10df187cb99774a208aaf54b139d58d654ec885a3a76419b8668
 ### `gradle:latest` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:0c567e3c34943acde9b72e00300395f8148d27731d1b07706c81a2eb044b2d49
+$ docker pull gradle@sha256:2b3c57831088f8c767c009f441f2584f61c249ae928fad3599c14fdb13b51e60
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **293.8 MB (293773404 bytes)**  
+-	Total Size: **295.5 MB (295496791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63a06ad25ffc0fce6b9d30c05541ff32ef3bb8539e3c99cd13a1a2a96cf2aad4`
+-	Image ID: `sha256:864401413f8190c196649ab996fd27cb85e6d29f48b5f181f1129012480ff0ee`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -8810,31 +8810,31 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:03:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:03:21 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:03:21 GMT
-ENV JAVA_VERSION=jdk8u252-b09
-# Mon, 06 Jul 2020 23:03:28 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='536bf397d98174b376da9ed49d2f659d65c7310318d8211444f4b7ba7c15e453';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_aarch64_linux_hotspot_8u252b09.tar.gz';          ;;        armhf|armv7l)          ESUM='5b401ad3c9b246281bd6df34b1abaf75e10e5cad9c6b26b55232b016e90e411a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_arm_linux_hotspot_8u252b09.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='55f0453b1d28812154138cf52b17b7acd93b9e55263f1f508f559795d31b2671';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u252b09.tar.gz';          ;;        s390x)          ESUM='db39932666c37718b1c3c62a1adb4f8e9c33258cf15a85ddf9b4d71199edfb1d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_s390x_linux_hotspot_8u252b09.tar.gz';          ;;        amd64|x86_64)          ESUM='2b59b5282ff32bce7abba8ad6b9fde34c15a98f949ad8ae43e789bbd78fc8862';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_x64_linux_hotspot_8u252b09.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:03:29 GMT
+# Fri, 17 Jul 2020 22:19:52 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:19:52 GMT
+ENV JAVA_VERSION=jdk8u262-b10
+# Fri, 17 Jul 2020 22:20:00 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7be0b2a4c749a277302a54b456624c076b3a5b990ad502e2a72d803ab31aecab';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='dd85ebb9a64916b4b621a23729e3360adb363d430bf1e99e98f25397834d74bd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d2a16915fb85ba851145c91cda5666cb78f06bf4713a2b3bdce813779ff972c2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='a504af6924a095cfb6c392653dccd7299925048c91b399d05efa95a094820120';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='733755fd649fad6ae91fc083f7e5a5a0b56410fb6ac1815cff29f744b128b1b1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:20:00 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 03:26:30 GMT
+# Fri, 17 Jul 2020 22:58:11 GMT
 CMD ["gradle"]
-# Tue, 07 Jul 2020 03:26:30 GMT
+# Fri, 17 Jul 2020 22:58:11 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 07 Jul 2020 03:26:31 GMT
+# Fri, 17 Jul 2020 22:58:12 GMT
 WORKDIR /home/gradle
-# Tue, 07 Jul 2020 03:26:57 GMT
+# Fri, 17 Jul 2020 22:58:34 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jul 2020 03:26:58 GMT
+# Fri, 17 Jul 2020 22:58:35 GMT
 ENV GRADLE_VERSION=6.5.1
-# Tue, 07 Jul 2020 03:26:58 GMT
+# Fri, 17 Jul 2020 22:58:35 GMT
 ARG GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
-# Tue, 07 Jul 2020 03:27:03 GMT
+# Fri, 17 Jul 2020 22:58:40 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=50a7d30529fa939721fe9268a0205142f3f2302bcac5fb45b27a3902e58db54a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -8856,25 +8856,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cbfb179272dc9aa9a0a4722b2f8ffe1d0cdb83652c091add1d0c091d505468e`  
-		Last Modified: Mon, 06 Jul 2020 23:07:26 GMT  
-		Size: 13.3 MB (13311646 bytes)  
+	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
+		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
+		Size: 13.9 MB (13875144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ebafcb948fa26ecf0a81e1f030a5258f58fbbca5eb8d6669348a9df00eadcc2`  
-		Last Modified: Mon, 06 Jul 2020 23:07:34 GMT  
-		Size: 102.7 MB (102690072 bytes)  
+	-	`sha256:d119f9c502a13708ca69878c432d637073f2f7311ffd6b8e2b584a4f68c7fcf2`  
+		Last Modified: Fri, 17 Jul 2020 22:23:22 GMT  
+		Size: 103.7 MB (103736353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d65a8d0d90b871faa7911593e4aaeae568522ccf2855d74828b920ef6e1dec02`  
-		Last Modified: Tue, 07 Jul 2020 03:29:45 GMT  
-		Size: 4.5 KB (4488 bytes)  
+	-	`sha256:1d010a97e0ac828392f864109a0969f1db978057bfc826e95b19c9e297e75ae9`  
+		Last Modified: Fri, 17 Jul 2020 23:01:20 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b59f24a81e2677fcdb327c23d8afc692b121ae0dd4567d9c2e7e2b3c55d62c3e`  
-		Last Modified: Tue, 07 Jul 2020 03:29:55 GMT  
-		Size: 48.7 MB (48655113 bytes)  
+	-	`sha256:86cdd3c13fed9a7f9c3b78f300dc517ddfb1deafae45cbdc3ddf660bd1f7db5f`  
+		Last Modified: Fri, 17 Jul 2020 23:01:30 GMT  
+		Size: 48.8 MB (48768749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d63278ca4b835a2b21140f139c916d450042c9398f56db01ad0cd2cfb01defb`  
-		Last Modified: Tue, 07 Jul 2020 03:29:54 GMT  
-		Size: 102.4 MB (102379513 bytes)  
+	-	`sha256:a8d335b1e876145c7a468bb7fe04c71b8879ee5cfdbbe7e18566f5e180694575`  
+		Last Modified: Fri, 17 Jul 2020 23:01:27 GMT  
+		Size: 102.4 MB (102379484 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:latest` - linux; ppc64le
