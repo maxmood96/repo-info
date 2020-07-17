@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6b371db09ccc6353b54101557c149c02f39016b9704dea513171d7f516215af3`
-- Created: `2020-06-10T07:21:14.431105256Z`
-- Virtual Size: ~ 565.37 Mb  
+- Image ID: `sha256:58ef0fe82d01cb9a584461863045d71ff4a11859ecadb62825644afa91bca752`
+- Created: `2020-07-16T23:18:53.935773047Z`
+- Virtual Size: ~ 565.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["./LS.sh","run"]`
@@ -12,9 +12,9 @@
   - `PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/local/openjdk-8`
-  - `JAVA_VERSION=8u252`
-  - `JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u252-b09/OpenJDK8U-jdk_`
-  - `JAVA_URL_VERSION=8u252b09`
+  - `JAVA_VERSION=8u262`
+  - `JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_`
+  - `JAVA_URL_VERSION=8u262b10`
   - `LIGHTSTREAMER_VERSION=7_1_1_20200527`
   - `LIGHTSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_7_1_1_20200527.tar.gz`
 - Labels:
