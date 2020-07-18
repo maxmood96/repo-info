@@ -1,7 +1,7 @@
 ## `tomcat:7-jdk8-adoptopenjdk-openj9`
 
 ```console
-$ docker pull tomcat@sha256:1b46d65cd8c985f674e8996d1837ed270a16eb9059637cc863ace6657bc5a8eb
+$ docker pull tomcat@sha256:3156eb29375b2fd31a11a0aeb157e052f8f62143fd3f06a2b185da25219b91d0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -117,14 +117,14 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:7-jdk8-adoptopenjdk-openj9` - linux; ppc64le
 
 ```console
-$ docker pull tomcat@sha256:80fcee953016294a8116defaa380a95f7d8463b471c678ca7822b33e01cb12cd
+$ docker pull tomcat@sha256:a2e172c327f1cc74b04868c2624f6d4188d85ef19a6dec18d054733b12235b6b
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **176.5 MB (176455937 bytes)**  
+-	Total Size: **177.7 MB (177651256 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:66671c0ab4b07e88dbd0205356f05afdcb38c117b3396a2aa0e3b0fb9152ac02`
+-	Image ID: `sha256:dcf83cb2b33f6519e34759d09bea396f35f52ec2f23afc7809d13b7ef986a4ed`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -140,43 +140,43 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Mon, 06 Jul 2020 23:37:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:38:26 GMT
-RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:43:25 GMT
-ENV JAVA_VERSION=jdk8u252-b09_openj9-0.20.0
-# Mon, 06 Jul 2020 23:43:45 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='59f98ddfe0b71ce1208dbc2c46479879a3c3ee488cd311a43a9e7676e2a96079';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09_openj9-0.20.0/OpenJDK8U-jdk_ppc64le_linux_openj9_8u252b09_openj9-0.20.0.tar.gz';          ;;        s390x)          ESUM='0508474a40fbf8a3bef59471dfd52cea2ce3f66d597be2d7bcc3caa0dad1f476';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09_openj9-0.20.0/OpenJDK8U-jdk_s390x_linux_openj9_8u252b09_openj9-0.20.0.tar.gz';          ;;        amd64|x86_64)          ESUM='910ae847109a6dd1b6cf69baa7615ea2cce8cff787e5a9349a5331ce7604f3a5';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09_openj9-0.20.0/OpenJDK8U-jdk_x64_linux_openj9_8u252b09_openj9-0.20.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:43:50 GMT
+# Fri, 17 Jul 2020 22:19:26 GMT
+RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 17 Jul 2020 22:23:30 GMT
+ENV JAVA_VERSION=jdk8u262-b10_openj9-0.21.0
+# Fri, 17 Jul 2020 22:23:50 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='8659c84c5c5d94ffed4789f06f2be401e59020b83e95fd45e71992f425483a13';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_ppc64le_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='37fe91840b1d8fa98bc6a859ef29b28e0b2187cd926c9d58743f7022640f8d8e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_s390x_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='bdeab95a04462ae48df1dc1c53c833f86bfa34bd3a86c65c7adad7c096a1dbce';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_x64_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 17 Jul 2020 22:24:00 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:43:53 GMT
+# Fri, 17 Jul 2020 22:24:04 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Tue, 07 Jul 2020 04:12:15 GMT
+# Fri, 17 Jul 2020 23:18:39 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Tue, 07 Jul 2020 04:12:18 GMT
+# Fri, 17 Jul 2020 23:18:45 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jul 2020 04:12:25 GMT
+# Fri, 17 Jul 2020 23:19:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Tue, 07 Jul 2020 04:12:30 GMT
+# Fri, 17 Jul 2020 23:19:15 GMT
 WORKDIR /usr/local/tomcat
-# Tue, 07 Jul 2020 04:12:32 GMT
+# Fri, 17 Jul 2020 23:19:23 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Tue, 07 Jul 2020 04:12:36 GMT
+# Fri, 17 Jul 2020 23:19:30 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Tue, 07 Jul 2020 05:01:21 GMT
+# Sat, 18 Jul 2020 00:11:54 GMT
 ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
-# Tue, 07 Jul 2020 05:23:46 GMT
+# Sat, 18 Jul 2020 00:27:00 GMT
 ENV TOMCAT_MAJOR=7
-# Wed, 08 Jul 2020 19:04:56 GMT
+# Sat, 18 Jul 2020 00:27:05 GMT
 ENV TOMCAT_VERSION=7.0.105
-# Wed, 08 Jul 2020 19:05:03 GMT
+# Sat, 18 Jul 2020 00:27:13 GMT
 ENV TOMCAT_SHA512=3760fe510fbe2e3fcc1e5533b293b98c73458467277c59b04961330f0695bdccd35131b3b1112a3022a0ca7467ac916e99ca869758db1ac2d9c759ca1d6f33d0
-# Wed, 08 Jul 2020 19:13:33 GMT
+# Sat, 18 Jul 2020 00:32:45 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg dirmngr 		wget ca-certificates 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if wget -O "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes; 		make -j "$(nproc)"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work
-# Wed, 08 Jul 2020 19:13:50 GMT
+# Sat, 18 Jul 2020 00:33:03 GMT
 RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')" 	&& nativeLines="$(echo "$nativeLines" | sort -u)" 	&& if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Wed, 08 Jul 2020 19:13:51 GMT
+# Sat, 18 Jul 2020 00:33:05 GMT
 EXPOSE 8080
-# Wed, 08 Jul 2020 19:13:56 GMT
+# Sat, 18 Jul 2020 00:33:06 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -197,25 +197,25 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
 		Size: 186.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7dcc71ac4e1ced322a5c6d8dafe5b92903b9216fd4165e504dc8c51bfd7899`  
-		Last Modified: Mon, 06 Jul 2020 23:51:26 GMT  
-		Size: 14.0 MB (13956242 bytes)  
+	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
+		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
+		Size: 14.5 MB (14519008 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b55c6a5591560a6c659c5dad34c4e26a0eecfff0b784cf46f3d356708fc9521`  
-		Last Modified: Mon, 06 Jul 2020 23:55:06 GMT  
-		Size: 115.4 MB (115436704 bytes)  
+	-	`sha256:d9d28395c2dc02ea1cdf645a684d1e24bbfd047f79d33f0346f0ce41b2d503f1`  
+		Last Modified: Fri, 17 Jul 2020 22:32:04 GMT  
+		Size: 116.0 MB (115954254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d7d8df692f52b3a238032536b871ef5b30b77d28641468c592d886337056b7f9`  
-		Last Modified: Tue, 07 Jul 2020 05:34:22 GMT  
-		Size: 173.0 B  
+	-	`sha256:fbeceb9ca8597357c8f118e600dac8fb7bfb11dfb3005132ee24c576f0d7d1d5`  
+		Last Modified: Sat, 18 Jul 2020 00:35:05 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad6e827c684c81926895844ead384c42c59eb0dc9a21519f530e29c75024f178`  
-		Last Modified: Wed, 08 Jul 2020 19:15:39 GMT  
-		Size: 16.6 MB (16622872 bytes)  
+	-	`sha256:b7a117b88b17a2f87838984e32d19fc2ed7fecdcbfcab2a3693cf46aa3dec16e`  
+		Last Modified: Sat, 18 Jul 2020 00:38:20 GMT  
+		Size: 16.7 MB (16737877 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8281ac254180a0590bb2db14b0baa81ca5cd2688888bdddd7687833173f0cf60`  
-		Last Modified: Wed, 08 Jul 2020 19:15:38 GMT  
-		Size: 222.0 B  
+	-	`sha256:f89b54391e2684846cbfc12cb43ece2a2b67f9023f51e2b24f9ffcd64c111ecf`  
+		Last Modified: Sat, 18 Jul 2020 00:38:16 GMT  
+		Size: 219.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `tomcat:7-jdk8-adoptopenjdk-openj9` - linux; s390x
