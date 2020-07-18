@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e897994058a98b629ec898a286f5768b9e5bf542199de402935bf1c87f0f6936`
-- Created: `2020-06-24T20:24:23.963582336Z`
-- Virtual Size: ~ 508.14 Mb  
+- Image ID: `sha256:df8ab359678347899eecf988d2044a264f1a01ede0d2b9f09c0f65c719df3089`
+- Created: `2020-07-17T03:18:24.27919856Z`
+- Virtual Size: ~ 521.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/jetty/bin:/usr/java/openjdk-14/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.UTF-8`
   - `JAVA_HOME=/usr/java/openjdk-14`
-  - `JAVA_VERSION=14.0.1`
+  - `JAVA_VERSION=14.0.2`
   - `JETTY_VERSION=9.4.30.v20200611`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
@@ -78,15 +78,15 @@ $ yumdownloader --quiet --source --urls bzip2-libs-1.0.6-13.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/bzip2-1.0.6-13.el7.src.rpm
 ```
 
-### `rpm` package: `ca-certificates-2019.2.32-76.el7_7.noarch`
+### `rpm` package: `ca-certificates-2020.2.41-70.0.el7_8.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls ca-certificates-2019.2.32-76.el7_7.noarch
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/ca-certificates-2019.2.32-76.el7_7.src.rpm
+$ yumdownloader --quiet --source --urls ca-certificates-2020.2.41-70.0.el7_8.noarch
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/ca-certificates-2020.2.41-70.0.el7_8.src.rpm
 ```
 
 ### `rpm` package: `chkconfig-1.7.4-1.el7.x86_64`
@@ -887,15 +887,15 @@ $ yumdownloader --quiet --source --urls oraclelinux-release-7.8-1.0.7.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/oraclelinux-release-7.8-1.0.7.el7.src.rpm
 ```
 
-### `rpm` package: `oraclelinux-release-el7-1.0-11.el7.x86_64`
+### `rpm` package: `oraclelinux-release-el7-1.0-12.1.el7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls oraclelinux-release-el7-1.0-11.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/oraclelinux-release-el7-1.0-11.el7.src.rpm
+$ yumdownloader --quiet --source --urls oraclelinux-release-el7-1.0-12.1.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/oraclelinux-release-el7-1.0-12.1.el7.src.rpm
 ```
 
 ### `rpm` package: `p11-kit-0.23.5-3.el7.x86_64`
