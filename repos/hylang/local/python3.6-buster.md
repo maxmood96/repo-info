@@ -1,10 +1,10 @@
-# `hylang:0.18.0-python3.6-buster`
+# `hylang:0.19.0-python3.6-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ed2fc63a3d9fde3fe8ce001035f6ec17334f65c06c51e4471a28260790712c3e`
-- Created: `2020-06-30T20:51:24.043831362Z`
-- Virtual Size: ~ 158.42 Mb  
+- Image ID: `sha256:69ab4ae0d38b8f69889ee10bb80874bdbba8d6b6f384f7f2f8f1bef6629bfd83`
+- Created: `2020-07-16T22:21:51.798869656Z`
+- Virtual Size: ~ 158.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -16,7 +16,7 @@
   - `PYTHON_PIP_VERSION=20.1.1`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/eff16c878c7fd6b688b9b4c4267695cf1a0bf01b/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=b3153ec0cf7b7bbf9556932aa37e4981c35dc2a2c501d70d91d2795aa532be79`
-  - `HY_VERSION=0.18.0`
+  - `HY_VERSION=0.19.0`
 
 ## `dpkg` (`.deb`-based packages)
 
