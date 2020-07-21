@@ -279,20 +279,13 @@ Licenses: (parsed from: `/usr/share/doc/libbrotli1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris brotli=1.0.7-6.1
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.0.7-6.1.dsc' brotli_1.0.7-6.1.dsc 2300 SHA256:c67ed3b56c0fd15f4b2e407aa775305f35c609349f40a5159e049e132981a946
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.0.7.orig.tar.gz' brotli_1.0.7.orig.tar.gz 23827908 SHA256:4c61bfb0faca87219ea587326c467b95acb25555b53d1a421ffa3c8a9296ee2c
-'http://deb.debian.org/debian/pool/main/b/brotli/brotli_1.0.7-6.1.debian.tar.xz' brotli_1.0.7-6.1.debian.tar.xz 4460 SHA256:4a1a47922f8c92d7cd98bfd7ff3597247f808a14c5b792500413e6ba68f4d6d0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/brotli/1.0.7-6.1/
 
-- https://sources.debian.net/src/brotli/1.0.7-6.1/ (for browsing the source)
-- https://sources.debian.net/src/brotli/1.0.7-6.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/brotli/1.0.7-6.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.8-3`
 
