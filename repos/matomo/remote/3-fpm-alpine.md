@@ -1,7 +1,7 @@
 ## `matomo:3-fpm-alpine`
 
 ```console
-$ docker pull matomo@sha256:7114107c9e4ae4591e9acbacc0058ed8187cc09601b0d01caab123a745c00dea
+$ docker pull matomo@sha256:77ada18154cd522467053063fe0750e977ebced4563e22f3ece32cfcc5e23175
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull matomo@sha256:7114107c9e4ae4591e9acbacc0058ed8187cc09601b0d01caab1
 ### `matomo:3-fpm-alpine` - linux; amd64
 
 ```console
-$ docker pull matomo@sha256:8b01415fe53216c5ceb05a592e536761d2c401ba5e29c4d57ef278876341f6dc
+$ docker pull matomo@sha256:d222724e864aaca61ddf3e9b42de78ac69ce0f58da3c28f8e201e93fb10c0fad
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.5 MB (50518418 bytes)**  
+-	Total Size: **50.5 MB (50547494 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b8d7860b36a9714533b937140d46d66dd1e625c3c9a24a4b0414f75065ae3412`
+-	Image ID: `sha256:a563e2c3f19e39fa2c14bced5773a8f6c216ce2be24b66755fbccf22fcd031b7`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -83,23 +83,23 @@ EXPOSE 9000
 CMD ["php-fpm"]
 # Fri, 10 Jul 2020 06:51:03 GMT
 LABEL maintainer=pierre@piwik.org
-# Fri, 10 Jul 2020 06:52:32 GMT
-RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		freetype-dev 		icu-dev 		libjpeg-turbo-dev 		libpng-dev 		libzip-dev 		openldap-dev 		pcre-dev 	; 		docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		gd 		ldap 		mysqli 		opcache 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.18; 	pecl install redis-4.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .matomo-phpext-rundeps $runDeps; 	apk del .build-deps
-# Fri, 10 Jul 2020 06:52:33 GMT
+# Mon, 20 Jul 2020 23:24:34 GMT
+RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		freetype-dev 		icu-dev 		libjpeg-turbo-dev 		libpng-dev 		libzip-dev 		openldap-dev 		pcre-dev 	; 		docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		gd 		ldap 		mysqli 		opcache 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.18; 	pecl install redis-5.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .matomo-phpext-rundeps $runDeps; 	apk del .build-deps
+# Mon, 20 Jul 2020 23:24:35 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Fri, 10 Jul 2020 06:52:33 GMT
-ENV MATOMO_VERSION=3.13.6
-# Fri, 10 Jul 2020 06:52:41 GMT
+# Mon, 20 Jul 2020 23:24:35 GMT
+ENV MATOMO_VERSION=3.14.0
+# Mon, 20 Jul 2020 23:24:42 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apk del .fetch-deps
-# Fri, 10 Jul 2020 06:52:42 GMT
+# Mon, 20 Jul 2020 23:24:42 GMT
 COPY file:5a36d7fba12e383595e7235267e54c5714dbf865acd4c4596c92ac0f17d139b3 in /usr/local/etc/php/conf.d/php-matomo.ini 
-# Fri, 10 Jul 2020 06:52:42 GMT
+# Mon, 20 Jul 2020 23:24:42 GMT
 COPY file:5a7e05d095f2d5d960fd43fac9e7317ffe1cd3fb9251933251a337b583272d45 in /entrypoint.sh 
-# Fri, 10 Jul 2020 06:52:42 GMT
+# Mon, 20 Jul 2020 23:24:42 GMT
 VOLUME [/var/www/html]
-# Fri, 10 Jul 2020 06:52:42 GMT
+# Mon, 20 Jul 2020 23:24:43 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 10 Jul 2020 06:52:42 GMT
+# Mon, 20 Jul 2020 23:24:43 GMT
 CMD ["php-fpm"]
 ```
 
@@ -144,38 +144,38 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 10 Jul 2020 04:26:53 GMT  
 		Size: 8.4 KB (8444 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8de6fe52e77d465d74dbe8c05ae4368e2e954c773decbf1c1add96e9ad750632`  
-		Last Modified: Fri, 10 Jul 2020 06:53:37 GMT  
-		Size: 6.3 MB (6272582 bytes)  
+	-	`sha256:8951fbfc4e82bd9837f5aef7e36555a330f87725de2aede22770066c93d62b11`  
+		Last Modified: Mon, 20 Jul 2020 23:25:17 GMT  
+		Size: 6.4 MB (6395661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e4ce7e48a425619f407fc23665a6d22739477ad8f52055c149b938f64fcb325`  
-		Last Modified: Fri, 10 Jul 2020 06:53:36 GMT  
-		Size: 324.0 B  
+	-	`sha256:b5d028ede0dd9038a73da3b515ab49e80392f9c9818c6e1aeaab86513c5ee156`  
+		Last Modified: Mon, 20 Jul 2020 23:25:15 GMT  
+		Size: 326.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d12b68f46eaf212ecc3044873958408252830b60ccdb1e2334f257b3a2290f62`  
-		Last Modified: Fri, 10 Jul 2020 06:53:39 GMT  
-		Size: 15.1 MB (15146564 bytes)  
+	-	`sha256:6fca091065200af89afddb1304acb715e400d709e0e6141be9bd51d9c43498bd`  
+		Last Modified: Mon, 20 Jul 2020 23:25:20 GMT  
+		Size: 15.1 MB (15052556 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43d35f5c323526b2637292b6415f7dea807dc8e74b6a0ba39094010a172888e5`  
-		Last Modified: Fri, 10 Jul 2020 06:53:36 GMT  
-		Size: 304.0 B  
+	-	`sha256:423fe2e5463fb2e18dde0a9cddb6f7731f307151976809fe066f61c1f5a33511`  
+		Last Modified: Mon, 20 Jul 2020 23:25:15 GMT  
+		Size: 306.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56641c659bcaeee07fe7be946e8d70b7b751595a884ad496c8faac1595c45810`  
-		Last Modified: Fri, 10 Jul 2020 06:53:36 GMT  
-		Size: 222.0 B  
+	-	`sha256:bb4bf44af6c0b093db396056fd19ebed2c107deb5d0bfee3173b48b46bd4276f`  
+		Last Modified: Mon, 20 Jul 2020 23:25:16 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `matomo:3-fpm-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull matomo@sha256:ae8ffa4801e6f4c8444fa09ed4d911992dd6d3b6b6e9b224edabd943ad84cd73
+$ docker pull matomo@sha256:dccdaece35d1b4e067e6d8ce03aed6728de6b83cae936337d0452c5639e384af
 ```
 
 -	Docker Version: 18.09.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **48.9 MB (48913051 bytes)**  
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **48.9 MB (48948579 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `598b54d78f9e8fd8e3f8ce6a15d1bf02856a58c4c11bb0bc2901666e87b291b1`
+-	Image ID: `sha256:88a177686c1c3ea1314d929b75c6daf8ce4e1d46fbdab14389649735f743268f`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -234,103 +234,99 @@ EXPOSE 9000
 CMD ["php-fpm"]
 # Fri, 10 Jul 2020 00:02:55 GMT
 LABEL maintainer=pierre@piwik.org
-# Fri, 10 Jul 2020 00:05:16 GMT
-RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		freetype-dev 		icu-dev 		libjpeg-turbo-dev 		libpng-dev 		libzip-dev 		openldap-dev 		pcre-dev 	; 		docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		gd 		ldap 		mysqli 		opcache 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.18; 	pecl install redis-4.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .matomo-phpext-rundeps $runDeps; 	apk del .build-deps
-# Fri, 10 Jul 2020 00:05:18 GMT
+# Mon, 20 Jul 2020 23:14:44 GMT
+RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		freetype-dev 		icu-dev 		libjpeg-turbo-dev 		libpng-dev 		libzip-dev 		openldap-dev 		pcre-dev 	; 		docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		gd 		ldap 		mysqli 		opcache 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.18; 	pecl install redis-5.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .matomo-phpext-rundeps $runDeps; 	apk del .build-deps
+# Mon, 20 Jul 2020 23:14:59 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Fri, 10 Jul 2020 00:05:18 GMT
-ENV MATOMO_VERSION=3.13.6
-# Fri, 10 Jul 2020 00:05:31 GMT
+# Mon, 20 Jul 2020 23:15:06 GMT
+ENV MATOMO_VERSION=3.14.0
+# Mon, 20 Jul 2020 23:15:43 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apk del .fetch-deps
-# Fri, 10 Jul 2020 00:05:33 GMT
+# Mon, 20 Jul 2020 23:15:52 GMT
 COPY file:5a36d7fba12e383595e7235267e54c5714dbf865acd4c4596c92ac0f17d139b3 in /usr/local/etc/php/conf.d/php-matomo.ini 
-# Fri, 10 Jul 2020 00:05:34 GMT
+# Mon, 20 Jul 2020 23:15:58 GMT
 COPY file:5a7e05d095f2d5d960fd43fac9e7317ffe1cd3fb9251933251a337b583272d45 in /entrypoint.sh 
-# Fri, 10 Jul 2020 00:05:34 GMT
+# Mon, 20 Jul 2020 23:16:03 GMT
 VOLUME [/var/www/html]
-# Fri, 10 Jul 2020 00:05:36 GMT
+# Mon, 20 Jul 2020 23:16:08 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 10 Jul 2020 00:05:37 GMT
-RUN ["\/bin\/sh","-c","#(nop) ","CMD [\"php-fpm\"]"]
+# Mon, 20 Jul 2020 23:16:24 GMT
+CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B  
-		MIME: application/octet-stream
-	-	`sha256:eb21ca7f238a7ed0a44329215c249a5154bf7591b5afc589d32fc2148860dd09`  
-		Last Modified: Fri, 10 Jul 2020 00:05:49 GMT  
-		Size: 222.0 B  
-		MIME: application/octet-stream
-	-	`sha256:88205125acecae31b0416b1b3a9e0f6c9b0d8efeef9dcfb5483200217c7f2416`  
-		Last Modified: Fri, 10 Jul 2020 00:05:51 GMT  
-		Size: 303.0 B  
-		MIME: application/octet-stream
-	-	`sha256:11b691778fb938fbeecfc137001dd0be06e699c6ede58341038ebedb876a33da`  
-		Last Modified: Fri, 10 Jul 2020 00:05:57 GMT  
-		Size: 15.1 MB (15146638 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:fd716dc1884a32a50ab6b0206a5c5ba4b8415a9a9756067ac74d599ecb14e0a1`  
-		Last Modified: Fri, 10 Jul 2020 00:05:50 GMT  
-		Size: 325.0 B  
-		MIME: application/octet-stream
-	-	`sha256:c0ce2b515e5fcf61d101298774daf8af733dcd660f395a34ea2d797bea7c8a7a`  
-		Last Modified: Fri, 10 Jul 2020 00:05:51 GMT  
-		Size: 5.9 MB (5871795 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:9f942efad8fc99881b88aaa6cd43772f94a6dc680282c1ab4974c15870b75be4`  
-		Last Modified: Thu, 09 Jul 2020 23:28:48 GMT  
-		Size: 8.4 KB (8444 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:0639886521fe9b4e22f57a6821c4df81ccbf4bda2116e3b7d67cfcbb7b2da97b`  
-		Last Modified: Thu, 09 Jul 2020 23:28:48 GMT  
-		Size: 17.0 KB (16969 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:021f13ae6b063f38953565f2f0b3f748c00e5ba1c27727c992543bc8db0bf071`  
-		Last Modified: Thu, 09 Jul 2020 23:28:48 GMT  
-		Size: 2.3 KB (2273 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:8435c160887680a21b3d2c4828e1232dfebc00cefa561096c944a959968ab4fe`  
-		Last Modified: Thu, 09 Jul 2020 23:28:54 GMT  
-		Size: 13.6 MB (13649630 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:1b0b60ab2c728d0bdd981b1a1636fec1e7940ca9cc36c363d3b249738ad2ea5b`  
-		Last Modified: Thu, 09 Jul 2020 23:28:48 GMT  
-		Size: 498.0 B  
-		MIME: application/octet-stream
-	-	`sha256:3cc164a883cff63fd14486d2c3a72156b5400839d64dfdac65c083a93faec259`  
-		Last Modified: Thu, 09 Jul 2020 23:28:51 GMT  
-		Size: 10.3 MB (10300834 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:6701e05673b745147608cd1b6eb47a3fbc35bcfd8a65bc536e5b9f919b3d0e77`  
-		Last Modified: Thu, 11 Jun 2020 19:29:36 GMT  
-		Size: 268.0 B  
-		MIME: application/octet-stream
-	-	`sha256:10e32d62de43da999aca07cf15fdbe1cd6b03aebc88c15409c3463daadf13e01`  
-		Last Modified: Thu, 11 Jun 2020 19:29:36 GMT  
-		Size: 1.3 KB (1261 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:72788d65e292354c2ce4b67441d334d0ba534db5ce71d5b8bf78011a256b566f`  
-		Last Modified: Thu, 11 Jun 2020 19:29:37 GMT  
-		Size: 1.3 MB (1310273 bytes)  
-		MIME: application/octet-stream
 	-	`sha256:b4b72e716706d29f5d2351709c20bf737b94f876a5472a43ff1b6e203c65d27f`  
 		Last Modified: Fri, 29 May 2020 21:51:30 GMT  
 		Size: 2.6 MB (2603286 bytes)  
-		MIME: application/octet-stream
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:72788d65e292354c2ce4b67441d334d0ba534db5ce71d5b8bf78011a256b566f`  
+		Last Modified: Thu, 11 Jun 2020 19:29:37 GMT  
+		Size: 1.3 MB (1310273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:10e32d62de43da999aca07cf15fdbe1cd6b03aebc88c15409c3463daadf13e01`  
+		Last Modified: Thu, 11 Jun 2020 19:29:36 GMT  
+		Size: 1.3 KB (1261 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6701e05673b745147608cd1b6eb47a3fbc35bcfd8a65bc536e5b9f919b3d0e77`  
+		Last Modified: Thu, 11 Jun 2020 19:29:36 GMT  
+		Size: 268.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3cc164a883cff63fd14486d2c3a72156b5400839d64dfdac65c083a93faec259`  
+		Last Modified: Thu, 09 Jul 2020 23:28:51 GMT  
+		Size: 10.3 MB (10300834 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1b0b60ab2c728d0bdd981b1a1636fec1e7940ca9cc36c363d3b249738ad2ea5b`  
+		Last Modified: Thu, 09 Jul 2020 23:28:48 GMT  
+		Size: 498.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8435c160887680a21b3d2c4828e1232dfebc00cefa561096c944a959968ab4fe`  
+		Last Modified: Thu, 09 Jul 2020 23:28:54 GMT  
+		Size: 13.6 MB (13649630 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:021f13ae6b063f38953565f2f0b3f748c00e5ba1c27727c992543bc8db0bf071`  
+		Last Modified: Thu, 09 Jul 2020 23:28:48 GMT  
+		Size: 2.3 KB (2273 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0639886521fe9b4e22f57a6821c4df81ccbf4bda2116e3b7d67cfcbb7b2da97b`  
+		Last Modified: Thu, 09 Jul 2020 23:28:48 GMT  
+		Size: 17.0 KB (16969 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9f942efad8fc99881b88aaa6cd43772f94a6dc680282c1ab4974c15870b75be4`  
+		Last Modified: Thu, 09 Jul 2020 23:28:48 GMT  
+		Size: 8.4 KB (8444 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b0fa4dadf60de957842342c21a30ab11968044b573d3572b3e4ff711bd3f0a50`  
+		Last Modified: Mon, 20 Jul 2020 23:16:47 GMT  
+		Size: 6.0 MB (6001235 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9afbdeda3b057c12e02719d959f963304db3fd7b7bd772a2ee54012757e4eabd`  
+		Last Modified: Mon, 20 Jul 2020 23:16:44 GMT  
+		Size: 328.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e9100168a195e6b0d8c21bdc49ff243c42569fa2ba8ecb4acddf0b088f578609`  
+		Last Modified: Mon, 20 Jul 2020 23:16:51 GMT  
+		Size: 15.1 MB (15052751 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0d76779dc55204352149277b0a5954de3dff8e86e9d9927b4c19c41eca4878f5`  
+		Last Modified: Mon, 20 Jul 2020 23:16:44 GMT  
+		Size: 306.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d888c8c96494f6af19e6befd6606139ecc1df534ebb746f2c39a39c8035c8880`  
+		Last Modified: Mon, 20 Jul 2020 23:16:44 GMT  
+		Size: 223.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `matomo:3-fpm-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull matomo@sha256:452cd4179de560ab416ea0d44ff472d3e513e08f9fdb0c0485cbd4ccfd7cc7ba
+$ docker pull matomo@sha256:8dff76ac36730768e983fe89f6a1455a1b8f3160143713c577f861e4b969237a
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.6 MB (47637406 bytes)**  
+-	Total Size: **47.7 MB (47675729 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9297e52d368c49cfc911729471852722023c94a3a1f1c90e0c204545d66b0f95`
+-	Image ID: `sha256:3dc31647683d5d6e4ee376249a91242443ce067f33a32b54b051c1bec9f3f2ed`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -389,23 +385,23 @@ EXPOSE 9000
 CMD ["php-fpm"]
 # Fri, 10 Jul 2020 03:36:57 GMT
 LABEL maintainer=pierre@piwik.org
-# Fri, 10 Jul 2020 03:38:57 GMT
-RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		freetype-dev 		icu-dev 		libjpeg-turbo-dev 		libpng-dev 		libzip-dev 		openldap-dev 		pcre-dev 	; 		docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		gd 		ldap 		mysqli 		opcache 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.18; 	pecl install redis-4.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .matomo-phpext-rundeps $runDeps; 	apk del .build-deps
-# Fri, 10 Jul 2020 03:39:00 GMT
+# Mon, 20 Jul 2020 23:57:31 GMT
+RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		freetype-dev 		icu-dev 		libjpeg-turbo-dev 		libpng-dev 		libzip-dev 		openldap-dev 		pcre-dev 	; 		docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		gd 		ldap 		mysqli 		opcache 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.18; 	pecl install redis-5.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .matomo-phpext-rundeps $runDeps; 	apk del .build-deps
+# Mon, 20 Jul 2020 23:57:33 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Fri, 10 Jul 2020 03:39:01 GMT
-ENV MATOMO_VERSION=3.13.6
-# Fri, 10 Jul 2020 03:39:13 GMT
+# Mon, 20 Jul 2020 23:57:34 GMT
+ENV MATOMO_VERSION=3.14.0
+# Mon, 20 Jul 2020 23:57:45 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apk del .fetch-deps
-# Fri, 10 Jul 2020 03:39:15 GMT
+# Mon, 20 Jul 2020 23:57:47 GMT
 COPY file:5a36d7fba12e383595e7235267e54c5714dbf865acd4c4596c92ac0f17d139b3 in /usr/local/etc/php/conf.d/php-matomo.ini 
-# Fri, 10 Jul 2020 03:39:16 GMT
+# Mon, 20 Jul 2020 23:57:48 GMT
 COPY file:5a7e05d095f2d5d960fd43fac9e7317ffe1cd3fb9251933251a337b583272d45 in /entrypoint.sh 
-# Fri, 10 Jul 2020 03:39:17 GMT
+# Mon, 20 Jul 2020 23:57:48 GMT
 VOLUME [/var/www/html]
-# Fri, 10 Jul 2020 03:39:17 GMT
+# Mon, 20 Jul 2020 23:57:49 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 10 Jul 2020 03:39:18 GMT
+# Mon, 20 Jul 2020 23:57:49 GMT
 CMD ["php-fpm"]
 ```
 
@@ -450,38 +446,38 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 10 Jul 2020 01:07:39 GMT  
 		Size: 8.4 KB (8444 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f055503f5d3c86624e22727edf706f6365fbebc7997886a8c10ad6f16ed4f4d1`  
-		Last Modified: Fri, 10 Jul 2020 03:40:19 GMT  
-		Size: 5.8 MB (5774186 bytes)  
+	-	`sha256:45c52e1ae9cd176d13946d5c2dbd8fc7f5f81766f43a9744ade1d7c0e51ae3cb`  
+		Last Modified: Mon, 20 Jul 2020 23:58:47 GMT  
+		Size: 5.9 MB (5906459 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c7b6b110ba4cf19161bd96aa9e6011f73bfcb6b63c666b3e5d690c82054690a`  
-		Last Modified: Fri, 10 Jul 2020 03:40:18 GMT  
-		Size: 326.0 B  
+	-	`sha256:93e490f2ec97462c66cb376f79f53efaec0993c3f5d83412feba48d29e5c607d`  
+		Last Modified: Mon, 20 Jul 2020 23:58:45 GMT  
+		Size: 324.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1237511096c4df5bd51e6118d543dfe0e511fa30bb9ec4373b66e61c195ab829`  
-		Last Modified: Fri, 10 Jul 2020 03:40:24 GMT  
-		Size: 15.1 MB (15146584 bytes)  
+	-	`sha256:5b573fc9a6dbf4ff129b647a3d10789f723087cd440045115b6ac2c6beb353c4`  
+		Last Modified: Mon, 20 Jul 2020 23:58:52 GMT  
+		Size: 15.1 MB (15052631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb1d3f79e441def3ee0e37753f34064f9e143e6f9c80a57125c5aa4509b17fe6`  
-		Last Modified: Fri, 10 Jul 2020 03:40:18 GMT  
-		Size: 302.0 B  
+	-	`sha256:9fb91f0c48500a61e433ba7c4c1c0c2b04c4d86dd4ad62b42e53c7f79f38e43e`  
+		Last Modified: Mon, 20 Jul 2020 23:58:45 GMT  
+		Size: 305.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b96a24e7b549f12c64f0788e71b9d182db98ee734fd7a35390c42734c105a8c`  
-		Last Modified: Fri, 10 Jul 2020 03:40:18 GMT  
-		Size: 221.0 B  
+	-	`sha256:34d44715f79463f12515a3b9a9a0d0a8246571087e68cad676d3cc2ebfc28a01`  
+		Last Modified: Mon, 20 Jul 2020 23:58:45 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `matomo:3-fpm-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull matomo@sha256:ebc5b9d83906d2fae40dd483fda25758cf9384fd759a9e12b7fa762fe6d1a4a2
+$ docker pull matomo@sha256:c013533099a6608cf07d2577abd60d5069039f7a4acdf20a4c0d7fc9db8456be
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.2 MB (50219456 bytes)**  
+-	Total Size: **50.3 MB (50255506 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1271c0606865f3f8a3342b41d0d3f0bd64ee10d71f43e1ce2fd455fdb791216c`
+-	Image ID: `sha256:8870a3a001ec9ec500bc5a1bb9af5ac7bea67cc05daaf6bfddaa4b892770c87c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -540,23 +536,23 @@ EXPOSE 9000
 CMD ["php-fpm"]
 # Fri, 10 Jul 2020 04:58:57 GMT
 LABEL maintainer=pierre@piwik.org
-# Fri, 10 Jul 2020 05:01:05 GMT
-RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		freetype-dev 		icu-dev 		libjpeg-turbo-dev 		libpng-dev 		libzip-dev 		openldap-dev 		pcre-dev 	; 		docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		gd 		ldap 		mysqli 		opcache 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.18; 	pecl install redis-4.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .matomo-phpext-rundeps $runDeps; 	apk del .build-deps
-# Fri, 10 Jul 2020 05:01:11 GMT
+# Mon, 20 Jul 2020 23:21:31 GMT
+RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		freetype-dev 		icu-dev 		libjpeg-turbo-dev 		libpng-dev 		libzip-dev 		openldap-dev 		pcre-dev 	; 		docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		gd 		ldap 		mysqli 		opcache 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.18; 	pecl install redis-5.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .matomo-phpext-rundeps $runDeps; 	apk del .build-deps
+# Mon, 20 Jul 2020 23:21:50 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Fri, 10 Jul 2020 05:01:12 GMT
-ENV MATOMO_VERSION=3.13.6
-# Fri, 10 Jul 2020 05:01:22 GMT
+# Mon, 20 Jul 2020 23:21:54 GMT
+ENV MATOMO_VERSION=3.14.0
+# Mon, 20 Jul 2020 23:22:10 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apk del .fetch-deps
-# Fri, 10 Jul 2020 05:01:24 GMT
+# Mon, 20 Jul 2020 23:22:13 GMT
 COPY file:5a36d7fba12e383595e7235267e54c5714dbf865acd4c4596c92ac0f17d139b3 in /usr/local/etc/php/conf.d/php-matomo.ini 
-# Fri, 10 Jul 2020 05:01:25 GMT
+# Mon, 20 Jul 2020 23:22:14 GMT
 COPY file:5a7e05d095f2d5d960fd43fac9e7317ffe1cd3fb9251933251a337b583272d45 in /entrypoint.sh 
-# Fri, 10 Jul 2020 05:01:26 GMT
+# Mon, 20 Jul 2020 23:22:15 GMT
 VOLUME [/var/www/html]
-# Fri, 10 Jul 2020 05:01:26 GMT
+# Mon, 20 Jul 2020 23:22:16 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 10 Jul 2020 05:01:28 GMT
+# Mon, 20 Jul 2020 23:22:17 GMT
 CMD ["php-fpm"]
 ```
 
@@ -601,38 +597,38 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 10 Jul 2020 02:07:09 GMT  
 		Size: 8.4 KB (8444 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61dc4f8c24b0de6f0ef732d274a263f355bd2e3d2058e43ab825b906a215d773`  
-		Last Modified: Fri, 10 Jul 2020 05:02:37 GMT  
-		Size: 6.2 MB (6243185 bytes)  
+	-	`sha256:d27c01bc741df90477e0118664f5934c878ad436c46703fb4c88ec6b9cf3288f`  
+		Last Modified: Mon, 20 Jul 2020 23:23:37 GMT  
+		Size: 6.4 MB (6373076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:065919cd91ac5ede77622abd420d56db27a3f206e1abeee47fe9f69f9a03fd1d`  
-		Last Modified: Fri, 10 Jul 2020 05:02:32 GMT  
-		Size: 326.0 B  
+	-	`sha256:a4a0adfb9aa30543e870ed72b53e53f152edf82f45a1ceb80cc0eb430eb954cd`  
+		Last Modified: Mon, 20 Jul 2020 23:23:33 GMT  
+		Size: 328.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1bf666ac40cd8dd0fe0d48ed45c5e612fb0095348d45f02b9b454020ac7416f6`  
-		Last Modified: Fri, 10 Jul 2020 05:02:38 GMT  
-		Size: 15.1 MB (15146640 bytes)  
+	-	`sha256:845647a4977ea5f041e178818c6d469613fa8ac24afb12312909db026405df06`  
+		Last Modified: Mon, 20 Jul 2020 23:23:40 GMT  
+		Size: 15.1 MB (15052795 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6db6b28940c8f7ada00dfb246f1f00ea95e3e4c35a8724b7aa7f6782d60cf5a7`  
-		Last Modified: Fri, 10 Jul 2020 05:02:32 GMT  
-		Size: 303.0 B  
+	-	`sha256:b9a2d66169d4ac75f5b4c7376f767c8eea89ce645fb59ccdf5594058757afb33`  
+		Last Modified: Mon, 20 Jul 2020 23:23:34 GMT  
+		Size: 305.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14bf843adc87929af31e6613644d5f7c17ff9a64151e1ae5d8f2843d671bc731`  
-		Last Modified: Fri, 10 Jul 2020 05:02:32 GMT  
+	-	`sha256:c62f2e284c0e7105b29b5af9bd7b8d0ec68d4a8bb9f33205105ee680248c4479`  
+		Last Modified: Mon, 20 Jul 2020 23:23:33 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `matomo:3-fpm-alpine` - linux; 386
 
 ```console
-$ docker pull matomo@sha256:7a9c1e0a653f1ebdbd3305538011595bc59821ba22ec631de1ba90fb8b74af27
+$ docker pull matomo@sha256:8905abff922d1ee7d302e58995e742f5daab636079ca6b8e91ce9bdb8770a875
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.1 MB (51100579 bytes)**  
+-	Total Size: **51.1 MB (51136218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c1650e227d27e96ff9103a923764c26de75f216ac0d5510843be8640db0a6fd8`
+-	Image ID: `sha256:78a805cd461df8092a98e23665d1274a9d792b9662172ba88bc176132fb3e78c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -691,23 +687,23 @@ EXPOSE 9000
 CMD ["php-fpm"]
 # Fri, 10 Jul 2020 06:15:14 GMT
 LABEL maintainer=pierre@piwik.org
-# Fri, 10 Jul 2020 06:16:49 GMT
-RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		freetype-dev 		icu-dev 		libjpeg-turbo-dev 		libpng-dev 		libzip-dev 		openldap-dev 		pcre-dev 	; 		docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		gd 		ldap 		mysqli 		opcache 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.18; 	pecl install redis-4.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .matomo-phpext-rundeps $runDeps; 	apk del .build-deps
-# Fri, 10 Jul 2020 06:16:50 GMT
+# Mon, 20 Jul 2020 22:53:45 GMT
+RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		freetype-dev 		icu-dev 		libjpeg-turbo-dev 		libpng-dev 		libzip-dev 		openldap-dev 		pcre-dev 	; 		docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		gd 		ldap 		mysqli 		opcache 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.18; 	pecl install redis-5.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .matomo-phpext-rundeps $runDeps; 	apk del .build-deps
+# Mon, 20 Jul 2020 22:53:46 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Fri, 10 Jul 2020 06:16:51 GMT
-ENV MATOMO_VERSION=3.13.6
-# Fri, 10 Jul 2020 06:16:58 GMT
+# Mon, 20 Jul 2020 22:53:46 GMT
+ENV MATOMO_VERSION=3.14.0
+# Mon, 20 Jul 2020 22:53:53 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apk del .fetch-deps
-# Fri, 10 Jul 2020 06:16:59 GMT
+# Mon, 20 Jul 2020 22:53:54 GMT
 COPY file:5a36d7fba12e383595e7235267e54c5714dbf865acd4c4596c92ac0f17d139b3 in /usr/local/etc/php/conf.d/php-matomo.ini 
-# Fri, 10 Jul 2020 06:16:59 GMT
+# Mon, 20 Jul 2020 22:53:54 GMT
 COPY file:5a7e05d095f2d5d960fd43fac9e7317ffe1cd3fb9251933251a337b583272d45 in /entrypoint.sh 
-# Fri, 10 Jul 2020 06:16:59 GMT
+# Mon, 20 Jul 2020 22:53:54 GMT
 VOLUME [/var/www/html]
-# Fri, 10 Jul 2020 06:17:00 GMT
+# Mon, 20 Jul 2020 22:53:54 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 10 Jul 2020 06:17:00 GMT
+# Mon, 20 Jul 2020 22:53:55 GMT
 CMD ["php-fpm"]
 ```
 
@@ -752,38 +748,38 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 10 Jul 2020 05:07:03 GMT  
 		Size: 8.4 KB (8444 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f1ce1596ee562fd85e2820bf0c24af0c42c20dc59e52cb672d631ba3ec4020f`  
-		Last Modified: Fri, 10 Jul 2020 06:17:52 GMT  
-		Size: 6.4 MB (6374872 bytes)  
+	-	`sha256:849f5e6f1a02c8806103a5145fb9ab7491d9cdc7bb702955b9e4ec56066f2630`  
+		Last Modified: Mon, 20 Jul 2020 22:54:38 GMT  
+		Size: 6.5 MB (6504502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17e60937fddf5f59a988a1b2b31f95576eec8d81d1e3128855ce28a6021c2c94`  
-		Last Modified: Fri, 10 Jul 2020 06:17:51 GMT  
-		Size: 325.0 B  
+	-	`sha256:87d3adb032c23fda15d31fae46871e05a8155d3ca28dce495a87152e15ce5147`  
+		Last Modified: Mon, 20 Jul 2020 22:54:37 GMT  
+		Size: 326.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfcef81d323abf8bb99bc4c356d9b27c495c434671934e115034ec0173257be0`  
-		Last Modified: Fri, 10 Jul 2020 06:17:56 GMT  
-		Size: 15.1 MB (15146534 bytes)  
+	-	`sha256:1a615c0e1bc1fba412712c3fe67f3adf354f92937c212ecd68fd637906b03775`  
+		Last Modified: Mon, 20 Jul 2020 22:54:43 GMT  
+		Size: 15.1 MB (15052544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:986a9fd268dbded473d5fa8700ece8e57643117765f05a6c37bada28bb2ec7ee`  
-		Last Modified: Fri, 10 Jul 2020 06:17:51 GMT  
-		Size: 306.0 B  
+	-	`sha256:749720e86320649d6d1e2a5a683f8e26d5ba7038d4e53ee6bf6260c1a8eaec1d`  
+		Last Modified: Mon, 20 Jul 2020 22:54:37 GMT  
+		Size: 304.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28bb0e34241355674e8897434aec55bbbce979d6070bb74922cc2be201d88eb9`  
-		Last Modified: Fri, 10 Jul 2020 06:17:51 GMT  
+	-	`sha256:5d8920e85ec8fb58ec2b0095652b10a4d96d5ee113320b72775afd433e056db4`  
+		Last Modified: Mon, 20 Jul 2020 22:54:37 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `matomo:3-fpm-alpine` - linux; ppc64le
 
 ```console
-$ docker pull matomo@sha256:839771d8d5e057e9b7ff3fdd024ddc4ac6e0c659cb7175b7b0884abfa05b3449
+$ docker pull matomo@sha256:75d3be0508586a6ab556e5ca33ffaa40e4f3bd39edb113930be3efe1bdb558dc
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.7 MB (51660276 bytes)**  
+-	Total Size: **51.7 MB (51701170 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:efb3ad27123da12db0b094d8d034b96de75576a59f1ac5caecff2e86a0f386ee`
+-	Image ID: `sha256:f88011b79f4a54b1a318e68173e03a7b46a476102f73a93bbb91aed3e6cc0378`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -842,23 +838,23 @@ EXPOSE 9000
 CMD ["php-fpm"]
 # Fri, 10 Jul 2020 05:30:41 GMT
 LABEL maintainer=pierre@piwik.org
-# Fri, 10 Jul 2020 05:32:34 GMT
-RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		freetype-dev 		icu-dev 		libjpeg-turbo-dev 		libpng-dev 		libzip-dev 		openldap-dev 		pcre-dev 	; 		docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		gd 		ldap 		mysqli 		opcache 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.18; 	pecl install redis-4.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .matomo-phpext-rundeps $runDeps; 	apk del .build-deps
-# Fri, 10 Jul 2020 05:32:42 GMT
+# Mon, 20 Jul 2020 23:31:53 GMT
+RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		freetype-dev 		icu-dev 		libjpeg-turbo-dev 		libpng-dev 		libzip-dev 		openldap-dev 		pcre-dev 	; 		docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		gd 		ldap 		mysqli 		opcache 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.18; 	pecl install redis-5.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .matomo-phpext-rundeps $runDeps; 	apk del .build-deps
+# Mon, 20 Jul 2020 23:32:09 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Fri, 10 Jul 2020 05:32:48 GMT
-ENV MATOMO_VERSION=3.13.6
-# Fri, 10 Jul 2020 05:33:14 GMT
+# Mon, 20 Jul 2020 23:32:13 GMT
+ENV MATOMO_VERSION=3.14.0
+# Mon, 20 Jul 2020 23:32:36 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apk del .fetch-deps
-# Fri, 10 Jul 2020 05:33:19 GMT
+# Mon, 20 Jul 2020 23:32:42 GMT
 COPY file:5a36d7fba12e383595e7235267e54c5714dbf865acd4c4596c92ac0f17d139b3 in /usr/local/etc/php/conf.d/php-matomo.ini 
-# Fri, 10 Jul 2020 05:33:21 GMT
+# Mon, 20 Jul 2020 23:32:44 GMT
 COPY file:5a7e05d095f2d5d960fd43fac9e7317ffe1cd3fb9251933251a337b583272d45 in /entrypoint.sh 
-# Fri, 10 Jul 2020 05:33:23 GMT
+# Mon, 20 Jul 2020 23:32:48 GMT
 VOLUME [/var/www/html]
-# Fri, 10 Jul 2020 05:33:27 GMT
+# Mon, 20 Jul 2020 23:32:53 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 10 Jul 2020 05:33:30 GMT
+# Mon, 20 Jul 2020 23:33:07 GMT
 CMD ["php-fpm"]
 ```
 
@@ -903,38 +899,38 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 10 Jul 2020 03:25:48 GMT  
 		Size: 8.4 KB (8445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12b815dfa7c09164128bd262d07834e1ac2419c6085a79d876c6c39d56d39ab8`  
-		Last Modified: Fri, 10 Jul 2020 05:34:55 GMT  
-		Size: 6.4 MB (6377687 bytes)  
+	-	`sha256:78fb7bbe211b45d0dbb8544a27466b383b1f12f23c4d77bd68d9ac531f2d16d9`  
+		Last Modified: Mon, 20 Jul 2020 23:35:01 GMT  
+		Size: 6.5 MB (6512436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f3565fc2ef08c3dad7d1171c5fc711375b61096d0097acdecedf83c40c5a069`  
-		Last Modified: Fri, 10 Jul 2020 05:34:54 GMT  
-		Size: 326.0 B  
+	-	`sha256:0f40dd9aa9928d8f783255b05b3db80e4ed37a177b88468bc25d3804aa994f90`  
+		Last Modified: Mon, 20 Jul 2020 23:35:00 GMT  
+		Size: 328.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19e0312709407d4f5f95b3b3b64ca4dbc6d6236a2dadb7b2a93da9f08085daf6`  
-		Last Modified: Fri, 10 Jul 2020 05:34:59 GMT  
-		Size: 15.1 MB (15146682 bytes)  
+	-	`sha256:82cfbfcb093eb6e58fd4284a1c2be4d1ccf847851672656976ba8462575f29b1`  
+		Last Modified: Mon, 20 Jul 2020 23:35:05 GMT  
+		Size: 15.1 MB (15052825 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fc3a0cf5991d717039adfe6c0f2ab6d317faae394dd9ce7d39d20122bf686c8`  
-		Last Modified: Fri, 10 Jul 2020 05:34:55 GMT  
-		Size: 306.0 B  
+	-	`sha256:dbaee36408c4918e50493a5ed1325dfb15f95f55d8f647fedae24dce2ac59bd1`  
+		Last Modified: Mon, 20 Jul 2020 23:34:59 GMT  
+		Size: 305.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:48565ab4ef2616696224b24885e2c5546f57da233d27e4594813e7c891e8a7cb`  
-		Last Modified: Fri, 10 Jul 2020 05:34:55 GMT  
-		Size: 222.0 B  
+	-	`sha256:22114e22965476a2586cf050c31c22ecc8191edde5ef6056328e75d58427d8c4`  
+		Last Modified: Mon, 20 Jul 2020 23:34:59 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `matomo:3-fpm-alpine` - linux; s390x
 
 ```console
-$ docker pull matomo@sha256:b7e94ae2e05fee55845338fa65242b1c5fc0d007e012c3552246a9b59d23a422
+$ docker pull matomo@sha256:43f1b5032f79398cf97c568b55a3456b7175be7488bd2ae6960e367c76e9dafe
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.4 MB (49424656 bytes)**  
+-	Total Size: **49.5 MB (49466700 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ed95c415ecc585a307c5c76fb17ea626514fbb79da3766d15060fdb6725f6e7`
+-	Image ID: `sha256:a7d2da913c28e4ecb6353ec58fb9a8ae2f6d1d13ee547a65264f0dee87bd5e0b`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -993,23 +989,23 @@ EXPOSE 9000
 CMD ["php-fpm"]
 # Fri, 10 Jul 2020 02:13:25 GMT
 LABEL maintainer=pierre@piwik.org
-# Fri, 10 Jul 2020 02:14:14 GMT
-RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		freetype-dev 		icu-dev 		libjpeg-turbo-dev 		libpng-dev 		libzip-dev 		openldap-dev 		pcre-dev 	; 		docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		gd 		ldap 		mysqli 		opcache 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.18; 	pecl install redis-4.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .matomo-phpext-rundeps $runDeps; 	apk del .build-deps
-# Fri, 10 Jul 2020 02:14:15 GMT
+# Mon, 20 Jul 2020 22:46:55 GMT
+RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		freetype-dev 		icu-dev 		libjpeg-turbo-dev 		libpng-dev 		libzip-dev 		openldap-dev 		pcre-dev 	; 		docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		gd 		ldap 		mysqli 		opcache 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.18; 	pecl install redis-5.3.0; 		docker-php-ext-enable 		apcu 		redis 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .matomo-phpext-rundeps $runDeps; 	apk del .build-deps
+# Mon, 20 Jul 2020 22:46:56 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Fri, 10 Jul 2020 02:14:15 GMT
-ENV MATOMO_VERSION=3.13.6
-# Fri, 10 Jul 2020 02:14:27 GMT
+# Mon, 20 Jul 2020 22:46:56 GMT
+ENV MATOMO_VERSION=3.14.0
+# Mon, 20 Jul 2020 22:47:02 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apk del .fetch-deps
-# Fri, 10 Jul 2020 02:14:28 GMT
+# Mon, 20 Jul 2020 22:47:04 GMT
 COPY file:5a36d7fba12e383595e7235267e54c5714dbf865acd4c4596c92ac0f17d139b3 in /usr/local/etc/php/conf.d/php-matomo.ini 
-# Fri, 10 Jul 2020 02:14:29 GMT
+# Mon, 20 Jul 2020 22:47:04 GMT
 COPY file:5a7e05d095f2d5d960fd43fac9e7317ffe1cd3fb9251933251a337b583272d45 in /entrypoint.sh 
-# Fri, 10 Jul 2020 02:14:29 GMT
+# Mon, 20 Jul 2020 22:47:04 GMT
 VOLUME [/var/www/html]
-# Fri, 10 Jul 2020 02:14:29 GMT
+# Mon, 20 Jul 2020 22:47:05 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 10 Jul 2020 02:14:29 GMT
+# Mon, 20 Jul 2020 22:47:05 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1054,23 +1050,23 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 10 Jul 2020 00:53:28 GMT  
 		Size: 8.4 KB (8443 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f515cd32926e57afebbd3cfb1d815980ac0ad191a73d0f706e67a8dc61af3da4`  
-		Last Modified: Fri, 10 Jul 2020 02:15:37 GMT  
-		Size: 6.1 MB (6061239 bytes)  
+	-	`sha256:fa4995ddfa0617c4cca6426d9ab36eb08700bc9607b89a7b4337db8c0851835a`  
+		Last Modified: Mon, 20 Jul 2020 22:48:04 GMT  
+		Size: 6.2 MB (6197115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f6e7eeba08e67adb0538f1566ccab83685430b6d6b1bc2f39fe43affa5a6313`  
-		Last Modified: Fri, 10 Jul 2020 02:15:42 GMT  
-		Size: 325.0 B  
+	-	`sha256:b661c74195123139903ec62aa68915dc91827242de72d0122b56fb001e2f4b37`  
+		Last Modified: Mon, 20 Jul 2020 22:48:09 GMT  
+		Size: 326.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a193a439a2a53996c56eea4568f10eca00c700bc5e47805da67bb606c6fd64fb`  
-		Last Modified: Fri, 10 Jul 2020 02:15:44 GMT  
-		Size: 15.1 MB (15146621 bytes)  
+	-	`sha256:6f256f37296f2e4da9911a276be2e1575c0ae8cfe2443def022f175c481ed57d`  
+		Last Modified: Mon, 20 Jul 2020 22:48:11 GMT  
+		Size: 15.1 MB (15052787 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03f2d6e374977fe209ace12a689035ebec72edc6843af2a83ee39719d8b454d2`  
-		Last Modified: Fri, 10 Jul 2020 02:15:37 GMT  
-		Size: 304.0 B  
+	-	`sha256:58bad77a375017d699204f64085df91029602a49c11facfeeab0709740e18475`  
+		Last Modified: Mon, 20 Jul 2020 22:48:19 GMT  
+		Size: 305.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8cf8a4cdf98b753d65a72ad695d4931829f85b93403f9400ffd43b19f5989ff0`  
-		Last Modified: Fri, 10 Jul 2020 02:15:42 GMT  
+	-	`sha256:276e80696998396f280858feb9ee9651f98e40827613f39bf3808c38d61c4f59`  
+		Last Modified: Mon, 20 Jul 2020 22:48:09 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
