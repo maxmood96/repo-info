@@ -4168,9 +4168,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=4.4.0-185.215
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-185.215.dsc' linux_4.4.0-185.215.dsc 11775 SHA256:d5881b528631742332b46dde8fed809e4229fece9c82ba856781bbd27b734d3b
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-185.215.diff.gz' linux_4.4.0-185.215.diff.gz 16527800 SHA256:5505742846b064ceb16c40947d246dfded16d2175d3c0ed475ed0a6009992059
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-185.215.dsc' linux_4.4.0-185.215.dsc 11775 SHA256:d5881b528631742332b46dde8fed809e4229fece9c82ba856781bbd27b734d3b
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-185.215.diff.gz' linux_4.4.0-185.215.diff.gz 16527800 SHA256:5505742846b064ceb16c40947d246dfded16d2175d3c0ed475ed0a6009992059
 ```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
