@@ -1,19 +1,19 @@
-# `redis:6.0.5-alpine`
+# `redis:6.0.6-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b546e82a6d0eceb411b424487643c8d5224cb12a74b6175469991ce2e78c42d1`
-- Created: `2020-06-10T09:47:57.222451055Z`
-- Virtual Size: ~ 31.51 Mb  
+- Image ID: `sha256:c7b388ce3d39eb5558af143a66ab79016e851a2e6cf04ba09100b33e23c4e396`
+- Created: `2020-07-22T01:24:15.540264042Z`
+- Virtual Size: ~ 32.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["redis-server"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `REDIS_VERSION=6.0.5`
-  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.5.tar.gz`
-  - `REDIS_DOWNLOAD_SHA=42cf86a114d2a451b898fcda96acd4d01062a7dbaaad2801d9164a36f898f596`
+  - `REDIS_VERSION=6.0.6`
+  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.6.tar.gz`
+  - `REDIS_DOWNLOAD_SHA=12ad49b163af5ef39466e8d2f7d212a58172116e5b441eebecb4e6ca22363d94`
 
 ## `apk` (`.apk`-based packages)
 
@@ -173,16 +173,16 @@ ISC
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.24-r8 description:
+musl-1.1.24-r9 description:
 the musl c library (libc) implementation
 
-musl-1.1.24-r8 webpage:
+musl-1.1.24-r9 webpage:
 https://musl.libc.org/
 
-musl-1.1.24-r8 installed size:
+musl-1.1.24-r9 installed size:
 614400
 
-musl-1.1.24-r8 license:
+musl-1.1.24-r9 license:
 MIT
 
 ```
