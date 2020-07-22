@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ae4ada44fafb63337456d436fd4a3fc26a0c33ff20728a4cccec68d6b8a3f61c`
-- Created: `2020-07-17T22:27:24.429757471Z`
-- Virtual Size: ~ 35.37 Mb  
+- Image ID: `sha256:0f7b2c18b2ac25fcbedea4a2a2df29bc74f7018779763bedbc78f8f509dcf3f3`
+- Created: `2020-07-22T01:19:13.074834168Z`
+- Virtual Size: ~ 35.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `build-date=20200717`
+  - `build-date=20200721`
   - `name=Photon OS x86_64/3.0 Base Image`
   - `vendor=VMware`
 
@@ -29,13 +29,13 @@ Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `ca-certificates-20190521-1.ph3.x86_64`
+### `rpm` package: `ca-certificates-20190521-2.ph3.x86_64`
 
 Licenses (from `rpm --query`): Custom
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `ca-certificates-pki-20190521-1.ph3.x86_64`
+### `rpm` package: `ca-certificates-pki-20190521-2.ph3.x86_64`
 
 Licenses (from `rpm --query`): Custom
 
