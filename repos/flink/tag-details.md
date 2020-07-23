@@ -21,7 +21,7 @@
 ## `flink:1.10`
 
 ```console
-$ docker pull flink@sha256:886d13fc5aa467ec0072f4ffc26b847d63a71751ec98901edd89b9c2ae921cdf
+$ docker pull flink@sha256:04725ce06bb7f65c972dcd108c10272670e5f322fb239a612e3cf169aade1e9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -31,126 +31,126 @@ $ docker pull flink@sha256:886d13fc5aa467ec0072f4ffc26b847d63a71751ec98901edd89b
 ### `flink:1.10` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:dea7aa34d95968c16481dfa016080b03d77bf9bcb4ee10599dc7d80331b05d36
+$ docker pull flink@sha256:994f4fd306ba46fab72d8d66bdfa08d228846c0dfdbcbb1eba8c6160ee9aa836
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **395.5 MB (395453638 bytes)**  
+-	Total Size: **395.5 MB (395454556 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:037c98deb153f4223bfd1a79a44532a47ff5a7d429cf5e63199e910f73cc1817`
+-	Image ID: `sha256:0e61231ba0e49e000b02810dcdfc4e862e8920bd57c799814e28cfdadfd256bf`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
 ```dockerfile
-# Tue, 09 Jun 2020 01:20:39 GMT
-ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
-# Tue, 09 Jun 2020 01:20:39 GMT
+# Wed, 22 Jul 2020 02:03:16 GMT
+ADD file:89dfd7d3ed77fd5e05f20a0ab631142207ae462f5bbd877f8745d3930c751d87 in / 
+# Wed, 22 Jul 2020 02:03:16 GMT
 CMD ["bash"]
-# Tue, 09 Jun 2020 01:46:35 GMT
+# Wed, 22 Jul 2020 03:00:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 01:46:41 GMT
+# Wed, 22 Jul 2020 03:00:55 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 09 Jun 2020 16:38:01 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 16:38:02 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:21 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Jun 2020 16:39:26 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 16 Jul 2020 22:40:33 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_VERSION=8u262
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_URL_VERSION=8u262b10
-# Thu, 16 Jul 2020 22:40:39 GMT
+# Wed, 22 Jul 2020 22:42:28 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base;   rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 16 Jul 2020 23:02:31 GMT
+# Thu, 23 Jul 2020 08:39:06 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 16 Jul 2020 23:02:59 GMT
+# Thu, 23 Jul 2020 08:40:05 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.10.1/flink-1.10.1-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.10.1/flink-1.10.1-bin-scala_2.12.tgz.asc GPG_KEY=D8D3D42E84C753CA5F170BDF93C07902771AB743 CHECK_GPG=true
-# Thu, 16 Jul 2020 23:02:59 GMT
+# Thu, 23 Jul 2020 08:40:05 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 16 Jul 2020 23:03:00 GMT
+# Thu, 23 Jul 2020 08:40:05 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jul 2020 23:03:00 GMT
+# Thu, 23 Jul 2020 08:40:06 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 16 Jul 2020 23:03:01 GMT
+# Thu, 23 Jul 2020 08:40:06 GMT
 WORKDIR /opt/flink
-# Thu, 16 Jul 2020 23:03:25 GMT
+# Thu, 23 Jul 2020 08:49:03 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 16 Jul 2020 23:03:26 GMT
+# Thu, 23 Jul 2020 08:49:03 GMT
 COPY file:5118b9265b7774ef32131b2cbf42fd9bf26c640be3ebb42b4972a3ae8ed5125e in / 
-# Thu, 16 Jul 2020 23:03:28 GMT
+# Thu, 23 Jul 2020 08:49:04 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 16 Jul 2020 23:03:28 GMT
+# Thu, 23 Jul 2020 08:49:04 GMT
 EXPOSE 6123 8081
-# Thu, 16 Jul 2020 23:03:28 GMT
+# Thu, 23 Jul 2020 08:49:04 GMT
 CMD ["help"]
 ```
 
 -	Layers:
-	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
-		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
-		Size: 50.4 MB (50389504 bytes)  
+	-	`sha256:31dd5ebca5efc5e96a425402fa85e492b02c8fe757dfd3edfdea2a7c67322909`  
+		Last Modified: Wed, 22 Jul 2020 02:09:37 GMT  
+		Size: 50.4 MB (50390325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 7.8 MB (7811709 bytes)  
+	-	`sha256:3ed641c4ae9821ca3c399071ea82ae667237acbcaad1e367c3e1e87fc967834c`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 7.8 MB (7811702 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 10.0 MB (9996168 bytes)  
+	-	`sha256:bcd57146431eae70720cf24877e818256ae1a30b9c1c9e7d0ad093c945ca0af2`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 10.0 MB (9996319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
-		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
-		Size: 5.5 MB (5529317 bytes)  
+	-	`sha256:f49dd46492913ebc75f7ee834a77d90bb0ebf30d78f3aff2a2f2018ad7299f81`  
+		Last Modified: Wed, 22 Jul 2020 22:47:55 GMT  
+		Size: 5.5 MB (5529328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:037cc5cb1b833b9fa2dd445b932781d8863c0d63f6be2b546720f9c84599f56e`  
-		Last Modified: Tue, 09 Jun 2020 16:46:49 GMT  
-		Size: 210.0 B  
+	-	`sha256:f6034d6cdb9bd996e89db23fa6b5e5b3f7a1369a34619c509cd721a7e7d1b66f`  
+		Last Modified: Wed, 22 Jul 2020 22:48:58 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3efdb3316144cd13b6715043917151ecc6d9e3cff047dacd24e967f4cb154e4`  
-		Last Modified: Thu, 16 Jul 2020 22:46:41 GMT  
-		Size: 40.3 MB (40335807 bytes)  
+	-	`sha256:b6de3914f4ed2ccf9a59bdb6cc44ae82c567b75a5d62158936342740dedd4ef2`  
+		Last Modified: Wed, 22 Jul 2020 22:49:04 GMT  
+		Size: 40.3 MB (40335782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf82d2b871adf7352caad81dc2cb27f8b7b3129c2dc2f469ef26169b5a9c2a54`  
-		Last Modified: Thu, 16 Jul 2020 23:04:24 GMT  
-		Size: 531.1 KB (531078 bytes)  
+	-	`sha256:bf65673c35bee6e90f2266e9db0e816a7db9d8023f1117bd8b1037bb8861bb47`  
+		Last Modified: Thu, 23 Jul 2020 08:50:25 GMT  
+		Size: 531.0 KB (531028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ff2e8c5d83fd3247fc6d2f37f8c51f9377eaf914fcb255ec9aff342b16c0b9b`  
-		Last Modified: Thu, 16 Jul 2020 23:04:23 GMT  
-		Size: 900.5 KB (900509 bytes)  
+	-	`sha256:8c6dfaaaa32b9988cb48b3ef404f237d2699c14bbca1e2e9bc5286843f5769cf`  
+		Last Modified: Thu, 23 Jul 2020 08:50:23 GMT  
+		Size: 900.5 KB (900511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d03fe178bf3c57d0d967cd6300eef9f0cda2cd42f77401dccb0596ad3df965b3`  
-		Last Modified: Thu, 16 Jul 2020 23:04:43 GMT  
-		Size: 4.6 KB (4607 bytes)  
+	-	`sha256:751aef50a3d28de7b0b684d09e1777c712ce165888df383258408af7a058e57a`  
+		Last Modified: Thu, 23 Jul 2020 08:50:44 GMT  
+		Size: 4.6 KB (4603 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dcce73d64d7759f1d71eda8705ac66ed96a6ad9f62176ab2258318e9f3622ad2`  
-		Last Modified: Thu, 16 Jul 2020 23:04:44 GMT  
+	-	`sha256:1854777197887c2e2c8160f89996bfcfe2f52f3800b7b76d53153b790a477f2c`  
+		Last Modified: Thu, 23 Jul 2020 08:50:45 GMT  
 		Size: 114.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:73be9df8ebcdefa080b0cd8a051ba7173178bf5ab12be856890d8a386b7dfe79`  
-		Last Modified: Thu, 16 Jul 2020 23:04:58 GMT  
-		Size: 280.0 MB (279952927 bytes)  
+	-	`sha256:c5572b382e19434910482ae074021306c91889e35cc3ee49b0eb5fed95562d9d`  
+		Last Modified: Thu, 23 Jul 2020 08:50:59 GMT  
+		Size: 280.0 MB (279952945 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5dcae6f6206853369e8dbcc410342b1ad17898200cd4484b5518459f8aa7b56f`  
-		Last Modified: Thu, 16 Jul 2020 23:04:43 GMT  
+	-	`sha256:1a7ef3f7e8f3fbdcadb4407f92ea405abe9286e6d2ad11488af368fd843797d3`  
+		Last Modified: Thu, 23 Jul 2020 08:50:44 GMT  
 		Size: 1.7 KB (1688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.10.1`
 
 ```console
-$ docker pull flink@sha256:886d13fc5aa467ec0072f4ffc26b847d63a71751ec98901edd89b9c2ae921cdf
+$ docker pull flink@sha256:04725ce06bb7f65c972dcd108c10272670e5f322fb239a612e3cf169aade1e9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -160,126 +160,126 @@ $ docker pull flink@sha256:886d13fc5aa467ec0072f4ffc26b847d63a71751ec98901edd89b
 ### `flink:1.10.1` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:dea7aa34d95968c16481dfa016080b03d77bf9bcb4ee10599dc7d80331b05d36
+$ docker pull flink@sha256:994f4fd306ba46fab72d8d66bdfa08d228846c0dfdbcbb1eba8c6160ee9aa836
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **395.5 MB (395453638 bytes)**  
+-	Total Size: **395.5 MB (395454556 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:037c98deb153f4223bfd1a79a44532a47ff5a7d429cf5e63199e910f73cc1817`
+-	Image ID: `sha256:0e61231ba0e49e000b02810dcdfc4e862e8920bd57c799814e28cfdadfd256bf`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
 ```dockerfile
-# Tue, 09 Jun 2020 01:20:39 GMT
-ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
-# Tue, 09 Jun 2020 01:20:39 GMT
+# Wed, 22 Jul 2020 02:03:16 GMT
+ADD file:89dfd7d3ed77fd5e05f20a0ab631142207ae462f5bbd877f8745d3930c751d87 in / 
+# Wed, 22 Jul 2020 02:03:16 GMT
 CMD ["bash"]
-# Tue, 09 Jun 2020 01:46:35 GMT
+# Wed, 22 Jul 2020 03:00:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 01:46:41 GMT
+# Wed, 22 Jul 2020 03:00:55 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 09 Jun 2020 16:38:01 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 16:38:02 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:21 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Jun 2020 16:39:26 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 16 Jul 2020 22:40:33 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_VERSION=8u262
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_URL_VERSION=8u262b10
-# Thu, 16 Jul 2020 22:40:39 GMT
+# Wed, 22 Jul 2020 22:42:28 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base;   rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 16 Jul 2020 23:02:31 GMT
+# Thu, 23 Jul 2020 08:39:06 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 16 Jul 2020 23:02:59 GMT
+# Thu, 23 Jul 2020 08:40:05 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.10.1/flink-1.10.1-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.10.1/flink-1.10.1-bin-scala_2.12.tgz.asc GPG_KEY=D8D3D42E84C753CA5F170BDF93C07902771AB743 CHECK_GPG=true
-# Thu, 16 Jul 2020 23:02:59 GMT
+# Thu, 23 Jul 2020 08:40:05 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 16 Jul 2020 23:03:00 GMT
+# Thu, 23 Jul 2020 08:40:05 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jul 2020 23:03:00 GMT
+# Thu, 23 Jul 2020 08:40:06 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 16 Jul 2020 23:03:01 GMT
+# Thu, 23 Jul 2020 08:40:06 GMT
 WORKDIR /opt/flink
-# Thu, 16 Jul 2020 23:03:25 GMT
+# Thu, 23 Jul 2020 08:49:03 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 16 Jul 2020 23:03:26 GMT
+# Thu, 23 Jul 2020 08:49:03 GMT
 COPY file:5118b9265b7774ef32131b2cbf42fd9bf26c640be3ebb42b4972a3ae8ed5125e in / 
-# Thu, 16 Jul 2020 23:03:28 GMT
+# Thu, 23 Jul 2020 08:49:04 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 16 Jul 2020 23:03:28 GMT
+# Thu, 23 Jul 2020 08:49:04 GMT
 EXPOSE 6123 8081
-# Thu, 16 Jul 2020 23:03:28 GMT
+# Thu, 23 Jul 2020 08:49:04 GMT
 CMD ["help"]
 ```
 
 -	Layers:
-	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
-		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
-		Size: 50.4 MB (50389504 bytes)  
+	-	`sha256:31dd5ebca5efc5e96a425402fa85e492b02c8fe757dfd3edfdea2a7c67322909`  
+		Last Modified: Wed, 22 Jul 2020 02:09:37 GMT  
+		Size: 50.4 MB (50390325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 7.8 MB (7811709 bytes)  
+	-	`sha256:3ed641c4ae9821ca3c399071ea82ae667237acbcaad1e367c3e1e87fc967834c`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 7.8 MB (7811702 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 10.0 MB (9996168 bytes)  
+	-	`sha256:bcd57146431eae70720cf24877e818256ae1a30b9c1c9e7d0ad093c945ca0af2`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 10.0 MB (9996319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
-		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
-		Size: 5.5 MB (5529317 bytes)  
+	-	`sha256:f49dd46492913ebc75f7ee834a77d90bb0ebf30d78f3aff2a2f2018ad7299f81`  
+		Last Modified: Wed, 22 Jul 2020 22:47:55 GMT  
+		Size: 5.5 MB (5529328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:037cc5cb1b833b9fa2dd445b932781d8863c0d63f6be2b546720f9c84599f56e`  
-		Last Modified: Tue, 09 Jun 2020 16:46:49 GMT  
-		Size: 210.0 B  
+	-	`sha256:f6034d6cdb9bd996e89db23fa6b5e5b3f7a1369a34619c509cd721a7e7d1b66f`  
+		Last Modified: Wed, 22 Jul 2020 22:48:58 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3efdb3316144cd13b6715043917151ecc6d9e3cff047dacd24e967f4cb154e4`  
-		Last Modified: Thu, 16 Jul 2020 22:46:41 GMT  
-		Size: 40.3 MB (40335807 bytes)  
+	-	`sha256:b6de3914f4ed2ccf9a59bdb6cc44ae82c567b75a5d62158936342740dedd4ef2`  
+		Last Modified: Wed, 22 Jul 2020 22:49:04 GMT  
+		Size: 40.3 MB (40335782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf82d2b871adf7352caad81dc2cb27f8b7b3129c2dc2f469ef26169b5a9c2a54`  
-		Last Modified: Thu, 16 Jul 2020 23:04:24 GMT  
-		Size: 531.1 KB (531078 bytes)  
+	-	`sha256:bf65673c35bee6e90f2266e9db0e816a7db9d8023f1117bd8b1037bb8861bb47`  
+		Last Modified: Thu, 23 Jul 2020 08:50:25 GMT  
+		Size: 531.0 KB (531028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ff2e8c5d83fd3247fc6d2f37f8c51f9377eaf914fcb255ec9aff342b16c0b9b`  
-		Last Modified: Thu, 16 Jul 2020 23:04:23 GMT  
-		Size: 900.5 KB (900509 bytes)  
+	-	`sha256:8c6dfaaaa32b9988cb48b3ef404f237d2699c14bbca1e2e9bc5286843f5769cf`  
+		Last Modified: Thu, 23 Jul 2020 08:50:23 GMT  
+		Size: 900.5 KB (900511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d03fe178bf3c57d0d967cd6300eef9f0cda2cd42f77401dccb0596ad3df965b3`  
-		Last Modified: Thu, 16 Jul 2020 23:04:43 GMT  
-		Size: 4.6 KB (4607 bytes)  
+	-	`sha256:751aef50a3d28de7b0b684d09e1777c712ce165888df383258408af7a058e57a`  
+		Last Modified: Thu, 23 Jul 2020 08:50:44 GMT  
+		Size: 4.6 KB (4603 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dcce73d64d7759f1d71eda8705ac66ed96a6ad9f62176ab2258318e9f3622ad2`  
-		Last Modified: Thu, 16 Jul 2020 23:04:44 GMT  
+	-	`sha256:1854777197887c2e2c8160f89996bfcfe2f52f3800b7b76d53153b790a477f2c`  
+		Last Modified: Thu, 23 Jul 2020 08:50:45 GMT  
 		Size: 114.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:73be9df8ebcdefa080b0cd8a051ba7173178bf5ab12be856890d8a386b7dfe79`  
-		Last Modified: Thu, 16 Jul 2020 23:04:58 GMT  
-		Size: 280.0 MB (279952927 bytes)  
+	-	`sha256:c5572b382e19434910482ae074021306c91889e35cc3ee49b0eb5fed95562d9d`  
+		Last Modified: Thu, 23 Jul 2020 08:50:59 GMT  
+		Size: 280.0 MB (279952945 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5dcae6f6206853369e8dbcc410342b1ad17898200cd4484b5518459f8aa7b56f`  
-		Last Modified: Thu, 16 Jul 2020 23:04:43 GMT  
+	-	`sha256:1a7ef3f7e8f3fbdcadb4407f92ea405abe9286e6d2ad11488af368fd843797d3`  
+		Last Modified: Thu, 23 Jul 2020 08:50:44 GMT  
 		Size: 1.7 KB (1688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.10.1-scala_2.11`
 
 ```console
-$ docker pull flink@sha256:bbcaf05bd2fa6b31c84e3e22c847e9f0481a82df862199ebac5097cecb56fcfd
+$ docker pull flink@sha256:91952e5067b8977383665c881f9abcb8b7d96eaf1656c709050b85a8a1922079
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -289,126 +289,126 @@ $ docker pull flink@sha256:bbcaf05bd2fa6b31c84e3e22c847e9f0481a82df862199ebac509
 ### `flink:1.10.1-scala_2.11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:ec9d2544ac27c28c14e81a85c6d6b0b226cbcac6a109397ccca1058be0a1f91e
+$ docker pull flink@sha256:2d602197109ed9718dd9a36863b80e542f6752df322707f6c525e0e59f8d81e3
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **404.7 MB (404745854 bytes)**  
+-	Total Size: **404.7 MB (404746726 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f0ec28f6c64a230bd20e862f21ea0c39f52098c655e1a1b9701b8f584cd670f`
+-	Image ID: `sha256:bc3ba2cdd5aa1a2c9905419efd466362e28d7cf5e91fa8134a8f881a8cab4b63`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
 ```dockerfile
-# Tue, 09 Jun 2020 01:20:39 GMT
-ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
-# Tue, 09 Jun 2020 01:20:39 GMT
+# Wed, 22 Jul 2020 02:03:16 GMT
+ADD file:89dfd7d3ed77fd5e05f20a0ab631142207ae462f5bbd877f8745d3930c751d87 in / 
+# Wed, 22 Jul 2020 02:03:16 GMT
 CMD ["bash"]
-# Tue, 09 Jun 2020 01:46:35 GMT
+# Wed, 22 Jul 2020 03:00:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 01:46:41 GMT
+# Wed, 22 Jul 2020 03:00:55 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 09 Jun 2020 16:38:01 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 16:38:02 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:21 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Jun 2020 16:39:26 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 16 Jul 2020 22:40:33 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_VERSION=8u262
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_URL_VERSION=8u262b10
-# Thu, 16 Jul 2020 22:40:39 GMT
+# Wed, 22 Jul 2020 22:42:28 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base;   rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 16 Jul 2020 23:02:31 GMT
+# Thu, 23 Jul 2020 08:39:06 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 16 Jul 2020 23:02:32 GMT
+# Thu, 23 Jul 2020 08:39:07 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.10.1/flink-1.10.1-bin-scala_2.11.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.10.1/flink-1.10.1-bin-scala_2.11.tgz.asc GPG_KEY=D8D3D42E84C753CA5F170BDF93C07902771AB743 CHECK_GPG=true
-# Thu, 16 Jul 2020 23:02:32 GMT
+# Thu, 23 Jul 2020 08:39:07 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 16 Jul 2020 23:02:32 GMT
+# Thu, 23 Jul 2020 08:39:07 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jul 2020 23:02:33 GMT
+# Thu, 23 Jul 2020 08:39:08 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 16 Jul 2020 23:02:33 GMT
+# Thu, 23 Jul 2020 08:39:08 GMT
 WORKDIR /opt/flink
-# Thu, 16 Jul 2020 23:02:54 GMT
+# Thu, 23 Jul 2020 08:40:00 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 16 Jul 2020 23:02:54 GMT
+# Thu, 23 Jul 2020 08:40:00 GMT
 COPY file:5118b9265b7774ef32131b2cbf42fd9bf26c640be3ebb42b4972a3ae8ed5125e in / 
-# Thu, 16 Jul 2020 23:02:54 GMT
+# Thu, 23 Jul 2020 08:40:00 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 16 Jul 2020 23:02:55 GMT
+# Thu, 23 Jul 2020 08:40:01 GMT
 EXPOSE 6123 8081
-# Thu, 16 Jul 2020 23:02:55 GMT
+# Thu, 23 Jul 2020 08:40:01 GMT
 CMD ["help"]
 ```
 
 -	Layers:
-	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
-		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
-		Size: 50.4 MB (50389504 bytes)  
+	-	`sha256:31dd5ebca5efc5e96a425402fa85e492b02c8fe757dfd3edfdea2a7c67322909`  
+		Last Modified: Wed, 22 Jul 2020 02:09:37 GMT  
+		Size: 50.4 MB (50390325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 7.8 MB (7811709 bytes)  
+	-	`sha256:3ed641c4ae9821ca3c399071ea82ae667237acbcaad1e367c3e1e87fc967834c`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 7.8 MB (7811702 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 10.0 MB (9996168 bytes)  
+	-	`sha256:bcd57146431eae70720cf24877e818256ae1a30b9c1c9e7d0ad093c945ca0af2`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 10.0 MB (9996319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
-		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
-		Size: 5.5 MB (5529317 bytes)  
+	-	`sha256:f49dd46492913ebc75f7ee834a77d90bb0ebf30d78f3aff2a2f2018ad7299f81`  
+		Last Modified: Wed, 22 Jul 2020 22:47:55 GMT  
+		Size: 5.5 MB (5529328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:037cc5cb1b833b9fa2dd445b932781d8863c0d63f6be2b546720f9c84599f56e`  
-		Last Modified: Tue, 09 Jun 2020 16:46:49 GMT  
-		Size: 210.0 B  
+	-	`sha256:f6034d6cdb9bd996e89db23fa6b5e5b3f7a1369a34619c509cd721a7e7d1b66f`  
+		Last Modified: Wed, 22 Jul 2020 22:48:58 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3efdb3316144cd13b6715043917151ecc6d9e3cff047dacd24e967f4cb154e4`  
-		Last Modified: Thu, 16 Jul 2020 22:46:41 GMT  
-		Size: 40.3 MB (40335807 bytes)  
+	-	`sha256:b6de3914f4ed2ccf9a59bdb6cc44ae82c567b75a5d62158936342740dedd4ef2`  
+		Last Modified: Wed, 22 Jul 2020 22:49:04 GMT  
+		Size: 40.3 MB (40335782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf82d2b871adf7352caad81dc2cb27f8b7b3129c2dc2f469ef26169b5a9c2a54`  
-		Last Modified: Thu, 16 Jul 2020 23:04:24 GMT  
-		Size: 531.1 KB (531078 bytes)  
+	-	`sha256:bf65673c35bee6e90f2266e9db0e816a7db9d8023f1117bd8b1037bb8861bb47`  
+		Last Modified: Thu, 23 Jul 2020 08:50:25 GMT  
+		Size: 531.0 KB (531028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ff2e8c5d83fd3247fc6d2f37f8c51f9377eaf914fcb255ec9aff342b16c0b9b`  
-		Last Modified: Thu, 16 Jul 2020 23:04:23 GMT  
-		Size: 900.5 KB (900509 bytes)  
+	-	`sha256:8c6dfaaaa32b9988cb48b3ef404f237d2699c14bbca1e2e9bc5286843f5769cf`  
+		Last Modified: Thu, 23 Jul 2020 08:50:23 GMT  
+		Size: 900.5 KB (900511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9bcb56e16c8d7355d51176a7af65528fb75931e6935157a1db69a9d232eb0729`  
-		Last Modified: Thu, 16 Jul 2020 23:04:23 GMT  
-		Size: 4.6 KB (4607 bytes)  
+	-	`sha256:000b8c145f8e7a4ccd417821878ab8c0a42d2148633bd7ea31060d9d1abcd811`  
+		Last Modified: Thu, 23 Jul 2020 08:50:24 GMT  
+		Size: 4.6 KB (4598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f5cc42e0099a86f90d21da0f546e47b6d236782cad73db8d71b1418e4b1bced`  
-		Last Modified: Thu, 16 Jul 2020 23:04:23 GMT  
+	-	`sha256:7d6c67258e990672530a17aa865299b0f8eb8498b52d0d7ffdf2a7f2f667ec7f`  
+		Last Modified: Thu, 23 Jul 2020 08:50:24 GMT  
 		Size: 114.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1093c44e64b99d2a99e07591be341d1c462d133fd76121bd1d7c1a58c7cbc140`  
-		Last Modified: Thu, 16 Jul 2020 23:04:39 GMT  
-		Size: 289.2 MB (289245142 bytes)  
+	-	`sha256:d09acf5121b078d065068f14c6894127aa4ed0cf7589a96b04d53a9b5f35464d`  
+		Last Modified: Thu, 23 Jul 2020 08:50:39 GMT  
+		Size: 289.2 MB (289245119 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69ee36d5ba29ea2b332db189b12aef6a8eab3f46ed4d9465c72f73fb832b8b87`  
-		Last Modified: Thu, 16 Jul 2020 23:04:23 GMT  
+	-	`sha256:04609f768e3c32dbd1d882bf277940475450b085fe3889dbc56ee2bef77c63ca`  
+		Last Modified: Thu, 23 Jul 2020 08:50:24 GMT  
 		Size: 1.7 KB (1689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.10.1-scala_2.12`
 
 ```console
-$ docker pull flink@sha256:886d13fc5aa467ec0072f4ffc26b847d63a71751ec98901edd89b9c2ae921cdf
+$ docker pull flink@sha256:04725ce06bb7f65c972dcd108c10272670e5f322fb239a612e3cf169aade1e9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -418,126 +418,126 @@ $ docker pull flink@sha256:886d13fc5aa467ec0072f4ffc26b847d63a71751ec98901edd89b
 ### `flink:1.10.1-scala_2.12` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:dea7aa34d95968c16481dfa016080b03d77bf9bcb4ee10599dc7d80331b05d36
+$ docker pull flink@sha256:994f4fd306ba46fab72d8d66bdfa08d228846c0dfdbcbb1eba8c6160ee9aa836
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **395.5 MB (395453638 bytes)**  
+-	Total Size: **395.5 MB (395454556 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:037c98deb153f4223bfd1a79a44532a47ff5a7d429cf5e63199e910f73cc1817`
+-	Image ID: `sha256:0e61231ba0e49e000b02810dcdfc4e862e8920bd57c799814e28cfdadfd256bf`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
 ```dockerfile
-# Tue, 09 Jun 2020 01:20:39 GMT
-ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
-# Tue, 09 Jun 2020 01:20:39 GMT
+# Wed, 22 Jul 2020 02:03:16 GMT
+ADD file:89dfd7d3ed77fd5e05f20a0ab631142207ae462f5bbd877f8745d3930c751d87 in / 
+# Wed, 22 Jul 2020 02:03:16 GMT
 CMD ["bash"]
-# Tue, 09 Jun 2020 01:46:35 GMT
+# Wed, 22 Jul 2020 03:00:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 01:46:41 GMT
+# Wed, 22 Jul 2020 03:00:55 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 09 Jun 2020 16:38:01 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 16:38:02 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:21 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Jun 2020 16:39:26 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 16 Jul 2020 22:40:33 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_VERSION=8u262
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_URL_VERSION=8u262b10
-# Thu, 16 Jul 2020 22:40:39 GMT
+# Wed, 22 Jul 2020 22:42:28 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base;   rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 16 Jul 2020 23:02:31 GMT
+# Thu, 23 Jul 2020 08:39:06 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 16 Jul 2020 23:02:59 GMT
+# Thu, 23 Jul 2020 08:40:05 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.10.1/flink-1.10.1-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.10.1/flink-1.10.1-bin-scala_2.12.tgz.asc GPG_KEY=D8D3D42E84C753CA5F170BDF93C07902771AB743 CHECK_GPG=true
-# Thu, 16 Jul 2020 23:02:59 GMT
+# Thu, 23 Jul 2020 08:40:05 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 16 Jul 2020 23:03:00 GMT
+# Thu, 23 Jul 2020 08:40:05 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jul 2020 23:03:00 GMT
+# Thu, 23 Jul 2020 08:40:06 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 16 Jul 2020 23:03:01 GMT
+# Thu, 23 Jul 2020 08:40:06 GMT
 WORKDIR /opt/flink
-# Thu, 16 Jul 2020 23:03:25 GMT
+# Thu, 23 Jul 2020 08:49:03 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 16 Jul 2020 23:03:26 GMT
+# Thu, 23 Jul 2020 08:49:03 GMT
 COPY file:5118b9265b7774ef32131b2cbf42fd9bf26c640be3ebb42b4972a3ae8ed5125e in / 
-# Thu, 16 Jul 2020 23:03:28 GMT
+# Thu, 23 Jul 2020 08:49:04 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 16 Jul 2020 23:03:28 GMT
+# Thu, 23 Jul 2020 08:49:04 GMT
 EXPOSE 6123 8081
-# Thu, 16 Jul 2020 23:03:28 GMT
+# Thu, 23 Jul 2020 08:49:04 GMT
 CMD ["help"]
 ```
 
 -	Layers:
-	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
-		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
-		Size: 50.4 MB (50389504 bytes)  
+	-	`sha256:31dd5ebca5efc5e96a425402fa85e492b02c8fe757dfd3edfdea2a7c67322909`  
+		Last Modified: Wed, 22 Jul 2020 02:09:37 GMT  
+		Size: 50.4 MB (50390325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 7.8 MB (7811709 bytes)  
+	-	`sha256:3ed641c4ae9821ca3c399071ea82ae667237acbcaad1e367c3e1e87fc967834c`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 7.8 MB (7811702 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 10.0 MB (9996168 bytes)  
+	-	`sha256:bcd57146431eae70720cf24877e818256ae1a30b9c1c9e7d0ad093c945ca0af2`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 10.0 MB (9996319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
-		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
-		Size: 5.5 MB (5529317 bytes)  
+	-	`sha256:f49dd46492913ebc75f7ee834a77d90bb0ebf30d78f3aff2a2f2018ad7299f81`  
+		Last Modified: Wed, 22 Jul 2020 22:47:55 GMT  
+		Size: 5.5 MB (5529328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:037cc5cb1b833b9fa2dd445b932781d8863c0d63f6be2b546720f9c84599f56e`  
-		Last Modified: Tue, 09 Jun 2020 16:46:49 GMT  
-		Size: 210.0 B  
+	-	`sha256:f6034d6cdb9bd996e89db23fa6b5e5b3f7a1369a34619c509cd721a7e7d1b66f`  
+		Last Modified: Wed, 22 Jul 2020 22:48:58 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3efdb3316144cd13b6715043917151ecc6d9e3cff047dacd24e967f4cb154e4`  
-		Last Modified: Thu, 16 Jul 2020 22:46:41 GMT  
-		Size: 40.3 MB (40335807 bytes)  
+	-	`sha256:b6de3914f4ed2ccf9a59bdb6cc44ae82c567b75a5d62158936342740dedd4ef2`  
+		Last Modified: Wed, 22 Jul 2020 22:49:04 GMT  
+		Size: 40.3 MB (40335782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf82d2b871adf7352caad81dc2cb27f8b7b3129c2dc2f469ef26169b5a9c2a54`  
-		Last Modified: Thu, 16 Jul 2020 23:04:24 GMT  
-		Size: 531.1 KB (531078 bytes)  
+	-	`sha256:bf65673c35bee6e90f2266e9db0e816a7db9d8023f1117bd8b1037bb8861bb47`  
+		Last Modified: Thu, 23 Jul 2020 08:50:25 GMT  
+		Size: 531.0 KB (531028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ff2e8c5d83fd3247fc6d2f37f8c51f9377eaf914fcb255ec9aff342b16c0b9b`  
-		Last Modified: Thu, 16 Jul 2020 23:04:23 GMT  
-		Size: 900.5 KB (900509 bytes)  
+	-	`sha256:8c6dfaaaa32b9988cb48b3ef404f237d2699c14bbca1e2e9bc5286843f5769cf`  
+		Last Modified: Thu, 23 Jul 2020 08:50:23 GMT  
+		Size: 900.5 KB (900511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d03fe178bf3c57d0d967cd6300eef9f0cda2cd42f77401dccb0596ad3df965b3`  
-		Last Modified: Thu, 16 Jul 2020 23:04:43 GMT  
-		Size: 4.6 KB (4607 bytes)  
+	-	`sha256:751aef50a3d28de7b0b684d09e1777c712ce165888df383258408af7a058e57a`  
+		Last Modified: Thu, 23 Jul 2020 08:50:44 GMT  
+		Size: 4.6 KB (4603 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dcce73d64d7759f1d71eda8705ac66ed96a6ad9f62176ab2258318e9f3622ad2`  
-		Last Modified: Thu, 16 Jul 2020 23:04:44 GMT  
+	-	`sha256:1854777197887c2e2c8160f89996bfcfe2f52f3800b7b76d53153b790a477f2c`  
+		Last Modified: Thu, 23 Jul 2020 08:50:45 GMT  
 		Size: 114.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:73be9df8ebcdefa080b0cd8a051ba7173178bf5ab12be856890d8a386b7dfe79`  
-		Last Modified: Thu, 16 Jul 2020 23:04:58 GMT  
-		Size: 280.0 MB (279952927 bytes)  
+	-	`sha256:c5572b382e19434910482ae074021306c91889e35cc3ee49b0eb5fed95562d9d`  
+		Last Modified: Thu, 23 Jul 2020 08:50:59 GMT  
+		Size: 280.0 MB (279952945 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5dcae6f6206853369e8dbcc410342b1ad17898200cd4484b5518459f8aa7b56f`  
-		Last Modified: Thu, 16 Jul 2020 23:04:43 GMT  
+	-	`sha256:1a7ef3f7e8f3fbdcadb4407f92ea405abe9286e6d2ad11488af368fd843797d3`  
+		Last Modified: Thu, 23 Jul 2020 08:50:44 GMT  
 		Size: 1.7 KB (1688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.10-scala_2.11`
 
 ```console
-$ docker pull flink@sha256:bbcaf05bd2fa6b31c84e3e22c847e9f0481a82df862199ebac5097cecb56fcfd
+$ docker pull flink@sha256:91952e5067b8977383665c881f9abcb8b7d96eaf1656c709050b85a8a1922079
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -547,126 +547,126 @@ $ docker pull flink@sha256:bbcaf05bd2fa6b31c84e3e22c847e9f0481a82df862199ebac509
 ### `flink:1.10-scala_2.11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:ec9d2544ac27c28c14e81a85c6d6b0b226cbcac6a109397ccca1058be0a1f91e
+$ docker pull flink@sha256:2d602197109ed9718dd9a36863b80e542f6752df322707f6c525e0e59f8d81e3
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **404.7 MB (404745854 bytes)**  
+-	Total Size: **404.7 MB (404746726 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f0ec28f6c64a230bd20e862f21ea0c39f52098c655e1a1b9701b8f584cd670f`
+-	Image ID: `sha256:bc3ba2cdd5aa1a2c9905419efd466362e28d7cf5e91fa8134a8f881a8cab4b63`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
 ```dockerfile
-# Tue, 09 Jun 2020 01:20:39 GMT
-ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
-# Tue, 09 Jun 2020 01:20:39 GMT
+# Wed, 22 Jul 2020 02:03:16 GMT
+ADD file:89dfd7d3ed77fd5e05f20a0ab631142207ae462f5bbd877f8745d3930c751d87 in / 
+# Wed, 22 Jul 2020 02:03:16 GMT
 CMD ["bash"]
-# Tue, 09 Jun 2020 01:46:35 GMT
+# Wed, 22 Jul 2020 03:00:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 01:46:41 GMT
+# Wed, 22 Jul 2020 03:00:55 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 09 Jun 2020 16:38:01 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 16:38:02 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:21 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Jun 2020 16:39:26 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 16 Jul 2020 22:40:33 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_VERSION=8u262
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_URL_VERSION=8u262b10
-# Thu, 16 Jul 2020 22:40:39 GMT
+# Wed, 22 Jul 2020 22:42:28 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base;   rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 16 Jul 2020 23:02:31 GMT
+# Thu, 23 Jul 2020 08:39:06 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 16 Jul 2020 23:02:32 GMT
+# Thu, 23 Jul 2020 08:39:07 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.10.1/flink-1.10.1-bin-scala_2.11.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.10.1/flink-1.10.1-bin-scala_2.11.tgz.asc GPG_KEY=D8D3D42E84C753CA5F170BDF93C07902771AB743 CHECK_GPG=true
-# Thu, 16 Jul 2020 23:02:32 GMT
+# Thu, 23 Jul 2020 08:39:07 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 16 Jul 2020 23:02:32 GMT
+# Thu, 23 Jul 2020 08:39:07 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jul 2020 23:02:33 GMT
+# Thu, 23 Jul 2020 08:39:08 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 16 Jul 2020 23:02:33 GMT
+# Thu, 23 Jul 2020 08:39:08 GMT
 WORKDIR /opt/flink
-# Thu, 16 Jul 2020 23:02:54 GMT
+# Thu, 23 Jul 2020 08:40:00 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 16 Jul 2020 23:02:54 GMT
+# Thu, 23 Jul 2020 08:40:00 GMT
 COPY file:5118b9265b7774ef32131b2cbf42fd9bf26c640be3ebb42b4972a3ae8ed5125e in / 
-# Thu, 16 Jul 2020 23:02:54 GMT
+# Thu, 23 Jul 2020 08:40:00 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 16 Jul 2020 23:02:55 GMT
+# Thu, 23 Jul 2020 08:40:01 GMT
 EXPOSE 6123 8081
-# Thu, 16 Jul 2020 23:02:55 GMT
+# Thu, 23 Jul 2020 08:40:01 GMT
 CMD ["help"]
 ```
 
 -	Layers:
-	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
-		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
-		Size: 50.4 MB (50389504 bytes)  
+	-	`sha256:31dd5ebca5efc5e96a425402fa85e492b02c8fe757dfd3edfdea2a7c67322909`  
+		Last Modified: Wed, 22 Jul 2020 02:09:37 GMT  
+		Size: 50.4 MB (50390325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 7.8 MB (7811709 bytes)  
+	-	`sha256:3ed641c4ae9821ca3c399071ea82ae667237acbcaad1e367c3e1e87fc967834c`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 7.8 MB (7811702 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 10.0 MB (9996168 bytes)  
+	-	`sha256:bcd57146431eae70720cf24877e818256ae1a30b9c1c9e7d0ad093c945ca0af2`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 10.0 MB (9996319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
-		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
-		Size: 5.5 MB (5529317 bytes)  
+	-	`sha256:f49dd46492913ebc75f7ee834a77d90bb0ebf30d78f3aff2a2f2018ad7299f81`  
+		Last Modified: Wed, 22 Jul 2020 22:47:55 GMT  
+		Size: 5.5 MB (5529328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:037cc5cb1b833b9fa2dd445b932781d8863c0d63f6be2b546720f9c84599f56e`  
-		Last Modified: Tue, 09 Jun 2020 16:46:49 GMT  
-		Size: 210.0 B  
+	-	`sha256:f6034d6cdb9bd996e89db23fa6b5e5b3f7a1369a34619c509cd721a7e7d1b66f`  
+		Last Modified: Wed, 22 Jul 2020 22:48:58 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3efdb3316144cd13b6715043917151ecc6d9e3cff047dacd24e967f4cb154e4`  
-		Last Modified: Thu, 16 Jul 2020 22:46:41 GMT  
-		Size: 40.3 MB (40335807 bytes)  
+	-	`sha256:b6de3914f4ed2ccf9a59bdb6cc44ae82c567b75a5d62158936342740dedd4ef2`  
+		Last Modified: Wed, 22 Jul 2020 22:49:04 GMT  
+		Size: 40.3 MB (40335782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf82d2b871adf7352caad81dc2cb27f8b7b3129c2dc2f469ef26169b5a9c2a54`  
-		Last Modified: Thu, 16 Jul 2020 23:04:24 GMT  
-		Size: 531.1 KB (531078 bytes)  
+	-	`sha256:bf65673c35bee6e90f2266e9db0e816a7db9d8023f1117bd8b1037bb8861bb47`  
+		Last Modified: Thu, 23 Jul 2020 08:50:25 GMT  
+		Size: 531.0 KB (531028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ff2e8c5d83fd3247fc6d2f37f8c51f9377eaf914fcb255ec9aff342b16c0b9b`  
-		Last Modified: Thu, 16 Jul 2020 23:04:23 GMT  
-		Size: 900.5 KB (900509 bytes)  
+	-	`sha256:8c6dfaaaa32b9988cb48b3ef404f237d2699c14bbca1e2e9bc5286843f5769cf`  
+		Last Modified: Thu, 23 Jul 2020 08:50:23 GMT  
+		Size: 900.5 KB (900511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9bcb56e16c8d7355d51176a7af65528fb75931e6935157a1db69a9d232eb0729`  
-		Last Modified: Thu, 16 Jul 2020 23:04:23 GMT  
-		Size: 4.6 KB (4607 bytes)  
+	-	`sha256:000b8c145f8e7a4ccd417821878ab8c0a42d2148633bd7ea31060d9d1abcd811`  
+		Last Modified: Thu, 23 Jul 2020 08:50:24 GMT  
+		Size: 4.6 KB (4598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f5cc42e0099a86f90d21da0f546e47b6d236782cad73db8d71b1418e4b1bced`  
-		Last Modified: Thu, 16 Jul 2020 23:04:23 GMT  
+	-	`sha256:7d6c67258e990672530a17aa865299b0f8eb8498b52d0d7ffdf2a7f2f667ec7f`  
+		Last Modified: Thu, 23 Jul 2020 08:50:24 GMT  
 		Size: 114.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1093c44e64b99d2a99e07591be341d1c462d133fd76121bd1d7c1a58c7cbc140`  
-		Last Modified: Thu, 16 Jul 2020 23:04:39 GMT  
-		Size: 289.2 MB (289245142 bytes)  
+	-	`sha256:d09acf5121b078d065068f14c6894127aa4ed0cf7589a96b04d53a9b5f35464d`  
+		Last Modified: Thu, 23 Jul 2020 08:50:39 GMT  
+		Size: 289.2 MB (289245119 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69ee36d5ba29ea2b332db189b12aef6a8eab3f46ed4d9465c72f73fb832b8b87`  
-		Last Modified: Thu, 16 Jul 2020 23:04:23 GMT  
+	-	`sha256:04609f768e3c32dbd1d882bf277940475450b085fe3889dbc56ee2bef77c63ca`  
+		Last Modified: Thu, 23 Jul 2020 08:50:24 GMT  
 		Size: 1.7 KB (1689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.10-scala_2.12`
 
 ```console
-$ docker pull flink@sha256:886d13fc5aa467ec0072f4ffc26b847d63a71751ec98901edd89b9c2ae921cdf
+$ docker pull flink@sha256:04725ce06bb7f65c972dcd108c10272670e5f322fb239a612e3cf169aade1e9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -676,126 +676,126 @@ $ docker pull flink@sha256:886d13fc5aa467ec0072f4ffc26b847d63a71751ec98901edd89b
 ### `flink:1.10-scala_2.12` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:dea7aa34d95968c16481dfa016080b03d77bf9bcb4ee10599dc7d80331b05d36
+$ docker pull flink@sha256:994f4fd306ba46fab72d8d66bdfa08d228846c0dfdbcbb1eba8c6160ee9aa836
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **395.5 MB (395453638 bytes)**  
+-	Total Size: **395.5 MB (395454556 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:037c98deb153f4223bfd1a79a44532a47ff5a7d429cf5e63199e910f73cc1817`
+-	Image ID: `sha256:0e61231ba0e49e000b02810dcdfc4e862e8920bd57c799814e28cfdadfd256bf`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
 ```dockerfile
-# Tue, 09 Jun 2020 01:20:39 GMT
-ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
-# Tue, 09 Jun 2020 01:20:39 GMT
+# Wed, 22 Jul 2020 02:03:16 GMT
+ADD file:89dfd7d3ed77fd5e05f20a0ab631142207ae462f5bbd877f8745d3930c751d87 in / 
+# Wed, 22 Jul 2020 02:03:16 GMT
 CMD ["bash"]
-# Tue, 09 Jun 2020 01:46:35 GMT
+# Wed, 22 Jul 2020 03:00:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 01:46:41 GMT
+# Wed, 22 Jul 2020 03:00:55 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 09 Jun 2020 16:38:01 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 16:38:02 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:21 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Jun 2020 16:39:26 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 16 Jul 2020 22:40:33 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_VERSION=8u262
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_URL_VERSION=8u262b10
-# Thu, 16 Jul 2020 22:40:39 GMT
+# Wed, 22 Jul 2020 22:42:28 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base;   rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 16 Jul 2020 23:02:31 GMT
+# Thu, 23 Jul 2020 08:39:06 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 16 Jul 2020 23:02:59 GMT
+# Thu, 23 Jul 2020 08:40:05 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.10.1/flink-1.10.1-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.10.1/flink-1.10.1-bin-scala_2.12.tgz.asc GPG_KEY=D8D3D42E84C753CA5F170BDF93C07902771AB743 CHECK_GPG=true
-# Thu, 16 Jul 2020 23:02:59 GMT
+# Thu, 23 Jul 2020 08:40:05 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 16 Jul 2020 23:03:00 GMT
+# Thu, 23 Jul 2020 08:40:05 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Jul 2020 23:03:00 GMT
+# Thu, 23 Jul 2020 08:40:06 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 16 Jul 2020 23:03:01 GMT
+# Thu, 23 Jul 2020 08:40:06 GMT
 WORKDIR /opt/flink
-# Thu, 16 Jul 2020 23:03:25 GMT
+# Thu, 23 Jul 2020 08:49:03 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 16 Jul 2020 23:03:26 GMT
+# Thu, 23 Jul 2020 08:49:03 GMT
 COPY file:5118b9265b7774ef32131b2cbf42fd9bf26c640be3ebb42b4972a3ae8ed5125e in / 
-# Thu, 16 Jul 2020 23:03:28 GMT
+# Thu, 23 Jul 2020 08:49:04 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 16 Jul 2020 23:03:28 GMT
+# Thu, 23 Jul 2020 08:49:04 GMT
 EXPOSE 6123 8081
-# Thu, 16 Jul 2020 23:03:28 GMT
+# Thu, 23 Jul 2020 08:49:04 GMT
 CMD ["help"]
 ```
 
 -	Layers:
-	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
-		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
-		Size: 50.4 MB (50389504 bytes)  
+	-	`sha256:31dd5ebca5efc5e96a425402fa85e492b02c8fe757dfd3edfdea2a7c67322909`  
+		Last Modified: Wed, 22 Jul 2020 02:09:37 GMT  
+		Size: 50.4 MB (50390325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 7.8 MB (7811709 bytes)  
+	-	`sha256:3ed641c4ae9821ca3c399071ea82ae667237acbcaad1e367c3e1e87fc967834c`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 7.8 MB (7811702 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 10.0 MB (9996168 bytes)  
+	-	`sha256:bcd57146431eae70720cf24877e818256ae1a30b9c1c9e7d0ad093c945ca0af2`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 10.0 MB (9996319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
-		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
-		Size: 5.5 MB (5529317 bytes)  
+	-	`sha256:f49dd46492913ebc75f7ee834a77d90bb0ebf30d78f3aff2a2f2018ad7299f81`  
+		Last Modified: Wed, 22 Jul 2020 22:47:55 GMT  
+		Size: 5.5 MB (5529328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:037cc5cb1b833b9fa2dd445b932781d8863c0d63f6be2b546720f9c84599f56e`  
-		Last Modified: Tue, 09 Jun 2020 16:46:49 GMT  
-		Size: 210.0 B  
+	-	`sha256:f6034d6cdb9bd996e89db23fa6b5e5b3f7a1369a34619c509cd721a7e7d1b66f`  
+		Last Modified: Wed, 22 Jul 2020 22:48:58 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3efdb3316144cd13b6715043917151ecc6d9e3cff047dacd24e967f4cb154e4`  
-		Last Modified: Thu, 16 Jul 2020 22:46:41 GMT  
-		Size: 40.3 MB (40335807 bytes)  
+	-	`sha256:b6de3914f4ed2ccf9a59bdb6cc44ae82c567b75a5d62158936342740dedd4ef2`  
+		Last Modified: Wed, 22 Jul 2020 22:49:04 GMT  
+		Size: 40.3 MB (40335782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf82d2b871adf7352caad81dc2cb27f8b7b3129c2dc2f469ef26169b5a9c2a54`  
-		Last Modified: Thu, 16 Jul 2020 23:04:24 GMT  
-		Size: 531.1 KB (531078 bytes)  
+	-	`sha256:bf65673c35bee6e90f2266e9db0e816a7db9d8023f1117bd8b1037bb8861bb47`  
+		Last Modified: Thu, 23 Jul 2020 08:50:25 GMT  
+		Size: 531.0 KB (531028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ff2e8c5d83fd3247fc6d2f37f8c51f9377eaf914fcb255ec9aff342b16c0b9b`  
-		Last Modified: Thu, 16 Jul 2020 23:04:23 GMT  
-		Size: 900.5 KB (900509 bytes)  
+	-	`sha256:8c6dfaaaa32b9988cb48b3ef404f237d2699c14bbca1e2e9bc5286843f5769cf`  
+		Last Modified: Thu, 23 Jul 2020 08:50:23 GMT  
+		Size: 900.5 KB (900511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d03fe178bf3c57d0d967cd6300eef9f0cda2cd42f77401dccb0596ad3df965b3`  
-		Last Modified: Thu, 16 Jul 2020 23:04:43 GMT  
-		Size: 4.6 KB (4607 bytes)  
+	-	`sha256:751aef50a3d28de7b0b684d09e1777c712ce165888df383258408af7a058e57a`  
+		Last Modified: Thu, 23 Jul 2020 08:50:44 GMT  
+		Size: 4.6 KB (4603 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dcce73d64d7759f1d71eda8705ac66ed96a6ad9f62176ab2258318e9f3622ad2`  
-		Last Modified: Thu, 16 Jul 2020 23:04:44 GMT  
+	-	`sha256:1854777197887c2e2c8160f89996bfcfe2f52f3800b7b76d53153b790a477f2c`  
+		Last Modified: Thu, 23 Jul 2020 08:50:45 GMT  
 		Size: 114.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:73be9df8ebcdefa080b0cd8a051ba7173178bf5ab12be856890d8a386b7dfe79`  
-		Last Modified: Thu, 16 Jul 2020 23:04:58 GMT  
-		Size: 280.0 MB (279952927 bytes)  
+	-	`sha256:c5572b382e19434910482ae074021306c91889e35cc3ee49b0eb5fed95562d9d`  
+		Last Modified: Thu, 23 Jul 2020 08:50:59 GMT  
+		Size: 280.0 MB (279952945 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5dcae6f6206853369e8dbcc410342b1ad17898200cd4484b5518459f8aa7b56f`  
-		Last Modified: Thu, 16 Jul 2020 23:04:43 GMT  
+	-	`sha256:1a7ef3f7e8f3fbdcadb4407f92ea405abe9286e6d2ad11488af368fd843797d3`  
+		Last Modified: Thu, 23 Jul 2020 08:50:44 GMT  
 		Size: 1.7 KB (1688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.11`
 
 ```console
-$ docker pull flink@sha256:96fee5debc94bf4f3ab186ac7ee4e8b453db3e8aafedd49fec448268626f5e70
+$ docker pull flink@sha256:36b945aedcac9cf0a622daafe2d96e79a942ec57698431b12709f1e3a4bb040c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -805,126 +805,126 @@ $ docker pull flink@sha256:96fee5debc94bf4f3ab186ac7ee4e8b453db3e8aafedd49fec448
 ### `flink:1.11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:c3a2c59da83a9ac06f8941a798ed905730f951a7cfccf58f6599de0ad588d114
+$ docker pull flink@sha256:1581fa5555a4d42f2e9c3c8cacd91873b50afa16eef9b7ce863ac1063daf4d97
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **428.4 MB (428352060 bytes)**  
+-	Total Size: **428.4 MB (428352833 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e1cb1e99e3175c1f0db8be87a784e11d92fa17d3023dc523bea6fe6990b7a03`
+-	Image ID: `sha256:b94ce2cc8f33468b684b7e9638cce18a426478ca8551177f0e1d240077db02ea`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
 ```dockerfile
-# Tue, 09 Jun 2020 01:20:39 GMT
-ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
-# Tue, 09 Jun 2020 01:20:39 GMT
+# Wed, 22 Jul 2020 02:03:16 GMT
+ADD file:89dfd7d3ed77fd5e05f20a0ab631142207ae462f5bbd877f8745d3930c751d87 in / 
+# Wed, 22 Jul 2020 02:03:16 GMT
 CMD ["bash"]
-# Tue, 09 Jun 2020 01:46:35 GMT
+# Wed, 22 Jul 2020 03:00:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 01:46:41 GMT
+# Wed, 22 Jul 2020 03:00:55 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 09 Jun 2020 16:38:01 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 16:38:02 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:21 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Jun 2020 16:39:26 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 16 Jul 2020 22:40:33 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_VERSION=8u262
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_URL_VERSION=8u262b10
-# Thu, 16 Jul 2020 22:40:39 GMT
+# Wed, 22 Jul 2020 22:42:28 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base;   rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 16 Jul 2020 23:02:31 GMT
+# Thu, 23 Jul 2020 08:39:06 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Wed, 22 Jul 2020 00:21:36 GMT
+# Thu, 23 Jul 2020 08:49:48 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.11.1/flink-1.11.1-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.11.1/flink-1.11.1-bin-scala_2.12.tgz.asc GPG_KEY=6B6291A8502BA8F0913AE04DDEB95B05BF075300 CHECK_GPG=true
-# Wed, 22 Jul 2020 00:21:36 GMT
+# Thu, 23 Jul 2020 08:49:48 GMT
 ENV FLINK_HOME=/opt/flink
-# Wed, 22 Jul 2020 00:21:37 GMT
+# Thu, 23 Jul 2020 08:49:48 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Jul 2020 00:21:38 GMT
+# Thu, 23 Jul 2020 08:49:49 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Wed, 22 Jul 2020 00:21:39 GMT
+# Thu, 23 Jul 2020 08:49:49 GMT
 WORKDIR /opt/flink
-# Wed, 22 Jul 2020 00:31:44 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Wed, 22 Jul 2020 00:31:45 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 COPY file:5118b9265b7774ef32131b2cbf42fd9bf26c640be3ebb42b4972a3ae8ed5125e in / 
-# Wed, 22 Jul 2020 00:31:45 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 22 Jul 2020 00:31:46 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 EXPOSE 6123 8081
-# Wed, 22 Jul 2020 00:31:46 GMT
+# Thu, 23 Jul 2020 08:50:13 GMT
 CMD ["help"]
 ```
 
 -	Layers:
-	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
-		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
-		Size: 50.4 MB (50389504 bytes)  
+	-	`sha256:31dd5ebca5efc5e96a425402fa85e492b02c8fe757dfd3edfdea2a7c67322909`  
+		Last Modified: Wed, 22 Jul 2020 02:09:37 GMT  
+		Size: 50.4 MB (50390325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 7.8 MB (7811709 bytes)  
+	-	`sha256:3ed641c4ae9821ca3c399071ea82ae667237acbcaad1e367c3e1e87fc967834c`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 7.8 MB (7811702 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 10.0 MB (9996168 bytes)  
+	-	`sha256:bcd57146431eae70720cf24877e818256ae1a30b9c1c9e7d0ad093c945ca0af2`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 10.0 MB (9996319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
-		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
-		Size: 5.5 MB (5529317 bytes)  
+	-	`sha256:f49dd46492913ebc75f7ee834a77d90bb0ebf30d78f3aff2a2f2018ad7299f81`  
+		Last Modified: Wed, 22 Jul 2020 22:47:55 GMT  
+		Size: 5.5 MB (5529328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:037cc5cb1b833b9fa2dd445b932781d8863c0d63f6be2b546720f9c84599f56e`  
-		Last Modified: Tue, 09 Jun 2020 16:46:49 GMT  
-		Size: 210.0 B  
+	-	`sha256:f6034d6cdb9bd996e89db23fa6b5e5b3f7a1369a34619c509cd721a7e7d1b66f`  
+		Last Modified: Wed, 22 Jul 2020 22:48:58 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3efdb3316144cd13b6715043917151ecc6d9e3cff047dacd24e967f4cb154e4`  
-		Last Modified: Thu, 16 Jul 2020 22:46:41 GMT  
-		Size: 40.3 MB (40335807 bytes)  
+	-	`sha256:b6de3914f4ed2ccf9a59bdb6cc44ae82c567b75a5d62158936342740dedd4ef2`  
+		Last Modified: Wed, 22 Jul 2020 22:49:04 GMT  
+		Size: 40.3 MB (40335782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf82d2b871adf7352caad81dc2cb27f8b7b3129c2dc2f469ef26169b5a9c2a54`  
-		Last Modified: Thu, 16 Jul 2020 23:04:24 GMT  
-		Size: 531.1 KB (531078 bytes)  
+	-	`sha256:bf65673c35bee6e90f2266e9db0e816a7db9d8023f1117bd8b1037bb8861bb47`  
+		Last Modified: Thu, 23 Jul 2020 08:50:25 GMT  
+		Size: 531.0 KB (531028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ff2e8c5d83fd3247fc6d2f37f8c51f9377eaf914fcb255ec9aff342b16c0b9b`  
-		Last Modified: Thu, 16 Jul 2020 23:04:23 GMT  
-		Size: 900.5 KB (900509 bytes)  
+	-	`sha256:8c6dfaaaa32b9988cb48b3ef404f237d2699c14bbca1e2e9bc5286843f5769cf`  
+		Last Modified: Thu, 23 Jul 2020 08:50:23 GMT  
+		Size: 900.5 KB (900511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f19ebd3f52b017c88df46c3d1611a63907b5837b8450a85fbec820c048797d3`  
-		Last Modified: Wed, 22 Jul 2020 00:32:52 GMT  
-		Size: 4.6 KB (4606 bytes)  
+	-	`sha256:f2dc30f3cddd48d68a3fb84f73b9b3ddaf36a10606652cc779175bb4ffd7dd6f`  
+		Last Modified: Thu, 23 Jul 2020 08:51:27 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15b9502269d0ad3ca059076a5c3b26cd6b262ea4e2e3a3c28f3ad574448ded31`  
-		Last Modified: Wed, 22 Jul 2020 00:32:52 GMT  
-		Size: 114.0 B  
+	-	`sha256:83c6e5bd6075de0a9f5b6ded0ba5128a9089d7cbac4e3bb6b6102ed33df65ed4`  
+		Last Modified: Thu, 23 Jul 2020 08:51:27 GMT  
+		Size: 112.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f36379f3533afe9359626b6f9252fe501ed5af6c528a592479c5e124792a43c`  
-		Last Modified: Wed, 22 Jul 2020 00:33:20 GMT  
-		Size: 312.9 MB (312851350 bytes)  
+	-	`sha256:e7de597e1de15e68c4ebd8b1937643450f492c47b5bd86abf8b11a8821b785ef`  
+		Last Modified: Thu, 23 Jul 2020 08:51:44 GMT  
+		Size: 312.9 MB (312851223 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc1e58637d2845781505a6c8daa8d3804aa6ad304f77be4e0d94d59b16cff391`  
-		Last Modified: Wed, 22 Jul 2020 00:32:53 GMT  
+	-	`sha256:8fe30545bb01f3d6efc88428d8b4a6ffc7a1f11fb9ec482de4d2ddf7c052b2f7`  
+		Last Modified: Thu, 23 Jul 2020 08:51:27 GMT  
 		Size: 1.7 KB (1688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.11.1`
 
 ```console
-$ docker pull flink@sha256:96fee5debc94bf4f3ab186ac7ee4e8b453db3e8aafedd49fec448268626f5e70
+$ docker pull flink@sha256:36b945aedcac9cf0a622daafe2d96e79a942ec57698431b12709f1e3a4bb040c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -934,126 +934,126 @@ $ docker pull flink@sha256:96fee5debc94bf4f3ab186ac7ee4e8b453db3e8aafedd49fec448
 ### `flink:1.11.1` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:c3a2c59da83a9ac06f8941a798ed905730f951a7cfccf58f6599de0ad588d114
+$ docker pull flink@sha256:1581fa5555a4d42f2e9c3c8cacd91873b50afa16eef9b7ce863ac1063daf4d97
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **428.4 MB (428352060 bytes)**  
+-	Total Size: **428.4 MB (428352833 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e1cb1e99e3175c1f0db8be87a784e11d92fa17d3023dc523bea6fe6990b7a03`
+-	Image ID: `sha256:b94ce2cc8f33468b684b7e9638cce18a426478ca8551177f0e1d240077db02ea`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
 ```dockerfile
-# Tue, 09 Jun 2020 01:20:39 GMT
-ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
-# Tue, 09 Jun 2020 01:20:39 GMT
+# Wed, 22 Jul 2020 02:03:16 GMT
+ADD file:89dfd7d3ed77fd5e05f20a0ab631142207ae462f5bbd877f8745d3930c751d87 in / 
+# Wed, 22 Jul 2020 02:03:16 GMT
 CMD ["bash"]
-# Tue, 09 Jun 2020 01:46:35 GMT
+# Wed, 22 Jul 2020 03:00:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 01:46:41 GMT
+# Wed, 22 Jul 2020 03:00:55 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 09 Jun 2020 16:38:01 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 16:38:02 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:21 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Jun 2020 16:39:26 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 16 Jul 2020 22:40:33 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_VERSION=8u262
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_URL_VERSION=8u262b10
-# Thu, 16 Jul 2020 22:40:39 GMT
+# Wed, 22 Jul 2020 22:42:28 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base;   rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 16 Jul 2020 23:02:31 GMT
+# Thu, 23 Jul 2020 08:39:06 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Wed, 22 Jul 2020 00:21:36 GMT
+# Thu, 23 Jul 2020 08:49:48 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.11.1/flink-1.11.1-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.11.1/flink-1.11.1-bin-scala_2.12.tgz.asc GPG_KEY=6B6291A8502BA8F0913AE04DDEB95B05BF075300 CHECK_GPG=true
-# Wed, 22 Jul 2020 00:21:36 GMT
+# Thu, 23 Jul 2020 08:49:48 GMT
 ENV FLINK_HOME=/opt/flink
-# Wed, 22 Jul 2020 00:21:37 GMT
+# Thu, 23 Jul 2020 08:49:48 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Jul 2020 00:21:38 GMT
+# Thu, 23 Jul 2020 08:49:49 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Wed, 22 Jul 2020 00:21:39 GMT
+# Thu, 23 Jul 2020 08:49:49 GMT
 WORKDIR /opt/flink
-# Wed, 22 Jul 2020 00:31:44 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Wed, 22 Jul 2020 00:31:45 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 COPY file:5118b9265b7774ef32131b2cbf42fd9bf26c640be3ebb42b4972a3ae8ed5125e in / 
-# Wed, 22 Jul 2020 00:31:45 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 22 Jul 2020 00:31:46 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 EXPOSE 6123 8081
-# Wed, 22 Jul 2020 00:31:46 GMT
+# Thu, 23 Jul 2020 08:50:13 GMT
 CMD ["help"]
 ```
 
 -	Layers:
-	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
-		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
-		Size: 50.4 MB (50389504 bytes)  
+	-	`sha256:31dd5ebca5efc5e96a425402fa85e492b02c8fe757dfd3edfdea2a7c67322909`  
+		Last Modified: Wed, 22 Jul 2020 02:09:37 GMT  
+		Size: 50.4 MB (50390325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 7.8 MB (7811709 bytes)  
+	-	`sha256:3ed641c4ae9821ca3c399071ea82ae667237acbcaad1e367c3e1e87fc967834c`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 7.8 MB (7811702 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 10.0 MB (9996168 bytes)  
+	-	`sha256:bcd57146431eae70720cf24877e818256ae1a30b9c1c9e7d0ad093c945ca0af2`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 10.0 MB (9996319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
-		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
-		Size: 5.5 MB (5529317 bytes)  
+	-	`sha256:f49dd46492913ebc75f7ee834a77d90bb0ebf30d78f3aff2a2f2018ad7299f81`  
+		Last Modified: Wed, 22 Jul 2020 22:47:55 GMT  
+		Size: 5.5 MB (5529328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:037cc5cb1b833b9fa2dd445b932781d8863c0d63f6be2b546720f9c84599f56e`  
-		Last Modified: Tue, 09 Jun 2020 16:46:49 GMT  
-		Size: 210.0 B  
+	-	`sha256:f6034d6cdb9bd996e89db23fa6b5e5b3f7a1369a34619c509cd721a7e7d1b66f`  
+		Last Modified: Wed, 22 Jul 2020 22:48:58 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3efdb3316144cd13b6715043917151ecc6d9e3cff047dacd24e967f4cb154e4`  
-		Last Modified: Thu, 16 Jul 2020 22:46:41 GMT  
-		Size: 40.3 MB (40335807 bytes)  
+	-	`sha256:b6de3914f4ed2ccf9a59bdb6cc44ae82c567b75a5d62158936342740dedd4ef2`  
+		Last Modified: Wed, 22 Jul 2020 22:49:04 GMT  
+		Size: 40.3 MB (40335782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf82d2b871adf7352caad81dc2cb27f8b7b3129c2dc2f469ef26169b5a9c2a54`  
-		Last Modified: Thu, 16 Jul 2020 23:04:24 GMT  
-		Size: 531.1 KB (531078 bytes)  
+	-	`sha256:bf65673c35bee6e90f2266e9db0e816a7db9d8023f1117bd8b1037bb8861bb47`  
+		Last Modified: Thu, 23 Jul 2020 08:50:25 GMT  
+		Size: 531.0 KB (531028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ff2e8c5d83fd3247fc6d2f37f8c51f9377eaf914fcb255ec9aff342b16c0b9b`  
-		Last Modified: Thu, 16 Jul 2020 23:04:23 GMT  
-		Size: 900.5 KB (900509 bytes)  
+	-	`sha256:8c6dfaaaa32b9988cb48b3ef404f237d2699c14bbca1e2e9bc5286843f5769cf`  
+		Last Modified: Thu, 23 Jul 2020 08:50:23 GMT  
+		Size: 900.5 KB (900511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f19ebd3f52b017c88df46c3d1611a63907b5837b8450a85fbec820c048797d3`  
-		Last Modified: Wed, 22 Jul 2020 00:32:52 GMT  
-		Size: 4.6 KB (4606 bytes)  
+	-	`sha256:f2dc30f3cddd48d68a3fb84f73b9b3ddaf36a10606652cc779175bb4ffd7dd6f`  
+		Last Modified: Thu, 23 Jul 2020 08:51:27 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15b9502269d0ad3ca059076a5c3b26cd6b262ea4e2e3a3c28f3ad574448ded31`  
-		Last Modified: Wed, 22 Jul 2020 00:32:52 GMT  
-		Size: 114.0 B  
+	-	`sha256:83c6e5bd6075de0a9f5b6ded0ba5128a9089d7cbac4e3bb6b6102ed33df65ed4`  
+		Last Modified: Thu, 23 Jul 2020 08:51:27 GMT  
+		Size: 112.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f36379f3533afe9359626b6f9252fe501ed5af6c528a592479c5e124792a43c`  
-		Last Modified: Wed, 22 Jul 2020 00:33:20 GMT  
-		Size: 312.9 MB (312851350 bytes)  
+	-	`sha256:e7de597e1de15e68c4ebd8b1937643450f492c47b5bd86abf8b11a8821b785ef`  
+		Last Modified: Thu, 23 Jul 2020 08:51:44 GMT  
+		Size: 312.9 MB (312851223 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc1e58637d2845781505a6c8daa8d3804aa6ad304f77be4e0d94d59b16cff391`  
-		Last Modified: Wed, 22 Jul 2020 00:32:53 GMT  
+	-	`sha256:8fe30545bb01f3d6efc88428d8b4a6ffc7a1f11fb9ec482de4d2ddf7c052b2f7`  
+		Last Modified: Thu, 23 Jul 2020 08:51:27 GMT  
 		Size: 1.7 KB (1688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.11.1-scala_2.11`
 
 ```console
-$ docker pull flink@sha256:e5fe105dab0c399289e5d498bfef3e2287619ce892bfeaa40c98446a5a951f42
+$ docker pull flink@sha256:ece3756ee673c0b3f60152c70c858b72ac73b379602b50422654fd86cc99a4b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1063,126 +1063,126 @@ $ docker pull flink@sha256:e5fe105dab0c399289e5d498bfef3e2287619ce892bfeaa40c984
 ### `flink:1.11.1-scala_2.11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:482352e48a8e60bba9e8f5c69963236f0d259e7b1e9eecbc4ef470fcef82c666
+$ docker pull flink@sha256:41fc0b2d808fb748f67e9a426e2f729637f611613f83f0c98bea72a2cd427377
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **437.7 MB (437736203 bytes)**  
+-	Total Size: **437.7 MB (437736811 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b80bf59fa00abb586727d4186cc6e7c0cd991f38a35978dcf4b90fcca2c032b3`
+-	Image ID: `sha256:5580b449cc79fbecbce23b5a3303d6526c014c3871f00526395902a628eb2aa3`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
 ```dockerfile
-# Tue, 09 Jun 2020 01:20:39 GMT
-ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
-# Tue, 09 Jun 2020 01:20:39 GMT
+# Wed, 22 Jul 2020 02:03:16 GMT
+ADD file:89dfd7d3ed77fd5e05f20a0ab631142207ae462f5bbd877f8745d3930c751d87 in / 
+# Wed, 22 Jul 2020 02:03:16 GMT
 CMD ["bash"]
-# Tue, 09 Jun 2020 01:46:35 GMT
+# Wed, 22 Jul 2020 03:00:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 01:46:41 GMT
+# Wed, 22 Jul 2020 03:00:55 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 09 Jun 2020 16:38:01 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 16:38:02 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:21 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Jun 2020 16:39:26 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 16 Jul 2020 22:40:33 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_VERSION=8u262
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_URL_VERSION=8u262b10
-# Thu, 16 Jul 2020 22:40:39 GMT
+# Wed, 22 Jul 2020 22:42:28 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base;   rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 16 Jul 2020 23:02:31 GMT
+# Thu, 23 Jul 2020 08:39:06 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Wed, 22 Jul 2020 00:20:30 GMT
+# Thu, 23 Jul 2020 08:49:14 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.11.1/flink-1.11.1-bin-scala_2.11.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.11.1/flink-1.11.1-bin-scala_2.11.tgz.asc GPG_KEY=6B6291A8502BA8F0913AE04DDEB95B05BF075300 CHECK_GPG=true
-# Wed, 22 Jul 2020 00:20:31 GMT
+# Thu, 23 Jul 2020 08:49:14 GMT
 ENV FLINK_HOME=/opt/flink
-# Wed, 22 Jul 2020 00:20:31 GMT
+# Thu, 23 Jul 2020 08:49:14 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Jul 2020 00:20:33 GMT
+# Thu, 23 Jul 2020 08:49:15 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Wed, 22 Jul 2020 00:20:33 GMT
+# Thu, 23 Jul 2020 08:49:15 GMT
 WORKDIR /opt/flink
-# Wed, 22 Jul 2020 00:21:23 GMT
+# Thu, 23 Jul 2020 08:49:40 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Wed, 22 Jul 2020 00:21:24 GMT
+# Thu, 23 Jul 2020 08:49:41 GMT
 COPY file:5118b9265b7774ef32131b2cbf42fd9bf26c640be3ebb42b4972a3ae8ed5125e in / 
-# Wed, 22 Jul 2020 00:21:24 GMT
+# Thu, 23 Jul 2020 08:49:41 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 22 Jul 2020 00:21:24 GMT
+# Thu, 23 Jul 2020 08:49:41 GMT
 EXPOSE 6123 8081
-# Wed, 22 Jul 2020 00:21:25 GMT
+# Thu, 23 Jul 2020 08:49:41 GMT
 CMD ["help"]
 ```
 
 -	Layers:
-	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
-		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
-		Size: 50.4 MB (50389504 bytes)  
+	-	`sha256:31dd5ebca5efc5e96a425402fa85e492b02c8fe757dfd3edfdea2a7c67322909`  
+		Last Modified: Wed, 22 Jul 2020 02:09:37 GMT  
+		Size: 50.4 MB (50390325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 7.8 MB (7811709 bytes)  
+	-	`sha256:3ed641c4ae9821ca3c399071ea82ae667237acbcaad1e367c3e1e87fc967834c`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 7.8 MB (7811702 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 10.0 MB (9996168 bytes)  
+	-	`sha256:bcd57146431eae70720cf24877e818256ae1a30b9c1c9e7d0ad093c945ca0af2`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 10.0 MB (9996319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
-		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
-		Size: 5.5 MB (5529317 bytes)  
+	-	`sha256:f49dd46492913ebc75f7ee834a77d90bb0ebf30d78f3aff2a2f2018ad7299f81`  
+		Last Modified: Wed, 22 Jul 2020 22:47:55 GMT  
+		Size: 5.5 MB (5529328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:037cc5cb1b833b9fa2dd445b932781d8863c0d63f6be2b546720f9c84599f56e`  
-		Last Modified: Tue, 09 Jun 2020 16:46:49 GMT  
-		Size: 210.0 B  
+	-	`sha256:f6034d6cdb9bd996e89db23fa6b5e5b3f7a1369a34619c509cd721a7e7d1b66f`  
+		Last Modified: Wed, 22 Jul 2020 22:48:58 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3efdb3316144cd13b6715043917151ecc6d9e3cff047dacd24e967f4cb154e4`  
-		Last Modified: Thu, 16 Jul 2020 22:46:41 GMT  
-		Size: 40.3 MB (40335807 bytes)  
+	-	`sha256:b6de3914f4ed2ccf9a59bdb6cc44ae82c567b75a5d62158936342740dedd4ef2`  
+		Last Modified: Wed, 22 Jul 2020 22:49:04 GMT  
+		Size: 40.3 MB (40335782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf82d2b871adf7352caad81dc2cb27f8b7b3129c2dc2f469ef26169b5a9c2a54`  
-		Last Modified: Thu, 16 Jul 2020 23:04:24 GMT  
-		Size: 531.1 KB (531078 bytes)  
+	-	`sha256:bf65673c35bee6e90f2266e9db0e816a7db9d8023f1117bd8b1037bb8861bb47`  
+		Last Modified: Thu, 23 Jul 2020 08:50:25 GMT  
+		Size: 531.0 KB (531028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ff2e8c5d83fd3247fc6d2f37f8c51f9377eaf914fcb255ec9aff342b16c0b9b`  
-		Last Modified: Thu, 16 Jul 2020 23:04:23 GMT  
-		Size: 900.5 KB (900509 bytes)  
+	-	`sha256:8c6dfaaaa32b9988cb48b3ef404f237d2699c14bbca1e2e9bc5286843f5769cf`  
+		Last Modified: Thu, 23 Jul 2020 08:50:23 GMT  
+		Size: 900.5 KB (900511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfa33ddc82a3e8bcc0f5aea08e4e3b67ddb3544459c8138a3b9d3933fd1b2278`  
-		Last Modified: Wed, 22 Jul 2020 00:32:17 GMT  
-		Size: 4.6 KB (4605 bytes)  
+	-	`sha256:047fdaf8a1162c2a75885c9c91bd1b8d8654b40fe393d74664d763960c387ac0`  
+		Last Modified: Thu, 23 Jul 2020 08:51:05 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e33bf2a2efd87fd624354bd21934b68dc66a1c79a97190e1b96076542b59b62`  
-		Last Modified: Wed, 22 Jul 2020 00:32:17 GMT  
-		Size: 113.0 B  
+	-	`sha256:85998f96878919a67724e681908cf9a70535fb563c3f83492f46ea0978674a80`  
+		Last Modified: Thu, 23 Jul 2020 08:51:05 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a1c8f8a779d5f340c755764d8c041f013e1cf1649b2316138a1c26c7ec356fb`  
-		Last Modified: Wed, 22 Jul 2020 00:32:46 GMT  
-		Size: 322.2 MB (322235495 bytes)  
+	-	`sha256:b9247e6051970a5141fe5ac3941940668178f66188a19201c52950bf4fbe1670`  
+		Last Modified: Thu, 23 Jul 2020 08:51:22 GMT  
+		Size: 322.2 MB (322235199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9baa485fa53bfae45538901b0eafce4d637f2e0fc938747ea5ef5d593e407e8a`  
-		Last Modified: Wed, 22 Jul 2020 00:32:17 GMT  
+	-	`sha256:b609a9b875ccea0602ffcc6b223f5b3e60261d3a882457522215364f7dd1d7c7`  
+		Last Modified: Thu, 23 Jul 2020 08:51:05 GMT  
 		Size: 1.7 KB (1688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.11.1-scala_2.12`
 
 ```console
-$ docker pull flink@sha256:96fee5debc94bf4f3ab186ac7ee4e8b453db3e8aafedd49fec448268626f5e70
+$ docker pull flink@sha256:36b945aedcac9cf0a622daafe2d96e79a942ec57698431b12709f1e3a4bb040c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1192,126 +1192,126 @@ $ docker pull flink@sha256:96fee5debc94bf4f3ab186ac7ee4e8b453db3e8aafedd49fec448
 ### `flink:1.11.1-scala_2.12` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:c3a2c59da83a9ac06f8941a798ed905730f951a7cfccf58f6599de0ad588d114
+$ docker pull flink@sha256:1581fa5555a4d42f2e9c3c8cacd91873b50afa16eef9b7ce863ac1063daf4d97
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **428.4 MB (428352060 bytes)**  
+-	Total Size: **428.4 MB (428352833 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e1cb1e99e3175c1f0db8be87a784e11d92fa17d3023dc523bea6fe6990b7a03`
+-	Image ID: `sha256:b94ce2cc8f33468b684b7e9638cce18a426478ca8551177f0e1d240077db02ea`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
 ```dockerfile
-# Tue, 09 Jun 2020 01:20:39 GMT
-ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
-# Tue, 09 Jun 2020 01:20:39 GMT
+# Wed, 22 Jul 2020 02:03:16 GMT
+ADD file:89dfd7d3ed77fd5e05f20a0ab631142207ae462f5bbd877f8745d3930c751d87 in / 
+# Wed, 22 Jul 2020 02:03:16 GMT
 CMD ["bash"]
-# Tue, 09 Jun 2020 01:46:35 GMT
+# Wed, 22 Jul 2020 03:00:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 01:46:41 GMT
+# Wed, 22 Jul 2020 03:00:55 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 09 Jun 2020 16:38:01 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 16:38:02 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:21 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Jun 2020 16:39:26 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 16 Jul 2020 22:40:33 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_VERSION=8u262
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_URL_VERSION=8u262b10
-# Thu, 16 Jul 2020 22:40:39 GMT
+# Wed, 22 Jul 2020 22:42:28 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base;   rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 16 Jul 2020 23:02:31 GMT
+# Thu, 23 Jul 2020 08:39:06 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Wed, 22 Jul 2020 00:21:36 GMT
+# Thu, 23 Jul 2020 08:49:48 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.11.1/flink-1.11.1-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.11.1/flink-1.11.1-bin-scala_2.12.tgz.asc GPG_KEY=6B6291A8502BA8F0913AE04DDEB95B05BF075300 CHECK_GPG=true
-# Wed, 22 Jul 2020 00:21:36 GMT
+# Thu, 23 Jul 2020 08:49:48 GMT
 ENV FLINK_HOME=/opt/flink
-# Wed, 22 Jul 2020 00:21:37 GMT
+# Thu, 23 Jul 2020 08:49:48 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Jul 2020 00:21:38 GMT
+# Thu, 23 Jul 2020 08:49:49 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Wed, 22 Jul 2020 00:21:39 GMT
+# Thu, 23 Jul 2020 08:49:49 GMT
 WORKDIR /opt/flink
-# Wed, 22 Jul 2020 00:31:44 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Wed, 22 Jul 2020 00:31:45 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 COPY file:5118b9265b7774ef32131b2cbf42fd9bf26c640be3ebb42b4972a3ae8ed5125e in / 
-# Wed, 22 Jul 2020 00:31:45 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 22 Jul 2020 00:31:46 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 EXPOSE 6123 8081
-# Wed, 22 Jul 2020 00:31:46 GMT
+# Thu, 23 Jul 2020 08:50:13 GMT
 CMD ["help"]
 ```
 
 -	Layers:
-	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
-		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
-		Size: 50.4 MB (50389504 bytes)  
+	-	`sha256:31dd5ebca5efc5e96a425402fa85e492b02c8fe757dfd3edfdea2a7c67322909`  
+		Last Modified: Wed, 22 Jul 2020 02:09:37 GMT  
+		Size: 50.4 MB (50390325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 7.8 MB (7811709 bytes)  
+	-	`sha256:3ed641c4ae9821ca3c399071ea82ae667237acbcaad1e367c3e1e87fc967834c`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 7.8 MB (7811702 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 10.0 MB (9996168 bytes)  
+	-	`sha256:bcd57146431eae70720cf24877e818256ae1a30b9c1c9e7d0ad093c945ca0af2`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 10.0 MB (9996319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
-		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
-		Size: 5.5 MB (5529317 bytes)  
+	-	`sha256:f49dd46492913ebc75f7ee834a77d90bb0ebf30d78f3aff2a2f2018ad7299f81`  
+		Last Modified: Wed, 22 Jul 2020 22:47:55 GMT  
+		Size: 5.5 MB (5529328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:037cc5cb1b833b9fa2dd445b932781d8863c0d63f6be2b546720f9c84599f56e`  
-		Last Modified: Tue, 09 Jun 2020 16:46:49 GMT  
-		Size: 210.0 B  
+	-	`sha256:f6034d6cdb9bd996e89db23fa6b5e5b3f7a1369a34619c509cd721a7e7d1b66f`  
+		Last Modified: Wed, 22 Jul 2020 22:48:58 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3efdb3316144cd13b6715043917151ecc6d9e3cff047dacd24e967f4cb154e4`  
-		Last Modified: Thu, 16 Jul 2020 22:46:41 GMT  
-		Size: 40.3 MB (40335807 bytes)  
+	-	`sha256:b6de3914f4ed2ccf9a59bdb6cc44ae82c567b75a5d62158936342740dedd4ef2`  
+		Last Modified: Wed, 22 Jul 2020 22:49:04 GMT  
+		Size: 40.3 MB (40335782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf82d2b871adf7352caad81dc2cb27f8b7b3129c2dc2f469ef26169b5a9c2a54`  
-		Last Modified: Thu, 16 Jul 2020 23:04:24 GMT  
-		Size: 531.1 KB (531078 bytes)  
+	-	`sha256:bf65673c35bee6e90f2266e9db0e816a7db9d8023f1117bd8b1037bb8861bb47`  
+		Last Modified: Thu, 23 Jul 2020 08:50:25 GMT  
+		Size: 531.0 KB (531028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ff2e8c5d83fd3247fc6d2f37f8c51f9377eaf914fcb255ec9aff342b16c0b9b`  
-		Last Modified: Thu, 16 Jul 2020 23:04:23 GMT  
-		Size: 900.5 KB (900509 bytes)  
+	-	`sha256:8c6dfaaaa32b9988cb48b3ef404f237d2699c14bbca1e2e9bc5286843f5769cf`  
+		Last Modified: Thu, 23 Jul 2020 08:50:23 GMT  
+		Size: 900.5 KB (900511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f19ebd3f52b017c88df46c3d1611a63907b5837b8450a85fbec820c048797d3`  
-		Last Modified: Wed, 22 Jul 2020 00:32:52 GMT  
-		Size: 4.6 KB (4606 bytes)  
+	-	`sha256:f2dc30f3cddd48d68a3fb84f73b9b3ddaf36a10606652cc779175bb4ffd7dd6f`  
+		Last Modified: Thu, 23 Jul 2020 08:51:27 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15b9502269d0ad3ca059076a5c3b26cd6b262ea4e2e3a3c28f3ad574448ded31`  
-		Last Modified: Wed, 22 Jul 2020 00:32:52 GMT  
-		Size: 114.0 B  
+	-	`sha256:83c6e5bd6075de0a9f5b6ded0ba5128a9089d7cbac4e3bb6b6102ed33df65ed4`  
+		Last Modified: Thu, 23 Jul 2020 08:51:27 GMT  
+		Size: 112.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f36379f3533afe9359626b6f9252fe501ed5af6c528a592479c5e124792a43c`  
-		Last Modified: Wed, 22 Jul 2020 00:33:20 GMT  
-		Size: 312.9 MB (312851350 bytes)  
+	-	`sha256:e7de597e1de15e68c4ebd8b1937643450f492c47b5bd86abf8b11a8821b785ef`  
+		Last Modified: Thu, 23 Jul 2020 08:51:44 GMT  
+		Size: 312.9 MB (312851223 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc1e58637d2845781505a6c8daa8d3804aa6ad304f77be4e0d94d59b16cff391`  
-		Last Modified: Wed, 22 Jul 2020 00:32:53 GMT  
+	-	`sha256:8fe30545bb01f3d6efc88428d8b4a6ffc7a1f11fb9ec482de4d2ddf7c052b2f7`  
+		Last Modified: Thu, 23 Jul 2020 08:51:27 GMT  
 		Size: 1.7 KB (1688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.11-scala_2.11`
 
 ```console
-$ docker pull flink@sha256:e5fe105dab0c399289e5d498bfef3e2287619ce892bfeaa40c98446a5a951f42
+$ docker pull flink@sha256:ece3756ee673c0b3f60152c70c858b72ac73b379602b50422654fd86cc99a4b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1321,126 +1321,126 @@ $ docker pull flink@sha256:e5fe105dab0c399289e5d498bfef3e2287619ce892bfeaa40c984
 ### `flink:1.11-scala_2.11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:482352e48a8e60bba9e8f5c69963236f0d259e7b1e9eecbc4ef470fcef82c666
+$ docker pull flink@sha256:41fc0b2d808fb748f67e9a426e2f729637f611613f83f0c98bea72a2cd427377
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **437.7 MB (437736203 bytes)**  
+-	Total Size: **437.7 MB (437736811 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b80bf59fa00abb586727d4186cc6e7c0cd991f38a35978dcf4b90fcca2c032b3`
+-	Image ID: `sha256:5580b449cc79fbecbce23b5a3303d6526c014c3871f00526395902a628eb2aa3`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
 ```dockerfile
-# Tue, 09 Jun 2020 01:20:39 GMT
-ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
-# Tue, 09 Jun 2020 01:20:39 GMT
+# Wed, 22 Jul 2020 02:03:16 GMT
+ADD file:89dfd7d3ed77fd5e05f20a0ab631142207ae462f5bbd877f8745d3930c751d87 in / 
+# Wed, 22 Jul 2020 02:03:16 GMT
 CMD ["bash"]
-# Tue, 09 Jun 2020 01:46:35 GMT
+# Wed, 22 Jul 2020 03:00:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 01:46:41 GMT
+# Wed, 22 Jul 2020 03:00:55 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 09 Jun 2020 16:38:01 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 16:38:02 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:21 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Jun 2020 16:39:26 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 16 Jul 2020 22:40:33 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_VERSION=8u262
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_URL_VERSION=8u262b10
-# Thu, 16 Jul 2020 22:40:39 GMT
+# Wed, 22 Jul 2020 22:42:28 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base;   rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 16 Jul 2020 23:02:31 GMT
+# Thu, 23 Jul 2020 08:39:06 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Wed, 22 Jul 2020 00:20:30 GMT
+# Thu, 23 Jul 2020 08:49:14 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.11.1/flink-1.11.1-bin-scala_2.11.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.11.1/flink-1.11.1-bin-scala_2.11.tgz.asc GPG_KEY=6B6291A8502BA8F0913AE04DDEB95B05BF075300 CHECK_GPG=true
-# Wed, 22 Jul 2020 00:20:31 GMT
+# Thu, 23 Jul 2020 08:49:14 GMT
 ENV FLINK_HOME=/opt/flink
-# Wed, 22 Jul 2020 00:20:31 GMT
+# Thu, 23 Jul 2020 08:49:14 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Jul 2020 00:20:33 GMT
+# Thu, 23 Jul 2020 08:49:15 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Wed, 22 Jul 2020 00:20:33 GMT
+# Thu, 23 Jul 2020 08:49:15 GMT
 WORKDIR /opt/flink
-# Wed, 22 Jul 2020 00:21:23 GMT
+# Thu, 23 Jul 2020 08:49:40 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Wed, 22 Jul 2020 00:21:24 GMT
+# Thu, 23 Jul 2020 08:49:41 GMT
 COPY file:5118b9265b7774ef32131b2cbf42fd9bf26c640be3ebb42b4972a3ae8ed5125e in / 
-# Wed, 22 Jul 2020 00:21:24 GMT
+# Thu, 23 Jul 2020 08:49:41 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 22 Jul 2020 00:21:24 GMT
+# Thu, 23 Jul 2020 08:49:41 GMT
 EXPOSE 6123 8081
-# Wed, 22 Jul 2020 00:21:25 GMT
+# Thu, 23 Jul 2020 08:49:41 GMT
 CMD ["help"]
 ```
 
 -	Layers:
-	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
-		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
-		Size: 50.4 MB (50389504 bytes)  
+	-	`sha256:31dd5ebca5efc5e96a425402fa85e492b02c8fe757dfd3edfdea2a7c67322909`  
+		Last Modified: Wed, 22 Jul 2020 02:09:37 GMT  
+		Size: 50.4 MB (50390325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 7.8 MB (7811709 bytes)  
+	-	`sha256:3ed641c4ae9821ca3c399071ea82ae667237acbcaad1e367c3e1e87fc967834c`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 7.8 MB (7811702 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 10.0 MB (9996168 bytes)  
+	-	`sha256:bcd57146431eae70720cf24877e818256ae1a30b9c1c9e7d0ad093c945ca0af2`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 10.0 MB (9996319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
-		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
-		Size: 5.5 MB (5529317 bytes)  
+	-	`sha256:f49dd46492913ebc75f7ee834a77d90bb0ebf30d78f3aff2a2f2018ad7299f81`  
+		Last Modified: Wed, 22 Jul 2020 22:47:55 GMT  
+		Size: 5.5 MB (5529328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:037cc5cb1b833b9fa2dd445b932781d8863c0d63f6be2b546720f9c84599f56e`  
-		Last Modified: Tue, 09 Jun 2020 16:46:49 GMT  
-		Size: 210.0 B  
+	-	`sha256:f6034d6cdb9bd996e89db23fa6b5e5b3f7a1369a34619c509cd721a7e7d1b66f`  
+		Last Modified: Wed, 22 Jul 2020 22:48:58 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3efdb3316144cd13b6715043917151ecc6d9e3cff047dacd24e967f4cb154e4`  
-		Last Modified: Thu, 16 Jul 2020 22:46:41 GMT  
-		Size: 40.3 MB (40335807 bytes)  
+	-	`sha256:b6de3914f4ed2ccf9a59bdb6cc44ae82c567b75a5d62158936342740dedd4ef2`  
+		Last Modified: Wed, 22 Jul 2020 22:49:04 GMT  
+		Size: 40.3 MB (40335782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf82d2b871adf7352caad81dc2cb27f8b7b3129c2dc2f469ef26169b5a9c2a54`  
-		Last Modified: Thu, 16 Jul 2020 23:04:24 GMT  
-		Size: 531.1 KB (531078 bytes)  
+	-	`sha256:bf65673c35bee6e90f2266e9db0e816a7db9d8023f1117bd8b1037bb8861bb47`  
+		Last Modified: Thu, 23 Jul 2020 08:50:25 GMT  
+		Size: 531.0 KB (531028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ff2e8c5d83fd3247fc6d2f37f8c51f9377eaf914fcb255ec9aff342b16c0b9b`  
-		Last Modified: Thu, 16 Jul 2020 23:04:23 GMT  
-		Size: 900.5 KB (900509 bytes)  
+	-	`sha256:8c6dfaaaa32b9988cb48b3ef404f237d2699c14bbca1e2e9bc5286843f5769cf`  
+		Last Modified: Thu, 23 Jul 2020 08:50:23 GMT  
+		Size: 900.5 KB (900511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfa33ddc82a3e8bcc0f5aea08e4e3b67ddb3544459c8138a3b9d3933fd1b2278`  
-		Last Modified: Wed, 22 Jul 2020 00:32:17 GMT  
-		Size: 4.6 KB (4605 bytes)  
+	-	`sha256:047fdaf8a1162c2a75885c9c91bd1b8d8654b40fe393d74664d763960c387ac0`  
+		Last Modified: Thu, 23 Jul 2020 08:51:05 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e33bf2a2efd87fd624354bd21934b68dc66a1c79a97190e1b96076542b59b62`  
-		Last Modified: Wed, 22 Jul 2020 00:32:17 GMT  
-		Size: 113.0 B  
+	-	`sha256:85998f96878919a67724e681908cf9a70535fb563c3f83492f46ea0978674a80`  
+		Last Modified: Thu, 23 Jul 2020 08:51:05 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a1c8f8a779d5f340c755764d8c041f013e1cf1649b2316138a1c26c7ec356fb`  
-		Last Modified: Wed, 22 Jul 2020 00:32:46 GMT  
-		Size: 322.2 MB (322235495 bytes)  
+	-	`sha256:b9247e6051970a5141fe5ac3941940668178f66188a19201c52950bf4fbe1670`  
+		Last Modified: Thu, 23 Jul 2020 08:51:22 GMT  
+		Size: 322.2 MB (322235199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9baa485fa53bfae45538901b0eafce4d637f2e0fc938747ea5ef5d593e407e8a`  
-		Last Modified: Wed, 22 Jul 2020 00:32:17 GMT  
+	-	`sha256:b609a9b875ccea0602ffcc6b223f5b3e60261d3a882457522215364f7dd1d7c7`  
+		Last Modified: Thu, 23 Jul 2020 08:51:05 GMT  
 		Size: 1.7 KB (1688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.11-scala_2.12`
 
 ```console
-$ docker pull flink@sha256:96fee5debc94bf4f3ab186ac7ee4e8b453db3e8aafedd49fec448268626f5e70
+$ docker pull flink@sha256:36b945aedcac9cf0a622daafe2d96e79a942ec57698431b12709f1e3a4bb040c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1450,126 +1450,126 @@ $ docker pull flink@sha256:96fee5debc94bf4f3ab186ac7ee4e8b453db3e8aafedd49fec448
 ### `flink:1.11-scala_2.12` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:c3a2c59da83a9ac06f8941a798ed905730f951a7cfccf58f6599de0ad588d114
+$ docker pull flink@sha256:1581fa5555a4d42f2e9c3c8cacd91873b50afa16eef9b7ce863ac1063daf4d97
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **428.4 MB (428352060 bytes)**  
+-	Total Size: **428.4 MB (428352833 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e1cb1e99e3175c1f0db8be87a784e11d92fa17d3023dc523bea6fe6990b7a03`
+-	Image ID: `sha256:b94ce2cc8f33468b684b7e9638cce18a426478ca8551177f0e1d240077db02ea`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
 ```dockerfile
-# Tue, 09 Jun 2020 01:20:39 GMT
-ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
-# Tue, 09 Jun 2020 01:20:39 GMT
+# Wed, 22 Jul 2020 02:03:16 GMT
+ADD file:89dfd7d3ed77fd5e05f20a0ab631142207ae462f5bbd877f8745d3930c751d87 in / 
+# Wed, 22 Jul 2020 02:03:16 GMT
 CMD ["bash"]
-# Tue, 09 Jun 2020 01:46:35 GMT
+# Wed, 22 Jul 2020 03:00:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 01:46:41 GMT
+# Wed, 22 Jul 2020 03:00:55 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 09 Jun 2020 16:38:01 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 16:38:02 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:21 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Jun 2020 16:39:26 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 16 Jul 2020 22:40:33 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_VERSION=8u262
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_URL_VERSION=8u262b10
-# Thu, 16 Jul 2020 22:40:39 GMT
+# Wed, 22 Jul 2020 22:42:28 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base;   rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 16 Jul 2020 23:02:31 GMT
+# Thu, 23 Jul 2020 08:39:06 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Wed, 22 Jul 2020 00:21:36 GMT
+# Thu, 23 Jul 2020 08:49:48 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.11.1/flink-1.11.1-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.11.1/flink-1.11.1-bin-scala_2.12.tgz.asc GPG_KEY=6B6291A8502BA8F0913AE04DDEB95B05BF075300 CHECK_GPG=true
-# Wed, 22 Jul 2020 00:21:36 GMT
+# Thu, 23 Jul 2020 08:49:48 GMT
 ENV FLINK_HOME=/opt/flink
-# Wed, 22 Jul 2020 00:21:37 GMT
+# Thu, 23 Jul 2020 08:49:48 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Jul 2020 00:21:38 GMT
+# Thu, 23 Jul 2020 08:49:49 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Wed, 22 Jul 2020 00:21:39 GMT
+# Thu, 23 Jul 2020 08:49:49 GMT
 WORKDIR /opt/flink
-# Wed, 22 Jul 2020 00:31:44 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Wed, 22 Jul 2020 00:31:45 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 COPY file:5118b9265b7774ef32131b2cbf42fd9bf26c640be3ebb42b4972a3ae8ed5125e in / 
-# Wed, 22 Jul 2020 00:31:45 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 22 Jul 2020 00:31:46 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 EXPOSE 6123 8081
-# Wed, 22 Jul 2020 00:31:46 GMT
+# Thu, 23 Jul 2020 08:50:13 GMT
 CMD ["help"]
 ```
 
 -	Layers:
-	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
-		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
-		Size: 50.4 MB (50389504 bytes)  
+	-	`sha256:31dd5ebca5efc5e96a425402fa85e492b02c8fe757dfd3edfdea2a7c67322909`  
+		Last Modified: Wed, 22 Jul 2020 02:09:37 GMT  
+		Size: 50.4 MB (50390325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 7.8 MB (7811709 bytes)  
+	-	`sha256:3ed641c4ae9821ca3c399071ea82ae667237acbcaad1e367c3e1e87fc967834c`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 7.8 MB (7811702 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 10.0 MB (9996168 bytes)  
+	-	`sha256:bcd57146431eae70720cf24877e818256ae1a30b9c1c9e7d0ad093c945ca0af2`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 10.0 MB (9996319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
-		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
-		Size: 5.5 MB (5529317 bytes)  
+	-	`sha256:f49dd46492913ebc75f7ee834a77d90bb0ebf30d78f3aff2a2f2018ad7299f81`  
+		Last Modified: Wed, 22 Jul 2020 22:47:55 GMT  
+		Size: 5.5 MB (5529328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:037cc5cb1b833b9fa2dd445b932781d8863c0d63f6be2b546720f9c84599f56e`  
-		Last Modified: Tue, 09 Jun 2020 16:46:49 GMT  
-		Size: 210.0 B  
+	-	`sha256:f6034d6cdb9bd996e89db23fa6b5e5b3f7a1369a34619c509cd721a7e7d1b66f`  
+		Last Modified: Wed, 22 Jul 2020 22:48:58 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3efdb3316144cd13b6715043917151ecc6d9e3cff047dacd24e967f4cb154e4`  
-		Last Modified: Thu, 16 Jul 2020 22:46:41 GMT  
-		Size: 40.3 MB (40335807 bytes)  
+	-	`sha256:b6de3914f4ed2ccf9a59bdb6cc44ae82c567b75a5d62158936342740dedd4ef2`  
+		Last Modified: Wed, 22 Jul 2020 22:49:04 GMT  
+		Size: 40.3 MB (40335782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf82d2b871adf7352caad81dc2cb27f8b7b3129c2dc2f469ef26169b5a9c2a54`  
-		Last Modified: Thu, 16 Jul 2020 23:04:24 GMT  
-		Size: 531.1 KB (531078 bytes)  
+	-	`sha256:bf65673c35bee6e90f2266e9db0e816a7db9d8023f1117bd8b1037bb8861bb47`  
+		Last Modified: Thu, 23 Jul 2020 08:50:25 GMT  
+		Size: 531.0 KB (531028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ff2e8c5d83fd3247fc6d2f37f8c51f9377eaf914fcb255ec9aff342b16c0b9b`  
-		Last Modified: Thu, 16 Jul 2020 23:04:23 GMT  
-		Size: 900.5 KB (900509 bytes)  
+	-	`sha256:8c6dfaaaa32b9988cb48b3ef404f237d2699c14bbca1e2e9bc5286843f5769cf`  
+		Last Modified: Thu, 23 Jul 2020 08:50:23 GMT  
+		Size: 900.5 KB (900511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f19ebd3f52b017c88df46c3d1611a63907b5837b8450a85fbec820c048797d3`  
-		Last Modified: Wed, 22 Jul 2020 00:32:52 GMT  
-		Size: 4.6 KB (4606 bytes)  
+	-	`sha256:f2dc30f3cddd48d68a3fb84f73b9b3ddaf36a10606652cc779175bb4ffd7dd6f`  
+		Last Modified: Thu, 23 Jul 2020 08:51:27 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15b9502269d0ad3ca059076a5c3b26cd6b262ea4e2e3a3c28f3ad574448ded31`  
-		Last Modified: Wed, 22 Jul 2020 00:32:52 GMT  
-		Size: 114.0 B  
+	-	`sha256:83c6e5bd6075de0a9f5b6ded0ba5128a9089d7cbac4e3bb6b6102ed33df65ed4`  
+		Last Modified: Thu, 23 Jul 2020 08:51:27 GMT  
+		Size: 112.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f36379f3533afe9359626b6f9252fe501ed5af6c528a592479c5e124792a43c`  
-		Last Modified: Wed, 22 Jul 2020 00:33:20 GMT  
-		Size: 312.9 MB (312851350 bytes)  
+	-	`sha256:e7de597e1de15e68c4ebd8b1937643450f492c47b5bd86abf8b11a8821b785ef`  
+		Last Modified: Thu, 23 Jul 2020 08:51:44 GMT  
+		Size: 312.9 MB (312851223 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc1e58637d2845781505a6c8daa8d3804aa6ad304f77be4e0d94d59b16cff391`  
-		Last Modified: Wed, 22 Jul 2020 00:32:53 GMT  
+	-	`sha256:8fe30545bb01f3d6efc88428d8b4a6ffc7a1f11fb9ec482de4d2ddf7c052b2f7`  
+		Last Modified: Thu, 23 Jul 2020 08:51:27 GMT  
 		Size: 1.7 KB (1688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:latest`
 
 ```console
-$ docker pull flink@sha256:96fee5debc94bf4f3ab186ac7ee4e8b453db3e8aafedd49fec448268626f5e70
+$ docker pull flink@sha256:36b945aedcac9cf0a622daafe2d96e79a942ec57698431b12709f1e3a4bb040c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1579,126 +1579,126 @@ $ docker pull flink@sha256:96fee5debc94bf4f3ab186ac7ee4e8b453db3e8aafedd49fec448
 ### `flink:latest` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:c3a2c59da83a9ac06f8941a798ed905730f951a7cfccf58f6599de0ad588d114
+$ docker pull flink@sha256:1581fa5555a4d42f2e9c3c8cacd91873b50afa16eef9b7ce863ac1063daf4d97
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **428.4 MB (428352060 bytes)**  
+-	Total Size: **428.4 MB (428352833 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e1cb1e99e3175c1f0db8be87a784e11d92fa17d3023dc523bea6fe6990b7a03`
+-	Image ID: `sha256:b94ce2cc8f33468b684b7e9638cce18a426478ca8551177f0e1d240077db02ea`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
 ```dockerfile
-# Tue, 09 Jun 2020 01:20:39 GMT
-ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
-# Tue, 09 Jun 2020 01:20:39 GMT
+# Wed, 22 Jul 2020 02:03:16 GMT
+ADD file:89dfd7d3ed77fd5e05f20a0ab631142207ae462f5bbd877f8745d3930c751d87 in / 
+# Wed, 22 Jul 2020 02:03:16 GMT
 CMD ["bash"]
-# Tue, 09 Jun 2020 01:46:35 GMT
+# Wed, 22 Jul 2020 03:00:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 01:46:41 GMT
+# Wed, 22 Jul 2020 03:00:55 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 09 Jun 2020 16:38:01 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 16:38:02 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:21 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Jun 2020 16:39:26 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 16 Jul 2020 22:40:33 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_VERSION=8u262
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_URL_VERSION=8u262b10
-# Thu, 16 Jul 2020 22:40:39 GMT
+# Wed, 22 Jul 2020 22:42:28 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base;   rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 16 Jul 2020 23:02:31 GMT
+# Thu, 23 Jul 2020 08:39:06 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Wed, 22 Jul 2020 00:21:36 GMT
+# Thu, 23 Jul 2020 08:49:48 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.11.1/flink-1.11.1-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.11.1/flink-1.11.1-bin-scala_2.12.tgz.asc GPG_KEY=6B6291A8502BA8F0913AE04DDEB95B05BF075300 CHECK_GPG=true
-# Wed, 22 Jul 2020 00:21:36 GMT
+# Thu, 23 Jul 2020 08:49:48 GMT
 ENV FLINK_HOME=/opt/flink
-# Wed, 22 Jul 2020 00:21:37 GMT
+# Thu, 23 Jul 2020 08:49:48 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Jul 2020 00:21:38 GMT
+# Thu, 23 Jul 2020 08:49:49 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Wed, 22 Jul 2020 00:21:39 GMT
+# Thu, 23 Jul 2020 08:49:49 GMT
 WORKDIR /opt/flink
-# Wed, 22 Jul 2020 00:31:44 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Wed, 22 Jul 2020 00:31:45 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 COPY file:5118b9265b7774ef32131b2cbf42fd9bf26c640be3ebb42b4972a3ae8ed5125e in / 
-# Wed, 22 Jul 2020 00:31:45 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 22 Jul 2020 00:31:46 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 EXPOSE 6123 8081
-# Wed, 22 Jul 2020 00:31:46 GMT
+# Thu, 23 Jul 2020 08:50:13 GMT
 CMD ["help"]
 ```
 
 -	Layers:
-	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
-		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
-		Size: 50.4 MB (50389504 bytes)  
+	-	`sha256:31dd5ebca5efc5e96a425402fa85e492b02c8fe757dfd3edfdea2a7c67322909`  
+		Last Modified: Wed, 22 Jul 2020 02:09:37 GMT  
+		Size: 50.4 MB (50390325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 7.8 MB (7811709 bytes)  
+	-	`sha256:3ed641c4ae9821ca3c399071ea82ae667237acbcaad1e367c3e1e87fc967834c`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 7.8 MB (7811702 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 10.0 MB (9996168 bytes)  
+	-	`sha256:bcd57146431eae70720cf24877e818256ae1a30b9c1c9e7d0ad093c945ca0af2`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 10.0 MB (9996319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
-		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
-		Size: 5.5 MB (5529317 bytes)  
+	-	`sha256:f49dd46492913ebc75f7ee834a77d90bb0ebf30d78f3aff2a2f2018ad7299f81`  
+		Last Modified: Wed, 22 Jul 2020 22:47:55 GMT  
+		Size: 5.5 MB (5529328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:037cc5cb1b833b9fa2dd445b932781d8863c0d63f6be2b546720f9c84599f56e`  
-		Last Modified: Tue, 09 Jun 2020 16:46:49 GMT  
-		Size: 210.0 B  
+	-	`sha256:f6034d6cdb9bd996e89db23fa6b5e5b3f7a1369a34619c509cd721a7e7d1b66f`  
+		Last Modified: Wed, 22 Jul 2020 22:48:58 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3efdb3316144cd13b6715043917151ecc6d9e3cff047dacd24e967f4cb154e4`  
-		Last Modified: Thu, 16 Jul 2020 22:46:41 GMT  
-		Size: 40.3 MB (40335807 bytes)  
+	-	`sha256:b6de3914f4ed2ccf9a59bdb6cc44ae82c567b75a5d62158936342740dedd4ef2`  
+		Last Modified: Wed, 22 Jul 2020 22:49:04 GMT  
+		Size: 40.3 MB (40335782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf82d2b871adf7352caad81dc2cb27f8b7b3129c2dc2f469ef26169b5a9c2a54`  
-		Last Modified: Thu, 16 Jul 2020 23:04:24 GMT  
-		Size: 531.1 KB (531078 bytes)  
+	-	`sha256:bf65673c35bee6e90f2266e9db0e816a7db9d8023f1117bd8b1037bb8861bb47`  
+		Last Modified: Thu, 23 Jul 2020 08:50:25 GMT  
+		Size: 531.0 KB (531028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ff2e8c5d83fd3247fc6d2f37f8c51f9377eaf914fcb255ec9aff342b16c0b9b`  
-		Last Modified: Thu, 16 Jul 2020 23:04:23 GMT  
-		Size: 900.5 KB (900509 bytes)  
+	-	`sha256:8c6dfaaaa32b9988cb48b3ef404f237d2699c14bbca1e2e9bc5286843f5769cf`  
+		Last Modified: Thu, 23 Jul 2020 08:50:23 GMT  
+		Size: 900.5 KB (900511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f19ebd3f52b017c88df46c3d1611a63907b5837b8450a85fbec820c048797d3`  
-		Last Modified: Wed, 22 Jul 2020 00:32:52 GMT  
-		Size: 4.6 KB (4606 bytes)  
+	-	`sha256:f2dc30f3cddd48d68a3fb84f73b9b3ddaf36a10606652cc779175bb4ffd7dd6f`  
+		Last Modified: Thu, 23 Jul 2020 08:51:27 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15b9502269d0ad3ca059076a5c3b26cd6b262ea4e2e3a3c28f3ad574448ded31`  
-		Last Modified: Wed, 22 Jul 2020 00:32:52 GMT  
-		Size: 114.0 B  
+	-	`sha256:83c6e5bd6075de0a9f5b6ded0ba5128a9089d7cbac4e3bb6b6102ed33df65ed4`  
+		Last Modified: Thu, 23 Jul 2020 08:51:27 GMT  
+		Size: 112.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f36379f3533afe9359626b6f9252fe501ed5af6c528a592479c5e124792a43c`  
-		Last Modified: Wed, 22 Jul 2020 00:33:20 GMT  
-		Size: 312.9 MB (312851350 bytes)  
+	-	`sha256:e7de597e1de15e68c4ebd8b1937643450f492c47b5bd86abf8b11a8821b785ef`  
+		Last Modified: Thu, 23 Jul 2020 08:51:44 GMT  
+		Size: 312.9 MB (312851223 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc1e58637d2845781505a6c8daa8d3804aa6ad304f77be4e0d94d59b16cff391`  
-		Last Modified: Wed, 22 Jul 2020 00:32:53 GMT  
+	-	`sha256:8fe30545bb01f3d6efc88428d8b4a6ffc7a1f11fb9ec482de4d2ddf7c052b2f7`  
+		Last Modified: Thu, 23 Jul 2020 08:51:27 GMT  
 		Size: 1.7 KB (1688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:scala_2.11`
 
 ```console
-$ docker pull flink@sha256:e5fe105dab0c399289e5d498bfef3e2287619ce892bfeaa40c98446a5a951f42
+$ docker pull flink@sha256:ece3756ee673c0b3f60152c70c858b72ac73b379602b50422654fd86cc99a4b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1708,126 +1708,126 @@ $ docker pull flink@sha256:e5fe105dab0c399289e5d498bfef3e2287619ce892bfeaa40c984
 ### `flink:scala_2.11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:482352e48a8e60bba9e8f5c69963236f0d259e7b1e9eecbc4ef470fcef82c666
+$ docker pull flink@sha256:41fc0b2d808fb748f67e9a426e2f729637f611613f83f0c98bea72a2cd427377
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **437.7 MB (437736203 bytes)**  
+-	Total Size: **437.7 MB (437736811 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b80bf59fa00abb586727d4186cc6e7c0cd991f38a35978dcf4b90fcca2c032b3`
+-	Image ID: `sha256:5580b449cc79fbecbce23b5a3303d6526c014c3871f00526395902a628eb2aa3`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
 ```dockerfile
-# Tue, 09 Jun 2020 01:20:39 GMT
-ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
-# Tue, 09 Jun 2020 01:20:39 GMT
+# Wed, 22 Jul 2020 02:03:16 GMT
+ADD file:89dfd7d3ed77fd5e05f20a0ab631142207ae462f5bbd877f8745d3930c751d87 in / 
+# Wed, 22 Jul 2020 02:03:16 GMT
 CMD ["bash"]
-# Tue, 09 Jun 2020 01:46:35 GMT
+# Wed, 22 Jul 2020 03:00:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 01:46:41 GMT
+# Wed, 22 Jul 2020 03:00:55 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 09 Jun 2020 16:38:01 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 16:38:02 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:21 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Jun 2020 16:39:26 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 16 Jul 2020 22:40:33 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_VERSION=8u262
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_URL_VERSION=8u262b10
-# Thu, 16 Jul 2020 22:40:39 GMT
+# Wed, 22 Jul 2020 22:42:28 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base;   rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 16 Jul 2020 23:02:31 GMT
+# Thu, 23 Jul 2020 08:39:06 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Wed, 22 Jul 2020 00:20:30 GMT
+# Thu, 23 Jul 2020 08:49:14 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.11.1/flink-1.11.1-bin-scala_2.11.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.11.1/flink-1.11.1-bin-scala_2.11.tgz.asc GPG_KEY=6B6291A8502BA8F0913AE04DDEB95B05BF075300 CHECK_GPG=true
-# Wed, 22 Jul 2020 00:20:31 GMT
+# Thu, 23 Jul 2020 08:49:14 GMT
 ENV FLINK_HOME=/opt/flink
-# Wed, 22 Jul 2020 00:20:31 GMT
+# Thu, 23 Jul 2020 08:49:14 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Jul 2020 00:20:33 GMT
+# Thu, 23 Jul 2020 08:49:15 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Wed, 22 Jul 2020 00:20:33 GMT
+# Thu, 23 Jul 2020 08:49:15 GMT
 WORKDIR /opt/flink
-# Wed, 22 Jul 2020 00:21:23 GMT
+# Thu, 23 Jul 2020 08:49:40 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Wed, 22 Jul 2020 00:21:24 GMT
+# Thu, 23 Jul 2020 08:49:41 GMT
 COPY file:5118b9265b7774ef32131b2cbf42fd9bf26c640be3ebb42b4972a3ae8ed5125e in / 
-# Wed, 22 Jul 2020 00:21:24 GMT
+# Thu, 23 Jul 2020 08:49:41 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 22 Jul 2020 00:21:24 GMT
+# Thu, 23 Jul 2020 08:49:41 GMT
 EXPOSE 6123 8081
-# Wed, 22 Jul 2020 00:21:25 GMT
+# Thu, 23 Jul 2020 08:49:41 GMT
 CMD ["help"]
 ```
 
 -	Layers:
-	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
-		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
-		Size: 50.4 MB (50389504 bytes)  
+	-	`sha256:31dd5ebca5efc5e96a425402fa85e492b02c8fe757dfd3edfdea2a7c67322909`  
+		Last Modified: Wed, 22 Jul 2020 02:09:37 GMT  
+		Size: 50.4 MB (50390325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 7.8 MB (7811709 bytes)  
+	-	`sha256:3ed641c4ae9821ca3c399071ea82ae667237acbcaad1e367c3e1e87fc967834c`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 7.8 MB (7811702 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 10.0 MB (9996168 bytes)  
+	-	`sha256:bcd57146431eae70720cf24877e818256ae1a30b9c1c9e7d0ad093c945ca0af2`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 10.0 MB (9996319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
-		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
-		Size: 5.5 MB (5529317 bytes)  
+	-	`sha256:f49dd46492913ebc75f7ee834a77d90bb0ebf30d78f3aff2a2f2018ad7299f81`  
+		Last Modified: Wed, 22 Jul 2020 22:47:55 GMT  
+		Size: 5.5 MB (5529328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:037cc5cb1b833b9fa2dd445b932781d8863c0d63f6be2b546720f9c84599f56e`  
-		Last Modified: Tue, 09 Jun 2020 16:46:49 GMT  
-		Size: 210.0 B  
+	-	`sha256:f6034d6cdb9bd996e89db23fa6b5e5b3f7a1369a34619c509cd721a7e7d1b66f`  
+		Last Modified: Wed, 22 Jul 2020 22:48:58 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3efdb3316144cd13b6715043917151ecc6d9e3cff047dacd24e967f4cb154e4`  
-		Last Modified: Thu, 16 Jul 2020 22:46:41 GMT  
-		Size: 40.3 MB (40335807 bytes)  
+	-	`sha256:b6de3914f4ed2ccf9a59bdb6cc44ae82c567b75a5d62158936342740dedd4ef2`  
+		Last Modified: Wed, 22 Jul 2020 22:49:04 GMT  
+		Size: 40.3 MB (40335782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf82d2b871adf7352caad81dc2cb27f8b7b3129c2dc2f469ef26169b5a9c2a54`  
-		Last Modified: Thu, 16 Jul 2020 23:04:24 GMT  
-		Size: 531.1 KB (531078 bytes)  
+	-	`sha256:bf65673c35bee6e90f2266e9db0e816a7db9d8023f1117bd8b1037bb8861bb47`  
+		Last Modified: Thu, 23 Jul 2020 08:50:25 GMT  
+		Size: 531.0 KB (531028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ff2e8c5d83fd3247fc6d2f37f8c51f9377eaf914fcb255ec9aff342b16c0b9b`  
-		Last Modified: Thu, 16 Jul 2020 23:04:23 GMT  
-		Size: 900.5 KB (900509 bytes)  
+	-	`sha256:8c6dfaaaa32b9988cb48b3ef404f237d2699c14bbca1e2e9bc5286843f5769cf`  
+		Last Modified: Thu, 23 Jul 2020 08:50:23 GMT  
+		Size: 900.5 KB (900511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfa33ddc82a3e8bcc0f5aea08e4e3b67ddb3544459c8138a3b9d3933fd1b2278`  
-		Last Modified: Wed, 22 Jul 2020 00:32:17 GMT  
-		Size: 4.6 KB (4605 bytes)  
+	-	`sha256:047fdaf8a1162c2a75885c9c91bd1b8d8654b40fe393d74664d763960c387ac0`  
+		Last Modified: Thu, 23 Jul 2020 08:51:05 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e33bf2a2efd87fd624354bd21934b68dc66a1c79a97190e1b96076542b59b62`  
-		Last Modified: Wed, 22 Jul 2020 00:32:17 GMT  
-		Size: 113.0 B  
+	-	`sha256:85998f96878919a67724e681908cf9a70535fb563c3f83492f46ea0978674a80`  
+		Last Modified: Thu, 23 Jul 2020 08:51:05 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a1c8f8a779d5f340c755764d8c041f013e1cf1649b2316138a1c26c7ec356fb`  
-		Last Modified: Wed, 22 Jul 2020 00:32:46 GMT  
-		Size: 322.2 MB (322235495 bytes)  
+	-	`sha256:b9247e6051970a5141fe5ac3941940668178f66188a19201c52950bf4fbe1670`  
+		Last Modified: Thu, 23 Jul 2020 08:51:22 GMT  
+		Size: 322.2 MB (322235199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9baa485fa53bfae45538901b0eafce4d637f2e0fc938747ea5ef5d593e407e8a`  
-		Last Modified: Wed, 22 Jul 2020 00:32:17 GMT  
+	-	`sha256:b609a9b875ccea0602ffcc6b223f5b3e60261d3a882457522215364f7dd1d7c7`  
+		Last Modified: Thu, 23 Jul 2020 08:51:05 GMT  
 		Size: 1.7 KB (1688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:scala_2.12`
 
 ```console
-$ docker pull flink@sha256:96fee5debc94bf4f3ab186ac7ee4e8b453db3e8aafedd49fec448268626f5e70
+$ docker pull flink@sha256:36b945aedcac9cf0a622daafe2d96e79a942ec57698431b12709f1e3a4bb040c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1837,118 +1837,118 @@ $ docker pull flink@sha256:96fee5debc94bf4f3ab186ac7ee4e8b453db3e8aafedd49fec448
 ### `flink:scala_2.12` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:c3a2c59da83a9ac06f8941a798ed905730f951a7cfccf58f6599de0ad588d114
+$ docker pull flink@sha256:1581fa5555a4d42f2e9c3c8cacd91873b50afa16eef9b7ce863ac1063daf4d97
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **428.4 MB (428352060 bytes)**  
+-	Total Size: **428.4 MB (428352833 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e1cb1e99e3175c1f0db8be87a784e11d92fa17d3023dc523bea6fe6990b7a03`
+-	Image ID: `sha256:b94ce2cc8f33468b684b7e9638cce18a426478ca8551177f0e1d240077db02ea`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
 ```dockerfile
-# Tue, 09 Jun 2020 01:20:39 GMT
-ADD file:1ab357efe422cfed5e37af2dc60d07ccfd4bdee4d4a0c00838b5d68f19ff20c7 in / 
-# Tue, 09 Jun 2020 01:20:39 GMT
+# Wed, 22 Jul 2020 02:03:16 GMT
+ADD file:89dfd7d3ed77fd5e05f20a0ab631142207ae462f5bbd877f8745d3930c751d87 in / 
+# Wed, 22 Jul 2020 02:03:16 GMT
 CMD ["bash"]
-# Tue, 09 Jun 2020 01:46:35 GMT
+# Wed, 22 Jul 2020 03:00:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 01:46:41 GMT
+# Wed, 22 Jul 2020 03:00:55 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 09 Jun 2020 16:38:01 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 09 Jun 2020 16:38:02 GMT
+# Wed, 22 Jul 2020 22:41:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:21 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Tue, 09 Jun 2020 16:39:25 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Jun 2020 16:39:26 GMT
+# Wed, 22 Jul 2020 22:42:22 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 16 Jul 2020 22:40:33 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_VERSION=8u262
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_
-# Thu, 16 Jul 2020 22:40:34 GMT
+# Wed, 22 Jul 2020 22:42:23 GMT
 ENV JAVA_URL_VERSION=8u262b10
-# Thu, 16 Jul 2020 22:40:39 GMT
+# Wed, 22 Jul 2020 22:42:28 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64) upstreamArch='x64' ;; 		arm64) upstreamArch='aarch64' ;; 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; 	esac; 		wget -O openjdk.tgz.asc "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz.sign"; 	wget -O openjdk.tgz "${JAVA_BASE_URL}${upstreamArch}_linux_${JAVA_URL_VERSION}.tar.gz" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base;   rm -rf /var/lib/apt/lists/*
-# Thu, 16 Jul 2020 23:02:30 GMT
+# Thu, 23 Jul 2020 08:39:05 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 16 Jul 2020 23:02:31 GMT
+# Thu, 23 Jul 2020 08:39:06 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Wed, 22 Jul 2020 00:21:36 GMT
+# Thu, 23 Jul 2020 08:49:48 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.11.1/flink-1.11.1-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.11.1/flink-1.11.1-bin-scala_2.12.tgz.asc GPG_KEY=6B6291A8502BA8F0913AE04DDEB95B05BF075300 CHECK_GPG=true
-# Wed, 22 Jul 2020 00:21:36 GMT
+# Thu, 23 Jul 2020 08:49:48 GMT
 ENV FLINK_HOME=/opt/flink
-# Wed, 22 Jul 2020 00:21:37 GMT
+# Thu, 23 Jul 2020 08:49:48 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Jul 2020 00:21:38 GMT
+# Thu, 23 Jul 2020 08:49:49 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Wed, 22 Jul 2020 00:21:39 GMT
+# Thu, 23 Jul 2020 08:49:49 GMT
 WORKDIR /opt/flink
-# Wed, 22 Jul 2020 00:31:44 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Wed, 22 Jul 2020 00:31:45 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 COPY file:5118b9265b7774ef32131b2cbf42fd9bf26c640be3ebb42b4972a3ae8ed5125e in / 
-# Wed, 22 Jul 2020 00:31:45 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 22 Jul 2020 00:31:46 GMT
+# Thu, 23 Jul 2020 08:50:12 GMT
 EXPOSE 6123 8081
-# Wed, 22 Jul 2020 00:31:46 GMT
+# Thu, 23 Jul 2020 08:50:13 GMT
 CMD ["help"]
 ```
 
 -	Layers:
-	-	`sha256:e9afc4f90ab09248d75c8081b6dfba749a7f7efdac704ced7e0ceb506e02fa4a`  
-		Last Modified: Tue, 09 Jun 2020 01:25:37 GMT  
-		Size: 50.4 MB (50389504 bytes)  
+	-	`sha256:31dd5ebca5efc5e96a425402fa85e492b02c8fe757dfd3edfdea2a7c67322909`  
+		Last Modified: Wed, 22 Jul 2020 02:09:37 GMT  
+		Size: 50.4 MB (50390325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:989e6b19a265d6b8b7934e7ddd7dc07f6e2fc945b3a28dda9b8aecb12cdb30e0`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 7.8 MB (7811709 bytes)  
+	-	`sha256:3ed641c4ae9821ca3c399071ea82ae667237acbcaad1e367c3e1e87fc967834c`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 7.8 MB (7811702 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af14b6c2f8785723bceb5964c5dec1f0489b7750e9d4ec671e49bfba15d80a39`  
-		Last Modified: Tue, 09 Jun 2020 01:59:52 GMT  
-		Size: 10.0 MB (9996168 bytes)  
+	-	`sha256:bcd57146431eae70720cf24877e818256ae1a30b9c1c9e7d0ad093c945ca0af2`  
+		Last Modified: Wed, 22 Jul 2020 03:16:28 GMT  
+		Size: 10.0 MB (9996319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68a79816c3e1e5cdd064948818bbd2dbf38783031aeca1474a9a9b50c2d8e5e8`  
-		Last Modified: Tue, 09 Jun 2020 16:45:04 GMT  
-		Size: 5.5 MB (5529317 bytes)  
+	-	`sha256:f49dd46492913ebc75f7ee834a77d90bb0ebf30d78f3aff2a2f2018ad7299f81`  
+		Last Modified: Wed, 22 Jul 2020 22:47:55 GMT  
+		Size: 5.5 MB (5529328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:037cc5cb1b833b9fa2dd445b932781d8863c0d63f6be2b546720f9c84599f56e`  
-		Last Modified: Tue, 09 Jun 2020 16:46:49 GMT  
-		Size: 210.0 B  
+	-	`sha256:f6034d6cdb9bd996e89db23fa6b5e5b3f7a1369a34619c509cd721a7e7d1b66f`  
+		Last Modified: Wed, 22 Jul 2020 22:48:58 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3efdb3316144cd13b6715043917151ecc6d9e3cff047dacd24e967f4cb154e4`  
-		Last Modified: Thu, 16 Jul 2020 22:46:41 GMT  
-		Size: 40.3 MB (40335807 bytes)  
+	-	`sha256:b6de3914f4ed2ccf9a59bdb6cc44ae82c567b75a5d62158936342740dedd4ef2`  
+		Last Modified: Wed, 22 Jul 2020 22:49:04 GMT  
+		Size: 40.3 MB (40335782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf82d2b871adf7352caad81dc2cb27f8b7b3129c2dc2f469ef26169b5a9c2a54`  
-		Last Modified: Thu, 16 Jul 2020 23:04:24 GMT  
-		Size: 531.1 KB (531078 bytes)  
+	-	`sha256:bf65673c35bee6e90f2266e9db0e816a7db9d8023f1117bd8b1037bb8861bb47`  
+		Last Modified: Thu, 23 Jul 2020 08:50:25 GMT  
+		Size: 531.0 KB (531028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ff2e8c5d83fd3247fc6d2f37f8c51f9377eaf914fcb255ec9aff342b16c0b9b`  
-		Last Modified: Thu, 16 Jul 2020 23:04:23 GMT  
-		Size: 900.5 KB (900509 bytes)  
+	-	`sha256:8c6dfaaaa32b9988cb48b3ef404f237d2699c14bbca1e2e9bc5286843f5769cf`  
+		Last Modified: Thu, 23 Jul 2020 08:50:23 GMT  
+		Size: 900.5 KB (900511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f19ebd3f52b017c88df46c3d1611a63907b5837b8450a85fbec820c048797d3`  
-		Last Modified: Wed, 22 Jul 2020 00:32:52 GMT  
-		Size: 4.6 KB (4606 bytes)  
+	-	`sha256:f2dc30f3cddd48d68a3fb84f73b9b3ddaf36a10606652cc779175bb4ffd7dd6f`  
+		Last Modified: Thu, 23 Jul 2020 08:51:27 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15b9502269d0ad3ca059076a5c3b26cd6b262ea4e2e3a3c28f3ad574448ded31`  
-		Last Modified: Wed, 22 Jul 2020 00:32:52 GMT  
-		Size: 114.0 B  
+	-	`sha256:83c6e5bd6075de0a9f5b6ded0ba5128a9089d7cbac4e3bb6b6102ed33df65ed4`  
+		Last Modified: Thu, 23 Jul 2020 08:51:27 GMT  
+		Size: 112.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f36379f3533afe9359626b6f9252fe501ed5af6c528a592479c5e124792a43c`  
-		Last Modified: Wed, 22 Jul 2020 00:33:20 GMT  
-		Size: 312.9 MB (312851350 bytes)  
+	-	`sha256:e7de597e1de15e68c4ebd8b1937643450f492c47b5bd86abf8b11a8821b785ef`  
+		Last Modified: Thu, 23 Jul 2020 08:51:44 GMT  
+		Size: 312.9 MB (312851223 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc1e58637d2845781505a6c8daa8d3804aa6ad304f77be4e0d94d59b16cff391`  
-		Last Modified: Wed, 22 Jul 2020 00:32:53 GMT  
+	-	`sha256:8fe30545bb01f3d6efc88428d8b4a6ffc7a1f11fb9ec482de4d2ddf7c052b2f7`  
+		Last Modified: Thu, 23 Jul 2020 08:51:27 GMT  
 		Size: 1.7 KB (1688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
