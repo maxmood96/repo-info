@@ -17,7 +17,7 @@
 ## `cassandra:2`
 
 ```console
-$ docker pull cassandra@sha256:8fc5e613a4359ff197e3baaa60c0b89d6cc1da9c1880181301851becedf0ae35
+$ docker pull cassandra@sha256:fc30a8274efd5926cbdd04a80e02f264b34bf83d9f25fd40143f46b8e769631e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -29,243 +29,243 @@ $ docker pull cassandra@sha256:8fc5e613a4359ff197e3baaa60c0b89d6cc1da9c188018130
 ### `cassandra:2` - linux; amd64
 
 ```console
-$ docker pull cassandra@sha256:328081763f00fdfa2d5047862d296c3d7c88a2fefd6828bb93e3be330de36e4f
+$ docker pull cassandra@sha256:ac0f90100c3c84795e1fc3b57b800b71b04b72dc9db639697532e01244a89ff7
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **123.4 MB (123416631 bytes)**  
+-	Total Size: **123.4 MB (123431641 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7ceebcc2d9a9248c734d04da2e6576eedbc6cafb382a87918d3a054f3c882a55`
+-	Image ID: `sha256:d4c12447f277c9c27ffe1749423317570e370d08048cc9b7bbb7dcc9f9e588db`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 21:56:08 GMT
-ADD file:0b40d881e3e00d68de1f1df0a565385bb838144b83814df891c994f466e9efa2 in / 
-# Mon, 06 Jul 2020 21:56:09 GMT
+# Fri, 24 Jul 2020 14:38:19 GMT
+ADD file:7d9bbf45a5b2510d44d3206a028cf6502757884d49e46d3d2e6356c3a92c4309 in / 
+# Fri, 24 Jul 2020 14:38:20 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 21:56:10 GMT
+# Fri, 24 Jul 2020 14:38:21 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 21:56:11 GMT
+# Fri, 24 Jul 2020 14:38:21 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 21:56:11 GMT
+# Fri, 24 Jul 2020 14:38:22 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:03:04 GMT
+# Fri, 24 Jul 2020 15:16:41 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:52 GMT
+# Fri, 24 Jul 2020 15:17:03 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:19:52 GMT
+# Fri, 24 Jul 2020 15:17:03 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 22:20:11 GMT
+# Fri, 24 Jul 2020 15:17:27 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:20:11 GMT
+# Fri, 24 Jul 2020 15:17:28 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:50:11 GMT
+# Fri, 24 Jul 2020 19:29:08 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 22:50:24 GMT
+# Fri, 24 Jul 2020 19:29:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:50:24 GMT
+# Fri, 24 Jul 2020 19:29:18 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:50:34 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 22:50:57 GMT
+# Fri, 24 Jul 2020 19:29:54 GMT
 ENV CASSANDRA_VERSION=2.2.16
-# Fri, 17 Jul 2020 22:50:57 GMT
+# Fri, 24 Jul 2020 19:29:54 GMT
 ENV CASSANDRA_SHA512=db2026342e876caf790833d49f7ab1a2fbba39bf380384ef66e2da4913f537690a56c97cb2f6ea17f667a0d34aeb406fa658db02aec1121a5ba7134ab59a5cfb
-# Fri, 17 Jul 2020 22:51:11 GMT
+# Fri, 24 Jul 2020 19:30:07 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 22:51:11 GMT
+# Fri, 24 Jul 2020 19:30:08 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 22:51:11 GMT
+# Fri, 24 Jul 2020 19:30:08 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 22:51:12 GMT
+# Fri, 24 Jul 2020 19:30:09 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 22:51:12 GMT
+# Fri, 24 Jul 2020 19:30:09 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 22:51:12 GMT
+# Fri, 24 Jul 2020 19:30:09 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 22:51:12 GMT
+# Fri, 24 Jul 2020 19:30:09 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:a1125296b23d78a3585a7910d649fbf0cc56284f9d2066e3243e8bc18f90b308`  
-		Last Modified: Wed, 01 Jul 2020 12:21:40 GMT  
-		Size: 26.7 MB (26696193 bytes)  
+	-	`sha256:7595c8c21622ea8a8b9778972e26dbbe063f7a1c4b0a28a80a34ebb3d343b586`  
+		Last Modified: Mon, 13 Jul 2020 15:46:50 GMT  
+		Size: 26.7 MB (26697127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c742a4a0f38c95e690ad2dad8909c0cb232911418ac94a73da2a28becc7b734`  
-		Last Modified: Mon, 06 Jul 2020 21:57:18 GMT  
-		Size: 35.4 KB (35365 bytes)  
+	-	`sha256:d13af8ca898f36af68711cb67c345f65046a78ccd802453f4b129adf9205b1f8`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 35.4 KB (35364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c5ea3b329965bf7239f4e4f484915a444ec6d78b532ae12525934d4f6f7ac9a`  
-		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
-		Size: 852.0 B  
+	-	`sha256:70799171ddba93a611490ba3557d782714b3f4da8963d49ac8726786ba8274a5`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 848.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b4be91ead68299f53759fd80c135e0dde0eb797e91eb8fbc5a708a506e0c433`  
-		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
-		Size: 162.0 B  
+	-	`sha256:b6c12202c5ef07dc9eb8f9d9e71407064684ed70f8c4040b62679b7d30200840`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
-		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
-		Size: 13.9 MB (13875144 bytes)  
+	-	`sha256:c54d424eaa66f20b7926dbaa13c37d1c7c27c0e3113239f5608b4a57c157c399`  
+		Last Modified: Fri, 24 Jul 2020 15:22:49 GMT  
+		Size: 13.9 MB (13875512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b38587e18ed628aa15742a897954754fec3b97a3454dbfd1a5ae9ad4d7b13e4d`  
-		Last Modified: Fri, 17 Jul 2020 22:23:36 GMT  
-		Size: 42.1 MB (42118777 bytes)  
+	-	`sha256:98cd7f0d1fb17db5f394e9dd8dc0faa5708639a99eda99f4c31bb8500645164a`  
+		Last Modified: Fri, 24 Jul 2020 15:23:09 GMT  
+		Size: 42.1 MB (42118779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9197ce285aeaef46cca997053633b75dfca35dc3198654de29083fc918dc709b`  
-		Last Modified: Fri, 17 Jul 2020 22:52:17 GMT  
-		Size: 1.9 KB (1880 bytes)  
+	-	`sha256:b7d0e492af2bc95a83006c62097832dc0be0961a8e956f105ed61b4b95252de2`  
+		Last Modified: Fri, 24 Jul 2020 19:31:15 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df450904509f41d0d9ee3a215b637d024d96b5365b3e6707bf794f53a4492ad3`  
-		Last Modified: Fri, 17 Jul 2020 22:52:18 GMT  
-		Size: 8.7 MB (8739579 bytes)  
+	-	`sha256:6c2ac3248adb599e567b6402031235101652baa7ba677daa59da5aaf483a40e2`  
+		Last Modified: Fri, 24 Jul 2020 19:31:16 GMT  
+		Size: 8.8 MB (8752856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bcf8b6bf9fc13837274f26f53d1cad4dc0865dbbb3a6360fd09bea55c04ebb4`  
-		Last Modified: Fri, 17 Jul 2020 22:52:16 GMT  
-		Size: 1.3 MB (1309892 bytes)  
+	-	`sha256:50c8b9abae1ea715c9e1dbe4fc33971f5c559e93fefaa3f0aca8ca9b17b8c9ef`  
+		Last Modified: Fri, 24 Jul 2020 19:31:14 GMT  
+		Size: 1.3 MB (1310258 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9611e980dd51a156e18464822b2c948ae430791eb34db0ec66e925ee786563e5`  
-		Last Modified: Fri, 17 Jul 2020 22:52:27 GMT  
-		Size: 30.6 MB (30637512 bytes)  
+	-	`sha256:918de96a77f83b7c94be940e5121b6cb332149549f96915f33a3d3c92c24fff0`  
+		Last Modified: Fri, 24 Jul 2020 19:31:27 GMT  
+		Size: 30.6 MB (30637577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d57facd76c6e5df6dc3388c876f728b3adbebff58e6e2c1f2a3720ce9454b15`  
-		Last Modified: Fri, 17 Jul 2020 22:52:23 GMT  
-		Size: 1.2 KB (1154 bytes)  
+	-	`sha256:5e633a1e08eac9e7c1b1e75f3f4fcb0fb77af7d53116f473f3ed3fc6ff35fc06`  
+		Last Modified: Fri, 24 Jul 2020 19:31:23 GMT  
+		Size: 1.2 KB (1153 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78d46d77c7029dc6ade3ddac2fa888b2420201ad0809c1a1a7500cab0ac72d94`  
-		Last Modified: Fri, 17 Jul 2020 22:52:23 GMT  
-		Size: 121.0 B  
+	-	`sha256:8bbae1018dde5fac2c496bf7637855afeaaa870d1dc33a200c29de93731dfccb`  
+		Last Modified: Fri, 24 Jul 2020 19:31:23 GMT  
+		Size: 118.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:2` - linux; arm variant v7
 
 ```console
-$ docker pull cassandra@sha256:59b97ad5a1509f191c7ef6d03ebcbadf78316570137a30fdbda1ac2dbb6ec239
+$ docker pull cassandra@sha256:c16daf530cf59d9bfad83cc91ef6e9930b278259b31f68f7504bc5133470aaab
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **113.8 MB (113846498 bytes)**  
+-	Total Size: **113.8 MB (113842749 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0fa42ebbe955d79c2b97c77a41b7af20f2913957caa5d68cca3fa4766b17ff00`
+-	Image ID: `sha256:84101512f4865e67a40939f64fcfe040704c0ae74599e5aab6b950523f436a82`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 20:07:11 GMT
-ADD file:6797f65071d6d263c6466e89bb2db63753b08510aef54a1dc28891fbf2e58799 in / 
-# Mon, 06 Jul 2020 20:07:14 GMT
+# Fri, 24 Jul 2020 16:04:27 GMT
+ADD file:934b4bc073556bbba45a5017b40df7ac076a57b031b6b7225919b1ea3c1d89ff in / 
+# Fri, 24 Jul 2020 16:04:32 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 20:07:16 GMT
+# Fri, 24 Jul 2020 16:05:15 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 20:07:18 GMT
+# Fri, 24 Jul 2020 16:05:33 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 20:07:19 GMT
+# Fri, 24 Jul 2020 16:05:40 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 21:54:44 GMT
+# Fri, 24 Jul 2020 18:19:35 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 20:58:22 GMT
+# Fri, 24 Jul 2020 18:20:26 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 20:58:24 GMT
+# Fri, 24 Jul 2020 18:20:29 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 20:58:55 GMT
+# Fri, 24 Jul 2020 18:21:58 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 20:58:56 GMT
+# Fri, 24 Jul 2020 18:22:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:31:10 GMT
+# Fri, 24 Jul 2020 19:29:30 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 22:31:28 GMT
+# Fri, 24 Jul 2020 19:29:48 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:31:29 GMT
+# Fri, 24 Jul 2020 19:29:49 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 22:31:53 GMT
+# Fri, 24 Jul 2020 19:30:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 22:31:54 GMT
+# Fri, 24 Jul 2020 19:30:07 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 22:31:54 GMT
+# Fri, 24 Jul 2020 19:30:08 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 22:31:55 GMT
+# Fri, 24 Jul 2020 19:30:09 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:31:55 GMT
+# Fri, 24 Jul 2020 19:30:10 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 22:31:56 GMT
+# Fri, 24 Jul 2020 19:30:10 GMT
 ENV CASSANDRA_VERSION=2.2.16
-# Fri, 17 Jul 2020 22:31:56 GMT
+# Fri, 24 Jul 2020 19:30:11 GMT
 ENV CASSANDRA_SHA512=db2026342e876caf790833d49f7ab1a2fbba39bf380384ef66e2da4913f537690a56c97cb2f6ea17f667a0d34aeb406fa658db02aec1121a5ba7134ab59a5cfb
-# Fri, 17 Jul 2020 22:32:27 GMT
+# Fri, 24 Jul 2020 19:30:53 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 22:32:29 GMT
+# Fri, 24 Jul 2020 19:30:56 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 22:32:30 GMT
+# Fri, 24 Jul 2020 19:30:57 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 22:32:32 GMT
+# Fri, 24 Jul 2020 19:31:00 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 22:32:32 GMT
+# Fri, 24 Jul 2020 19:31:00 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 22:32:33 GMT
+# Fri, 24 Jul 2020 19:31:01 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 22:32:34 GMT
+# Fri, 24 Jul 2020 19:31:02 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:db182fa07ba527098363444f993730c582b86e361f0ac7ae981ba0e9ca768c84`  
-		Last Modified: Mon, 06 Jul 2020 15:46:25 GMT  
-		Size: 22.3 MB (22276511 bytes)  
+	-	`sha256:de691405df56c17462a8052d9b88a283d955c448deda7a610d70096a5454ff13`  
+		Last Modified: Mon, 13 Jul 2020 15:47:13 GMT  
+		Size: 22.3 MB (22277635 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e85650936bd5be5a40db91349e387ede7738f5f7938d6421cb9d64eb021a5a3`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 35.5 KB (35457 bytes)  
+	-	`sha256:e5a766b93ee2f7ed0525d6d90b71c5e860e5e54d4b5259de86c81e5c49ff120c`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 35.5 KB (35459 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:258b890879c48b8d0f50ea632de0a703079d7f5d973ec47338cbe791bb8e30d5`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 850.0 B  
+	-	`sha256:8c97e104d7363348d21ddc11159cfa859c18d58712fcafc215fefb535baccbae`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 857.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0f858a12ecedcf911e3fea9bb17332b53a888444834a3e3d12cd25be830898d`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 188.0 B  
+	-	`sha256:d7a97b3bf2bf845ce898abe48aed267cb2a554e220ee512500495c2791ea6ea8`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4cc999ed63826a5b44acb46406a5dc7d80f1604cc4f06927d88bf6c5e79b497`  
-		Last Modified: Fri, 17 Jul 2020 21:00:57 GMT  
-		Size: 12.8 MB (12816746 bytes)  
+	-	`sha256:06b94dcf53adc5490aa500e598355308c95d914fd25bb61493b436a89f18e8b9`  
+		Last Modified: Fri, 24 Jul 2020 18:29:34 GMT  
+		Size: 12.8 MB (12816849 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d0e340a37a5f7084c19060c7274257987f4abc0b975260c87cffa8e2c4db931`  
-		Last Modified: Fri, 17 Jul 2020 21:01:31 GMT  
-		Size: 38.6 MB (38612358 bytes)  
+	-	`sha256:f17b9ab84135cfaece5bab286aca0ae138291ca7c2370ade6f1165f21e96180c`  
+		Last Modified: Fri, 24 Jul 2020 18:30:12 GMT  
+		Size: 38.6 MB (38612334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ba1dd1eb65901c731bba9cacc9bd6e03326ba749fe2bff114cb0e5845448f1d`  
-		Last Modified: Fri, 17 Jul 2020 22:34:27 GMT  
+	-	`sha256:f6e65532d1eb1a44543148302ec36177bb17984d13d786a636934136b0a0e8bb`  
+		Last Modified: Fri, 24 Jul 2020 19:34:32 GMT  
 		Size: 1.9 KB (1876 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9deeece59d0af97d827664403060b46dddc6ec57d2eb89a634247412215c701f`  
-		Last Modified: Fri, 17 Jul 2020 22:34:29 GMT  
-		Size: 8.2 MB (8199899 bytes)  
+	-	`sha256:8914480b0f542282a0fded757439bc750f8218c0de990110c38f34158ae2b69f`  
+		Last Modified: Fri, 24 Jul 2020 19:34:33 GMT  
+		Size: 8.2 MB (8194763 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccb237791e61160e1d65c5821d7833c5a2ddefa21040bc0c1b98143c0efc21de`  
-		Last Modified: Fri, 17 Jul 2020 22:34:26 GMT  
-		Size: 1.3 MB (1263056 bytes)  
+	-	`sha256:8ab4af184c01717aec5b30e306cd595dd7d15e5cf1210d74a6609b068e741815`  
+		Last Modified: Fri, 24 Jul 2020 19:34:31 GMT  
+		Size: 1.3 MB (1263131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4261f4a0023dbef15bc24d25889de59b434001da03bd8bd02c161e0a566ab0da`  
-		Last Modified: Fri, 17 Jul 2020 22:34:35 GMT  
-		Size: 30.6 MB (30638283 bytes)  
+	-	`sha256:a73a7f2708b8d91ede1f3bd75521db9d7d4cf16839499c731ecc45b5d8c54331`  
+		Last Modified: Fri, 24 Jul 2020 19:34:39 GMT  
+		Size: 30.6 MB (30638384 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3007efc775b1e41f05100a82f116c738ebb6e5bd9de3c4714c6adb52e624fe4`  
-		Last Modified: Fri, 17 Jul 2020 22:34:26 GMT  
-		Size: 1.2 KB (1155 bytes)  
+	-	`sha256:e1d9a29a9043cdba1a58031c1ebfc0e1503ffecbb9d59c15cc38c3419e1db71f`  
+		Last Modified: Fri, 24 Jul 2020 19:34:30 GMT  
+		Size: 1.2 KB (1153 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d969a2f7b8902543158cd8818e79ee249de4b567ae6661ee80a1a366fef3167`  
-		Last Modified: Fri, 17 Jul 2020 22:34:26 GMT  
-		Size: 119.0 B  
+	-	`sha256:a95985a2473a543b5fe072a8c99d5665a114ddf36bcffc6429313002a05142e0`  
+		Last Modified: Fri, 24 Jul 2020 19:34:30 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:2` - linux; ppc64le
@@ -392,7 +392,7 @@ CMD ["cassandra" "-f"]
 ## `cassandra:2.1`
 
 ```console
-$ docker pull cassandra@sha256:04405ae1820444e833659d771a15bd01e4160ae10fdff5e4cf775ab6ab929cef
+$ docker pull cassandra@sha256:32a48f13133a99206c75e89fa62835e783f1bc9835d570bd4c7e793a2b514928
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -404,242 +404,242 @@ $ docker pull cassandra@sha256:04405ae1820444e833659d771a15bd01e4160ae10fdff5e4c
 ### `cassandra:2.1` - linux; amd64
 
 ```console
-$ docker pull cassandra@sha256:aa7c709c1e65b5cb10b0e35a425b2fb9fb698944120b3292b8267948c0959701
+$ docker pull cassandra@sha256:98ba06b8a09c24a2d27e5f02153f9747df4497ab7d65a119bdfd310ce9ec475d
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **118.4 MB (118378786 bytes)**  
+-	Total Size: **118.4 MB (118394030 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:061fe3524ce0dc362d9994d1d795304082a5bb7a27c099e96421b5779ef8438c`
+-	Image ID: `sha256:81a5ad0e4c4fdd27542af5fafb31e5f1585cdf021aa01f45281aa7fe56661560`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 21:56:08 GMT
-ADD file:0b40d881e3e00d68de1f1df0a565385bb838144b83814df891c994f466e9efa2 in / 
-# Mon, 06 Jul 2020 21:56:09 GMT
+# Fri, 24 Jul 2020 14:38:19 GMT
+ADD file:7d9bbf45a5b2510d44d3206a028cf6502757884d49e46d3d2e6356c3a92c4309 in / 
+# Fri, 24 Jul 2020 14:38:20 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 21:56:10 GMT
+# Fri, 24 Jul 2020 14:38:21 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 21:56:11 GMT
+# Fri, 24 Jul 2020 14:38:21 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 21:56:11 GMT
+# Fri, 24 Jul 2020 14:38:22 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:03:04 GMT
+# Fri, 24 Jul 2020 15:16:41 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:52 GMT
+# Fri, 24 Jul 2020 15:17:03 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:19:52 GMT
+# Fri, 24 Jul 2020 15:17:03 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 22:20:11 GMT
+# Fri, 24 Jul 2020 15:17:27 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:20:11 GMT
+# Fri, 24 Jul 2020 15:17:28 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:50:11 GMT
+# Fri, 24 Jul 2020 19:29:08 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 22:50:24 GMT
+# Fri, 24 Jul 2020 19:29:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:50:24 GMT
+# Fri, 24 Jul 2020 19:29:18 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:50:34 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 22:50:34 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV CASSANDRA_VERSION=2.1.21
-# Fri, 17 Jul 2020 22:50:34 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV CASSANDRA_SHA512=ea2c35f3f9ce2be8eb96df603927c6867613f3e2215132145da2c3015dd1ddf1370d7196ef4485002e7a54fe22c32abd9c659102057f9297b69113bf83d96d0b
-# Fri, 17 Jul 2020 22:50:47 GMT
+# Fri, 24 Jul 2020 19:29:48 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 22:50:47 GMT
+# Fri, 24 Jul 2020 19:29:48 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 22:50:48 GMT
+# Fri, 24 Jul 2020 19:29:48 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 22:50:48 GMT
+# Fri, 24 Jul 2020 19:29:49 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 22:50:49 GMT
+# Fri, 24 Jul 2020 19:29:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 22:50:49 GMT
+# Fri, 24 Jul 2020 19:29:50 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 22:50:49 GMT
+# Fri, 24 Jul 2020 19:29:50 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:a1125296b23d78a3585a7910d649fbf0cc56284f9d2066e3243e8bc18f90b308`  
-		Last Modified: Wed, 01 Jul 2020 12:21:40 GMT  
-		Size: 26.7 MB (26696193 bytes)  
+	-	`sha256:7595c8c21622ea8a8b9778972e26dbbe063f7a1c4b0a28a80a34ebb3d343b586`  
+		Last Modified: Mon, 13 Jul 2020 15:46:50 GMT  
+		Size: 26.7 MB (26697127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c742a4a0f38c95e690ad2dad8909c0cb232911418ac94a73da2a28becc7b734`  
-		Last Modified: Mon, 06 Jul 2020 21:57:18 GMT  
-		Size: 35.4 KB (35365 bytes)  
+	-	`sha256:d13af8ca898f36af68711cb67c345f65046a78ccd802453f4b129adf9205b1f8`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 35.4 KB (35364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c5ea3b329965bf7239f4e4f484915a444ec6d78b532ae12525934d4f6f7ac9a`  
-		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
-		Size: 852.0 B  
+	-	`sha256:70799171ddba93a611490ba3557d782714b3f4da8963d49ac8726786ba8274a5`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 848.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b4be91ead68299f53759fd80c135e0dde0eb797e91eb8fbc5a708a506e0c433`  
-		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
-		Size: 162.0 B  
+	-	`sha256:b6c12202c5ef07dc9eb8f9d9e71407064684ed70f8c4040b62679b7d30200840`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
-		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
-		Size: 13.9 MB (13875144 bytes)  
+	-	`sha256:c54d424eaa66f20b7926dbaa13c37d1c7c27c0e3113239f5608b4a57c157c399`  
+		Last Modified: Fri, 24 Jul 2020 15:22:49 GMT  
+		Size: 13.9 MB (13875512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b38587e18ed628aa15742a897954754fec3b97a3454dbfd1a5ae9ad4d7b13e4d`  
-		Last Modified: Fri, 17 Jul 2020 22:23:36 GMT  
-		Size: 42.1 MB (42118777 bytes)  
+	-	`sha256:98cd7f0d1fb17db5f394e9dd8dc0faa5708639a99eda99f4c31bb8500645164a`  
+		Last Modified: Fri, 24 Jul 2020 15:23:09 GMT  
+		Size: 42.1 MB (42118779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9197ce285aeaef46cca997053633b75dfca35dc3198654de29083fc918dc709b`  
-		Last Modified: Fri, 17 Jul 2020 22:52:17 GMT  
-		Size: 1.9 KB (1880 bytes)  
+	-	`sha256:b7d0e492af2bc95a83006c62097832dc0be0961a8e956f105ed61b4b95252de2`  
+		Last Modified: Fri, 24 Jul 2020 19:31:15 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df450904509f41d0d9ee3a215b637d024d96b5365b3e6707bf794f53a4492ad3`  
-		Last Modified: Fri, 17 Jul 2020 22:52:18 GMT  
-		Size: 8.7 MB (8739579 bytes)  
+	-	`sha256:6c2ac3248adb599e567b6402031235101652baa7ba677daa59da5aaf483a40e2`  
+		Last Modified: Fri, 24 Jul 2020 19:31:16 GMT  
+		Size: 8.8 MB (8752856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bcf8b6bf9fc13837274f26f53d1cad4dc0865dbbb3a6360fd09bea55c04ebb4`  
-		Last Modified: Fri, 17 Jul 2020 22:52:16 GMT  
-		Size: 1.3 MB (1309892 bytes)  
+	-	`sha256:50c8b9abae1ea715c9e1dbe4fc33971f5c559e93fefaa3f0aca8ca9b17b8c9ef`  
+		Last Modified: Fri, 24 Jul 2020 19:31:14 GMT  
+		Size: 1.3 MB (1310258 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ac8d3ba997c1239af908db6a29d16b35fb734c65c3d7b5f93f8409bb4863bda`  
-		Last Modified: Fri, 17 Jul 2020 22:52:19 GMT  
-		Size: 25.6 MB (25599666 bytes)  
+	-	`sha256:95c2b6c8f6a8b32432ff0cae36ffa5c7751369b9edb979842f241180bc1a94ff`  
+		Last Modified: Fri, 24 Jul 2020 19:31:19 GMT  
+		Size: 25.6 MB (25599964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0845f271c186b65f0f0227bf2b5ca204684b277679304fbc37d4c3a85c19aa7c`  
-		Last Modified: Fri, 17 Jul 2020 22:52:16 GMT  
-		Size: 1.2 KB (1155 bytes)  
+	-	`sha256:e3515d9ae80f746b1a41615f8152b15144229ebe4de0a266d8d4083a9d5a2867`  
+		Last Modified: Fri, 24 Jul 2020 19:31:14 GMT  
+		Size: 1.2 KB (1152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c2bc63e044870acf4b3a27d154123623352106e320e2f18369e2655db7c59c7`  
-		Last Modified: Fri, 17 Jul 2020 22:52:16 GMT  
+	-	`sha256:e7b98a34797c8044740890ad4568d17e1eda070c652c6f6b8eb11335f39ed7e3`  
+		Last Modified: Fri, 24 Jul 2020 19:31:14 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:2.1` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:e59762fedb0ff7cc767b4e87c3a03dccf2bcf0143bf73f9a9cdd3761e1f1f5eb
+$ docker pull cassandra@sha256:a6036e699c28ac06409162301979540376f94ecbc490e8976563b76fc6951cfe
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **114.5 MB (114538230 bytes)**  
+-	Total Size: **114.5 MB (114540204 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:415336f035eb2de5f2045cb790c0c64f8c29d2d93508c61bf83ff38a89c1dfe8`
+-	Image ID: `sha256:21ceeb7407b14f0e7ecacf8991a48a46ea91fb161bee03b74b140495d9fc2660`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:04:54 GMT
-ADD file:090a5d48524c4b10f867bf6bb80c106a69bf839c876de86912ed0c633349a1ab in / 
-# Mon, 06 Jul 2020 22:04:56 GMT
+# Fri, 24 Jul 2020 16:21:15 GMT
+ADD file:146b4b3953060bbe623c06f374b3b3798872e4e1ddfef76071c7c4b69a834622 in / 
+# Fri, 24 Jul 2020 16:21:35 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:04:58 GMT
+# Fri, 24 Jul 2020 16:21:51 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:05:00 GMT
+# Fri, 24 Jul 2020 16:23:26 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:05:01 GMT
+# Fri, 24 Jul 2020 16:23:50 GMT
 CMD ["/bin/bash"]
-# Tue, 07 Jul 2020 01:12:32 GMT
+# Fri, 24 Jul 2020 18:11:26 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 20:42:18 GMT
+# Fri, 24 Jul 2020 18:12:03 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 20:42:20 GMT
+# Fri, 24 Jul 2020 18:12:05 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 20:42:56 GMT
+# Fri, 24 Jul 2020 18:12:40 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 20:42:57 GMT
+# Fri, 24 Jul 2020 18:12:42 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 21:04:33 GMT
+# Fri, 24 Jul 2020 19:53:36 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 21:05:11 GMT
+# Fri, 24 Jul 2020 19:53:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 21:05:12 GMT
+# Fri, 24 Jul 2020 19:54:02 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 21:05:51 GMT
+# Fri, 24 Jul 2020 19:54:26 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 21:05:53 GMT
+# Fri, 24 Jul 2020 19:54:27 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 21:05:55 GMT
+# Fri, 24 Jul 2020 19:54:30 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 21:05:56 GMT
+# Fri, 24 Jul 2020 19:54:32 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 21:05:57 GMT
+# Fri, 24 Jul 2020 19:54:34 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 21:05:58 GMT
+# Fri, 24 Jul 2020 19:54:39 GMT
 ENV CASSANDRA_VERSION=2.1.21
-# Fri, 17 Jul 2020 21:05:59 GMT
+# Fri, 24 Jul 2020 19:54:46 GMT
 ENV CASSANDRA_SHA512=ea2c35f3f9ce2be8eb96df603927c6867613f3e2215132145da2c3015dd1ddf1370d7196ef4485002e7a54fe22c32abd9c659102057f9297b69113bf83d96d0b
-# Fri, 17 Jul 2020 21:06:47 GMT
+# Fri, 24 Jul 2020 19:55:29 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 21:06:52 GMT
+# Fri, 24 Jul 2020 19:55:32 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 21:06:53 GMT
+# Fri, 24 Jul 2020 19:55:33 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 21:06:57 GMT
+# Fri, 24 Jul 2020 19:55:35 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 21:06:58 GMT
+# Fri, 24 Jul 2020 19:55:36 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 21:06:59 GMT
+# Fri, 24 Jul 2020 19:55:39 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 21:07:01 GMT
+# Fri, 24 Jul 2020 19:55:40 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:68fe03cb170d6a5101858131ae1eac5393a4f018d70abfcd1348fd240ee0ccc5`  
-		Last Modified: Tue, 30 Jun 2020 16:25:30 GMT  
-		Size: 23.7 MB (23719365 bytes)  
+	-	`sha256:a114936b480795ec46632c29c96e126744c314983ee0d83354804dc39d1afb46`  
+		Last Modified: Mon, 13 Jul 2020 15:47:08 GMT  
+		Size: 23.7 MB (23721122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18959295effbb87ec216a036a1821f8b7e183072faaa80a6d7f97aa14b51b2af`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 35.2 KB (35189 bytes)  
+	-	`sha256:a27ecf0d2a869e5d188121e6b38473e481b66599a26d8df24d22c9170f50bfa9`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 35.2 KB (35205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51118fb70ce38c0c2e667ecd5fc941590875e2fd9e55dd17c90073f085ba5970`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 852.0 B  
+	-	`sha256:f4eb48eb870f62ec1a7a4a2d753bf2b92dff62a6dbedaeff6db6e41cb33196bc`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:409a5d9eae931d5a3b5a3bcb840e11167c2d3d03ec22258cde67197babf908ed`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 187.0 B  
+	-	`sha256:0f912b9bb20d998fd0f1a2526d5539f35d34a476da71c783d0041b25b78c0af5`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf5858fe3213ff710f6c318742f085137ce8fcea1e001c321df12f5871e95b09`  
-		Last Modified: Fri, 17 Jul 2020 20:45:09 GMT  
-		Size: 13.3 MB (13284377 bytes)  
+	-	`sha256:d25bf415b8209fd4eac1325c07cba7b2f07e2a8c3850968536465e0f068272f1`  
+		Last Modified: Fri, 24 Jul 2020 18:15:34 GMT  
+		Size: 13.3 MB (13284502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3ba5e907efef65b4f3942a118c3585d97dd757f2a331e6457dd91af6b1141e6`  
-		Last Modified: Fri, 17 Jul 2020 20:45:38 GMT  
-		Size: 42.1 MB (42114920 bytes)  
+	-	`sha256:5ecc5c98d1ae78a662cf63740308e6e826b8d9bcb21ec72db61922c0e1c9bd27`  
+		Last Modified: Fri, 24 Jul 2020 18:16:06 GMT  
+		Size: 42.1 MB (42114929 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4695d6ae56de7ede13767fd8d7fe669e5e172c7eedba013b267ebc8db2645b59`  
-		Last Modified: Fri, 17 Jul 2020 21:10:06 GMT  
-		Size: 1.9 KB (1899 bytes)  
+	-	`sha256:a058bddc4a987cc2252e05d52e29c679dcd7195e2c266c276c77663e1fa5f90e`  
+		Last Modified: Fri, 24 Jul 2020 19:58:08 GMT  
+		Size: 1.9 KB (1889 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7accc9d6756c5398000839b30bad7abed2eeedacea2df57c11d2d102273943dd`  
-		Last Modified: Fri, 17 Jul 2020 21:10:06 GMT  
-		Size: 8.5 MB (8532675 bytes)  
+	-	`sha256:26f8e9f0111a29cd98efe9beb4fe9e5f27428a47eed962d09b17a8e1fdcb3f48`  
+		Last Modified: Fri, 24 Jul 2020 19:58:08 GMT  
+		Size: 8.5 MB (8532893 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19ca2193a18ed13cccf4d9d3cf16dc7cac9b87082ce0e83bc094647c7fbfa737`  
-		Last Modified: Fri, 17 Jul 2020 21:10:04 GMT  
-		Size: 1.2 MB (1246950 bytes)  
+	-	`sha256:c12c02c0ca3b9acaeda40f5cc3ace38fc0f3d14b54085f18fa8dd5013b49993e`  
+		Last Modified: Fri, 24 Jul 2020 19:58:05 GMT  
+		Size: 1.2 MB (1246894 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dac97c01133e3567731f8afa0269c7ecbea3f4580cd004ee00ec137739307e5c`  
-		Last Modified: Fri, 17 Jul 2020 21:10:09 GMT  
-		Size: 25.6 MB (25600540 bytes)  
+	-	`sha256:c3615de9a410aed803af4e4e13f529873bff3a15e92986c3e80279d0db2a54ae`  
+		Last Modified: Fri, 24 Jul 2020 19:58:12 GMT  
+		Size: 25.6 MB (25600461 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a0903cb3c8fbf9709471667011954f88081db199e9718d8a9ac61ec81d3c989c`  
-		Last Modified: Fri, 17 Jul 2020 21:10:04 GMT  
-		Size: 1.2 KB (1156 bytes)  
+	-	`sha256:ec2addfe9b8f28d6e1790fa7246451fc6a4fa23434651d569f21dd3d142f38b1`  
+		Last Modified: Fri, 24 Jul 2020 19:58:05 GMT  
+		Size: 1.2 KB (1152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7fb775109a2e23a7cb2d4089d16d0f882cb64ed6032ff1ef0f2a1dd5e078ecb4`  
-		Last Modified: Fri, 17 Jul 2020 21:10:04 GMT  
+	-	`sha256:f05a56f3eba92e60b652414c6192fbf464c5765658d5a1abe0abd0407c227730`  
+		Last Modified: Fri, 24 Jul 2020 19:58:05 GMT  
 		Size: 120.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -767,7 +767,7 @@ CMD ["cassandra" "-f"]
 ## `cassandra:2.1.21`
 
 ```console
-$ docker pull cassandra@sha256:04405ae1820444e833659d771a15bd01e4160ae10fdff5e4cf775ab6ab929cef
+$ docker pull cassandra@sha256:32a48f13133a99206c75e89fa62835e783f1bc9835d570bd4c7e793a2b514928
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -779,242 +779,242 @@ $ docker pull cassandra@sha256:04405ae1820444e833659d771a15bd01e4160ae10fdff5e4c
 ### `cassandra:2.1.21` - linux; amd64
 
 ```console
-$ docker pull cassandra@sha256:aa7c709c1e65b5cb10b0e35a425b2fb9fb698944120b3292b8267948c0959701
+$ docker pull cassandra@sha256:98ba06b8a09c24a2d27e5f02153f9747df4497ab7d65a119bdfd310ce9ec475d
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **118.4 MB (118378786 bytes)**  
+-	Total Size: **118.4 MB (118394030 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:061fe3524ce0dc362d9994d1d795304082a5bb7a27c099e96421b5779ef8438c`
+-	Image ID: `sha256:81a5ad0e4c4fdd27542af5fafb31e5f1585cdf021aa01f45281aa7fe56661560`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 21:56:08 GMT
-ADD file:0b40d881e3e00d68de1f1df0a565385bb838144b83814df891c994f466e9efa2 in / 
-# Mon, 06 Jul 2020 21:56:09 GMT
+# Fri, 24 Jul 2020 14:38:19 GMT
+ADD file:7d9bbf45a5b2510d44d3206a028cf6502757884d49e46d3d2e6356c3a92c4309 in / 
+# Fri, 24 Jul 2020 14:38:20 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 21:56:10 GMT
+# Fri, 24 Jul 2020 14:38:21 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 21:56:11 GMT
+# Fri, 24 Jul 2020 14:38:21 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 21:56:11 GMT
+# Fri, 24 Jul 2020 14:38:22 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:03:04 GMT
+# Fri, 24 Jul 2020 15:16:41 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:52 GMT
+# Fri, 24 Jul 2020 15:17:03 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:19:52 GMT
+# Fri, 24 Jul 2020 15:17:03 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 22:20:11 GMT
+# Fri, 24 Jul 2020 15:17:27 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:20:11 GMT
+# Fri, 24 Jul 2020 15:17:28 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:50:11 GMT
+# Fri, 24 Jul 2020 19:29:08 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 22:50:24 GMT
+# Fri, 24 Jul 2020 19:29:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:50:24 GMT
+# Fri, 24 Jul 2020 19:29:18 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:50:34 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 22:50:34 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV CASSANDRA_VERSION=2.1.21
-# Fri, 17 Jul 2020 22:50:34 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV CASSANDRA_SHA512=ea2c35f3f9ce2be8eb96df603927c6867613f3e2215132145da2c3015dd1ddf1370d7196ef4485002e7a54fe22c32abd9c659102057f9297b69113bf83d96d0b
-# Fri, 17 Jul 2020 22:50:47 GMT
+# Fri, 24 Jul 2020 19:29:48 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 22:50:47 GMT
+# Fri, 24 Jul 2020 19:29:48 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 22:50:48 GMT
+# Fri, 24 Jul 2020 19:29:48 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 22:50:48 GMT
+# Fri, 24 Jul 2020 19:29:49 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 22:50:49 GMT
+# Fri, 24 Jul 2020 19:29:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 22:50:49 GMT
+# Fri, 24 Jul 2020 19:29:50 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 22:50:49 GMT
+# Fri, 24 Jul 2020 19:29:50 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:a1125296b23d78a3585a7910d649fbf0cc56284f9d2066e3243e8bc18f90b308`  
-		Last Modified: Wed, 01 Jul 2020 12:21:40 GMT  
-		Size: 26.7 MB (26696193 bytes)  
+	-	`sha256:7595c8c21622ea8a8b9778972e26dbbe063f7a1c4b0a28a80a34ebb3d343b586`  
+		Last Modified: Mon, 13 Jul 2020 15:46:50 GMT  
+		Size: 26.7 MB (26697127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c742a4a0f38c95e690ad2dad8909c0cb232911418ac94a73da2a28becc7b734`  
-		Last Modified: Mon, 06 Jul 2020 21:57:18 GMT  
-		Size: 35.4 KB (35365 bytes)  
+	-	`sha256:d13af8ca898f36af68711cb67c345f65046a78ccd802453f4b129adf9205b1f8`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 35.4 KB (35364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c5ea3b329965bf7239f4e4f484915a444ec6d78b532ae12525934d4f6f7ac9a`  
-		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
-		Size: 852.0 B  
+	-	`sha256:70799171ddba93a611490ba3557d782714b3f4da8963d49ac8726786ba8274a5`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 848.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b4be91ead68299f53759fd80c135e0dde0eb797e91eb8fbc5a708a506e0c433`  
-		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
-		Size: 162.0 B  
+	-	`sha256:b6c12202c5ef07dc9eb8f9d9e71407064684ed70f8c4040b62679b7d30200840`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
-		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
-		Size: 13.9 MB (13875144 bytes)  
+	-	`sha256:c54d424eaa66f20b7926dbaa13c37d1c7c27c0e3113239f5608b4a57c157c399`  
+		Last Modified: Fri, 24 Jul 2020 15:22:49 GMT  
+		Size: 13.9 MB (13875512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b38587e18ed628aa15742a897954754fec3b97a3454dbfd1a5ae9ad4d7b13e4d`  
-		Last Modified: Fri, 17 Jul 2020 22:23:36 GMT  
-		Size: 42.1 MB (42118777 bytes)  
+	-	`sha256:98cd7f0d1fb17db5f394e9dd8dc0faa5708639a99eda99f4c31bb8500645164a`  
+		Last Modified: Fri, 24 Jul 2020 15:23:09 GMT  
+		Size: 42.1 MB (42118779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9197ce285aeaef46cca997053633b75dfca35dc3198654de29083fc918dc709b`  
-		Last Modified: Fri, 17 Jul 2020 22:52:17 GMT  
-		Size: 1.9 KB (1880 bytes)  
+	-	`sha256:b7d0e492af2bc95a83006c62097832dc0be0961a8e956f105ed61b4b95252de2`  
+		Last Modified: Fri, 24 Jul 2020 19:31:15 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df450904509f41d0d9ee3a215b637d024d96b5365b3e6707bf794f53a4492ad3`  
-		Last Modified: Fri, 17 Jul 2020 22:52:18 GMT  
-		Size: 8.7 MB (8739579 bytes)  
+	-	`sha256:6c2ac3248adb599e567b6402031235101652baa7ba677daa59da5aaf483a40e2`  
+		Last Modified: Fri, 24 Jul 2020 19:31:16 GMT  
+		Size: 8.8 MB (8752856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bcf8b6bf9fc13837274f26f53d1cad4dc0865dbbb3a6360fd09bea55c04ebb4`  
-		Last Modified: Fri, 17 Jul 2020 22:52:16 GMT  
-		Size: 1.3 MB (1309892 bytes)  
+	-	`sha256:50c8b9abae1ea715c9e1dbe4fc33971f5c559e93fefaa3f0aca8ca9b17b8c9ef`  
+		Last Modified: Fri, 24 Jul 2020 19:31:14 GMT  
+		Size: 1.3 MB (1310258 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ac8d3ba997c1239af908db6a29d16b35fb734c65c3d7b5f93f8409bb4863bda`  
-		Last Modified: Fri, 17 Jul 2020 22:52:19 GMT  
-		Size: 25.6 MB (25599666 bytes)  
+	-	`sha256:95c2b6c8f6a8b32432ff0cae36ffa5c7751369b9edb979842f241180bc1a94ff`  
+		Last Modified: Fri, 24 Jul 2020 19:31:19 GMT  
+		Size: 25.6 MB (25599964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0845f271c186b65f0f0227bf2b5ca204684b277679304fbc37d4c3a85c19aa7c`  
-		Last Modified: Fri, 17 Jul 2020 22:52:16 GMT  
-		Size: 1.2 KB (1155 bytes)  
+	-	`sha256:e3515d9ae80f746b1a41615f8152b15144229ebe4de0a266d8d4083a9d5a2867`  
+		Last Modified: Fri, 24 Jul 2020 19:31:14 GMT  
+		Size: 1.2 KB (1152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c2bc63e044870acf4b3a27d154123623352106e320e2f18369e2655db7c59c7`  
-		Last Modified: Fri, 17 Jul 2020 22:52:16 GMT  
+	-	`sha256:e7b98a34797c8044740890ad4568d17e1eda070c652c6f6b8eb11335f39ed7e3`  
+		Last Modified: Fri, 24 Jul 2020 19:31:14 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:2.1.21` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:e59762fedb0ff7cc767b4e87c3a03dccf2bcf0143bf73f9a9cdd3761e1f1f5eb
+$ docker pull cassandra@sha256:a6036e699c28ac06409162301979540376f94ecbc490e8976563b76fc6951cfe
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **114.5 MB (114538230 bytes)**  
+-	Total Size: **114.5 MB (114540204 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:415336f035eb2de5f2045cb790c0c64f8c29d2d93508c61bf83ff38a89c1dfe8`
+-	Image ID: `sha256:21ceeb7407b14f0e7ecacf8991a48a46ea91fb161bee03b74b140495d9fc2660`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:04:54 GMT
-ADD file:090a5d48524c4b10f867bf6bb80c106a69bf839c876de86912ed0c633349a1ab in / 
-# Mon, 06 Jul 2020 22:04:56 GMT
+# Fri, 24 Jul 2020 16:21:15 GMT
+ADD file:146b4b3953060bbe623c06f374b3b3798872e4e1ddfef76071c7c4b69a834622 in / 
+# Fri, 24 Jul 2020 16:21:35 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:04:58 GMT
+# Fri, 24 Jul 2020 16:21:51 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:05:00 GMT
+# Fri, 24 Jul 2020 16:23:26 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:05:01 GMT
+# Fri, 24 Jul 2020 16:23:50 GMT
 CMD ["/bin/bash"]
-# Tue, 07 Jul 2020 01:12:32 GMT
+# Fri, 24 Jul 2020 18:11:26 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 20:42:18 GMT
+# Fri, 24 Jul 2020 18:12:03 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 20:42:20 GMT
+# Fri, 24 Jul 2020 18:12:05 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 20:42:56 GMT
+# Fri, 24 Jul 2020 18:12:40 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 20:42:57 GMT
+# Fri, 24 Jul 2020 18:12:42 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 21:04:33 GMT
+# Fri, 24 Jul 2020 19:53:36 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 21:05:11 GMT
+# Fri, 24 Jul 2020 19:53:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 21:05:12 GMT
+# Fri, 24 Jul 2020 19:54:02 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 21:05:51 GMT
+# Fri, 24 Jul 2020 19:54:26 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 21:05:53 GMT
+# Fri, 24 Jul 2020 19:54:27 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 21:05:55 GMT
+# Fri, 24 Jul 2020 19:54:30 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 21:05:56 GMT
+# Fri, 24 Jul 2020 19:54:32 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 21:05:57 GMT
+# Fri, 24 Jul 2020 19:54:34 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 21:05:58 GMT
+# Fri, 24 Jul 2020 19:54:39 GMT
 ENV CASSANDRA_VERSION=2.1.21
-# Fri, 17 Jul 2020 21:05:59 GMT
+# Fri, 24 Jul 2020 19:54:46 GMT
 ENV CASSANDRA_SHA512=ea2c35f3f9ce2be8eb96df603927c6867613f3e2215132145da2c3015dd1ddf1370d7196ef4485002e7a54fe22c32abd9c659102057f9297b69113bf83d96d0b
-# Fri, 17 Jul 2020 21:06:47 GMT
+# Fri, 24 Jul 2020 19:55:29 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 21:06:52 GMT
+# Fri, 24 Jul 2020 19:55:32 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 21:06:53 GMT
+# Fri, 24 Jul 2020 19:55:33 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 21:06:57 GMT
+# Fri, 24 Jul 2020 19:55:35 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 21:06:58 GMT
+# Fri, 24 Jul 2020 19:55:36 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 21:06:59 GMT
+# Fri, 24 Jul 2020 19:55:39 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 21:07:01 GMT
+# Fri, 24 Jul 2020 19:55:40 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:68fe03cb170d6a5101858131ae1eac5393a4f018d70abfcd1348fd240ee0ccc5`  
-		Last Modified: Tue, 30 Jun 2020 16:25:30 GMT  
-		Size: 23.7 MB (23719365 bytes)  
+	-	`sha256:a114936b480795ec46632c29c96e126744c314983ee0d83354804dc39d1afb46`  
+		Last Modified: Mon, 13 Jul 2020 15:47:08 GMT  
+		Size: 23.7 MB (23721122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18959295effbb87ec216a036a1821f8b7e183072faaa80a6d7f97aa14b51b2af`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 35.2 KB (35189 bytes)  
+	-	`sha256:a27ecf0d2a869e5d188121e6b38473e481b66599a26d8df24d22c9170f50bfa9`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 35.2 KB (35205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51118fb70ce38c0c2e667ecd5fc941590875e2fd9e55dd17c90073f085ba5970`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 852.0 B  
+	-	`sha256:f4eb48eb870f62ec1a7a4a2d753bf2b92dff62a6dbedaeff6db6e41cb33196bc`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:409a5d9eae931d5a3b5a3bcb840e11167c2d3d03ec22258cde67197babf908ed`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 187.0 B  
+	-	`sha256:0f912b9bb20d998fd0f1a2526d5539f35d34a476da71c783d0041b25b78c0af5`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf5858fe3213ff710f6c318742f085137ce8fcea1e001c321df12f5871e95b09`  
-		Last Modified: Fri, 17 Jul 2020 20:45:09 GMT  
-		Size: 13.3 MB (13284377 bytes)  
+	-	`sha256:d25bf415b8209fd4eac1325c07cba7b2f07e2a8c3850968536465e0f068272f1`  
+		Last Modified: Fri, 24 Jul 2020 18:15:34 GMT  
+		Size: 13.3 MB (13284502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3ba5e907efef65b4f3942a118c3585d97dd757f2a331e6457dd91af6b1141e6`  
-		Last Modified: Fri, 17 Jul 2020 20:45:38 GMT  
-		Size: 42.1 MB (42114920 bytes)  
+	-	`sha256:5ecc5c98d1ae78a662cf63740308e6e826b8d9bcb21ec72db61922c0e1c9bd27`  
+		Last Modified: Fri, 24 Jul 2020 18:16:06 GMT  
+		Size: 42.1 MB (42114929 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4695d6ae56de7ede13767fd8d7fe669e5e172c7eedba013b267ebc8db2645b59`  
-		Last Modified: Fri, 17 Jul 2020 21:10:06 GMT  
-		Size: 1.9 KB (1899 bytes)  
+	-	`sha256:a058bddc4a987cc2252e05d52e29c679dcd7195e2c266c276c77663e1fa5f90e`  
+		Last Modified: Fri, 24 Jul 2020 19:58:08 GMT  
+		Size: 1.9 KB (1889 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7accc9d6756c5398000839b30bad7abed2eeedacea2df57c11d2d102273943dd`  
-		Last Modified: Fri, 17 Jul 2020 21:10:06 GMT  
-		Size: 8.5 MB (8532675 bytes)  
+	-	`sha256:26f8e9f0111a29cd98efe9beb4fe9e5f27428a47eed962d09b17a8e1fdcb3f48`  
+		Last Modified: Fri, 24 Jul 2020 19:58:08 GMT  
+		Size: 8.5 MB (8532893 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19ca2193a18ed13cccf4d9d3cf16dc7cac9b87082ce0e83bc094647c7fbfa737`  
-		Last Modified: Fri, 17 Jul 2020 21:10:04 GMT  
-		Size: 1.2 MB (1246950 bytes)  
+	-	`sha256:c12c02c0ca3b9acaeda40f5cc3ace38fc0f3d14b54085f18fa8dd5013b49993e`  
+		Last Modified: Fri, 24 Jul 2020 19:58:05 GMT  
+		Size: 1.2 MB (1246894 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dac97c01133e3567731f8afa0269c7ecbea3f4580cd004ee00ec137739307e5c`  
-		Last Modified: Fri, 17 Jul 2020 21:10:09 GMT  
-		Size: 25.6 MB (25600540 bytes)  
+	-	`sha256:c3615de9a410aed803af4e4e13f529873bff3a15e92986c3e80279d0db2a54ae`  
+		Last Modified: Fri, 24 Jul 2020 19:58:12 GMT  
+		Size: 25.6 MB (25600461 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a0903cb3c8fbf9709471667011954f88081db199e9718d8a9ac61ec81d3c989c`  
-		Last Modified: Fri, 17 Jul 2020 21:10:04 GMT  
-		Size: 1.2 KB (1156 bytes)  
+	-	`sha256:ec2addfe9b8f28d6e1790fa7246451fc6a4fa23434651d569f21dd3d142f38b1`  
+		Last Modified: Fri, 24 Jul 2020 19:58:05 GMT  
+		Size: 1.2 KB (1152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7fb775109a2e23a7cb2d4089d16d0f882cb64ed6032ff1ef0f2a1dd5e078ecb4`  
-		Last Modified: Fri, 17 Jul 2020 21:10:04 GMT  
+	-	`sha256:f05a56f3eba92e60b652414c6192fbf464c5765658d5a1abe0abd0407c227730`  
+		Last Modified: Fri, 24 Jul 2020 19:58:05 GMT  
 		Size: 120.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1142,7 +1142,7 @@ CMD ["cassandra" "-f"]
 ## `cassandra:2.2`
 
 ```console
-$ docker pull cassandra@sha256:8fc5e613a4359ff197e3baaa60c0b89d6cc1da9c1880181301851becedf0ae35
+$ docker pull cassandra@sha256:fc30a8274efd5926cbdd04a80e02f264b34bf83d9f25fd40143f46b8e769631e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1154,243 +1154,243 @@ $ docker pull cassandra@sha256:8fc5e613a4359ff197e3baaa60c0b89d6cc1da9c188018130
 ### `cassandra:2.2` - linux; amd64
 
 ```console
-$ docker pull cassandra@sha256:328081763f00fdfa2d5047862d296c3d7c88a2fefd6828bb93e3be330de36e4f
+$ docker pull cassandra@sha256:ac0f90100c3c84795e1fc3b57b800b71b04b72dc9db639697532e01244a89ff7
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **123.4 MB (123416631 bytes)**  
+-	Total Size: **123.4 MB (123431641 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7ceebcc2d9a9248c734d04da2e6576eedbc6cafb382a87918d3a054f3c882a55`
+-	Image ID: `sha256:d4c12447f277c9c27ffe1749423317570e370d08048cc9b7bbb7dcc9f9e588db`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 21:56:08 GMT
-ADD file:0b40d881e3e00d68de1f1df0a565385bb838144b83814df891c994f466e9efa2 in / 
-# Mon, 06 Jul 2020 21:56:09 GMT
+# Fri, 24 Jul 2020 14:38:19 GMT
+ADD file:7d9bbf45a5b2510d44d3206a028cf6502757884d49e46d3d2e6356c3a92c4309 in / 
+# Fri, 24 Jul 2020 14:38:20 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 21:56:10 GMT
+# Fri, 24 Jul 2020 14:38:21 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 21:56:11 GMT
+# Fri, 24 Jul 2020 14:38:21 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 21:56:11 GMT
+# Fri, 24 Jul 2020 14:38:22 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:03:04 GMT
+# Fri, 24 Jul 2020 15:16:41 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:52 GMT
+# Fri, 24 Jul 2020 15:17:03 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:19:52 GMT
+# Fri, 24 Jul 2020 15:17:03 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 22:20:11 GMT
+# Fri, 24 Jul 2020 15:17:27 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:20:11 GMT
+# Fri, 24 Jul 2020 15:17:28 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:50:11 GMT
+# Fri, 24 Jul 2020 19:29:08 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 22:50:24 GMT
+# Fri, 24 Jul 2020 19:29:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:50:24 GMT
+# Fri, 24 Jul 2020 19:29:18 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:50:34 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 22:50:57 GMT
+# Fri, 24 Jul 2020 19:29:54 GMT
 ENV CASSANDRA_VERSION=2.2.16
-# Fri, 17 Jul 2020 22:50:57 GMT
+# Fri, 24 Jul 2020 19:29:54 GMT
 ENV CASSANDRA_SHA512=db2026342e876caf790833d49f7ab1a2fbba39bf380384ef66e2da4913f537690a56c97cb2f6ea17f667a0d34aeb406fa658db02aec1121a5ba7134ab59a5cfb
-# Fri, 17 Jul 2020 22:51:11 GMT
+# Fri, 24 Jul 2020 19:30:07 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 22:51:11 GMT
+# Fri, 24 Jul 2020 19:30:08 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 22:51:11 GMT
+# Fri, 24 Jul 2020 19:30:08 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 22:51:12 GMT
+# Fri, 24 Jul 2020 19:30:09 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 22:51:12 GMT
+# Fri, 24 Jul 2020 19:30:09 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 22:51:12 GMT
+# Fri, 24 Jul 2020 19:30:09 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 22:51:12 GMT
+# Fri, 24 Jul 2020 19:30:09 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:a1125296b23d78a3585a7910d649fbf0cc56284f9d2066e3243e8bc18f90b308`  
-		Last Modified: Wed, 01 Jul 2020 12:21:40 GMT  
-		Size: 26.7 MB (26696193 bytes)  
+	-	`sha256:7595c8c21622ea8a8b9778972e26dbbe063f7a1c4b0a28a80a34ebb3d343b586`  
+		Last Modified: Mon, 13 Jul 2020 15:46:50 GMT  
+		Size: 26.7 MB (26697127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c742a4a0f38c95e690ad2dad8909c0cb232911418ac94a73da2a28becc7b734`  
-		Last Modified: Mon, 06 Jul 2020 21:57:18 GMT  
-		Size: 35.4 KB (35365 bytes)  
+	-	`sha256:d13af8ca898f36af68711cb67c345f65046a78ccd802453f4b129adf9205b1f8`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 35.4 KB (35364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c5ea3b329965bf7239f4e4f484915a444ec6d78b532ae12525934d4f6f7ac9a`  
-		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
-		Size: 852.0 B  
+	-	`sha256:70799171ddba93a611490ba3557d782714b3f4da8963d49ac8726786ba8274a5`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 848.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b4be91ead68299f53759fd80c135e0dde0eb797e91eb8fbc5a708a506e0c433`  
-		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
-		Size: 162.0 B  
+	-	`sha256:b6c12202c5ef07dc9eb8f9d9e71407064684ed70f8c4040b62679b7d30200840`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
-		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
-		Size: 13.9 MB (13875144 bytes)  
+	-	`sha256:c54d424eaa66f20b7926dbaa13c37d1c7c27c0e3113239f5608b4a57c157c399`  
+		Last Modified: Fri, 24 Jul 2020 15:22:49 GMT  
+		Size: 13.9 MB (13875512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b38587e18ed628aa15742a897954754fec3b97a3454dbfd1a5ae9ad4d7b13e4d`  
-		Last Modified: Fri, 17 Jul 2020 22:23:36 GMT  
-		Size: 42.1 MB (42118777 bytes)  
+	-	`sha256:98cd7f0d1fb17db5f394e9dd8dc0faa5708639a99eda99f4c31bb8500645164a`  
+		Last Modified: Fri, 24 Jul 2020 15:23:09 GMT  
+		Size: 42.1 MB (42118779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9197ce285aeaef46cca997053633b75dfca35dc3198654de29083fc918dc709b`  
-		Last Modified: Fri, 17 Jul 2020 22:52:17 GMT  
-		Size: 1.9 KB (1880 bytes)  
+	-	`sha256:b7d0e492af2bc95a83006c62097832dc0be0961a8e956f105ed61b4b95252de2`  
+		Last Modified: Fri, 24 Jul 2020 19:31:15 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df450904509f41d0d9ee3a215b637d024d96b5365b3e6707bf794f53a4492ad3`  
-		Last Modified: Fri, 17 Jul 2020 22:52:18 GMT  
-		Size: 8.7 MB (8739579 bytes)  
+	-	`sha256:6c2ac3248adb599e567b6402031235101652baa7ba677daa59da5aaf483a40e2`  
+		Last Modified: Fri, 24 Jul 2020 19:31:16 GMT  
+		Size: 8.8 MB (8752856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bcf8b6bf9fc13837274f26f53d1cad4dc0865dbbb3a6360fd09bea55c04ebb4`  
-		Last Modified: Fri, 17 Jul 2020 22:52:16 GMT  
-		Size: 1.3 MB (1309892 bytes)  
+	-	`sha256:50c8b9abae1ea715c9e1dbe4fc33971f5c559e93fefaa3f0aca8ca9b17b8c9ef`  
+		Last Modified: Fri, 24 Jul 2020 19:31:14 GMT  
+		Size: 1.3 MB (1310258 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9611e980dd51a156e18464822b2c948ae430791eb34db0ec66e925ee786563e5`  
-		Last Modified: Fri, 17 Jul 2020 22:52:27 GMT  
-		Size: 30.6 MB (30637512 bytes)  
+	-	`sha256:918de96a77f83b7c94be940e5121b6cb332149549f96915f33a3d3c92c24fff0`  
+		Last Modified: Fri, 24 Jul 2020 19:31:27 GMT  
+		Size: 30.6 MB (30637577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d57facd76c6e5df6dc3388c876f728b3adbebff58e6e2c1f2a3720ce9454b15`  
-		Last Modified: Fri, 17 Jul 2020 22:52:23 GMT  
-		Size: 1.2 KB (1154 bytes)  
+	-	`sha256:5e633a1e08eac9e7c1b1e75f3f4fcb0fb77af7d53116f473f3ed3fc6ff35fc06`  
+		Last Modified: Fri, 24 Jul 2020 19:31:23 GMT  
+		Size: 1.2 KB (1153 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78d46d77c7029dc6ade3ddac2fa888b2420201ad0809c1a1a7500cab0ac72d94`  
-		Last Modified: Fri, 17 Jul 2020 22:52:23 GMT  
-		Size: 121.0 B  
+	-	`sha256:8bbae1018dde5fac2c496bf7637855afeaaa870d1dc33a200c29de93731dfccb`  
+		Last Modified: Fri, 24 Jul 2020 19:31:23 GMT  
+		Size: 118.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:2.2` - linux; arm variant v7
 
 ```console
-$ docker pull cassandra@sha256:59b97ad5a1509f191c7ef6d03ebcbadf78316570137a30fdbda1ac2dbb6ec239
+$ docker pull cassandra@sha256:c16daf530cf59d9bfad83cc91ef6e9930b278259b31f68f7504bc5133470aaab
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **113.8 MB (113846498 bytes)**  
+-	Total Size: **113.8 MB (113842749 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0fa42ebbe955d79c2b97c77a41b7af20f2913957caa5d68cca3fa4766b17ff00`
+-	Image ID: `sha256:84101512f4865e67a40939f64fcfe040704c0ae74599e5aab6b950523f436a82`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 20:07:11 GMT
-ADD file:6797f65071d6d263c6466e89bb2db63753b08510aef54a1dc28891fbf2e58799 in / 
-# Mon, 06 Jul 2020 20:07:14 GMT
+# Fri, 24 Jul 2020 16:04:27 GMT
+ADD file:934b4bc073556bbba45a5017b40df7ac076a57b031b6b7225919b1ea3c1d89ff in / 
+# Fri, 24 Jul 2020 16:04:32 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 20:07:16 GMT
+# Fri, 24 Jul 2020 16:05:15 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 20:07:18 GMT
+# Fri, 24 Jul 2020 16:05:33 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 20:07:19 GMT
+# Fri, 24 Jul 2020 16:05:40 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 21:54:44 GMT
+# Fri, 24 Jul 2020 18:19:35 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 20:58:22 GMT
+# Fri, 24 Jul 2020 18:20:26 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 20:58:24 GMT
+# Fri, 24 Jul 2020 18:20:29 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 20:58:55 GMT
+# Fri, 24 Jul 2020 18:21:58 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 20:58:56 GMT
+# Fri, 24 Jul 2020 18:22:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:31:10 GMT
+# Fri, 24 Jul 2020 19:29:30 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 22:31:28 GMT
+# Fri, 24 Jul 2020 19:29:48 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:31:29 GMT
+# Fri, 24 Jul 2020 19:29:49 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 22:31:53 GMT
+# Fri, 24 Jul 2020 19:30:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 22:31:54 GMT
+# Fri, 24 Jul 2020 19:30:07 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 22:31:54 GMT
+# Fri, 24 Jul 2020 19:30:08 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 22:31:55 GMT
+# Fri, 24 Jul 2020 19:30:09 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:31:55 GMT
+# Fri, 24 Jul 2020 19:30:10 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 22:31:56 GMT
+# Fri, 24 Jul 2020 19:30:10 GMT
 ENV CASSANDRA_VERSION=2.2.16
-# Fri, 17 Jul 2020 22:31:56 GMT
+# Fri, 24 Jul 2020 19:30:11 GMT
 ENV CASSANDRA_SHA512=db2026342e876caf790833d49f7ab1a2fbba39bf380384ef66e2da4913f537690a56c97cb2f6ea17f667a0d34aeb406fa658db02aec1121a5ba7134ab59a5cfb
-# Fri, 17 Jul 2020 22:32:27 GMT
+# Fri, 24 Jul 2020 19:30:53 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 22:32:29 GMT
+# Fri, 24 Jul 2020 19:30:56 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 22:32:30 GMT
+# Fri, 24 Jul 2020 19:30:57 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 22:32:32 GMT
+# Fri, 24 Jul 2020 19:31:00 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 22:32:32 GMT
+# Fri, 24 Jul 2020 19:31:00 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 22:32:33 GMT
+# Fri, 24 Jul 2020 19:31:01 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 22:32:34 GMT
+# Fri, 24 Jul 2020 19:31:02 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:db182fa07ba527098363444f993730c582b86e361f0ac7ae981ba0e9ca768c84`  
-		Last Modified: Mon, 06 Jul 2020 15:46:25 GMT  
-		Size: 22.3 MB (22276511 bytes)  
+	-	`sha256:de691405df56c17462a8052d9b88a283d955c448deda7a610d70096a5454ff13`  
+		Last Modified: Mon, 13 Jul 2020 15:47:13 GMT  
+		Size: 22.3 MB (22277635 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e85650936bd5be5a40db91349e387ede7738f5f7938d6421cb9d64eb021a5a3`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 35.5 KB (35457 bytes)  
+	-	`sha256:e5a766b93ee2f7ed0525d6d90b71c5e860e5e54d4b5259de86c81e5c49ff120c`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 35.5 KB (35459 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:258b890879c48b8d0f50ea632de0a703079d7f5d973ec47338cbe791bb8e30d5`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 850.0 B  
+	-	`sha256:8c97e104d7363348d21ddc11159cfa859c18d58712fcafc215fefb535baccbae`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 857.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0f858a12ecedcf911e3fea9bb17332b53a888444834a3e3d12cd25be830898d`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 188.0 B  
+	-	`sha256:d7a97b3bf2bf845ce898abe48aed267cb2a554e220ee512500495c2791ea6ea8`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4cc999ed63826a5b44acb46406a5dc7d80f1604cc4f06927d88bf6c5e79b497`  
-		Last Modified: Fri, 17 Jul 2020 21:00:57 GMT  
-		Size: 12.8 MB (12816746 bytes)  
+	-	`sha256:06b94dcf53adc5490aa500e598355308c95d914fd25bb61493b436a89f18e8b9`  
+		Last Modified: Fri, 24 Jul 2020 18:29:34 GMT  
+		Size: 12.8 MB (12816849 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d0e340a37a5f7084c19060c7274257987f4abc0b975260c87cffa8e2c4db931`  
-		Last Modified: Fri, 17 Jul 2020 21:01:31 GMT  
-		Size: 38.6 MB (38612358 bytes)  
+	-	`sha256:f17b9ab84135cfaece5bab286aca0ae138291ca7c2370ade6f1165f21e96180c`  
+		Last Modified: Fri, 24 Jul 2020 18:30:12 GMT  
+		Size: 38.6 MB (38612334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ba1dd1eb65901c731bba9cacc9bd6e03326ba749fe2bff114cb0e5845448f1d`  
-		Last Modified: Fri, 17 Jul 2020 22:34:27 GMT  
+	-	`sha256:f6e65532d1eb1a44543148302ec36177bb17984d13d786a636934136b0a0e8bb`  
+		Last Modified: Fri, 24 Jul 2020 19:34:32 GMT  
 		Size: 1.9 KB (1876 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9deeece59d0af97d827664403060b46dddc6ec57d2eb89a634247412215c701f`  
-		Last Modified: Fri, 17 Jul 2020 22:34:29 GMT  
-		Size: 8.2 MB (8199899 bytes)  
+	-	`sha256:8914480b0f542282a0fded757439bc750f8218c0de990110c38f34158ae2b69f`  
+		Last Modified: Fri, 24 Jul 2020 19:34:33 GMT  
+		Size: 8.2 MB (8194763 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccb237791e61160e1d65c5821d7833c5a2ddefa21040bc0c1b98143c0efc21de`  
-		Last Modified: Fri, 17 Jul 2020 22:34:26 GMT  
-		Size: 1.3 MB (1263056 bytes)  
+	-	`sha256:8ab4af184c01717aec5b30e306cd595dd7d15e5cf1210d74a6609b068e741815`  
+		Last Modified: Fri, 24 Jul 2020 19:34:31 GMT  
+		Size: 1.3 MB (1263131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4261f4a0023dbef15bc24d25889de59b434001da03bd8bd02c161e0a566ab0da`  
-		Last Modified: Fri, 17 Jul 2020 22:34:35 GMT  
-		Size: 30.6 MB (30638283 bytes)  
+	-	`sha256:a73a7f2708b8d91ede1f3bd75521db9d7d4cf16839499c731ecc45b5d8c54331`  
+		Last Modified: Fri, 24 Jul 2020 19:34:39 GMT  
+		Size: 30.6 MB (30638384 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3007efc775b1e41f05100a82f116c738ebb6e5bd9de3c4714c6adb52e624fe4`  
-		Last Modified: Fri, 17 Jul 2020 22:34:26 GMT  
-		Size: 1.2 KB (1155 bytes)  
+	-	`sha256:e1d9a29a9043cdba1a58031c1ebfc0e1503ffecbb9d59c15cc38c3419e1db71f`  
+		Last Modified: Fri, 24 Jul 2020 19:34:30 GMT  
+		Size: 1.2 KB (1153 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d969a2f7b8902543158cd8818e79ee249de4b567ae6661ee80a1a366fef3167`  
-		Last Modified: Fri, 17 Jul 2020 22:34:26 GMT  
-		Size: 119.0 B  
+	-	`sha256:a95985a2473a543b5fe072a8c99d5665a114ddf36bcffc6429313002a05142e0`  
+		Last Modified: Fri, 24 Jul 2020 19:34:30 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:2.2` - linux; ppc64le
@@ -1517,7 +1517,7 @@ CMD ["cassandra" "-f"]
 ## `cassandra:2.2.16`
 
 ```console
-$ docker pull cassandra@sha256:8fc5e613a4359ff197e3baaa60c0b89d6cc1da9c1880181301851becedf0ae35
+$ docker pull cassandra@sha256:fc30a8274efd5926cbdd04a80e02f264b34bf83d9f25fd40143f46b8e769631e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1529,243 +1529,243 @@ $ docker pull cassandra@sha256:8fc5e613a4359ff197e3baaa60c0b89d6cc1da9c188018130
 ### `cassandra:2.2.16` - linux; amd64
 
 ```console
-$ docker pull cassandra@sha256:328081763f00fdfa2d5047862d296c3d7c88a2fefd6828bb93e3be330de36e4f
+$ docker pull cassandra@sha256:ac0f90100c3c84795e1fc3b57b800b71b04b72dc9db639697532e01244a89ff7
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **123.4 MB (123416631 bytes)**  
+-	Total Size: **123.4 MB (123431641 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7ceebcc2d9a9248c734d04da2e6576eedbc6cafb382a87918d3a054f3c882a55`
+-	Image ID: `sha256:d4c12447f277c9c27ffe1749423317570e370d08048cc9b7bbb7dcc9f9e588db`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 21:56:08 GMT
-ADD file:0b40d881e3e00d68de1f1df0a565385bb838144b83814df891c994f466e9efa2 in / 
-# Mon, 06 Jul 2020 21:56:09 GMT
+# Fri, 24 Jul 2020 14:38:19 GMT
+ADD file:7d9bbf45a5b2510d44d3206a028cf6502757884d49e46d3d2e6356c3a92c4309 in / 
+# Fri, 24 Jul 2020 14:38:20 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 21:56:10 GMT
+# Fri, 24 Jul 2020 14:38:21 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 21:56:11 GMT
+# Fri, 24 Jul 2020 14:38:21 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 21:56:11 GMT
+# Fri, 24 Jul 2020 14:38:22 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:03:04 GMT
+# Fri, 24 Jul 2020 15:16:41 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:52 GMT
+# Fri, 24 Jul 2020 15:17:03 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:19:52 GMT
+# Fri, 24 Jul 2020 15:17:03 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 22:20:11 GMT
+# Fri, 24 Jul 2020 15:17:27 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:20:11 GMT
+# Fri, 24 Jul 2020 15:17:28 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:50:11 GMT
+# Fri, 24 Jul 2020 19:29:08 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 22:50:24 GMT
+# Fri, 24 Jul 2020 19:29:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:50:24 GMT
+# Fri, 24 Jul 2020 19:29:18 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:50:34 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 22:50:57 GMT
+# Fri, 24 Jul 2020 19:29:54 GMT
 ENV CASSANDRA_VERSION=2.2.16
-# Fri, 17 Jul 2020 22:50:57 GMT
+# Fri, 24 Jul 2020 19:29:54 GMT
 ENV CASSANDRA_SHA512=db2026342e876caf790833d49f7ab1a2fbba39bf380384ef66e2da4913f537690a56c97cb2f6ea17f667a0d34aeb406fa658db02aec1121a5ba7134ab59a5cfb
-# Fri, 17 Jul 2020 22:51:11 GMT
+# Fri, 24 Jul 2020 19:30:07 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 22:51:11 GMT
+# Fri, 24 Jul 2020 19:30:08 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 22:51:11 GMT
+# Fri, 24 Jul 2020 19:30:08 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 22:51:12 GMT
+# Fri, 24 Jul 2020 19:30:09 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 22:51:12 GMT
+# Fri, 24 Jul 2020 19:30:09 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 22:51:12 GMT
+# Fri, 24 Jul 2020 19:30:09 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 22:51:12 GMT
+# Fri, 24 Jul 2020 19:30:09 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:a1125296b23d78a3585a7910d649fbf0cc56284f9d2066e3243e8bc18f90b308`  
-		Last Modified: Wed, 01 Jul 2020 12:21:40 GMT  
-		Size: 26.7 MB (26696193 bytes)  
+	-	`sha256:7595c8c21622ea8a8b9778972e26dbbe063f7a1c4b0a28a80a34ebb3d343b586`  
+		Last Modified: Mon, 13 Jul 2020 15:46:50 GMT  
+		Size: 26.7 MB (26697127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c742a4a0f38c95e690ad2dad8909c0cb232911418ac94a73da2a28becc7b734`  
-		Last Modified: Mon, 06 Jul 2020 21:57:18 GMT  
-		Size: 35.4 KB (35365 bytes)  
+	-	`sha256:d13af8ca898f36af68711cb67c345f65046a78ccd802453f4b129adf9205b1f8`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 35.4 KB (35364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c5ea3b329965bf7239f4e4f484915a444ec6d78b532ae12525934d4f6f7ac9a`  
-		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
-		Size: 852.0 B  
+	-	`sha256:70799171ddba93a611490ba3557d782714b3f4da8963d49ac8726786ba8274a5`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 848.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b4be91ead68299f53759fd80c135e0dde0eb797e91eb8fbc5a708a506e0c433`  
-		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
-		Size: 162.0 B  
+	-	`sha256:b6c12202c5ef07dc9eb8f9d9e71407064684ed70f8c4040b62679b7d30200840`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
-		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
-		Size: 13.9 MB (13875144 bytes)  
+	-	`sha256:c54d424eaa66f20b7926dbaa13c37d1c7c27c0e3113239f5608b4a57c157c399`  
+		Last Modified: Fri, 24 Jul 2020 15:22:49 GMT  
+		Size: 13.9 MB (13875512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b38587e18ed628aa15742a897954754fec3b97a3454dbfd1a5ae9ad4d7b13e4d`  
-		Last Modified: Fri, 17 Jul 2020 22:23:36 GMT  
-		Size: 42.1 MB (42118777 bytes)  
+	-	`sha256:98cd7f0d1fb17db5f394e9dd8dc0faa5708639a99eda99f4c31bb8500645164a`  
+		Last Modified: Fri, 24 Jul 2020 15:23:09 GMT  
+		Size: 42.1 MB (42118779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9197ce285aeaef46cca997053633b75dfca35dc3198654de29083fc918dc709b`  
-		Last Modified: Fri, 17 Jul 2020 22:52:17 GMT  
-		Size: 1.9 KB (1880 bytes)  
+	-	`sha256:b7d0e492af2bc95a83006c62097832dc0be0961a8e956f105ed61b4b95252de2`  
+		Last Modified: Fri, 24 Jul 2020 19:31:15 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df450904509f41d0d9ee3a215b637d024d96b5365b3e6707bf794f53a4492ad3`  
-		Last Modified: Fri, 17 Jul 2020 22:52:18 GMT  
-		Size: 8.7 MB (8739579 bytes)  
+	-	`sha256:6c2ac3248adb599e567b6402031235101652baa7ba677daa59da5aaf483a40e2`  
+		Last Modified: Fri, 24 Jul 2020 19:31:16 GMT  
+		Size: 8.8 MB (8752856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bcf8b6bf9fc13837274f26f53d1cad4dc0865dbbb3a6360fd09bea55c04ebb4`  
-		Last Modified: Fri, 17 Jul 2020 22:52:16 GMT  
-		Size: 1.3 MB (1309892 bytes)  
+	-	`sha256:50c8b9abae1ea715c9e1dbe4fc33971f5c559e93fefaa3f0aca8ca9b17b8c9ef`  
+		Last Modified: Fri, 24 Jul 2020 19:31:14 GMT  
+		Size: 1.3 MB (1310258 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9611e980dd51a156e18464822b2c948ae430791eb34db0ec66e925ee786563e5`  
-		Last Modified: Fri, 17 Jul 2020 22:52:27 GMT  
-		Size: 30.6 MB (30637512 bytes)  
+	-	`sha256:918de96a77f83b7c94be940e5121b6cb332149549f96915f33a3d3c92c24fff0`  
+		Last Modified: Fri, 24 Jul 2020 19:31:27 GMT  
+		Size: 30.6 MB (30637577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d57facd76c6e5df6dc3388c876f728b3adbebff58e6e2c1f2a3720ce9454b15`  
-		Last Modified: Fri, 17 Jul 2020 22:52:23 GMT  
-		Size: 1.2 KB (1154 bytes)  
+	-	`sha256:5e633a1e08eac9e7c1b1e75f3f4fcb0fb77af7d53116f473f3ed3fc6ff35fc06`  
+		Last Modified: Fri, 24 Jul 2020 19:31:23 GMT  
+		Size: 1.2 KB (1153 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78d46d77c7029dc6ade3ddac2fa888b2420201ad0809c1a1a7500cab0ac72d94`  
-		Last Modified: Fri, 17 Jul 2020 22:52:23 GMT  
-		Size: 121.0 B  
+	-	`sha256:8bbae1018dde5fac2c496bf7637855afeaaa870d1dc33a200c29de93731dfccb`  
+		Last Modified: Fri, 24 Jul 2020 19:31:23 GMT  
+		Size: 118.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:2.2.16` - linux; arm variant v7
 
 ```console
-$ docker pull cassandra@sha256:59b97ad5a1509f191c7ef6d03ebcbadf78316570137a30fdbda1ac2dbb6ec239
+$ docker pull cassandra@sha256:c16daf530cf59d9bfad83cc91ef6e9930b278259b31f68f7504bc5133470aaab
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **113.8 MB (113846498 bytes)**  
+-	Total Size: **113.8 MB (113842749 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0fa42ebbe955d79c2b97c77a41b7af20f2913957caa5d68cca3fa4766b17ff00`
+-	Image ID: `sha256:84101512f4865e67a40939f64fcfe040704c0ae74599e5aab6b950523f436a82`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 20:07:11 GMT
-ADD file:6797f65071d6d263c6466e89bb2db63753b08510aef54a1dc28891fbf2e58799 in / 
-# Mon, 06 Jul 2020 20:07:14 GMT
+# Fri, 24 Jul 2020 16:04:27 GMT
+ADD file:934b4bc073556bbba45a5017b40df7ac076a57b031b6b7225919b1ea3c1d89ff in / 
+# Fri, 24 Jul 2020 16:04:32 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 20:07:16 GMT
+# Fri, 24 Jul 2020 16:05:15 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 20:07:18 GMT
+# Fri, 24 Jul 2020 16:05:33 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 20:07:19 GMT
+# Fri, 24 Jul 2020 16:05:40 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 21:54:44 GMT
+# Fri, 24 Jul 2020 18:19:35 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 20:58:22 GMT
+# Fri, 24 Jul 2020 18:20:26 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 20:58:24 GMT
+# Fri, 24 Jul 2020 18:20:29 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 20:58:55 GMT
+# Fri, 24 Jul 2020 18:21:58 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 20:58:56 GMT
+# Fri, 24 Jul 2020 18:22:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:31:10 GMT
+# Fri, 24 Jul 2020 19:29:30 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 22:31:28 GMT
+# Fri, 24 Jul 2020 19:29:48 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:31:29 GMT
+# Fri, 24 Jul 2020 19:29:49 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 22:31:53 GMT
+# Fri, 24 Jul 2020 19:30:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 22:31:54 GMT
+# Fri, 24 Jul 2020 19:30:07 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 22:31:54 GMT
+# Fri, 24 Jul 2020 19:30:08 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 22:31:55 GMT
+# Fri, 24 Jul 2020 19:30:09 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:31:55 GMT
+# Fri, 24 Jul 2020 19:30:10 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 22:31:56 GMT
+# Fri, 24 Jul 2020 19:30:10 GMT
 ENV CASSANDRA_VERSION=2.2.16
-# Fri, 17 Jul 2020 22:31:56 GMT
+# Fri, 24 Jul 2020 19:30:11 GMT
 ENV CASSANDRA_SHA512=db2026342e876caf790833d49f7ab1a2fbba39bf380384ef66e2da4913f537690a56c97cb2f6ea17f667a0d34aeb406fa658db02aec1121a5ba7134ab59a5cfb
-# Fri, 17 Jul 2020 22:32:27 GMT
+# Fri, 24 Jul 2020 19:30:53 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 22:32:29 GMT
+# Fri, 24 Jul 2020 19:30:56 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 22:32:30 GMT
+# Fri, 24 Jul 2020 19:30:57 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 22:32:32 GMT
+# Fri, 24 Jul 2020 19:31:00 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 22:32:32 GMT
+# Fri, 24 Jul 2020 19:31:00 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 22:32:33 GMT
+# Fri, 24 Jul 2020 19:31:01 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 22:32:34 GMT
+# Fri, 24 Jul 2020 19:31:02 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:db182fa07ba527098363444f993730c582b86e361f0ac7ae981ba0e9ca768c84`  
-		Last Modified: Mon, 06 Jul 2020 15:46:25 GMT  
-		Size: 22.3 MB (22276511 bytes)  
+	-	`sha256:de691405df56c17462a8052d9b88a283d955c448deda7a610d70096a5454ff13`  
+		Last Modified: Mon, 13 Jul 2020 15:47:13 GMT  
+		Size: 22.3 MB (22277635 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e85650936bd5be5a40db91349e387ede7738f5f7938d6421cb9d64eb021a5a3`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 35.5 KB (35457 bytes)  
+	-	`sha256:e5a766b93ee2f7ed0525d6d90b71c5e860e5e54d4b5259de86c81e5c49ff120c`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 35.5 KB (35459 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:258b890879c48b8d0f50ea632de0a703079d7f5d973ec47338cbe791bb8e30d5`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 850.0 B  
+	-	`sha256:8c97e104d7363348d21ddc11159cfa859c18d58712fcafc215fefb535baccbae`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 857.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0f858a12ecedcf911e3fea9bb17332b53a888444834a3e3d12cd25be830898d`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 188.0 B  
+	-	`sha256:d7a97b3bf2bf845ce898abe48aed267cb2a554e220ee512500495c2791ea6ea8`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4cc999ed63826a5b44acb46406a5dc7d80f1604cc4f06927d88bf6c5e79b497`  
-		Last Modified: Fri, 17 Jul 2020 21:00:57 GMT  
-		Size: 12.8 MB (12816746 bytes)  
+	-	`sha256:06b94dcf53adc5490aa500e598355308c95d914fd25bb61493b436a89f18e8b9`  
+		Last Modified: Fri, 24 Jul 2020 18:29:34 GMT  
+		Size: 12.8 MB (12816849 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d0e340a37a5f7084c19060c7274257987f4abc0b975260c87cffa8e2c4db931`  
-		Last Modified: Fri, 17 Jul 2020 21:01:31 GMT  
-		Size: 38.6 MB (38612358 bytes)  
+	-	`sha256:f17b9ab84135cfaece5bab286aca0ae138291ca7c2370ade6f1165f21e96180c`  
+		Last Modified: Fri, 24 Jul 2020 18:30:12 GMT  
+		Size: 38.6 MB (38612334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ba1dd1eb65901c731bba9cacc9bd6e03326ba749fe2bff114cb0e5845448f1d`  
-		Last Modified: Fri, 17 Jul 2020 22:34:27 GMT  
+	-	`sha256:f6e65532d1eb1a44543148302ec36177bb17984d13d786a636934136b0a0e8bb`  
+		Last Modified: Fri, 24 Jul 2020 19:34:32 GMT  
 		Size: 1.9 KB (1876 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9deeece59d0af97d827664403060b46dddc6ec57d2eb89a634247412215c701f`  
-		Last Modified: Fri, 17 Jul 2020 22:34:29 GMT  
-		Size: 8.2 MB (8199899 bytes)  
+	-	`sha256:8914480b0f542282a0fded757439bc750f8218c0de990110c38f34158ae2b69f`  
+		Last Modified: Fri, 24 Jul 2020 19:34:33 GMT  
+		Size: 8.2 MB (8194763 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccb237791e61160e1d65c5821d7833c5a2ddefa21040bc0c1b98143c0efc21de`  
-		Last Modified: Fri, 17 Jul 2020 22:34:26 GMT  
-		Size: 1.3 MB (1263056 bytes)  
+	-	`sha256:8ab4af184c01717aec5b30e306cd595dd7d15e5cf1210d74a6609b068e741815`  
+		Last Modified: Fri, 24 Jul 2020 19:34:31 GMT  
+		Size: 1.3 MB (1263131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4261f4a0023dbef15bc24d25889de59b434001da03bd8bd02c161e0a566ab0da`  
-		Last Modified: Fri, 17 Jul 2020 22:34:35 GMT  
-		Size: 30.6 MB (30638283 bytes)  
+	-	`sha256:a73a7f2708b8d91ede1f3bd75521db9d7d4cf16839499c731ecc45b5d8c54331`  
+		Last Modified: Fri, 24 Jul 2020 19:34:39 GMT  
+		Size: 30.6 MB (30638384 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3007efc775b1e41f05100a82f116c738ebb6e5bd9de3c4714c6adb52e624fe4`  
-		Last Modified: Fri, 17 Jul 2020 22:34:26 GMT  
-		Size: 1.2 KB (1155 bytes)  
+	-	`sha256:e1d9a29a9043cdba1a58031c1ebfc0e1503ffecbb9d59c15cc38c3419e1db71f`  
+		Last Modified: Fri, 24 Jul 2020 19:34:30 GMT  
+		Size: 1.2 KB (1153 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d969a2f7b8902543158cd8818e79ee249de4b567ae6661ee80a1a366fef3167`  
-		Last Modified: Fri, 17 Jul 2020 22:34:26 GMT  
-		Size: 119.0 B  
+	-	`sha256:a95985a2473a543b5fe072a8c99d5665a114ddf36bcffc6429313002a05142e0`  
+		Last Modified: Fri, 24 Jul 2020 19:34:30 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:2.2.16` - linux; ppc64le
@@ -1892,7 +1892,7 @@ CMD ["cassandra" "-f"]
 ## `cassandra:3`
 
 ```console
-$ docker pull cassandra@sha256:f8da4577b1a549178e319ba08bc58b3249f6c05a64d8e11b9ace84a75bdcb2ad
+$ docker pull cassandra@sha256:2e3c2f5ab2beb913b9892d616226806e1a265156be3e0a65edac3f2e4217de73
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1905,363 +1905,363 @@ $ docker pull cassandra@sha256:f8da4577b1a549178e319ba08bc58b3249f6c05a64d8e11b9
 ### `cassandra:3` - linux; amd64
 
 ```console
-$ docker pull cassandra@sha256:675fbd063df3e524ec30906ecd9cb3fdab1de1645f71d86e8d301ee1538e90b3
+$ docker pull cassandra@sha256:5788f3375ddf54d6162d79520b9f657b5a2257f57f9ac667949642e70f395473
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.6 MB (130581564 bytes)**  
+-	Total Size: **130.6 MB (130596704 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9fab0c92a93d10a8d0aea43e7e4c502412db367e1539f401f478778add335aba`
+-	Image ID: `sha256:6e1f443aca8c95bbf13e77af15891919a754d18f54e6dee61819d53a1937059d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 21:56:08 GMT
-ADD file:0b40d881e3e00d68de1f1df0a565385bb838144b83814df891c994f466e9efa2 in / 
-# Mon, 06 Jul 2020 21:56:09 GMT
+# Fri, 24 Jul 2020 14:38:19 GMT
+ADD file:7d9bbf45a5b2510d44d3206a028cf6502757884d49e46d3d2e6356c3a92c4309 in / 
+# Fri, 24 Jul 2020 14:38:20 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 21:56:10 GMT
+# Fri, 24 Jul 2020 14:38:21 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 21:56:11 GMT
+# Fri, 24 Jul 2020 14:38:21 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 21:56:11 GMT
+# Fri, 24 Jul 2020 14:38:22 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:03:04 GMT
+# Fri, 24 Jul 2020 15:16:41 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:52 GMT
+# Fri, 24 Jul 2020 15:17:03 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:19:52 GMT
+# Fri, 24 Jul 2020 15:17:03 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 22:20:11 GMT
+# Fri, 24 Jul 2020 15:17:27 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:20:11 GMT
+# Fri, 24 Jul 2020 15:17:28 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:50:11 GMT
+# Fri, 24 Jul 2020 19:29:08 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 22:50:24 GMT
+# Fri, 24 Jul 2020 19:29:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:50:24 GMT
+# Fri, 24 Jul 2020 19:29:18 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:50:34 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 22:51:41 GMT
+# Fri, 24 Jul 2020 19:30:35 GMT
 ENV CASSANDRA_VERSION=3.11.6
-# Fri, 17 Jul 2020 22:51:41 GMT
+# Fri, 24 Jul 2020 19:30:35 GMT
 ENV CASSANDRA_SHA512=0e778f8fb4a050fde3ec174a9ca365e49ef437cd9e61280b6b4dcba950418a3d04a104bb41aed1add858e2acc2513cf7df4065ca5ca751dd1daf60e70adc4042
-# Fri, 17 Jul 2020 22:51:59 GMT
+# Fri, 24 Jul 2020 19:30:56 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 22:51:59 GMT
+# Fri, 24 Jul 2020 19:30:57 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 22:51:59 GMT
+# Fri, 24 Jul 2020 19:30:57 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 22:52:00 GMT
+# Fri, 24 Jul 2020 19:30:58 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 22:52:00 GMT
+# Fri, 24 Jul 2020 19:30:58 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 22:52:00 GMT
+# Fri, 24 Jul 2020 19:30:58 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 22:52:00 GMT
+# Fri, 24 Jul 2020 19:30:58 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:a1125296b23d78a3585a7910d649fbf0cc56284f9d2066e3243e8bc18f90b308`  
-		Last Modified: Wed, 01 Jul 2020 12:21:40 GMT  
-		Size: 26.7 MB (26696193 bytes)  
+	-	`sha256:7595c8c21622ea8a8b9778972e26dbbe063f7a1c4b0a28a80a34ebb3d343b586`  
+		Last Modified: Mon, 13 Jul 2020 15:46:50 GMT  
+		Size: 26.7 MB (26697127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c742a4a0f38c95e690ad2dad8909c0cb232911418ac94a73da2a28becc7b734`  
-		Last Modified: Mon, 06 Jul 2020 21:57:18 GMT  
-		Size: 35.4 KB (35365 bytes)  
+	-	`sha256:d13af8ca898f36af68711cb67c345f65046a78ccd802453f4b129adf9205b1f8`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 35.4 KB (35364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c5ea3b329965bf7239f4e4f484915a444ec6d78b532ae12525934d4f6f7ac9a`  
-		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
-		Size: 852.0 B  
+	-	`sha256:70799171ddba93a611490ba3557d782714b3f4da8963d49ac8726786ba8274a5`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 848.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b4be91ead68299f53759fd80c135e0dde0eb797e91eb8fbc5a708a506e0c433`  
-		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
-		Size: 162.0 B  
+	-	`sha256:b6c12202c5ef07dc9eb8f9d9e71407064684ed70f8c4040b62679b7d30200840`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
-		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
-		Size: 13.9 MB (13875144 bytes)  
+	-	`sha256:c54d424eaa66f20b7926dbaa13c37d1c7c27c0e3113239f5608b4a57c157c399`  
+		Last Modified: Fri, 24 Jul 2020 15:22:49 GMT  
+		Size: 13.9 MB (13875512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b38587e18ed628aa15742a897954754fec3b97a3454dbfd1a5ae9ad4d7b13e4d`  
-		Last Modified: Fri, 17 Jul 2020 22:23:36 GMT  
-		Size: 42.1 MB (42118777 bytes)  
+	-	`sha256:98cd7f0d1fb17db5f394e9dd8dc0faa5708639a99eda99f4c31bb8500645164a`  
+		Last Modified: Fri, 24 Jul 2020 15:23:09 GMT  
+		Size: 42.1 MB (42118779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9197ce285aeaef46cca997053633b75dfca35dc3198654de29083fc918dc709b`  
-		Last Modified: Fri, 17 Jul 2020 22:52:17 GMT  
-		Size: 1.9 KB (1880 bytes)  
+	-	`sha256:b7d0e492af2bc95a83006c62097832dc0be0961a8e956f105ed61b4b95252de2`  
+		Last Modified: Fri, 24 Jul 2020 19:31:15 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df450904509f41d0d9ee3a215b637d024d96b5365b3e6707bf794f53a4492ad3`  
-		Last Modified: Fri, 17 Jul 2020 22:52:18 GMT  
-		Size: 8.7 MB (8739579 bytes)  
+	-	`sha256:6c2ac3248adb599e567b6402031235101652baa7ba677daa59da5aaf483a40e2`  
+		Last Modified: Fri, 24 Jul 2020 19:31:16 GMT  
+		Size: 8.8 MB (8752856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bcf8b6bf9fc13837274f26f53d1cad4dc0865dbbb3a6360fd09bea55c04ebb4`  
-		Last Modified: Fri, 17 Jul 2020 22:52:16 GMT  
-		Size: 1.3 MB (1309892 bytes)  
+	-	`sha256:50c8b9abae1ea715c9e1dbe4fc33971f5c559e93fefaa3f0aca8ca9b17b8c9ef`  
+		Last Modified: Fri, 24 Jul 2020 19:31:14 GMT  
+		Size: 1.3 MB (1310258 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2db434ee5b773b4f910dd2f7914f7fb898bb52b61ca3c246e9a8081f042e788a`  
-		Last Modified: Fri, 17 Jul 2020 22:52:46 GMT  
-		Size: 37.8 MB (37802446 bytes)  
+	-	`sha256:d4023c1719226606f7183bec3b2026a8c020dd003c362d36c2042eb5e667228c`  
+		Last Modified: Fri, 24 Jul 2020 19:31:45 GMT  
+		Size: 37.8 MB (37802639 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a680077b7668833bc6f29626a8bc6b62c0832551d571d1618524a824129f991`  
-		Last Modified: Fri, 17 Jul 2020 22:52:41 GMT  
-		Size: 1.2 KB (1153 bytes)  
+	-	`sha256:62ab0cf29d7ce7cfa0675c40187afb1df8f6cb2db3320dbc32a9ef2a5f9708d0`  
+		Last Modified: Fri, 24 Jul 2020 19:31:39 GMT  
+		Size: 1.2 KB (1151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a33c28342acd847c6973e882eda80c0dec51ed9b2fdf3b8c47d8e32e9e6abdb9`  
-		Last Modified: Fri, 17 Jul 2020 22:52:41 GMT  
+	-	`sha256:8db374efdd1cb5ffe2062fa9484504c71a5e2689943471e0e7cd074959dcf77d`  
+		Last Modified: Fri, 24 Jul 2020 19:31:41 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:3` - linux; arm variant v7
 
 ```console
-$ docker pull cassandra@sha256:b603587c26cef544c53258e6ef58b57b71228f28f5428beba7a83bc50fe5d953
+$ docker pull cassandra@sha256:4410b7e44793e6db1c054b6967dacb571583c0f7277631b8a898553bbd04841b
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **121.0 MB (121011721 bytes)**  
+-	Total Size: **121.0 MB (121007987 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0f2846b6ddc19007ad80dea3cd9cc79f20f89730c30a68d7abc081f6878bd9e`
+-	Image ID: `sha256:4f3e413939f7bee3f2db3462df63e12d33269f79faebaedf9423ba727cc496a9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 20:07:11 GMT
-ADD file:6797f65071d6d263c6466e89bb2db63753b08510aef54a1dc28891fbf2e58799 in / 
-# Mon, 06 Jul 2020 20:07:14 GMT
+# Fri, 24 Jul 2020 16:04:27 GMT
+ADD file:934b4bc073556bbba45a5017b40df7ac076a57b031b6b7225919b1ea3c1d89ff in / 
+# Fri, 24 Jul 2020 16:04:32 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 20:07:16 GMT
+# Fri, 24 Jul 2020 16:05:15 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 20:07:18 GMT
+# Fri, 24 Jul 2020 16:05:33 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 20:07:19 GMT
+# Fri, 24 Jul 2020 16:05:40 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 21:54:44 GMT
+# Fri, 24 Jul 2020 18:19:35 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 20:58:22 GMT
+# Fri, 24 Jul 2020 18:20:26 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 20:58:24 GMT
+# Fri, 24 Jul 2020 18:20:29 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 20:58:55 GMT
+# Fri, 24 Jul 2020 18:21:58 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 20:58:56 GMT
+# Fri, 24 Jul 2020 18:22:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:31:10 GMT
+# Fri, 24 Jul 2020 19:29:30 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 22:31:28 GMT
+# Fri, 24 Jul 2020 19:29:48 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:31:29 GMT
+# Fri, 24 Jul 2020 19:29:49 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 22:31:53 GMT
+# Fri, 24 Jul 2020 19:30:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 22:31:54 GMT
+# Fri, 24 Jul 2020 19:30:07 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 22:31:54 GMT
+# Fri, 24 Jul 2020 19:30:08 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 22:31:55 GMT
+# Fri, 24 Jul 2020 19:30:09 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:31:55 GMT
+# Fri, 24 Jul 2020 19:30:10 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 22:33:31 GMT
+# Fri, 24 Jul 2020 19:33:06 GMT
 ENV CASSANDRA_VERSION=3.11.6
-# Fri, 17 Jul 2020 22:33:31 GMT
+# Fri, 24 Jul 2020 19:33:07 GMT
 ENV CASSANDRA_SHA512=0e778f8fb4a050fde3ec174a9ca365e49ef437cd9e61280b6b4dcba950418a3d04a104bb41aed1add858e2acc2513cf7df4065ca5ca751dd1daf60e70adc4042
-# Fri, 17 Jul 2020 22:34:03 GMT
+# Fri, 24 Jul 2020 19:34:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 22:34:06 GMT
+# Fri, 24 Jul 2020 19:34:10 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 22:34:07 GMT
+# Fri, 24 Jul 2020 19:34:12 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 22:34:09 GMT
+# Fri, 24 Jul 2020 19:34:14 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 22:34:09 GMT
+# Fri, 24 Jul 2020 19:34:15 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 22:34:10 GMT
+# Fri, 24 Jul 2020 19:34:16 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 22:34:10 GMT
+# Fri, 24 Jul 2020 19:34:16 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:db182fa07ba527098363444f993730c582b86e361f0ac7ae981ba0e9ca768c84`  
-		Last Modified: Mon, 06 Jul 2020 15:46:25 GMT  
-		Size: 22.3 MB (22276511 bytes)  
+	-	`sha256:de691405df56c17462a8052d9b88a283d955c448deda7a610d70096a5454ff13`  
+		Last Modified: Mon, 13 Jul 2020 15:47:13 GMT  
+		Size: 22.3 MB (22277635 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e85650936bd5be5a40db91349e387ede7738f5f7938d6421cb9d64eb021a5a3`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 35.5 KB (35457 bytes)  
+	-	`sha256:e5a766b93ee2f7ed0525d6d90b71c5e860e5e54d4b5259de86c81e5c49ff120c`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 35.5 KB (35459 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:258b890879c48b8d0f50ea632de0a703079d7f5d973ec47338cbe791bb8e30d5`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 850.0 B  
+	-	`sha256:8c97e104d7363348d21ddc11159cfa859c18d58712fcafc215fefb535baccbae`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 857.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0f858a12ecedcf911e3fea9bb17332b53a888444834a3e3d12cd25be830898d`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 188.0 B  
+	-	`sha256:d7a97b3bf2bf845ce898abe48aed267cb2a554e220ee512500495c2791ea6ea8`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4cc999ed63826a5b44acb46406a5dc7d80f1604cc4f06927d88bf6c5e79b497`  
-		Last Modified: Fri, 17 Jul 2020 21:00:57 GMT  
-		Size: 12.8 MB (12816746 bytes)  
+	-	`sha256:06b94dcf53adc5490aa500e598355308c95d914fd25bb61493b436a89f18e8b9`  
+		Last Modified: Fri, 24 Jul 2020 18:29:34 GMT  
+		Size: 12.8 MB (12816849 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d0e340a37a5f7084c19060c7274257987f4abc0b975260c87cffa8e2c4db931`  
-		Last Modified: Fri, 17 Jul 2020 21:01:31 GMT  
-		Size: 38.6 MB (38612358 bytes)  
+	-	`sha256:f17b9ab84135cfaece5bab286aca0ae138291ca7c2370ade6f1165f21e96180c`  
+		Last Modified: Fri, 24 Jul 2020 18:30:12 GMT  
+		Size: 38.6 MB (38612334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ba1dd1eb65901c731bba9cacc9bd6e03326ba749fe2bff114cb0e5845448f1d`  
-		Last Modified: Fri, 17 Jul 2020 22:34:27 GMT  
+	-	`sha256:f6e65532d1eb1a44543148302ec36177bb17984d13d786a636934136b0a0e8bb`  
+		Last Modified: Fri, 24 Jul 2020 19:34:32 GMT  
 		Size: 1.9 KB (1876 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9deeece59d0af97d827664403060b46dddc6ec57d2eb89a634247412215c701f`  
-		Last Modified: Fri, 17 Jul 2020 22:34:29 GMT  
-		Size: 8.2 MB (8199899 bytes)  
+	-	`sha256:8914480b0f542282a0fded757439bc750f8218c0de990110c38f34158ae2b69f`  
+		Last Modified: Fri, 24 Jul 2020 19:34:33 GMT  
+		Size: 8.2 MB (8194763 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccb237791e61160e1d65c5821d7833c5a2ddefa21040bc0c1b98143c0efc21de`  
-		Last Modified: Fri, 17 Jul 2020 22:34:26 GMT  
-		Size: 1.3 MB (1263056 bytes)  
+	-	`sha256:8ab4af184c01717aec5b30e306cd595dd7d15e5cf1210d74a6609b068e741815`  
+		Last Modified: Fri, 24 Jul 2020 19:34:31 GMT  
+		Size: 1.3 MB (1263131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7c2cc1b634566cf14d8943b62c7cfb035965a500caa035b6b10372c6546fbe2`  
-		Last Modified: Fri, 17 Jul 2020 22:35:08 GMT  
-		Size: 37.8 MB (37803504 bytes)  
+	-	`sha256:51e88e0bfbf9b2ba78348bbf88523a22f5769643b60ce0d1b8445e862bad998f`  
+		Last Modified: Fri, 24 Jul 2020 19:35:16 GMT  
+		Size: 37.8 MB (37803622 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:70a71a1b1c6bb4871c1c849fe2cafc11420f325889807628b9099496a1050306`  
-		Last Modified: Fri, 17 Jul 2020 22:34:56 GMT  
-		Size: 1.2 KB (1155 bytes)  
+	-	`sha256:1678e4f6599d47ef9fb95dddc0008c2798217446e1ca851bdccca765099a6d20`  
+		Last Modified: Fri, 24 Jul 2020 19:35:07 GMT  
+		Size: 1.2 KB (1153 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b230b78b2958ebc90f4891c656201075a08ebd0642948d8d35303d7f0f0e8b6`  
-		Last Modified: Fri, 17 Jul 2020 22:34:56 GMT  
+	-	`sha256:d7842e4cf84f05b967f0f179b6cb387143253a808c9917b238a65e883594fbc6`  
+		Last Modified: Fri, 24 Jul 2020 19:35:05 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:3` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:f4bf10bbed0e1911857a45bf04e315270292612f7606d2f529a5e0e50e8ac2e8
+$ docker pull cassandra@sha256:1858daafa236b6e143a57f807ba63e7d1ccd4966c24a0cc611089dd83d5e86e6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.7 MB (126741440 bytes)**  
+-	Total Size: **126.7 MB (126743147 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:caff57cfa0f47157e9f87982d5aa491e9e1c1471ab8598baeff0fd562b7628d7`
+-	Image ID: `sha256:2796144527d9a5cd9aea5fce8a702d79bf5c875134c06e00232d0788a6d76a3f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:04:54 GMT
-ADD file:090a5d48524c4b10f867bf6bb80c106a69bf839c876de86912ed0c633349a1ab in / 
-# Mon, 06 Jul 2020 22:04:56 GMT
+# Fri, 24 Jul 2020 16:21:15 GMT
+ADD file:146b4b3953060bbe623c06f374b3b3798872e4e1ddfef76071c7c4b69a834622 in / 
+# Fri, 24 Jul 2020 16:21:35 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:04:58 GMT
+# Fri, 24 Jul 2020 16:21:51 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:05:00 GMT
+# Fri, 24 Jul 2020 16:23:26 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:05:01 GMT
+# Fri, 24 Jul 2020 16:23:50 GMT
 CMD ["/bin/bash"]
-# Tue, 07 Jul 2020 01:12:32 GMT
+# Fri, 24 Jul 2020 18:11:26 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 20:42:18 GMT
+# Fri, 24 Jul 2020 18:12:03 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 20:42:20 GMT
+# Fri, 24 Jul 2020 18:12:05 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 20:42:56 GMT
+# Fri, 24 Jul 2020 18:12:40 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 20:42:57 GMT
+# Fri, 24 Jul 2020 18:12:42 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 21:04:33 GMT
+# Fri, 24 Jul 2020 19:53:36 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 21:05:11 GMT
+# Fri, 24 Jul 2020 19:53:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 21:05:12 GMT
+# Fri, 24 Jul 2020 19:54:02 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 21:05:51 GMT
+# Fri, 24 Jul 2020 19:54:26 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 21:05:53 GMT
+# Fri, 24 Jul 2020 19:54:27 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 21:05:55 GMT
+# Fri, 24 Jul 2020 19:54:30 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 21:05:56 GMT
+# Fri, 24 Jul 2020 19:54:32 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 21:05:57 GMT
+# Fri, 24 Jul 2020 19:54:34 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 21:08:38 GMT
+# Fri, 24 Jul 2020 19:56:40 GMT
 ENV CASSANDRA_VERSION=3.11.6
-# Fri, 17 Jul 2020 21:08:40 GMT
+# Fri, 24 Jul 2020 19:56:41 GMT
 ENV CASSANDRA_SHA512=0e778f8fb4a050fde3ec174a9ca365e49ef437cd9e61280b6b4dcba950418a3d04a104bb41aed1add858e2acc2513cf7df4065ca5ca751dd1daf60e70adc4042
-# Fri, 17 Jul 2020 21:09:25 GMT
+# Fri, 24 Jul 2020 19:57:16 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 21:09:32 GMT
+# Fri, 24 Jul 2020 19:57:22 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 21:09:33 GMT
+# Fri, 24 Jul 2020 19:57:23 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 21:09:37 GMT
+# Fri, 24 Jul 2020 19:57:38 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 21:09:38 GMT
+# Fri, 24 Jul 2020 19:57:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 21:09:39 GMT
+# Fri, 24 Jul 2020 19:57:47 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 21:09:41 GMT
+# Fri, 24 Jul 2020 19:57:50 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:68fe03cb170d6a5101858131ae1eac5393a4f018d70abfcd1348fd240ee0ccc5`  
-		Last Modified: Tue, 30 Jun 2020 16:25:30 GMT  
-		Size: 23.7 MB (23719365 bytes)  
+	-	`sha256:a114936b480795ec46632c29c96e126744c314983ee0d83354804dc39d1afb46`  
+		Last Modified: Mon, 13 Jul 2020 15:47:08 GMT  
+		Size: 23.7 MB (23721122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18959295effbb87ec216a036a1821f8b7e183072faaa80a6d7f97aa14b51b2af`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 35.2 KB (35189 bytes)  
+	-	`sha256:a27ecf0d2a869e5d188121e6b38473e481b66599a26d8df24d22c9170f50bfa9`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 35.2 KB (35205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51118fb70ce38c0c2e667ecd5fc941590875e2fd9e55dd17c90073f085ba5970`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 852.0 B  
+	-	`sha256:f4eb48eb870f62ec1a7a4a2d753bf2b92dff62a6dbedaeff6db6e41cb33196bc`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:409a5d9eae931d5a3b5a3bcb840e11167c2d3d03ec22258cde67197babf908ed`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 187.0 B  
+	-	`sha256:0f912b9bb20d998fd0f1a2526d5539f35d34a476da71c783d0041b25b78c0af5`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf5858fe3213ff710f6c318742f085137ce8fcea1e001c321df12f5871e95b09`  
-		Last Modified: Fri, 17 Jul 2020 20:45:09 GMT  
-		Size: 13.3 MB (13284377 bytes)  
+	-	`sha256:d25bf415b8209fd4eac1325c07cba7b2f07e2a8c3850968536465e0f068272f1`  
+		Last Modified: Fri, 24 Jul 2020 18:15:34 GMT  
+		Size: 13.3 MB (13284502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3ba5e907efef65b4f3942a118c3585d97dd757f2a331e6457dd91af6b1141e6`  
-		Last Modified: Fri, 17 Jul 2020 20:45:38 GMT  
-		Size: 42.1 MB (42114920 bytes)  
+	-	`sha256:5ecc5c98d1ae78a662cf63740308e6e826b8d9bcb21ec72db61922c0e1c9bd27`  
+		Last Modified: Fri, 24 Jul 2020 18:16:06 GMT  
+		Size: 42.1 MB (42114929 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4695d6ae56de7ede13767fd8d7fe669e5e172c7eedba013b267ebc8db2645b59`  
-		Last Modified: Fri, 17 Jul 2020 21:10:06 GMT  
-		Size: 1.9 KB (1899 bytes)  
+	-	`sha256:a058bddc4a987cc2252e05d52e29c679dcd7195e2c266c276c77663e1fa5f90e`  
+		Last Modified: Fri, 24 Jul 2020 19:58:08 GMT  
+		Size: 1.9 KB (1889 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7accc9d6756c5398000839b30bad7abed2eeedacea2df57c11d2d102273943dd`  
-		Last Modified: Fri, 17 Jul 2020 21:10:06 GMT  
-		Size: 8.5 MB (8532675 bytes)  
+	-	`sha256:26f8e9f0111a29cd98efe9beb4fe9e5f27428a47eed962d09b17a8e1fdcb3f48`  
+		Last Modified: Fri, 24 Jul 2020 19:58:08 GMT  
+		Size: 8.5 MB (8532893 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19ca2193a18ed13cccf4d9d3cf16dc7cac9b87082ce0e83bc094647c7fbfa737`  
-		Last Modified: Fri, 17 Jul 2020 21:10:04 GMT  
-		Size: 1.2 MB (1246950 bytes)  
+	-	`sha256:c12c02c0ca3b9acaeda40f5cc3ace38fc0f3d14b54085f18fa8dd5013b49993e`  
+		Last Modified: Fri, 24 Jul 2020 19:58:05 GMT  
+		Size: 1.2 MB (1246894 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc17ab07a0dc4f504419e693342ea8c79d8d5b3eba2f288e85d20686f3c323c0`  
-		Last Modified: Fri, 17 Jul 2020 21:10:41 GMT  
-		Size: 37.8 MB (37803751 bytes)  
+	-	`sha256:a0ac591833e849b4c635e25c09042351ec3f138a6adc62c677fb78fa1d2a3cb2`  
+		Last Modified: Fri, 24 Jul 2020 19:58:42 GMT  
+		Size: 37.8 MB (37803401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95ebe519b3064a3b05f5009012b21b102f1f9d70fe127c01169dbfc0eaa0c4df`  
-		Last Modified: Fri, 17 Jul 2020 21:10:32 GMT  
+	-	`sha256:7516713124e5a176f583df9f4e9d8d7a25986b6a124b9d2c54f2c4a908c1f90a`  
+		Last Modified: Fri, 24 Jul 2020 19:58:33 GMT  
 		Size: 1.2 KB (1154 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c69517aea6f98d890cd32086202f4511c09d7f95b9368ddc6bf35fa20ba16f4`  
-		Last Modified: Fri, 17 Jul 2020 21:10:32 GMT  
+	-	`sha256:4f69b4568d3dc3ac436263a44cdd6de861fd2e2146612bc0cf6a6dfa3fd4be13`  
+		Last Modified: Fri, 24 Jul 2020 19:58:33 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2389,7 +2389,7 @@ CMD ["cassandra" "-f"]
 ## `cassandra:3.0`
 
 ```console
-$ docker pull cassandra@sha256:40dff6ca666aed51c1a22f4e729c2aa7a0c1d763d70893f6a56e2cc879d43328
+$ docker pull cassandra@sha256:f8459e5b080ac4bf9cba3f7ea8bd96039bb3c3e98ae8d05c5520283f59911379
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2402,364 +2402,364 @@ $ docker pull cassandra@sha256:40dff6ca666aed51c1a22f4e729c2aa7a0c1d763d70893f6a
 ### `cassandra:3.0` - linux; amd64
 
 ```console
-$ docker pull cassandra@sha256:8c6a0433662f6397f6abb2f3b71745b4906ef9854f2ae6d41a2ffd6ffd6538a7
+$ docker pull cassandra@sha256:3417020cd98601009e27a39ea9ddfb2926dda4a69d625e00f395ad572f05b6a2
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **125.3 MB (125300734 bytes)**  
+-	Total Size: **125.3 MB (125316032 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:172831c21ed4779959847fa2c5d3685668bfe658cf11583c2e47ae71f650c31e`
+-	Image ID: `sha256:1fd43a49133c83e58ea2b7d39ab1c9c8082ddfe9da480a3c39de4c7d2bd4e31d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 21:56:08 GMT
-ADD file:0b40d881e3e00d68de1f1df0a565385bb838144b83814df891c994f466e9efa2 in / 
-# Mon, 06 Jul 2020 21:56:09 GMT
+# Fri, 24 Jul 2020 14:38:19 GMT
+ADD file:7d9bbf45a5b2510d44d3206a028cf6502757884d49e46d3d2e6356c3a92c4309 in / 
+# Fri, 24 Jul 2020 14:38:20 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 21:56:10 GMT
+# Fri, 24 Jul 2020 14:38:21 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 21:56:11 GMT
+# Fri, 24 Jul 2020 14:38:21 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 21:56:11 GMT
+# Fri, 24 Jul 2020 14:38:22 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:03:04 GMT
+# Fri, 24 Jul 2020 15:16:41 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:52 GMT
+# Fri, 24 Jul 2020 15:17:03 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:19:52 GMT
+# Fri, 24 Jul 2020 15:17:03 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 22:20:11 GMT
+# Fri, 24 Jul 2020 15:17:27 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:20:11 GMT
+# Fri, 24 Jul 2020 15:17:28 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:50:11 GMT
+# Fri, 24 Jul 2020 19:29:08 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 22:50:24 GMT
+# Fri, 24 Jul 2020 19:29:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:50:24 GMT
+# Fri, 24 Jul 2020 19:29:18 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:50:34 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 22:51:16 GMT
+# Fri, 24 Jul 2020 19:30:16 GMT
 ENV CASSANDRA_VERSION=3.0.20
-# Fri, 17 Jul 2020 22:51:16 GMT
+# Fri, 24 Jul 2020 19:30:16 GMT
 ENV CASSANDRA_SHA512=1a96db1f26cb31e3d04cb67791d4055515b0ea434e0fa2fb2445d44a180c71e7ca5c6436c27059e44b398f623c9623a8fa67d60a084219f0938f9528cd0c1634
-# Fri, 17 Jul 2020 22:51:35 GMT
+# Fri, 24 Jul 2020 19:30:28 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 22:51:35 GMT
+# Fri, 24 Jul 2020 19:30:29 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 22:51:35 GMT
+# Fri, 24 Jul 2020 19:30:29 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 22:51:36 GMT
+# Fri, 24 Jul 2020 19:30:30 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 22:51:36 GMT
+# Fri, 24 Jul 2020 19:30:30 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 22:51:37 GMT
+# Fri, 24 Jul 2020 19:30:30 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 22:51:37 GMT
+# Fri, 24 Jul 2020 19:30:30 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:a1125296b23d78a3585a7910d649fbf0cc56284f9d2066e3243e8bc18f90b308`  
-		Last Modified: Wed, 01 Jul 2020 12:21:40 GMT  
-		Size: 26.7 MB (26696193 bytes)  
+	-	`sha256:7595c8c21622ea8a8b9778972e26dbbe063f7a1c4b0a28a80a34ebb3d343b586`  
+		Last Modified: Mon, 13 Jul 2020 15:46:50 GMT  
+		Size: 26.7 MB (26697127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c742a4a0f38c95e690ad2dad8909c0cb232911418ac94a73da2a28becc7b734`  
-		Last Modified: Mon, 06 Jul 2020 21:57:18 GMT  
-		Size: 35.4 KB (35365 bytes)  
+	-	`sha256:d13af8ca898f36af68711cb67c345f65046a78ccd802453f4b129adf9205b1f8`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 35.4 KB (35364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c5ea3b329965bf7239f4e4f484915a444ec6d78b532ae12525934d4f6f7ac9a`  
-		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
-		Size: 852.0 B  
+	-	`sha256:70799171ddba93a611490ba3557d782714b3f4da8963d49ac8726786ba8274a5`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 848.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b4be91ead68299f53759fd80c135e0dde0eb797e91eb8fbc5a708a506e0c433`  
-		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
-		Size: 162.0 B  
+	-	`sha256:b6c12202c5ef07dc9eb8f9d9e71407064684ed70f8c4040b62679b7d30200840`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
-		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
-		Size: 13.9 MB (13875144 bytes)  
+	-	`sha256:c54d424eaa66f20b7926dbaa13c37d1c7c27c0e3113239f5608b4a57c157c399`  
+		Last Modified: Fri, 24 Jul 2020 15:22:49 GMT  
+		Size: 13.9 MB (13875512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b38587e18ed628aa15742a897954754fec3b97a3454dbfd1a5ae9ad4d7b13e4d`  
-		Last Modified: Fri, 17 Jul 2020 22:23:36 GMT  
-		Size: 42.1 MB (42118777 bytes)  
+	-	`sha256:98cd7f0d1fb17db5f394e9dd8dc0faa5708639a99eda99f4c31bb8500645164a`  
+		Last Modified: Fri, 24 Jul 2020 15:23:09 GMT  
+		Size: 42.1 MB (42118779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9197ce285aeaef46cca997053633b75dfca35dc3198654de29083fc918dc709b`  
-		Last Modified: Fri, 17 Jul 2020 22:52:17 GMT  
-		Size: 1.9 KB (1880 bytes)  
+	-	`sha256:b7d0e492af2bc95a83006c62097832dc0be0961a8e956f105ed61b4b95252de2`  
+		Last Modified: Fri, 24 Jul 2020 19:31:15 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df450904509f41d0d9ee3a215b637d024d96b5365b3e6707bf794f53a4492ad3`  
-		Last Modified: Fri, 17 Jul 2020 22:52:18 GMT  
-		Size: 8.7 MB (8739579 bytes)  
+	-	`sha256:6c2ac3248adb599e567b6402031235101652baa7ba677daa59da5aaf483a40e2`  
+		Last Modified: Fri, 24 Jul 2020 19:31:16 GMT  
+		Size: 8.8 MB (8752856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bcf8b6bf9fc13837274f26f53d1cad4dc0865dbbb3a6360fd09bea55c04ebb4`  
-		Last Modified: Fri, 17 Jul 2020 22:52:16 GMT  
-		Size: 1.3 MB (1309892 bytes)  
+	-	`sha256:50c8b9abae1ea715c9e1dbe4fc33971f5c559e93fefaa3f0aca8ca9b17b8c9ef`  
+		Last Modified: Fri, 24 Jul 2020 19:31:14 GMT  
+		Size: 1.3 MB (1310258 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a65f0bc76aeebbe74448c7dfcf448c4d52027ebe4af9de0fa0939af694d2de8`  
-		Last Modified: Fri, 17 Jul 2020 22:52:36 GMT  
-		Size: 32.5 MB (32521615 bytes)  
+	-	`sha256:cdd43bb481413c0e72eb4c3b94f4b3f5f9694035cee64e4c3b6374a59cb361f5`  
+		Last Modified: Fri, 24 Jul 2020 19:31:36 GMT  
+		Size: 32.5 MB (32521966 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0c5c8af5c35494500c837245d363e04bde9c88245a4bc19db405438330c54e8`  
-		Last Modified: Fri, 17 Jul 2020 22:52:31 GMT  
-		Size: 1.2 KB (1154 bytes)  
+	-	`sha256:f22f494ca5a4f3a1be7ae75022aa083106857e20e3eab363e7081f9b1be68f4b`  
+		Last Modified: Fri, 24 Jul 2020 19:31:32 GMT  
+		Size: 1.2 KB (1152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d11c3e6690f2bc327dfb9f6507bfa29f232df685cb340a4d201d66f83d7c5e6c`  
-		Last Modified: Fri, 17 Jul 2020 22:52:31 GMT  
+	-	`sha256:1fae2289eccd3fbce15bf9b5aec84d31f809d3223dd3894f5a71237622c6a3c9`  
+		Last Modified: Fri, 24 Jul 2020 19:31:32 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:3.0` - linux; arm variant v7
 
 ```console
-$ docker pull cassandra@sha256:5fabbb03eacdb87e4a14c657ad087611eaf89d4dcee080d3c2ff6dc7301ed806
+$ docker pull cassandra@sha256:e0a6ec56c89bb5e586788c130c93d1d006b4055e55a7c498e3c90acbb9e28fca
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **115.7 MB (115730803 bytes)**  
+-	Total Size: **115.7 MB (115727102 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3aaa2aecda982d71e595633526fee57e902ef71ef40cd3a828efc94b09bcd28d`
+-	Image ID: `sha256:8c6341a8989fb2a3112e0b2e97e20b3861fe3d8047bd856afa9b97cfb7293963`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 20:07:11 GMT
-ADD file:6797f65071d6d263c6466e89bb2db63753b08510aef54a1dc28891fbf2e58799 in / 
-# Mon, 06 Jul 2020 20:07:14 GMT
+# Fri, 24 Jul 2020 16:04:27 GMT
+ADD file:934b4bc073556bbba45a5017b40df7ac076a57b031b6b7225919b1ea3c1d89ff in / 
+# Fri, 24 Jul 2020 16:04:32 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 20:07:16 GMT
+# Fri, 24 Jul 2020 16:05:15 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 20:07:18 GMT
+# Fri, 24 Jul 2020 16:05:33 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 20:07:19 GMT
+# Fri, 24 Jul 2020 16:05:40 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 21:54:44 GMT
+# Fri, 24 Jul 2020 18:19:35 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 20:58:22 GMT
+# Fri, 24 Jul 2020 18:20:26 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 20:58:24 GMT
+# Fri, 24 Jul 2020 18:20:29 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 20:58:55 GMT
+# Fri, 24 Jul 2020 18:21:58 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 20:58:56 GMT
+# Fri, 24 Jul 2020 18:22:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:31:10 GMT
+# Fri, 24 Jul 2020 19:29:30 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 22:31:28 GMT
+# Fri, 24 Jul 2020 19:29:48 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:31:29 GMT
+# Fri, 24 Jul 2020 19:29:49 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 22:31:53 GMT
+# Fri, 24 Jul 2020 19:30:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 22:31:54 GMT
+# Fri, 24 Jul 2020 19:30:07 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 22:31:54 GMT
+# Fri, 24 Jul 2020 19:30:08 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 22:31:55 GMT
+# Fri, 24 Jul 2020 19:30:09 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:31:55 GMT
+# Fri, 24 Jul 2020 19:30:10 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 22:32:42 GMT
+# Fri, 24 Jul 2020 19:31:17 GMT
 ENV CASSANDRA_VERSION=3.0.20
-# Fri, 17 Jul 2020 22:32:42 GMT
+# Fri, 24 Jul 2020 19:31:17 GMT
 ENV CASSANDRA_SHA512=1a96db1f26cb31e3d04cb67791d4055515b0ea434e0fa2fb2445d44a180c71e7ca5c6436c27059e44b398f623c9623a8fa67d60a084219f0938f9528cd0c1634
-# Fri, 17 Jul 2020 22:33:13 GMT
+# Fri, 24 Jul 2020 19:32:43 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 22:33:16 GMT
+# Fri, 24 Jul 2020 19:32:48 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 22:33:16 GMT
+# Fri, 24 Jul 2020 19:32:49 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 22:33:18 GMT
+# Fri, 24 Jul 2020 19:32:51 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 22:33:19 GMT
+# Fri, 24 Jul 2020 19:32:51 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 22:33:19 GMT
+# Fri, 24 Jul 2020 19:32:52 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 22:33:20 GMT
+# Fri, 24 Jul 2020 19:32:53 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:db182fa07ba527098363444f993730c582b86e361f0ac7ae981ba0e9ca768c84`  
-		Last Modified: Mon, 06 Jul 2020 15:46:25 GMT  
-		Size: 22.3 MB (22276511 bytes)  
+	-	`sha256:de691405df56c17462a8052d9b88a283d955c448deda7a610d70096a5454ff13`  
+		Last Modified: Mon, 13 Jul 2020 15:47:13 GMT  
+		Size: 22.3 MB (22277635 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e85650936bd5be5a40db91349e387ede7738f5f7938d6421cb9d64eb021a5a3`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 35.5 KB (35457 bytes)  
+	-	`sha256:e5a766b93ee2f7ed0525d6d90b71c5e860e5e54d4b5259de86c81e5c49ff120c`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 35.5 KB (35459 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:258b890879c48b8d0f50ea632de0a703079d7f5d973ec47338cbe791bb8e30d5`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 850.0 B  
+	-	`sha256:8c97e104d7363348d21ddc11159cfa859c18d58712fcafc215fefb535baccbae`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 857.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0f858a12ecedcf911e3fea9bb17332b53a888444834a3e3d12cd25be830898d`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 188.0 B  
+	-	`sha256:d7a97b3bf2bf845ce898abe48aed267cb2a554e220ee512500495c2791ea6ea8`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4cc999ed63826a5b44acb46406a5dc7d80f1604cc4f06927d88bf6c5e79b497`  
-		Last Modified: Fri, 17 Jul 2020 21:00:57 GMT  
-		Size: 12.8 MB (12816746 bytes)  
+	-	`sha256:06b94dcf53adc5490aa500e598355308c95d914fd25bb61493b436a89f18e8b9`  
+		Last Modified: Fri, 24 Jul 2020 18:29:34 GMT  
+		Size: 12.8 MB (12816849 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d0e340a37a5f7084c19060c7274257987f4abc0b975260c87cffa8e2c4db931`  
-		Last Modified: Fri, 17 Jul 2020 21:01:31 GMT  
-		Size: 38.6 MB (38612358 bytes)  
+	-	`sha256:f17b9ab84135cfaece5bab286aca0ae138291ca7c2370ade6f1165f21e96180c`  
+		Last Modified: Fri, 24 Jul 2020 18:30:12 GMT  
+		Size: 38.6 MB (38612334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ba1dd1eb65901c731bba9cacc9bd6e03326ba749fe2bff114cb0e5845448f1d`  
-		Last Modified: Fri, 17 Jul 2020 22:34:27 GMT  
+	-	`sha256:f6e65532d1eb1a44543148302ec36177bb17984d13d786a636934136b0a0e8bb`  
+		Last Modified: Fri, 24 Jul 2020 19:34:32 GMT  
 		Size: 1.9 KB (1876 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9deeece59d0af97d827664403060b46dddc6ec57d2eb89a634247412215c701f`  
-		Last Modified: Fri, 17 Jul 2020 22:34:29 GMT  
-		Size: 8.2 MB (8199899 bytes)  
+	-	`sha256:8914480b0f542282a0fded757439bc750f8218c0de990110c38f34158ae2b69f`  
+		Last Modified: Fri, 24 Jul 2020 19:34:33 GMT  
+		Size: 8.2 MB (8194763 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccb237791e61160e1d65c5821d7833c5a2ddefa21040bc0c1b98143c0efc21de`  
-		Last Modified: Fri, 17 Jul 2020 22:34:26 GMT  
-		Size: 1.3 MB (1263056 bytes)  
+	-	`sha256:8ab4af184c01717aec5b30e306cd595dd7d15e5cf1210d74a6609b068e741815`  
+		Last Modified: Fri, 24 Jul 2020 19:34:31 GMT  
+		Size: 1.3 MB (1263131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c148423f08e538f655143ceb7a208390a28b4c68ed03fae4dd40f66650501d9`  
-		Last Modified: Fri, 17 Jul 2020 22:34:51 GMT  
-		Size: 32.5 MB (32522588 bytes)  
+	-	`sha256:bff475abee0bcfc6845c52ba7a8ad93197e7e706ffb67cca4869ad444a6f7138`  
+		Last Modified: Fri, 24 Jul 2020 19:34:58 GMT  
+		Size: 32.5 MB (32522737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02e65750a67cbc4b394d0ef17b79655b66fc093f0a8b2b1170286630951f52a1`  
-		Last Modified: Fri, 17 Jul 2020 22:34:41 GMT  
+	-	`sha256:0c16d73795c43df1308decad19440076d7079dd8fc01247821bfd612c66bee77`  
+		Last Modified: Fri, 24 Jul 2020 19:34:47 GMT  
 		Size: 1.2 KB (1153 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c85e08dd2f0b784c404909c078c2ba03c290eeb239c9077beca0606377915223`  
-		Last Modified: Fri, 17 Jul 2020 22:34:41 GMT  
+	-	`sha256:8c989dccaf6ecc91348acca1d171b057b52946c1dec7a91aa98ab63722ead236`  
+		Last Modified: Fri, 24 Jul 2020 19:34:47 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:3.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:7a13a4874bb9fdb3b6674e27905398f27f6795b8df4b4fb73c4443aca8bc13c1
+$ docker pull cassandra@sha256:d231085156f10090802ae728e0769b3aa801c2f979f4bcefeccfddb4d4d2c766
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **121.5 MB (121459967 bytes)**  
+-	Total Size: **121.5 MB (121462103 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb2acd324a5b3c33cefe3b1af7447307fba465554c1b3e6ca30b0b98c1fab937`
+-	Image ID: `sha256:498510cab8956a03a7d1eeed8a365b2eda9a602e3adbeff3c501bd12498ac41f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:04:54 GMT
-ADD file:090a5d48524c4b10f867bf6bb80c106a69bf839c876de86912ed0c633349a1ab in / 
-# Mon, 06 Jul 2020 22:04:56 GMT
+# Fri, 24 Jul 2020 16:21:15 GMT
+ADD file:146b4b3953060bbe623c06f374b3b3798872e4e1ddfef76071c7c4b69a834622 in / 
+# Fri, 24 Jul 2020 16:21:35 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:04:58 GMT
+# Fri, 24 Jul 2020 16:21:51 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:05:00 GMT
+# Fri, 24 Jul 2020 16:23:26 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:05:01 GMT
+# Fri, 24 Jul 2020 16:23:50 GMT
 CMD ["/bin/bash"]
-# Tue, 07 Jul 2020 01:12:32 GMT
+# Fri, 24 Jul 2020 18:11:26 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 20:42:18 GMT
+# Fri, 24 Jul 2020 18:12:03 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 20:42:20 GMT
+# Fri, 24 Jul 2020 18:12:05 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 20:42:56 GMT
+# Fri, 24 Jul 2020 18:12:40 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 20:42:57 GMT
+# Fri, 24 Jul 2020 18:12:42 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 21:04:33 GMT
+# Fri, 24 Jul 2020 19:53:36 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 21:05:11 GMT
+# Fri, 24 Jul 2020 19:53:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 21:05:12 GMT
+# Fri, 24 Jul 2020 19:54:02 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 21:05:51 GMT
+# Fri, 24 Jul 2020 19:54:26 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 21:05:53 GMT
+# Fri, 24 Jul 2020 19:54:27 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 21:05:55 GMT
+# Fri, 24 Jul 2020 19:54:30 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 21:05:56 GMT
+# Fri, 24 Jul 2020 19:54:32 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 21:05:57 GMT
+# Fri, 24 Jul 2020 19:54:34 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 21:07:18 GMT
+# Fri, 24 Jul 2020 19:55:59 GMT
 ENV CASSANDRA_VERSION=3.0.20
-# Fri, 17 Jul 2020 21:07:20 GMT
+# Fri, 24 Jul 2020 19:55:59 GMT
 ENV CASSANDRA_SHA512=1a96db1f26cb31e3d04cb67791d4055515b0ea434e0fa2fb2445d44a180c71e7ca5c6436c27059e44b398f623c9623a8fa67d60a084219f0938f9528cd0c1634
-# Fri, 17 Jul 2020 21:08:07 GMT
+# Fri, 24 Jul 2020 19:56:26 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 21:08:11 GMT
+# Fri, 24 Jul 2020 19:56:29 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 21:08:12 GMT
+# Fri, 24 Jul 2020 19:56:29 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 21:08:17 GMT
+# Fri, 24 Jul 2020 19:56:31 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 21:08:19 GMT
+# Fri, 24 Jul 2020 19:56:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 21:08:20 GMT
+# Fri, 24 Jul 2020 19:56:32 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 21:08:22 GMT
+# Fri, 24 Jul 2020 19:56:33 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:68fe03cb170d6a5101858131ae1eac5393a4f018d70abfcd1348fd240ee0ccc5`  
-		Last Modified: Tue, 30 Jun 2020 16:25:30 GMT  
-		Size: 23.7 MB (23719365 bytes)  
+	-	`sha256:a114936b480795ec46632c29c96e126744c314983ee0d83354804dc39d1afb46`  
+		Last Modified: Mon, 13 Jul 2020 15:47:08 GMT  
+		Size: 23.7 MB (23721122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18959295effbb87ec216a036a1821f8b7e183072faaa80a6d7f97aa14b51b2af`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 35.2 KB (35189 bytes)  
+	-	`sha256:a27ecf0d2a869e5d188121e6b38473e481b66599a26d8df24d22c9170f50bfa9`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 35.2 KB (35205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51118fb70ce38c0c2e667ecd5fc941590875e2fd9e55dd17c90073f085ba5970`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 852.0 B  
+	-	`sha256:f4eb48eb870f62ec1a7a4a2d753bf2b92dff62a6dbedaeff6db6e41cb33196bc`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:409a5d9eae931d5a3b5a3bcb840e11167c2d3d03ec22258cde67197babf908ed`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 187.0 B  
+	-	`sha256:0f912b9bb20d998fd0f1a2526d5539f35d34a476da71c783d0041b25b78c0af5`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf5858fe3213ff710f6c318742f085137ce8fcea1e001c321df12f5871e95b09`  
-		Last Modified: Fri, 17 Jul 2020 20:45:09 GMT  
-		Size: 13.3 MB (13284377 bytes)  
+	-	`sha256:d25bf415b8209fd4eac1325c07cba7b2f07e2a8c3850968536465e0f068272f1`  
+		Last Modified: Fri, 24 Jul 2020 18:15:34 GMT  
+		Size: 13.3 MB (13284502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3ba5e907efef65b4f3942a118c3585d97dd757f2a331e6457dd91af6b1141e6`  
-		Last Modified: Fri, 17 Jul 2020 20:45:38 GMT  
-		Size: 42.1 MB (42114920 bytes)  
+	-	`sha256:5ecc5c98d1ae78a662cf63740308e6e826b8d9bcb21ec72db61922c0e1c9bd27`  
+		Last Modified: Fri, 24 Jul 2020 18:16:06 GMT  
+		Size: 42.1 MB (42114929 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4695d6ae56de7ede13767fd8d7fe669e5e172c7eedba013b267ebc8db2645b59`  
-		Last Modified: Fri, 17 Jul 2020 21:10:06 GMT  
-		Size: 1.9 KB (1899 bytes)  
+	-	`sha256:a058bddc4a987cc2252e05d52e29c679dcd7195e2c266c276c77663e1fa5f90e`  
+		Last Modified: Fri, 24 Jul 2020 19:58:08 GMT  
+		Size: 1.9 KB (1889 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7accc9d6756c5398000839b30bad7abed2eeedacea2df57c11d2d102273943dd`  
-		Last Modified: Fri, 17 Jul 2020 21:10:06 GMT  
-		Size: 8.5 MB (8532675 bytes)  
+	-	`sha256:26f8e9f0111a29cd98efe9beb4fe9e5f27428a47eed962d09b17a8e1fdcb3f48`  
+		Last Modified: Fri, 24 Jul 2020 19:58:08 GMT  
+		Size: 8.5 MB (8532893 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19ca2193a18ed13cccf4d9d3cf16dc7cac9b87082ce0e83bc094647c7fbfa737`  
-		Last Modified: Fri, 17 Jul 2020 21:10:04 GMT  
-		Size: 1.2 MB (1246950 bytes)  
+	-	`sha256:c12c02c0ca3b9acaeda40f5cc3ace38fc0f3d14b54085f18fa8dd5013b49993e`  
+		Last Modified: Fri, 24 Jul 2020 19:58:05 GMT  
+		Size: 1.2 MB (1246894 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4d9126dac10078446759f61311bdf7e83d4e40d09e7ee0a0a7e84d3ade6b8d1`  
-		Last Modified: Fri, 17 Jul 2020 21:10:22 GMT  
-		Size: 32.5 MB (32522279 bytes)  
+	-	`sha256:239150ac9c3b0970719b65cdffbcf4a5af5c73842721b586f440b92e6268d055`  
+		Last Modified: Fri, 24 Jul 2020 19:58:27 GMT  
+		Size: 32.5 MB (32522360 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b638dd0fb6bacc60cc5d310133ae275527f9bfa6ecbf061e006e3e0951fae81`  
-		Last Modified: Fri, 17 Jul 2020 21:10:15 GMT  
-		Size: 1.2 KB (1155 bytes)  
+	-	`sha256:e1b658439db60b99502277f7fe74fc6daec8a924ff09ccaec38ff159cbe17121`  
+		Last Modified: Fri, 24 Jul 2020 19:58:19 GMT  
+		Size: 1.2 KB (1151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddc1c4039d4e3ac604d939390a9bef4810a9f0c8444c7fa92eccb4a5e2f89482`  
-		Last Modified: Fri, 17 Jul 2020 21:10:15 GMT  
-		Size: 119.0 B  
+	-	`sha256:11b46cf3452df790da3e5ce2c10b7cb5a0e2209f642df34a3a14be8bf077c9dc`  
+		Last Modified: Fri, 24 Jul 2020 19:58:19 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:3.0` - linux; ppc64le
@@ -2886,7 +2886,7 @@ CMD ["cassandra" "-f"]
 ## `cassandra:3.0.20`
 
 ```console
-$ docker pull cassandra@sha256:40dff6ca666aed51c1a22f4e729c2aa7a0c1d763d70893f6a56e2cc879d43328
+$ docker pull cassandra@sha256:f8459e5b080ac4bf9cba3f7ea8bd96039bb3c3e98ae8d05c5520283f59911379
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2899,364 +2899,364 @@ $ docker pull cassandra@sha256:40dff6ca666aed51c1a22f4e729c2aa7a0c1d763d70893f6a
 ### `cassandra:3.0.20` - linux; amd64
 
 ```console
-$ docker pull cassandra@sha256:8c6a0433662f6397f6abb2f3b71745b4906ef9854f2ae6d41a2ffd6ffd6538a7
+$ docker pull cassandra@sha256:3417020cd98601009e27a39ea9ddfb2926dda4a69d625e00f395ad572f05b6a2
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **125.3 MB (125300734 bytes)**  
+-	Total Size: **125.3 MB (125316032 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:172831c21ed4779959847fa2c5d3685668bfe658cf11583c2e47ae71f650c31e`
+-	Image ID: `sha256:1fd43a49133c83e58ea2b7d39ab1c9c8082ddfe9da480a3c39de4c7d2bd4e31d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 21:56:08 GMT
-ADD file:0b40d881e3e00d68de1f1df0a565385bb838144b83814df891c994f466e9efa2 in / 
-# Mon, 06 Jul 2020 21:56:09 GMT
+# Fri, 24 Jul 2020 14:38:19 GMT
+ADD file:7d9bbf45a5b2510d44d3206a028cf6502757884d49e46d3d2e6356c3a92c4309 in / 
+# Fri, 24 Jul 2020 14:38:20 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 21:56:10 GMT
+# Fri, 24 Jul 2020 14:38:21 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 21:56:11 GMT
+# Fri, 24 Jul 2020 14:38:21 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 21:56:11 GMT
+# Fri, 24 Jul 2020 14:38:22 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:03:04 GMT
+# Fri, 24 Jul 2020 15:16:41 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:52 GMT
+# Fri, 24 Jul 2020 15:17:03 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:19:52 GMT
+# Fri, 24 Jul 2020 15:17:03 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 22:20:11 GMT
+# Fri, 24 Jul 2020 15:17:27 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:20:11 GMT
+# Fri, 24 Jul 2020 15:17:28 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:50:11 GMT
+# Fri, 24 Jul 2020 19:29:08 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 22:50:24 GMT
+# Fri, 24 Jul 2020 19:29:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:50:24 GMT
+# Fri, 24 Jul 2020 19:29:18 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:50:34 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 22:51:16 GMT
+# Fri, 24 Jul 2020 19:30:16 GMT
 ENV CASSANDRA_VERSION=3.0.20
-# Fri, 17 Jul 2020 22:51:16 GMT
+# Fri, 24 Jul 2020 19:30:16 GMT
 ENV CASSANDRA_SHA512=1a96db1f26cb31e3d04cb67791d4055515b0ea434e0fa2fb2445d44a180c71e7ca5c6436c27059e44b398f623c9623a8fa67d60a084219f0938f9528cd0c1634
-# Fri, 17 Jul 2020 22:51:35 GMT
+# Fri, 24 Jul 2020 19:30:28 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 22:51:35 GMT
+# Fri, 24 Jul 2020 19:30:29 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 22:51:35 GMT
+# Fri, 24 Jul 2020 19:30:29 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 22:51:36 GMT
+# Fri, 24 Jul 2020 19:30:30 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 22:51:36 GMT
+# Fri, 24 Jul 2020 19:30:30 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 22:51:37 GMT
+# Fri, 24 Jul 2020 19:30:30 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 22:51:37 GMT
+# Fri, 24 Jul 2020 19:30:30 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:a1125296b23d78a3585a7910d649fbf0cc56284f9d2066e3243e8bc18f90b308`  
-		Last Modified: Wed, 01 Jul 2020 12:21:40 GMT  
-		Size: 26.7 MB (26696193 bytes)  
+	-	`sha256:7595c8c21622ea8a8b9778972e26dbbe063f7a1c4b0a28a80a34ebb3d343b586`  
+		Last Modified: Mon, 13 Jul 2020 15:46:50 GMT  
+		Size: 26.7 MB (26697127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c742a4a0f38c95e690ad2dad8909c0cb232911418ac94a73da2a28becc7b734`  
-		Last Modified: Mon, 06 Jul 2020 21:57:18 GMT  
-		Size: 35.4 KB (35365 bytes)  
+	-	`sha256:d13af8ca898f36af68711cb67c345f65046a78ccd802453f4b129adf9205b1f8`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 35.4 KB (35364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c5ea3b329965bf7239f4e4f484915a444ec6d78b532ae12525934d4f6f7ac9a`  
-		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
-		Size: 852.0 B  
+	-	`sha256:70799171ddba93a611490ba3557d782714b3f4da8963d49ac8726786ba8274a5`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 848.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b4be91ead68299f53759fd80c135e0dde0eb797e91eb8fbc5a708a506e0c433`  
-		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
-		Size: 162.0 B  
+	-	`sha256:b6c12202c5ef07dc9eb8f9d9e71407064684ed70f8c4040b62679b7d30200840`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
-		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
-		Size: 13.9 MB (13875144 bytes)  
+	-	`sha256:c54d424eaa66f20b7926dbaa13c37d1c7c27c0e3113239f5608b4a57c157c399`  
+		Last Modified: Fri, 24 Jul 2020 15:22:49 GMT  
+		Size: 13.9 MB (13875512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b38587e18ed628aa15742a897954754fec3b97a3454dbfd1a5ae9ad4d7b13e4d`  
-		Last Modified: Fri, 17 Jul 2020 22:23:36 GMT  
-		Size: 42.1 MB (42118777 bytes)  
+	-	`sha256:98cd7f0d1fb17db5f394e9dd8dc0faa5708639a99eda99f4c31bb8500645164a`  
+		Last Modified: Fri, 24 Jul 2020 15:23:09 GMT  
+		Size: 42.1 MB (42118779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9197ce285aeaef46cca997053633b75dfca35dc3198654de29083fc918dc709b`  
-		Last Modified: Fri, 17 Jul 2020 22:52:17 GMT  
-		Size: 1.9 KB (1880 bytes)  
+	-	`sha256:b7d0e492af2bc95a83006c62097832dc0be0961a8e956f105ed61b4b95252de2`  
+		Last Modified: Fri, 24 Jul 2020 19:31:15 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df450904509f41d0d9ee3a215b637d024d96b5365b3e6707bf794f53a4492ad3`  
-		Last Modified: Fri, 17 Jul 2020 22:52:18 GMT  
-		Size: 8.7 MB (8739579 bytes)  
+	-	`sha256:6c2ac3248adb599e567b6402031235101652baa7ba677daa59da5aaf483a40e2`  
+		Last Modified: Fri, 24 Jul 2020 19:31:16 GMT  
+		Size: 8.8 MB (8752856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bcf8b6bf9fc13837274f26f53d1cad4dc0865dbbb3a6360fd09bea55c04ebb4`  
-		Last Modified: Fri, 17 Jul 2020 22:52:16 GMT  
-		Size: 1.3 MB (1309892 bytes)  
+	-	`sha256:50c8b9abae1ea715c9e1dbe4fc33971f5c559e93fefaa3f0aca8ca9b17b8c9ef`  
+		Last Modified: Fri, 24 Jul 2020 19:31:14 GMT  
+		Size: 1.3 MB (1310258 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a65f0bc76aeebbe74448c7dfcf448c4d52027ebe4af9de0fa0939af694d2de8`  
-		Last Modified: Fri, 17 Jul 2020 22:52:36 GMT  
-		Size: 32.5 MB (32521615 bytes)  
+	-	`sha256:cdd43bb481413c0e72eb4c3b94f4b3f5f9694035cee64e4c3b6374a59cb361f5`  
+		Last Modified: Fri, 24 Jul 2020 19:31:36 GMT  
+		Size: 32.5 MB (32521966 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0c5c8af5c35494500c837245d363e04bde9c88245a4bc19db405438330c54e8`  
-		Last Modified: Fri, 17 Jul 2020 22:52:31 GMT  
-		Size: 1.2 KB (1154 bytes)  
+	-	`sha256:f22f494ca5a4f3a1be7ae75022aa083106857e20e3eab363e7081f9b1be68f4b`  
+		Last Modified: Fri, 24 Jul 2020 19:31:32 GMT  
+		Size: 1.2 KB (1152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d11c3e6690f2bc327dfb9f6507bfa29f232df685cb340a4d201d66f83d7c5e6c`  
-		Last Modified: Fri, 17 Jul 2020 22:52:31 GMT  
+	-	`sha256:1fae2289eccd3fbce15bf9b5aec84d31f809d3223dd3894f5a71237622c6a3c9`  
+		Last Modified: Fri, 24 Jul 2020 19:31:32 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:3.0.20` - linux; arm variant v7
 
 ```console
-$ docker pull cassandra@sha256:5fabbb03eacdb87e4a14c657ad087611eaf89d4dcee080d3c2ff6dc7301ed806
+$ docker pull cassandra@sha256:e0a6ec56c89bb5e586788c130c93d1d006b4055e55a7c498e3c90acbb9e28fca
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **115.7 MB (115730803 bytes)**  
+-	Total Size: **115.7 MB (115727102 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3aaa2aecda982d71e595633526fee57e902ef71ef40cd3a828efc94b09bcd28d`
+-	Image ID: `sha256:8c6341a8989fb2a3112e0b2e97e20b3861fe3d8047bd856afa9b97cfb7293963`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 20:07:11 GMT
-ADD file:6797f65071d6d263c6466e89bb2db63753b08510aef54a1dc28891fbf2e58799 in / 
-# Mon, 06 Jul 2020 20:07:14 GMT
+# Fri, 24 Jul 2020 16:04:27 GMT
+ADD file:934b4bc073556bbba45a5017b40df7ac076a57b031b6b7225919b1ea3c1d89ff in / 
+# Fri, 24 Jul 2020 16:04:32 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 20:07:16 GMT
+# Fri, 24 Jul 2020 16:05:15 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 20:07:18 GMT
+# Fri, 24 Jul 2020 16:05:33 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 20:07:19 GMT
+# Fri, 24 Jul 2020 16:05:40 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 21:54:44 GMT
+# Fri, 24 Jul 2020 18:19:35 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 20:58:22 GMT
+# Fri, 24 Jul 2020 18:20:26 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 20:58:24 GMT
+# Fri, 24 Jul 2020 18:20:29 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 20:58:55 GMT
+# Fri, 24 Jul 2020 18:21:58 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 20:58:56 GMT
+# Fri, 24 Jul 2020 18:22:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:31:10 GMT
+# Fri, 24 Jul 2020 19:29:30 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 22:31:28 GMT
+# Fri, 24 Jul 2020 19:29:48 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:31:29 GMT
+# Fri, 24 Jul 2020 19:29:49 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 22:31:53 GMT
+# Fri, 24 Jul 2020 19:30:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 22:31:54 GMT
+# Fri, 24 Jul 2020 19:30:07 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 22:31:54 GMT
+# Fri, 24 Jul 2020 19:30:08 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 22:31:55 GMT
+# Fri, 24 Jul 2020 19:30:09 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:31:55 GMT
+# Fri, 24 Jul 2020 19:30:10 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 22:32:42 GMT
+# Fri, 24 Jul 2020 19:31:17 GMT
 ENV CASSANDRA_VERSION=3.0.20
-# Fri, 17 Jul 2020 22:32:42 GMT
+# Fri, 24 Jul 2020 19:31:17 GMT
 ENV CASSANDRA_SHA512=1a96db1f26cb31e3d04cb67791d4055515b0ea434e0fa2fb2445d44a180c71e7ca5c6436c27059e44b398f623c9623a8fa67d60a084219f0938f9528cd0c1634
-# Fri, 17 Jul 2020 22:33:13 GMT
+# Fri, 24 Jul 2020 19:32:43 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 22:33:16 GMT
+# Fri, 24 Jul 2020 19:32:48 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 22:33:16 GMT
+# Fri, 24 Jul 2020 19:32:49 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 22:33:18 GMT
+# Fri, 24 Jul 2020 19:32:51 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 22:33:19 GMT
+# Fri, 24 Jul 2020 19:32:51 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 22:33:19 GMT
+# Fri, 24 Jul 2020 19:32:52 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 22:33:20 GMT
+# Fri, 24 Jul 2020 19:32:53 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:db182fa07ba527098363444f993730c582b86e361f0ac7ae981ba0e9ca768c84`  
-		Last Modified: Mon, 06 Jul 2020 15:46:25 GMT  
-		Size: 22.3 MB (22276511 bytes)  
+	-	`sha256:de691405df56c17462a8052d9b88a283d955c448deda7a610d70096a5454ff13`  
+		Last Modified: Mon, 13 Jul 2020 15:47:13 GMT  
+		Size: 22.3 MB (22277635 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e85650936bd5be5a40db91349e387ede7738f5f7938d6421cb9d64eb021a5a3`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 35.5 KB (35457 bytes)  
+	-	`sha256:e5a766b93ee2f7ed0525d6d90b71c5e860e5e54d4b5259de86c81e5c49ff120c`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 35.5 KB (35459 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:258b890879c48b8d0f50ea632de0a703079d7f5d973ec47338cbe791bb8e30d5`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 850.0 B  
+	-	`sha256:8c97e104d7363348d21ddc11159cfa859c18d58712fcafc215fefb535baccbae`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 857.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0f858a12ecedcf911e3fea9bb17332b53a888444834a3e3d12cd25be830898d`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 188.0 B  
+	-	`sha256:d7a97b3bf2bf845ce898abe48aed267cb2a554e220ee512500495c2791ea6ea8`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4cc999ed63826a5b44acb46406a5dc7d80f1604cc4f06927d88bf6c5e79b497`  
-		Last Modified: Fri, 17 Jul 2020 21:00:57 GMT  
-		Size: 12.8 MB (12816746 bytes)  
+	-	`sha256:06b94dcf53adc5490aa500e598355308c95d914fd25bb61493b436a89f18e8b9`  
+		Last Modified: Fri, 24 Jul 2020 18:29:34 GMT  
+		Size: 12.8 MB (12816849 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d0e340a37a5f7084c19060c7274257987f4abc0b975260c87cffa8e2c4db931`  
-		Last Modified: Fri, 17 Jul 2020 21:01:31 GMT  
-		Size: 38.6 MB (38612358 bytes)  
+	-	`sha256:f17b9ab84135cfaece5bab286aca0ae138291ca7c2370ade6f1165f21e96180c`  
+		Last Modified: Fri, 24 Jul 2020 18:30:12 GMT  
+		Size: 38.6 MB (38612334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ba1dd1eb65901c731bba9cacc9bd6e03326ba749fe2bff114cb0e5845448f1d`  
-		Last Modified: Fri, 17 Jul 2020 22:34:27 GMT  
+	-	`sha256:f6e65532d1eb1a44543148302ec36177bb17984d13d786a636934136b0a0e8bb`  
+		Last Modified: Fri, 24 Jul 2020 19:34:32 GMT  
 		Size: 1.9 KB (1876 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9deeece59d0af97d827664403060b46dddc6ec57d2eb89a634247412215c701f`  
-		Last Modified: Fri, 17 Jul 2020 22:34:29 GMT  
-		Size: 8.2 MB (8199899 bytes)  
+	-	`sha256:8914480b0f542282a0fded757439bc750f8218c0de990110c38f34158ae2b69f`  
+		Last Modified: Fri, 24 Jul 2020 19:34:33 GMT  
+		Size: 8.2 MB (8194763 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccb237791e61160e1d65c5821d7833c5a2ddefa21040bc0c1b98143c0efc21de`  
-		Last Modified: Fri, 17 Jul 2020 22:34:26 GMT  
-		Size: 1.3 MB (1263056 bytes)  
+	-	`sha256:8ab4af184c01717aec5b30e306cd595dd7d15e5cf1210d74a6609b068e741815`  
+		Last Modified: Fri, 24 Jul 2020 19:34:31 GMT  
+		Size: 1.3 MB (1263131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c148423f08e538f655143ceb7a208390a28b4c68ed03fae4dd40f66650501d9`  
-		Last Modified: Fri, 17 Jul 2020 22:34:51 GMT  
-		Size: 32.5 MB (32522588 bytes)  
+	-	`sha256:bff475abee0bcfc6845c52ba7a8ad93197e7e706ffb67cca4869ad444a6f7138`  
+		Last Modified: Fri, 24 Jul 2020 19:34:58 GMT  
+		Size: 32.5 MB (32522737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02e65750a67cbc4b394d0ef17b79655b66fc093f0a8b2b1170286630951f52a1`  
-		Last Modified: Fri, 17 Jul 2020 22:34:41 GMT  
+	-	`sha256:0c16d73795c43df1308decad19440076d7079dd8fc01247821bfd612c66bee77`  
+		Last Modified: Fri, 24 Jul 2020 19:34:47 GMT  
 		Size: 1.2 KB (1153 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c85e08dd2f0b784c404909c078c2ba03c290eeb239c9077beca0606377915223`  
-		Last Modified: Fri, 17 Jul 2020 22:34:41 GMT  
+	-	`sha256:8c989dccaf6ecc91348acca1d171b057b52946c1dec7a91aa98ab63722ead236`  
+		Last Modified: Fri, 24 Jul 2020 19:34:47 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:3.0.20` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:7a13a4874bb9fdb3b6674e27905398f27f6795b8df4b4fb73c4443aca8bc13c1
+$ docker pull cassandra@sha256:d231085156f10090802ae728e0769b3aa801c2f979f4bcefeccfddb4d4d2c766
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **121.5 MB (121459967 bytes)**  
+-	Total Size: **121.5 MB (121462103 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb2acd324a5b3c33cefe3b1af7447307fba465554c1b3e6ca30b0b98c1fab937`
+-	Image ID: `sha256:498510cab8956a03a7d1eeed8a365b2eda9a602e3adbeff3c501bd12498ac41f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:04:54 GMT
-ADD file:090a5d48524c4b10f867bf6bb80c106a69bf839c876de86912ed0c633349a1ab in / 
-# Mon, 06 Jul 2020 22:04:56 GMT
+# Fri, 24 Jul 2020 16:21:15 GMT
+ADD file:146b4b3953060bbe623c06f374b3b3798872e4e1ddfef76071c7c4b69a834622 in / 
+# Fri, 24 Jul 2020 16:21:35 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:04:58 GMT
+# Fri, 24 Jul 2020 16:21:51 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:05:00 GMT
+# Fri, 24 Jul 2020 16:23:26 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:05:01 GMT
+# Fri, 24 Jul 2020 16:23:50 GMT
 CMD ["/bin/bash"]
-# Tue, 07 Jul 2020 01:12:32 GMT
+# Fri, 24 Jul 2020 18:11:26 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 20:42:18 GMT
+# Fri, 24 Jul 2020 18:12:03 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 20:42:20 GMT
+# Fri, 24 Jul 2020 18:12:05 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 20:42:56 GMT
+# Fri, 24 Jul 2020 18:12:40 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 20:42:57 GMT
+# Fri, 24 Jul 2020 18:12:42 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 21:04:33 GMT
+# Fri, 24 Jul 2020 19:53:36 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 21:05:11 GMT
+# Fri, 24 Jul 2020 19:53:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 21:05:12 GMT
+# Fri, 24 Jul 2020 19:54:02 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 21:05:51 GMT
+# Fri, 24 Jul 2020 19:54:26 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 21:05:53 GMT
+# Fri, 24 Jul 2020 19:54:27 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 21:05:55 GMT
+# Fri, 24 Jul 2020 19:54:30 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 21:05:56 GMT
+# Fri, 24 Jul 2020 19:54:32 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 21:05:57 GMT
+# Fri, 24 Jul 2020 19:54:34 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 21:07:18 GMT
+# Fri, 24 Jul 2020 19:55:59 GMT
 ENV CASSANDRA_VERSION=3.0.20
-# Fri, 17 Jul 2020 21:07:20 GMT
+# Fri, 24 Jul 2020 19:55:59 GMT
 ENV CASSANDRA_SHA512=1a96db1f26cb31e3d04cb67791d4055515b0ea434e0fa2fb2445d44a180c71e7ca5c6436c27059e44b398f623c9623a8fa67d60a084219f0938f9528cd0c1634
-# Fri, 17 Jul 2020 21:08:07 GMT
+# Fri, 24 Jul 2020 19:56:26 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 21:08:11 GMT
+# Fri, 24 Jul 2020 19:56:29 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 21:08:12 GMT
+# Fri, 24 Jul 2020 19:56:29 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 21:08:17 GMT
+# Fri, 24 Jul 2020 19:56:31 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 21:08:19 GMT
+# Fri, 24 Jul 2020 19:56:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 21:08:20 GMT
+# Fri, 24 Jul 2020 19:56:32 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 21:08:22 GMT
+# Fri, 24 Jul 2020 19:56:33 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:68fe03cb170d6a5101858131ae1eac5393a4f018d70abfcd1348fd240ee0ccc5`  
-		Last Modified: Tue, 30 Jun 2020 16:25:30 GMT  
-		Size: 23.7 MB (23719365 bytes)  
+	-	`sha256:a114936b480795ec46632c29c96e126744c314983ee0d83354804dc39d1afb46`  
+		Last Modified: Mon, 13 Jul 2020 15:47:08 GMT  
+		Size: 23.7 MB (23721122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18959295effbb87ec216a036a1821f8b7e183072faaa80a6d7f97aa14b51b2af`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 35.2 KB (35189 bytes)  
+	-	`sha256:a27ecf0d2a869e5d188121e6b38473e481b66599a26d8df24d22c9170f50bfa9`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 35.2 KB (35205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51118fb70ce38c0c2e667ecd5fc941590875e2fd9e55dd17c90073f085ba5970`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 852.0 B  
+	-	`sha256:f4eb48eb870f62ec1a7a4a2d753bf2b92dff62a6dbedaeff6db6e41cb33196bc`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:409a5d9eae931d5a3b5a3bcb840e11167c2d3d03ec22258cde67197babf908ed`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 187.0 B  
+	-	`sha256:0f912b9bb20d998fd0f1a2526d5539f35d34a476da71c783d0041b25b78c0af5`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf5858fe3213ff710f6c318742f085137ce8fcea1e001c321df12f5871e95b09`  
-		Last Modified: Fri, 17 Jul 2020 20:45:09 GMT  
-		Size: 13.3 MB (13284377 bytes)  
+	-	`sha256:d25bf415b8209fd4eac1325c07cba7b2f07e2a8c3850968536465e0f068272f1`  
+		Last Modified: Fri, 24 Jul 2020 18:15:34 GMT  
+		Size: 13.3 MB (13284502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3ba5e907efef65b4f3942a118c3585d97dd757f2a331e6457dd91af6b1141e6`  
-		Last Modified: Fri, 17 Jul 2020 20:45:38 GMT  
-		Size: 42.1 MB (42114920 bytes)  
+	-	`sha256:5ecc5c98d1ae78a662cf63740308e6e826b8d9bcb21ec72db61922c0e1c9bd27`  
+		Last Modified: Fri, 24 Jul 2020 18:16:06 GMT  
+		Size: 42.1 MB (42114929 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4695d6ae56de7ede13767fd8d7fe669e5e172c7eedba013b267ebc8db2645b59`  
-		Last Modified: Fri, 17 Jul 2020 21:10:06 GMT  
-		Size: 1.9 KB (1899 bytes)  
+	-	`sha256:a058bddc4a987cc2252e05d52e29c679dcd7195e2c266c276c77663e1fa5f90e`  
+		Last Modified: Fri, 24 Jul 2020 19:58:08 GMT  
+		Size: 1.9 KB (1889 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7accc9d6756c5398000839b30bad7abed2eeedacea2df57c11d2d102273943dd`  
-		Last Modified: Fri, 17 Jul 2020 21:10:06 GMT  
-		Size: 8.5 MB (8532675 bytes)  
+	-	`sha256:26f8e9f0111a29cd98efe9beb4fe9e5f27428a47eed962d09b17a8e1fdcb3f48`  
+		Last Modified: Fri, 24 Jul 2020 19:58:08 GMT  
+		Size: 8.5 MB (8532893 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19ca2193a18ed13cccf4d9d3cf16dc7cac9b87082ce0e83bc094647c7fbfa737`  
-		Last Modified: Fri, 17 Jul 2020 21:10:04 GMT  
-		Size: 1.2 MB (1246950 bytes)  
+	-	`sha256:c12c02c0ca3b9acaeda40f5cc3ace38fc0f3d14b54085f18fa8dd5013b49993e`  
+		Last Modified: Fri, 24 Jul 2020 19:58:05 GMT  
+		Size: 1.2 MB (1246894 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4d9126dac10078446759f61311bdf7e83d4e40d09e7ee0a0a7e84d3ade6b8d1`  
-		Last Modified: Fri, 17 Jul 2020 21:10:22 GMT  
-		Size: 32.5 MB (32522279 bytes)  
+	-	`sha256:239150ac9c3b0970719b65cdffbcf4a5af5c73842721b586f440b92e6268d055`  
+		Last Modified: Fri, 24 Jul 2020 19:58:27 GMT  
+		Size: 32.5 MB (32522360 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b638dd0fb6bacc60cc5d310133ae275527f9bfa6ecbf061e006e3e0951fae81`  
-		Last Modified: Fri, 17 Jul 2020 21:10:15 GMT  
-		Size: 1.2 KB (1155 bytes)  
+	-	`sha256:e1b658439db60b99502277f7fe74fc6daec8a924ff09ccaec38ff159cbe17121`  
+		Last Modified: Fri, 24 Jul 2020 19:58:19 GMT  
+		Size: 1.2 KB (1151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddc1c4039d4e3ac604d939390a9bef4810a9f0c8444c7fa92eccb4a5e2f89482`  
-		Last Modified: Fri, 17 Jul 2020 21:10:15 GMT  
-		Size: 119.0 B  
+	-	`sha256:11b46cf3452df790da3e5ce2c10b7cb5a0e2209f642df34a3a14be8bf077c9dc`  
+		Last Modified: Fri, 24 Jul 2020 19:58:19 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:3.0.20` - linux; ppc64le
@@ -3383,7 +3383,7 @@ CMD ["cassandra" "-f"]
 ## `cassandra:3.11`
 
 ```console
-$ docker pull cassandra@sha256:f8da4577b1a549178e319ba08bc58b3249f6c05a64d8e11b9ace84a75bdcb2ad
+$ docker pull cassandra@sha256:2e3c2f5ab2beb913b9892d616226806e1a265156be3e0a65edac3f2e4217de73
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3396,363 +3396,363 @@ $ docker pull cassandra@sha256:f8da4577b1a549178e319ba08bc58b3249f6c05a64d8e11b9
 ### `cassandra:3.11` - linux; amd64
 
 ```console
-$ docker pull cassandra@sha256:675fbd063df3e524ec30906ecd9cb3fdab1de1645f71d86e8d301ee1538e90b3
+$ docker pull cassandra@sha256:5788f3375ddf54d6162d79520b9f657b5a2257f57f9ac667949642e70f395473
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.6 MB (130581564 bytes)**  
+-	Total Size: **130.6 MB (130596704 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9fab0c92a93d10a8d0aea43e7e4c502412db367e1539f401f478778add335aba`
+-	Image ID: `sha256:6e1f443aca8c95bbf13e77af15891919a754d18f54e6dee61819d53a1937059d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 21:56:08 GMT
-ADD file:0b40d881e3e00d68de1f1df0a565385bb838144b83814df891c994f466e9efa2 in / 
-# Mon, 06 Jul 2020 21:56:09 GMT
+# Fri, 24 Jul 2020 14:38:19 GMT
+ADD file:7d9bbf45a5b2510d44d3206a028cf6502757884d49e46d3d2e6356c3a92c4309 in / 
+# Fri, 24 Jul 2020 14:38:20 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 21:56:10 GMT
+# Fri, 24 Jul 2020 14:38:21 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 21:56:11 GMT
+# Fri, 24 Jul 2020 14:38:21 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 21:56:11 GMT
+# Fri, 24 Jul 2020 14:38:22 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:03:04 GMT
+# Fri, 24 Jul 2020 15:16:41 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:52 GMT
+# Fri, 24 Jul 2020 15:17:03 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:19:52 GMT
+# Fri, 24 Jul 2020 15:17:03 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 22:20:11 GMT
+# Fri, 24 Jul 2020 15:17:27 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:20:11 GMT
+# Fri, 24 Jul 2020 15:17:28 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:50:11 GMT
+# Fri, 24 Jul 2020 19:29:08 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 22:50:24 GMT
+# Fri, 24 Jul 2020 19:29:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:50:24 GMT
+# Fri, 24 Jul 2020 19:29:18 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:50:34 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 22:51:41 GMT
+# Fri, 24 Jul 2020 19:30:35 GMT
 ENV CASSANDRA_VERSION=3.11.6
-# Fri, 17 Jul 2020 22:51:41 GMT
+# Fri, 24 Jul 2020 19:30:35 GMT
 ENV CASSANDRA_SHA512=0e778f8fb4a050fde3ec174a9ca365e49ef437cd9e61280b6b4dcba950418a3d04a104bb41aed1add858e2acc2513cf7df4065ca5ca751dd1daf60e70adc4042
-# Fri, 17 Jul 2020 22:51:59 GMT
+# Fri, 24 Jul 2020 19:30:56 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 22:51:59 GMT
+# Fri, 24 Jul 2020 19:30:57 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 22:51:59 GMT
+# Fri, 24 Jul 2020 19:30:57 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 22:52:00 GMT
+# Fri, 24 Jul 2020 19:30:58 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 22:52:00 GMT
+# Fri, 24 Jul 2020 19:30:58 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 22:52:00 GMT
+# Fri, 24 Jul 2020 19:30:58 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 22:52:00 GMT
+# Fri, 24 Jul 2020 19:30:58 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:a1125296b23d78a3585a7910d649fbf0cc56284f9d2066e3243e8bc18f90b308`  
-		Last Modified: Wed, 01 Jul 2020 12:21:40 GMT  
-		Size: 26.7 MB (26696193 bytes)  
+	-	`sha256:7595c8c21622ea8a8b9778972e26dbbe063f7a1c4b0a28a80a34ebb3d343b586`  
+		Last Modified: Mon, 13 Jul 2020 15:46:50 GMT  
+		Size: 26.7 MB (26697127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c742a4a0f38c95e690ad2dad8909c0cb232911418ac94a73da2a28becc7b734`  
-		Last Modified: Mon, 06 Jul 2020 21:57:18 GMT  
-		Size: 35.4 KB (35365 bytes)  
+	-	`sha256:d13af8ca898f36af68711cb67c345f65046a78ccd802453f4b129adf9205b1f8`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 35.4 KB (35364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c5ea3b329965bf7239f4e4f484915a444ec6d78b532ae12525934d4f6f7ac9a`  
-		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
-		Size: 852.0 B  
+	-	`sha256:70799171ddba93a611490ba3557d782714b3f4da8963d49ac8726786ba8274a5`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 848.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b4be91ead68299f53759fd80c135e0dde0eb797e91eb8fbc5a708a506e0c433`  
-		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
-		Size: 162.0 B  
+	-	`sha256:b6c12202c5ef07dc9eb8f9d9e71407064684ed70f8c4040b62679b7d30200840`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
-		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
-		Size: 13.9 MB (13875144 bytes)  
+	-	`sha256:c54d424eaa66f20b7926dbaa13c37d1c7c27c0e3113239f5608b4a57c157c399`  
+		Last Modified: Fri, 24 Jul 2020 15:22:49 GMT  
+		Size: 13.9 MB (13875512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b38587e18ed628aa15742a897954754fec3b97a3454dbfd1a5ae9ad4d7b13e4d`  
-		Last Modified: Fri, 17 Jul 2020 22:23:36 GMT  
-		Size: 42.1 MB (42118777 bytes)  
+	-	`sha256:98cd7f0d1fb17db5f394e9dd8dc0faa5708639a99eda99f4c31bb8500645164a`  
+		Last Modified: Fri, 24 Jul 2020 15:23:09 GMT  
+		Size: 42.1 MB (42118779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9197ce285aeaef46cca997053633b75dfca35dc3198654de29083fc918dc709b`  
-		Last Modified: Fri, 17 Jul 2020 22:52:17 GMT  
-		Size: 1.9 KB (1880 bytes)  
+	-	`sha256:b7d0e492af2bc95a83006c62097832dc0be0961a8e956f105ed61b4b95252de2`  
+		Last Modified: Fri, 24 Jul 2020 19:31:15 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df450904509f41d0d9ee3a215b637d024d96b5365b3e6707bf794f53a4492ad3`  
-		Last Modified: Fri, 17 Jul 2020 22:52:18 GMT  
-		Size: 8.7 MB (8739579 bytes)  
+	-	`sha256:6c2ac3248adb599e567b6402031235101652baa7ba677daa59da5aaf483a40e2`  
+		Last Modified: Fri, 24 Jul 2020 19:31:16 GMT  
+		Size: 8.8 MB (8752856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bcf8b6bf9fc13837274f26f53d1cad4dc0865dbbb3a6360fd09bea55c04ebb4`  
-		Last Modified: Fri, 17 Jul 2020 22:52:16 GMT  
-		Size: 1.3 MB (1309892 bytes)  
+	-	`sha256:50c8b9abae1ea715c9e1dbe4fc33971f5c559e93fefaa3f0aca8ca9b17b8c9ef`  
+		Last Modified: Fri, 24 Jul 2020 19:31:14 GMT  
+		Size: 1.3 MB (1310258 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2db434ee5b773b4f910dd2f7914f7fb898bb52b61ca3c246e9a8081f042e788a`  
-		Last Modified: Fri, 17 Jul 2020 22:52:46 GMT  
-		Size: 37.8 MB (37802446 bytes)  
+	-	`sha256:d4023c1719226606f7183bec3b2026a8c020dd003c362d36c2042eb5e667228c`  
+		Last Modified: Fri, 24 Jul 2020 19:31:45 GMT  
+		Size: 37.8 MB (37802639 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a680077b7668833bc6f29626a8bc6b62c0832551d571d1618524a824129f991`  
-		Last Modified: Fri, 17 Jul 2020 22:52:41 GMT  
-		Size: 1.2 KB (1153 bytes)  
+	-	`sha256:62ab0cf29d7ce7cfa0675c40187afb1df8f6cb2db3320dbc32a9ef2a5f9708d0`  
+		Last Modified: Fri, 24 Jul 2020 19:31:39 GMT  
+		Size: 1.2 KB (1151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a33c28342acd847c6973e882eda80c0dec51ed9b2fdf3b8c47d8e32e9e6abdb9`  
-		Last Modified: Fri, 17 Jul 2020 22:52:41 GMT  
+	-	`sha256:8db374efdd1cb5ffe2062fa9484504c71a5e2689943471e0e7cd074959dcf77d`  
+		Last Modified: Fri, 24 Jul 2020 19:31:41 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:3.11` - linux; arm variant v7
 
 ```console
-$ docker pull cassandra@sha256:b603587c26cef544c53258e6ef58b57b71228f28f5428beba7a83bc50fe5d953
+$ docker pull cassandra@sha256:4410b7e44793e6db1c054b6967dacb571583c0f7277631b8a898553bbd04841b
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **121.0 MB (121011721 bytes)**  
+-	Total Size: **121.0 MB (121007987 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0f2846b6ddc19007ad80dea3cd9cc79f20f89730c30a68d7abc081f6878bd9e`
+-	Image ID: `sha256:4f3e413939f7bee3f2db3462df63e12d33269f79faebaedf9423ba727cc496a9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 20:07:11 GMT
-ADD file:6797f65071d6d263c6466e89bb2db63753b08510aef54a1dc28891fbf2e58799 in / 
-# Mon, 06 Jul 2020 20:07:14 GMT
+# Fri, 24 Jul 2020 16:04:27 GMT
+ADD file:934b4bc073556bbba45a5017b40df7ac076a57b031b6b7225919b1ea3c1d89ff in / 
+# Fri, 24 Jul 2020 16:04:32 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 20:07:16 GMT
+# Fri, 24 Jul 2020 16:05:15 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 20:07:18 GMT
+# Fri, 24 Jul 2020 16:05:33 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 20:07:19 GMT
+# Fri, 24 Jul 2020 16:05:40 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 21:54:44 GMT
+# Fri, 24 Jul 2020 18:19:35 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 20:58:22 GMT
+# Fri, 24 Jul 2020 18:20:26 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 20:58:24 GMT
+# Fri, 24 Jul 2020 18:20:29 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 20:58:55 GMT
+# Fri, 24 Jul 2020 18:21:58 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 20:58:56 GMT
+# Fri, 24 Jul 2020 18:22:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:31:10 GMT
+# Fri, 24 Jul 2020 19:29:30 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 22:31:28 GMT
+# Fri, 24 Jul 2020 19:29:48 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:31:29 GMT
+# Fri, 24 Jul 2020 19:29:49 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 22:31:53 GMT
+# Fri, 24 Jul 2020 19:30:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 22:31:54 GMT
+# Fri, 24 Jul 2020 19:30:07 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 22:31:54 GMT
+# Fri, 24 Jul 2020 19:30:08 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 22:31:55 GMT
+# Fri, 24 Jul 2020 19:30:09 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:31:55 GMT
+# Fri, 24 Jul 2020 19:30:10 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 22:33:31 GMT
+# Fri, 24 Jul 2020 19:33:06 GMT
 ENV CASSANDRA_VERSION=3.11.6
-# Fri, 17 Jul 2020 22:33:31 GMT
+# Fri, 24 Jul 2020 19:33:07 GMT
 ENV CASSANDRA_SHA512=0e778f8fb4a050fde3ec174a9ca365e49ef437cd9e61280b6b4dcba950418a3d04a104bb41aed1add858e2acc2513cf7df4065ca5ca751dd1daf60e70adc4042
-# Fri, 17 Jul 2020 22:34:03 GMT
+# Fri, 24 Jul 2020 19:34:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 22:34:06 GMT
+# Fri, 24 Jul 2020 19:34:10 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 22:34:07 GMT
+# Fri, 24 Jul 2020 19:34:12 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 22:34:09 GMT
+# Fri, 24 Jul 2020 19:34:14 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 22:34:09 GMT
+# Fri, 24 Jul 2020 19:34:15 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 22:34:10 GMT
+# Fri, 24 Jul 2020 19:34:16 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 22:34:10 GMT
+# Fri, 24 Jul 2020 19:34:16 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:db182fa07ba527098363444f993730c582b86e361f0ac7ae981ba0e9ca768c84`  
-		Last Modified: Mon, 06 Jul 2020 15:46:25 GMT  
-		Size: 22.3 MB (22276511 bytes)  
+	-	`sha256:de691405df56c17462a8052d9b88a283d955c448deda7a610d70096a5454ff13`  
+		Last Modified: Mon, 13 Jul 2020 15:47:13 GMT  
+		Size: 22.3 MB (22277635 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e85650936bd5be5a40db91349e387ede7738f5f7938d6421cb9d64eb021a5a3`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 35.5 KB (35457 bytes)  
+	-	`sha256:e5a766b93ee2f7ed0525d6d90b71c5e860e5e54d4b5259de86c81e5c49ff120c`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 35.5 KB (35459 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:258b890879c48b8d0f50ea632de0a703079d7f5d973ec47338cbe791bb8e30d5`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 850.0 B  
+	-	`sha256:8c97e104d7363348d21ddc11159cfa859c18d58712fcafc215fefb535baccbae`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 857.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0f858a12ecedcf911e3fea9bb17332b53a888444834a3e3d12cd25be830898d`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 188.0 B  
+	-	`sha256:d7a97b3bf2bf845ce898abe48aed267cb2a554e220ee512500495c2791ea6ea8`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4cc999ed63826a5b44acb46406a5dc7d80f1604cc4f06927d88bf6c5e79b497`  
-		Last Modified: Fri, 17 Jul 2020 21:00:57 GMT  
-		Size: 12.8 MB (12816746 bytes)  
+	-	`sha256:06b94dcf53adc5490aa500e598355308c95d914fd25bb61493b436a89f18e8b9`  
+		Last Modified: Fri, 24 Jul 2020 18:29:34 GMT  
+		Size: 12.8 MB (12816849 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d0e340a37a5f7084c19060c7274257987f4abc0b975260c87cffa8e2c4db931`  
-		Last Modified: Fri, 17 Jul 2020 21:01:31 GMT  
-		Size: 38.6 MB (38612358 bytes)  
+	-	`sha256:f17b9ab84135cfaece5bab286aca0ae138291ca7c2370ade6f1165f21e96180c`  
+		Last Modified: Fri, 24 Jul 2020 18:30:12 GMT  
+		Size: 38.6 MB (38612334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ba1dd1eb65901c731bba9cacc9bd6e03326ba749fe2bff114cb0e5845448f1d`  
-		Last Modified: Fri, 17 Jul 2020 22:34:27 GMT  
+	-	`sha256:f6e65532d1eb1a44543148302ec36177bb17984d13d786a636934136b0a0e8bb`  
+		Last Modified: Fri, 24 Jul 2020 19:34:32 GMT  
 		Size: 1.9 KB (1876 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9deeece59d0af97d827664403060b46dddc6ec57d2eb89a634247412215c701f`  
-		Last Modified: Fri, 17 Jul 2020 22:34:29 GMT  
-		Size: 8.2 MB (8199899 bytes)  
+	-	`sha256:8914480b0f542282a0fded757439bc750f8218c0de990110c38f34158ae2b69f`  
+		Last Modified: Fri, 24 Jul 2020 19:34:33 GMT  
+		Size: 8.2 MB (8194763 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccb237791e61160e1d65c5821d7833c5a2ddefa21040bc0c1b98143c0efc21de`  
-		Last Modified: Fri, 17 Jul 2020 22:34:26 GMT  
-		Size: 1.3 MB (1263056 bytes)  
+	-	`sha256:8ab4af184c01717aec5b30e306cd595dd7d15e5cf1210d74a6609b068e741815`  
+		Last Modified: Fri, 24 Jul 2020 19:34:31 GMT  
+		Size: 1.3 MB (1263131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7c2cc1b634566cf14d8943b62c7cfb035965a500caa035b6b10372c6546fbe2`  
-		Last Modified: Fri, 17 Jul 2020 22:35:08 GMT  
-		Size: 37.8 MB (37803504 bytes)  
+	-	`sha256:51e88e0bfbf9b2ba78348bbf88523a22f5769643b60ce0d1b8445e862bad998f`  
+		Last Modified: Fri, 24 Jul 2020 19:35:16 GMT  
+		Size: 37.8 MB (37803622 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:70a71a1b1c6bb4871c1c849fe2cafc11420f325889807628b9099496a1050306`  
-		Last Modified: Fri, 17 Jul 2020 22:34:56 GMT  
-		Size: 1.2 KB (1155 bytes)  
+	-	`sha256:1678e4f6599d47ef9fb95dddc0008c2798217446e1ca851bdccca765099a6d20`  
+		Last Modified: Fri, 24 Jul 2020 19:35:07 GMT  
+		Size: 1.2 KB (1153 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b230b78b2958ebc90f4891c656201075a08ebd0642948d8d35303d7f0f0e8b6`  
-		Last Modified: Fri, 17 Jul 2020 22:34:56 GMT  
+	-	`sha256:d7842e4cf84f05b967f0f179b6cb387143253a808c9917b238a65e883594fbc6`  
+		Last Modified: Fri, 24 Jul 2020 19:35:05 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:3.11` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:f4bf10bbed0e1911857a45bf04e315270292612f7606d2f529a5e0e50e8ac2e8
+$ docker pull cassandra@sha256:1858daafa236b6e143a57f807ba63e7d1ccd4966c24a0cc611089dd83d5e86e6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.7 MB (126741440 bytes)**  
+-	Total Size: **126.7 MB (126743147 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:caff57cfa0f47157e9f87982d5aa491e9e1c1471ab8598baeff0fd562b7628d7`
+-	Image ID: `sha256:2796144527d9a5cd9aea5fce8a702d79bf5c875134c06e00232d0788a6d76a3f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:04:54 GMT
-ADD file:090a5d48524c4b10f867bf6bb80c106a69bf839c876de86912ed0c633349a1ab in / 
-# Mon, 06 Jul 2020 22:04:56 GMT
+# Fri, 24 Jul 2020 16:21:15 GMT
+ADD file:146b4b3953060bbe623c06f374b3b3798872e4e1ddfef76071c7c4b69a834622 in / 
+# Fri, 24 Jul 2020 16:21:35 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:04:58 GMT
+# Fri, 24 Jul 2020 16:21:51 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:05:00 GMT
+# Fri, 24 Jul 2020 16:23:26 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:05:01 GMT
+# Fri, 24 Jul 2020 16:23:50 GMT
 CMD ["/bin/bash"]
-# Tue, 07 Jul 2020 01:12:32 GMT
+# Fri, 24 Jul 2020 18:11:26 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 20:42:18 GMT
+# Fri, 24 Jul 2020 18:12:03 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 20:42:20 GMT
+# Fri, 24 Jul 2020 18:12:05 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 20:42:56 GMT
+# Fri, 24 Jul 2020 18:12:40 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 20:42:57 GMT
+# Fri, 24 Jul 2020 18:12:42 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 21:04:33 GMT
+# Fri, 24 Jul 2020 19:53:36 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 21:05:11 GMT
+# Fri, 24 Jul 2020 19:53:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 21:05:12 GMT
+# Fri, 24 Jul 2020 19:54:02 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 21:05:51 GMT
+# Fri, 24 Jul 2020 19:54:26 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 21:05:53 GMT
+# Fri, 24 Jul 2020 19:54:27 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 21:05:55 GMT
+# Fri, 24 Jul 2020 19:54:30 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 21:05:56 GMT
+# Fri, 24 Jul 2020 19:54:32 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 21:05:57 GMT
+# Fri, 24 Jul 2020 19:54:34 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 21:08:38 GMT
+# Fri, 24 Jul 2020 19:56:40 GMT
 ENV CASSANDRA_VERSION=3.11.6
-# Fri, 17 Jul 2020 21:08:40 GMT
+# Fri, 24 Jul 2020 19:56:41 GMT
 ENV CASSANDRA_SHA512=0e778f8fb4a050fde3ec174a9ca365e49ef437cd9e61280b6b4dcba950418a3d04a104bb41aed1add858e2acc2513cf7df4065ca5ca751dd1daf60e70adc4042
-# Fri, 17 Jul 2020 21:09:25 GMT
+# Fri, 24 Jul 2020 19:57:16 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 21:09:32 GMT
+# Fri, 24 Jul 2020 19:57:22 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 21:09:33 GMT
+# Fri, 24 Jul 2020 19:57:23 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 21:09:37 GMT
+# Fri, 24 Jul 2020 19:57:38 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 21:09:38 GMT
+# Fri, 24 Jul 2020 19:57:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 21:09:39 GMT
+# Fri, 24 Jul 2020 19:57:47 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 21:09:41 GMT
+# Fri, 24 Jul 2020 19:57:50 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:68fe03cb170d6a5101858131ae1eac5393a4f018d70abfcd1348fd240ee0ccc5`  
-		Last Modified: Tue, 30 Jun 2020 16:25:30 GMT  
-		Size: 23.7 MB (23719365 bytes)  
+	-	`sha256:a114936b480795ec46632c29c96e126744c314983ee0d83354804dc39d1afb46`  
+		Last Modified: Mon, 13 Jul 2020 15:47:08 GMT  
+		Size: 23.7 MB (23721122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18959295effbb87ec216a036a1821f8b7e183072faaa80a6d7f97aa14b51b2af`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 35.2 KB (35189 bytes)  
+	-	`sha256:a27ecf0d2a869e5d188121e6b38473e481b66599a26d8df24d22c9170f50bfa9`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 35.2 KB (35205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51118fb70ce38c0c2e667ecd5fc941590875e2fd9e55dd17c90073f085ba5970`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 852.0 B  
+	-	`sha256:f4eb48eb870f62ec1a7a4a2d753bf2b92dff62a6dbedaeff6db6e41cb33196bc`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:409a5d9eae931d5a3b5a3bcb840e11167c2d3d03ec22258cde67197babf908ed`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 187.0 B  
+	-	`sha256:0f912b9bb20d998fd0f1a2526d5539f35d34a476da71c783d0041b25b78c0af5`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf5858fe3213ff710f6c318742f085137ce8fcea1e001c321df12f5871e95b09`  
-		Last Modified: Fri, 17 Jul 2020 20:45:09 GMT  
-		Size: 13.3 MB (13284377 bytes)  
+	-	`sha256:d25bf415b8209fd4eac1325c07cba7b2f07e2a8c3850968536465e0f068272f1`  
+		Last Modified: Fri, 24 Jul 2020 18:15:34 GMT  
+		Size: 13.3 MB (13284502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3ba5e907efef65b4f3942a118c3585d97dd757f2a331e6457dd91af6b1141e6`  
-		Last Modified: Fri, 17 Jul 2020 20:45:38 GMT  
-		Size: 42.1 MB (42114920 bytes)  
+	-	`sha256:5ecc5c98d1ae78a662cf63740308e6e826b8d9bcb21ec72db61922c0e1c9bd27`  
+		Last Modified: Fri, 24 Jul 2020 18:16:06 GMT  
+		Size: 42.1 MB (42114929 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4695d6ae56de7ede13767fd8d7fe669e5e172c7eedba013b267ebc8db2645b59`  
-		Last Modified: Fri, 17 Jul 2020 21:10:06 GMT  
-		Size: 1.9 KB (1899 bytes)  
+	-	`sha256:a058bddc4a987cc2252e05d52e29c679dcd7195e2c266c276c77663e1fa5f90e`  
+		Last Modified: Fri, 24 Jul 2020 19:58:08 GMT  
+		Size: 1.9 KB (1889 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7accc9d6756c5398000839b30bad7abed2eeedacea2df57c11d2d102273943dd`  
-		Last Modified: Fri, 17 Jul 2020 21:10:06 GMT  
-		Size: 8.5 MB (8532675 bytes)  
+	-	`sha256:26f8e9f0111a29cd98efe9beb4fe9e5f27428a47eed962d09b17a8e1fdcb3f48`  
+		Last Modified: Fri, 24 Jul 2020 19:58:08 GMT  
+		Size: 8.5 MB (8532893 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19ca2193a18ed13cccf4d9d3cf16dc7cac9b87082ce0e83bc094647c7fbfa737`  
-		Last Modified: Fri, 17 Jul 2020 21:10:04 GMT  
-		Size: 1.2 MB (1246950 bytes)  
+	-	`sha256:c12c02c0ca3b9acaeda40f5cc3ace38fc0f3d14b54085f18fa8dd5013b49993e`  
+		Last Modified: Fri, 24 Jul 2020 19:58:05 GMT  
+		Size: 1.2 MB (1246894 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc17ab07a0dc4f504419e693342ea8c79d8d5b3eba2f288e85d20686f3c323c0`  
-		Last Modified: Fri, 17 Jul 2020 21:10:41 GMT  
-		Size: 37.8 MB (37803751 bytes)  
+	-	`sha256:a0ac591833e849b4c635e25c09042351ec3f138a6adc62c677fb78fa1d2a3cb2`  
+		Last Modified: Fri, 24 Jul 2020 19:58:42 GMT  
+		Size: 37.8 MB (37803401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95ebe519b3064a3b05f5009012b21b102f1f9d70fe127c01169dbfc0eaa0c4df`  
-		Last Modified: Fri, 17 Jul 2020 21:10:32 GMT  
+	-	`sha256:7516713124e5a176f583df9f4e9d8d7a25986b6a124b9d2c54f2c4a908c1f90a`  
+		Last Modified: Fri, 24 Jul 2020 19:58:33 GMT  
 		Size: 1.2 KB (1154 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c69517aea6f98d890cd32086202f4511c09d7f95b9368ddc6bf35fa20ba16f4`  
-		Last Modified: Fri, 17 Jul 2020 21:10:32 GMT  
+	-	`sha256:4f69b4568d3dc3ac436263a44cdd6de861fd2e2146612bc0cf6a6dfa3fd4be13`  
+		Last Modified: Fri, 24 Jul 2020 19:58:33 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -3880,7 +3880,7 @@ CMD ["cassandra" "-f"]
 ## `cassandra:3.11.6`
 
 ```console
-$ docker pull cassandra@sha256:f8da4577b1a549178e319ba08bc58b3249f6c05a64d8e11b9ace84a75bdcb2ad
+$ docker pull cassandra@sha256:2e3c2f5ab2beb913b9892d616226806e1a265156be3e0a65edac3f2e4217de73
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3893,363 +3893,363 @@ $ docker pull cassandra@sha256:f8da4577b1a549178e319ba08bc58b3249f6c05a64d8e11b9
 ### `cassandra:3.11.6` - linux; amd64
 
 ```console
-$ docker pull cassandra@sha256:675fbd063df3e524ec30906ecd9cb3fdab1de1645f71d86e8d301ee1538e90b3
+$ docker pull cassandra@sha256:5788f3375ddf54d6162d79520b9f657b5a2257f57f9ac667949642e70f395473
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.6 MB (130581564 bytes)**  
+-	Total Size: **130.6 MB (130596704 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9fab0c92a93d10a8d0aea43e7e4c502412db367e1539f401f478778add335aba`
+-	Image ID: `sha256:6e1f443aca8c95bbf13e77af15891919a754d18f54e6dee61819d53a1937059d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 21:56:08 GMT
-ADD file:0b40d881e3e00d68de1f1df0a565385bb838144b83814df891c994f466e9efa2 in / 
-# Mon, 06 Jul 2020 21:56:09 GMT
+# Fri, 24 Jul 2020 14:38:19 GMT
+ADD file:7d9bbf45a5b2510d44d3206a028cf6502757884d49e46d3d2e6356c3a92c4309 in / 
+# Fri, 24 Jul 2020 14:38:20 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 21:56:10 GMT
+# Fri, 24 Jul 2020 14:38:21 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 21:56:11 GMT
+# Fri, 24 Jul 2020 14:38:21 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 21:56:11 GMT
+# Fri, 24 Jul 2020 14:38:22 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:03:04 GMT
+# Fri, 24 Jul 2020 15:16:41 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:52 GMT
+# Fri, 24 Jul 2020 15:17:03 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:19:52 GMT
+# Fri, 24 Jul 2020 15:17:03 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 22:20:11 GMT
+# Fri, 24 Jul 2020 15:17:27 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:20:11 GMT
+# Fri, 24 Jul 2020 15:17:28 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:50:11 GMT
+# Fri, 24 Jul 2020 19:29:08 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 22:50:24 GMT
+# Fri, 24 Jul 2020 19:29:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:50:24 GMT
+# Fri, 24 Jul 2020 19:29:18 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:50:34 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 22:51:41 GMT
+# Fri, 24 Jul 2020 19:30:35 GMT
 ENV CASSANDRA_VERSION=3.11.6
-# Fri, 17 Jul 2020 22:51:41 GMT
+# Fri, 24 Jul 2020 19:30:35 GMT
 ENV CASSANDRA_SHA512=0e778f8fb4a050fde3ec174a9ca365e49ef437cd9e61280b6b4dcba950418a3d04a104bb41aed1add858e2acc2513cf7df4065ca5ca751dd1daf60e70adc4042
-# Fri, 17 Jul 2020 22:51:59 GMT
+# Fri, 24 Jul 2020 19:30:56 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 22:51:59 GMT
+# Fri, 24 Jul 2020 19:30:57 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 22:51:59 GMT
+# Fri, 24 Jul 2020 19:30:57 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 22:52:00 GMT
+# Fri, 24 Jul 2020 19:30:58 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 22:52:00 GMT
+# Fri, 24 Jul 2020 19:30:58 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 22:52:00 GMT
+# Fri, 24 Jul 2020 19:30:58 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 22:52:00 GMT
+# Fri, 24 Jul 2020 19:30:58 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:a1125296b23d78a3585a7910d649fbf0cc56284f9d2066e3243e8bc18f90b308`  
-		Last Modified: Wed, 01 Jul 2020 12:21:40 GMT  
-		Size: 26.7 MB (26696193 bytes)  
+	-	`sha256:7595c8c21622ea8a8b9778972e26dbbe063f7a1c4b0a28a80a34ebb3d343b586`  
+		Last Modified: Mon, 13 Jul 2020 15:46:50 GMT  
+		Size: 26.7 MB (26697127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c742a4a0f38c95e690ad2dad8909c0cb232911418ac94a73da2a28becc7b734`  
-		Last Modified: Mon, 06 Jul 2020 21:57:18 GMT  
-		Size: 35.4 KB (35365 bytes)  
+	-	`sha256:d13af8ca898f36af68711cb67c345f65046a78ccd802453f4b129adf9205b1f8`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 35.4 KB (35364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c5ea3b329965bf7239f4e4f484915a444ec6d78b532ae12525934d4f6f7ac9a`  
-		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
-		Size: 852.0 B  
+	-	`sha256:70799171ddba93a611490ba3557d782714b3f4da8963d49ac8726786ba8274a5`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 848.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b4be91ead68299f53759fd80c135e0dde0eb797e91eb8fbc5a708a506e0c433`  
-		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
-		Size: 162.0 B  
+	-	`sha256:b6c12202c5ef07dc9eb8f9d9e71407064684ed70f8c4040b62679b7d30200840`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
-		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
-		Size: 13.9 MB (13875144 bytes)  
+	-	`sha256:c54d424eaa66f20b7926dbaa13c37d1c7c27c0e3113239f5608b4a57c157c399`  
+		Last Modified: Fri, 24 Jul 2020 15:22:49 GMT  
+		Size: 13.9 MB (13875512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b38587e18ed628aa15742a897954754fec3b97a3454dbfd1a5ae9ad4d7b13e4d`  
-		Last Modified: Fri, 17 Jul 2020 22:23:36 GMT  
-		Size: 42.1 MB (42118777 bytes)  
+	-	`sha256:98cd7f0d1fb17db5f394e9dd8dc0faa5708639a99eda99f4c31bb8500645164a`  
+		Last Modified: Fri, 24 Jul 2020 15:23:09 GMT  
+		Size: 42.1 MB (42118779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9197ce285aeaef46cca997053633b75dfca35dc3198654de29083fc918dc709b`  
-		Last Modified: Fri, 17 Jul 2020 22:52:17 GMT  
-		Size: 1.9 KB (1880 bytes)  
+	-	`sha256:b7d0e492af2bc95a83006c62097832dc0be0961a8e956f105ed61b4b95252de2`  
+		Last Modified: Fri, 24 Jul 2020 19:31:15 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df450904509f41d0d9ee3a215b637d024d96b5365b3e6707bf794f53a4492ad3`  
-		Last Modified: Fri, 17 Jul 2020 22:52:18 GMT  
-		Size: 8.7 MB (8739579 bytes)  
+	-	`sha256:6c2ac3248adb599e567b6402031235101652baa7ba677daa59da5aaf483a40e2`  
+		Last Modified: Fri, 24 Jul 2020 19:31:16 GMT  
+		Size: 8.8 MB (8752856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bcf8b6bf9fc13837274f26f53d1cad4dc0865dbbb3a6360fd09bea55c04ebb4`  
-		Last Modified: Fri, 17 Jul 2020 22:52:16 GMT  
-		Size: 1.3 MB (1309892 bytes)  
+	-	`sha256:50c8b9abae1ea715c9e1dbe4fc33971f5c559e93fefaa3f0aca8ca9b17b8c9ef`  
+		Last Modified: Fri, 24 Jul 2020 19:31:14 GMT  
+		Size: 1.3 MB (1310258 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2db434ee5b773b4f910dd2f7914f7fb898bb52b61ca3c246e9a8081f042e788a`  
-		Last Modified: Fri, 17 Jul 2020 22:52:46 GMT  
-		Size: 37.8 MB (37802446 bytes)  
+	-	`sha256:d4023c1719226606f7183bec3b2026a8c020dd003c362d36c2042eb5e667228c`  
+		Last Modified: Fri, 24 Jul 2020 19:31:45 GMT  
+		Size: 37.8 MB (37802639 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a680077b7668833bc6f29626a8bc6b62c0832551d571d1618524a824129f991`  
-		Last Modified: Fri, 17 Jul 2020 22:52:41 GMT  
-		Size: 1.2 KB (1153 bytes)  
+	-	`sha256:62ab0cf29d7ce7cfa0675c40187afb1df8f6cb2db3320dbc32a9ef2a5f9708d0`  
+		Last Modified: Fri, 24 Jul 2020 19:31:39 GMT  
+		Size: 1.2 KB (1151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a33c28342acd847c6973e882eda80c0dec51ed9b2fdf3b8c47d8e32e9e6abdb9`  
-		Last Modified: Fri, 17 Jul 2020 22:52:41 GMT  
+	-	`sha256:8db374efdd1cb5ffe2062fa9484504c71a5e2689943471e0e7cd074959dcf77d`  
+		Last Modified: Fri, 24 Jul 2020 19:31:41 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:3.11.6` - linux; arm variant v7
 
 ```console
-$ docker pull cassandra@sha256:b603587c26cef544c53258e6ef58b57b71228f28f5428beba7a83bc50fe5d953
+$ docker pull cassandra@sha256:4410b7e44793e6db1c054b6967dacb571583c0f7277631b8a898553bbd04841b
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **121.0 MB (121011721 bytes)**  
+-	Total Size: **121.0 MB (121007987 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0f2846b6ddc19007ad80dea3cd9cc79f20f89730c30a68d7abc081f6878bd9e`
+-	Image ID: `sha256:4f3e413939f7bee3f2db3462df63e12d33269f79faebaedf9423ba727cc496a9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 20:07:11 GMT
-ADD file:6797f65071d6d263c6466e89bb2db63753b08510aef54a1dc28891fbf2e58799 in / 
-# Mon, 06 Jul 2020 20:07:14 GMT
+# Fri, 24 Jul 2020 16:04:27 GMT
+ADD file:934b4bc073556bbba45a5017b40df7ac076a57b031b6b7225919b1ea3c1d89ff in / 
+# Fri, 24 Jul 2020 16:04:32 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 20:07:16 GMT
+# Fri, 24 Jul 2020 16:05:15 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 20:07:18 GMT
+# Fri, 24 Jul 2020 16:05:33 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 20:07:19 GMT
+# Fri, 24 Jul 2020 16:05:40 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 21:54:44 GMT
+# Fri, 24 Jul 2020 18:19:35 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 20:58:22 GMT
+# Fri, 24 Jul 2020 18:20:26 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 20:58:24 GMT
+# Fri, 24 Jul 2020 18:20:29 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 20:58:55 GMT
+# Fri, 24 Jul 2020 18:21:58 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 20:58:56 GMT
+# Fri, 24 Jul 2020 18:22:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:31:10 GMT
+# Fri, 24 Jul 2020 19:29:30 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 22:31:28 GMT
+# Fri, 24 Jul 2020 19:29:48 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:31:29 GMT
+# Fri, 24 Jul 2020 19:29:49 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 22:31:53 GMT
+# Fri, 24 Jul 2020 19:30:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 22:31:54 GMT
+# Fri, 24 Jul 2020 19:30:07 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 22:31:54 GMT
+# Fri, 24 Jul 2020 19:30:08 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 22:31:55 GMT
+# Fri, 24 Jul 2020 19:30:09 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:31:55 GMT
+# Fri, 24 Jul 2020 19:30:10 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 22:33:31 GMT
+# Fri, 24 Jul 2020 19:33:06 GMT
 ENV CASSANDRA_VERSION=3.11.6
-# Fri, 17 Jul 2020 22:33:31 GMT
+# Fri, 24 Jul 2020 19:33:07 GMT
 ENV CASSANDRA_SHA512=0e778f8fb4a050fde3ec174a9ca365e49ef437cd9e61280b6b4dcba950418a3d04a104bb41aed1add858e2acc2513cf7df4065ca5ca751dd1daf60e70adc4042
-# Fri, 17 Jul 2020 22:34:03 GMT
+# Fri, 24 Jul 2020 19:34:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 22:34:06 GMT
+# Fri, 24 Jul 2020 19:34:10 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 22:34:07 GMT
+# Fri, 24 Jul 2020 19:34:12 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 22:34:09 GMT
+# Fri, 24 Jul 2020 19:34:14 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 22:34:09 GMT
+# Fri, 24 Jul 2020 19:34:15 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 22:34:10 GMT
+# Fri, 24 Jul 2020 19:34:16 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 22:34:10 GMT
+# Fri, 24 Jul 2020 19:34:16 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:db182fa07ba527098363444f993730c582b86e361f0ac7ae981ba0e9ca768c84`  
-		Last Modified: Mon, 06 Jul 2020 15:46:25 GMT  
-		Size: 22.3 MB (22276511 bytes)  
+	-	`sha256:de691405df56c17462a8052d9b88a283d955c448deda7a610d70096a5454ff13`  
+		Last Modified: Mon, 13 Jul 2020 15:47:13 GMT  
+		Size: 22.3 MB (22277635 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e85650936bd5be5a40db91349e387ede7738f5f7938d6421cb9d64eb021a5a3`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 35.5 KB (35457 bytes)  
+	-	`sha256:e5a766b93ee2f7ed0525d6d90b71c5e860e5e54d4b5259de86c81e5c49ff120c`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 35.5 KB (35459 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:258b890879c48b8d0f50ea632de0a703079d7f5d973ec47338cbe791bb8e30d5`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 850.0 B  
+	-	`sha256:8c97e104d7363348d21ddc11159cfa859c18d58712fcafc215fefb535baccbae`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 857.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0f858a12ecedcf911e3fea9bb17332b53a888444834a3e3d12cd25be830898d`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 188.0 B  
+	-	`sha256:d7a97b3bf2bf845ce898abe48aed267cb2a554e220ee512500495c2791ea6ea8`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4cc999ed63826a5b44acb46406a5dc7d80f1604cc4f06927d88bf6c5e79b497`  
-		Last Modified: Fri, 17 Jul 2020 21:00:57 GMT  
-		Size: 12.8 MB (12816746 bytes)  
+	-	`sha256:06b94dcf53adc5490aa500e598355308c95d914fd25bb61493b436a89f18e8b9`  
+		Last Modified: Fri, 24 Jul 2020 18:29:34 GMT  
+		Size: 12.8 MB (12816849 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d0e340a37a5f7084c19060c7274257987f4abc0b975260c87cffa8e2c4db931`  
-		Last Modified: Fri, 17 Jul 2020 21:01:31 GMT  
-		Size: 38.6 MB (38612358 bytes)  
+	-	`sha256:f17b9ab84135cfaece5bab286aca0ae138291ca7c2370ade6f1165f21e96180c`  
+		Last Modified: Fri, 24 Jul 2020 18:30:12 GMT  
+		Size: 38.6 MB (38612334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ba1dd1eb65901c731bba9cacc9bd6e03326ba749fe2bff114cb0e5845448f1d`  
-		Last Modified: Fri, 17 Jul 2020 22:34:27 GMT  
+	-	`sha256:f6e65532d1eb1a44543148302ec36177bb17984d13d786a636934136b0a0e8bb`  
+		Last Modified: Fri, 24 Jul 2020 19:34:32 GMT  
 		Size: 1.9 KB (1876 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9deeece59d0af97d827664403060b46dddc6ec57d2eb89a634247412215c701f`  
-		Last Modified: Fri, 17 Jul 2020 22:34:29 GMT  
-		Size: 8.2 MB (8199899 bytes)  
+	-	`sha256:8914480b0f542282a0fded757439bc750f8218c0de990110c38f34158ae2b69f`  
+		Last Modified: Fri, 24 Jul 2020 19:34:33 GMT  
+		Size: 8.2 MB (8194763 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccb237791e61160e1d65c5821d7833c5a2ddefa21040bc0c1b98143c0efc21de`  
-		Last Modified: Fri, 17 Jul 2020 22:34:26 GMT  
-		Size: 1.3 MB (1263056 bytes)  
+	-	`sha256:8ab4af184c01717aec5b30e306cd595dd7d15e5cf1210d74a6609b068e741815`  
+		Last Modified: Fri, 24 Jul 2020 19:34:31 GMT  
+		Size: 1.3 MB (1263131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7c2cc1b634566cf14d8943b62c7cfb035965a500caa035b6b10372c6546fbe2`  
-		Last Modified: Fri, 17 Jul 2020 22:35:08 GMT  
-		Size: 37.8 MB (37803504 bytes)  
+	-	`sha256:51e88e0bfbf9b2ba78348bbf88523a22f5769643b60ce0d1b8445e862bad998f`  
+		Last Modified: Fri, 24 Jul 2020 19:35:16 GMT  
+		Size: 37.8 MB (37803622 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:70a71a1b1c6bb4871c1c849fe2cafc11420f325889807628b9099496a1050306`  
-		Last Modified: Fri, 17 Jul 2020 22:34:56 GMT  
-		Size: 1.2 KB (1155 bytes)  
+	-	`sha256:1678e4f6599d47ef9fb95dddc0008c2798217446e1ca851bdccca765099a6d20`  
+		Last Modified: Fri, 24 Jul 2020 19:35:07 GMT  
+		Size: 1.2 KB (1153 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b230b78b2958ebc90f4891c656201075a08ebd0642948d8d35303d7f0f0e8b6`  
-		Last Modified: Fri, 17 Jul 2020 22:34:56 GMT  
+	-	`sha256:d7842e4cf84f05b967f0f179b6cb387143253a808c9917b238a65e883594fbc6`  
+		Last Modified: Fri, 24 Jul 2020 19:35:05 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:3.11.6` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:f4bf10bbed0e1911857a45bf04e315270292612f7606d2f529a5e0e50e8ac2e8
+$ docker pull cassandra@sha256:1858daafa236b6e143a57f807ba63e7d1ccd4966c24a0cc611089dd83d5e86e6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.7 MB (126741440 bytes)**  
+-	Total Size: **126.7 MB (126743147 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:caff57cfa0f47157e9f87982d5aa491e9e1c1471ab8598baeff0fd562b7628d7`
+-	Image ID: `sha256:2796144527d9a5cd9aea5fce8a702d79bf5c875134c06e00232d0788a6d76a3f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:04:54 GMT
-ADD file:090a5d48524c4b10f867bf6bb80c106a69bf839c876de86912ed0c633349a1ab in / 
-# Mon, 06 Jul 2020 22:04:56 GMT
+# Fri, 24 Jul 2020 16:21:15 GMT
+ADD file:146b4b3953060bbe623c06f374b3b3798872e4e1ddfef76071c7c4b69a834622 in / 
+# Fri, 24 Jul 2020 16:21:35 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:04:58 GMT
+# Fri, 24 Jul 2020 16:21:51 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:05:00 GMT
+# Fri, 24 Jul 2020 16:23:26 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:05:01 GMT
+# Fri, 24 Jul 2020 16:23:50 GMT
 CMD ["/bin/bash"]
-# Tue, 07 Jul 2020 01:12:32 GMT
+# Fri, 24 Jul 2020 18:11:26 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 20:42:18 GMT
+# Fri, 24 Jul 2020 18:12:03 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 20:42:20 GMT
+# Fri, 24 Jul 2020 18:12:05 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 20:42:56 GMT
+# Fri, 24 Jul 2020 18:12:40 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 20:42:57 GMT
+# Fri, 24 Jul 2020 18:12:42 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 21:04:33 GMT
+# Fri, 24 Jul 2020 19:53:36 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 21:05:11 GMT
+# Fri, 24 Jul 2020 19:53:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 21:05:12 GMT
+# Fri, 24 Jul 2020 19:54:02 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 21:05:51 GMT
+# Fri, 24 Jul 2020 19:54:26 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 21:05:53 GMT
+# Fri, 24 Jul 2020 19:54:27 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 21:05:55 GMT
+# Fri, 24 Jul 2020 19:54:30 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 21:05:56 GMT
+# Fri, 24 Jul 2020 19:54:32 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 21:05:57 GMT
+# Fri, 24 Jul 2020 19:54:34 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 21:08:38 GMT
+# Fri, 24 Jul 2020 19:56:40 GMT
 ENV CASSANDRA_VERSION=3.11.6
-# Fri, 17 Jul 2020 21:08:40 GMT
+# Fri, 24 Jul 2020 19:56:41 GMT
 ENV CASSANDRA_SHA512=0e778f8fb4a050fde3ec174a9ca365e49ef437cd9e61280b6b4dcba950418a3d04a104bb41aed1add858e2acc2513cf7df4065ca5ca751dd1daf60e70adc4042
-# Fri, 17 Jul 2020 21:09:25 GMT
+# Fri, 24 Jul 2020 19:57:16 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 21:09:32 GMT
+# Fri, 24 Jul 2020 19:57:22 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 21:09:33 GMT
+# Fri, 24 Jul 2020 19:57:23 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 21:09:37 GMT
+# Fri, 24 Jul 2020 19:57:38 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 21:09:38 GMT
+# Fri, 24 Jul 2020 19:57:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 21:09:39 GMT
+# Fri, 24 Jul 2020 19:57:47 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 21:09:41 GMT
+# Fri, 24 Jul 2020 19:57:50 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:68fe03cb170d6a5101858131ae1eac5393a4f018d70abfcd1348fd240ee0ccc5`  
-		Last Modified: Tue, 30 Jun 2020 16:25:30 GMT  
-		Size: 23.7 MB (23719365 bytes)  
+	-	`sha256:a114936b480795ec46632c29c96e126744c314983ee0d83354804dc39d1afb46`  
+		Last Modified: Mon, 13 Jul 2020 15:47:08 GMT  
+		Size: 23.7 MB (23721122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18959295effbb87ec216a036a1821f8b7e183072faaa80a6d7f97aa14b51b2af`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 35.2 KB (35189 bytes)  
+	-	`sha256:a27ecf0d2a869e5d188121e6b38473e481b66599a26d8df24d22c9170f50bfa9`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 35.2 KB (35205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51118fb70ce38c0c2e667ecd5fc941590875e2fd9e55dd17c90073f085ba5970`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 852.0 B  
+	-	`sha256:f4eb48eb870f62ec1a7a4a2d753bf2b92dff62a6dbedaeff6db6e41cb33196bc`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:409a5d9eae931d5a3b5a3bcb840e11167c2d3d03ec22258cde67197babf908ed`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 187.0 B  
+	-	`sha256:0f912b9bb20d998fd0f1a2526d5539f35d34a476da71c783d0041b25b78c0af5`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf5858fe3213ff710f6c318742f085137ce8fcea1e001c321df12f5871e95b09`  
-		Last Modified: Fri, 17 Jul 2020 20:45:09 GMT  
-		Size: 13.3 MB (13284377 bytes)  
+	-	`sha256:d25bf415b8209fd4eac1325c07cba7b2f07e2a8c3850968536465e0f068272f1`  
+		Last Modified: Fri, 24 Jul 2020 18:15:34 GMT  
+		Size: 13.3 MB (13284502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3ba5e907efef65b4f3942a118c3585d97dd757f2a331e6457dd91af6b1141e6`  
-		Last Modified: Fri, 17 Jul 2020 20:45:38 GMT  
-		Size: 42.1 MB (42114920 bytes)  
+	-	`sha256:5ecc5c98d1ae78a662cf63740308e6e826b8d9bcb21ec72db61922c0e1c9bd27`  
+		Last Modified: Fri, 24 Jul 2020 18:16:06 GMT  
+		Size: 42.1 MB (42114929 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4695d6ae56de7ede13767fd8d7fe669e5e172c7eedba013b267ebc8db2645b59`  
-		Last Modified: Fri, 17 Jul 2020 21:10:06 GMT  
-		Size: 1.9 KB (1899 bytes)  
+	-	`sha256:a058bddc4a987cc2252e05d52e29c679dcd7195e2c266c276c77663e1fa5f90e`  
+		Last Modified: Fri, 24 Jul 2020 19:58:08 GMT  
+		Size: 1.9 KB (1889 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7accc9d6756c5398000839b30bad7abed2eeedacea2df57c11d2d102273943dd`  
-		Last Modified: Fri, 17 Jul 2020 21:10:06 GMT  
-		Size: 8.5 MB (8532675 bytes)  
+	-	`sha256:26f8e9f0111a29cd98efe9beb4fe9e5f27428a47eed962d09b17a8e1fdcb3f48`  
+		Last Modified: Fri, 24 Jul 2020 19:58:08 GMT  
+		Size: 8.5 MB (8532893 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19ca2193a18ed13cccf4d9d3cf16dc7cac9b87082ce0e83bc094647c7fbfa737`  
-		Last Modified: Fri, 17 Jul 2020 21:10:04 GMT  
-		Size: 1.2 MB (1246950 bytes)  
+	-	`sha256:c12c02c0ca3b9acaeda40f5cc3ace38fc0f3d14b54085f18fa8dd5013b49993e`  
+		Last Modified: Fri, 24 Jul 2020 19:58:05 GMT  
+		Size: 1.2 MB (1246894 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc17ab07a0dc4f504419e693342ea8c79d8d5b3eba2f288e85d20686f3c323c0`  
-		Last Modified: Fri, 17 Jul 2020 21:10:41 GMT  
-		Size: 37.8 MB (37803751 bytes)  
+	-	`sha256:a0ac591833e849b4c635e25c09042351ec3f138a6adc62c677fb78fa1d2a3cb2`  
+		Last Modified: Fri, 24 Jul 2020 19:58:42 GMT  
+		Size: 37.8 MB (37803401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95ebe519b3064a3b05f5009012b21b102f1f9d70fe127c01169dbfc0eaa0c4df`  
-		Last Modified: Fri, 17 Jul 2020 21:10:32 GMT  
+	-	`sha256:7516713124e5a176f583df9f4e9d8d7a25986b6a124b9d2c54f2c4a908c1f90a`  
+		Last Modified: Fri, 24 Jul 2020 19:58:33 GMT  
 		Size: 1.2 KB (1154 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c69517aea6f98d890cd32086202f4511c09d7f95b9368ddc6bf35fa20ba16f4`  
-		Last Modified: Fri, 17 Jul 2020 21:10:32 GMT  
+	-	`sha256:4f69b4568d3dc3ac436263a44cdd6de861fd2e2146612bc0cf6a6dfa3fd4be13`  
+		Last Modified: Fri, 24 Jul 2020 19:58:33 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -4377,7 +4377,7 @@ CMD ["cassandra" "-f"]
 ## `cassandra:latest`
 
 ```console
-$ docker pull cassandra@sha256:f8da4577b1a549178e319ba08bc58b3249f6c05a64d8e11b9ace84a75bdcb2ad
+$ docker pull cassandra@sha256:2e3c2f5ab2beb913b9892d616226806e1a265156be3e0a65edac3f2e4217de73
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4390,363 +4390,363 @@ $ docker pull cassandra@sha256:f8da4577b1a549178e319ba08bc58b3249f6c05a64d8e11b9
 ### `cassandra:latest` - linux; amd64
 
 ```console
-$ docker pull cassandra@sha256:675fbd063df3e524ec30906ecd9cb3fdab1de1645f71d86e8d301ee1538e90b3
+$ docker pull cassandra@sha256:5788f3375ddf54d6162d79520b9f657b5a2257f57f9ac667949642e70f395473
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.6 MB (130581564 bytes)**  
+-	Total Size: **130.6 MB (130596704 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9fab0c92a93d10a8d0aea43e7e4c502412db367e1539f401f478778add335aba`
+-	Image ID: `sha256:6e1f443aca8c95bbf13e77af15891919a754d18f54e6dee61819d53a1937059d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 21:56:08 GMT
-ADD file:0b40d881e3e00d68de1f1df0a565385bb838144b83814df891c994f466e9efa2 in / 
-# Mon, 06 Jul 2020 21:56:09 GMT
+# Fri, 24 Jul 2020 14:38:19 GMT
+ADD file:7d9bbf45a5b2510d44d3206a028cf6502757884d49e46d3d2e6356c3a92c4309 in / 
+# Fri, 24 Jul 2020 14:38:20 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 21:56:10 GMT
+# Fri, 24 Jul 2020 14:38:21 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 21:56:11 GMT
+# Fri, 24 Jul 2020 14:38:21 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 21:56:11 GMT
+# Fri, 24 Jul 2020 14:38:22 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:03:04 GMT
+# Fri, 24 Jul 2020 15:16:41 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:52 GMT
+# Fri, 24 Jul 2020 15:17:03 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:19:52 GMT
+# Fri, 24 Jul 2020 15:17:03 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 22:20:11 GMT
+# Fri, 24 Jul 2020 15:17:27 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:20:11 GMT
+# Fri, 24 Jul 2020 15:17:28 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:50:11 GMT
+# Fri, 24 Jul 2020 19:29:08 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 22:50:24 GMT
+# Fri, 24 Jul 2020 19:29:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:50:24 GMT
+# Fri, 24 Jul 2020 19:29:18 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:32 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 22:50:33 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:50:34 GMT
+# Fri, 24 Jul 2020 19:29:33 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 22:51:41 GMT
+# Fri, 24 Jul 2020 19:30:35 GMT
 ENV CASSANDRA_VERSION=3.11.6
-# Fri, 17 Jul 2020 22:51:41 GMT
+# Fri, 24 Jul 2020 19:30:35 GMT
 ENV CASSANDRA_SHA512=0e778f8fb4a050fde3ec174a9ca365e49ef437cd9e61280b6b4dcba950418a3d04a104bb41aed1add858e2acc2513cf7df4065ca5ca751dd1daf60e70adc4042
-# Fri, 17 Jul 2020 22:51:59 GMT
+# Fri, 24 Jul 2020 19:30:56 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 22:51:59 GMT
+# Fri, 24 Jul 2020 19:30:57 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 22:51:59 GMT
+# Fri, 24 Jul 2020 19:30:57 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 22:52:00 GMT
+# Fri, 24 Jul 2020 19:30:58 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 22:52:00 GMT
+# Fri, 24 Jul 2020 19:30:58 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 22:52:00 GMT
+# Fri, 24 Jul 2020 19:30:58 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 22:52:00 GMT
+# Fri, 24 Jul 2020 19:30:58 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:a1125296b23d78a3585a7910d649fbf0cc56284f9d2066e3243e8bc18f90b308`  
-		Last Modified: Wed, 01 Jul 2020 12:21:40 GMT  
-		Size: 26.7 MB (26696193 bytes)  
+	-	`sha256:7595c8c21622ea8a8b9778972e26dbbe063f7a1c4b0a28a80a34ebb3d343b586`  
+		Last Modified: Mon, 13 Jul 2020 15:46:50 GMT  
+		Size: 26.7 MB (26697127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c742a4a0f38c95e690ad2dad8909c0cb232911418ac94a73da2a28becc7b734`  
-		Last Modified: Mon, 06 Jul 2020 21:57:18 GMT  
-		Size: 35.4 KB (35365 bytes)  
+	-	`sha256:d13af8ca898f36af68711cb67c345f65046a78ccd802453f4b129adf9205b1f8`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 35.4 KB (35364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c5ea3b329965bf7239f4e4f484915a444ec6d78b532ae12525934d4f6f7ac9a`  
-		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
-		Size: 852.0 B  
+	-	`sha256:70799171ddba93a611490ba3557d782714b3f4da8963d49ac8726786ba8274a5`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 848.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b4be91ead68299f53759fd80c135e0dde0eb797e91eb8fbc5a708a506e0c433`  
-		Last Modified: Mon, 06 Jul 2020 21:57:19 GMT  
-		Size: 162.0 B  
+	-	`sha256:b6c12202c5ef07dc9eb8f9d9e71407064684ed70f8c4040b62679b7d30200840`  
+		Last Modified: Fri, 24 Jul 2020 14:39:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:262049cebf1b6f60b6dc78a926be5d3a689ba76a6c5c28edc9b195952b98c31f`  
-		Last Modified: Fri, 17 Jul 2020 22:23:14 GMT  
-		Size: 13.9 MB (13875144 bytes)  
+	-	`sha256:c54d424eaa66f20b7926dbaa13c37d1c7c27c0e3113239f5608b4a57c157c399`  
+		Last Modified: Fri, 24 Jul 2020 15:22:49 GMT  
+		Size: 13.9 MB (13875512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b38587e18ed628aa15742a897954754fec3b97a3454dbfd1a5ae9ad4d7b13e4d`  
-		Last Modified: Fri, 17 Jul 2020 22:23:36 GMT  
-		Size: 42.1 MB (42118777 bytes)  
+	-	`sha256:98cd7f0d1fb17db5f394e9dd8dc0faa5708639a99eda99f4c31bb8500645164a`  
+		Last Modified: Fri, 24 Jul 2020 15:23:09 GMT  
+		Size: 42.1 MB (42118779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9197ce285aeaef46cca997053633b75dfca35dc3198654de29083fc918dc709b`  
-		Last Modified: Fri, 17 Jul 2020 22:52:17 GMT  
-		Size: 1.9 KB (1880 bytes)  
+	-	`sha256:b7d0e492af2bc95a83006c62097832dc0be0961a8e956f105ed61b4b95252de2`  
+		Last Modified: Fri, 24 Jul 2020 19:31:15 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df450904509f41d0d9ee3a215b637d024d96b5365b3e6707bf794f53a4492ad3`  
-		Last Modified: Fri, 17 Jul 2020 22:52:18 GMT  
-		Size: 8.7 MB (8739579 bytes)  
+	-	`sha256:6c2ac3248adb599e567b6402031235101652baa7ba677daa59da5aaf483a40e2`  
+		Last Modified: Fri, 24 Jul 2020 19:31:16 GMT  
+		Size: 8.8 MB (8752856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bcf8b6bf9fc13837274f26f53d1cad4dc0865dbbb3a6360fd09bea55c04ebb4`  
-		Last Modified: Fri, 17 Jul 2020 22:52:16 GMT  
-		Size: 1.3 MB (1309892 bytes)  
+	-	`sha256:50c8b9abae1ea715c9e1dbe4fc33971f5c559e93fefaa3f0aca8ca9b17b8c9ef`  
+		Last Modified: Fri, 24 Jul 2020 19:31:14 GMT  
+		Size: 1.3 MB (1310258 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2db434ee5b773b4f910dd2f7914f7fb898bb52b61ca3c246e9a8081f042e788a`  
-		Last Modified: Fri, 17 Jul 2020 22:52:46 GMT  
-		Size: 37.8 MB (37802446 bytes)  
+	-	`sha256:d4023c1719226606f7183bec3b2026a8c020dd003c362d36c2042eb5e667228c`  
+		Last Modified: Fri, 24 Jul 2020 19:31:45 GMT  
+		Size: 37.8 MB (37802639 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a680077b7668833bc6f29626a8bc6b62c0832551d571d1618524a824129f991`  
-		Last Modified: Fri, 17 Jul 2020 22:52:41 GMT  
-		Size: 1.2 KB (1153 bytes)  
+	-	`sha256:62ab0cf29d7ce7cfa0675c40187afb1df8f6cb2db3320dbc32a9ef2a5f9708d0`  
+		Last Modified: Fri, 24 Jul 2020 19:31:39 GMT  
+		Size: 1.2 KB (1151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a33c28342acd847c6973e882eda80c0dec51ed9b2fdf3b8c47d8e32e9e6abdb9`  
-		Last Modified: Fri, 17 Jul 2020 22:52:41 GMT  
+	-	`sha256:8db374efdd1cb5ffe2062fa9484504c71a5e2689943471e0e7cd074959dcf77d`  
+		Last Modified: Fri, 24 Jul 2020 19:31:41 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:latest` - linux; arm variant v7
 
 ```console
-$ docker pull cassandra@sha256:b603587c26cef544c53258e6ef58b57b71228f28f5428beba7a83bc50fe5d953
+$ docker pull cassandra@sha256:4410b7e44793e6db1c054b6967dacb571583c0f7277631b8a898553bbd04841b
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **121.0 MB (121011721 bytes)**  
+-	Total Size: **121.0 MB (121007987 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0f2846b6ddc19007ad80dea3cd9cc79f20f89730c30a68d7abc081f6878bd9e`
+-	Image ID: `sha256:4f3e413939f7bee3f2db3462df63e12d33269f79faebaedf9423ba727cc496a9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 20:07:11 GMT
-ADD file:6797f65071d6d263c6466e89bb2db63753b08510aef54a1dc28891fbf2e58799 in / 
-# Mon, 06 Jul 2020 20:07:14 GMT
+# Fri, 24 Jul 2020 16:04:27 GMT
+ADD file:934b4bc073556bbba45a5017b40df7ac076a57b031b6b7225919b1ea3c1d89ff in / 
+# Fri, 24 Jul 2020 16:04:32 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 20:07:16 GMT
+# Fri, 24 Jul 2020 16:05:15 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 20:07:18 GMT
+# Fri, 24 Jul 2020 16:05:33 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 20:07:19 GMT
+# Fri, 24 Jul 2020 16:05:40 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 21:54:44 GMT
+# Fri, 24 Jul 2020 18:19:35 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 20:58:22 GMT
+# Fri, 24 Jul 2020 18:20:26 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 20:58:24 GMT
+# Fri, 24 Jul 2020 18:20:29 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 20:58:55 GMT
+# Fri, 24 Jul 2020 18:21:58 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 20:58:56 GMT
+# Fri, 24 Jul 2020 18:22:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:31:10 GMT
+# Fri, 24 Jul 2020 19:29:30 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 22:31:28 GMT
+# Fri, 24 Jul 2020 19:29:48 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:31:29 GMT
+# Fri, 24 Jul 2020 19:29:49 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 22:31:53 GMT
+# Fri, 24 Jul 2020 19:30:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 22:31:54 GMT
+# Fri, 24 Jul 2020 19:30:07 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 22:31:54 GMT
+# Fri, 24 Jul 2020 19:30:08 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 22:31:55 GMT
+# Fri, 24 Jul 2020 19:30:09 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:31:55 GMT
+# Fri, 24 Jul 2020 19:30:10 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 22:33:31 GMT
+# Fri, 24 Jul 2020 19:33:06 GMT
 ENV CASSANDRA_VERSION=3.11.6
-# Fri, 17 Jul 2020 22:33:31 GMT
+# Fri, 24 Jul 2020 19:33:07 GMT
 ENV CASSANDRA_SHA512=0e778f8fb4a050fde3ec174a9ca365e49ef437cd9e61280b6b4dcba950418a3d04a104bb41aed1add858e2acc2513cf7df4065ca5ca751dd1daf60e70adc4042
-# Fri, 17 Jul 2020 22:34:03 GMT
+# Fri, 24 Jul 2020 19:34:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 22:34:06 GMT
+# Fri, 24 Jul 2020 19:34:10 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 22:34:07 GMT
+# Fri, 24 Jul 2020 19:34:12 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 22:34:09 GMT
+# Fri, 24 Jul 2020 19:34:14 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 22:34:09 GMT
+# Fri, 24 Jul 2020 19:34:15 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 22:34:10 GMT
+# Fri, 24 Jul 2020 19:34:16 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 22:34:10 GMT
+# Fri, 24 Jul 2020 19:34:16 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:db182fa07ba527098363444f993730c582b86e361f0ac7ae981ba0e9ca768c84`  
-		Last Modified: Mon, 06 Jul 2020 15:46:25 GMT  
-		Size: 22.3 MB (22276511 bytes)  
+	-	`sha256:de691405df56c17462a8052d9b88a283d955c448deda7a610d70096a5454ff13`  
+		Last Modified: Mon, 13 Jul 2020 15:47:13 GMT  
+		Size: 22.3 MB (22277635 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e85650936bd5be5a40db91349e387ede7738f5f7938d6421cb9d64eb021a5a3`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 35.5 KB (35457 bytes)  
+	-	`sha256:e5a766b93ee2f7ed0525d6d90b71c5e860e5e54d4b5259de86c81e5c49ff120c`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 35.5 KB (35459 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:258b890879c48b8d0f50ea632de0a703079d7f5d973ec47338cbe791bb8e30d5`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 850.0 B  
+	-	`sha256:8c97e104d7363348d21ddc11159cfa859c18d58712fcafc215fefb535baccbae`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 857.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0f858a12ecedcf911e3fea9bb17332b53a888444834a3e3d12cd25be830898d`  
-		Last Modified: Mon, 06 Jul 2020 20:10:21 GMT  
-		Size: 188.0 B  
+	-	`sha256:d7a97b3bf2bf845ce898abe48aed267cb2a554e220ee512500495c2791ea6ea8`  
+		Last Modified: Fri, 24 Jul 2020 16:13:28 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4cc999ed63826a5b44acb46406a5dc7d80f1604cc4f06927d88bf6c5e79b497`  
-		Last Modified: Fri, 17 Jul 2020 21:00:57 GMT  
-		Size: 12.8 MB (12816746 bytes)  
+	-	`sha256:06b94dcf53adc5490aa500e598355308c95d914fd25bb61493b436a89f18e8b9`  
+		Last Modified: Fri, 24 Jul 2020 18:29:34 GMT  
+		Size: 12.8 MB (12816849 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d0e340a37a5f7084c19060c7274257987f4abc0b975260c87cffa8e2c4db931`  
-		Last Modified: Fri, 17 Jul 2020 21:01:31 GMT  
-		Size: 38.6 MB (38612358 bytes)  
+	-	`sha256:f17b9ab84135cfaece5bab286aca0ae138291ca7c2370ade6f1165f21e96180c`  
+		Last Modified: Fri, 24 Jul 2020 18:30:12 GMT  
+		Size: 38.6 MB (38612334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ba1dd1eb65901c731bba9cacc9bd6e03326ba749fe2bff114cb0e5845448f1d`  
-		Last Modified: Fri, 17 Jul 2020 22:34:27 GMT  
+	-	`sha256:f6e65532d1eb1a44543148302ec36177bb17984d13d786a636934136b0a0e8bb`  
+		Last Modified: Fri, 24 Jul 2020 19:34:32 GMT  
 		Size: 1.9 KB (1876 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9deeece59d0af97d827664403060b46dddc6ec57d2eb89a634247412215c701f`  
-		Last Modified: Fri, 17 Jul 2020 22:34:29 GMT  
-		Size: 8.2 MB (8199899 bytes)  
+	-	`sha256:8914480b0f542282a0fded757439bc750f8218c0de990110c38f34158ae2b69f`  
+		Last Modified: Fri, 24 Jul 2020 19:34:33 GMT  
+		Size: 8.2 MB (8194763 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccb237791e61160e1d65c5821d7833c5a2ddefa21040bc0c1b98143c0efc21de`  
-		Last Modified: Fri, 17 Jul 2020 22:34:26 GMT  
-		Size: 1.3 MB (1263056 bytes)  
+	-	`sha256:8ab4af184c01717aec5b30e306cd595dd7d15e5cf1210d74a6609b068e741815`  
+		Last Modified: Fri, 24 Jul 2020 19:34:31 GMT  
+		Size: 1.3 MB (1263131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7c2cc1b634566cf14d8943b62c7cfb035965a500caa035b6b10372c6546fbe2`  
-		Last Modified: Fri, 17 Jul 2020 22:35:08 GMT  
-		Size: 37.8 MB (37803504 bytes)  
+	-	`sha256:51e88e0bfbf9b2ba78348bbf88523a22f5769643b60ce0d1b8445e862bad998f`  
+		Last Modified: Fri, 24 Jul 2020 19:35:16 GMT  
+		Size: 37.8 MB (37803622 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:70a71a1b1c6bb4871c1c849fe2cafc11420f325889807628b9099496a1050306`  
-		Last Modified: Fri, 17 Jul 2020 22:34:56 GMT  
-		Size: 1.2 KB (1155 bytes)  
+	-	`sha256:1678e4f6599d47ef9fb95dddc0008c2798217446e1ca851bdccca765099a6d20`  
+		Last Modified: Fri, 24 Jul 2020 19:35:07 GMT  
+		Size: 1.2 KB (1153 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b230b78b2958ebc90f4891c656201075a08ebd0642948d8d35303d7f0f0e8b6`  
-		Last Modified: Fri, 17 Jul 2020 22:34:56 GMT  
+	-	`sha256:d7842e4cf84f05b967f0f179b6cb387143253a808c9917b238a65e883594fbc6`  
+		Last Modified: Fri, 24 Jul 2020 19:35:05 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cassandra:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:f4bf10bbed0e1911857a45bf04e315270292612f7606d2f529a5e0e50e8ac2e8
+$ docker pull cassandra@sha256:1858daafa236b6e143a57f807ba63e7d1ccd4966c24a0cc611089dd83d5e86e6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.7 MB (126741440 bytes)**  
+-	Total Size: **126.7 MB (126743147 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:caff57cfa0f47157e9f87982d5aa491e9e1c1471ab8598baeff0fd562b7628d7`
+-	Image ID: `sha256:2796144527d9a5cd9aea5fce8a702d79bf5c875134c06e00232d0788a6d76a3f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:04:54 GMT
-ADD file:090a5d48524c4b10f867bf6bb80c106a69bf839c876de86912ed0c633349a1ab in / 
-# Mon, 06 Jul 2020 22:04:56 GMT
+# Fri, 24 Jul 2020 16:21:15 GMT
+ADD file:146b4b3953060bbe623c06f374b3b3798872e4e1ddfef76071c7c4b69a834622 in / 
+# Fri, 24 Jul 2020 16:21:35 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:04:58 GMT
+# Fri, 24 Jul 2020 16:21:51 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:05:00 GMT
+# Fri, 24 Jul 2020 16:23:26 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:05:01 GMT
+# Fri, 24 Jul 2020 16:23:50 GMT
 CMD ["/bin/bash"]
-# Tue, 07 Jul 2020 01:12:32 GMT
+# Fri, 24 Jul 2020 18:11:26 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 20:42:18 GMT
+# Fri, 24 Jul 2020 18:12:03 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 20:42:20 GMT
+# Fri, 24 Jul 2020 18:12:05 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 20:42:56 GMT
+# Fri, 24 Jul 2020 18:12:40 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 20:42:57 GMT
+# Fri, 24 Jul 2020 18:12:42 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 21:04:33 GMT
+# Fri, 24 Jul 2020 19:53:36 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 17 Jul 2020 21:05:11 GMT
+# Fri, 24 Jul 2020 19:53:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc1 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 21:05:12 GMT
+# Fri, 24 Jul 2020 19:54:02 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 17 Jul 2020 21:05:51 GMT
+# Fri, 24 Jul 2020 19:54:26 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 17 Jul 2020 21:05:53 GMT
+# Fri, 24 Jul 2020 19:54:27 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 17 Jul 2020 21:05:55 GMT
+# Fri, 24 Jul 2020 19:54:30 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 17 Jul 2020 21:05:56 GMT
+# Fri, 24 Jul 2020 19:54:32 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 21:05:57 GMT
+# Fri, 24 Jul 2020 19:54:34 GMT
 ENV GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB
-# Fri, 17 Jul 2020 21:08:38 GMT
+# Fri, 24 Jul 2020 19:56:40 GMT
 ENV CASSANDRA_VERSION=3.11.6
-# Fri, 17 Jul 2020 21:08:40 GMT
+# Fri, 24 Jul 2020 19:56:41 GMT
 ENV CASSANDRA_SHA512=0e778f8fb4a050fde3ec174a9ca365e49ef437cd9e61280b6b4dcba950418a3d04a104bb41aed1add858e2acc2513cf7df4065ca5ca751dd1daf60e70adc4042
-# Fri, 17 Jul 2020 21:09:25 GMT
+# Fri, 24 Jul 2020 19:57:16 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 17 Jul 2020 21:09:32 GMT
+# Fri, 24 Jul 2020 19:57:22 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 17 Jul 2020 21:09:33 GMT
+# Fri, 24 Jul 2020 19:57:23 GMT
 COPY file:4124b71c4a5f59acdcefba4560d1bacb9047954f73615ae244532f7769e2caa7 in /usr/local/bin/ 
-# Fri, 17 Jul 2020 21:09:37 GMT
+# Fri, 24 Jul 2020 19:57:38 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 17 Jul 2020 21:09:38 GMT
+# Fri, 24 Jul 2020 19:57:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Jul 2020 21:09:39 GMT
+# Fri, 24 Jul 2020 19:57:47 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 17 Jul 2020 21:09:41 GMT
+# Fri, 24 Jul 2020 19:57:50 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:68fe03cb170d6a5101858131ae1eac5393a4f018d70abfcd1348fd240ee0ccc5`  
-		Last Modified: Tue, 30 Jun 2020 16:25:30 GMT  
-		Size: 23.7 MB (23719365 bytes)  
+	-	`sha256:a114936b480795ec46632c29c96e126744c314983ee0d83354804dc39d1afb46`  
+		Last Modified: Mon, 13 Jul 2020 15:47:08 GMT  
+		Size: 23.7 MB (23721122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18959295effbb87ec216a036a1821f8b7e183072faaa80a6d7f97aa14b51b2af`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 35.2 KB (35189 bytes)  
+	-	`sha256:a27ecf0d2a869e5d188121e6b38473e481b66599a26d8df24d22c9170f50bfa9`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 35.2 KB (35205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51118fb70ce38c0c2e667ecd5fc941590875e2fd9e55dd17c90073f085ba5970`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 852.0 B  
+	-	`sha256:f4eb48eb870f62ec1a7a4a2d753bf2b92dff62a6dbedaeff6db6e41cb33196bc`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:409a5d9eae931d5a3b5a3bcb840e11167c2d3d03ec22258cde67197babf908ed`  
-		Last Modified: Mon, 06 Jul 2020 22:06:58 GMT  
-		Size: 187.0 B  
+	-	`sha256:0f912b9bb20d998fd0f1a2526d5539f35d34a476da71c783d0041b25b78c0af5`  
+		Last Modified: Fri, 24 Jul 2020 16:27:00 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf5858fe3213ff710f6c318742f085137ce8fcea1e001c321df12f5871e95b09`  
-		Last Modified: Fri, 17 Jul 2020 20:45:09 GMT  
-		Size: 13.3 MB (13284377 bytes)  
+	-	`sha256:d25bf415b8209fd4eac1325c07cba7b2f07e2a8c3850968536465e0f068272f1`  
+		Last Modified: Fri, 24 Jul 2020 18:15:34 GMT  
+		Size: 13.3 MB (13284502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3ba5e907efef65b4f3942a118c3585d97dd757f2a331e6457dd91af6b1141e6`  
-		Last Modified: Fri, 17 Jul 2020 20:45:38 GMT  
-		Size: 42.1 MB (42114920 bytes)  
+	-	`sha256:5ecc5c98d1ae78a662cf63740308e6e826b8d9bcb21ec72db61922c0e1c9bd27`  
+		Last Modified: Fri, 24 Jul 2020 18:16:06 GMT  
+		Size: 42.1 MB (42114929 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4695d6ae56de7ede13767fd8d7fe669e5e172c7eedba013b267ebc8db2645b59`  
-		Last Modified: Fri, 17 Jul 2020 21:10:06 GMT  
-		Size: 1.9 KB (1899 bytes)  
+	-	`sha256:a058bddc4a987cc2252e05d52e29c679dcd7195e2c266c276c77663e1fa5f90e`  
+		Last Modified: Fri, 24 Jul 2020 19:58:08 GMT  
+		Size: 1.9 KB (1889 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7accc9d6756c5398000839b30bad7abed2eeedacea2df57c11d2d102273943dd`  
-		Last Modified: Fri, 17 Jul 2020 21:10:06 GMT  
-		Size: 8.5 MB (8532675 bytes)  
+	-	`sha256:26f8e9f0111a29cd98efe9beb4fe9e5f27428a47eed962d09b17a8e1fdcb3f48`  
+		Last Modified: Fri, 24 Jul 2020 19:58:08 GMT  
+		Size: 8.5 MB (8532893 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19ca2193a18ed13cccf4d9d3cf16dc7cac9b87082ce0e83bc094647c7fbfa737`  
-		Last Modified: Fri, 17 Jul 2020 21:10:04 GMT  
-		Size: 1.2 MB (1246950 bytes)  
+	-	`sha256:c12c02c0ca3b9acaeda40f5cc3ace38fc0f3d14b54085f18fa8dd5013b49993e`  
+		Last Modified: Fri, 24 Jul 2020 19:58:05 GMT  
+		Size: 1.2 MB (1246894 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc17ab07a0dc4f504419e693342ea8c79d8d5b3eba2f288e85d20686f3c323c0`  
-		Last Modified: Fri, 17 Jul 2020 21:10:41 GMT  
-		Size: 37.8 MB (37803751 bytes)  
+	-	`sha256:a0ac591833e849b4c635e25c09042351ec3f138a6adc62c677fb78fa1d2a3cb2`  
+		Last Modified: Fri, 24 Jul 2020 19:58:42 GMT  
+		Size: 37.8 MB (37803401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95ebe519b3064a3b05f5009012b21b102f1f9d70fe127c01169dbfc0eaa0c4df`  
-		Last Modified: Fri, 17 Jul 2020 21:10:32 GMT  
+	-	`sha256:7516713124e5a176f583df9f4e9d8d7a25986b6a124b9d2c54f2c4a908c1f90a`  
+		Last Modified: Fri, 24 Jul 2020 19:58:33 GMT  
 		Size: 1.2 KB (1154 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c69517aea6f98d890cd32086202f4511c09d7f95b9368ddc6bf35fa20ba16f4`  
-		Last Modified: Fri, 17 Jul 2020 21:10:32 GMT  
+	-	`sha256:4f69b4568d3dc3ac436263a44cdd6de861fd2e2146612bc0cf6a6dfa3fd4be13`  
+		Last Modified: Fri, 24 Jul 2020 19:58:33 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
