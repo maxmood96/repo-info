@@ -1429,15 +1429,9 @@ Licenses: (parsed from: `/usr/share/doc/libavcodec-dev/copyright`, `/usr/share/d
 - `man-page`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ffmpeg=7:3.4.6-0ubuntu0.18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_3.4.6-0ubuntu0.18.04.1.dsc' ffmpeg_3.4.6-0ubuntu0.18.04.1.dsc 5245 SHA256:8b4dbf0e8953391273ac3fc0cc198d8baee69d8adce16df878fefbec76a1cebe
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_3.4.6.orig.tar.xz' ffmpeg_3.4.6.orig.tar.xz 8491548 SHA256:3572279cb139d9e39dcfbc23edf438ff5311ec3fc5d0dcb3558e49591e5cb83e
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_3.4.6.orig.tar.xz.asc' ffmpeg_3.4.6.orig.tar.xz.asc 473 SHA256:6cd45b126580463eef7a3c302a9a8a23db6dd89257daab413654aedeac147e61
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_3.4.6-0ubuntu0.18.04.1.debian.tar.xz' ffmpeg_3.4.6-0ubuntu0.18.04.1.debian.tar.xz 41976 SHA256:9b501729cb8640219c019d24dfebc225f36608d53b1f9dbc56a47ee3cd5ff3ff
-```
 
 ### `dpkg` source package: `findutils=4.6.0+git+20170828-2`
 
@@ -4232,14 +4226,9 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 - `LGPL-2`
 - `LGPL-2.0+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.4.3-1ubuntu3.18.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.4.3-1ubuntu3.18.04.2.dsc' libseccomp_2.4.3-1ubuntu3.18.04.2.dsc 1988 SHA256:c0e1dd33400a0a7175e2a273252af837a454ce6c43bbb9a70a74f9eb2d3526d9
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.4.3.orig.tar.gz' libseccomp_2.4.3.orig.tar.gz 598147 SHA256:cf15d1421997fac45b936515af61d209c4fd788af11005d212b3d0fd71e7991d
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.4.3-1ubuntu3.18.04.2.debian.tar.xz' libseccomp_2.4.3-1ubuntu3.18.04.2.debian.tar.xz 24652 SHA256:7718022b4b251b5c279d5d56d533ce1791b1718cb9427498375ea89b6d1517b5
-```
 
 ### `dpkg` source package: `libselinux=2.7-2build2`
 
@@ -6533,14 +6522,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pillow=5.1.0-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pillow/pillow_5.1.0-1ubuntu0.2.dsc' pillow_5.1.0-1ubuntu0.2.dsc 2867 SHA256:14c5c9b8152381ca81ea542e3a7f03d5d8e8c86faabc9dc9b6a6ccc6f246b782
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pillow/pillow_5.1.0.orig.tar.xz' pillow_5.1.0.orig.tar.xz 10771012 SHA256:4e2b40a785ff0144ab5cf9cc59e1dc4362d9d43c30b215ea751f7b18e8c25971
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pillow/pillow_5.1.0-1ubuntu0.2.debian.tar.xz' pillow_5.1.0-1ubuntu0.2.debian.tar.xz 34116 SHA256:15db9ecda7a2b3a2a5ea90a4e3a58576acf37ab07675dda17b71c2eb2d54e876
-```
 
 ### `dpkg` source package: `pinentry=1.1.0-1`
 
@@ -7600,14 +7584,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7/copyright`, `/usr/share/doc
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.17-1~18.04ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17-1~18.04ubuntu1.dsc' python2.7_2.7.17-1~18.04ubuntu1.dsc 3475 SHA256:b258c6ca2dad2d49b84b4657b21efd8e3a0db64bf88394c567b6325c91943804
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17.orig.tar.gz' python2.7_2.7.17.orig.tar.gz 17535962 SHA256:f22059d09cdf9625e0a7284d24a13062044f5bf59d93a7f3382190dfa94cecde
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17-1~18.04ubuntu1.diff.gz' python2.7_2.7.17-1~18.04ubuntu1.diff.gz 289562 SHA256:aa84d777881498f18036ece85689444d8542056cef25a59cd94eec7ecae73b78
-```
 
 ### `dpkg` source package: `python3-defaults=3.6.7-1~18.04`
 
@@ -7683,14 +7662,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.6/copyright`, `/usr/share/doc
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.6=3.6.9-1~18.04ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.9-1~18.04ubuntu1.dsc' python3.6_3.6.9-1~18.04ubuntu1.dsc 3446 SHA256:602a9d82c945589c2c7a30f2dc0233a4d6c8fa75e63f941900c75d50093781f8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.9.orig.tar.xz' python3.6_3.6.9.orig.tar.xz 17212164 SHA256:5e2f5f554e3f8f7f0296f7e73d8600c4e9acbaee6b2555b83206edf5153870da
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.9-1~18.04ubuntu1.debian.tar.xz' python3.6_3.6.9-1~18.04ubuntu1.debian.tar.xz 215804 SHA256:d0ed504ea18389f932eb8f5c6b713ec86edfbac0b4f294017ffd6219665e902d
-```
 
 ### `dpkg` source package: `pyyaml=3.12-1build2`
 
