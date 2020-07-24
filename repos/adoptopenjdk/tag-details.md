@@ -217,7 +217,7 @@
 ## `adoptopenjdk:11.0.8_10-jdk-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:24523284bda4cea9fb121bb42fe4ac5ad0ab86ec95520074cb73f6c90e76719a
+$ docker pull adoptopenjdk@sha256:6ded75164247e993d32b1cee478566ff43b1c1a5e5905e7506832ba81eda2054
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -425,65 +425,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:11.0.8_10-jdk-hotspot` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:490d238ed4a9e0f0818ac904ba69c3468290f1d43cd03d642288fb6a8512ca83
+$ docker pull adoptopenjdk@sha256:bf49e7f78d69b670c2871e207e3b79e98afb4e171c0baf51d6eb9f1c0f556da5
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **222.2 MB (222234618 bytes)**  
+-	Total Size: **222.2 MB (222236335 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbaa67f3e0b8083b5eae75f99514c922792413aa950446301977074f07798f06`
+-	Image ID: `sha256:7c030275851ecb2644cd4017b021aea2af63e9cb35303993c0a92b45165c9c91`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:20:30 GMT
+# Fri, 24 Jul 2020 15:47:49 GMT
 ENV JAVA_VERSION=jdk-11.0.8+10
-# Fri, 17 Jul 2020 22:20:56 GMT
+# Fri, 24 Jul 2020 15:48:40 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='fb27ea52ed901c14c9fe8ad2fc10b338b8cf47d6762571be1fe3fb7c426bab7c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.8_10.tar.gz';          ;;        armhf|armv7l)          ESUM='d00370967e4657e137cc511e81d6accbfdb08dba91e6268abef8219e735fbfc5';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_arm_linux_hotspot_11.0.8_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d206a63cd719b65717f7f20ee3fe49f0b8b2db922986b4811c828db57212699e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.8_10.tar.gz';          ;;        s390x)          ESUM='5619e1437c7cd400169eb7f1c831c2635fdb2776a401147a2fc1841b01f83ed6';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.8_10.tar.gz';          ;;        amd64|x86_64)          ESUM='6e4cead158037cb7747ca47416474d4f408c9126be5b96f9befd532e0a762b47';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.8_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:21:06 GMT
+# Fri, 24 Jul 2020 15:49:17 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:21:10 GMT
+# Fri, 24 Jul 2020 15:49:32 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b002dd1d81425ae1b718e81c0db50f0a1f7d0033aec0ccf184a5090037ccc9c`  
-		Last Modified: Fri, 17 Jul 2020 22:30:17 GMT  
-		Size: 177.3 MB (177275886 bytes)  
+	-	`sha256:e0fe78b7fb95e109d7f6bdaab0b9d4e17d5786667ea34ce4e103fcbb90466ef1`  
+		Last Modified: Fri, 24 Jul 2020 16:21:31 GMT  
+		Size: 177.3 MB (177275866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:11.0.8_10-jdk-hotspot` - linux; s390x
@@ -660,7 +660,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:11.0.8_10-jdk-hotspot-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:9d7fe74289334e96babde057565fd204ce43dc2f60a490e8d07632d958e17578
+$ docker pull adoptopenjdk@sha256:46778b246c1804fedd1a8d47f74cdbe1a3eb6895c701a8bfdfe41640285915b9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -866,65 +866,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:11.0.8_10-jdk-hotspot-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:490d238ed4a9e0f0818ac904ba69c3468290f1d43cd03d642288fb6a8512ca83
+$ docker pull adoptopenjdk@sha256:bf49e7f78d69b670c2871e207e3b79e98afb4e171c0baf51d6eb9f1c0f556da5
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **222.2 MB (222234618 bytes)**  
+-	Total Size: **222.2 MB (222236335 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbaa67f3e0b8083b5eae75f99514c922792413aa950446301977074f07798f06`
+-	Image ID: `sha256:7c030275851ecb2644cd4017b021aea2af63e9cb35303993c0a92b45165c9c91`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:20:30 GMT
+# Fri, 24 Jul 2020 15:47:49 GMT
 ENV JAVA_VERSION=jdk-11.0.8+10
-# Fri, 17 Jul 2020 22:20:56 GMT
+# Fri, 24 Jul 2020 15:48:40 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='fb27ea52ed901c14c9fe8ad2fc10b338b8cf47d6762571be1fe3fb7c426bab7c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.8_10.tar.gz';          ;;        armhf|armv7l)          ESUM='d00370967e4657e137cc511e81d6accbfdb08dba91e6268abef8219e735fbfc5';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_arm_linux_hotspot_11.0.8_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d206a63cd719b65717f7f20ee3fe49f0b8b2db922986b4811c828db57212699e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.8_10.tar.gz';          ;;        s390x)          ESUM='5619e1437c7cd400169eb7f1c831c2635fdb2776a401147a2fc1841b01f83ed6';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.8_10.tar.gz';          ;;        amd64|x86_64)          ESUM='6e4cead158037cb7747ca47416474d4f408c9126be5b96f9befd532e0a762b47';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.8_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:21:06 GMT
+# Fri, 24 Jul 2020 15:49:17 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:21:10 GMT
+# Fri, 24 Jul 2020 15:49:32 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b002dd1d81425ae1b718e81c0db50f0a1f7d0033aec0ccf184a5090037ccc9c`  
-		Last Modified: Fri, 17 Jul 2020 22:30:17 GMT  
-		Size: 177.3 MB (177275886 bytes)  
+	-	`sha256:e0fe78b7fb95e109d7f6bdaab0b9d4e17d5786667ea34ce4e103fcbb90466ef1`  
+		Last Modified: Fri, 24 Jul 2020 16:21:31 GMT  
+		Size: 177.3 MB (177275866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:11.0.8_10-jdk-hotspot-bionic` - linux; s390x
@@ -1239,7 +1239,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:11.0.8_10-jdk-openj9-0.21.0`
 
 ```console
-$ docker pull adoptopenjdk@sha256:59f44980d3f4cf82a1ba0d34266af202e97bdd1a19399cb205fb13a43606bb05
+$ docker pull adoptopenjdk@sha256:9d05cc987bfabd000e3d8daa8cd4b60e4500508e490ff2c63f7888babab3d9b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1319,67 +1319,67 @@ CMD ["jshell"]
 ### `adoptopenjdk:11.0.8_10-jdk-openj9-0.21.0` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:ea38bd50c6fa844404c80783ef004c539f0de6d68e099e02b83c56a3ff470baf
+$ docker pull adoptopenjdk@sha256:43861fecc169b8d6a1f9b47aace9a434ab28012afd0c586327a3d49ab0afd8c3
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.2 MB (242249006 bytes)**  
+-	Total Size: **242.3 MB (242250744 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2decec03928de7fe5ca4f1b0cb0cc3ab16442957d2b4caa37239014409e61576`
+-	Image ID: `sha256:06aa11c21a9aa94c14dccda87043599a4a57161e84e1a584c3ec940fe2d660b0`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:24:46 GMT
+# Fri, 24 Jul 2020 16:08:47 GMT
 ENV JAVA_VERSION=jdk-11.0.8+10_openj9-0.21.0
-# Fri, 17 Jul 2020 22:25:14 GMT
+# Fri, 24 Jul 2020 16:09:27 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='b4bad13c0d9c2fbb1954fcddae9ccc5a32c609f2b48bf43ecaa5f39915390604';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_aarch64_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='5bcaa2075ce5bf634b542c04ea79b9ca505407b6f94d2d8350c712da387120d9';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_ppc64le_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='5e89692057fb8dfcb8e215fd3917b721fdb721c1eeea2b14948f4782413846bb';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_s390x_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='9ab79436180d41809f4fca8afe43e778ae2d82c7b50f3653c62d7a2728150836';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_x64_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:25:21 GMT
+# Fri, 24 Jul 2020 16:10:02 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:25:24 GMT
+# Fri, 24 Jul 2020 16:10:14 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Fri, 17 Jul 2020 22:25:27 GMT
+# Fri, 24 Jul 2020 16:10:49 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2515194965c21386073c2e644ebb8a74eaa16a24e64f14ce030cf06b611bbbc8`  
-		Last Modified: Fri, 17 Jul 2020 22:33:18 GMT  
-		Size: 197.3 MB (197290274 bytes)  
+	-	`sha256:217a1b9e62784ca3b556ffef520f3ef82fdfb631ea9af29378bf59a27918762f`  
+		Last Modified: Fri, 24 Jul 2020 16:29:06 GMT  
+		Size: 197.3 MB (197290275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:11.0.8_10-jdk-openj9-0.21.0` - linux; s390x
@@ -1570,7 +1570,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:11.0.8_10-jdk-openj9-0.21.0-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:3639942fe6a8f6d61bef3e108cc188a7c0f85d59c5de4ce84bbc00a3bab21600
+$ docker pull adoptopenjdk@sha256:ae32a1a5d648e56f5d5f10daeb36e81152608e69bc8f8a55672884c6e427597e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1648,67 +1648,67 @@ CMD ["jshell"]
 ### `adoptopenjdk:11.0.8_10-jdk-openj9-0.21.0-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:ea38bd50c6fa844404c80783ef004c539f0de6d68e099e02b83c56a3ff470baf
+$ docker pull adoptopenjdk@sha256:43861fecc169b8d6a1f9b47aace9a434ab28012afd0c586327a3d49ab0afd8c3
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.2 MB (242249006 bytes)**  
+-	Total Size: **242.3 MB (242250744 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2decec03928de7fe5ca4f1b0cb0cc3ab16442957d2b4caa37239014409e61576`
+-	Image ID: `sha256:06aa11c21a9aa94c14dccda87043599a4a57161e84e1a584c3ec940fe2d660b0`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:24:46 GMT
+# Fri, 24 Jul 2020 16:08:47 GMT
 ENV JAVA_VERSION=jdk-11.0.8+10_openj9-0.21.0
-# Fri, 17 Jul 2020 22:25:14 GMT
+# Fri, 24 Jul 2020 16:09:27 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='b4bad13c0d9c2fbb1954fcddae9ccc5a32c609f2b48bf43ecaa5f39915390604';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_aarch64_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='5bcaa2075ce5bf634b542c04ea79b9ca505407b6f94d2d8350c712da387120d9';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_ppc64le_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='5e89692057fb8dfcb8e215fd3917b721fdb721c1eeea2b14948f4782413846bb';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_s390x_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='9ab79436180d41809f4fca8afe43e778ae2d82c7b50f3653c62d7a2728150836';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_x64_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:25:21 GMT
+# Fri, 24 Jul 2020 16:10:02 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:25:24 GMT
+# Fri, 24 Jul 2020 16:10:14 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Fri, 17 Jul 2020 22:25:27 GMT
+# Fri, 24 Jul 2020 16:10:49 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2515194965c21386073c2e644ebb8a74eaa16a24e64f14ce030cf06b611bbbc8`  
-		Last Modified: Fri, 17 Jul 2020 22:33:18 GMT  
-		Size: 197.3 MB (197290274 bytes)  
+	-	`sha256:217a1b9e62784ca3b556ffef520f3ef82fdfb631ea9af29378bf59a27918762f`  
+		Last Modified: Fri, 24 Jul 2020 16:29:06 GMT  
+		Size: 197.3 MB (197290275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:11.0.8_10-jdk-openj9-0.21.0-bionic` - linux; s390x
@@ -2049,7 +2049,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:11.0.8_10-jre-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:fc5032234ecf379fd9f77cd14dd9f4bbf707309980471cade1262c62db590957
+$ docker pull adoptopenjdk@sha256:7d8a16c763294264d67c920fa87f069c6132d6dd3bac0a4ef4a39fb2e95935ea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2251,63 +2251,63 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:11.0.8_10-jre-hotspot` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:1cc7aa45268ed7575fd5a0fbe6a188bacb63d4814798cb8e844b0e43ebbf1181
+$ docker pull adoptopenjdk@sha256:54d8becf7c183b59251db12baf1572eefb7697b04b0977327ae3ca2d6cab0db3
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.6 MB (84582988 bytes)**  
+-	Total Size: **84.6 MB (84584767 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:130602d16d7199e8139e2cc2d20a0b526f84d41b3256a1308eacac806aa6abc8`
+-	Image ID: `sha256:3b74da51bb0ec514ff4e6289b428af10f28423842f28d44ebe001617b01fdd95`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:20:30 GMT
+# Fri, 24 Jul 2020 15:47:49 GMT
 ENV JAVA_VERSION=jdk-11.0.8+10
-# Fri, 17 Jul 2020 22:21:42 GMT
+# Fri, 24 Jul 2020 15:50:11 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='286c869dbaefda9b470ae71d1250fdecf9f06d8da97c0f7df9021d381d749106';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.8_10.tar.gz';          ;;        armhf|armv7l)          ESUM='ffa627b2d0c6001448bb8f1f24f7c9921dad37e67637f6ed0a9a479e680a3393';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_arm_linux_hotspot_11.0.8_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='89231e1667d7cc4202d1a401497bb287d4eb12281c90c17e2570211cc4e901a3';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.8_10.tar.gz';          ;;        s390x)          ESUM='dc0e715c17abcb12bedf77c638e58e67d828d3c4bf24a898f0d4b053caaeb25f';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_s390x_linux_hotspot_11.0.8_10.tar.gz';          ;;        amd64|x86_64)          ESUM='98615b1b369509965a612232622d39b5cefe117d6189179cbad4dcef2ee2f4e1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_x64_linux_hotspot_11.0.8_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:21:47 GMT
+# Fri, 24 Jul 2020 15:50:23 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:084ab345c3960a40e510f021d3f49d37d5710702a5a822ce82e8cc946b413f01`  
-		Last Modified: Fri, 17 Jul 2020 22:30:38 GMT  
-		Size: 39.6 MB (39624256 bytes)  
+	-	`sha256:b9ad770100ec168f3354d8e9c6074b4f081c61070b6e79f9c8c3897bfa45b22f`  
+		Last Modified: Fri, 24 Jul 2020 16:22:06 GMT  
+		Size: 39.6 MB (39624298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:11.0.8_10-jre-hotspot` - linux; s390x
@@ -2470,7 +2470,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk11-binaries/
 ## `adoptopenjdk:11.0.8_10-jre-hotspot-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:a026fb06e1fc9b4595e402988492c2d45a2d37e697c28f1bd9dace3a3f7abdee
+$ docker pull adoptopenjdk@sha256:d17195a2bb98901f02c5dcb256c627136ca9a5d9fd51253fceccaa6655f68184
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2670,63 +2670,63 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:11.0.8_10-jre-hotspot-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:1cc7aa45268ed7575fd5a0fbe6a188bacb63d4814798cb8e844b0e43ebbf1181
+$ docker pull adoptopenjdk@sha256:54d8becf7c183b59251db12baf1572eefb7697b04b0977327ae3ca2d6cab0db3
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.6 MB (84582988 bytes)**  
+-	Total Size: **84.6 MB (84584767 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:130602d16d7199e8139e2cc2d20a0b526f84d41b3256a1308eacac806aa6abc8`
+-	Image ID: `sha256:3b74da51bb0ec514ff4e6289b428af10f28423842f28d44ebe001617b01fdd95`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:20:30 GMT
+# Fri, 24 Jul 2020 15:47:49 GMT
 ENV JAVA_VERSION=jdk-11.0.8+10
-# Fri, 17 Jul 2020 22:21:42 GMT
+# Fri, 24 Jul 2020 15:50:11 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='286c869dbaefda9b470ae71d1250fdecf9f06d8da97c0f7df9021d381d749106';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.8_10.tar.gz';          ;;        armhf|armv7l)          ESUM='ffa627b2d0c6001448bb8f1f24f7c9921dad37e67637f6ed0a9a479e680a3393';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_arm_linux_hotspot_11.0.8_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='89231e1667d7cc4202d1a401497bb287d4eb12281c90c17e2570211cc4e901a3';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.8_10.tar.gz';          ;;        s390x)          ESUM='dc0e715c17abcb12bedf77c638e58e67d828d3c4bf24a898f0d4b053caaeb25f';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_s390x_linux_hotspot_11.0.8_10.tar.gz';          ;;        amd64|x86_64)          ESUM='98615b1b369509965a612232622d39b5cefe117d6189179cbad4dcef2ee2f4e1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_x64_linux_hotspot_11.0.8_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:21:47 GMT
+# Fri, 24 Jul 2020 15:50:23 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:084ab345c3960a40e510f021d3f49d37d5710702a5a822ce82e8cc946b413f01`  
-		Last Modified: Fri, 17 Jul 2020 22:30:38 GMT  
-		Size: 39.6 MB (39624256 bytes)  
+	-	`sha256:b9ad770100ec168f3354d8e9c6074b4f081c61070b6e79f9c8c3897bfa45b22f`  
+		Last Modified: Fri, 24 Jul 2020 16:22:06 GMT  
+		Size: 39.6 MB (39624298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:11.0.8_10-jre-hotspot-bionic` - linux; s390x
@@ -3015,7 +3015,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk11-binaries/
 ## `adoptopenjdk:11.0.8_10-jre-openj9-0.21.0`
 
 ```console
-$ docker pull adoptopenjdk@sha256:4351398adcb6320439fc36124c1d61bbce434cf6b328265120a28fb22b825031
+$ docker pull adoptopenjdk@sha256:c98a7b4d861f83f57db407c462ff65defbd6e0e3748bfb2d27e1b3b079fe1364
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3093,65 +3093,65 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:11.0.8_10-jre-openj9-0.21.0` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:8bd0078c0775837c0178c177e107682c3157bbd19b56448dc618991daeb3db30
+$ docker pull adoptopenjdk@sha256:b7ea63cad77ad4b7acf1b775eb339328d2ca3b4c9506c3b58e5206b022c4ddaa
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.9 MB (87882649 bytes)**  
+-	Total Size: **87.9 MB (87884355 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c3dc102fd0741bea81e41a1a1ca78189814954418e54fef6de45cb2ae464cfa`
+-	Image ID: `sha256:7a611d3cafe66ea74c82e893d0e52cd74a73165c4e37e25a4360fcbf74d87a36`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:24:46 GMT
+# Fri, 24 Jul 2020 16:08:47 GMT
 ENV JAVA_VERSION=jdk-11.0.8+10_openj9-0.21.0
-# Fri, 17 Jul 2020 22:25:50 GMT
+# Fri, 24 Jul 2020 16:11:35 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='9771cd3e486697c5b7188ea81d1c32ad89cb007499fe8e1173ca491412b5d503';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jre_aarch64_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='2d65c778d9b0116baa832f8c238470052e3c9eca930eeec8a717de1bb8454828';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jre_ppc64le_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='4e44051683689efe25e00181bc09525aa378aea85e2ab03ab114c942c0abc999';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jre_s390x_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='7cc4b24e2ac0ed26bf3ec31241bde65b672952bf0df5e1606b263fadcb21b3b7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jre_x64_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:25:54 GMT
+# Fri, 24 Jul 2020 16:11:45 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:25:57 GMT
+# Fri, 24 Jul 2020 16:11:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83d7b4b6dd58a513b761deaca343e5b93aba778ddc83aaef34228b27b9e3ab23`  
-		Last Modified: Fri, 17 Jul 2020 22:33:39 GMT  
-		Size: 42.9 MB (42923917 bytes)  
+	-	`sha256:d1f7b19e484ee8b3246fe90ba8af8d0fd69637172046f287c82e661c1a28f9e5`  
+		Last Modified: Fri, 24 Jul 2020 16:29:43 GMT  
+		Size: 42.9 MB (42923886 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:11.0.8_10-jre-openj9-0.21.0` - linux; s390x
@@ -3328,7 +3328,7 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ## `adoptopenjdk:11.0.8_10-jre-openj9-0.21.0-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:01c510e9ef285d5ad7a89b3dee1d3e26c77ab2e5b13d65a81fd7e57f8534a899
+$ docker pull adoptopenjdk@sha256:4858f178b5da4b58a85c6e23866abdfe6c7a5d5c56b471fb08beda47b69191df
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3404,65 +3404,65 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:11.0.8_10-jre-openj9-0.21.0-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:8bd0078c0775837c0178c177e107682c3157bbd19b56448dc618991daeb3db30
+$ docker pull adoptopenjdk@sha256:b7ea63cad77ad4b7acf1b775eb339328d2ca3b4c9506c3b58e5206b022c4ddaa
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.9 MB (87882649 bytes)**  
+-	Total Size: **87.9 MB (87884355 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c3dc102fd0741bea81e41a1a1ca78189814954418e54fef6de45cb2ae464cfa`
+-	Image ID: `sha256:7a611d3cafe66ea74c82e893d0e52cd74a73165c4e37e25a4360fcbf74d87a36`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:24:46 GMT
+# Fri, 24 Jul 2020 16:08:47 GMT
 ENV JAVA_VERSION=jdk-11.0.8+10_openj9-0.21.0
-# Fri, 17 Jul 2020 22:25:50 GMT
+# Fri, 24 Jul 2020 16:11:35 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='9771cd3e486697c5b7188ea81d1c32ad89cb007499fe8e1173ca491412b5d503';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jre_aarch64_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='2d65c778d9b0116baa832f8c238470052e3c9eca930eeec8a717de1bb8454828';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jre_ppc64le_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='4e44051683689efe25e00181bc09525aa378aea85e2ab03ab114c942c0abc999';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jre_s390x_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='7cc4b24e2ac0ed26bf3ec31241bde65b672952bf0df5e1606b263fadcb21b3b7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jre_x64_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:25:54 GMT
+# Fri, 24 Jul 2020 16:11:45 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:25:57 GMT
+# Fri, 24 Jul 2020 16:11:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83d7b4b6dd58a513b761deaca343e5b93aba778ddc83aaef34228b27b9e3ab23`  
-		Last Modified: Fri, 17 Jul 2020 22:33:39 GMT  
-		Size: 42.9 MB (42923917 bytes)  
+	-	`sha256:d1f7b19e484ee8b3246fe90ba8af8d0fd69637172046f287c82e661c1a28f9e5`  
+		Last Modified: Fri, 24 Jul 2020 16:29:43 GMT  
+		Size: 42.9 MB (42923886 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:11.0.8_10-jre-openj9-0.21.0-bionic` - linux; s390x
@@ -3777,7 +3777,7 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ## `adoptopenjdk:11-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:24523284bda4cea9fb121bb42fe4ac5ad0ab86ec95520074cb73f6c90e76719a
+$ docker pull adoptopenjdk@sha256:6ded75164247e993d32b1cee478566ff43b1c1a5e5905e7506832ba81eda2054
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3985,65 +3985,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:11-hotspot` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:490d238ed4a9e0f0818ac904ba69c3468290f1d43cd03d642288fb6a8512ca83
+$ docker pull adoptopenjdk@sha256:bf49e7f78d69b670c2871e207e3b79e98afb4e171c0baf51d6eb9f1c0f556da5
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **222.2 MB (222234618 bytes)**  
+-	Total Size: **222.2 MB (222236335 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbaa67f3e0b8083b5eae75f99514c922792413aa950446301977074f07798f06`
+-	Image ID: `sha256:7c030275851ecb2644cd4017b021aea2af63e9cb35303993c0a92b45165c9c91`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:20:30 GMT
+# Fri, 24 Jul 2020 15:47:49 GMT
 ENV JAVA_VERSION=jdk-11.0.8+10
-# Fri, 17 Jul 2020 22:20:56 GMT
+# Fri, 24 Jul 2020 15:48:40 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='fb27ea52ed901c14c9fe8ad2fc10b338b8cf47d6762571be1fe3fb7c426bab7c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.8_10.tar.gz';          ;;        armhf|armv7l)          ESUM='d00370967e4657e137cc511e81d6accbfdb08dba91e6268abef8219e735fbfc5';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_arm_linux_hotspot_11.0.8_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d206a63cd719b65717f7f20ee3fe49f0b8b2db922986b4811c828db57212699e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.8_10.tar.gz';          ;;        s390x)          ESUM='5619e1437c7cd400169eb7f1c831c2635fdb2776a401147a2fc1841b01f83ed6';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.8_10.tar.gz';          ;;        amd64|x86_64)          ESUM='6e4cead158037cb7747ca47416474d4f408c9126be5b96f9befd532e0a762b47';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.8_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:21:06 GMT
+# Fri, 24 Jul 2020 15:49:17 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:21:10 GMT
+# Fri, 24 Jul 2020 15:49:32 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b002dd1d81425ae1b718e81c0db50f0a1f7d0033aec0ccf184a5090037ccc9c`  
-		Last Modified: Fri, 17 Jul 2020 22:30:17 GMT  
-		Size: 177.3 MB (177275886 bytes)  
+	-	`sha256:e0fe78b7fb95e109d7f6bdaab0b9d4e17d5786667ea34ce4e103fcbb90466ef1`  
+		Last Modified: Fri, 24 Jul 2020 16:21:31 GMT  
+		Size: 177.3 MB (177275866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:11-hotspot` - linux; s390x
@@ -4220,7 +4220,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:11-hotspot-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:9d7fe74289334e96babde057565fd204ce43dc2f60a490e8d07632d958e17578
+$ docker pull adoptopenjdk@sha256:46778b246c1804fedd1a8d47f74cdbe1a3eb6895c701a8bfdfe41640285915b9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4426,65 +4426,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:11-hotspot-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:490d238ed4a9e0f0818ac904ba69c3468290f1d43cd03d642288fb6a8512ca83
+$ docker pull adoptopenjdk@sha256:bf49e7f78d69b670c2871e207e3b79e98afb4e171c0baf51d6eb9f1c0f556da5
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **222.2 MB (222234618 bytes)**  
+-	Total Size: **222.2 MB (222236335 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbaa67f3e0b8083b5eae75f99514c922792413aa950446301977074f07798f06`
+-	Image ID: `sha256:7c030275851ecb2644cd4017b021aea2af63e9cb35303993c0a92b45165c9c91`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:20:30 GMT
+# Fri, 24 Jul 2020 15:47:49 GMT
 ENV JAVA_VERSION=jdk-11.0.8+10
-# Fri, 17 Jul 2020 22:20:56 GMT
+# Fri, 24 Jul 2020 15:48:40 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='fb27ea52ed901c14c9fe8ad2fc10b338b8cf47d6762571be1fe3fb7c426bab7c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.8_10.tar.gz';          ;;        armhf|armv7l)          ESUM='d00370967e4657e137cc511e81d6accbfdb08dba91e6268abef8219e735fbfc5';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_arm_linux_hotspot_11.0.8_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d206a63cd719b65717f7f20ee3fe49f0b8b2db922986b4811c828db57212699e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.8_10.tar.gz';          ;;        s390x)          ESUM='5619e1437c7cd400169eb7f1c831c2635fdb2776a401147a2fc1841b01f83ed6';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.8_10.tar.gz';          ;;        amd64|x86_64)          ESUM='6e4cead158037cb7747ca47416474d4f408c9126be5b96f9befd532e0a762b47';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.8_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:21:06 GMT
+# Fri, 24 Jul 2020 15:49:17 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:21:10 GMT
+# Fri, 24 Jul 2020 15:49:32 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b002dd1d81425ae1b718e81c0db50f0a1f7d0033aec0ccf184a5090037ccc9c`  
-		Last Modified: Fri, 17 Jul 2020 22:30:17 GMT  
-		Size: 177.3 MB (177275886 bytes)  
+	-	`sha256:e0fe78b7fb95e109d7f6bdaab0b9d4e17d5786667ea34ce4e103fcbb90466ef1`  
+		Last Modified: Fri, 24 Jul 2020 16:21:31 GMT  
+		Size: 177.3 MB (177275866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:11-hotspot-bionic` - linux; s390x
@@ -4799,7 +4799,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:11-jdk-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:24523284bda4cea9fb121bb42fe4ac5ad0ab86ec95520074cb73f6c90e76719a
+$ docker pull adoptopenjdk@sha256:6ded75164247e993d32b1cee478566ff43b1c1a5e5905e7506832ba81eda2054
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5007,65 +5007,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:11-jdk-hotspot` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:490d238ed4a9e0f0818ac904ba69c3468290f1d43cd03d642288fb6a8512ca83
+$ docker pull adoptopenjdk@sha256:bf49e7f78d69b670c2871e207e3b79e98afb4e171c0baf51d6eb9f1c0f556da5
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **222.2 MB (222234618 bytes)**  
+-	Total Size: **222.2 MB (222236335 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbaa67f3e0b8083b5eae75f99514c922792413aa950446301977074f07798f06`
+-	Image ID: `sha256:7c030275851ecb2644cd4017b021aea2af63e9cb35303993c0a92b45165c9c91`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:20:30 GMT
+# Fri, 24 Jul 2020 15:47:49 GMT
 ENV JAVA_VERSION=jdk-11.0.8+10
-# Fri, 17 Jul 2020 22:20:56 GMT
+# Fri, 24 Jul 2020 15:48:40 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='fb27ea52ed901c14c9fe8ad2fc10b338b8cf47d6762571be1fe3fb7c426bab7c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.8_10.tar.gz';          ;;        armhf|armv7l)          ESUM='d00370967e4657e137cc511e81d6accbfdb08dba91e6268abef8219e735fbfc5';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_arm_linux_hotspot_11.0.8_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d206a63cd719b65717f7f20ee3fe49f0b8b2db922986b4811c828db57212699e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.8_10.tar.gz';          ;;        s390x)          ESUM='5619e1437c7cd400169eb7f1c831c2635fdb2776a401147a2fc1841b01f83ed6';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.8_10.tar.gz';          ;;        amd64|x86_64)          ESUM='6e4cead158037cb7747ca47416474d4f408c9126be5b96f9befd532e0a762b47';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.8_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:21:06 GMT
+# Fri, 24 Jul 2020 15:49:17 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:21:10 GMT
+# Fri, 24 Jul 2020 15:49:32 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b002dd1d81425ae1b718e81c0db50f0a1f7d0033aec0ccf184a5090037ccc9c`  
-		Last Modified: Fri, 17 Jul 2020 22:30:17 GMT  
-		Size: 177.3 MB (177275886 bytes)  
+	-	`sha256:e0fe78b7fb95e109d7f6bdaab0b9d4e17d5786667ea34ce4e103fcbb90466ef1`  
+		Last Modified: Fri, 24 Jul 2020 16:21:31 GMT  
+		Size: 177.3 MB (177275866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:11-jdk-hotspot` - linux; s390x
@@ -5242,7 +5242,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:11-jdk-hotspot-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:9d7fe74289334e96babde057565fd204ce43dc2f60a490e8d07632d958e17578
+$ docker pull adoptopenjdk@sha256:46778b246c1804fedd1a8d47f74cdbe1a3eb6895c701a8bfdfe41640285915b9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5448,65 +5448,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:11-jdk-hotspot-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:490d238ed4a9e0f0818ac904ba69c3468290f1d43cd03d642288fb6a8512ca83
+$ docker pull adoptopenjdk@sha256:bf49e7f78d69b670c2871e207e3b79e98afb4e171c0baf51d6eb9f1c0f556da5
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **222.2 MB (222234618 bytes)**  
+-	Total Size: **222.2 MB (222236335 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbaa67f3e0b8083b5eae75f99514c922792413aa950446301977074f07798f06`
+-	Image ID: `sha256:7c030275851ecb2644cd4017b021aea2af63e9cb35303993c0a92b45165c9c91`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:20:30 GMT
+# Fri, 24 Jul 2020 15:47:49 GMT
 ENV JAVA_VERSION=jdk-11.0.8+10
-# Fri, 17 Jul 2020 22:20:56 GMT
+# Fri, 24 Jul 2020 15:48:40 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='fb27ea52ed901c14c9fe8ad2fc10b338b8cf47d6762571be1fe3fb7c426bab7c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.8_10.tar.gz';          ;;        armhf|armv7l)          ESUM='d00370967e4657e137cc511e81d6accbfdb08dba91e6268abef8219e735fbfc5';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_arm_linux_hotspot_11.0.8_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d206a63cd719b65717f7f20ee3fe49f0b8b2db922986b4811c828db57212699e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.8_10.tar.gz';          ;;        s390x)          ESUM='5619e1437c7cd400169eb7f1c831c2635fdb2776a401147a2fc1841b01f83ed6';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.8_10.tar.gz';          ;;        amd64|x86_64)          ESUM='6e4cead158037cb7747ca47416474d4f408c9126be5b96f9befd532e0a762b47';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.8_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:21:06 GMT
+# Fri, 24 Jul 2020 15:49:17 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:21:10 GMT
+# Fri, 24 Jul 2020 15:49:32 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b002dd1d81425ae1b718e81c0db50f0a1f7d0033aec0ccf184a5090037ccc9c`  
-		Last Modified: Fri, 17 Jul 2020 22:30:17 GMT  
-		Size: 177.3 MB (177275886 bytes)  
+	-	`sha256:e0fe78b7fb95e109d7f6bdaab0b9d4e17d5786667ea34ce4e103fcbb90466ef1`  
+		Last Modified: Fri, 24 Jul 2020 16:21:31 GMT  
+		Size: 177.3 MB (177275866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:11-jdk-hotspot-bionic` - linux; s390x
@@ -5821,7 +5821,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:11-jdk-openj9`
 
 ```console
-$ docker pull adoptopenjdk@sha256:59f44980d3f4cf82a1ba0d34266af202e97bdd1a19399cb205fb13a43606bb05
+$ docker pull adoptopenjdk@sha256:9d05cc987bfabd000e3d8daa8cd4b60e4500508e490ff2c63f7888babab3d9b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5901,67 +5901,67 @@ CMD ["jshell"]
 ### `adoptopenjdk:11-jdk-openj9` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:ea38bd50c6fa844404c80783ef004c539f0de6d68e099e02b83c56a3ff470baf
+$ docker pull adoptopenjdk@sha256:43861fecc169b8d6a1f9b47aace9a434ab28012afd0c586327a3d49ab0afd8c3
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.2 MB (242249006 bytes)**  
+-	Total Size: **242.3 MB (242250744 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2decec03928de7fe5ca4f1b0cb0cc3ab16442957d2b4caa37239014409e61576`
+-	Image ID: `sha256:06aa11c21a9aa94c14dccda87043599a4a57161e84e1a584c3ec940fe2d660b0`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:24:46 GMT
+# Fri, 24 Jul 2020 16:08:47 GMT
 ENV JAVA_VERSION=jdk-11.0.8+10_openj9-0.21.0
-# Fri, 17 Jul 2020 22:25:14 GMT
+# Fri, 24 Jul 2020 16:09:27 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='b4bad13c0d9c2fbb1954fcddae9ccc5a32c609f2b48bf43ecaa5f39915390604';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_aarch64_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='5bcaa2075ce5bf634b542c04ea79b9ca505407b6f94d2d8350c712da387120d9';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_ppc64le_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='5e89692057fb8dfcb8e215fd3917b721fdb721c1eeea2b14948f4782413846bb';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_s390x_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='9ab79436180d41809f4fca8afe43e778ae2d82c7b50f3653c62d7a2728150836';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_x64_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:25:21 GMT
+# Fri, 24 Jul 2020 16:10:02 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:25:24 GMT
+# Fri, 24 Jul 2020 16:10:14 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Fri, 17 Jul 2020 22:25:27 GMT
+# Fri, 24 Jul 2020 16:10:49 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2515194965c21386073c2e644ebb8a74eaa16a24e64f14ce030cf06b611bbbc8`  
-		Last Modified: Fri, 17 Jul 2020 22:33:18 GMT  
-		Size: 197.3 MB (197290274 bytes)  
+	-	`sha256:217a1b9e62784ca3b556ffef520f3ef82fdfb631ea9af29378bf59a27918762f`  
+		Last Modified: Fri, 24 Jul 2020 16:29:06 GMT  
+		Size: 197.3 MB (197290275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:11-jdk-openj9` - linux; s390x
@@ -6152,7 +6152,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:11-jdk-openj9-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:3639942fe6a8f6d61bef3e108cc188a7c0f85d59c5de4ce84bbc00a3bab21600
+$ docker pull adoptopenjdk@sha256:ae32a1a5d648e56f5d5f10daeb36e81152608e69bc8f8a55672884c6e427597e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6230,67 +6230,67 @@ CMD ["jshell"]
 ### `adoptopenjdk:11-jdk-openj9-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:ea38bd50c6fa844404c80783ef004c539f0de6d68e099e02b83c56a3ff470baf
+$ docker pull adoptopenjdk@sha256:43861fecc169b8d6a1f9b47aace9a434ab28012afd0c586327a3d49ab0afd8c3
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.2 MB (242249006 bytes)**  
+-	Total Size: **242.3 MB (242250744 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2decec03928de7fe5ca4f1b0cb0cc3ab16442957d2b4caa37239014409e61576`
+-	Image ID: `sha256:06aa11c21a9aa94c14dccda87043599a4a57161e84e1a584c3ec940fe2d660b0`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:24:46 GMT
+# Fri, 24 Jul 2020 16:08:47 GMT
 ENV JAVA_VERSION=jdk-11.0.8+10_openj9-0.21.0
-# Fri, 17 Jul 2020 22:25:14 GMT
+# Fri, 24 Jul 2020 16:09:27 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='b4bad13c0d9c2fbb1954fcddae9ccc5a32c609f2b48bf43ecaa5f39915390604';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_aarch64_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='5bcaa2075ce5bf634b542c04ea79b9ca505407b6f94d2d8350c712da387120d9';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_ppc64le_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='5e89692057fb8dfcb8e215fd3917b721fdb721c1eeea2b14948f4782413846bb';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_s390x_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='9ab79436180d41809f4fca8afe43e778ae2d82c7b50f3653c62d7a2728150836';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_x64_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:25:21 GMT
+# Fri, 24 Jul 2020 16:10:02 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:25:24 GMT
+# Fri, 24 Jul 2020 16:10:14 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Fri, 17 Jul 2020 22:25:27 GMT
+# Fri, 24 Jul 2020 16:10:49 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2515194965c21386073c2e644ebb8a74eaa16a24e64f14ce030cf06b611bbbc8`  
-		Last Modified: Fri, 17 Jul 2020 22:33:18 GMT  
-		Size: 197.3 MB (197290274 bytes)  
+	-	`sha256:217a1b9e62784ca3b556ffef520f3ef82fdfb631ea9af29378bf59a27918762f`  
+		Last Modified: Fri, 24 Jul 2020 16:29:06 GMT  
+		Size: 197.3 MB (197290275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:11-jdk-openj9-bionic` - linux; s390x
@@ -6631,7 +6631,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:11-jre-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:fc5032234ecf379fd9f77cd14dd9f4bbf707309980471cade1262c62db590957
+$ docker pull adoptopenjdk@sha256:7d8a16c763294264d67c920fa87f069c6132d6dd3bac0a4ef4a39fb2e95935ea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6833,63 +6833,63 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:11-jre-hotspot` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:1cc7aa45268ed7575fd5a0fbe6a188bacb63d4814798cb8e844b0e43ebbf1181
+$ docker pull adoptopenjdk@sha256:54d8becf7c183b59251db12baf1572eefb7697b04b0977327ae3ca2d6cab0db3
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.6 MB (84582988 bytes)**  
+-	Total Size: **84.6 MB (84584767 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:130602d16d7199e8139e2cc2d20a0b526f84d41b3256a1308eacac806aa6abc8`
+-	Image ID: `sha256:3b74da51bb0ec514ff4e6289b428af10f28423842f28d44ebe001617b01fdd95`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:20:30 GMT
+# Fri, 24 Jul 2020 15:47:49 GMT
 ENV JAVA_VERSION=jdk-11.0.8+10
-# Fri, 17 Jul 2020 22:21:42 GMT
+# Fri, 24 Jul 2020 15:50:11 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='286c869dbaefda9b470ae71d1250fdecf9f06d8da97c0f7df9021d381d749106';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.8_10.tar.gz';          ;;        armhf|armv7l)          ESUM='ffa627b2d0c6001448bb8f1f24f7c9921dad37e67637f6ed0a9a479e680a3393';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_arm_linux_hotspot_11.0.8_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='89231e1667d7cc4202d1a401497bb287d4eb12281c90c17e2570211cc4e901a3';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.8_10.tar.gz';          ;;        s390x)          ESUM='dc0e715c17abcb12bedf77c638e58e67d828d3c4bf24a898f0d4b053caaeb25f';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_s390x_linux_hotspot_11.0.8_10.tar.gz';          ;;        amd64|x86_64)          ESUM='98615b1b369509965a612232622d39b5cefe117d6189179cbad4dcef2ee2f4e1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_x64_linux_hotspot_11.0.8_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:21:47 GMT
+# Fri, 24 Jul 2020 15:50:23 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:084ab345c3960a40e510f021d3f49d37d5710702a5a822ce82e8cc946b413f01`  
-		Last Modified: Fri, 17 Jul 2020 22:30:38 GMT  
-		Size: 39.6 MB (39624256 bytes)  
+	-	`sha256:b9ad770100ec168f3354d8e9c6074b4f081c61070b6e79f9c8c3897bfa45b22f`  
+		Last Modified: Fri, 24 Jul 2020 16:22:06 GMT  
+		Size: 39.6 MB (39624298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:11-jre-hotspot` - linux; s390x
@@ -7052,7 +7052,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk11-binaries/
 ## `adoptopenjdk:11-jre-hotspot-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:a026fb06e1fc9b4595e402988492c2d45a2d37e697c28f1bd9dace3a3f7abdee
+$ docker pull adoptopenjdk@sha256:d17195a2bb98901f02c5dcb256c627136ca9a5d9fd51253fceccaa6655f68184
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7252,63 +7252,63 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:11-jre-hotspot-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:1cc7aa45268ed7575fd5a0fbe6a188bacb63d4814798cb8e844b0e43ebbf1181
+$ docker pull adoptopenjdk@sha256:54d8becf7c183b59251db12baf1572eefb7697b04b0977327ae3ca2d6cab0db3
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.6 MB (84582988 bytes)**  
+-	Total Size: **84.6 MB (84584767 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:130602d16d7199e8139e2cc2d20a0b526f84d41b3256a1308eacac806aa6abc8`
+-	Image ID: `sha256:3b74da51bb0ec514ff4e6289b428af10f28423842f28d44ebe001617b01fdd95`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:20:30 GMT
+# Fri, 24 Jul 2020 15:47:49 GMT
 ENV JAVA_VERSION=jdk-11.0.8+10
-# Fri, 17 Jul 2020 22:21:42 GMT
+# Fri, 24 Jul 2020 15:50:11 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='286c869dbaefda9b470ae71d1250fdecf9f06d8da97c0f7df9021d381d749106';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.8_10.tar.gz';          ;;        armhf|armv7l)          ESUM='ffa627b2d0c6001448bb8f1f24f7c9921dad37e67637f6ed0a9a479e680a3393';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_arm_linux_hotspot_11.0.8_10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='89231e1667d7cc4202d1a401497bb287d4eb12281c90c17e2570211cc4e901a3';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.8_10.tar.gz';          ;;        s390x)          ESUM='dc0e715c17abcb12bedf77c638e58e67d828d3c4bf24a898f0d4b053caaeb25f';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_s390x_linux_hotspot_11.0.8_10.tar.gz';          ;;        amd64|x86_64)          ESUM='98615b1b369509965a612232622d39b5cefe117d6189179cbad4dcef2ee2f4e1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jre_x64_linux_hotspot_11.0.8_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:21:47 GMT
+# Fri, 24 Jul 2020 15:50:23 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:084ab345c3960a40e510f021d3f49d37d5710702a5a822ce82e8cc946b413f01`  
-		Last Modified: Fri, 17 Jul 2020 22:30:38 GMT  
-		Size: 39.6 MB (39624256 bytes)  
+	-	`sha256:b9ad770100ec168f3354d8e9c6074b4f081c61070b6e79f9c8c3897bfa45b22f`  
+		Last Modified: Fri, 24 Jul 2020 16:22:06 GMT  
+		Size: 39.6 MB (39624298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:11-jre-hotspot-bionic` - linux; s390x
@@ -7597,7 +7597,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk11-binaries/
 ## `adoptopenjdk:11-jre-openj9`
 
 ```console
-$ docker pull adoptopenjdk@sha256:4351398adcb6320439fc36124c1d61bbce434cf6b328265120a28fb22b825031
+$ docker pull adoptopenjdk@sha256:c98a7b4d861f83f57db407c462ff65defbd6e0e3748bfb2d27e1b3b079fe1364
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7675,65 +7675,65 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:11-jre-openj9` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:8bd0078c0775837c0178c177e107682c3157bbd19b56448dc618991daeb3db30
+$ docker pull adoptopenjdk@sha256:b7ea63cad77ad4b7acf1b775eb339328d2ca3b4c9506c3b58e5206b022c4ddaa
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.9 MB (87882649 bytes)**  
+-	Total Size: **87.9 MB (87884355 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c3dc102fd0741bea81e41a1a1ca78189814954418e54fef6de45cb2ae464cfa`
+-	Image ID: `sha256:7a611d3cafe66ea74c82e893d0e52cd74a73165c4e37e25a4360fcbf74d87a36`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:24:46 GMT
+# Fri, 24 Jul 2020 16:08:47 GMT
 ENV JAVA_VERSION=jdk-11.0.8+10_openj9-0.21.0
-# Fri, 17 Jul 2020 22:25:50 GMT
+# Fri, 24 Jul 2020 16:11:35 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='9771cd3e486697c5b7188ea81d1c32ad89cb007499fe8e1173ca491412b5d503';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jre_aarch64_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='2d65c778d9b0116baa832f8c238470052e3c9eca930eeec8a717de1bb8454828';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jre_ppc64le_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='4e44051683689efe25e00181bc09525aa378aea85e2ab03ab114c942c0abc999';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jre_s390x_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='7cc4b24e2ac0ed26bf3ec31241bde65b672952bf0df5e1606b263fadcb21b3b7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jre_x64_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:25:54 GMT
+# Fri, 24 Jul 2020 16:11:45 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:25:57 GMT
+# Fri, 24 Jul 2020 16:11:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83d7b4b6dd58a513b761deaca343e5b93aba778ddc83aaef34228b27b9e3ab23`  
-		Last Modified: Fri, 17 Jul 2020 22:33:39 GMT  
-		Size: 42.9 MB (42923917 bytes)  
+	-	`sha256:d1f7b19e484ee8b3246fe90ba8af8d0fd69637172046f287c82e661c1a28f9e5`  
+		Last Modified: Fri, 24 Jul 2020 16:29:43 GMT  
+		Size: 42.9 MB (42923886 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:11-jre-openj9` - linux; s390x
@@ -7910,7 +7910,7 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ## `adoptopenjdk:11-jre-openj9-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:01c510e9ef285d5ad7a89b3dee1d3e26c77ab2e5b13d65a81fd7e57f8534a899
+$ docker pull adoptopenjdk@sha256:4858f178b5da4b58a85c6e23866abdfe6c7a5d5c56b471fb08beda47b69191df
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7986,65 +7986,65 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:11-jre-openj9-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:8bd0078c0775837c0178c177e107682c3157bbd19b56448dc618991daeb3db30
+$ docker pull adoptopenjdk@sha256:b7ea63cad77ad4b7acf1b775eb339328d2ca3b4c9506c3b58e5206b022c4ddaa
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.9 MB (87882649 bytes)**  
+-	Total Size: **87.9 MB (87884355 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c3dc102fd0741bea81e41a1a1ca78189814954418e54fef6de45cb2ae464cfa`
+-	Image ID: `sha256:7a611d3cafe66ea74c82e893d0e52cd74a73165c4e37e25a4360fcbf74d87a36`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:24:46 GMT
+# Fri, 24 Jul 2020 16:08:47 GMT
 ENV JAVA_VERSION=jdk-11.0.8+10_openj9-0.21.0
-# Fri, 17 Jul 2020 22:25:50 GMT
+# Fri, 24 Jul 2020 16:11:35 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='9771cd3e486697c5b7188ea81d1c32ad89cb007499fe8e1173ca491412b5d503';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jre_aarch64_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='2d65c778d9b0116baa832f8c238470052e3c9eca930eeec8a717de1bb8454828';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jre_ppc64le_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='4e44051683689efe25e00181bc09525aa378aea85e2ab03ab114c942c0abc999';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jre_s390x_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='7cc4b24e2ac0ed26bf3ec31241bde65b672952bf0df5e1606b263fadcb21b3b7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jre_x64_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:25:54 GMT
+# Fri, 24 Jul 2020 16:11:45 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:25:57 GMT
+# Fri, 24 Jul 2020 16:11:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83d7b4b6dd58a513b761deaca343e5b93aba778ddc83aaef34228b27b9e3ab23`  
-		Last Modified: Fri, 17 Jul 2020 22:33:39 GMT  
-		Size: 42.9 MB (42923917 bytes)  
+	-	`sha256:d1f7b19e484ee8b3246fe90ba8af8d0fd69637172046f287c82e661c1a28f9e5`  
+		Last Modified: Fri, 24 Jul 2020 16:29:43 GMT  
+		Size: 42.9 MB (42923886 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:11-jre-openj9-bionic` - linux; s390x
@@ -8359,7 +8359,7 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ## `adoptopenjdk:11-openj9`
 
 ```console
-$ docker pull adoptopenjdk@sha256:59f44980d3f4cf82a1ba0d34266af202e97bdd1a19399cb205fb13a43606bb05
+$ docker pull adoptopenjdk@sha256:9d05cc987bfabd000e3d8daa8cd4b60e4500508e490ff2c63f7888babab3d9b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8439,67 +8439,67 @@ CMD ["jshell"]
 ### `adoptopenjdk:11-openj9` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:ea38bd50c6fa844404c80783ef004c539f0de6d68e099e02b83c56a3ff470baf
+$ docker pull adoptopenjdk@sha256:43861fecc169b8d6a1f9b47aace9a434ab28012afd0c586327a3d49ab0afd8c3
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.2 MB (242249006 bytes)**  
+-	Total Size: **242.3 MB (242250744 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2decec03928de7fe5ca4f1b0cb0cc3ab16442957d2b4caa37239014409e61576`
+-	Image ID: `sha256:06aa11c21a9aa94c14dccda87043599a4a57161e84e1a584c3ec940fe2d660b0`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:24:46 GMT
+# Fri, 24 Jul 2020 16:08:47 GMT
 ENV JAVA_VERSION=jdk-11.0.8+10_openj9-0.21.0
-# Fri, 17 Jul 2020 22:25:14 GMT
+# Fri, 24 Jul 2020 16:09:27 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='b4bad13c0d9c2fbb1954fcddae9ccc5a32c609f2b48bf43ecaa5f39915390604';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_aarch64_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='5bcaa2075ce5bf634b542c04ea79b9ca505407b6f94d2d8350c712da387120d9';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_ppc64le_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='5e89692057fb8dfcb8e215fd3917b721fdb721c1eeea2b14948f4782413846bb';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_s390x_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='9ab79436180d41809f4fca8afe43e778ae2d82c7b50f3653c62d7a2728150836';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_x64_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:25:21 GMT
+# Fri, 24 Jul 2020 16:10:02 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:25:24 GMT
+# Fri, 24 Jul 2020 16:10:14 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Fri, 17 Jul 2020 22:25:27 GMT
+# Fri, 24 Jul 2020 16:10:49 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2515194965c21386073c2e644ebb8a74eaa16a24e64f14ce030cf06b611bbbc8`  
-		Last Modified: Fri, 17 Jul 2020 22:33:18 GMT  
-		Size: 197.3 MB (197290274 bytes)  
+	-	`sha256:217a1b9e62784ca3b556ffef520f3ef82fdfb631ea9af29378bf59a27918762f`  
+		Last Modified: Fri, 24 Jul 2020 16:29:06 GMT  
+		Size: 197.3 MB (197290275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:11-openj9` - linux; s390x
@@ -8690,7 +8690,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:11-openj9-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:3639942fe6a8f6d61bef3e108cc188a7c0f85d59c5de4ce84bbc00a3bab21600
+$ docker pull adoptopenjdk@sha256:ae32a1a5d648e56f5d5f10daeb36e81152608e69bc8f8a55672884c6e427597e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8768,67 +8768,67 @@ CMD ["jshell"]
 ### `adoptopenjdk:11-openj9-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:ea38bd50c6fa844404c80783ef004c539f0de6d68e099e02b83c56a3ff470baf
+$ docker pull adoptopenjdk@sha256:43861fecc169b8d6a1f9b47aace9a434ab28012afd0c586327a3d49ab0afd8c3
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.2 MB (242249006 bytes)**  
+-	Total Size: **242.3 MB (242250744 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2decec03928de7fe5ca4f1b0cb0cc3ab16442957d2b4caa37239014409e61576`
+-	Image ID: `sha256:06aa11c21a9aa94c14dccda87043599a4a57161e84e1a584c3ec940fe2d660b0`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:24:46 GMT
+# Fri, 24 Jul 2020 16:08:47 GMT
 ENV JAVA_VERSION=jdk-11.0.8+10_openj9-0.21.0
-# Fri, 17 Jul 2020 22:25:14 GMT
+# Fri, 24 Jul 2020 16:09:27 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='b4bad13c0d9c2fbb1954fcddae9ccc5a32c609f2b48bf43ecaa5f39915390604';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_aarch64_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='5bcaa2075ce5bf634b542c04ea79b9ca505407b6f94d2d8350c712da387120d9';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_ppc64le_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='5e89692057fb8dfcb8e215fd3917b721fdb721c1eeea2b14948f4782413846bb';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_s390x_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='9ab79436180d41809f4fca8afe43e778ae2d82c7b50f3653c62d7a2728150836';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.8%2B10_openj9-0.21.0/OpenJDK11U-jdk_x64_linux_openj9_11.0.8_10_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:25:21 GMT
+# Fri, 24 Jul 2020 16:10:02 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:25:24 GMT
+# Fri, 24 Jul 2020 16:10:14 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Fri, 17 Jul 2020 22:25:27 GMT
+# Fri, 24 Jul 2020 16:10:49 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2515194965c21386073c2e644ebb8a74eaa16a24e64f14ce030cf06b611bbbc8`  
-		Last Modified: Fri, 17 Jul 2020 22:33:18 GMT  
-		Size: 197.3 MB (197290274 bytes)  
+	-	`sha256:217a1b9e62784ca3b556ffef520f3ef82fdfb631ea9af29378bf59a27918762f`  
+		Last Modified: Fri, 24 Jul 2020 16:29:06 GMT  
+		Size: 197.3 MB (197290275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:11-openj9-bionic` - linux; s390x
@@ -9224,7 +9224,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:13.0.2_8-jdk-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:f05b114fed66526fd73879156863249f19faad12f186f4c6558d1ab7b6deecc3
+$ docker pull adoptopenjdk@sha256:d8016b93691772b9983cda4697f8161e5578db5c301ab98eaa9ff39974c1e1df
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9432,65 +9432,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:13.0.2_8-jdk-hotspot` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:3dee4a36d7962f611674e856d63e5d55a04478cd9038940e129e11e3701abcce
+$ docker pull adoptopenjdk@sha256:df0a935c767e322ff3d43d911ca945f5f3bcb00013462d33eec01d1ebc11fe2b
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.5 MB (235508614 bytes)**  
+-	Total Size: **235.5 MB (235510558 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf7f37a58e75dd98d8c738c85c4735f1b1fa40f2240e1d3d33c4a99aba4ac992`
+-	Image ID: `sha256:a303e91f914b49eee6f4378aa653bc99a8e7fa4473ad3d22df79cedae98105de`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:38:26 GMT
+# Fri, 24 Jul 2020 15:55:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:40:57 GMT
+# Fri, 24 Jul 2020 15:55:59 GMT
 ENV JAVA_VERSION=jdk-13.0.2+8
-# Mon, 06 Jul 2020 23:41:27 GMT
+# Fri, 24 Jul 2020 15:56:41 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0e6081cb51f8a6f3062bef4f4c45dbe1fccfd3f3b4b5d52522a3edb76581e3af';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_aarch64_linux_hotspot_13.0.2_8.tar.gz';          ;;        armhf|armv7l)          ESUM='9beec080f2b2a7f6883b024272f4e8d5a0b027325e83647be318215781af1d1a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_arm_linux_hotspot_13.0.2_8.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='fb3362e34aac091a4682394d20dcdc3daea51995d369d62c28424573e0fc04aa';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_ppc64le_linux_hotspot_13.0.2_8.tar.gz';          ;;        s390x)          ESUM='1b9e7cd7fdde10fe3534988ef58c36f132b12f814503a034461c95735057467f';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_s390x_linux_hotspot_13.0.2_8.tar.gz';          ;;        amd64|x86_64)          ESUM='9ccc063569f19899fd08e41466f8c4cd4e05058abdb5178fa374cb365dcf5998';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_x64_linux_hotspot_13.0.2_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:41:40 GMT
+# Fri, 24 Jul 2020 15:57:10 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:41:44 GMT
+# Fri, 24 Jul 2020 15:57:39 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7dcc71ac4e1ced322a5c6d8dafe5b92903b9216fd4165e504dc8c51bfd7899`  
-		Last Modified: Mon, 06 Jul 2020 23:51:26 GMT  
-		Size: 14.0 MB (13956242 bytes)  
+	-	`sha256:6574bb84c5b961758d36d667ddfc046d079469e6fcb3d49ecf4e505a4a3444a7`  
+		Last Modified: Fri, 24 Jul 2020 16:23:10 GMT  
+		Size: 14.0 MB (13956698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d1de12a9832eddfd33e131ef6915d49b6083a717bb670f130e28743618ecf55`  
-		Last Modified: Mon, 06 Jul 2020 23:53:20 GMT  
-		Size: 191.1 MB (191112648 bytes)  
+	-	`sha256:c0be2f37e2ae7b29a57e47b357153aee07c1865cad254a491bc2b78d655b7fb9`  
+		Last Modified: Fri, 24 Jul 2020 16:23:39 GMT  
+		Size: 191.1 MB (191112669 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:13.0.2_8-jdk-hotspot` - linux; s390x
@@ -9667,7 +9667,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:13.0.2_8-jdk-hotspot-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:947f6e516590db6acc4825aa23299d0bbb577f59cbc5284a257de5c0c7f62fc0
+$ docker pull adoptopenjdk@sha256:dae05a032e415ffa7a2ff409a6c7bad8298b449fee89098f04812028d93116e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9873,65 +9873,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:13.0.2_8-jdk-hotspot-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:3dee4a36d7962f611674e856d63e5d55a04478cd9038940e129e11e3701abcce
+$ docker pull adoptopenjdk@sha256:df0a935c767e322ff3d43d911ca945f5f3bcb00013462d33eec01d1ebc11fe2b
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.5 MB (235508614 bytes)**  
+-	Total Size: **235.5 MB (235510558 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf7f37a58e75dd98d8c738c85c4735f1b1fa40f2240e1d3d33c4a99aba4ac992`
+-	Image ID: `sha256:a303e91f914b49eee6f4378aa653bc99a8e7fa4473ad3d22df79cedae98105de`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:38:26 GMT
+# Fri, 24 Jul 2020 15:55:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:40:57 GMT
+# Fri, 24 Jul 2020 15:55:59 GMT
 ENV JAVA_VERSION=jdk-13.0.2+8
-# Mon, 06 Jul 2020 23:41:27 GMT
+# Fri, 24 Jul 2020 15:56:41 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0e6081cb51f8a6f3062bef4f4c45dbe1fccfd3f3b4b5d52522a3edb76581e3af';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_aarch64_linux_hotspot_13.0.2_8.tar.gz';          ;;        armhf|armv7l)          ESUM='9beec080f2b2a7f6883b024272f4e8d5a0b027325e83647be318215781af1d1a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_arm_linux_hotspot_13.0.2_8.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='fb3362e34aac091a4682394d20dcdc3daea51995d369d62c28424573e0fc04aa';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_ppc64le_linux_hotspot_13.0.2_8.tar.gz';          ;;        s390x)          ESUM='1b9e7cd7fdde10fe3534988ef58c36f132b12f814503a034461c95735057467f';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_s390x_linux_hotspot_13.0.2_8.tar.gz';          ;;        amd64|x86_64)          ESUM='9ccc063569f19899fd08e41466f8c4cd4e05058abdb5178fa374cb365dcf5998';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_x64_linux_hotspot_13.0.2_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:41:40 GMT
+# Fri, 24 Jul 2020 15:57:10 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:41:44 GMT
+# Fri, 24 Jul 2020 15:57:39 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7dcc71ac4e1ced322a5c6d8dafe5b92903b9216fd4165e504dc8c51bfd7899`  
-		Last Modified: Mon, 06 Jul 2020 23:51:26 GMT  
-		Size: 14.0 MB (13956242 bytes)  
+	-	`sha256:6574bb84c5b961758d36d667ddfc046d079469e6fcb3d49ecf4e505a4a3444a7`  
+		Last Modified: Fri, 24 Jul 2020 16:23:10 GMT  
+		Size: 14.0 MB (13956698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d1de12a9832eddfd33e131ef6915d49b6083a717bb670f130e28743618ecf55`  
-		Last Modified: Mon, 06 Jul 2020 23:53:20 GMT  
-		Size: 191.1 MB (191112648 bytes)  
+	-	`sha256:c0be2f37e2ae7b29a57e47b357153aee07c1865cad254a491bc2b78d655b7fb9`  
+		Last Modified: Fri, 24 Jul 2020 16:23:39 GMT  
+		Size: 191.1 MB (191112669 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:13.0.2_8-jdk-hotspot-bionic` - linux; s390x
@@ -10246,7 +10246,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:13.0.2_8-jdk-openj9-0.18.0`
 
 ```console
-$ docker pull adoptopenjdk@sha256:41277e87b00dd2ade9934f00169812e9ac3f89660f159e6c294e48e44d0877b9
+$ docker pull adoptopenjdk@sha256:a5367e918ba65f83f5bb62056258e97820f05aa476467783cc967f0889608c90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10326,67 +10326,67 @@ CMD ["jshell"]
 ### `adoptopenjdk:13.0.2_8-jdk-openj9-0.18.0` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:2d0387fd6775355ce54d0850fd7281c765d3c1b1b9bfcd0727d9dac40d719195
+$ docker pull adoptopenjdk@sha256:64dcc392cd888b5338b02240615f1cda3979201bd0b9720edae3a1121f30bf9f
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.9 MB (251909276 bytes)**  
+-	Total Size: **251.9 MB (251911213 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c72a5ecba69c0215146a837268896b12e989acb82aad4c948823b128220d4c2c`
+-	Image ID: `sha256:9a0cdbae1d0922f42681f0dc8977005ad91b81354ebdf25589816904c42c99e8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:38:26 GMT
+# Fri, 24 Jul 2020 15:55:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:46:08 GMT
+# Fri, 24 Jul 2020 16:12:35 GMT
 ENV JAVA_VERSION=jdk-13.0.2+8_openj9-0.18.0
-# Mon, 06 Jul 2020 23:46:35 GMT
+# Fri, 24 Jul 2020 16:13:06 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='f71513e525172dfef695b7c27b25e151f232e05b2281648c2b794650c4970832';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jdk_ppc64le_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        s390x)          ESUM='9e7b2e921710ecaf6d3c743616dc720ef10b7b75ba0b8820bf9f9550bfa52584';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jdk_s390x_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        amd64|x86_64)          ESUM='aeecf6d30d0c847db81d07793cf97e5dc44890c29366d7d9f8f9f397f6c52590';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jdk_x64_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:46:42 GMT
+# Fri, 24 Jul 2020 16:13:36 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:46:51 GMT
+# Fri, 24 Jul 2020 16:13:52 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Mon, 06 Jul 2020 23:46:55 GMT
+# Fri, 24 Jul 2020 16:14:13 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7dcc71ac4e1ced322a5c6d8dafe5b92903b9216fd4165e504dc8c51bfd7899`  
-		Last Modified: Mon, 06 Jul 2020 23:51:26 GMT  
-		Size: 14.0 MB (13956242 bytes)  
+	-	`sha256:6574bb84c5b961758d36d667ddfc046d079469e6fcb3d49ecf4e505a4a3444a7`  
+		Last Modified: Fri, 24 Jul 2020 16:23:10 GMT  
+		Size: 14.0 MB (13956698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a254287bf8344dbb61c13789776f25c88c11ec28afee64a72f2c886d43a38be`  
-		Last Modified: Mon, 06 Jul 2020 23:56:55 GMT  
-		Size: 207.5 MB (207513310 bytes)  
+	-	`sha256:398e4dbaa8793ec92e877f861121bf1352eba7bc5924bb495bb8bc6abb618eb1`  
+		Last Modified: Fri, 24 Jul 2020 16:30:46 GMT  
+		Size: 207.5 MB (207513324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:13.0.2_8-jdk-openj9-0.18.0` - linux; s390x
@@ -10577,7 +10577,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:13.0.2_8-jdk-openj9-0.18.0-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:6bc026095c4e08a364679af3d6e421f1d3ced66cfddcde1937549973ff388b86
+$ docker pull adoptopenjdk@sha256:e0bddbb28c76035fc5fbd32bc41cd80db79ad652292dc5ba1c801f343a34c327
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10655,67 +10655,67 @@ CMD ["jshell"]
 ### `adoptopenjdk:13.0.2_8-jdk-openj9-0.18.0-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:2d0387fd6775355ce54d0850fd7281c765d3c1b1b9bfcd0727d9dac40d719195
+$ docker pull adoptopenjdk@sha256:64dcc392cd888b5338b02240615f1cda3979201bd0b9720edae3a1121f30bf9f
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.9 MB (251909276 bytes)**  
+-	Total Size: **251.9 MB (251911213 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c72a5ecba69c0215146a837268896b12e989acb82aad4c948823b128220d4c2c`
+-	Image ID: `sha256:9a0cdbae1d0922f42681f0dc8977005ad91b81354ebdf25589816904c42c99e8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:38:26 GMT
+# Fri, 24 Jul 2020 15:55:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:46:08 GMT
+# Fri, 24 Jul 2020 16:12:35 GMT
 ENV JAVA_VERSION=jdk-13.0.2+8_openj9-0.18.0
-# Mon, 06 Jul 2020 23:46:35 GMT
+# Fri, 24 Jul 2020 16:13:06 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='f71513e525172dfef695b7c27b25e151f232e05b2281648c2b794650c4970832';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jdk_ppc64le_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        s390x)          ESUM='9e7b2e921710ecaf6d3c743616dc720ef10b7b75ba0b8820bf9f9550bfa52584';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jdk_s390x_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        amd64|x86_64)          ESUM='aeecf6d30d0c847db81d07793cf97e5dc44890c29366d7d9f8f9f397f6c52590';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jdk_x64_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:46:42 GMT
+# Fri, 24 Jul 2020 16:13:36 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:46:51 GMT
+# Fri, 24 Jul 2020 16:13:52 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Mon, 06 Jul 2020 23:46:55 GMT
+# Fri, 24 Jul 2020 16:14:13 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7dcc71ac4e1ced322a5c6d8dafe5b92903b9216fd4165e504dc8c51bfd7899`  
-		Last Modified: Mon, 06 Jul 2020 23:51:26 GMT  
-		Size: 14.0 MB (13956242 bytes)  
+	-	`sha256:6574bb84c5b961758d36d667ddfc046d079469e6fcb3d49ecf4e505a4a3444a7`  
+		Last Modified: Fri, 24 Jul 2020 16:23:10 GMT  
+		Size: 14.0 MB (13956698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a254287bf8344dbb61c13789776f25c88c11ec28afee64a72f2c886d43a38be`  
-		Last Modified: Mon, 06 Jul 2020 23:56:55 GMT  
-		Size: 207.5 MB (207513310 bytes)  
+	-	`sha256:398e4dbaa8793ec92e877f861121bf1352eba7bc5924bb495bb8bc6abb618eb1`  
+		Last Modified: Fri, 24 Jul 2020 16:30:46 GMT  
+		Size: 207.5 MB (207513324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:13.0.2_8-jdk-openj9-0.18.0-bionic` - linux; s390x
@@ -11056,7 +11056,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:13.0.2_8-jre-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:d27a9179e0f4c7e8d394c52b976d2c5df9880dc95c0c72968bf32c2cf6b58537
+$ docker pull adoptopenjdk@sha256:4c77276da27c66c7ab150baa92af637008f4d0dba34121e7dd1583b39daca0a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11195,63 +11195,63 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:13.0.2_8-jre-hotspot` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:12557cd30505f67ff8c6eed861c017e0523deeb59b2e9026eb087777fa6e23a2
+$ docker pull adoptopenjdk@sha256:4f5d90c0fc016c3870833798128dafc3e811ae666d9e630e58f3ba7831134283
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.5 MB (86509470 bytes)**  
+-	Total Size: **86.5 MB (86511394 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0f7866ff6e7416ce17bdd541ed902ad4bd126ce053e07834da203c61297d46a`
+-	Image ID: `sha256:d1a5850e6ed4e4aea18f9f0cbdd63d71aef5722e975b0cf679fc3b18b0265979`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:38:26 GMT
+# Fri, 24 Jul 2020 15:55:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:40:57 GMT
+# Fri, 24 Jul 2020 15:55:59 GMT
 ENV JAVA_VERSION=jdk-13.0.2+8
-# Mon, 06 Jul 2020 23:42:07 GMT
+# Fri, 24 Jul 2020 15:59:28 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='6c4b69d1609f4c65c576c80d6aa101de80048f8ce5566f890e8fff5349228bae';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jre_aarch64_linux_hotspot_13.0.2_8.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='43d6fb71bdf7b6ad9295087c46dfc9b00bf26db1b5cdcff0c418cbe43b49904a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jre_ppc64le_linux_hotspot_13.0.2_8.tar.gz';          ;;        s390x)          ESUM='ac07703f9b9aed0676ae751f2b5b2346285566944ba89d0d8833790f83b00163';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jre_s390x_linux_hotspot_13.0.2_8.tar.gz';          ;;        amd64|x86_64)          ESUM='897f16fe8e056395209e35d2384013bd1ff250e717465769079e3f4793628c34';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jre_x64_linux_hotspot_13.0.2_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:42:10 GMT
+# Fri, 24 Jul 2020 16:00:03 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7dcc71ac4e1ced322a5c6d8dafe5b92903b9216fd4165e504dc8c51bfd7899`  
-		Last Modified: Mon, 06 Jul 2020 23:51:26 GMT  
-		Size: 14.0 MB (13956242 bytes)  
+	-	`sha256:6574bb84c5b961758d36d667ddfc046d079469e6fcb3d49ecf4e505a4a3444a7`  
+		Last Modified: Fri, 24 Jul 2020 16:23:10 GMT  
+		Size: 14.0 MB (13956698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40f172bcc0aa93fa7a08ba8c6a55ff958d13c3ecc179a9109f6a52eca60c9ccf`  
-		Last Modified: Mon, 06 Jul 2020 23:53:41 GMT  
-		Size: 42.1 MB (42113504 bytes)  
+	-	`sha256:debb911b7e1e56690a68c421ed7a427a59e09c0524aaf4d2a8706fc311400670`  
+		Last Modified: Fri, 24 Jul 2020 16:24:17 GMT  
+		Size: 42.1 MB (42113505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:13.0.2_8-jre-hotspot` - linux; s390x
@@ -11414,7 +11414,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk13-binaries/
 ## `adoptopenjdk:13.0.2_8-jre-hotspot-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:f0196951efd451268b0c68c0cd6b65f7ad627c59f7661d018110f85fb53b316b
+$ docker pull adoptopenjdk@sha256:af03f5c6bf5630667c8378b410d83f0064b949180e750bc5cd4746368849ebbd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11551,63 +11551,63 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:13.0.2_8-jre-hotspot-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:12557cd30505f67ff8c6eed861c017e0523deeb59b2e9026eb087777fa6e23a2
+$ docker pull adoptopenjdk@sha256:4f5d90c0fc016c3870833798128dafc3e811ae666d9e630e58f3ba7831134283
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.5 MB (86509470 bytes)**  
+-	Total Size: **86.5 MB (86511394 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0f7866ff6e7416ce17bdd541ed902ad4bd126ce053e07834da203c61297d46a`
+-	Image ID: `sha256:d1a5850e6ed4e4aea18f9f0cbdd63d71aef5722e975b0cf679fc3b18b0265979`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:38:26 GMT
+# Fri, 24 Jul 2020 15:55:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:40:57 GMT
+# Fri, 24 Jul 2020 15:55:59 GMT
 ENV JAVA_VERSION=jdk-13.0.2+8
-# Mon, 06 Jul 2020 23:42:07 GMT
+# Fri, 24 Jul 2020 15:59:28 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='6c4b69d1609f4c65c576c80d6aa101de80048f8ce5566f890e8fff5349228bae';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jre_aarch64_linux_hotspot_13.0.2_8.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='43d6fb71bdf7b6ad9295087c46dfc9b00bf26db1b5cdcff0c418cbe43b49904a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jre_ppc64le_linux_hotspot_13.0.2_8.tar.gz';          ;;        s390x)          ESUM='ac07703f9b9aed0676ae751f2b5b2346285566944ba89d0d8833790f83b00163';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jre_s390x_linux_hotspot_13.0.2_8.tar.gz';          ;;        amd64|x86_64)          ESUM='897f16fe8e056395209e35d2384013bd1ff250e717465769079e3f4793628c34';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jre_x64_linux_hotspot_13.0.2_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:42:10 GMT
+# Fri, 24 Jul 2020 16:00:03 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7dcc71ac4e1ced322a5c6d8dafe5b92903b9216fd4165e504dc8c51bfd7899`  
-		Last Modified: Mon, 06 Jul 2020 23:51:26 GMT  
-		Size: 14.0 MB (13956242 bytes)  
+	-	`sha256:6574bb84c5b961758d36d667ddfc046d079469e6fcb3d49ecf4e505a4a3444a7`  
+		Last Modified: Fri, 24 Jul 2020 16:23:10 GMT  
+		Size: 14.0 MB (13956698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40f172bcc0aa93fa7a08ba8c6a55ff958d13c3ecc179a9109f6a52eca60c9ccf`  
-		Last Modified: Mon, 06 Jul 2020 23:53:41 GMT  
-		Size: 42.1 MB (42113504 bytes)  
+	-	`sha256:debb911b7e1e56690a68c421ed7a427a59e09c0524aaf4d2a8706fc311400670`  
+		Last Modified: Fri, 24 Jul 2020 16:24:17 GMT  
+		Size: 42.1 MB (42113505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:13.0.2_8-jre-hotspot-bionic` - linux; s390x
@@ -11896,7 +11896,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk13-binaries/
 ## `adoptopenjdk:13.0.2_8-jre-openj9-0.18.0`
 
 ```console
-$ docker pull adoptopenjdk@sha256:b242121eae3bcb1c1283613ebf4ed12bd342da975bf35d9cc466e2b672f776b6
+$ docker pull adoptopenjdk@sha256:8677b31fc2e5b1f84b9435477e11ba1c08dd3ed827a556a8381a8a552559fd3f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11974,65 +11974,65 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:13.0.2_8-jre-openj9-0.18.0` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:dec9e573445915f5ae2a785dfc5c5a7311ccd6fd9506d7c2de8c42000b6daaf8
+$ docker pull adoptopenjdk@sha256:0a8c1dff8b284f68c6df8ac7fcb88c37291e2ed87fdea6211fe037fba9bf2b37
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.9 MB (86890180 bytes)**  
+-	Total Size: **86.9 MB (86892099 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dcfb760c4692a6b5a083a5db0d67444e27d20f117ad6d50ac6c8833f7da47c19`
+-	Image ID: `sha256:8e1cd62600e59aff84deb6e579160e87f46e82f5528bef639201c6bad79eb3bb`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:38:26 GMT
+# Fri, 24 Jul 2020 15:55:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:46:08 GMT
+# Fri, 24 Jul 2020 16:12:35 GMT
 ENV JAVA_VERSION=jdk-13.0.2+8_openj9-0.18.0
-# Mon, 06 Jul 2020 23:47:25 GMT
+# Fri, 24 Jul 2020 16:14:39 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='7bf8dc4c3b95e87b154f7bc2f9388a6539413fe76d49b362bba878217ccb7ed7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jre_ppc64le_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        s390x)          ESUM='d3051351ead072a19225427b83f71b5efe8ceb1133bbdff6c19ec7a380b70cbc';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jre_s390x_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        amd64|x86_64)          ESUM='a0ab38607811e282f64082edc68a2dea3fa6a5113391efb124a6d7d02883110a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jre_x64_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:47:35 GMT
+# Fri, 24 Jul 2020 16:14:50 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:47:41 GMT
+# Fri, 24 Jul 2020 16:14:54 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7dcc71ac4e1ced322a5c6d8dafe5b92903b9216fd4165e504dc8c51bfd7899`  
-		Last Modified: Mon, 06 Jul 2020 23:51:26 GMT  
-		Size: 14.0 MB (13956242 bytes)  
+	-	`sha256:6574bb84c5b961758d36d667ddfc046d079469e6fcb3d49ecf4e505a4a3444a7`  
+		Last Modified: Fri, 24 Jul 2020 16:23:10 GMT  
+		Size: 14.0 MB (13956698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9525ab37a643c3dc458861b75da6f94e1035c62ca3b2743dbffd507e2a361049`  
-		Last Modified: Mon, 06 Jul 2020 23:57:17 GMT  
-		Size: 42.5 MB (42494214 bytes)  
+	-	`sha256:7aca5fd4dc2334dc4fbd20f2937068b83237824f590a42b8a91fbd6533dda2de`  
+		Last Modified: Fri, 24 Jul 2020 16:31:24 GMT  
+		Size: 42.5 MB (42494210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:13.0.2_8-jre-openj9-0.18.0` - linux; s390x
@@ -12209,7 +12209,7 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ## `adoptopenjdk:13.0.2_8-jre-openj9-0.18.0-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:d981b46f9d58cad130e3187391078d82705f05fde1ed6996e00a8514a9353c96
+$ docker pull adoptopenjdk@sha256:b608118c8ad18d7a133e8328a653a6f6c4cd1b510110b806b56b2115a73b0671
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12285,65 +12285,65 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:13.0.2_8-jre-openj9-0.18.0-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:dec9e573445915f5ae2a785dfc5c5a7311ccd6fd9506d7c2de8c42000b6daaf8
+$ docker pull adoptopenjdk@sha256:0a8c1dff8b284f68c6df8ac7fcb88c37291e2ed87fdea6211fe037fba9bf2b37
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.9 MB (86890180 bytes)**  
+-	Total Size: **86.9 MB (86892099 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dcfb760c4692a6b5a083a5db0d67444e27d20f117ad6d50ac6c8833f7da47c19`
+-	Image ID: `sha256:8e1cd62600e59aff84deb6e579160e87f46e82f5528bef639201c6bad79eb3bb`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:38:26 GMT
+# Fri, 24 Jul 2020 15:55:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:46:08 GMT
+# Fri, 24 Jul 2020 16:12:35 GMT
 ENV JAVA_VERSION=jdk-13.0.2+8_openj9-0.18.0
-# Mon, 06 Jul 2020 23:47:25 GMT
+# Fri, 24 Jul 2020 16:14:39 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='7bf8dc4c3b95e87b154f7bc2f9388a6539413fe76d49b362bba878217ccb7ed7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jre_ppc64le_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        s390x)          ESUM='d3051351ead072a19225427b83f71b5efe8ceb1133bbdff6c19ec7a380b70cbc';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jre_s390x_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        amd64|x86_64)          ESUM='a0ab38607811e282f64082edc68a2dea3fa6a5113391efb124a6d7d02883110a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jre_x64_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:47:35 GMT
+# Fri, 24 Jul 2020 16:14:50 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:47:41 GMT
+# Fri, 24 Jul 2020 16:14:54 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7dcc71ac4e1ced322a5c6d8dafe5b92903b9216fd4165e504dc8c51bfd7899`  
-		Last Modified: Mon, 06 Jul 2020 23:51:26 GMT  
-		Size: 14.0 MB (13956242 bytes)  
+	-	`sha256:6574bb84c5b961758d36d667ddfc046d079469e6fcb3d49ecf4e505a4a3444a7`  
+		Last Modified: Fri, 24 Jul 2020 16:23:10 GMT  
+		Size: 14.0 MB (13956698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9525ab37a643c3dc458861b75da6f94e1035c62ca3b2743dbffd507e2a361049`  
-		Last Modified: Mon, 06 Jul 2020 23:57:17 GMT  
-		Size: 42.5 MB (42494214 bytes)  
+	-	`sha256:7aca5fd4dc2334dc4fbd20f2937068b83237824f590a42b8a91fbd6533dda2de`  
+		Last Modified: Fri, 24 Jul 2020 16:31:24 GMT  
+		Size: 42.5 MB (42494210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:13.0.2_8-jre-openj9-0.18.0-bionic` - linux; s390x
@@ -12658,7 +12658,7 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ## `adoptopenjdk:13-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:f05b114fed66526fd73879156863249f19faad12f186f4c6558d1ab7b6deecc3
+$ docker pull adoptopenjdk@sha256:d8016b93691772b9983cda4697f8161e5578db5c301ab98eaa9ff39974c1e1df
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12866,65 +12866,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:13-hotspot` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:3dee4a36d7962f611674e856d63e5d55a04478cd9038940e129e11e3701abcce
+$ docker pull adoptopenjdk@sha256:df0a935c767e322ff3d43d911ca945f5f3bcb00013462d33eec01d1ebc11fe2b
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.5 MB (235508614 bytes)**  
+-	Total Size: **235.5 MB (235510558 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf7f37a58e75dd98d8c738c85c4735f1b1fa40f2240e1d3d33c4a99aba4ac992`
+-	Image ID: `sha256:a303e91f914b49eee6f4378aa653bc99a8e7fa4473ad3d22df79cedae98105de`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:38:26 GMT
+# Fri, 24 Jul 2020 15:55:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:40:57 GMT
+# Fri, 24 Jul 2020 15:55:59 GMT
 ENV JAVA_VERSION=jdk-13.0.2+8
-# Mon, 06 Jul 2020 23:41:27 GMT
+# Fri, 24 Jul 2020 15:56:41 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0e6081cb51f8a6f3062bef4f4c45dbe1fccfd3f3b4b5d52522a3edb76581e3af';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_aarch64_linux_hotspot_13.0.2_8.tar.gz';          ;;        armhf|armv7l)          ESUM='9beec080f2b2a7f6883b024272f4e8d5a0b027325e83647be318215781af1d1a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_arm_linux_hotspot_13.0.2_8.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='fb3362e34aac091a4682394d20dcdc3daea51995d369d62c28424573e0fc04aa';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_ppc64le_linux_hotspot_13.0.2_8.tar.gz';          ;;        s390x)          ESUM='1b9e7cd7fdde10fe3534988ef58c36f132b12f814503a034461c95735057467f';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_s390x_linux_hotspot_13.0.2_8.tar.gz';          ;;        amd64|x86_64)          ESUM='9ccc063569f19899fd08e41466f8c4cd4e05058abdb5178fa374cb365dcf5998';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_x64_linux_hotspot_13.0.2_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:41:40 GMT
+# Fri, 24 Jul 2020 15:57:10 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:41:44 GMT
+# Fri, 24 Jul 2020 15:57:39 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7dcc71ac4e1ced322a5c6d8dafe5b92903b9216fd4165e504dc8c51bfd7899`  
-		Last Modified: Mon, 06 Jul 2020 23:51:26 GMT  
-		Size: 14.0 MB (13956242 bytes)  
+	-	`sha256:6574bb84c5b961758d36d667ddfc046d079469e6fcb3d49ecf4e505a4a3444a7`  
+		Last Modified: Fri, 24 Jul 2020 16:23:10 GMT  
+		Size: 14.0 MB (13956698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d1de12a9832eddfd33e131ef6915d49b6083a717bb670f130e28743618ecf55`  
-		Last Modified: Mon, 06 Jul 2020 23:53:20 GMT  
-		Size: 191.1 MB (191112648 bytes)  
+	-	`sha256:c0be2f37e2ae7b29a57e47b357153aee07c1865cad254a491bc2b78d655b7fb9`  
+		Last Modified: Fri, 24 Jul 2020 16:23:39 GMT  
+		Size: 191.1 MB (191112669 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:13-hotspot` - linux; s390x
@@ -13101,7 +13101,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:13-hotspot-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:947f6e516590db6acc4825aa23299d0bbb577f59cbc5284a257de5c0c7f62fc0
+$ docker pull adoptopenjdk@sha256:dae05a032e415ffa7a2ff409a6c7bad8298b449fee89098f04812028d93116e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13307,65 +13307,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:13-hotspot-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:3dee4a36d7962f611674e856d63e5d55a04478cd9038940e129e11e3701abcce
+$ docker pull adoptopenjdk@sha256:df0a935c767e322ff3d43d911ca945f5f3bcb00013462d33eec01d1ebc11fe2b
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.5 MB (235508614 bytes)**  
+-	Total Size: **235.5 MB (235510558 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf7f37a58e75dd98d8c738c85c4735f1b1fa40f2240e1d3d33c4a99aba4ac992`
+-	Image ID: `sha256:a303e91f914b49eee6f4378aa653bc99a8e7fa4473ad3d22df79cedae98105de`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:38:26 GMT
+# Fri, 24 Jul 2020 15:55:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:40:57 GMT
+# Fri, 24 Jul 2020 15:55:59 GMT
 ENV JAVA_VERSION=jdk-13.0.2+8
-# Mon, 06 Jul 2020 23:41:27 GMT
+# Fri, 24 Jul 2020 15:56:41 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0e6081cb51f8a6f3062bef4f4c45dbe1fccfd3f3b4b5d52522a3edb76581e3af';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_aarch64_linux_hotspot_13.0.2_8.tar.gz';          ;;        armhf|armv7l)          ESUM='9beec080f2b2a7f6883b024272f4e8d5a0b027325e83647be318215781af1d1a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_arm_linux_hotspot_13.0.2_8.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='fb3362e34aac091a4682394d20dcdc3daea51995d369d62c28424573e0fc04aa';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_ppc64le_linux_hotspot_13.0.2_8.tar.gz';          ;;        s390x)          ESUM='1b9e7cd7fdde10fe3534988ef58c36f132b12f814503a034461c95735057467f';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_s390x_linux_hotspot_13.0.2_8.tar.gz';          ;;        amd64|x86_64)          ESUM='9ccc063569f19899fd08e41466f8c4cd4e05058abdb5178fa374cb365dcf5998';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_x64_linux_hotspot_13.0.2_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:41:40 GMT
+# Fri, 24 Jul 2020 15:57:10 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:41:44 GMT
+# Fri, 24 Jul 2020 15:57:39 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7dcc71ac4e1ced322a5c6d8dafe5b92903b9216fd4165e504dc8c51bfd7899`  
-		Last Modified: Mon, 06 Jul 2020 23:51:26 GMT  
-		Size: 14.0 MB (13956242 bytes)  
+	-	`sha256:6574bb84c5b961758d36d667ddfc046d079469e6fcb3d49ecf4e505a4a3444a7`  
+		Last Modified: Fri, 24 Jul 2020 16:23:10 GMT  
+		Size: 14.0 MB (13956698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d1de12a9832eddfd33e131ef6915d49b6083a717bb670f130e28743618ecf55`  
-		Last Modified: Mon, 06 Jul 2020 23:53:20 GMT  
-		Size: 191.1 MB (191112648 bytes)  
+	-	`sha256:c0be2f37e2ae7b29a57e47b357153aee07c1865cad254a491bc2b78d655b7fb9`  
+		Last Modified: Fri, 24 Jul 2020 16:23:39 GMT  
+		Size: 191.1 MB (191112669 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:13-hotspot-bionic` - linux; s390x
@@ -13680,7 +13680,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:13-jdk-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:f05b114fed66526fd73879156863249f19faad12f186f4c6558d1ab7b6deecc3
+$ docker pull adoptopenjdk@sha256:d8016b93691772b9983cda4697f8161e5578db5c301ab98eaa9ff39974c1e1df
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13888,65 +13888,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:13-jdk-hotspot` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:3dee4a36d7962f611674e856d63e5d55a04478cd9038940e129e11e3701abcce
+$ docker pull adoptopenjdk@sha256:df0a935c767e322ff3d43d911ca945f5f3bcb00013462d33eec01d1ebc11fe2b
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.5 MB (235508614 bytes)**  
+-	Total Size: **235.5 MB (235510558 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf7f37a58e75dd98d8c738c85c4735f1b1fa40f2240e1d3d33c4a99aba4ac992`
+-	Image ID: `sha256:a303e91f914b49eee6f4378aa653bc99a8e7fa4473ad3d22df79cedae98105de`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:38:26 GMT
+# Fri, 24 Jul 2020 15:55:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:40:57 GMT
+# Fri, 24 Jul 2020 15:55:59 GMT
 ENV JAVA_VERSION=jdk-13.0.2+8
-# Mon, 06 Jul 2020 23:41:27 GMT
+# Fri, 24 Jul 2020 15:56:41 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0e6081cb51f8a6f3062bef4f4c45dbe1fccfd3f3b4b5d52522a3edb76581e3af';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_aarch64_linux_hotspot_13.0.2_8.tar.gz';          ;;        armhf|armv7l)          ESUM='9beec080f2b2a7f6883b024272f4e8d5a0b027325e83647be318215781af1d1a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_arm_linux_hotspot_13.0.2_8.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='fb3362e34aac091a4682394d20dcdc3daea51995d369d62c28424573e0fc04aa';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_ppc64le_linux_hotspot_13.0.2_8.tar.gz';          ;;        s390x)          ESUM='1b9e7cd7fdde10fe3534988ef58c36f132b12f814503a034461c95735057467f';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_s390x_linux_hotspot_13.0.2_8.tar.gz';          ;;        amd64|x86_64)          ESUM='9ccc063569f19899fd08e41466f8c4cd4e05058abdb5178fa374cb365dcf5998';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_x64_linux_hotspot_13.0.2_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:41:40 GMT
+# Fri, 24 Jul 2020 15:57:10 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:41:44 GMT
+# Fri, 24 Jul 2020 15:57:39 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7dcc71ac4e1ced322a5c6d8dafe5b92903b9216fd4165e504dc8c51bfd7899`  
-		Last Modified: Mon, 06 Jul 2020 23:51:26 GMT  
-		Size: 14.0 MB (13956242 bytes)  
+	-	`sha256:6574bb84c5b961758d36d667ddfc046d079469e6fcb3d49ecf4e505a4a3444a7`  
+		Last Modified: Fri, 24 Jul 2020 16:23:10 GMT  
+		Size: 14.0 MB (13956698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d1de12a9832eddfd33e131ef6915d49b6083a717bb670f130e28743618ecf55`  
-		Last Modified: Mon, 06 Jul 2020 23:53:20 GMT  
-		Size: 191.1 MB (191112648 bytes)  
+	-	`sha256:c0be2f37e2ae7b29a57e47b357153aee07c1865cad254a491bc2b78d655b7fb9`  
+		Last Modified: Fri, 24 Jul 2020 16:23:39 GMT  
+		Size: 191.1 MB (191112669 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:13-jdk-hotspot` - linux; s390x
@@ -14123,7 +14123,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:13-jdk-hotspot-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:947f6e516590db6acc4825aa23299d0bbb577f59cbc5284a257de5c0c7f62fc0
+$ docker pull adoptopenjdk@sha256:dae05a032e415ffa7a2ff409a6c7bad8298b449fee89098f04812028d93116e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14329,65 +14329,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:13-jdk-hotspot-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:3dee4a36d7962f611674e856d63e5d55a04478cd9038940e129e11e3701abcce
+$ docker pull adoptopenjdk@sha256:df0a935c767e322ff3d43d911ca945f5f3bcb00013462d33eec01d1ebc11fe2b
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.5 MB (235508614 bytes)**  
+-	Total Size: **235.5 MB (235510558 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf7f37a58e75dd98d8c738c85c4735f1b1fa40f2240e1d3d33c4a99aba4ac992`
+-	Image ID: `sha256:a303e91f914b49eee6f4378aa653bc99a8e7fa4473ad3d22df79cedae98105de`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:38:26 GMT
+# Fri, 24 Jul 2020 15:55:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:40:57 GMT
+# Fri, 24 Jul 2020 15:55:59 GMT
 ENV JAVA_VERSION=jdk-13.0.2+8
-# Mon, 06 Jul 2020 23:41:27 GMT
+# Fri, 24 Jul 2020 15:56:41 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0e6081cb51f8a6f3062bef4f4c45dbe1fccfd3f3b4b5d52522a3edb76581e3af';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_aarch64_linux_hotspot_13.0.2_8.tar.gz';          ;;        armhf|armv7l)          ESUM='9beec080f2b2a7f6883b024272f4e8d5a0b027325e83647be318215781af1d1a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_arm_linux_hotspot_13.0.2_8.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='fb3362e34aac091a4682394d20dcdc3daea51995d369d62c28424573e0fc04aa';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_ppc64le_linux_hotspot_13.0.2_8.tar.gz';          ;;        s390x)          ESUM='1b9e7cd7fdde10fe3534988ef58c36f132b12f814503a034461c95735057467f';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_s390x_linux_hotspot_13.0.2_8.tar.gz';          ;;        amd64|x86_64)          ESUM='9ccc063569f19899fd08e41466f8c4cd4e05058abdb5178fa374cb365dcf5998';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jdk_x64_linux_hotspot_13.0.2_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:41:40 GMT
+# Fri, 24 Jul 2020 15:57:10 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:41:44 GMT
+# Fri, 24 Jul 2020 15:57:39 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7dcc71ac4e1ced322a5c6d8dafe5b92903b9216fd4165e504dc8c51bfd7899`  
-		Last Modified: Mon, 06 Jul 2020 23:51:26 GMT  
-		Size: 14.0 MB (13956242 bytes)  
+	-	`sha256:6574bb84c5b961758d36d667ddfc046d079469e6fcb3d49ecf4e505a4a3444a7`  
+		Last Modified: Fri, 24 Jul 2020 16:23:10 GMT  
+		Size: 14.0 MB (13956698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d1de12a9832eddfd33e131ef6915d49b6083a717bb670f130e28743618ecf55`  
-		Last Modified: Mon, 06 Jul 2020 23:53:20 GMT  
-		Size: 191.1 MB (191112648 bytes)  
+	-	`sha256:c0be2f37e2ae7b29a57e47b357153aee07c1865cad254a491bc2b78d655b7fb9`  
+		Last Modified: Fri, 24 Jul 2020 16:23:39 GMT  
+		Size: 191.1 MB (191112669 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:13-jdk-hotspot-bionic` - linux; s390x
@@ -14702,7 +14702,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:13-jdk-openj9`
 
 ```console
-$ docker pull adoptopenjdk@sha256:41277e87b00dd2ade9934f00169812e9ac3f89660f159e6c294e48e44d0877b9
+$ docker pull adoptopenjdk@sha256:a5367e918ba65f83f5bb62056258e97820f05aa476467783cc967f0889608c90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14782,67 +14782,67 @@ CMD ["jshell"]
 ### `adoptopenjdk:13-jdk-openj9` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:2d0387fd6775355ce54d0850fd7281c765d3c1b1b9bfcd0727d9dac40d719195
+$ docker pull adoptopenjdk@sha256:64dcc392cd888b5338b02240615f1cda3979201bd0b9720edae3a1121f30bf9f
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.9 MB (251909276 bytes)**  
+-	Total Size: **251.9 MB (251911213 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c72a5ecba69c0215146a837268896b12e989acb82aad4c948823b128220d4c2c`
+-	Image ID: `sha256:9a0cdbae1d0922f42681f0dc8977005ad91b81354ebdf25589816904c42c99e8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:38:26 GMT
+# Fri, 24 Jul 2020 15:55:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:46:08 GMT
+# Fri, 24 Jul 2020 16:12:35 GMT
 ENV JAVA_VERSION=jdk-13.0.2+8_openj9-0.18.0
-# Mon, 06 Jul 2020 23:46:35 GMT
+# Fri, 24 Jul 2020 16:13:06 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='f71513e525172dfef695b7c27b25e151f232e05b2281648c2b794650c4970832';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jdk_ppc64le_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        s390x)          ESUM='9e7b2e921710ecaf6d3c743616dc720ef10b7b75ba0b8820bf9f9550bfa52584';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jdk_s390x_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        amd64|x86_64)          ESUM='aeecf6d30d0c847db81d07793cf97e5dc44890c29366d7d9f8f9f397f6c52590';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jdk_x64_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:46:42 GMT
+# Fri, 24 Jul 2020 16:13:36 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:46:51 GMT
+# Fri, 24 Jul 2020 16:13:52 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Mon, 06 Jul 2020 23:46:55 GMT
+# Fri, 24 Jul 2020 16:14:13 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7dcc71ac4e1ced322a5c6d8dafe5b92903b9216fd4165e504dc8c51bfd7899`  
-		Last Modified: Mon, 06 Jul 2020 23:51:26 GMT  
-		Size: 14.0 MB (13956242 bytes)  
+	-	`sha256:6574bb84c5b961758d36d667ddfc046d079469e6fcb3d49ecf4e505a4a3444a7`  
+		Last Modified: Fri, 24 Jul 2020 16:23:10 GMT  
+		Size: 14.0 MB (13956698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a254287bf8344dbb61c13789776f25c88c11ec28afee64a72f2c886d43a38be`  
-		Last Modified: Mon, 06 Jul 2020 23:56:55 GMT  
-		Size: 207.5 MB (207513310 bytes)  
+	-	`sha256:398e4dbaa8793ec92e877f861121bf1352eba7bc5924bb495bb8bc6abb618eb1`  
+		Last Modified: Fri, 24 Jul 2020 16:30:46 GMT  
+		Size: 207.5 MB (207513324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:13-jdk-openj9` - linux; s390x
@@ -15033,7 +15033,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:13-jdk-openj9-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:6bc026095c4e08a364679af3d6e421f1d3ced66cfddcde1937549973ff388b86
+$ docker pull adoptopenjdk@sha256:e0bddbb28c76035fc5fbd32bc41cd80db79ad652292dc5ba1c801f343a34c327
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15111,67 +15111,67 @@ CMD ["jshell"]
 ### `adoptopenjdk:13-jdk-openj9-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:2d0387fd6775355ce54d0850fd7281c765d3c1b1b9bfcd0727d9dac40d719195
+$ docker pull adoptopenjdk@sha256:64dcc392cd888b5338b02240615f1cda3979201bd0b9720edae3a1121f30bf9f
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.9 MB (251909276 bytes)**  
+-	Total Size: **251.9 MB (251911213 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c72a5ecba69c0215146a837268896b12e989acb82aad4c948823b128220d4c2c`
+-	Image ID: `sha256:9a0cdbae1d0922f42681f0dc8977005ad91b81354ebdf25589816904c42c99e8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:38:26 GMT
+# Fri, 24 Jul 2020 15:55:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:46:08 GMT
+# Fri, 24 Jul 2020 16:12:35 GMT
 ENV JAVA_VERSION=jdk-13.0.2+8_openj9-0.18.0
-# Mon, 06 Jul 2020 23:46:35 GMT
+# Fri, 24 Jul 2020 16:13:06 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='f71513e525172dfef695b7c27b25e151f232e05b2281648c2b794650c4970832';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jdk_ppc64le_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        s390x)          ESUM='9e7b2e921710ecaf6d3c743616dc720ef10b7b75ba0b8820bf9f9550bfa52584';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jdk_s390x_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        amd64|x86_64)          ESUM='aeecf6d30d0c847db81d07793cf97e5dc44890c29366d7d9f8f9f397f6c52590';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jdk_x64_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:46:42 GMT
+# Fri, 24 Jul 2020 16:13:36 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:46:51 GMT
+# Fri, 24 Jul 2020 16:13:52 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Mon, 06 Jul 2020 23:46:55 GMT
+# Fri, 24 Jul 2020 16:14:13 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7dcc71ac4e1ced322a5c6d8dafe5b92903b9216fd4165e504dc8c51bfd7899`  
-		Last Modified: Mon, 06 Jul 2020 23:51:26 GMT  
-		Size: 14.0 MB (13956242 bytes)  
+	-	`sha256:6574bb84c5b961758d36d667ddfc046d079469e6fcb3d49ecf4e505a4a3444a7`  
+		Last Modified: Fri, 24 Jul 2020 16:23:10 GMT  
+		Size: 14.0 MB (13956698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a254287bf8344dbb61c13789776f25c88c11ec28afee64a72f2c886d43a38be`  
-		Last Modified: Mon, 06 Jul 2020 23:56:55 GMT  
-		Size: 207.5 MB (207513310 bytes)  
+	-	`sha256:398e4dbaa8793ec92e877f861121bf1352eba7bc5924bb495bb8bc6abb618eb1`  
+		Last Modified: Fri, 24 Jul 2020 16:30:46 GMT  
+		Size: 207.5 MB (207513324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:13-jdk-openj9-bionic` - linux; s390x
@@ -15512,7 +15512,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:13-jre-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:d27a9179e0f4c7e8d394c52b976d2c5df9880dc95c0c72968bf32c2cf6b58537
+$ docker pull adoptopenjdk@sha256:4c77276da27c66c7ab150baa92af637008f4d0dba34121e7dd1583b39daca0a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15651,63 +15651,63 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:13-jre-hotspot` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:12557cd30505f67ff8c6eed861c017e0523deeb59b2e9026eb087777fa6e23a2
+$ docker pull adoptopenjdk@sha256:4f5d90c0fc016c3870833798128dafc3e811ae666d9e630e58f3ba7831134283
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.5 MB (86509470 bytes)**  
+-	Total Size: **86.5 MB (86511394 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0f7866ff6e7416ce17bdd541ed902ad4bd126ce053e07834da203c61297d46a`
+-	Image ID: `sha256:d1a5850e6ed4e4aea18f9f0cbdd63d71aef5722e975b0cf679fc3b18b0265979`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:38:26 GMT
+# Fri, 24 Jul 2020 15:55:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:40:57 GMT
+# Fri, 24 Jul 2020 15:55:59 GMT
 ENV JAVA_VERSION=jdk-13.0.2+8
-# Mon, 06 Jul 2020 23:42:07 GMT
+# Fri, 24 Jul 2020 15:59:28 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='6c4b69d1609f4c65c576c80d6aa101de80048f8ce5566f890e8fff5349228bae';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jre_aarch64_linux_hotspot_13.0.2_8.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='43d6fb71bdf7b6ad9295087c46dfc9b00bf26db1b5cdcff0c418cbe43b49904a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jre_ppc64le_linux_hotspot_13.0.2_8.tar.gz';          ;;        s390x)          ESUM='ac07703f9b9aed0676ae751f2b5b2346285566944ba89d0d8833790f83b00163';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jre_s390x_linux_hotspot_13.0.2_8.tar.gz';          ;;        amd64|x86_64)          ESUM='897f16fe8e056395209e35d2384013bd1ff250e717465769079e3f4793628c34';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jre_x64_linux_hotspot_13.0.2_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:42:10 GMT
+# Fri, 24 Jul 2020 16:00:03 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7dcc71ac4e1ced322a5c6d8dafe5b92903b9216fd4165e504dc8c51bfd7899`  
-		Last Modified: Mon, 06 Jul 2020 23:51:26 GMT  
-		Size: 14.0 MB (13956242 bytes)  
+	-	`sha256:6574bb84c5b961758d36d667ddfc046d079469e6fcb3d49ecf4e505a4a3444a7`  
+		Last Modified: Fri, 24 Jul 2020 16:23:10 GMT  
+		Size: 14.0 MB (13956698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40f172bcc0aa93fa7a08ba8c6a55ff958d13c3ecc179a9109f6a52eca60c9ccf`  
-		Last Modified: Mon, 06 Jul 2020 23:53:41 GMT  
-		Size: 42.1 MB (42113504 bytes)  
+	-	`sha256:debb911b7e1e56690a68c421ed7a427a59e09c0524aaf4d2a8706fc311400670`  
+		Last Modified: Fri, 24 Jul 2020 16:24:17 GMT  
+		Size: 42.1 MB (42113505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:13-jre-hotspot` - linux; s390x
@@ -15870,7 +15870,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk13-binaries/
 ## `adoptopenjdk:13-jre-hotspot-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:f0196951efd451268b0c68c0cd6b65f7ad627c59f7661d018110f85fb53b316b
+$ docker pull adoptopenjdk@sha256:af03f5c6bf5630667c8378b410d83f0064b949180e750bc5cd4746368849ebbd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16007,63 +16007,63 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:13-jre-hotspot-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:12557cd30505f67ff8c6eed861c017e0523deeb59b2e9026eb087777fa6e23a2
+$ docker pull adoptopenjdk@sha256:4f5d90c0fc016c3870833798128dafc3e811ae666d9e630e58f3ba7831134283
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.5 MB (86509470 bytes)**  
+-	Total Size: **86.5 MB (86511394 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0f7866ff6e7416ce17bdd541ed902ad4bd126ce053e07834da203c61297d46a`
+-	Image ID: `sha256:d1a5850e6ed4e4aea18f9f0cbdd63d71aef5722e975b0cf679fc3b18b0265979`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:38:26 GMT
+# Fri, 24 Jul 2020 15:55:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:40:57 GMT
+# Fri, 24 Jul 2020 15:55:59 GMT
 ENV JAVA_VERSION=jdk-13.0.2+8
-# Mon, 06 Jul 2020 23:42:07 GMT
+# Fri, 24 Jul 2020 15:59:28 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='6c4b69d1609f4c65c576c80d6aa101de80048f8ce5566f890e8fff5349228bae';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jre_aarch64_linux_hotspot_13.0.2_8.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='43d6fb71bdf7b6ad9295087c46dfc9b00bf26db1b5cdcff0c418cbe43b49904a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jre_ppc64le_linux_hotspot_13.0.2_8.tar.gz';          ;;        s390x)          ESUM='ac07703f9b9aed0676ae751f2b5b2346285566944ba89d0d8833790f83b00163';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jre_s390x_linux_hotspot_13.0.2_8.tar.gz';          ;;        amd64|x86_64)          ESUM='897f16fe8e056395209e35d2384013bd1ff250e717465769079e3f4793628c34';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8/OpenJDK13U-jre_x64_linux_hotspot_13.0.2_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:42:10 GMT
+# Fri, 24 Jul 2020 16:00:03 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7dcc71ac4e1ced322a5c6d8dafe5b92903b9216fd4165e504dc8c51bfd7899`  
-		Last Modified: Mon, 06 Jul 2020 23:51:26 GMT  
-		Size: 14.0 MB (13956242 bytes)  
+	-	`sha256:6574bb84c5b961758d36d667ddfc046d079469e6fcb3d49ecf4e505a4a3444a7`  
+		Last Modified: Fri, 24 Jul 2020 16:23:10 GMT  
+		Size: 14.0 MB (13956698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40f172bcc0aa93fa7a08ba8c6a55ff958d13c3ecc179a9109f6a52eca60c9ccf`  
-		Last Modified: Mon, 06 Jul 2020 23:53:41 GMT  
-		Size: 42.1 MB (42113504 bytes)  
+	-	`sha256:debb911b7e1e56690a68c421ed7a427a59e09c0524aaf4d2a8706fc311400670`  
+		Last Modified: Fri, 24 Jul 2020 16:24:17 GMT  
+		Size: 42.1 MB (42113505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:13-jre-hotspot-bionic` - linux; s390x
@@ -16352,7 +16352,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk13-binaries/
 ## `adoptopenjdk:13-jre-openj9`
 
 ```console
-$ docker pull adoptopenjdk@sha256:b242121eae3bcb1c1283613ebf4ed12bd342da975bf35d9cc466e2b672f776b6
+$ docker pull adoptopenjdk@sha256:8677b31fc2e5b1f84b9435477e11ba1c08dd3ed827a556a8381a8a552559fd3f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16430,65 +16430,65 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:13-jre-openj9` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:dec9e573445915f5ae2a785dfc5c5a7311ccd6fd9506d7c2de8c42000b6daaf8
+$ docker pull adoptopenjdk@sha256:0a8c1dff8b284f68c6df8ac7fcb88c37291e2ed87fdea6211fe037fba9bf2b37
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.9 MB (86890180 bytes)**  
+-	Total Size: **86.9 MB (86892099 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dcfb760c4692a6b5a083a5db0d67444e27d20f117ad6d50ac6c8833f7da47c19`
+-	Image ID: `sha256:8e1cd62600e59aff84deb6e579160e87f46e82f5528bef639201c6bad79eb3bb`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:38:26 GMT
+# Fri, 24 Jul 2020 15:55:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:46:08 GMT
+# Fri, 24 Jul 2020 16:12:35 GMT
 ENV JAVA_VERSION=jdk-13.0.2+8_openj9-0.18.0
-# Mon, 06 Jul 2020 23:47:25 GMT
+# Fri, 24 Jul 2020 16:14:39 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='7bf8dc4c3b95e87b154f7bc2f9388a6539413fe76d49b362bba878217ccb7ed7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jre_ppc64le_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        s390x)          ESUM='d3051351ead072a19225427b83f71b5efe8ceb1133bbdff6c19ec7a380b70cbc';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jre_s390x_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        amd64|x86_64)          ESUM='a0ab38607811e282f64082edc68a2dea3fa6a5113391efb124a6d7d02883110a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jre_x64_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:47:35 GMT
+# Fri, 24 Jul 2020 16:14:50 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:47:41 GMT
+# Fri, 24 Jul 2020 16:14:54 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7dcc71ac4e1ced322a5c6d8dafe5b92903b9216fd4165e504dc8c51bfd7899`  
-		Last Modified: Mon, 06 Jul 2020 23:51:26 GMT  
-		Size: 14.0 MB (13956242 bytes)  
+	-	`sha256:6574bb84c5b961758d36d667ddfc046d079469e6fcb3d49ecf4e505a4a3444a7`  
+		Last Modified: Fri, 24 Jul 2020 16:23:10 GMT  
+		Size: 14.0 MB (13956698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9525ab37a643c3dc458861b75da6f94e1035c62ca3b2743dbffd507e2a361049`  
-		Last Modified: Mon, 06 Jul 2020 23:57:17 GMT  
-		Size: 42.5 MB (42494214 bytes)  
+	-	`sha256:7aca5fd4dc2334dc4fbd20f2937068b83237824f590a42b8a91fbd6533dda2de`  
+		Last Modified: Fri, 24 Jul 2020 16:31:24 GMT  
+		Size: 42.5 MB (42494210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:13-jre-openj9` - linux; s390x
@@ -16665,7 +16665,7 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ## `adoptopenjdk:13-jre-openj9-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:d981b46f9d58cad130e3187391078d82705f05fde1ed6996e00a8514a9353c96
+$ docker pull adoptopenjdk@sha256:b608118c8ad18d7a133e8328a653a6f6c4cd1b510110b806b56b2115a73b0671
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16741,65 +16741,65 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:13-jre-openj9-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:dec9e573445915f5ae2a785dfc5c5a7311ccd6fd9506d7c2de8c42000b6daaf8
+$ docker pull adoptopenjdk@sha256:0a8c1dff8b284f68c6df8ac7fcb88c37291e2ed87fdea6211fe037fba9bf2b37
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.9 MB (86890180 bytes)**  
+-	Total Size: **86.9 MB (86892099 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dcfb760c4692a6b5a083a5db0d67444e27d20f117ad6d50ac6c8833f7da47c19`
+-	Image ID: `sha256:8e1cd62600e59aff84deb6e579160e87f46e82f5528bef639201c6bad79eb3bb`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:38:26 GMT
+# Fri, 24 Jul 2020 15:55:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:46:08 GMT
+# Fri, 24 Jul 2020 16:12:35 GMT
 ENV JAVA_VERSION=jdk-13.0.2+8_openj9-0.18.0
-# Mon, 06 Jul 2020 23:47:25 GMT
+# Fri, 24 Jul 2020 16:14:39 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='7bf8dc4c3b95e87b154f7bc2f9388a6539413fe76d49b362bba878217ccb7ed7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jre_ppc64le_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        s390x)          ESUM='d3051351ead072a19225427b83f71b5efe8ceb1133bbdff6c19ec7a380b70cbc';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jre_s390x_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        amd64|x86_64)          ESUM='a0ab38607811e282f64082edc68a2dea3fa6a5113391efb124a6d7d02883110a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jre_x64_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:47:35 GMT
+# Fri, 24 Jul 2020 16:14:50 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:47:41 GMT
+# Fri, 24 Jul 2020 16:14:54 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7dcc71ac4e1ced322a5c6d8dafe5b92903b9216fd4165e504dc8c51bfd7899`  
-		Last Modified: Mon, 06 Jul 2020 23:51:26 GMT  
-		Size: 14.0 MB (13956242 bytes)  
+	-	`sha256:6574bb84c5b961758d36d667ddfc046d079469e6fcb3d49ecf4e505a4a3444a7`  
+		Last Modified: Fri, 24 Jul 2020 16:23:10 GMT  
+		Size: 14.0 MB (13956698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9525ab37a643c3dc458861b75da6f94e1035c62ca3b2743dbffd507e2a361049`  
-		Last Modified: Mon, 06 Jul 2020 23:57:17 GMT  
-		Size: 42.5 MB (42494214 bytes)  
+	-	`sha256:7aca5fd4dc2334dc4fbd20f2937068b83237824f590a42b8a91fbd6533dda2de`  
+		Last Modified: Fri, 24 Jul 2020 16:31:24 GMT  
+		Size: 42.5 MB (42494210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:13-jre-openj9-bionic` - linux; s390x
@@ -17114,7 +17114,7 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ## `adoptopenjdk:13-openj9`
 
 ```console
-$ docker pull adoptopenjdk@sha256:41277e87b00dd2ade9934f00169812e9ac3f89660f159e6c294e48e44d0877b9
+$ docker pull adoptopenjdk@sha256:a5367e918ba65f83f5bb62056258e97820f05aa476467783cc967f0889608c90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17194,67 +17194,67 @@ CMD ["jshell"]
 ### `adoptopenjdk:13-openj9` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:2d0387fd6775355ce54d0850fd7281c765d3c1b1b9bfcd0727d9dac40d719195
+$ docker pull adoptopenjdk@sha256:64dcc392cd888b5338b02240615f1cda3979201bd0b9720edae3a1121f30bf9f
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.9 MB (251909276 bytes)**  
+-	Total Size: **251.9 MB (251911213 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c72a5ecba69c0215146a837268896b12e989acb82aad4c948823b128220d4c2c`
+-	Image ID: `sha256:9a0cdbae1d0922f42681f0dc8977005ad91b81354ebdf25589816904c42c99e8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:38:26 GMT
+# Fri, 24 Jul 2020 15:55:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:46:08 GMT
+# Fri, 24 Jul 2020 16:12:35 GMT
 ENV JAVA_VERSION=jdk-13.0.2+8_openj9-0.18.0
-# Mon, 06 Jul 2020 23:46:35 GMT
+# Fri, 24 Jul 2020 16:13:06 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='f71513e525172dfef695b7c27b25e151f232e05b2281648c2b794650c4970832';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jdk_ppc64le_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        s390x)          ESUM='9e7b2e921710ecaf6d3c743616dc720ef10b7b75ba0b8820bf9f9550bfa52584';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jdk_s390x_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        amd64|x86_64)          ESUM='aeecf6d30d0c847db81d07793cf97e5dc44890c29366d7d9f8f9f397f6c52590';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jdk_x64_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:46:42 GMT
+# Fri, 24 Jul 2020 16:13:36 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:46:51 GMT
+# Fri, 24 Jul 2020 16:13:52 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Mon, 06 Jul 2020 23:46:55 GMT
+# Fri, 24 Jul 2020 16:14:13 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7dcc71ac4e1ced322a5c6d8dafe5b92903b9216fd4165e504dc8c51bfd7899`  
-		Last Modified: Mon, 06 Jul 2020 23:51:26 GMT  
-		Size: 14.0 MB (13956242 bytes)  
+	-	`sha256:6574bb84c5b961758d36d667ddfc046d079469e6fcb3d49ecf4e505a4a3444a7`  
+		Last Modified: Fri, 24 Jul 2020 16:23:10 GMT  
+		Size: 14.0 MB (13956698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a254287bf8344dbb61c13789776f25c88c11ec28afee64a72f2c886d43a38be`  
-		Last Modified: Mon, 06 Jul 2020 23:56:55 GMT  
-		Size: 207.5 MB (207513310 bytes)  
+	-	`sha256:398e4dbaa8793ec92e877f861121bf1352eba7bc5924bb495bb8bc6abb618eb1`  
+		Last Modified: Fri, 24 Jul 2020 16:30:46 GMT  
+		Size: 207.5 MB (207513324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:13-openj9` - linux; s390x
@@ -17445,7 +17445,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:13-openj9-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:6bc026095c4e08a364679af3d6e421f1d3ced66cfddcde1937549973ff388b86
+$ docker pull adoptopenjdk@sha256:e0bddbb28c76035fc5fbd32bc41cd80db79ad652292dc5ba1c801f343a34c327
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17523,67 +17523,67 @@ CMD ["jshell"]
 ### `adoptopenjdk:13-openj9-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:2d0387fd6775355ce54d0850fd7281c765d3c1b1b9bfcd0727d9dac40d719195
+$ docker pull adoptopenjdk@sha256:64dcc392cd888b5338b02240615f1cda3979201bd0b9720edae3a1121f30bf9f
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.9 MB (251909276 bytes)**  
+-	Total Size: **251.9 MB (251911213 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c72a5ecba69c0215146a837268896b12e989acb82aad4c948823b128220d4c2c`
+-	Image ID: `sha256:9a0cdbae1d0922f42681f0dc8977005ad91b81354ebdf25589816904c42c99e8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 06 Jul 2020 23:38:26 GMT
+# Fri, 24 Jul 2020 15:55:41 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 06 Jul 2020 23:46:08 GMT
+# Fri, 24 Jul 2020 16:12:35 GMT
 ENV JAVA_VERSION=jdk-13.0.2+8_openj9-0.18.0
-# Mon, 06 Jul 2020 23:46:35 GMT
+# Fri, 24 Jul 2020 16:13:06 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='f71513e525172dfef695b7c27b25e151f232e05b2281648c2b794650c4970832';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jdk_ppc64le_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        s390x)          ESUM='9e7b2e921710ecaf6d3c743616dc720ef10b7b75ba0b8820bf9f9550bfa52584';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jdk_s390x_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        amd64|x86_64)          ESUM='aeecf6d30d0c847db81d07793cf97e5dc44890c29366d7d9f8f9f397f6c52590';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.2%2B8_openj9-0.18.0/OpenJDK13U-jdk_x64_linux_openj9_13.0.2_8_openj9-0.18.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 06 Jul 2020 23:46:42 GMT
+# Fri, 24 Jul 2020 16:13:36 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 06 Jul 2020 23:46:51 GMT
+# Fri, 24 Jul 2020 16:13:52 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Mon, 06 Jul 2020 23:46:55 GMT
+# Fri, 24 Jul 2020 16:14:13 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7dcc71ac4e1ced322a5c6d8dafe5b92903b9216fd4165e504dc8c51bfd7899`  
-		Last Modified: Mon, 06 Jul 2020 23:51:26 GMT  
-		Size: 14.0 MB (13956242 bytes)  
+	-	`sha256:6574bb84c5b961758d36d667ddfc046d079469e6fcb3d49ecf4e505a4a3444a7`  
+		Last Modified: Fri, 24 Jul 2020 16:23:10 GMT  
+		Size: 14.0 MB (13956698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a254287bf8344dbb61c13789776f25c88c11ec28afee64a72f2c886d43a38be`  
-		Last Modified: Mon, 06 Jul 2020 23:56:55 GMT  
-		Size: 207.5 MB (207513310 bytes)  
+	-	`sha256:398e4dbaa8793ec92e877f861121bf1352eba7bc5924bb495bb8bc6abb618eb1`  
+		Last Modified: Fri, 24 Jul 2020 16:30:46 GMT  
+		Size: 207.5 MB (207513324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:13-openj9-bionic` - linux; s390x
@@ -17924,7 +17924,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:14.0.2_8-jdk-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:880541eacd44098b538068f04d07f596efc8c9a80dd874427688af29b87d6744
+$ docker pull adoptopenjdk@sha256:7d0e369df0bc21a7960be8e3eddfbbcdad2d7fd593001fef19efb4d5b64469d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18132,65 +18132,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:14.0.2_8-jdk-hotspot` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:ad2be953c1416bb743087c29f44663036a8fd904a7e699ea259c49f5a7370881
+$ docker pull adoptopenjdk@sha256:66e2f9ccce7c0ff69d5a29fa7a844f98842013edf255183a2f5eda8d2ea9e49c
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **238.5 MB (238520289 bytes)**  
+-	Total Size: **238.5 MB (238522012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f33275da0c8663cdcd8e23792d5304c75b5a33e96dcba8dbc97d7bf3bb9bb424`
+-	Image ID: `sha256:4c45c680f066cdf61656e62c06c7091fee9230c5ca51f9b84feafa41f64be064`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:22:06 GMT
+# Fri, 24 Jul 2020 16:01:15 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12
-# Fri, 17 Jul 2020 22:22:33 GMT
+# Fri, 24 Jul 2020 16:02:03 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ee87e9f03b1fbe6f328429b78fe1a9f44900026d220c90dfd747fe0bcd62d904';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='65f193496c6977ba7aed1563edc4b5be091b5ff03e3d790074bb4e389a034b36';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='465a3b8e931896b8d95e452d479615c4bf543535c05b6ea246323ae114e67d7d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='7d27aea30e359cf0bb561f8dcca6f4591dbc3ae831981f8a19aa367d31a9709b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='7d5ee7e06909b8a99c0d029f512f67b092597aa5b0e78c109bd59405bbfa74fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:22:40 GMT
+# Fri, 24 Jul 2020 16:02:25 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:22:42 GMT
+# Fri, 24 Jul 2020 16:02:50 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d438143b1dc62febf164d4cf5a0245d9fd27a9d7164949de6c380c2b3b2325`  
-		Last Modified: Fri, 17 Jul 2020 22:31:12 GMT  
-		Size: 193.6 MB (193561557 bytes)  
+	-	`sha256:65b3b7e6c86cce5cd0b8efa457ddf2ae57278c70bc4b2b8e0f4050924c9833e2`  
+		Last Modified: Fri, 24 Jul 2020 16:25:24 GMT  
+		Size: 193.6 MB (193561543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:14.0.2_8-jdk-hotspot` - linux; s390x
@@ -18367,7 +18367,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:14.0.2_8-jdk-hotspot-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:f7ea9b623d2b7c97f5b64e89c9ca0e43fea37532c5103844ce5f27ec3322cc51
+$ docker pull adoptopenjdk@sha256:733daf2691544aac1940b052d49763f3e2ffbb21389f2ceaebe80fd5a7feedd7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18573,65 +18573,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:14.0.2_8-jdk-hotspot-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:ad2be953c1416bb743087c29f44663036a8fd904a7e699ea259c49f5a7370881
+$ docker pull adoptopenjdk@sha256:66e2f9ccce7c0ff69d5a29fa7a844f98842013edf255183a2f5eda8d2ea9e49c
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **238.5 MB (238520289 bytes)**  
+-	Total Size: **238.5 MB (238522012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f33275da0c8663cdcd8e23792d5304c75b5a33e96dcba8dbc97d7bf3bb9bb424`
+-	Image ID: `sha256:4c45c680f066cdf61656e62c06c7091fee9230c5ca51f9b84feafa41f64be064`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:22:06 GMT
+# Fri, 24 Jul 2020 16:01:15 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12
-# Fri, 17 Jul 2020 22:22:33 GMT
+# Fri, 24 Jul 2020 16:02:03 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ee87e9f03b1fbe6f328429b78fe1a9f44900026d220c90dfd747fe0bcd62d904';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='65f193496c6977ba7aed1563edc4b5be091b5ff03e3d790074bb4e389a034b36';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='465a3b8e931896b8d95e452d479615c4bf543535c05b6ea246323ae114e67d7d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='7d27aea30e359cf0bb561f8dcca6f4591dbc3ae831981f8a19aa367d31a9709b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='7d5ee7e06909b8a99c0d029f512f67b092597aa5b0e78c109bd59405bbfa74fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:22:40 GMT
+# Fri, 24 Jul 2020 16:02:25 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:22:42 GMT
+# Fri, 24 Jul 2020 16:02:50 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d438143b1dc62febf164d4cf5a0245d9fd27a9d7164949de6c380c2b3b2325`  
-		Last Modified: Fri, 17 Jul 2020 22:31:12 GMT  
-		Size: 193.6 MB (193561557 bytes)  
+	-	`sha256:65b3b7e6c86cce5cd0b8efa457ddf2ae57278c70bc4b2b8e0f4050924c9833e2`  
+		Last Modified: Fri, 24 Jul 2020 16:25:24 GMT  
+		Size: 193.6 MB (193561543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:14.0.2_8-jdk-hotspot-bionic` - linux; s390x
@@ -18946,7 +18946,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:14.0.2_8-jdk-openj9-0.21.0`
 
 ```console
-$ docker pull adoptopenjdk@sha256:9f25e72d040950345fd2fbc759cf03218372da7e01940670eb17ccd92a41aa69
+$ docker pull adoptopenjdk@sha256:a73fcf1c2b21cb513d1ea2c5b24bba8cdde233647853e105a0bef85eb9074215
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -19026,67 +19026,67 @@ CMD ["jshell"]
 ### `adoptopenjdk:14.0.2_8-jdk-openj9-0.21.0` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:95e4d3bc7a16f5a6a677748df8b8ab3031d8a43b968f397ba2f052c6050b844d
+$ docker pull adoptopenjdk@sha256:fa52bce3896b44d5d424807cbdad6e8f4835a5713e0b718014a18c716e4c079e
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **249.9 MB (249880628 bytes)**  
+-	Total Size: **249.9 MB (249882392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f60a3e442412f26141656851123ecb66bd83a1baf481a97e455009b1d1fc06c`
+-	Image ID: `sha256:4a67b9703d77e1b5892fa7cdd76b7cd0964b6716dd8dd3b2690474e887bbc63c`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:26:15 GMT
+# Fri, 24 Jul 2020 16:15:09 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12_openj9-0.21.0
-# Fri, 17 Jul 2020 22:26:54 GMT
+# Fri, 24 Jul 2020 16:15:44 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='177fd161ae14df92203d70cd618559daf889ec0c172d6ee615859352f68a2371';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_ppc64le_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='4757dc2009a0c31604be4631e02a5a3aac53ebe9b6a2046ae8995ec0e453dc1a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_s390x_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='306f7138cdb65daaf2596ec36cafbde72088144c83b2e964f0193662e6caf3be';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_x64_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:27:00 GMT
+# Fri, 24 Jul 2020 16:15:59 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:27:02 GMT
+# Fri, 24 Jul 2020 16:16:08 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Fri, 17 Jul 2020 22:27:06 GMT
+# Fri, 24 Jul 2020 16:16:16 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c9b26c9ce95e6f990bb2ef192eaadf593ced83980ff3c4e40dcd0006644a1d6`  
-		Last Modified: Fri, 17 Jul 2020 22:34:12 GMT  
-		Size: 204.9 MB (204921896 bytes)  
+	-	`sha256:b4e7a7f369e42d9cf4fb139af91671a059b1fea0bbea52b8929dc5467429dfeb`  
+		Last Modified: Fri, 24 Jul 2020 16:32:38 GMT  
+		Size: 204.9 MB (204921923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:14.0.2_8-jdk-openj9-0.21.0` - linux; s390x
@@ -19277,7 +19277,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:14.0.2_8-jdk-openj9-0.21.0-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:08481e34893f2588002bd7808e0b0053fc284b0b4e6e05093c8e1a5d87abd977
+$ docker pull adoptopenjdk@sha256:173de273a59bff731885d25222e35894f0143cd2e412d68feee412aed609f525
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -19355,67 +19355,67 @@ CMD ["jshell"]
 ### `adoptopenjdk:14.0.2_8-jdk-openj9-0.21.0-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:95e4d3bc7a16f5a6a677748df8b8ab3031d8a43b968f397ba2f052c6050b844d
+$ docker pull adoptopenjdk@sha256:fa52bce3896b44d5d424807cbdad6e8f4835a5713e0b718014a18c716e4c079e
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **249.9 MB (249880628 bytes)**  
+-	Total Size: **249.9 MB (249882392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f60a3e442412f26141656851123ecb66bd83a1baf481a97e455009b1d1fc06c`
+-	Image ID: `sha256:4a67b9703d77e1b5892fa7cdd76b7cd0964b6716dd8dd3b2690474e887bbc63c`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:26:15 GMT
+# Fri, 24 Jul 2020 16:15:09 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12_openj9-0.21.0
-# Fri, 17 Jul 2020 22:26:54 GMT
+# Fri, 24 Jul 2020 16:15:44 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='177fd161ae14df92203d70cd618559daf889ec0c172d6ee615859352f68a2371';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_ppc64le_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='4757dc2009a0c31604be4631e02a5a3aac53ebe9b6a2046ae8995ec0e453dc1a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_s390x_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='306f7138cdb65daaf2596ec36cafbde72088144c83b2e964f0193662e6caf3be';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_x64_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:27:00 GMT
+# Fri, 24 Jul 2020 16:15:59 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:27:02 GMT
+# Fri, 24 Jul 2020 16:16:08 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Fri, 17 Jul 2020 22:27:06 GMT
+# Fri, 24 Jul 2020 16:16:16 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c9b26c9ce95e6f990bb2ef192eaadf593ced83980ff3c4e40dcd0006644a1d6`  
-		Last Modified: Fri, 17 Jul 2020 22:34:12 GMT  
-		Size: 204.9 MB (204921896 bytes)  
+	-	`sha256:b4e7a7f369e42d9cf4fb139af91671a059b1fea0bbea52b8929dc5467429dfeb`  
+		Last Modified: Fri, 24 Jul 2020 16:32:38 GMT  
+		Size: 204.9 MB (204921923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:14.0.2_8-jdk-openj9-0.21.0-bionic` - linux; s390x
@@ -19756,7 +19756,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:14.0.2_8-jre-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:82f6c29a2f1325f9d7905e82d14619430b8d802105d92f884edac3117aa4ae2f
+$ docker pull adoptopenjdk@sha256:432af126869853ae64f0f0ad208ec589bc4cff5952f5d0f5af1c9c7a80bb0f9b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -19958,63 +19958,63 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:14.0.2_8-jre-hotspot` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:445f6c5d79f556c443830cdc72d428cd0fa6e0753f3c5c62ed4ab30e389dd5b2
+$ docker pull adoptopenjdk@sha256:633a881dfe340ba9b0a619f5a5cf4fae9d1e02d33f244293f254cabc8bde91bd
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **98.3 MB (98308114 bytes)**  
+-	Total Size: **98.3 MB (98309810 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47e053eb650b02e8179265a421d3a1a92f12a051b250b482572798952152526e`
+-	Image ID: `sha256:e300ba89583250ad78916f35f6807ae57366bee3a2178c718af3e568a2a24153`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:22:06 GMT
+# Fri, 24 Jul 2020 16:01:15 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12
-# Fri, 17 Jul 2020 22:23:10 GMT
+# Fri, 24 Jul 2020 16:03:52 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='2b749ceead19d68dd7e3c28b143dc4f94bb0916378a98b7346e851318ea4da84';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='4468ecf74956783ae41a46e8ba023c003c69e4d111622944aad1af764a1bc4af';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='0f96998be562cfbe8a4114581349dbd2609d0a23091e538fe142dcd9c83e70cf';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='9c4a87ea44165ccbcab5124b997ec1af1551bd2a2b255fca57d7a4e19c2075d3';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='1107845947da56e6bdad0da0b79210a079a74ec5c806f815ec5db9d09e1a9236';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:23:19 GMT
+# Fri, 24 Jul 2020 16:04:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae3d692cee73e9b939a2d5024e26d9b9721e54523f1087116dee41d0fabb08e7`  
-		Last Modified: Fri, 17 Jul 2020 22:31:38 GMT  
-		Size: 53.3 MB (53349382 bytes)  
+	-	`sha256:dd970d01cdca66b92ee26a90e339baa3335de935025dcdcc200dee5a16b46038`  
+		Last Modified: Fri, 24 Jul 2020 16:26:13 GMT  
+		Size: 53.3 MB (53349341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:14.0.2_8-jre-hotspot` - linux; s390x
@@ -20177,7 +20177,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk14-binaries/
 ## `adoptopenjdk:14.0.2_8-jre-hotspot-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:ebd8b72ab8dd18272e1d6bb55018ab44c2f5fbcdb6e82f499e9b5de69065012d
+$ docker pull adoptopenjdk@sha256:7d3472a7ad8d5eb11df1d8a8d33cb9d7198faf66a192a75c1cd284d651be3bcb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -20377,63 +20377,63 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:14.0.2_8-jre-hotspot-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:445f6c5d79f556c443830cdc72d428cd0fa6e0753f3c5c62ed4ab30e389dd5b2
+$ docker pull adoptopenjdk@sha256:633a881dfe340ba9b0a619f5a5cf4fae9d1e02d33f244293f254cabc8bde91bd
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **98.3 MB (98308114 bytes)**  
+-	Total Size: **98.3 MB (98309810 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47e053eb650b02e8179265a421d3a1a92f12a051b250b482572798952152526e`
+-	Image ID: `sha256:e300ba89583250ad78916f35f6807ae57366bee3a2178c718af3e568a2a24153`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:22:06 GMT
+# Fri, 24 Jul 2020 16:01:15 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12
-# Fri, 17 Jul 2020 22:23:10 GMT
+# Fri, 24 Jul 2020 16:03:52 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='2b749ceead19d68dd7e3c28b143dc4f94bb0916378a98b7346e851318ea4da84';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='4468ecf74956783ae41a46e8ba023c003c69e4d111622944aad1af764a1bc4af';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='0f96998be562cfbe8a4114581349dbd2609d0a23091e538fe142dcd9c83e70cf';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='9c4a87ea44165ccbcab5124b997ec1af1551bd2a2b255fca57d7a4e19c2075d3';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='1107845947da56e6bdad0da0b79210a079a74ec5c806f815ec5db9d09e1a9236';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:23:19 GMT
+# Fri, 24 Jul 2020 16:04:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae3d692cee73e9b939a2d5024e26d9b9721e54523f1087116dee41d0fabb08e7`  
-		Last Modified: Fri, 17 Jul 2020 22:31:38 GMT  
-		Size: 53.3 MB (53349382 bytes)  
+	-	`sha256:dd970d01cdca66b92ee26a90e339baa3335de935025dcdcc200dee5a16b46038`  
+		Last Modified: Fri, 24 Jul 2020 16:26:13 GMT  
+		Size: 53.3 MB (53349341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:14.0.2_8-jre-hotspot-bionic` - linux; s390x
@@ -20722,7 +20722,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk14-binaries/
 ## `adoptopenjdk:14.0.2_8-jre-openj9-0.21.0`
 
 ```console
-$ docker pull adoptopenjdk@sha256:1d63e28d273a4e8efc7c1559b11fe479eabb99adbdfde7769c675d7c6ba0caaa
+$ docker pull adoptopenjdk@sha256:fa77e795cb444f8381454bd275455158dad7b3f17db0dd2149b3afbe46ad8ae5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -20800,65 +20800,65 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:14.0.2_8-jre-openj9-0.21.0` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:b6ab7dfaf879112c9a5cd90116e332f44d837bb3ba4abbdb9f8b89647b3aec26
+$ docker pull adoptopenjdk@sha256:6083a22eb3481efcd5862262e3d260bd85990377aa574c22754da205a33a12fd
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.6 MB (96560214 bytes)**  
+-	Total Size: **96.6 MB (96561962 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2e345aa033b27a7419da4fcd67814137105809fb140aebd7dae95900c15852e`
+-	Image ID: `sha256:77129aa35980f8105d5d39ae707bd2f0cf4bf4e0462d6a4b34708a6cf634dc2d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:26:15 GMT
+# Fri, 24 Jul 2020 16:15:09 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12_openj9-0.21.0
-# Fri, 17 Jul 2020 22:27:38 GMT
+# Fri, 24 Jul 2020 16:16:47 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='ad7a55a3669878c0c7d7c66faafe7c626d4341374719b6fdd81d2986c6e80945';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jre_ppc64le_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='6a3c0f61873bfcd23da806f5df9267e08cbfd064ab7cf6e8b08648b4cbe2f9e2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jre_s390x_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='3a137146a7b0bd8b029e72beb37c5fbb09dcfb9e33a10125076fff1555227cfd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jre_x64_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:27:41 GMT
+# Fri, 24 Jul 2020 16:17:03 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:27:45 GMT
+# Fri, 24 Jul 2020 16:17:11 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b46e65dd1a140da285b6987b1f8e46f5e4da780ce2cc825b0fba3b304d8e0c7f`  
-		Last Modified: Fri, 17 Jul 2020 22:34:41 GMT  
-		Size: 51.6 MB (51601482 bytes)  
+	-	`sha256:e262f57d2ab6e9f74ccc4f33b1c4043626ef002e59f70b90dc49dc658654f135`  
+		Last Modified: Fri, 24 Jul 2020 16:33:21 GMT  
+		Size: 51.6 MB (51601493 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:14.0.2_8-jre-openj9-0.21.0` - linux; s390x
@@ -21035,7 +21035,7 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ## `adoptopenjdk:14.0.2_8-jre-openj9-0.21.0-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:f0d8b6a625f2883bde369f9cd65a17d6b2cf12b2fd28e08bd2657191bb6a341f
+$ docker pull adoptopenjdk@sha256:af1f3af42a1b9874eec0b00d8b8925c96769efe329a9c4607dcd4aeb4602bc54
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -21111,65 +21111,65 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:14.0.2_8-jre-openj9-0.21.0-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:b6ab7dfaf879112c9a5cd90116e332f44d837bb3ba4abbdb9f8b89647b3aec26
+$ docker pull adoptopenjdk@sha256:6083a22eb3481efcd5862262e3d260bd85990377aa574c22754da205a33a12fd
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.6 MB (96560214 bytes)**  
+-	Total Size: **96.6 MB (96561962 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2e345aa033b27a7419da4fcd67814137105809fb140aebd7dae95900c15852e`
+-	Image ID: `sha256:77129aa35980f8105d5d39ae707bd2f0cf4bf4e0462d6a4b34708a6cf634dc2d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:26:15 GMT
+# Fri, 24 Jul 2020 16:15:09 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12_openj9-0.21.0
-# Fri, 17 Jul 2020 22:27:38 GMT
+# Fri, 24 Jul 2020 16:16:47 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='ad7a55a3669878c0c7d7c66faafe7c626d4341374719b6fdd81d2986c6e80945';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jre_ppc64le_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='6a3c0f61873bfcd23da806f5df9267e08cbfd064ab7cf6e8b08648b4cbe2f9e2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jre_s390x_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='3a137146a7b0bd8b029e72beb37c5fbb09dcfb9e33a10125076fff1555227cfd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jre_x64_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:27:41 GMT
+# Fri, 24 Jul 2020 16:17:03 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:27:45 GMT
+# Fri, 24 Jul 2020 16:17:11 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b46e65dd1a140da285b6987b1f8e46f5e4da780ce2cc825b0fba3b304d8e0c7f`  
-		Last Modified: Fri, 17 Jul 2020 22:34:41 GMT  
-		Size: 51.6 MB (51601482 bytes)  
+	-	`sha256:e262f57d2ab6e9f74ccc4f33b1c4043626ef002e59f70b90dc49dc658654f135`  
+		Last Modified: Fri, 24 Jul 2020 16:33:21 GMT  
+		Size: 51.6 MB (51601493 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:14.0.2_8-jre-openj9-0.21.0-bionic` - linux; s390x
@@ -21484,7 +21484,7 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ## `adoptopenjdk:14-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:880541eacd44098b538068f04d07f596efc8c9a80dd874427688af29b87d6744
+$ docker pull adoptopenjdk@sha256:7d0e369df0bc21a7960be8e3eddfbbcdad2d7fd593001fef19efb4d5b64469d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -21692,65 +21692,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:14-hotspot` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:ad2be953c1416bb743087c29f44663036a8fd904a7e699ea259c49f5a7370881
+$ docker pull adoptopenjdk@sha256:66e2f9ccce7c0ff69d5a29fa7a844f98842013edf255183a2f5eda8d2ea9e49c
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **238.5 MB (238520289 bytes)**  
+-	Total Size: **238.5 MB (238522012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f33275da0c8663cdcd8e23792d5304c75b5a33e96dcba8dbc97d7bf3bb9bb424`
+-	Image ID: `sha256:4c45c680f066cdf61656e62c06c7091fee9230c5ca51f9b84feafa41f64be064`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:22:06 GMT
+# Fri, 24 Jul 2020 16:01:15 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12
-# Fri, 17 Jul 2020 22:22:33 GMT
+# Fri, 24 Jul 2020 16:02:03 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ee87e9f03b1fbe6f328429b78fe1a9f44900026d220c90dfd747fe0bcd62d904';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='65f193496c6977ba7aed1563edc4b5be091b5ff03e3d790074bb4e389a034b36';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='465a3b8e931896b8d95e452d479615c4bf543535c05b6ea246323ae114e67d7d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='7d27aea30e359cf0bb561f8dcca6f4591dbc3ae831981f8a19aa367d31a9709b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='7d5ee7e06909b8a99c0d029f512f67b092597aa5b0e78c109bd59405bbfa74fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:22:40 GMT
+# Fri, 24 Jul 2020 16:02:25 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:22:42 GMT
+# Fri, 24 Jul 2020 16:02:50 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d438143b1dc62febf164d4cf5a0245d9fd27a9d7164949de6c380c2b3b2325`  
-		Last Modified: Fri, 17 Jul 2020 22:31:12 GMT  
-		Size: 193.6 MB (193561557 bytes)  
+	-	`sha256:65b3b7e6c86cce5cd0b8efa457ddf2ae57278c70bc4b2b8e0f4050924c9833e2`  
+		Last Modified: Fri, 24 Jul 2020 16:25:24 GMT  
+		Size: 193.6 MB (193561543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:14-hotspot` - linux; s390x
@@ -21927,7 +21927,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:14-hotspot-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:f7ea9b623d2b7c97f5b64e89c9ca0e43fea37532c5103844ce5f27ec3322cc51
+$ docker pull adoptopenjdk@sha256:733daf2691544aac1940b052d49763f3e2ffbb21389f2ceaebe80fd5a7feedd7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -22133,65 +22133,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:14-hotspot-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:ad2be953c1416bb743087c29f44663036a8fd904a7e699ea259c49f5a7370881
+$ docker pull adoptopenjdk@sha256:66e2f9ccce7c0ff69d5a29fa7a844f98842013edf255183a2f5eda8d2ea9e49c
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **238.5 MB (238520289 bytes)**  
+-	Total Size: **238.5 MB (238522012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f33275da0c8663cdcd8e23792d5304c75b5a33e96dcba8dbc97d7bf3bb9bb424`
+-	Image ID: `sha256:4c45c680f066cdf61656e62c06c7091fee9230c5ca51f9b84feafa41f64be064`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:22:06 GMT
+# Fri, 24 Jul 2020 16:01:15 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12
-# Fri, 17 Jul 2020 22:22:33 GMT
+# Fri, 24 Jul 2020 16:02:03 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ee87e9f03b1fbe6f328429b78fe1a9f44900026d220c90dfd747fe0bcd62d904';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='65f193496c6977ba7aed1563edc4b5be091b5ff03e3d790074bb4e389a034b36';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='465a3b8e931896b8d95e452d479615c4bf543535c05b6ea246323ae114e67d7d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='7d27aea30e359cf0bb561f8dcca6f4591dbc3ae831981f8a19aa367d31a9709b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='7d5ee7e06909b8a99c0d029f512f67b092597aa5b0e78c109bd59405bbfa74fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:22:40 GMT
+# Fri, 24 Jul 2020 16:02:25 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:22:42 GMT
+# Fri, 24 Jul 2020 16:02:50 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d438143b1dc62febf164d4cf5a0245d9fd27a9d7164949de6c380c2b3b2325`  
-		Last Modified: Fri, 17 Jul 2020 22:31:12 GMT  
-		Size: 193.6 MB (193561557 bytes)  
+	-	`sha256:65b3b7e6c86cce5cd0b8efa457ddf2ae57278c70bc4b2b8e0f4050924c9833e2`  
+		Last Modified: Fri, 24 Jul 2020 16:25:24 GMT  
+		Size: 193.6 MB (193561543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:14-hotspot-bionic` - linux; s390x
@@ -22506,7 +22506,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:14-jdk-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:880541eacd44098b538068f04d07f596efc8c9a80dd874427688af29b87d6744
+$ docker pull adoptopenjdk@sha256:7d0e369df0bc21a7960be8e3eddfbbcdad2d7fd593001fef19efb4d5b64469d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -22714,65 +22714,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:14-jdk-hotspot` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:ad2be953c1416bb743087c29f44663036a8fd904a7e699ea259c49f5a7370881
+$ docker pull adoptopenjdk@sha256:66e2f9ccce7c0ff69d5a29fa7a844f98842013edf255183a2f5eda8d2ea9e49c
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **238.5 MB (238520289 bytes)**  
+-	Total Size: **238.5 MB (238522012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f33275da0c8663cdcd8e23792d5304c75b5a33e96dcba8dbc97d7bf3bb9bb424`
+-	Image ID: `sha256:4c45c680f066cdf61656e62c06c7091fee9230c5ca51f9b84feafa41f64be064`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:22:06 GMT
+# Fri, 24 Jul 2020 16:01:15 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12
-# Fri, 17 Jul 2020 22:22:33 GMT
+# Fri, 24 Jul 2020 16:02:03 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ee87e9f03b1fbe6f328429b78fe1a9f44900026d220c90dfd747fe0bcd62d904';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='65f193496c6977ba7aed1563edc4b5be091b5ff03e3d790074bb4e389a034b36';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='465a3b8e931896b8d95e452d479615c4bf543535c05b6ea246323ae114e67d7d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='7d27aea30e359cf0bb561f8dcca6f4591dbc3ae831981f8a19aa367d31a9709b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='7d5ee7e06909b8a99c0d029f512f67b092597aa5b0e78c109bd59405bbfa74fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:22:40 GMT
+# Fri, 24 Jul 2020 16:02:25 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:22:42 GMT
+# Fri, 24 Jul 2020 16:02:50 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d438143b1dc62febf164d4cf5a0245d9fd27a9d7164949de6c380c2b3b2325`  
-		Last Modified: Fri, 17 Jul 2020 22:31:12 GMT  
-		Size: 193.6 MB (193561557 bytes)  
+	-	`sha256:65b3b7e6c86cce5cd0b8efa457ddf2ae57278c70bc4b2b8e0f4050924c9833e2`  
+		Last Modified: Fri, 24 Jul 2020 16:25:24 GMT  
+		Size: 193.6 MB (193561543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:14-jdk-hotspot` - linux; s390x
@@ -22949,7 +22949,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:14-jdk-hotspot-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:f7ea9b623d2b7c97f5b64e89c9ca0e43fea37532c5103844ce5f27ec3322cc51
+$ docker pull adoptopenjdk@sha256:733daf2691544aac1940b052d49763f3e2ffbb21389f2ceaebe80fd5a7feedd7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23155,65 +23155,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:14-jdk-hotspot-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:ad2be953c1416bb743087c29f44663036a8fd904a7e699ea259c49f5a7370881
+$ docker pull adoptopenjdk@sha256:66e2f9ccce7c0ff69d5a29fa7a844f98842013edf255183a2f5eda8d2ea9e49c
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **238.5 MB (238520289 bytes)**  
+-	Total Size: **238.5 MB (238522012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f33275da0c8663cdcd8e23792d5304c75b5a33e96dcba8dbc97d7bf3bb9bb424`
+-	Image ID: `sha256:4c45c680f066cdf61656e62c06c7091fee9230c5ca51f9b84feafa41f64be064`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:22:06 GMT
+# Fri, 24 Jul 2020 16:01:15 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12
-# Fri, 17 Jul 2020 22:22:33 GMT
+# Fri, 24 Jul 2020 16:02:03 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ee87e9f03b1fbe6f328429b78fe1a9f44900026d220c90dfd747fe0bcd62d904';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='65f193496c6977ba7aed1563edc4b5be091b5ff03e3d790074bb4e389a034b36';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='465a3b8e931896b8d95e452d479615c4bf543535c05b6ea246323ae114e67d7d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='7d27aea30e359cf0bb561f8dcca6f4591dbc3ae831981f8a19aa367d31a9709b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='7d5ee7e06909b8a99c0d029f512f67b092597aa5b0e78c109bd59405bbfa74fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:22:40 GMT
+# Fri, 24 Jul 2020 16:02:25 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:22:42 GMT
+# Fri, 24 Jul 2020 16:02:50 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d438143b1dc62febf164d4cf5a0245d9fd27a9d7164949de6c380c2b3b2325`  
-		Last Modified: Fri, 17 Jul 2020 22:31:12 GMT  
-		Size: 193.6 MB (193561557 bytes)  
+	-	`sha256:65b3b7e6c86cce5cd0b8efa457ddf2ae57278c70bc4b2b8e0f4050924c9833e2`  
+		Last Modified: Fri, 24 Jul 2020 16:25:24 GMT  
+		Size: 193.6 MB (193561543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:14-jdk-hotspot-bionic` - linux; s390x
@@ -23528,7 +23528,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:14-jdk-openj9`
 
 ```console
-$ docker pull adoptopenjdk@sha256:9f25e72d040950345fd2fbc759cf03218372da7e01940670eb17ccd92a41aa69
+$ docker pull adoptopenjdk@sha256:a73fcf1c2b21cb513d1ea2c5b24bba8cdde233647853e105a0bef85eb9074215
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23608,67 +23608,67 @@ CMD ["jshell"]
 ### `adoptopenjdk:14-jdk-openj9` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:95e4d3bc7a16f5a6a677748df8b8ab3031d8a43b968f397ba2f052c6050b844d
+$ docker pull adoptopenjdk@sha256:fa52bce3896b44d5d424807cbdad6e8f4835a5713e0b718014a18c716e4c079e
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **249.9 MB (249880628 bytes)**  
+-	Total Size: **249.9 MB (249882392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f60a3e442412f26141656851123ecb66bd83a1baf481a97e455009b1d1fc06c`
+-	Image ID: `sha256:4a67b9703d77e1b5892fa7cdd76b7cd0964b6716dd8dd3b2690474e887bbc63c`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:26:15 GMT
+# Fri, 24 Jul 2020 16:15:09 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12_openj9-0.21.0
-# Fri, 17 Jul 2020 22:26:54 GMT
+# Fri, 24 Jul 2020 16:15:44 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='177fd161ae14df92203d70cd618559daf889ec0c172d6ee615859352f68a2371';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_ppc64le_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='4757dc2009a0c31604be4631e02a5a3aac53ebe9b6a2046ae8995ec0e453dc1a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_s390x_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='306f7138cdb65daaf2596ec36cafbde72088144c83b2e964f0193662e6caf3be';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_x64_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:27:00 GMT
+# Fri, 24 Jul 2020 16:15:59 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:27:02 GMT
+# Fri, 24 Jul 2020 16:16:08 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Fri, 17 Jul 2020 22:27:06 GMT
+# Fri, 24 Jul 2020 16:16:16 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c9b26c9ce95e6f990bb2ef192eaadf593ced83980ff3c4e40dcd0006644a1d6`  
-		Last Modified: Fri, 17 Jul 2020 22:34:12 GMT  
-		Size: 204.9 MB (204921896 bytes)  
+	-	`sha256:b4e7a7f369e42d9cf4fb139af91671a059b1fea0bbea52b8929dc5467429dfeb`  
+		Last Modified: Fri, 24 Jul 2020 16:32:38 GMT  
+		Size: 204.9 MB (204921923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:14-jdk-openj9` - linux; s390x
@@ -23859,7 +23859,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:14-jdk-openj9-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:08481e34893f2588002bd7808e0b0053fc284b0b4e6e05093c8e1a5d87abd977
+$ docker pull adoptopenjdk@sha256:173de273a59bff731885d25222e35894f0143cd2e412d68feee412aed609f525
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23937,67 +23937,67 @@ CMD ["jshell"]
 ### `adoptopenjdk:14-jdk-openj9-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:95e4d3bc7a16f5a6a677748df8b8ab3031d8a43b968f397ba2f052c6050b844d
+$ docker pull adoptopenjdk@sha256:fa52bce3896b44d5d424807cbdad6e8f4835a5713e0b718014a18c716e4c079e
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **249.9 MB (249880628 bytes)**  
+-	Total Size: **249.9 MB (249882392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f60a3e442412f26141656851123ecb66bd83a1baf481a97e455009b1d1fc06c`
+-	Image ID: `sha256:4a67b9703d77e1b5892fa7cdd76b7cd0964b6716dd8dd3b2690474e887bbc63c`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:26:15 GMT
+# Fri, 24 Jul 2020 16:15:09 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12_openj9-0.21.0
-# Fri, 17 Jul 2020 22:26:54 GMT
+# Fri, 24 Jul 2020 16:15:44 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='177fd161ae14df92203d70cd618559daf889ec0c172d6ee615859352f68a2371';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_ppc64le_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='4757dc2009a0c31604be4631e02a5a3aac53ebe9b6a2046ae8995ec0e453dc1a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_s390x_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='306f7138cdb65daaf2596ec36cafbde72088144c83b2e964f0193662e6caf3be';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_x64_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:27:00 GMT
+# Fri, 24 Jul 2020 16:15:59 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:27:02 GMT
+# Fri, 24 Jul 2020 16:16:08 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Fri, 17 Jul 2020 22:27:06 GMT
+# Fri, 24 Jul 2020 16:16:16 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c9b26c9ce95e6f990bb2ef192eaadf593ced83980ff3c4e40dcd0006644a1d6`  
-		Last Modified: Fri, 17 Jul 2020 22:34:12 GMT  
-		Size: 204.9 MB (204921896 bytes)  
+	-	`sha256:b4e7a7f369e42d9cf4fb139af91671a059b1fea0bbea52b8929dc5467429dfeb`  
+		Last Modified: Fri, 24 Jul 2020 16:32:38 GMT  
+		Size: 204.9 MB (204921923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:14-jdk-openj9-bionic` - linux; s390x
@@ -24338,7 +24338,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:14-jre-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:82f6c29a2f1325f9d7905e82d14619430b8d802105d92f884edac3117aa4ae2f
+$ docker pull adoptopenjdk@sha256:432af126869853ae64f0f0ad208ec589bc4cff5952f5d0f5af1c9c7a80bb0f9b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -24540,63 +24540,63 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:14-jre-hotspot` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:445f6c5d79f556c443830cdc72d428cd0fa6e0753f3c5c62ed4ab30e389dd5b2
+$ docker pull adoptopenjdk@sha256:633a881dfe340ba9b0a619f5a5cf4fae9d1e02d33f244293f254cabc8bde91bd
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **98.3 MB (98308114 bytes)**  
+-	Total Size: **98.3 MB (98309810 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47e053eb650b02e8179265a421d3a1a92f12a051b250b482572798952152526e`
+-	Image ID: `sha256:e300ba89583250ad78916f35f6807ae57366bee3a2178c718af3e568a2a24153`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:22:06 GMT
+# Fri, 24 Jul 2020 16:01:15 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12
-# Fri, 17 Jul 2020 22:23:10 GMT
+# Fri, 24 Jul 2020 16:03:52 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='2b749ceead19d68dd7e3c28b143dc4f94bb0916378a98b7346e851318ea4da84';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='4468ecf74956783ae41a46e8ba023c003c69e4d111622944aad1af764a1bc4af';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='0f96998be562cfbe8a4114581349dbd2609d0a23091e538fe142dcd9c83e70cf';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='9c4a87ea44165ccbcab5124b997ec1af1551bd2a2b255fca57d7a4e19c2075d3';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='1107845947da56e6bdad0da0b79210a079a74ec5c806f815ec5db9d09e1a9236';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:23:19 GMT
+# Fri, 24 Jul 2020 16:04:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae3d692cee73e9b939a2d5024e26d9b9721e54523f1087116dee41d0fabb08e7`  
-		Last Modified: Fri, 17 Jul 2020 22:31:38 GMT  
-		Size: 53.3 MB (53349382 bytes)  
+	-	`sha256:dd970d01cdca66b92ee26a90e339baa3335de935025dcdcc200dee5a16b46038`  
+		Last Modified: Fri, 24 Jul 2020 16:26:13 GMT  
+		Size: 53.3 MB (53349341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:14-jre-hotspot` - linux; s390x
@@ -24759,7 +24759,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk14-binaries/
 ## `adoptopenjdk:14-jre-hotspot-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:ebd8b72ab8dd18272e1d6bb55018ab44c2f5fbcdb6e82f499e9b5de69065012d
+$ docker pull adoptopenjdk@sha256:7d3472a7ad8d5eb11df1d8a8d33cb9d7198faf66a192a75c1cd284d651be3bcb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -24959,63 +24959,63 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:14-jre-hotspot-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:445f6c5d79f556c443830cdc72d428cd0fa6e0753f3c5c62ed4ab30e389dd5b2
+$ docker pull adoptopenjdk@sha256:633a881dfe340ba9b0a619f5a5cf4fae9d1e02d33f244293f254cabc8bde91bd
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **98.3 MB (98308114 bytes)**  
+-	Total Size: **98.3 MB (98309810 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47e053eb650b02e8179265a421d3a1a92f12a051b250b482572798952152526e`
+-	Image ID: `sha256:e300ba89583250ad78916f35f6807ae57366bee3a2178c718af3e568a2a24153`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:22:06 GMT
+# Fri, 24 Jul 2020 16:01:15 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12
-# Fri, 17 Jul 2020 22:23:10 GMT
+# Fri, 24 Jul 2020 16:03:52 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='2b749ceead19d68dd7e3c28b143dc4f94bb0916378a98b7346e851318ea4da84';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='4468ecf74956783ae41a46e8ba023c003c69e4d111622944aad1af764a1bc4af';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='0f96998be562cfbe8a4114581349dbd2609d0a23091e538fe142dcd9c83e70cf';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='9c4a87ea44165ccbcab5124b997ec1af1551bd2a2b255fca57d7a4e19c2075d3';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='1107845947da56e6bdad0da0b79210a079a74ec5c806f815ec5db9d09e1a9236';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jre_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:23:19 GMT
+# Fri, 24 Jul 2020 16:04:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae3d692cee73e9b939a2d5024e26d9b9721e54523f1087116dee41d0fabb08e7`  
-		Last Modified: Fri, 17 Jul 2020 22:31:38 GMT  
-		Size: 53.3 MB (53349382 bytes)  
+	-	`sha256:dd970d01cdca66b92ee26a90e339baa3335de935025dcdcc200dee5a16b46038`  
+		Last Modified: Fri, 24 Jul 2020 16:26:13 GMT  
+		Size: 53.3 MB (53349341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:14-jre-hotspot-bionic` - linux; s390x
@@ -25304,7 +25304,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk14-binaries/
 ## `adoptopenjdk:14-jre-openj9`
 
 ```console
-$ docker pull adoptopenjdk@sha256:1d63e28d273a4e8efc7c1559b11fe479eabb99adbdfde7769c675d7c6ba0caaa
+$ docker pull adoptopenjdk@sha256:fa77e795cb444f8381454bd275455158dad7b3f17db0dd2149b3afbe46ad8ae5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -25382,65 +25382,65 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:14-jre-openj9` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:b6ab7dfaf879112c9a5cd90116e332f44d837bb3ba4abbdb9f8b89647b3aec26
+$ docker pull adoptopenjdk@sha256:6083a22eb3481efcd5862262e3d260bd85990377aa574c22754da205a33a12fd
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.6 MB (96560214 bytes)**  
+-	Total Size: **96.6 MB (96561962 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2e345aa033b27a7419da4fcd67814137105809fb140aebd7dae95900c15852e`
+-	Image ID: `sha256:77129aa35980f8105d5d39ae707bd2f0cf4bf4e0462d6a4b34708a6cf634dc2d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:26:15 GMT
+# Fri, 24 Jul 2020 16:15:09 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12_openj9-0.21.0
-# Fri, 17 Jul 2020 22:27:38 GMT
+# Fri, 24 Jul 2020 16:16:47 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='ad7a55a3669878c0c7d7c66faafe7c626d4341374719b6fdd81d2986c6e80945';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jre_ppc64le_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='6a3c0f61873bfcd23da806f5df9267e08cbfd064ab7cf6e8b08648b4cbe2f9e2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jre_s390x_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='3a137146a7b0bd8b029e72beb37c5fbb09dcfb9e33a10125076fff1555227cfd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jre_x64_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:27:41 GMT
+# Fri, 24 Jul 2020 16:17:03 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:27:45 GMT
+# Fri, 24 Jul 2020 16:17:11 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b46e65dd1a140da285b6987b1f8e46f5e4da780ce2cc825b0fba3b304d8e0c7f`  
-		Last Modified: Fri, 17 Jul 2020 22:34:41 GMT  
-		Size: 51.6 MB (51601482 bytes)  
+	-	`sha256:e262f57d2ab6e9f74ccc4f33b1c4043626ef002e59f70b90dc49dc658654f135`  
+		Last Modified: Fri, 24 Jul 2020 16:33:21 GMT  
+		Size: 51.6 MB (51601493 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:14-jre-openj9` - linux; s390x
@@ -25617,7 +25617,7 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ## `adoptopenjdk:14-jre-openj9-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:f0d8b6a625f2883bde369f9cd65a17d6b2cf12b2fd28e08bd2657191bb6a341f
+$ docker pull adoptopenjdk@sha256:af1f3af42a1b9874eec0b00d8b8925c96769efe329a9c4607dcd4aeb4602bc54
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -25693,65 +25693,65 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:14-jre-openj9-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:b6ab7dfaf879112c9a5cd90116e332f44d837bb3ba4abbdb9f8b89647b3aec26
+$ docker pull adoptopenjdk@sha256:6083a22eb3481efcd5862262e3d260bd85990377aa574c22754da205a33a12fd
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.6 MB (96560214 bytes)**  
+-	Total Size: **96.6 MB (96561962 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2e345aa033b27a7419da4fcd67814137105809fb140aebd7dae95900c15852e`
+-	Image ID: `sha256:77129aa35980f8105d5d39ae707bd2f0cf4bf4e0462d6a4b34708a6cf634dc2d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:26:15 GMT
+# Fri, 24 Jul 2020 16:15:09 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12_openj9-0.21.0
-# Fri, 17 Jul 2020 22:27:38 GMT
+# Fri, 24 Jul 2020 16:16:47 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='ad7a55a3669878c0c7d7c66faafe7c626d4341374719b6fdd81d2986c6e80945';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jre_ppc64le_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='6a3c0f61873bfcd23da806f5df9267e08cbfd064ab7cf6e8b08648b4cbe2f9e2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jre_s390x_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='3a137146a7b0bd8b029e72beb37c5fbb09dcfb9e33a10125076fff1555227cfd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jre_x64_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:27:41 GMT
+# Fri, 24 Jul 2020 16:17:03 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:27:45 GMT
+# Fri, 24 Jul 2020 16:17:11 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b46e65dd1a140da285b6987b1f8e46f5e4da780ce2cc825b0fba3b304d8e0c7f`  
-		Last Modified: Fri, 17 Jul 2020 22:34:41 GMT  
-		Size: 51.6 MB (51601482 bytes)  
+	-	`sha256:e262f57d2ab6e9f74ccc4f33b1c4043626ef002e59f70b90dc49dc658654f135`  
+		Last Modified: Fri, 24 Jul 2020 16:33:21 GMT  
+		Size: 51.6 MB (51601493 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:14-jre-openj9-bionic` - linux; s390x
@@ -26066,7 +26066,7 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ## `adoptopenjdk:14-openj9`
 
 ```console
-$ docker pull adoptopenjdk@sha256:9f25e72d040950345fd2fbc759cf03218372da7e01940670eb17ccd92a41aa69
+$ docker pull adoptopenjdk@sha256:a73fcf1c2b21cb513d1ea2c5b24bba8cdde233647853e105a0bef85eb9074215
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -26146,67 +26146,67 @@ CMD ["jshell"]
 ### `adoptopenjdk:14-openj9` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:95e4d3bc7a16f5a6a677748df8b8ab3031d8a43b968f397ba2f052c6050b844d
+$ docker pull adoptopenjdk@sha256:fa52bce3896b44d5d424807cbdad6e8f4835a5713e0b718014a18c716e4c079e
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **249.9 MB (249880628 bytes)**  
+-	Total Size: **249.9 MB (249882392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f60a3e442412f26141656851123ecb66bd83a1baf481a97e455009b1d1fc06c`
+-	Image ID: `sha256:4a67b9703d77e1b5892fa7cdd76b7cd0964b6716dd8dd3b2690474e887bbc63c`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:26:15 GMT
+# Fri, 24 Jul 2020 16:15:09 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12_openj9-0.21.0
-# Fri, 17 Jul 2020 22:26:54 GMT
+# Fri, 24 Jul 2020 16:15:44 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='177fd161ae14df92203d70cd618559daf889ec0c172d6ee615859352f68a2371';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_ppc64le_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='4757dc2009a0c31604be4631e02a5a3aac53ebe9b6a2046ae8995ec0e453dc1a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_s390x_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='306f7138cdb65daaf2596ec36cafbde72088144c83b2e964f0193662e6caf3be';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_x64_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:27:00 GMT
+# Fri, 24 Jul 2020 16:15:59 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:27:02 GMT
+# Fri, 24 Jul 2020 16:16:08 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Fri, 17 Jul 2020 22:27:06 GMT
+# Fri, 24 Jul 2020 16:16:16 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c9b26c9ce95e6f990bb2ef192eaadf593ced83980ff3c4e40dcd0006644a1d6`  
-		Last Modified: Fri, 17 Jul 2020 22:34:12 GMT  
-		Size: 204.9 MB (204921896 bytes)  
+	-	`sha256:b4e7a7f369e42d9cf4fb139af91671a059b1fea0bbea52b8929dc5467429dfeb`  
+		Last Modified: Fri, 24 Jul 2020 16:32:38 GMT  
+		Size: 204.9 MB (204921923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:14-openj9` - linux; s390x
@@ -26397,7 +26397,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:14-openj9-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:08481e34893f2588002bd7808e0b0053fc284b0b4e6e05093c8e1a5d87abd977
+$ docker pull adoptopenjdk@sha256:173de273a59bff731885d25222e35894f0143cd2e412d68feee412aed609f525
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -26475,67 +26475,67 @@ CMD ["jshell"]
 ### `adoptopenjdk:14-openj9-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:95e4d3bc7a16f5a6a677748df8b8ab3031d8a43b968f397ba2f052c6050b844d
+$ docker pull adoptopenjdk@sha256:fa52bce3896b44d5d424807cbdad6e8f4835a5713e0b718014a18c716e4c079e
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **249.9 MB (249880628 bytes)**  
+-	Total Size: **249.9 MB (249882392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f60a3e442412f26141656851123ecb66bd83a1baf481a97e455009b1d1fc06c`
+-	Image ID: `sha256:4a67b9703d77e1b5892fa7cdd76b7cd0964b6716dd8dd3b2690474e887bbc63c`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:26:15 GMT
+# Fri, 24 Jul 2020 16:15:09 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12_openj9-0.21.0
-# Fri, 17 Jul 2020 22:26:54 GMT
+# Fri, 24 Jul 2020 16:15:44 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='177fd161ae14df92203d70cd618559daf889ec0c172d6ee615859352f68a2371';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_ppc64le_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='4757dc2009a0c31604be4631e02a5a3aac53ebe9b6a2046ae8995ec0e453dc1a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_s390x_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='306f7138cdb65daaf2596ec36cafbde72088144c83b2e964f0193662e6caf3be';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_x64_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:27:00 GMT
+# Fri, 24 Jul 2020 16:15:59 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:27:02 GMT
+# Fri, 24 Jul 2020 16:16:08 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Fri, 17 Jul 2020 22:27:06 GMT
+# Fri, 24 Jul 2020 16:16:16 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c9b26c9ce95e6f990bb2ef192eaadf593ced83980ff3c4e40dcd0006644a1d6`  
-		Last Modified: Fri, 17 Jul 2020 22:34:12 GMT  
-		Size: 204.9 MB (204921896 bytes)  
+	-	`sha256:b4e7a7f369e42d9cf4fb139af91671a059b1fea0bbea52b8929dc5467429dfeb`  
+		Last Modified: Fri, 24 Jul 2020 16:32:38 GMT  
+		Size: 204.9 MB (204921923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:14-openj9-bionic` - linux; s390x
@@ -26876,7 +26876,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:8-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:0bfcdc0d54bca00d23ff49f8b7d86cbe790a48b57563bfdadb98d2a309e91fb8
+$ docker pull adoptopenjdk@sha256:d71a15c00fa273d6190ce590bbfb71efe0871241050539fd1241b12fa2f51f21
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -27078,63 +27078,63 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:8-hotspot` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:19b4bd2d149333df21c93fc90b2c8aae51ddb7260a92a405d102399731be9cbb
+$ docker pull adoptopenjdk@sha256:377e579b2913e6137ea70ac284974aa2c8f101b99cc8797d102772f83d24f1e0
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.8 MB (145848583 bytes)**  
+-	Total Size: **145.9 MB (145850328 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9c18a437b724711772dc2e842de0149ca7df1c65115a6795853862a473f5c27`
+-	Image ID: `sha256:dc22f825fd9803d5ef02e968cfa02e799c22f15551b724130fe12c01f7917c61`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:19:31 GMT
+# Fri, 24 Jul 2020 15:45:32 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 22:19:53 GMT
+# Fri, 24 Jul 2020 15:45:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7be0b2a4c749a277302a54b456624c076b3a5b990ad502e2a72d803ab31aecab';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='dd85ebb9a64916b4b621a23729e3360adb363d430bf1e99e98f25397834d74bd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d2a16915fb85ba851145c91cda5666cb78f06bf4713a2b3bdce813779ff972c2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='a504af6924a095cfb6c392653dccd7299925048c91b399d05efa95a094820120';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='733755fd649fad6ae91fc083f7e5a5a0b56410fb6ac1815cff29f744b128b1b1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:19:58 GMT
+# Fri, 24 Jul 2020 15:46:20 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:583e8d8d18f4f748e13a594e8a2236ab9e3238629ab9dd271adb84d3c8dba551`  
-		Last Modified: Fri, 17 Jul 2020 22:29:27 GMT  
-		Size: 100.9 MB (100889851 bytes)  
+	-	`sha256:9c710c0c49381425da0d6bef2cde1374fd268bb249d5cbee4e621ada1f3f55c9`  
+		Last Modified: Fri, 24 Jul 2020 16:19:55 GMT  
+		Size: 100.9 MB (100889859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8-hotspot` - linux; s390x
@@ -27297,7 +27297,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk8-binaries/r
 ## `adoptopenjdk:8-hotspot-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:e58896eaf0dccf36b67cc0aa90949ea0e62b753b44c452beb572625888072d8b
+$ docker pull adoptopenjdk@sha256:0d8f16330a6d0c38f89209a3b9438d90a370b3e5dc3208ff8b93bfd347adfa5d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -27497,63 +27497,63 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:8-hotspot-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:19b4bd2d149333df21c93fc90b2c8aae51ddb7260a92a405d102399731be9cbb
+$ docker pull adoptopenjdk@sha256:377e579b2913e6137ea70ac284974aa2c8f101b99cc8797d102772f83d24f1e0
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.8 MB (145848583 bytes)**  
+-	Total Size: **145.9 MB (145850328 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9c18a437b724711772dc2e842de0149ca7df1c65115a6795853862a473f5c27`
+-	Image ID: `sha256:dc22f825fd9803d5ef02e968cfa02e799c22f15551b724130fe12c01f7917c61`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:19:31 GMT
+# Fri, 24 Jul 2020 15:45:32 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 22:19:53 GMT
+# Fri, 24 Jul 2020 15:45:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7be0b2a4c749a277302a54b456624c076b3a5b990ad502e2a72d803ab31aecab';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='dd85ebb9a64916b4b621a23729e3360adb363d430bf1e99e98f25397834d74bd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d2a16915fb85ba851145c91cda5666cb78f06bf4713a2b3bdce813779ff972c2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='a504af6924a095cfb6c392653dccd7299925048c91b399d05efa95a094820120';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='733755fd649fad6ae91fc083f7e5a5a0b56410fb6ac1815cff29f744b128b1b1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:19:58 GMT
+# Fri, 24 Jul 2020 15:46:20 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:583e8d8d18f4f748e13a594e8a2236ab9e3238629ab9dd271adb84d3c8dba551`  
-		Last Modified: Fri, 17 Jul 2020 22:29:27 GMT  
-		Size: 100.9 MB (100889851 bytes)  
+	-	`sha256:9c710c0c49381425da0d6bef2cde1374fd268bb249d5cbee4e621ada1f3f55c9`  
+		Last Modified: Fri, 24 Jul 2020 16:19:55 GMT  
+		Size: 100.9 MB (100889859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8-hotspot-bionic` - linux; s390x
@@ -27842,7 +27842,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk8-binaries/r
 ## `adoptopenjdk:8-jdk-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:0bfcdc0d54bca00d23ff49f8b7d86cbe790a48b57563bfdadb98d2a309e91fb8
+$ docker pull adoptopenjdk@sha256:d71a15c00fa273d6190ce590bbfb71efe0871241050539fd1241b12fa2f51f21
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -28044,63 +28044,63 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:8-jdk-hotspot` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:19b4bd2d149333df21c93fc90b2c8aae51ddb7260a92a405d102399731be9cbb
+$ docker pull adoptopenjdk@sha256:377e579b2913e6137ea70ac284974aa2c8f101b99cc8797d102772f83d24f1e0
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.8 MB (145848583 bytes)**  
+-	Total Size: **145.9 MB (145850328 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9c18a437b724711772dc2e842de0149ca7df1c65115a6795853862a473f5c27`
+-	Image ID: `sha256:dc22f825fd9803d5ef02e968cfa02e799c22f15551b724130fe12c01f7917c61`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:19:31 GMT
+# Fri, 24 Jul 2020 15:45:32 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 22:19:53 GMT
+# Fri, 24 Jul 2020 15:45:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7be0b2a4c749a277302a54b456624c076b3a5b990ad502e2a72d803ab31aecab';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='dd85ebb9a64916b4b621a23729e3360adb363d430bf1e99e98f25397834d74bd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d2a16915fb85ba851145c91cda5666cb78f06bf4713a2b3bdce813779ff972c2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='a504af6924a095cfb6c392653dccd7299925048c91b399d05efa95a094820120';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='733755fd649fad6ae91fc083f7e5a5a0b56410fb6ac1815cff29f744b128b1b1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:19:58 GMT
+# Fri, 24 Jul 2020 15:46:20 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:583e8d8d18f4f748e13a594e8a2236ab9e3238629ab9dd271adb84d3c8dba551`  
-		Last Modified: Fri, 17 Jul 2020 22:29:27 GMT  
-		Size: 100.9 MB (100889851 bytes)  
+	-	`sha256:9c710c0c49381425da0d6bef2cde1374fd268bb249d5cbee4e621ada1f3f55c9`  
+		Last Modified: Fri, 24 Jul 2020 16:19:55 GMT  
+		Size: 100.9 MB (100889859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8-jdk-hotspot` - linux; s390x
@@ -28263,7 +28263,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk8-binaries/r
 ## `adoptopenjdk:8-jdk-hotspot-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:e58896eaf0dccf36b67cc0aa90949ea0e62b753b44c452beb572625888072d8b
+$ docker pull adoptopenjdk@sha256:0d8f16330a6d0c38f89209a3b9438d90a370b3e5dc3208ff8b93bfd347adfa5d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -28463,63 +28463,63 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:8-jdk-hotspot-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:19b4bd2d149333df21c93fc90b2c8aae51ddb7260a92a405d102399731be9cbb
+$ docker pull adoptopenjdk@sha256:377e579b2913e6137ea70ac284974aa2c8f101b99cc8797d102772f83d24f1e0
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.8 MB (145848583 bytes)**  
+-	Total Size: **145.9 MB (145850328 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9c18a437b724711772dc2e842de0149ca7df1c65115a6795853862a473f5c27`
+-	Image ID: `sha256:dc22f825fd9803d5ef02e968cfa02e799c22f15551b724130fe12c01f7917c61`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:19:31 GMT
+# Fri, 24 Jul 2020 15:45:32 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 22:19:53 GMT
+# Fri, 24 Jul 2020 15:45:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7be0b2a4c749a277302a54b456624c076b3a5b990ad502e2a72d803ab31aecab';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='dd85ebb9a64916b4b621a23729e3360adb363d430bf1e99e98f25397834d74bd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d2a16915fb85ba851145c91cda5666cb78f06bf4713a2b3bdce813779ff972c2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='a504af6924a095cfb6c392653dccd7299925048c91b399d05efa95a094820120';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='733755fd649fad6ae91fc083f7e5a5a0b56410fb6ac1815cff29f744b128b1b1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:19:58 GMT
+# Fri, 24 Jul 2020 15:46:20 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:583e8d8d18f4f748e13a594e8a2236ab9e3238629ab9dd271adb84d3c8dba551`  
-		Last Modified: Fri, 17 Jul 2020 22:29:27 GMT  
-		Size: 100.9 MB (100889851 bytes)  
+	-	`sha256:9c710c0c49381425da0d6bef2cde1374fd268bb249d5cbee4e621ada1f3f55c9`  
+		Last Modified: Fri, 24 Jul 2020 16:19:55 GMT  
+		Size: 100.9 MB (100889859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8-jdk-hotspot-bionic` - linux; s390x
@@ -28808,7 +28808,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk8-binaries/r
 ## `adoptopenjdk:8-jdk-openj9`
 
 ```console
-$ docker pull adoptopenjdk@sha256:3803d386281dc6f5471349e5fafd5f2dc7854e08608ff00dff2ba12ad9533b19
+$ docker pull adoptopenjdk@sha256:30752f372ece4b5205caa6d4d0936f824d5c35e2fcaf225231c5b5989dc1acf0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -28886,65 +28886,65 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:8-jdk-openj9` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:36ff0db62f11e1bf341cfb6db92b5b0953ee6cba70f7a1538d13b34c2ac282be
+$ docker pull adoptopenjdk@sha256:11f2fca11956acd141f0af34a33c5c573a257d152ba675259e6a946c549bf6f7
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.9 MB (160912986 bytes)**  
+-	Total Size: **160.9 MB (160914712 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:66c0fbacb060f64a04cc91d25e691a0d08a079f2b134401c746cb810afb5bcb2`
+-	Image ID: `sha256:d8cd0820fb1cfec41a0a2ef92e4088cc9b092e123a227daf680efe6a0b0b70ab`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:23:30 GMT
+# Fri, 24 Jul 2020 16:05:04 GMT
 ENV JAVA_VERSION=jdk8u262-b10_openj9-0.21.0
-# Fri, 17 Jul 2020 22:23:50 GMT
+# Fri, 24 Jul 2020 16:05:44 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='8659c84c5c5d94ffed4789f06f2be401e59020b83e95fd45e71992f425483a13';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_ppc64le_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='37fe91840b1d8fa98bc6a859ef29b28e0b2187cd926c9d58743f7022640f8d8e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_s390x_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='bdeab95a04462ae48df1dc1c53c833f86bfa34bd3a86c65c7adad7c096a1dbce';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_x64_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:24:00 GMT
+# Fri, 24 Jul 2020 16:06:29 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:24:04 GMT
+# Fri, 24 Jul 2020 16:06:48 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9d28395c2dc02ea1cdf645a684d1e24bbfd047f79d33f0346f0ce41b2d503f1`  
-		Last Modified: Fri, 17 Jul 2020 22:32:04 GMT  
-		Size: 116.0 MB (115954254 bytes)  
+	-	`sha256:6b34bc22236674f3bd805378a498620ead4b2eb4084e628b1083ebe8b80e5e16`  
+		Last Modified: Fri, 24 Jul 2020 16:27:07 GMT  
+		Size: 116.0 MB (115954243 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8-jdk-openj9` - linux; s390x
@@ -29121,7 +29121,7 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ## `adoptopenjdk:8-jdk-openj9-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:3aa149257025624a3c0e1b818e3334b3247fd073f4dd047665fdf6ff99724674
+$ docker pull adoptopenjdk@sha256:3981d4c149492e7304e6e6321bf2a4b3361f9e53d49c1eae18df533547b394bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -29197,65 +29197,65 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:8-jdk-openj9-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:36ff0db62f11e1bf341cfb6db92b5b0953ee6cba70f7a1538d13b34c2ac282be
+$ docker pull adoptopenjdk@sha256:11f2fca11956acd141f0af34a33c5c573a257d152ba675259e6a946c549bf6f7
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.9 MB (160912986 bytes)**  
+-	Total Size: **160.9 MB (160914712 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:66c0fbacb060f64a04cc91d25e691a0d08a079f2b134401c746cb810afb5bcb2`
+-	Image ID: `sha256:d8cd0820fb1cfec41a0a2ef92e4088cc9b092e123a227daf680efe6a0b0b70ab`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:23:30 GMT
+# Fri, 24 Jul 2020 16:05:04 GMT
 ENV JAVA_VERSION=jdk8u262-b10_openj9-0.21.0
-# Fri, 17 Jul 2020 22:23:50 GMT
+# Fri, 24 Jul 2020 16:05:44 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='8659c84c5c5d94ffed4789f06f2be401e59020b83e95fd45e71992f425483a13';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_ppc64le_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='37fe91840b1d8fa98bc6a859ef29b28e0b2187cd926c9d58743f7022640f8d8e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_s390x_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='bdeab95a04462ae48df1dc1c53c833f86bfa34bd3a86c65c7adad7c096a1dbce';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_x64_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:24:00 GMT
+# Fri, 24 Jul 2020 16:06:29 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:24:04 GMT
+# Fri, 24 Jul 2020 16:06:48 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9d28395c2dc02ea1cdf645a684d1e24bbfd047f79d33f0346f0ce41b2d503f1`  
-		Last Modified: Fri, 17 Jul 2020 22:32:04 GMT  
-		Size: 116.0 MB (115954254 bytes)  
+	-	`sha256:6b34bc22236674f3bd805378a498620ead4b2eb4084e628b1083ebe8b80e5e16`  
+		Last Modified: Fri, 24 Jul 2020 16:27:07 GMT  
+		Size: 116.0 MB (115954243 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8-jdk-openj9-bionic` - linux; s390x
@@ -29570,7 +29570,7 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ## `adoptopenjdk:8-jre-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:2ded08408562f9379123fd7d8e9727bffd78ff595db270a42dfb66686e860d8c
+$ docker pull adoptopenjdk@sha256:87979937482aa128ee7a37ccf4bfd2a61cfb38b7a4ecdbfeb268f817d0d4e36b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -29772,63 +29772,63 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:8-jre-hotspot` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:2c3db4f36f43ce87d07c009af5793d4660ac3708cf06ec4b5cc2440f18d0f57c
+$ docker pull adoptopenjdk@sha256:8127f62685eaa67a11d2b330f56e5bbc7944c1709c73a09cd9751e99e74049a6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.1 MB (86147498 bytes)**  
+-	Total Size: **86.1 MB (86149222 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f61ab598260f0fabce4c4128db6071f5dbda6884db5cbaa010b7d383b314f363`
+-	Image ID: `sha256:75f6758f03ceff48cf0a1031ca821d03d1ad6434b6df7280c6efb1b4d75eb81f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:19:31 GMT
+# Fri, 24 Jul 2020 15:45:32 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 22:20:17 GMT
+# Fri, 24 Jul 2020 15:47:01 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:20:21 GMT
+# Fri, 24 Jul 2020 15:47:19 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fb10673e708fc7336bd57510d5fec44a9f35d9d066f3c580e8a4a9d54db3515`  
-		Last Modified: Fri, 17 Jul 2020 22:29:47 GMT  
-		Size: 41.2 MB (41188766 bytes)  
+	-	`sha256:2d9f6af69314fff500beb03e4d0a26853e0fdb1e43c051035f6dc753406fe40a`  
+		Last Modified: Fri, 24 Jul 2020 16:20:32 GMT  
+		Size: 41.2 MB (41188753 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8-jre-hotspot` - linux; s390x
@@ -29991,7 +29991,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk8-binaries/r
 ## `adoptopenjdk:8-jre-hotspot-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:857603010111ec90ec818c0912578b06abfe0e956148067fc46538c12a243490
+$ docker pull adoptopenjdk@sha256:e9b72ba44d517c5410a662393d80b1e4b81025c72720c6ac02a2cba778a542a5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -30191,63 +30191,63 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:8-jre-hotspot-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:2c3db4f36f43ce87d07c009af5793d4660ac3708cf06ec4b5cc2440f18d0f57c
+$ docker pull adoptopenjdk@sha256:8127f62685eaa67a11d2b330f56e5bbc7944c1709c73a09cd9751e99e74049a6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.1 MB (86147498 bytes)**  
+-	Total Size: **86.1 MB (86149222 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f61ab598260f0fabce4c4128db6071f5dbda6884db5cbaa010b7d383b314f363`
+-	Image ID: `sha256:75f6758f03ceff48cf0a1031ca821d03d1ad6434b6df7280c6efb1b4d75eb81f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:19:31 GMT
+# Fri, 24 Jul 2020 15:45:32 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 22:20:17 GMT
+# Fri, 24 Jul 2020 15:47:01 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:20:21 GMT
+# Fri, 24 Jul 2020 15:47:19 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fb10673e708fc7336bd57510d5fec44a9f35d9d066f3c580e8a4a9d54db3515`  
-		Last Modified: Fri, 17 Jul 2020 22:29:47 GMT  
-		Size: 41.2 MB (41188766 bytes)  
+	-	`sha256:2d9f6af69314fff500beb03e4d0a26853e0fdb1e43c051035f6dc753406fe40a`  
+		Last Modified: Fri, 24 Jul 2020 16:20:32 GMT  
+		Size: 41.2 MB (41188753 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8-jre-hotspot-bionic` - linux; s390x
@@ -30536,7 +30536,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk8-binaries/r
 ## `adoptopenjdk:8-jre-openj9`
 
 ```console
-$ docker pull adoptopenjdk@sha256:ff79e5a80862e8046a7fa46d5d8df6c22b5fbf389554ceed30f45fbbe57e3eca
+$ docker pull adoptopenjdk@sha256:e572cb9271a9d2b146c6c7663b8c31488dd578dbb2806dcc71fb430c89949fdd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -30614,65 +30614,65 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:8-jre-openj9` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:9df913bc2ad225bc817f7cb1c983dec618a19a0915a341fad2daacdbc39b324b
+$ docker pull adoptopenjdk@sha256:9bc42b0ed22b33c85a06f39bee67ab5a1899b4c57edd0b7059248514e19120c1
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **94.1 MB (94108782 bytes)**  
+-	Total Size: **94.1 MB (94110534 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90f3b51b43e487200b2831d903bb4874eb14f1c3885b69a63c913b72e4ae5e29`
+-	Image ID: `sha256:b43ef0e569440bdcfc6a557e2132c5826827eb992ca9d5db6e5af6e2ba9a77dc`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:23:30 GMT
+# Fri, 24 Jul 2020 16:05:04 GMT
 ENV JAVA_VERSION=jdk8u262-b10_openj9-0.21.0
-# Fri, 17 Jul 2020 22:24:28 GMT
+# Fri, 24 Jul 2020 16:07:58 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='722517d9565bd9602580609114eb0de9b40b01050d52ff7bae24c438d363e186';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jre_ppc64le_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='c14aeedf4e989a6b31e00d6e18b8377957b07b000cac316aee9d973ef6d65b6f';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jre_s390x_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='aef8750b492ff6371318cf5138e38827d8895815b2ac079dcfcb02007a45c7f6';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jre_x64_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:24:34 GMT
+# Fri, 24 Jul 2020 16:08:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:24:36 GMT
+# Fri, 24 Jul 2020 16:08:24 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5619f87564e3f3e7b4085ba86ac2983c16c46479b5a7e4f631e9f17b63528f7c`  
-		Last Modified: Fri, 17 Jul 2020 22:32:27 GMT  
-		Size: 49.2 MB (49150050 bytes)  
+	-	`sha256:2dd8a98ce6c94c3786de5ce0843ed3eec2a800302a4e9761147b94fefc251ec4`  
+		Last Modified: Fri, 24 Jul 2020 16:27:48 GMT  
+		Size: 49.2 MB (49150065 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8-jre-openj9` - linux; s390x
@@ -30849,7 +30849,7 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ## `adoptopenjdk:8-jre-openj9-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:31c8fd271b602e6ad0bf2989d15c4a143d0cfe2a847a48b6e7325f73e4f9cb0a
+$ docker pull adoptopenjdk@sha256:8b17ee62b4eebf47570e9a96678a4fefaa6f35cecd167a15716b91070bc95b3e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -30925,65 +30925,65 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:8-jre-openj9-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:9df913bc2ad225bc817f7cb1c983dec618a19a0915a341fad2daacdbc39b324b
+$ docker pull adoptopenjdk@sha256:9bc42b0ed22b33c85a06f39bee67ab5a1899b4c57edd0b7059248514e19120c1
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **94.1 MB (94108782 bytes)**  
+-	Total Size: **94.1 MB (94110534 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90f3b51b43e487200b2831d903bb4874eb14f1c3885b69a63c913b72e4ae5e29`
+-	Image ID: `sha256:b43ef0e569440bdcfc6a557e2132c5826827eb992ca9d5db6e5af6e2ba9a77dc`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:23:30 GMT
+# Fri, 24 Jul 2020 16:05:04 GMT
 ENV JAVA_VERSION=jdk8u262-b10_openj9-0.21.0
-# Fri, 17 Jul 2020 22:24:28 GMT
+# Fri, 24 Jul 2020 16:07:58 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='722517d9565bd9602580609114eb0de9b40b01050d52ff7bae24c438d363e186';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jre_ppc64le_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='c14aeedf4e989a6b31e00d6e18b8377957b07b000cac316aee9d973ef6d65b6f';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jre_s390x_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='aef8750b492ff6371318cf5138e38827d8895815b2ac079dcfcb02007a45c7f6';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jre_x64_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:24:34 GMT
+# Fri, 24 Jul 2020 16:08:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:24:36 GMT
+# Fri, 24 Jul 2020 16:08:24 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5619f87564e3f3e7b4085ba86ac2983c16c46479b5a7e4f631e9f17b63528f7c`  
-		Last Modified: Fri, 17 Jul 2020 22:32:27 GMT  
-		Size: 49.2 MB (49150050 bytes)  
+	-	`sha256:2dd8a98ce6c94c3786de5ce0843ed3eec2a800302a4e9761147b94fefc251ec4`  
+		Last Modified: Fri, 24 Jul 2020 16:27:48 GMT  
+		Size: 49.2 MB (49150065 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8-jre-openj9-bionic` - linux; s390x
@@ -31298,7 +31298,7 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ## `adoptopenjdk:8-openj9`
 
 ```console
-$ docker pull adoptopenjdk@sha256:3803d386281dc6f5471349e5fafd5f2dc7854e08608ff00dff2ba12ad9533b19
+$ docker pull adoptopenjdk@sha256:30752f372ece4b5205caa6d4d0936f824d5c35e2fcaf225231c5b5989dc1acf0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -31376,65 +31376,65 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:8-openj9` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:36ff0db62f11e1bf341cfb6db92b5b0953ee6cba70f7a1538d13b34c2ac282be
+$ docker pull adoptopenjdk@sha256:11f2fca11956acd141f0af34a33c5c573a257d152ba675259e6a946c549bf6f7
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.9 MB (160912986 bytes)**  
+-	Total Size: **160.9 MB (160914712 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:66c0fbacb060f64a04cc91d25e691a0d08a079f2b134401c746cb810afb5bcb2`
+-	Image ID: `sha256:d8cd0820fb1cfec41a0a2ef92e4088cc9b092e123a227daf680efe6a0b0b70ab`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:23:30 GMT
+# Fri, 24 Jul 2020 16:05:04 GMT
 ENV JAVA_VERSION=jdk8u262-b10_openj9-0.21.0
-# Fri, 17 Jul 2020 22:23:50 GMT
+# Fri, 24 Jul 2020 16:05:44 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='8659c84c5c5d94ffed4789f06f2be401e59020b83e95fd45e71992f425483a13';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_ppc64le_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='37fe91840b1d8fa98bc6a859ef29b28e0b2187cd926c9d58743f7022640f8d8e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_s390x_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='bdeab95a04462ae48df1dc1c53c833f86bfa34bd3a86c65c7adad7c096a1dbce';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_x64_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:24:00 GMT
+# Fri, 24 Jul 2020 16:06:29 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:24:04 GMT
+# Fri, 24 Jul 2020 16:06:48 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9d28395c2dc02ea1cdf645a684d1e24bbfd047f79d33f0346f0ce41b2d503f1`  
-		Last Modified: Fri, 17 Jul 2020 22:32:04 GMT  
-		Size: 116.0 MB (115954254 bytes)  
+	-	`sha256:6b34bc22236674f3bd805378a498620ead4b2eb4084e628b1083ebe8b80e5e16`  
+		Last Modified: Fri, 24 Jul 2020 16:27:07 GMT  
+		Size: 116.0 MB (115954243 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8-openj9` - linux; s390x
@@ -31611,7 +31611,7 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ## `adoptopenjdk:8-openj9-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:3aa149257025624a3c0e1b818e3334b3247fd073f4dd047665fdf6ff99724674
+$ docker pull adoptopenjdk@sha256:3981d4c149492e7304e6e6321bf2a4b3361f9e53d49c1eae18df533547b394bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -31687,65 +31687,65 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:8-openj9-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:36ff0db62f11e1bf341cfb6db92b5b0953ee6cba70f7a1538d13b34c2ac282be
+$ docker pull adoptopenjdk@sha256:11f2fca11956acd141f0af34a33c5c573a257d152ba675259e6a946c549bf6f7
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.9 MB (160912986 bytes)**  
+-	Total Size: **160.9 MB (160914712 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:66c0fbacb060f64a04cc91d25e691a0d08a079f2b134401c746cb810afb5bcb2`
+-	Image ID: `sha256:d8cd0820fb1cfec41a0a2ef92e4088cc9b092e123a227daf680efe6a0b0b70ab`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:23:30 GMT
+# Fri, 24 Jul 2020 16:05:04 GMT
 ENV JAVA_VERSION=jdk8u262-b10_openj9-0.21.0
-# Fri, 17 Jul 2020 22:23:50 GMT
+# Fri, 24 Jul 2020 16:05:44 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='8659c84c5c5d94ffed4789f06f2be401e59020b83e95fd45e71992f425483a13';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_ppc64le_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='37fe91840b1d8fa98bc6a859ef29b28e0b2187cd926c9d58743f7022640f8d8e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_s390x_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='bdeab95a04462ae48df1dc1c53c833f86bfa34bd3a86c65c7adad7c096a1dbce';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_x64_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:24:00 GMT
+# Fri, 24 Jul 2020 16:06:29 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:24:04 GMT
+# Fri, 24 Jul 2020 16:06:48 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9d28395c2dc02ea1cdf645a684d1e24bbfd047f79d33f0346f0ce41b2d503f1`  
-		Last Modified: Fri, 17 Jul 2020 22:32:04 GMT  
-		Size: 116.0 MB (115954254 bytes)  
+	-	`sha256:6b34bc22236674f3bd805378a498620ead4b2eb4084e628b1083ebe8b80e5e16`  
+		Last Modified: Fri, 24 Jul 2020 16:27:07 GMT  
+		Size: 116.0 MB (115954243 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8-openj9-bionic` - linux; s390x
@@ -32060,7 +32060,7 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ## `adoptopenjdk:8u262-b10-jdk-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:0bfcdc0d54bca00d23ff49f8b7d86cbe790a48b57563bfdadb98d2a309e91fb8
+$ docker pull adoptopenjdk@sha256:d71a15c00fa273d6190ce590bbfb71efe0871241050539fd1241b12fa2f51f21
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -32262,63 +32262,63 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:8u262-b10-jdk-hotspot` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:19b4bd2d149333df21c93fc90b2c8aae51ddb7260a92a405d102399731be9cbb
+$ docker pull adoptopenjdk@sha256:377e579b2913e6137ea70ac284974aa2c8f101b99cc8797d102772f83d24f1e0
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.8 MB (145848583 bytes)**  
+-	Total Size: **145.9 MB (145850328 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9c18a437b724711772dc2e842de0149ca7df1c65115a6795853862a473f5c27`
+-	Image ID: `sha256:dc22f825fd9803d5ef02e968cfa02e799c22f15551b724130fe12c01f7917c61`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:19:31 GMT
+# Fri, 24 Jul 2020 15:45:32 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 22:19:53 GMT
+# Fri, 24 Jul 2020 15:45:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7be0b2a4c749a277302a54b456624c076b3a5b990ad502e2a72d803ab31aecab';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='dd85ebb9a64916b4b621a23729e3360adb363d430bf1e99e98f25397834d74bd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d2a16915fb85ba851145c91cda5666cb78f06bf4713a2b3bdce813779ff972c2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='a504af6924a095cfb6c392653dccd7299925048c91b399d05efa95a094820120';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='733755fd649fad6ae91fc083f7e5a5a0b56410fb6ac1815cff29f744b128b1b1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:19:58 GMT
+# Fri, 24 Jul 2020 15:46:20 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:583e8d8d18f4f748e13a594e8a2236ab9e3238629ab9dd271adb84d3c8dba551`  
-		Last Modified: Fri, 17 Jul 2020 22:29:27 GMT  
-		Size: 100.9 MB (100889851 bytes)  
+	-	`sha256:9c710c0c49381425da0d6bef2cde1374fd268bb249d5cbee4e621ada1f3f55c9`  
+		Last Modified: Fri, 24 Jul 2020 16:19:55 GMT  
+		Size: 100.9 MB (100889859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8u262-b10-jdk-hotspot` - linux; s390x
@@ -32481,7 +32481,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk8-binaries/r
 ## `adoptopenjdk:8u262-b10-jdk-hotspot-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:e58896eaf0dccf36b67cc0aa90949ea0e62b753b44c452beb572625888072d8b
+$ docker pull adoptopenjdk@sha256:0d8f16330a6d0c38f89209a3b9438d90a370b3e5dc3208ff8b93bfd347adfa5d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -32681,63 +32681,63 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:8u262-b10-jdk-hotspot-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:19b4bd2d149333df21c93fc90b2c8aae51ddb7260a92a405d102399731be9cbb
+$ docker pull adoptopenjdk@sha256:377e579b2913e6137ea70ac284974aa2c8f101b99cc8797d102772f83d24f1e0
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.8 MB (145848583 bytes)**  
+-	Total Size: **145.9 MB (145850328 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9c18a437b724711772dc2e842de0149ca7df1c65115a6795853862a473f5c27`
+-	Image ID: `sha256:dc22f825fd9803d5ef02e968cfa02e799c22f15551b724130fe12c01f7917c61`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:19:31 GMT
+# Fri, 24 Jul 2020 15:45:32 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 22:19:53 GMT
+# Fri, 24 Jul 2020 15:45:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7be0b2a4c749a277302a54b456624c076b3a5b990ad502e2a72d803ab31aecab';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='dd85ebb9a64916b4b621a23729e3360adb363d430bf1e99e98f25397834d74bd';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d2a16915fb85ba851145c91cda5666cb78f06bf4713a2b3bdce813779ff972c2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='a504af6924a095cfb6c392653dccd7299925048c91b399d05efa95a094820120';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='733755fd649fad6ae91fc083f7e5a5a0b56410fb6ac1815cff29f744b128b1b1';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:19:58 GMT
+# Fri, 24 Jul 2020 15:46:20 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:583e8d8d18f4f748e13a594e8a2236ab9e3238629ab9dd271adb84d3c8dba551`  
-		Last Modified: Fri, 17 Jul 2020 22:29:27 GMT  
-		Size: 100.9 MB (100889851 bytes)  
+	-	`sha256:9c710c0c49381425da0d6bef2cde1374fd268bb249d5cbee4e621ada1f3f55c9`  
+		Last Modified: Fri, 24 Jul 2020 16:19:55 GMT  
+		Size: 100.9 MB (100889859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8u262-b10-jdk-hotspot-bionic` - linux; s390x
@@ -33026,7 +33026,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk8-binaries/r
 ## `adoptopenjdk:8u262-b10-jdk-openj9-0.21.0`
 
 ```console
-$ docker pull adoptopenjdk@sha256:3803d386281dc6f5471349e5fafd5f2dc7854e08608ff00dff2ba12ad9533b19
+$ docker pull adoptopenjdk@sha256:30752f372ece4b5205caa6d4d0936f824d5c35e2fcaf225231c5b5989dc1acf0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -33104,65 +33104,65 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:8u262-b10-jdk-openj9-0.21.0` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:36ff0db62f11e1bf341cfb6db92b5b0953ee6cba70f7a1538d13b34c2ac282be
+$ docker pull adoptopenjdk@sha256:11f2fca11956acd141f0af34a33c5c573a257d152ba675259e6a946c549bf6f7
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.9 MB (160912986 bytes)**  
+-	Total Size: **160.9 MB (160914712 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:66c0fbacb060f64a04cc91d25e691a0d08a079f2b134401c746cb810afb5bcb2`
+-	Image ID: `sha256:d8cd0820fb1cfec41a0a2ef92e4088cc9b092e123a227daf680efe6a0b0b70ab`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:23:30 GMT
+# Fri, 24 Jul 2020 16:05:04 GMT
 ENV JAVA_VERSION=jdk8u262-b10_openj9-0.21.0
-# Fri, 17 Jul 2020 22:23:50 GMT
+# Fri, 24 Jul 2020 16:05:44 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='8659c84c5c5d94ffed4789f06f2be401e59020b83e95fd45e71992f425483a13';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_ppc64le_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='37fe91840b1d8fa98bc6a859ef29b28e0b2187cd926c9d58743f7022640f8d8e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_s390x_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='bdeab95a04462ae48df1dc1c53c833f86bfa34bd3a86c65c7adad7c096a1dbce';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_x64_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:24:00 GMT
+# Fri, 24 Jul 2020 16:06:29 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:24:04 GMT
+# Fri, 24 Jul 2020 16:06:48 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9d28395c2dc02ea1cdf645a684d1e24bbfd047f79d33f0346f0ce41b2d503f1`  
-		Last Modified: Fri, 17 Jul 2020 22:32:04 GMT  
-		Size: 116.0 MB (115954254 bytes)  
+	-	`sha256:6b34bc22236674f3bd805378a498620ead4b2eb4084e628b1083ebe8b80e5e16`  
+		Last Modified: Fri, 24 Jul 2020 16:27:07 GMT  
+		Size: 116.0 MB (115954243 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8u262-b10-jdk-openj9-0.21.0` - linux; s390x
@@ -33339,7 +33339,7 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ## `adoptopenjdk:8u262-b10-jdk-openj9-0.21.0-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:3aa149257025624a3c0e1b818e3334b3247fd073f4dd047665fdf6ff99724674
+$ docker pull adoptopenjdk@sha256:3981d4c149492e7304e6e6321bf2a4b3361f9e53d49c1eae18df533547b394bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -33415,65 +33415,65 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:8u262-b10-jdk-openj9-0.21.0-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:36ff0db62f11e1bf341cfb6db92b5b0953ee6cba70f7a1538d13b34c2ac282be
+$ docker pull adoptopenjdk@sha256:11f2fca11956acd141f0af34a33c5c573a257d152ba675259e6a946c549bf6f7
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.9 MB (160912986 bytes)**  
+-	Total Size: **160.9 MB (160914712 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:66c0fbacb060f64a04cc91d25e691a0d08a079f2b134401c746cb810afb5bcb2`
+-	Image ID: `sha256:d8cd0820fb1cfec41a0a2ef92e4088cc9b092e123a227daf680efe6a0b0b70ab`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:23:30 GMT
+# Fri, 24 Jul 2020 16:05:04 GMT
 ENV JAVA_VERSION=jdk8u262-b10_openj9-0.21.0
-# Fri, 17 Jul 2020 22:23:50 GMT
+# Fri, 24 Jul 2020 16:05:44 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='8659c84c5c5d94ffed4789f06f2be401e59020b83e95fd45e71992f425483a13';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_ppc64le_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='37fe91840b1d8fa98bc6a859ef29b28e0b2187cd926c9d58743f7022640f8d8e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_s390x_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='bdeab95a04462ae48df1dc1c53c833f86bfa34bd3a86c65c7adad7c096a1dbce';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jdk_x64_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:24:00 GMT
+# Fri, 24 Jul 2020 16:06:29 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:24:04 GMT
+# Fri, 24 Jul 2020 16:06:48 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9d28395c2dc02ea1cdf645a684d1e24bbfd047f79d33f0346f0ce41b2d503f1`  
-		Last Modified: Fri, 17 Jul 2020 22:32:04 GMT  
-		Size: 116.0 MB (115954254 bytes)  
+	-	`sha256:6b34bc22236674f3bd805378a498620ead4b2eb4084e628b1083ebe8b80e5e16`  
+		Last Modified: Fri, 24 Jul 2020 16:27:07 GMT  
+		Size: 116.0 MB (115954243 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8u262-b10-jdk-openj9-0.21.0-bionic` - linux; s390x
@@ -33788,7 +33788,7 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ## `adoptopenjdk:8u262-b10-jre-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:2ded08408562f9379123fd7d8e9727bffd78ff595db270a42dfb66686e860d8c
+$ docker pull adoptopenjdk@sha256:87979937482aa128ee7a37ccf4bfd2a61cfb38b7a4ecdbfeb268f817d0d4e36b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -33990,63 +33990,63 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:8u262-b10-jre-hotspot` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:2c3db4f36f43ce87d07c009af5793d4660ac3708cf06ec4b5cc2440f18d0f57c
+$ docker pull adoptopenjdk@sha256:8127f62685eaa67a11d2b330f56e5bbc7944c1709c73a09cd9751e99e74049a6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.1 MB (86147498 bytes)**  
+-	Total Size: **86.1 MB (86149222 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f61ab598260f0fabce4c4128db6071f5dbda6884db5cbaa010b7d383b314f363`
+-	Image ID: `sha256:75f6758f03ceff48cf0a1031ca821d03d1ad6434b6df7280c6efb1b4d75eb81f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:19:31 GMT
+# Fri, 24 Jul 2020 15:45:32 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 22:20:17 GMT
+# Fri, 24 Jul 2020 15:47:01 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:20:21 GMT
+# Fri, 24 Jul 2020 15:47:19 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fb10673e708fc7336bd57510d5fec44a9f35d9d066f3c580e8a4a9d54db3515`  
-		Last Modified: Fri, 17 Jul 2020 22:29:47 GMT  
-		Size: 41.2 MB (41188766 bytes)  
+	-	`sha256:2d9f6af69314fff500beb03e4d0a26853e0fdb1e43c051035f6dc753406fe40a`  
+		Last Modified: Fri, 24 Jul 2020 16:20:32 GMT  
+		Size: 41.2 MB (41188753 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8u262-b10-jre-hotspot` - linux; s390x
@@ -34209,7 +34209,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk8-binaries/r
 ## `adoptopenjdk:8u262-b10-jre-hotspot-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:857603010111ec90ec818c0912578b06abfe0e956148067fc46538c12a243490
+$ docker pull adoptopenjdk@sha256:e9b72ba44d517c5410a662393d80b1e4b81025c72720c6ac02a2cba778a542a5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -34409,63 +34409,63 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:8u262-b10-jre-hotspot-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:2c3db4f36f43ce87d07c009af5793d4660ac3708cf06ec4b5cc2440f18d0f57c
+$ docker pull adoptopenjdk@sha256:8127f62685eaa67a11d2b330f56e5bbc7944c1709c73a09cd9751e99e74049a6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.1 MB (86147498 bytes)**  
+-	Total Size: **86.1 MB (86149222 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f61ab598260f0fabce4c4128db6071f5dbda6884db5cbaa010b7d383b314f363`
+-	Image ID: `sha256:75f6758f03ceff48cf0a1031ca821d03d1ad6434b6df7280c6efb1b4d75eb81f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:19:31 GMT
+# Fri, 24 Jul 2020 15:45:32 GMT
 ENV JAVA_VERSION=jdk8u262-b10
-# Fri, 17 Jul 2020 22:20:17 GMT
+# Fri, 24 Jul 2020 15:47:01 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0ad1ff282ad034a613c64313c885edef5dfbc5dd51f2eda705bbeb7fa822f238';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_aarch64_linux_hotspot_8u262b10.tar.gz';          ;;        armhf|armv7l)          ESUM='330ce008c6f49ddd6dcf43c7839896bb7fe14843300358a71b441a3f94036f69';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_arm_linux_hotspot_8u262b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='12309354889da2ed9085fda9812c7d2653fa099c36d322af222da11cbb244df7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_ppc64le_linux_hotspot_8u262b10.tar.gz';          ;;        s390x)          ESUM='0225d0a8707c0b6a059c58b77dd7387fb439816100d668ba000c4536cef77fc2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_s390x_linux_hotspot_8u262b10.tar.gz';          ;;        amd64|x86_64)          ESUM='3ce1f34b279a4f8fc6374f5644739622886dd4bcac4fcb0eb596955bac5ca5a4';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_x64_linux_hotspot_8u262b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:20:21 GMT
+# Fri, 24 Jul 2020 15:47:19 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fb10673e708fc7336bd57510d5fec44a9f35d9d066f3c580e8a4a9d54db3515`  
-		Last Modified: Fri, 17 Jul 2020 22:29:47 GMT  
-		Size: 41.2 MB (41188766 bytes)  
+	-	`sha256:2d9f6af69314fff500beb03e4d0a26853e0fdb1e43c051035f6dc753406fe40a`  
+		Last Modified: Fri, 24 Jul 2020 16:20:32 GMT  
+		Size: 41.2 MB (41188753 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8u262-b10-jre-hotspot-bionic` - linux; s390x
@@ -34754,7 +34754,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk8-binaries/r
 ## `adoptopenjdk:8u262-b10-jre-openj9-0.21.0`
 
 ```console
-$ docker pull adoptopenjdk@sha256:ff79e5a80862e8046a7fa46d5d8df6c22b5fbf389554ceed30f45fbbe57e3eca
+$ docker pull adoptopenjdk@sha256:e572cb9271a9d2b146c6c7663b8c31488dd578dbb2806dcc71fb430c89949fdd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -34832,65 +34832,65 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:8u262-b10-jre-openj9-0.21.0` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:9df913bc2ad225bc817f7cb1c983dec618a19a0915a341fad2daacdbc39b324b
+$ docker pull adoptopenjdk@sha256:9bc42b0ed22b33c85a06f39bee67ab5a1899b4c57edd0b7059248514e19120c1
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **94.1 MB (94108782 bytes)**  
+-	Total Size: **94.1 MB (94110534 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90f3b51b43e487200b2831d903bb4874eb14f1c3885b69a63c913b72e4ae5e29`
+-	Image ID: `sha256:b43ef0e569440bdcfc6a557e2132c5826827eb992ca9d5db6e5af6e2ba9a77dc`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:23:30 GMT
+# Fri, 24 Jul 2020 16:05:04 GMT
 ENV JAVA_VERSION=jdk8u262-b10_openj9-0.21.0
-# Fri, 17 Jul 2020 22:24:28 GMT
+# Fri, 24 Jul 2020 16:07:58 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='722517d9565bd9602580609114eb0de9b40b01050d52ff7bae24c438d363e186';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jre_ppc64le_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='c14aeedf4e989a6b31e00d6e18b8377957b07b000cac316aee9d973ef6d65b6f';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jre_s390x_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='aef8750b492ff6371318cf5138e38827d8895815b2ac079dcfcb02007a45c7f6';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jre_x64_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:24:34 GMT
+# Fri, 24 Jul 2020 16:08:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:24:36 GMT
+# Fri, 24 Jul 2020 16:08:24 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5619f87564e3f3e7b4085ba86ac2983c16c46479b5a7e4f631e9f17b63528f7c`  
-		Last Modified: Fri, 17 Jul 2020 22:32:27 GMT  
-		Size: 49.2 MB (49150050 bytes)  
+	-	`sha256:2dd8a98ce6c94c3786de5ce0843ed3eec2a800302a4e9761147b94fefc251ec4`  
+		Last Modified: Fri, 24 Jul 2020 16:27:48 GMT  
+		Size: 49.2 MB (49150065 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8u262-b10-jre-openj9-0.21.0` - linux; s390x
@@ -35067,7 +35067,7 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ## `adoptopenjdk:8u262-b10-jre-openj9-0.21.0-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:31c8fd271b602e6ad0bf2989d15c4a143d0cfe2a847a48b6e7325f73e4f9cb0a
+$ docker pull adoptopenjdk@sha256:8b17ee62b4eebf47570e9a96678a4fefaa6f35cecd167a15716b91070bc95b3e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -35143,65 +35143,65 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ### `adoptopenjdk:8u262-b10-jre-openj9-0.21.0-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:9df913bc2ad225bc817f7cb1c983dec618a19a0915a341fad2daacdbc39b324b
+$ docker pull adoptopenjdk@sha256:9bc42b0ed22b33c85a06f39bee67ab5a1899b4c57edd0b7059248514e19120c1
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **94.1 MB (94108782 bytes)**  
+-	Total Size: **94.1 MB (94110534 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90f3b51b43e487200b2831d903bb4874eb14f1c3885b69a63c913b72e4ae5e29`
+-	Image ID: `sha256:b43ef0e569440bdcfc6a557e2132c5826827eb992ca9d5db6e5af6e2ba9a77dc`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:23:30 GMT
+# Fri, 24 Jul 2020 16:05:04 GMT
 ENV JAVA_VERSION=jdk8u262-b10_openj9-0.21.0
-# Fri, 17 Jul 2020 22:24:28 GMT
+# Fri, 24 Jul 2020 16:07:58 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='722517d9565bd9602580609114eb0de9b40b01050d52ff7bae24c438d363e186';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jre_ppc64le_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='c14aeedf4e989a6b31e00d6e18b8377957b07b000cac316aee9d973ef6d65b6f';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jre_s390x_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='aef8750b492ff6371318cf5138e38827d8895815b2ac079dcfcb02007a45c7f6';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jre_x64_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:24:34 GMT
+# Fri, 24 Jul 2020 16:08:14 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:24:36 GMT
+# Fri, 24 Jul 2020 16:08:24 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5619f87564e3f3e7b4085ba86ac2983c16c46479b5a7e4f631e9f17b63528f7c`  
-		Last Modified: Fri, 17 Jul 2020 22:32:27 GMT  
-		Size: 49.2 MB (49150050 bytes)  
+	-	`sha256:2dd8a98ce6c94c3786de5ce0843ed3eec2a800302a4e9761147b94fefc251ec4`  
+		Last Modified: Fri, 24 Jul 2020 16:27:48 GMT  
+		Size: 49.2 MB (49150065 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8u262-b10-jre-openj9-0.21.0-bionic` - linux; s390x
@@ -35516,7 +35516,7 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport 
 ## `adoptopenjdk:hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:880541eacd44098b538068f04d07f596efc8c9a80dd874427688af29b87d6744
+$ docker pull adoptopenjdk@sha256:7d0e369df0bc21a7960be8e3eddfbbcdad2d7fd593001fef19efb4d5b64469d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -35724,65 +35724,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:hotspot` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:ad2be953c1416bb743087c29f44663036a8fd904a7e699ea259c49f5a7370881
+$ docker pull adoptopenjdk@sha256:66e2f9ccce7c0ff69d5a29fa7a844f98842013edf255183a2f5eda8d2ea9e49c
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **238.5 MB (238520289 bytes)**  
+-	Total Size: **238.5 MB (238522012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f33275da0c8663cdcd8e23792d5304c75b5a33e96dcba8dbc97d7bf3bb9bb424`
+-	Image ID: `sha256:4c45c680f066cdf61656e62c06c7091fee9230c5ca51f9b84feafa41f64be064`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:22:06 GMT
+# Fri, 24 Jul 2020 16:01:15 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12
-# Fri, 17 Jul 2020 22:22:33 GMT
+# Fri, 24 Jul 2020 16:02:03 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ee87e9f03b1fbe6f328429b78fe1a9f44900026d220c90dfd747fe0bcd62d904';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='65f193496c6977ba7aed1563edc4b5be091b5ff03e3d790074bb4e389a034b36';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='465a3b8e931896b8d95e452d479615c4bf543535c05b6ea246323ae114e67d7d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='7d27aea30e359cf0bb561f8dcca6f4591dbc3ae831981f8a19aa367d31a9709b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='7d5ee7e06909b8a99c0d029f512f67b092597aa5b0e78c109bd59405bbfa74fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:22:40 GMT
+# Fri, 24 Jul 2020 16:02:25 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:22:42 GMT
+# Fri, 24 Jul 2020 16:02:50 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d438143b1dc62febf164d4cf5a0245d9fd27a9d7164949de6c380c2b3b2325`  
-		Last Modified: Fri, 17 Jul 2020 22:31:12 GMT  
-		Size: 193.6 MB (193561557 bytes)  
+	-	`sha256:65b3b7e6c86cce5cd0b8efa457ddf2ae57278c70bc4b2b8e0f4050924c9833e2`  
+		Last Modified: Fri, 24 Jul 2020 16:25:24 GMT  
+		Size: 193.6 MB (193561543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:hotspot` - linux; s390x
@@ -35959,7 +35959,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:hotspot-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:f7ea9b623d2b7c97f5b64e89c9ca0e43fea37532c5103844ce5f27ec3322cc51
+$ docker pull adoptopenjdk@sha256:733daf2691544aac1940b052d49763f3e2ffbb21389f2ceaebe80fd5a7feedd7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -36165,65 +36165,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:hotspot-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:ad2be953c1416bb743087c29f44663036a8fd904a7e699ea259c49f5a7370881
+$ docker pull adoptopenjdk@sha256:66e2f9ccce7c0ff69d5a29fa7a844f98842013edf255183a2f5eda8d2ea9e49c
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **238.5 MB (238520289 bytes)**  
+-	Total Size: **238.5 MB (238522012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f33275da0c8663cdcd8e23792d5304c75b5a33e96dcba8dbc97d7bf3bb9bb424`
+-	Image ID: `sha256:4c45c680f066cdf61656e62c06c7091fee9230c5ca51f9b84feafa41f64be064`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:22:06 GMT
+# Fri, 24 Jul 2020 16:01:15 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12
-# Fri, 17 Jul 2020 22:22:33 GMT
+# Fri, 24 Jul 2020 16:02:03 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ee87e9f03b1fbe6f328429b78fe1a9f44900026d220c90dfd747fe0bcd62d904';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='65f193496c6977ba7aed1563edc4b5be091b5ff03e3d790074bb4e389a034b36';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='465a3b8e931896b8d95e452d479615c4bf543535c05b6ea246323ae114e67d7d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='7d27aea30e359cf0bb561f8dcca6f4591dbc3ae831981f8a19aa367d31a9709b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='7d5ee7e06909b8a99c0d029f512f67b092597aa5b0e78c109bd59405bbfa74fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:22:40 GMT
+# Fri, 24 Jul 2020 16:02:25 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:22:42 GMT
+# Fri, 24 Jul 2020 16:02:50 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d438143b1dc62febf164d4cf5a0245d9fd27a9d7164949de6c380c2b3b2325`  
-		Last Modified: Fri, 17 Jul 2020 22:31:12 GMT  
-		Size: 193.6 MB (193561557 bytes)  
+	-	`sha256:65b3b7e6c86cce5cd0b8efa457ddf2ae57278c70bc4b2b8e0f4050924c9833e2`  
+		Last Modified: Fri, 24 Jul 2020 16:25:24 GMT  
+		Size: 193.6 MB (193561543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:hotspot-bionic` - linux; s390x
@@ -36647,7 +36647,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:latest`
 
 ```console
-$ docker pull adoptopenjdk@sha256:880541eacd44098b538068f04d07f596efc8c9a80dd874427688af29b87d6744
+$ docker pull adoptopenjdk@sha256:7d0e369df0bc21a7960be8e3eddfbbcdad2d7fd593001fef19efb4d5b64469d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -36855,65 +36855,65 @@ CMD ["jshell"]
 ### `adoptopenjdk:latest` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:ad2be953c1416bb743087c29f44663036a8fd904a7e699ea259c49f5a7370881
+$ docker pull adoptopenjdk@sha256:66e2f9ccce7c0ff69d5a29fa7a844f98842013edf255183a2f5eda8d2ea9e49c
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **238.5 MB (238520289 bytes)**  
+-	Total Size: **238.5 MB (238522012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f33275da0c8663cdcd8e23792d5304c75b5a33e96dcba8dbc97d7bf3bb9bb424`
+-	Image ID: `sha256:4c45c680f066cdf61656e62c06c7091fee9230c5ca51f9b84feafa41f64be064`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:22:06 GMT
+# Fri, 24 Jul 2020 16:01:15 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12
-# Fri, 17 Jul 2020 22:22:33 GMT
+# Fri, 24 Jul 2020 16:02:03 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='ee87e9f03b1fbe6f328429b78fe1a9f44900026d220c90dfd747fe0bcd62d904';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_aarch64_linux_hotspot_14.0.2_12.tar.gz';          ;;        armhf|armv7l)          ESUM='65f193496c6977ba7aed1563edc4b5be091b5ff03e3d790074bb4e389a034b36';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_arm_linux_hotspot_14.0.2_12.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='465a3b8e931896b8d95e452d479615c4bf543535c05b6ea246323ae114e67d7d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_ppc64le_linux_hotspot_14.0.2_12.tar.gz';          ;;        s390x)          ESUM='7d27aea30e359cf0bb561f8dcca6f4591dbc3ae831981f8a19aa367d31a9709b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_s390x_linux_hotspot_14.0.2_12.tar.gz';          ;;        amd64|x86_64)          ESUM='7d5ee7e06909b8a99c0d029f512f67b092597aa5b0e78c109bd59405bbfa74fe';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12/OpenJDK14U-jdk_x64_linux_hotspot_14.0.2_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:22:40 GMT
+# Fri, 24 Jul 2020 16:02:25 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:22:42 GMT
+# Fri, 24 Jul 2020 16:02:50 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d438143b1dc62febf164d4cf5a0245d9fd27a9d7164949de6c380c2b3b2325`  
-		Last Modified: Fri, 17 Jul 2020 22:31:12 GMT  
-		Size: 193.6 MB (193561557 bytes)  
+	-	`sha256:65b3b7e6c86cce5cd0b8efa457ddf2ae57278c70bc4b2b8e0f4050924c9833e2`  
+		Last Modified: Fri, 24 Jul 2020 16:25:24 GMT  
+		Size: 193.6 MB (193561543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:latest` - linux; s390x
@@ -37090,7 +37090,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:openj9`
 
 ```console
-$ docker pull adoptopenjdk@sha256:9f25e72d040950345fd2fbc759cf03218372da7e01940670eb17ccd92a41aa69
+$ docker pull adoptopenjdk@sha256:a73fcf1c2b21cb513d1ea2c5b24bba8cdde233647853e105a0bef85eb9074215
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -37170,67 +37170,67 @@ CMD ["jshell"]
 ### `adoptopenjdk:openj9` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:95e4d3bc7a16f5a6a677748df8b8ab3031d8a43b968f397ba2f052c6050b844d
+$ docker pull adoptopenjdk@sha256:fa52bce3896b44d5d424807cbdad6e8f4835a5713e0b718014a18c716e4c079e
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **249.9 MB (249880628 bytes)**  
+-	Total Size: **249.9 MB (249882392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f60a3e442412f26141656851123ecb66bd83a1baf481a97e455009b1d1fc06c`
+-	Image ID: `sha256:4a67b9703d77e1b5892fa7cdd76b7cd0964b6716dd8dd3b2690474e887bbc63c`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:26:15 GMT
+# Fri, 24 Jul 2020 16:15:09 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12_openj9-0.21.0
-# Fri, 17 Jul 2020 22:26:54 GMT
+# Fri, 24 Jul 2020 16:15:44 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='177fd161ae14df92203d70cd618559daf889ec0c172d6ee615859352f68a2371';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_ppc64le_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='4757dc2009a0c31604be4631e02a5a3aac53ebe9b6a2046ae8995ec0e453dc1a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_s390x_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='306f7138cdb65daaf2596ec36cafbde72088144c83b2e964f0193662e6caf3be';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_x64_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:27:00 GMT
+# Fri, 24 Jul 2020 16:15:59 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:27:02 GMT
+# Fri, 24 Jul 2020 16:16:08 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Fri, 17 Jul 2020 22:27:06 GMT
+# Fri, 24 Jul 2020 16:16:16 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c9b26c9ce95e6f990bb2ef192eaadf593ced83980ff3c4e40dcd0006644a1d6`  
-		Last Modified: Fri, 17 Jul 2020 22:34:12 GMT  
-		Size: 204.9 MB (204921896 bytes)  
+	-	`sha256:b4e7a7f369e42d9cf4fb139af91671a059b1fea0bbea52b8929dc5467429dfeb`  
+		Last Modified: Fri, 24 Jul 2020 16:32:38 GMT  
+		Size: 204.9 MB (204921923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:openj9` - linux; s390x
@@ -37421,7 +37421,7 @@ CMD ["jshell"]
 ## `adoptopenjdk:openj9-bionic`
 
 ```console
-$ docker pull adoptopenjdk@sha256:08481e34893f2588002bd7808e0b0053fc284b0b4e6e05093c8e1a5d87abd977
+$ docker pull adoptopenjdk@sha256:173de273a59bff731885d25222e35894f0143cd2e412d68feee412aed609f525
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -37499,67 +37499,67 @@ CMD ["jshell"]
 ### `adoptopenjdk:openj9-bionic` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:95e4d3bc7a16f5a6a677748df8b8ab3031d8a43b968f397ba2f052c6050b844d
+$ docker pull adoptopenjdk@sha256:fa52bce3896b44d5d424807cbdad6e8f4835a5713e0b718014a18c716e4c079e
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **249.9 MB (249880628 bytes)**  
+-	Total Size: **249.9 MB (249882392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f60a3e442412f26141656851123ecb66bd83a1baf481a97e455009b1d1fc06c`
+-	Image ID: `sha256:4a67b9703d77e1b5892fa7cdd76b7cd0964b6716dd8dd3b2690474e887bbc63c`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 06 Jul 2020 22:11:55 GMT
-ADD file:02f6904c1e662a7dcf6c813b0b166d2a793532babdd26486ccdf54c62e496d74 in / 
-# Mon, 06 Jul 2020 22:12:07 GMT
+# Fri, 24 Jul 2020 14:33:42 GMT
+ADD file:d8c73324b090ba968a3efc4afc8af7d913766bd7787fc4cd6e4436895a4e564a in / 
+# Fri, 24 Jul 2020 14:34:10 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Mon, 06 Jul 2020 22:12:26 GMT
+# Fri, 24 Jul 2020 14:34:45 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 06 Jul 2020 22:12:36 GMT
+# Fri, 24 Jul 2020 14:35:00 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 06 Jul 2020 22:12:39 GMT
+# Fri, 24 Jul 2020 14:35:08 GMT
 CMD ["/bin/bash"]
-# Mon, 06 Jul 2020 23:37:04 GMT
+# Fri, 24 Jul 2020 15:38:52 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 17 Jul 2020 22:19:26 GMT
+# Fri, 24 Jul 2020 15:45:16 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 17 Jul 2020 22:26:15 GMT
+# Fri, 24 Jul 2020 16:15:09 GMT
 ENV JAVA_VERSION=jdk-14.0.2+12_openj9-0.21.0
-# Fri, 17 Jul 2020 22:26:54 GMT
+# Fri, 24 Jul 2020 16:15:44 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='177fd161ae14df92203d70cd618559daf889ec0c172d6ee615859352f68a2371';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_ppc64le_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='4757dc2009a0c31604be4631e02a5a3aac53ebe9b6a2046ae8995ec0e453dc1a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_s390x_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='306f7138cdb65daaf2596ec36cafbde72088144c83b2e964f0193662e6caf3be';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_x64_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 17 Jul 2020 22:27:00 GMT
+# Fri, 24 Jul 2020 16:15:59 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 17 Jul 2020 22:27:02 GMT
+# Fri, 24 Jul 2020 16:16:08 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Fri, 17 Jul 2020 22:27:06 GMT
+# Fri, 24 Jul 2020 16:16:16 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:9bf98a17426d75ff2afb0ce90ba51b39da3fbd14db0cbd75941ca79a027edf5b`  
-		Last Modified: Mon, 06 Jul 2020 15:46:29 GMT  
-		Size: 30.4 MB (30403476 bytes)  
+	-	`sha256:453712c8810fcce792c21167e028047a35328679a3bd4429b8837301315e9103`  
+		Last Modified: Mon, 13 Jul 2020 15:47:10 GMT  
+		Size: 30.4 MB (30404926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0e6b7f1e0e442a73216c8f3a0be0d2541c137fd3387775bef4342bfb80c73d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 35.2 KB (35202 bytes)  
+	-	`sha256:ecbb4638d99213e93a32d6945492539426ee3616d7ba413462a8b936268a56af`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 35.2 KB (35224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2164204b75b39358091c51e041d91a70cee768036b72edaaa3c0a9d3b5f01bb4`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 860.0 B  
+	-	`sha256:a3b0bd277b733224c67d835643aa13dd8a9b86bcc10023a393302b3861e9a7b8`  
+		Last Modified: Fri, 24 Jul 2020 14:41:32 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8349a86bc0c340cfe9292a4a0743f0d20683515f048ac5b7a38bad559ebd5d`  
-		Last Modified: Mon, 06 Jul 2020 22:18:01 GMT  
-		Size: 186.0 B  
+	-	`sha256:270c2b729d72bf4931bb8d6ccbd100e124e01bac9628380f36c2d0f13bdcc109`  
+		Last Modified: Fri, 24 Jul 2020 14:41:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30aa43882d8fd530416f9c313375005f26b3e32c8de56ef714a969cea393c840`  
-		Last Modified: Fri, 17 Jul 2020 22:29:17 GMT  
-		Size: 14.5 MB (14519008 bytes)  
+	-	`sha256:0dd6970a3a6adb0cbcb037b053a7c0ea9480e9f5edf524c197aea5374c2cf495`  
+		Last Modified: Fri, 24 Jul 2020 16:19:35 GMT  
+		Size: 14.5 MB (14519278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c9b26c9ce95e6f990bb2ef192eaadf593ced83980ff3c4e40dcd0006644a1d6`  
-		Last Modified: Fri, 17 Jul 2020 22:34:12 GMT  
-		Size: 204.9 MB (204921896 bytes)  
+	-	`sha256:b4e7a7f369e42d9cf4fb139af91671a059b1fea0bbea52b8929dc5467429dfeb`  
+		Last Modified: Fri, 24 Jul 2020 16:32:38 GMT  
+		Size: 204.9 MB (204921923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:openj9-bionic` - linux; s390x
