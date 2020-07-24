@@ -1,19 +1,19 @@
-# `openjdk:15-ea-31-jdk-alpine3.12`
+# `openjdk:16-ea-5-jdk-alpine3.12`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e73327305beb3885d2e76a557752fa87a44735bd08c45121fd9b3124dc409ab0`
-- Created: `2020-07-22T01:08:07.663757823Z`
-- Virtual Size: ~ 343.18 Mb  
+- Image ID: `sha256:c4ffaf3792f08f30b209cd9bf8f43c12e2a248fb6f56d96ecd03768408515fdb`
+- Created: `2020-07-22T01:06:39.984579317Z`
+- Virtual Size: ~ 344.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
 - Environment:
-  - `PATH=/opt/openjdk-15/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/opt/openjdk-15`
-  - `JAVA_VERSION=15-ea+31`
-  - `JAVA_URL=https://download.java.net/java/early_access/alpine/31/binaries/openjdk-15-ea+31_linux-x64-musl_bin.tar.gz`
-  - `JAVA_SHA256=da7abd4d3b3511ed2da8aba25b7ff67863261a0c8b5e7e771cf0fbfadcc7f4fd`
+  - `PATH=/opt/openjdk-16/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `JAVA_HOME=/opt/openjdk-16`
+  - `JAVA_VERSION=16-ea+5`
+  - `JAVA_URL=https://download.java.net/java/early_access/alpine/5/binaries/openjdk-16-ea+5_linux-x64-musl_bin.tar.gz`
+  - `JAVA_SHA256=1ec940bea148a7ececda635c209de3836fe4e6511f5d49d4248cf6d52c77aac8`
 
 ## `apk` (`.apk`-based packages)
 
