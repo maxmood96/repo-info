@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0b8722b541722d7370731ed9fa27f7256264c4d3ada69394b7bc86a480e12db4`
-- Created: `2020-07-06T23:48:35.169609926Z`
-- Virtual Size: ~ 1.47 Gb  
+- Image ID: `sha256:bc53cf75bff43c6b0b4b39c6ca871625ea5db85e1f3cb4d1ea24f8bf048df2d4`
+- Created: `2020-07-24T15:52:09.141674672Z`
+- Virtual Size: ~ 1.46 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -930,28 +930,28 @@ $ apt-get source -qq --print-uris expat=2.2.5-3ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.5-3ubuntu0.2.debian.tar.xz' expat_2.2.5-3ubuntu0.2.debian.tar.xz 12024 SHA256:9d9b040636ebf98fe3e401e6ebacc53073a2d508385bc91bde0fcb6b2aaa5675
 ```
 
-### `dpkg` source package: `ffmpeg=7:3.4.6-0ubuntu0.18.04.1`
+### `dpkg` source package: `ffmpeg=7:3.4.8-0ubuntu0.2`
 
 Binary Packages:
 
-- `libavcodec-dev:amd64=7:3.4.6-0ubuntu0.18.04.1`
-- `libavcodec57:amd64=7:3.4.6-0ubuntu0.18.04.1`
-- `libavdevice-dev:amd64=7:3.4.6-0ubuntu0.18.04.1`
-- `libavdevice57:amd64=7:3.4.6-0ubuntu0.18.04.1`
-- `libavfilter-dev:amd64=7:3.4.6-0ubuntu0.18.04.1`
-- `libavfilter6:amd64=7:3.4.6-0ubuntu0.18.04.1`
-- `libavformat-dev:amd64=7:3.4.6-0ubuntu0.18.04.1`
-- `libavformat57:amd64=7:3.4.6-0ubuntu0.18.04.1`
-- `libavresample-dev:amd64=7:3.4.6-0ubuntu0.18.04.1`
-- `libavresample3:amd64=7:3.4.6-0ubuntu0.18.04.1`
-- `libavutil-dev:amd64=7:3.4.6-0ubuntu0.18.04.1`
-- `libavutil55:amd64=7:3.4.6-0ubuntu0.18.04.1`
-- `libpostproc-dev:amd64=7:3.4.6-0ubuntu0.18.04.1`
-- `libpostproc54:amd64=7:3.4.6-0ubuntu0.18.04.1`
-- `libswresample-dev:amd64=7:3.4.6-0ubuntu0.18.04.1`
-- `libswresample2:amd64=7:3.4.6-0ubuntu0.18.04.1`
-- `libswscale-dev:amd64=7:3.4.6-0ubuntu0.18.04.1`
-- `libswscale4:amd64=7:3.4.6-0ubuntu0.18.04.1`
+- `libavcodec-dev:amd64=7:3.4.8-0ubuntu0.2`
+- `libavcodec57:amd64=7:3.4.8-0ubuntu0.2`
+- `libavdevice-dev:amd64=7:3.4.8-0ubuntu0.2`
+- `libavdevice57:amd64=7:3.4.8-0ubuntu0.2`
+- `libavfilter-dev:amd64=7:3.4.8-0ubuntu0.2`
+- `libavfilter6:amd64=7:3.4.8-0ubuntu0.2`
+- `libavformat-dev:amd64=7:3.4.8-0ubuntu0.2`
+- `libavformat57:amd64=7:3.4.8-0ubuntu0.2`
+- `libavresample-dev:amd64=7:3.4.8-0ubuntu0.2`
+- `libavresample3:amd64=7:3.4.8-0ubuntu0.2`
+- `libavutil-dev:amd64=7:3.4.8-0ubuntu0.2`
+- `libavutil55:amd64=7:3.4.8-0ubuntu0.2`
+- `libpostproc-dev:amd64=7:3.4.8-0ubuntu0.2`
+- `libpostproc54:amd64=7:3.4.8-0ubuntu0.2`
+- `libswresample-dev:amd64=7:3.4.8-0ubuntu0.2`
+- `libswresample2:amd64=7:3.4.8-0ubuntu0.2`
+- `libswscale-dev:amd64=7:3.4.8-0ubuntu0.2`
+- `libswscale4:amd64=7:3.4.8-0ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libavcodec-dev/copyright`, `/usr/share/doc/libavcodec57/copyright`, `/usr/share/doc/libavdevice-dev/copyright`, `/usr/share/doc/libavdevice57/copyright`, `/usr/share/doc/libavfilter-dev/copyright`, `/usr/share/doc/libavfilter6/copyright`, `/usr/share/doc/libavformat-dev/copyright`, `/usr/share/doc/libavformat57/copyright`, `/usr/share/doc/libavresample-dev/copyright`, `/usr/share/doc/libavresample3/copyright`, `/usr/share/doc/libavutil-dev/copyright`, `/usr/share/doc/libavutil55/copyright`, `/usr/share/doc/libpostproc-dev/copyright`, `/usr/share/doc/libpostproc54/copyright`, `/usr/share/doc/libswresample-dev/copyright`, `/usr/share/doc/libswresample2/copyright`, `/usr/share/doc/libswscale-dev/copyright`, `/usr/share/doc/libswscale4/copyright`)
 
@@ -976,9 +976,14 @@ Licenses: (parsed from: `/usr/share/doc/libavcodec-dev/copyright`, `/usr/share/d
 - `man-page`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ffmpeg=7:3.4.8-0ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_3.4.8-0ubuntu0.2.dsc' ffmpeg_3.4.8-0ubuntu0.2.dsc 4980 SHA256:d4528f3638f54d374a4db0f0074535884f4f3161e0a3965d8a374e940b1d7eff
+'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_3.4.8.orig.tar.xz' ffmpeg_3.4.8.orig.tar.xz 8508108 SHA256:09b9e4644e191a5e6c46b7293839297a7b6f5459fb8817d5255ff29c8ae307ae
+'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_3.4.8-0ubuntu0.2.debian.tar.xz' ffmpeg_3.4.8-0ubuntu0.2.debian.tar.xz 42392 SHA256:dee615cde6ac4168470bf9b3d9d4b9b84f877d6a831b887b430a1e1b761f5895
+```
 
 ### `dpkg` source package: `fftw3=3.3.7-1`
 
@@ -1556,36 +1561,17 @@ $ apt-get source -qq --print-uris glib2.0=2.56.4-0ubuntu0.18.04.6
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.4-0ubuntu0.18.04.6.debian.tar.xz' glib2.0_2.56.4-0ubuntu0.18.04.6.debian.tar.xz 89540 SHA256:57f17e1760946894ae729e988798ac11339460e8ee71421c6b0a5b6cdde9af36
 ```
 
-### `dpkg` source package: `glibc=2.27-3ubuntu1`
-
-Binary Packages:
-
-- `libc-bin=2.27-3ubuntu1`
-
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`)
-
-- `GPL-2`
-- `LGPL-2.1`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris glibc=2.27-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.27-3ubuntu1.dsc' glibc_2.27-3ubuntu1.dsc 9356 SHA256:b0006ab99aac50bcedadf9bf8c74b81a4daee6c4cbc2e983c29a07d419d0bcb4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.27.orig.tar.xz' glibc_2.27.orig.tar.xz 15923832 SHA256:0e9826488e3ffedb4d14a426d741b7b1cf15f6973ab30762af9a188ad47633ed
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.27-3ubuntu1.debian.tar.xz' glibc_2.27-3ubuntu1.debian.tar.xz 1007844 SHA256:7f4e1f935974e18c497ea8bd1cd165c7a37b3579fe05262f72992fdfa3b56376
-```
-
 ### `dpkg` source package: `glibc=2.27-3ubuntu1.2`
 
 Binary Packages:
 
+- `libc-bin=2.27-3ubuntu1.2`
 - `libc-dev-bin=2.27-3ubuntu1.2`
 - `libc6:amd64=2.27-3ubuntu1.2`
 - `libc6-dev:amd64=2.27-3ubuntu1.2`
 - `multiarch-support=2.27-3ubuntu1.2`
 
-Licenses: (parsed from: `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/multiarch-support/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -1662,11 +1648,11 @@ $ apt-get source -qq --print-uris gnupg2=2.2.4-1ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4-1ubuntu1.2.debian.tar.bz2' gnupg2_2.2.4-1ubuntu1.2.debian.tar.bz2 82238 SHA256:ad2e70205e5d5f52c092c58e619ee58e5f5bc2b44f44a2c462296fc34a1960de
 ```
 
-### `dpkg` source package: `gnutls28=3.5.18-1ubuntu1.3`
+### `dpkg` source package: `gnutls28=3.5.18-1ubuntu1.4`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.5.18-1ubuntu1.3`
+- `libgnutls30:amd64=3.5.18-1ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -1683,11 +1669,11 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.5.18-1ubuntu1.3
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18-1ubuntu1.3.dsc' gnutls28_3.5.18-1ubuntu1.3.dsc 3434 SHA256:cff65f96caf5e8bc77094780ccf704ddabe6b129cba5486fcde93b7b936bd52d
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18.orig.tar.xz' gnutls28_3.5.18.orig.tar.xz 7261980 SHA256:ae2248d9e78747cf9c469dde81ff8f90b56838b707a0637f3f7d4eee90e80234
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18.orig.tar.xz.asc' gnutls28_3.5.18.orig.tar.xz.asc 534 SHA256:50bb942469be0639bbab925de630fb921aa8cac5f40072cb1c2cf1fb7ae7977b
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18-1ubuntu1.3.debian.tar.xz' gnutls28_3.5.18-1ubuntu1.3.debian.tar.xz 83208 SHA256:65d104c920a7f9371a828c467d3415eeeb59e18640a5c9c41f29558e5e09660a
+$ apt-get source -qq --print-uris gnutls28=3.5.18-1ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18-1ubuntu1.4.dsc' gnutls28_3.5.18-1ubuntu1.4.dsc 2780 SHA256:6c58a44e5790eb86989318bf660e2391561c04518d4d8c7b85fb495a4efcd5ae
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18.orig.tar.xz' gnutls28_3.5.18.orig.tar.xz 7261980 SHA256:ae2248d9e78747cf9c469dde81ff8f90b56838b707a0637f3f7d4eee90e80234
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18.orig.tar.xz.asc' gnutls28_3.5.18.orig.tar.xz.asc 534 SHA256:50bb942469be0639bbab925de630fb921aa8cac5f40072cb1c2cf1fb7ae7977b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.18-1ubuntu1.4.debian.tar.xz' gnutls28_3.5.18-1ubuntu1.4.debian.tar.xz 83784 SHA256:3ff4cbd5e9b6d9d51479fdae70486598ad7c11dae50aa06e98f000290f30cd05
 ```
 
 ### `dpkg` source package: `gobject-introspection=1.56.1-1`
@@ -3597,14 +3583,9 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 - `LGPL-2`
 - `LGPL-2.0+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.4.3-1ubuntu3.18.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.4.3-1ubuntu3.18.04.2.dsc' libseccomp_2.4.3-1ubuntu3.18.04.2.dsc 1988 SHA256:c0e1dd33400a0a7175e2a273252af837a454ce6c43bbb9a70a74f9eb2d3526d9
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.4.3.orig.tar.gz' libseccomp_2.4.3.orig.tar.gz 598147 SHA256:cf15d1421997fac45b936515af61d209c4fd788af11005d212b3d0fd71e7991d
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.4.3-1ubuntu3.18.04.2.debian.tar.xz' libseccomp_2.4.3-1ubuntu3.18.04.2.debian.tar.xz 24652 SHA256:7718022b4b251b5c279d5d56d533ce1791b1718cb9427498375ea89b6d1517b5
-```
 
 ### `dpkg` source package: `libselinux=2.7-2build2`
 
@@ -4640,56 +4621,48 @@ $ apt-get source -qq --print-uris libzstd=1.3.3+dfsg-2ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.3+dfsg-2ubuntu1.1.debian.tar.xz' libzstd_1.3.3+dfsg-2ubuntu1.1.debian.tar.xz 12808 SHA256:9c7421170f0a1e6234147a89ba7fa5933c0771177423e962e6faf3fd13dcbb64
 ```
 
-### `dpkg` source package: `linux=4.15.0-109.110`
+### `dpkg` source package: `linux=4.15.0-112.113`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.15.0-109.110`
+- `linux-libc-dev:amd64=4.15.0-112.113`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.15.0-112.113
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-112.113.dsc' linux_4.15.0-112.113.dsc 7370 SHA256:0fb208539f1ec8af7aac7c4c1b845b8fd74b09f6ecabf92bfbe5f602fbacc055
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-112.113.diff.gz' linux_4.15.0-112.113.diff.gz 9942466 SHA256:2c3e75b6ab5ecb2176443c416b8462b20c088a48ff61cdfb43f9e3370547d5d0
+```
 
-### `dpkg` source package: `llvm-toolchain-9=1:9-2~ubuntu18.04.2`
+### `dpkg` source package: `llvm-toolchain-10=1:10.0.0-4ubuntu1~18.04.1`
 
 Binary Packages:
 
-- `libllvm9:amd64=1:9-2~ubuntu18.04.2`
+- `libllvm10:amd64=1:10.0.0-4ubuntu1~18.04.1`
 
-Licenses: (parsed from: `/usr/share/doc/libllvm9/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libllvm10/copyright`)
 
 - `APACHE-2-LLVM-EXCEPTIONS`
 - `Apache-2.0`
-- `Apple`
 - `BSD-3-Clause`
 - `BSD-3-clause`
-- `Expat`
 - `MIT`
 - `Python`
-- `U-OF-I-BSD-LIKE`
-- `public-domain`
 - `solar-public-domain`
 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris llvm-toolchain-9=1:9-2~ubuntu18.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9-2~ubuntu18.04.2.dsc' llvm-toolchain-9_9-2~ubuntu18.04.2.dsc 8717 SHA256:18d9cd00177b592c8f0b04459e51cf4e66ea89b66ae10f47e0dae1ffb71620ea
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-clang-tools-extra.tar.bz2' llvm-toolchain-9_9.orig-clang-tools-extra.tar.bz2 2335322 SHA256:8890e967ab29b703d3270c6ecb7e3f948de8732c80c69fb2932d3eb986aadb0e
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-clang.tar.bz2' llvm-toolchain-9_9.orig-clang.tar.bz2 15071631 SHA256:059a886693c55991f6cc26ebb64db9f5fbdc20ea7b5f6ae593a4f2ccbadd6769
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-compiler-rt.tar.bz2' llvm-toolchain-9_9.orig-compiler-rt.tar.bz2 2553210 SHA256:3966f2a92b7c4aef79159a626b5fdccb554a5418179f212602238be1c1d2d0ce
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-libcxx.tar.bz2' llvm-toolchain-9_9.orig-libcxx.tar.bz2 1980360 SHA256:d0ddf9033eed136f622253f3d143d4058efe455dc6b4bcd3c38ad00de01e3d3b
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-libcxxabi.tar.bz2' llvm-toolchain-9_9.orig-libcxxabi.tar.bz2 559888 SHA256:8b08561bdf578b8e82d2c6febdd92ce6b3acdf072b690293cd5ced0d69720822
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-lld.tar.bz2' llvm-toolchain-9_9.orig-lld.tar.bz2 1203720 SHA256:0a89c9b919c9f3b2ef48f4494f11aa188d432d53f7288fde98ab96b56b832b5d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-lldb.tar.bz2' llvm-toolchain-9_9.orig-lldb.tar.bz2 11796309 SHA256:69769dc99ab6649c53447126c556f9420bf0737eb47b4b4af70a60a98cf9319e
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-openmp.tar.bz2' llvm-toolchain-9_9.orig-openmp.tar.bz2 1035091 SHA256:6047d1d442783685b231304db41e27e2a91a76bbdbb0801992b2b38bae42343f
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig-polly.tar.bz2' llvm-toolchain-9_9.orig-polly.tar.bz2 3939392 SHA256:62cc1eb26711ffd71bee0391ced1cf119c3f9b8359d9d5821f97321f996910ba
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9.orig.tar.bz2' llvm-toolchain-9_9.orig.tar.bz2 39126886 SHA256:a87320e6680b93dfb26f1dc90c8910c5ca03912b8cd97ecd04928739918726b5
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-9/llvm-toolchain-9_9-2~ubuntu18.04.2.debian.tar.xz' llvm-toolchain-9_9-2~ubuntu18.04.2.debian.tar.xz 110300 SHA256:08a28bf536c620c0b9a309e67bd7f455ffb55eb7fb98e3975c0791ed68e55042
+$ apt-get source -qq --print-uris llvm-toolchain-10=1:10.0.0-4ubuntu1~18.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-10/llvm-toolchain-10_10.0.0-4ubuntu1~18.04.1.dsc' llvm-toolchain-10_10.0.0-4ubuntu1~18.04.1.dsc 6099 SHA256:cfca2981602aa5c07b2dfb8febb1bb92e424efa24caf8b18df85effba33cfdf8
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-10/llvm-toolchain-10_10.0.0.orig.tar.xz' llvm-toolchain-10_10.0.0.orig.tar.xz 78321340 SHA256:e40b41c85091aebd8e706f24ee9992a82b97d23db099769a798a3584e3535212
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-10/llvm-toolchain-10_10.0.0-4ubuntu1~18.04.1.debian.tar.xz' llvm-toolchain-10_10.0.0-4ubuntu1~18.04.1.debian.tar.xz 138856 SHA256:b08ae63f459d9379557faa25f122519d1f5734d359df7781cde523d7d846f1e5
 ```
 
 ### `dpkg` source package: `lm-sensors=1:3.4.0-4`
@@ -4811,21 +4784,21 @@ $ apt-get source -qq --print-uris mawk=1.3.3-17ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3-17ubuntu3.diff.gz' mawk_1.3.3-17ubuntu3.diff.gz 64052 SHA256:d1be148525885cb1869e35514f55005b5043f3310b08c444625005a3e14c81fc
 ```
 
-### `dpkg` source package: `mesa=19.2.8-0ubuntu0~18.04.3`
+### `dpkg` source package: `mesa=20.0.8-0ubuntu1~18.04.1`
 
 Binary Packages:
 
-- `libegl-mesa0:amd64=19.2.8-0ubuntu0~18.04.3`
-- `libegl1-mesa:amd64=19.2.8-0ubuntu0~18.04.3`
-- `libegl1-mesa-dev:amd64=19.2.8-0ubuntu0~18.04.3`
-- `libgbm1:amd64=19.2.8-0ubuntu0~18.04.3`
-- `libgl1-mesa-dev:amd64=19.2.8-0ubuntu0~18.04.3`
-- `libgl1-mesa-dri:amd64=19.2.8-0ubuntu0~18.04.3`
-- `libglapi-mesa:amd64=19.2.8-0ubuntu0~18.04.3`
-- `libgles2-mesa-dev:amd64=19.2.8-0ubuntu0~18.04.3`
-- `libglx-mesa0:amd64=19.2.8-0ubuntu0~18.04.3`
-- `libwayland-egl1-mesa:amd64=19.2.8-0ubuntu0~18.04.3`
-- `mesa-common-dev:amd64=19.2.8-0ubuntu0~18.04.3`
+- `libegl-mesa0:amd64=20.0.8-0ubuntu1~18.04.1`
+- `libegl1-mesa:amd64=20.0.8-0ubuntu1~18.04.1`
+- `libegl1-mesa-dev:amd64=20.0.8-0ubuntu1~18.04.1`
+- `libgbm1:amd64=20.0.8-0ubuntu1~18.04.1`
+- `libgl1-mesa-dev:amd64=20.0.8-0ubuntu1~18.04.1`
+- `libgl1-mesa-dri:amd64=20.0.8-0ubuntu1~18.04.1`
+- `libglapi-mesa:amd64=20.0.8-0ubuntu1~18.04.1`
+- `libgles2-mesa-dev:amd64=20.0.8-0ubuntu1~18.04.1`
+- `libglx-mesa0:amd64=20.0.8-0ubuntu1~18.04.1`
+- `libwayland-egl1-mesa:amd64=20.0.8-0ubuntu1~18.04.1`
+- `mesa-common-dev:amd64=20.0.8-0ubuntu1~18.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc/libegl1-mesa/copyright`, `/usr/share/doc/libegl1-mesa-dev/copyright`, `/usr/share/doc/libgbm1/copyright`, `/usr/share/doc/libgl1-mesa-dev/copyright`, `/usr/share/doc/libgl1-mesa-dri/copyright`, `/usr/share/doc/libglapi-mesa/copyright`, `/usr/share/doc/libgles2-mesa-dev/copyright`, `/usr/share/doc/libglx-mesa0/copyright`, `/usr/share/doc/libwayland-egl1-mesa/copyright`, `/usr/share/doc/mesa-common-dev/copyright`)
 
@@ -4839,9 +4812,14 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `MLAA`
 - `SGI`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mesa=20.0.8-0ubuntu1~18.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_20.0.8-0ubuntu1~18.04.1.dsc' mesa_20.0.8-0ubuntu1~18.04.1.dsc 5293 SHA256:22400b0065e4212836e4d8cb62d03c91409b925c4f56e20708c919cb22ff0a83
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_20.0.8.orig.tar.gz' mesa_20.0.8.orig.tar.gz 19030315 SHA256:aa9d704b798932421a15a4f5a5f3deb184cc60e47ef91980465f2078bcce4428
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_20.0.8-0ubuntu1~18.04.1.diff.gz' mesa_20.0.8-0ubuntu1~18.04.1.diff.gz 118306 SHA256:16cdec0e26e4f802f196d1a29cec9b0be5c97473bc7d4bafa78792f142a2b270
+```
 
 ### `dpkg` source package: `mime-support=3.60ubuntu1`
 
@@ -5390,12 +5368,12 @@ $ apt-get source -qq --print-uris openjpeg2=2.3.0-2build0.18.04.1
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/openjpeg2/openjpeg2_2.3.0-2build0.18.04.1.debian.tar.xz' openjpeg2_2.3.0-2build0.18.04.1.debian.tar.xz 21152 SHA256:c3b944fb7e1a00f290f73ed0396276d50c7dd624619f2f6f2de6d02921fd077a
 ```
 
-### `dpkg` source package: `openldap=2.4.45+dfsg-1ubuntu1.5`
+### `dpkg` source package: `openldap=2.4.45+dfsg-1ubuntu1.6`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.45+dfsg-1ubuntu1.5`
-- `libldap-common=2.4.45+dfsg-1ubuntu1.5`
+- `libldap-2.4-2:amd64=2.4.45+dfsg-1ubuntu1.6`
+- `libldap-common=2.4.45+dfsg-1ubuntu1.6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5404,10 +5382,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openldap=2.4.45+dfsg-1ubuntu1.5
-'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg-1ubuntu1.5.dsc' openldap_2.4.45+dfsg-1ubuntu1.5.dsc 2884 SHA256:7b21af2ae2ed72ba81ad3c9b03656a57dbdb0e706bf57c9d9b940f074d97d423
-'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg.orig.tar.gz' openldap_2.4.45+dfsg.orig.tar.gz 4846458 SHA256:d51c70423aa0554d454fd3d43e7f2e940523b4ef07979305b48c233ae44b2b32
-'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg-1ubuntu1.5.debian.tar.xz' openldap_2.4.45+dfsg-1ubuntu1.5.debian.tar.xz 178712 SHA256:bba7797a23f9f522a518bc99b6afcb5e705b2d799fee5b18e8515862c88d0146
+$ apt-get source -qq --print-uris openldap=2.4.45+dfsg-1ubuntu1.6
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg-1ubuntu1.6.dsc' openldap_2.4.45+dfsg-1ubuntu1.6.dsc 2884 SHA256:7f7b47c9ca3e1e61c7e1955813148f4f127e9c29e96efcb22b797fded2282630
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg.orig.tar.gz' openldap_2.4.45+dfsg.orig.tar.gz 4846458 SHA256:d51c70423aa0554d454fd3d43e7f2e940523b4ef07979305b48c233ae44b2b32
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg-1ubuntu1.6.debian.tar.xz' openldap_2.4.45+dfsg-1ubuntu1.6.debian.tar.xz 179188 SHA256:959cf67aceadf0af09caf85615d61161df4b91ef9ff2153ea420ae7eec8b9f2d
 ```
 
 ### `dpkg` source package: `openmpi=2.1.1-8`
@@ -5830,11 +5808,11 @@ $ apt-get source -qq --print-uris protobuf=3.0.0-9.1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/protobuf/protobuf_3.0.0-9.1ubuntu1.debian.tar.xz' protobuf_3.0.0-9.1ubuntu1.debian.tar.xz 25208 SHA256:6897f66a24609b9da3426996a691f6ff01b269b3cd60b8c7043340cd139e975a
 ```
 
-### `dpkg` source package: `pulseaudio=1:11.1-1ubuntu7.8`
+### `dpkg` source package: `pulseaudio=1:11.1-1ubuntu7.9`
 
 Binary Packages:
 
-- `libpulse0:amd64=1:11.1-1ubuntu7.8`
+- `libpulse0:amd64=1:11.1-1ubuntu7.9`
 
 Licenses: (parsed from: `/usr/share/doc/libpulse0/copyright`)
 
@@ -5846,9 +5824,14 @@ Licenses: (parsed from: `/usr/share/doc/libpulse0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris pulseaudio=1:11.1-1ubuntu7.9
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_11.1-1ubuntu7.9.dsc' pulseaudio_11.1-1ubuntu7.9.dsc 3223 SHA256:0948fed9942730b67c17cd34b6948895682e72d9f630b947b0503495b5503e8d
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_11.1.orig.tar.xz' pulseaudio_11.1.orig.tar.xz 1648924 SHA256:f2521c525a77166189e3cb9169f75c2ee2b82fa3fcf9476024fbc2c3a6c9cd9e
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_11.1-1ubuntu7.9.debian.tar.xz' pulseaudio_11.1-1ubuntu7.9.debian.tar.xz 113684 SHA256:4efffa8c36fff9bbcc5fdca79571356ac1f6d85ee05ba9d936b291c0fc1adab8
+```
 
 ### `dpkg` source package: `python-defaults=2.7.15~rc1-1`
 
@@ -5872,17 +5855,17 @@ $ apt-get source -qq --print-uris python-defaults=2.7.15~rc1-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.15~rc1-1.tar.gz' python-defaults_2.7.15~rc1-1.tar.gz 1958015 SHA256:f3bed2b81091821d2e514c2e17c6846f7e744487fd15f7d3c48fa1c91b9cd49b
 ```
 
-### `dpkg` source package: `python2.7=2.7.17-1~18.04ubuntu1`
+### `dpkg` source package: `python2.7=2.7.17-1~18.04ubuntu1.1`
 
 Binary Packages:
 
-- `libpython2.7:amd64=2.7.17-1~18.04ubuntu1`
-- `libpython2.7-dev:amd64=2.7.17-1~18.04ubuntu1`
-- `libpython2.7-minimal:amd64=2.7.17-1~18.04ubuntu1`
-- `libpython2.7-stdlib:amd64=2.7.17-1~18.04ubuntu1`
-- `python2.7=2.7.17-1~18.04ubuntu1`
-- `python2.7-dev=2.7.17-1~18.04ubuntu1`
-- `python2.7-minimal=2.7.17-1~18.04ubuntu1`
+- `libpython2.7:amd64=2.7.17-1~18.04ubuntu1.1`
+- `libpython2.7-dev:amd64=2.7.17-1~18.04ubuntu1.1`
+- `libpython2.7-minimal:amd64=2.7.17-1~18.04ubuntu1.1`
+- `libpython2.7-stdlib:amd64=2.7.17-1~18.04ubuntu1.1`
+- `python2.7=2.7.17-1~18.04ubuntu1.1`
+- `python2.7-dev=2.7.17-1~18.04ubuntu1.1`
+- `python2.7-minimal=2.7.17-1~18.04ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython2.7/copyright`, `/usr/share/doc/libpython2.7-dev/copyright`, `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/share/doc/libpython2.7-stdlib/copyright`, `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/python2.7-dev/copyright`, `/usr/share/doc/python2.7-minimal/copyright`)
 
@@ -5903,9 +5886,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7/copyright`, `/usr/share/doc
 - `implied`
 - `see above, some license as Python`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python2.7=2.7.17-1~18.04ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17-1~18.04ubuntu1.1.dsc' python2.7_2.7.17-1~18.04ubuntu1.1.dsc 3483 SHA256:510b3b29af9ceabe92aba0f7dd2f9899ae8f46ec9354f4dd7662e50b78701671
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17.orig.tar.gz' python2.7_2.7.17.orig.tar.gz 17535962 SHA256:f22059d09cdf9625e0a7284d24a13062044f5bf59d93a7f3382190dfa94cecde
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17-1~18.04ubuntu1.1.diff.gz' python2.7_2.7.17-1~18.04ubuntu1.1.diff.gz 292136 SHA256:e183d38788146b5ab09108a17b8ad979e918c5abbe43ae2ad172404effed101e
+```
 
 ### `dpkg` source package: `python3-defaults=3.6.7-1~18.04`
 
@@ -5949,17 +5937,17 @@ $ apt-get source -qq --print-uris python3-stdlib-extensions=3.6.9-1~18.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.6.9-1~18.04.debian.tar.xz' python3-stdlib-extensions_3.6.9-1~18.04.debian.tar.xz 16908 SHA256:befdd346165a9baa7fc42b54c24db9b975870651c9578b03d0511e0b77578f84
 ```
 
-### `dpkg` source package: `python3.6=3.6.9-1~18.04ubuntu1`
+### `dpkg` source package: `python3.6=3.6.9-1~18.04ubuntu1.1`
 
 Binary Packages:
 
-- `libpython3.6:amd64=3.6.9-1~18.04ubuntu1`
-- `libpython3.6-dev:amd64=3.6.9-1~18.04ubuntu1`
-- `libpython3.6-minimal:amd64=3.6.9-1~18.04ubuntu1`
-- `libpython3.6-stdlib:amd64=3.6.9-1~18.04ubuntu1`
-- `python3.6=3.6.9-1~18.04ubuntu1`
-- `python3.6-dev=3.6.9-1~18.04ubuntu1`
-- `python3.6-minimal=3.6.9-1~18.04ubuntu1`
+- `libpython3.6:amd64=3.6.9-1~18.04ubuntu1.1`
+- `libpython3.6-dev:amd64=3.6.9-1~18.04ubuntu1.1`
+- `libpython3.6-minimal:amd64=3.6.9-1~18.04ubuntu1.1`
+- `libpython3.6-stdlib:amd64=3.6.9-1~18.04ubuntu1.1`
+- `python3.6=3.6.9-1~18.04ubuntu1.1`
+- `python3.6-dev=3.6.9-1~18.04ubuntu1.1`
+- `python3.6-minimal=3.6.9-1~18.04ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.6/copyright`, `/usr/share/doc/libpython3.6-dev/copyright`, `/usr/share/doc/libpython3.6-minimal/copyright`, `/usr/share/doc/libpython3.6-stdlib/copyright`, `/usr/share/doc/python3.6/copyright`, `/usr/share/doc/python3.6-dev/copyright`, `/usr/share/doc/python3.6-minimal/copyright`)
 
@@ -5981,9 +5969,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.6/copyright`, `/usr/share/doc
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.6=3.6.9-1~18.04ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.9-1~18.04ubuntu1.1.dsc' python3.6_3.6.9-1~18.04ubuntu1.1.dsc 3470 SHA256:e780132c4fd5341e24b354d7ca37fb3d5d22f4178c1a180c0f530b18c9586e30
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.9.orig.tar.xz' python3.6_3.6.9.orig.tar.xz 17212164 SHA256:5e2f5f554e3f8f7f0296f7e73d8600c4e9acbaee6b2555b83206edf5153870da
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.9-1~18.04ubuntu1.1.debian.tar.xz' python3.6_3.6.9-1~18.04ubuntu1.1.debian.tar.xz 218936 SHA256:63afea0ff02387fb269d4e96a1732b0ba42740d1f7046f75d5cfcbfd719459e7
+```
 
 ### `dpkg` source package: `qhull=2015.2-4`
 
