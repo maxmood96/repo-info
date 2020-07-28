@@ -1,10 +1,10 @@
-# `openjdk:16-ea-6-jdk-buster`
+# `openjdk:16-ea-7-jdk-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e65945fcba9e8bbfb95750889e7858aa77fc38960a952f4294dd9f54c877a5fa`
-- Created: `2020-07-22T22:35:11.031466528Z`
-- Virtual Size: ~ 670.32 Mb  
+- Image ID: `sha256:2ad5f0de586a472866228c40b4f52512ecd3918a751a672bac8e88984dfea658`
+- Created: `2020-07-24T19:14:24.427977754Z`
+- Virtual Size: ~ 670.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/java/openjdk-16/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/java/openjdk-16`
-  - `JAVA_VERSION=16-ea+6`
+  - `JAVA_VERSION=16-ea+7`
 
 ## `dpkg` (`.deb`-based packages)
 
