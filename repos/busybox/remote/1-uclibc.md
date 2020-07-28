@@ -1,7 +1,7 @@
 ## `busybox:1-uclibc`
 
 ```console
-$ docker pull busybox@sha256:97203b6147cf56d9b8c81ebf80b493a1bc0b310201433561da671daba0a2aa3c
+$ docker pull busybox@sha256:f645e2e74e4dbe8d1a6a99cbe13332a0835901018b147e5df061eb8f89e27035
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -42,129 +42,129 @@ CMD ["sh"]
 ### `busybox:1-uclibc` - linux; arm variant v5
 
 ```console
-$ docker pull busybox@sha256:ea84577ce8331aaceefd586104ba283201b89b5a614b10ec44b9884722db49d8
+$ docker pull busybox@sha256:00466b7923ac6cb7bdfd211101c09917e0d416212ca058740954d7adb0aac4f6
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **746.9 KB (746872 bytes)**  
+-	Total Size: **746.9 KB (746857 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:464ee4cd55ad755c081361c5c63e08906b4706b8944ba1ea230de17a7043f1b8`
+-	Image ID: `sha256:19349e75a29ad9ef7b8a04512bc927100362db8a04979bc1e918ff2187d3c5a9`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Mon, 29 Jun 2020 20:51:16 GMT
-ADD file:16dc372148648bc4b0d566d3e5e5c806a53c4bec7a9fd5ebc75c9d8cd757e64d in / 
-# Mon, 29 Jun 2020 20:51:16 GMT
+# Mon, 27 Jul 2020 23:48:37 GMT
+ADD file:5d310a02c8b7403f7f6053acf51fb2cca93d491a8114d7e2aee26de1d3e1b7aa in / 
+# Mon, 27 Jul 2020 23:48:38 GMT
 CMD ["sh"]
 ```
 
 -	Layers:
-	-	`sha256:31e57a824dc0a3460de995dacfd7097294ab00ac34a90d47d4fa51e57794eac0`  
-		Last Modified: Mon, 29 Jun 2020 20:51:56 GMT  
-		Size: 746.9 KB (746872 bytes)  
+	-	`sha256:62c155e26df76ac5c65bc7a83ab8b72171f8660dfaab9959afd854a8bc01f9d7`  
+		Last Modified: Mon, 27 Jul 2020 23:49:04 GMT  
+		Size: 746.9 KB (746857 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `busybox:1-uclibc` - linux; arm variant v7
 
 ```console
-$ docker pull busybox@sha256:5cbe4404234f93a5401b58e0c50408d5c9caace822b70867e4f3e787be83eee9
+$ docker pull busybox@sha256:6f84685399b2b834d1bc230d2b7f47bed1169b058a338f1b4d05997bb2293a2d
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **714.5 KB (714513 bytes)**  
+-	Total Size: **714.5 KB (714517 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:161b94c4562bec70a842e90921bf86c6a85009af5b8833eb1767575aa3f433a0`
+-	Image ID: `sha256:639a76c9819eeb360b15f465a6fbcbc6ebe5d8575c7adc443519470ed3e79ad3`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Mon, 29 Jun 2020 20:57:40 GMT
-ADD file:b2f0dae138e60a61f83ef28c46e320ddc2180af1f83b49c0e1df0577d85b8fd9 in / 
-# Mon, 29 Jun 2020 20:57:41 GMT
+# Mon, 27 Jul 2020 23:57:42 GMT
+ADD file:d8597201fb4b086ce246b34356bb248e66c8b84a59dc82018232350c68d3f600 in / 
+# Mon, 27 Jul 2020 23:57:45 GMT
 CMD ["sh"]
 ```
 
 -	Layers:
-	-	`sha256:9b13869736ac2d2045b8d5ae0a38fd444a877108fa51aa824414b20eebda0f7b`  
-		Last Modified: Mon, 29 Jun 2020 20:58:29 GMT  
-		Size: 714.5 KB (714513 bytes)  
+	-	`sha256:02418af24a629a46b3a354518e5bc8f717451e9bd05835fa32d0c95691450919`  
+		Last Modified: Mon, 27 Jul 2020 23:58:33 GMT  
+		Size: 714.5 KB (714517 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `busybox:1-uclibc` - linux; arm64 variant v8
 
 ```console
-$ docker pull busybox@sha256:134252904112f8563a17a360957d9ad192e5c1e77463e04be74e71cffd4b41ba
+$ docker pull busybox@sha256:759af0b171cc3742032232b5562c1a6d5deb29e487efa2d0e425b2df3a8d5521
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **819.5 KB (819533 bytes)**  
+-	Total Size: **819.5 KB (819537 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f828be9a54e5ef045c17d106d846a163981f16143780e6737d787115d90ba75`
+-	Image ID: `sha256:5a9d3c3dd268611214b65066c72d5fe73cf948f8b6195227de70119858bab258`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Mon, 29 Jun 2020 20:39:42 GMT
-ADD file:58345106c40ae88a68c78ddb84c5e0b557bb44016f3bcc17fd3f39489fd76fdb in / 
-# Mon, 29 Jun 2020 20:39:42 GMT
+# Mon, 27 Jul 2020 23:41:26 GMT
+ADD file:b30c8ba7ffe694c4cd200cdcfc75a57a099c28f5cc97c74b6e5c0cf2bfcc5962 in / 
+# Mon, 27 Jul 2020 23:41:26 GMT
 CMD ["sh"]
 ```
 
 -	Layers:
-	-	`sha256:ebdaf4d05d6f0c8a7a1e8b43b7d41ff175d0e8cad3c7880dc1fea16028d75c26`  
-		Last Modified: Mon, 29 Jun 2020 20:40:25 GMT  
-		Size: 819.5 KB (819533 bytes)  
+	-	`sha256:b532f239b6e65351b848cb84cff46bc884354b1ae9af38e18d7a79d1395cbffb`  
+		Last Modified: Mon, 27 Jul 2020 23:42:07 GMT  
+		Size: 819.5 KB (819537 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `busybox:1-uclibc` - linux; 386
 
 ```console
-$ docker pull busybox@sha256:414aeb860595d7078cbe87abaeed05157d6b44907fbd7db30e1cfba9b6902448
+$ docker pull busybox@sha256:ab680d33f94b93e4c3383faad99a9d0195a73d50d4bb039acea5ae7f0ae6691d
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **724.8 KB (724785 bytes)**  
+-	Total Size: **724.8 KB (724798 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b67811ab26a2c354be309ea3923e6e4f4be5a282083041ff3df65552f8a96455`
+-	Image ID: `sha256:a34cc20fa77324521ee547d7c94c611ea09a3f318747474efe8c72c106ec5a1c`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Mon, 29 Jun 2020 20:38:36 GMT
-ADD file:6cd6ae9c3118729db4d3673abf74bc0ff2ebb5c3c74ffcd8d4427ddbb860cf1d in / 
-# Mon, 29 Jun 2020 20:38:36 GMT
+# Mon, 27 Jul 2020 23:38:35 GMT
+ADD file:4f941377c805b8219cf34236cbb89e375b2b6bea1d7128be1ed0d8fd88b4f4f4 in / 
+# Mon, 27 Jul 2020 23:38:35 GMT
 CMD ["sh"]
 ```
 
 -	Layers:
-	-	`sha256:eb9d0ff262f515083818cbbb798522a2d910eb5088d631d7cacb293502c394ae`  
-		Last Modified: Mon, 29 Jun 2020 20:39:10 GMT  
-		Size: 724.8 KB (724785 bytes)  
+	-	`sha256:586640bf92a6a17334e9b3729c1add38331c20e721547d188ea61820d694f847`  
+		Last Modified: Mon, 27 Jul 2020 23:39:00 GMT  
+		Size: 724.8 KB (724798 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `busybox:1-uclibc` - linux; mips64le
 
 ```console
-$ docker pull busybox@sha256:116dccaef9ca8b121565a39bd568ede437f084c94bb0642d2aba6b441e38d2f8
+$ docker pull busybox@sha256:3d96083d0e7c8fee34cd7207880cf838f404d14349cb5e2f78085e05441e8576
 ```
 
--	Docker Version: 19.03.8
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **944.1 KB (944108 bytes)**  
+-	Total Size: **944.1 KB (944116 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33c103418e40519db018ba6d1df492a04e1258a220d2fbc99d2d998c7773be57`
+-	Image ID: `sha256:ca357e80addcd2a08997ef801491eb39c1d17edb92edc76bc4edad7cb562285e`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Mon, 29 Jun 2020 21:07:25 GMT
-ADD file:91411836016b02ed1b15167a30b1f6de05adc21f7ce9a9c04470b906cef3fd08 in / 
-# Mon, 29 Jun 2020 21:07:26 GMT
+# Tue, 28 Jul 2020 00:07:21 GMT
+ADD file:cd026af98e5ea2441f42e7573172e1fe6dcf150bf4b472921bb78cced7732057 in / 
+# Tue, 28 Jul 2020 00:07:21 GMT
 CMD ["sh"]
 ```
 
 -	Layers:
-	-	`sha256:fdbe5bd6d25f8d2e59c0082632d99235b405a51f9af311ce553d616565584070`  
-		Last Modified: Mon, 29 Jun 2020 21:07:51 GMT  
-		Size: 944.1 KB (944108 bytes)  
+	-	`sha256:1a9181041147ae5e1a99452095ee0e8fc42870db39a8260c80dfdf3bd6ac861b`  
+		Last Modified: Tue, 28 Jul 2020 00:07:43 GMT  
+		Size: 944.1 KB (944116 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
