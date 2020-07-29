@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:34c833a8c3d039e183e8361c538f3f4a3f2a74cb16091fb9d39b623dddf652f7`
-- Created: `2020-07-23T09:42:25.29093685Z`
+- Image ID: `sha256:3e5b18984dbc454540d441ca217b329fdca39e4c9f6cd19ed83539242ddf1ec7`
+- Created: `2020-07-29T02:36:29.422381124Z`
 - Virtual Size: ~ 346.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,8 +13,6 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/local/openjdk-8`
   - `JAVA_VERSION=8u262`
-  - `JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_`
-  - `JAVA_URL_VERSION=8u262b10`
   - `ORIENTDB_VERSION=3.1.1`
   - `ORIENTDB_DOWNLOAD_MD5=d4576a49cbb1e1a5933761441c762118`
   - `ORIENTDB_DOWNLOAD_SHA1=e874f46aaa62b66721ed924067c49dd759069517`
