@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c0086b7a125f1e555e7faf654353482752dc4faf19cfd6dd883436b184ab8fc0`
-- Created: `2020-07-23T08:06:42.746680184Z`
+- Image ID: `sha256:f314e3f521a6e5a64500bb8f10ea663f0356b6cd46ef9a1fc23f2be145925b5d`
+- Created: `2020-07-29T01:58:43.522706579Z`
 - Virtual Size: ~ 414.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,8 +14,6 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/local/openjdk-11`
   - `JAVA_VERSION=11.0.8`
-  - `JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_`
-  - `JAVA_URL_VERSION=11.0.8_10`
   - `JETTY_VERSION=9.4.30.v20200611`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
