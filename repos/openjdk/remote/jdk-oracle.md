@@ -1,7 +1,7 @@
 ## `openjdk:jdk-oracle`
 
 ```console
-$ docker pull openjdk@sha256:35049c8e6c47d9d20263e7daa5250b62772cef8832e7e23cfd9acfd9e10c12b3
+$ docker pull openjdk@sha256:00014063d49f777891646a121f70e6721c61c17db81e624125c1dedd1c8b1fc5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull openjdk@sha256:35049c8e6c47d9d20263e7daa5250b62772cef8832e7e23cfd9
 ### `openjdk:jdk-oracle` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:62b0dea73f5af6986dea2b039ec51fde7772ede10a36550ee12a55b4a8cfe4a7
+$ docker pull openjdk@sha256:afe7bebffdc20fb992bd67dba0a15359db806a5c3ee5bb78e88ac3c9f20c684b
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **263.3 MB (263295014 bytes)**  
+-	Total Size: **263.3 MB (263293791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cdc43cc23d2d289a56849ab15234a1ae21feebaea8151eba671e57718a1dd5f5`
+-	Image ID: `sha256:0cd6de5fdbee12dc53c2ae039e21f0c78bc701c6e841197878697921045b2148`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -38,9 +38,9 @@ ENV JAVA_HOME=/usr/java/openjdk-14
 ENV PATH=/usr/java/openjdk-14/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Fri, 17 Jul 2020 02:55:22 GMT
 ENV JAVA_VERSION=14.0.2
-# Fri, 17 Jul 2020 02:56:06 GMT
-RUN set -eux; 		objdump="$(command -v objdump)"; 	arch="$(objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		amd64 | i386:x86-64) 			downloadUrl=https://download.java.net/java/GA/jdk14.0.2/205943a0976c4ed48cb16f1043c5c647/12/GPL/openjdk-14.0.2_linux-x64_bin.tar.gz; 			downloadSha256=91310200f072045dc6cef2c8c23e7e6387b37c46e9de49623ce0fa461a24623d; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o /openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 */openjdk.tgz" | sha256sum -c -; 		mkdir -p "$JAVA_HOME"; 	tar --extract --file /openjdk.tgz --directory "$JAVA_HOME" --strip-components 1; 	rm /openjdk.tgz; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		java --version; 	javac --version
-# Fri, 17 Jul 2020 02:56:06 GMT
+# Wed, 29 Jul 2020 01:27:49 GMT
+RUN set -eux; 		objdump="$(command -v objdump)"; 	arch="$(objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		amd64 | i386:x86-64) 			downloadUrl=https://download.java.net/java/GA/jdk14.0.2/205943a0976c4ed48cb16f1043c5c647/12/GPL/openjdk-14.0.2_linux-x64_bin.tar.gz; 			downloadSha256=91310200f072045dc6cef2c8c23e7e6387b37c46e9de49623ce0fa461a24623d; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		javac --version; 	java --version
+# Wed, 29 Jul 2020 01:27:49 GMT
 CMD ["jshell"]
 ```
 
@@ -53,7 +53,7 @@ CMD ["jshell"]
 		Last Modified: Fri, 17 Jul 2020 02:58:39 GMT  
 		Size: 16.2 MB (16187244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:266caac2c4da344975f2eb21e1a8786af2973a44f08352929288412ff8b344d3`  
-		Last Modified: Fri, 17 Jul 2020 02:59:54 GMT  
-		Size: 199.1 MB (199092998 bytes)  
+	-	`sha256:945a8b67ac5788b337ea1a8afae744f65ffa735bc13dd852a293b817d9ace3e3`  
+		Last Modified: Wed, 29 Jul 2020 01:35:18 GMT  
+		Size: 199.1 MB (199091775 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

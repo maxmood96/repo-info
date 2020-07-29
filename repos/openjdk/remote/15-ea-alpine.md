@@ -1,7 +1,7 @@
 ## `openjdk:15-ea-alpine`
 
 ```console
-$ docker pull openjdk@sha256:d65ba34a31964a4efc43789c806787089cdb0c1a7ef56c8dd779bda7566d9fa8
+$ docker pull openjdk@sha256:fb60cc0750e6a3e90d2c853413f07dfde53ba3dc3c020b2fa20df0027ca0023a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull openjdk@sha256:d65ba34a31964a4efc43789c806787089cdb0c1a7ef56c8dd77
 ### `openjdk:15-ea-alpine` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:92b0784ab566d62b01f9495945bdf1aad3c000bcdae3d0f8f78d2256f01fa1ae
+$ docker pull openjdk@sha256:6ac8794912d16d92b0805380f7bebbfe3d67d7b1131f248f241d696c22dbf4a5
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.5 MB (200519682 bytes)**  
+-	Total Size: **200.5 MB (200515633 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e73327305beb3885d2e76a557752fa87a44735bd08c45121fd9b3124dc409ab0`
+-	Image ID: `sha256:f02adfce91a29732559b470bedee2a5a2f6baa59bb3fc254459d370719d2d21e`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -34,13 +34,9 @@ ENV JAVA_HOME=/opt/openjdk-15
 ENV PATH=/opt/openjdk-15/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 22 Jul 2020 01:07:14 GMT
 ENV JAVA_VERSION=15-ea+31
-# Wed, 22 Jul 2020 01:07:15 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/alpine/31/binaries/openjdk-15-ea+31_linux-x64-musl_bin.tar.gz
-# Wed, 22 Jul 2020 01:07:15 GMT
-ENV JAVA_SHA256=da7abd4d3b3511ed2da8aba25b7ff67863261a0c8b5e7e771cf0fbfadcc7f4fd
-# Wed, 22 Jul 2020 01:08:07 GMT
-RUN set -eux; 		wget -O /openjdk.tgz "$JAVA_URL"; 	echo "$JAVA_SHA256 */openjdk.tgz" | sha256sum -c -; 		mkdir -p "$JAVA_HOME"; 	tar --extract --file /openjdk.tgz --directory "$JAVA_HOME" --strip-components 1; 	rm /openjdk.tgz; 		java -Xshare:dump; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/ssl/certs/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		java --version; 	javac --version
-# Wed, 22 Jul 2020 01:08:07 GMT
+# Wed, 29 Jul 2020 01:27:32 GMT
+RUN set -eux; 		arch="$(apk --print-arch)"; 	case "$arch" in 		x86_64) 			downloadUrl=https://download.java.net/java/early_access/alpine/31/binaries/openjdk-15-ea+31_linux-x64-musl_bin.tar.gz; 			downloadSha256=da7abd4d3b3511ed2da8aba25b7ff67863261a0c8b5e7e771cf0fbfadcc7f4fd; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum -c -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/ssl/certs/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		java -Xshare:dump; 		javac --version; 	java --version
+# Wed, 29 Jul 2020 01:27:32 GMT
 CMD ["jshell"]
 ```
 
@@ -53,7 +49,7 @@ CMD ["jshell"]
 		Last Modified: Wed, 22 Jul 2020 01:13:01 GMT  
 		Size: 926.4 KB (926401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eaa15118984fa68e4bdb9010318493fccb170122e25dac619d5cefdb32c4d32b`  
-		Last Modified: Wed, 22 Jul 2020 01:14:18 GMT  
-		Size: 196.8 MB (196795740 bytes)  
+	-	`sha256:fc5eabcede3645338ce4f48b82a9c70a12f11b8d569a562c1ce54a7e670b0e98`  
+		Last Modified: Wed, 29 Jul 2020 01:34:52 GMT  
+		Size: 196.8 MB (196791691 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
