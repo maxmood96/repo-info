@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bcc1cc74c13da1a0a486c12f07f05a69cee3fc2e5cd94614e6fba23e96f97bf3`
-- Created: `2020-07-23T09:01:44.269887197Z`
+- Image ID: `sha256:4e73db9d0a63ae23b4f795237a8f9e939daefad2366943aa32e7c3b1ef961920`
+- Created: `2020-07-29T03:46:34.386268225Z`
 - Virtual Size: ~ 573.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,8 +14,6 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/local/openjdk-11`
   - `JAVA_VERSION=11.0.8`
-  - `JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_`
-  - `JAVA_URL_VERSION=11.0.8_10`
   - `NEO4J_SHA256=f1b5ee0db7771abeb7a9db2f3c8b6d92850d5587ed99926c417bf5c70d883c06`
   - `NEO4J_TARBALL=neo4j-enterprise-4.1.1-unix.tar.gz`
   - `NEO4J_EDITION=enterprise`
