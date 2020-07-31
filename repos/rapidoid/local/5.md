@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b048a2701b4b0260c59f58f8945a43ec14ec6cc720a249f266881762bf7ed66b`
-- Created: `2020-07-23T09:45:31.232193305Z`
+- Image ID: `sha256:6a2ff022d72ab9e39815270e9b86c017d176ef2a83d93ab07b54d463cde44773`
+- Created: `2020-07-30T23:32:18.708294119Z`
 - Virtual Size: ~ 207.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,9 +12,7 @@
   - `PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/local/openjdk-8`
-  - `JAVA_VERSION=8u262`
-  - `JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_`
-  - `JAVA_URL_VERSION=8u262b10`
+  - `JAVA_VERSION=8u265`
   - `GPG_KEY=E306FEF548C686C23DC00242B9B08D8F616EF49C`
   - `RAPIDOID_JAR=/opt/rapidoid.jar`
   - `RAPIDOID_TMP=/tmp/rapidoid`
