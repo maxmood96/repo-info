@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:52107988cc2125c7a537a9cc119f07bc2874dcd0230e07bb069cb37d26d162a2`
-- Created: `2020-07-23T09:48:13.299539943Z`
+- Image ID: `sha256:85116a698b3723cc36b2808c68e946d1ddca563b5cb7c9cd80d4e53e8968b4f6`
+- Created: `2020-07-30T23:49:07.502698039Z`
 - Virtual Size: ~ 577.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,9 +12,7 @@
   - `PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-2.2.0/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/local/openjdk-8`
-  - `JAVA_VERSION=8u262`
-  - `JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jre_`
-  - `JAVA_URL_VERSION=8u262b10`
+  - `JAVA_VERSION=8u265`
   - `STORM_CONF_DIR=/conf`
   - `STORM_DATA_DIR=/data`
   - `STORM_LOG_DIR=/logs`
