@@ -1,9 +1,9 @@
-# `openjdk:8u262-jdk-buster`
+# `openjdk:8u265-jdk-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3b85321ce426393a6449fb2082fad643eefe43a12849ac1f8c64db1c9a1442ee`
-- Created: `2020-07-22T22:41:50.146635463Z`
+- Image ID: `sha256:7c69743a6bb812191c16e63c417699fa219d2c30b827e1d1feda07506b52a4c4`
+- Created: `2020-07-30T22:26:14.968636401Z`
 - Virtual Size: ~ 510.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,9 +12,7 @@
   - `PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/local/openjdk-8`
-  - `JAVA_VERSION=8u262`
-  - `JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_`
-  - `JAVA_URL_VERSION=8u262b10`
+  - `JAVA_VERSION=8u265`
 
 ## `dpkg` (`.deb`-based packages)
 

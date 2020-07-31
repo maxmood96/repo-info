@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2f8bb350d21ff0bd5e16f7cd5a66b3eea128f39628cfb8d6d0ce2cc548b5f9bf`
-- Created: `2020-07-22T22:40:26.461088232Z`
+- Image ID: `sha256:3a7aa4036e820b5935853f1a923a1ee99ba45427d35a46c0d7438cc4894d018c`
+- Created: `2020-07-29T01:29:00.564457047Z`
 - Virtual Size: ~ 627.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,8 +13,6 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/local/openjdk-11`
   - `JAVA_VERSION=11.0.8`
-  - `JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.8%2B10/OpenJDK11U-jdk_`
-  - `JAVA_URL_VERSION=11.0.8_10`
 
 ## `dpkg` (`.deb`-based packages)
 

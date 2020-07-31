@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e73327305beb3885d2e76a557752fa87a44735bd08c45121fd9b3124dc409ab0`
-- Created: `2020-07-22T01:08:07.663757823Z`
+- Image ID: `sha256:f02adfce91a29732559b470bedee2a5a2f6baa59bb3fc254459d370719d2d21e`
+- Created: `2020-07-29T01:27:32.255545102Z`
 - Virtual Size: ~ 343.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,6 @@
   - `PATH=/opt/openjdk-15/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/openjdk-15`
   - `JAVA_VERSION=15-ea+31`
-  - `JAVA_URL=https://download.java.net/java/early_access/alpine/31/binaries/openjdk-15-ea+31_linux-x64-musl_bin.tar.gz`
-  - `JAVA_SHA256=da7abd4d3b3511ed2da8aba25b7ff67863261a0c8b5e7e771cf0fbfadcc7f4fd`
 
 ## `apk` (`.apk`-based packages)
 
