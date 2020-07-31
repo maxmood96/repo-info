@@ -168,13 +168,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=11ubuntu9
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu9.dsc' base-files_11ubuntu9.dsc 1641 SHA256:3a0471d7e381bcfbbf2d58ce68b4fb86f8d97b1629ec5b31e6e41b0aff66418e
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu9.tar.xz' base-files_11ubuntu9.tar.xz 79348 SHA256:afa7706a7a767affab7a630717f3a7b64d9935f16020047837d1f20b1e8012cc
-```
 
 ### `dpkg` source package: `base-passwd=3.5.47`
 
@@ -307,13 +303,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20190110ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20190110ubuntu2.dsc' ca-certificates_20190110ubuntu2.dsc 1913 SHA256:a71b08c22dad0ab19f890aac01ac3ecd210cf699c110e0c652e71d26f782597e
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20190110ubuntu2.tar.xz' ca-certificates_20190110ubuntu2.tar.xz 243628 SHA256:2ce310b6d94775568c38072b824ee9ee647434304994f984961f60231f747f80
-```
 
 ### `dpkg` source package: `cdebconf=0.252ubuntu1`
 
@@ -1317,14 +1309,9 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libselinux=3.0-1build2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.0-1build2.dsc' libselinux_3.0-1build2.dsc 2565 SHA256:9a8d6c354ed06350606c009d899d117e71fda20887792b2c25b38222d0190d93
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.0.orig.tar.gz' libselinux_3.0.orig.tar.gz 212096 SHA256:2ea2b30f671dae9d6b1391cbe8fb2ce5d36a3ee4fb1cd3c32f0d933c31b82433
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.0-1build2.debian.tar.xz' libselinux_3.0-1build2.debian.tar.xz 23720 SHA256:ed85da0fe5561205c95f0f622562425dc7d8dd61ffd213a7fa914d778fe8da71
-```
 
 ### `dpkg` source package: `libsemanage=3.0-1build2`
 
@@ -1338,14 +1325,9 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsemanage=3.0-1build2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.0-1build2.dsc' libsemanage_3.0-1build2.dsc 2678 SHA256:6231f4b00991657fafef2595eb571b2bcbe437de4ec9dc9929c0e69187db5f33
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.0.orig.tar.gz' libsemanage_3.0.orig.tar.gz 180745 SHA256:a497b0720d54eac427f1f3f618eed417e50ed8f4e47ed0f7a1d391bd416e84cf
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.0-1build2.debian.tar.xz' libsemanage_3.0-1build2.debian.tar.xz 17176 SHA256:38a646f91532c920c8c15a695c3585397ddbf032ecf49c52eb89d53c8eac48fb
-```
 
 ### `dpkg` source package: `libsepol=3.1-1`
 
@@ -2521,14 +2503,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.35.2-7ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.35.2-7ubuntu3.dsc' util-linux_2.35.2-7ubuntu3.dsc 3768 SHA256:90b821ab1f541e50fd0f033bb2043aa35f4da698f15dca7771c0aec503bfb992
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.35.2.orig.tar.xz' util-linux_2.35.2.orig.tar.xz 5150488 SHA256:21b7431e82f6bcd9441a01beeec3d57ed33ee948f8a5b41da577073c372eb58a
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.35.2-7ubuntu3.debian.tar.xz' util-linux_2.35.2-7ubuntu3.debian.tar.xz 99904 SHA256:24d9d096564f434d0bbce21fb5af722299899516032c192d79003980400b69dc
-```
 
 ### `dpkg` source package: `wget=1.20.3-1ubuntu1`
 

@@ -505,14 +505,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-10-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-10=10.1.0-6ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.1.0-6ubuntu1.dsc' gcc-10_10.1.0-6ubuntu1.dsc 30466 SHA256:63028a921bccc72c35a48d1ca6e0304cf9ce1739900cc81fca8e5f34b4174142
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.1.0.orig.tar.gz' gcc-10_10.1.0.orig.tar.gz 94357676 SHA256:639726222b60ce144063e2b166057fccda523064839381025130f7128f7b9b66
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.1.0-6ubuntu1.debian.tar.xz' gcc-10_10.1.0-6ubuntu1.debian.tar.xz 2493012 SHA256:f3b94ed21d8bd2ad185f216acea3631e42cb3ae787de268b8ef0f0636dbaea8f
-```
 
 ### `dpkg` source package: `glibc=2.31-0ubuntu10`
 
