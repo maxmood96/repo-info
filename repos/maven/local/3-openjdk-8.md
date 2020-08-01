@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:553f4cadceb29d1d695f20e91b50b85839ac408a2add3a414d3f7d7dd71021ea`
-- Created: `2020-07-23T08:58:00.827526375Z`
+- Image ID: `sha256:167dab4dbf96dc47033328a91b6ee1b50dcbb7210980970e13a91a46ad7f8c26`
+- Created: `2020-07-30T23:28:27.403828653Z`
 - Virtual Size: ~ 521.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,9 +13,7 @@
   - `PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/local/openjdk-8`
-  - `JAVA_VERSION=8u262`
-  - `JAVA_BASE_URL=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_`
-  - `JAVA_URL_VERSION=8u262b10`
+  - `JAVA_VERSION=8u265`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 
