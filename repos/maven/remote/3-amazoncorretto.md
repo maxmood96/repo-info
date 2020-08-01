@@ -1,7 +1,7 @@
 ## `maven:3-amazoncorretto`
 
 ```console
-$ docker pull maven@sha256:dcbf542019fee2c27f3dd0ffb8652e359e631f824614ef0bb56fe9b0927d99c0
+$ docker pull maven@sha256:a87e839e88e7e425b7bd7f4526ad7990dc8ffce83a9d15c181262b602812cc40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -94,81 +94,81 @@ CMD ["mvn"]
 ### `maven:3-amazoncorretto` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:581674381dac39da1f32c5a2c90a11a6b1c069047133a4c2fd9086c53965d3cd
+$ docker pull maven@sha256:dce3dcbfd5f2399cbe242ef0a1eacaea70d738d96df04c5d2ca107858c7e2ba3
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **220.3 MB (220347581 bytes)**  
+-	Total Size: **220.5 MB (220522783 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f0687dfe09614fbd9f3f6f68abb0172d4cdceaa0106da1e9e605d169becb298`
+-	Image ID: `sha256:d07311d1172ccb0e7a5596843bbb348373e91dfc450bf4d34281ca015c97fc35`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Tue, 30 Jun 2020 21:59:07 GMT
-ADD file:c597ed16b945b44bdc9a607ac9730b470dd169fb94a5ca4e000d07318157d4f8 in / 
-# Tue, 30 Jun 2020 21:59:09 GMT
+# Fri, 31 Jul 2020 22:43:15 GMT
+ADD file:d4c394189445aecbba87f3effbedda61d337d18393fa4b1af22ce498be6f6af0 in / 
+# Fri, 31 Jul 2020 22:43:20 GMT
 CMD ["/bin/bash"]
-# Wed, 15 Jul 2020 22:40:45 GMT
+# Fri, 31 Jul 2020 23:01:32 GMT
 ARG version=11.0.8.10-1
-# Wed, 15 Jul 2020 22:41:16 GMT
+# Fri, 31 Jul 2020 23:02:07 GMT
 # ARGS: version=11.0.8.10-1
 RUN set -eux     && export GNUPGHOME="$(mktemp -d)"     && curl -fL -o corretto.key https://yum.corretto.aws/corretto.key     && gpg --batch --import corretto.key     && gpg --batch --export --armor '6DC3636DAE534049C8B94623A122542AB04F24E3' > corretto.key     && rpm --import corretto.key     && rm -r "$GNUPGHOME" corretto.key     && curl -fL -o /etc/yum.repos.d/corretto.repo https://yum.corretto.aws/corretto.repo     && grep -q '^gpgcheck=1' /etc/yum.repos.d/corretto.repo     && yum install -y java-11-amazon-corretto-devel-$version     && (find /usr/lib/jvm/java-11-amazon-corretto -name src.zip -delete || true)     && yum install -y fontconfig     && yum clean all
-# Wed, 15 Jul 2020 22:41:17 GMT
+# Fri, 31 Jul 2020 23:02:09 GMT
 ENV LANG=C.UTF-8
-# Wed, 15 Jul 2020 22:41:18 GMT
+# Fri, 31 Jul 2020 23:02:10 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
-# Wed, 15 Jul 2020 23:53:58 GMT
+# Fri, 31 Jul 2020 23:28:11 GMT
 ARG MAVEN_VERSION=3.6.3
-# Wed, 15 Jul 2020 23:53:58 GMT
+# Fri, 31 Jul 2020 23:28:11 GMT
 ARG USER_HOME_DIR=/root
-# Wed, 15 Jul 2020 23:53:59 GMT
+# Fri, 31 Jul 2020 23:28:12 GMT
 ARG SHA=c35a1803a6e70a126e80b2b3ae33eed961f83ed74d18fcd16909b2d44d7dada3203f1ffe726c17ef8dcca2dcaa9fca676987befeadc9b9f759967a8cb77181c0
-# Wed, 15 Jul 2020 23:54:00 GMT
+# Fri, 31 Jul 2020 23:28:12 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.6.3/binaries
-# Tue, 28 Jul 2020 21:40:52 GMT
+# Fri, 31 Jul 2020 23:28:26 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.6.3/binaries MAVEN_VERSION=3.6.3 SHA=c35a1803a6e70a126e80b2b3ae33eed961f83ed74d18fcd16909b2d44d7dada3203f1ffe726c17ef8dcca2dcaa9fca676987befeadc9b9f759967a8cb77181c0 USER_HOME_DIR=/root
 RUN yum install -y tar which gzip   && rm -rf /var/cache/yum/*   && yum clean all
-# Tue, 28 Jul 2020 21:40:56 GMT
+# Fri, 31 Jul 2020 23:28:32 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.6.3/binaries MAVEN_VERSION=3.6.3 SHA=c35a1803a6e70a126e80b2b3ae33eed961f83ed74d18fcd16909b2d44d7dada3203f1ffe726c17ef8dcca2dcaa9fca676987befeadc9b9f759967a8cb77181c0 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 28 Jul 2020 21:40:56 GMT
+# Fri, 31 Jul 2020 23:28:32 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 28 Jul 2020 21:40:57 GMT
+# Fri, 31 Jul 2020 23:28:33 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Tue, 28 Jul 2020 21:40:58 GMT
+# Fri, 31 Jul 2020 23:28:34 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Tue, 28 Jul 2020 21:40:58 GMT
+# Fri, 31 Jul 2020 23:28:34 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Tue, 28 Jul 2020 21:40:59 GMT
+# Fri, 31 Jul 2020 23:28:35 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Tue, 28 Jul 2020 21:40:59 GMT
+# Fri, 31 Jul 2020 23:28:35 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:6c0fd36c9881cb99dbcd7fe98cfd04a4a653e35c4c1195b7cb7d339eaec9dd79`  
-		Last Modified: Tue, 30 Jun 2020 22:00:22 GMT  
-		Size: 63.2 MB (63163782 bytes)  
+	-	`sha256:c9ca78f6e1f39219972cf4f8dac027e6f91e01d68c7aefd9c55b86c47f558827`  
+		Last Modified: Fri, 31 Jul 2020 22:44:30 GMT  
+		Size: 63.4 MB (63354136 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d329972c97e180a09a54e02486d5abb2b8b9e7b3218dcbc1431b24d8e61e1152`  
-		Last Modified: Wed, 15 Jul 2020 22:42:32 GMT  
-		Size: 144.0 MB (144017548 bytes)  
+	-	`sha256:a69b79657d5aea582ebde55909185198144b362fb5dba4bc4c0fed20f8559a17`  
+		Last Modified: Fri, 31 Jul 2020 23:03:18 GMT  
+		Size: 144.0 MB (144021601 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7985211b5dbdf2c8aea4d9a4e883ddc1906b9b086b5f8dde0c69acf673f58966`  
-		Last Modified: Tue, 28 Jul 2020 21:41:55 GMT  
-		Size: 3.6 MB (3583838 bytes)  
+	-	`sha256:279c78f38c409f161d08b0bccd63c0cbb36b98258d43a660b013aa701dd73f57`  
+		Last Modified: Fri, 31 Jul 2020 23:29:31 GMT  
+		Size: 3.6 MB (3564621 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6529fabd8aff886180468a9de6f7b5fd00822165f60b97b5d4e04ee1eca95605`  
-		Last Modified: Tue, 28 Jul 2020 21:41:55 GMT  
-		Size: 9.6 MB (9581202 bytes)  
+	-	`sha256:be54e75ce7ebf60bf4a4fffb9b6b987f375dc6965359a28d2c937423c8026452`  
+		Last Modified: Fri, 31 Jul 2020 23:29:32 GMT  
+		Size: 9.6 MB (9581213 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9baa09a64b2e03cf0d621fdad1b2228780e1f5a37232bce5fb5b084dc90c26f`  
-		Last Modified: Tue, 28 Jul 2020 21:41:54 GMT  
-		Size: 851.0 B  
+	-	`sha256:c9bbdc0cfb1409db194b1464554e830f134c3e138d69bbb97dbbbcab17470220`  
+		Last Modified: Fri, 31 Jul 2020 23:29:30 GMT  
+		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6550c0960d5d602ab51eace24bb0f731adaff713066476859d119d4e112a60a`  
-		Last Modified: Tue, 28 Jul 2020 21:41:54 GMT  
+	-	`sha256:a4719a2b097d380d2af9fe248c7a01c8ba99d300192656ac9a512786a503e2f7`  
+		Last Modified: Fri, 31 Jul 2020 23:29:30 GMT  
 		Size: 360.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
