@@ -130,19 +130,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.1.7
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.1.7.dsc' apt_2.1.7.dsc 2756 SHA256:c81d9d9e2d77e1b415e714ee3a6df1bb8c081de54293d105599196e423d97b44
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.1.7.tar.xz' apt_2.1.7.tar.xz 2177580 SHA256:064adbfb3248188de562e0aac394b1085af063c9a43240e24e6f324f45306b9c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.1.7/
 
-- https://sources.debian.net/src/apt/2.1.7/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.1.7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.1.7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.48-5`
 
@@ -357,20 +351,13 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.0-6
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.0-6.dsc' bash_5.0-6.dsc 2305 SHA256:5c8b7183b24dbcf5f853946980ede0052f617778ca3d0083e012273f954b93c5
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.0.orig.tar.xz' bash_5.0.orig.tar.xz 5554808 SHA256:893858ba233d65bda38039e99dd96a4102b2f6a2d5e6c1c546e0794a60beed97
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.0-6.debian.tar.xz' bash_5.0-6.debian.tar.xz 97552 SHA256:a84d952eca31941833605ae5a5e9ac44ca4bbcf63f29e5e2b13d0aee4bb39782
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/bash/5.0-6/
 
-- https://sources.debian.net/src/bash/5.0-6/ (for browsing the source)
-- https://sources.debian.net/src/bash/5.0-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bash/5.0-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `binutils=2.34.90.20200706-1`
 
@@ -1205,20 +1192,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-9-base/copyright`)
 - `LGPL`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-9=9.3.0-15
-'http://deb.debian.org/debian/pool/main/g/gcc-9/gcc-9_9.3.0-15.dsc' gcc-9_9.3.0-15.dsc 21922 SHA256:83dd853938bcb9d131210c8f8eddcb4c9c9a3a0704b063da17cd099b32d88d30
-'http://deb.debian.org/debian/pool/main/g/gcc-9/gcc-9_9.3.0.orig.tar.gz' gcc-9_9.3.0.orig.tar.gz 88686943 SHA256:824044ffa96eb337bb1c1d4cf6a82691d0290d6f42e1d13362eea855458de060
-'http://deb.debian.org/debian/pool/main/g/gcc-9/gcc-9_9.3.0-15.debian.tar.xz' gcc-9_9.3.0-15.debian.tar.xz 735456 SHA256:6561b0b5c3578b7ef031e7c2b4af8178f479f2122df99e20540ea192871ba7ca
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-9/9.3.0-15/
 
-- https://sources.debian.net/src/gcc-9/9.3.0-15/ (for browsing the source)
-- https://sources.debian.net/src/gcc-9/9.3.0-15/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-9/9.3.0-15/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.188`
 
@@ -2648,20 +2628,13 @@ Licenses: (parsed from: `/usr/share/doc/libjpeg-dev/copyright`, `/usr/share/doc/
 - `BSD-BY-LC-NE`
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libjpeg-turbo=1:2.0.5-1
-'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.0.5-1.dsc' libjpeg-turbo_2.0.5-1.dsc 2319 SHA256:9145b58c2061d064071a306bd2ccb56b4dc33740d1763f90ab04d2734972137b
-'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.0.5.orig.tar.gz' libjpeg-turbo_2.0.5.orig.tar.gz 2162983 SHA256:16f8f6f2715b3a38ab562a84357c793dd56ae9899ce130563c72cd93d8357b5d
-'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.0.5-1.debian.tar.xz' libjpeg-turbo_2.0.5-1.debian.tar.xz 87072 SHA256:7ee580e64c72a847a1e63d37bc3f1a5b4cc641c42dec7ab4753a56bafcec9790
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libjpeg-turbo/1:2.0.5-1/
 
-- https://sources.debian.net/src/libjpeg-turbo/1:2.0.5-1/ (for browsing the source)
-- https://sources.debian.net/src/libjpeg-turbo/1:2.0.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libjpeg-turbo/1:2.0.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libksba=1.4.0-2`
 
@@ -4768,20 +4741,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.8=3.8.5-1
-'http://deb.debian.org/debian/pool/main/p/python3.8/python3.8_3.8.5-1.dsc' python3.8_3.8.5-1.dsc 3316 SHA256:40937aeee02d8c1fef154536a6a57b9dcbcf9c96aac1c5a96ea2258e5bef07a5
-'http://deb.debian.org/debian/pool/main/p/python3.8/python3.8_3.8.5.orig.tar.xz' python3.8_3.8.5.orig.tar.xz 18019640 SHA256:e3003ed57db17e617acb382b0cade29a248c6026b1bd8aad1f976e9af66a83b0
-'http://deb.debian.org/debian/pool/main/p/python3.8/python3.8_3.8.5-1.debian.tar.xz' python3.8_3.8.5-1.debian.tar.xz 210184 SHA256:e17249ff1b5ddb9821f89363d90743de00fad8cad15b7ca039d8d7f5d8128d8c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.8/3.8.5-1/
 
-- https://sources.debian.net/src/python3.8/3.8.5-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.8/3.8.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.8/3.8.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.0-4`
 

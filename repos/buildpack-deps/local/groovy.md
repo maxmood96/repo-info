@@ -478,14 +478,9 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=8.30-3ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.30-3ubuntu3.dsc' coreutils_8.30-3ubuntu3.dsc 2023 SHA256:bba7fce92bd1f15fb654b2209ba79b007dd572090fb69d9c60cbf0e760d02928
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.30.orig.tar.xz' coreutils_8.30.orig.tar.xz 5359532 SHA256:e831b3a86091496cdba720411f9748de81507798f6130adeaef872d206e1b057
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.30-3ubuntu3.debian.tar.xz' coreutils_8.30-3ubuntu3.debian.tar.xz 40180 SHA256:8d7e49f94846dd48d4e4a0efc82fbcc91497f343b5d73fa74a0ff0613268dbd4
-```
 
 ### `dpkg` source package: `curl=7.68.0-1ubuntu4`
 
@@ -1010,14 +1005,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-9/copyright`, `/usr/share/doc/g++-9/
 - `LGPL`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-9=9.3.0-13ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/gcc-9/gcc-9_9.3.0-13ubuntu1.dsc' gcc-9_9.3.0-13ubuntu1.dsc 23722 SHA256:5f64f627afc216890400774f60e9be3e7b329d06c2c8b89777701546cdcf6cec
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/gcc-9/gcc-9_9.3.0.orig.tar.gz' gcc-9_9.3.0.orig.tar.gz 90490748 SHA256:e12a3369d34f49dd18f341dc3d101cc643129663a7b44312fddba595374e718f
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/gcc-9/gcc-9_9.3.0-13ubuntu1.debian.tar.xz' gcc-9_9.3.0-13ubuntu1.debian.tar.xz 671756 SHA256:7f23c053294dd04d573b14b288ef8bcc7d7252ebf33ca2f13b417192892c742b
-```
 
 ### `dpkg` source package: `gcc-defaults=1.185.1ubuntu2`
 
@@ -2396,15 +2386,9 @@ Licenses: (parsed from: `/usr/share/doc/libssh-4/copyright`)
 - `LGPL-2.1+~OpenSSL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh=0.9.4-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.4-1ubuntu1.dsc' libssh_0.9.4-1ubuntu1.dsc 2038 SHA256:d0d422d98f84b654e7f686388c7a2d19798c1730dac2c20d5d63799c15c17437
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.4.orig.tar.xz' libssh_0.9.4.orig.tar.xz 500776 SHA256:150897a569852ac05aac831dc417a7ba8e610c86ca2e0154a99c6ade2486226b
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.4.orig.tar.xz.asc' libssh_0.9.4.orig.tar.xz.asc 833 SHA256:b637b8e4dae3109ae0b10ddfb35f9d5ce01049409c0b3572ee81292be30bccae
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libssh/libssh_0.9.4-1ubuntu1.debian.tar.xz' libssh_0.9.4-1ubuntu1.debian.tar.xz 27792 SHA256:23b7bd156ccba4b0e68b3b5e9e78fd209bf0c809f7ce766e206764609f169f62
-```
 
 ### `dpkg` source package: `libtasn1-6=4.16.0-2`
 
@@ -3058,14 +3042,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-8.0=8.0.19-0ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.19-0ubuntu5.dsc' mysql-8.0_8.0.19-0ubuntu5.dsc 3402 SHA256:91409e196eb3e235df7657fdb3b6d43caefdb47e3402fc74d6e98ea3dce14364
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.19.orig.tar.gz' mysql-8.0_8.0.19.orig.tar.gz 264147972 SHA256:3622d2a53236ed9ca62de0616a7e80fd477a9a3f862ba09d503da188f53ca523
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.19-0ubuntu5.debian.tar.xz' mysql-8.0_8.0.19-0ubuntu5.debian.tar.xz 158548 SHA256:60b581fe408f3b9be660e6215624bafdc9ea6251d3f7ae330edab52392e8612d
-```
 
 ### `dpkg` source package: `mysql-defaults=1.0.5ubuntu2`
 
@@ -4085,14 +4064,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=245.6-3ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.6-3ubuntu3.dsc' systemd_245.6-3ubuntu3.dsc 5284 SHA256:b6f02604313f45867b4949058bf4a8726d71a1f88d9587537457cd319ffa0da2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.6.orig.tar.gz' systemd_245.6.orig.tar.gz 9022866 SHA256:f58424fd2d105503f836ff7d099d762901fb40347de993fce7373d65ff640f5b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.6-3ubuntu3.debian.tar.xz' systemd_245.6-3ubuntu3.debian.tar.xz 215348 SHA256:6c4136320f8428a265458944f003aafac4b827b71f10b4620c3f0778bd59ccd9
-```
 
 ### `dpkg` source package: `sysvinit=2.96-3ubuntu1`
 
@@ -4415,15 +4389,13 @@ Licenses: (parsed from: `/usr/share/doc/liblzma-dev/copyright`, `/usr/share/doc/
 - `permissive-nowarranty`
 - `probably-PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xz-utils=5.2.4-1
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.2.4-1.dsc' xz-utils_5.2.4-1.dsc 2518 SHA256:b1572c4efb3c8ebf6f0e044b70e1e0451c919a99d3f80be03b624a54dd7ea593
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.2.4.orig.tar.xz' xz-utils_5.2.4.orig.tar.xz 1053868 SHA256:9717ae363760dedf573dad241420c5fea86256b65bc21d2cf71b2b12f0544f4b
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.2.4.orig.tar.xz.asc' xz-utils_5.2.4.orig.tar.xz.asc 879 SHA256:88290c1deeaf674ae2a4821f4373fe0e4cc2a94199eae6dcc26df1e70cc15303
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.2.4-1.debian.tar.xz' xz-utils_5.2.4-1.debian.tar.xz 135296 SHA256:d37b558444b76e88a69601df008cf1c0343c58cb7765b7bbb2099b0a19619361
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/xz-utils/5.2.4-1/
+
 
 ### `dpkg` source package: `zlib=1:1.2.11.dfsg-2ubuntu1`
 

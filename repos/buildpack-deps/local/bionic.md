@@ -302,14 +302,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.30-21ubuntu1~18.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30-21ubuntu1~18.04.3.dsc' binutils_2.30-21ubuntu1~18.04.3.dsc 11670 SHA256:277baf59cd0eeca9f624afbcef484f88726cd309bcf5ba11d95aea0a91673feb
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30.orig.tar.xz' binutils_2.30.orig.tar.xz 20286700 SHA256:6e46b8aeae2f727a36f0bd9505e405768a72218f1796f0d09757d45209871ae6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.30-21ubuntu1~18.04.3.debian.tar.xz' binutils_2.30-21ubuntu1~18.04.3.debian.tar.xz 621320 SHA256:38cffa307e197c63ec5631dc57cafd0d48f904c146559a43d2fcb3b8e56b45e9
-```
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1ubuntu0.2`
 
