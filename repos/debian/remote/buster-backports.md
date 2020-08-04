@@ -1,7 +1,7 @@
 ## `debian:buster-backports`
 
 ```console
-$ docker pull debian@sha256:4982136ca605758ec2f9a35406897ff51b8a7b4dc2d425aa1ba09d21aaf6f141
+$ docker pull debian@sha256:4207a413095af917f5dd31837d2884baac16c79b255219bcc066b2ecd98a405c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -242,31 +242,31 @@ RUN echo 'deb http://deb.debian.org/debian buster-backports main' > /etc/apt/sou
 ### `debian:buster-backports` - linux; s390x
 
 ```console
-$ docker pull debian@sha256:672ecf5a0ad5678df90066beca7c5aa61433cb7666a8b7d00daef15dbfa296a6
+$ docker pull debian@sha256:58ec9df09136699fda28be9886aa503638baa649aa040a89f59867fcb01eb62b
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.0 MB (48966643 bytes)**  
+-	Total Size: **49.0 MB (48966498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9abaac754f2621df0e777ddfe7219df87d7041b96285a2840ca4fd871f0eead7`
+-	Image ID: `sha256:61c686721994643c01858a9f17a186e32c494a46a200df463a7e72f997d94ecd`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 22 Jul 2020 00:42:24 GMT
-ADD file:e5fcdcbbd996899922beac57e202b7e0895321e07263147e96c6e3b7b811d8a2 in / 
-# Wed, 22 Jul 2020 00:42:26 GMT
+# Tue, 04 Aug 2020 01:17:02 GMT
+ADD file:07519836baf21317676c799c0905c76bf767fe8caa1fa718c0dfe0a152577ee8 in / 
+# Tue, 04 Aug 2020 01:17:04 GMT
 CMD ["bash"]
-# Wed, 22 Jul 2020 00:42:33 GMT
+# Tue, 04 Aug 2020 01:17:09 GMT
 RUN echo 'deb http://deb.debian.org/debian buster-backports main' > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:7ecdd8436fd4d951f4ca002a2aa8b01d427a7c4b535083e3ef0792444053154d`  
-		Last Modified: Wed, 22 Jul 2020 00:45:30 GMT  
-		Size: 49.0 MB (48966422 bytes)  
+	-	`sha256:f2b199a6d9adcfa5f879ec8042306ab2f919623f8018d0d7a6f4e9dade5e1a71`  
+		Last Modified: Tue, 04 Aug 2020 01:19:47 GMT  
+		Size: 49.0 MB (48966275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdd0824312526c0b4454fa10d1fd6020094b59cc6db54d40e0ff03b6aa2e4039`  
-		Last Modified: Wed, 22 Jul 2020 00:45:40 GMT  
-		Size: 221.0 B  
+	-	`sha256:923484470d9dd3eab2384c661a9d0de3b6e830d94b31b138d3db6c3ffd66e9ad`  
+		Last Modified: Tue, 04 Aug 2020 01:19:55 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
