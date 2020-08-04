@@ -1,7 +1,7 @@
 ## `golang:buster`
 
 ```console
-$ docker pull golang@sha256:021b4d01f645c2cf5987114f9e0ac5d1b93040b585d44c35e51a36abe7b7f627
+$ docker pull golang@sha256:682c73aa3505befbe09341f5072bb2004d365853a223abdf0ba7f2bf4d1a7ddb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -90,73 +90,73 @@ WORKDIR /go
 ### `golang:buster` - linux; arm variant v5
 
 ```console
-$ docker pull golang@sha256:def29066790e809ed2d8c30fe4b6bf802434133a005595ebcc7c12aa69abedb5
+$ docker pull golang@sha256:6486a983f3afa73b851e34588660a7ed43af62623c01e068b0792f9b54099f5f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.5 MB (270494789 bytes)**  
+-	Total Size: **270.5 MB (270516941 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b91a4605c60c08ca88ab823b04e05fe4aee8c664aee86d6e92ca92db1a99c2ad`
+-	Image ID: `sha256:1aafa18a4b9bd6732521c809cceb6c6d9597db3d1db0d3d7784a71faed31ee00`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 22 Jul 2020 00:50:16 GMT
-ADD file:0431730a3850ee2a710a03ba04d05224938cf2f5318e1f73ed74677c70d09b78 in / 
-# Wed, 22 Jul 2020 00:50:20 GMT
+# Tue, 04 Aug 2020 03:11:38 GMT
+ADD file:e1152998db9c9a59e88100fa415cb22c317d906c5143042e7e36fa6911264f66 in / 
+# Tue, 04 Aug 2020 03:11:50 GMT
 CMD ["bash"]
-# Wed, 22 Jul 2020 01:31:14 GMT
+# Tue, 04 Aug 2020 06:13:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 22 Jul 2020 01:32:06 GMT
+# Tue, 04 Aug 2020 06:13:15 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 22 Jul 2020 01:33:38 GMT
+# Tue, 04 Aug 2020 06:14:08 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 22 Jul 2020 12:53:56 GMT
+# Tue, 04 Aug 2020 15:39:06 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 22 Jul 2020 12:54:06 GMT
+# Tue, 04 Aug 2020 15:39:17 GMT
 ENV PATH=/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Jul 2020 13:26:49 GMT
+# Tue, 04 Aug 2020 16:03:49 GMT
 ENV GOLANG_VERSION=1.14.6
-# Wed, 22 Jul 2020 13:56:36 GMT
+# Tue, 04 Aug 2020 16:34:53 GMT
 RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) goRelArch='linux-amd64'; goRelSha256='5c566ddc2e0bcfc25c26a5dc44a440fcc0177f7350c1f01952b34d5989a0d287' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='cab39cc0fdf9731476a339af9d7bcd8fc661bfa323abb1ce9d1633fb31daeb07' ;; 		arm64) goRelArch='linux-arm64'; goRelSha256='291bccfd7d7f1915599bbcc90e49d9fccfcb0004b7c62a2f5cdf0f96a09d6a3e' ;; 		i386) goRelArch='linux-386'; goRelSha256='17b2c4e26bd3a82a0a44499ae2d36e3f2155d0fe2f6b9a14ac6b7c5afac3ca6a' ;; 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='8eb4c84e7b6aa9edb966c467dd6764d131a57d27afbd87cc8f6d10535df9e898' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='cb1f2d001ce15e51f7c4bd43f15045ea23d49268010bb981110242a532138749' ;; 		*) goRelArch='src'; goRelSha256='73fc9d781815d411928eccb92bf20d5b4264797be69410eac854babe44c94c09'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url" --progress=dot:giga; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 		apt-get install -y --no-install-recommends golang-go; 				goEnv="$(go env | sed -rn -e '/^GO(OS|ARCH|ARM|386)=/s//export \0/p')"; 		eval "$goEnv"; 		[ -n "$GOOS" ]; 		[ -n "$GOARCH" ]; 		( 			cd /usr/local/go/src; 			./make.bash; 		); 				apt-mark auto '.*' > /dev/null; 		apt-mark manual $savedAptMark > /dev/null; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		rm -rf /var/lib/apt/lists/*; 				go install std; 				rm -rf 			/usr/local/go/pkg/*/cmd 			/usr/local/go/pkg/bootstrap 			/usr/local/go/pkg/obj 			/usr/local/go/pkg/tool/*/api 			/usr/local/go/pkg/tool/*/go_bootstrap 			/usr/local/go/src/cmd/dist/dist 		; 	fi; 		go version
-# Wed, 22 Jul 2020 13:56:45 GMT
+# Tue, 04 Aug 2020 16:35:02 GMT
 ENV GOPATH=/go
-# Wed, 22 Jul 2020 13:56:48 GMT
+# Tue, 04 Aug 2020 16:35:10 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Jul 2020 13:57:07 GMT
+# Tue, 04 Aug 2020 16:35:36 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Wed, 22 Jul 2020 13:57:11 GMT
+# Tue, 04 Aug 2020 16:35:42 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:71cf5632cfeb30dc5a7a7ccd4742a02af636cd970ef3a45bebc17d3f20b3662d`  
-		Last Modified: Wed, 22 Jul 2020 00:58:30 GMT  
-		Size: 48.1 MB (48107278 bytes)  
+	-	`sha256:43e007f43c47fbc3bc147d3d82021dc9a400b509f9c30dc687c1a3ed5fd23065`  
+		Last Modified: Tue, 04 Aug 2020 03:33:39 GMT  
+		Size: 48.1 MB (48108803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d87dffc06540f2eca873274114a3d8d49684b38428e946f67b0b62aa848ae49c`  
-		Last Modified: Wed, 22 Jul 2020 02:02:59 GMT  
-		Size: 7.4 MB (7360981 bytes)  
+	-	`sha256:0270eaf99061a6aa3af6cdd0f5e0ae94bf697d7565783759c971252b202c37dd`  
+		Last Modified: Tue, 04 Aug 2020 06:36:56 GMT  
+		Size: 7.4 MB (7360991 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad12a2dc68e08e793efc12362e49a16257506721c8074ee8361c242244763bc4`  
-		Last Modified: Wed, 22 Jul 2020 02:03:00 GMT  
-		Size: 9.7 MB (9686988 bytes)  
+	-	`sha256:05e527b7990670f219ff9d29ac8963fbdc4756e6c6190434bba9c0482626f4ca`  
+		Last Modified: Tue, 04 Aug 2020 06:36:57 GMT  
+		Size: 9.7 MB (9687011 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94df5576e4481b3422d3ba55ceb470a19b7245355de69b1ee3efb03aec34668b`  
-		Last Modified: Wed, 22 Jul 2020 02:03:38 GMT  
-		Size: 49.6 MB (49572370 bytes)  
+	-	`sha256:556ab5cdb159eebd1404529d56d69ebe7cdffa65e8113e5d41a2e11fee7a734e`  
+		Last Modified: Tue, 04 Aug 2020 06:37:26 GMT  
+		Size: 49.6 MB (49572627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ff9d576316bd207e17a4df02e19b54d84c032ffbb919859e8c36aa226513712`  
-		Last Modified: Wed, 22 Jul 2020 14:26:27 GMT  
-		Size: 52.0 MB (51955015 bytes)  
+	-	`sha256:eafbe12c84a35ce4d898d99657a0d607864ab5b33b05b3d2b359ea6510cd7bbc`  
+		Last Modified: Tue, 04 Aug 2020 17:07:14 GMT  
+		Size: 52.0 MB (51975393 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02606364c69452a951ac7f3381037291781feed85ac614707c410c44f03df64c`  
-		Last Modified: Wed, 22 Jul 2020 14:27:32 GMT  
-		Size: 103.8 MB (103812001 bytes)  
+	-	`sha256:11f5c2e4333663a95485c40f42dff54a2c551eff8c42a56e5c241f2287943d39`  
+		Last Modified: Tue, 04 Aug 2020 17:09:20 GMT  
+		Size: 103.8 MB (103811961 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b9950538461cf34f83f8b02d4c1760706ece9c71475a34dea7b29e04d3e10d5`  
-		Last Modified: Wed, 22 Jul 2020 14:27:01 GMT  
-		Size: 156.0 B  
+	-	`sha256:b51a15453b919c9e8ec58aff5e3f84ccb8004a6a482229cbcf8fa733061c474f`  
+		Last Modified: Tue, 04 Aug 2020 17:07:42 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `golang:buster` - linux; arm variant v7
