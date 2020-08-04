@@ -1,7 +1,7 @@
 ## `plone:5-alpine`
 
 ```console
-$ docker pull plone@sha256:4540f245d5bf0d7be1e2f241fba30bdf73f8018d6789412ef348156e39234209
+$ docker pull plone@sha256:8290aa8e4085efa167bbfbe5f0e8f13b841d69a1e235b43dcc0132f782722339
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -230,14 +230,14 @@ CMD ["start"]
 ### `plone:5-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull plone@sha256:2ea809f5ab960fde0fb5414185123ff31e608f6e52de5430a5f21913aa38e5aa
+$ docker pull plone@sha256:73de56f9a0e2e99f563171e3c6d3d1cba7f92e273437c14ceb8a57ff21844c32
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **151.0 MB (151015473 bytes)**  
+-	Total Size: **141.2 MB (141187758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93ebef7939616b3d68dadb2d655e45434d32348a97ec4b8374f3c2e96b1bdab3`
+-	Image ID: `sha256:e5ee19e5a7840fe35f11b734ff5a4de3a39b879e7b4a333eb69e1fda6f709409`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["start"]`
 
@@ -256,43 +256,43 @@ RUN apk add --no-cache ca-certificates
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
 # Tue, 30 Jun 2020 19:34:52 GMT
 ENV PYTHON_VERSION=3.7.8
-# Tue, 30 Jun 2020 19:48:46 GMT
-RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		gnupg 		tar 		xz 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& { command -v gpgconf > /dev/null && gpgconf --kill all || :; } 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& apk add --no-cache --virtual .build-deps  		bluez-dev 		bzip2-dev 		coreutils 		dpkg-dev dpkg 		expat-dev 		findutils 		gcc 		gdbm-dev 		libc-dev 		libffi-dev 		libnsl-dev 		libtirpc-dev 		linux-headers 		make 		ncurses-dev 		openssl-dev 		pax-utils 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		util-linux-dev 		xz-dev 		zlib-dev 	&& apk del --no-network .fetch-deps 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 		EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000" 		LDFLAGS="-Wl,--strip-all" 		PROFILE_TASK='-m test.regrtest --pgo 			test_array 			test_base64 			test_binascii 			test_binhex 			test_binop 			test_bytes 			test_c_locale_coercion 			test_class 			test_cmath 			test_codecs 			test_compile 			test_complex 			test_csv 			test_decimal 			test_dict 			test_float 			test_fstring 			test_hashlib 			test_io 			test_iter 			test_json 			test_long 			test_math 			test_memoryview 			test_pickle 			test_re 			test_set 			test_slice 			test_struct 			test_threading 			test_time 			test_traceback 			test_unicode 		' 	&& make install 		&& find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 		| xargs -rt apk add --no-cache --virtual .python-rundeps 	&& apk del --no-network .build-deps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python 		&& python3 --version
-# Tue, 30 Jun 2020 19:48:49 GMT
+# Tue, 04 Aug 2020 01:52:44 GMT
+RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		gnupg 		tar 		xz 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& { command -v gpgconf > /dev/null && gpgconf --kill all || :; } 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& apk add --no-cache --virtual .build-deps  		bluez-dev 		bzip2-dev 		coreutils 		dpkg-dev dpkg 		expat-dev 		findutils 		gcc 		gdbm-dev 		libc-dev 		libffi-dev 		libnsl-dev 		libtirpc-dev 		linux-headers 		make 		ncurses-dev 		openssl-dev 		pax-utils 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		util-linux-dev 		xz-dev 		zlib-dev 	&& apk del --no-network .fetch-deps 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 		EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000" 		LDFLAGS="-Wl,--strip-all" 		PROFILE_TASK='-m test.regrtest --pgo 			test_array 			test_base64 			test_binascii 			test_binhex 			test_binop 			test_bytes 			test_c_locale_coercion 			test_class 			test_cmath 			test_codecs 			test_compile 			test_complex 			test_csv 			test_decimal 			test_dict 			test_float 			test_fstring 			test_hashlib 			test_io 			test_iter 			test_json 			test_long 			test_math 			test_memoryview 			test_pickle 			test_re 			test_set 			test_slice 			test_struct 			test_threading 			test_time 			test_traceback 			test_unicode 		' 	&& make install 	&& rm -rf /usr/src/python 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) 			-o \( -type f -a -name 'wininst-*.exe' \) 		\) -exec rm -rf '{}' + 		&& find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 		| xargs -rt apk add --no-cache --virtual .python-rundeps 	&& apk del --no-network .build-deps 		&& python3 --version
+# Tue, 04 Aug 2020 01:52:47 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Thu, 30 Jul 2020 22:47:33 GMT
+# Tue, 04 Aug 2020 01:52:48 GMT
 ENV PYTHON_PIP_VERSION=20.2
-# Thu, 30 Jul 2020 22:47:33 GMT
+# Tue, 04 Aug 2020 01:52:49 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/cb5b85a8e0c3d13ced611b97816d7490d2f1497e/get-pip.py
-# Thu, 30 Jul 2020 22:47:34 GMT
+# Tue, 04 Aug 2020 01:52:49 GMT
 ENV PYTHON_GET_PIP_SHA256=a30ff8a3446c592c6d70403a82483716e7b759e8eecba2c8d3f6ecfb34a8d6d7
-# Thu, 30 Jul 2020 22:47:46 GMT
+# Tue, 04 Aug 2020 01:53:00 GMT
 RUN set -ex; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Thu, 30 Jul 2020 22:47:47 GMT
+# Tue, 04 Aug 2020 01:53:01 GMT
 CMD ["python3"]
-# Thu, 30 Jul 2020 23:36:27 GMT
+# Tue, 04 Aug 2020 09:27:14 GMT
 ENV PIP=19.3.1 ZC_BUILDOUT=2.13.2 SETUPTOOLS=45.0.0 WHEEL=0.33.6 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.1 PLONE_VERSION_RELEASE=Plone-5.2.1-UnifiedInstaller-r2 PLONE_MD5=42407c0313791d3626dc86e674684efe
-# Thu, 30 Jul 2020 23:36:28 GMT
+# Tue, 04 Aug 2020 09:27:15 GMT
 LABEL plone=5.2.1 os=alpine os.version=3.11 name=Plone 5.2 description=Plone image, based on Unified Installer maintainer=Plone Community
-# Thu, 30 Jul 2020 23:36:31 GMT
+# Tue, 04 Aug 2020 09:27:18 GMT
 RUN addgroup -g 500 plone  && adduser -S -D -G plone -u 500 plone  && mkdir -p /plone/instance /data/filestorage /data/blobstorage
-# Thu, 30 Jul 2020 23:36:32 GMT
+# Tue, 04 Aug 2020 09:27:18 GMT
 COPY file:9266bca2e9775c84ef54f877d6d8090bca5c55d7cc6faf7b7226bc188ab30a69 in /plone/instance/ 
-# Thu, 30 Jul 2020 23:56:29 GMT
+# Tue, 04 Aug 2020 09:46:30 GMT
 RUN apk add --no-cache --virtual .build-deps     gcc     libc-dev     zlib-dev     libjpeg-turbo-dev     libpng-dev     libxml2-dev     libxslt-dev     pcre-dev     libffi-dev && wget -O Plone.tgz https://launchpad.net/plone/$PLONE_MAJOR/$PLONE_VERSION/+download/$PLONE_VERSION_RELEASE.tgz && echo "$PLONE_MD5  Plone.tgz" | md5sum -c - && tar -zxvf Plone.tgz && cp -rv ./$PLONE_VERSION_RELEASE/base_skeleton/* /plone/instance/ && cp -v ./$PLONE_VERSION_RELEASE/buildout_templates/buildout.cfg /plone/instance/buildout-base.cfg && pip install pip==$PIP setuptools==$SETUPTOOLS zc.buildout==$ZC_BUILDOUT wheel==$WHEEL && cd /plone/instance && buildout && ln -s /data/filestorage/ /plone/instance/var/filestorage && ln -s /data/blobstorage /plone/instance//var/blobstorage && find /data  -not -user plone -exec chown plone:plone {} \+ && find /plone -not -user plone -exec chown plone:plone {} \+ && rm -rf /Plone* && apk del .build-deps && apk add --no-cache --virtual .run-deps     su-exec     bash     rsync     libxml2     libxslt     libjpeg-turbo && rm -rf /plone/buildout-cache/downloads/*
-# Thu, 30 Jul 2020 23:56:33 GMT
+# Tue, 04 Aug 2020 09:46:41 GMT
 VOLUME [/data]
-# Thu, 30 Jul 2020 23:56:34 GMT
+# Tue, 04 Aug 2020 09:46:47 GMT
 COPY multi:96b4b1619dec8ba8c0507bd3de7fe85d75d30049c6ebd1a2599a7df4353563e5 in / 
-# Thu, 30 Jul 2020 23:56:34 GMT
+# Tue, 04 Aug 2020 09:46:48 GMT
 EXPOSE 8080
-# Thu, 30 Jul 2020 23:56:35 GMT
+# Tue, 04 Aug 2020 09:47:00 GMT
 WORKDIR /plone/instance
-# Thu, 30 Jul 2020 23:56:36 GMT
+# Tue, 04 Aug 2020 09:47:07 GMT
 HEALTHCHECK &{["CMD-SHELL" "nc -z -w5 127.0.0.1 8080 || exit 1"] "1m0s" "5s" "1m0s" '\x00'}
-# Thu, 30 Jul 2020 23:56:36 GMT
+# Tue, 04 Aug 2020 09:47:14 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 30 Jul 2020 23:56:37 GMT
+# Tue, 04 Aug 2020 09:47:23 GMT
 CMD ["start"]
 ```
 
@@ -305,33 +305,33 @@ CMD ["start"]
 		Last Modified: Wed, 03 Jun 2020 19:46:54 GMT  
 		Size: 281.3 KB (281267 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45718c03dcbcdda260f061651121c16e64fc0f38209ac14c5b377f1c60b9717f`  
-		Last Modified: Tue, 30 Jun 2020 21:02:53 GMT  
-		Size: 21.1 MB (21058741 bytes)  
+	-	`sha256:fa75472abd2918f176a4e491ca86bb174426f2f5ea09f019f9e430c803fbe682`  
+		Last Modified: Tue, 04 Aug 2020 06:47:40 GMT  
+		Size: 11.2 MB (11231537 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71177f2fa6d36ff6f86782494dc1974f0c490020dc711b49d6024f4fa10dcdcc`  
-		Last Modified: Tue, 30 Jun 2020 21:02:46 GMT  
-		Size: 229.0 B  
+	-	`sha256:f5d671b0a8cbc6bc14140b128ce3c76dcfc058c90260555db3bbd8722f0143d5`  
+		Last Modified: Tue, 04 Aug 2020 06:47:37 GMT  
+		Size: 230.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed4261c67e18a507f68e47210fcd07970b643a9d78caa793460069061baa99f7`  
-		Last Modified: Thu, 30 Jul 2020 23:04:44 GMT  
-		Size: 2.1 MB (2118355 bytes)  
+	-	`sha256:a22610834e4e35bc97e3037cb00305246efa5566e85b6eaff8501391c7abdb24`  
+		Last Modified: Tue, 04 Aug 2020 06:47:38 GMT  
+		Size: 2.1 MB (2118162 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6d791c073a96ce850ae0519505e812365db5a889fdeb56689a964fbce136d3a`  
-		Last Modified: Thu, 30 Jul 2020 23:57:56 GMT  
-		Size: 1.4 KB (1378 bytes)  
+	-	`sha256:0b29f85a323d61145d929b771bbdcf967dce135120ff64a23f94b049b6242e65`  
+		Last Modified: Tue, 04 Aug 2020 09:48:52 GMT  
+		Size: 1.4 KB (1372 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abf7e7b3e3923ce86c4154f737a18fc9004a7bfdb6242c23f627949c5cb32644`  
-		Last Modified: Thu, 30 Jul 2020 23:57:56 GMT  
-		Size: 1.0 KB (1033 bytes)  
+	-	`sha256:7897536f48c5dddd033167a35a8628e2d8d6c3a82eb7d9d810a98ea7826c0442`  
+		Last Modified: Tue, 04 Aug 2020 09:48:52 GMT  
+		Size: 1.0 KB (1035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1f6c74d41c8e5b5ee5bc5cdb8aa7dcc857db823cda481bf9d6e6c69e3c4a08f`  
-		Last Modified: Thu, 30 Jul 2020 23:58:35 GMT  
-		Size: 124.8 MB (124843661 bytes)  
+	-	`sha256:c06840e84711fb503b66f064bad4cd0fe7858c3d8f2d8d2f6b3c6b6cdd2329c1`  
+		Last Modified: Tue, 04 Aug 2020 09:49:37 GMT  
+		Size: 124.8 MB (124843345 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21901486a7f2838e65db33c15e38b5cd8d17e4ecc895cb71a46e3b2359b806fe`  
-		Last Modified: Thu, 30 Jul 2020 23:57:56 GMT  
-		Size: 2.8 KB (2845 bytes)  
+	-	`sha256:7d54fb76b396d161b8fc15930ac15a5f7c6019c82a60f94ec0f3f8676ac2dc08`  
+		Last Modified: Tue, 04 Aug 2020 09:48:52 GMT  
+		Size: 2.8 KB (2846 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `plone:5-alpine` - linux; 386
