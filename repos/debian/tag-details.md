@@ -293,11 +293,21 @@ CMD ["bash"]
 
 ## `debian:10.5`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:10.5-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:10-slim`
 
@@ -1795,11 +1805,21 @@ CMD ["bash"]
 
 ## `debian:bullseye-20200803`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:bullseye-20200803-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:bullseye-backports`
 
@@ -2526,11 +2546,21 @@ CMD ["bash"]
 
 ## `debian:buster-20200803`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:buster-20200803-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:buster-backports`
 
@@ -3305,7 +3335,12 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 
 ## `debian:experimental-20200803`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:jessie`
 
@@ -3426,11 +3461,21 @@ CMD ["bash"]
 
 ## `debian:jessie-20200803`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:jessie-20200803-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:jessie-slim`
 
@@ -3893,11 +3938,21 @@ CMD ["bash"]
 
 ## `debian:oldoldstable-20200803`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:oldoldstable-20200803-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:oldoldstable-slim`
 
@@ -4162,11 +4217,21 @@ CMD ["bash"]
 
 ## `debian:oldstable-20200803`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:oldstable-20200803-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:oldstable-backports`
 
@@ -4761,7 +4826,12 @@ RUN echo 'deb http://deb.debian.org/debian rc-buggy main' > /etc/apt/sources.lis
 
 ## `debian:rc-buggy-20200803`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:sid`
 
@@ -4990,11 +5060,21 @@ CMD ["bash"]
 
 ## `debian:sid-20200803`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:sid-20200803-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:sid-slim`
 
@@ -5448,11 +5528,21 @@ CMD ["bash"]
 
 ## `debian:stable-20200803`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:stable-20200803-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:stable-backports`
 
@@ -6098,11 +6188,21 @@ CMD ["bash"]
 
 ## `debian:stretch-20200803`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:stretch-20200803-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:stretch-backports`
 
@@ -6649,11 +6749,21 @@ CMD ["bash"]
 
 ## `debian:testing-20200803`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:testing-20200803-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:testing-backports`
 
@@ -7380,11 +7490,21 @@ CMD ["bash"]
 
 ## `debian:unstable-20200803`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:unstable-20200803-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `debian:unstable-slim`
 
