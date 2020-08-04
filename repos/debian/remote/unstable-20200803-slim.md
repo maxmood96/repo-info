@@ -1,12 +1,66 @@
 ## `debian:unstable-20200803-slim`
 
 ```console
-$ docker pull debian@sha256:03b2da6fb7a702be25980e83215f11510a9020bef3bdc8a61d5a6a09945d4c27
+$ docker pull debian@sha256:0958431a4a1d4a9d113d0af307b9e6144a3b1824e351101119aee5b773bd64d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
+	-	linux; arm variant v5
+	-	linux; 386
 	-	linux; s390x
+
+### `debian:unstable-20200803-slim` - linux; arm variant v5
+
+```console
+$ docker pull debian@sha256:de1199d1a413e56d76feb527ee777c7395f110224a5b5104406da411e78e1f24
+```
+
+-	Docker Version: 19.03.12
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **26.0 MB (26019252 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ff9b33d70ef9a14373cd3b8ab33e7dd0dfa8586abcd82333c8238090c945bb56`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Tue, 04 Aug 2020 03:29:39 GMT
+ADD file:86fd64bd0821936bb79687632a437088e5a67a18bd5a3c7d75a4ff78749c643a in / 
+# Tue, 04 Aug 2020 03:29:51 GMT
+CMD ["bash"]
+```
+
+-	Layers:
+	-	`sha256:d87c5a23aad2cdda59ae14e0e9f68b75868d3d48e16a94a42ffb5b92efbf8b28`  
+		Last Modified: Tue, 04 Aug 2020 03:40:23 GMT  
+		Size: 26.0 MB (26019252 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `debian:unstable-20200803-slim` - linux; 386
+
+```console
+$ docker pull debian@sha256:e5eadc90d8d892fa668c6c030ec7381a436bc65c15b9342cd7bd37ed824080d3
+```
+
+-	Docker Version: 19.03.12
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **29.1 MB (29060352 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a9f0c67116008ad467f7afa943fc91f6818c0b08cbc052c38982490fbc43d2ba`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Tue, 04 Aug 2020 03:41:06 GMT
+ADD file:b0ff8062dd35ca40b98befda946f94dd564a53111c47f62f1781da648be5cd7c in / 
+# Tue, 04 Aug 2020 03:41:06 GMT
+CMD ["bash"]
+```
+
+-	Layers:
+	-	`sha256:4b397669639378352b9fbc47c5b8a724acd611a52b6b966f53311b099a2d3eb3`  
+		Last Modified: Tue, 04 Aug 2020 03:46:53 GMT  
+		Size: 29.1 MB (29060352 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:unstable-20200803-slim` - linux; s390x
 

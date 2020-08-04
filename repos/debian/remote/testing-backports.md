@@ -1,7 +1,7 @@
 ## `debian:testing-backports`
 
 ```console
-$ docker pull debian@sha256:497a0a62e6d362239fc513132d6579c71dfbb2e1e116615c9c0bb33a5bf0d4a6
+$ docker pull debian@sha256:74216785cb3ca31d0cd1147e6175abc542fc26d49a85dba1467096efde61b98c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -50,33 +50,33 @@ RUN echo 'deb http://deb.debian.org/debian testing-backports main' > /etc/apt/so
 ### `debian:testing-backports` - linux; arm variant v5
 
 ```console
-$ docker pull debian@sha256:d754563fd3fff3cc6871651e0934aa9effb5e4779bd31ab75c2d1260b3b53bac
+$ docker pull debian@sha256:a2cc3c61b5465f2e3864b836a4a4ea018f2fd411a6a7971ec71509a6ff886f7c
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.8 MB (51782503 bytes)**  
+-	Total Size: **49.8 MB (49784730 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f4dcbca9d16489ba40b4ab6dc3ead2c0f0b6b9424333459611550127557f276`
+-	Image ID: `sha256:9bda10c44cb33e62a133ad0f79884e41c2c45caac32d10fadbb10fae58ca8d41`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 22 Jul 2020 00:55:32 GMT
-ADD file:c3d9b07c84acc04860039e8339afb29fe3d85823c6d0d51433d882c41c3a86f6 in / 
-# Wed, 22 Jul 2020 00:55:35 GMT
+# Tue, 04 Aug 2020 03:26:11 GMT
+ADD file:187c521285de33d9024f13e882a0a77eb73fa40812d206146aeb6ffee3b41d93 in / 
+# Tue, 04 Aug 2020 03:26:19 GMT
 CMD ["bash"]
-# Wed, 22 Jul 2020 00:55:44 GMT
+# Tue, 04 Aug 2020 03:27:00 GMT
 RUN echo 'deb http://deb.debian.org/debian testing-backports main' > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:c8eaa6fc367fa7db4f78829d37b2688ff4745ddf82960397778a0156fb0fbf10`  
-		Last Modified: Wed, 22 Jul 2020 01:03:53 GMT  
-		Size: 51.8 MB (51782279 bytes)  
+	-	`sha256:8aae9c3601b98cd2570242d799d9ee7afb8c97a1007181ac9ae997042c2d08b3`  
+		Last Modified: Tue, 04 Aug 2020 03:39:19 GMT  
+		Size: 49.8 MB (49784505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:48b35d83a65f9d4f6170b998fd56748ceec80a007ac7f4ea68d6dcb1a1724a9c`  
-		Last Modified: Wed, 22 Jul 2020 01:04:00 GMT  
-		Size: 224.0 B  
+	-	`sha256:9731bb2fbee23630f5645430701e408633f38b3e0a3eff143404abd5cf00c36e`  
+		Last Modified: Tue, 04 Aug 2020 03:39:30 GMT  
+		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:testing-backports` - linux; arm variant v7
@@ -146,33 +146,33 @@ RUN echo 'deb http://deb.debian.org/debian testing-backports main' > /etc/apt/so
 ### `debian:testing-backports` - linux; 386
 
 ```console
-$ docker pull debian@sha256:8b1f8689753fff69bd3cd010315536087090572ebab0654654038a169448e21d
+$ docker pull debian@sha256:7dfc7661280267803ab00a0f46399357ddca4e879c7ce7f7402cc61eba12e2c3
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.2 MB (55225246 bytes)**  
+-	Total Size: **52.9 MB (52909923 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e829f99e3aeccf5645b6b6d46a8b593e5d56804f0e829340a0de140065ab7436`
+-	Image ID: `sha256:e4f233e4f2ed10742f1784c7cdb1d70498d2314abc4200142fd3ebf17c1817b8`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 22 Jul 2020 02:12:54 GMT
-ADD file:82cf3ba5cbfb4f26c6c9cd1df8899b379fa0af4c99c0ed9359e5bae1250270dc in / 
-# Wed, 22 Jul 2020 02:12:55 GMT
+# Tue, 04 Aug 2020 03:40:26 GMT
+ADD file:37d069bc693b5dc1cf3f5afa51967bb38b27e28e870341db5d25eee7577a3c38 in / 
+# Tue, 04 Aug 2020 03:40:26 GMT
 CMD ["bash"]
-# Wed, 22 Jul 2020 02:13:01 GMT
+# Tue, 04 Aug 2020 03:40:31 GMT
 RUN echo 'deb http://deb.debian.org/debian testing-backports main' > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:7bcc3c67bd550d63ce5e94e3b620ca418058cef47f331a804894816e4b9ab305`  
-		Last Modified: Wed, 22 Jul 2020 02:19:46 GMT  
-		Size: 55.2 MB (55225025 bytes)  
+	-	`sha256:12dc0ff6b6c89bb67e2fe16bad31f939115457037b3e5b626ac0a1fc9a1d54fb`  
+		Last Modified: Tue, 04 Aug 2020 03:46:09 GMT  
+		Size: 52.9 MB (52909697 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b81670c71815aeae5c8f4d952ed6b1d2f37212d2b3723235618c35f970824b07`  
-		Last Modified: Wed, 22 Jul 2020 02:19:50 GMT  
-		Size: 221.0 B  
+	-	`sha256:25c31a0415abd39f740f099f54b68250970a832bc7a0c6dd2c07d19638e1e384`  
+		Last Modified: Tue, 04 Aug 2020 03:46:13 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:testing-backports` - linux; mips64le
