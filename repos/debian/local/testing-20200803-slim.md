@@ -78,19 +78,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.1.7
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.1.7.dsc' apt_2.1.7.dsc 2756 SHA256:c81d9d9e2d77e1b415e714ee3a6df1bb8c081de54293d105599196e423d97b44
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.1.7.tar.xz' apt_2.1.7.tar.xz 2177580 SHA256:064adbfb3248188de562e0aac394b1085af063c9a43240e24e6f324f45306b9c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.1.7/
 
-- https://sources.debian.net/src/apt/2.1.7/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.1.7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.1.7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.48-5`
 
@@ -1577,20 +1571,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=245.7-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_245.7-1.dsc' systemd_245.7-1.dsc 5149 SHA256:268efa779138822ec491695c4093c102e4942907a478723573e17738cf1f98ad
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_245.7.orig.tar.gz' systemd_245.7.orig.tar.gz 9171465 SHA256:5770df29a89e8249bb4fbdc2018e2ea7bbb4fd01425cc03ece338f04a1d80c7f
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_245.7-1.debian.tar.xz' systemd_245.7-1.debian.tar.xz 164872 SHA256:631689ddc6b8232869c3fc73964926a8a56b2fa8539d9f4cb50320f9552b9c7a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/245.7-1/
 
-- https://sources.debian.net/src/systemd/245.7-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/245.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/245.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.96-3`
 
