@@ -1,7 +1,7 @@
 ## `swift:centos8`
 
 ```console
-$ docker pull swift@sha256:e3dec42c582312d43beeba430c7228d0906b3c26cedab9a4473fc778488039d8
+$ docker pull swift@sha256:e42bd9716ba1368e1c21f7613ecfa88164a4745b4bc94313a6b2e788725a774a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull swift@sha256:e3dec42c582312d43beeba430c7228d0906b3c26cedab9a4473fc
 ### `swift:centos8` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:6a88a48600b6125d1d619250cc7bd93a4e8da8c07f474b5b29f718b6db320f55
+$ docker pull swift@sha256:9808c170f50a6a2dbfe72876418213e02defbc86a0e77c8277f1d8417bf7e63e
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **629.3 MB (629340066 bytes)**  
+-	Total Size: **629.3 MB (629345009 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:852d543d89753416142b32c8874caaaee93f2ce8d8e4888ec7b5c3d11a400909`
+-	Image ID: `sha256:9acf8d2c1763bf4603f8e9365d7133ec3c066f3ef87dfdf8d516f7650a571c5b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -34,25 +34,25 @@ LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>
 LABEL description=Docker Container for the Swift programming language
 # Mon, 10 Aug 2020 18:54:58 GMT
 RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-# Mon, 10 Aug 2020 18:55:31 GMT
-RUN yum -y update && yum install --enablerepo=PowerTools -y   binutils   gcc   git   glibc-static   libbsd-devel   libedit   libedit-devel   libicu-devel   libstdc++-static   pkg-config   python2   sqlite   zlib-devel
-# Mon, 10 Aug 2020 18:55:33 GMT
+# Tue, 11 Aug 2020 19:34:36 GMT
+RUN yum install --enablerepo=PowerTools -y   binutils   gcc   git   glibc-static   libbsd-devel   libedit   libedit-devel   libicu-devel   libstdc++-static   pkg-config   python2   sqlite   zlib-devel
+# Tue, 11 Aug 2020 19:34:37 GMT
 RUN ln -s /usr/bin/python2 /usr/bin/python
-# Mon, 10 Aug 2020 18:55:33 GMT
+# Tue, 11 Aug 2020 19:34:37 GMT
 ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
-# Mon, 10 Aug 2020 18:55:33 GMT
+# Tue, 11 Aug 2020 19:34:37 GMT
 ARG SWIFT_PLATFORM=centos8
-# Mon, 10 Aug 2020 18:55:33 GMT
-ARG SWIFT_BRANCH=swift-5.2.4-release
-# Mon, 10 Aug 2020 18:55:33 GMT
-ARG SWIFT_VERSION=swift-5.2.4-RELEASE
-# Mon, 10 Aug 2020 18:55:34 GMT
+# Tue, 11 Aug 2020 19:34:37 GMT
+ARG SWIFT_BRANCH=swift-5.2.5-release
+# Tue, 11 Aug 2020 19:34:37 GMT
+ARG SWIFT_VERSION=swift-5.2.5-RELEASE
+# Tue, 11 Aug 2020 19:34:38 GMT
 ARG SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 10 Aug 2020 18:55:34 GMT
-ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=centos8 SWIFT_BRANCH=swift-5.2.4-release SWIFT_VERSION=swift-5.2.4-RELEASE SWIFT_WEBROOT=https://swift.org/builds/
-# Mon, 10 Aug 2020 18:56:46 GMT
+# Tue, 11 Aug 2020 19:34:38 GMT
+ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=centos8 SWIFT_BRANCH=swift-5.2.5-release SWIFT_VERSION=swift-5.2.5-RELEASE SWIFT_WEBROOT=https://swift.org/builds/
+# Tue, 11 Aug 2020 19:35:46 GMT
 RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)/"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz
-# Mon, 10 Aug 2020 18:56:47 GMT
+# Tue, 11 Aug 2020 19:35:49 GMT
 RUN swift --version
 ```
 
@@ -65,15 +65,15 @@ RUN swift --version
 		Last Modified: Mon, 10 Aug 2020 18:58:12 GMT  
 		Size: 18.5 MB (18480138 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88eaaf8be27500e9a86ea15d5e4524c40c025b5ec263bd8a3ab0153be1d97e8f`  
-		Last Modified: Mon, 10 Aug 2020 18:58:36 GMT  
-		Size: 147.7 MB (147655934 bytes)  
+	-	`sha256:2443fd6da2aa2fe7ae70de62ef128181a52f9a71db6dcb4cf480d732d50d8570`  
+		Last Modified: Tue, 11 Aug 2020 19:49:14 GMT  
+		Size: 147.7 MB (147666737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e91d769a7e1b7ebb4a43595427e941717076a987d5d1636b978043d765b0184c`  
-		Last Modified: Mon, 10 Aug 2020 18:58:09 GMT  
-		Size: 152.0 B  
+	-	`sha256:197c9c7edfa04f68b90e2cebe361edc2e2fe019ca693b09e2af8d50d19542f41`  
+		Last Modified: Tue, 11 Aug 2020 19:48:45 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eaf914a7dd463c1064a360042a96a1c04abe50c9a1aa8aa4a4d625f678faa2af`  
-		Last Modified: Mon, 10 Aug 2020 18:59:27 GMT  
-		Size: 388.3 MB (388335721 bytes)  
+	-	`sha256:3589fab45a1c825852f8cdb04b0be4a226f06e93d9c5f01acbee746e7cb2aa8d`  
+		Last Modified: Tue, 11 Aug 2020 19:49:59 GMT  
+		Size: 388.3 MB (388329860 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
