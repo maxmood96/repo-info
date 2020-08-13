@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:76c0ecda8b0f19b77dda3b2d6c6dbb1ddcf9b397c60bf177cbc2906e95098184`
-- Created: `2020-08-04T22:46:23.063062576Z`
-- Virtual Size: ~ 591.12 Mb  
+- Image ID: `sha256:844a6ca1f6405b24a3543624fa931e4f089ce0872a4749a8ef007d09f9487540`
+- Created: `2020-08-11T00:30:16.838742629Z`
+- Virtual Size: ~ 591.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -1375,13 +1375,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/game-music-emu/0.6.0-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/game-music-emu/0.6.0-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gazebo9=9.13.2-1~stretch`
+### `dpkg` source package: `gazebo9=9.14.0-1~stretch`
 
 Binary Packages:
 
-- `gazebo9=9.13.2-1~stretch`
-- `gazebo9-common=9.13.2-1~stretch`
-- `libgazebo9:amd64=9.13.2-1~stretch`
+- `gazebo9=9.14.0-1~stretch`
+- `gazebo9-common=9.14.0-1~stretch`
+- `libgazebo9:amd64=9.14.0-1~stretch`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo9/copyright`, `/usr/share/doc/gazebo9-common/copyright`, `/usr/share/doc/libgazebo9/copyright`)
 
@@ -1400,10 +1400,10 @@ Licenses: (parsed from: `/usr/share/doc/gazebo9/copyright`, `/usr/share/doc/gaze
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gazebo9=9.13.2-1~stretch
-'http://packages.osrfoundation.org/gazebo/debian-stable/pool/main/g/gazebo9/gazebo9_9.13.2-1~stretch.dsc' gazebo9_9.13.2-1~stretch.dsc 2175 SHA256:7cbdc023ada9cd6ee9870bb6b05d7ff90e8de077f4956accdfaecbd27aff80e0
-'http://packages.osrfoundation.org/gazebo/debian-stable/pool/main/g/gazebo9/gazebo9_9.13.2.orig.tar.bz2' gazebo9_9.13.2.orig.tar.bz2 638044589 SHA256:4a73008b3a7b3dd5cc112fd73f46a9157d30323d7356054998c7d93cb9ce1e46
-'http://packages.osrfoundation.org/gazebo/debian-stable/pool/main/g/gazebo9/gazebo9_9.13.2-1~stretch.debian.tar.xz' gazebo9_9.13.2-1~stretch.debian.tar.xz 6832 SHA256:fa6eee68863fd60755cafb266115f6334f391031fca43ff1ad1d28c751fc7474
+$ apt-get source -qq --print-uris gazebo9=9.14.0-1~stretch
+'http://packages.osrfoundation.org/gazebo/debian-stable/pool/main/g/gazebo9/gazebo9_9.14.0-1~stretch.dsc' gazebo9_9.14.0-1~stretch.dsc 2150 SHA256:09d7f560da63a890d9c6df1566afe5bc7ff0b4c60760099069dd2b2079642604
+'http://packages.osrfoundation.org/gazebo/debian-stable/pool/main/g/gazebo9/gazebo9_9.14.0.orig.tar.bz2' gazebo9_9.14.0.orig.tar.bz2 53088175 SHA256:79ed341749d42c4f813ff6f3ab21530c903e8dd08e8b437ffabe35cf8a3ce236
+'http://packages.osrfoundation.org/gazebo/debian-stable/pool/main/g/gazebo9/gazebo9_9.14.0-1~stretch.debian.tar.xz' gazebo9_9.14.0-1~stretch.debian.tar.xz 6864 SHA256:be2d5fae7d1fea60b524115784141d3a010e520fad812ed006f727e9c878f7c8
 ```
 
 ### `dpkg` source package: `gcc-6=6.3.0-18+deb9u1`

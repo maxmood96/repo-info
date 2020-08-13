@@ -1315,14 +1315,9 @@ Licenses: (parsed from: `/usr/share/doc/gazebo11/copyright`, `/usr/share/doc/gaz
 - `LGPL-3+`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gazebo11=11.0.0-1~bionic
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.0.0-1~bionic.dsc' gazebo11_11.0.0-1~bionic.dsc 2270 SHA256:b28b680ae748916fd68ee284969876e1095d267e39d911deb9242129f6d8dc8d
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.0.0.orig.tar.bz2' gazebo11_11.0.0.orig.tar.bz2 53806265 SHA256:3c823e3ed6fbf79a23663eade5f33460c5334dde3b99e376dcb69fa2561886f5
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.0.0-1~bionic.debian.tar.xz' gazebo11_11.0.0-1~bionic.debian.tar.xz 6560 SHA256:cebaa36d945df88fe39f33931e19560b107ba3551c44afffd0e7c152c5b9dfdd
-```
 
 ### `dpkg` source package: `gcc-6=6.5.0-2ubuntu1~18.04`
 
@@ -5206,14 +5201,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.35-2ubuntu2.9
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35-2ubuntu2.9.dsc' nss_3.35-2ubuntu2.9.dsc 2347 SHA256:487bb797754199c702248af4f72a19eb78a089b5a27242520bae8f400e85202e
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35.orig.tar.gz' nss_3.35.orig.tar.gz 9620041 SHA256:f4127de09bede39f5fd0f789d33c3504c5d261e69ea03022d46b319b3e32f6fa
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35-2ubuntu2.9.debian.tar.xz' nss_3.35-2ubuntu2.9.debian.tar.xz 52680 SHA256:54e44f7f0b732e365f22891a55e09ebda266e19e30ed3d3e097337200e254e94
-```
 
 ### `dpkg` source package: `numactl=2.0.11-2.1ubuntu0.1`
 
