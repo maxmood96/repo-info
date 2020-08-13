@@ -1,7 +1,7 @@
 ## `drupal:apache-buster`
 
 ```console
-$ docker pull drupal@sha256:586a9a5116226551c2693e3091d6e1d9f9371b7ac1c8b2820305903b334d7ffb
+$ docker pull drupal@sha256:7f220d4f7f0a9f12b1a35badd9d4e878f27361b7c3fe90f32b838dcf4cdb6442
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,14 +16,14 @@ $ docker pull drupal@sha256:586a9a5116226551c2693e3091d6e1d9f9371b7ac1c8b2820305
 ### `drupal:apache-buster` - linux; amd64
 
 ```console
-$ docker pull drupal@sha256:cf8ee86792492d50694f65f4f00a34cf2b4eb650490466f1c71be36d518a80f2
+$ docker pull drupal@sha256:c388e18ec583b3563ccd0b60cb13470b52a144a7215012c2bd4f1ad2cbca1810
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **166.3 MB (166293485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08a59d2366f2b850bbd91ce564d35a8fd1d1748da7505ab8f4cb1622cbbba3d4`
+-	Image ID: `sha256:94b3b477f00cebc7a469df7ec8bdb66e48e31d1667791fecf440b71b42a709f1`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -104,6 +104,8 @@ ENV DRUPAL_VERSION=9.0.3
 WORKDIR /opt/drupal
 # Mon, 10 Aug 2020 19:01:34 GMT
 RUN set -eux; 	export COMPOSER_HOME="$(mktemp -d)"; 	composer create-project --no-interaction "drupal/recommended-project:$DRUPAL_VERSION" ./; 	chown -R www-data:www-data web/sites web/modules web/themes; 	rmdir /var/www/html; 	ln -sf /opt/drupal/web /var/www/html; 	rm -rf "$COMPOSER_HOME"
+# Thu, 13 Aug 2020 00:19:35 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupal/vendor/bin
 ```
 
 -	Layers:
@@ -690,14 +692,14 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 ### `drupal:apache-buster` - linux; ppc64le
 
 ```console
-$ docker pull drupal@sha256:ee5188805149bcea2e536f7b723c99025c41dba5dddf5a951ba284653ed4ac2d
+$ docker pull drupal@sha256:87ec88303751c1bb6b9b9cdc89f1cc50d781318670c53f18920c6111e3134533
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **177.7 MB (177727903 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1f3bf055c7d90006e7a8f484da7300b9585c5cdbcae7b9d2456780e6dd2151b`
+-	Image ID: `sha256:69f6897aeef500cf646712e2d297735c1f762c327436803db2bd17d2170e7a6f`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -778,6 +780,8 @@ ENV DRUPAL_VERSION=9.0.3
 WORKDIR /opt/drupal
 # Mon, 10 Aug 2020 18:37:20 GMT
 RUN set -eux; 	export COMPOSER_HOME="$(mktemp -d)"; 	composer create-project --no-interaction "drupal/recommended-project:$DRUPAL_VERSION" ./; 	chown -R www-data:www-data web/sites web/modules web/themes; 	rmdir /var/www/html; 	ln -sf /opt/drupal/web /var/www/html; 	rm -rf "$COMPOSER_HOME"
+# Thu, 13 Aug 2020 00:16:48 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupal/vendor/bin
 ```
 
 -	Layers:
