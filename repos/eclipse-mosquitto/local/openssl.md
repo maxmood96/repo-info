@@ -1,18 +1,18 @@
-# `eclipse-mosquitto:1.5.9`
+# `eclipse-mosquitto:1.6.11-openssl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a154d4f3736bf1093d212f90900210b6293b837aae7be8b80fbf23904df1b502`
-- Created: `2020-08-13T21:19:38.362300703Z`
-- Virtual Size: ~ 9.97 Mb  
+- Image ID: `sha256:dda8e826d9c835feed2609d4e49e78e95669400da5b07471f7c82f3cc820580e`
+- Created: `2020-08-13T21:19:33.894786996Z`
+- Virtual Size: ~ 7.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["/usr/sbin/mosquitto","-c","/mosquitto/config/mosquitto.conf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `VERSION=1.5.9`
-  - `DOWNLOAD_SHA256=d7b62aa0ca680b0d869d6883373903362f98326a6465fc6cd01a0b9e0e8f0333`
+  - `VERSION=1.6.11`
+  - `DOWNLOAD_SHA256=b02d8f1368c40d5779ee125c37daf9003608eb47d7fbb04c5b938c76c1230a1f`
   - `GPG_KEYS=A0D6EEA1DCAE49A635A3B2F0779B22DFB3E717B7`
   - `LWS_VERSION=2.4.2`
 - Labels:
@@ -157,74 +157,6 @@ OpenSSL
 
 ```
 
-### `apk` package: `libressl`
-
-```console
-libressl-3.1.2-r0 description:
-Version of the TLS/crypto stack forked from OpenSSL
-
-libressl-3.1.2-r0 webpage:
-http://www.libressl.org/
-
-libressl-3.1.2-r0 installed size:
-528384
-
-libressl-3.1.2-r0 license:
-custom
-
-```
-
-### `apk` package: `libressl3.1-libcrypto`
-
-```console
-libressl3.1-libcrypto-3.1.2-r0 description:
-libressl libcrypto library
-
-libressl3.1-libcrypto-3.1.2-r0 webpage:
-http://www.libressl.org/
-
-libressl3.1-libcrypto-3.1.2-r0 installed size:
-1875968
-
-libressl3.1-libcrypto-3.1.2-r0 license:
-custom
-
-```
-
-### `apk` package: `libressl3.1-libssl`
-
-```console
-libressl3.1-libssl-3.1.2-r0 description:
-libressl libssl library
-
-libressl3.1-libssl-3.1.2-r0 webpage:
-http://www.libressl.org/
-
-libressl3.1-libssl-3.1.2-r0 installed size:
-364544
-
-libressl3.1-libssl-3.1.2-r0 license:
-custom
-
-```
-
-### `apk` package: `libressl3.1-libtls`
-
-```console
-libressl3.1-libtls-3.1.2-r0 description:
-libressl libtls library
-
-libressl3.1-libtls-3.1.2-r0 webpage:
-http://www.libressl.org/
-
-libressl3.1-libtls-3.1.2-r0 installed size:
-86016
-
-libressl3.1-libtls-3.1.2-r0 license:
-custom
-
-```
-
 ### `apk` package: `libssl1.1`
 
 ```console
@@ -256,23 +188,6 @@ libtls-standalone-2.9.1-r1 installed size:
 
 libtls-standalone-2.9.1-r1 license:
 ISC
-
-```
-
-### `apk` package: `libuuid`
-
-```console
-libuuid-2.35.2-r0 description:
-DCE compatible Universally Unique Identifier library
-
-libuuid-2.35.2-r0 webpage:
-https://git.kernel.org/cgit/utils/util-linux/util-linux.git
-
-libuuid-2.35.2-r0 installed size:
-40960
-
-libuuid-2.35.2-r0 license:
-GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
 
 ```
 

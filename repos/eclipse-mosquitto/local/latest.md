@@ -1,18 +1,18 @@
-# `eclipse-mosquitto:1.6.10`
+# `eclipse-mosquitto:1.6.11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e19bf2a13315ca5ca0a1f404644c96821bc4147c3225c6e5f9f2ac70194a7b45`
-- Created: `2020-06-02T21:21:37.982970525Z`
-- Virtual Size: ~ 6.77 Mb  
+- Image ID: `sha256:a53767a945f1f7604cf75738c19ddf397f93491419d3795ba810951c57e9e12b`
+- Created: `2020-08-13T21:19:29.602536069Z`
+- Virtual Size: ~ 10.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["/usr/sbin/mosquitto","-c","/mosquitto/config/mosquitto.conf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `VERSION=1.6.10`
-  - `DOWNLOAD_SHA256=92d1807717f0f6d57d1ac1207ffdb952e8377e916c7b0bb4718f745239774232`
+  - `VERSION=1.6.11`
+  - `DOWNLOAD_SHA256=b02d8f1368c40d5779ee125c37daf9003608eb47d7fbb04c5b938c76c1230a1f`
   - `GPG_KEYS=A0D6EEA1DCAE49A635A3B2F0779B22DFB3E717B7`
   - `LWS_VERSION=2.4.2`
 - Labels:
@@ -92,16 +92,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20191127-r2 description:
+ca-certificates-20191127-r4 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20191127-r2 webpage:
+ca-certificates-20191127-r4 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20191127-r2 installed size:
-692224
+ca-certificates-20191127-r4 installed size:
+688128
 
-ca-certificates-20191127-r2 license:
+ca-certificates-20191127-r4 license:
 MPL-2.0 GPL-2.0-or-later
 
 ```
@@ -157,6 +157,74 @@ OpenSSL
 
 ```
 
+### `apk` package: `libressl`
+
+```console
+libressl-3.1.2-r0 description:
+Version of the TLS/crypto stack forked from OpenSSL
+
+libressl-3.1.2-r0 webpage:
+http://www.libressl.org/
+
+libressl-3.1.2-r0 installed size:
+528384
+
+libressl-3.1.2-r0 license:
+custom
+
+```
+
+### `apk` package: `libressl3.1-libcrypto`
+
+```console
+libressl3.1-libcrypto-3.1.2-r0 description:
+libressl libcrypto library
+
+libressl3.1-libcrypto-3.1.2-r0 webpage:
+http://www.libressl.org/
+
+libressl3.1-libcrypto-3.1.2-r0 installed size:
+1875968
+
+libressl3.1-libcrypto-3.1.2-r0 license:
+custom
+
+```
+
+### `apk` package: `libressl3.1-libssl`
+
+```console
+libressl3.1-libssl-3.1.2-r0 description:
+libressl libssl library
+
+libressl3.1-libssl-3.1.2-r0 webpage:
+http://www.libressl.org/
+
+libressl3.1-libssl-3.1.2-r0 installed size:
+364544
+
+libressl3.1-libssl-3.1.2-r0 license:
+custom
+
+```
+
+### `apk` package: `libressl3.1-libtls`
+
+```console
+libressl3.1-libtls-3.1.2-r0 description:
+libressl libtls library
+
+libressl3.1-libtls-3.1.2-r0 webpage:
+http://www.libressl.org/
+
+libressl3.1-libtls-3.1.2-r0 installed size:
+86016
+
+libressl3.1-libtls-3.1.2-r0 license:
+custom
+
+```
+
 ### `apk` package: `libssl1.1`
 
 ```console
@@ -194,16 +262,16 @@ ISC
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.24-r8 description:
+musl-1.1.24-r9 description:
 the musl c library (libc) implementation
 
-musl-1.1.24-r8 webpage:
+musl-1.1.24-r9 webpage:
 https://musl.libc.org/
 
-musl-1.1.24-r8 installed size:
+musl-1.1.24-r9 installed size:
 614400
 
-musl-1.1.24-r8 license:
+musl-1.1.24-r9 license:
 MIT
 
 ```
