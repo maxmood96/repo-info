@@ -1,7 +1,7 @@
 ## `buildpack-deps:groovy-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:7b1853b398e14d491b62c92166bb1c2956e0b42d9cff6e0d9732e784c6584b8e
+$ docker pull buildpack-deps@sha256:637f349e6dba5d311a2501404a4aeec742db6ea337f70150554fe908129fb073
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15,57 +15,57 @@ $ docker pull buildpack-deps@sha256:7b1853b398e14d491b62c92166bb1c2956e0b42d9cff
 ### `buildpack-deps:groovy-curl` - linux; amd64
 
 ```console
-$ docker pull buildpack-deps@sha256:4091985e8ab9d2a5ec548e56a8074969e69edc59d78b82b3782f0513ce5331ed
+$ docker pull buildpack-deps@sha256:8bdabf86543b9ce5dde126c0a98102943e8fb4d6df8437294970ca17053fc380
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.8 MB (38836085 bytes)**  
+-	Total Size: **39.3 MB (39291079 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c32756943e91e5ac2e3aa393697f6a4b08e8c7250af587581b61ed0290e33dbf`
+-	Image ID: `sha256:e2898054052936c529e7c0eb288d2b3286dbde156521abb648d02ff8a6f16e92`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 24 Jul 2020 14:38:45 GMT
-ADD file:8cda7bfcf6c3010f9498acf5db465d8affd86bacb786338974486e23ea62b05d in / 
-# Fri, 24 Jul 2020 14:38:46 GMT
+# Wed, 19 Aug 2020 21:15:22 GMT
+ADD file:53ca8a3f446b0751019d522066ce844f6281ffb5b15e9605cd8940176abf4c76 in / 
+# Wed, 19 Aug 2020 21:15:23 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 24 Jul 2020 14:38:46 GMT
+# Wed, 19 Aug 2020 21:15:24 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 24 Jul 2020 14:38:47 GMT
+# Wed, 19 Aug 2020 21:15:25 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 24 Jul 2020 14:38:47 GMT
+# Wed, 19 Aug 2020 21:15:25 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jul 2020 15:02:07 GMT
+# Wed, 19 Aug 2020 22:27:42 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jul 2020 15:02:18 GMT
+# Wed, 19 Aug 2020 22:27:53 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
 -	Layers:
-	-	`sha256:5f55bfaf77a136f7c6b5063e591480c2e7690ed1c29b0ee354caf8f6c62741e0`  
-		Last Modified: Fri, 24 Jul 2020 14:39:44 GMT  
-		Size: 28.4 MB (28357957 bytes)  
+	-	`sha256:d94cf711eb1df9e05b5ab9c367f7417c481e9b5deee1724f93b96c77bff11c8f`  
+		Last Modified: Mon, 17 Aug 2020 15:53:01 GMT  
+		Size: 28.8 MB (28809294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eef373180da2631c7a56d9629e37de8010fe57414453617dde3a2c1e9861f1eb`  
-		Last Modified: Fri, 24 Jul 2020 14:39:39 GMT  
-		Size: 31.8 KB (31838 bytes)  
+	-	`sha256:5dc1ea4c1ef986e00d114cccc9e5fbbe6bd5b8f35145cacb0f12ae3389c4e0a2`  
+		Last Modified: Wed, 19 Aug 2020 21:17:10 GMT  
+		Size: 31.0 KB (31042 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:675d10b513df5337d26a6e2ccaf4875267999084d7f0d2f3102c54d7430cfa35`  
-		Last Modified: Fri, 24 Jul 2020 14:39:39 GMT  
-		Size: 842.0 B  
+	-	`sha256:2147ebd301d69260017329191f4072fbb193e2c1c092542270947091c6eaa60c`  
+		Last Modified: Wed, 19 Aug 2020 21:17:10 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:552f92805e8c6585c466083ac60f40092ae127e794d498c599a31bd67df21c09`  
-		Last Modified: Fri, 24 Jul 2020 14:39:39 GMT  
-		Size: 162.0 B  
+	-	`sha256:2955d4b7554096a19ae03fac9a539a3106b871165d9beef32fb6f3b16bed6c4a`  
+		Last Modified: Wed, 19 Aug 2020 21:17:10 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41c003fe1ffd7eb86efa0bcd0d127f5dca3b2f9dcaa3ad54bdeaaf16602fff1a`  
-		Last Modified: Fri, 24 Jul 2020 15:10:39 GMT  
-		Size: 6.9 MB (6859149 bytes)  
+	-	`sha256:8ff92321eef344d6f7de248e128d72b31e764780d34efaa3ddd1379ab12aed1e`  
+		Last Modified: Wed, 19 Aug 2020 22:36:01 GMT  
+		Size: 6.9 MB (6863303 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3935824be9d9e08e1fe2b607c81e88e8128e36b84b36bdb20dfbc6a90fd43d96`  
-		Last Modified: Fri, 24 Jul 2020 15:10:38 GMT  
-		Size: 3.6 MB (3586137 bytes)  
+	-	`sha256:378b1e0fc390f4096ef8d0f7e763d0862ec62b697cf1bcc6e89a0e73fa780949`  
+		Last Modified: Wed, 19 Aug 2020 22:36:00 GMT  
+		Size: 3.6 MB (3586428 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:groovy-curl` - linux; arm variant v7
@@ -127,57 +127,57 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 ### `buildpack-deps:groovy-curl` - linux; arm64 variant v8
 
 ```console
-$ docker pull buildpack-deps@sha256:b31b2765046c3b083e1136b6fea9dd135cabe64bff1634f16d66adefeed544ea
+$ docker pull buildpack-deps@sha256:f49f252d95d4707a3f527c6c8730dd9875d1188dfc7bb1d9a8c29b9c39c3e7cb
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.3 MB (37285639 bytes)**  
+-	Total Size: **37.7 MB (37741851 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:04afda55b58f7df6eaba6ba10940020863a97b03f471ea219e3a90c827664ad0`
+-	Image ID: `sha256:7126dd3b44a59c3c32a4661ac47c70bf43a82b43e93da0418d8b5aa830a42e7c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 24 Jul 2020 16:25:04 GMT
-ADD file:d70c9745470cda91695a18f189dd80bae5a680e704e1763095d25b73d54b3a74 in / 
-# Fri, 24 Jul 2020 16:25:13 GMT
+# Wed, 19 Aug 2020 21:30:48 GMT
+ADD file:a2368478f6147dfb550f11fd08fa580527841837e6de780105b0ee3c869e9045 in / 
+# Wed, 19 Aug 2020 21:31:01 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 24 Jul 2020 16:25:19 GMT
+# Wed, 19 Aug 2020 21:31:04 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 24 Jul 2020 16:25:26 GMT
+# Wed, 19 Aug 2020 21:31:07 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 24 Jul 2020 16:25:31 GMT
+# Wed, 19 Aug 2020 21:31:08 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jul 2020 18:47:45 GMT
+# Wed, 19 Aug 2020 22:05:59 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jul 2020 18:48:00 GMT
+# Wed, 19 Aug 2020 22:06:11 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
 -	Layers:
-	-	`sha256:2ba5c49f251d9cd367877b4bb56a54c6c2cd649877fc1f3866a8c116211dcb43`  
-		Last Modified: Fri, 24 Jul 2020 16:27:37 GMT  
-		Size: 27.0 MB (26957842 bytes)  
+	-	`sha256:11602f8d9ef9a64d301368c826db17ed80fdaaa6895c8479600ecfb22906feec`  
+		Last Modified: Mon, 17 Aug 2020 15:53:49 GMT  
+		Size: 27.4 MB (27411937 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:869d6f4731727c8eee5a616ee243640c38bfd44a35c601ca60f3f8976637c7c8`  
-		Last Modified: Fri, 24 Jul 2020 16:27:30 GMT  
-		Size: 31.8 KB (31835 bytes)  
+	-	`sha256:de9baf34eaf014c357d3680a1c3659aa57594a0cf1e8f13f3410ff6e659147f0`  
+		Last Modified: Wed, 19 Aug 2020 21:32:46 GMT  
+		Size: 31.0 KB (31023 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e2e46e1d5ec59f731bb7c1ef190b7269114c504db02a71b24bf310a987fb74a0`  
-		Last Modified: Fri, 24 Jul 2020 16:27:29 GMT  
-		Size: 847.0 B  
+	-	`sha256:b8f4efba19094c2a8cdccdb0aad9f813a4ae4c9ecbb8028522dfe7136037188c`  
+		Last Modified: Wed, 19 Aug 2020 21:32:46 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7393ecc5b169f761ed9ca88de6fc2aed57f05f141499a65a0f1bbeb2244b9b04`  
-		Last Modified: Fri, 24 Jul 2020 16:27:29 GMT  
-		Size: 188.0 B  
+	-	`sha256:61503eacf6a2d668185f96d1697af41f5c1798343a4903c2141b75db7ba35fb9`  
+		Last Modified: Wed, 19 Aug 2020 21:32:46 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c679ba0ef5981a1712dde80261c3396ec19af33b91955f35f8045fea2fbaadc0`  
-		Last Modified: Fri, 24 Jul 2020 18:56:57 GMT  
-		Size: 6.7 MB (6724582 bytes)  
+	-	`sha256:959af42e9a96454cf5f9d0df1902056102efc1f8c5fce06fa385fc6234dc4e18`  
+		Last Modified: Wed, 19 Aug 2020 22:14:37 GMT  
+		Size: 6.7 MB (6727192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c54579b8207a09cbec12808075f84c215cd402182b4397a09750b63c52f85c0`  
-		Last Modified: Fri, 24 Jul 2020 18:56:54 GMT  
-		Size: 3.6 MB (3570345 bytes)  
+	-	`sha256:74393685c57568d31f3de5b52a660d8f421b7493deab4a65599fc6cafa475491`  
+		Last Modified: Wed, 19 Aug 2020 22:14:37 GMT  
+		Size: 3.6 MB (3570662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:groovy-curl` - linux; ppc64le
@@ -239,55 +239,55 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 ### `buildpack-deps:groovy-curl` - linux; s390x
 
 ```console
-$ docker pull buildpack-deps@sha256:bee82c38d4cf8bb663c545e980228079457f3a94528b364a85e00fb37cbd9374
+$ docker pull buildpack-deps@sha256:8ac60029b2ee4e5bd2ceb496ce6365e642de56b4effd2a6f04edde29d4cbb63b
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.4 MB (37391608 bytes)**  
+-	Total Size: **38.7 MB (38736655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:774c96419e684afabfaff13dbdb51e1f8e6a15b138e28862597754cc8605586a`
+-	Image ID: `sha256:c7e3005e81a4cf67155d241a32918779c8a09eb57d8d07085b92a03b3a068a04`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 24 Jul 2020 14:44:39 GMT
-ADD file:c2305b9c6b3d1f88851d28a75f00aefa09cd090dceed56cea0be0ef7848de90d in / 
-# Fri, 24 Jul 2020 14:44:46 GMT
+# Wed, 19 Aug 2020 21:10:31 GMT
+ADD file:62afc24038998372a88abab1eb3c5eddd0c6551c6e5c56eb3f466ca26816e9c6 in / 
+# Wed, 19 Aug 2020 21:10:35 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 24 Jul 2020 14:44:48 GMT
+# Wed, 19 Aug 2020 21:10:36 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 24 Jul 2020 14:44:50 GMT
+# Wed, 19 Aug 2020 21:10:37 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 24 Jul 2020 14:44:50 GMT
+# Wed, 19 Aug 2020 21:10:37 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jul 2020 15:50:46 GMT
+# Wed, 19 Aug 2020 21:48:56 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jul 2020 15:50:52 GMT
+# Wed, 19 Aug 2020 21:49:02 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
 -	Layers:
-	-	`sha256:96ee9d07fad79c13f98051a8b3a80c5aa966b8b8e5c86f129811fc3e03c6a937`  
-		Last Modified: Fri, 24 Jul 2020 14:46:02 GMT  
-		Size: 27.2 MB (27230132 bytes)  
+	-	`sha256:920f4fc5f9a3eec734000cb609b35bce4bd842b886967e3f9242e9b1ef4c1851`  
+		Last Modified: Mon, 17 Aug 2020 15:54:28 GMT  
+		Size: 28.5 MB (28545182 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e509548444259d3ffae6be4cff91bdbd942e76236063786c133bd7a9916cb74`  
-		Last Modified: Fri, 24 Jul 2020 14:45:58 GMT  
-		Size: 32.5 KB (32481 bytes)  
+	-	`sha256:34b78dfbe3669075931a4f4250923d05bb9ee9276049becd7b75122e444faceb`  
+		Last Modified: Wed, 19 Aug 2020 21:11:34 GMT  
+		Size: 31.7 KB (31719 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f45af8f70e0f28da9bf410c9369c787d38fdd7d9bf805098562a6a4aefe14c3a`  
-		Last Modified: Fri, 24 Jul 2020 14:45:58 GMT  
-		Size: 844.0 B  
+	-	`sha256:9e366567dad155c04eedb45feb0b4c6afbb4832bac8ae3a9e60d49bf795c0d8c`  
+		Last Modified: Wed, 19 Aug 2020 21:11:34 GMT  
+		Size: 843.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13885bcf94b5ef67414fbe9d1bc297ddc27a295f43fef37c3e0b67cb4449003e`  
-		Last Modified: Fri, 24 Jul 2020 14:45:59 GMT  
-		Size: 188.0 B  
+	-	`sha256:aa80c73ca70349d062cdd34084bd45aa84f9e86a5b141ca7244b26ec6e436590`  
+		Last Modified: Wed, 19 Aug 2020 21:11:35 GMT  
+		Size: 186.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26680f14729a94627c13dc3cd3045f620296504b41dcdcfaf2743d8d425014f0`  
-		Last Modified: Fri, 24 Jul 2020 16:49:11 GMT  
-		Size: 6.5 MB (6547955 bytes)  
+	-	`sha256:3c94bf7f800b71eb421372b72a3176ba745cd9cbc1566dfaf73b5ca3a59eccc8`  
+		Last Modified: Wed, 19 Aug 2020 21:54:05 GMT  
+		Size: 6.6 MB (6579239 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91772d23a664a240344cb92a59a93449b1225c12b0db18dfd15540f025e2a7a6`  
-		Last Modified: Fri, 24 Jul 2020 16:49:10 GMT  
-		Size: 3.6 MB (3580008 bytes)  
+	-	`sha256:0d158b1fc9747cfc0d5b50d7a6071454547d69a2862eac4ff89ddf09fea57c99`  
+		Last Modified: Wed, 19 Aug 2020 21:54:04 GMT  
+		Size: 3.6 MB (3579486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
