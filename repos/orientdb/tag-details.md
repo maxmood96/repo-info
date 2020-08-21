@@ -1136,7 +1136,7 @@ CMD ["server.sh"]
 ## `orientdb:3.1`
 
 ```console
-$ docker pull orientdb@sha256:081b7cfe3008ed439c53d15eaba0fdad94a3367c2f137ae2c441c3a84ea042f8
+$ docker pull orientdb@sha256:cfd15d16e569058fbfd4f458e3b2f4a3a9819d4d7e6ca6f84fa7d135dd784bee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1146,14 +1146,14 @@ $ docker pull orientdb@sha256:081b7cfe3008ed439c53d15eaba0fdad94a3367c2f137ae2c4
 ### `orientdb:3.1` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:bb0f2427f58ce2dfde12d4ded2c1736ce3ca711d94f6306f7d4393d77ed02ef8
+$ docker pull orientdb@sha256:b7d04430f50cb3e16659a9cb26cb1234a137ddfd9360189fe7a2ee3f081794b6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **188.4 MB (188444383 bytes)**  
+-	Total Size: **188.5 MB (188466118 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1d1e94b436ac91276992c6d04ea36737d5ada52bf2f575d7c44b288b0a62205`
+-	Image ID: `sha256:155663a4b3e4b3ff29c372026f403415fa4d5fbcba96755f79cd42aaceadd837`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -1179,29 +1179,29 @@ RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | 
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Wed, 05 Aug 2020 18:02:19 GMT
 ARG ORIENTDB_DOWNLOAD_SERVER
-# Wed, 05 Aug 2020 18:02:19 GMT
-ENV ORIENTDB_VERSION=3.1.1
-# Wed, 05 Aug 2020 18:02:19 GMT
-ENV ORIENTDB_DOWNLOAD_MD5=d4576a49cbb1e1a5933761441c762118
-# Wed, 05 Aug 2020 18:02:19 GMT
-ENV ORIENTDB_DOWNLOAD_SHA1=e874f46aaa62b66721ed924067c49dd759069517
-# Wed, 05 Aug 2020 18:02:19 GMT
-ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.1.1/orientdb-community-3.1.1.tar.gz
-# Wed, 05 Aug 2020 18:02:25 GMT
+# Fri, 21 Aug 2020 19:16:00 GMT
+ENV ORIENTDB_VERSION=3.1.2
+# Fri, 21 Aug 2020 19:16:00 GMT
+ENV ORIENTDB_DOWNLOAD_MD5=890d16544ca7c4413be37089f2415678
+# Fri, 21 Aug 2020 19:16:01 GMT
+ENV ORIENTDB_DOWNLOAD_SHA1=50aebd803d7fe5e95b90ec966b5a0662bde6821f
+# Fri, 21 Aug 2020 19:16:01 GMT
+ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.1.2/orientdb-community-3.1.2.tar.gz
+# Fri, 21 Aug 2020 19:16:10 GMT
 RUN apt update     && apt install -y curl wget     && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Aug 2020 18:02:29 GMT
+# Fri, 21 Aug 2020 19:16:15 GMT
 RUN mkdir /orientdb &&   wget  $ORIENTDB_DOWNLOAD_URL   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-community-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1   && rm orientdb-community-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/*
-# Wed, 05 Aug 2020 18:02:29 GMT
+# Fri, 21 Aug 2020 19:16:16 GMT
 ENV PATH=/orientdb/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 05 Aug 2020 18:02:29 GMT
+# Fri, 21 Aug 2020 19:16:16 GMT
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
-# Wed, 05 Aug 2020 18:02:29 GMT
+# Fri, 21 Aug 2020 19:16:16 GMT
 WORKDIR /orientdb
-# Wed, 05 Aug 2020 18:02:29 GMT
+# Fri, 21 Aug 2020 19:16:17 GMT
 EXPOSE 2424
-# Wed, 05 Aug 2020 18:02:30 GMT
+# Fri, 21 Aug 2020 19:16:17 GMT
 EXPOSE 2480
-# Wed, 05 Aug 2020 18:02:30 GMT
+# Fri, 21 Aug 2020 19:16:17 GMT
 CMD ["server.sh"]
 ```
 
@@ -1222,27 +1222,223 @@ CMD ["server.sh"]
 		Last Modified: Wed, 05 Aug 2020 00:52:40 GMT  
 		Size: 105.1 MB (105111495 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c6fc77ba54e521f28a91f70abb568a9a969bd6d4915d44e3a1e48d31610fedde`  
-		Last Modified: Wed, 05 Aug 2020 18:04:15 GMT  
-		Size: 2.6 MB (2614631 bytes)  
+	-	`sha256:1154fd9a52d51a14e003ed62a365222858188a0054d9bb262a961a42a9dba3b1`  
+		Last Modified: Fri, 21 Aug 2020 19:17:29 GMT  
+		Size: 2.6 MB (2614670 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:154095cd463e8d4303cbe6a969ca45487597d6eb231391a2e083de6f99da2335`  
-		Last Modified: Wed, 05 Aug 2020 18:04:19 GMT  
-		Size: 50.4 MB (50377495 bytes)  
+	-	`sha256:2a8fc1a4731c36e7a8adfe9227c60c299be7f910ca86c8d6af199c1f70aa8934`  
+		Last Modified: Fri, 21 Aug 2020 19:17:33 GMT  
+		Size: 50.4 MB (50399191 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `orientdb:3.1.2`
 
-**does not exist** (yet?)
+```console
+$ docker pull orientdb@sha256:cfd15d16e569058fbfd4f458e3b2f4a3a9819d4d7e6ca6f84fa7d135dd784bee
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `orientdb:3.1.2` - linux; amd64
+
+```console
+$ docker pull orientdb@sha256:b7d04430f50cb3e16659a9cb26cb1234a137ddfd9360189fe7a2ee3f081794b6
+```
+
+-	Docker Version: 18.09.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **188.5 MB (188466118 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:155663a4b3e4b3ff29c372026f403415fa4d5fbcba96755f79cd42aaceadd837`
+-	Default Command: `["server.sh"]`
+
+```dockerfile
+# Tue, 04 Aug 2020 15:42:51 GMT
+ADD file:3af3091e7d2bb40bc1e6550eb5ea290badc6bbf3339105626f245a963cc11450 in / 
+# Tue, 04 Aug 2020 15:42:51 GMT
+CMD ["bash"]
+# Wed, 05 Aug 2020 00:41:10 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 05 Aug 2020 00:41:10 GMT
+ENV LANG=C.UTF-8
+# Wed, 05 Aug 2020 00:45:59 GMT
+ENV JAVA_HOME=/usr/local/openjdk-8
+# Wed, 05 Aug 2020 00:45:59 GMT
+ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 05 Aug 2020 00:46:00 GMT
+RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
+# Wed, 05 Aug 2020 00:46:00 GMT
+ENV JAVA_VERSION=8u265
+# Wed, 05 Aug 2020 00:46:13 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | i386:x86-64) downloadUrl=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u265-b01/OpenJDK8U-jdk_x64_linux_8u265b01.tar.gz ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "$downloadUrl.sign"; 	wget -O openjdk.tgz "$downloadUrl" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
+# Wed, 05 Aug 2020 18:02:18 GMT
+MAINTAINER OrientDB LTD (info@orientdb.com)
+# Wed, 05 Aug 2020 18:02:19 GMT
+ARG ORIENTDB_DOWNLOAD_SERVER
+# Fri, 21 Aug 2020 19:16:00 GMT
+ENV ORIENTDB_VERSION=3.1.2
+# Fri, 21 Aug 2020 19:16:00 GMT
+ENV ORIENTDB_DOWNLOAD_MD5=890d16544ca7c4413be37089f2415678
+# Fri, 21 Aug 2020 19:16:01 GMT
+ENV ORIENTDB_DOWNLOAD_SHA1=50aebd803d7fe5e95b90ec966b5a0662bde6821f
+# Fri, 21 Aug 2020 19:16:01 GMT
+ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.1.2/orientdb-community-3.1.2.tar.gz
+# Fri, 21 Aug 2020 19:16:10 GMT
+RUN apt update     && apt install -y curl wget     && rm -rf /var/lib/apt/lists/*
+# Fri, 21 Aug 2020 19:16:15 GMT
+RUN mkdir /orientdb &&   wget  $ORIENTDB_DOWNLOAD_URL   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-community-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1   && rm orientdb-community-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/*
+# Fri, 21 Aug 2020 19:16:16 GMT
+ENV PATH=/orientdb/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 21 Aug 2020 19:16:16 GMT
+VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
+# Fri, 21 Aug 2020 19:16:16 GMT
+WORKDIR /orientdb
+# Fri, 21 Aug 2020 19:16:17 GMT
+EXPOSE 2424
+# Fri, 21 Aug 2020 19:16:17 GMT
+EXPOSE 2480
+# Fri, 21 Aug 2020 19:16:17 GMT
+CMD ["server.sh"]
+```
+
+-	Layers:
+	-	`sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb`  
+		Last Modified: Tue, 04 Aug 2020 15:49:09 GMT  
+		Size: 27.1 MB (27092121 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:092c9b8e633fd73a2b448815d56f09aebf34c733300cd7747008b81fe7724a02`  
+		Last Modified: Wed, 05 Aug 2020 00:48:13 GMT  
+		Size: 3.2 MB (3248431 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:461b86d6fc625bd29e1581869da80f01a1516aabbc3fb1795a72d81bc8ff8d3e`  
+		Last Modified: Wed, 05 Aug 2020 00:52:28 GMT  
+		Size: 210.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9ef007d5ad2803a1acd5c45c0c83d34e65cff32d11bb0f744e15a6fefb2f594e`  
+		Last Modified: Wed, 05 Aug 2020 00:52:40 GMT  
+		Size: 105.1 MB (105111495 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1154fd9a52d51a14e003ed62a365222858188a0054d9bb262a961a42a9dba3b1`  
+		Last Modified: Fri, 21 Aug 2020 19:17:29 GMT  
+		Size: 2.6 MB (2614670 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2a8fc1a4731c36e7a8adfe9227c60c299be7f910ca86c8d6af199c1f70aa8934`  
+		Last Modified: Fri, 21 Aug 2020 19:17:33 GMT  
+		Size: 50.4 MB (50399191 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `orientdb:3.1.2-tp3`
 
-**does not exist** (yet?)
+```console
+$ docker pull orientdb@sha256:d843719cdd53ce440d15ccbe1c32c1dec4e45412d6783b6444115cf5fb119137
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `orientdb:3.1.2-tp3` - linux; amd64
+
+```console
+$ docker pull orientdb@sha256:e9883db8cf6efc3e7dff9e2d57dac61bb99bfe2ee5f46d6bbafac2b05de6d1ed
+```
+
+-	Docker Version: 18.09.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **212.5 MB (212466785 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4902ff39aac861f9542416673936a4bb0b631ae9328e8437f55cf4b83ce9fa90`
+-	Default Command: `["server.sh"]`
+
+```dockerfile
+# Tue, 04 Aug 2020 15:42:51 GMT
+ADD file:3af3091e7d2bb40bc1e6550eb5ea290badc6bbf3339105626f245a963cc11450 in / 
+# Tue, 04 Aug 2020 15:42:51 GMT
+CMD ["bash"]
+# Wed, 05 Aug 2020 00:41:10 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 05 Aug 2020 00:41:10 GMT
+ENV LANG=C.UTF-8
+# Wed, 05 Aug 2020 00:45:59 GMT
+ENV JAVA_HOME=/usr/local/openjdk-8
+# Wed, 05 Aug 2020 00:45:59 GMT
+ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 05 Aug 2020 00:46:00 GMT
+RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
+# Wed, 05 Aug 2020 00:46:00 GMT
+ENV JAVA_VERSION=8u265
+# Wed, 05 Aug 2020 00:46:13 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | i386:x86-64) downloadUrl=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u265-b01/OpenJDK8U-jdk_x64_linux_8u265b01.tar.gz ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "$downloadUrl.sign"; 	wget -O openjdk.tgz "$downloadUrl" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
+# Wed, 05 Aug 2020 18:02:18 GMT
+MAINTAINER OrientDB LTD (info@orientdb.com)
+# Wed, 05 Aug 2020 18:02:19 GMT
+ARG ORIENTDB_DOWNLOAD_SERVER
+# Fri, 21 Aug 2020 19:16:00 GMT
+ENV ORIENTDB_VERSION=3.1.2
+# Fri, 21 Aug 2020 19:16:22 GMT
+ENV ORIENTDB_DOWNLOAD_MD5=4769b02378b69a5aa34c87751f0c6a7f
+# Fri, 21 Aug 2020 19:16:23 GMT
+ENV ORIENTDB_DOWNLOAD_SHA1=5dabb1189ced24f4b9f4796fd287f761d65a57a3
+# Fri, 21 Aug 2020 19:16:23 GMT
+ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-tp3/3.1.2/orientdb-tp3-3.1.2.tar.gz
+# Fri, 21 Aug 2020 19:16:31 GMT
+RUN apt update     && apt install -y curl wget     && rm -rf /var/lib/apt/lists/*
+# Fri, 21 Aug 2020 19:16:40 GMT
+RUN mkdir /orientdb &&   wget  $ORIENTDB_DOWNLOAD_URL   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-tp3-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-tp3-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-tp3-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1   && rm orientdb-tp3-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/*
+# Fri, 21 Aug 2020 19:16:41 GMT
+ADD file:5bcd10827429355383b443914a6e6c163692cb388c7594e6e8d3d4625653a011 in /orientdb/config 
+# Fri, 21 Aug 2020 19:16:41 GMT
+ENV PATH=/orientdb/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 21 Aug 2020 19:16:41 GMT
+VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
+# Fri, 21 Aug 2020 19:16:42 GMT
+WORKDIR /orientdb
+# Fri, 21 Aug 2020 19:16:42 GMT
+EXPOSE 2424
+# Fri, 21 Aug 2020 19:16:42 GMT
+EXPOSE 2480
+# Fri, 21 Aug 2020 19:16:43 GMT
+EXPOSE 8182
+# Fri, 21 Aug 2020 19:16:43 GMT
+CMD ["server.sh"]
+```
+
+-	Layers:
+	-	`sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb`  
+		Last Modified: Tue, 04 Aug 2020 15:49:09 GMT  
+		Size: 27.1 MB (27092121 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:092c9b8e633fd73a2b448815d56f09aebf34c733300cd7747008b81fe7724a02`  
+		Last Modified: Wed, 05 Aug 2020 00:48:13 GMT  
+		Size: 3.2 MB (3248431 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:461b86d6fc625bd29e1581869da80f01a1516aabbc3fb1795a72d81bc8ff8d3e`  
+		Last Modified: Wed, 05 Aug 2020 00:52:28 GMT  
+		Size: 210.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9ef007d5ad2803a1acd5c45c0c83d34e65cff32d11bb0f744e15a6fefb2f594e`  
+		Last Modified: Wed, 05 Aug 2020 00:52:40 GMT  
+		Size: 105.1 MB (105111495 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f5bcd0b3f0e71eb142b610092a704af29abc4e2d4f7bf286553c981522428227`  
+		Last Modified: Fri, 21 Aug 2020 19:17:39 GMT  
+		Size: 2.6 MB (2614637 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e0bbc1f64a5ad38e014c678c9d7cd5e32564ef3275866d94d9582bd3ea7d0bfc`  
+		Last Modified: Fri, 21 Aug 2020 19:17:45 GMT  
+		Size: 74.4 MB (74398515 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1e0a557234925d67b9c34f3a407f5f527eca3a7fe05af7fe30fd6b83b4a8102c`  
+		Last Modified: Fri, 21 Aug 2020 19:17:38 GMT  
+		Size: 1.4 KB (1376 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `orientdb:3.1-tp3`
 
 ```console
-$ docker pull orientdb@sha256:ac7a2ddd2a713b15f7f75c93e215173692a5ac867493a38bed455d223f2c4e4f
+$ docker pull orientdb@sha256:d843719cdd53ce440d15ccbe1c32c1dec4e45412d6783b6444115cf5fb119137
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1252,14 +1448,14 @@ $ docker pull orientdb@sha256:ac7a2ddd2a713b15f7f75c93e215173692a5ac867493a38bed
 ### `orientdb:3.1-tp3` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:be9a02657fee075f28ebc53c9e4869594cfa3a9e5289e8fa8817d8d5dbcdb33b
+$ docker pull orientdb@sha256:e9883db8cf6efc3e7dff9e2d57dac61bb99bfe2ee5f46d6bbafac2b05de6d1ed
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.4 MB (212444812 bytes)**  
+-	Total Size: **212.5 MB (212466785 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:629de379fe75155476bc30dfc572198d5601216fb2d8eb2f47679f655e77a6e6`
+-	Image ID: `sha256:4902ff39aac861f9542416673936a4bb0b631ae9328e8437f55cf4b83ce9fa90`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -1285,33 +1481,33 @@ RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | 
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Wed, 05 Aug 2020 18:02:19 GMT
 ARG ORIENTDB_DOWNLOAD_SERVER
-# Wed, 05 Aug 2020 18:02:19 GMT
-ENV ORIENTDB_VERSION=3.1.1
-# Wed, 05 Aug 2020 18:02:35 GMT
-ENV ORIENTDB_DOWNLOAD_MD5=81f24b4926634024cbe63239dfc31dce
-# Wed, 05 Aug 2020 18:02:35 GMT
-ENV ORIENTDB_DOWNLOAD_SHA1=da9389bdb50d0905e32907e40f050d964686ce47
-# Wed, 05 Aug 2020 18:02:35 GMT
-ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-tp3/3.1.1/orientdb-tp3-3.1.1.tar.gz
-# Wed, 05 Aug 2020 18:02:41 GMT
+# Fri, 21 Aug 2020 19:16:00 GMT
+ENV ORIENTDB_VERSION=3.1.2
+# Fri, 21 Aug 2020 19:16:22 GMT
+ENV ORIENTDB_DOWNLOAD_MD5=4769b02378b69a5aa34c87751f0c6a7f
+# Fri, 21 Aug 2020 19:16:23 GMT
+ENV ORIENTDB_DOWNLOAD_SHA1=5dabb1189ced24f4b9f4796fd287f761d65a57a3
+# Fri, 21 Aug 2020 19:16:23 GMT
+ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-tp3/3.1.2/orientdb-tp3-3.1.2.tar.gz
+# Fri, 21 Aug 2020 19:16:31 GMT
 RUN apt update     && apt install -y curl wget     && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Aug 2020 18:02:46 GMT
+# Fri, 21 Aug 2020 19:16:40 GMT
 RUN mkdir /orientdb &&   wget  $ORIENTDB_DOWNLOAD_URL   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-tp3-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-tp3-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-tp3-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1   && rm orientdb-tp3-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/*
-# Wed, 05 Aug 2020 18:02:46 GMT
+# Fri, 21 Aug 2020 19:16:41 GMT
 ADD file:5bcd10827429355383b443914a6e6c163692cb388c7594e6e8d3d4625653a011 in /orientdb/config 
-# Wed, 05 Aug 2020 18:02:46 GMT
+# Fri, 21 Aug 2020 19:16:41 GMT
 ENV PATH=/orientdb/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 05 Aug 2020 18:02:46 GMT
+# Fri, 21 Aug 2020 19:16:41 GMT
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
-# Wed, 05 Aug 2020 18:02:47 GMT
+# Fri, 21 Aug 2020 19:16:42 GMT
 WORKDIR /orientdb
-# Wed, 05 Aug 2020 18:02:47 GMT
+# Fri, 21 Aug 2020 19:16:42 GMT
 EXPOSE 2424
-# Wed, 05 Aug 2020 18:02:47 GMT
+# Fri, 21 Aug 2020 19:16:42 GMT
 EXPOSE 2480
-# Wed, 05 Aug 2020 18:02:47 GMT
+# Fri, 21 Aug 2020 19:16:43 GMT
 EXPOSE 8182
-# Wed, 05 Aug 2020 18:02:48 GMT
+# Fri, 21 Aug 2020 19:16:43 GMT
 CMD ["server.sh"]
 ```
 
@@ -1332,23 +1528,23 @@ CMD ["server.sh"]
 		Last Modified: Wed, 05 Aug 2020 00:52:40 GMT  
 		Size: 105.1 MB (105111495 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6216bdd1f85a1cd40392975d1a275b1b077f16d38c16814b44e5ad57667162d9`  
-		Last Modified: Wed, 05 Aug 2020 18:04:24 GMT  
-		Size: 2.6 MB (2614619 bytes)  
+	-	`sha256:f5bcd0b3f0e71eb142b610092a704af29abc4e2d4f7bf286553c981522428227`  
+		Last Modified: Fri, 21 Aug 2020 19:17:39 GMT  
+		Size: 2.6 MB (2614637 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef3464fb537966e5d5db3d2a6e0212b23f45c68a6629ccd08276643556650fff`  
-		Last Modified: Wed, 05 Aug 2020 18:04:31 GMT  
-		Size: 74.4 MB (74376560 bytes)  
+	-	`sha256:e0bbc1f64a5ad38e014c678c9d7cd5e32564ef3275866d94d9582bd3ea7d0bfc`  
+		Last Modified: Fri, 21 Aug 2020 19:17:45 GMT  
+		Size: 74.4 MB (74398515 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01a8e710d6044c0ac45b9faca3d8efa0efb3a9b75475edae605366dc540a6cdd`  
-		Last Modified: Wed, 05 Aug 2020 18:04:24 GMT  
+	-	`sha256:1e0a557234925d67b9c34f3a407f5f527eca3a7fe05af7fe30fd6b83b4a8102c`  
+		Last Modified: Fri, 21 Aug 2020 19:17:38 GMT  
 		Size: 1.4 KB (1376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `orientdb:latest`
 
 ```console
-$ docker pull orientdb@sha256:081b7cfe3008ed439c53d15eaba0fdad94a3367c2f137ae2c441c3a84ea042f8
+$ docker pull orientdb@sha256:cfd15d16e569058fbfd4f458e3b2f4a3a9819d4d7e6ca6f84fa7d135dd784bee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1358,14 +1554,14 @@ $ docker pull orientdb@sha256:081b7cfe3008ed439c53d15eaba0fdad94a3367c2f137ae2c4
 ### `orientdb:latest` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:bb0f2427f58ce2dfde12d4ded2c1736ce3ca711d94f6306f7d4393d77ed02ef8
+$ docker pull orientdb@sha256:b7d04430f50cb3e16659a9cb26cb1234a137ddfd9360189fe7a2ee3f081794b6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **188.4 MB (188444383 bytes)**  
+-	Total Size: **188.5 MB (188466118 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1d1e94b436ac91276992c6d04ea36737d5ada52bf2f575d7c44b288b0a62205`
+-	Image ID: `sha256:155663a4b3e4b3ff29c372026f403415fa4d5fbcba96755f79cd42aaceadd837`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -1391,29 +1587,29 @@ RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | 
 MAINTAINER OrientDB LTD (info@orientdb.com)
 # Wed, 05 Aug 2020 18:02:19 GMT
 ARG ORIENTDB_DOWNLOAD_SERVER
-# Wed, 05 Aug 2020 18:02:19 GMT
-ENV ORIENTDB_VERSION=3.1.1
-# Wed, 05 Aug 2020 18:02:19 GMT
-ENV ORIENTDB_DOWNLOAD_MD5=d4576a49cbb1e1a5933761441c762118
-# Wed, 05 Aug 2020 18:02:19 GMT
-ENV ORIENTDB_DOWNLOAD_SHA1=e874f46aaa62b66721ed924067c49dd759069517
-# Wed, 05 Aug 2020 18:02:19 GMT
-ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.1.1/orientdb-community-3.1.1.tar.gz
-# Wed, 05 Aug 2020 18:02:25 GMT
+# Fri, 21 Aug 2020 19:16:00 GMT
+ENV ORIENTDB_VERSION=3.1.2
+# Fri, 21 Aug 2020 19:16:00 GMT
+ENV ORIENTDB_DOWNLOAD_MD5=890d16544ca7c4413be37089f2415678
+# Fri, 21 Aug 2020 19:16:01 GMT
+ENV ORIENTDB_DOWNLOAD_SHA1=50aebd803d7fe5e95b90ec966b5a0662bde6821f
+# Fri, 21 Aug 2020 19:16:01 GMT
+ENV ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.1.2/orientdb-community-3.1.2.tar.gz
+# Fri, 21 Aug 2020 19:16:10 GMT
 RUN apt update     && apt install -y curl wget     && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Aug 2020 18:02:29 GMT
+# Fri, 21 Aug 2020 19:16:15 GMT
 RUN mkdir /orientdb &&   wget  $ORIENTDB_DOWNLOAD_URL   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-community-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1   && rm orientdb-community-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/*
-# Wed, 05 Aug 2020 18:02:29 GMT
+# Fri, 21 Aug 2020 19:16:16 GMT
 ENV PATH=/orientdb/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 05 Aug 2020 18:02:29 GMT
+# Fri, 21 Aug 2020 19:16:16 GMT
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
-# Wed, 05 Aug 2020 18:02:29 GMT
+# Fri, 21 Aug 2020 19:16:16 GMT
 WORKDIR /orientdb
-# Wed, 05 Aug 2020 18:02:29 GMT
+# Fri, 21 Aug 2020 19:16:17 GMT
 EXPOSE 2424
-# Wed, 05 Aug 2020 18:02:30 GMT
+# Fri, 21 Aug 2020 19:16:17 GMT
 EXPOSE 2480
-# Wed, 05 Aug 2020 18:02:30 GMT
+# Fri, 21 Aug 2020 19:16:17 GMT
 CMD ["server.sh"]
 ```
 
@@ -1434,11 +1630,11 @@ CMD ["server.sh"]
 		Last Modified: Wed, 05 Aug 2020 00:52:40 GMT  
 		Size: 105.1 MB (105111495 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c6fc77ba54e521f28a91f70abb568a9a969bd6d4915d44e3a1e48d31610fedde`  
-		Last Modified: Wed, 05 Aug 2020 18:04:15 GMT  
-		Size: 2.6 MB (2614631 bytes)  
+	-	`sha256:1154fd9a52d51a14e003ed62a365222858188a0054d9bb262a961a42a9dba3b1`  
+		Last Modified: Fri, 21 Aug 2020 19:17:29 GMT  
+		Size: 2.6 MB (2614670 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:154095cd463e8d4303cbe6a969ca45487597d6eb231391a2e083de6f99da2335`  
-		Last Modified: Wed, 05 Aug 2020 18:04:19 GMT  
-		Size: 50.4 MB (50377495 bytes)  
+	-	`sha256:2a8fc1a4731c36e7a8adfe9227c60c299be7f910ca86c8d6af199c1f70aa8934`  
+		Last Modified: Fri, 21 Aug 2020 19:17:33 GMT  
+		Size: 50.4 MB (50399191 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
