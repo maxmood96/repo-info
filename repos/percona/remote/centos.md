@@ -1,7 +1,7 @@
 ## `percona:centos`
 
 ```console
-$ docker pull percona@sha256:4f7d466fe520a0e32a2241e9179790fc9011f652791dd5b40f20ae973700b067
+$ docker pull percona@sha256:34c453b0c796d184df0f5049c3ff47aa3d6c6db0b344c6170b5fef5bfb615ea2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull percona@sha256:4f7d466fe520a0e32a2241e9179790fc9011f652791dd5b40f2
 ### `percona:centos` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:1d54f835d55222145c5db1897d8bacfb9707cb2440bc1886a168cd2d4c9f28a6
+$ docker pull percona@sha256:68dad5e2efeb6893e2d7d116a1eae144f2c641c17d00e7869397395590c91651
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **197.0 MB (197023337 bytes)**  
+-	Total Size: **198.0 MB (197968054 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8238bc5a4dc78faa31ffdcbdb63f20c8f99b1e873119d61674eba92cf3ad405f`
+-	Image ID: `sha256:cb49da8a7d3c22eb92a4de93d43ede592bb5487ac89ad866211a4f9ef8d11a3e`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -37,23 +37,23 @@ RUN groupdel input && groupadd -g 999 mysql
 RUN useradd -u 999 -r -g 999 -s /sbin/nologin 		-c "Default Application User" mysql
 # Mon, 10 Aug 2020 18:41:08 GMT
 RUN set -ex;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A;     gpg --batch --export --armor 430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A > ${GNUPGHOME}/RPM-GPG-KEY-Percona;     rpmkeys --import ${GNUPGHOME}/RPM-GPG-KEY-Percona /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7;     curl -Lf -o /tmp/percona-release.rpm https://repo.percona.com/yum/percona-release-latest.noarch.rpm;     rpmkeys --checksig /tmp/percona-release.rpm;     yum install -y /tmp/percona-release.rpm;     rm -rf "$GNUPGHOME" /tmp/percona-release.rpm;     rpm --import /etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY;     percona-release disable all;     percona-release enable original release
-# Mon, 10 Aug 2020 18:41:08 GMT
-ENV PERCONA_VERSION=5.7.30-33.1.el7
-# Mon, 10 Aug 2020 18:42:03 GMT
+# Tue, 25 Aug 2020 18:29:22 GMT
+ENV PERCONA_VERSION=5.7.31-34.1.el7
+# Tue, 25 Aug 2020 18:30:16 GMT
 RUN set -ex;     yum install -y         Percona-Server-server-57-${PERCONA_VERSION}         Percona-Server-devel-57-${PERCONA_VERSION}         Percona-Server-tokudb-57-${PERCONA_VERSION}         Percona-Server-rocksdb-57-${PERCONA_VERSION}         jemalloc         openssl         which         policycoreutils;         yum clean all;     rm -rf /var/cache/yum /var/lib/mysql
-# Mon, 10 Aug 2020 18:42:04 GMT
+# Tue, 25 Aug 2020 18:30:17 GMT
 RUN /usr/bin/install -m 0775 -o mysql -g root -d /var/lib/mysql /var/run/mysqld /docker-entrypoint-initdb.d 	&& find /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log|user)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log|user)/#&/' 	&& printf '[mysqld]\nskip-host-cache\nskip-name-resolve\n' > /etc/my.cnf.d/docker.cnf 	&& /usr/bin/install -m 0664 -o mysql -g root /dev/null /etc/sysconfig/mysql 	&& echo "LD_PRELOAD=/usr/lib64/libjemalloc.so.1" >> /etc/sysconfig/mysql 	&& echo "THP_SETTING=never" >> /etc/sysconfig/mysql 	&& ln -s /etc/my.cnf.d /etc/mysql 	&& chown -R mysql:root /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d 	&& chmod -R ug+rwX /etc/percona-server.cnf /etc/percona-server.conf.d /etc/my.cnf.d
-# Mon, 10 Aug 2020 18:42:04 GMT
+# Tue, 25 Aug 2020 18:30:17 GMT
 VOLUME [/var/lib/mysql /var/log/mysql]
-# Mon, 10 Aug 2020 18:42:05 GMT
+# Tue, 25 Aug 2020 18:30:18 GMT
 COPY file:905f699d79b77ffbf7039a84326c28f490b5fbb94dacddae8e03ff2d2ee34360 in /docker-entrypoint.sh 
-# Mon, 10 Aug 2020 18:42:05 GMT
+# Tue, 25 Aug 2020 18:30:18 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 10 Aug 2020 18:42:05 GMT
+# Tue, 25 Aug 2020 18:30:18 GMT
 USER mysql
-# Mon, 10 Aug 2020 18:42:05 GMT
+# Tue, 25 Aug 2020 18:30:18 GMT
 EXPOSE 3306
-# Mon, 10 Aug 2020 18:42:05 GMT
+# Tue, 25 Aug 2020 18:30:18 GMT
 CMD ["mysqld"]
 ```
 
@@ -74,15 +74,15 @@ CMD ["mysqld"]
 		Last Modified: Mon, 10 Aug 2020 18:46:16 GMT  
 		Size: 6.5 MB (6520666 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3cbcfb70c34fb9a7732aea994f636ad685a35864a3ebd7af049634350c0a7e54`  
-		Last Modified: Mon, 10 Aug 2020 18:46:35 GMT  
-		Size: 114.6 MB (114632937 bytes)  
+	-	`sha256:c120071707bdce8a2c097ec51e0ba326faf19d324fe2344135d47a195382e7a3`  
+		Last Modified: Tue, 25 Aug 2020 18:31:15 GMT  
+		Size: 115.6 MB (115577656 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe266cedbd5c343a0b336bc60e7179d36faf9406e66e00f2f59afec8e63a3e89`  
-		Last Modified: Mon, 10 Aug 2020 18:46:15 GMT  
-		Size: 1.4 KB (1388 bytes)  
+	-	`sha256:0d36714b45d31e2c0d3060533bb22b194773c2314f76087bcd85c7ce01680688`  
+		Last Modified: Tue, 25 Aug 2020 18:30:56 GMT  
+		Size: 1.4 KB (1386 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d14de751042b17cbaa21eab8b1a0dbadb0169a9a75a99645aaa96b1e38bffc8f`  
-		Last Modified: Mon, 10 Aug 2020 18:46:15 GMT  
+	-	`sha256:c2fd1024e5c88aa4f5f0ce9960f3c2c77fc1bd423cc2e240926b3d69c3bfdc58`  
+		Last Modified: Tue, 25 Aug 2020 18:30:55 GMT  
 		Size: 3.1 KB (3064 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
