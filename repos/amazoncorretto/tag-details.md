@@ -5,11 +5,21 @@
 -	[`amazoncorretto:11`](#amazoncorretto11)
 -	[`amazoncorretto:11.0.8`](#amazoncorretto1108)
 -	[`amazoncorretto:11.0.8-al2`](#amazoncorretto1108-al2)
+-	[`amazoncorretto:11.0.8-alpine`](#amazoncorretto1108-alpine)
 -	[`amazoncorretto:11-al2-full`](#amazoncorretto11-al2-full)
 -	[`amazoncorretto:11-al2-jdk`](#amazoncorretto11-al2-jdk)
+-	[`amazoncorretto:11-alpine`](#amazoncorretto11-alpine)
+-	[`amazoncorretto:11-alpine-full`](#amazoncorretto11-alpine-full)
+-	[`amazoncorretto:11-alpine-jdk`](#amazoncorretto11-alpine-jdk)
 -	[`amazoncorretto:8`](#amazoncorretto8)
 -	[`amazoncorretto:8-al2-full`](#amazoncorretto8-al2-full)
 -	[`amazoncorretto:8-al2-jdk`](#amazoncorretto8-al2-jdk)
+-	[`amazoncorretto:8-alpine`](#amazoncorretto8-alpine)
+-	[`amazoncorretto:8-alpine-full`](#amazoncorretto8-alpine-full)
+-	[`amazoncorretto:8-alpine-jdk`](#amazoncorretto8-alpine-jdk)
+-	[`amazoncorretto:8-alpine-jre`](#amazoncorretto8-alpine-jre)
+-	[`amazoncorretto:8u262-alpine`](#amazoncorretto8u262-alpine)
+-	[`amazoncorretto:8u262-alpine-jre`](#amazoncorretto8u262-alpine-jre)
 -	[`amazoncorretto:8u265`](#amazoncorretto8u265)
 -	[`amazoncorretto:8u265-al2`](#amazoncorretto8u265-al2)
 -	[`amazoncorretto:latest`](#amazoncorrettolatest)
@@ -281,6 +291,10 @@ ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 		Size: 144.0 MB (144021601 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `amazoncorretto:11.0.8-alpine`
+
+**does not exist** (yet?)
+
 ## `amazoncorretto:11-al2-full`
 
 ```console
@@ -458,6 +472,18 @@ ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 		Last Modified: Fri, 31 Jul 2020 23:03:18 GMT  
 		Size: 144.0 MB (144021601 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `amazoncorretto:11-alpine`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:11-alpine-full`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:11-alpine-jdk`
+
+**does not exist** (yet?)
 
 ## `amazoncorretto:8`
 
@@ -725,6 +751,30 @@ ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto
 		Last Modified: Fri, 31 Jul 2020 23:02:42 GMT  
 		Size: 59.0 MB (59032135 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `amazoncorretto:8-alpine`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:8-alpine-full`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:8-alpine-jdk`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:8-alpine-jre`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:8u262-alpine`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:8u262-alpine-jre`
+
+**does not exist** (yet?)
 
 ## `amazoncorretto:8u265`
 
