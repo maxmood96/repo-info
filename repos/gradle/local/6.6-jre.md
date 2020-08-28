@@ -1,9 +1,9 @@
-# `gradle:6.6.0-jre8`
+# `gradle:6.6.1-jre8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:136f582ef92bac9cbff8e733c5f11ba50770ce3c8b53567250cb0a8226168f77`
-- Created: `2020-08-20T02:06:25.647036014Z`
+- Image ID: `sha256:4532e5ea0d7ed3bd2366971e38025f8a440cecb58ab0c5f78edc1aba9a892275`
+- Created: `2020-08-26T19:20:24.821324633Z`
 - Virtual Size: ~ 467.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,7 +16,7 @@
   - `JAVA_VERSION=jdk8u262-b10`
   - `JAVA_HOME=/opt/java/openjdk`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=6.6`
+  - `GRADLE_VERSION=6.6.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1681,13 +1681,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.1.8-3.6ubuntu2.18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.6ubuntu2.18.04.1.dsc' pam_1.1.8-3.6ubuntu2.18.04.1.dsc 2212 SHA256:eb895fd520265f4db4eb5c00f06e0f5e903900265093011a61b431a3b6221eff
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.6ubuntu2.18.04.1.tar.gz' pam_1.1.8-3.6ubuntu2.18.04.1.tar.gz 1990490 SHA256:a400f8d82fb41afd008a9f8a6f2221cad0cc0f7cc60a41d50f27fc518217f68f
-```
 
 ### `dpkg` source package: `pcre3=2:8.39-9`
 
