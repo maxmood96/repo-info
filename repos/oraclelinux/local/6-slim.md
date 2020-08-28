@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4ca779c52bf7ae07b473afba84d2d8f1907dcb1e10e185ce2d90af8f1d18d545`
-- Created: `2020-05-04T20:21:27.026786291Z`
-- Virtual Size: ~ 120.21 Mb  
+- Image ID: `sha256:a51bd454662a83a8b190a12e3a9ff94ef904953e2204bb156539556e4193d916`
+- Created: `2020-08-26T23:26:48.370938631Z`
+- Virtual Size: ~ 119.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -57,15 +57,15 @@ $ yumdownloader --quiet --source --urls bzip2-libs-1.0.5-7.el6_0
 https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/bzip2-1.0.5-7.el6_0.src.rpm
 ```
 
-### `rpm` package: `ca-certificates-2019.2.32-65.1.el6_10.noarch`
+### `rpm` package: `ca-certificates-2020.2.41-65.1.el6_10.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls ca-certificates-2019.2.32-65.1.el6_10.noarch
-https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/ca-certificates-2019.2.32-65.1.el6_10.src.rpm
+$ yumdownloader --quiet --source --urls ca-certificates-2020.2.41-65.1.el6_10.noarch
+https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/ca-certificates-2020.2.41-65.1.el6_10.src.rpm
 ```
 
 ### `rpm` package: `chkconfig-1.3.49.5-1.el6.x86_64`
