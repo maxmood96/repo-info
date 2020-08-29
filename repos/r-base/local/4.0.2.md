@@ -518,20 +518,13 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.68.0-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.68.0-1.dsc' curl_7.68.0-1.dsc 2646 SHA256:cdf08a9a1b11246cf051125280f8a039a9e357631ccf2a06dc50bb66f46f284e
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA256:1dd7604e418b0b9a9077f62f763f6684c1b092a7bc17e3f354b8ad5c964d7358
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.68.0-1.debian.tar.xz' curl_7.68.0-1.debian.tar.xz 29304 SHA256:fb8f6cd5ce44422a75de12330fdca0e0ce56e81ed89faa7ee24b71a8ba8dd42e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.68.0-1/
 
-- https://sources.debian.net/src/curl/7.68.0-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.68.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.68.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2`
 
@@ -1540,20 +1533,13 @@ Licenses: (parsed from: `/usr/share/doc/libxtables12/copyright`)
 - `GPL-2+`
 - `custom`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iptables=1.8.5-2
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.8.5-2.dsc' iptables_1.8.5-2.dsc 2719 SHA256:f42b0511dbb0b4837d4a2cef8ef0adddcc61818acc4d2a409f6d4b3a7fb1f71a
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.8.5.orig.tar.bz2' iptables_1.8.5.orig.tar.bz2 713769 SHA256:d457d74512e63aa3f50336e0597d4023c0e3c6845594d38532efb6ebcb294309
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.8.5-2.debian.tar.xz' iptables_1.8.5-2.debian.tar.xz 27328 SHA256:fa06ef5605e3fe7d422dae365ae4424c8fff1ae05adecd89023e58fbee6c49ba
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iptables/1.8.5-2/
 
-- https://sources.debian.net/src/iptables/1.8.5-2/ (for browsing the source)
-- https://sources.debian.net/src/iptables/1.8.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iptables/1.8.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iputils=3:20190709-3`
 
@@ -1565,20 +1551,13 @@ Licenses: (parsed from: `/usr/share/doc/iputils-ping/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iputils=3:20190709-3
-'http://deb.debian.org/debian/pool/main/i/iputils/iputils_20190709-3.dsc' iputils_20190709-3.dsc 2081 SHA256:e169a409efd0238b6c547ffad7de017d402a8506ac9162559de523e884ed0efc
-'http://deb.debian.org/debian/pool/main/i/iputils/iputils_20190709.orig.tar.xz' iputils_20190709.orig.tar.xz 361144 SHA256:bec0321ee1489c8f73e88f7d34b6fd40fbec7b3af5b3a1940306bd8d8835c3c0
-'http://deb.debian.org/debian/pool/main/i/iputils/iputils_20190709-3.debian.tar.xz' iputils_20190709-3.debian.tar.xz 13816 SHA256:34c3ec0b516db540a748f0934ba2ada6b8c99379941016b26a6fb065be70fb13
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iputils/3:20190709-3/
 
-- https://sources.debian.net/src/iputils/3:20190709-3/ (for browsing the source)
-- https://sources.debian.net/src/iputils/3:20190709-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iputils/3:20190709-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `isl=0.22.1-1`
 
@@ -2561,20 +2540,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxcrypt=1:4.4.16-1
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.16-1.dsc' libxcrypt_4.4.16-1.dsc 1463 SHA256:764d1087763b0098781e74a33071131cb01719b97635296184365fcac37f397b
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.16.orig.tar.xz' libxcrypt_4.4.16.orig.tar.xz 354788 SHA256:6a675b4ef1adde90b07ebc2f45eb9cd26702fbf87aa625d5aae9f68581d34fa6
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.16-1.debian.tar.xz' libxcrypt_4.4.16-1.debian.tar.xz 5484 SHA256:e1409ed7e800b98f62a13f8775db0a7a146d2d96a19b371bbfd3bbd73d05abb3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxcrypt/1:4.4.16-1/
 
-- https://sources.debian.net/src/libxcrypt/1:4.4.16-1/ (for browsing the source)
-- https://sources.debian.net/src/libxcrypt/1:4.4.16-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxcrypt/1:4.4.16-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxdmcp=1:1.1.2-3`
 
@@ -3078,20 +3050,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-nlme/copyright`)
 - `GPL`
 - `GPL `
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nlme=3.1.148-1
-'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.148-1.dsc' nlme_3.1.148-1.dsc 1837 SHA256:6fc36bc5ce7c2d915392477095e83e69d643094553daa9c0c39c9040b228b23b
-'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.148.orig.tar.gz' nlme_3.1.148.orig.tar.gz 792813 SHA256:77c23b644f09723addf16d31a3cb076aca95477418b6242f0c594d81f220aeb2
-'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.148-1.debian.tar.xz' nlme_3.1.148-1.debian.tar.xz 7100 SHA256:004e515227a50b1b7176989888a82388aa23c4669d8400f4a1d2d77f28a2d2cb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nlme/3.1.148-1/
 
-- https://sources.debian.net/src/nlme/3.1.148-1/ (for browsing the source)
-- https://sources.debian.net/src/nlme/3.1.148-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nlme/3.1.148-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openblas=0.3.10+ds-3`
 
