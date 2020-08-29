@@ -4360,14 +4360,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysofa0/copyright`)
 - `listen-ircam`
 - `mit-kemar`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libmysofa=0.6~dfsg0-2ubuntu0.18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/libm/libmysofa/libmysofa_0.6~dfsg0-2ubuntu0.18.04.1.dsc' libmysofa_0.6~dfsg0-2ubuntu0.18.04.1.dsc 2364 SHA256:dfb5f33203e163797b9cd92dbda2a51196d284277a0ab68a06b91fbe1f2f36e3
-'http://archive.ubuntu.com/ubuntu/pool/universe/libm/libmysofa/libmysofa_0.6~dfsg0.orig.tar.gz' libmysofa_0.6~dfsg0.orig.tar.gz 13540940 SHA256:0da589541f37e5d44b4d84b67e9b8aef84e890659a2b089d476f35937e1912dd
-'http://archive.ubuntu.com/ubuntu/pool/universe/libm/libmysofa/libmysofa_0.6~dfsg0-2ubuntu0.18.04.1.debian.tar.xz' libmysofa_0.6~dfsg0-2ubuntu0.18.04.1.debian.tar.xz 16304 SHA256:3ca879f18736ca1bb5260bb37889674a390b13416c18851ac310899a5b7c6759
-```
 
 ### `dpkg` source package: `libnet-dbus-perl=1.1.0-4build2`
 
@@ -6792,14 +6787,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.35-2ubuntu2.11
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35-2ubuntu2.11.dsc' nss_3.35-2ubuntu2.11.dsc 2354 SHA256:ee3f8fd4e7523953b3670c39cda737e79f7b90f9baf44b3e7395a8a93147a3a3
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35.orig.tar.gz' nss_3.35.orig.tar.gz 9620041 SHA256:f4127de09bede39f5fd0f789d33c3504c5d261e69ea03022d46b319b3e32f6fa
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35-2ubuntu2.11.debian.tar.xz' nss_3.35-2ubuntu2.11.debian.tar.xz 219992 SHA256:01bafee19a120b79a211de608fe70236b30583734f42343a40ed0897b643ae95
-```
 
 ### `dpkg` source package: `numactl=2.0.11-2.1ubuntu0.1`
 
