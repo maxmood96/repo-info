@@ -1764,14 +1764,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-fuel-tools4/copyright`)
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-fuel-tools4=4.1.0-1~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-fuel-tools4/ignition-fuel-tools4_4.1.0-1~focal.dsc' ignition-fuel-tools4_4.1.0-1~focal.dsc 1395 SHA256:0e9a423ea35b96896f3ee8a717276d27aeb01d820394e543a9e0160e57d3da84
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-fuel-tools4/ignition-fuel-tools4_4.1.0.orig.tar.bz2' ignition-fuel-tools4_4.1.0.orig.tar.bz2 348779 SHA256:81a82e472d59ccf852b7869f39ba70be2f1bf91e3ea95ef0503ca7ea55189d9c
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-fuel-tools4/ignition-fuel-tools4_4.1.0-1~focal.debian.tar.xz' ignition-fuel-tools4_4.1.0-1~focal.debian.tar.xz 1624 SHA256:e057f911e8ea9854fd34af9ccaf5e45fe2530c36b9441d0c60081585e78ffb5e
-```
 
 ### `dpkg` source package: `ignition-math6=6.4.0-1~focal`
 
@@ -1826,14 +1821,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-transport8/copyright`)
 - `Apache-2.0`
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-transport8=8.0.0-1~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-transport8/ignition-transport8_8.0.0-1~focal.dsc' ignition-transport8_8.0.0-1~focal.dsc 1769 SHA256:4c80f807e54935efa25310fdfc68d6d32b2c72eeac27f02260b13aee54f43556
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-transport8/ignition-transport8_8.0.0.orig.tar.bz2' ignition-transport8_8.0.0.orig.tar.bz2 438451 SHA256:d0963783c4db87fa71bacebd424c573331fed5d713d610b20b3552effe6d3ce3
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-transport8/ignition-transport8_8.0.0-1~focal.debian.tar.xz' ignition-transport8_8.0.0-1~focal.debian.tar.xz 2996 SHA256:2e8ca9cb6412e82f95307b1043ce951a851e62373a1b151dcb618a88d5eefd7e
-```
 
 ### `dpkg` source package: `ilmbase=2.3.0-6build1`
 
@@ -4749,14 +4739,9 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 - `Zlib`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.49.1-1ubuntu1.4
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.49.1-1ubuntu1.4.dsc' nss_3.49.1-1ubuntu1.4.dsc 2287 SHA256:59322a499b19c77cb6024c01b68fa525d5b0cc93e7a7b4d03d9fc507d1468f27
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.49.1.orig.tar.gz' nss_3.49.1.orig.tar.gz 76489134 SHA256:d9aa42e49e02bb0dc0a2f164604cfc718e11a2a06ddb266cd676376ac21b026e
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.49.1-1ubuntu1.4.debian.tar.xz' nss_3.49.1-1ubuntu1.4.debian.tar.xz 195500 SHA256:a95160b69d4d08c60af9fbabe683bd4879b3e0f3bddbced265aefb081690085d
-```
 
 ### `dpkg` source package: `numactl=2.0.12-1`
 
