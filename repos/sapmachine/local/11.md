@@ -1548,14 +1548,9 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 - `Zlib`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.49.1-1ubuntu1.4
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.49.1-1ubuntu1.4.dsc' nss_3.49.1-1ubuntu1.4.dsc 2287 SHA256:59322a499b19c77cb6024c01b68fa525d5b0cc93e7a7b4d03d9fc507d1468f27
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.49.1.orig.tar.gz' nss_3.49.1.orig.tar.gz 76489134 SHA256:d9aa42e49e02bb0dc0a2f164604cfc718e11a2a06ddb266cd676376ac21b026e
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.49.1-1ubuntu1.4.debian.tar.xz' nss_3.49.1-1ubuntu1.4.debian.tar.xz 195500 SHA256:a95160b69d4d08c60af9fbabe683bd4879b3e0f3bddbced265aefb081690085d
-```
 
 ### `dpkg` source package: `openldap=2.4.49+dfsg-2ubuntu1.3`
 
