@@ -1,7 +1,7 @@
 ## `yourls:fpm-alpine`
 
 ```console
-$ docker pull yourls@sha256:83c609597ef313da08d8f1884b693bd65c876a0c84121740ba781d329eb206f5
+$ docker pull yourls@sha256:dd7238fbfcd85e6ef12b5b1fdd1e043b697f59c09c8d91aa3481ea8e21f17fda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -482,14 +482,14 @@ CMD ["php-fpm"]
 ### `yourls:fpm-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull yourls@sha256:8ce9099b523c4f5bb56cac50d64421d9d4cb2e7827884d640e9c4315984cf286
+$ docker pull yourls@sha256:7fa20be714540fc14fbe415640eba6e1091892f805ca8e73a957af0961826fb8
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.2 MB (32238348 bytes)**  
+-	Total Size: **32.2 MB (32238349 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:af25e6c58d55252717a77a10b7616babe4bd1a4f72aaa1f7e49371f7b7c1df2b`
+-	Image ID: `sha256:56c90b14777e6f20e9ed43f544bbf591a7e8f29e8a594aee0e88fe5a102b60d7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -528,43 +528,43 @@ ENV PHP_SHA256=23733f4a608ad1bebdcecf0138ebc5fd57cf20d6e0915f98a9444c3f747dc57b 
 RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apk del --no-network .fetch-deps
 # Thu, 06 Aug 2020 19:14:42 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Thu, 06 Aug 2020 19:18:45 GMT
-RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		libedit-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		sqlite-dev 	; 		export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pear 				$(test "$gnuArch" = 's390x-linux-musl' && echo '--without-pcre-jit') 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 	php --version
-# Thu, 06 Aug 2020 19:19:00 GMT
+# Tue, 01 Sep 2020 04:30:14 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		libedit-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		sqlite-dev 	; 		export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pear 				$(test "$gnuArch" = 's390x-linux-musl' && echo '--without-pcre-jit') 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
+# Tue, 01 Sep 2020 04:30:28 GMT
 COPY multi:bd67471e0c4047be362a8a0e199558e6245207a6f70b72fdfe55aa2d2cae15e6 in /usr/local/bin/ 
-# Thu, 06 Aug 2020 19:19:25 GMT
+# Tue, 01 Sep 2020 04:30:51 GMT
 RUN docker-php-ext-enable sodium
-# Thu, 06 Aug 2020 19:19:32 GMT
+# Tue, 01 Sep 2020 04:30:57 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Thu, 06 Aug 2020 19:19:43 GMT
+# Tue, 01 Sep 2020 04:31:02 GMT
 WORKDIR /var/www/html
-# Thu, 06 Aug 2020 19:20:05 GMT
+# Tue, 01 Sep 2020 04:31:25 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Thu, 06 Aug 2020 19:20:14 GMT
+# Tue, 01 Sep 2020 04:31:33 GMT
 STOPSIGNAL SIGQUIT
-# Thu, 06 Aug 2020 19:20:17 GMT
+# Tue, 01 Sep 2020 04:31:42 GMT
 EXPOSE 9000
-# Thu, 06 Aug 2020 19:20:34 GMT
+# Tue, 01 Sep 2020 04:31:54 GMT
 CMD ["php-fpm"]
-# Fri, 07 Aug 2020 01:13:53 GMT
+# Tue, 01 Sep 2020 19:32:15 GMT
 RUN set -eux;     docker-php-ext-install -j "$(nproc)" opcache pdo_mysql mysqli
-# Fri, 07 Aug 2020 01:13:56 GMT
+# Tue, 01 Sep 2020 19:32:29 GMT
 RUN {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=60';         echo 'opcache.fast_shutdown=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Fri, 07 Aug 2020 01:13:58 GMT
+# Tue, 01 Sep 2020 19:32:32 GMT
 RUN apk add --no-cache bash
-# Fri, 07 Aug 2020 01:13:59 GMT
+# Tue, 01 Sep 2020 19:32:33 GMT
 ENV YOURLS_VERSION=1.7.9
-# Fri, 07 Aug 2020 01:14:00 GMT
+# Tue, 01 Sep 2020 19:32:38 GMT
 ENV YOURLS_SHA256=0d9106b2936289d2fe5d4d6c017a77f96c79f4b2cacf1b59a0837d0032ca96d7
-# Fri, 07 Aug 2020 01:14:04 GMT
+# Tue, 01 Sep 2020 19:32:40 GMT
 RUN set -eux;     curl -o yourls.tar.gz -fsSL "https://github.com/YOURLS/YOURLS/archive/${YOURLS_VERSION}.tar.gz";     echo "$YOURLS_SHA256 *yourls.tar.gz" | sha256sum -c -;     tar -xf yourls.tar.gz -C /usr/src/;     mv "/usr/src/YOURLS-${YOURLS_VERSION}" /usr/src/yourls;     rm yourls.tar.gz;     chown -R www-data:www-data /usr/src/yourls
-# Fri, 07 Aug 2020 01:14:05 GMT
+# Tue, 01 Sep 2020 19:32:43 GMT
 COPY file:faa5e93643253a8f7b19a0098e9286cc1914eaa7154c418de43e161d69f2f157 in /usr/local/bin/ 
-# Fri, 07 Aug 2020 01:14:06 GMT
+# Tue, 01 Sep 2020 19:32:48 GMT
 COPY file:3694b933d9d31fc65ed3f78f65289b778a21bf67c518d2cb89c6294ef1d41b60 in /usr/src/yourls/user/ 
-# Fri, 07 Aug 2020 01:14:07 GMT
+# Tue, 01 Sep 2020 19:32:52 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Aug 2020 01:14:07 GMT
+# Tue, 01 Sep 2020 19:32:57 GMT
 CMD ["php-fpm"]
 ```
 
@@ -593,45 +593,45 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 06 Aug 2020 23:30:00 GMT  
 		Size: 501.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc9c4c01464d733baeac7b02f7165bb7a80b891778c44d44fa9e8b92509a68c8`  
-		Last Modified: Thu, 06 Aug 2020 23:30:05 GMT  
-		Size: 14.4 MB (14449452 bytes)  
+	-	`sha256:6e595d7a2b9b239e58f1e45fd3130487c000cc2417c8b0deadfc0ac92da07c7a`  
+		Last Modified: Tue, 01 Sep 2020 07:05:56 GMT  
+		Size: 14.4 MB (14449459 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d910c4e5b2079ff0a7c003d43176bdb904421b184741c7fb2d541673f7d2ed89`  
-		Last Modified: Thu, 06 Aug 2020 23:30:01 GMT  
-		Size: 2.3 KB (2273 bytes)  
+	-	`sha256:af695fed2475f46e882e6c08d24ddd121fa4cb16e5a992cd282cb97c3201e1e4`  
+		Last Modified: Tue, 01 Sep 2020 07:05:51 GMT  
+		Size: 2.3 KB (2274 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3ad07a608f0051ef03707e2e504cccd418fa913770d9a3e16f88bf2f1407f71`  
-		Last Modified: Thu, 06 Aug 2020 23:30:01 GMT  
-		Size: 17.0 KB (17027 bytes)  
+	-	`sha256:a819651692773e2154c810c05326087959dd94b76e01c1d5fdd03ae7c1821e5b`  
+		Last Modified: Tue, 01 Sep 2020 07:05:52 GMT  
+		Size: 17.0 KB (17024 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6f30d59c34d52b0ea768cc2dd6b02a3fc45c0d95ecfcd2029e693550b6dc4fc`  
-		Last Modified: Thu, 06 Aug 2020 23:30:01 GMT  
-		Size: 8.4 KB (8447 bytes)  
+	-	`sha256:b04103ade4399705dd562fd7d3e1fe1f79b5f5e6c9250c86c23f6fdc5b134422`  
+		Last Modified: Tue, 01 Sep 2020 07:05:51 GMT  
+		Size: 8.4 KB (8446 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12bfbe9eec133cd7e39ccca5a5c5f0e09c02f2138b6a3b1b27a08e3861df3833`  
-		Last Modified: Fri, 07 Aug 2020 01:14:58 GMT  
-		Size: 340.9 KB (340917 bytes)  
+	-	`sha256:ab9b469cf4566c22cd73b2756eee52a17f8f802690479ef5640660529d9e87f8`  
+		Last Modified: Tue, 01 Sep 2020 19:33:55 GMT  
+		Size: 340.9 KB (340914 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54c5c94f817acee54221b7dc5dc83b0765a6a6168c66d7b0cbc033d536678916`  
-		Last Modified: Fri, 07 Aug 2020 01:14:57 GMT  
-		Size: 326.0 B  
+	-	`sha256:ee5f1172208101d7f5b80f7ca87aabe30af836c038e926a637ed508998298911`  
+		Last Modified: Tue, 01 Sep 2020 19:33:52 GMT  
+		Size: 327.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55bf4b86b515731483725d315727896f2397f21794f8a89839bc7ae6328bd437`  
-		Last Modified: Fri, 07 Aug 2020 01:14:56 GMT  
-		Size: 568.6 KB (568613 bytes)  
+	-	`sha256:df26cb8df295316cb90b95c1137699b7dc112678b5b3219dee6bc21d71350af8`  
+		Last Modified: Tue, 01 Sep 2020 19:33:52 GMT  
+		Size: 568.6 KB (568600 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c58452875f0d2019bc15bd4febf512d04c1db31158677c0ef42a58f8c23e9ba`  
-		Last Modified: Fri, 07 Aug 2020 01:14:57 GMT  
-		Size: 2.5 MB (2486819 bytes)  
+	-	`sha256:6e2a070852897642c085a2d55be70207d44814ed0e50c4a0a04c162422efe11c`  
+		Last Modified: Tue, 01 Sep 2020 19:33:56 GMT  
+		Size: 2.5 MB (2486826 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53e2eab6d4a13de12276c24a71e8c356a6949baa3c033dc07392476448c9d6f5`  
-		Last Modified: Fri, 07 Aug 2020 01:14:56 GMT  
-		Size: 1.2 KB (1180 bytes)  
+	-	`sha256:91975ecb4f3500cc041e5d8fd8e930222b0edce814a0cf5164dee07edd777cee`  
+		Last Modified: Tue, 01 Sep 2020 19:33:52 GMT  
+		Size: 1.2 KB (1184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f90cfe5a205e6209d38e354e8c04fcaf5ceaab3dc5228f237e0f9c4d2e9a5d61`  
-		Last Modified: Fri, 07 Aug 2020 01:14:57 GMT  
-		Size: 1.9 KB (1859 bytes)  
+	-	`sha256:97621bbb0ab928afbe354652af173c50fe7040adc916737d4e3c2c5503e3ca8c`  
+		Last Modified: Tue, 01 Sep 2020 19:33:52 GMT  
+		Size: 1.9 KB (1860 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `yourls:fpm-alpine` - linux; 386
