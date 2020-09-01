@@ -1,7 +1,7 @@
 ## `nextcloud:18-fpm-alpine`
 
 ```console
-$ docker pull nextcloud@sha256:2a8cc8b45a4380390252e9bb995c2debba815dbc7602eaf23a3e0badf4a392e3
+$ docker pull nextcloud@sha256:e06d843bd19271409aec17363af7b3c4372d71536164f4a7135e4f66139ff6e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -637,14 +637,14 @@ CMD ["php-fpm"]
 ### `nextcloud:18-fpm-alpine` - linux; 386
 
 ```console
-$ docker pull nextcloud@sha256:3f1def89c86392fe167f9acc59c46ce9750823f0108a7cfbbe01ecc4af51c6c3
+$ docker pull nextcloud@sha256:4e7c11fe2847a5780b82fea57f6a8e26fff7f51a9ef5d1213086c6bc3a47ee53
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **162.8 MB (162756011 bytes)**  
+-	Total Size: **162.8 MB (162756334 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc3332322cb74994b02f821af6f3291dfb266ae45aab75fbe48f6d90b472ad19`
+-	Image ID: `sha256:04e9c160d53668db9b9f51f9dbd075a6350d7455df8fb17a38a2730366f7dc36`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -715,11 +715,11 @@ ENV NEXTCLOUD_VERSION=18.0.8
 RUN set -ex;     apk add --no-cache --virtual .fetch-deps         bzip2         gnupg     ;         curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;     apk del .fetch-deps
 # Thu, 27 Aug 2020 22:41:40 GMT
 COPY multi:7396b0dc331ca301e37b57c4af539d58e09521ec7c723e0739e6eca71f90ffb3 in / 
-# Thu, 27 Aug 2020 22:41:41 GMT
-COPY multi:0f9299c697c03625557426785fb6ad8cae5e661ea8ceedf25eb083ff586c1e00 in /usr/src/nextcloud/config/ 
-# Thu, 27 Aug 2020 22:41:41 GMT
+# Tue, 01 Sep 2020 00:05:52 GMT
+COPY multi:49104d51f9709571730a3bfbafcf5771111950c152c987a28b39105186d06754 in /usr/src/nextcloud/config/ 
+# Tue, 01 Sep 2020 00:05:53 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 27 Aug 2020 22:41:41 GMT
+# Tue, 01 Sep 2020 00:05:53 GMT
 CMD ["php-fpm"]
 ```
 
@@ -784,9 +784,9 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 27 Aug 2020 22:46:40 GMT  
 		Size: 2.5 KB (2524 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:634d00a8abcc7fc8a19db71adea39581d9dd97facd459948e9cfd65ddb6d0ed3`  
-		Last Modified: Thu, 27 Aug 2020 22:46:40 GMT  
-		Size: 1.3 KB (1330 bytes)  
+	-	`sha256:127e2e37edfa3c1f4c8c0e16d96d400b043cc193abe24deb8f6519b9357829a0`  
+		Last Modified: Tue, 01 Sep 2020 00:09:27 GMT  
+		Size: 1.7 KB (1653 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:18-fpm-alpine` - linux; ppc64le
@@ -947,14 +947,14 @@ CMD ["php-fpm"]
 ### `nextcloud:18-fpm-alpine` - linux; s390x
 
 ```console
-$ docker pull nextcloud@sha256:28f9caf563f4d11919bb8efed8eadd2e4305bb8d6b570e6dbfb247f0f367ac5a
+$ docker pull nextcloud@sha256:01f5bd160d362236d6f8a58fe5431be5d9236b34aa6f09a0e4c163419917e491
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.8 MB (160815632 bytes)**  
+-	Total Size: **160.8 MB (160815953 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:816474676ac144fb86ec9c32e2bafd832bbb0b2541bb2d370a9d98adaacbe175`
+-	Image ID: `sha256:c326976828d5509cf76b3319cb5946017b050da88d2cb70e519a9966bb50faf2`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1025,11 +1025,11 @@ ENV NEXTCLOUD_VERSION=18.0.8
 RUN set -ex;     apk add --no-cache --virtual .fetch-deps         bzip2         gnupg     ;         curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;     apk del .fetch-deps
 # Thu, 27 Aug 2020 21:44:27 GMT
 COPY multi:7396b0dc331ca301e37b57c4af539d58e09521ec7c723e0739e6eca71f90ffb3 in / 
-# Thu, 27 Aug 2020 21:44:27 GMT
-COPY multi:0f9299c697c03625557426785fb6ad8cae5e661ea8ceedf25eb083ff586c1e00 in /usr/src/nextcloud/config/ 
-# Thu, 27 Aug 2020 21:44:27 GMT
+# Tue, 01 Sep 2020 00:06:12 GMT
+COPY multi:49104d51f9709571730a3bfbafcf5771111950c152c987a28b39105186d06754 in /usr/src/nextcloud/config/ 
+# Tue, 01 Sep 2020 00:06:12 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 27 Aug 2020 21:44:28 GMT
+# Tue, 01 Sep 2020 00:06:13 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1094,7 +1094,7 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 27 Aug 2020 21:48:51 GMT  
 		Size: 2.5 KB (2523 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f8a009c24558403bc92d8e7370ff4f9aa40ec2c66190a0062239c4285d7d210`  
-		Last Modified: Thu, 27 Aug 2020 21:48:51 GMT  
-		Size: 1.3 KB (1334 bytes)  
+	-	`sha256:d0fd4e2989300ec631749f2fe86b6ca7ff781c8578a7e9687fa4f02ddd85cf1b`  
+		Last Modified: Tue, 01 Sep 2020 00:12:39 GMT  
+		Size: 1.7 KB (1655 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
