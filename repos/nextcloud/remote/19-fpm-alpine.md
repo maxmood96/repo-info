@@ -1,7 +1,7 @@
 ## `nextcloud:19-fpm-alpine`
 
 ```console
-$ docker pull nextcloud@sha256:2b2f42ce5748cb94902dcf4b804cdb22f98902f26076815aa30541b3aad60fa1
+$ docker pull nextcloud@sha256:9574316fba9482a84bfbd5540066a03e0e47542a9faed43c67334529c5890eb9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -482,14 +482,14 @@ CMD ["php-fpm"]
 ### `nextcloud:19-fpm-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:5354840c53354b489893edb68ed42b6fcb114669e0c9cb6a6432b1d08f2c5326
+$ docker pull nextcloud@sha256:7371d445e460526291c6d65b4763411a5b2be05242123d980bb4ed2a893c7154
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **162.6 MB (162569959 bytes)**  
+-	Total Size: **162.6 MB (162570278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0c8bb36126a93830142cb74ba1917754acf53df6d776f030b4d576fc9c675c1f`
+-	Image ID: `sha256:6c60e5861ec1d68a044f242d6c5daa57ef493b50cfe29bc3b0e3610b0b8fb3c3`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -560,11 +560,11 @@ ENV NEXTCLOUD_VERSION=19.0.2
 RUN set -ex;     apk add --no-cache --virtual .fetch-deps         bzip2         gnupg     ;         curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;     apk del .fetch-deps
 # Thu, 27 Aug 2020 21:47:35 GMT
 COPY multi:7396b0dc331ca301e37b57c4af539d58e09521ec7c723e0739e6eca71f90ffb3 in / 
-# Thu, 27 Aug 2020 21:47:37 GMT
-COPY multi:0f9299c697c03625557426785fb6ad8cae5e661ea8ceedf25eb083ff586c1e00 in /usr/src/nextcloud/config/ 
-# Thu, 27 Aug 2020 21:47:38 GMT
+# Tue, 01 Sep 2020 03:34:17 GMT
+COPY multi:49104d51f9709571730a3bfbafcf5771111950c152c987a28b39105186d06754 in /usr/src/nextcloud/config/ 
+# Tue, 01 Sep 2020 03:34:27 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 27 Aug 2020 21:47:38 GMT
+# Tue, 01 Sep 2020 03:34:32 GMT
 CMD ["php-fpm"]
 ```
 
@@ -629,9 +629,9 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 27 Aug 2020 21:54:33 GMT  
 		Size: 2.5 KB (2523 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b64d9f9507cf2e95884008a62500c8a85963f24ee8481eb55f5cf8de2cab5139`  
-		Last Modified: Thu, 27 Aug 2020 21:54:33 GMT  
-		Size: 1.3 KB (1332 bytes)  
+	-	`sha256:bb145c63ed6fc52dabd5674227f84eef38d225bfff323fd27054c9561228daed`  
+		Last Modified: Tue, 01 Sep 2020 03:50:32 GMT  
+		Size: 1.7 KB (1651 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:19-fpm-alpine` - linux; 386
@@ -792,14 +792,14 @@ CMD ["php-fpm"]
 ### `nextcloud:19-fpm-alpine` - linux; ppc64le
 
 ```console
-$ docker pull nextcloud@sha256:fcc2cc1c40c20c1053ffbf7a0f0efec29d6d46fe5bd9b8789779216550f09cf2
+$ docker pull nextcloud@sha256:77e5a704c4b33ae962f74eb219c83405e6229c19522aad977da5635009d44f10
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.4 MB (164427200 bytes)**  
+-	Total Size: **164.4 MB (164427522 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6db3a7768af8775ce2151fe469cfd27db03ef29fd6f44506ceb38fb24bb860fb`
+-	Image ID: `sha256:878e6ee096540681612f5c6b907197b6c7ac5c7466c875306251bc3a27a1c245`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -870,11 +870,11 @@ ENV NEXTCLOUD_VERSION=19.0.2
 RUN set -ex;     apk add --no-cache --virtual .fetch-deps         bzip2         gnupg     ;         curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;     apk del .fetch-deps
 # Thu, 27 Aug 2020 22:53:33 GMT
 COPY multi:7396b0dc331ca301e37b57c4af539d58e09521ec7c723e0739e6eca71f90ffb3 in / 
-# Thu, 27 Aug 2020 22:53:37 GMT
-COPY multi:0f9299c697c03625557426785fb6ad8cae5e661ea8ceedf25eb083ff586c1e00 in /usr/src/nextcloud/config/ 
-# Thu, 27 Aug 2020 22:53:42 GMT
+# Tue, 01 Sep 2020 03:04:35 GMT
+COPY multi:49104d51f9709571730a3bfbafcf5771111950c152c987a28b39105186d06754 in /usr/src/nextcloud/config/ 
+# Tue, 01 Sep 2020 03:04:38 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 27 Aug 2020 22:53:48 GMT
+# Tue, 01 Sep 2020 03:04:43 GMT
 CMD ["php-fpm"]
 ```
 
@@ -939,9 +939,9 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 27 Aug 2020 23:30:47 GMT  
 		Size: 2.5 KB (2524 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7fca0ef7467b6b8a37c6fc4891c3ff28ba4ed717bd93cdd1d776889924be0af`  
-		Last Modified: Thu, 27 Aug 2020 23:30:47 GMT  
-		Size: 1.3 KB (1331 bytes)  
+	-	`sha256:6941265c32d224d228b3ab15ffa1284726c3b252dc0a191abcb5b1e0c9eec00b`  
+		Last Modified: Tue, 01 Sep 2020 03:24:28 GMT  
+		Size: 1.7 KB (1653 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:19-fpm-alpine` - linux; s390x
