@@ -525,13 +525,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.20.5ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.20.5ubuntu1.dsc' dpkg_1.20.5ubuntu1.dsc 2260 SHA256:32cc43155846b03a037b407bbb94d68d9643bb8f793a55a78fb40797d40de84f
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.20.5ubuntu1.tar.xz' dpkg_1.20.5ubuntu1.tar.xz 4743268 SHA256:472dcb374e01b2428d6f4bfed6df4b26a4ca9f2c8355df23cf69876f59b59b17
-```
 
 ### `dpkg` source package: `dulwich=0.19.15-1build1`
 
@@ -1707,14 +1703,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.50+dfsg-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.50+dfsg-1ubuntu3.dsc' openldap_2.4.50+dfsg-1ubuntu3.dsc 3154 SHA256:7be737e116edc37ba62cae4d1495ff248122696975fd4345d32b481176956ea5
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.50+dfsg.orig.tar.gz' openldap_2.4.50+dfsg.orig.tar.gz 4891077 SHA256:77e5be35661d2fb51c4425fc5985c668fa0e53cbc83a6c0962470fd240fd7655
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.50+dfsg-1ubuntu3.debian.tar.xz' openldap_2.4.50+dfsg-1ubuntu3.debian.tar.xz 181168 SHA256:630db2fc804a4fba21098a6245d4a6ab566747224345d265dbf7c5903d0e47df
-```
 
 ### `dpkg` source package: `openssh=1:8.3p1-1`
 
@@ -2252,15 +2243,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `Unicode`
 - `Utfwidth`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.14.0-1
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.0-1.dsc' subversion_1.14.0-1.dsc 3807 SHA256:efb177ab8d566c8dadd01919cb114264961d84e9f0c7ea24a78234ff1f267ea5
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.0.orig.tar.gz' subversion_1.14.0.orig.tar.gz 11519871 SHA256:ef3d1147535e41874c304fb5b9ea32745fbf5d7faecf2ce21d4115b567e937d0
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.0.orig.tar.gz.asc' subversion_1.14.0.orig.tar.gz.asc 3917 SHA256:98333df38d29a64500d4ad1693741d3d087485555207289b4e53af309abac71a
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.0-1.debian.tar.xz' subversion_1.14.0-1.debian.tar.xz 426604 SHA256:2df3c0e9ad9f8ef33d5d3c2ffc19c89b5d0cb8850c526842baa356ca85ac3e3c
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/subversion/1.14.0-1/
+
 
 ### `dpkg` source package: `systemd=245.7-1ubuntu1`
 

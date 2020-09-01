@@ -2644,9 +2644,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=4.15.0-112.113
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-112.113.dsc' linux_4.15.0-112.113.dsc 7370 SHA256:0fb208539f1ec8af7aac7c4c1b845b8fd74b09f6ecabf92bfbe5f602fbacc055
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-112.113.diff.gz' linux_4.15.0-112.113.diff.gz 9942466 SHA256:2c3e75b6ab5ecb2176443c416b8462b20c088a48ff61cdfb43f9e3370547d5d0
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-112.113.dsc' linux_4.15.0-112.113.dsc 7370 SHA256:0fb208539f1ec8af7aac7c4c1b845b8fd74b09f6ecabf92bfbe5f602fbacc055
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA256:c33b8ba5c45a40b689979caa2421c4d933864cd70eb93c00eb69adf43e9a24fc
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-112.113.diff.gz' linux_4.15.0-112.113.diff.gz 9942466 SHA256:2c3e75b6ab5ecb2176443c416b8462b20c088a48ff61cdfb43f9e3370547d5d0
 ```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
