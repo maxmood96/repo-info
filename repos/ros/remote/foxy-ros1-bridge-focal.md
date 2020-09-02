@@ -1,7 +1,7 @@
 ## `ros:foxy-ros1-bridge-focal`
 
 ```console
-$ docker pull ros@sha256:1d86df0fcf1af169102321961a9615b3370159c7ab6a7077a5ff85f66b02ae55
+$ docker pull ros@sha256:b6ccae39b83147345af656d84ef36fbaf6682381290fced8d6618486b5219f2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull ros@sha256:1d86df0fcf1af169102321961a9615b3370159c7ab6a7077a5ff85f
 ### `ros:foxy-ros1-bridge-focal` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:b57c323d5c80c5ca2dbbb4b75ec9d10fd136d728c41fe5f398431cdea26203f6
+$ docker pull ros@sha256:0fdc0a6fa5c68f7d3536826e230284fa30d6e46bfe2cdea3f7e5287733e740d6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **411.1 MB (411133652 bytes)**  
+-	Total Size: **333.8 MB (333757985 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9500c2a3e327f85f964259f261272827eef2f73a5be6a81006f8449715f70a8`
+-	Image ID: `sha256:7f543a44ab3bac72994ab8f3805e7b16444ad150317b1033c635ed47c22644f2`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -72,11 +72,11 @@ RUN echo "deb http://packages.ros.org/ros/ubuntu focal main" > /etc/apt/sources.
 ENV ROS1_DISTRO=noetic
 # Thu, 20 Aug 2020 00:32:16 GMT
 ENV ROS2_DISTRO=foxy
-# Thu, 20 Aug 2020 00:32:43 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-noetic-ros-comm=1.15.8-1*     ros-noetic-roscpp-tutorials=0.10.1-1*     ros-noetic-rospy-tutorials=0.10.1-1*     && rm -rf /var/lib/apt/lists/*
-# Thu, 20 Aug 2020 00:33:13 GMT
+# Tue, 01 Sep 2020 23:56:34 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-noetic-ros-comm=1.15.8-1*     ros-noetic-roscpp-tutorials=0.10.2-1*     ros-noetic-rospy-tutorials=0.10.2-1*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 Sep 2020 23:57:06 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-foxy-ros1-bridge=0.9.3-1*     ros-foxy-demo-nodes-cpp=0.9.3-1*     ros-foxy-demo-nodes-py=0.9.3-1*     && rm -rf /var/lib/apt/lists/*
-# Thu, 20 Aug 2020 00:33:14 GMT
+# Tue, 01 Sep 2020 23:57:07 GMT
 COPY file:f2fca591c0e2a31379c7ea28a9948ef5ee9d4a95b4831016253c1ef1a4f39718 in / 
 ```
 
@@ -145,16 +145,16 @@ COPY file:f2fca591c0e2a31379c7ea28a9948ef5ee9d4a95b4831016253c1ef1a4f39718 in /
 		Last Modified: Thu, 20 Aug 2020 00:49:15 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c74c531a1356cb5382940de26cc5a05e722d78b5cd0a91673fd39eb0f268e1cf`  
-		Last Modified: Thu, 20 Aug 2020 00:49:41 GMT  
-		Size: 76.1 MB (76092970 bytes)  
+	-	`sha256:173d4c3ca3f37769f4de65a7bf043acfbec125fefbb2073909c8c7ae84d93e3c`  
+		Last Modified: Tue, 01 Sep 2020 23:59:45 GMT  
+		Size: 76.1 MB (76091425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:911cd03633080b4418a170851f917fd7662c7393271aacbf78d60686c7bd09d4`  
-		Last Modified: Thu, 20 Aug 2020 00:49:40 GMT  
-		Size: 103.3 MB (103349513 bytes)  
+	-	`sha256:399574d845ddc97e8ca9980bfc11fd71c4afab9bfcf6975035880fee1fcb461b`  
+		Last Modified: Tue, 01 Sep 2020 23:59:34 GMT  
+		Size: 26.0 MB (25975391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41e4ba1b70ff4d6144c063d7eed7ff926cf5e507a65a10b7dd14175d54cd40f4`  
-		Last Modified: Thu, 20 Aug 2020 00:49:14 GMT  
+	-	`sha256:b3f38b4f6748dd211a26898a80b92399443cdfd3d5b45c8261df48ca75c0771f`  
+		Last Modified: Tue, 01 Sep 2020 23:59:28 GMT  
 		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 

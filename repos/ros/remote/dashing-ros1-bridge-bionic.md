@@ -1,7 +1,7 @@
 ## `ros:dashing-ros1-bridge-bionic`
 
 ```console
-$ docker pull ros@sha256:6c8f12f4f928fd4a8d152dd6bd33b51e7fbf1eaae6748ce055c0fc1dfc7f4833
+$ docker pull ros@sha256:82ae0d5c0e697982dce8fac49934ee864afa9f887fcd582db4f84db454ce5a7d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,14 +13,14 @@ $ docker pull ros@sha256:6c8f12f4f928fd4a8d152dd6bd33b51e7fbf1eaae6748ce055c0fc1
 ### `ros:dashing-ros1-bridge-bionic` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:92e73b6a37935b8ec12a45a1e581c3ac4077183814778f41ce036e7a2c7c06e1
+$ docker pull ros@sha256:ae86dfef6e87fb1ece5ee271282fa61c32f5efbe99afefc280fdce90044d3009
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **418.5 MB (418519882 bytes)**  
+-	Total Size: **418.5 MB (418522528 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba950d441eda6f6ebb78eb1896292895ddccfd836f83b4dc4d24e65d0d0e619f`
+-	Image ID: `sha256:28c1e4004ad9706dde9126086a2890285fcedbc7f149c339051582a9072c5d76`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -73,13 +73,13 @@ RUN echo "deb http://packages.ros.org/ros/ubuntu bionic main" > /etc/apt/sources
 ENV ROS1_DISTRO=melodic
 # Thu, 20 Aug 2020 00:24:36 GMT
 ENV ROS2_DISTRO=dashing
-# Thu, 20 Aug 2020 00:26:24 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-melodic-ros-comm=1.14.7-1*     ros-melodic-roscpp-tutorials=0.9.2-1*     ros-melodic-rospy-tutorials=0.9.2-1*     && rm -rf /var/lib/apt/lists/*
-# Thu, 20 Aug 2020 00:26:36 GMT
+# Tue, 01 Sep 2020 23:53:23 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-melodic-ros-comm=1.14.9-1*     ros-melodic-roscpp-tutorials=0.9.3-1*     ros-melodic-rospy-tutorials=0.9.3-1*     && rm -rf /var/lib/apt/lists/*
+# Tue, 01 Sep 2020 23:53:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-dashing-ros1-bridge=0.7.6-1*     ros-dashing-demo-nodes-cpp=0.7.9-1*     ros-dashing-demo-nodes-py=0.7.9-1*     && rm -rf /var/lib/apt/lists/*
-# Thu, 20 Aug 2020 00:26:42 GMT
+# Tue, 01 Sep 2020 23:53:41 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     python-rosdep     && rm -rf /var/lib/apt/lists/*
-# Thu, 20 Aug 2020 00:26:42 GMT
+# Tue, 01 Sep 2020 23:53:42 GMT
 COPY file:f2fca591c0e2a31379c7ea28a9948ef5ee9d4a95b4831016253c1ef1a4f39718 in / 
 ```
 
@@ -148,20 +148,20 @@ COPY file:f2fca591c0e2a31379c7ea28a9948ef5ee9d4a95b4831016253c1ef1a4f39718 in /
 		Last Modified: Thu, 20 Aug 2020 00:46:13 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b160456add15a5b8933d4e3b0e669a75e8b17677129c9214ca52df97de85392d`  
-		Last Modified: Thu, 20 Aug 2020 00:46:41 GMT  
-		Size: 117.6 MB (117647014 bytes)  
+	-	`sha256:d374a93a132ca9224b8e5a947c6e0e46abc326808c5433e5f8a131a29413f8ee`  
+		Last Modified: Tue, 01 Sep 2020 23:58:57 GMT  
+		Size: 117.6 MB (117639357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:711c05bb886767007c4972060d9309020087e77559b1701b6e3018b556818ba9`  
-		Last Modified: Thu, 20 Aug 2020 00:46:19 GMT  
-		Size: 19.8 MB (19776804 bytes)  
+	-	`sha256:4ab4052b3383a0736b128f50241650dab5bbecb901c91219a2373cf20d97b5fc`  
+		Last Modified: Tue, 01 Sep 2020 23:58:41 GMT  
+		Size: 19.8 MB (19787046 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a98ca77d3cc1cee5c09c825ae6dec468a9eda8024fa14f51d8f1fc679c0c994`  
-		Last Modified: Thu, 20 Aug 2020 00:46:12 GMT  
-		Size: 638.4 KB (638372 bytes)  
+	-	`sha256:092b98d2f793a1c45bbd2d9e44bb8ffaba11b3d705bbf6c4365ee526dd256400`  
+		Last Modified: Tue, 01 Sep 2020 23:58:35 GMT  
+		Size: 638.4 KB (638433 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e71955c83951500bc1adac83e1c75775de907ef39df71fe435f820b43511f960`  
-		Last Modified: Thu, 20 Aug 2020 00:46:12 GMT  
+	-	`sha256:c825653f7ae48a630c0a4759851304a5f2710febb1514ee2a788fa1e01920233`  
+		Last Modified: Tue, 01 Sep 2020 23:58:35 GMT  
 		Size: 244.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
