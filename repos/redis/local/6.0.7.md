@@ -1,10 +1,10 @@
-# `redis:6.0.6`
+# `redis:6.0.7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1319b1eaa0b7bcebae63af321fa67559b9517e8494060403d083bb3508fe52c8`
-- Created: `2020-08-05T06:36:50.735924115Z`
-- Virtual Size: ~ 104.16 Mb  
+- Image ID: `sha256:41de2cc0b30e9fa4fcdda7c8e458dc7619c1b8a81a3501c62e0dccd2b559fafd`
+- Created: `2020-09-02T00:01:33.247119659Z`
+- Virtual Size: ~ 104.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.12`
-  - `REDIS_VERSION=6.0.6`
-  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.6.tar.gz`
-  - `REDIS_DOWNLOAD_SHA=12ad49b163af5ef39466e8d2f7d212a58172116e5b441eebecb4e6ca22363d94`
+  - `REDIS_VERSION=6.0.7`
+  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.0.7.tar.gz`
+  - `REDIS_DOWNLOAD_SHA=c2aaa1a4c7e72c70adedf976fdd5e1d34d395989283dab9d7840e0a304bb2393`
 
 ## `dpkg` (`.deb`-based packages)
 
