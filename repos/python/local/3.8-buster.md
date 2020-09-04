@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:79cc46abd78d048923350e8fb4af6cd47177d36606f8834a8e770b7eaf7e4452`
-- Created: `2020-08-11T20:36:46.09472416Z`
-- Virtual Size: ~ 881.76 Mb  
+- Image ID: `sha256:a7cda474cef4f5cbc00c8f72b1a1eda717c425fa3994fb90997b0216fc21598c`
+- Created: `2020-09-01T18:45:20.742616008Z`
+- Virtual Size: ~ 881.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
@@ -4096,12 +4096,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/numactl/2.0.12-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/numactl/2.0.12-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openexr=2.2.1-4.1`
+### `dpkg` source package: `openexr=2.2.1-4.1+deb10u1`
 
 Binary Packages:
 
-- `libopenexr-dev=2.2.1-4.1`
-- `libopenexr23:amd64=2.2.1-4.1`
+- `libopenexr-dev=2.2.1-4.1+deb10u1`
+- `libopenexr23:amd64=2.2.1-4.1+deb10u1`
 
 Licenses: (parsed from: `/usr/share/doc/libopenexr-dev/copyright`, `/usr/share/doc/libopenexr23/copyright`)
 
@@ -4110,17 +4110,17 @@ Licenses: (parsed from: `/usr/share/doc/libopenexr-dev/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openexr=2.2.1-4.1
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.2.1-4.1.dsc' openexr_2.2.1-4.1.dsc 2270 SHA256:52ad0ebb9b1ab827c9c35f3ae971a604e4852b77494c210eb036e2c8bf2c7aaa
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.2.1.orig.tar.gz' openexr_2.2.1.orig.tar.gz 18176639 SHA256:8f9a5af6131583404261931d9a5c83de0a425cb4b8b25ddab2b169fbf113aecd
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.2.1-4.1.debian.tar.xz' openexr_2.2.1-4.1.debian.tar.xz 17976 SHA256:a1bff86eef1f812acfcc5300aeeced664eeb214e536b7eb6797da227229a245f
+$ apt-get source -qq --print-uris openexr=2.2.1-4.1+deb10u1
+'http://security.debian.org/debian-security/pool/updates/main/o/openexr/openexr_2.2.1-4.1+deb10u1.dsc' openexr_2.2.1-4.1+deb10u1.dsc 2302 SHA256:bf813e2e7c6baedd9068c02301511b2d05f14e511c18db827b16eca6bd7d9478
+'http://security.debian.org/debian-security/pool/updates/main/o/openexr/openexr_2.2.1.orig.tar.gz' openexr_2.2.1.orig.tar.gz 18176639 SHA256:8f9a5af6131583404261931d9a5c83de0a425cb4b8b25ddab2b169fbf113aecd
+'http://security.debian.org/debian-security/pool/updates/main/o/openexr/openexr_2.2.1-4.1+deb10u1.debian.tar.xz' openexr_2.2.1-4.1+deb10u1.debian.tar.xz 27212 SHA256:c991df0bf7582a9ce9ddf2294793c68e1b2f381d1bcc429eb8bfb914161dc47a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openexr/2.2.1-4.1/ (for browsing the source)
-- https://sources.debian.net/src/openexr/2.2.1-4.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openexr/2.2.1-4.1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openexr/2.2.1-4.1+deb10u1/ (for browsing the source)
+- https://sources.debian.net/src/openexr/2.2.1-4.1+deb10u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openexr/2.2.1-4.1+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjpeg2=2.3.0-2+deb10u1`
 
