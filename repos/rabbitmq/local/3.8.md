@@ -1,10 +1,10 @@
-# `rabbitmq:3.8.7`
+# `rabbitmq:3.8.8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7c275a273df8b9363e613a3dc2ac5874725550adafae490448cad8d09dfbe1aa`
-- Created: `2020-08-27T18:24:14.562353319Z`
-- Virtual Size: ~ 156.17 Mb  
+- Image ID: `sha256:ea2a13ef38ba0c19a251fcd9330dd41c4a64ba974de86e389fcc33f215307ea3`
+- Created: `2020-09-04T19:27:55.078682189Z`
+- Virtual Size: ~ 156.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `OTP_VERSION=23.0.3`
   - `OTP_SOURCE_SHA256=ed3c25742a2b76407dbb83d40cb95211caad5ab0969681f585a674e2e54840ac`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
-  - `RABBITMQ_VERSION=3.8.7`
+  - `RABBITMQ_VERSION=3.8.8`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
   - `RABBITMQ_HOME=/opt/rabbitmq`
   - `RABBITMQ_LOGS=-`
@@ -138,13 +138,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=10.1ubuntu2.9
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.9.dsc' base-files_10.1ubuntu2.9.dsc 1275 SHA256:d7b2f1c250b358ad4aa76bc6f5f4c681684898b9bdff7208c48ebdb45d4bd927
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.9.tar.xz' base-files_10.1ubuntu2.9.tar.xz 78380 SHA256:42983195aad6985b1914cca55b29812e7358705ec30548e4444130f2c6341697
-```
 
 ### `dpkg` source package: `base-passwd=3.5.44`
 
