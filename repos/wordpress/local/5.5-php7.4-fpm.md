@@ -1,10 +1,10 @@
-# `wordpress:5.5.0-fpm`
+# `wordpress:5.5.1-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d42fc095a3598d4716edee33d0e6328f871a0ff34ba7ddcb1707fa3e56911451`
-- Created: `2020-08-12T19:24:09.925996444Z`
-- Virtual Size: ~ 536.88 Mb  
+- Image ID: `sha256:b80ede99e30bdf75ef8590c46389023da2e4e1d12e879f6f6ac354e7235221cf`
+- Created: `2020-09-04T01:08:19.303813156Z`
+- Virtual Size: ~ 536.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -18,13 +18,13 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.9`
-  - `PHP_URL=https://www.php.net/distributions/php-7.4.9.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.9.tar.xz.asc`
-  - `PHP_SHA256=23733f4a608ad1bebdcecf0138ebc5fd57cf20d6e0915f98a9444c3f747dc57b`
+  - `PHP_VERSION=7.4.10`
+  - `PHP_URL=https://www.php.net/distributions/php-7.4.10.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.10.tar.xz.asc`
+  - `PHP_SHA256=c2d90b00b14284588a787b100dee54c2400e7db995b457864d66f00ad64fb010`
   - `PHP_MD5=`
-  - `WORDPRESS_VERSION=5.5`
-  - `WORDPRESS_SHA1=03fe1a139b3cd987cc588ba95fab2460cba2a89e`
+  - `WORDPRESS_VERSION=5.5.1`
+  - `WORDPRESS_SHA1=d3316a4ffff2a12cf92fde8bfdd1ff8691e41931`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1106,13 +1106,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.18.1-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.18.1-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ghostscript=9.27~dfsg-2+deb10u3`
+### `dpkg` source package: `ghostscript=9.27~dfsg-2+deb10u4`
 
 Binary Packages:
 
-- `ghostscript=9.27~dfsg-2+deb10u3`
-- `libgs9:amd64=9.27~dfsg-2+deb10u3`
-- `libgs9-common=9.27~dfsg-2+deb10u3`
+- `ghostscript=9.27~dfsg-2+deb10u4`
+- `libgs9:amd64=9.27~dfsg-2+deb10u4`
+- `libgs9-common=9.27~dfsg-2+deb10u4`
 
 Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/libgs9/copyright`, `/usr/share/doc/libgs9-common/copyright`)
 
@@ -1145,17 +1145,17 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ghostscript=9.27~dfsg-2+deb10u3
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_9.27~dfsg-2+deb10u3.dsc' ghostscript_9.27~dfsg-2+deb10u3.dsc 2950 SHA256:ef2614644c327c2b263145161ea713c86cf0df67b3617c336eb6bb89a6282184
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_9.27~dfsg.orig.tar.xz' ghostscript_9.27~dfsg.orig.tar.xz 17723588 SHA256:b90d2117e93c63d774a5ab0a4d6a19c5dcbfd877462ee39a405262948e23ff9b
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_9.27~dfsg-2+deb10u3.debian.tar.xz' ghostscript_9.27~dfsg-2+deb10u3.debian.tar.xz 113724 SHA256:23865ead29e57764e1aed005cf83ec3fdb68b7492d589dbd0eb9e54e1ea80a4b
+$ apt-get source -qq --print-uris ghostscript=9.27~dfsg-2+deb10u4
+'http://security.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_9.27~dfsg-2+deb10u4.dsc' ghostscript_9.27~dfsg-2+deb10u4.dsc 2795 SHA256:b787519674b83e21473218d5889b8e84f6b590483a7b43e3dcac4698ef2d2660
+'http://security.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_9.27~dfsg.orig.tar.xz' ghostscript_9.27~dfsg.orig.tar.xz 17723588 SHA256:b90d2117e93c63d774a5ab0a4d6a19c5dcbfd877462ee39a405262948e23ff9b
+'http://security.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_9.27~dfsg-2+deb10u4.debian.tar.xz' ghostscript_9.27~dfsg-2+deb10u4.debian.tar.xz 124824 SHA256:f9c6d314ade320d6c69dddea99426c90136f90651b4d4bc673f45287f5146e70
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ghostscript/9.27~dfsg-2+deb10u3/ (for browsing the source)
-- https://sources.debian.net/src/ghostscript/9.27~dfsg-2+deb10u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ghostscript/9.27~dfsg-2+deb10u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ghostscript/9.27~dfsg-2+deb10u4/ (for browsing the source)
+- https://sources.debian.net/src/ghostscript/9.27~dfsg-2+deb10u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ghostscript/9.27~dfsg-2+deb10u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.58.3-2+deb10u2`
 

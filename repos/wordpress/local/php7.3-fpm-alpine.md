@@ -1,10 +1,10 @@
-# `wordpress:5.5.0-php7.3-fpm-alpine`
+# `wordpress:5.5.1-php7.3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:252b70a48e6c53935236f5fc1e1bb435836539c32fcd31a543c4a49961de27ea`
-- Created: `2020-08-12T19:23:40.246217902Z`
-- Virtual Size: ~ 232.70 Mb  
+- Image ID: `sha256:6613b41e6ac9cd18f92c6ad004abbe63b5cb15b510199f4a59b4b06ed78f57f2`
+- Created: `2020-09-04T01:04:35.650086824Z`
+- Virtual Size: ~ 232.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -18,13 +18,13 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.21`
-  - `PHP_URL=https://www.php.net/distributions/php-7.3.21.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.21.tar.xz.asc`
-  - `PHP_SHA256=4c8b065746ef776d84b7ae47908c21a79e3d4704b86b60d816716b8697c58ce9`
+  - `PHP_VERSION=7.3.22`
+  - `PHP_URL=https://www.php.net/distributions/php-7.3.22.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.22.tar.xz.asc`
+  - `PHP_SHA256=0e66606d3bdab5c2ae3f778136bfe8788e574913a3d8138695e54d98562f1fb5`
   - `PHP_MD5=`
-  - `WORDPRESS_VERSION=5.5`
-  - `WORDPRESS_SHA1=03fe1a139b3cd987cc588ba95fab2460cba2a89e`
+  - `WORDPRESS_VERSION=5.5.1`
+  - `WORDPRESS_SHA1=d3316a4ffff2a12cf92fde8bfdd1ff8691e41931`
 
 ## `apk` (`.apk`-based packages)
 
@@ -388,16 +388,16 @@ AGPL-3.0-or-later
 ### `apk` package: `glib`
 
 ```console
-glib-2.64.4-r0 description:
+glib-2.64.5-r0 description:
 Common C routines used by Gtk+ and other libs
 
-glib-2.64.4-r0 webpage:
+glib-2.64.5-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.64.4-r0 installed size:
+glib-2.64.5-r0 installed size:
 3366912
 
-glib-2.64.4-r0 license:
+glib-2.64.5-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -983,16 +983,16 @@ BSD-3-Clause
 ### `apk` package: `libx11`
 
 ```console
-libx11-1.6.11-r0 description:
+libx11-1.6.12-r0 description:
 X11 client-side library
 
-libx11-1.6.11-r0 webpage:
+libx11-1.6.12-r0 webpage:
 http://xorg.freedesktop.org/
 
-libx11-1.6.11-r0 installed size:
+libx11-1.6.12-r0 installed size:
 3391488
 
-libx11-1.6.11-r0 license:
+libx11-1.6.12-r0 license:
 custom:XFREE86
 
 ```

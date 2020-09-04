@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cc1a71e842bb0591fb006d0a8ed80e8794e66118a0264d73d683cdef7a21f9d4`
-- Created: `2020-08-07T03:01:24.135431409Z`
+- Image ID: `sha256:b4de0a83d164ff40c511fcd88bf526bd55b68270cc504a309549e6585eebe9d6`
+- Created: `2020-09-01T22:51:46.186623253Z`
 - Virtual Size: ~ 131.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -575,16 +575,16 @@ GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
 ### `apk` package: `libx11`
 
 ```console
-libx11-1.6.11-r0 description:
+libx11-1.6.12-r0 description:
 X11 client-side library
 
-libx11-1.6.11-r0 webpage:
+libx11-1.6.12-r0 webpage:
 http://xorg.freedesktop.org/
 
-libx11-1.6.11-r0 installed size:
+libx11-1.6.12-r0 installed size:
 3391488
 
-libx11-1.6.11-r0 license:
+libx11-1.6.12-r0 license:
 custom:XFREE86
 
 ```

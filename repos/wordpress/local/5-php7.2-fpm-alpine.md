@@ -1,10 +1,10 @@
-# `wordpress:5.5.0-php7.2-fpm-alpine`
+# `wordpress:5.5.1-php7.2-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5b2f1d0ac33e6612d977520c61eefd2dd01764677dbb9afec2aae0c2b700ef05`
-- Created: `2020-08-12T19:22:58.264047891Z`
-- Virtual Size: ~ 232.31 Mb  
+- Image ID: `sha256:6153b8c7536cada7480ca0f51a0d95a5d0b57e81f3d07482d4afff4c04c3ad54`
+- Created: `2020-09-02T18:22:37.562334203Z`
+- Virtual Size: ~ 232.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -23,8 +23,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-7.2.33.tar.xz.asc`
   - `PHP_SHA256=0f160a3483ffce36be5962fab7bcf09d605ee66c5707df83e4195cb796bbb03a`
   - `PHP_MD5=`
-  - `WORDPRESS_VERSION=5.5`
-  - `WORDPRESS_SHA1=03fe1a139b3cd987cc588ba95fab2460cba2a89e`
+  - `WORDPRESS_VERSION=5.5.1`
+  - `WORDPRESS_SHA1=d3316a4ffff2a12cf92fde8bfdd1ff8691e41931`
 
 ## `apk` (`.apk`-based packages)
 
@@ -388,16 +388,16 @@ AGPL-3.0-or-later
 ### `apk` package: `glib`
 
 ```console
-glib-2.64.4-r0 description:
+glib-2.64.5-r0 description:
 Common C routines used by Gtk+ and other libs
 
-glib-2.64.4-r0 webpage:
+glib-2.64.5-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.64.4-r0 installed size:
+glib-2.64.5-r0 installed size:
 3366912
 
-glib-2.64.4-r0 license:
+glib-2.64.5-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -983,16 +983,16 @@ BSD-3-Clause
 ### `apk` package: `libx11`
 
 ```console
-libx11-1.6.11-r0 description:
+libx11-1.6.12-r0 description:
 X11 client-side library
 
-libx11-1.6.11-r0 webpage:
+libx11-1.6.12-r0 webpage:
 http://xorg.freedesktop.org/
 
-libx11-1.6.11-r0 installed size:
+libx11-1.6.12-r0 installed size:
 3391488
 
-libx11-1.6.11-r0 license:
+libx11-1.6.12-r0 license:
 custom:XFREE86
 
 ```

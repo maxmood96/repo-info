@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:18a3d19f13b0cbc083e64f99dc30d3af61ff4b650249cdc30be5223f11e799b9`
-- Created: `2020-08-07T03:02:34.227779237Z`
-- Virtual Size: ~ 131.85 Mb  
+- Image ID: `sha256:1e4bf57613e8a814935c76adcbb14445ce1cba827bd5def6f22a6cb6b0888dfe`
+- Created: `2020-09-04T01:11:00.115006026Z`
+- Virtual Size: ~ 131.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.21`
-  - `PHP_URL=https://www.php.net/distributions/php-7.3.21.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.21.tar.xz.asc`
-  - `PHP_SHA256=4c8b065746ef776d84b7ae47908c21a79e3d4704b86b60d816716b8697c58ce9`
+  - `PHP_VERSION=7.3.22`
+  - `PHP_URL=https://www.php.net/distributions/php-7.3.22.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.22.tar.xz.asc`
+  - `PHP_SHA256=0e66606d3bdab5c2ae3f778136bfe8788e574913a3d8138695e54d98562f1fb5`
   - `PHP_MD5=`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.4.0`
@@ -575,16 +575,16 @@ GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
 ### `apk` package: `libx11`
 
 ```console
-libx11-1.6.11-r0 description:
+libx11-1.6.12-r0 description:
 X11 client-side library
 
-libx11-1.6.11-r0 webpage:
+libx11-1.6.12-r0 webpage:
 http://xorg.freedesktop.org/
 
-libx11-1.6.11-r0 installed size:
+libx11-1.6.12-r0 installed size:
 3391488
 
-libx11-1.6.11-r0 license:
+libx11-1.6.12-r0 license:
 custom:XFREE86
 
 ```
