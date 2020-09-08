@@ -988,14 +988,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-10/copyright`, `/usr/share/doc/g++-1
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-10=10.2.0-5ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.2.0-5ubuntu2.dsc' gcc-10_10.2.0-5ubuntu2.dsc 30426 SHA256:c0497cd654a993b6e4ead66239235c71cf6ff27534ad1b9026591d119e110472
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.2.0.orig.tar.gz' gcc-10_10.2.0.orig.tar.gz 94773960 SHA256:8c932c6527c2d53eebea682092591b701a79901d9f308697f2cf8d443578ac40
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.2.0-5ubuntu2.debian.tar.xz' gcc-10_10.2.0-5ubuntu2.debian.tar.xz 2024860 SHA256:fd9026959db5bb113dded9a8e96b5bcfd34590eb66b1d1b6846b526af2815986
-```
 
 ### `dpkg` source package: `gcc-defaults=1.188ubuntu1`
 
@@ -1459,15 +1454,9 @@ Licenses: (parsed from: `/usr/share/doc/libilmbase-dev/copyright`, `/usr/share/d
 - `boost`
 - `ilmbase`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ilmbase=2.3.0-6build1
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/ilmbase/ilmbase_2.3.0-6build1.dsc' ilmbase_2.3.0-6build1.dsc 2367 SHA256:2164e2cff01f17f030b456c2d0920d09461ae76229507459a73cf7c618d4f7f6
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/ilmbase/ilmbase_2.3.0.orig.tar.gz' ilmbase_2.3.0.orig.tar.gz 596749 SHA256:0ea21166799bbdd920e7a38a7026236566aafdd6e8638f54c9da1af2219fae82
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/ilmbase/ilmbase_2.3.0.orig.tar.gz.asc' ilmbase_2.3.0.orig.tar.gz.asc 566 SHA256:c7ee3f4432322d4f7c63dd1b0ca2188a8d1c4a018821c3c12a3d9db746b54bee
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/ilmbase/ilmbase_2.3.0-6build1.debian.tar.xz' ilmbase_2.3.0-6build1.debian.tar.xz 14252 SHA256:1039258f50fda2e94e4dac23e1e8aa702d8e3e83d0e1f12f13a652eadf2ebbf3
-```
 
 ### `dpkg` source package: `imagemagick=8:6.9.10.23+dfsg-2.1ubuntu12`
 
@@ -2226,14 +2215,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 - `Sun-permissive`
 - `Unlicense`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.48.7-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.48.7-1.dsc' librsvg_2.48.7-1.dsc 2914 SHA256:5e5ac23273073426db86af94e3bfa958b245c088d41d8b5b610c7044476fce22
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.48.7.orig.tar.xz' librsvg_2.48.7.orig.tar.xz 15097208 SHA256:35de5d93e262fcd85fa4529cee147687d21c6e092f223c293921eaaf57e2fec0
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.48.7-1.debian.tar.xz' librsvg_2.48.7-1.debian.tar.xz 24148 SHA256:8a5b5bcf500dbf361adf2448a926c7ebf75552b49497d78fa5c90cb39ac6ce64
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/librsvg/2.48.7-1/
+
 
 ### `dpkg` source package: `libseccomp=2.4.3-1ubuntu4`
 
@@ -3170,15 +3158,9 @@ Licenses: (parsed from: `/usr/share/doc/libopenexr-dev/copyright`, `/usr/share/d
 - `GPL-2+`
 - `openexr`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openexr=2.3.0-6ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/openexr/openexr_2.3.0-6ubuntu1.dsc' openexr_2.3.0-6ubuntu1.dsc 2630 SHA256:b472f9871435ce5d4f60d4e2fd22aea47806f5471d9aac6cf21e5f06ea5f846c
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/openexr/openexr_2.3.0.orig.tar.gz' openexr_2.3.0.orig.tar.gz 18416222 SHA256:1dea3145eb3962025e27edb99c97e8cfc67d6310403bbd643e97c364ebf8ff09
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/openexr/openexr_2.3.0.orig.tar.gz.asc' openexr_2.3.0.orig.tar.gz.asc 566 SHA256:809172c26aacae76d2caf92d13015ec829853f1ea9b25512c0307c66005e4dcc
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/openexr/openexr_2.3.0-6ubuntu1.debian.tar.xz' openexr_2.3.0-6ubuntu1.debian.tar.xz 33684 SHA256:a8f7210fdaad28b8c97c3c1d32cfa6602682af9737381f52b505310f20e942c7
-```
 
 ### `dpkg` source package: `openjpeg2=2.3.1-1ubuntu4`
 
@@ -4123,14 +4105,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.36-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.36-2ubuntu1.dsc' util-linux_2.36-2ubuntu1.dsc 4329 SHA256:a8d8d8abcb5c3a7f0074118e0d96001030cfaf3953c19ce97d0af007c9a42d70
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.36.orig.tar.xz' util-linux_2.36.orig.tar.xz 5242420 SHA256:9e4b1c67eb13b9b67feb32ae1dc0d50e08ce9e5d82e1cccd0ee771ad2fa9e0b1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.36-2ubuntu1.debian.tar.xz' util-linux_2.36-2ubuntu1.debian.tar.xz 98844 SHA256:f6d063af7f4b3bf1214c672696fe0a95fa28530c91f1097ff5f72fc27d50d581
-```
 
 ### `dpkg` source package: `wget=1.20.3-1ubuntu1`
 
