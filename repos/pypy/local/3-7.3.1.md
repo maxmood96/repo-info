@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:eaa6fd7e89345ab824aafb794d4e58646eee15380424fc6ab669ee228be58bb0`
-- Created: `2020-09-01T19:29:46.850135212Z`
+- Image ID: `sha256:1f47dbce11fafb18d321d1e39f22572581c1916112fa474b7309288c452bfebc`
+- Created: `2020-09-08T20:28:09.158845401Z`
 - Virtual Size: ~ 932.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,9 +12,9 @@
   - `PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `PYPY_VERSION=7.3.1`
-  - `PYTHON_PIP_VERSION=20.2.2`
-  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/5578af97f8b2b466f4cdbebe18a3ba2d48ad1434/get-pip.py`
-  - `PYTHON_GET_PIP_SHA256=d4d62a0850fe0c2e6325b2cc20d818c580563de5a2038f917e3cb0e25280b4d1`
+  - `PYTHON_PIP_VERSION=20.2.3`
+  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/fa7dc83944936bf09a0e4cb5d5ec852c0d256599/get-pip.py`
+  - `PYTHON_GET_PIP_SHA256=6e0bb0a2c2533361d7f297ed547237caf1b7507f197835974c0dd7eba998c53c`
 
 ## `dpkg` (`.deb`-based packages)
 
