@@ -21,7 +21,7 @@
 ## `rethinkdb:2`
 
 ```console
-$ docker pull rethinkdb@sha256:b142027c773d80048656fe1bc6c71c61f08279dd6be6a201bdb87a95ec99a685
+$ docker pull rethinkdb@sha256:e6368957b48390016a8e429ac8ed1567ddb824df9cd482e743a1c445dcc2bf2d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -31,65 +31,65 @@ $ docker pull rethinkdb@sha256:b142027c773d80048656fe1bc6c71c61f08279dd6be6a201b
 ### `rethinkdb:2` - linux; amd64
 
 ```console
-$ docker pull rethinkdb@sha256:bc780f06c27fac4c10ccd0bc0258509e5298c98ee7e110f5f1ba84e88798c58f
+$ docker pull rethinkdb@sha256:4be1aa0c1b69433b4bb3e7b6b1ae6ab1472a53992c04300f3faf2dc118563c53
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.8 MB (51754709 bytes)**  
+-	Total Size: **51.8 MB (51754674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b9748409ac29202b6becca6c24bc029fb43cfca53746d2d60c5adb657395f5bc`
+-	Image ID: `sha256:6be342c08b0b7599764d49a408016c1e7d91e37818fcf3b1b6403ae909c98c2a`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Tue, 04 Aug 2020 15:42:51 GMT
-ADD file:3af3091e7d2bb40bc1e6550eb5ea290badc6bbf3339105626f245a963cc11450 in / 
-# Tue, 04 Aug 2020 15:42:51 GMT
+# Thu, 10 Sep 2020 00:23:29 GMT
+ADD file:e7407f2294ad23634565820b9669b18ff2a2ca0212a7ec84b9c89d8550859954 in / 
+# Thu, 10 Sep 2020 00:23:30 GMT
 CMD ["bash"]
-# Wed, 05 Aug 2020 06:45:48 GMT
+# Thu, 10 Sep 2020 19:11:33 GMT
 RUN apt-get -qqy update     && apt-get install -y --no-install-recommends ca-certificates gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 14 Aug 2020 21:12:36 GMT
+# Thu, 10 Sep 2020 19:11:35 GMT
 RUN apt-key adv --keyserver keys.gnupg.net --recv-keys "539A3A8C6692E6E3F69B3FE81D85E93F801BB43F"     && echo "deb https://download.rethinkdb.com/repository/debian-buster buster main" > /etc/apt/sources.list.d/rethinkdb.list
-# Fri, 14 Aug 2020 21:12:37 GMT
+# Thu, 10 Sep 2020 19:11:35 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.4.1~0buster
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 RUN apt-get -qqy update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 VOLUME [/data]
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 WORKDIR /data
-# Fri, 14 Aug 2020 21:12:51 GMT
+# Thu, 10 Sep 2020 19:11:45 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Fri, 14 Aug 2020 21:12:51 GMT
+# Thu, 10 Sep 2020 19:11:45 GMT
 EXPOSE 28015 29015 8080
 ```
 
 -	Layers:
-	-	`sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb`  
-		Last Modified: Tue, 04 Aug 2020 15:49:09 GMT  
-		Size: 27.1 MB (27092121 bytes)  
+	-	`sha256:d121f8d1c4128ebc1e95e5bfad90a0189b84eadbbb2fbaad20cbb26d20b2c8a2`  
+		Last Modified: Thu, 10 Sep 2020 00:34:02 GMT  
+		Size: 27.1 MB (27092161 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf7975e8c352cc79bcac0fb7b7d3433054ff8a40b21411d6e9a8cd0da6766776`  
-		Last Modified: Mon, 10 Aug 2020 19:00:55 GMT  
-		Size: 6.7 MB (6669184 bytes)  
+	-	`sha256:c6a131c9a760cc01fd01b1bc0cbc1ee8a96a49f6c1101d7ba959c253df811546`  
+		Last Modified: Thu, 10 Sep 2020 19:12:24 GMT  
+		Size: 6.7 MB (6669146 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f35ca7cb163021376fc027d28e1a9aa0f6df516597597bf7770164b3a67f6d5d`  
-		Last Modified: Fri, 14 Aug 2020 21:13:59 GMT  
+	-	`sha256:108a05642715b9d5d0da410c179378178fd8e8c785b0b0c17fbc57237404eed1`  
+		Last Modified: Thu, 10 Sep 2020 19:12:22 GMT  
 		Size: 2.6 KB (2612 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e6eaa3382fc34b4261ac413cc750fff2b9813c7cc5daabb71cddb0d07e54946`  
-		Last Modified: Fri, 14 Aug 2020 21:14:03 GMT  
-		Size: 18.0 MB (17990699 bytes)  
+	-	`sha256:f194b4fffc2ede18d90c83a173ac387cd7a1cbf7949e556494b8d2d1aa2c5cae`  
+		Last Modified: Thu, 10 Sep 2020 19:12:26 GMT  
+		Size: 18.0 MB (17990662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24551774cb19720139020672b9dac074754221b9b4138cd1ae9047c9d510796f`  
-		Last Modified: Fri, 14 Aug 2020 21:13:59 GMT  
+	-	`sha256:de33d3c8a9da758fb504730266e4e13d31537fd8fe976d98f1f801842a1e8163`  
+		Last Modified: Thu, 10 Sep 2020 19:12:23 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:2.4`
 
 ```console
-$ docker pull rethinkdb@sha256:b142027c773d80048656fe1bc6c71c61f08279dd6be6a201bdb87a95ec99a685
+$ docker pull rethinkdb@sha256:e6368957b48390016a8e429ac8ed1567ddb824df9cd482e743a1c445dcc2bf2d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -99,65 +99,65 @@ $ docker pull rethinkdb@sha256:b142027c773d80048656fe1bc6c71c61f08279dd6be6a201b
 ### `rethinkdb:2.4` - linux; amd64
 
 ```console
-$ docker pull rethinkdb@sha256:bc780f06c27fac4c10ccd0bc0258509e5298c98ee7e110f5f1ba84e88798c58f
+$ docker pull rethinkdb@sha256:4be1aa0c1b69433b4bb3e7b6b1ae6ab1472a53992c04300f3faf2dc118563c53
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.8 MB (51754709 bytes)**  
+-	Total Size: **51.8 MB (51754674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b9748409ac29202b6becca6c24bc029fb43cfca53746d2d60c5adb657395f5bc`
+-	Image ID: `sha256:6be342c08b0b7599764d49a408016c1e7d91e37818fcf3b1b6403ae909c98c2a`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Tue, 04 Aug 2020 15:42:51 GMT
-ADD file:3af3091e7d2bb40bc1e6550eb5ea290badc6bbf3339105626f245a963cc11450 in / 
-# Tue, 04 Aug 2020 15:42:51 GMT
+# Thu, 10 Sep 2020 00:23:29 GMT
+ADD file:e7407f2294ad23634565820b9669b18ff2a2ca0212a7ec84b9c89d8550859954 in / 
+# Thu, 10 Sep 2020 00:23:30 GMT
 CMD ["bash"]
-# Wed, 05 Aug 2020 06:45:48 GMT
+# Thu, 10 Sep 2020 19:11:33 GMT
 RUN apt-get -qqy update     && apt-get install -y --no-install-recommends ca-certificates gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 14 Aug 2020 21:12:36 GMT
+# Thu, 10 Sep 2020 19:11:35 GMT
 RUN apt-key adv --keyserver keys.gnupg.net --recv-keys "539A3A8C6692E6E3F69B3FE81D85E93F801BB43F"     && echo "deb https://download.rethinkdb.com/repository/debian-buster buster main" > /etc/apt/sources.list.d/rethinkdb.list
-# Fri, 14 Aug 2020 21:12:37 GMT
+# Thu, 10 Sep 2020 19:11:35 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.4.1~0buster
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 RUN apt-get -qqy update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 VOLUME [/data]
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 WORKDIR /data
-# Fri, 14 Aug 2020 21:12:51 GMT
+# Thu, 10 Sep 2020 19:11:45 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Fri, 14 Aug 2020 21:12:51 GMT
+# Thu, 10 Sep 2020 19:11:45 GMT
 EXPOSE 28015 29015 8080
 ```
 
 -	Layers:
-	-	`sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb`  
-		Last Modified: Tue, 04 Aug 2020 15:49:09 GMT  
-		Size: 27.1 MB (27092121 bytes)  
+	-	`sha256:d121f8d1c4128ebc1e95e5bfad90a0189b84eadbbb2fbaad20cbb26d20b2c8a2`  
+		Last Modified: Thu, 10 Sep 2020 00:34:02 GMT  
+		Size: 27.1 MB (27092161 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf7975e8c352cc79bcac0fb7b7d3433054ff8a40b21411d6e9a8cd0da6766776`  
-		Last Modified: Mon, 10 Aug 2020 19:00:55 GMT  
-		Size: 6.7 MB (6669184 bytes)  
+	-	`sha256:c6a131c9a760cc01fd01b1bc0cbc1ee8a96a49f6c1101d7ba959c253df811546`  
+		Last Modified: Thu, 10 Sep 2020 19:12:24 GMT  
+		Size: 6.7 MB (6669146 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f35ca7cb163021376fc027d28e1a9aa0f6df516597597bf7770164b3a67f6d5d`  
-		Last Modified: Fri, 14 Aug 2020 21:13:59 GMT  
+	-	`sha256:108a05642715b9d5d0da410c179378178fd8e8c785b0b0c17fbc57237404eed1`  
+		Last Modified: Thu, 10 Sep 2020 19:12:22 GMT  
 		Size: 2.6 KB (2612 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e6eaa3382fc34b4261ac413cc750fff2b9813c7cc5daabb71cddb0d07e54946`  
-		Last Modified: Fri, 14 Aug 2020 21:14:03 GMT  
-		Size: 18.0 MB (17990699 bytes)  
+	-	`sha256:f194b4fffc2ede18d90c83a173ac387cd7a1cbf7949e556494b8d2d1aa2c5cae`  
+		Last Modified: Thu, 10 Sep 2020 19:12:26 GMT  
+		Size: 18.0 MB (17990662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24551774cb19720139020672b9dac074754221b9b4138cd1ae9047c9d510796f`  
-		Last Modified: Fri, 14 Aug 2020 21:13:59 GMT  
+	-	`sha256:de33d3c8a9da758fb504730266e4e13d31537fd8fe976d98f1f801842a1e8163`  
+		Last Modified: Thu, 10 Sep 2020 19:12:23 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:2.4.0`
 
 ```console
-$ docker pull rethinkdb@sha256:5d0f079607ae53358c87cc3be88b2d897e16489ee4300889614575a591d4b9da
+$ docker pull rethinkdb@sha256:da7da457859eefd200cc5535e0d1a74aaeb6733031a54b4a174f761d20e8e312
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -167,65 +167,65 @@ $ docker pull rethinkdb@sha256:5d0f079607ae53358c87cc3be88b2d897e16489ee43008896
 ### `rethinkdb:2.4.0` - linux; amd64
 
 ```console
-$ docker pull rethinkdb@sha256:e589a337584afcbe4858aff85c4275bd3d985e8e561245bafb52f3fa00a4872d
+$ docker pull rethinkdb@sha256:aa50702fb9e0aa61bac16d86258a5c6de9430b6ad04b308cf46c7689af8d6c1b
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.8 MB (51756184 bytes)**  
+-	Total Size: **51.8 MB (51756147 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ab3769bad6ed271504117db2e120e7efd0e4b2bb5038a268c20e03f84f0f03b`
+-	Image ID: `sha256:1f3e553e3e4c4dfbf67c506a76d7d412f4afa726b4cb6bbf9723dd1df99ca23b`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Tue, 04 Aug 2020 15:42:51 GMT
-ADD file:3af3091e7d2bb40bc1e6550eb5ea290badc6bbf3339105626f245a963cc11450 in / 
-# Tue, 04 Aug 2020 15:42:51 GMT
+# Thu, 10 Sep 2020 00:23:29 GMT
+ADD file:e7407f2294ad23634565820b9669b18ff2a2ca0212a7ec84b9c89d8550859954 in / 
+# Thu, 10 Sep 2020 00:23:30 GMT
 CMD ["bash"]
-# Wed, 05 Aug 2020 06:45:48 GMT
+# Thu, 10 Sep 2020 19:11:33 GMT
 RUN apt-get -qqy update     && apt-get install -y --no-install-recommends ca-certificates gnupg2     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Aug 2020 19:00:05 GMT
+# Thu, 10 Sep 2020 19:11:55 GMT
 RUN apt-key adv --keyserver keys.gnupg.net --recv-keys "539A 3A8C 6692 E6E3 F69B 3FE8 1D85 E93F 801B B43F"     && echo "deb https://download.rethinkdb.com/repository/debian-buster buster main" > /etc/apt/sources.list.d/rethinkdb.list
-# Mon, 10 Aug 2020 19:00:05 GMT
+# Thu, 10 Sep 2020 19:11:55 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.4.0~0buster
-# Mon, 10 Aug 2020 19:00:15 GMT
+# Thu, 10 Sep 2020 19:12:03 GMT
 RUN apt-get -qqy update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 10 Aug 2020 19:00:16 GMT
+# Thu, 10 Sep 2020 19:12:04 GMT
 VOLUME [/data]
-# Mon, 10 Aug 2020 19:00:16 GMT
+# Thu, 10 Sep 2020 19:12:04 GMT
 WORKDIR /data
-# Mon, 10 Aug 2020 19:00:16 GMT
+# Thu, 10 Sep 2020 19:12:04 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Mon, 10 Aug 2020 19:00:16 GMT
+# Thu, 10 Sep 2020 19:12:04 GMT
 EXPOSE 28015 29015 8080
 ```
 
 -	Layers:
-	-	`sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb`  
-		Last Modified: Tue, 04 Aug 2020 15:49:09 GMT  
-		Size: 27.1 MB (27092121 bytes)  
+	-	`sha256:d121f8d1c4128ebc1e95e5bfad90a0189b84eadbbb2fbaad20cbb26d20b2c8a2`  
+		Last Modified: Thu, 10 Sep 2020 00:34:02 GMT  
+		Size: 27.1 MB (27092161 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf7975e8c352cc79bcac0fb7b7d3433054ff8a40b21411d6e9a8cd0da6766776`  
-		Last Modified: Mon, 10 Aug 2020 19:00:55 GMT  
-		Size: 6.7 MB (6669184 bytes)  
+	-	`sha256:c6a131c9a760cc01fd01b1bc0cbc1ee8a96a49f6c1101d7ba959c253df811546`  
+		Last Modified: Thu, 10 Sep 2020 19:12:24 GMT  
+		Size: 6.7 MB (6669146 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58cb87697a5f6eecce6450ac019a8130a4ea44c119422b89a275b80895068a83`  
-		Last Modified: Mon, 10 Aug 2020 19:00:53 GMT  
-		Size: 2.6 KB (2612 bytes)  
+	-	`sha256:700b2e569c2b4d3e0f298572da29d13a33031d5e188feed19170464f0153d2b4`  
+		Last Modified: Thu, 10 Sep 2020 19:12:35 GMT  
+		Size: 2.6 KB (2609 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ae708913553e0f013132c8c4ed53e5e35056d12d0faac39d16abb4626f78efc`  
-		Last Modified: Mon, 10 Aug 2020 19:00:56 GMT  
-		Size: 18.0 MB (17992176 bytes)  
+	-	`sha256:532f61770b19a72b3ffee8c0685ad264d515eb521f32fc00aaf1e9e6d0069bf3`  
+		Last Modified: Thu, 10 Sep 2020 19:12:38 GMT  
+		Size: 18.0 MB (17992138 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f3829cbfee612b0dc16f078822928b048d0e38c716cbfd5853134214bd51d07`  
-		Last Modified: Mon, 10 Aug 2020 19:00:53 GMT  
-		Size: 91.0 B  
+	-	`sha256:e9043b6a3643fcf38c611b44ef92870a440e7783cb3620bb2ac58af0bf8893a7`  
+		Last Modified: Thu, 10 Sep 2020 19:12:35 GMT  
+		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:2.4.0-buster-slim`
 
 ```console
-$ docker pull rethinkdb@sha256:5d0f079607ae53358c87cc3be88b2d897e16489ee4300889614575a591d4b9da
+$ docker pull rethinkdb@sha256:da7da457859eefd200cc5535e0d1a74aaeb6733031a54b4a174f761d20e8e312
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -235,59 +235,59 @@ $ docker pull rethinkdb@sha256:5d0f079607ae53358c87cc3be88b2d897e16489ee43008896
 ### `rethinkdb:2.4.0-buster-slim` - linux; amd64
 
 ```console
-$ docker pull rethinkdb@sha256:e589a337584afcbe4858aff85c4275bd3d985e8e561245bafb52f3fa00a4872d
+$ docker pull rethinkdb@sha256:aa50702fb9e0aa61bac16d86258a5c6de9430b6ad04b308cf46c7689af8d6c1b
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.8 MB (51756184 bytes)**  
+-	Total Size: **51.8 MB (51756147 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ab3769bad6ed271504117db2e120e7efd0e4b2bb5038a268c20e03f84f0f03b`
+-	Image ID: `sha256:1f3e553e3e4c4dfbf67c506a76d7d412f4afa726b4cb6bbf9723dd1df99ca23b`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Tue, 04 Aug 2020 15:42:51 GMT
-ADD file:3af3091e7d2bb40bc1e6550eb5ea290badc6bbf3339105626f245a963cc11450 in / 
-# Tue, 04 Aug 2020 15:42:51 GMT
+# Thu, 10 Sep 2020 00:23:29 GMT
+ADD file:e7407f2294ad23634565820b9669b18ff2a2ca0212a7ec84b9c89d8550859954 in / 
+# Thu, 10 Sep 2020 00:23:30 GMT
 CMD ["bash"]
-# Wed, 05 Aug 2020 06:45:48 GMT
+# Thu, 10 Sep 2020 19:11:33 GMT
 RUN apt-get -qqy update     && apt-get install -y --no-install-recommends ca-certificates gnupg2     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Aug 2020 19:00:05 GMT
+# Thu, 10 Sep 2020 19:11:55 GMT
 RUN apt-key adv --keyserver keys.gnupg.net --recv-keys "539A 3A8C 6692 E6E3 F69B 3FE8 1D85 E93F 801B B43F"     && echo "deb https://download.rethinkdb.com/repository/debian-buster buster main" > /etc/apt/sources.list.d/rethinkdb.list
-# Mon, 10 Aug 2020 19:00:05 GMT
+# Thu, 10 Sep 2020 19:11:55 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.4.0~0buster
-# Mon, 10 Aug 2020 19:00:15 GMT
+# Thu, 10 Sep 2020 19:12:03 GMT
 RUN apt-get -qqy update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 10 Aug 2020 19:00:16 GMT
+# Thu, 10 Sep 2020 19:12:04 GMT
 VOLUME [/data]
-# Mon, 10 Aug 2020 19:00:16 GMT
+# Thu, 10 Sep 2020 19:12:04 GMT
 WORKDIR /data
-# Mon, 10 Aug 2020 19:00:16 GMT
+# Thu, 10 Sep 2020 19:12:04 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Mon, 10 Aug 2020 19:00:16 GMT
+# Thu, 10 Sep 2020 19:12:04 GMT
 EXPOSE 28015 29015 8080
 ```
 
 -	Layers:
-	-	`sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb`  
-		Last Modified: Tue, 04 Aug 2020 15:49:09 GMT  
-		Size: 27.1 MB (27092121 bytes)  
+	-	`sha256:d121f8d1c4128ebc1e95e5bfad90a0189b84eadbbb2fbaad20cbb26d20b2c8a2`  
+		Last Modified: Thu, 10 Sep 2020 00:34:02 GMT  
+		Size: 27.1 MB (27092161 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf7975e8c352cc79bcac0fb7b7d3433054ff8a40b21411d6e9a8cd0da6766776`  
-		Last Modified: Mon, 10 Aug 2020 19:00:55 GMT  
-		Size: 6.7 MB (6669184 bytes)  
+	-	`sha256:c6a131c9a760cc01fd01b1bc0cbc1ee8a96a49f6c1101d7ba959c253df811546`  
+		Last Modified: Thu, 10 Sep 2020 19:12:24 GMT  
+		Size: 6.7 MB (6669146 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58cb87697a5f6eecce6450ac019a8130a4ea44c119422b89a275b80895068a83`  
-		Last Modified: Mon, 10 Aug 2020 19:00:53 GMT  
-		Size: 2.6 KB (2612 bytes)  
+	-	`sha256:700b2e569c2b4d3e0f298572da29d13a33031d5e188feed19170464f0153d2b4`  
+		Last Modified: Thu, 10 Sep 2020 19:12:35 GMT  
+		Size: 2.6 KB (2609 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ae708913553e0f013132c8c4ed53e5e35056d12d0faac39d16abb4626f78efc`  
-		Last Modified: Mon, 10 Aug 2020 19:00:56 GMT  
-		Size: 18.0 MB (17992176 bytes)  
+	-	`sha256:532f61770b19a72b3ffee8c0685ad264d515eb521f32fc00aaf1e9e6d0069bf3`  
+		Last Modified: Thu, 10 Sep 2020 19:12:38 GMT  
+		Size: 18.0 MB (17992138 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f3829cbfee612b0dc16f078822928b048d0e38c716cbfd5853134214bd51d07`  
-		Last Modified: Mon, 10 Aug 2020 19:00:53 GMT  
-		Size: 91.0 B  
+	-	`sha256:e9043b6a3643fcf38c611b44ef92870a440e7783cb3620bb2ac58af0bf8893a7`  
+		Last Modified: Thu, 10 Sep 2020 19:12:35 GMT  
+		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:2.4.0-centos`
@@ -357,7 +357,7 @@ EXPOSE 28015 29015 8080
 ## `rethinkdb:2.4.1`
 
 ```console
-$ docker pull rethinkdb@sha256:b142027c773d80048656fe1bc6c71c61f08279dd6be6a201bdb87a95ec99a685
+$ docker pull rethinkdb@sha256:e6368957b48390016a8e429ac8ed1567ddb824df9cd482e743a1c445dcc2bf2d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -367,65 +367,65 @@ $ docker pull rethinkdb@sha256:b142027c773d80048656fe1bc6c71c61f08279dd6be6a201b
 ### `rethinkdb:2.4.1` - linux; amd64
 
 ```console
-$ docker pull rethinkdb@sha256:bc780f06c27fac4c10ccd0bc0258509e5298c98ee7e110f5f1ba84e88798c58f
+$ docker pull rethinkdb@sha256:4be1aa0c1b69433b4bb3e7b6b1ae6ab1472a53992c04300f3faf2dc118563c53
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.8 MB (51754709 bytes)**  
+-	Total Size: **51.8 MB (51754674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b9748409ac29202b6becca6c24bc029fb43cfca53746d2d60c5adb657395f5bc`
+-	Image ID: `sha256:6be342c08b0b7599764d49a408016c1e7d91e37818fcf3b1b6403ae909c98c2a`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Tue, 04 Aug 2020 15:42:51 GMT
-ADD file:3af3091e7d2bb40bc1e6550eb5ea290badc6bbf3339105626f245a963cc11450 in / 
-# Tue, 04 Aug 2020 15:42:51 GMT
+# Thu, 10 Sep 2020 00:23:29 GMT
+ADD file:e7407f2294ad23634565820b9669b18ff2a2ca0212a7ec84b9c89d8550859954 in / 
+# Thu, 10 Sep 2020 00:23:30 GMT
 CMD ["bash"]
-# Wed, 05 Aug 2020 06:45:48 GMT
+# Thu, 10 Sep 2020 19:11:33 GMT
 RUN apt-get -qqy update     && apt-get install -y --no-install-recommends ca-certificates gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 14 Aug 2020 21:12:36 GMT
+# Thu, 10 Sep 2020 19:11:35 GMT
 RUN apt-key adv --keyserver keys.gnupg.net --recv-keys "539A3A8C6692E6E3F69B3FE81D85E93F801BB43F"     && echo "deb https://download.rethinkdb.com/repository/debian-buster buster main" > /etc/apt/sources.list.d/rethinkdb.list
-# Fri, 14 Aug 2020 21:12:37 GMT
+# Thu, 10 Sep 2020 19:11:35 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.4.1~0buster
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 RUN apt-get -qqy update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 VOLUME [/data]
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 WORKDIR /data
-# Fri, 14 Aug 2020 21:12:51 GMT
+# Thu, 10 Sep 2020 19:11:45 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Fri, 14 Aug 2020 21:12:51 GMT
+# Thu, 10 Sep 2020 19:11:45 GMT
 EXPOSE 28015 29015 8080
 ```
 
 -	Layers:
-	-	`sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb`  
-		Last Modified: Tue, 04 Aug 2020 15:49:09 GMT  
-		Size: 27.1 MB (27092121 bytes)  
+	-	`sha256:d121f8d1c4128ebc1e95e5bfad90a0189b84eadbbb2fbaad20cbb26d20b2c8a2`  
+		Last Modified: Thu, 10 Sep 2020 00:34:02 GMT  
+		Size: 27.1 MB (27092161 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf7975e8c352cc79bcac0fb7b7d3433054ff8a40b21411d6e9a8cd0da6766776`  
-		Last Modified: Mon, 10 Aug 2020 19:00:55 GMT  
-		Size: 6.7 MB (6669184 bytes)  
+	-	`sha256:c6a131c9a760cc01fd01b1bc0cbc1ee8a96a49f6c1101d7ba959c253df811546`  
+		Last Modified: Thu, 10 Sep 2020 19:12:24 GMT  
+		Size: 6.7 MB (6669146 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f35ca7cb163021376fc027d28e1a9aa0f6df516597597bf7770164b3a67f6d5d`  
-		Last Modified: Fri, 14 Aug 2020 21:13:59 GMT  
+	-	`sha256:108a05642715b9d5d0da410c179378178fd8e8c785b0b0c17fbc57237404eed1`  
+		Last Modified: Thu, 10 Sep 2020 19:12:22 GMT  
 		Size: 2.6 KB (2612 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e6eaa3382fc34b4261ac413cc750fff2b9813c7cc5daabb71cddb0d07e54946`  
-		Last Modified: Fri, 14 Aug 2020 21:14:03 GMT  
-		Size: 18.0 MB (17990699 bytes)  
+	-	`sha256:f194b4fffc2ede18d90c83a173ac387cd7a1cbf7949e556494b8d2d1aa2c5cae`  
+		Last Modified: Thu, 10 Sep 2020 19:12:26 GMT  
+		Size: 18.0 MB (17990662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24551774cb19720139020672b9dac074754221b9b4138cd1ae9047c9d510796f`  
-		Last Modified: Fri, 14 Aug 2020 21:13:59 GMT  
+	-	`sha256:de33d3c8a9da758fb504730266e4e13d31537fd8fe976d98f1f801842a1e8163`  
+		Last Modified: Thu, 10 Sep 2020 19:12:23 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:2.4.1-buster-slim`
 
 ```console
-$ docker pull rethinkdb@sha256:b142027c773d80048656fe1bc6c71c61f08279dd6be6a201bdb87a95ec99a685
+$ docker pull rethinkdb@sha256:e6368957b48390016a8e429ac8ed1567ddb824df9cd482e743a1c445dcc2bf2d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -435,58 +435,58 @@ $ docker pull rethinkdb@sha256:b142027c773d80048656fe1bc6c71c61f08279dd6be6a201b
 ### `rethinkdb:2.4.1-buster-slim` - linux; amd64
 
 ```console
-$ docker pull rethinkdb@sha256:bc780f06c27fac4c10ccd0bc0258509e5298c98ee7e110f5f1ba84e88798c58f
+$ docker pull rethinkdb@sha256:4be1aa0c1b69433b4bb3e7b6b1ae6ab1472a53992c04300f3faf2dc118563c53
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.8 MB (51754709 bytes)**  
+-	Total Size: **51.8 MB (51754674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b9748409ac29202b6becca6c24bc029fb43cfca53746d2d60c5adb657395f5bc`
+-	Image ID: `sha256:6be342c08b0b7599764d49a408016c1e7d91e37818fcf3b1b6403ae909c98c2a`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Tue, 04 Aug 2020 15:42:51 GMT
-ADD file:3af3091e7d2bb40bc1e6550eb5ea290badc6bbf3339105626f245a963cc11450 in / 
-# Tue, 04 Aug 2020 15:42:51 GMT
+# Thu, 10 Sep 2020 00:23:29 GMT
+ADD file:e7407f2294ad23634565820b9669b18ff2a2ca0212a7ec84b9c89d8550859954 in / 
+# Thu, 10 Sep 2020 00:23:30 GMT
 CMD ["bash"]
-# Wed, 05 Aug 2020 06:45:48 GMT
+# Thu, 10 Sep 2020 19:11:33 GMT
 RUN apt-get -qqy update     && apt-get install -y --no-install-recommends ca-certificates gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 14 Aug 2020 21:12:36 GMT
+# Thu, 10 Sep 2020 19:11:35 GMT
 RUN apt-key adv --keyserver keys.gnupg.net --recv-keys "539A3A8C6692E6E3F69B3FE81D85E93F801BB43F"     && echo "deb https://download.rethinkdb.com/repository/debian-buster buster main" > /etc/apt/sources.list.d/rethinkdb.list
-# Fri, 14 Aug 2020 21:12:37 GMT
+# Thu, 10 Sep 2020 19:11:35 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.4.1~0buster
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 RUN apt-get -qqy update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 VOLUME [/data]
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 WORKDIR /data
-# Fri, 14 Aug 2020 21:12:51 GMT
+# Thu, 10 Sep 2020 19:11:45 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Fri, 14 Aug 2020 21:12:51 GMT
+# Thu, 10 Sep 2020 19:11:45 GMT
 EXPOSE 28015 29015 8080
 ```
 
 -	Layers:
-	-	`sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb`  
-		Last Modified: Tue, 04 Aug 2020 15:49:09 GMT  
-		Size: 27.1 MB (27092121 bytes)  
+	-	`sha256:d121f8d1c4128ebc1e95e5bfad90a0189b84eadbbb2fbaad20cbb26d20b2c8a2`  
+		Last Modified: Thu, 10 Sep 2020 00:34:02 GMT  
+		Size: 27.1 MB (27092161 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf7975e8c352cc79bcac0fb7b7d3433054ff8a40b21411d6e9a8cd0da6766776`  
-		Last Modified: Mon, 10 Aug 2020 19:00:55 GMT  
-		Size: 6.7 MB (6669184 bytes)  
+	-	`sha256:c6a131c9a760cc01fd01b1bc0cbc1ee8a96a49f6c1101d7ba959c253df811546`  
+		Last Modified: Thu, 10 Sep 2020 19:12:24 GMT  
+		Size: 6.7 MB (6669146 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f35ca7cb163021376fc027d28e1a9aa0f6df516597597bf7770164b3a67f6d5d`  
-		Last Modified: Fri, 14 Aug 2020 21:13:59 GMT  
+	-	`sha256:108a05642715b9d5d0da410c179378178fd8e8c785b0b0c17fbc57237404eed1`  
+		Last Modified: Thu, 10 Sep 2020 19:12:22 GMT  
 		Size: 2.6 KB (2612 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e6eaa3382fc34b4261ac413cc750fff2b9813c7cc5daabb71cddb0d07e54946`  
-		Last Modified: Fri, 14 Aug 2020 21:14:03 GMT  
-		Size: 18.0 MB (17990699 bytes)  
+	-	`sha256:f194b4fffc2ede18d90c83a173ac387cd7a1cbf7949e556494b8d2d1aa2c5cae`  
+		Last Modified: Thu, 10 Sep 2020 19:12:26 GMT  
+		Size: 18.0 MB (17990662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24551774cb19720139020672b9dac074754221b9b4138cd1ae9047c9d510796f`  
-		Last Modified: Fri, 14 Aug 2020 21:13:59 GMT  
+	-	`sha256:de33d3c8a9da758fb504730266e4e13d31537fd8fe976d98f1f801842a1e8163`  
+		Last Modified: Thu, 10 Sep 2020 19:12:23 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -557,7 +557,7 @@ EXPOSE 28015 29015 8080
 ## `rethinkdb:2.4-buster-slim`
 
 ```console
-$ docker pull rethinkdb@sha256:b142027c773d80048656fe1bc6c71c61f08279dd6be6a201bdb87a95ec99a685
+$ docker pull rethinkdb@sha256:e6368957b48390016a8e429ac8ed1567ddb824df9cd482e743a1c445dcc2bf2d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -567,58 +567,58 @@ $ docker pull rethinkdb@sha256:b142027c773d80048656fe1bc6c71c61f08279dd6be6a201b
 ### `rethinkdb:2.4-buster-slim` - linux; amd64
 
 ```console
-$ docker pull rethinkdb@sha256:bc780f06c27fac4c10ccd0bc0258509e5298c98ee7e110f5f1ba84e88798c58f
+$ docker pull rethinkdb@sha256:4be1aa0c1b69433b4bb3e7b6b1ae6ab1472a53992c04300f3faf2dc118563c53
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.8 MB (51754709 bytes)**  
+-	Total Size: **51.8 MB (51754674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b9748409ac29202b6becca6c24bc029fb43cfca53746d2d60c5adb657395f5bc`
+-	Image ID: `sha256:6be342c08b0b7599764d49a408016c1e7d91e37818fcf3b1b6403ae909c98c2a`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Tue, 04 Aug 2020 15:42:51 GMT
-ADD file:3af3091e7d2bb40bc1e6550eb5ea290badc6bbf3339105626f245a963cc11450 in / 
-# Tue, 04 Aug 2020 15:42:51 GMT
+# Thu, 10 Sep 2020 00:23:29 GMT
+ADD file:e7407f2294ad23634565820b9669b18ff2a2ca0212a7ec84b9c89d8550859954 in / 
+# Thu, 10 Sep 2020 00:23:30 GMT
 CMD ["bash"]
-# Wed, 05 Aug 2020 06:45:48 GMT
+# Thu, 10 Sep 2020 19:11:33 GMT
 RUN apt-get -qqy update     && apt-get install -y --no-install-recommends ca-certificates gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 14 Aug 2020 21:12:36 GMT
+# Thu, 10 Sep 2020 19:11:35 GMT
 RUN apt-key adv --keyserver keys.gnupg.net --recv-keys "539A3A8C6692E6E3F69B3FE81D85E93F801BB43F"     && echo "deb https://download.rethinkdb.com/repository/debian-buster buster main" > /etc/apt/sources.list.d/rethinkdb.list
-# Fri, 14 Aug 2020 21:12:37 GMT
+# Thu, 10 Sep 2020 19:11:35 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.4.1~0buster
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 RUN apt-get -qqy update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 VOLUME [/data]
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 WORKDIR /data
-# Fri, 14 Aug 2020 21:12:51 GMT
+# Thu, 10 Sep 2020 19:11:45 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Fri, 14 Aug 2020 21:12:51 GMT
+# Thu, 10 Sep 2020 19:11:45 GMT
 EXPOSE 28015 29015 8080
 ```
 
 -	Layers:
-	-	`sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb`  
-		Last Modified: Tue, 04 Aug 2020 15:49:09 GMT  
-		Size: 27.1 MB (27092121 bytes)  
+	-	`sha256:d121f8d1c4128ebc1e95e5bfad90a0189b84eadbbb2fbaad20cbb26d20b2c8a2`  
+		Last Modified: Thu, 10 Sep 2020 00:34:02 GMT  
+		Size: 27.1 MB (27092161 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf7975e8c352cc79bcac0fb7b7d3433054ff8a40b21411d6e9a8cd0da6766776`  
-		Last Modified: Mon, 10 Aug 2020 19:00:55 GMT  
-		Size: 6.7 MB (6669184 bytes)  
+	-	`sha256:c6a131c9a760cc01fd01b1bc0cbc1ee8a96a49f6c1101d7ba959c253df811546`  
+		Last Modified: Thu, 10 Sep 2020 19:12:24 GMT  
+		Size: 6.7 MB (6669146 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f35ca7cb163021376fc027d28e1a9aa0f6df516597597bf7770164b3a67f6d5d`  
-		Last Modified: Fri, 14 Aug 2020 21:13:59 GMT  
+	-	`sha256:108a05642715b9d5d0da410c179378178fd8e8c785b0b0c17fbc57237404eed1`  
+		Last Modified: Thu, 10 Sep 2020 19:12:22 GMT  
 		Size: 2.6 KB (2612 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e6eaa3382fc34b4261ac413cc750fff2b9813c7cc5daabb71cddb0d07e54946`  
-		Last Modified: Fri, 14 Aug 2020 21:14:03 GMT  
-		Size: 18.0 MB (17990699 bytes)  
+	-	`sha256:f194b4fffc2ede18d90c83a173ac387cd7a1cbf7949e556494b8d2d1aa2c5cae`  
+		Last Modified: Thu, 10 Sep 2020 19:12:26 GMT  
+		Size: 18.0 MB (17990662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24551774cb19720139020672b9dac074754221b9b4138cd1ae9047c9d510796f`  
-		Last Modified: Fri, 14 Aug 2020 21:13:59 GMT  
+	-	`sha256:de33d3c8a9da758fb504730266e4e13d31537fd8fe976d98f1f801842a1e8163`  
+		Last Modified: Thu, 10 Sep 2020 19:12:23 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -689,7 +689,7 @@ EXPOSE 28015 29015 8080
 ## `rethinkdb:2-buster-slim`
 
 ```console
-$ docker pull rethinkdb@sha256:b142027c773d80048656fe1bc6c71c61f08279dd6be6a201bdb87a95ec99a685
+$ docker pull rethinkdb@sha256:e6368957b48390016a8e429ac8ed1567ddb824df9cd482e743a1c445dcc2bf2d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -699,58 +699,58 @@ $ docker pull rethinkdb@sha256:b142027c773d80048656fe1bc6c71c61f08279dd6be6a201b
 ### `rethinkdb:2-buster-slim` - linux; amd64
 
 ```console
-$ docker pull rethinkdb@sha256:bc780f06c27fac4c10ccd0bc0258509e5298c98ee7e110f5f1ba84e88798c58f
+$ docker pull rethinkdb@sha256:4be1aa0c1b69433b4bb3e7b6b1ae6ab1472a53992c04300f3faf2dc118563c53
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.8 MB (51754709 bytes)**  
+-	Total Size: **51.8 MB (51754674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b9748409ac29202b6becca6c24bc029fb43cfca53746d2d60c5adb657395f5bc`
+-	Image ID: `sha256:6be342c08b0b7599764d49a408016c1e7d91e37818fcf3b1b6403ae909c98c2a`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Tue, 04 Aug 2020 15:42:51 GMT
-ADD file:3af3091e7d2bb40bc1e6550eb5ea290badc6bbf3339105626f245a963cc11450 in / 
-# Tue, 04 Aug 2020 15:42:51 GMT
+# Thu, 10 Sep 2020 00:23:29 GMT
+ADD file:e7407f2294ad23634565820b9669b18ff2a2ca0212a7ec84b9c89d8550859954 in / 
+# Thu, 10 Sep 2020 00:23:30 GMT
 CMD ["bash"]
-# Wed, 05 Aug 2020 06:45:48 GMT
+# Thu, 10 Sep 2020 19:11:33 GMT
 RUN apt-get -qqy update     && apt-get install -y --no-install-recommends ca-certificates gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 14 Aug 2020 21:12:36 GMT
+# Thu, 10 Sep 2020 19:11:35 GMT
 RUN apt-key adv --keyserver keys.gnupg.net --recv-keys "539A3A8C6692E6E3F69B3FE81D85E93F801BB43F"     && echo "deb https://download.rethinkdb.com/repository/debian-buster buster main" > /etc/apt/sources.list.d/rethinkdb.list
-# Fri, 14 Aug 2020 21:12:37 GMT
+# Thu, 10 Sep 2020 19:11:35 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.4.1~0buster
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 RUN apt-get -qqy update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 VOLUME [/data]
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 WORKDIR /data
-# Fri, 14 Aug 2020 21:12:51 GMT
+# Thu, 10 Sep 2020 19:11:45 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Fri, 14 Aug 2020 21:12:51 GMT
+# Thu, 10 Sep 2020 19:11:45 GMT
 EXPOSE 28015 29015 8080
 ```
 
 -	Layers:
-	-	`sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb`  
-		Last Modified: Tue, 04 Aug 2020 15:49:09 GMT  
-		Size: 27.1 MB (27092121 bytes)  
+	-	`sha256:d121f8d1c4128ebc1e95e5bfad90a0189b84eadbbb2fbaad20cbb26d20b2c8a2`  
+		Last Modified: Thu, 10 Sep 2020 00:34:02 GMT  
+		Size: 27.1 MB (27092161 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf7975e8c352cc79bcac0fb7b7d3433054ff8a40b21411d6e9a8cd0da6766776`  
-		Last Modified: Mon, 10 Aug 2020 19:00:55 GMT  
-		Size: 6.7 MB (6669184 bytes)  
+	-	`sha256:c6a131c9a760cc01fd01b1bc0cbc1ee8a96a49f6c1101d7ba959c253df811546`  
+		Last Modified: Thu, 10 Sep 2020 19:12:24 GMT  
+		Size: 6.7 MB (6669146 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f35ca7cb163021376fc027d28e1a9aa0f6df516597597bf7770164b3a67f6d5d`  
-		Last Modified: Fri, 14 Aug 2020 21:13:59 GMT  
+	-	`sha256:108a05642715b9d5d0da410c179378178fd8e8c785b0b0c17fbc57237404eed1`  
+		Last Modified: Thu, 10 Sep 2020 19:12:22 GMT  
 		Size: 2.6 KB (2612 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e6eaa3382fc34b4261ac413cc750fff2b9813c7cc5daabb71cddb0d07e54946`  
-		Last Modified: Fri, 14 Aug 2020 21:14:03 GMT  
-		Size: 18.0 MB (17990699 bytes)  
+	-	`sha256:f194b4fffc2ede18d90c83a173ac387cd7a1cbf7949e556494b8d2d1aa2c5cae`  
+		Last Modified: Thu, 10 Sep 2020 19:12:26 GMT  
+		Size: 18.0 MB (17990662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24551774cb19720139020672b9dac074754221b9b4138cd1ae9047c9d510796f`  
-		Last Modified: Fri, 14 Aug 2020 21:13:59 GMT  
+	-	`sha256:de33d3c8a9da758fb504730266e4e13d31537fd8fe976d98f1f801842a1e8163`  
+		Last Modified: Thu, 10 Sep 2020 19:12:23 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -821,7 +821,7 @@ EXPOSE 28015 29015 8080
 ## `rethinkdb:buster-slim`
 
 ```console
-$ docker pull rethinkdb@sha256:b142027c773d80048656fe1bc6c71c61f08279dd6be6a201bdb87a95ec99a685
+$ docker pull rethinkdb@sha256:e6368957b48390016a8e429ac8ed1567ddb824df9cd482e743a1c445dcc2bf2d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -831,58 +831,58 @@ $ docker pull rethinkdb@sha256:b142027c773d80048656fe1bc6c71c61f08279dd6be6a201b
 ### `rethinkdb:buster-slim` - linux; amd64
 
 ```console
-$ docker pull rethinkdb@sha256:bc780f06c27fac4c10ccd0bc0258509e5298c98ee7e110f5f1ba84e88798c58f
+$ docker pull rethinkdb@sha256:4be1aa0c1b69433b4bb3e7b6b1ae6ab1472a53992c04300f3faf2dc118563c53
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.8 MB (51754709 bytes)**  
+-	Total Size: **51.8 MB (51754674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b9748409ac29202b6becca6c24bc029fb43cfca53746d2d60c5adb657395f5bc`
+-	Image ID: `sha256:6be342c08b0b7599764d49a408016c1e7d91e37818fcf3b1b6403ae909c98c2a`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Tue, 04 Aug 2020 15:42:51 GMT
-ADD file:3af3091e7d2bb40bc1e6550eb5ea290badc6bbf3339105626f245a963cc11450 in / 
-# Tue, 04 Aug 2020 15:42:51 GMT
+# Thu, 10 Sep 2020 00:23:29 GMT
+ADD file:e7407f2294ad23634565820b9669b18ff2a2ca0212a7ec84b9c89d8550859954 in / 
+# Thu, 10 Sep 2020 00:23:30 GMT
 CMD ["bash"]
-# Wed, 05 Aug 2020 06:45:48 GMT
+# Thu, 10 Sep 2020 19:11:33 GMT
 RUN apt-get -qqy update     && apt-get install -y --no-install-recommends ca-certificates gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 14 Aug 2020 21:12:36 GMT
+# Thu, 10 Sep 2020 19:11:35 GMT
 RUN apt-key adv --keyserver keys.gnupg.net --recv-keys "539A3A8C6692E6E3F69B3FE81D85E93F801BB43F"     && echo "deb https://download.rethinkdb.com/repository/debian-buster buster main" > /etc/apt/sources.list.d/rethinkdb.list
-# Fri, 14 Aug 2020 21:12:37 GMT
+# Thu, 10 Sep 2020 19:11:35 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.4.1~0buster
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 RUN apt-get -qqy update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 VOLUME [/data]
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 WORKDIR /data
-# Fri, 14 Aug 2020 21:12:51 GMT
+# Thu, 10 Sep 2020 19:11:45 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Fri, 14 Aug 2020 21:12:51 GMT
+# Thu, 10 Sep 2020 19:11:45 GMT
 EXPOSE 28015 29015 8080
 ```
 
 -	Layers:
-	-	`sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb`  
-		Last Modified: Tue, 04 Aug 2020 15:49:09 GMT  
-		Size: 27.1 MB (27092121 bytes)  
+	-	`sha256:d121f8d1c4128ebc1e95e5bfad90a0189b84eadbbb2fbaad20cbb26d20b2c8a2`  
+		Last Modified: Thu, 10 Sep 2020 00:34:02 GMT  
+		Size: 27.1 MB (27092161 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf7975e8c352cc79bcac0fb7b7d3433054ff8a40b21411d6e9a8cd0da6766776`  
-		Last Modified: Mon, 10 Aug 2020 19:00:55 GMT  
-		Size: 6.7 MB (6669184 bytes)  
+	-	`sha256:c6a131c9a760cc01fd01b1bc0cbc1ee8a96a49f6c1101d7ba959c253df811546`  
+		Last Modified: Thu, 10 Sep 2020 19:12:24 GMT  
+		Size: 6.7 MB (6669146 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f35ca7cb163021376fc027d28e1a9aa0f6df516597597bf7770164b3a67f6d5d`  
-		Last Modified: Fri, 14 Aug 2020 21:13:59 GMT  
+	-	`sha256:108a05642715b9d5d0da410c179378178fd8e8c785b0b0c17fbc57237404eed1`  
+		Last Modified: Thu, 10 Sep 2020 19:12:22 GMT  
 		Size: 2.6 KB (2612 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e6eaa3382fc34b4261ac413cc750fff2b9813c7cc5daabb71cddb0d07e54946`  
-		Last Modified: Fri, 14 Aug 2020 21:14:03 GMT  
-		Size: 18.0 MB (17990699 bytes)  
+	-	`sha256:f194b4fffc2ede18d90c83a173ac387cd7a1cbf7949e556494b8d2d1aa2c5cae`  
+		Last Modified: Thu, 10 Sep 2020 19:12:26 GMT  
+		Size: 18.0 MB (17990662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24551774cb19720139020672b9dac074754221b9b4138cd1ae9047c9d510796f`  
-		Last Modified: Fri, 14 Aug 2020 21:13:59 GMT  
+	-	`sha256:de33d3c8a9da758fb504730266e4e13d31537fd8fe976d98f1f801842a1e8163`  
+		Last Modified: Thu, 10 Sep 2020 19:12:23 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -953,7 +953,7 @@ EXPOSE 28015 29015 8080
 ## `rethinkdb:latest`
 
 ```console
-$ docker pull rethinkdb@sha256:b142027c773d80048656fe1bc6c71c61f08279dd6be6a201bdb87a95ec99a685
+$ docker pull rethinkdb@sha256:e6368957b48390016a8e429ac8ed1567ddb824df9cd482e743a1c445dcc2bf2d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -963,57 +963,57 @@ $ docker pull rethinkdb@sha256:b142027c773d80048656fe1bc6c71c61f08279dd6be6a201b
 ### `rethinkdb:latest` - linux; amd64
 
 ```console
-$ docker pull rethinkdb@sha256:bc780f06c27fac4c10ccd0bc0258509e5298c98ee7e110f5f1ba84e88798c58f
+$ docker pull rethinkdb@sha256:4be1aa0c1b69433b4bb3e7b6b1ae6ab1472a53992c04300f3faf2dc118563c53
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.8 MB (51754709 bytes)**  
+-	Total Size: **51.8 MB (51754674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b9748409ac29202b6becca6c24bc029fb43cfca53746d2d60c5adb657395f5bc`
+-	Image ID: `sha256:6be342c08b0b7599764d49a408016c1e7d91e37818fcf3b1b6403ae909c98c2a`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Tue, 04 Aug 2020 15:42:51 GMT
-ADD file:3af3091e7d2bb40bc1e6550eb5ea290badc6bbf3339105626f245a963cc11450 in / 
-# Tue, 04 Aug 2020 15:42:51 GMT
+# Thu, 10 Sep 2020 00:23:29 GMT
+ADD file:e7407f2294ad23634565820b9669b18ff2a2ca0212a7ec84b9c89d8550859954 in / 
+# Thu, 10 Sep 2020 00:23:30 GMT
 CMD ["bash"]
-# Wed, 05 Aug 2020 06:45:48 GMT
+# Thu, 10 Sep 2020 19:11:33 GMT
 RUN apt-get -qqy update     && apt-get install -y --no-install-recommends ca-certificates gnupg2     && rm -rf /var/lib/apt/lists/*
-# Fri, 14 Aug 2020 21:12:36 GMT
+# Thu, 10 Sep 2020 19:11:35 GMT
 RUN apt-key adv --keyserver keys.gnupg.net --recv-keys "539A3A8C6692E6E3F69B3FE81D85E93F801BB43F"     && echo "deb https://download.rethinkdb.com/repository/debian-buster buster main" > /etc/apt/sources.list.d/rethinkdb.list
-# Fri, 14 Aug 2020 21:12:37 GMT
+# Thu, 10 Sep 2020 19:11:35 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.4.1~0buster
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 RUN apt-get -qqy update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 VOLUME [/data]
-# Fri, 14 Aug 2020 21:12:50 GMT
+# Thu, 10 Sep 2020 19:11:44 GMT
 WORKDIR /data
-# Fri, 14 Aug 2020 21:12:51 GMT
+# Thu, 10 Sep 2020 19:11:45 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Fri, 14 Aug 2020 21:12:51 GMT
+# Thu, 10 Sep 2020 19:11:45 GMT
 EXPOSE 28015 29015 8080
 ```
 
 -	Layers:
-	-	`sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb`  
-		Last Modified: Tue, 04 Aug 2020 15:49:09 GMT  
-		Size: 27.1 MB (27092121 bytes)  
+	-	`sha256:d121f8d1c4128ebc1e95e5bfad90a0189b84eadbbb2fbaad20cbb26d20b2c8a2`  
+		Last Modified: Thu, 10 Sep 2020 00:34:02 GMT  
+		Size: 27.1 MB (27092161 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf7975e8c352cc79bcac0fb7b7d3433054ff8a40b21411d6e9a8cd0da6766776`  
-		Last Modified: Mon, 10 Aug 2020 19:00:55 GMT  
-		Size: 6.7 MB (6669184 bytes)  
+	-	`sha256:c6a131c9a760cc01fd01b1bc0cbc1ee8a96a49f6c1101d7ba959c253df811546`  
+		Last Modified: Thu, 10 Sep 2020 19:12:24 GMT  
+		Size: 6.7 MB (6669146 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f35ca7cb163021376fc027d28e1a9aa0f6df516597597bf7770164b3a67f6d5d`  
-		Last Modified: Fri, 14 Aug 2020 21:13:59 GMT  
+	-	`sha256:108a05642715b9d5d0da410c179378178fd8e8c785b0b0c17fbc57237404eed1`  
+		Last Modified: Thu, 10 Sep 2020 19:12:22 GMT  
 		Size: 2.6 KB (2612 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e6eaa3382fc34b4261ac413cc750fff2b9813c7cc5daabb71cddb0d07e54946`  
-		Last Modified: Fri, 14 Aug 2020 21:14:03 GMT  
-		Size: 18.0 MB (17990699 bytes)  
+	-	`sha256:f194b4fffc2ede18d90c83a173ac387cd7a1cbf7949e556494b8d2d1aa2c5cae`  
+		Last Modified: Thu, 10 Sep 2020 19:12:26 GMT  
+		Size: 18.0 MB (17990662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24551774cb19720139020672b9dac074754221b9b4138cd1ae9047c9d510796f`  
-		Last Modified: Fri, 14 Aug 2020 21:13:59 GMT  
+	-	`sha256:de33d3c8a9da758fb504730266e4e13d31537fd8fe976d98f1f801842a1e8163`  
+		Last Modified: Thu, 10 Sep 2020 19:12:23 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
