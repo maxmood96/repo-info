@@ -1,7 +1,7 @@
 ## `hylang:python3.7-stretch`
 
 ```console
-$ docker pull hylang@sha256:4f512a9780d7db7809e3bed889d1ceb3024910735245287d76eb9c2a1ed22708
+$ docker pull hylang@sha256:3c5d2bdc2676c015a6d4b77c2d374b059f20df2250d377d2af1992b1a59c9dbe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18,77 +18,77 @@ $ docker pull hylang@sha256:4f512a9780d7db7809e3bed889d1ceb3024910735245287d76eb
 ### `hylang:python3.7-stretch` - linux; amd64
 
 ```console
-$ docker pull hylang@sha256:0ebd2b266d472a51a4fb56b350d2f5bd741a9c77f17be8ed8c52f05631077cba
+$ docker pull hylang@sha256:2b9e7ee99cc2d3a96462a580e08334f9647390807ec05c888018b25cffe67e2f
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.2 MB (40196891 bytes)**  
+-	Total Size: **40.2 MB (40194421 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8dbdafe747cfb0bcc985b86c6b41e50aedffedf2b8fdfe9fc1f9d5677c8de25e`
+-	Image ID: `sha256:59ee8639cd8d3f50258f2eee5c222aff8b3fb1ee2f53812726d132e55db0eb0b`
 -	Default Command: `["hy"]`
 
 ```dockerfile
-# Tue, 04 Aug 2020 15:45:49 GMT
-ADD file:16a1ddc40c95b14f8d6c79795047776270ee399f36979aaca45978a67bfee134 in / 
-# Tue, 04 Aug 2020 15:45:49 GMT
+# Thu, 10 Sep 2020 00:30:37 GMT
+ADD file:83fbd2352bbac612c7a954e19abd295607cea4482c556c225308e0241b58e2bf in / 
+# Thu, 10 Sep 2020 00:30:37 GMT
 CMD ["bash"]
-# Tue, 04 Aug 2020 16:36:33 GMT
+# Thu, 10 Sep 2020 17:34:09 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 04 Aug 2020 16:36:34 GMT
+# Thu, 10 Sep 2020 17:34:09 GMT
 ENV LANG=C.UTF-8
-# Tue, 04 Aug 2020 16:36:41 GMT
+# Thu, 10 Sep 2020 17:34:20 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		netbase 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 04 Aug 2020 16:36:41 GMT
+# Thu, 10 Sep 2020 17:34:20 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Tue, 18 Aug 2020 03:46:15 GMT
+# Thu, 10 Sep 2020 17:34:21 GMT
 ENV PYTHON_VERSION=3.7.9
-# Tue, 18 Aug 2020 03:54:34 GMT
+# Thu, 10 Sep 2020 17:45:06 GMT
 RUN set -ex 		&& savedAptMark="$(apt-mark showmanual)" 	&& apt-get update && apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 		$(command -v gpg > /dev/null || echo 'gnupg dirmngr') 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& { command -v gpgconf > /dev/null && gpgconf --kill all || :; } 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 		LDFLAGS="-Wl,--strip-all" 		PROFILE_TASK='-m test.regrtest --pgo 			test_array 			test_base64 			test_binascii 			test_binhex 			test_binop 			test_bytes 			test_c_locale_coercion 			test_class 			test_cmath 			test_codecs 			test_compile 			test_complex 			test_csv 			test_decimal 			test_dict 			test_float 			test_fstring 			test_hashlib 			test_io 			test_iter 			test_json 			test_long 			test_math 			test_memoryview 			test_pickle 			test_re 			test_set 			test_slice 			test_struct 			test_threading 			test_time 			test_traceback 			test_unicode 		' 	&& make install 	&& rm -rf /usr/src/python 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) 			-o \( -type f -a -name 'wininst-*.exe' \) 		\) -exec rm -rf '{}' + 		&& ldconfig 		&& apt-mark auto '.*' > /dev/null 	&& apt-mark manual $savedAptMark 	&& find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false 	&& rm -rf /var/lib/apt/lists/* 		&& python3 --version
-# Tue, 18 Aug 2020 03:54:35 GMT
+# Thu, 10 Sep 2020 17:45:08 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Tue, 08 Sep 2020 20:33:36 GMT
+# Thu, 10 Sep 2020 17:45:08 GMT
 ENV PYTHON_PIP_VERSION=20.2.3
-# Tue, 08 Sep 2020 20:33:36 GMT
+# Thu, 10 Sep 2020 17:45:08 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/fa7dc83944936bf09a0e4cb5d5ec852c0d256599/get-pip.py
-# Tue, 08 Sep 2020 20:33:37 GMT
+# Thu, 10 Sep 2020 17:45:09 GMT
 ENV PYTHON_GET_PIP_SHA256=6e0bb0a2c2533361d7f297ed547237caf1b7507f197835974c0dd7eba998c53c
-# Tue, 08 Sep 2020 20:33:55 GMT
+# Thu, 10 Sep 2020 17:45:30 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum --check --strict -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Tue, 08 Sep 2020 20:33:55 GMT
+# Thu, 10 Sep 2020 17:45:30 GMT
 CMD ["python3"]
-# Wed, 09 Sep 2020 01:03:14 GMT
+# Fri, 11 Sep 2020 09:28:34 GMT
 ENV HY_VERSION=0.19.0
-# Wed, 09 Sep 2020 01:03:19 GMT
+# Fri, 11 Sep 2020 09:28:38 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION"
-# Wed, 09 Sep 2020 01:03:19 GMT
+# Fri, 11 Sep 2020 09:28:38 GMT
 CMD ["hy"]
 ```
 
 -	Layers:
-	-	`sha256:75cb2ebf3b3cb9c601a22edc7d9a120749da33999b30fba22b6cf2b90ee92823`  
-		Last Modified: Tue, 04 Aug 2020 15:52:18 GMT  
-		Size: 22.5 MB (22522276 bytes)  
+	-	`sha256:abb454610128b028301ee40af387d31111a1e699e4ea424fd53186ff77067402`  
+		Last Modified: Thu, 10 Sep 2020 00:37:40 GMT  
+		Size: 22.5 MB (22522274 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fdcfea9efdf8e3e507cc1da20713b3da54f5af9094af9b9bbb8c22187fcfbbb`  
-		Last Modified: Tue, 04 Aug 2020 20:37:48 GMT  
-		Size: 2.5 MB (2485533 bytes)  
+	-	`sha256:607cca7c254bca20c23c661af2a80a9f2d26c1473a9fce0c4e7df958610e5125`  
+		Last Modified: Thu, 10 Sep 2020 18:58:07 GMT  
+		Size: 2.5 MB (2485508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fd7f2870c83583bf9cb93d3d65ec64faf0dc265a07ab055880a6f5f55b0e205`  
-		Last Modified: Tue, 18 Aug 2020 07:53:25 GMT  
-		Size: 10.0 MB (10004047 bytes)  
+	-	`sha256:5e09bd87eaacd2564a11aded5f30cdeb6f48fb6f0ede1e828f9ca1cb52c76a93`  
+		Last Modified: Thu, 10 Sep 2020 18:58:09 GMT  
+		Size: 10.0 MB (10001970 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34be22f375543a8c2831f3a1c4b3ec7290de7c252a3987e2771bf1ca5f6115c0`  
-		Last Modified: Tue, 18 Aug 2020 07:53:23 GMT  
-		Size: 241.0 B  
+	-	`sha256:789a5a11aeffb2eca696932509ac931d098c347d5d4f76bfb854c3b094ef244b`  
+		Last Modified: Thu, 10 Sep 2020 18:58:06 GMT  
+		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:77e2c85b611ac7e5f803fc9fcc1d7e3427438c885c6abdfce63b1619c5b0c034`  
-		Last Modified: Wed, 09 Sep 2020 00:16:38 GMT  
-		Size: 2.4 MB (2403502 bytes)  
+	-	`sha256:c332a8eb758e8effc070d08aedc7897f523c1d278f86e45bb35ec19e7f177b51`  
+		Last Modified: Thu, 10 Sep 2020 18:58:07 GMT  
+		Size: 2.4 MB (2403392 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b4f95d9bd1ec07cfaa422924aec1f89c07b491d794b5e0fd7a0a580b49277d1`  
-		Last Modified: Wed, 09 Sep 2020 01:06:27 GMT  
-		Size: 2.8 MB (2781292 bytes)  
+	-	`sha256:c8d9d917fff7667c669174830aec7fd4195b7abb15ea78a122c3a77c5fd928ae`  
+		Last Modified: Fri, 11 Sep 2020 09:31:01 GMT  
+		Size: 2.8 MB (2781037 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:python3.7-stretch` - linux; arm variant v5
