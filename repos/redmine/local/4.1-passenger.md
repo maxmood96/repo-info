@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d71da2b8a58ab869329d0a8f32757f059bdf2971de12e045bc7fbcc8e078eb6b`
-- Created: `2020-08-05T21:08:16.034320062Z`
-- Virtual Size: ~ 609.90 Mb  
+- Image ID: `sha256:ffcd485d3660cab78ecb0d63f74ff09df7e8a6f91603dd2955aadfe38216e372`
+- Created: `2020-09-11T09:39:40.745326708Z`
+- Virtual Size: ~ 609.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -1067,13 +1067,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.18.1-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.18.1-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ghostscript=9.27~dfsg-2+deb10u3`
+### `dpkg` source package: `ghostscript=9.27~dfsg-2+deb10u4`
 
 Binary Packages:
 
-- `ghostscript=9.27~dfsg-2+deb10u3`
-- `libgs9:amd64=9.27~dfsg-2+deb10u3`
-- `libgs9-common=9.27~dfsg-2+deb10u3`
+- `ghostscript=9.27~dfsg-2+deb10u4`
+- `libgs9:amd64=9.27~dfsg-2+deb10u4`
+- `libgs9-common=9.27~dfsg-2+deb10u4`
 
 Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/libgs9/copyright`, `/usr/share/doc/libgs9-common/copyright`)
 
@@ -1106,17 +1106,17 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ghostscript=9.27~dfsg-2+deb10u3
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_9.27~dfsg-2+deb10u3.dsc' ghostscript_9.27~dfsg-2+deb10u3.dsc 2950 SHA256:ef2614644c327c2b263145161ea713c86cf0df67b3617c336eb6bb89a6282184
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_9.27~dfsg.orig.tar.xz' ghostscript_9.27~dfsg.orig.tar.xz 17723588 SHA256:b90d2117e93c63d774a5ab0a4d6a19c5dcbfd877462ee39a405262948e23ff9b
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_9.27~dfsg-2+deb10u3.debian.tar.xz' ghostscript_9.27~dfsg-2+deb10u3.debian.tar.xz 113724 SHA256:23865ead29e57764e1aed005cf83ec3fdb68b7492d589dbd0eb9e54e1ea80a4b
+$ apt-get source -qq --print-uris ghostscript=9.27~dfsg-2+deb10u4
+'http://security.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_9.27~dfsg-2+deb10u4.dsc' ghostscript_9.27~dfsg-2+deb10u4.dsc 2795 SHA256:b787519674b83e21473218d5889b8e84f6b590483a7b43e3dcac4698ef2d2660
+'http://security.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_9.27~dfsg.orig.tar.xz' ghostscript_9.27~dfsg.orig.tar.xz 17723588 SHA256:b90d2117e93c63d774a5ab0a4d6a19c5dcbfd877462ee39a405262948e23ff9b
+'http://security.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_9.27~dfsg-2+deb10u4.debian.tar.xz' ghostscript_9.27~dfsg-2+deb10u4.debian.tar.xz 124824 SHA256:f9c6d314ade320d6c69dddea99426c90136f90651b4d4bc673f45287f5146e70
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ghostscript/9.27~dfsg-2+deb10u3/ (for browsing the source)
-- https://sources.debian.net/src/ghostscript/9.27~dfsg-2+deb10u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ghostscript/9.27~dfsg-2+deb10u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ghostscript/9.27~dfsg-2+deb10u4/ (for browsing the source)
+- https://sources.debian.net/src/ghostscript/9.27~dfsg-2+deb10u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ghostscript/9.27~dfsg-2+deb10u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `git=1:2.20.1-2+deb10u3`
 
