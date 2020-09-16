@@ -1,7 +1,7 @@
 ## `node:14-alpine`
 
 ```console
-$ docker pull node@sha256:2adf216ab0de2ba0a6245528b13347e7ccca8274e9c00f05c260d132f510e73c
+$ docker pull node@sha256:4fc6379cff820bd00e061257a34209789c784c5b002d16e5da0b3ef6c81ad274
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -69,14 +69,14 @@ CMD ["node"]
 ### `node:14-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull node@sha256:2f05526d185c06f2349b2062538517b87ab7fa9d77e079ad9b186a71c9a53d2b
+$ docker pull node@sha256:e65b3436465eb8f4a61430f3514aa76faba41519510b9606f5ea6869594a451e
 ```
 
 -	Docker Version: 19.03.12
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **40.2 MB (40243497 bytes)**  
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **40.2 MB (40243465 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `16cd9b03a1e9ebdd7c5f851c734d40a91f296ee946c4f2adeda2bc61055e97c8`
+-	Image ID: `sha256:bd1a73c28b259db9305eb0c8fddd56d2ffb4161b23a8228208f1e328687e8d0f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
@@ -98,30 +98,26 @@ COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /u
 # Wed, 16 Sep 2020 17:20:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
 # Wed, 16 Sep 2020 17:20:12 GMT
-RUN ["\/bin\/sh","-c","#(nop) ","CMD [\"node\"]"]
+CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B  
-		MIME: application/octet-stream
-	-	`sha256:2f6fc6b08ccba491f9f130554f7cab13c3f1b9712d323814b73873dd64f8fd59`  
-		Last Modified: Wed, 16 Sep 2020 18:14:58 GMT  
-		Size: 283.0 B  
-		MIME: application/octet-stream
-	-	`sha256:5d2949c567f894b6ac71730cfc383e49a0cbf130f7aee9aa098e0d63ae707a4a`  
-		Last Modified: Wed, 16 Sep 2020 18:14:59 GMT  
-		Size: 2.3 MB (2286041 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:b818bba1683fda1f1d267a1c905cdec45226e0993ebe0c25d6c17d3bb5296cda`  
-		Last Modified: Wed, 16 Sep 2020 18:15:09 GMT  
-		Size: 35.3 MB (35337205 bytes)  
-		MIME: application/octet-stream
 	-	`sha256:b9e3228833e92f0688e0f87234e75965e62e47cfbb9ca8cc5fa19c2e7cd13f80`  
 		Last Modified: Thu, 23 Apr 2020 15:52:05 GMT  
 		Size: 2.6 MB (2619936 bytes)  
-		MIME: application/octet-stream
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b818bba1683fda1f1d267a1c905cdec45226e0993ebe0c25d6c17d3bb5296cda`  
+		Last Modified: Wed, 16 Sep 2020 18:15:09 GMT  
+		Size: 35.3 MB (35337205 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5d2949c567f894b6ac71730cfc383e49a0cbf130f7aee9aa098e0d63ae707a4a`  
+		Last Modified: Wed, 16 Sep 2020 18:14:59 GMT  
+		Size: 2.3 MB (2286041 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2f6fc6b08ccba491f9f130554f7cab13c3f1b9712d323814b73873dd64f8fd59`  
+		Last Modified: Wed, 16 Sep 2020 18:14:58 GMT  
+		Size: 283.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `node:14-alpine` - linux; arm variant v7
 
