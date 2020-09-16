@@ -1064,16 +1064,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-10=10.2.0-6
-'http://deb.debian.org/debian/pool/main/g/gcc-10/gcc-10_10.2.0-6.dsc' gcc-10_10.2.0-6.dsc 27590 SHA256:f1a0a6e97fbe187b772fd3718544bf7a27b94bb8285840e27db22171e5920354
-'http://deb.debian.org/debian/pool/main/g/gcc-10/gcc-10_10.2.0.orig.tar.gz' gcc-10_10.2.0.orig.tar.gz 97337200 SHA256:a04738b0cfcdef4c9b5a04f587cc53dfb45fabb8c363cda1a91cb667bd9ad553
-'http://deb.debian.org/debian/pool/main/g/gcc-10/gcc-10_10.2.0-6.debian.tar.xz' gcc-10_10.2.0-6.debian.tar.xz 2087472 SHA256:5625d2d9278dbd770160c370500706234e8d9ba3e0e5a10e10f248b440c99619
+'http://http.debian.net/debian/pool/main/g/gcc-10/gcc-10_10.2.0-6.dsc' gcc-10_10.2.0-6.dsc 27590 SHA256:f1a0a6e97fbe187b772fd3718544bf7a27b94bb8285840e27db22171e5920354
+'http://http.debian.net/debian/pool/main/g/gcc-10/gcc-10_10.2.0.orig.tar.gz' gcc-10_10.2.0.orig.tar.gz 97337200 SHA256:a04738b0cfcdef4c9b5a04f587cc53dfb45fabb8c363cda1a91cb667bd9ad553
+'http://http.debian.net/debian/pool/main/g/gcc-10/gcc-10_10.2.0-6.debian.tar.xz' gcc-10_10.2.0-6.debian.tar.xz 2087472 SHA256:5625d2d9278dbd770160c370500706234e8d9ba3e0e5a10e10f248b440c99619
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/gcc-10/10.2.0-6/ (for browsing the source)
-- https://sources.debian.net/src/gcc-10/10.2.0-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-10/10.2.0-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-9=9.3.0-17`
 
@@ -2789,10 +2783,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=5.8.7-1
-'http://http.debian.net/debian/pool/main/l/linux/linux_5.8.7-1.dsc' linux_5.8.7-1.dsc 195076 SHA256:4b0d2ab52002d6fc2e4f5f477c885c65076f00853093303de647943e407ba6f7
-'http://http.debian.net/debian/pool/main/l/linux/linux_5.8.7.orig.tar.xz' linux_5.8.7.orig.tar.xz 119174568 SHA256:2c2c9f0ff51a2563be8cd8ce455fc184c1ea5e02012153702ce3f3a264090e54
-'http://http.debian.net/debian/pool/main/l/linux/linux_5.8.7-1.debian.tar.xz' linux_5.8.7-1.debian.tar.xz 1239128 SHA256:8b05854d1429257dd79651f7f6383b4ca14b7770a9ca2838c2170eb2b603efd0
+'http://deb.debian.org/debian/pool/main/l/linux/linux_5.8.7-1.dsc' linux_5.8.7-1.dsc 195076 SHA256:4b0d2ab52002d6fc2e4f5f477c885c65076f00853093303de647943e407ba6f7
+'http://deb.debian.org/debian/pool/main/l/linux/linux_5.8.7.orig.tar.xz' linux_5.8.7.orig.tar.xz 119174568 SHA256:2c2c9f0ff51a2563be8cd8ce455fc184c1ea5e02012153702ce3f3a264090e54
+'http://deb.debian.org/debian/pool/main/l/linux/linux_5.8.7-1.debian.tar.xz' linux_5.8.7-1.debian.tar.xz 1239128 SHA256:8b05854d1429257dd79651f7f6383b4ca14b7770a9ca2838c2170eb2b603efd0
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/linux/5.8.7-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/5.8.7-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/5.8.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `littler=0.3.11-1`
 
@@ -3171,10 +3171,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openldap=2.4.53+dfsg-1
-'http://http.debian.net/debian/pool/main/o/openldap/openldap_2.4.53+dfsg-1.dsc' openldap_2.4.53+dfsg-1.dsc 3060 SHA256:f376a542a80d65d9226333ccf1dfb6d36bb649f0c856070a5a2ccd9bdda42534
-'http://http.debian.net/debian/pool/main/o/openldap/openldap_2.4.53+dfsg.orig.tar.gz' openldap_2.4.53+dfsg.orig.tar.gz 5013515 SHA256:939b281098f63432a0e29de06701823cc158225fce33973b768dc883f6756139
-'http://http.debian.net/debian/pool/main/o/openldap/openldap_2.4.53+dfsg-1.debian.tar.xz' openldap_2.4.53+dfsg-1.debian.tar.xz 167768 SHA256:12eee35b128988a9d8560e60d8097f1fa309e5725a013fbb79d076a7f806eb3f
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.53+dfsg-1.dsc' openldap_2.4.53+dfsg-1.dsc 3060 SHA256:f376a542a80d65d9226333ccf1dfb6d36bb649f0c856070a5a2ccd9bdda42534
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.53+dfsg.orig.tar.gz' openldap_2.4.53+dfsg.orig.tar.gz 5013515 SHA256:939b281098f63432a0e29de06701823cc158225fce33973b768dc883f6756139
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.53+dfsg-1.debian.tar.xz' openldap_2.4.53+dfsg-1.debian.tar.xz 167768 SHA256:12eee35b128988a9d8560e60d8097f1fa309e5725a013fbb79d076a7f806eb3f
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/openldap/2.4.53+dfsg-1/ (for browsing the source)
+- https://sources.debian.net/src/openldap/2.4.53+dfsg-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openldap/2.4.53+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.1g-1`
 
