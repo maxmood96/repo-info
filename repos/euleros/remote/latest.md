@@ -1,7 +1,7 @@
 ## `euleros:latest`
 
 ```console
-$ docker pull euleros@sha256:a6b815e0e99f4dd799b68c29e826922c00cf85b333f8f550c04536e287568714
+$ docker pull euleros@sha256:49d8884e21486bb58c586976f6169e806dd087c0e60aee0a924ba73bb144565c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -40,22 +40,22 @@ CMD ["/bin/bash"]
 ### `euleros:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull euleros@sha256:6487b12effb0185b61533924285ccbdf56aa7277c7186d1e101eda90524d5dcb
+$ docker pull euleros@sha256:c05ffd9824da69fe0a6d0c8e4b15bcf758394e2372363af3f76583a8f8a2551d
 ```
 
--	Docker Version: 18.06.1-ce
+-	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **65.8 MB (65842623 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c36b27a96b28ac8bcd0d36e5b5c7fbf5e56e1135bd973959a3d4fd5e876666c9`
+-	Image ID: `sha256:3b3b845294cfa37a8b1185453b10ecfd2159402ea15d26736facbd8ba69498a4`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 01 Apr 2019 20:02:41 GMT
+# Wed, 16 Sep 2020 19:26:10 GMT
 ADD file:0e0575bcaed4d48af3588d009914ddd2ce89ccb3fdda9433b094b9ab681f0d85 in / 
-# Mon, 01 Apr 2019 20:02:42 GMT
+# Wed, 16 Sep 2020 19:26:16 GMT
 LABEL name=EulerOS-2.3 Base Image vendor=EulerOS license=GPLv2 build-date=20180910
-# Mon, 01 Apr 2019 20:02:43 GMT
+# Wed, 16 Sep 2020 19:26:18 GMT
 CMD ["/bin/bash"]
 ```
 
