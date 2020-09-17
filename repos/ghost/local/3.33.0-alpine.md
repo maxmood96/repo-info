@@ -1,23 +1,23 @@
-# `ghost:3.32.2-alpine`
+# `ghost:3.33.0-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e8dd5f0d27cdb75bbf41caf47b9810c2349c48e6aa1a79474987b86d42b138fd`
-- Created: `2020-09-11T06:48:18.962419968Z`
-- Virtual Size: ~ 375.11 Mb  
+- Image ID: `sha256:40128288ca81dcda5779742757851149b0d7aee322f854b1a65a030d7a49e836`
+- Created: `2020-09-16T18:35:10.195318431Z`
+- Virtual Size: ~ 372.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node","current/index.js"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=12.18.3`
+  - `NODE_VERSION=12.18.4`
   - `YARN_VERSION=1.22.4`
   - `NODE_ENV=production`
   - `GHOST_CLI_VERSION=1.14.1`
   - `GHOST_INSTALL=/var/lib/ghost`
   - `GHOST_CONTENT=/var/lib/ghost/content`
-  - `GHOST_VERSION=3.32.2`
+  - `GHOST_VERSION=3.33.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -160,16 +160,16 @@ OpenSSL
 ### `apk` package: `libgcc`
 
 ```console
-libgcc-9.2.0-r4 description:
+libgcc-9.3.0-r0 description:
 GNU C compiler runtime libraries
 
-libgcc-9.2.0-r4 webpage:
+libgcc-9.3.0-r0 webpage:
 http://gcc.gnu.org
 
-libgcc-9.2.0-r4 installed size:
+libgcc-9.3.0-r0 installed size:
 90112
 
-libgcc-9.2.0-r4 license:
+libgcc-9.3.0-r0 license:
 GPL LGPL
 
 ```
@@ -194,16 +194,16 @@ OpenSSL
 ### `apk` package: `libstdc++`
 
 ```console
-libstdc++-9.2.0-r4 description:
+libstdc++-9.3.0-r0 description:
 GNU C++ standard runtime library
 
-libstdc++-9.2.0-r4 webpage:
+libstdc++-9.3.0-r0 webpage:
 http://gcc.gnu.org
 
-libstdc++-9.2.0-r4 installed size:
+libstdc++-9.3.0-r0 installed size:
 1671168
 
-libstdc++-9.2.0-r4 license:
+libstdc++-9.3.0-r0 license:
 GPL LGPL
 
 ```
