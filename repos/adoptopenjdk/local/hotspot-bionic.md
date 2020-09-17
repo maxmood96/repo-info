@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:29d25d48198cd87f061437a02ee5ac1e32fb25bb554cb60832abb9dbed3a5e86`
-- Created: `2020-08-19T22:00:22.55774148Z`
-- Virtual Size: ~ 458.61 Mb  
+- Image ID: `sha256:8f19d490aad47b94966e504210fc8a033cd57fc4866b9425951b6a0c35c82f48`
+- Created: `2020-09-16T23:37:41.167946761Z`
+- Virtual Size: ~ 457.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -118,19 +118,23 @@ $ apt-get source -qq --print-uris audit=1:2.8.2-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.8.2-1ubuntu1.debian.tar.xz' audit_2.8.2-1ubuntu1.debian.tar.xz 21344 SHA256:2bc93230e3bf01eef5e9a5acff8f904af074e6e39003f1db8941118fbd041ec2
 ```
 
-### `dpkg` source package: `base-files=10.1ubuntu2.9`
+### `dpkg` source package: `base-files=10.1ubuntu2.10`
 
 Binary Packages:
 
-- `base-files=10.1ubuntu2.9`
+- `base-files=10.1ubuntu2.10`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=10.1ubuntu2.10
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.10.dsc' base-files_10.1ubuntu2.10.dsc 1688 SHA256:f6d4715c4dbe63584bcc6cd1852cda4d84081990eb02354445cb03f57e566793
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_10.1ubuntu2.10.tar.xz' base-files_10.1ubuntu2.10.tar.xz 79780 SHA256:b1735b09b972f818eadb2bc99b3f974b49561341a53abea476afe2a6da87273e
+```
 
 ### `dpkg` source package: `base-passwd=3.5.44`
 
@@ -1338,22 +1342,26 @@ $ apt-get source -qq --print-uris p11-kit=0.23.9-2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.9-2.debian.tar.xz' p11-kit_0.23.9-2.debian.tar.xz 21704 SHA256:fa6af69f96f6ccdce95d61e39662a38768b05f8872b2b2008d56cc4fff0ed3fd
 ```
 
-### `dpkg` source package: `pam=1.1.8-3.6ubuntu2.18.04.1`
+### `dpkg` source package: `pam=1.1.8-3.6ubuntu2.18.04.2`
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.1.8-3.6ubuntu2.18.04.1`
-- `libpam-modules-bin=1.1.8-3.6ubuntu2.18.04.1`
-- `libpam-runtime=1.1.8-3.6ubuntu2.18.04.1`
-- `libpam0g:amd64=1.1.8-3.6ubuntu2.18.04.1`
+- `libpam-modules:amd64=1.1.8-3.6ubuntu2.18.04.2`
+- `libpam-modules-bin=1.1.8-3.6ubuntu2.18.04.2`
+- `libpam-runtime=1.1.8-3.6ubuntu2.18.04.2`
+- `libpam0g:amd64=1.1.8-3.6ubuntu2.18.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris pam=1.1.8-3.6ubuntu2.18.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.6ubuntu2.18.04.2.dsc' pam_1.1.8-3.6ubuntu2.18.04.2.dsc 2557 SHA256:5c46f04306f829f2226773f206d598fcca0e982585c62b48dcda683912dfd662
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.6ubuntu2.18.04.2.tar.gz' pam_1.1.8-3.6ubuntu2.18.04.2.tar.gz 1991026 SHA256:fbd0f113c84beeb8cea5a09e0ad8672e79a12519cd53510389591f915fdcdeef
+```
 
 ### `dpkg` source package: `pcre3=2:8.39-9`
 
