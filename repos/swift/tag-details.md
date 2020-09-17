@@ -61,6 +61,20 @@
 -	[`swift:5.2-slim`](#swift52-slim)
 -	[`swift:5.2-xenial`](#swift52-xenial)
 -	[`swift:5.2-xenial-slim`](#swift52-xenial-slim)
+-	[`swift:5.3`](#swift53)
+-	[`swift:5.3-amazonlinux2`](#swift53-amazonlinux2)
+-	[`swift:5.3-amazonlinux2-slim`](#swift53-amazonlinux2-slim)
+-	[`swift:5.3-bionic`](#swift53-bionic)
+-	[`swift:5.3-bionic-slim`](#swift53-bionic-slim)
+-	[`swift:5.3-centos7`](#swift53-centos7)
+-	[`swift:5.3-centos7-slim`](#swift53-centos7-slim)
+-	[`swift:5.3-centos8`](#swift53-centos8)
+-	[`swift:5.3-centos8-slim`](#swift53-centos8-slim)
+-	[`swift:5.3-focal`](#swift53-focal)
+-	[`swift:5.3-focal-slim`](#swift53-focal-slim)
+-	[`swift:5.3-slim`](#swift53-slim)
+-	[`swift:5.3-xenial`](#swift53-xenial)
+-	[`swift:5.3-xenial-slim`](#swift53-xenial-slim)
 -	[`swift:amazonlinux2`](#swiftamazonlinux2)
 -	[`swift:amazonlinux2-slim`](#swiftamazonlinux2-slim)
 -	[`swift:bionic`](#swiftbionic)
@@ -4591,6 +4605,62 @@ RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFOR
 		Last Modified: Thu, 17 Sep 2020 02:56:24 GMT  
 		Size: 32.4 MB (32373788 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `swift:5.3`
+
+**does not exist** (yet?)
+
+## `swift:5.3-amazonlinux2`
+
+**does not exist** (yet?)
+
+## `swift:5.3-amazonlinux2-slim`
+
+**does not exist** (yet?)
+
+## `swift:5.3-bionic`
+
+**does not exist** (yet?)
+
+## `swift:5.3-bionic-slim`
+
+**does not exist** (yet?)
+
+## `swift:5.3-centos7`
+
+**does not exist** (yet?)
+
+## `swift:5.3-centos7-slim`
+
+**does not exist** (yet?)
+
+## `swift:5.3-centos8`
+
+**does not exist** (yet?)
+
+## `swift:5.3-centos8-slim`
+
+**does not exist** (yet?)
+
+## `swift:5.3-focal`
+
+**does not exist** (yet?)
+
+## `swift:5.3-focal-slim`
+
+**does not exist** (yet?)
+
+## `swift:5.3-slim`
+
+**does not exist** (yet?)
+
+## `swift:5.3-xenial`
+
+**does not exist** (yet?)
+
+## `swift:5.3-xenial-slim`
+
+**does not exist** (yet?)
 
 ## `swift:amazonlinux2`
 
