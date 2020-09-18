@@ -1,7 +1,7 @@
 ## `postgres:12-alpine`
 
 ```console
-$ docker pull postgres@sha256:955339296d234ba499f195d9af733361740299804bf4616038ad2134b266981b
+$ docker pull postgres@sha256:cb62ac61a0b796a3f9f89f0cf41fea283e5324f21611f1bbf65a1bdab08b44f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -278,14 +278,14 @@ CMD ["postgres"]
 ### `postgres:12-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull postgres@sha256:6bdd7b49c7d9887c26442aa89476a003a8e1ada8bf61da94eb6d5f1b12aa2c44
+$ docker pull postgres@sha256:e82f60281f7e30ea5ed2fc7a5347c02d4446989145c4eb431005b455272635ee
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **61.0 MB (60961642 bytes)**  
+-	Total Size: **61.0 MB (60961644 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a608f51d626f700fcce19d426474e93cc17f4c870961100dc491c3d025f6f3a1`
+-	Image ID: `sha256:a91a0bf2091242d260ec21b5a7612db04e262fc147c3e1f3c354d6833e6b8474`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -318,13 +318,13 @@ ENV PGDATA=/var/lib/postgresql/data
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
 # Fri, 14 Aug 2020 17:49:07 GMT
 VOLUME [/var/lib/postgresql/data]
-# Fri, 14 Aug 2020 17:49:07 GMT
-COPY file:33e6fc6ab9ea2b87183e496ad72f1df7f682913ffd781b1451fd178b0c7d745a in /usr/local/bin/ 
-# Fri, 14 Aug 2020 17:49:08 GMT
+# Fri, 18 Sep 2020 01:21:46 GMT
+COPY file:8f542efd076b9b67ef64928f3c0185ed50bfcbbc3572436a7222e879810d747f in /usr/local/bin/ 
+# Fri, 18 Sep 2020 01:21:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 14 Aug 2020 17:49:09 GMT
+# Fri, 18 Sep 2020 01:21:50 GMT
 EXPOSE 5432
-# Fri, 14 Aug 2020 17:49:10 GMT
+# Fri, 18 Sep 2020 01:21:52 GMT
 CMD ["postgres"]
 ```
 
@@ -357,9 +357,9 @@ CMD ["postgres"]
 		Last Modified: Fri, 14 Aug 2020 19:15:15 GMT  
 		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5cb39c38bd557e83d95ce563b9af159a6d494888fb4299519065768efb36889`  
-		Last Modified: Fri, 14 Aug 2020 19:15:15 GMT  
-		Size: 4.3 KB (4263 bytes)  
+	-	`sha256:54273826ddb1d7f11c29cfebf75ee43e3bdd2c1dd5752f25dce7839ff3265d31`  
+		Last Modified: Fri, 18 Sep 2020 01:29:29 GMT  
+		Size: 4.3 KB (4265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:12-alpine` - linux; 386
