@@ -1,10 +1,10 @@
-# `alpine:20200626`
+# `alpine:20200917`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3c791e92a856b26e22413b05ecd62316e21452f8867fcb35fad93f52ee6963fd`
-- Created: `2020-06-26T19:19:39.712044707Z`
-- Virtual Size: ~ 5.57 Mb  
+- Image ID: `sha256:003bcf04572978ef01379cf3cf9129ca7c11fc46e19f51c90baa59513f56642d`
+- Created: `2020-09-18T02:19:16.192038762Z`
+- Virtual Size: ~ 5.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -50,16 +50,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.10.5-r1 description:
+apk-tools-2.12.0_rc1-r2 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.10.5-r1 webpage:
+apk-tools-2.12.0_rc1-r2 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.10.5-r1 installed size:
-262144
+apk-tools-2.12.0_rc1-r2 installed size:
+303104
 
-apk-tools-2.10.5-r1 license:
+apk-tools-2.12.0_rc1-r2 license:
 GPL-2.0-only
 
 ```
@@ -67,16 +67,16 @@ GPL-2.0-only
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.31.1-r21 description:
+busybox-1.32.0-r3 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.31.1-r21 webpage:
+busybox-1.32.0-r3 webpage:
 https://busybox.net/
 
-busybox-1.31.1-r21 installed size:
-962560
+busybox-1.32.0-r3 installed size:
+966656
 
-busybox-1.31.1-r21 license:
+busybox-1.32.0-r3 license:
 GPL-2.0-only
 
 ```
@@ -169,16 +169,16 @@ ISC
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.24-r9 description:
+musl-1.2.1-r1 description:
 the musl c library (libc) implementation
 
-musl-1.1.24-r9 webpage:
+musl-1.2.1-r1 webpage:
 https://musl.libc.org/
 
-musl-1.1.24-r9 installed size:
-614400
+musl-1.2.1-r1 installed size:
+618496
 
-musl-1.1.24-r9 license:
+musl-1.2.1-r1 license:
 MIT
 
 ```
@@ -186,16 +186,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.24-r9 description:
+musl-utils-1.2.1-r1 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.24-r9 webpage:
+musl-utils-1.2.1-r1 webpage:
 https://musl.libc.org/
 
-musl-utils-1.1.24-r9 installed size:
-151552
+musl-utils-1.2.1-r1 installed size:
+147456
 
-musl-utils-1.1.24-r9 license:
+musl-utils-1.2.1-r1 license:
 MIT BSD GPL2+
 
 ```
@@ -220,16 +220,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.31.1-r21 description:
+ssl_client-1.32.0-r3 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.31.1-r21 webpage:
+ssl_client-1.32.0-r3 webpage:
 https://busybox.net/
 
-ssl_client-1.31.1-r21 installed size:
+ssl_client-1.32.0-r3 installed size:
 28672
 
-ssl_client-1.31.1-r21 license:
+ssl_client-1.32.0-r3 license:
 GPL-2.0-only
 
 ```
