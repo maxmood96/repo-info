@@ -1,10 +1,10 @@
-# `plone:5.2.2-python38`
+# `plone:5.2.2-python36`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9c691826450b86a6028d7d3235c927b2bb793c262604cef950e0d8ec3d7747f5`
-- Created: `2020-09-19T00:32:18.726969268Z`
-- Virtual Size: ~ 545.04 Mb  
+- Image ID: `sha256:b40c64f006294812cb5fd788c58395f607b782e0827c72b3fe3644cd39afb28b`
+- Created: `2020-09-19T00:39:07.224564361Z`
+- Virtual Size: ~ 542.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568`
-  - `PYTHON_VERSION=3.8.5`
+  - `GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D`
+  - `PYTHON_VERSION=3.6.12`
   - `PYTHON_PIP_VERSION=20.2.3`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/fa7dc83944936bf09a0e4cb5d5ec852c0d256599/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=6e0bb0a2c2533361d7f297ed547237caf1b7507f197835974c0dd7eba998c53c`

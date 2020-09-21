@@ -1,10 +1,10 @@
-# `plone:5.2.1-alpine`
+# `plone:5.2.2-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d3e056171b31cd3fa10da6a9bb64ae9c45a6b8201571432a29a4823b71e97358`
-- Created: `2020-09-09T01:32:41.594482942Z`
-- Virtual Size: ~ 419.32 Mb  
+- Image ID: `sha256:1a0da05b9009c7037591d27c42c600f69f346757e4e4f04a2eed9324d91ca4c9`
+- Created: `2020-09-19T00:49:02.111408187Z`
+- Virtual Size: ~ 388.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,26 +12,26 @@
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D`
-  - `PYTHON_VERSION=3.7.9`
+  - `GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568`
+  - `PYTHON_VERSION=3.8.5`
   - `PYTHON_PIP_VERSION=20.2.3`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/fa7dc83944936bf09a0e4cb5d5ec852c0d256599/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=6e0bb0a2c2533361d7f297ed547237caf1b7507f197835974c0dd7eba998c53c`
-  - `PIP=19.3.1`
-  - `ZC_BUILDOUT=2.13.2`
-  - `SETUPTOOLS=45.0.0`
-  - `WHEEL=0.33.6`
+  - `PIP=20.2.3`
+  - `ZC_BUILDOUT=2.13.3`
+  - `SETUPTOOLS=50.3.0`
+  - `WHEEL=0.35.1`
   - `PLONE_MAJOR=5.2`
-  - `PLONE_VERSION=5.2.1`
-  - `PLONE_VERSION_RELEASE=Plone-5.2.1-UnifiedInstaller-r2`
-  - `PLONE_MD5=42407c0313791d3626dc86e674684efe`
+  - `PLONE_VERSION=5.2.2`
+  - `PLONE_VERSION_RELEASE=Plone-5.2.2-UnifiedInstaller`
+  - `PLONE_MD5=a603eddfd3abb0528f0861472ebac934`
 - Labels:
   - `description=Plone image, based on Unified Installer`
   - `maintainer=Plone Community`
   - `name=Plone 5.2`
   - `os=alpine`
-  - `os.version=3.11`
-  - `plone=5.2.1`
+  - `os.version=3.12`
+  - `plone=5.2.2`
 
 ## `apk` (`.apk`-based packages)
 
@@ -531,16 +531,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.9.10-r4 description:
+libxml2-2.9.10-r5 description:
 XML parsing library, version 2
 
-libxml2-2.9.10-r4 webpage:
+libxml2-2.9.10-r5 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.9.10-r4 installed size:
+libxml2-2.9.10-r5 installed size:
 1220608
 
-libxml2-2.9.10-r4 license:
+libxml2-2.9.10-r5 license:
 MIT
 
 ```
