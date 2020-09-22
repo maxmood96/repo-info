@@ -1,7 +1,7 @@
 ## `kong:ubuntu`
 
 ```console
-$ docker pull kong@sha256:c74b8af389abe62df41184d43e128213f620d1bc538e53ae895be6760ecd020a
+$ docker pull kong@sha256:c46abd9224871542b993e05725a30e71431e9a55ee8c0dc53b5ba43ecbdfeeff
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull kong@sha256:c74b8af389abe62df41184d43e128213f620d1bc538e53ae895be6
 ### `kong:ubuntu` - linux; amd64
 
 ```console
-$ docker pull kong@sha256:49ea3e01a38bb650332ccbf1eb33941c3319ba088f2483f3b10280f898dfe31e
+$ docker pull kong@sha256:b6c9c4585816f62d96eaf14f1c5c2377e50748899e7cbc12809b68aeb95fc76b
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **107.4 MB (107391115 bytes)**  
+-	Total Size: **132.4 MB (132418876 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e209451e45af09f8f447636414ad2c4c06c3ee9e70675e6f0525e81fc1f8e1e`
+-	Image ID: `sha256:e9d4d12fa8b6d943ef08110f331501b359dce4712041ee6b9091542ccf24de00`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kong","docker-start"]`
 
@@ -40,25 +40,25 @@ ARG ASSET=ce
 ENV ASSET=ce
 # Thu, 17 Sep 2020 00:54:40 GMT
 ARG EE_PORTS
-# Thu, 17 Sep 2020 00:54:41 GMT
-COPY file:c24b3b9739a4614fa0679c1a90bac51eb61f9f84b2b02c5c24925e0c84878649 in /tmp/kong.deb 
-# Thu, 17 Sep 2020 00:54:41 GMT
-ARG KONG_VERSION=2.1.3
-# Thu, 17 Sep 2020 00:54:41 GMT
-ENV KONG_VERSION=2.1.3
-# Thu, 17 Sep 2020 00:55:30 GMT
-RUN set -ex;     apt-get update &&     if [ "$ASSET" = "ce" ] ; then         apt-get install -y curl &&         curl -fL "https://bintray.com/kong/kong-deb/download_file?file_path=kong-$KONG_VERSION.xenial.$(dpkg --print-architecture).deb" -o /tmp/kong.deb         && apt-get purge -y curl;     fi;     apt-get install -y --no-install-recommends unzip git 	&& apt install --yes /tmp/kong.deb 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /tmp/kong.deb 	&& useradd -ms /bin/bash kong     && mkdir -p "/usr/local/kong" 	&& chown -R kong:0 /usr/local/kong 	&& chown kong:0 /usr/local/bin/kong 	&& chmod -R g=u /usr/local/kong     && if [ "$ASSET" = "ce" ] ; then         kong version ;     fi;
-# Thu, 17 Sep 2020 00:55:31 GMT
+# Tue, 22 Sep 2020 18:32:44 GMT
+COPY file:5da22ad111df95d5c0f9c17c60cd4123a51ad46a41d3f442fca7b2bcc8d7d11b in /tmp/kong.deb 
+# Tue, 22 Sep 2020 18:32:44 GMT
+ARG KONG_VERSION=2.1.4
+# Tue, 22 Sep 2020 18:32:44 GMT
+ENV KONG_VERSION=2.1.4
+# Tue, 22 Sep 2020 18:33:35 GMT
+RUN set -ex;     apt-get update &&     if [ "$ASSET" = "ce" ] ; then         apt-get install -y curl &&         curl -fL "https://bintray.com/kong/kong-deb/download_file?file_path=kong-$KONG_VERSION.xenial.$(dpkg --print-architecture).deb" -o /tmp/kong.deb         && apt-get purge -y curl;     fi;     apt-get install -y --no-install-recommends unzip git 	&& apt update 	&& apt install --yes /tmp/kong.deb 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /tmp/kong.deb 	&& useradd -ms /bin/bash kong     && mkdir -p "/usr/local/kong" 	&& chown -R kong:0 /usr/local/kong 	&& chown kong:0 /usr/local/bin/kong 	&& chmod -R g=u /usr/local/kong     && if [ "$ASSET" = "ce" ] ; then         kong version ;     fi;
+# Tue, 22 Sep 2020 18:33:35 GMT
 COPY file:3f0ac4e41f7591702adf841081157578863b364bb31cfb02189411168744a26e in /docker-entrypoint.sh 
-# Thu, 17 Sep 2020 00:55:31 GMT
+# Tue, 22 Sep 2020 18:33:35 GMT
 USER kong
-# Thu, 17 Sep 2020 00:55:32 GMT
+# Tue, 22 Sep 2020 18:33:35 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 17 Sep 2020 00:55:32 GMT
+# Tue, 22 Sep 2020 18:33:35 GMT
 EXPOSE 8000 8001 8443 8444
-# Thu, 17 Sep 2020 00:55:32 GMT
+# Tue, 22 Sep 2020 18:33:36 GMT
 STOPSIGNAL SIGQUIT
-# Thu, 17 Sep 2020 00:55:32 GMT
+# Tue, 22 Sep 2020 18:33:36 GMT
 CMD ["kong" "docker-start"]
 ```
 
@@ -79,30 +79,30 @@ CMD ["kong" "docker-start"]
 		Last Modified: Wed, 16 Sep 2020 22:23:34 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9826342fb27eaa3beafc4a141f0e1c49968a485cbebc1f5eb0b6a5523bec968b`  
-		Last Modified: Thu, 17 Sep 2020 00:56:36 GMT  
-		Size: 126.0 B  
+	-	`sha256:a74124ee8b5b27ac20659d1c31aa7e691cb3b0da68bb21e14cca1399cd7b1bff`  
+		Last Modified: Tue, 22 Sep 2020 18:35:09 GMT  
+		Size: 25.1 MB (25081969 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:869f29c8778d85369c468b39298fe3c6e68425c27e7cf7068134e6c44696bb76`  
-		Last Modified: Thu, 17 Sep 2020 00:56:49 GMT  
-		Size: 62.9 MB (62897943 bytes)  
+	-	`sha256:bfa82bbe4af99cb57d17bf68f4cc8ad3179e6e0d85efb7b7c918f1abef25e65d`  
+		Last Modified: Tue, 22 Sep 2020 18:35:20 GMT  
+		Size: 62.8 MB (62843860 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6427e188c24ac19f64843eb0f95803e796b8037c754e24b0bd4398f9d9617b4c`  
-		Last Modified: Thu, 17 Sep 2020 00:56:36 GMT  
-		Size: 688.0 B  
+	-	`sha256:eb0d396e071958ec9b402d9f95b5674e8b6b667aed60e85b040531fd368fab94`  
+		Last Modified: Tue, 22 Sep 2020 18:35:07 GMT  
+		Size: 689.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `kong:ubuntu` - linux; arm64 variant v8
 
 ```console
-$ docker pull kong@sha256:cf2a0e06e26b0c7c9f64112c2568370f97850602154dc2de1bfdaa065f7200d0
+$ docker pull kong@sha256:aa3c9f2b22a112279247b34d7762a3bcbd9bd39902a20f827eebcc79035d12d3
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **99.4 MB (99371034 bytes)**  
+-	Total Size: **124.4 MB (124399937 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d540f9abba0a83573d9d8b42597d541192daaaf9947a3fc8d1c2e952434ccce`
+-	Image ID: `sha256:f9da527d6de64cca080ca3a056d07e0fb24880c6593438d571a5850683e62b5d`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kong","docker-start"]`
 
@@ -123,25 +123,25 @@ ARG ASSET=ce
 ENV ASSET=ce
 # Thu, 17 Sep 2020 02:54:44 GMT
 ARG EE_PORTS
-# Thu, 17 Sep 2020 02:54:50 GMT
-COPY file:c24b3b9739a4614fa0679c1a90bac51eb61f9f84b2b02c5c24925e0c84878649 in /tmp/kong.deb 
-# Thu, 17 Sep 2020 02:54:58 GMT
-ARG KONG_VERSION=2.1.3
-# Thu, 17 Sep 2020 02:54:58 GMT
-ENV KONG_VERSION=2.1.3
-# Thu, 17 Sep 2020 02:56:04 GMT
-RUN set -ex;     apt-get update &&     if [ "$ASSET" = "ce" ] ; then         apt-get install -y curl &&         curl -fL "https://bintray.com/kong/kong-deb/download_file?file_path=kong-$KONG_VERSION.xenial.$(dpkg --print-architecture).deb" -o /tmp/kong.deb         && apt-get purge -y curl;     fi;     apt-get install -y --no-install-recommends unzip git 	&& apt install --yes /tmp/kong.deb 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /tmp/kong.deb 	&& useradd -ms /bin/bash kong     && mkdir -p "/usr/local/kong" 	&& chown -R kong:0 /usr/local/kong 	&& chown kong:0 /usr/local/bin/kong 	&& chmod -R g=u /usr/local/kong     && if [ "$ASSET" = "ce" ] ; then         kong version ;     fi;
-# Thu, 17 Sep 2020 02:56:14 GMT
+# Tue, 22 Sep 2020 19:06:27 GMT
+COPY file:5da22ad111df95d5c0f9c17c60cd4123a51ad46a41d3f442fca7b2bcc8d7d11b in /tmp/kong.deb 
+# Tue, 22 Sep 2020 19:06:32 GMT
+ARG KONG_VERSION=2.1.4
+# Tue, 22 Sep 2020 19:06:42 GMT
+ENV KONG_VERSION=2.1.4
+# Tue, 22 Sep 2020 19:07:45 GMT
+RUN set -ex;     apt-get update &&     if [ "$ASSET" = "ce" ] ; then         apt-get install -y curl &&         curl -fL "https://bintray.com/kong/kong-deb/download_file?file_path=kong-$KONG_VERSION.xenial.$(dpkg --print-architecture).deb" -o /tmp/kong.deb         && apt-get purge -y curl;     fi;     apt-get install -y --no-install-recommends unzip git 	&& apt update 	&& apt install --yes /tmp/kong.deb 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /tmp/kong.deb 	&& useradd -ms /bin/bash kong     && mkdir -p "/usr/local/kong" 	&& chown -R kong:0 /usr/local/kong 	&& chown kong:0 /usr/local/bin/kong 	&& chmod -R g=u /usr/local/kong     && if [ "$ASSET" = "ce" ] ; then         kong version ;     fi;
+# Tue, 22 Sep 2020 19:07:56 GMT
 COPY file:3f0ac4e41f7591702adf841081157578863b364bb31cfb02189411168744a26e in /docker-entrypoint.sh 
-# Thu, 17 Sep 2020 02:56:24 GMT
+# Tue, 22 Sep 2020 19:07:58 GMT
 USER kong
-# Thu, 17 Sep 2020 02:56:29 GMT
+# Tue, 22 Sep 2020 19:08:03 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 17 Sep 2020 02:56:36 GMT
+# Tue, 22 Sep 2020 19:08:08 GMT
 EXPOSE 8000 8001 8443 8444
-# Thu, 17 Sep 2020 02:56:37 GMT
+# Tue, 22 Sep 2020 19:08:18 GMT
 STOPSIGNAL SIGQUIT
-# Thu, 17 Sep 2020 02:56:38 GMT
+# Tue, 22 Sep 2020 19:08:22 GMT
 CMD ["kong" "docker-start"]
 ```
 
@@ -162,15 +162,15 @@ CMD ["kong" "docker-start"]
 		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:331c818c296154fdae2e291c72869a5ffde5a8c79e0238040304b0e5481d7f6f`  
-		Last Modified: Thu, 17 Sep 2020 02:58:37 GMT  
-		Size: 131.0 B  
+	-	`sha256:22e22eb177a0a8ba6cee0b740fd76ddc74851c5ffd21a3f3b704f090c84533c9`  
+		Last Modified: Tue, 22 Sep 2020 19:09:28 GMT  
+		Size: 25.1 MB (25081963 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f757956672f115ff460f191048572752a756519942f82c3f456e40a421f743e0`  
-		Last Modified: Thu, 17 Sep 2020 02:59:00 GMT  
-		Size: 59.3 MB (59271779 bytes)  
+	-	`sha256:e2adb0c01224f714e5ac2fd38d625c56f1b21b20e54e8f18fc8ad36f85dbd522`  
+		Last Modified: Tue, 22 Sep 2020 19:09:46 GMT  
+		Size: 59.2 MB (59218850 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbfc84616670314250275b0fb1b70efc6bc0a35cc5c0b5340e7f01f69cc6d1e9`  
-		Last Modified: Thu, 17 Sep 2020 02:58:37 GMT  
+	-	`sha256:6a63d383a3de668080f4832cf2bb437eb55a3543f06105d80bad215bde1c1bf8`  
+		Last Modified: Tue, 22 Sep 2020 19:09:27 GMT  
 		Size: 689.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
