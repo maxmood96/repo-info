@@ -998,14 +998,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-10/copyright`, `/usr/share/doc/g++-1
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-10=10.2.0-6ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.2.0-6ubuntu1.dsc' gcc-10_10.2.0-6ubuntu1.dsc 30426 SHA256:2b71189fe02e4cc589495d0ed3781d3b14c21e727ed47681356bf7c81504570a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.2.0.orig.tar.gz' gcc-10_10.2.0.orig.tar.gz 94773960 SHA256:8c932c6527c2d53eebea682092591b701a79901d9f308697f2cf8d443578ac40
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.2.0-6ubuntu1.debian.tar.xz' gcc-10_10.2.0-6ubuntu1.debian.tar.xz 2088068 SHA256:d712393f20c7eac5405c1cde0ddb560044d5887e7a2530cd79ede9cf10eecbdd
-```
 
 ### `dpkg` source package: `gcc-defaults=1.188ubuntu1`
 
@@ -1019,13 +1014,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.188ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.188ubuntu1.dsc' gcc-defaults_1.188ubuntu1.dsc 16619 SHA256:abf26d53219fbdc60fb91bcdfdf3300b1a59525a4d0bd35803c83b9d4c038e4c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.188ubuntu1.tar.xz' gcc-defaults_1.188ubuntu1.tar.xz 48416 SHA256:aba102c94d659916b851ac811c4c00e4edcc98e236ecf57b89fafc0e262e9f38
-```
 
 ### `dpkg` source package: `gdbm=1.18.1-5.1`
 
@@ -1156,14 +1147,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.31-0ubuntu11
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu11.dsc' glibc_2.31-0ubuntu11.dsc 9452 SHA256:fd159510bac5c27182a3cf450691b0e38151fd069f46c64cd01657e91514b558
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17317924 SHA256:2b22c7b04a36747d6c74796a73193a6f8856bfd1efc551b5db96baefa053fe5e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu11.debian.tar.xz' glibc_2.31-0ubuntu11.debian.tar.xz 868156 SHA256:7c118f746038caba3dc8b489b31a5376e7bb3b6f0e75598cc3692cfc578eb432
-```
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-6ubuntu1`
 
@@ -2179,14 +2165,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.37-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-2.dsc' libpng1.6_1.6.37-2.dsc 2225 SHA256:4567a54b5804e068e61477e9cd78346557b85b72add10ef10f130a5be169662e
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37.orig.tar.gz' libpng1.6_1.6.37.orig.tar.gz 1508805 SHA256:ca74a0dace179a8422187671aee97dd3892b53e168627145271cad5b5ac81307
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-2.debian.tar.xz' libpng1.6_1.6.37-2.debian.tar.xz 31844 SHA256:097cee0f0da4013d0231d37e090204ab3fa592b4fecdaaed3fca8d13affcaae8
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libpng1.6/1.6.37-2/
+
 
 ### `dpkg` source package: `libpsl=0.21.0-1.1`
 
@@ -2258,14 +2243,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 - `Unlicense,`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.48.8+dfsg-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.48.8+dfsg-1.dsc' librsvg_2.48.8+dfsg-1.dsc 3107 SHA256:979cdf2b6e55b7fba22f1ea5d3605d751cec518df765a9176defba90f78a52d0
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.48.8+dfsg.orig.tar.xz' librsvg_2.48.8+dfsg.orig.tar.xz 12651304 SHA256:47c8cbfb6b1663b8c03314cf54f6f96764760b2960ed9f230f9d3fde8313f736
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.48.8+dfsg-1.debian.tar.xz' librsvg_2.48.8+dfsg-1.debian.tar.xz 24308 SHA256:0e18b6ed168a938d4ae2b8c61c4bc97ace767de4bcf2cfd89eb9bb7e296ca38e
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/librsvg/2.48.8+dfsg-1/
+
 
 ### `dpkg` source package: `libseccomp=2.4.3-1ubuntu4`
 
@@ -3267,14 +3251,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.51+dfsg-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.51+dfsg-1ubuntu1.dsc' openldap_2.4.51+dfsg-1ubuntu1.dsc 3154 SHA256:b8d7ad5f4c495fb0efa4483a35953f768335fbc49a8bc7a60e7905f33bf33621
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.51+dfsg.orig.tar.gz' openldap_2.4.51+dfsg.orig.tar.gz 5009322 SHA256:315893a5e399a69cdac88794dbff89f7989558c2faa138e82d6fb75e729b7fa6
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.51+dfsg-1ubuntu1.debian.tar.xz' openldap_2.4.51+dfsg-1ubuntu1.debian.tar.xz 181676 SHA256:8b1841aa43c30d418f5eb83b01ed097d49b8dda43f6e0cdd43df0d1090aa5217
-```
 
 ### `dpkg` source package: `openssh=1:8.3p1-1`
 
@@ -3315,15 +3294,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu3.dsc' openssl_1.1.1f-1ubuntu3.dsc 2705 SHA256:3b58d6628e89793a297bc5591901bfe3374a708042d384df6e8ec908e5e3c39c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA256:186c6bfe6ecfba7a5b48c47f8a1673d0f3b0e5ba2e25602dd23b629975da3f35
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz.asc' openssl_1.1.1f.orig.tar.gz.asc 488 SHA256:e9c68097b05be8873e41bd33a9269378ca58e515fbaa30a512c315b602d41dda
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu3.debian.tar.xz' openssl_1.1.1f-1ubuntu3.debian.tar.xz 145256 SHA256:dd675e883550730e221da191588a0b27a5a76115f754e37672681d198505411a
-```
 
 ### `dpkg` source package: `p11-kit=0.23.21-2build1`
 
@@ -3782,14 +3755,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.8=3.8.5-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.5-2ubuntu1.dsc' python3.8_3.8.5-2ubuntu1.dsc 3380 SHA256:a8de726613fd74e51a04739f6e43408e79e4ff7b08919864d57d757e9c615f00
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.5.orig.tar.xz' python3.8_3.8.5.orig.tar.xz 18019640 SHA256:e3003ed57db17e617acb382b0cade29a248c6026b1bd8aad1f976e9af66a83b0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.5-2ubuntu1.debian.tar.xz' python3.8_3.8.5-2ubuntu1.debian.tar.xz 228584 SHA256:5070a79986e335b7f4204a0877d5dc13d5ff67d371e6b6a51ada171663077590
-```
 
 ### `dpkg` source package: `readline=8.0-4`
 
