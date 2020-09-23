@@ -1,10 +1,10 @@
-# `kong:2.1.3-centos`
+# `kong:2.1.4-centos`
 
 ## Docker Metadata
 
-- Image ID: `sha256:91184190279322c37ed5a74b53067b55e82a9baf4eb1bae17754404bf9a2835a`
-- Created: `2020-08-28T19:50:52.707051891Z`
-- Virtual Size: ~ 363.83 Mb  
+- Image ID: `sha256:470a4135b22d0a445cee20ac8a5783deb5c8e97244b6d706eb005239c7d01ee4`
+- Created: `2020-09-22T18:34:20.739059812Z`
+- Virtual Size: ~ 363.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `ASSET=ce`
-  - `KONG_VERSION=2.1.3`
+  - `KONG_VERSION=2.1.4`
 - Labels:
   - `maintainer=Kong <support@konghq.com>`
   - `org.label-schema.build-date=20200809`
@@ -817,7 +817,7 @@ Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/kmod-20-28.el7.src.rpm
 ```
 
-### `rpm` package: `kong-2.1.3-1.x86_64`
+### `rpm` package: `kong-2.1.4-1.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 

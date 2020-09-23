@@ -1,9 +1,9 @@
-# `kong:2.1.3-alpine`
+# `kong:2.1.4-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a62a8307bf7fd7fe6031f9b0ff3763a461143e6da341da33ea955ee31877ba02`
-- Created: `2020-08-20T23:19:56.706654316Z`
+- Image ID: `sha256:d55bcda861cae15b7310f14adc6b1f942f3d867ef30b6ff8da9268ac0ebd58a1`
+- Created: `2020-09-22T18:32:38.602778192Z`
 - Virtual Size: ~ 147.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `ASSET=ce`
-  - `KONG_VERSION=2.1.3`
+  - `KONG_VERSION=2.1.4`
 - Labels:
   - `maintainer=Kong <support@konghq.com>`
 
@@ -259,16 +259,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.67.0-r0 description:
+libcurl-7.67.0-r1 description:
 The multiprotocol file transfer library
 
-libcurl-7.67.0-r0 webpage:
+libcurl-7.67.0-r1 webpage:
 https://curl.haxx.se/
 
-libcurl-7.67.0-r0 installed size:
+libcurl-7.67.0-r1 installed size:
 458752
 
-libcurl-7.67.0-r0 license:
+libcurl-7.67.0-r1 license:
 MIT
 
 ```
