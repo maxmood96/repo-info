@@ -1,7 +1,7 @@
 ## `postgres:9-alpine`
 
 ```console
-$ docker pull postgres@sha256:d1d3e651bb09133e1e9bf06f57e40a02096fd18d993ee789e3a6148083971258
+$ docker pull postgres@sha256:94c172a238678d01ce53722b2323985132b4d4c9b55f99edc896822bf8030ecf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -110,14 +110,14 @@ CMD ["postgres"]
 ### `postgres:9-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull postgres@sha256:01e2df3666c5e9250f9b41d2c97703846f0a4f6cf7a2e6fe7152b2b18ac3bbc9
+$ docker pull postgres@sha256:a7177131c8ba1da6a94a2723e0d1a176c714d13aea806109add5b3d3923fded5
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **14.0 MB (13971775 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1de36dff6ce329213edb7ef060e7641888727782cd0c3fa1fcc3efbea30c21aa`
+-	Image ID: `sha256:3838e558485690a497a76e06f359aae388bae4e398054018d1cd370d2eda2d1f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -156,9 +156,11 @@ COPY file:be0996fe6c3fcec9976408f3f94ed203fdcb751cfa2cd940a2bfcbbbda925e9c in /u
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
 # Thu, 17 Sep 2020 23:26:29 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 17 Sep 2020 23:26:42 GMT
+# Thu, 24 Sep 2020 20:57:35 GMT
+STOPSIGNAL SIGINT
+# Thu, 24 Sep 2020 20:57:36 GMT
 EXPOSE 5432
-# Thu, 17 Sep 2020 23:26:58 GMT
+# Thu, 24 Sep 2020 20:57:37 GMT
 CMD ["postgres"]
 ```
 
@@ -389,14 +391,14 @@ CMD ["postgres"]
 ### `postgres:9-alpine` - linux; 386
 
 ```console
-$ docker pull postgres@sha256:093820146d52faa1f1629090a9395f4ad504de7af8d3055e7a8339641809163d
+$ docker pull postgres@sha256:77bc0719c317662171ae574f11cf047ebb34ff0e2f9b3c34a001f612cdc9074c
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.2 MB (15188516 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80e741f03ce7437ff1454f3215dcebed5c394998403ce63041c175e5cba8dc30`
+-	Image ID: `sha256:6979ebad38c288cac36e77be2b0bdf10354d2b7831e7bb044e0cfa82736eae4b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -435,9 +437,11 @@ COPY file:be0996fe6c3fcec9976408f3f94ed203fdcb751cfa2cd940a2bfcbbbda925e9c in /u
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
 # Fri, 18 Sep 2020 00:53:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 18 Sep 2020 00:53:50 GMT
+# Thu, 24 Sep 2020 20:48:05 GMT
+STOPSIGNAL SIGINT
+# Thu, 24 Sep 2020 20:48:05 GMT
 EXPOSE 5432
-# Fri, 18 Sep 2020 00:53:50 GMT
+# Thu, 24 Sep 2020 20:48:05 GMT
 CMD ["postgres"]
 ```
 
@@ -575,14 +579,14 @@ CMD ["postgres"]
 ### `postgres:9-alpine` - linux; s390x
 
 ```console
-$ docker pull postgres@sha256:4e106625727c493b078ca78e83b7ffcce36607a952cdfd45e8e2fb1af36f891b
+$ docker pull postgres@sha256:ca3cdfce2d9dcc2fdcb6a72e07fecfc5c77f9d91fd2b3729b6167307c6073cbc
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **14.2 MB (14184910 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7829f6d709542e56e2ffae70d4cef6c80911acb2ecec56715b861e75820d130d`
+-	Image ID: `sha256:eb1962bfe69e53e63070d3d7ab5b76eed98a595a2df9cd086548fe7252fffa21`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -621,9 +625,11 @@ COPY file:be0996fe6c3fcec9976408f3f94ed203fdcb751cfa2cd940a2bfcbbbda925e9c in /u
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
 # Fri, 18 Sep 2020 00:23:28 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 18 Sep 2020 00:23:28 GMT
+# Thu, 24 Sep 2020 20:55:35 GMT
+STOPSIGNAL SIGINT
+# Thu, 24 Sep 2020 20:55:35 GMT
 EXPOSE 5432
-# Fri, 18 Sep 2020 00:23:28 GMT
+# Thu, 24 Sep 2020 20:55:35 GMT
 CMD ["postgres"]
 ```
 
