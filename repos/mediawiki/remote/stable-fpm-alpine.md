@@ -1,7 +1,7 @@
 ## `mediawiki:stable-fpm-alpine`
 
 ```console
-$ docker pull mediawiki@sha256:c56c28192b4292075b9f3eb073a868cd41cbd393e48c04aa0650d64e7a5055c8
+$ docker pull mediawiki@sha256:52c7a038f1f3446bbc200982542e8a88474449f263913b7d6eb1bad7c262ad89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -310,14 +310,14 @@ CMD ["php-fpm"]
 ### `mediawiki:stable-fpm-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull mediawiki@sha256:8ee710440c9fc2cf33781ffae4a86bb9fa0c5cada1f2f9c1b50db1b4726d3daf
+$ docker pull mediawiki@sha256:5c79a798170db846128e38764162e108dc29c3f210f887c7fa870247b69e4fe8
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.0 MB (136030787 bytes)**  
+-	Total Size: **136.0 MB (136046056 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a271046bfceea82bc337fea594eb652653331111af8b1b759a5a5ad084a0a0b0`
+-	Image ID: `sha256:7af139f218c2f3e24112ce72aebca33bcbe8b8061114f9a7ee0ad8d0bef77673`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -384,11 +384,11 @@ RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data
 # Fri, 04 Sep 2020 03:11:42 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.34
-# Fri, 04 Sep 2020 03:11:48 GMT
-ENV MEDIAWIKI_VERSION=1.34.2
-# Fri, 04 Sep 2020 03:12:35 GMT
+# Fri, 25 Sep 2020 21:32:31 GMT
+ENV MEDIAWIKI_VERSION=1.34.4
+# Fri, 25 Sep 2020 21:33:04 GMT
 RUN set -eux; 	apk add --no-cache --virtual .fetch-deps 		bzip2 		gnupg 	; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apk del .fetch-deps
-# Fri, 04 Sep 2020 03:12:45 GMT
+# Fri, 25 Sep 2020 21:33:07 GMT
 CMD ["php-fpm"]
 ```
 
@@ -449,9 +449,9 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 04 Sep 2020 03:37:01 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f1552be5e6f0ace2a5f02c8b85a9fbd097d77c57358ec25f3cb95712d5e16d1`  
-		Last Modified: Fri, 04 Sep 2020 03:37:23 GMT  
-		Size: 41.0 MB (41006861 bytes)  
+	-	`sha256:46087e81d25c3d32ae66a4b44bd4ee43fc41ae76ab1f857cc97654a09bb1e711`  
+		Last Modified: Fri, 25 Sep 2020 21:37:43 GMT  
+		Size: 41.0 MB (41022130 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mediawiki:stable-fpm-alpine` - linux; arm64 variant v8
