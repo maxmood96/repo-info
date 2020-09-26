@@ -61,7 +61,7 @@
 ## `mongo:3`
 
 ```console
-$ docker pull mongo@sha256:c5d83e2bc9b833ad6d20306f0f6056d1ad38bc521f94c438001372012b34dd29
+$ docker pull mongo@sha256:3fa408b815a14ac7bd4000bf674d03c850c85c4f23dbc3d1b1336959c4306e4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -197,124 +197,124 @@ CMD ["mongod"]
 ### `mongo:3` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:b83368e146dfc90de5741a53e088d3e34f257e7c408ecf04c7eb79fd3225e2ce
+$ docker pull mongo@sha256:e171ed2a13243cf71594e793d9067c5b79820fd4c398a538ce229891c518bcc3
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.4 MB (155378532 bytes)**  
+-	Total Size: **155.4 MB (155380074 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dccad66ca96bc7dbc2d7d3e889a89675664793c41cc7663e38b214b4455c43c8`
+-	Image ID: `sha256:bb9574a9840626e6d8389db29ae4ddfd56efbd01afd5d32f830171a6568ebb0c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 23:17:57 GMT
-ADD file:07638f480082d3760a79e7f8ab797a506252cc2233f89865558b0b5e0220a4d3 in / 
-# Wed, 16 Sep 2020 23:18:00 GMT
+# Fri, 25 Sep 2020 22:48:52 GMT
+ADD file:5ad8fe01e35cc6efe923d7698aaa261cdb15f4f4ae01009d04d2a1ddadc1d5b2 in / 
+# Fri, 25 Sep 2020 22:48:55 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 23:18:02 GMT
+# Fri, 25 Sep 2020 22:48:57 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:18:04 GMT
+# Fri, 25 Sep 2020 22:48:59 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 23:18:05 GMT
+# Fri, 25 Sep 2020 22:49:00 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:40:28 GMT
+# Fri, 25 Sep 2020 23:18:35 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:40:51 GMT
+# Fri, 25 Sep 2020 23:18:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:40:52 GMT
+# Fri, 25 Sep 2020 23:18:51 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:40:54 GMT
+# Fri, 25 Sep 2020 23:18:52 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:41:27 GMT
+# Fri, 25 Sep 2020 23:19:16 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:41:30 GMT
+# Fri, 25 Sep 2020 23:19:17 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:41:31 GMT
+# Fri, 25 Sep 2020 23:19:18 GMT
 ENV GPG_KEYS=2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
-# Wed, 16 Sep 2020 23:41:34 GMT
+# Fri, 25 Sep 2020 23:19:20 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:41:34 GMT
+# Fri, 25 Sep 2020 23:19:21 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:41:35 GMT
+# Fri, 25 Sep 2020 23:19:21 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:41:36 GMT
+# Fri, 25 Sep 2020 23:19:22 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:41:37 GMT
+# Fri, 25 Sep 2020 23:19:22 GMT
 ENV MONGO_MAJOR=3.6
-# Wed, 16 Sep 2020 23:41:38 GMT
+# Fri, 25 Sep 2020 23:19:23 GMT
 ENV MONGO_VERSION=3.6.20
-# Wed, 16 Sep 2020 23:41:39 GMT
+# Fri, 25 Sep 2020 23:19:26 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu xenial/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:42:03 GMT
+# Fri, 25 Sep 2020 23:19:48 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:42:07 GMT
+# Fri, 25 Sep 2020 23:19:50 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:42:08 GMT
+# Fri, 25 Sep 2020 23:19:51 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:42:09 GMT
+# Fri, 25 Sep 2020 23:19:53 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:42:11 GMT
+# Fri, 25 Sep 2020 23:19:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:42:12 GMT
+# Fri, 25 Sep 2020 23:19:55 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:42:13 GMT
+# Fri, 25 Sep 2020 23:19:55 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:72fb9e9daf6916d23d5ddb9755e3ab864abfa8ba4f352549179782677ea68012`  
-		Last Modified: Fri, 04 Sep 2020 00:25:27 GMT  
-		Size: 40.1 MB (40096941 bytes)  
+	-	`sha256:511338b9646fd6cab2c278e174281c8d444bef1a2846348b1e0687ece0450d3c`  
+		Last Modified: Wed, 16 Sep 2020 16:25:23 GMT  
+		Size: 40.1 MB (40099025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:899cdab0a82a447b311cc0646f11453c021df6968deccedf1187f915f1e8053b`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 852.0 B  
+	-	`sha256:9b39b0ff65d844135c15ee00abc2dec8e0a964a0f626097ba95ee4c2fa0a19ed`  
+		Last Modified: Fri, 25 Sep 2020 22:50:25 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:016b9151e276d67695313eeb9bce429497ee8ab86848317064a39e8a8666c87a`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 471.0 B  
+	-	`sha256:f5a1f7ba18a1a2b6ece87fc83510da11658ea364ee85e16467c0ca7cfadb52d7`  
+		Last Modified: Fri, 25 Sep 2020 22:50:26 GMT  
+		Size: 467.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:727158034d7c22989558e6c5c700ff8c0e20942f6d4296293e5fd59e47f0cdc9`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 171.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0014075927dcdb79fcc5ae5598cf2580eafb26734e356a245d71d84f92de0874`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 2.0 KB (1992 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b14870a6692a0b9a10c7f98e4cce53fda1dc85ad7d3b1fdd371b4dc058155c4`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 2.4 MB (2431512 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6931b0179538af2391acc42d0007a997994e4fef4b96fed92ae8c91937a3247`  
-		Last Modified: Wed, 16 Sep 2020 23:46:16 GMT  
-		Size: 1.2 MB (1232078 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5374263d0b831ffbb714f758dd5e0af3cbfe2455964c625ac7ab87bc8ef73621`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 149.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24401f44fcee205282f3e492bbbb8db2517b66ba073c7fb3a8812a9526996ca4`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
-		Size: 2.0 KB (1995 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:596a0f9df976ded5406b72ca9bcaa772db1f1ead0700eb36cc4bf2090442871a`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
-		Size: 238.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44fccba766591d50203e975348d6fa699591dc63728fa7a56f73a4c81d4fe550`  
-		Last Modified: Wed, 16 Sep 2020 23:46:41 GMT  
-		Size: 111.6 MB (111608009 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0825c32fd5672d65e0b2cbe7299d8e6197e3ff0c8675ad1c88a1c217d2296166`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
+	-	`sha256:3caa76f7dac8b4a5afba79f1582f3546a987a066f79adb97b5dfa25b0f72989a`  
+		Last Modified: Fri, 25 Sep 2020 22:50:25 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee40877dd501ef1b459d40ff4164db63329f4f2bf90bee72a49668e87cad1eb0`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
-		Size: 4.0 KB (3954 bytes)  
+	-	`sha256:3f6b981797aeddb641b5fe75c414276ed5f814c64e49f4ab6e4dd36b81921fdb`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 2.0 KB (1995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6a78c76765c091948341885ada2dab70c6b6c4bed0d7ceb2ec724352978fe190`  
+		Last Modified: Fri, 25 Sep 2020 23:23:44 GMT  
+		Size: 2.4 MB (2431274 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7bbb6ce673fee8e02cd799ccaf55aead8f1b2d885a619bc22578b2121dfc9103`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 1.2 MB (1231961 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a58def160337d20af9624f74869456271f29bf720cbd4377e5bbcbcbddaeeac4`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 149.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0b392eff06f79f918fb6c3b32001213bae897fda3ac64c78753a9da3d5b21269`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 2.0 KB (1998 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bdf1563452c5725374717d64ffaf3d857d5548401b66a0d7b93c8a2708c1b524`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 239.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d26484acc50e9f0a160c7bf1ad8b754c79e1f674d54b24ccc7e504baa7999c50`  
+		Last Modified: Fri, 25 Sep 2020 23:24:09 GMT  
+		Size: 111.6 MB (111607821 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a1fcfcc8143cda44cc5cd67bd20c59907f45e852d2f2be6c733c7db925f0f74f`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 169.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c40d4b9fa7feb7100c0e94b4778d7f1d580c7a4b26581c805650b164b17b8ab6`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 4.0 KB (3952 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:3` - windows version 10.0.14393.3930; amd64
@@ -475,7 +475,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:3.6`
 
 ```console
-$ docker pull mongo@sha256:c5d83e2bc9b833ad6d20306f0f6056d1ad38bc521f94c438001372012b34dd29
+$ docker pull mongo@sha256:3fa408b815a14ac7bd4000bf674d03c850c85c4f23dbc3d1b1336959c4306e4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -611,124 +611,124 @@ CMD ["mongod"]
 ### `mongo:3.6` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:b83368e146dfc90de5741a53e088d3e34f257e7c408ecf04c7eb79fd3225e2ce
+$ docker pull mongo@sha256:e171ed2a13243cf71594e793d9067c5b79820fd4c398a538ce229891c518bcc3
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.4 MB (155378532 bytes)**  
+-	Total Size: **155.4 MB (155380074 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dccad66ca96bc7dbc2d7d3e889a89675664793c41cc7663e38b214b4455c43c8`
+-	Image ID: `sha256:bb9574a9840626e6d8389db29ae4ddfd56efbd01afd5d32f830171a6568ebb0c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 23:17:57 GMT
-ADD file:07638f480082d3760a79e7f8ab797a506252cc2233f89865558b0b5e0220a4d3 in / 
-# Wed, 16 Sep 2020 23:18:00 GMT
+# Fri, 25 Sep 2020 22:48:52 GMT
+ADD file:5ad8fe01e35cc6efe923d7698aaa261cdb15f4f4ae01009d04d2a1ddadc1d5b2 in / 
+# Fri, 25 Sep 2020 22:48:55 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 23:18:02 GMT
+# Fri, 25 Sep 2020 22:48:57 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:18:04 GMT
+# Fri, 25 Sep 2020 22:48:59 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 23:18:05 GMT
+# Fri, 25 Sep 2020 22:49:00 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:40:28 GMT
+# Fri, 25 Sep 2020 23:18:35 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:40:51 GMT
+# Fri, 25 Sep 2020 23:18:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:40:52 GMT
+# Fri, 25 Sep 2020 23:18:51 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:40:54 GMT
+# Fri, 25 Sep 2020 23:18:52 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:41:27 GMT
+# Fri, 25 Sep 2020 23:19:16 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:41:30 GMT
+# Fri, 25 Sep 2020 23:19:17 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:41:31 GMT
+# Fri, 25 Sep 2020 23:19:18 GMT
 ENV GPG_KEYS=2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
-# Wed, 16 Sep 2020 23:41:34 GMT
+# Fri, 25 Sep 2020 23:19:20 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:41:34 GMT
+# Fri, 25 Sep 2020 23:19:21 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:41:35 GMT
+# Fri, 25 Sep 2020 23:19:21 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:41:36 GMT
+# Fri, 25 Sep 2020 23:19:22 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:41:37 GMT
+# Fri, 25 Sep 2020 23:19:22 GMT
 ENV MONGO_MAJOR=3.6
-# Wed, 16 Sep 2020 23:41:38 GMT
+# Fri, 25 Sep 2020 23:19:23 GMT
 ENV MONGO_VERSION=3.6.20
-# Wed, 16 Sep 2020 23:41:39 GMT
+# Fri, 25 Sep 2020 23:19:26 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu xenial/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:42:03 GMT
+# Fri, 25 Sep 2020 23:19:48 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:42:07 GMT
+# Fri, 25 Sep 2020 23:19:50 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:42:08 GMT
+# Fri, 25 Sep 2020 23:19:51 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:42:09 GMT
+# Fri, 25 Sep 2020 23:19:53 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:42:11 GMT
+# Fri, 25 Sep 2020 23:19:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:42:12 GMT
+# Fri, 25 Sep 2020 23:19:55 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:42:13 GMT
+# Fri, 25 Sep 2020 23:19:55 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:72fb9e9daf6916d23d5ddb9755e3ab864abfa8ba4f352549179782677ea68012`  
-		Last Modified: Fri, 04 Sep 2020 00:25:27 GMT  
-		Size: 40.1 MB (40096941 bytes)  
+	-	`sha256:511338b9646fd6cab2c278e174281c8d444bef1a2846348b1e0687ece0450d3c`  
+		Last Modified: Wed, 16 Sep 2020 16:25:23 GMT  
+		Size: 40.1 MB (40099025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:899cdab0a82a447b311cc0646f11453c021df6968deccedf1187f915f1e8053b`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 852.0 B  
+	-	`sha256:9b39b0ff65d844135c15ee00abc2dec8e0a964a0f626097ba95ee4c2fa0a19ed`  
+		Last Modified: Fri, 25 Sep 2020 22:50:25 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:016b9151e276d67695313eeb9bce429497ee8ab86848317064a39e8a8666c87a`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 471.0 B  
+	-	`sha256:f5a1f7ba18a1a2b6ece87fc83510da11658ea364ee85e16467c0ca7cfadb52d7`  
+		Last Modified: Fri, 25 Sep 2020 22:50:26 GMT  
+		Size: 467.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:727158034d7c22989558e6c5c700ff8c0e20942f6d4296293e5fd59e47f0cdc9`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 171.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0014075927dcdb79fcc5ae5598cf2580eafb26734e356a245d71d84f92de0874`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 2.0 KB (1992 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b14870a6692a0b9a10c7f98e4cce53fda1dc85ad7d3b1fdd371b4dc058155c4`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 2.4 MB (2431512 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6931b0179538af2391acc42d0007a997994e4fef4b96fed92ae8c91937a3247`  
-		Last Modified: Wed, 16 Sep 2020 23:46:16 GMT  
-		Size: 1.2 MB (1232078 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5374263d0b831ffbb714f758dd5e0af3cbfe2455964c625ac7ab87bc8ef73621`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 149.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24401f44fcee205282f3e492bbbb8db2517b66ba073c7fb3a8812a9526996ca4`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
-		Size: 2.0 KB (1995 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:596a0f9df976ded5406b72ca9bcaa772db1f1ead0700eb36cc4bf2090442871a`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
-		Size: 238.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44fccba766591d50203e975348d6fa699591dc63728fa7a56f73a4c81d4fe550`  
-		Last Modified: Wed, 16 Sep 2020 23:46:41 GMT  
-		Size: 111.6 MB (111608009 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0825c32fd5672d65e0b2cbe7299d8e6197e3ff0c8675ad1c88a1c217d2296166`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
+	-	`sha256:3caa76f7dac8b4a5afba79f1582f3546a987a066f79adb97b5dfa25b0f72989a`  
+		Last Modified: Fri, 25 Sep 2020 22:50:25 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee40877dd501ef1b459d40ff4164db63329f4f2bf90bee72a49668e87cad1eb0`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
-		Size: 4.0 KB (3954 bytes)  
+	-	`sha256:3f6b981797aeddb641b5fe75c414276ed5f814c64e49f4ab6e4dd36b81921fdb`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 2.0 KB (1995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6a78c76765c091948341885ada2dab70c6b6c4bed0d7ceb2ec724352978fe190`  
+		Last Modified: Fri, 25 Sep 2020 23:23:44 GMT  
+		Size: 2.4 MB (2431274 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7bbb6ce673fee8e02cd799ccaf55aead8f1b2d885a619bc22578b2121dfc9103`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 1.2 MB (1231961 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a58def160337d20af9624f74869456271f29bf720cbd4377e5bbcbcbddaeeac4`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 149.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0b392eff06f79f918fb6c3b32001213bae897fda3ac64c78753a9da3d5b21269`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 2.0 KB (1998 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bdf1563452c5725374717d64ffaf3d857d5548401b66a0d7b93c8a2708c1b524`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 239.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d26484acc50e9f0a160c7bf1ad8b754c79e1f674d54b24ccc7e504baa7999c50`  
+		Last Modified: Fri, 25 Sep 2020 23:24:09 GMT  
+		Size: 111.6 MB (111607821 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a1fcfcc8143cda44cc5cd67bd20c59907f45e852d2f2be6c733c7db925f0f74f`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 169.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c40d4b9fa7feb7100c0e94b4778d7f1d580c7a4b26581c805650b164b17b8ab6`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 4.0 KB (3952 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:3.6` - windows version 10.0.14393.3930; amd64
@@ -889,7 +889,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:3.6.20`
 
 ```console
-$ docker pull mongo@sha256:c5d83e2bc9b833ad6d20306f0f6056d1ad38bc521f94c438001372012b34dd29
+$ docker pull mongo@sha256:3fa408b815a14ac7bd4000bf674d03c850c85c4f23dbc3d1b1336959c4306e4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1025,124 +1025,124 @@ CMD ["mongod"]
 ### `mongo:3.6.20` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:b83368e146dfc90de5741a53e088d3e34f257e7c408ecf04c7eb79fd3225e2ce
+$ docker pull mongo@sha256:e171ed2a13243cf71594e793d9067c5b79820fd4c398a538ce229891c518bcc3
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.4 MB (155378532 bytes)**  
+-	Total Size: **155.4 MB (155380074 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dccad66ca96bc7dbc2d7d3e889a89675664793c41cc7663e38b214b4455c43c8`
+-	Image ID: `sha256:bb9574a9840626e6d8389db29ae4ddfd56efbd01afd5d32f830171a6568ebb0c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 23:17:57 GMT
-ADD file:07638f480082d3760a79e7f8ab797a506252cc2233f89865558b0b5e0220a4d3 in / 
-# Wed, 16 Sep 2020 23:18:00 GMT
+# Fri, 25 Sep 2020 22:48:52 GMT
+ADD file:5ad8fe01e35cc6efe923d7698aaa261cdb15f4f4ae01009d04d2a1ddadc1d5b2 in / 
+# Fri, 25 Sep 2020 22:48:55 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 23:18:02 GMT
+# Fri, 25 Sep 2020 22:48:57 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:18:04 GMT
+# Fri, 25 Sep 2020 22:48:59 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 23:18:05 GMT
+# Fri, 25 Sep 2020 22:49:00 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:40:28 GMT
+# Fri, 25 Sep 2020 23:18:35 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:40:51 GMT
+# Fri, 25 Sep 2020 23:18:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:40:52 GMT
+# Fri, 25 Sep 2020 23:18:51 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:40:54 GMT
+# Fri, 25 Sep 2020 23:18:52 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:41:27 GMT
+# Fri, 25 Sep 2020 23:19:16 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:41:30 GMT
+# Fri, 25 Sep 2020 23:19:17 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:41:31 GMT
+# Fri, 25 Sep 2020 23:19:18 GMT
 ENV GPG_KEYS=2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
-# Wed, 16 Sep 2020 23:41:34 GMT
+# Fri, 25 Sep 2020 23:19:20 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:41:34 GMT
+# Fri, 25 Sep 2020 23:19:21 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:41:35 GMT
+# Fri, 25 Sep 2020 23:19:21 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:41:36 GMT
+# Fri, 25 Sep 2020 23:19:22 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:41:37 GMT
+# Fri, 25 Sep 2020 23:19:22 GMT
 ENV MONGO_MAJOR=3.6
-# Wed, 16 Sep 2020 23:41:38 GMT
+# Fri, 25 Sep 2020 23:19:23 GMT
 ENV MONGO_VERSION=3.6.20
-# Wed, 16 Sep 2020 23:41:39 GMT
+# Fri, 25 Sep 2020 23:19:26 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu xenial/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:42:03 GMT
+# Fri, 25 Sep 2020 23:19:48 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:42:07 GMT
+# Fri, 25 Sep 2020 23:19:50 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:42:08 GMT
+# Fri, 25 Sep 2020 23:19:51 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:42:09 GMT
+# Fri, 25 Sep 2020 23:19:53 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:42:11 GMT
+# Fri, 25 Sep 2020 23:19:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:42:12 GMT
+# Fri, 25 Sep 2020 23:19:55 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:42:13 GMT
+# Fri, 25 Sep 2020 23:19:55 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:72fb9e9daf6916d23d5ddb9755e3ab864abfa8ba4f352549179782677ea68012`  
-		Last Modified: Fri, 04 Sep 2020 00:25:27 GMT  
-		Size: 40.1 MB (40096941 bytes)  
+	-	`sha256:511338b9646fd6cab2c278e174281c8d444bef1a2846348b1e0687ece0450d3c`  
+		Last Modified: Wed, 16 Sep 2020 16:25:23 GMT  
+		Size: 40.1 MB (40099025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:899cdab0a82a447b311cc0646f11453c021df6968deccedf1187f915f1e8053b`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 852.0 B  
+	-	`sha256:9b39b0ff65d844135c15ee00abc2dec8e0a964a0f626097ba95ee4c2fa0a19ed`  
+		Last Modified: Fri, 25 Sep 2020 22:50:25 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:016b9151e276d67695313eeb9bce429497ee8ab86848317064a39e8a8666c87a`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 471.0 B  
+	-	`sha256:f5a1f7ba18a1a2b6ece87fc83510da11658ea364ee85e16467c0ca7cfadb52d7`  
+		Last Modified: Fri, 25 Sep 2020 22:50:26 GMT  
+		Size: 467.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:727158034d7c22989558e6c5c700ff8c0e20942f6d4296293e5fd59e47f0cdc9`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 171.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0014075927dcdb79fcc5ae5598cf2580eafb26734e356a245d71d84f92de0874`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 2.0 KB (1992 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b14870a6692a0b9a10c7f98e4cce53fda1dc85ad7d3b1fdd371b4dc058155c4`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 2.4 MB (2431512 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6931b0179538af2391acc42d0007a997994e4fef4b96fed92ae8c91937a3247`  
-		Last Modified: Wed, 16 Sep 2020 23:46:16 GMT  
-		Size: 1.2 MB (1232078 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5374263d0b831ffbb714f758dd5e0af3cbfe2455964c625ac7ab87bc8ef73621`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 149.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24401f44fcee205282f3e492bbbb8db2517b66ba073c7fb3a8812a9526996ca4`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
-		Size: 2.0 KB (1995 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:596a0f9df976ded5406b72ca9bcaa772db1f1ead0700eb36cc4bf2090442871a`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
-		Size: 238.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44fccba766591d50203e975348d6fa699591dc63728fa7a56f73a4c81d4fe550`  
-		Last Modified: Wed, 16 Sep 2020 23:46:41 GMT  
-		Size: 111.6 MB (111608009 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0825c32fd5672d65e0b2cbe7299d8e6197e3ff0c8675ad1c88a1c217d2296166`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
+	-	`sha256:3caa76f7dac8b4a5afba79f1582f3546a987a066f79adb97b5dfa25b0f72989a`  
+		Last Modified: Fri, 25 Sep 2020 22:50:25 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee40877dd501ef1b459d40ff4164db63329f4f2bf90bee72a49668e87cad1eb0`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
-		Size: 4.0 KB (3954 bytes)  
+	-	`sha256:3f6b981797aeddb641b5fe75c414276ed5f814c64e49f4ab6e4dd36b81921fdb`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 2.0 KB (1995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6a78c76765c091948341885ada2dab70c6b6c4bed0d7ceb2ec724352978fe190`  
+		Last Modified: Fri, 25 Sep 2020 23:23:44 GMT  
+		Size: 2.4 MB (2431274 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7bbb6ce673fee8e02cd799ccaf55aead8f1b2d885a619bc22578b2121dfc9103`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 1.2 MB (1231961 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a58def160337d20af9624f74869456271f29bf720cbd4377e5bbcbcbddaeeac4`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 149.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0b392eff06f79f918fb6c3b32001213bae897fda3ac64c78753a9da3d5b21269`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 2.0 KB (1998 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bdf1563452c5725374717d64ffaf3d857d5548401b66a0d7b93c8a2708c1b524`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 239.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d26484acc50e9f0a160c7bf1ad8b754c79e1f674d54b24ccc7e504baa7999c50`  
+		Last Modified: Fri, 25 Sep 2020 23:24:09 GMT  
+		Size: 111.6 MB (111607821 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a1fcfcc8143cda44cc5cd67bd20c59907f45e852d2f2be6c733c7db925f0f74f`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 169.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c40d4b9fa7feb7100c0e94b4778d7f1d580c7a4b26581c805650b164b17b8ab6`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 4.0 KB (3952 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:3.6.20` - windows version 10.0.14393.3930; amd64
@@ -1644,7 +1644,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:3.6.20-xenial`
 
 ```console
-$ docker pull mongo@sha256:bea505d9d3de8f3e83572980d39755ab6ad719484fd1a658e7d46806bb47ad64
+$ docker pull mongo@sha256:eae7ee90e258aa7ee15cabd0e3f3a009054a57476882492db2ee67b15c9b62eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1778,124 +1778,124 @@ CMD ["mongod"]
 ### `mongo:3.6.20-xenial` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:b83368e146dfc90de5741a53e088d3e34f257e7c408ecf04c7eb79fd3225e2ce
+$ docker pull mongo@sha256:e171ed2a13243cf71594e793d9067c5b79820fd4c398a538ce229891c518bcc3
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.4 MB (155378532 bytes)**  
+-	Total Size: **155.4 MB (155380074 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dccad66ca96bc7dbc2d7d3e889a89675664793c41cc7663e38b214b4455c43c8`
+-	Image ID: `sha256:bb9574a9840626e6d8389db29ae4ddfd56efbd01afd5d32f830171a6568ebb0c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 23:17:57 GMT
-ADD file:07638f480082d3760a79e7f8ab797a506252cc2233f89865558b0b5e0220a4d3 in / 
-# Wed, 16 Sep 2020 23:18:00 GMT
+# Fri, 25 Sep 2020 22:48:52 GMT
+ADD file:5ad8fe01e35cc6efe923d7698aaa261cdb15f4f4ae01009d04d2a1ddadc1d5b2 in / 
+# Fri, 25 Sep 2020 22:48:55 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 23:18:02 GMT
+# Fri, 25 Sep 2020 22:48:57 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:18:04 GMT
+# Fri, 25 Sep 2020 22:48:59 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 23:18:05 GMT
+# Fri, 25 Sep 2020 22:49:00 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:40:28 GMT
+# Fri, 25 Sep 2020 23:18:35 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:40:51 GMT
+# Fri, 25 Sep 2020 23:18:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:40:52 GMT
+# Fri, 25 Sep 2020 23:18:51 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:40:54 GMT
+# Fri, 25 Sep 2020 23:18:52 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:41:27 GMT
+# Fri, 25 Sep 2020 23:19:16 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:41:30 GMT
+# Fri, 25 Sep 2020 23:19:17 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:41:31 GMT
+# Fri, 25 Sep 2020 23:19:18 GMT
 ENV GPG_KEYS=2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
-# Wed, 16 Sep 2020 23:41:34 GMT
+# Fri, 25 Sep 2020 23:19:20 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:41:34 GMT
+# Fri, 25 Sep 2020 23:19:21 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:41:35 GMT
+# Fri, 25 Sep 2020 23:19:21 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:41:36 GMT
+# Fri, 25 Sep 2020 23:19:22 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:41:37 GMT
+# Fri, 25 Sep 2020 23:19:22 GMT
 ENV MONGO_MAJOR=3.6
-# Wed, 16 Sep 2020 23:41:38 GMT
+# Fri, 25 Sep 2020 23:19:23 GMT
 ENV MONGO_VERSION=3.6.20
-# Wed, 16 Sep 2020 23:41:39 GMT
+# Fri, 25 Sep 2020 23:19:26 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu xenial/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:42:03 GMT
+# Fri, 25 Sep 2020 23:19:48 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:42:07 GMT
+# Fri, 25 Sep 2020 23:19:50 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:42:08 GMT
+# Fri, 25 Sep 2020 23:19:51 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:42:09 GMT
+# Fri, 25 Sep 2020 23:19:53 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:42:11 GMT
+# Fri, 25 Sep 2020 23:19:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:42:12 GMT
+# Fri, 25 Sep 2020 23:19:55 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:42:13 GMT
+# Fri, 25 Sep 2020 23:19:55 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:72fb9e9daf6916d23d5ddb9755e3ab864abfa8ba4f352549179782677ea68012`  
-		Last Modified: Fri, 04 Sep 2020 00:25:27 GMT  
-		Size: 40.1 MB (40096941 bytes)  
+	-	`sha256:511338b9646fd6cab2c278e174281c8d444bef1a2846348b1e0687ece0450d3c`  
+		Last Modified: Wed, 16 Sep 2020 16:25:23 GMT  
+		Size: 40.1 MB (40099025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:899cdab0a82a447b311cc0646f11453c021df6968deccedf1187f915f1e8053b`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 852.0 B  
+	-	`sha256:9b39b0ff65d844135c15ee00abc2dec8e0a964a0f626097ba95ee4c2fa0a19ed`  
+		Last Modified: Fri, 25 Sep 2020 22:50:25 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:016b9151e276d67695313eeb9bce429497ee8ab86848317064a39e8a8666c87a`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 471.0 B  
+	-	`sha256:f5a1f7ba18a1a2b6ece87fc83510da11658ea364ee85e16467c0ca7cfadb52d7`  
+		Last Modified: Fri, 25 Sep 2020 22:50:26 GMT  
+		Size: 467.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:727158034d7c22989558e6c5c700ff8c0e20942f6d4296293e5fd59e47f0cdc9`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 171.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0014075927dcdb79fcc5ae5598cf2580eafb26734e356a245d71d84f92de0874`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 2.0 KB (1992 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b14870a6692a0b9a10c7f98e4cce53fda1dc85ad7d3b1fdd371b4dc058155c4`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 2.4 MB (2431512 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6931b0179538af2391acc42d0007a997994e4fef4b96fed92ae8c91937a3247`  
-		Last Modified: Wed, 16 Sep 2020 23:46:16 GMT  
-		Size: 1.2 MB (1232078 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5374263d0b831ffbb714f758dd5e0af3cbfe2455964c625ac7ab87bc8ef73621`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 149.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24401f44fcee205282f3e492bbbb8db2517b66ba073c7fb3a8812a9526996ca4`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
-		Size: 2.0 KB (1995 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:596a0f9df976ded5406b72ca9bcaa772db1f1ead0700eb36cc4bf2090442871a`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
-		Size: 238.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44fccba766591d50203e975348d6fa699591dc63728fa7a56f73a4c81d4fe550`  
-		Last Modified: Wed, 16 Sep 2020 23:46:41 GMT  
-		Size: 111.6 MB (111608009 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0825c32fd5672d65e0b2cbe7299d8e6197e3ff0c8675ad1c88a1c217d2296166`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
+	-	`sha256:3caa76f7dac8b4a5afba79f1582f3546a987a066f79adb97b5dfa25b0f72989a`  
+		Last Modified: Fri, 25 Sep 2020 22:50:25 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee40877dd501ef1b459d40ff4164db63329f4f2bf90bee72a49668e87cad1eb0`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
-		Size: 4.0 KB (3954 bytes)  
+	-	`sha256:3f6b981797aeddb641b5fe75c414276ed5f814c64e49f4ab6e4dd36b81921fdb`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 2.0 KB (1995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6a78c76765c091948341885ada2dab70c6b6c4bed0d7ceb2ec724352978fe190`  
+		Last Modified: Fri, 25 Sep 2020 23:23:44 GMT  
+		Size: 2.4 MB (2431274 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7bbb6ce673fee8e02cd799ccaf55aead8f1b2d885a619bc22578b2121dfc9103`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 1.2 MB (1231961 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a58def160337d20af9624f74869456271f29bf720cbd4377e5bbcbcbddaeeac4`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 149.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0b392eff06f79f918fb6c3b32001213bae897fda3ac64c78753a9da3d5b21269`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 2.0 KB (1998 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bdf1563452c5725374717d64ffaf3d857d5548401b66a0d7b93c8a2708c1b524`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 239.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d26484acc50e9f0a160c7bf1ad8b754c79e1f674d54b24ccc7e504baa7999c50`  
+		Last Modified: Fri, 25 Sep 2020 23:24:09 GMT  
+		Size: 111.6 MB (111607821 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a1fcfcc8143cda44cc5cd67bd20c59907f45e852d2f2be6c733c7db925f0f74f`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 169.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c40d4b9fa7feb7100c0e94b4778d7f1d580c7a4b26581c805650b164b17b8ab6`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 4.0 KB (3952 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3.6-windowsservercore`
@@ -2242,7 +2242,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:3.6-xenial`
 
 ```console
-$ docker pull mongo@sha256:bea505d9d3de8f3e83572980d39755ab6ad719484fd1a658e7d46806bb47ad64
+$ docker pull mongo@sha256:eae7ee90e258aa7ee15cabd0e3f3a009054a57476882492db2ee67b15c9b62eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2376,124 +2376,124 @@ CMD ["mongod"]
 ### `mongo:3.6-xenial` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:b83368e146dfc90de5741a53e088d3e34f257e7c408ecf04c7eb79fd3225e2ce
+$ docker pull mongo@sha256:e171ed2a13243cf71594e793d9067c5b79820fd4c398a538ce229891c518bcc3
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.4 MB (155378532 bytes)**  
+-	Total Size: **155.4 MB (155380074 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dccad66ca96bc7dbc2d7d3e889a89675664793c41cc7663e38b214b4455c43c8`
+-	Image ID: `sha256:bb9574a9840626e6d8389db29ae4ddfd56efbd01afd5d32f830171a6568ebb0c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 23:17:57 GMT
-ADD file:07638f480082d3760a79e7f8ab797a506252cc2233f89865558b0b5e0220a4d3 in / 
-# Wed, 16 Sep 2020 23:18:00 GMT
+# Fri, 25 Sep 2020 22:48:52 GMT
+ADD file:5ad8fe01e35cc6efe923d7698aaa261cdb15f4f4ae01009d04d2a1ddadc1d5b2 in / 
+# Fri, 25 Sep 2020 22:48:55 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 23:18:02 GMT
+# Fri, 25 Sep 2020 22:48:57 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:18:04 GMT
+# Fri, 25 Sep 2020 22:48:59 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 23:18:05 GMT
+# Fri, 25 Sep 2020 22:49:00 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:40:28 GMT
+# Fri, 25 Sep 2020 23:18:35 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:40:51 GMT
+# Fri, 25 Sep 2020 23:18:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:40:52 GMT
+# Fri, 25 Sep 2020 23:18:51 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:40:54 GMT
+# Fri, 25 Sep 2020 23:18:52 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:41:27 GMT
+# Fri, 25 Sep 2020 23:19:16 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:41:30 GMT
+# Fri, 25 Sep 2020 23:19:17 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:41:31 GMT
+# Fri, 25 Sep 2020 23:19:18 GMT
 ENV GPG_KEYS=2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
-# Wed, 16 Sep 2020 23:41:34 GMT
+# Fri, 25 Sep 2020 23:19:20 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:41:34 GMT
+# Fri, 25 Sep 2020 23:19:21 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:41:35 GMT
+# Fri, 25 Sep 2020 23:19:21 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:41:36 GMT
+# Fri, 25 Sep 2020 23:19:22 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:41:37 GMT
+# Fri, 25 Sep 2020 23:19:22 GMT
 ENV MONGO_MAJOR=3.6
-# Wed, 16 Sep 2020 23:41:38 GMT
+# Fri, 25 Sep 2020 23:19:23 GMT
 ENV MONGO_VERSION=3.6.20
-# Wed, 16 Sep 2020 23:41:39 GMT
+# Fri, 25 Sep 2020 23:19:26 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu xenial/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:42:03 GMT
+# Fri, 25 Sep 2020 23:19:48 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:42:07 GMT
+# Fri, 25 Sep 2020 23:19:50 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:42:08 GMT
+# Fri, 25 Sep 2020 23:19:51 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:42:09 GMT
+# Fri, 25 Sep 2020 23:19:53 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:42:11 GMT
+# Fri, 25 Sep 2020 23:19:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:42:12 GMT
+# Fri, 25 Sep 2020 23:19:55 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:42:13 GMT
+# Fri, 25 Sep 2020 23:19:55 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:72fb9e9daf6916d23d5ddb9755e3ab864abfa8ba4f352549179782677ea68012`  
-		Last Modified: Fri, 04 Sep 2020 00:25:27 GMT  
-		Size: 40.1 MB (40096941 bytes)  
+	-	`sha256:511338b9646fd6cab2c278e174281c8d444bef1a2846348b1e0687ece0450d3c`  
+		Last Modified: Wed, 16 Sep 2020 16:25:23 GMT  
+		Size: 40.1 MB (40099025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:899cdab0a82a447b311cc0646f11453c021df6968deccedf1187f915f1e8053b`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 852.0 B  
+	-	`sha256:9b39b0ff65d844135c15ee00abc2dec8e0a964a0f626097ba95ee4c2fa0a19ed`  
+		Last Modified: Fri, 25 Sep 2020 22:50:25 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:016b9151e276d67695313eeb9bce429497ee8ab86848317064a39e8a8666c87a`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 471.0 B  
+	-	`sha256:f5a1f7ba18a1a2b6ece87fc83510da11658ea364ee85e16467c0ca7cfadb52d7`  
+		Last Modified: Fri, 25 Sep 2020 22:50:26 GMT  
+		Size: 467.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:727158034d7c22989558e6c5c700ff8c0e20942f6d4296293e5fd59e47f0cdc9`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 171.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0014075927dcdb79fcc5ae5598cf2580eafb26734e356a245d71d84f92de0874`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 2.0 KB (1992 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b14870a6692a0b9a10c7f98e4cce53fda1dc85ad7d3b1fdd371b4dc058155c4`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 2.4 MB (2431512 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6931b0179538af2391acc42d0007a997994e4fef4b96fed92ae8c91937a3247`  
-		Last Modified: Wed, 16 Sep 2020 23:46:16 GMT  
-		Size: 1.2 MB (1232078 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5374263d0b831ffbb714f758dd5e0af3cbfe2455964c625ac7ab87bc8ef73621`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 149.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24401f44fcee205282f3e492bbbb8db2517b66ba073c7fb3a8812a9526996ca4`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
-		Size: 2.0 KB (1995 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:596a0f9df976ded5406b72ca9bcaa772db1f1ead0700eb36cc4bf2090442871a`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
-		Size: 238.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44fccba766591d50203e975348d6fa699591dc63728fa7a56f73a4c81d4fe550`  
-		Last Modified: Wed, 16 Sep 2020 23:46:41 GMT  
-		Size: 111.6 MB (111608009 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0825c32fd5672d65e0b2cbe7299d8e6197e3ff0c8675ad1c88a1c217d2296166`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
+	-	`sha256:3caa76f7dac8b4a5afba79f1582f3546a987a066f79adb97b5dfa25b0f72989a`  
+		Last Modified: Fri, 25 Sep 2020 22:50:25 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee40877dd501ef1b459d40ff4164db63329f4f2bf90bee72a49668e87cad1eb0`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
-		Size: 4.0 KB (3954 bytes)  
+	-	`sha256:3f6b981797aeddb641b5fe75c414276ed5f814c64e49f4ab6e4dd36b81921fdb`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 2.0 KB (1995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6a78c76765c091948341885ada2dab70c6b6c4bed0d7ceb2ec724352978fe190`  
+		Last Modified: Fri, 25 Sep 2020 23:23:44 GMT  
+		Size: 2.4 MB (2431274 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7bbb6ce673fee8e02cd799ccaf55aead8f1b2d885a619bc22578b2121dfc9103`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 1.2 MB (1231961 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a58def160337d20af9624f74869456271f29bf720cbd4377e5bbcbcbddaeeac4`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 149.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0b392eff06f79f918fb6c3b32001213bae897fda3ac64c78753a9da3d5b21269`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 2.0 KB (1998 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bdf1563452c5725374717d64ffaf3d857d5548401b66a0d7b93c8a2708c1b524`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 239.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d26484acc50e9f0a160c7bf1ad8b754c79e1f674d54b24ccc7e504baa7999c50`  
+		Last Modified: Fri, 25 Sep 2020 23:24:09 GMT  
+		Size: 111.6 MB (111607821 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a1fcfcc8143cda44cc5cd67bd20c59907f45e852d2f2be6c733c7db925f0f74f`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 169.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c40d4b9fa7feb7100c0e94b4778d7f1d580c7a4b26581c805650b164b17b8ab6`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 4.0 KB (3952 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:3-windowsservercore`
@@ -2840,7 +2840,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:3-xenial`
 
 ```console
-$ docker pull mongo@sha256:bea505d9d3de8f3e83572980d39755ab6ad719484fd1a658e7d46806bb47ad64
+$ docker pull mongo@sha256:eae7ee90e258aa7ee15cabd0e3f3a009054a57476882492db2ee67b15c9b62eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2974,130 +2974,130 @@ CMD ["mongod"]
 ### `mongo:3-xenial` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:b83368e146dfc90de5741a53e088d3e34f257e7c408ecf04c7eb79fd3225e2ce
+$ docker pull mongo@sha256:e171ed2a13243cf71594e793d9067c5b79820fd4c398a538ce229891c518bcc3
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.4 MB (155378532 bytes)**  
+-	Total Size: **155.4 MB (155380074 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dccad66ca96bc7dbc2d7d3e889a89675664793c41cc7663e38b214b4455c43c8`
+-	Image ID: `sha256:bb9574a9840626e6d8389db29ae4ddfd56efbd01afd5d32f830171a6568ebb0c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 23:17:57 GMT
-ADD file:07638f480082d3760a79e7f8ab797a506252cc2233f89865558b0b5e0220a4d3 in / 
-# Wed, 16 Sep 2020 23:18:00 GMT
+# Fri, 25 Sep 2020 22:48:52 GMT
+ADD file:5ad8fe01e35cc6efe923d7698aaa261cdb15f4f4ae01009d04d2a1ddadc1d5b2 in / 
+# Fri, 25 Sep 2020 22:48:55 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 23:18:02 GMT
+# Fri, 25 Sep 2020 22:48:57 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:18:04 GMT
+# Fri, 25 Sep 2020 22:48:59 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 23:18:05 GMT
+# Fri, 25 Sep 2020 22:49:00 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:40:28 GMT
+# Fri, 25 Sep 2020 23:18:35 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:40:51 GMT
+# Fri, 25 Sep 2020 23:18:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:40:52 GMT
+# Fri, 25 Sep 2020 23:18:51 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:40:54 GMT
+# Fri, 25 Sep 2020 23:18:52 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:41:27 GMT
+# Fri, 25 Sep 2020 23:19:16 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:41:30 GMT
+# Fri, 25 Sep 2020 23:19:17 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:41:31 GMT
+# Fri, 25 Sep 2020 23:19:18 GMT
 ENV GPG_KEYS=2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
-# Wed, 16 Sep 2020 23:41:34 GMT
+# Fri, 25 Sep 2020 23:19:20 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:41:34 GMT
+# Fri, 25 Sep 2020 23:19:21 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:41:35 GMT
+# Fri, 25 Sep 2020 23:19:21 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:41:36 GMT
+# Fri, 25 Sep 2020 23:19:22 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:41:37 GMT
+# Fri, 25 Sep 2020 23:19:22 GMT
 ENV MONGO_MAJOR=3.6
-# Wed, 16 Sep 2020 23:41:38 GMT
+# Fri, 25 Sep 2020 23:19:23 GMT
 ENV MONGO_VERSION=3.6.20
-# Wed, 16 Sep 2020 23:41:39 GMT
+# Fri, 25 Sep 2020 23:19:26 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu xenial/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:42:03 GMT
+# Fri, 25 Sep 2020 23:19:48 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:42:07 GMT
+# Fri, 25 Sep 2020 23:19:50 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:42:08 GMT
+# Fri, 25 Sep 2020 23:19:51 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:42:09 GMT
+# Fri, 25 Sep 2020 23:19:53 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:42:11 GMT
+# Fri, 25 Sep 2020 23:19:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:42:12 GMT
+# Fri, 25 Sep 2020 23:19:55 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:42:13 GMT
+# Fri, 25 Sep 2020 23:19:55 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:72fb9e9daf6916d23d5ddb9755e3ab864abfa8ba4f352549179782677ea68012`  
-		Last Modified: Fri, 04 Sep 2020 00:25:27 GMT  
-		Size: 40.1 MB (40096941 bytes)  
+	-	`sha256:511338b9646fd6cab2c278e174281c8d444bef1a2846348b1e0687ece0450d3c`  
+		Last Modified: Wed, 16 Sep 2020 16:25:23 GMT  
+		Size: 40.1 MB (40099025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:899cdab0a82a447b311cc0646f11453c021df6968deccedf1187f915f1e8053b`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 852.0 B  
+	-	`sha256:9b39b0ff65d844135c15ee00abc2dec8e0a964a0f626097ba95ee4c2fa0a19ed`  
+		Last Modified: Fri, 25 Sep 2020 22:50:25 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:016b9151e276d67695313eeb9bce429497ee8ab86848317064a39e8a8666c87a`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 471.0 B  
+	-	`sha256:f5a1f7ba18a1a2b6ece87fc83510da11658ea364ee85e16467c0ca7cfadb52d7`  
+		Last Modified: Fri, 25 Sep 2020 22:50:26 GMT  
+		Size: 467.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:727158034d7c22989558e6c5c700ff8c0e20942f6d4296293e5fd59e47f0cdc9`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 171.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0014075927dcdb79fcc5ae5598cf2580eafb26734e356a245d71d84f92de0874`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 2.0 KB (1992 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b14870a6692a0b9a10c7f98e4cce53fda1dc85ad7d3b1fdd371b4dc058155c4`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 2.4 MB (2431512 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6931b0179538af2391acc42d0007a997994e4fef4b96fed92ae8c91937a3247`  
-		Last Modified: Wed, 16 Sep 2020 23:46:16 GMT  
-		Size: 1.2 MB (1232078 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5374263d0b831ffbb714f758dd5e0af3cbfe2455964c625ac7ab87bc8ef73621`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 149.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24401f44fcee205282f3e492bbbb8db2517b66ba073c7fb3a8812a9526996ca4`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
-		Size: 2.0 KB (1995 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:596a0f9df976ded5406b72ca9bcaa772db1f1ead0700eb36cc4bf2090442871a`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
-		Size: 238.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44fccba766591d50203e975348d6fa699591dc63728fa7a56f73a4c81d4fe550`  
-		Last Modified: Wed, 16 Sep 2020 23:46:41 GMT  
-		Size: 111.6 MB (111608009 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0825c32fd5672d65e0b2cbe7299d8e6197e3ff0c8675ad1c88a1c217d2296166`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
+	-	`sha256:3caa76f7dac8b4a5afba79f1582f3546a987a066f79adb97b5dfa25b0f72989a`  
+		Last Modified: Fri, 25 Sep 2020 22:50:25 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee40877dd501ef1b459d40ff4164db63329f4f2bf90bee72a49668e87cad1eb0`  
-		Last Modified: Wed, 16 Sep 2020 23:46:13 GMT  
-		Size: 4.0 KB (3954 bytes)  
+	-	`sha256:3f6b981797aeddb641b5fe75c414276ed5f814c64e49f4ab6e4dd36b81921fdb`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 2.0 KB (1995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6a78c76765c091948341885ada2dab70c6b6c4bed0d7ceb2ec724352978fe190`  
+		Last Modified: Fri, 25 Sep 2020 23:23:44 GMT  
+		Size: 2.4 MB (2431274 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7bbb6ce673fee8e02cd799ccaf55aead8f1b2d885a619bc22578b2121dfc9103`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 1.2 MB (1231961 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a58def160337d20af9624f74869456271f29bf720cbd4377e5bbcbcbddaeeac4`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 149.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0b392eff06f79f918fb6c3b32001213bae897fda3ac64c78753a9da3d5b21269`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 2.0 KB (1998 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bdf1563452c5725374717d64ffaf3d857d5548401b66a0d7b93c8a2708c1b524`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 239.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d26484acc50e9f0a160c7bf1ad8b754c79e1f674d54b24ccc7e504baa7999c50`  
+		Last Modified: Fri, 25 Sep 2020 23:24:09 GMT  
+		Size: 111.6 MB (111607821 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a1fcfcc8143cda44cc5cd67bd20c59907f45e852d2f2be6c733c7db925f0f74f`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 169.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c40d4b9fa7feb7100c0e94b4778d7f1d580c7a4b26581c805650b164b17b8ab6`  
+		Last Modified: Fri, 25 Sep 2020 23:23:41 GMT  
+		Size: 4.0 KB (3952 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4`
 
 ```console
-$ docker pull mongo@sha256:ebcdb042054d9974c8c3160d761b0bdb39b55115448242de1a5161c124ddb0af
+$ docker pull mongo@sha256:d04601593b2bb0b0e569478e99663561e245982bd43174fe1a2cd52792613674
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3230,239 +3230,239 @@ CMD ["mongod"]
 ### `mongo:4` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:d7e8c56b12849d9ca53760879ee3f2ff16211f30072d662d753161bd6530719a
+$ docker pull mongo@sha256:813ecaa78bf36de902579105aac27356b2a0bd876dcc6d7fdc977cf3898191e1
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **167.9 MB (167921175 bytes)**  
+-	Total Size: **167.9 MB (167940515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d1a2d5a50a5abb3b3930d52d19af7752fdbfcd63b28111e5c56290e80c2db2d`
+-	Image ID: `sha256:811d532cf7eeb16c636343bc3e183c1db7fe8d887762b141e975f74e81481e40`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 23:16:37 GMT
-ADD file:9eedc88c2028d53a81210b52c98121dddea7e30ecfbd4d11d2a1b2bdc94a0102 in / 
-# Wed, 16 Sep 2020 23:16:39 GMT
+# Fri, 25 Sep 2020 22:47:32 GMT
+ADD file:d2c57bfbb29f6de3b29050a2c50c3806e0c8caa26f6d8dea47f479c923d72e3e in / 
+# Fri, 25 Sep 2020 22:47:35 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 23:16:41 GMT
+# Fri, 25 Sep 2020 22:47:36 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 23:16:43 GMT
+# Fri, 25 Sep 2020 22:47:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 23:16:44 GMT
+# Fri, 25 Sep 2020 22:47:39 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:43:31 GMT
+# Fri, 25 Sep 2020 23:20:58 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:43:46 GMT
+# Fri, 25 Sep 2020 23:21:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:13 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:14 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:44:09 GMT
+# Fri, 25 Sep 2020 23:21:35 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:44:11 GMT
+# Fri, 25 Sep 2020 23:21:37 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:45:01 GMT
+# Fri, 25 Sep 2020 23:22:29 GMT
 ENV GPG_KEYS=20691EEC35216C63CAF66CE1656408E390CFB1F5
-# Wed, 16 Sep 2020 23:45:03 GMT
+# Fri, 25 Sep 2020 23:22:32 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:45:04 GMT
+# Fri, 25 Sep 2020 23:22:33 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:45:04 GMT
+# Fri, 25 Sep 2020 23:22:34 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:45:05 GMT
+# Fri, 25 Sep 2020 23:22:34 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:45:06 GMT
+# Fri, 25 Sep 2020 23:22:35 GMT
 ENV MONGO_MAJOR=4.4
-# Wed, 16 Sep 2020 23:45:07 GMT
+# Fri, 25 Sep 2020 23:22:36 GMT
 ENV MONGO_VERSION=4.4.1
-# Wed, 16 Sep 2020 23:45:10 GMT
+# Fri, 25 Sep 2020 23:22:37 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:45:40 GMT
+# Fri, 25 Sep 2020 23:23:08 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:45:43 GMT
+# Fri, 25 Sep 2020 23:23:11 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:45:44 GMT
+# Fri, 25 Sep 2020 23:23:12 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:45:45 GMT
+# Fri, 25 Sep 2020 23:23:13 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:45:46 GMT
+# Fri, 25 Sep 2020 23:23:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:45:47 GMT
+# Fri, 25 Sep 2020 23:23:14 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:45:48 GMT
+# Fri, 25 Sep 2020 23:23:15 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:e2d8ee3976bc7c15c8a5279cdf0249b7e41b2a489771330d0f7affb26dd7acfb`  
-		Last Modified: Fri, 04 Sep 2020 00:25:25 GMT  
-		Size: 23.7 MB (23722305 bytes)  
+	-	`sha256:296c9ad75beec603486f1373addae8e2c509e94c4adda44c1289792c91624acc`  
+		Last Modified: Tue, 22 Sep 2020 00:25:11 GMT  
+		Size: 23.7 MB (23722853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5007857f7b9b52d6efdfea9e086e6eaf35519130ff97bfe89970353f0ae53f13`  
-		Last Modified: Wed, 16 Sep 2020 23:18:23 GMT  
-		Size: 848.0 B  
+	-	`sha256:c0533d1393025aa8c38e0823a6546a0d4e5dec6b8b670758c25494c35783668d`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43927e60f12d8b877ded6af5048b2ac5753fe78caba77a6bbbece4f98559b672`  
-		Last Modified: Wed, 16 Sep 2020 23:18:22 GMT  
-		Size: 186.0 B  
+	-	`sha256:3c11bb34abc87247c6a70c928b7a5ef4cd48093642eb0c4b8121a674d3e278c6`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b72827a7f0127fb1d07506dffd83a19cf8d8a307cb5347e3ae99785575a98f12`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:abd165aaa6cf837afe497c787183e126b24a1ef1bf403484f10928ba64c46639`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:444439004828289d4e3ddf43a29364380c3ce3e5429ca0d6096c2799e81a8e1d`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 2.7 MB (2666228 bytes)  
+	-	`sha256:a920ac996f2b9527ded97e3730a6f389b34d4461d3a011e8a9d760fec20638bc`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 2.7 MB (2666255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:409dadc0b5deb1bd282abfd6567e572978e2b25a868e7dab0cea5d754507fb47`  
-		Last Modified: Wed, 16 Sep 2020 23:47:28 GMT  
-		Size: 5.3 MB (5345850 bytes)  
+	-	`sha256:b726ca9cb34a0b6364c01411cfc8cfa6958d113914018d18cba243d56c0d649b`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 5.3 MB (5346293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6f3af40ee50826887172762dee77d4318531556953ca9191552dfe7ca84e6de`  
-		Last Modified: Wed, 16 Sep 2020 23:47:26 GMT  
-		Size: 149.0 B  
+	-	`sha256:3b2c3d8694a6885ba4f1bdb65f527e085af3dc91039dd9b60a9af62ddc42b1d3`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d4fbd909a542064e616fab2c7316bf1be1f9a365d800e3b2e5b2639e231b9d`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
-		Size: 1.4 KB (1428 bytes)  
+	-	`sha256:88aec146ec81548df08b7b730fc041116e64f844464070486ee95f93a41de1f3`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b844fca0d2b508a122bbbedd3260c3eb2f8c07faf0cf062e008a13db7d4ad939`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
+	-	`sha256:7215b86ffc2f95704af100aec2bfabdcb5745cc2339c548fee0353eafe414f9b`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb78b4e43578b1eda8500f7be5f60cecd91f309327a117c99b23e2721419bd77`  
-		Last Modified: Wed, 16 Sep 2020 23:48:33 GMT  
-		Size: 136.2 MB (136177934 bytes)  
+	-	`sha256:b11b0a6ff5a4354355c3588f66dcfb3b8716e4fe55dda70431b330cf7756b650`  
+		Last Modified: Fri, 25 Sep 2020 23:25:58 GMT  
+		Size: 136.2 MB (136196252 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8faf900a91148a473b73bfe593c9b6d6f5a2adda7d2d2287b8febabcd90e5898`  
-		Last Modified: Wed, 16 Sep 2020 23:48:00 GMT  
+	-	`sha256:c2f36a0aa04da4aa9dbc7ee2f91f1c1dbc63dad241d94dc7f0c13f54734627e4`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ccfb6bcd2b4350787621bf334bc0d6f38595abd71668576ac0ffc976b7abded`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
-		Size: 4.0 KB (3954 bytes)  
+	-	`sha256:0855fdd1e2165c9684a4cf42a775a55e4a0b49138a52fbd97c97fcb547fe773c`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
+		Size: 3.9 KB (3948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4` - linux; s390x
 
 ```console
-$ docker pull mongo@sha256:f2af3bc6bc116416fee28e8d7c7892224a475c16214353915c89008f52fc169c
+$ docker pull mongo@sha256:de1f653589e4153f89f7d242f907c69c16ea91f95f2a94240a19634aa8d57c4d
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **172.9 MB (172879519 bytes)**  
+-	Total Size: **172.9 MB (172881569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c565051afcfcd0e711548cf4ef6539daa22f7f514f62fff1f9d602914ec602b8`
+-	Image ID: `sha256:abc0c05512382652300ed10d809912071b8ee0ca14c10891cabccd8228c6dc94`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 22:51:22 GMT
-ADD file:835d62b9e8aa5985cb778cef4129baec4d3688713202ad55a1fa54bb9daf136e in / 
-# Wed, 16 Sep 2020 22:51:24 GMT
+# Fri, 25 Sep 2020 22:44:45 GMT
+ADD file:0a8ec4fb62616b6605197e20e0a7b511dc5b03d4af0e04c929dfd9fb457d2065 in / 
+# Fri, 25 Sep 2020 22:44:47 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 22:51:25 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:34:15 GMT
+# Fri, 25 Sep 2020 23:28:41 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:48 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:34:34 GMT
+# Fri, 25 Sep 2020 23:29:03 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:34:35 GMT
+# Fri, 25 Sep 2020 23:29:04 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:35:04 GMT
+# Fri, 25 Sep 2020 23:29:38 GMT
 ENV GPG_KEYS=20691EEC35216C63CAF66CE1656408E390CFB1F5
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:38 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_MAJOR=4.4
-# Wed, 16 Sep 2020 23:35:06 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_VERSION=4.4.1
-# Wed, 16 Sep 2020 23:35:06 GMT
+# Fri, 25 Sep 2020 23:29:40 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:35:24 GMT
+# Fri, 25 Sep 2020 23:29:58 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:04 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:35:31 GMT
+# Fri, 25 Sep 2020 23:30:04 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:cedb15d27487fa2e085bee049ff12636f8ba01e63c3bbdc094088e8bb7d8b641`  
-		Last Modified: Mon, 07 Sep 2020 15:51:50 GMT  
-		Size: 25.4 MB (25370945 bytes)  
+	-	`sha256:dd2de95b9a1c45e92bcc791d469201229b58d68187c99de6b08b00a13fa33393`  
+		Last Modified: Fri, 25 Sep 2020 22:45:52 GMT  
+		Size: 25.4 MB (25371975 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc4002d8c6f20fd20eb7aa7e91bfa01443724872a214bb07ad9cf86a810c86ed`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:c38a48ef4dfab2bd639d381d11b3390b6bf8860b2ef3356e9bb55f7cb8c775f9`  
+		Last Modified: Fri, 25 Sep 2020 22:45:51 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a4b15c73b5f07d5d69927632e5a59fb80805da20bc1fabc30f973b5b2ff5805`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:eced51184728468b347a6e3f143c356cd174c4a54be3cc10ec5aeddb402765fd`  
+		Last Modified: Fri, 25 Sep 2020 22:45:49 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7a2b5f360d121f5eca32ece3923457c206d49272ff9822f0d884f6265005ae5`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:a9288641caad70cb1c99ea2cd010ce53478a4fcde867a83434c8f98575f1fc90`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 1.9 KB (1881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:893560aa2ef4e5821a94b36f1ec594ffe5a854a1555d6ea4f97dacc83af8480d`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 2.7 MB (2704511 bytes)  
+	-	`sha256:fbb83c3ffb783f1412239a892171b331eef5d68b65aae1a2c51c44619cacb1c0`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 2.7 MB (2704583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fea2f8918f8c2df2c52439cf21e13e753d2435e01746244e98514af740dbd33c`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 5.7 MB (5745258 bytes)  
+	-	`sha256:e67c01a91968aa16935794fc7d52f7742b3359858bcfa36f033e3a9a8247e780`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 5.7 MB (5746126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90fd4098140808a14963597eb91371777030db4f7e4e6f718f287f333129e47b`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 149.0 B  
+	-	`sha256:bf72d8578ae0c25477822fd40465d9f9f696e8178817341284280781fe545f9d`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae99256407834c71804744b0944c744d43fcf2b791429dabdc01defe8a67895c`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
+	-	`sha256:891f80311986b5ccb82ae38f1f7b88c67e49b6fc81534ef8984e5b2109064d6b`  
+		Last Modified: Fri, 25 Sep 2020 23:30:37 GMT  
 		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b90df8b325066d02adf0130028fdbeec07f844cc39d97ffbe799a3c60a4c426`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
-		Size: 235.0 B  
+	-	`sha256:b862844c0ef43cc7917b410c17cbcd9e60c83231627cae7f40aa92a521f4efb6`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 238.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a68628d4230e194876d0206ccbd2b07078e347ae8163598fe29b87c3fa1fb5c8`  
-		Last Modified: Wed, 16 Sep 2020 23:36:25 GMT  
-		Size: 139.0 MB (139049954 bytes)  
+	-	`sha256:185ef58863de1fef5f933f4f05dd35e6f38ea3d1f491e4363a67c0b07db5afaa`  
+		Last Modified: Fri, 25 Sep 2020 23:30:54 GMT  
+		Size: 139.1 MB (139050035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ad7e1e8fa0802e1cc0372935e71f17c5416f2996976ee70b6986858c12e3010`  
-		Last Modified: Wed, 16 Sep 2020 23:36:08 GMT  
-		Size: 168.0 B  
+	-	`sha256:36be598b0fb9cf5388c223afc27633dc987a84af1aa05cf185133ea8ce300bb8`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:849cf808dcbba28bbf2ae3671fd8df5b91a6e7b68a129bb6d0f8fcedebffa4b8`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
-		Size: 4.0 KB (3955 bytes)  
+	-	`sha256:afd583fd9ef05f53886b3c68b812186511fcd3b1ad1bcc98ca3f244eec4dc2e5`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 4.0 KB (3954 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4` - windows version 10.0.14393.3930; amd64
@@ -3623,7 +3623,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.0`
 
 ```console
-$ docker pull mongo@sha256:c17eff03970f826a7aee96446ec8aacbc81baa4930be427860f23ca2aae14487
+$ docker pull mongo@sha256:a8427b9992c20ad7c9ef0418d12541c03ca558381d0111238c9fa4738b59f8cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3759,124 +3759,124 @@ CMD ["mongod"]
 ### `mongo:4.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:4d706fb7984604da31ad754b914feecfba9c76a7a14b03aa64edef0f2d92b8eb
+$ docker pull mongo@sha256:ec101f01a9071adf77ccdfbe831662c7da1cfb2165615d5b9e25844eaa30cae4
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.5 MB (143464452 bytes)**  
+-	Total Size: **143.5 MB (143466085 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e84a79d882b54970649616f86e0a2c6cf558c3c57ccf6cb8d7b3121742064128`
+-	Image ID: `sha256:2a2b6bddbdb9c78b29225986faa98cf15b28bf58d2b370e1cb60eef64a3ac4cd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 23:17:57 GMT
-ADD file:07638f480082d3760a79e7f8ab797a506252cc2233f89865558b0b5e0220a4d3 in / 
-# Wed, 16 Sep 2020 23:18:00 GMT
+# Fri, 25 Sep 2020 22:48:52 GMT
+ADD file:5ad8fe01e35cc6efe923d7698aaa261cdb15f4f4ae01009d04d2a1ddadc1d5b2 in / 
+# Fri, 25 Sep 2020 22:48:55 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 23:18:02 GMT
+# Fri, 25 Sep 2020 22:48:57 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:18:04 GMT
+# Fri, 25 Sep 2020 22:48:59 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 23:18:05 GMT
+# Fri, 25 Sep 2020 22:49:00 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:40:28 GMT
+# Fri, 25 Sep 2020 23:18:35 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:40:51 GMT
+# Fri, 25 Sep 2020 23:18:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:40:52 GMT
+# Fri, 25 Sep 2020 23:18:51 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:40:54 GMT
+# Fri, 25 Sep 2020 23:18:52 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:41:27 GMT
+# Fri, 25 Sep 2020 23:19:16 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:41:30 GMT
+# Fri, 25 Sep 2020 23:19:17 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:42:31 GMT
+# Fri, 25 Sep 2020 23:20:07 GMT
 ENV GPG_KEYS=9DA31620334BD75D9DCB49F368818C72E52529D4
-# Wed, 16 Sep 2020 23:42:33 GMT
+# Fri, 25 Sep 2020 23:20:09 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:42:34 GMT
+# Fri, 25 Sep 2020 23:20:10 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:42:35 GMT
+# Fri, 25 Sep 2020 23:20:10 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:42:35 GMT
+# Fri, 25 Sep 2020 23:20:11 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:42:36 GMT
+# Fri, 25 Sep 2020 23:20:11 GMT
 ENV MONGO_MAJOR=4.0
-# Wed, 16 Sep 2020 23:42:37 GMT
+# Fri, 25 Sep 2020 23:20:12 GMT
 ENV MONGO_VERSION=4.0.20
-# Wed, 16 Sep 2020 23:42:39 GMT
+# Fri, 25 Sep 2020 23:20:14 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu xenial/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:43:08 GMT
+# Fri, 25 Sep 2020 23:20:42 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:43:12 GMT
+# Fri, 25 Sep 2020 23:20:45 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:43:13 GMT
+# Fri, 25 Sep 2020 23:20:46 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:43:14 GMT
+# Fri, 25 Sep 2020 23:20:46 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:43:15 GMT
+# Fri, 25 Sep 2020 23:20:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:43:16 GMT
+# Fri, 25 Sep 2020 23:20:48 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:43:17 GMT
+# Fri, 25 Sep 2020 23:20:48 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:72fb9e9daf6916d23d5ddb9755e3ab864abfa8ba4f352549179782677ea68012`  
-		Last Modified: Fri, 04 Sep 2020 00:25:27 GMT  
-		Size: 40.1 MB (40096941 bytes)  
+	-	`sha256:511338b9646fd6cab2c278e174281c8d444bef1a2846348b1e0687ece0450d3c`  
+		Last Modified: Wed, 16 Sep 2020 16:25:23 GMT  
+		Size: 40.1 MB (40099025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:899cdab0a82a447b311cc0646f11453c021df6968deccedf1187f915f1e8053b`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 852.0 B  
+	-	`sha256:9b39b0ff65d844135c15ee00abc2dec8e0a964a0f626097ba95ee4c2fa0a19ed`  
+		Last Modified: Fri, 25 Sep 2020 22:50:25 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:016b9151e276d67695313eeb9bce429497ee8ab86848317064a39e8a8666c87a`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 471.0 B  
+	-	`sha256:f5a1f7ba18a1a2b6ece87fc83510da11658ea364ee85e16467c0ca7cfadb52d7`  
+		Last Modified: Fri, 25 Sep 2020 22:50:26 GMT  
+		Size: 467.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:727158034d7c22989558e6c5c700ff8c0e20942f6d4296293e5fd59e47f0cdc9`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 171.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0014075927dcdb79fcc5ae5598cf2580eafb26734e356a245d71d84f92de0874`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 2.0 KB (1992 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b14870a6692a0b9a10c7f98e4cce53fda1dc85ad7d3b1fdd371b4dc058155c4`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 2.4 MB (2431512 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6931b0179538af2391acc42d0007a997994e4fef4b96fed92ae8c91937a3247`  
-		Last Modified: Wed, 16 Sep 2020 23:46:16 GMT  
-		Size: 1.2 MB (1232078 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5374263d0b831ffbb714f758dd5e0af3cbfe2455964c625ac7ab87bc8ef73621`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 149.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52dd23b9f045cd494d73c1b7a27b1d537fb6a7bd6c3bb2c8613f20b1f25ffb4a`  
-		Last Modified: Wed, 16 Sep 2020 23:46:51 GMT  
-		Size: 1.4 KB (1430 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8dfce0fd88210a771f4dc4890a98beba6daa53deeba74297c02429dc6e2166d9`  
-		Last Modified: Wed, 16 Sep 2020 23:46:51 GMT  
-		Size: 238.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50aaa9c0d2c350ad2f87371f5077e427b6b6c176abffcd2e0167fe09c3338a44`  
-		Last Modified: Wed, 16 Sep 2020 23:47:16 GMT  
-		Size: 99.7 MB (99694491 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e0065798e1a8da1dc12af1fcc0b541b779b50a15d9a8427025efb5fa8e78c38`  
-		Last Modified: Wed, 16 Sep 2020 23:46:51 GMT  
+	-	`sha256:3caa76f7dac8b4a5afba79f1582f3546a987a066f79adb97b5dfa25b0f72989a`  
+		Last Modified: Fri, 25 Sep 2020 22:50:25 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8eef5a0a4ec86f98340ec0d877a343ddcd68c3deeb7e78509bb4f95d293efd0`  
-		Last Modified: Wed, 16 Sep 2020 23:46:51 GMT  
-		Size: 4.0 KB (3957 bytes)  
+	-	`sha256:3f6b981797aeddb641b5fe75c414276ed5f814c64e49f4ab6e4dd36b81921fdb`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 2.0 KB (1995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6a78c76765c091948341885ada2dab70c6b6c4bed0d7ceb2ec724352978fe190`  
+		Last Modified: Fri, 25 Sep 2020 23:23:44 GMT  
+		Size: 2.4 MB (2431274 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7bbb6ce673fee8e02cd799ccaf55aead8f1b2d885a619bc22578b2121dfc9103`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 1.2 MB (1231961 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a58def160337d20af9624f74869456271f29bf720cbd4377e5bbcbcbddaeeac4`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 149.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:072771cbbd7643b7ba8fe22a1813c9e06ff9a7d4a77caffcf5835ba28afbfcb8`  
+		Last Modified: Fri, 25 Sep 2020 23:24:19 GMT  
+		Size: 1.4 KB (1431 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:622c298f859c558ebecda4336d13bbbeab7e39bb0b14e8ffba6ae33a0956bcab`  
+		Last Modified: Fri, 25 Sep 2020 23:24:19 GMT  
+		Size: 238.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:312713e78b33ea6637dec3dfae3757fda0c22985d15ae1101b8e3a334bba59af`  
+		Last Modified: Fri, 25 Sep 2020 23:24:43 GMT  
+		Size: 99.7 MB (99694401 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eda2e531286ecf1f9b9f5d5db48ac9f331dcad28462a9eb5230b9227a1f1665c`  
+		Last Modified: Fri, 25 Sep 2020 23:24:19 GMT  
+		Size: 170.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4046a58f5f4d5c0b866ddc7c22f51a0d84a90ae5c3f18f4c3d830c92b5bc92d3`  
+		Last Modified: Fri, 25 Sep 2020 23:24:19 GMT  
+		Size: 4.0 KB (3950 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.0` - windows version 10.0.14393.3930; amd64
@@ -4037,7 +4037,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.0.20`
 
 ```console
-$ docker pull mongo@sha256:c17eff03970f826a7aee96446ec8aacbc81baa4930be427860f23ca2aae14487
+$ docker pull mongo@sha256:a8427b9992c20ad7c9ef0418d12541c03ca558381d0111238c9fa4738b59f8cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4173,124 +4173,124 @@ CMD ["mongod"]
 ### `mongo:4.0.20` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:4d706fb7984604da31ad754b914feecfba9c76a7a14b03aa64edef0f2d92b8eb
+$ docker pull mongo@sha256:ec101f01a9071adf77ccdfbe831662c7da1cfb2165615d5b9e25844eaa30cae4
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.5 MB (143464452 bytes)**  
+-	Total Size: **143.5 MB (143466085 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e84a79d882b54970649616f86e0a2c6cf558c3c57ccf6cb8d7b3121742064128`
+-	Image ID: `sha256:2a2b6bddbdb9c78b29225986faa98cf15b28bf58d2b370e1cb60eef64a3ac4cd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 23:17:57 GMT
-ADD file:07638f480082d3760a79e7f8ab797a506252cc2233f89865558b0b5e0220a4d3 in / 
-# Wed, 16 Sep 2020 23:18:00 GMT
+# Fri, 25 Sep 2020 22:48:52 GMT
+ADD file:5ad8fe01e35cc6efe923d7698aaa261cdb15f4f4ae01009d04d2a1ddadc1d5b2 in / 
+# Fri, 25 Sep 2020 22:48:55 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 23:18:02 GMT
+# Fri, 25 Sep 2020 22:48:57 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:18:04 GMT
+# Fri, 25 Sep 2020 22:48:59 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 23:18:05 GMT
+# Fri, 25 Sep 2020 22:49:00 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:40:28 GMT
+# Fri, 25 Sep 2020 23:18:35 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:40:51 GMT
+# Fri, 25 Sep 2020 23:18:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:40:52 GMT
+# Fri, 25 Sep 2020 23:18:51 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:40:54 GMT
+# Fri, 25 Sep 2020 23:18:52 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:41:27 GMT
+# Fri, 25 Sep 2020 23:19:16 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:41:30 GMT
+# Fri, 25 Sep 2020 23:19:17 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:42:31 GMT
+# Fri, 25 Sep 2020 23:20:07 GMT
 ENV GPG_KEYS=9DA31620334BD75D9DCB49F368818C72E52529D4
-# Wed, 16 Sep 2020 23:42:33 GMT
+# Fri, 25 Sep 2020 23:20:09 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:42:34 GMT
+# Fri, 25 Sep 2020 23:20:10 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:42:35 GMT
+# Fri, 25 Sep 2020 23:20:10 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:42:35 GMT
+# Fri, 25 Sep 2020 23:20:11 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:42:36 GMT
+# Fri, 25 Sep 2020 23:20:11 GMT
 ENV MONGO_MAJOR=4.0
-# Wed, 16 Sep 2020 23:42:37 GMT
+# Fri, 25 Sep 2020 23:20:12 GMT
 ENV MONGO_VERSION=4.0.20
-# Wed, 16 Sep 2020 23:42:39 GMT
+# Fri, 25 Sep 2020 23:20:14 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu xenial/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:43:08 GMT
+# Fri, 25 Sep 2020 23:20:42 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:43:12 GMT
+# Fri, 25 Sep 2020 23:20:45 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:43:13 GMT
+# Fri, 25 Sep 2020 23:20:46 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:43:14 GMT
+# Fri, 25 Sep 2020 23:20:46 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:43:15 GMT
+# Fri, 25 Sep 2020 23:20:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:43:16 GMT
+# Fri, 25 Sep 2020 23:20:48 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:43:17 GMT
+# Fri, 25 Sep 2020 23:20:48 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:72fb9e9daf6916d23d5ddb9755e3ab864abfa8ba4f352549179782677ea68012`  
-		Last Modified: Fri, 04 Sep 2020 00:25:27 GMT  
-		Size: 40.1 MB (40096941 bytes)  
+	-	`sha256:511338b9646fd6cab2c278e174281c8d444bef1a2846348b1e0687ece0450d3c`  
+		Last Modified: Wed, 16 Sep 2020 16:25:23 GMT  
+		Size: 40.1 MB (40099025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:899cdab0a82a447b311cc0646f11453c021df6968deccedf1187f915f1e8053b`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 852.0 B  
+	-	`sha256:9b39b0ff65d844135c15ee00abc2dec8e0a964a0f626097ba95ee4c2fa0a19ed`  
+		Last Modified: Fri, 25 Sep 2020 22:50:25 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:016b9151e276d67695313eeb9bce429497ee8ab86848317064a39e8a8666c87a`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 471.0 B  
+	-	`sha256:f5a1f7ba18a1a2b6ece87fc83510da11658ea364ee85e16467c0ca7cfadb52d7`  
+		Last Modified: Fri, 25 Sep 2020 22:50:26 GMT  
+		Size: 467.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:727158034d7c22989558e6c5c700ff8c0e20942f6d4296293e5fd59e47f0cdc9`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 171.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0014075927dcdb79fcc5ae5598cf2580eafb26734e356a245d71d84f92de0874`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 2.0 KB (1992 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b14870a6692a0b9a10c7f98e4cce53fda1dc85ad7d3b1fdd371b4dc058155c4`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 2.4 MB (2431512 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6931b0179538af2391acc42d0007a997994e4fef4b96fed92ae8c91937a3247`  
-		Last Modified: Wed, 16 Sep 2020 23:46:16 GMT  
-		Size: 1.2 MB (1232078 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5374263d0b831ffbb714f758dd5e0af3cbfe2455964c625ac7ab87bc8ef73621`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 149.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52dd23b9f045cd494d73c1b7a27b1d537fb6a7bd6c3bb2c8613f20b1f25ffb4a`  
-		Last Modified: Wed, 16 Sep 2020 23:46:51 GMT  
-		Size: 1.4 KB (1430 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8dfce0fd88210a771f4dc4890a98beba6daa53deeba74297c02429dc6e2166d9`  
-		Last Modified: Wed, 16 Sep 2020 23:46:51 GMT  
-		Size: 238.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50aaa9c0d2c350ad2f87371f5077e427b6b6c176abffcd2e0167fe09c3338a44`  
-		Last Modified: Wed, 16 Sep 2020 23:47:16 GMT  
-		Size: 99.7 MB (99694491 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e0065798e1a8da1dc12af1fcc0b541b779b50a15d9a8427025efb5fa8e78c38`  
-		Last Modified: Wed, 16 Sep 2020 23:46:51 GMT  
+	-	`sha256:3caa76f7dac8b4a5afba79f1582f3546a987a066f79adb97b5dfa25b0f72989a`  
+		Last Modified: Fri, 25 Sep 2020 22:50:25 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8eef5a0a4ec86f98340ec0d877a343ddcd68c3deeb7e78509bb4f95d293efd0`  
-		Last Modified: Wed, 16 Sep 2020 23:46:51 GMT  
-		Size: 4.0 KB (3957 bytes)  
+	-	`sha256:3f6b981797aeddb641b5fe75c414276ed5f814c64e49f4ab6e4dd36b81921fdb`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 2.0 KB (1995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6a78c76765c091948341885ada2dab70c6b6c4bed0d7ceb2ec724352978fe190`  
+		Last Modified: Fri, 25 Sep 2020 23:23:44 GMT  
+		Size: 2.4 MB (2431274 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7bbb6ce673fee8e02cd799ccaf55aead8f1b2d885a619bc22578b2121dfc9103`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 1.2 MB (1231961 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a58def160337d20af9624f74869456271f29bf720cbd4377e5bbcbcbddaeeac4`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 149.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:072771cbbd7643b7ba8fe22a1813c9e06ff9a7d4a77caffcf5835ba28afbfcb8`  
+		Last Modified: Fri, 25 Sep 2020 23:24:19 GMT  
+		Size: 1.4 KB (1431 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:622c298f859c558ebecda4336d13bbbeab7e39bb0b14e8ffba6ae33a0956bcab`  
+		Last Modified: Fri, 25 Sep 2020 23:24:19 GMT  
+		Size: 238.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:312713e78b33ea6637dec3dfae3757fda0c22985d15ae1101b8e3a334bba59af`  
+		Last Modified: Fri, 25 Sep 2020 23:24:43 GMT  
+		Size: 99.7 MB (99694401 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eda2e531286ecf1f9b9f5d5db48ac9f331dcad28462a9eb5230b9227a1f1665c`  
+		Last Modified: Fri, 25 Sep 2020 23:24:19 GMT  
+		Size: 170.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4046a58f5f4d5c0b866ddc7c22f51a0d84a90ae5c3f18f4c3d830c92b5bc92d3`  
+		Last Modified: Fri, 25 Sep 2020 23:24:19 GMT  
+		Size: 4.0 KB (3950 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.0.20` - windows version 10.0.14393.3930; amd64
@@ -4792,7 +4792,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.0.20-xenial`
 
 ```console
-$ docker pull mongo@sha256:0880c6fb5daf6ab40382a2fc9537d1e3628d9a5deac2df0347b7fa3156ab4852
+$ docker pull mongo@sha256:745fc470334f961592e2098317c9f0b56bcbcd96300c44afdf8acc662c02ea48
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4926,124 +4926,124 @@ CMD ["mongod"]
 ### `mongo:4.0.20-xenial` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:4d706fb7984604da31ad754b914feecfba9c76a7a14b03aa64edef0f2d92b8eb
+$ docker pull mongo@sha256:ec101f01a9071adf77ccdfbe831662c7da1cfb2165615d5b9e25844eaa30cae4
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.5 MB (143464452 bytes)**  
+-	Total Size: **143.5 MB (143466085 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e84a79d882b54970649616f86e0a2c6cf558c3c57ccf6cb8d7b3121742064128`
+-	Image ID: `sha256:2a2b6bddbdb9c78b29225986faa98cf15b28bf58d2b370e1cb60eef64a3ac4cd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 23:17:57 GMT
-ADD file:07638f480082d3760a79e7f8ab797a506252cc2233f89865558b0b5e0220a4d3 in / 
-# Wed, 16 Sep 2020 23:18:00 GMT
+# Fri, 25 Sep 2020 22:48:52 GMT
+ADD file:5ad8fe01e35cc6efe923d7698aaa261cdb15f4f4ae01009d04d2a1ddadc1d5b2 in / 
+# Fri, 25 Sep 2020 22:48:55 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 23:18:02 GMT
+# Fri, 25 Sep 2020 22:48:57 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:18:04 GMT
+# Fri, 25 Sep 2020 22:48:59 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 23:18:05 GMT
+# Fri, 25 Sep 2020 22:49:00 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:40:28 GMT
+# Fri, 25 Sep 2020 23:18:35 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:40:51 GMT
+# Fri, 25 Sep 2020 23:18:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:40:52 GMT
+# Fri, 25 Sep 2020 23:18:51 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:40:54 GMT
+# Fri, 25 Sep 2020 23:18:52 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:41:27 GMT
+# Fri, 25 Sep 2020 23:19:16 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:41:30 GMT
+# Fri, 25 Sep 2020 23:19:17 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:42:31 GMT
+# Fri, 25 Sep 2020 23:20:07 GMT
 ENV GPG_KEYS=9DA31620334BD75D9DCB49F368818C72E52529D4
-# Wed, 16 Sep 2020 23:42:33 GMT
+# Fri, 25 Sep 2020 23:20:09 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:42:34 GMT
+# Fri, 25 Sep 2020 23:20:10 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:42:35 GMT
+# Fri, 25 Sep 2020 23:20:10 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:42:35 GMT
+# Fri, 25 Sep 2020 23:20:11 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:42:36 GMT
+# Fri, 25 Sep 2020 23:20:11 GMT
 ENV MONGO_MAJOR=4.0
-# Wed, 16 Sep 2020 23:42:37 GMT
+# Fri, 25 Sep 2020 23:20:12 GMT
 ENV MONGO_VERSION=4.0.20
-# Wed, 16 Sep 2020 23:42:39 GMT
+# Fri, 25 Sep 2020 23:20:14 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu xenial/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:43:08 GMT
+# Fri, 25 Sep 2020 23:20:42 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:43:12 GMT
+# Fri, 25 Sep 2020 23:20:45 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:43:13 GMT
+# Fri, 25 Sep 2020 23:20:46 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:43:14 GMT
+# Fri, 25 Sep 2020 23:20:46 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:43:15 GMT
+# Fri, 25 Sep 2020 23:20:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:43:16 GMT
+# Fri, 25 Sep 2020 23:20:48 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:43:17 GMT
+# Fri, 25 Sep 2020 23:20:48 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:72fb9e9daf6916d23d5ddb9755e3ab864abfa8ba4f352549179782677ea68012`  
-		Last Modified: Fri, 04 Sep 2020 00:25:27 GMT  
-		Size: 40.1 MB (40096941 bytes)  
+	-	`sha256:511338b9646fd6cab2c278e174281c8d444bef1a2846348b1e0687ece0450d3c`  
+		Last Modified: Wed, 16 Sep 2020 16:25:23 GMT  
+		Size: 40.1 MB (40099025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:899cdab0a82a447b311cc0646f11453c021df6968deccedf1187f915f1e8053b`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 852.0 B  
+	-	`sha256:9b39b0ff65d844135c15ee00abc2dec8e0a964a0f626097ba95ee4c2fa0a19ed`  
+		Last Modified: Fri, 25 Sep 2020 22:50:25 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:016b9151e276d67695313eeb9bce429497ee8ab86848317064a39e8a8666c87a`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 471.0 B  
+	-	`sha256:f5a1f7ba18a1a2b6ece87fc83510da11658ea364ee85e16467c0ca7cfadb52d7`  
+		Last Modified: Fri, 25 Sep 2020 22:50:26 GMT  
+		Size: 467.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:727158034d7c22989558e6c5c700ff8c0e20942f6d4296293e5fd59e47f0cdc9`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 171.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0014075927dcdb79fcc5ae5598cf2580eafb26734e356a245d71d84f92de0874`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 2.0 KB (1992 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b14870a6692a0b9a10c7f98e4cce53fda1dc85ad7d3b1fdd371b4dc058155c4`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 2.4 MB (2431512 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6931b0179538af2391acc42d0007a997994e4fef4b96fed92ae8c91937a3247`  
-		Last Modified: Wed, 16 Sep 2020 23:46:16 GMT  
-		Size: 1.2 MB (1232078 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5374263d0b831ffbb714f758dd5e0af3cbfe2455964c625ac7ab87bc8ef73621`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 149.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52dd23b9f045cd494d73c1b7a27b1d537fb6a7bd6c3bb2c8613f20b1f25ffb4a`  
-		Last Modified: Wed, 16 Sep 2020 23:46:51 GMT  
-		Size: 1.4 KB (1430 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8dfce0fd88210a771f4dc4890a98beba6daa53deeba74297c02429dc6e2166d9`  
-		Last Modified: Wed, 16 Sep 2020 23:46:51 GMT  
-		Size: 238.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50aaa9c0d2c350ad2f87371f5077e427b6b6c176abffcd2e0167fe09c3338a44`  
-		Last Modified: Wed, 16 Sep 2020 23:47:16 GMT  
-		Size: 99.7 MB (99694491 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e0065798e1a8da1dc12af1fcc0b541b779b50a15d9a8427025efb5fa8e78c38`  
-		Last Modified: Wed, 16 Sep 2020 23:46:51 GMT  
+	-	`sha256:3caa76f7dac8b4a5afba79f1582f3546a987a066f79adb97b5dfa25b0f72989a`  
+		Last Modified: Fri, 25 Sep 2020 22:50:25 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8eef5a0a4ec86f98340ec0d877a343ddcd68c3deeb7e78509bb4f95d293efd0`  
-		Last Modified: Wed, 16 Sep 2020 23:46:51 GMT  
-		Size: 4.0 KB (3957 bytes)  
+	-	`sha256:3f6b981797aeddb641b5fe75c414276ed5f814c64e49f4ab6e4dd36b81921fdb`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 2.0 KB (1995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6a78c76765c091948341885ada2dab70c6b6c4bed0d7ceb2ec724352978fe190`  
+		Last Modified: Fri, 25 Sep 2020 23:23:44 GMT  
+		Size: 2.4 MB (2431274 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7bbb6ce673fee8e02cd799ccaf55aead8f1b2d885a619bc22578b2121dfc9103`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 1.2 MB (1231961 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a58def160337d20af9624f74869456271f29bf720cbd4377e5bbcbcbddaeeac4`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 149.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:072771cbbd7643b7ba8fe22a1813c9e06ff9a7d4a77caffcf5835ba28afbfcb8`  
+		Last Modified: Fri, 25 Sep 2020 23:24:19 GMT  
+		Size: 1.4 KB (1431 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:622c298f859c558ebecda4336d13bbbeab7e39bb0b14e8ffba6ae33a0956bcab`  
+		Last Modified: Fri, 25 Sep 2020 23:24:19 GMT  
+		Size: 238.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:312713e78b33ea6637dec3dfae3757fda0c22985d15ae1101b8e3a334bba59af`  
+		Last Modified: Fri, 25 Sep 2020 23:24:43 GMT  
+		Size: 99.7 MB (99694401 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eda2e531286ecf1f9b9f5d5db48ac9f331dcad28462a9eb5230b9227a1f1665c`  
+		Last Modified: Fri, 25 Sep 2020 23:24:19 GMT  
+		Size: 170.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4046a58f5f4d5c0b866ddc7c22f51a0d84a90ae5c3f18f4c3d830c92b5bc92d3`  
+		Last Modified: Fri, 25 Sep 2020 23:24:19 GMT  
+		Size: 4.0 KB (3950 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.0-windowsservercore`
@@ -5390,7 +5390,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.0-xenial`
 
 ```console
-$ docker pull mongo@sha256:0880c6fb5daf6ab40382a2fc9537d1e3628d9a5deac2df0347b7fa3156ab4852
+$ docker pull mongo@sha256:745fc470334f961592e2098317c9f0b56bcbcd96300c44afdf8acc662c02ea48
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5524,130 +5524,130 @@ CMD ["mongod"]
 ### `mongo:4.0-xenial` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:4d706fb7984604da31ad754b914feecfba9c76a7a14b03aa64edef0f2d92b8eb
+$ docker pull mongo@sha256:ec101f01a9071adf77ccdfbe831662c7da1cfb2165615d5b9e25844eaa30cae4
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.5 MB (143464452 bytes)**  
+-	Total Size: **143.5 MB (143466085 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e84a79d882b54970649616f86e0a2c6cf558c3c57ccf6cb8d7b3121742064128`
+-	Image ID: `sha256:2a2b6bddbdb9c78b29225986faa98cf15b28bf58d2b370e1cb60eef64a3ac4cd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 23:17:57 GMT
-ADD file:07638f480082d3760a79e7f8ab797a506252cc2233f89865558b0b5e0220a4d3 in / 
-# Wed, 16 Sep 2020 23:18:00 GMT
+# Fri, 25 Sep 2020 22:48:52 GMT
+ADD file:5ad8fe01e35cc6efe923d7698aaa261cdb15f4f4ae01009d04d2a1ddadc1d5b2 in / 
+# Fri, 25 Sep 2020 22:48:55 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 23:18:02 GMT
+# Fri, 25 Sep 2020 22:48:57 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:18:04 GMT
+# Fri, 25 Sep 2020 22:48:59 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 23:18:05 GMT
+# Fri, 25 Sep 2020 22:49:00 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:40:28 GMT
+# Fri, 25 Sep 2020 23:18:35 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:40:51 GMT
+# Fri, 25 Sep 2020 23:18:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:40:52 GMT
+# Fri, 25 Sep 2020 23:18:51 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:40:54 GMT
+# Fri, 25 Sep 2020 23:18:52 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:41:27 GMT
+# Fri, 25 Sep 2020 23:19:16 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:41:30 GMT
+# Fri, 25 Sep 2020 23:19:17 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:42:31 GMT
+# Fri, 25 Sep 2020 23:20:07 GMT
 ENV GPG_KEYS=9DA31620334BD75D9DCB49F368818C72E52529D4
-# Wed, 16 Sep 2020 23:42:33 GMT
+# Fri, 25 Sep 2020 23:20:09 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:42:34 GMT
+# Fri, 25 Sep 2020 23:20:10 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:42:35 GMT
+# Fri, 25 Sep 2020 23:20:10 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:42:35 GMT
+# Fri, 25 Sep 2020 23:20:11 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:42:36 GMT
+# Fri, 25 Sep 2020 23:20:11 GMT
 ENV MONGO_MAJOR=4.0
-# Wed, 16 Sep 2020 23:42:37 GMT
+# Fri, 25 Sep 2020 23:20:12 GMT
 ENV MONGO_VERSION=4.0.20
-# Wed, 16 Sep 2020 23:42:39 GMT
+# Fri, 25 Sep 2020 23:20:14 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu xenial/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:43:08 GMT
+# Fri, 25 Sep 2020 23:20:42 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:43:12 GMT
+# Fri, 25 Sep 2020 23:20:45 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:43:13 GMT
+# Fri, 25 Sep 2020 23:20:46 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:43:14 GMT
+# Fri, 25 Sep 2020 23:20:46 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:43:15 GMT
+# Fri, 25 Sep 2020 23:20:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:43:16 GMT
+# Fri, 25 Sep 2020 23:20:48 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:43:17 GMT
+# Fri, 25 Sep 2020 23:20:48 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:72fb9e9daf6916d23d5ddb9755e3ab864abfa8ba4f352549179782677ea68012`  
-		Last Modified: Fri, 04 Sep 2020 00:25:27 GMT  
-		Size: 40.1 MB (40096941 bytes)  
+	-	`sha256:511338b9646fd6cab2c278e174281c8d444bef1a2846348b1e0687ece0450d3c`  
+		Last Modified: Wed, 16 Sep 2020 16:25:23 GMT  
+		Size: 40.1 MB (40099025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:899cdab0a82a447b311cc0646f11453c021df6968deccedf1187f915f1e8053b`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 852.0 B  
+	-	`sha256:9b39b0ff65d844135c15ee00abc2dec8e0a964a0f626097ba95ee4c2fa0a19ed`  
+		Last Modified: Fri, 25 Sep 2020 22:50:25 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:016b9151e276d67695313eeb9bce429497ee8ab86848317064a39e8a8666c87a`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 471.0 B  
+	-	`sha256:f5a1f7ba18a1a2b6ece87fc83510da11658ea364ee85e16467c0ca7cfadb52d7`  
+		Last Modified: Fri, 25 Sep 2020 22:50:26 GMT  
+		Size: 467.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:727158034d7c22989558e6c5c700ff8c0e20942f6d4296293e5fd59e47f0cdc9`  
-		Last Modified: Wed, 16 Sep 2020 23:19:18 GMT  
-		Size: 171.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0014075927dcdb79fcc5ae5598cf2580eafb26734e356a245d71d84f92de0874`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 2.0 KB (1992 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b14870a6692a0b9a10c7f98e4cce53fda1dc85ad7d3b1fdd371b4dc058155c4`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 2.4 MB (2431512 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6931b0179538af2391acc42d0007a997994e4fef4b96fed92ae8c91937a3247`  
-		Last Modified: Wed, 16 Sep 2020 23:46:16 GMT  
-		Size: 1.2 MB (1232078 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5374263d0b831ffbb714f758dd5e0af3cbfe2455964c625ac7ab87bc8ef73621`  
-		Last Modified: Wed, 16 Sep 2020 23:46:15 GMT  
-		Size: 149.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52dd23b9f045cd494d73c1b7a27b1d537fb6a7bd6c3bb2c8613f20b1f25ffb4a`  
-		Last Modified: Wed, 16 Sep 2020 23:46:51 GMT  
-		Size: 1.4 KB (1430 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8dfce0fd88210a771f4dc4890a98beba6daa53deeba74297c02429dc6e2166d9`  
-		Last Modified: Wed, 16 Sep 2020 23:46:51 GMT  
-		Size: 238.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50aaa9c0d2c350ad2f87371f5077e427b6b6c176abffcd2e0167fe09c3338a44`  
-		Last Modified: Wed, 16 Sep 2020 23:47:16 GMT  
-		Size: 99.7 MB (99694491 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e0065798e1a8da1dc12af1fcc0b541b779b50a15d9a8427025efb5fa8e78c38`  
-		Last Modified: Wed, 16 Sep 2020 23:46:51 GMT  
+	-	`sha256:3caa76f7dac8b4a5afba79f1582f3546a987a066f79adb97b5dfa25b0f72989a`  
+		Last Modified: Fri, 25 Sep 2020 22:50:25 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8eef5a0a4ec86f98340ec0d877a343ddcd68c3deeb7e78509bb4f95d293efd0`  
-		Last Modified: Wed, 16 Sep 2020 23:46:51 GMT  
-		Size: 4.0 KB (3957 bytes)  
+	-	`sha256:3f6b981797aeddb641b5fe75c414276ed5f814c64e49f4ab6e4dd36b81921fdb`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 2.0 KB (1995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6a78c76765c091948341885ada2dab70c6b6c4bed0d7ceb2ec724352978fe190`  
+		Last Modified: Fri, 25 Sep 2020 23:23:44 GMT  
+		Size: 2.4 MB (2431274 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7bbb6ce673fee8e02cd799ccaf55aead8f1b2d885a619bc22578b2121dfc9103`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 1.2 MB (1231961 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a58def160337d20af9624f74869456271f29bf720cbd4377e5bbcbcbddaeeac4`  
+		Last Modified: Fri, 25 Sep 2020 23:23:43 GMT  
+		Size: 149.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:072771cbbd7643b7ba8fe22a1813c9e06ff9a7d4a77caffcf5835ba28afbfcb8`  
+		Last Modified: Fri, 25 Sep 2020 23:24:19 GMT  
+		Size: 1.4 KB (1431 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:622c298f859c558ebecda4336d13bbbeab7e39bb0b14e8ffba6ae33a0956bcab`  
+		Last Modified: Fri, 25 Sep 2020 23:24:19 GMT  
+		Size: 238.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:312713e78b33ea6637dec3dfae3757fda0c22985d15ae1101b8e3a334bba59af`  
+		Last Modified: Fri, 25 Sep 2020 23:24:43 GMT  
+		Size: 99.7 MB (99694401 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eda2e531286ecf1f9b9f5d5db48ac9f331dcad28462a9eb5230b9227a1f1665c`  
+		Last Modified: Fri, 25 Sep 2020 23:24:19 GMT  
+		Size: 170.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4046a58f5f4d5c0b866ddc7c22f51a0d84a90ae5c3f18f4c3d830c92b5bc92d3`  
+		Last Modified: Fri, 25 Sep 2020 23:24:19 GMT  
+		Size: 4.0 KB (3950 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.2`
 
 ```console
-$ docker pull mongo@sha256:9bf607151519b59af1153e4b65e3f15115c1324c9aa1eb0de15a9f5c3e91829f
+$ docker pull mongo@sha256:34fc269df5683ad97ace8b7dc0e53fcd93cdeb2f7eed995e8415ac0b47c82e84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5780,239 +5780,239 @@ CMD ["mongod"]
 ### `mongo:4.2` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:5a54da6c7b03933619fa5f5a19af16b7fb2a3f813684089dc68ea0ce09c84117
+$ docker pull mongo@sha256:93d777fc40d600c1e04dc0c1c3392dfc110c7074b5b35216cc718fb444b30785
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **154.7 MB (154669121 bytes)**  
+-	Total Size: **154.7 MB (154670173 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f43b12079f18fb15b46981baf969d2f6350a0df8627f08d9896601f2907020b7`
+-	Image ID: `sha256:5f7414bfb0d5ccb60a11b30b3a603cbd154d3a8747d1ef410e7079e8d9e6d6a2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 23:16:37 GMT
-ADD file:9eedc88c2028d53a81210b52c98121dddea7e30ecfbd4d11d2a1b2bdc94a0102 in / 
-# Wed, 16 Sep 2020 23:16:39 GMT
+# Fri, 25 Sep 2020 22:47:32 GMT
+ADD file:d2c57bfbb29f6de3b29050a2c50c3806e0c8caa26f6d8dea47f479c923d72e3e in / 
+# Fri, 25 Sep 2020 22:47:35 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 23:16:41 GMT
+# Fri, 25 Sep 2020 22:47:36 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 23:16:43 GMT
+# Fri, 25 Sep 2020 22:47:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 23:16:44 GMT
+# Fri, 25 Sep 2020 22:47:39 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:43:31 GMT
+# Fri, 25 Sep 2020 23:20:58 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:43:46 GMT
+# Fri, 25 Sep 2020 23:21:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:13 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:14 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:44:09 GMT
+# Fri, 25 Sep 2020 23:21:35 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:44:11 GMT
+# Fri, 25 Sep 2020 23:21:37 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:44:11 GMT
+# Fri, 25 Sep 2020 23:21:38 GMT
 ENV GPG_KEYS=E162F504A20CDF15827F718D4B7C549A058F8B6B
-# Wed, 16 Sep 2020 23:44:14 GMT
+# Fri, 25 Sep 2020 23:21:40 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:44:15 GMT
+# Fri, 25 Sep 2020 23:21:41 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:44:15 GMT
+# Fri, 25 Sep 2020 23:21:41 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:44:16 GMT
+# Fri, 25 Sep 2020 23:21:42 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:44:17 GMT
+# Fri, 25 Sep 2020 23:21:43 GMT
 ENV MONGO_MAJOR=4.2
-# Wed, 16 Sep 2020 23:44:18 GMT
+# Fri, 25 Sep 2020 23:21:43 GMT
 ENV MONGO_VERSION=4.2.9
-# Wed, 16 Sep 2020 23:44:20 GMT
+# Fri, 25 Sep 2020 23:21:45 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:44:45 GMT
+# Fri, 25 Sep 2020 23:22:11 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:44:48 GMT
+# Fri, 25 Sep 2020 23:22:14 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:44:48 GMT
+# Fri, 25 Sep 2020 23:22:14 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:44:49 GMT
+# Fri, 25 Sep 2020 23:22:15 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:44:50 GMT
+# Fri, 25 Sep 2020 23:22:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:44:50 GMT
+# Fri, 25 Sep 2020 23:22:17 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:44:51 GMT
+# Fri, 25 Sep 2020 23:22:17 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:e2d8ee3976bc7c15c8a5279cdf0249b7e41b2a489771330d0f7affb26dd7acfb`  
-		Last Modified: Fri, 04 Sep 2020 00:25:25 GMT  
-		Size: 23.7 MB (23722305 bytes)  
+	-	`sha256:296c9ad75beec603486f1373addae8e2c509e94c4adda44c1289792c91624acc`  
+		Last Modified: Tue, 22 Sep 2020 00:25:11 GMT  
+		Size: 23.7 MB (23722853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5007857f7b9b52d6efdfea9e086e6eaf35519130ff97bfe89970353f0ae53f13`  
-		Last Modified: Wed, 16 Sep 2020 23:18:23 GMT  
-		Size: 848.0 B  
+	-	`sha256:c0533d1393025aa8c38e0823a6546a0d4e5dec6b8b670758c25494c35783668d`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43927e60f12d8b877ded6af5048b2ac5753fe78caba77a6bbbece4f98559b672`  
-		Last Modified: Wed, 16 Sep 2020 23:18:22 GMT  
-		Size: 186.0 B  
+	-	`sha256:3c11bb34abc87247c6a70c928b7a5ef4cd48093642eb0c4b8121a674d3e278c6`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b72827a7f0127fb1d07506dffd83a19cf8d8a307cb5347e3ae99785575a98f12`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:abd165aaa6cf837afe497c787183e126b24a1ef1bf403484f10928ba64c46639`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:444439004828289d4e3ddf43a29364380c3ce3e5429ca0d6096c2799e81a8e1d`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 2.7 MB (2666228 bytes)  
+	-	`sha256:a920ac996f2b9527ded97e3730a6f389b34d4461d3a011e8a9d760fec20638bc`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 2.7 MB (2666255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:409dadc0b5deb1bd282abfd6567e572978e2b25a868e7dab0cea5d754507fb47`  
-		Last Modified: Wed, 16 Sep 2020 23:47:28 GMT  
-		Size: 5.3 MB (5345850 bytes)  
+	-	`sha256:b726ca9cb34a0b6364c01411cfc8cfa6958d113914018d18cba243d56c0d649b`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 5.3 MB (5346293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6f3af40ee50826887172762dee77d4318531556953ca9191552dfe7ca84e6de`  
-		Last Modified: Wed, 16 Sep 2020 23:47:26 GMT  
-		Size: 149.0 B  
+	-	`sha256:3b2c3d8694a6885ba4f1bdb65f527e085af3dc91039dd9b60a9af62ddc42b1d3`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1dbd00b20e2a0ef3f97d8ff84285fa194c861cb8b0d3e75a09f90e6a5b1d15da`  
-		Last Modified: Wed, 16 Sep 2020 23:47:25 GMT  
-		Size: 1.4 KB (1434 bytes)  
+	-	`sha256:34f6864862b6ebbde40c6fdbf7ce41be9d93114f91bf80fe245ebc1d4586184b`  
+		Last Modified: Fri, 25 Sep 2020 23:24:51 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5fe6c59ce12b6e97b71e5756adeae829b65ae5472a3a4bb2d6163563f0621be`  
-		Last Modified: Wed, 16 Sep 2020 23:47:24 GMT  
-		Size: 238.0 B  
+	-	`sha256:9d525c9af52352d834d862d92a48ffde47842983c0f6d217671290fbddd159e3`  
+		Last Modified: Fri, 25 Sep 2020 23:24:51 GMT  
+		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ffaee41b425a15c15fc7364aa8edc260df1c916ecafe726fe0dabe3f850c5bd`  
-		Last Modified: Wed, 16 Sep 2020 23:47:52 GMT  
-		Size: 122.9 MB (122925875 bytes)  
+	-	`sha256:6fe77b6a259dd62c5940119331a157367c2e03ad3a4f12d11544267841c4165d`  
+		Last Modified: Fri, 25 Sep 2020 23:25:16 GMT  
+		Size: 122.9 MB (122925902 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10511b3a95d37560d1d6d893c9cd9d4b71dcb9811e40ea331ce327fbdb55a56c`  
-		Last Modified: Wed, 16 Sep 2020 23:47:24 GMT  
+	-	`sha256:06c532d2954cb9b2a1206730c14252e375194189ad4800f13b32393bdfada3f8`  
+		Last Modified: Fri, 25 Sep 2020 23:24:51 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50656e9d95bc3dc01e53916fecfdedc20fd93b913f6f423ccd215ca1d11e276a`  
-		Last Modified: Wed, 16 Sep 2020 23:47:24 GMT  
-		Size: 4.0 KB (3954 bytes)  
+	-	`sha256:061cc88b83a03323a63b895b877964799ec797c60c0867b6b0dd489b83902939`  
+		Last Modified: Fri, 25 Sep 2020 23:24:51 GMT  
+		Size: 4.0 KB (3953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.2` - linux; s390x
 
 ```console
-$ docker pull mongo@sha256:86ca38e5f1d11eb9736b2db3685a1708c68560ab486d7aba397727cb3d09f95a
+$ docker pull mongo@sha256:7756e49ca915790178d007bc13b4de4cbfe18d40de8907854f6b2c85002cea39
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.6 MB (160585733 bytes)**  
+-	Total Size: **160.6 MB (160587800 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d15d3ab6585933645dfb9ea02ef224d7c6748244b0d7daa643326c8824c2b7f`
+-	Image ID: `sha256:4afe7e43db3b545fa93fdc6c54de18a2aa11411b1e1d75d4395df196600c45dd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 22:51:22 GMT
-ADD file:835d62b9e8aa5985cb778cef4129baec4d3688713202ad55a1fa54bb9daf136e in / 
-# Wed, 16 Sep 2020 22:51:24 GMT
+# Fri, 25 Sep 2020 22:44:45 GMT
+ADD file:0a8ec4fb62616b6605197e20e0a7b511dc5b03d4af0e04c929dfd9fb457d2065 in / 
+# Fri, 25 Sep 2020 22:44:47 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 22:51:25 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:34:15 GMT
+# Fri, 25 Sep 2020 23:28:41 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:48 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:34:34 GMT
+# Fri, 25 Sep 2020 23:29:03 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:34:35 GMT
+# Fri, 25 Sep 2020 23:29:04 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:34:35 GMT
+# Fri, 25 Sep 2020 23:29:05 GMT
 ENV GPG_KEYS=E162F504A20CDF15827F718D4B7C549A058F8B6B
-# Wed, 16 Sep 2020 23:34:36 GMT
+# Fri, 25 Sep 2020 23:29:06 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:34:36 GMT
+# Fri, 25 Sep 2020 23:29:06 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:34:36 GMT
+# Fri, 25 Sep 2020 23:29:06 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:34:37 GMT
+# Fri, 25 Sep 2020 23:29:06 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:34:37 GMT
+# Fri, 25 Sep 2020 23:29:06 GMT
 ENV MONGO_MAJOR=4.2
-# Wed, 16 Sep 2020 23:34:37 GMT
+# Fri, 25 Sep 2020 23:29:07 GMT
 ENV MONGO_VERSION=4.2.9
-# Wed, 16 Sep 2020 23:34:38 GMT
+# Fri, 25 Sep 2020 23:29:07 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:34:54 GMT
+# Fri, 25 Sep 2020 23:29:24 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:34:58 GMT
+# Fri, 25 Sep 2020 23:29:28 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:34:58 GMT
+# Fri, 25 Sep 2020 23:29:28 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:34:59 GMT
+# Fri, 25 Sep 2020 23:29:28 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:34:59 GMT
+# Fri, 25 Sep 2020 23:29:28 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:34:59 GMT
+# Fri, 25 Sep 2020 23:29:29 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:34:59 GMT
+# Fri, 25 Sep 2020 23:29:29 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:cedb15d27487fa2e085bee049ff12636f8ba01e63c3bbdc094088e8bb7d8b641`  
-		Last Modified: Mon, 07 Sep 2020 15:51:50 GMT  
-		Size: 25.4 MB (25370945 bytes)  
+	-	`sha256:dd2de95b9a1c45e92bcc791d469201229b58d68187c99de6b08b00a13fa33393`  
+		Last Modified: Fri, 25 Sep 2020 22:45:52 GMT  
+		Size: 25.4 MB (25371975 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc4002d8c6f20fd20eb7aa7e91bfa01443724872a214bb07ad9cf86a810c86ed`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:c38a48ef4dfab2bd639d381d11b3390b6bf8860b2ef3356e9bb55f7cb8c775f9`  
+		Last Modified: Fri, 25 Sep 2020 22:45:51 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a4b15c73b5f07d5d69927632e5a59fb80805da20bc1fabc30f973b5b2ff5805`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:eced51184728468b347a6e3f143c356cd174c4a54be3cc10ec5aeddb402765fd`  
+		Last Modified: Fri, 25 Sep 2020 22:45:49 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7a2b5f360d121f5eca32ece3923457c206d49272ff9822f0d884f6265005ae5`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:a9288641caad70cb1c99ea2cd010ce53478a4fcde867a83434c8f98575f1fc90`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 1.9 KB (1881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:893560aa2ef4e5821a94b36f1ec594ffe5a854a1555d6ea4f97dacc83af8480d`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 2.7 MB (2704511 bytes)  
+	-	`sha256:fbb83c3ffb783f1412239a892171b331eef5d68b65aae1a2c51c44619cacb1c0`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 2.7 MB (2704583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fea2f8918f8c2df2c52439cf21e13e753d2435e01746244e98514af740dbd33c`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 5.7 MB (5745258 bytes)  
+	-	`sha256:e67c01a91968aa16935794fc7d52f7742b3359858bcfa36f033e3a9a8247e780`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 5.7 MB (5746126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90fd4098140808a14963597eb91371777030db4f7e4e6f718f287f333129e47b`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 149.0 B  
+	-	`sha256:bf72d8578ae0c25477822fd40465d9f9f696e8178817341284280781fe545f9d`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08892956b2769531a021526d99b72bbf68ed731982652159f15427bcdd140b49`  
-		Last Modified: Wed, 16 Sep 2020 23:35:46 GMT  
-		Size: 1.4 KB (1432 bytes)  
+	-	`sha256:d26d5e29f6912200c6bd02e7aa4335fafd4da299a6bee5c63fff7a8aa4e12ec8`  
+		Last Modified: Fri, 25 Sep 2020 23:30:15 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fdeba8175c7fb219154d7e9b0d470e6c8ae1094c53779b7cc9917ce9158e271`  
-		Last Modified: Wed, 16 Sep 2020 23:35:46 GMT  
-		Size: 237.0 B  
+	-	`sha256:38a0b20a847168f2220c22e604673eee26401adb3aef5aa25465eafe01404508`  
+		Last Modified: Fri, 25 Sep 2020 23:30:15 GMT  
+		Size: 236.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29a8d8f1727beb3a2513c8a49f92ad38e008936be5a9279487f378390629b63a`  
-		Last Modified: Wed, 16 Sep 2020 23:36:00 GMT  
-		Size: 126.8 MB (126756155 bytes)  
+	-	`sha256:7c63a052f90b9654b66313a2cc64625fac7ba2c535e2c00fed37cb1cac818097`  
+		Last Modified: Fri, 25 Sep 2020 23:30:29 GMT  
+		Size: 126.8 MB (126756264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1934a7acb9fbe901467e496a29fc0cac6dc4b2c796cddc02ccb3cce885ac441`  
-		Last Modified: Wed, 16 Sep 2020 23:35:46 GMT  
-		Size: 171.0 B  
+	-	`sha256:7bb955a36e8713f761c2e491b2564d8faa651954bcceff20364846c4452b4e70`  
+		Last Modified: Fri, 25 Sep 2020 23:30:15 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:205829b170cc512f23889696b7760d2e8f6eada92e7f018fbcf971cda3a2f575`  
-		Last Modified: Wed, 16 Sep 2020 23:35:46 GMT  
-		Size: 4.0 KB (3953 bytes)  
+	-	`sha256:6d772a045960be001b0a2b14078bbceadd1f42047dcbc394e09d0ab3b9d449d2`  
+		Last Modified: Fri, 25 Sep 2020 23:30:15 GMT  
+		Size: 4.0 KB (3952 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.2` - windows version 10.0.14393.3930; amd64
@@ -6173,7 +6173,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.2.9`
 
 ```console
-$ docker pull mongo@sha256:9bf607151519b59af1153e4b65e3f15115c1324c9aa1eb0de15a9f5c3e91829f
+$ docker pull mongo@sha256:34fc269df5683ad97ace8b7dc0e53fcd93cdeb2f7eed995e8415ac0b47c82e84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6306,239 +6306,239 @@ CMD ["mongod"]
 ### `mongo:4.2.9` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:5a54da6c7b03933619fa5f5a19af16b7fb2a3f813684089dc68ea0ce09c84117
+$ docker pull mongo@sha256:93d777fc40d600c1e04dc0c1c3392dfc110c7074b5b35216cc718fb444b30785
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **154.7 MB (154669121 bytes)**  
+-	Total Size: **154.7 MB (154670173 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f43b12079f18fb15b46981baf969d2f6350a0df8627f08d9896601f2907020b7`
+-	Image ID: `sha256:5f7414bfb0d5ccb60a11b30b3a603cbd154d3a8747d1ef410e7079e8d9e6d6a2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 23:16:37 GMT
-ADD file:9eedc88c2028d53a81210b52c98121dddea7e30ecfbd4d11d2a1b2bdc94a0102 in / 
-# Wed, 16 Sep 2020 23:16:39 GMT
+# Fri, 25 Sep 2020 22:47:32 GMT
+ADD file:d2c57bfbb29f6de3b29050a2c50c3806e0c8caa26f6d8dea47f479c923d72e3e in / 
+# Fri, 25 Sep 2020 22:47:35 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 23:16:41 GMT
+# Fri, 25 Sep 2020 22:47:36 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 23:16:43 GMT
+# Fri, 25 Sep 2020 22:47:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 23:16:44 GMT
+# Fri, 25 Sep 2020 22:47:39 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:43:31 GMT
+# Fri, 25 Sep 2020 23:20:58 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:43:46 GMT
+# Fri, 25 Sep 2020 23:21:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:13 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:14 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:44:09 GMT
+# Fri, 25 Sep 2020 23:21:35 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:44:11 GMT
+# Fri, 25 Sep 2020 23:21:37 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:44:11 GMT
+# Fri, 25 Sep 2020 23:21:38 GMT
 ENV GPG_KEYS=E162F504A20CDF15827F718D4B7C549A058F8B6B
-# Wed, 16 Sep 2020 23:44:14 GMT
+# Fri, 25 Sep 2020 23:21:40 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:44:15 GMT
+# Fri, 25 Sep 2020 23:21:41 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:44:15 GMT
+# Fri, 25 Sep 2020 23:21:41 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:44:16 GMT
+# Fri, 25 Sep 2020 23:21:42 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:44:17 GMT
+# Fri, 25 Sep 2020 23:21:43 GMT
 ENV MONGO_MAJOR=4.2
-# Wed, 16 Sep 2020 23:44:18 GMT
+# Fri, 25 Sep 2020 23:21:43 GMT
 ENV MONGO_VERSION=4.2.9
-# Wed, 16 Sep 2020 23:44:20 GMT
+# Fri, 25 Sep 2020 23:21:45 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:44:45 GMT
+# Fri, 25 Sep 2020 23:22:11 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:44:48 GMT
+# Fri, 25 Sep 2020 23:22:14 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:44:48 GMT
+# Fri, 25 Sep 2020 23:22:14 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:44:49 GMT
+# Fri, 25 Sep 2020 23:22:15 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:44:50 GMT
+# Fri, 25 Sep 2020 23:22:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:44:50 GMT
+# Fri, 25 Sep 2020 23:22:17 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:44:51 GMT
+# Fri, 25 Sep 2020 23:22:17 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:e2d8ee3976bc7c15c8a5279cdf0249b7e41b2a489771330d0f7affb26dd7acfb`  
-		Last Modified: Fri, 04 Sep 2020 00:25:25 GMT  
-		Size: 23.7 MB (23722305 bytes)  
+	-	`sha256:296c9ad75beec603486f1373addae8e2c509e94c4adda44c1289792c91624acc`  
+		Last Modified: Tue, 22 Sep 2020 00:25:11 GMT  
+		Size: 23.7 MB (23722853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5007857f7b9b52d6efdfea9e086e6eaf35519130ff97bfe89970353f0ae53f13`  
-		Last Modified: Wed, 16 Sep 2020 23:18:23 GMT  
-		Size: 848.0 B  
+	-	`sha256:c0533d1393025aa8c38e0823a6546a0d4e5dec6b8b670758c25494c35783668d`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43927e60f12d8b877ded6af5048b2ac5753fe78caba77a6bbbece4f98559b672`  
-		Last Modified: Wed, 16 Sep 2020 23:18:22 GMT  
-		Size: 186.0 B  
+	-	`sha256:3c11bb34abc87247c6a70c928b7a5ef4cd48093642eb0c4b8121a674d3e278c6`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b72827a7f0127fb1d07506dffd83a19cf8d8a307cb5347e3ae99785575a98f12`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:abd165aaa6cf837afe497c787183e126b24a1ef1bf403484f10928ba64c46639`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:444439004828289d4e3ddf43a29364380c3ce3e5429ca0d6096c2799e81a8e1d`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 2.7 MB (2666228 bytes)  
+	-	`sha256:a920ac996f2b9527ded97e3730a6f389b34d4461d3a011e8a9d760fec20638bc`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 2.7 MB (2666255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:409dadc0b5deb1bd282abfd6567e572978e2b25a868e7dab0cea5d754507fb47`  
-		Last Modified: Wed, 16 Sep 2020 23:47:28 GMT  
-		Size: 5.3 MB (5345850 bytes)  
+	-	`sha256:b726ca9cb34a0b6364c01411cfc8cfa6958d113914018d18cba243d56c0d649b`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 5.3 MB (5346293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6f3af40ee50826887172762dee77d4318531556953ca9191552dfe7ca84e6de`  
-		Last Modified: Wed, 16 Sep 2020 23:47:26 GMT  
-		Size: 149.0 B  
+	-	`sha256:3b2c3d8694a6885ba4f1bdb65f527e085af3dc91039dd9b60a9af62ddc42b1d3`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1dbd00b20e2a0ef3f97d8ff84285fa194c861cb8b0d3e75a09f90e6a5b1d15da`  
-		Last Modified: Wed, 16 Sep 2020 23:47:25 GMT  
-		Size: 1.4 KB (1434 bytes)  
+	-	`sha256:34f6864862b6ebbde40c6fdbf7ce41be9d93114f91bf80fe245ebc1d4586184b`  
+		Last Modified: Fri, 25 Sep 2020 23:24:51 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5fe6c59ce12b6e97b71e5756adeae829b65ae5472a3a4bb2d6163563f0621be`  
-		Last Modified: Wed, 16 Sep 2020 23:47:24 GMT  
-		Size: 238.0 B  
+	-	`sha256:9d525c9af52352d834d862d92a48ffde47842983c0f6d217671290fbddd159e3`  
+		Last Modified: Fri, 25 Sep 2020 23:24:51 GMT  
+		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ffaee41b425a15c15fc7364aa8edc260df1c916ecafe726fe0dabe3f850c5bd`  
-		Last Modified: Wed, 16 Sep 2020 23:47:52 GMT  
-		Size: 122.9 MB (122925875 bytes)  
+	-	`sha256:6fe77b6a259dd62c5940119331a157367c2e03ad3a4f12d11544267841c4165d`  
+		Last Modified: Fri, 25 Sep 2020 23:25:16 GMT  
+		Size: 122.9 MB (122925902 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10511b3a95d37560d1d6d893c9cd9d4b71dcb9811e40ea331ce327fbdb55a56c`  
-		Last Modified: Wed, 16 Sep 2020 23:47:24 GMT  
+	-	`sha256:06c532d2954cb9b2a1206730c14252e375194189ad4800f13b32393bdfada3f8`  
+		Last Modified: Fri, 25 Sep 2020 23:24:51 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50656e9d95bc3dc01e53916fecfdedc20fd93b913f6f423ccd215ca1d11e276a`  
-		Last Modified: Wed, 16 Sep 2020 23:47:24 GMT  
-		Size: 4.0 KB (3954 bytes)  
+	-	`sha256:061cc88b83a03323a63b895b877964799ec797c60c0867b6b0dd489b83902939`  
+		Last Modified: Fri, 25 Sep 2020 23:24:51 GMT  
+		Size: 4.0 KB (3953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.2.9` - linux; s390x
 
 ```console
-$ docker pull mongo@sha256:86ca38e5f1d11eb9736b2db3685a1708c68560ab486d7aba397727cb3d09f95a
+$ docker pull mongo@sha256:7756e49ca915790178d007bc13b4de4cbfe18d40de8907854f6b2c85002cea39
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.6 MB (160585733 bytes)**  
+-	Total Size: **160.6 MB (160587800 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d15d3ab6585933645dfb9ea02ef224d7c6748244b0d7daa643326c8824c2b7f`
+-	Image ID: `sha256:4afe7e43db3b545fa93fdc6c54de18a2aa11411b1e1d75d4395df196600c45dd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 22:51:22 GMT
-ADD file:835d62b9e8aa5985cb778cef4129baec4d3688713202ad55a1fa54bb9daf136e in / 
-# Wed, 16 Sep 2020 22:51:24 GMT
+# Fri, 25 Sep 2020 22:44:45 GMT
+ADD file:0a8ec4fb62616b6605197e20e0a7b511dc5b03d4af0e04c929dfd9fb457d2065 in / 
+# Fri, 25 Sep 2020 22:44:47 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 22:51:25 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:34:15 GMT
+# Fri, 25 Sep 2020 23:28:41 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:48 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:34:34 GMT
+# Fri, 25 Sep 2020 23:29:03 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:34:35 GMT
+# Fri, 25 Sep 2020 23:29:04 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:34:35 GMT
+# Fri, 25 Sep 2020 23:29:05 GMT
 ENV GPG_KEYS=E162F504A20CDF15827F718D4B7C549A058F8B6B
-# Wed, 16 Sep 2020 23:34:36 GMT
+# Fri, 25 Sep 2020 23:29:06 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:34:36 GMT
+# Fri, 25 Sep 2020 23:29:06 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:34:36 GMT
+# Fri, 25 Sep 2020 23:29:06 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:34:37 GMT
+# Fri, 25 Sep 2020 23:29:06 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:34:37 GMT
+# Fri, 25 Sep 2020 23:29:06 GMT
 ENV MONGO_MAJOR=4.2
-# Wed, 16 Sep 2020 23:34:37 GMT
+# Fri, 25 Sep 2020 23:29:07 GMT
 ENV MONGO_VERSION=4.2.9
-# Wed, 16 Sep 2020 23:34:38 GMT
+# Fri, 25 Sep 2020 23:29:07 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:34:54 GMT
+# Fri, 25 Sep 2020 23:29:24 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:34:58 GMT
+# Fri, 25 Sep 2020 23:29:28 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:34:58 GMT
+# Fri, 25 Sep 2020 23:29:28 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:34:59 GMT
+# Fri, 25 Sep 2020 23:29:28 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:34:59 GMT
+# Fri, 25 Sep 2020 23:29:28 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:34:59 GMT
+# Fri, 25 Sep 2020 23:29:29 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:34:59 GMT
+# Fri, 25 Sep 2020 23:29:29 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:cedb15d27487fa2e085bee049ff12636f8ba01e63c3bbdc094088e8bb7d8b641`  
-		Last Modified: Mon, 07 Sep 2020 15:51:50 GMT  
-		Size: 25.4 MB (25370945 bytes)  
+	-	`sha256:dd2de95b9a1c45e92bcc791d469201229b58d68187c99de6b08b00a13fa33393`  
+		Last Modified: Fri, 25 Sep 2020 22:45:52 GMT  
+		Size: 25.4 MB (25371975 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc4002d8c6f20fd20eb7aa7e91bfa01443724872a214bb07ad9cf86a810c86ed`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:c38a48ef4dfab2bd639d381d11b3390b6bf8860b2ef3356e9bb55f7cb8c775f9`  
+		Last Modified: Fri, 25 Sep 2020 22:45:51 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a4b15c73b5f07d5d69927632e5a59fb80805da20bc1fabc30f973b5b2ff5805`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:eced51184728468b347a6e3f143c356cd174c4a54be3cc10ec5aeddb402765fd`  
+		Last Modified: Fri, 25 Sep 2020 22:45:49 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7a2b5f360d121f5eca32ece3923457c206d49272ff9822f0d884f6265005ae5`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:a9288641caad70cb1c99ea2cd010ce53478a4fcde867a83434c8f98575f1fc90`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 1.9 KB (1881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:893560aa2ef4e5821a94b36f1ec594ffe5a854a1555d6ea4f97dacc83af8480d`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 2.7 MB (2704511 bytes)  
+	-	`sha256:fbb83c3ffb783f1412239a892171b331eef5d68b65aae1a2c51c44619cacb1c0`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 2.7 MB (2704583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fea2f8918f8c2df2c52439cf21e13e753d2435e01746244e98514af740dbd33c`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 5.7 MB (5745258 bytes)  
+	-	`sha256:e67c01a91968aa16935794fc7d52f7742b3359858bcfa36f033e3a9a8247e780`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 5.7 MB (5746126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90fd4098140808a14963597eb91371777030db4f7e4e6f718f287f333129e47b`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 149.0 B  
+	-	`sha256:bf72d8578ae0c25477822fd40465d9f9f696e8178817341284280781fe545f9d`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08892956b2769531a021526d99b72bbf68ed731982652159f15427bcdd140b49`  
-		Last Modified: Wed, 16 Sep 2020 23:35:46 GMT  
-		Size: 1.4 KB (1432 bytes)  
+	-	`sha256:d26d5e29f6912200c6bd02e7aa4335fafd4da299a6bee5c63fff7a8aa4e12ec8`  
+		Last Modified: Fri, 25 Sep 2020 23:30:15 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fdeba8175c7fb219154d7e9b0d470e6c8ae1094c53779b7cc9917ce9158e271`  
-		Last Modified: Wed, 16 Sep 2020 23:35:46 GMT  
-		Size: 237.0 B  
+	-	`sha256:38a0b20a847168f2220c22e604673eee26401adb3aef5aa25465eafe01404508`  
+		Last Modified: Fri, 25 Sep 2020 23:30:15 GMT  
+		Size: 236.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29a8d8f1727beb3a2513c8a49f92ad38e008936be5a9279487f378390629b63a`  
-		Last Modified: Wed, 16 Sep 2020 23:36:00 GMT  
-		Size: 126.8 MB (126756155 bytes)  
+	-	`sha256:7c63a052f90b9654b66313a2cc64625fac7ba2c535e2c00fed37cb1cac818097`  
+		Last Modified: Fri, 25 Sep 2020 23:30:29 GMT  
+		Size: 126.8 MB (126756264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1934a7acb9fbe901467e496a29fc0cac6dc4b2c796cddc02ccb3cce885ac441`  
-		Last Modified: Wed, 16 Sep 2020 23:35:46 GMT  
-		Size: 171.0 B  
+	-	`sha256:7bb955a36e8713f761c2e491b2564d8faa651954bcceff20364846c4452b4e70`  
+		Last Modified: Fri, 25 Sep 2020 23:30:15 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:205829b170cc512f23889696b7760d2e8f6eada92e7f018fbcf971cda3a2f575`  
-		Last Modified: Wed, 16 Sep 2020 23:35:46 GMT  
-		Size: 4.0 KB (3953 bytes)  
+	-	`sha256:6d772a045960be001b0a2b14078bbceadd1f42047dcbc394e09d0ab3b9d449d2`  
+		Last Modified: Fri, 25 Sep 2020 23:30:15 GMT  
+		Size: 4.0 KB (3952 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.2.9` - windows version 10.0.14393.3930; amd64
@@ -6699,7 +6699,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.2.9-bionic`
 
 ```console
-$ docker pull mongo@sha256:2ee9a42fbb29d34fe8fe9a8c83f55a80aa97cdf66948ea44601e56a5b77aca60
+$ docker pull mongo@sha256:61067e52d44039a84e48b15dbd6199badffb50b79a33be85de1b3037c4b4de08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6830,239 +6830,239 @@ CMD ["mongod"]
 ### `mongo:4.2.9-bionic` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:5a54da6c7b03933619fa5f5a19af16b7fb2a3f813684089dc68ea0ce09c84117
+$ docker pull mongo@sha256:93d777fc40d600c1e04dc0c1c3392dfc110c7074b5b35216cc718fb444b30785
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **154.7 MB (154669121 bytes)**  
+-	Total Size: **154.7 MB (154670173 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f43b12079f18fb15b46981baf969d2f6350a0df8627f08d9896601f2907020b7`
+-	Image ID: `sha256:5f7414bfb0d5ccb60a11b30b3a603cbd154d3a8747d1ef410e7079e8d9e6d6a2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 23:16:37 GMT
-ADD file:9eedc88c2028d53a81210b52c98121dddea7e30ecfbd4d11d2a1b2bdc94a0102 in / 
-# Wed, 16 Sep 2020 23:16:39 GMT
+# Fri, 25 Sep 2020 22:47:32 GMT
+ADD file:d2c57bfbb29f6de3b29050a2c50c3806e0c8caa26f6d8dea47f479c923d72e3e in / 
+# Fri, 25 Sep 2020 22:47:35 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 23:16:41 GMT
+# Fri, 25 Sep 2020 22:47:36 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 23:16:43 GMT
+# Fri, 25 Sep 2020 22:47:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 23:16:44 GMT
+# Fri, 25 Sep 2020 22:47:39 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:43:31 GMT
+# Fri, 25 Sep 2020 23:20:58 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:43:46 GMT
+# Fri, 25 Sep 2020 23:21:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:13 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:14 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:44:09 GMT
+# Fri, 25 Sep 2020 23:21:35 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:44:11 GMT
+# Fri, 25 Sep 2020 23:21:37 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:44:11 GMT
+# Fri, 25 Sep 2020 23:21:38 GMT
 ENV GPG_KEYS=E162F504A20CDF15827F718D4B7C549A058F8B6B
-# Wed, 16 Sep 2020 23:44:14 GMT
+# Fri, 25 Sep 2020 23:21:40 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:44:15 GMT
+# Fri, 25 Sep 2020 23:21:41 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:44:15 GMT
+# Fri, 25 Sep 2020 23:21:41 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:44:16 GMT
+# Fri, 25 Sep 2020 23:21:42 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:44:17 GMT
+# Fri, 25 Sep 2020 23:21:43 GMT
 ENV MONGO_MAJOR=4.2
-# Wed, 16 Sep 2020 23:44:18 GMT
+# Fri, 25 Sep 2020 23:21:43 GMT
 ENV MONGO_VERSION=4.2.9
-# Wed, 16 Sep 2020 23:44:20 GMT
+# Fri, 25 Sep 2020 23:21:45 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:44:45 GMT
+# Fri, 25 Sep 2020 23:22:11 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:44:48 GMT
+# Fri, 25 Sep 2020 23:22:14 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:44:48 GMT
+# Fri, 25 Sep 2020 23:22:14 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:44:49 GMT
+# Fri, 25 Sep 2020 23:22:15 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:44:50 GMT
+# Fri, 25 Sep 2020 23:22:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:44:50 GMT
+# Fri, 25 Sep 2020 23:22:17 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:44:51 GMT
+# Fri, 25 Sep 2020 23:22:17 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:e2d8ee3976bc7c15c8a5279cdf0249b7e41b2a489771330d0f7affb26dd7acfb`  
-		Last Modified: Fri, 04 Sep 2020 00:25:25 GMT  
-		Size: 23.7 MB (23722305 bytes)  
+	-	`sha256:296c9ad75beec603486f1373addae8e2c509e94c4adda44c1289792c91624acc`  
+		Last Modified: Tue, 22 Sep 2020 00:25:11 GMT  
+		Size: 23.7 MB (23722853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5007857f7b9b52d6efdfea9e086e6eaf35519130ff97bfe89970353f0ae53f13`  
-		Last Modified: Wed, 16 Sep 2020 23:18:23 GMT  
-		Size: 848.0 B  
+	-	`sha256:c0533d1393025aa8c38e0823a6546a0d4e5dec6b8b670758c25494c35783668d`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43927e60f12d8b877ded6af5048b2ac5753fe78caba77a6bbbece4f98559b672`  
-		Last Modified: Wed, 16 Sep 2020 23:18:22 GMT  
-		Size: 186.0 B  
+	-	`sha256:3c11bb34abc87247c6a70c928b7a5ef4cd48093642eb0c4b8121a674d3e278c6`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b72827a7f0127fb1d07506dffd83a19cf8d8a307cb5347e3ae99785575a98f12`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:abd165aaa6cf837afe497c787183e126b24a1ef1bf403484f10928ba64c46639`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:444439004828289d4e3ddf43a29364380c3ce3e5429ca0d6096c2799e81a8e1d`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 2.7 MB (2666228 bytes)  
+	-	`sha256:a920ac996f2b9527ded97e3730a6f389b34d4461d3a011e8a9d760fec20638bc`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 2.7 MB (2666255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:409dadc0b5deb1bd282abfd6567e572978e2b25a868e7dab0cea5d754507fb47`  
-		Last Modified: Wed, 16 Sep 2020 23:47:28 GMT  
-		Size: 5.3 MB (5345850 bytes)  
+	-	`sha256:b726ca9cb34a0b6364c01411cfc8cfa6958d113914018d18cba243d56c0d649b`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 5.3 MB (5346293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6f3af40ee50826887172762dee77d4318531556953ca9191552dfe7ca84e6de`  
-		Last Modified: Wed, 16 Sep 2020 23:47:26 GMT  
-		Size: 149.0 B  
+	-	`sha256:3b2c3d8694a6885ba4f1bdb65f527e085af3dc91039dd9b60a9af62ddc42b1d3`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1dbd00b20e2a0ef3f97d8ff84285fa194c861cb8b0d3e75a09f90e6a5b1d15da`  
-		Last Modified: Wed, 16 Sep 2020 23:47:25 GMT  
-		Size: 1.4 KB (1434 bytes)  
+	-	`sha256:34f6864862b6ebbde40c6fdbf7ce41be9d93114f91bf80fe245ebc1d4586184b`  
+		Last Modified: Fri, 25 Sep 2020 23:24:51 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5fe6c59ce12b6e97b71e5756adeae829b65ae5472a3a4bb2d6163563f0621be`  
-		Last Modified: Wed, 16 Sep 2020 23:47:24 GMT  
-		Size: 238.0 B  
+	-	`sha256:9d525c9af52352d834d862d92a48ffde47842983c0f6d217671290fbddd159e3`  
+		Last Modified: Fri, 25 Sep 2020 23:24:51 GMT  
+		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ffaee41b425a15c15fc7364aa8edc260df1c916ecafe726fe0dabe3f850c5bd`  
-		Last Modified: Wed, 16 Sep 2020 23:47:52 GMT  
-		Size: 122.9 MB (122925875 bytes)  
+	-	`sha256:6fe77b6a259dd62c5940119331a157367c2e03ad3a4f12d11544267841c4165d`  
+		Last Modified: Fri, 25 Sep 2020 23:25:16 GMT  
+		Size: 122.9 MB (122925902 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10511b3a95d37560d1d6d893c9cd9d4b71dcb9811e40ea331ce327fbdb55a56c`  
-		Last Modified: Wed, 16 Sep 2020 23:47:24 GMT  
+	-	`sha256:06c532d2954cb9b2a1206730c14252e375194189ad4800f13b32393bdfada3f8`  
+		Last Modified: Fri, 25 Sep 2020 23:24:51 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50656e9d95bc3dc01e53916fecfdedc20fd93b913f6f423ccd215ca1d11e276a`  
-		Last Modified: Wed, 16 Sep 2020 23:47:24 GMT  
-		Size: 4.0 KB (3954 bytes)  
+	-	`sha256:061cc88b83a03323a63b895b877964799ec797c60c0867b6b0dd489b83902939`  
+		Last Modified: Fri, 25 Sep 2020 23:24:51 GMT  
+		Size: 4.0 KB (3953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.2.9-bionic` - linux; s390x
 
 ```console
-$ docker pull mongo@sha256:86ca38e5f1d11eb9736b2db3685a1708c68560ab486d7aba397727cb3d09f95a
+$ docker pull mongo@sha256:7756e49ca915790178d007bc13b4de4cbfe18d40de8907854f6b2c85002cea39
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.6 MB (160585733 bytes)**  
+-	Total Size: **160.6 MB (160587800 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d15d3ab6585933645dfb9ea02ef224d7c6748244b0d7daa643326c8824c2b7f`
+-	Image ID: `sha256:4afe7e43db3b545fa93fdc6c54de18a2aa11411b1e1d75d4395df196600c45dd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 22:51:22 GMT
-ADD file:835d62b9e8aa5985cb778cef4129baec4d3688713202ad55a1fa54bb9daf136e in / 
-# Wed, 16 Sep 2020 22:51:24 GMT
+# Fri, 25 Sep 2020 22:44:45 GMT
+ADD file:0a8ec4fb62616b6605197e20e0a7b511dc5b03d4af0e04c929dfd9fb457d2065 in / 
+# Fri, 25 Sep 2020 22:44:47 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 22:51:25 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:34:15 GMT
+# Fri, 25 Sep 2020 23:28:41 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:48 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:34:34 GMT
+# Fri, 25 Sep 2020 23:29:03 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:34:35 GMT
+# Fri, 25 Sep 2020 23:29:04 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:34:35 GMT
+# Fri, 25 Sep 2020 23:29:05 GMT
 ENV GPG_KEYS=E162F504A20CDF15827F718D4B7C549A058F8B6B
-# Wed, 16 Sep 2020 23:34:36 GMT
+# Fri, 25 Sep 2020 23:29:06 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:34:36 GMT
+# Fri, 25 Sep 2020 23:29:06 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:34:36 GMT
+# Fri, 25 Sep 2020 23:29:06 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:34:37 GMT
+# Fri, 25 Sep 2020 23:29:06 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:34:37 GMT
+# Fri, 25 Sep 2020 23:29:06 GMT
 ENV MONGO_MAJOR=4.2
-# Wed, 16 Sep 2020 23:34:37 GMT
+# Fri, 25 Sep 2020 23:29:07 GMT
 ENV MONGO_VERSION=4.2.9
-# Wed, 16 Sep 2020 23:34:38 GMT
+# Fri, 25 Sep 2020 23:29:07 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:34:54 GMT
+# Fri, 25 Sep 2020 23:29:24 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:34:58 GMT
+# Fri, 25 Sep 2020 23:29:28 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:34:58 GMT
+# Fri, 25 Sep 2020 23:29:28 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:34:59 GMT
+# Fri, 25 Sep 2020 23:29:28 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:34:59 GMT
+# Fri, 25 Sep 2020 23:29:28 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:34:59 GMT
+# Fri, 25 Sep 2020 23:29:29 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:34:59 GMT
+# Fri, 25 Sep 2020 23:29:29 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:cedb15d27487fa2e085bee049ff12636f8ba01e63c3bbdc094088e8bb7d8b641`  
-		Last Modified: Mon, 07 Sep 2020 15:51:50 GMT  
-		Size: 25.4 MB (25370945 bytes)  
+	-	`sha256:dd2de95b9a1c45e92bcc791d469201229b58d68187c99de6b08b00a13fa33393`  
+		Last Modified: Fri, 25 Sep 2020 22:45:52 GMT  
+		Size: 25.4 MB (25371975 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc4002d8c6f20fd20eb7aa7e91bfa01443724872a214bb07ad9cf86a810c86ed`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:c38a48ef4dfab2bd639d381d11b3390b6bf8860b2ef3356e9bb55f7cb8c775f9`  
+		Last Modified: Fri, 25 Sep 2020 22:45:51 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a4b15c73b5f07d5d69927632e5a59fb80805da20bc1fabc30f973b5b2ff5805`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:eced51184728468b347a6e3f143c356cd174c4a54be3cc10ec5aeddb402765fd`  
+		Last Modified: Fri, 25 Sep 2020 22:45:49 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7a2b5f360d121f5eca32ece3923457c206d49272ff9822f0d884f6265005ae5`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:a9288641caad70cb1c99ea2cd010ce53478a4fcde867a83434c8f98575f1fc90`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 1.9 KB (1881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:893560aa2ef4e5821a94b36f1ec594ffe5a854a1555d6ea4f97dacc83af8480d`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 2.7 MB (2704511 bytes)  
+	-	`sha256:fbb83c3ffb783f1412239a892171b331eef5d68b65aae1a2c51c44619cacb1c0`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 2.7 MB (2704583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fea2f8918f8c2df2c52439cf21e13e753d2435e01746244e98514af740dbd33c`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 5.7 MB (5745258 bytes)  
+	-	`sha256:e67c01a91968aa16935794fc7d52f7742b3359858bcfa36f033e3a9a8247e780`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 5.7 MB (5746126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90fd4098140808a14963597eb91371777030db4f7e4e6f718f287f333129e47b`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 149.0 B  
+	-	`sha256:bf72d8578ae0c25477822fd40465d9f9f696e8178817341284280781fe545f9d`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08892956b2769531a021526d99b72bbf68ed731982652159f15427bcdd140b49`  
-		Last Modified: Wed, 16 Sep 2020 23:35:46 GMT  
-		Size: 1.4 KB (1432 bytes)  
+	-	`sha256:d26d5e29f6912200c6bd02e7aa4335fafd4da299a6bee5c63fff7a8aa4e12ec8`  
+		Last Modified: Fri, 25 Sep 2020 23:30:15 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fdeba8175c7fb219154d7e9b0d470e6c8ae1094c53779b7cc9917ce9158e271`  
-		Last Modified: Wed, 16 Sep 2020 23:35:46 GMT  
-		Size: 237.0 B  
+	-	`sha256:38a0b20a847168f2220c22e604673eee26401adb3aef5aa25465eafe01404508`  
+		Last Modified: Fri, 25 Sep 2020 23:30:15 GMT  
+		Size: 236.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29a8d8f1727beb3a2513c8a49f92ad38e008936be5a9279487f378390629b63a`  
-		Last Modified: Wed, 16 Sep 2020 23:36:00 GMT  
-		Size: 126.8 MB (126756155 bytes)  
+	-	`sha256:7c63a052f90b9654b66313a2cc64625fac7ba2c535e2c00fed37cb1cac818097`  
+		Last Modified: Fri, 25 Sep 2020 23:30:29 GMT  
+		Size: 126.8 MB (126756264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1934a7acb9fbe901467e496a29fc0cac6dc4b2c796cddc02ccb3cce885ac441`  
-		Last Modified: Wed, 16 Sep 2020 23:35:46 GMT  
-		Size: 171.0 B  
+	-	`sha256:7bb955a36e8713f761c2e491b2564d8faa651954bcceff20364846c4452b4e70`  
+		Last Modified: Fri, 25 Sep 2020 23:30:15 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:205829b170cc512f23889696b7760d2e8f6eada92e7f018fbcf971cda3a2f575`  
-		Last Modified: Wed, 16 Sep 2020 23:35:46 GMT  
-		Size: 4.0 KB (3953 bytes)  
+	-	`sha256:6d772a045960be001b0a2b14078bbceadd1f42047dcbc394e09d0ab3b9d449d2`  
+		Last Modified: Fri, 25 Sep 2020 23:30:15 GMT  
+		Size: 4.0 KB (3952 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.2.9-windowsservercore`
@@ -7409,7 +7409,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.2-bionic`
 
 ```console
-$ docker pull mongo@sha256:2ee9a42fbb29d34fe8fe9a8c83f55a80aa97cdf66948ea44601e56a5b77aca60
+$ docker pull mongo@sha256:61067e52d44039a84e48b15dbd6199badffb50b79a33be85de1b3037c4b4de08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7540,239 +7540,239 @@ CMD ["mongod"]
 ### `mongo:4.2-bionic` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:5a54da6c7b03933619fa5f5a19af16b7fb2a3f813684089dc68ea0ce09c84117
+$ docker pull mongo@sha256:93d777fc40d600c1e04dc0c1c3392dfc110c7074b5b35216cc718fb444b30785
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **154.7 MB (154669121 bytes)**  
+-	Total Size: **154.7 MB (154670173 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f43b12079f18fb15b46981baf969d2f6350a0df8627f08d9896601f2907020b7`
+-	Image ID: `sha256:5f7414bfb0d5ccb60a11b30b3a603cbd154d3a8747d1ef410e7079e8d9e6d6a2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 23:16:37 GMT
-ADD file:9eedc88c2028d53a81210b52c98121dddea7e30ecfbd4d11d2a1b2bdc94a0102 in / 
-# Wed, 16 Sep 2020 23:16:39 GMT
+# Fri, 25 Sep 2020 22:47:32 GMT
+ADD file:d2c57bfbb29f6de3b29050a2c50c3806e0c8caa26f6d8dea47f479c923d72e3e in / 
+# Fri, 25 Sep 2020 22:47:35 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 23:16:41 GMT
+# Fri, 25 Sep 2020 22:47:36 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 23:16:43 GMT
+# Fri, 25 Sep 2020 22:47:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 23:16:44 GMT
+# Fri, 25 Sep 2020 22:47:39 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:43:31 GMT
+# Fri, 25 Sep 2020 23:20:58 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:43:46 GMT
+# Fri, 25 Sep 2020 23:21:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:13 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:14 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:44:09 GMT
+# Fri, 25 Sep 2020 23:21:35 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:44:11 GMT
+# Fri, 25 Sep 2020 23:21:37 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:44:11 GMT
+# Fri, 25 Sep 2020 23:21:38 GMT
 ENV GPG_KEYS=E162F504A20CDF15827F718D4B7C549A058F8B6B
-# Wed, 16 Sep 2020 23:44:14 GMT
+# Fri, 25 Sep 2020 23:21:40 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:44:15 GMT
+# Fri, 25 Sep 2020 23:21:41 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:44:15 GMT
+# Fri, 25 Sep 2020 23:21:41 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:44:16 GMT
+# Fri, 25 Sep 2020 23:21:42 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:44:17 GMT
+# Fri, 25 Sep 2020 23:21:43 GMT
 ENV MONGO_MAJOR=4.2
-# Wed, 16 Sep 2020 23:44:18 GMT
+# Fri, 25 Sep 2020 23:21:43 GMT
 ENV MONGO_VERSION=4.2.9
-# Wed, 16 Sep 2020 23:44:20 GMT
+# Fri, 25 Sep 2020 23:21:45 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:44:45 GMT
+# Fri, 25 Sep 2020 23:22:11 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:44:48 GMT
+# Fri, 25 Sep 2020 23:22:14 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:44:48 GMT
+# Fri, 25 Sep 2020 23:22:14 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:44:49 GMT
+# Fri, 25 Sep 2020 23:22:15 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:44:50 GMT
+# Fri, 25 Sep 2020 23:22:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:44:50 GMT
+# Fri, 25 Sep 2020 23:22:17 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:44:51 GMT
+# Fri, 25 Sep 2020 23:22:17 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:e2d8ee3976bc7c15c8a5279cdf0249b7e41b2a489771330d0f7affb26dd7acfb`  
-		Last Modified: Fri, 04 Sep 2020 00:25:25 GMT  
-		Size: 23.7 MB (23722305 bytes)  
+	-	`sha256:296c9ad75beec603486f1373addae8e2c509e94c4adda44c1289792c91624acc`  
+		Last Modified: Tue, 22 Sep 2020 00:25:11 GMT  
+		Size: 23.7 MB (23722853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5007857f7b9b52d6efdfea9e086e6eaf35519130ff97bfe89970353f0ae53f13`  
-		Last Modified: Wed, 16 Sep 2020 23:18:23 GMT  
-		Size: 848.0 B  
+	-	`sha256:c0533d1393025aa8c38e0823a6546a0d4e5dec6b8b670758c25494c35783668d`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43927e60f12d8b877ded6af5048b2ac5753fe78caba77a6bbbece4f98559b672`  
-		Last Modified: Wed, 16 Sep 2020 23:18:22 GMT  
-		Size: 186.0 B  
+	-	`sha256:3c11bb34abc87247c6a70c928b7a5ef4cd48093642eb0c4b8121a674d3e278c6`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b72827a7f0127fb1d07506dffd83a19cf8d8a307cb5347e3ae99785575a98f12`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:abd165aaa6cf837afe497c787183e126b24a1ef1bf403484f10928ba64c46639`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:444439004828289d4e3ddf43a29364380c3ce3e5429ca0d6096c2799e81a8e1d`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 2.7 MB (2666228 bytes)  
+	-	`sha256:a920ac996f2b9527ded97e3730a6f389b34d4461d3a011e8a9d760fec20638bc`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 2.7 MB (2666255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:409dadc0b5deb1bd282abfd6567e572978e2b25a868e7dab0cea5d754507fb47`  
-		Last Modified: Wed, 16 Sep 2020 23:47:28 GMT  
-		Size: 5.3 MB (5345850 bytes)  
+	-	`sha256:b726ca9cb34a0b6364c01411cfc8cfa6958d113914018d18cba243d56c0d649b`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 5.3 MB (5346293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6f3af40ee50826887172762dee77d4318531556953ca9191552dfe7ca84e6de`  
-		Last Modified: Wed, 16 Sep 2020 23:47:26 GMT  
-		Size: 149.0 B  
+	-	`sha256:3b2c3d8694a6885ba4f1bdb65f527e085af3dc91039dd9b60a9af62ddc42b1d3`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1dbd00b20e2a0ef3f97d8ff84285fa194c861cb8b0d3e75a09f90e6a5b1d15da`  
-		Last Modified: Wed, 16 Sep 2020 23:47:25 GMT  
-		Size: 1.4 KB (1434 bytes)  
+	-	`sha256:34f6864862b6ebbde40c6fdbf7ce41be9d93114f91bf80fe245ebc1d4586184b`  
+		Last Modified: Fri, 25 Sep 2020 23:24:51 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5fe6c59ce12b6e97b71e5756adeae829b65ae5472a3a4bb2d6163563f0621be`  
-		Last Modified: Wed, 16 Sep 2020 23:47:24 GMT  
-		Size: 238.0 B  
+	-	`sha256:9d525c9af52352d834d862d92a48ffde47842983c0f6d217671290fbddd159e3`  
+		Last Modified: Fri, 25 Sep 2020 23:24:51 GMT  
+		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ffaee41b425a15c15fc7364aa8edc260df1c916ecafe726fe0dabe3f850c5bd`  
-		Last Modified: Wed, 16 Sep 2020 23:47:52 GMT  
-		Size: 122.9 MB (122925875 bytes)  
+	-	`sha256:6fe77b6a259dd62c5940119331a157367c2e03ad3a4f12d11544267841c4165d`  
+		Last Modified: Fri, 25 Sep 2020 23:25:16 GMT  
+		Size: 122.9 MB (122925902 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10511b3a95d37560d1d6d893c9cd9d4b71dcb9811e40ea331ce327fbdb55a56c`  
-		Last Modified: Wed, 16 Sep 2020 23:47:24 GMT  
+	-	`sha256:06c532d2954cb9b2a1206730c14252e375194189ad4800f13b32393bdfada3f8`  
+		Last Modified: Fri, 25 Sep 2020 23:24:51 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50656e9d95bc3dc01e53916fecfdedc20fd93b913f6f423ccd215ca1d11e276a`  
-		Last Modified: Wed, 16 Sep 2020 23:47:24 GMT  
-		Size: 4.0 KB (3954 bytes)  
+	-	`sha256:061cc88b83a03323a63b895b877964799ec797c60c0867b6b0dd489b83902939`  
+		Last Modified: Fri, 25 Sep 2020 23:24:51 GMT  
+		Size: 4.0 KB (3953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.2-bionic` - linux; s390x
 
 ```console
-$ docker pull mongo@sha256:86ca38e5f1d11eb9736b2db3685a1708c68560ab486d7aba397727cb3d09f95a
+$ docker pull mongo@sha256:7756e49ca915790178d007bc13b4de4cbfe18d40de8907854f6b2c85002cea39
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.6 MB (160585733 bytes)**  
+-	Total Size: **160.6 MB (160587800 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d15d3ab6585933645dfb9ea02ef224d7c6748244b0d7daa643326c8824c2b7f`
+-	Image ID: `sha256:4afe7e43db3b545fa93fdc6c54de18a2aa11411b1e1d75d4395df196600c45dd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 22:51:22 GMT
-ADD file:835d62b9e8aa5985cb778cef4129baec4d3688713202ad55a1fa54bb9daf136e in / 
-# Wed, 16 Sep 2020 22:51:24 GMT
+# Fri, 25 Sep 2020 22:44:45 GMT
+ADD file:0a8ec4fb62616b6605197e20e0a7b511dc5b03d4af0e04c929dfd9fb457d2065 in / 
+# Fri, 25 Sep 2020 22:44:47 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 22:51:25 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:34:15 GMT
+# Fri, 25 Sep 2020 23:28:41 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:48 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:34:34 GMT
+# Fri, 25 Sep 2020 23:29:03 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:34:35 GMT
+# Fri, 25 Sep 2020 23:29:04 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:34:35 GMT
+# Fri, 25 Sep 2020 23:29:05 GMT
 ENV GPG_KEYS=E162F504A20CDF15827F718D4B7C549A058F8B6B
-# Wed, 16 Sep 2020 23:34:36 GMT
+# Fri, 25 Sep 2020 23:29:06 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:34:36 GMT
+# Fri, 25 Sep 2020 23:29:06 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:34:36 GMT
+# Fri, 25 Sep 2020 23:29:06 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:34:37 GMT
+# Fri, 25 Sep 2020 23:29:06 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:34:37 GMT
+# Fri, 25 Sep 2020 23:29:06 GMT
 ENV MONGO_MAJOR=4.2
-# Wed, 16 Sep 2020 23:34:37 GMT
+# Fri, 25 Sep 2020 23:29:07 GMT
 ENV MONGO_VERSION=4.2.9
-# Wed, 16 Sep 2020 23:34:38 GMT
+# Fri, 25 Sep 2020 23:29:07 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:34:54 GMT
+# Fri, 25 Sep 2020 23:29:24 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:34:58 GMT
+# Fri, 25 Sep 2020 23:29:28 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:34:58 GMT
+# Fri, 25 Sep 2020 23:29:28 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:34:59 GMT
+# Fri, 25 Sep 2020 23:29:28 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:34:59 GMT
+# Fri, 25 Sep 2020 23:29:28 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:34:59 GMT
+# Fri, 25 Sep 2020 23:29:29 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:34:59 GMT
+# Fri, 25 Sep 2020 23:29:29 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:cedb15d27487fa2e085bee049ff12636f8ba01e63c3bbdc094088e8bb7d8b641`  
-		Last Modified: Mon, 07 Sep 2020 15:51:50 GMT  
-		Size: 25.4 MB (25370945 bytes)  
+	-	`sha256:dd2de95b9a1c45e92bcc791d469201229b58d68187c99de6b08b00a13fa33393`  
+		Last Modified: Fri, 25 Sep 2020 22:45:52 GMT  
+		Size: 25.4 MB (25371975 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc4002d8c6f20fd20eb7aa7e91bfa01443724872a214bb07ad9cf86a810c86ed`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:c38a48ef4dfab2bd639d381d11b3390b6bf8860b2ef3356e9bb55f7cb8c775f9`  
+		Last Modified: Fri, 25 Sep 2020 22:45:51 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a4b15c73b5f07d5d69927632e5a59fb80805da20bc1fabc30f973b5b2ff5805`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:eced51184728468b347a6e3f143c356cd174c4a54be3cc10ec5aeddb402765fd`  
+		Last Modified: Fri, 25 Sep 2020 22:45:49 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7a2b5f360d121f5eca32ece3923457c206d49272ff9822f0d884f6265005ae5`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:a9288641caad70cb1c99ea2cd010ce53478a4fcde867a83434c8f98575f1fc90`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 1.9 KB (1881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:893560aa2ef4e5821a94b36f1ec594ffe5a854a1555d6ea4f97dacc83af8480d`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 2.7 MB (2704511 bytes)  
+	-	`sha256:fbb83c3ffb783f1412239a892171b331eef5d68b65aae1a2c51c44619cacb1c0`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 2.7 MB (2704583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fea2f8918f8c2df2c52439cf21e13e753d2435e01746244e98514af740dbd33c`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 5.7 MB (5745258 bytes)  
+	-	`sha256:e67c01a91968aa16935794fc7d52f7742b3359858bcfa36f033e3a9a8247e780`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 5.7 MB (5746126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90fd4098140808a14963597eb91371777030db4f7e4e6f718f287f333129e47b`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 149.0 B  
+	-	`sha256:bf72d8578ae0c25477822fd40465d9f9f696e8178817341284280781fe545f9d`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08892956b2769531a021526d99b72bbf68ed731982652159f15427bcdd140b49`  
-		Last Modified: Wed, 16 Sep 2020 23:35:46 GMT  
-		Size: 1.4 KB (1432 bytes)  
+	-	`sha256:d26d5e29f6912200c6bd02e7aa4335fafd4da299a6bee5c63fff7a8aa4e12ec8`  
+		Last Modified: Fri, 25 Sep 2020 23:30:15 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fdeba8175c7fb219154d7e9b0d470e6c8ae1094c53779b7cc9917ce9158e271`  
-		Last Modified: Wed, 16 Sep 2020 23:35:46 GMT  
-		Size: 237.0 B  
+	-	`sha256:38a0b20a847168f2220c22e604673eee26401adb3aef5aa25465eafe01404508`  
+		Last Modified: Fri, 25 Sep 2020 23:30:15 GMT  
+		Size: 236.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29a8d8f1727beb3a2513c8a49f92ad38e008936be5a9279487f378390629b63a`  
-		Last Modified: Wed, 16 Sep 2020 23:36:00 GMT  
-		Size: 126.8 MB (126756155 bytes)  
+	-	`sha256:7c63a052f90b9654b66313a2cc64625fac7ba2c535e2c00fed37cb1cac818097`  
+		Last Modified: Fri, 25 Sep 2020 23:30:29 GMT  
+		Size: 126.8 MB (126756264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1934a7acb9fbe901467e496a29fc0cac6dc4b2c796cddc02ccb3cce885ac441`  
-		Last Modified: Wed, 16 Sep 2020 23:35:46 GMT  
-		Size: 171.0 B  
+	-	`sha256:7bb955a36e8713f761c2e491b2564d8faa651954bcceff20364846c4452b4e70`  
+		Last Modified: Fri, 25 Sep 2020 23:30:15 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:205829b170cc512f23889696b7760d2e8f6eada92e7f018fbcf971cda3a2f575`  
-		Last Modified: Wed, 16 Sep 2020 23:35:46 GMT  
-		Size: 4.0 KB (3953 bytes)  
+	-	`sha256:6d772a045960be001b0a2b14078bbceadd1f42047dcbc394e09d0ab3b9d449d2`  
+		Last Modified: Fri, 25 Sep 2020 23:30:15 GMT  
+		Size: 4.0 KB (3952 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.2-windowsservercore`
@@ -8119,7 +8119,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.4`
 
 ```console
-$ docker pull mongo@sha256:ebcdb042054d9974c8c3160d761b0bdb39b55115448242de1a5161c124ddb0af
+$ docker pull mongo@sha256:d04601593b2bb0b0e569478e99663561e245982bd43174fe1a2cd52792613674
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8252,239 +8252,239 @@ CMD ["mongod"]
 ### `mongo:4.4` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:d7e8c56b12849d9ca53760879ee3f2ff16211f30072d662d753161bd6530719a
+$ docker pull mongo@sha256:813ecaa78bf36de902579105aac27356b2a0bd876dcc6d7fdc977cf3898191e1
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **167.9 MB (167921175 bytes)**  
+-	Total Size: **167.9 MB (167940515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d1a2d5a50a5abb3b3930d52d19af7752fdbfcd63b28111e5c56290e80c2db2d`
+-	Image ID: `sha256:811d532cf7eeb16c636343bc3e183c1db7fe8d887762b141e975f74e81481e40`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 23:16:37 GMT
-ADD file:9eedc88c2028d53a81210b52c98121dddea7e30ecfbd4d11d2a1b2bdc94a0102 in / 
-# Wed, 16 Sep 2020 23:16:39 GMT
+# Fri, 25 Sep 2020 22:47:32 GMT
+ADD file:d2c57bfbb29f6de3b29050a2c50c3806e0c8caa26f6d8dea47f479c923d72e3e in / 
+# Fri, 25 Sep 2020 22:47:35 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 23:16:41 GMT
+# Fri, 25 Sep 2020 22:47:36 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 23:16:43 GMT
+# Fri, 25 Sep 2020 22:47:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 23:16:44 GMT
+# Fri, 25 Sep 2020 22:47:39 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:43:31 GMT
+# Fri, 25 Sep 2020 23:20:58 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:43:46 GMT
+# Fri, 25 Sep 2020 23:21:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:13 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:14 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:44:09 GMT
+# Fri, 25 Sep 2020 23:21:35 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:44:11 GMT
+# Fri, 25 Sep 2020 23:21:37 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:45:01 GMT
+# Fri, 25 Sep 2020 23:22:29 GMT
 ENV GPG_KEYS=20691EEC35216C63CAF66CE1656408E390CFB1F5
-# Wed, 16 Sep 2020 23:45:03 GMT
+# Fri, 25 Sep 2020 23:22:32 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:45:04 GMT
+# Fri, 25 Sep 2020 23:22:33 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:45:04 GMT
+# Fri, 25 Sep 2020 23:22:34 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:45:05 GMT
+# Fri, 25 Sep 2020 23:22:34 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:45:06 GMT
+# Fri, 25 Sep 2020 23:22:35 GMT
 ENV MONGO_MAJOR=4.4
-# Wed, 16 Sep 2020 23:45:07 GMT
+# Fri, 25 Sep 2020 23:22:36 GMT
 ENV MONGO_VERSION=4.4.1
-# Wed, 16 Sep 2020 23:45:10 GMT
+# Fri, 25 Sep 2020 23:22:37 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:45:40 GMT
+# Fri, 25 Sep 2020 23:23:08 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:45:43 GMT
+# Fri, 25 Sep 2020 23:23:11 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:45:44 GMT
+# Fri, 25 Sep 2020 23:23:12 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:45:45 GMT
+# Fri, 25 Sep 2020 23:23:13 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:45:46 GMT
+# Fri, 25 Sep 2020 23:23:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:45:47 GMT
+# Fri, 25 Sep 2020 23:23:14 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:45:48 GMT
+# Fri, 25 Sep 2020 23:23:15 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:e2d8ee3976bc7c15c8a5279cdf0249b7e41b2a489771330d0f7affb26dd7acfb`  
-		Last Modified: Fri, 04 Sep 2020 00:25:25 GMT  
-		Size: 23.7 MB (23722305 bytes)  
+	-	`sha256:296c9ad75beec603486f1373addae8e2c509e94c4adda44c1289792c91624acc`  
+		Last Modified: Tue, 22 Sep 2020 00:25:11 GMT  
+		Size: 23.7 MB (23722853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5007857f7b9b52d6efdfea9e086e6eaf35519130ff97bfe89970353f0ae53f13`  
-		Last Modified: Wed, 16 Sep 2020 23:18:23 GMT  
-		Size: 848.0 B  
+	-	`sha256:c0533d1393025aa8c38e0823a6546a0d4e5dec6b8b670758c25494c35783668d`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43927e60f12d8b877ded6af5048b2ac5753fe78caba77a6bbbece4f98559b672`  
-		Last Modified: Wed, 16 Sep 2020 23:18:22 GMT  
-		Size: 186.0 B  
+	-	`sha256:3c11bb34abc87247c6a70c928b7a5ef4cd48093642eb0c4b8121a674d3e278c6`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b72827a7f0127fb1d07506dffd83a19cf8d8a307cb5347e3ae99785575a98f12`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:abd165aaa6cf837afe497c787183e126b24a1ef1bf403484f10928ba64c46639`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:444439004828289d4e3ddf43a29364380c3ce3e5429ca0d6096c2799e81a8e1d`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 2.7 MB (2666228 bytes)  
+	-	`sha256:a920ac996f2b9527ded97e3730a6f389b34d4461d3a011e8a9d760fec20638bc`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 2.7 MB (2666255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:409dadc0b5deb1bd282abfd6567e572978e2b25a868e7dab0cea5d754507fb47`  
-		Last Modified: Wed, 16 Sep 2020 23:47:28 GMT  
-		Size: 5.3 MB (5345850 bytes)  
+	-	`sha256:b726ca9cb34a0b6364c01411cfc8cfa6958d113914018d18cba243d56c0d649b`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 5.3 MB (5346293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6f3af40ee50826887172762dee77d4318531556953ca9191552dfe7ca84e6de`  
-		Last Modified: Wed, 16 Sep 2020 23:47:26 GMT  
-		Size: 149.0 B  
+	-	`sha256:3b2c3d8694a6885ba4f1bdb65f527e085af3dc91039dd9b60a9af62ddc42b1d3`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d4fbd909a542064e616fab2c7316bf1be1f9a365d800e3b2e5b2639e231b9d`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
-		Size: 1.4 KB (1428 bytes)  
+	-	`sha256:88aec146ec81548df08b7b730fc041116e64f844464070486ee95f93a41de1f3`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b844fca0d2b508a122bbbedd3260c3eb2f8c07faf0cf062e008a13db7d4ad939`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
+	-	`sha256:7215b86ffc2f95704af100aec2bfabdcb5745cc2339c548fee0353eafe414f9b`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb78b4e43578b1eda8500f7be5f60cecd91f309327a117c99b23e2721419bd77`  
-		Last Modified: Wed, 16 Sep 2020 23:48:33 GMT  
-		Size: 136.2 MB (136177934 bytes)  
+	-	`sha256:b11b0a6ff5a4354355c3588f66dcfb3b8716e4fe55dda70431b330cf7756b650`  
+		Last Modified: Fri, 25 Sep 2020 23:25:58 GMT  
+		Size: 136.2 MB (136196252 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8faf900a91148a473b73bfe593c9b6d6f5a2adda7d2d2287b8febabcd90e5898`  
-		Last Modified: Wed, 16 Sep 2020 23:48:00 GMT  
+	-	`sha256:c2f36a0aa04da4aa9dbc7ee2f91f1c1dbc63dad241d94dc7f0c13f54734627e4`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ccfb6bcd2b4350787621bf334bc0d6f38595abd71668576ac0ffc976b7abded`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
-		Size: 4.0 KB (3954 bytes)  
+	-	`sha256:0855fdd1e2165c9684a4cf42a775a55e4a0b49138a52fbd97c97fcb547fe773c`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
+		Size: 3.9 KB (3948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.4` - linux; s390x
 
 ```console
-$ docker pull mongo@sha256:f2af3bc6bc116416fee28e8d7c7892224a475c16214353915c89008f52fc169c
+$ docker pull mongo@sha256:de1f653589e4153f89f7d242f907c69c16ea91f95f2a94240a19634aa8d57c4d
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **172.9 MB (172879519 bytes)**  
+-	Total Size: **172.9 MB (172881569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c565051afcfcd0e711548cf4ef6539daa22f7f514f62fff1f9d602914ec602b8`
+-	Image ID: `sha256:abc0c05512382652300ed10d809912071b8ee0ca14c10891cabccd8228c6dc94`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 22:51:22 GMT
-ADD file:835d62b9e8aa5985cb778cef4129baec4d3688713202ad55a1fa54bb9daf136e in / 
-# Wed, 16 Sep 2020 22:51:24 GMT
+# Fri, 25 Sep 2020 22:44:45 GMT
+ADD file:0a8ec4fb62616b6605197e20e0a7b511dc5b03d4af0e04c929dfd9fb457d2065 in / 
+# Fri, 25 Sep 2020 22:44:47 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 22:51:25 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:34:15 GMT
+# Fri, 25 Sep 2020 23:28:41 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:48 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:34:34 GMT
+# Fri, 25 Sep 2020 23:29:03 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:34:35 GMT
+# Fri, 25 Sep 2020 23:29:04 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:35:04 GMT
+# Fri, 25 Sep 2020 23:29:38 GMT
 ENV GPG_KEYS=20691EEC35216C63CAF66CE1656408E390CFB1F5
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:38 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_MAJOR=4.4
-# Wed, 16 Sep 2020 23:35:06 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_VERSION=4.4.1
-# Wed, 16 Sep 2020 23:35:06 GMT
+# Fri, 25 Sep 2020 23:29:40 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:35:24 GMT
+# Fri, 25 Sep 2020 23:29:58 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:04 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:35:31 GMT
+# Fri, 25 Sep 2020 23:30:04 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:cedb15d27487fa2e085bee049ff12636f8ba01e63c3bbdc094088e8bb7d8b641`  
-		Last Modified: Mon, 07 Sep 2020 15:51:50 GMT  
-		Size: 25.4 MB (25370945 bytes)  
+	-	`sha256:dd2de95b9a1c45e92bcc791d469201229b58d68187c99de6b08b00a13fa33393`  
+		Last Modified: Fri, 25 Sep 2020 22:45:52 GMT  
+		Size: 25.4 MB (25371975 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc4002d8c6f20fd20eb7aa7e91bfa01443724872a214bb07ad9cf86a810c86ed`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:c38a48ef4dfab2bd639d381d11b3390b6bf8860b2ef3356e9bb55f7cb8c775f9`  
+		Last Modified: Fri, 25 Sep 2020 22:45:51 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a4b15c73b5f07d5d69927632e5a59fb80805da20bc1fabc30f973b5b2ff5805`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:eced51184728468b347a6e3f143c356cd174c4a54be3cc10ec5aeddb402765fd`  
+		Last Modified: Fri, 25 Sep 2020 22:45:49 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7a2b5f360d121f5eca32ece3923457c206d49272ff9822f0d884f6265005ae5`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:a9288641caad70cb1c99ea2cd010ce53478a4fcde867a83434c8f98575f1fc90`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 1.9 KB (1881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:893560aa2ef4e5821a94b36f1ec594ffe5a854a1555d6ea4f97dacc83af8480d`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 2.7 MB (2704511 bytes)  
+	-	`sha256:fbb83c3ffb783f1412239a892171b331eef5d68b65aae1a2c51c44619cacb1c0`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 2.7 MB (2704583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fea2f8918f8c2df2c52439cf21e13e753d2435e01746244e98514af740dbd33c`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 5.7 MB (5745258 bytes)  
+	-	`sha256:e67c01a91968aa16935794fc7d52f7742b3359858bcfa36f033e3a9a8247e780`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 5.7 MB (5746126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90fd4098140808a14963597eb91371777030db4f7e4e6f718f287f333129e47b`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 149.0 B  
+	-	`sha256:bf72d8578ae0c25477822fd40465d9f9f696e8178817341284280781fe545f9d`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae99256407834c71804744b0944c744d43fcf2b791429dabdc01defe8a67895c`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
+	-	`sha256:891f80311986b5ccb82ae38f1f7b88c67e49b6fc81534ef8984e5b2109064d6b`  
+		Last Modified: Fri, 25 Sep 2020 23:30:37 GMT  
 		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b90df8b325066d02adf0130028fdbeec07f844cc39d97ffbe799a3c60a4c426`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
-		Size: 235.0 B  
+	-	`sha256:b862844c0ef43cc7917b410c17cbcd9e60c83231627cae7f40aa92a521f4efb6`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 238.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a68628d4230e194876d0206ccbd2b07078e347ae8163598fe29b87c3fa1fb5c8`  
-		Last Modified: Wed, 16 Sep 2020 23:36:25 GMT  
-		Size: 139.0 MB (139049954 bytes)  
+	-	`sha256:185ef58863de1fef5f933f4f05dd35e6f38ea3d1f491e4363a67c0b07db5afaa`  
+		Last Modified: Fri, 25 Sep 2020 23:30:54 GMT  
+		Size: 139.1 MB (139050035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ad7e1e8fa0802e1cc0372935e71f17c5416f2996976ee70b6986858c12e3010`  
-		Last Modified: Wed, 16 Sep 2020 23:36:08 GMT  
-		Size: 168.0 B  
+	-	`sha256:36be598b0fb9cf5388c223afc27633dc987a84af1aa05cf185133ea8ce300bb8`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:849cf808dcbba28bbf2ae3671fd8df5b91a6e7b68a129bb6d0f8fcedebffa4b8`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
-		Size: 4.0 KB (3955 bytes)  
+	-	`sha256:afd583fd9ef05f53886b3c68b812186511fcd3b1ad1bcc98ca3f244eec4dc2e5`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 4.0 KB (3954 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.4` - windows version 10.0.14393.3930; amd64
@@ -8645,7 +8645,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.4.1`
 
 ```console
-$ docker pull mongo@sha256:ebcdb042054d9974c8c3160d761b0bdb39b55115448242de1a5161c124ddb0af
+$ docker pull mongo@sha256:d04601593b2bb0b0e569478e99663561e245982bd43174fe1a2cd52792613674
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8778,239 +8778,239 @@ CMD ["mongod"]
 ### `mongo:4.4.1` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:d7e8c56b12849d9ca53760879ee3f2ff16211f30072d662d753161bd6530719a
+$ docker pull mongo@sha256:813ecaa78bf36de902579105aac27356b2a0bd876dcc6d7fdc977cf3898191e1
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **167.9 MB (167921175 bytes)**  
+-	Total Size: **167.9 MB (167940515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d1a2d5a50a5abb3b3930d52d19af7752fdbfcd63b28111e5c56290e80c2db2d`
+-	Image ID: `sha256:811d532cf7eeb16c636343bc3e183c1db7fe8d887762b141e975f74e81481e40`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 23:16:37 GMT
-ADD file:9eedc88c2028d53a81210b52c98121dddea7e30ecfbd4d11d2a1b2bdc94a0102 in / 
-# Wed, 16 Sep 2020 23:16:39 GMT
+# Fri, 25 Sep 2020 22:47:32 GMT
+ADD file:d2c57bfbb29f6de3b29050a2c50c3806e0c8caa26f6d8dea47f479c923d72e3e in / 
+# Fri, 25 Sep 2020 22:47:35 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 23:16:41 GMT
+# Fri, 25 Sep 2020 22:47:36 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 23:16:43 GMT
+# Fri, 25 Sep 2020 22:47:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 23:16:44 GMT
+# Fri, 25 Sep 2020 22:47:39 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:43:31 GMT
+# Fri, 25 Sep 2020 23:20:58 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:43:46 GMT
+# Fri, 25 Sep 2020 23:21:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:13 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:14 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:44:09 GMT
+# Fri, 25 Sep 2020 23:21:35 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:44:11 GMT
+# Fri, 25 Sep 2020 23:21:37 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:45:01 GMT
+# Fri, 25 Sep 2020 23:22:29 GMT
 ENV GPG_KEYS=20691EEC35216C63CAF66CE1656408E390CFB1F5
-# Wed, 16 Sep 2020 23:45:03 GMT
+# Fri, 25 Sep 2020 23:22:32 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:45:04 GMT
+# Fri, 25 Sep 2020 23:22:33 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:45:04 GMT
+# Fri, 25 Sep 2020 23:22:34 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:45:05 GMT
+# Fri, 25 Sep 2020 23:22:34 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:45:06 GMT
+# Fri, 25 Sep 2020 23:22:35 GMT
 ENV MONGO_MAJOR=4.4
-# Wed, 16 Sep 2020 23:45:07 GMT
+# Fri, 25 Sep 2020 23:22:36 GMT
 ENV MONGO_VERSION=4.4.1
-# Wed, 16 Sep 2020 23:45:10 GMT
+# Fri, 25 Sep 2020 23:22:37 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:45:40 GMT
+# Fri, 25 Sep 2020 23:23:08 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:45:43 GMT
+# Fri, 25 Sep 2020 23:23:11 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:45:44 GMT
+# Fri, 25 Sep 2020 23:23:12 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:45:45 GMT
+# Fri, 25 Sep 2020 23:23:13 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:45:46 GMT
+# Fri, 25 Sep 2020 23:23:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:45:47 GMT
+# Fri, 25 Sep 2020 23:23:14 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:45:48 GMT
+# Fri, 25 Sep 2020 23:23:15 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:e2d8ee3976bc7c15c8a5279cdf0249b7e41b2a489771330d0f7affb26dd7acfb`  
-		Last Modified: Fri, 04 Sep 2020 00:25:25 GMT  
-		Size: 23.7 MB (23722305 bytes)  
+	-	`sha256:296c9ad75beec603486f1373addae8e2c509e94c4adda44c1289792c91624acc`  
+		Last Modified: Tue, 22 Sep 2020 00:25:11 GMT  
+		Size: 23.7 MB (23722853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5007857f7b9b52d6efdfea9e086e6eaf35519130ff97bfe89970353f0ae53f13`  
-		Last Modified: Wed, 16 Sep 2020 23:18:23 GMT  
-		Size: 848.0 B  
+	-	`sha256:c0533d1393025aa8c38e0823a6546a0d4e5dec6b8b670758c25494c35783668d`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43927e60f12d8b877ded6af5048b2ac5753fe78caba77a6bbbece4f98559b672`  
-		Last Modified: Wed, 16 Sep 2020 23:18:22 GMT  
-		Size: 186.0 B  
+	-	`sha256:3c11bb34abc87247c6a70c928b7a5ef4cd48093642eb0c4b8121a674d3e278c6`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b72827a7f0127fb1d07506dffd83a19cf8d8a307cb5347e3ae99785575a98f12`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:abd165aaa6cf837afe497c787183e126b24a1ef1bf403484f10928ba64c46639`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:444439004828289d4e3ddf43a29364380c3ce3e5429ca0d6096c2799e81a8e1d`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 2.7 MB (2666228 bytes)  
+	-	`sha256:a920ac996f2b9527ded97e3730a6f389b34d4461d3a011e8a9d760fec20638bc`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 2.7 MB (2666255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:409dadc0b5deb1bd282abfd6567e572978e2b25a868e7dab0cea5d754507fb47`  
-		Last Modified: Wed, 16 Sep 2020 23:47:28 GMT  
-		Size: 5.3 MB (5345850 bytes)  
+	-	`sha256:b726ca9cb34a0b6364c01411cfc8cfa6958d113914018d18cba243d56c0d649b`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 5.3 MB (5346293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6f3af40ee50826887172762dee77d4318531556953ca9191552dfe7ca84e6de`  
-		Last Modified: Wed, 16 Sep 2020 23:47:26 GMT  
-		Size: 149.0 B  
+	-	`sha256:3b2c3d8694a6885ba4f1bdb65f527e085af3dc91039dd9b60a9af62ddc42b1d3`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d4fbd909a542064e616fab2c7316bf1be1f9a365d800e3b2e5b2639e231b9d`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
-		Size: 1.4 KB (1428 bytes)  
+	-	`sha256:88aec146ec81548df08b7b730fc041116e64f844464070486ee95f93a41de1f3`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b844fca0d2b508a122bbbedd3260c3eb2f8c07faf0cf062e008a13db7d4ad939`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
+	-	`sha256:7215b86ffc2f95704af100aec2bfabdcb5745cc2339c548fee0353eafe414f9b`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb78b4e43578b1eda8500f7be5f60cecd91f309327a117c99b23e2721419bd77`  
-		Last Modified: Wed, 16 Sep 2020 23:48:33 GMT  
-		Size: 136.2 MB (136177934 bytes)  
+	-	`sha256:b11b0a6ff5a4354355c3588f66dcfb3b8716e4fe55dda70431b330cf7756b650`  
+		Last Modified: Fri, 25 Sep 2020 23:25:58 GMT  
+		Size: 136.2 MB (136196252 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8faf900a91148a473b73bfe593c9b6d6f5a2adda7d2d2287b8febabcd90e5898`  
-		Last Modified: Wed, 16 Sep 2020 23:48:00 GMT  
+	-	`sha256:c2f36a0aa04da4aa9dbc7ee2f91f1c1dbc63dad241d94dc7f0c13f54734627e4`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ccfb6bcd2b4350787621bf334bc0d6f38595abd71668576ac0ffc976b7abded`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
-		Size: 4.0 KB (3954 bytes)  
+	-	`sha256:0855fdd1e2165c9684a4cf42a775a55e4a0b49138a52fbd97c97fcb547fe773c`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
+		Size: 3.9 KB (3948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.4.1` - linux; s390x
 
 ```console
-$ docker pull mongo@sha256:f2af3bc6bc116416fee28e8d7c7892224a475c16214353915c89008f52fc169c
+$ docker pull mongo@sha256:de1f653589e4153f89f7d242f907c69c16ea91f95f2a94240a19634aa8d57c4d
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **172.9 MB (172879519 bytes)**  
+-	Total Size: **172.9 MB (172881569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c565051afcfcd0e711548cf4ef6539daa22f7f514f62fff1f9d602914ec602b8`
+-	Image ID: `sha256:abc0c05512382652300ed10d809912071b8ee0ca14c10891cabccd8228c6dc94`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 22:51:22 GMT
-ADD file:835d62b9e8aa5985cb778cef4129baec4d3688713202ad55a1fa54bb9daf136e in / 
-# Wed, 16 Sep 2020 22:51:24 GMT
+# Fri, 25 Sep 2020 22:44:45 GMT
+ADD file:0a8ec4fb62616b6605197e20e0a7b511dc5b03d4af0e04c929dfd9fb457d2065 in / 
+# Fri, 25 Sep 2020 22:44:47 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 22:51:25 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:34:15 GMT
+# Fri, 25 Sep 2020 23:28:41 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:48 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:34:34 GMT
+# Fri, 25 Sep 2020 23:29:03 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:34:35 GMT
+# Fri, 25 Sep 2020 23:29:04 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:35:04 GMT
+# Fri, 25 Sep 2020 23:29:38 GMT
 ENV GPG_KEYS=20691EEC35216C63CAF66CE1656408E390CFB1F5
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:38 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_MAJOR=4.4
-# Wed, 16 Sep 2020 23:35:06 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_VERSION=4.4.1
-# Wed, 16 Sep 2020 23:35:06 GMT
+# Fri, 25 Sep 2020 23:29:40 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:35:24 GMT
+# Fri, 25 Sep 2020 23:29:58 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:04 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:35:31 GMT
+# Fri, 25 Sep 2020 23:30:04 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:cedb15d27487fa2e085bee049ff12636f8ba01e63c3bbdc094088e8bb7d8b641`  
-		Last Modified: Mon, 07 Sep 2020 15:51:50 GMT  
-		Size: 25.4 MB (25370945 bytes)  
+	-	`sha256:dd2de95b9a1c45e92bcc791d469201229b58d68187c99de6b08b00a13fa33393`  
+		Last Modified: Fri, 25 Sep 2020 22:45:52 GMT  
+		Size: 25.4 MB (25371975 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc4002d8c6f20fd20eb7aa7e91bfa01443724872a214bb07ad9cf86a810c86ed`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:c38a48ef4dfab2bd639d381d11b3390b6bf8860b2ef3356e9bb55f7cb8c775f9`  
+		Last Modified: Fri, 25 Sep 2020 22:45:51 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a4b15c73b5f07d5d69927632e5a59fb80805da20bc1fabc30f973b5b2ff5805`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:eced51184728468b347a6e3f143c356cd174c4a54be3cc10ec5aeddb402765fd`  
+		Last Modified: Fri, 25 Sep 2020 22:45:49 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7a2b5f360d121f5eca32ece3923457c206d49272ff9822f0d884f6265005ae5`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:a9288641caad70cb1c99ea2cd010ce53478a4fcde867a83434c8f98575f1fc90`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 1.9 KB (1881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:893560aa2ef4e5821a94b36f1ec594ffe5a854a1555d6ea4f97dacc83af8480d`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 2.7 MB (2704511 bytes)  
+	-	`sha256:fbb83c3ffb783f1412239a892171b331eef5d68b65aae1a2c51c44619cacb1c0`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 2.7 MB (2704583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fea2f8918f8c2df2c52439cf21e13e753d2435e01746244e98514af740dbd33c`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 5.7 MB (5745258 bytes)  
+	-	`sha256:e67c01a91968aa16935794fc7d52f7742b3359858bcfa36f033e3a9a8247e780`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 5.7 MB (5746126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90fd4098140808a14963597eb91371777030db4f7e4e6f718f287f333129e47b`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 149.0 B  
+	-	`sha256:bf72d8578ae0c25477822fd40465d9f9f696e8178817341284280781fe545f9d`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae99256407834c71804744b0944c744d43fcf2b791429dabdc01defe8a67895c`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
+	-	`sha256:891f80311986b5ccb82ae38f1f7b88c67e49b6fc81534ef8984e5b2109064d6b`  
+		Last Modified: Fri, 25 Sep 2020 23:30:37 GMT  
 		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b90df8b325066d02adf0130028fdbeec07f844cc39d97ffbe799a3c60a4c426`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
-		Size: 235.0 B  
+	-	`sha256:b862844c0ef43cc7917b410c17cbcd9e60c83231627cae7f40aa92a521f4efb6`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 238.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a68628d4230e194876d0206ccbd2b07078e347ae8163598fe29b87c3fa1fb5c8`  
-		Last Modified: Wed, 16 Sep 2020 23:36:25 GMT  
-		Size: 139.0 MB (139049954 bytes)  
+	-	`sha256:185ef58863de1fef5f933f4f05dd35e6f38ea3d1f491e4363a67c0b07db5afaa`  
+		Last Modified: Fri, 25 Sep 2020 23:30:54 GMT  
+		Size: 139.1 MB (139050035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ad7e1e8fa0802e1cc0372935e71f17c5416f2996976ee70b6986858c12e3010`  
-		Last Modified: Wed, 16 Sep 2020 23:36:08 GMT  
-		Size: 168.0 B  
+	-	`sha256:36be598b0fb9cf5388c223afc27633dc987a84af1aa05cf185133ea8ce300bb8`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:849cf808dcbba28bbf2ae3671fd8df5b91a6e7b68a129bb6d0f8fcedebffa4b8`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
-		Size: 4.0 KB (3955 bytes)  
+	-	`sha256:afd583fd9ef05f53886b3c68b812186511fcd3b1ad1bcc98ca3f244eec4dc2e5`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 4.0 KB (3954 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.4.1` - windows version 10.0.14393.3930; amd64
@@ -9171,7 +9171,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.4.1-bionic`
 
 ```console
-$ docker pull mongo@sha256:b5a6fbdf66bb76a43767c8a146d2aab7220e29756fc5e95209208a9c66322d48
+$ docker pull mongo@sha256:7ab3bbcdced4f3041afc7b6f9a53b0e2849035384d476abf9af42201f44f7cea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9302,239 +9302,239 @@ CMD ["mongod"]
 ### `mongo:4.4.1-bionic` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:d7e8c56b12849d9ca53760879ee3f2ff16211f30072d662d753161bd6530719a
+$ docker pull mongo@sha256:813ecaa78bf36de902579105aac27356b2a0bd876dcc6d7fdc977cf3898191e1
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **167.9 MB (167921175 bytes)**  
+-	Total Size: **167.9 MB (167940515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d1a2d5a50a5abb3b3930d52d19af7752fdbfcd63b28111e5c56290e80c2db2d`
+-	Image ID: `sha256:811d532cf7eeb16c636343bc3e183c1db7fe8d887762b141e975f74e81481e40`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 23:16:37 GMT
-ADD file:9eedc88c2028d53a81210b52c98121dddea7e30ecfbd4d11d2a1b2bdc94a0102 in / 
-# Wed, 16 Sep 2020 23:16:39 GMT
+# Fri, 25 Sep 2020 22:47:32 GMT
+ADD file:d2c57bfbb29f6de3b29050a2c50c3806e0c8caa26f6d8dea47f479c923d72e3e in / 
+# Fri, 25 Sep 2020 22:47:35 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 23:16:41 GMT
+# Fri, 25 Sep 2020 22:47:36 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 23:16:43 GMT
+# Fri, 25 Sep 2020 22:47:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 23:16:44 GMT
+# Fri, 25 Sep 2020 22:47:39 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:43:31 GMT
+# Fri, 25 Sep 2020 23:20:58 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:43:46 GMT
+# Fri, 25 Sep 2020 23:21:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:13 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:14 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:44:09 GMT
+# Fri, 25 Sep 2020 23:21:35 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:44:11 GMT
+# Fri, 25 Sep 2020 23:21:37 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:45:01 GMT
+# Fri, 25 Sep 2020 23:22:29 GMT
 ENV GPG_KEYS=20691EEC35216C63CAF66CE1656408E390CFB1F5
-# Wed, 16 Sep 2020 23:45:03 GMT
+# Fri, 25 Sep 2020 23:22:32 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:45:04 GMT
+# Fri, 25 Sep 2020 23:22:33 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:45:04 GMT
+# Fri, 25 Sep 2020 23:22:34 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:45:05 GMT
+# Fri, 25 Sep 2020 23:22:34 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:45:06 GMT
+# Fri, 25 Sep 2020 23:22:35 GMT
 ENV MONGO_MAJOR=4.4
-# Wed, 16 Sep 2020 23:45:07 GMT
+# Fri, 25 Sep 2020 23:22:36 GMT
 ENV MONGO_VERSION=4.4.1
-# Wed, 16 Sep 2020 23:45:10 GMT
+# Fri, 25 Sep 2020 23:22:37 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:45:40 GMT
+# Fri, 25 Sep 2020 23:23:08 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:45:43 GMT
+# Fri, 25 Sep 2020 23:23:11 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:45:44 GMT
+# Fri, 25 Sep 2020 23:23:12 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:45:45 GMT
+# Fri, 25 Sep 2020 23:23:13 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:45:46 GMT
+# Fri, 25 Sep 2020 23:23:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:45:47 GMT
+# Fri, 25 Sep 2020 23:23:14 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:45:48 GMT
+# Fri, 25 Sep 2020 23:23:15 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:e2d8ee3976bc7c15c8a5279cdf0249b7e41b2a489771330d0f7affb26dd7acfb`  
-		Last Modified: Fri, 04 Sep 2020 00:25:25 GMT  
-		Size: 23.7 MB (23722305 bytes)  
+	-	`sha256:296c9ad75beec603486f1373addae8e2c509e94c4adda44c1289792c91624acc`  
+		Last Modified: Tue, 22 Sep 2020 00:25:11 GMT  
+		Size: 23.7 MB (23722853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5007857f7b9b52d6efdfea9e086e6eaf35519130ff97bfe89970353f0ae53f13`  
-		Last Modified: Wed, 16 Sep 2020 23:18:23 GMT  
-		Size: 848.0 B  
+	-	`sha256:c0533d1393025aa8c38e0823a6546a0d4e5dec6b8b670758c25494c35783668d`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43927e60f12d8b877ded6af5048b2ac5753fe78caba77a6bbbece4f98559b672`  
-		Last Modified: Wed, 16 Sep 2020 23:18:22 GMT  
-		Size: 186.0 B  
+	-	`sha256:3c11bb34abc87247c6a70c928b7a5ef4cd48093642eb0c4b8121a674d3e278c6`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b72827a7f0127fb1d07506dffd83a19cf8d8a307cb5347e3ae99785575a98f12`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:abd165aaa6cf837afe497c787183e126b24a1ef1bf403484f10928ba64c46639`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:444439004828289d4e3ddf43a29364380c3ce3e5429ca0d6096c2799e81a8e1d`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 2.7 MB (2666228 bytes)  
+	-	`sha256:a920ac996f2b9527ded97e3730a6f389b34d4461d3a011e8a9d760fec20638bc`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 2.7 MB (2666255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:409dadc0b5deb1bd282abfd6567e572978e2b25a868e7dab0cea5d754507fb47`  
-		Last Modified: Wed, 16 Sep 2020 23:47:28 GMT  
-		Size: 5.3 MB (5345850 bytes)  
+	-	`sha256:b726ca9cb34a0b6364c01411cfc8cfa6958d113914018d18cba243d56c0d649b`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 5.3 MB (5346293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6f3af40ee50826887172762dee77d4318531556953ca9191552dfe7ca84e6de`  
-		Last Modified: Wed, 16 Sep 2020 23:47:26 GMT  
-		Size: 149.0 B  
+	-	`sha256:3b2c3d8694a6885ba4f1bdb65f527e085af3dc91039dd9b60a9af62ddc42b1d3`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d4fbd909a542064e616fab2c7316bf1be1f9a365d800e3b2e5b2639e231b9d`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
-		Size: 1.4 KB (1428 bytes)  
+	-	`sha256:88aec146ec81548df08b7b730fc041116e64f844464070486ee95f93a41de1f3`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b844fca0d2b508a122bbbedd3260c3eb2f8c07faf0cf062e008a13db7d4ad939`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
+	-	`sha256:7215b86ffc2f95704af100aec2bfabdcb5745cc2339c548fee0353eafe414f9b`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb78b4e43578b1eda8500f7be5f60cecd91f309327a117c99b23e2721419bd77`  
-		Last Modified: Wed, 16 Sep 2020 23:48:33 GMT  
-		Size: 136.2 MB (136177934 bytes)  
+	-	`sha256:b11b0a6ff5a4354355c3588f66dcfb3b8716e4fe55dda70431b330cf7756b650`  
+		Last Modified: Fri, 25 Sep 2020 23:25:58 GMT  
+		Size: 136.2 MB (136196252 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8faf900a91148a473b73bfe593c9b6d6f5a2adda7d2d2287b8febabcd90e5898`  
-		Last Modified: Wed, 16 Sep 2020 23:48:00 GMT  
+	-	`sha256:c2f36a0aa04da4aa9dbc7ee2f91f1c1dbc63dad241d94dc7f0c13f54734627e4`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ccfb6bcd2b4350787621bf334bc0d6f38595abd71668576ac0ffc976b7abded`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
-		Size: 4.0 KB (3954 bytes)  
+	-	`sha256:0855fdd1e2165c9684a4cf42a775a55e4a0b49138a52fbd97c97fcb547fe773c`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
+		Size: 3.9 KB (3948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.4.1-bionic` - linux; s390x
 
 ```console
-$ docker pull mongo@sha256:f2af3bc6bc116416fee28e8d7c7892224a475c16214353915c89008f52fc169c
+$ docker pull mongo@sha256:de1f653589e4153f89f7d242f907c69c16ea91f95f2a94240a19634aa8d57c4d
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **172.9 MB (172879519 bytes)**  
+-	Total Size: **172.9 MB (172881569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c565051afcfcd0e711548cf4ef6539daa22f7f514f62fff1f9d602914ec602b8`
+-	Image ID: `sha256:abc0c05512382652300ed10d809912071b8ee0ca14c10891cabccd8228c6dc94`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 22:51:22 GMT
-ADD file:835d62b9e8aa5985cb778cef4129baec4d3688713202ad55a1fa54bb9daf136e in / 
-# Wed, 16 Sep 2020 22:51:24 GMT
+# Fri, 25 Sep 2020 22:44:45 GMT
+ADD file:0a8ec4fb62616b6605197e20e0a7b511dc5b03d4af0e04c929dfd9fb457d2065 in / 
+# Fri, 25 Sep 2020 22:44:47 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 22:51:25 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:34:15 GMT
+# Fri, 25 Sep 2020 23:28:41 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:48 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:34:34 GMT
+# Fri, 25 Sep 2020 23:29:03 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:34:35 GMT
+# Fri, 25 Sep 2020 23:29:04 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:35:04 GMT
+# Fri, 25 Sep 2020 23:29:38 GMT
 ENV GPG_KEYS=20691EEC35216C63CAF66CE1656408E390CFB1F5
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:38 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_MAJOR=4.4
-# Wed, 16 Sep 2020 23:35:06 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_VERSION=4.4.1
-# Wed, 16 Sep 2020 23:35:06 GMT
+# Fri, 25 Sep 2020 23:29:40 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:35:24 GMT
+# Fri, 25 Sep 2020 23:29:58 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:04 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:35:31 GMT
+# Fri, 25 Sep 2020 23:30:04 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:cedb15d27487fa2e085bee049ff12636f8ba01e63c3bbdc094088e8bb7d8b641`  
-		Last Modified: Mon, 07 Sep 2020 15:51:50 GMT  
-		Size: 25.4 MB (25370945 bytes)  
+	-	`sha256:dd2de95b9a1c45e92bcc791d469201229b58d68187c99de6b08b00a13fa33393`  
+		Last Modified: Fri, 25 Sep 2020 22:45:52 GMT  
+		Size: 25.4 MB (25371975 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc4002d8c6f20fd20eb7aa7e91bfa01443724872a214bb07ad9cf86a810c86ed`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:c38a48ef4dfab2bd639d381d11b3390b6bf8860b2ef3356e9bb55f7cb8c775f9`  
+		Last Modified: Fri, 25 Sep 2020 22:45:51 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a4b15c73b5f07d5d69927632e5a59fb80805da20bc1fabc30f973b5b2ff5805`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:eced51184728468b347a6e3f143c356cd174c4a54be3cc10ec5aeddb402765fd`  
+		Last Modified: Fri, 25 Sep 2020 22:45:49 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7a2b5f360d121f5eca32ece3923457c206d49272ff9822f0d884f6265005ae5`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:a9288641caad70cb1c99ea2cd010ce53478a4fcde867a83434c8f98575f1fc90`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 1.9 KB (1881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:893560aa2ef4e5821a94b36f1ec594ffe5a854a1555d6ea4f97dacc83af8480d`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 2.7 MB (2704511 bytes)  
+	-	`sha256:fbb83c3ffb783f1412239a892171b331eef5d68b65aae1a2c51c44619cacb1c0`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 2.7 MB (2704583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fea2f8918f8c2df2c52439cf21e13e753d2435e01746244e98514af740dbd33c`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 5.7 MB (5745258 bytes)  
+	-	`sha256:e67c01a91968aa16935794fc7d52f7742b3359858bcfa36f033e3a9a8247e780`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 5.7 MB (5746126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90fd4098140808a14963597eb91371777030db4f7e4e6f718f287f333129e47b`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 149.0 B  
+	-	`sha256:bf72d8578ae0c25477822fd40465d9f9f696e8178817341284280781fe545f9d`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae99256407834c71804744b0944c744d43fcf2b791429dabdc01defe8a67895c`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
+	-	`sha256:891f80311986b5ccb82ae38f1f7b88c67e49b6fc81534ef8984e5b2109064d6b`  
+		Last Modified: Fri, 25 Sep 2020 23:30:37 GMT  
 		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b90df8b325066d02adf0130028fdbeec07f844cc39d97ffbe799a3c60a4c426`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
-		Size: 235.0 B  
+	-	`sha256:b862844c0ef43cc7917b410c17cbcd9e60c83231627cae7f40aa92a521f4efb6`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 238.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a68628d4230e194876d0206ccbd2b07078e347ae8163598fe29b87c3fa1fb5c8`  
-		Last Modified: Wed, 16 Sep 2020 23:36:25 GMT  
-		Size: 139.0 MB (139049954 bytes)  
+	-	`sha256:185ef58863de1fef5f933f4f05dd35e6f38ea3d1f491e4363a67c0b07db5afaa`  
+		Last Modified: Fri, 25 Sep 2020 23:30:54 GMT  
+		Size: 139.1 MB (139050035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ad7e1e8fa0802e1cc0372935e71f17c5416f2996976ee70b6986858c12e3010`  
-		Last Modified: Wed, 16 Sep 2020 23:36:08 GMT  
-		Size: 168.0 B  
+	-	`sha256:36be598b0fb9cf5388c223afc27633dc987a84af1aa05cf185133ea8ce300bb8`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:849cf808dcbba28bbf2ae3671fd8df5b91a6e7b68a129bb6d0f8fcedebffa4b8`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
-		Size: 4.0 KB (3955 bytes)  
+	-	`sha256:afd583fd9ef05f53886b3c68b812186511fcd3b1ad1bcc98ca3f244eec4dc2e5`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 4.0 KB (3954 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.4.1-windowsservercore`
@@ -9881,7 +9881,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.4-bionic`
 
 ```console
-$ docker pull mongo@sha256:b5a6fbdf66bb76a43767c8a146d2aab7220e29756fc5e95209208a9c66322d48
+$ docker pull mongo@sha256:7ab3bbcdced4f3041afc7b6f9a53b0e2849035384d476abf9af42201f44f7cea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10012,239 +10012,239 @@ CMD ["mongod"]
 ### `mongo:4.4-bionic` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:d7e8c56b12849d9ca53760879ee3f2ff16211f30072d662d753161bd6530719a
+$ docker pull mongo@sha256:813ecaa78bf36de902579105aac27356b2a0bd876dcc6d7fdc977cf3898191e1
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **167.9 MB (167921175 bytes)**  
+-	Total Size: **167.9 MB (167940515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d1a2d5a50a5abb3b3930d52d19af7752fdbfcd63b28111e5c56290e80c2db2d`
+-	Image ID: `sha256:811d532cf7eeb16c636343bc3e183c1db7fe8d887762b141e975f74e81481e40`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 23:16:37 GMT
-ADD file:9eedc88c2028d53a81210b52c98121dddea7e30ecfbd4d11d2a1b2bdc94a0102 in / 
-# Wed, 16 Sep 2020 23:16:39 GMT
+# Fri, 25 Sep 2020 22:47:32 GMT
+ADD file:d2c57bfbb29f6de3b29050a2c50c3806e0c8caa26f6d8dea47f479c923d72e3e in / 
+# Fri, 25 Sep 2020 22:47:35 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 23:16:41 GMT
+# Fri, 25 Sep 2020 22:47:36 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 23:16:43 GMT
+# Fri, 25 Sep 2020 22:47:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 23:16:44 GMT
+# Fri, 25 Sep 2020 22:47:39 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:43:31 GMT
+# Fri, 25 Sep 2020 23:20:58 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:43:46 GMT
+# Fri, 25 Sep 2020 23:21:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:13 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:14 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:44:09 GMT
+# Fri, 25 Sep 2020 23:21:35 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:44:11 GMT
+# Fri, 25 Sep 2020 23:21:37 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:45:01 GMT
+# Fri, 25 Sep 2020 23:22:29 GMT
 ENV GPG_KEYS=20691EEC35216C63CAF66CE1656408E390CFB1F5
-# Wed, 16 Sep 2020 23:45:03 GMT
+# Fri, 25 Sep 2020 23:22:32 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:45:04 GMT
+# Fri, 25 Sep 2020 23:22:33 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:45:04 GMT
+# Fri, 25 Sep 2020 23:22:34 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:45:05 GMT
+# Fri, 25 Sep 2020 23:22:34 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:45:06 GMT
+# Fri, 25 Sep 2020 23:22:35 GMT
 ENV MONGO_MAJOR=4.4
-# Wed, 16 Sep 2020 23:45:07 GMT
+# Fri, 25 Sep 2020 23:22:36 GMT
 ENV MONGO_VERSION=4.4.1
-# Wed, 16 Sep 2020 23:45:10 GMT
+# Fri, 25 Sep 2020 23:22:37 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:45:40 GMT
+# Fri, 25 Sep 2020 23:23:08 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:45:43 GMT
+# Fri, 25 Sep 2020 23:23:11 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:45:44 GMT
+# Fri, 25 Sep 2020 23:23:12 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:45:45 GMT
+# Fri, 25 Sep 2020 23:23:13 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:45:46 GMT
+# Fri, 25 Sep 2020 23:23:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:45:47 GMT
+# Fri, 25 Sep 2020 23:23:14 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:45:48 GMT
+# Fri, 25 Sep 2020 23:23:15 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:e2d8ee3976bc7c15c8a5279cdf0249b7e41b2a489771330d0f7affb26dd7acfb`  
-		Last Modified: Fri, 04 Sep 2020 00:25:25 GMT  
-		Size: 23.7 MB (23722305 bytes)  
+	-	`sha256:296c9ad75beec603486f1373addae8e2c509e94c4adda44c1289792c91624acc`  
+		Last Modified: Tue, 22 Sep 2020 00:25:11 GMT  
+		Size: 23.7 MB (23722853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5007857f7b9b52d6efdfea9e086e6eaf35519130ff97bfe89970353f0ae53f13`  
-		Last Modified: Wed, 16 Sep 2020 23:18:23 GMT  
-		Size: 848.0 B  
+	-	`sha256:c0533d1393025aa8c38e0823a6546a0d4e5dec6b8b670758c25494c35783668d`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43927e60f12d8b877ded6af5048b2ac5753fe78caba77a6bbbece4f98559b672`  
-		Last Modified: Wed, 16 Sep 2020 23:18:22 GMT  
-		Size: 186.0 B  
+	-	`sha256:3c11bb34abc87247c6a70c928b7a5ef4cd48093642eb0c4b8121a674d3e278c6`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b72827a7f0127fb1d07506dffd83a19cf8d8a307cb5347e3ae99785575a98f12`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:abd165aaa6cf837afe497c787183e126b24a1ef1bf403484f10928ba64c46639`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:444439004828289d4e3ddf43a29364380c3ce3e5429ca0d6096c2799e81a8e1d`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 2.7 MB (2666228 bytes)  
+	-	`sha256:a920ac996f2b9527ded97e3730a6f389b34d4461d3a011e8a9d760fec20638bc`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 2.7 MB (2666255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:409dadc0b5deb1bd282abfd6567e572978e2b25a868e7dab0cea5d754507fb47`  
-		Last Modified: Wed, 16 Sep 2020 23:47:28 GMT  
-		Size: 5.3 MB (5345850 bytes)  
+	-	`sha256:b726ca9cb34a0b6364c01411cfc8cfa6958d113914018d18cba243d56c0d649b`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 5.3 MB (5346293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6f3af40ee50826887172762dee77d4318531556953ca9191552dfe7ca84e6de`  
-		Last Modified: Wed, 16 Sep 2020 23:47:26 GMT  
-		Size: 149.0 B  
+	-	`sha256:3b2c3d8694a6885ba4f1bdb65f527e085af3dc91039dd9b60a9af62ddc42b1d3`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d4fbd909a542064e616fab2c7316bf1be1f9a365d800e3b2e5b2639e231b9d`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
-		Size: 1.4 KB (1428 bytes)  
+	-	`sha256:88aec146ec81548df08b7b730fc041116e64f844464070486ee95f93a41de1f3`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b844fca0d2b508a122bbbedd3260c3eb2f8c07faf0cf062e008a13db7d4ad939`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
+	-	`sha256:7215b86ffc2f95704af100aec2bfabdcb5745cc2339c548fee0353eafe414f9b`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb78b4e43578b1eda8500f7be5f60cecd91f309327a117c99b23e2721419bd77`  
-		Last Modified: Wed, 16 Sep 2020 23:48:33 GMT  
-		Size: 136.2 MB (136177934 bytes)  
+	-	`sha256:b11b0a6ff5a4354355c3588f66dcfb3b8716e4fe55dda70431b330cf7756b650`  
+		Last Modified: Fri, 25 Sep 2020 23:25:58 GMT  
+		Size: 136.2 MB (136196252 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8faf900a91148a473b73bfe593c9b6d6f5a2adda7d2d2287b8febabcd90e5898`  
-		Last Modified: Wed, 16 Sep 2020 23:48:00 GMT  
+	-	`sha256:c2f36a0aa04da4aa9dbc7ee2f91f1c1dbc63dad241d94dc7f0c13f54734627e4`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ccfb6bcd2b4350787621bf334bc0d6f38595abd71668576ac0ffc976b7abded`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
-		Size: 4.0 KB (3954 bytes)  
+	-	`sha256:0855fdd1e2165c9684a4cf42a775a55e4a0b49138a52fbd97c97fcb547fe773c`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
+		Size: 3.9 KB (3948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.4-bionic` - linux; s390x
 
 ```console
-$ docker pull mongo@sha256:f2af3bc6bc116416fee28e8d7c7892224a475c16214353915c89008f52fc169c
+$ docker pull mongo@sha256:de1f653589e4153f89f7d242f907c69c16ea91f95f2a94240a19634aa8d57c4d
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **172.9 MB (172879519 bytes)**  
+-	Total Size: **172.9 MB (172881569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c565051afcfcd0e711548cf4ef6539daa22f7f514f62fff1f9d602914ec602b8`
+-	Image ID: `sha256:abc0c05512382652300ed10d809912071b8ee0ca14c10891cabccd8228c6dc94`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 22:51:22 GMT
-ADD file:835d62b9e8aa5985cb778cef4129baec4d3688713202ad55a1fa54bb9daf136e in / 
-# Wed, 16 Sep 2020 22:51:24 GMT
+# Fri, 25 Sep 2020 22:44:45 GMT
+ADD file:0a8ec4fb62616b6605197e20e0a7b511dc5b03d4af0e04c929dfd9fb457d2065 in / 
+# Fri, 25 Sep 2020 22:44:47 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 22:51:25 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:34:15 GMT
+# Fri, 25 Sep 2020 23:28:41 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:48 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:34:34 GMT
+# Fri, 25 Sep 2020 23:29:03 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:34:35 GMT
+# Fri, 25 Sep 2020 23:29:04 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:35:04 GMT
+# Fri, 25 Sep 2020 23:29:38 GMT
 ENV GPG_KEYS=20691EEC35216C63CAF66CE1656408E390CFB1F5
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:38 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_MAJOR=4.4
-# Wed, 16 Sep 2020 23:35:06 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_VERSION=4.4.1
-# Wed, 16 Sep 2020 23:35:06 GMT
+# Fri, 25 Sep 2020 23:29:40 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:35:24 GMT
+# Fri, 25 Sep 2020 23:29:58 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:04 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:35:31 GMT
+# Fri, 25 Sep 2020 23:30:04 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:cedb15d27487fa2e085bee049ff12636f8ba01e63c3bbdc094088e8bb7d8b641`  
-		Last Modified: Mon, 07 Sep 2020 15:51:50 GMT  
-		Size: 25.4 MB (25370945 bytes)  
+	-	`sha256:dd2de95b9a1c45e92bcc791d469201229b58d68187c99de6b08b00a13fa33393`  
+		Last Modified: Fri, 25 Sep 2020 22:45:52 GMT  
+		Size: 25.4 MB (25371975 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc4002d8c6f20fd20eb7aa7e91bfa01443724872a214bb07ad9cf86a810c86ed`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:c38a48ef4dfab2bd639d381d11b3390b6bf8860b2ef3356e9bb55f7cb8c775f9`  
+		Last Modified: Fri, 25 Sep 2020 22:45:51 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a4b15c73b5f07d5d69927632e5a59fb80805da20bc1fabc30f973b5b2ff5805`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:eced51184728468b347a6e3f143c356cd174c4a54be3cc10ec5aeddb402765fd`  
+		Last Modified: Fri, 25 Sep 2020 22:45:49 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7a2b5f360d121f5eca32ece3923457c206d49272ff9822f0d884f6265005ae5`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:a9288641caad70cb1c99ea2cd010ce53478a4fcde867a83434c8f98575f1fc90`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 1.9 KB (1881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:893560aa2ef4e5821a94b36f1ec594ffe5a854a1555d6ea4f97dacc83af8480d`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 2.7 MB (2704511 bytes)  
+	-	`sha256:fbb83c3ffb783f1412239a892171b331eef5d68b65aae1a2c51c44619cacb1c0`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 2.7 MB (2704583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fea2f8918f8c2df2c52439cf21e13e753d2435e01746244e98514af740dbd33c`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 5.7 MB (5745258 bytes)  
+	-	`sha256:e67c01a91968aa16935794fc7d52f7742b3359858bcfa36f033e3a9a8247e780`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 5.7 MB (5746126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90fd4098140808a14963597eb91371777030db4f7e4e6f718f287f333129e47b`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 149.0 B  
+	-	`sha256:bf72d8578ae0c25477822fd40465d9f9f696e8178817341284280781fe545f9d`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae99256407834c71804744b0944c744d43fcf2b791429dabdc01defe8a67895c`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
+	-	`sha256:891f80311986b5ccb82ae38f1f7b88c67e49b6fc81534ef8984e5b2109064d6b`  
+		Last Modified: Fri, 25 Sep 2020 23:30:37 GMT  
 		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b90df8b325066d02adf0130028fdbeec07f844cc39d97ffbe799a3c60a4c426`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
-		Size: 235.0 B  
+	-	`sha256:b862844c0ef43cc7917b410c17cbcd9e60c83231627cae7f40aa92a521f4efb6`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 238.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a68628d4230e194876d0206ccbd2b07078e347ae8163598fe29b87c3fa1fb5c8`  
-		Last Modified: Wed, 16 Sep 2020 23:36:25 GMT  
-		Size: 139.0 MB (139049954 bytes)  
+	-	`sha256:185ef58863de1fef5f933f4f05dd35e6f38ea3d1f491e4363a67c0b07db5afaa`  
+		Last Modified: Fri, 25 Sep 2020 23:30:54 GMT  
+		Size: 139.1 MB (139050035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ad7e1e8fa0802e1cc0372935e71f17c5416f2996976ee70b6986858c12e3010`  
-		Last Modified: Wed, 16 Sep 2020 23:36:08 GMT  
-		Size: 168.0 B  
+	-	`sha256:36be598b0fb9cf5388c223afc27633dc987a84af1aa05cf185133ea8ce300bb8`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:849cf808dcbba28bbf2ae3671fd8df5b91a6e7b68a129bb6d0f8fcedebffa4b8`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
-		Size: 4.0 KB (3955 bytes)  
+	-	`sha256:afd583fd9ef05f53886b3c68b812186511fcd3b1ad1bcc98ca3f244eec4dc2e5`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 4.0 KB (3954 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.4-windowsservercore`
@@ -10591,7 +10591,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4-bionic`
 
 ```console
-$ docker pull mongo@sha256:b5a6fbdf66bb76a43767c8a146d2aab7220e29756fc5e95209208a9c66322d48
+$ docker pull mongo@sha256:7ab3bbcdced4f3041afc7b6f9a53b0e2849035384d476abf9af42201f44f7cea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10722,239 +10722,239 @@ CMD ["mongod"]
 ### `mongo:4-bionic` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:d7e8c56b12849d9ca53760879ee3f2ff16211f30072d662d753161bd6530719a
+$ docker pull mongo@sha256:813ecaa78bf36de902579105aac27356b2a0bd876dcc6d7fdc977cf3898191e1
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **167.9 MB (167921175 bytes)**  
+-	Total Size: **167.9 MB (167940515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d1a2d5a50a5abb3b3930d52d19af7752fdbfcd63b28111e5c56290e80c2db2d`
+-	Image ID: `sha256:811d532cf7eeb16c636343bc3e183c1db7fe8d887762b141e975f74e81481e40`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 23:16:37 GMT
-ADD file:9eedc88c2028d53a81210b52c98121dddea7e30ecfbd4d11d2a1b2bdc94a0102 in / 
-# Wed, 16 Sep 2020 23:16:39 GMT
+# Fri, 25 Sep 2020 22:47:32 GMT
+ADD file:d2c57bfbb29f6de3b29050a2c50c3806e0c8caa26f6d8dea47f479c923d72e3e in / 
+# Fri, 25 Sep 2020 22:47:35 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 23:16:41 GMT
+# Fri, 25 Sep 2020 22:47:36 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 23:16:43 GMT
+# Fri, 25 Sep 2020 22:47:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 23:16:44 GMT
+# Fri, 25 Sep 2020 22:47:39 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:43:31 GMT
+# Fri, 25 Sep 2020 23:20:58 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:43:46 GMT
+# Fri, 25 Sep 2020 23:21:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:13 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:14 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:44:09 GMT
+# Fri, 25 Sep 2020 23:21:35 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:44:11 GMT
+# Fri, 25 Sep 2020 23:21:37 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:45:01 GMT
+# Fri, 25 Sep 2020 23:22:29 GMT
 ENV GPG_KEYS=20691EEC35216C63CAF66CE1656408E390CFB1F5
-# Wed, 16 Sep 2020 23:45:03 GMT
+# Fri, 25 Sep 2020 23:22:32 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:45:04 GMT
+# Fri, 25 Sep 2020 23:22:33 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:45:04 GMT
+# Fri, 25 Sep 2020 23:22:34 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:45:05 GMT
+# Fri, 25 Sep 2020 23:22:34 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:45:06 GMT
+# Fri, 25 Sep 2020 23:22:35 GMT
 ENV MONGO_MAJOR=4.4
-# Wed, 16 Sep 2020 23:45:07 GMT
+# Fri, 25 Sep 2020 23:22:36 GMT
 ENV MONGO_VERSION=4.4.1
-# Wed, 16 Sep 2020 23:45:10 GMT
+# Fri, 25 Sep 2020 23:22:37 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:45:40 GMT
+# Fri, 25 Sep 2020 23:23:08 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:45:43 GMT
+# Fri, 25 Sep 2020 23:23:11 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:45:44 GMT
+# Fri, 25 Sep 2020 23:23:12 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:45:45 GMT
+# Fri, 25 Sep 2020 23:23:13 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:45:46 GMT
+# Fri, 25 Sep 2020 23:23:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:45:47 GMT
+# Fri, 25 Sep 2020 23:23:14 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:45:48 GMT
+# Fri, 25 Sep 2020 23:23:15 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:e2d8ee3976bc7c15c8a5279cdf0249b7e41b2a489771330d0f7affb26dd7acfb`  
-		Last Modified: Fri, 04 Sep 2020 00:25:25 GMT  
-		Size: 23.7 MB (23722305 bytes)  
+	-	`sha256:296c9ad75beec603486f1373addae8e2c509e94c4adda44c1289792c91624acc`  
+		Last Modified: Tue, 22 Sep 2020 00:25:11 GMT  
+		Size: 23.7 MB (23722853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5007857f7b9b52d6efdfea9e086e6eaf35519130ff97bfe89970353f0ae53f13`  
-		Last Modified: Wed, 16 Sep 2020 23:18:23 GMT  
-		Size: 848.0 B  
+	-	`sha256:c0533d1393025aa8c38e0823a6546a0d4e5dec6b8b670758c25494c35783668d`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43927e60f12d8b877ded6af5048b2ac5753fe78caba77a6bbbece4f98559b672`  
-		Last Modified: Wed, 16 Sep 2020 23:18:22 GMT  
-		Size: 186.0 B  
+	-	`sha256:3c11bb34abc87247c6a70c928b7a5ef4cd48093642eb0c4b8121a674d3e278c6`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b72827a7f0127fb1d07506dffd83a19cf8d8a307cb5347e3ae99785575a98f12`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:abd165aaa6cf837afe497c787183e126b24a1ef1bf403484f10928ba64c46639`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:444439004828289d4e3ddf43a29364380c3ce3e5429ca0d6096c2799e81a8e1d`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 2.7 MB (2666228 bytes)  
+	-	`sha256:a920ac996f2b9527ded97e3730a6f389b34d4461d3a011e8a9d760fec20638bc`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 2.7 MB (2666255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:409dadc0b5deb1bd282abfd6567e572978e2b25a868e7dab0cea5d754507fb47`  
-		Last Modified: Wed, 16 Sep 2020 23:47:28 GMT  
-		Size: 5.3 MB (5345850 bytes)  
+	-	`sha256:b726ca9cb34a0b6364c01411cfc8cfa6958d113914018d18cba243d56c0d649b`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 5.3 MB (5346293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6f3af40ee50826887172762dee77d4318531556953ca9191552dfe7ca84e6de`  
-		Last Modified: Wed, 16 Sep 2020 23:47:26 GMT  
-		Size: 149.0 B  
+	-	`sha256:3b2c3d8694a6885ba4f1bdb65f527e085af3dc91039dd9b60a9af62ddc42b1d3`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d4fbd909a542064e616fab2c7316bf1be1f9a365d800e3b2e5b2639e231b9d`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
-		Size: 1.4 KB (1428 bytes)  
+	-	`sha256:88aec146ec81548df08b7b730fc041116e64f844464070486ee95f93a41de1f3`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b844fca0d2b508a122bbbedd3260c3eb2f8c07faf0cf062e008a13db7d4ad939`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
+	-	`sha256:7215b86ffc2f95704af100aec2bfabdcb5745cc2339c548fee0353eafe414f9b`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb78b4e43578b1eda8500f7be5f60cecd91f309327a117c99b23e2721419bd77`  
-		Last Modified: Wed, 16 Sep 2020 23:48:33 GMT  
-		Size: 136.2 MB (136177934 bytes)  
+	-	`sha256:b11b0a6ff5a4354355c3588f66dcfb3b8716e4fe55dda70431b330cf7756b650`  
+		Last Modified: Fri, 25 Sep 2020 23:25:58 GMT  
+		Size: 136.2 MB (136196252 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8faf900a91148a473b73bfe593c9b6d6f5a2adda7d2d2287b8febabcd90e5898`  
-		Last Modified: Wed, 16 Sep 2020 23:48:00 GMT  
+	-	`sha256:c2f36a0aa04da4aa9dbc7ee2f91f1c1dbc63dad241d94dc7f0c13f54734627e4`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ccfb6bcd2b4350787621bf334bc0d6f38595abd71668576ac0ffc976b7abded`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
-		Size: 4.0 KB (3954 bytes)  
+	-	`sha256:0855fdd1e2165c9684a4cf42a775a55e4a0b49138a52fbd97c97fcb547fe773c`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
+		Size: 3.9 KB (3948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4-bionic` - linux; s390x
 
 ```console
-$ docker pull mongo@sha256:f2af3bc6bc116416fee28e8d7c7892224a475c16214353915c89008f52fc169c
+$ docker pull mongo@sha256:de1f653589e4153f89f7d242f907c69c16ea91f95f2a94240a19634aa8d57c4d
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **172.9 MB (172879519 bytes)**  
+-	Total Size: **172.9 MB (172881569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c565051afcfcd0e711548cf4ef6539daa22f7f514f62fff1f9d602914ec602b8`
+-	Image ID: `sha256:abc0c05512382652300ed10d809912071b8ee0ca14c10891cabccd8228c6dc94`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 22:51:22 GMT
-ADD file:835d62b9e8aa5985cb778cef4129baec4d3688713202ad55a1fa54bb9daf136e in / 
-# Wed, 16 Sep 2020 22:51:24 GMT
+# Fri, 25 Sep 2020 22:44:45 GMT
+ADD file:0a8ec4fb62616b6605197e20e0a7b511dc5b03d4af0e04c929dfd9fb457d2065 in / 
+# Fri, 25 Sep 2020 22:44:47 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 22:51:25 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:34:15 GMT
+# Fri, 25 Sep 2020 23:28:41 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:48 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:34:34 GMT
+# Fri, 25 Sep 2020 23:29:03 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:34:35 GMT
+# Fri, 25 Sep 2020 23:29:04 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:35:04 GMT
+# Fri, 25 Sep 2020 23:29:38 GMT
 ENV GPG_KEYS=20691EEC35216C63CAF66CE1656408E390CFB1F5
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:38 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_MAJOR=4.4
-# Wed, 16 Sep 2020 23:35:06 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_VERSION=4.4.1
-# Wed, 16 Sep 2020 23:35:06 GMT
+# Fri, 25 Sep 2020 23:29:40 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:35:24 GMT
+# Fri, 25 Sep 2020 23:29:58 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:04 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:35:31 GMT
+# Fri, 25 Sep 2020 23:30:04 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:cedb15d27487fa2e085bee049ff12636f8ba01e63c3bbdc094088e8bb7d8b641`  
-		Last Modified: Mon, 07 Sep 2020 15:51:50 GMT  
-		Size: 25.4 MB (25370945 bytes)  
+	-	`sha256:dd2de95b9a1c45e92bcc791d469201229b58d68187c99de6b08b00a13fa33393`  
+		Last Modified: Fri, 25 Sep 2020 22:45:52 GMT  
+		Size: 25.4 MB (25371975 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc4002d8c6f20fd20eb7aa7e91bfa01443724872a214bb07ad9cf86a810c86ed`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:c38a48ef4dfab2bd639d381d11b3390b6bf8860b2ef3356e9bb55f7cb8c775f9`  
+		Last Modified: Fri, 25 Sep 2020 22:45:51 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a4b15c73b5f07d5d69927632e5a59fb80805da20bc1fabc30f973b5b2ff5805`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:eced51184728468b347a6e3f143c356cd174c4a54be3cc10ec5aeddb402765fd`  
+		Last Modified: Fri, 25 Sep 2020 22:45:49 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7a2b5f360d121f5eca32ece3923457c206d49272ff9822f0d884f6265005ae5`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:a9288641caad70cb1c99ea2cd010ce53478a4fcde867a83434c8f98575f1fc90`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 1.9 KB (1881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:893560aa2ef4e5821a94b36f1ec594ffe5a854a1555d6ea4f97dacc83af8480d`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 2.7 MB (2704511 bytes)  
+	-	`sha256:fbb83c3ffb783f1412239a892171b331eef5d68b65aae1a2c51c44619cacb1c0`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 2.7 MB (2704583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fea2f8918f8c2df2c52439cf21e13e753d2435e01746244e98514af740dbd33c`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 5.7 MB (5745258 bytes)  
+	-	`sha256:e67c01a91968aa16935794fc7d52f7742b3359858bcfa36f033e3a9a8247e780`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 5.7 MB (5746126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90fd4098140808a14963597eb91371777030db4f7e4e6f718f287f333129e47b`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 149.0 B  
+	-	`sha256:bf72d8578ae0c25477822fd40465d9f9f696e8178817341284280781fe545f9d`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae99256407834c71804744b0944c744d43fcf2b791429dabdc01defe8a67895c`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
+	-	`sha256:891f80311986b5ccb82ae38f1f7b88c67e49b6fc81534ef8984e5b2109064d6b`  
+		Last Modified: Fri, 25 Sep 2020 23:30:37 GMT  
 		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b90df8b325066d02adf0130028fdbeec07f844cc39d97ffbe799a3c60a4c426`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
-		Size: 235.0 B  
+	-	`sha256:b862844c0ef43cc7917b410c17cbcd9e60c83231627cae7f40aa92a521f4efb6`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 238.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a68628d4230e194876d0206ccbd2b07078e347ae8163598fe29b87c3fa1fb5c8`  
-		Last Modified: Wed, 16 Sep 2020 23:36:25 GMT  
-		Size: 139.0 MB (139049954 bytes)  
+	-	`sha256:185ef58863de1fef5f933f4f05dd35e6f38ea3d1f491e4363a67c0b07db5afaa`  
+		Last Modified: Fri, 25 Sep 2020 23:30:54 GMT  
+		Size: 139.1 MB (139050035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ad7e1e8fa0802e1cc0372935e71f17c5416f2996976ee70b6986858c12e3010`  
-		Last Modified: Wed, 16 Sep 2020 23:36:08 GMT  
-		Size: 168.0 B  
+	-	`sha256:36be598b0fb9cf5388c223afc27633dc987a84af1aa05cf185133ea8ce300bb8`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:849cf808dcbba28bbf2ae3671fd8df5b91a6e7b68a129bb6d0f8fcedebffa4b8`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
-		Size: 4.0 KB (3955 bytes)  
+	-	`sha256:afd583fd9ef05f53886b3c68b812186511fcd3b1ad1bcc98ca3f244eec4dc2e5`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 4.0 KB (3954 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4-windowsservercore`
@@ -11301,7 +11301,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:bionic`
 
 ```console
-$ docker pull mongo@sha256:b5a6fbdf66bb76a43767c8a146d2aab7220e29756fc5e95209208a9c66322d48
+$ docker pull mongo@sha256:7ab3bbcdced4f3041afc7b6f9a53b0e2849035384d476abf9af42201f44f7cea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11432,245 +11432,245 @@ CMD ["mongod"]
 ### `mongo:bionic` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:d7e8c56b12849d9ca53760879ee3f2ff16211f30072d662d753161bd6530719a
+$ docker pull mongo@sha256:813ecaa78bf36de902579105aac27356b2a0bd876dcc6d7fdc977cf3898191e1
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **167.9 MB (167921175 bytes)**  
+-	Total Size: **167.9 MB (167940515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d1a2d5a50a5abb3b3930d52d19af7752fdbfcd63b28111e5c56290e80c2db2d`
+-	Image ID: `sha256:811d532cf7eeb16c636343bc3e183c1db7fe8d887762b141e975f74e81481e40`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 23:16:37 GMT
-ADD file:9eedc88c2028d53a81210b52c98121dddea7e30ecfbd4d11d2a1b2bdc94a0102 in / 
-# Wed, 16 Sep 2020 23:16:39 GMT
+# Fri, 25 Sep 2020 22:47:32 GMT
+ADD file:d2c57bfbb29f6de3b29050a2c50c3806e0c8caa26f6d8dea47f479c923d72e3e in / 
+# Fri, 25 Sep 2020 22:47:35 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 23:16:41 GMT
+# Fri, 25 Sep 2020 22:47:36 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 23:16:43 GMT
+# Fri, 25 Sep 2020 22:47:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 23:16:44 GMT
+# Fri, 25 Sep 2020 22:47:39 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:43:31 GMT
+# Fri, 25 Sep 2020 23:20:58 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:43:46 GMT
+# Fri, 25 Sep 2020 23:21:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:13 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:14 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:44:09 GMT
+# Fri, 25 Sep 2020 23:21:35 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:44:11 GMT
+# Fri, 25 Sep 2020 23:21:37 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:45:01 GMT
+# Fri, 25 Sep 2020 23:22:29 GMT
 ENV GPG_KEYS=20691EEC35216C63CAF66CE1656408E390CFB1F5
-# Wed, 16 Sep 2020 23:45:03 GMT
+# Fri, 25 Sep 2020 23:22:32 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:45:04 GMT
+# Fri, 25 Sep 2020 23:22:33 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:45:04 GMT
+# Fri, 25 Sep 2020 23:22:34 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:45:05 GMT
+# Fri, 25 Sep 2020 23:22:34 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:45:06 GMT
+# Fri, 25 Sep 2020 23:22:35 GMT
 ENV MONGO_MAJOR=4.4
-# Wed, 16 Sep 2020 23:45:07 GMT
+# Fri, 25 Sep 2020 23:22:36 GMT
 ENV MONGO_VERSION=4.4.1
-# Wed, 16 Sep 2020 23:45:10 GMT
+# Fri, 25 Sep 2020 23:22:37 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:45:40 GMT
+# Fri, 25 Sep 2020 23:23:08 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:45:43 GMT
+# Fri, 25 Sep 2020 23:23:11 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:45:44 GMT
+# Fri, 25 Sep 2020 23:23:12 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:45:45 GMT
+# Fri, 25 Sep 2020 23:23:13 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:45:46 GMT
+# Fri, 25 Sep 2020 23:23:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:45:47 GMT
+# Fri, 25 Sep 2020 23:23:14 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:45:48 GMT
+# Fri, 25 Sep 2020 23:23:15 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:e2d8ee3976bc7c15c8a5279cdf0249b7e41b2a489771330d0f7affb26dd7acfb`  
-		Last Modified: Fri, 04 Sep 2020 00:25:25 GMT  
-		Size: 23.7 MB (23722305 bytes)  
+	-	`sha256:296c9ad75beec603486f1373addae8e2c509e94c4adda44c1289792c91624acc`  
+		Last Modified: Tue, 22 Sep 2020 00:25:11 GMT  
+		Size: 23.7 MB (23722853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5007857f7b9b52d6efdfea9e086e6eaf35519130ff97bfe89970353f0ae53f13`  
-		Last Modified: Wed, 16 Sep 2020 23:18:23 GMT  
-		Size: 848.0 B  
+	-	`sha256:c0533d1393025aa8c38e0823a6546a0d4e5dec6b8b670758c25494c35783668d`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43927e60f12d8b877ded6af5048b2ac5753fe78caba77a6bbbece4f98559b672`  
-		Last Modified: Wed, 16 Sep 2020 23:18:22 GMT  
-		Size: 186.0 B  
+	-	`sha256:3c11bb34abc87247c6a70c928b7a5ef4cd48093642eb0c4b8121a674d3e278c6`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b72827a7f0127fb1d07506dffd83a19cf8d8a307cb5347e3ae99785575a98f12`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:abd165aaa6cf837afe497c787183e126b24a1ef1bf403484f10928ba64c46639`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:444439004828289d4e3ddf43a29364380c3ce3e5429ca0d6096c2799e81a8e1d`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 2.7 MB (2666228 bytes)  
+	-	`sha256:a920ac996f2b9527ded97e3730a6f389b34d4461d3a011e8a9d760fec20638bc`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 2.7 MB (2666255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:409dadc0b5deb1bd282abfd6567e572978e2b25a868e7dab0cea5d754507fb47`  
-		Last Modified: Wed, 16 Sep 2020 23:47:28 GMT  
-		Size: 5.3 MB (5345850 bytes)  
+	-	`sha256:b726ca9cb34a0b6364c01411cfc8cfa6958d113914018d18cba243d56c0d649b`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 5.3 MB (5346293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6f3af40ee50826887172762dee77d4318531556953ca9191552dfe7ca84e6de`  
-		Last Modified: Wed, 16 Sep 2020 23:47:26 GMT  
-		Size: 149.0 B  
+	-	`sha256:3b2c3d8694a6885ba4f1bdb65f527e085af3dc91039dd9b60a9af62ddc42b1d3`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d4fbd909a542064e616fab2c7316bf1be1f9a365d800e3b2e5b2639e231b9d`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
-		Size: 1.4 KB (1428 bytes)  
+	-	`sha256:88aec146ec81548df08b7b730fc041116e64f844464070486ee95f93a41de1f3`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b844fca0d2b508a122bbbedd3260c3eb2f8c07faf0cf062e008a13db7d4ad939`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
+	-	`sha256:7215b86ffc2f95704af100aec2bfabdcb5745cc2339c548fee0353eafe414f9b`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb78b4e43578b1eda8500f7be5f60cecd91f309327a117c99b23e2721419bd77`  
-		Last Modified: Wed, 16 Sep 2020 23:48:33 GMT  
-		Size: 136.2 MB (136177934 bytes)  
+	-	`sha256:b11b0a6ff5a4354355c3588f66dcfb3b8716e4fe55dda70431b330cf7756b650`  
+		Last Modified: Fri, 25 Sep 2020 23:25:58 GMT  
+		Size: 136.2 MB (136196252 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8faf900a91148a473b73bfe593c9b6d6f5a2adda7d2d2287b8febabcd90e5898`  
-		Last Modified: Wed, 16 Sep 2020 23:48:00 GMT  
+	-	`sha256:c2f36a0aa04da4aa9dbc7ee2f91f1c1dbc63dad241d94dc7f0c13f54734627e4`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ccfb6bcd2b4350787621bf334bc0d6f38595abd71668576ac0ffc976b7abded`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
-		Size: 4.0 KB (3954 bytes)  
+	-	`sha256:0855fdd1e2165c9684a4cf42a775a55e4a0b49138a52fbd97c97fcb547fe773c`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
+		Size: 3.9 KB (3948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:bionic` - linux; s390x
 
 ```console
-$ docker pull mongo@sha256:f2af3bc6bc116416fee28e8d7c7892224a475c16214353915c89008f52fc169c
+$ docker pull mongo@sha256:de1f653589e4153f89f7d242f907c69c16ea91f95f2a94240a19634aa8d57c4d
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **172.9 MB (172879519 bytes)**  
+-	Total Size: **172.9 MB (172881569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c565051afcfcd0e711548cf4ef6539daa22f7f514f62fff1f9d602914ec602b8`
+-	Image ID: `sha256:abc0c05512382652300ed10d809912071b8ee0ca14c10891cabccd8228c6dc94`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 22:51:22 GMT
-ADD file:835d62b9e8aa5985cb778cef4129baec4d3688713202ad55a1fa54bb9daf136e in / 
-# Wed, 16 Sep 2020 22:51:24 GMT
+# Fri, 25 Sep 2020 22:44:45 GMT
+ADD file:0a8ec4fb62616b6605197e20e0a7b511dc5b03d4af0e04c929dfd9fb457d2065 in / 
+# Fri, 25 Sep 2020 22:44:47 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 22:51:25 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:34:15 GMT
+# Fri, 25 Sep 2020 23:28:41 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:48 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:34:34 GMT
+# Fri, 25 Sep 2020 23:29:03 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:34:35 GMT
+# Fri, 25 Sep 2020 23:29:04 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:35:04 GMT
+# Fri, 25 Sep 2020 23:29:38 GMT
 ENV GPG_KEYS=20691EEC35216C63CAF66CE1656408E390CFB1F5
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:38 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_MAJOR=4.4
-# Wed, 16 Sep 2020 23:35:06 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_VERSION=4.4.1
-# Wed, 16 Sep 2020 23:35:06 GMT
+# Fri, 25 Sep 2020 23:29:40 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:35:24 GMT
+# Fri, 25 Sep 2020 23:29:58 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:04 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:35:31 GMT
+# Fri, 25 Sep 2020 23:30:04 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:cedb15d27487fa2e085bee049ff12636f8ba01e63c3bbdc094088e8bb7d8b641`  
-		Last Modified: Mon, 07 Sep 2020 15:51:50 GMT  
-		Size: 25.4 MB (25370945 bytes)  
+	-	`sha256:dd2de95b9a1c45e92bcc791d469201229b58d68187c99de6b08b00a13fa33393`  
+		Last Modified: Fri, 25 Sep 2020 22:45:52 GMT  
+		Size: 25.4 MB (25371975 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc4002d8c6f20fd20eb7aa7e91bfa01443724872a214bb07ad9cf86a810c86ed`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:c38a48ef4dfab2bd639d381d11b3390b6bf8860b2ef3356e9bb55f7cb8c775f9`  
+		Last Modified: Fri, 25 Sep 2020 22:45:51 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a4b15c73b5f07d5d69927632e5a59fb80805da20bc1fabc30f973b5b2ff5805`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:eced51184728468b347a6e3f143c356cd174c4a54be3cc10ec5aeddb402765fd`  
+		Last Modified: Fri, 25 Sep 2020 22:45:49 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7a2b5f360d121f5eca32ece3923457c206d49272ff9822f0d884f6265005ae5`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:a9288641caad70cb1c99ea2cd010ce53478a4fcde867a83434c8f98575f1fc90`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 1.9 KB (1881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:893560aa2ef4e5821a94b36f1ec594ffe5a854a1555d6ea4f97dacc83af8480d`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 2.7 MB (2704511 bytes)  
+	-	`sha256:fbb83c3ffb783f1412239a892171b331eef5d68b65aae1a2c51c44619cacb1c0`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 2.7 MB (2704583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fea2f8918f8c2df2c52439cf21e13e753d2435e01746244e98514af740dbd33c`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 5.7 MB (5745258 bytes)  
+	-	`sha256:e67c01a91968aa16935794fc7d52f7742b3359858bcfa36f033e3a9a8247e780`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 5.7 MB (5746126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90fd4098140808a14963597eb91371777030db4f7e4e6f718f287f333129e47b`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 149.0 B  
+	-	`sha256:bf72d8578ae0c25477822fd40465d9f9f696e8178817341284280781fe545f9d`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae99256407834c71804744b0944c744d43fcf2b791429dabdc01defe8a67895c`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
+	-	`sha256:891f80311986b5ccb82ae38f1f7b88c67e49b6fc81534ef8984e5b2109064d6b`  
+		Last Modified: Fri, 25 Sep 2020 23:30:37 GMT  
 		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b90df8b325066d02adf0130028fdbeec07f844cc39d97ffbe799a3c60a4c426`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
-		Size: 235.0 B  
+	-	`sha256:b862844c0ef43cc7917b410c17cbcd9e60c83231627cae7f40aa92a521f4efb6`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 238.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a68628d4230e194876d0206ccbd2b07078e347ae8163598fe29b87c3fa1fb5c8`  
-		Last Modified: Wed, 16 Sep 2020 23:36:25 GMT  
-		Size: 139.0 MB (139049954 bytes)  
+	-	`sha256:185ef58863de1fef5f933f4f05dd35e6f38ea3d1f491e4363a67c0b07db5afaa`  
+		Last Modified: Fri, 25 Sep 2020 23:30:54 GMT  
+		Size: 139.1 MB (139050035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ad7e1e8fa0802e1cc0372935e71f17c5416f2996976ee70b6986858c12e3010`  
-		Last Modified: Wed, 16 Sep 2020 23:36:08 GMT  
-		Size: 168.0 B  
+	-	`sha256:36be598b0fb9cf5388c223afc27633dc987a84af1aa05cf185133ea8ce300bb8`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:849cf808dcbba28bbf2ae3671fd8df5b91a6e7b68a129bb6d0f8fcedebffa4b8`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
-		Size: 4.0 KB (3955 bytes)  
+	-	`sha256:afd583fd9ef05f53886b3c68b812186511fcd3b1ad1bcc98ca3f244eec4dc2e5`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 4.0 KB (3954 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:latest`
 
 ```console
-$ docker pull mongo@sha256:ebcdb042054d9974c8c3160d761b0bdb39b55115448242de1a5161c124ddb0af
+$ docker pull mongo@sha256:d04601593b2bb0b0e569478e99663561e245982bd43174fe1a2cd52792613674
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11803,239 +11803,239 @@ CMD ["mongod"]
 ### `mongo:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:d7e8c56b12849d9ca53760879ee3f2ff16211f30072d662d753161bd6530719a
+$ docker pull mongo@sha256:813ecaa78bf36de902579105aac27356b2a0bd876dcc6d7fdc977cf3898191e1
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **167.9 MB (167921175 bytes)**  
+-	Total Size: **167.9 MB (167940515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d1a2d5a50a5abb3b3930d52d19af7752fdbfcd63b28111e5c56290e80c2db2d`
+-	Image ID: `sha256:811d532cf7eeb16c636343bc3e183c1db7fe8d887762b141e975f74e81481e40`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 23:16:37 GMT
-ADD file:9eedc88c2028d53a81210b52c98121dddea7e30ecfbd4d11d2a1b2bdc94a0102 in / 
-# Wed, 16 Sep 2020 23:16:39 GMT
+# Fri, 25 Sep 2020 22:47:32 GMT
+ADD file:d2c57bfbb29f6de3b29050a2c50c3806e0c8caa26f6d8dea47f479c923d72e3e in / 
+# Fri, 25 Sep 2020 22:47:35 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 23:16:41 GMT
+# Fri, 25 Sep 2020 22:47:36 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 23:16:43 GMT
+# Fri, 25 Sep 2020 22:47:38 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 23:16:44 GMT
+# Fri, 25 Sep 2020 22:47:39 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:43:31 GMT
+# Fri, 25 Sep 2020 23:20:58 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:43:46 GMT
+# Fri, 25 Sep 2020 23:21:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:13 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:43:47 GMT
+# Fri, 25 Sep 2020 23:21:14 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:44:09 GMT
+# Fri, 25 Sep 2020 23:21:35 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:44:11 GMT
+# Fri, 25 Sep 2020 23:21:37 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:45:01 GMT
+# Fri, 25 Sep 2020 23:22:29 GMT
 ENV GPG_KEYS=20691EEC35216C63CAF66CE1656408E390CFB1F5
-# Wed, 16 Sep 2020 23:45:03 GMT
+# Fri, 25 Sep 2020 23:22:32 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:45:04 GMT
+# Fri, 25 Sep 2020 23:22:33 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:45:04 GMT
+# Fri, 25 Sep 2020 23:22:34 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:45:05 GMT
+# Fri, 25 Sep 2020 23:22:34 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:45:06 GMT
+# Fri, 25 Sep 2020 23:22:35 GMT
 ENV MONGO_MAJOR=4.4
-# Wed, 16 Sep 2020 23:45:07 GMT
+# Fri, 25 Sep 2020 23:22:36 GMT
 ENV MONGO_VERSION=4.4.1
-# Wed, 16 Sep 2020 23:45:10 GMT
+# Fri, 25 Sep 2020 23:22:37 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:45:40 GMT
+# Fri, 25 Sep 2020 23:23:08 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:45:43 GMT
+# Fri, 25 Sep 2020 23:23:11 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:45:44 GMT
+# Fri, 25 Sep 2020 23:23:12 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:45:45 GMT
+# Fri, 25 Sep 2020 23:23:13 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:45:46 GMT
+# Fri, 25 Sep 2020 23:23:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:45:47 GMT
+# Fri, 25 Sep 2020 23:23:14 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:45:48 GMT
+# Fri, 25 Sep 2020 23:23:15 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:e2d8ee3976bc7c15c8a5279cdf0249b7e41b2a489771330d0f7affb26dd7acfb`  
-		Last Modified: Fri, 04 Sep 2020 00:25:25 GMT  
-		Size: 23.7 MB (23722305 bytes)  
+	-	`sha256:296c9ad75beec603486f1373addae8e2c509e94c4adda44c1289792c91624acc`  
+		Last Modified: Tue, 22 Sep 2020 00:25:11 GMT  
+		Size: 23.7 MB (23722853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5007857f7b9b52d6efdfea9e086e6eaf35519130ff97bfe89970353f0ae53f13`  
-		Last Modified: Wed, 16 Sep 2020 23:18:23 GMT  
-		Size: 848.0 B  
+	-	`sha256:c0533d1393025aa8c38e0823a6546a0d4e5dec6b8b670758c25494c35783668d`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43927e60f12d8b877ded6af5048b2ac5753fe78caba77a6bbbece4f98559b672`  
-		Last Modified: Wed, 16 Sep 2020 23:18:22 GMT  
-		Size: 186.0 B  
+	-	`sha256:3c11bb34abc87247c6a70c928b7a5ef4cd48093642eb0c4b8121a674d3e278c6`  
+		Last Modified: Fri, 25 Sep 2020 22:49:19 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b72827a7f0127fb1d07506dffd83a19cf8d8a307cb5347e3ae99785575a98f12`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:abd165aaa6cf837afe497c787183e126b24a1ef1bf403484f10928ba64c46639`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 1.9 KB (1888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:444439004828289d4e3ddf43a29364380c3ce3e5429ca0d6096c2799e81a8e1d`  
-		Last Modified: Wed, 16 Sep 2020 23:47:27 GMT  
-		Size: 2.7 MB (2666228 bytes)  
+	-	`sha256:a920ac996f2b9527ded97e3730a6f389b34d4461d3a011e8a9d760fec20638bc`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 2.7 MB (2666255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:409dadc0b5deb1bd282abfd6567e572978e2b25a868e7dab0cea5d754507fb47`  
-		Last Modified: Wed, 16 Sep 2020 23:47:28 GMT  
-		Size: 5.3 MB (5345850 bytes)  
+	-	`sha256:b726ca9cb34a0b6364c01411cfc8cfa6958d113914018d18cba243d56c0d649b`  
+		Last Modified: Fri, 25 Sep 2020 23:24:55 GMT  
+		Size: 5.3 MB (5346293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6f3af40ee50826887172762dee77d4318531556953ca9191552dfe7ca84e6de`  
-		Last Modified: Wed, 16 Sep 2020 23:47:26 GMT  
-		Size: 149.0 B  
+	-	`sha256:3b2c3d8694a6885ba4f1bdb65f527e085af3dc91039dd9b60a9af62ddc42b1d3`  
+		Last Modified: Fri, 25 Sep 2020 23:24:54 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d4fbd909a542064e616fab2c7316bf1be1f9a365d800e3b2e5b2639e231b9d`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
-		Size: 1.4 KB (1428 bytes)  
+	-	`sha256:88aec146ec81548df08b7b730fc041116e64f844464070486ee95f93a41de1f3`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b844fca0d2b508a122bbbedd3260c3eb2f8c07faf0cf062e008a13db7d4ad939`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
+	-	`sha256:7215b86ffc2f95704af100aec2bfabdcb5745cc2339c548fee0353eafe414f9b`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
 		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb78b4e43578b1eda8500f7be5f60cecd91f309327a117c99b23e2721419bd77`  
-		Last Modified: Wed, 16 Sep 2020 23:48:33 GMT  
-		Size: 136.2 MB (136177934 bytes)  
+	-	`sha256:b11b0a6ff5a4354355c3588f66dcfb3b8716e4fe55dda70431b330cf7756b650`  
+		Last Modified: Fri, 25 Sep 2020 23:25:58 GMT  
+		Size: 136.2 MB (136196252 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8faf900a91148a473b73bfe593c9b6d6f5a2adda7d2d2287b8febabcd90e5898`  
-		Last Modified: Wed, 16 Sep 2020 23:48:00 GMT  
+	-	`sha256:c2f36a0aa04da4aa9dbc7ee2f91f1c1dbc63dad241d94dc7f0c13f54734627e4`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ccfb6bcd2b4350787621bf334bc0d6f38595abd71668576ac0ffc976b7abded`  
-		Last Modified: Wed, 16 Sep 2020 23:47:59 GMT  
-		Size: 4.0 KB (3954 bytes)  
+	-	`sha256:0855fdd1e2165c9684a4cf42a775a55e4a0b49138a52fbd97c97fcb547fe773c`  
+		Last Modified: Fri, 25 Sep 2020 23:25:24 GMT  
+		Size: 3.9 KB (3948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:latest` - linux; s390x
 
 ```console
-$ docker pull mongo@sha256:f2af3bc6bc116416fee28e8d7c7892224a475c16214353915c89008f52fc169c
+$ docker pull mongo@sha256:de1f653589e4153f89f7d242f907c69c16ea91f95f2a94240a19634aa8d57c4d
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **172.9 MB (172879519 bytes)**  
+-	Total Size: **172.9 MB (172881569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c565051afcfcd0e711548cf4ef6539daa22f7f514f62fff1f9d602914ec602b8`
+-	Image ID: `sha256:abc0c05512382652300ed10d809912071b8ee0ca14c10891cabccd8228c6dc94`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 16 Sep 2020 22:51:22 GMT
-ADD file:835d62b9e8aa5985cb778cef4129baec4d3688713202ad55a1fa54bb9daf136e in / 
-# Wed, 16 Sep 2020 22:51:24 GMT
+# Fri, 25 Sep 2020 22:44:45 GMT
+ADD file:0a8ec4fb62616b6605197e20e0a7b511dc5b03d4af0e04c929dfd9fb457d2065 in / 
+# Fri, 25 Sep 2020 22:44:47 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 16 Sep 2020 22:51:25 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 16 Sep 2020 22:51:26 GMT
+# Fri, 25 Sep 2020 22:44:48 GMT
 CMD ["/bin/bash"]
-# Wed, 16 Sep 2020 23:34:15 GMT
+# Fri, 25 Sep 2020 23:28:41 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:47 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 16 Sep 2020 23:34:22 GMT
+# Fri, 25 Sep 2020 23:28:48 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 16 Sep 2020 23:34:34 GMT
+# Fri, 25 Sep 2020 23:29:03 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Sep 2020 23:34:35 GMT
+# Fri, 25 Sep 2020 23:29:04 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Wed, 16 Sep 2020 23:35:04 GMT
+# Fri, 25 Sep 2020 23:29:38 GMT
 ENV GPG_KEYS=20691EEC35216C63CAF66CE1656408E390CFB1F5
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:38 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --export $GPG_KEYS > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Wed, 16 Sep 2020 23:35:05 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_MAJOR=4.4
-# Wed, 16 Sep 2020 23:35:06 GMT
+# Fri, 25 Sep 2020 23:29:39 GMT
 ENV MONGO_VERSION=4.4.1
-# Wed, 16 Sep 2020 23:35:06 GMT
+# Fri, 25 Sep 2020 23:29:40 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Wed, 16 Sep 2020 23:35:24 GMT
+# Fri, 25 Sep 2020 23:29:58 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 VOLUME [/data/db /data/configdb]
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 COPY file:c3beae20a29d6d69ecab76830068690f9c4f9d77d82eb60160db72670df64615 in /usr/local/bin/ 
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:03 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Sep 2020 23:35:30 GMT
+# Fri, 25 Sep 2020 23:30:04 GMT
 EXPOSE 27017
-# Wed, 16 Sep 2020 23:35:31 GMT
+# Fri, 25 Sep 2020 23:30:04 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:cedb15d27487fa2e085bee049ff12636f8ba01e63c3bbdc094088e8bb7d8b641`  
-		Last Modified: Mon, 07 Sep 2020 15:51:50 GMT  
-		Size: 25.4 MB (25370945 bytes)  
+	-	`sha256:dd2de95b9a1c45e92bcc791d469201229b58d68187c99de6b08b00a13fa33393`  
+		Last Modified: Fri, 25 Sep 2020 22:45:52 GMT  
+		Size: 25.4 MB (25371975 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc4002d8c6f20fd20eb7aa7e91bfa01443724872a214bb07ad9cf86a810c86ed`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:c38a48ef4dfab2bd639d381d11b3390b6bf8860b2ef3356e9bb55f7cb8c775f9`  
+		Last Modified: Fri, 25 Sep 2020 22:45:51 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a4b15c73b5f07d5d69927632e5a59fb80805da20bc1fabc30f973b5b2ff5805`  
-		Last Modified: Wed, 16 Sep 2020 22:52:22 GMT  
+	-	`sha256:eced51184728468b347a6e3f143c356cd174c4a54be3cc10ec5aeddb402765fd`  
+		Last Modified: Fri, 25 Sep 2020 22:45:49 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7a2b5f360d121f5eca32ece3923457c206d49272ff9822f0d884f6265005ae5`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 1.9 KB (1885 bytes)  
+	-	`sha256:a9288641caad70cb1c99ea2cd010ce53478a4fcde867a83434c8f98575f1fc90`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 1.9 KB (1881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:893560aa2ef4e5821a94b36f1ec594ffe5a854a1555d6ea4f97dacc83af8480d`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 2.7 MB (2704511 bytes)  
+	-	`sha256:fbb83c3ffb783f1412239a892171b331eef5d68b65aae1a2c51c44619cacb1c0`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 2.7 MB (2704583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fea2f8918f8c2df2c52439cf21e13e753d2435e01746244e98514af740dbd33c`  
-		Last Modified: Wed, 16 Sep 2020 23:35:49 GMT  
-		Size: 5.7 MB (5745258 bytes)  
+	-	`sha256:e67c01a91968aa16935794fc7d52f7742b3359858bcfa36f033e3a9a8247e780`  
+		Last Modified: Fri, 25 Sep 2020 23:30:18 GMT  
+		Size: 5.7 MB (5746126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90fd4098140808a14963597eb91371777030db4f7e4e6f718f287f333129e47b`  
-		Last Modified: Wed, 16 Sep 2020 23:35:48 GMT  
-		Size: 149.0 B  
+	-	`sha256:bf72d8578ae0c25477822fd40465d9f9f696e8178817341284280781fe545f9d`  
+		Last Modified: Fri, 25 Sep 2020 23:30:17 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae99256407834c71804744b0944c744d43fcf2b791429dabdc01defe8a67895c`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
+	-	`sha256:891f80311986b5ccb82ae38f1f7b88c67e49b6fc81534ef8984e5b2109064d6b`  
+		Last Modified: Fri, 25 Sep 2020 23:30:37 GMT  
 		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b90df8b325066d02adf0130028fdbeec07f844cc39d97ffbe799a3c60a4c426`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
-		Size: 235.0 B  
+	-	`sha256:b862844c0ef43cc7917b410c17cbcd9e60c83231627cae7f40aa92a521f4efb6`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 238.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a68628d4230e194876d0206ccbd2b07078e347ae8163598fe29b87c3fa1fb5c8`  
-		Last Modified: Wed, 16 Sep 2020 23:36:25 GMT  
-		Size: 139.0 MB (139049954 bytes)  
+	-	`sha256:185ef58863de1fef5f933f4f05dd35e6f38ea3d1f491e4363a67c0b07db5afaa`  
+		Last Modified: Fri, 25 Sep 2020 23:30:54 GMT  
+		Size: 139.1 MB (139050035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ad7e1e8fa0802e1cc0372935e71f17c5416f2996976ee70b6986858c12e3010`  
-		Last Modified: Wed, 16 Sep 2020 23:36:08 GMT  
-		Size: 168.0 B  
+	-	`sha256:36be598b0fb9cf5388c223afc27633dc987a84af1aa05cf185133ea8ce300bb8`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:849cf808dcbba28bbf2ae3671fd8df5b91a6e7b68a129bb6d0f8fcedebffa4b8`  
-		Last Modified: Wed, 16 Sep 2020 23:36:07 GMT  
-		Size: 4.0 KB (3955 bytes)  
+	-	`sha256:afd583fd9ef05f53886b3c68b812186511fcd3b1ad1bcc98ca3f244eec4dc2e5`  
+		Last Modified: Fri, 25 Sep 2020 23:30:36 GMT  
+		Size: 4.0 KB (3954 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:latest` - windows version 10.0.14393.3930; amd64
