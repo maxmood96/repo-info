@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f411c001bced099b85527bf130398559169337df240bbd16611e4c5c87c15ab1`
-- Created: `2020-09-18T01:28:09.356938554Z`
-- Virtual Size: ~ 691.77 Mb  
+- Image ID: `sha256:37997fe04bf8249ab254c0caff7984d2ebbd03ab7e63adb597a5859c6becf3e7`
+- Created: `2020-09-25T22:41:43.735710734Z`
+- Virtual Size: ~ 691.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["lein","repl"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-16/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/local/openjdk-16`
-  - `JAVA_VERSION=16-ea+16`
+  - `JAVA_VERSION=16-ea+17`
   - `LEIN_VERSION=2.9.3`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
@@ -217,19 +217,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=10.3+deb10u5
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_10.3+deb10u5.dsc' base-files_10.3+deb10u5.dsc 1103 SHA256:7724ff9a9a3b2ce469cb04e761ab504b88fa2c74ba45d4d4d6b1e6cebdb11502
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_10.3+deb10u5.tar.xz' base-files_10.3+deb10u5.tar.xz 65376 SHA256:a86ea7be711a9a91ae781cbd9db1b0a931f76cdd36ea247aae9273f8f4d2a011
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/10.3+deb10u5/
 
-- https://sources.debian.net/src/base-files/10.3+deb10u5/ (for browsing the source)
-- https://sources.debian.net/src/base-files/10.3+deb10u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/10.3+deb10u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.46`
 
