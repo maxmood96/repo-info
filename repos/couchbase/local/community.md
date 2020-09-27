@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f72cc9a34f0be11fdfab884af7cdfc680db7ae655f1e9df4f2e891441e263724`
-- Created: `2020-09-16T23:58:30.867902924Z`
-- Virtual Size: ~ 837.26 Mb  
+- Image ID: `sha256:80b43f3207f2c43f78e655d2d155c5519680988dfbbb014de26e60afb9ea59a5`
+- Created: `2020-09-25T23:46:33.793788518Z`
+- Virtual Size: ~ 837.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -1437,14 +1437,14 @@ $ apt-get source -qq --print-uris sysstat=11.2.0-1ubuntu0.3
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysstat/sysstat_11.2.0-1ubuntu0.3.debian.tar.xz' sysstat_11.2.0-1ubuntu0.3.debian.tar.xz 36364 SHA256:80e17b0f61e7fc0d77088d7827b13a116ad59db862013940f3735e84202e63af
 ```
 
-### `dpkg` source package: `systemd=229-4ubuntu21.28`
+### `dpkg` source package: `systemd=229-4ubuntu21.29`
 
 Binary Packages:
 
-- `libsystemd0:amd64=229-4ubuntu21.28`
-- `libudev1:amd64=229-4ubuntu21.28`
-- `systemd=229-4ubuntu21.28`
-- `systemd-sysv=229-4ubuntu21.28`
+- `libsystemd0:amd64=229-4ubuntu21.29`
+- `libudev1:amd64=229-4ubuntu21.29`
+- `systemd=229-4ubuntu21.29`
+- `systemd-sysv=229-4ubuntu21.29`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
@@ -1456,9 +1456,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=229-4ubuntu21.29
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.29.dsc' systemd_229-4ubuntu21.29.dsc 4610 SHA256:9fc0d78c26b897f424d6288503f300b56e0d45fda36add9c93988798144a48f1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu21.29.debian.tar.xz' systemd_229-4ubuntu21.29.debian.tar.xz 315232 SHA256:750d655398af85447e077a557930d51be70075c93fdaf860622ddf571058e7f7
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
