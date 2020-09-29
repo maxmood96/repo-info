@@ -338,19 +338,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=10.3+deb10u5
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_10.3+deb10u5.dsc' base-files_10.3+deb10u5.dsc 1103 SHA256:7724ff9a9a3b2ce469cb04e761ab504b88fa2c74ba45d4d4d6b1e6cebdb11502
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_10.3+deb10u5.tar.xz' base-files_10.3+deb10u5.tar.xz 65376 SHA256:a86ea7be711a9a91ae781cbd9db1b0a931f76cdd36ea247aae9273f8f4d2a011
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/10.3+deb10u5/
 
-- https://sources.debian.net/src/base-files/10.3+deb10u5/ (for browsing the source)
-- https://sources.debian.net/src/base-files/10.3+deb10u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/10.3+deb10u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.46`
 
@@ -3511,21 +3505,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libx11=2:1.6.7-1
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.6.7-1.dsc' libx11_1.6.7-1.dsc 2619 SHA256:ca544ccaf4b4bf08b96ca6f3c096d3b189f437cfd5cba8edb72e75cf050f56c6
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.6.7.orig.tar.gz' libx11_1.6.7.orig.tar.gz 2972354 SHA256:f62ab88c2a87b55e1dc338726a55bb6ed8048084fe6a3294a7ae324ca45159d1
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.6.7.orig.tar.gz.asc' libx11_1.6.7.orig.tar.gz.asc 404 SHA256:01a06afbe0574a30721d98f1c80b668ebc46410a9e8b2eb81e69b4bd8667c386
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.6.7-1.diff.gz' libx11_1.6.7-1.diff.gz 49222 SHA256:8215096d47c997b9591daa837fcd7d3970b6a9524dca889d2a1316f9f1dc59ad
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libx11/2:1.6.7-1/
 
-- https://sources.debian.net/src/libx11/2:1.6.7-1/ (for browsing the source)
-- https://sources.debian.net/src/libx11/2:1.6.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libx11/2:1.6.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxau=1:1.0.8-1`
 
@@ -4647,20 +4633,13 @@ Licenses: (parsed from: `/usr/share/doc/liborocos-kdl-dev/copyright`, `/usr/shar
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris orocos-kdl=1.4.0-7+deb10u1
-'http://deb.debian.org/debian/pool/main/o/orocos-kdl/orocos-kdl_1.4.0-7+deb10u1.dsc' orocos-kdl_1.4.0-7+deb10u1.dsc 2325 SHA256:cd655ff8b0f0d38464ed79f54dfc62c42b52028e72672f97ad8e9afee8a26792
-'http://deb.debian.org/debian/pool/main/o/orocos-kdl/orocos-kdl_1.4.0.orig.tar.gz' orocos-kdl_1.4.0.orig.tar.gz 215050 SHA256:b69bddcf26a43260c4eda428aac6831cfc007bb2e78ac5e0847649dd7f88bbcd
-'http://deb.debian.org/debian/pool/main/o/orocos-kdl/orocos-kdl_1.4.0-7+deb10u1.debian.tar.xz' orocos-kdl_1.4.0-7+deb10u1.debian.tar.xz 6432 SHA256:0e654874ab022e423d33ce9dc47bd4165ead611c734c077c149c037adfcc1b34
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/orocos-kdl/1.4.0-7+deb10u1/
 
-- https://sources.debian.net/src/orocos-kdl/1.4.0-7+deb10u1/ (for browsing the source)
-- https://sources.debian.net/src/orocos-kdl/1.4.0-7+deb10u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/orocos-kdl/1.4.0-7+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.15-2`
 
