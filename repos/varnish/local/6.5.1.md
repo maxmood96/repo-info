@@ -1,16 +1,16 @@
-# `varnish:6.4`
+# `varnish:6.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6efc29b02f9ea5415d19b77f672bac432c52d3e5d324d89bfeb3ef36b707077d`
-- Created: `2020-09-10T20:46:37.454927356Z`
-- Virtual Size: ~ 201.21 Mb  
+- Image ID: `sha256:d495419413223e60e819ba0a134df4052381ea765a552d1ed0760db85685285a`
+- Created: `2020-09-29T01:57:17.838860961Z`
+- Virtual Size: ~ 201.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-varnish-entrypoint"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `VARNISH_VERSION=6.4.0-1~buster`
+  - `VARNISH_VERSION=6.5.1~buster-1`
   - `VARNISH_SIZE=100M`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1348,11 +1348,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.3.8+dfsg-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.3.8+dfsg-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.19.132-1`
+### `dpkg` source package: `linux=4.19.146-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.19.132-1`
+- `linux-libc-dev:amd64=4.19.146-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1367,17 +1367,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.19.132-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.19.132-1.dsc' linux_4.19.132-1.dsc 191615 SHA256:3431e9f27ad196e3cd3b0908b5ac5008ed2522118c4f51fd8f8a8c1240819e28
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.19.132.orig.tar.xz' linux_4.19.132.orig.tar.xz 107498852 SHA256:3e9e811d44d190dcd8af04e86ad4c00032a5b74cafece51cfd12581648e4e1db
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.19.132-1.debian.tar.xz' linux_4.19.132-1.debian.tar.xz 3308396 SHA256:c592597164270d5cfbf7efa12a04d8246ba26e2d9228bb8ae030ef88b147fe40
+$ apt-get source -qq --print-uris linux=4.19.146-1
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.19.146-1.dsc' linux_4.19.146-1.dsc 191615 SHA256:d073e1201130f87ae9fbbef9657ac0d196367ded2ff3bd25a109fe94f71c5e30
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.19.146.orig.tar.xz' linux_4.19.146.orig.tar.xz 107530016 SHA256:161f45802adbe953ed67cc2997e3aebc9dbd762a49f1ac11ac45d13a2e5176b0
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.19.146-1.debian.tar.xz' linux_4.19.146-1.debian.tar.xz 1433256 SHA256:f501206bbe2ed8d2ac4ffbbe6d8c552d0f08b02e8a9895a3f4a5c278bce80435
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/4.19.132-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.19.132-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.19.132-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/4.19.146-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.19.146-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.19.146-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.8.3-1`
 
@@ -1921,11 +1921,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/util-linux/2.33.1-0.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/util-linux/2.33.1-0.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `varnish=6.4.0-1~buster`
+### `dpkg` source package: `varnish=6.5.1~buster-1`
 
 Binary Packages:
 
-- `varnish=6.4.0-1~buster`
+- `varnish=6.5.1~buster-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
