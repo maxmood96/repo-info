@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:732c7236b8a34b53ac1bc7610aced1a1daf03ab1d03974f4762bb6fcf643c70a`
-- Created: `2020-09-11T03:07:19.042461541Z`
-- Virtual Size: ~ 309.50 Mb  
+- Image ID: `sha256:161e93bd0218c6d17196a34a5873ab93a6cec73af5f223b3c926c13ec7102027`
+- Created: `2020-10-02T01:35:35.319787698Z`
+- Virtual Size: ~ 309.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["influxd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `INFLUXDB_VERSION=1.8.2-c1.8.2`
+  - `INFLUXDB_VERSION=1.8.3-c1.8.3`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -864,11 +864,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/hostname/3.18/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/hostname/3.18/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `influxdb-data=1.8.2-c1.8.2-1`
+### `dpkg` source package: `influxdb-data=1.8.3-c1.8.3-1`
 
 Binary Packages:
 
-- `influxdb-data=1.8.2-c1.8.2-1`
+- `influxdb-data=1.8.3-c1.8.3-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
