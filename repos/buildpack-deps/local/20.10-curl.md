@@ -505,14 +505,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-10-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-10=10.2.0-9ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.2.0-9ubuntu2.dsc' gcc-10_10.2.0-9ubuntu2.dsc 30426 SHA256:6a0c22363c65d8c636bbbace10e2db5a7d5313fded22512cd2f153b97a819b5c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.2.0.orig.tar.gz' gcc-10_10.2.0.orig.tar.gz 94773960 SHA256:8c932c6527c2d53eebea682092591b701a79901d9f308697f2cf8d443578ac40
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.2.0-9ubuntu2.debian.tar.xz' gcc-10_10.2.0-9ubuntu2.debian.tar.xz 2124280 SHA256:85bed7a57f74ba397a33fd3330fb614bb1739cffb5f58e5ff9a0d4fd599dd89c
-```
 
 ### `dpkg` source package: `glibc=2.32-0ubuntu3`
 
@@ -620,15 +615,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.6.13-4ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-4ubuntu5.dsc' gnutls28_3.6.13-4ubuntu5.dsc 3586 SHA256:b836333eb35d213d8c6a3dcd238173b3520fa732342250a4f2182352c19e0462
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz' gnutls28_3.6.13.orig.tar.xz 5958956 SHA256:32041df447d9f4644570cf573c9f60358e865637d69b7e59d1159b7240b52f38
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz.asc' gnutls28_3.6.13.orig.tar.xz.asc 667 SHA256:79eb677b19a35de2f17d2ea87e863755cd53f0072b9435c8a4b57669360f57d0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-4ubuntu5.debian.tar.xz' gnutls28_3.6.13-4ubuntu5.debian.tar.xz 72368 SHA256:80a2621f4ffe17960522bdacbcc1221087fbe1cc32bc5596fa07c7d5f1529b35
-```
 
 ### `dpkg` source package: `grep=3.4-1`
 

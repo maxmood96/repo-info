@@ -2852,20 +2852,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 - `Unlicense,`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.48.8+dfsg-1
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.48.8+dfsg-1.dsc' librsvg_2.48.8+dfsg-1.dsc 3107 SHA256:979cdf2b6e55b7fba22f1ea5d3605d751cec518df765a9176defba90f78a52d0
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.48.8+dfsg.orig.tar.xz' librsvg_2.48.8+dfsg.orig.tar.xz 12651304 SHA256:47c8cbfb6b1663b8c03314cf54f6f96764760b2960ed9f230f9d3fde8313f736
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.48.8+dfsg-1.debian.tar.xz' librsvg_2.48.8+dfsg-1.debian.tar.xz 24308 SHA256:0e18b6ed168a938d4ae2b8c61c4bc97ace767de4bcf2cfd89eb9bb7e296ca38e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/librsvg/2.48.8+dfsg-1/
 
-- https://sources.debian.net/src/librsvg/2.48.8+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/librsvg/2.48.8+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/librsvg/2.48.8+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.4.3-1`
 
@@ -4315,20 +4308,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.46.1-1
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.46.1-1.dsc' pango1.0_1.46.1-1.dsc 3581 SHA256:b9163d4c1f00d6a241ea865d5973478f6ca7500d717dbb08c287059714746cf5
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.46.1.orig.tar.xz' pango1.0_1.46.1.orig.tar.xz 533108 SHA256:fe516b10711bbb6fd75011d66dd08fabfce18f7931aed7415136d53c4aadf1c5
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.46.1-1.debian.tar.xz' pango1.0_1.46.1-1.debian.tar.xz 33048 SHA256:f5c409d59f7352f8839e377ebafd846f4096bda6e7e1c4f2023d12b3e270ca4e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.46.1-1/
 
-- https://sources.debian.net/src/pango1.0/1.46.1-1/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.46.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.46.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.6-6`
 
@@ -4574,20 +4560,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-12=12.4-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-12/postgresql-12_12.4-1.dsc' postgresql-12_12.4-1.dsc 3627 SHA256:483e2c17b982240256bdd5812b3ed0669c5017e4be645423e0bbb409fb759d6f
-'http://deb.debian.org/debian/pool/main/p/postgresql-12/postgresql-12_12.4.orig.tar.bz2' postgresql-12_12.4.orig.tar.bz2 20669776 SHA256:bee93fbe2c32f59419cb162bcc0145c58da9a8644ee154a30b9a5ce47de606cc
-'http://deb.debian.org/debian/pool/main/p/postgresql-12/postgresql-12_12.4-1.debian.tar.xz' postgresql-12_12.4-1.debian.tar.xz 23736 SHA256:525e1a0bc8f14cf5a437f1c8775be501c6490f8c55a45d9b87f905cfd6d5c87b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-12/12.4-1/
 
-- https://sources.debian.net/src/postgresql-12/12.4-1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-12/12.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-12/12.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.16-5`
 

@@ -555,20 +555,13 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=8.30-3
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.30-3.dsc' coreutils_8.30-3.dsc 1861 SHA256:106031a57a2ab2ba46b61083035e2ccb438c85a2b3506a8198b67868dde1546d
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.30.orig.tar.xz' coreutils_8.30.orig.tar.xz 5359532 SHA256:e831b3a86091496cdba720411f9748de81507798f6130adeaef872d206e1b057
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.30-3.debian.tar.xz' coreutils_8.30-3.debian.tar.xz 32808 SHA256:9179d45fb51d07a8743c4d58464459330eb6d4b489d59641d70c3bd9f579b694
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/coreutils/8.30-3/
 
-- https://sources.debian.net/src/coreutils/8.30-3/ (for browsing the source)
-- https://sources.debian.net/src/coreutils/8.30-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/coreutils/8.30-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.72.0-1`
 
@@ -2290,20 +2283,13 @@ Licenses: (parsed from: `/usr/share/doc/libde265-0/copyright`)
 - `public-domain-1`
 - `public-domain-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libde265=1.0.4-1
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.4-1.dsc' libde265_1.0.4-1.dsc 2216 SHA256:7fbccf0f722a9d82477db9db5f9cc58745aeca40f31ec292fb6873b8d3c652bf
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.4.orig.tar.gz' libde265_1.0.4.orig.tar.gz 856952 SHA256:c3f033bd59777624859c8d04a5b7ce4210adbce4a500943d2e211c4d517d0116
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.4-1.debian.tar.xz' libde265_1.0.4-1.debian.tar.xz 8224 SHA256:b52d670c562423b682f100ad3f5ead2b0da5a1d27fbd30df94042a639943b590
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libde265/1.0.4-1/
 
-- https://sources.debian.net/src/libde265/1.0.4-1/ (for browsing the source)
-- https://sources.debian.net/src/libde265/1.0.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libde265/1.0.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libedit=3.1-20191231-1`
 
@@ -4312,20 +4298,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.46.1-1
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.46.1-1.dsc' pango1.0_1.46.1-1.dsc 3581 SHA256:b9163d4c1f00d6a241ea865d5973478f6ca7500d717dbb08c287059714746cf5
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.46.1.orig.tar.xz' pango1.0_1.46.1.orig.tar.xz 533108 SHA256:fe516b10711bbb6fd75011d66dd08fabfce18f7931aed7415136d53c4aadf1c5
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.46.1-1.debian.tar.xz' pango1.0_1.46.1-1.debian.tar.xz 33048 SHA256:f5c409d59f7352f8839e377ebafd846f4096bda6e7e1c4f2023d12b3e270ca4e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.46.1-1/
 
-- https://sources.debian.net/src/pango1.0/1.46.1-1/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.46.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.46.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.6-6`
 
