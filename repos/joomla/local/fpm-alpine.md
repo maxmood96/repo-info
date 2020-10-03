@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1c523f1a739a33f33300019c7f447d9b58e35c806aac9e88cc9c637419cbe584`
-- Created: `2020-09-03T23:37:15.351189189Z`
-- Virtual Size: ~ 130.32 Mb  
+- Image ID: `sha256:55c8f7fbc0ee30804ab48ee6e15276d6e83568bb41cbb27bdc8a95bec5aab72c`
+- Created: `2020-10-02T04:05:31.251506584Z`
+- Virtual Size: ~ 130.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.22`
-  - `PHP_URL=https://www.php.net/distributions/php-7.3.22.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.22.tar.xz.asc`
-  - `PHP_SHA256=0e66606d3bdab5c2ae3f778136bfe8788e574913a3d8138695e54d98562f1fb5`
+  - `PHP_VERSION=7.3.23`
+  - `PHP_URL=https://www.php.net/distributions/php-7.3.23.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.23.tar.xz.asc`
+  - `PHP_SHA256=2bdd36176f318f451fb3942bf1e935aabb3c2786cac41a9080f084ad6390e034`
   - `PHP_MD5=`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=3.9.21`
@@ -289,16 +289,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.69.1-r0 description:
+libcurl-7.69.1-r1 description:
 The multiprotocol file transfer library
 
-libcurl-7.69.1-r0 webpage:
+libcurl-7.69.1-r1 webpage:
 https://curl.haxx.se/
 
-libcurl-7.69.1-r0 installed size:
+libcurl-7.69.1-r1 installed size:
 458752
 
-libcurl-7.69.1-r0 license:
+libcurl-7.69.1-r1 license:
 MIT
 
 ```
@@ -425,16 +425,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-12.3-r2 description:
+libpq-12.4-r0 description:
 PostgreSQL libraries
 
-libpq-12.3-r2 webpage:
+libpq-12.4-r0 webpage:
 https://www.postgresql.org/
 
-libpq-12.3-r2 installed size:
+libpq-12.4-r0 installed size:
 327680
 
-libpq-12.3-r2 license:
+libpq-12.4-r0 license:
 PostgreSQL
 
 ```
@@ -527,16 +527,16 @@ ISC
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.9.10-r4 description:
+libxml2-2.9.10-r5 description:
 XML parsing library, version 2
 
-libxml2-2.9.10-r4 webpage:
+libxml2-2.9.10-r5 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.9.10-r4 installed size:
+libxml2-2.9.10-r5 installed size:
 1220608
 
-libxml2-2.9.10-r4 license:
+libxml2-2.9.10-r5 license:
 MIT
 
 ```
