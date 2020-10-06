@@ -3947,19 +3947,13 @@ Licenses: (parsed from: `/usr/share/doc/netbase/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris netbase=6.1
-'http://deb.debian.org/debian/pool/main/n/netbase/netbase_6.1.dsc' netbase_6.1.dsc 1480 SHA256:d3d24cf00001259d3311c0509b4e23ac150cffea27b546e3a204864f52824556
-'http://deb.debian.org/debian/pool/main/n/netbase/netbase_6.1.tar.xz' netbase_6.1.tar.xz 31984 SHA256:084d743bd84d4d9380bac4c71c51e57406dce44f5a69289bb823c903e9b035d8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/netbase/6.1/
 
-- https://sources.debian.net/src/netbase/6.1/ (for browsing the source)
-- https://sources.debian.net/src/netbase/6.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/netbase/6.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nettle=3.6-2`
 
@@ -4636,20 +4630,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-stdlib-extensions=3.8.5-1
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.8.5-1.dsc' python3-stdlib-extensions_3.8.5-1.dsc 2524 SHA256:7d755665c29938c4f1f39ef133701865abd47118f078a9153d136453277a785d
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.8.5.orig.tar.xz' python3-stdlib-extensions_3.8.5.orig.tar.xz 1074164 SHA256:b8cae96587edc5ec8f7dc2d97ace0e1569c3137e206b9db6e720eef186c3deb9
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.8.5-1.debian.tar.xz' python3-stdlib-extensions_3.8.5-1.debian.tar.xz 17896 SHA256:c9374aa01e08a4a41cd979300f0f12fc5348672a2425cc11ca3c0bead3c011b0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-stdlib-extensions/3.8.5-1/
 
-- https://sources.debian.net/src/python3-stdlib-extensions/3.8.5-1/ (for browsing the source)
-- https://sources.debian.net/src/python3-stdlib-extensions/3.8.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-stdlib-extensions/3.8.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3.8=3.8.5-2`
 

@@ -540,14 +540,13 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.27+dfsg-2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27+dfsg-2.dsc' cyrus-sasl2_2.1.27+dfsg-2.dsc 3393 SHA512:2c4831ffbe6e5b868362bbb3cc4ec2f3cf6f233be71ee9e3d3e483c02b8fa589477c5b54daa645176136ba7fdc3d650c807c83d87103d4ac8191816b5a8eb079
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27+dfsg.orig.tar.xz' cyrus-sasl2_2.1.27+dfsg.orig.tar.xz 2058596 SHA512:a795e4362f85a50e223c5456d03526832eb29fdbc9e17a767045f8542638e3f987d382b79b072bcd694bd1a12cbb818cff6c326063ca2bbe05453c1acf7fb8ad
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27+dfsg-2.debian.tar.xz' cyrus-sasl2_2.1.27+dfsg-2.debian.tar.xz 99956 SHA512:570ed8db2b9d9ddcba60f2b5f2481b69c36fed4c77ef4ad0a9f241022d5951e275c63aac083e6ce7ba6c76b70f37635f5a595439dcda6e31168732eb30feb32a
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.27+dfsg-2/
+
 
 ### `dpkg` source package: `dash=0.5.10.2-7`
 
@@ -641,13 +640,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=4.11.1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_4.11.1.dsc' debianutils_4.11.1.dsc 1619 SHA512:c4eb2433f4938a337042fcbf0ebf3f7fab729bd6c7dee3a9320afcd77b0b3e33b7946172e45a148d88a57a73b871d312ab8e6c8b3ab2f55b445d917025e0e9f2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_4.11.1.tar.xz' debianutils_4.11.1.tar.xz 157536 SHA512:8283e42f190a9c59c54817a745e219fcc9a1f8995204d62aff84f755ace041e433fe707d3b4373060207a70c9c01d958234281061f77e6e6fb6c560c79711772
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/debianutils/4.11.1/
+
 
 ### `dpkg` source package: `diffutils=1:3.7-3build1`
 
@@ -660,14 +659,9 @@ Licenses: (parsed from: `/usr/share/doc/diffutils/copyright`)
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris diffutils=1:3.7-3build1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.7-3build1.dsc' diffutils_3.7-3build1.dsc 1901 SHA512:bd0ac4014f8fd92e63fb8b72c7bba474f7fc6af139e4b6d3cfefba450f1d520723c9338c0aadcbbb7cfbd3eb0524fc7aaf6c9efddab97ca1bfad4c2e15cf8c70
-'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.7.orig.tar.xz' diffutils_3.7.orig.tar.xz 1448828 SHA512:7b12cf8aea1b9844773748f72272d9c6a38adae9c3c3a8c62048f91fb56c60b76035fa5f51665dceaf2cfbf1d1f4a3efdcc24bf47a5a16ff4350543314b12c9c
-'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.7-3build1.debian.tar.xz' diffutils_3.7-3build1.debian.tar.xz 11252 SHA512:0639acbaa296ca8526cc77e0bb821b011e2b8b8fb0e8ba5643037ebcc0ed7d72fa6e7e9d1b753b6f88864a5a6792cf537d5530d7eb894f76eb361bff190c5b80
-```
 
 ### `dpkg` source package: `djvulibre=3.5.27.1-15`
 
@@ -859,15 +853,9 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `GFDL-1.3`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris findutils=4.7.0-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.7.0-1ubuntu1.dsc' findutils_4.7.0-1ubuntu1.dsc 2446 SHA512:18b4aa5a7442aa661da540faec9c0f2fa15d8ea2d33c836f80bbba0239d6d71d5b7180cca5d2f8390dad71d41ed64c61ded593624eaa6e720b81a25a916fb084
-'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.7.0.orig.tar.xz' findutils_4.7.0.orig.tar.xz 1895048 SHA512:650a24507f8f4ebff83ad28dd27daa4785b4038dcaadc4fe00823b976e848527074cce3f9ec34065b7f037436d2aa6e9ec099bc05d7472c29864ac2c69de7f2e
-'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.7.0.orig.tar.xz.asc' findutils_4.7.0.orig.tar.xz.asc 488 SHA512:a4868a6f36d7224f05a19096a9ef2e1eedfdc77beb5d4098b0c94634cf9a757d47e2ccdf3451f48c45667a1fa3f30e209a022bf287cad6b3109b37cccea0cb72
-'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.7.0-1ubuntu1.debian.tar.xz' findutils_4.7.0-1ubuntu1.debian.tar.xz 27700 SHA512:b2c85ad667b8bc2841e917df0ddd4867f109fd6282d889c165aaa47863586a0cd1ccf472b8d33ae498791a617d383704c12b12bcbc620699bbbce8263de4fa5e
-```
 
 ### `dpkg` source package: `fontconfig=2.13.1-2ubuntu3`
 
@@ -2338,14 +2326,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 - `Unlicense,`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.49.5+dfsg-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.49.5+dfsg-1.dsc' librsvg_2.49.5+dfsg-1.dsc 2963 SHA512:669cac393cdfb3fd1b2075b4cdd30ab1cef444d8c3587397e429c4e949e33d342c03e6476521526e1ffa02e955d87d728bc89854e12dff68c6bccc74edf3bae1
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.49.5+dfsg.orig.tar.xz' librsvg_2.49.5+dfsg.orig.tar.xz 13578472 SHA512:bdc5566257d27f9c775f337cdadfc6345d0b53f44c9d8578a61c6b86aded81dcd60730a6ab86be8d1830bcd9572cad9daa304e6726b40d2b98d0da2ab478f07d
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.49.5+dfsg-1.debian.tar.xz' librsvg_2.49.5+dfsg-1.debian.tar.xz 24280 SHA512:aedaee888196d759f89373fe5b02d6e07acc58ece346b2ea45c71570c951e72d17f2ab61ee0bcf1063c048c8ed73d9615f451d29ff710d7ba904a51a343f0f7f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/librsvg/2.49.5+dfsg-1/
+
 
 ### `dpkg` source package: `libseccomp=2.4.3-1ubuntu4`
 
@@ -3492,14 +3479,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.46.1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.46.1-1.dsc' pango1.0_1.46.1-1.dsc 3581 SHA512:299327a4ef130bd938c9d2f8d2cdf1014a70f4f335d4f6e5fa6dab9ee68c98732e28d348933bb48fc8bce76db7230584fee621f7951a1f96efb2da535020eaba
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.46.1.orig.tar.xz' pango1.0_1.46.1.orig.tar.xz 533108 SHA512:a08d5f4f24076aa7c3f92497a7afb70f4fcda92a0affb2455dc11ea88890c786534fd7755074bc570912e51e63f7922cef67726458612366b024b270cdfd041e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.46.1-1.debian.tar.xz' pango1.0_1.46.1-1.debian.tar.xz 33048 SHA512:25758152e34e4ea15af6572dc52b8eebfb407d66c348ec7fc54cc513f8d6099cc4d7d05c11f1f47a686c44b8b252da37d5ba0b5cc01fd58b359dc4bcf554c3bb
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pango1.0/1.46.1-1/
+
 
 ### `dpkg` source package: `patch=2.7.6-6`
 
@@ -3969,14 +3955,9 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sed=4.7-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.7-1build1.dsc' sed_4.7-1build1.dsc 1958 SHA512:11d9784f99b4ff082bff9180a4e28896fe73f4880909129cbf585f8cec82f556044f5a333dbfc96961a78d14fb4bb84be7fc302e775595ebfdee130fda157f58
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.7.orig.tar.xz' sed_4.7.orig.tar.xz 1298316 SHA512:e0be5db4cdf8226b34aaa9071bc5ae0eafde1c52227cee3512eea7fe2520d6c5cebf15266aa5c4adffbb51bf125c140a15644e28d57759893c12823ea9bbf4fb
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.7-1build1.debian.tar.xz' sed_4.7-1build1.debian.tar.xz 59956 SHA512:943fdcb4a61666cf87630852320754bda73a78cf82155792f4ff4c8ee842463ea38aa276a2ff7a9d295786e91d330ca87746a02448d737f7093a0d56d1f105fe
-```
 
 ### `dpkg` source package: `sensible-utils=0.0.13`
 
