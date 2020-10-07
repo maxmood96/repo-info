@@ -2,6 +2,8 @@
 
 # Tags of `open-liberty`
 
+-	[`open-liberty:20.0.0.10-full-java8-openj9`](#open-liberty200010-full-java8-openj9)
+-	[`open-liberty:20.0.0.10-kernel-java8-openj9`](#open-liberty200010-kernel-java8-openj9)
 -	[`open-liberty:20.0.0.6-full-java8-openj9`](#open-liberty20006-full-java8-openj9)
 -	[`open-liberty:20.0.0.6-kernel-java8-openj9`](#open-liberty20006-kernel-java8-openj9)
 -	[`open-liberty:20.0.0.9-full-java8-openj9`](#open-liberty20009-full-java8-openj9)
@@ -11,6 +13,14 @@
 -	[`open-liberty:kernel`](#open-libertykernel)
 -	[`open-liberty:kernel-java8-openj9`](#open-libertykernel-java8-openj9)
 -	[`open-liberty:latest`](#open-libertylatest)
+
+## `open-liberty:20.0.0.10-full-java8-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:20.0.0.10-kernel-java8-openj9`
+
+**does not exist** (yet?)
 
 ## `open-liberty:20.0.0.6-full-java8-openj9`
 
