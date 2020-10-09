@@ -1,10 +1,10 @@
-# `python:3.8.6-buster`
+# `python:3.9.0-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bbf31371d67d738e565b64cd0c76092f71c9b738a096eb1e44f1a8659650d6c4`
-- Created: `2020-09-24T21:46:18.14185677Z`
-- Virtual Size: ~ 882.02 Mb  
+- Image ID: `sha256:dfc47c6cee134242a070c0780a2a0a4edac3c687ef057077fed391b7bfeab2d1`
+- Created: `2020-10-06T21:54:09.635562709Z`
+- Virtual Size: ~ 885.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568`
-  - `PYTHON_VERSION=3.8.6`
+  - `PYTHON_VERSION=3.9.0`
   - `PYTHON_PIP_VERSION=20.2.3`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/fa7dc83944936bf09a0e4cb5d5ec852c0d256599/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=6e0bb0a2c2533361d7f297ed547237caf1b7507f197835974c0dd7eba998c53c`
