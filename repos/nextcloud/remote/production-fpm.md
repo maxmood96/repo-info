@@ -1,7 +1,7 @@
 ## `nextcloud:production-fpm`
 
 ```console
-$ docker pull nextcloud@sha256:043f6c8d40b8ec63aafa9d237e64ab048803fc6e217be204156b8931f7ea5a83
+$ docker pull nextcloud@sha256:90acc0ec93112e0055ed3a0a23bc7da0f56b0eed8aacf3d5499cae702d25dd19
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -948,14 +948,14 @@ CMD ["php-fpm"]
 ### `nextcloud:production-fpm` - linux; ppc64le
 
 ```console
-$ docker pull nextcloud@sha256:fd67ef0c0a25e70ff312b4af5ac91f01925d1298deef56cf768bfe7128b313f2
+$ docker pull nextcloud@sha256:4fbc17e6e509ffea9752c106ac11c15f2905702698af461364474b8d102a416e
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.1 MB (280142848 bytes)**  
+-	Total Size: **277.9 MB (277903636 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84892dcb63f3b69b1fc761447cffb6a84606b6a542dacca2b522279415b7f560`
+-	Image ID: `sha256:ac2473329f199b419a1e8ea68e38f97f7370b4fec371f25401aabd92006a9182`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1014,23 +1014,23 @@ EXPOSE 9000
 CMD ["php-fpm"]
 # Fri, 02 Oct 2020 00:22:21 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         busybox-static     ;     rm -rf /var/lib/apt/lists/*;         mkdir -p /var/spool/cron/crontabs;     echo '*/5 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data
-# Fri, 02 Oct 2020 00:34:21 GMT
-RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libevent-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng-dev         libpq-dev         libxml2-dev         libmagickwand-dev         libzip-dev         libwebp-dev         libgmp-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install -j "$(nproc)"         bcmath         exif         gd         intl         ldap         opcache         pcntl         pdo_mysql         pdo_pgsql         zip         gmp     ;         pecl install APCu-5.1.18;     pecl install memcached-3.1.5;     pecl install redis-5.3.1;     pecl install imagick-3.4.4;         docker-php-ext-enable         apcu         memcached         redis         imagick     ;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
-# Fri, 02 Oct 2020 00:34:38 GMT
+# Thu, 08 Oct 2020 23:21:18 GMT
+RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libevent-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng-dev         libpq-dev         libxml2-dev         libmagickwand-dev         libzip-dev         libwebp-dev         libgmp-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install -j "$(nproc)"         bcmath         exif         gd         intl         ldap         opcache         pcntl         pdo_mysql         pdo_pgsql         zip         gmp     ;         pecl install APCu-5.1.19;     pecl install memcached-3.1.5;     pecl install redis-5.3.1;     pecl install imagick-3.4.4;         docker-php-ext-enable         apcu         memcached         redis         imagick     ;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
+# Thu, 08 Oct 2020 23:21:36 GMT
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         echo 'memory_limit=512M' > /usr/local/etc/php/conf.d/memory-limit.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
-# Fri, 02 Oct 2020 00:34:44 GMT
+# Thu, 08 Oct 2020 23:21:50 GMT
 VOLUME [/var/www/html]
-# Fri, 02 Oct 2020 00:34:51 GMT
-ENV NEXTCLOUD_VERSION=19.0.3
-# Fri, 02 Oct 2020 00:36:59 GMT
+# Thu, 08 Oct 2020 23:22:00 GMT
+ENV NEXTCLOUD_VERSION=19.0.4
+# Thu, 08 Oct 2020 23:24:34 GMT
 RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
-# Fri, 02 Oct 2020 00:37:04 GMT
+# Thu, 08 Oct 2020 23:24:43 GMT
 COPY multi:7396b0dc331ca301e37b57c4af539d58e09521ec7c723e0739e6eca71f90ffb3 in / 
-# Fri, 02 Oct 2020 00:37:09 GMT
+# Thu, 08 Oct 2020 23:24:46 GMT
 COPY multi:c481008845253a7b26785f1b012d068624b67ddaaefbb62c1931fdf56fd06e2a in /usr/src/nextcloud/config/ 
-# Fri, 02 Oct 2020 00:37:16 GMT
+# Thu, 08 Oct 2020 23:24:50 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 02 Oct 2020 00:37:21 GMT
+# Thu, 08 Oct 2020 23:24:55 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1079,25 +1079,25 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 02 Oct 2020 01:15:17 GMT  
 		Size: 1.8 MB (1803140 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ede20c7ec8933694f062a72aeca5dd92b522b18232db06580fd46c87a75d798`  
-		Last Modified: Fri, 02 Oct 2020 01:15:28 GMT  
-		Size: 16.7 MB (16740609 bytes)  
+	-	`sha256:44382589e0a8af15341f1c308169a0c60f7527eac4b23e65834a2a61b59a59ae`  
+		Last Modified: Fri, 09 Oct 2020 00:08:15 GMT  
+		Size: 16.8 MB (16754772 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c5cc636b717e7afad2a0b57cc107e685378cbd78b784403eebc48cce48d7245`  
-		Last Modified: Fri, 02 Oct 2020 01:15:09 GMT  
-		Size: 536.0 B  
+	-	`sha256:b70154f6450ae169036c9cb41fbef2d291810cb57911890fefdad66e148b94c2`  
+		Last Modified: Fri, 09 Oct 2020 00:07:29 GMT  
+		Size: 539.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b781c7d3bf21c31e42e1cbf1ff7e4a9bc161758431437d233ba3ae624529d966`  
-		Last Modified: Fri, 02 Oct 2020 01:16:47 GMT  
-		Size: 108.0 MB (107952675 bytes)  
+	-	`sha256:4b64c45a8fdc8fbe7f23c86c37a3511e03c0d03cc56f73f04d5aaed8f66195c6`  
+		Last Modified: Fri, 09 Oct 2020 00:11:46 GMT  
+		Size: 105.7 MB (105699297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:feb6bc9711367ba783953f34686799277114e67442895f11332216c5fe639e10`  
-		Last Modified: Fri, 02 Oct 2020 01:15:10 GMT  
-		Size: 2.5 KB (2524 bytes)  
+	-	`sha256:fb662f35f2a205ad199c89ef2a7a4793ba89fc747689406b649900f749e91c8f`  
+		Last Modified: Fri, 09 Oct 2020 00:07:26 GMT  
+		Size: 2.5 KB (2525 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f27f95d79ca4ee533095d5246af96a6f2b753e44847bccf543fcb0c8d0d8d1e`  
-		Last Modified: Fri, 02 Oct 2020 01:15:09 GMT  
-		Size: 1.9 KB (1897 bytes)  
+	-	`sha256:964c8afa9b4111420531263d0902dd19b65eb3ed53b3c8a0ae7a8ca38ec1721e`  
+		Last Modified: Fri, 09 Oct 2020 00:07:29 GMT  
+		Size: 1.9 KB (1896 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nextcloud:production-fpm` - linux; s390x
