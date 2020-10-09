@@ -1,23 +1,23 @@
-# `sonarqube:8.4.2-developer`
+# `sonarqube:8.5.0-developer`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ea20c4b59b176b4259b1e4d9469411cf13ee603dcc54671af5e11eb05a4d05fd`
-- Created: `2020-08-28T20:04:35.134815603Z`
-- Virtual Size: ~ 528.41 Mb  
+- Image ID: `sha256:d77b1f76ec726bcb4d175759d5cc40456edb142c5fe864f526e822f68e99ceb9`
+- Created: `2020-10-07T21:31:58.255639473Z`
+- Virtual Size: ~ 730.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["bin/run.sh"]`
 - Command: `["bin/sonar.sh"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=jdk-11.0.6+10`
+  - `JAVA_VERSION=jdk-11.0.8+10`
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_HOME=/opt/java/openjdk`
   - `SONARQUBE_HOME=/opt/sonarqube`
-  - `SONAR_VERSION=8.4.2.36762`
+  - `SONAR_VERSION=8.5.0.37579`
   - `SQ_DATA_DIR=/opt/sonarqube/data`
   - `SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions`
   - `SQ_LOGS_DIR=/opt/sonarqube/logs`
@@ -198,16 +198,16 @@ FTL GPL-2.0-or-later
 ### `apk` package: `glibc`
 
 ```console
-glibc-2.31-r0 description:
+glibc-2.32-r0 description:
 GNU C Library compatibility layer
 
-glibc-2.31-r0 webpage:
+glibc-2.32-r0 webpage:
 https://github.com/sgerrand/alpine-pkg-glibc
 
-glibc-2.31-r0 installed size:
-9261056
+glibc-2.32-r0 installed size:
+9404416
 
-glibc-2.31-r0 license:
+glibc-2.32-r0 license:
 LGPL
 
 ```
@@ -215,16 +215,16 @@ LGPL
 ### `apk` package: `glibc-bin`
 
 ```console
-glibc-bin-2.31-r0 description:
+glibc-bin-2.32-r0 description:
 GNU C Library compatibility layer
 
-glibc-bin-2.31-r0 webpage:
+glibc-bin-2.32-r0 webpage:
 https://github.com/sgerrand/alpine-pkg-glibc
 
-glibc-bin-2.31-r0 installed size:
-2539520
+glibc-bin-2.32-r0 installed size:
+2617344
 
-glibc-bin-2.31-r0 license:
+glibc-bin-2.32-r0 license:
 LGPL
 
 ```
@@ -300,16 +300,16 @@ MIT
 ### `apk` package: `libgcc`
 
 ```console
-libgcc-9.2.0-r4 description:
+libgcc-9.3.0-r0 description:
 GNU C compiler runtime libraries
 
-libgcc-9.2.0-r4 webpage:
+libgcc-9.3.0-r0 webpage:
 http://gcc.gnu.org
 
-libgcc-9.2.0-r4 installed size:
+libgcc-9.3.0-r0 installed size:
 90112
 
-libgcc-9.2.0-r4 license:
+libgcc-9.3.0-r0 license:
 GPL LGPL
 
 ```
