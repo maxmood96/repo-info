@@ -1,10 +1,10 @@
-# `nextcloud:17.0.9-fpm-alpine`
+# `nextcloud:17.0.10-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:52d50382e4ff0bd65899ed36056f141a830277149bca488769c6f56ceb82bc79`
-- Created: `2020-10-02T01:01:25.484110599Z`
-- Virtual Size: ~ 357.39 Mb  
+- Image ID: `sha256:95da206abdd565682d3639895f4dff234054a5706bf5f1c8acd50f2536c27451`
+- Created: `2020-10-08T19:30:14.867598285Z`
+- Virtual Size: ~ 357.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.23.tar.xz.asc`
   - `PHP_SHA256=2bdd36176f318f451fb3942bf1e935aabb3c2786cac41a9080f084ad6390e034`
   - `PHP_MD5=`
-  - `NEXTCLOUD_VERSION=17.0.9`
+  - `NEXTCLOUD_VERSION=17.0.10`
 
 ## `apk` (`.apk`-based packages)
 
@@ -98,16 +98,16 @@ Apache-2.0 CC0-1.0
 ### `apk` package: `brotli-libs`
 
 ```console
-brotli-libs-1.0.7-r5 description:
+brotli-libs-1.0.9-r1 description:
 Generic lossless compressor (libraries)
 
-brotli-libs-1.0.7-r5 webpage:
+brotli-libs-1.0.9-r1 webpage:
 https://github.com/google/brotli
 
-brotli-libs-1.0.7-r5 installed size:
-712704
+brotli-libs-1.0.9-r1 installed size:
+733184
 
-brotli-libs-1.0.7-r5 license:
+brotli-libs-1.0.9-r1 license:
 MIT
 
 ```
