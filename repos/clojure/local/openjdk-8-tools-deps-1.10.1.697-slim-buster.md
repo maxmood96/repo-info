@@ -1,19 +1,19 @@
-# `clojure:openjdk-11-tools-deps-slim-buster`
+# `clojure:openjdk-8-tools-deps-slim-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d5a402105536c5fa398ad065a98f6bb5eff4a37f8a964886a3c255de4b84a190`
-- Created: `2020-09-11T05:04:40.210784805Z`
-- Virtual Size: ~ 504.82 Mb  
+- Image ID: `sha256:aeca61cbb1b22022360c9dce5c4fb0baee14036d13c4c6fc838b00314506e910`
+- Created: `2020-10-08T17:19:52.547308908Z`
+- Virtual Size: ~ 388.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["sh","-c","sleep 1 && exec clj"]`
 - Environment:
-  - `PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `JAVA_HOME=/usr/local/openjdk-11`
-  - `JAVA_VERSION=11.0.8`
-  - `CLOJURE_VERSION=1.10.1.561`
+  - `JAVA_HOME=/usr/local/openjdk-8`
+  - `JAVA_VERSION=8u265`
+  - `CLOJURE_VERSION=1.10.1.697`
 
 ## `dpkg` (`.deb`-based packages)
 

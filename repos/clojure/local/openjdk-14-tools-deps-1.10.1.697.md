@@ -1,19 +1,19 @@
-# `clojure:openjdk-11-tools-deps-slim-buster`
+# `clojure:openjdk-14-tools-deps`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d5a402105536c5fa398ad065a98f6bb5eff4a37f8a964886a3c255de4b84a190`
-- Created: `2020-09-11T05:04:40.210784805Z`
-- Virtual Size: ~ 504.82 Mb  
+- Image ID: `sha256:2882f27f29f3a410ab8d72c1a9fc61c9d68b5fbee5e8dfd76bda551b508d39b3`
+- Created: `2020-10-08T17:21:46.325345378Z`
+- Virtual Size: ~ 517.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["sh","-c","sleep 1 && exec clj"]`
 - Environment:
-  - `PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/usr/local/openjdk-14/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `JAVA_HOME=/usr/local/openjdk-11`
-  - `JAVA_VERSION=11.0.8`
-  - `CLOJURE_VERSION=1.10.1.561`
+  - `JAVA_HOME=/usr/local/openjdk-14`
+  - `JAVA_VERSION=14.0.2`
+  - `CLOJURE_VERSION=1.10.1.697`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1241,31 +1241,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.3.8+dfsg-3/ (for browsing the source)
 - https://sources.debian.net/src/libzstd/1.3.8+dfsg-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.3.8+dfsg-3/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `lsb=10.2019051400`
-
-Binary Packages:
-
-- `lsb-base=10.2019051400`
-
-Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`)
-
-- `BSD-3-clause`
-- `GPL-2`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris lsb=10.2019051400
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_10.2019051400.dsc' lsb_10.2019051400.dsc 1695 SHA256:79be4b76a50edb2e2f0fb0f2301d74aa36be7e4ed1aedc2cb92e0ca93a97e194
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_10.2019051400.tar.xz' lsb_10.2019051400.tar.xz 42204 SHA256:e134c5780b70e3aac9d175e70bee4eb187e01bc02bb0d4e8a9b19dc52aabd557
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/lsb/10.2019051400/ (for browsing the source)
-- https://sources.debian.net/src/lsb/10.2019051400/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lsb/10.2019051400/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.8.3-1`
 
