@@ -11,6 +11,12 @@
 -	[`amazoncorretto:11-alpine`](#amazoncorretto11-alpine)
 -	[`amazoncorretto:11-alpine-full`](#amazoncorretto11-alpine-full)
 -	[`amazoncorretto:11-alpine-jdk`](#amazoncorretto11-alpine-jdk)
+-	[`amazoncorretto:15`](#amazoncorretto15)
+-	[`amazoncorretto:15-al2-full`](#amazoncorretto15-al2-full)
+-	[`amazoncorretto:15-al2-jdk`](#amazoncorretto15-al2-jdk)
+-	[`amazoncorretto:15-alpine`](#amazoncorretto15-alpine)
+-	[`amazoncorretto:15-alpine-full`](#amazoncorretto15-alpine-full)
+-	[`amazoncorretto:15-alpine-jdk`](#amazoncorretto15-alpine-jdk)
 -	[`amazoncorretto:8`](#amazoncorretto8)
 -	[`amazoncorretto:8-al2-full`](#amazoncorretto8-al2-full)
 -	[`amazoncorretto:8-al2-jdk`](#amazoncorretto8-al2-jdk)
@@ -672,6 +678,30 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 		Last Modified: Tue, 06 Oct 2020 21:21:10 GMT  
 		Size: 191.6 MB (191621239 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `amazoncorretto:15`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:15-al2-full`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:15-al2-jdk`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:15-alpine`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:15-alpine-full`
+
+**does not exist** (yet?)
+
+## `amazoncorretto:15-alpine-jdk`
+
+**does not exist** (yet?)
 
 ## `amazoncorretto:8`
 
