@@ -1,7 +1,7 @@
 ## `ros:melodic-ros-core-stretch`
 
 ```console
-$ docker pull ros@sha256:6d73ffc37a163f08ab19b1193821e1a22fd3b2b5691a2b8c99b0d2aef63aec9e
+$ docker pull ros@sha256:68a31bcc5ecfe3b4cef4d647e15a5bbcc50c461603ecaff91f5bc8be9f386b2e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,67 +12,67 @@ $ docker pull ros@sha256:6d73ffc37a163f08ab19b1193821e1a22fd3b2b5691a2b8c99b0d2a
 ### `ros:melodic-ros-core-stretch` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:1d50fd705f74bfa15cafc1463c1cab0a12cd9b34929ab203794a2a71389566d7
+$ docker pull ros@sha256:c570d046a1dd1bf3e3cfe2b906563ac9fe1e9c2a777863c8892e11240055c9f6
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **322.2 MB (322160460 bytes)**  
+-	Total Size: **322.2 MB (322163270 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84add7dd9acdf9a46acec10c6798fcaa7dbec933acdf897ee55ba21c62d8e6cb`
+-	Image ID: `sha256:5000ee6521b3472cd805ec331823c25c79d62f21cc3bc2bd519585d236de25e1`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Thu, 10 Sep 2020 00:30:04 GMT
-ADD file:d8d46fb9e0436b304449f4155e3b1a86d8fdfd809364286726e5b33746db53c0 in / 
-# Thu, 10 Sep 2020 00:30:05 GMT
+# Tue, 13 Oct 2020 01:44:13 GMT
+ADD file:a8742c34bf12f231279dd5086b8ec1310224c740a95170b916217f22a68eb9a7 in / 
+# Tue, 13 Oct 2020 01:44:13 GMT
 CMD ["bash"]
-# Thu, 10 Sep 2020 19:22:48 GMT
+# Tue, 13 Oct 2020 19:17:42 GMT
 RUN apt-get update && apt-get install -q -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 19:22:52 GMT
+# Tue, 13 Oct 2020 19:17:45 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
-# Thu, 10 Sep 2020 19:22:52 GMT
+# Tue, 13 Oct 2020 19:17:46 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu stretch main" > /etc/apt/sources.list.d/ros1-latest.list
-# Thu, 10 Sep 2020 19:22:53 GMT
+# Tue, 13 Oct 2020 19:17:46 GMT
 ENV LANG=C.UTF-8
-# Thu, 10 Sep 2020 19:22:53 GMT
+# Tue, 13 Oct 2020 19:17:46 GMT
 ENV LC_ALL=C.UTF-8
-# Thu, 10 Sep 2020 19:22:53 GMT
+# Tue, 13 Oct 2020 19:17:46 GMT
 ENV ROS_DISTRO=melodic
-# Thu, 10 Sep 2020 19:24:32 GMT
+# Tue, 13 Oct 2020 19:19:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-melodic-ros-core=1.4.1-0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 19:24:33 GMT
+# Tue, 13 Oct 2020 19:19:18 GMT
 COPY file:cbbaa0f5d6a276512315f5b4d7347e94a120cefbda9058ebb0d678847ff4837f in / 
-# Thu, 10 Sep 2020 19:24:34 GMT
+# Tue, 13 Oct 2020 19:19:19 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 10 Sep 2020 19:24:34 GMT
+# Tue, 13 Oct 2020 19:19:19 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:4f250268ed6a0b777b9a3d9e0659754a8c97f28420f30cb78c184c3eead07d14`  
-		Last Modified: Thu, 10 Sep 2020 00:37:25 GMT  
-		Size: 45.4 MB (45366726 bytes)  
+	-	`sha256:0400ac8f7460260a663e0e97c24d7dfd8a2c947736f0351752b45c53e26d6e02`  
+		Last Modified: Tue, 13 Oct 2020 01:50:49 GMT  
+		Size: 45.4 MB (45366778 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cbba185f65d54db323ab946a5e9c37dfade8c963fd7c77e40ebf7103a1404461`  
-		Last Modified: Thu, 10 Sep 2020 19:35:48 GMT  
-		Size: 6.9 MB (6866928 bytes)  
+	-	`sha256:a5e64d6a7fc5320867400c03832cf54957cbbf98b99714a200a9090f67fa0af6`  
+		Last Modified: Tue, 13 Oct 2020 19:32:22 GMT  
+		Size: 6.9 MB (6866999 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8e93f0c8bead1f4a636ace143d7195fe34ee2830234cb5a4c761b965b089ada`  
-		Last Modified: Thu, 10 Sep 2020 19:35:47 GMT  
+	-	`sha256:868ec983be87cbebfea0a9dea300e1ae958cdc96a8fd550ed6ba63ceeed46116`  
+		Last Modified: Tue, 13 Oct 2020 19:32:19 GMT  
 		Size: 1.4 KB (1400 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62f07b60a04aae8b7b5012f737d7740e689bd88eea45f68e6eca966b8f046a79`  
-		Last Modified: Thu, 10 Sep 2020 19:35:46 GMT  
-		Size: 223.0 B  
+	-	`sha256:7303450037ec364ecd0bff523fa0140a41fbc939b44bcb48abe60b9fe2d1fdc4`  
+		Last Modified: Tue, 13 Oct 2020 19:32:19 GMT  
+		Size: 220.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08ecfead1d8fe71517621403f3b5838209a45ae3d6072bbc92c5b20fc9de4073`  
-		Last Modified: Thu, 10 Sep 2020 19:36:53 GMT  
-		Size: 269.9 MB (269924988 bytes)  
+	-	`sha256:04058250f482c63226262abef7876d3f158f937c4535066c3bacf84b047b5f9c`  
+		Last Modified: Tue, 13 Oct 2020 19:33:29 GMT  
+		Size: 269.9 MB (269927678 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58dca37c3796b019ae079bc6432f1760cc1e58c52d84dca9a8bd117813430be8`  
-		Last Modified: Thu, 10 Sep 2020 19:35:46 GMT  
+	-	`sha256:876e825fea60d421a44ae42f1fb98d96cf6acdcf20af70678fd093ce7bc7211a`  
+		Last Modified: Tue, 13 Oct 2020 19:32:19 GMT  
 		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
