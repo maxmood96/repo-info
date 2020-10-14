@@ -1,10 +1,10 @@
-# `tomcat:9.0.38-jdk15-openjdk-oraclelinux7`
+# `tomcat:9.0.39-jdk15-openjdk-oraclelinux7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7ff7e0c8021bb4b6d66a7660dadc74d5e9dbb0abc23a374804dcd88f246ca3aa`
-- Created: `2020-10-08T17:48:34.619792886Z`
-- Virtual Size: ~ 549.54 Mb  
+- Image ID: `sha256:e46fb553a2fb2656361ee4ddad0dd786fddc78ef2793ee02d81230e1eab8efd7`
+- Created: `2020-10-14T07:31:44.39054906Z`
+- Virtual Size: ~ 550.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -18,8 +18,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.38`
-  - `TOMCAT_SHA512=37117164c9ab985b4f3032deac9617cee01463f8822586a62a9c498d2720fac23a8207fcf7a76cea2fcb3c6f828ff12b7b31422316a7d92e707c3bd8d687e303`
+  - `TOMCAT_VERSION=9.0.39`
+  - `TOMCAT_SHA512=307ca646bac267e529fb0862278f7133fe80813f0af64a44aed949f4c7a9a98aeb9bd7f08b087645b40c6fefdd3a7fe519e4858a3dbf0a19c38c53704f92b575`
 - Labels:
   - `org.opencontainers.image.authors=Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>`
   - `org.opencontainers.image.description=Oracle Linux is an open-source       operating system available under the GNU General Public License (GPLv2) and       is suitable for both general purpose or Oracle workloads.`
@@ -784,26 +784,26 @@ $ yumdownloader --quiet --source --urls ncurses-libs-5.9-14.20130511.el7_4
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/ncurses-5.9-14.20130511.el7_4.src.rpm
 ```
 
-### `rpm` package: `nspr-4.21.0-1.el7.x86_64`
+### `rpm` package: `nspr-4.25.0-2.el7_9.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nspr-4.21.0-1.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nspr-4.21.0-1.el7.src.rpm
+$ yumdownloader --quiet --source --urls nspr-4.25.0-2.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nspr-4.25.0-2.el7_9.src.rpm
 ```
 
-### `rpm` package: `nss-3.44.0-7.el7_7.x86_64`
+### `rpm` package: `nss-3.53.1-3.el7_9.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nss-3.44.0-7.el7_7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-3.44.0-7.el7_7.src.rpm
+$ yumdownloader --quiet --source --urls nss-3.53.1-3.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-3.53.1-3.el7_9.src.rpm
 ```
 
 ### `rpm` package: `nss-pem-1.0.3-7.el7.x86_64`
@@ -817,59 +817,59 @@ $ yumdownloader --quiet --source --urls nss-pem-1.0.3-7.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-pem-1.0.3-7.el7.src.rpm
 ```
 
-### `rpm` package: `nss-softokn-3.44.0-8.0.1.el7_7.x86_64`
+### `rpm` package: `nss-softokn-3.53.1-6.0.1.el7_9.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nss-softokn-3.44.0-8.0.1.el7_7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-softokn-3.44.0-8.0.1.el7_7.src.rpm
+$ yumdownloader --quiet --source --urls nss-softokn-3.53.1-6.0.1.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-softokn-3.53.1-6.0.1.el7_9.src.rpm
 ```
 
-### `rpm` package: `nss-softokn-freebl-3.44.0-8.0.1.el7_7.x86_64`
+### `rpm` package: `nss-softokn-freebl-3.53.1-6.0.1.el7_9.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nss-softokn-freebl-3.44.0-8.0.1.el7_7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-softokn-3.44.0-8.0.1.el7_7.src.rpm
+$ yumdownloader --quiet --source --urls nss-softokn-freebl-3.53.1-6.0.1.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-softokn-3.53.1-6.0.1.el7_9.src.rpm
 ```
 
-### `rpm` package: `nss-sysinit-3.44.0-7.el7_7.x86_64`
+### `rpm` package: `nss-sysinit-3.53.1-3.el7_9.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nss-sysinit-3.44.0-7.el7_7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-3.44.0-7.el7_7.src.rpm
+$ yumdownloader --quiet --source --urls nss-sysinit-3.53.1-3.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-3.53.1-3.el7_9.src.rpm
 ```
 
-### `rpm` package: `nss-tools-3.44.0-7.el7_7.x86_64`
+### `rpm` package: `nss-tools-3.53.1-3.el7_9.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nss-tools-3.44.0-7.el7_7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-3.44.0-7.el7_7.src.rpm
+$ yumdownloader --quiet --source --urls nss-tools-3.53.1-3.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-3.53.1-3.el7_9.src.rpm
 ```
 
-### `rpm` package: `nss-util-3.44.0-4.el7_7.x86_64`
+### `rpm` package: `nss-util-3.53.1-1.el7_9.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nss-util-3.44.0-4.el7_7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-util-3.44.0-4.el7_7.src.rpm
+$ yumdownloader --quiet --source --urls nss-util-3.53.1-1.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-util-3.53.1-1.el7_9.src.rpm
 ```
 
 ### `rpm` package: `openldap-2.4.44-22.el7.x86_64`

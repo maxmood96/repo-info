@@ -1,10 +1,10 @@
-# `tomcat:8.5.58-jdk15-openjdk-oraclelinux7`
+# `tomcat:8.5.59-jdk15-openjdk-oraclelinux7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b90c2bf3d0a0e21d23b042f3dd2bdbbf54f49a2b3e507100572991c3ec67ecb6`
-- Created: `2020-10-08T17:52:04.150488661Z`
-- Virtual Size: ~ 548.45 Mb  
+- Image ID: `sha256:77335ad42755faba1d6d597359a618a1ceb80ccd7359dd611c894df5de20fb45`
+- Created: `2020-10-14T07:46:01.663285267Z`
+- Virtual Size: ~ 548.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -18,8 +18,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.5.58`
-  - `TOMCAT_SHA512=55d8fa698f7ac118ab33f1be644477fa8424f0fe6eefa80c85acd4e3cbce5f1704ce3cf897dfcd42c5c95cd2ff3b559e774fb5b7ac7279dd6b803a9a2dd8cc8f`
+  - `TOMCAT_VERSION=8.5.59`
+  - `TOMCAT_SHA512=3106fa39f1859ba31c87d245eaf8efe9c1f2f4837dc4f259c245d2c9b55d3593e97a9925e7d012d397987279965b8e24d940cfdda062d8ac9b64e41396120bd9`
 - Labels:
   - `org.opencontainers.image.authors=Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>`
   - `org.opencontainers.image.description=Oracle Linux is an open-source       operating system available under the GNU General Public License (GPLv2) and       is suitable for both general purpose or Oracle workloads.`
@@ -784,26 +784,26 @@ $ yumdownloader --quiet --source --urls ncurses-libs-5.9-14.20130511.el7_4
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/ncurses-5.9-14.20130511.el7_4.src.rpm
 ```
 
-### `rpm` package: `nspr-4.21.0-1.el7.x86_64`
+### `rpm` package: `nspr-4.25.0-2.el7_9.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nspr-4.21.0-1.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nspr-4.21.0-1.el7.src.rpm
+$ yumdownloader --quiet --source --urls nspr-4.25.0-2.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nspr-4.25.0-2.el7_9.src.rpm
 ```
 
-### `rpm` package: `nss-3.44.0-7.el7_7.x86_64`
+### `rpm` package: `nss-3.53.1-3.el7_9.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nss-3.44.0-7.el7_7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-3.44.0-7.el7_7.src.rpm
+$ yumdownloader --quiet --source --urls nss-3.53.1-3.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-3.53.1-3.el7_9.src.rpm
 ```
 
 ### `rpm` package: `nss-pem-1.0.3-7.el7.x86_64`
@@ -817,59 +817,59 @@ $ yumdownloader --quiet --source --urls nss-pem-1.0.3-7.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-pem-1.0.3-7.el7.src.rpm
 ```
 
-### `rpm` package: `nss-softokn-3.44.0-8.0.1.el7_7.x86_64`
+### `rpm` package: `nss-softokn-3.53.1-6.0.1.el7_9.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nss-softokn-3.44.0-8.0.1.el7_7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-softokn-3.44.0-8.0.1.el7_7.src.rpm
+$ yumdownloader --quiet --source --urls nss-softokn-3.53.1-6.0.1.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-softokn-3.53.1-6.0.1.el7_9.src.rpm
 ```
 
-### `rpm` package: `nss-softokn-freebl-3.44.0-8.0.1.el7_7.x86_64`
+### `rpm` package: `nss-softokn-freebl-3.53.1-6.0.1.el7_9.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nss-softokn-freebl-3.44.0-8.0.1.el7_7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-softokn-3.44.0-8.0.1.el7_7.src.rpm
+$ yumdownloader --quiet --source --urls nss-softokn-freebl-3.53.1-6.0.1.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-softokn-3.53.1-6.0.1.el7_9.src.rpm
 ```
 
-### `rpm` package: `nss-sysinit-3.44.0-7.el7_7.x86_64`
+### `rpm` package: `nss-sysinit-3.53.1-3.el7_9.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nss-sysinit-3.44.0-7.el7_7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-3.44.0-7.el7_7.src.rpm
+$ yumdownloader --quiet --source --urls nss-sysinit-3.53.1-3.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-3.53.1-3.el7_9.src.rpm
 ```
 
-### `rpm` package: `nss-tools-3.44.0-7.el7_7.x86_64`
+### `rpm` package: `nss-tools-3.53.1-3.el7_9.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nss-tools-3.44.0-7.el7_7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-3.44.0-7.el7_7.src.rpm
+$ yumdownloader --quiet --source --urls nss-tools-3.53.1-3.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-3.53.1-3.el7_9.src.rpm
 ```
 
-### `rpm` package: `nss-util-3.44.0-4.el7_7.x86_64`
+### `rpm` package: `nss-util-3.53.1-1.el7_9.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nss-util-3.44.0-4.el7_7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-util-3.44.0-4.el7_7.src.rpm
+$ yumdownloader --quiet --source --urls nss-util-3.53.1-1.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/nss-util-3.53.1-1.el7_9.src.rpm
 ```
 
 ### `rpm` package: `openldap-2.4.44-22.el7.x86_64`
