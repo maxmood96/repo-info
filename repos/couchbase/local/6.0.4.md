@@ -1284,14 +1284,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.1.8-3.2ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.2ubuntu2.1.dsc' pam_1.1.8-3.2ubuntu2.1.dsc 2249 SHA512:3c9fe2428de363115d2d5907d1889d36c7c5dfc2380e8ed02d0307c23cdb61604ea5d989dc42cdfc46036e0de53733addc56f29aa3b5c633dd94019526368136
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8.orig.tar.gz' pam_1.1.8.orig.tar.gz 1892765 SHA512:dca21547f951a53cdb6bbcbedde694f345ec02ff5931f2f81da26980471206515f891035cacded3e10d6631f7dc2fb8679fdaf737cd50adaf18768a1c56482a2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.2ubuntu2.1.diff.gz' pam_1.1.8-3.2ubuntu2.1.diff.gz 198992 SHA512:15e306e0a7c668f6ba2d60b51ce9c15914df8a9c6be83a176b54c564d16e48be4c63c77dd310a0d952bdd746d37ba339456b03b48d00622cde43e3fad729f0b1
-```
 
 ### `dpkg` source package: `pciutils=1:3.3.1-1.1ubuntu1.3`
 
@@ -1476,14 +1471,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.12-1ubuntu0~16.04.12
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.12.dsc' python2.7_2.7.12-1ubuntu0~16.04.12.dsc 3391 SHA512:1c6852b98e3293f1d9fa0423dc87a8c452e2ece216dc954285e7179fce026a6c10950273973ac3ca0b18b8caac4ec0fee3ce9b25ba695fbb8804daefe16a03e1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12.orig.tar.gz' python2.7_2.7.12.orig.tar.gz 16935960 SHA512:e3c04b1c66ff659c08e09a5adc34fd856ca0c786e5820c05471747416fef38555f1711978ac5e81ff4fdf7c16311796212f638e5e2d43e2404b2a42fc139edb0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.12.diff.gz' python2.7_2.7.12-1ubuntu0~16.04.12.diff.gz 309624 SHA512:071770229ccaf7564b71330621e4883e933a6ca312780b0026fe8f3633c57efaffb2910545583ba9bc69fd23ae3f85883af19c23dc0217b4454a9ad1aa4eb883
-```
 
 ### `dpkg` source package: `readline6=6.3-8ubuntu2`
 
