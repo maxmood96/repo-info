@@ -7405,14 +7405,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.6/copyright`, `/usr/share/doc
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.6=3.6.9-1~18.04ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.9-1~18.04ubuntu1.1.dsc' python3.6_3.6.9-1~18.04ubuntu1.1.dsc 3470 SHA512:89ee1514cd19dbf8cf4b9c9c1152c3f49df2b3bf923f0be18ba8c2752375928dbdff338086cf6a219c5cb721529a146d40a3350e85c684e32984dd05a4e15054
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.9.orig.tar.xz' python3.6_3.6.9.orig.tar.xz 17212164 SHA512:05de9c6f44d96a52bfce10ede4312de892573edaf8bece65926d19973a3a800d65eed7a857af945f69efcfb25efa3788e7a54016b03d80b611eb51c3ea074819
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.9-1~18.04ubuntu1.1.debian.tar.xz' python3.6_3.6.9-1~18.04ubuntu1.1.debian.tar.xz 218936 SHA512:efbd25da72e89611a90bf0b6e2524c40a93cea90000d624f1e1eee8e4a2d516bab6693be359b33c71b686ac3e102f69ca5e78aeb32f00f66b96dbf44a432b272
-```
 
 ### `dpkg` source package: `raptor2=2.0.14-1build1`
 
@@ -8087,14 +8082,9 @@ Licenses: (parsed from: `/usr/share/doc/vim/copyright`, `/usr/share/doc/vim-comm
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:8.0.1453-1ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.0.1453-1ubuntu1.3.dsc' vim_8.0.1453-1ubuntu1.3.dsc 2950 SHA512:e8ad7b869f2ebde8c006e74a9f65bd264ba3ff6bca0db2103d8c7e1fb741b019e8d1923ffc5b2d22ce183e1ac2694a6a09e4374473942b0504436f8ac4c63228
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.0.1453.orig.tar.gz' vim_8.0.1453.orig.tar.gz 13434095 SHA512:84b470624e65d56103a6f3e6def61e294c05a85a9380515c4adf4605e1ae4c66497e5ded2ee7fd8a9813c13c57c61f6136a418676fad7099f78b8f15cad7d46d
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.0.1453-1ubuntu1.3.debian.tar.xz' vim_8.0.1453-1ubuntu1.3.debian.tar.xz 193740 SHA512:e3963cd8208691671a7eb6aea5dd9aca58cb41af1eb70f8a4053ebcbf32f1c844ccd3ba71ad3cba7e882607d31a6d9bc0556b22bf8914f1ef3f42da472a42bff
-```
 
 ### `dpkg` source package: `wavpack=5.1.0-2ubuntu1.4`
 
