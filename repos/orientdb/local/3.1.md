@@ -1,10 +1,10 @@
-# `orientdb:3.1.3`
+# `orientdb:3.1.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cb74ce09ebd46418e4e990a7b27a8d69a48ce99f007efbe3cf0f8bd7191608ea`
-- Created: `2020-10-14T05:57:31.945347967Z`
-- Virtual Size: ~ 348.83 Mb  
+- Image ID: `sha256:2b1ebafca6d3ffa3be15675bdfc718b7a3f5c085cec5f2df658b3a845d3ecbb7`
+- Created: `2020-10-21T18:43:48.911471886Z`
+- Virtual Size: ~ 348.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["server.sh"]`
@@ -13,10 +13,10 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/local/openjdk-8`
   - `JAVA_VERSION=8u265`
-  - `ORIENTDB_VERSION=3.1.3`
-  - `ORIENTDB_DOWNLOAD_MD5=0c329aa354d75a4af313783cc025991e`
-  - `ORIENTDB_DOWNLOAD_SHA1=9bc2e154eec351eeeb81ae8a4022b40187bd9a41`
-  - `ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.1.3/orientdb-community-3.1.3.tar.gz`
+  - `ORIENTDB_VERSION=3.1.4`
+  - `ORIENTDB_DOWNLOAD_MD5=702dc7c1863a8e84837111123353544c`
+  - `ORIENTDB_DOWNLOAD_SHA1=bafc6fba83fd741bdedc48747519e37c5d0098ba`
+  - `ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.1.4/orientdb-community-3.1.4.tar.gz`
 
 ## `dpkg` (`.deb`-based packages)
 
