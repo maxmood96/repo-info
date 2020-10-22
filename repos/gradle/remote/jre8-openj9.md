@@ -1,7 +1,7 @@
 ## `gradle:jre8-openj9`
 
 ```console
-$ docker pull gradle@sha256:71b1ab1f31cd3c9f8cc76075119bf013476c2d71383f6ee74e3ec4357f6556af
+$ docker pull gradle@sha256:b1da714138e9ffc61ca60f6abc1759bc9e7d94756abf20182dfd63e06c5375cf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -112,14 +112,14 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ### `gradle:jre8-openj9` - linux; ppc64le
 
 ```console
-$ docker pull gradle@sha256:2cd3ae827e30d5c659feac3abd50bbd67c830a544431af8d4ec576cef27599c5
+$ docker pull gradle@sha256:cc568e5174576e4ea831e6cb304959edc68dd8f5385ccb62c67d89214992e5cb
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.8 MB (252788746 bytes)**  
+-	Total Size: **256.4 MB (256401312 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:227551b74f838c9e088e9f89f51563ef6303eb6e14b7e7ae078e1dc621aba970`
+-	Image ID: `sha256:3c52ec1d010f10bac6ffa6101d7204a2b9c53a034367d54724e57c563d1e6b60`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -137,31 +137,35 @@ CMD ["/bin/bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Sat, 26 Sep 2020 03:39:11 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Sat, 26 Sep 2020 03:45:58 GMT
-ENV JAVA_VERSION=jdk8u262-b10_openj9-0.21.0
-# Sat, 26 Sep 2020 03:47:11 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='722517d9565bd9602580609114eb0de9b40b01050d52ff7bae24c438d363e186';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jre_ppc64le_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='c14aeedf4e989a6b31e00d6e18b8377957b07b000cac316aee9d973ef6d65b6f';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jre_s390x_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='aef8750b492ff6371318cf5138e38827d8895815b2ac079dcfcb02007a45c7f6';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10_openj9-0.21.0/OpenJDK8U-jre_x64_linux_openj9_8u262b10_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Sat, 26 Sep 2020 03:47:17 GMT
+# Tue, 20 Oct 2020 16:29:24 GMT
+ENV JAVA_VERSION=jdk8u265-b01_openj9-0.21.0
+# Thu, 22 Oct 2020 09:52:42 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='b1c91e757195b87d51027ea97fece00ac1adb9837b055e5f039dd45511fb3c0a';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01_openj9-0.21.0/OpenJDK8U-jre_ppc64le_linux_openj9_8u265b01_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='ec573cb2361b5fee3944387329d7859889d73c6c8a7d5f7ecf0d95503efda726';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01_openj9-0.21.0/OpenJDK8U-jre_s390x_linux_openj9_8u265b01_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='0da0aad21f02b4f08f717647def8beafcf0116c36b195705416f46a1ab97f4de';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01_openj9-0.21.0/OpenJDK8U-jre_x64_linux_openj9_8u265b01_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Thu, 22 Oct 2020 09:52:59 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 26 Sep 2020 03:47:21 GMT
-ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+UseContainerSupport -XX:+IdleTuningCompactOnIdle -XX:+IdleTuningGcOnIdle
-# Wed, 14 Oct 2020 19:39:35 GMT
+# Thu, 22 Oct 2020 09:53:20 GMT
+ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle
+# Thu, 22 Oct 2020 09:55:15 GMT
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     SCC_GEN_RUNS_COUNT=3;     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     for i in $(seq 0 $SCC_GEN_RUNS_COUNT);     do         "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;         sleep 5;         "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh;         sleep 5;     done;         FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     for i in $(seq 0 $SCC_GEN_RUNS_COUNT);     do         "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;         sleep 5;         "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh;         sleep 5;     done;         FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
+# Thu, 22 Oct 2020 09:55:35 GMT
+ENV OPENJ9_JAVA_OPTIONS=-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
+# Thu, 22 Oct 2020 14:28:44 GMT
 CMD ["gradle"]
-# Wed, 14 Oct 2020 19:39:39 GMT
+# Thu, 22 Oct 2020 14:28:52 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Wed, 14 Oct 2020 19:39:56 GMT
+# Thu, 22 Oct 2020 14:29:06 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Wed, 14 Oct 2020 19:40:07 GMT
+# Thu, 22 Oct 2020 14:29:18 GMT
 VOLUME [/home/gradle/.gradle]
-# Wed, 14 Oct 2020 19:40:17 GMT
+# Thu, 22 Oct 2020 14:29:38 GMT
 WORKDIR /home/gradle
-# Thu, 22 Oct 2020 07:36:39 GMT
+# Thu, 22 Oct 2020 14:37:00 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends gnupg     && key='E1DD270288B4E6030699E45FA1715D88E1DF1F24'     && export GNUPGHOME="$(mktemp -d)"     && gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"     && gpg --batch --armor --export "$key" > /etc/apt/trusted.gpg.d/git-ppa.gpg.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && echo 'deb http://ppa.launchpad.net/git-core/ppa/ubuntu bionic main' > /etc/apt/sources.list.d/git-core-ppa.list     && apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Thu, 22 Oct 2020 07:37:09 GMT
+# Thu, 22 Oct 2020 14:37:10 GMT
 ENV GRADLE_VERSION=6.7
-# Thu, 22 Oct 2020 07:37:41 GMT
+# Thu, 22 Oct 2020 14:37:15 GMT
 ARG GRADLE_DOWNLOAD_SHA256=8ad57759019a9233dc7dc4d1a530cefe109dc122000d57f7e623f8cf4ba9dfc4
-# Thu, 22 Oct 2020 07:39:07 GMT
+# Thu, 22 Oct 2020 14:37:57 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=8ad57759019a9233dc7dc4d1a530cefe109dc122000d57f7e623f8cf4ba9dfc4
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -183,21 +187,25 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Sat, 26 Sep 2020 03:54:38 GMT  
 		Size: 14.5 MB (14518670 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5bec8b9141e66e8c99f22ba845621aa9c6fe6edbf3f68df393e2333228bb0e2e`  
-		Last Modified: Sat, 26 Sep 2020 04:02:25 GMT  
-		Size: 49.2 MB (49150034 bytes)  
+	-	`sha256:51c58f82069d19d78d47b51277ba524d8c3b5e45e415610ee3b33b21989c735f`  
+		Last Modified: Thu, 22 Oct 2020 10:37:31 GMT  
+		Size: 49.1 MB (49131476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ed85bb3cd0ccccbc2ac65a986f1441f76dc5a31cf4fbe689b58e3b03eaa408a`  
-		Last Modified: Thu, 22 Oct 2020 08:43:40 GMT  
-		Size: 4.5 KB (4522 bytes)  
+	-	`sha256:3fa1ad64087432e186305c2499c3ac50f37322f2e134fbd71300f2fdb490982c`  
+		Last Modified: Thu, 22 Oct 2020 10:37:04 GMT  
+		Size: 3.6 MB (3631093 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35f8ae4cfddee2f56e2e4e42631280ac5816a93452db51048116d47ce25a3751`  
-		Last Modified: Thu, 22 Oct 2020 08:45:13 GMT  
-		Size: 55.9 MB (55890317 bytes)  
+	-	`sha256:ba2348d0fd2fd87aa0d4d5642ff033d9b2ba56257ec33b8cff5e033579fe8aa4`  
+		Last Modified: Thu, 22 Oct 2020 15:01:27 GMT  
+		Size: 4.5 KB (4531 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c3c41b728e4eeaa89c70e632393a80de0d433d5b50dc67602e710dc93d0fae3`  
-		Last Modified: Thu, 22 Oct 2020 08:44:28 GMT  
-		Size: 102.8 MB (102815670 bytes)  
+	-	`sha256:0dd4c2f47101faa174bac7da190b0c2a02e336619e6f49e29c9757b05ce91091`  
+		Last Modified: Thu, 22 Oct 2020 15:01:44 GMT  
+		Size: 55.9 MB (55890417 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:335d04e333081657e1d6b54d104528bcc8f737797474a086dc8277f4ee0a59e1`  
+		Last Modified: Thu, 22 Oct 2020 15:01:41 GMT  
+		Size: 102.8 MB (102815592 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:jre8-openj9` - linux; s390x
