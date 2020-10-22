@@ -1,7 +1,7 @@
 ## `postgres:12-alpine`
 
 ```console
-$ docker pull postgres@sha256:448bf5ab4a83299ab98d76b76d2c80a753566c2e8353385e4655b2cb9424a7da
+$ docker pull postgres@sha256:5b5a29b898c6f11eb69e1d2c13d8aea74d178543b690a2628965d3c554c52ba3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,357 +17,357 @@ $ docker pull postgres@sha256:448bf5ab4a83299ab98d76b76d2c80a753566c2e8353385e46
 ### `postgres:12-alpine` - linux; amd64
 
 ```console
-$ docker pull postgres@sha256:6c7ba13813fd7ae48ec9f70f9e9e52ea449d4364e76a9b06185ca7358c906254
+$ docker pull postgres@sha256:4c493832e4865189e3cab86281a1706a074ea6796b525a7f191b3f48546c25a8
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **61.9 MB (61868764 bytes)**  
+-	Total Size: **61.4 MB (61358683 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47aa97c696784c3154304916b162441017747b1d3b6f8f5c80d1eb253b8c9ce4`
+-	Image ID: `sha256:44c9a6a10db626f333eca6009ea2e11ac23495b1e3bc3029aecac768a0722820`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Fri, 29 May 2020 21:19:46 GMT
-ADD file:c92c248239f8c7b9b3c067650954815f391b7bcb09023f984972c082ace2a8d0 in / 
-# Fri, 29 May 2020 21:19:46 GMT
+# Thu, 22 Oct 2020 02:19:24 GMT
+ADD file:f17f65714f703db9012f00e5ec98d0b2541ff6147c2633f7ab9ba659d0c507f4 in / 
+# Thu, 22 Oct 2020 02:19:24 GMT
 CMD ["/bin/sh"]
-# Thu, 11 Jun 2020 22:46:48 GMT
+# Thu, 22 Oct 2020 07:55:14 GMT
 RUN set -eux; 	addgroup -g 70 -S postgres; 	adduser -u 70 -S -D -G postgres -H -h /var/lib/postgresql -s /bin/sh postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Thu, 11 Jun 2020 22:46:48 GMT
+# Thu, 22 Oct 2020 07:55:14 GMT
 ENV LANG=en_US.utf8
-# Thu, 11 Jun 2020 22:46:49 GMT
+# Thu, 22 Oct 2020 07:55:15 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Thu, 11 Jun 2020 22:56:01 GMT
+# Thu, 22 Oct 2020 08:01:06 GMT
 ENV PG_MAJOR=12
-# Fri, 14 Aug 2020 17:27:15 GMT
+# Thu, 22 Oct 2020 08:01:06 GMT
 ENV PG_VERSION=12.4
-# Fri, 14 Aug 2020 17:27:15 GMT
+# Thu, 22 Oct 2020 08:01:07 GMT
 ENV PG_SHA256=bee93fbe2c32f59419cb162bcc0145c58da9a8644ee154a30b9a5ce47de606cc
-# Tue, 29 Sep 2020 01:40:15 GMT
+# Thu, 22 Oct 2020 08:06:31 GMT
 RUN set -eux; 		wget -O postgresql.tar.bz2 "https://ftp.postgresql.org/pub/source/v$PG_VERSION/postgresql-$PG_VERSION.tar.bz2"; 	echo "$PG_SHA256 *postgresql.tar.bz2" | sha256sum -c -; 	mkdir -p /usr/src/postgresql; 	tar 		--extract 		--file postgresql.tar.bz2 		--directory /usr/src/postgresql 		--strip-components 1 	; 	rm postgresql.tar.bz2; 		apk add --no-cache --virtual .build-deps 		bison 		coreutils 		dpkg-dev dpkg 		flex 		gcc 		libc-dev 		libedit-dev 		libxml2-dev 		libxslt-dev 		linux-headers 		llvm10-dev clang g++ 		make 		openssl-dev 		perl-utils 		perl-ipc-run 		util-linux-dev 		zlib-dev 		icu-dev 	; 		cd /usr/src/postgresql; 	awk '$1 == "#define" && $2 == "DEFAULT_PGSOCKET_DIR" && $3 == "\"/tmp\"" { $3 = "\"/var/run/postgresql\""; print; next } { print }' src/include/pg_config_manual.h > src/include/pg_config_manual.h.new; 	grep '/var/run/postgresql' src/include/pg_config_manual.h.new; 	mv src/include/pg_config_manual.h.new src/include/pg_config_manual.h; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	wget -O config/config.guess 'https://git.savannah.gnu.org/cgit/config.git/plain/config.guess?id=7d3d27baf8107b630586c962c057e22149653deb'; 	wget -O config/config.sub 'https://git.savannah.gnu.org/cgit/config.git/plain/config.sub?id=7d3d27baf8107b630586c962c057e22149653deb'; 	./configure 		--build="$gnuArch" 		--enable-integer-datetimes 		--enable-thread-safety 		--enable-tap-tests 		--disable-rpath 		--with-uuid=e2fs 		--with-gnu-ld 		--with-pgport=5432 		--with-system-tzdata=/usr/share/zoneinfo 		--prefix=/usr/local 		--with-includes=/usr/local/include 		--with-libraries=/usr/local/lib 				--with-openssl 		--with-libxml 		--with-libxslt 		--with-icu 		--with-llvm 	; 	make -j "$(nproc)" world; 	make install-world; 	make -C contrib install; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .postgresql-rundeps 		$runDeps 		bash 		su-exec 		tzdata 	; 	apk del --no-network .build-deps; 	cd /; 	rm -rf 		/usr/src/postgresql 		/usr/local/share/doc 		/usr/local/share/man 	; 		postgres --version
-# Tue, 29 Sep 2020 01:40:16 GMT
+# Thu, 22 Oct 2020 08:06:32 GMT
 RUN sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/local/share/postgresql/postgresql.conf.sample
-# Tue, 29 Sep 2020 01:40:17 GMT
+# Thu, 22 Oct 2020 08:06:32 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 29 Sep 2020 01:40:17 GMT
+# Thu, 22 Oct 2020 08:06:33 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 29 Sep 2020 01:40:18 GMT
+# Thu, 22 Oct 2020 08:06:33 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 29 Sep 2020 01:40:18 GMT
+# Thu, 22 Oct 2020 08:06:33 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 29 Sep 2020 01:40:18 GMT
+# Thu, 22 Oct 2020 08:06:34 GMT
 COPY file:8f542efd076b9b67ef64928f3c0185ed50bfcbbc3572436a7222e879810d747f in /usr/local/bin/ 
-# Tue, 29 Sep 2020 01:40:18 GMT
+# Thu, 22 Oct 2020 08:06:34 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 29 Sep 2020 01:40:19 GMT
+# Thu, 22 Oct 2020 08:06:34 GMT
 STOPSIGNAL SIGINT
-# Tue, 29 Sep 2020 01:40:19 GMT
+# Thu, 22 Oct 2020 08:06:34 GMT
 EXPOSE 5432
-# Tue, 29 Sep 2020 01:40:19 GMT
+# Thu, 22 Oct 2020 08:06:34 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:df20fa9351a15782c64e6dddb2d4a6f50bf6d3688060a34c4014b0d9a752eb4c`  
-		Last Modified: Fri, 29 May 2020 21:20:06 GMT  
-		Size: 2.8 MB (2797541 bytes)  
+	-	`sha256:188c0c94c7c576fff0792aca7ec73d67a2f7f4cb3a6e53a84559337260b36964`  
+		Last Modified: Thu, 22 Oct 2020 02:19:57 GMT  
+		Size: 2.8 MB (2796860 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:600cd4e17445b526dc093ca716d204a866349e5c7228251e31178e81371c47ff`  
-		Last Modified: Thu, 11 Jun 2020 23:28:47 GMT  
-		Size: 1.2 KB (1248 bytes)  
+	-	`sha256:56f1d1b70e7fa650fd6229086120f763219adce9e33e8b20bdfbf8452ab69847`  
+		Last Modified: Thu, 22 Oct 2020 08:21:53 GMT  
+		Size: 1.2 KB (1250 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04c8eedc9a7657acd81498f6619dffcb88d9a150879f9ec0cc358834aa84aaf7`  
-		Last Modified: Thu, 11 Jun 2020 23:28:47 GMT  
+	-	`sha256:9b4f01476d2b86761cdb0414c4a583b89af3b5d0b67022cfc0d378743307f7e3`  
+		Last Modified: Thu, 22 Oct 2020 08:21:53 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1426bb92bdb2d3e360138c5917e4932cb067f0bcf78b2b9b115c39ac3cf7745`  
-		Last Modified: Tue, 29 Sep 2020 01:55:51 GMT  
-		Size: 59.1 MB (59057098 bytes)  
+	-	`sha256:bfd0646b3208bb308c9f48cc278f01a0c7ef55a4eb3d7c1500dae51f34827a57`  
+		Last Modified: Thu, 22 Oct 2020 08:22:16 GMT  
+		Size: 58.5 MB (58547696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a50b40f87c33841d2e5c48a9a8c969e279b4b84469142e71b02b4c72f7911c77`  
-		Last Modified: Tue, 29 Sep 2020 01:55:42 GMT  
-		Size: 8.2 KB (8205 bytes)  
+	-	`sha256:b3c638d1908b65ead9144d51423f0bd6afb8defef5e8bb2a17609789a80daadc`  
+		Last Modified: Thu, 22 Oct 2020 08:22:07 GMT  
+		Size: 8.2 KB (8211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f2ab59d35c2a19d1f0a96094b929cd857ecd0d96229d880676f31a1081fe1e1`  
-		Last Modified: Tue, 29 Sep 2020 01:55:42 GMT  
-		Size: 130.0 B  
+	-	`sha256:f842fbbb0ac2b2f2cab3bce51147741243f3bc382f186dffd5dd4836f9a51351`  
+		Last Modified: Thu, 22 Oct 2020 08:22:07 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40bf07073f7739dc1be2f7c9ef313f3a759e7e1742b976b7209bb132fb6bec9d`  
-		Last Modified: Tue, 29 Sep 2020 01:55:42 GMT  
+	-	`sha256:41e4714158403e3a4d71a5990a55c17c642f4559892d4bf882f69fb3dee8fd0b`  
+		Last Modified: Thu, 22 Oct 2020 08:22:08 GMT  
 		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42557388816c3bf6bb673aad5ba62ea2a1dc5d5af07492e8f91ca72423c76da6`  
-		Last Modified: Tue, 29 Sep 2020 01:55:42 GMT  
-		Size: 4.3 KB (4264 bytes)  
+	-	`sha256:149b4b732c76848655c8bb142e13d235673aad991eb4822aa6ee8f20e55e1658`  
+		Last Modified: Thu, 22 Oct 2020 08:22:06 GMT  
+		Size: 4.3 KB (4259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:12-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull postgres@sha256:ed2932e9db0b9ae59d50b54080736ac6f19a094929fcb4dd5ef0f499910e7b38
+$ docker pull postgres@sha256:85231bd858960d66264daead20f142c14eb8c389047e2e2830796da9f3d945ac
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **60.1 MB (60109555 bytes)**  
+-	Total Size: **59.6 MB (59609956 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:027415d7104b5b4d525851c9ae313d6ba75e1d0b09281d89ad48e80d3938066b`
+-	Image ID: `sha256:0bafb3bffa13ad29372558ebe18efc4d4e0dfb0356dccf48f0f9de03a002344e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Fri, 29 May 2020 21:50:55 GMT
-ADD file:f46e997a56849423db17e5fc9f0249ab6c73b155245927dba5fcb9dfd65f622f in / 
-# Fri, 29 May 2020 21:50:56 GMT
+# Thu, 22 Oct 2020 02:01:09 GMT
+ADD file:dec4d3b6cf21c59820d1d74a554d0a193b5f4859e00b932f31ffe73f554d5afb in / 
+# Thu, 22 Oct 2020 02:01:12 GMT
 CMD ["/bin/sh"]
-# Thu, 11 Jun 2020 20:27:27 GMT
+# Thu, 22 Oct 2020 08:55:00 GMT
 RUN set -eux; 	addgroup -g 70 -S postgres; 	adduser -u 70 -S -D -G postgres -H -h /var/lib/postgresql -s /bin/sh postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Thu, 11 Jun 2020 20:27:28 GMT
+# Thu, 22 Oct 2020 08:55:00 GMT
 ENV LANG=en_US.utf8
-# Thu, 11 Jun 2020 20:27:30 GMT
+# Thu, 22 Oct 2020 08:55:02 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Thu, 11 Jun 2020 20:32:21 GMT
+# Thu, 22 Oct 2020 09:00:06 GMT
 ENV PG_MAJOR=12
-# Fri, 14 Aug 2020 16:55:35 GMT
+# Thu, 22 Oct 2020 09:00:08 GMT
 ENV PG_VERSION=12.4
-# Fri, 14 Aug 2020 16:55:36 GMT
+# Thu, 22 Oct 2020 09:00:09 GMT
 ENV PG_SHA256=bee93fbe2c32f59419cb162bcc0145c58da9a8644ee154a30b9a5ce47de606cc
-# Tue, 29 Sep 2020 01:05:55 GMT
+# Thu, 22 Oct 2020 09:04:26 GMT
 RUN set -eux; 		wget -O postgresql.tar.bz2 "https://ftp.postgresql.org/pub/source/v$PG_VERSION/postgresql-$PG_VERSION.tar.bz2"; 	echo "$PG_SHA256 *postgresql.tar.bz2" | sha256sum -c -; 	mkdir -p /usr/src/postgresql; 	tar 		--extract 		--file postgresql.tar.bz2 		--directory /usr/src/postgresql 		--strip-components 1 	; 	rm postgresql.tar.bz2; 		apk add --no-cache --virtual .build-deps 		bison 		coreutils 		dpkg-dev dpkg 		flex 		gcc 		libc-dev 		libedit-dev 		libxml2-dev 		libxslt-dev 		linux-headers 		llvm10-dev clang g++ 		make 		openssl-dev 		perl-utils 		perl-ipc-run 		util-linux-dev 		zlib-dev 		icu-dev 	; 		cd /usr/src/postgresql; 	awk '$1 == "#define" && $2 == "DEFAULT_PGSOCKET_DIR" && $3 == "\"/tmp\"" { $3 = "\"/var/run/postgresql\""; print; next } { print }' src/include/pg_config_manual.h > src/include/pg_config_manual.h.new; 	grep '/var/run/postgresql' src/include/pg_config_manual.h.new; 	mv src/include/pg_config_manual.h.new src/include/pg_config_manual.h; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	wget -O config/config.guess 'https://git.savannah.gnu.org/cgit/config.git/plain/config.guess?id=7d3d27baf8107b630586c962c057e22149653deb'; 	wget -O config/config.sub 'https://git.savannah.gnu.org/cgit/config.git/plain/config.sub?id=7d3d27baf8107b630586c962c057e22149653deb'; 	./configure 		--build="$gnuArch" 		--enable-integer-datetimes 		--enable-thread-safety 		--enable-tap-tests 		--disable-rpath 		--with-uuid=e2fs 		--with-gnu-ld 		--with-pgport=5432 		--with-system-tzdata=/usr/share/zoneinfo 		--prefix=/usr/local 		--with-includes=/usr/local/include 		--with-libraries=/usr/local/lib 				--with-openssl 		--with-libxml 		--with-libxslt 		--with-icu 		--with-llvm 	; 	make -j "$(nproc)" world; 	make install-world; 	make -C contrib install; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .postgresql-rundeps 		$runDeps 		bash 		su-exec 		tzdata 	; 	apk del --no-network .build-deps; 	cd /; 	rm -rf 		/usr/src/postgresql 		/usr/local/share/doc 		/usr/local/share/man 	; 		postgres --version
-# Tue, 29 Sep 2020 01:06:01 GMT
+# Thu, 22 Oct 2020 09:04:32 GMT
 RUN sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/local/share/postgresql/postgresql.conf.sample
-# Tue, 29 Sep 2020 01:06:05 GMT
+# Thu, 22 Oct 2020 09:04:34 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 29 Sep 2020 01:06:06 GMT
+# Thu, 22 Oct 2020 09:04:35 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 29 Sep 2020 01:06:10 GMT
+# Thu, 22 Oct 2020 09:04:37 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 29 Sep 2020 01:06:11 GMT
+# Thu, 22 Oct 2020 09:04:38 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 29 Sep 2020 01:06:12 GMT
+# Thu, 22 Oct 2020 09:04:39 GMT
 COPY file:8f542efd076b9b67ef64928f3c0185ed50bfcbbc3572436a7222e879810d747f in /usr/local/bin/ 
-# Tue, 29 Sep 2020 01:06:15 GMT
+# Thu, 22 Oct 2020 09:04:40 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 29 Sep 2020 01:06:19 GMT
+# Thu, 22 Oct 2020 09:04:41 GMT
 STOPSIGNAL SIGINT
-# Tue, 29 Sep 2020 01:06:20 GMT
+# Thu, 22 Oct 2020 09:04:42 GMT
 EXPOSE 5432
-# Tue, 29 Sep 2020 01:06:24 GMT
+# Thu, 22 Oct 2020 09:04:43 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:b4b72e716706d29f5d2351709c20bf737b94f876a5472a43ff1b6e203c65d27f`  
-		Last Modified: Fri, 29 May 2020 21:51:30 GMT  
-		Size: 2.6 MB (2603286 bytes)  
+	-	`sha256:bad30e7b45c14f784ef29a828b5fc69db0ebdefebcde6a7c98f4f77ffc93a546`  
+		Last Modified: Thu, 22 Oct 2020 02:01:42 GMT  
+		Size: 2.6 MB (2601912 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e0c6822b30b82f1bf3837b7d730cf7d68d7101602023fc38fb839cf826a5bd6`  
-		Last Modified: Thu, 11 Jun 2020 20:52:06 GMT  
-		Size: 1.3 KB (1279 bytes)  
+	-	`sha256:c54bc8a79538fa79db3e734327f2a73654bc80285dc55b7e4d8d206161ec79a9`  
+		Last Modified: Thu, 22 Oct 2020 09:19:19 GMT  
+		Size: 1.3 KB (1276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dcc1c5a5bbcba93ab5809dbcc58c6042d7a9983681f6a6f951d947b0d4d0c3b5`  
-		Last Modified: Thu, 11 Jun 2020 20:52:06 GMT  
+	-	`sha256:30574d1822b9e42c2a6da5e4a8f52ab65d88be941e497b4565382967ebd326f8`  
+		Last Modified: Thu, 22 Oct 2020 09:19:19 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5f646c305919a9928d54b34bb7b98afa615070e65dab73e20be4179d4461bc7`  
-		Last Modified: Tue, 29 Sep 2020 01:23:13 GMT  
-		Size: 57.5 MB (57492009 bytes)  
+	-	`sha256:abe59d928d32198e7341b74ceab700801201249e92c73fb14694ebfcd0924856`  
+		Last Modified: Thu, 22 Oct 2020 09:20:05 GMT  
+		Size: 57.0 MB (56993791 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18700be549e5bfd7f1b206a750645b84de5683d6224f6f6daba5f258e41e4ce8`  
-		Last Modified: Tue, 29 Sep 2020 01:22:54 GMT  
+	-	`sha256:3adcf4c9c6f8c85fb7de4d863f6f8b5bd4dde0092c8dc59ce21b42f1253ff607`  
+		Last Modified: Thu, 22 Oct 2020 09:19:46 GMT  
 		Size: 8.2 KB (8212 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87bf56d036f882a4024d18fcd91e2d326fb0e355fd05f8eb499aab2f0767056b`  
-		Last Modified: Tue, 29 Sep 2020 01:22:54 GMT  
-		Size: 162.0 B  
+	-	`sha256:63cd50f81a28cce663c1ccbf4125ff45a19f9a5f56c1b681e3982dd94c7ba0e3`  
+		Last Modified: Thu, 22 Oct 2020 09:19:46 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:443676fea68bb03d1e489850bedefebf1c338791f82ddfcb64b23849af2742ce`  
-		Last Modified: Tue, 29 Sep 2020 01:22:55 GMT  
-		Size: 194.0 B  
+	-	`sha256:b4aa2299c1fb69726a40f5ce499756891c0112a5d3029eb24715cc8f6b44acaf`  
+		Last Modified: Thu, 22 Oct 2020 09:19:45 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34f5e9b828fde883b5c83bffdfc334ec56635d39958beb159471b2e5b1585f7f`  
-		Last Modified: Tue, 29 Sep 2020 01:22:54 GMT  
-		Size: 4.3 KB (4264 bytes)  
+	-	`sha256:eb29f15c54ae03d7a61d10f1d2e29b4ca5e3b60a3be2014bee3e4df4186ecdfc`  
+		Last Modified: Thu, 22 Oct 2020 09:19:46 GMT  
+		Size: 4.3 KB (4258 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:12-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull postgres@sha256:a8157df1bec9cd46f03778ba3487e035fda7e15ed875daad9afe675b9a661ec8
+$ docker pull postgres@sha256:c518aabf8e79df5f46b30d088d3f1d2db6aea7ea77aab6593226a624aa2ecd91
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **57.2 MB (57225314 bytes)**  
+-	Total Size: **56.7 MB (56743492 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9821c3fa85a037e2bbf5149a9b235963e4f50ffc107c556f0758dec21bfa7c15`
+-	Image ID: `sha256:535241b7ad8596da331d4e5380a88e1aae537ecb21894ead3fbf6aff816ece36`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Fri, 29 May 2020 21:02:07 GMT
-ADD file:e97bf0d217846312b19a9f7264604851aedd125c23b4d291eed4c69b880dce26 in / 
-# Fri, 29 May 2020 21:02:08 GMT
+# Thu, 22 Oct 2020 01:58:13 GMT
+ADD file:46f89172426e9f5b1d669a2ca7ab218fc2deaef1caeeab88f2b5bd443ac9773d in / 
+# Thu, 22 Oct 2020 01:58:14 GMT
 CMD ["/bin/sh"]
-# Thu, 11 Jun 2020 20:43:57 GMT
+# Thu, 22 Oct 2020 08:56:01 GMT
 RUN set -eux; 	addgroup -g 70 -S postgres; 	adduser -u 70 -S -D -G postgres -H -h /var/lib/postgresql -s /bin/sh postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Thu, 11 Jun 2020 20:43:58 GMT
+# Thu, 22 Oct 2020 08:56:03 GMT
 ENV LANG=en_US.utf8
-# Thu, 11 Jun 2020 20:44:01 GMT
+# Thu, 22 Oct 2020 08:56:05 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Thu, 11 Jun 2020 20:47:49 GMT
+# Thu, 22 Oct 2020 09:00:10 GMT
 ENV PG_MAJOR=12
-# Fri, 14 Aug 2020 17:51:00 GMT
+# Thu, 22 Oct 2020 09:00:11 GMT
 ENV PG_VERSION=12.4
-# Fri, 14 Aug 2020 17:51:00 GMT
+# Thu, 22 Oct 2020 09:00:11 GMT
 ENV PG_SHA256=bee93fbe2c32f59419cb162bcc0145c58da9a8644ee154a30b9a5ce47de606cc
-# Tue, 29 Sep 2020 01:13:16 GMT
+# Thu, 22 Oct 2020 09:03:33 GMT
 RUN set -eux; 		wget -O postgresql.tar.bz2 "https://ftp.postgresql.org/pub/source/v$PG_VERSION/postgresql-$PG_VERSION.tar.bz2"; 	echo "$PG_SHA256 *postgresql.tar.bz2" | sha256sum -c -; 	mkdir -p /usr/src/postgresql; 	tar 		--extract 		--file postgresql.tar.bz2 		--directory /usr/src/postgresql 		--strip-components 1 	; 	rm postgresql.tar.bz2; 		apk add --no-cache --virtual .build-deps 		bison 		coreutils 		dpkg-dev dpkg 		flex 		gcc 		libc-dev 		libedit-dev 		libxml2-dev 		libxslt-dev 		linux-headers 		llvm10-dev clang g++ 		make 		openssl-dev 		perl-utils 		perl-ipc-run 		util-linux-dev 		zlib-dev 		icu-dev 	; 		cd /usr/src/postgresql; 	awk '$1 == "#define" && $2 == "DEFAULT_PGSOCKET_DIR" && $3 == "\"/tmp\"" { $3 = "\"/var/run/postgresql\""; print; next } { print }' src/include/pg_config_manual.h > src/include/pg_config_manual.h.new; 	grep '/var/run/postgresql' src/include/pg_config_manual.h.new; 	mv src/include/pg_config_manual.h.new src/include/pg_config_manual.h; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	wget -O config/config.guess 'https://git.savannah.gnu.org/cgit/config.git/plain/config.guess?id=7d3d27baf8107b630586c962c057e22149653deb'; 	wget -O config/config.sub 'https://git.savannah.gnu.org/cgit/config.git/plain/config.sub?id=7d3d27baf8107b630586c962c057e22149653deb'; 	./configure 		--build="$gnuArch" 		--enable-integer-datetimes 		--enable-thread-safety 		--enable-tap-tests 		--disable-rpath 		--with-uuid=e2fs 		--with-gnu-ld 		--with-pgport=5432 		--with-system-tzdata=/usr/share/zoneinfo 		--prefix=/usr/local 		--with-includes=/usr/local/include 		--with-libraries=/usr/local/lib 				--with-openssl 		--with-libxml 		--with-libxslt 		--with-icu 		--with-llvm 	; 	make -j "$(nproc)" world; 	make install-world; 	make -C contrib install; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .postgresql-rundeps 		$runDeps 		bash 		su-exec 		tzdata 	; 	apk del --no-network .build-deps; 	cd /; 	rm -rf 		/usr/src/postgresql 		/usr/local/share/doc 		/usr/local/share/man 	; 		postgres --version
-# Tue, 29 Sep 2020 01:13:24 GMT
+# Thu, 22 Oct 2020 09:03:36 GMT
 RUN sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/local/share/postgresql/postgresql.conf.sample
-# Tue, 29 Sep 2020 01:13:31 GMT
+# Thu, 22 Oct 2020 09:03:38 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 29 Sep 2020 01:13:32 GMT
+# Thu, 22 Oct 2020 09:03:39 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 29 Sep 2020 01:13:39 GMT
+# Thu, 22 Oct 2020 09:03:42 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 29 Sep 2020 01:13:40 GMT
+# Thu, 22 Oct 2020 09:03:42 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 29 Sep 2020 01:13:42 GMT
+# Thu, 22 Oct 2020 09:03:43 GMT
 COPY file:8f542efd076b9b67ef64928f3c0185ed50bfcbbc3572436a7222e879810d747f in /usr/local/bin/ 
-# Tue, 29 Sep 2020 01:13:43 GMT
+# Thu, 22 Oct 2020 09:03:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 29 Sep 2020 01:13:44 GMT
+# Thu, 22 Oct 2020 09:03:45 GMT
 STOPSIGNAL SIGINT
-# Tue, 29 Sep 2020 01:13:45 GMT
+# Thu, 22 Oct 2020 09:03:46 GMT
 EXPOSE 5432
-# Tue, 29 Sep 2020 01:13:47 GMT
+# Thu, 22 Oct 2020 09:03:46 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:52278dd8e57993669c5b72a9620e89bebdc098f2af2379caaa8945f7403f77a2`  
-		Last Modified: Fri, 29 May 2020 21:02:38 GMT  
-		Size: 2.4 MB (2406763 bytes)  
+	-	`sha256:5f2023fd85a4e68f37fe41421fd89f30e69b98a645613521c57c01317561eee3`  
+		Last Modified: Thu, 22 Oct 2020 01:58:45 GMT  
+		Size: 2.4 MB (2405675 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fcd3f931b2a724d22b1f76af233e84a5d592aa2a21caad88700c700ef28bec95`  
-		Last Modified: Thu, 11 Jun 2020 21:05:18 GMT  
-		Size: 1.3 KB (1274 bytes)  
+	-	`sha256:0e7eedf40b1ca3ca0c12781ef9399626d49e7898eb4dc6bf3888a3add86c9ee2`  
+		Last Modified: Thu, 22 Oct 2020 09:17:08 GMT  
+		Size: 1.3 KB (1276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19f754b96158415f11b928d9d9e9f98a8cd305f2a033ef0b4c6e7bfe6645b508`  
-		Last Modified: Thu, 11 Jun 2020 21:05:18 GMT  
-		Size: 149.0 B  
+	-	`sha256:dc2cc4a27e16f2350721162545664e1c967b92e8a0ecffb90828c979f0bc3ac6`  
+		Last Modified: Thu, 22 Oct 2020 09:17:08 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72df1ebbfa4f6bdc99d8c34c18c55119ba1a0f666ef44cec5322d7df22a62ddf`  
-		Last Modified: Tue, 29 Sep 2020 01:27:46 GMT  
-		Size: 54.8 MB (54804303 bytes)  
+	-	`sha256:db589e909616074bdbbcd301cdd6d065875bb040ba8180bff12ac6e610e4148e`  
+		Last Modified: Thu, 22 Oct 2020 09:17:46 GMT  
+		Size: 54.3 MB (54323561 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6d385b53ac8125bd47eee846c343250d6b118c6454fbecba7b2b136047cf958`  
-		Last Modified: Tue, 29 Sep 2020 01:27:30 GMT  
-		Size: 8.2 KB (8210 bytes)  
+	-	`sha256:0195b3c166d0f527d5d0d98199e851081e4497b2d27fefd03f6a0a67ca102aec`  
+		Last Modified: Thu, 22 Oct 2020 09:17:31 GMT  
+		Size: 8.2 KB (8214 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1931d16d5cd2ce0dccc99f6dd315bfc9d8f727974272fc7273c898fcc2e12186`  
-		Last Modified: Tue, 29 Sep 2020 01:27:31 GMT  
-		Size: 162.0 B  
+	-	`sha256:6da72bdd2bb91f0219fc0c570793307b0d7a0606b31a613c4c517b12413bc15d`  
+		Last Modified: Thu, 22 Oct 2020 09:17:31 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc287310c75c04e1159afae4d326866ca92bff0f95ad5a31ce8265da751e1c2d`  
-		Last Modified: Tue, 29 Sep 2020 01:27:30 GMT  
-		Size: 193.0 B  
+	-	`sha256:5b4c3978c25e1d23cd988dc28dc19f5b8132a4aa074d380e3ef77d8b2d0cec5c`  
+		Last Modified: Thu, 22 Oct 2020 09:17:31 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecb4cf0a46ea3a1730babca6137207995266c9c344e87d7e888dd3483e0be305`  
-		Last Modified: Tue, 29 Sep 2020 01:27:31 GMT  
-		Size: 4.3 KB (4260 bytes)  
+	-	`sha256:aa8918a7b79a3a9c7e02264c4bdefa2b20f9dbe0b5aa0e3e6b018c506de8cd20`  
+		Last Modified: Thu, 22 Oct 2020 09:17:31 GMT  
+		Size: 4.3 KB (4261 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:12-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull postgres@sha256:8475fc421d5ac6e793f0c8681cc748a0e59a25767b66ba3e775f6b9283056204
+$ docker pull postgres@sha256:56b8bbbf198c216819b77650e924fa5448b9419ca2273d19871c33ade457adb1
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **61.5 MB (61450059 bytes)**  
+-	Total Size: **60.9 MB (60933396 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e82d1dec19347d3fec8bf4adaccbb96cb9bf6eb255379a48c7eaa7a2bdc11f66`
+-	Image ID: `sha256:e8b810552dcd8fc417a6f0b7a2c1e7e593d16de1cc723388c43d188c5ad16814`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Fri, 29 May 2020 21:43:19 GMT
-ADD file:7574aee4e37a85460ab889212d52912723a9b30dda1c060548f0deb4a05fc398 in / 
-# Fri, 29 May 2020 21:43:20 GMT
+# Thu, 22 Oct 2020 02:01:01 GMT
+ADD file:55c4e9752146061a2b5f76027221329f423687987c0744ef577130c60ff0ba42 in / 
+# Thu, 22 Oct 2020 02:01:06 GMT
 CMD ["/bin/sh"]
-# Thu, 11 Jun 2020 21:06:12 GMT
+# Thu, 22 Oct 2020 08:21:49 GMT
 RUN set -eux; 	addgroup -g 70 -S postgres; 	adduser -u 70 -S -D -G postgres -H -h /var/lib/postgresql -s /bin/sh postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Thu, 11 Jun 2020 21:06:13 GMT
+# Thu, 22 Oct 2020 08:21:49 GMT
 ENV LANG=en_US.utf8
-# Thu, 11 Jun 2020 21:06:16 GMT
+# Thu, 22 Oct 2020 08:21:51 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Thu, 11 Jun 2020 21:10:22 GMT
+# Thu, 22 Oct 2020 08:26:00 GMT
 ENV PG_MAJOR=12
-# Fri, 14 Aug 2020 17:45:54 GMT
+# Thu, 22 Oct 2020 08:26:01 GMT
 ENV PG_VERSION=12.4
-# Fri, 14 Aug 2020 17:45:55 GMT
+# Thu, 22 Oct 2020 08:26:02 GMT
 ENV PG_SHA256=bee93fbe2c32f59419cb162bcc0145c58da9a8644ee154a30b9a5ce47de606cc
-# Tue, 29 Sep 2020 00:53:56 GMT
+# Thu, 22 Oct 2020 08:29:48 GMT
 RUN set -eux; 		wget -O postgresql.tar.bz2 "https://ftp.postgresql.org/pub/source/v$PG_VERSION/postgresql-$PG_VERSION.tar.bz2"; 	echo "$PG_SHA256 *postgresql.tar.bz2" | sha256sum -c -; 	mkdir -p /usr/src/postgresql; 	tar 		--extract 		--file postgresql.tar.bz2 		--directory /usr/src/postgresql 		--strip-components 1 	; 	rm postgresql.tar.bz2; 		apk add --no-cache --virtual .build-deps 		bison 		coreutils 		dpkg-dev dpkg 		flex 		gcc 		libc-dev 		libedit-dev 		libxml2-dev 		libxslt-dev 		linux-headers 		llvm10-dev clang g++ 		make 		openssl-dev 		perl-utils 		perl-ipc-run 		util-linux-dev 		zlib-dev 		icu-dev 	; 		cd /usr/src/postgresql; 	awk '$1 == "#define" && $2 == "DEFAULT_PGSOCKET_DIR" && $3 == "\"/tmp\"" { $3 = "\"/var/run/postgresql\""; print; next } { print }' src/include/pg_config_manual.h > src/include/pg_config_manual.h.new; 	grep '/var/run/postgresql' src/include/pg_config_manual.h.new; 	mv src/include/pg_config_manual.h.new src/include/pg_config_manual.h; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	wget -O config/config.guess 'https://git.savannah.gnu.org/cgit/config.git/plain/config.guess?id=7d3d27baf8107b630586c962c057e22149653deb'; 	wget -O config/config.sub 'https://git.savannah.gnu.org/cgit/config.git/plain/config.sub?id=7d3d27baf8107b630586c962c057e22149653deb'; 	./configure 		--build="$gnuArch" 		--enable-integer-datetimes 		--enable-thread-safety 		--enable-tap-tests 		--disable-rpath 		--with-uuid=e2fs 		--with-gnu-ld 		--with-pgport=5432 		--with-system-tzdata=/usr/share/zoneinfo 		--prefix=/usr/local 		--with-includes=/usr/local/include 		--with-libraries=/usr/local/lib 				--with-openssl 		--with-libxml 		--with-libxslt 		--with-icu 		--with-llvm 	; 	make -j "$(nproc)" world; 	make install-world; 	make -C contrib install; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .postgresql-rundeps 		$runDeps 		bash 		su-exec 		tzdata 	; 	apk del --no-network .build-deps; 	cd /; 	rm -rf 		/usr/src/postgresql 		/usr/local/share/doc 		/usr/local/share/man 	; 		postgres --version
-# Tue, 29 Sep 2020 00:54:01 GMT
+# Thu, 22 Oct 2020 08:29:53 GMT
 RUN sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/local/share/postgresql/postgresql.conf.sample
-# Tue, 29 Sep 2020 00:54:03 GMT
+# Thu, 22 Oct 2020 08:29:56 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 29 Sep 2020 00:54:11 GMT
+# Thu, 22 Oct 2020 08:29:56 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 29 Sep 2020 00:54:23 GMT
+# Thu, 22 Oct 2020 08:29:58 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 29 Sep 2020 00:54:26 GMT
+# Thu, 22 Oct 2020 08:29:59 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 29 Sep 2020 00:54:27 GMT
+# Thu, 22 Oct 2020 08:30:00 GMT
 COPY file:8f542efd076b9b67ef64928f3c0185ed50bfcbbc3572436a7222e879810d747f in /usr/local/bin/ 
-# Tue, 29 Sep 2020 00:54:27 GMT
+# Thu, 22 Oct 2020 08:30:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 29 Sep 2020 00:54:28 GMT
+# Thu, 22 Oct 2020 08:30:02 GMT
 STOPSIGNAL SIGINT
-# Tue, 29 Sep 2020 00:54:29 GMT
+# Thu, 22 Oct 2020 08:30:03 GMT
 EXPOSE 5432
-# Tue, 29 Sep 2020 00:54:30 GMT
+# Thu, 22 Oct 2020 08:30:03 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:b538f80385f9b48122e3da068c932a96ea5018afa3c7be79da00437414bd18cd`  
-		Last Modified: Fri, 29 May 2020 21:43:57 GMT  
-		Size: 2.7 MB (2707964 bytes)  
+	-	`sha256:5f621e34cdf485f410766dc9a0fc7855d17916d0f6583b58cbdce7c28831f527`  
+		Last Modified: Thu, 22 Oct 2020 02:01:38 GMT  
+		Size: 2.7 MB (2706555 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9d4833cc285b7342c1d7bab9159e04f3cb6d84914e4a6376bd605ef138613aa`  
-		Last Modified: Thu, 11 Jun 2020 21:41:31 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:b46b3b77440641e62ecc741cdb44f0f558d15c3f3b6d506be26f8c285f7a36ff`  
+		Last Modified: Thu, 22 Oct 2020 08:44:00 GMT  
+		Size: 1.3 KB (1277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6bf1f783f6dc9622807ab9414bb09346699c6eea41fd6260efcfe679699f206d`  
-		Last Modified: Thu, 11 Jun 2020 21:41:31 GMT  
+	-	`sha256:b85615d5b5e22de086f665265885eae6f4cb41a63e5ed6910df6d0d03d0e90c5`  
+		Last Modified: Thu, 22 Oct 2020 08:43:59 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f9d672361115b2916988f895a47768df2b6aa30954d5d7033da8f7faa88fb28`  
-		Last Modified: Tue, 29 Sep 2020 01:10:30 GMT  
-		Size: 58.7 MB (58727836 bytes)  
+	-	`sha256:87f5db76c4f20ddb628d5db199061af2ecb11bd84776c87ac632bfd1093e7b7e`  
+		Last Modified: Thu, 22 Oct 2020 08:44:37 GMT  
+		Size: 58.2 MB (58212586 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7762b30adae5530cbd19ae95717f2e3b04ac2e78d025930b72c79f6e877a0ea`  
-		Last Modified: Tue, 29 Sep 2020 01:09:56 GMT  
-		Size: 8.2 KB (8215 bytes)  
+	-	`sha256:18e055552abd2b888bcf94278309bc5650100822a40fa1d6e527d5e2fa93e290`  
+		Last Modified: Thu, 22 Oct 2020 08:44:22 GMT  
+		Size: 8.2 KB (8213 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c21caf58f4bf1ee6a43565ce33f6cdacdb395cb9eee4f8d572849bfc14da36dc`  
-		Last Modified: Tue, 29 Sep 2020 01:09:56 GMT  
-		Size: 161.0 B  
+	-	`sha256:26a12365626004f334f1ceed7768adc7260d1323b50876b6abd5cb02534c24a8`  
+		Last Modified: Thu, 22 Oct 2020 08:44:22 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b03659d4b6d61eda6872509aa2327fe55634594135c512246d64c9dc6ae700c`  
-		Last Modified: Tue, 29 Sep 2020 01:09:56 GMT  
-		Size: 194.0 B  
+	-	`sha256:0728cdcb113ec594eb748ea8fc91ec925fd11b2c25ac269d3bb70c6e809b5236`  
+		Last Modified: Thu, 22 Oct 2020 08:44:22 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:890147d2b547974742826952fcd5bf5904c33c47681ee7118e1b0a1be9246adb`  
-		Last Modified: Tue, 29 Sep 2020 01:09:56 GMT  
-		Size: 4.3 KB (4260 bytes)  
+	-	`sha256:4f00d123c33dcd2c1be24d025c18ffa922b017fd6cda8e0e0e2c37eb1057f601`  
+		Last Modified: Thu, 22 Oct 2020 08:44:23 GMT  
+		Size: 4.3 KB (4259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:12-alpine` - linux; 386
@@ -551,88 +551,88 @@ CMD ["postgres"]
 ### `postgres:12-alpine` - linux; s390x
 
 ```console
-$ docker pull postgres@sha256:30e90d7cc79b1195c266108ed5617df0cf4daf12a914bea3e22ab5cf959574a2
+$ docker pull postgres@sha256:94976e9501f1856669f3a86d5a1dd6bdd258ae157eb024098239c16ff446a242
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **64.2 MB (64211205 bytes)**  
+-	Total Size: **63.7 MB (63694331 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fd8978dec89662a11aafa7cf703ca3e6cef20077977d94ecc450accc1acade3b`
+-	Image ID: `sha256:00f55185828138bee7f29af67f47a550ba9629949638aba57997744f721b42c4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Fri, 29 May 2020 21:41:39 GMT
-ADD file:9799ce3b2f782a28e10b1846cd9b3db827fa99c9bc601feb268456195856814e in / 
-# Fri, 29 May 2020 21:41:39 GMT
+# Thu, 22 Oct 2020 01:59:08 GMT
+ADD file:e07d6f40b1afc3d3eff230bc89e84704eb762706a373a60c6bea6a45b2287464 in / 
+# Thu, 22 Oct 2020 01:59:09 GMT
 CMD ["/bin/sh"]
-# Thu, 11 Jun 2020 19:51:55 GMT
+# Thu, 22 Oct 2020 09:05:49 GMT
 RUN set -eux; 	addgroup -g 70 -S postgres; 	adduser -u 70 -S -D -G postgres -H -h /var/lib/postgresql -s /bin/sh postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Thu, 11 Jun 2020 19:51:56 GMT
+# Thu, 22 Oct 2020 09:05:49 GMT
 ENV LANG=en_US.utf8
-# Thu, 11 Jun 2020 19:51:57 GMT
+# Thu, 22 Oct 2020 09:05:50 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Thu, 11 Jun 2020 19:56:22 GMT
+# Thu, 22 Oct 2020 09:10:45 GMT
 ENV PG_MAJOR=12
-# Fri, 14 Aug 2020 18:01:34 GMT
+# Thu, 22 Oct 2020 09:10:45 GMT
 ENV PG_VERSION=12.4
-# Fri, 14 Aug 2020 18:01:34 GMT
+# Thu, 22 Oct 2020 09:10:46 GMT
 ENV PG_SHA256=bee93fbe2c32f59419cb162bcc0145c58da9a8644ee154a30b9a5ce47de606cc
-# Tue, 29 Sep 2020 00:51:07 GMT
+# Thu, 22 Oct 2020 09:14:42 GMT
 RUN set -eux; 		wget -O postgresql.tar.bz2 "https://ftp.postgresql.org/pub/source/v$PG_VERSION/postgresql-$PG_VERSION.tar.bz2"; 	echo "$PG_SHA256 *postgresql.tar.bz2" | sha256sum -c -; 	mkdir -p /usr/src/postgresql; 	tar 		--extract 		--file postgresql.tar.bz2 		--directory /usr/src/postgresql 		--strip-components 1 	; 	rm postgresql.tar.bz2; 		apk add --no-cache --virtual .build-deps 		bison 		coreutils 		dpkg-dev dpkg 		flex 		gcc 		libc-dev 		libedit-dev 		libxml2-dev 		libxslt-dev 		linux-headers 		llvm10-dev clang g++ 		make 		openssl-dev 		perl-utils 		perl-ipc-run 		util-linux-dev 		zlib-dev 		icu-dev 	; 		cd /usr/src/postgresql; 	awk '$1 == "#define" && $2 == "DEFAULT_PGSOCKET_DIR" && $3 == "\"/tmp\"" { $3 = "\"/var/run/postgresql\""; print; next } { print }' src/include/pg_config_manual.h > src/include/pg_config_manual.h.new; 	grep '/var/run/postgresql' src/include/pg_config_manual.h.new; 	mv src/include/pg_config_manual.h.new src/include/pg_config_manual.h; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	wget -O config/config.guess 'https://git.savannah.gnu.org/cgit/config.git/plain/config.guess?id=7d3d27baf8107b630586c962c057e22149653deb'; 	wget -O config/config.sub 'https://git.savannah.gnu.org/cgit/config.git/plain/config.sub?id=7d3d27baf8107b630586c962c057e22149653deb'; 	./configure 		--build="$gnuArch" 		--enable-integer-datetimes 		--enable-thread-safety 		--enable-tap-tests 		--disable-rpath 		--with-uuid=e2fs 		--with-gnu-ld 		--with-pgport=5432 		--with-system-tzdata=/usr/share/zoneinfo 		--prefix=/usr/local 		--with-includes=/usr/local/include 		--with-libraries=/usr/local/lib 				--with-openssl 		--with-libxml 		--with-libxslt 		--with-icu 		--with-llvm 	; 	make -j "$(nproc)" world; 	make install-world; 	make -C contrib install; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .postgresql-rundeps 		$runDeps 		bash 		su-exec 		tzdata 	; 	apk del --no-network .build-deps; 	cd /; 	rm -rf 		/usr/src/postgresql 		/usr/local/share/doc 		/usr/local/share/man 	; 		postgres --version
-# Tue, 29 Sep 2020 00:51:10 GMT
+# Thu, 22 Oct 2020 09:14:51 GMT
 RUN sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/local/share/postgresql/postgresql.conf.sample
-# Tue, 29 Sep 2020 00:51:11 GMT
+# Thu, 22 Oct 2020 09:14:53 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 29 Sep 2020 00:51:11 GMT
+# Thu, 22 Oct 2020 09:14:53 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 29 Sep 2020 00:51:12 GMT
+# Thu, 22 Oct 2020 09:14:54 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 29 Sep 2020 00:51:12 GMT
+# Thu, 22 Oct 2020 09:14:55 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 29 Sep 2020 00:51:12 GMT
+# Thu, 22 Oct 2020 09:14:55 GMT
 COPY file:8f542efd076b9b67ef64928f3c0185ed50bfcbbc3572436a7222e879810d747f in /usr/local/bin/ 
-# Tue, 29 Sep 2020 00:51:12 GMT
+# Thu, 22 Oct 2020 09:14:56 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 29 Sep 2020 00:51:13 GMT
+# Thu, 22 Oct 2020 09:14:57 GMT
 STOPSIGNAL SIGINT
-# Tue, 29 Sep 2020 00:51:13 GMT
+# Thu, 22 Oct 2020 09:14:57 GMT
 EXPOSE 5432
-# Tue, 29 Sep 2020 00:51:13 GMT
+# Thu, 22 Oct 2020 09:14:58 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:8fb3d41b2e9a59630b51745f257cd2561f96bcd15cf309fcc20120d5fcee8c5b`  
-		Last Modified: Fri, 29 May 2020 21:42:03 GMT  
-		Size: 2.6 MB (2566189 bytes)  
+	-	`sha256:a4c84ece3d2b98927d25f13a4f367bfd96cbfae272f6ff1117d74c84b92d11d3`  
+		Last Modified: Thu, 22 Oct 2020 01:59:37 GMT  
+		Size: 2.6 MB (2565829 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9066740685f109ff5f6b8d3a76bf92f0a147fc0c2c7a12e60fdc44c49e476f9d`  
-		Last Modified: Thu, 11 Jun 2020 20:12:40 GMT  
-		Size: 1.3 KB (1277 bytes)  
+	-	`sha256:4788b366e4c5d5f3b69b31ae06b2811fe54eb39bd4fd8b6107985f9982ab150a`  
+		Last Modified: Thu, 22 Oct 2020 09:29:06 GMT  
+		Size: 1.3 KB (1276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a8b44ce9d8f58aeaceb2528f4511ad9c56f557e0951ea9cf22b452d5e2f8bbf0`  
-		Last Modified: Thu, 11 Jun 2020 20:12:39 GMT  
+	-	`sha256:d5eed686015d5efd53e62cc5b3f61833711a48184edf03c7d21f021b34f23095`  
+		Last Modified: Thu, 22 Oct 2020 09:29:07 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52da7252f64eeb9c8f29520bcc260ae48b8f54d460a0c3249bb7c72da56609d0`  
-		Last Modified: Tue, 29 Sep 2020 00:59:56 GMT  
-		Size: 61.6 MB (61630761 bytes)  
+	-	`sha256:528ac2f475893e6b29892702c935ba702d55bef7babd3bc95db7080479bf9cfc`  
+		Last Modified: Thu, 22 Oct 2020 09:29:32 GMT  
+		Size: 61.1 MB (61114242 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3ef7bc561b6d62d554dc9aff85ae52bb4e06468f4a33721136bb8443a28a17d`  
-		Last Modified: Tue, 29 Sep 2020 00:59:48 GMT  
-		Size: 8.2 KB (8211 bytes)  
+	-	`sha256:1e33996b03c7c8d98156abdba4f5f78a3091d86267f70c11347e1d7d6d5d66a9`  
+		Last Modified: Thu, 22 Oct 2020 09:29:22 GMT  
+		Size: 8.2 KB (8214 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8407e12c3b4dc989b690acde779fc08f232995ce3ef1c22195e4f4b52afa36c3`  
-		Last Modified: Tue, 29 Sep 2020 00:59:48 GMT  
-		Size: 161.0 B  
+	-	`sha256:775c38d860bfac1a42cdeff32f1623e3e2b9c05af8dd445acb0ed4c5fe31d2d3`  
+		Last Modified: Thu, 22 Oct 2020 09:29:22 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34a6252399ae242d55aec7685ace47cce46565a45b27d862f2de8757bb2ac029`  
-		Last Modified: Tue, 29 Sep 2020 00:59:48 GMT  
-		Size: 195.0 B  
+	-	`sha256:1a26f26c1c1817fa6ad47a3e40769054ce9b83a6f783469954c6504c26df7768`  
+		Last Modified: Thu, 22 Oct 2020 09:29:23 GMT  
+		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae3df5b3d566c676e0de894928ddd6476bfcbe06057483cdde6ce69c7597b218`  
-		Last Modified: Tue, 29 Sep 2020 00:59:48 GMT  
-		Size: 4.3 KB (4262 bytes)  
+	-	`sha256:e5a7d16687b5bbc61bf345163638486be3252d5dbde8578f09f36003011afdfa`  
+		Last Modified: Thu, 22 Oct 2020 09:29:22 GMT  
+		Size: 4.3 KB (4264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
