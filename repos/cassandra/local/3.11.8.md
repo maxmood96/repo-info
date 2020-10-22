@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2b72000b7561f938d72a142c5b819eeb6c4f006902f77d921211cb433e99d3d1`
-- Created: `2020-09-26T03:37:15.223349982Z`
-- Virtual Size: ~ 383.75 Mb  
+- Image ID: `sha256:a819c8fae1d8e8f66b8a27317cfc6845ee860ca2a901ba767f05e27b9be686da`
+- Created: `2020-10-20T18:02:55.26286792Z`
+- Virtual Size: ~ 383.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u262-b10`
+  - `JAVA_VERSION=jdk8u265-b01`
   - `JAVA_HOME=/opt/java/openjdk`
   - `GOSU_VERSION=1.12`
   - `CASSANDRA_HOME=/opt/cassandra`
@@ -1607,14 +1607,14 @@ $ apt-get source -qq --print-uris python-defaults=2.7.15~rc1-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.15~rc1-1.tar.gz' python-defaults_2.7.15~rc1-1.tar.gz 1958015 SHA256:f3bed2b81091821d2e514c2e17c6846f7e744487fd15f7d3c48fa1c91b9cd49b
 ```
 
-### `dpkg` source package: `python2.7=2.7.17-1~18.04ubuntu1.1`
+### `dpkg` source package: `python2.7=2.7.17-1~18.04ubuntu1.2`
 
 Binary Packages:
 
-- `libpython2.7-minimal:amd64=2.7.17-1~18.04ubuntu1.1`
-- `libpython2.7-stdlib:amd64=2.7.17-1~18.04ubuntu1.1`
-- `python2.7=2.7.17-1~18.04ubuntu1.1`
-- `python2.7-minimal=2.7.17-1~18.04ubuntu1.1`
+- `libpython2.7-minimal:amd64=2.7.17-1~18.04ubuntu1.2`
+- `libpython2.7-stdlib:amd64=2.7.17-1~18.04ubuntu1.2`
+- `python2.7=2.7.17-1~18.04ubuntu1.2`
+- `python2.7-minimal=2.7.17-1~18.04ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/share/doc/libpython2.7-stdlib/copyright`, `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/python2.7-minimal/copyright`)
 
@@ -1635,9 +1635,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python2.7=2.7.17-1~18.04ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17-1~18.04ubuntu1.2.dsc' python2.7_2.7.17-1~18.04ubuntu1.2.dsc 3483 SHA512:5450e075e251ba89bb299da7468875428b81a9249bb0a72fd845aa517bbae52f876c339f9064861f287e62adb7db70d5c2ad3cdd1ac425a2371372775fc4277f
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17.orig.tar.gz' python2.7_2.7.17.orig.tar.gz 17535962 SHA512:f526baff7f1a9451244edb04e2aca63336b656aac178f4f64c135390b5b1185990ccff0c48f602914dd1c49c9e075951d372b4f2daac39e336c23ae84ef4ca16
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17-1~18.04ubuntu1.2.diff.gz' python2.7_2.7.17-1~18.04ubuntu1.2.diff.gz 294617 SHA512:a92eb8fe030174bc0b063d71e58dcb364a0d62bf554afae01da6dc121246442149630c104d2d4f49a0d7a247042ffa176973baf5f6d516f772b986f4dbdaf19e
+```
 
 ### `dpkg` source package: `readline=7.0-3`
 
