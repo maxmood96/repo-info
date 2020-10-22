@@ -1697,7 +1697,7 @@ CMD ["httpd-foreground"]
 ## `httpd:2.4.46-alpine`
 
 ```console
-$ docker pull httpd@sha256:d27f57dcfaf89612b95e5aedbe628feb3d358bac08f046585f287c4e31acfc87
+$ docker pull httpd@sha256:69ab7ff5231c97e1b349fe4fea278cc38c84e4246d5923f85ce04e4fc3571bd6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1849,205 +1849,205 @@ CMD ["httpd-foreground"]
 ### `httpd:2.4.46-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull httpd@sha256:c7765e733d24a8b8728f0ac5df8342e340c53d1c09884d24252eda5e85d5ee3f
+$ docker pull httpd@sha256:cffd471f1f7234e4e638c3dd7f2e9a66ec141ac291588bdcb2d6a86d3049b4e9
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.7 MB (15702128 bytes)**  
+-	Total Size: **15.4 MB (15356729 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74df8a2b744aec0fe56817db03350fc9b2035c30df84add73fd2e5e6a4693388`
+-	Image ID: `sha256:cce6982f83eb65d5c4c1f7581c15ceb3972776acae0cc14c79de75bca3d18908`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Fri, 29 May 2020 21:02:07 GMT
-ADD file:e97bf0d217846312b19a9f7264604851aedd125c23b4d291eed4c69b880dce26 in / 
-# Fri, 29 May 2020 21:02:08 GMT
+# Thu, 22 Oct 2020 01:58:13 GMT
+ADD file:46f89172426e9f5b1d669a2ca7ab218fc2deaef1caeeab88f2b5bd443ac9773d in / 
+# Thu, 22 Oct 2020 01:58:14 GMT
 CMD ["/bin/sh"]
-# Thu, 11 Jun 2020 20:27:37 GMT
+# Thu, 22 Oct 2020 03:01:14 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Thu, 11 Jun 2020 20:27:38 GMT
+# Thu, 22 Oct 2020 03:01:15 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Thu, 11 Jun 2020 20:27:39 GMT
+# Thu, 22 Oct 2020 03:01:16 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2020 20:27:41 GMT
+# Thu, 22 Oct 2020 03:01:20 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Thu, 11 Jun 2020 20:27:42 GMT
+# Thu, 22 Oct 2020 03:01:25 GMT
 WORKDIR /usr/local/apache2
-# Thu, 06 Aug 2020 00:06:45 GMT
+# Thu, 22 Oct 2020 03:01:25 GMT
 ENV HTTPD_VERSION=2.4.46
-# Thu, 06 Aug 2020 00:06:51 GMT
+# Thu, 22 Oct 2020 03:01:27 GMT
 ENV HTTPD_SHA256=740eddf6e1c641992b22359cabc66e6325868c3c5e2e3f98faf349b61ecf41ea
-# Thu, 06 Aug 2020 00:06:59 GMT
+# Thu, 22 Oct 2020 03:01:28 GMT
 ENV HTTPD_PATCHES=
-# Thu, 06 Aug 2020 00:08:52 GMT
+# Thu, 22 Oct 2020 03:03:40 GMT
 RUN set -eux; 		runDeps=' 		apr 		apr-util 		apr-util-dbm_db 		apr-util-ldap 		perl 	'; 	apk add --no-cache --virtual .build-deps 		$runDeps 		apr-dev 		apr-util-dev 		ca-certificates 		coreutils 		dpkg-dev dpkg 		gcc 		gnupg 		libc-dev 		curl-dev 		jansson-dev 		libxml2-dev 		lua-dev 		make 		nghttp2-dev 		openssl 		openssl-dev 		pcre-dev 		tar 		zlib-dev 		brotli-dev 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		DE29FB3971E71543FD2DC049508EAEC5302DA568 		13155B0E9E634F42BF6C163FDDBA64BA2C312D2F 		8B39757B1D8A994DF2433ED58B3A601F08C975E5 		31EE1A81B8D066548156D37B7D6DBFD1F08E012A 		A10208FEC3152DD7C0C9B59B361522D782AB7BD1 		3DE024AFDA7A4B15CB6C14410F81AA8AB0D5F771 		EB138C6AF0FC691001B16D93344A844D751D7F27 		CBA5A7C21EC143314C41393E5B968010E04F9A89 		3C016F2B764621BB549C66B516A96495E2226795 		937FB3994A242BA9BF49E93021454AF0CC8B0F7E 		EAD1359A4C0F2D37472AAF28F55DF0293A4E7AC9 		4C1EADADB4EF5007579C919C6635B6C0DE885DD3 		01E475360FCCF1D0F24B9D145D414AE1E005C9CB 		92CCEF0AA7DD46AC3A0F498BCA6939748103A37E 		D395C7573A68B9796D38C258153FA0CD75A67692 		FA39B617B61493FD283503E7EED1EA392261D073 		984FB3350C1D5C7A3282255BB31B213D208F5064 		FE7A49DAA875E890B4167F76CCB2EB46E76CF6D0 		39F6691A0ECF0C50E8BB849CF78875F642721F00 		29A2BA848177B73878277FA475CAA2A3F39B3750 		120A8667241AEDD4A78B46104C042818311A3DE5 		453510BDA6C5855624E009236D0BC73A40581837 		0DE5C55C6BF3B2352DABB89E13249B4FEC88A0BF 		7CDBED100806552182F98844E8E7E00B4DAA1988 		A8BA9617EF3BCCAC3B29B869EDB105896F9522D8 		3E6AC004854F3A7F03566B592FF06894E55B0D0E 		5B5181C2C0AB13E59DA3F7A3EC582EB639FF092C 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		65B2D44FE74BD5E3DE3AC3F082781DE46D5954FA 		8935926745E1CE7E3ED748F6EC99EE267EB5F61A 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 		E3480043595621FE56105F112AB12A7ADC55C003 		93525CFCF6FDFFB3FD9700DD5A4B10AE43B56A27 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		runDeps="$runDeps $( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .httpd-rundeps $runDeps; 	apk del --no-network .build-deps; 		httpd -v
-# Thu, 06 Aug 2020 00:08:59 GMT
+# Thu, 22 Oct 2020 03:03:42 GMT
 STOPSIGNAL SIGWINCH
-# Thu, 06 Aug 2020 00:09:12 GMT
+# Thu, 22 Oct 2020 03:03:44 GMT
 COPY file:c432ff61c4993ecdef4786f48d91a96f8f0707f6179816ccb98db661bfb96b90 in /usr/local/bin/ 
-# Thu, 06 Aug 2020 00:09:19 GMT
+# Thu, 22 Oct 2020 03:03:45 GMT
 EXPOSE 80
-# Thu, 06 Aug 2020 00:09:26 GMT
+# Thu, 22 Oct 2020 03:03:46 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:52278dd8e57993669c5b72a9620e89bebdc098f2af2379caaa8945f7403f77a2`  
-		Last Modified: Fri, 29 May 2020 21:02:38 GMT  
-		Size: 2.4 MB (2406763 bytes)  
+	-	`sha256:5f2023fd85a4e68f37fe41421fd89f30e69b98a645613521c57c01317561eee3`  
+		Last Modified: Thu, 22 Oct 2020 01:58:45 GMT  
+		Size: 2.4 MB (2405675 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78ef0674c24b17f3fa6aa6c6082c306c63e13c86688e0d7edbe73746bc1b8788`  
-		Last Modified: Thu, 11 Jun 2020 20:30:21 GMT  
+	-	`sha256:09c06c1a05d6886eb89747851a023386583ef70e9ce8002e7834f5f8acd76ce8`  
+		Last Modified: Thu, 22 Oct 2020 03:04:11 GMT  
 		Size: 1.3 KB (1256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb2270c655717105f991689c0eebd902166e3dc15c231d61cf2c9e974f23a383`  
-		Last Modified: Thu, 11 Jun 2020 20:30:21 GMT  
+	-	`sha256:e90349162eef3383c8b8b5f975f02a04a517b42c0384ba282e6027cd5d35fcff`  
+		Last Modified: Thu, 22 Oct 2020 03:04:10 GMT  
 		Size: 178.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3554472286798d23d815827f38a94788865e7626db07871169b7c42829736c2d`  
-		Last Modified: Thu, 06 Aug 2020 00:10:15 GMT  
-		Size: 13.3 MB (13293634 bytes)  
+	-	`sha256:a63d79b96f2362e041541c35135d2fbfb81c3ac4ebce890a6019c09766f1a115`  
+		Last Modified: Thu, 22 Oct 2020 03:04:15 GMT  
+		Size: 12.9 MB (12949324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:508c165a1172a74df38b3ffe764c88ea9b538fb8d8b5e095f95566b3ebbcc7bf`  
-		Last Modified: Thu, 06 Aug 2020 00:10:10 GMT  
-		Size: 297.0 B  
+	-	`sha256:b3ff9cf0073eed816669492ed26b977aa7d33f7c11ffad4b48d1184f2aeb1350`  
+		Last Modified: Thu, 22 Oct 2020 03:04:10 GMT  
+		Size: 296.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `httpd:2.4.46-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull httpd@sha256:97f81a62b2a635da3ce9bd9101969c30775d0f2117ed2e747cc0b796bd94902a
+$ docker pull httpd@sha256:a1734f1d40c9b1534a7d4fd5b1836f23fb0fbdc03f1b83f75e7af4d858ac2be2
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.4 MB (17395396 bytes)**  
+-	Total Size: **17.0 MB (17004160 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba55192a9c7628ed8a41ffa860a2eb745e031216802d9f21d103ea8c30d3dd5f`
+-	Image ID: `sha256:1d5df4b62cc33ae3781a34f34d583476fff319f8afc9726b741c48e1b4ed55b7`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Fri, 29 May 2020 21:43:19 GMT
-ADD file:7574aee4e37a85460ab889212d52912723a9b30dda1c060548f0deb4a05fc398 in / 
-# Fri, 29 May 2020 21:43:20 GMT
+# Thu, 22 Oct 2020 02:01:01 GMT
+ADD file:55c4e9752146061a2b5f76027221329f423687987c0744ef577130c60ff0ba42 in / 
+# Thu, 22 Oct 2020 02:01:06 GMT
 CMD ["/bin/sh"]
-# Thu, 11 Jun 2020 20:39:01 GMT
+# Thu, 22 Oct 2020 02:46:51 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Thu, 11 Jun 2020 20:39:02 GMT
+# Thu, 22 Oct 2020 02:46:51 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Thu, 11 Jun 2020 20:39:02 GMT
+# Thu, 22 Oct 2020 02:46:52 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2020 20:39:04 GMT
+# Thu, 22 Oct 2020 02:46:55 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Thu, 11 Jun 2020 20:39:05 GMT
+# Thu, 22 Oct 2020 02:46:55 GMT
 WORKDIR /usr/local/apache2
-# Wed, 05 Aug 2020 23:44:14 GMT
+# Thu, 22 Oct 2020 02:46:56 GMT
 ENV HTTPD_VERSION=2.4.46
-# Wed, 05 Aug 2020 23:44:15 GMT
+# Thu, 22 Oct 2020 02:46:57 GMT
 ENV HTTPD_SHA256=740eddf6e1c641992b22359cabc66e6325868c3c5e2e3f98faf349b61ecf41ea
-# Wed, 05 Aug 2020 23:44:16 GMT
+# Thu, 22 Oct 2020 02:46:57 GMT
 ENV HTTPD_PATCHES=
-# Wed, 05 Aug 2020 23:46:31 GMT
+# Thu, 22 Oct 2020 02:48:28 GMT
 RUN set -eux; 		runDeps=' 		apr 		apr-util 		apr-util-dbm_db 		apr-util-ldap 		perl 	'; 	apk add --no-cache --virtual .build-deps 		$runDeps 		apr-dev 		apr-util-dev 		ca-certificates 		coreutils 		dpkg-dev dpkg 		gcc 		gnupg 		libc-dev 		curl-dev 		jansson-dev 		libxml2-dev 		lua-dev 		make 		nghttp2-dev 		openssl 		openssl-dev 		pcre-dev 		tar 		zlib-dev 		brotli-dev 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		DE29FB3971E71543FD2DC049508EAEC5302DA568 		13155B0E9E634F42BF6C163FDDBA64BA2C312D2F 		8B39757B1D8A994DF2433ED58B3A601F08C975E5 		31EE1A81B8D066548156D37B7D6DBFD1F08E012A 		A10208FEC3152DD7C0C9B59B361522D782AB7BD1 		3DE024AFDA7A4B15CB6C14410F81AA8AB0D5F771 		EB138C6AF0FC691001B16D93344A844D751D7F27 		CBA5A7C21EC143314C41393E5B968010E04F9A89 		3C016F2B764621BB549C66B516A96495E2226795 		937FB3994A242BA9BF49E93021454AF0CC8B0F7E 		EAD1359A4C0F2D37472AAF28F55DF0293A4E7AC9 		4C1EADADB4EF5007579C919C6635B6C0DE885DD3 		01E475360FCCF1D0F24B9D145D414AE1E005C9CB 		92CCEF0AA7DD46AC3A0F498BCA6939748103A37E 		D395C7573A68B9796D38C258153FA0CD75A67692 		FA39B617B61493FD283503E7EED1EA392261D073 		984FB3350C1D5C7A3282255BB31B213D208F5064 		FE7A49DAA875E890B4167F76CCB2EB46E76CF6D0 		39F6691A0ECF0C50E8BB849CF78875F642721F00 		29A2BA848177B73878277FA475CAA2A3F39B3750 		120A8667241AEDD4A78B46104C042818311A3DE5 		453510BDA6C5855624E009236D0BC73A40581837 		0DE5C55C6BF3B2352DABB89E13249B4FEC88A0BF 		7CDBED100806552182F98844E8E7E00B4DAA1988 		A8BA9617EF3BCCAC3B29B869EDB105896F9522D8 		3E6AC004854F3A7F03566B592FF06894E55B0D0E 		5B5181C2C0AB13E59DA3F7A3EC582EB639FF092C 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		65B2D44FE74BD5E3DE3AC3F082781DE46D5954FA 		8935926745E1CE7E3ED748F6EC99EE267EB5F61A 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 		E3480043595621FE56105F112AB12A7ADC55C003 		93525CFCF6FDFFB3FD9700DD5A4B10AE43B56A27 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		runDeps="$runDeps $( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .httpd-rundeps $runDeps; 	apk del --no-network .build-deps; 		httpd -v
-# Wed, 05 Aug 2020 23:46:33 GMT
+# Thu, 22 Oct 2020 02:48:29 GMT
 STOPSIGNAL SIGWINCH
-# Wed, 05 Aug 2020 23:46:33 GMT
+# Thu, 22 Oct 2020 02:48:30 GMT
 COPY file:c432ff61c4993ecdef4786f48d91a96f8f0707f6179816ccb98db661bfb96b90 in /usr/local/bin/ 
-# Wed, 05 Aug 2020 23:46:34 GMT
+# Thu, 22 Oct 2020 02:48:31 GMT
 EXPOSE 80
-# Wed, 05 Aug 2020 23:46:34 GMT
+# Thu, 22 Oct 2020 02:48:32 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:b538f80385f9b48122e3da068c932a96ea5018afa3c7be79da00437414bd18cd`  
-		Last Modified: Fri, 29 May 2020 21:43:57 GMT  
-		Size: 2.7 MB (2707964 bytes)  
+	-	`sha256:5f621e34cdf485f410766dc9a0fc7855d17916d0f6583b58cbdce7c28831f527`  
+		Last Modified: Thu, 22 Oct 2020 02:01:38 GMT  
+		Size: 2.7 MB (2706555 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91ab091a8f2c93b8aa66275d42d0acb1a375ec1a1d5cfbb870f73c989bc7f223`  
-		Last Modified: Thu, 11 Jun 2020 20:41:11 GMT  
+	-	`sha256:2be98b141cc5464db4639c97bc4b6610d287f51c6334b2fe9047c62cdd255027`  
+		Last Modified: Thu, 22 Oct 2020 02:48:58 GMT  
 		Size: 1.3 KB (1260 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d35563418dbe61c2ec9a4fe59ffd9bbfff689a3e9215e91be2ad8a61e918c306`  
-		Last Modified: Thu, 11 Jun 2020 20:41:11 GMT  
+	-	`sha256:e6f6e6762ef9f4b72652e5773b58f325351908e77ee2a9b5189321d02e808f39`  
+		Last Modified: Thu, 22 Oct 2020 02:48:58 GMT  
 		Size: 178.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed94bfbb493508eea5e41278bfcdd75bb354598413435ebb277ed4544e89fd02`  
-		Last Modified: Wed, 05 Aug 2020 23:47:16 GMT  
-		Size: 14.7 MB (14685694 bytes)  
+	-	`sha256:abf441e9978ab7b3f70f3fb5d3d0d9299f8f28a02f44ee8e0069234141b3e656`  
+		Last Modified: Thu, 22 Oct 2020 02:49:03 GMT  
+		Size: 14.3 MB (14295874 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b88dbd52f3b777f992abb3ac2a23494f9afab0eb632651700fdceb6fc5c9ed9`  
-		Last Modified: Wed, 05 Aug 2020 23:47:11 GMT  
-		Size: 300.0 B  
+	-	`sha256:406b42a724aa1a58ca6724079f312040d9b67cb604805e1ffc702b0bc24bfd9a`  
+		Last Modified: Thu, 22 Oct 2020 02:48:58 GMT  
+		Size: 293.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `httpd:2.4.46-alpine` - linux; 386
 
 ```console
-$ docker pull httpd@sha256:f7f1a9f230f6104fe68187e1bed9c1cac09506b4e1c1718aef7724745579b172
+$ docker pull httpd@sha256:81bb5cd938ee4f5456406a64381d33d3f9269b5d582d5981010b018e95f68ad6
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.1 MB (17061371 bytes)**  
+-	Total Size: **16.7 MB (16693283 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d513f1f6cef4f96d0534a42e01c5656c586ddee63462a0c82d7b015f6643caca`
+-	Image ID: `sha256:b2bd352d7990072e9f2876a5423de8855621321d7b654d782995d424abb32ade`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Fri, 29 May 2020 21:38:33 GMT
-ADD file:5624441d97aca5eeb82a582941efc3586397098b8391227a9040ebe434cc1d6b in / 
-# Fri, 29 May 2020 21:38:33 GMT
+# Thu, 22 Oct 2020 02:00:33 GMT
+ADD file:46ad43b4984bcf49c5a888ff3628f23161f55cd1fb062f469e707100c97fa254 in / 
+# Thu, 22 Oct 2020 02:00:33 GMT
 CMD ["/bin/sh"]
-# Thu, 11 Jun 2020 22:45:26 GMT
+# Thu, 22 Oct 2020 03:08:54 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Thu, 11 Jun 2020 22:45:26 GMT
+# Thu, 22 Oct 2020 03:08:54 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Thu, 11 Jun 2020 22:45:26 GMT
+# Thu, 22 Oct 2020 03:08:54 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2020 22:45:27 GMT
+# Thu, 22 Oct 2020 03:08:55 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Thu, 11 Jun 2020 22:45:27 GMT
+# Thu, 22 Oct 2020 03:08:55 GMT
 WORKDIR /usr/local/apache2
-# Wed, 05 Aug 2020 23:41:13 GMT
+# Thu, 22 Oct 2020 03:08:56 GMT
 ENV HTTPD_VERSION=2.4.46
-# Wed, 05 Aug 2020 23:41:13 GMT
+# Thu, 22 Oct 2020 03:08:56 GMT
 ENV HTTPD_SHA256=740eddf6e1c641992b22359cabc66e6325868c3c5e2e3f98faf349b61ecf41ea
-# Wed, 05 Aug 2020 23:41:13 GMT
+# Thu, 22 Oct 2020 03:08:56 GMT
 ENV HTTPD_PATCHES=
-# Wed, 05 Aug 2020 23:42:42 GMT
+# Thu, 22 Oct 2020 03:10:37 GMT
 RUN set -eux; 		runDeps=' 		apr 		apr-util 		apr-util-dbm_db 		apr-util-ldap 		perl 	'; 	apk add --no-cache --virtual .build-deps 		$runDeps 		apr-dev 		apr-util-dev 		ca-certificates 		coreutils 		dpkg-dev dpkg 		gcc 		gnupg 		libc-dev 		curl-dev 		jansson-dev 		libxml2-dev 		lua-dev 		make 		nghttp2-dev 		openssl 		openssl-dev 		pcre-dev 		tar 		zlib-dev 		brotli-dev 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		DE29FB3971E71543FD2DC049508EAEC5302DA568 		13155B0E9E634F42BF6C163FDDBA64BA2C312D2F 		8B39757B1D8A994DF2433ED58B3A601F08C975E5 		31EE1A81B8D066548156D37B7D6DBFD1F08E012A 		A10208FEC3152DD7C0C9B59B361522D782AB7BD1 		3DE024AFDA7A4B15CB6C14410F81AA8AB0D5F771 		EB138C6AF0FC691001B16D93344A844D751D7F27 		CBA5A7C21EC143314C41393E5B968010E04F9A89 		3C016F2B764621BB549C66B516A96495E2226795 		937FB3994A242BA9BF49E93021454AF0CC8B0F7E 		EAD1359A4C0F2D37472AAF28F55DF0293A4E7AC9 		4C1EADADB4EF5007579C919C6635B6C0DE885DD3 		01E475360FCCF1D0F24B9D145D414AE1E005C9CB 		92CCEF0AA7DD46AC3A0F498BCA6939748103A37E 		D395C7573A68B9796D38C258153FA0CD75A67692 		FA39B617B61493FD283503E7EED1EA392261D073 		984FB3350C1D5C7A3282255BB31B213D208F5064 		FE7A49DAA875E890B4167F76CCB2EB46E76CF6D0 		39F6691A0ECF0C50E8BB849CF78875F642721F00 		29A2BA848177B73878277FA475CAA2A3F39B3750 		120A8667241AEDD4A78B46104C042818311A3DE5 		453510BDA6C5855624E009236D0BC73A40581837 		0DE5C55C6BF3B2352DABB89E13249B4FEC88A0BF 		7CDBED100806552182F98844E8E7E00B4DAA1988 		A8BA9617EF3BCCAC3B29B869EDB105896F9522D8 		3E6AC004854F3A7F03566B592FF06894E55B0D0E 		5B5181C2C0AB13E59DA3F7A3EC582EB639FF092C 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		65B2D44FE74BD5E3DE3AC3F082781DE46D5954FA 		8935926745E1CE7E3ED748F6EC99EE267EB5F61A 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 		E3480043595621FE56105F112AB12A7ADC55C003 		93525CFCF6FDFFB3FD9700DD5A4B10AE43B56A27 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		runDeps="$runDeps $( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .httpd-rundeps $runDeps; 	apk del --no-network .build-deps; 		httpd -v
-# Wed, 05 Aug 2020 23:42:43 GMT
+# Thu, 22 Oct 2020 03:10:38 GMT
 STOPSIGNAL SIGWINCH
-# Wed, 05 Aug 2020 23:42:43 GMT
+# Thu, 22 Oct 2020 03:10:38 GMT
 COPY file:c432ff61c4993ecdef4786f48d91a96f8f0707f6179816ccb98db661bfb96b90 in /usr/local/bin/ 
-# Wed, 05 Aug 2020 23:42:43 GMT
+# Thu, 22 Oct 2020 03:10:38 GMT
 EXPOSE 80
-# Wed, 05 Aug 2020 23:42:43 GMT
+# Thu, 22 Oct 2020 03:10:38 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:0625b4155e2a59f647ece47c0cd77ed3196b1f84454fa64ce80cad90e2b9b79e`  
-		Last Modified: Fri, 29 May 2020 21:38:53 GMT  
-		Size: 2.8 MB (2792298 bytes)  
+	-	`sha256:d6ca64ac6f4b6382142ce9a3501652938130a6ec4bb02f3f455ee1f980834cfe`  
+		Last Modified: Thu, 22 Oct 2020 02:00:57 GMT  
+		Size: 2.8 MB (2791407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a5f7c55b9ee8172b7278d6fbd56929cc6cc794038a7138d4476abb5d393e385`  
-		Last Modified: Thu, 11 Jun 2020 22:47:16 GMT  
+	-	`sha256:16c28f1fd07281186fbfe430596f9f3cf3aacfcc6ee8c1f178a508da70159c9c`  
+		Last Modified: Thu, 22 Oct 2020 03:11:01 GMT  
 		Size: 1.2 KB (1232 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4b8819c13b3025df5869216a9330bd63d2436a9dcdde9a750981c9b1ca35fc8`  
-		Last Modified: Thu, 11 Jun 2020 22:47:16 GMT  
-		Size: 147.0 B  
+	-	`sha256:3c04fa86401d7ec6b1ddab8f7294d365834673b05438e3fd3b3c434d8d206c56`  
+		Last Modified: Thu, 22 Oct 2020 03:11:02 GMT  
+		Size: 146.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b20a748b2c867097a05ea0b4f9622d9ee89335d738ff0eea1a5744b3af1c168`  
-		Last Modified: Wed, 05 Aug 2020 23:43:19 GMT  
-		Size: 14.3 MB (14267395 bytes)  
+	-	`sha256:b619614534143ac2bc84e9f86b54ebbe4cc058d96d99f7dbf65f3425f422b22f`  
+		Last Modified: Thu, 22 Oct 2020 03:11:06 GMT  
+		Size: 13.9 MB (13900205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cbb04c4511da2c58ac3456d63fec8753b068a0a6306f182a82a41faa673da3b7`  
-		Last Modified: Wed, 05 Aug 2020 23:43:14 GMT  
-		Size: 299.0 B  
+	-	`sha256:7dba0bf9fea80ca7832c9a139ea21a9ae140fa10312833f6de9bb7762ac9bc1f`  
+		Last Modified: Thu, 22 Oct 2020 03:11:01 GMT  
+		Size: 293.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `httpd:2.4.46-alpine` - linux; ppc64le
@@ -2121,75 +2121,75 @@ CMD ["httpd-foreground"]
 ### `httpd:2.4.46-alpine` - linux; s390x
 
 ```console
-$ docker pull httpd@sha256:ef52cea9c91a885585c5381fc208dfdb505f327d95456e5b437f0798ad468db7
+$ docker pull httpd@sha256:b58a6eba5ec863c4210e59aebee576d66fe251d93a62d7a6d956ccee8ef1cfe6
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17823720 bytes)**  
+-	Total Size: **17.4 MB (17442413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d599582185541695b1477a34fd3b01adce2c01a364e561269a0b28cb748c43c2`
+-	Image ID: `sha256:eef2b7a2aa5321ae3f5bb64121849e98966072a42d7f41a9eb18b5b57e4bc28f`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Fri, 29 May 2020 21:41:39 GMT
-ADD file:9799ce3b2f782a28e10b1846cd9b3db827fa99c9bc601feb268456195856814e in / 
-# Fri, 29 May 2020 21:41:39 GMT
+# Thu, 22 Oct 2020 01:59:08 GMT
+ADD file:e07d6f40b1afc3d3eff230bc89e84704eb762706a373a60c6bea6a45b2287464 in / 
+# Thu, 22 Oct 2020 01:59:09 GMT
 CMD ["/bin/sh"]
-# Thu, 11 Jun 2020 19:39:11 GMT
+# Thu, 22 Oct 2020 03:06:50 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Thu, 11 Jun 2020 19:39:11 GMT
+# Thu, 22 Oct 2020 03:06:50 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Thu, 11 Jun 2020 19:39:11 GMT
+# Thu, 22 Oct 2020 03:06:51 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2020 19:39:12 GMT
+# Thu, 22 Oct 2020 03:06:52 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Thu, 11 Jun 2020 19:39:12 GMT
+# Thu, 22 Oct 2020 03:06:52 GMT
 WORKDIR /usr/local/apache2
-# Wed, 05 Aug 2020 23:43:31 GMT
+# Thu, 22 Oct 2020 03:06:53 GMT
 ENV HTTPD_VERSION=2.4.46
-# Wed, 05 Aug 2020 23:43:31 GMT
+# Thu, 22 Oct 2020 03:06:53 GMT
 ENV HTTPD_SHA256=740eddf6e1c641992b22359cabc66e6325868c3c5e2e3f98faf349b61ecf41ea
-# Wed, 05 Aug 2020 23:43:31 GMT
+# Thu, 22 Oct 2020 03:06:54 GMT
 ENV HTTPD_PATCHES=
-# Wed, 05 Aug 2020 23:44:56 GMT
+# Thu, 22 Oct 2020 03:08:54 GMT
 RUN set -eux; 		runDeps=' 		apr 		apr-util 		apr-util-dbm_db 		apr-util-ldap 		perl 	'; 	apk add --no-cache --virtual .build-deps 		$runDeps 		apr-dev 		apr-util-dev 		ca-certificates 		coreutils 		dpkg-dev dpkg 		gcc 		gnupg 		libc-dev 		curl-dev 		jansson-dev 		libxml2-dev 		lua-dev 		make 		nghttp2-dev 		openssl 		openssl-dev 		pcre-dev 		tar 		zlib-dev 		brotli-dev 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		DE29FB3971E71543FD2DC049508EAEC5302DA568 		13155B0E9E634F42BF6C163FDDBA64BA2C312D2F 		8B39757B1D8A994DF2433ED58B3A601F08C975E5 		31EE1A81B8D066548156D37B7D6DBFD1F08E012A 		A10208FEC3152DD7C0C9B59B361522D782AB7BD1 		3DE024AFDA7A4B15CB6C14410F81AA8AB0D5F771 		EB138C6AF0FC691001B16D93344A844D751D7F27 		CBA5A7C21EC143314C41393E5B968010E04F9A89 		3C016F2B764621BB549C66B516A96495E2226795 		937FB3994A242BA9BF49E93021454AF0CC8B0F7E 		EAD1359A4C0F2D37472AAF28F55DF0293A4E7AC9 		4C1EADADB4EF5007579C919C6635B6C0DE885DD3 		01E475360FCCF1D0F24B9D145D414AE1E005C9CB 		92CCEF0AA7DD46AC3A0F498BCA6939748103A37E 		D395C7573A68B9796D38C258153FA0CD75A67692 		FA39B617B61493FD283503E7EED1EA392261D073 		984FB3350C1D5C7A3282255BB31B213D208F5064 		FE7A49DAA875E890B4167F76CCB2EB46E76CF6D0 		39F6691A0ECF0C50E8BB849CF78875F642721F00 		29A2BA848177B73878277FA475CAA2A3F39B3750 		120A8667241AEDD4A78B46104C042818311A3DE5 		453510BDA6C5855624E009236D0BC73A40581837 		0DE5C55C6BF3B2352DABB89E13249B4FEC88A0BF 		7CDBED100806552182F98844E8E7E00B4DAA1988 		A8BA9617EF3BCCAC3B29B869EDB105896F9522D8 		3E6AC004854F3A7F03566B592FF06894E55B0D0E 		5B5181C2C0AB13E59DA3F7A3EC582EB639FF092C 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		65B2D44FE74BD5E3DE3AC3F082781DE46D5954FA 		8935926745E1CE7E3ED748F6EC99EE267EB5F61A 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 		E3480043595621FE56105F112AB12A7ADC55C003 		93525CFCF6FDFFB3FD9700DD5A4B10AE43B56A27 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		runDeps="$runDeps $( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .httpd-rundeps $runDeps; 	apk del --no-network .build-deps; 		httpd -v
-# Wed, 05 Aug 2020 23:44:58 GMT
+# Thu, 22 Oct 2020 03:08:57 GMT
 STOPSIGNAL SIGWINCH
-# Wed, 05 Aug 2020 23:44:58 GMT
+# Thu, 22 Oct 2020 03:08:58 GMT
 COPY file:c432ff61c4993ecdef4786f48d91a96f8f0707f6179816ccb98db661bfb96b90 in /usr/local/bin/ 
-# Wed, 05 Aug 2020 23:44:58 GMT
+# Thu, 22 Oct 2020 03:08:58 GMT
 EXPOSE 80
-# Wed, 05 Aug 2020 23:44:58 GMT
+# Thu, 22 Oct 2020 03:08:59 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:8fb3d41b2e9a59630b51745f257cd2561f96bcd15cf309fcc20120d5fcee8c5b`  
-		Last Modified: Fri, 29 May 2020 21:42:03 GMT  
-		Size: 2.6 MB (2566189 bytes)  
+	-	`sha256:a4c84ece3d2b98927d25f13a4f367bfd96cbfae272f6ff1117d74c84b92d11d3`  
+		Last Modified: Thu, 22 Oct 2020 01:59:37 GMT  
+		Size: 2.6 MB (2565829 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ace58060358a71a2b7d6ce684fc8d43a04f338ccd973e43f23f3931b5e36d28`  
-		Last Modified: Thu, 11 Jun 2020 19:40:36 GMT  
-		Size: 1.3 KB (1261 bytes)  
+	-	`sha256:0dbdfad91e90d42a1a974be87e1433235819a4e7fcce16d7652f6489cb0f7c36`  
+		Last Modified: Thu, 22 Oct 2020 03:09:18 GMT  
+		Size: 1.3 KB (1259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65e2ce8f96463bee45983ff1478918bf748b053efa26d1dc1094d84e1943c88d`  
-		Last Modified: Thu, 11 Jun 2020 19:40:36 GMT  
+	-	`sha256:b0d2f601e0b02b29071e80dde2adaaca633ef299dd8cf549439374b534b42ba2`  
+		Last Modified: Thu, 22 Oct 2020 03:09:19 GMT  
 		Size: 178.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:111354997ba8e9b9fab2cc0d2c2f734ac9f4af63841b0400a8ca3bfa64c2af5b`  
-		Last Modified: Wed, 05 Aug 2020 23:45:24 GMT  
-		Size: 15.3 MB (15255793 bytes)  
+	-	`sha256:f11d5e22c9e1bc49ca01f99fda886bd8ff21609e5c2f30de01c78db716acf5ab`  
+		Last Modified: Thu, 22 Oct 2020 03:09:20 GMT  
+		Size: 14.9 MB (14874855 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3013694be48bf38a971455f1b3b0cabc1f96ae86be0614b9ccc72be56d81de83`  
-		Last Modified: Wed, 05 Aug 2020 23:45:21 GMT  
-		Size: 299.0 B  
+	-	`sha256:2e7ec924cba629b4ac05bd9ad9a24fff0748fc6f3907178e2c80d08505e49e77`  
+		Last Modified: Thu, 22 Oct 2020 03:09:17 GMT  
+		Size: 292.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `httpd:2.4-alpine`
 
 ```console
-$ docker pull httpd@sha256:d27f57dcfaf89612b95e5aedbe628feb3d358bac08f046585f287c4e31acfc87
+$ docker pull httpd@sha256:69ab7ff5231c97e1b349fe4fea278cc38c84e4246d5923f85ce04e4fc3571bd6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2341,205 +2341,205 @@ CMD ["httpd-foreground"]
 ### `httpd:2.4-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull httpd@sha256:c7765e733d24a8b8728f0ac5df8342e340c53d1c09884d24252eda5e85d5ee3f
+$ docker pull httpd@sha256:cffd471f1f7234e4e638c3dd7f2e9a66ec141ac291588bdcb2d6a86d3049b4e9
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.7 MB (15702128 bytes)**  
+-	Total Size: **15.4 MB (15356729 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74df8a2b744aec0fe56817db03350fc9b2035c30df84add73fd2e5e6a4693388`
+-	Image ID: `sha256:cce6982f83eb65d5c4c1f7581c15ceb3972776acae0cc14c79de75bca3d18908`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Fri, 29 May 2020 21:02:07 GMT
-ADD file:e97bf0d217846312b19a9f7264604851aedd125c23b4d291eed4c69b880dce26 in / 
-# Fri, 29 May 2020 21:02:08 GMT
+# Thu, 22 Oct 2020 01:58:13 GMT
+ADD file:46f89172426e9f5b1d669a2ca7ab218fc2deaef1caeeab88f2b5bd443ac9773d in / 
+# Thu, 22 Oct 2020 01:58:14 GMT
 CMD ["/bin/sh"]
-# Thu, 11 Jun 2020 20:27:37 GMT
+# Thu, 22 Oct 2020 03:01:14 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Thu, 11 Jun 2020 20:27:38 GMT
+# Thu, 22 Oct 2020 03:01:15 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Thu, 11 Jun 2020 20:27:39 GMT
+# Thu, 22 Oct 2020 03:01:16 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2020 20:27:41 GMT
+# Thu, 22 Oct 2020 03:01:20 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Thu, 11 Jun 2020 20:27:42 GMT
+# Thu, 22 Oct 2020 03:01:25 GMT
 WORKDIR /usr/local/apache2
-# Thu, 06 Aug 2020 00:06:45 GMT
+# Thu, 22 Oct 2020 03:01:25 GMT
 ENV HTTPD_VERSION=2.4.46
-# Thu, 06 Aug 2020 00:06:51 GMT
+# Thu, 22 Oct 2020 03:01:27 GMT
 ENV HTTPD_SHA256=740eddf6e1c641992b22359cabc66e6325868c3c5e2e3f98faf349b61ecf41ea
-# Thu, 06 Aug 2020 00:06:59 GMT
+# Thu, 22 Oct 2020 03:01:28 GMT
 ENV HTTPD_PATCHES=
-# Thu, 06 Aug 2020 00:08:52 GMT
+# Thu, 22 Oct 2020 03:03:40 GMT
 RUN set -eux; 		runDeps=' 		apr 		apr-util 		apr-util-dbm_db 		apr-util-ldap 		perl 	'; 	apk add --no-cache --virtual .build-deps 		$runDeps 		apr-dev 		apr-util-dev 		ca-certificates 		coreutils 		dpkg-dev dpkg 		gcc 		gnupg 		libc-dev 		curl-dev 		jansson-dev 		libxml2-dev 		lua-dev 		make 		nghttp2-dev 		openssl 		openssl-dev 		pcre-dev 		tar 		zlib-dev 		brotli-dev 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		DE29FB3971E71543FD2DC049508EAEC5302DA568 		13155B0E9E634F42BF6C163FDDBA64BA2C312D2F 		8B39757B1D8A994DF2433ED58B3A601F08C975E5 		31EE1A81B8D066548156D37B7D6DBFD1F08E012A 		A10208FEC3152DD7C0C9B59B361522D782AB7BD1 		3DE024AFDA7A4B15CB6C14410F81AA8AB0D5F771 		EB138C6AF0FC691001B16D93344A844D751D7F27 		CBA5A7C21EC143314C41393E5B968010E04F9A89 		3C016F2B764621BB549C66B516A96495E2226795 		937FB3994A242BA9BF49E93021454AF0CC8B0F7E 		EAD1359A4C0F2D37472AAF28F55DF0293A4E7AC9 		4C1EADADB4EF5007579C919C6635B6C0DE885DD3 		01E475360FCCF1D0F24B9D145D414AE1E005C9CB 		92CCEF0AA7DD46AC3A0F498BCA6939748103A37E 		D395C7573A68B9796D38C258153FA0CD75A67692 		FA39B617B61493FD283503E7EED1EA392261D073 		984FB3350C1D5C7A3282255BB31B213D208F5064 		FE7A49DAA875E890B4167F76CCB2EB46E76CF6D0 		39F6691A0ECF0C50E8BB849CF78875F642721F00 		29A2BA848177B73878277FA475CAA2A3F39B3750 		120A8667241AEDD4A78B46104C042818311A3DE5 		453510BDA6C5855624E009236D0BC73A40581837 		0DE5C55C6BF3B2352DABB89E13249B4FEC88A0BF 		7CDBED100806552182F98844E8E7E00B4DAA1988 		A8BA9617EF3BCCAC3B29B869EDB105896F9522D8 		3E6AC004854F3A7F03566B592FF06894E55B0D0E 		5B5181C2C0AB13E59DA3F7A3EC582EB639FF092C 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		65B2D44FE74BD5E3DE3AC3F082781DE46D5954FA 		8935926745E1CE7E3ED748F6EC99EE267EB5F61A 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 		E3480043595621FE56105F112AB12A7ADC55C003 		93525CFCF6FDFFB3FD9700DD5A4B10AE43B56A27 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		runDeps="$runDeps $( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .httpd-rundeps $runDeps; 	apk del --no-network .build-deps; 		httpd -v
-# Thu, 06 Aug 2020 00:08:59 GMT
+# Thu, 22 Oct 2020 03:03:42 GMT
 STOPSIGNAL SIGWINCH
-# Thu, 06 Aug 2020 00:09:12 GMT
+# Thu, 22 Oct 2020 03:03:44 GMT
 COPY file:c432ff61c4993ecdef4786f48d91a96f8f0707f6179816ccb98db661bfb96b90 in /usr/local/bin/ 
-# Thu, 06 Aug 2020 00:09:19 GMT
+# Thu, 22 Oct 2020 03:03:45 GMT
 EXPOSE 80
-# Thu, 06 Aug 2020 00:09:26 GMT
+# Thu, 22 Oct 2020 03:03:46 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:52278dd8e57993669c5b72a9620e89bebdc098f2af2379caaa8945f7403f77a2`  
-		Last Modified: Fri, 29 May 2020 21:02:38 GMT  
-		Size: 2.4 MB (2406763 bytes)  
+	-	`sha256:5f2023fd85a4e68f37fe41421fd89f30e69b98a645613521c57c01317561eee3`  
+		Last Modified: Thu, 22 Oct 2020 01:58:45 GMT  
+		Size: 2.4 MB (2405675 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78ef0674c24b17f3fa6aa6c6082c306c63e13c86688e0d7edbe73746bc1b8788`  
-		Last Modified: Thu, 11 Jun 2020 20:30:21 GMT  
+	-	`sha256:09c06c1a05d6886eb89747851a023386583ef70e9ce8002e7834f5f8acd76ce8`  
+		Last Modified: Thu, 22 Oct 2020 03:04:11 GMT  
 		Size: 1.3 KB (1256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb2270c655717105f991689c0eebd902166e3dc15c231d61cf2c9e974f23a383`  
-		Last Modified: Thu, 11 Jun 2020 20:30:21 GMT  
+	-	`sha256:e90349162eef3383c8b8b5f975f02a04a517b42c0384ba282e6027cd5d35fcff`  
+		Last Modified: Thu, 22 Oct 2020 03:04:10 GMT  
 		Size: 178.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3554472286798d23d815827f38a94788865e7626db07871169b7c42829736c2d`  
-		Last Modified: Thu, 06 Aug 2020 00:10:15 GMT  
-		Size: 13.3 MB (13293634 bytes)  
+	-	`sha256:a63d79b96f2362e041541c35135d2fbfb81c3ac4ebce890a6019c09766f1a115`  
+		Last Modified: Thu, 22 Oct 2020 03:04:15 GMT  
+		Size: 12.9 MB (12949324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:508c165a1172a74df38b3ffe764c88ea9b538fb8d8b5e095f95566b3ebbcc7bf`  
-		Last Modified: Thu, 06 Aug 2020 00:10:10 GMT  
-		Size: 297.0 B  
+	-	`sha256:b3ff9cf0073eed816669492ed26b977aa7d33f7c11ffad4b48d1184f2aeb1350`  
+		Last Modified: Thu, 22 Oct 2020 03:04:10 GMT  
+		Size: 296.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `httpd:2.4-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull httpd@sha256:97f81a62b2a635da3ce9bd9101969c30775d0f2117ed2e747cc0b796bd94902a
+$ docker pull httpd@sha256:a1734f1d40c9b1534a7d4fd5b1836f23fb0fbdc03f1b83f75e7af4d858ac2be2
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.4 MB (17395396 bytes)**  
+-	Total Size: **17.0 MB (17004160 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba55192a9c7628ed8a41ffa860a2eb745e031216802d9f21d103ea8c30d3dd5f`
+-	Image ID: `sha256:1d5df4b62cc33ae3781a34f34d583476fff319f8afc9726b741c48e1b4ed55b7`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Fri, 29 May 2020 21:43:19 GMT
-ADD file:7574aee4e37a85460ab889212d52912723a9b30dda1c060548f0deb4a05fc398 in / 
-# Fri, 29 May 2020 21:43:20 GMT
+# Thu, 22 Oct 2020 02:01:01 GMT
+ADD file:55c4e9752146061a2b5f76027221329f423687987c0744ef577130c60ff0ba42 in / 
+# Thu, 22 Oct 2020 02:01:06 GMT
 CMD ["/bin/sh"]
-# Thu, 11 Jun 2020 20:39:01 GMT
+# Thu, 22 Oct 2020 02:46:51 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Thu, 11 Jun 2020 20:39:02 GMT
+# Thu, 22 Oct 2020 02:46:51 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Thu, 11 Jun 2020 20:39:02 GMT
+# Thu, 22 Oct 2020 02:46:52 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2020 20:39:04 GMT
+# Thu, 22 Oct 2020 02:46:55 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Thu, 11 Jun 2020 20:39:05 GMT
+# Thu, 22 Oct 2020 02:46:55 GMT
 WORKDIR /usr/local/apache2
-# Wed, 05 Aug 2020 23:44:14 GMT
+# Thu, 22 Oct 2020 02:46:56 GMT
 ENV HTTPD_VERSION=2.4.46
-# Wed, 05 Aug 2020 23:44:15 GMT
+# Thu, 22 Oct 2020 02:46:57 GMT
 ENV HTTPD_SHA256=740eddf6e1c641992b22359cabc66e6325868c3c5e2e3f98faf349b61ecf41ea
-# Wed, 05 Aug 2020 23:44:16 GMT
+# Thu, 22 Oct 2020 02:46:57 GMT
 ENV HTTPD_PATCHES=
-# Wed, 05 Aug 2020 23:46:31 GMT
+# Thu, 22 Oct 2020 02:48:28 GMT
 RUN set -eux; 		runDeps=' 		apr 		apr-util 		apr-util-dbm_db 		apr-util-ldap 		perl 	'; 	apk add --no-cache --virtual .build-deps 		$runDeps 		apr-dev 		apr-util-dev 		ca-certificates 		coreutils 		dpkg-dev dpkg 		gcc 		gnupg 		libc-dev 		curl-dev 		jansson-dev 		libxml2-dev 		lua-dev 		make 		nghttp2-dev 		openssl 		openssl-dev 		pcre-dev 		tar 		zlib-dev 		brotli-dev 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		DE29FB3971E71543FD2DC049508EAEC5302DA568 		13155B0E9E634F42BF6C163FDDBA64BA2C312D2F 		8B39757B1D8A994DF2433ED58B3A601F08C975E5 		31EE1A81B8D066548156D37B7D6DBFD1F08E012A 		A10208FEC3152DD7C0C9B59B361522D782AB7BD1 		3DE024AFDA7A4B15CB6C14410F81AA8AB0D5F771 		EB138C6AF0FC691001B16D93344A844D751D7F27 		CBA5A7C21EC143314C41393E5B968010E04F9A89 		3C016F2B764621BB549C66B516A96495E2226795 		937FB3994A242BA9BF49E93021454AF0CC8B0F7E 		EAD1359A4C0F2D37472AAF28F55DF0293A4E7AC9 		4C1EADADB4EF5007579C919C6635B6C0DE885DD3 		01E475360FCCF1D0F24B9D145D414AE1E005C9CB 		92CCEF0AA7DD46AC3A0F498BCA6939748103A37E 		D395C7573A68B9796D38C258153FA0CD75A67692 		FA39B617B61493FD283503E7EED1EA392261D073 		984FB3350C1D5C7A3282255BB31B213D208F5064 		FE7A49DAA875E890B4167F76CCB2EB46E76CF6D0 		39F6691A0ECF0C50E8BB849CF78875F642721F00 		29A2BA848177B73878277FA475CAA2A3F39B3750 		120A8667241AEDD4A78B46104C042818311A3DE5 		453510BDA6C5855624E009236D0BC73A40581837 		0DE5C55C6BF3B2352DABB89E13249B4FEC88A0BF 		7CDBED100806552182F98844E8E7E00B4DAA1988 		A8BA9617EF3BCCAC3B29B869EDB105896F9522D8 		3E6AC004854F3A7F03566B592FF06894E55B0D0E 		5B5181C2C0AB13E59DA3F7A3EC582EB639FF092C 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		65B2D44FE74BD5E3DE3AC3F082781DE46D5954FA 		8935926745E1CE7E3ED748F6EC99EE267EB5F61A 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 		E3480043595621FE56105F112AB12A7ADC55C003 		93525CFCF6FDFFB3FD9700DD5A4B10AE43B56A27 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		runDeps="$runDeps $( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .httpd-rundeps $runDeps; 	apk del --no-network .build-deps; 		httpd -v
-# Wed, 05 Aug 2020 23:46:33 GMT
+# Thu, 22 Oct 2020 02:48:29 GMT
 STOPSIGNAL SIGWINCH
-# Wed, 05 Aug 2020 23:46:33 GMT
+# Thu, 22 Oct 2020 02:48:30 GMT
 COPY file:c432ff61c4993ecdef4786f48d91a96f8f0707f6179816ccb98db661bfb96b90 in /usr/local/bin/ 
-# Wed, 05 Aug 2020 23:46:34 GMT
+# Thu, 22 Oct 2020 02:48:31 GMT
 EXPOSE 80
-# Wed, 05 Aug 2020 23:46:34 GMT
+# Thu, 22 Oct 2020 02:48:32 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:b538f80385f9b48122e3da068c932a96ea5018afa3c7be79da00437414bd18cd`  
-		Last Modified: Fri, 29 May 2020 21:43:57 GMT  
-		Size: 2.7 MB (2707964 bytes)  
+	-	`sha256:5f621e34cdf485f410766dc9a0fc7855d17916d0f6583b58cbdce7c28831f527`  
+		Last Modified: Thu, 22 Oct 2020 02:01:38 GMT  
+		Size: 2.7 MB (2706555 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91ab091a8f2c93b8aa66275d42d0acb1a375ec1a1d5cfbb870f73c989bc7f223`  
-		Last Modified: Thu, 11 Jun 2020 20:41:11 GMT  
+	-	`sha256:2be98b141cc5464db4639c97bc4b6610d287f51c6334b2fe9047c62cdd255027`  
+		Last Modified: Thu, 22 Oct 2020 02:48:58 GMT  
 		Size: 1.3 KB (1260 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d35563418dbe61c2ec9a4fe59ffd9bbfff689a3e9215e91be2ad8a61e918c306`  
-		Last Modified: Thu, 11 Jun 2020 20:41:11 GMT  
+	-	`sha256:e6f6e6762ef9f4b72652e5773b58f325351908e77ee2a9b5189321d02e808f39`  
+		Last Modified: Thu, 22 Oct 2020 02:48:58 GMT  
 		Size: 178.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed94bfbb493508eea5e41278bfcdd75bb354598413435ebb277ed4544e89fd02`  
-		Last Modified: Wed, 05 Aug 2020 23:47:16 GMT  
-		Size: 14.7 MB (14685694 bytes)  
+	-	`sha256:abf441e9978ab7b3f70f3fb5d3d0d9299f8f28a02f44ee8e0069234141b3e656`  
+		Last Modified: Thu, 22 Oct 2020 02:49:03 GMT  
+		Size: 14.3 MB (14295874 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b88dbd52f3b777f992abb3ac2a23494f9afab0eb632651700fdceb6fc5c9ed9`  
-		Last Modified: Wed, 05 Aug 2020 23:47:11 GMT  
-		Size: 300.0 B  
+	-	`sha256:406b42a724aa1a58ca6724079f312040d9b67cb604805e1ffc702b0bc24bfd9a`  
+		Last Modified: Thu, 22 Oct 2020 02:48:58 GMT  
+		Size: 293.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `httpd:2.4-alpine` - linux; 386
 
 ```console
-$ docker pull httpd@sha256:f7f1a9f230f6104fe68187e1bed9c1cac09506b4e1c1718aef7724745579b172
+$ docker pull httpd@sha256:81bb5cd938ee4f5456406a64381d33d3f9269b5d582d5981010b018e95f68ad6
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.1 MB (17061371 bytes)**  
+-	Total Size: **16.7 MB (16693283 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d513f1f6cef4f96d0534a42e01c5656c586ddee63462a0c82d7b015f6643caca`
+-	Image ID: `sha256:b2bd352d7990072e9f2876a5423de8855621321d7b654d782995d424abb32ade`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Fri, 29 May 2020 21:38:33 GMT
-ADD file:5624441d97aca5eeb82a582941efc3586397098b8391227a9040ebe434cc1d6b in / 
-# Fri, 29 May 2020 21:38:33 GMT
+# Thu, 22 Oct 2020 02:00:33 GMT
+ADD file:46ad43b4984bcf49c5a888ff3628f23161f55cd1fb062f469e707100c97fa254 in / 
+# Thu, 22 Oct 2020 02:00:33 GMT
 CMD ["/bin/sh"]
-# Thu, 11 Jun 2020 22:45:26 GMT
+# Thu, 22 Oct 2020 03:08:54 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Thu, 11 Jun 2020 22:45:26 GMT
+# Thu, 22 Oct 2020 03:08:54 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Thu, 11 Jun 2020 22:45:26 GMT
+# Thu, 22 Oct 2020 03:08:54 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2020 22:45:27 GMT
+# Thu, 22 Oct 2020 03:08:55 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Thu, 11 Jun 2020 22:45:27 GMT
+# Thu, 22 Oct 2020 03:08:55 GMT
 WORKDIR /usr/local/apache2
-# Wed, 05 Aug 2020 23:41:13 GMT
+# Thu, 22 Oct 2020 03:08:56 GMT
 ENV HTTPD_VERSION=2.4.46
-# Wed, 05 Aug 2020 23:41:13 GMT
+# Thu, 22 Oct 2020 03:08:56 GMT
 ENV HTTPD_SHA256=740eddf6e1c641992b22359cabc66e6325868c3c5e2e3f98faf349b61ecf41ea
-# Wed, 05 Aug 2020 23:41:13 GMT
+# Thu, 22 Oct 2020 03:08:56 GMT
 ENV HTTPD_PATCHES=
-# Wed, 05 Aug 2020 23:42:42 GMT
+# Thu, 22 Oct 2020 03:10:37 GMT
 RUN set -eux; 		runDeps=' 		apr 		apr-util 		apr-util-dbm_db 		apr-util-ldap 		perl 	'; 	apk add --no-cache --virtual .build-deps 		$runDeps 		apr-dev 		apr-util-dev 		ca-certificates 		coreutils 		dpkg-dev dpkg 		gcc 		gnupg 		libc-dev 		curl-dev 		jansson-dev 		libxml2-dev 		lua-dev 		make 		nghttp2-dev 		openssl 		openssl-dev 		pcre-dev 		tar 		zlib-dev 		brotli-dev 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		DE29FB3971E71543FD2DC049508EAEC5302DA568 		13155B0E9E634F42BF6C163FDDBA64BA2C312D2F 		8B39757B1D8A994DF2433ED58B3A601F08C975E5 		31EE1A81B8D066548156D37B7D6DBFD1F08E012A 		A10208FEC3152DD7C0C9B59B361522D782AB7BD1 		3DE024AFDA7A4B15CB6C14410F81AA8AB0D5F771 		EB138C6AF0FC691001B16D93344A844D751D7F27 		CBA5A7C21EC143314C41393E5B968010E04F9A89 		3C016F2B764621BB549C66B516A96495E2226795 		937FB3994A242BA9BF49E93021454AF0CC8B0F7E 		EAD1359A4C0F2D37472AAF28F55DF0293A4E7AC9 		4C1EADADB4EF5007579C919C6635B6C0DE885DD3 		01E475360FCCF1D0F24B9D145D414AE1E005C9CB 		92CCEF0AA7DD46AC3A0F498BCA6939748103A37E 		D395C7573A68B9796D38C258153FA0CD75A67692 		FA39B617B61493FD283503E7EED1EA392261D073 		984FB3350C1D5C7A3282255BB31B213D208F5064 		FE7A49DAA875E890B4167F76CCB2EB46E76CF6D0 		39F6691A0ECF0C50E8BB849CF78875F642721F00 		29A2BA848177B73878277FA475CAA2A3F39B3750 		120A8667241AEDD4A78B46104C042818311A3DE5 		453510BDA6C5855624E009236D0BC73A40581837 		0DE5C55C6BF3B2352DABB89E13249B4FEC88A0BF 		7CDBED100806552182F98844E8E7E00B4DAA1988 		A8BA9617EF3BCCAC3B29B869EDB105896F9522D8 		3E6AC004854F3A7F03566B592FF06894E55B0D0E 		5B5181C2C0AB13E59DA3F7A3EC582EB639FF092C 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		65B2D44FE74BD5E3DE3AC3F082781DE46D5954FA 		8935926745E1CE7E3ED748F6EC99EE267EB5F61A 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 		E3480043595621FE56105F112AB12A7ADC55C003 		93525CFCF6FDFFB3FD9700DD5A4B10AE43B56A27 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		runDeps="$runDeps $( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .httpd-rundeps $runDeps; 	apk del --no-network .build-deps; 		httpd -v
-# Wed, 05 Aug 2020 23:42:43 GMT
+# Thu, 22 Oct 2020 03:10:38 GMT
 STOPSIGNAL SIGWINCH
-# Wed, 05 Aug 2020 23:42:43 GMT
+# Thu, 22 Oct 2020 03:10:38 GMT
 COPY file:c432ff61c4993ecdef4786f48d91a96f8f0707f6179816ccb98db661bfb96b90 in /usr/local/bin/ 
-# Wed, 05 Aug 2020 23:42:43 GMT
+# Thu, 22 Oct 2020 03:10:38 GMT
 EXPOSE 80
-# Wed, 05 Aug 2020 23:42:43 GMT
+# Thu, 22 Oct 2020 03:10:38 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:0625b4155e2a59f647ece47c0cd77ed3196b1f84454fa64ce80cad90e2b9b79e`  
-		Last Modified: Fri, 29 May 2020 21:38:53 GMT  
-		Size: 2.8 MB (2792298 bytes)  
+	-	`sha256:d6ca64ac6f4b6382142ce9a3501652938130a6ec4bb02f3f455ee1f980834cfe`  
+		Last Modified: Thu, 22 Oct 2020 02:00:57 GMT  
+		Size: 2.8 MB (2791407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a5f7c55b9ee8172b7278d6fbd56929cc6cc794038a7138d4476abb5d393e385`  
-		Last Modified: Thu, 11 Jun 2020 22:47:16 GMT  
+	-	`sha256:16c28f1fd07281186fbfe430596f9f3cf3aacfcc6ee8c1f178a508da70159c9c`  
+		Last Modified: Thu, 22 Oct 2020 03:11:01 GMT  
 		Size: 1.2 KB (1232 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4b8819c13b3025df5869216a9330bd63d2436a9dcdde9a750981c9b1ca35fc8`  
-		Last Modified: Thu, 11 Jun 2020 22:47:16 GMT  
-		Size: 147.0 B  
+	-	`sha256:3c04fa86401d7ec6b1ddab8f7294d365834673b05438e3fd3b3c434d8d206c56`  
+		Last Modified: Thu, 22 Oct 2020 03:11:02 GMT  
+		Size: 146.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b20a748b2c867097a05ea0b4f9622d9ee89335d738ff0eea1a5744b3af1c168`  
-		Last Modified: Wed, 05 Aug 2020 23:43:19 GMT  
-		Size: 14.3 MB (14267395 bytes)  
+	-	`sha256:b619614534143ac2bc84e9f86b54ebbe4cc058d96d99f7dbf65f3425f422b22f`  
+		Last Modified: Thu, 22 Oct 2020 03:11:06 GMT  
+		Size: 13.9 MB (13900205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cbb04c4511da2c58ac3456d63fec8753b068a0a6306f182a82a41faa673da3b7`  
-		Last Modified: Wed, 05 Aug 2020 23:43:14 GMT  
-		Size: 299.0 B  
+	-	`sha256:7dba0bf9fea80ca7832c9a139ea21a9ae140fa10312833f6de9bb7762ac9bc1f`  
+		Last Modified: Thu, 22 Oct 2020 03:11:01 GMT  
+		Size: 293.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `httpd:2.4-alpine` - linux; ppc64le
@@ -2613,75 +2613,75 @@ CMD ["httpd-foreground"]
 ### `httpd:2.4-alpine` - linux; s390x
 
 ```console
-$ docker pull httpd@sha256:ef52cea9c91a885585c5381fc208dfdb505f327d95456e5b437f0798ad468db7
+$ docker pull httpd@sha256:b58a6eba5ec863c4210e59aebee576d66fe251d93a62d7a6d956ccee8ef1cfe6
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17823720 bytes)**  
+-	Total Size: **17.4 MB (17442413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d599582185541695b1477a34fd3b01adce2c01a364e561269a0b28cb748c43c2`
+-	Image ID: `sha256:eef2b7a2aa5321ae3f5bb64121849e98966072a42d7f41a9eb18b5b57e4bc28f`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Fri, 29 May 2020 21:41:39 GMT
-ADD file:9799ce3b2f782a28e10b1846cd9b3db827fa99c9bc601feb268456195856814e in / 
-# Fri, 29 May 2020 21:41:39 GMT
+# Thu, 22 Oct 2020 01:59:08 GMT
+ADD file:e07d6f40b1afc3d3eff230bc89e84704eb762706a373a60c6bea6a45b2287464 in / 
+# Thu, 22 Oct 2020 01:59:09 GMT
 CMD ["/bin/sh"]
-# Thu, 11 Jun 2020 19:39:11 GMT
+# Thu, 22 Oct 2020 03:06:50 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Thu, 11 Jun 2020 19:39:11 GMT
+# Thu, 22 Oct 2020 03:06:50 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Thu, 11 Jun 2020 19:39:11 GMT
+# Thu, 22 Oct 2020 03:06:51 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2020 19:39:12 GMT
+# Thu, 22 Oct 2020 03:06:52 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Thu, 11 Jun 2020 19:39:12 GMT
+# Thu, 22 Oct 2020 03:06:52 GMT
 WORKDIR /usr/local/apache2
-# Wed, 05 Aug 2020 23:43:31 GMT
+# Thu, 22 Oct 2020 03:06:53 GMT
 ENV HTTPD_VERSION=2.4.46
-# Wed, 05 Aug 2020 23:43:31 GMT
+# Thu, 22 Oct 2020 03:06:53 GMT
 ENV HTTPD_SHA256=740eddf6e1c641992b22359cabc66e6325868c3c5e2e3f98faf349b61ecf41ea
-# Wed, 05 Aug 2020 23:43:31 GMT
+# Thu, 22 Oct 2020 03:06:54 GMT
 ENV HTTPD_PATCHES=
-# Wed, 05 Aug 2020 23:44:56 GMT
+# Thu, 22 Oct 2020 03:08:54 GMT
 RUN set -eux; 		runDeps=' 		apr 		apr-util 		apr-util-dbm_db 		apr-util-ldap 		perl 	'; 	apk add --no-cache --virtual .build-deps 		$runDeps 		apr-dev 		apr-util-dev 		ca-certificates 		coreutils 		dpkg-dev dpkg 		gcc 		gnupg 		libc-dev 		curl-dev 		jansson-dev 		libxml2-dev 		lua-dev 		make 		nghttp2-dev 		openssl 		openssl-dev 		pcre-dev 		tar 		zlib-dev 		brotli-dev 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		DE29FB3971E71543FD2DC049508EAEC5302DA568 		13155B0E9E634F42BF6C163FDDBA64BA2C312D2F 		8B39757B1D8A994DF2433ED58B3A601F08C975E5 		31EE1A81B8D066548156D37B7D6DBFD1F08E012A 		A10208FEC3152DD7C0C9B59B361522D782AB7BD1 		3DE024AFDA7A4B15CB6C14410F81AA8AB0D5F771 		EB138C6AF0FC691001B16D93344A844D751D7F27 		CBA5A7C21EC143314C41393E5B968010E04F9A89 		3C016F2B764621BB549C66B516A96495E2226795 		937FB3994A242BA9BF49E93021454AF0CC8B0F7E 		EAD1359A4C0F2D37472AAF28F55DF0293A4E7AC9 		4C1EADADB4EF5007579C919C6635B6C0DE885DD3 		01E475360FCCF1D0F24B9D145D414AE1E005C9CB 		92CCEF0AA7DD46AC3A0F498BCA6939748103A37E 		D395C7573A68B9796D38C258153FA0CD75A67692 		FA39B617B61493FD283503E7EED1EA392261D073 		984FB3350C1D5C7A3282255BB31B213D208F5064 		FE7A49DAA875E890B4167F76CCB2EB46E76CF6D0 		39F6691A0ECF0C50E8BB849CF78875F642721F00 		29A2BA848177B73878277FA475CAA2A3F39B3750 		120A8667241AEDD4A78B46104C042818311A3DE5 		453510BDA6C5855624E009236D0BC73A40581837 		0DE5C55C6BF3B2352DABB89E13249B4FEC88A0BF 		7CDBED100806552182F98844E8E7E00B4DAA1988 		A8BA9617EF3BCCAC3B29B869EDB105896F9522D8 		3E6AC004854F3A7F03566B592FF06894E55B0D0E 		5B5181C2C0AB13E59DA3F7A3EC582EB639FF092C 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		65B2D44FE74BD5E3DE3AC3F082781DE46D5954FA 		8935926745E1CE7E3ED748F6EC99EE267EB5F61A 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 		E3480043595621FE56105F112AB12A7ADC55C003 		93525CFCF6FDFFB3FD9700DD5A4B10AE43B56A27 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		runDeps="$runDeps $( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .httpd-rundeps $runDeps; 	apk del --no-network .build-deps; 		httpd -v
-# Wed, 05 Aug 2020 23:44:58 GMT
+# Thu, 22 Oct 2020 03:08:57 GMT
 STOPSIGNAL SIGWINCH
-# Wed, 05 Aug 2020 23:44:58 GMT
+# Thu, 22 Oct 2020 03:08:58 GMT
 COPY file:c432ff61c4993ecdef4786f48d91a96f8f0707f6179816ccb98db661bfb96b90 in /usr/local/bin/ 
-# Wed, 05 Aug 2020 23:44:58 GMT
+# Thu, 22 Oct 2020 03:08:58 GMT
 EXPOSE 80
-# Wed, 05 Aug 2020 23:44:58 GMT
+# Thu, 22 Oct 2020 03:08:59 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:8fb3d41b2e9a59630b51745f257cd2561f96bcd15cf309fcc20120d5fcee8c5b`  
-		Last Modified: Fri, 29 May 2020 21:42:03 GMT  
-		Size: 2.6 MB (2566189 bytes)  
+	-	`sha256:a4c84ece3d2b98927d25f13a4f367bfd96cbfae272f6ff1117d74c84b92d11d3`  
+		Last Modified: Thu, 22 Oct 2020 01:59:37 GMT  
+		Size: 2.6 MB (2565829 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ace58060358a71a2b7d6ce684fc8d43a04f338ccd973e43f23f3931b5e36d28`  
-		Last Modified: Thu, 11 Jun 2020 19:40:36 GMT  
-		Size: 1.3 KB (1261 bytes)  
+	-	`sha256:0dbdfad91e90d42a1a974be87e1433235819a4e7fcce16d7652f6489cb0f7c36`  
+		Last Modified: Thu, 22 Oct 2020 03:09:18 GMT  
+		Size: 1.3 KB (1259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65e2ce8f96463bee45983ff1478918bf748b053efa26d1dc1094d84e1943c88d`  
-		Last Modified: Thu, 11 Jun 2020 19:40:36 GMT  
+	-	`sha256:b0d2f601e0b02b29071e80dde2adaaca633ef299dd8cf549439374b534b42ba2`  
+		Last Modified: Thu, 22 Oct 2020 03:09:19 GMT  
 		Size: 178.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:111354997ba8e9b9fab2cc0d2c2f734ac9f4af63841b0400a8ca3bfa64c2af5b`  
-		Last Modified: Wed, 05 Aug 2020 23:45:24 GMT  
-		Size: 15.3 MB (15255793 bytes)  
+	-	`sha256:f11d5e22c9e1bc49ca01f99fda886bd8ff21609e5c2f30de01c78db716acf5ab`  
+		Last Modified: Thu, 22 Oct 2020 03:09:20 GMT  
+		Size: 14.9 MB (14874855 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3013694be48bf38a971455f1b3b0cabc1f96ae86be0614b9ccc72be56d81de83`  
-		Last Modified: Wed, 05 Aug 2020 23:45:21 GMT  
-		Size: 299.0 B  
+	-	`sha256:2e7ec924cba629b4ac05bd9ad9a24fff0748fc6f3907178e2c80d08505e49e77`  
+		Last Modified: Thu, 22 Oct 2020 03:09:17 GMT  
+		Size: 292.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `httpd:2-alpine`
 
 ```console
-$ docker pull httpd@sha256:d27f57dcfaf89612b95e5aedbe628feb3d358bac08f046585f287c4e31acfc87
+$ docker pull httpd@sha256:69ab7ff5231c97e1b349fe4fea278cc38c84e4246d5923f85ce04e4fc3571bd6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2833,205 +2833,205 @@ CMD ["httpd-foreground"]
 ### `httpd:2-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull httpd@sha256:c7765e733d24a8b8728f0ac5df8342e340c53d1c09884d24252eda5e85d5ee3f
+$ docker pull httpd@sha256:cffd471f1f7234e4e638c3dd7f2e9a66ec141ac291588bdcb2d6a86d3049b4e9
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.7 MB (15702128 bytes)**  
+-	Total Size: **15.4 MB (15356729 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74df8a2b744aec0fe56817db03350fc9b2035c30df84add73fd2e5e6a4693388`
+-	Image ID: `sha256:cce6982f83eb65d5c4c1f7581c15ceb3972776acae0cc14c79de75bca3d18908`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Fri, 29 May 2020 21:02:07 GMT
-ADD file:e97bf0d217846312b19a9f7264604851aedd125c23b4d291eed4c69b880dce26 in / 
-# Fri, 29 May 2020 21:02:08 GMT
+# Thu, 22 Oct 2020 01:58:13 GMT
+ADD file:46f89172426e9f5b1d669a2ca7ab218fc2deaef1caeeab88f2b5bd443ac9773d in / 
+# Thu, 22 Oct 2020 01:58:14 GMT
 CMD ["/bin/sh"]
-# Thu, 11 Jun 2020 20:27:37 GMT
+# Thu, 22 Oct 2020 03:01:14 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Thu, 11 Jun 2020 20:27:38 GMT
+# Thu, 22 Oct 2020 03:01:15 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Thu, 11 Jun 2020 20:27:39 GMT
+# Thu, 22 Oct 2020 03:01:16 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2020 20:27:41 GMT
+# Thu, 22 Oct 2020 03:01:20 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Thu, 11 Jun 2020 20:27:42 GMT
+# Thu, 22 Oct 2020 03:01:25 GMT
 WORKDIR /usr/local/apache2
-# Thu, 06 Aug 2020 00:06:45 GMT
+# Thu, 22 Oct 2020 03:01:25 GMT
 ENV HTTPD_VERSION=2.4.46
-# Thu, 06 Aug 2020 00:06:51 GMT
+# Thu, 22 Oct 2020 03:01:27 GMT
 ENV HTTPD_SHA256=740eddf6e1c641992b22359cabc66e6325868c3c5e2e3f98faf349b61ecf41ea
-# Thu, 06 Aug 2020 00:06:59 GMT
+# Thu, 22 Oct 2020 03:01:28 GMT
 ENV HTTPD_PATCHES=
-# Thu, 06 Aug 2020 00:08:52 GMT
+# Thu, 22 Oct 2020 03:03:40 GMT
 RUN set -eux; 		runDeps=' 		apr 		apr-util 		apr-util-dbm_db 		apr-util-ldap 		perl 	'; 	apk add --no-cache --virtual .build-deps 		$runDeps 		apr-dev 		apr-util-dev 		ca-certificates 		coreutils 		dpkg-dev dpkg 		gcc 		gnupg 		libc-dev 		curl-dev 		jansson-dev 		libxml2-dev 		lua-dev 		make 		nghttp2-dev 		openssl 		openssl-dev 		pcre-dev 		tar 		zlib-dev 		brotli-dev 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		DE29FB3971E71543FD2DC049508EAEC5302DA568 		13155B0E9E634F42BF6C163FDDBA64BA2C312D2F 		8B39757B1D8A994DF2433ED58B3A601F08C975E5 		31EE1A81B8D066548156D37B7D6DBFD1F08E012A 		A10208FEC3152DD7C0C9B59B361522D782AB7BD1 		3DE024AFDA7A4B15CB6C14410F81AA8AB0D5F771 		EB138C6AF0FC691001B16D93344A844D751D7F27 		CBA5A7C21EC143314C41393E5B968010E04F9A89 		3C016F2B764621BB549C66B516A96495E2226795 		937FB3994A242BA9BF49E93021454AF0CC8B0F7E 		EAD1359A4C0F2D37472AAF28F55DF0293A4E7AC9 		4C1EADADB4EF5007579C919C6635B6C0DE885DD3 		01E475360FCCF1D0F24B9D145D414AE1E005C9CB 		92CCEF0AA7DD46AC3A0F498BCA6939748103A37E 		D395C7573A68B9796D38C258153FA0CD75A67692 		FA39B617B61493FD283503E7EED1EA392261D073 		984FB3350C1D5C7A3282255BB31B213D208F5064 		FE7A49DAA875E890B4167F76CCB2EB46E76CF6D0 		39F6691A0ECF0C50E8BB849CF78875F642721F00 		29A2BA848177B73878277FA475CAA2A3F39B3750 		120A8667241AEDD4A78B46104C042818311A3DE5 		453510BDA6C5855624E009236D0BC73A40581837 		0DE5C55C6BF3B2352DABB89E13249B4FEC88A0BF 		7CDBED100806552182F98844E8E7E00B4DAA1988 		A8BA9617EF3BCCAC3B29B869EDB105896F9522D8 		3E6AC004854F3A7F03566B592FF06894E55B0D0E 		5B5181C2C0AB13E59DA3F7A3EC582EB639FF092C 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		65B2D44FE74BD5E3DE3AC3F082781DE46D5954FA 		8935926745E1CE7E3ED748F6EC99EE267EB5F61A 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 		E3480043595621FE56105F112AB12A7ADC55C003 		93525CFCF6FDFFB3FD9700DD5A4B10AE43B56A27 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		runDeps="$runDeps $( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .httpd-rundeps $runDeps; 	apk del --no-network .build-deps; 		httpd -v
-# Thu, 06 Aug 2020 00:08:59 GMT
+# Thu, 22 Oct 2020 03:03:42 GMT
 STOPSIGNAL SIGWINCH
-# Thu, 06 Aug 2020 00:09:12 GMT
+# Thu, 22 Oct 2020 03:03:44 GMT
 COPY file:c432ff61c4993ecdef4786f48d91a96f8f0707f6179816ccb98db661bfb96b90 in /usr/local/bin/ 
-# Thu, 06 Aug 2020 00:09:19 GMT
+# Thu, 22 Oct 2020 03:03:45 GMT
 EXPOSE 80
-# Thu, 06 Aug 2020 00:09:26 GMT
+# Thu, 22 Oct 2020 03:03:46 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:52278dd8e57993669c5b72a9620e89bebdc098f2af2379caaa8945f7403f77a2`  
-		Last Modified: Fri, 29 May 2020 21:02:38 GMT  
-		Size: 2.4 MB (2406763 bytes)  
+	-	`sha256:5f2023fd85a4e68f37fe41421fd89f30e69b98a645613521c57c01317561eee3`  
+		Last Modified: Thu, 22 Oct 2020 01:58:45 GMT  
+		Size: 2.4 MB (2405675 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78ef0674c24b17f3fa6aa6c6082c306c63e13c86688e0d7edbe73746bc1b8788`  
-		Last Modified: Thu, 11 Jun 2020 20:30:21 GMT  
+	-	`sha256:09c06c1a05d6886eb89747851a023386583ef70e9ce8002e7834f5f8acd76ce8`  
+		Last Modified: Thu, 22 Oct 2020 03:04:11 GMT  
 		Size: 1.3 KB (1256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb2270c655717105f991689c0eebd902166e3dc15c231d61cf2c9e974f23a383`  
-		Last Modified: Thu, 11 Jun 2020 20:30:21 GMT  
+	-	`sha256:e90349162eef3383c8b8b5f975f02a04a517b42c0384ba282e6027cd5d35fcff`  
+		Last Modified: Thu, 22 Oct 2020 03:04:10 GMT  
 		Size: 178.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3554472286798d23d815827f38a94788865e7626db07871169b7c42829736c2d`  
-		Last Modified: Thu, 06 Aug 2020 00:10:15 GMT  
-		Size: 13.3 MB (13293634 bytes)  
+	-	`sha256:a63d79b96f2362e041541c35135d2fbfb81c3ac4ebce890a6019c09766f1a115`  
+		Last Modified: Thu, 22 Oct 2020 03:04:15 GMT  
+		Size: 12.9 MB (12949324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:508c165a1172a74df38b3ffe764c88ea9b538fb8d8b5e095f95566b3ebbcc7bf`  
-		Last Modified: Thu, 06 Aug 2020 00:10:10 GMT  
-		Size: 297.0 B  
+	-	`sha256:b3ff9cf0073eed816669492ed26b977aa7d33f7c11ffad4b48d1184f2aeb1350`  
+		Last Modified: Thu, 22 Oct 2020 03:04:10 GMT  
+		Size: 296.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `httpd:2-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull httpd@sha256:97f81a62b2a635da3ce9bd9101969c30775d0f2117ed2e747cc0b796bd94902a
+$ docker pull httpd@sha256:a1734f1d40c9b1534a7d4fd5b1836f23fb0fbdc03f1b83f75e7af4d858ac2be2
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.4 MB (17395396 bytes)**  
+-	Total Size: **17.0 MB (17004160 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba55192a9c7628ed8a41ffa860a2eb745e031216802d9f21d103ea8c30d3dd5f`
+-	Image ID: `sha256:1d5df4b62cc33ae3781a34f34d583476fff319f8afc9726b741c48e1b4ed55b7`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Fri, 29 May 2020 21:43:19 GMT
-ADD file:7574aee4e37a85460ab889212d52912723a9b30dda1c060548f0deb4a05fc398 in / 
-# Fri, 29 May 2020 21:43:20 GMT
+# Thu, 22 Oct 2020 02:01:01 GMT
+ADD file:55c4e9752146061a2b5f76027221329f423687987c0744ef577130c60ff0ba42 in / 
+# Thu, 22 Oct 2020 02:01:06 GMT
 CMD ["/bin/sh"]
-# Thu, 11 Jun 2020 20:39:01 GMT
+# Thu, 22 Oct 2020 02:46:51 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Thu, 11 Jun 2020 20:39:02 GMT
+# Thu, 22 Oct 2020 02:46:51 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Thu, 11 Jun 2020 20:39:02 GMT
+# Thu, 22 Oct 2020 02:46:52 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2020 20:39:04 GMT
+# Thu, 22 Oct 2020 02:46:55 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Thu, 11 Jun 2020 20:39:05 GMT
+# Thu, 22 Oct 2020 02:46:55 GMT
 WORKDIR /usr/local/apache2
-# Wed, 05 Aug 2020 23:44:14 GMT
+# Thu, 22 Oct 2020 02:46:56 GMT
 ENV HTTPD_VERSION=2.4.46
-# Wed, 05 Aug 2020 23:44:15 GMT
+# Thu, 22 Oct 2020 02:46:57 GMT
 ENV HTTPD_SHA256=740eddf6e1c641992b22359cabc66e6325868c3c5e2e3f98faf349b61ecf41ea
-# Wed, 05 Aug 2020 23:44:16 GMT
+# Thu, 22 Oct 2020 02:46:57 GMT
 ENV HTTPD_PATCHES=
-# Wed, 05 Aug 2020 23:46:31 GMT
+# Thu, 22 Oct 2020 02:48:28 GMT
 RUN set -eux; 		runDeps=' 		apr 		apr-util 		apr-util-dbm_db 		apr-util-ldap 		perl 	'; 	apk add --no-cache --virtual .build-deps 		$runDeps 		apr-dev 		apr-util-dev 		ca-certificates 		coreutils 		dpkg-dev dpkg 		gcc 		gnupg 		libc-dev 		curl-dev 		jansson-dev 		libxml2-dev 		lua-dev 		make 		nghttp2-dev 		openssl 		openssl-dev 		pcre-dev 		tar 		zlib-dev 		brotli-dev 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		DE29FB3971E71543FD2DC049508EAEC5302DA568 		13155B0E9E634F42BF6C163FDDBA64BA2C312D2F 		8B39757B1D8A994DF2433ED58B3A601F08C975E5 		31EE1A81B8D066548156D37B7D6DBFD1F08E012A 		A10208FEC3152DD7C0C9B59B361522D782AB7BD1 		3DE024AFDA7A4B15CB6C14410F81AA8AB0D5F771 		EB138C6AF0FC691001B16D93344A844D751D7F27 		CBA5A7C21EC143314C41393E5B968010E04F9A89 		3C016F2B764621BB549C66B516A96495E2226795 		937FB3994A242BA9BF49E93021454AF0CC8B0F7E 		EAD1359A4C0F2D37472AAF28F55DF0293A4E7AC9 		4C1EADADB4EF5007579C919C6635B6C0DE885DD3 		01E475360FCCF1D0F24B9D145D414AE1E005C9CB 		92CCEF0AA7DD46AC3A0F498BCA6939748103A37E 		D395C7573A68B9796D38C258153FA0CD75A67692 		FA39B617B61493FD283503E7EED1EA392261D073 		984FB3350C1D5C7A3282255BB31B213D208F5064 		FE7A49DAA875E890B4167F76CCB2EB46E76CF6D0 		39F6691A0ECF0C50E8BB849CF78875F642721F00 		29A2BA848177B73878277FA475CAA2A3F39B3750 		120A8667241AEDD4A78B46104C042818311A3DE5 		453510BDA6C5855624E009236D0BC73A40581837 		0DE5C55C6BF3B2352DABB89E13249B4FEC88A0BF 		7CDBED100806552182F98844E8E7E00B4DAA1988 		A8BA9617EF3BCCAC3B29B869EDB105896F9522D8 		3E6AC004854F3A7F03566B592FF06894E55B0D0E 		5B5181C2C0AB13E59DA3F7A3EC582EB639FF092C 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		65B2D44FE74BD5E3DE3AC3F082781DE46D5954FA 		8935926745E1CE7E3ED748F6EC99EE267EB5F61A 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 		E3480043595621FE56105F112AB12A7ADC55C003 		93525CFCF6FDFFB3FD9700DD5A4B10AE43B56A27 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		runDeps="$runDeps $( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .httpd-rundeps $runDeps; 	apk del --no-network .build-deps; 		httpd -v
-# Wed, 05 Aug 2020 23:46:33 GMT
+# Thu, 22 Oct 2020 02:48:29 GMT
 STOPSIGNAL SIGWINCH
-# Wed, 05 Aug 2020 23:46:33 GMT
+# Thu, 22 Oct 2020 02:48:30 GMT
 COPY file:c432ff61c4993ecdef4786f48d91a96f8f0707f6179816ccb98db661bfb96b90 in /usr/local/bin/ 
-# Wed, 05 Aug 2020 23:46:34 GMT
+# Thu, 22 Oct 2020 02:48:31 GMT
 EXPOSE 80
-# Wed, 05 Aug 2020 23:46:34 GMT
+# Thu, 22 Oct 2020 02:48:32 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:b538f80385f9b48122e3da068c932a96ea5018afa3c7be79da00437414bd18cd`  
-		Last Modified: Fri, 29 May 2020 21:43:57 GMT  
-		Size: 2.7 MB (2707964 bytes)  
+	-	`sha256:5f621e34cdf485f410766dc9a0fc7855d17916d0f6583b58cbdce7c28831f527`  
+		Last Modified: Thu, 22 Oct 2020 02:01:38 GMT  
+		Size: 2.7 MB (2706555 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91ab091a8f2c93b8aa66275d42d0acb1a375ec1a1d5cfbb870f73c989bc7f223`  
-		Last Modified: Thu, 11 Jun 2020 20:41:11 GMT  
+	-	`sha256:2be98b141cc5464db4639c97bc4b6610d287f51c6334b2fe9047c62cdd255027`  
+		Last Modified: Thu, 22 Oct 2020 02:48:58 GMT  
 		Size: 1.3 KB (1260 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d35563418dbe61c2ec9a4fe59ffd9bbfff689a3e9215e91be2ad8a61e918c306`  
-		Last Modified: Thu, 11 Jun 2020 20:41:11 GMT  
+	-	`sha256:e6f6e6762ef9f4b72652e5773b58f325351908e77ee2a9b5189321d02e808f39`  
+		Last Modified: Thu, 22 Oct 2020 02:48:58 GMT  
 		Size: 178.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed94bfbb493508eea5e41278bfcdd75bb354598413435ebb277ed4544e89fd02`  
-		Last Modified: Wed, 05 Aug 2020 23:47:16 GMT  
-		Size: 14.7 MB (14685694 bytes)  
+	-	`sha256:abf441e9978ab7b3f70f3fb5d3d0d9299f8f28a02f44ee8e0069234141b3e656`  
+		Last Modified: Thu, 22 Oct 2020 02:49:03 GMT  
+		Size: 14.3 MB (14295874 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b88dbd52f3b777f992abb3ac2a23494f9afab0eb632651700fdceb6fc5c9ed9`  
-		Last Modified: Wed, 05 Aug 2020 23:47:11 GMT  
-		Size: 300.0 B  
+	-	`sha256:406b42a724aa1a58ca6724079f312040d9b67cb604805e1ffc702b0bc24bfd9a`  
+		Last Modified: Thu, 22 Oct 2020 02:48:58 GMT  
+		Size: 293.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `httpd:2-alpine` - linux; 386
 
 ```console
-$ docker pull httpd@sha256:f7f1a9f230f6104fe68187e1bed9c1cac09506b4e1c1718aef7724745579b172
+$ docker pull httpd@sha256:81bb5cd938ee4f5456406a64381d33d3f9269b5d582d5981010b018e95f68ad6
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.1 MB (17061371 bytes)**  
+-	Total Size: **16.7 MB (16693283 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d513f1f6cef4f96d0534a42e01c5656c586ddee63462a0c82d7b015f6643caca`
+-	Image ID: `sha256:b2bd352d7990072e9f2876a5423de8855621321d7b654d782995d424abb32ade`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Fri, 29 May 2020 21:38:33 GMT
-ADD file:5624441d97aca5eeb82a582941efc3586397098b8391227a9040ebe434cc1d6b in / 
-# Fri, 29 May 2020 21:38:33 GMT
+# Thu, 22 Oct 2020 02:00:33 GMT
+ADD file:46ad43b4984bcf49c5a888ff3628f23161f55cd1fb062f469e707100c97fa254 in / 
+# Thu, 22 Oct 2020 02:00:33 GMT
 CMD ["/bin/sh"]
-# Thu, 11 Jun 2020 22:45:26 GMT
+# Thu, 22 Oct 2020 03:08:54 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Thu, 11 Jun 2020 22:45:26 GMT
+# Thu, 22 Oct 2020 03:08:54 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Thu, 11 Jun 2020 22:45:26 GMT
+# Thu, 22 Oct 2020 03:08:54 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2020 22:45:27 GMT
+# Thu, 22 Oct 2020 03:08:55 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Thu, 11 Jun 2020 22:45:27 GMT
+# Thu, 22 Oct 2020 03:08:55 GMT
 WORKDIR /usr/local/apache2
-# Wed, 05 Aug 2020 23:41:13 GMT
+# Thu, 22 Oct 2020 03:08:56 GMT
 ENV HTTPD_VERSION=2.4.46
-# Wed, 05 Aug 2020 23:41:13 GMT
+# Thu, 22 Oct 2020 03:08:56 GMT
 ENV HTTPD_SHA256=740eddf6e1c641992b22359cabc66e6325868c3c5e2e3f98faf349b61ecf41ea
-# Wed, 05 Aug 2020 23:41:13 GMT
+# Thu, 22 Oct 2020 03:08:56 GMT
 ENV HTTPD_PATCHES=
-# Wed, 05 Aug 2020 23:42:42 GMT
+# Thu, 22 Oct 2020 03:10:37 GMT
 RUN set -eux; 		runDeps=' 		apr 		apr-util 		apr-util-dbm_db 		apr-util-ldap 		perl 	'; 	apk add --no-cache --virtual .build-deps 		$runDeps 		apr-dev 		apr-util-dev 		ca-certificates 		coreutils 		dpkg-dev dpkg 		gcc 		gnupg 		libc-dev 		curl-dev 		jansson-dev 		libxml2-dev 		lua-dev 		make 		nghttp2-dev 		openssl 		openssl-dev 		pcre-dev 		tar 		zlib-dev 		brotli-dev 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		DE29FB3971E71543FD2DC049508EAEC5302DA568 		13155B0E9E634F42BF6C163FDDBA64BA2C312D2F 		8B39757B1D8A994DF2433ED58B3A601F08C975E5 		31EE1A81B8D066548156D37B7D6DBFD1F08E012A 		A10208FEC3152DD7C0C9B59B361522D782AB7BD1 		3DE024AFDA7A4B15CB6C14410F81AA8AB0D5F771 		EB138C6AF0FC691001B16D93344A844D751D7F27 		CBA5A7C21EC143314C41393E5B968010E04F9A89 		3C016F2B764621BB549C66B516A96495E2226795 		937FB3994A242BA9BF49E93021454AF0CC8B0F7E 		EAD1359A4C0F2D37472AAF28F55DF0293A4E7AC9 		4C1EADADB4EF5007579C919C6635B6C0DE885DD3 		01E475360FCCF1D0F24B9D145D414AE1E005C9CB 		92CCEF0AA7DD46AC3A0F498BCA6939748103A37E 		D395C7573A68B9796D38C258153FA0CD75A67692 		FA39B617B61493FD283503E7EED1EA392261D073 		984FB3350C1D5C7A3282255BB31B213D208F5064 		FE7A49DAA875E890B4167F76CCB2EB46E76CF6D0 		39F6691A0ECF0C50E8BB849CF78875F642721F00 		29A2BA848177B73878277FA475CAA2A3F39B3750 		120A8667241AEDD4A78B46104C042818311A3DE5 		453510BDA6C5855624E009236D0BC73A40581837 		0DE5C55C6BF3B2352DABB89E13249B4FEC88A0BF 		7CDBED100806552182F98844E8E7E00B4DAA1988 		A8BA9617EF3BCCAC3B29B869EDB105896F9522D8 		3E6AC004854F3A7F03566B592FF06894E55B0D0E 		5B5181C2C0AB13E59DA3F7A3EC582EB639FF092C 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		65B2D44FE74BD5E3DE3AC3F082781DE46D5954FA 		8935926745E1CE7E3ED748F6EC99EE267EB5F61A 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 		E3480043595621FE56105F112AB12A7ADC55C003 		93525CFCF6FDFFB3FD9700DD5A4B10AE43B56A27 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		runDeps="$runDeps $( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .httpd-rundeps $runDeps; 	apk del --no-network .build-deps; 		httpd -v
-# Wed, 05 Aug 2020 23:42:43 GMT
+# Thu, 22 Oct 2020 03:10:38 GMT
 STOPSIGNAL SIGWINCH
-# Wed, 05 Aug 2020 23:42:43 GMT
+# Thu, 22 Oct 2020 03:10:38 GMT
 COPY file:c432ff61c4993ecdef4786f48d91a96f8f0707f6179816ccb98db661bfb96b90 in /usr/local/bin/ 
-# Wed, 05 Aug 2020 23:42:43 GMT
+# Thu, 22 Oct 2020 03:10:38 GMT
 EXPOSE 80
-# Wed, 05 Aug 2020 23:42:43 GMT
+# Thu, 22 Oct 2020 03:10:38 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:0625b4155e2a59f647ece47c0cd77ed3196b1f84454fa64ce80cad90e2b9b79e`  
-		Last Modified: Fri, 29 May 2020 21:38:53 GMT  
-		Size: 2.8 MB (2792298 bytes)  
+	-	`sha256:d6ca64ac6f4b6382142ce9a3501652938130a6ec4bb02f3f455ee1f980834cfe`  
+		Last Modified: Thu, 22 Oct 2020 02:00:57 GMT  
+		Size: 2.8 MB (2791407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a5f7c55b9ee8172b7278d6fbd56929cc6cc794038a7138d4476abb5d393e385`  
-		Last Modified: Thu, 11 Jun 2020 22:47:16 GMT  
+	-	`sha256:16c28f1fd07281186fbfe430596f9f3cf3aacfcc6ee8c1f178a508da70159c9c`  
+		Last Modified: Thu, 22 Oct 2020 03:11:01 GMT  
 		Size: 1.2 KB (1232 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4b8819c13b3025df5869216a9330bd63d2436a9dcdde9a750981c9b1ca35fc8`  
-		Last Modified: Thu, 11 Jun 2020 22:47:16 GMT  
-		Size: 147.0 B  
+	-	`sha256:3c04fa86401d7ec6b1ddab8f7294d365834673b05438e3fd3b3c434d8d206c56`  
+		Last Modified: Thu, 22 Oct 2020 03:11:02 GMT  
+		Size: 146.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b20a748b2c867097a05ea0b4f9622d9ee89335d738ff0eea1a5744b3af1c168`  
-		Last Modified: Wed, 05 Aug 2020 23:43:19 GMT  
-		Size: 14.3 MB (14267395 bytes)  
+	-	`sha256:b619614534143ac2bc84e9f86b54ebbe4cc058d96d99f7dbf65f3425f422b22f`  
+		Last Modified: Thu, 22 Oct 2020 03:11:06 GMT  
+		Size: 13.9 MB (13900205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cbb04c4511da2c58ac3456d63fec8753b068a0a6306f182a82a41faa673da3b7`  
-		Last Modified: Wed, 05 Aug 2020 23:43:14 GMT  
-		Size: 299.0 B  
+	-	`sha256:7dba0bf9fea80ca7832c9a139ea21a9ae140fa10312833f6de9bb7762ac9bc1f`  
+		Last Modified: Thu, 22 Oct 2020 03:11:01 GMT  
+		Size: 293.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `httpd:2-alpine` - linux; ppc64le
@@ -3105,75 +3105,75 @@ CMD ["httpd-foreground"]
 ### `httpd:2-alpine` - linux; s390x
 
 ```console
-$ docker pull httpd@sha256:ef52cea9c91a885585c5381fc208dfdb505f327d95456e5b437f0798ad468db7
+$ docker pull httpd@sha256:b58a6eba5ec863c4210e59aebee576d66fe251d93a62d7a6d956ccee8ef1cfe6
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17823720 bytes)**  
+-	Total Size: **17.4 MB (17442413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d599582185541695b1477a34fd3b01adce2c01a364e561269a0b28cb748c43c2`
+-	Image ID: `sha256:eef2b7a2aa5321ae3f5bb64121849e98966072a42d7f41a9eb18b5b57e4bc28f`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Fri, 29 May 2020 21:41:39 GMT
-ADD file:9799ce3b2f782a28e10b1846cd9b3db827fa99c9bc601feb268456195856814e in / 
-# Fri, 29 May 2020 21:41:39 GMT
+# Thu, 22 Oct 2020 01:59:08 GMT
+ADD file:e07d6f40b1afc3d3eff230bc89e84704eb762706a373a60c6bea6a45b2287464 in / 
+# Thu, 22 Oct 2020 01:59:09 GMT
 CMD ["/bin/sh"]
-# Thu, 11 Jun 2020 19:39:11 GMT
+# Thu, 22 Oct 2020 03:06:50 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Thu, 11 Jun 2020 19:39:11 GMT
+# Thu, 22 Oct 2020 03:06:50 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Thu, 11 Jun 2020 19:39:11 GMT
+# Thu, 22 Oct 2020 03:06:51 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2020 19:39:12 GMT
+# Thu, 22 Oct 2020 03:06:52 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Thu, 11 Jun 2020 19:39:12 GMT
+# Thu, 22 Oct 2020 03:06:52 GMT
 WORKDIR /usr/local/apache2
-# Wed, 05 Aug 2020 23:43:31 GMT
+# Thu, 22 Oct 2020 03:06:53 GMT
 ENV HTTPD_VERSION=2.4.46
-# Wed, 05 Aug 2020 23:43:31 GMT
+# Thu, 22 Oct 2020 03:06:53 GMT
 ENV HTTPD_SHA256=740eddf6e1c641992b22359cabc66e6325868c3c5e2e3f98faf349b61ecf41ea
-# Wed, 05 Aug 2020 23:43:31 GMT
+# Thu, 22 Oct 2020 03:06:54 GMT
 ENV HTTPD_PATCHES=
-# Wed, 05 Aug 2020 23:44:56 GMT
+# Thu, 22 Oct 2020 03:08:54 GMT
 RUN set -eux; 		runDeps=' 		apr 		apr-util 		apr-util-dbm_db 		apr-util-ldap 		perl 	'; 	apk add --no-cache --virtual .build-deps 		$runDeps 		apr-dev 		apr-util-dev 		ca-certificates 		coreutils 		dpkg-dev dpkg 		gcc 		gnupg 		libc-dev 		curl-dev 		jansson-dev 		libxml2-dev 		lua-dev 		make 		nghttp2-dev 		openssl 		openssl-dev 		pcre-dev 		tar 		zlib-dev 		brotli-dev 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		DE29FB3971E71543FD2DC049508EAEC5302DA568 		13155B0E9E634F42BF6C163FDDBA64BA2C312D2F 		8B39757B1D8A994DF2433ED58B3A601F08C975E5 		31EE1A81B8D066548156D37B7D6DBFD1F08E012A 		A10208FEC3152DD7C0C9B59B361522D782AB7BD1 		3DE024AFDA7A4B15CB6C14410F81AA8AB0D5F771 		EB138C6AF0FC691001B16D93344A844D751D7F27 		CBA5A7C21EC143314C41393E5B968010E04F9A89 		3C016F2B764621BB549C66B516A96495E2226795 		937FB3994A242BA9BF49E93021454AF0CC8B0F7E 		EAD1359A4C0F2D37472AAF28F55DF0293A4E7AC9 		4C1EADADB4EF5007579C919C6635B6C0DE885DD3 		01E475360FCCF1D0F24B9D145D414AE1E005C9CB 		92CCEF0AA7DD46AC3A0F498BCA6939748103A37E 		D395C7573A68B9796D38C258153FA0CD75A67692 		FA39B617B61493FD283503E7EED1EA392261D073 		984FB3350C1D5C7A3282255BB31B213D208F5064 		FE7A49DAA875E890B4167F76CCB2EB46E76CF6D0 		39F6691A0ECF0C50E8BB849CF78875F642721F00 		29A2BA848177B73878277FA475CAA2A3F39B3750 		120A8667241AEDD4A78B46104C042818311A3DE5 		453510BDA6C5855624E009236D0BC73A40581837 		0DE5C55C6BF3B2352DABB89E13249B4FEC88A0BF 		7CDBED100806552182F98844E8E7E00B4DAA1988 		A8BA9617EF3BCCAC3B29B869EDB105896F9522D8 		3E6AC004854F3A7F03566B592FF06894E55B0D0E 		5B5181C2C0AB13E59DA3F7A3EC582EB639FF092C 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		65B2D44FE74BD5E3DE3AC3F082781DE46D5954FA 		8935926745E1CE7E3ED748F6EC99EE267EB5F61A 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 		E3480043595621FE56105F112AB12A7ADC55C003 		93525CFCF6FDFFB3FD9700DD5A4B10AE43B56A27 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		runDeps="$runDeps $( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .httpd-rundeps $runDeps; 	apk del --no-network .build-deps; 		httpd -v
-# Wed, 05 Aug 2020 23:44:58 GMT
+# Thu, 22 Oct 2020 03:08:57 GMT
 STOPSIGNAL SIGWINCH
-# Wed, 05 Aug 2020 23:44:58 GMT
+# Thu, 22 Oct 2020 03:08:58 GMT
 COPY file:c432ff61c4993ecdef4786f48d91a96f8f0707f6179816ccb98db661bfb96b90 in /usr/local/bin/ 
-# Wed, 05 Aug 2020 23:44:58 GMT
+# Thu, 22 Oct 2020 03:08:58 GMT
 EXPOSE 80
-# Wed, 05 Aug 2020 23:44:58 GMT
+# Thu, 22 Oct 2020 03:08:59 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:8fb3d41b2e9a59630b51745f257cd2561f96bcd15cf309fcc20120d5fcee8c5b`  
-		Last Modified: Fri, 29 May 2020 21:42:03 GMT  
-		Size: 2.6 MB (2566189 bytes)  
+	-	`sha256:a4c84ece3d2b98927d25f13a4f367bfd96cbfae272f6ff1117d74c84b92d11d3`  
+		Last Modified: Thu, 22 Oct 2020 01:59:37 GMT  
+		Size: 2.6 MB (2565829 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ace58060358a71a2b7d6ce684fc8d43a04f338ccd973e43f23f3931b5e36d28`  
-		Last Modified: Thu, 11 Jun 2020 19:40:36 GMT  
-		Size: 1.3 KB (1261 bytes)  
+	-	`sha256:0dbdfad91e90d42a1a974be87e1433235819a4e7fcce16d7652f6489cb0f7c36`  
+		Last Modified: Thu, 22 Oct 2020 03:09:18 GMT  
+		Size: 1.3 KB (1259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65e2ce8f96463bee45983ff1478918bf748b053efa26d1dc1094d84e1943c88d`  
-		Last Modified: Thu, 11 Jun 2020 19:40:36 GMT  
+	-	`sha256:b0d2f601e0b02b29071e80dde2adaaca633ef299dd8cf549439374b534b42ba2`  
+		Last Modified: Thu, 22 Oct 2020 03:09:19 GMT  
 		Size: 178.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:111354997ba8e9b9fab2cc0d2c2f734ac9f4af63841b0400a8ca3bfa64c2af5b`  
-		Last Modified: Wed, 05 Aug 2020 23:45:24 GMT  
-		Size: 15.3 MB (15255793 bytes)  
+	-	`sha256:f11d5e22c9e1bc49ca01f99fda886bd8ff21609e5c2f30de01c78db716acf5ab`  
+		Last Modified: Thu, 22 Oct 2020 03:09:20 GMT  
+		Size: 14.9 MB (14874855 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3013694be48bf38a971455f1b3b0cabc1f96ae86be0614b9ccc72be56d81de83`  
-		Last Modified: Wed, 05 Aug 2020 23:45:21 GMT  
-		Size: 299.0 B  
+	-	`sha256:2e7ec924cba629b4ac05bd9ad9a24fff0748fc6f3907178e2c80d08505e49e77`  
+		Last Modified: Thu, 22 Oct 2020 03:09:17 GMT  
+		Size: 292.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `httpd:alpine`
 
 ```console
-$ docker pull httpd@sha256:d27f57dcfaf89612b95e5aedbe628feb3d358bac08f046585f287c4e31acfc87
+$ docker pull httpd@sha256:69ab7ff5231c97e1b349fe4fea278cc38c84e4246d5923f85ce04e4fc3571bd6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3325,205 +3325,205 @@ CMD ["httpd-foreground"]
 ### `httpd:alpine` - linux; arm variant v7
 
 ```console
-$ docker pull httpd@sha256:c7765e733d24a8b8728f0ac5df8342e340c53d1c09884d24252eda5e85d5ee3f
+$ docker pull httpd@sha256:cffd471f1f7234e4e638c3dd7f2e9a66ec141ac291588bdcb2d6a86d3049b4e9
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.7 MB (15702128 bytes)**  
+-	Total Size: **15.4 MB (15356729 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74df8a2b744aec0fe56817db03350fc9b2035c30df84add73fd2e5e6a4693388`
+-	Image ID: `sha256:cce6982f83eb65d5c4c1f7581c15ceb3972776acae0cc14c79de75bca3d18908`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Fri, 29 May 2020 21:02:07 GMT
-ADD file:e97bf0d217846312b19a9f7264604851aedd125c23b4d291eed4c69b880dce26 in / 
-# Fri, 29 May 2020 21:02:08 GMT
+# Thu, 22 Oct 2020 01:58:13 GMT
+ADD file:46f89172426e9f5b1d669a2ca7ab218fc2deaef1caeeab88f2b5bd443ac9773d in / 
+# Thu, 22 Oct 2020 01:58:14 GMT
 CMD ["/bin/sh"]
-# Thu, 11 Jun 2020 20:27:37 GMT
+# Thu, 22 Oct 2020 03:01:14 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Thu, 11 Jun 2020 20:27:38 GMT
+# Thu, 22 Oct 2020 03:01:15 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Thu, 11 Jun 2020 20:27:39 GMT
+# Thu, 22 Oct 2020 03:01:16 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2020 20:27:41 GMT
+# Thu, 22 Oct 2020 03:01:20 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Thu, 11 Jun 2020 20:27:42 GMT
+# Thu, 22 Oct 2020 03:01:25 GMT
 WORKDIR /usr/local/apache2
-# Thu, 06 Aug 2020 00:06:45 GMT
+# Thu, 22 Oct 2020 03:01:25 GMT
 ENV HTTPD_VERSION=2.4.46
-# Thu, 06 Aug 2020 00:06:51 GMT
+# Thu, 22 Oct 2020 03:01:27 GMT
 ENV HTTPD_SHA256=740eddf6e1c641992b22359cabc66e6325868c3c5e2e3f98faf349b61ecf41ea
-# Thu, 06 Aug 2020 00:06:59 GMT
+# Thu, 22 Oct 2020 03:01:28 GMT
 ENV HTTPD_PATCHES=
-# Thu, 06 Aug 2020 00:08:52 GMT
+# Thu, 22 Oct 2020 03:03:40 GMT
 RUN set -eux; 		runDeps=' 		apr 		apr-util 		apr-util-dbm_db 		apr-util-ldap 		perl 	'; 	apk add --no-cache --virtual .build-deps 		$runDeps 		apr-dev 		apr-util-dev 		ca-certificates 		coreutils 		dpkg-dev dpkg 		gcc 		gnupg 		libc-dev 		curl-dev 		jansson-dev 		libxml2-dev 		lua-dev 		make 		nghttp2-dev 		openssl 		openssl-dev 		pcre-dev 		tar 		zlib-dev 		brotli-dev 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		DE29FB3971E71543FD2DC049508EAEC5302DA568 		13155B0E9E634F42BF6C163FDDBA64BA2C312D2F 		8B39757B1D8A994DF2433ED58B3A601F08C975E5 		31EE1A81B8D066548156D37B7D6DBFD1F08E012A 		A10208FEC3152DD7C0C9B59B361522D782AB7BD1 		3DE024AFDA7A4B15CB6C14410F81AA8AB0D5F771 		EB138C6AF0FC691001B16D93344A844D751D7F27 		CBA5A7C21EC143314C41393E5B968010E04F9A89 		3C016F2B764621BB549C66B516A96495E2226795 		937FB3994A242BA9BF49E93021454AF0CC8B0F7E 		EAD1359A4C0F2D37472AAF28F55DF0293A4E7AC9 		4C1EADADB4EF5007579C919C6635B6C0DE885DD3 		01E475360FCCF1D0F24B9D145D414AE1E005C9CB 		92CCEF0AA7DD46AC3A0F498BCA6939748103A37E 		D395C7573A68B9796D38C258153FA0CD75A67692 		FA39B617B61493FD283503E7EED1EA392261D073 		984FB3350C1D5C7A3282255BB31B213D208F5064 		FE7A49DAA875E890B4167F76CCB2EB46E76CF6D0 		39F6691A0ECF0C50E8BB849CF78875F642721F00 		29A2BA848177B73878277FA475CAA2A3F39B3750 		120A8667241AEDD4A78B46104C042818311A3DE5 		453510BDA6C5855624E009236D0BC73A40581837 		0DE5C55C6BF3B2352DABB89E13249B4FEC88A0BF 		7CDBED100806552182F98844E8E7E00B4DAA1988 		A8BA9617EF3BCCAC3B29B869EDB105896F9522D8 		3E6AC004854F3A7F03566B592FF06894E55B0D0E 		5B5181C2C0AB13E59DA3F7A3EC582EB639FF092C 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		65B2D44FE74BD5E3DE3AC3F082781DE46D5954FA 		8935926745E1CE7E3ED748F6EC99EE267EB5F61A 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 		E3480043595621FE56105F112AB12A7ADC55C003 		93525CFCF6FDFFB3FD9700DD5A4B10AE43B56A27 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		runDeps="$runDeps $( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .httpd-rundeps $runDeps; 	apk del --no-network .build-deps; 		httpd -v
-# Thu, 06 Aug 2020 00:08:59 GMT
+# Thu, 22 Oct 2020 03:03:42 GMT
 STOPSIGNAL SIGWINCH
-# Thu, 06 Aug 2020 00:09:12 GMT
+# Thu, 22 Oct 2020 03:03:44 GMT
 COPY file:c432ff61c4993ecdef4786f48d91a96f8f0707f6179816ccb98db661bfb96b90 in /usr/local/bin/ 
-# Thu, 06 Aug 2020 00:09:19 GMT
+# Thu, 22 Oct 2020 03:03:45 GMT
 EXPOSE 80
-# Thu, 06 Aug 2020 00:09:26 GMT
+# Thu, 22 Oct 2020 03:03:46 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:52278dd8e57993669c5b72a9620e89bebdc098f2af2379caaa8945f7403f77a2`  
-		Last Modified: Fri, 29 May 2020 21:02:38 GMT  
-		Size: 2.4 MB (2406763 bytes)  
+	-	`sha256:5f2023fd85a4e68f37fe41421fd89f30e69b98a645613521c57c01317561eee3`  
+		Last Modified: Thu, 22 Oct 2020 01:58:45 GMT  
+		Size: 2.4 MB (2405675 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78ef0674c24b17f3fa6aa6c6082c306c63e13c86688e0d7edbe73746bc1b8788`  
-		Last Modified: Thu, 11 Jun 2020 20:30:21 GMT  
+	-	`sha256:09c06c1a05d6886eb89747851a023386583ef70e9ce8002e7834f5f8acd76ce8`  
+		Last Modified: Thu, 22 Oct 2020 03:04:11 GMT  
 		Size: 1.3 KB (1256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb2270c655717105f991689c0eebd902166e3dc15c231d61cf2c9e974f23a383`  
-		Last Modified: Thu, 11 Jun 2020 20:30:21 GMT  
+	-	`sha256:e90349162eef3383c8b8b5f975f02a04a517b42c0384ba282e6027cd5d35fcff`  
+		Last Modified: Thu, 22 Oct 2020 03:04:10 GMT  
 		Size: 178.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3554472286798d23d815827f38a94788865e7626db07871169b7c42829736c2d`  
-		Last Modified: Thu, 06 Aug 2020 00:10:15 GMT  
-		Size: 13.3 MB (13293634 bytes)  
+	-	`sha256:a63d79b96f2362e041541c35135d2fbfb81c3ac4ebce890a6019c09766f1a115`  
+		Last Modified: Thu, 22 Oct 2020 03:04:15 GMT  
+		Size: 12.9 MB (12949324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:508c165a1172a74df38b3ffe764c88ea9b538fb8d8b5e095f95566b3ebbcc7bf`  
-		Last Modified: Thu, 06 Aug 2020 00:10:10 GMT  
-		Size: 297.0 B  
+	-	`sha256:b3ff9cf0073eed816669492ed26b977aa7d33f7c11ffad4b48d1184f2aeb1350`  
+		Last Modified: Thu, 22 Oct 2020 03:04:10 GMT  
+		Size: 296.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `httpd:alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull httpd@sha256:97f81a62b2a635da3ce9bd9101969c30775d0f2117ed2e747cc0b796bd94902a
+$ docker pull httpd@sha256:a1734f1d40c9b1534a7d4fd5b1836f23fb0fbdc03f1b83f75e7af4d858ac2be2
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.4 MB (17395396 bytes)**  
+-	Total Size: **17.0 MB (17004160 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba55192a9c7628ed8a41ffa860a2eb745e031216802d9f21d103ea8c30d3dd5f`
+-	Image ID: `sha256:1d5df4b62cc33ae3781a34f34d583476fff319f8afc9726b741c48e1b4ed55b7`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Fri, 29 May 2020 21:43:19 GMT
-ADD file:7574aee4e37a85460ab889212d52912723a9b30dda1c060548f0deb4a05fc398 in / 
-# Fri, 29 May 2020 21:43:20 GMT
+# Thu, 22 Oct 2020 02:01:01 GMT
+ADD file:55c4e9752146061a2b5f76027221329f423687987c0744ef577130c60ff0ba42 in / 
+# Thu, 22 Oct 2020 02:01:06 GMT
 CMD ["/bin/sh"]
-# Thu, 11 Jun 2020 20:39:01 GMT
+# Thu, 22 Oct 2020 02:46:51 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Thu, 11 Jun 2020 20:39:02 GMT
+# Thu, 22 Oct 2020 02:46:51 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Thu, 11 Jun 2020 20:39:02 GMT
+# Thu, 22 Oct 2020 02:46:52 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2020 20:39:04 GMT
+# Thu, 22 Oct 2020 02:46:55 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Thu, 11 Jun 2020 20:39:05 GMT
+# Thu, 22 Oct 2020 02:46:55 GMT
 WORKDIR /usr/local/apache2
-# Wed, 05 Aug 2020 23:44:14 GMT
+# Thu, 22 Oct 2020 02:46:56 GMT
 ENV HTTPD_VERSION=2.4.46
-# Wed, 05 Aug 2020 23:44:15 GMT
+# Thu, 22 Oct 2020 02:46:57 GMT
 ENV HTTPD_SHA256=740eddf6e1c641992b22359cabc66e6325868c3c5e2e3f98faf349b61ecf41ea
-# Wed, 05 Aug 2020 23:44:16 GMT
+# Thu, 22 Oct 2020 02:46:57 GMT
 ENV HTTPD_PATCHES=
-# Wed, 05 Aug 2020 23:46:31 GMT
+# Thu, 22 Oct 2020 02:48:28 GMT
 RUN set -eux; 		runDeps=' 		apr 		apr-util 		apr-util-dbm_db 		apr-util-ldap 		perl 	'; 	apk add --no-cache --virtual .build-deps 		$runDeps 		apr-dev 		apr-util-dev 		ca-certificates 		coreutils 		dpkg-dev dpkg 		gcc 		gnupg 		libc-dev 		curl-dev 		jansson-dev 		libxml2-dev 		lua-dev 		make 		nghttp2-dev 		openssl 		openssl-dev 		pcre-dev 		tar 		zlib-dev 		brotli-dev 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		DE29FB3971E71543FD2DC049508EAEC5302DA568 		13155B0E9E634F42BF6C163FDDBA64BA2C312D2F 		8B39757B1D8A994DF2433ED58B3A601F08C975E5 		31EE1A81B8D066548156D37B7D6DBFD1F08E012A 		A10208FEC3152DD7C0C9B59B361522D782AB7BD1 		3DE024AFDA7A4B15CB6C14410F81AA8AB0D5F771 		EB138C6AF0FC691001B16D93344A844D751D7F27 		CBA5A7C21EC143314C41393E5B968010E04F9A89 		3C016F2B764621BB549C66B516A96495E2226795 		937FB3994A242BA9BF49E93021454AF0CC8B0F7E 		EAD1359A4C0F2D37472AAF28F55DF0293A4E7AC9 		4C1EADADB4EF5007579C919C6635B6C0DE885DD3 		01E475360FCCF1D0F24B9D145D414AE1E005C9CB 		92CCEF0AA7DD46AC3A0F498BCA6939748103A37E 		D395C7573A68B9796D38C258153FA0CD75A67692 		FA39B617B61493FD283503E7EED1EA392261D073 		984FB3350C1D5C7A3282255BB31B213D208F5064 		FE7A49DAA875E890B4167F76CCB2EB46E76CF6D0 		39F6691A0ECF0C50E8BB849CF78875F642721F00 		29A2BA848177B73878277FA475CAA2A3F39B3750 		120A8667241AEDD4A78B46104C042818311A3DE5 		453510BDA6C5855624E009236D0BC73A40581837 		0DE5C55C6BF3B2352DABB89E13249B4FEC88A0BF 		7CDBED100806552182F98844E8E7E00B4DAA1988 		A8BA9617EF3BCCAC3B29B869EDB105896F9522D8 		3E6AC004854F3A7F03566B592FF06894E55B0D0E 		5B5181C2C0AB13E59DA3F7A3EC582EB639FF092C 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		65B2D44FE74BD5E3DE3AC3F082781DE46D5954FA 		8935926745E1CE7E3ED748F6EC99EE267EB5F61A 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 		E3480043595621FE56105F112AB12A7ADC55C003 		93525CFCF6FDFFB3FD9700DD5A4B10AE43B56A27 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		runDeps="$runDeps $( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .httpd-rundeps $runDeps; 	apk del --no-network .build-deps; 		httpd -v
-# Wed, 05 Aug 2020 23:46:33 GMT
+# Thu, 22 Oct 2020 02:48:29 GMT
 STOPSIGNAL SIGWINCH
-# Wed, 05 Aug 2020 23:46:33 GMT
+# Thu, 22 Oct 2020 02:48:30 GMT
 COPY file:c432ff61c4993ecdef4786f48d91a96f8f0707f6179816ccb98db661bfb96b90 in /usr/local/bin/ 
-# Wed, 05 Aug 2020 23:46:34 GMT
+# Thu, 22 Oct 2020 02:48:31 GMT
 EXPOSE 80
-# Wed, 05 Aug 2020 23:46:34 GMT
+# Thu, 22 Oct 2020 02:48:32 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:b538f80385f9b48122e3da068c932a96ea5018afa3c7be79da00437414bd18cd`  
-		Last Modified: Fri, 29 May 2020 21:43:57 GMT  
-		Size: 2.7 MB (2707964 bytes)  
+	-	`sha256:5f621e34cdf485f410766dc9a0fc7855d17916d0f6583b58cbdce7c28831f527`  
+		Last Modified: Thu, 22 Oct 2020 02:01:38 GMT  
+		Size: 2.7 MB (2706555 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91ab091a8f2c93b8aa66275d42d0acb1a375ec1a1d5cfbb870f73c989bc7f223`  
-		Last Modified: Thu, 11 Jun 2020 20:41:11 GMT  
+	-	`sha256:2be98b141cc5464db4639c97bc4b6610d287f51c6334b2fe9047c62cdd255027`  
+		Last Modified: Thu, 22 Oct 2020 02:48:58 GMT  
 		Size: 1.3 KB (1260 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d35563418dbe61c2ec9a4fe59ffd9bbfff689a3e9215e91be2ad8a61e918c306`  
-		Last Modified: Thu, 11 Jun 2020 20:41:11 GMT  
+	-	`sha256:e6f6e6762ef9f4b72652e5773b58f325351908e77ee2a9b5189321d02e808f39`  
+		Last Modified: Thu, 22 Oct 2020 02:48:58 GMT  
 		Size: 178.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed94bfbb493508eea5e41278bfcdd75bb354598413435ebb277ed4544e89fd02`  
-		Last Modified: Wed, 05 Aug 2020 23:47:16 GMT  
-		Size: 14.7 MB (14685694 bytes)  
+	-	`sha256:abf441e9978ab7b3f70f3fb5d3d0d9299f8f28a02f44ee8e0069234141b3e656`  
+		Last Modified: Thu, 22 Oct 2020 02:49:03 GMT  
+		Size: 14.3 MB (14295874 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b88dbd52f3b777f992abb3ac2a23494f9afab0eb632651700fdceb6fc5c9ed9`  
-		Last Modified: Wed, 05 Aug 2020 23:47:11 GMT  
-		Size: 300.0 B  
+	-	`sha256:406b42a724aa1a58ca6724079f312040d9b67cb604805e1ffc702b0bc24bfd9a`  
+		Last Modified: Thu, 22 Oct 2020 02:48:58 GMT  
+		Size: 293.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `httpd:alpine` - linux; 386
 
 ```console
-$ docker pull httpd@sha256:f7f1a9f230f6104fe68187e1bed9c1cac09506b4e1c1718aef7724745579b172
+$ docker pull httpd@sha256:81bb5cd938ee4f5456406a64381d33d3f9269b5d582d5981010b018e95f68ad6
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.1 MB (17061371 bytes)**  
+-	Total Size: **16.7 MB (16693283 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d513f1f6cef4f96d0534a42e01c5656c586ddee63462a0c82d7b015f6643caca`
+-	Image ID: `sha256:b2bd352d7990072e9f2876a5423de8855621321d7b654d782995d424abb32ade`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Fri, 29 May 2020 21:38:33 GMT
-ADD file:5624441d97aca5eeb82a582941efc3586397098b8391227a9040ebe434cc1d6b in / 
-# Fri, 29 May 2020 21:38:33 GMT
+# Thu, 22 Oct 2020 02:00:33 GMT
+ADD file:46ad43b4984bcf49c5a888ff3628f23161f55cd1fb062f469e707100c97fa254 in / 
+# Thu, 22 Oct 2020 02:00:33 GMT
 CMD ["/bin/sh"]
-# Thu, 11 Jun 2020 22:45:26 GMT
+# Thu, 22 Oct 2020 03:08:54 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Thu, 11 Jun 2020 22:45:26 GMT
+# Thu, 22 Oct 2020 03:08:54 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Thu, 11 Jun 2020 22:45:26 GMT
+# Thu, 22 Oct 2020 03:08:54 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2020 22:45:27 GMT
+# Thu, 22 Oct 2020 03:08:55 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Thu, 11 Jun 2020 22:45:27 GMT
+# Thu, 22 Oct 2020 03:08:55 GMT
 WORKDIR /usr/local/apache2
-# Wed, 05 Aug 2020 23:41:13 GMT
+# Thu, 22 Oct 2020 03:08:56 GMT
 ENV HTTPD_VERSION=2.4.46
-# Wed, 05 Aug 2020 23:41:13 GMT
+# Thu, 22 Oct 2020 03:08:56 GMT
 ENV HTTPD_SHA256=740eddf6e1c641992b22359cabc66e6325868c3c5e2e3f98faf349b61ecf41ea
-# Wed, 05 Aug 2020 23:41:13 GMT
+# Thu, 22 Oct 2020 03:08:56 GMT
 ENV HTTPD_PATCHES=
-# Wed, 05 Aug 2020 23:42:42 GMT
+# Thu, 22 Oct 2020 03:10:37 GMT
 RUN set -eux; 		runDeps=' 		apr 		apr-util 		apr-util-dbm_db 		apr-util-ldap 		perl 	'; 	apk add --no-cache --virtual .build-deps 		$runDeps 		apr-dev 		apr-util-dev 		ca-certificates 		coreutils 		dpkg-dev dpkg 		gcc 		gnupg 		libc-dev 		curl-dev 		jansson-dev 		libxml2-dev 		lua-dev 		make 		nghttp2-dev 		openssl 		openssl-dev 		pcre-dev 		tar 		zlib-dev 		brotli-dev 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		DE29FB3971E71543FD2DC049508EAEC5302DA568 		13155B0E9E634F42BF6C163FDDBA64BA2C312D2F 		8B39757B1D8A994DF2433ED58B3A601F08C975E5 		31EE1A81B8D066548156D37B7D6DBFD1F08E012A 		A10208FEC3152DD7C0C9B59B361522D782AB7BD1 		3DE024AFDA7A4B15CB6C14410F81AA8AB0D5F771 		EB138C6AF0FC691001B16D93344A844D751D7F27 		CBA5A7C21EC143314C41393E5B968010E04F9A89 		3C016F2B764621BB549C66B516A96495E2226795 		937FB3994A242BA9BF49E93021454AF0CC8B0F7E 		EAD1359A4C0F2D37472AAF28F55DF0293A4E7AC9 		4C1EADADB4EF5007579C919C6635B6C0DE885DD3 		01E475360FCCF1D0F24B9D145D414AE1E005C9CB 		92CCEF0AA7DD46AC3A0F498BCA6939748103A37E 		D395C7573A68B9796D38C258153FA0CD75A67692 		FA39B617B61493FD283503E7EED1EA392261D073 		984FB3350C1D5C7A3282255BB31B213D208F5064 		FE7A49DAA875E890B4167F76CCB2EB46E76CF6D0 		39F6691A0ECF0C50E8BB849CF78875F642721F00 		29A2BA848177B73878277FA475CAA2A3F39B3750 		120A8667241AEDD4A78B46104C042818311A3DE5 		453510BDA6C5855624E009236D0BC73A40581837 		0DE5C55C6BF3B2352DABB89E13249B4FEC88A0BF 		7CDBED100806552182F98844E8E7E00B4DAA1988 		A8BA9617EF3BCCAC3B29B869EDB105896F9522D8 		3E6AC004854F3A7F03566B592FF06894E55B0D0E 		5B5181C2C0AB13E59DA3F7A3EC582EB639FF092C 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		65B2D44FE74BD5E3DE3AC3F082781DE46D5954FA 		8935926745E1CE7E3ED748F6EC99EE267EB5F61A 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 		E3480043595621FE56105F112AB12A7ADC55C003 		93525CFCF6FDFFB3FD9700DD5A4B10AE43B56A27 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		runDeps="$runDeps $( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .httpd-rundeps $runDeps; 	apk del --no-network .build-deps; 		httpd -v
-# Wed, 05 Aug 2020 23:42:43 GMT
+# Thu, 22 Oct 2020 03:10:38 GMT
 STOPSIGNAL SIGWINCH
-# Wed, 05 Aug 2020 23:42:43 GMT
+# Thu, 22 Oct 2020 03:10:38 GMT
 COPY file:c432ff61c4993ecdef4786f48d91a96f8f0707f6179816ccb98db661bfb96b90 in /usr/local/bin/ 
-# Wed, 05 Aug 2020 23:42:43 GMT
+# Thu, 22 Oct 2020 03:10:38 GMT
 EXPOSE 80
-# Wed, 05 Aug 2020 23:42:43 GMT
+# Thu, 22 Oct 2020 03:10:38 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:0625b4155e2a59f647ece47c0cd77ed3196b1f84454fa64ce80cad90e2b9b79e`  
-		Last Modified: Fri, 29 May 2020 21:38:53 GMT  
-		Size: 2.8 MB (2792298 bytes)  
+	-	`sha256:d6ca64ac6f4b6382142ce9a3501652938130a6ec4bb02f3f455ee1f980834cfe`  
+		Last Modified: Thu, 22 Oct 2020 02:00:57 GMT  
+		Size: 2.8 MB (2791407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a5f7c55b9ee8172b7278d6fbd56929cc6cc794038a7138d4476abb5d393e385`  
-		Last Modified: Thu, 11 Jun 2020 22:47:16 GMT  
+	-	`sha256:16c28f1fd07281186fbfe430596f9f3cf3aacfcc6ee8c1f178a508da70159c9c`  
+		Last Modified: Thu, 22 Oct 2020 03:11:01 GMT  
 		Size: 1.2 KB (1232 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4b8819c13b3025df5869216a9330bd63d2436a9dcdde9a750981c9b1ca35fc8`  
-		Last Modified: Thu, 11 Jun 2020 22:47:16 GMT  
-		Size: 147.0 B  
+	-	`sha256:3c04fa86401d7ec6b1ddab8f7294d365834673b05438e3fd3b3c434d8d206c56`  
+		Last Modified: Thu, 22 Oct 2020 03:11:02 GMT  
+		Size: 146.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b20a748b2c867097a05ea0b4f9622d9ee89335d738ff0eea1a5744b3af1c168`  
-		Last Modified: Wed, 05 Aug 2020 23:43:19 GMT  
-		Size: 14.3 MB (14267395 bytes)  
+	-	`sha256:b619614534143ac2bc84e9f86b54ebbe4cc058d96d99f7dbf65f3425f422b22f`  
+		Last Modified: Thu, 22 Oct 2020 03:11:06 GMT  
+		Size: 13.9 MB (13900205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cbb04c4511da2c58ac3456d63fec8753b068a0a6306f182a82a41faa673da3b7`  
-		Last Modified: Wed, 05 Aug 2020 23:43:14 GMT  
-		Size: 299.0 B  
+	-	`sha256:7dba0bf9fea80ca7832c9a139ea21a9ae140fa10312833f6de9bb7762ac9bc1f`  
+		Last Modified: Thu, 22 Oct 2020 03:11:01 GMT  
+		Size: 293.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `httpd:alpine` - linux; ppc64le
@@ -3597,69 +3597,69 @@ CMD ["httpd-foreground"]
 ### `httpd:alpine` - linux; s390x
 
 ```console
-$ docker pull httpd@sha256:ef52cea9c91a885585c5381fc208dfdb505f327d95456e5b437f0798ad468db7
+$ docker pull httpd@sha256:b58a6eba5ec863c4210e59aebee576d66fe251d93a62d7a6d956ccee8ef1cfe6
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.8 MB (17823720 bytes)**  
+-	Total Size: **17.4 MB (17442413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d599582185541695b1477a34fd3b01adce2c01a364e561269a0b28cb748c43c2`
+-	Image ID: `sha256:eef2b7a2aa5321ae3f5bb64121849e98966072a42d7f41a9eb18b5b57e4bc28f`
 -	Default Command: `["httpd-foreground"]`
 
 ```dockerfile
-# Fri, 29 May 2020 21:41:39 GMT
-ADD file:9799ce3b2f782a28e10b1846cd9b3db827fa99c9bc601feb268456195856814e in / 
-# Fri, 29 May 2020 21:41:39 GMT
+# Thu, 22 Oct 2020 01:59:08 GMT
+ADD file:e07d6f40b1afc3d3eff230bc89e84704eb762706a373a60c6bea6a45b2287464 in / 
+# Thu, 22 Oct 2020 01:59:09 GMT
 CMD ["/bin/sh"]
-# Thu, 11 Jun 2020 19:39:11 GMT
+# Thu, 22 Oct 2020 03:06:50 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Thu, 11 Jun 2020 19:39:11 GMT
+# Thu, 22 Oct 2020 03:06:50 GMT
 ENV HTTPD_PREFIX=/usr/local/apache2
-# Thu, 11 Jun 2020 19:39:11 GMT
+# Thu, 22 Oct 2020 03:06:51 GMT
 ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2020 19:39:12 GMT
+# Thu, 22 Oct 2020 03:06:52 GMT
 RUN mkdir -p "$HTTPD_PREFIX" 	&& chown www-data:www-data "$HTTPD_PREFIX"
-# Thu, 11 Jun 2020 19:39:12 GMT
+# Thu, 22 Oct 2020 03:06:52 GMT
 WORKDIR /usr/local/apache2
-# Wed, 05 Aug 2020 23:43:31 GMT
+# Thu, 22 Oct 2020 03:06:53 GMT
 ENV HTTPD_VERSION=2.4.46
-# Wed, 05 Aug 2020 23:43:31 GMT
+# Thu, 22 Oct 2020 03:06:53 GMT
 ENV HTTPD_SHA256=740eddf6e1c641992b22359cabc66e6325868c3c5e2e3f98faf349b61ecf41ea
-# Wed, 05 Aug 2020 23:43:31 GMT
+# Thu, 22 Oct 2020 03:06:54 GMT
 ENV HTTPD_PATCHES=
-# Wed, 05 Aug 2020 23:44:56 GMT
+# Thu, 22 Oct 2020 03:08:54 GMT
 RUN set -eux; 		runDeps=' 		apr 		apr-util 		apr-util-dbm_db 		apr-util-ldap 		perl 	'; 	apk add --no-cache --virtual .build-deps 		$runDeps 		apr-dev 		apr-util-dev 		ca-certificates 		coreutils 		dpkg-dev dpkg 		gcc 		gnupg 		libc-dev 		curl-dev 		jansson-dev 		libxml2-dev 		lua-dev 		make 		nghttp2-dev 		openssl 		openssl-dev 		pcre-dev 		tar 		zlib-dev 		brotli-dev 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'httpd.tar.bz2' "httpd/httpd-$HTTPD_VERSION.tar.bz2"; 	echo "$HTTPD_SHA256 *httpd.tar.bz2" | sha256sum -c -; 		ddist 'httpd.tar.bz2.asc' "httpd/httpd-$HTTPD_VERSION.tar.bz2.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in 		DE29FB3971E71543FD2DC049508EAEC5302DA568 		13155B0E9E634F42BF6C163FDDBA64BA2C312D2F 		8B39757B1D8A994DF2433ED58B3A601F08C975E5 		31EE1A81B8D066548156D37B7D6DBFD1F08E012A 		A10208FEC3152DD7C0C9B59B361522D782AB7BD1 		3DE024AFDA7A4B15CB6C14410F81AA8AB0D5F771 		EB138C6AF0FC691001B16D93344A844D751D7F27 		CBA5A7C21EC143314C41393E5B968010E04F9A89 		3C016F2B764621BB549C66B516A96495E2226795 		937FB3994A242BA9BF49E93021454AF0CC8B0F7E 		EAD1359A4C0F2D37472AAF28F55DF0293A4E7AC9 		4C1EADADB4EF5007579C919C6635B6C0DE885DD3 		01E475360FCCF1D0F24B9D145D414AE1E005C9CB 		92CCEF0AA7DD46AC3A0F498BCA6939748103A37E 		D395C7573A68B9796D38C258153FA0CD75A67692 		FA39B617B61493FD283503E7EED1EA392261D073 		984FB3350C1D5C7A3282255BB31B213D208F5064 		FE7A49DAA875E890B4167F76CCB2EB46E76CF6D0 		39F6691A0ECF0C50E8BB849CF78875F642721F00 		29A2BA848177B73878277FA475CAA2A3F39B3750 		120A8667241AEDD4A78B46104C042818311A3DE5 		453510BDA6C5855624E009236D0BC73A40581837 		0DE5C55C6BF3B2352DABB89E13249B4FEC88A0BF 		7CDBED100806552182F98844E8E7E00B4DAA1988 		A8BA9617EF3BCCAC3B29B869EDB105896F9522D8 		3E6AC004854F3A7F03566B592FF06894E55B0D0E 		5B5181C2C0AB13E59DA3F7A3EC582EB639FF092C 		A93D62ECC3C8EA12DB220EC934EA76E6791485A8 		65B2D44FE74BD5E3DE3AC3F082781DE46D5954FA 		8935926745E1CE7E3ED748F6EC99EE267EB5F61A 		B9E8213AEFB861AF35A41F2C995E35221AD84DFF 		E3480043595621FE56105F112AB12A7ADC55C003 		93525CFCF6FDFFB3FD9700DD5A4B10AE43B56A27 	; do 		gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done; 	gpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" httpd.tar.bz2.asc; 		mkdir -p src; 	tar -xf httpd.tar.bz2 -C src --strip-components=1; 	rm httpd.tar.bz2; 	cd src; 		patches() { 		while [ "$#" -gt 0 ]; do 			local patchFile="$1"; shift; 			local patchSha256="$1"; shift; 			ddist "$patchFile" "httpd/patches/apply_to_$HTTPD_VERSION/$patchFile"; 			echo "$patchSha256 *$patchFile" | sha256sum -c -; 			patch -p0 < "$patchFile"; 			rm -f "$patchFile"; 		done; 	}; 	patches $HTTPD_PATCHES; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--prefix="$HTTPD_PREFIX" 		--enable-mods-shared=reallyall 		--enable-mpms-shared=all 	; 	make -j "$(nproc)"; 	make install; 		cd ..; 	rm -r src man manual; 		sed -ri 		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' 		-e 's!^(\s*TransferLog)\s+\S+!\1 /proc/self/fd/1!g' 		"$HTTPD_PREFIX/conf/httpd.conf" 		"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf" 	; 		runDeps="$runDeps $( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .httpd-rundeps $runDeps; 	apk del --no-network .build-deps; 		httpd -v
-# Wed, 05 Aug 2020 23:44:58 GMT
+# Thu, 22 Oct 2020 03:08:57 GMT
 STOPSIGNAL SIGWINCH
-# Wed, 05 Aug 2020 23:44:58 GMT
+# Thu, 22 Oct 2020 03:08:58 GMT
 COPY file:c432ff61c4993ecdef4786f48d91a96f8f0707f6179816ccb98db661bfb96b90 in /usr/local/bin/ 
-# Wed, 05 Aug 2020 23:44:58 GMT
+# Thu, 22 Oct 2020 03:08:58 GMT
 EXPOSE 80
-# Wed, 05 Aug 2020 23:44:58 GMT
+# Thu, 22 Oct 2020 03:08:59 GMT
 CMD ["httpd-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:8fb3d41b2e9a59630b51745f257cd2561f96bcd15cf309fcc20120d5fcee8c5b`  
-		Last Modified: Fri, 29 May 2020 21:42:03 GMT  
-		Size: 2.6 MB (2566189 bytes)  
+	-	`sha256:a4c84ece3d2b98927d25f13a4f367bfd96cbfae272f6ff1117d74c84b92d11d3`  
+		Last Modified: Thu, 22 Oct 2020 01:59:37 GMT  
+		Size: 2.6 MB (2565829 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ace58060358a71a2b7d6ce684fc8d43a04f338ccd973e43f23f3931b5e36d28`  
-		Last Modified: Thu, 11 Jun 2020 19:40:36 GMT  
-		Size: 1.3 KB (1261 bytes)  
+	-	`sha256:0dbdfad91e90d42a1a974be87e1433235819a4e7fcce16d7652f6489cb0f7c36`  
+		Last Modified: Thu, 22 Oct 2020 03:09:18 GMT  
+		Size: 1.3 KB (1259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65e2ce8f96463bee45983ff1478918bf748b053efa26d1dc1094d84e1943c88d`  
-		Last Modified: Thu, 11 Jun 2020 19:40:36 GMT  
+	-	`sha256:b0d2f601e0b02b29071e80dde2adaaca633ef299dd8cf549439374b534b42ba2`  
+		Last Modified: Thu, 22 Oct 2020 03:09:19 GMT  
 		Size: 178.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:111354997ba8e9b9fab2cc0d2c2f734ac9f4af63841b0400a8ca3bfa64c2af5b`  
-		Last Modified: Wed, 05 Aug 2020 23:45:24 GMT  
-		Size: 15.3 MB (15255793 bytes)  
+	-	`sha256:f11d5e22c9e1bc49ca01f99fda886bd8ff21609e5c2f30de01c78db716acf5ab`  
+		Last Modified: Thu, 22 Oct 2020 03:09:20 GMT  
+		Size: 14.9 MB (14874855 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3013694be48bf38a971455f1b3b0cabc1f96ae86be0614b9ccc72be56d81de83`  
-		Last Modified: Wed, 05 Aug 2020 23:45:21 GMT  
-		Size: 299.0 B  
+	-	`sha256:2e7ec924cba629b4ac05bd9ad9a24fff0748fc6f3907178e2c80d08505e49e77`  
+		Last Modified: Thu, 22 Oct 2020 03:09:17 GMT  
+		Size: 292.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `httpd:latest`
