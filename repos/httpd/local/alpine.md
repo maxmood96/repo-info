@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:35ab485181cec92c08665ffc7fb1ce2de403c6ddd7eaf33a175a7b342fdab7f0`
-- Created: `2020-08-05T23:23:18.776132141Z`
-- Virtual Size: ~ 56.08 Mb  
+- Image ID: `sha256:ee0260a87a86acc47de812e3fca9cebddbb6626c9bceaaeefaeac7e0f937de83`
+- Created: `2020-10-22T04:21:53.759539961Z`
+- Virtual Size: ~ 55.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
@@ -20,16 +20,16 @@
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.2.0-r6 description:
+alpine-baselayout-3.2.0-r7 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.2.0-r6 webpage:
+alpine-baselayout-3.2.0-r7 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.2.0-r6 installed size:
+alpine-baselayout-3.2.0-r7 installed size:
 409600
 
-alpine-baselayout-3.2.0-r6 license:
+alpine-baselayout-3.2.0-r7 license:
 GPL-2.0-only
 
 ```
@@ -139,16 +139,16 @@ Apache-2.0
 ### `apk` package: `brotli-libs`
 
 ```console
-brotli-libs-1.0.7-r5 description:
+brotli-libs-1.0.9-r1 description:
 Generic lossless compressor (libraries)
 
-brotli-libs-1.0.7-r5 webpage:
+brotli-libs-1.0.9-r1 webpage:
 https://github.com/google/brotli
 
-brotli-libs-1.0.7-r5 installed size:
-712704
+brotli-libs-1.0.9-r1 installed size:
+733184
 
-brotli-libs-1.0.7-r5 license:
+brotli-libs-1.0.9-r1 license:
 MIT
 
 ```
@@ -156,16 +156,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.31.1-r16 description:
+busybox-1.31.1-r19 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.31.1-r16 webpage:
+busybox-1.31.1-r19 webpage:
 https://busybox.net/
 
-busybox-1.31.1-r16 installed size:
+busybox-1.31.1-r19 installed size:
 962560
 
-busybox-1.31.1-r16 license:
+busybox-1.31.1-r19 license:
 GPL-2.0-only
 
 ```
@@ -190,16 +190,16 @@ MPL-2.0 GPL-2.0-or-later
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20191127-r2 description:
+ca-certificates-bundle-20191127-r4 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20191127-r2 webpage:
+ca-certificates-bundle-20191127-r4 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20191127-r2 installed size:
+ca-certificates-bundle-20191127-r4 installed size:
 233472
 
-ca-certificates-bundle-20191127-r2 license:
+ca-certificates-bundle-20191127-r4 license:
 MPL-2.0 GPL-2.0-or-later
 
 ```
@@ -309,16 +309,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.69.1-r0 description:
+libcurl-7.69.1-r1 description:
 The multiprotocol file transfer library
 
-libcurl-7.69.1-r0 webpage:
+libcurl-7.69.1-r1 webpage:
 https://curl.haxx.se/
 
-libcurl-7.69.1-r0 installed size:
+libcurl-7.69.1-r1 installed size:
 458752
 
-libcurl-7.69.1-r0 license:
+libcurl-7.69.1-r1 license:
 MIT
 
 ```
@@ -411,16 +411,16 @@ GPL-2.0 GPL-2.0-or-later LGPL-2.0-or-later BSD Public-Domain
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.9.10-r4 description:
+libxml2-2.9.10-r5 description:
 XML parsing library, version 2
 
-libxml2-2.9.10-r4 webpage:
+libxml2-2.9.10-r5 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.9.10-r4 installed size:
+libxml2-2.9.10-r5 installed size:
 1220608
 
-libxml2-2.9.10-r4 license:
+libxml2-2.9.10-r5 license:
 MIT
 
 ```
@@ -462,16 +462,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.24-r8 description:
+musl-utils-1.1.24-r9 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.24-r8 webpage:
+musl-utils-1.1.24-r9 webpage:
 https://musl.libc.org/
 
-musl-utils-1.1.24-r8 installed size:
+musl-utils-1.1.24-r9 installed size:
 151552
 
-musl-utils-1.1.24-r8 license:
+musl-utils-1.1.24-r9 license:
 MIT BSD GPL2+
 
 ```
@@ -547,16 +547,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.31.1-r16 description:
+ssl_client-1.31.1-r19 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.31.1-r16 webpage:
+ssl_client-1.31.1-r19 webpage:
 https://busybox.net/
 
-ssl_client-1.31.1-r16 installed size:
+ssl_client-1.31.1-r19 installed size:
 28672
 
-ssl_client-1.31.1-r16 license:
+ssl_client-1.31.1-r19 license:
 GPL-2.0-only
 
 ```
