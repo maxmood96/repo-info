@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0c9ffe2e4f2001b147d6202e2a19f11e98025530988e0e6549ccdb6e29b18283`
-- Created: `2020-09-30T22:58:33.683628101Z`
+- Image ID: `sha256:5e5d08de4f4b990a137bbf699bb6e9f7d16e63d83d84b2516e0008c1b9a257db`
+- Created: `2020-10-21T18:24:43.100193593Z`
 - Virtual Size: ~ 360.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u262-b10`
+  - `JAVA_VERSION=jdk8u265-b01`
   - `JAVA_HOME=/opt/java/openjdk`
   - `GROOVY_HOME=/opt/groovy`
   - `GROOVY_VERSION=3.0.6`
