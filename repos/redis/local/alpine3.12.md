@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bd71e6db4a54eb70734ea6c7792f701328cc9001fce5a9e0941a2ad9a6bc6d29`
-- Created: `2020-09-10T19:15:46.695305082Z`
-- Virtual Size: ~ 32.17 Mb  
+- Image ID: `sha256:8d1b562adb1c2721aa4735f9e0911bb14b97b5d957d9d82f25db31b0875d406a`
+- Created: `2020-10-22T07:40:59.706790943Z`
+- Virtual Size: ~ 31.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -20,16 +20,16 @@
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.2.0-r6 description:
+alpine-baselayout-3.2.0-r7 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.2.0-r6 webpage:
+alpine-baselayout-3.2.0-r7 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.2.0-r6 installed size:
+alpine-baselayout-3.2.0-r7 installed size:
 409600
 
-alpine-baselayout-3.2.0-r6 license:
+alpine-baselayout-3.2.0-r7 license:
 GPL-2.0-only
 
 ```
@@ -71,16 +71,16 @@ GPL-2.0-only
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.31.1-r16 description:
+busybox-1.31.1-r19 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.31.1-r16 webpage:
+busybox-1.31.1-r19 webpage:
 https://busybox.net/
 
-busybox-1.31.1-r16 installed size:
+busybox-1.31.1-r19 installed size:
 962560
 
-busybox-1.31.1-r16 license:
+busybox-1.31.1-r19 license:
 GPL-2.0-only
 
 ```
@@ -88,16 +88,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20191127-r2 description:
+ca-certificates-bundle-20191127-r4 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20191127-r2 webpage:
+ca-certificates-bundle-20191127-r4 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20191127-r2 installed size:
+ca-certificates-bundle-20191127-r4 installed size:
 233472
 
-ca-certificates-bundle-20191127-r2 license:
+ca-certificates-bundle-20191127-r4 license:
 MPL-2.0 GPL-2.0-or-later
 
 ```
@@ -190,16 +190,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.24-r8 description:
+musl-utils-1.1.24-r9 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.24-r8 webpage:
+musl-utils-1.1.24-r9 webpage:
 https://musl.libc.org/
 
-musl-utils-1.1.24-r8 installed size:
+musl-utils-1.1.24-r9 installed size:
 151552
 
-musl-utils-1.1.24-r8 license:
+musl-utils-1.1.24-r9 license:
 MIT BSD GPL2+
 
 ```
@@ -224,16 +224,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.31.1-r16 description:
+ssl_client-1.31.1-r19 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.31.1-r16 webpage:
+ssl_client-1.31.1-r19 webpage:
 https://busybox.net/
 
-ssl_client-1.31.1-r16 installed size:
+ssl_client-1.31.1-r19 installed size:
 28672
 
-ssl_client-1.31.1-r16 license:
+ssl_client-1.31.1-r19 license:
 GPL-2.0-only
 
 ```
@@ -258,16 +258,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2020a-r0 description:
+tzdata-2020c-r0 description:
 Timezone data
 
-tzdata-2020a-r0 webpage:
+tzdata-2020c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2020a-r0 installed size:
+tzdata-2020c-r0 installed size:
 3526656
 
-tzdata-2020a-r0 license:
+tzdata-2020c-r0 license:
 Public-Domain
 
 ```
