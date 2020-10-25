@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b57f56590781cbdbe6baa79b5a4e7a2013c80f826a1d44d7c6a4bfb642339044`
-- Created: `2020-10-16T20:20:04.374358435Z`
-- Virtual Size: ~ 585.01 Mb  
+- Image ID: `sha256:f6c738484a1fc4f0e8f08b323c79eec07fb8495800e6e3118b09ea3c722446f6`
+- Created: `2020-10-23T20:29:47.354456769Z`
+- Virtual Size: ~ 586.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["lein","repl"]`
@@ -12,14 +12,14 @@
   - `PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/:/usr/local/bin/`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/local/openjdk-11`
-  - `JAVA_VERSION=11.0.8`
+  - `JAVA_VERSION=11.0.9`
   - `BOOT_VERSION=2.8.3`
   - `BOOT_INSTALL=/usr/local/bin/`
   - `BOOT_AS_ROOT=yes`
   - `LEIN_VERSION=2.9.3`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
-  - `CLOJURE_VERSION=1.10.1.716`
+  - `CLOJURE_VERSION=1.10.1.727`
 
 ## `dpkg` (`.deb`-based packages)
 
