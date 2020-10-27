@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7d786aff875c3050595782659a8155ff43f511ec9ccc525704a911dc30077eb2`
-- Created: `2020-09-25T23:28:30.834891645Z`
-- Virtual Size: ~ 276.44 Mb  
+- Image ID: `sha256:e9e4b1045e1de252101294aa1346af5e89a3d745a3ad99117877deac20d50b55`
+- Created: `2020-10-23T17:58:35.041357143Z`
+- Virtual Size: ~ 276.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -236,11 +236,11 @@ $ apt-get source -qq --print-uris breezy=3.0.2-4ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/universe/b/breezy/breezy_3.0.2-4ubuntu2.debian.tar.xz' breezy_3.0.2-4ubuntu2.debian.tar.xz 64032 SHA256:6ad61cb9ba7b452882e2fe19e24e99ba9b4fcbaa087af9ea058e9a5c4a9260c1
 ```
 
-### `dpkg` source package: `brotli=1.0.7-6build1`
+### `dpkg` source package: `brotli=1.0.7-6ubuntu0.1`
 
 Binary Packages:
 
-- `libbrotli1:amd64=1.0.7-6build1`
+- `libbrotli1:amd64=1.0.7-6ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libbrotli1/copyright`)
 
@@ -249,10 +249,10 @@ Licenses: (parsed from: `/usr/share/doc/libbrotli1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris brotli=1.0.7-6build1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.0.7-6build1.dsc' brotli_1.0.7-6build1.dsc 2316 SHA256:6d46dbb44a7eb0442dc9743a803d6297809817c66a269a41e53009169a071257
-'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.0.7.orig.tar.gz' brotli_1.0.7.orig.tar.gz 23827908 SHA256:4c61bfb0faca87219ea587326c467b95acb25555b53d1a421ffa3c8a9296ee2c
-'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.0.7-6build1.debian.tar.xz' brotli_1.0.7-6build1.debian.tar.xz 4416 SHA256:7346c025427b3466252dc94d8a0d3e87692107a4d2ca49a382ac4de14e2957d5
+$ apt-get source -qq --print-uris brotli=1.0.7-6ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.0.7-6ubuntu0.1.dsc' brotli_1.0.7-6ubuntu0.1.dsc 2385 SHA512:139a93e110c6cf50531bdfee5ec4a8751ca81d1e02d2f38b21c1a9a478064286ddeb6bfdf20af488f7e2f53219cf460a00e68b77ef1b860fbf0df67f300d303b
+'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.0.7.orig.tar.gz' brotli_1.0.7.orig.tar.gz 23827908 SHA512:a82362aa36d2f2094bca0b2808d9de0d57291fb3a4c29d7c0ca0a37e73087ec5ac4df299c8c363e61106fccf2fe7f58b5cf76eb97729e2696058ef43b1d3930a
+'http://archive.ubuntu.com/ubuntu/pool/main/b/brotli/brotli_1.0.7-6ubuntu0.1.debian.tar.xz' brotli_1.0.7-6ubuntu0.1.debian.tar.xz 13672 SHA512:eb24ee68d0a699bb8f382c7f80c313e0bb26bea6b22f74bf01af236eafe345cf602f7544da4a74eb8c8f70defcd6b867018df97a96e5e894535cf731400edaa8
 ```
 
 ### `dpkg` source package: `bzip2=1.0.8-2`
@@ -622,13 +622,13 @@ $ apt-get source -qq --print-uris findutils=4.7.0-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.7.0-1ubuntu1.debian.tar.xz' findutils_4.7.0-1ubuntu1.debian.tar.xz 27700 SHA256:dfb2329fd141384c2d76409c2e99f164cc25954115529245d80d5d41e3167731
 ```
 
-### `dpkg` source package: `gcc-10=10-20200411-0ubuntu1`
+### `dpkg` source package: `gcc-10=10.2.0-5ubuntu1~20.04`
 
 Binary Packages:
 
-- `gcc-10-base:amd64=10-20200411-0ubuntu1`
-- `libgcc-s1:amd64=10-20200411-0ubuntu1`
-- `libstdc++6:amd64=10-20200411-0ubuntu1`
+- `gcc-10-base:amd64=10.2.0-5ubuntu1~20.04`
+- `libgcc-s1:amd64=10.2.0-5ubuntu1~20.04`
+- `libstdc++6:amd64=10.2.0-5ubuntu1~20.04`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-10-base/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -642,10 +642,10 @@ Licenses: (parsed from: `/usr/share/doc/gcc-10-base/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-10=10-20200411-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10-20200411-0ubuntu1.dsc' gcc-10_10-20200411-0ubuntu1.dsc 31097 SHA256:31e14253df2c6e84c158969c6832777a6d249a15af3e8887f96f7adcccb72217
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10-20200411.orig.tar.gz' gcc-10_10-20200411.orig.tar.gz 90370841 SHA256:3370dce39f863735c44f1c5f002132a84d1c7de621d4ca81a24d6613034201a8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10-20200411-0ubuntu1.debian.tar.xz' gcc-10_10-20200411-0ubuntu1.debian.tar.xz 557752 SHA256:b028f2e1e8f430f4c451222fba1caed9aea78e58c6b87970bd2dd119c29ac0fb
+$ apt-get source -qq --print-uris gcc-10=10.2.0-5ubuntu1~20.04
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.2.0-5ubuntu1~20.04.dsc' gcc-10_10.2.0-5ubuntu1~20.04.dsc 31163 SHA512:706dbc165819f21cc0ffc0d8e9ac3058db6bd2309a0665b7d83992b39985ff232cdadd165361cdb1216a5e17d16573eacc64e470d965290206c202c80108e1bb
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.2.0.orig.tar.gz' gcc-10_10.2.0.orig.tar.gz 94773960 SHA512:70911f9489225ddb10527f122be77d20cbaf2e4f2bfe92f756d33ec35c0aba352f342a7ee296310a149ea112f97e835f0d3d61f9bc9d416cfc43ccacb325e7ca
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.2.0-5ubuntu1~20.04.debian.tar.xz' gcc-10_10.2.0-5ubuntu1~20.04.debian.tar.xz 2024876 SHA512:d61af9c1eddf504f7b9ff2721b1f077a11059f0dba50392505c591bebd363bbe3a3b46f9fa67c090ac63bfcea6990efd47d647c35507c48f34f12b68a58fb94a
 ```
 
 ### `dpkg` source package: `gdbm=1.18.1-5`
@@ -2024,11 +2024,11 @@ $ apt-get source -qq --print-uris python-fastimport=0.9.8-5build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-fastimport/python-fastimport_0.9.8-5build1.debian.tar.xz' python-fastimport_0.9.8-5build1.debian.tar.xz 13644 SHA256:f83a7b8f5824f22c46aacb7ededbed2d801cbcedf67500c5ac3bc71aa6aa981c
 ```
 
-### `dpkg` source package: `python-urllib3=1.25.8-2`
+### `dpkg` source package: `python-urllib3=1.25.8-2ubuntu0.1`
 
 Binary Packages:
 
-- `python3-urllib3=1.25.8-2`
+- `python3-urllib3=1.25.8-2ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/python3-urllib3/copyright`)
 
@@ -2038,20 +2038,20 @@ Licenses: (parsed from: `/usr/share/doc/python3-urllib3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python-urllib3=1.25.8-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.25.8-2.dsc' python-urllib3_1.25.8-2.dsc 2217 SHA256:dd79cfb57d03b6e2556efa50e0e8377e1107c0c6a7f444d6e7bdb960fdefb785
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.25.8.orig.tar.gz' python-urllib3_1.25.8.orig.tar.gz 261077 SHA256:87716c2d2a7121198ebcb7ce7cccf6ce5e9ba539041cfbaeecfb641dc0bf6acc
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.25.8-2.debian.tar.xz' python-urllib3_1.25.8-2.debian.tar.xz 11436 SHA256:eaff453172673a923e51e5b5377bae4f916b57d1e1bb85df72646890c87fbc61
+$ apt-get source -qq --print-uris python-urllib3=1.25.8-2ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.25.8-2ubuntu0.1.dsc' python-urllib3_1.25.8-2ubuntu0.1.dsc 2332 SHA512:a7badcae163036079bbeda6bb68ac471df55db3dbe439417731d8921a7bb7afc620ae013b834f5d6c597334b3a658360033b0f1e3d9343bb3c14be47e5fbd98a
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.25.8.orig.tar.gz' python-urllib3_1.25.8.orig.tar.gz 261077 SHA512:6e380d98d9a8b06534abfab4eb67b685a8311a091e31adcefe2b0ffc61d2b728229df067790b20358f2646e9054a546450c3351e4aa618f31d85573ea50ceaa2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.25.8-2ubuntu0.1.debian.tar.xz' python-urllib3_1.25.8-2ubuntu0.1.debian.tar.xz 12640 SHA512:272e07cce618b8a512f0226a7577c5df61bf3c6a196b07249876a7491e2af5964be890f23613294836a3d102d02485198dd316412e316cafc67499873eb4993a
 ```
 
-### `dpkg` source package: `python2.7=2.7.18~rc1-2`
+### `dpkg` source package: `python2.7=2.7.18-1~20.04`
 
 Binary Packages:
 
-- `libpython2.7-minimal:amd64=2.7.18~rc1-2`
-- `libpython2.7-stdlib:amd64=2.7.18~rc1-2`
-- `python2.7=2.7.18~rc1-2`
-- `python2.7-minimal=2.7.18~rc1-2`
+- `libpython2.7-minimal:amd64=2.7.18-1~20.04`
+- `libpython2.7-stdlib:amd64=2.7.18-1~20.04`
+- `python2.7=2.7.18-1~20.04`
+- `python2.7-minimal=2.7.18-1~20.04`
 
 Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/share/doc/libpython2.7-stdlib/copyright`, `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/python2.7-minimal/copyright`)
 
@@ -2075,10 +2075,10 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python2.7=2.7.18~rc1-2
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18~rc1-2.dsc' python2.7_2.7.18~rc1-2.dsc 3318 SHA256:edd6bb77243841b0e130ddf827bf05925bfaf5611b22a932c7cd0771e4572a94
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18~rc1.orig.tar.gz' python2.7_2.7.18~rc1.orig.tar.gz 17538275 SHA256:fb8f47668ccb2ab22d8b1f72e0ca9b0022eeafce5b3fe8c422ab935cba62ff3d
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18~rc1-2.diff.gz' python2.7_2.7.18~rc1-2.diff.gz 286573 SHA256:0de99970280590fe68622cd7ffe16df8e68e8962cefc241285fc8965bdedd7dc
+$ apt-get source -qq --print-uris python2.7=2.7.18-1~20.04
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18-1~20.04.dsc' python2.7_2.7.18-1~20.04.dsc 2944 SHA512:c08b2386c342aa65899f7a0e3d14812fbca79ebd81306492741d8eb26d070dadbd162a48e7a0c09f1d1175902116f635f1874a3896871f1c2331bdba79b4ace7
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18.orig.tar.gz' python2.7_2.7.18.orig.tar.gz 17539408 SHA512:9a81cea8f8853b183364b399a238604075b00d18badb0cde118b20fe4428135de5d75a3feca0d56a3d8d40d557e3933de573671072d9da6f76f84435d23bf1ba
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18-1~20.04.diff.gz' python2.7_2.7.18-1~20.04.diff.gz 287081 SHA512:282392b04d2d92143d1d0f764e66fb50bd09c6223680e0cdc6c25c7db5c16ae4b96f1a2756d3fe7b2c05fef4cdb062d2b7ea5cb084169b648749a2c51ff5ab70
 ```
 
 ### `dpkg` source package: `python3-defaults=3.8.2-0ubuntu2`
@@ -2101,14 +2101,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.8.2-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.8.2-0ubuntu2.tar.gz' python3-defaults_3.8.2-0ubuntu2.tar.gz 138226 SHA256:e4969a54306421ebfd195d0c064935db7c53f9f152d8abaae63da33819235e9a
 ```
 
-### `dpkg` source package: `python3.8=3.8.2-1ubuntu1.2`
+### `dpkg` source package: `python3.8=3.8.5-1~20.04`
 
 Binary Packages:
 
-- `libpython3.8-minimal:amd64=3.8.2-1ubuntu1.2`
-- `libpython3.8-stdlib:amd64=3.8.2-1ubuntu1.2`
-- `python3.8=3.8.2-1ubuntu1.2`
-- `python3.8-minimal=3.8.2-1ubuntu1.2`
+- `libpython3.8-minimal:amd64=3.8.5-1~20.04`
+- `libpython3.8-stdlib:amd64=3.8.5-1~20.04`
+- `python3.8=3.8.5-1~20.04`
+- `python3.8-minimal=3.8.5-1~20.04`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/share/doc/libpython3.8-stdlib/copyright`, `/usr/share/doc/python3.8/copyright`, `/usr/share/doc/python3.8-minimal/copyright`)
 
@@ -2130,9 +2130,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.8=3.8.5-1~20.04
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.5-1~20.04.dsc' python3.8_3.8.5-1~20.04.dsc 3340 SHA512:4db414a66d5c633bea398e6c7600be87392abf968e224d3c4a9df2870ecfa24d0aa8846997504b089013018ca8ae0298262ddf0859322065dbb098d456f00b32
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.5.orig.tar.xz' python3.8_3.8.5.orig.tar.xz 18019640 SHA512:460cee65d7df7150694590575502d7f22e548ebfc99c8f8b363eef8bf30ee72e58d8ffacb1d607824f877f880eb9fd6775a508388029583e1e1df3380f3f9587
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.5-1~20.04.debian.tar.xz' python3.8_3.8.5-1~20.04.debian.tar.xz 210244 SHA512:810d54363ef596ecfba8065cf6f11fcbe7e3a80087d0a0418f5c562fecf42b0ddf5d6e9b97d3ce06c83cb68daeeb7eec0829be038976c541d12b923a30c481d5
+```
 
 ### `dpkg` source package: `readline=8.0-4`
 
@@ -2546,11 +2551,11 @@ $ apt-get source -qq --print-uris xz-utils=5.2.4-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.2.4-1ubuntu1.debian.tar.xz' xz-utils_5.2.4-1ubuntu1.debian.tar.xz 135512 SHA512:9ec339da084b6aedd5d9dfafe879f7b90ae6dc473458dd8eda234e087f3aa80480b7b0792b54588d57e1b41a2c42f28ef87b8e6a8cd4bb51d43e2517f701724f
 ```
 
-### `dpkg` source package: `zlib=1:1.2.11.dfsg-2ubuntu1`
+### `dpkg` source package: `zlib=1:1.2.11.dfsg-2ubuntu1.1`
 
 Binary Packages:
 
-- `zlib1g:amd64=1:1.2.11.dfsg-2ubuntu1`
+- `zlib1g:amd64=1:1.2.11.dfsg-2ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
 
@@ -2559,8 +2564,8 @@ Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris zlib=1:1.2.11.dfsg-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg-2ubuntu1.dsc' zlib_1.2.11.dfsg-2ubuntu1.dsc 2970 SHA256:2e56b0d54d841d974c96e6cc4361da7c75b1848cded85412cdb4b4bc7791233a
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg.orig.tar.gz' zlib_1.2.11.dfsg.orig.tar.gz 370248 SHA256:80c481411a4fe8463aeb8270149a0e80bb9eaf7da44132b6e16f2b5af01bc899
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg-2ubuntu1.debian.tar.xz' zlib_1.2.11.dfsg-2ubuntu1.debian.tar.xz 49448 SHA256:11c13ba58bd033dbfd2c7408f4a4eaa02035e007dea79ae20f0db580eaa53c9c
+$ apt-get source -qq --print-uris zlib=1:1.2.11.dfsg-2ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg-2ubuntu1.1.dsc' zlib_1.2.11.dfsg-2ubuntu1.1.dsc 2953 SHA512:c45111bf4c8d7f90f7cdcac618e25ce257fb4fa4ff01766259f27ba2afde471266e3683bcf40378caec3d4eefa7209811d9007b07ca4fa079b9061ec95a639f4
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg.orig.tar.gz' zlib_1.2.11.dfsg.orig.tar.gz 370248 SHA512:92819807c0b8de655021bb2d5d182f9b6b381d3072d8c8dc1df34bbaa25d36bcba140c85f754a43cc466aac65850b7a7366aa0c93e804180e5b255e61d5748de
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg-2ubuntu1.1.debian.tar.xz' zlib_1.2.11.dfsg-2ubuntu1.1.debian.tar.xz 50556 SHA512:6e4cb7b0eeb1645b8ed08a82ef967627abfe2444ca35cbec58a05e84cfdd2d7a45d766809b9a6082ba074185af36f1d5e3995ff63df8b9780170769474fc23c7
 ```
