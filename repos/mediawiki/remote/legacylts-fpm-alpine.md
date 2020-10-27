@@ -1,7 +1,7 @@
 ## `mediawiki:legacylts-fpm-alpine`
 
 ```console
-$ docker pull mediawiki@sha256:1e03c4f1d38da6c378b157de96aa9a68f62359c353a252aeb06ed033141bd5c8
+$ docker pull mediawiki@sha256:45c4a10f938255ab499ef25320f9a077733d5822b6839305001ce679abe424b3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -310,14 +310,14 @@ CMD ["php-fpm"]
 ### `mediawiki:legacylts-fpm-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull mediawiki@sha256:b148d9af19f5788f670935bcdb33aa0d28ef4ab76a8f98a7ba654412dd02a935
+$ docker pull mediawiki@sha256:853ef0f9fb0c79338ad051dbc25a4191d726af7da33b7e605a56cbf1f8c9ac90
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.5 MB (130484315 bytes)**  
+-	Total Size: **130.5 MB (130484485 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c0ae10093cad66ba1bdcaa52246e245f4455b3ce5cd0e64b75997aab6bb1351`
+-	Image ID: `sha256:16484225c0826236c5ca37071334f9f6359ab91244f17762155ac3586fdd8546`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -358,37 +358,37 @@ RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
 # Thu, 22 Oct 2020 07:29:20 GMT
 RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		libedit-dev 		libsodium-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 	; 		export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$(test "$gnuArch" = 's390x-linux-musl' && echo '--without-pcre-jit') 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Thu, 22 Oct 2020 07:29:22 GMT
-COPY multi:bd67471e0c4047be362a8a0e199558e6245207a6f70b72fdfe55aa2d2cae15e6 in /usr/local/bin/ 
-# Thu, 22 Oct 2020 07:29:27 GMT
+# Tue, 27 Oct 2020 00:31:47 GMT
+COPY multi:ebc915bbde1078ce3122b918e2e4c7726858af785343ade1a8d1a94f1052a4c7 in /usr/local/bin/ 
+# Tue, 27 Oct 2020 00:31:50 GMT
 RUN docker-php-ext-enable sodium
-# Thu, 22 Oct 2020 07:29:28 GMT
+# Tue, 27 Oct 2020 00:31:51 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Thu, 22 Oct 2020 07:29:29 GMT
+# Tue, 27 Oct 2020 00:31:51 GMT
 WORKDIR /var/www/html
-# Thu, 22 Oct 2020 07:29:34 GMT
+# Tue, 27 Oct 2020 00:31:53 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Thu, 22 Oct 2020 07:29:35 GMT
+# Tue, 27 Oct 2020 00:31:54 GMT
 STOPSIGNAL SIGQUIT
-# Thu, 22 Oct 2020 07:29:36 GMT
+# Tue, 27 Oct 2020 00:31:54 GMT
 EXPOSE 9000
-# Thu, 22 Oct 2020 07:29:37 GMT
+# Tue, 27 Oct 2020 00:31:55 GMT
 CMD ["php-fpm"]
-# Thu, 22 Oct 2020 10:18:55 GMT
+# Tue, 27 Oct 2020 03:23:30 GMT
 RUN set -eux; 		apk add --no-cache 		git 		imagemagick 		python3 	;
-# Thu, 22 Oct 2020 10:20:13 GMT
+# Tue, 27 Oct 2020 03:24:57 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		icu-dev 	; 		docker-php-ext-install -j "$(nproc)" 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.18; 	docker-php-ext-enable 		apcu 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .mediawiki-phpext-rundeps $runDeps; 	apk del .build-deps
-# Thu, 22 Oct 2020 10:20:16 GMT
+# Tue, 27 Oct 2020 03:24:59 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Thu, 22 Oct 2020 10:20:19 GMT
+# Tue, 27 Oct 2020 03:25:01 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data
-# Thu, 22 Oct 2020 10:20:32 GMT
+# Tue, 27 Oct 2020 03:25:02 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.31
-# Thu, 22 Oct 2020 10:20:50 GMT
+# Tue, 27 Oct 2020 03:25:02 GMT
 ENV MEDIAWIKI_VERSION=1.31.10
-# Thu, 22 Oct 2020 10:21:17 GMT
+# Tue, 27 Oct 2020 03:25:22 GMT
 RUN set -eux; 	apk add --no-cache --virtual .fetch-deps 		bzip2 		gnupg 	; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apk del .fetch-deps
-# Thu, 22 Oct 2020 10:21:19 GMT
+# Tue, 27 Oct 2020 03:25:26 GMT
 CMD ["php-fpm"]
 ```
 
@@ -421,37 +421,37 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 22 Oct 2020 07:39:21 GMT  
 		Size: 12.4 MB (12369089 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29022d13c1cd5458fd21a8aeb9e772989c46fe7855de9868835d5a3acffa1faa`  
-		Last Modified: Thu, 22 Oct 2020 07:39:18 GMT  
-		Size: 2.3 KB (2271 bytes)  
+	-	`sha256:2c874039498f947a1e07cd8112e33fc0cfc51aa27694c15bc8a1121040830b93`  
+		Last Modified: Tue, 27 Oct 2020 00:43:51 GMT  
+		Size: 2.3 KB (2262 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca64b9a1e290ee12f101fc650c54c9f3bdca29e890d49c2db7675bb9f5f43c22`  
-		Last Modified: Thu, 22 Oct 2020 07:39:18 GMT  
-		Size: 16.7 KB (16694 bytes)  
+	-	`sha256:d64ba3668219f414f0949b158930bef4788cba3f21ee2b041418d39a2b4990b8`  
+		Last Modified: Tue, 27 Oct 2020 00:43:51 GMT  
+		Size: 16.7 KB (16698 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac57678c74ebaa91d9d76ae8a1e2f6ae125f877c35cbe4922307e28092994f96`  
-		Last Modified: Thu, 22 Oct 2020 07:39:17 GMT  
-		Size: 7.8 KB (7783 bytes)  
+	-	`sha256:a3de575f48adde5fcd881cb03132034fe81e2616116a6cb904fab5d37824c39e`  
+		Last Modified: Tue, 27 Oct 2020 00:43:52 GMT  
+		Size: 7.8 KB (7790 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4cf3a9b54de2e22811c80b87c117bfb4aad5e71a0b4be18fd312c3fb1c07153`  
-		Last Modified: Thu, 22 Oct 2020 10:23:21 GMT  
-		Size: 48.8 MB (48814611 bytes)  
+	-	`sha256:5789bdf93d0693c8cd683d86e2979afa73cead98cb28c3697c2dbf123b32ff01`  
+		Last Modified: Tue, 27 Oct 2020 03:30:55 GMT  
+		Size: 48.8 MB (48814649 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fba09dbbe7db73986b1ed5cfd004af9f716d498caed5507aa3712eafd4a261a5`  
-		Last Modified: Thu, 22 Oct 2020 10:23:12 GMT  
-		Size: 17.4 MB (17429929 bytes)  
+	-	`sha256:610db63a953f52432802bfab01f2f5f4470f60eb1d80280fcf10df157c966e08`  
+		Last Modified: Tue, 27 Oct 2020 03:30:48 GMT  
+		Size: 17.4 MB (17429757 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da53fe4b690710447f711da68ce3ae5723defbae755590561c247714cb54929c`  
-		Last Modified: Thu, 22 Oct 2020 10:23:07 GMT  
+	-	`sha256:1da96d145bf30214ea033c02047131a44322778cce9e92c2eb4069e0b6621905`  
+		Last Modified: Tue, 27 Oct 2020 03:30:39 GMT  
 		Size: 328.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1be1151add7668d52ef570a8e6e62d75651603bcddea16e30f0049ac41f10e6`  
-		Last Modified: Thu, 22 Oct 2020 10:23:06 GMT  
+	-	`sha256:92c1182e360d438a557f7a2cbd3fa49ed74276b65e558c868a06b9467ca5b7f5`  
+		Last Modified: Tue, 27 Oct 2020 03:30:39 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09326ec88395cf33bc1a52646e9a6673c6ac80dfb5c7eaaa39211d5d4d5d761e`  
-		Last Modified: Thu, 22 Oct 2020 10:23:26 GMT  
-		Size: 35.9 MB (35892648 bytes)  
+	-	`sha256:19f9982c1e3a6fabb1e452d09fd9c6272a1ba7e5e2421219bdf3f41ab1f2beef`  
+		Last Modified: Tue, 27 Oct 2020 03:30:59 GMT  
+		Size: 35.9 MB (35892950 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mediawiki:legacylts-fpm-alpine` - linux; arm64 variant v8
