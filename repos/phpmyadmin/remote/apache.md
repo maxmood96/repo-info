@@ -1,7 +1,7 @@
 ## `phpmyadmin:apache`
 
 ```console
-$ docker pull phpmyadmin@sha256:ce26b766e295986bbd8f31adf24b02a61aad1dafd513556dfd678096877dcb47
+$ docker pull phpmyadmin@sha256:fa3beeb2e7dcda13994acf0c81c9ac3dc90d7c2847c83f52c8f2c73c4fec7be0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -724,14 +724,14 @@ CMD ["apache2-foreground"]
 ### `phpmyadmin:apache` - linux; ppc64le
 
 ```console
-$ docker pull phpmyadmin@sha256:e32a6fabdc2fa365209e6afb5caa6227fae2ec7969290c6ccc116c9b90298d4b
+$ docker pull phpmyadmin@sha256:9ac8754ea4860a974e0db5977b4a08cdf420144ad9678b839e23764e471184ef
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.4 MB (174440122 bytes)**  
+-	Total Size: **174.4 MB (174440052 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb37270ef18959e21e4d6338ce69e5c2aef30b2c13f3062d57fad6286bb8254f`
+-	Image ID: `sha256:a2756e272a8332c2b8fdfe428543874c521ae56fd7ff402b26ca53a395bffefa`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -784,43 +784,43 @@ RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
 # Tue, 13 Oct 2020 06:08:50 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libedit-dev 		libonig-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 		${PHP_EXTRA_BUILD_DEPS:-} 	; 	rm -rf /var/lib/apt/lists/*; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Tue, 13 Oct 2020 06:08:54 GMT
-COPY multi:af24b1d34daac0a277386947399eceaaf20d3065d4be5db00b1d6466cf006c49 in /usr/local/bin/ 
-# Tue, 13 Oct 2020 06:09:07 GMT
+# Tue, 27 Oct 2020 00:59:11 GMT
+COPY multi:dc714d093d9a94baf082b278964398d495faeef837d3357693090c43ebfb6fb4 in /usr/local/bin/ 
+# Tue, 27 Oct 2020 00:59:26 GMT
 RUN docker-php-ext-enable sodium
-# Tue, 13 Oct 2020 06:09:11 GMT
+# Tue, 27 Oct 2020 00:59:35 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 13 Oct 2020 06:09:17 GMT
+# Tue, 27 Oct 2020 00:59:41 GMT
 STOPSIGNAL SIGWINCH
-# Tue, 13 Oct 2020 06:09:20 GMT
+# Tue, 27 Oct 2020 00:59:43 GMT
 COPY file:e3123fcb6566efa979f945bfac1c94c854a559d7b82723e42118882a8ac4de66 in /usr/local/bin/ 
-# Tue, 13 Oct 2020 06:09:23 GMT
+# Tue, 27 Oct 2020 00:59:51 GMT
 WORKDIR /var/www/html
-# Tue, 13 Oct 2020 06:09:31 GMT
+# Tue, 27 Oct 2020 00:59:57 GMT
 EXPOSE 80
-# Tue, 13 Oct 2020 06:09:40 GMT
+# Tue, 27 Oct 2020 01:00:03 GMT
 CMD ["apache2-foreground"]
-# Wed, 14 Oct 2020 00:10:50 GMT
+# Tue, 27 Oct 2020 04:28:36 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libbz2-dev         libfreetype6-dev         libjpeg-dev         libpng-dev         libwebp-dev         libxpm-dev         libzip-dev     ;         docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp --with-xpm;     docker-php-ext-install -j "$(nproc)"         bz2         gd         mysqli         opcache         zip     ;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
-# Wed, 14 Oct 2020 00:10:57 GMT
+# Tue, 27 Oct 2020 04:28:45 GMT
 RUN set -ex;         {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=2';         echo 'opcache.fast_shutdown=1';     } > $PHP_INI_DIR/conf.d/opcache-recommended.ini;         {         echo 'session.cookie_httponly = 1';         echo 'session.use_strict_mode = 1';     } > $PHP_INI_DIR/conf.d/session-strict.ini;         {         echo 'allow_url_fopen = Off';         echo 'max_execution_time = 600';         echo 'memory_limit = 512M';     } > $PHP_INI_DIR/conf.d/phpmyadmin-misc.ini
-# Wed, 14 Oct 2020 00:10:58 GMT
+# Tue, 27 Oct 2020 04:28:50 GMT
 ENV VERSION=5.0.2
-# Wed, 14 Oct 2020 00:11:02 GMT
+# Tue, 27 Oct 2020 04:28:54 GMT
 ENV SHA256=cbcc78d1499308d9329950fcba2ebaa84c559a934fe54efc027d459d8e4161c8
-# Wed, 14 Oct 2020 00:11:07 GMT
+# Tue, 27 Oct 2020 04:28:58 GMT
 ENV URL=https://files.phpmyadmin.net/phpMyAdmin/5.0.2/phpMyAdmin-5.0.2-all-languages.tar.xz
-# Wed, 14 Oct 2020 00:11:12 GMT
+# Tue, 27 Oct 2020 04:29:03 GMT
 LABEL org.opencontainers.image.title=Official phpMyAdmin Docker image org.opencontainers.image.description=Run phpMyAdmin with Alpine, Apache and PHP FPM. org.opencontainers.image.authors=The phpMyAdmin Team <developers@phpmyadmin.net> org.opencontainers.image.vendor=phpMyAdmin org.opencontainers.image.documentation=https://github.com/phpmyadmin/docker#readme org.opencontainers.image.licenses=GPL-2.0-only org.opencontainers.image.version=5.0.2 org.opencontainers.image.url=https://github.com/phpmyadmin/docker#readme org.opencontainers.image.source=https://github.com/phpmyadmin/docker.git
-# Wed, 14 Oct 2020 00:13:21 GMT
+# Tue, 27 Oct 2020 04:30:03 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         gnupg         dirmngr     ;         export GNUPGHOME="$(mktemp -d)";     export GPGKEY="3D06A59ECE730EB71B511C17CE752F178259BD92";     curl -fsSL -o phpMyAdmin.tar.xz $URL;     curl -fsSL -o phpMyAdmin.tar.xz.asc $URL.asc;     echo "$SHA256 *phpMyAdmin.tar.xz" | sha256sum -c -;     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPGKEY"         || gpg --batch --keyserver ipv4.pool.sks-keyservers.net --recv-keys "$GPGKEY"         || gpg --batch --keyserver keys.gnupg.net --recv-keys "$GPGKEY"         || gpg --batch --keyserver pgp.mit.edu --recv-keys "$GPGKEY"         || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$GPGKEY";     gpg --batch --verify phpMyAdmin.tar.xz.asc phpMyAdmin.tar.xz;     tar -xf phpMyAdmin.tar.xz -C /var/www/html --strip-components=1;     mkdir -p /var/www/html/tmp;     chown www-data:www-data /var/www/html/tmp;     gpgconf --kill all;     rm -r "$GNUPGHOME" phpMyAdmin.tar.xz phpMyAdmin.tar.xz.asc;     rm -rf /var/www/html/setup/ /var/www/html/examples/ /var/www/html/test/ /var/www/html/po/ /var/www/html/composer.json /var/www/html/RELEASE-DATE-$VERSION;     sed -i "s@define('CONFIG_DIR'.*@define('CONFIG_DIR', '/etc/phpmyadmin/');@" /var/www/html/libraries/vendor_config.php;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
-# Wed, 14 Oct 2020 00:13:28 GMT
+# Tue, 27 Oct 2020 04:30:05 GMT
 COPY file:06ad12862a72189c42231c8acdf09dd49cf1544d43e49e2a1cdc3c2e3cea2603 in /etc/phpmyadmin/config.inc.php 
-# Wed, 14 Oct 2020 00:13:31 GMT
+# Tue, 27 Oct 2020 04:30:06 GMT
 COPY file:ad4174bf33f482b09f06789b6f1a83c35319165c7da1b86927e9f58fd8b2f0e9 in /docker-entrypoint.sh 
-# Wed, 14 Oct 2020 00:13:40 GMT
+# Tue, 27 Oct 2020 04:30:08 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 14 Oct 2020 00:13:49 GMT
+# Tue, 27 Oct 2020 04:30:11 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -865,36 +865,36 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 13 Oct 2020 08:22:58 GMT  
 		Size: 14.8 MB (14848313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d9117507d8650137385e1c82492b909ad51bbc3664478e40334f7b3968bb76c`  
-		Last Modified: Tue, 13 Oct 2020 08:22:43 GMT  
-		Size: 2.3 KB (2285 bytes)  
+	-	`sha256:b1936a628c46ca10b6a5d2b60135830c378fa5e39741a23fa4bccea92e493408`  
+		Last Modified: Tue, 27 Oct 2020 01:37:36 GMT  
+		Size: 2.3 KB (2275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62dc9a65b37484ea35300a9ca6cd570a7634844523789f9ca9c68663ede21d68`  
-		Last Modified: Tue, 13 Oct 2020 08:22:44 GMT  
+	-	`sha256:7ea87e51e27f473f7797430aba6ea0474f182f7cf044bef878069787a81911b0`  
+		Last Modified: Tue, 27 Oct 2020 01:37:36 GMT  
 		Size: 250.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99af5bd26388ee4f18ec8c91845a373ea7d7f890a07bceb0d04cc9641ad0fcaa`  
-		Last Modified: Tue, 13 Oct 2020 08:22:43 GMT  
-		Size: 895.0 B  
+	-	`sha256:8e01f1c90d78ed0b7344754645073b55021193137adb12c3973ba26816af7207`  
+		Last Modified: Tue, 27 Oct 2020 01:37:35 GMT  
+		Size: 897.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2463473ade43a53fb0879d0e0bc42124a85b13179d118f31ccb7ea9b534c4156`  
-		Last Modified: Wed, 14 Oct 2020 00:20:25 GMT  
-		Size: 3.1 MB (3147546 bytes)  
+	-	`sha256:bed940c9be42393f71d5af74ae40f907132a872cde9aa28a8710eccd5f624bc5`  
+		Last Modified: Tue, 27 Oct 2020 04:35:45 GMT  
+		Size: 3.1 MB (3147497 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1244262a1fd3e9c4af7c31ef72dd76d77cad2b98190b5a60d8f9f7734ab1f1d`  
-		Last Modified: Wed, 14 Oct 2020 00:20:24 GMT  
+	-	`sha256:a8a1f19c891b5df2026407a3212983d629b695dc5c3ff7b9965db468c57216a3`  
+		Last Modified: Tue, 27 Oct 2020 04:35:44 GMT  
 		Size: 472.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cab5dad4e432514bd2c9ebe33640a41c592a840db04ab5544d4e6cbea1b5e587`  
-		Last Modified: Wed, 14 Oct 2020 00:20:29 GMT  
-		Size: 13.2 MB (13205619 bytes)  
+	-	`sha256:642da54dfe761bfb9701e5e080892b992b2ac9916a0af5de16da5e0cba4b67d2`  
+		Last Modified: Tue, 27 Oct 2020 04:35:48 GMT  
+		Size: 13.2 MB (13205607 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af698000f6a90084b51b458ac1d07c4c2c0485441d15e19ae07ba1b62ce18fe6`  
-		Last Modified: Wed, 14 Oct 2020 00:20:24 GMT  
-		Size: 1.4 KB (1432 bytes)  
+	-	`sha256:794a4c0b20cf837be7847d4fae9d37a92b8a6f038270b782286884c60dd7e686`  
+		Last Modified: Tue, 27 Oct 2020 04:35:44 GMT  
+		Size: 1.4 KB (1431 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56689114dcb9010e7908c07e6266b1039112fb6950ff1cfdc263034f2e2e033c`  
-		Last Modified: Wed, 14 Oct 2020 00:20:24 GMT  
+	-	`sha256:de1016575a453e8bae4229292cf339edfe992af3e2b6c38c4e02483c8fba9985`  
+		Last Modified: Tue, 27 Oct 2020 04:35:44 GMT  
 		Size: 836.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
