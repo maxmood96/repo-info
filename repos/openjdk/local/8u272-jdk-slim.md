@@ -1,10 +1,10 @@
-# `openjdk:8u265-jre-slim-buster`
+# `openjdk:8u272-jdk-slim-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:37613fe7d6dc559c811b2db736cdde5b01956c4d9598dc10c7e9a6ceaf4ce414`
-- Created: `2020-10-13T09:06:21.221688581Z`
-- Virtual Size: ~ 184.06 Mb  
+- Image ID: `sha256:485edb6c7a50cd013fc8ed83ae0870b7b5c717800a9bdae208b24d62c2b69edd`
+- Created: `2020-10-26T23:27:20.408170837Z`
+- Virtual Size: ~ 288.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/local/openjdk-8`
-  - `JAVA_VERSION=8u265`
+  - `JAVA_VERSION=8u272`
 
 ## `dpkg` (`.deb`-based packages)
 
