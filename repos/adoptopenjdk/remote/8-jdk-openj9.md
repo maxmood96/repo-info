@@ -1,7 +1,7 @@
 ## `adoptopenjdk:8-jdk-openj9`
 
 ```console
-$ docker pull adoptopenjdk@sha256:a1b5ccd536f2e70683c849e59d9de38afa93064796da35a6d5422c1aafff0e81
+$ docker pull adoptopenjdk@sha256:8c812c9bf8b961ad973af8da514d845c7bd02fb6f1fc064494bd0372637fb513
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15,205 +15,205 @@ $ docker pull adoptopenjdk@sha256:a1b5ccd536f2e70683c849e59d9de38afa93064796da35
 ### `adoptopenjdk:8-jdk-openj9` - linux; amd64
 
 ```console
-$ docker pull adoptopenjdk@sha256:2b8017a7605f4a1d1df61373c6bd3627d77e6a9ca63806e25a3c4b38910ff65d
+$ docker pull adoptopenjdk@sha256:ff6fc87bdc30b2122061700d7af179cb435360508a894d8ce04ce68a2256c622
 ```
 
 -	Docker Version: 18.09.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.3 MB (160335534 bytes)**  
+-	Total Size: **164.9 MB (164920160 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dbca685bbfe1512b33221d0c54fc70623771c2e6300281721a66338a329ad71b`
+-	Image ID: `sha256:d1a9c4454557034e3fe0e8cd5ec06b1d4d0dd51511316ed51788a91ca6832b1f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 25 Sep 2020 22:33:49 GMT
-ADD file:4974bb5483c392fb54a35f3799802d623d14632747493dce5feb4d435634b4ac in / 
-# Fri, 25 Sep 2020 22:33:50 GMT
+# Fri, 23 Oct 2020 17:32:33 GMT
+ADD file:435d9776fdd3a1834f344fb82e459dbbb67cd50c71ab5e29b719273888d5bb7c in / 
+# Fri, 23 Oct 2020 17:32:34 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 25 Sep 2020 22:33:51 GMT
+# Fri, 23 Oct 2020 17:32:35 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 25 Sep 2020 22:33:52 GMT
+# Fri, 23 Oct 2020 17:32:36 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 25 Sep 2020 22:33:52 GMT
+# Fri, 23 Oct 2020 17:32:36 GMT
 CMD ["/bin/bash"]
-# Fri, 25 Sep 2020 23:10:55 GMT
+# Wed, 28 Oct 2020 17:19:36 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 25 Sep 2020 23:11:26 GMT
+# Wed, 28 Oct 2020 17:20:10 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 20 Oct 2020 17:04:44 GMT
-ENV JAVA_VERSION=jdk8u265-b01_openj9-0.21.0
-# Tue, 20 Oct 2020 17:04:52 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='ad78af32749b40f9f1dcc7ba23aa5e0ac0e7b63edd355d56e766a04d7ab3b60c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01_openj9-0.21.0/OpenJDK8U-jdk_ppc64le_linux_openj9_8u265b01_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='54b9dbcf9f221a0c2ed469b3b5828b56b2cf22fbbf61f0b462b4a9db0737f7f7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01_openj9-0.21.0/OpenJDK8U-jdk_s390x_linux_openj9_8u265b01_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='88ff739005cbb012f3ee73d426bd75810ce7de551d08e555475a261d57e3ecbf';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01_openj9-0.21.0/OpenJDK8U-jdk_x64_linux_openj9_8u265b01_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Tue, 20 Oct 2020 17:04:52 GMT
+# Wed, 28 Oct 2020 17:21:53 GMT
+ENV JAVA_VERSION=jdk8u272-b10_openj9-0.23.0
+# Wed, 28 Oct 2020 17:22:01 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='71f649a103e2abab58c062adc7cca0a60dca5feba1cb868cdf87bba1e1a9d333';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u272-b10_openj9-0.23.0/OpenJDK8U-jdk_ppc64le_linux_openj9_8u272b10_openj9-0.23.0.tar.gz';          ;;        s390x)          ESUM='893caadb7d61cfc895f40d35911ce4b3b400443de05f38c1936a91107271a68d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u272-b10_openj9-0.23.0/OpenJDK8U-jdk_s390x_linux_openj9_8u272b10_openj9-0.23.0.tar.gz';          ;;        amd64|x86_64)          ESUM='ca852f976e5b27ccd9b73a527a517496bda865b2ae2a85517ca74486fb8de7da';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u272-b10_openj9-0.23.0/OpenJDK8U-jdk_x64_linux_openj9_8u272b10_openj9-0.23.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Wed, 28 Oct 2020 17:22:01 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 20 Oct 2020 17:04:52 GMT
+# Wed, 28 Oct 2020 17:22:02 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle
-# Tue, 20 Oct 2020 17:06:20 GMT
+# Wed, 28 Oct 2020 17:23:29 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     SCC_GEN_RUNS_COUNT=3;     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     for i in $(seq 0 $SCC_GEN_RUNS_COUNT);     do         "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;         sleep 5;         "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh;         sleep 5;     done;         FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     for i in $(seq 0 $SCC_GEN_RUNS_COUNT);     do         "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;         sleep 5;         "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh;         sleep 5;     done;         FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Tue, 20 Oct 2020 17:06:20 GMT
+# Wed, 28 Oct 2020 17:23:29 GMT
 ENV OPENJ9_JAVA_OPTIONS=-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 ```
 
 -	Layers:
-	-	`sha256:171857c49d0f5e2ebf623e6cb36a8bcad585ed0c2aa99c87a055df034c1e5848`  
-		Last Modified: Tue, 22 Sep 2020 12:21:27 GMT  
-		Size: 26.7 MB (26701612 bytes)  
+	-	`sha256:6a5697faee43339ef8e33e3839060252392ad99325a48f7c9d7e93c22db4d4cf`  
+		Last Modified: Thu, 08 Oct 2020 15:19:51 GMT  
+		Size: 28.6 MB (28558714 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:419640447d267f068d2f84a093cb13a56ce77e130877f5b8bdb4294f4a90a84f`  
-		Last Modified: Fri, 25 Sep 2020 22:36:49 GMT  
-		Size: 852.0 B  
+	-	`sha256:ba13d3bc422b493440f97a8f148d245e1999cb616cb05876edc3ef29e79852f2`  
+		Last Modified: Fri, 23 Oct 2020 17:33:25 GMT  
+		Size: 847.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61e52f862619ab016d3bcfbd78e5c7aaaa1989b4c295e6dbcacddd2d7b93e1f5`  
-		Last Modified: Fri, 25 Sep 2020 22:36:49 GMT  
+	-	`sha256:a254829d9e55168306fd80a49e02eb015551facee9c444d9dce3b26d19238b82`  
+		Last Modified: Fri, 23 Oct 2020 17:33:25 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd4d4e9526b1adecc10515315b09e75d88526e75fba0552b3fbb933f40d293e9`  
-		Last Modified: Fri, 25 Sep 2020 23:16:31 GMT  
-		Size: 13.9 MB (13875646 bytes)  
+	-	`sha256:03adaffd7e576f90e30e1dede0962fbbb0b58baede693e6375c2c137e506ef92`  
+		Last Modified: Wed, 28 Oct 2020 17:37:00 GMT  
+		Size: 16.0 MB (16031340 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b905b2c61f81adca6a2b67330737d894cf7dc3b52d64eca245bb09ae4f98a4b`  
-		Last Modified: Tue, 20 Oct 2020 17:21:43 GMT  
-		Size: 115.3 MB (115334694 bytes)  
+	-	`sha256:f1055322806e69f138fe13d46542159a297449d96f45e3108dc68d3fe594feda`  
+		Last Modified: Wed, 28 Oct 2020 17:39:56 GMT  
+		Size: 115.9 MB (115946518 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:190b2a47098c52d03bc74f7044a4eabc638bafcac3794132d6611d68abe08833`  
-		Last Modified: Tue, 20 Oct 2020 17:21:38 GMT  
-		Size: 4.4 MB (4422568 bytes)  
+	-	`sha256:e0298946296046f7d2fc9e6c235ad89d95be576ef83804cbfcb770341da19662`  
+		Last Modified: Wed, 28 Oct 2020 17:39:46 GMT  
+		Size: 4.4 MB (4382579 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8-jdk-openj9` - linux; ppc64le
 
 ```console
-$ docker pull adoptopenjdk@sha256:f23dd847ecb160c909a02ec1c7a0ba202148ba8d49178b40ee1beb164a3837e3
+$ docker pull adoptopenjdk@sha256:0de2d548524e4562b96e0c6967d839567246e861069b9856e2683c9bb7c9c0b8
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.5 MB (164529250 bytes)**  
+-	Total Size: **170.6 MB (170569324 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0211655413a429610f177a91e0b174e7bc238cdfe56fd89ccadcfdbe44e93ce`
+-	Image ID: `sha256:658863df7401e8dba17a7f9c822c1f4297dd896d930874490a77c723fdcbb9b4`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 25 Sep 2020 23:47:27 GMT
-ADD file:0275f43eb5902c3fb3fe4f7e8dbd20c02f6be138627bbc6770bb74283f9e35fa in / 
-# Fri, 25 Sep 2020 23:47:54 GMT
+# Fri, 23 Oct 2020 19:25:52 GMT
+ADD file:b9c09681764b8697badc8139e82a30efeb353faf61258695d1cd3a843c4de6a8 in / 
+# Fri, 23 Oct 2020 19:26:22 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 25 Sep 2020 23:48:12 GMT
+# Fri, 23 Oct 2020 19:26:38 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 25 Sep 2020 23:48:29 GMT
+# Fri, 23 Oct 2020 19:26:53 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 25 Sep 2020 23:48:35 GMT
+# Fri, 23 Oct 2020 19:27:03 GMT
 CMD ["/bin/bash"]
-# Sat, 26 Sep 2020 03:37:39 GMT
+# Wed, 28 Oct 2020 17:17:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 26 Sep 2020 03:39:11 GMT
+# Wed, 28 Oct 2020 17:19:40 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 20 Oct 2020 16:29:24 GMT
-ENV JAVA_VERSION=jdk8u265-b01_openj9-0.21.0
-# Thu, 22 Oct 2020 09:48:50 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='ad78af32749b40f9f1dcc7ba23aa5e0ac0e7b63edd355d56e766a04d7ab3b60c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01_openj9-0.21.0/OpenJDK8U-jdk_ppc64le_linux_openj9_8u265b01_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='54b9dbcf9f221a0c2ed469b3b5828b56b2cf22fbbf61f0b462b4a9db0737f7f7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01_openj9-0.21.0/OpenJDK8U-jdk_s390x_linux_openj9_8u265b01_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='88ff739005cbb012f3ee73d426bd75810ce7de551d08e555475a261d57e3ecbf';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01_openj9-0.21.0/OpenJDK8U-jdk_x64_linux_openj9_8u265b01_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 22 Oct 2020 09:49:05 GMT
+# Wed, 28 Oct 2020 17:24:55 GMT
+ENV JAVA_VERSION=jdk8u272-b10_openj9-0.23.0
+# Wed, 28 Oct 2020 17:25:11 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='71f649a103e2abab58c062adc7cca0a60dca5feba1cb868cdf87bba1e1a9d333';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u272-b10_openj9-0.23.0/OpenJDK8U-jdk_ppc64le_linux_openj9_8u272b10_openj9-0.23.0.tar.gz';          ;;        s390x)          ESUM='893caadb7d61cfc895f40d35911ce4b3b400443de05f38c1936a91107271a68d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u272-b10_openj9-0.23.0/OpenJDK8U-jdk_s390x_linux_openj9_8u272b10_openj9-0.23.0.tar.gz';          ;;        amd64|x86_64)          ESUM='ca852f976e5b27ccd9b73a527a517496bda865b2ae2a85517ca74486fb8de7da';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u272-b10_openj9-0.23.0/OpenJDK8U-jdk_x64_linux_openj9_8u272b10_openj9-0.23.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Wed, 28 Oct 2020 17:25:17 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 22 Oct 2020 09:49:15 GMT
+# Wed, 28 Oct 2020 17:25:20 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle
-# Thu, 22 Oct 2020 09:51:13 GMT
+# Wed, 28 Oct 2020 17:26:52 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     SCC_GEN_RUNS_COUNT=3;     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     for i in $(seq 0 $SCC_GEN_RUNS_COUNT);     do         "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;         sleep 5;         "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh;         sleep 5;     done;         FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     for i in $(seq 0 $SCC_GEN_RUNS_COUNT);     do         "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;         sleep 5;         "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh;         sleep 5;     done;         FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Thu, 22 Oct 2020 09:51:20 GMT
+# Wed, 28 Oct 2020 17:26:55 GMT
 ENV OPENJ9_JAVA_OPTIONS=-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 ```
 
 -	Layers:
-	-	`sha256:597e66b6a06b9db7e6c7b74196c96587c89c928a0f1bea6a5c816ed0364acca2`  
-		Last Modified: Sat, 26 Sep 2020 00:05:59 GMT  
-		Size: 30.4 MB (30408489 bytes)  
+	-	`sha256:76ff736f6fb2d41940a6cbdeab4242e9a64ef7df99ee4f3d9fcb9ec67bfccfc6`  
+		Last Modified: Mon, 12 Oct 2020 16:20:28 GMT  
+		Size: 33.3 MB (33275528 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06fe1993d655960561e2b7d98a72bf4167cb6bb3a934b1095c2bd170bce1b0d0`  
-		Last Modified: Sat, 26 Sep 2020 00:05:07 GMT  
-		Size: 855.0 B  
+	-	`sha256:dd3d354673d1251716a1ed9cc3460095ee31664859e23d7e616546a17d287728`  
+		Last Modified: Fri, 23 Oct 2020 19:31:29 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a85181f68a0b81866e1ec4d1fc2f161d8d57137447d2ff1d6d61bcac1974773`  
-		Last Modified: Sat, 26 Sep 2020 00:05:06 GMT  
+	-	`sha256:434fabf01a92cfd54e3ae6f5e3dc7a3837ac2199999f713fbdf5cb2c800324a2`  
+		Last Modified: Fri, 23 Oct 2020 19:31:29 GMT  
 		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30f274fd8d44c41b563fd8be80792424906ae7f32bacbb53d3fc872271889baf`  
-		Last Modified: Sat, 26 Sep 2020 03:54:38 GMT  
-		Size: 14.5 MB (14518670 bytes)  
+	-	`sha256:eb82384b001eeabdc2ca426e902a10696a33f7e7723f24eca9f4848ebbe13a5e`  
+		Last Modified: Wed, 28 Oct 2020 17:47:13 GMT  
+		Size: 17.2 MB (17208276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e8523f06e4c4e32905a7286a4281cc3650b9f268b9be04b3def8ba47b135aaf`  
-		Last Modified: Thu, 22 Oct 2020 10:36:33 GMT  
-		Size: 116.0 MB (115951862 bytes)  
+	-	`sha256:f3e5de30bc3d1fe7033810f0dae172c88e6af59af62df9c886112d4f3581bd39`  
+		Last Modified: Wed, 28 Oct 2020 17:51:26 GMT  
+		Size: 116.5 MB (116546942 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3de513d95364563c37a30f7e8c6c4ca663d1c929c66e750c770635ab76702267`  
-		Last Modified: Thu, 22 Oct 2020 10:35:30 GMT  
-		Size: 3.6 MB (3649185 bytes)  
+	-	`sha256:472a0e3d88a5377583d9c834960da756137169bdba7bcc4a6dc772d59f689670`  
+		Last Modified: Wed, 28 Oct 2020 17:51:11 GMT  
+		Size: 3.5 MB (3537535 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8-jdk-openj9` - linux; s390x
 
 ```console
-$ docker pull adoptopenjdk@sha256:c4544675ba8e96e83c4f99a5129dfbb82be0c5b2ab7545c95ea13a84e9a86b0c
+$ docker pull adoptopenjdk@sha256:2e864b7da57ad37f56094e6b75db041de25d447b78d530177767a555b855d6ee
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **158.4 MB (158364871 bytes)**  
+-	Total Size: **162.9 MB (162883090 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c1a5e0860b63d1161d0d443cd97797f899f26ba9ba5619bfaade53a00c6ea65`
+-	Image ID: `sha256:44765276e2a07f07c6e368acb02a115de3c3bb16076f584c4db4fe1967114bd7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 25 Sep 2020 22:44:45 GMT
-ADD file:0a8ec4fb62616b6605197e20e0a7b511dc5b03d4af0e04c929dfd9fb457d2065 in / 
-# Fri, 25 Sep 2020 22:44:47 GMT
+# Fri, 23 Oct 2020 19:09:19 GMT
+ADD file:9b934c86e9ab1dd29cef318d8dd9cd1228b9d92124f434c50ad7d03ede1a5c76 in / 
+# Fri, 23 Oct 2020 19:09:24 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 25 Sep 2020 22:44:48 GMT
+# Fri, 23 Oct 2020 19:09:26 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 25 Sep 2020 22:44:48 GMT
+# Fri, 23 Oct 2020 19:09:27 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 25 Sep 2020 22:44:48 GMT
+# Fri, 23 Oct 2020 19:09:27 GMT
 CMD ["/bin/bash"]
-# Fri, 25 Sep 2020 23:07:22 GMT
+# Wed, 28 Oct 2020 17:41:23 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 25 Sep 2020 23:07:34 GMT
+# Wed, 28 Oct 2020 17:41:39 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 20 Oct 2020 16:42:49 GMT
-ENV JAVA_VERSION=jdk8u265-b01_openj9-0.21.0
-# Tue, 20 Oct 2020 16:42:56 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='ad78af32749b40f9f1dcc7ba23aa5e0ac0e7b63edd355d56e766a04d7ab3b60c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01_openj9-0.21.0/OpenJDK8U-jdk_ppc64le_linux_openj9_8u265b01_openj9-0.21.0.tar.gz';          ;;        s390x)          ESUM='54b9dbcf9f221a0c2ed469b3b5828b56b2cf22fbbf61f0b462b4a9db0737f7f7';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01_openj9-0.21.0/OpenJDK8U-jdk_s390x_linux_openj9_8u265b01_openj9-0.21.0.tar.gz';          ;;        amd64|x86_64)          ESUM='88ff739005cbb012f3ee73d426bd75810ce7de551d08e555475a261d57e3ecbf';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u265-b01_openj9-0.21.0/OpenJDK8U-jdk_x64_linux_openj9_8u265b01_openj9-0.21.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Tue, 20 Oct 2020 16:42:59 GMT
+# Wed, 28 Oct 2020 17:43:59 GMT
+ENV JAVA_VERSION=jdk8u272-b10_openj9-0.23.0
+# Wed, 28 Oct 2020 17:44:08 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='71f649a103e2abab58c062adc7cca0a60dca5feba1cb868cdf87bba1e1a9d333';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u272-b10_openj9-0.23.0/OpenJDK8U-jdk_ppc64le_linux_openj9_8u272b10_openj9-0.23.0.tar.gz';          ;;        s390x)          ESUM='893caadb7d61cfc895f40d35911ce4b3b400443de05f38c1936a91107271a68d';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u272-b10_openj9-0.23.0/OpenJDK8U-jdk_s390x_linux_openj9_8u272b10_openj9-0.23.0.tar.gz';          ;;        amd64|x86_64)          ESUM='ca852f976e5b27ccd9b73a527a517496bda865b2ae2a85517ca74486fb8de7da';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u272-b10_openj9-0.23.0/OpenJDK8U-jdk_x64_linux_openj9_8u272b10_openj9-0.23.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Wed, 28 Oct 2020 17:44:12 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 20 Oct 2020 16:42:59 GMT
+# Wed, 28 Oct 2020 17:44:12 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle
-# Tue, 20 Oct 2020 16:44:23 GMT
+# Wed, 28 Oct 2020 17:45:36 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     SCC_GEN_RUNS_COUNT=3;     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     for i in $(seq 0 $SCC_GEN_RUNS_COUNT);     do         "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;         sleep 5;         "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh;         sleep 5;     done;         FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     for i in $(seq 0 $SCC_GEN_RUNS_COUNT);     do         "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;         sleep 5;         "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh;         sleep 5;     done;         FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Tue, 20 Oct 2020 16:44:24 GMT
+# Wed, 28 Oct 2020 17:45:37 GMT
 ENV OPENJ9_JAVA_OPTIONS=-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 ```
 
 -	Layers:
-	-	`sha256:dd2de95b9a1c45e92bcc791d469201229b58d68187c99de6b08b00a13fa33393`  
-		Last Modified: Fri, 25 Sep 2020 22:45:52 GMT  
-		Size: 25.4 MB (25371975 bytes)  
+	-	`sha256:d3e8e1a5d50716d6aabb0cef46599f9e7a722a560910d6f724737aaef0a7d6c3`  
+		Last Modified: Mon, 12 Oct 2020 16:45:31 GMT  
+		Size: 27.2 MB (27224393 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c38a48ef4dfab2bd639d381d11b3390b6bf8860b2ef3356e9bb55f7cb8c775f9`  
-		Last Modified: Fri, 25 Sep 2020 22:45:51 GMT  
-		Size: 850.0 B  
+	-	`sha256:04282efaafb3c9b53bba677fc3c06c478dc1613c1f21939bfa2c113aeef2f99c`  
+		Last Modified: Fri, 23 Oct 2020 19:10:20 GMT  
+		Size: 847.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eced51184728468b347a6e3f143c356cd174c4a54be3cc10ec5aeddb402765fd`  
-		Last Modified: Fri, 25 Sep 2020 22:45:49 GMT  
+	-	`sha256:6269ae100536d7559ae6ebe6606b4405ebb706c3d963926c5568b6e7fd954582`  
+		Last Modified: Fri, 23 Oct 2020 19:10:19 GMT  
 		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62eb688908dd55f188cb3c2b3bb83efc30566ace847ab51ba28adbed5d30266b`  
-		Last Modified: Fri, 25 Sep 2020 23:12:47 GMT  
-		Size: 13.6 MB (13595725 bytes)  
+	-	`sha256:b5cd8065d26d8f90607b2debf915de6242befbe898f8fb305dbd99dc8df92d3a`  
+		Last Modified: Wed, 28 Oct 2020 17:59:30 GMT  
+		Size: 15.8 MB (15772935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:272a5565879573935709d55621f9595dbe44a11e9f9f964d4537d690bbd160e7`  
-		Last Modified: Tue, 20 Oct 2020 16:58:59 GMT  
-		Size: 115.0 MB (115030885 bytes)  
+	-	`sha256:84a25d951e5990379529b280d7610199bcb11f22aa1531ae9b2bcaaaa9e9d927`  
+		Last Modified: Wed, 28 Oct 2020 18:01:58 GMT  
+		Size: 115.5 MB (115505546 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:adf29feb98b6a5a12d2b63876af16e1cc825685b252f85ef359803019c01e99a`  
-		Last Modified: Tue, 20 Oct 2020 16:58:48 GMT  
-		Size: 4.4 MB (4365249 bytes)  
+	-	`sha256:59a5d7f7430a7caf503fc5df6a79bbbc43e83f988e6a1e46fb594abdd1a0354d`  
+		Last Modified: Wed, 28 Oct 2020 18:01:48 GMT  
+		Size: 4.4 MB (4379182 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8-jdk-openj9` - windows version 10.0.17763.1518; amd64
