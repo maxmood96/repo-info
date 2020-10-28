@@ -6859,14 +6859,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk/copyright`, `/usr/share/do
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-8=8u265-b01-0ubuntu2~18.04
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/openjdk-8/openjdk-8_8u265-b01-0ubuntu2~18.04.dsc' openjdk-8_8u265-b01-0ubuntu2~18.04.dsc 4814 SHA512:321584be7b96a2533e1c12b3a03a7fdc3f56a3576c01e66f03933065271b52c56ec259528a8a13c846b400d638540d4889683243d326c9eb4d3b9daf1c63e70d
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/openjdk-8/openjdk-8_8u265-b01.orig.tar.xz' openjdk-8_8u265-b01.orig.tar.xz 72667092 SHA512:aac02cf67495f7fa3546baf61373ef82fb25b37c33f6d4de5f92ffedff6e74f264db07035bd17a7a4f00eda8c8aa7079d4f3d449778cad740c0ab6ab6a8318d2
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/openjdk-8/openjdk-8_8u265-b01-0ubuntu2~18.04.debian.tar.xz' openjdk-8_8u265-b01-0ubuntu2~18.04.debian.tar.xz 247396 SHA512:6ff953c953c6fef3a9a93021c01b151dc5b95ea2f42904728b26cecffb083e58ce40810588c63be08f5586ec5bdeed7cbbce3a00e552f567342b9b3eebeb550d
-```
 
 ### `dpkg` source package: `openjdk-lts=11.0.8+10-0ubuntu1~18.04.1`
 
@@ -6882,14 +6877,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jre/copyright`, `/usr/share/d
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-lts=11.0.8+10-0ubuntu1~18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.8+10-0ubuntu1~18.04.1.dsc' openjdk-lts_11.0.8+10-0ubuntu1~18.04.1.dsc 4898 SHA512:a830bfb8ba339a9c7953fd668f87557c09a82ad3ce82dcea0352743ae4aa7f14ea054eb0254eaf42f6c31ed64ef0d509c2f420efdd2ba626b7a2e4ea06a532d6
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.8+10.orig.tar.gz' openjdk-lts_11.0.8+10.orig.tar.gz 116266979 SHA512:62f2c1b70cca6e678aca189f9343d0f9e5154d050729ffe5addaa370836ed1756e7533b7f86bd3fe957653be36bd3628e2259e9cd4bca59fabeae1c663a0d923
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.8+10-0ubuntu1~18.04.1.debian.tar.xz' openjdk-lts_11.0.8+10-0ubuntu1~18.04.1.debian.tar.xz 175988 SHA512:b9918a501a7a841caeef1cf4982835bf8c0e2ed8d0a027f647909b08511f81e42fe2cfe485a5ed82060fb1f3d4f595a5d10a8ade53637098504aa286f0a0d4eb
-```
 
 ### `dpkg` source package: `openjpeg2=2.3.0-2build0.18.04.1`
 
@@ -7162,15 +7152,9 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.26/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.26.1-6ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-6ubuntu0.3.dsc' perl_5.26.1-6ubuntu0.3.dsc 2768 SHA512:d859b56d2cc477937f33c033b81449e740a05be19c5376180e1db377b1d9733b3ebdcd2dfb144df68587e2d8e6f4b78a9f0b500c9ace8f5e07468e6705fe55bb
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig-regen-configure.tar.gz' perl_5.26.1.orig-regen-configure.tar.gz 712883 SHA512:3a8ecf16483d87d40bf428e952a3f5c287af8e4f64977133b61188855120d5896b3c5af845a19ad1912f469d9345dddd728708f6171498a7fd0dd0f56b463139
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig.tar.xz' perl_5.26.1.orig.tar.xz 11922848 SHA512:13faa7bcd7ed8c490c37e9032c115af06c9b8152b75f8062409dd72d263d1314480e8a9a883490de1b448b2e6d53b6a87d108e2eceb17de2524d5857c6a7d300
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-6ubuntu0.3.debian.tar.xz' perl_5.26.1-6ubuntu0.3.debian.tar.xz 174240 SHA512:e5febb7ff8da2e4153e323f2d036dae663079c5af18fa44e33729440c96998221d1074d7804057a54c4bf40d3ba8d0aa878bbef42b6ba1f2446a30021d5adf98
-```
 
 ### `dpkg` source package: `pinentry=1.1.0-1`
 
