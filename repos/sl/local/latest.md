@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7a1ff3f0bf9e643ab6fed7fd07887b8495dc84467633e7de6ffd7a3b405b3e42`
-- Created: `2020-10-21T18:47:07.211831743Z`
-- Virtual Size: ~ 198.64 Mb  
+- Image ID: `sha256:36d0097e9beb65a95ba4cf48396869dba6333eb5d4ceda1d0b1ca8371b401917`
+- Created: `2020-10-27T21:21:16.638672645Z`
+- Virtual Size: ~ 186.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `build-date=20201020`
+  - `build-date=20201027`
   - `name=SL7 Base Image`
   - `vendor=Scientific Linux`
 
@@ -1472,36 +1472,17 @@ Enabling repos-source repository
 http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/pyliblzma-0.5.3-11.el7.src.rpm
 ```
 
-### `rpm` package: `python-2.7.18-2.el7.x86_64`
-
-Licenses (from `rpm --query`): Python
-
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
-
-### `rpm` package: `python-backports-1.0-8.el7.x86_64`
-
-Licenses (from `rpm --query`): Public Domain
-
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls python-backports-1.0-8.el7
-Enabling sl-source repository
-Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/python-backports-1.0-8.el7.src.rpm
-```
-
-### `rpm` package: `python-backports-ssl_match_hostname-3.5.0.1-1.el7.noarch`
+### `rpm` package: `python-2.7.5-89.el7.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls python-backports-ssl_match_hostname-3.5.0.1-1.el7.noarch
+$ yumdownloader --quiet --source --urls python-2.7.5-89.el7
 Enabling sl-source repository
 Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/python-backports-ssl_match_hostname-3.5.0.1-1.el7.src.rpm
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/python-2.7.5-89.el7.src.rpm
 ```
 
 ### `rpm` package: `python-iniparse-0.4-9.el7.noarch`
@@ -1517,30 +1498,18 @@ Enabling repos-source repository
 http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/python-iniparse-0.4-9.el7.src.rpm
 ```
 
-### `rpm` package: `python-ipaddress-1.0.16-2.el7.noarch`
+### `rpm` package: `python-libs-2.7.5-89.el7.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls python-ipaddress-1.0.16-2.el7.noarch
+$ yumdownloader --quiet --source --urls python-libs-2.7.5-89.el7
 Enabling sl-source repository
 Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/python-ipaddress-1.0.16-2.el7.src.rpm
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/python-2.7.5-89.el7.src.rpm
 ```
-
-### `rpm` package: `python-libs-2.7.18-2.el7.x86_64`
-
-Licenses (from `rpm --query`): Python
-
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
-
-### `rpm` package: `python-pip-8.1.2-6.el7.noarch`
-
-Licenses (from `rpm --query`): MIT and Python and ASL 2.0 and BSD and ISC and LGPLv2 and (ASL 2.0 or BSD)
-
-**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `python-pycurl-7.19.0-19.el7.x86_64`
 
@@ -1553,19 +1522,6 @@ $ yumdownloader --quiet --source --urls python-pycurl-7.19.0-19.el7
 Enabling sl-source repository
 Enabling repos-source repository
 http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/python-pycurl-7.19.0-19.el7.src.rpm
-```
-
-### `rpm` package: `python-setuptools-0.9.8-7.el7.noarch`
-
-Licenses (from `rpm --query`): Python or ZPLv2.0
-
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls python-setuptools-0.9.8-7.el7.noarch
-Enabling sl-source repository
-Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/python-setuptools-0.9.8-7.el7.src.rpm
 ```
 
 ### `rpm` package: `python-urlgrabber-3.10-10.el7.noarch`
@@ -1802,17 +1758,17 @@ Enabling repos-source repository
 http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/tar-1.26-35.el7.src.rpm
 ```
 
-### `rpm` package: `tzdata-2020b-3.el7.noarch`
+### `rpm` package: `tzdata-2020d-2.el7.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls tzdata-2020b-3.el7.noarch
+$ yumdownloader --quiet --source --urls tzdata-2020d-2.el7.noarch
 Enabling sl-source repository
 Enabling repos-source repository
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/tzdata-2020b-3.el7.src.rpm
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS//vendor/tzdata-2020d-2.el7.src.rpm
 ```
 
 ### `rpm` package: `ustr-1.0.4-16.el7.x86_64`
