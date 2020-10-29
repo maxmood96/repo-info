@@ -18,6 +18,14 @@
 -	[`kong:2.1-alpine`](#kong21-alpine)
 -	[`kong:2.1-centos`](#kong21-centos)
 -	[`kong:2.1-ubuntu`](#kong21-ubuntu)
+-	[`kong:2.2`](#kong22)
+-	[`kong:2.2.0`](#kong220)
+-	[`kong:2.2.0-alpine`](#kong220-alpine)
+-	[`kong:2.2.0-centos`](#kong220-centos)
+-	[`kong:2.2.0-ubuntu`](#kong220-ubuntu)
+-	[`kong:2.2-alpine`](#kong22-alpine)
+-	[`kong:2.2-centos`](#kong22-centos)
+-	[`kong:2.2-ubuntu`](#kong22-ubuntu)
 -	[`kong:alpine`](#kongalpine)
 -	[`kong:centos`](#kongcentos)
 -	[`kong:latest`](#konglatest)
@@ -2034,6 +2042,78 @@ CMD ["kong" "docker-start"]
 		Last Modified: Sat, 26 Sep 2020 00:02:33 GMT  
 		Size: 689.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `kong:2.2`
+
+```console
+$ docker pull kong@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+
+## `kong:2.2.0`
+
+```console
+$ docker pull kong@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+
+## `kong:2.2.0-alpine`
+
+```console
+$ docker pull kong@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+
+## `kong:2.2.0-centos`
+
+```console
+$ docker pull kong@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+
+## `kong:2.2.0-ubuntu`
+
+```console
+$ docker pull kong@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+
+## `kong:2.2-alpine`
+
+```console
+$ docker pull kong@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+
+## `kong:2.2-centos`
+
+```console
+$ docker pull kong@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+
+## `kong:2.2-ubuntu`
+
+```console
+$ docker pull kong@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `kong:alpine`
 
