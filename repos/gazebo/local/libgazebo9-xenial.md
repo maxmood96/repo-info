@@ -817,13 +817,9 @@ Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris distro-info-data=0.28ubuntu0.14
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.14.dsc' distro-info-data_0.28ubuntu0.14.dsc 1761 SHA512:3b4b9997d809ff28276131d5308dc1a7f89b5d6164fc712a833abb1417ca25aa67d44a5de6c43dcca69795cd2f215e4b5a69bea9fb659268036cb7ace4d795b6
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.14.tar.xz' distro-info-data_0.28ubuntu0.14.tar.xz 7280 SHA512:5a3b34ad67e6e2ee2080dffbb577be798cd8c10227ed9391f57967b31798248165f9c037bfae7a3867df624ce90d9cc9e33140ab467e1e5b6d6ddab769cb9c50
-```
 
 ### `dpkg` source package: `dpkg=1.18.4ubuntu1.6`
 
@@ -4502,14 +4498,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-5.7=5.7.31-0ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.31-0ubuntu0.16.04.1.dsc' mysql-5.7_5.7.31-0ubuntu0.16.04.1.dsc 3380 SHA512:018062a4d992af874db3535d2b3627a43ec840c4a9fd4da6556a179fab77cabd58136d2a95fcdc40c4d5a41935e63bfddbfc1ee784a4ab34bd89ee32869b7f7b
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.31.orig.tar.gz' mysql-5.7_5.7.31.orig.tar.gz 51382559 SHA512:d7fc1927c860562d121658031bcbd58d36a942340423bf7b692cef84c29e67b56d009c9f9bb10cde8acabd6f9db58c67eb542349eccc4719fb38c8570738700a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.31-0ubuntu0.16.04.1.debian.tar.xz' mysql-5.7_5.7.31-0ubuntu0.16.04.1.debian.tar.xz 251200 SHA512:0d161e70ab28b02f7d04e2b1c975d4f0dce714d51a98de48b9e76856698b4a1b0f72ab8d652646152b6111430d69641d9e20738e2da7dbfca992a38410b95c8e
-```
 
 ### `dpkg` source package: `ncurses=6.0+20160213-1ubuntu1`
 
@@ -5042,14 +5033,9 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.22/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.22.1-9ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.6.dsc' perl_5.22.1-9ubuntu0.6.dsc 2480 SHA512:f7a1e1711cf72b49da8491e70c8d7f15855bf02c066935f22fc31513f859c51870d092fe4197c92390e0e05a9f122275648086506819ca66f7fd6709bfac51bf
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1.orig.tar.xz' perl_5.22.1.orig.tar.xz 11223940 SHA512:f214bf6959e582a04034c9343a270fcc4fdcf959a8fbb393433865446e634024809d194cfd07ab614b2c09a5a73caec0a74945bbbb3d690663a5f6f10eb168b8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9ubuntu0.6.debian.tar.xz' perl_5.22.1-9ubuntu0.6.debian.tar.xz 161972 SHA512:a38e8ce74b247c4215aad6753dc3418929388c9354120716bda1731302c08e661ae6cecc6cc5010e685a64cbdf461714eb291b128e8ebe819bf3974b79bfe749
-```
 
 ### `dpkg` source package: `pinentry=0.9.7-3`
 
