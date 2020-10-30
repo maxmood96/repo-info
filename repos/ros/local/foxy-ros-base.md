@@ -304,13 +304,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20190110ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20190110ubuntu1.1.dsc' ca-certificates_20190110ubuntu1.1.dsc 1921 SHA512:1457b40fa16171c622ce4164f79067a17031d1f2b77cede0000d9bda75dc9179173d3bac33dfd98ce454dbce71c8d8417a024d6569216d6fc451718468467bf9
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20190110ubuntu1.1.tar.xz' ca-certificates_20190110ubuntu1.1.tar.xz 243736 SHA512:1be3d0fd46bd4dbe5d6bb78391f2ee18ebb8283df1a513da80765bde63e770fe0eabb915375d81584c81f07fa71dc5529c3679069dae7d88bdb7fc0c864ced79
-```
 
 ### `dpkg` source package: `cdebconf=0.251ubuntu1`
 
@@ -664,13 +660,9 @@ Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris distro-info-data=0.43ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.43ubuntu1.1.dsc' distro-info-data_0.43ubuntu1.1.dsc 1738 SHA512:dd21380a71829f4dff4095dd2342054217bc19f5a77b672b8b9592268e047aebc9090a21e6c04c7f18d1b3481ab983f88217b56dadcc63929452431bafae192e
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.43ubuntu1.1.tar.xz' distro-info-data_0.43ubuntu1.1.tar.xz 7476 SHA512:f317a6be32a4418b81c68d1c5c6b7c6408892a41a3808732c5f69da0e1050abdc6cac9c25d1badee6ba14944f820e0c703f63a9a4e05473c5b862f31376b8ba9
-```
 
 ### `dpkg` source package: `dpkg=1.19.7ubuntu3`
 
@@ -3892,14 +3884,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-vcstool=0.2.14-1
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-vcstool/python3-vcstool_0.2.14-1.debian.tar.xz' python3-vcstool_0.2.14-1.debian.tar.xz 1112 SHA512:62528247129c614b0093fac31c3ea038db3accae9e3ccd3ebafaf43871ac26805ae3fcbd8a135a7121788bc58d489f61ee0a429ea44d07da5f8ac90979b4f23d
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-vcstool/python3-vcstool_0.2.14-1.dsc' python3-vcstool_0.2.14-1.dsc 884 SHA512:e14f2c556f1e68f40e77b0004605844e0ee5ce577b65ddce444f8f0f5dbb91a706fc3f20693e8994cac63e599ba28fe14623026e247944c41bf2e5f07bca8118
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-vcstool/python3-vcstool_0.2.14.orig.tar.gz' python3-vcstool_0.2.14.orig.tar.gz 31698 SHA512:1f8470422fa2f2a733ea593c3df2533b1e61c1b2ba37e106997ed7ea1f301e2d0ddb865c4931c084f86164b8b754858d8394b45540c4546f4bd9e1a97028edbe
-```
 
 ### `dpkg` source package: `python3.8=3.8.5-1~20.04`
 
@@ -6788,15 +6775,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2020a-0ubuntu0.20.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020a-0ubuntu0.20.04.dsc' tzdata_2020a-0ubuntu0.20.04.dsc 2382 SHA512:71677b71676e7b751fa8f1c6b264922ff7d8c93032a8e30f24325d0ebfda47af10055fff8041cd7707e12e3bf7c6c781f3c1c5aca9b59205b8454df977f7d510
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020a.orig.tar.gz' tzdata_2020a.orig.tar.gz 397245 SHA512:2a2fc2e3ad8a6e4c574242296c847ad582c2c1d86add9c556e65c812d19b9528522e3c4dddb5239017091825d2acc5a2ccaf21dc41b900b6c300ef4264cc5a9d
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020a.orig.tar.gz.asc' tzdata_2020a.orig.tar.gz.asc 833 SHA512:54c6539c4ed78f5ab8006f0a6ad99911a7002e742b185119bb3c77ba7c637777b2c7dce9867e16fd58088ad3f9d062d74c03f80e3225a599a3fc28581d87e366
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020a-0ubuntu0.20.04.debian.tar.xz' tzdata_2020a-0ubuntu0.20.04.debian.tar.xz 164392 SHA512:e52770db0e044f219d8c56d366dcb4e9123beac8268d630017a1abde6f05cf84ef9091751c908545206c1b259cf75e0c50529a4e4d62c935645a6cc150f163bf
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.2`
 
