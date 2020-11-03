@@ -1,10 +1,10 @@
-# `wordpress:5.5.1-php7.3-fpm`
+# `wordpress:5.5.3-php7.3-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d5dff33d399724cc1a7ff12138e41eb8334f1348ec15b18c499750d854bf6534`
-- Created: `2020-10-30T04:20:24.566728229Z`
-- Virtual Size: ~ 530.15 Mb  
+- Image ID: `sha256:1c2782d343aafb24f24f02f6b4f4543b91438ad4ab27abdcffd60f0d66b671f3`
+- Created: `2020-11-02T23:39:52.282320602Z`
+- Virtual Size: ~ 530.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -23,8 +23,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.24.tar.xz.asc`
   - `PHP_SHA256=78b0b417a147ab7572c874334d11654e3c61ec5b3f2170098e5db02fb0c89888`
   - `PHP_MD5=`
-  - `WORDPRESS_VERSION=5.5.1`
-  - `WORDPRESS_SHA1=d3316a4ffff2a12cf92fde8bfdd1ff8691e41931`
+  - `WORDPRESS_VERSION=5.5.3`
+  - `WORDPRESS_SHA1=61015720c679a6cbf9ad51701f0f3fedb51b3273`
 
 ## `dpkg` (`.deb`-based packages)
 
