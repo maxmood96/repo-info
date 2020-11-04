@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:07bc5e332532d8ae5cfd75166f66f3b1c9a1e2e0ec631d9df80982f6a7540c37`
-- Created: `2020-10-02T23:33:01.371517756Z`
-- Virtual Size: ~ 36.30 Mb  
+- Image ID: `sha256:bed911bffdde599d80836329f75450b5fc914442303f29e8b5c3fa024eb520f9`
+- Created: `2020-11-02T22:21:12.727042219Z`
+- Virtual Size: ~ 36.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `build-date=20201002`
+  - `build-date=20201030`
   - `name=Photon OS x86_64/3.0 Base Image`
   - `vendor=VMware`
 
@@ -203,13 +203,13 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `tdnf-2.1.1-3.ph3.x86_64`
+### `rpm` package: `tdnf-2.1.2-1.ph3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2.1,GPLv2
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `tdnf-cli-libs-2.1.1-3.ph3.x86_64`
+### `rpm` package: `tdnf-cli-libs-2.1.2-1.ph3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2.1,GPLv2
 
