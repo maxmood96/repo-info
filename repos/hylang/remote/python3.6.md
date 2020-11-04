@@ -1,7 +1,7 @@
 ## `hylang:python3.6`
 
 ```console
-$ docker pull hylang@sha256:db0145058dfe83c3fb9d838903c26cc63caf7c2edd7a14067ea31adc8083e13c
+$ docker pull hylang@sha256:b612e04cd2c24b13776f3da088ca37345195f6427360c271620dc460c61896d0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -474,14 +474,14 @@ CMD ["hy"]
 ### `hylang:python3.6` - linux; ppc64le
 
 ```console
-$ docker pull hylang@sha256:c0c9672f4dff9591ce193c5338f3f099ff0d25259cdeaaa96a297e4e4455ea23
+$ docker pull hylang@sha256:151ad5d8059aef69ac7ee608db68b82d501e238f69f6da6d6f405645afa50bbb
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.0 MB (49009385 bytes)**  
+-	Total Size: **49.0 MB (49009525 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:869a915a52a4b2e6f19a3f6972c601d8c2f49ce065c74d712abdcf0a0785aa3d`
+-	Image ID: `sha256:88b396858bc1e297da914dc5c915b4e42098263e3e0b58736757d6b11c3faac9`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -505,19 +505,19 @@ RUN set -ex 		&& savedAptMark="$(apt-mark showmanual)" 	&& apt-get update && apt
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
 # Thu, 22 Oct 2020 22:16:34 GMT
 ENV PYTHON_PIP_VERSION=20.2.4
-# Thu, 22 Oct 2020 22:16:37 GMT
-ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/8283828b8fd6f1783daf55a765384e6d8d2c5014/get-pip.py
-# Thu, 22 Oct 2020 22:16:40 GMT
-ENV PYTHON_GET_PIP_SHA256=2250ab0a7e70f6fd22b955493f7f5cf1ea53e70b584a84a32573644a045b4bfb
-# Thu, 22 Oct 2020 22:17:24 GMT
+# Tue, 03 Nov 2020 22:41:52 GMT
+ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/fa7dc83944936bf09a0e4cb5d5ec852c0d256599/get-pip.py
+# Tue, 03 Nov 2020 22:42:01 GMT
+ENV PYTHON_GET_PIP_SHA256=6e0bb0a2c2533361d7f297ed547237caf1b7507f197835974c0dd7eba998c53c
+# Tue, 03 Nov 2020 22:43:11 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum --check --strict -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Thu, 22 Oct 2020 22:17:28 GMT
+# Tue, 03 Nov 2020 22:43:20 GMT
 CMD ["python3"]
-# Fri, 23 Oct 2020 04:21:07 GMT
+# Tue, 03 Nov 2020 23:19:02 GMT
 ENV HY_VERSION=0.19.0
-# Fri, 23 Oct 2020 04:21:49 GMT
+# Tue, 03 Nov 2020 23:20:10 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION"
-# Fri, 23 Oct 2020 04:21:53 GMT
+# Tue, 03 Nov 2020 23:20:21 GMT
 CMD ["hy"]
 ```
 
@@ -538,13 +538,13 @@ CMD ["hy"]
 		Last Modified: Tue, 13 Oct 2020 15:16:37 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a320647d4ca1230fdda25b5ccdfcf0316e193df85527942bb1369c787eeaa7e`  
-		Last Modified: Thu, 22 Oct 2020 22:33:36 GMT  
-		Size: 2.4 MB (2411008 bytes)  
+	-	`sha256:5665711db165a7818ba751b22e17f63a25912eda76f54f7ac7ef31e02e0366c1`  
+		Last Modified: Tue, 03 Nov 2020 22:52:44 GMT  
+		Size: 2.4 MB (2410878 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ad0c8f586f80cd74e894bdc1a6ac29bf52e88bf5220566c6b36fa43318b71da`  
-		Last Modified: Fri, 23 Oct 2020 04:28:14 GMT  
-		Size: 2.8 MB (2768183 bytes)  
+	-	`sha256:e6a64f9dce5c5931790e0b4de1841e426097e63f9c1cb416c2044915fa6f4ee9`  
+		Last Modified: Tue, 03 Nov 2020 23:30:26 GMT  
+		Size: 2.8 MB (2768453 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:python3.6` - linux; s390x
