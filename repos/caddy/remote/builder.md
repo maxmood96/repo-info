@@ -1,7 +1,7 @@
 ## `caddy:builder`
 
 ```console
-$ docker pull caddy@sha256:d98e4b029c4c157d451171faef2053a9a4ab7217482efaf23d5027be42a39dfa
+$ docker pull caddy@sha256:a3a3208982f94bce254e689780d79e0457b3b76d5b9d854628caf090504a3729
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -362,14 +362,14 @@ WORKDIR /usr/bin
 ### `caddy:builder` - linux; ppc64le
 
 ```console
-$ docker pull caddy@sha256:1381ebb3e36c7f726363e75544a7cf23e07e34c50595cb35af607d6ead7655bf
+$ docker pull caddy@sha256:d51c882c7f333a86293123c5c9f7dde2e2d733761be27faa8ba679fd25880dec
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **114.1 MB (114109814 bytes)**  
+-	Total Size: **113.9 MB (113944446 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d8378d7f685f94342d985ca619645498434b64a6d62b7bf884dbb57030e7d923`
+-	Image ID: `sha256:ed252304acf0e273fc3538fbd970d4bfaa5fe502c7fe021fcb299559f389f4be`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -383,31 +383,31 @@ RUN apk add --no-cache 		ca-certificates
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
 # Thu, 22 Oct 2020 13:27:49 GMT
 ENV PATH=/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 22 Oct 2020 13:27:55 GMT
-ENV GOLANG_VERSION=1.15.3
-# Thu, 22 Oct 2020 13:30:17 GMT
-RUN set -eux; 	apk add --no-cache --virtual .build-deps 		bash 		gcc 		gnupg 		go 		musl-dev 		openssl 	; 	export 		GOROOT_BOOTSTRAP="$(go env GOROOT)" 		GOOS="$(go env GOOS)" 		GOARCH="$(go env GOARCH)" 		GOHOSTOS="$(go env GOHOSTOS)" 		GOHOSTARCH="$(go env GOHOSTARCH)" 	; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) export GOARM='6' ;; 		armv7) export GOARM='7' ;; 		x86) export GO386='387' ;; 	esac; 		url='https://storage.googleapis.com/golang/go1.15.3.src.tar.gz'; 	sha256='896a602570e54c8cdfc2c1348abd4ffd1016758d0bd086ccd9787dbfc9b64888'; 		wget -O go.tgz.asc "$url.asc"; 	wget -O go.tgz "$url"; 	echo "$sha256 *go.tgz" | sha256sum -c -; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 'EB4C 1BFD 4F04 2F6D DDCC EC91 7721 F63B D38B 4796'; 	gpg --batch --verify go.tgz.asc go.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" go.tgz.asc; 		tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		goEnv="$(go env | sed -rn -e '/^GO(OS|ARCH|ARM|386)=/s//export \0/p')"; 	eval "$goEnv"; 	[ -n "$GOOS" ]; 	[ -n "$GOARCH" ]; 	( 		cd /usr/local/go/src; 		./make.bash; 	); 		apk del --no-network .build-deps; 		go install std; 		rm -rf 		/usr/local/go/pkg/*/cmd 		/usr/local/go/pkg/bootstrap 		/usr/local/go/pkg/obj 		/usr/local/go/pkg/tool/*/api 		/usr/local/go/pkg/tool/*/go_bootstrap 		/usr/local/go/src/cmd/dist/dist 	; 		go version
-# Thu, 22 Oct 2020 13:30:31 GMT
+# Fri, 06 Nov 2020 18:32:30 GMT
+ENV GOLANG_VERSION=1.15.4
+# Fri, 06 Nov 2020 18:34:33 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		bash 		gcc 		gnupg 		go 		musl-dev 		openssl 	; 	export 		GOROOT_BOOTSTRAP="$(go env GOROOT)" 		GOOS="$(go env GOOS)" 		GOARCH="$(go env GOARCH)" 		GOHOSTOS="$(go env GOHOSTOS)" 		GOHOSTARCH="$(go env GOHOSTARCH)" 	; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) export GOARM='6' ;; 		armv7) export GOARM='7' ;; 		x86) export GO386='387' ;; 	esac; 		url='https://storage.googleapis.com/golang/go1.15.4.src.tar.gz'; 	sha256='063da6a9a4186b8118a0e584532c8c94e65582e2cd951ed078bfd595d27d2367'; 		wget -O go.tgz.asc "$url.asc"; 	wget -O go.tgz "$url"; 	echo "$sha256 *go.tgz" | sha256sum -c -; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 'EB4C 1BFD 4F04 2F6D DDCC EC91 7721 F63B D38B 4796'; 	gpg --batch --verify go.tgz.asc go.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" go.tgz.asc; 		tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		goEnv="$(go env | sed -rn -e '/^GO(OS|ARCH|ARM|386)=/s//export \0/p')"; 	eval "$goEnv"; 	[ -n "$GOOS" ]; 	[ -n "$GOARCH" ]; 	( 		cd /usr/local/go/src; 		./make.bash; 	); 		apk del --no-network .build-deps; 		go install std; 		rm -rf 		/usr/local/go/pkg/*/cmd 		/usr/local/go/pkg/bootstrap 		/usr/local/go/pkg/obj 		/usr/local/go/pkg/tool/*/api 		/usr/local/go/pkg/tool/*/go_bootstrap 		/usr/local/go/src/cmd/dist/dist 	; 		go version
+# Fri, 06 Nov 2020 18:34:46 GMT
 ENV GOPATH=/go
-# Thu, 22 Oct 2020 13:30:36 GMT
+# Fri, 06 Nov 2020 18:34:54 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 22 Oct 2020 13:30:47 GMT
+# Fri, 06 Nov 2020 18:35:16 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Thu, 22 Oct 2020 13:30:50 GMT
+# Fri, 06 Nov 2020 18:35:27 GMT
 WORKDIR /go
-# Thu, 22 Oct 2020 13:45:58 GMT
+# Fri, 06 Nov 2020 21:51:01 GMT
 RUN apk add --no-cache     git     ca-certificates
-# Thu, 22 Oct 2020 13:46:02 GMT
+# Fri, 06 Nov 2020 21:51:06 GMT
 ENV XCADDY_VERSION=v0.1.5
-# Thu, 22 Oct 2020 13:46:10 GMT
+# Fri, 06 Nov 2020 21:51:09 GMT
 ENV CADDY_VERSION=v2.2.1
-# Thu, 22 Oct 2020 13:46:20 GMT
+# Fri, 06 Nov 2020 21:51:14 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Thu, 22 Oct 2020 13:46:31 GMT
+# Fri, 06 Nov 2020 21:51:27 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='3d71e90a4b4f3ebc55d79086d5fb4e36d675fd067435b0a2e37f50361e89ceb58a4b8eae43ea502d1b6d1522c3020f1791ffad9a9fbd374883c6202cf9ed67f7' ;; 		armhf)   binArch='armv6'; checksum='243f58f32bba0b6295267ba78ed18c1b36dfd3c8af4ddbe1f8e1fe096a58cb3326d795b19ce06d87b8641fc17d6e8f1fd2ee372af7dca8c844544768cd05c418' ;; 		armv7)   binArch='armv7'; checksum='51c212b44bf21e3d9feb841cb91c93289f5244d7276a7ce4b1eea73121855345190de77f4a87a3e4e1a93cccf6085133b8552de48687c2164277c0766d3404f0' ;; 		aarch64) binArch='arm64'; checksum='13c3184699c20734a5718cad3e4ee8fed52df1eca21d0d3fa5d34a671990bfd1fae23824c7618c0cba1ceac6262b3225f85cbb37cd9c162935c2c367c623e1ea' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='faf068bb6b6086881504699fb92f77f628e36297eda3651021fea40a06a2fa043453a729000d460e530b2772420071b65fdd3915abfdd4d47dbf820e3590393d' ;; 		s390x)   binArch='s390x'; checksum='79527340291d9e2196079c87daabe6fed5f5e354dc3a4a37e59c684aeed910376b472e4d8969c3ae957f1af35272d46e669fa111fcb47bb90a0822aa039970ea' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/xcaddy.tar.gz "https://github.com/caddyserver/xcaddy/releases/download/v0.1.5/xcaddy_0.1.5_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/xcaddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/xcaddy.tar.gz -C /usr/bin xcaddy; 	rm -f /tmp/xcaddy.tar.gz; 	chmod +x /usr/bin/xcaddy;
-# Thu, 22 Oct 2020 13:46:34 GMT
+# Fri, 06 Nov 2020 21:51:29 GMT
 COPY file:3284b89c053fa1b60b278653bdca42a092891284e07e11d2fe66ee30b14e3081 in /usr/bin/caddy-builder 
-# Thu, 22 Oct 2020 13:46:37 GMT
+# Fri, 06 Nov 2020 21:51:36 GMT
 WORKDIR /usr/bin
 ```
 
@@ -424,25 +424,25 @@ WORKDIR /usr/bin
 		Last Modified: Thu, 22 Oct 2020 13:36:04 GMT  
 		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a53757254f83d2b7412aa2718828ed0bd489d01d5bad2c6ee877672775244a8a`  
-		Last Modified: Thu, 22 Oct 2020 13:36:50 GMT  
-		Size: 100.8 MB (100814882 bytes)  
+	-	`sha256:daec3950b2a73c219aef5a15211d4abc2d9a5af90823e42083fdace116f7c476`  
+		Last Modified: Fri, 06 Nov 2020 18:47:04 GMT  
+		Size: 100.6 MB (100649515 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6876bebeafd85e7b46e88239c365eeec0a308353e7d1f7de434659ef597f889d`  
-		Last Modified: Thu, 22 Oct 2020 13:36:02 GMT  
-		Size: 156.0 B  
+	-	`sha256:2ccf6cddd12f97382439bc21574bae904a64d8e1f96a30b0ac21e85f7aa112d7`  
+		Last Modified: Fri, 06 Nov 2020 18:46:36 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60beda9dadec93f6e90d3398b12787fc49427a3ba3a7e88e42e6105562016ec6`  
-		Last Modified: Thu, 22 Oct 2020 13:48:15 GMT  
-		Size: 8.9 MB (8920001 bytes)  
+	-	`sha256:cb94e9e52826c34d57af8656e0e5b92258140dd8b57f186db8861f03ef5e4f00`  
+		Last Modified: Fri, 06 Nov 2020 21:52:28 GMT  
+		Size: 8.9 MB (8920000 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04ca79d64160e09790e775af1b4204add8e6f21a3e837e1bd743c9b7b6b9c24a`  
-		Last Modified: Thu, 22 Oct 2020 13:48:14 GMT  
+	-	`sha256:75746c400be689f32365c8fb16a86def9e748eaf0507246876dade9fa125e78c`  
+		Last Modified: Fri, 06 Nov 2020 21:52:26 GMT  
 		Size: 1.3 MB (1287791 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7348aa6f5d47e3ce5091866c5cc3341d13a31faad6b1aa33e76e9432f45506a`  
-		Last Modified: Thu, 22 Oct 2020 13:48:13 GMT  
-		Size: 406.0 B  
+	-	`sha256:0695a08f39b4841501692759a1c562a2e2c4c13bac546fbed9a962411082c141`  
+		Last Modified: Fri, 06 Nov 2020 21:52:26 GMT  
+		Size: 407.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:builder` - linux; s390x
