@@ -4,6 +4,7 @@
 
 -	[`vault:1.4.7`](#vault147)
 -	[`vault:1.5.5`](#vault155)
+-	[`vault:1.6.0-rc`](#vault160-rc)
 -	[`vault:latest`](#vaultlatest)
 
 ## `vault:1.4.7`
@@ -559,6 +560,15 @@ CMD ["server" "-dev"]
 		Last Modified: Tue, 27 Oct 2020 18:59:00 GMT  
 		Size: 1.8 KB (1825 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `vault:1.6.0-rc`
+
+```console
+$ docker pull vault@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `vault:latest`
 
