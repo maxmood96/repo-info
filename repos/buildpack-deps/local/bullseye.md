@@ -4354,20 +4354,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.46.2-1
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.46.2-1.dsc' pango1.0_1.46.2-1.dsc 3441 SHA256:a34d19bc0ae5fbc4fcee576928d1efbe05740b36c21b3e27acc78fd49086ab3b
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.46.2.orig.tar.xz' pango1.0_1.46.2.orig.tar.xz 535108 SHA256:d89fab5f26767261b493279b65cfb9eb0955cd44c07c5628d36094609fc51841
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.46.2-1.debian.tar.xz' pango1.0_1.46.2-1.debian.tar.xz 33104 SHA256:ebb1d57ee28ba5dca09067e918cfc4d3103d7fd328293aa7c9693ed21af3d20e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.46.2-1/
 
-- https://sources.debian.net/src/pango1.0/1.46.2-1/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.46.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.46.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.6-6`
 
