@@ -400,19 +400,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.254
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.254.dsc' cdebconf_0.254.dsc 2750 SHA256:6ff5b77b18e55796849c46293205e7111889bffbfbc4e7ef9fbc7e21389ee033
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.254.tar.xz' cdebconf_0.254.tar.xz 275664 SHA256:8a8353717b0602a2789827e6b19daaeec6163a3afd3e421b3aaf763853b4c07e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cdebconf/0.254/
 
-- https://sources.debian.net/src/cdebconf/0.254/ (for browsing the source)
-- https://sources.debian.net/src/cdebconf/0.254/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cdebconf/0.254/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cluster=2.1.0-2`
 
@@ -855,21 +849,13 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `GFDL-1.3`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris findutils=4.7.0-1
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.7.0-1.dsc' findutils_4.7.0-1.dsc 2302 SHA256:867867005890a464599024bbc9d3bbc82493e255ca812a906112b9a5eda15169
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.7.0.orig.tar.xz' findutils_4.7.0.orig.tar.xz 1895048 SHA256:c5fefbdf9858f7e4feb86f036e1247a54c79fc2d8e4b7064d5aaa1f47dfa789a
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.7.0.orig.tar.xz.asc' findutils_4.7.0.orig.tar.xz.asc 488 SHA256:2f620e6d941e241fac52344a89149ab1ffeefb0fb9e42174e17a508d59a31d0f
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.7.0-1.debian.tar.xz' findutils_4.7.0-1.debian.tar.xz 27536 SHA256:3503f8ff7b1020c140055fbe06f107c73cd827f50761cf9a3c5296f6890bf0af
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/findutils/4.7.0-1/
 
-- https://sources.debian.net/src/findutils/4.7.0-1/ (for browsing the source)
-- https://sources.debian.net/src/findutils/4.7.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/findutils/4.7.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fontconfig=2.13.1-4.2`
 
@@ -1629,20 +1615,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris kernsmooth=2.23-17-1
-'http://deb.debian.org/debian/pool/main/k/kernsmooth/kernsmooth_2.23-17-1.dsc' kernsmooth_2.23-17-1.dsc 1889 SHA256:f6522161f0268c6b28e0da6bfcb1d72b341145596d7ce7b181f2e2cb8c2e0d99
-'http://deb.debian.org/debian/pool/main/k/kernsmooth/kernsmooth_2.23-17.orig.tar.gz' kernsmooth_2.23-17.orig.tar.gz 25348 SHA256:2b3d73fe15db46dbc2f6e3b043baadb7633c46bfa4a66d9eea5aed633058e685
-'http://deb.debian.org/debian/pool/main/k/kernsmooth/kernsmooth_2.23-17-1.debian.tar.xz' kernsmooth_2.23-17-1.debian.tar.xz 3312 SHA256:8a4c00c073ca4e8c28d438efedb05dbf63f4937064357d28ebd290c4ca77e43d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/kernsmooth/2.23-17-1/
 
-- https://sources.debian.net/src/kernsmooth/2.23-17-1/ (for browsing the source)
-- https://sources.debian.net/src/kernsmooth/2.23-17-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/kernsmooth/2.23-17-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `keyutils=1.6.1-2`
 
@@ -2021,20 +2000,13 @@ Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`)
 - `LGPL-3+`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libidn2=2.3.0-1
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.0-1.dsc' libidn2_2.3.0-1.dsc 2411 SHA256:f4f61425610ae4b4c4d3c74431825fb4b4892d4d07e954d7acdf163595d33f14
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.0.orig.tar.gz' libidn2_2.3.0.orig.tar.gz 2164993 SHA256:e1cb1db3d2e249a6a3eb6f0946777c2e892d5c5dc7bd91c74394fc3a01cab8b5
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.0-1.debian.tar.xz' libidn2_2.3.0-1.debian.tar.xz 10588 SHA256:a515029f13d12a48a6bc07dadc4cef6592db0a7257f48633795ae7128c23116c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libidn2/2.3.0-1/
 
-- https://sources.debian.net/src/libidn2/2.3.0-1/ (for browsing the source)
-- https://sources.debian.net/src/libidn2/2.3.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libidn2/2.3.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libjpeg-turbo=1:2.0.5-1.1`
 
@@ -2882,14 +2854,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `X11`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.8.14-1
-'http://http.debian.net/debian/pool/main/l/linux/linux_5.8.14-1.dsc' linux_5.8.14-1.dsc 194661 SHA256:639b3d2c22ef2dbc20d517e625b5827cfa43cb5f8f26799ea8023aa606353835
-'http://http.debian.net/debian/pool/main/l/linux/linux_5.8.14.orig.tar.xz' linux_5.8.14.orig.tar.xz 119195732 SHA256:accb4fd194247ab011b9bf6e1fb4a3e0f6753146482467e00e5c5c6b806c783e
-'http://http.debian.net/debian/pool/main/l/linux/linux_5.8.14-1.debian.tar.xz' linux_5.8.14-1.debian.tar.xz 1248760 SHA256:e20e709be9784305ccc03ea43513a8b59f58443eaeea2c716d2370025c042193
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/linux/5.8.14-1/
+
 
 ### `dpkg` source package: `littler=0.3.12-1`
 
@@ -3361,20 +3332,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.46.2-1
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.46.2-1.dsc' pango1.0_1.46.2-1.dsc 3441 SHA256:a34d19bc0ae5fbc4fcee576928d1efbe05740b36c21b3e27acc78fd49086ab3b
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.46.2.orig.tar.xz' pango1.0_1.46.2.orig.tar.xz 535108 SHA256:d89fab5f26767261b493279b65cfb9eb0955cd44c07c5628d36094609fc51841
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.46.2-1.debian.tar.xz' pango1.0_1.46.2-1.debian.tar.xz 33104 SHA256:ebb1d57ee28ba5dca09067e918cfc4d3103d7fd328293aa7c9693ed21af3d20e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.46.2-1/
 
-- https://sources.debian.net/src/pango1.0/1.46.2-1/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.46.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.46.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.6-6`
 
