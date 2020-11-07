@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:19b463307b41a6bf72bdc2fd65006735b1fc3e9cd84abe73f06f9b7896a25187`
-- Created: `2020-10-30T02:51:38.414298243Z`
+- Image ID: `sha256:eac1fc1a3697b5d15385e8b26f22f95613ec9c2a3ff36a300e0a5ec63c6df15c`
+- Created: `2020-11-06T03:25:13.207653499Z`
 - Virtual Size: ~ 129.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,7 +22,6 @@
   - `PHP_URL=https://www.php.net/distributions/php-7.3.24.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.24.tar.xz.asc`
   - `PHP_SHA256=78b0b417a147ab7572c874334d11654e3c61ec5b3f2170098e5db02fb0c89888`
-  - `PHP_MD5=`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=3.9.22`
   - `JOOMLA_SHA512=826f01683bd3d86f45a0e59dd6265cccdbeea9709604d19091572f6c5e3f8cd91a645789f6b8e8040c641badf76381acc4719cb29754c5d2bb2d5b6f4d17a60d`
