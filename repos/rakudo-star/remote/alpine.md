@@ -1,7 +1,7 @@
 ## `rakudo-star:alpine`
 
 ```console
-$ docker pull rakudo-star@sha256:7d1769dcc2efd86eaff6383894714a32f799f0360b51a776821ab0a4f43e3cde
+$ docker pull rakudo-star@sha256:a318828fba0168e4dc3ba409bdd517fa660006e6b94b5da64fdf345a7a6bba9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -58,45 +58,45 @@ CMD ["raku"]
 ### `rakudo-star:alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rakudo-star@sha256:221ea7fd1fb65e9517d5e51d6831ab9a509b7ec45d855f87f6b9067fb83748ca
+$ docker pull rakudo-star@sha256:5f278e3b025e1857ce2ea91ab56f5a3a468099e1b8c29d4ba5b2ac066dece2a3
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **31.9 MB (31939635 bytes)**  
+-	Total Size: **42.2 MB (42205117 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c1cc87342dbf7e66e1a629ba23269b90e12680d99df3f7d5275abd36923d7d95`
+-	Image ID: `sha256:672f90344b6d95e2c255ce54f41f78ab6ca38ba0ee19fb9a3d240ebab45a619b`
 -	Default Command: `["raku"]`
 
 ```dockerfile
-# Fri, 24 Apr 2020 00:14:52 GMT
-ADD file:75529f7e83edb6d0457a3b8bbfe33d4e3a12f339c5ace517d0f52dbedd9a146b in / 
-# Fri, 24 Apr 2020 00:14:53 GMT
+# Thu, 22 Oct 2020 02:01:01 GMT
+ADD file:55c4e9752146061a2b5f76027221329f423687987c0744ef577130c60ff0ba42 in / 
+# Thu, 22 Oct 2020 02:01:06 GMT
 CMD ["/bin/sh"]
-# Wed, 29 Apr 2020 04:02:56 GMT
+# Fri, 06 Nov 2020 23:03:43 GMT
 RUN addgroup -S raku && adduser -S raku -G raku
-# Wed, 29 Apr 2020 04:02:57 GMT
-ARG rakudo_version=2020.01
-# Wed, 29 Apr 2020 04:02:58 GMT
-ENV rakudo_version=2020.01
-# Wed, 29 Apr 2020 06:03:13 GMT
-RUN buildDeps='         gnupg         perl         perl-encode         gcc         libc-dev         make     '         url="https://rakudo.org/dl/star/rakudo-star-${rakudo_version}.tar.gz"     keyserver='ha.pool.sks-keyservers.net'     keyfp='ECF8B611205B447E091246AF959E3D6197190DD5 7A6C9EB8809CFEAF0ED4E09F18C438E6FF24326D B6F697742EFCAF5F23CE51D5031D65902E840821'     tmpdir="$(mktemp -d)"     && set -x     && export GNUPGHOME="$tmpdir"     && apk add --no-cache --virtual .build-deps $buildDeps     && mkdir ${tmpdir}/rakudo         && wget ${url}.asc -O ${tmpdir}/rakudo.tar.gz.asc     && wget $url -O ${tmpdir}/rakudo.tar.gz     && gpg --batch --keyserver $keyserver --recv-keys $keyfp     && gpg --batch --verify ${tmpdir}/rakudo.tar.gz.asc ${tmpdir}/rakudo.tar.gz         && tar xzf ${tmpdir}/rakudo.tar.gz --strip-components=1 -C ${tmpdir}/rakudo     && (         cd ${tmpdir}/rakudo         && perl Configure.pl --prefix=/usr --gen-moar         && make install     )     && rm -rf $tmpdir     && apk del .build-deps
-# Wed, 29 Apr 2020 06:03:15 GMT
+# Fri, 06 Nov 2020 23:03:44 GMT
+ARG rakudo_version=2020.10
+# Fri, 06 Nov 2020 23:03:44 GMT
+ENV rakudo_version=2020.10
+# Fri, 06 Nov 2020 23:32:39 GMT
+RUN buildDeps='         bash         gcc         gnupg         libc-dev         make         perl         perl-encode     '         url="https://rakudo.org/dl/star/rakudo-star-${rakudo_version}.tar.gz"     keyserver='ha.pool.sks-keyservers.net'     keyfp='B6F697742EFCAF5F23CE51D5031D65902E840821'     tmpdir="$(mktemp -d)"     && set -x     && export GNUPGHOME="$tmpdir"     && apk add --no-cache --virtual .build-deps $buildDeps     && mkdir ${tmpdir}/rakudo         && wget ${url}.asc -O ${tmpdir}/rakudo.tar.gz.asc     && wget $url -O ${tmpdir}/rakudo.tar.gz     && gpg --batch --keyserver $keyserver --recv-keys $keyfp     && gpg --batch --verify ${tmpdir}/rakudo.tar.gz.asc ${tmpdir}/rakudo.tar.gz         && tar xzf ${tmpdir}/rakudo.tar.gz --strip-components=1 -C ${tmpdir}/rakudo     && (         cd ${tmpdir}/rakudo         && bash bin/rstar install -p /usr     )     && rm -rf $tmpdir     && apk del .build-deps
+# Fri, 06 Nov 2020 23:32:41 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/site/bin
-# Wed, 29 Apr 2020 06:03:16 GMT
+# Fri, 06 Nov 2020 23:32:42 GMT
 CMD ["raku"]
 ```
 
 -	Layers:
-	-	`sha256:b038bcb63e9c8905cc879c957302f686a9b43f24a18dcfc4186ab236ddf04cad`  
-		Last Modified: Fri, 24 Apr 2020 00:15:54 GMT  
-		Size: 2.7 MB (2718734 bytes)  
+	-	`sha256:5f621e34cdf485f410766dc9a0fc7855d17916d0f6583b58cbdce7c28831f527`  
+		Last Modified: Thu, 22 Oct 2020 02:01:38 GMT  
+		Size: 2.7 MB (2706555 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a84906ed6937a6e0af1caf5edb5e8c4970a4717f4e68c82a4fb947abd8ad150`  
-		Last Modified: Wed, 29 Apr 2020 06:03:40 GMT  
-		Size: 1.3 KB (1286 bytes)  
+	-	`sha256:dc5728765b93b28e9fccc30542ab407aad9836503ca530e964dc5e424f1d17f5`  
+		Last Modified: Fri, 06 Nov 2020 23:33:15 GMT  
+		Size: 1.3 KB (1259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98e4fdfa66c93b748ea85652aa2a5178dd5766f9ccc347b84f1930c3f66f8ee5`  
-		Last Modified: Wed, 29 Apr 2020 06:03:52 GMT  
-		Size: 29.2 MB (29219615 bytes)  
+	-	`sha256:25008e694721f273df9cd8d1688728b789bce13616f9194b990465ee6cd92f59`  
+		Last Modified: Fri, 06 Nov 2020 23:33:28 GMT  
+		Size: 39.5 MB (39497303 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
