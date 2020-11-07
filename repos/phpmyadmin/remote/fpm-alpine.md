@@ -1,7 +1,7 @@
 ## `phpmyadmin:fpm-alpine`
 
 ```console
-$ docker pull phpmyadmin@sha256:ab1c7a2816ed25dabcdabd7a5426ca9cd3f9d4910d91227019976677ff17a630
+$ docker pull phpmyadmin@sha256:68a92a26aa6cd7ac767e8d6eb4ef1c5bd2ee01ccbaa80942e14bf36ef0b4228c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -334,14 +334,14 @@ CMD ["php-fpm"]
 ### `phpmyadmin:fpm-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull phpmyadmin@sha256:e5c007fed968784342f9358d664a6bc4aef41401baba5f248c665231b9f3e51e
+$ docker pull phpmyadmin@sha256:08f5c03f31eba60501b669e5d89fdba09c7f0be75f96e18eb2c55cd17a3f30f9
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.4 MB (47416140 bytes)**  
+-	Total Size: **47.5 MB (47520252 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c89e0c05413a7cd941bfb249fbf91736056384c206437b80e9000495a69fcc7a`
+-	Image ID: `sha256:a13b29d26edb6ac50270c1a338dd9a056d1a4ba9e86c8582fa151327a5c9c58c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -404,23 +404,23 @@ RUN apk add --no-cache     bash     tzdata
 RUN set -ex;         apk add --no-cache --virtual .build-deps         bzip2-dev         freetype-dev         libjpeg-turbo-dev         libpng-dev         libwebp-dev         libxpm-dev         libzip-dev     ;         docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp --with-xpm;     docker-php-ext-install -j "$(nproc)"         bz2         gd         mysqli         opcache         zip     ;         runDeps="$(         scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions             | tr ',' '\n'             | sort -u             | awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }'     )";     apk add --virtual .phpmyadmin-phpexts-rundeps $runDeps;     apk del --no-network .build-deps
 # Fri, 06 Nov 2020 01:30:28 GMT
 RUN set -ex;         {         echo 'opcache.memory_consumption=128';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=4000';         echo 'opcache.revalidate_freq=2';         echo 'opcache.fast_shutdown=1';     } > $PHP_INI_DIR/conf.d/opcache-recommended.ini;         {         echo 'session.cookie_httponly = 1';         echo 'session.use_strict_mode = 1';     } > $PHP_INI_DIR/conf.d/session-strict.ini;         {         echo 'allow_url_fopen = Off';         echo 'max_execution_time = 600';         echo 'memory_limit = 512M';     } > $PHP_INI_DIR/conf.d/phpmyadmin-misc.ini
-# Fri, 06 Nov 2020 01:30:30 GMT
-ENV VERSION=5.0.2
-# Fri, 06 Nov 2020 01:30:31 GMT
-ENV SHA256=cbcc78d1499308d9329950fcba2ebaa84c559a934fe54efc027d459d8e4161c8
-# Fri, 06 Nov 2020 01:30:32 GMT
-ENV URL=https://files.phpmyadmin.net/phpMyAdmin/5.0.2/phpMyAdmin-5.0.2-all-languages.tar.xz
-# Fri, 06 Nov 2020 01:30:33 GMT
-LABEL org.opencontainers.image.title=Official phpMyAdmin Docker image org.opencontainers.image.description=Run phpMyAdmin with Alpine, Apache and PHP FPM. org.opencontainers.image.authors=The phpMyAdmin Team <developers@phpmyadmin.net> org.opencontainers.image.vendor=phpMyAdmin org.opencontainers.image.documentation=https://github.com/phpmyadmin/docker#readme org.opencontainers.image.licenses=GPL-2.0-only org.opencontainers.image.version=5.0.2 org.opencontainers.image.url=https://github.com/phpmyadmin/docker#readme org.opencontainers.image.source=https://github.com/phpmyadmin/docker.git
-# Fri, 06 Nov 2020 01:30:46 GMT
+# Fri, 06 Nov 2020 23:35:04 GMT
+ENV VERSION=5.0.4
+# Fri, 06 Nov 2020 23:35:05 GMT
+ENV SHA256=1578c1a08e594da4f4f62e676ccbdbd17784c3de769b094ba42c35bf05c057db
+# Fri, 06 Nov 2020 23:35:05 GMT
+ENV URL=https://files.phpmyadmin.net/phpMyAdmin/5.0.4/phpMyAdmin-5.0.4-all-languages.tar.xz
+# Fri, 06 Nov 2020 23:35:06 GMT
+LABEL org.opencontainers.image.title=Official phpMyAdmin Docker image org.opencontainers.image.description=Run phpMyAdmin with Alpine, Apache and PHP FPM. org.opencontainers.image.authors=The phpMyAdmin Team <developers@phpmyadmin.net> org.opencontainers.image.vendor=phpMyAdmin org.opencontainers.image.documentation=https://github.com/phpmyadmin/docker#readme org.opencontainers.image.licenses=GPL-2.0-only org.opencontainers.image.version=5.0.4 org.opencontainers.image.url=https://github.com/phpmyadmin/docker#readme org.opencontainers.image.source=https://github.com/phpmyadmin/docker.git
+# Fri, 06 Nov 2020 23:35:13 GMT
 RUN set -ex;     apk add --no-cache --virtual .fetch-deps         gnupg     ;         export GNUPGHOME="$(mktemp -d)";     export GPGKEY="3D06A59ECE730EB71B511C17CE752F178259BD92";     curl -fsSL -o phpMyAdmin.tar.xz $URL;     curl -fsSL -o phpMyAdmin.tar.xz.asc $URL.asc;     echo "$SHA256 *phpMyAdmin.tar.xz" | sha256sum -c -;     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPGKEY"         || gpg --batch --keyserver ipv4.pool.sks-keyservers.net --recv-keys "$GPGKEY"         || gpg --batch --keyserver keys.gnupg.net --recv-keys "$GPGKEY"         || gpg --batch --keyserver pgp.mit.edu --recv-keys "$GPGKEY"         || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$GPGKEY";     gpg --batch --verify phpMyAdmin.tar.xz.asc phpMyAdmin.tar.xz;     tar -xf phpMyAdmin.tar.xz -C /var/www/html --strip-components=1;     mkdir -p /var/www/html/tmp;     chown www-data:www-data /var/www/html/tmp;     gpgconf --kill all;     rm -r "$GNUPGHOME" phpMyAdmin.tar.xz phpMyAdmin.tar.xz.asc;     rm -rf /var/www/html/setup/ /var/www/html/examples/ /var/www/html/test/ /var/www/html/po/ /var/www/html/composer.json /var/www/html/RELEASE-DATE-$VERSION;     sed -i "s@define('CONFIG_DIR'.*@define('CONFIG_DIR', '/etc/phpmyadmin/');@" /var/www/html/libraries/vendor_config.php;     apk del --no-network .fetch-deps
-# Fri, 06 Nov 2020 01:30:51 GMT
+# Fri, 06 Nov 2020 23:35:14 GMT
 COPY file:06ad12862a72189c42231c8acdf09dd49cf1544d43e49e2a1cdc3c2e3cea2603 in /etc/phpmyadmin/config.inc.php 
-# Fri, 06 Nov 2020 01:30:54 GMT
+# Fri, 06 Nov 2020 23:35:15 GMT
 COPY file:ad4174bf33f482b09f06789b6f1a83c35319165c7da1b86927e9f58fd8b2f0e9 in /docker-entrypoint.sh 
-# Fri, 06 Nov 2020 01:30:55 GMT
+# Fri, 06 Nov 2020 23:35:15 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 06 Nov 2020 01:30:56 GMT
+# Fri, 06 Nov 2020 23:35:16 GMT
 CMD ["php-fpm"]
 ```
 
@@ -477,16 +477,16 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 06 Nov 2020 01:31:56 GMT  
 		Size: 472.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8930ad8a70ca9562c78499f456fe7ec1cbaad3ea8673a7b8d5aa1f457307a77f`  
-		Last Modified: Fri, 06 Nov 2020 01:32:00 GMT  
-		Size: 12.9 MB (12907783 bytes)  
+	-	`sha256:93a9a7e958e5374bdc8574fc4f7b2318d11d28c7969308cb01fcdd9cb29e0500`  
+		Last Modified: Fri, 06 Nov 2020 23:36:10 GMT  
+		Size: 13.0 MB (13011895 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14bfaf0af542951e0e005946c9157db5d79d11486194fe5b54d5c120084df610`  
-		Last Modified: Fri, 06 Nov 2020 01:31:55 GMT  
+	-	`sha256:a85f8cde08723f49d4b5c9b69e22452e6d162916b4c4bf54160e92715f8e09cb`  
+		Last Modified: Fri, 06 Nov 2020 23:36:05 GMT  
 		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0f923fc26f93b98a43a24ecd97129a733ec69cd49a0ad972ad94ee872a5c5ee`  
-		Last Modified: Fri, 06 Nov 2020 01:31:55 GMT  
+	-	`sha256:9d2b06e145d0626c810e21aa14ffd960f5bdb0951e0c8c13834260a5e9919fd2`  
+		Last Modified: Fri, 06 Nov 2020 23:36:05 GMT  
 		Size: 836.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
