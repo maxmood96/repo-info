@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:527357389614e4cc4ca1f6a705f10a984e3757ef17cad225cd6a9e3594d36f87`
-- Created: `2020-10-30T03:40:40.537746583Z`
-- Virtual Size: ~ 356.59 Mb  
+- Image ID: `sha256:87dc1e2db55d01a93398a0fa326306e52759c352d6d1e77183614e1e0613c1d3`
+- Created: `2020-11-06T04:19:59.891155553Z`
+- Virtual Size: ~ 356.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,7 +22,6 @@
   - `PHP_URL=https://www.php.net/distributions/php-7.3.24.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.24.tar.xz.asc`
   - `PHP_SHA256=78b0b417a147ab7572c874334d11654e3c61ec5b3f2170098e5db02fb0c89888`
-  - `PHP_MD5=`
   - `NEXTCLOUD_VERSION=17.0.10`
 
 ## `apk` (`.apk`-based packages)

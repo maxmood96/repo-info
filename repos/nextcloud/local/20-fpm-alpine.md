@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6db77db6f6328ba2794927392dfcaa6fd21634abb5238d94dad537cf628e6307`
-- Created: `2020-10-30T03:59:13.06748605Z`
+- Image ID: `sha256:636f3c41dae34dce791d570b2fde98f5e1999809e62d2711dca0f51b531d5512`
+- Created: `2020-11-06T04:38:46.335353558Z`
 - Virtual Size: ~ 482.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,7 +22,6 @@
   - `PHP_URL=https://www.php.net/distributions/php-7.4.12.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.12.tar.xz.asc`
   - `PHP_SHA256=e82d2bcead05255f6b7d2ff4e2561bc334204955820cabc2457b5239fde96b76`
-  - `PHP_MD5=`
   - `NEXTCLOUD_VERSION=20.0.1`
 
 ## `apk` (`.apk`-based packages)
