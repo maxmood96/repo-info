@@ -1,7 +1,7 @@
 ## `archlinux:latest`
 
 ```console
-$ docker pull archlinux@sha256:bbb47c4a937fbdf8fffe919864ad638a0228c8da16ffa224d32409270eff6476
+$ docker pull archlinux@sha256:29670d7f6a5d9ac4eaf90e63c488ad48e99d21ba61ffb6c31a0e15306c953d9c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,51 +11,51 @@ $ docker pull archlinux@sha256:bbb47c4a937fbdf8fffe919864ad638a0228c8da16ffa224d
 ### `archlinux:latest` - linux; amd64
 
 ```console
-$ docker pull archlinux@sha256:18fef06d6e50bfd37c300c7cf3a0c98d6f7ef0e7b28daff33638513aa4d23802
+$ docker pull archlinux@sha256:62c34da77870e6b871fa597774eb670131dfece3ca5d9f5ca20a8923f6853af0
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **150.7 MB (150690315 bytes)**  
+-	Total Size: **150.7 MB (150698269 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b8af7d703d0829db17266ee183e234f283e62a6abc54fd419b9b0bc7f0db59a0`
+-	Image ID: `sha256:c3c2a2d74968d4cfa7801c87beb1d072c5daf564308881e8c12298d7da201ebb`
 -	Default Command: `["\/usr\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 04 Nov 2020 20:20:10 GMT
-COPY dir:2c46d626418f4d72d1c32ace0281e7388df32ce589e0bbae07092b59d30a7b6f in / 
-# Wed, 04 Nov 2020 20:20:14 GMT
+# Mon, 09 Nov 2020 19:20:17 GMT
+COPY dir:65dfb913148069566128f539f8b6a6a5b8da0dd6eea7a2342250c996fd2c200c in / 
+# Mon, 09 Nov 2020 19:20:21 GMT
 RUN ldconfig && update-ca-trust && locale-gen
-# Wed, 04 Nov 2020 20:20:16 GMT
+# Mon, 09 Nov 2020 19:20:23 GMT
 RUN sh -c 'ls usr/lib/sysusers.d/*.conf | /usr/share/libalpm/scripts/systemd-hook sysusers '
-# Wed, 04 Nov 2020 20:20:19 GMT
+# Mon, 09 Nov 2020 19:20:26 GMT
 RUN ln -s /usr/lib/os-release /etc/os-release
-# Wed, 04 Nov 2020 20:20:32 GMT
+# Mon, 09 Nov 2020 19:20:39 GMT
 RUN pacman-key --init && pacman-key --populate archlinux && bash -c "rm -rf etc/pacman.d/gnupg/{openpgp-revocs.d/,private-keys-v1.d/,pubring.gpg~,gnupg.S.}*"
-# Wed, 04 Nov 2020 20:20:32 GMT
+# Mon, 09 Nov 2020 19:20:39 GMT
 ENV LANG=en_US.UTF-8
-# Wed, 04 Nov 2020 20:20:32 GMT
+# Mon, 09 Nov 2020 19:20:39 GMT
 CMD ["/usr/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:4d6a3daaa4e18d3039017236988f299b0c20686077aa00720754cb913d80c1db`  
-		Last Modified: Wed, 04 Nov 2020 20:22:26 GMT  
-		Size: 148.2 MB (148167846 bytes)  
+	-	`sha256:1d8c42a4dcd25bc7effd6e2e5e801f481766ffbbc9978870d9760cb3e660e6ea`  
+		Last Modified: Mon, 09 Nov 2020 19:22:48 GMT  
+		Size: 148.2 MB (148175805 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92b65ac2377d2949ce63400e1530f38a5f427a38bd8c0c9114343f1086f7a89c`  
-		Last Modified: Wed, 04 Nov 2020 20:22:02 GMT  
-		Size: 1.6 MB (1584815 bytes)  
+	-	`sha256:eac260ed46fc8290fce81f7da22e7866c72898e68a79060fcc2f7456c662d385`  
+		Last Modified: Mon, 09 Nov 2020 19:22:22 GMT  
+		Size: 1.6 MB (1584803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d5a7d9d27127ab0c938966311f16f1a31641ad335de4c52a1955f6bbcfbfb6e`  
-		Last Modified: Wed, 04 Nov 2020 20:22:00 GMT  
-		Size: 1.1 KB (1132 bytes)  
+	-	`sha256:cbcfe54348aa8c69f5f2d2c7df17e0c94f5c6a018eb49190dd7a548ff1a3fd1e`  
+		Last Modified: Mon, 09 Nov 2020 19:22:21 GMT  
+		Size: 1.1 KB (1133 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05aae39893a70fbb7ca7bbc0856ac4c4ac51f0b5750e76def0a7a09f11d81cc3`  
-		Last Modified: Wed, 04 Nov 2020 20:22:00 GMT  
-		Size: 134.0 B  
+	-	`sha256:45be770bc8c643a743696e81683a36c6093bfd571308c212576fd5493cd869e3`  
+		Last Modified: Mon, 09 Nov 2020 19:22:22 GMT  
+		Size: 135.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d01483340c5b0831ccf76954b6ccedce7cbdfa7a0e9606497c7563b7d47982`  
-		Last Modified: Wed, 04 Nov 2020 20:22:00 GMT  
-		Size: 936.4 KB (936388 bytes)  
+	-	`sha256:1668eeb355c4bcaa516eef218bb9101a831e7d3b4d024d54ac249fcc3792b80a`  
+		Last Modified: Mon, 09 Nov 2020 19:22:22 GMT  
+		Size: 936.4 KB (936393 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
