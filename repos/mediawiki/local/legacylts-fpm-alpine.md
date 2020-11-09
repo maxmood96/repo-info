@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:47881a53dde95861c6fc8c47932c2c0bb4da196d6771f2b623a22d64a36b7632`
-- Created: `2020-10-27T03:04:13.304704651Z`
+- Image ID: `sha256:e485769eab3f745961c8cd92bbe9a09fa81db3db808d75994df178f3420d1698`
+- Created: `2020-11-06T03:56:15.838649879Z`
 - Virtual Size: ~ 411.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,7 +22,6 @@
   - `PHP_URL=https://www.php.net/distributions/php-7.2.34.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-7.2.34.tar.xz.asc`
   - `PHP_SHA256=409e11bc6a2c18707dfc44bc61c820ddfd81e17481470f3405ee7822d8379903`
-  - `PHP_MD5=`
   - `MEDIAWIKI_MAJOR_VERSION=1.31`
   - `MEDIAWIKI_VERSION=1.31.10`
 
