@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6d3ec7999de77f3daae031b059a9db3d4c665997ad34cdc30c507e05f1c62873`
-- Created: `2020-10-26T17:55:05.921144987Z`
+- Image ID: `sha256:0a5bccd3aa92211e0f36c7696f5eaceec7e1977ef9e953c04d3dd8a4b02ae6cf`
+- Created: `2020-11-06T21:03:49.514742984Z`
 - Virtual Size: ~ 423.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -55,21 +55,26 @@ $ apt-get source -qq --print-uris adduser=3.118ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.118ubuntu2.tar.xz' adduser_3.118ubuntu2.tar.xz 222364 SHA256:9429124c39c381b541005da6f0ae29831bd6533dd65c923e06ca2a7c310db382
 ```
 
-### `dpkg` source package: `alsa-lib=1.2.2-2.1ubuntu2`
+### `dpkg` source package: `alsa-lib=1.2.2-2.1ubuntu2.1`
 
 Binary Packages:
 
-- `libasound2:amd64=1.2.2-2.1ubuntu2`
-- `libasound2-data=1.2.2-2.1ubuntu2`
+- `libasound2:amd64=1.2.2-2.1ubuntu2.1`
+- `libasound2-data=1.2.2-2.1ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libasound2/copyright`, `/usr/share/doc/libasound2-data/copyright`)
 
 - `LGPL-2.1`
 - `LPGL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris alsa-lib=1.2.2-2.1ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.2-2.1ubuntu2.1.dsc' alsa-lib_1.2.2-2.1ubuntu2.1.dsc 2669 SHA512:edebf093a2cd8b87c9c27b82a2d48102728d17e8129d6e474ee6a638b6dd89480477cf498046da835554f36fdb64b26e48ecb246c981e4c40ed504876d82a5b6
+'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.2.orig.tar.bz2' alsa-lib_1.2.2.orig.tar.bz2 1030747 SHA512:d21adb3ff998918c7d1820f9ce2aaf4202dd45ccb87cb092d49da8b2402b6ddaad06325be0fd59f17393a5d9958e3743bfccb4b14bdb947a42e7d791d73c7033
+'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.2-2.1ubuntu2.1.debian.tar.xz' alsa-lib_1.2.2-2.1ubuntu2.1.debian.tar.xz 57784 SHA512:ef35d32f9454348765ee644a4809a946b2989f708747fa3da97f09b0053897358d47079a9f5b30f511e8c3c8dfa754af7c32c5127de839363ec780f565d7d80c
+```
 
 ### `dpkg` source package: `apt=2.0.2ubuntu0.1`
 
@@ -1559,14 +1564,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.49+dfsg-2ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.49+dfsg-2ubuntu1.3.dsc' openldap_2.4.49+dfsg-2ubuntu1.3.dsc 3136 SHA512:9227ca59255b2127521e2fbc3a575f4bea4d8ca11c402a4d3cf4b2fe60630981d236b5edb48024b5dda5083acecd3afb7c582552699fa8032655af54b2d28eff
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.49+dfsg.orig.tar.gz' openldap_2.4.49+dfsg.orig.tar.gz 4844726 SHA512:c2096f6e37bae8e4d4dcc5cc8dad783996bc8677e7e62a06b9f55857f8950726ca3e3b0d8368563c8985123175f63625354ad5ac271db8b55d3ac62e8906d4c7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.49+dfsg-2ubuntu1.3.debian.tar.xz' openldap_2.4.49+dfsg-2ubuntu1.3.debian.tar.xz 182112 SHA512:15a048d1e5ddcc78f022a661da81d5ed01ffd9aa23379310938a8bac05d4d2b58fe3c47baa3e453fad2c6d4dafcee82766e98de2e7940473fac77deff8f946a5
-```
 
 ### `dpkg` source package: `openssl=1.1.1f-1ubuntu2`
 
@@ -1788,11 +1788,11 @@ $ apt-get source -qq --print-uris readline=8.0-4
 'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.0-4.debian.tar.xz' readline_8.0-4.debian.tar.xz 30408 SHA256:60ed18dab6d6b7fc998a263d917f06d9cce6e1ccd19cd8bf4a9d33c5350cf8d6
 ```
 
-### `dpkg` source package: `sapmachine-11-jdk=11.0.9`
+### `dpkg` source package: `sapmachine-11-jdk=11.0.9.1`
 
 Binary Packages:
 
-- `sapmachine-11-jdk=11.0.9`
+- `sapmachine-11-jdk=11.0.9.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
