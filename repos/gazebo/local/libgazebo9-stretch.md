@@ -6845,20 +6845,13 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler-dev/copyright`, `/usr/share/d
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=0.48.0-2+deb9u3
-'http://security.debian.org/debian-security/pool/updates/main/p/poppler/poppler_0.48.0-2+deb9u3.dsc' poppler_0.48.0-2+deb9u3.dsc 3408 SHA256:3a61ff8daf3fbb1e912c1e53a6d00f28ebeccd02cf3fd3c047bff57aca5744c9
-'http://security.debian.org/debian-security/pool/updates/main/p/poppler/poppler_0.48.0.orig.tar.xz' poppler_0.48.0.orig.tar.xz 1684164 SHA256:85a003968074c85d8e13bf320ec47cef647b496b56dcff4c790b34e5482fef93
-'http://security.debian.org/debian-security/pool/updates/main/p/poppler/poppler_0.48.0-2+deb9u3.debian.tar.xz' poppler_0.48.0-2+deb9u3.debian.tar.xz 45284 SHA256:15f0f179285f946359bc7585561f57f668a1581d16161fee914db4f45bdd8c9a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/poppler/0.48.0-2+deb9u3/
 
-- https://sources.debian.net/src/poppler/0.48.0-2+deb9u3/ (for browsing the source)
-- https://sources.debian.net/src/poppler/0.48.0-2+deb9u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/poppler/0.48.0-2+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `popt=1.16-10`
 
