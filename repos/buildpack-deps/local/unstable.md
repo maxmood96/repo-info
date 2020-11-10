@@ -936,20 +936,13 @@ Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 - `GPL-3`
 - `LGPL-`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.181-1
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.181-1.dsc' elfutils_0.181-1.dsc 2810 SHA256:c3ed8e40262fe7648ffe4bd859562c7403c798b8d0b8bda2756ec08b644a8f45
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.181.orig.tar.bz2' elfutils_0.181.orig.tar.bz2 9088984 SHA256:29a6ad7421ec2acfee489bb4a699908281ead2cb63a20a027ce8804a165f0eb3
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.181-1.debian.tar.xz' elfutils_0.181-1.debian.tar.xz 32432 SHA256:7d58141c14d30d0684052a1777188e5d692ab92b916c9dfda2800c654cd5a058
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/elfutils/0.181-1/
 
-- https://sources.debian.net/src/elfutils/0.181-1/ (for browsing the source)
-- https://sources.debian.net/src/elfutils/0.181-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/elfutils/0.181-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.2.10-1`
 
@@ -1623,21 +1616,13 @@ Licenses: (parsed from: `/usr/share/doc/grep/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris grep=3.4-1
-'http://deb.debian.org/debian/pool/main/g/grep/grep_3.4-1.dsc' grep_3.4-1.dsc 1674 SHA256:785f527cede9631f075bdd6c7f35e65e6b82897d009682766cf35839a393277d
-'http://deb.debian.org/debian/pool/main/g/grep/grep_3.4.orig.tar.xz' grep_3.4.orig.tar.xz 1555820 SHA256:58e6751c41a7c25bfc6e9363a41786cff3ba5709cf11d5ad903cf7cce31cc3fb
-'http://deb.debian.org/debian/pool/main/g/grep/grep_3.4.orig.tar.xz.asc' grep_3.4.orig.tar.xz.asc 833 SHA256:4c1871ff6b79c5e5ce0a192272c171d06ec20762b4b258688b1ca2e47d94b23e
-'http://deb.debian.org/debian/pool/main/g/grep/grep_3.4-1.debian.tar.xz' grep_3.4-1.debian.tar.xz 104364 SHA256:582d181804ce72fcfc4c6a9f13ea1dd73ad04c2723b5da346b69ee5cd24a7d08
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/grep/3.4-1/
 
-- https://sources.debian.net/src/grep/3.4-1/ (for browsing the source)
-- https://sources.debian.net/src/grep/3.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/grep/3.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gzip=1.10-2`
 
@@ -1919,20 +1904,13 @@ Licenses: (parsed from: `/usr/share/doc/libxtables12/copyright`)
 - `GPL-2+`
 - `custom`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iptables=1.8.5-3
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.8.5-3.dsc' iptables_1.8.5-3.dsc 2719 SHA256:b8fe6b970595b65930fd9d705ee006b235db224fffaaea4dde3f64e6891e9efc
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.8.5.orig.tar.bz2' iptables_1.8.5.orig.tar.bz2 713769 SHA256:d457d74512e63aa3f50336e0597d4023c0e3c6845594d38532efb6ebcb294309
-'http://deb.debian.org/debian/pool/main/i/iptables/iptables_1.8.5-3.debian.tar.xz' iptables_1.8.5-3.debian.tar.xz 27352 SHA256:e0b23a377f3e67143fd131c2fd191a3264ad40d7df636233d71288c43eff4837
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/iptables/1.8.5-3/
 
-- https://sources.debian.net/src/iptables/1.8.5-3/ (for browsing the source)
-- https://sources.debian.net/src/iptables/1.8.5-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/iptables/1.8.5-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `iputils=3:20200821-2`
 
@@ -2430,20 +2408,13 @@ Licenses: (parsed from: `/usr/share/doc/libexif-dev/copyright`, `/usr/share/doc/
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libexif=0.6.22-2
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.22-2.dsc' libexif_0.6.22-2.dsc 2079 SHA256:6d8a8c0c987b610959c250c912e4995103de141178a7ddb2030f9e8c6f22baf1
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.22.orig.tar.gz' libexif_0.6.22.orig.tar.gz 1109525 SHA256:46498934b7b931526fdee8fd8eb77a1dddedd529d5a6dbce88daf4384baecc54
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.22-2.debian.tar.xz' libexif_0.6.22-2.debian.tar.xz 12016 SHA256:bfb1beff5dcff9aadaef3bbeb5592a1f20d7d66a75161c56bfa53c433655f0b8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libexif/0.6.22-2/
 
-- https://sources.debian.net/src/libexif/0.6.22-2/ (for browsing the source)
-- https://sources.debian.net/src/libexif/0.6.22-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libexif/0.6.22-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.3-4`
 
@@ -3022,21 +2993,13 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.4.4-1
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.4.4-1.dsc' libseccomp_2.4.4-1.dsc 2669 SHA256:34a48fb9af99290c843d56743540591580da03d429a1b00062d264343d5937af
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.4.4.orig.tar.gz' libseccomp_2.4.4.orig.tar.gz 604420 SHA256:4e79738d1ef3c9b7ca9769f1f8b8d84fc17143c2c1c432e53b9c64787e0ff3eb
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.4.4.orig.tar.gz.asc' libseccomp_2.4.4.orig.tar.gz.asc 833 SHA256:356c73e295f3b807f4de4d6d2a1914505e1fe5dfe4ef1abdbc00023333420463
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.4.4-1.debian.tar.xz' libseccomp_2.4.4-1.debian.tar.xz 23056 SHA256:98817f1d9fca8c356cc1d30eaac536aff49ebb4c1ee0517935c3287ef9377fcc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libseccomp/2.4.4-1/
 
-- https://sources.debian.net/src/libseccomp/2.4.4-1/ (for browsing the source)
-- https://sources.debian.net/src/libseccomp/2.4.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libseccomp/2.4.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libselinux=3.1-2`
 
@@ -4861,20 +4824,13 @@ Licenses: (parsed from: `/usr/share/doc/libreadline-dev/copyright`, `/usr/share/
 - `GFDL`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris readline=8.0-4
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.0-4.dsc' readline_8.0-4.dsc 2434 SHA256:ac9c7bb7380fe740aef09f54becf482eb81032a33dc11f1a8f00e933c5f168f4
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.0.orig.tar.gz' readline_8.0.orig.tar.gz 2975937 SHA256:e339f51971478d369f8a053a330a190781acb9864cf4c541060f12078948e461
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.0-4.debian.tar.xz' readline_8.0-4.debian.tar.xz 30408 SHA256:60ed18dab6d6b7fc998a263d917f06d9cce6e1ccd19cd8bf4a9d33c5350cf8d6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/readline/8.0-4/
 
-- https://sources.debian.net/src/readline/8.0-4/ (for browsing the source)
-- https://sources.debian.net/src/readline/8.0-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/readline/8.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-2`
 

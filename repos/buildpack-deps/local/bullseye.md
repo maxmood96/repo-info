@@ -1039,21 +1039,13 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `GFDL-1.3`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris findutils=4.7.0-1
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.7.0-1.dsc' findutils_4.7.0-1.dsc 2302 SHA256:867867005890a464599024bbc9d3bbc82493e255ca812a906112b9a5eda15169
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.7.0.orig.tar.xz' findutils_4.7.0.orig.tar.xz 1895048 SHA256:c5fefbdf9858f7e4feb86f036e1247a54c79fc2d8e4b7064d5aaa1f47dfa789a
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.7.0.orig.tar.xz.asc' findutils_4.7.0.orig.tar.xz.asc 488 SHA256:2f620e6d941e241fac52344a89149ab1ffeefb0fb9e42174e17a508d59a31d0f
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.7.0-1.debian.tar.xz' findutils_4.7.0-1.debian.tar.xz 27536 SHA256:3503f8ff7b1020c140055fbe06f107c73cd827f50761cf9a3c5296f6890bf0af
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/findutils/4.7.0-1/
 
-- https://sources.debian.net/src/findutils/4.7.0-1/ (for browsing the source)
-- https://sources.debian.net/src/findutils/4.7.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/findutils/4.7.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fontconfig=2.13.1-4.2`
 
@@ -2634,20 +2626,13 @@ Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`, `/usr/share/doc/li
 - `LGPL-3+`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libidn2=2.3.0-1
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.0-1.dsc' libidn2_2.3.0-1.dsc 2411 SHA256:f4f61425610ae4b4c4d3c74431825fb4b4892d4d07e954d7acdf163595d33f14
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.0.orig.tar.gz' libidn2_2.3.0.orig.tar.gz 2164993 SHA256:e1cb1db3d2e249a6a3eb6f0946777c2e892d5c5dc7bd91c74394fc3a01cab8b5
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.0-1.debian.tar.xz' libidn2_2.3.0-1.debian.tar.xz 10588 SHA256:a515029f13d12a48a6bc07dadc4cef6592db0a7257f48633795ae7128c23116c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libidn2/2.3.0-1/
 
-- https://sources.debian.net/src/libidn2/2.3.0-1/ (for browsing the source)
-- https://sources.debian.net/src/libidn2/2.3.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libidn2/2.3.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libjpeg-turbo=1:2.0.5-1.1`
 
@@ -4261,21 +4246,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1g-1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1g-1.dsc' openssl_1.1.1g-1.dsc 2446 SHA256:057252ba2087ea6066350367ac07cb2848825b000e181029e105573472757b0a
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1g.orig.tar.gz' openssl_1.1.1g.orig.tar.gz 9801502 SHA256:ddb04774f1e32f0c49751e21b67216ac87852ceb056b75209af2443400636d46
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1g.orig.tar.gz.asc' openssl_1.1.1g.orig.tar.gz.asc 488 SHA256:b795163edbb1334faa2218f9576242f52623bf0d8c44e0a2527df8261e67bcd9
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1g-1.debian.tar.xz' openssl_1.1.1g-1.debian.tar.xz 84208 SHA256:c7612c2c1cc5e0db747b174d7ebf15952056f4172c0b5a27c55515e9683a7e14
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/1.1.1g-1/
 
-- https://sources.debian.net/src/openssl/1.1.1g-1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.1g-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.1g-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.21-2`
 
@@ -4657,19 +4634,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.8.2-3
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.8.2-3.dsc' python3-defaults_3.8.2-3.dsc 2797 SHA256:cc8b6bb7d89f351aac6cff93531a4bdf279dd99687ff04838410fec82a394988
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.8.2-3.tar.gz' python3-defaults_3.8.2-3.tar.gz 139030 SHA256:e5ea04eb2da25579366c0ad43530fb79b0604cdac6231a737b60e37617ebfb9f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-defaults/3.8.2-3/
 
-- https://sources.debian.net/src/python3-defaults/3.8.2-3/ (for browsing the source)
-- https://sources.debian.net/src/python3-defaults/3.8.2-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-defaults/3.8.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-stdlib-extensions=3.8.6-1`
 

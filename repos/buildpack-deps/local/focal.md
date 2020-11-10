@@ -1921,14 +1921,9 @@ Licenses: (parsed from: `/usr/share/doc/libexif-dev/copyright`, `/usr/share/doc/
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libexif=0.6.21-6ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libexif/libexif_0.6.21-6ubuntu0.3.dsc' libexif_0.6.21-6ubuntu0.3.dsc 2229 SHA512:5586299126b58b1c5b987ffe91f590dbf6fe8c624297178fbe62b2dc9a38812ef5403de3e795548a2e64f88c018308830c400d4aabfdb669ce2c282b0667b463
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libexif/libexif_0.6.21.orig.tar.gz' libexif_0.6.21.orig.tar.gz 2081615 SHA512:0a1fac9460d1d91fea8d8390e335946439de44c0ec0e1fd9fa7006532c64bececd12cd622e800c8f1176092bba926a7075838944ad6b62fa07d285af6f73e9fe
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libexif/libexif_0.6.21-6ubuntu0.3.debian.tar.xz' libexif_0.6.21-6ubuntu0.3.debian.tar.xz 19332 SHA512:32c1df37387bdf5d9b217406bc68a4e18fe163e17043434875450c19e433fe757888e59bc3d60e868d9ba6b13d61f211ca0d4f09688305a5606dbafb673916b9
-```
 
 ### `dpkg` source package: `libffi=3.3-4`
 
@@ -3253,14 +3248,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.49+dfsg-2ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.49+dfsg-2ubuntu1.3.dsc' openldap_2.4.49+dfsg-2ubuntu1.3.dsc 3136 SHA512:9227ca59255b2127521e2fbc3a575f4bea4d8ca11c402a4d3cf4b2fe60630981d236b5edb48024b5dda5083acecd3afb7c582552699fa8032655af54b2d28eff
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.49+dfsg.orig.tar.gz' openldap_2.4.49+dfsg.orig.tar.gz 4844726 SHA512:c2096f6e37bae8e4d4dcc5cc8dad783996bc8677e7e62a06b9f55857f8950726ca3e3b0d8368563c8985123175f63625354ad5ac271db8b55d3ac62e8906d4c7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.49+dfsg-2ubuntu1.3.debian.tar.xz' openldap_2.4.49+dfsg-2ubuntu1.3.debian.tar.xz 182112 SHA512:15a048d1e5ddcc78f022a661da81d5ed01ffd9aa23379310938a8bac05d4d2b58fe3c47baa3e453fad2c6d4dafcee82766e98de2e7940473fac77deff8f946a5
-```
 
 ### `dpkg` source package: `openssh=1:8.2p1-4ubuntu0.1`
 
