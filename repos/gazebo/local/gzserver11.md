@@ -1792,14 +1792,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-msgs5/copyright`)
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-msgs5=5.3.0-1~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-msgs5/ignition-msgs5_5.3.0-1~focal.dsc' ignition-msgs5_5.3.0-1~focal.dsc 1305 SHA256:64fa814131d863d2832c9ca6068176ab22d5b2980ee4fa5cb4f61905c3d43342
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-msgs5/ignition-msgs5_5.3.0.orig.tar.bz2' ignition-msgs5_5.3.0.orig.tar.bz2 313681 SHA256:49541d54e43f1aa38b7cf2735c216c38f4ec5a1f5389b94200115206c18c7e17
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-msgs5/ignition-msgs5_5.3.0-1~focal.debian.tar.xz' ignition-msgs5_5.3.0-1~focal.debian.tar.xz 1884 SHA256:1acb944563558e669aa5c080fb87a59829d5df50082ab3f005eda8290c84b9d5
-```
 
 ### `dpkg` source package: `ignition-transport8=8.1.0-1~focal`
 
