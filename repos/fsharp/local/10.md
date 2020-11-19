@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:45f8a791b319577695f8cb5c0a2468e489bc5d11983610dcd04b6fb0e20b98bc`
-- Created: `2020-10-28T19:28:57.901598888Z`
-- Virtual Size: ~ 608.25 Mb  
+- Image ID: `sha256:e8896daf5f16cf2c531c479ec1685ed74d630cdbc1d275aa03d6141af9c6507e`
+- Created: `2020-11-18T06:50:42.786499445Z`
+- Virtual Size: ~ 608.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["fsharpi"]`
@@ -1325,11 +1325,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libcap-ng/0.7.9-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libcap-ng/0.7.9-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libexif=0.6.21-5.1+deb10u4`
+### `dpkg` source package: `libexif=0.6.21-5.1+deb10u5`
 
 Binary Packages:
 
-- `libexif12:amd64=0.6.21-5.1+deb10u4`
+- `libexif12:amd64=0.6.21-5.1+deb10u5`
 
 Licenses: (parsed from: `/usr/share/doc/libexif12/copyright`)
 
@@ -1342,17 +1342,17 @@ Licenses: (parsed from: `/usr/share/doc/libexif12/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libexif=0.6.21-5.1+deb10u4
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.21-5.1+deb10u4.dsc' libexif_0.6.21-5.1+deb10u4.dsc 2149 SHA256:d6a15e1bb2dcf1d208af37b161f7826ca743adb8af1e6cc69f0c8a8d0e58cc05
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.21.orig.tar.gz' libexif_0.6.21.orig.tar.gz 2081615 SHA256:edb7eb13664cf950a6edd132b75e99afe61c5effe2f16494e6d27bc404b287bf
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.21-5.1+deb10u4.debian.tar.xz' libexif_0.6.21-5.1+deb10u4.debian.tar.xz 18172 SHA256:13bfef4427198fb657af8c4bd103d008ba8f4928337ad6994481aae023c88b52
+$ apt-get source -qq --print-uris libexif=0.6.21-5.1+deb10u5
+'http://security.debian.org/debian-security/pool/updates/main/libe/libexif/libexif_0.6.21-5.1+deb10u5.dsc' libexif_0.6.21-5.1+deb10u5.dsc 2149 SHA256:716eb92d05662db76ae60cfd69a451be2170971de488f70b25bc4f3633248ff8
+'http://security.debian.org/debian-security/pool/updates/main/libe/libexif/libexif_0.6.21.orig.tar.gz' libexif_0.6.21.orig.tar.gz 2081615 SHA256:edb7eb13664cf950a6edd132b75e99afe61c5effe2f16494e6d27bc404b287bf
+'http://security.debian.org/debian-security/pool/updates/main/libe/libexif/libexif_0.6.21-5.1+deb10u5.debian.tar.xz' libexif_0.6.21-5.1+deb10u5.debian.tar.xz 18488 SHA256:a33893c940787cb7a270952d1cd007d3283bc47e31ba35435b50b16f76f2c49d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libexif/0.6.21-5.1+deb10u4/ (for browsing the source)
-- https://sources.debian.net/src/libexif/0.6.21-5.1+deb10u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libexif/0.6.21-5.1+deb10u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libexif/0.6.21-5.1+deb10u5/ (for browsing the source)
+- https://sources.debian.net/src/libexif/0.6.21-5.1+deb10u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libexif/0.6.21-5.1+deb10u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.2.1-9`
 
@@ -2344,12 +2344,12 @@ $ apt-get source -qq --print-uris nuget=5.5.0.6382.bin-0xamarin1+debian10b1
 'https://download.mono-project.com/repo/debian/pool/main/n/nuget/nuget_5.5.0.6382.bin-0xamarin1+debian10b1.debian.tar.xz' nuget_5.5.0.6382.bin-0xamarin1+debian10b1.debian.tar.xz 3240 SHA256:b12d70e322fd94948e86281a2ac09508c15aba532eb717a84c14ecc836c1ec7e
 ```
 
-### `dpkg` source package: `openldap=2.4.47+dfsg-3+deb10u2`
+### `dpkg` source package: `openldap=2.4.47+dfsg-3+deb10u4`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.47+dfsg-3+deb10u2`
-- `libldap-common=2.4.47+dfsg-3+deb10u2`
+- `libldap-2.4-2:amd64=2.4.47+dfsg-3+deb10u4`
+- `libldap-common=2.4.47+dfsg-3+deb10u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2358,17 +2358,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openldap=2.4.47+dfsg-3+deb10u2
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.47+dfsg-3+deb10u2.dsc' openldap_2.4.47+dfsg-3+deb10u2.dsc 3022 SHA256:e909c6be4bfd1bacf644959bc18ebeebaa13606879f11a7876d044cd688a6f62
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.47+dfsg.orig.tar.gz' openldap_2.4.47+dfsg.orig.tar.gz 4872293 SHA256:8f1ac7a4be7dd8ef158361efbfe16509756d3d9b396f5f378c3cf5c727807651
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.47+dfsg-3+deb10u2.debian.tar.xz' openldap_2.4.47+dfsg-3+deb10u2.debian.tar.xz 168684 SHA256:0f6f81f18a2407bd1a6c6003659d8b33145f31033b6f7fd026607554f0bdfcb0
+$ apt-get source -qq --print-uris openldap=2.4.47+dfsg-3+deb10u4
+'http://security.debian.org/debian-security/pool/updates/main/o/openldap/openldap_2.4.47+dfsg-3+deb10u4.dsc' openldap_2.4.47+dfsg-3+deb10u4.dsc 3022 SHA256:dc2cb7560c5e8a3eb8456a867be5c1e17ad3cbba662b92dbac5c42c86ddbcaf0
+'http://security.debian.org/debian-security/pool/updates/main/o/openldap/openldap_2.4.47+dfsg.orig.tar.gz' openldap_2.4.47+dfsg.orig.tar.gz 4872293 SHA256:8f1ac7a4be7dd8ef158361efbfe16509756d3d9b396f5f378c3cf5c727807651
+'http://security.debian.org/debian-security/pool/updates/main/o/openldap/openldap_2.4.47+dfsg-3+deb10u4.debian.tar.xz' openldap_2.4.47+dfsg-3+deb10u4.debian.tar.xz 169604 SHA256:2d64862980b182dfa8c1a8b6585729e29e837cf972602e21b18094da8efbb885
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openldap/2.4.47+dfsg-3+deb10u2/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.4.47+dfsg-3+deb10u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.4.47+dfsg-3+deb10u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openldap/2.4.47+dfsg-3+deb10u4/ (for browsing the source)
+- https://sources.debian.net/src/openldap/2.4.47+dfsg-3+deb10u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openldap/2.4.47+dfsg-3+deb10u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.1d-0+deb10u3`
 
@@ -2859,11 +2859,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tiff/4.1.0+git191117-2~deb10u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tiff/4.1.0+git191117-2~deb10u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2020a-0+deb10u1`
+### `dpkg` source package: `tzdata=2020d-0+deb10u1`
 
 Binary Packages:
 
-- `tzdata=2020a-0+deb10u1`
+- `tzdata=2020d-0+deb10u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2872,18 +2872,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2020a-0+deb10u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2020a-0+deb10u1.dsc' tzdata_2020a-0+deb10u1.dsc 2264 SHA256:24c86ca3f4755af8bd1ce2cd985382a490476f20006806fe5ec5c0f6b2a417c9
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2020a.orig.tar.gz' tzdata_2020a.orig.tar.gz 397245 SHA256:547161eca24d344e0b5f96aff6a76b454da295dc14ed4ca50c2355043fb899a2
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2020a.orig.tar.gz.asc' tzdata_2020a.orig.tar.gz.asc 833 SHA256:a92f085fe1e7f8bc0f0a0bc4432f27e6cf2d69e64d4a90958bd023eb0ccf45f9
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2020a-0+deb10u1.debian.tar.xz' tzdata_2020a-0+deb10u1.debian.tar.xz 104936 SHA256:df174cf4f4414006677b626f15b51a04762a2a0ef0171ce2f0c6856710a16d53
+$ apt-get source -qq --print-uris tzdata=2020d-0+deb10u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2020d-0+deb10u1.dsc' tzdata_2020d-0+deb10u1.dsc 2264 SHA256:d5ce8c1729f34377334a0c8fad5ccd5b9cd88c314c28ad4dee119fa3489c8762
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2020d.orig.tar.gz' tzdata_2020d.orig.tar.gz 401479 SHA256:8d813957de363387696f05af8a8889afa282ab5016a764c701a20758d39cbaf3
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2020d.orig.tar.gz.asc' tzdata_2020d.orig.tar.gz.asc 833 SHA256:dab20578e9ef6823d7cc4593b28b453fc2edb929954e25259942654d1611adb8
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2020d-0+deb10u1.debian.tar.xz' tzdata_2020d-0+deb10u1.debian.tar.xz 106172 SHA256:ae1b0588f5528e02c738cd7df8612c906a973911f9c18b18b76769380124610f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2020a-0+deb10u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2020a-0+deb10u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2020a-0+deb10u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2020d-0+deb10u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2020d-0+deb10u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2020d-0+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0038+nmu1`
 
