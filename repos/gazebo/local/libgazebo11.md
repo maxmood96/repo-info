@@ -2296,14 +2296,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-cmake2-dev/copyright`)
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-cmake2=2.5.0-1~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-cmake2/ignition-cmake2_2.5.0-1~focal.dsc' ignition-cmake2_2.5.0-1~focal.dsc 1090 SHA256:2bf36ec3b92431086144371cca11d85e18a973dc4d29932ba5281f83d4ed2fb0
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-cmake2/ignition-cmake2_2.5.0.orig.tar.bz2' ignition-cmake2_2.5.0.orig.tar.bz2 181864 SHA256:b5ea81835ea398b378edb818083f9dfc08441fadb721e37fc722d7faa9bd63b2
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-cmake2/ignition-cmake2_2.5.0-1~focal.debian.tar.xz' ignition-cmake2_2.5.0-1~focal.debian.tar.xz 1324 SHA256:9d90237fadc3a7d993a06435f2c310fa05173aa83888772214726f83c03948e4
-```
 
 ### `dpkg` source package: `ignition-common3=3.6.1-1~focal`
 
@@ -2342,14 +2337,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-fuel-tools4/copyright`, `/us
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-fuel-tools4=4.2.1-2~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-fuel-tools4/ignition-fuel-tools4_4.2.1-2~focal.dsc' ignition-fuel-tools4_4.2.1-2~focal.dsc 1395 SHA256:9458717f9dbc5edb942c3df11ea23c00b2541ae1cadac612aa52c303115476bf
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-fuel-tools4/ignition-fuel-tools4_4.2.1.orig.tar.bz2' ignition-fuel-tools4_4.2.1.orig.tar.bz2 359869 SHA256:457b96b5066ee358c0267d5f18787a8be4cb28a9efd6c5b17638c725f1e94df6
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-fuel-tools4/ignition-fuel-tools4_4.2.1-2~focal.debian.tar.xz' ignition-fuel-tools4_4.2.1-2~focal.debian.tar.xz 1684 SHA256:59dfb3a2d4ab48b1b73f730d0ec77d1a37c81a848c4d4bd5fd9fd0e9c91b02c5
-```
 
 ### `dpkg` source package: `ignition-math6=6.6.0-1~focal`
 
@@ -2364,14 +2354,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-math6/copyright`, `/usr/shar
 - `Apache-2.0`
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-math6=6.6.0-1~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-math6/ignition-math6_6.6.0-1~focal.dsc' ignition-math6_6.6.0-1~focal.dsc 1379 SHA256:08fdcbb38a661a833c8145a38895e05f291928cc4aa62af081c0f3008c02329c
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-math6/ignition-math6_6.6.0.orig.tar.bz2' ignition-math6_6.6.0.orig.tar.bz2 447372 SHA256:1acd2c6ee663f67da7dd0a3f3db554e847b8cf8df3f1a253045331416e7a6d14
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-math6/ignition-math6_6.6.0-1~focal.debian.tar.xz' ignition-math6_6.6.0-1~focal.debian.tar.xz 2652 SHA256:f83782b81858fcb21027c8bab5f7fafa1c9899087cb8963722bc7d31a8fe7dcd
-```
 
 ### `dpkg` source package: `ignition-msgs5=5.3.0-1~focal`
 
@@ -2401,13 +2386,9 @@ Licenses: (parsed from: `/usr/share/doc/ignition-tools/copyright`, `/usr/share/d
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-tools=1.0.0-1~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-tools/ignition-tools_1.0.0-1~focal.dsc' ignition-tools_1.0.0-1~focal.dsc 890 SHA256:99ac67ac0ea7507d050dec5717a40b72288daf90f96c795b4af4f62f5f988be1
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-tools/ignition-tools_1.0.0-1~focal.tar.xz' ignition-tools_1.0.0-1~focal.tar.xz 272568 SHA256:ef3b048dc713543301d41d84017f1cffabf0ff7d60a8742fc08d828c09edc7eb
-```
 
 ### `dpkg` source package: `ignition-transport8=8.1.0-1~focal`
 
@@ -2425,14 +2406,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-transport8/copyright`, `/usr
 - `Apache-2.0`
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-transport8=8.1.0-1~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-transport8/ignition-transport8_8.1.0-1~focal.dsc' ignition-transport8_8.1.0-1~focal.dsc 1769 SHA256:fb92325e42ae31705f959f01ce32f66c86f783b2e1d4087b607d59bb91f66062
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-transport8/ignition-transport8_8.1.0.orig.tar.bz2' ignition-transport8_8.1.0.orig.tar.bz2 554529 SHA256:48971eb0d83a54efe8637762f3ad1117e916cfee9d8325a2b3997f9ee55ff673
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-transport8/ignition-transport8_8.1.0-1~focal.debian.tar.xz' ignition-transport8_8.1.0-1~focal.debian.tar.xz 3036 SHA256:432f12aced7e02c8c54eba5227c24d85a73656b8fd7bac1de761a16133504520
-```
 
 ### `dpkg` source package: `ilmbase=2.3.0-6build1`
 
@@ -6459,14 +6435,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-12=12.4-0ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.4-0ubuntu0.20.04.1.dsc' postgresql-12_12.4-0ubuntu0.20.04.1.dsc 3760 SHA512:eb69a6dcdfc4376612d5c4218e6eca972149da7ebbc112f034c402d261c465df8fecb9ac72a1c7f3d8aed8a59a2dc76726049a7c6a95a1b3e8e57b6f7dda88b4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.4.orig.tar.bz2' postgresql-12_12.4.orig.tar.bz2 20669776 SHA512:36daf10878ca153370829178786dd6ee366ab4d4d6dc9c527536740fdb14b688ae4c33f850eb4243a7667d23f87e4bfd1ddee0755447ad4f3996e423e391c2f3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.4-0ubuntu0.20.04.1.debian.tar.xz' postgresql-12_12.4-0ubuntu0.20.04.1.debian.tar.xz 23712 SHA512:02120667c515bd1a78b7e77295746a6e57b59120027ec205f4d3ebe95b06dba6ab31a1f2b6b6324b576916fc85d60f1718f8e610318e9c605d8cd03b46054d28
-```
 
 ### `dpkg` source package: `procps=2:3.3.16-1ubuntu2`
 
@@ -7149,14 +7120,9 @@ Licenses: (parsed from: `/usr/share/doc/libsdformat9/copyright`, `/usr/share/doc
 - `Apache-2.0`
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sdformat9=9.3.0-1~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat9/sdformat9_9.3.0-1~focal.dsc' sdformat9_9.3.0-1~focal.dsc 1376 SHA256:8201a07608de6853ef4f673031088c6843ea62c85c68edad9930de84303f4335
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat9/sdformat9_9.3.0.orig.tar.bz2' sdformat9_9.3.0.orig.tar.bz2 648239 SHA256:30ab425a586e61c3bf1d6bc905e797cd66572a5b8a0f4d26f86d1cb0ef9f5106
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat9/sdformat9_9.3.0-1~focal.debian.tar.xz' sdformat9_9.3.0-1~focal.debian.tar.xz 3392 SHA256:408b6c70f147a23f98f92768d1c2ac2dc3a2e094e56285af4cd95d9ed1ffcf0a
-```
 
 ### `dpkg` source package: `sed=4.7-1`
 

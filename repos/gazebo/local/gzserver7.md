@@ -911,14 +911,9 @@ Licenses: (parsed from: `/usr/share/doc/gazebo7/copyright`, `/usr/share/doc/gaze
 - `LGPL-3+`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gazebo7=7.16.1-1~xenial
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo7/gazebo7_7.16.1-1~xenial.dsc' gazebo7_7.16.1-1~xenial.dsc 2019 SHA256:c04e0b0f69a4ac5f58265f23589b39c16033e147d2324f776c7014b28a1c220d
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo7/gazebo7_7.16.1.orig.tar.bz2' gazebo7_7.16.1.orig.tar.bz2 50593740 SHA256:18262736706768ef848e62b1f9b41132a9ecf50c496eab763a02a7cd73a66675
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo7/gazebo7_7.16.1-1~xenial.debian.tar.xz' gazebo7_7.16.1-1~xenial.debian.tar.xz 6788 SHA256:66a749c3e4f2440c4b7f1a0769541fa557f0340e13d7962832af217ff2a4867e
-```
 
 ### `dpkg` source package: `gcc-5=5.4.0-6ubuntu1~16.04.12`
 
@@ -1533,14 +1528,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.13.2+dfsg-5ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg-5ubuntu2.1.dsc' krb5_1.13.2+dfsg-5ubuntu2.1.dsc 3520 SHA512:1f00e7694e015d400d73503a54503aeb3fd32deb5927110fc1f805abb5d90a6112fff2829aec4fff7afcd7ec66559cb2b5153fd86cb9548deb6d246131a51b34
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg.orig.tar.gz' krb5_1.13.2+dfsg.orig.tar.gz 11884064 SHA512:d9562deaee7144c786c279e6e3415fe248fa1a71db8868ff05d1d7ef651274146d9e2c96f37c045fefd43364662ec41714bdd2d59a5ff16634ad7a510d4b3eab
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg-5ubuntu2.1.debian.tar.xz' krb5_1.13.2+dfsg-5ubuntu2.1.debian.tar.xz 113600 SHA512:2cc82e691667bb37f52e70b9fd9e1529ea07e981945becbbd7ecf2907e0d2dd23755779c114269c4cdbdf0b168766888582d8274b48f82126f7d87d4ce31bdcc
-```
 
 ### `dpkg` source package: `lame=3.99.5+repack1-9build1`
 
@@ -3706,14 +3696,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 - `Tcl`
 - `almost exclusively BSD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.5=9.5.23-0ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.23-0ubuntu0.16.04.1.dsc' postgresql-9.5_9.5.23-0ubuntu0.16.04.1.dsc 3675 SHA512:b7a01083f9dee563c22582b5f5e5dd67ac67ada947452795efaf158731043d8cab6bd4161a3c3a90a82d0d93fa9246676ed9efdb12bca7731470dd0822ff2692
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.23.orig.tar.gz' postgresql-9.5_9.5.23.orig.tar.gz 22901113 SHA512:f282231e052f5be9b66f8aafff1eb758128512b4fa99efbce51e572b6a981f2774016987018e85f1f3a5f4e4c00d15a954529802012fd9a5adcd57c74ad0f977
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.23-0ubuntu0.16.04.1.debian.tar.xz' postgresql-9.5_9.5.23-0ubuntu0.16.04.1.debian.tar.xz 27916 SHA512:85952171adc30225c196bb40b1052b3ef78d6078d94ce2d650db1757a4cfc946f891e4ef28829f4bc356e9c0a596436de9748c8ea2b08165b76fcf1b3fb2ff32
-```
 
 ### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.5`
 
