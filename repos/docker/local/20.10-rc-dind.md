@@ -1,16 +1,16 @@
-# `docker:20.10.0-beta1-dind`
+# `docker:20.10.0-rc1-dind`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8d4efebd1fec3228e63b94537a836c1fbe3b73ae1965c5ddd6241b32471be218`
-- Created: `2020-10-23T17:17:15.48046535Z`
-- Virtual Size: ~ 253.22 Mb  
+- Image ID: `sha256:015e04068929e3005acc03a27563fa813ce0e082f820649deb4c28eca27c61cd`
+- Created: `2020-11-19T07:38:12.687011536Z`
+- Virtual Size: ~ 253.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=20.10.0-beta1`
+  - `DOCKER_VERSION=20.10.0-rc1`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=ed89041433a031cafc0a0f19cfe573c31688d377`
 

@@ -1,17 +1,17 @@
-# `docker:20.10.0-beta1-git`
+# `docker:20.10.0-rc1-git`
 
 ## Docker Metadata
 
-- Image ID: `sha256:95ce289177fbac4428a02954f7c2d384c1f47aaa181e266590d0dcc280ff1a44`
-- Created: `2020-10-23T17:17:46.346042147Z`
-- Virtual Size: ~ 254.20 Mb  
+- Image ID: `sha256:89eff391cab6dd6ae0b5ac411c1a893d3319a8ed93c664637d5776a670b88003`
+- Created: `2020-11-19T07:38:45.922273786Z`
+- Virtual Size: ~ 254.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=20.10.0-beta1`
+  - `DOCKER_VERSION=20.10.0-rc1`
   - `DOCKER_TLS_CERTDIR=/certs`
 
 ## `apk` (`.apk`-based packages)
