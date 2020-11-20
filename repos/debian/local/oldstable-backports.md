@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ecb2e9ecc0fad6c047a6cf3d15d8bb7a4ebd6138ac009166cb1636c702ee1846`
-- Created: `2020-10-13T01:41:29.655731617Z`
-- Virtual Size: ~ 100.64 Mb  
+- Image ID: `sha256:c7e8d9cf4fbcba7e0da003c32b55e6ae3b8d9dce8ad9956cdd5dbaac7caca987`
+- Created: `2020-11-17T20:22:41.579360618Z`
+- Virtual Size: ~ 100.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -1445,11 +1445,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.29b-1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.29b-1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2020a-0+deb9u1`
+### `dpkg` source package: `tzdata=2020d-0+deb9u1`
 
 Binary Packages:
 
-- `tzdata=2020a-0+deb9u1`
+- `tzdata=2020d-0+deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1458,18 +1458,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2020a-0+deb9u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2020a-0+deb9u1.dsc' tzdata_2020a-0+deb9u1.dsc 2270 SHA256:9d8d6d11d324336958b3f13dacd180372b6cffe830263dfa1b187be4c30c3ddc
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2020a.orig.tar.gz' tzdata_2020a.orig.tar.gz 397245 SHA256:547161eca24d344e0b5f96aff6a76b454da295dc14ed4ca50c2355043fb899a2
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2020a.orig.tar.gz.asc' tzdata_2020a.orig.tar.gz.asc 833 SHA256:a92f085fe1e7f8bc0f0a0bc4432f27e6cf2d69e64d4a90958bd023eb0ccf45f9
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2020a-0+deb9u1.debian.tar.xz' tzdata_2020a-0+deb9u1.debian.tar.xz 101968 SHA256:dc85bbeec67c115c5dd61673b37eb3a7c1d7402160cf6f790e0ffa816dea9205
+$ apt-get source -qq --print-uris tzdata=2020d-0+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2020d-0+deb9u1.dsc' tzdata_2020d-0+deb9u1.dsc 2270 SHA256:93c50069f4e16bacbd1f8ef7cf4c33b6a4c2c22859bdb777e819b7dccd1d6a1e
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2020d.orig.tar.gz' tzdata_2020d.orig.tar.gz 401479 SHA256:8d813957de363387696f05af8a8889afa282ab5016a764c701a20758d39cbaf3
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2020d.orig.tar.gz.asc' tzdata_2020d.orig.tar.gz.asc 833 SHA256:dab20578e9ef6823d7cc4593b28b453fc2edb929954e25259942654d1611adb8
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2020d-0+deb9u1.debian.tar.xz' tzdata_2020d-0+deb9u1.debian.tar.xz 103184 SHA256:ab8b467867ea886324f2af22ad01e0575d46ed7cdb73165e8952d951ab5a4891
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2020a-0+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2020a-0+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2020a-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2020d-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2020d-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2020d-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ustr=1.0.4-6`
 
