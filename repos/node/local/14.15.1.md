@@ -5049,20 +5049,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.5=3.5.3-1+deb9u2
-'http://security.debian.org/debian-security/pool/updates/main/p/python3.5/python3.5_3.5.3-1+deb9u2.dsc' python3.5_3.5.3-1+deb9u2.dsc 3025 SHA256:cda9d8bf3003ca2549b34621a89540952cdd0eb65199e6d2c895cfc0d647d913
-'http://security.debian.org/debian-security/pool/updates/main/p/python3.5/python3.5_3.5.3.orig.tar.xz' python3.5_3.5.3.orig.tar.xz 15213396 SHA256:eefe2ad6575855423ab630f5b51a8ef6e5556f774584c06beab4926f930ddbb0
-'http://security.debian.org/debian-security/pool/updates/main/p/python3.5/python3.5_3.5.3-1+deb9u2.debian.tar.xz' python3.5_3.5.3-1+deb9u2.debian.tar.xz 241876 SHA256:790255f33f3a1268469ec54c7559803271b66f22005a12de1e1ee987d26ec67b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.5/3.5.3-1+deb9u2/
 
-- https://sources.debian.net/src/python3.5/3.5.3-1+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/python3.5/3.5.3-1+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.5/3.5.3-1+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=7.0-3`
 
