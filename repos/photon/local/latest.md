@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bed911bffdde599d80836329f75450b5fc914442303f29e8b5c3fa024eb520f9`
-- Created: `2020-11-02T22:21:12.727042219Z`
-- Virtual Size: ~ 36.32 Mb  
+- Image ID: `sha256:d6d86b8678383af20c05e02a08709a78906dfaf41d683bf7dbe6310be9390357`
+- Created: `2020-11-21T01:29:10.262823706Z`
+- Virtual Size: ~ 36.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `build-date=20201030`
+  - `build-date=20201120`
   - `name=Photon OS x86_64/3.0 Base Image`
   - `vendor=VMware`
 
@@ -125,7 +125,7 @@ Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
-### `rpm` package: `libsolv-0.6.35-3.ph3.x86_64`
+### `rpm` package: `libsolv-0.6.35-4.ph3.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
