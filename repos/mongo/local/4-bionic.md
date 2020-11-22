@@ -1,10 +1,10 @@
-# `mongo:4.4.1-bionic`
+# `mongo:4.4.2-bionic`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ba0c2ff8d3620c0910832424efef02787214013b1c5b1d9dc9d87d638e2ceb71`
-- Created: `2020-09-26T01:04:18.090605379Z`
-- Virtual Size: ~ 492.14 Mb  
+- Image ID: `sha256:fb58c9bbce4e11c22377932174114f977e35a031019438beb77e33a67aa263cd`
+- Created: `2020-11-21T01:26:32.407603234Z`
+- Virtual Size: ~ 492.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=4.4`
-  - `MONGO_VERSION=4.4.1`
+  - `MONGO_VERSION=4.4.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -749,23 +749,28 @@ $ apt-get source -qq --print-uris keyutils=1.5.9-9.2ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.5.9-9.2ubuntu2.debian.tar.xz' keyutils_1.5.9-9.2ubuntu2.debian.tar.xz 18492 SHA256:51706bd0d480913584d3fa8fcfe32dcf210742bb75c08e6a2d5f022748654086
 ```
 
-### `dpkg` source package: `krb5=1.16-2ubuntu0.1`
+### `dpkg` source package: `krb5=1.16-2ubuntu0.2`
 
 Binary Packages:
 
-- `krb5-locales=1.16-2ubuntu0.1`
-- `libgssapi-krb5-2:amd64=1.16-2ubuntu0.1`
-- `libk5crypto3:amd64=1.16-2ubuntu0.1`
-- `libkrb5-3:amd64=1.16-2ubuntu0.1`
-- `libkrb5support0:amd64=1.16-2ubuntu0.1`
+- `krb5-locales=1.16-2ubuntu0.2`
+- `libgssapi-krb5-2:amd64=1.16-2ubuntu0.2`
+- `libk5crypto3:amd64=1.16-2ubuntu0.2`
+- `libkrb5-3:amd64=1.16-2ubuntu0.2`
+- `libkrb5support0:amd64=1.16-2ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris krb5=1.16-2ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.16-2ubuntu0.2.dsc' krb5_1.16-2ubuntu0.2.dsc 3566 SHA512:04d0fe2c659918de633560296f62b19b4f358efc714be7ce90938bdfd1d9b1c13d4de597761ef162077fb5a53b48cfa49583be0057d9c232d26736856a89dcae
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.16.orig.tar.gz' krb5_1.16.orig.tar.gz 9474479 SHA512:7e162467b95dad2b6aaa11686d08a00f1cc4eb08247fca8f0e5a8bcaa5f9f7b42cdf00db69c5c6111bdf9eb8063d53cef3bb207ce5d6a287615ca10b710153f9
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.16-2ubuntu0.2.debian.tar.xz' krb5_1.16-2ubuntu0.2.debian.tar.xz 100948 SHA512:77a936bb4cbcefdecc24b9c2d45c4275b40cb363dda386f02347bc4d6668408c405a23bc795722315d4dfd77db49584d6e494235f84dc6b93db0563c749c558b
+```
 
 ### `dpkg` source package: `libassuan=2.5.1-2`
 
@@ -1182,11 +1187,11 @@ $ apt-get source -qq --print-uris mawk=1.3.3-17ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3-17ubuntu3.diff.gz' mawk_1.3.3-17ubuntu3.diff.gz 64052 SHA256:d1be148525885cb1869e35514f55005b5043f3310b08c444625005a3e14c81fc
 ```
 
-### `dpkg` source package: `mongodb-database-tools=100.2.0`
+### `dpkg` source package: `mongodb-database-tools=100.2.1`
 
 Binary Packages:
 
-- `mongodb-database-tools=100.2.0`
+- `mongodb-database-tools=100.2.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1196,16 +1201,16 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=4.4.1`
+### `dpkg` source package: `mongodb-org=4.4.2`
 
 Binary Packages:
 
-- `mongodb-org=4.4.1`
-- `mongodb-org-database-tools-extra=4.4.1`
-- `mongodb-org-mongos=4.4.1`
-- `mongodb-org-server=4.4.1`
-- `mongodb-org-shell=4.4.1`
-- `mongodb-org-tools=4.4.1`
+- `mongodb-org=4.4.2`
+- `mongodb-org-database-tools-extra=4.4.2`
+- `mongodb-org-mongos=4.4.2`
+- `mongodb-org-server=4.4.2`
+- `mongodb-org-shell=4.4.2`
+- `mongodb-org-tools=4.4.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1687,14 +1692,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=237-3ubuntu10.42
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.42.dsc' systemd_237-3ubuntu10.42.dsc 5182 SHA512:cd9cea067ac21e9d627c3f28acd6f10e5511a9591d5283e9aab4ae01dc4178e332ccf074bc5dfbc0a7adc7a1ca2687d85d769123af34c59ea9b957ccf2dc54c3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA512:15ef4b92815a6dd9a6c51672dbc00fd7cd0f08068ef0cbeaca574f68d330b28bc67ba1946f24f75ef3d9e7b63843a73eea700db54688061dbf5c9f8470394c3b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.42.debian.tar.xz' systemd_237-3ubuntu10.42.debian.tar.xz 275288 SHA512:d68b1dcd71ab49bd5b672a456923b50203b866dfd9ac79aa7aefe37e8799d2b37245dc850089e2d700ba129e7ca4f791a164321c46c08f97866c3b67d0345df7
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
@@ -1735,19 +1735,24 @@ $ apt-get source -qq --print-uris tar=1.29b-2ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.29b-2ubuntu0.1.debian.tar.xz' tar_1.29b-2ubuntu0.1.debian.tar.xz 31672 SHA512:e4756dd0ad0d765af0c6639695b17cc86f80033a45705cdcb845639bab7d3aed0fac8d86ac28a0aa2e024bdb4dad43376f4a02c915a0921609deeeed74637bd7
 ```
 
-### `dpkg` source package: `tzdata=2020a-0ubuntu0.18.04`
+### `dpkg` source package: `tzdata=2020d-0ubuntu0.18.04`
 
 Binary Packages:
 
-- `tzdata=2020a-0ubuntu0.18.04`
+- `tzdata=2020d-0ubuntu0.18.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2020d-0ubuntu0.18.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020d-0ubuntu0.18.04.dsc' tzdata_2020d-0ubuntu0.18.04.dsc 2122 SHA512:dcf9ee4af5ea98c23d4094f589f62760a86db1c7b373234028212048e1d886d4819a45f00b82f1f05525f24abfec309d1efc5ba0a215fa05224960f6ac0f7cad
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020d.orig.tar.gz' tzdata_2020d.orig.tar.gz 401479 SHA512:362e4569a666b0776614be3f63f1fe3d5ae259055e7051c9875f36023db9c52b0c5a10c19067114443a4cf2bf92475f8a0aebdf79bac836d967527fcdea4e9b6
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020d-0ubuntu0.18.04.debian.tar.xz' tzdata_2020d-0ubuntu0.18.04.debian.tar.xz 106272 SHA512:a86e17bfb374af4e9c28ebd674f872e391cf4b7c686a4da9adeb46873158c944910e63e17b133ace2b5d9cb17d935a7821650d5dab85b9424807f854ae7c76cb
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2018.09.18.1~18.04.0`
 
