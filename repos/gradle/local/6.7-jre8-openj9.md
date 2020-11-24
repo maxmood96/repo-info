@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b4f162e38acb04e07aae3983d7ecd01bd0a8d39375ebe571840e15f1b593f657`
-- Created: `2020-11-17T20:39:52.262154721Z`
-- Virtual Size: ~ 573.60 Mb  
+- Image ID: `sha256:235b134b7fe7c86359579547437f7c9beae9d8316ecfe2754c8d48730953795c`
+- Created: `2020-11-24T00:24:32.039618645Z`
+- Virtual Size: ~ 572.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u272-b10_openj9-0.23.0`
+  - `JAVA_VERSION=jdk8u275-b01_openj9-0.23.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle`
   - `OPENJ9_JAVA_OPTIONS=-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
