@@ -1,10 +1,10 @@
-# `open-liberty:20.0.0.9-full-java8-openj9`
+# `open-liberty:beta-java11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3e0aa03ffd4e1d4a3d5349ff9619fe2897d1ee56bd9c306eb89b2b46a7f3eac8`
-- Created: `2020-11-24T01:56:14.260039118Z`
-- Virtual Size: ~ 491.20 Mb  
+- Image ID: `sha256:772d7ef025c60d5c793188a249db20ae91f5c43f2fc7497ad237498b1f9383fb`
+- Created: `2020-11-24T01:51:46.911107177Z`
+- Virtual Size: ~ 555.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ol/helpers/runtime/docker-server.sh"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u275-b01_openj9-0.23.0`
+  - `JAVA_VERSION=jdk-11.0.9+11_openj9-0.23.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle`
   - `OPENJ9_JAVA_OPTIONS=-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
@@ -25,13 +25,13 @@
   - `RANDFILE=/tmp/.rnd`
 - Labels:
   - `org.opencontainers.image.authors=Arthur De Magalhaes, Chris Potter, Leo Christy Jesuraj`
-  - `org.opencontainers.image.description=This image contains the Open Liberty runtime with AdoptOpenJDK with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://github.com/OpenLiberty/ci.docker#building-an-application-image`
-  - `org.opencontainers.image.revision=cl200920200820-0913`
+  - `org.opencontainers.image.description=This image contains the Open Liberty beta runtime with AdoptOpenJDK 11 with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://github.com/OpenLiberty/ci.docker#building-an-application-image`
+  - `org.opencontainers.image.revision=cl201220201111-0736`
   - `org.opencontainers.image.source=https://github.com/OpenLiberty/ci.docker`
-  - `org.opencontainers.image.title=Open Liberty`
+  - `org.opencontainers.image.title=Open Liberty Beta`
   - `org.opencontainers.image.url=https://openliberty.io/`
   - `org.opencontainers.image.vendor=Open Liberty`
-  - `org.opencontainers.image.version=20.0.0.9`
+  - `org.opencontainers.image.version=21.0.0.1`
 
 ## `dpkg` (`.deb`-based packages)
 

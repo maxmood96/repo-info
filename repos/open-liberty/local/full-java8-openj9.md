@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d9c569e91c0fa83d2a55f7472519dd0aa3599377c2ecdc2afb2d19ca40044b5a`
-- Created: `2020-11-10T00:29:29.258386378Z`
-- Virtual Size: ~ 506.49 Mb  
+- Image ID: `sha256:f01dbd22d389e3f49f0bc10ff3d55c22ad57b5149814b2a05c174e3f25e4d359`
+- Created: `2020-11-24T01:53:35.552358089Z`
+- Virtual Size: ~ 499.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ol/helpers/runtime/docker-server.sh"]`
@@ -14,24 +14,24 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u272-b10_openj9-0.23.0`
+  - `JAVA_VERSION=jdk8u275-b01_openj9-0.23.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle`
-  - `OPENJ9_JAVA_OPTIONS=-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/`
+  - `OPENJ9_JAVA_OPTIONS=-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ol/wlp/output`
   - `WLP_SKIP_MAXPERMSIZE=true`
   - `OPENJ9_SCC=true`
   - `RANDFILE=/tmp/.rnd`
 - Labels:
-  - `org.opencontainers.image.authors=Arthur De Magalhaes, Chris Potter`
+  - `org.opencontainers.image.authors=Arthur De Magalhaes, Chris Potter, Leo Christy Jesuraj`
   - `org.opencontainers.image.description=This image contains the Open Liberty runtime with AdoptOpenJDK with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://github.com/OpenLiberty/ci.docker#building-an-application-image`
-  - `org.opencontainers.image.revision=cl201120201014-1215`
+  - `org.opencontainers.image.revision=cl201220201111-0736`
   - `org.opencontainers.image.source=https://github.com/OpenLiberty/ci.docker`
   - `org.opencontainers.image.title=Open Liberty`
   - `org.opencontainers.image.url=https://openliberty.io/`
   - `org.opencontainers.image.vendor=Open Liberty`
-  - `org.opencontainers.image.version=20.0.0.11`
+  - `org.opencontainers.image.version=20.0.0.12`
 
 ## `dpkg` (`.deb`-based packages)
 

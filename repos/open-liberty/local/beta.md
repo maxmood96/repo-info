@@ -1,10 +1,10 @@
-# `open-liberty:20.0.0.6-kernel-java8-openj9`
+# `open-liberty:beta`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4ab50967b8a090664d344f4ae6f406c92cc8572be9a709a2cd98dd7a8182806f`
-- Created: `2020-11-10T00:31:46.667156737Z`
-- Virtual Size: ~ 467.97 Mb  
+- Image ID: `sha256:eb949b9c5677fa407104a6ccf3eb26b4ac28f06eef5890b1baaf3fbb98c189a0`
+- Created: `2020-11-24T01:50:40.016110808Z`
+- Virtual Size: ~ 556.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ol/helpers/runtime/docker-server.sh"]`
@@ -14,24 +14,24 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u272-b10_openj9-0.23.0`
+  - `JAVA_VERSION=jdk8u275-b01_openj9-0.23.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle`
-  - `OPENJ9_JAVA_OPTIONS=-Xshareclasses:name=liberty,nonfatal,cacheDir=/output/.classCache/`
+  - `OPENJ9_JAVA_OPTIONS=-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ol/wlp/output`
   - `WLP_SKIP_MAXPERMSIZE=true`
   - `OPENJ9_SCC=true`
   - `RANDFILE=/tmp/.rnd`
 - Labels:
-  - `org.opencontainers.image.authors=Arthur De Magalhaes, Chris Potter`
-  - `org.opencontainers.image.description=This image contains the Open Liberty runtime with AdoptOpenJDK with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://github.com/OpenLiberty/ci.docker#building-an-application-image`
-  - `org.opencontainers.image.revision=cl200620200528-0414`
+  - `org.opencontainers.image.authors=Arthur De Magalhaes, Chris Potter, Leo Christy Jesuraj`
+  - `org.opencontainers.image.description=This image contains the Open Liberty beta runtime with AdoptOpenJDK 8 with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://github.com/OpenLiberty/ci.docker#building-an-application-image`
+  - `org.opencontainers.image.revision=cl201220201111-0736`
   - `org.opencontainers.image.source=https://github.com/OpenLiberty/ci.docker`
-  - `org.opencontainers.image.title=Open Liberty`
+  - `org.opencontainers.image.title=Open Liberty Beta`
   - `org.opencontainers.image.url=https://openliberty.io/`
   - `org.opencontainers.image.vendor=Open Liberty`
-  - `org.opencontainers.image.version=20.0.0.6`
+  - `org.opencontainers.image.version=21.0.0.1`
 
 ## `dpkg` (`.deb`-based packages)
 
