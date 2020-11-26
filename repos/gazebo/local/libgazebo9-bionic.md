@@ -5425,14 +5425,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler-dev/copyright`, `/usr/share/d
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=0.62.0-2ubuntu2.10
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.62.0-2ubuntu2.10.dsc' poppler_0.62.0-2ubuntu2.10.dsc 3358 SHA512:fe82977903e0b3dd5ef0dd027cde0b8762c2b9b5acf4abf1469668d8a28e7e1b196ae688593180ad975c92b91ea95879d9c175af6632436743429e80d4ca431e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.62.0.orig.tar.xz' poppler_0.62.0.orig.tar.xz 1423372 SHA512:91f7eae7b05965ae97a34e658bed2a676be8a6e4d34f82148ece6eb58932632dcf9a34d50c66412f93f560ce575abf5c608ed6b1e5184604b96024801886c706
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.62.0-2ubuntu2.10.debian.tar.xz' poppler_0.62.0-2ubuntu2.10.debian.tar.xz 43808 SHA512:a9e9613f5275ffdcf401e623a867bf3b1f311c60a17018c1fa98f341bca9decb5efaf21d3b31f77068d67e5a5a9b2b1c77849a1cd84a8cb1cdb6586c9e5c052c
-```
 
 ### `dpkg` source package: `postgresql-10=10.14-0ubuntu0.18.04.1`
 
@@ -5561,14 +5556,9 @@ Licenses: (parsed from: `/usr/share/doc/libpulse0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pulseaudio=1:11.1-1ubuntu7.10
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_11.1-1ubuntu7.10.dsc' pulseaudio_11.1-1ubuntu7.10.dsc 3227 SHA512:d30bf6b0ad8ea6cfc78a390f7cd2774252cdf418ee19399ce445fdb16273c9895fee3f4f9a772691c5d5732141654f8ada9546809bc122feb64da151033fac2d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_11.1.orig.tar.xz' pulseaudio_11.1.orig.tar.xz 1648924 SHA512:8863d8d7aede0d9a4d158e84e7bece91747c335f9ac98c7b21fafe76b762f8817e1125307aa46e561e540d2c40525e91f51a55ec34ac55d58fd5980199856a7a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_11.1-1ubuntu7.10.debian.tar.xz' pulseaudio_11.1-1ubuntu7.10.debian.tar.xz 114456 SHA512:d66ecf85d8e1a0aa04e325ff4a29875a141d426abcf63b9afe440adc28e48afa8b29f9f34aa1018ee699a1b6cacb8e55bc3cca0ae69bf6e44f17db06b72d340d
-```
 
 ### `dpkg` source package: `python3-defaults=3.6.7-1~18.04`
 

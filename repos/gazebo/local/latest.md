@@ -2364,14 +2364,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-math6/copyright`, `/usr/shar
 - `Apache-2.0`
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-math6=6.6.0-1~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-math6/ignition-math6_6.6.0-1~focal.dsc' ignition-math6_6.6.0-1~focal.dsc 1379 SHA256:08fdcbb38a661a833c8145a38895e05f291928cc4aa62af081c0f3008c02329c
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-math6/ignition-math6_6.6.0.orig.tar.bz2' ignition-math6_6.6.0.orig.tar.bz2 447372 SHA256:1acd2c6ee663f67da7dd0a3f3db554e847b8cf8df3f1a253045331416e7a6d14
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-math6/ignition-math6_6.6.0-1~focal.debian.tar.xz' ignition-math6_6.6.0-1~focal.debian.tar.xz 2652 SHA256:f83782b81858fcb21027c8bab5f7fafa1c9899087cb8963722bc7d31a8fe7dcd
-```
 
 ### `dpkg` source package: `ignition-msgs5=5.3.0-1~focal`
 
@@ -7103,14 +7098,9 @@ Licenses: (parsed from: `/usr/share/doc/libruby2.7/copyright`, `/usr/share/doc/r
 - `Unicode`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ruby2.7=2.7.0-5ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/r/ruby2.7/ruby2.7_2.7.0-5ubuntu1.1.dsc' ruby2.7_2.7.0-5ubuntu1.1.dsc 2619 SHA512:fd01f162e8b5bebce3037b73e64d5aa0f6ced9906c92ea5b6ec9c4c20a78135098e49d7d3c1d07190ee536d4ebcc3592944cf8c4bb3b7c798005ccfd5910ad8a
-'http://archive.ubuntu.com/ubuntu/pool/main/r/ruby2.7/ruby2.7_2.7.0.orig.tar.xz' ruby2.7_2.7.0.orig.tar.xz 10734268 SHA512:0d39eeb8da43d9f026465df00b30e0e54e726f584e73825486402c940f634464b6f886b2b7badc7786822b4ef0814d9da6bad4479939676d438301c4cf15c881
-'http://archive.ubuntu.com/ubuntu/pool/main/r/ruby2.7/ruby2.7_2.7.0-5ubuntu1.1.debian.tar.xz' ruby2.7_2.7.0-5ubuntu1.1.debian.tar.xz 111432 SHA512:c3fb7cc457e6968862dc007f284992e52ceaff00a11c5d626a936a964661ebbf0554cf6248276defc210056fa3f13e09e2ffe2b7a6f8140c54f4c1cdfb632c6b
-```
 
 ### `dpkg` source package: `rubygems-integration=1.16`
 
