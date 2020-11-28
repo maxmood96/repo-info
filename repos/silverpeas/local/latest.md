@@ -7219,14 +7219,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler73/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=0.62.0-2ubuntu2.10
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.62.0-2ubuntu2.10.dsc' poppler_0.62.0-2ubuntu2.10.dsc 3358 SHA512:fe82977903e0b3dd5ef0dd027cde0b8762c2b9b5acf4abf1469668d8a28e7e1b196ae688593180ad975c92b91ea95879d9c175af6632436743429e80d4ca431e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.62.0.orig.tar.xz' poppler_0.62.0.orig.tar.xz 1423372 SHA512:91f7eae7b05965ae97a34e658bed2a676be8a6e4d34f82148ece6eb58932632dcf9a34d50c66412f93f560ce575abf5c608ed6b1e5184604b96024801886c706
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.62.0-2ubuntu2.10.debian.tar.xz' poppler_0.62.0-2ubuntu2.10.debian.tar.xz 43808 SHA512:a9e9613f5275ffdcf401e623a867bf3b1f311c60a17018c1fa98f341bca9decb5efaf21d3b31f77068d67e5a5a9b2b1c77849a1cd84a8cb1cdb6586c9e5c052c
-```
 
 ### `dpkg` source package: `postgresql-10=10.12-0ubuntu0.18.04.1`
 
@@ -8244,14 +8239,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xdg-utils=1.1.2-1ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xdg-utils/xdg-utils_1.1.2-1ubuntu2.3.dsc' xdg-utils_1.1.2-1ubuntu2.3.dsc 2185 SHA512:4c0a10c4bdfc8fdde074c7d7b78b862b06ed6b7b29f547e0d269b74a21fd4b1ecf4676eee0c454447a6a7fba76d6ec035c98f7cc0291be9d2cdfdce0597d1903
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xdg-utils/xdg-utils_1.1.2.orig.tar.gz' xdg-utils_1.1.2.orig.tar.gz 296735 SHA512:1927506065788b5f8bba8b0617a8ee585265342fa40c4b73000d320acd5909036daef94d49495b00982dbb67b7706b2f1ed949cb4cc519dfa534be2c1c8f74db
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xdg-utils/xdg-utils_1.1.2-1ubuntu2.3.debian.tar.xz' xdg-utils_1.1.2-1ubuntu2.3.debian.tar.xz 12276 SHA512:bd20598ed7584b1d1032950245d401cb9dc5e9584a67d77eb5d44099003ecd6138ca4a93c48ceb33b9bc04d8cdabcaae8ca7fb101182a620f0a16ac20b42c639
-```
 
 ### `dpkg` source package: `xft=2.3.2-1`
 
