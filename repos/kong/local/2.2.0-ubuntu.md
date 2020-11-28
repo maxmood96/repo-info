@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c048ac8311203db66211353c0d2ff83bd3696b6f3f3637b35a3b77859a1d1549`
-- Created: `2020-10-29T18:22:17.950150798Z`
-- Virtual Size: ~ 343.63 Mb  
+- Image ID: `sha256:8ec5e861d8304949796129c16a962dc6650ce31f66e61614ceddb33453373f00`
+- Created: `2020-11-26T01:23:08.930939195Z`
+- Virtual Size: ~ 338.69 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -898,23 +898,28 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `krb5=1.13.2+dfsg-5ubuntu2.1`
+### `dpkg` source package: `krb5=1.13.2+dfsg-5ubuntu2.2`
 
 Binary Packages:
 
-- `krb5-locales=1.13.2+dfsg-5ubuntu2.1`
-- `libgssapi-krb5-2:amd64=1.13.2+dfsg-5ubuntu2.1`
-- `libk5crypto3:amd64=1.13.2+dfsg-5ubuntu2.1`
-- `libkrb5-3:amd64=1.13.2+dfsg-5ubuntu2.1`
-- `libkrb5support0:amd64=1.13.2+dfsg-5ubuntu2.1`
+- `krb5-locales=1.13.2+dfsg-5ubuntu2.2`
+- `libgssapi-krb5-2:amd64=1.13.2+dfsg-5ubuntu2.2`
+- `libk5crypto3:amd64=1.13.2+dfsg-5ubuntu2.2`
+- `libkrb5-3:amd64=1.13.2+dfsg-5ubuntu2.2`
+- `libkrb5support0:amd64=1.13.2+dfsg-5ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris krb5=1.13.2+dfsg-5ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg-5ubuntu2.2.dsc' krb5_1.13.2+dfsg-5ubuntu2.2.dsc 3520 SHA512:0ba1ff8222d7d715f400468fafc6b2c1dc63fa45c0f0c0e0e513c94cce42249e5ff9f9cd16303145c084a34db13794bcd0b3f1c50acac41ca6ed8c6cfe17c58b
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg.orig.tar.gz' krb5_1.13.2+dfsg.orig.tar.gz 11884064 SHA512:d9562deaee7144c786c279e6e3415fe248fa1a71db8868ff05d1d7ef651274146d9e2c96f37c045fefd43364662ec41714bdd2d59a5ff16634ad7a510d4b3eab
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg-5ubuntu2.2.debian.tar.xz' krb5_1.13.2+dfsg-5ubuntu2.2.debian.tar.xz 114232 SHA512:c944b16fdb0d730da220a8a5836cb283d5c3912598f99698bb0a9a493d3d38a76ec626ac1f07df2346eefac30cf2be49bea6c4fcaccdef209866a5287ec1017f
+```
 
 ### `dpkg` source package: `libcap2=1:2.24-12`
 
@@ -1169,20 +1174,25 @@ $ apt-get source -qq --print-uris libusb=2:0.1.12-28
 'http://archive.ubuntu.com/ubuntu/pool/main/libu/libusb/libusb_0.1.12-28.debian.tar.xz' libusb_0.1.12-28.debian.tar.xz 21524 SHA256:eaf2314902b0bb9de3e1fa8c9abfcecea7b78c9824048016beaca34f7cc4351b
 ```
 
-### `dpkg` source package: `linux=4.4.0-193.224`
+### `dpkg` source package: `linux=4.4.0-194.226`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-193.224`
+- `linux-libc-dev:amd64=4.4.0-194.226`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 - `redpine-signals`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-194.226
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-194.226.dsc' linux_4.4.0-194.226.dsc 11596 SHA512:c29227608e7adebe8ddaec1bceb2e0300fb6cb1ef55679311a3eee1d4d6f8b233174a3186ddc50deb3224ee27e03ebb9dedb297d37ea3a9499c07a0e2c8b675d
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA512:28ef89b62f663f2d90b58274799b7ebeff04699f08d0b83f650b0de179d4ef354450c81ecda07522b493c43d5eb2d530fa0f552a2794d48f84878e05efa39cc3
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-194.226.diff.gz' linux_4.4.0-194.226.diff.gz 16775263 SHA512:c63471bda5d161de4f9703c78bc9010f95d4868d49d159495debbcd7e3347aecae428e06e955a07cecd29150a3510580840e72cf2db4193d5d3a8bf21f4a68f1
+```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu0.2`
 
@@ -1364,19 +1374,24 @@ $ apt-get source -qq --print-uris nettle=3.2-1ubuntu0.16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.2-1ubuntu0.16.04.1.debian.tar.xz' nettle_3.2-1ubuntu0.16.04.1.debian.tar.xz 21340 SHA512:97a4c851a63dad2298809aa29f2ab8a37367fc21f5d134ad297124f648991e5da648a628a068e423fd3375633ed364ba920cdd03bb36f3ad349c9b598d21ff67
 ```
 
-### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.9`
+### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.11`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.42+dfsg-2ubuntu3.9`
+- `libldap-2.4-2:amd64=2.4.42+dfsg-2ubuntu3.11`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2ubuntu3.11
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.11.dsc' openldap_2.4.42+dfsg-2ubuntu3.11.dsc 3058 SHA512:61ab2e2fd9696eeea80cdfd3416508058408fcb1ac4ddbcafd9502480df8f731bcd1f77757f1f113e7a35276d5b00f0fcb07af852dd5e0afdc23420b43381f16
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg.orig.tar.gz' openldap_2.4.42+dfsg.orig.tar.gz 4813173 SHA512:4ed671baef513927cc340dac15b8979dba766d4fd629cae0bad1e125d09bc4ae61fda6912e06c53f8ef2cee6c2e28379b4e0c419c00c8254dc0cc0c715caf200
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.11.debian.tar.xz' openldap_2.4.42+dfsg-2ubuntu3.11.debian.tar.xz 183320 SHA512:cee22eb64b028773d7e4245e967e734fca5a02d25e3841a526a8f2c5a698f96b95d500093c51fe53e4fcf487556032dfd30c265e3e367a5229a8ab1b09f9088d
+```
 
 ### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.17`
 
