@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c78dd54cec3410370bcb2020cd887e0acf721fcc5166590c3219a1744df0bd82`
-- Created: `2020-11-20T00:54:57.339862337Z`
-- Virtual Size: ~ 412.13 Mb  
+- Image ID: `sha256:b6dc7c691d3555073d681f25babec27cf6d561f667f6b57ddd9f0dac0cdd872a`
+- Created: `2020-12-02T00:39:31.376733103Z`
+- Virtual Size: ~ 413.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/openjdk-16/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/local/openjdk-16`
-  - `JAVA_VERSION=16-ea+25`
+  - `JAVA_VERSION=16-ea+26`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 
@@ -939,15 +939,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/keyutils/1.6-6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/keyutils/1.6-6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `krb5=1.17-3`
+### `dpkg` source package: `krb5=1.17-3+deb10u1`
 
 Binary Packages:
 
-- `krb5-locales=1.17-3`
-- `libgssapi-krb5-2:amd64=1.17-3`
-- `libk5crypto3:amd64=1.17-3`
-- `libkrb5-3:amd64=1.17-3`
-- `libkrb5support0:amd64=1.17-3`
+- `krb5-locales=1.17-3+deb10u1`
+- `libgssapi-krb5-2:amd64=1.17-3+deb10u1`
+- `libk5crypto3:amd64=1.17-3+deb10u1`
+- `libkrb5-3:amd64=1.17-3+deb10u1`
+- `libkrb5support0:amd64=1.17-3+deb10u1`
 
 Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -956,17 +956,17 @@ Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.17-3
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17-3.dsc' krb5_1.17-3.dsc 3302 SHA256:56112c60a10a49126359478893d2f51cee5513e41f6ec7269360c7abe8850f3f
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA256:5a6e2284a53de5702d3dc2be3b9339c963f9b5397d3fbbc53beb249380a781f5
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17-3.debian.tar.xz' krb5_1.17-3.debian.tar.xz 99396 SHA256:35da9d221e3a29c57c38c9d326d625a5b9199f3d7d64983483bd82f871083c9f
+$ apt-get source -qq --print-uris krb5=1.17-3+deb10u1
+'http://security.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.17-3+deb10u1.dsc' krb5_1.17-3+deb10u1.dsc 3573 SHA256:e9edb5d47d4f7dc345e01adc45f1d302f5f19012f8c38d234ef9b2c08bbef7cc
+'http://security.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA256:5a6e2284a53de5702d3dc2be3b9339c963f9b5397d3fbbc53beb249380a781f5
+'http://security.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.17-3+deb10u1.debian.tar.xz' krb5_1.17-3+deb10u1.debian.tar.xz 100584 SHA256:396ecf9ec5b4ac91d2ce8527d7f6b2309e70fc5b14ea1158eb7e367c48e9c5ca
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/krb5/1.17-3/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.17-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.17-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/krb5/1.17-3+deb10u1/ (for browsing the source)
+- https://sources.debian.net/src/krb5/1.17-3+deb10u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/krb5/1.17-3+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.7.9-2`
 
