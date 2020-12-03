@@ -1,16 +1,16 @@
-# `docker:19.03.13-dind`
+# `docker:19.03.14-dind`
 
 ## Docker Metadata
 
-- Image ID: `sha256:71edd6fcc7ef9b0427a2fc666a2379460622769e6ed1440583c30638c9403d50`
-- Created: `2020-10-23T17:17:57.046661727Z`
-- Virtual Size: ~ 232.25 Mb  
+- Image ID: `sha256:6f19136cf89d49aee8fa560eaab20e034c6ee17bbce55a9d33e1fbe5baa35b03`
+- Created: `2020-12-02T01:46:54.579038689Z`
+- Virtual Size: ~ 234.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=19.03.13`
+  - `DOCKER_VERSION=19.03.14`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=ed89041433a031cafc0a0f19cfe573c31688d377`
 
@@ -240,16 +240,16 @@ MIT
 ### `apk` package: `krb5-libs`
 
 ```console
-krb5-libs-1.18.2-r0 description:
+krb5-libs-1.18.3-r0 description:
 The shared libraries used by Kerberos 5
 
-krb5-libs-1.18.2-r0 webpage:
+krb5-libs-1.18.3-r0 webpage:
 https://web.mit.edu/kerberos/www/
 
-krb5-libs-1.18.2-r0 installed size:
+krb5-libs-1.18.3-r0 installed size:
 2007040
 
-krb5-libs-1.18.2-r0 license:
+krb5-libs-1.18.3-r0 license:
 MIT
 
 ```
