@@ -1,10 +1,10 @@
-# `matomo:3.14.1-fpm-alpine`
+# `matomo:4.0.3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e7e850eea8a59bf053bcfd4864f7a9e8a0f78126af5fc854ff2947c08ff7cbdd`
-- Created: `2020-11-06T03:40:06.895018551Z`
-- Virtual Size: ~ 147.09 Mb  
+- Image ID: `sha256:e3dcba39fe4501f992b0fd819af3205f09056c4edc56863ffaf2b7e0d1b6f42c`
+- Created: `2020-12-01T23:51:13.786007335Z`
+- Virtual Size: ~ 142.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -18,11 +18,11 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.12`
-  - `PHP_URL=https://www.php.net/distributions/php-7.4.12.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.12.tar.xz.asc`
-  - `PHP_SHA256=e82d2bcead05255f6b7d2ff4e2561bc334204955820cabc2457b5239fde96b76`
-  - `MATOMO_VERSION=3.14.1`
+  - `PHP_VERSION=7.4.13`
+  - `PHP_URL=https://www.php.net/distributions/php-7.4.13.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.13.tar.xz.asc`
+  - `PHP_SHA256=aead303e3abac23106529560547baebbedba0bb2943b91d5aa08fff1f41680f4`
+  - `MATOMO_VERSION=4.0.3`
 - Labels:
   - `maintainer=pierre@piwik.org`
 
@@ -473,16 +473,16 @@ BSD-3-Clause
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.24-r9 description:
+musl-1.1.24-r10 description:
 the musl c library (libc) implementation
 
-musl-1.1.24-r9 webpage:
+musl-1.1.24-r10 webpage:
 https://musl.libc.org/
 
-musl-1.1.24-r9 installed size:
+musl-1.1.24-r10 installed size:
 614400
 
-musl-1.1.24-r9 license:
+musl-1.1.24-r10 license:
 MIT
 
 ```
