@@ -1,10 +1,10 @@
-# `crate:4.3.1`
+# `crate:4.3.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ae2740c514282ac9e80c527b5666ea40cfc6099b55e171065b1fe692b73ec714`
-- Created: `2020-11-14T00:38:03.251135221Z`
-- Virtual Size: ~ 689.29 Mb  
+- Image ID: `sha256:fe24633f6198d7d052e8f682e97beab5b85d1a60a4b58a6162df27579ae9921a`
+- Created: `2020-12-01T23:38:53.758364568Z`
+- Virtual Size: ~ 689.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -19,14 +19,14 @@
   - `org.label-schema.name=CentOS Base Image`
   - `org.label-schema.schema-version=1.0`
   - `org.label-schema.vendor=CentOS`
-  - `org.opencontainers.image.created=2020-10-29T10:42:21.484922`
+  - `org.opencontainers.image.created=2020-11-25T09:57:46.817607`
   - `org.opencontainers.image.description=CrateDB is a distributed SQL database handles massive amounts of machine data in real-time.`
   - `org.opencontainers.image.licenses=GPL-2.0-only`
   - `org.opencontainers.image.source=https://github.com/crate/docker-crate`
   - `org.opencontainers.image.title=crate`
   - `org.opencontainers.image.url=https://crate.io/products/cratedb/`
   - `org.opencontainers.image.vendor=Crate.io`
-  - `org.opencontainers.image.version=4.3.1`
+  - `org.opencontainers.image.version=4.3.2`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -1758,32 +1758,32 @@ Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/python-urlgrabber-3.10-10.el7.src.rpm
 ```
 
-### `rpm` package: `python3-3.6.8-17.el7.x86_64`
+### `rpm` package: `python3-3.6.8-18.el7.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls python3-3.6.8-17.el7
+$ yumdownloader --quiet --source --urls python3-3.6.8-18.el7
 Enabling updates-source repository
 Enabling base-source repository
 Enabling extras-source repository
-http://vault.centos.org/centos/7/os/Source//SPackages/python3-3.6.8-17.el7.src.rpm
+http://vault.centos.org/centos/7/updates/Source//SPackages/python3-3.6.8-18.el7.src.rpm
 ```
 
-### `rpm` package: `python3-libs-3.6.8-17.el7.x86_64`
+### `rpm` package: `python3-libs-3.6.8-18.el7.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls python3-libs-3.6.8-17.el7
+$ yumdownloader --quiet --source --urls python3-libs-3.6.8-18.el7
 Enabling updates-source repository
 Enabling base-source repository
 Enabling extras-source repository
-http://vault.centos.org/centos/7/os/Source//SPackages/python3-3.6.8-17.el7.src.rpm
+http://vault.centos.org/centos/7/updates/Source//SPackages/python3-3.6.8-18.el7.src.rpm
 ```
 
 ### `rpm` package: `python3-pip-9.0.3-8.el7.noarch`
