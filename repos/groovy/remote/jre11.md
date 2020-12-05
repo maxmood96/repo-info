@@ -1,7 +1,7 @@
 ## `groovy:jre11`
 
 ```console
-$ docker pull groovy@sha256:bd00eca6f5b7d9e594e54a8f48c478bcc81486e2d81adb1dc55e87aa3ccd86af
+$ docker pull groovy@sha256:7950fc9f3fbd0f5f57006a5fc08ebc56c5560831e9d58e8aec08f28f18356b36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -109,95 +109,95 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ### `groovy:jre11` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:a881ec682e82302f4b941c73fcbf426848895d2807e81d6d86d76a182337a6b3
+$ docker pull groovy@sha256:9c4261186a20c2c0c22acfa4b430c6e320a584e3dc8be30f9f61aeeb77af4bb5
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.0 MB (129036416 bytes)**  
+-	Total Size: **128.8 MB (128786673 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b9bd5ad7f7d50f545e93eff290855bb8419942298db9f344d45ff9892269a26`
+-	Image ID: `sha256:a2962760d69881ea9b11dc76ab0c0890a1151886938f6650ae3d406978058e22`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Fri, 23 Oct 2020 18:16:23 GMT
-ADD file:7eef4725b8e0594e6d033da471b98f508fde3df29100aa6cdc33180d4524cf62 in / 
-# Fri, 23 Oct 2020 18:16:26 GMT
+# Wed, 25 Nov 2020 22:59:41 GMT
+ADD file:b2c2bab174379d89834d816a7519d4758ea075a1aa00c6fe305c329089a15d3d in / 
+# Wed, 25 Nov 2020 22:59:44 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 23 Oct 2020 18:16:28 GMT
+# Wed, 25 Nov 2020 22:59:46 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 23 Oct 2020 18:16:30 GMT
+# Wed, 25 Nov 2020 22:59:48 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 23 Oct 2020 18:16:30 GMT
+# Wed, 25 Nov 2020 22:59:48 GMT
 CMD ["/bin/bash"]
-# Wed, 28 Oct 2020 17:57:26 GMT
+# Wed, 25 Nov 2020 23:18:24 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 28 Oct 2020 17:57:58 GMT
+# Wed, 25 Nov 2020 23:18:53 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Thu, 19 Nov 2020 20:02:02 GMT
+# Wed, 25 Nov 2020 23:19:34 GMT
 ENV JAVA_VERSION=jdk-11.0.9.1+1
-# Thu, 19 Nov 2020 20:04:53 GMT
+# Wed, 25 Nov 2020 23:20:09 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e96d665a39800b160f8ed4de03eada2969c650752faaf7cc83fa643e28dce337';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.9.1%2B1/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.9.1_1.tar.gz';          ;;        armhf|armv7l)          ESUM='11628830c3c912edd10b91620ef0b9566640c5ea46439f1d028f3ebd98682dbb';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.9.1%2B1/OpenJDK11U-jre_arm_linux_hotspot_11.0.9.1_1.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='a921613682f755353fc56007bd15c68e1a5be461503377b7574cb70e0320cfed';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.9.1%2B1/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.9.1_1.tar.gz';          ;;        s390x)          ESUM='12bb7f51e52fe83b559eeb762128972622651f4ffbc95177ad3df9dcd9ab8226';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.9.1%2B1/OpenJDK11U-jre_s390x_linux_hotspot_11.0.9.1_1.tar.gz';          ;;        amd64|x86_64)          ESUM='73ce5ce03d2efb097b561ae894903cdab06b8d58fbc2697a5abe44ccd8ecc2e5';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.9.1%2B1/OpenJDK11U-jre_x64_linux_hotspot_11.0.9.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 19 Nov 2020 20:05:06 GMT
+# Wed, 25 Nov 2020 23:20:11 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 23 Nov 2020 23:30:29 GMT
+# Fri, 04 Dec 2020 22:24:47 GMT
 CMD ["groovysh"]
-# Mon, 23 Nov 2020 23:30:30 GMT
+# Fri, 04 Dec 2020 22:24:48 GMT
 ENV GROOVY_HOME=/opt/groovy
-# Mon, 23 Nov 2020 23:30:32 GMT
+# Fri, 04 Dec 2020 22:24:50 GMT
 RUN set -o errexit -o nounset     && echo "Adding groovy user and group"     && groupadd --system --gid 1000 groovy     && useradd --system --gid groovy --uid 1000 --shell /bin/bash --create-home groovy     && mkdir --parents /home/groovy/.groovy/grapes     && chown --recursive groovy:groovy /home/groovy     && chmod --recursive 1777 /home/groovy         && echo "Symlinking root .groovy to groovy .groovy"     && ln --symbolic /home/groovy/.groovy /root/.groovy
-# Mon, 23 Nov 2020 23:30:33 GMT
+# Fri, 04 Dec 2020 22:24:50 GMT
 VOLUME [/home/groovy/.groovy/grapes]
-# Mon, 23 Nov 2020 23:30:33 GMT
+# Fri, 04 Dec 2020 22:24:51 GMT
 WORKDIR /home/groovy
-# Mon, 23 Nov 2020 23:30:55 GMT
+# Fri, 04 Dec 2020 22:25:04 GMT
 RUN apt-get update     && echo "Installing build dependencies"     && apt-get install --yes --no-install-recommends         dirmngr         fontconfig         gnupg         unzip         wget     && rm --recursive --force /var/lib/apt/lists/*
-# Mon, 23 Nov 2020 23:30:55 GMT
-ENV GROOVY_VERSION=3.0.6
-# Mon, 23 Nov 2020 23:31:02 GMT
+# Fri, 04 Dec 2020 22:25:05 GMT
+ENV GROOVY_VERSION=3.0.7
+# Fri, 04 Dec 2020 22:25:12 GMT
 RUN set -o errexit -o nounset     && echo "Downloading Groovy"     && wget --no-verbose --output-document=groovy.zip "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip"         && echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server"     && export GNUPGHOME="$(mktemp -d)"     && gpg --batch --no-tty --keyserver ha.pool.sks-keyservers.net --recv-keys         7FAA0F2206DE228F0DB01AD741321490758AAD6F         331224E1D7BE883D16E8A685825C06C827AF6B66         34441E504A937F43EB0DAEF96A65176A0FB1CD0B         9A810E3B766E089FFB27C70F11B595CEDC4AEBB5         81CABC23EECA0790E8989B361FF96E10F0E13706         && echo "Checking download signature"     && wget --no-verbose --output-document=groovy.zip.asc "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc"     && gpg --batch --no-tty --verify groovy.zip.asc groovy.zip     && rm --recursive --force "${GNUPGHOME}"     && rm groovy.zip.asc         && echo "Installing Groovy"     && unzip groovy.zip     && rm groovy.zip     && mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/"     && ln --symbolic "${GROOVY_HOME}/bin/grape" /usr/bin/grape     && ln --symbolic "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy     && ln --symbolic "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc     && ln --symbolic "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole     && ln --symbolic "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc     && ln --symbolic "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh     && ln --symbolic "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy         && echo "Editing startGroovy to include java.xml.bind module"     && sed --in-place 's|startGroovy ( ) {|startGroovy ( ) {\n    JAVA_OPTS="$JAVA_OPTS --add-modules=ALL-SYSTEM"|' "${GROOVY_HOME}/bin/startGroovy"
-# Mon, 23 Nov 2020 23:31:04 GMT
+# Fri, 04 Dec 2020 22:25:13 GMT
 USER groovy
-# Mon, 23 Nov 2020 23:31:07 GMT
+# Fri, 04 Dec 2020 22:25:21 GMT
 RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && groovy --version
 ```
 
 -	Layers:
-	-	`sha256:b3c478921ca13a317a5584d4f9ec27e1688931fcc71a74949622ecd0dca63baa`  
-		Last Modified: Mon, 12 Oct 2020 16:20:05 GMT  
-		Size: 24.0 MB (24039636 bytes)  
+	-	`sha256:a3a20c5d313f7c8b8e8c7633f51e0ecfd29c87d093315961a38a46da87c3b2be`  
+		Last Modified: Fri, 06 Nov 2020 19:09:39 GMT  
+		Size: 24.0 MB (24041185 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f98985506b7e726afa2b8d178a88ffec8b51c3ae9d7f6f11279e5000c808761e`  
-		Last Modified: Fri, 23 Oct 2020 18:17:41 GMT  
-		Size: 854.0 B  
+	-	`sha256:67966bd810cedcb4375094e9af4a7197675edc270d8d16004ab58a8daacbe918`  
+		Last Modified: Wed, 25 Nov 2020 23:01:51 GMT  
+		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd88c4be5a76e00881f4097c47a3db7ea802048fb9e329475381f78c0ce82767`  
-		Last Modified: Fri, 23 Oct 2020 18:17:41 GMT  
+	-	`sha256:c8282ed6897607dd46838e55e3fabf03616b42c2275226012a008da3cf081051`  
+		Last Modified: Wed, 25 Nov 2020 23:01:51 GMT  
 		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3b32800feb068752db1ddbe364b95691e153ec4ddc17b7cea4f6502255a829b`  
-		Last Modified: Wed, 28 Oct 2020 18:00:39 GMT  
-		Size: 14.9 MB (14905244 bytes)  
+	-	`sha256:dac8cbd0a98818487f6f28b732e1df5a291bc778f42a14ac6be7b4d5eab350bb`  
+		Last Modified: Wed, 25 Nov 2020 23:22:35 GMT  
+		Size: 14.9 MB (14906111 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5dcbcb6a965165df7f13ca697bf033bddcbbe9d3571b9ce8e7caded5409cbc65`  
-		Last Modified: Thu, 19 Nov 2020 20:14:07 GMT  
+	-	`sha256:39f37b28c47161e877890251fecc723ce38f7fb9a82bad712cb9cb41b8352c36`  
+		Last Modified: Wed, 25 Nov 2020 23:24:14 GMT  
 		Size: 43.0 MB (42954130 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:835f6f505189591be847d46140ebc37ec8dd3f8c0c25ad821986a94d43e26946`  
-		Last Modified: Mon, 23 Nov 2020 23:33:28 GMT  
-		Size: 4.4 KB (4379 bytes)  
+	-	`sha256:33347b195599d242e102cac5b912eac384668eb221ee74db2937d65acb7e66b6`  
+		Last Modified: Fri, 04 Dec 2020 22:29:20 GMT  
+		Size: 4.4 KB (4378 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13f3eabc11864647c750db661eef6d5b9a165e583ad19cb684b8673753c8d87f`  
-		Last Modified: Mon, 23 Nov 2020 23:33:29 GMT  
-		Size: 3.6 MB (3578420 bytes)  
+	-	`sha256:36461c6b24d81d569018eac00999bde3558f4435c749f353728d46706abce8fb`  
+		Last Modified: Fri, 04 Dec 2020 22:29:20 GMT  
+		Size: 3.6 MB (3578596 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c2dcf2951dbedc7629c1ef1c2c5fecc59468a71077dd3c62da5525bebb4e85e`  
-		Last Modified: Mon, 23 Nov 2020 23:33:35 GMT  
-		Size: 43.6 MB (43553393 bytes)  
+	-	`sha256:c750c87093ade0882a704a65e4b03e4aabd9eee883adddd4248b3a39c045d3f9`  
+		Last Modified: Fri, 04 Dec 2020 22:29:26 GMT  
+		Size: 43.3 MB (43301059 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58110ab2b1d31a334bc903e9bcc99c8aaf8ff3c4c16cfaba4a1678f9bfc997da`  
-		Last Modified: Mon, 23 Nov 2020 23:33:29 GMT  
-		Size: 172.0 B  
+	-	`sha256:fd252866173cea563ca6bba4f1e392a44feeda1a8c15474026b79f9a892582ed`  
+		Last Modified: Fri, 04 Dec 2020 22:29:20 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `groovy:jre11` - linux; arm64 variant v8
@@ -391,93 +391,93 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ### `groovy:jre11` - linux; s390x
 
 ```console
-$ docker pull groovy@sha256:616a7bf4e36807d8b0979394daa7678a6a54e07d28938df1b83e12eee0d83a8f
+$ docker pull groovy@sha256:90c99af5f45e4f1066d9b6ab8c9a66dbae9482ee08329b192fe224e9ff55195e
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.0 MB (129018390 bytes)**  
+-	Total Size: **128.7 MB (128737153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d27a59d7b16ba55c495fdb7917fc3ba430a0119bb06bde940ac1ecdae9d3b49`
+-	Image ID: `sha256:6b7c53c876e867bc70dd39cf799446355a472d1dd0e79247032351ec65e6e6c5`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Fri, 23 Oct 2020 19:09:19 GMT
-ADD file:9b934c86e9ab1dd29cef318d8dd9cd1228b9d92124f434c50ad7d03ede1a5c76 in / 
-# Fri, 23 Oct 2020 19:09:24 GMT
+# Wed, 25 Nov 2020 22:45:17 GMT
+ADD file:38e2a753398ca5c2c204ddc63d4f5ab0bfb573c7808575be86822459e8d1f812 in / 
+# Wed, 25 Nov 2020 22:45:25 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 23 Oct 2020 19:09:26 GMT
+# Wed, 25 Nov 2020 22:45:27 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 23 Oct 2020 19:09:27 GMT
+# Wed, 25 Nov 2020 22:45:28 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 23 Oct 2020 19:09:27 GMT
+# Wed, 25 Nov 2020 22:45:29 GMT
 CMD ["/bin/bash"]
-# Wed, 28 Oct 2020 17:41:23 GMT
+# Wed, 25 Nov 2020 23:16:40 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 28 Oct 2020 17:41:39 GMT
+# Wed, 25 Nov 2020 23:17:15 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Thu, 19 Nov 2020 19:42:24 GMT
+# Wed, 25 Nov 2020 23:18:20 GMT
 ENV JAVA_VERSION=jdk-11.0.9.1+1
-# Thu, 19 Nov 2020 19:43:03 GMT
+# Wed, 25 Nov 2020 23:19:06 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e96d665a39800b160f8ed4de03eada2969c650752faaf7cc83fa643e28dce337';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.9.1%2B1/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.9.1_1.tar.gz';          ;;        armhf|armv7l)          ESUM='11628830c3c912edd10b91620ef0b9566640c5ea46439f1d028f3ebd98682dbb';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.9.1%2B1/OpenJDK11U-jre_arm_linux_hotspot_11.0.9.1_1.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='a921613682f755353fc56007bd15c68e1a5be461503377b7574cb70e0320cfed';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.9.1%2B1/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.9.1_1.tar.gz';          ;;        s390x)          ESUM='12bb7f51e52fe83b559eeb762128972622651f4ffbc95177ad3df9dcd9ab8226';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.9.1%2B1/OpenJDK11U-jre_s390x_linux_hotspot_11.0.9.1_1.tar.gz';          ;;        amd64|x86_64)          ESUM='73ce5ce03d2efb097b561ae894903cdab06b8d58fbc2697a5abe44ccd8ecc2e5';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.9.1%2B1/OpenJDK11U-jre_x64_linux_hotspot_11.0.9.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 19 Nov 2020 19:43:06 GMT
+# Wed, 25 Nov 2020 23:19:12 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 24 Nov 2020 01:21:51 GMT
+# Fri, 04 Dec 2020 22:15:07 GMT
 CMD ["groovysh"]
-# Tue, 24 Nov 2020 01:21:51 GMT
+# Fri, 04 Dec 2020 22:15:07 GMT
 ENV GROOVY_HOME=/opt/groovy
-# Tue, 24 Nov 2020 01:21:54 GMT
+# Fri, 04 Dec 2020 22:15:09 GMT
 RUN set -o errexit -o nounset     && echo "Adding groovy user and group"     && groupadd --system --gid 1000 groovy     && useradd --system --gid groovy --uid 1000 --shell /bin/bash --create-home groovy     && mkdir --parents /home/groovy/.groovy/grapes     && chown --recursive groovy:groovy /home/groovy     && chmod --recursive 1777 /home/groovy         && echo "Symlinking root .groovy to groovy .groovy"     && ln --symbolic /home/groovy/.groovy /root/.groovy
-# Tue, 24 Nov 2020 01:21:54 GMT
+# Fri, 04 Dec 2020 22:15:10 GMT
 VOLUME [/home/groovy/.groovy/grapes]
-# Tue, 24 Nov 2020 01:21:55 GMT
+# Fri, 04 Dec 2020 22:15:11 GMT
 WORKDIR /home/groovy
-# Tue, 24 Nov 2020 01:22:09 GMT
+# Fri, 04 Dec 2020 22:15:23 GMT
 RUN apt-get update     && echo "Installing build dependencies"     && apt-get install --yes --no-install-recommends         dirmngr         fontconfig         gnupg         unzip         wget     && rm --recursive --force /var/lib/apt/lists/*
-# Tue, 24 Nov 2020 01:22:11 GMT
-ENV GROOVY_VERSION=3.0.6
-# Tue, 24 Nov 2020 01:22:23 GMT
+# Fri, 04 Dec 2020 22:15:24 GMT
+ENV GROOVY_VERSION=3.0.7
+# Fri, 04 Dec 2020 22:15:33 GMT
 RUN set -o errexit -o nounset     && echo "Downloading Groovy"     && wget --no-verbose --output-document=groovy.zip "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip"         && echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server"     && export GNUPGHOME="$(mktemp -d)"     && gpg --batch --no-tty --keyserver ha.pool.sks-keyservers.net --recv-keys         7FAA0F2206DE228F0DB01AD741321490758AAD6F         331224E1D7BE883D16E8A685825C06C827AF6B66         34441E504A937F43EB0DAEF96A65176A0FB1CD0B         9A810E3B766E089FFB27C70F11B595CEDC4AEBB5         81CABC23EECA0790E8989B361FF96E10F0E13706         && echo "Checking download signature"     && wget --no-verbose --output-document=groovy.zip.asc "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc"     && gpg --batch --no-tty --verify groovy.zip.asc groovy.zip     && rm --recursive --force "${GNUPGHOME}"     && rm groovy.zip.asc         && echo "Installing Groovy"     && unzip groovy.zip     && rm groovy.zip     && mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/"     && ln --symbolic "${GROOVY_HOME}/bin/grape" /usr/bin/grape     && ln --symbolic "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy     && ln --symbolic "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc     && ln --symbolic "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole     && ln --symbolic "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc     && ln --symbolic "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh     && ln --symbolic "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy         && echo "Editing startGroovy to include java.xml.bind module"     && sed --in-place 's|startGroovy ( ) {|startGroovy ( ) {\n    JAVA_OPTS="$JAVA_OPTS --add-modules=ALL-SYSTEM"|' "${GROOVY_HOME}/bin/startGroovy"
-# Tue, 24 Nov 2020 01:22:26 GMT
+# Fri, 04 Dec 2020 22:15:35 GMT
 USER groovy
-# Tue, 24 Nov 2020 01:22:29 GMT
+# Fri, 04 Dec 2020 22:15:41 GMT
 RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && groovy --version
 ```
 
 -	Layers:
-	-	`sha256:d3e8e1a5d50716d6aabb0cef46599f9e7a722a560910d6f724737aaef0a7d6c3`  
-		Last Modified: Mon, 12 Oct 2020 16:45:31 GMT  
-		Size: 27.2 MB (27224393 bytes)  
+	-	`sha256:d777bd6e5a8d1fc6019fe013e0f29e35d2de6a93848ec43ec4b7bcabe67c7d1a`  
+		Last Modified: Tue, 10 Nov 2020 00:18:43 GMT  
+		Size: 27.2 MB (27206899 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04282efaafb3c9b53bba677fc3c06c478dc1613c1f21939bfa2c113aeef2f99c`  
-		Last Modified: Fri, 23 Oct 2020 19:10:20 GMT  
-		Size: 847.0 B  
+	-	`sha256:c2fc12e4949d381d9eebf1d32c7547d9d4ebaed0142486b9f416d944257c44c3`  
+		Last Modified: Wed, 25 Nov 2020 22:47:22 GMT  
+		Size: 846.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6269ae100536d7559ae6ebe6606b4405ebb706c3d963926c5568b6e7fd954582`  
-		Last Modified: Fri, 23 Oct 2020 19:10:19 GMT  
-		Size: 187.0 B  
+	-	`sha256:a15ab9f4a460426ab1fe52891f15e15e67d5b2f246f51b1a6db49e628d6b56f4`  
+		Last Modified: Wed, 25 Nov 2020 22:47:21 GMT  
+		Size: 186.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5cd8065d26d8f90607b2debf915de6242befbe898f8fb305dbd99dc8df92d3a`  
-		Last Modified: Wed, 28 Oct 2020 17:59:30 GMT  
-		Size: 15.8 MB (15772935 bytes)  
+	-	`sha256:6bf8bd7a5605edf44103ebf135d7e4b32b9e7e95042873ec14d7ab398975f1db`  
+		Last Modified: Wed, 25 Nov 2020 23:40:00 GMT  
+		Size: 15.8 MB (15761480 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0f160b2827f9c173d6a1e0a781f9825467f03936bdf7dfa39ed8c40a4ac175b`  
-		Last Modified: Thu, 19 Nov 2020 19:50:20 GMT  
-		Size: 38.3 MB (38319596 bytes)  
+	-	`sha256:845d8edac25703df90a8f3fe0a421da2850971eab25a167e2c973748f8392e7e`  
+		Last Modified: Wed, 25 Nov 2020 23:41:03 GMT  
+		Size: 38.3 MB (38319609 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be4572cc25160eec3bd573165107fa3425f9861d03fbbc347c0c0151f1dc99ce`  
-		Last Modified: Tue, 24 Nov 2020 01:27:27 GMT  
-		Size: 4.4 KB (4399 bytes)  
+	-	`sha256:19e191c1655cd0de0db1895fb8908193e2d7051e0f966d972b18971faefb755d`  
+		Last Modified: Fri, 04 Dec 2020 22:20:57 GMT  
+		Size: 4.4 KB (4398 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54a668d9afc9fdf2e0149908b0afd9ed056c32239dda5550174d164f23a2765d`  
-		Last Modified: Tue, 24 Nov 2020 01:27:27 GMT  
-		Size: 4.1 MB (4142465 bytes)  
+	-	`sha256:06847ede486f250b48c3f52150025e692c6b731dfc4ddb53aaf58fb10a6add18`  
+		Last Modified: Fri, 04 Dec 2020 22:20:57 GMT  
+		Size: 4.1 MB (4142497 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a106c08cb3f84e8092faea1e4c37f8a3a834515aa5618f190da2e7a4ae87b17`  
-		Last Modified: Tue, 24 Nov 2020 01:27:31 GMT  
-		Size: 43.6 MB (43553397 bytes)  
+	-	`sha256:202784e5061e77ad2135680c59010ea1c76d61bbbdd1bf4a8e5f573970e6f912`  
+		Last Modified: Fri, 04 Dec 2020 22:21:02 GMT  
+		Size: 43.3 MB (43301065 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3f416ddf838dee6f95e215ddfa93bfea9512951128925216332e24a037cd7d7`  
-		Last Modified: Tue, 24 Nov 2020 01:27:28 GMT  
-		Size: 171.0 B  
+	-	`sha256:c0596eae654518d7953d0758c5b399e3210145c6d384e3987c1c281c701ea949`  
+		Last Modified: Fri, 04 Dec 2020 22:20:57 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
