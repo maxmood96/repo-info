@@ -1,7 +1,7 @@
 ## `adminer:fastcgi`
 
 ```console
-$ docker pull adminer@sha256:7a83f608cc59ffe3be6fd96cf75581fefc442e11bcfa6ab2ea7978dc8ce86f96
+$ docker pull adminer@sha256:80807bf2ae6193bbd2ca88f9e19a7157b9ebfa8b280c5f9e19d6d9313b3994a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -176,14 +176,14 @@ CMD ["php-fpm"]
 ### `adminer:fastcgi` - linux; arm variant v6
 
 ```console
-$ docker pull adminer@sha256:314dc4215e39a05a4f5ef195ad857e7cc6d703a48baeb64bdb7e955e07b6defb
+$ docker pull adminer@sha256:62c093db17905b0587a19455d654b260a23aaaf67818f58da2be691dccdc2584
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.5 MB (32535686 bytes)**  
+-	Total Size: **32.5 MB (32535839 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1059df29faff30118ac0e1c5fe8c79a21b9697d69d984c10df15adac7d3e97f1`
+-	Image ID: `sha256:aba61b3a1a69f986ce277e859e6538354e5735980865c5094f9386cd34a47d27`
 -	Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -248,21 +248,21 @@ RUN addgroup -S adminer &&	adduser -S -G adminer adminer &&	mkdir -p /var/www/ht
 RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev 	unixodbc-dev 	freetds-dev &&	docker-php-ext-configure pdo_odbc --with-pdo-odbc=unixODBC,/usr &&	docker-php-ext-install 	pdo_mysql 	pdo_pgsql 	pdo_sqlite 	pdo_odbc 	pdo_dblib &&	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" &&	apk add --virtual .phpexts-rundeps $runDeps &&	apk del .build-deps
 # Tue, 01 Dec 2020 03:25:06 GMT
 COPY multi:3020a2cf8da93deb4663b2b608f3156b5f8da81b19c0fa615f495168d48abf9c in /var/www/html/ 
-# Tue, 01 Dec 2020 03:25:07 GMT
-ENV ADMINER_VERSION=4.7.7
-# Tue, 01 Dec 2020 03:25:08 GMT
-ENV ADMINER_DOWNLOAD_SHA256=566152a2d86186dcfb28856b4ed0dfdb60e355d93ab693f7931201f75868fff0
-# Tue, 01 Dec 2020 03:25:10 GMT
-ENV ADMINER_SRC_DOWNLOAD_SHA256=5d28c03739ce647a48ebe77e8db247b7f5ec7a2ee66ccabe00743c117d50e319
-# Tue, 01 Dec 2020 03:25:13 GMT
+# Mon, 07 Dec 2020 23:49:48 GMT
+ENV ADMINER_VERSION=4.7.8
+# Mon, 07 Dec 2020 23:49:50 GMT
+ENV ADMINER_DOWNLOAD_SHA256=eadca9f2194702a4c0bc74ad02846bf88fdf521128c205ac0ec2c345489b1384
+# Mon, 07 Dec 2020 23:49:50 GMT
+ENV ADMINER_SRC_DOWNLOAD_SHA256=051544a8d782174218e6c152d777ad50437711b01a010b8c174162f3c066a7c0
+# Mon, 07 Dec 2020 23:49:53 GMT
 RUN set -x &&	curl -fsSL https://github.com/vrana/adminer/releases/download/v$ADMINER_VERSION/adminer-$ADMINER_VERSION.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c - &&	curl -fsSL https://github.com/vrana/adminer/archive/v$ADMINER_VERSION.tar.gz -o source.tar.gz &&	echo "$ADMINER_SRC_DOWNLOAD_SHA256  source.tar.gz" |sha256sum -c - &&	tar xzf source.tar.gz --strip-components=1 "adminer-$ADMINER_VERSION/designs/" "adminer-$ADMINER_VERSION/plugins/" &&	rm source.tar.gz
-# Tue, 01 Dec 2020 03:25:14 GMT
+# Mon, 07 Dec 2020 23:49:54 GMT
 COPY file:5ff0be587f5dd9166f7a558457b0e656c889de46d3bb2afd41f1714ab2c02ceb in /usr/local/bin/ 
-# Tue, 01 Dec 2020 03:25:15 GMT
+# Mon, 07 Dec 2020 23:49:54 GMT
 ENTRYPOINT ["entrypoint.sh" "docker-php-entrypoint"]
-# Tue, 01 Dec 2020 03:25:16 GMT
+# Mon, 07 Dec 2020 23:49:55 GMT
 USER adminer
-# Tue, 01 Dec 2020 03:25:18 GMT
+# Mon, 07 Dec 2020 23:49:56 GMT
 CMD ["php-fpm"]
 ```
 
@@ -323,26 +323,26 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 01 Dec 2020 03:26:01 GMT  
 		Size: 1.5 KB (1476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb52dcc4a96bcc0359f96036c02d1b5c8630225cb2bcbe6f2d08afdb54cc328f`  
-		Last Modified: Tue, 01 Dec 2020 03:26:01 GMT  
-		Size: 570.8 KB (570770 bytes)  
+	-	`sha256:26868ecb3675082b52b14c37bcd92298ce0cae0dfa1fbd96dd5daece40ecaace`  
+		Last Modified: Mon, 07 Dec 2020 23:50:25 GMT  
+		Size: 570.9 KB (570921 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94f2cae40ed74c4f0acf9bc72e813a98e52882c5f6e7aff36984e20e6b39ec1e`  
-		Last Modified: Tue, 01 Dec 2020 03:26:01 GMT  
-		Size: 497.0 B  
+	-	`sha256:213ad822680aef78c0a7743143af04d3fd2c0ce7ab029b580bd8418cbe93b70b`  
+		Last Modified: Mon, 07 Dec 2020 23:50:25 GMT  
+		Size: 499.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adminer:fastcgi` - linux; arm variant v7
 
 ```console
-$ docker pull adminer@sha256:2c45a3ace0869213e95ed04454dc19ab534c3571aed95c112b6e0e22a18e21f7
+$ docker pull adminer@sha256:226eabf37d80fa4c86dc5fd621ba0b5c211967752c3e972a3929b9ffc4f4387c
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **31.3 MB (31261769 bytes)**  
+-	Total Size: **31.3 MB (31261925 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98dd9b6a08f26af7d909c752344a3c88745010f2928ddc137a03deb71da65491`
+-	Image ID: `sha256:efcd4d51f3642b6795c4c7140eaab8183af5f3b781a9099b95e1eba7d94d5683`
 -	Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -407,21 +407,21 @@ RUN addgroup -S adminer &&	adduser -S -G adminer adminer &&	mkdir -p /var/www/ht
 RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev 	unixodbc-dev 	freetds-dev &&	docker-php-ext-configure pdo_odbc --with-pdo-odbc=unixODBC,/usr &&	docker-php-ext-install 	pdo_mysql 	pdo_pgsql 	pdo_sqlite 	pdo_odbc 	pdo_dblib &&	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" &&	apk add --virtual .phpexts-rundeps $runDeps &&	apk del .build-deps
 # Tue, 01 Dec 2020 04:30:48 GMT
 COPY multi:3020a2cf8da93deb4663b2b608f3156b5f8da81b19c0fa615f495168d48abf9c in /var/www/html/ 
-# Tue, 01 Dec 2020 04:30:52 GMT
-ENV ADMINER_VERSION=4.7.7
-# Tue, 01 Dec 2020 04:30:52 GMT
-ENV ADMINER_DOWNLOAD_SHA256=566152a2d86186dcfb28856b4ed0dfdb60e355d93ab693f7931201f75868fff0
-# Tue, 01 Dec 2020 04:30:53 GMT
-ENV ADMINER_SRC_DOWNLOAD_SHA256=5d28c03739ce647a48ebe77e8db247b7f5ec7a2ee66ccabe00743c117d50e319
-# Tue, 01 Dec 2020 04:30:57 GMT
+# Tue, 08 Dec 2020 00:01:12 GMT
+ENV ADMINER_VERSION=4.7.8
+# Tue, 08 Dec 2020 00:01:13 GMT
+ENV ADMINER_DOWNLOAD_SHA256=eadca9f2194702a4c0bc74ad02846bf88fdf521128c205ac0ec2c345489b1384
+# Tue, 08 Dec 2020 00:01:14 GMT
+ENV ADMINER_SRC_DOWNLOAD_SHA256=051544a8d782174218e6c152d777ad50437711b01a010b8c174162f3c066a7c0
+# Tue, 08 Dec 2020 00:01:18 GMT
 RUN set -x &&	curl -fsSL https://github.com/vrana/adminer/releases/download/v$ADMINER_VERSION/adminer-$ADMINER_VERSION.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c - &&	curl -fsSL https://github.com/vrana/adminer/archive/v$ADMINER_VERSION.tar.gz -o source.tar.gz &&	echo "$ADMINER_SRC_DOWNLOAD_SHA256  source.tar.gz" |sha256sum -c - &&	tar xzf source.tar.gz --strip-components=1 "adminer-$ADMINER_VERSION/designs/" "adminer-$ADMINER_VERSION/plugins/" &&	rm source.tar.gz
-# Tue, 01 Dec 2020 04:30:58 GMT
+# Tue, 08 Dec 2020 00:01:20 GMT
 COPY file:5ff0be587f5dd9166f7a558457b0e656c889de46d3bb2afd41f1714ab2c02ceb in /usr/local/bin/ 
-# Tue, 01 Dec 2020 04:30:59 GMT
+# Tue, 08 Dec 2020 00:01:24 GMT
 ENTRYPOINT ["entrypoint.sh" "docker-php-entrypoint"]
-# Tue, 01 Dec 2020 04:31:00 GMT
+# Tue, 08 Dec 2020 00:01:25 GMT
 USER adminer
-# Tue, 01 Dec 2020 04:31:01 GMT
+# Tue, 08 Dec 2020 00:01:26 GMT
 CMD ["php-fpm"]
 ```
 
@@ -482,26 +482,26 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 01 Dec 2020 04:31:58 GMT  
 		Size: 1.5 KB (1475 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9769a6f6984af56cd8f3c019bec77f33b66c0e2eaed8d9518ed44fb320041ec`  
-		Last Modified: Tue, 01 Dec 2020 04:31:58 GMT  
-		Size: 570.8 KB (570768 bytes)  
+	-	`sha256:7022a91847b0aaf7d1e067b9c3fa7620f93f349b64d2d7ebe0e816598a47fed2`  
+		Last Modified: Tue, 08 Dec 2020 00:01:58 GMT  
+		Size: 570.9 KB (570923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d8ab2e8c66625f02c771e8db72f3080d458d8efe9a75086ac897d33b2bd43e9`  
-		Last Modified: Tue, 01 Dec 2020 04:31:58 GMT  
-		Size: 497.0 B  
+	-	`sha256:562e2ad43a7b07e5427acd85e75ec18c9dc4b21fe0a10fac08b447cfa140187f`  
+		Last Modified: Tue, 08 Dec 2020 00:01:58 GMT  
+		Size: 498.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adminer:fastcgi` - linux; arm64 variant v8
 
 ```console
-$ docker pull adminer@sha256:18f4915833fed620952a37a1418736c15bf4c96e037ac9776a88880fc65ea5fa
+$ docker pull adminer@sha256:89498585a4df7bcfaecdaadf8bee7b0b21018e861c1357c5826273c129cea8c1
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.8 MB (33782330 bytes)**  
+-	Total Size: **33.8 MB (33782483 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9bafede26d7e6735393f5f0ec0e2ecdd487dad82b8f3432a73f47523a50799ef`
+-	Image ID: `sha256:57bc4d4eb9fffe27cb455d6f0c04677fd0798704e2673ac9c281b492fa593f03`
 -	Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -566,21 +566,21 @@ RUN addgroup -S adminer &&	adduser -S -G adminer adminer &&	mkdir -p /var/www/ht
 RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev 	unixodbc-dev 	freetds-dev &&	docker-php-ext-configure pdo_odbc --with-pdo-odbc=unixODBC,/usr &&	docker-php-ext-install 	pdo_mysql 	pdo_pgsql 	pdo_sqlite 	pdo_odbc 	pdo_dblib &&	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" &&	apk add --virtual .phpexts-rundeps $runDeps &&	apk del .build-deps
 # Tue, 01 Dec 2020 08:14:30 GMT
 COPY multi:3020a2cf8da93deb4663b2b608f3156b5f8da81b19c0fa615f495168d48abf9c in /var/www/html/ 
-# Tue, 01 Dec 2020 08:14:31 GMT
-ENV ADMINER_VERSION=4.7.7
-# Tue, 01 Dec 2020 08:14:31 GMT
-ENV ADMINER_DOWNLOAD_SHA256=566152a2d86186dcfb28856b4ed0dfdb60e355d93ab693f7931201f75868fff0
-# Tue, 01 Dec 2020 08:14:32 GMT
-ENV ADMINER_SRC_DOWNLOAD_SHA256=5d28c03739ce647a48ebe77e8db247b7f5ec7a2ee66ccabe00743c117d50e319
-# Tue, 01 Dec 2020 08:14:35 GMT
+# Mon, 07 Dec 2020 23:40:07 GMT
+ENV ADMINER_VERSION=4.7.8
+# Mon, 07 Dec 2020 23:40:07 GMT
+ENV ADMINER_DOWNLOAD_SHA256=eadca9f2194702a4c0bc74ad02846bf88fdf521128c205ac0ec2c345489b1384
+# Mon, 07 Dec 2020 23:40:08 GMT
+ENV ADMINER_SRC_DOWNLOAD_SHA256=051544a8d782174218e6c152d777ad50437711b01a010b8c174162f3c066a7c0
+# Mon, 07 Dec 2020 23:40:11 GMT
 RUN set -x &&	curl -fsSL https://github.com/vrana/adminer/releases/download/v$ADMINER_VERSION/adminer-$ADMINER_VERSION.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c - &&	curl -fsSL https://github.com/vrana/adminer/archive/v$ADMINER_VERSION.tar.gz -o source.tar.gz &&	echo "$ADMINER_SRC_DOWNLOAD_SHA256  source.tar.gz" |sha256sum -c - &&	tar xzf source.tar.gz --strip-components=1 "adminer-$ADMINER_VERSION/designs/" "adminer-$ADMINER_VERSION/plugins/" &&	rm source.tar.gz
-# Tue, 01 Dec 2020 08:14:36 GMT
+# Mon, 07 Dec 2020 23:40:12 GMT
 COPY file:5ff0be587f5dd9166f7a558457b0e656c889de46d3bb2afd41f1714ab2c02ceb in /usr/local/bin/ 
-# Tue, 01 Dec 2020 08:14:37 GMT
+# Mon, 07 Dec 2020 23:40:13 GMT
 ENTRYPOINT ["entrypoint.sh" "docker-php-entrypoint"]
-# Tue, 01 Dec 2020 08:14:37 GMT
+# Mon, 07 Dec 2020 23:40:14 GMT
 USER adminer
-# Tue, 01 Dec 2020 08:14:38 GMT
+# Mon, 07 Dec 2020 23:40:15 GMT
 CMD ["php-fpm"]
 ```
 
@@ -641,26 +641,26 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 01 Dec 2020 08:15:15 GMT  
 		Size: 1.5 KB (1476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4de06df08a5bc1de8749d332626139448cecbfec92cbf900c84f44620a9b7478`  
-		Last Modified: Tue, 01 Dec 2020 08:15:14 GMT  
-		Size: 570.8 KB (570768 bytes)  
+	-	`sha256:857d9231bfb81ba8cc071fbdcccdb6f9189f8e56d09ce9396b85b4e88b412b53`  
+		Last Modified: Mon, 07 Dec 2020 23:40:43 GMT  
+		Size: 570.9 KB (570920 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:77ff9bc6a0e0d1c71796f72b995b44be06959d35a6bc131a1f44d9a1e73f0ebd`  
-		Last Modified: Tue, 01 Dec 2020 08:15:15 GMT  
-		Size: 497.0 B  
+	-	`sha256:a854be7b56f0667067e2d5d43ed47f9f068cb0e3f7976910fb604dda911121db`  
+		Last Modified: Mon, 07 Dec 2020 23:40:43 GMT  
+		Size: 498.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adminer:fastcgi` - linux; 386
 
 ```console
-$ docker pull adminer@sha256:ae822e776b0c4c4a19144cfabb95b65b37a9f0dac329e5005cb1f170370dc8f2
+$ docker pull adminer@sha256:4f5fe39f0929ce4ac634729677768b268b328437e602e5a286881bb683086a5f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.7 MB (34704901 bytes)**  
+-	Total Size: **34.7 MB (34705084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c37a9dbedd77c36eefb08c6f9fa5732cba4199d83be6de5c085a3923264ebae`
+-	Image ID: `sha256:7c8aa440257abba5e8b17a4be7767c0c3b8fc17f455e445f561495f8d394f849`
 -	Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -725,21 +725,21 @@ RUN addgroup -S adminer &&	adduser -S -G adminer adminer &&	mkdir -p /var/www/ht
 RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev 	unixodbc-dev 	freetds-dev &&	docker-php-ext-configure pdo_odbc --with-pdo-odbc=unixODBC,/usr &&	docker-php-ext-install 	pdo_mysql 	pdo_pgsql 	pdo_sqlite 	pdo_odbc 	pdo_dblib &&	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" &&	apk add --virtual .phpexts-rundeps $runDeps &&	apk del .build-deps
 # Tue, 01 Dec 2020 09:25:54 GMT
 COPY multi:3020a2cf8da93deb4663b2b608f3156b5f8da81b19c0fa615f495168d48abf9c in /var/www/html/ 
-# Tue, 01 Dec 2020 09:25:54 GMT
-ENV ADMINER_VERSION=4.7.7
-# Tue, 01 Dec 2020 09:25:54 GMT
-ENV ADMINER_DOWNLOAD_SHA256=566152a2d86186dcfb28856b4ed0dfdb60e355d93ab693f7931201f75868fff0
-# Tue, 01 Dec 2020 09:25:54 GMT
-ENV ADMINER_SRC_DOWNLOAD_SHA256=5d28c03739ce647a48ebe77e8db247b7f5ec7a2ee66ccabe00743c117d50e319
-# Tue, 01 Dec 2020 09:25:55 GMT
+# Mon, 07 Dec 2020 23:38:31 GMT
+ENV ADMINER_VERSION=4.7.8
+# Mon, 07 Dec 2020 23:38:32 GMT
+ENV ADMINER_DOWNLOAD_SHA256=eadca9f2194702a4c0bc74ad02846bf88fdf521128c205ac0ec2c345489b1384
+# Mon, 07 Dec 2020 23:38:32 GMT
+ENV ADMINER_SRC_DOWNLOAD_SHA256=051544a8d782174218e6c152d777ad50437711b01a010b8c174162f3c066a7c0
+# Mon, 07 Dec 2020 23:38:33 GMT
 RUN set -x &&	curl -fsSL https://github.com/vrana/adminer/releases/download/v$ADMINER_VERSION/adminer-$ADMINER_VERSION.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c - &&	curl -fsSL https://github.com/vrana/adminer/archive/v$ADMINER_VERSION.tar.gz -o source.tar.gz &&	echo "$ADMINER_SRC_DOWNLOAD_SHA256  source.tar.gz" |sha256sum -c - &&	tar xzf source.tar.gz --strip-components=1 "adminer-$ADMINER_VERSION/designs/" "adminer-$ADMINER_VERSION/plugins/" &&	rm source.tar.gz
-# Tue, 01 Dec 2020 09:25:56 GMT
+# Mon, 07 Dec 2020 23:38:33 GMT
 COPY file:5ff0be587f5dd9166f7a558457b0e656c889de46d3bb2afd41f1714ab2c02ceb in /usr/local/bin/ 
-# Tue, 01 Dec 2020 09:25:56 GMT
+# Mon, 07 Dec 2020 23:38:33 GMT
 ENTRYPOINT ["entrypoint.sh" "docker-php-entrypoint"]
-# Tue, 01 Dec 2020 09:25:56 GMT
+# Mon, 07 Dec 2020 23:38:34 GMT
 USER adminer
-# Tue, 01 Dec 2020 09:25:56 GMT
+# Mon, 07 Dec 2020 23:38:34 GMT
 CMD ["php-fpm"]
 ```
 
@@ -800,13 +800,13 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 01 Dec 2020 09:26:25 GMT  
 		Size: 1.5 KB (1472 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49c5acec88ee8b357974187cc26dff30a7f9398c68b43d0ef6ec25d0cf5c6676`  
-		Last Modified: Tue, 01 Dec 2020 09:26:26 GMT  
-		Size: 570.7 KB (570683 bytes)  
+	-	`sha256:3529b652f01c65456c39d33fd9d239949548a0442b8a1fa9d2bf0a1c1f74b968`  
+		Last Modified: Mon, 07 Dec 2020 23:38:54 GMT  
+		Size: 570.9 KB (570861 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c690c84c83aea95c383a977ae880692cbde065465d0e2ffeafa78f95fb0d315`  
-		Last Modified: Tue, 01 Dec 2020 09:26:26 GMT  
-		Size: 492.0 B  
+	-	`sha256:a79e9613d8243f31a29bb14c13abf1a73d577720e86547b01bdef2bf8f9296bd`  
+		Last Modified: Mon, 07 Dec 2020 23:38:54 GMT  
+		Size: 497.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adminer:fastcgi` - linux; ppc64le
@@ -971,14 +971,14 @@ CMD ["php-fpm"]
 ### `adminer:fastcgi` - linux; s390x
 
 ```console
-$ docker pull adminer@sha256:c2b33a1698464d08f8796ef30d00755467066a959c7516f672623dce29c4e95f
+$ docker pull adminer@sha256:d3d1d5e1827c0d53423af8755caa5a6877e3923afc5d665592a7e120c32b75b4
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.0 MB (32990427 bytes)**  
+-	Total Size: **33.0 MB (32990591 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3067c1b71ca8c3da0d521ee0eed1cd07825112f6a598748947592e1904313076`
+-	Image ID: `sha256:c37e236e2c68f5ad7d64bc688d5b1395ac255600c1adb88e0574f8d5c63fa2d2`
 -	Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1043,21 +1043,21 @@ RUN addgroup -S adminer &&	adduser -S -G adminer adminer &&	mkdir -p /var/www/ht
 RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev 	unixodbc-dev 	freetds-dev &&	docker-php-ext-configure pdo_odbc --with-pdo-odbc=unixODBC,/usr &&	docker-php-ext-install 	pdo_mysql 	pdo_pgsql 	pdo_sqlite 	pdo_odbc 	pdo_dblib &&	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)" &&	apk add --virtual .phpexts-rundeps $runDeps &&	apk del .build-deps
 # Tue, 01 Dec 2020 04:48:02 GMT
 COPY multi:3020a2cf8da93deb4663b2b608f3156b5f8da81b19c0fa615f495168d48abf9c in /var/www/html/ 
-# Tue, 01 Dec 2020 04:48:03 GMT
-ENV ADMINER_VERSION=4.7.7
-# Tue, 01 Dec 2020 04:48:03 GMT
-ENV ADMINER_DOWNLOAD_SHA256=566152a2d86186dcfb28856b4ed0dfdb60e355d93ab693f7931201f75868fff0
-# Tue, 01 Dec 2020 04:48:03 GMT
-ENV ADMINER_SRC_DOWNLOAD_SHA256=5d28c03739ce647a48ebe77e8db247b7f5ec7a2ee66ccabe00743c117d50e319
-# Tue, 01 Dec 2020 04:48:05 GMT
+# Mon, 07 Dec 2020 23:44:27 GMT
+ENV ADMINER_VERSION=4.7.8
+# Mon, 07 Dec 2020 23:44:27 GMT
+ENV ADMINER_DOWNLOAD_SHA256=eadca9f2194702a4c0bc74ad02846bf88fdf521128c205ac0ec2c345489b1384
+# Mon, 07 Dec 2020 23:44:28 GMT
+ENV ADMINER_SRC_DOWNLOAD_SHA256=051544a8d782174218e6c152d777ad50437711b01a010b8c174162f3c066a7c0
+# Mon, 07 Dec 2020 23:44:30 GMT
 RUN set -x &&	curl -fsSL https://github.com/vrana/adminer/releases/download/v$ADMINER_VERSION/adminer-$ADMINER_VERSION.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c - &&	curl -fsSL https://github.com/vrana/adminer/archive/v$ADMINER_VERSION.tar.gz -o source.tar.gz &&	echo "$ADMINER_SRC_DOWNLOAD_SHA256  source.tar.gz" |sha256sum -c - &&	tar xzf source.tar.gz --strip-components=1 "adminer-$ADMINER_VERSION/designs/" "adminer-$ADMINER_VERSION/plugins/" &&	rm source.tar.gz
-# Tue, 01 Dec 2020 04:48:05 GMT
+# Mon, 07 Dec 2020 23:44:31 GMT
 COPY file:5ff0be587f5dd9166f7a558457b0e656c889de46d3bb2afd41f1714ab2c02ceb in /usr/local/bin/ 
-# Tue, 01 Dec 2020 04:48:05 GMT
+# Mon, 07 Dec 2020 23:44:32 GMT
 ENTRYPOINT ["entrypoint.sh" "docker-php-entrypoint"]
-# Tue, 01 Dec 2020 04:48:05 GMT
+# Mon, 07 Dec 2020 23:44:32 GMT
 USER adminer
-# Tue, 01 Dec 2020 04:48:05 GMT
+# Mon, 07 Dec 2020 23:44:33 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1118,11 +1118,11 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 01 Dec 2020 04:48:37 GMT  
 		Size: 1.5 KB (1475 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8dc1c2158135f2835036d19895f13046bcbf37e1430957b0eab41bd8357a1127`  
-		Last Modified: Tue, 01 Dec 2020 04:48:37 GMT  
-		Size: 570.8 KB (570768 bytes)  
+	-	`sha256:37748294ed5c08d2683414a285a30a2e9e8a0076c31592c1d46a77f5826ae1ed`  
+		Last Modified: Mon, 07 Dec 2020 23:45:04 GMT  
+		Size: 570.9 KB (570930 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5dda459adcae0bf735b51683398713b72172964133724a2ce576edd22bf31875`  
-		Last Modified: Tue, 01 Dec 2020 04:48:37 GMT  
-		Size: 495.0 B  
+	-	`sha256:90fc2b0bdaf3d11e8b1b3db34942df565b7ca50fe05d88ab0ff689cdd2102799`  
+		Last Modified: Mon, 07 Dec 2020 23:45:04 GMT  
+		Size: 497.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
