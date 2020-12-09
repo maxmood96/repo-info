@@ -1,7 +1,7 @@
 ## `ros:dashing-ros1-bridge-bionic`
 
 ```console
-$ docker pull ros@sha256:9280983d45570585978537412307c9b04682af02e35746d7c196cfc0ef1a792a
+$ docker pull ros@sha256:8df330fcb758c06df8c8a6d374c3f408f499e47b5d29090309afbfde5c9f740d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,14 +13,14 @@ $ docker pull ros@sha256:9280983d45570585978537412307c9b04682af02e35746d7c196cfc
 ### `ros:dashing-ros1-bridge-bionic` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:b0fb69c4b70d32b47a2eb96b22f15e80ad08fa494387ade6134770f84e5fea9c
+$ docker pull ros@sha256:63145842527ec1efc594469680f856c48d32e62d4fb95be21f564aa7415bf6a1
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **418.4 MB (418357510 bytes)**  
+-	Total Size: **418.4 MB (418358701 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fecd9619c2fefd2d9b1228f10234904eb5777f8d86cd18d3d104c848807aef87`
+-	Image ID: `sha256:63fc800656f3e6f5be9acd946b1ca8a3ce2bd5bb1cf7bb1da86f53000c6a82af`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -75,11 +75,11 @@ ENV ROS1_DISTRO=melodic
 ENV ROS2_DISTRO=dashing
 # Thu, 26 Nov 2020 02:15:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-melodic-ros-comm=1.14.10-1*     ros-melodic-roscpp-tutorials=0.9.3-1*     ros-melodic-rospy-tutorials=0.9.3-1*     && rm -rf /var/lib/apt/lists/*
-# Thu, 26 Nov 2020 02:15:12 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-dashing-ros1-bridge=0.7.6-3*     ros-dashing-demo-nodes-cpp=0.7.9-1*     ros-dashing-demo-nodes-py=0.7.9-1*     && rm -rf /var/lib/apt/lists/*
-# Thu, 26 Nov 2020 02:15:19 GMT
+# Wed, 09 Dec 2020 04:37:02 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-dashing-ros1-bridge=0.7.7-1*     ros-dashing-demo-nodes-cpp=0.7.9-1*     ros-dashing-demo-nodes-py=0.7.9-1*     && rm -rf /var/lib/apt/lists/*
+# Wed, 09 Dec 2020 04:37:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     python-rosdep     && rm -rf /var/lib/apt/lists/*
-# Thu, 26 Nov 2020 02:15:19 GMT
+# Wed, 09 Dec 2020 04:37:09 GMT
 COPY file:f2fca591c0e2a31379c7ea28a9948ef5ee9d4a95b4831016253c1ef1a4f39718 in / 
 ```
 
@@ -148,17 +148,17 @@ COPY file:f2fca591c0e2a31379c7ea28a9948ef5ee9d4a95b4831016253c1ef1a4f39718 in /
 		Last Modified: Thu, 26 Nov 2020 02:36:03 GMT  
 		Size: 117.7 MB (117737192 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d8989cd13dae111f4e844d1aacd8c1e61a76c87960ecc5bce2ad97c73078f2e`  
-		Last Modified: Thu, 26 Nov 2020 02:35:41 GMT  
-		Size: 19.8 MB (19787835 bytes)  
+	-	`sha256:eaf486eb2e9f09feb6376fa70c2af42c76a4e28a635d68036eb5787795da35a2`  
+		Last Modified: Wed, 09 Dec 2020 04:38:39 GMT  
+		Size: 19.8 MB (19788925 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:755761122283b08bf13e80145415aecde4ddcc2b040ba56d4a8a54c3ead8bc80`  
-		Last Modified: Thu, 26 Nov 2020 02:35:36 GMT  
-		Size: 639.2 KB (639232 bytes)  
+	-	`sha256:cb4dd5397016bc3e99e15928ebdf38ce9df1f9bb2cc640f2a704380b0b971f51`  
+		Last Modified: Wed, 09 Dec 2020 04:38:34 GMT  
+		Size: 639.3 KB (639332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ba0a9810d0e2d4c46c3498dab0b6b24d4b53b42a2f2741d8d5979ef9036319e`  
-		Last Modified: Thu, 26 Nov 2020 02:35:35 GMT  
-		Size: 245.0 B  
+	-	`sha256:74dc71c17259b33074f903bf6cd3262562c70c8a66ab19a892a177b99badc5f8`  
+		Last Modified: Wed, 09 Dec 2020 04:38:34 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:dashing-ros1-bridge-bionic` - linux; arm variant v7
