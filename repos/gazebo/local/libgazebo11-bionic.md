@@ -108,13 +108,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=1.6.12ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.12ubuntu0.1.dsc' apt_1.6.12ubuntu0.1.dsc 2561 SHA512:39e55dff8d40ad1c1356f00b1eaff27ab6bb803fc6ea0d0669031540cac8b623e36e36a9c9b1eafc9421f828912d3874e57e58a5347f77e28f8d9d623555ea1d
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.12ubuntu0.1.tar.xz' apt_1.6.12ubuntu0.1.tar.xz 2172208 SHA512:77c3c1c26522f00ecd7549a51f92f50a58d4fc31a0b31d9f78663b79ab043a2c3be22cde9c568f41b19c1f87d03c999d36adc0a6518de8af262e12b5021c4c84
-```
 
 ### `dpkg` source package: `armadillo=1:8.400.0+dfsg-2`
 
@@ -726,14 +722,9 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.58.0-2ubuntu3.10
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.10.dsc' curl_7.58.0-2ubuntu3.10.dsc 2781 SHA512:6674bade118bb14272b82c6a0d803ebe0de0ae1530e752518e4b409a31c8448694a4551fcdcbec595d5fe0a53712ec6d5076ae0e4b4d705140fa575cdcc6e269
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0.orig.tar.gz' curl_7.58.0.orig.tar.gz 3879728 SHA512:7b12b79107558bb266672d6e128615fe5a8149c37f4ae540197e3298f5d312beb2d78fbb23e3ea84ea7afc41549898a1e5cd38509f0388b11707b48d5efb8ca3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.10.debian.tar.xz' curl_7.58.0-2ubuntu3.10.debian.tar.xz 41908 SHA512:6ec45923614cadc69045ff317270e1494687ea75fa4298df9fe0b23b3d22bf14f7ccf05edbd515cd7d8f011bce4e05faedcb6f327a030584b237a3b76752187f
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2.1`
 
@@ -2149,14 +2140,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-cmake2-dev/copyright`)
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-cmake2=2.5.0-1~bionic
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-cmake2/ignition-cmake2_2.5.0-1~bionic.dsc' ignition-cmake2_2.5.0-1~bionic.dsc 1094 SHA256:4e2ddd5c247a1e3cd5b65cf8de97c9bdcf14c93122870ab03ca999d91ac06279
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-cmake2/ignition-cmake2_2.5.0.orig.tar.bz2' ignition-cmake2_2.5.0.orig.tar.bz2 181864 SHA256:b5ea81835ea398b378edb818083f9dfc08441fadb721e37fc722d7faa9bd63b2
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-cmake2/ignition-cmake2_2.5.0-1~bionic.debian.tar.xz' ignition-cmake2_2.5.0-1~bionic.debian.tar.xz 1592 SHA256:6cfb7670bbecd908566dfefa38c3260c2254072b7b62bf936cf0fb226cf0cd78
-```
 
 ### `dpkg` source package: `ignition-common3=3.7.0-1~bionic`
 
@@ -4867,9 +4853,14 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.15.0-124.127
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-124.127.dsc' linux_4.15.0-124.127.dsc 7373 SHA512:5351d6f46f064fe44e6608d83e111ca6897cb468359b6c70c4546212c95a50e5d77389a8d056d311928b682336ceb1a44b26771466ecfe79604578803db24a0b
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA512:0fab606a295e0857f774f8adaa9d56bf2cb227fbab2daed374415da216391b156f49e606ba37ac402987c5796d408807da5d1a42c0d85a8552f109a3e279443d
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-124.127.diff.gz' linux_4.15.0-124.127.diff.gz 10283458 SHA512:f8cf766feb450eeb61ceddcfd337b8b7c45680bad4bb77c226daf094f00c3df1a2fe594a5668e8dbd8c2ad47ff5f89b2324473fbaa540b869b227ed86dac2112
+```
 
 ### `dpkg` source package: `llvm-toolchain-10=1:10.0.0-4ubuntu1~18.04.2`
 
@@ -5702,15 +5693,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1-1ubuntu2.1~18.04.6
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.6.dsc' openssl_1.1.1-1ubuntu2.1~18.04.6.dsc 2754 SHA512:c16af42e0bb9530125f52ec1af1cef1743de3bfa1e82c51bddf43780b0f6298ddd60fbb260d713df56fc97f46614b922bb04a45f7ed94fadca1f00bff6d55cae
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz' openssl_1.1.1.orig.tar.gz 8337920 SHA512:c0284a4fe84bdf765ca5bc5148da4441ffc36392cfecaf9d372af00cf93b6de5681cab1248b6f8246474532155dc205da5ad49549ad7c61c07c917145e7c9c71
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz.asc' openssl_1.1.1.orig.tar.gz.asc 488 SHA512:cc69ad07a2edc17b579018bac4683f7d48deb8cde4a0f53eb777d2546eec9be6d13a610299705f3b87a7e4e8492432260cd7efc89d124c7fe1def309bbee461f
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.6.debian.tar.xz' openssl_1.1.1-1ubuntu2.1~18.04.6.debian.tar.xz 104692 SHA512:c1945f1641cc7edc9fbf6d9a2384d2fd05442f7d1460a3d7085f90b760ff4d5578d4bd33c662effcd1b92459fee6472415672350005a784fc9eaa19b96cd2fd1
-```
 
 ### `dpkg` source package: `opus=1.1.2-1ubuntu1`
 

@@ -135,13 +135,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.0.2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.2ubuntu0.1.dsc' apt_2.0.2ubuntu0.1.dsc 2542 SHA512:e990fd2133f79395fe56e93aefa6aa6459e85f9ac71f8d64119eec3c8028ddbc80581661b9744919f1d8154f7973bbb7b1c0bfd538f3ab5872ccf168ac96e13d
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.2ubuntu0.1.tar.xz' apt_2.0.2ubuntu0.1.tar.xz 2169516 SHA512:dce019214bb737e09affe0e0ca7ff300a9d3d16aabce98fec3e5f3032d28610a3123122286b6f2b7286112ad86ff1cf5d35657085d27e9875315689375458beb
-```
 
 ### `dpkg` source package: `armadillo=1:9.800.4+dfsg-1build1`
 
@@ -913,14 +909,9 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.2.dsc' curl_7.68.0-1ubuntu2.2.dsc 2733 SHA512:19eb5cc831f04738cc18b31bd1f681af35229c90844e96b523f1f84e121d33195bff8258b085bd44bf8974f8cbaa1c88098cab0de5a00a836a9f0101f4817f98
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.2.debian.tar.xz' curl_7.68.0-1ubuntu2.2.debian.tar.xz 34624 SHA512:8b6b58e88fc54cdc1fe77ab689d82df5164a1509424ff2813eba51018ad237cd2740c6f2a27b487f959371c9cb9bd2374d21aeea2cb145f226297e731d918a00
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2`
 
@@ -2337,14 +2328,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-cmake2-dev/copyright`)
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-cmake2=2.5.0-1~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-cmake2/ignition-cmake2_2.5.0-1~focal.dsc' ignition-cmake2_2.5.0-1~focal.dsc 1090 SHA256:2bf36ec3b92431086144371cca11d85e18a973dc4d29932ba5281f83d4ed2fb0
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-cmake2/ignition-cmake2_2.5.0.orig.tar.bz2' ignition-cmake2_2.5.0.orig.tar.bz2 181864 SHA256:b5ea81835ea398b378edb818083f9dfc08441fadb721e37fc722d7faa9bd63b2
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-cmake2/ignition-cmake2_2.5.0-1~focal.debian.tar.xz' ignition-cmake2_2.5.0-1~focal.debian.tar.xz 1324 SHA256:9d90237fadc3a7d993a06435f2c310fa05173aa83888772214726f83c03948e4
-```
 
 ### `dpkg` source package: `ignition-common3=3.7.0-1~focal`
 
@@ -5278,14 +5264,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.4.0-56.62
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-56.62.dsc' linux_5.4.0-56.62.dsc 6907 SHA512:b4e1f83cdace4437e6f13994754d09b30712ccd1032dd552408c2dfdfbacaa2e5b24ce516bd222477b2546a61afc99c7d2a62e3335c9cab05c111e1c22e9aaa6
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-56.62.diff.gz' linux_5.4.0-56.62.diff.gz 5873057 SHA512:1a6aa9701b88f2bf3b9ca4cee17a9bf8dffad9d22f28fb65957d19eb52c2eea3356952c9af4f1be532b094ce8e14f1d9774e219babb36bc9add9afc7f931205a
-```
 
 ### `dpkg` source package: `llvm-toolchain-10=1:10.0.0-4ubuntu1`
 
