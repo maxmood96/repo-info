@@ -1,7 +1,7 @@
 ## `wordpress:5-php7.4-apache`
 
 ```console
-$ docker pull wordpress@sha256:cf7c7a9c9cc8614a7357dac77d401612c67af5e0ab1ab19e0777f643af3d3a3c
+$ docker pull wordpress@sha256:28b16cf04efed3215cf5b31f7ecaadb5cf96bcb24b5a1c210cbc1b55970cafce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -205,14 +205,14 @@ CMD ["apache2-foreground"]
 ### `wordpress:5-php7.4-apache` - linux; arm variant v5
 
 ```console
-$ docker pull wordpress@sha256:5539685ce9a83d18dbafafe294a77420a90584dea2e55d0d7b0f5ac30853e77d
+$ docker pull wordpress@sha256:66659c7b056678a18434e55853be05e54fc6b03268dda52299e0724cde9c9bf5
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **162.6 MB (162559679 bytes)**  
+-	Total Size: **165.0 MB (164972750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b1118539157012af92a8a99e24b03222883bb817a64d55bc7dcd7ff16e690bf`
+-	Image ID: `sha256:6e19ed16e27a5741498c4d57dd7f0e5416094e801458cc61388fce58eb3e1281`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -291,19 +291,19 @@ RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumpt
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini
 # Tue, 01 Dec 2020 05:51:46 GMT
 RUN set -eux; 	a2enmod rewrite expires; 		a2enmod remoteip; 	{ 		echo 'RemoteIPHeader X-Forwarded-For'; 		echo 'RemoteIPTrustedProxy 10.0.0.0/8'; 		echo 'RemoteIPTrustedProxy 172.16.0.0/12'; 		echo 'RemoteIPTrustedProxy 192.168.0.0/16'; 		echo 'RemoteIPTrustedProxy 169.254.0.0/16'; 		echo 'RemoteIPTrustedProxy 127.0.0.0/8'; 	} > /etc/apache2/conf-available/remoteip.conf; 	a2enconf remoteip; 	find /etc/apache2 -type f -name '*.conf' -exec sed -ri 's/([[:space:]]*LogFormat[[:space:]]+"[^"]*)%h([^"]*")/\1%a\2/g' '{}' +
-# Tue, 01 Dec 2020 05:51:46 GMT
-ENV WORDPRESS_VERSION=5.5.3
-# Tue, 01 Dec 2020 05:51:48 GMT
-ENV WORDPRESS_SHA1=61015720c679a6cbf9ad51701f0f3fedb51b3273
-# Tue, 01 Dec 2020 05:51:55 GMT
+# Thu, 10 Dec 2020 15:56:49 GMT
+ENV WORDPRESS_VERSION=5.6
+# Thu, 10 Dec 2020 15:56:51 GMT
+ENV WORDPRESS_SHA1=db8b75bfc9de27490434b365c12fd805ca6784ce
+# Thu, 10 Dec 2020 15:57:09 GMT
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
-# Tue, 01 Dec 2020 05:51:57 GMT
+# Thu, 10 Dec 2020 15:57:13 GMT
 VOLUME [/var/www/html]
-# Tue, 01 Dec 2020 05:51:58 GMT
+# Thu, 10 Dec 2020 15:57:15 GMT
 COPY file:f56966eeac957656aead5cb65d1531bfe029ddac03ee3ffefdafd2f0d4252925 in /usr/local/bin/ 
-# Tue, 01 Dec 2020 05:51:59 GMT
+# Thu, 10 Dec 2020 15:57:17 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Dec 2020 05:51:59 GMT
+# Thu, 10 Dec 2020 15:57:19 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -380,13 +380,13 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 01 Dec 2020 05:57:43 GMT  
 		Size: 19.5 KB (19480 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4513bd89aa8b9d9045ec9c80a2deb177845166ec8a2ad4d9b1eef5206ddb793`  
-		Last Modified: Tue, 01 Dec 2020 05:57:48 GMT  
-		Size: 12.9 MB (12853867 bytes)  
+	-	`sha256:443e73c57cf13db172bd790e4a230cc61d9296cb4ec959f1b876ce2f7e98d0ce`  
+		Last Modified: Thu, 10 Dec 2020 16:00:36 GMT  
+		Size: 15.3 MB (15266935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef948281cb7c0d2db2c837c6ccc33a4216b97fc195ed8e67616d969b3eb195f5`  
-		Last Modified: Tue, 01 Dec 2020 05:57:43 GMT  
-		Size: 4.1 KB (4148 bytes)  
+	-	`sha256:cd067506728c94a67d0941f7c329aa7fc39026c70997ada6423e273988811492`  
+		Last Modified: Thu, 10 Dec 2020 16:00:31 GMT  
+		Size: 4.2 KB (4151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:5-php7.4-apache` - linux; arm variant v7
@@ -766,14 +766,14 @@ CMD ["apache2-foreground"]
 ### `wordpress:5-php7.4-apache` - linux; 386
 
 ```console
-$ docker pull wordpress@sha256:8c42ed87267fb9f8d7486f1967257bd601c96bd7ec55b48ded5aab6353210ea4
+$ docker pull wordpress@sha256:96ecd9f2eb8b0b213680011d6dbf26b8cf58a5eb57870e36abe03307c8c91034
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.3 MB (191346542 bytes)**  
+-	Total Size: **193.8 MB (193759710 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:07430cdf8b160384e31f63d53253c705a1dd38b0723690880b1a0d19bc7dc21c`
+-	Image ID: `sha256:91374719d23fb1cb676c8f0f0837c736939b492b7cd77f699ba89da0d7e4fb08`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -852,19 +852,19 @@ RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumpt
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini
 # Tue, 01 Dec 2020 09:01:10 GMT
 RUN set -eux; 	a2enmod rewrite expires; 		a2enmod remoteip; 	{ 		echo 'RemoteIPHeader X-Forwarded-For'; 		echo 'RemoteIPTrustedProxy 10.0.0.0/8'; 		echo 'RemoteIPTrustedProxy 172.16.0.0/12'; 		echo 'RemoteIPTrustedProxy 192.168.0.0/16'; 		echo 'RemoteIPTrustedProxy 169.254.0.0/16'; 		echo 'RemoteIPTrustedProxy 127.0.0.0/8'; 	} > /etc/apache2/conf-available/remoteip.conf; 	a2enconf remoteip; 	find /etc/apache2 -type f -name '*.conf' -exec sed -ri 's/([[:space:]]*LogFormat[[:space:]]+"[^"]*)%h([^"]*")/\1%a\2/g' '{}' +
-# Tue, 01 Dec 2020 09:01:10 GMT
-ENV WORDPRESS_VERSION=5.5.3
-# Tue, 01 Dec 2020 09:01:10 GMT
-ENV WORDPRESS_SHA1=61015720c679a6cbf9ad51701f0f3fedb51b3273
-# Tue, 01 Dec 2020 09:01:19 GMT
+# Thu, 10 Dec 2020 15:46:27 GMT
+ENV WORDPRESS_VERSION=5.6
+# Thu, 10 Dec 2020 15:46:27 GMT
+ENV WORDPRESS_SHA1=db8b75bfc9de27490434b365c12fd805ca6784ce
+# Thu, 10 Dec 2020 15:46:32 GMT
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
-# Tue, 01 Dec 2020 09:01:19 GMT
+# Thu, 10 Dec 2020 15:46:33 GMT
 VOLUME [/var/www/html]
-# Tue, 01 Dec 2020 09:01:19 GMT
+# Thu, 10 Dec 2020 15:46:33 GMT
 COPY file:f56966eeac957656aead5cb65d1531bfe029ddac03ee3ffefdafd2f0d4252925 in /usr/local/bin/ 
-# Tue, 01 Dec 2020 09:01:20 GMT
+# Thu, 10 Dec 2020 15:46:33 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Dec 2020 09:01:20 GMT
+# Thu, 10 Dec 2020 15:46:33 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -941,26 +941,26 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 01 Dec 2020 09:09:40 GMT  
 		Size: 19.5 KB (19478 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a778331531e72a24eb674b4af99e86214619b885f1ce335238f025079e4578b`  
-		Last Modified: Tue, 01 Dec 2020 09:09:47 GMT  
-		Size: 12.9 MB (12853741 bytes)  
+	-	`sha256:23fa7661e5bd751164b763a5def3612f4572d4e54013bbefd79e70ac6c45fa4b`  
+		Last Modified: Thu, 10 Dec 2020 15:49:12 GMT  
+		Size: 15.3 MB (15266910 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e05a6cc894fedfb8de6f059df770d379d7af416c148e255e2fedd0e82ca2422`  
-		Last Modified: Tue, 01 Dec 2020 09:09:41 GMT  
-		Size: 4.2 KB (4152 bytes)  
+	-	`sha256:3266c05a92f7d69a0ebc6f28644a4c6854639990c269d57f269c8c405ca3d1b0`  
+		Last Modified: Thu, 10 Dec 2020 15:49:07 GMT  
+		Size: 4.2 KB (4151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:5-php7.4-apache` - linux; mips64le
 
 ```console
-$ docker pull wordpress@sha256:281be4bc81743fdef5bda08943a18db925c3c9f45284440f53af1b3f1d8dc281
+$ docker pull wordpress@sha256:382711c2eb894df387ba89057df3a7469da8bed2c54f27de23453ef4dfe87000
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **166.7 MB (166712634 bytes)**  
+-	Total Size: **169.1 MB (169125780 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:17b42a092e429efa14cb804860df0f9c29bd1cccc8aebc60697471caef592ca9`
+-	Image ID: `sha256:9e4fb02180f002f394f9f52325046bc0a63003d909a4021af4638a1260789ee0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1039,19 +1039,19 @@ RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumpt
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini
 # Tue, 01 Dec 2020 07:52:32 GMT
 RUN set -eux; 	a2enmod rewrite expires; 		a2enmod remoteip; 	{ 		echo 'RemoteIPHeader X-Forwarded-For'; 		echo 'RemoteIPTrustedProxy 10.0.0.0/8'; 		echo 'RemoteIPTrustedProxy 172.16.0.0/12'; 		echo 'RemoteIPTrustedProxy 192.168.0.0/16'; 		echo 'RemoteIPTrustedProxy 169.254.0.0/16'; 		echo 'RemoteIPTrustedProxy 127.0.0.0/8'; 	} > /etc/apache2/conf-available/remoteip.conf; 	a2enconf remoteip; 	find /etc/apache2 -type f -name '*.conf' -exec sed -ri 's/([[:space:]]*LogFormat[[:space:]]+"[^"]*)%h([^"]*")/\1%a\2/g' '{}' +
-# Tue, 01 Dec 2020 07:52:32 GMT
-ENV WORDPRESS_VERSION=5.5.3
-# Tue, 01 Dec 2020 07:52:32 GMT
-ENV WORDPRESS_SHA1=61015720c679a6cbf9ad51701f0f3fedb51b3273
-# Tue, 01 Dec 2020 07:52:42 GMT
+# Thu, 10 Dec 2020 16:12:16 GMT
+ENV WORDPRESS_VERSION=5.6
+# Thu, 10 Dec 2020 16:12:17 GMT
+ENV WORDPRESS_SHA1=db8b75bfc9de27490434b365c12fd805ca6784ce
+# Thu, 10 Dec 2020 16:12:37 GMT
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
-# Tue, 01 Dec 2020 07:52:43 GMT
+# Thu, 10 Dec 2020 16:12:37 GMT
 VOLUME [/var/www/html]
-# Tue, 01 Dec 2020 07:52:43 GMT
+# Thu, 10 Dec 2020 16:12:38 GMT
 COPY file:f56966eeac957656aead5cb65d1531bfe029ddac03ee3ffefdafd2f0d4252925 in /usr/local/bin/ 
-# Tue, 01 Dec 2020 07:52:43 GMT
+# Thu, 10 Dec 2020 16:12:38 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Dec 2020 07:52:44 GMT
+# Thu, 10 Dec 2020 16:12:38 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1128,13 +1128,13 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 01 Dec 2020 07:58:53 GMT  
 		Size: 19.5 KB (19478 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da0840758ccd217e988ff1083e4eae14cd21d56c9cdda4b9d16af25ad3ed3631`  
-		Last Modified: Tue, 01 Dec 2020 07:59:05 GMT  
-		Size: 12.9 MB (12853758 bytes)  
+	-	`sha256:32ae33ca26a60235339cc53ab77413bbc6f6c338b52a6fcd50c71106d0c4a812`  
+		Last Modified: Thu, 10 Dec 2020 16:15:15 GMT  
+		Size: 15.3 MB (15266906 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b3acdfb2b2fe843968054a67fe90f1b7a5bc887bb6fc99e188e9f8df7dd87d6`  
-		Last Modified: Tue, 01 Dec 2020 07:58:52 GMT  
-		Size: 4.2 KB (4152 bytes)  
+	-	`sha256:a9b2bef3cb8ef8b2f8d640a8b8cfcd053f612b3ccc36f2c34191f644815b2a76`  
+		Last Modified: Thu, 10 Dec 2020 16:15:04 GMT  
+		Size: 4.2 KB (4150 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:5-php7.4-apache` - linux; ppc64le
