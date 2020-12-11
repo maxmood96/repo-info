@@ -209,13 +209,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.0.2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.2ubuntu0.1.dsc' apt_2.0.2ubuntu0.1.dsc 2542 SHA512:e990fd2133f79395fe56e93aefa6aa6459e85f9ac71f8d64119eec3c8028ddbc80581661b9744919f1d8154f7973bbb7b1c0bfd538f3ab5872ccf168ac96e13d
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.2ubuntu0.1.tar.xz' apt_2.0.2ubuntu0.1.tar.xz 2169516 SHA512:dce019214bb737e09affe0e0ca7ff300a9d3d16aabce98fec3e5f3032d28610a3123122286b6f2b7286112ad86ff1cf5d35657085d27e9875315689375458beb
-```
 
 ### `dpkg` source package: `argon2=0~20171227-0.2`
 
@@ -1133,14 +1129,9 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.2.dsc' curl_7.68.0-1ubuntu2.2.dsc 2733 SHA512:19eb5cc831f04738cc18b31bd1f681af35229c90844e96b523f1f84e121d33195bff8258b085bd44bf8974f8cbaa1c88098cab0de5a00a836a9f0101f4817f98
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.2.debian.tar.xz' curl_7.68.0-1ubuntu2.2.debian.tar.xz 34624 SHA512:8b6b58e88fc54cdc1fe77ab689d82df5164a1509424ff2813eba51018ad237cd2740c6f2a27b487f959371c9cb9bd2374d21aeea2cb145f226297e731d918a00
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2`
 
@@ -4447,14 +4438,9 @@ Licenses: (parsed from: `/usr/share/doc/librsvg2-2/copyright`, `/usr/share/doc/l
 - `Sun-permissive`
 - `Unlicense`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.48.7-1ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.48.7-1ubuntu0.20.04.1.dsc' librsvg_2.48.7-1ubuntu0.20.04.1.dsc 2334 SHA512:316e871829652eb5a51349d9d4c8ae2c692c86e86a921f2fb3575f419fccd3d14ba96c81693fcee1fcfacf0999bb861962d17d095fd467aca078f0a2bd3306c0
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.48.7.orig.tar.xz' librsvg_2.48.7.orig.tar.xz 15097208 SHA512:18e7a3cecd8acd3beee3a5d1e6a709331ce04d8b214bd53cf44da2d6574b0c3ef78b8d38f21789c3585d89faaea322ed4cf181b9331038352045e93a67b276da
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.48.7-1ubuntu0.20.04.1.debian.tar.xz' librsvg_2.48.7-1ubuntu0.20.04.1.debian.tar.xz 24204 SHA512:41f3e6dcdec6010071c56111b04f2ed7ae14ed1e3e033dc753df597077706a7ff7c886ea73a16378d6e90a4c78af7b1fff93f0f7d8768b7c8d8232b454f9a7e6
-```
 
 ### `dpkg` source package: `libseccomp=2.4.3-1ubuntu3.20.04.3`
 
@@ -5543,9 +5529,14 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.4.0-54.60
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-54.60.dsc' linux_5.4.0-54.60.dsc 7220 SHA512:af2ff6ce8c91b773dcd80cdfaaf0eb4ed7a6c22ad744cbfe0aae3e0ffe58fbd9447671541abb3bf72e27c8d1ec24589432a5bf3732d6d4366a0c4810a8c33502
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-54.60.diff.gz' linux_5.4.0-54.60.diff.gz 5474703 SHA512:5b89beb0763ce230c6a3d99adca7027a251544802b3e4e829a937727e9a7e3fe1cb464df530323ad34fb1197f1be9df72581e22f4e5e3ddd56f05829a33b458a
+```
 
 ### `dpkg` source package: `lksctp-tools=1.0.18+dfsg-1`
 
