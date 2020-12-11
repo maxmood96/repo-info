@@ -1,7 +1,7 @@
 ## `nats-streaming:alpine`
 
 ```console
-$ docker pull nats-streaming@sha256:c0bb39e0c4cbbc028cc6df0d7fb6d3e09fecfe2145352e3504c4cdfbead1b48c
+$ docker pull nats-streaming@sha256:5fb0383ced04d7e84dab475fe685f876705d419729f9469257026af6790b8f8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -61,47 +61,47 @@ CMD ["nats-streaming-server" "-m" "8222"]
 ### `nats-streaming:alpine` - linux; arm variant v6
 
 ```console
-$ docker pull nats-streaming@sha256:2a58d6644e94cc17212ec6a604029ebe9f855ceeee7fa66171bdc8aa6c7113ba
+$ docker pull nats-streaming@sha256:07e9ec26924214dd8e4f366251511fabc890e1b8ba37f1d74506c8a33c1cbc52
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.9 MB (8932203 bytes)**  
+-	Total Size: **8.9 MB (8932325 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b8391afd58a04ec8cf1ab166357c9495c5aa4d32bc4bb4472e577874f42fe55d`
+-	Image ID: `sha256:3e6452416db7c1a60264a9c4d3b3f02c447ea078e951c14ee2b5d15db3523628`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-streaming-server","-m","8222"]`
 
 ```dockerfile
-# Thu, 22 Oct 2020 02:01:09 GMT
-ADD file:dec4d3b6cf21c59820d1d74a554d0a193b5f4859e00b932f31ffe73f554d5afb in / 
-# Thu, 22 Oct 2020 02:01:12 GMT
+# Fri, 11 Dec 2020 02:17:15 GMT
+ADD file:1a9c0a67560d338c0c0e7005d8915d998fc9cf3e9f53bfd7e42e8391f0a39bce in / 
+# Fri, 11 Dec 2020 02:17:15 GMT
 CMD ["/bin/sh"]
-# Mon, 02 Nov 2020 23:56:13 GMT
+# Fri, 11 Dec 2020 05:14:15 GMT
 ENV NATS_STREAMING_SERVER=0.19.0
-# Mon, 02 Nov 2020 23:56:17 GMT
+# Fri, 11 Dec 2020 05:14:22 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		aarch64) natsArch='arm64'; sha256='d582023b8f9fe33b98f0faa6396aae8d5366ecade7e56cde912e21e5b93ea670' ;; 		armhf) natsArch='arm6'; sha256='f4af03e6cbb19f3ad9ea57217607dcf4b68018e1879859c847e2680917fc7139' ;; 		armv7) natsArch='arm7'; sha256='ec8c5ca693344e8b24de9ac955c38de757af8c5760658fc29ed2fbd804803fad' ;; 		x86_64) natsArch='amd64'; sha256='fc15530faec66b61de5140c2b99927c5839caff1c4c17f8bffbf4432fab83017' ;; 		x86) natsArch='386'; sha256='655f0f7cebf727317974006ad4a13ddacd3520f15266e854c2b01681e499bf80' ;; 		*) echo >&2 "error: $apkArch is not supported!"; exit 1 ;; 	esac; 		wget -O nats-streaming-server.zip "https://github.com/nats-io/nats-streaming-server/releases/download/v${NATS_STREAMING_SERVER}/nats-streaming-server-v${NATS_STREAMING_SERVER}-linux-${natsArch}.zip"; 	echo "${sha256} *nats-streaming-server.zip" | sha256sum -c -; 		apk add --no-cache ca-certificates; 	apk add --no-cache --virtual buildtmp unzip; 		unzip nats-streaming-server.zip "nats-streaming-server-v${NATS_STREAMING_SERVER}-linux-${natsArch}/nats-streaming-server"; 	rm nats-streaming-server.zip; 	mv "nats-streaming-server-v${NATS_STREAMING_SERVER}-linux-${natsArch}/nats-streaming-server" /usr/local/bin; 	rmdir "nats-streaming-server-v${NATS_STREAMING_SERVER}-linux-${natsArch}"; 		apk del --no-cache --no-network buildtmp
-# Mon, 02 Nov 2020 23:56:17 GMT
+# Fri, 11 Dec 2020 05:14:24 GMT
 COPY file:528000310df8681fb95f43d3bcf7c8086cd514c78673b1aadb984b1db3331559 in /usr/local/bin 
-# Mon, 02 Nov 2020 23:56:18 GMT
+# Fri, 11 Dec 2020 05:14:26 GMT
 EXPOSE 4222 8222
-# Mon, 02 Nov 2020 23:56:18 GMT
+# Fri, 11 Dec 2020 05:14:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 02 Nov 2020 23:56:19 GMT
+# Fri, 11 Dec 2020 05:14:29 GMT
 CMD ["nats-streaming-server" "-m" "8222"]
 ```
 
 -	Layers:
-	-	`sha256:bad30e7b45c14f784ef29a828b5fc69db0ebdefebcde6a7c98f4f77ffc93a546`  
-		Last Modified: Thu, 22 Oct 2020 02:01:42 GMT  
-		Size: 2.6 MB (2601912 bytes)  
+	-	`sha256:f1c16df8fee33d421d08790b17ca2af67a3fe49e77b6b991dd0c30631f5d1baf`  
+		Last Modified: Fri, 11 Dec 2020 02:17:57 GMT  
+		Size: 2.6 MB (2601992 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21cba1ed5b5094a02c017d654b758674905ec0bb2535d3311fcdd61dce32b319`  
-		Last Modified: Mon, 02 Nov 2020 23:56:50 GMT  
-		Size: 6.3 MB (6329871 bytes)  
+	-	`sha256:f4775bb5a9ac47d892be5e5ebaea16d93247d5034bea3b043f273ccbf55bd2bd`  
+		Last Modified: Fri, 11 Dec 2020 05:15:10 GMT  
+		Size: 6.3 MB (6329913 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3992f15ff4c1a7660c4a81854ec33d3e4973405c7095ceb0bd8a7865fff21c9f`  
-		Last Modified: Mon, 02 Nov 2020 23:56:47 GMT  
+	-	`sha256:c5f67a2f92965ea4e5871579ec878bd4d416b1352fc0b7f421a0a8fc30a9115d`  
+		Last Modified: Fri, 11 Dec 2020 05:15:06 GMT  
 		Size: 420.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
