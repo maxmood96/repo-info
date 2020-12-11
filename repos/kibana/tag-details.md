@@ -3,7 +3,7 @@
 # Tags of `kibana`
 
 -	[`kibana:6.8.13`](#kibana6813)
--	[`kibana:7.9.3`](#kibana793)
+-	[`kibana:7.10.1`](#kibana7101)
 
 ## `kibana:6.8.13`
 
@@ -99,119 +99,6 @@ CMD ["/usr/local/bin/kibana-docker"]
 		Size: 1.8 KB (1817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `kibana:7.9.3`
+## `kibana:7.10.1`
 
-```console
-$ docker pull kibana@sha256:81638b717f8901debd331df46da38e7775f2685d81c1ed5e92e25bc17d370f4d
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
-	-	linux; amd64
-
-### `kibana:7.9.3` - linux; amd64
-
-```console
-$ docker pull kibana@sha256:c87ba6ea6d00621f75a53ad975d462ed2e6e0a9a44722ed1b25c7afd012931ad
-```
-
--	Docker Version: 19.03.12
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **386.3 MB (386294177 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f9f7fac59a107f6c9db40ef0385f101fd2afe5f18f71b5346e1218f73649f4c1`
--	Entrypoint: `["\/usr\/local\/bin\/dumb-init","--"]`
--	Default Command: `["\/usr\/local\/bin\/kibana-docker"]`
-
-```dockerfile
-# Mon, 10 Aug 2020 18:20:08 GMT
-ADD file:61908381d3142ffba798ae9a904476d19b197ab79d0338f14bec0f76649df8d4 in / 
-# Mon, 10 Aug 2020 18:20:09 GMT
-LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20200809 org.opencontainers.image.title=CentOS Base Image org.opencontainers.image.vendor=CentOS org.opencontainers.image.licenses=GPL-2.0-only org.opencontainers.image.created=2020-08-09 00:00:00+01:00
-# Mon, 10 Aug 2020 18:20:09 GMT
-CMD ["/bin/bash"]
-# Fri, 16 Oct 2020 11:40:36 GMT
-EXPOSE 5601
-# Fri, 16 Oct 2020 11:40:55 GMT
-RUN yum update -y && yum install -y fontconfig freetype shadow-utils && yum clean all
-# Fri, 16 Oct 2020 11:40:57 GMT
-RUN curl -L -o /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.2.2/dumb-init_1.2.2_amd64
-# Fri, 16 Oct 2020 11:40:58 GMT
-RUN echo "37f2c1f0372a45554f1b89924fbb134fc24c3756efaedf11e07f599494e0eff9  /usr/local/bin/dumb-init" | sha256sum -c -
-# Fri, 16 Oct 2020 11:40:58 GMT
-RUN chmod +x /usr/local/bin/dumb-init
-# Fri, 16 Oct 2020 11:41:40 GMT
-COPY --chown=1000:0dir:fb7cb30eea6af2cb7e07b8c1d111151b323bff96e0e595092bab12f7980153fb in /usr/share/kibana 
-# Fri, 16 Oct 2020 11:41:41 GMT
-WORKDIR /usr/share/kibana
-# Fri, 16 Oct 2020 11:41:42 GMT
-RUN ln -s /usr/share/kibana /opt/kibana
-# Fri, 16 Oct 2020 11:41:42 GMT
-ENV ELASTIC_CONTAINER=true
-# Fri, 16 Oct 2020 11:41:43 GMT
-ENV PATH=/usr/share/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 16 Oct 2020 11:41:43 GMT
-COPY --chown=1000:0file:ea1f294356f14dfc1a50e3303613e69f187589962058569d5b3282460d7f28cb in /usr/share/kibana/config/kibana.yml 
-# Fri, 16 Oct 2020 11:41:43 GMT
-COPY --chown=1000:0file:650435eab6708f0b228ab90c7a5cfeead8542265b0018795f8ff9a07fc6b4f4d in /usr/local/bin/ 
-# Fri, 16 Oct 2020 11:41:44 GMT
-RUN chmod g+ws /usr/share/kibana && find /usr/share/kibana -gid 0 -and -not -perm /g+w -exec chmod g+w {} \;
-# Fri, 16 Oct 2020 11:41:46 GMT
-RUN find / -xdev -perm -4000 -exec chmod u-s {} +
-# Fri, 16 Oct 2020 11:41:47 GMT
-RUN groupadd --gid 1000 kibana && useradd --uid 1000 --gid 1000 --home-dir /usr/share/kibana --no-create-home kibana
-# Fri, 16 Oct 2020 11:41:47 GMT
-USER kibana
-# Fri, 16 Oct 2020 11:41:48 GMT
-LABEL org.label-schema.schema-version=1.0 org.label-schema.vendor=Elastic org.label-schema.name=kibana org.label-schema.version=7.9.3 org.label-schema.url=https://www.elastic.co/products/kibana org.label-schema.vcs-url=https://github.com/elastic/kibana org.label-schema.license=Elastic License org.label-schema.usage=https://www.elastic.co/guide/en/kibana/index.html org.label-schema.build-date=2020-10-16T11:38:18.955Z license=Elastic License
-# Fri, 16 Oct 2020 11:41:48 GMT
-ENTRYPOINT ["/usr/local/bin/dumb-init" "--"]
-# Fri, 16 Oct 2020 11:41:48 GMT
-CMD ["/usr/local/bin/kibana-docker"]
-```
-
--	Layers:
-	-	`sha256:75f829a71a1c5277a7abf55495ac8d16759691d980bf1d931795e5eb68a294c0`  
-		Last Modified: Mon, 10 Aug 2020 18:21:46 GMT  
-		Size: 75.9 MB (75863188 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27675ba9d981bc9a55ae8d1bec40ca2fd1fa105241c1ed3b254f1040e8b438d6`  
-		Last Modified: Thu, 22 Oct 2020 14:04:24 GMT  
-		Size: 10.0 MB (9980249 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dce5d1796f35e771c9e48f067cd4c48c67192b7be5a5ea893da3505948d840ab`  
-		Last Modified: Thu, 22 Oct 2020 14:04:20 GMT  
-		Size: 31.7 KB (31680 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9f272a0e2df87fab3ef8dac7b7e00c7f893134840c4af7e9fc4d42a007d74aa`  
-		Last Modified: Thu, 22 Oct 2020 14:04:19 GMT  
-		Size: 30.2 KB (30192 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:838399eee2bef079e50ffe027dfb519c6c035a12dfbb53eb36f442fcb0af0b3c`  
-		Last Modified: Thu, 22 Oct 2020 14:04:51 GMT  
-		Size: 300.2 MB (300182725 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e5a440a6c4abbd4cccc0696b6fa3d947240e0fdb2bfe4fb7e012676f883a25e`  
-		Last Modified: Thu, 22 Oct 2020 14:04:15 GMT  
-		Size: 133.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38f6fac0ff654e4ad2db65954cd9597e68aa1f129846f19e623fab8454b07e78`  
-		Last Modified: Thu, 22 Oct 2020 14:04:14 GMT  
-		Size: 382.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6bc7164808f0c5673e6b9bf245473dd79200331e7abcdf82bc6b6ab073749684`  
-		Last Modified: Thu, 22 Oct 2020 14:04:12 GMT  
-		Size: 3.1 KB (3054 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db227852f150bb96ba56dfce9f4ce46728b9521133c37b54f304095699e0630a`  
-		Last Modified: Thu, 22 Oct 2020 14:04:10 GMT  
-		Size: 148.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55e74ce8834c07cf9b93dd188deda9c1a4aa5b1a71230a31887fc76c56d2d664`  
-		Last Modified: Thu, 22 Oct 2020 14:04:10 GMT  
-		Size: 200.6 KB (200610 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46d008667a80cdcc3ef3fef3bc2287d17f16fcebede7f46dc5599db71eb1704b`  
-		Last Modified: Thu, 22 Oct 2020 14:04:07 GMT  
-		Size: 1.8 KB (1816 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+**does not exist** (yet?)
