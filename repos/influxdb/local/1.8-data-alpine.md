@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bd86d6b75a3b1cbe226e141409b8e3eee099a1cb8579a0d0ba4671e7d5d2f9e2`
-- Created: `2020-10-22T04:30:17.734622774Z`
-- Virtual Size: ~ 185.92 Mb  
+- Image ID: `sha256:8053ef724bc76312772b2a367cd762f35b7506765322fd97f1c58cd55b5f7ccc`
+- Created: `2020-12-11T05:59:16.458654159Z`
+- Virtual Size: ~ 186.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -205,16 +205,16 @@ ISC
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.24-r9 description:
+musl-1.1.24-r10 description:
 the musl c library (libc) implementation
 
-musl-1.1.24-r9 webpage:
+musl-1.1.24-r10 webpage:
 https://musl.libc.org/
 
-musl-1.1.24-r9 installed size:
+musl-1.1.24-r10 installed size:
 614400
 
-musl-1.1.24-r9 license:
+musl-1.1.24-r10 license:
 MIT
 
 ```
@@ -222,16 +222,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.24-r9 description:
+musl-utils-1.1.24-r10 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.24-r9 webpage:
+musl-utils-1.1.24-r10 webpage:
 https://musl.libc.org/
 
-musl-utils-1.1.24-r9 installed size:
+musl-utils-1.1.24-r10 installed size:
 151552
 
-musl-utils-1.1.24-r9 license:
+musl-utils-1.1.24-r10 license:
 MIT BSD GPL2+
 
 ```
@@ -324,16 +324,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2020c-r0 description:
+tzdata-2020c-r1 description:
 Timezone data
 
-tzdata-2020c-r0 webpage:
+tzdata-2020c-r1 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2020c-r0 installed size:
+tzdata-2020c-r1 installed size:
 3526656
 
-tzdata-2020c-r0 license:
+tzdata-2020c-r1 license:
 Public-Domain
 
 ```
