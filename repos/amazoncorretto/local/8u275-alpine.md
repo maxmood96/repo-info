@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fe0fcf1cb6749439c05f67b1e907407141175ae215e9948fbe0d44fda8b52314`
-- Created: `2020-11-07T00:20:36.439155931Z`
+- Image ID: `sha256:fce0c7480c7ca8176cc27651032454e72bbb7763d8510eae34626314953046bc`
+- Created: `2020-12-11T02:47:28.763526292Z`
 - Virtual Size: ~ 201.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -222,16 +222,16 @@ ISC
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.24-r9 description:
+musl-1.1.24-r10 description:
 the musl c library (libc) implementation
 
-musl-1.1.24-r9 webpage:
+musl-1.1.24-r10 webpage:
 https://musl.libc.org/
 
-musl-1.1.24-r9 installed size:
+musl-1.1.24-r10 installed size:
 614400
 
-musl-1.1.24-r9 license:
+musl-1.1.24-r10 license:
 MIT
 
 ```
@@ -239,16 +239,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.24-r9 description:
+musl-utils-1.1.24-r10 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.24-r9 webpage:
+musl-utils-1.1.24-r10 webpage:
 https://musl.libc.org/
 
-musl-utils-1.1.24-r9 installed size:
+musl-utils-1.1.24-r10 installed size:
 151552
 
-musl-utils-1.1.24-r9 license:
+musl-utils-1.1.24-r10 license:
 MIT BSD GPL2+
 
 ```
