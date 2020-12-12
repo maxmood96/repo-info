@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d895e4e4d33eb06b080ec7eb0a5506a59a02a3dfe5bfbabd7298131fa8147079`
-- Created: `2020-12-07T19:26:48.523672337Z`
-- Virtual Size: ~ 236.87 Mb  
+- Image ID: `sha256:40b94c69f1fcaf63c16c905e3461c3475a8aacabace222442d3ce51bd32ccc89`
+- Created: `2020-12-11T23:38:39.373139166Z`
+- Virtual Size: ~ 239.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -166,16 +166,16 @@ MPL-2.0 GPL-2.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-7.69.1-r1 description:
+curl-7.69.1-r2 description:
 URL retrival utility and library
 
-curl-7.69.1-r1 webpage:
+curl-7.69.1-r2 webpage:
 https://curl.haxx.se/
 
-curl-7.69.1-r1 installed size:
+curl-7.69.1-r2 installed size:
 229376
 
-curl-7.69.1-r1 license:
+curl-7.69.1-r2 license:
 MIT
 
 ```
@@ -404,16 +404,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1g-r0 description:
+libcrypto1.1-1.1.1i-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1g-r0 webpage:
+libcrypto1.1-1.1.1i-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1g-r0 installed size:
-2760704
+libcrypto1.1-1.1.1i-r0 installed size:
+2764800
 
-libcrypto1.1-1.1.1g-r0 license:
+libcrypto1.1-1.1.1i-r0 license:
 OpenSSL
 
 ```
@@ -421,16 +421,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.69.1-r1 description:
+libcurl-7.69.1-r2 description:
 The multiprotocol file transfer library
 
-libcurl-7.69.1-r1 webpage:
+libcurl-7.69.1-r2 webpage:
 https://curl.haxx.se/
 
-libcurl-7.69.1-r1 installed size:
+libcurl-7.69.1-r2 installed size:
 458752
 
-libcurl-7.69.1-r1 license:
+libcurl-7.69.1-r2 license:
 MIT
 
 ```
@@ -523,16 +523,16 @@ BSD-3-Clause IJG Zlib
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.4.50-r0 description:
+libldap-2.4.50-r1 description:
 OpenLDAP libraries
 
-libldap-2.4.50-r0 webpage:
+libldap-2.4.50-r1 webpage:
 https://www.openldap.org
 
-libldap-2.4.50-r0 installed size:
+libldap-2.4.50-r1 installed size:
 626688
 
-libldap-2.4.50-r0 license:
+libldap-2.4.50-r1 license:
 custom
 
 ```
@@ -625,16 +625,16 @@ ISC
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1g-r0 description:
+libssl1.1-1.1.1i-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1g-r0 webpage:
+libssl1.1-1.1.1i-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1g-r0 installed size:
+libssl1.1-1.1.1i-r0 installed size:
 540672
 
-libssl1.1-1.1.1g-r0 license:
+libssl1.1-1.1.1i-r0 license:
 OpenSSL
 
 ```
@@ -897,16 +897,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.24-r9 description:
+musl-utils-1.1.24-r10 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.24-r9 webpage:
+musl-utils-1.1.24-r10 webpage:
 https://musl.libc.org/
 
-musl-utils-1.1.24-r9 installed size:
+musl-utils-1.1.24-r10 installed size:
 151552
 
-musl-utils-1.1.24-r9 license:
+musl-utils-1.1.24-r10 license:
 MIT BSD GPL2+
 
 ```
