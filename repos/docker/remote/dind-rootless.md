@@ -1,7 +1,7 @@
 ## `docker:dind-rootless`
 
 ```console
-$ docker pull docker@sha256:53e4c1ec262c4a6e14ce863b72b23aa21c33c1c2a5b9d9417989096c80260f8a
+$ docker pull docker@sha256:2f47b4d6e394e4f9f5160eb36c286aebf11584bf1da816cf1b297c2f195b1b09
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull docker@sha256:53e4c1ec262c4a6e14ce863b72b23aa21c33c1c2a5b9d9417989
 ### `docker:dind-rootless` - linux; amd64
 
 ```console
-$ docker pull docker@sha256:6921c855c141f3c87dd9736b3783aaead17b83c564a1afae678afe546c555f82
+$ docker pull docker@sha256:1c26d3c47a014d94cfaabd027a80746b07758426a660ead0633e0131996cc883
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **101.5 MB (101524776 bytes)**  
+-	Total Size: **101.6 MB (101563895 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ecd272bd50bff353249e99ef1c016e4465c8cd75b28f749659b6ca4af12b81d5`
+-	Image ID: `sha256:1b999295ebf616fc73703872721abef4cfbf1879dd0856a6f6d3b978467bc34d`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
@@ -47,37 +47,37 @@ RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
 ENTRYPOINT ["docker-entrypoint.sh"]
 # Fri, 11 Dec 2020 05:29:42 GMT
 CMD ["sh"]
-# Fri, 11 Dec 2020 05:29:49 GMT
-RUN set -eux; 	apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		iptables 		openssl 		shadow-uidmap 		xfsprogs 		xz 		pigz 	; 	if zfs="$(apk info --no-cache --quiet zfs)" && [ -n "$zfs" ]; then 		apk add --no-cache zfs; 	fi
-# Fri, 11 Dec 2020 05:29:50 GMT
+# Sat, 12 Dec 2020 18:12:30 GMT
+RUN set -eux; 	apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		ip6tables 		iptables 		openssl 		shadow-uidmap 		xfsprogs 		xz 		pigz 	; 	if zfs="$(apk info --no-cache --quiet zfs)" && [ -n "$zfs" ]; then 		apk add --no-cache zfs; 	fi
+# Sat, 12 Dec 2020 18:12:31 GMT
 RUN set -eux; 	addgroup -S dockremap; 	adduser -S -G dockremap dockremap; 	echo 'dockremap:165536:65536' >> /etc/subuid; 	echo 'dockremap:165536:65536' >> /etc/subgid
-# Fri, 11 Dec 2020 05:29:50 GMT
+# Sat, 12 Dec 2020 18:12:31 GMT
 ENV DIND_COMMIT=ed89041433a031cafc0a0f19cfe573c31688d377
-# Fri, 11 Dec 2020 05:29:51 GMT
+# Sat, 12 Dec 2020 18:12:32 GMT
 RUN set -eux; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind
-# Fri, 11 Dec 2020 05:29:51 GMT
+# Sat, 12 Dec 2020 18:12:32 GMT
 COPY file:ba8ee8770c54e5ecc99314148f702a73a1c00c3ef0cc27ff33581d2dbab7456e in /usr/local/bin/ 
-# Fri, 11 Dec 2020 05:29:52 GMT
+# Sat, 12 Dec 2020 18:12:33 GMT
 VOLUME [/var/lib/docker]
-# Fri, 11 Dec 2020 05:29:52 GMT
+# Sat, 12 Dec 2020 18:12:33 GMT
 EXPOSE 2375 2376
-# Fri, 11 Dec 2020 05:29:52 GMT
+# Sat, 12 Dec 2020 18:12:33 GMT
 ENTRYPOINT ["dockerd-entrypoint.sh"]
-# Fri, 11 Dec 2020 05:29:52 GMT
+# Sat, 12 Dec 2020 18:12:33 GMT
 CMD []
-# Fri, 11 Dec 2020 05:30:00 GMT
+# Sat, 12 Dec 2020 18:12:39 GMT
 RUN apk add --no-cache iproute2
-# Fri, 11 Dec 2020 05:30:02 GMT
+# Sat, 12 Dec 2020 18:12:40 GMT
 RUN mkdir /run/user && chmod 1777 /run/user
-# Fri, 11 Dec 2020 05:30:03 GMT
+# Sat, 12 Dec 2020 18:12:41 GMT
 RUN set -eux; 	adduser -h /home/rootless -g 'Rootless' -D -u 1000 rootless; 	echo 'rootless:100000:65536' >> /etc/subuid; 	echo 'rootless:100000:65536' >> /etc/subgid
-# Fri, 11 Dec 2020 05:30:07 GMT
+# Sat, 12 Dec 2020 18:12:43 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-rootless-extras-20.10.0.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O rootless.tgz "$url"; 		tar --extract 		--file rootless.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		'docker-rootless-extras/rootlesskit' 		'docker-rootless-extras/rootlesskit-docker-proxy' 		'docker-rootless-extras/vpnkit' 	; 	rm rootless.tgz; 		rootlesskit --version; 	vpnkit --version
-# Fri, 11 Dec 2020 05:30:09 GMT
+# Sat, 12 Dec 2020 18:12:44 GMT
 RUN set -eux; 	mkdir -p /home/rootless/.local/share/docker; 	chown -R rootless:rootless /home/rootless/.local/share/docker
-# Fri, 11 Dec 2020 05:30:10 GMT
+# Sat, 12 Dec 2020 18:12:44 GMT
 VOLUME [/home/rootless/.local/share/docker]
-# Fri, 11 Dec 2020 05:30:10 GMT
+# Sat, 12 Dec 2020 18:12:44 GMT
 USER rootless
 ```
 
@@ -110,39 +110,39 @@ USER rootless
 		Last Modified: Fri, 11 Dec 2020 05:31:31 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:705044911461d972356a560402ae7212ac5b9e0cf5650c9e90e82c0168e363f4`  
-		Last Modified: Fri, 11 Dec 2020 05:31:55 GMT  
-		Size: 6.0 MB (5958710 bytes)  
+	-	`sha256:d74c897205648b865ec45efcc0c0be8a3ccf9f3f3f60cc1383d5564c72302e20`  
+		Last Modified: Sat, 12 Dec 2020 18:13:33 GMT  
+		Size: 6.0 MB (5997645 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ca03bf2650888a6dd094e66dc51a4c7e9cf6e2d540eb0e6ee60447b670644cb`  
-		Last Modified: Fri, 11 Dec 2020 05:31:54 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:1aa8e83a7aeb20771ef165f19449f2733ae1aee4c6efe28b6b2e4109ef65baa8`  
+		Last Modified: Sat, 12 Dec 2020 18:13:33 GMT  
+		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f30abe54315eba4800bca902658bb857afd12015cb658e13874c43042c93400`  
-		Last Modified: Fri, 11 Dec 2020 05:31:53 GMT  
-		Size: 928.0 B  
+	-	`sha256:c5b1eb2027ff8834916826431c1bdd26901ee758dfb9877c38275a4e62239295`  
+		Last Modified: Sat, 12 Dec 2020 18:13:32 GMT  
+		Size: 933.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc682ce81f04b09d573611856b1c36f71a3da08529300ee33214d7d31432df2b`  
-		Last Modified: Fri, 11 Dec 2020 05:31:53 GMT  
-		Size: 2.5 KB (2507 bytes)  
+	-	`sha256:c36cacd847e245cd8b2f813f5cba87f6b5fff177d7845e4cb1b290d27466ebe6`  
+		Last Modified: Sat, 12 Dec 2020 18:13:32 GMT  
+		Size: 2.5 KB (2513 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f3bb12715694c8d4d06340e7dee1e3254c8e3b7b70a93186d608231e3d078e2`  
-		Last Modified: Fri, 11 Dec 2020 05:32:04 GMT  
-		Size: 1.1 MB (1092673 bytes)  
+	-	`sha256:09f5711cd4996f3deeaaad8bd8359abc05d090ed218ce3d4d126907d533fa135`  
+		Last Modified: Sat, 12 Dec 2020 18:13:40 GMT  
+		Size: 1.1 MB (1092847 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a839f28eb57bd36d3aacb29facc913d8ab0f88f7dc151a1c4ed01678b588b880`  
-		Last Modified: Fri, 11 Dec 2020 05:32:04 GMT  
-		Size: 114.0 B  
+	-	`sha256:232394c94602c3faf4ad2645879d44a4f9263f6c6c74ed11cc4f437a2cd2ea5c`  
+		Last Modified: Sat, 12 Dec 2020 18:13:40 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d0a6ba5f373ec6316a1554ce6f2b7006f8a1b8125ecd9d2b5a10737eccc0f39`  
-		Last Modified: Fri, 11 Dec 2020 05:32:03 GMT  
+	-	`sha256:b6d0593b8f932913d0b7dd33ac6dfa40794a5d20e449753ef21ea509f73f41a8`  
+		Last Modified: Sat, 12 Dec 2020 18:13:40 GMT  
 		Size: 1.3 KB (1308 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0aa1dd6e35f0eddbcae4e4ce8274d76308a2b6c591c73a5265567a52e237f12e`  
-		Last Modified: Fri, 11 Dec 2020 05:32:07 GMT  
-		Size: 20.2 MB (20171373 bytes)  
+	-	`sha256:4d290602014138dee291b47ff62dc195f4ad4de18d47790cb85620acd75b0406`  
+		Last Modified: Sat, 12 Dec 2020 18:13:44 GMT  
+		Size: 20.2 MB (20171371 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:348a90887c16fa0075d15a6c8c9a7c23ba9733360f2e894b4274351566a1e557`  
-		Last Modified: Fri, 11 Dec 2020 05:32:04 GMT  
-		Size: 189.0 B  
+	-	`sha256:73fbdf89349e40fb1d5471f7dc3c9d0973463d3baea4c2cfbe6877728aa60bae`  
+		Last Modified: Sat, 12 Dec 2020 18:13:40 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
