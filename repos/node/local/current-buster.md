@@ -1,17 +1,17 @@
-# `node:15.3.0-buster`
+# `node:15.4.0-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9c40276d04d26d38995fb195caa57fcf747480f12d23b6e25fe1babb120ae3a7`
-- Created: `2020-11-25T00:35:31.075946591Z`
-- Virtual Size: ~ 903.95 Mb  
+- Image ID: `sha256:9413f4517e1136e1abb42b1d400071b33b0a7bf16126a10161277c1594d4e654`
+- Created: `2020-12-10T16:42:46.883412727Z`
+- Virtual Size: ~ 904.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=15.3.0`
+  - `NODE_VERSION=15.4.0`
   - `YARN_VERSION=1.22.5`
 
 ## `dpkg` (`.deb`-based packages)
