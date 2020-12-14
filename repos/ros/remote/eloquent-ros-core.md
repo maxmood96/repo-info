@@ -1,7 +1,7 @@
 ## `ros:eloquent-ros-core`
 
 ```console
-$ docker pull ros@sha256:a4c36d61a582cfb22d9221cbcbf5060af9c32ef9749cc6797e833af11f00446e
+$ docker pull ros@sha256:dc5ce87cdbee52e82eaa9eaec4ebb7d4e21879c7287f09443aed75c8a43d2015
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,14 +13,14 @@ $ docker pull ros@sha256:a4c36d61a582cfb22d9221cbcbf5060af9c32ef9749cc6797e833af
 ### `ros:eloquent-ros-core` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:adc42f29a5dc421975bdf2021c18fec5deb9bd4b0a3490b544f77e5bd55864e0
+$ docker pull ros@sha256:9dbbeaafca8578080ef8f109ae785abda42a72b0c2d4ddc28305bc196b953025
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **215.4 MB (215375925 bytes)**  
+-	Total Size: **215.4 MB (215424189 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e59ffb4385809c1f9e8976c99cc058dea1f7f9234ba067cb6d606fdb69cad22`
+-	Image ID: `sha256:313162ded25ef47ab93bc2098a1cbe5d999f85c6262f2094d0446814caf50522`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -49,13 +49,13 @@ ENV LANG=C.UTF-8
 ENV LC_ALL=C.UTF-8
 # Thu, 26 Nov 2020 02:15:24 GMT
 ENV ROS_DISTRO=eloquent
-# Thu, 26 Nov 2020 02:16:30 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-eloquent-ros-core=0.8.4-1*     && rm -rf /var/lib/apt/lists/*
-# Thu, 26 Nov 2020 02:16:31 GMT
+# Mon, 14 Dec 2020 22:34:23 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-eloquent-ros-core=0.8.5-1*     && rm -rf /var/lib/apt/lists/*
+# Mon, 14 Dec 2020 22:34:24 GMT
 COPY file:57f71198b74c2c1967889acdfddb85d428137580d18be4211971fc7381557b6c in / 
-# Thu, 26 Nov 2020 02:16:31 GMT
+# Mon, 14 Dec 2020 22:34:24 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 26 Nov 2020 02:16:31 GMT
+# Mon, 14 Dec 2020 22:34:24 GMT
 CMD ["bash"]
 ```
 
@@ -88,12 +88,12 @@ CMD ["bash"]
 		Last Modified: Thu, 26 Nov 2020 02:34:35 GMT  
 		Size: 228.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11d7104a974b2215050f4d47a0f198dc9453bea2b5c5337f84c4b30df526cf5c`  
-		Last Modified: Thu, 26 Nov 2020 02:36:47 GMT  
-		Size: 183.0 MB (182955476 bytes)  
+	-	`sha256:0442dc1f0a537542dc230f8bb8f16a8d92dc8e30b6945c1cb72f2ffb95392be7`  
+		Last Modified: Mon, 14 Dec 2020 22:42:05 GMT  
+		Size: 183.0 MB (183003740 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:48b03e094228f454ea77fe5acbecc07a8c48b28a4ac001274c0c801a17fa886d`  
-		Last Modified: Thu, 26 Nov 2020 02:36:10 GMT  
+	-	`sha256:39d6fe82abf28637a7aa5f82f4657acfe68ad8d24ed517ce74d86eaadcba14ad`  
+		Last Modified: Mon, 14 Dec 2020 22:41:28 GMT  
 		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
