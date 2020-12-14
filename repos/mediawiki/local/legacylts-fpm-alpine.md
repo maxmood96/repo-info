@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e485769eab3f745961c8cd92bbe9a09fa81db3db808d75994df178f3420d1698`
-- Created: `2020-11-06T03:56:15.838649879Z`
+- Image ID: `sha256:d6e39fee29d5391e3d19b4df6bdba5a7092207534abe19b83b7b5125679d9c8f`
+- Created: `2020-12-12T00:09:25.479691251Z`
 - Virtual Size: ~ 411.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -234,16 +234,16 @@ GPL-2.0-only
 ### `apk` package: `curl`
 
 ```console
-curl-7.69.1-r1 description:
+curl-7.69.1-r2 description:
 URL retrival utility and library
 
-curl-7.69.1-r1 webpage:
+curl-7.69.1-r2 webpage:
 https://curl.haxx.se/
 
-curl-7.69.1-r1 installed size:
+curl-7.69.1-r2 installed size:
 229376
 
-curl-7.69.1-r1 license:
+curl-7.69.1-r2 license:
 MIT
 
 ```
@@ -676,16 +676,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.69.1-r1 description:
+libcurl-7.69.1-r2 description:
 The multiprotocol file transfer library
 
-libcurl-7.69.1-r1 webpage:
+libcurl-7.69.1-r2 webpage:
 https://curl.haxx.se/
 
-libcurl-7.69.1-r1 installed size:
+libcurl-7.69.1-r2 installed size:
 458752
 
-libcurl-7.69.1-r1 license:
+libcurl-7.69.1-r2 license:
 MIT
 
 ```
@@ -863,16 +863,16 @@ Libpng
 ### `apk` package: `librsvg`
 
 ```console
-librsvg-2.48.8-r0 description:
+librsvg-2.48.9-r0 description:
 SAX-based renderer for SVG files into a GdkPixbuf
 
-librsvg-2.48.8-r0 webpage:
+librsvg-2.48.9-r0 webpage:
 https://wiki.gnome.org/Projects/LibRsvg
 
-librsvg-2.48.8-r0 installed size:
+librsvg-2.48.9-r0 installed size:
 9695232
 
-librsvg-2.48.8-r0 license:
+librsvg-2.48.9-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -1152,16 +1152,16 @@ custom
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.24-r9 description:
+musl-1.1.24-r10 description:
 the musl c library (libc) implementation
 
-musl-1.1.24-r9 webpage:
+musl-1.1.24-r10 webpage:
 https://musl.libc.org/
 
-musl-1.1.24-r9 installed size:
+musl-1.1.24-r10 installed size:
 614400
 
-musl-1.1.24-r9 license:
+musl-1.1.24-r10 license:
 MIT
 
 ```
@@ -1169,16 +1169,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.24-r9 description:
+musl-utils-1.1.24-r10 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.24-r9 webpage:
+musl-utils-1.1.24-r10 webpage:
 https://musl.libc.org/
 
-musl-utils-1.1.24-r9 installed size:
+musl-utils-1.1.24-r10 installed size:
 151552
 
-musl-utils-1.1.24-r9 license:
+musl-utils-1.1.24-r10 license:
 MIT BSD GPL2+
 
 ```
