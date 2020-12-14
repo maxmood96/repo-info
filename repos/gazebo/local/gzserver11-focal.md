@@ -3167,14 +3167,9 @@ Licenses: (parsed from: `/usr/share/doc/librsvg2-2/copyright`)
 - `Sun-permissive`
 - `Unlicense`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.48.7-1ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.48.7-1ubuntu0.20.04.1.dsc' librsvg_2.48.7-1ubuntu0.20.04.1.dsc 2334 SHA512:316e871829652eb5a51349d9d4c8ae2c692c86e86a921f2fb3575f419fccd3d14ba96c81693fcee1fcfacf0999bb861962d17d095fd467aca078f0a2bd3306c0
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.48.7.orig.tar.xz' librsvg_2.48.7.orig.tar.xz 15097208 SHA512:18e7a3cecd8acd3beee3a5d1e6a709331ce04d8b214bd53cf44da2d6574b0c3ef78b8d38f21789c3585d89faaea322ed4cf181b9331038352045e93a67b276da
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.48.7-1ubuntu0.20.04.1.debian.tar.xz' librsvg_2.48.7-1ubuntu0.20.04.1.debian.tar.xz 24204 SHA512:41f3e6dcdec6010071c56111b04f2ed7ae14ed1e3e033dc753df597077706a7ff7c886ea73a16378d6e90a4c78af7b1fff93f0f7d8768b7c8d8232b454f9a7e6
-```
 
 ### `dpkg` source package: `libsamplerate=0.1.9-2`
 
