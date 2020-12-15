@@ -1552,21 +1552,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.23.21-2
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.21-2.dsc' p11-kit_0.23.21-2.dsc 2417 SHA256:8855c536f335c48d113fa61ea1714b4dfbbe3148bcd368d531b3fa65d5737f4f
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.21.orig.tar.xz' p11-kit_0.23.21.orig.tar.xz 827064 SHA256:f1baa493f05ca0d867f06bcb54cbb5cdb28c756db07207b6e18de18a87b10627
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.21.orig.tar.xz.asc' p11-kit_0.23.21.orig.tar.xz.asc 854 SHA256:1cb299bd62e3d6a0a43558b7c10270ed3ab5551279633df26810c9c76939684a
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.21-2.debian.tar.xz' p11-kit_0.23.21-2.debian.tar.xz 22676 SHA256:8d1f7b555f79f5c189bb69eaf298ede38a4e0906d09ac13470d86e9c9534effa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.23.21-2/
 
-- https://sources.debian.net/src/p11-kit/0.23.21-2/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.23.21-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.23.21-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.3.1-5`
 
@@ -1606,20 +1598,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcre2=10.35-2
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.35-2.dsc' pcre2_10.35-2.dsc 2286 SHA256:b5f090ecd93e9a6d0d09ad9767ffa0370d4d6cae7ff2884787d5156a06d7be87
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.35.orig.tar.gz' pcre2_10.35.orig.tar.gz 2299082 SHA256:8fdcef8c8f4cd735169dd0225fd010487970c1bcadd49e9b90e26c7250a33dc9
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.35-2.diff.gz' pcre2_10.35-2.diff.gz 6695 SHA256:59a23d4538cfceb6b38d5f1a205d212dd8eb73640191a58aebbd3f9d9d2b9eda
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pcre2/10.35-2/
 
-- https://sources.debian.net/src/pcre2/10.35-2/ (for browsing the source)
-- https://sources.debian.net/src/pcre2/10.35-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcre2/10.35-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre3=2:8.39-13`
 
@@ -1767,20 +1752,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=247.1-3
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_247.1-3.dsc' systemd_247.1-3.dsc 5167 SHA256:ba0f5895eb14024d5cbcdc8a10e2e668110d4cf483d9543d81ffec60881a9f7e
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_247.1.orig.tar.gz' systemd_247.1.orig.tar.gz 9889494 SHA256:ff0503472d8680e93c14518442d94071c42452d7ad283d6a2042f11077b19230
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_247.1-3.debian.tar.xz' systemd_247.1-3.debian.tar.xz 152356 SHA256:12c3a64e2195bb6e562458075efc8f35120af4f8da11a933798064bdbd70d88e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/247.1-3/
 
-- https://sources.debian.net/src/systemd/247.1-3/ (for browsing the source)
-- https://sources.debian.net/src/systemd/247.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/247.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.96-5`
 

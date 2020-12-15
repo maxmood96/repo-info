@@ -208,20 +208,13 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.1~rc3-1
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.1~rc3-1.dsc' bash_5.1~rc3-1.dsc 2324 SHA256:7f5632fd75ea41a2a9d7ba4225b7f084a5bfb5e4cf37ec9180a6e3b304eb0bd5
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.1~rc3.orig.tar.xz' bash_5.1~rc3.orig.tar.xz 5769384 SHA256:94bcf4c89ae39a4875996f864b2705148e5359acffce50fe47c1bf7e961ca69b
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.1~rc3-1.debian.tar.xz' bash_5.1~rc3-1.debian.tar.xz 88132 SHA256:2088f054e45d9f4b390aecbcade344c82b630775141c73ee959bf8b82b73c86a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/bash/5.1~rc3-1/
 
-- https://sources.debian.net/src/bash/5.1~rc3-1/ (for browsing the source)
-- https://sources.debian.net/src/bash/5.1~rc3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bash/5.1~rc3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.8-4`
 
@@ -316,20 +309,13 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.11+git20200708+dd9ef66-2
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.11+git20200708+dd9ef66-2.dsc' dash_0.5.11+git20200708+dd9ef66-2.dsc 1906 SHA256:8e235f05db6af16a51d0570131095744122b33da0011fd8e81072d80683ebd2d
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.11+git20200708+dd9ef66.orig.tar.gz' dash_0.5.11+git20200708+dd9ef66.orig.tar.gz 167776 SHA256:ab70b1f165bfedadd1282da546f1c917f1b7ccb2c5c2f898310a963e2ab5520c
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.11+git20200708+dd9ef66-2.debian.tar.xz' dash_0.5.11+git20200708+dd9ef66-2.debian.tar.xz 42292 SHA256:735ec38434c77cb3514f64cdabd96995c00462c4400ceed09011a5cac3aa971c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dash/0.5.11+git20200708+dd9ef66-2/
 
-- https://sources.debian.net/src/dash/0.5.11+git20200708+dd9ef66-2/ (for browsing the source)
-- https://sources.debian.net/src/dash/0.5.11+git20200708+dd9ef66-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dash/0.5.11+git20200708+dd9ef66-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db5.3=5.3.28+dfsg1-0.6`
 
