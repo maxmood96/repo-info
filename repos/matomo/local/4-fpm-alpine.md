@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:95bc27d0bda947f48393a8298e3efa5c37102f5f9678098bf3b24d6227655359`
-- Created: `2020-12-10T16:39:30.399485283Z`
-- Virtual Size: ~ 142.56 Mb  
+- Image ID: `sha256:6efddca85d7fc8cca9329897bf43e5a9db86f4788005ca3bdbb62c797d819474`
+- Created: `2020-12-11T23:49:07.299731679Z`
+- Virtual Size: ~ 141.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -167,16 +167,16 @@ MPL-2.0 GPL-2.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-7.69.1-r1 description:
+curl-7.69.1-r2 description:
 URL retrival utility and library
 
-curl-7.69.1-r1 webpage:
+curl-7.69.1-r2 webpage:
 https://curl.haxx.se/
 
-curl-7.69.1-r1 installed size:
+curl-7.69.1-r2 installed size:
 229376
 
-curl-7.69.1-r1 license:
+curl-7.69.1-r2 license:
 MIT
 
 ```
@@ -286,16 +286,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.69.1-r1 description:
+libcurl-7.69.1-r2 description:
 The multiprotocol file transfer library
 
-libcurl-7.69.1-r1 webpage:
+libcurl-7.69.1-r2 webpage:
 https://curl.haxx.se/
 
-libcurl-7.69.1-r1 installed size:
+libcurl-7.69.1-r2 installed size:
 458752
 
-libcurl-7.69.1-r1 license:
+libcurl-7.69.1-r2 license:
 MIT
 
 ```
@@ -337,16 +337,16 @@ BSD-3-Clause IJG Zlib
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.4.50-r0 description:
+libldap-2.4.50-r1 description:
 OpenLDAP libraries
 
-libldap-2.4.50-r0 webpage:
+libldap-2.4.50-r1 webpage:
 https://www.openldap.org
 
-libldap-2.4.50-r0 installed size:
+libldap-2.4.50-r1 installed size:
 626688
 
-libldap-2.4.50-r0 license:
+libldap-2.4.50-r1 license:
 custom
 
 ```
@@ -490,16 +490,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.24-r9 description:
+musl-utils-1.1.24-r10 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.24-r9 webpage:
+musl-utils-1.1.24-r10 webpage:
 https://musl.libc.org/
 
-musl-utils-1.1.24-r9 installed size:
+musl-utils-1.1.24-r10 installed size:
 151552
 
-musl-utils-1.1.24-r9 license:
+musl-utils-1.1.24-r10 license:
 MIT BSD GPL2+
 
 ```
