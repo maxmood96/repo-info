@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d57a22a0519d2df8daded1207a95c9ec561cc9e7e91f85177a17eaeab0be5cda`
-- Created: `2020-11-26T02:17:23.010633494Z`
-- Virtual Size: ~ 828.45 Mb  
+- Image ID: `sha256:52a1fcf6abd8620950397e945843db2d56184d8eb0d3cdad70d0f87ddb8132a6`
+- Created: `2020-12-14T22:35:32.125173098Z`
+- Virtual Size: ~ 828.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -401,12 +401,12 @@ $ apt-get source -qq --print-uris cppcheck=1.82-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/c/cppcheck/cppcheck_1.82-1.debian.tar.xz' cppcheck_1.82-1.debian.tar.xz 368008 SHA256:905c4e2449308660437ade973f1567dcd57381705144a7710a36eabc46024059
 ```
 
-### `dpkg` source package: `curl=7.58.0-2ubuntu3.10`
+### `dpkg` source package: `curl=7.58.0-2ubuntu3.12`
 
 Binary Packages:
 
-- `libcurl3-gnutls:amd64=7.58.0-2ubuntu3.10`
-- `libcurl4:amd64=7.58.0-2ubuntu3.10`
+- `libcurl3-gnutls:amd64=7.58.0-2ubuntu3.12`
+- `libcurl4:amd64=7.58.0-2ubuntu3.12`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -417,9 +417,14 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.58.0-2ubuntu3.12
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.12.dsc' curl_7.58.0-2ubuntu3.12.dsc 2781 SHA512:7ac71894de33ac39e49198d76d90a219e0cd4e1bc0d1878732f2c559b26a7f09b3383c5fd1dbe645eccd859945f644006b2d8e1043a955ff3d98a40af3c9b72a
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0.orig.tar.gz' curl_7.58.0.orig.tar.gz 3879728 SHA512:7b12b79107558bb266672d6e128615fe5a8149c37f4ae540197e3298f5d312beb2d78fbb23e3ea84ea7afc41549898a1e5cd38509f0388b11707b48d5efb8ca3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.12.debian.tar.xz' curl_7.58.0-2ubuntu3.12.debian.tar.xz 45640 SHA512:00aa535bb43ab14eafc758a4faa50c6b81f24dde828d790f119c2a5aedb4e6f2f83cf109314560ca1ab31a6614c2aa7227093338f34cf913a6de128573c693b6
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2.1`
 
@@ -1942,11 +1947,11 @@ $ apt-get source -qq --print-uris libzstd=1.3.3+dfsg-2ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.3+dfsg-2ubuntu1.1.debian.tar.xz' libzstd_1.3.3+dfsg-2ubuntu1.1.debian.tar.xz 12808 SHA512:ae7a558e5ad31ac579856d0ca7f941f95ef570b8b6612249f3f932d85310d56ef7cc4deba4d7ff3a14e46fea25e1eb663b8b841ba4442aa4f7bbe3f2961c3993
 ```
 
-### `dpkg` source package: `linux=4.15.0-124.127`
+### `dpkg` source package: `linux=4.15.0-128.131`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.15.0-124.127`
+- `linux-libc-dev:amd64=4.15.0-128.131`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1955,10 +1960,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.15.0-124.127
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-124.127.dsc' linux_4.15.0-124.127.dsc 7373 SHA512:5351d6f46f064fe44e6608d83e111ca6897cb468359b6c70c4546212c95a50e5d77389a8d056d311928b682336ceb1a44b26771466ecfe79604578803db24a0b
+$ apt-get source -qq --print-uris linux=4.15.0-128.131
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-128.131.dsc' linux_4.15.0-128.131.dsc 7373 SHA512:513e4011181e94f09b06102f2c96fa28955588d0b391816e85f462c474057aa9379a8bee67712eddd3c0e475ffdfef7d95ba649b6b4cf2446254102622e85bf0
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA512:0fab606a295e0857f774f8adaa9d56bf2cb227fbab2daed374415da216391b156f49e606ba37ac402987c5796d408807da5d1a42c0d85a8552f109a3e279443d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-124.127.diff.gz' linux_4.15.0-124.127.diff.gz 10283458 SHA512:f8cf766feb450eeb61ceddcfd337b8b7c45680bad4bb77c226daf094f00c3df1a2fe594a5668e8dbd8c2ad47ff5f89b2324473fbaa540b869b227ed86dac2112
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-128.131.diff.gz' linux_4.15.0-128.131.diff.gz 10436987 SHA512:08379e706a22c71f6d3b936884813e57620ff29b81ccdc436b3bcebe945499eb779d5a76727163cec5b16f5ecdc0060975a8e4d5b8aafb0147c1e2dd37b7d6d9
 ```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
@@ -1981,11 +1986,11 @@ $ apt-get source -qq --print-uris lsb=9.20170808ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lsb/lsb_9.20170808ubuntu1.tar.xz' lsb_9.20170808ubuntu1.tar.xz 45492 SHA256:b26bcb746e0bff05ad3e15dfbeb0ba7ea2a8d031f765a6cfa568c57d14c522c4
 ```
 
-### `dpkg` source package: `lxml=4.2.1-1ubuntu0.1`
+### `dpkg` source package: `lxml=4.2.1-1ubuntu0.3`
 
 Binary Packages:
 
-- `python3-lxml:amd64=4.2.1-1ubuntu0.1`
+- `python3-lxml:amd64=4.2.1-1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/python3-lxml/copyright`)
 
@@ -1993,9 +1998,14 @@ Licenses: (parsed from: `/usr/share/doc/python3-lxml/copyright`)
 - `GPL2`
 - `later`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris lxml=4.2.1-1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lxml/lxml_4.2.1-1ubuntu0.3.dsc' lxml_4.2.1-1ubuntu0.3.dsc 2355 SHA512:cb5ae30510fcd64a0c20fc29096a9b0d6b27e1f9a1c85aec9241bf1c0658347f5223087f7ab90743a3bbfe02d0ca3cb97645233ceb2811485d4a28f4e664d6d6
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lxml/lxml_4.2.1.orig.tar.gz' lxml_4.2.1.orig.tar.gz 4284267 SHA512:17dfa309f1066ba2478cdc87b8ec018f99dd9d43dd088c458dcae83683dbde2f9c341f64dfeab4e1d1f341b8294e6168b24294bec21e393c4f4bf9513b271124
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lxml/lxml_4.2.1-1ubuntu0.3.debian.tar.xz' lxml_4.2.1-1ubuntu0.3.debian.tar.xz 10056 SHA512:42b5038a40fc2bf3889400ef780c46fa4f260450651db28a931ce9ca257991579dea48f37a919d9df0f521151a63e4e55e631592fb9092306ac3e7e945572901
+```
 
 ### `dpkg` source package: `lz4=0.0~r131-2ubuntu3`
 
@@ -2386,21 +2396,27 @@ $ apt-get source -qq --print-uris openldap=2.4.45+dfsg-1ubuntu1.8
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg-1ubuntu1.8.debian.tar.xz' openldap_2.4.45+dfsg-1ubuntu1.8.debian.tar.xz 180120 SHA512:d7b237e15595050f2309cee9cc6082a478e5d685644715fb7b7f739a9ed4a0fdcbdffc36a51b9cd2690cdffc4db6b431563ac66c87c2bed582b074c6f298b56e
 ```
 
-### `dpkg` source package: `openssl=1.1.1-1ubuntu2.1~18.04.6`
+### `dpkg` source package: `openssl=1.1.1-1ubuntu2.1~18.04.7`
 
 Binary Packages:
 
-- `libssl-dev:amd64=1.1.1-1ubuntu2.1~18.04.6`
-- `libssl1.1:amd64=1.1.1-1ubuntu2.1~18.04.6`
-- `openssl=1.1.1-1ubuntu2.1~18.04.6`
+- `libssl-dev:amd64=1.1.1-1ubuntu2.1~18.04.7`
+- `libssl1.1:amd64=1.1.1-1ubuntu2.1~18.04.7`
+- `openssl=1.1.1-1ubuntu2.1~18.04.7`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1-1ubuntu2.1~18.04.7
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.7.dsc' openssl_1.1.1-1ubuntu2.1~18.04.7.dsc 2754 SHA512:021e2302c7bb5a5206d9da79ef829a576e604a52719ef7487c13af6be375c599d75415b3b90234a91314730b4de0f7192fe91a320f23d2bba33bfc17b4ab1999
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz' openssl_1.1.1.orig.tar.gz 8337920 SHA512:c0284a4fe84bdf765ca5bc5148da4441ffc36392cfecaf9d372af00cf93b6de5681cab1248b6f8246474532155dc205da5ad49549ad7c61c07c917145e7c9c71
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz.asc' openssl_1.1.1.orig.tar.gz.asc 488 SHA512:cc69ad07a2edc17b579018bac4683f7d48deb8cde4a0f53eb777d2546eec9be6d13a610299705f3b87a7e4e8492432260cd7efc89d124c7fe1def309bbee461f
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.7.debian.tar.xz' openssl_1.1.1-1ubuntu2.1~18.04.7.debian.tar.xz 109396 SHA512:392df550d5d84c16938dcb170ec038b44afbee3387be33bc7172a08b392aa0f0ff0d99bc7b25a2edc4e831ddab3265b746631effb01ed1ea350b0c5684e0318a
+```
 
 ### `dpkg` source package: `p11-kit=0.23.9-2`
 
@@ -3990,11 +4006,11 @@ $ apt-get source -qq --print-uris rhash=1.3.6-2
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rhash/rhash_1.3.6-2.debian.tar.xz' rhash_1.3.6-2.debian.tar.xz 9672 SHA256:fcccfa3d3a5a7ac16395ec54fcfb4217a5ccf5718e762f3670276366061e5638
 ```
 
-### `dpkg` source package: `ros-eloquent-action-msgs=0.8.0-1bionic.20200606.002043`
+### `dpkg` source package: `ros-eloquent-action-msgs=0.8.0-1bionic.20201207.152326`
 
 Binary Packages:
 
-- `ros-eloquent-action-msgs=0.8.0-1bionic.20200606.002043`
+- `ros-eloquent-action-msgs=0.8.0-1bionic.20201207.152326`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4004,11 +4020,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-actionlib-msgs=0.8.1-1bionic.20200606.003404`
+### `dpkg` source package: `ros-eloquent-actionlib-msgs=0.8.1-1bionic.20201207.155344`
 
 Binary Packages:
 
-- `ros-eloquent-actionlib-msgs=0.8.1-1bionic.20200606.003404`
+- `ros-eloquent-actionlib-msgs=0.8.1-1bionic.20201207.155344`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4018,11 +4034,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-auto=0.8.2-1bionic.20200605.224003`
+### `dpkg` source package: `ros-eloquent-ament-cmake-auto=0.8.3-1bionic.20201201.001333`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-auto=0.8.2-1bionic.20200605.224003`
+- `ros-eloquent-ament-cmake-auto=0.8.3-1bionic.20201201.001333`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4032,11 +4048,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-copyright=0.8.1-1bionic.20200605.223954`
+### `dpkg` source package: `ros-eloquent-ament-cmake-copyright=0.8.2-1bionic.20201204.214333`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-copyright=0.8.1-1bionic.20200605.223954`
+- `ros-eloquent-ament-cmake-copyright=0.8.2-1bionic.20201204.214333`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4046,11 +4062,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-core=0.8.2-1bionic.20200605.215132`
+### `dpkg` source package: `ros-eloquent-ament-cmake-core=0.8.3-1bionic.20201130.231403`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-core=0.8.2-1bionic.20200605.215132`
+- `ros-eloquent-ament-cmake-core=0.8.3-1bionic.20201130.231403`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4060,11 +4076,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-cppcheck=0.8.1-1bionic.20200605.224255`
+### `dpkg` source package: `ros-eloquent-ament-cmake-cppcheck=0.8.2-1bionic.20201204.214534`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-cppcheck=0.8.1-1bionic.20200605.224255`
+- `ros-eloquent-ament-cmake-cppcheck=0.8.2-1bionic.20201204.214534`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4074,11 +4090,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-cpplint=0.8.1-1bionic.20200605.224303`
+### `dpkg` source package: `ros-eloquent-ament-cmake-cpplint=0.8.2-1bionic.20201204.214524`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-cpplint=0.8.1-1bionic.20200605.224303`
+- `ros-eloquent-ament-cmake-cpplint=0.8.2-1bionic.20201204.214524`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4088,11 +4104,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-export-definitions=0.8.2-1bionic.20200605.222825`
+### `dpkg` source package: `ros-eloquent-ament-cmake-export-definitions=0.8.3-1bionic.20201130.231759`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-export-definitions=0.8.2-1bionic.20200605.222825`
+- `ros-eloquent-ament-cmake-export-definitions=0.8.3-1bionic.20201130.231759`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4102,11 +4118,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-export-dependencies=0.8.2-1bionic.20200605.223221`
+### `dpkg` source package: `ros-eloquent-ament-cmake-export-dependencies=0.8.3-1bionic.20201201.000529`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-export-dependencies=0.8.2-1bionic.20200605.223221`
+- `ros-eloquent-ament-cmake-export-dependencies=0.8.3-1bionic.20201201.000529`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4116,11 +4132,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-export-include-directories=0.8.2-1bionic.20200605.222828`
+### `dpkg` source package: `ros-eloquent-ament-cmake-export-include-directories=0.8.3-1bionic.20201130.231755`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-export-include-directories=0.8.2-1bionic.20200605.222828`
+- `ros-eloquent-ament-cmake-export-include-directories=0.8.3-1bionic.20201130.231755`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4130,11 +4146,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-export-interfaces=0.8.2-1bionic.20200605.223004`
+### `dpkg` source package: `ros-eloquent-ament-cmake-export-interfaces=0.8.3-1bionic.20201130.231835`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-export-interfaces=0.8.2-1bionic.20200605.223004`
+- `ros-eloquent-ament-cmake-export-interfaces=0.8.3-1bionic.20201130.231835`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4144,11 +4160,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-export-libraries=0.8.2-1bionic.20200605.222842`
+### `dpkg` source package: `ros-eloquent-ament-cmake-export-libraries=0.8.3-1bionic.20201130.231800`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-export-libraries=0.8.2-1bionic.20200605.222842`
+- `ros-eloquent-ament-cmake-export-libraries=0.8.3-1bionic.20201130.231800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4158,11 +4174,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-export-link-flags=0.8.2-1bionic.20200605.222901`
+### `dpkg` source package: `ros-eloquent-ament-cmake-export-link-flags=0.8.3-1bionic.20201130.231803`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-export-link-flags=0.8.2-1bionic.20200605.222901`
+- `ros-eloquent-ament-cmake-export-link-flags=0.8.3-1bionic.20201130.231803`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4172,11 +4188,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-flake8=0.8.1-1bionic.20200605.224323`
+### `dpkg` source package: `ros-eloquent-ament-cmake-flake8=0.8.2-1bionic.20201204.214529`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-flake8=0.8.1-1bionic.20200605.224323`
+- `ros-eloquent-ament-cmake-flake8=0.8.2-1bionic.20201204.214529`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4186,11 +4202,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-gmock=0.8.2-1bionic.20200605.223611`
+### `dpkg` source package: `ros-eloquent-ament-cmake-gmock=0.8.3-1bionic.20201130.232809`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-gmock=0.8.2-1bionic.20200605.223611`
+- `ros-eloquent-ament-cmake-gmock=0.8.3-1bionic.20201130.232809`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4200,11 +4216,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-gtest=0.8.2-1bionic.20200605.223356`
+### `dpkg` source package: `ros-eloquent-ament-cmake-gtest=0.8.3-1bionic.20201130.232735`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-gtest=0.8.2-1bionic.20200605.223356`
+- `ros-eloquent-ament-cmake-gtest=0.8.3-1bionic.20201130.232735`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4214,11 +4230,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-include-directories=0.8.2-1bionic.20200605.222909`
+### `dpkg` source package: `ros-eloquent-ament-cmake-include-directories=0.8.3-1bionic.20201130.231801`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-include-directories=0.8.2-1bionic.20200605.222909`
+- `ros-eloquent-ament-cmake-include-directories=0.8.3-1bionic.20201130.231801`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4228,11 +4244,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-libraries=0.8.2-1bionic.20200605.222916`
+### `dpkg` source package: `ros-eloquent-ament-cmake-libraries=0.8.3-1bionic.20201201.000454`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-libraries=0.8.2-1bionic.20200605.222916`
+- `ros-eloquent-ament-cmake-libraries=0.8.3-1bionic.20201201.000454`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4242,11 +4258,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-lint-cmake=0.8.1-1bionic.20200605.223546`
+### `dpkg` source package: `ros-eloquent-ament-cmake-lint-cmake=0.8.2-1bionic.20201204.214124`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-lint-cmake=0.8.1-1bionic.20200605.223546`
+- `ros-eloquent-ament-cmake-lint-cmake=0.8.2-1bionic.20201204.214124`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4256,11 +4272,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-pep257=0.8.1-1bionic.20200605.224128`
+### `dpkg` source package: `ros-eloquent-ament-cmake-pep257=0.8.2-1bionic.20201204.214526`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-pep257=0.8.1-1bionic.20200605.224128`
+- `ros-eloquent-ament-cmake-pep257=0.8.2-1bionic.20201204.214526`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4270,11 +4286,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-pytest=0.8.2-1bionic.20200605.223421`
+### `dpkg` source package: `ros-eloquent-ament-cmake-pytest=0.8.3-1bionic.20201130.232020`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-pytest=0.8.2-1bionic.20200605.223421`
+- `ros-eloquent-ament-cmake-pytest=0.8.3-1bionic.20201130.232020`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4284,11 +4300,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-python=0.8.2-1bionic.20200605.222924`
+### `dpkg` source package: `ros-eloquent-ament-cmake-python=0.8.3-1bionic.20201130.231825`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-python=0.8.2-1bionic.20200605.222924`
+- `ros-eloquent-ament-cmake-python=0.8.3-1bionic.20201130.231825`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4298,11 +4314,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-ros=0.8.0-1bionic.20200605.225229`
+### `dpkg` source package: `ros-eloquent-ament-cmake-ros=0.8.0-1bionic.20201204.214730`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-ros=0.8.0-1bionic.20200605.225229`
+- `ros-eloquent-ament-cmake-ros=0.8.0-1bionic.20201204.214730`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4312,11 +4328,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-target-dependencies=0.8.2-1bionic.20200605.223217`
+### `dpkg` source package: `ros-eloquent-ament-cmake-target-dependencies=0.8.3-1bionic.20201201.000529`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-target-dependencies=0.8.2-1bionic.20200605.223217`
+- `ros-eloquent-ament-cmake-target-dependencies=0.8.3-1bionic.20201201.000529`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4326,11 +4342,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-test=0.8.2-1bionic.20200605.223237`
+### `dpkg` source package: `ros-eloquent-ament-cmake-test=0.8.3-1bionic.20201130.231859`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-test=0.8.2-1bionic.20200605.223237`
+- `ros-eloquent-ament-cmake-test=0.8.3-1bionic.20201130.231859`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4340,11 +4356,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-uncrustify=0.8.1-1bionic.20200605.224650`
+### `dpkg` source package: `ros-eloquent-ament-cmake-uncrustify=0.8.2-1bionic.20201204.214534`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-uncrustify=0.8.1-1bionic.20200605.224650`
+- `ros-eloquent-ament-cmake-uncrustify=0.8.2-1bionic.20201204.214534`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4354,11 +4370,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-version=0.8.2-1bionic.20200605.222944`
+### `dpkg` source package: `ros-eloquent-ament-cmake-version=0.8.3-1bionic.20201130.231826`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-version=0.8.2-1bionic.20200605.222944`
+- `ros-eloquent-ament-cmake-version=0.8.3-1bionic.20201130.231826`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4368,11 +4384,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake-xmllint=0.8.1-1bionic.20200605.224202`
+### `dpkg` source package: `ros-eloquent-ament-cmake-xmllint=0.8.2-1bionic.20201204.214518`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake-xmllint=0.8.1-1bionic.20200605.224202`
+- `ros-eloquent-ament-cmake-xmllint=0.8.2-1bionic.20201204.214518`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4382,11 +4398,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cmake=0.8.2-1bionic.20200605.223544`
+### `dpkg` source package: `ros-eloquent-ament-cmake=0.8.3-1bionic.20201201.000804`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cmake=0.8.2-1bionic.20200605.223544`
+- `ros-eloquent-ament-cmake=0.8.3-1bionic.20201201.000804`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4396,11 +4412,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-copyright=0.8.1-1bionic.20200605.221921`
+### `dpkg` source package: `ros-eloquent-ament-copyright=0.8.2-1bionic.20201204.213732`
 
 Binary Packages:
 
-- `ros-eloquent-ament-copyright=0.8.1-1bionic.20200605.221921`
+- `ros-eloquent-ament-copyright=0.8.2-1bionic.20201204.213732`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4410,11 +4426,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cppcheck=0.8.1-1bionic.20200605.220208`
+### `dpkg` source package: `ros-eloquent-ament-cppcheck=0.8.2-1bionic.20201204.213336`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cppcheck=0.8.1-1bionic.20200605.220208`
+- `ros-eloquent-ament-cppcheck=0.8.2-1bionic.20201204.213336`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4424,11 +4440,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-cpplint=0.8.1-1bionic.20200605.222152`
+### `dpkg` source package: `ros-eloquent-ament-cpplint=0.8.2-1bionic.20201204.213956`
 
 Binary Packages:
 
-- `ros-eloquent-ament-cpplint=0.8.1-1bionic.20200605.222152`
+- `ros-eloquent-ament-cpplint=0.8.2-1bionic.20201204.213956`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4438,11 +4454,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-flake8=0.8.1-1bionic.20200605.221020`
+### `dpkg` source package: `ros-eloquent-ament-flake8=0.8.2-1bionic.20201204.213538`
 
 Binary Packages:
 
-- `ros-eloquent-ament-flake8=0.8.1-1bionic.20200605.221020`
+- `ros-eloquent-ament-flake8=0.8.2-1bionic.20201204.213538`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4452,11 +4468,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-index-cpp=0.7.2-1bionic.20200605.225239`
+### `dpkg` source package: `ros-eloquent-ament-index-cpp=0.7.2-1bionic.20201204.214731`
 
 Binary Packages:
 
-- `ros-eloquent-ament-index-cpp=0.7.2-1bionic.20200605.225239`
+- `ros-eloquent-ament-index-cpp=0.7.2-1bionic.20201204.214731`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4466,11 +4482,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-index-python=0.7.2-1bionic.20200605.222016`
+### `dpkg` source package: `ros-eloquent-ament-index-python=0.7.2-1bionic.20201204.213732`
 
 Binary Packages:
 
-- `ros-eloquent-ament-index-python=0.7.2-1bionic.20200605.222016`
+- `ros-eloquent-ament-index-python=0.7.2-1bionic.20201204.213732`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4480,11 +4496,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-lint-auto=0.8.1-1bionic.20200605.223427`
+### `dpkg` source package: `ros-eloquent-ament-lint-auto=0.8.2-1bionic.20201204.213352`
 
 Binary Packages:
 
-- `ros-eloquent-ament-lint-auto=0.8.1-1bionic.20200605.223427`
+- `ros-eloquent-ament-lint-auto=0.8.2-1bionic.20201204.213352`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4494,11 +4510,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-lint-cmake=0.8.1-1bionic.20200605.222200`
+### `dpkg` source package: `ros-eloquent-ament-lint-cmake=0.8.2-1bionic.20201204.213940`
 
 Binary Packages:
 
-- `ros-eloquent-ament-lint-cmake=0.8.1-1bionic.20200605.222200`
+- `ros-eloquent-ament-lint-cmake=0.8.2-1bionic.20201204.213940`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4508,11 +4524,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-lint-common=0.8.1-1bionic.20200605.224854`
+### `dpkg` source package: `ros-eloquent-ament-lint-common=0.8.2-1bionic.20201204.214607`
 
 Binary Packages:
 
-- `ros-eloquent-ament-lint-common=0.8.1-1bionic.20200605.224854`
+- `ros-eloquent-ament-lint-common=0.8.2-1bionic.20201204.214607`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4522,11 +4538,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-lint=0.8.1-1bionic.20200605.220208`
+### `dpkg` source package: `ros-eloquent-ament-lint=0.8.2-1bionic.20201204.213337`
 
 Binary Packages:
 
-- `ros-eloquent-ament-lint=0.8.1-1bionic.20200605.220208`
+- `ros-eloquent-ament-lint=0.8.2-1bionic.20201204.213337`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4550,11 +4566,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-pep257=0.8.1-1bionic.20200605.221209`
+### `dpkg` source package: `ros-eloquent-ament-pep257=0.8.2-1bionic.20201204.213704`
 
 Binary Packages:
 
-- `ros-eloquent-ament-pep257=0.8.1-1bionic.20200605.221209`
+- `ros-eloquent-ament-pep257=0.8.2-1bionic.20201204.213704`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4564,11 +4580,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-uncrustify=0.8.1-1bionic.20200605.224419`
+### `dpkg` source package: `ros-eloquent-ament-uncrustify=0.8.2-1bionic.20201204.213351`
 
 Binary Packages:
 
-- `ros-eloquent-ament-uncrustify=0.8.1-1bionic.20200605.224419`
+- `ros-eloquent-ament-uncrustify=0.8.2-1bionic.20201204.213351`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4578,11 +4594,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ament-xmllint=0.8.1-1bionic.20200605.222233`
+### `dpkg` source package: `ros-eloquent-ament-xmllint=0.8.2-1bionic.20201204.213952`
 
 Binary Packages:
 
-- `ros-eloquent-ament-xmllint=0.8.1-1bionic.20200605.222233`
+- `ros-eloquent-ament-xmllint=0.8.2-1bionic.20201204.213952`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4592,11 +4608,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-builtin-interfaces=0.8.0-1bionic.20200606.001241`
+### `dpkg` source package: `ros-eloquent-builtin-interfaces=0.8.0-1bionic.20201207.152208`
 
 Binary Packages:
 
-- `ros-eloquent-builtin-interfaces=0.8.0-1bionic.20200606.001241`
+- `ros-eloquent-builtin-interfaces=0.8.0-1bionic.20201207.152208`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4606,11 +4622,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-class-loader=1.4.1-1bionic.20200605.225243`
+### `dpkg` source package: `ros-eloquent-class-loader=1.4.1-1bionic.20201204.214732`
 
 Binary Packages:
 
-- `ros-eloquent-class-loader=1.4.1-1bionic.20200605.225243`
+- `ros-eloquent-class-loader=1.4.1-1bionic.20201204.214732`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4620,11 +4636,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-common-interfaces=0.8.1-1bionic.20200606.015228`
+### `dpkg` source package: `ros-eloquent-common-interfaces=0.8.1-1bionic.20201207.170136`
 
 Binary Packages:
 
-- `ros-eloquent-common-interfaces=0.8.1-1bionic.20200606.015228`
+- `ros-eloquent-common-interfaces=0.8.1-1bionic.20201207.170136`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4634,11 +4650,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-composition-interfaces=0.8.0-1bionic.20200606.003942`
+### `dpkg` source package: `ros-eloquent-composition-interfaces=0.8.0-1bionic.20201207.154946`
 
 Binary Packages:
 
-- `ros-eloquent-composition-interfaces=0.8.0-1bionic.20200606.003942`
+- `ros-eloquent-composition-interfaces=0.8.0-1bionic.20201207.154946`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4648,11 +4664,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-console-bridge-vendor=1.2.0-1bionic.20200605.224027`
+### `dpkg` source package: `ros-eloquent-console-bridge-vendor=1.2.0-1bionic.20201201.001418`
 
 Binary Packages:
 
-- `ros-eloquent-console-bridge-vendor=1.2.0-1bionic.20200605.224027`
+- `ros-eloquent-console-bridge-vendor=1.2.0-1bionic.20201201.001418`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4662,11 +4678,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-diagnostic-msgs=0.8.1-1bionic.20200606.010728`
+### `dpkg` source package: `ros-eloquent-diagnostic-msgs=0.8.1-1bionic.20201207.162144`
 
 Binary Packages:
 
-- `ros-eloquent-diagnostic-msgs=0.8.1-1bionic.20200606.010728`
+- `ros-eloquent-diagnostic-msgs=0.8.1-1bionic.20201207.162144`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4676,11 +4692,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-domain-coordinator=0.8.0-1bionic.20200605.222240`
+### `dpkg` source package: `ros-eloquent-domain-coordinator=0.8.0-1bionic.20201204.213954`
 
 Binary Packages:
 
-- `ros-eloquent-domain-coordinator=0.8.0-1bionic.20200605.222240`
+- `ros-eloquent-domain-coordinator=0.8.0-1bionic.20201204.213954`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4690,11 +4706,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-eigen3-cmake-module=0.1.1-1bionic.20200605.224207`
+### `dpkg` source package: `ros-eloquent-eigen3-cmake-module=0.1.1-1bionic.20201204.214537`
 
 Binary Packages:
 
-- `ros-eloquent-eigen3-cmake-module=0.1.1-1bionic.20200605.224207`
+- `ros-eloquent-eigen3-cmake-module=0.1.1-1bionic.20201204.214537`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4704,11 +4720,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-fastcdr=1.0.11-1bionic.20200605.221048`
+### `dpkg` source package: `ros-eloquent-fastcdr=1.0.11-1bionic.20201130.231905`
 
 Binary Packages:
 
-- `ros-eloquent-fastcdr=1.0.11-1bionic.20200605.221048`
+- `ros-eloquent-fastcdr=1.0.11-1bionic.20201130.231905`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4718,11 +4734,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-fastrtps-cmake-module=0.8.0-1bionic.20200605.225737`
+### `dpkg` source package: `ros-eloquent-fastrtps-cmake-module=0.8.0-1bionic.20201204.214730`
 
 Binary Packages:
 
-- `ros-eloquent-fastrtps-cmake-module=0.8.0-1bionic.20200605.225737`
+- `ros-eloquent-fastrtps-cmake-module=0.8.0-1bionic.20201204.214730`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4732,11 +4748,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-fastrtps=1.9.3-2bionic.20200605.222043`
+### `dpkg` source package: `ros-eloquent-fastrtps=1.9.3-2bionic.20201130.232106`
 
 Binary Packages:
 
-- `ros-eloquent-fastrtps=1.9.3-2bionic.20200605.222043`
+- `ros-eloquent-fastrtps=1.9.3-2bionic.20201130.232106`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4746,11 +4762,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-foonathan-memory-vendor=0.3.0-1bionic.20200605.221142`
+### `dpkg` source package: `ros-eloquent-foonathan-memory-vendor=0.3.0-1bionic.20201130.231906`
 
 Binary Packages:
 
-- `ros-eloquent-foonathan-memory-vendor=0.3.0-1bionic.20200605.221142`
+- `ros-eloquent-foonathan-memory-vendor=0.3.0-1bionic.20201130.231906`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4760,11 +4776,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-geometry-msgs=0.8.1-1bionic.20200606.004311`
+### `dpkg` source package: `ros-eloquent-geometry-msgs=0.8.1-1bionic.20201207.160701`
 
 Binary Packages:
 
-- `ros-eloquent-geometry-msgs=0.8.1-1bionic.20200606.004311`
+- `ros-eloquent-geometry-msgs=0.8.1-1bionic.20201207.160701`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4774,11 +4790,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-geometry2=0.12.5-1bionic.20200606.031529`
+### `dpkg` source package: `ros-eloquent-geometry2=0.12.6-1bionic.20201207.172239`
 
 Binary Packages:
 
-- `ros-eloquent-geometry2=0.12.5-1bionic.20200606.031529`
+- `ros-eloquent-geometry2=0.12.6-1bionic.20201207.172239`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4788,11 +4804,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-gmock-vendor=1.8.9000-1bionic.20200605.222419`
+### `dpkg` source package: `ros-eloquent-gmock-vendor=1.8.9000-1bionic.20201130.232142`
 
 Binary Packages:
 
-- `ros-eloquent-gmock-vendor=1.8.9000-1bionic.20200605.222419`
+- `ros-eloquent-gmock-vendor=1.8.9000-1bionic.20201130.232142`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4802,11 +4818,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-gtest-vendor=1.8.9000-1bionic.20200605.221215`
+### `dpkg` source package: `ros-eloquent-gtest-vendor=1.8.9000-1bionic.20201130.231942`
 
 Binary Packages:
 
-- `ros-eloquent-gtest-vendor=1.8.9000-1bionic.20200605.221215`
+- `ros-eloquent-gtest-vendor=1.8.9000-1bionic.20201130.231942`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4816,11 +4832,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-kdl-parser=2.2.1-1bionic.20200803.125101`
+### `dpkg` source package: `ros-eloquent-kdl-parser=2.2.1-1bionic.20201204.215044`
 
 Binary Packages:
 
-- `ros-eloquent-kdl-parser=2.2.1-1bionic.20200803.125101`
+- `ros-eloquent-kdl-parser=2.2.1-1bionic.20201204.215044`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4830,11 +4846,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-launch-ros=0.9.5-1bionic.20200606.022904`
+### `dpkg` source package: `ros-eloquent-launch-ros=0.9.6-1bionic.20201207.163216`
 
 Binary Packages:
 
-- `ros-eloquent-launch-ros=0.9.5-1bionic.20200606.022904`
+- `ros-eloquent-launch-ros=0.9.6-1bionic.20201207.163216`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4844,11 +4860,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-launch=0.9.6-1bionic.20200605.222246`
+### `dpkg` source package: `ros-eloquent-launch=0.9.7-1bionic.20201204.214112`
 
 Binary Packages:
 
-- `ros-eloquent-launch=0.9.6-1bionic.20200605.222246`
+- `ros-eloquent-launch=0.9.7-1bionic.20201204.214112`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4858,11 +4874,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-libyaml-vendor=1.0.0-1bionic.20200605.223827`
+### `dpkg` source package: `ros-eloquent-libyaml-vendor=1.0.0-1bionic.20201201.000936`
 
 Binary Packages:
 
-- `ros-eloquent-libyaml-vendor=1.0.0-1bionic.20200605.223827`
+- `ros-eloquent-libyaml-vendor=1.0.0-1bionic.20201201.000936`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4872,11 +4888,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-lifecycle-msgs=0.8.0-1bionic.20200606.001608`
+### `dpkg` source package: `ros-eloquent-lifecycle-msgs=0.8.0-1bionic.20201207.153031`
 
 Binary Packages:
 
-- `ros-eloquent-lifecycle-msgs=0.8.0-1bionic.20200606.001608`
+- `ros-eloquent-lifecycle-msgs=0.8.0-1bionic.20201207.153031`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4886,11 +4902,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-message-filters=3.2.3-1bionic.20200606.022913`
+### `dpkg` source package: `ros-eloquent-message-filters=3.2.3-1bionic.20201207.165201`
 
 Binary Packages:
 
-- `ros-eloquent-message-filters=3.2.3-1bionic.20200606.022913`
+- `ros-eloquent-message-filters=3.2.3-1bionic.20201207.165201`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4900,11 +4916,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-nav-msgs=0.8.1-1bionic.20200606.010825`
+### `dpkg` source package: `ros-eloquent-nav-msgs=0.8.1-1bionic.20201207.162808`
 
 Binary Packages:
 
-- `ros-eloquent-nav-msgs=0.8.1-1bionic.20200606.010825`
+- `ros-eloquent-nav-msgs=0.8.1-1bionic.20201207.162808`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4914,11 +4930,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-orocos-kdl=3.2.1-1bionic.20200605.221228`
+### `dpkg` source package: `ros-eloquent-orocos-kdl=3.2.1-1bionic.20201130.232019`
 
 Binary Packages:
 
-- `ros-eloquent-orocos-kdl=3.2.1-1bionic.20200605.221228`
+- `ros-eloquent-orocos-kdl=3.2.1-1bionic.20201130.232019`
 
 Licenses: (parsed from: `/usr/share/doc/ros-eloquent-orocos-kdl/copyright`)
 
@@ -4928,11 +4944,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-eloquent-orocos-kdl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-osrf-pycommon=0.1.9-2bionic.20200605.221308`
+### `dpkg` source package: `ros-eloquent-osrf-pycommon=0.1.9-2bionic.20201130.232216`
 
 Binary Packages:
 
-- `ros-eloquent-osrf-pycommon=0.1.9-2bionic.20200605.221308`
+- `ros-eloquent-osrf-pycommon=0.1.9-2bionic.20201130.232216`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4942,11 +4958,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-pluginlib=2.4.1-1bionic.20200605.230808`
+### `dpkg` source package: `ros-eloquent-pluginlib=2.4.2-1bionic.20201204.215618`
 
 Binary Packages:
 
-- `ros-eloquent-pluginlib=2.4.1-1bionic.20200605.230808`
+- `ros-eloquent-pluginlib=2.4.2-1bionic.20201204.215618`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4956,11 +4972,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-poco-vendor=1.2.0-1bionic.20200605.222532`
+### `dpkg` source package: `ros-eloquent-poco-vendor=1.2.0-1bionic.20201130.232251`
 
 Binary Packages:
 
-- `ros-eloquent-poco-vendor=1.2.0-1bionic.20200605.222532`
+- `ros-eloquent-poco-vendor=1.2.0-1bionic.20201130.232251`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4970,11 +4986,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-python-cmake-module=0.8.0-2bionic.20200605.225805`
+### `dpkg` source package: `ros-eloquent-python-cmake-module=0.8.0-2bionic.20201204.214730`
 
 Binary Packages:
 
-- `ros-eloquent-python-cmake-module=0.8.0-2bionic.20200605.225805`
+- `ros-eloquent-python-cmake-module=0.8.0-2bionic.20201204.214730`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4984,11 +5000,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rcl-action=0.8.4-1bionic.20200606.020343`
+### `dpkg` source package: `ros-eloquent-rcl-action=0.8.5-1bionic.20201207.161526`
 
 Binary Packages:
 
-- `ros-eloquent-rcl-action=0.8.4-1bionic.20200606.020343`
+- `ros-eloquent-rcl-action=0.8.5-1bionic.20201207.161526`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4998,11 +5014,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rcl-interfaces=0.8.0-1bionic.20200606.002620`
+### `dpkg` source package: `ros-eloquent-rcl-interfaces=0.8.0-1bionic.20201207.153545`
 
 Binary Packages:
 
-- `ros-eloquent-rcl-interfaces=0.8.0-1bionic.20200606.002620`
+- `ros-eloquent-rcl-interfaces=0.8.0-1bionic.20201207.153545`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5012,11 +5028,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rcl-lifecycle=0.8.4-1bionic.20200606.012333`
+### `dpkg` source package: `ros-eloquent-rcl-lifecycle=0.8.5-1bionic.20201207.161450`
 
 Binary Packages:
 
-- `ros-eloquent-rcl-lifecycle=0.8.4-1bionic.20200606.012333`
+- `ros-eloquent-rcl-lifecycle=0.8.5-1bionic.20201207.161450`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5026,11 +5042,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rcl-logging-spdlog=0.3.3-1bionic.20200605.230829`
+### `dpkg` source package: `ros-eloquent-rcl-logging-spdlog=0.3.3-1bionic.20201204.215758`
 
 Binary Packages:
 
-- `ros-eloquent-rcl-logging-spdlog=0.3.3-1bionic.20200605.230829`
+- `ros-eloquent-rcl-logging-spdlog=0.3.3-1bionic.20201204.215758`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5040,11 +5056,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rcl-yaml-param-parser=0.8.4-1bionic.20200605.230851`
+### `dpkg` source package: `ros-eloquent-rcl-yaml-param-parser=0.8.5-1bionic.20201204.215754`
 
 Binary Packages:
 
-- `ros-eloquent-rcl-yaml-param-parser=0.8.4-1bionic.20200605.230851`
+- `ros-eloquent-rcl-yaml-param-parser=0.8.5-1bionic.20201204.215754`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5054,11 +5070,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rcl=0.8.4-1bionic.20200606.010519`
+### `dpkg` source package: `ros-eloquent-rcl=0.8.5-1bionic.20201207.160739`
 
 Binary Packages:
 
-- `ros-eloquent-rcl=0.8.4-1bionic.20200606.010519`
+- `ros-eloquent-rcl=0.8.5-1bionic.20201207.160739`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5068,11 +5084,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rclcpp-action=0.8.4-1bionic.20200606.021554`
+### `dpkg` source package: `ros-eloquent-rclcpp-action=0.8.5-1bionic.20201207.164014`
 
 Binary Packages:
 
-- `ros-eloquent-rclcpp-action=0.8.4-1bionic.20200606.021554`
+- `ros-eloquent-rclcpp-action=0.8.5-1bionic.20201207.164014`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5082,11 +5098,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rclcpp-components=0.8.4-1bionic.20200606.015829`
+### `dpkg` source package: `ros-eloquent-rclcpp-components=0.8.5-1bionic.20201207.164148`
 
 Binary Packages:
 
-- `ros-eloquent-rclcpp-components=0.8.4-1bionic.20200606.015829`
+- `ros-eloquent-rclcpp-components=0.8.5-1bionic.20201207.164148`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5096,11 +5112,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rclcpp-lifecycle=0.8.4-1bionic.20200606.014852`
+### `dpkg` source package: `ros-eloquent-rclcpp-lifecycle=0.8.5-1bionic.20201207.164033`
 
 Binary Packages:
 
-- `ros-eloquent-rclcpp-lifecycle=0.8.4-1bionic.20200606.014852`
+- `ros-eloquent-rclcpp-lifecycle=0.8.5-1bionic.20201207.164033`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5110,11 +5126,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rclcpp=0.8.4-1bionic.20200606.012714`
+### `dpkg` source package: `ros-eloquent-rclcpp=0.8.5-1bionic.20201207.162654`
 
 Binary Packages:
 
-- `ros-eloquent-rclcpp=0.8.4-1bionic.20200606.012714`
+- `ros-eloquent-rclcpp=0.8.5-1bionic.20201207.162654`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5124,11 +5140,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rclpy=0.8.4-1bionic.20200606.021544`
+### `dpkg` source package: `ros-eloquent-rclpy=0.8.5-1bionic.20201207.162813`
 
 Binary Packages:
 
-- `ros-eloquent-rclpy=0.8.4-1bionic.20200606.021544`
+- `ros-eloquent-rclpy=0.8.5-1bionic.20201207.162813`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5138,11 +5154,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rcpputils=0.2.1-1bionic.20200605.230823`
+### `dpkg` source package: `ros-eloquent-rcpputils=0.2.1-1bionic.20201204.215559`
 
 Binary Packages:
 
-- `ros-eloquent-rcpputils=0.2.1-1bionic.20200605.230823`
+- `ros-eloquent-rcpputils=0.2.1-1bionic.20201204.215559`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5152,11 +5168,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rcutils=0.8.4-1bionic.20200605.230207`
+### `dpkg` source package: `ros-eloquent-rcutils=0.8.5-1bionic.20201204.215237`
 
 Binary Packages:
 
-- `ros-eloquent-rcutils=0.8.4-1bionic.20200605.230207`
+- `ros-eloquent-rcutils=0.8.5-1bionic.20201204.215237`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5166,11 +5182,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rmw-fastrtps-cpp=0.8.1-1bionic.20200605.235017`
+### `dpkg` source package: `ros-eloquent-rmw-fastrtps-cpp=0.8.2-1bionic.20201207.150536`
 
 Binary Packages:
 
-- `ros-eloquent-rmw-fastrtps-cpp=0.8.1-1bionic.20200605.235017`
+- `ros-eloquent-rmw-fastrtps-cpp=0.8.2-1bionic.20201207.150536`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5180,11 +5196,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rmw-fastrtps-shared-cpp=0.8.1-1bionic.20200605.231351`
+### `dpkg` source package: `ros-eloquent-rmw-fastrtps-shared-cpp=0.8.2-1bionic.20201207.145922`
 
 Binary Packages:
 
-- `ros-eloquent-rmw-fastrtps-shared-cpp=0.8.1-1bionic.20200605.231351`
+- `ros-eloquent-rmw-fastrtps-shared-cpp=0.8.2-1bionic.20201207.145922`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5194,11 +5210,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rmw-implementation-cmake=0.8.1-1bionic.20200605.225107`
+### `dpkg` source package: `ros-eloquent-rmw-implementation-cmake=0.8.1-1bionic.20201204.214731`
 
 Binary Packages:
 
-- `ros-eloquent-rmw-implementation-cmake=0.8.1-1bionic.20200605.225107`
+- `ros-eloquent-rmw-implementation-cmake=0.8.1-1bionic.20201204.214731`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5208,11 +5224,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rmw-implementation=0.8.2-2bionic.20200605.235845`
+### `dpkg` source package: `ros-eloquent-rmw-implementation=0.8.2-2bionic.20201207.150907`
 
 Binary Packages:
 
-- `ros-eloquent-rmw-implementation=0.8.2-2bionic.20200605.235845`
+- `ros-eloquent-rmw-implementation=0.8.2-2bionic.20201207.150907`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5222,11 +5238,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rmw=0.8.1-1bionic.20200605.230817`
+### `dpkg` source package: `ros-eloquent-rmw=0.8.1-1bionic.20201207.145507`
 
 Binary Packages:
 
-- `ros-eloquent-rmw=0.8.1-1bionic.20200605.230817`
+- `ros-eloquent-rmw=0.8.1-1bionic.20201207.145507`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5236,11 +5252,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-robot-state-publisher=2.3.1-1bionic.20200803.125322`
+### `dpkg` source package: `ros-eloquent-robot-state-publisher=2.3.1-1bionic.20201207.170507`
 
 Binary Packages:
 
-- `ros-eloquent-robot-state-publisher=2.3.1-1bionic.20200803.125322`
+- `ros-eloquent-robot-state-publisher=2.3.1-1bionic.20201207.170507`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5250,11 +5266,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ros-base=0.8.4-1bionic.20200803.125622`
+### `dpkg` source package: `ros-eloquent-ros-base=0.8.5-1bionic.20201210.214359`
 
 Binary Packages:
 
-- `ros-eloquent-ros-base=0.8.4-1bionic.20200803.125622`
+- `ros-eloquent-ros-base=0.8.5-1bionic.20201210.214359`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5264,11 +5280,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ros-core=0.8.4-1bionic.20200618.131206`
+### `dpkg` source package: `ros-eloquent-ros-core=0.8.5-1bionic.20201210.214147`
 
 Binary Packages:
 
-- `ros-eloquent-ros-core=0.8.4-1bionic.20200618.131206`
+- `ros-eloquent-ros-core=0.8.5-1bionic.20201210.214147`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5278,11 +5294,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ros-environment=2.4.1-1bionic.20200605.222948`
+### `dpkg` source package: `ros-eloquent-ros-environment=2.4.1-1bionic.20201130.231757`
 
 Binary Packages:
 
-- `ros-eloquent-ros-environment=2.4.1-1bionic.20200605.222948`
+- `ros-eloquent-ros-environment=2.4.1-1bionic.20201130.231757`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5292,11 +5308,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ros-workspace=1.0.1-1bionic.20200605.215806`
+### `dpkg` source package: `ros-eloquent-ros-workspace=1.0.1-1bionic.20201130.231515`
 
 Binary Packages:
 
-- `ros-eloquent-ros-workspace=1.0.1-1bionic.20200605.215806`
+- `ros-eloquent-ros-workspace=1.0.1-1bionic.20201130.231515`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5306,11 +5322,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ros2action=0.8.7-1bionic.20200606.030437`
+### `dpkg` source package: `ros-eloquent-ros2action=0.8.8-1bionic.20201207.172541`
 
 Binary Packages:
 
-- `ros-eloquent-ros2action=0.8.7-1bionic.20200606.030437`
+- `ros-eloquent-ros2action=0.8.8-1bionic.20201207.172541`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5320,11 +5336,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ros2cli=0.8.7-1bionic.20200606.023250`
+### `dpkg` source package: `ros-eloquent-ros2cli=0.8.8-1bionic.20201207.163704`
 
 Binary Packages:
 
-- `ros-eloquent-ros2cli=0.8.7-1bionic.20200606.023250`
+- `ros-eloquent-ros2cli=0.8.8-1bionic.20201207.163704`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5334,11 +5350,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ros2component=0.8.7-1bionic.20200606.032839`
+### `dpkg` source package: `ros-eloquent-ros2component=0.8.8-1bionic.20201207.173301`
 
 Binary Packages:
 
-- `ros-eloquent-ros2component=0.8.7-1bionic.20200606.032839`
+- `ros-eloquent-ros2component=0.8.8-1bionic.20201207.173301`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5348,11 +5364,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ros2doctor=0.8.7-1bionic.20200606.024217`
+### `dpkg` source package: `ros-eloquent-ros2doctor=0.8.8-1bionic.20201207.172414`
 
 Binary Packages:
 
-- `ros-eloquent-ros2doctor=0.8.7-1bionic.20200606.024217`
+- `ros-eloquent-ros2doctor=0.8.8-1bionic.20201207.172414`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5362,11 +5378,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ros2interface=0.8.7-1bionic.20200606.031013`
+### `dpkg` source package: `ros-eloquent-ros2interface=0.8.8-1bionic.20201207.172507`
 
 Binary Packages:
 
-- `ros-eloquent-ros2interface=0.8.7-1bionic.20200606.031013`
+- `ros-eloquent-ros2interface=0.8.8-1bionic.20201207.172507`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5376,11 +5392,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ros2launch=0.9.5-1bionic.20200606.031710`
+### `dpkg` source package: `ros-eloquent-ros2launch=0.9.6-1bionic.20201207.173413`
 
 Binary Packages:
 
-- `ros-eloquent-ros2launch=0.9.5-1bionic.20200606.031710`
+- `ros-eloquent-ros2launch=0.9.6-1bionic.20201207.173413`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5390,11 +5406,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ros2lifecycle=0.8.7-1bionic.20200606.031928`
+### `dpkg` source package: `ros-eloquent-ros2lifecycle=0.8.8-1bionic.20201207.173011`
 
 Binary Packages:
 
-- `ros-eloquent-ros2lifecycle=0.8.7-1bionic.20200606.031928`
+- `ros-eloquent-ros2lifecycle=0.8.8-1bionic.20201207.173011`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5404,11 +5420,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ros2msg=0.8.7-1bionic.20200606.031019`
+### `dpkg` source package: `ros-eloquent-ros2msg=0.8.8-1bionic.20201207.172418`
 
 Binary Packages:
 
-- `ros-eloquent-ros2msg=0.8.7-1bionic.20200606.031019`
+- `ros-eloquent-ros2msg=0.8.8-1bionic.20201207.172418`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5418,11 +5434,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ros2multicast=0.8.7-1bionic.20200606.024223`
+### `dpkg` source package: `ros-eloquent-ros2multicast=0.8.8-1bionic.20201207.172726`
 
 Binary Packages:
 
-- `ros-eloquent-ros2multicast=0.8.7-1bionic.20200606.024223`
+- `ros-eloquent-ros2multicast=0.8.8-1bionic.20201207.172726`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5432,11 +5448,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ros2node=0.8.7-1bionic.20200606.031025`
+### `dpkg` source package: `ros-eloquent-ros2node=0.8.8-1bionic.20201207.172636`
 
 Binary Packages:
 
-- `ros-eloquent-ros2node=0.8.7-1bionic.20200606.031025`
+- `ros-eloquent-ros2node=0.8.8-1bionic.20201207.172636`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5446,11 +5462,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ros2param=0.8.7-1bionic.20200606.031939`
+### `dpkg` source package: `ros-eloquent-ros2param=0.8.8-1bionic.20201207.173025`
 
 Binary Packages:
 
-- `ros-eloquent-ros2param=0.8.7-1bionic.20200606.031939`
+- `ros-eloquent-ros2param=0.8.8-1bionic.20201207.173025`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5460,11 +5476,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ros2pkg=0.8.7-1bionic.20200606.031127`
+### `dpkg` source package: `ros-eloquent-ros2pkg=0.8.8-1bionic.20201207.172712`
 
 Binary Packages:
 
-- `ros-eloquent-ros2pkg=0.8.7-1bionic.20200606.031127`
+- `ros-eloquent-ros2pkg=0.8.8-1bionic.20201207.172712`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5474,11 +5490,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ros2run=0.8.7-1bionic.20200606.031712`
+### `dpkg` source package: `ros-eloquent-ros2run=0.8.8-1bionic.20201207.173424`
 
 Binary Packages:
 
-- `ros-eloquent-ros2run=0.8.7-1bionic.20200606.031712`
+- `ros-eloquent-ros2run=0.8.8-1bionic.20201207.173424`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5488,11 +5504,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ros2service=0.8.7-1bionic.20200606.031126`
+### `dpkg` source package: `ros-eloquent-ros2service=0.8.8-1bionic.20201207.172654`
 
 Binary Packages:
 
-- `ros-eloquent-ros2service=0.8.7-1bionic.20200606.031126`
+- `ros-eloquent-ros2service=0.8.8-1bionic.20201207.172654`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5502,11 +5518,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ros2srv=0.8.7-1bionic.20200606.031138`
+### `dpkg` source package: `ros-eloquent-ros2srv=0.8.8-1bionic.20201207.172523`
 
 Binary Packages:
 
-- `ros-eloquent-ros2srv=0.8.7-1bionic.20200606.031138`
+- `ros-eloquent-ros2srv=0.8.8-1bionic.20201207.172523`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5516,11 +5532,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-ros2topic=0.8.7-1bionic.20200606.031144`
+### `dpkg` source package: `ros-eloquent-ros2topic=0.8.8-1bionic.20201207.172634`
 
 Binary Packages:
 
-- `ros-eloquent-ros2topic=0.8.7-1bionic.20200606.031144`
+- `ros-eloquent-ros2topic=0.8.8-1bionic.20201207.172634`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5530,11 +5546,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rosgraph-msgs=0.8.0-1bionic.20200606.001912`
+### `dpkg` source package: `ros-eloquent-rosgraph-msgs=0.8.0-1bionic.20201207.152627`
 
 Binary Packages:
 
-- `ros-eloquent-rosgraph-msgs=0.8.0-1bionic.20200606.001912`
+- `ros-eloquent-rosgraph-msgs=0.8.0-1bionic.20201207.152627`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5544,11 +5560,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rosidl-adapter=0.8.2-1bionic.20200605.225116`
+### `dpkg` source package: `ros-eloquent-rosidl-adapter=0.8.3-1bionic.20201207.144249`
 
 Binary Packages:
 
-- `ros-eloquent-rosidl-adapter=0.8.2-1bionic.20200605.225116`
+- `ros-eloquent-rosidl-adapter=0.8.3-1bionic.20201207.144249`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5558,11 +5574,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rosidl-cmake=0.8.2-1bionic.20200605.225525`
+### `dpkg` source package: `ros-eloquent-rosidl-cmake=0.8.3-1bionic.20201207.144905`
 
 Binary Packages:
 
-- `ros-eloquent-rosidl-cmake=0.8.2-1bionic.20200605.225525`
+- `ros-eloquent-rosidl-cmake=0.8.3-1bionic.20201207.144905`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5572,11 +5588,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rosidl-default-generators=0.8.0-1bionic.20200606.000830`
+### `dpkg` source package: `ros-eloquent-rosidl-default-generators=0.8.0-1bionic.20201207.151832`
 
 Binary Packages:
 
-- `ros-eloquent-rosidl-default-generators=0.8.0-1bionic.20200606.000830`
+- `ros-eloquent-rosidl-default-generators=0.8.0-1bionic.20201207.151832`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5586,11 +5602,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rosidl-default-runtime=0.8.0-1bionic.20200606.000839`
+### `dpkg` source package: `ros-eloquent-rosidl-default-runtime=0.8.0-1bionic.20201207.151901`
 
 Binary Packages:
 
-- `ros-eloquent-rosidl-default-runtime=0.8.0-1bionic.20200606.000839`
+- `ros-eloquent-rosidl-default-runtime=0.8.0-1bionic.20201207.151901`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5600,11 +5616,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rosidl-generator-c=0.8.2-1bionic.20200605.225658`
+### `dpkg` source package: `ros-eloquent-rosidl-generator-c=0.8.3-1bionic.20201207.145137`
 
 Binary Packages:
 
-- `ros-eloquent-rosidl-generator-c=0.8.2-1bionic.20200605.225658`
+- `ros-eloquent-rosidl-generator-c=0.8.3-1bionic.20201207.145137`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5614,11 +5630,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rosidl-generator-cpp=0.8.2-1bionic.20200605.225844`
+### `dpkg` source package: `ros-eloquent-rosidl-generator-cpp=0.8.3-1bionic.20201207.145652`
 
 Binary Packages:
 
-- `ros-eloquent-rosidl-generator-cpp=0.8.2-1bionic.20200605.225844`
+- `ros-eloquent-rosidl-generator-cpp=0.8.3-1bionic.20201207.145652`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5628,11 +5644,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rosidl-generator-py=0.8.1-1bionic.20200606.000617`
+### `dpkg` source package: `ros-eloquent-rosidl-generator-py=0.8.2-1bionic.20201207.151431`
 
 Binary Packages:
 
-- `ros-eloquent-rosidl-generator-py=0.8.1-1bionic.20200606.000617`
+- `ros-eloquent-rosidl-generator-py=0.8.2-1bionic.20201207.151431`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5642,11 +5658,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rosidl-parser=0.8.2-1bionic.20200605.225332`
+### `dpkg` source package: `ros-eloquent-rosidl-parser=0.8.3-1bionic.20201207.144447`
 
 Binary Packages:
 
-- `ros-eloquent-rosidl-parser=0.8.2-1bionic.20200605.225332`
+- `ros-eloquent-rosidl-parser=0.8.3-1bionic.20201207.144447`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5656,11 +5672,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rosidl-runtime-py=0.8.2-1bionic.20200606.010524`
+### `dpkg` source package: `ros-eloquent-rosidl-runtime-py=0.8.2-1bionic.20201207.155246`
 
 Binary Packages:
 
-- `ros-eloquent-rosidl-runtime-py=0.8.2-1bionic.20200606.010524`
+- `ros-eloquent-rosidl-runtime-py=0.8.2-1bionic.20201207.155246`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5670,11 +5686,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rosidl-typesupport-c=0.8.0-2bionic.20200606.000133`
+### `dpkg` source package: `ros-eloquent-rosidl-typesupport-c=0.8.1-1bionic.20201207.151111`
 
 Binary Packages:
 
-- `ros-eloquent-rosidl-typesupport-c=0.8.0-2bionic.20200606.000133`
+- `ros-eloquent-rosidl-typesupport-c=0.8.1-1bionic.20201207.151111`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5684,11 +5700,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rosidl-typesupport-cpp=0.8.0-2bionic.20200606.000530`
+### `dpkg` source package: `ros-eloquent-rosidl-typesupport-cpp=0.8.1-1bionic.20201207.151320`
 
 Binary Packages:
 
-- `ros-eloquent-rosidl-typesupport-cpp=0.8.0-2bionic.20200606.000530`
+- `ros-eloquent-rosidl-typesupport-cpp=0.8.1-1bionic.20201207.151320`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5698,11 +5714,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rosidl-typesupport-fastrtps-c=0.8.0-1bionic.20200605.232147`
+### `dpkg` source package: `ros-eloquent-rosidl-typesupport-fastrtps-c=0.8.0-1bionic.20201207.150303`
 
 Binary Packages:
 
-- `ros-eloquent-rosidl-typesupport-fastrtps-c=0.8.0-1bionic.20200605.232147`
+- `ros-eloquent-rosidl-typesupport-fastrtps-c=0.8.0-1bionic.20201207.150303`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5712,11 +5728,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rosidl-typesupport-fastrtps-cpp=0.8.0-1bionic.20200605.231532`
+### `dpkg` source package: `ros-eloquent-rosidl-typesupport-fastrtps-cpp=0.8.0-1bionic.20201207.145943`
 
 Binary Packages:
 
-- `ros-eloquent-rosidl-typesupport-fastrtps-cpp=0.8.0-1bionic.20200605.231532`
+- `ros-eloquent-rosidl-typesupport-fastrtps-cpp=0.8.0-1bionic.20201207.145943`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5726,11 +5742,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rosidl-typesupport-interface=0.8.2-1bionic.20200605.225123`
+### `dpkg` source package: `ros-eloquent-rosidl-typesupport-interface=0.8.3-1bionic.20201207.144133`
 
 Binary Packages:
 
-- `ros-eloquent-rosidl-typesupport-interface=0.8.2-1bionic.20200605.225123`
+- `ros-eloquent-rosidl-typesupport-interface=0.8.3-1bionic.20201207.144133`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5740,11 +5756,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rosidl-typesupport-introspection-c=0.8.2-1bionic.20200605.225903`
+### `dpkg` source package: `ros-eloquent-rosidl-typesupport-introspection-c=0.8.3-1bionic.20201207.145430`
 
 Binary Packages:
 
-- `ros-eloquent-rosidl-typesupport-introspection-c=0.8.2-1bionic.20200605.225903`
+- `ros-eloquent-rosidl-typesupport-introspection-c=0.8.3-1bionic.20201207.145430`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5754,11 +5770,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-rosidl-typesupport-introspection-cpp=0.8.2-1bionic.20200605.230204`
+### `dpkg` source package: `ros-eloquent-rosidl-typesupport-introspection-cpp=0.8.3-1bionic.20201207.150133`
 
 Binary Packages:
 
-- `ros-eloquent-rosidl-typesupport-introspection-cpp=0.8.2-1bionic.20200605.230204`
+- `ros-eloquent-rosidl-typesupport-introspection-cpp=0.8.3-1bionic.20201207.150133`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5768,11 +5784,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-sensor-msgs=0.8.1-1bionic.20200606.011414`
+### `dpkg` source package: `ros-eloquent-sensor-msgs=0.8.1-1bionic.20201207.163650`
 
 Binary Packages:
 
-- `ros-eloquent-sensor-msgs=0.8.1-1bionic.20200606.011414`
+- `ros-eloquent-sensor-msgs=0.8.1-1bionic.20201207.163650`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5782,11 +5798,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-shape-msgs=0.8.1-1bionic.20200606.011045`
+### `dpkg` source package: `ros-eloquent-shape-msgs=0.8.1-1bionic.20201207.162416`
 
 Binary Packages:
 
-- `ros-eloquent-shape-msgs=0.8.1-1bionic.20200606.011045`
+- `ros-eloquent-shape-msgs=0.8.1-1bionic.20201207.162416`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5796,11 +5812,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-sros2-cmake=0.8.2-1bionic.20200618.131019`
+### `dpkg` source package: `ros-eloquent-sros2-cmake=0.8.2-1bionic.20201207.173438`
 
 Binary Packages:
 
-- `ros-eloquent-sros2-cmake=0.8.2-1bionic.20200618.131019`
+- `ros-eloquent-sros2-cmake=0.8.2-1bionic.20201207.173438`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5810,11 +5826,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-sros2=0.8.2-1bionic.20200618.130726`
+### `dpkg` source package: `ros-eloquent-sros2=0.8.2-1bionic.20201207.172800`
 
 Binary Packages:
 
-- `ros-eloquent-sros2=0.8.2-1bionic.20200618.130726`
+- `ros-eloquent-sros2=0.8.2-1bionic.20201207.172800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5824,11 +5840,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-std-msgs=0.8.1-1bionic.20200606.002627`
+### `dpkg` source package: `ros-eloquent-std-msgs=0.8.1-1bionic.20201207.153533`
 
 Binary Packages:
 
-- `ros-eloquent-std-msgs=0.8.1-1bionic.20200606.002627`
+- `ros-eloquent-std-msgs=0.8.1-1bionic.20201207.153533`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5838,11 +5854,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-std-srvs=0.8.1-1bionic.20200606.001251`
+### `dpkg` source package: `ros-eloquent-std-srvs=0.8.1-1bionic.20201207.152446`
 
 Binary Packages:
 
-- `ros-eloquent-std-srvs=0.8.1-1bionic.20200606.001251`
+- `ros-eloquent-std-srvs=0.8.1-1bionic.20201207.152446`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5852,11 +5868,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-stereo-msgs=0.8.1-1bionic.20200606.014255`
+### `dpkg` source package: `ros-eloquent-stereo-msgs=0.8.1-1bionic.20201207.165750`
 
 Binary Packages:
 
-- `ros-eloquent-stereo-msgs=0.8.1-1bionic.20200606.014255`
+- `ros-eloquent-stereo-msgs=0.8.1-1bionic.20201207.165750`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5866,11 +5882,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-tf2-eigen=0.12.5-1bionic.20200606.030745`
+### `dpkg` source package: `ros-eloquent-tf2-eigen=0.12.6-1bionic.20201207.170545`
 
 Binary Packages:
 
-- `ros-eloquent-tf2-eigen=0.12.5-1bionic.20200606.030745`
+- `ros-eloquent-tf2-eigen=0.12.6-1bionic.20201207.170545`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5880,11 +5896,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-tf2-geometry-msgs=0.12.5-1bionic.20200606.030944`
+### `dpkg` source package: `ros-eloquent-tf2-geometry-msgs=0.12.6-1bionic.20201207.170549`
 
 Binary Packages:
 
-- `ros-eloquent-tf2-geometry-msgs=0.12.5-1bionic.20200606.030944`
+- `ros-eloquent-tf2-geometry-msgs=0.12.6-1bionic.20201207.170549`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5894,11 +5910,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-tf2-kdl=0.12.5-1bionic.20200606.030952`
+### `dpkg` source package: `ros-eloquent-tf2-kdl=0.12.6-1bionic.20201207.170047`
 
 Binary Packages:
 
-- `ros-eloquent-tf2-kdl=0.12.5-1bionic.20200606.030952`
+- `ros-eloquent-tf2-kdl=0.12.6-1bionic.20201207.170047`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5908,11 +5924,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-tf2-msgs=0.12.5-1bionic.20200606.005510`
+### `dpkg` source package: `ros-eloquent-tf2-msgs=0.12.6-1bionic.20201207.162337`
 
 Binary Packages:
 
-- `ros-eloquent-tf2-msgs=0.12.5-1bionic.20200606.005510`
+- `ros-eloquent-tf2-msgs=0.12.6-1bionic.20201207.162337`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5922,11 +5938,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-tf2-py=0.12.5-1bionic.20200606.024559`
+### `dpkg` source package: `ros-eloquent-tf2-py=0.12.6-1bionic.20201207.163210`
 
 Binary Packages:
 
-- `ros-eloquent-tf2-py=0.12.5-1bionic.20200606.024559`
+- `ros-eloquent-tf2-py=0.12.6-1bionic.20201207.163210`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5936,11 +5952,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-tf2-ros=0.12.5-1bionic.20200606.025452`
+### `dpkg` source package: `ros-eloquent-tf2-ros=0.12.6-1bionic.20201207.165548`
 
 Binary Packages:
 
-- `ros-eloquent-tf2-ros=0.12.5-1bionic.20200606.025452`
+- `ros-eloquent-tf2-ros=0.12.6-1bionic.20201207.165548`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5950,11 +5966,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-tf2-sensor-msgs=0.12.5-1bionic.20200606.030958`
+### `dpkg` source package: `ros-eloquent-tf2-sensor-msgs=0.12.6-1bionic.20201207.172036`
 
 Binary Packages:
 
-- `ros-eloquent-tf2-sensor-msgs=0.12.5-1bionic.20200606.030958`
+- `ros-eloquent-tf2-sensor-msgs=0.12.6-1bionic.20201207.172036`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5964,11 +5980,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-tf2=0.12.5-1bionic.20200606.011109`
+### `dpkg` source package: `ros-eloquent-tf2=0.12.6-1bionic.20201207.162518`
 
 Binary Packages:
 
-- `ros-eloquent-tf2=0.12.5-1bionic.20200606.011109`
+- `ros-eloquent-tf2=0.12.6-1bionic.20201207.162518`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5978,11 +5994,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-tinydir-vendor=1.1.1-1bionic.20200605.222718`
+### `dpkg` source package: `ros-eloquent-tinydir-vendor=1.1.1-1bionic.20201130.232552`
 
 Binary Packages:
 
-- `ros-eloquent-tinydir-vendor=1.1.1-1bionic.20200605.222718`
+- `ros-eloquent-tinydir-vendor=1.1.1-1bionic.20201130.232552`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5992,11 +6008,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-tinyxml-vendor=0.7.0-1bionic.20200605.222811`
+### `dpkg` source package: `ros-eloquent-tinyxml-vendor=0.7.0-1bionic.20201130.232626`
 
 Binary Packages:
 
-- `ros-eloquent-tinyxml-vendor=0.7.0-1bionic.20200605.222811`
+- `ros-eloquent-tinyxml-vendor=0.7.0-1bionic.20201130.232626`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6006,11 +6022,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-tinyxml2-vendor=0.6.1-1bionic.20200605.222730`
+### `dpkg` source package: `ros-eloquent-tinyxml2-vendor=0.6.1-1bionic.20201130.232618`
 
 Binary Packages:
 
-- `ros-eloquent-tinyxml2-vendor=0.6.1-1bionic.20200605.222730`
+- `ros-eloquent-tinyxml2-vendor=0.6.1-1bionic.20201130.232618`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6020,11 +6036,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-tracetools=0.2.12-1bionic.20200605.225547`
+### `dpkg` source package: `ros-eloquent-tracetools=0.2.12-1bionic.20201204.214909`
 
 Binary Packages:
 
-- `ros-eloquent-tracetools=0.2.12-1bionic.20200605.225547`
+- `ros-eloquent-tracetools=0.2.12-1bionic.20201204.214909`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6034,11 +6050,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-trajectory-msgs=0.8.1-1bionic.20200606.011318`
+### `dpkg` source package: `ros-eloquent-trajectory-msgs=0.8.1-1bionic.20201207.163644`
 
 Binary Packages:
 
-- `ros-eloquent-trajectory-msgs=0.8.1-1bionic.20200606.011318`
+- `ros-eloquent-trajectory-msgs=0.8.1-1bionic.20201207.163644`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6048,11 +6064,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-uncrustify-vendor=1.3.0-1bionic.20200605.223930`
+### `dpkg` source package: `ros-eloquent-uncrustify-vendor=1.3.0-1bionic.20201201.001223`
 
 Binary Packages:
 
-- `ros-eloquent-uncrustify-vendor=1.3.0-1bionic.20200605.223930`
+- `ros-eloquent-uncrustify-vendor=1.3.0-1bionic.20201201.001223`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6062,11 +6078,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-unique-identifier-msgs=2.1.1-1bionic.20200606.001142`
+### `dpkg` source package: `ros-eloquent-unique-identifier-msgs=2.1.1-1bionic.20201207.152226`
 
 Binary Packages:
 
-- `ros-eloquent-unique-identifier-msgs=2.1.1-1bionic.20200606.001142`
+- `ros-eloquent-unique-identifier-msgs=2.1.1-1bionic.20201207.152226`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6076,11 +6092,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-urdf=2.2.0-1bionic.20200605.225643`
+### `dpkg` source package: `ros-eloquent-urdf=2.2.0-1bionic.20201204.214912`
 
 Binary Packages:
 
-- `ros-eloquent-urdf=2.2.0-1bionic.20200605.225643`
+- `ros-eloquent-urdf=2.2.0-1bionic.20201204.214912`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6090,11 +6106,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-urdfdom-headers=1.0.4-1bionic.20200605.222815`
+### `dpkg` source package: `ros-eloquent-urdfdom-headers=1.0.4-1bionic.20201130.232650`
 
 Binary Packages:
 
-- `ros-eloquent-urdfdom-headers=1.0.4-1bionic.20200605.222815`
+- `ros-eloquent-urdfdom-headers=1.0.4-1bionic.20201130.232650`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6104,11 +6120,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-urdfdom=2.2.0-1bionic.20200605.224413`
+### `dpkg` source package: `ros-eloquent-urdfdom=2.2.0-1bionic.20201201.001640`
 
 Binary Packages:
 
-- `ros-eloquent-urdfdom=2.2.0-1bionic.20200605.224413`
+- `ros-eloquent-urdfdom=2.2.0-1bionic.20201201.001640`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6118,11 +6134,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-eloquent-visualization-msgs=0.8.1-1bionic.20200606.011804`
+### `dpkg` source package: `ros-eloquent-visualization-msgs=0.8.1-1bionic.20201207.161841`
 
 Binary Packages:
 
-- `ros-eloquent-visualization-msgs=0.8.1-1bionic.20200606.011804`
+- `ros-eloquent-visualization-msgs=0.8.1-1bionic.20201207.161841`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.

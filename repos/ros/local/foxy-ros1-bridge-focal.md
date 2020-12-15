@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d273b9cce8a2f241f087f4856760b1181b61c8d88dd1fd6fa64f5a18999d8f96`
-- Created: `2020-12-02T19:30:50.358877169Z`
+- Image ID: `sha256:90a5afbb5c912619d29d5ab5007950a9f0755c6a37d9bda5b3b2478948fe5e39`
+- Created: `2020-12-14T22:39:58.312270235Z`
 - Virtual Size: ~ 1.21 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2925,14 +2925,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.4.0-54.60
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-54.60.dsc' linux_5.4.0-54.60.dsc 7220 SHA512:af2ff6ce8c91b773dcd80cdfaaf0eb4ed7a6c22ad744cbfe0aae3e0ffe58fbd9447671541abb3bf72e27c8d1ec24589432a5bf3732d6d4366a0c4810a8c33502
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-54.60.diff.gz' linux_5.4.0-54.60.diff.gz 5474703 SHA512:5b89beb0763ce230c6a3d99adca7027a251544802b3e4e829a937727e9a7e3fe1cb464df530323ad34fb1197f1be9df72581e22f4e5e3ddd56f05829a33b458a
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.18+dfsg-1`
 
@@ -5900,11 +5895,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-demo-nodes-cpp=0.9.3-1focal.20201103.154318`
+### `dpkg` source package: `ros-foxy-demo-nodes-cpp=0.9.3-1focal.20201210.071633`
 
 Binary Packages:
 
-- `ros-foxy-demo-nodes-cpp=0.9.3-1focal.20201103.154318`
+- `ros-foxy-demo-nodes-cpp=0.9.3-1focal.20201210.071633`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5914,11 +5909,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-demo-nodes-py=0.9.3-1focal.20201103.151129`
+### `dpkg` source package: `ros-foxy-demo-nodes-py=0.9.3-1focal.20201210.062959`
 
 Binary Packages:
 
-- `ros-foxy-demo-nodes-py=0.9.3-1focal.20201103.151129`
+- `ros-foxy-demo-nodes-py=0.9.3-1focal.20201210.062959`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5970,11 +5965,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-example-interfaces=0.9.0-1focal.20201013.212709`
+### `dpkg` source package: `ros-foxy-example-interfaces=0.9.0-1focal.20201210.055612`
 
 Binary Packages:
 
-- `ros-foxy-example-interfaces=0.9.0-1focal.20201013.212709`
+- `ros-foxy-example-interfaces=0.9.0-1focal.20201210.055612`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6040,11 +6035,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-gazebo-msgs=3.5.0-2focal.20201013.215752`
+### `dpkg` source package: `ros-foxy-gazebo-msgs=3.5.0-2focal.20201210.065038`
 
 Binary Packages:
 
-- `ros-foxy-gazebo-msgs=3.5.0-2focal.20201013.215752`
+- `ros-foxy-gazebo-msgs=3.5.0-2focal.20201210.065038`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6684,11 +6679,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ros1-bridge=0.9.4-1focal.20201103.155233`
+### `dpkg` source package: `ros-foxy-ros1-bridge=0.9.6-1focal.20201210.072645`
 
 Binary Packages:
 
-- `ros-foxy-ros1-bridge=0.9.4-1focal.20201103.155233`
+- `ros-foxy-ros1-bridge=0.9.6-1focal.20201210.072645`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.

@@ -4034,15 +4034,9 @@ Licenses: (parsed from: `/usr/share/doc/libinput-bin/copyright`, `/usr/share/doc
 - `Expat`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libinput=1.15.5-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.15.5-1ubuntu0.1.dsc' libinput_1.15.5-1ubuntu0.1.dsc 2412 SHA512:bc8753413e5de5b066fe32f36ed9e582d6fef664ab30d6e46630e5de7cfc207cff63bb0a448bfe1967ac24fec2d8246e1d260751940d136de1c1f553ce275ad8
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.15.5.orig.tar.xz' libinput_1.15.5.orig.tar.xz 582800 SHA512:a0a3a325048841fc017e19d3bc5f5490605972ab9e2730dc5678bda7efb7a5b1fa6f531f3c8abd8393899ec383d8d2bcfd586eacee04fc1fbda0e02ba2af956a
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.15.5.orig.tar.xz.asc' libinput_1.15.5.orig.tar.xz.asc 195 SHA512:b2fa98865d3b742277a3d3a003d09874f966b6e38fa3ed041247a81b8b4b91929175de3ade325666164bcf02d7c23b7e378f9dd93fd8328fb993ed54a2ed316f
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.15.5-1ubuntu0.1.debian.tar.xz' libinput_1.15.5-1ubuntu0.1.debian.tar.xz 10420 SHA512:adb51ebc1ab8dd3d820a278ff83c7695acc83960d883a62bbd51638a055bd90293b5737252260cbbc10169df2cf2a93456cfe4273da6c90683af3b07eac01d5f
-```
 
 ### `dpkg` source package: `libjpeg-turbo=2.0.3-0ubuntu1.20.04.1`
 
@@ -5529,14 +5523,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.4.0-54.60
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-54.60.dsc' linux_5.4.0-54.60.dsc 7220 SHA512:af2ff6ce8c91b773dcd80cdfaaf0eb4ed7a6c22ad744cbfe0aae3e0ffe58fbd9447671541abb3bf72e27c8d1ec24589432a5bf3732d6d4366a0c4810a8c33502
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-54.60.diff.gz' linux_5.4.0-54.60.diff.gz 5474703 SHA512:5b89beb0763ce230c6a3d99adca7027a251544802b3e4e829a937727e9a7e3fe1cb464df530323ad34fb1197f1be9df72581e22f4e5e3ddd56f05829a33b458a
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.18+dfsg-1`
 
