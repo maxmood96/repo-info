@@ -1,7 +1,7 @@
 ## `buildpack-deps:focal-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:9c11db7f74908b61102b3902b8d8d25ca773b6ff22614640c3bb3801dd7abeb0
+$ docker pull buildpack-deps@sha256:10cbceac40c86d67286acb850643c7e7d213290b695febc80a78c091f3f50045
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -67,14 +67,14 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 ### `buildpack-deps:focal-curl` - linux; arm variant v7
 
 ```console
-$ docker pull buildpack-deps@sha256:136a954e29f6dbff56cd1825a6bb709567be4ca5f50af4b914c84876bd095e46
+$ docker pull buildpack-deps@sha256:005bfc9277d102655c43102cae4e590711ba53c66e2d3a979ca1333e77de1b8d
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.0 MB (32963893 bytes)**  
+-	Total Size: **33.9 MB (33923017 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:403ea7ba99c21d09981716f648a85c908d4366423104f097ac6a984dea28d984`
+-	Image ID: `sha256:b5996a636654e44615b7aeadad3b08e6772e9cdb7e17830585b7574373549cf9`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -88,9 +88,9 @@ RUN [ -z "$(apt-get indextargets)" ]
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 # Wed, 25 Nov 2020 22:59:48 GMT
 CMD ["/bin/bash"]
-# Wed, 25 Nov 2020 23:43:51 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 25 Nov 2020 23:44:04 GMT
+# Thu, 17 Dec 2020 08:33:11 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 17 Dec 2020 08:33:25 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
@@ -107,13 +107,13 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 		Last Modified: Wed, 25 Nov 2020 23:01:51 GMT  
 		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41fb0bd62c55912048d71dd108905585472568013139492827ba8e6278e699eb`  
-		Last Modified: Wed, 25 Nov 2020 23:56:39 GMT  
-		Size: 5.9 MB (5874824 bytes)  
+	-	`sha256:f1362b5da38d17e7bbc3ffaddb092c50acff258fa26c0fbd475e7071df3ec796`  
+		Last Modified: Thu, 17 Dec 2020 08:58:58 GMT  
+		Size: 6.8 MB (6776297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4329ef915de42e0880392a4835f0982dcc96a666071555e45c89a20698c07223`  
-		Last Modified: Wed, 25 Nov 2020 23:56:38 GMT  
-		Size: 3.0 MB (3046844 bytes)  
+	-	`sha256:4f8f7a18781268e489d475d586833278549d7490aa795c997206795aa4263e99`  
+		Last Modified: Thu, 17 Dec 2020 08:58:58 GMT  
+		Size: 3.1 MB (3104495 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:focal-curl` - linux; arm64 variant v8
