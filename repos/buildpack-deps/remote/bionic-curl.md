@@ -1,7 +1,7 @@
 ## `buildpack-deps:bionic-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:20523cf406f15ca4e5b78b2acdd5bd4143b21a0d5b45e12a4668087c5527598d
+$ docker pull buildpack-deps@sha256:f7d426883e0e1efdb17af7fa47988958ccb14a776c9724dbe6d34c5cd6eec9fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,14 +16,14 @@ $ docker pull buildpack-deps@sha256:20523cf406f15ca4e5b78b2acdd5bd4143b21a0d5b45
 ### `buildpack-deps:bionic-curl` - linux; amd64
 
 ```console
-$ docker pull buildpack-deps@sha256:22aea07ac771029b28d0779faec1bde2b98198dce2b9cfc1a6941b69540f38f9
+$ docker pull buildpack-deps@sha256:79e960b84c497702c1a5162cad6639ddd1fd5789fce2d219b9f5adb4a672770d
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.8 MB (35760041 bytes)**  
+-	Total Size: **36.4 MB (36380635 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70e89c6e8774571b5ebea7f1bb1c80d24eff327f1d58e2323f34a3797950aed0`
+-	Image ID: `sha256:363650224ed6b7753ab19df5667ecab0ddc3b22a2aa5b5a4819d99ec3187fcbc`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -37,9 +37,9 @@ RUN [ -z "$(apt-get indextargets)" ]
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 # Wed, 25 Nov 2020 22:25:17 GMT
 CMD ["/bin/bash"]
-# Thu, 26 Nov 2020 01:03:34 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 26 Nov 2020 01:03:41 GMT
+# Thu, 17 Dec 2020 17:03:19 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 17 Dec 2020 17:03:32 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
@@ -56,13 +56,13 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 		Last Modified: Wed, 25 Nov 2020 22:26:30 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a26c5088ae21876d28df77889490b35e98e11c3d9551826225da1b3f861472e`  
-		Last Modified: Thu, 26 Nov 2020 01:15:29 GMT  
-		Size: 6.1 MB (6087151 bytes)  
+	-	`sha256:9ef9f64fd39147e3cc74b7cc764f3f9b55fa7345d3cf559c3c57e7673c964b08`  
+		Last Modified: Thu, 17 Dec 2020 17:28:58 GMT  
+		Size: 6.6 MB (6649946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:372d1b621114d2927b01cc4fc5ad59761f2afef32d0e552f5cf52bbbd8ee7b1e`  
-		Last Modified: Thu, 26 Nov 2020 01:15:29 GMT  
-		Size: 3.0 MB (2963822 bytes)  
+	-	`sha256:d395055c9b0984b8496739e8696cb317e05f50ef3d0d1631b7df3bd3e085f625`  
+		Last Modified: Thu, 17 Dec 2020 17:28:57 GMT  
+		Size: 3.0 MB (3021621 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:bionic-curl` - linux; arm variant v7
