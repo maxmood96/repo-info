@@ -1,7 +1,7 @@
 ## `buildpack-deps:groovy-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:2a0089c52d3bab7009c6a3c3a5a7ef4dd052c2aebd145704fd5821da7b7a5daa
+$ docker pull buildpack-deps@sha256:0d38a49cb5bbf9283efb41cd759cdc4bc1a6390ffeecc99fd6108870c417b53d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -189,14 +189,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ### `buildpack-deps:groovy-scm` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:403dcc8fdfdbb1e83b0c535c241b49bc210b58b938d5ceb6981d602df005f20b
+$ docker pull buildpack-deps@sha256:d90b0e8136e4114e47a3b8ae122e1d150318e524958b25ea76cc7995d134b28f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **109.6 MB (109600771 bytes)**  
+-	Total Size: **110.6 MB (110649249 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90ef20a924670527e63a1de3a97e525f8c374b3102f89dddc73de3265ad0f462`
+-	Image ID: `sha256:178cb8356c78e4d0e236814b8deb0b306ea808d6c59c5182279ecaa79d5e3364`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -210,11 +210,11 @@ RUN [ -z "$(apt-get indextargets)" ]
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 # Wed, 25 Nov 2020 22:24:22 GMT
 CMD ["/bin/bash"]
-# Thu, 26 Nov 2020 00:47:37 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 26 Nov 2020 00:49:15 GMT
+# Thu, 17 Dec 2020 12:38:04 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 17 Dec 2020 12:38:39 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 26 Nov 2020 00:53:13 GMT
+# Thu, 17 Dec 2020 12:41:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
@@ -231,17 +231,17 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 		Last Modified: Wed, 25 Nov 2020 22:27:55 GMT  
 		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e22111c1bee015895a0b3252f5191a6f49d3dbe68351917c4a92e27347362b6b`  
-		Last Modified: Thu, 26 Nov 2020 01:39:13 GMT  
-		Size: 5.2 MB (5150816 bytes)  
+	-	`sha256:352606e81d37cd930865d266dc5754ffae4c59b372a521b4b0d6f8b1ee04a7fb`  
+		Last Modified: Thu, 17 Dec 2020 13:55:35 GMT  
+		Size: 6.0 MB (6030921 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08f85cf958e805744355168c7cfd9c7f0d2a78b6cd30338b2488d9c7ea2a79e8`  
-		Last Modified: Thu, 26 Nov 2020 01:39:13 GMT  
-		Size: 4.4 MB (4449568 bytes)  
+	-	`sha256:7dfb72d0e13e43bd5e5c796dce1b4d2718bd26d1998ebe5189e5b96230d55ff0`  
+		Last Modified: Thu, 17 Dec 2020 13:55:31 GMT  
+		Size: 4.5 MB (4506566 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:036cebbf1b1e270ce84ee01fd1713acec7b53824a85664a55bcdb52f889fc9d4`  
-		Last Modified: Thu, 26 Nov 2020 01:39:42 GMT  
-		Size: 63.4 MB (63438890 bytes)  
+	-	`sha256:40d4792dab88047ed7c0e66ef4e4a522306905a2100aa0cea56df05f4e39097b`  
+		Last Modified: Thu, 17 Dec 2020 13:56:40 GMT  
+		Size: 63.6 MB (63550265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:groovy-scm` - linux; s390x

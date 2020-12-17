@@ -1,7 +1,7 @@
 ## `buildpack-deps:bullseye`
 
 ```console
-$ docker pull buildpack-deps@sha256:b88b4f4bdd7243d0bd21abeaeddfb08abbf0e539ad28f5c5426fa320ee5fdf47
+$ docker pull buildpack-deps@sha256:659c9ab44259e3d4b64171b37f9a802db91b590e1d97eab5f232f586a87c9f60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -318,14 +318,14 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 ### `buildpack-deps:bullseye` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:ff7148002f55864d7402d2bb5bdcbe2b7f15ed538c78e4c1929b5bcc58004b8b
+$ docker pull buildpack-deps@sha256:0b2b21bd2f597465c03101c62646325ba64499ec6f02f0ed8ea57fce10034cd6
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **463.2 MB (463238415 bytes)**  
+-	Total Size: **471.4 MB (471371421 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1a3ad8d009081db4c8d02956dd497508b84a85351a990501d8e7d4c1cac94408`
+-	Image ID: `sha256:d03b47d0cee4c98be6ea83641ecda0b90b1a7a1c12bd9396d295ac288619595e`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -333,13 +333,13 @@ $ docker pull buildpack-deps@sha256:ff7148002f55864d7402d2bb5bdcbe2b7f15ed538c78
 ADD file:9583240ab6aa83a5f964dedeba18905486e879b1839d8329fc20f91cfccdd8d1 in / 
 # Fri, 11 Dec 2020 03:32:06 GMT
 CMD ["bash"]
-# Fri, 11 Dec 2020 19:12:32 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 11 Dec 2020 19:13:10 GMT
+# Thu, 17 Dec 2020 11:15:38 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 17 Dec 2020 11:17:38 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 11 Dec 2020 19:14:43 GMT
+# Thu, 17 Dec 2020 11:20:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 11 Dec 2020 19:23:36 GMT
+# Thu, 17 Dec 2020 11:32:19 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
@@ -348,21 +348,21 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 		Last Modified: Fri, 11 Dec 2020 03:40:16 GMT  
 		Size: 57.1 MB (57079148 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31a764e770549a2e9fcf1a37155cdeabec6a1bbe84c9873e18d51d8d1c4b6228`  
-		Last Modified: Fri, 11 Dec 2020 19:50:33 GMT  
-		Size: 8.3 MB (8342665 bytes)  
+	-	`sha256:ac0f8189a228fc57571454349d96c296688da37380e9b69091c6bee4d5f29315`  
+		Last Modified: Thu, 17 Dec 2020 13:31:15 GMT  
+		Size: 8.4 MB (8363474 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8e75b76e059bba32797a570fe56ef47061e3ab409a710a1e409d2f231adaea9`  
-		Last Modified: Fri, 11 Dec 2020 19:50:30 GMT  
-		Size: 11.4 MB (11421077 bytes)  
+	-	`sha256:765c21425572bad2d7f45674f0aca68f65a0064c986d32df2a8bfa1a71486b9f`  
+		Last Modified: Thu, 17 Dec 2020 13:31:15 GMT  
+		Size: 11.4 MB (11421266 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:316286b554fff880f9be84885643662c6077dc4f49c3c6bbcdd4419ed1157d99`  
-		Last Modified: Fri, 11 Dec 2020 19:50:59 GMT  
-		Size: 58.1 MB (58121476 bytes)  
+	-	`sha256:b8b746c36884ebbc3753c6b143c63c5253980af55ae64b0699e6254c39ef8cac`  
+		Last Modified: Thu, 17 Dec 2020 13:32:37 GMT  
+		Size: 58.1 MB (58121475 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b302091685030579cfb2446f8aa969bab32d6b9ef04335e525619b97a72a232`  
-		Last Modified: Fri, 11 Dec 2020 19:52:15 GMT  
-		Size: 328.3 MB (328274049 bytes)  
+	-	`sha256:42418b22b1d1f07d78a5b2361984048835818c9ef994dcb308995e0bc5a95654`  
+		Last Modified: Thu, 17 Dec 2020 13:36:57 GMT  
+		Size: 336.4 MB (336386058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:bullseye` - linux; s390x

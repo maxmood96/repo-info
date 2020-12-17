@@ -1,7 +1,7 @@
 ## `buildpack-deps:xenial-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:cba36368fcc8da147608204a0827d72a286aa31bdc32cea7bed1b23a989e37da
+$ docker pull buildpack-deps@sha256:c10baa33e51cf4a835e0ea226b5a4cdefa0785144c57e41b0547d903954aaf2b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -248,14 +248,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ### `buildpack-deps:xenial-scm` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:41c3c7f63553dcf9c665a227e79da29cbba36f2b37c1dcc5741c3530e603e375
+$ docker pull buildpack-deps@sha256:96870a9b85b7bc39525b6b2e494e6ff5bbf1be3ef51684422a5a0488df4d36e2
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **99.3 MB (99326057 bytes)**  
+-	Total Size: **99.8 MB (99815765 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c58d4c4631ad08853c2f768cae6c21ebf17028b3d2a9236fc38ad980ad92c97e`
+-	Image ID: `sha256:8f5ce70febabe14299ae922524a7797f0782026f0ceabef9f2f8d0c427f41e70`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -269,11 +269,11 @@ RUN rm -rf /var/lib/apt/lists/*
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 # Wed, 25 Nov 2020 22:26:39 GMT
 CMD ["/bin/bash"]
-# Thu, 26 Nov 2020 01:10:40 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 26 Nov 2020 01:10:51 GMT
+# Thu, 17 Dec 2020 13:14:51 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 17 Dec 2020 13:15:11 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 26 Nov 2020 01:13:08 GMT
+# Thu, 17 Dec 2020 13:18:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
@@ -294,13 +294,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 		Last Modified: Wed, 25 Nov 2020 22:28:46 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c82c97b8778f834985ef70b5d865eeb21a68bc14c741a0c652365fde009ea473`  
-		Last Modified: Thu, 26 Nov 2020 01:40:47 GMT  
-		Size: 7.2 MB (7203888 bytes)  
+	-	`sha256:9f37defc53b3d6781139859a55fefcee7525c966f35d180e6bc069c9b820aa77`  
+		Last Modified: Thu, 17 Dec 2020 14:05:04 GMT  
+		Size: 7.7 MB (7657050 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b36af459571b2c820fb2494f37f23c578bd2426a479da4f76d03748cb2754cff`  
-		Last Modified: Thu, 26 Nov 2020 01:41:09 GMT  
-		Size: 45.1 MB (45108148 bytes)  
+	-	`sha256:ee41e2dc7eb8172d4d537dc5ded290048d8103196fbd524ab32b66b3bc964dca`  
+		Last Modified: Thu, 17 Dec 2020 14:06:16 GMT  
+		Size: 45.1 MB (45144694 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:xenial-scm` - linux; s390x

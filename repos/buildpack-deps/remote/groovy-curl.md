@@ -1,7 +1,7 @@
 ## `buildpack-deps:groovy-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:1dff5194596b046db0e0ed1c83bd46074a9e852b2d0c1a9c172d545d64237d0c
+$ docker pull buildpack-deps@sha256:123e29c2260ff589cfb247ce9df623c5ffc7cccd44b123376940abce1de0654d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -171,14 +171,14 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 ### `buildpack-deps:groovy-curl` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:993db496e2735f1d80f7fbc1b95acd369946b3c14925602461c2947b642919ba
+$ docker pull buildpack-deps@sha256:62f549a87f85346c3721565337b20715626d85ed8cff7737b0de98091e0dbbae
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **46.2 MB (46161881 bytes)**  
+-	Total Size: **47.1 MB (47098984 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2cb13ab48f41635eeeae4d42578b6bfa66e1863306a2f2a8af00e4afb8a7f246`
+-	Image ID: `sha256:1838c0487ce02707975c1c769a31b124c3abb947740012e1dd512fe0081b93be`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -192,9 +192,9 @@ RUN [ -z "$(apt-get indextargets)" ]
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 # Wed, 25 Nov 2020 22:24:22 GMT
 CMD ["/bin/bash"]
-# Thu, 26 Nov 2020 00:47:37 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 26 Nov 2020 00:49:15 GMT
+# Thu, 17 Dec 2020 12:38:04 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 17 Dec 2020 12:38:39 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
@@ -211,13 +211,13 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 		Last Modified: Wed, 25 Nov 2020 22:27:55 GMT  
 		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e22111c1bee015895a0b3252f5191a6f49d3dbe68351917c4a92e27347362b6b`  
-		Last Modified: Thu, 26 Nov 2020 01:39:13 GMT  
-		Size: 5.2 MB (5150816 bytes)  
+	-	`sha256:352606e81d37cd930865d266dc5754ffae4c59b372a521b4b0d6f8b1ee04a7fb`  
+		Last Modified: Thu, 17 Dec 2020 13:55:35 GMT  
+		Size: 6.0 MB (6030921 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08f85cf958e805744355168c7cfd9c7f0d2a78b6cd30338b2488d9c7ea2a79e8`  
-		Last Modified: Thu, 26 Nov 2020 01:39:13 GMT  
-		Size: 4.4 MB (4449568 bytes)  
+	-	`sha256:7dfb72d0e13e43bd5e5c796dce1b4d2718bd26d1998ebe5189e5b96230d55ff0`  
+		Last Modified: Thu, 17 Dec 2020 13:55:31 GMT  
+		Size: 4.5 MB (4506566 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:groovy-curl` - linux; s390x
