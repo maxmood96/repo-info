@@ -3551,7 +3551,7 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 ## `eclipse-mosquitto:2-openssl`
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:28bae453b5c62c712cacc6b95283676297cb6f8fb4d634fc58e4300ff1dab7ec
+$ docker pull eclipse-mosquitto@sha256:a70824764668ffa69f45cd9ee6f86f2133d4878fda16f100a13735e1ac067146
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3668,14 +3668,14 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 ### `eclipse-mosquitto:2-openssl` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:3c62e3d8a9c43bcbb39d1242d640b3fad8f40293cfb4e99f160d784ac4c1d94e
+$ docker pull eclipse-mosquitto@sha256:37f67d97418be88088acb24b532791832f2d71078a82b889b9881aa24783f5db
 ```
 
 -	Docker Version: 19.03.12
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **3.4 MB (3407048 bytes)**  
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.4 MB (3407016 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `57a6e1862879046d146d674384bb269de06f09e71593e23eb8c28c93017f5112`
+-	Image ID: `sha256:dea4318eef96d6367a108b4e293cd05b3c2b9bdb96c8f7d484971e4d8c04be0e`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["\/usr\/sbin\/mosquitto","-c","\/mosquitto\/config\/mosquitto.conf"]`
 
@@ -3699,26 +3699,22 @@ EXPOSE 1883
 # Thu, 17 Dec 2020 22:53:04 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 # Thu, 17 Dec 2020 22:53:04 GMT
-RUN ["\/bin\/sh","-c","#(nop) ","CMD [\"\/usr\/sbin\/mosquitto\" \"-c\" \"\/mosquitto\/config\/mosquitto.conf\"]"]
+CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B  
-		MIME: application/octet-stream
-	-	`sha256:0d66135dc2f2a8ff5ec58556eed98d79f573618475236fbbd874ff258717ba84`  
-		Last Modified: Thu, 17 Dec 2020 22:53:55 GMT  
-		Size: 238.0 B  
-		MIME: application/octet-stream
-	-	`sha256:95cec4729b4c26a7d7696b2413684a01c5c53c15301c3ee8ef9d65112230fd91`  
-		Last Modified: Thu, 17 Dec 2020 22:53:55 GMT  
-		Size: 697.7 KB (697730 bytes)  
-		MIME: application/octet-stream
 	-	`sha256:159e5727ea618dfe8b08811112e2c51f5bd2b9ae7db9eb214914a65249f70ca0`  
 		Last Modified: Wed, 16 Dec 2020 23:41:08 GMT  
 		Size: 2.7 MB (2709048 bytes)  
-		MIME: application/octet-stream
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:95cec4729b4c26a7d7696b2413684a01c5c53c15301c3ee8ef9d65112230fd91`  
+		Last Modified: Thu, 17 Dec 2020 22:53:55 GMT  
+		Size: 697.7 KB (697730 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0d66135dc2f2a8ff5ec58556eed98d79f573618475236fbbd874ff258717ba84`  
+		Last Modified: Thu, 17 Dec 2020 22:53:55 GMT  
+		Size: 238.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-mosquitto:2-openssl` - linux; 386
 
