@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0921691c0002ad26fa74f47edec911f7c9a8a116358638d9acfb3eb32937d520`
-- Created: `2020-11-25T00:32:34.255487535Z`
-- Virtual Size: ~ 56.07 Mb  
+- Image ID: `sha256:903b61cf7c027df1312f55c3917ef3ae591e29f9b4bf2bd33d52c9703a202133`
+- Created: `2020-12-17T15:01:56.521034487Z`
+- Virtual Size: ~ 56.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -107,16 +107,16 @@ MPL-2.0 GPL-2.0-or-later
 ### `apk` package: `ca-certificates-cacert`
 
 ```console
-ca-certificates-cacert-20191127-r1 description:
+ca-certificates-cacert-20191127-r2 description:
 Mozilla bundled certificates
 
-ca-certificates-cacert-20191127-r1 webpage:
+ca-certificates-cacert-20191127-r2 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-cacert-20191127-r1 installed size:
+ca-certificates-cacert-20191127-r2 installed size:
 245760
 
-ca-certificates-cacert-20191127-r1 license:
+ca-certificates-cacert-20191127-r2 license:
 MPL-2.0 GPL-2.0-or-later
 
 ```
@@ -124,16 +124,16 @@ MPL-2.0 GPL-2.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-7.67.0-r1 description:
+curl-7.67.0-r3 description:
 URL retrival utility and library
 
-curl-7.67.0-r1 webpage:
+curl-7.67.0-r3 webpage:
 https://curl.haxx.se/
 
-curl-7.67.0-r1 installed size:
+curl-7.67.0-r3 installed size:
 225280
 
-curl-7.67.0-r1 license:
+curl-7.67.0-r3 license:
 MIT
 
 ```
@@ -209,16 +209,16 @@ BSD
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1g-r0 description:
+libcrypto1.1-1.1.1i-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1g-r0 webpage:
+libcrypto1.1-1.1.1i-r0 webpage:
 https://www.openssl.org
 
-libcrypto1.1-1.1.1g-r0 installed size:
-2760704
+libcrypto1.1-1.1.1i-r0 installed size:
+2764800
 
-libcrypto1.1-1.1.1g-r0 license:
+libcrypto1.1-1.1.1i-r0 license:
 OpenSSL
 
 ```
@@ -226,16 +226,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.67.0-r1 description:
+libcurl-7.67.0-r3 description:
 The multiprotocol file transfer library
 
-libcurl-7.67.0-r1 webpage:
+libcurl-7.67.0-r3 webpage:
 https://curl.haxx.se/
 
-libcurl-7.67.0-r1 installed size:
+libcurl-7.67.0-r3 installed size:
 458752
 
-libcurl-7.67.0-r1 license:
+libcurl-7.67.0-r3 license:
 MIT
 
 ```
@@ -362,16 +362,16 @@ Libpng
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1g-r0 description:
+libssl1.1-1.1.1i-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1g-r0 webpage:
+libssl1.1-1.1.1i-r0 webpage:
 https://www.openssl.org
 
-libssl1.1-1.1.1g-r0 installed size:
+libssl1.1-1.1.1i-r0 installed size:
 540672
 
-libssl1.1-1.1.1g-r0 license:
+libssl1.1-1.1.1i-r0 license:
 OpenSSL
 
 ```
@@ -447,16 +447,16 @@ custom
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.24-r2 description:
+musl-1.1.24-r3 description:
 the musl c library (libc) implementation
 
-musl-1.1.24-r2 webpage:
+musl-1.1.24-r3 webpage:
 https://musl.libc.org/
 
-musl-1.1.24-r2 installed size:
+musl-1.1.24-r3 installed size:
 614400
 
-musl-1.1.24-r2 license:
+musl-1.1.24-r3 license:
 MIT
 
 ```
@@ -464,16 +464,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.24-r2 description:
+musl-utils-1.1.24-r3 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.24-r2 webpage:
+musl-utils-1.1.24-r3 webpage:
 https://musl.libc.org/
 
-musl-utils-1.1.24-r2 installed size:
+musl-utils-1.1.24-r3 installed size:
 151552
 
-musl-utils-1.1.24-r2 license:
+musl-utils-1.1.24-r3 license:
 MIT BSD GPL2+
 
 ```
@@ -634,16 +634,16 @@ nginx-module-xslt-1.18.0-r2 license:
 ### `apk` package: `pcre`
 
 ```console
-pcre-8.43-r0 description:
+pcre-8.43-r1 description:
 Perl-compatible regular expression library
 
-pcre-8.43-r0 webpage:
+pcre-8.43-r1 webpage:
 http://pcre.sourceforge.net
 
-pcre-8.43-r0 installed size:
+pcre-8.43-r1 installed size:
 401408
 
-pcre-8.43-r0 license:
+pcre-8.43-r1 license:
 BSD-3-Clause
 
 ```
