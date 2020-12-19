@@ -1,10 +1,10 @@
-# `amazonlinux:2018.03.0.20200602.1-with-sources`
+# `amazonlinux:2018.03.0.20201028.0-with-sources`
 
 ## Docker Metadata
 
-- Image ID: `sha256:63bc71b24526296605dbb1eacf91d9fa3044556bff9e493bab7d2fe38fd1c724`
-- Created: `2020-06-30T20:21:04.85449766Z`
-- Virtual Size: ~ 554.32 Mb  
+- Image ID: `sha256:534630d570deab085a09f4fc1f661eeb330cdbb8e14be87a2461c39316c867f6`
+- Created: `2020-12-18T07:05:40.060770203Z`
+- Virtual Size: ~ 554.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -26,17 +26,17 @@ Enabling amzn-main-source repository
 http://packages.us-west-1.amazonaws.com/2018.03/main/c31535f74c6e/SRPMS//Packages/basesystem-10.0-4.9.amzn1.src.rpm
 ```
 
-### `rpm` package: `bash-4.2.46-28.37.amzn1.x86_64`
+### `rpm` package: `bash-4.2.46-34.43.amzn1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls bash-4.2.46-28.37.amzn1
+$ yumdownloader --quiet --source --urls bash-4.2.46-34.43.amzn1
 Enabling amzn-updates-source repository
 Enabling amzn-main-source repository
-http://packages.us-west-1.amazonaws.com/2018.03/main/c31535f74c6e/SRPMS//Packages/bash-4.2.46-28.37.amzn1.src.rpm
+http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/bash-4.2.46-34.43.amzn1.src.rpm
 ```
 
 ### `rpm` package: `bzip2-libs-1.0.6-8.12.amzn1.x86_64`
@@ -91,17 +91,17 @@ Enabling amzn-main-source repository
 http://packages.us-west-1.amazonaws.com/2018.03/main/c31535f74c6e/SRPMS//Packages/coreutils-8.22-15.52.amzn1.src.rpm
 ```
 
-### `rpm` package: `curl-7.61.1-12.93.amzn1.x86_64`
+### `rpm` package: `curl-7.61.1-12.94.amzn1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls curl-7.61.1-12.93.amzn1
+$ yumdownloader --quiet --source --urls curl-7.61.1-12.94.amzn1
 Enabling amzn-updates-source repository
 Enabling amzn-main-source repository
-http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/curl-7.61.1-12.93.amzn1.src.rpm
+http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/curl-7.61.1-12.94.amzn1.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.23-13.16.amzn1.x86_64`
@@ -435,17 +435,17 @@ Enabling amzn-main-source repository
 http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/e2fsprogs-1.43.5-2.43.amzn1.src.rpm
 ```
 
-### `rpm` package: `libcurl-7.61.1-12.93.amzn1.x86_64`
+### `rpm` package: `libcurl-7.61.1-12.94.amzn1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libcurl-7.61.1-12.93.amzn1
+$ yumdownloader --quiet --source --urls libcurl-7.61.1-12.94.amzn1
 Enabling amzn-updates-source repository
 Enabling amzn-main-source repository
-http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/curl-7.61.1-12.93.amzn1.src.rpm
+http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/curl-7.61.1-12.94.amzn1.src.rpm
 ```
 
 ### `rpm` package: `libffi-3.0.13-16.5.amzn1.x86_64`
@@ -526,17 +526,17 @@ Enabling amzn-main-source repository
 http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/libidn2-2.3.0-1.4.amzn1.src.rpm
 ```
 
-### `rpm` package: `libnghttp2-1.31.1-2.5.amzn1.x86_64`
+### `rpm` package: `libnghttp2-1.33.0-1.1.6.amzn1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libnghttp2-1.31.1-2.5.amzn1
+$ yumdownloader --quiet --source --urls libnghttp2-1.33.0-1.1.6.amzn1
 Enabling amzn-updates-source repository
 Enabling amzn-main-source repository
-http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/nghttp2-1.31.1-2.5.amzn1.src.rpm
+http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/nghttp2-1.33.0-1.1.6.amzn1.src.rpm
 ```
 
 ### `rpm` package: `libpsl-0.6.2-1.2.amzn1.x86_64`
@@ -643,30 +643,30 @@ Enabling amzn-main-source repository
 http://packages.us-west-1.amazonaws.com/2018.03/main/c31535f74c6e/SRPMS//Packages/libverto-0.2.5-4.9.amzn1.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.1-6.3.52.amzn1.x86_64`
+### `rpm` package: `libxml2-2.9.1-6.4.41.amzn1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libxml2-2.9.1-6.3.52.amzn1
+$ yumdownloader --quiet --source --urls libxml2-2.9.1-6.4.41.amzn1
 Enabling amzn-updates-source repository
 Enabling amzn-main-source repository
-http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/libxml2-2.9.1-6.3.52.amzn1.src.rpm
+http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/libxml2-2.9.1-6.4.41.amzn1.src.rpm
 ```
 
-### `rpm` package: `libxml2-python27-2.9.1-6.3.52.amzn1.x86_64`
+### `rpm` package: `libxml2-python27-2.9.1-6.4.41.amzn1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libxml2-python27-2.9.1-6.3.52.amzn1
+$ yumdownloader --quiet --source --urls libxml2-python27-2.9.1-6.4.41.amzn1
 Enabling amzn-updates-source repository
 Enabling amzn-main-source repository
-http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/libxml2-2.9.1-6.3.52.amzn1.src.rpm
+http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/libxml2-2.9.1-6.4.41.amzn1.src.rpm
 ```
 
 ### `rpm` package: `lua-5.1.4-4.1.9.amzn1.x86_64`
@@ -955,17 +955,17 @@ Enabling amzn-main-source repository
 http://packages.us-west-1.amazonaws.com/2018.03/main/c31535f74c6e/SRPMS//Packages/pth-2.0.7-9.3.7.amzn1.src.rpm
 ```
 
-### `rpm` package: `python27-2.7.18-1.137.amzn1.x86_64`
+### `rpm` package: `python27-2.7.18-2.139.amzn1.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls python27-2.7.18-1.137.amzn1
+$ yumdownloader --quiet --source --urls python27-2.7.18-2.139.amzn1
 Enabling amzn-updates-source repository
 Enabling amzn-main-source repository
-http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/python27-2.7.18-1.137.amzn1.src.rpm
+http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/python27-2.7.18-2.139.amzn1.src.rpm
 ```
 
 ### `rpm` package: `python27-chardet-2.0.1-7.7.amzn1.noarch`
@@ -1007,17 +1007,17 @@ Enabling amzn-main-source repository
 http://packages.us-west-1.amazonaws.com/2018.03/main/c31535f74c6e/SRPMS//Packages/python-kitchen-1.1.1-5.6.amzn1.src.rpm
 ```
 
-### `rpm` package: `python27-libs-2.7.18-1.137.amzn1.x86_64`
+### `rpm` package: `python27-libs-2.7.18-2.139.amzn1.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls python27-libs-2.7.18-1.137.amzn1
+$ yumdownloader --quiet --source --urls python27-libs-2.7.18-2.139.amzn1
 Enabling amzn-updates-source repository
 Enabling amzn-main-source repository
-http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/python27-2.7.18-1.137.amzn1.src.rpm
+http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/python27-2.7.18-2.139.amzn1.src.rpm
 ```
 
 ### `rpm` package: `python27-pycurl-7.19.0-17.12.amzn1.x86_64`
@@ -1098,56 +1098,56 @@ Enabling amzn-main-source repository
 http://packages.us-west-1.amazonaws.com/2018.03/main/c31535f74c6e/SRPMS//Packages/readline-6.2-9.14.amzn1.src.rpm
 ```
 
-### `rpm` package: `rpm-4.11.3-40.76.amzn1.x86_64`
+### `rpm` package: `rpm-4.11.3-40.78.amzn1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls rpm-4.11.3-40.76.amzn1
+$ yumdownloader --quiet --source --urls rpm-4.11.3-40.78.amzn1
 Enabling amzn-updates-source repository
 Enabling amzn-main-source repository
-http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/rpm-4.11.3-40.76.amzn1.src.rpm
+http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/rpm-4.11.3-40.78.amzn1.src.rpm
 ```
 
-### `rpm` package: `rpm-build-libs-4.11.3-40.76.amzn1.x86_64`
+### `rpm` package: `rpm-build-libs-4.11.3-40.78.amzn1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls rpm-build-libs-4.11.3-40.76.amzn1
+$ yumdownloader --quiet --source --urls rpm-build-libs-4.11.3-40.78.amzn1
 Enabling amzn-updates-source repository
 Enabling amzn-main-source repository
-http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/rpm-4.11.3-40.76.amzn1.src.rpm
+http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/rpm-4.11.3-40.78.amzn1.src.rpm
 ```
 
-### `rpm` package: `rpm-libs-4.11.3-40.76.amzn1.x86_64`
+### `rpm` package: `rpm-libs-4.11.3-40.78.amzn1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls rpm-libs-4.11.3-40.76.amzn1
+$ yumdownloader --quiet --source --urls rpm-libs-4.11.3-40.78.amzn1
 Enabling amzn-updates-source repository
 Enabling amzn-main-source repository
-http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/rpm-4.11.3-40.76.amzn1.src.rpm
+http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/rpm-4.11.3-40.78.amzn1.src.rpm
 ```
 
-### `rpm` package: `rpm-python27-4.11.3-40.76.amzn1.x86_64`
+### `rpm` package: `rpm-python27-4.11.3-40.78.amzn1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls rpm-python27-4.11.3-40.76.amzn1
+$ yumdownloader --quiet --source --urls rpm-python27-4.11.3-40.78.amzn1
 Enabling amzn-updates-source repository
 Enabling amzn-main-source repository
-http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/rpm-4.11.3-40.76.amzn1.src.rpm
+http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/rpm-4.11.3-40.78.amzn1.src.rpm
 ```
 
 ### `rpm` package: `sed-4.2.1-10.10.amzn1.x86_64`
@@ -1241,17 +1241,17 @@ Enabling amzn-main-source repository
 http://packages.us-west-1.amazonaws.com/2018.03/main/c31535f74c6e/SRPMS//Packages/tar-1.26-31.22.amzn1.src.rpm
 ```
 
-### `rpm` package: `tzdata-2019c-1.73.amzn1.noarch`
+### `rpm` package: `tzdata-2020a-1.75.amzn1.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls tzdata-2019c-1.73.amzn1.noarch
+$ yumdownloader --quiet --source --urls tzdata-2020a-1.75.amzn1.noarch
 Enabling amzn-updates-source repository
 Enabling amzn-main-source repository
-http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/tzdata-2019c-1.73.amzn1.src.rpm
+http://packages.us-east-1.amazonaws.com/2018.03/updates/6610ecbdee19/SRPMS//Packages/tzdata-2020a-1.75.amzn1.src.rpm
 ```
 
 ### `rpm` package: `xz-libs-5.2.2-1.13.amzn1.x86_64`
