@@ -1,7 +1,7 @@
 ## `r-base:latest`
 
 ```console
-$ docker pull r-base@sha256:1f4efa59ada04f46e9bf8f0338e27495efc13e06fa5a7494511095d7ffbb3d8a
+$ docker pull r-base@sha256:af3724f65c6d96a70e1e3dcb45cb6e476fe92bdc8643898518f6f3a5c744505f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9,6 +9,7 @@ $ docker pull r-base@sha256:1f4efa59ada04f46e9bf8f0338e27495efc13e06fa5a74945110
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
+	-	linux; s390x
 
 ### `r-base:latest` - linux; amd64
 
@@ -206,4 +207,70 @@ CMD ["R"]
 	-	`sha256:091cff983da043bbdef4f62ba8c6d36836e946f99df004f89ae18912779c6491`  
 		Last Modified: Fri, 11 Dec 2020 20:05:22 GMT  
 		Size: 416.6 MB (416604624 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `r-base:latest` - linux; s390x
+
+```console
+$ docker pull r-base@sha256:16762b6b94f3410879a7e89bd182bce692f8145117ffd2601de085cf8ff7ffb2
+```
+
+-	Docker Version: 1.12.6
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **255.0 MB (254993143 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d9458dd260863c49d65cf903339d43ae709b850ed3389bab14e6ad10c54af1bd`
+-	Default Command: `["R"]`
+
+```dockerfile
+# Wed, 03 May 2017 17:23:43 GMT
+ADD file:7068f688c8173d6cf7a7bead8f8026099fdfcf820d149a673208e68f103e198d in / 
+# Wed, 03 May 2017 17:23:44 GMT
+CMD ["/bin/bash"]
+# Wed, 03 May 2017 22:26:37 GMT
+MAINTAINER "Carl Boettiger and Dirk Eddelbuettel" rocker-maintainers@eddelbuettel.com
+# Wed, 03 May 2017 22:26:42 GMT
+RUN useradd docker 	&& mkdir /home/docker 	&& chown docker:docker /home/docker 	&& addgroup docker staff
+# Wed, 03 May 2017 22:27:17 GMT
+RUN apt-get update 	&& apt-get install -y --no-install-recommends 		ed 		less 		locales 		vim-tiny 		wget 		ca-certificates 		fonts-texgyre 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 03 May 2017 22:27:21 GMT
+RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen 	&& locale-gen en_US.utf8 	&& /usr/sbin/update-locale LANG=en_US.UTF-8
+# Wed, 03 May 2017 22:27:23 GMT
+ENV LC_ALL=en_US.UTF-8
+# Wed, 03 May 2017 22:27:24 GMT
+ENV LANG=en_US.UTF-8
+# Wed, 03 May 2017 22:27:28 GMT
+RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list 	&& echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default
+# Wed, 03 May 2017 22:27:29 GMT
+ENV R_BASE_VERSION=3.4.0
+# Wed, 03 May 2017 22:29:44 GMT
+RUN apt-get update 	&& apt-get install -t unstable -y --no-install-recommends 		littler                 r-cran-littler 		r-base=${R_BASE_VERSION}* 		r-base-dev=${R_BASE_VERSION}* 		r-recommended=${R_BASE_VERSION}*         && echo 'options(repos = c(CRAN = "https://cran.rstudio.com/"), download.file.method = "libcurl")' >> /etc/R/Rprofile.site         && echo 'source("/etc/R/Rprofile.site")' >> /etc/littler.r 	&& ln -s /usr/share/doc/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/share/doc/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/share/doc/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/share/doc/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& install.r docopt 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 03 May 2017 22:29:45 GMT
+CMD ["R"]
+```
+
+-	Layers:
+	-	`sha256:2f4a4a37d72f27df4df3e784df7933c52ad54360b0263a9941427ebfbc52bd16`  
+		Last Modified: Wed, 03 May 2017 17:25:13 GMT  
+		Size: 44.4 MB (44377421 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0b3aa7344eecde9aa5d34cd299cb2d7186ae2f87fca0b5eb38a9529f2a6d568c`  
+		Last Modified: Wed, 03 May 2017 22:29:52 GMT  
+		Size: 1.8 KB (1843 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:92599fb6b027e9ee16c207a5340278252af788ec9d7abb1b9afb1d98a219f537`  
+		Last Modified: Wed, 03 May 2017 22:30:23 GMT  
+		Size: 36.0 MB (35956442 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0ed4ddbbff3ee4147b8bae18e9fc0df5c610abbf20512aa94a3e3110b10d0833`  
+		Last Modified: Wed, 03 May 2017 22:29:52 GMT  
+		Size: 432.3 KB (432304 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:69f07ae519b0047b8a7c4bab9ea026085213dba1b29fc8ab64a25b86820a7af6`  
+		Last Modified: Wed, 03 May 2017 22:29:51 GMT  
+		Size: 302.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b06a6e301873506409cd13af7a86ca2fd43d4a14a6d240b0e06f239500eb160a`  
+		Last Modified: Wed, 03 May 2017 22:31:38 GMT  
+		Size: 174.2 MB (174224831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
