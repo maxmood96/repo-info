@@ -2160,13 +2160,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-common3/copyright`, `/usr/sh
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-common3=3.7.0-1~bionic
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-common3/ignition-common3_3.7.0-1~bionic.dsc' ignition-common3_3.7.0-1~bionic.dsc 1891 SHA256:32c8ab499ac6dee45bb666bb2c6e52f3dd47dc3127157aed690eed5ee290bbae
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-common3/ignition-common3_3.7.0-1~bionic.tar.xz' ignition-common3_3.7.0-1~bionic.tar.xz 6685500 SHA256:11fba233633be98547f274526defaefc720154919f269ad5efa510ed1c6a1a7d
-```
 
 ### `dpkg` source package: `ignition-fuel-tools4=4.2.1-2~bionic`
 
