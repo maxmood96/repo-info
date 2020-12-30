@@ -30,7 +30,7 @@
 ## `rabbitmq:3`
 
 ```console
-$ docker pull rabbitmq@sha256:a19f0e3e9b0986948c2072aac82157029df65b01d17ee80b954058245de61a04
+$ docker pull rabbitmq@sha256:1fc999fbdd8054b0c34c285901474f136792ad4a42d39186f3793ac40de04dba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -45,14 +45,14 @@ $ docker pull rabbitmq@sha256:a19f0e3e9b0986948c2072aac82157029df65b01d17ee80b95
 ### `rabbitmq:3` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:65eb9b71a8023ea49a616c1a567052574e9af1eaf266bf82832f9104b7abfeb0
+$ docker pull rabbitmq@sha256:fea9968aeb7079b3927aa2f5711688a7fe12a2d423dce8de741bbd67be0177ad
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.3 MB (81254370 bytes)**  
+-	Total Size: **81.3 MB (81254423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:335235b57b05c8eac2223ab381d5816de5ba4c33a0580f54413ff6b5e068f2fa`
+-	Image ID: `sha256:30aac3e715ba24cacbcc2c8bb6529c04ace2a2fc823edbbe41dd1a4082f0c1a8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -112,13 +112,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:22:48 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:22:48 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:01 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:26:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:01 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:02 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -159,22 +159,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:25:43 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a70b21779fa5bdd0bafc80d418e50c06544b535875a3cd7433d3eb88955f8abb`  
-		Last Modified: Mon, 21 Dec 2020 21:25:42 GMT  
-		Size: 4.7 KB (4684 bytes)  
+	-	`sha256:270bdce587ffce163d921bf81efd614bd2e27ce0485557dcd11d277f62662847`  
+		Last Modified: Wed, 30 Dec 2020 19:27:28 GMT  
+		Size: 4.7 KB (4737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:ea97b3187e18d275de98fbf0ae2d76b44500668ae16b356b0a4ddc392da13b88
+$ docker pull rabbitmq@sha256:902a65c89467fb4cf33a9d3d3b79ea4243294c5eff724445e36d9944ee135b75
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **74.3 MB (74339617 bytes)**  
+-	Total Size: **74.3 MB (74339669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:482fe1b4874496a0940df4f2a53879adf59e71c63c68d245e2258b8c3d3c7eeb`
+-	Image ID: `sha256:a0a74235ae42f117bb835245c9839bd5466359094cac9ebeee5dd6f8502881fd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -234,13 +234,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:56:17 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:56:18 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:56:20 GMT
+# Wed, 30 Dec 2020 20:00:06 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 20:00:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:56:21 GMT
+# Wed, 30 Dec 2020 20:00:09 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:56:22 GMT
+# Wed, 30 Dec 2020 20:00:11 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -281,22 +281,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:59:37 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:809bcb7f15b169320005044c3c0d6e43d0f11d4a27f9b46038d2885412263fda`  
-		Last Modified: Mon, 21 Dec 2020 21:59:37 GMT  
-		Size: 4.7 KB (4687 bytes)  
+	-	`sha256:a023e57cdec86e2827d62cc3578dd18bd2855c2796d52ef667c2042eabb72225`  
+		Last Modified: Wed, 30 Dec 2020 20:03:28 GMT  
+		Size: 4.7 KB (4739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:ec5488eefe794cfbbb0b94bedd55133a3ff83070412601ec5c4472f50a333f01
+$ docker pull rabbitmq@sha256:2bb026fcbfae04dace6c28b843c721e3ce300d0e5226c6517bcdd96a9ce9ca5f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.6 MB (76567976 bytes)**  
+-	Total Size: **76.6 MB (76568029 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f362f36906c1e1ebcd8da99b74bf2f1ce8c4de4a9bcfe373281569e40bb857ff`
+-	Image ID: `sha256:841d0181fab9b286232fa6175d95406b9acd1a972e896efa264714737732f5ec`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -356,13 +356,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:14:33 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:14:33 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:14:34 GMT
+# Wed, 30 Dec 2020 19:42:42 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:42:42 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:14:35 GMT
+# Wed, 30 Dec 2020 19:42:43 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:14:35 GMT
+# Wed, 30 Dec 2020 19:42:44 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -403,22 +403,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:17:34 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a6de5385e6457d1e4321576d39b1e5130c98430f4d60b1955d7e966f850dc59`  
-		Last Modified: Mon, 21 Dec 2020 21:17:34 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:d316dc06638d1a456656255f63ea5aee11d442596b795cfaf099423f64ef8750`  
+		Last Modified: Wed, 30 Dec 2020 19:44:50 GMT  
+		Size: 4.7 KB (4736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:ce27d454f5f06c836b68885051f3bd31e71f9aec5c447d42f03df165b9071fc4
+$ docker pull rabbitmq@sha256:94047bdf3023c8c81dc2b00fd5813981e15dd7eb181508d7cce92e04ca2bed17
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.6 MB (80607672 bytes)**  
+-	Total Size: **80.6 MB (80607726 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:82400898f4f29537027ad85ce0c13252825083275c1976ed7471f2fd8f831788`
+-	Image ID: `sha256:33e6eeff6b19f9f7b2e0f56839d190b04ea52e78d7e4c35f317ec9cd4fbde9a8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -478,13 +478,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:57:44 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:57:44 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:57:44 GMT
+# Wed, 30 Dec 2020 19:40:27 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:40:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:57:45 GMT
+# Wed, 30 Dec 2020 19:40:28 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:57:45 GMT
+# Wed, 30 Dec 2020 19:40:28 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -525,9 +525,9 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 22:00:14 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85a2d0ab60e03adf7f47b2f62aa5d20442a78f6aefbdf3018fc7e1e12f489175`  
-		Last Modified: Mon, 21 Dec 2020 22:00:14 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:c34b67e8e81467e6bb600baa6e8364e4cefa168bd337a16798a82fc02315030f`  
+		Last Modified: Wed, 30 Dec 2020 19:42:01 GMT  
+		Size: 4.7 KB (4736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3` - linux; ppc64le
@@ -652,14 +652,14 @@ CMD ["rabbitmq-server"]
 ### `rabbitmq:3` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:440ad95952eebc5677f7ac0a92fa0b566f90421fa63607a9785c49a4dbbaf3f5
+$ docker pull rabbitmq@sha256:a52b8f62892a31a559d35130ad4214de69fa444bea8632060a5b4041f2413f44
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **78.6 MB (78606814 bytes)**  
+-	Total Size: **78.6 MB (78606867 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2796d3a93e1bc4b6d1f57e6132113ce09221c80430ff4d1a0d7134d9b2be1b19`
+-	Image ID: `sha256:11af72d898a18bc6db5f51063bc799044cb584dc400a2694de450cd1fe96356d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -719,13 +719,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:10:49 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:10:50 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:10:50 GMT
+# Wed, 30 Dec 2020 19:45:22 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:45:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:10:51 GMT
+# Wed, 30 Dec 2020 19:45:23 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:10:51 GMT
+# Wed, 30 Dec 2020 19:45:24 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -766,15 +766,15 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:13:42 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f551312615b55dc3338f141b07b2dd5035f85cc5dda0513b1813a8c651913a9c`  
-		Last Modified: Mon, 21 Dec 2020 21:13:42 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:715c0199636e35ac1528cc930cddbfa6d779c67aac0fd7a7b4669c3c486c1697`  
+		Last Modified: Wed, 30 Dec 2020 19:47:28 GMT  
+		Size: 4.7 KB (4738 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:3.8`
 
 ```console
-$ docker pull rabbitmq@sha256:994089bd55123ace07ce56b120f4fd9365b597ad647f5f9c72c24bcd6a8340da
+$ docker pull rabbitmq@sha256:d300c86d33ffc59092d938c4eb045a544db16a51d26370162e57a3d6f2d79d8f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -788,14 +788,14 @@ $ docker pull rabbitmq@sha256:994089bd55123ace07ce56b120f4fd9365b597ad647f5f9c72
 ### `rabbitmq:3.8` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:65eb9b71a8023ea49a616c1a567052574e9af1eaf266bf82832f9104b7abfeb0
+$ docker pull rabbitmq@sha256:fea9968aeb7079b3927aa2f5711688a7fe12a2d423dce8de741bbd67be0177ad
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.3 MB (81254370 bytes)**  
+-	Total Size: **81.3 MB (81254423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:335235b57b05c8eac2223ab381d5816de5ba4c33a0580f54413ff6b5e068f2fa`
+-	Image ID: `sha256:30aac3e715ba24cacbcc2c8bb6529c04ace2a2fc823edbbe41dd1a4082f0c1a8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -855,13 +855,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:22:48 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:22:48 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:01 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:26:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:01 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:02 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -902,22 +902,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:25:43 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a70b21779fa5bdd0bafc80d418e50c06544b535875a3cd7433d3eb88955f8abb`  
-		Last Modified: Mon, 21 Dec 2020 21:25:42 GMT  
-		Size: 4.7 KB (4684 bytes)  
+	-	`sha256:270bdce587ffce163d921bf81efd614bd2e27ce0485557dcd11d277f62662847`  
+		Last Modified: Wed, 30 Dec 2020 19:27:28 GMT  
+		Size: 4.7 KB (4737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:ea97b3187e18d275de98fbf0ae2d76b44500668ae16b356b0a4ddc392da13b88
+$ docker pull rabbitmq@sha256:902a65c89467fb4cf33a9d3d3b79ea4243294c5eff724445e36d9944ee135b75
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **74.3 MB (74339617 bytes)**  
+-	Total Size: **74.3 MB (74339669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:482fe1b4874496a0940df4f2a53879adf59e71c63c68d245e2258b8c3d3c7eeb`
+-	Image ID: `sha256:a0a74235ae42f117bb835245c9839bd5466359094cac9ebeee5dd6f8502881fd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -977,13 +977,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:56:17 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:56:18 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:56:20 GMT
+# Wed, 30 Dec 2020 20:00:06 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 20:00:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:56:21 GMT
+# Wed, 30 Dec 2020 20:00:09 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:56:22 GMT
+# Wed, 30 Dec 2020 20:00:11 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -1024,22 +1024,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:59:37 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:809bcb7f15b169320005044c3c0d6e43d0f11d4a27f9b46038d2885412263fda`  
-		Last Modified: Mon, 21 Dec 2020 21:59:37 GMT  
-		Size: 4.7 KB (4687 bytes)  
+	-	`sha256:a023e57cdec86e2827d62cc3578dd18bd2855c2796d52ef667c2042eabb72225`  
+		Last Modified: Wed, 30 Dec 2020 20:03:28 GMT  
+		Size: 4.7 KB (4739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:ec5488eefe794cfbbb0b94bedd55133a3ff83070412601ec5c4472f50a333f01
+$ docker pull rabbitmq@sha256:2bb026fcbfae04dace6c28b843c721e3ce300d0e5226c6517bcdd96a9ce9ca5f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.6 MB (76567976 bytes)**  
+-	Total Size: **76.6 MB (76568029 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f362f36906c1e1ebcd8da99b74bf2f1ce8c4de4a9bcfe373281569e40bb857ff`
+-	Image ID: `sha256:841d0181fab9b286232fa6175d95406b9acd1a972e896efa264714737732f5ec`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -1099,13 +1099,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:14:33 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:14:33 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:14:34 GMT
+# Wed, 30 Dec 2020 19:42:42 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:42:42 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:14:35 GMT
+# Wed, 30 Dec 2020 19:42:43 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:14:35 GMT
+# Wed, 30 Dec 2020 19:42:44 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -1146,22 +1146,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:17:34 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a6de5385e6457d1e4321576d39b1e5130c98430f4d60b1955d7e966f850dc59`  
-		Last Modified: Mon, 21 Dec 2020 21:17:34 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:d316dc06638d1a456656255f63ea5aee11d442596b795cfaf099423f64ef8750`  
+		Last Modified: Wed, 30 Dec 2020 19:44:50 GMT  
+		Size: 4.7 KB (4736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:ce27d454f5f06c836b68885051f3bd31e71f9aec5c447d42f03df165b9071fc4
+$ docker pull rabbitmq@sha256:94047bdf3023c8c81dc2b00fd5813981e15dd7eb181508d7cce92e04ca2bed17
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.6 MB (80607672 bytes)**  
+-	Total Size: **80.6 MB (80607726 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:82400898f4f29537027ad85ce0c13252825083275c1976ed7471f2fd8f831788`
+-	Image ID: `sha256:33e6eeff6b19f9f7b2e0f56839d190b04ea52e78d7e4c35f317ec9cd4fbde9a8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -1221,13 +1221,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:57:44 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:57:44 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:57:44 GMT
+# Wed, 30 Dec 2020 19:40:27 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:40:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:57:45 GMT
+# Wed, 30 Dec 2020 19:40:28 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:57:45 GMT
+# Wed, 30 Dec 2020 19:40:28 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -1268,22 +1268,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 22:00:14 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85a2d0ab60e03adf7f47b2f62aa5d20442a78f6aefbdf3018fc7e1e12f489175`  
-		Last Modified: Mon, 21 Dec 2020 22:00:14 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:c34b67e8e81467e6bb600baa6e8364e4cefa168bd337a16798a82fc02315030f`  
+		Last Modified: Wed, 30 Dec 2020 19:42:01 GMT  
+		Size: 4.7 KB (4736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:440ad95952eebc5677f7ac0a92fa0b566f90421fa63607a9785c49a4dbbaf3f5
+$ docker pull rabbitmq@sha256:a52b8f62892a31a559d35130ad4214de69fa444bea8632060a5b4041f2413f44
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **78.6 MB (78606814 bytes)**  
+-	Total Size: **78.6 MB (78606867 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2796d3a93e1bc4b6d1f57e6132113ce09221c80430ff4d1a0d7134d9b2be1b19`
+-	Image ID: `sha256:11af72d898a18bc6db5f51063bc799044cb584dc400a2694de450cd1fe96356d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -1343,13 +1343,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:10:49 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:10:50 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:10:50 GMT
+# Wed, 30 Dec 2020 19:45:22 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:45:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:10:51 GMT
+# Wed, 30 Dec 2020 19:45:23 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:10:51 GMT
+# Wed, 30 Dec 2020 19:45:24 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -1390,15 +1390,15 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:13:42 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f551312615b55dc3338f141b07b2dd5035f85cc5dda0513b1813a8c651913a9c`  
-		Last Modified: Mon, 21 Dec 2020 21:13:42 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:715c0199636e35ac1528cc930cddbfa6d779c67aac0fd7a7b4669c3c486c1697`  
+		Last Modified: Wed, 30 Dec 2020 19:47:28 GMT  
+		Size: 4.7 KB (4738 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:3.8.10-beta.1`
 
 ```console
-$ docker pull rabbitmq@sha256:6242cd7565e959b967ab24df8e3118875319402f00b9c17d636be08c5d83bdfc
+$ docker pull rabbitmq@sha256:1328aba746910dba03aca9aa713223c3f3e2e3c8ba88bec50096a96eb167025c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1412,14 +1412,14 @@ $ docker pull rabbitmq@sha256:6242cd7565e959b967ab24df8e3118875319402f00b9c17d63
 ### `rabbitmq:3.8.10-beta.1` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:a5556f7894c01370d0f27157256e6a2f50a5039d390ff4058383ba97439fbd79
+$ docker pull rabbitmq@sha256:2675d45b84e1538f907b06a6497243c61fc0d6e90de199546573bea27987c981
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.7 MB (81732995 bytes)**  
+-	Total Size: **81.7 MB (81733047 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d3c8c4a26512e529f97bfea7ce9a46291dde2fff6110e1c4f31cf5f05b5851e9`
+-	Image ID: `sha256:39c83affb0561dfb9a1f6d2b22a8317cc8b4aad96bf6c713bc18e82beb888d73`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -1479,13 +1479,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:11:01 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:11:01 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:11:01 GMT
+# Wed, 30 Dec 2020 19:25:10 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:25:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:11:02 GMT
+# Wed, 30 Dec 2020 19:25:10 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:11:02 GMT
+# Wed, 30 Dec 2020 19:25:11 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -1526,22 +1526,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:24:54 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31ff449b8ac05c6bcefc0f02372d1be22ed43e2472b289d4ed09d8304af5048e`  
-		Last Modified: Mon, 21 Dec 2020 21:24:52 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:6e5593aa4d041605ae0212b59ef0c3908fff2fa10576f17348872c7cf2a40731`  
+		Last Modified: Wed, 30 Dec 2020 19:27:04 GMT  
+		Size: 4.7 KB (4737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.10-beta.1` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:31dc0b34bd0f9db9b6212098111cb05349353362484edce077cb1bc754cc1964
+$ docker pull rabbitmq@sha256:d42eafc183b2319735f3af914ab5a90b80af9b54d56883925df38fab7ef46be0
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **74.8 MB (74818340 bytes)**  
+-	Total Size: **74.8 MB (74818393 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6dba29478ef971136fdcb9a92945d2475e9c037b013aa6edd5d0eb62d06f0c64`
+-	Image ID: `sha256:f2669a72b7bd06b1526726e0a1d0d595373022729626e773e6503f7e01e58321`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -1601,13 +1601,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:49:35 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:49:36 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:49:37 GMT
+# Wed, 30 Dec 2020 19:58:48 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:58:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:49:37 GMT
+# Wed, 30 Dec 2020 19:58:50 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:49:38 GMT
+# Wed, 30 Dec 2020 19:58:50 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -1648,22 +1648,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:58:26 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3df8c76ab3d42ffccdbcf5969727f268054360726abaf18365645497b203dd5`  
-		Last Modified: Mon, 21 Dec 2020 21:58:27 GMT  
-		Size: 4.7 KB (4689 bytes)  
+	-	`sha256:9bd8d3dff20f30856488aee35dd4c026ec4a07e837ec1c76dae44f4bbcd5b111`  
+		Last Modified: Wed, 30 Dec 2020 20:02:45 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.10-beta.1` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:5fb84922d8abbc0e015a7d6cd0eb55a99f2a7aa6b8ae278b0bca07706d58cf47
+$ docker pull rabbitmq@sha256:c5cb34236c891fed6838580f61b305b7c702100bc1ee982a7da90c7cd34033fc
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.0 MB (77046744 bytes)**  
+-	Total Size: **77.0 MB (77046800 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:995861f24cf2106ee16b516997a41abae9c304f9dd2f049a83ac33b8c44164db`
+-	Image ID: `sha256:9a6f93301fcdb0262241a5c39d1bb8967ef90cb35f2deacef9165511c3dda6ef`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -1723,13 +1723,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:07:45 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:07:47 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:07:48 GMT
+# Wed, 30 Dec 2020 19:41:35 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:41:36 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:07:50 GMT
+# Wed, 30 Dec 2020 19:41:37 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:07:52 GMT
+# Wed, 30 Dec 2020 19:41:37 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -1770,22 +1770,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:16:38 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11c8878404e7e30a45424503cc313ab65a8dbf290d9f33c5cba043dea7c358e6`  
-		Last Modified: Mon, 21 Dec 2020 21:16:38 GMT  
-		Size: 4.7 KB (4686 bytes)  
+	-	`sha256:1bfcd78e2cff9c4ed12cb5840ab53d16292d5272329014b4eef4741e6f0eff8d`  
+		Last Modified: Wed, 30 Dec 2020 19:44:15 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.10-beta.1` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:ff97eb5d7a5b44e1ca5cc09b1cad2cebf0a8c35eeaf12b3a3c16663be9f1af72
+$ docker pull rabbitmq@sha256:c2682712e7ad439c23c1e2b0bd91bb086a977ad6df52c0e85411648099b6ff76
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.1 MB (81086364 bytes)**  
+-	Total Size: **81.1 MB (81086419 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:397bf41c8254ef69818f4a293fea065a37c59e9b6d5fe3c85452dc445324f4b4`
+-	Image ID: `sha256:6a4630dd8b49a80f3f67963b0269b7e45fc78298f14a94f03aec41b1d2b21d08`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -1845,13 +1845,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:47:22 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:47:22 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:47:22 GMT
+# Wed, 30 Dec 2020 19:39:35 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:39:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:47:22 GMT
+# Wed, 30 Dec 2020 19:39:36 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:47:23 GMT
+# Wed, 30 Dec 2020 19:39:36 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -1892,22 +1892,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:59:11 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5fb5c9fad3e1717416c8fdc776d8b2591fc89a388cab580896dd9c10cd7e16a`  
-		Last Modified: Mon, 21 Dec 2020 21:59:12 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:00c36867132ade89e84af583bbbccfd07fe00524ece1a20224afe2149e2d45f1`  
+		Last Modified: Wed, 30 Dec 2020 19:41:33 GMT  
+		Size: 4.7 KB (4737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.10-beta.1` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:f67578503b7ccdfb786f81929179fb0670655a0114d15df38457092ef76214d8
+$ docker pull rabbitmq@sha256:634c3d0d3529ca6754774d4613900b4103a89cdcb0454670ae5d0b1721a7266f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.1 MB (79085493 bytes)**  
+-	Total Size: **79.1 MB (79085544 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d609bcfaccc91e579df1513c9c3a7c04dd46eb8bff002d93eb11c2368b968ac2`
+-	Image ID: `sha256:101ece83ce2048ea94b6ff7f7342d188d4b858fdd78b6942e433676ae5f6a633`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -1967,13 +1967,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:02:20 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:02:20 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:02:21 GMT
+# Wed, 30 Dec 2020 19:44:16 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:44:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:02:21 GMT
+# Wed, 30 Dec 2020 19:44:17 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:02:22 GMT
+# Wed, 30 Dec 2020 19:44:17 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -2014,15 +2014,15 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:12:54 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f91234d41b46b603cf8cee5ceed9f2e0979268acce6e1d6f8df1a1fe7f67c6dc`  
-		Last Modified: Mon, 21 Dec 2020 21:12:54 GMT  
-		Size: 4.7 KB (4688 bytes)  
+	-	`sha256:c773ba36152868736be79685d87868b943610a222d7fa09911ef8b3bc32c0fb6`  
+		Last Modified: Wed, 30 Dec 2020 19:46:55 GMT  
+		Size: 4.7 KB (4739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:3.8.10-beta.1-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:aeef9beea380ab66729a85fee83342b4c6d5280abf75f9d49e4b5c95c68bcd38
+$ docker pull rabbitmq@sha256:39905347465fded335e22c3a5d3b1dee8f0b7dca6a7438d22382274349214f9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2038,14 +2038,14 @@ $ docker pull rabbitmq@sha256:aeef9beea380ab66729a85fee83342b4c6d5280abf75f9d49e
 ### `rabbitmq:3.8.10-beta.1-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:0858ffba16d186f34bb7e95c284b45972b269d42882a4ee2dd59251947911ba1
+$ docker pull rabbitmq@sha256:586b934467e82e81475b97111beb45bc3b538d6a7ee14ee03527a036a681aedd
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.8 MB (56775920 bytes)**  
+-	Total Size: **56.8 MB (56775978 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b880a7f513b4f877216a61c0f392ab2c461bb76a213f0c01f323232f95baf19c`
+-	Image ID: `sha256:b2b5d6445991540214b9a5b49fd9a57ce821dc89aa76dc8642fc600c5b2b850a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -2099,13 +2099,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:21:39 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:21:39 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:21:39 GMT
+# Wed, 30 Dec 2020 19:25:44 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:25:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:21:39 GMT
+# Wed, 30 Dec 2020 19:25:45 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:21:39 GMT
+# Wed, 30 Dec 2020 19:25:45 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -2138,22 +2138,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:25:21 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f31487551a0ff949bbc70ba9ac8ec9875d542e1af926367dbac6937dfe80526d`  
-		Last Modified: Mon, 21 Dec 2020 21:25:22 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:b9a74cccb94b3bc235a2cf5f9c94b21c8c96762489315367d32d70091c68f39c`  
+		Last Modified: Wed, 30 Dec 2020 19:27:16 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.10-beta.1-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:12d5a4d949e45fa85cce1ae8b859b0a0afdb7389b7eac25568f3a4038fd6c08e
+$ docker pull rabbitmq@sha256:275a5ad4cfc99b72d828e687e2c8710999ede45cdad6d7d07e756ce724795005
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.5 MB (55511331 bytes)**  
+-	Total Size: **55.5 MB (55511386 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a172fb14abda7a52ae0e6e2b93462addf187520e961a2942184f2ccc528c3a2d`
+-	Image ID: `sha256:c8d787c950282f0c5848be6e1fe3d2e77a4f7348efd4bf686c782fb993e52f79`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -2207,13 +2207,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 20:25:31 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 20:25:32 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 20:25:34 GMT
+# Wed, 30 Dec 2020 19:52:26 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:52:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 20:25:36 GMT
+# Wed, 30 Dec 2020 19:52:27 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 20:25:37 GMT
+# Wed, 30 Dec 2020 19:52:28 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -2246,22 +2246,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 20:28:55 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97647e3b4d0f1aaac6aa37661f4bc5cd6c8045b379a5f973657d755f5cef9d54`  
-		Last Modified: Mon, 21 Dec 2020 20:28:55 GMT  
-		Size: 4.7 KB (4687 bytes)  
+	-	`sha256:6abf880b7fe767efa9283e7c8ab23d554639733fdd814bdb43808d535435098c`  
+		Last Modified: Wed, 30 Dec 2020 19:53:56 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.10-beta.1-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:3c28afa7736007b8bdf5443ed9b9121e1fd2f5683409fbc1e9728881cdcc36c1
+$ docker pull rabbitmq@sha256:9247bf5f002d2e480fc6a533707457bcf3b839840f8842c3e0f27b003c0638ea
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.8 MB (54819416 bytes)**  
+-	Total Size: **54.8 MB (54819472 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:59f9ea5a788714d6e9ef46ff71dc893fc873ac56efa3c213c0d26e148d1cef0e`
+-	Image ID: `sha256:39ad2e361949e1eaed51ac4ac5c24a446dc43b67d36a4204a32b5c974960c82a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -2315,13 +2315,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:54:59 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:55:00 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:55:01 GMT
+# Wed, 30 Dec 2020 19:59:27 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:59:28 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:55:01 GMT
+# Wed, 30 Dec 2020 19:59:29 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:55:02 GMT
+# Wed, 30 Dec 2020 19:59:29 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -2354,22 +2354,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:58:59 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99907925be53b12dba406ec9af76812d86baa2ed3e439afce01f36faf6300f8b`  
-		Last Modified: Mon, 21 Dec 2020 21:59:00 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:a6059004726e34cc86c381e9b1ee511622f4af99824b3d526c06261f711bb119`  
+		Last Modified: Wed, 30 Dec 2020 20:03:05 GMT  
+		Size: 4.7 KB (4739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.10-beta.1-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:1ac113ac6fcbe83e6c39457bdb5d239fe4552af47496faee5f59d928ef7fc6ed
+$ docker pull rabbitmq@sha256:9658afcb8db322aeb785b27cf408be8419503c3fe94b8376361ce0833a437354
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.3 MB (56275922 bytes)**  
+-	Total Size: **56.3 MB (56275979 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5f37a77dc997c7a59243b56ed289b7197b4311e337958b631bb8cb9570286714`
+-	Image ID: `sha256:c449c620c58439b938264dec2857e232d38389d126874e377b47a5d253d73007`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -2423,13 +2423,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:13:12 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:13:12 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:13:13 GMT
+# Wed, 30 Dec 2020 19:42:15 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:42:15 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:13:13 GMT
+# Wed, 30 Dec 2020 19:42:16 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:13:14 GMT
+# Wed, 30 Dec 2020 19:42:17 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -2462,22 +2462,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:17:06 GMT  
 		Size: 105.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa8c8825efa6421a8d3516242abd2f634388948d5a46519c33403dcb4666be8c`  
-		Last Modified: Mon, 21 Dec 2020 21:17:06 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:ff00cbcbd8ed34f9e8ec40d01e1b4cdd45a335a03a5d846f1ddf2de61d7239b0`  
+		Last Modified: Wed, 30 Dec 2020 19:44:31 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.10-beta.1-alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:845bc8a91e2a05049dbada14e6e6b0902006f8dfdba06894c156a6a4e201fa8f
+$ docker pull rabbitmq@sha256:39e7a9ebddec288eb5f11ca82cfc8a1e896d74a365ce25d835b1c050a445594b
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.8 MB (56800634 bytes)**  
+-	Total Size: **56.8 MB (56800691 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86d2e4afea611b10614bd3b8e68c418454d84f2d32bdcfdf57cf9e8f778f38db`
+-	Image ID: `sha256:ffc298d9749260318f466b1ab54b4f2457e73b20e3de69420ff1c7579c049ebd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -2531,13 +2531,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:56:52 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:56:52 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:56:52 GMT
+# Wed, 30 Dec 2020 19:40:09 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:40:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:56:53 GMT
+# Wed, 30 Dec 2020 19:40:10 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:56:53 GMT
+# Wed, 30 Dec 2020 19:40:10 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -2570,22 +2570,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:59:47 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c64f54063f1d04907feabc470de67eded39b0e6cab1946f05190cdbb96515e5a`  
-		Last Modified: Mon, 21 Dec 2020 21:59:47 GMT  
-		Size: 4.7 KB (4684 bytes)  
+	-	`sha256:1b8fd402b69e9ee763d0d9b791a3c2a8991d31f1dcb624b4b31ab7a625ff587a`  
+		Last Modified: Wed, 30 Dec 2020 19:41:46 GMT  
+		Size: 4.7 KB (4741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.10-beta.1-alpine` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:c93457719e1436c2e93efa4e8467b1ea1b1f962a2e215805b5b352eef5d69d6f
+$ docker pull rabbitmq@sha256:3bfd7c09c6cb08990271cb72dd13e911a9d8ba6c132ee2d2bcfcd0e0dceb297f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **57.2 MB (57182043 bytes)**  
+-	Total Size: **57.2 MB (57182100 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ba1038ae36ba34246de5c800bb09bcedfa5098f7143a8775f581dfc208a9fd2`
+-	Image ID: `sha256:a05e2b28fd790097fa23c7426906d997378763012cf0cf435cf843c41a14d53a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -2639,13 +2639,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 22:47:20 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 22:47:22 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 22:47:26 GMT
+# Wed, 30 Dec 2020 19:21:32 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:21:40 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 22:47:34 GMT
+# Wed, 30 Dec 2020 19:21:45 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 22:47:39 GMT
+# Wed, 30 Dec 2020 19:21:51 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -2678,22 +2678,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 22:54:48 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79dc0fbec9f6ec0989b2c7b029e8ef91e4900505b4ea0e831ee5bf90a4ed34e6`  
-		Last Modified: Mon, 21 Dec 2020 22:54:48 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:974c3de5bc9649c26e687cb36196472c3325158aef28bdaa7ef2cc162c561478`  
+		Last Modified: Wed, 30 Dec 2020 19:26:15 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.10-beta.1-alpine` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:b3223056befc1570d94f0a4fb289713c9db5a87d6c971a90c471dcddb9ded0d0
+$ docker pull rabbitmq@sha256:ec6b77f1c0535e3c0eb5b7a24f9ba8f1cf0e76ac6efab3f3fbdaf567cf34b0e3
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.6 MB (55575936 bytes)**  
+-	Total Size: **55.6 MB (55575997 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7809ac24abe0938f5030c6af9a0f3539792310598251eba0691f100569a2d0c9`
+-	Image ID: `sha256:5c3366355e2f2c63c5ef9b4b96b87f461c0b61bd21e045e5586f15b287008315`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -2747,13 +2747,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:09:35 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:09:36 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:09:36 GMT
+# Wed, 30 Dec 2020 19:44:53 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:44:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:09:37 GMT
+# Wed, 30 Dec 2020 19:44:54 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:09:37 GMT
+# Wed, 30 Dec 2020 19:44:54 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -2786,15 +2786,15 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:13:18 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:645a46b96c36bd1d5d73452bf2e5bcb1d25e92308a18c33d1ca229f5caa9e0a8`  
-		Last Modified: Mon, 21 Dec 2020 21:13:19 GMT  
-		Size: 4.7 KB (4686 bytes)  
+	-	`sha256:f31d2bccb24eba690c8dbf70ad7c67553ccc98d310b151ce575920cb303f4449`  
+		Last Modified: Wed, 30 Dec 2020 19:47:11 GMT  
+		Size: 4.7 KB (4747 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:3.8.10-beta.1-management`
 
 ```console
-$ docker pull rabbitmq@sha256:a2c897ae083f6c6105001d99735f3881bb3edf246aa62216df0b87fd8519a0e4
+$ docker pull rabbitmq@sha256:5a53a9e764e6a7f5812d7d51320b83ce3eab23f3b9902fb94821cc4a769c92d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2808,14 +2808,14 @@ $ docker pull rabbitmq@sha256:a2c897ae083f6c6105001d99735f3881bb3edf246aa62216df
 ### `rabbitmq:3.8.10-beta.1-management` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:f47790926513083aebd646e234c460f347401b680a369fc0b219a21f75713e8e
+$ docker pull rabbitmq@sha256:93443e54b00262fa9af2d149fc44577883371a27e76047523b5961b7bf54b385
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.5 MB (92518058 bytes)**  
+-	Total Size: **92.5 MB (92518189 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa57d1d63a0a973c196638bba9d729b53867e6b297e8afffbec82d65cc06248b`
+-	Image ID: `sha256:a56d5f0e5ad28fc2cccb8a15cbd2299401a710df0bfb9eca0e26de6bdc30b34b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -2875,21 +2875,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:11:01 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:11:01 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:11:01 GMT
+# Wed, 30 Dec 2020 19:25:10 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:25:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:11:02 GMT
+# Wed, 30 Dec 2020 19:25:10 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:11:02 GMT
+# Wed, 30 Dec 2020 19:25:11 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:11:24 GMT
+# Wed, 30 Dec 2020 19:25:17 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:11:26 GMT
+# Wed, 30 Dec 2020 19:25:18 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:11:42 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:11:42 GMT
+# Wed, 30 Dec 2020 19:25:38 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:25:39 GMT
 EXPOSE 15671 15672
 ```
 
@@ -2930,34 +2930,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:24:54 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31ff449b8ac05c6bcefc0f02372d1be22ed43e2472b289d4ed09d8304af5048e`  
-		Last Modified: Mon, 21 Dec 2020 21:24:52 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:6e5593aa4d041605ae0212b59ef0c3908fff2fa10576f17348872c7cf2a40731`  
+		Last Modified: Wed, 30 Dec 2020 19:27:04 GMT  
+		Size: 4.7 KB (4737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0063f242f83b33b46a5351cd6a6c6a0e3aa5dd2542fa454e8ada1ed33d9f8bd`  
-		Last Modified: Mon, 21 Dec 2020 21:25:13 GMT  
-		Size: 203.0 B  
+	-	`sha256:bece79381126f851177aa76d18ffea9efb72d6babfa44b23d2c62d0dbbc86f96`  
+		Last Modified: Wed, 30 Dec 2020 19:27:09 GMT  
+		Size: 202.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ebd9ff6ef93cd9cd26b8a530a9968cc5770f8f7dadce188995fa8016d900c6be`  
-		Last Modified: Mon, 21 Dec 2020 21:25:13 GMT  
+	-	`sha256:28af2758107f199f7fbae99d96a148a90b74180d259eff1b5d4e8dd7bdf97a01`  
+		Last Modified: Wed, 30 Dec 2020 19:27:09 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec1536f8b07558c03ac75fdbd9f235c249d8790c8dab945e6860d5144815d12e`  
-		Last Modified: Mon, 21 Dec 2020 21:25:16 GMT  
-		Size: 10.8 MB (10784649 bytes)  
+	-	`sha256:a763cf8504b373510aa3bb6ebc8adb48b6a7abd4e82ab14143ae3aa7a376687e`  
+		Last Modified: Wed, 30 Dec 2020 19:27:11 GMT  
+		Size: 10.8 MB (10784729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.10-beta.1-management` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:cea33a3a6ed62869aef6fa01bf691936435fcb0f0852585159d5a7539e9da57e
+$ docker pull rabbitmq@sha256:3393394a11ce11e5328b9c173d0166373887050e309210574e617a583992f2c7
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.6 MB (84567663 bytes)**  
+-	Total Size: **84.6 MB (84567626 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b292c9f8e992f83cd84eedeec68063a1d76773dac3ce2e06aa860045d9f3d974`
+-	Image ID: `sha256:418a9a4fca68b76a71a9a635f16bdebbbeaa5e8b8005cfe57afefabce002112b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -3017,21 +3017,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:49:35 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:49:36 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:49:37 GMT
+# Wed, 30 Dec 2020 19:58:48 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:58:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:49:37 GMT
+# Wed, 30 Dec 2020 19:58:50 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:49:38 GMT
+# Wed, 30 Dec 2020 19:58:50 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:50:00 GMT
+# Wed, 30 Dec 2020 19:59:00 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:50:02 GMT
+# Wed, 30 Dec 2020 19:59:02 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:50:23 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:50:25 GMT
+# Wed, 30 Dec 2020 19:59:21 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:59:22 GMT
 EXPOSE 15671 15672
 ```
 
@@ -3072,34 +3072,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:58:26 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3df8c76ab3d42ffccdbcf5969727f268054360726abaf18365645497b203dd5`  
-		Last Modified: Mon, 21 Dec 2020 21:58:27 GMT  
-		Size: 4.7 KB (4689 bytes)  
+	-	`sha256:9bd8d3dff20f30856488aee35dd4c026ec4a07e837ec1c76dae44f4bbcd5b111`  
+		Last Modified: Wed, 30 Dec 2020 20:02:45 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b224441670acc794bce58f84ec338409f7f1be9da6af3391f908712c578d0140`  
-		Last Modified: Mon, 21 Dec 2020 21:58:47 GMT  
-		Size: 201.0 B  
+	-	`sha256:c0e37c2edcf8dadd4cb28ad7f29a7544488f0fa463da5f6266c834bba29173de`  
+		Last Modified: Wed, 30 Dec 2020 20:02:53 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff2b773037e4759cca19b285f488d94783634f80b9cfa4fa64b2452461f6f601`  
-		Last Modified: Mon, 21 Dec 2020 21:58:47 GMT  
-		Size: 216.0 B  
+	-	`sha256:2eb7e3a922c71c65704302c12a6a7e800fae2514f66bcf352226db80bc0137f7`  
+		Last Modified: Wed, 30 Dec 2020 20:02:55 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50129e30d102b0f3e089acfc628916a20b2b8cece254c5f814b1420c27ba3ca3`  
-		Last Modified: Mon, 21 Dec 2020 21:58:51 GMT  
-		Size: 9.7 MB (9748906 bytes)  
+	-	`sha256:8df4a2e026f3f6c041d38ab9e2a32140d23cfacf9fe09487d32f8749e56f2333`  
+		Last Modified: Wed, 30 Dec 2020 20:02:56 GMT  
+		Size: 9.7 MB (9748822 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.10-beta.1-management` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:177909801611a11f3e4bcfe61d2fd43204b02c9ace1e68bf1785f5bb8892211e
+$ docker pull rabbitmq@sha256:6f66abcb3db4c3ada328fa76acdbcd39951b119198b89308399359a25fc7218f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.2 MB (87199541 bytes)**  
+-	Total Size: **87.2 MB (87199660 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ebbab271cf54d4af2f02b27300746ee561007d2c055c31479983f3bb745b0cb4`
+-	Image ID: `sha256:a4dc7ece948ac02d9d357605ad818149632918e10902fa5b1b88cd8593bb367c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -3159,21 +3159,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:07:45 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:07:47 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:07:48 GMT
+# Wed, 30 Dec 2020 19:41:35 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:41:36 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:07:50 GMT
+# Wed, 30 Dec 2020 19:41:37 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:07:52 GMT
+# Wed, 30 Dec 2020 19:41:37 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:08:12 GMT
+# Wed, 30 Dec 2020 19:41:46 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:08:14 GMT
+# Wed, 30 Dec 2020 19:41:48 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:08:33 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:08:34 GMT
+# Wed, 30 Dec 2020 19:42:06 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:42:08 GMT
 EXPOSE 15671 15672
 ```
 
@@ -3214,34 +3214,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:16:38 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11c8878404e7e30a45424503cc313ab65a8dbf290d9f33c5cba043dea7c358e6`  
-		Last Modified: Mon, 21 Dec 2020 21:16:38 GMT  
-		Size: 4.7 KB (4686 bytes)  
+	-	`sha256:1bfcd78e2cff9c4ed12cb5840ab53d16292d5272329014b4eef4741e6f0eff8d`  
+		Last Modified: Wed, 30 Dec 2020 19:44:15 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe1cbcf32aac3f354d9e8d196a001bdd6e1d6ee3c9e9f4c393bc00c9e3d72f3a`  
-		Last Modified: Mon, 21 Dec 2020 21:16:56 GMT  
-		Size: 203.0 B  
+	-	`sha256:a8773f7408539a4c8a4234f1a6028ae9cc69d1d1f1ebecda9c913c5eb32cffd3`  
+		Last Modified: Wed, 30 Dec 2020 19:44:22 GMT  
+		Size: 206.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce9023f8f27a96b074a0fdf1d64cf79cce9e1095851d71180fdff77b19545818`  
-		Last Modified: Mon, 21 Dec 2020 21:16:57 GMT  
-		Size: 216.0 B  
+	-	`sha256:34036ae14da8d0559bdad32c445b27c9b058020bf364239151090f5a49b225ea`  
+		Last Modified: Wed, 30 Dec 2020 19:44:22 GMT  
+		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:369b165b5a3839f7486a9fc2f1d4141b9d267848ceb33addc08bbeb2ef64a983`  
-		Last Modified: Mon, 21 Dec 2020 21:16:58 GMT  
-		Size: 10.2 MB (10152378 bytes)  
+	-	`sha256:4628d6ff45247528830d4c72cf59d8e1d7029998e801672d4053621dabbbe8f2`  
+		Last Modified: Wed, 30 Dec 2020 19:44:24 GMT  
+		Size: 10.2 MB (10152439 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.10-beta.1-management` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:66a0cb1375982fc8f09f9c2012cf7c2e2e3da161e48b11d03af6b9b53a7bd8ef
+$ docker pull rabbitmq@sha256:86ea4af523153cb13661f73efc4d7ab0920a9fe707e71dfaa94b84f6663dabaf
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **91.9 MB (91940932 bytes)**  
+-	Total Size: **91.9 MB (91941142 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:07091826e919179c3ff65853f6bc725cf0244bc80ef2de79ec49dde50f27c386`
+-	Image ID: `sha256:00fb875c975c768412f2d894cc2df07cf2fe545020fdd70803d4bb1f28dc1dea`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -3301,21 +3301,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:47:22 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:47:22 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:47:22 GMT
+# Wed, 30 Dec 2020 19:39:35 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:39:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:47:22 GMT
+# Wed, 30 Dec 2020 19:39:36 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:47:23 GMT
+# Wed, 30 Dec 2020 19:39:36 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:47:34 GMT
+# Wed, 30 Dec 2020 19:39:42 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:47:35 GMT
+# Wed, 30 Dec 2020 19:39:43 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:47:49 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:47:49 GMT
+# Wed, 30 Dec 2020 19:40:02 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:40:02 GMT
 EXPOSE 15671 15672
 ```
 
@@ -3356,34 +3356,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:59:11 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5fb5c9fad3e1717416c8fdc776d8b2591fc89a388cab580896dd9c10cd7e16a`  
-		Last Modified: Mon, 21 Dec 2020 21:59:12 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:00c36867132ade89e84af583bbbccfd07fe00524ece1a20224afe2149e2d45f1`  
+		Last Modified: Wed, 30 Dec 2020 19:41:33 GMT  
+		Size: 4.7 KB (4737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:162eb9641ca8ef8dea874799ca37d2b4be8b32b22a089d3aade7b04f7668b1f0`  
-		Last Modified: Mon, 21 Dec 2020 21:59:38 GMT  
-		Size: 201.0 B  
+	-	`sha256:7097206bb4bd2efbb8296a10b082e667ea72c996012f2b29f4f67fedc53dcb6c`  
+		Last Modified: Wed, 30 Dec 2020 19:41:38 GMT  
+		Size: 202.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8425829f152e037d22f6c3aa9d68ada9ff2708b71f6c45f654aa4466c330ef8b`  
-		Last Modified: Mon, 21 Dec 2020 21:59:38 GMT  
-		Size: 214.0 B  
+	-	`sha256:d801c0c358fee5322e34df5428d06e02a5bbb62e4935707fa0952c9fa145a4eb`  
+		Last Modified: Wed, 30 Dec 2020 19:41:38 GMT  
+		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20bc8f620b8ca96e2eb69ca9b0a58b7820948df5cb57d6c5547748db641a4fd5`  
-		Last Modified: Mon, 21 Dec 2020 21:59:42 GMT  
-		Size: 10.9 MB (10854153 bytes)  
+	-	`sha256:197496a41924f5f65035fdeafea27ebd4f55e0d10d3361b3fef18304e33d8e1d`  
+		Last Modified: Wed, 30 Dec 2020 19:41:41 GMT  
+		Size: 10.9 MB (10854309 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.10-beta.1-management` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:592e28e268c6da03ddb7e39d1d58a1dd7190822472956f3cde3bbb37e7b46745
+$ docker pull rabbitmq@sha256:bfe94e09cbc07864089de4f39aaa25e62def5dd065e385f825fb57bf7f0b53be
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **89.5 MB (89493980 bytes)**  
+-	Total Size: **89.5 MB (89494036 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a87dc36f7071d0863e0c6a0a1835e36e8f30d86eb934f5f38f5e19a2d4eb3995`
+-	Image ID: `sha256:ab2c3ffdf8f0e1c9eed111e706902fc74e9a45cd6bea1cbaf97d4db5dc288212`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -3443,21 +3443,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:02:20 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:02:20 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:02:21 GMT
+# Wed, 30 Dec 2020 19:44:16 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:44:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:02:21 GMT
+# Wed, 30 Dec 2020 19:44:17 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:02:22 GMT
+# Wed, 30 Dec 2020 19:44:17 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:02:47 GMT
+# Wed, 30 Dec 2020 19:44:26 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:02:48 GMT
+# Wed, 30 Dec 2020 19:44:27 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:03:08 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:03:11 GMT
+# Wed, 30 Dec 2020 19:44:43 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:44:45 GMT
 EXPOSE 15671 15672
 ```
 
@@ -3498,27 +3498,27 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:12:54 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f91234d41b46b603cf8cee5ceed9f2e0979268acce6e1d6f8df1a1fe7f67c6dc`  
-		Last Modified: Mon, 21 Dec 2020 21:12:54 GMT  
-		Size: 4.7 KB (4688 bytes)  
+	-	`sha256:c773ba36152868736be79685d87868b943610a222d7fa09911ef8b3bc32c0fb6`  
+		Last Modified: Wed, 30 Dec 2020 19:46:55 GMT  
+		Size: 4.7 KB (4739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:290cd5c7b7ca5f014247094e652b08c74bdb88a27393bde6de695753e7fb0fa7`  
-		Last Modified: Mon, 21 Dec 2020 21:13:08 GMT  
-		Size: 205.0 B  
+	-	`sha256:227ae0ceee0c6e8ffc24159a5d0eb300f8b541f51bf4624bdbf02a3bd411cb73`  
+		Last Modified: Wed, 30 Dec 2020 19:47:01 GMT  
+		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8237cb0473254054383538ea23540fb07b766aea0e7b8637278531047b35288`  
-		Last Modified: Mon, 21 Dec 2020 21:13:08 GMT  
+	-	`sha256:64e5baedfebb9a05befc946d55e493544479621c00a8fb8f55b7ad590b1ec67d`  
+		Last Modified: Wed, 30 Dec 2020 19:47:01 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a465f372efd6e4348dbe197fca4f89a36b64c8a405e2c492c0b10a50d75891e`  
-		Last Modified: Mon, 21 Dec 2020 21:13:10 GMT  
-		Size: 10.4 MB (10408068 bytes)  
+	-	`sha256:f86f99a7d5a8f6e8d91a6f0d919740badb0a6e9e3d0344210f2b95a6fde940bd`  
+		Last Modified: Wed, 30 Dec 2020 19:47:03 GMT  
+		Size: 10.4 MB (10408074 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:3.8.10-beta.1-management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:8b16b2472f359ba73ce10de7d23c955e28906a27ee0f19c41df55ef9c80bbf1e
+$ docker pull rabbitmq@sha256:34ba048e4a16a810574addbd03904255e00d59f8e9e5488ee114842d901bf3c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3534,14 +3534,14 @@ $ docker pull rabbitmq@sha256:8b16b2472f359ba73ce10de7d23c955e28906a27ee0f19c41d
 ### `rabbitmq:3.8.10-beta.1-management-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:cb6a87764aa03e355f4d1aff5d3d95b3f8082d1825f2c77b4bfee34ee75e695f
+$ docker pull rabbitmq@sha256:1be799991fcd9cbbc1fadbe65868096529626327a2e19daad4325de8b8a890be
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.7 MB (70690326 bytes)**  
+-	Total Size: **70.7 MB (70690414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50858d92b22c89b3d038f84a5611e7c5851d44049828b5e807a7c6c0b3feca87`
+-	Image ID: `sha256:dc31e53c68a2ef6ba66e9937bf5f6740a0740c09a1234dfbae47f11794f95087`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -3595,21 +3595,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:21:39 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:21:39 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:21:39 GMT
+# Wed, 30 Dec 2020 19:25:44 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:25:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:21:39 GMT
+# Wed, 30 Dec 2020 19:25:45 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:21:39 GMT
+# Wed, 30 Dec 2020 19:25:45 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:21:59 GMT
+# Wed, 30 Dec 2020 19:25:51 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:22:00 GMT
+# Wed, 30 Dec 2020 19:25:52 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:22:04 GMT
+# Wed, 30 Dec 2020 19:25:56 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:22:05 GMT
+# Wed, 30 Dec 2020 19:25:56 GMT
 EXPOSE 15671 15672
 ```
 
@@ -3642,34 +3642,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:25:21 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f31487551a0ff949bbc70ba9ac8ec9875d542e1af926367dbac6937dfe80526d`  
-		Last Modified: Mon, 21 Dec 2020 21:25:22 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:b9a74cccb94b3bc235a2cf5f9c94b21c8c96762489315367d32d70091c68f39c`  
+		Last Modified: Wed, 30 Dec 2020 19:27:16 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60e0554cb37e82e1831e79fd586e4ad7b4d00f95d4e5eada241da22803daa8c6`  
-		Last Modified: Mon, 21 Dec 2020 21:25:34 GMT  
-		Size: 203.0 B  
+	-	`sha256:b43806e8c4e3e5bbf50b35747ff4ef55d261bb8ea46e3b7123d60bdd3e5b05cd`  
+		Last Modified: Wed, 30 Dec 2020 19:27:20 GMT  
+		Size: 206.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e886d70d13c7174e24afd6adefc254fe72a476481dd674c352bcd9429085c68c`  
-		Last Modified: Mon, 21 Dec 2020 21:25:34 GMT  
-		Size: 214.0 B  
+	-	`sha256:b9d325256dafeb702bd323686ba07314281dcb96cea16e681d65ad53fd39d316`  
+		Last Modified: Wed, 30 Dec 2020 19:27:21 GMT  
+		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6379e5429f9b473088890140a2ba2d87e846e88c13d7e7102af520de07f55d17`  
-		Last Modified: Mon, 21 Dec 2020 21:25:37 GMT  
-		Size: 13.9 MB (13913989 bytes)  
+	-	`sha256:11128b22b7616e943a9d9fee6fc010ea4bca093f28fd6e09966b075995a59bbb`  
+		Last Modified: Wed, 30 Dec 2020 19:27:23 GMT  
+		Size: 13.9 MB (13914015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.10-beta.1-management-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:caf2712cf5b83f03fd3897fbe38495df241a5ec8b2860760c2c6cb028700cf75
+$ docker pull rabbitmq@sha256:367c3a3111e247fc622333146752a6f58fe37413b6aa85eff9bf0cf7c19c59c9
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.3 MB (69317797 bytes)**  
+-	Total Size: **69.3 MB (69317865 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:07d521cec0f4d04674002f040e928785ad3d1ff628f4b29a992aace4b4068b5e`
+-	Image ID: `sha256:106d5bc79070fc582bb4b7d51782499c7e3223b3714884cb7922d20b57479544`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -3723,21 +3723,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 20:25:31 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 20:25:32 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 20:25:34 GMT
+# Wed, 30 Dec 2020 19:52:26 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:52:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 20:25:36 GMT
+# Wed, 30 Dec 2020 19:52:27 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 20:25:37 GMT
+# Wed, 30 Dec 2020 19:52:28 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 20:26:12 GMT
+# Wed, 30 Dec 2020 19:52:44 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 20:26:16 GMT
+# Wed, 30 Dec 2020 19:52:46 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 20:26:26 GMT
+# Wed, 30 Dec 2020 19:52:56 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 20:26:28 GMT
+# Wed, 30 Dec 2020 19:52:58 GMT
 EXPOSE 15671 15672
 ```
 
@@ -3770,34 +3770,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 20:28:55 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97647e3b4d0f1aaac6aa37661f4bc5cd6c8045b379a5f973657d755f5cef9d54`  
-		Last Modified: Mon, 21 Dec 2020 20:28:55 GMT  
-		Size: 4.7 KB (4687 bytes)  
+	-	`sha256:6abf880b7fe767efa9283e7c8ab23d554639733fdd814bdb43808d535435098c`  
+		Last Modified: Wed, 30 Dec 2020 19:53:56 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5e90978d26500215319c7fe004aeed2ec472efbd68d602cd714420275b33203`  
-		Last Modified: Mon, 21 Dec 2020 20:29:14 GMT  
-		Size: 209.0 B  
+	-	`sha256:02d53b7aaea7c21c466b749e27d91b7e484dc6e9026cb378a65ae65d0b9a04d8`  
+		Last Modified: Wed, 30 Dec 2020 19:54:04 GMT  
+		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d64b7c5af04cbd716cd74ef6c4ce956393cdac79c12d04520127042daf79e678`  
-		Last Modified: Mon, 21 Dec 2020 20:29:14 GMT  
+	-	`sha256:7ad7a1bed75271a295e9ab2033d8cb7e47471e0e9ca688f7b537cbd4ccefc994`  
+		Last Modified: Wed, 30 Dec 2020 19:54:04 GMT  
 		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:743f2824695f0091207ca53c67a6e62b904dc9d0420a11a7d57b5d32ae02f9d0`  
-		Last Modified: Mon, 21 Dec 2020 20:29:19 GMT  
-		Size: 13.8 MB (13806042 bytes)  
+	-	`sha256:351ffe9e786bb53ed2355aa71c392c8d5ae0c241e80fee9f71368d7ca4998e9b`  
+		Last Modified: Wed, 30 Dec 2020 19:54:09 GMT  
+		Size: 13.8 MB (13806060 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.10-beta.1-management-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:2b3c207b0698fe52b4e4a955a4d06f9e5de2bfa19bc16bfb637f16f9b3c75f13
+$ docker pull rabbitmq@sha256:74fc03e481668c36f6a17a8fa5f2fa85a5160db5a6e34501860547635ccedb89
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.3 MB (68271601 bytes)**  
+-	Total Size: **68.3 MB (68271691 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:064684f619654ad10b4830696b4affe6bb5085f9734d0b46956863ae0bb3e37b`
+-	Image ID: `sha256:baeded1adef5a0691f9e2b0ccd116416f76c106acb0f4a9f0d14cf5f919d978e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -3851,21 +3851,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:54:59 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:55:00 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:55:01 GMT
+# Wed, 30 Dec 2020 19:59:27 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:59:28 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:55:01 GMT
+# Wed, 30 Dec 2020 19:59:29 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:55:02 GMT
+# Wed, 30 Dec 2020 19:59:29 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:55:12 GMT
+# Wed, 30 Dec 2020 19:59:38 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:55:14 GMT
+# Wed, 30 Dec 2020 19:59:40 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:55:21 GMT
+# Wed, 30 Dec 2020 19:59:56 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:55:22 GMT
+# Wed, 30 Dec 2020 19:59:58 GMT
 EXPOSE 15671 15672
 ```
 
@@ -3898,34 +3898,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:58:59 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99907925be53b12dba406ec9af76812d86baa2ed3e439afce01f36faf6300f8b`  
-		Last Modified: Mon, 21 Dec 2020 21:59:00 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:a6059004726e34cc86c381e9b1ee511622f4af99824b3d526c06261f711bb119`  
+		Last Modified: Wed, 30 Dec 2020 20:03:05 GMT  
+		Size: 4.7 KB (4739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2764a96fc0ee0c2f26ae81a5f401f64fc7b8df7c6a3fafc620616805cf09d02`  
-		Last Modified: Mon, 21 Dec 2020 21:59:21 GMT  
-		Size: 206.0 B  
+	-	`sha256:4e7f7cfc67af2570d08526e5803b88de96b396f43c9921aca65c2f65006541d7`  
+		Last Modified: Wed, 30 Dec 2020 20:03:12 GMT  
+		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:116276374e3a18e357a946ce0d8cfeef53a3eb5b024292acf3044a376e1e898f`  
-		Last Modified: Mon, 21 Dec 2020 21:59:20 GMT  
+	-	`sha256:aa7658c26a7a3b476c8cdb9d3f482e978ebcfefdb7aaa429b29c7f1fd310fa0e`  
+		Last Modified: Wed, 30 Dec 2020 20:03:12 GMT  
 		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bafc30868446100b78336a9e63671593e6f57b83057a365488061d9685a37de9`  
-		Last Modified: Mon, 21 Dec 2020 21:59:25 GMT  
-		Size: 13.5 MB (13451764 bytes)  
+	-	`sha256:adef25871b402f90c6ce729e7b2d9bfb733d001692426889d7794353526252e6`  
+		Last Modified: Wed, 30 Dec 2020 20:03:18 GMT  
+		Size: 13.5 MB (13451800 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.10-beta.1-management-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:e44882a3c5de605ec9e183b3d677dc3555c0af37d40280b6280db1dc01c90eb3
+$ docker pull rabbitmq@sha256:3a475092bea7834822c152caa98a6ce48e892abdd455521a7322833fc4946da4
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.3 MB (70310483 bytes)**  
+-	Total Size: **70.3 MB (70310568 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b604916139ac5c69e0694f4e426710726b6b27d3ac4ed8a867e5f85e5a5982c`
+-	Image ID: `sha256:0d9cc43a448a28500772d146c56ccf3238d6516cc81cf43ba5b218603af5746f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -3979,21 +3979,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:13:12 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:13:12 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:13:13 GMT
+# Wed, 30 Dec 2020 19:42:15 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:42:15 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:13:13 GMT
+# Wed, 30 Dec 2020 19:42:16 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:13:14 GMT
+# Wed, 30 Dec 2020 19:42:17 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:13:35 GMT
+# Wed, 30 Dec 2020 19:42:26 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:13:37 GMT
+# Wed, 30 Dec 2020 19:42:28 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:13:43 GMT
+# Wed, 30 Dec 2020 19:42:35 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:13:45 GMT
+# Wed, 30 Dec 2020 19:42:36 GMT
 EXPOSE 15671 15672
 ```
 
@@ -4026,34 +4026,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:17:06 GMT  
 		Size: 105.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa8c8825efa6421a8d3516242abd2f634388948d5a46519c33403dcb4666be8c`  
-		Last Modified: Mon, 21 Dec 2020 21:17:06 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:ff00cbcbd8ed34f9e8ec40d01e1b4cdd45a335a03a5d846f1ddf2de61d7239b0`  
+		Last Modified: Wed, 30 Dec 2020 19:44:31 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8d80fe574bb49e2e4df7eb57eab8750a36fa3dc597d7eccfb309196d576e826`  
-		Last Modified: Mon, 21 Dec 2020 21:17:24 GMT  
-		Size: 204.0 B  
+	-	`sha256:6640cba55f7cb621eb31052b36c2ef40cdbdf0c65fafa9d4788cf433a866df3e`  
+		Last Modified: Wed, 30 Dec 2020 19:44:39 GMT  
+		Size: 205.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d04d490c472c2e8d67814a2247788ef0e5c7bb904e43e52b6347bb47388b1cd`  
-		Last Modified: Mon, 21 Dec 2020 21:17:23 GMT  
-		Size: 216.0 B  
+	-	`sha256:65620c258eab2b24e8fa6efa67b007784224243a3af9da5360b0b3dd314d2b8a`  
+		Last Modified: Wed, 30 Dec 2020 19:44:38 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e15b6738d90a4bc0f90ee68f8865af65da7ad5c2ec9dd04c3949d242c0303e8`  
-		Last Modified: Mon, 21 Dec 2020 21:17:27 GMT  
-		Size: 14.0 MB (14034141 bytes)  
+	-	`sha256:9fafafeaf1fbff2f61de6da420e43d4297ab03dd3b366db58de6454a03b95a5f`  
+		Last Modified: Wed, 30 Dec 2020 19:44:42 GMT  
+		Size: 14.0 MB (14034173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.10-beta.1-management-alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:ef82aa455e230aa3b6fc6be1d496dcec89bb1762fefc7f0d10a04e2c28c3ef0b
+$ docker pull rabbitmq@sha256:a8413e24c992c300679ac78e51f0d6d7db05782ba0677dda25fb18a2493f831a
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.8 MB (70834317 bytes)**  
+-	Total Size: **70.8 MB (70834448 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3bdf69951beb254f0de3961764284f9ee7a7ac6fa1692cd28323a24136e338e`
+-	Image ID: `sha256:83740ece3ae088b864a025a11ff6e584caa9498571de97fe13e6896c1cd3c5d0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -4107,21 +4107,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:56:52 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:56:52 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:56:52 GMT
+# Wed, 30 Dec 2020 19:40:09 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:40:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:56:53 GMT
+# Wed, 30 Dec 2020 19:40:10 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:56:53 GMT
+# Wed, 30 Dec 2020 19:40:10 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:57:07 GMT
+# Wed, 30 Dec 2020 19:40:17 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:57:08 GMT
+# Wed, 30 Dec 2020 19:40:17 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:57:14 GMT
+# Wed, 30 Dec 2020 19:40:22 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:57:14 GMT
+# Wed, 30 Dec 2020 19:40:22 GMT
 EXPOSE 15671 15672
 ```
 
@@ -4154,34 +4154,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:59:47 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c64f54063f1d04907feabc470de67eded39b0e6cab1946f05190cdbb96515e5a`  
-		Last Modified: Mon, 21 Dec 2020 21:59:47 GMT  
-		Size: 4.7 KB (4684 bytes)  
+	-	`sha256:1b8fd402b69e9ee763d0d9b791a3c2a8991d31f1dcb624b4b31ab7a625ff587a`  
+		Last Modified: Wed, 30 Dec 2020 19:41:46 GMT  
+		Size: 4.7 KB (4741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e07bbbfef756f44e59579f36d03921354b638468b2c18e3a619486dc17b8bef`  
-		Last Modified: Mon, 21 Dec 2020 22:00:05 GMT  
-		Size: 204.0 B  
+	-	`sha256:a9a12098605c18fee28f1444b31abca7bde72abbc687d365e8db7a582c82b932`  
+		Last Modified: Wed, 30 Dec 2020 19:41:52 GMT  
+		Size: 203.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb001c1530bb994d7e5876a6267f81ac0c73148c3c2b3b28126beea400c99ad4`  
-		Last Modified: Mon, 21 Dec 2020 22:00:04 GMT  
-		Size: 211.0 B  
+	-	`sha256:e9e55b9e6602dd900cdec9667f24f34f7967fb814032a4bccae485a9ebb6e907`  
+		Last Modified: Wed, 30 Dec 2020 19:41:51 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41938eadbc12cd6181bd9814a90985d380e42eb48ae6e27d9638acb5be83dcb1`  
-		Last Modified: Mon, 21 Dec 2020 22:00:08 GMT  
-		Size: 14.0 MB (14033268 bytes)  
+	-	`sha256:a7f6716d6b34997baa7c4d32edcff82d2043eaaab26e49222f756b6e32957128`  
+		Last Modified: Wed, 30 Dec 2020 19:41:55 GMT  
+		Size: 14.0 MB (14033341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.10-beta.1-management-alpine` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:5ea1ab67fb2c0cf334f1ab6a5602ccb90e9a41c8a12ef9f3cbe958a821847a8c
+$ docker pull rabbitmq@sha256:4affd5668a636a13da23076dae38d0d554372771e62da04c443491e0cf72c77b
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.5 MB (71546039 bytes)**  
+-	Total Size: **71.5 MB (71546136 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4bddbed7cfb1253d94ea2a52b40a79f2a767135066fbb0be0170785023758dae`
+-	Image ID: `sha256:0496133476a8a83f5d9d184341dab963483a4357e862244509fc1dd30194043b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -4235,21 +4235,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 22:47:20 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 22:47:22 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 22:47:26 GMT
+# Wed, 30 Dec 2020 19:21:32 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:21:40 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 22:47:34 GMT
+# Wed, 30 Dec 2020 19:21:45 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 22:47:39 GMT
+# Wed, 30 Dec 2020 19:21:51 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 22:48:17 GMT
+# Wed, 30 Dec 2020 19:22:12 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 22:48:36 GMT
+# Wed, 30 Dec 2020 19:22:23 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 22:49:03 GMT
+# Wed, 30 Dec 2020 19:22:40 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 22:49:08 GMT
+# Wed, 30 Dec 2020 19:22:47 GMT
 EXPOSE 15671 15672
 ```
 
@@ -4282,34 +4282,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 22:54:48 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79dc0fbec9f6ec0989b2c7b029e8ef91e4900505b4ea0e831ee5bf90a4ed34e6`  
-		Last Modified: Mon, 21 Dec 2020 22:54:48 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:974c3de5bc9649c26e687cb36196472c3325158aef28bdaa7ef2cc162c561478`  
+		Last Modified: Wed, 30 Dec 2020 19:26:15 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c6090b7b9325327fd14879712d2abaa6cd2119253ae898e5b6df37d1642229ed`  
-		Last Modified: Mon, 21 Dec 2020 22:55:11 GMT  
-		Size: 208.0 B  
+	-	`sha256:95d38693e276baf1876216c1981ebf90a3d9bee2494007668f5dd12ad75cb157`  
+		Last Modified: Wed, 30 Dec 2020 19:26:28 GMT  
+		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d08ace8af0442c054d02bc8615719269b68ff9ae8d6a42c3b1418003201fae6c`  
-		Last Modified: Mon, 21 Dec 2020 22:55:11 GMT  
-		Size: 218.0 B  
+	-	`sha256:a00ea8edca1cf82384a004365403659f9ec70eed75161e3bbb8a9d6fb3c89bc1`  
+		Last Modified: Wed, 30 Dec 2020 19:26:27 GMT  
+		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb8a02699a8ba9d0820fed0005a1707e58e22025f28b070fedffec3e05da3d59`  
-		Last Modified: Mon, 21 Dec 2020 22:55:14 GMT  
-		Size: 14.4 MB (14363570 bytes)  
+	-	`sha256:d8992a7f1072be71bcb882d74e8cbf953c2057259933de4a416d353466eeca9d`  
+		Last Modified: Wed, 30 Dec 2020 19:26:31 GMT  
+		Size: 14.4 MB (14363615 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.10-beta.1-management-alpine` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:0a01c61d245d1dd9c323dabdf68e39acc41be931887c9b86ef4e0888bd9da7c0
+$ docker pull rabbitmq@sha256:cc90bf602306680c0f430bff3bb0222fa89c09930d2677692143f732eacf35e9
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.5 MB (69531892 bytes)**  
+-	Total Size: **69.5 MB (69531982 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4943f786d7e31df2e3415f7ffdb377eee0e1f1b2122780e07ce53fdea8a0d476`
+-	Image ID: `sha256:faaed9605ca95825ba0870d2cdf6534ab2a5b780ae1ed02645e5843e30c39211`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -4363,21 +4363,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:09:35 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:09:36 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:09:36 GMT
+# Wed, 30 Dec 2020 19:44:53 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:44:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:09:37 GMT
+# Wed, 30 Dec 2020 19:44:54 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:09:37 GMT
+# Wed, 30 Dec 2020 19:44:54 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:09:48 GMT
+# Wed, 30 Dec 2020 19:45:05 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:09:49 GMT
+# Wed, 30 Dec 2020 19:45:06 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:09:56 GMT
+# Wed, 30 Dec 2020 19:45:13 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:09:58 GMT
+# Wed, 30 Dec 2020 19:45:15 GMT
 EXPOSE 15671 15672
 ```
 
@@ -4410,27 +4410,27 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:13:18 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:645a46b96c36bd1d5d73452bf2e5bcb1d25e92308a18c33d1ca229f5caa9e0a8`  
-		Last Modified: Mon, 21 Dec 2020 21:13:19 GMT  
-		Size: 4.7 KB (4686 bytes)  
+	-	`sha256:f31d2bccb24eba690c8dbf70ad7c67553ccc98d310b151ce575920cb303f4449`  
+		Last Modified: Wed, 30 Dec 2020 19:47:11 GMT  
+		Size: 4.7 KB (4747 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:535de268529803de7789a284da4501341e1a371e70085b8733f57c3523055fa3`  
-		Last Modified: Mon, 21 Dec 2020 21:13:33 GMT  
-		Size: 206.0 B  
+	-	`sha256:04bc5d937987d53f86e1cd9dade6e2e4fb53daff994de8365415d2828ce310bb`  
+		Last Modified: Wed, 30 Dec 2020 19:47:18 GMT  
+		Size: 205.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d14341eb9a3783eee1fb27c0f2eaa415e0f29b991ff37daa5a5c6a438df7f6e5`  
-		Last Modified: Mon, 21 Dec 2020 21:13:33 GMT  
-		Size: 216.0 B  
+	-	`sha256:5493f684be52c233c9002c15371fe2d1bed311e1f0408f70cc5a063141e29e6c`  
+		Last Modified: Wed, 30 Dec 2020 19:47:18 GMT  
+		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eac91200251192d1d9fa0fe482c36700b9637d8c8309988d496b67d1b1ec48ea`  
-		Last Modified: Mon, 21 Dec 2020 21:13:35 GMT  
-		Size: 14.0 MB (13955534 bytes)  
+	-	`sha256:e6d6502b3b64a07633b60d716d0735a305dcfd4e5478b67a2225e4d96786af96`  
+		Last Modified: Wed, 30 Dec 2020 19:47:20 GMT  
+		Size: 14.0 MB (13955565 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:3.8.9`
 
 ```console
-$ docker pull rabbitmq@sha256:994089bd55123ace07ce56b120f4fd9365b597ad647f5f9c72c24bcd6a8340da
+$ docker pull rabbitmq@sha256:d300c86d33ffc59092d938c4eb045a544db16a51d26370162e57a3d6f2d79d8f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4444,14 +4444,14 @@ $ docker pull rabbitmq@sha256:994089bd55123ace07ce56b120f4fd9365b597ad647f5f9c72
 ### `rabbitmq:3.8.9` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:65eb9b71a8023ea49a616c1a567052574e9af1eaf266bf82832f9104b7abfeb0
+$ docker pull rabbitmq@sha256:fea9968aeb7079b3927aa2f5711688a7fe12a2d423dce8de741bbd67be0177ad
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.3 MB (81254370 bytes)**  
+-	Total Size: **81.3 MB (81254423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:335235b57b05c8eac2223ab381d5816de5ba4c33a0580f54413ff6b5e068f2fa`
+-	Image ID: `sha256:30aac3e715ba24cacbcc2c8bb6529c04ace2a2fc823edbbe41dd1a4082f0c1a8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -4511,13 +4511,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:22:48 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:22:48 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:01 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:26:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:01 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:02 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -4558,22 +4558,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:25:43 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a70b21779fa5bdd0bafc80d418e50c06544b535875a3cd7433d3eb88955f8abb`  
-		Last Modified: Mon, 21 Dec 2020 21:25:42 GMT  
-		Size: 4.7 KB (4684 bytes)  
+	-	`sha256:270bdce587ffce163d921bf81efd614bd2e27ce0485557dcd11d277f62662847`  
+		Last Modified: Wed, 30 Dec 2020 19:27:28 GMT  
+		Size: 4.7 KB (4737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.9` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:ea97b3187e18d275de98fbf0ae2d76b44500668ae16b356b0a4ddc392da13b88
+$ docker pull rabbitmq@sha256:902a65c89467fb4cf33a9d3d3b79ea4243294c5eff724445e36d9944ee135b75
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **74.3 MB (74339617 bytes)**  
+-	Total Size: **74.3 MB (74339669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:482fe1b4874496a0940df4f2a53879adf59e71c63c68d245e2258b8c3d3c7eeb`
+-	Image ID: `sha256:a0a74235ae42f117bb835245c9839bd5466359094cac9ebeee5dd6f8502881fd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -4633,13 +4633,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:56:17 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:56:18 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:56:20 GMT
+# Wed, 30 Dec 2020 20:00:06 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 20:00:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:56:21 GMT
+# Wed, 30 Dec 2020 20:00:09 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:56:22 GMT
+# Wed, 30 Dec 2020 20:00:11 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -4680,22 +4680,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:59:37 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:809bcb7f15b169320005044c3c0d6e43d0f11d4a27f9b46038d2885412263fda`  
-		Last Modified: Mon, 21 Dec 2020 21:59:37 GMT  
-		Size: 4.7 KB (4687 bytes)  
+	-	`sha256:a023e57cdec86e2827d62cc3578dd18bd2855c2796d52ef667c2042eabb72225`  
+		Last Modified: Wed, 30 Dec 2020 20:03:28 GMT  
+		Size: 4.7 KB (4739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.9` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:ec5488eefe794cfbbb0b94bedd55133a3ff83070412601ec5c4472f50a333f01
+$ docker pull rabbitmq@sha256:2bb026fcbfae04dace6c28b843c721e3ce300d0e5226c6517bcdd96a9ce9ca5f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.6 MB (76567976 bytes)**  
+-	Total Size: **76.6 MB (76568029 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f362f36906c1e1ebcd8da99b74bf2f1ce8c4de4a9bcfe373281569e40bb857ff`
+-	Image ID: `sha256:841d0181fab9b286232fa6175d95406b9acd1a972e896efa264714737732f5ec`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -4755,13 +4755,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:14:33 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:14:33 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:14:34 GMT
+# Wed, 30 Dec 2020 19:42:42 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:42:42 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:14:35 GMT
+# Wed, 30 Dec 2020 19:42:43 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:14:35 GMT
+# Wed, 30 Dec 2020 19:42:44 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -4802,22 +4802,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:17:34 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a6de5385e6457d1e4321576d39b1e5130c98430f4d60b1955d7e966f850dc59`  
-		Last Modified: Mon, 21 Dec 2020 21:17:34 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:d316dc06638d1a456656255f63ea5aee11d442596b795cfaf099423f64ef8750`  
+		Last Modified: Wed, 30 Dec 2020 19:44:50 GMT  
+		Size: 4.7 KB (4736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.9` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:ce27d454f5f06c836b68885051f3bd31e71f9aec5c447d42f03df165b9071fc4
+$ docker pull rabbitmq@sha256:94047bdf3023c8c81dc2b00fd5813981e15dd7eb181508d7cce92e04ca2bed17
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.6 MB (80607672 bytes)**  
+-	Total Size: **80.6 MB (80607726 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:82400898f4f29537027ad85ce0c13252825083275c1976ed7471f2fd8f831788`
+-	Image ID: `sha256:33e6eeff6b19f9f7b2e0f56839d190b04ea52e78d7e4c35f317ec9cd4fbde9a8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -4877,13 +4877,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:57:44 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:57:44 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:57:44 GMT
+# Wed, 30 Dec 2020 19:40:27 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:40:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:57:45 GMT
+# Wed, 30 Dec 2020 19:40:28 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:57:45 GMT
+# Wed, 30 Dec 2020 19:40:28 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -4924,22 +4924,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 22:00:14 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85a2d0ab60e03adf7f47b2f62aa5d20442a78f6aefbdf3018fc7e1e12f489175`  
-		Last Modified: Mon, 21 Dec 2020 22:00:14 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:c34b67e8e81467e6bb600baa6e8364e4cefa168bd337a16798a82fc02315030f`  
+		Last Modified: Wed, 30 Dec 2020 19:42:01 GMT  
+		Size: 4.7 KB (4736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.9` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:440ad95952eebc5677f7ac0a92fa0b566f90421fa63607a9785c49a4dbbaf3f5
+$ docker pull rabbitmq@sha256:a52b8f62892a31a559d35130ad4214de69fa444bea8632060a5b4041f2413f44
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **78.6 MB (78606814 bytes)**  
+-	Total Size: **78.6 MB (78606867 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2796d3a93e1bc4b6d1f57e6132113ce09221c80430ff4d1a0d7134d9b2be1b19`
+-	Image ID: `sha256:11af72d898a18bc6db5f51063bc799044cb584dc400a2694de450cd1fe96356d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -4999,13 +4999,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:10:49 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:10:50 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:10:50 GMT
+# Wed, 30 Dec 2020 19:45:22 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:45:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:10:51 GMT
+# Wed, 30 Dec 2020 19:45:23 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:10:51 GMT
+# Wed, 30 Dec 2020 19:45:24 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -5046,15 +5046,15 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:13:42 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f551312615b55dc3338f141b07b2dd5035f85cc5dda0513b1813a8c651913a9c`  
-		Last Modified: Mon, 21 Dec 2020 21:13:42 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:715c0199636e35ac1528cc930cddbfa6d779c67aac0fd7a7b4669c3c486c1697`  
+		Last Modified: Wed, 30 Dec 2020 19:47:28 GMT  
+		Size: 4.7 KB (4738 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:3.8.9-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:cd83484c5816c89d815a8b47048f7dc0b914bac3774c7e8c1b100f08f72dca4d
+$ docker pull rabbitmq@sha256:5b9f3d10555376369526d81eb07697255383f8c84aa5f3b34164d43f9ba60d0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5070,14 +5070,14 @@ $ docker pull rabbitmq@sha256:cd83484c5816c89d815a8b47048f7dc0b914bac3774c7e8c1b
 ### `rabbitmq:3.8.9-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:c5d56767f205cbbbdc5c2678d58425abd845639e78c33847c4df475a2c3022c0
+$ docker pull rabbitmq@sha256:a34351cbfa3fecd19c8aae182eac206cfd8d7bee12deebc06156f39e93a463ea
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.3 MB (56297204 bytes)**  
+-	Total Size: **56.3 MB (56297260 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fe4caa64352dbad146bca9fbe1ff5582931ef437d334f4d57ad0033d576b11bf`
+-	Image ID: `sha256:df3814ee9284b5f63a908202f4cb0f56192ce09617f3f939e8dab3745385e58d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -5131,13 +5131,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:23:54 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:23:54 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:23:55 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:26:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:23:55 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:23:56 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -5170,22 +5170,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:26:02 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cb78fbd941cff7c68255fa8bd23f659cdb876c95f3b24a28bf80f79fadd05fe`  
-		Last Modified: Mon, 21 Dec 2020 21:26:01 GMT  
-		Size: 4.7 KB (4687 bytes)  
+	-	`sha256:f2babd5cc60632de330fc6bbc2496cb0c80dc173f0725d4acbd53461877022eb`  
+		Last Modified: Wed, 30 Dec 2020 19:27:45 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.9-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:67740efe77b24aaccd1d6d341b7316138d332edfa19609c64a07c0ba55697f89
+$ docker pull rabbitmq@sha256:ee15b8809b7204027ad36809c3897bef47f33dfe26d23ebce71295ed8103372e
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.0 MB (55032648 bytes)**  
+-	Total Size: **55.0 MB (55032708 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:507b896667358d77e4b2345c960b5f86c7c7e0a7e98ed37f5a603018797510a3`
+-	Image ID: `sha256:4656eca90bc4a977bd5950a41f43f161eaee35060a92130628629d8cb30af28a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -5239,13 +5239,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 20:27:47 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 20:27:48 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 20:27:49 GMT
+# Wed, 30 Dec 2020 19:53:05 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:53:05 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 20:27:51 GMT
+# Wed, 30 Dec 2020 19:53:06 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 20:27:52 GMT
+# Wed, 30 Dec 2020 19:53:06 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -5278,22 +5278,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 20:29:26 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ff513de4dd23048dbd5d310760f506eac90a24aded5f1df947a7792b2771552`  
-		Last Modified: Mon, 21 Dec 2020 20:29:26 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:aaa640cc54980092a29e3221dbca162a7b4d513fa3d6a6b791259d7cf27fd461`  
+		Last Modified: Wed, 30 Dec 2020 19:54:17 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.9-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:5ab85166dc222681f9c919af3e6b9c507f33730db435818c225c995d915e8601
+$ docker pull rabbitmq@sha256:d5ad66530961c11f317c6f9c9cd22b2f6af7a78a44468fbfd17f32d23ee7439d
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.3 MB (54340717 bytes)**  
+-	Total Size: **54.3 MB (54340777 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36a7667a3c4e00ae2ff67fc21b13a0ced3ef81c9c1e8ecbc61e2332bc07ab6d5`
+-	Image ID: `sha256:67f6266961618ecaf9c0b7b41631cf56dc37762c1830b5a41fda5cd3181350cf`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -5347,13 +5347,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:57:30 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:57:30 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:57:31 GMT
+# Wed, 30 Dec 2020 20:01:26 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 20:01:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:57:32 GMT
+# Wed, 30 Dec 2020 20:01:29 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:57:32 GMT
+# Wed, 30 Dec 2020 20:01:33 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -5386,22 +5386,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 22:00:07 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:405923efb87b55d63663d6717536d2e7816b929f95995f79b56644074c085374`  
-		Last Modified: Mon, 21 Dec 2020 22:00:06 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:dc26b7a85465f92a028f91eb9ac826ac88c96ad49b59bc2bd01d5affa243e5cf`  
+		Last Modified: Wed, 30 Dec 2020 20:03:57 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.9-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:7e35c715aec6498cc023c04e92aaac09eb8a390013e1a3387cd27d13dd633b16
+$ docker pull rabbitmq@sha256:639713e2e118a8b3dbb586e5fe1ee0a416f8d840701aaf2ba80cffe8dbd7ca86
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.8 MB (55797227 bytes)**  
+-	Total Size: **55.8 MB (55797287 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d94a05cb44494626f5ff5f2cd83c9b50923dba71ed1c8aeca02fda5f8aed5e97`
+-	Image ID: `sha256:53ebe820a0bba6a40cca31de829ef81364883cc6ccb4b95623449d2cbb39e11c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -5455,13 +5455,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:15:39 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:15:40 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:15:40 GMT
+# Wed, 30 Dec 2020 19:43:21 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:43:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:15:41 GMT
+# Wed, 30 Dec 2020 19:43:23 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:15:41 GMT
+# Wed, 30 Dec 2020 19:43:23 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -5494,22 +5494,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:18:01 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14875f737f50cad14c7b49b22da3175ac58e0fce241c0b46c3e31878378f276a`  
-		Last Modified: Mon, 21 Dec 2020 21:18:01 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:56528dbe21e927342285867ed6cddd3dba0640ae6c9f1a8b91883599fc5b1435`  
+		Last Modified: Wed, 30 Dec 2020 19:45:14 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.9-alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:43c7162b8a57efdd3b7642c9d2f4b0ea4962b5ddd7db7953bf782c980996b350
+$ docker pull rabbitmq@sha256:ef2b0d8ec5dca75b3d2f85f0d05e7aefb918c52c223715baed7a8fc77716615a
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.3 MB (56321950 bytes)**  
+-	Total Size: **56.3 MB (56322003 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79541dbaeae05739069519348a37a269516c7ef927fafd27e1d5d19222e83e63`
+-	Image ID: `sha256:7f2909d3bc1a1bfe63daba076998bb19fecab013c6a3bcb2c653d9fd5f483d98`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -5563,13 +5563,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:58:26 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:58:26 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:58:26 GMT
+# Wed, 30 Dec 2020 19:40:51 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:40:51 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:58:27 GMT
+# Wed, 30 Dec 2020 19:40:51 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:58:27 GMT
+# Wed, 30 Dec 2020 19:40:52 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -5602,22 +5602,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 22:00:39 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f2c80698bb9d8704065a0e05336bc0fd3584f0c0905349e317a7ed62fb7c1f2`  
-		Last Modified: Mon, 21 Dec 2020 22:00:39 GMT  
-		Size: 4.7 KB (4688 bytes)  
+	-	`sha256:59f1fe9bcefab434482b7f7288565ac945fa36b959a170a2a64d199d02b94e18`  
+		Last Modified: Wed, 30 Dec 2020 19:42:21 GMT  
+		Size: 4.7 KB (4741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.9-alpine` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:16ec8fcea1fdc09f19d863278ce9198f55ed8d8ab936ad4bae4d20123e08abec
+$ docker pull rabbitmq@sha256:8926e837122dbc72ce5429bf2f64376378a178700eab5d6a9e27b403ef5878ee
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.7 MB (56703341 bytes)**  
+-	Total Size: **56.7 MB (56703398 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2f2f772e60dd18f69feb9624038cd1bcd43d1655bd1775182376f03d2cebe8c3`
+-	Image ID: `sha256:6bc6983fe99db41cdcccad269a9a5df28f5aa9b579dd4f0ec7c29852ccf411db`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -5671,13 +5671,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 22:52:34 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 22:52:41 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 22:52:53 GMT
+# Wed, 30 Dec 2020 19:24:06 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:24:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 22:53:03 GMT
+# Wed, 30 Dec 2020 19:24:19 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 22:53:10 GMT
+# Wed, 30 Dec 2020 19:24:23 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -5710,22 +5710,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 22:55:25 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cee0c2d9ae9a07115a54df13110463d0aaede6a6717df6d3ff9e9dde2dac2028`  
-		Last Modified: Mon, 21 Dec 2020 22:55:25 GMT  
-		Size: 4.7 KB (4684 bytes)  
+	-	`sha256:fce3ef73d2c7a0478979a89000081b5d9d2388f512410a31e8c85a0e71d18a72`  
+		Last Modified: Wed, 30 Dec 2020 19:26:44 GMT  
+		Size: 4.7 KB (4741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.9-alpine` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:556a31e8d2bd5c63ee5fc27d143a7a0ae56fb400224a5b1633925140d3e2d5e7
+$ docker pull rabbitmq@sha256:20b956ff0632aeb58f096f3835b1d33c5626e82a967762dbcec2516665687a8d
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.1 MB (55097252 bytes)**  
+-	Total Size: **55.1 MB (55097313 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2247e9239027201f6875f5243b5f91d3350c0ee0080258dd4c1ac76a0b61f71`
+-	Image ID: `sha256:78d4951ac01f7b54751ae098eb2c955cf8902399b30bd03c663c8fac8cbc1f10`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -5779,13 +5779,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:11:58 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:11:58 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:11:59 GMT
+# Wed, 30 Dec 2020 19:45:56 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:45:56 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:11:59 GMT
+# Wed, 30 Dec 2020 19:45:57 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:12:00 GMT
+# Wed, 30 Dec 2020 19:45:57 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -5818,15 +5818,15 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:14:08 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90a44cd1dca23cd43cd8ea2c86909c4de78874037c39b3cb855f1c01078093b7`  
-		Last Modified: Mon, 21 Dec 2020 21:14:08 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:33da539e6af749329c881416600f32bebec9923b6b9153586f7ec46910de8091`  
+		Last Modified: Wed, 30 Dec 2020 19:47:49 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:3.8.9-management`
 
 ```console
-$ docker pull rabbitmq@sha256:74a6a71e7b8684a8bb7bf4ae68f19a4f25782679bd75c5f37f1c9b06cc863792
+$ docker pull rabbitmq@sha256:c963d6446e7dc80cebc60d41618d075a94334998b2679ae933185749d0d0e702
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5840,14 +5840,14 @@ $ docker pull rabbitmq@sha256:74a6a71e7b8684a8bb7bf4ae68f19a4f25782679bd75c5f37f
 ### `rabbitmq:3.8.9-management` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:caab9e7a0f698b63c6f799c8270fba76656cfa9c6fa31bbb983b8c2051e80e47
+$ docker pull rabbitmq@sha256:5817edaf96eb251d05ce228bd9551e68d94ca55b63837376667676b9ac1bfe10
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.0 MB (92039463 bytes)**  
+-	Total Size: **92.0 MB (92039544 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b46cdfa8ade610a2c90205dd14551174b415930dc1c839392ba1672fdb48923a`
+-	Image ID: `sha256:92c743b6c05503cf3c4fa7ce5ec1420e0ee3d541d479ea7d1d702c023201b2f1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -5907,21 +5907,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:22:48 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:22:48 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:01 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:26:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:01 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:02 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:23:03 GMT
+# Wed, 30 Dec 2020 19:26:09 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:23:05 GMT
+# Wed, 30 Dec 2020 19:26:10 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:23:23 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:23:24 GMT
+# Wed, 30 Dec 2020 19:26:20 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:26:20 GMT
 EXPOSE 15671 15672
 ```
 
@@ -5962,34 +5962,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:25:43 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a70b21779fa5bdd0bafc80d418e50c06544b535875a3cd7433d3eb88955f8abb`  
-		Last Modified: Mon, 21 Dec 2020 21:25:42 GMT  
-		Size: 4.7 KB (4684 bytes)  
+	-	`sha256:270bdce587ffce163d921bf81efd614bd2e27ce0485557dcd11d277f62662847`  
+		Last Modified: Wed, 30 Dec 2020 19:27:28 GMT  
+		Size: 4.7 KB (4737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fd0072ee2720dd8a8f450635cf420f1fea16b6d3eea1ae22a19e06b861731f9`  
-		Last Modified: Mon, 21 Dec 2020 21:25:52 GMT  
-		Size: 204.0 B  
+	-	`sha256:2fd9a3d58ba8571d65823a40df35351bd451785ca4e80bfe22491244dd3ef76b`  
+		Last Modified: Wed, 30 Dec 2020 19:27:35 GMT  
+		Size: 205.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25b26b1c16ac73259196f89afb4957fc68c57e59d2d382d9ae9b597c6680e583`  
-		Last Modified: Mon, 21 Dec 2020 21:25:52 GMT  
-		Size: 212.0 B  
+	-	`sha256:ee5169b771e7cd83e747c808766eb1f5a5e2bd6d0d0fb04b350f1e5b9ef3ec77`  
+		Last Modified: Wed, 30 Dec 2020 19:27:35 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef0315782200131d5a7f8f4c719c5e58b5465459803560567dcad8169ef82f25`  
-		Last Modified: Mon, 21 Dec 2020 21:25:54 GMT  
-		Size: 10.8 MB (10784677 bytes)  
+	-	`sha256:3aa74f31fb630fc14e43e78f73f4572c8168d4edd15b2097d257f9a38427bac1`  
+		Last Modified: Wed, 30 Dec 2020 19:27:37 GMT  
+		Size: 10.8 MB (10784703 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.9-management` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:0dfa19bc0eb5901bf43d1e02f58dcb4d22a936cea23e43297ab40f3a97457f88
+$ docker pull rabbitmq@sha256:beedb56f997882827b8eb325ae0b4923f33d709012e7850cfc8712e6795ecdbe
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.1 MB (84088974 bytes)**  
+-	Total Size: **84.1 MB (84089257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfc34893d9bf316f65b33188e45b4c326581fb5de390a476d58a32848473a6e0`
+-	Image ID: `sha256:2ed684f6e04ada5aa4b49e6f4162ce082ea94ab64745a199ac07bce64b1a9dde`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -6049,21 +6049,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:56:17 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:56:18 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:56:20 GMT
+# Wed, 30 Dec 2020 20:00:06 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 20:00:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:56:21 GMT
+# Wed, 30 Dec 2020 20:00:09 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:56:22 GMT
+# Wed, 30 Dec 2020 20:00:11 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:56:39 GMT
+# Wed, 30 Dec 2020 20:00:22 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:56:41 GMT
+# Wed, 30 Dec 2020 20:00:25 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:57:01 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:57:02 GMT
+# Wed, 30 Dec 2020 20:01:04 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 20:01:14 GMT
 EXPOSE 15671 15672
 ```
 
@@ -6104,34 +6104,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:59:37 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:809bcb7f15b169320005044c3c0d6e43d0f11d4a27f9b46038d2885412263fda`  
-		Last Modified: Mon, 21 Dec 2020 21:59:37 GMT  
-		Size: 4.7 KB (4687 bytes)  
+	-	`sha256:a023e57cdec86e2827d62cc3578dd18bd2855c2796d52ef667c2042eabb72225`  
+		Last Modified: Wed, 30 Dec 2020 20:03:28 GMT  
+		Size: 4.7 KB (4739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66840693e7ddc42cce56fbdc1fdbc79ff44cccd36d4b715121e8aaf42d7a8a38`  
-		Last Modified: Mon, 21 Dec 2020 21:59:51 GMT  
-		Size: 203.0 B  
+	-	`sha256:d84169be217210ce1b41d291d935e91d841aedc985a3e94426dcd35622a44397`  
+		Last Modified: Wed, 30 Dec 2020 20:03:43 GMT  
+		Size: 201.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27b3bbdf951bb168123396f6fa40013ba8f337f86e1eed1e98a354d8ca7d22be`  
-		Last Modified: Mon, 21 Dec 2020 21:59:51 GMT  
-		Size: 215.0 B  
+	-	`sha256:a87b222157b6ad1a1801b7b458f7226dacf0c56961acedb1588d9ea4cb3ae75b`  
+		Last Modified: Wed, 30 Dec 2020 20:03:39 GMT  
+		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d00934f1fcb49b5b777ccce58b739261dcb2c9898b799375ff87e46993e2e3e1`  
-		Last Modified: Mon, 21 Dec 2020 21:59:55 GMT  
-		Size: 9.7 MB (9748939 bytes)  
+	-	`sha256:fd75f4cb5fac277911f1050502d34a2d88505916bcba0a8824e481ff11baf9d6`  
+		Last Modified: Wed, 30 Dec 2020 20:03:44 GMT  
+		Size: 9.7 MB (9749170 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.9-management` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:ff933c09f74066e068918cbda25ac8246a2c30ed9fba0975aa17cdfa8ad77fc8
+$ docker pull rabbitmq@sha256:56823b3ef6c4f89ac3797ead861cf6e5e5438ede9abfebd3e4a3eb5b2da0fedd
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.7 MB (86720669 bytes)**  
+-	Total Size: **86.7 MB (86720853 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf555d36ea3ecf1b819926f424f1be5f7989323094e1c9b8bfbbfb82fb6255eb`
+-	Image ID: `sha256:c732d16e7f3f1d89dad1c2e6c6c697aac8172748e81f241e1d31e50edd569660`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -6191,21 +6191,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:14:33 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:14:33 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:14:34 GMT
+# Wed, 30 Dec 2020 19:42:42 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:42:42 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:14:35 GMT
+# Wed, 30 Dec 2020 19:42:43 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:14:35 GMT
+# Wed, 30 Dec 2020 19:42:44 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:14:52 GMT
+# Wed, 30 Dec 2020 19:42:53 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:14:54 GMT
+# Wed, 30 Dec 2020 19:42:55 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:15:12 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:15:13 GMT
+# Wed, 30 Dec 2020 19:43:13 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:43:14 GMT
 EXPOSE 15671 15672
 ```
 
@@ -6246,34 +6246,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:17:34 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a6de5385e6457d1e4321576d39b1e5130c98430f4d60b1955d7e966f850dc59`  
-		Last Modified: Mon, 21 Dec 2020 21:17:34 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:d316dc06638d1a456656255f63ea5aee11d442596b795cfaf099423f64ef8750`  
+		Last Modified: Wed, 30 Dec 2020 19:44:50 GMT  
+		Size: 4.7 KB (4736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91cfe47ed6f40dbc3275d4c6962b672144c408f0d5700125c53947c87f6de465`  
-		Last Modified: Mon, 21 Dec 2020 21:17:46 GMT  
-		Size: 204.0 B  
+	-	`sha256:8e3f7b33a12597e3388ae0837810252e465e7be64fc26b5d93ed2a70bdd3d117`  
+		Last Modified: Wed, 30 Dec 2020 19:45:00 GMT  
+		Size: 203.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:475799f54d72f1d4b6436d9bf55e744ccb19aed89bd07dfb970b9ccf58e813b1`  
-		Last Modified: Mon, 21 Dec 2020 21:17:47 GMT  
-		Size: 215.0 B  
+	-	`sha256:9a2bf3cd7876225295d396e8c018001ef0b6ac3092832564e8345b159bae305b`  
+		Last Modified: Wed, 30 Dec 2020 19:45:00 GMT  
+		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01bbbef83e3cc279efcd6e2deb339adda4a0982c5d5dd988aa6e7557b5ccac7b`  
-		Last Modified: Mon, 21 Dec 2020 21:17:50 GMT  
-		Size: 10.2 MB (10152274 bytes)  
+	-	`sha256:63fc23bcaae40f3b9cbb066b1f5fb24c7e68b629859a07e7d03cd893e6f24e11`  
+		Last Modified: Wed, 30 Dec 2020 19:45:04 GMT  
+		Size: 10.2 MB (10152407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.9-management` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:60557abf16e6c3055b7b4c6a7f95ceda796718df99a8a970aafaa8d6ff86473b
+$ docker pull rabbitmq@sha256:a45b18ea569e7d1a1d2693b0f67e0f9965809a37b65b4c81d54ec040ddfb06ff
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **91.5 MB (91462251 bytes)**  
+-	Total Size: **91.5 MB (91462406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:657fd11ee5978a4d0035fa42372ce270f914a2b6207a3f0ee94b87ed91b6de66`
+-	Image ID: `sha256:f6107b22db414223bb68cc90253e0f886a811d9ebbf6e40ac1a72ecc136580ae`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -6333,21 +6333,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:57:44 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:57:44 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:57:44 GMT
+# Wed, 30 Dec 2020 19:40:27 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:40:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:57:45 GMT
+# Wed, 30 Dec 2020 19:40:28 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:57:45 GMT
+# Wed, 30 Dec 2020 19:40:28 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:57:55 GMT
+# Wed, 30 Dec 2020 19:40:34 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:57:56 GMT
+# Wed, 30 Dec 2020 19:40:35 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:58:08 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:58:08 GMT
+# Wed, 30 Dec 2020 19:40:46 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:40:46 GMT
 EXPOSE 15671 15672
 ```
 
@@ -6388,34 +6388,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 22:00:14 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85a2d0ab60e03adf7f47b2f62aa5d20442a78f6aefbdf3018fc7e1e12f489175`  
-		Last Modified: Mon, 21 Dec 2020 22:00:14 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:c34b67e8e81467e6bb600baa6e8364e4cefa168bd337a16798a82fc02315030f`  
+		Last Modified: Wed, 30 Dec 2020 19:42:01 GMT  
+		Size: 4.7 KB (4736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c847c642852bec25e88c7e958e15c7a6001ed0bff68618ab853bcc789af4a65b`  
-		Last Modified: Mon, 21 Dec 2020 22:00:24 GMT  
-		Size: 203.0 B  
+	-	`sha256:412b74ad3ceca51a26eb9323cc8cf64e1d022221e797f8e65e2c47ff084d6efd`  
+		Last Modified: Wed, 30 Dec 2020 19:42:10 GMT  
+		Size: 205.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fc6ad6b0a8faa63937ca77620cfd80ef11707730d327fc6dd56a3e2df042119`  
-		Last Modified: Mon, 21 Dec 2020 22:00:24 GMT  
-		Size: 211.0 B  
+	-	`sha256:72d13b4668b41110f822630b0d4235b568076f0768bd57b9480dcf11b01f884e`  
+		Last Modified: Wed, 30 Dec 2020 19:42:10 GMT  
+		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86e424135ff2941938c2f97611b84b943c28454d0ea0c70ece286007dbe1f932`  
-		Last Modified: Mon, 21 Dec 2020 22:00:27 GMT  
-		Size: 10.9 MB (10854165 bytes)  
+	-	`sha256:bbc27a9f929d8b7be87c8a29c3df57f7c4ef894e8aefdf30d248fabaf10b49af`  
+		Last Modified: Wed, 30 Dec 2020 19:42:13 GMT  
+		Size: 10.9 MB (10854263 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.9-management` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:dcdefbc8648e9d1f758e9831f9b9c5f09778cb1b255fbdbc7ba8137429162e62
+$ docker pull rabbitmq@sha256:39aa80f7dfb56c33adc563db365be1189d0a8173178fe3865793d9819d98f6f1
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **89.0 MB (89015277 bytes)**  
+-	Total Size: **89.0 MB (89015323 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:664a447e83b6df4f387f7ef4d6785bb143d1eb53b31b14269bfff5449491c9ff`
+-	Image ID: `sha256:ab8721b912e7a63477eef2663e5bc6470a22e198b7e9dda66d7c478486faa6c1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -6475,21 +6475,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:10:49 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:10:50 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:10:50 GMT
+# Wed, 30 Dec 2020 19:45:22 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:45:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:10:51 GMT
+# Wed, 30 Dec 2020 19:45:23 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:10:51 GMT
+# Wed, 30 Dec 2020 19:45:24 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:11:09 GMT
+# Wed, 30 Dec 2020 19:45:34 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:11:10 GMT
+# Wed, 30 Dec 2020 19:45:35 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:11:27 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:11:29 GMT
+# Wed, 30 Dec 2020 19:45:48 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:45:50 GMT
 EXPOSE 15671 15672
 ```
 
@@ -6530,27 +6530,27 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:13:42 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f551312615b55dc3338f141b07b2dd5035f85cc5dda0513b1813a8c651913a9c`  
-		Last Modified: Mon, 21 Dec 2020 21:13:42 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:715c0199636e35ac1528cc930cddbfa6d779c67aac0fd7a7b4669c3c486c1697`  
+		Last Modified: Wed, 30 Dec 2020 19:47:28 GMT  
+		Size: 4.7 KB (4738 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:485a4f31c11434315e7206651c0aca0e05d875184787e08096d9642616f57a2c`  
-		Last Modified: Mon, 21 Dec 2020 21:13:54 GMT  
-		Size: 204.0 B  
+	-	`sha256:d6fd5025184ec18b1d0966267e321c1095c4deef4a75e7471a1e1bdd78fa8b06`  
+		Last Modified: Wed, 30 Dec 2020 19:47:37 GMT  
+		Size: 202.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af257ef72de4e2a5479f4c59aafc913ee02a2c6611b8d0adbad2f65bf4a37892`  
-		Last Modified: Mon, 21 Dec 2020 21:13:54 GMT  
+	-	`sha256:9012f027423da1f35c0f72674f0d4a4aeeffdb1fa08178a0da2cf9bfc0779753`  
+		Last Modified: Wed, 30 Dec 2020 19:47:37 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b66f7ca165876a3c11c6bd61ddb7e4701dee4cc8ecfd0dc5160d6bf4bb7aa548`  
-		Last Modified: Mon, 21 Dec 2020 21:13:56 GMT  
-		Size: 10.4 MB (10408045 bytes)  
+	-	`sha256:d15460241813a075ce550350e1f5daccf66929ad0bc98aacc51995a3a93ba408`  
+		Last Modified: Wed, 30 Dec 2020 19:47:39 GMT  
+		Size: 10.4 MB (10408040 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:3.8.9-management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:6296b3507309978d1ef673de155edc3c713b1be674d46e3191be3a0dbc715557
+$ docker pull rabbitmq@sha256:0ac9a7f792aa031dff1d133b2d5febfe01a63a9f8aa0d5a9357467e0b8d75a67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6566,14 +6566,14 @@ $ docker pull rabbitmq@sha256:6296b3507309978d1ef673de155edc3c713b1be674d46e3191
 ### `rabbitmq:3.8.9-management-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:f9cde149e753a99f1fd28f63aa5b3cd4182a31d4f0be412cbe41ba5117ed7a26
+$ docker pull rabbitmq@sha256:43fb8dd7521f5284cef969e6f5c95067b4ab8b8e4f708a7cfb0fe65ba46857ad
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.2 MB (70211578 bytes)**  
+-	Total Size: **70.2 MB (70211688 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:55b8b1f0ad357ec63f5b49cb0998e13499c7b9cc1aae39818020f5be0aa242bc`
+-	Image ID: `sha256:0024eab10efba45d1b114683d0d29995eef9915e501e857d037af2074971b486`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -6627,21 +6627,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:23:54 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:23:54 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:23:55 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:26:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:23:55 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:23:56 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:24:07 GMT
+# Wed, 30 Dec 2020 19:26:32 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:24:09 GMT
+# Wed, 30 Dec 2020 19:26:33 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:24:15 GMT
+# Wed, 30 Dec 2020 19:26:37 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:24:15 GMT
+# Wed, 30 Dec 2020 19:26:37 GMT
 EXPOSE 15671 15672
 ```
 
@@ -6674,34 +6674,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:26:02 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cb78fbd941cff7c68255fa8bd23f659cdb876c95f3b24a28bf80f79fadd05fe`  
-		Last Modified: Mon, 21 Dec 2020 21:26:01 GMT  
-		Size: 4.7 KB (4687 bytes)  
+	-	`sha256:f2babd5cc60632de330fc6bbc2496cb0c80dc173f0725d4acbd53461877022eb`  
+		Last Modified: Wed, 30 Dec 2020 19:27:45 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6485f949ba043525dce62d89c19ef666c6c4c18c49cdcf7e786c0eddb3010ac3`  
-		Last Modified: Mon, 21 Dec 2020 21:26:10 GMT  
-		Size: 203.0 B  
+	-	`sha256:73954fbfba964069767cd88c24cc23c5840f77ca12bb7100a05aea5c6dfc8284`  
+		Last Modified: Wed, 30 Dec 2020 19:27:51 GMT  
+		Size: 206.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1e71d8aff99582c3c8b8472838d6fc7c0eb609937642d1a6631f4c8d733f008`  
-		Last Modified: Mon, 21 Dec 2020 21:26:11 GMT  
-		Size: 217.0 B  
+	-	`sha256:2e2fede618a7af8abbc7b6ef75e12b4b723fb827b9e6eceedc4bcc2e84223f4b`  
+		Last Modified: Wed, 30 Dec 2020 19:27:51 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f0469d674658ebd89fe7ed2cddd4f7614640a7177ed562b0d33a42f73fed452`  
-		Last Modified: Mon, 21 Dec 2020 21:26:13 GMT  
-		Size: 13.9 MB (13913954 bytes)  
+	-	`sha256:daa111566ce1231aaed62ff66674441a19c2987f6cfd9fdc1dde6f8e0dde720e`  
+		Last Modified: Wed, 30 Dec 2020 19:27:54 GMT  
+		Size: 13.9 MB (13914011 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.9-management-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:8c6895a5246c86cca3b0546e14ce7276c94dd034b5592abf810302bcc353994c
+$ docker pull rabbitmq@sha256:5b32f7f62c53b95bef044acfe9fca35ec93f5171eeea9fe040a50d7a22124687
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.8 MB (68839116 bytes)**  
+-	Total Size: **68.8 MB (68839194 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac99694c32b973c4a954040de819b8481abad0e308a9cd8612ced18260f674ef`
+-	Image ID: `sha256:5ab0b104427697667658f058040ee7ffe71161297446762c2c997062a7fc9e8c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -6755,21 +6755,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 20:27:47 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 20:27:48 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 20:27:49 GMT
+# Wed, 30 Dec 2020 19:53:05 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:53:05 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 20:27:51 GMT
+# Wed, 30 Dec 2020 19:53:06 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 20:27:52 GMT
+# Wed, 30 Dec 2020 19:53:06 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 20:28:11 GMT
+# Wed, 30 Dec 2020 19:53:23 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 20:28:14 GMT
+# Wed, 30 Dec 2020 19:53:24 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 20:28:25 GMT
+# Wed, 30 Dec 2020 19:53:34 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 20:28:33 GMT
+# Wed, 30 Dec 2020 19:53:35 GMT
 EXPOSE 15671 15672
 ```
 
@@ -6802,34 +6802,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 20:29:26 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ff513de4dd23048dbd5d310760f506eac90a24aded5f1df947a7792b2771552`  
-		Last Modified: Mon, 21 Dec 2020 20:29:26 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:aaa640cc54980092a29e3221dbca162a7b4d513fa3d6a6b791259d7cf27fd461`  
+		Last Modified: Wed, 30 Dec 2020 19:54:17 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d7637e44c151d6b8e927c54c1bf667ce39008a6c5a3729cd8d51bee111f9a688`  
-		Last Modified: Mon, 21 Dec 2020 20:29:41 GMT  
-		Size: 206.0 B  
+	-	`sha256:de56c07f1f9986f57f146efe3597fa059f07fd73538fb250012f08ce4f42a9dd`  
+		Last Modified: Wed, 30 Dec 2020 19:54:29 GMT  
+		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51b0826caa8503cef50b97f38e84c1df17593374018c72c376233e5d2dc8ce3a`  
-		Last Modified: Mon, 21 Dec 2020 20:29:40 GMT  
-		Size: 217.0 B  
+	-	`sha256:75a5f926e066999f650d29151fb4fa88928b29b5068a62734aaa51f375f03341`  
+		Last Modified: Wed, 30 Dec 2020 19:54:29 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85e51d9e631c4b109783b75240285c17eda9b5daf9a5c3534cc3ed4b7e807a3e`  
-		Last Modified: Mon, 21 Dec 2020 20:29:45 GMT  
-		Size: 13.8 MB (13806045 bytes)  
+	-	`sha256:860fc3eb8dba7a666aa867dd727f1c061a2bca9f3f94b7ddbdd2a39a3c5daf22`  
+		Last Modified: Wed, 30 Dec 2020 19:54:34 GMT  
+		Size: 13.8 MB (13806066 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.9-management-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:d3ff996a202e6148efb7fb0ef6eb6b565a1c633ea2acda451d8f941b20d6197c
+$ docker pull rabbitmq@sha256:87f4c65596455400052d8dbf6eb72e71063a287407078a900ef946805d44a4b3
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **67.8 MB (67792903 bytes)**  
+-	Total Size: **67.8 MB (67792992 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2c8cb9657c86a1b09235860c6a2432b5a5096024f6f62930744222cfd893d30`
+-	Image ID: `sha256:e0797a6600edfd27fd6a3ba44aed66b80b60574f94403d7707bbff1af578964e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -6883,21 +6883,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:57:30 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:57:30 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:57:31 GMT
+# Wed, 30 Dec 2020 20:01:26 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 20:01:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:57:32 GMT
+# Wed, 30 Dec 2020 20:01:29 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:57:32 GMT
+# Wed, 30 Dec 2020 20:01:33 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:57:41 GMT
+# Wed, 30 Dec 2020 20:01:46 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:57:42 GMT
+# Wed, 30 Dec 2020 20:01:52 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:57:50 GMT
+# Wed, 30 Dec 2020 20:02:03 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:57:52 GMT
+# Wed, 30 Dec 2020 20:02:06 GMT
 EXPOSE 15671 15672
 ```
 
@@ -6930,34 +6930,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 22:00:07 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:405923efb87b55d63663d6717536d2e7816b929f95995f79b56644074c085374`  
-		Last Modified: Mon, 21 Dec 2020 22:00:06 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:dc26b7a85465f92a028f91eb9ac826ac88c96ad49b59bc2bd01d5affa243e5cf`  
+		Last Modified: Wed, 30 Dec 2020 20:03:57 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f63c123e1c5858cbbcd705a7236477c4083e167d70475c0e7b9c933222e8b5af`  
-		Last Modified: Mon, 21 Dec 2020 22:00:18 GMT  
-		Size: 204.0 B  
+	-	`sha256:98b59469f4b40e2a21c86504c11e0fd79800cfb3f4e533763cd193ddc4f0310d`  
+		Last Modified: Wed, 30 Dec 2020 20:04:08 GMT  
+		Size: 206.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59b37145753fc564b158eddb20c3aee4ac5d2aa584d1eb65eb2300b25a8d4811`  
-		Last Modified: Mon, 21 Dec 2020 22:00:18 GMT  
-		Size: 215.0 B  
+	-	`sha256:056c804e32d327452a79b39e284b7b6614cf76c4c93c0b5e3e5160441a9fa208`  
+		Last Modified: Wed, 30 Dec 2020 20:04:09 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eac93f09b55a4517d241cc597a980278f9d2c4d5298b6b9aea0fc1b9386164e7`  
-		Last Modified: Mon, 21 Dec 2020 22:00:24 GMT  
-		Size: 13.5 MB (13451767 bytes)  
+	-	`sha256:81b2c351ea2954fdba3fc65702304bda807e67a25f7f21b3276b519950e5ed20`  
+		Last Modified: Wed, 30 Dec 2020 20:04:13 GMT  
+		Size: 13.5 MB (13451793 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.9-management-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:311031ed7f513f8a19d3d408d72b1e1e7505ba1903996dd1b21b809240b31834
+$ docker pull rabbitmq@sha256:8e211c2f3e1da29e36a77f9ccee623db652d88e9e277116cdbd358cf69d1e3b7
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.8 MB (69831780 bytes)**  
+-	Total Size: **69.8 MB (69831903 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53fa39e86fb0f404ee25edfda0f5fb5aa95110eac7b1210bd5beba114e8ea222`
+-	Image ID: `sha256:82577537ca68b9a9e840886c95286f2e8c0639112008576c5ba6118fd485d5ea`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -7011,21 +7011,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:15:39 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:15:40 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:15:40 GMT
+# Wed, 30 Dec 2020 19:43:21 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:43:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:15:41 GMT
+# Wed, 30 Dec 2020 19:43:23 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:15:41 GMT
+# Wed, 30 Dec 2020 19:43:23 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:15:54 GMT
+# Wed, 30 Dec 2020 19:43:33 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:15:56 GMT
+# Wed, 30 Dec 2020 19:43:35 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:16:03 GMT
+# Wed, 30 Dec 2020 19:43:41 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:16:04 GMT
+# Wed, 30 Dec 2020 19:43:42 GMT
 EXPOSE 15671 15672
 ```
 
@@ -7058,34 +7058,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:18:01 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14875f737f50cad14c7b49b22da3175ac58e0fce241c0b46c3e31878378f276a`  
-		Last Modified: Mon, 21 Dec 2020 21:18:01 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:56528dbe21e927342285867ed6cddd3dba0640ae6c9f1a8b91883599fc5b1435`  
+		Last Modified: Wed, 30 Dec 2020 19:45:14 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddd37dfd22e5121e980c8748a827525a5feb0c65cc6ebbcf6134b7d42ad2a1b9`  
-		Last Modified: Mon, 21 Dec 2020 21:18:12 GMT  
+	-	`sha256:faa23018462bd8df5af44c6dae8afbd49f08ef583e26bf0ad6b039cedd40009f`  
+		Last Modified: Wed, 30 Dec 2020 19:45:24 GMT  
 		Size: 203.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27929c056cc7c60039761d2de7400bdb168f74287e0fd93f478d559b6a27d00a`  
-		Last Modified: Mon, 21 Dec 2020 21:18:12 GMT  
-		Size: 216.0 B  
+	-	`sha256:2d7387d46c773dc96ccd08875ac0d4c0c81b61dd06043b19a1b446259af9b504`  
+		Last Modified: Wed, 30 Dec 2020 19:45:25 GMT  
+		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a6a92c15a45c9abe2a8d36bc7edc7cb9ad9fbc39bbb339ad24ca29fe550ef89`  
-		Last Modified: Mon, 21 Dec 2020 21:18:16 GMT  
-		Size: 14.0 MB (14034134 bytes)  
+	-	`sha256:58eefdfd97b56a36e4913884b1b0b9dd489e54714f38c122b685fcc116ae19d2`  
+		Last Modified: Wed, 30 Dec 2020 19:45:29 GMT  
+		Size: 14.0 MB (14034198 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.9-management-alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:fa01fe4000a9ecf3dde7809ee2a0039203da266d277a71c681066ec20ab91bb8
+$ docker pull rabbitmq@sha256:e026651d259b0312b77f45fd83439a719f2ebea0b5771513804aca680e38c254
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.4 MB (70355618 bytes)**  
+-	Total Size: **70.4 MB (70355699 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf3f119c604f65a1076ccde9abff0253c572391e206a5b1d0f52f3d2c699e103`
+-	Image ID: `sha256:fa4cc56aa2676a1cf93c86d73b546a943c8813bc181681df6e49c7a0ec562835`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -7139,21 +7139,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:58:26 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:58:26 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:58:26 GMT
+# Wed, 30 Dec 2020 19:40:51 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:40:51 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:58:27 GMT
+# Wed, 30 Dec 2020 19:40:51 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:58:27 GMT
+# Wed, 30 Dec 2020 19:40:52 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:58:34 GMT
+# Wed, 30 Dec 2020 19:40:58 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:58:35 GMT
+# Wed, 30 Dec 2020 19:40:59 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:58:39 GMT
+# Wed, 30 Dec 2020 19:41:03 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:58:40 GMT
+# Wed, 30 Dec 2020 19:41:03 GMT
 EXPOSE 15671 15672
 ```
 
@@ -7186,34 +7186,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 22:00:39 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f2c80698bb9d8704065a0e05336bc0fd3584f0c0905349e317a7ed62fb7c1f2`  
-		Last Modified: Mon, 21 Dec 2020 22:00:39 GMT  
-		Size: 4.7 KB (4688 bytes)  
+	-	`sha256:59f1fe9bcefab434482b7f7288565ac945fa36b959a170a2a64d199d02b94e18`  
+		Last Modified: Wed, 30 Dec 2020 19:42:21 GMT  
+		Size: 4.7 KB (4741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf51104041609f5634093a57d60d985a2ea1bd72b7dab323b5a4183eb3e7757d`  
-		Last Modified: Mon, 21 Dec 2020 22:00:47 GMT  
-		Size: 203.0 B  
+	-	`sha256:447289af781f01c8c9f345d5ec5ad796b4424bd2e1fb1097d2962dd7e90044ea`  
+		Last Modified: Wed, 30 Dec 2020 19:42:28 GMT  
+		Size: 206.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be71de220f38d4a87a99292740c13e14684355e0d6e546a5ec6bc22854243c7d`  
-		Last Modified: Mon, 21 Dec 2020 22:00:47 GMT  
+	-	`sha256:03fecfe7b90e39ca1991a1809fbf3e99cfe3e96c3ff5c468d208d1573f73c2fe`  
+		Last Modified: Wed, 30 Dec 2020 19:42:28 GMT  
 		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0755fb7c5d02e009663b064e10ef3f80ed6160654c781f665128434c45435046`  
-		Last Modified: Mon, 21 Dec 2020 22:00:51 GMT  
-		Size: 14.0 MB (14033253 bytes)  
+	-	`sha256:0f6eff7e389f96b26033cc439230a8d6c49f145a524d3bc5e4309e47beda3c44`  
+		Last Modified: Wed, 30 Dec 2020 19:42:31 GMT  
+		Size: 14.0 MB (14033278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.9-management-alpine` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:03bd7995d18b210c1f9ae1688fc3fbec7a8290e5297931549210e17f7146a120
+$ docker pull rabbitmq@sha256:b927beb674ab1c706ba964425bcec956e30496d76b1f8bdd6a4538fd8a32d0fd
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.1 MB (71067269 bytes)**  
+-	Total Size: **71.1 MB (71067414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4c38ace055deef7a8f70534384877be7cd3d5b5c867e12c02868b31838d0e28`
+-	Image ID: `sha256:5bfa0a765a46f35ff5694b8b0736c9e06d44c381bfef190557413fe1596c8a19`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -7267,21 +7267,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 22:52:34 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 22:52:41 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 22:52:53 GMT
+# Wed, 30 Dec 2020 19:24:06 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:24:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 22:53:03 GMT
+# Wed, 30 Dec 2020 19:24:19 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 22:53:10 GMT
+# Wed, 30 Dec 2020 19:24:23 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 22:53:34 GMT
+# Wed, 30 Dec 2020 19:24:46 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 22:53:46 GMT
+# Wed, 30 Dec 2020 19:25:04 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 22:54:10 GMT
+# Wed, 30 Dec 2020 19:25:45 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 22:54:19 GMT
+# Wed, 30 Dec 2020 19:25:50 GMT
 EXPOSE 15671 15672
 ```
 
@@ -7314,34 +7314,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 22:55:25 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cee0c2d9ae9a07115a54df13110463d0aaede6a6717df6d3ff9e9dde2dac2028`  
-		Last Modified: Mon, 21 Dec 2020 22:55:25 GMT  
-		Size: 4.7 KB (4684 bytes)  
+	-	`sha256:fce3ef73d2c7a0478979a89000081b5d9d2388f512410a31e8c85a0e71d18a72`  
+		Last Modified: Wed, 30 Dec 2020 19:26:44 GMT  
+		Size: 4.7 KB (4741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d05dbff4b30f2b0cd0cd684ca377334cf537d136fe583de4c1d412d49c319b3`  
-		Last Modified: Mon, 21 Dec 2020 22:55:44 GMT  
-		Size: 204.0 B  
+	-	`sha256:68e523cb740c4d9a3e16c5124208952bc0996ab987723bc0a33a75cc3132d02e`  
+		Last Modified: Wed, 30 Dec 2020 19:27:00 GMT  
+		Size: 205.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c3c21640a6fbc831ba3c6f2dfe501c921cd89cf93d2e72e2d990ed741da7836`  
-		Last Modified: Mon, 21 Dec 2020 22:55:45 GMT  
-		Size: 218.0 B  
+	-	`sha256:b7577cfe0f73fdccbec9364213b7893df71c24bf8882985286e0766efef1cd64`  
+		Last Modified: Wed, 30 Dec 2020 19:27:01 GMT  
+		Size: 219.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2da56f210eb60b04939d28ed0b492c1d0368201ce07f81124304f8dce3a7dce`  
-		Last Modified: Mon, 21 Dec 2020 22:55:51 GMT  
-		Size: 14.4 MB (14363506 bytes)  
+	-	`sha256:72c7d4240e6537122d9c9c0e0920dca634c8d9a924a2fbb0ca8d4c1d644548be`  
+		Last Modified: Wed, 30 Dec 2020 19:27:05 GMT  
+		Size: 14.4 MB (14363592 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8.9-management-alpine` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:d25d54423ece0a052f88b5364a25bfd26cbd3f0c8ffbaa2715f794b7dfe5f5ac
+$ docker pull rabbitmq@sha256:48d9eb7f69b071a761b32c59660a98c10d2f3338c46edfd947f2944141f608a5
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.1 MB (69053205 bytes)**  
+-	Total Size: **69.1 MB (69053273 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d95faa1cac6cc49ae1e4e3520b6d8d099e6fff8bf1dadf554be1d631e20ba3ba`
+-	Image ID: `sha256:df7b8802903b0daae2f6b1ac4930085647338dc0375d635bc54dde1a3c1c426c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -7395,21 +7395,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:11:58 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:11:58 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:11:59 GMT
+# Wed, 30 Dec 2020 19:45:56 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:45:56 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:11:59 GMT
+# Wed, 30 Dec 2020 19:45:57 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:12:00 GMT
+# Wed, 30 Dec 2020 19:45:57 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:12:11 GMT
+# Wed, 30 Dec 2020 19:46:09 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:12:12 GMT
+# Wed, 30 Dec 2020 19:46:10 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:12:18 GMT
+# Wed, 30 Dec 2020 19:46:17 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:12:21 GMT
+# Wed, 30 Dec 2020 19:46:20 GMT
 EXPOSE 15671 15672
 ```
 
@@ -7442,27 +7442,27 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:14:08 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90a44cd1dca23cd43cd8ea2c86909c4de78874037c39b3cb855f1c01078093b7`  
-		Last Modified: Mon, 21 Dec 2020 21:14:08 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:33da539e6af749329c881416600f32bebec9923b6b9153586f7ec46910de8091`  
+		Last Modified: Wed, 30 Dec 2020 19:47:49 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a15ed1c31c8406e192e66559c1882927e3332a38aff072466a38745bc614a26`  
-		Last Modified: Mon, 21 Dec 2020 21:14:20 GMT  
+	-	`sha256:51453419b8f4b1d816d351d03e9321fcea47c1d6ab7855a5854ed7648ae494c9`  
+		Last Modified: Wed, 30 Dec 2020 19:47:59 GMT  
 		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:082c1510af1aedc7063a1ec0650da2f46034c0294ad03da78c80432d4e1fcaa5`  
-		Last Modified: Mon, 21 Dec 2020 21:14:20 GMT  
+	-	`sha256:df802d34a1cb0d3ca363c773ebb653d0559ae10c4edc93645a1fe99b707489d5`  
+		Last Modified: Wed, 30 Dec 2020 19:47:59 GMT  
 		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afb59acce865f1dab01ef990e3d479837d3f2c76935d01c2eca2f6b999ed37a3`  
-		Last Modified: Mon, 21 Dec 2020 21:14:22 GMT  
-		Size: 14.0 MB (13955534 bytes)  
+	-	`sha256:f2baeab0ed8522a28c7a4be8008cf9f77e9203aefb30b33cbfe42ed5e673e884`  
+		Last Modified: Wed, 30 Dec 2020 19:48:01 GMT  
+		Size: 14.0 MB (13955541 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:3.8-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:cd83484c5816c89d815a8b47048f7dc0b914bac3774c7e8c1b100f08f72dca4d
+$ docker pull rabbitmq@sha256:5b9f3d10555376369526d81eb07697255383f8c84aa5f3b34164d43f9ba60d0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7478,14 +7478,14 @@ $ docker pull rabbitmq@sha256:cd83484c5816c89d815a8b47048f7dc0b914bac3774c7e8c1b
 ### `rabbitmq:3.8-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:c5d56767f205cbbbdc5c2678d58425abd845639e78c33847c4df475a2c3022c0
+$ docker pull rabbitmq@sha256:a34351cbfa3fecd19c8aae182eac206cfd8d7bee12deebc06156f39e93a463ea
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.3 MB (56297204 bytes)**  
+-	Total Size: **56.3 MB (56297260 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fe4caa64352dbad146bca9fbe1ff5582931ef437d334f4d57ad0033d576b11bf`
+-	Image ID: `sha256:df3814ee9284b5f63a908202f4cb0f56192ce09617f3f939e8dab3745385e58d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -7539,13 +7539,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:23:54 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:23:54 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:23:55 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:26:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:23:55 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:23:56 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -7578,22 +7578,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:26:02 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cb78fbd941cff7c68255fa8bd23f659cdb876c95f3b24a28bf80f79fadd05fe`  
-		Last Modified: Mon, 21 Dec 2020 21:26:01 GMT  
-		Size: 4.7 KB (4687 bytes)  
+	-	`sha256:f2babd5cc60632de330fc6bbc2496cb0c80dc173f0725d4acbd53461877022eb`  
+		Last Modified: Wed, 30 Dec 2020 19:27:45 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:67740efe77b24aaccd1d6d341b7316138d332edfa19609c64a07c0ba55697f89
+$ docker pull rabbitmq@sha256:ee15b8809b7204027ad36809c3897bef47f33dfe26d23ebce71295ed8103372e
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.0 MB (55032648 bytes)**  
+-	Total Size: **55.0 MB (55032708 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:507b896667358d77e4b2345c960b5f86c7c7e0a7e98ed37f5a603018797510a3`
+-	Image ID: `sha256:4656eca90bc4a977bd5950a41f43f161eaee35060a92130628629d8cb30af28a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -7647,13 +7647,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 20:27:47 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 20:27:48 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 20:27:49 GMT
+# Wed, 30 Dec 2020 19:53:05 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:53:05 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 20:27:51 GMT
+# Wed, 30 Dec 2020 19:53:06 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 20:27:52 GMT
+# Wed, 30 Dec 2020 19:53:06 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -7686,22 +7686,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 20:29:26 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ff513de4dd23048dbd5d310760f506eac90a24aded5f1df947a7792b2771552`  
-		Last Modified: Mon, 21 Dec 2020 20:29:26 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:aaa640cc54980092a29e3221dbca162a7b4d513fa3d6a6b791259d7cf27fd461`  
+		Last Modified: Wed, 30 Dec 2020 19:54:17 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:5ab85166dc222681f9c919af3e6b9c507f33730db435818c225c995d915e8601
+$ docker pull rabbitmq@sha256:d5ad66530961c11f317c6f9c9cd22b2f6af7a78a44468fbfd17f32d23ee7439d
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.3 MB (54340717 bytes)**  
+-	Total Size: **54.3 MB (54340777 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36a7667a3c4e00ae2ff67fc21b13a0ced3ef81c9c1e8ecbc61e2332bc07ab6d5`
+-	Image ID: `sha256:67f6266961618ecaf9c0b7b41631cf56dc37762c1830b5a41fda5cd3181350cf`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -7755,13 +7755,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:57:30 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:57:30 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:57:31 GMT
+# Wed, 30 Dec 2020 20:01:26 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 20:01:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:57:32 GMT
+# Wed, 30 Dec 2020 20:01:29 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:57:32 GMT
+# Wed, 30 Dec 2020 20:01:33 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -7794,22 +7794,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 22:00:07 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:405923efb87b55d63663d6717536d2e7816b929f95995f79b56644074c085374`  
-		Last Modified: Mon, 21 Dec 2020 22:00:06 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:dc26b7a85465f92a028f91eb9ac826ac88c96ad49b59bc2bd01d5affa243e5cf`  
+		Last Modified: Wed, 30 Dec 2020 20:03:57 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:7e35c715aec6498cc023c04e92aaac09eb8a390013e1a3387cd27d13dd633b16
+$ docker pull rabbitmq@sha256:639713e2e118a8b3dbb586e5fe1ee0a416f8d840701aaf2ba80cffe8dbd7ca86
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.8 MB (55797227 bytes)**  
+-	Total Size: **55.8 MB (55797287 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d94a05cb44494626f5ff5f2cd83c9b50923dba71ed1c8aeca02fda5f8aed5e97`
+-	Image ID: `sha256:53ebe820a0bba6a40cca31de829ef81364883cc6ccb4b95623449d2cbb39e11c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -7863,13 +7863,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:15:39 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:15:40 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:15:40 GMT
+# Wed, 30 Dec 2020 19:43:21 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:43:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:15:41 GMT
+# Wed, 30 Dec 2020 19:43:23 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:15:41 GMT
+# Wed, 30 Dec 2020 19:43:23 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -7902,22 +7902,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:18:01 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14875f737f50cad14c7b49b22da3175ac58e0fce241c0b46c3e31878378f276a`  
-		Last Modified: Mon, 21 Dec 2020 21:18:01 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:56528dbe21e927342285867ed6cddd3dba0640ae6c9f1a8b91883599fc5b1435`  
+		Last Modified: Wed, 30 Dec 2020 19:45:14 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:43c7162b8a57efdd3b7642c9d2f4b0ea4962b5ddd7db7953bf782c980996b350
+$ docker pull rabbitmq@sha256:ef2b0d8ec5dca75b3d2f85f0d05e7aefb918c52c223715baed7a8fc77716615a
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.3 MB (56321950 bytes)**  
+-	Total Size: **56.3 MB (56322003 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79541dbaeae05739069519348a37a269516c7ef927fafd27e1d5d19222e83e63`
+-	Image ID: `sha256:7f2909d3bc1a1bfe63daba076998bb19fecab013c6a3bcb2c653d9fd5f483d98`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -7971,13 +7971,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:58:26 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:58:26 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:58:26 GMT
+# Wed, 30 Dec 2020 19:40:51 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:40:51 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:58:27 GMT
+# Wed, 30 Dec 2020 19:40:51 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:58:27 GMT
+# Wed, 30 Dec 2020 19:40:52 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -8010,22 +8010,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 22:00:39 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f2c80698bb9d8704065a0e05336bc0fd3584f0c0905349e317a7ed62fb7c1f2`  
-		Last Modified: Mon, 21 Dec 2020 22:00:39 GMT  
-		Size: 4.7 KB (4688 bytes)  
+	-	`sha256:59f1fe9bcefab434482b7f7288565ac945fa36b959a170a2a64d199d02b94e18`  
+		Last Modified: Wed, 30 Dec 2020 19:42:21 GMT  
+		Size: 4.7 KB (4741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-alpine` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:16ec8fcea1fdc09f19d863278ce9198f55ed8d8ab936ad4bae4d20123e08abec
+$ docker pull rabbitmq@sha256:8926e837122dbc72ce5429bf2f64376378a178700eab5d6a9e27b403ef5878ee
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.7 MB (56703341 bytes)**  
+-	Total Size: **56.7 MB (56703398 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2f2f772e60dd18f69feb9624038cd1bcd43d1655bd1775182376f03d2cebe8c3`
+-	Image ID: `sha256:6bc6983fe99db41cdcccad269a9a5df28f5aa9b579dd4f0ec7c29852ccf411db`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -8079,13 +8079,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 22:52:34 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 22:52:41 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 22:52:53 GMT
+# Wed, 30 Dec 2020 19:24:06 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:24:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 22:53:03 GMT
+# Wed, 30 Dec 2020 19:24:19 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 22:53:10 GMT
+# Wed, 30 Dec 2020 19:24:23 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -8118,22 +8118,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 22:55:25 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cee0c2d9ae9a07115a54df13110463d0aaede6a6717df6d3ff9e9dde2dac2028`  
-		Last Modified: Mon, 21 Dec 2020 22:55:25 GMT  
-		Size: 4.7 KB (4684 bytes)  
+	-	`sha256:fce3ef73d2c7a0478979a89000081b5d9d2388f512410a31e8c85a0e71d18a72`  
+		Last Modified: Wed, 30 Dec 2020 19:26:44 GMT  
+		Size: 4.7 KB (4741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-alpine` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:556a31e8d2bd5c63ee5fc27d143a7a0ae56fb400224a5b1633925140d3e2d5e7
+$ docker pull rabbitmq@sha256:20b956ff0632aeb58f096f3835b1d33c5626e82a967762dbcec2516665687a8d
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.1 MB (55097252 bytes)**  
+-	Total Size: **55.1 MB (55097313 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2247e9239027201f6875f5243b5f91d3350c0ee0080258dd4c1ac76a0b61f71`
+-	Image ID: `sha256:78d4951ac01f7b54751ae098eb2c955cf8902399b30bd03c663c8fac8cbc1f10`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -8187,13 +8187,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:11:58 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:11:58 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:11:59 GMT
+# Wed, 30 Dec 2020 19:45:56 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:45:56 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:11:59 GMT
+# Wed, 30 Dec 2020 19:45:57 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:12:00 GMT
+# Wed, 30 Dec 2020 19:45:57 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -8226,15 +8226,15 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:14:08 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90a44cd1dca23cd43cd8ea2c86909c4de78874037c39b3cb855f1c01078093b7`  
-		Last Modified: Mon, 21 Dec 2020 21:14:08 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:33da539e6af749329c881416600f32bebec9923b6b9153586f7ec46910de8091`  
+		Last Modified: Wed, 30 Dec 2020 19:47:49 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:3.8-management`
 
 ```console
-$ docker pull rabbitmq@sha256:74a6a71e7b8684a8bb7bf4ae68f19a4f25782679bd75c5f37f1c9b06cc863792
+$ docker pull rabbitmq@sha256:c963d6446e7dc80cebc60d41618d075a94334998b2679ae933185749d0d0e702
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8248,14 +8248,14 @@ $ docker pull rabbitmq@sha256:74a6a71e7b8684a8bb7bf4ae68f19a4f25782679bd75c5f37f
 ### `rabbitmq:3.8-management` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:caab9e7a0f698b63c6f799c8270fba76656cfa9c6fa31bbb983b8c2051e80e47
+$ docker pull rabbitmq@sha256:5817edaf96eb251d05ce228bd9551e68d94ca55b63837376667676b9ac1bfe10
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.0 MB (92039463 bytes)**  
+-	Total Size: **92.0 MB (92039544 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b46cdfa8ade610a2c90205dd14551174b415930dc1c839392ba1672fdb48923a`
+-	Image ID: `sha256:92c743b6c05503cf3c4fa7ce5ec1420e0ee3d541d479ea7d1d702c023201b2f1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -8315,21 +8315,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:22:48 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:22:48 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:01 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:26:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:01 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:02 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:23:03 GMT
+# Wed, 30 Dec 2020 19:26:09 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:23:05 GMT
+# Wed, 30 Dec 2020 19:26:10 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:23:23 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:23:24 GMT
+# Wed, 30 Dec 2020 19:26:20 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:26:20 GMT
 EXPOSE 15671 15672
 ```
 
@@ -8370,34 +8370,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:25:43 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a70b21779fa5bdd0bafc80d418e50c06544b535875a3cd7433d3eb88955f8abb`  
-		Last Modified: Mon, 21 Dec 2020 21:25:42 GMT  
-		Size: 4.7 KB (4684 bytes)  
+	-	`sha256:270bdce587ffce163d921bf81efd614bd2e27ce0485557dcd11d277f62662847`  
+		Last Modified: Wed, 30 Dec 2020 19:27:28 GMT  
+		Size: 4.7 KB (4737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fd0072ee2720dd8a8f450635cf420f1fea16b6d3eea1ae22a19e06b861731f9`  
-		Last Modified: Mon, 21 Dec 2020 21:25:52 GMT  
-		Size: 204.0 B  
+	-	`sha256:2fd9a3d58ba8571d65823a40df35351bd451785ca4e80bfe22491244dd3ef76b`  
+		Last Modified: Wed, 30 Dec 2020 19:27:35 GMT  
+		Size: 205.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25b26b1c16ac73259196f89afb4957fc68c57e59d2d382d9ae9b597c6680e583`  
-		Last Modified: Mon, 21 Dec 2020 21:25:52 GMT  
-		Size: 212.0 B  
+	-	`sha256:ee5169b771e7cd83e747c808766eb1f5a5e2bd6d0d0fb04b350f1e5b9ef3ec77`  
+		Last Modified: Wed, 30 Dec 2020 19:27:35 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef0315782200131d5a7f8f4c719c5e58b5465459803560567dcad8169ef82f25`  
-		Last Modified: Mon, 21 Dec 2020 21:25:54 GMT  
-		Size: 10.8 MB (10784677 bytes)  
+	-	`sha256:3aa74f31fb630fc14e43e78f73f4572c8168d4edd15b2097d257f9a38427bac1`  
+		Last Modified: Wed, 30 Dec 2020 19:27:37 GMT  
+		Size: 10.8 MB (10784703 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-management` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:0dfa19bc0eb5901bf43d1e02f58dcb4d22a936cea23e43297ab40f3a97457f88
+$ docker pull rabbitmq@sha256:beedb56f997882827b8eb325ae0b4923f33d709012e7850cfc8712e6795ecdbe
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.1 MB (84088974 bytes)**  
+-	Total Size: **84.1 MB (84089257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfc34893d9bf316f65b33188e45b4c326581fb5de390a476d58a32848473a6e0`
+-	Image ID: `sha256:2ed684f6e04ada5aa4b49e6f4162ce082ea94ab64745a199ac07bce64b1a9dde`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -8457,21 +8457,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:56:17 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:56:18 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:56:20 GMT
+# Wed, 30 Dec 2020 20:00:06 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 20:00:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:56:21 GMT
+# Wed, 30 Dec 2020 20:00:09 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:56:22 GMT
+# Wed, 30 Dec 2020 20:00:11 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:56:39 GMT
+# Wed, 30 Dec 2020 20:00:22 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:56:41 GMT
+# Wed, 30 Dec 2020 20:00:25 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:57:01 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:57:02 GMT
+# Wed, 30 Dec 2020 20:01:04 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 20:01:14 GMT
 EXPOSE 15671 15672
 ```
 
@@ -8512,34 +8512,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:59:37 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:809bcb7f15b169320005044c3c0d6e43d0f11d4a27f9b46038d2885412263fda`  
-		Last Modified: Mon, 21 Dec 2020 21:59:37 GMT  
-		Size: 4.7 KB (4687 bytes)  
+	-	`sha256:a023e57cdec86e2827d62cc3578dd18bd2855c2796d52ef667c2042eabb72225`  
+		Last Modified: Wed, 30 Dec 2020 20:03:28 GMT  
+		Size: 4.7 KB (4739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66840693e7ddc42cce56fbdc1fdbc79ff44cccd36d4b715121e8aaf42d7a8a38`  
-		Last Modified: Mon, 21 Dec 2020 21:59:51 GMT  
-		Size: 203.0 B  
+	-	`sha256:d84169be217210ce1b41d291d935e91d841aedc985a3e94426dcd35622a44397`  
+		Last Modified: Wed, 30 Dec 2020 20:03:43 GMT  
+		Size: 201.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27b3bbdf951bb168123396f6fa40013ba8f337f86e1eed1e98a354d8ca7d22be`  
-		Last Modified: Mon, 21 Dec 2020 21:59:51 GMT  
-		Size: 215.0 B  
+	-	`sha256:a87b222157b6ad1a1801b7b458f7226dacf0c56961acedb1588d9ea4cb3ae75b`  
+		Last Modified: Wed, 30 Dec 2020 20:03:39 GMT  
+		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d00934f1fcb49b5b777ccce58b739261dcb2c9898b799375ff87e46993e2e3e1`  
-		Last Modified: Mon, 21 Dec 2020 21:59:55 GMT  
-		Size: 9.7 MB (9748939 bytes)  
+	-	`sha256:fd75f4cb5fac277911f1050502d34a2d88505916bcba0a8824e481ff11baf9d6`  
+		Last Modified: Wed, 30 Dec 2020 20:03:44 GMT  
+		Size: 9.7 MB (9749170 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-management` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:ff933c09f74066e068918cbda25ac8246a2c30ed9fba0975aa17cdfa8ad77fc8
+$ docker pull rabbitmq@sha256:56823b3ef6c4f89ac3797ead861cf6e5e5438ede9abfebd3e4a3eb5b2da0fedd
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.7 MB (86720669 bytes)**  
+-	Total Size: **86.7 MB (86720853 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf555d36ea3ecf1b819926f424f1be5f7989323094e1c9b8bfbbfb82fb6255eb`
+-	Image ID: `sha256:c732d16e7f3f1d89dad1c2e6c6c697aac8172748e81f241e1d31e50edd569660`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -8599,21 +8599,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:14:33 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:14:33 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:14:34 GMT
+# Wed, 30 Dec 2020 19:42:42 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:42:42 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:14:35 GMT
+# Wed, 30 Dec 2020 19:42:43 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:14:35 GMT
+# Wed, 30 Dec 2020 19:42:44 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:14:52 GMT
+# Wed, 30 Dec 2020 19:42:53 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:14:54 GMT
+# Wed, 30 Dec 2020 19:42:55 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:15:12 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:15:13 GMT
+# Wed, 30 Dec 2020 19:43:13 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:43:14 GMT
 EXPOSE 15671 15672
 ```
 
@@ -8654,34 +8654,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:17:34 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a6de5385e6457d1e4321576d39b1e5130c98430f4d60b1955d7e966f850dc59`  
-		Last Modified: Mon, 21 Dec 2020 21:17:34 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:d316dc06638d1a456656255f63ea5aee11d442596b795cfaf099423f64ef8750`  
+		Last Modified: Wed, 30 Dec 2020 19:44:50 GMT  
+		Size: 4.7 KB (4736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91cfe47ed6f40dbc3275d4c6962b672144c408f0d5700125c53947c87f6de465`  
-		Last Modified: Mon, 21 Dec 2020 21:17:46 GMT  
-		Size: 204.0 B  
+	-	`sha256:8e3f7b33a12597e3388ae0837810252e465e7be64fc26b5d93ed2a70bdd3d117`  
+		Last Modified: Wed, 30 Dec 2020 19:45:00 GMT  
+		Size: 203.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:475799f54d72f1d4b6436d9bf55e744ccb19aed89bd07dfb970b9ccf58e813b1`  
-		Last Modified: Mon, 21 Dec 2020 21:17:47 GMT  
-		Size: 215.0 B  
+	-	`sha256:9a2bf3cd7876225295d396e8c018001ef0b6ac3092832564e8345b159bae305b`  
+		Last Modified: Wed, 30 Dec 2020 19:45:00 GMT  
+		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01bbbef83e3cc279efcd6e2deb339adda4a0982c5d5dd988aa6e7557b5ccac7b`  
-		Last Modified: Mon, 21 Dec 2020 21:17:50 GMT  
-		Size: 10.2 MB (10152274 bytes)  
+	-	`sha256:63fc23bcaae40f3b9cbb066b1f5fb24c7e68b629859a07e7d03cd893e6f24e11`  
+		Last Modified: Wed, 30 Dec 2020 19:45:04 GMT  
+		Size: 10.2 MB (10152407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-management` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:60557abf16e6c3055b7b4c6a7f95ceda796718df99a8a970aafaa8d6ff86473b
+$ docker pull rabbitmq@sha256:a45b18ea569e7d1a1d2693b0f67e0f9965809a37b65b4c81d54ec040ddfb06ff
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **91.5 MB (91462251 bytes)**  
+-	Total Size: **91.5 MB (91462406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:657fd11ee5978a4d0035fa42372ce270f914a2b6207a3f0ee94b87ed91b6de66`
+-	Image ID: `sha256:f6107b22db414223bb68cc90253e0f886a811d9ebbf6e40ac1a72ecc136580ae`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -8741,21 +8741,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:57:44 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:57:44 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:57:44 GMT
+# Wed, 30 Dec 2020 19:40:27 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:40:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:57:45 GMT
+# Wed, 30 Dec 2020 19:40:28 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:57:45 GMT
+# Wed, 30 Dec 2020 19:40:28 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:57:55 GMT
+# Wed, 30 Dec 2020 19:40:34 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:57:56 GMT
+# Wed, 30 Dec 2020 19:40:35 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:58:08 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:58:08 GMT
+# Wed, 30 Dec 2020 19:40:46 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:40:46 GMT
 EXPOSE 15671 15672
 ```
 
@@ -8796,34 +8796,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 22:00:14 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85a2d0ab60e03adf7f47b2f62aa5d20442a78f6aefbdf3018fc7e1e12f489175`  
-		Last Modified: Mon, 21 Dec 2020 22:00:14 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:c34b67e8e81467e6bb600baa6e8364e4cefa168bd337a16798a82fc02315030f`  
+		Last Modified: Wed, 30 Dec 2020 19:42:01 GMT  
+		Size: 4.7 KB (4736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c847c642852bec25e88c7e958e15c7a6001ed0bff68618ab853bcc789af4a65b`  
-		Last Modified: Mon, 21 Dec 2020 22:00:24 GMT  
-		Size: 203.0 B  
+	-	`sha256:412b74ad3ceca51a26eb9323cc8cf64e1d022221e797f8e65e2c47ff084d6efd`  
+		Last Modified: Wed, 30 Dec 2020 19:42:10 GMT  
+		Size: 205.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fc6ad6b0a8faa63937ca77620cfd80ef11707730d327fc6dd56a3e2df042119`  
-		Last Modified: Mon, 21 Dec 2020 22:00:24 GMT  
-		Size: 211.0 B  
+	-	`sha256:72d13b4668b41110f822630b0d4235b568076f0768bd57b9480dcf11b01f884e`  
+		Last Modified: Wed, 30 Dec 2020 19:42:10 GMT  
+		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86e424135ff2941938c2f97611b84b943c28454d0ea0c70ece286007dbe1f932`  
-		Last Modified: Mon, 21 Dec 2020 22:00:27 GMT  
-		Size: 10.9 MB (10854165 bytes)  
+	-	`sha256:bbc27a9f929d8b7be87c8a29c3df57f7c4ef894e8aefdf30d248fabaf10b49af`  
+		Last Modified: Wed, 30 Dec 2020 19:42:13 GMT  
+		Size: 10.9 MB (10854263 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-management` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:dcdefbc8648e9d1f758e9831f9b9c5f09778cb1b255fbdbc7ba8137429162e62
+$ docker pull rabbitmq@sha256:39aa80f7dfb56c33adc563db365be1189d0a8173178fe3865793d9819d98f6f1
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **89.0 MB (89015277 bytes)**  
+-	Total Size: **89.0 MB (89015323 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:664a447e83b6df4f387f7ef4d6785bb143d1eb53b31b14269bfff5449491c9ff`
+-	Image ID: `sha256:ab8721b912e7a63477eef2663e5bc6470a22e198b7e9dda66d7c478486faa6c1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -8883,21 +8883,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:10:49 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:10:50 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:10:50 GMT
+# Wed, 30 Dec 2020 19:45:22 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:45:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:10:51 GMT
+# Wed, 30 Dec 2020 19:45:23 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:10:51 GMT
+# Wed, 30 Dec 2020 19:45:24 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:11:09 GMT
+# Wed, 30 Dec 2020 19:45:34 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:11:10 GMT
+# Wed, 30 Dec 2020 19:45:35 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:11:27 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:11:29 GMT
+# Wed, 30 Dec 2020 19:45:48 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:45:50 GMT
 EXPOSE 15671 15672
 ```
 
@@ -8938,27 +8938,27 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:13:42 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f551312615b55dc3338f141b07b2dd5035f85cc5dda0513b1813a8c651913a9c`  
-		Last Modified: Mon, 21 Dec 2020 21:13:42 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:715c0199636e35ac1528cc930cddbfa6d779c67aac0fd7a7b4669c3c486c1697`  
+		Last Modified: Wed, 30 Dec 2020 19:47:28 GMT  
+		Size: 4.7 KB (4738 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:485a4f31c11434315e7206651c0aca0e05d875184787e08096d9642616f57a2c`  
-		Last Modified: Mon, 21 Dec 2020 21:13:54 GMT  
-		Size: 204.0 B  
+	-	`sha256:d6fd5025184ec18b1d0966267e321c1095c4deef4a75e7471a1e1bdd78fa8b06`  
+		Last Modified: Wed, 30 Dec 2020 19:47:37 GMT  
+		Size: 202.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af257ef72de4e2a5479f4c59aafc913ee02a2c6611b8d0adbad2f65bf4a37892`  
-		Last Modified: Mon, 21 Dec 2020 21:13:54 GMT  
+	-	`sha256:9012f027423da1f35c0f72674f0d4a4aeeffdb1fa08178a0da2cf9bfc0779753`  
+		Last Modified: Wed, 30 Dec 2020 19:47:37 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b66f7ca165876a3c11c6bd61ddb7e4701dee4cc8ecfd0dc5160d6bf4bb7aa548`  
-		Last Modified: Mon, 21 Dec 2020 21:13:56 GMT  
-		Size: 10.4 MB (10408045 bytes)  
+	-	`sha256:d15460241813a075ce550350e1f5daccf66929ad0bc98aacc51995a3a93ba408`  
+		Last Modified: Wed, 30 Dec 2020 19:47:39 GMT  
+		Size: 10.4 MB (10408040 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:3.8-management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:6296b3507309978d1ef673de155edc3c713b1be674d46e3191be3a0dbc715557
+$ docker pull rabbitmq@sha256:0ac9a7f792aa031dff1d133b2d5febfe01a63a9f8aa0d5a9357467e0b8d75a67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8974,14 +8974,14 @@ $ docker pull rabbitmq@sha256:6296b3507309978d1ef673de155edc3c713b1be674d46e3191
 ### `rabbitmq:3.8-management-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:f9cde149e753a99f1fd28f63aa5b3cd4182a31d4f0be412cbe41ba5117ed7a26
+$ docker pull rabbitmq@sha256:43fb8dd7521f5284cef969e6f5c95067b4ab8b8e4f708a7cfb0fe65ba46857ad
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.2 MB (70211578 bytes)**  
+-	Total Size: **70.2 MB (70211688 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:55b8b1f0ad357ec63f5b49cb0998e13499c7b9cc1aae39818020f5be0aa242bc`
+-	Image ID: `sha256:0024eab10efba45d1b114683d0d29995eef9915e501e857d037af2074971b486`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -9035,21 +9035,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:23:54 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:23:54 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:23:55 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:26:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:23:55 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:23:56 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:24:07 GMT
+# Wed, 30 Dec 2020 19:26:32 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:24:09 GMT
+# Wed, 30 Dec 2020 19:26:33 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:24:15 GMT
+# Wed, 30 Dec 2020 19:26:37 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:24:15 GMT
+# Wed, 30 Dec 2020 19:26:37 GMT
 EXPOSE 15671 15672
 ```
 
@@ -9082,34 +9082,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:26:02 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cb78fbd941cff7c68255fa8bd23f659cdb876c95f3b24a28bf80f79fadd05fe`  
-		Last Modified: Mon, 21 Dec 2020 21:26:01 GMT  
-		Size: 4.7 KB (4687 bytes)  
+	-	`sha256:f2babd5cc60632de330fc6bbc2496cb0c80dc173f0725d4acbd53461877022eb`  
+		Last Modified: Wed, 30 Dec 2020 19:27:45 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6485f949ba043525dce62d89c19ef666c6c4c18c49cdcf7e786c0eddb3010ac3`  
-		Last Modified: Mon, 21 Dec 2020 21:26:10 GMT  
-		Size: 203.0 B  
+	-	`sha256:73954fbfba964069767cd88c24cc23c5840f77ca12bb7100a05aea5c6dfc8284`  
+		Last Modified: Wed, 30 Dec 2020 19:27:51 GMT  
+		Size: 206.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1e71d8aff99582c3c8b8472838d6fc7c0eb609937642d1a6631f4c8d733f008`  
-		Last Modified: Mon, 21 Dec 2020 21:26:11 GMT  
-		Size: 217.0 B  
+	-	`sha256:2e2fede618a7af8abbc7b6ef75e12b4b723fb827b9e6eceedc4bcc2e84223f4b`  
+		Last Modified: Wed, 30 Dec 2020 19:27:51 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f0469d674658ebd89fe7ed2cddd4f7614640a7177ed562b0d33a42f73fed452`  
-		Last Modified: Mon, 21 Dec 2020 21:26:13 GMT  
-		Size: 13.9 MB (13913954 bytes)  
+	-	`sha256:daa111566ce1231aaed62ff66674441a19c2987f6cfd9fdc1dde6f8e0dde720e`  
+		Last Modified: Wed, 30 Dec 2020 19:27:54 GMT  
+		Size: 13.9 MB (13914011 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-management-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:8c6895a5246c86cca3b0546e14ce7276c94dd034b5592abf810302bcc353994c
+$ docker pull rabbitmq@sha256:5b32f7f62c53b95bef044acfe9fca35ec93f5171eeea9fe040a50d7a22124687
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.8 MB (68839116 bytes)**  
+-	Total Size: **68.8 MB (68839194 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac99694c32b973c4a954040de819b8481abad0e308a9cd8612ced18260f674ef`
+-	Image ID: `sha256:5ab0b104427697667658f058040ee7ffe71161297446762c2c997062a7fc9e8c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -9163,21 +9163,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 20:27:47 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 20:27:48 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 20:27:49 GMT
+# Wed, 30 Dec 2020 19:53:05 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:53:05 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 20:27:51 GMT
+# Wed, 30 Dec 2020 19:53:06 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 20:27:52 GMT
+# Wed, 30 Dec 2020 19:53:06 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 20:28:11 GMT
+# Wed, 30 Dec 2020 19:53:23 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 20:28:14 GMT
+# Wed, 30 Dec 2020 19:53:24 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 20:28:25 GMT
+# Wed, 30 Dec 2020 19:53:34 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 20:28:33 GMT
+# Wed, 30 Dec 2020 19:53:35 GMT
 EXPOSE 15671 15672
 ```
 
@@ -9210,34 +9210,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 20:29:26 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ff513de4dd23048dbd5d310760f506eac90a24aded5f1df947a7792b2771552`  
-		Last Modified: Mon, 21 Dec 2020 20:29:26 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:aaa640cc54980092a29e3221dbca162a7b4d513fa3d6a6b791259d7cf27fd461`  
+		Last Modified: Wed, 30 Dec 2020 19:54:17 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d7637e44c151d6b8e927c54c1bf667ce39008a6c5a3729cd8d51bee111f9a688`  
-		Last Modified: Mon, 21 Dec 2020 20:29:41 GMT  
-		Size: 206.0 B  
+	-	`sha256:de56c07f1f9986f57f146efe3597fa059f07fd73538fb250012f08ce4f42a9dd`  
+		Last Modified: Wed, 30 Dec 2020 19:54:29 GMT  
+		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51b0826caa8503cef50b97f38e84c1df17593374018c72c376233e5d2dc8ce3a`  
-		Last Modified: Mon, 21 Dec 2020 20:29:40 GMT  
-		Size: 217.0 B  
+	-	`sha256:75a5f926e066999f650d29151fb4fa88928b29b5068a62734aaa51f375f03341`  
+		Last Modified: Wed, 30 Dec 2020 19:54:29 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85e51d9e631c4b109783b75240285c17eda9b5daf9a5c3534cc3ed4b7e807a3e`  
-		Last Modified: Mon, 21 Dec 2020 20:29:45 GMT  
-		Size: 13.8 MB (13806045 bytes)  
+	-	`sha256:860fc3eb8dba7a666aa867dd727f1c061a2bca9f3f94b7ddbdd2a39a3c5daf22`  
+		Last Modified: Wed, 30 Dec 2020 19:54:34 GMT  
+		Size: 13.8 MB (13806066 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-management-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:d3ff996a202e6148efb7fb0ef6eb6b565a1c633ea2acda451d8f941b20d6197c
+$ docker pull rabbitmq@sha256:87f4c65596455400052d8dbf6eb72e71063a287407078a900ef946805d44a4b3
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **67.8 MB (67792903 bytes)**  
+-	Total Size: **67.8 MB (67792992 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2c8cb9657c86a1b09235860c6a2432b5a5096024f6f62930744222cfd893d30`
+-	Image ID: `sha256:e0797a6600edfd27fd6a3ba44aed66b80b60574f94403d7707bbff1af578964e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -9291,21 +9291,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:57:30 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:57:30 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:57:31 GMT
+# Wed, 30 Dec 2020 20:01:26 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 20:01:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:57:32 GMT
+# Wed, 30 Dec 2020 20:01:29 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:57:32 GMT
+# Wed, 30 Dec 2020 20:01:33 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:57:41 GMT
+# Wed, 30 Dec 2020 20:01:46 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:57:42 GMT
+# Wed, 30 Dec 2020 20:01:52 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:57:50 GMT
+# Wed, 30 Dec 2020 20:02:03 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:57:52 GMT
+# Wed, 30 Dec 2020 20:02:06 GMT
 EXPOSE 15671 15672
 ```
 
@@ -9338,34 +9338,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 22:00:07 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:405923efb87b55d63663d6717536d2e7816b929f95995f79b56644074c085374`  
-		Last Modified: Mon, 21 Dec 2020 22:00:06 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:dc26b7a85465f92a028f91eb9ac826ac88c96ad49b59bc2bd01d5affa243e5cf`  
+		Last Modified: Wed, 30 Dec 2020 20:03:57 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f63c123e1c5858cbbcd705a7236477c4083e167d70475c0e7b9c933222e8b5af`  
-		Last Modified: Mon, 21 Dec 2020 22:00:18 GMT  
-		Size: 204.0 B  
+	-	`sha256:98b59469f4b40e2a21c86504c11e0fd79800cfb3f4e533763cd193ddc4f0310d`  
+		Last Modified: Wed, 30 Dec 2020 20:04:08 GMT  
+		Size: 206.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59b37145753fc564b158eddb20c3aee4ac5d2aa584d1eb65eb2300b25a8d4811`  
-		Last Modified: Mon, 21 Dec 2020 22:00:18 GMT  
-		Size: 215.0 B  
+	-	`sha256:056c804e32d327452a79b39e284b7b6614cf76c4c93c0b5e3e5160441a9fa208`  
+		Last Modified: Wed, 30 Dec 2020 20:04:09 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eac93f09b55a4517d241cc597a980278f9d2c4d5298b6b9aea0fc1b9386164e7`  
-		Last Modified: Mon, 21 Dec 2020 22:00:24 GMT  
-		Size: 13.5 MB (13451767 bytes)  
+	-	`sha256:81b2c351ea2954fdba3fc65702304bda807e67a25f7f21b3276b519950e5ed20`  
+		Last Modified: Wed, 30 Dec 2020 20:04:13 GMT  
+		Size: 13.5 MB (13451793 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-management-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:311031ed7f513f8a19d3d408d72b1e1e7505ba1903996dd1b21b809240b31834
+$ docker pull rabbitmq@sha256:8e211c2f3e1da29e36a77f9ccee623db652d88e9e277116cdbd358cf69d1e3b7
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.8 MB (69831780 bytes)**  
+-	Total Size: **69.8 MB (69831903 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53fa39e86fb0f404ee25edfda0f5fb5aa95110eac7b1210bd5beba114e8ea222`
+-	Image ID: `sha256:82577537ca68b9a9e840886c95286f2e8c0639112008576c5ba6118fd485d5ea`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -9419,21 +9419,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:15:39 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:15:40 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:15:40 GMT
+# Wed, 30 Dec 2020 19:43:21 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:43:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:15:41 GMT
+# Wed, 30 Dec 2020 19:43:23 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:15:41 GMT
+# Wed, 30 Dec 2020 19:43:23 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:15:54 GMT
+# Wed, 30 Dec 2020 19:43:33 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:15:56 GMT
+# Wed, 30 Dec 2020 19:43:35 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:16:03 GMT
+# Wed, 30 Dec 2020 19:43:41 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:16:04 GMT
+# Wed, 30 Dec 2020 19:43:42 GMT
 EXPOSE 15671 15672
 ```
 
@@ -9466,34 +9466,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:18:01 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14875f737f50cad14c7b49b22da3175ac58e0fce241c0b46c3e31878378f276a`  
-		Last Modified: Mon, 21 Dec 2020 21:18:01 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:56528dbe21e927342285867ed6cddd3dba0640ae6c9f1a8b91883599fc5b1435`  
+		Last Modified: Wed, 30 Dec 2020 19:45:14 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddd37dfd22e5121e980c8748a827525a5feb0c65cc6ebbcf6134b7d42ad2a1b9`  
-		Last Modified: Mon, 21 Dec 2020 21:18:12 GMT  
+	-	`sha256:faa23018462bd8df5af44c6dae8afbd49f08ef583e26bf0ad6b039cedd40009f`  
+		Last Modified: Wed, 30 Dec 2020 19:45:24 GMT  
 		Size: 203.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27929c056cc7c60039761d2de7400bdb168f74287e0fd93f478d559b6a27d00a`  
-		Last Modified: Mon, 21 Dec 2020 21:18:12 GMT  
-		Size: 216.0 B  
+	-	`sha256:2d7387d46c773dc96ccd08875ac0d4c0c81b61dd06043b19a1b446259af9b504`  
+		Last Modified: Wed, 30 Dec 2020 19:45:25 GMT  
+		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a6a92c15a45c9abe2a8d36bc7edc7cb9ad9fbc39bbb339ad24ca29fe550ef89`  
-		Last Modified: Mon, 21 Dec 2020 21:18:16 GMT  
-		Size: 14.0 MB (14034134 bytes)  
+	-	`sha256:58eefdfd97b56a36e4913884b1b0b9dd489e54714f38c122b685fcc116ae19d2`  
+		Last Modified: Wed, 30 Dec 2020 19:45:29 GMT  
+		Size: 14.0 MB (14034198 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-management-alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:fa01fe4000a9ecf3dde7809ee2a0039203da266d277a71c681066ec20ab91bb8
+$ docker pull rabbitmq@sha256:e026651d259b0312b77f45fd83439a719f2ebea0b5771513804aca680e38c254
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.4 MB (70355618 bytes)**  
+-	Total Size: **70.4 MB (70355699 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf3f119c604f65a1076ccde9abff0253c572391e206a5b1d0f52f3d2c699e103`
+-	Image ID: `sha256:fa4cc56aa2676a1cf93c86d73b546a943c8813bc181681df6e49c7a0ec562835`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -9547,21 +9547,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:58:26 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:58:26 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:58:26 GMT
+# Wed, 30 Dec 2020 19:40:51 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:40:51 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:58:27 GMT
+# Wed, 30 Dec 2020 19:40:51 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:58:27 GMT
+# Wed, 30 Dec 2020 19:40:52 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:58:34 GMT
+# Wed, 30 Dec 2020 19:40:58 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:58:35 GMT
+# Wed, 30 Dec 2020 19:40:59 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:58:39 GMT
+# Wed, 30 Dec 2020 19:41:03 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:58:40 GMT
+# Wed, 30 Dec 2020 19:41:03 GMT
 EXPOSE 15671 15672
 ```
 
@@ -9594,34 +9594,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 22:00:39 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f2c80698bb9d8704065a0e05336bc0fd3584f0c0905349e317a7ed62fb7c1f2`  
-		Last Modified: Mon, 21 Dec 2020 22:00:39 GMT  
-		Size: 4.7 KB (4688 bytes)  
+	-	`sha256:59f1fe9bcefab434482b7f7288565ac945fa36b959a170a2a64d199d02b94e18`  
+		Last Modified: Wed, 30 Dec 2020 19:42:21 GMT  
+		Size: 4.7 KB (4741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf51104041609f5634093a57d60d985a2ea1bd72b7dab323b5a4183eb3e7757d`  
-		Last Modified: Mon, 21 Dec 2020 22:00:47 GMT  
-		Size: 203.0 B  
+	-	`sha256:447289af781f01c8c9f345d5ec5ad796b4424bd2e1fb1097d2962dd7e90044ea`  
+		Last Modified: Wed, 30 Dec 2020 19:42:28 GMT  
+		Size: 206.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be71de220f38d4a87a99292740c13e14684355e0d6e546a5ec6bc22854243c7d`  
-		Last Modified: Mon, 21 Dec 2020 22:00:47 GMT  
+	-	`sha256:03fecfe7b90e39ca1991a1809fbf3e99cfe3e96c3ff5c468d208d1573f73c2fe`  
+		Last Modified: Wed, 30 Dec 2020 19:42:28 GMT  
 		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0755fb7c5d02e009663b064e10ef3f80ed6160654c781f665128434c45435046`  
-		Last Modified: Mon, 21 Dec 2020 22:00:51 GMT  
-		Size: 14.0 MB (14033253 bytes)  
+	-	`sha256:0f6eff7e389f96b26033cc439230a8d6c49f145a524d3bc5e4309e47beda3c44`  
+		Last Modified: Wed, 30 Dec 2020 19:42:31 GMT  
+		Size: 14.0 MB (14033278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-management-alpine` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:03bd7995d18b210c1f9ae1688fc3fbec7a8290e5297931549210e17f7146a120
+$ docker pull rabbitmq@sha256:b927beb674ab1c706ba964425bcec956e30496d76b1f8bdd6a4538fd8a32d0fd
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.1 MB (71067269 bytes)**  
+-	Total Size: **71.1 MB (71067414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4c38ace055deef7a8f70534384877be7cd3d5b5c867e12c02868b31838d0e28`
+-	Image ID: `sha256:5bfa0a765a46f35ff5694b8b0736c9e06d44c381bfef190557413fe1596c8a19`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -9675,21 +9675,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 22:52:34 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 22:52:41 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 22:52:53 GMT
+# Wed, 30 Dec 2020 19:24:06 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:24:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 22:53:03 GMT
+# Wed, 30 Dec 2020 19:24:19 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 22:53:10 GMT
+# Wed, 30 Dec 2020 19:24:23 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 22:53:34 GMT
+# Wed, 30 Dec 2020 19:24:46 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 22:53:46 GMT
+# Wed, 30 Dec 2020 19:25:04 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 22:54:10 GMT
+# Wed, 30 Dec 2020 19:25:45 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 22:54:19 GMT
+# Wed, 30 Dec 2020 19:25:50 GMT
 EXPOSE 15671 15672
 ```
 
@@ -9722,34 +9722,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 22:55:25 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cee0c2d9ae9a07115a54df13110463d0aaede6a6717df6d3ff9e9dde2dac2028`  
-		Last Modified: Mon, 21 Dec 2020 22:55:25 GMT  
-		Size: 4.7 KB (4684 bytes)  
+	-	`sha256:fce3ef73d2c7a0478979a89000081b5d9d2388f512410a31e8c85a0e71d18a72`  
+		Last Modified: Wed, 30 Dec 2020 19:26:44 GMT  
+		Size: 4.7 KB (4741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d05dbff4b30f2b0cd0cd684ca377334cf537d136fe583de4c1d412d49c319b3`  
-		Last Modified: Mon, 21 Dec 2020 22:55:44 GMT  
-		Size: 204.0 B  
+	-	`sha256:68e523cb740c4d9a3e16c5124208952bc0996ab987723bc0a33a75cc3132d02e`  
+		Last Modified: Wed, 30 Dec 2020 19:27:00 GMT  
+		Size: 205.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c3c21640a6fbc831ba3c6f2dfe501c921cd89cf93d2e72e2d990ed741da7836`  
-		Last Modified: Mon, 21 Dec 2020 22:55:45 GMT  
-		Size: 218.0 B  
+	-	`sha256:b7577cfe0f73fdccbec9364213b7893df71c24bf8882985286e0766efef1cd64`  
+		Last Modified: Wed, 30 Dec 2020 19:27:01 GMT  
+		Size: 219.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2da56f210eb60b04939d28ed0b492c1d0368201ce07f81124304f8dce3a7dce`  
-		Last Modified: Mon, 21 Dec 2020 22:55:51 GMT  
-		Size: 14.4 MB (14363506 bytes)  
+	-	`sha256:72c7d4240e6537122d9c9c0e0920dca634c8d9a924a2fbb0ca8d4c1d644548be`  
+		Last Modified: Wed, 30 Dec 2020 19:27:05 GMT  
+		Size: 14.4 MB (14363592 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-management-alpine` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:d25d54423ece0a052f88b5364a25bfd26cbd3f0c8ffbaa2715f794b7dfe5f5ac
+$ docker pull rabbitmq@sha256:48d9eb7f69b071a761b32c59660a98c10d2f3338c46edfd947f2944141f608a5
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.1 MB (69053205 bytes)**  
+-	Total Size: **69.1 MB (69053273 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d95faa1cac6cc49ae1e4e3520b6d8d099e6fff8bf1dadf554be1d631e20ba3ba`
+-	Image ID: `sha256:df7b8802903b0daae2f6b1ac4930085647338dc0375d635bc54dde1a3c1c426c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -9803,21 +9803,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:11:58 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:11:58 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:11:59 GMT
+# Wed, 30 Dec 2020 19:45:56 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:45:56 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:11:59 GMT
+# Wed, 30 Dec 2020 19:45:57 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:12:00 GMT
+# Wed, 30 Dec 2020 19:45:57 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:12:11 GMT
+# Wed, 30 Dec 2020 19:46:09 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:12:12 GMT
+# Wed, 30 Dec 2020 19:46:10 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:12:18 GMT
+# Wed, 30 Dec 2020 19:46:17 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:12:21 GMT
+# Wed, 30 Dec 2020 19:46:20 GMT
 EXPOSE 15671 15672
 ```
 
@@ -9850,27 +9850,27 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:14:08 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90a44cd1dca23cd43cd8ea2c86909c4de78874037c39b3cb855f1c01078093b7`  
-		Last Modified: Mon, 21 Dec 2020 21:14:08 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:33da539e6af749329c881416600f32bebec9923b6b9153586f7ec46910de8091`  
+		Last Modified: Wed, 30 Dec 2020 19:47:49 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a15ed1c31c8406e192e66559c1882927e3332a38aff072466a38745bc614a26`  
-		Last Modified: Mon, 21 Dec 2020 21:14:20 GMT  
+	-	`sha256:51453419b8f4b1d816d351d03e9321fcea47c1d6ab7855a5854ed7648ae494c9`  
+		Last Modified: Wed, 30 Dec 2020 19:47:59 GMT  
 		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:082c1510af1aedc7063a1ec0650da2f46034c0294ad03da78c80432d4e1fcaa5`  
-		Last Modified: Mon, 21 Dec 2020 21:14:20 GMT  
+	-	`sha256:df802d34a1cb0d3ca363c773ebb653d0559ae10c4edc93645a1fe99b707489d5`  
+		Last Modified: Wed, 30 Dec 2020 19:47:59 GMT  
 		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afb59acce865f1dab01ef990e3d479837d3f2c76935d01c2eca2f6b999ed37a3`  
-		Last Modified: Mon, 21 Dec 2020 21:14:22 GMT  
-		Size: 14.0 MB (13955534 bytes)  
+	-	`sha256:f2baeab0ed8522a28c7a4be8008cf9f77e9203aefb30b33cbfe42ed5e673e884`  
+		Last Modified: Wed, 30 Dec 2020 19:48:01 GMT  
+		Size: 14.0 MB (13955541 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:3.8-rc`
 
 ```console
-$ docker pull rabbitmq@sha256:6242cd7565e959b967ab24df8e3118875319402f00b9c17d636be08c5d83bdfc
+$ docker pull rabbitmq@sha256:1328aba746910dba03aca9aa713223c3f3e2e3c8ba88bec50096a96eb167025c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9884,14 +9884,14 @@ $ docker pull rabbitmq@sha256:6242cd7565e959b967ab24df8e3118875319402f00b9c17d63
 ### `rabbitmq:3.8-rc` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:a5556f7894c01370d0f27157256e6a2f50a5039d390ff4058383ba97439fbd79
+$ docker pull rabbitmq@sha256:2675d45b84e1538f907b06a6497243c61fc0d6e90de199546573bea27987c981
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.7 MB (81732995 bytes)**  
+-	Total Size: **81.7 MB (81733047 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d3c8c4a26512e529f97bfea7ce9a46291dde2fff6110e1c4f31cf5f05b5851e9`
+-	Image ID: `sha256:39c83affb0561dfb9a1f6d2b22a8317cc8b4aad96bf6c713bc18e82beb888d73`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -9951,13 +9951,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:11:01 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:11:01 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:11:01 GMT
+# Wed, 30 Dec 2020 19:25:10 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:25:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:11:02 GMT
+# Wed, 30 Dec 2020 19:25:10 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:11:02 GMT
+# Wed, 30 Dec 2020 19:25:11 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -9998,22 +9998,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:24:54 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31ff449b8ac05c6bcefc0f02372d1be22ed43e2472b289d4ed09d8304af5048e`  
-		Last Modified: Mon, 21 Dec 2020 21:24:52 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:6e5593aa4d041605ae0212b59ef0c3908fff2fa10576f17348872c7cf2a40731`  
+		Last Modified: Wed, 30 Dec 2020 19:27:04 GMT  
+		Size: 4.7 KB (4737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-rc` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:31dc0b34bd0f9db9b6212098111cb05349353362484edce077cb1bc754cc1964
+$ docker pull rabbitmq@sha256:d42eafc183b2319735f3af914ab5a90b80af9b54d56883925df38fab7ef46be0
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **74.8 MB (74818340 bytes)**  
+-	Total Size: **74.8 MB (74818393 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6dba29478ef971136fdcb9a92945d2475e9c037b013aa6edd5d0eb62d06f0c64`
+-	Image ID: `sha256:f2669a72b7bd06b1526726e0a1d0d595373022729626e773e6503f7e01e58321`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -10073,13 +10073,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:49:35 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:49:36 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:49:37 GMT
+# Wed, 30 Dec 2020 19:58:48 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:58:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:49:37 GMT
+# Wed, 30 Dec 2020 19:58:50 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:49:38 GMT
+# Wed, 30 Dec 2020 19:58:50 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -10120,22 +10120,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:58:26 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3df8c76ab3d42ffccdbcf5969727f268054360726abaf18365645497b203dd5`  
-		Last Modified: Mon, 21 Dec 2020 21:58:27 GMT  
-		Size: 4.7 KB (4689 bytes)  
+	-	`sha256:9bd8d3dff20f30856488aee35dd4c026ec4a07e837ec1c76dae44f4bbcd5b111`  
+		Last Modified: Wed, 30 Dec 2020 20:02:45 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-rc` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:5fb84922d8abbc0e015a7d6cd0eb55a99f2a7aa6b8ae278b0bca07706d58cf47
+$ docker pull rabbitmq@sha256:c5cb34236c891fed6838580f61b305b7c702100bc1ee982a7da90c7cd34033fc
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.0 MB (77046744 bytes)**  
+-	Total Size: **77.0 MB (77046800 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:995861f24cf2106ee16b516997a41abae9c304f9dd2f049a83ac33b8c44164db`
+-	Image ID: `sha256:9a6f93301fcdb0262241a5c39d1bb8967ef90cb35f2deacef9165511c3dda6ef`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -10195,13 +10195,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:07:45 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:07:47 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:07:48 GMT
+# Wed, 30 Dec 2020 19:41:35 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:41:36 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:07:50 GMT
+# Wed, 30 Dec 2020 19:41:37 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:07:52 GMT
+# Wed, 30 Dec 2020 19:41:37 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -10242,22 +10242,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:16:38 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11c8878404e7e30a45424503cc313ab65a8dbf290d9f33c5cba043dea7c358e6`  
-		Last Modified: Mon, 21 Dec 2020 21:16:38 GMT  
-		Size: 4.7 KB (4686 bytes)  
+	-	`sha256:1bfcd78e2cff9c4ed12cb5840ab53d16292d5272329014b4eef4741e6f0eff8d`  
+		Last Modified: Wed, 30 Dec 2020 19:44:15 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-rc` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:ff97eb5d7a5b44e1ca5cc09b1cad2cebf0a8c35eeaf12b3a3c16663be9f1af72
+$ docker pull rabbitmq@sha256:c2682712e7ad439c23c1e2b0bd91bb086a977ad6df52c0e85411648099b6ff76
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.1 MB (81086364 bytes)**  
+-	Total Size: **81.1 MB (81086419 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:397bf41c8254ef69818f4a293fea065a37c59e9b6d5fe3c85452dc445324f4b4`
+-	Image ID: `sha256:6a4630dd8b49a80f3f67963b0269b7e45fc78298f14a94f03aec41b1d2b21d08`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -10317,13 +10317,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:47:22 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:47:22 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:47:22 GMT
+# Wed, 30 Dec 2020 19:39:35 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:39:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:47:22 GMT
+# Wed, 30 Dec 2020 19:39:36 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:47:23 GMT
+# Wed, 30 Dec 2020 19:39:36 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -10364,22 +10364,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:59:11 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5fb5c9fad3e1717416c8fdc776d8b2591fc89a388cab580896dd9c10cd7e16a`  
-		Last Modified: Mon, 21 Dec 2020 21:59:12 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:00c36867132ade89e84af583bbbccfd07fe00524ece1a20224afe2149e2d45f1`  
+		Last Modified: Wed, 30 Dec 2020 19:41:33 GMT  
+		Size: 4.7 KB (4737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-rc` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:f67578503b7ccdfb786f81929179fb0670655a0114d15df38457092ef76214d8
+$ docker pull rabbitmq@sha256:634c3d0d3529ca6754774d4613900b4103a89cdcb0454670ae5d0b1721a7266f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.1 MB (79085493 bytes)**  
+-	Total Size: **79.1 MB (79085544 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d609bcfaccc91e579df1513c9c3a7c04dd46eb8bff002d93eb11c2368b968ac2`
+-	Image ID: `sha256:101ece83ce2048ea94b6ff7f7342d188d4b858fdd78b6942e433676ae5f6a633`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -10439,13 +10439,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:02:20 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:02:20 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:02:21 GMT
+# Wed, 30 Dec 2020 19:44:16 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:44:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:02:21 GMT
+# Wed, 30 Dec 2020 19:44:17 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:02:22 GMT
+# Wed, 30 Dec 2020 19:44:17 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -10486,15 +10486,15 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:12:54 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f91234d41b46b603cf8cee5ceed9f2e0979268acce6e1d6f8df1a1fe7f67c6dc`  
-		Last Modified: Mon, 21 Dec 2020 21:12:54 GMT  
-		Size: 4.7 KB (4688 bytes)  
+	-	`sha256:c773ba36152868736be79685d87868b943610a222d7fa09911ef8b3bc32c0fb6`  
+		Last Modified: Wed, 30 Dec 2020 19:46:55 GMT  
+		Size: 4.7 KB (4739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:3.8-rc-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:aeef9beea380ab66729a85fee83342b4c6d5280abf75f9d49e4b5c95c68bcd38
+$ docker pull rabbitmq@sha256:39905347465fded335e22c3a5d3b1dee8f0b7dca6a7438d22382274349214f9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10510,14 +10510,14 @@ $ docker pull rabbitmq@sha256:aeef9beea380ab66729a85fee83342b4c6d5280abf75f9d49e
 ### `rabbitmq:3.8-rc-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:0858ffba16d186f34bb7e95c284b45972b269d42882a4ee2dd59251947911ba1
+$ docker pull rabbitmq@sha256:586b934467e82e81475b97111beb45bc3b538d6a7ee14ee03527a036a681aedd
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.8 MB (56775920 bytes)**  
+-	Total Size: **56.8 MB (56775978 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b880a7f513b4f877216a61c0f392ab2c461bb76a213f0c01f323232f95baf19c`
+-	Image ID: `sha256:b2b5d6445991540214b9a5b49fd9a57ce821dc89aa76dc8642fc600c5b2b850a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -10571,13 +10571,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:21:39 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:21:39 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:21:39 GMT
+# Wed, 30 Dec 2020 19:25:44 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:25:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:21:39 GMT
+# Wed, 30 Dec 2020 19:25:45 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:21:39 GMT
+# Wed, 30 Dec 2020 19:25:45 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -10610,22 +10610,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:25:21 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f31487551a0ff949bbc70ba9ac8ec9875d542e1af926367dbac6937dfe80526d`  
-		Last Modified: Mon, 21 Dec 2020 21:25:22 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:b9a74cccb94b3bc235a2cf5f9c94b21c8c96762489315367d32d70091c68f39c`  
+		Last Modified: Wed, 30 Dec 2020 19:27:16 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-rc-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:12d5a4d949e45fa85cce1ae8b859b0a0afdb7389b7eac25568f3a4038fd6c08e
+$ docker pull rabbitmq@sha256:275a5ad4cfc99b72d828e687e2c8710999ede45cdad6d7d07e756ce724795005
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.5 MB (55511331 bytes)**  
+-	Total Size: **55.5 MB (55511386 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a172fb14abda7a52ae0e6e2b93462addf187520e961a2942184f2ccc528c3a2d`
+-	Image ID: `sha256:c8d787c950282f0c5848be6e1fe3d2e77a4f7348efd4bf686c782fb993e52f79`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -10679,13 +10679,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 20:25:31 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 20:25:32 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 20:25:34 GMT
+# Wed, 30 Dec 2020 19:52:26 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:52:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 20:25:36 GMT
+# Wed, 30 Dec 2020 19:52:27 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 20:25:37 GMT
+# Wed, 30 Dec 2020 19:52:28 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -10718,22 +10718,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 20:28:55 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97647e3b4d0f1aaac6aa37661f4bc5cd6c8045b379a5f973657d755f5cef9d54`  
-		Last Modified: Mon, 21 Dec 2020 20:28:55 GMT  
-		Size: 4.7 KB (4687 bytes)  
+	-	`sha256:6abf880b7fe767efa9283e7c8ab23d554639733fdd814bdb43808d535435098c`  
+		Last Modified: Wed, 30 Dec 2020 19:53:56 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-rc-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:3c28afa7736007b8bdf5443ed9b9121e1fd2f5683409fbc1e9728881cdcc36c1
+$ docker pull rabbitmq@sha256:9247bf5f002d2e480fc6a533707457bcf3b839840f8842c3e0f27b003c0638ea
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.8 MB (54819416 bytes)**  
+-	Total Size: **54.8 MB (54819472 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:59f9ea5a788714d6e9ef46ff71dc893fc873ac56efa3c213c0d26e148d1cef0e`
+-	Image ID: `sha256:39ad2e361949e1eaed51ac4ac5c24a446dc43b67d36a4204a32b5c974960c82a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -10787,13 +10787,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:54:59 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:55:00 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:55:01 GMT
+# Wed, 30 Dec 2020 19:59:27 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:59:28 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:55:01 GMT
+# Wed, 30 Dec 2020 19:59:29 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:55:02 GMT
+# Wed, 30 Dec 2020 19:59:29 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -10826,22 +10826,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:58:59 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99907925be53b12dba406ec9af76812d86baa2ed3e439afce01f36faf6300f8b`  
-		Last Modified: Mon, 21 Dec 2020 21:59:00 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:a6059004726e34cc86c381e9b1ee511622f4af99824b3d526c06261f711bb119`  
+		Last Modified: Wed, 30 Dec 2020 20:03:05 GMT  
+		Size: 4.7 KB (4739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-rc-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:1ac113ac6fcbe83e6c39457bdb5d239fe4552af47496faee5f59d928ef7fc6ed
+$ docker pull rabbitmq@sha256:9658afcb8db322aeb785b27cf408be8419503c3fe94b8376361ce0833a437354
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.3 MB (56275922 bytes)**  
+-	Total Size: **56.3 MB (56275979 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5f37a77dc997c7a59243b56ed289b7197b4311e337958b631bb8cb9570286714`
+-	Image ID: `sha256:c449c620c58439b938264dec2857e232d38389d126874e377b47a5d253d73007`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -10895,13 +10895,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:13:12 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:13:12 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:13:13 GMT
+# Wed, 30 Dec 2020 19:42:15 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:42:15 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:13:13 GMT
+# Wed, 30 Dec 2020 19:42:16 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:13:14 GMT
+# Wed, 30 Dec 2020 19:42:17 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -10934,22 +10934,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:17:06 GMT  
 		Size: 105.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa8c8825efa6421a8d3516242abd2f634388948d5a46519c33403dcb4666be8c`  
-		Last Modified: Mon, 21 Dec 2020 21:17:06 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:ff00cbcbd8ed34f9e8ec40d01e1b4cdd45a335a03a5d846f1ddf2de61d7239b0`  
+		Last Modified: Wed, 30 Dec 2020 19:44:31 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-rc-alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:845bc8a91e2a05049dbada14e6e6b0902006f8dfdba06894c156a6a4e201fa8f
+$ docker pull rabbitmq@sha256:39e7a9ebddec288eb5f11ca82cfc8a1e896d74a365ce25d835b1c050a445594b
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.8 MB (56800634 bytes)**  
+-	Total Size: **56.8 MB (56800691 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86d2e4afea611b10614bd3b8e68c418454d84f2d32bdcfdf57cf9e8f778f38db`
+-	Image ID: `sha256:ffc298d9749260318f466b1ab54b4f2457e73b20e3de69420ff1c7579c049ebd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -11003,13 +11003,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:56:52 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:56:52 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:56:52 GMT
+# Wed, 30 Dec 2020 19:40:09 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:40:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:56:53 GMT
+# Wed, 30 Dec 2020 19:40:10 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:56:53 GMT
+# Wed, 30 Dec 2020 19:40:10 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -11042,22 +11042,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:59:47 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c64f54063f1d04907feabc470de67eded39b0e6cab1946f05190cdbb96515e5a`  
-		Last Modified: Mon, 21 Dec 2020 21:59:47 GMT  
-		Size: 4.7 KB (4684 bytes)  
+	-	`sha256:1b8fd402b69e9ee763d0d9b791a3c2a8991d31f1dcb624b4b31ab7a625ff587a`  
+		Last Modified: Wed, 30 Dec 2020 19:41:46 GMT  
+		Size: 4.7 KB (4741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-rc-alpine` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:c93457719e1436c2e93efa4e8467b1ea1b1f962a2e215805b5b352eef5d69d6f
+$ docker pull rabbitmq@sha256:3bfd7c09c6cb08990271cb72dd13e911a9d8ba6c132ee2d2bcfcd0e0dceb297f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **57.2 MB (57182043 bytes)**  
+-	Total Size: **57.2 MB (57182100 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ba1038ae36ba34246de5c800bb09bcedfa5098f7143a8775f581dfc208a9fd2`
+-	Image ID: `sha256:a05e2b28fd790097fa23c7426906d997378763012cf0cf435cf843c41a14d53a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -11111,13 +11111,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 22:47:20 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 22:47:22 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 22:47:26 GMT
+# Wed, 30 Dec 2020 19:21:32 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:21:40 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 22:47:34 GMT
+# Wed, 30 Dec 2020 19:21:45 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 22:47:39 GMT
+# Wed, 30 Dec 2020 19:21:51 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -11150,22 +11150,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 22:54:48 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79dc0fbec9f6ec0989b2c7b029e8ef91e4900505b4ea0e831ee5bf90a4ed34e6`  
-		Last Modified: Mon, 21 Dec 2020 22:54:48 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:974c3de5bc9649c26e687cb36196472c3325158aef28bdaa7ef2cc162c561478`  
+		Last Modified: Wed, 30 Dec 2020 19:26:15 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-rc-alpine` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:b3223056befc1570d94f0a4fb289713c9db5a87d6c971a90c471dcddb9ded0d0
+$ docker pull rabbitmq@sha256:ec6b77f1c0535e3c0eb5b7a24f9ba8f1cf0e76ac6efab3f3fbdaf567cf34b0e3
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.6 MB (55575936 bytes)**  
+-	Total Size: **55.6 MB (55575997 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7809ac24abe0938f5030c6af9a0f3539792310598251eba0691f100569a2d0c9`
+-	Image ID: `sha256:5c3366355e2f2c63c5ef9b4b96b87f461c0b61bd21e045e5586f15b287008315`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -11219,13 +11219,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:09:35 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:09:36 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:09:36 GMT
+# Wed, 30 Dec 2020 19:44:53 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:44:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:09:37 GMT
+# Wed, 30 Dec 2020 19:44:54 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:09:37 GMT
+# Wed, 30 Dec 2020 19:44:54 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -11258,15 +11258,15 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:13:18 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:645a46b96c36bd1d5d73452bf2e5bcb1d25e92308a18c33d1ca229f5caa9e0a8`  
-		Last Modified: Mon, 21 Dec 2020 21:13:19 GMT  
-		Size: 4.7 KB (4686 bytes)  
+	-	`sha256:f31d2bccb24eba690c8dbf70ad7c67553ccc98d310b151ce575920cb303f4449`  
+		Last Modified: Wed, 30 Dec 2020 19:47:11 GMT  
+		Size: 4.7 KB (4747 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:3.8-rc-management`
 
 ```console
-$ docker pull rabbitmq@sha256:a2c897ae083f6c6105001d99735f3881bb3edf246aa62216df0b87fd8519a0e4
+$ docker pull rabbitmq@sha256:5a53a9e764e6a7f5812d7d51320b83ce3eab23f3b9902fb94821cc4a769c92d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11280,14 +11280,14 @@ $ docker pull rabbitmq@sha256:a2c897ae083f6c6105001d99735f3881bb3edf246aa62216df
 ### `rabbitmq:3.8-rc-management` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:f47790926513083aebd646e234c460f347401b680a369fc0b219a21f75713e8e
+$ docker pull rabbitmq@sha256:93443e54b00262fa9af2d149fc44577883371a27e76047523b5961b7bf54b385
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.5 MB (92518058 bytes)**  
+-	Total Size: **92.5 MB (92518189 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa57d1d63a0a973c196638bba9d729b53867e6b297e8afffbec82d65cc06248b`
+-	Image ID: `sha256:a56d5f0e5ad28fc2cccb8a15cbd2299401a710df0bfb9eca0e26de6bdc30b34b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -11347,21 +11347,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:11:01 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:11:01 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:11:01 GMT
+# Wed, 30 Dec 2020 19:25:10 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:25:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:11:02 GMT
+# Wed, 30 Dec 2020 19:25:10 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:11:02 GMT
+# Wed, 30 Dec 2020 19:25:11 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:11:24 GMT
+# Wed, 30 Dec 2020 19:25:17 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:11:26 GMT
+# Wed, 30 Dec 2020 19:25:18 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:11:42 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:11:42 GMT
+# Wed, 30 Dec 2020 19:25:38 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:25:39 GMT
 EXPOSE 15671 15672
 ```
 
@@ -11402,34 +11402,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:24:54 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31ff449b8ac05c6bcefc0f02372d1be22ed43e2472b289d4ed09d8304af5048e`  
-		Last Modified: Mon, 21 Dec 2020 21:24:52 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:6e5593aa4d041605ae0212b59ef0c3908fff2fa10576f17348872c7cf2a40731`  
+		Last Modified: Wed, 30 Dec 2020 19:27:04 GMT  
+		Size: 4.7 KB (4737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0063f242f83b33b46a5351cd6a6c6a0e3aa5dd2542fa454e8ada1ed33d9f8bd`  
-		Last Modified: Mon, 21 Dec 2020 21:25:13 GMT  
-		Size: 203.0 B  
+	-	`sha256:bece79381126f851177aa76d18ffea9efb72d6babfa44b23d2c62d0dbbc86f96`  
+		Last Modified: Wed, 30 Dec 2020 19:27:09 GMT  
+		Size: 202.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ebd9ff6ef93cd9cd26b8a530a9968cc5770f8f7dadce188995fa8016d900c6be`  
-		Last Modified: Mon, 21 Dec 2020 21:25:13 GMT  
+	-	`sha256:28af2758107f199f7fbae99d96a148a90b74180d259eff1b5d4e8dd7bdf97a01`  
+		Last Modified: Wed, 30 Dec 2020 19:27:09 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec1536f8b07558c03ac75fdbd9f235c249d8790c8dab945e6860d5144815d12e`  
-		Last Modified: Mon, 21 Dec 2020 21:25:16 GMT  
-		Size: 10.8 MB (10784649 bytes)  
+	-	`sha256:a763cf8504b373510aa3bb6ebc8adb48b6a7abd4e82ab14143ae3aa7a376687e`  
+		Last Modified: Wed, 30 Dec 2020 19:27:11 GMT  
+		Size: 10.8 MB (10784729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-rc-management` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:cea33a3a6ed62869aef6fa01bf691936435fcb0f0852585159d5a7539e9da57e
+$ docker pull rabbitmq@sha256:3393394a11ce11e5328b9c173d0166373887050e309210574e617a583992f2c7
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.6 MB (84567663 bytes)**  
+-	Total Size: **84.6 MB (84567626 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b292c9f8e992f83cd84eedeec68063a1d76773dac3ce2e06aa860045d9f3d974`
+-	Image ID: `sha256:418a9a4fca68b76a71a9a635f16bdebbbeaa5e8b8005cfe57afefabce002112b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -11489,21 +11489,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:49:35 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:49:36 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:49:37 GMT
+# Wed, 30 Dec 2020 19:58:48 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:58:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:49:37 GMT
+# Wed, 30 Dec 2020 19:58:50 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:49:38 GMT
+# Wed, 30 Dec 2020 19:58:50 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:50:00 GMT
+# Wed, 30 Dec 2020 19:59:00 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:50:02 GMT
+# Wed, 30 Dec 2020 19:59:02 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:50:23 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:50:25 GMT
+# Wed, 30 Dec 2020 19:59:21 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:59:22 GMT
 EXPOSE 15671 15672
 ```
 
@@ -11544,34 +11544,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:58:26 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3df8c76ab3d42ffccdbcf5969727f268054360726abaf18365645497b203dd5`  
-		Last Modified: Mon, 21 Dec 2020 21:58:27 GMT  
-		Size: 4.7 KB (4689 bytes)  
+	-	`sha256:9bd8d3dff20f30856488aee35dd4c026ec4a07e837ec1c76dae44f4bbcd5b111`  
+		Last Modified: Wed, 30 Dec 2020 20:02:45 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b224441670acc794bce58f84ec338409f7f1be9da6af3391f908712c578d0140`  
-		Last Modified: Mon, 21 Dec 2020 21:58:47 GMT  
-		Size: 201.0 B  
+	-	`sha256:c0e37c2edcf8dadd4cb28ad7f29a7544488f0fa463da5f6266c834bba29173de`  
+		Last Modified: Wed, 30 Dec 2020 20:02:53 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff2b773037e4759cca19b285f488d94783634f80b9cfa4fa64b2452461f6f601`  
-		Last Modified: Mon, 21 Dec 2020 21:58:47 GMT  
-		Size: 216.0 B  
+	-	`sha256:2eb7e3a922c71c65704302c12a6a7e800fae2514f66bcf352226db80bc0137f7`  
+		Last Modified: Wed, 30 Dec 2020 20:02:55 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50129e30d102b0f3e089acfc628916a20b2b8cece254c5f814b1420c27ba3ca3`  
-		Last Modified: Mon, 21 Dec 2020 21:58:51 GMT  
-		Size: 9.7 MB (9748906 bytes)  
+	-	`sha256:8df4a2e026f3f6c041d38ab9e2a32140d23cfacf9fe09487d32f8749e56f2333`  
+		Last Modified: Wed, 30 Dec 2020 20:02:56 GMT  
+		Size: 9.7 MB (9748822 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-rc-management` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:177909801611a11f3e4bcfe61d2fd43204b02c9ace1e68bf1785f5bb8892211e
+$ docker pull rabbitmq@sha256:6f66abcb3db4c3ada328fa76acdbcd39951b119198b89308399359a25fc7218f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.2 MB (87199541 bytes)**  
+-	Total Size: **87.2 MB (87199660 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ebbab271cf54d4af2f02b27300746ee561007d2c055c31479983f3bb745b0cb4`
+-	Image ID: `sha256:a4dc7ece948ac02d9d357605ad818149632918e10902fa5b1b88cd8593bb367c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -11631,21 +11631,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:07:45 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:07:47 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:07:48 GMT
+# Wed, 30 Dec 2020 19:41:35 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:41:36 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:07:50 GMT
+# Wed, 30 Dec 2020 19:41:37 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:07:52 GMT
+# Wed, 30 Dec 2020 19:41:37 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:08:12 GMT
+# Wed, 30 Dec 2020 19:41:46 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:08:14 GMT
+# Wed, 30 Dec 2020 19:41:48 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:08:33 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:08:34 GMT
+# Wed, 30 Dec 2020 19:42:06 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:42:08 GMT
 EXPOSE 15671 15672
 ```
 
@@ -11686,34 +11686,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:16:38 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11c8878404e7e30a45424503cc313ab65a8dbf290d9f33c5cba043dea7c358e6`  
-		Last Modified: Mon, 21 Dec 2020 21:16:38 GMT  
-		Size: 4.7 KB (4686 bytes)  
+	-	`sha256:1bfcd78e2cff9c4ed12cb5840ab53d16292d5272329014b4eef4741e6f0eff8d`  
+		Last Modified: Wed, 30 Dec 2020 19:44:15 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe1cbcf32aac3f354d9e8d196a001bdd6e1d6ee3c9e9f4c393bc00c9e3d72f3a`  
-		Last Modified: Mon, 21 Dec 2020 21:16:56 GMT  
-		Size: 203.0 B  
+	-	`sha256:a8773f7408539a4c8a4234f1a6028ae9cc69d1d1f1ebecda9c913c5eb32cffd3`  
+		Last Modified: Wed, 30 Dec 2020 19:44:22 GMT  
+		Size: 206.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce9023f8f27a96b074a0fdf1d64cf79cce9e1095851d71180fdff77b19545818`  
-		Last Modified: Mon, 21 Dec 2020 21:16:57 GMT  
-		Size: 216.0 B  
+	-	`sha256:34036ae14da8d0559bdad32c445b27c9b058020bf364239151090f5a49b225ea`  
+		Last Modified: Wed, 30 Dec 2020 19:44:22 GMT  
+		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:369b165b5a3839f7486a9fc2f1d4141b9d267848ceb33addc08bbeb2ef64a983`  
-		Last Modified: Mon, 21 Dec 2020 21:16:58 GMT  
-		Size: 10.2 MB (10152378 bytes)  
+	-	`sha256:4628d6ff45247528830d4c72cf59d8e1d7029998e801672d4053621dabbbe8f2`  
+		Last Modified: Wed, 30 Dec 2020 19:44:24 GMT  
+		Size: 10.2 MB (10152439 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-rc-management` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:66a0cb1375982fc8f09f9c2012cf7c2e2e3da161e48b11d03af6b9b53a7bd8ef
+$ docker pull rabbitmq@sha256:86ea4af523153cb13661f73efc4d7ab0920a9fe707e71dfaa94b84f6663dabaf
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **91.9 MB (91940932 bytes)**  
+-	Total Size: **91.9 MB (91941142 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:07091826e919179c3ff65853f6bc725cf0244bc80ef2de79ec49dde50f27c386`
+-	Image ID: `sha256:00fb875c975c768412f2d894cc2df07cf2fe545020fdd70803d4bb1f28dc1dea`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -11773,21 +11773,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:47:22 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:47:22 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:47:22 GMT
+# Wed, 30 Dec 2020 19:39:35 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:39:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:47:22 GMT
+# Wed, 30 Dec 2020 19:39:36 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:47:23 GMT
+# Wed, 30 Dec 2020 19:39:36 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:47:34 GMT
+# Wed, 30 Dec 2020 19:39:42 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:47:35 GMT
+# Wed, 30 Dec 2020 19:39:43 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:47:49 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:47:49 GMT
+# Wed, 30 Dec 2020 19:40:02 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:40:02 GMT
 EXPOSE 15671 15672
 ```
 
@@ -11828,34 +11828,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:59:11 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5fb5c9fad3e1717416c8fdc776d8b2591fc89a388cab580896dd9c10cd7e16a`  
-		Last Modified: Mon, 21 Dec 2020 21:59:12 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:00c36867132ade89e84af583bbbccfd07fe00524ece1a20224afe2149e2d45f1`  
+		Last Modified: Wed, 30 Dec 2020 19:41:33 GMT  
+		Size: 4.7 KB (4737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:162eb9641ca8ef8dea874799ca37d2b4be8b32b22a089d3aade7b04f7668b1f0`  
-		Last Modified: Mon, 21 Dec 2020 21:59:38 GMT  
-		Size: 201.0 B  
+	-	`sha256:7097206bb4bd2efbb8296a10b082e667ea72c996012f2b29f4f67fedc53dcb6c`  
+		Last Modified: Wed, 30 Dec 2020 19:41:38 GMT  
+		Size: 202.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8425829f152e037d22f6c3aa9d68ada9ff2708b71f6c45f654aa4466c330ef8b`  
-		Last Modified: Mon, 21 Dec 2020 21:59:38 GMT  
-		Size: 214.0 B  
+	-	`sha256:d801c0c358fee5322e34df5428d06e02a5bbb62e4935707fa0952c9fa145a4eb`  
+		Last Modified: Wed, 30 Dec 2020 19:41:38 GMT  
+		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20bc8f620b8ca96e2eb69ca9b0a58b7820948df5cb57d6c5547748db641a4fd5`  
-		Last Modified: Mon, 21 Dec 2020 21:59:42 GMT  
-		Size: 10.9 MB (10854153 bytes)  
+	-	`sha256:197496a41924f5f65035fdeafea27ebd4f55e0d10d3361b3fef18304e33d8e1d`  
+		Last Modified: Wed, 30 Dec 2020 19:41:41 GMT  
+		Size: 10.9 MB (10854309 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-rc-management` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:592e28e268c6da03ddb7e39d1d58a1dd7190822472956f3cde3bbb37e7b46745
+$ docker pull rabbitmq@sha256:bfe94e09cbc07864089de4f39aaa25e62def5dd065e385f825fb57bf7f0b53be
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **89.5 MB (89493980 bytes)**  
+-	Total Size: **89.5 MB (89494036 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a87dc36f7071d0863e0c6a0a1835e36e8f30d86eb934f5f38f5e19a2d4eb3995`
+-	Image ID: `sha256:ab2c3ffdf8f0e1c9eed111e706902fc74e9a45cd6bea1cbaf97d4db5dc288212`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -11915,21 +11915,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:02:20 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:02:20 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:02:21 GMT
+# Wed, 30 Dec 2020 19:44:16 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:44:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:02:21 GMT
+# Wed, 30 Dec 2020 19:44:17 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:02:22 GMT
+# Wed, 30 Dec 2020 19:44:17 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:02:47 GMT
+# Wed, 30 Dec 2020 19:44:26 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:02:48 GMT
+# Wed, 30 Dec 2020 19:44:27 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:03:08 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:03:11 GMT
+# Wed, 30 Dec 2020 19:44:43 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:44:45 GMT
 EXPOSE 15671 15672
 ```
 
@@ -11970,27 +11970,27 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:12:54 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f91234d41b46b603cf8cee5ceed9f2e0979268acce6e1d6f8df1a1fe7f67c6dc`  
-		Last Modified: Mon, 21 Dec 2020 21:12:54 GMT  
-		Size: 4.7 KB (4688 bytes)  
+	-	`sha256:c773ba36152868736be79685d87868b943610a222d7fa09911ef8b3bc32c0fb6`  
+		Last Modified: Wed, 30 Dec 2020 19:46:55 GMT  
+		Size: 4.7 KB (4739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:290cd5c7b7ca5f014247094e652b08c74bdb88a27393bde6de695753e7fb0fa7`  
-		Last Modified: Mon, 21 Dec 2020 21:13:08 GMT  
-		Size: 205.0 B  
+	-	`sha256:227ae0ceee0c6e8ffc24159a5d0eb300f8b541f51bf4624bdbf02a3bd411cb73`  
+		Last Modified: Wed, 30 Dec 2020 19:47:01 GMT  
+		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8237cb0473254054383538ea23540fb07b766aea0e7b8637278531047b35288`  
-		Last Modified: Mon, 21 Dec 2020 21:13:08 GMT  
+	-	`sha256:64e5baedfebb9a05befc946d55e493544479621c00a8fb8f55b7ad590b1ec67d`  
+		Last Modified: Wed, 30 Dec 2020 19:47:01 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a465f372efd6e4348dbe197fca4f89a36b64c8a405e2c492c0b10a50d75891e`  
-		Last Modified: Mon, 21 Dec 2020 21:13:10 GMT  
-		Size: 10.4 MB (10408068 bytes)  
+	-	`sha256:f86f99a7d5a8f6e8d91a6f0d919740badb0a6e9e3d0344210f2b95a6fde940bd`  
+		Last Modified: Wed, 30 Dec 2020 19:47:03 GMT  
+		Size: 10.4 MB (10408074 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:3.8-rc-management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:8b16b2472f359ba73ce10de7d23c955e28906a27ee0f19c41df55ef9c80bbf1e
+$ docker pull rabbitmq@sha256:34ba048e4a16a810574addbd03904255e00d59f8e9e5488ee114842d901bf3c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12006,14 +12006,14 @@ $ docker pull rabbitmq@sha256:8b16b2472f359ba73ce10de7d23c955e28906a27ee0f19c41d
 ### `rabbitmq:3.8-rc-management-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:cb6a87764aa03e355f4d1aff5d3d95b3f8082d1825f2c77b4bfee34ee75e695f
+$ docker pull rabbitmq@sha256:1be799991fcd9cbbc1fadbe65868096529626327a2e19daad4325de8b8a890be
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.7 MB (70690326 bytes)**  
+-	Total Size: **70.7 MB (70690414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50858d92b22c89b3d038f84a5611e7c5851d44049828b5e807a7c6c0b3feca87`
+-	Image ID: `sha256:dc31e53c68a2ef6ba66e9937bf5f6740a0740c09a1234dfbae47f11794f95087`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -12067,21 +12067,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:21:39 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:21:39 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:21:39 GMT
+# Wed, 30 Dec 2020 19:25:44 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:25:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:21:39 GMT
+# Wed, 30 Dec 2020 19:25:45 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:21:39 GMT
+# Wed, 30 Dec 2020 19:25:45 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:21:59 GMT
+# Wed, 30 Dec 2020 19:25:51 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:22:00 GMT
+# Wed, 30 Dec 2020 19:25:52 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:22:04 GMT
+# Wed, 30 Dec 2020 19:25:56 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:22:05 GMT
+# Wed, 30 Dec 2020 19:25:56 GMT
 EXPOSE 15671 15672
 ```
 
@@ -12114,34 +12114,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:25:21 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f31487551a0ff949bbc70ba9ac8ec9875d542e1af926367dbac6937dfe80526d`  
-		Last Modified: Mon, 21 Dec 2020 21:25:22 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:b9a74cccb94b3bc235a2cf5f9c94b21c8c96762489315367d32d70091c68f39c`  
+		Last Modified: Wed, 30 Dec 2020 19:27:16 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60e0554cb37e82e1831e79fd586e4ad7b4d00f95d4e5eada241da22803daa8c6`  
-		Last Modified: Mon, 21 Dec 2020 21:25:34 GMT  
-		Size: 203.0 B  
+	-	`sha256:b43806e8c4e3e5bbf50b35747ff4ef55d261bb8ea46e3b7123d60bdd3e5b05cd`  
+		Last Modified: Wed, 30 Dec 2020 19:27:20 GMT  
+		Size: 206.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e886d70d13c7174e24afd6adefc254fe72a476481dd674c352bcd9429085c68c`  
-		Last Modified: Mon, 21 Dec 2020 21:25:34 GMT  
-		Size: 214.0 B  
+	-	`sha256:b9d325256dafeb702bd323686ba07314281dcb96cea16e681d65ad53fd39d316`  
+		Last Modified: Wed, 30 Dec 2020 19:27:21 GMT  
+		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6379e5429f9b473088890140a2ba2d87e846e88c13d7e7102af520de07f55d17`  
-		Last Modified: Mon, 21 Dec 2020 21:25:37 GMT  
-		Size: 13.9 MB (13913989 bytes)  
+	-	`sha256:11128b22b7616e943a9d9fee6fc010ea4bca093f28fd6e09966b075995a59bbb`  
+		Last Modified: Wed, 30 Dec 2020 19:27:23 GMT  
+		Size: 13.9 MB (13914015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-rc-management-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:caf2712cf5b83f03fd3897fbe38495df241a5ec8b2860760c2c6cb028700cf75
+$ docker pull rabbitmq@sha256:367c3a3111e247fc622333146752a6f58fe37413b6aa85eff9bf0cf7c19c59c9
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.3 MB (69317797 bytes)**  
+-	Total Size: **69.3 MB (69317865 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:07d521cec0f4d04674002f040e928785ad3d1ff628f4b29a992aace4b4068b5e`
+-	Image ID: `sha256:106d5bc79070fc582bb4b7d51782499c7e3223b3714884cb7922d20b57479544`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -12195,21 +12195,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 20:25:31 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 20:25:32 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 20:25:34 GMT
+# Wed, 30 Dec 2020 19:52:26 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:52:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 20:25:36 GMT
+# Wed, 30 Dec 2020 19:52:27 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 20:25:37 GMT
+# Wed, 30 Dec 2020 19:52:28 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 20:26:12 GMT
+# Wed, 30 Dec 2020 19:52:44 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 20:26:16 GMT
+# Wed, 30 Dec 2020 19:52:46 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 20:26:26 GMT
+# Wed, 30 Dec 2020 19:52:56 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 20:26:28 GMT
+# Wed, 30 Dec 2020 19:52:58 GMT
 EXPOSE 15671 15672
 ```
 
@@ -12242,34 +12242,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 20:28:55 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97647e3b4d0f1aaac6aa37661f4bc5cd6c8045b379a5f973657d755f5cef9d54`  
-		Last Modified: Mon, 21 Dec 2020 20:28:55 GMT  
-		Size: 4.7 KB (4687 bytes)  
+	-	`sha256:6abf880b7fe767efa9283e7c8ab23d554639733fdd814bdb43808d535435098c`  
+		Last Modified: Wed, 30 Dec 2020 19:53:56 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5e90978d26500215319c7fe004aeed2ec472efbd68d602cd714420275b33203`  
-		Last Modified: Mon, 21 Dec 2020 20:29:14 GMT  
-		Size: 209.0 B  
+	-	`sha256:02d53b7aaea7c21c466b749e27d91b7e484dc6e9026cb378a65ae65d0b9a04d8`  
+		Last Modified: Wed, 30 Dec 2020 19:54:04 GMT  
+		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d64b7c5af04cbd716cd74ef6c4ce956393cdac79c12d04520127042daf79e678`  
-		Last Modified: Mon, 21 Dec 2020 20:29:14 GMT  
+	-	`sha256:7ad7a1bed75271a295e9ab2033d8cb7e47471e0e9ca688f7b537cbd4ccefc994`  
+		Last Modified: Wed, 30 Dec 2020 19:54:04 GMT  
 		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:743f2824695f0091207ca53c67a6e62b904dc9d0420a11a7d57b5d32ae02f9d0`  
-		Last Modified: Mon, 21 Dec 2020 20:29:19 GMT  
-		Size: 13.8 MB (13806042 bytes)  
+	-	`sha256:351ffe9e786bb53ed2355aa71c392c8d5ae0c241e80fee9f71368d7ca4998e9b`  
+		Last Modified: Wed, 30 Dec 2020 19:54:09 GMT  
+		Size: 13.8 MB (13806060 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-rc-management-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:2b3c207b0698fe52b4e4a955a4d06f9e5de2bfa19bc16bfb637f16f9b3c75f13
+$ docker pull rabbitmq@sha256:74fc03e481668c36f6a17a8fa5f2fa85a5160db5a6e34501860547635ccedb89
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.3 MB (68271601 bytes)**  
+-	Total Size: **68.3 MB (68271691 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:064684f619654ad10b4830696b4affe6bb5085f9734d0b46956863ae0bb3e37b`
+-	Image ID: `sha256:baeded1adef5a0691f9e2b0ccd116416f76c106acb0f4a9f0d14cf5f919d978e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -12323,21 +12323,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:54:59 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:55:00 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:55:01 GMT
+# Wed, 30 Dec 2020 19:59:27 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:59:28 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:55:01 GMT
+# Wed, 30 Dec 2020 19:59:29 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:55:02 GMT
+# Wed, 30 Dec 2020 19:59:29 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:55:12 GMT
+# Wed, 30 Dec 2020 19:59:38 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:55:14 GMT
+# Wed, 30 Dec 2020 19:59:40 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:55:21 GMT
+# Wed, 30 Dec 2020 19:59:56 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:55:22 GMT
+# Wed, 30 Dec 2020 19:59:58 GMT
 EXPOSE 15671 15672
 ```
 
@@ -12370,34 +12370,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:58:59 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99907925be53b12dba406ec9af76812d86baa2ed3e439afce01f36faf6300f8b`  
-		Last Modified: Mon, 21 Dec 2020 21:59:00 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:a6059004726e34cc86c381e9b1ee511622f4af99824b3d526c06261f711bb119`  
+		Last Modified: Wed, 30 Dec 2020 20:03:05 GMT  
+		Size: 4.7 KB (4739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2764a96fc0ee0c2f26ae81a5f401f64fc7b8df7c6a3fafc620616805cf09d02`  
-		Last Modified: Mon, 21 Dec 2020 21:59:21 GMT  
-		Size: 206.0 B  
+	-	`sha256:4e7f7cfc67af2570d08526e5803b88de96b396f43c9921aca65c2f65006541d7`  
+		Last Modified: Wed, 30 Dec 2020 20:03:12 GMT  
+		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:116276374e3a18e357a946ce0d8cfeef53a3eb5b024292acf3044a376e1e898f`  
-		Last Modified: Mon, 21 Dec 2020 21:59:20 GMT  
+	-	`sha256:aa7658c26a7a3b476c8cdb9d3f482e978ebcfefdb7aaa429b29c7f1fd310fa0e`  
+		Last Modified: Wed, 30 Dec 2020 20:03:12 GMT  
 		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bafc30868446100b78336a9e63671593e6f57b83057a365488061d9685a37de9`  
-		Last Modified: Mon, 21 Dec 2020 21:59:25 GMT  
-		Size: 13.5 MB (13451764 bytes)  
+	-	`sha256:adef25871b402f90c6ce729e7b2d9bfb733d001692426889d7794353526252e6`  
+		Last Modified: Wed, 30 Dec 2020 20:03:18 GMT  
+		Size: 13.5 MB (13451800 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-rc-management-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:e44882a3c5de605ec9e183b3d677dc3555c0af37d40280b6280db1dc01c90eb3
+$ docker pull rabbitmq@sha256:3a475092bea7834822c152caa98a6ce48e892abdd455521a7322833fc4946da4
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.3 MB (70310483 bytes)**  
+-	Total Size: **70.3 MB (70310568 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b604916139ac5c69e0694f4e426710726b6b27d3ac4ed8a867e5f85e5a5982c`
+-	Image ID: `sha256:0d9cc43a448a28500772d146c56ccf3238d6516cc81cf43ba5b218603af5746f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -12451,21 +12451,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:13:12 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:13:12 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:13:13 GMT
+# Wed, 30 Dec 2020 19:42:15 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:42:15 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:13:13 GMT
+# Wed, 30 Dec 2020 19:42:16 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:13:14 GMT
+# Wed, 30 Dec 2020 19:42:17 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:13:35 GMT
+# Wed, 30 Dec 2020 19:42:26 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:13:37 GMT
+# Wed, 30 Dec 2020 19:42:28 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:13:43 GMT
+# Wed, 30 Dec 2020 19:42:35 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:13:45 GMT
+# Wed, 30 Dec 2020 19:42:36 GMT
 EXPOSE 15671 15672
 ```
 
@@ -12498,34 +12498,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:17:06 GMT  
 		Size: 105.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa8c8825efa6421a8d3516242abd2f634388948d5a46519c33403dcb4666be8c`  
-		Last Modified: Mon, 21 Dec 2020 21:17:06 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:ff00cbcbd8ed34f9e8ec40d01e1b4cdd45a335a03a5d846f1ddf2de61d7239b0`  
+		Last Modified: Wed, 30 Dec 2020 19:44:31 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8d80fe574bb49e2e4df7eb57eab8750a36fa3dc597d7eccfb309196d576e826`  
-		Last Modified: Mon, 21 Dec 2020 21:17:24 GMT  
-		Size: 204.0 B  
+	-	`sha256:6640cba55f7cb621eb31052b36c2ef40cdbdf0c65fafa9d4788cf433a866df3e`  
+		Last Modified: Wed, 30 Dec 2020 19:44:39 GMT  
+		Size: 205.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d04d490c472c2e8d67814a2247788ef0e5c7bb904e43e52b6347bb47388b1cd`  
-		Last Modified: Mon, 21 Dec 2020 21:17:23 GMT  
-		Size: 216.0 B  
+	-	`sha256:65620c258eab2b24e8fa6efa67b007784224243a3af9da5360b0b3dd314d2b8a`  
+		Last Modified: Wed, 30 Dec 2020 19:44:38 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e15b6738d90a4bc0f90ee68f8865af65da7ad5c2ec9dd04c3949d242c0303e8`  
-		Last Modified: Mon, 21 Dec 2020 21:17:27 GMT  
-		Size: 14.0 MB (14034141 bytes)  
+	-	`sha256:9fafafeaf1fbff2f61de6da420e43d4297ab03dd3b366db58de6454a03b95a5f`  
+		Last Modified: Wed, 30 Dec 2020 19:44:42 GMT  
+		Size: 14.0 MB (14034173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-rc-management-alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:ef82aa455e230aa3b6fc6be1d496dcec89bb1762fefc7f0d10a04e2c28c3ef0b
+$ docker pull rabbitmq@sha256:a8413e24c992c300679ac78e51f0d6d7db05782ba0677dda25fb18a2493f831a
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.8 MB (70834317 bytes)**  
+-	Total Size: **70.8 MB (70834448 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3bdf69951beb254f0de3961764284f9ee7a7ac6fa1692cd28323a24136e338e`
+-	Image ID: `sha256:83740ece3ae088b864a025a11ff6e584caa9498571de97fe13e6896c1cd3c5d0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -12579,21 +12579,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:56:52 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:56:52 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:56:52 GMT
+# Wed, 30 Dec 2020 19:40:09 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:40:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:56:53 GMT
+# Wed, 30 Dec 2020 19:40:10 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:56:53 GMT
+# Wed, 30 Dec 2020 19:40:10 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:57:07 GMT
+# Wed, 30 Dec 2020 19:40:17 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:57:08 GMT
+# Wed, 30 Dec 2020 19:40:17 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:57:14 GMT
+# Wed, 30 Dec 2020 19:40:22 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:57:14 GMT
+# Wed, 30 Dec 2020 19:40:22 GMT
 EXPOSE 15671 15672
 ```
 
@@ -12626,34 +12626,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:59:47 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c64f54063f1d04907feabc470de67eded39b0e6cab1946f05190cdbb96515e5a`  
-		Last Modified: Mon, 21 Dec 2020 21:59:47 GMT  
-		Size: 4.7 KB (4684 bytes)  
+	-	`sha256:1b8fd402b69e9ee763d0d9b791a3c2a8991d31f1dcb624b4b31ab7a625ff587a`  
+		Last Modified: Wed, 30 Dec 2020 19:41:46 GMT  
+		Size: 4.7 KB (4741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e07bbbfef756f44e59579f36d03921354b638468b2c18e3a619486dc17b8bef`  
-		Last Modified: Mon, 21 Dec 2020 22:00:05 GMT  
-		Size: 204.0 B  
+	-	`sha256:a9a12098605c18fee28f1444b31abca7bde72abbc687d365e8db7a582c82b932`  
+		Last Modified: Wed, 30 Dec 2020 19:41:52 GMT  
+		Size: 203.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb001c1530bb994d7e5876a6267f81ac0c73148c3c2b3b28126beea400c99ad4`  
-		Last Modified: Mon, 21 Dec 2020 22:00:04 GMT  
-		Size: 211.0 B  
+	-	`sha256:e9e55b9e6602dd900cdec9667f24f34f7967fb814032a4bccae485a9ebb6e907`  
+		Last Modified: Wed, 30 Dec 2020 19:41:51 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41938eadbc12cd6181bd9814a90985d380e42eb48ae6e27d9638acb5be83dcb1`  
-		Last Modified: Mon, 21 Dec 2020 22:00:08 GMT  
-		Size: 14.0 MB (14033268 bytes)  
+	-	`sha256:a7f6716d6b34997baa7c4d32edcff82d2043eaaab26e49222f756b6e32957128`  
+		Last Modified: Wed, 30 Dec 2020 19:41:55 GMT  
+		Size: 14.0 MB (14033341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-rc-management-alpine` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:5ea1ab67fb2c0cf334f1ab6a5602ccb90e9a41c8a12ef9f3cbe958a821847a8c
+$ docker pull rabbitmq@sha256:4affd5668a636a13da23076dae38d0d554372771e62da04c443491e0cf72c77b
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.5 MB (71546039 bytes)**  
+-	Total Size: **71.5 MB (71546136 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4bddbed7cfb1253d94ea2a52b40a79f2a767135066fbb0be0170785023758dae`
+-	Image ID: `sha256:0496133476a8a83f5d9d184341dab963483a4357e862244509fc1dd30194043b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -12707,21 +12707,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 22:47:20 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 22:47:22 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 22:47:26 GMT
+# Wed, 30 Dec 2020 19:21:32 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:21:40 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 22:47:34 GMT
+# Wed, 30 Dec 2020 19:21:45 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 22:47:39 GMT
+# Wed, 30 Dec 2020 19:21:51 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 22:48:17 GMT
+# Wed, 30 Dec 2020 19:22:12 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 22:48:36 GMT
+# Wed, 30 Dec 2020 19:22:23 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 22:49:03 GMT
+# Wed, 30 Dec 2020 19:22:40 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 22:49:08 GMT
+# Wed, 30 Dec 2020 19:22:47 GMT
 EXPOSE 15671 15672
 ```
 
@@ -12754,34 +12754,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 22:54:48 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79dc0fbec9f6ec0989b2c7b029e8ef91e4900505b4ea0e831ee5bf90a4ed34e6`  
-		Last Modified: Mon, 21 Dec 2020 22:54:48 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:974c3de5bc9649c26e687cb36196472c3325158aef28bdaa7ef2cc162c561478`  
+		Last Modified: Wed, 30 Dec 2020 19:26:15 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c6090b7b9325327fd14879712d2abaa6cd2119253ae898e5b6df37d1642229ed`  
-		Last Modified: Mon, 21 Dec 2020 22:55:11 GMT  
-		Size: 208.0 B  
+	-	`sha256:95d38693e276baf1876216c1981ebf90a3d9bee2494007668f5dd12ad75cb157`  
+		Last Modified: Wed, 30 Dec 2020 19:26:28 GMT  
+		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d08ace8af0442c054d02bc8615719269b68ff9ae8d6a42c3b1418003201fae6c`  
-		Last Modified: Mon, 21 Dec 2020 22:55:11 GMT  
-		Size: 218.0 B  
+	-	`sha256:a00ea8edca1cf82384a004365403659f9ec70eed75161e3bbb8a9d6fb3c89bc1`  
+		Last Modified: Wed, 30 Dec 2020 19:26:27 GMT  
+		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb8a02699a8ba9d0820fed0005a1707e58e22025f28b070fedffec3e05da3d59`  
-		Last Modified: Mon, 21 Dec 2020 22:55:14 GMT  
-		Size: 14.4 MB (14363570 bytes)  
+	-	`sha256:d8992a7f1072be71bcb882d74e8cbf953c2057259933de4a416d353466eeca9d`  
+		Last Modified: Wed, 30 Dec 2020 19:26:31 GMT  
+		Size: 14.4 MB (14363615 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3.8-rc-management-alpine` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:0a01c61d245d1dd9c323dabdf68e39acc41be931887c9b86ef4e0888bd9da7c0
+$ docker pull rabbitmq@sha256:cc90bf602306680c0f430bff3bb0222fa89c09930d2677692143f732eacf35e9
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.5 MB (69531892 bytes)**  
+-	Total Size: **69.5 MB (69531982 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4943f786d7e31df2e3415f7ffdb377eee0e1f1b2122780e07ce53fdea8a0d476`
+-	Image ID: `sha256:faaed9605ca95825ba0870d2cdf6534ab2a5b780ae1ed02645e5843e30c39211`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -12835,21 +12835,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:09:35 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:09:36 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:09:36 GMT
+# Wed, 30 Dec 2020 19:44:53 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:44:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:09:37 GMT
+# Wed, 30 Dec 2020 19:44:54 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:09:37 GMT
+# Wed, 30 Dec 2020 19:44:54 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:09:48 GMT
+# Wed, 30 Dec 2020 19:45:05 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:09:49 GMT
+# Wed, 30 Dec 2020 19:45:06 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:09:56 GMT
+# Wed, 30 Dec 2020 19:45:13 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:09:58 GMT
+# Wed, 30 Dec 2020 19:45:15 GMT
 EXPOSE 15671 15672
 ```
 
@@ -12882,27 +12882,27 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:13:18 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:645a46b96c36bd1d5d73452bf2e5bcb1d25e92308a18c33d1ca229f5caa9e0a8`  
-		Last Modified: Mon, 21 Dec 2020 21:13:19 GMT  
-		Size: 4.7 KB (4686 bytes)  
+	-	`sha256:f31d2bccb24eba690c8dbf70ad7c67553ccc98d310b151ce575920cb303f4449`  
+		Last Modified: Wed, 30 Dec 2020 19:47:11 GMT  
+		Size: 4.7 KB (4747 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:535de268529803de7789a284da4501341e1a371e70085b8733f57c3523055fa3`  
-		Last Modified: Mon, 21 Dec 2020 21:13:33 GMT  
-		Size: 206.0 B  
+	-	`sha256:04bc5d937987d53f86e1cd9dade6e2e4fb53daff994de8365415d2828ce310bb`  
+		Last Modified: Wed, 30 Dec 2020 19:47:18 GMT  
+		Size: 205.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d14341eb9a3783eee1fb27c0f2eaa415e0f29b991ff37daa5a5c6a438df7f6e5`  
-		Last Modified: Mon, 21 Dec 2020 21:13:33 GMT  
-		Size: 216.0 B  
+	-	`sha256:5493f684be52c233c9002c15371fe2d1bed311e1f0408f70cc5a063141e29e6c`  
+		Last Modified: Wed, 30 Dec 2020 19:47:18 GMT  
+		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eac91200251192d1d9fa0fe482c36700b9637d8c8309988d496b67d1b1ec48ea`  
-		Last Modified: Mon, 21 Dec 2020 21:13:35 GMT  
-		Size: 14.0 MB (13955534 bytes)  
+	-	`sha256:e6d6502b3b64a07633b60d716d0735a305dcfd4e5478b67a2225e4d96786af96`  
+		Last Modified: Wed, 30 Dec 2020 19:47:20 GMT  
+		Size: 14.0 MB (13955565 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:3-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:cd83484c5816c89d815a8b47048f7dc0b914bac3774c7e8c1b100f08f72dca4d
+$ docker pull rabbitmq@sha256:5b9f3d10555376369526d81eb07697255383f8c84aa5f3b34164d43f9ba60d0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12918,14 +12918,14 @@ $ docker pull rabbitmq@sha256:cd83484c5816c89d815a8b47048f7dc0b914bac3774c7e8c1b
 ### `rabbitmq:3-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:c5d56767f205cbbbdc5c2678d58425abd845639e78c33847c4df475a2c3022c0
+$ docker pull rabbitmq@sha256:a34351cbfa3fecd19c8aae182eac206cfd8d7bee12deebc06156f39e93a463ea
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.3 MB (56297204 bytes)**  
+-	Total Size: **56.3 MB (56297260 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fe4caa64352dbad146bca9fbe1ff5582931ef437d334f4d57ad0033d576b11bf`
+-	Image ID: `sha256:df3814ee9284b5f63a908202f4cb0f56192ce09617f3f939e8dab3745385e58d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -12979,13 +12979,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:23:54 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:23:54 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:23:55 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:26:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:23:55 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:23:56 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -13018,22 +13018,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:26:02 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cb78fbd941cff7c68255fa8bd23f659cdb876c95f3b24a28bf80f79fadd05fe`  
-		Last Modified: Mon, 21 Dec 2020 21:26:01 GMT  
-		Size: 4.7 KB (4687 bytes)  
+	-	`sha256:f2babd5cc60632de330fc6bbc2496cb0c80dc173f0725d4acbd53461877022eb`  
+		Last Modified: Wed, 30 Dec 2020 19:27:45 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:67740efe77b24aaccd1d6d341b7316138d332edfa19609c64a07c0ba55697f89
+$ docker pull rabbitmq@sha256:ee15b8809b7204027ad36809c3897bef47f33dfe26d23ebce71295ed8103372e
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.0 MB (55032648 bytes)**  
+-	Total Size: **55.0 MB (55032708 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:507b896667358d77e4b2345c960b5f86c7c7e0a7e98ed37f5a603018797510a3`
+-	Image ID: `sha256:4656eca90bc4a977bd5950a41f43f161eaee35060a92130628629d8cb30af28a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -13087,13 +13087,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 20:27:47 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 20:27:48 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 20:27:49 GMT
+# Wed, 30 Dec 2020 19:53:05 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:53:05 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 20:27:51 GMT
+# Wed, 30 Dec 2020 19:53:06 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 20:27:52 GMT
+# Wed, 30 Dec 2020 19:53:06 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -13126,22 +13126,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 20:29:26 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ff513de4dd23048dbd5d310760f506eac90a24aded5f1df947a7792b2771552`  
-		Last Modified: Mon, 21 Dec 2020 20:29:26 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:aaa640cc54980092a29e3221dbca162a7b4d513fa3d6a6b791259d7cf27fd461`  
+		Last Modified: Wed, 30 Dec 2020 19:54:17 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:5ab85166dc222681f9c919af3e6b9c507f33730db435818c225c995d915e8601
+$ docker pull rabbitmq@sha256:d5ad66530961c11f317c6f9c9cd22b2f6af7a78a44468fbfd17f32d23ee7439d
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.3 MB (54340717 bytes)**  
+-	Total Size: **54.3 MB (54340777 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36a7667a3c4e00ae2ff67fc21b13a0ced3ef81c9c1e8ecbc61e2332bc07ab6d5`
+-	Image ID: `sha256:67f6266961618ecaf9c0b7b41631cf56dc37762c1830b5a41fda5cd3181350cf`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -13195,13 +13195,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:57:30 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:57:30 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:57:31 GMT
+# Wed, 30 Dec 2020 20:01:26 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 20:01:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:57:32 GMT
+# Wed, 30 Dec 2020 20:01:29 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:57:32 GMT
+# Wed, 30 Dec 2020 20:01:33 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -13234,22 +13234,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 22:00:07 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:405923efb87b55d63663d6717536d2e7816b929f95995f79b56644074c085374`  
-		Last Modified: Mon, 21 Dec 2020 22:00:06 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:dc26b7a85465f92a028f91eb9ac826ac88c96ad49b59bc2bd01d5affa243e5cf`  
+		Last Modified: Wed, 30 Dec 2020 20:03:57 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:7e35c715aec6498cc023c04e92aaac09eb8a390013e1a3387cd27d13dd633b16
+$ docker pull rabbitmq@sha256:639713e2e118a8b3dbb586e5fe1ee0a416f8d840701aaf2ba80cffe8dbd7ca86
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.8 MB (55797227 bytes)**  
+-	Total Size: **55.8 MB (55797287 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d94a05cb44494626f5ff5f2cd83c9b50923dba71ed1c8aeca02fda5f8aed5e97`
+-	Image ID: `sha256:53ebe820a0bba6a40cca31de829ef81364883cc6ccb4b95623449d2cbb39e11c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -13303,13 +13303,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:15:39 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:15:40 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:15:40 GMT
+# Wed, 30 Dec 2020 19:43:21 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:43:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:15:41 GMT
+# Wed, 30 Dec 2020 19:43:23 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:15:41 GMT
+# Wed, 30 Dec 2020 19:43:23 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -13342,22 +13342,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:18:01 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14875f737f50cad14c7b49b22da3175ac58e0fce241c0b46c3e31878378f276a`  
-		Last Modified: Mon, 21 Dec 2020 21:18:01 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:56528dbe21e927342285867ed6cddd3dba0640ae6c9f1a8b91883599fc5b1435`  
+		Last Modified: Wed, 30 Dec 2020 19:45:14 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3-alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:43c7162b8a57efdd3b7642c9d2f4b0ea4962b5ddd7db7953bf782c980996b350
+$ docker pull rabbitmq@sha256:ef2b0d8ec5dca75b3d2f85f0d05e7aefb918c52c223715baed7a8fc77716615a
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.3 MB (56321950 bytes)**  
+-	Total Size: **56.3 MB (56322003 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79541dbaeae05739069519348a37a269516c7ef927fafd27e1d5d19222e83e63`
+-	Image ID: `sha256:7f2909d3bc1a1bfe63daba076998bb19fecab013c6a3bcb2c653d9fd5f483d98`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -13411,13 +13411,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:58:26 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:58:26 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:58:26 GMT
+# Wed, 30 Dec 2020 19:40:51 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:40:51 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:58:27 GMT
+# Wed, 30 Dec 2020 19:40:51 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:58:27 GMT
+# Wed, 30 Dec 2020 19:40:52 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -13450,22 +13450,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 22:00:39 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f2c80698bb9d8704065a0e05336bc0fd3584f0c0905349e317a7ed62fb7c1f2`  
-		Last Modified: Mon, 21 Dec 2020 22:00:39 GMT  
-		Size: 4.7 KB (4688 bytes)  
+	-	`sha256:59f1fe9bcefab434482b7f7288565ac945fa36b959a170a2a64d199d02b94e18`  
+		Last Modified: Wed, 30 Dec 2020 19:42:21 GMT  
+		Size: 4.7 KB (4741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3-alpine` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:16ec8fcea1fdc09f19d863278ce9198f55ed8d8ab936ad4bae4d20123e08abec
+$ docker pull rabbitmq@sha256:8926e837122dbc72ce5429bf2f64376378a178700eab5d6a9e27b403ef5878ee
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.7 MB (56703341 bytes)**  
+-	Total Size: **56.7 MB (56703398 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2f2f772e60dd18f69feb9624038cd1bcd43d1655bd1775182376f03d2cebe8c3`
+-	Image ID: `sha256:6bc6983fe99db41cdcccad269a9a5df28f5aa9b579dd4f0ec7c29852ccf411db`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -13519,13 +13519,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 22:52:34 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 22:52:41 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 22:52:53 GMT
+# Wed, 30 Dec 2020 19:24:06 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:24:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 22:53:03 GMT
+# Wed, 30 Dec 2020 19:24:19 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 22:53:10 GMT
+# Wed, 30 Dec 2020 19:24:23 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -13558,22 +13558,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 22:55:25 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cee0c2d9ae9a07115a54df13110463d0aaede6a6717df6d3ff9e9dde2dac2028`  
-		Last Modified: Mon, 21 Dec 2020 22:55:25 GMT  
-		Size: 4.7 KB (4684 bytes)  
+	-	`sha256:fce3ef73d2c7a0478979a89000081b5d9d2388f512410a31e8c85a0e71d18a72`  
+		Last Modified: Wed, 30 Dec 2020 19:26:44 GMT  
+		Size: 4.7 KB (4741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3-alpine` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:556a31e8d2bd5c63ee5fc27d143a7a0ae56fb400224a5b1633925140d3e2d5e7
+$ docker pull rabbitmq@sha256:20b956ff0632aeb58f096f3835b1d33c5626e82a967762dbcec2516665687a8d
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.1 MB (55097252 bytes)**  
+-	Total Size: **55.1 MB (55097313 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2247e9239027201f6875f5243b5f91d3350c0ee0080258dd4c1ac76a0b61f71`
+-	Image ID: `sha256:78d4951ac01f7b54751ae098eb2c955cf8902399b30bd03c663c8fac8cbc1f10`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -13627,13 +13627,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:11:58 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:11:58 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:11:59 GMT
+# Wed, 30 Dec 2020 19:45:56 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:45:56 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:11:59 GMT
+# Wed, 30 Dec 2020 19:45:57 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:12:00 GMT
+# Wed, 30 Dec 2020 19:45:57 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -13666,15 +13666,15 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:14:08 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90a44cd1dca23cd43cd8ea2c86909c4de78874037c39b3cb855f1c01078093b7`  
-		Last Modified: Mon, 21 Dec 2020 21:14:08 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:33da539e6af749329c881416600f32bebec9923b6b9153586f7ec46910de8091`  
+		Last Modified: Wed, 30 Dec 2020 19:47:49 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:3-management`
 
 ```console
-$ docker pull rabbitmq@sha256:9997af5519a25951ee006a0b2bd9f91005cb7d2e31c2da2ec1bd5233d95f3024
+$ docker pull rabbitmq@sha256:d08ecb676c25baf775925b9ff3ad17cfa0565f25756fb57ba6bd9f3c36b65719
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13689,14 +13689,14 @@ $ docker pull rabbitmq@sha256:9997af5519a25951ee006a0b2bd9f91005cb7d2e31c2da2ec1
 ### `rabbitmq:3-management` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:caab9e7a0f698b63c6f799c8270fba76656cfa9c6fa31bbb983b8c2051e80e47
+$ docker pull rabbitmq@sha256:5817edaf96eb251d05ce228bd9551e68d94ca55b63837376667676b9ac1bfe10
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.0 MB (92039463 bytes)**  
+-	Total Size: **92.0 MB (92039544 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b46cdfa8ade610a2c90205dd14551174b415930dc1c839392ba1672fdb48923a`
+-	Image ID: `sha256:92c743b6c05503cf3c4fa7ce5ec1420e0ee3d541d479ea7d1d702c023201b2f1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -13756,21 +13756,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:22:48 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:22:48 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:01 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:26:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:01 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:02 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:23:03 GMT
+# Wed, 30 Dec 2020 19:26:09 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:23:05 GMT
+# Wed, 30 Dec 2020 19:26:10 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:23:23 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:23:24 GMT
+# Wed, 30 Dec 2020 19:26:20 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:26:20 GMT
 EXPOSE 15671 15672
 ```
 
@@ -13811,34 +13811,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:25:43 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a70b21779fa5bdd0bafc80d418e50c06544b535875a3cd7433d3eb88955f8abb`  
-		Last Modified: Mon, 21 Dec 2020 21:25:42 GMT  
-		Size: 4.7 KB (4684 bytes)  
+	-	`sha256:270bdce587ffce163d921bf81efd614bd2e27ce0485557dcd11d277f62662847`  
+		Last Modified: Wed, 30 Dec 2020 19:27:28 GMT  
+		Size: 4.7 KB (4737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fd0072ee2720dd8a8f450635cf420f1fea16b6d3eea1ae22a19e06b861731f9`  
-		Last Modified: Mon, 21 Dec 2020 21:25:52 GMT  
-		Size: 204.0 B  
+	-	`sha256:2fd9a3d58ba8571d65823a40df35351bd451785ca4e80bfe22491244dd3ef76b`  
+		Last Modified: Wed, 30 Dec 2020 19:27:35 GMT  
+		Size: 205.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25b26b1c16ac73259196f89afb4957fc68c57e59d2d382d9ae9b597c6680e583`  
-		Last Modified: Mon, 21 Dec 2020 21:25:52 GMT  
-		Size: 212.0 B  
+	-	`sha256:ee5169b771e7cd83e747c808766eb1f5a5e2bd6d0d0fb04b350f1e5b9ef3ec77`  
+		Last Modified: Wed, 30 Dec 2020 19:27:35 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef0315782200131d5a7f8f4c719c5e58b5465459803560567dcad8169ef82f25`  
-		Last Modified: Mon, 21 Dec 2020 21:25:54 GMT  
-		Size: 10.8 MB (10784677 bytes)  
+	-	`sha256:3aa74f31fb630fc14e43e78f73f4572c8168d4edd15b2097d257f9a38427bac1`  
+		Last Modified: Wed, 30 Dec 2020 19:27:37 GMT  
+		Size: 10.8 MB (10784703 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3-management` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:0dfa19bc0eb5901bf43d1e02f58dcb4d22a936cea23e43297ab40f3a97457f88
+$ docker pull rabbitmq@sha256:beedb56f997882827b8eb325ae0b4923f33d709012e7850cfc8712e6795ecdbe
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.1 MB (84088974 bytes)**  
+-	Total Size: **84.1 MB (84089257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfc34893d9bf316f65b33188e45b4c326581fb5de390a476d58a32848473a6e0`
+-	Image ID: `sha256:2ed684f6e04ada5aa4b49e6f4162ce082ea94ab64745a199ac07bce64b1a9dde`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -13898,21 +13898,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:56:17 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:56:18 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:56:20 GMT
+# Wed, 30 Dec 2020 20:00:06 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 20:00:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:56:21 GMT
+# Wed, 30 Dec 2020 20:00:09 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:56:22 GMT
+# Wed, 30 Dec 2020 20:00:11 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:56:39 GMT
+# Wed, 30 Dec 2020 20:00:22 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:56:41 GMT
+# Wed, 30 Dec 2020 20:00:25 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:57:01 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:57:02 GMT
+# Wed, 30 Dec 2020 20:01:04 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 20:01:14 GMT
 EXPOSE 15671 15672
 ```
 
@@ -13953,34 +13953,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:59:37 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:809bcb7f15b169320005044c3c0d6e43d0f11d4a27f9b46038d2885412263fda`  
-		Last Modified: Mon, 21 Dec 2020 21:59:37 GMT  
-		Size: 4.7 KB (4687 bytes)  
+	-	`sha256:a023e57cdec86e2827d62cc3578dd18bd2855c2796d52ef667c2042eabb72225`  
+		Last Modified: Wed, 30 Dec 2020 20:03:28 GMT  
+		Size: 4.7 KB (4739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66840693e7ddc42cce56fbdc1fdbc79ff44cccd36d4b715121e8aaf42d7a8a38`  
-		Last Modified: Mon, 21 Dec 2020 21:59:51 GMT  
-		Size: 203.0 B  
+	-	`sha256:d84169be217210ce1b41d291d935e91d841aedc985a3e94426dcd35622a44397`  
+		Last Modified: Wed, 30 Dec 2020 20:03:43 GMT  
+		Size: 201.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27b3bbdf951bb168123396f6fa40013ba8f337f86e1eed1e98a354d8ca7d22be`  
-		Last Modified: Mon, 21 Dec 2020 21:59:51 GMT  
-		Size: 215.0 B  
+	-	`sha256:a87b222157b6ad1a1801b7b458f7226dacf0c56961acedb1588d9ea4cb3ae75b`  
+		Last Modified: Wed, 30 Dec 2020 20:03:39 GMT  
+		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d00934f1fcb49b5b777ccce58b739261dcb2c9898b799375ff87e46993e2e3e1`  
-		Last Modified: Mon, 21 Dec 2020 21:59:55 GMT  
-		Size: 9.7 MB (9748939 bytes)  
+	-	`sha256:fd75f4cb5fac277911f1050502d34a2d88505916bcba0a8824e481ff11baf9d6`  
+		Last Modified: Wed, 30 Dec 2020 20:03:44 GMT  
+		Size: 9.7 MB (9749170 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3-management` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:ff933c09f74066e068918cbda25ac8246a2c30ed9fba0975aa17cdfa8ad77fc8
+$ docker pull rabbitmq@sha256:56823b3ef6c4f89ac3797ead861cf6e5e5438ede9abfebd3e4a3eb5b2da0fedd
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.7 MB (86720669 bytes)**  
+-	Total Size: **86.7 MB (86720853 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf555d36ea3ecf1b819926f424f1be5f7989323094e1c9b8bfbbfb82fb6255eb`
+-	Image ID: `sha256:c732d16e7f3f1d89dad1c2e6c6c697aac8172748e81f241e1d31e50edd569660`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -14040,21 +14040,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:14:33 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:14:33 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:14:34 GMT
+# Wed, 30 Dec 2020 19:42:42 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:42:42 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:14:35 GMT
+# Wed, 30 Dec 2020 19:42:43 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:14:35 GMT
+# Wed, 30 Dec 2020 19:42:44 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:14:52 GMT
+# Wed, 30 Dec 2020 19:42:53 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:14:54 GMT
+# Wed, 30 Dec 2020 19:42:55 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:15:12 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:15:13 GMT
+# Wed, 30 Dec 2020 19:43:13 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:43:14 GMT
 EXPOSE 15671 15672
 ```
 
@@ -14095,34 +14095,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:17:34 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a6de5385e6457d1e4321576d39b1e5130c98430f4d60b1955d7e966f850dc59`  
-		Last Modified: Mon, 21 Dec 2020 21:17:34 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:d316dc06638d1a456656255f63ea5aee11d442596b795cfaf099423f64ef8750`  
+		Last Modified: Wed, 30 Dec 2020 19:44:50 GMT  
+		Size: 4.7 KB (4736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91cfe47ed6f40dbc3275d4c6962b672144c408f0d5700125c53947c87f6de465`  
-		Last Modified: Mon, 21 Dec 2020 21:17:46 GMT  
-		Size: 204.0 B  
+	-	`sha256:8e3f7b33a12597e3388ae0837810252e465e7be64fc26b5d93ed2a70bdd3d117`  
+		Last Modified: Wed, 30 Dec 2020 19:45:00 GMT  
+		Size: 203.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:475799f54d72f1d4b6436d9bf55e744ccb19aed89bd07dfb970b9ccf58e813b1`  
-		Last Modified: Mon, 21 Dec 2020 21:17:47 GMT  
-		Size: 215.0 B  
+	-	`sha256:9a2bf3cd7876225295d396e8c018001ef0b6ac3092832564e8345b159bae305b`  
+		Last Modified: Wed, 30 Dec 2020 19:45:00 GMT  
+		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01bbbef83e3cc279efcd6e2deb339adda4a0982c5d5dd988aa6e7557b5ccac7b`  
-		Last Modified: Mon, 21 Dec 2020 21:17:50 GMT  
-		Size: 10.2 MB (10152274 bytes)  
+	-	`sha256:63fc23bcaae40f3b9cbb066b1f5fb24c7e68b629859a07e7d03cd893e6f24e11`  
+		Last Modified: Wed, 30 Dec 2020 19:45:04 GMT  
+		Size: 10.2 MB (10152407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3-management` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:60557abf16e6c3055b7b4c6a7f95ceda796718df99a8a970aafaa8d6ff86473b
+$ docker pull rabbitmq@sha256:a45b18ea569e7d1a1d2693b0f67e0f9965809a37b65b4c81d54ec040ddfb06ff
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **91.5 MB (91462251 bytes)**  
+-	Total Size: **91.5 MB (91462406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:657fd11ee5978a4d0035fa42372ce270f914a2b6207a3f0ee94b87ed91b6de66`
+-	Image ID: `sha256:f6107b22db414223bb68cc90253e0f886a811d9ebbf6e40ac1a72ecc136580ae`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -14182,21 +14182,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:57:44 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:57:44 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:57:44 GMT
+# Wed, 30 Dec 2020 19:40:27 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:40:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:57:45 GMT
+# Wed, 30 Dec 2020 19:40:28 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:57:45 GMT
+# Wed, 30 Dec 2020 19:40:28 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:57:55 GMT
+# Wed, 30 Dec 2020 19:40:34 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:57:56 GMT
+# Wed, 30 Dec 2020 19:40:35 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:58:08 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:58:08 GMT
+# Wed, 30 Dec 2020 19:40:46 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:40:46 GMT
 EXPOSE 15671 15672
 ```
 
@@ -14237,21 +14237,21 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 22:00:14 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85a2d0ab60e03adf7f47b2f62aa5d20442a78f6aefbdf3018fc7e1e12f489175`  
-		Last Modified: Mon, 21 Dec 2020 22:00:14 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:c34b67e8e81467e6bb600baa6e8364e4cefa168bd337a16798a82fc02315030f`  
+		Last Modified: Wed, 30 Dec 2020 19:42:01 GMT  
+		Size: 4.7 KB (4736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c847c642852bec25e88c7e958e15c7a6001ed0bff68618ab853bcc789af4a65b`  
-		Last Modified: Mon, 21 Dec 2020 22:00:24 GMT  
-		Size: 203.0 B  
+	-	`sha256:412b74ad3ceca51a26eb9323cc8cf64e1d022221e797f8e65e2c47ff084d6efd`  
+		Last Modified: Wed, 30 Dec 2020 19:42:10 GMT  
+		Size: 205.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fc6ad6b0a8faa63937ca77620cfd80ef11707730d327fc6dd56a3e2df042119`  
-		Last Modified: Mon, 21 Dec 2020 22:00:24 GMT  
-		Size: 211.0 B  
+	-	`sha256:72d13b4668b41110f822630b0d4235b568076f0768bd57b9480dcf11b01f884e`  
+		Last Modified: Wed, 30 Dec 2020 19:42:10 GMT  
+		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86e424135ff2941938c2f97611b84b943c28454d0ea0c70ece286007dbe1f932`  
-		Last Modified: Mon, 21 Dec 2020 22:00:27 GMT  
-		Size: 10.9 MB (10854165 bytes)  
+	-	`sha256:bbc27a9f929d8b7be87c8a29c3df57f7c4ef894e8aefdf30d248fabaf10b49af`  
+		Last Modified: Wed, 30 Dec 2020 19:42:13 GMT  
+		Size: 10.9 MB (10854263 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3-management` - linux; ppc64le
@@ -14390,14 +14390,14 @@ EXPOSE 15671/tcp 15672/tcp
 ### `rabbitmq:3-management` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:dcdefbc8648e9d1f758e9831f9b9c5f09778cb1b255fbdbc7ba8137429162e62
+$ docker pull rabbitmq@sha256:39aa80f7dfb56c33adc563db365be1189d0a8173178fe3865793d9819d98f6f1
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **89.0 MB (89015277 bytes)**  
+-	Total Size: **89.0 MB (89015323 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:664a447e83b6df4f387f7ef4d6785bb143d1eb53b31b14269bfff5449491c9ff`
+-	Image ID: `sha256:ab8721b912e7a63477eef2663e5bc6470a22e198b7e9dda66d7c478486faa6c1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -14457,21 +14457,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:10:49 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:10:50 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:10:50 GMT
+# Wed, 30 Dec 2020 19:45:22 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:45:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:10:51 GMT
+# Wed, 30 Dec 2020 19:45:23 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:10:51 GMT
+# Wed, 30 Dec 2020 19:45:24 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:11:09 GMT
+# Wed, 30 Dec 2020 19:45:34 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:11:10 GMT
+# Wed, 30 Dec 2020 19:45:35 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:11:27 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:11:29 GMT
+# Wed, 30 Dec 2020 19:45:48 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:45:50 GMT
 EXPOSE 15671 15672
 ```
 
@@ -14512,27 +14512,27 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:13:42 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f551312615b55dc3338f141b07b2dd5035f85cc5dda0513b1813a8c651913a9c`  
-		Last Modified: Mon, 21 Dec 2020 21:13:42 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:715c0199636e35ac1528cc930cddbfa6d779c67aac0fd7a7b4669c3c486c1697`  
+		Last Modified: Wed, 30 Dec 2020 19:47:28 GMT  
+		Size: 4.7 KB (4738 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:485a4f31c11434315e7206651c0aca0e05d875184787e08096d9642616f57a2c`  
-		Last Modified: Mon, 21 Dec 2020 21:13:54 GMT  
-		Size: 204.0 B  
+	-	`sha256:d6fd5025184ec18b1d0966267e321c1095c4deef4a75e7471a1e1bdd78fa8b06`  
+		Last Modified: Wed, 30 Dec 2020 19:47:37 GMT  
+		Size: 202.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af257ef72de4e2a5479f4c59aafc913ee02a2c6611b8d0adbad2f65bf4a37892`  
-		Last Modified: Mon, 21 Dec 2020 21:13:54 GMT  
+	-	`sha256:9012f027423da1f35c0f72674f0d4a4aeeffdb1fa08178a0da2cf9bfc0779753`  
+		Last Modified: Wed, 30 Dec 2020 19:47:37 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b66f7ca165876a3c11c6bd61ddb7e4701dee4cc8ecfd0dc5160d6bf4bb7aa548`  
-		Last Modified: Mon, 21 Dec 2020 21:13:56 GMT  
-		Size: 10.4 MB (10408045 bytes)  
+	-	`sha256:d15460241813a075ce550350e1f5daccf66929ad0bc98aacc51995a3a93ba408`  
+		Last Modified: Wed, 30 Dec 2020 19:47:39 GMT  
+		Size: 10.4 MB (10408040 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:3-management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:6296b3507309978d1ef673de155edc3c713b1be674d46e3191be3a0dbc715557
+$ docker pull rabbitmq@sha256:0ac9a7f792aa031dff1d133b2d5febfe01a63a9f8aa0d5a9357467e0b8d75a67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14548,14 +14548,14 @@ $ docker pull rabbitmq@sha256:6296b3507309978d1ef673de155edc3c713b1be674d46e3191
 ### `rabbitmq:3-management-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:f9cde149e753a99f1fd28f63aa5b3cd4182a31d4f0be412cbe41ba5117ed7a26
+$ docker pull rabbitmq@sha256:43fb8dd7521f5284cef969e6f5c95067b4ab8b8e4f708a7cfb0fe65ba46857ad
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.2 MB (70211578 bytes)**  
+-	Total Size: **70.2 MB (70211688 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:55b8b1f0ad357ec63f5b49cb0998e13499c7b9cc1aae39818020f5be0aa242bc`
+-	Image ID: `sha256:0024eab10efba45d1b114683d0d29995eef9915e501e857d037af2074971b486`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -14609,21 +14609,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:23:54 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:23:54 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:23:55 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:26:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:23:55 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:23:56 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:24:07 GMT
+# Wed, 30 Dec 2020 19:26:32 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:24:09 GMT
+# Wed, 30 Dec 2020 19:26:33 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:24:15 GMT
+# Wed, 30 Dec 2020 19:26:37 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:24:15 GMT
+# Wed, 30 Dec 2020 19:26:37 GMT
 EXPOSE 15671 15672
 ```
 
@@ -14656,34 +14656,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:26:02 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cb78fbd941cff7c68255fa8bd23f659cdb876c95f3b24a28bf80f79fadd05fe`  
-		Last Modified: Mon, 21 Dec 2020 21:26:01 GMT  
-		Size: 4.7 KB (4687 bytes)  
+	-	`sha256:f2babd5cc60632de330fc6bbc2496cb0c80dc173f0725d4acbd53461877022eb`  
+		Last Modified: Wed, 30 Dec 2020 19:27:45 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6485f949ba043525dce62d89c19ef666c6c4c18c49cdcf7e786c0eddb3010ac3`  
-		Last Modified: Mon, 21 Dec 2020 21:26:10 GMT  
-		Size: 203.0 B  
+	-	`sha256:73954fbfba964069767cd88c24cc23c5840f77ca12bb7100a05aea5c6dfc8284`  
+		Last Modified: Wed, 30 Dec 2020 19:27:51 GMT  
+		Size: 206.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1e71d8aff99582c3c8b8472838d6fc7c0eb609937642d1a6631f4c8d733f008`  
-		Last Modified: Mon, 21 Dec 2020 21:26:11 GMT  
-		Size: 217.0 B  
+	-	`sha256:2e2fede618a7af8abbc7b6ef75e12b4b723fb827b9e6eceedc4bcc2e84223f4b`  
+		Last Modified: Wed, 30 Dec 2020 19:27:51 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f0469d674658ebd89fe7ed2cddd4f7614640a7177ed562b0d33a42f73fed452`  
-		Last Modified: Mon, 21 Dec 2020 21:26:13 GMT  
-		Size: 13.9 MB (13913954 bytes)  
+	-	`sha256:daa111566ce1231aaed62ff66674441a19c2987f6cfd9fdc1dde6f8e0dde720e`  
+		Last Modified: Wed, 30 Dec 2020 19:27:54 GMT  
+		Size: 13.9 MB (13914011 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3-management-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:8c6895a5246c86cca3b0546e14ce7276c94dd034b5592abf810302bcc353994c
+$ docker pull rabbitmq@sha256:5b32f7f62c53b95bef044acfe9fca35ec93f5171eeea9fe040a50d7a22124687
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.8 MB (68839116 bytes)**  
+-	Total Size: **68.8 MB (68839194 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac99694c32b973c4a954040de819b8481abad0e308a9cd8612ced18260f674ef`
+-	Image ID: `sha256:5ab0b104427697667658f058040ee7ffe71161297446762c2c997062a7fc9e8c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -14737,21 +14737,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 20:27:47 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 20:27:48 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 20:27:49 GMT
+# Wed, 30 Dec 2020 19:53:05 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:53:05 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 20:27:51 GMT
+# Wed, 30 Dec 2020 19:53:06 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 20:27:52 GMT
+# Wed, 30 Dec 2020 19:53:06 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 20:28:11 GMT
+# Wed, 30 Dec 2020 19:53:23 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 20:28:14 GMT
+# Wed, 30 Dec 2020 19:53:24 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 20:28:25 GMT
+# Wed, 30 Dec 2020 19:53:34 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 20:28:33 GMT
+# Wed, 30 Dec 2020 19:53:35 GMT
 EXPOSE 15671 15672
 ```
 
@@ -14784,34 +14784,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 20:29:26 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ff513de4dd23048dbd5d310760f506eac90a24aded5f1df947a7792b2771552`  
-		Last Modified: Mon, 21 Dec 2020 20:29:26 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:aaa640cc54980092a29e3221dbca162a7b4d513fa3d6a6b791259d7cf27fd461`  
+		Last Modified: Wed, 30 Dec 2020 19:54:17 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d7637e44c151d6b8e927c54c1bf667ce39008a6c5a3729cd8d51bee111f9a688`  
-		Last Modified: Mon, 21 Dec 2020 20:29:41 GMT  
-		Size: 206.0 B  
+	-	`sha256:de56c07f1f9986f57f146efe3597fa059f07fd73538fb250012f08ce4f42a9dd`  
+		Last Modified: Wed, 30 Dec 2020 19:54:29 GMT  
+		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51b0826caa8503cef50b97f38e84c1df17593374018c72c376233e5d2dc8ce3a`  
-		Last Modified: Mon, 21 Dec 2020 20:29:40 GMT  
-		Size: 217.0 B  
+	-	`sha256:75a5f926e066999f650d29151fb4fa88928b29b5068a62734aaa51f375f03341`  
+		Last Modified: Wed, 30 Dec 2020 19:54:29 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85e51d9e631c4b109783b75240285c17eda9b5daf9a5c3534cc3ed4b7e807a3e`  
-		Last Modified: Mon, 21 Dec 2020 20:29:45 GMT  
-		Size: 13.8 MB (13806045 bytes)  
+	-	`sha256:860fc3eb8dba7a666aa867dd727f1c061a2bca9f3f94b7ddbdd2a39a3c5daf22`  
+		Last Modified: Wed, 30 Dec 2020 19:54:34 GMT  
+		Size: 13.8 MB (13806066 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3-management-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:d3ff996a202e6148efb7fb0ef6eb6b565a1c633ea2acda451d8f941b20d6197c
+$ docker pull rabbitmq@sha256:87f4c65596455400052d8dbf6eb72e71063a287407078a900ef946805d44a4b3
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **67.8 MB (67792903 bytes)**  
+-	Total Size: **67.8 MB (67792992 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2c8cb9657c86a1b09235860c6a2432b5a5096024f6f62930744222cfd893d30`
+-	Image ID: `sha256:e0797a6600edfd27fd6a3ba44aed66b80b60574f94403d7707bbff1af578964e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -14865,21 +14865,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:57:30 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:57:30 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:57:31 GMT
+# Wed, 30 Dec 2020 20:01:26 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 20:01:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:57:32 GMT
+# Wed, 30 Dec 2020 20:01:29 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:57:32 GMT
+# Wed, 30 Dec 2020 20:01:33 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:57:41 GMT
+# Wed, 30 Dec 2020 20:01:46 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:57:42 GMT
+# Wed, 30 Dec 2020 20:01:52 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:57:50 GMT
+# Wed, 30 Dec 2020 20:02:03 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:57:52 GMT
+# Wed, 30 Dec 2020 20:02:06 GMT
 EXPOSE 15671 15672
 ```
 
@@ -14912,34 +14912,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 22:00:07 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:405923efb87b55d63663d6717536d2e7816b929f95995f79b56644074c085374`  
-		Last Modified: Mon, 21 Dec 2020 22:00:06 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:dc26b7a85465f92a028f91eb9ac826ac88c96ad49b59bc2bd01d5affa243e5cf`  
+		Last Modified: Wed, 30 Dec 2020 20:03:57 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f63c123e1c5858cbbcd705a7236477c4083e167d70475c0e7b9c933222e8b5af`  
-		Last Modified: Mon, 21 Dec 2020 22:00:18 GMT  
-		Size: 204.0 B  
+	-	`sha256:98b59469f4b40e2a21c86504c11e0fd79800cfb3f4e533763cd193ddc4f0310d`  
+		Last Modified: Wed, 30 Dec 2020 20:04:08 GMT  
+		Size: 206.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59b37145753fc564b158eddb20c3aee4ac5d2aa584d1eb65eb2300b25a8d4811`  
-		Last Modified: Mon, 21 Dec 2020 22:00:18 GMT  
-		Size: 215.0 B  
+	-	`sha256:056c804e32d327452a79b39e284b7b6614cf76c4c93c0b5e3e5160441a9fa208`  
+		Last Modified: Wed, 30 Dec 2020 20:04:09 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eac93f09b55a4517d241cc597a980278f9d2c4d5298b6b9aea0fc1b9386164e7`  
-		Last Modified: Mon, 21 Dec 2020 22:00:24 GMT  
-		Size: 13.5 MB (13451767 bytes)  
+	-	`sha256:81b2c351ea2954fdba3fc65702304bda807e67a25f7f21b3276b519950e5ed20`  
+		Last Modified: Wed, 30 Dec 2020 20:04:13 GMT  
+		Size: 13.5 MB (13451793 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3-management-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:311031ed7f513f8a19d3d408d72b1e1e7505ba1903996dd1b21b809240b31834
+$ docker pull rabbitmq@sha256:8e211c2f3e1da29e36a77f9ccee623db652d88e9e277116cdbd358cf69d1e3b7
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.8 MB (69831780 bytes)**  
+-	Total Size: **69.8 MB (69831903 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53fa39e86fb0f404ee25edfda0f5fb5aa95110eac7b1210bd5beba114e8ea222`
+-	Image ID: `sha256:82577537ca68b9a9e840886c95286f2e8c0639112008576c5ba6118fd485d5ea`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -14993,21 +14993,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:15:39 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:15:40 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:15:40 GMT
+# Wed, 30 Dec 2020 19:43:21 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:43:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:15:41 GMT
+# Wed, 30 Dec 2020 19:43:23 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:15:41 GMT
+# Wed, 30 Dec 2020 19:43:23 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:15:54 GMT
+# Wed, 30 Dec 2020 19:43:33 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:15:56 GMT
+# Wed, 30 Dec 2020 19:43:35 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:16:03 GMT
+# Wed, 30 Dec 2020 19:43:41 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:16:04 GMT
+# Wed, 30 Dec 2020 19:43:42 GMT
 EXPOSE 15671 15672
 ```
 
@@ -15040,34 +15040,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:18:01 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14875f737f50cad14c7b49b22da3175ac58e0fce241c0b46c3e31878378f276a`  
-		Last Modified: Mon, 21 Dec 2020 21:18:01 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:56528dbe21e927342285867ed6cddd3dba0640ae6c9f1a8b91883599fc5b1435`  
+		Last Modified: Wed, 30 Dec 2020 19:45:14 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddd37dfd22e5121e980c8748a827525a5feb0c65cc6ebbcf6134b7d42ad2a1b9`  
-		Last Modified: Mon, 21 Dec 2020 21:18:12 GMT  
+	-	`sha256:faa23018462bd8df5af44c6dae8afbd49f08ef583e26bf0ad6b039cedd40009f`  
+		Last Modified: Wed, 30 Dec 2020 19:45:24 GMT  
 		Size: 203.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27929c056cc7c60039761d2de7400bdb168f74287e0fd93f478d559b6a27d00a`  
-		Last Modified: Mon, 21 Dec 2020 21:18:12 GMT  
-		Size: 216.0 B  
+	-	`sha256:2d7387d46c773dc96ccd08875ac0d4c0c81b61dd06043b19a1b446259af9b504`  
+		Last Modified: Wed, 30 Dec 2020 19:45:25 GMT  
+		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a6a92c15a45c9abe2a8d36bc7edc7cb9ad9fbc39bbb339ad24ca29fe550ef89`  
-		Last Modified: Mon, 21 Dec 2020 21:18:16 GMT  
-		Size: 14.0 MB (14034134 bytes)  
+	-	`sha256:58eefdfd97b56a36e4913884b1b0b9dd489e54714f38c122b685fcc116ae19d2`  
+		Last Modified: Wed, 30 Dec 2020 19:45:29 GMT  
+		Size: 14.0 MB (14034198 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3-management-alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:fa01fe4000a9ecf3dde7809ee2a0039203da266d277a71c681066ec20ab91bb8
+$ docker pull rabbitmq@sha256:e026651d259b0312b77f45fd83439a719f2ebea0b5771513804aca680e38c254
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.4 MB (70355618 bytes)**  
+-	Total Size: **70.4 MB (70355699 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf3f119c604f65a1076ccde9abff0253c572391e206a5b1d0f52f3d2c699e103`
+-	Image ID: `sha256:fa4cc56aa2676a1cf93c86d73b546a943c8813bc181681df6e49c7a0ec562835`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -15121,21 +15121,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:58:26 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:58:26 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:58:26 GMT
+# Wed, 30 Dec 2020 19:40:51 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:40:51 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:58:27 GMT
+# Wed, 30 Dec 2020 19:40:51 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:58:27 GMT
+# Wed, 30 Dec 2020 19:40:52 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:58:34 GMT
+# Wed, 30 Dec 2020 19:40:58 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:58:35 GMT
+# Wed, 30 Dec 2020 19:40:59 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:58:39 GMT
+# Wed, 30 Dec 2020 19:41:03 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:58:40 GMT
+# Wed, 30 Dec 2020 19:41:03 GMT
 EXPOSE 15671 15672
 ```
 
@@ -15168,34 +15168,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 22:00:39 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f2c80698bb9d8704065a0e05336bc0fd3584f0c0905349e317a7ed62fb7c1f2`  
-		Last Modified: Mon, 21 Dec 2020 22:00:39 GMT  
-		Size: 4.7 KB (4688 bytes)  
+	-	`sha256:59f1fe9bcefab434482b7f7288565ac945fa36b959a170a2a64d199d02b94e18`  
+		Last Modified: Wed, 30 Dec 2020 19:42:21 GMT  
+		Size: 4.7 KB (4741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf51104041609f5634093a57d60d985a2ea1bd72b7dab323b5a4183eb3e7757d`  
-		Last Modified: Mon, 21 Dec 2020 22:00:47 GMT  
-		Size: 203.0 B  
+	-	`sha256:447289af781f01c8c9f345d5ec5ad796b4424bd2e1fb1097d2962dd7e90044ea`  
+		Last Modified: Wed, 30 Dec 2020 19:42:28 GMT  
+		Size: 206.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be71de220f38d4a87a99292740c13e14684355e0d6e546a5ec6bc22854243c7d`  
-		Last Modified: Mon, 21 Dec 2020 22:00:47 GMT  
+	-	`sha256:03fecfe7b90e39ca1991a1809fbf3e99cfe3e96c3ff5c468d208d1573f73c2fe`  
+		Last Modified: Wed, 30 Dec 2020 19:42:28 GMT  
 		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0755fb7c5d02e009663b064e10ef3f80ed6160654c781f665128434c45435046`  
-		Last Modified: Mon, 21 Dec 2020 22:00:51 GMT  
-		Size: 14.0 MB (14033253 bytes)  
+	-	`sha256:0f6eff7e389f96b26033cc439230a8d6c49f145a524d3bc5e4309e47beda3c44`  
+		Last Modified: Wed, 30 Dec 2020 19:42:31 GMT  
+		Size: 14.0 MB (14033278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3-management-alpine` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:03bd7995d18b210c1f9ae1688fc3fbec7a8290e5297931549210e17f7146a120
+$ docker pull rabbitmq@sha256:b927beb674ab1c706ba964425bcec956e30496d76b1f8bdd6a4538fd8a32d0fd
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.1 MB (71067269 bytes)**  
+-	Total Size: **71.1 MB (71067414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4c38ace055deef7a8f70534384877be7cd3d5b5c867e12c02868b31838d0e28`
+-	Image ID: `sha256:5bfa0a765a46f35ff5694b8b0736c9e06d44c381bfef190557413fe1596c8a19`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -15249,21 +15249,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 22:52:34 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 22:52:41 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 22:52:53 GMT
+# Wed, 30 Dec 2020 19:24:06 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:24:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 22:53:03 GMT
+# Wed, 30 Dec 2020 19:24:19 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 22:53:10 GMT
+# Wed, 30 Dec 2020 19:24:23 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 22:53:34 GMT
+# Wed, 30 Dec 2020 19:24:46 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 22:53:46 GMT
+# Wed, 30 Dec 2020 19:25:04 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 22:54:10 GMT
+# Wed, 30 Dec 2020 19:25:45 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 22:54:19 GMT
+# Wed, 30 Dec 2020 19:25:50 GMT
 EXPOSE 15671 15672
 ```
 
@@ -15296,34 +15296,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 22:55:25 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cee0c2d9ae9a07115a54df13110463d0aaede6a6717df6d3ff9e9dde2dac2028`  
-		Last Modified: Mon, 21 Dec 2020 22:55:25 GMT  
-		Size: 4.7 KB (4684 bytes)  
+	-	`sha256:fce3ef73d2c7a0478979a89000081b5d9d2388f512410a31e8c85a0e71d18a72`  
+		Last Modified: Wed, 30 Dec 2020 19:26:44 GMT  
+		Size: 4.7 KB (4741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d05dbff4b30f2b0cd0cd684ca377334cf537d136fe583de4c1d412d49c319b3`  
-		Last Modified: Mon, 21 Dec 2020 22:55:44 GMT  
-		Size: 204.0 B  
+	-	`sha256:68e523cb740c4d9a3e16c5124208952bc0996ab987723bc0a33a75cc3132d02e`  
+		Last Modified: Wed, 30 Dec 2020 19:27:00 GMT  
+		Size: 205.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c3c21640a6fbc831ba3c6f2dfe501c921cd89cf93d2e72e2d990ed741da7836`  
-		Last Modified: Mon, 21 Dec 2020 22:55:45 GMT  
-		Size: 218.0 B  
+	-	`sha256:b7577cfe0f73fdccbec9364213b7893df71c24bf8882985286e0766efef1cd64`  
+		Last Modified: Wed, 30 Dec 2020 19:27:01 GMT  
+		Size: 219.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2da56f210eb60b04939d28ed0b492c1d0368201ce07f81124304f8dce3a7dce`  
-		Last Modified: Mon, 21 Dec 2020 22:55:51 GMT  
-		Size: 14.4 MB (14363506 bytes)  
+	-	`sha256:72c7d4240e6537122d9c9c0e0920dca634c8d9a924a2fbb0ca8d4c1d644548be`  
+		Last Modified: Wed, 30 Dec 2020 19:27:05 GMT  
+		Size: 14.4 MB (14363592 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3-management-alpine` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:d25d54423ece0a052f88b5364a25bfd26cbd3f0c8ffbaa2715f794b7dfe5f5ac
+$ docker pull rabbitmq@sha256:48d9eb7f69b071a761b32c59660a98c10d2f3338c46edfd947f2944141f608a5
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.1 MB (69053205 bytes)**  
+-	Total Size: **69.1 MB (69053273 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d95faa1cac6cc49ae1e4e3520b6d8d099e6fff8bf1dadf554be1d631e20ba3ba`
+-	Image ID: `sha256:df7b8802903b0daae2f6b1ac4930085647338dc0375d635bc54dde1a3c1c426c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -15377,21 +15377,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:11:58 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:11:58 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:11:59 GMT
+# Wed, 30 Dec 2020 19:45:56 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:45:56 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:11:59 GMT
+# Wed, 30 Dec 2020 19:45:57 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:12:00 GMT
+# Wed, 30 Dec 2020 19:45:57 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:12:11 GMT
+# Wed, 30 Dec 2020 19:46:09 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:12:12 GMT
+# Wed, 30 Dec 2020 19:46:10 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:12:18 GMT
+# Wed, 30 Dec 2020 19:46:17 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:12:21 GMT
+# Wed, 30 Dec 2020 19:46:20 GMT
 EXPOSE 15671 15672
 ```
 
@@ -15424,27 +15424,27 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:14:08 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90a44cd1dca23cd43cd8ea2c86909c4de78874037c39b3cb855f1c01078093b7`  
-		Last Modified: Mon, 21 Dec 2020 21:14:08 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:33da539e6af749329c881416600f32bebec9923b6b9153586f7ec46910de8091`  
+		Last Modified: Wed, 30 Dec 2020 19:47:49 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a15ed1c31c8406e192e66559c1882927e3332a38aff072466a38745bc614a26`  
-		Last Modified: Mon, 21 Dec 2020 21:14:20 GMT  
+	-	`sha256:51453419b8f4b1d816d351d03e9321fcea47c1d6ab7855a5854ed7648ae494c9`  
+		Last Modified: Wed, 30 Dec 2020 19:47:59 GMT  
 		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:082c1510af1aedc7063a1ec0650da2f46034c0294ad03da78c80432d4e1fcaa5`  
-		Last Modified: Mon, 21 Dec 2020 21:14:20 GMT  
+	-	`sha256:df802d34a1cb0d3ca363c773ebb653d0559ae10c4edc93645a1fe99b707489d5`  
+		Last Modified: Wed, 30 Dec 2020 19:47:59 GMT  
 		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afb59acce865f1dab01ef990e3d479837d3f2c76935d01c2eca2f6b999ed37a3`  
-		Last Modified: Mon, 21 Dec 2020 21:14:22 GMT  
-		Size: 14.0 MB (13955534 bytes)  
+	-	`sha256:f2baeab0ed8522a28c7a4be8008cf9f77e9203aefb30b33cbfe42ed5e673e884`  
+		Last Modified: Wed, 30 Dec 2020 19:48:01 GMT  
+		Size: 14.0 MB (13955541 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:cd83484c5816c89d815a8b47048f7dc0b914bac3774c7e8c1b100f08f72dca4d
+$ docker pull rabbitmq@sha256:5b9f3d10555376369526d81eb07697255383f8c84aa5f3b34164d43f9ba60d0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15460,14 +15460,14 @@ $ docker pull rabbitmq@sha256:cd83484c5816c89d815a8b47048f7dc0b914bac3774c7e8c1b
 ### `rabbitmq:alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:c5d56767f205cbbbdc5c2678d58425abd845639e78c33847c4df475a2c3022c0
+$ docker pull rabbitmq@sha256:a34351cbfa3fecd19c8aae182eac206cfd8d7bee12deebc06156f39e93a463ea
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.3 MB (56297204 bytes)**  
+-	Total Size: **56.3 MB (56297260 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fe4caa64352dbad146bca9fbe1ff5582931ef437d334f4d57ad0033d576b11bf`
+-	Image ID: `sha256:df3814ee9284b5f63a908202f4cb0f56192ce09617f3f939e8dab3745385e58d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -15521,13 +15521,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:23:54 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:23:54 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:23:55 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:26:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:23:55 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:23:56 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -15560,22 +15560,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:26:02 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cb78fbd941cff7c68255fa8bd23f659cdb876c95f3b24a28bf80f79fadd05fe`  
-		Last Modified: Mon, 21 Dec 2020 21:26:01 GMT  
-		Size: 4.7 KB (4687 bytes)  
+	-	`sha256:f2babd5cc60632de330fc6bbc2496cb0c80dc173f0725d4acbd53461877022eb`  
+		Last Modified: Wed, 30 Dec 2020 19:27:45 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:67740efe77b24aaccd1d6d341b7316138d332edfa19609c64a07c0ba55697f89
+$ docker pull rabbitmq@sha256:ee15b8809b7204027ad36809c3897bef47f33dfe26d23ebce71295ed8103372e
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.0 MB (55032648 bytes)**  
+-	Total Size: **55.0 MB (55032708 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:507b896667358d77e4b2345c960b5f86c7c7e0a7e98ed37f5a603018797510a3`
+-	Image ID: `sha256:4656eca90bc4a977bd5950a41f43f161eaee35060a92130628629d8cb30af28a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -15629,13 +15629,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 20:27:47 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 20:27:48 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 20:27:49 GMT
+# Wed, 30 Dec 2020 19:53:05 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:53:05 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 20:27:51 GMT
+# Wed, 30 Dec 2020 19:53:06 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 20:27:52 GMT
+# Wed, 30 Dec 2020 19:53:06 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -15668,22 +15668,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 20:29:26 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ff513de4dd23048dbd5d310760f506eac90a24aded5f1df947a7792b2771552`  
-		Last Modified: Mon, 21 Dec 2020 20:29:26 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:aaa640cc54980092a29e3221dbca162a7b4d513fa3d6a6b791259d7cf27fd461`  
+		Last Modified: Wed, 30 Dec 2020 19:54:17 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:alpine` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:5ab85166dc222681f9c919af3e6b9c507f33730db435818c225c995d915e8601
+$ docker pull rabbitmq@sha256:d5ad66530961c11f317c6f9c9cd22b2f6af7a78a44468fbfd17f32d23ee7439d
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.3 MB (54340717 bytes)**  
+-	Total Size: **54.3 MB (54340777 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36a7667a3c4e00ae2ff67fc21b13a0ced3ef81c9c1e8ecbc61e2332bc07ab6d5`
+-	Image ID: `sha256:67f6266961618ecaf9c0b7b41631cf56dc37762c1830b5a41fda5cd3181350cf`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -15737,13 +15737,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:57:30 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:57:30 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:57:31 GMT
+# Wed, 30 Dec 2020 20:01:26 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 20:01:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:57:32 GMT
+# Wed, 30 Dec 2020 20:01:29 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:57:32 GMT
+# Wed, 30 Dec 2020 20:01:33 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -15776,22 +15776,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 22:00:07 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:405923efb87b55d63663d6717536d2e7816b929f95995f79b56644074c085374`  
-		Last Modified: Mon, 21 Dec 2020 22:00:06 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:dc26b7a85465f92a028f91eb9ac826ac88c96ad49b59bc2bd01d5affa243e5cf`  
+		Last Modified: Wed, 30 Dec 2020 20:03:57 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:7e35c715aec6498cc023c04e92aaac09eb8a390013e1a3387cd27d13dd633b16
+$ docker pull rabbitmq@sha256:639713e2e118a8b3dbb586e5fe1ee0a416f8d840701aaf2ba80cffe8dbd7ca86
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.8 MB (55797227 bytes)**  
+-	Total Size: **55.8 MB (55797287 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d94a05cb44494626f5ff5f2cd83c9b50923dba71ed1c8aeca02fda5f8aed5e97`
+-	Image ID: `sha256:53ebe820a0bba6a40cca31de829ef81364883cc6ccb4b95623449d2cbb39e11c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -15845,13 +15845,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:15:39 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:15:40 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:15:40 GMT
+# Wed, 30 Dec 2020 19:43:21 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:43:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:15:41 GMT
+# Wed, 30 Dec 2020 19:43:23 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:15:41 GMT
+# Wed, 30 Dec 2020 19:43:23 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -15884,22 +15884,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:18:01 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14875f737f50cad14c7b49b22da3175ac58e0fce241c0b46c3e31878378f276a`  
-		Last Modified: Mon, 21 Dec 2020 21:18:01 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:56528dbe21e927342285867ed6cddd3dba0640ae6c9f1a8b91883599fc5b1435`  
+		Last Modified: Wed, 30 Dec 2020 19:45:14 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:43c7162b8a57efdd3b7642c9d2f4b0ea4962b5ddd7db7953bf782c980996b350
+$ docker pull rabbitmq@sha256:ef2b0d8ec5dca75b3d2f85f0d05e7aefb918c52c223715baed7a8fc77716615a
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.3 MB (56321950 bytes)**  
+-	Total Size: **56.3 MB (56322003 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79541dbaeae05739069519348a37a269516c7ef927fafd27e1d5d19222e83e63`
+-	Image ID: `sha256:7f2909d3bc1a1bfe63daba076998bb19fecab013c6a3bcb2c653d9fd5f483d98`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -15953,13 +15953,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:58:26 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:58:26 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:58:26 GMT
+# Wed, 30 Dec 2020 19:40:51 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:40:51 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:58:27 GMT
+# Wed, 30 Dec 2020 19:40:51 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:58:27 GMT
+# Wed, 30 Dec 2020 19:40:52 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -15992,22 +15992,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 22:00:39 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f2c80698bb9d8704065a0e05336bc0fd3584f0c0905349e317a7ed62fb7c1f2`  
-		Last Modified: Mon, 21 Dec 2020 22:00:39 GMT  
-		Size: 4.7 KB (4688 bytes)  
+	-	`sha256:59f1fe9bcefab434482b7f7288565ac945fa36b959a170a2a64d199d02b94e18`  
+		Last Modified: Wed, 30 Dec 2020 19:42:21 GMT  
+		Size: 4.7 KB (4741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:alpine` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:16ec8fcea1fdc09f19d863278ce9198f55ed8d8ab936ad4bae4d20123e08abec
+$ docker pull rabbitmq@sha256:8926e837122dbc72ce5429bf2f64376378a178700eab5d6a9e27b403ef5878ee
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.7 MB (56703341 bytes)**  
+-	Total Size: **56.7 MB (56703398 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2f2f772e60dd18f69feb9624038cd1bcd43d1655bd1775182376f03d2cebe8c3`
+-	Image ID: `sha256:6bc6983fe99db41cdcccad269a9a5df28f5aa9b579dd4f0ec7c29852ccf411db`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -16061,13 +16061,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 22:52:34 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 22:52:41 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 22:52:53 GMT
+# Wed, 30 Dec 2020 19:24:06 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:24:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 22:53:03 GMT
+# Wed, 30 Dec 2020 19:24:19 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 22:53:10 GMT
+# Wed, 30 Dec 2020 19:24:23 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -16100,22 +16100,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 22:55:25 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cee0c2d9ae9a07115a54df13110463d0aaede6a6717df6d3ff9e9dde2dac2028`  
-		Last Modified: Mon, 21 Dec 2020 22:55:25 GMT  
-		Size: 4.7 KB (4684 bytes)  
+	-	`sha256:fce3ef73d2c7a0478979a89000081b5d9d2388f512410a31e8c85a0e71d18a72`  
+		Last Modified: Wed, 30 Dec 2020 19:26:44 GMT  
+		Size: 4.7 KB (4741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:alpine` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:556a31e8d2bd5c63ee5fc27d143a7a0ae56fb400224a5b1633925140d3e2d5e7
+$ docker pull rabbitmq@sha256:20b956ff0632aeb58f096f3835b1d33c5626e82a967762dbcec2516665687a8d
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.1 MB (55097252 bytes)**  
+-	Total Size: **55.1 MB (55097313 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2247e9239027201f6875f5243b5f91d3350c0ee0080258dd4c1ac76a0b61f71`
+-	Image ID: `sha256:78d4951ac01f7b54751ae098eb2c955cf8902399b30bd03c663c8fac8cbc1f10`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -16169,13 +16169,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:11:58 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:11:58 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:11:59 GMT
+# Wed, 30 Dec 2020 19:45:56 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:45:56 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:11:59 GMT
+# Wed, 30 Dec 2020 19:45:57 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:12:00 GMT
+# Wed, 30 Dec 2020 19:45:57 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -16208,15 +16208,15 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:14:08 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90a44cd1dca23cd43cd8ea2c86909c4de78874037c39b3cb855f1c01078093b7`  
-		Last Modified: Mon, 21 Dec 2020 21:14:08 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:33da539e6af749329c881416600f32bebec9923b6b9153586f7ec46910de8091`  
+		Last Modified: Wed, 30 Dec 2020 19:47:49 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:latest`
 
 ```console
-$ docker pull rabbitmq@sha256:a19f0e3e9b0986948c2072aac82157029df65b01d17ee80b954058245de61a04
+$ docker pull rabbitmq@sha256:1fc999fbdd8054b0c34c285901474f136792ad4a42d39186f3793ac40de04dba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16231,14 +16231,14 @@ $ docker pull rabbitmq@sha256:a19f0e3e9b0986948c2072aac82157029df65b01d17ee80b95
 ### `rabbitmq:latest` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:65eb9b71a8023ea49a616c1a567052574e9af1eaf266bf82832f9104b7abfeb0
+$ docker pull rabbitmq@sha256:fea9968aeb7079b3927aa2f5711688a7fe12a2d423dce8de741bbd67be0177ad
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.3 MB (81254370 bytes)**  
+-	Total Size: **81.3 MB (81254423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:335235b57b05c8eac2223ab381d5816de5ba4c33a0580f54413ff6b5e068f2fa`
+-	Image ID: `sha256:30aac3e715ba24cacbcc2c8bb6529c04ace2a2fc823edbbe41dd1a4082f0c1a8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -16298,13 +16298,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:22:48 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:22:48 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:01 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:26:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:01 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:02 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -16345,22 +16345,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:25:43 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a70b21779fa5bdd0bafc80d418e50c06544b535875a3cd7433d3eb88955f8abb`  
-		Last Modified: Mon, 21 Dec 2020 21:25:42 GMT  
-		Size: 4.7 KB (4684 bytes)  
+	-	`sha256:270bdce587ffce163d921bf81efd614bd2e27ce0485557dcd11d277f62662847`  
+		Last Modified: Wed, 30 Dec 2020 19:27:28 GMT  
+		Size: 4.7 KB (4737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:latest` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:ea97b3187e18d275de98fbf0ae2d76b44500668ae16b356b0a4ddc392da13b88
+$ docker pull rabbitmq@sha256:902a65c89467fb4cf33a9d3d3b79ea4243294c5eff724445e36d9944ee135b75
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **74.3 MB (74339617 bytes)**  
+-	Total Size: **74.3 MB (74339669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:482fe1b4874496a0940df4f2a53879adf59e71c63c68d245e2258b8c3d3c7eeb`
+-	Image ID: `sha256:a0a74235ae42f117bb835245c9839bd5466359094cac9ebeee5dd6f8502881fd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -16420,13 +16420,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:56:17 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:56:18 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:56:20 GMT
+# Wed, 30 Dec 2020 20:00:06 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 20:00:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:56:21 GMT
+# Wed, 30 Dec 2020 20:00:09 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:56:22 GMT
+# Wed, 30 Dec 2020 20:00:11 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -16467,22 +16467,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:59:37 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:809bcb7f15b169320005044c3c0d6e43d0f11d4a27f9b46038d2885412263fda`  
-		Last Modified: Mon, 21 Dec 2020 21:59:37 GMT  
-		Size: 4.7 KB (4687 bytes)  
+	-	`sha256:a023e57cdec86e2827d62cc3578dd18bd2855c2796d52ef667c2042eabb72225`  
+		Last Modified: Wed, 30 Dec 2020 20:03:28 GMT  
+		Size: 4.7 KB (4739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:ec5488eefe794cfbbb0b94bedd55133a3ff83070412601ec5c4472f50a333f01
+$ docker pull rabbitmq@sha256:2bb026fcbfae04dace6c28b843c721e3ce300d0e5226c6517bcdd96a9ce9ca5f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.6 MB (76567976 bytes)**  
+-	Total Size: **76.6 MB (76568029 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f362f36906c1e1ebcd8da99b74bf2f1ce8c4de4a9bcfe373281569e40bb857ff`
+-	Image ID: `sha256:841d0181fab9b286232fa6175d95406b9acd1a972e896efa264714737732f5ec`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -16542,13 +16542,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:14:33 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:14:33 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:14:34 GMT
+# Wed, 30 Dec 2020 19:42:42 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:42:42 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:14:35 GMT
+# Wed, 30 Dec 2020 19:42:43 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:14:35 GMT
+# Wed, 30 Dec 2020 19:42:44 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -16589,22 +16589,22 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:17:34 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a6de5385e6457d1e4321576d39b1e5130c98430f4d60b1955d7e966f850dc59`  
-		Last Modified: Mon, 21 Dec 2020 21:17:34 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:d316dc06638d1a456656255f63ea5aee11d442596b795cfaf099423f64ef8750`  
+		Last Modified: Wed, 30 Dec 2020 19:44:50 GMT  
+		Size: 4.7 KB (4736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:latest` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:ce27d454f5f06c836b68885051f3bd31e71f9aec5c447d42f03df165b9071fc4
+$ docker pull rabbitmq@sha256:94047bdf3023c8c81dc2b00fd5813981e15dd7eb181508d7cce92e04ca2bed17
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.6 MB (80607672 bytes)**  
+-	Total Size: **80.6 MB (80607726 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:82400898f4f29537027ad85ce0c13252825083275c1976ed7471f2fd8f831788`
+-	Image ID: `sha256:33e6eeff6b19f9f7b2e0f56839d190b04ea52e78d7e4c35f317ec9cd4fbde9a8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -16664,13 +16664,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:57:44 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:57:44 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:57:44 GMT
+# Wed, 30 Dec 2020 19:40:27 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:40:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:57:45 GMT
+# Wed, 30 Dec 2020 19:40:28 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:57:45 GMT
+# Wed, 30 Dec 2020 19:40:28 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -16711,9 +16711,9 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 22:00:14 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85a2d0ab60e03adf7f47b2f62aa5d20442a78f6aefbdf3018fc7e1e12f489175`  
-		Last Modified: Mon, 21 Dec 2020 22:00:14 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:c34b67e8e81467e6bb600baa6e8364e4cefa168bd337a16798a82fc02315030f`  
+		Last Modified: Wed, 30 Dec 2020 19:42:01 GMT  
+		Size: 4.7 KB (4736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:latest` - linux; ppc64le
@@ -16838,14 +16838,14 @@ CMD ["rabbitmq-server"]
 ### `rabbitmq:latest` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:440ad95952eebc5677f7ac0a92fa0b566f90421fa63607a9785c49a4dbbaf3f5
+$ docker pull rabbitmq@sha256:a52b8f62892a31a559d35130ad4214de69fa444bea8632060a5b4041f2413f44
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **78.6 MB (78606814 bytes)**  
+-	Total Size: **78.6 MB (78606867 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2796d3a93e1bc4b6d1f57e6132113ce09221c80430ff4d1a0d7134d9b2be1b19`
+-	Image ID: `sha256:11af72d898a18bc6db5f51063bc799044cb584dc400a2694de450cd1fe96356d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -16905,13 +16905,13 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:10:49 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:10:50 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:10:50 GMT
+# Wed, 30 Dec 2020 19:45:22 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:45:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:10:51 GMT
+# Wed, 30 Dec 2020 19:45:23 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:10:51 GMT
+# Wed, 30 Dec 2020 19:45:24 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -16952,15 +16952,15 @@ CMD ["rabbitmq-server"]
 		Last Modified: Mon, 21 Dec 2020 21:13:42 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f551312615b55dc3338f141b07b2dd5035f85cc5dda0513b1813a8c651913a9c`  
-		Last Modified: Mon, 21 Dec 2020 21:13:42 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:715c0199636e35ac1528cc930cddbfa6d779c67aac0fd7a7b4669c3c486c1697`  
+		Last Modified: Wed, 30 Dec 2020 19:47:28 GMT  
+		Size: 4.7 KB (4738 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:management`
 
 ```console
-$ docker pull rabbitmq@sha256:9997af5519a25951ee006a0b2bd9f91005cb7d2e31c2da2ec1bd5233d95f3024
+$ docker pull rabbitmq@sha256:d08ecb676c25baf775925b9ff3ad17cfa0565f25756fb57ba6bd9f3c36b65719
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16975,14 +16975,14 @@ $ docker pull rabbitmq@sha256:9997af5519a25951ee006a0b2bd9f91005cb7d2e31c2da2ec1
 ### `rabbitmq:management` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:caab9e7a0f698b63c6f799c8270fba76656cfa9c6fa31bbb983b8c2051e80e47
+$ docker pull rabbitmq@sha256:5817edaf96eb251d05ce228bd9551e68d94ca55b63837376667676b9ac1bfe10
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.0 MB (92039463 bytes)**  
+-	Total Size: **92.0 MB (92039544 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b46cdfa8ade610a2c90205dd14551174b415930dc1c839392ba1672fdb48923a`
+-	Image ID: `sha256:92c743b6c05503cf3c4fa7ce5ec1420e0ee3d541d479ea7d1d702c023201b2f1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -17042,21 +17042,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:22:48 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:22:48 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:01 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:26:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:01 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:22:49 GMT
+# Wed, 30 Dec 2020 19:26:02 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:23:03 GMT
+# Wed, 30 Dec 2020 19:26:09 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:23:05 GMT
+# Wed, 30 Dec 2020 19:26:10 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:23:23 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:23:24 GMT
+# Wed, 30 Dec 2020 19:26:20 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:26:20 GMT
 EXPOSE 15671 15672
 ```
 
@@ -17097,34 +17097,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:25:43 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a70b21779fa5bdd0bafc80d418e50c06544b535875a3cd7433d3eb88955f8abb`  
-		Last Modified: Mon, 21 Dec 2020 21:25:42 GMT  
-		Size: 4.7 KB (4684 bytes)  
+	-	`sha256:270bdce587ffce163d921bf81efd614bd2e27ce0485557dcd11d277f62662847`  
+		Last Modified: Wed, 30 Dec 2020 19:27:28 GMT  
+		Size: 4.7 KB (4737 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fd0072ee2720dd8a8f450635cf420f1fea16b6d3eea1ae22a19e06b861731f9`  
-		Last Modified: Mon, 21 Dec 2020 21:25:52 GMT  
-		Size: 204.0 B  
+	-	`sha256:2fd9a3d58ba8571d65823a40df35351bd451785ca4e80bfe22491244dd3ef76b`  
+		Last Modified: Wed, 30 Dec 2020 19:27:35 GMT  
+		Size: 205.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25b26b1c16ac73259196f89afb4957fc68c57e59d2d382d9ae9b597c6680e583`  
-		Last Modified: Mon, 21 Dec 2020 21:25:52 GMT  
-		Size: 212.0 B  
+	-	`sha256:ee5169b771e7cd83e747c808766eb1f5a5e2bd6d0d0fb04b350f1e5b9ef3ec77`  
+		Last Modified: Wed, 30 Dec 2020 19:27:35 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef0315782200131d5a7f8f4c719c5e58b5465459803560567dcad8169ef82f25`  
-		Last Modified: Mon, 21 Dec 2020 21:25:54 GMT  
-		Size: 10.8 MB (10784677 bytes)  
+	-	`sha256:3aa74f31fb630fc14e43e78f73f4572c8168d4edd15b2097d257f9a38427bac1`  
+		Last Modified: Wed, 30 Dec 2020 19:27:37 GMT  
+		Size: 10.8 MB (10784703 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:management` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:0dfa19bc0eb5901bf43d1e02f58dcb4d22a936cea23e43297ab40f3a97457f88
+$ docker pull rabbitmq@sha256:beedb56f997882827b8eb325ae0b4923f33d709012e7850cfc8712e6795ecdbe
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.1 MB (84088974 bytes)**  
+-	Total Size: **84.1 MB (84089257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfc34893d9bf316f65b33188e45b4c326581fb5de390a476d58a32848473a6e0`
+-	Image ID: `sha256:2ed684f6e04ada5aa4b49e6f4162ce082ea94ab64745a199ac07bce64b1a9dde`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -17184,21 +17184,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:56:17 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:56:18 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:56:20 GMT
+# Wed, 30 Dec 2020 20:00:06 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 20:00:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:56:21 GMT
+# Wed, 30 Dec 2020 20:00:09 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:56:22 GMT
+# Wed, 30 Dec 2020 20:00:11 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:56:39 GMT
+# Wed, 30 Dec 2020 20:00:22 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:56:41 GMT
+# Wed, 30 Dec 2020 20:00:25 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:57:01 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:57:02 GMT
+# Wed, 30 Dec 2020 20:01:04 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 20:01:14 GMT
 EXPOSE 15671 15672
 ```
 
@@ -17239,34 +17239,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:59:37 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:809bcb7f15b169320005044c3c0d6e43d0f11d4a27f9b46038d2885412263fda`  
-		Last Modified: Mon, 21 Dec 2020 21:59:37 GMT  
-		Size: 4.7 KB (4687 bytes)  
+	-	`sha256:a023e57cdec86e2827d62cc3578dd18bd2855c2796d52ef667c2042eabb72225`  
+		Last Modified: Wed, 30 Dec 2020 20:03:28 GMT  
+		Size: 4.7 KB (4739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66840693e7ddc42cce56fbdc1fdbc79ff44cccd36d4b715121e8aaf42d7a8a38`  
-		Last Modified: Mon, 21 Dec 2020 21:59:51 GMT  
-		Size: 203.0 B  
+	-	`sha256:d84169be217210ce1b41d291d935e91d841aedc985a3e94426dcd35622a44397`  
+		Last Modified: Wed, 30 Dec 2020 20:03:43 GMT  
+		Size: 201.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27b3bbdf951bb168123396f6fa40013ba8f337f86e1eed1e98a354d8ca7d22be`  
-		Last Modified: Mon, 21 Dec 2020 21:59:51 GMT  
-		Size: 215.0 B  
+	-	`sha256:a87b222157b6ad1a1801b7b458f7226dacf0c56961acedb1588d9ea4cb3ae75b`  
+		Last Modified: Wed, 30 Dec 2020 20:03:39 GMT  
+		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d00934f1fcb49b5b777ccce58b739261dcb2c9898b799375ff87e46993e2e3e1`  
-		Last Modified: Mon, 21 Dec 2020 21:59:55 GMT  
-		Size: 9.7 MB (9748939 bytes)  
+	-	`sha256:fd75f4cb5fac277911f1050502d34a2d88505916bcba0a8824e481ff11baf9d6`  
+		Last Modified: Wed, 30 Dec 2020 20:03:44 GMT  
+		Size: 9.7 MB (9749170 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:management` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:ff933c09f74066e068918cbda25ac8246a2c30ed9fba0975aa17cdfa8ad77fc8
+$ docker pull rabbitmq@sha256:56823b3ef6c4f89ac3797ead861cf6e5e5438ede9abfebd3e4a3eb5b2da0fedd
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.7 MB (86720669 bytes)**  
+-	Total Size: **86.7 MB (86720853 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf555d36ea3ecf1b819926f424f1be5f7989323094e1c9b8bfbbfb82fb6255eb`
+-	Image ID: `sha256:c732d16e7f3f1d89dad1c2e6c6c697aac8172748e81f241e1d31e50edd569660`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -17326,21 +17326,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:14:33 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:14:33 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:14:34 GMT
+# Wed, 30 Dec 2020 19:42:42 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:42:42 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:14:35 GMT
+# Wed, 30 Dec 2020 19:42:43 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:14:35 GMT
+# Wed, 30 Dec 2020 19:42:44 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:14:52 GMT
+# Wed, 30 Dec 2020 19:42:53 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:14:54 GMT
+# Wed, 30 Dec 2020 19:42:55 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:15:12 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:15:13 GMT
+# Wed, 30 Dec 2020 19:43:13 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:43:14 GMT
 EXPOSE 15671 15672
 ```
 
@@ -17381,34 +17381,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:17:34 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a6de5385e6457d1e4321576d39b1e5130c98430f4d60b1955d7e966f850dc59`  
-		Last Modified: Mon, 21 Dec 2020 21:17:34 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:d316dc06638d1a456656255f63ea5aee11d442596b795cfaf099423f64ef8750`  
+		Last Modified: Wed, 30 Dec 2020 19:44:50 GMT  
+		Size: 4.7 KB (4736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91cfe47ed6f40dbc3275d4c6962b672144c408f0d5700125c53947c87f6de465`  
-		Last Modified: Mon, 21 Dec 2020 21:17:46 GMT  
-		Size: 204.0 B  
+	-	`sha256:8e3f7b33a12597e3388ae0837810252e465e7be64fc26b5d93ed2a70bdd3d117`  
+		Last Modified: Wed, 30 Dec 2020 19:45:00 GMT  
+		Size: 203.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:475799f54d72f1d4b6436d9bf55e744ccb19aed89bd07dfb970b9ccf58e813b1`  
-		Last Modified: Mon, 21 Dec 2020 21:17:47 GMT  
-		Size: 215.0 B  
+	-	`sha256:9a2bf3cd7876225295d396e8c018001ef0b6ac3092832564e8345b159bae305b`  
+		Last Modified: Wed, 30 Dec 2020 19:45:00 GMT  
+		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01bbbef83e3cc279efcd6e2deb339adda4a0982c5d5dd988aa6e7557b5ccac7b`  
-		Last Modified: Mon, 21 Dec 2020 21:17:50 GMT  
-		Size: 10.2 MB (10152274 bytes)  
+	-	`sha256:63fc23bcaae40f3b9cbb066b1f5fb24c7e68b629859a07e7d03cd893e6f24e11`  
+		Last Modified: Wed, 30 Dec 2020 19:45:04 GMT  
+		Size: 10.2 MB (10152407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:management` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:60557abf16e6c3055b7b4c6a7f95ceda796718df99a8a970aafaa8d6ff86473b
+$ docker pull rabbitmq@sha256:a45b18ea569e7d1a1d2693b0f67e0f9965809a37b65b4c81d54ec040ddfb06ff
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **91.5 MB (91462251 bytes)**  
+-	Total Size: **91.5 MB (91462406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:657fd11ee5978a4d0035fa42372ce270f914a2b6207a3f0ee94b87ed91b6de66`
+-	Image ID: `sha256:f6107b22db414223bb68cc90253e0f886a811d9ebbf6e40ac1a72ecc136580ae`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -17468,21 +17468,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:57:44 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:57:44 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:57:44 GMT
+# Wed, 30 Dec 2020 19:40:27 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:40:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:57:45 GMT
+# Wed, 30 Dec 2020 19:40:28 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:57:45 GMT
+# Wed, 30 Dec 2020 19:40:28 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:57:55 GMT
+# Wed, 30 Dec 2020 19:40:34 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:57:56 GMT
+# Wed, 30 Dec 2020 19:40:35 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:58:08 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:58:08 GMT
+# Wed, 30 Dec 2020 19:40:46 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:40:46 GMT
 EXPOSE 15671 15672
 ```
 
@@ -17523,21 +17523,21 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 22:00:14 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85a2d0ab60e03adf7f47b2f62aa5d20442a78f6aefbdf3018fc7e1e12f489175`  
-		Last Modified: Mon, 21 Dec 2020 22:00:14 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:c34b67e8e81467e6bb600baa6e8364e4cefa168bd337a16798a82fc02315030f`  
+		Last Modified: Wed, 30 Dec 2020 19:42:01 GMT  
+		Size: 4.7 KB (4736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c847c642852bec25e88c7e958e15c7a6001ed0bff68618ab853bcc789af4a65b`  
-		Last Modified: Mon, 21 Dec 2020 22:00:24 GMT  
-		Size: 203.0 B  
+	-	`sha256:412b74ad3ceca51a26eb9323cc8cf64e1d022221e797f8e65e2c47ff084d6efd`  
+		Last Modified: Wed, 30 Dec 2020 19:42:10 GMT  
+		Size: 205.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fc6ad6b0a8faa63937ca77620cfd80ef11707730d327fc6dd56a3e2df042119`  
-		Last Modified: Mon, 21 Dec 2020 22:00:24 GMT  
-		Size: 211.0 B  
+	-	`sha256:72d13b4668b41110f822630b0d4235b568076f0768bd57b9480dcf11b01f884e`  
+		Last Modified: Wed, 30 Dec 2020 19:42:10 GMT  
+		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86e424135ff2941938c2f97611b84b943c28454d0ea0c70ece286007dbe1f932`  
-		Last Modified: Mon, 21 Dec 2020 22:00:27 GMT  
-		Size: 10.9 MB (10854165 bytes)  
+	-	`sha256:bbc27a9f929d8b7be87c8a29c3df57f7c4ef894e8aefdf30d248fabaf10b49af`  
+		Last Modified: Wed, 30 Dec 2020 19:42:13 GMT  
+		Size: 10.9 MB (10854263 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:management` - linux; ppc64le
@@ -17676,14 +17676,14 @@ EXPOSE 15671/tcp 15672/tcp
 ### `rabbitmq:management` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:dcdefbc8648e9d1f758e9831f9b9c5f09778cb1b255fbdbc7ba8137429162e62
+$ docker pull rabbitmq@sha256:39aa80f7dfb56c33adc563db365be1189d0a8173178fe3865793d9819d98f6f1
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **89.0 MB (89015277 bytes)**  
+-	Total Size: **89.0 MB (89015323 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:664a447e83b6df4f387f7ef4d6785bb143d1eb53b31b14269bfff5449491c9ff`
+-	Image ID: `sha256:ab8721b912e7a63477eef2663e5bc6470a22e198b7e9dda66d7c478486faa6c1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -17743,21 +17743,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:10:49 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:10:50 GMT
-COPY file:f5769ccac78dc9dd6aa3f4dc79e96ef3f91886952a4f45c81a1451ab514cee12 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:10:50 GMT
+# Wed, 30 Dec 2020 19:45:22 GMT
+COPY file:e831c8b014fd615ce5739ce6a9b48c55131aa392e069678dc482522f57362044 in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:45:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:10:51 GMT
+# Wed, 30 Dec 2020 19:45:23 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:10:51 GMT
+# Wed, 30 Dec 2020 19:45:24 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:11:09 GMT
+# Wed, 30 Dec 2020 19:45:34 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:11:10 GMT
+# Wed, 30 Dec 2020 19:45:35 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:11:27 GMT
-RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; apt-get install -y --no-install-recommends python3; rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:11:29 GMT
+# Wed, 30 Dec 2020 19:45:48 GMT
+RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apt-get update; 	apt-get install -y --no-install-recommends python3; 	rm -rf /var/lib/apt/lists/*; 	rabbitmqadmin --version
+# Wed, 30 Dec 2020 19:45:50 GMT
 EXPOSE 15671 15672
 ```
 
@@ -17798,27 +17798,27 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:13:42 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f551312615b55dc3338f141b07b2dd5035f85cc5dda0513b1813a8c651913a9c`  
-		Last Modified: Mon, 21 Dec 2020 21:13:42 GMT  
-		Size: 4.7 KB (4685 bytes)  
+	-	`sha256:715c0199636e35ac1528cc930cddbfa6d779c67aac0fd7a7b4669c3c486c1697`  
+		Last Modified: Wed, 30 Dec 2020 19:47:28 GMT  
+		Size: 4.7 KB (4738 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:485a4f31c11434315e7206651c0aca0e05d875184787e08096d9642616f57a2c`  
-		Last Modified: Mon, 21 Dec 2020 21:13:54 GMT  
-		Size: 204.0 B  
+	-	`sha256:d6fd5025184ec18b1d0966267e321c1095c4deef4a75e7471a1e1bdd78fa8b06`  
+		Last Modified: Wed, 30 Dec 2020 19:47:37 GMT  
+		Size: 202.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af257ef72de4e2a5479f4c59aafc913ee02a2c6611b8d0adbad2f65bf4a37892`  
-		Last Modified: Mon, 21 Dec 2020 21:13:54 GMT  
+	-	`sha256:9012f027423da1f35c0f72674f0d4a4aeeffdb1fa08178a0da2cf9bfc0779753`  
+		Last Modified: Wed, 30 Dec 2020 19:47:37 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b66f7ca165876a3c11c6bd61ddb7e4701dee4cc8ecfd0dc5160d6bf4bb7aa548`  
-		Last Modified: Mon, 21 Dec 2020 21:13:56 GMT  
-		Size: 10.4 MB (10408045 bytes)  
+	-	`sha256:d15460241813a075ce550350e1f5daccf66929ad0bc98aacc51995a3a93ba408`  
+		Last Modified: Wed, 30 Dec 2020 19:47:39 GMT  
+		Size: 10.4 MB (10408040 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rabbitmq:management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:6296b3507309978d1ef673de155edc3c713b1be674d46e3191be3a0dbc715557
+$ docker pull rabbitmq@sha256:0ac9a7f792aa031dff1d133b2d5febfe01a63a9f8aa0d5a9357467e0b8d75a67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17834,14 +17834,14 @@ $ docker pull rabbitmq@sha256:6296b3507309978d1ef673de155edc3c713b1be674d46e3191
 ### `rabbitmq:management-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:f9cde149e753a99f1fd28f63aa5b3cd4182a31d4f0be412cbe41ba5117ed7a26
+$ docker pull rabbitmq@sha256:43fb8dd7521f5284cef969e6f5c95067b4ab8b8e4f708a7cfb0fe65ba46857ad
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.2 MB (70211578 bytes)**  
+-	Total Size: **70.2 MB (70211688 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:55b8b1f0ad357ec63f5b49cb0998e13499c7b9cc1aae39818020f5be0aa242bc`
+-	Image ID: `sha256:0024eab10efba45d1b114683d0d29995eef9915e501e857d037af2074971b486`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -17895,21 +17895,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:23:54 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:23:54 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:23:55 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:26:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:23:55 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:23:56 GMT
+# Wed, 30 Dec 2020 19:26:25 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:24:07 GMT
+# Wed, 30 Dec 2020 19:26:32 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:24:09 GMT
+# Wed, 30 Dec 2020 19:26:33 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:24:15 GMT
+# Wed, 30 Dec 2020 19:26:37 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:24:15 GMT
+# Wed, 30 Dec 2020 19:26:37 GMT
 EXPOSE 15671 15672
 ```
 
@@ -17942,34 +17942,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:26:02 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cb78fbd941cff7c68255fa8bd23f659cdb876c95f3b24a28bf80f79fadd05fe`  
-		Last Modified: Mon, 21 Dec 2020 21:26:01 GMT  
-		Size: 4.7 KB (4687 bytes)  
+	-	`sha256:f2babd5cc60632de330fc6bbc2496cb0c80dc173f0725d4acbd53461877022eb`  
+		Last Modified: Wed, 30 Dec 2020 19:27:45 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6485f949ba043525dce62d89c19ef666c6c4c18c49cdcf7e786c0eddb3010ac3`  
-		Last Modified: Mon, 21 Dec 2020 21:26:10 GMT  
-		Size: 203.0 B  
+	-	`sha256:73954fbfba964069767cd88c24cc23c5840f77ca12bb7100a05aea5c6dfc8284`  
+		Last Modified: Wed, 30 Dec 2020 19:27:51 GMT  
+		Size: 206.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1e71d8aff99582c3c8b8472838d6fc7c0eb609937642d1a6631f4c8d733f008`  
-		Last Modified: Mon, 21 Dec 2020 21:26:11 GMT  
-		Size: 217.0 B  
+	-	`sha256:2e2fede618a7af8abbc7b6ef75e12b4b723fb827b9e6eceedc4bcc2e84223f4b`  
+		Last Modified: Wed, 30 Dec 2020 19:27:51 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f0469d674658ebd89fe7ed2cddd4f7614640a7177ed562b0d33a42f73fed452`  
-		Last Modified: Mon, 21 Dec 2020 21:26:13 GMT  
-		Size: 13.9 MB (13913954 bytes)  
+	-	`sha256:daa111566ce1231aaed62ff66674441a19c2987f6cfd9fdc1dde6f8e0dde720e`  
+		Last Modified: Wed, 30 Dec 2020 19:27:54 GMT  
+		Size: 13.9 MB (13914011 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:management-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:8c6895a5246c86cca3b0546e14ce7276c94dd034b5592abf810302bcc353994c
+$ docker pull rabbitmq@sha256:5b32f7f62c53b95bef044acfe9fca35ec93f5171eeea9fe040a50d7a22124687
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.8 MB (68839116 bytes)**  
+-	Total Size: **68.8 MB (68839194 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac99694c32b973c4a954040de819b8481abad0e308a9cd8612ced18260f674ef`
+-	Image ID: `sha256:5ab0b104427697667658f058040ee7ffe71161297446762c2c997062a7fc9e8c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -18023,21 +18023,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 20:27:47 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 20:27:48 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 20:27:49 GMT
+# Wed, 30 Dec 2020 19:53:05 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:53:05 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 20:27:51 GMT
+# Wed, 30 Dec 2020 19:53:06 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 20:27:52 GMT
+# Wed, 30 Dec 2020 19:53:06 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 20:28:11 GMT
+# Wed, 30 Dec 2020 19:53:23 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 20:28:14 GMT
+# Wed, 30 Dec 2020 19:53:24 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 20:28:25 GMT
+# Wed, 30 Dec 2020 19:53:34 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 20:28:33 GMT
+# Wed, 30 Dec 2020 19:53:35 GMT
 EXPOSE 15671 15672
 ```
 
@@ -18070,34 +18070,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 20:29:26 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ff513de4dd23048dbd5d310760f506eac90a24aded5f1df947a7792b2771552`  
-		Last Modified: Mon, 21 Dec 2020 20:29:26 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:aaa640cc54980092a29e3221dbca162a7b4d513fa3d6a6b791259d7cf27fd461`  
+		Last Modified: Wed, 30 Dec 2020 19:54:17 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d7637e44c151d6b8e927c54c1bf667ce39008a6c5a3729cd8d51bee111f9a688`  
-		Last Modified: Mon, 21 Dec 2020 20:29:41 GMT  
-		Size: 206.0 B  
+	-	`sha256:de56c07f1f9986f57f146efe3597fa059f07fd73538fb250012f08ce4f42a9dd`  
+		Last Modified: Wed, 30 Dec 2020 19:54:29 GMT  
+		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51b0826caa8503cef50b97f38e84c1df17593374018c72c376233e5d2dc8ce3a`  
-		Last Modified: Mon, 21 Dec 2020 20:29:40 GMT  
-		Size: 217.0 B  
+	-	`sha256:75a5f926e066999f650d29151fb4fa88928b29b5068a62734aaa51f375f03341`  
+		Last Modified: Wed, 30 Dec 2020 19:54:29 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85e51d9e631c4b109783b75240285c17eda9b5daf9a5c3534cc3ed4b7e807a3e`  
-		Last Modified: Mon, 21 Dec 2020 20:29:45 GMT  
-		Size: 13.8 MB (13806045 bytes)  
+	-	`sha256:860fc3eb8dba7a666aa867dd727f1c061a2bca9f3f94b7ddbdd2a39a3c5daf22`  
+		Last Modified: Wed, 30 Dec 2020 19:54:34 GMT  
+		Size: 13.8 MB (13806066 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:management-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:d3ff996a202e6148efb7fb0ef6eb6b565a1c633ea2acda451d8f941b20d6197c
+$ docker pull rabbitmq@sha256:87f4c65596455400052d8dbf6eb72e71063a287407078a900ef946805d44a4b3
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **67.8 MB (67792903 bytes)**  
+-	Total Size: **67.8 MB (67792992 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2c8cb9657c86a1b09235860c6a2432b5a5096024f6f62930744222cfd893d30`
+-	Image ID: `sha256:e0797a6600edfd27fd6a3ba44aed66b80b60574f94403d7707bbff1af578964e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -18151,21 +18151,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:57:30 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:57:30 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:57:31 GMT
+# Wed, 30 Dec 2020 20:01:26 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 20:01:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:57:32 GMT
+# Wed, 30 Dec 2020 20:01:29 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:57:32 GMT
+# Wed, 30 Dec 2020 20:01:33 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:57:41 GMT
+# Wed, 30 Dec 2020 20:01:46 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:57:42 GMT
+# Wed, 30 Dec 2020 20:01:52 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:57:50 GMT
+# Wed, 30 Dec 2020 20:02:03 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:57:52 GMT
+# Wed, 30 Dec 2020 20:02:06 GMT
 EXPOSE 15671 15672
 ```
 
@@ -18198,34 +18198,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 22:00:07 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:405923efb87b55d63663d6717536d2e7816b929f95995f79b56644074c085374`  
-		Last Modified: Mon, 21 Dec 2020 22:00:06 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:dc26b7a85465f92a028f91eb9ac826ac88c96ad49b59bc2bd01d5affa243e5cf`  
+		Last Modified: Wed, 30 Dec 2020 20:03:57 GMT  
+		Size: 4.7 KB (4742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f63c123e1c5858cbbcd705a7236477c4083e167d70475c0e7b9c933222e8b5af`  
-		Last Modified: Mon, 21 Dec 2020 22:00:18 GMT  
-		Size: 204.0 B  
+	-	`sha256:98b59469f4b40e2a21c86504c11e0fd79800cfb3f4e533763cd193ddc4f0310d`  
+		Last Modified: Wed, 30 Dec 2020 20:04:08 GMT  
+		Size: 206.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59b37145753fc564b158eddb20c3aee4ac5d2aa584d1eb65eb2300b25a8d4811`  
-		Last Modified: Mon, 21 Dec 2020 22:00:18 GMT  
-		Size: 215.0 B  
+	-	`sha256:056c804e32d327452a79b39e284b7b6614cf76c4c93c0b5e3e5160441a9fa208`  
+		Last Modified: Wed, 30 Dec 2020 20:04:09 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eac93f09b55a4517d241cc597a980278f9d2c4d5298b6b9aea0fc1b9386164e7`  
-		Last Modified: Mon, 21 Dec 2020 22:00:24 GMT  
-		Size: 13.5 MB (13451767 bytes)  
+	-	`sha256:81b2c351ea2954fdba3fc65702304bda807e67a25f7f21b3276b519950e5ed20`  
+		Last Modified: Wed, 30 Dec 2020 20:04:13 GMT  
+		Size: 13.5 MB (13451793 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:management-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:311031ed7f513f8a19d3d408d72b1e1e7505ba1903996dd1b21b809240b31834
+$ docker pull rabbitmq@sha256:8e211c2f3e1da29e36a77f9ccee623db652d88e9e277116cdbd358cf69d1e3b7
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.8 MB (69831780 bytes)**  
+-	Total Size: **69.8 MB (69831903 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53fa39e86fb0f404ee25edfda0f5fb5aa95110eac7b1210bd5beba114e8ea222`
+-	Image ID: `sha256:82577537ca68b9a9e840886c95286f2e8c0639112008576c5ba6118fd485d5ea`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -18279,21 +18279,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:15:39 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:15:40 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:15:40 GMT
+# Wed, 30 Dec 2020 19:43:21 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:43:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:15:41 GMT
+# Wed, 30 Dec 2020 19:43:23 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:15:41 GMT
+# Wed, 30 Dec 2020 19:43:23 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:15:54 GMT
+# Wed, 30 Dec 2020 19:43:33 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:15:56 GMT
+# Wed, 30 Dec 2020 19:43:35 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:16:03 GMT
+# Wed, 30 Dec 2020 19:43:41 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:16:04 GMT
+# Wed, 30 Dec 2020 19:43:42 GMT
 EXPOSE 15671 15672
 ```
 
@@ -18326,34 +18326,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:18:01 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14875f737f50cad14c7b49b22da3175ac58e0fce241c0b46c3e31878378f276a`  
-		Last Modified: Mon, 21 Dec 2020 21:18:01 GMT  
-		Size: 4.7 KB (4683 bytes)  
+	-	`sha256:56528dbe21e927342285867ed6cddd3dba0640ae6c9f1a8b91883599fc5b1435`  
+		Last Modified: Wed, 30 Dec 2020 19:45:14 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddd37dfd22e5121e980c8748a827525a5feb0c65cc6ebbcf6134b7d42ad2a1b9`  
-		Last Modified: Mon, 21 Dec 2020 21:18:12 GMT  
+	-	`sha256:faa23018462bd8df5af44c6dae8afbd49f08ef583e26bf0ad6b039cedd40009f`  
+		Last Modified: Wed, 30 Dec 2020 19:45:24 GMT  
 		Size: 203.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27929c056cc7c60039761d2de7400bdb168f74287e0fd93f478d559b6a27d00a`  
-		Last Modified: Mon, 21 Dec 2020 21:18:12 GMT  
-		Size: 216.0 B  
+	-	`sha256:2d7387d46c773dc96ccd08875ac0d4c0c81b61dd06043b19a1b446259af9b504`  
+		Last Modified: Wed, 30 Dec 2020 19:45:25 GMT  
+		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a6a92c15a45c9abe2a8d36bc7edc7cb9ad9fbc39bbb339ad24ca29fe550ef89`  
-		Last Modified: Mon, 21 Dec 2020 21:18:16 GMT  
-		Size: 14.0 MB (14034134 bytes)  
+	-	`sha256:58eefdfd97b56a36e4913884b1b0b9dd489e54714f38c122b685fcc116ae19d2`  
+		Last Modified: Wed, 30 Dec 2020 19:45:29 GMT  
+		Size: 14.0 MB (14034198 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:management-alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:fa01fe4000a9ecf3dde7809ee2a0039203da266d277a71c681066ec20ab91bb8
+$ docker pull rabbitmq@sha256:e026651d259b0312b77f45fd83439a719f2ebea0b5771513804aca680e38c254
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.4 MB (70355618 bytes)**  
+-	Total Size: **70.4 MB (70355699 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf3f119c604f65a1076ccde9abff0253c572391e206a5b1d0f52f3d2c699e103`
+-	Image ID: `sha256:fa4cc56aa2676a1cf93c86d73b546a943c8813bc181681df6e49c7a0ec562835`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -18407,21 +18407,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:58:26 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:58:26 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:58:26 GMT
+# Wed, 30 Dec 2020 19:40:51 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:40:51 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:58:27 GMT
+# Wed, 30 Dec 2020 19:40:51 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:58:27 GMT
+# Wed, 30 Dec 2020 19:40:52 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:58:34 GMT
+# Wed, 30 Dec 2020 19:40:58 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:58:35 GMT
+# Wed, 30 Dec 2020 19:40:59 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:58:39 GMT
+# Wed, 30 Dec 2020 19:41:03 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:58:40 GMT
+# Wed, 30 Dec 2020 19:41:03 GMT
 EXPOSE 15671 15672
 ```
 
@@ -18454,34 +18454,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 22:00:39 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f2c80698bb9d8704065a0e05336bc0fd3584f0c0905349e317a7ed62fb7c1f2`  
-		Last Modified: Mon, 21 Dec 2020 22:00:39 GMT  
-		Size: 4.7 KB (4688 bytes)  
+	-	`sha256:59f1fe9bcefab434482b7f7288565ac945fa36b959a170a2a64d199d02b94e18`  
+		Last Modified: Wed, 30 Dec 2020 19:42:21 GMT  
+		Size: 4.7 KB (4741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf51104041609f5634093a57d60d985a2ea1bd72b7dab323b5a4183eb3e7757d`  
-		Last Modified: Mon, 21 Dec 2020 22:00:47 GMT  
-		Size: 203.0 B  
+	-	`sha256:447289af781f01c8c9f345d5ec5ad796b4424bd2e1fb1097d2962dd7e90044ea`  
+		Last Modified: Wed, 30 Dec 2020 19:42:28 GMT  
+		Size: 206.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be71de220f38d4a87a99292740c13e14684355e0d6e546a5ec6bc22854243c7d`  
-		Last Modified: Mon, 21 Dec 2020 22:00:47 GMT  
+	-	`sha256:03fecfe7b90e39ca1991a1809fbf3e99cfe3e96c3ff5c468d208d1573f73c2fe`  
+		Last Modified: Wed, 30 Dec 2020 19:42:28 GMT  
 		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0755fb7c5d02e009663b064e10ef3f80ed6160654c781f665128434c45435046`  
-		Last Modified: Mon, 21 Dec 2020 22:00:51 GMT  
-		Size: 14.0 MB (14033253 bytes)  
+	-	`sha256:0f6eff7e389f96b26033cc439230a8d6c49f145a524d3bc5e4309e47beda3c44`  
+		Last Modified: Wed, 30 Dec 2020 19:42:31 GMT  
+		Size: 14.0 MB (14033278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:management-alpine` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:03bd7995d18b210c1f9ae1688fc3fbec7a8290e5297931549210e17f7146a120
+$ docker pull rabbitmq@sha256:b927beb674ab1c706ba964425bcec956e30496d76b1f8bdd6a4538fd8a32d0fd
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.1 MB (71067269 bytes)**  
+-	Total Size: **71.1 MB (71067414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4c38ace055deef7a8f70534384877be7cd3d5b5c867e12c02868b31838d0e28`
+-	Image ID: `sha256:5bfa0a765a46f35ff5694b8b0736c9e06d44c381bfef190557413fe1596c8a19`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -18535,21 +18535,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 22:52:34 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 22:52:41 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 22:52:53 GMT
+# Wed, 30 Dec 2020 19:24:06 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:24:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 22:53:03 GMT
+# Wed, 30 Dec 2020 19:24:19 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 22:53:10 GMT
+# Wed, 30 Dec 2020 19:24:23 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 22:53:34 GMT
+# Wed, 30 Dec 2020 19:24:46 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 22:53:46 GMT
+# Wed, 30 Dec 2020 19:25:04 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 22:54:10 GMT
+# Wed, 30 Dec 2020 19:25:45 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 22:54:19 GMT
+# Wed, 30 Dec 2020 19:25:50 GMT
 EXPOSE 15671 15672
 ```
 
@@ -18582,34 +18582,34 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 22:55:25 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cee0c2d9ae9a07115a54df13110463d0aaede6a6717df6d3ff9e9dde2dac2028`  
-		Last Modified: Mon, 21 Dec 2020 22:55:25 GMT  
-		Size: 4.7 KB (4684 bytes)  
+	-	`sha256:fce3ef73d2c7a0478979a89000081b5d9d2388f512410a31e8c85a0e71d18a72`  
+		Last Modified: Wed, 30 Dec 2020 19:26:44 GMT  
+		Size: 4.7 KB (4741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d05dbff4b30f2b0cd0cd684ca377334cf537d136fe583de4c1d412d49c319b3`  
-		Last Modified: Mon, 21 Dec 2020 22:55:44 GMT  
-		Size: 204.0 B  
+	-	`sha256:68e523cb740c4d9a3e16c5124208952bc0996ab987723bc0a33a75cc3132d02e`  
+		Last Modified: Wed, 30 Dec 2020 19:27:00 GMT  
+		Size: 205.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c3c21640a6fbc831ba3c6f2dfe501c921cd89cf93d2e72e2d990ed741da7836`  
-		Last Modified: Mon, 21 Dec 2020 22:55:45 GMT  
-		Size: 218.0 B  
+	-	`sha256:b7577cfe0f73fdccbec9364213b7893df71c24bf8882985286e0766efef1cd64`  
+		Last Modified: Wed, 30 Dec 2020 19:27:01 GMT  
+		Size: 219.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2da56f210eb60b04939d28ed0b492c1d0368201ce07f81124304f8dce3a7dce`  
-		Last Modified: Mon, 21 Dec 2020 22:55:51 GMT  
-		Size: 14.4 MB (14363506 bytes)  
+	-	`sha256:72c7d4240e6537122d9c9c0e0920dca634c8d9a924a2fbb0ca8d4c1d644548be`  
+		Last Modified: Wed, 30 Dec 2020 19:27:05 GMT  
+		Size: 14.4 MB (14363592 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:management-alpine` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:d25d54423ece0a052f88b5364a25bfd26cbd3f0c8ffbaa2715f794b7dfe5f5ac
+$ docker pull rabbitmq@sha256:48d9eb7f69b071a761b32c59660a98c10d2f3338c46edfd947f2944141f608a5
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.1 MB (69053205 bytes)**  
+-	Total Size: **69.1 MB (69053273 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d95faa1cac6cc49ae1e4e3520b6d8d099e6fff8bf1dadf554be1d631e20ba3ba`
+-	Image ID: `sha256:df7b8802903b0daae2f6b1ac4930085647338dc0375d635bc54dde1a3c1c426c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -18663,21 +18663,21 @@ ENV HOME=/var/lib/rabbitmq
 VOLUME [/var/lib/rabbitmq]
 # Mon, 21 Dec 2020 21:11:58 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 21 Dec 2020 21:11:58 GMT
-COPY file:d20c7b217d87611096141bdd588ca057f045fc30259ab68d0c655c78d6b74903 in /usr/local/bin/ 
-# Mon, 21 Dec 2020 21:11:59 GMT
+# Wed, 30 Dec 2020 19:45:56 GMT
+COPY file:74d40bf2d6957151054506f09cf26d578eb2c9f886804819b1ec19d25102eb0a in /usr/local/bin/ 
+# Wed, 30 Dec 2020 19:45:56 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 21 Dec 2020 21:11:59 GMT
+# Wed, 30 Dec 2020 19:45:57 GMT
 EXPOSE 15691 15692 25672 4369 5671 5672
-# Mon, 21 Dec 2020 21:12:00 GMT
+# Wed, 30 Dec 2020 19:45:57 GMT
 CMD ["rabbitmq-server"]
-# Mon, 21 Dec 2020 21:12:11 GMT
+# Wed, 30 Dec 2020 19:46:09 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Mon, 21 Dec 2020 21:12:12 GMT
+# Wed, 30 Dec 2020 19:46:10 GMT
 RUN rm -f /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
-# Mon, 21 Dec 2020 21:12:18 GMT
+# Wed, 30 Dec 2020 19:46:17 GMT
 RUN set -eux; 	erl -noinput -eval ' 		{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> 			case Acc of 				"" -> 					case lists:suffix("/rabbitmqadmin", FileInArchive) of 						true -> GetBin(); 						false -> Acc 					end; 				_ -> Acc 			end 		end, "", init:get_plain_arguments()), 		io:format("~s", [ AdminBin ]), 		init:stop(). 	' -- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; 	[ -s /usr/local/bin/rabbitmqadmin ]; 	chmod +x /usr/local/bin/rabbitmqadmin; 	apk add --no-cache python3; 	rabbitmqadmin --version
-# Mon, 21 Dec 2020 21:12:21 GMT
+# Wed, 30 Dec 2020 19:46:20 GMT
 EXPOSE 15671 15672
 ```
 
@@ -18710,19 +18710,19 @@ EXPOSE 15671 15672
 		Last Modified: Mon, 21 Dec 2020 21:14:08 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90a44cd1dca23cd43cd8ea2c86909c4de78874037c39b3cb855f1c01078093b7`  
-		Last Modified: Mon, 21 Dec 2020 21:14:08 GMT  
-		Size: 4.7 KB (4682 bytes)  
+	-	`sha256:33da539e6af749329c881416600f32bebec9923b6b9153586f7ec46910de8091`  
+		Last Modified: Wed, 30 Dec 2020 19:47:49 GMT  
+		Size: 4.7 KB (4743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a15ed1c31c8406e192e66559c1882927e3332a38aff072466a38745bc614a26`  
-		Last Modified: Mon, 21 Dec 2020 21:14:20 GMT  
+	-	`sha256:51453419b8f4b1d816d351d03e9321fcea47c1d6ab7855a5854ed7648ae494c9`  
+		Last Modified: Wed, 30 Dec 2020 19:47:59 GMT  
 		Size: 204.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:082c1510af1aedc7063a1ec0650da2f46034c0294ad03da78c80432d4e1fcaa5`  
-		Last Modified: Mon, 21 Dec 2020 21:14:20 GMT  
+	-	`sha256:df802d34a1cb0d3ca363c773ebb653d0559ae10c4edc93645a1fe99b707489d5`  
+		Last Modified: Wed, 30 Dec 2020 19:47:59 GMT  
 		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afb59acce865f1dab01ef990e3d479837d3f2c76935d01c2eca2f6b999ed37a3`  
-		Last Modified: Mon, 21 Dec 2020 21:14:22 GMT  
-		Size: 14.0 MB (13955534 bytes)  
+	-	`sha256:f2baeab0ed8522a28c7a4be8008cf9f77e9203aefb30b33cbfe42ed5e673e884`  
+		Last Modified: Wed, 30 Dec 2020 19:48:01 GMT  
+		Size: 14.0 MB (13955541 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
