@@ -1,7 +1,7 @@
 ## `rust:alpine3.11`
 
 ```console
-$ docker pull rust@sha256:f70a9dc7c1a73798710975cc9ce6167e9cdec9498d09bc008b9e4ba94b6c875b
+$ docker pull rust@sha256:780ea29c540931995ce5c9a59f97eb6447ed1a0c1cb94904f25b75bbe7c1d0c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull rust@sha256:f70a9dc7c1a73798710975cc9ce6167e9cdec9498d09bc008b9e4b
 ### `rust:alpine3.11` - linux; amd64
 
 ```console
-$ docker pull rust@sha256:4aeabd15e4dd433c5b6b3880ffff8925d6399194ac983c674ba7ab6e3e3e888c
+$ docker pull rust@sha256:6589eea0919dca605297441d3d92c27f3bbdd4949700bcc7c11a86f5402d3096
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.6 MB (208559726 bytes)**  
+-	Total Size: **210.5 MB (210490359 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:132d3cd25cdf311c4ffb024ce3d64ffa44237e4d57bc1b10d73b529ad018c8c3`
+-	Image ID: `sha256:9f259530316d087eb66ce1af09080e9003c1b04c1b8eb193a81fe1ee407c9952`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -29,10 +29,10 @@ ADD file:8ed80010e443da19d72546bcee9a35e0a8d244c72052b1994610bf5939d479c2 in /
 CMD ["/bin/sh"]
 # Thu, 17 Dec 2020 15:04:47 GMT
 RUN apk add --no-cache         ca-certificates         gcc
-# Thu, 17 Dec 2020 15:04:48 GMT
-ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin RUST_VERSION=1.48.0
-# Thu, 17 Dec 2020 15:05:10 GMT
-RUN set -eux;     url="https://static.rust-lang.org/rustup/archive/1.22.1/x86_64-unknown-linux-musl/rustup-init";     wget "$url";     echo "cee31c6f72b953c6293fd5d40142c7d61aa85db2a5ea81b3519fe1b492148dc9 *rustup-init" | sha256sum -c -;     chmod +x rustup-init;     ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host x86_64-unknown-linux-musl;     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;     rustup --version;     cargo --version;     rustc --version;
+# Thu, 31 Dec 2020 20:28:58 GMT
+ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin RUST_VERSION=1.49.0
+# Thu, 31 Dec 2020 20:29:16 GMT
+RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in         x86_64) rustArch='x86_64-unknown-linux-musl'; rustupSha256='05c5c05ec76671d73645aac3afbccf2187352fce7e46fc85be859f52a42797f6' ;;         aarch64) rustArch='aarch64-unknown-linux-musl'; rustupSha256='6a8a480d8d9e7f8c6979d7f8b12bc59da13db67970f7b13161ff409f0a771213' ;;         *) echo >&2 "unsupported architecture: $apkArch"; exit 1 ;;     esac;     url="https://static.rust-lang.org/rustup/archive/1.23.1/${rustArch}/rustup-init";     wget "$url";     echo "${rustupSha256} *rustup-init" | sha256sum -c -;     chmod +x rustup-init;     ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch};     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;     rustup --version;     cargo --version;     rustc --version;
 ```
 
 -	Layers:
@@ -44,9 +44,9 @@ RUN set -eux;     url="https://static.rust-lang.org/rustup/archive/1.22.1/x86_64
 		Last Modified: Thu, 17 Dec 2020 15:06:53 GMT  
 		Size: 36.5 MB (36465795 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ced188ee1b3d5bfc5e53f62098b663c7fd97103754aa442071dfd255015cdddf`  
-		Last Modified: Thu, 17 Dec 2020 15:07:25 GMT  
-		Size: 169.3 MB (169279067 bytes)  
+	-	`sha256:e740614dd6af37bc18312f949af79f4a482188c7c3a280a6e3d7108c077b5dac`  
+		Last Modified: Thu, 31 Dec 2020 20:32:07 GMT  
+		Size: 171.2 MB (171209700 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rust:alpine3.11` - linux; arm64 variant v8
