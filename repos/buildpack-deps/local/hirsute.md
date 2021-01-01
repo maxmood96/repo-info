@@ -83,15 +83,13 @@ Licenses: (parsed from: `/usr/share/doc/libapr1/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apr=1.7.0-4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.7.0-4.dsc' apr_1.7.0-4.dsc 2250 SHA512:21dcd94914ec617055432e03ee8cd345bd50a8601617946eac2586ebce14e7cf7badddc4773cfb6632b764ab55d0a1c2ed61e4ce0cea97af7733ab54270e5978
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.7.0.orig.tar.bz2' apr_1.7.0.orig.tar.bz2 872238 SHA512:3dc42d5caf17aab16f5c154080f020d5aed761e22db4c5f6506917f6bfd2bf8becfb40af919042bd4ce1077d5de74aa666f5edfba7f275efba78e8893c115148
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.7.0.orig.tar.bz2.asc' apr_1.7.0.orig.tar.bz2.asc 801 SHA512:19b2b128c7c4cb40db06149c75325013a716c783e28e366c1bacf289fdb5d305e5779d8dc55a63729250ad3338cd4c726e133c788fe53ab3519f1bc8d4da6f90
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.7.0-4.debian.tar.xz' apr_1.7.0-4.debian.tar.xz 214168 SHA512:938a9fcacb32ccbc273e834d535203d68dfac6c197b245723d3420d1da9f425916b4e9be55825d49b5761e5138c9c756bedf1a478e79c2f55fab33cc97d2e838
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apr/1.7.0-4/
+
 
 ### `dpkg` source package: `apt=2.1.11`
 
@@ -126,15 +124,13 @@ Licenses: (parsed from: `/usr/share/doc/libattr1/copyright`)
 - `LGPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris attr=1:2.4.48-5
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.4.48-5.dsc' attr_2.4.48-5.dsc 2433 SHA512:a4b97acde8c985a74c33c15c9d5b76ca474810b7066f896626ef9b8014b789b71a0769f58ce830f0909a0ff284c0fbc9b85c42b4a3580dd5a878bc69a6d62594
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.4.48.orig.tar.gz' attr_2.4.48.orig.tar.gz 467840 SHA512:75f870a0e6e19b8975f3fdceee786fbaff3eadaa9ab9af01996ffa8e50fe5b2bba6e4c22c44a6722d11b55feb9e89895d0151d6811c1d2b475ef4ed145f0c923
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.4.48.orig.tar.gz.asc' attr_2.4.48.orig.tar.gz.asc 833 SHA512:39e5879d4879003ba5e1fcb727f91f7661cede12692ae128110328a6c1c5a1e2f79a1329ee4d065f3cc3e0d3d18423f5b5a5b170b5cb49c6888de90d31dcaf9c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.4.48-5.debian.tar.xz' attr_2.4.48-5.debian.tar.xz 25560 SHA512:e86a1913d5fdbd6d39a1af776a244a849aa6c7bd20c398b9d9e5512b013c5b47a98e5330b6b182b7811d1e820f46d2a593a2a5486c89fb9584edfda3a21ff49d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/attr/1:2.4.48-5/
+
 
 ### `dpkg` source package: `audit=1:2.8.5-3ubuntu2`
 
@@ -1734,14 +1730,13 @@ Licenses: (parsed from: `/usr/share/doc/libedit2/copyright`)
 
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libedit=3.1-20191231-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libedit/libedit_3.1-20191231-1.dsc' libedit_3.1-20191231-1.dsc 2129 SHA512:0c476e8e3c597e6523c2fe81faf338f5a82f01bacdbfc05a174150566e32ebe2567416b77db457d5021f02fe363d5390ce28129696c233b38c6a13b6c787b025
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libedit/libedit_3.1-20191231.orig.tar.gz' libedit_3.1-20191231.orig.tar.gz 516801 SHA512:1df2eced98e8db1bb0af940678c154d87e3b11dd21e65a903682367f5feace5112f9a543b8e0cb04bbfeaaf73729f808db2d9c302637fc063e81c0a37777ac2c
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libedit/libedit_3.1-20191231-1.debian.tar.xz' libedit_3.1-20191231-1.debian.tar.xz 14168 SHA512:f37f055e333c245e5a2b86c418d462b72da26e7349a292b8a89602d59ed77a9df7621fba6de94f6c2b5e25d74b14190fd463706fa49281dcf6ffa5c0e4f21286
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libedit/3.1-20191231-1/
+
 
 ### `dpkg` source package: `liberror-perl=0.17029-1`
 
@@ -3777,14 +3772,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.9-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.9=3.9.1~rc1-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.9/python3.9_3.9.1~rc1-2.dsc' python3.9_3.9.1~rc1-2.dsc 3443 SHA512:249b241c1c63f9169f4c81cb7577e868472d51e2b4d6dd4c22edbd4c197809e202bc15d17581764e99f078ac58ec8c7ae20afd27aa39b9be52bb87008aff9ef8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.9/python3.9_3.9.1~rc1.orig.tar.xz' python3.9_3.9.1~rc1.orig.tar.xz 18871700 SHA512:1e74eb2f2587e9069c01b08370de7bfc41a569c855463f01ea9f6d31dad90f0fab3a6738179513321e8320a45865ee63e61915cd66f5c143165b2db921fe2bde
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.9/python3.9_3.9.1~rc1-2.debian.tar.xz' python3.9_3.9.1~rc1-2.debian.tar.xz 210284 SHA512:dd2229cb499d36fde50c3c619ba08647ee9c433b072efce3d5a6ea8fdba0a7f85a167261fdffccb936cfe4065886343820301090002c3611f89659fb4b47f8e2
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3.9/3.9.1~rc1-2/
+
 
 ### `dpkg` source package: `readline=8.1~rc3-1`
 
@@ -4077,14 +4071,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.1.0+git191117-2build1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.1.0+git191117-2build1.dsc' tiff_4.1.0+git191117-2build1.dsc 2291 SHA512:2a57d9910e2c29d8e9fa347f84246669c94cfe67860d0cf110ff1b584492d23fda5bd7f91de5b2aa6c2eb29473afd6f6b1b3f22667ae79ed0e7eff58435f1542
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.1.0+git191117.orig.tar.xz' tiff_4.1.0+git191117.orig.tar.xz 1533524 SHA512:25b4bc4522fc2e7f3ca6857b87acd4481d8643566b1120c755020afc8b48949238ee2078bc43dd3ba7407eaa4e36b1b712d7056f101ddaf60f94dab8607870b8
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.1.0+git191117-2build1.debian.tar.xz' tiff_4.1.0+git191117-2build1.debian.tar.xz 19460 SHA512:2c9d80f8b4851beebbd994af3a582aaf84c80ce2e968e023e132670a7c35e0a7af728226f87d91bbae7ee4c0989fba235d14e2ad8e1f6d28e7696f0a0e0a9104
-```
 
 ### `dpkg` source package: `tzdata=2020d-1ubuntu1`
 

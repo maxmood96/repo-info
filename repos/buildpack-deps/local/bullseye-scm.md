@@ -1933,20 +1933,13 @@ Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 - `GPL-2+`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libzstd=1.4.5+dfsg-4
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.4.5+dfsg-4.dsc' libzstd_1.4.5+dfsg-4.dsc 2291 SHA256:c3017a5e41c86375cefa599b2d7ac457e7e87882a4e06e8d2af39b25ed29028d
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.4.5+dfsg.orig.tar.xz' libzstd_1.4.5+dfsg.orig.tar.xz 1387864 SHA256:ff51192647c8f87f447268e20180fe39fe8eb5d643210b82f90af741d7bdf0d2
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.4.5+dfsg-4.debian.tar.xz' libzstd_1.4.5+dfsg-4.debian.tar.xz 12724 SHA256:1eac2717d60601c467386cffadddd55221dfa6a94a4781de9ad8a331e5498b52
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libzstd/1.4.5+dfsg-4/
 
-- https://sources.debian.net/src/libzstd/1.4.5+dfsg-4/ (for browsing the source)
-- https://sources.debian.net/src/libzstd/1.4.5+dfsg-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libzstd/1.4.5+dfsg-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
@@ -2004,19 +1997,13 @@ Licenses: (parsed from: `/usr/share/doc/mailcap/copyright`)
 - `Bellcore`
 - `ad-hoc`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mailcap=3.67
-'http://deb.debian.org/debian/pool/main/m/mailcap/mailcap_3.67.dsc' mailcap_3.67.dsc 1547 SHA256:551e309a3c78e4918da3c92047b971d41a80deaa44cdd2d7af99603774a2f0a4
-'http://deb.debian.org/debian/pool/main/m/mailcap/mailcap_3.67.tar.xz' mailcap_3.67.tar.xz 26268 SHA256:b99cfddcea607f176c73ef5061d83693ea7021dab76131c8680338088035abc4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mailcap/3.67/
 
-- https://sources.debian.net/src/mailcap/3.67/ (for browsing the source)
-- https://sources.debian.net/src/mailcap/3.67/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mailcap/3.67/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20200120-2`
 
