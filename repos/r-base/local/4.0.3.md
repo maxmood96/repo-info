@@ -1126,14 +1126,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 - `GPL-2+`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.66.3-2
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.66.3-2.dsc' glib2.0_2.66.3-2.dsc 3406 SHA256:2c0c85cb99b69643bf68162127666eda953314405644096705841b59ecc3b8f3
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.66.3.orig.tar.xz' glib2.0_2.66.3.orig.tar.xz 4837796 SHA256:79f31365a99cb1cc9db028625635d1438890702acde9e2802eae0acebcf7b5b1
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.66.3-2.debian.tar.xz' glib2.0_2.66.3-2.debian.tar.xz 97508 SHA256:64ed6a9082ea64c1d7cb322536adf1afd2bbe740272a20efcc352409c95aa893
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glib2.0/2.66.3-2/
+
 
 ### `dpkg` source package: `glibc=2.31-5`
 
@@ -2403,20 +2402,13 @@ Licenses: (parsed from: `/usr/share/doc/libtirpc-common/copyright`, `/usr/share/
 - `PERMISSIVE`
 - `__AUTO_PERMISSIVE__`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtirpc=1.2.6-3
-'http://deb.debian.org/debian/pool/main/libt/libtirpc/libtirpc_1.2.6-3.dsc' libtirpc_1.2.6-3.dsc 2111 SHA256:86a2ea8d9935cbb44b8e71a570bcd21f8781998fd04592dd38b795d858a50ba6
-'http://deb.debian.org/debian/pool/main/libt/libtirpc/libtirpc_1.2.6.orig.tar.bz2' libtirpc_1.2.6.orig.tar.bz2 513150 SHA256:4278e9a5181d5af9cd7885322fdecebc444f9a3da87c526e7d47f7a12a37d1cc
-'http://deb.debian.org/debian/pool/main/libt/libtirpc/libtirpc_1.2.6-3.debian.tar.xz' libtirpc_1.2.6-3.debian.tar.xz 10732 SHA256:4acd4c0755d1dfbf2c0ad9bca5734478fc7e9ab800aee19f104cca5e6da0e7f1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libtirpc/1.2.6-3/
 
-- https://sources.debian.net/src/libtirpc/1.2.6-3/ (for browsing the source)
-- https://sources.debian.net/src/libtirpc/1.2.6-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtirpc/1.2.6-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libunistring=0.9.10-4`
 
@@ -2750,20 +2742,13 @@ Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 - `GPL-2+`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libzstd=1.4.5+dfsg-4
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.4.5+dfsg-4.dsc' libzstd_1.4.5+dfsg-4.dsc 2291 SHA256:c3017a5e41c86375cefa599b2d7ac457e7e87882a4e06e8d2af39b25ed29028d
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.4.5+dfsg.orig.tar.xz' libzstd_1.4.5+dfsg.orig.tar.xz 1387864 SHA256:ff51192647c8f87f447268e20180fe39fe8eb5d643210b82f90af741d7bdf0d2
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.4.5+dfsg-4.debian.tar.xz' libzstd_1.4.5+dfsg-4.debian.tar.xz 12724 SHA256:1eac2717d60601c467386cffadddd55221dfa6a94a4781de9ad8a331e5498b52
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libzstd/1.4.5+dfsg-4/
 
-- https://sources.debian.net/src/libzstd/1.4.5+dfsg-4/ (for browsing the source)
-- https://sources.debian.net/src/libzstd/1.4.5+dfsg-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libzstd/1.4.5+dfsg-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `linux=5.9.11-1`
 
@@ -3920,9 +3905,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tex-gyre=20180621-3
-'http://deb.debian.org/debian/pool/main/t/tex-gyre/tex-gyre_20180621-3.dsc' tex-gyre_20180621-3.dsc 1686 SHA256:b73bda4931ecf07106e9ffb3fab8fbb186094431502824902371021bf8a07d8c
+'http://deb.debian.org/debian/pool/main/t/tex-gyre/tex-gyre_20180621-3.1.dsc' tex-gyre_20180621-3.1.dsc 2039 SHA256:d34500d573c01e0b608817b902f19c36880b7f833e91b36e20e99a0c4b2b1063
 'http://deb.debian.org/debian/pool/main/t/tex-gyre/tex-gyre_20180621.orig.tar.gz' tex-gyre_20180621.orig.tar.gz 24033627 SHA256:fe6b0f8ca6890d4a369f36c3b45bc30470069701a2f59042178ad5933fc9cdb8
-'http://deb.debian.org/debian/pool/main/t/tex-gyre/tex-gyre_20180621-3.debian.tar.xz' tex-gyre_20180621-3.debian.tar.xz 10972 SHA256:c3d0d7d7bfeedc1514b1ceda76eb1c24291b16e7c9c2c3357c545096559a0997
+'http://deb.debian.org/debian/pool/main/t/tex-gyre/tex-gyre_20180621-3.1.debian.tar.xz' tex-gyre_20180621-3.1.debian.tar.xz 11096 SHA256:52d232bef3d92ad68589904ce906fbe0520c551ebc1ac07a6d1dd4c6694b048a
 ```
 
 Other potentially useful URLs:
