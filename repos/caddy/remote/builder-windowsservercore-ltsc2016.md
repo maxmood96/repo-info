@@ -1,7 +1,7 @@
 ## `caddy:builder-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull caddy@sha256:6c06e2c038375f9863689a4c7a743a66faffe9bdcd1aee2308b542d7d5c49f68
+$ docker pull caddy@sha256:58b3732c413951a2cb9bd2ed29d4584b3f4010b85fa290dd6ac73a8541f5f3a5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull caddy@sha256:6c06e2c038375f9863689a4c7a743a66faffe9bdcd1aee2308b54
 ### `caddy:builder-windowsservercore-ltsc2016` - windows version 10.0.14393.4104; amd64
 
 ```console
-$ docker pull caddy@sha256:b75948041fc580c0d1edd8aa722a8277bb301ba41d8b590a4f17c66c9fe4ab40
+$ docker pull caddy@sha256:d2ca5db039b95430092b297963779caa9c00e5e77238e720d9242c768e35829c
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 GB (5964606778 bytes)**  
+-	Total Size: **6.0 GB (5964546936 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86a2250a1f590dde32f7e679b96a04ed050c4655a60ae952af73b0c26d598c80`
+-	Image ID: `sha256:67ef53f2bcabfaf12ad1cbcb01c5162a578e7c11d867e4b8dc8468c3a85f254a`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -51,15 +51,15 @@ RUN $url = 'https://storage.googleapis.com/golang/go1.15.6.windows-amd64.zip'; 	
 WORKDIR C:\gopath
 # Wed, 09 Dec 2020 22:55:59 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 09 Dec 2020 22:55:59 GMT
-ENV XCADDY_VERSION=v0.1.5
-# Wed, 09 Dec 2020 22:56:00 GMT
-ENV CADDY_VERSION=v2.2.1
-# Wed, 09 Dec 2020 22:56:01 GMT
+# Mon, 04 Jan 2021 18:15:50 GMT
+ENV XCADDY_VERSION=v0.1.7
+# Mon, 04 Jan 2021 18:51:31 GMT
+ENV CADDY_VERSION=v2.3.0
+# Mon, 04 Jan 2021 18:51:31 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Wed, 09 Dec 2020 22:57:20 GMT
-RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.1.5/xcaddy_0.1.5_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('9372295e75cb10cff85c609a195b9ac12cea3e9fc3490234d4271d415cd210cfa78116b03d82f008b9519e4d1f6e03fc59c27db80e098798a3065e4e89edd653')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Wed, 09 Dec 2020 22:57:21 GMT
+# Mon, 04 Jan 2021 18:52:47 GMT
+RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.1.7/xcaddy_0.1.7_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('d4e21865693dfb6d4aa2a9d23a7e20ca3a30e03b8f626900ff764d8e9eda1f9ca4c98b0466c6f3676ff1b170974c5cb0f984d04999b4c46becc76a8da50f792d')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
+# Mon, 04 Jan 2021 18:52:49 GMT
 WORKDIR C:\
 ```
 
@@ -119,23 +119,23 @@ WORKDIR C:\
 		Last Modified: Wed, 09 Dec 2020 23:01:00 GMT  
 		Size: 1.1 KB (1106 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7342b3373ee29de0d987f0b40171c41395e9b00269cab4de6dbf2a90503cef74`  
-		Last Modified: Wed, 09 Dec 2020 23:00:57 GMT  
-		Size: 1.1 KB (1077 bytes)  
+	-	`sha256:654366f0cc509ad4203df3491d465b19ed78bb9ab2b012f0ff57d3e8e597c040`  
+		Last Modified: Mon, 04 Jan 2021 18:53:49 GMT  
+		Size: 1.1 KB (1127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8973292c9e2947dc0e10764597f6f9f50d9e521151f3f1ffce12110bd59d7ac9`  
-		Last Modified: Wed, 09 Dec 2020 23:00:57 GMT  
-		Size: 1.1 KB (1080 bytes)  
+	-	`sha256:9fee39bad33e9c7c050f9ceff355796a156bf024e585eb6eb3962bed1a095098`  
+		Last Modified: Mon, 04 Jan 2021 18:55:26 GMT  
+		Size: 1.1 KB (1136 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7fbeda6d1d0446d45cf769ad800da810928a915a53f0f15741d1f2d5e330bfbd`  
-		Last Modified: Wed, 09 Dec 2020 23:00:57 GMT  
-		Size: 1.1 KB (1093 bytes)  
+	-	`sha256:f21cd29bec1bdeb645280a15321798a5e2eaa881b17bc948fc21727e27b11b7e`  
+		Last Modified: Mon, 04 Jan 2021 18:55:28 GMT  
+		Size: 1.1 KB (1125 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03028d69a4efd9fca773e4c828323c76cc768d9f5842bff350846206e20642c6`  
-		Last Modified: Wed, 09 Dec 2020 23:01:00 GMT  
-		Size: 11.5 MB (11462074 bytes)  
+	-	`sha256:9760af1897e23b8a62a990acd059d6913ff1cf5089f21dcddb356c80561f6177`  
+		Last Modified: Mon, 04 Jan 2021 18:55:30 GMT  
+		Size: 11.4 MB (11402038 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abe5c946ea76708b5d1b6c1393f0d926d12c16e5eac35699436370388d806e55`  
-		Last Modified: Wed, 09 Dec 2020 23:00:57 GMT  
-		Size: 1.1 KB (1068 bytes)  
+	-	`sha256:643cc7cbebecb511e713df22f8fc841566dba75e5c0dd255d0088f980e6d8186`  
+		Last Modified: Mon, 04 Jan 2021 18:55:28 GMT  
+		Size: 1.1 KB (1124 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
