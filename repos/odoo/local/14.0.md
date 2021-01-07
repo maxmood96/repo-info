@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:27c34e85682c0eec6617af427f7838e9849f21f92a3a240255e0b400c8f4b94d`
-- Created: `2020-12-18T19:54:47.410797347Z`
+- Image ID: `sha256:147ca9fc691922defa55503b41157dffd74d146003953c932fc584fc259e3ca2`
+- Created: `2021-01-04T18:23:03.943966597Z`
 - Virtual Size: ~ 1.24 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -3113,11 +3113,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/lsb/10.2019051400/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/lsb/10.2019051400/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `lxml=4.3.2-1+deb10u1`
+### `dpkg` source package: `lxml=4.3.2-1+deb10u2`
 
 Binary Packages:
 
-- `python3-lxml:amd64=4.3.2-1+deb10u1`
+- `python3-lxml:amd64=4.3.2-1+deb10u2`
 
 Licenses: (parsed from: `/usr/share/doc/python3-lxml/copyright`)
 
@@ -3125,13 +3125,20 @@ Licenses: (parsed from: `/usr/share/doc/python3-lxml/copyright`)
 - `GPL2`
 - `later`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris lxml=4.3.2-1+deb10u2
+'http://security.debian.org/debian-security/pool/updates/main/l/lxml/lxml_4.3.2-1+deb10u2.dsc' lxml_4.3.2-1+deb10u2.dsc 2269 SHA256:c6c5a6efb3ca135b890ad393a55ecd9cfa9397b9b3a00597eae85fe5691442b0
+'http://security.debian.org/debian-security/pool/updates/main/l/lxml/lxml_4.3.2.orig.tar.gz' lxml_4.3.2.orig.tar.gz 4380761 SHA256:3a9d8521c89bf6f2a929c3d12ad3ad7392c774c327ea809fd08a13be6b3bc05f
+'http://security.debian.org/debian-security/pool/updates/main/l/lxml/lxml_4.3.2-1+deb10u2.debian.tar.xz' lxml_4.3.2-1+deb10u2.debian.tar.xz 9784 SHA256:687643c34e64558773e07abe13bc40451b30e5f20be407a7ecbb83d8e3339472
+```
 
-- http://snapshot.debian.org/package/lxml/4.3.2-1+deb10u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/lxml/4.3.2-1+deb10u2/ (for browsing the source)
+- https://sources.debian.net/src/lxml/4.3.2-1+deb10u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/lxml/4.3.2-1+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.8.3-1`
 
@@ -9518,11 +9525,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/npth/1.6-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/npth/1.6-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `odoo=14.0.20201218`
+### `dpkg` source package: `odoo=14.0.20210104`
 
 Binary Packages:
 
-- `odoo=14.0.20201218`
+- `odoo=14.0.20210104`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
