@@ -1,10 +1,10 @@
-# `mongo:4.4.2-bionic`
+# `mongo:4.4.3-bionic`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3068f6bb852ef596c20ca7ccbcd34df94f02d6035a2d83aea1e20e1781ba19b8`
-- Created: `2020-12-11T01:58:25.457983295Z`
-- Virtual Size: ~ 492.85 Mb  
+- Image ID: `sha256:c97feb3412a387d4d3bbd8653b09ef26683263a192e0e8dc6554e65bfb637a86`
+- Created: `2021-01-04T22:21:12.195065582Z`
+- Virtual Size: ~ 492.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=4.4`
-  - `MONGO_VERSION=4.4.2`
+  - `MONGO_VERSION=4.4.3`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -251,11 +251,11 @@ $ apt-get source -qq --print-uris coreutils=8.28-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.28-1ubuntu1.debian.tar.xz' coreutils_8.28-1ubuntu1.debian.tar.xz 37940 SHA256:71ba2e83edc675a79e1e0556aff326ab2ae812332692e3db29615e8ed1b427f4
 ```
 
-### `dpkg` source package: `curl=7.58.0-2ubuntu3.10`
+### `dpkg` source package: `curl=7.58.0-2ubuntu3.12`
 
 Binary Packages:
 
-- `libcurl4:amd64=7.58.0-2ubuntu3.10`
+- `libcurl4:amd64=7.58.0-2ubuntu3.12`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 
@@ -266,9 +266,14 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.58.0-2ubuntu3.12
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.12.dsc' curl_7.58.0-2ubuntu3.12.dsc 2781 SHA512:7ac71894de33ac39e49198d76d90a219e0cd4e1bc0d1878732f2c559b26a7f09b3383c5fd1dbe645eccd859945f644006b2d8e1043a955ff3d98a40af3c9b72a
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0.orig.tar.gz' curl_7.58.0.orig.tar.gz 3879728 SHA512:7b12b79107558bb266672d6e128615fe5a8149c37f4ae540197e3298f5d312beb2d78fbb23e3ea84ea7afc41549898a1e5cd38509f0388b11707b48d5efb8ca3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.12.debian.tar.xz' curl_7.58.0-2ubuntu3.12.debian.tar.xz 45640 SHA512:00aa535bb43ab14eafc758a4faa50c6b81f24dde828d790f119c2a5aedb4e6f2f83cf109314560ca1ab31a6614c2aa7227093338f34cf913a6de128573c693b6
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2.1`
 
@@ -1191,16 +1196,16 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=4.4.2`
+### `dpkg` source package: `mongodb-org=4.4.3`
 
 Binary Packages:
 
-- `mongodb-org=4.4.2`
-- `mongodb-org-database-tools-extra=4.4.2`
-- `mongodb-org-mongos=4.4.2`
-- `mongodb-org-server=4.4.2`
-- `mongodb-org-shell=4.4.2`
-- `mongodb-org-tools=4.4.2`
+- `mongodb-org=4.4.3`
+- `mongodb-org-database-tools-extra=4.4.3`
+- `mongodb-org-mongos=4.4.3`
+- `mongodb-org-server=4.4.3`
+- `mongodb-org-shell=4.4.3`
+- `mongodb-org-tools=4.4.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
