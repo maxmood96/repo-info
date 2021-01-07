@@ -1,16 +1,16 @@
-# `docker:20.10.1-dind-rootless`
+# `docker:20.10.2-dind-rootless`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3a0decd6352f07dd3329a8e291269ed11bae53216c7fbf35e8f9e51aacd43f95`
-- Created: `2020-12-17T12:38:23.372535315Z`
-- Virtual Size: ~ 312.48 Mb  
+- Image ID: `sha256:be7643eb581ce4f752b90421a0f9e6f3e2e58defb148970a54341702724ebafb`
+- Created: `2021-01-05T20:28:53.228133742Z`
+- Virtual Size: ~ 312.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=20.10.1`
+  - `DOCKER_VERSION=20.10.2`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=ed89041433a031cafc0a0f19cfe573c31688d377`
 
