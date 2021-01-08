@@ -46,13 +46,9 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris adduser=3.118ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.118ubuntu2.dsc' adduser_3.118ubuntu2.dsc 1131 SHA512:c6a2226a509c17b2b7ec23fa474a10e3afce3259f8b244cf748ef9d8e88fa500f7e1d84145fd0e7d01d6e2782787430cd46130eb556df69c5c1611aaa26a94c7
-'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.118ubuntu2.tar.xz' adduser_3.118ubuntu2.tar.xz 222364 SHA512:6236481388a235723c74575cb987a403ee62536f10dd02262c4cf168174269d7c83a2e444ca2efb33ccf0bf430c1773189364609f295de3e8708f9a7c9d378fa
-```
 
 ### `dpkg` source package: `apr-util=1.6.1-5ubuntu1`
 
@@ -352,14 +348,9 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.11+git20200708+dd9ef66+really0.5.10.2-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.11+git20200708+dd9ef66+really0.5.10.2-0ubuntu1.dsc' dash_0.5.11+git20200708+dd9ef66+really0.5.10.2-0ubuntu1.dsc 2332 SHA512:45750288adc5f6aed7ea8d3988d8f1abbb8b459612235a58c77a7dad792772d3e9d697ef343867804575526213da094f8babb0b57527e4bc9cf093acb10cb879
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.11+git20200708+dd9ef66+really0.5.10.2.orig.tar.gz' dash_0.5.11+git20200708+dd9ef66+really0.5.10.2.orig.tar.gz 225196 SHA512:0ae29be77794df0ba254967649b9728611a75fbb3acd32ab6634d76399d1ce97c7d12d31da465482a7e4f3207093415c496c39525cace9b78ab3cb9444dd7640
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.11+git20200708+dd9ef66+really0.5.10.2-0ubuntu1.debian.tar.xz' dash_0.5.11+git20200708+dd9ef66+really0.5.10.2-0ubuntu1.debian.tar.xz 45520 SHA512:a59067eaf75c780dfc0b5bbf796c73f29fbf63e4fb389012707c91f6898caf6b917a79319fdec65f33584b9cf8fa2649992f71e878c65a1338886fccb091f47f
-```
 
 ### `dpkg` source package: `db5.3=5.3.28+dfsg1-0.6ubuntu3`
 
@@ -1462,14 +1453,13 @@ Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 - `GPL-2+`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libzstd=1.4.5+dfsg-4
-'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.5+dfsg-4.dsc' libzstd_1.4.5+dfsg-4.dsc 2291 SHA512:2e0515b1b4870dccbb98c53d735467f7b24d106b4e031c5e707eb5b90de37450d441273e1812385de45cb4082cca0bc58586de53bb10167264f7475cdf3b5cb0
-'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.5+dfsg.orig.tar.xz' libzstd_1.4.5+dfsg.orig.tar.xz 1387864 SHA512:347f4b5ac24a75ffc510dc746b5fa26c5d71609ca5dcd4a9c5d4c43aa6f2df510d2e8d998d550e52e5b6f368277a8bf6fa82801a3581f79b866c6a340d0220a7
-'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.5+dfsg-4.debian.tar.xz' libzstd_1.4.5+dfsg-4.debian.tar.xz 12724 SHA512:5a9ca0b4d9bd16748365869d8530df01074956458b61c89cf298f1584b80e10ff91147ec903071f513b58f9ccfa2f6114a295233dbb1b31f116ce617e18fd267
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libzstd/1.4.5+dfsg-4/
+
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
 
@@ -1521,13 +1511,9 @@ Licenses: (parsed from: `/usr/share/doc/mailcap/copyright`)
 - `Bellcore`
 - `ad-hoc`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mailcap=3.67ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mailcap/mailcap_3.67ubuntu1.dsc' mailcap_3.67ubuntu1.dsc 1691 SHA512:1e89fcfd471e5b14a6e2f51a1d9300d5380640e62b0f76bfba18dbef329c7fdf01a4dbfc4b91eb75836b82a56209a116281a76da4e3c1aafe780de16f25e4b34
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mailcap/mailcap_3.67ubuntu1.tar.xz' mailcap_3.67ubuntu1.tar.xz 26828 SHA512:b042b4bbc557e8b3b816fc2fefe7157d69bbd63da9c897b0148f7bf12e15a57d118c030ef471276bc12c0fe5efb2d4df03f47333d9f5de833df2c4d74d678019
-```
 
 ### `dpkg` source package: `mawk=1.3.4.20200120-2`
 
@@ -1737,14 +1723,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.53+dfsg-1ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.53+dfsg-1ubuntu5.dsc' openldap_2.4.53+dfsg-1ubuntu5.dsc 3154 SHA512:cb31633905a905e3886db124207725bd58b22fc2b04b3bbd2483171c651f4d13fd36ebd344fc51e8b6f0fcf84c52afefee2a94640f828230faf79891fcc40066
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.53+dfsg.orig.tar.gz' openldap_2.4.53+dfsg.orig.tar.gz 5013515 SHA512:06cf88fe390cb04592407a0767e5051d4e6a8878f30386a0837710a406b037fde09953185ce395c189d69378114a6330ba54c7097d43322d6a3152d1a5b12de4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.53+dfsg-1ubuntu5.debian.tar.xz' openldap_2.4.53+dfsg-1ubuntu5.debian.tar.xz 182628 SHA512:42ccee19ece92c9311f293e228dc023d1c8b062ce1f0cd6899d45eefd61e24f271936983585da32d6f889b2fccab2e16be689869eab5a6344edaee1979e8aaf5
-```
 
 ### `dpkg` source package: `openssh=1:8.4p1-3`
 
@@ -1808,15 +1789,9 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.23.21-2build1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.21-2build1.dsc' p11-kit_0.23.21-2build1.dsc 2557 SHA512:0c19b974d43b28c892262a99c9dce7b625e7caa43cd0d21b43591a6b469435e2c259d130fd6775e7e2a6b425f4ce88e458193d61f2c87c480ed71f572f4285f5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.21.orig.tar.xz' p11-kit_0.23.21.orig.tar.xz 827064 SHA512:4c796ca2c72a650f105a7a70aa62e55edb12e1c151e91ef92bfeee6c5c68982b36023400b42c4efcb1d351b7848e8618c26607cdb0f77b48ae40e2ecfd713e3e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.21.orig.tar.xz.asc' p11-kit_0.23.21.orig.tar.xz.asc 854 SHA512:8bf48da323fe9c6161673c49870852d34fede5beb6a624ce73090599d3729633153f03dc06aa77478174b1e4e4840c3fe74cd84219747446e2fa29f2a895cfa5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.21-2build1.debian.tar.xz' p11-kit_0.23.21-2build1.debian.tar.xz 22788 SHA512:88a6885d6a83c3e7f8ed18148c18603b14ee567b9020e324f9873f4e73ffa75b682ce6138566265abfce134d15fba14200069e21127ff0849fa6bf7392ad3e29
-```
 
 ### `dpkg` source package: `pam=1.3.1-5ubuntu6`
 
@@ -1916,15 +1891,13 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.32/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.32.0-5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.32.0-5.dsc' perl_5.32.0-5.dsc 2882 SHA512:272c36309d8d8f2b8b0c8f60bc4cf8931c4e0d5f8c4c4e44e423579640267772b784a4e2dd9c565e5574ca144d8429616e58e03850b9af6c74cfc2b63462ef4e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.32.0.orig-regen-configure.tar.gz' perl_5.32.0.orig-regen-configure.tar.gz 833536 SHA512:e9e224f39cfca20957048ba0b64412c298d896b78ec5b4ac6e638a2600fe9cbc52467a54e2db98ad36ec393500c2a728cc216feafc55b429cf81f476cba97069
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.32.0.orig.tar.xz' perl_5.32.0.orig.tar.xz 12717336 SHA512:1540247415893bbd94dfeede7b4fba6052688dc0bf27ced817f448246fcdc6e9a6486abc34577dec5b00bf02ed607b2d24ccd4977c3b3c51e8e6edfc0b81c760
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.32.0-5.debian.tar.xz' perl_5.32.0-5.debian.tar.xz 163568 SHA512:60c2a9d7f3f8adbb57f4cdf6c3d796e78c24b4090411159c27a69d82e7a455e84286a8d5b5979d698fc5c3ab3a3e0fc829230283f9137de6dec874daaf5cbfcd
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/perl/5.32.0-5/
+
 
 ### `dpkg` source package: `pinentry=1.1.0-4build1`
 
@@ -2270,15 +2243,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2020d-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020d-1ubuntu1.dsc' tzdata_2020d-1ubuntu1.dsc 2358 SHA512:63bd42701c33ed6bb5a155e0dd339dce49b03ce6c609a5f63f865f1fae4e72671d63f7c0b0c566cb7105f34fccc22299a886786c285d3b5f2adc2773336a1661
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020d.orig.tar.gz' tzdata_2020d.orig.tar.gz 401479 SHA512:362e4569a666b0776614be3f63f1fe3d5ae259055e7051c9875f36023db9c52b0c5a10c19067114443a4cf2bf92475f8a0aebdf79bac836d967527fcdea4e9b6
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020d.orig.tar.gz.asc' tzdata_2020d.orig.tar.gz.asc 833 SHA512:db287ab3ffa8821de71da61ba6be03dcf930ab9dad590e909d3efa8867dbd56cfa44b22ef5e3a12e7db0556385d303ae9f4a19f7bd7067a7c9fa137ef7c338e1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020d-1ubuntu1.debian.tar.xz' tzdata_2020d-1ubuntu1.debian.tar.xz 164544 SHA512:e758f4c9b588acba8aa48eaaa8a618b79282748fd12351ffc90a59b785d21cf92801362ad1e68a48f62b71bec8b54f7478ffb066ad67a36aab95eb39dfab9266
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.06.17.1`
 
