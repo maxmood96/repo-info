@@ -1,7 +1,7 @@
 ## `openjdk:16-ea-jdk-oraclelinux8`
 
 ```console
-$ docker pull openjdk@sha256:b6318a1ef3f3e06a9063e5bc4e30604d22091be705bc2f460a952b5901a58338
+$ docker pull openjdk@sha256:c1e16e90d2bee87f45ed40b0b1260c6497ce5040666ac0b490301ba2dcb9b077
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull openjdk@sha256:b6318a1ef3f3e06a9063e5bc4e30604d22091be705bc2f460a9
 ### `openjdk:16-ea-jdk-oraclelinux8` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:c55dec86f20553610ecd995d8a013c063e45e96c2c61b502f9e5cfc27f312c06
+$ docker pull openjdk@sha256:b9c6330437044099e98d8eeefe73d8a6ce3447e667604c7cd82e4628f2c895f3
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **240.2 MB (240195013 bytes)**  
+-	Total Size: **240.2 MB (240184439 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b505834ee03f4b04edc8aceda5f82ce1de4dc0114fdad01d606d972444bb8a3f`
+-	Image ID: `sha256:98b07788af3a68d9e03b02156473c7a773638ec62df2210b4303e56f4f9a19c2`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -37,11 +37,11 @@ ENV LANG=C.UTF-8
 ENV JAVA_HOME=/usr/java/openjdk-16
 # Wed, 06 Jan 2021 20:41:33 GMT
 ENV PATH=/usr/java/openjdk-16/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 06 Jan 2021 20:41:33 GMT
-ENV JAVA_VERSION=16-ea+30
-# Wed, 06 Jan 2021 20:42:07 GMT
-RUN set -eux; 		objdump="$(command -v objdump)"; 	arch="$(objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		arm64 | aarch64) 			downloadUrl=https://download.java.net/java/early_access/jdk16/30/GPL/openjdk-16-ea+30_linux-aarch64_bin.tar.gz; 			downloadSha256=82cc271dfc10530a176b89f20ad2bcbc9733b78f39e3997ac54132956ce53ff1; 			;; 		amd64 | i386:x86-64) 			downloadUrl=https://download.java.net/java/early_access/jdk16/30/GPL/openjdk-16-ea+30_linux-x64_bin.tar.gz; 			downloadSha256=01ef449013825308ac144c91fbbbadd9562b084d6e17cd8d428a088386707556; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 06 Jan 2021 20:42:07 GMT
+# Fri, 08 Jan 2021 19:34:30 GMT
+ENV JAVA_VERSION=16-ea+31
+# Fri, 08 Jan 2021 19:35:02 GMT
+RUN set -eux; 		objdump="$(command -v objdump)"; 	arch="$(objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		arm64 | aarch64) 			downloadUrl=https://download.java.net/java/early_access/jdk16/31/GPL/openjdk-16-ea+31_linux-aarch64_bin.tar.gz; 			downloadSha256=619122347e25dccbc419168329b659cdb1967570431bc09f597a791107484554; 			;; 		amd64 | i386:x86-64) 			downloadUrl=https://download.java.net/java/early_access/jdk16/31/GPL/openjdk-16-ea+31_linux-x64_bin.tar.gz; 			downloadSha256=f43aa41b3c71b9e278a37fd33a94579a8039e07abd21841ad9e1e0a4582abf24; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Fri, 08 Jan 2021 19:35:02 GMT
 CMD ["jshell"]
 ```
 
@@ -54,22 +54,22 @@ CMD ["jshell"]
 		Last Modified: Wed, 06 Jan 2021 20:47:24 GMT  
 		Size: 13.3 MB (13277651 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a362f231ba6e3d4f7192283cb65811335fe5cb82a06caa8a7273182c294f153`  
-		Last Modified: Wed, 06 Jan 2021 20:48:41 GMT  
-		Size: 184.8 MB (184847441 bytes)  
+	-	`sha256:b674c91d9bbd3b79176c1e9587316a331c898741a61279e3718f6b74a73aa86e`  
+		Last Modified: Fri, 08 Jan 2021 19:43:23 GMT  
+		Size: 184.8 MB (184836867 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:16-ea-jdk-oraclelinux8` - linux; arm64 variant v8
 
 ```console
-$ docker pull openjdk@sha256:d12ddab9dc54eb7abf457e1bd5aa65c80edbd698318c9db53ed26cb611ebd3c8
+$ docker pull openjdk@sha256:b8ea0ba1591fd7d6dcb8ff95758bfa6f65b05d8122925e4f64d9af8affcf3fb2
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.3 MB (235263334 bytes)**  
+-	Total Size: **235.3 MB (235257871 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6a1cb3abf5f5faf7eb33113bd908256e373b44244b30d699c301134c747758c9`
+-	Image ID: `sha256:45e8423c1390b0cb3dfcf40e7ede7fa45086c142083b51ac2b03c37432307bdb`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -87,11 +87,11 @@ ENV LANG=C.UTF-8
 ENV JAVA_HOME=/usr/java/openjdk-16
 # Wed, 06 Jan 2021 21:07:04 GMT
 ENV PATH=/usr/java/openjdk-16/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 06 Jan 2021 21:07:04 GMT
-ENV JAVA_VERSION=16-ea+30
-# Wed, 06 Jan 2021 21:08:12 GMT
-RUN set -eux; 		objdump="$(command -v objdump)"; 	arch="$(objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		arm64 | aarch64) 			downloadUrl=https://download.java.net/java/early_access/jdk16/30/GPL/openjdk-16-ea+30_linux-aarch64_bin.tar.gz; 			downloadSha256=82cc271dfc10530a176b89f20ad2bcbc9733b78f39e3997ac54132956ce53ff1; 			;; 		amd64 | i386:x86-64) 			downloadUrl=https://download.java.net/java/early_access/jdk16/30/GPL/openjdk-16-ea+30_linux-x64_bin.tar.gz; 			downloadSha256=01ef449013825308ac144c91fbbbadd9562b084d6e17cd8d428a088386707556; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 06 Jan 2021 21:08:14 GMT
+# Fri, 08 Jan 2021 19:42:53 GMT
+ENV JAVA_VERSION=16-ea+31
+# Fri, 08 Jan 2021 19:43:48 GMT
+RUN set -eux; 		objdump="$(command -v objdump)"; 	arch="$(objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		arm64 | aarch64) 			downloadUrl=https://download.java.net/java/early_access/jdk16/31/GPL/openjdk-16-ea+31_linux-aarch64_bin.tar.gz; 			downloadSha256=619122347e25dccbc419168329b659cdb1967570431bc09f597a791107484554; 			;; 		amd64 | i386:x86-64) 			downloadUrl=https://download.java.net/java/early_access/jdk16/31/GPL/openjdk-16-ea+31_linux-x64_bin.tar.gz; 			downloadSha256=f43aa41b3c71b9e278a37fd33a94579a8039e07abd21841ad9e1e0a4582abf24; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Fri, 08 Jan 2021 19:43:50 GMT
 CMD ["jshell"]
 ```
 
@@ -104,7 +104,7 @@ CMD ["jshell"]
 		Last Modified: Wed, 06 Jan 2021 21:13:39 GMT  
 		Size: 14.1 MB (14057340 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3603a6118bec8ebbcddc61419dd5fb282a3f72ebd53c626d39d2dee3c82fa78`  
-		Last Modified: Wed, 06 Jan 2021 21:15:44 GMT  
-		Size: 179.2 MB (179209701 bytes)  
+	-	`sha256:5f4d1b9e9c84da76ce17273c3e3508012e0f7ecf26ac66f82dd551af72cdd35d`  
+		Last Modified: Fri, 08 Jan 2021 19:53:10 GMT  
+		Size: 179.2 MB (179204238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
