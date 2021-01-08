@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:705afbc4d32d1abd7706c879969628849c3fa36c2b4351e751328232042556be`
-- Created: `2020-12-12T00:20:09.463721091Z`
+- Image ID: `sha256:87bf9a54d8ead8d9c9d94c06271fc4b422295084e13422a9beb5c32d9afe59ac`
+- Created: `2021-01-07T23:10:07.447777891Z`
 - Virtual Size: ~ 689.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -21,10 +21,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.25`
-  - `PHP_URL=https://www.php.net/distributions/php-7.3.25.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.25.tar.xz.asc`
-  - `PHP_SHA256=c71c00ad03079efb78d1a6b8623ca4f725be697dbd9a46debacbcc9a2475f329`
+  - `PHP_VERSION=7.3.26`
+  - `PHP_URL=https://www.php.net/distributions/php-7.3.26.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.26.tar.xz.asc`
+  - `PHP_SHA256=d93052f4cb2882090b6a37fd1e0c764be1605a2461152b7f6b8f04fa48875208`
   - `PHP_OPCACHE_VALIDATE_TIMESTAMPS=0`
   - `PHP_OPCACHE_MAX_ACCELERATED_FILES=20000`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=192`
