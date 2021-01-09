@@ -1,10 +1,10 @@
-# `nextcloud:19.0.6-fpm`
+# `nextcloud:20.0.4-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7042d2efa2f1988f5bc911893dd2b320fe3573dbffea2d19b83d6f26b058c8ba`
-- Created: `2020-12-21T20:36:05.225539771Z`
-- Virtual Size: ~ 752.12 Mb  
+- Image ID: `sha256:9ad01dc557e58f364f20f67b93c52207de546654324ec0498034506702c74bd7`
+- Created: `2021-01-07T23:59:20.954796775Z`
+- Virtual Size: ~ 799.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -18,11 +18,11 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.13`
-  - `PHP_URL=https://www.php.net/distributions/php-7.4.13.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.13.tar.xz.asc`
-  - `PHP_SHA256=aead303e3abac23106529560547baebbedba0bb2943b91d5aa08fff1f41680f4`
-  - `NEXTCLOUD_VERSION=19.0.6`
+  - `PHP_VERSION=7.4.14`
+  - `PHP_URL=https://www.php.net/distributions/php-7.4.14.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.14.tar.xz.asc`
+  - `PHP_SHA256=f9f3c37969fcd9006c1dbb1dd76ab53f28c698a1646fa2dde8547c3f45e02886`
+  - `NEXTCLOUD_VERSION=20.0.4`
 
 ## `dpkg` (`.deb`-based packages)
 
