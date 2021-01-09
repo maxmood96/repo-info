@@ -749,9 +749,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg-3ubuntu2.1.dsc' cyrus-sasl2_2.1.27~101-g0780600+dfsg-3ubuntu2.1.dsc 3297 SHA512:0c64b0a5cffa46d49ddd4a359c35e1b92d3c446415e8faf29c7a8d689073dc9bbcd0427aff30ee8d70b1712b27dc202ec14c955538d92998ecd6dc96569b2665
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg.orig.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg.orig.tar.xz 1143888 SHA512:cd684133dcea5856301f50e378ff105e88f8008af06bd4e02fb9a62a88ece2ee1901ea2776ef3d941d6a3cfc2a77875c08054326293818db89e5f9995c4cd524
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg-3ubuntu2.1.debian.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg-3ubuntu2.1.debian.tar.xz 95712 SHA512:c8eb0ff8cf4db3a3d3af2875626d9f39c058ea259c41d9954be18b269fc0fe0809ac2fea63c1ede72873cfa7388f8b76685e77eaaab64695d62739cef6ad6715
+'http://security.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg-3ubuntu2.1.dsc' cyrus-sasl2_2.1.27~101-g0780600+dfsg-3ubuntu2.1.dsc 3297 SHA512:0c64b0a5cffa46d49ddd4a359c35e1b92d3c446415e8faf29c7a8d689073dc9bbcd0427aff30ee8d70b1712b27dc202ec14c955538d92998ecd6dc96569b2665
+'http://security.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg.orig.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg.orig.tar.xz 1143888 SHA512:cd684133dcea5856301f50e378ff105e88f8008af06bd4e02fb9a62a88ece2ee1901ea2776ef3d941d6a3cfc2a77875c08054326293818db89e5f9995c4cd524
+'http://security.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg-3ubuntu2.1.debian.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg-3ubuntu2.1.debian.tar.xz 95712 SHA512:c8eb0ff8cf4db3a3d3af2875626d9f39c058ea259c41d9954be18b269fc0fe0809ac2fea63c1ede72873cfa7388f8b76685e77eaaab64695d62739cef6ad6715
 ```
 
 ### `dpkg` source package: `d-conf=0.26.0-2ubuntu3`
@@ -1690,14 +1690,9 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ghostscript=9.26~dfsg+0-0ubuntu0.18.04.13
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.26~dfsg+0-0ubuntu0.18.04.13.dsc' ghostscript_9.26~dfsg+0-0ubuntu0.18.04.13.dsc 2881 SHA512:6a1db8d279d1fc6ccf5a25185a356f08cd1dbe58733b1a67fc5febd8c1d781034d1cf21997631f137bb1b93d338a31aad0c7ff292b12770cc01a68f45a6a3ddc
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.26~dfsg+0.orig.tar.xz' ghostscript_9.26~dfsg+0.orig.tar.xz 27040868 SHA512:f49eec2a774056e452ede8a5710b409c93f83e4290b9b451c28642cb629a9d34de2fb84d85f0f8c9b4cad1a7e083daba38b023eddeee4526a8319d155fea301f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.26~dfsg+0-0ubuntu0.18.04.13.debian.tar.xz' ghostscript_9.26~dfsg+0-0ubuntu0.18.04.13.debian.tar.xz 142136 SHA512:56a5fbc95aee4b6200f2a0df2aaf70e6bb2aac607f0da6a0d5d7a60538a59352687ad11b9dd8ac352ded5f95b12fb2e226247ae16208db7d6976e0e7dfe8e951
-```
 
 ### `dpkg` source package: `giflib=5.1.4-2ubuntu0.1`
 
@@ -8087,14 +8082,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wavpack=5.1.0-2ubuntu1.4
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_5.1.0-2ubuntu1.4.dsc' wavpack_5.1.0-2ubuntu1.4.dsc 2199 SHA512:e26ebe715cabb16da222cac11469e7242b5d14a2e764919e2d25c5ca605dd90a3910ba9079588a20cb7b4a0478aa2f92c0c67e5b18723b15e52c7648cc9de4be
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_5.1.0.orig.tar.bz2' wavpack_5.1.0.orig.tar.bz2 824331 SHA512:4c31616ae63c3a875afa20f26ce935f7a8f9921e2892b4b8388eca3ccd83b2d686f43eed8b9ec1dead934a1148401b9dced3b05f509b7942c48d7af31cf80a54
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_5.1.0-2ubuntu1.4.debian.tar.xz' wavpack_5.1.0-2ubuntu1.4.debian.tar.xz 11632 SHA512:8f91fbc0fa443143c936707cd53659506131df47cabe4faac1d2f031526ed960d008851fddb90502d77959f32372fdbf0b495f51515e73c8933ceb352cd07ce0
-```
 
 ### `dpkg` source package: `wayland=1.16.0-1ubuntu1.1~18.04.3`
 
