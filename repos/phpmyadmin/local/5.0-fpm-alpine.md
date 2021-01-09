@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8c0531656ddaf01537109f5f0e2ef281d8fbd9f41f129a3297abe93bef085357`
-- Created: `2020-12-17T18:38:17.111047723Z`
-- Virtual Size: ~ 141.11 Mb  
+- Image ID: `sha256:dc428cfd65832367745097c964207a78b4582f9e3bfb61996d04d7e594bbaa60`
+- Created: `2021-01-07T23:29:46.920779457Z`
+- Virtual Size: ~ 141.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.13`
-  - `PHP_URL=https://www.php.net/distributions/php-7.4.13.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.13.tar.xz.asc`
-  - `PHP_SHA256=aead303e3abac23106529560547baebbedba0bb2943b91d5aa08fff1f41680f4`
+  - `PHP_VERSION=7.4.14`
+  - `PHP_URL=https://www.php.net/distributions/php-7.4.14.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.14.tar.xz.asc`
+  - `PHP_SHA256=f9f3c37969fcd9006c1dbb1dd76ab53f28c698a1646fa2dde8547c3f45e02886`
   - `VERSION=5.0.4`
   - `SHA256=1578c1a08e594da4f4f62e676ccbdbd17784c3de769b094ba42c35bf05c057db`
   - `URL=https://files.phpmyadmin.net/phpMyAdmin/5.0.4/phpMyAdmin-5.0.4-all-languages.tar.xz`
@@ -857,16 +857,16 @@ GPL-3.0-or-later
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2020c-r1 description:
+tzdata-2020f-r0 description:
 Timezone data
 
-tzdata-2020c-r1 webpage:
+tzdata-2020f-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2020c-r1 installed size:
-3526656
+tzdata-2020f-r0 installed size:
+3518464
 
-tzdata-2020c-r1 license:
+tzdata-2020f-r0 license:
 Public-Domain
 
 ```
