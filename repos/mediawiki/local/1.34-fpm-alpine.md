@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3741a3786a0d0ba0b8a915e6a8eab6d2dd037a8ace1c908770fc3020698302ce`
-- Created: `2020-12-21T20:28:51.675434259Z`
+- Image ID: `sha256:65d35b0b60b42d52b941d230d0b76e985beb2457faa1ec01ea6cd6b0ad978cd5`
+- Created: `2021-01-07T23:01:10.47913715Z`
 - Virtual Size: ~ 429.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.25`
-  - `PHP_URL=https://www.php.net/distributions/php-7.3.25.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.25.tar.xz.asc`
-  - `PHP_SHA256=c71c00ad03079efb78d1a6b8623ca4f725be697dbd9a46debacbcc9a2475f329`
+  - `PHP_VERSION=7.3.26`
+  - `PHP_URL=https://www.php.net/distributions/php-7.3.26.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.26.tar.xz.asc`
+  - `PHP_SHA256=d93052f4cb2882090b6a37fd1e0c764be1605a2461152b7f6b8f04fa48875208`
   - `MEDIAWIKI_MAJOR_VERSION=1.34`
   - `MEDIAWIKI_VERSION=1.34.4`
 
