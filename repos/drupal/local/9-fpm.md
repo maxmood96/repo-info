@@ -1,10 +1,10 @@
-# `drupal:9.1.0-fpm-buster`
+# `drupal:9.1.2-fpm-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1ce767502e8f392b2a414ac942c2cd52d83ee12b90b8bca8ed711c9ce30885c7`
-- Created: `2020-12-11T22:30:46.637007419Z`
-- Virtual Size: ~ 489.29 Mb  
+- Image ID: `sha256:81126d32bad01f7060bde07d0153342b79ec16a30a032bad6eedaaf163307733`
+- Created: `2021-01-08T00:51:47.125790409Z`
+- Virtual Size: ~ 489.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -18,11 +18,11 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F`
-  - `PHP_VERSION=8.0.0`
-  - `PHP_URL=https://www.php.net/distributions/php-8.0.0.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.0.tar.xz.asc`
-  - `PHP_SHA256=b5278b3eef584f0c075d15666da4e952fa3859ee509d6b0cc2ed13df13f65ebb`
-  - `DRUPAL_VERSION=9.1.0`
+  - `PHP_VERSION=8.0.1`
+  - `PHP_URL=https://www.php.net/distributions/php-8.0.1.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.1.tar.xz.asc`
+  - `PHP_SHA256=208b3330af881b44a6a8c6858d569c72db78dab97810332978cc65206b0ec2dc`
+  - `DRUPAL_VERSION=9.1.2`
 
 ## `dpkg` (`.deb`-based packages)
 
