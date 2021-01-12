@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8beec6a9248ba406091cc5b1595cdc844fbadf7d3f6a817c28af4db867a6ce0d`
-- Created: `2020-12-11T05:15:20.050953849Z`
+- Image ID: `sha256:30e8a0de4d757b8c9743f746d5d13c148725b49f1325af9cdf3925257ef74506`
+- Created: `2021-01-12T09:17:39.455040681Z`
 - Virtual Size: ~ 269.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1073,11 +1073,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libtool/2.4.6-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libtool/2.4.6-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.9.240-2`
+### `dpkg` source package: `linux=4.9.246-2`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.9.240-2`
+- `linux-libc-dev:amd64=4.9.246-2`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1087,13 +1087,20 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris linux=4.9.246-2
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.246-2.dsc' linux_4.9.246-2.dsc 125025 SHA256:d1d8a9c43152bdf9d29d53ad588d80ca39909c75146c1737d28b3959365400e4
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.246.orig.tar.xz' linux_4.9.246.orig.tar.xz 94928260 SHA256:410c2a08d2c64afeee5ea8ae0077eb0f03b12e3d594c12e2ea1f7c7f47c70221
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.246-2.debian.tar.xz' linux_4.9.246-2.debian.tar.xz 2175748 SHA256:d16d0d13a9d167c3757d490b507c67071d6442cb4c71d4c8acae8a9b977f621a
+```
 
-- http://snapshot.debian.org/package/linux/4.9.240-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/linux/4.9.246-2/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.9.246-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.9.246-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-1`
 
@@ -1267,23 +1274,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl1.0=1.0.2u-1~deb9u2`
+### `dpkg` source package: `openssl1.0=1.0.2u-1~deb9u3`
 
 Binary Packages:
 
-- `libssl1.0.2:amd64=1.0.2u-1~deb9u2`
+- `libssl1.0.2:amd64=1.0.2u-1~deb9u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl1.0=1.0.2u-1~deb9u3
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2u-1~deb9u3.dsc' openssl1.0_1.0.2u-1~deb9u3.dsc 2301 SHA256:c0bb919cf3f33fbf7483845868f3131d4fc8626969a56401a59cb9fdf1619e33
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2u.orig.tar.gz' openssl1.0_1.0.2u.orig.tar.gz 5355412 SHA256:ecd0c6ffb493dd06707d38b14bb4d8c2288bb7033735606569d8f90f89669d16
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2u-1~deb9u3.debian.tar.xz' openssl1.0_1.0.2u-1~deb9u3.debian.tar.xz 99100 SHA256:2a793998cd9387862f5ad9ce4dd582e8e7f8524a7a4d9154f8dfd6127bab6313
+```
 
-- http://snapshot.debian.org/package/openssl1.0/1.0.2u-1~deb9u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl1.0/1.0.2u-1~deb9u3/ (for browsing the source)
+- https://sources.debian.net/src/openssl1.0/1.0.2u-1~deb9u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl1.0/1.0.2u-1~deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.1.8-3.6`
 
@@ -1547,23 +1561,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.29b-1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.29b-1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2020d-0+deb9u1`
+### `dpkg` source package: `tzdata=2020e-0+deb9u1`
 
 Binary Packages:
 
-- `tzdata=2020d-0+deb9u1`
+- `tzdata=2020e-0+deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2020e-0+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2020e-0+deb9u1.dsc' tzdata_2020e-0+deb9u1.dsc 2029 SHA256:f3405f11c8c82e5dc87530264b3167926a4c78794a003d9efe5e8ad8babf2fc2
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2020e.orig.tar.gz' tzdata_2020e.orig.tar.gz 411619 SHA256:0be1ba329eae29ae1b54057c3547b3e672f73b3ae7643aa87dac85122bec037e
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2020e-0+deb9u1.debian.tar.xz' tzdata_2020e-0+deb9u1.debian.tar.xz 103208 SHA256:bf1d839755ffffce418f13d2701f62164c14502be5e85eeaa7eb219af31774f9
+```
 
-- http://snapshot.debian.org/package/tzdata/2020d-0+deb9u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2020e-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2020e-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2020e-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unixodbc=2.3.4-1`
 

@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:57ab7fc8c96ba0c9a8949b94892d65db43a51ff9f5ea05c4b1a5462ea05808c5`
-- Created: `2020-12-11T05:02:33.18770955Z`
+- Image ID: `sha256:aa0a8db9abb07d5413a2241b8030c9bb003c494249184d37d983a54cbd4beda6`
+- Created: `2021-01-12T08:48:14.385111011Z`
 - Virtual Size: ~ 514.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -298,11 +298,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.6-8.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.6-8.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `cairo=1.14.8-1`
+### `dpkg` source package: `cairo=1.14.8-1+deb9u1`
 
 Binary Packages:
 
-- `libcairo2:amd64=1.14.8-1`
+- `libcairo2:amd64=1.14.8-1+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libcairo2/copyright`)
 
@@ -311,17 +311,17 @@ Licenses: (parsed from: `/usr/share/doc/libcairo2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cairo=1.14.8-1
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.14.8-1.dsc' cairo_1.14.8-1.dsc 2879 SHA256:a24470ae5240afe8693d07bb5a0972e966c2ef27f12b95ffbd7882900afd405c
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.14.8.orig.tar.xz' cairo_1.14.8.orig.tar.xz 35392464 SHA256:d1f2d98ae9a4111564f6de4e013d639cf77155baf2556582295a0f00a9bc5e20
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.14.8-1.debian.tar.xz' cairo_1.14.8-1.debian.tar.xz 28880 SHA256:7b7079075c15615b3e476235ebab30b8845a7ad8886fe3e87fe1d4c9c2b9bebc
+$ apt-get source -qq --print-uris cairo=1.14.8-1+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/c/cairo/cairo_1.14.8-1+deb9u1.dsc' cairo_1.14.8-1+deb9u1.dsc 2936 SHA256:af09795afad1458eaec2c81693386093ab961780ab8122f154eb8f603d7accba
+'http://security.debian.org/debian-security/pool/updates/main/c/cairo/cairo_1.14.8.orig.tar.xz' cairo_1.14.8.orig.tar.xz 35392464 SHA256:d1f2d98ae9a4111564f6de4e013d639cf77155baf2556582295a0f00a9bc5e20
+'http://security.debian.org/debian-security/pool/updates/main/c/cairo/cairo_1.14.8-1+deb9u1.debian.tar.xz' cairo_1.14.8-1+deb9u1.debian.tar.xz 30288 SHA256:c769388b7aec6af2ce2324200f53422199321de91ba03393e41ba6e0d21ec65b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/cairo/1.14.8-1/ (for browsing the source)
-- https://sources.debian.net/src/cairo/1.14.8-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cairo/1.14.8-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/cairo/1.14.8-1+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/cairo/1.14.8-1+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cairo/1.14.8-1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.227`
 
@@ -2592,11 +2592,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxxf86vm/1:1.1.4-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxxf86vm/1:1.1.4-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.9.240-2`
+### `dpkg` source package: `linux=4.9.246-2`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.9.240-2`
+- `linux-libc-dev:amd64=4.9.246-2`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2606,13 +2606,20 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris linux=4.9.246-2
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.246-2.dsc' linux_4.9.246-2.dsc 125025 SHA256:d1d8a9c43152bdf9d29d53ad588d80ca39909c75146c1737d28b3959365400e4
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.246.orig.tar.xz' linux_4.9.246.orig.tar.xz 94928260 SHA256:410c2a08d2c64afeee5ea8ae0077eb0f03b12e3d594c12e2ea1f7c7f47c70221
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.246-2.debian.tar.xz' linux_4.9.246-2.debian.tar.xz 2175748 SHA256:d16d0d13a9d167c3757d490b507c67071d6442cb4c71d4c8acae8a9b977f621a
+```
 
-- http://snapshot.debian.org/package/linux/4.9.240-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/linux/4.9.246-2/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.9.246-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.9.246-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-1`
 
@@ -2816,29 +2823,36 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl1.0=1.0.2u-1~deb9u2`
+### `dpkg` source package: `openssl1.0=1.0.2u-1~deb9u3`
 
 Binary Packages:
 
-- `libssl1.0.2:amd64=1.0.2u-1~deb9u2`
+- `libssl1.0.2:amd64=1.0.2u-1~deb9u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl1.0=1.0.2u-1~deb9u3
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2u-1~deb9u3.dsc' openssl1.0_1.0.2u-1~deb9u3.dsc 2301 SHA256:c0bb919cf3f33fbf7483845868f3131d4fc8626969a56401a59cb9fdf1619e33
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2u.orig.tar.gz' openssl1.0_1.0.2u.orig.tar.gz 5355412 SHA256:ecd0c6ffb493dd06707d38b14bb4d8c2288bb7033735606569d8f90f89669d16
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2u-1~deb9u3.debian.tar.xz' openssl1.0_1.0.2u-1~deb9u3.debian.tar.xz 99100 SHA256:2a793998cd9387862f5ad9ce4dd582e8e7f8524a7a4d9154f8dfd6127bab6313
+```
 
-- http://snapshot.debian.org/package/openssl1.0/1.0.2u-1~deb9u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl1.0/1.0.2u-1~deb9u3/ (for browsing the source)
+- https://sources.debian.net/src/openssl1.0/1.0.2u-1~deb9u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl1.0/1.0.2u-1~deb9u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `p11-kit=0.23.3-2`
+### `dpkg` source package: `p11-kit=0.23.3-2+deb9u1`
 
 Binary Packages:
 
-- `libp11-kit0:amd64=0.23.3-2`
+- `libp11-kit0:amd64=0.23.3-2+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 
@@ -2851,18 +2865,18 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris p11-kit=0.23.3-2
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.3-2.dsc' p11-kit_0.23.3-2.dsc 2452 SHA256:fc8e87147d30de8d33e78adb805530d582655999762129b75097a9824679b0cc
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.3.orig.tar.gz' p11-kit_0.23.3.orig.tar.gz 1047441 SHA256:d487f04dba3f9e8256f53034c59c944ca45fd7b8434c095da6a74079644dcd82
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.3.orig.tar.gz.asc' p11-kit_0.23.3.orig.tar.gz.asc 543 SHA256:a9268313ad8e6c3dae5f4cf9006d8a773861e567c98786482304b3cc91883647
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.3-2.debian.tar.xz' p11-kit_0.23.3-2.debian.tar.xz 19784 SHA256:952f55f8c5e2cdc03c8388b59b0bd77bb53eb8f2c2ca2a686cfc91b52100e257
+$ apt-get source -qq --print-uris p11-kit=0.23.3-2+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/p/p11-kit/p11-kit_0.23.3-2+deb9u1.dsc' p11-kit_0.23.3-2+deb9u1.dsc 2480 SHA256:39e9f079a37cc8d70ef185fef05d28a3ba60c6a05b8df050be903a5696989cfd
+'http://security.debian.org/debian-security/pool/updates/main/p/p11-kit/p11-kit_0.23.3.orig.tar.gz' p11-kit_0.23.3.orig.tar.gz 1047441 SHA256:d487f04dba3f9e8256f53034c59c944ca45fd7b8434c095da6a74079644dcd82
+'http://security.debian.org/debian-security/pool/updates/main/p/p11-kit/p11-kit_0.23.3.orig.tar.gz.asc' p11-kit_0.23.3.orig.tar.gz.asc 543 SHA256:a9268313ad8e6c3dae5f4cf9006d8a773861e567c98786482304b3cc91883647
+'http://security.debian.org/debian-security/pool/updates/main/p/p11-kit/p11-kit_0.23.3-2+deb9u1.debian.tar.xz' p11-kit_0.23.3-2+deb9u1.debian.tar.xz 22948 SHA256:843ca4c9bab2c2a062681e14935f8a5e383f7fc11b085a16992959b548edc4d2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/p11-kit/0.23.3-2/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.23.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.23.3-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/p11-kit/0.23.3-2+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/p11-kit/0.23.3-2+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/p11-kit/0.23.3-2+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.1.8-3.6`
 
@@ -3229,23 +3243,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tiff/4.0.8-2+deb9u5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tiff/4.0.8-2+deb9u5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2020d-0+deb9u1`
+### `dpkg` source package: `tzdata=2020e-0+deb9u1`
 
 Binary Packages:
 
-- `tzdata=2020d-0+deb9u1`
+- `tzdata=2020e-0+deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2020e-0+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2020e-0+deb9u1.dsc' tzdata_2020e-0+deb9u1.dsc 2029 SHA256:f3405f11c8c82e5dc87530264b3167926a4c78794a003d9efe5e8ad8babf2fc2
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2020e.orig.tar.gz' tzdata_2020e.orig.tar.gz 411619 SHA256:0be1ba329eae29ae1b54057c3547b3e672f73b3ae7643aa87dac85122bec037e
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2020e-0+deb9u1.debian.tar.xz' tzdata_2020e-0+deb9u1.debian.tar.xz 103208 SHA256:bf1d839755ffffce418f13d2701f62164c14502be5e85eeaa7eb219af31774f9
+```
 
-- http://snapshot.debian.org/package/tzdata/2020d-0+deb9u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2020e-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2020e-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2020e-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0036`
 
