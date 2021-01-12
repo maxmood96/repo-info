@@ -2,20 +2,20 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:658e449d84a02b9ef5381d991bc4896d6240329fae6ba54d7872bcfd7e23a7f6`
-- Created: `2020-12-17T00:54:54.920377397Z`
-- Virtual Size: ~ 343.35 Mb  
+- Image ID: `sha256:ab1fac400459c9e78116f1fedb05bf73f1410cebac31fbd2ad5f759c443593da`
+- Created: `2021-01-08T19:20:07.585347642Z`
+- Virtual Size: ~ 343.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["arangod"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `ARANGO_VERSION=3.7.5`
+  - `ARANGO_VERSION=3.7.6`
   - `ARANGO_URL=https://download.arangodb.com/arangodb37/DEBIAN/amd64`
-  - `ARANGO_PACKAGE=arangodb3_3.7.5-1_amd64.deb`
-  - `ARANGO_PACKAGE_URL=https://download.arangodb.com/arangodb37/DEBIAN/amd64/arangodb3_3.7.5-1_amd64.deb`
-  - `ARANGO_SIGNATURE_URL=https://download.arangodb.com/arangodb37/DEBIAN/amd64/arangodb3_3.7.5-1_amd64.deb.asc`
+  - `ARANGO_PACKAGE=arangodb3_3.7.6-1_amd64.deb`
+  - `ARANGO_PACKAGE_URL=https://download.arangodb.com/arangodb37/DEBIAN/amd64/arangodb3_3.7.6-1_amd64.deb`
+  - `ARANGO_SIGNATURE_URL=https://download.arangodb.com/arangodb37/DEBIAN/amd64/arangodb3_3.7.6-1_amd64.deb.asc`
   - `GLIBCXX_FORCE_NEW=1`
 
 ## `apk` (`.apk`-based packages)
@@ -258,23 +258,6 @@ ISC
 
 ```
 
-### `apk` package: `libuv`
-
-```console
-libuv-1.34.0-r0 description:
-Cross-platform asychronous I/O
-
-libuv-1.34.0-r0 webpage:
-https://libuv.org
-
-libuv-1.34.0-r0 installed size:
-196608
-
-libuv-1.34.0-r0 license:
-MIT AND ISC
-
-```
-
 ### `apk` package: `musl`
 
 ```console
@@ -329,16 +312,16 @@ MIT
 ### `apk` package: `nodejs`
 
 ```console
-nodejs-12.15.0-r1 description:
+nodejs-12.20.1-r0 description:
 JavaScript runtime built on V8 engine - LTS version
 
-nodejs-12.15.0-r1 webpage:
+nodejs-12.20.1-r0 webpage:
 https://nodejs.org/
 
-nodejs-12.15.0-r1 installed size:
-29175808
+nodejs-12.20.1-r0 installed size:
+30670848
 
-nodejs-12.15.0-r1 license:
+nodejs-12.20.1-r0 license:
 MIT
 
 ```
