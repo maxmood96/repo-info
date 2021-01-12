@@ -285,14 +285,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.35.50.20201210-0ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.35.50.20201210-0ubuntu2.dsc' binutils_2.35.50.20201210-0ubuntu2.dsc 8851 SHA512:1e31def5d5c5db3d91ec2bbac5604816342fcf962156d334dab1d68070dc2a782995dbb7405e0f57908a780df0df862d964c6cd0dcf185738a896baa0221bc22
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.35.50.20201210.orig.tar.xz' binutils_2.35.50.20201210.orig.tar.xz 21863472 SHA512:9d1f0f1c9331be0bd2a775f3445c3b201b5e89567caabf9daab2a436179ddea842ebce90637988fa19226865a25ef6cbf46c4cd1efa04ef3a8f237772be1f081
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.35.50.20201210-0ubuntu2.debian.tar.xz' binutils_2.35.50.20201210-0ubuntu2.debian.tar.xz 106716 SHA512:608107ba1495f53c5ecfa8f7ee18cbdad1cca334b881f328039e54accf45a4f17453e440b3e5df84efaac3e36e5623ed99c1013066af4b5d56c64ededecea8c1
-```
 
 ### `dpkg` source package: `brotli=1.0.9-2build2`
 
@@ -1152,15 +1147,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.6.15-4ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.15-4ubuntu2.dsc' gnutls28_3.6.15-4ubuntu2.dsc 3603 SHA512:6461bd0ad6c3dc48cf0a433c6ce5c41a13e24e8b3e89e95233052cbda10570298c51970ad087b845d14a107d438f896eebfcb841b5f55a3d17e8d69509a702ee
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.15.orig.tar.xz' gnutls28_3.6.15.orig.tar.xz 6081656 SHA512:f757d1532198f44bcad7b73856ce6a05bab43f6fb77fcc81c59607f146202f73023d0796d3e1e7471709cf792c8ee7d436e19407e0601bc0bda2f21512b3b01c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.15.orig.tar.xz.asc' gnutls28_3.6.15.orig.tar.xz.asc 833 SHA512:e9b5ae84c3c7c6083290a7b9120201e444322082b109670d667a9e1a14e18b99aad63f9facca3cddeebb98df36becd7f2d6ed0b5c6fc0e988cf6f9b9e4e70ba4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.15-4ubuntu2.debian.tar.xz' gnutls28_3.6.15-4ubuntu2.debian.tar.xz 66264 SHA512:bb00f8f4ccd33afbf3355581d9ca8e76a4363cd930c89ef290d2698968f1fa290b39bd99bf1821796087fbd5d932b8ce4b7b6f3803e459e5903cc48e9ccb9066
-```
 
 ### `dpkg` source package: `gobject-introspection=1.66.1-1build1`
 
@@ -2470,15 +2459,13 @@ Licenses: (parsed from: `/usr/share/doc/libltdl-dev/copyright`, `/usr/share/doc/
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtool=2.4.6-14
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtool/libtool_2.4.6-14.dsc' libtool_2.4.6-14.dsc 2500 SHA512:e74e10f28a6e78bb0e058ab74bf4b4ba8e6412b5d65ff0aaa2624cf248e848630d29f8dfc58248eaa7fd63ea73347fbb067ea52c11231a3bd482f6d36b3aaff4
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtool/libtool_2.4.6.orig.tar.xz' libtool_2.4.6.orig.tar.xz 973080 SHA512:a6eef35f3cbccf2c9e2667f44a476ebc80ab888725eb768e91a3a6c33b8c931afc46eb23efaee76c8696d3e4eed74ab1c71157bcb924f38ee912c8a90a6521a4
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtool/libtool_2.4.6.orig.tar.xz.asc' libtool_2.4.6.orig.tar.xz.asc 380 SHA512:2f26447a837e3242b8f8f38fbab22d89df0949ee62fd966af3b5bae3aa939ba53bc4621174ee58d1c6722d569d7fe5f90097ddccffed28c3067fe5fa996fcb89
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtool/libtool_2.4.6-14.debian.tar.xz' libtool_2.4.6-14.debian.tar.xz 50832 SHA512:1cfb4ae9a854ee19e0246fae1ed0d6cac270ce886d8e0003b12df4a740c7323cfdd11795ffc3187b9e0f4d34f03f18b4922f67109274c7e2993ec0e0863c704f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libtool/2.4.6-14/
+
 
 ### `dpkg` source package: `libunistring=0.9.10-4`
 
@@ -2564,15 +2551,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libx11=2:1.6.12-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.12-1.dsc' libx11_1.6.12-1.dsc 2545 SHA512:8044467c7a4670dba407e12338d634ec29f838289876310742f9d668cfb18118e7cbaf09b49fa0f32bcd03df4a73e8e9b22642ae4f188ef40ed62929e0c53591
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.12.orig.tar.gz' libx11_1.6.12.orig.tar.gz 3168158 SHA512:be86b8ad874311bc9d4bd28f33ecdbf2dd391b4a17bdf456c0f8b483f740145cd976b68fa7afee806223acff319e77e163a612b82f7fa9dfa898a31cfbbda851
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.12.orig.tar.gz.asc' libx11_1.6.12.orig.tar.gz.asc 833 SHA512:0096d221e82387d0e7613b8f75c2bac3ec35800815252414e1b2cb0c1480e64f01610fce70a1e327b677c3afe2bf6ca20fe4cebd73f652b28b99a843e813c458
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.12-1.diff.gz' libx11_1.6.12-1.diff.gz 52052 SHA512:143b05a79d4b2a066bc38282f8e756e2ca8edaf39f6f53eb3f2ec696e3a815e1c856565ccdbcaeb25cbf220117ff2a717cd9daac082ae0449baab259a5f7c05c
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libx11/2:1.6.12-1/
+
 
 ### `dpkg` source package: `libxau=1:1.0.9-0ubuntu1`
 
@@ -2813,14 +2798,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.8.0-25.26
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.8.0-25.26.dsc' linux_5.8.0-25.26.dsc 7926 SHA512:5c26792b454007ffccfd6c32e37b52f6e5a7deaa0dc153c32c2f76ba2c95dcc7567767901306418f6544846c376877533dc3adee52a64de1da2837fd8ab4a5bb
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.8.0.orig.tar.gz' linux_5.8.0.orig.tar.gz 178322327 SHA512:24b71be99aa6b599b237f26c891ed6ed5d255f81adf73cdc65d72d1497edd9303001fb4c4ee1bfd30be821f6883321cb17400493547c0023f4e9137d60ea4e97
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.8.0-25.26.diff.gz' linux_5.8.0-25.26.diff.gz 3287929 SHA512:5376ca29e5b0ca554e00a7225186a83d589e12aaf4e996a62b2e2bc29f6d01eff7807f260d451f8c52a1c238e812a3c7b9857e3f014f695989d6eb75d0ff0910
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
 
@@ -3429,14 +3409,13 @@ Licenses: (parsed from: `/usr/share/doc/patch/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris patch=2.7.6-6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/patch/patch_2.7.6-6.dsc' patch_2.7.6-6.dsc 1699 SHA512:1635fd11e2f69456140596ced8cc2e23a441f92f59af39cb758e188c4093779dbf00a8f6dcd399b9007fd8ca6253354dc0bfa562a2f1142a82cc92455e006f9e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/patch/patch_2.7.6.orig.tar.xz' patch_2.7.6.orig.tar.xz 783756 SHA512:fcca87bdb67a88685a8a25597f9e015f5e60197b9a269fa350ae35a7991ed8da553939b4bbc7f7d3cfd863c67142af403b04165633acbce4339056a905e87fbd
-'http://archive.ubuntu.com/ubuntu/pool/main/p/patch/patch_2.7.6-6.debian.tar.xz' patch_2.7.6-6.debian.tar.xz 14464 SHA512:b51c4361d71edde86e188d7511f66dc662afaaa5bc6c76c7bf1a99d0abef3d0de2db586d09b8d55b67cd8a0c3a8029570953e996fc639c1e8f926e24dc36bbb5
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/patch/2.7.6-6/
+
 
 ### `dpkg` source package: `pcre2=10.35-2ubuntu1`
 
@@ -4195,15 +4174,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.20.3-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.20.3-1ubuntu1.dsc' wget_1.20.3-1ubuntu1.dsc 2280 SHA512:aa7e8b81a463b6d5615527abf3b878a3cbf1be4eb4aa7a19185176a0d2ee5b50eb6edc30b84e85d07c5276ecae6245128b9b9177e36ad06803d91574bbbc25d4
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.20.3.orig.tar.gz' wget_1.20.3.orig.tar.gz 4489249 SHA512:e8b82b40e270296228094a78d47f81580bdbdea9e6b93fd61b37dccb39430aeb9bda5397dc53a31c952a61629383c7e2a8c8abf414c8a4dd369af6ecf2717e6c
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.20.3.orig.tar.gz.asc' wget_1.20.3.orig.tar.gz.asc 833 SHA512:40e1bb87dba49e9b8a1e3a6e9ffb95e97933508cd8fef4aac9545b74073800e2945b80bab749e57d4ddc8260a612d784160bec45a6c9c057954d22960c8dd170
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.20.3-1ubuntu1.debian.tar.xz' wget_1.20.3-1ubuntu1.debian.tar.xz 63312 SHA512:98a8ff23cdc35b7d0f35ce90f64fb48ba1cef8c60fa2ccca7d28f2c6e3ac43680ce831cecc6c30b7c69c7f435bc7e9cdcef6960d502e532f6616daf3a629a2eb
-```
 
 ### `dpkg` source package: `xorg-sgml-doctools=1:1.11-1`
 

@@ -354,20 +354,13 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.35.1-4
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.35.1-4.dsc' binutils_2.35.1-4.dsc 11271 SHA256:7d85144b117cbf639da1812ac530a7d9150608d7544fe88f3c427866c68882d6
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.35.1.orig.tar.xz' binutils_2.35.1.orig.tar.xz 23521396 SHA256:c43b679387b418b86683c7abded151cbf5b9f9da0b29720e3cc30b495abefc3d
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.35.1-4.debian.tar.xz' binutils_2.35.1-4.debian.tar.xz 160976 SHA256:aceb023dd103ab25b045f296e923a41a2a75b80c95e255ce0dbd412a7cec249a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/binutils/2.35.1-4/
 
-- https://sources.debian.net/src/binutils/2.35.1-4/ (for browsing the source)
-- https://sources.debian.net/src/binutils/2.35.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/binutils/2.35.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `brotli=1.0.9-2`
 
@@ -978,20 +971,13 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `GFDL-1.3`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris findutils=4.7.0+git20201010-2
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.7.0+git20201010-2.dsc' findutils_4.7.0+git20201010-2.dsc 2136 SHA256:9ba9f5e02b662d1d6d404aa21d9e5827dac60e0c1879a82698ba0c8be6cf062e
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.7.0+git20201010.orig.tar.xz' findutils_4.7.0+git20201010.orig.tar.xz 1950076 SHA256:f690859f9615cc8fdf04e6f0675c2d1881e9655dffe065cab5fd7f04d8fe6768
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.7.0+git20201010-2.debian.tar.xz' findutils_4.7.0+git20201010-2.debian.tar.xz 27852 SHA256:4555e249a33b492959d15c1fabe19724b4a49e491a83d46ee248d600c58ed397
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/findutils/4.7.0+git20201010-2/
 
-- https://sources.debian.net/src/findutils/4.7.0+git20201010-2/ (for browsing the source)
-- https://sources.debian.net/src/findutils/4.7.0+git20201010-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/findutils/4.7.0+git20201010-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fontconfig=2.13.1-4.2`
 
@@ -1152,20 +1138,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp-10/copyright`, `/usr/share/doc/g++-1
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-10=10.2.1-1
-'http://deb.debian.org/debian/pool/main/g/gcc-10/gcc-10_10.2.1-1.dsc' gcc-10_10.2.1-1.dsc 27637 SHA256:47ae107e9b57cecc309967d7e751d0653c53dd10608ef9ad5c46cb9b60968bdf
-'http://deb.debian.org/debian/pool/main/g/gcc-10/gcc-10_10.2.1.orig.tar.gz' gcc-10_10.2.1.orig.tar.gz 97337200 SHA256:a04738b0cfcdef4c9b5a04f587cc53dfb45fabb8c363cda1a91cb667bd9ad553
-'http://deb.debian.org/debian/pool/main/g/gcc-10/gcc-10_10.2.1-1.debian.tar.xz' gcc-10_10.2.1-1.debian.tar.xz 2303652 SHA256:d35cfe789136fe0b3d89fa3ebef85a65dd6231d51fb4a4e0200c90473423f450
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-10/10.2.1-1/
 
-- https://sources.debian.net/src/gcc-10/10.2.1-1/ (for browsing the source)
-- https://sources.debian.net/src/gcc-10/10.2.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-10/10.2.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-9=9.3.0-19`
 
@@ -1210,19 +1189,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.189
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.189.dsc' gcc-defaults_1.189.dsc 12072 SHA256:d52cd769b9af4e3728bf0679929be32b46c81b76a593091533b905e5d3a389c2
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.189.tar.xz' gcc-defaults_1.189.tar.xz 45208 SHA256:8ebe670391e63a0dbe494cf20a3bbaadaca7c302902e61ec86d9d215e87ee0c7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-defaults/1.189/
 
-- https://sources.debian.net/src/gcc-defaults/1.189/ (for browsing the source)
-- https://sources.debian.net/src/gcc-defaults/1.189/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-defaults/1.189/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.18.1-5.1`
 
@@ -1387,20 +1360,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`)
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.31-5
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-5.dsc' glibc_2.31-5.dsc 8195 SHA256:6a392c7925e13c5a0403f6db787f3f1e9b5c2c694d7f4dde9cc275b6574f7796
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-5.debian.tar.xz' glibc_2.31-5.debian.tar.xz 836796 SHA256:1299ecf9a7ea92dcb24781e105d24ad661bf961a1697fa26e4e7cdc095820d26
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glibc/2.31-5/
 
-- https://sources.debian.net/src/glibc/2.31-5/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.31-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.31-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.31-6`
 
@@ -1846,20 +1812,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `TatcherUlrichPublicDomain`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.11.24+dfsg-1
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.11.24+dfsg-1.dsc' imagemagick_6.9.11.24+dfsg-1.dsc 5079 SHA256:3d16073f17e1428a549884e1ee4afbd9255cd9d6c1fb802d8f1575759fda49c5
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.11.24+dfsg.orig.tar.xz' imagemagick_6.9.11.24+dfsg.orig.tar.xz 9037972 SHA256:23b737f3391e542c831c785280ea66e267e58ff0d0480b08a4607e90c24e8a16
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.11.24+dfsg-1.debian.tar.xz' imagemagick_6.9.11.24+dfsg-1.debian.tar.xz 224972 SHA256:c8a28a0838e2b7a1aab2257806ad59d18d9859ae264a5adbc085d231e590e5ee
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:6.9.11.24+dfsg-1/
 
-- https://sources.debian.net/src/imagemagick/8:6.9.11.24+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:6.9.11.24+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:6.9.11.24+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.59`
 
@@ -2739,20 +2698,13 @@ Licenses: (parsed from: `/usr/share/doc/libmaxminddb-dev/copyright`, `/usr/share
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libmaxminddb=1.4.3-2
-'http://deb.debian.org/debian/pool/main/libm/libmaxminddb/libmaxminddb_1.4.3-2.dsc' libmaxminddb_1.4.3-2.dsc 2219 SHA256:464f53aba7eabf40b0c3277156c1f58f2ade14675539aafb1f3df718912e258b
-'http://deb.debian.org/debian/pool/main/libm/libmaxminddb/libmaxminddb_1.4.3.orig.tar.gz' libmaxminddb_1.4.3.orig.tar.gz 249141 SHA256:f50d5dd43cddb8f992cdcb3589da7d75f02187d40c16dfda717719b7eceef93f
-'http://deb.debian.org/debian/pool/main/libm/libmaxminddb/libmaxminddb_1.4.3-2.debian.tar.xz' libmaxminddb_1.4.3-2.debian.tar.xz 11504 SHA256:dea00392ad95118055daff8ccfdbb576f3bbccdcc8a2515fc2ceb53c4eac9240
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libmaxminddb/1.4.3-2/
 
-- https://sources.debian.net/src/libmaxminddb/1.4.3-2/ (for browsing the source)
-- https://sources.debian.net/src/libmaxminddb/1.4.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libmaxminddb/1.4.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libmnl=1.0.4-3`
 
@@ -3231,21 +3183,13 @@ Licenses: (parsed from: `/usr/share/doc/libltdl-dev/copyright`, `/usr/share/doc/
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtool=2.4.6-14
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.6-14.dsc' libtool_2.4.6-14.dsc 2500 SHA256:939797b7ce62f69641d319e5d38e53b1608cee649355046eec74271e9fcfb9df
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.6.orig.tar.xz' libtool_2.4.6.orig.tar.xz 973080 SHA256:7c87a8c2c8c0fc9cd5019e402bed4292462d00a718a7cd5f11218153bf28b26f
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.6.orig.tar.xz.asc' libtool_2.4.6.orig.tar.xz.asc 380 SHA256:ab68ebc45d60128a71fc36167cd29dcf3c3d6d639fd28663905ebaf3e2f43d6a
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.6-14.debian.tar.xz' libtool_2.4.6-14.debian.tar.xz 50832 SHA256:3ef693ea30def97a19fd94ffb2fa5421d5dc35cf7ad897a7161bd647eb4f2415
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libtool/2.4.6-14/
 
-- https://sources.debian.net/src/libtool/2.4.6-14/ (for browsing the source)
-- https://sources.debian.net/src/libtool/2.4.6-14/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtool/2.4.6-14/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libunistring=0.9.10-4`
 
@@ -4450,20 +4394,13 @@ Licenses: (parsed from: `/usr/share/doc/patch/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris patch=2.7.6-6
-'http://deb.debian.org/debian/pool/main/p/patch/patch_2.7.6-6.dsc' patch_2.7.6-6.dsc 1699 SHA256:ad31c243b982ad8dede14f7b4dfe5bb798bb1dc6d4e28c51a797c3af58477c13
-'http://deb.debian.org/debian/pool/main/p/patch/patch_2.7.6.orig.tar.xz' patch_2.7.6.orig.tar.xz 783756 SHA256:ac610bda97abe0d9f6b7c963255a11dcb196c25e337c61f94e4778d632f1d8fd
-'http://deb.debian.org/debian/pool/main/p/patch/patch_2.7.6-6.debian.tar.xz' patch_2.7.6-6.debian.tar.xz 14464 SHA256:75ea94b265763b65005381f1eceeaf3351a70ec5c3243bc161d702776414db02
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/patch/2.7.6-6/
 
-- https://sources.debian.net/src/patch/2.7.6-6/ (for browsing the source)
-- https://sources.debian.net/src/patch/2.7.6-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/patch/2.7.6-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre2=10.36-2`
 
@@ -4798,20 +4735,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.9-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.9=3.9.1-1
-'http://deb.debian.org/debian/pool/main/p/python3.9/python3.9_3.9.1-1.dsc' python3.9_3.9.1-1.dsc 3415 SHA256:a9be41dd5b7066216e56d16b0418dceb083d5732ec9dd0d353104d6aa32089c8
-'http://deb.debian.org/debian/pool/main/p/python3.9/python3.9_3.9.1.orig.tar.xz' python3.9_3.9.1.orig.tar.xz 18897104 SHA256:991c3f8ac97992f3d308fefeb03a64db462574eadbff34ce8bc5bb583d9903ff
-'http://deb.debian.org/debian/pool/main/p/python3.9/python3.9_3.9.1-1.debian.tar.xz' python3.9_3.9.1-1.debian.tar.xz 210284 SHA256:6be57d020cfa7e15990ce4f04514909dda03bbdce92cac49434757dccaa2c43a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.9/3.9.1-1/
 
-- https://sources.debian.net/src/python3.9/3.9.1-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.9/3.9.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.9/3.9.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.1-1`
 
@@ -5210,20 +5140,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris unzip=6.0-25
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-25.dsc' unzip_6.0-25.dsc 1344 SHA256:ed68c01c7adf04f1599760975facac5a6164351baa2e5035a5239905f14108bb
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-25.debian.tar.xz' unzip_6.0-25.debian.tar.xz 23096 SHA256:0783e4d11d755cb43904e3f59a60dbb92ee9c6b08ac54d86bc61f9848216f37b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/unzip/6.0-25/
 
-- https://sources.debian.net/src/unzip/6.0-25/ (for browsing the source)
-- https://sources.debian.net/src/unzip/6.0-25/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unzip/6.0-25/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `utf8proc=2.5.0-1`
 
