@@ -11,6 +11,9 @@
 -	[`openjdk:11.0.9.1-jdk-buster`](#openjdk11091-jdk-buster)
 -	[`openjdk:11.0.9.1-jdk-nanoserver`](#openjdk11091-jdk-nanoserver)
 -	[`openjdk:11.0.9.1-jdk-nanoserver-1809`](#openjdk11091-jdk-nanoserver-1809)
+-	[`openjdk:11.0.9.1-jdk-oracle`](#openjdk11091-jdk-oracle)
+-	[`openjdk:11.0.9.1-jdk-oraclelinux7`](#openjdk11091-jdk-oraclelinux7)
+-	[`openjdk:11.0.9.1-jdk-oraclelinux8`](#openjdk11091-jdk-oraclelinux8)
 -	[`openjdk:11.0.9.1-jdk-slim`](#openjdk11091-jdk-slim)
 -	[`openjdk:11.0.9.1-jdk-slim-buster`](#openjdk11091-jdk-slim-buster)
 -	[`openjdk:11.0.9.1-jdk-windowsservercore`](#openjdk11091-jdk-windowsservercore)
@@ -27,6 +30,9 @@
 -	[`openjdk:11.0.9.1-jre-windowsservercore-ltsc2016`](#openjdk11091-jre-windowsservercore-ltsc2016)
 -	[`openjdk:11.0.9.1-nanoserver`](#openjdk11091-nanoserver)
 -	[`openjdk:11.0.9.1-nanoserver-1809`](#openjdk11091-nanoserver-1809)
+-	[`openjdk:11.0.9.1-oracle`](#openjdk11091-oracle)
+-	[`openjdk:11.0.9.1-oraclelinux7`](#openjdk11091-oraclelinux7)
+-	[`openjdk:11.0.9.1-oraclelinux8`](#openjdk11091-oraclelinux8)
 -	[`openjdk:11.0.9.1-slim`](#openjdk11091-slim)
 -	[`openjdk:11.0.9.1-slim-buster`](#openjdk11091-slim-buster)
 -	[`openjdk:11.0.9.1-windowsservercore`](#openjdk11091-windowsservercore)
@@ -37,6 +43,9 @@
 -	[`openjdk:11.0.9-jdk-buster`](#openjdk1109-jdk-buster)
 -	[`openjdk:11.0.9-jdk-nanoserver`](#openjdk1109-jdk-nanoserver)
 -	[`openjdk:11.0.9-jdk-nanoserver-1809`](#openjdk1109-jdk-nanoserver-1809)
+-	[`openjdk:11.0.9-jdk-oracle`](#openjdk1109-jdk-oracle)
+-	[`openjdk:11.0.9-jdk-oraclelinux7`](#openjdk1109-jdk-oraclelinux7)
+-	[`openjdk:11.0.9-jdk-oraclelinux8`](#openjdk1109-jdk-oraclelinux8)
 -	[`openjdk:11.0.9-jdk-slim`](#openjdk1109-jdk-slim)
 -	[`openjdk:11.0.9-jdk-slim-buster`](#openjdk1109-jdk-slim-buster)
 -	[`openjdk:11.0.9-jdk-windowsservercore`](#openjdk1109-jdk-windowsservercore)
@@ -53,6 +62,9 @@
 -	[`openjdk:11.0.9-jre-windowsservercore-ltsc2016`](#openjdk1109-jre-windowsservercore-ltsc2016)
 -	[`openjdk:11.0.9-nanoserver`](#openjdk1109-nanoserver)
 -	[`openjdk:11.0.9-nanoserver-1809`](#openjdk1109-nanoserver-1809)
+-	[`openjdk:11.0.9-oracle`](#openjdk1109-oracle)
+-	[`openjdk:11.0.9-oraclelinux7`](#openjdk1109-oraclelinux7)
+-	[`openjdk:11.0.9-oraclelinux8`](#openjdk1109-oraclelinux8)
 -	[`openjdk:11.0.9-slim`](#openjdk1109-slim)
 -	[`openjdk:11.0.9-slim-buster`](#openjdk1109-slim-buster)
 -	[`openjdk:11.0.9-windowsservercore`](#openjdk1109-windowsservercore)
@@ -63,6 +75,9 @@
 -	[`openjdk:11.0-jdk-buster`](#openjdk110-jdk-buster)
 -	[`openjdk:11.0-jdk-nanoserver`](#openjdk110-jdk-nanoserver)
 -	[`openjdk:11.0-jdk-nanoserver-1809`](#openjdk110-jdk-nanoserver-1809)
+-	[`openjdk:11.0-jdk-oracle`](#openjdk110-jdk-oracle)
+-	[`openjdk:11.0-jdk-oraclelinux7`](#openjdk110-jdk-oraclelinux7)
+-	[`openjdk:11.0-jdk-oraclelinux8`](#openjdk110-jdk-oraclelinux8)
 -	[`openjdk:11.0-jdk-slim`](#openjdk110-jdk-slim)
 -	[`openjdk:11.0-jdk-slim-buster`](#openjdk110-jdk-slim-buster)
 -	[`openjdk:11.0-jdk-windowsservercore`](#openjdk110-jdk-windowsservercore)
@@ -79,6 +94,9 @@
 -	[`openjdk:11.0-jre-windowsservercore-ltsc2016`](#openjdk110-jre-windowsservercore-ltsc2016)
 -	[`openjdk:11.0-nanoserver`](#openjdk110-nanoserver)
 -	[`openjdk:11.0-nanoserver-1809`](#openjdk110-nanoserver-1809)
+-	[`openjdk:11.0-oracle`](#openjdk110-oracle)
+-	[`openjdk:11.0-oraclelinux7`](#openjdk110-oraclelinux7)
+-	[`openjdk:11.0-oraclelinux8`](#openjdk110-oraclelinux8)
 -	[`openjdk:11.0-slim`](#openjdk110-slim)
 -	[`openjdk:11.0-slim-buster`](#openjdk110-slim-buster)
 -	[`openjdk:11.0-windowsservercore`](#openjdk110-windowsservercore)
@@ -89,6 +107,9 @@
 -	[`openjdk:11-jdk-buster`](#openjdk11-jdk-buster)
 -	[`openjdk:11-jdk-nanoserver`](#openjdk11-jdk-nanoserver)
 -	[`openjdk:11-jdk-nanoserver-1809`](#openjdk11-jdk-nanoserver-1809)
+-	[`openjdk:11-jdk-oracle`](#openjdk11-jdk-oracle)
+-	[`openjdk:11-jdk-oraclelinux7`](#openjdk11-jdk-oraclelinux7)
+-	[`openjdk:11-jdk-oraclelinux8`](#openjdk11-jdk-oraclelinux8)
 -	[`openjdk:11-jdk-slim`](#openjdk11-jdk-slim)
 -	[`openjdk:11-jdk-slim-buster`](#openjdk11-jdk-slim-buster)
 -	[`openjdk:11-jdk-windowsservercore`](#openjdk11-jdk-windowsservercore)
@@ -105,6 +126,9 @@
 -	[`openjdk:11-jre-windowsservercore-ltsc2016`](#openjdk11-jre-windowsservercore-ltsc2016)
 -	[`openjdk:11-nanoserver`](#openjdk11-nanoserver)
 -	[`openjdk:11-nanoserver-1809`](#openjdk11-nanoserver-1809)
+-	[`openjdk:11-oracle`](#openjdk11-oracle)
+-	[`openjdk:11-oraclelinux7`](#openjdk11-oraclelinux7)
+-	[`openjdk:11-oraclelinux8`](#openjdk11-oraclelinux8)
 -	[`openjdk:11-slim`](#openjdk11-slim)
 -	[`openjdk:11-slim-buster`](#openjdk11-slim-buster)
 -	[`openjdk:11-windowsservercore`](#openjdk11-windowsservercore)
@@ -344,6 +368,9 @@
 -	[`openjdk:8-jdk-buster`](#openjdk8-jdk-buster)
 -	[`openjdk:8-jdk-nanoserver`](#openjdk8-jdk-nanoserver)
 -	[`openjdk:8-jdk-nanoserver-1809`](#openjdk8-jdk-nanoserver-1809)
+-	[`openjdk:8-jdk-oracle`](#openjdk8-jdk-oracle)
+-	[`openjdk:8-jdk-oraclelinux7`](#openjdk8-jdk-oraclelinux7)
+-	[`openjdk:8-jdk-oraclelinux8`](#openjdk8-jdk-oraclelinux8)
 -	[`openjdk:8-jdk-slim`](#openjdk8-jdk-slim)
 -	[`openjdk:8-jdk-slim-buster`](#openjdk8-jdk-slim-buster)
 -	[`openjdk:8-jdk-windowsservercore`](#openjdk8-jdk-windowsservercore)
@@ -360,6 +387,9 @@
 -	[`openjdk:8-jre-windowsservercore-ltsc2016`](#openjdk8-jre-windowsservercore-ltsc2016)
 -	[`openjdk:8-nanoserver`](#openjdk8-nanoserver)
 -	[`openjdk:8-nanoserver-1809`](#openjdk8-nanoserver-1809)
+-	[`openjdk:8-oracle`](#openjdk8-oracle)
+-	[`openjdk:8-oraclelinux7`](#openjdk8-oraclelinux7)
+-	[`openjdk:8-oraclelinux8`](#openjdk8-oraclelinux8)
 -	[`openjdk:8-slim`](#openjdk8-slim)
 -	[`openjdk:8-slim-buster`](#openjdk8-slim-buster)
 -	[`openjdk:8u275`](#openjdk8u275)
@@ -368,6 +398,9 @@
 -	[`openjdk:8u275-jdk-buster`](#openjdk8u275-jdk-buster)
 -	[`openjdk:8u275-jdk-nanoserver`](#openjdk8u275-jdk-nanoserver)
 -	[`openjdk:8u275-jdk-nanoserver-1809`](#openjdk8u275-jdk-nanoserver-1809)
+-	[`openjdk:8u275-jdk-oracle`](#openjdk8u275-jdk-oracle)
+-	[`openjdk:8u275-jdk-oraclelinux7`](#openjdk8u275-jdk-oraclelinux7)
+-	[`openjdk:8u275-jdk-oraclelinux8`](#openjdk8u275-jdk-oraclelinux8)
 -	[`openjdk:8u275-jdk-slim`](#openjdk8u275-jdk-slim)
 -	[`openjdk:8u275-jdk-slim-buster`](#openjdk8u275-jdk-slim-buster)
 -	[`openjdk:8u275-jdk-windowsservercore`](#openjdk8u275-jdk-windowsservercore)
@@ -384,6 +417,9 @@
 -	[`openjdk:8u275-jre-windowsservercore-ltsc2016`](#openjdk8u275-jre-windowsservercore-ltsc2016)
 -	[`openjdk:8u275-nanoserver`](#openjdk8u275-nanoserver)
 -	[`openjdk:8u275-nanoserver-1809`](#openjdk8u275-nanoserver-1809)
+-	[`openjdk:8u275-oracle`](#openjdk8u275-oracle)
+-	[`openjdk:8u275-oraclelinux7`](#openjdk8u275-oraclelinux7)
+-	[`openjdk:8u275-oraclelinux8`](#openjdk8u275-oraclelinux8)
 -	[`openjdk:8u275-slim`](#openjdk8u275-slim)
 -	[`openjdk:8u275-slim-buster`](#openjdk8u275-slim-buster)
 -	[`openjdk:8u275-windowsservercore`](#openjdk8u275-windowsservercore)
@@ -2403,6 +2439,18 @@ CMD ["jshell"]
 		Size: 894.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:11.0.9.1-jdk-oracle`
+
+**does not exist** (yet?)
+
+## `openjdk:11.0.9.1-jdk-oraclelinux7`
+
+**does not exist** (yet?)
+
+## `openjdk:11.0.9.1-jdk-oraclelinux8`
+
+**does not exist** (yet?)
+
 ## `openjdk:11.0.9.1-jdk-slim`
 
 ```console
@@ -4232,6 +4280,18 @@ CMD ["jshell"]
 		Size: 894.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:11.0.9.1-oracle`
+
+**does not exist** (yet?)
+
+## `openjdk:11.0.9.1-oraclelinux7`
+
+**does not exist** (yet?)
+
+## `openjdk:11.0.9.1-oraclelinux8`
+
+**does not exist** (yet?)
+
 ## `openjdk:11.0.9.1-slim`
 
 ```console
@@ -5572,6 +5632,18 @@ CMD ["jshell"]
 		Last Modified: Wed, 09 Dec 2020 19:39:14 GMT  
 		Size: 894.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:11.0.9-jdk-oracle`
+
+**does not exist** (yet?)
+
+## `openjdk:11.0.9-jdk-oraclelinux7`
+
+**does not exist** (yet?)
+
+## `openjdk:11.0.9-jdk-oraclelinux8`
+
+**does not exist** (yet?)
 
 ## `openjdk:11.0.9-jdk-slim`
 
@@ -7402,6 +7474,18 @@ CMD ["jshell"]
 		Size: 894.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:11.0.9-oracle`
+
+**does not exist** (yet?)
+
+## `openjdk:11.0.9-oraclelinux7`
+
+**does not exist** (yet?)
+
+## `openjdk:11.0.9-oraclelinux8`
+
+**does not exist** (yet?)
+
 ## `openjdk:11.0.9-slim`
 
 ```console
@@ -8742,6 +8826,134 @@ CMD ["jshell"]
 		Last Modified: Wed, 09 Dec 2020 19:39:14 GMT  
 		Size: 894.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:11.0-jdk-oracle`
+
+```console
+$ docker pull openjdk@sha256:4e96d439008d516f7e683d0a35ea7dbbe54d03444b1ca9ab28fbbafa73234050
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `openjdk:11.0-jdk-oracle` - linux; amd64
+
+```console
+$ docker pull openjdk@sha256:0d34f2df26d3e3238d9c05b74836a1577146f6a7c897ad50e4fcfa4c5b658c61
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **243.1 MB (243127911 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:680c5ad86000544d2c36dfad29c715bf33ceebfba962f30458db566f8dfeff8b`
+-	Default Command: `["jshell"]`
+
+```dockerfile
+# Thu, 30 Aug 2018 21:49:27 GMT
+MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
+# Fri, 12 Apr 2019 00:39:30 GMT
+ADD file:fc4b1a8a391c3bd11cdd229574a87e8d1133402deff8ef758f932756d5a82ca3 in / 
+# Fri, 12 Apr 2019 00:39:30 GMT
+CMD ["/bin/bash"]
+# Fri, 12 Apr 2019 01:03:22 GMT
+RUN set -eux; 	yum install -y 		gzip 		tar 				freetype fontconfig 	; 	rm -rf /var/cache/yum
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV JAVA_HOME=/usr/java/openjdk-11
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV PATH=/usr/java/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV JAVA_VERSION=11.0.2
+# Fri, 12 Apr 2019 01:04:55 GMT
+ENV JAVA_URL=https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz
+# Fri, 12 Apr 2019 01:04:55 GMT
+ENV JAVA_SHA256=99be79935354f5c0df1ad293620ea36d13f48ec3ea870c838f20c504c9668b57
+# Fri, 12 Apr 2019 01:05:35 GMT
+RUN set -eux; 		curl -fL -o /openjdk.tgz "$JAVA_URL"; 	echo "$JAVA_SHA256 */openjdk.tgz" | sha256sum -c -; 	mkdir -p "$JAVA_HOME"; 	tar --extract --file /openjdk.tgz --directory "$JAVA_HOME" --strip-components 1; 	rm /openjdk.tgz; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		java --version; 	javac --version
+# Fri, 12 Apr 2019 01:05:35 GMT
+CMD ["jshell"]
+```
+
+-	Layers:
+	-	`sha256:35defbf6c365d4b156baefbecee36d050397bcc4fca7906aada0bbd00e34c76a`  
+		Last Modified: Fri, 12 Apr 2019 00:41:39 GMT  
+		Size: 42.6 MB (42610008 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5362bf1d5ff8c939878cd11387a1f195da87c88b7c73c89b3d933917644c8fe1`  
+		Last Modified: Fri, 12 Apr 2019 01:07:10 GMT  
+		Size: 6.6 MB (6627887 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:06c125b2a83b9fed99f5b4eb30b914cff23f54ad3f0fb6b63473c2d6f726b0ca`  
+		Last Modified: Fri, 12 Apr 2019 01:08:19 GMT  
+		Size: 193.9 MB (193890016 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:11.0-jdk-oraclelinux7`
+
+```console
+$ docker pull openjdk@sha256:4e96d439008d516f7e683d0a35ea7dbbe54d03444b1ca9ab28fbbafa73234050
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `openjdk:11.0-jdk-oraclelinux7` - linux; amd64
+
+```console
+$ docker pull openjdk@sha256:0d34f2df26d3e3238d9c05b74836a1577146f6a7c897ad50e4fcfa4c5b658c61
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **243.1 MB (243127911 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:680c5ad86000544d2c36dfad29c715bf33ceebfba962f30458db566f8dfeff8b`
+-	Default Command: `["jshell"]`
+
+```dockerfile
+# Thu, 30 Aug 2018 21:49:27 GMT
+MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
+# Fri, 12 Apr 2019 00:39:30 GMT
+ADD file:fc4b1a8a391c3bd11cdd229574a87e8d1133402deff8ef758f932756d5a82ca3 in / 
+# Fri, 12 Apr 2019 00:39:30 GMT
+CMD ["/bin/bash"]
+# Fri, 12 Apr 2019 01:03:22 GMT
+RUN set -eux; 	yum install -y 		gzip 		tar 				freetype fontconfig 	; 	rm -rf /var/cache/yum
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV JAVA_HOME=/usr/java/openjdk-11
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV PATH=/usr/java/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV JAVA_VERSION=11.0.2
+# Fri, 12 Apr 2019 01:04:55 GMT
+ENV JAVA_URL=https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz
+# Fri, 12 Apr 2019 01:04:55 GMT
+ENV JAVA_SHA256=99be79935354f5c0df1ad293620ea36d13f48ec3ea870c838f20c504c9668b57
+# Fri, 12 Apr 2019 01:05:35 GMT
+RUN set -eux; 		curl -fL -o /openjdk.tgz "$JAVA_URL"; 	echo "$JAVA_SHA256 */openjdk.tgz" | sha256sum -c -; 	mkdir -p "$JAVA_HOME"; 	tar --extract --file /openjdk.tgz --directory "$JAVA_HOME" --strip-components 1; 	rm /openjdk.tgz; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		java --version; 	javac --version
+# Fri, 12 Apr 2019 01:05:35 GMT
+CMD ["jshell"]
+```
+
+-	Layers:
+	-	`sha256:35defbf6c365d4b156baefbecee36d050397bcc4fca7906aada0bbd00e34c76a`  
+		Last Modified: Fri, 12 Apr 2019 00:41:39 GMT  
+		Size: 42.6 MB (42610008 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5362bf1d5ff8c939878cd11387a1f195da87c88b7c73c89b3d933917644c8fe1`  
+		Last Modified: Fri, 12 Apr 2019 01:07:10 GMT  
+		Size: 6.6 MB (6627887 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:06c125b2a83b9fed99f5b4eb30b914cff23f54ad3f0fb6b63473c2d6f726b0ca`  
+		Last Modified: Fri, 12 Apr 2019 01:08:19 GMT  
+		Size: 193.9 MB (193890016 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:11.0-jdk-oraclelinux8`
+
+**does not exist** (yet?)
 
 ## `openjdk:11.0-jdk-slim`
 
@@ -10572,6 +10784,134 @@ CMD ["jshell"]
 		Size: 894.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:11.0-oracle`
+
+```console
+$ docker pull openjdk@sha256:4e96d439008d516f7e683d0a35ea7dbbe54d03444b1ca9ab28fbbafa73234050
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `openjdk:11.0-oracle` - linux; amd64
+
+```console
+$ docker pull openjdk@sha256:0d34f2df26d3e3238d9c05b74836a1577146f6a7c897ad50e4fcfa4c5b658c61
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **243.1 MB (243127911 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:680c5ad86000544d2c36dfad29c715bf33ceebfba962f30458db566f8dfeff8b`
+-	Default Command: `["jshell"]`
+
+```dockerfile
+# Thu, 30 Aug 2018 21:49:27 GMT
+MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
+# Fri, 12 Apr 2019 00:39:30 GMT
+ADD file:fc4b1a8a391c3bd11cdd229574a87e8d1133402deff8ef758f932756d5a82ca3 in / 
+# Fri, 12 Apr 2019 00:39:30 GMT
+CMD ["/bin/bash"]
+# Fri, 12 Apr 2019 01:03:22 GMT
+RUN set -eux; 	yum install -y 		gzip 		tar 				freetype fontconfig 	; 	rm -rf /var/cache/yum
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV JAVA_HOME=/usr/java/openjdk-11
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV PATH=/usr/java/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV JAVA_VERSION=11.0.2
+# Fri, 12 Apr 2019 01:04:55 GMT
+ENV JAVA_URL=https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz
+# Fri, 12 Apr 2019 01:04:55 GMT
+ENV JAVA_SHA256=99be79935354f5c0df1ad293620ea36d13f48ec3ea870c838f20c504c9668b57
+# Fri, 12 Apr 2019 01:05:35 GMT
+RUN set -eux; 		curl -fL -o /openjdk.tgz "$JAVA_URL"; 	echo "$JAVA_SHA256 */openjdk.tgz" | sha256sum -c -; 	mkdir -p "$JAVA_HOME"; 	tar --extract --file /openjdk.tgz --directory "$JAVA_HOME" --strip-components 1; 	rm /openjdk.tgz; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		java --version; 	javac --version
+# Fri, 12 Apr 2019 01:05:35 GMT
+CMD ["jshell"]
+```
+
+-	Layers:
+	-	`sha256:35defbf6c365d4b156baefbecee36d050397bcc4fca7906aada0bbd00e34c76a`  
+		Last Modified: Fri, 12 Apr 2019 00:41:39 GMT  
+		Size: 42.6 MB (42610008 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5362bf1d5ff8c939878cd11387a1f195da87c88b7c73c89b3d933917644c8fe1`  
+		Last Modified: Fri, 12 Apr 2019 01:07:10 GMT  
+		Size: 6.6 MB (6627887 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:06c125b2a83b9fed99f5b4eb30b914cff23f54ad3f0fb6b63473c2d6f726b0ca`  
+		Last Modified: Fri, 12 Apr 2019 01:08:19 GMT  
+		Size: 193.9 MB (193890016 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:11.0-oraclelinux7`
+
+```console
+$ docker pull openjdk@sha256:4e96d439008d516f7e683d0a35ea7dbbe54d03444b1ca9ab28fbbafa73234050
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `openjdk:11.0-oraclelinux7` - linux; amd64
+
+```console
+$ docker pull openjdk@sha256:0d34f2df26d3e3238d9c05b74836a1577146f6a7c897ad50e4fcfa4c5b658c61
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **243.1 MB (243127911 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:680c5ad86000544d2c36dfad29c715bf33ceebfba962f30458db566f8dfeff8b`
+-	Default Command: `["jshell"]`
+
+```dockerfile
+# Thu, 30 Aug 2018 21:49:27 GMT
+MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
+# Fri, 12 Apr 2019 00:39:30 GMT
+ADD file:fc4b1a8a391c3bd11cdd229574a87e8d1133402deff8ef758f932756d5a82ca3 in / 
+# Fri, 12 Apr 2019 00:39:30 GMT
+CMD ["/bin/bash"]
+# Fri, 12 Apr 2019 01:03:22 GMT
+RUN set -eux; 	yum install -y 		gzip 		tar 				freetype fontconfig 	; 	rm -rf /var/cache/yum
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV JAVA_HOME=/usr/java/openjdk-11
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV PATH=/usr/java/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV JAVA_VERSION=11.0.2
+# Fri, 12 Apr 2019 01:04:55 GMT
+ENV JAVA_URL=https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz
+# Fri, 12 Apr 2019 01:04:55 GMT
+ENV JAVA_SHA256=99be79935354f5c0df1ad293620ea36d13f48ec3ea870c838f20c504c9668b57
+# Fri, 12 Apr 2019 01:05:35 GMT
+RUN set -eux; 		curl -fL -o /openjdk.tgz "$JAVA_URL"; 	echo "$JAVA_SHA256 */openjdk.tgz" | sha256sum -c -; 	mkdir -p "$JAVA_HOME"; 	tar --extract --file /openjdk.tgz --directory "$JAVA_HOME" --strip-components 1; 	rm /openjdk.tgz; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		java --version; 	javac --version
+# Fri, 12 Apr 2019 01:05:35 GMT
+CMD ["jshell"]
+```
+
+-	Layers:
+	-	`sha256:35defbf6c365d4b156baefbecee36d050397bcc4fca7906aada0bbd00e34c76a`  
+		Last Modified: Fri, 12 Apr 2019 00:41:39 GMT  
+		Size: 42.6 MB (42610008 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5362bf1d5ff8c939878cd11387a1f195da87c88b7c73c89b3d933917644c8fe1`  
+		Last Modified: Fri, 12 Apr 2019 01:07:10 GMT  
+		Size: 6.6 MB (6627887 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:06c125b2a83b9fed99f5b4eb30b914cff23f54ad3f0fb6b63473c2d6f726b0ca`  
+		Last Modified: Fri, 12 Apr 2019 01:08:19 GMT  
+		Size: 193.9 MB (193890016 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:11.0-oraclelinux8`
+
+**does not exist** (yet?)
+
 ## `openjdk:11.0-slim`
 
 ```console
@@ -11912,6 +12252,134 @@ CMD ["jshell"]
 		Last Modified: Wed, 09 Dec 2020 19:39:14 GMT  
 		Size: 894.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:11-jdk-oracle`
+
+```console
+$ docker pull openjdk@sha256:4e96d439008d516f7e683d0a35ea7dbbe54d03444b1ca9ab28fbbafa73234050
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `openjdk:11-jdk-oracle` - linux; amd64
+
+```console
+$ docker pull openjdk@sha256:0d34f2df26d3e3238d9c05b74836a1577146f6a7c897ad50e4fcfa4c5b658c61
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **243.1 MB (243127911 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:680c5ad86000544d2c36dfad29c715bf33ceebfba962f30458db566f8dfeff8b`
+-	Default Command: `["jshell"]`
+
+```dockerfile
+# Thu, 30 Aug 2018 21:49:27 GMT
+MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
+# Fri, 12 Apr 2019 00:39:30 GMT
+ADD file:fc4b1a8a391c3bd11cdd229574a87e8d1133402deff8ef758f932756d5a82ca3 in / 
+# Fri, 12 Apr 2019 00:39:30 GMT
+CMD ["/bin/bash"]
+# Fri, 12 Apr 2019 01:03:22 GMT
+RUN set -eux; 	yum install -y 		gzip 		tar 				freetype fontconfig 	; 	rm -rf /var/cache/yum
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV JAVA_HOME=/usr/java/openjdk-11
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV PATH=/usr/java/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV JAVA_VERSION=11.0.2
+# Fri, 12 Apr 2019 01:04:55 GMT
+ENV JAVA_URL=https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz
+# Fri, 12 Apr 2019 01:04:55 GMT
+ENV JAVA_SHA256=99be79935354f5c0df1ad293620ea36d13f48ec3ea870c838f20c504c9668b57
+# Fri, 12 Apr 2019 01:05:35 GMT
+RUN set -eux; 		curl -fL -o /openjdk.tgz "$JAVA_URL"; 	echo "$JAVA_SHA256 */openjdk.tgz" | sha256sum -c -; 	mkdir -p "$JAVA_HOME"; 	tar --extract --file /openjdk.tgz --directory "$JAVA_HOME" --strip-components 1; 	rm /openjdk.tgz; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		java --version; 	javac --version
+# Fri, 12 Apr 2019 01:05:35 GMT
+CMD ["jshell"]
+```
+
+-	Layers:
+	-	`sha256:35defbf6c365d4b156baefbecee36d050397bcc4fca7906aada0bbd00e34c76a`  
+		Last Modified: Fri, 12 Apr 2019 00:41:39 GMT  
+		Size: 42.6 MB (42610008 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5362bf1d5ff8c939878cd11387a1f195da87c88b7c73c89b3d933917644c8fe1`  
+		Last Modified: Fri, 12 Apr 2019 01:07:10 GMT  
+		Size: 6.6 MB (6627887 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:06c125b2a83b9fed99f5b4eb30b914cff23f54ad3f0fb6b63473c2d6f726b0ca`  
+		Last Modified: Fri, 12 Apr 2019 01:08:19 GMT  
+		Size: 193.9 MB (193890016 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:11-jdk-oraclelinux7`
+
+```console
+$ docker pull openjdk@sha256:4e96d439008d516f7e683d0a35ea7dbbe54d03444b1ca9ab28fbbafa73234050
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `openjdk:11-jdk-oraclelinux7` - linux; amd64
+
+```console
+$ docker pull openjdk@sha256:0d34f2df26d3e3238d9c05b74836a1577146f6a7c897ad50e4fcfa4c5b658c61
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **243.1 MB (243127911 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:680c5ad86000544d2c36dfad29c715bf33ceebfba962f30458db566f8dfeff8b`
+-	Default Command: `["jshell"]`
+
+```dockerfile
+# Thu, 30 Aug 2018 21:49:27 GMT
+MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
+# Fri, 12 Apr 2019 00:39:30 GMT
+ADD file:fc4b1a8a391c3bd11cdd229574a87e8d1133402deff8ef758f932756d5a82ca3 in / 
+# Fri, 12 Apr 2019 00:39:30 GMT
+CMD ["/bin/bash"]
+# Fri, 12 Apr 2019 01:03:22 GMT
+RUN set -eux; 	yum install -y 		gzip 		tar 				freetype fontconfig 	; 	rm -rf /var/cache/yum
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV JAVA_HOME=/usr/java/openjdk-11
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV PATH=/usr/java/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV JAVA_VERSION=11.0.2
+# Fri, 12 Apr 2019 01:04:55 GMT
+ENV JAVA_URL=https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz
+# Fri, 12 Apr 2019 01:04:55 GMT
+ENV JAVA_SHA256=99be79935354f5c0df1ad293620ea36d13f48ec3ea870c838f20c504c9668b57
+# Fri, 12 Apr 2019 01:05:35 GMT
+RUN set -eux; 		curl -fL -o /openjdk.tgz "$JAVA_URL"; 	echo "$JAVA_SHA256 */openjdk.tgz" | sha256sum -c -; 	mkdir -p "$JAVA_HOME"; 	tar --extract --file /openjdk.tgz --directory "$JAVA_HOME" --strip-components 1; 	rm /openjdk.tgz; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		java --version; 	javac --version
+# Fri, 12 Apr 2019 01:05:35 GMT
+CMD ["jshell"]
+```
+
+-	Layers:
+	-	`sha256:35defbf6c365d4b156baefbecee36d050397bcc4fca7906aada0bbd00e34c76a`  
+		Last Modified: Fri, 12 Apr 2019 00:41:39 GMT  
+		Size: 42.6 MB (42610008 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5362bf1d5ff8c939878cd11387a1f195da87c88b7c73c89b3d933917644c8fe1`  
+		Last Modified: Fri, 12 Apr 2019 01:07:10 GMT  
+		Size: 6.6 MB (6627887 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:06c125b2a83b9fed99f5b4eb30b914cff23f54ad3f0fb6b63473c2d6f726b0ca`  
+		Last Modified: Fri, 12 Apr 2019 01:08:19 GMT  
+		Size: 193.9 MB (193890016 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:11-jdk-oraclelinux8`
+
+**does not exist** (yet?)
 
 ## `openjdk:11-jdk-slim`
 
@@ -13741,6 +14209,134 @@ CMD ["jshell"]
 		Last Modified: Wed, 09 Dec 2020 19:39:14 GMT  
 		Size: 894.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:11-oracle`
+
+```console
+$ docker pull openjdk@sha256:4e96d439008d516f7e683d0a35ea7dbbe54d03444b1ca9ab28fbbafa73234050
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `openjdk:11-oracle` - linux; amd64
+
+```console
+$ docker pull openjdk@sha256:0d34f2df26d3e3238d9c05b74836a1577146f6a7c897ad50e4fcfa4c5b658c61
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **243.1 MB (243127911 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:680c5ad86000544d2c36dfad29c715bf33ceebfba962f30458db566f8dfeff8b`
+-	Default Command: `["jshell"]`
+
+```dockerfile
+# Thu, 30 Aug 2018 21:49:27 GMT
+MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
+# Fri, 12 Apr 2019 00:39:30 GMT
+ADD file:fc4b1a8a391c3bd11cdd229574a87e8d1133402deff8ef758f932756d5a82ca3 in / 
+# Fri, 12 Apr 2019 00:39:30 GMT
+CMD ["/bin/bash"]
+# Fri, 12 Apr 2019 01:03:22 GMT
+RUN set -eux; 	yum install -y 		gzip 		tar 				freetype fontconfig 	; 	rm -rf /var/cache/yum
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV JAVA_HOME=/usr/java/openjdk-11
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV PATH=/usr/java/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV JAVA_VERSION=11.0.2
+# Fri, 12 Apr 2019 01:04:55 GMT
+ENV JAVA_URL=https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz
+# Fri, 12 Apr 2019 01:04:55 GMT
+ENV JAVA_SHA256=99be79935354f5c0df1ad293620ea36d13f48ec3ea870c838f20c504c9668b57
+# Fri, 12 Apr 2019 01:05:35 GMT
+RUN set -eux; 		curl -fL -o /openjdk.tgz "$JAVA_URL"; 	echo "$JAVA_SHA256 */openjdk.tgz" | sha256sum -c -; 	mkdir -p "$JAVA_HOME"; 	tar --extract --file /openjdk.tgz --directory "$JAVA_HOME" --strip-components 1; 	rm /openjdk.tgz; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		java --version; 	javac --version
+# Fri, 12 Apr 2019 01:05:35 GMT
+CMD ["jshell"]
+```
+
+-	Layers:
+	-	`sha256:35defbf6c365d4b156baefbecee36d050397bcc4fca7906aada0bbd00e34c76a`  
+		Last Modified: Fri, 12 Apr 2019 00:41:39 GMT  
+		Size: 42.6 MB (42610008 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5362bf1d5ff8c939878cd11387a1f195da87c88b7c73c89b3d933917644c8fe1`  
+		Last Modified: Fri, 12 Apr 2019 01:07:10 GMT  
+		Size: 6.6 MB (6627887 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:06c125b2a83b9fed99f5b4eb30b914cff23f54ad3f0fb6b63473c2d6f726b0ca`  
+		Last Modified: Fri, 12 Apr 2019 01:08:19 GMT  
+		Size: 193.9 MB (193890016 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:11-oraclelinux7`
+
+```console
+$ docker pull openjdk@sha256:4e96d439008d516f7e683d0a35ea7dbbe54d03444b1ca9ab28fbbafa73234050
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
+	-	linux; amd64
+
+### `openjdk:11-oraclelinux7` - linux; amd64
+
+```console
+$ docker pull openjdk@sha256:0d34f2df26d3e3238d9c05b74836a1577146f6a7c897ad50e4fcfa4c5b658c61
+```
+
+-	Docker Version: 18.06.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **243.1 MB (243127911 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:680c5ad86000544d2c36dfad29c715bf33ceebfba962f30458db566f8dfeff8b`
+-	Default Command: `["jshell"]`
+
+```dockerfile
+# Thu, 30 Aug 2018 21:49:27 GMT
+MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
+# Fri, 12 Apr 2019 00:39:30 GMT
+ADD file:fc4b1a8a391c3bd11cdd229574a87e8d1133402deff8ef758f932756d5a82ca3 in / 
+# Fri, 12 Apr 2019 00:39:30 GMT
+CMD ["/bin/bash"]
+# Fri, 12 Apr 2019 01:03:22 GMT
+RUN set -eux; 	yum install -y 		gzip 		tar 				freetype fontconfig 	; 	rm -rf /var/cache/yum
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV JAVA_HOME=/usr/java/openjdk-11
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV PATH=/usr/java/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 12 Apr 2019 01:04:54 GMT
+ENV JAVA_VERSION=11.0.2
+# Fri, 12 Apr 2019 01:04:55 GMT
+ENV JAVA_URL=https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz
+# Fri, 12 Apr 2019 01:04:55 GMT
+ENV JAVA_SHA256=99be79935354f5c0df1ad293620ea36d13f48ec3ea870c838f20c504c9668b57
+# Fri, 12 Apr 2019 01:05:35 GMT
+RUN set -eux; 		curl -fL -o /openjdk.tgz "$JAVA_URL"; 	echo "$JAVA_SHA256 */openjdk.tgz" | sha256sum -c -; 	mkdir -p "$JAVA_HOME"; 	tar --extract --file /openjdk.tgz --directory "$JAVA_HOME" --strip-components 1; 	rm /openjdk.tgz; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		java --version; 	javac --version
+# Fri, 12 Apr 2019 01:05:35 GMT
+CMD ["jshell"]
+```
+
+-	Layers:
+	-	`sha256:35defbf6c365d4b156baefbecee36d050397bcc4fca7906aada0bbd00e34c76a`  
+		Last Modified: Fri, 12 Apr 2019 00:41:39 GMT  
+		Size: 42.6 MB (42610008 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5362bf1d5ff8c939878cd11387a1f195da87c88b7c73c89b3d933917644c8fe1`  
+		Last Modified: Fri, 12 Apr 2019 01:07:10 GMT  
+		Size: 6.6 MB (6627887 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:06c125b2a83b9fed99f5b4eb30b914cff23f54ad3f0fb6b63473c2d6f726b0ca`  
+		Last Modified: Fri, 12 Apr 2019 01:08:19 GMT  
+		Size: 193.9 MB (193890016 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:11-oraclelinux8`
+
+**does not exist** (yet?)
 
 ## `openjdk:11-slim`
 
@@ -43565,6 +44161,18 @@ RUN echo Verifying install ... 	&& echo   javac -version && javac -version 	&& e
 		Size: 55.0 KB (54984 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:8-jdk-oracle`
+
+**does not exist** (yet?)
+
+## `openjdk:8-jdk-oraclelinux7`
+
+**does not exist** (yet?)
+
+## `openjdk:8-jdk-oraclelinux8`
+
+**does not exist** (yet?)
+
 ## `openjdk:8-jdk-slim`
 
 ```console
@@ -45008,6 +45616,18 @@ RUN echo Verifying install ... 	&& echo   javac -version && javac -version 	&& e
 		Size: 55.0 KB (54984 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:8-oracle`
+
+**does not exist** (yet?)
+
+## `openjdk:8-oraclelinux7`
+
+**does not exist** (yet?)
+
+## `openjdk:8-oraclelinux8`
+
+**does not exist** (yet?)
+
 ## `openjdk:8-slim`
 
 ```console
@@ -45881,6 +46501,18 @@ RUN echo Verifying install ... 	&& echo   javac -version && javac -version 	&& e
 		Last Modified: Wed, 09 Dec 2020 19:48:34 GMT  
 		Size: 55.0 KB (54984 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:8u275-jdk-oracle`
+
+**does not exist** (yet?)
+
+## `openjdk:8u275-jdk-oraclelinux7`
+
+**does not exist** (yet?)
+
+## `openjdk:8u275-jdk-oraclelinux8`
+
+**does not exist** (yet?)
 
 ## `openjdk:8u275-jdk-slim`
 
@@ -47324,6 +47956,18 @@ RUN echo Verifying install ... 	&& echo   javac -version && javac -version 	&& e
 		Last Modified: Wed, 09 Dec 2020 19:48:34 GMT  
 		Size: 55.0 KB (54984 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:8u275-oracle`
+
+**does not exist** (yet?)
+
+## `openjdk:8u275-oraclelinux7`
+
+**does not exist** (yet?)
+
+## `openjdk:8u275-oraclelinux8`
+
+**does not exist** (yet?)
 
 ## `openjdk:8u275-slim`
 
