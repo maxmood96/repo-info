@@ -26,6 +26,14 @@
 -	[`kong:2.2-alpine`](#kong22-alpine)
 -	[`kong:2.2-centos`](#kong22-centos)
 -	[`kong:2.2-ubuntu`](#kong22-ubuntu)
+-	[`kong:2.3`](#kong23)
+-	[`kong:2.3.0`](#kong230)
+-	[`kong:2.3.0-alpine`](#kong230-alpine)
+-	[`kong:2.3.0-centos`](#kong230-centos)
+-	[`kong:2.3.0-ubuntu`](#kong230-ubuntu)
+-	[`kong:2.3-alpine`](#kong23-alpine)
+-	[`kong:2.3-centos`](#kong23-centos)
+-	[`kong:2.3-ubuntu`](#kong23-ubuntu)
 -	[`kong:alpine`](#kongalpine)
 -	[`kong:centos`](#kongcentos)
 -	[`kong:latest`](#konglatest)
@@ -3140,6 +3148,38 @@ CMD ["kong" "docker-start"]
 		Last Modified: Wed, 02 Dec 2020 00:06:38 GMT  
 		Size: 689.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `kong:2.3`
+
+**does not exist** (yet?)
+
+## `kong:2.3.0`
+
+**does not exist** (yet?)
+
+## `kong:2.3.0-alpine`
+
+**does not exist** (yet?)
+
+## `kong:2.3.0-centos`
+
+**does not exist** (yet?)
+
+## `kong:2.3.0-ubuntu`
+
+**does not exist** (yet?)
+
+## `kong:2.3-alpine`
+
+**does not exist** (yet?)
+
+## `kong:2.3-centos`
+
+**does not exist** (yet?)
+
+## `kong:2.3-ubuntu`
+
+**does not exist** (yet?)
 
 ## `kong:alpine`
 
