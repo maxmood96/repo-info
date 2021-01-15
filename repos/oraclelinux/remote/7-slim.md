@@ -1,7 +1,7 @@
 ## `oraclelinux:7-slim`
 
 ```console
-$ docker pull oraclelinux@sha256:afa5bcaea93584c284fa2bd8922ad14419a100d257b080b0662597ad6eafdac2
+$ docker pull oraclelinux@sha256:a09bd177635eb0182ffddbffad0cd1867be72b160ebe6d3fc6b7fe5e65d87a52
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -40,22 +40,20 @@ CMD ["/bin/bash"]
 ### `oraclelinux:7-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull oraclelinux@sha256:3c74ad77c9b4ae9476826b7ecaa84e0e6d9f1cd7d70777dcbacaaee89bf5b0da
+$ docker pull oraclelinux@sha256:a375d2a27297492ac87dd8b44ca4f9317999094ef8214bcc807095cdc6c66791
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **48.9 MB (48858154 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f1de98b3a6fe9204decdac6507bdd63e7b05ea17778d0bc7d7f36d251cd4b9b`
+-	Image ID: `sha256:ddd432727123875ac350800eda2d05d8205d6bfe3dd36d528e1fa42b3092067f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 15 Sep 2020 20:41:36 GMT
-LABEL org.opencontainers.image.authors=Oracle Linux Product Team <ol-ovm-info_ww@oracle.com> org.opencontainers.image.url=https://github.com/oracle/container-images org.opencontainers.image.source=https://github.com/oracle/container-images/tree/dist-arm64v8/7-slim org.opencontainers.image.vendor=Oracle America, Inc org.opencontainers.image.title=Oracle Linux 7 (slim) org.opencontainers.image.description=Oracle Linux is an open-source       operating system available under the GNU General Public License (GPLv2) and       is suitable for both general purpose or Oracle workloads.
-# Wed, 06 Jan 2021 20:45:46 GMT
+# Fri, 15 Jan 2021 00:06:30 GMT
 ADD file:d4d5ffcc8d57e27f8de10063c4e347d2f4da299f62166d6f6387a7714f5e0f06 in / 
-# Wed, 06 Jan 2021 20:45:48 GMT
+# Fri, 15 Jan 2021 00:06:33 GMT
 CMD ["/bin/bash"]
 ```
 
