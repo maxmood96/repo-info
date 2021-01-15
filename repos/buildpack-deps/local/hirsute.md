@@ -877,14 +877,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-10/copyright`, `/usr/share/doc/g++-1
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-10=10.2.1-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.2.1-1ubuntu1.dsc' gcc-10_10.2.1-1ubuntu1.dsc 30467 SHA512:d26fcca0289441f3d5ce69c22a4c81f8077b58e6d73e154b8c60da53adbf1f3c66a72e179c37334c6a925acc66f83f81341180d8bdf92c3bd4002f36cf861af2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.2.1.orig.tar.gz' gcc-10_10.2.1.orig.tar.gz 94773960 SHA512:70911f9489225ddb10527f122be77d20cbaf2e4f2bfe92f756d33ec35c0aba352f342a7ee296310a149ea112f97e835f0d3d61f9bc9d416cfc43ccacb325e7ca
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.2.1-1ubuntu1.debian.tar.xz' gcc-10_10.2.1-1ubuntu1.debian.tar.xz 2305068 SHA512:cf4d997e7da742f2e8781ebe46005d1bdbdf690c84ae5ea9fe91d8dc9b866131f57e0b3f9553619cb489fedc2c39beaaf0c37a38078d5d826002b7046a668ad6
-```
 
 ### `dpkg` source package: `gcc-defaults=1.189ubuntu1`
 
@@ -1014,14 +1009,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.66.3-2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.66.3-2.dsc' glib2.0_2.66.3-2.dsc 3406 SHA512:5b8fe158d4ea5be1f54e305e911558c107f0337d67a08506645dbacc5f45190fd8912e2d7691aec4853b644b6560b1a0a7f0d5f9b9f6cf84ba88c8131d677191
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.66.3.orig.tar.xz' glib2.0_2.66.3.orig.tar.xz 4837796 SHA512:ab2670ae4eeb3b561c0e71ff9153908f450e430cd43771bfee09233a65826dc16462537ec64bdfcced867f4c8663341b6b9d17af5ba0fab8564b8f21b04a45d7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.66.3-2.debian.tar.xz' glib2.0_2.66.3-2.debian.tar.xz 97508 SHA512:a7d5effd2c9cbb7ffb87ab0d5ffcf9c249ee2b2a1cd6b21f8b617e3731649e869e802c0f3bfae6b0ca536194a85f6b3636b07b8de54813505e6c50b450493308
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glib2.0/2.66.3-2/
+
 
 ### `dpkg` source package: `glibc=2.32-0ubuntu3`
 
@@ -1051,14 +1045,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.32-0ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.32-0ubuntu5.dsc' glibc_2.32-0ubuntu5.dsc 8950 SHA512:d7860a6ed903119e0d6034ab875d18229edf5c7da596b65bf262fa74d93d453a3737c66033187a39a373219c294115ed5168cea5f36bf62471c09dfa67fdff2e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.32.orig.tar.xz' glibc_2.32.orig.tar.xz 16744512 SHA512:8460c155b7003e04f18dabece4ed9ad77445fa2288a7dc08e80a8fc4c418828af29e0649951bd71a54ea2ad2d4da7570aafd9bdfe4a37e9951b772b442afe50b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.32-0ubuntu5.debian.tar.xz' glibc_2.32-0ubuntu5.debian.tar.xz 883880 SHA512:49da5e9764cc21cf715bcb4387355af8ff23f42f6269ae6d9cfc57e9ba438b7a3c6f71754e8d5b012b82fd1f0161c1fdd534d02a85f9e8bf0bb1c2fa74c4c504
-```
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-6ubuntu1`
 
@@ -1373,10 +1362,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ilmbase=2.5.3-2
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/ilmbase/ilmbase_2.5.3-2.dsc' ilmbase_2.5.3-2.dsc 2468 SHA512:dbff4d72c16ee73a954c71e87c8df7bcf3bf4965d760855784539cdd7766b7e625845ae7add575b42d971b24e2c0546550d8fa64584b051c50e57b3ca6ea8af0
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/ilmbase/ilmbase_2.5.3.orig.tar.gz' ilmbase_2.5.3.orig.tar.gz 27534825 SHA512:6da03193d4fea1e97e35008f59304ab408c521ead8495ba411cde5c172cf953be97999971f57398b813d14f1af1d722539a6b74d5ee54b9e74769ea8258d36ba
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/ilmbase/ilmbase_2.5.3.orig.tar.gz.asc' ilmbase_2.5.3.orig.tar.gz.asc 287 SHA512:9b3978e44b531429aba42b9cc4969a470898d9d74652e3809edb0273ba9b127c471aec6570b5d352be738f59810091c0df2c70d39c16d2c32833d173b270f72c
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/ilmbase/ilmbase_2.5.3-2.debian.tar.xz' ilmbase_2.5.3-2.debian.tar.xz 14304 SHA512:ca489be262593e20012362ee4fd82cf74f79507ce75d530518d1133cd15c0fa515e3964f12c098259e214bf3f3e4f1eccf3fbd15362bdd2f91aedb83a4341310
+'http://archive.ubuntu.com/ubuntu/pool/main/i/ilmbase/ilmbase_2.5.3-2.dsc' ilmbase_2.5.3-2.dsc 2468 SHA512:dbff4d72c16ee73a954c71e87c8df7bcf3bf4965d760855784539cdd7766b7e625845ae7add575b42d971b24e2c0546550d8fa64584b051c50e57b3ca6ea8af0
+'http://archive.ubuntu.com/ubuntu/pool/main/i/ilmbase/ilmbase_2.5.3.orig.tar.gz' ilmbase_2.5.3.orig.tar.gz 27534825 SHA512:6da03193d4fea1e97e35008f59304ab408c521ead8495ba411cde5c172cf953be97999971f57398b813d14f1af1d722539a6b74d5ee54b9e74769ea8258d36ba
+'http://archive.ubuntu.com/ubuntu/pool/main/i/ilmbase/ilmbase_2.5.3.orig.tar.gz.asc' ilmbase_2.5.3.orig.tar.gz.asc 287 SHA512:9b3978e44b531429aba42b9cc4969a470898d9d74652e3809edb0273ba9b127c471aec6570b5d352be738f59810091c0df2c70d39c16d2c32833d173b270f72c
+'http://archive.ubuntu.com/ubuntu/pool/main/i/ilmbase/ilmbase_2.5.3-2.debian.tar.xz' ilmbase_2.5.3-2.debian.tar.xz 14304 SHA512:ca489be262593e20012362ee4fd82cf74f79507ce75d530518d1133cd15c0fa515e3964f12c098259e214bf3f3e4f1eccf3fbd15362bdd2f91aedb83a4341310
 ```
 
 ### `dpkg` source package: `imagemagick=8:6.9.10.23+dfsg-2.1ubuntu14`
@@ -2244,14 +2233,9 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.4.3-1ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.4.3-1ubuntu5.dsc' libseccomp_2.4.3-1ubuntu5.dsc 2564 SHA512:02e4d558d88efbd00361271796bd1c0a51a761ac835602c425dd4229d8c6193555b7716bc18caf45ea8832b17a1492f5e1fa0d6e28f96035bc9af971cc06df63
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.4.3.orig.tar.gz' libseccomp_2.4.3.orig.tar.gz 598147 SHA512:7b7af2e98493243ffe1934fefff5723b24ae9b9bdc4bf039343ee8456c15acb0ea34e81ec292a41143848272aeca794ef92ad38fc3f42c77465170cb540479ef
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.4.3-1ubuntu5.debian.tar.xz' libseccomp_2.4.3-1ubuntu5.debian.tar.xz 36428 SHA512:73721835247a1e28d38ea5c264e7294777fcaf920f3f4d13e09ddd0eb0f8b6c283c16a3a17ca06b79f651632f46be7158ea59fe6cc0864273fa2b6a7c31b1143
-```
 
 ### `dpkg` source package: `libselinux=3.1-2build2`
 
@@ -2944,13 +2928,9 @@ Licenses: (parsed from: `/usr/share/doc/media-types/copyright`)
 
 - `ad-hoc`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris media-types=1.0.1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/media-types/media-types_1.0.1ubuntu1.dsc' media-types_1.0.1ubuntu1.dsc 1764 SHA512:9960f55407a0dbddad98a023819c6934c42a5d1ca92a5923b54ff63e49f99141ec85b057854b28165f8d81a5eed950fab776ece10cfe88a1f79c1d618472a723
-'http://archive.ubuntu.com/ubuntu/pool/main/m/media-types/media-types_1.0.1ubuntu1.tar.xz' media-types_1.0.1ubuntu1.tar.xz 16908 SHA512:03b458152e66af3c2c9108ea167252894845682765d62ed2d40457296d3c931e3ec39659232780265292940098aa01b4a2ed9c1dd9ee48794b952d6e8a51ee4a
-```
 
 ### `dpkg` source package: `mercurial=5.5.2-1build1`
 
@@ -3322,15 +3302,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu4.dsc' openssl_1.1.1f-1ubuntu4.dsc 2705 SHA512:b0c4209047983a2a629751d1ad7cb3b9d2cfb040ed02eb964775a33a0588c5d9adc4db5a19554dc00c1f5e6496572018cbcc6abf39777cbeb4b3f73fc6becc87
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz.asc' openssl_1.1.1f.orig.tar.gz.asc 488 SHA512:63b01ffc23b2fec2cfc147d382b486a136e5610e181be94aa333022803a442ded37e8276fefb62b3176b571b94a1d2243c05b86b52ad7784fe0068d1ad948562
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu4.debian.tar.xz' openssl_1.1.1f-1ubuntu4.debian.tar.xz 149616 SHA512:0afc642ee3c0a36afa45c9f4c5f9288ffd6767bae6089a2a4cc199ea8d05c72590fb75409a2e9203e1a4c5691f8d6760236af0085322a2d8c4344e3e1f4b3ef6
-```
 
 ### `dpkg` source package: `p11-kit=0.23.21-2build1`
 
@@ -3811,13 +3785,13 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 - `configure`
 - `installsh`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.13
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.13.dsc' sensible-utils_0.0.13.dsc 1688 SHA512:1e0e27d2505cfa185398763723f557af400ab34c565cecf64860ba929f53b23b608aa99e427d9f82463fdeae66e6aabc96dffe31f9d2863b3486cfaf46151012
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.13.tar.xz' sensible-utils_0.0.13.tar.xz 62020 SHA512:365406e73e129b80a0abc7e2d32623df23c2eeeb9bf2d597c3c09bdb990b816734acc06225e53b0c4a9a64c0e7d40d434c9a3abead57fd87e180c5a4be62ab8d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sensible-utils/0.0.13/
+
 
 ### `dpkg` source package: `serf=1.3.9-8build1`
 

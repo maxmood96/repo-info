@@ -720,20 +720,13 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `GFDL-1.3`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris findutils=4.7.0+git20201010-2
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.7.0+git20201010-2.dsc' findutils_4.7.0+git20201010-2.dsc 2136 SHA256:9ba9f5e02b662d1d6d404aa21d9e5827dac60e0c1879a82698ba0c8be6cf062e
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.7.0+git20201010.orig.tar.xz' findutils_4.7.0+git20201010.orig.tar.xz 1950076 SHA256:f690859f9615cc8fdf04e6f0675c2d1881e9655dffe065cab5fd7f04d8fe6768
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.7.0+git20201010-2.debian.tar.xz' findutils_4.7.0+git20201010-2.debian.tar.xz 27852 SHA256:4555e249a33b492959d15c1fabe19724b4a49e491a83d46ee248d600c58ed397
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/findutils/4.7.0+git20201010-2/
 
-- https://sources.debian.net/src/findutils/4.7.0+git20201010-2/ (for browsing the source)
-- https://sources.debian.net/src/findutils/4.7.0+git20201010-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/findutils/4.7.0+git20201010-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-10=10.2.1-3`
 
@@ -2731,20 +2724,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.9-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.9=3.9.1-1
-'http://deb.debian.org/debian/pool/main/p/python3.9/python3.9_3.9.1-1.dsc' python3.9_3.9.1-1.dsc 3415 SHA256:a9be41dd5b7066216e56d16b0418dceb083d5732ec9dd0d353104d6aa32089c8
-'http://deb.debian.org/debian/pool/main/p/python3.9/python3.9_3.9.1.orig.tar.xz' python3.9_3.9.1.orig.tar.xz 18897104 SHA256:991c3f8ac97992f3d308fefeb03a64db462574eadbff34ce8bc5bb583d9903ff
-'http://deb.debian.org/debian/pool/main/p/python3.9/python3.9_3.9.1-1.debian.tar.xz' python3.9_3.9.1-1.debian.tar.xz 210284 SHA256:6be57d020cfa7e15990ce4f04514909dda03bbdce92cac49434757dccaa2c43a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.9/3.9.1-1/
 
-- https://sources.debian.net/src/python3.9/3.9.1-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.9/3.9.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.9/3.9.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.1-1`
 
@@ -2838,19 +2824,13 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 - `configure`
 - `installsh`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.12+nmu1
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.12+nmu1.dsc' sensible-utils_0.0.12+nmu1.dsc 1753 SHA256:68bcb3e542e29a8a0bf281d9145d0e4cd9def529af2ba0cfe0afee3c5af958bc
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.12+nmu1.tar.xz' sensible-utils_0.0.12+nmu1.tar.xz 61988 SHA256:53c6606facf083adbbf0da04e6d774b31ff3f46c7ba36a82d3f182779f4c3f5b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sensible-utils/0.0.12+nmu1/
 
-- https://sources.debian.net/src/sensible-utils/0.0.12+nmu1/ (for browsing the source)
-- https://sources.debian.net/src/sensible-utils/0.0.12+nmu1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sensible-utils/0.0.12+nmu1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `serf=1.3.9-8`
 
