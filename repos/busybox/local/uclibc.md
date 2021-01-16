@@ -1,10 +1,10 @@
-# `busybox:1.33.0-uclibc`
+# `busybox:1.32.1-uclibc`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a77dce18d0ecb0c1f368e336528ab8054567a9055269c07c0169cba15aec0291`
-- Created: `2020-12-30T01:19:53.606880456Z`
-- Virtual Size: ~ 1.24 Mb  
+- Image ID: `sha256:b97242f89c8a29d13aea12843a08441a4bbfc33528f55b60366c1d8f6923d0d4`
+- Created: `2021-01-13T09:25:26.251775554Z`
+- Virtual Size: ~ 1.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["sh"]`
