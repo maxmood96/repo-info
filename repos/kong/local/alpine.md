@@ -1,10 +1,10 @@
-# `kong:2.2.1-alpine`
+# `kong:2.3.0-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a97d41b7e3eb7f30365dadf31733b6aad4854195b47bc80f877249b7d3cf22a7`
-- Created: `2020-12-17T14:57:47.258876382Z`
-- Virtual Size: ~ 147.57 Mb  
+- Image ID: `sha256:b1c4dacd38c0d92009aa95d29b23df7861a9db9cc19672dcec250c7b65f0b426`
+- Created: `2021-01-13T21:20:11.620664404Z`
+- Virtual Size: ~ 147.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,7 +12,9 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `ASSET=ce`
-  - `KONG_VERSION=2.2.1`
+  - `KONG_VERSION=2.3.0`
+  - `KONG_AMD64_SHA=56c50c775c03400a9b4208e765683b6f316f0b58c7a136aa2917b637f10f66db`
+  - `KONG_ARM64_SHA=9d27db8f78ec1d341339887b48d96b3bfb890eb6d5dba8434faa299dccd66d4e`
 - Labels:
   - `maintainer=Kong <support@konghq.com>`
 
@@ -599,16 +601,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2020c-r1 description:
+tzdata-2020f-r0 description:
 Timezone data
 
-tzdata-2020c-r1 webpage:
+tzdata-2020f-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2020c-r1 installed size:
-3526656
+tzdata-2020f-r0 installed size:
+3518464
 
-tzdata-2020c-r1 license:
+tzdata-2020f-r0 license:
 Public-Domain
 
 ```
