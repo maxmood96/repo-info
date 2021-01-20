@@ -2,15 +2,21 @@
 
 # Tags of `couchbase`
 
+-	[`couchbase:6.0.5`](#couchbase605)
 -	[`couchbase:6.6.1`](#couchbase661)
 -	[`couchbase:7.0.0-beta`](#couchbase700-beta)
 -	[`couchbase:community`](#couchbasecommunity)
 -	[`couchbase:community-6.6.0`](#couchbasecommunity-660)
 -	[`couchbase:community-7.0.0-beta`](#couchbasecommunity-700-beta)
 -	[`couchbase:enterprise`](#couchbaseenterprise)
+-	[`couchbase:enterprise-6.0.5`](#couchbaseenterprise-605)
 -	[`couchbase:enterprise-6.6.1`](#couchbaseenterprise-661)
 -	[`couchbase:enterprise-7.0.0-beta`](#couchbaseenterprise-700-beta)
 -	[`couchbase:latest`](#couchbaselatest)
+
+## `couchbase:6.0.5`
+
+**does not exist** (yet?)
 
 ## `couchbase:6.6.1`
 
@@ -869,6 +875,10 @@ VOLUME [/opt/couchbase/var]
 		Last Modified: Fri, 18 Dec 2020 07:02:39 GMT  
 		Size: 857.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `couchbase:enterprise-6.0.5`
+
+**does not exist** (yet?)
 
 ## `couchbase:enterprise-6.6.1`
 
