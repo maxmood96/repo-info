@@ -1,7 +1,7 @@
 ## `gazebo:gzserver9-xenial`
 
 ```console
-$ docker pull gazebo@sha256:d546784b601154ae0f27b7dcf8b79cbcc3c7ccb4f1641eb1659ce1c4f0f724a2
+$ docker pull gazebo@sha256:14eaf492480fb0d2eaa7dacb288d6914e2f7c5089f4bbf9df686b2f90e5d2918
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,80 +11,80 @@ $ docker pull gazebo@sha256:d546784b601154ae0f27b7dcf8b79cbcc3c7ccb4f1641eb1659c
 ### `gazebo:gzserver9-xenial` - linux; amd64
 
 ```console
-$ docker pull gazebo@sha256:818fa336452fa3bf1f2f8468b6bc0093350d01a453f669e2411d0ae43bf25f50
+$ docker pull gazebo@sha256:071f21f35878ba4451d5e6c549f3355b448aa49fa3cb9c237c8d037e3f5747c6
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.5 MB (270472332 bytes)**  
+-	Total Size: **270.6 MB (270603681 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79678ad5a1329d9f26c4e9f42165a2e23b85b1b79fa168df2e055c16e9820c96`
+-	Image ID: `sha256:610dd125ad83cae249f5291664ff33a51baff509a43df45d326211cbfa103684`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Wed, 25 Nov 2020 22:26:11 GMT
-ADD file:8eef54430e581236e6d529a7d09df648f43c840e889d9ae132e5ed25d7bd2b88 in / 
-# Wed, 25 Nov 2020 22:26:12 GMT
+# Thu, 21 Jan 2021 03:39:31 GMT
+ADD file:925571658dd8453e5c80d862f5791d6b26b3c2a8688937b11741f2f2c5cdbfd7 in / 
+# Thu, 21 Jan 2021 03:39:32 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 25 Nov 2020 22:26:13 GMT
+# Thu, 21 Jan 2021 03:39:34 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 25 Nov 2020 22:26:14 GMT
+# Thu, 21 Jan 2021 03:39:35 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 25 Nov 2020 22:26:14 GMT
+# Thu, 21 Jan 2021 03:39:36 GMT
 CMD ["/bin/bash"]
-# Wed, 25 Nov 2020 22:53:47 GMT
+# Thu, 21 Jan 2021 08:20:22 GMT
 RUN apt-get update && apt-get install -q -y --no-install-recommends     dirmngr     gnupg2     lsb-release     && rm -rf /var/lib/apt/lists/*
-# Wed, 25 Nov 2020 22:53:49 GMT
+# Thu, 21 Jan 2021 08:20:23 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Wed, 25 Nov 2020 22:53:50 GMT
+# Thu, 21 Jan 2021 08:20:25 GMT
 RUN . /etc/os-release     && echo "deb http://packages.osrfoundation.org/gazebo/$ID-stable `lsb_release -sc` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Tue, 01 Dec 2020 02:26:03 GMT
+# Thu, 21 Jan 2021 08:25:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     gazebo9=9.16.0-1*     && rm -rf /var/lib/apt/lists/*
-# Tue, 01 Dec 2020 02:26:04 GMT
+# Thu, 21 Jan 2021 08:25:09 GMT
 EXPOSE 11345
-# Tue, 01 Dec 2020 02:26:04 GMT
+# Thu, 21 Jan 2021 08:25:09 GMT
 COPY file:b79966dec12c55a0a5c9e673326cc3faf9cbbeee0ea5f172e863df237eb8a601 in / 
-# Tue, 01 Dec 2020 02:26:04 GMT
+# Thu, 21 Jan 2021 08:25:09 GMT
 ENTRYPOINT ["/gzserver_entrypoint.sh"]
-# Tue, 01 Dec 2020 02:26:04 GMT
+# Thu, 21 Jan 2021 08:25:10 GMT
 CMD ["gzserver"]
 ```
 
 -	Layers:
-	-	`sha256:be8ec4e48d7f24a9a1c01063e5dfabb092c2c1ec73e125113848553c9b07eb8c`  
-		Last Modified: Sat, 31 Oct 2020 14:20:23 GMT  
-		Size: 45.8 MB (45838270 bytes)  
+	-	`sha256:4007a89234b4f56c03e6831dc220550d2e5fba935d9f5f5bcea64857ac4f4888`  
+		Last Modified: Mon, 18 Jan 2021 19:38:08 GMT  
+		Size: 46.0 MB (45962352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:33b8b485aff0509bb0fa67dff6a2aa82e9b7b17e5ef28c1673467ec83edb945d`  
-		Last Modified: Wed, 25 Nov 2020 22:27:15 GMT  
-		Size: 849.0 B  
+	-	`sha256:5dfa26c6b9c9d1ccbcb1eaa65befa376805d9324174ac580ca76fdedc3575f54`  
+		Last Modified: Thu, 21 Jan 2021 03:41:24 GMT  
+		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d887158cc58cbfc3d03cefd5c0b15175fae66ffbf6f28a56180c51cbb5062b8a`  
-		Last Modified: Wed, 25 Nov 2020 22:27:14 GMT  
-		Size: 533.0 B  
+	-	`sha256:0ba7bf18aa406cb7dc372ac732de222b04d1c824ff1705d8900831c3d1361ff5`  
+		Last Modified: Thu, 21 Jan 2021 03:41:24 GMT  
+		Size: 527.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05895bb28c18264f614acd13e401b3c5594e12d9fe90d7e52929d3e810e11e97`  
-		Last Modified: Wed, 25 Nov 2020 22:27:15 GMT  
-		Size: 167.0 B  
+	-	`sha256:4c6ec688ebe374ea7d89ce967576d221a177ebd2c02ca9f053197f954102e30b`  
+		Last Modified: Thu, 21 Jan 2021 03:41:24 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55f514524aaf011510588c8f431aa2f5cca12aa2bfa85978c3cfc1b15c9a8a28`  
-		Last Modified: Wed, 25 Nov 2020 23:08:15 GMT  
-		Size: 16.3 MB (16280422 bytes)  
+	-	`sha256:d9bfc4631203bea4266dcc3b7096abf253420b839ea92d6269b460d7d48b4c4f`  
+		Last Modified: Thu, 21 Jan 2021 08:46:24 GMT  
+		Size: 16.3 MB (16281985 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:daadb0ed897bec1107ef5fdbc8e5f67ac74cff057f76caa0a30e0f1147107afa`  
-		Last Modified: Wed, 25 Nov 2020 23:08:11 GMT  
-		Size: 14.8 KB (14760 bytes)  
+	-	`sha256:c3f4580897c4cd70506d0594700a9cd00f64793818db0b29fe2dc737381fba91`  
+		Last Modified: Thu, 21 Jan 2021 08:46:20 GMT  
+		Size: 14.8 KB (14758 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:624bd6a12d5732732d49bb4342d729b1891c2742f8759524030b93afbd2be80d`  
-		Last Modified: Wed, 25 Nov 2020 23:08:10 GMT  
-		Size: 5.5 KB (5521 bytes)  
+	-	`sha256:5a38dcf8a227a6d57e11c3b7726be2c8d8a5dcdc96c5be0dc30f40404e2fa8ea`  
+		Last Modified: Thu, 21 Jan 2021 08:46:20 GMT  
+		Size: 5.5 KB (5520 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f70436410d86daaa5ccbe81c129a8e91d62cba9b1768b361e9cc7e028db07d9a`  
-		Last Modified: Tue, 01 Dec 2020 02:51:17 GMT  
-		Size: 208.3 MB (208331623 bytes)  
+	-	`sha256:960a27279f1cb88dc7661fc108f0ac994b0d65f72c5144839c6fa8d5ff307cf0`  
+		Last Modified: Thu, 21 Jan 2021 08:48:38 GMT  
+		Size: 208.3 MB (208337330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:925daf85cfba3c8799df9bacc698c5c13ab4bdad1a7c7542c538eff8767b0f15`  
-		Last Modified: Tue, 01 Dec 2020 02:50:28 GMT  
-		Size: 187.0 B  
+	-	`sha256:5dc3b12772417e22924dd172b6979965b13208e4edf1335c2986e8c0aadb570f`  
+		Last Modified: Thu, 21 Jan 2021 08:47:57 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
