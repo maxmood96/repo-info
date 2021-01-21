@@ -1,7 +1,7 @@
 ## `php:7-fpm-alpine3.12`
 
 ```console
-$ docker pull php@sha256:5ffa4097fb6660bc5ef85c3c423a802cb45b52f1128fff167d1cc224e4f0dc80
+$ docker pull php@sha256:f75caadec458903cd086067a5b3b3d2b94748dcbf18c2c5ca292676d1122c266
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull php@sha256:5ffa4097fb6660bc5ef85c3c423a802cb45b52f1128fff167d1cc22
 ### `php:7-fpm-alpine3.12` - linux; amd64
 
 ```console
-$ docker pull php@sha256:4159017913134fbd53f67217fcb460e443e9151ca5aa0c53c0e9180a8f79d3c1
+$ docker pull php@sha256:938073ab02112babc75b4a23990db619edb4b53264a2b87e1e0850d8729f0caf
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.8 MB (28774556 bytes)**  
+-	Total Size: **28.8 MB (28774593 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d3fe9ec5435de851efd4292019578b6b169be5183d062340ae831421191cb3a`
+-	Image ID: `sha256:aaa3e887108e453a9bafcd59554583b34eccb8e7c228424f3764fb4152c056b0`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -65,21 +65,21 @@ RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
 # Thu, 07 Jan 2021 17:52:28 GMT
 RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		libedit-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		sqlite-dev 	; 		export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pear 				$(test "$gnuArch" = 's390x-linux-musl' && echo '--without-pcre-jit') 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Thu, 07 Jan 2021 17:52:29 GMT
-COPY multi:ebc915bbde1078ce3122b918e2e4c7726858af785343ade1a8d1a94f1052a4c7 in /usr/local/bin/ 
-# Thu, 07 Jan 2021 17:52:30 GMT
+# Thu, 21 Jan 2021 20:20:32 GMT
+COPY multi:6dfba8f7e64bd54e4d9aa0855ff6ce7a53059e0a733752b4537fd3fdfd32d837 in /usr/local/bin/ 
+# Thu, 21 Jan 2021 20:20:35 GMT
 RUN docker-php-ext-enable sodium
-# Thu, 07 Jan 2021 17:52:30 GMT
+# Thu, 21 Jan 2021 20:20:35 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Thu, 07 Jan 2021 17:52:31 GMT
+# Thu, 21 Jan 2021 20:20:35 GMT
 WORKDIR /var/www/html
-# Thu, 07 Jan 2021 17:52:32 GMT
+# Thu, 21 Jan 2021 20:20:37 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Thu, 07 Jan 2021 17:52:32 GMT
+# Thu, 21 Jan 2021 20:20:38 GMT
 STOPSIGNAL SIGQUIT
-# Thu, 07 Jan 2021 17:52:32 GMT
+# Thu, 21 Jan 2021 20:20:38 GMT
 EXPOSE 9000
-# Thu, 07 Jan 2021 17:52:32 GMT
+# Thu, 21 Jan 2021 20:20:38 GMT
 CMD ["php-fpm"]
 ```
 
@@ -112,17 +112,17 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 07 Jan 2021 20:31:27 GMT  
 		Size: 14.3 MB (14259382 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d1811e7312c7d0db9079bdcd6e276416fb25341bace7371208e526177bf32e6`  
-		Last Modified: Thu, 07 Jan 2021 20:31:22 GMT  
-		Size: 2.3 KB (2256 bytes)  
+	-	`sha256:bf64aa53cc01b96af6d405d1c33e8f532725dac6d70fe01a19b09a2038f0f37c`  
+		Last Modified: Thu, 21 Jan 2021 20:32:16 GMT  
+		Size: 2.3 KB (2271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7d8afa185a2b089b95b0b646d8ef6045e836141019794ab2ed6c79467efd37af`  
-		Last Modified: Thu, 07 Jan 2021 20:31:22 GMT  
-		Size: 16.9 KB (16885 bytes)  
+	-	`sha256:6308261720a639b2ae3d1d6128c7e72bd26240878191f4817d000b866965e03c`  
+		Last Modified: Thu, 21 Jan 2021 20:32:17 GMT  
+		Size: 16.9 KB (16901 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89fbeb3e30d210e1e463710889f040727c03d618d183853e73cbe0973002b606`  
-		Last Modified: Thu, 07 Jan 2021 20:31:23 GMT  
-		Size: 8.4 KB (8445 bytes)  
+	-	`sha256:c7295add5d56dbe6c35f5c3edb680729676dd4088ee93ac801d9e402a90362f6`  
+		Last Modified: Thu, 21 Jan 2021 20:32:16 GMT  
+		Size: 8.5 KB (8451 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `php:7-fpm-alpine3.12` - linux; arm variant v6

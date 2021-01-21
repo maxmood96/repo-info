@@ -1,7 +1,7 @@
 ## `php:7-fpm-alpine`
 
 ```console
-$ docker pull php@sha256:c8c875012685893a662f521f22aeb34a541f62d55560ee5e48ae9b0772876758
+$ docker pull php@sha256:0ba37dc1e4c200b8439c2f3934711b8f72263944ab8e542d8e4273d25b6d7389
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull php@sha256:c8c875012685893a662f521f22aeb34a541f62d55560ee5e48ae9b0
 ### `php:7-fpm-alpine` - linux; amd64
 
 ```console
-$ docker pull php@sha256:0f719e4de2840c1aeaa6ab140eba2a5083cea59899c0db3f2af803e0979b2d64
+$ docker pull php@sha256:75b607302668ea1733d7e6b1abe9558173b8434ea4ac0b2863b9dcb88da385ce
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.6 MB (29580759 bytes)**  
+-	Total Size: **29.6 MB (29580791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:15f38e5048aaf602659d0caae14ab89ad093f2c4af0f84342cf0389b78fb4431`
+-	Image ID: `sha256:d2b68f458f6589818e1c55e796da9f00bb49746586bb826494722caeb8bf7ceb`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -65,21 +65,21 @@ RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
 # Sat, 16 Jan 2021 00:23:55 GMT
 RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		libedit-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		sqlite-dev 	; 		export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pear 				$(test "$gnuArch" = 's390x-linux-musl' && echo '--without-pcre-jit') 				${PHP_EXTRA_CONFIGURE_ARGS:-} 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Sat, 16 Jan 2021 00:23:56 GMT
-COPY multi:ebc915bbde1078ce3122b918e2e4c7726858af785343ade1a8d1a94f1052a4c7 in /usr/local/bin/ 
-# Sat, 16 Jan 2021 00:23:57 GMT
+# Thu, 21 Jan 2021 20:19:52 GMT
+COPY multi:6dfba8f7e64bd54e4d9aa0855ff6ce7a53059e0a733752b4537fd3fdfd32d837 in /usr/local/bin/ 
+# Thu, 21 Jan 2021 20:19:55 GMT
 RUN docker-php-ext-enable sodium
-# Sat, 16 Jan 2021 00:23:58 GMT
+# Thu, 21 Jan 2021 20:19:55 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 16 Jan 2021 00:23:58 GMT
+# Thu, 21 Jan 2021 20:19:56 GMT
 WORKDIR /var/www/html
-# Sat, 16 Jan 2021 00:23:59 GMT
+# Thu, 21 Jan 2021 20:19:58 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Sat, 16 Jan 2021 00:23:59 GMT
+# Thu, 21 Jan 2021 20:19:58 GMT
 STOPSIGNAL SIGQUIT
-# Sat, 16 Jan 2021 00:23:59 GMT
+# Thu, 21 Jan 2021 20:19:58 GMT
 EXPOSE 9000
-# Sat, 16 Jan 2021 00:23:59 GMT
+# Thu, 21 Jan 2021 20:19:59 GMT
 CMD ["php-fpm"]
 ```
 
@@ -112,17 +112,17 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 16 Jan 2021 01:01:53 GMT  
 		Size: 14.7 MB (14698701 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9078212b9443742a5d6424571f802cac2d7c26d8fd27e4759109f3300ea695b9`  
-		Last Modified: Sat, 16 Jan 2021 01:01:51 GMT  
-		Size: 2.3 KB (2259 bytes)  
+	-	`sha256:5bf63a6c9649702a6b74c071ab4c39f303531a1191d47541cc9ecfd40b7f4a20`  
+		Last Modified: Thu, 21 Jan 2021 20:31:29 GMT  
+		Size: 2.3 KB (2272 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8940ab24279b1fe01c4ff150590215b561658b37f2cad48e6d746927f51651b`  
-		Last Modified: Sat, 16 Jan 2021 01:01:50 GMT  
-		Size: 17.5 KB (17523 bytes)  
+	-	`sha256:ec352a4611cbe69170666ad226ce834e66b765ed7aa2adf9fbe410d7b76d856a`  
+		Last Modified: Thu, 21 Jan 2021 20:31:31 GMT  
+		Size: 17.5 KB (17537 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca9f9f3d96ec681308e94acb084295fe42d4449ecb801025a39bcc837336db77`  
-		Last Modified: Sat, 16 Jan 2021 01:01:51 GMT  
-		Size: 8.4 KB (8443 bytes)  
+	-	`sha256:682a80dc7ae119bfb9d05c0722ec047600f0ea847da044afc6e5319f05363014`  
+		Last Modified: Thu, 21 Jan 2021 20:31:31 GMT  
+		Size: 8.4 KB (8448 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `php:7-fpm-alpine` - linux; arm variant v6
