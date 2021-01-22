@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7df2ea9ff67d6d22ec5198b8e2913568cdfe9ae88e5bcc27f15bcdabcfac0251`
-- Created: `2020-11-26T02:20:58.002794767Z`
-- Virtual Size: ~ 502.73 Mb  
+- Image ID: `sha256:9c55a9bf2513e04c4f3262e1b68edc9c9abacaf10466d354c26547c970c827e1`
+- Created: `2021-01-21T11:35:34.538980553Z`
+- Virtual Size: ~ 502.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -58,21 +58,25 @@ $ apt-get source -qq --print-uris adduser=3.118ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.118ubuntu2.tar.xz' adduser_3.118ubuntu2.tar.xz 222364 SHA256:9429124c39c381b541005da6f0ae29831bd6533dd65c923e06ca2a7c310db382
 ```
 
-### `dpkg` source package: `apt=2.0.2ubuntu0.1`
+### `dpkg` source package: `apt=2.0.2ubuntu0.2`
 
 Binary Packages:
 
-- `apt=2.0.2ubuntu0.1`
-- `libapt-pkg6.0:amd64=2.0.2ubuntu0.1`
+- `apt=2.0.2ubuntu0.2`
+- `libapt-pkg6.0:amd64=2.0.2ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg6.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=2.0.2ubuntu0.2
+'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.2ubuntu0.2.dsc' apt_2.0.2ubuntu0.2.dsc 2850 SHA512:42d09fd15c7c38e695ca2a4db810e488884938ba9a140a28ee04646a63983909c825944bdd3014e8a5d6ec52bb2e09b62f5b7af4861d580eabed38f1d20a0610
+'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.2ubuntu0.2.tar.xz' apt_2.0.2ubuntu0.2.tar.xz 2171832 SHA512:6de24ceea2e4ada7df66215cf1c281a8862884ac9564cd924ad1873ce65b7880873c45b3fb180a0f9516f32e6d3a3d46e5b80977a3cf60b933d0e45a9e7bae38
+```
 
 ### `dpkg` source package: `attr=1:2.4.48-5`
 
@@ -345,11 +349,11 @@ $ apt-get source -qq --print-uris cppcheck=1.90-4build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/c/cppcheck/cppcheck_1.90-4build1.debian.tar.xz' cppcheck_1.90-4build1.debian.tar.xz 11404 SHA256:67ebd147f808dc6837c5eddab3d6f707a5cdf09e7ec1750223d29bd961e1b48e
 ```
 
-### `dpkg` source package: `curl=7.68.0-1ubuntu2.2`
+### `dpkg` source package: `curl=7.68.0-1ubuntu2.4`
 
 Binary Packages:
 
-- `libcurl4:amd64=7.68.0-1ubuntu2.2`
+- `libcurl4:amd64=7.68.0-1ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 
@@ -360,9 +364,14 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.4.dsc' curl_7.68.0-1ubuntu2.4.dsc 2733 SHA512:1dcbd2b618e4dd7bea2096f5a33da9c0ec1843481c208d06782541f9804658ef2a33bd1a05283c35bd4a256eed35d7dc4539d4c50d4d39d6a0f2690279f43daa
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.4.debian.tar.xz' curl_7.68.0-1ubuntu2.4.debian.tar.xz 38608 SHA512:487f50938042d2376c118b4e0233c6bfbc90bd2420bfd113fa47be52f21c3d0dce8bc4f83f6207ba729c22c42ee811dff8fe7dbecb5b3ecdd99847ce5725a43f
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2`
 
@@ -1552,19 +1561,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.4+dfsg-3
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4+dfsg-3.debian.tar.xz' libzstd_1.4.4+dfsg-3.debian.tar.xz 16068 SHA256:f7fec89f1fae04dfa551d124973167e09e84c864a25961aa20727cc91277b0e6
 ```
 
-### `dpkg` source package: `linux=5.4.0-54.60`
+### `dpkg` source package: `linux=5.4.0-64.72`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.4.0-54.60`
+- `linux-libc-dev:amd64=5.4.0-64.72`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.4.0-64.72
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-64.72.dsc' linux_5.4.0-64.72.dsc 7220 SHA512:c6d0624159f038d2a9638c2c705d7bf432a3f6d9b0138ed5321e2caa2f49cffaf30c309c246cf9ee950e7ad99c5bf5037ec4ab7d8f69e7df86fbd81c57c1fb8a
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-64.72.diff.gz' linux_5.4.0-64.72.diff.gz 6027907 SHA512:2a101a93352ea559a7843b32f6fa9fb470b9cdb5c9a6ad519887e6c2057dcf86b36a6806a25bd6eeae0d7e0599979bbeef75abe60a87fb5887702f0fedf3df25
+```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
 
@@ -1586,11 +1600,11 @@ $ apt-get source -qq --print-uris lsb=11.1.0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lsb/lsb_11.1.0ubuntu2.tar.xz' lsb_11.1.0ubuntu2.tar.xz 46024 SHA256:c6ab63b6702dc633988690aacde8ece3e460f8acd8f1af8e6a67ab2fe0798f41
 ```
 
-### `dpkg` source package: `lxml=4.5.0-1`
+### `dpkg` source package: `lxml=4.5.0-1ubuntu0.2`
 
 Binary Packages:
 
-- `python3-lxml:amd64=4.5.0-1`
+- `python3-lxml:amd64=4.5.0-1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/python3-lxml/copyright`)
 
@@ -1601,10 +1615,10 @@ Licenses: (parsed from: `/usr/share/doc/python3-lxml/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris lxml=4.5.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lxml/lxml_4.5.0-1.dsc' lxml_4.5.0-1.dsc 2262 SHA256:c2b1d96f2a68b3bb50184ce5fa660bd67b57a917365968c16bf2efbe3ca082c3
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lxml/lxml_4.5.0.orig.tar.gz' lxml_4.5.0.orig.tar.gz 4531832 SHA256:8620ce80f50d023d414183bf90cc2576c2837b88e00bea3f33ad2630133bbb60
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lxml/lxml_4.5.0-1.debian.tar.xz' lxml_4.5.0-1.debian.tar.xz 7576 SHA256:769c492d9bfa29fe33d2ebfaacafa1f72deefcba7b6d7ff598d576e43b43e377
+$ apt-get source -qq --print-uris lxml=4.5.0-1ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lxml/lxml_4.5.0-1ubuntu0.2.dsc' lxml_4.5.0-1ubuntu0.2.dsc 2352 SHA512:eb7deb392ef0a27e41c9625d53fa5340e8f9724fdbb9481fa5ca0e8282c44a0df3ec6e578d98b2acc85e1e416d33510c73149706fc467930b83c3ea4d15142b2
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lxml/lxml_4.5.0.orig.tar.gz' lxml_4.5.0.orig.tar.gz 4531832 SHA512:7cb957b2ab9931c32984ad0808f51e650e82e2d9b14df3fd8df2dd8f2c5c261d26ebf2c672b723e89b00b867a0a8dbb9130023e48a5f302fd02d5409e1c8cd6c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lxml/lxml_4.5.0-1ubuntu0.2.debian.tar.xz' lxml_4.5.0-1ubuntu0.2.debian.tar.xz 9812 SHA512:40316ea0736ec96a141eec8e117f064309191440d4f40ac230e51121fe362c1bd382a3209c7f1e607ef8085f4a535cde7740b4f423b6921bbce96ac06baa9fab
 ```
 
 ### `dpkg` source package: `lz4=1.9.2-2`
@@ -1886,13 +1900,13 @@ $ apt-get source -qq --print-uris openldap=2.4.49+dfsg-2ubuntu1.5
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.49+dfsg-2ubuntu1.5.debian.tar.xz' openldap_2.4.49+dfsg-2ubuntu1.5.debian.tar.xz 183076 SHA512:4870e739fdda7dd6ed8ce67fa6db89ee6e90e419eb7265c47cc7fdd5db6d7226ef4cd12bfc26cc800d5b3522a709bd11e3513ca35eb6d88727878b0c9b33fc2b
 ```
 
-### `dpkg` source package: `openssl=1.1.1f-1ubuntu2`
+### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.1`
 
 Binary Packages:
 
-- `libssl-dev:amd64=1.1.1f-1ubuntu2`
-- `libssl1.1:amd64=1.1.1f-1ubuntu2`
-- `openssl=1.1.1f-1ubuntu2`
+- `libssl-dev:amd64=1.1.1f-1ubuntu2.1`
+- `libssl1.1:amd64=1.1.1f-1ubuntu2.1`
+- `openssl=1.1.1f-1ubuntu2.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1901,18 +1915,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.dsc' openssl_1.1.1f-1ubuntu2.dsc 2705 SHA256:2704b83cc9f62d3ff30bff22a032b543620ade054da30c600fd0e2385c8d7c1b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA256:186c6bfe6ecfba7a5b48c47f8a1673d0f3b0e5ba2e25602dd23b629975da3f35
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz.asc' openssl_1.1.1f.orig.tar.gz.asc 488 SHA256:e9c68097b05be8873e41bd33a9269378ca58e515fbaa30a512c315b602d41dda
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.debian.tar.xz' openssl_1.1.1f-1ubuntu2.debian.tar.xz 141644 SHA256:2a2709358bc19e4f8a1f23e25c8457c1d4c69a78d47aa4fc8dbda14545a8ec5e
+$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.1.dsc' openssl_1.1.1f-1ubuntu2.1.dsc 2713 SHA512:e74e44d9d53fba37bf7d52bdd0eb5aea7eadad01aaa9b741a3f556e7ab0ee4bef8540e91dc1db34a602b05aa595452d824e18a41b117c184eaf4d103ae236193
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz.asc' openssl_1.1.1f.orig.tar.gz.asc 488 SHA512:63b01ffc23b2fec2cfc147d382b486a136e5610e181be94aa333022803a442ded37e8276fefb62b3176b571b94a1d2243c05b86b52ad7784fe0068d1ad948562
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.1.debian.tar.xz' openssl_1.1.1f-1ubuntu2.1.debian.tar.xz 146396 SHA512:19cd9a6cb9f252b88d52dbc3f23a9165839d820b71d8dc38c9affab7c3105dc27e4cc8ba679628d9e67e97b2cf66d05ea515d6f15ed152ed9a6f0132e56e742f
 ```
 
-### `dpkg` source package: `p11-kit=0.23.20-1build1`
+### `dpkg` source package: `p11-kit=0.23.20-1ubuntu0.1`
 
 Binary Packages:
 
-- `libp11-kit0:amd64=0.23.20-1build1`
+- `libp11-kit0:amd64=0.23.20-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 
@@ -1925,11 +1939,11 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris p11-kit=0.23.20-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.20-1build1.dsc' p11-kit_0.23.20-1build1.dsc 2466 SHA256:25b3e4f00439457152fa958f1b54e0222fbb98585aa174308b6d6534b94445c3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.20.orig.tar.xz' p11-kit_0.23.20.orig.tar.xz 822588 SHA256:14d86024c3dfd6b967d9bc0b4ec7b2973014fe7423481f4d230a1a63b8aa6104
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.20.orig.tar.xz.asc' p11-kit_0.23.20.orig.tar.xz.asc 854 SHA256:6429a15c3c071629add6712ed75916df90043d47250edb9235d89ee197f613b8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.20-1build1.debian.tar.xz' p11-kit_0.23.20-1build1.debian.tar.xz 22004 SHA256:c43279d68adc9f710ff438f7084316e1e3ca9918f7c653bf1cb932927c415960
+$ apt-get source -qq --print-uris p11-kit=0.23.20-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.20-1ubuntu0.1.dsc' p11-kit_0.23.20-1ubuntu0.1.dsc 2532 SHA512:8b315f15df7cd3a09d11046030baa864a0f61a3dfba80d97d708590f54a5fc5c31c81428ccc40bf04e9e769abda1204ef5cd4753a24e743e2728d38cdfe14803
+'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.20.orig.tar.xz' p11-kit_0.23.20.orig.tar.xz 822588 SHA512:1eb88773fdd49dd48c7e089744e9dbbf6c1033a4863f3bfe75a68d842804baa3c373cb1b28ee625dd69a6e16c89df4ac755e0928495dccf38c007c530f6cfa57
+'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.20.orig.tar.xz.asc' p11-kit_0.23.20.orig.tar.xz.asc 854 SHA512:9f0e0e690698637269b7d020aafd92ab3d487770196e13357ce0e5425fa02d5e279f9524b3858bce8bdb925e1e4d9fa2219a68e5888c06e48c3b085a77d329e9
+'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.20-1ubuntu0.1.debian.tar.xz' p11-kit_0.23.20-1ubuntu0.1.debian.tar.xz 24592 SHA512:b30c6640bb02f0651955447da65911942cd2e302bc5af0ab96787646e776486e317420682dd644079a47ac48d4e2732218545af56da7ec3d3af5fd0c7e55fb21
 ```
 
 ### `dpkg` source package: `pam=1.3.1-5ubuntu4.1`
@@ -2829,11 +2843,11 @@ $ apt-get source -qq --print-uris rhash=1.3.9-1
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rhash/rhash_1.3.9-1.debian.tar.xz' rhash_1.3.9-1.debian.tar.xz 9936 SHA256:64c6405e34a360297e9612564adb4af7fd0e2dc291f25df38252560c7ca1c11e
 ```
 
-### `dpkg` source package: `ros-foxy-action-msgs=1.0.0-1focal.20201013.211327`
+### `dpkg` source package: `ros-foxy-action-msgs=1.0.0-1focal.20201210.055148`
 
 Binary Packages:
 
-- `ros-foxy-action-msgs=1.0.0-1focal.20201013.211327`
+- `ros-foxy-action-msgs=1.0.0-1focal.20201210.055148`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2843,11 +2857,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-actionlib-msgs=2.0.3-1focal.20201013.214233`
+### `dpkg` source package: `ros-foxy-actionlib-msgs=2.0.3-1focal.20201210.060131`
 
 Binary Packages:
 
-- `ros-foxy-actionlib-msgs=2.0.3-1focal.20201013.214233`
+- `ros-foxy-actionlib-msgs=2.0.3-1focal.20201210.060131`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2857,11 +2871,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-auto=0.9.7-1focal.20201006.185759`
+### `dpkg` source package: `ros-foxy-ament-cmake-auto=0.9.8-1focal.20201210.044132`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-auto=0.9.7-1focal.20201006.185759`
+- `ros-foxy-ament-cmake-auto=0.9.8-1focal.20201210.044132`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2871,11 +2885,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-copyright=0.9.5-1focal.20201006.190208`
+### `dpkg` source package: `ros-foxy-ament-cmake-copyright=0.9.6-1focal.20201210.045939`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-copyright=0.9.5-1focal.20201006.190208`
+- `ros-foxy-ament-cmake-copyright=0.9.6-1focal.20201210.045939`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2885,11 +2899,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-core=0.9.7-1focal.20201006.183535`
+### `dpkg` source package: `ros-foxy-ament-cmake-core=0.9.8-1focal.20201210.042924`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-core=0.9.7-1focal.20201006.183535`
+- `ros-foxy-ament-cmake-core=0.9.8-1focal.20201210.042924`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2899,11 +2913,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-cppcheck=0.9.5-1focal.20201006.190434`
+### `dpkg` source package: `ros-foxy-ament-cmake-cppcheck=0.9.6-1focal.20201210.050051`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-cppcheck=0.9.5-1focal.20201006.190434`
+- `ros-foxy-ament-cmake-cppcheck=0.9.6-1focal.20201210.050051`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2913,11 +2927,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-cpplint=0.9.5-1focal.20201006.190517`
+### `dpkg` source package: `ros-foxy-ament-cmake-cpplint=0.9.6-1focal.20201210.050120`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-cpplint=0.9.5-1focal.20201006.190517`
+- `ros-foxy-ament-cmake-cpplint=0.9.6-1focal.20201210.050120`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2927,11 +2941,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-export-definitions=0.9.7-1focal.20201006.184121`
+### `dpkg` source package: `ros-foxy-ament-cmake-export-definitions=0.9.8-1focal.20201210.043649`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-export-definitions=0.9.7-1focal.20201006.184121`
+- `ros-foxy-ament-cmake-export-definitions=0.9.8-1focal.20201210.043649`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2941,11 +2955,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-export-dependencies=0.9.7-1focal.20201006.185224`
+### `dpkg` source package: `ros-foxy-ament-cmake-export-dependencies=0.9.8-1focal.20201210.043901`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-export-dependencies=0.9.7-1focal.20201006.185224`
+- `ros-foxy-ament-cmake-export-dependencies=0.9.8-1focal.20201210.043901`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2955,11 +2969,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-export-include-directories=0.9.7-1focal.20201006.184029`
+### `dpkg` source package: `ros-foxy-ament-cmake-export-include-directories=0.9.8-1focal.20201210.043739`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-export-include-directories=0.9.7-1focal.20201006.184029`
+- `ros-foxy-ament-cmake-export-include-directories=0.9.8-1focal.20201210.043739`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2969,11 +2983,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-export-interfaces=0.9.7-1focal.20201006.184624`
+### `dpkg` source package: `ros-foxy-ament-cmake-export-interfaces=0.9.8-1focal.20201210.043817`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-export-interfaces=0.9.7-1focal.20201006.184624`
+- `ros-foxy-ament-cmake-export-interfaces=0.9.8-1focal.20201210.043817`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2983,11 +2997,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-export-libraries=0.9.7-1focal.20201006.184435`
+### `dpkg` source package: `ros-foxy-ament-cmake-export-libraries=0.9.8-1focal.20201210.043750`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-export-libraries=0.9.7-1focal.20201006.184435`
+- `ros-foxy-ament-cmake-export-libraries=0.9.8-1focal.20201210.043750`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2997,11 +3011,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-export-link-flags=0.9.7-1focal.20201006.184052`
+### `dpkg` source package: `ros-foxy-ament-cmake-export-link-flags=0.9.8-1focal.20201210.043754`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-export-link-flags=0.9.7-1focal.20201006.184052`
+- `ros-foxy-ament-cmake-export-link-flags=0.9.8-1focal.20201210.043754`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3011,11 +3025,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-export-targets=0.9.7-1focal.20201006.184610`
+### `dpkg` source package: `ros-foxy-ament-cmake-export-targets=0.9.8-1focal.20201210.043823`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-export-targets=0.9.7-1focal.20201006.184610`
+- `ros-foxy-ament-cmake-export-targets=0.9.8-1focal.20201210.043823`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3025,11 +3039,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-flake8=0.9.5-1focal.20201006.190600`
+### `dpkg` source package: `ros-foxy-ament-cmake-flake8=0.9.6-1focal.20201210.050200`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-flake8=0.9.5-1focal.20201006.190600`
+- `ros-foxy-ament-cmake-flake8=0.9.6-1focal.20201210.050200`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3039,11 +3053,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-gmock=0.9.7-1focal.20201006.185007`
+### `dpkg` source package: `ros-foxy-ament-cmake-gmock=0.9.8-1focal.20201210.044054`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-gmock=0.9.7-1focal.20201006.185007`
+- `ros-foxy-ament-cmake-gmock=0.9.8-1focal.20201210.044054`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3053,11 +3067,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-gtest=0.9.7-1focal.20201006.184644`
+### `dpkg` source package: `ros-foxy-ament-cmake-gtest=0.9.8-1focal.20201210.044026`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-gtest=0.9.7-1focal.20201006.184644`
+- `ros-foxy-ament-cmake-gtest=0.9.8-1focal.20201210.044026`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3067,11 +3081,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-include-directories=0.9.7-1focal.20201006.184202`
+### `dpkg` source package: `ros-foxy-ament-cmake-include-directories=0.9.8-1focal.20201210.043806`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-include-directories=0.9.7-1focal.20201006.184202`
+- `ros-foxy-ament-cmake-include-directories=0.9.8-1focal.20201210.043806`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3081,11 +3095,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-libraries=0.9.7-1focal.20201006.184440`
+### `dpkg` source package: `ros-foxy-ament-cmake-libraries=0.9.8-1focal.20201210.043833`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-libraries=0.9.7-1focal.20201006.184440`
+- `ros-foxy-ament-cmake-libraries=0.9.8-1focal.20201210.043833`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3095,11 +3109,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-lint-cmake=0.9.5-1focal.20201006.185925`
+### `dpkg` source package: `ros-foxy-ament-cmake-lint-cmake=0.9.6-1focal.20201210.045825`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-lint-cmake=0.9.5-1focal.20201006.185925`
+- `ros-foxy-ament-cmake-lint-cmake=0.9.6-1focal.20201210.045825`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3109,11 +3123,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-pep257=0.9.5-1focal.20201006.190422`
+### `dpkg` source package: `ros-foxy-ament-cmake-pep257=0.9.6-1focal.20201210.050232`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-pep257=0.9.5-1focal.20201006.190422`
+- `ros-foxy-ament-cmake-pep257=0.9.6-1focal.20201210.050232`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3123,11 +3137,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-pytest=0.9.7-1focal.20201006.184839`
+### `dpkg` source package: `ros-foxy-ament-cmake-pytest=0.9.8-1focal.20201210.044035`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-pytest=0.9.7-1focal.20201006.184839`
+- `ros-foxy-ament-cmake-pytest=0.9.8-1focal.20201210.044035`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3137,11 +3151,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-python=0.9.7-1focal.20201006.184128`
+### `dpkg` source package: `ros-foxy-ament-cmake-python=0.9.8-1focal.20201210.043842`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-python=0.9.7-1focal.20201006.184128`
+- `ros-foxy-ament-cmake-python=0.9.8-1focal.20201210.043842`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3151,11 +3165,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-ros=0.9.0-1focal.20201006.194049`
+### `dpkg` source package: `ros-foxy-ament-cmake-ros=0.9.0-1focal.20201210.050454`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-ros=0.9.0-1focal.20201006.194049`
+- `ros-foxy-ament-cmake-ros=0.9.0-1focal.20201210.050454`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3165,11 +3179,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-target-dependencies=0.9.7-1focal.20201006.184844`
+### `dpkg` source package: `ros-foxy-ament-cmake-target-dependencies=0.9.8-1focal.20201210.043902`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-target-dependencies=0.9.7-1focal.20201006.184844`
+- `ros-foxy-ament-cmake-target-dependencies=0.9.8-1focal.20201210.043902`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3179,11 +3193,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-test=0.9.7-1focal.20201006.184353`
+### `dpkg` source package: `ros-foxy-ament-cmake-test=0.9.8-1focal.20201210.043910`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-test=0.9.7-1focal.20201006.184353`
+- `ros-foxy-ament-cmake-test=0.9.8-1focal.20201210.043910`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3193,11 +3207,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-uncrustify=0.9.5-1focal.20201006.192756`
+### `dpkg` source package: `ros-foxy-ament-cmake-uncrustify=0.9.6-1focal.20201210.050301`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-uncrustify=0.9.5-1focal.20201006.192756`
+- `ros-foxy-ament-cmake-uncrustify=0.9.6-1focal.20201210.050301`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3207,11 +3221,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-version=0.9.7-1focal.20201006.184150`
+### `dpkg` source package: `ros-foxy-ament-cmake-version=0.9.8-1focal.20201210.043845`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-version=0.9.7-1focal.20201006.184150`
+- `ros-foxy-ament-cmake-version=0.9.8-1focal.20201210.043845`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3221,11 +3235,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake-xmllint=0.9.5-1focal.20201006.190658`
+### `dpkg` source package: `ros-foxy-ament-cmake-xmllint=0.9.6-1focal.20201210.050313`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake-xmllint=0.9.5-1focal.20201006.190658`
+- `ros-foxy-ament-cmake-xmllint=0.9.6-1focal.20201210.050313`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3235,11 +3249,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cmake=0.9.7-1focal.20201006.185549`
+### `dpkg` source package: `ros-foxy-ament-cmake=0.9.8-1focal.20201210.044020`
 
 Binary Packages:
 
-- `ros-foxy-ament-cmake=0.9.7-1focal.20201006.185549`
+- `ros-foxy-ament-cmake=0.9.8-1focal.20201210.044020`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3249,11 +3263,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-copyright=0.9.5-1focal.20201006.185320`
+### `dpkg` source package: `ros-foxy-ament-copyright=0.9.6-1focal.20201210.045359`
 
 Binary Packages:
 
-- `ros-foxy-ament-copyright=0.9.5-1focal.20201006.185320`
+- `ros-foxy-ament-copyright=0.9.6-1focal.20201210.045359`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3263,11 +3277,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cppcheck=0.9.5-1focal.20201006.184556`
+### `dpkg` source package: `ros-foxy-ament-cppcheck=0.9.6-1focal.20201210.043854`
 
 Binary Packages:
 
-- `ros-foxy-ament-cppcheck=0.9.5-1focal.20201006.184556`
+- `ros-foxy-ament-cppcheck=0.9.6-1focal.20201210.043854`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3277,11 +3291,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-cpplint=0.9.5-1focal.20201006.185629`
+### `dpkg` source package: `ros-foxy-ament-cpplint=0.9.6-1focal.20201210.045708`
 
 Binary Packages:
 
-- `ros-foxy-ament-cpplint=0.9.5-1focal.20201006.185629`
+- `ros-foxy-ament-cpplint=0.9.6-1focal.20201210.045708`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3291,11 +3305,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-flake8=0.9.5-1focal.20201006.184520`
+### `dpkg` source package: `ros-foxy-ament-flake8=0.9.6-1focal.20201210.043943`
 
 Binary Packages:
 
-- `ros-foxy-ament-flake8=0.9.5-1focal.20201006.184520`
+- `ros-foxy-ament-flake8=0.9.6-1focal.20201210.043943`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3305,11 +3319,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-index-cpp=1.0.1-1focal.20201007.193735`
+### `dpkg` source package: `ros-foxy-ament-index-cpp=1.0.1-1focal.20201210.050502`
 
 Binary Packages:
 
-- `ros-foxy-ament-index-cpp=1.0.1-1focal.20201007.193735`
+- `ros-foxy-ament-index-cpp=1.0.1-1focal.20201210.050502`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3319,11 +3333,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-index-python=1.0.1-1focal.20201007.193833`
+### `dpkg` source package: `ros-foxy-ament-index-python=1.0.1-1focal.20201210.045512`
 
 Binary Packages:
 
-- `ros-foxy-ament-index-python=1.0.1-1focal.20201007.193833`
+- `ros-foxy-ament-index-python=1.0.1-1focal.20201210.045512`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3333,11 +3347,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-lint-auto=0.9.5-1focal.20201006.184923`
+### `dpkg` source package: `ros-foxy-ament-lint-auto=0.9.6-1focal.20201210.044104`
 
 Binary Packages:
 
-- `ros-foxy-ament-lint-auto=0.9.5-1focal.20201006.184923`
+- `ros-foxy-ament-lint-auto=0.9.6-1focal.20201210.044104`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3347,11 +3361,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-lint-cmake=0.9.5-1focal.20201006.185702`
+### `dpkg` source package: `ros-foxy-ament-lint-cmake=0.9.6-1focal.20201210.045738`
 
 Binary Packages:
 
-- `ros-foxy-ament-lint-cmake=0.9.5-1focal.20201006.185702`
+- `ros-foxy-ament-lint-cmake=0.9.6-1focal.20201210.045738`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3361,11 +3375,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-lint-common=0.9.5-1focal.20201006.192910`
+### `dpkg` source package: `ros-foxy-ament-lint-common=0.9.6-1focal.20201210.050345`
 
 Binary Packages:
 
-- `ros-foxy-ament-lint-common=0.9.5-1focal.20201006.192910`
+- `ros-foxy-ament-lint-common=0.9.6-1focal.20201210.050345`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3375,11 +3389,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-lint=0.9.5-1focal.20201006.184328`
+### `dpkg` source package: `ros-foxy-ament-lint=0.9.6-1focal.20201210.043913`
 
 Binary Packages:
 
-- `ros-foxy-ament-lint=0.9.5-1focal.20201006.184328`
+- `ros-foxy-ament-lint=0.9.6-1focal.20201210.043913`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3389,11 +3403,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-package=0.9.2-1focal.20200606.205127`
+### `dpkg` source package: `ros-foxy-ament-package=0.9.3-1focal.20201210.042750`
 
 Binary Packages:
 
-- `ros-foxy-ament-package=0.9.2-1focal.20200606.205127`
+- `ros-foxy-ament-package=0.9.3-1focal.20201210.042750`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3403,11 +3417,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-pep257=0.9.5-1focal.20201006.184931`
+### `dpkg` source package: `ros-foxy-ament-pep257=0.9.6-1focal.20201210.044018`
 
 Binary Packages:
 
-- `ros-foxy-ament-pep257=0.9.5-1focal.20201006.184931`
+- `ros-foxy-ament-pep257=0.9.6-1focal.20201210.044018`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3417,11 +3431,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-uncrustify=0.9.5-1focal.20201006.192656`
+### `dpkg` source package: `ros-foxy-ament-uncrustify=0.9.6-1focal.20201210.045359`
 
 Binary Packages:
 
-- `ros-foxy-ament-uncrustify=0.9.5-1focal.20201006.192656`
+- `ros-foxy-ament-uncrustify=0.9.6-1focal.20201210.045359`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3431,11 +3445,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ament-xmllint=0.9.5-1focal.20201006.190107`
+### `dpkg` source package: `ros-foxy-ament-xmllint=0.9.6-1focal.20201210.045931`
 
 Binary Packages:
 
-- `ros-foxy-ament-xmllint=0.9.5-1focal.20201006.190107`
+- `ros-foxy-ament-xmllint=0.9.6-1focal.20201210.045931`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3445,11 +3459,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-builtin-interfaces=1.0.0-1focal.20201013.211210`
+### `dpkg` source package: `ros-foxy-builtin-interfaces=1.0.0-1focal.20201210.054921`
 
 Binary Packages:
 
-- `ros-foxy-builtin-interfaces=1.0.0-1focal.20201013.211210`
+- `ros-foxy-builtin-interfaces=1.0.0-1focal.20201210.054921`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3459,11 +3473,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-class-loader=2.0.1-1focal.20201012.170323`
+### `dpkg` source package: `ros-foxy-class-loader=2.0.1-1focal.20201210.051844`
 
 Binary Packages:
 
-- `ros-foxy-class-loader=2.0.1-1focal.20201012.170323`
+- `ros-foxy-class-loader=2.0.1-1focal.20201210.051844`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3473,11 +3487,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-common-interfaces=2.0.3-1focal.20201013.220743`
+### `dpkg` source package: `ros-foxy-common-interfaces=2.0.3-1focal.20201210.080217`
 
 Binary Packages:
 
-- `ros-foxy-common-interfaces=2.0.3-1focal.20201013.220743`
+- `ros-foxy-common-interfaces=2.0.3-1focal.20201210.080217`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3487,11 +3501,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-composition-interfaces=1.0.0-1focal.20201013.212509`
+### `dpkg` source package: `ros-foxy-composition-interfaces=1.0.0-1focal.20201210.060050`
 
 Binary Packages:
 
-- `ros-foxy-composition-interfaces=1.0.0-1focal.20201013.212509`
+- `ros-foxy-composition-interfaces=1.0.0-1focal.20201210.060050`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3501,11 +3515,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-console-bridge-vendor=1.2.2-1focal.20201006.193036`
+### `dpkg` source package: `ros-foxy-console-bridge-vendor=1.2.3-1focal.20201210.051038`
 
 Binary Packages:
 
-- `ros-foxy-console-bridge-vendor=1.2.2-1focal.20201006.193036`
+- `ros-foxy-console-bridge-vendor=1.2.3-1focal.20201210.051038`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3515,11 +3529,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-diagnostic-msgs=2.0.3-1focal.20201013.214636`
+### `dpkg` source package: `ros-foxy-diagnostic-msgs=2.0.3-1focal.20201210.062146`
 
 Binary Packages:
 
-- `ros-foxy-diagnostic-msgs=2.0.3-1focal.20201013.214636`
+- `ros-foxy-diagnostic-msgs=2.0.3-1focal.20201210.062146`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3529,11 +3543,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-domain-coordinator=0.9.0-1focal.20201006.190033`
+### `dpkg` source package: `ros-foxy-domain-coordinator=0.9.0-1focal.20201210.045953`
 
 Binary Packages:
 
-- `ros-foxy-domain-coordinator=0.9.0-1focal.20201006.190033`
+- `ros-foxy-domain-coordinator=0.9.0-1focal.20201210.045953`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3543,11 +3557,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-fastcdr=1.0.13-1focal.20201006.185158`
+### `dpkg` source package: `ros-foxy-fastcdr=1.0.13-1focal.20201210.043404`
 
 Binary Packages:
 
-- `ros-foxy-fastcdr=1.0.13-1focal.20201006.185158`
+- `ros-foxy-fastcdr=1.0.13-1focal.20201210.043404`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3557,11 +3571,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-fastrtps-cmake-module=1.0.1-1focal.20201006.193153`
+### `dpkg` source package: `ros-foxy-fastrtps-cmake-module=1.0.2-1focal.20201210.050558`
 
 Binary Packages:
 
-- `ros-foxy-fastrtps-cmake-module=1.0.1-1focal.20201006.193153`
+- `ros-foxy-fastrtps-cmake-module=1.0.2-1focal.20201210.050558`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3571,11 +3585,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-fastrtps=2.0.1-1focal.20201006.191046`
+### `dpkg` source package: `ros-foxy-fastrtps=2.0.2-1focal.20201210.051121`
 
 Binary Packages:
 
-- `ros-foxy-fastrtps=2.0.1-1focal.20201006.191046`
+- `ros-foxy-fastrtps=2.0.2-1focal.20201210.051121`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3585,11 +3599,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-foonathan-memory-vendor=1.0.0-1focal.20201006.190827`
+### `dpkg` source package: `ros-foxy-foonathan-memory-vendor=1.0.0-1focal.20201210.050403`
 
 Binary Packages:
 
-- `ros-foxy-foonathan-memory-vendor=1.0.0-1focal.20201006.190827`
+- `ros-foxy-foonathan-memory-vendor=1.0.0-1focal.20201210.050403`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3599,11 +3613,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-geometry-msgs=2.0.3-1focal.20201013.213522`
+### `dpkg` source package: `ros-foxy-geometry-msgs=2.0.3-1focal.20201210.061405`
 
 Binary Packages:
 
-- `ros-foxy-geometry-msgs=2.0.3-1focal.20201013.213522`
+- `ros-foxy-geometry-msgs=2.0.3-1focal.20201210.061405`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3613,11 +3627,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-gmock-vendor=1.8.9000-1focal.20201006.184310`
+### `dpkg` source package: `ros-foxy-gmock-vendor=1.8.9000-1focal.20201210.043512`
 
 Binary Packages:
 
-- `ros-foxy-gmock-vendor=1.8.9000-1focal.20201006.184310`
+- `ros-foxy-gmock-vendor=1.8.9000-1focal.20201210.043512`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3627,11 +3641,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-gtest-vendor=1.8.9000-1focal.20201006.184041`
+### `dpkg` source package: `ros-foxy-gtest-vendor=1.8.9000-1focal.20201210.043407`
 
 Binary Packages:
 
-- `ros-foxy-gtest-vendor=1.8.9000-1focal.20201006.184041`
+- `ros-foxy-gtest-vendor=1.8.9000-1focal.20201210.043407`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3641,11 +3655,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-launch-ros=0.11.0-1focal.20201103.151305`
+### `dpkg` source package: `ros-foxy-launch-ros=0.11.1-1focal.20210106.015448`
 
 Binary Packages:
 
-- `ros-foxy-launch-ros=0.11.0-1focal.20201103.151305`
+- `ros-foxy-launch-ros=0.11.1-1focal.20210106.015448`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3655,11 +3669,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-launch-testing-ament-cmake=0.10.3-1focal.20201007.195143`
+### `dpkg` source package: `ros-foxy-launch-testing-ament-cmake=0.10.4-1focal.20201210.050952`
 
 Binary Packages:
 
-- `ros-foxy-launch-testing-ament-cmake=0.10.3-1focal.20201007.195143`
+- `ros-foxy-launch-testing-ament-cmake=0.10.4-1focal.20201210.050952`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3669,11 +3683,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-launch-testing-ros=0.11.0-1focal.20201103.151526`
+### `dpkg` source package: `ros-foxy-launch-testing-ros=0.11.1-1focal.20210106.015621`
 
 Binary Packages:
 
-- `ros-foxy-launch-testing-ros=0.11.0-1focal.20201103.151526`
+- `ros-foxy-launch-testing-ros=0.11.1-1focal.20210106.015621`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3683,11 +3697,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-launch-testing=0.10.3-1focal.20201007.194656`
+### `dpkg` source package: `ros-foxy-launch-testing=0.10.4-1focal.20201210.045801`
 
 Binary Packages:
 
-- `ros-foxy-launch-testing=0.10.3-1focal.20201007.194656`
+- `ros-foxy-launch-testing=0.10.4-1focal.20201210.045801`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3697,11 +3711,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-launch-xml=0.10.3-1focal.20201007.194429`
+### `dpkg` source package: `ros-foxy-launch-xml=0.10.4-1focal.20201210.045802`
 
 Binary Packages:
 
-- `ros-foxy-launch-xml=0.10.3-1focal.20201007.194429`
+- `ros-foxy-launch-xml=0.10.4-1focal.20201210.045802`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3711,11 +3725,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-launch-yaml=0.10.3-1focal.20201007.194431`
+### `dpkg` source package: `ros-foxy-launch-yaml=0.10.4-1focal.20201210.045811`
 
 Binary Packages:
 
-- `ros-foxy-launch-yaml=0.10.3-1focal.20201007.194431`
+- `ros-foxy-launch-yaml=0.10.4-1focal.20201210.045811`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3725,11 +3739,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-launch=0.10.3-1focal.20201007.194221`
+### `dpkg` source package: `ros-foxy-launch=0.10.4-1focal.20201210.045637`
 
 Binary Packages:
 
-- `ros-foxy-launch=0.10.3-1focal.20201007.194221`
+- `ros-foxy-launch=0.10.4-1focal.20201210.045637`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3739,11 +3753,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-libstatistics-collector=1.0.1-1focal.20201103.150357`
+### `dpkg` source package: `ros-foxy-libstatistics-collector=1.0.1-1focal.20201228.140118`
 
 Binary Packages:
 
-- `ros-foxy-libstatistics-collector=1.0.1-1focal.20201103.150357`
+- `ros-foxy-libstatistics-collector=1.0.1-1focal.20201228.140118`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3753,11 +3767,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-libyaml-vendor=1.0.2-1focal.20201006.193258`
+### `dpkg` source package: `ros-foxy-libyaml-vendor=1.0.2-1focal.20201210.050740`
 
 Binary Packages:
 
-- `ros-foxy-libyaml-vendor=1.0.2-1focal.20201006.193258`
+- `ros-foxy-libyaml-vendor=1.0.2-1focal.20201210.050740`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3767,11 +3781,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-lifecycle-msgs=1.0.0-1focal.20201013.211347`
+### `dpkg` source package: `ros-foxy-lifecycle-msgs=1.0.0-1focal.20201210.054922`
 
 Binary Packages:
 
-- `ros-foxy-lifecycle-msgs=1.0.0-1focal.20201013.211347`
+- `ros-foxy-lifecycle-msgs=1.0.0-1focal.20201210.054922`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3781,11 +3795,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-nav-msgs=2.0.3-1focal.20201013.214616`
+### `dpkg` source package: `ros-foxy-nav-msgs=2.0.3-1focal.20201210.062152`
 
 Binary Packages:
 
-- `ros-foxy-nav-msgs=2.0.3-1focal.20201013.214616`
+- `ros-foxy-nav-msgs=2.0.3-1focal.20201210.062152`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3795,11 +3809,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-osrf-pycommon=0.1.10-1focal.20201006.183909`
+### `dpkg` source package: `ros-foxy-osrf-pycommon=0.1.10-1focal.20201210.043414`
 
 Binary Packages:
 
-- `ros-foxy-osrf-pycommon=0.1.10-1focal.20201006.183909`
+- `ros-foxy-osrf-pycommon=0.1.10-1focal.20201210.043414`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3809,11 +3823,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-pluginlib=2.5.2-1focal.20201012.170527`
+### `dpkg` source package: `ros-foxy-pluginlib=2.5.3-1focal.20201210.052105`
 
 Binary Packages:
 
-- `ros-foxy-pluginlib=2.5.2-1focal.20201012.170527`
+- `ros-foxy-pluginlib=2.5.3-1focal.20201210.052105`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3823,11 +3837,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-python-cmake-module=0.8.0-1focal.20201006.193433`
+### `dpkg` source package: `ros-foxy-python-cmake-module=0.8.0-1focal.20201210.050910`
 
 Binary Packages:
 
-- `ros-foxy-python-cmake-module=0.8.0-1focal.20201006.193433`
+- `ros-foxy-python-cmake-module=0.8.0-1focal.20201210.050910`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3837,11 +3851,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rcl-action=1.1.9-1focal.20201103.150403`
+### `dpkg` source package: `ros-foxy-rcl-action=1.1.10-1focal.20201228.140119`
 
 Binary Packages:
 
-- `ros-foxy-rcl-action=1.1.9-1focal.20201103.150403`
+- `ros-foxy-rcl-action=1.1.10-1focal.20201228.140119`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3851,11 +3865,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rcl-interfaces=1.0.0-1focal.20201013.212230`
+### `dpkg` source package: `ros-foxy-rcl-interfaces=1.0.0-1focal.20201210.055148`
 
 Binary Packages:
 
-- `ros-foxy-rcl-interfaces=1.0.0-1focal.20201013.212230`
+- `ros-foxy-rcl-interfaces=1.0.0-1focal.20201210.055148`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3865,11 +3879,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rcl-lifecycle=1.1.9-1focal.20201103.150401`
+### `dpkg` source package: `ros-foxy-rcl-lifecycle=1.1.10-1focal.20201228.140118`
 
 Binary Packages:
 
-- `ros-foxy-rcl-lifecycle=1.1.9-1focal.20201103.150401`
+- `ros-foxy-rcl-lifecycle=1.1.10-1focal.20201228.140118`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3879,11 +3893,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rcl-logging-spdlog=1.0.1-1focal.20201007.200052`
+### `dpkg` source package: `ros-foxy-rcl-logging-spdlog=1.0.1-1focal.20201210.052211`
 
 Binary Packages:
 
-- `ros-foxy-rcl-logging-spdlog=1.0.1-1focal.20201007.200052`
+- `ros-foxy-rcl-logging-spdlog=1.0.1-1focal.20201210.052211`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3893,11 +3907,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rcl-yaml-param-parser=1.1.9-1focal.20201103.145246`
+### `dpkg` source package: `ros-foxy-rcl-yaml-param-parser=1.1.10-1focal.20201210.052249`
 
 Binary Packages:
 
-- `ros-foxy-rcl-yaml-param-parser=1.1.9-1focal.20201103.145246`
+- `ros-foxy-rcl-yaml-param-parser=1.1.10-1focal.20201210.052249`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3907,11 +3921,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rcl=1.1.9-1focal.20201103.150217`
+### `dpkg` source package: `ros-foxy-rcl=1.1.10-1focal.20201228.135611`
 
 Binary Packages:
 
-- `ros-foxy-rcl=1.1.9-1focal.20201103.150217`
+- `ros-foxy-rcl=1.1.10-1focal.20201228.135611`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3921,11 +3935,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rclcpp-components=2.2.0-1focal.20201103.153741`
+### `dpkg` source package: `ros-foxy-rclcpp-components=2.3.0-1focal.20201228.143907`
 
 Binary Packages:
 
-- `ros-foxy-rclcpp-components=2.2.0-1focal.20201103.153741`
+- `ros-foxy-rclcpp-components=2.3.0-1focal.20201228.143907`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3935,11 +3949,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rclcpp-lifecycle=2.2.0-1focal.20201103.153756`
+### `dpkg` source package: `ros-foxy-rclcpp-lifecycle=2.3.0-1focal.20201228.143907`
 
 Binary Packages:
 
-- `ros-foxy-rclcpp-lifecycle=2.2.0-1focal.20201103.153756`
+- `ros-foxy-rclcpp-lifecycle=2.3.0-1focal.20201228.143907`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3949,11 +3963,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rclcpp=2.2.0-1focal.20201103.150639`
+### `dpkg` source package: `ros-foxy-rclcpp=2.3.0-1focal.20201228.140355`
 
 Binary Packages:
 
-- `ros-foxy-rclcpp=2.2.0-1focal.20201103.150639`
+- `ros-foxy-rclcpp=2.3.0-1focal.20201228.140355`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3963,11 +3977,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rclpy=1.0.4-1focal.20201103.151006`
+### `dpkg` source package: `ros-foxy-rclpy=1.0.5-1focal.20210106.015151`
 
 Binary Packages:
 
-- `ros-foxy-rclpy=1.0.4-1focal.20201103.151006`
+- `ros-foxy-rclpy=1.0.5-1focal.20210106.015151`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3977,11 +3991,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rcpputils=1.3.1-1focal.20201012.165901`
+### `dpkg` source package: `ros-foxy-rcpputils=1.3.1-1focal.20201210.051603`
 
 Binary Packages:
 
-- `ros-foxy-rcpputils=1.3.1-1focal.20201012.165901`
+- `ros-foxy-rcpputils=1.3.1-1focal.20201210.051603`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3991,11 +4005,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rcutils=1.1.1-1focal.20201007.195836`
+### `dpkg` source package: `ros-foxy-rcutils=1.1.2-1focal.20201210.051111`
 
 Binary Packages:
 
-- `ros-foxy-rcutils=1.1.1-1focal.20201007.195836`
+- `ros-foxy-rcutils=1.1.2-1focal.20201210.051111`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4005,11 +4019,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rmw-dds-common=1.0.1-1focal.20201013.211303`
+### `dpkg` source package: `ros-foxy-rmw-dds-common=1.0.2-1focal.20201210.054925`
 
 Binary Packages:
 
-- `ros-foxy-rmw-dds-common=1.0.1-1focal.20201013.211303`
+- `ros-foxy-rmw-dds-common=1.0.2-1focal.20201210.054925`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4019,11 +4033,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rmw-fastrtps-cpp=1.2.2-1focal.20201015.203910`
+### `dpkg` source package: `ros-foxy-rmw-fastrtps-cpp=1.2.4-1focal.20201210.060748`
 
 Binary Packages:
 
-- `ros-foxy-rmw-fastrtps-cpp=1.2.2-1focal.20201015.203910`
+- `ros-foxy-rmw-fastrtps-cpp=1.2.4-1focal.20201210.060748`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4033,11 +4047,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rmw-fastrtps-shared-cpp=1.2.2-1focal.20201015.203537`
+### `dpkg` source package: `ros-foxy-rmw-fastrtps-shared-cpp=1.2.4-1focal.20201210.055508`
 
 Binary Packages:
 
-- `ros-foxy-rmw-fastrtps-shared-cpp=1.2.2-1focal.20201015.203537`
+- `ros-foxy-rmw-fastrtps-shared-cpp=1.2.4-1focal.20201210.055508`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4047,11 +4061,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rmw-implementation-cmake=1.0.2-1focal.20201013.205434`
+### `dpkg` source package: `ros-foxy-rmw-implementation-cmake=1.0.2-1focal.20201210.050921`
 
 Binary Packages:
 
-- `ros-foxy-rmw-implementation-cmake=1.0.2-1focal.20201013.205434`
+- `ros-foxy-rmw-implementation-cmake=1.0.2-1focal.20201210.050921`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4061,11 +4075,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rmw-implementation=1.0.1-1focal.20201022.170607`
+### `dpkg` source package: `ros-foxy-rmw-implementation=1.0.1-1focal.20201210.061125`
 
 Binary Packages:
 
-- `ros-foxy-rmw-implementation=1.0.1-1focal.20201022.170607`
+- `ros-foxy-rmw-implementation=1.0.1-1focal.20201210.061125`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4075,11 +4089,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rmw=1.0.2-1focal.20201013.205444`
+### `dpkg` source package: `ros-foxy-rmw=1.0.2-1focal.20201210.053005`
 
 Binary Packages:
 
-- `ros-foxy-rmw=1.0.2-1focal.20201013.205444`
+- `ros-foxy-rmw=1.0.2-1focal.20201210.053005`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4089,11 +4103,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ros-core=0.9.2-1focal.20201103.161408`
+### `dpkg` source package: `ros-foxy-ros-core=0.9.2-1focal.20210106.021728`
 
 Binary Packages:
 
-- `ros-foxy-ros-core=0.9.2-1focal.20201103.161408`
+- `ros-foxy-ros-core=0.9.2-1focal.20210106.021728`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4103,11 +4117,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ros-environment=2.5.0-1focal.20201006.184529`
+### `dpkg` source package: `ros-foxy-ros-environment=2.5.0-1focal.20201210.043853`
 
 Binary Packages:
 
-- `ros-foxy-ros-environment=2.5.0-1focal.20201006.184529`
+- `ros-foxy-ros-environment=2.5.0-1focal.20201210.043853`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4117,11 +4131,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ros-workspace=1.0.1-1focal.20201006.183757`
+### `dpkg` source package: `ros-foxy-ros-workspace=1.0.1-1focal.20201210.043226`
 
 Binary Packages:
 
-- `ros-foxy-ros-workspace=1.0.1-1focal.20201006.183757`
+- `ros-foxy-ros-workspace=1.0.1-1focal.20201210.043226`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4131,11 +4145,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ros2action=0.9.7-1focal.20201103.152218`
+### `dpkg` source package: `ros-foxy-ros2action=0.9.8-1focal.20210106.020935`
 
 Binary Packages:
 
-- `ros-foxy-ros2action=0.9.7-1focal.20201103.152218`
+- `ros-foxy-ros2action=0.9.8-1focal.20210106.020935`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4145,11 +4159,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ros2cli=0.9.7-1focal.20201103.151350`
+### `dpkg` source package: `ros-foxy-ros2cli=0.9.8-1focal.20210106.015517`
 
 Binary Packages:
 
-- `ros-foxy-ros2cli=0.9.7-1focal.20201103.151350`
+- `ros-foxy-ros2cli=0.9.8-1focal.20210106.015517`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4159,11 +4173,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ros2component=0.9.7-1focal.20201103.154154`
+### `dpkg` source package: `ros-foxy-ros2component=0.9.8-1focal.20210106.021522`
 
 Binary Packages:
 
-- `ros-foxy-ros2component=0.9.7-1focal.20201103.154154`
+- `ros-foxy-ros2component=0.9.8-1focal.20210106.021522`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4173,11 +4187,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ros2doctor=0.9.7-1focal.20201103.152231`
+### `dpkg` source package: `ros-foxy-ros2doctor=0.9.8-1focal.20210106.020957`
 
 Binary Packages:
 
-- `ros-foxy-ros2doctor=0.9.7-1focal.20201103.152231`
+- `ros-foxy-ros2doctor=0.9.8-1focal.20210106.020957`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4187,11 +4201,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ros2interface=0.9.7-1focal.20201103.152651`
+### `dpkg` source package: `ros-foxy-ros2interface=0.9.8-1focal.20210106.021041`
 
 Binary Packages:
 
-- `ros-foxy-ros2interface=0.9.7-1focal.20201103.152651`
+- `ros-foxy-ros2interface=0.9.8-1focal.20210106.021041`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4201,11 +4215,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ros2launch=0.11.0-1focal.20201103.152949`
+### `dpkg` source package: `ros-foxy-ros2launch=0.11.1-1focal.20210106.021401`
 
 Binary Packages:
 
-- `ros-foxy-ros2launch=0.11.0-1focal.20201103.152949`
+- `ros-foxy-ros2launch=0.11.1-1focal.20210106.021401`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4215,11 +4229,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ros2lifecycle=0.9.7-1focal.20201103.161047`
+### `dpkg` source package: `ros-foxy-ros2lifecycle=0.9.8-1focal.20210106.021345`
 
 Binary Packages:
 
-- `ros-foxy-ros2lifecycle=0.9.7-1focal.20201103.161047`
+- `ros-foxy-ros2lifecycle=0.9.8-1focal.20210106.021345`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4229,11 +4243,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ros2multicast=0.9.7-1focal.20201103.151824`
+### `dpkg` source package: `ros-foxy-ros2multicast=0.9.8-1focal.20210106.020410`
 
 Binary Packages:
 
-- `ros-foxy-ros2multicast=0.9.7-1focal.20201103.151824`
+- `ros-foxy-ros2multicast=0.9.8-1focal.20210106.020410`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4243,11 +4257,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ros2node=0.9.7-1focal.20201103.152358`
+### `dpkg` source package: `ros-foxy-ros2node=0.9.8-1focal.20210106.021010`
 
 Binary Packages:
 
-- `ros-foxy-ros2node=0.9.7-1focal.20201103.152358`
+- `ros-foxy-ros2node=0.9.8-1focal.20210106.021010`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4257,11 +4271,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ros2param=0.9.7-1focal.20201103.152801`
+### `dpkg` source package: `ros-foxy-ros2param=0.9.8-1focal.20210106.021340`
 
 Binary Packages:
 
-- `ros-foxy-ros2param=0.9.7-1focal.20201103.152801`
+- `ros-foxy-ros2param=0.9.8-1focal.20210106.021340`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4271,11 +4285,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ros2pkg=0.9.7-1focal.20201103.152701`
+### `dpkg` source package: `ros-foxy-ros2pkg=0.9.8-1focal.20210106.021224`
 
 Binary Packages:
 
-- `ros-foxy-ros2pkg=0.9.7-1focal.20201103.152701`
+- `ros-foxy-ros2pkg=0.9.8-1focal.20210106.021224`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4285,11 +4299,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ros2run=0.9.7-1focal.20201103.153000`
+### `dpkg` source package: `ros-foxy-ros2run=0.9.8-1focal.20210106.021402`
 
 Binary Packages:
 
-- `ros-foxy-ros2run=0.9.7-1focal.20201103.153000`
+- `ros-foxy-ros2run=0.9.8-1focal.20210106.021402`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4299,11 +4313,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ros2service=0.9.7-1focal.20201103.152421`
+### `dpkg` source package: `ros-foxy-ros2service=0.9.8-1focal.20210106.021014`
 
 Binary Packages:
 
-- `ros-foxy-ros2service=0.9.7-1focal.20201103.152421`
+- `ros-foxy-ros2service=0.9.8-1focal.20210106.021014`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4313,11 +4327,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-ros2topic=0.9.7-1focal.20201103.152432`
+### `dpkg` source package: `ros-foxy-ros2topic=0.9.8-1focal.20210106.021038`
 
 Binary Packages:
 
-- `ros-foxy-ros2topic=0.9.7-1focal.20201103.152432`
+- `ros-foxy-ros2topic=0.9.8-1focal.20210106.021038`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4327,11 +4341,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rosgraph-msgs=1.0.0-1focal.20201013.211744`
+### `dpkg` source package: `ros-foxy-rosgraph-msgs=1.0.0-1focal.20201210.055149`
 
 Binary Packages:
 
-- `ros-foxy-rosgraph-msgs=1.0.0-1focal.20201013.211744`
+- `ros-foxy-rosgraph-msgs=1.0.0-1focal.20201210.055149`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4341,11 +4355,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rosidl-adapter=1.1.0-1focal.20201006.193552`
+### `dpkg` source package: `ros-foxy-rosidl-adapter=1.2.0-1focal.20201210.052505`
 
 Binary Packages:
 
-- `ros-foxy-rosidl-adapter=1.1.0-1focal.20201006.193552`
+- `ros-foxy-rosidl-adapter=1.2.0-1focal.20201210.052505`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4355,11 +4369,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rosidl-cmake=1.1.0-1focal.20201006.194035`
+### `dpkg` source package: `ros-foxy-rosidl-cmake=1.2.0-1focal.20201210.052807`
 
 Binary Packages:
 
-- `ros-foxy-rosidl-cmake=1.1.0-1focal.20201006.194035`
+- `ros-foxy-rosidl-cmake=1.2.0-1focal.20201210.052807`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4369,11 +4383,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rosidl-default-generators=1.0.0-1focal.20201013.210742`
+### `dpkg` source package: `ros-foxy-rosidl-default-generators=1.0.0-1focal.20201210.054855`
 
 Binary Packages:
 
-- `ros-foxy-rosidl-default-generators=1.0.0-1focal.20201013.210742`
+- `ros-foxy-rosidl-default-generators=1.0.0-1focal.20201210.054855`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4383,11 +4397,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rosidl-default-runtime=1.0.0-1focal.20201013.210742`
+### `dpkg` source package: `ros-foxy-rosidl-default-runtime=1.0.0-1focal.20201210.054855`
 
 Binary Packages:
 
-- `ros-foxy-rosidl-default-runtime=1.0.0-1focal.20201013.210742`
+- `ros-foxy-rosidl-default-runtime=1.0.0-1focal.20201210.054855`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4397,11 +4411,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rosidl-generator-c=1.1.0-1focal.20201006.195858`
+### `dpkg` source package: `ros-foxy-rosidl-generator-c=1.2.0-1focal.20201210.053000`
 
 Binary Packages:
 
-- `ros-foxy-rosidl-generator-c=1.1.0-1focal.20201006.195858`
+- `ros-foxy-rosidl-generator-c=1.2.0-1focal.20201210.053000`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4411,11 +4425,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rosidl-generator-cpp=1.1.0-1focal.20201006.200109`
+### `dpkg` source package: `ros-foxy-rosidl-generator-cpp=1.2.0-1focal.20201210.053251`
 
 Binary Packages:
 
-- `ros-foxy-rosidl-generator-cpp=1.1.0-1focal.20201006.200109`
+- `ros-foxy-rosidl-generator-cpp=1.2.0-1focal.20201210.053251`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4425,11 +4439,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rosidl-generator-py=0.9.3-1focal.20201013.210249`
+### `dpkg` source package: `ros-foxy-rosidl-generator-py=0.9.4-1focal.20201210.054522`
 
 Binary Packages:
 
-- `ros-foxy-rosidl-generator-py=0.9.3-1focal.20201013.210249`
+- `ros-foxy-rosidl-generator-py=0.9.4-1focal.20201210.054522`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4439,11 +4453,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rosidl-parser=1.1.0-1focal.20201006.193845`
+### `dpkg` source package: `ros-foxy-rosidl-parser=1.2.0-1focal.20201210.052638`
 
 Binary Packages:
 
-- `ros-foxy-rosidl-parser=1.1.0-1focal.20201006.193845`
+- `ros-foxy-rosidl-parser=1.2.0-1focal.20201210.052638`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4453,11 +4467,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rosidl-runtime-c=1.1.0-1focal.20201006.195557`
+### `dpkg` source package: `ros-foxy-rosidl-runtime-c=1.2.0-1focal.20201210.052748`
 
 Binary Packages:
 
-- `ros-foxy-rosidl-runtime-c=1.1.0-1focal.20201006.195557`
+- `ros-foxy-rosidl-runtime-c=1.2.0-1focal.20201210.052748`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4467,11 +4481,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rosidl-runtime-cpp=1.1.0-1focal.20201006.193603`
+### `dpkg` source package: `ros-foxy-rosidl-runtime-cpp=1.2.0-1focal.20201210.052532`
 
 Binary Packages:
 
-- `ros-foxy-rosidl-runtime-cpp=1.1.0-1focal.20201006.193603`
+- `ros-foxy-rosidl-runtime-cpp=1.2.0-1focal.20201210.052532`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4481,11 +4495,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rosidl-runtime-py=0.9.0-1focal.20201013.213853`
+### `dpkg` source package: `ros-foxy-rosidl-runtime-py=0.9.0-1focal.20201210.061138`
 
 Binary Packages:
 
-- `ros-foxy-rosidl-runtime-py=0.9.0-1focal.20201013.213853`
+- `ros-foxy-rosidl-runtime-py=0.9.0-1focal.20201210.061138`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4495,11 +4509,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rosidl-typesupport-c=1.0.0-1focal.20201013.210049`
+### `dpkg` source package: `ros-foxy-rosidl-typesupport-c=1.0.1-1focal.20201210.053847`
 
 Binary Packages:
 
-- `ros-foxy-rosidl-typesupport-c=1.0.0-1focal.20201013.210049`
+- `ros-foxy-rosidl-typesupport-c=1.0.1-1focal.20201210.053847`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4509,11 +4523,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rosidl-typesupport-cpp=1.0.0-1focal.20201013.210249`
+### `dpkg` source package: `ros-foxy-rosidl-typesupport-cpp=1.0.1-1focal.20201210.054233`
 
 Binary Packages:
 
-- `ros-foxy-rosidl-typesupport-cpp=1.0.0-1focal.20201013.210249`
+- `ros-foxy-rosidl-typesupport-cpp=1.0.1-1focal.20201210.054233`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4523,11 +4537,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rosidl-typesupport-fastrtps-c=1.0.1-1focal.20201013.210033`
+### `dpkg` source package: `ros-foxy-rosidl-typesupport-fastrtps-c=1.0.2-1focal.20201210.053508`
 
 Binary Packages:
 
-- `ros-foxy-rosidl-typesupport-fastrtps-c=1.0.1-1focal.20201013.210033`
+- `ros-foxy-rosidl-typesupport-fastrtps-c=1.0.2-1focal.20201210.053508`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4537,11 +4551,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rosidl-typesupport-fastrtps-cpp=1.0.1-1focal.20201013.205708`
+### `dpkg` source package: `ros-foxy-rosidl-typesupport-fastrtps-cpp=1.0.2-1focal.20201210.053313`
 
 Binary Packages:
 
-- `ros-foxy-rosidl-typesupport-fastrtps-cpp=1.0.1-1focal.20201013.205708`
+- `ros-foxy-rosidl-typesupport-fastrtps-cpp=1.0.2-1focal.20201210.053313`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4551,11 +4565,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rosidl-typesupport-interface=1.1.0-1focal.20201006.193653`
+### `dpkg` source package: `ros-foxy-rosidl-typesupport-interface=1.2.0-1focal.20201210.052602`
 
 Binary Packages:
 
-- `ros-foxy-rosidl-typesupport-interface=1.1.0-1focal.20201006.193653`
+- `ros-foxy-rosidl-typesupport-interface=1.2.0-1focal.20201210.052602`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4565,11 +4579,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rosidl-typesupport-introspection-c=1.1.0-1focal.20201006.201142`
+### `dpkg` source package: `ros-foxy-rosidl-typesupport-introspection-c=1.2.0-1focal.20201210.053005`
 
 Binary Packages:
 
-- `ros-foxy-rosidl-typesupport-introspection-c=1.1.0-1focal.20201006.201142`
+- `ros-foxy-rosidl-typesupport-introspection-c=1.2.0-1focal.20201210.053005`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4579,11 +4593,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rosidl-typesupport-introspection-cpp=1.1.0-1focal.20201006.201332`
+### `dpkg` source package: `ros-foxy-rosidl-typesupport-introspection-cpp=1.2.0-1focal.20201210.053256`
 
 Binary Packages:
 
-- `ros-foxy-rosidl-typesupport-introspection-cpp=1.1.0-1focal.20201006.201332`
+- `ros-foxy-rosidl-typesupport-introspection-cpp=1.2.0-1focal.20201210.053256`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4593,11 +4607,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-rpyutils=0.2.0-1focal.20201006.190222`
+### `dpkg` source package: `ros-foxy-rpyutils=0.2.0-1focal.20201210.050001`
 
 Binary Packages:
 
-- `ros-foxy-rpyutils=0.2.0-1focal.20201006.190222`
+- `ros-foxy-rpyutils=0.2.0-1focal.20201210.050001`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4607,11 +4621,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-sensor-msgs=2.0.3-1focal.20201013.214636`
+### `dpkg` source package: `ros-foxy-sensor-msgs=2.0.3-1focal.20201210.062326`
 
 Binary Packages:
 
-- `ros-foxy-sensor-msgs=2.0.3-1focal.20201013.214636`
+- `ros-foxy-sensor-msgs=2.0.3-1focal.20201210.062326`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4621,11 +4635,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-shape-msgs=2.0.3-1focal.20201013.215232`
+### `dpkg` source package: `ros-foxy-shape-msgs=2.0.3-1focal.20201210.062804`
 
 Binary Packages:
 
-- `ros-foxy-shape-msgs=2.0.3-1focal.20201013.215232`
+- `ros-foxy-shape-msgs=2.0.3-1focal.20201210.062804`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4635,11 +4649,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-spdlog-vendor=1.1.2-1focal.20201006.193853`
+### `dpkg` source package: `ros-foxy-spdlog-vendor=1.1.2-1focal.20201210.050927`
 
 Binary Packages:
 
-- `ros-foxy-spdlog-vendor=1.1.2-1focal.20201006.193853`
+- `ros-foxy-spdlog-vendor=1.1.2-1focal.20201210.050927`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4649,11 +4663,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-sros2-cmake=0.9.3-1focal.20201103.151922`
+### `dpkg` source package: `ros-foxy-sros2-cmake=0.9.4-1focal.20210106.020644`
 
 Binary Packages:
 
-- `ros-foxy-sros2-cmake=0.9.3-1focal.20201103.151922`
+- `ros-foxy-sros2-cmake=0.9.4-1focal.20210106.020644`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4663,11 +4677,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-sros2=0.9.3-1focal.20201103.151700`
+### `dpkg` source package: `ros-foxy-sros2=0.9.4-1focal.20210106.015648`
 
 Binary Packages:
 
-- `ros-foxy-sros2=0.9.3-1focal.20201103.151700`
+- `ros-foxy-sros2=0.9.4-1focal.20210106.015648`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4677,11 +4691,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-statistics-msgs=1.0.0-1focal.20201013.211850`
+### `dpkg` source package: `ros-foxy-statistics-msgs=1.0.0-1focal.20201210.055333`
 
 Binary Packages:
 
-- `ros-foxy-statistics-msgs=1.0.0-1focal.20201013.211850`
+- `ros-foxy-statistics-msgs=1.0.0-1focal.20201210.055333`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4691,11 +4705,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-std-msgs=2.0.3-1focal.20201013.212359`
+### `dpkg` source package: `ros-foxy-std-msgs=2.0.3-1focal.20201210.055424`
 
 Binary Packages:
 
-- `ros-foxy-std-msgs=2.0.3-1focal.20201013.212359`
+- `ros-foxy-std-msgs=2.0.3-1focal.20201210.055424`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4705,11 +4719,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-std-srvs=2.0.3-1focal.20201013.211131`
+### `dpkg` source package: `ros-foxy-std-srvs=2.0.3-1focal.20201210.054925`
 
 Binary Packages:
 
-- `ros-foxy-std-srvs=2.0.3-1focal.20201013.211131`
+- `ros-foxy-std-srvs=2.0.3-1focal.20201210.054925`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4719,11 +4733,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-stereo-msgs=2.0.3-1focal.20201013.220411`
+### `dpkg` source package: `ros-foxy-stereo-msgs=2.0.3-1focal.20201210.064443`
 
 Binary Packages:
 
-- `ros-foxy-stereo-msgs=2.0.3-1focal.20201013.220411`
+- `ros-foxy-stereo-msgs=2.0.3-1focal.20201210.064443`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4733,11 +4747,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-tinyxml2-vendor=0.7.3-1focal.20201006.192455`
+### `dpkg` source package: `ros-foxy-tinyxml2-vendor=0.7.3-1focal.20201210.045158`
 
 Binary Packages:
 
-- `ros-foxy-tinyxml2-vendor=0.7.3-1focal.20201006.192455`
+- `ros-foxy-tinyxml2-vendor=0.7.3-1focal.20201210.045158`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4747,11 +4761,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-tracetools=1.0.4-1focal.20201006.201148`
+### `dpkg` source package: `ros-foxy-tracetools=1.0.5-2focal.20201228.135443`
 
 Binary Packages:
 
-- `ros-foxy-tracetools=1.0.4-1focal.20201006.201148`
+- `ros-foxy-tracetools=1.0.5-2focal.20201228.135443`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4761,11 +4775,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-trajectory-msgs=2.0.3-1focal.20201013.215519`
+### `dpkg` source package: `ros-foxy-trajectory-msgs=2.0.3-1focal.20201210.064751`
 
 Binary Packages:
 
-- `ros-foxy-trajectory-msgs=2.0.3-1focal.20201013.215519`
+- `ros-foxy-trajectory-msgs=2.0.3-1focal.20201210.064751`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4775,11 +4789,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-uncrustify-vendor=1.4.0-1focal.20201006.192528`
+### `dpkg` source package: `ros-foxy-uncrustify-vendor=1.4.0-1focal.20201210.045247`
 
 Binary Packages:
 
-- `ros-foxy-uncrustify-vendor=1.4.0-1focal.20201006.192528`
+- `ros-foxy-uncrustify-vendor=1.4.0-1focal.20201210.045247`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4789,11 +4803,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-unique-identifier-msgs=2.1.2-1focal.20201013.211054`
+### `dpkg` source package: `ros-foxy-unique-identifier-msgs=2.1.2-1focal.20201210.054922`
 
 Binary Packages:
 
-- `ros-foxy-unique-identifier-msgs=2.1.2-1focal.20201013.211054`
+- `ros-foxy-unique-identifier-msgs=2.1.2-1focal.20201210.054922`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4803,11 +4817,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-foxy-visualization-msgs=2.0.3-1focal.20201013.215530`
+### `dpkg` source package: `ros-foxy-visualization-msgs=2.0.3-1focal.20201210.064822`
 
 Binary Packages:
 
-- `ros-foxy-visualization-msgs=2.0.3-1focal.20201013.215530`
+- `ros-foxy-visualization-msgs=2.0.3-1focal.20201210.064822`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4999,12 +5013,12 @@ $ apt-get source -qq --print-uris sqlite3=3.31.1-4ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.2.debian.tar.xz' sqlite3_3.31.1-4ubuntu0.2.debian.tar.xz 33492 SHA512:87cc51bce108d6306d815683a1825b43a6e7a7d8dc2bade8ce34d3850b8a4437034b1383f5e60b8d9c4569e8ab5bb3eb28febda7745f4a9db01b5e1b0b11d5ae
 ```
 
-### `dpkg` source package: `systemd=245.4-4ubuntu3.3`
+### `dpkg` source package: `systemd=245.4-4ubuntu3.4`
 
 Binary Packages:
 
-- `libsystemd0:amd64=245.4-4ubuntu3.3`
-- `libudev1:amd64=245.4-4ubuntu3.3`
+- `libsystemd0:amd64=245.4-4ubuntu3.4`
+- `libudev1:amd64=245.4-4ubuntu3.4`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -5017,9 +5031,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.4.dsc' systemd_245.4-4ubuntu3.4.dsc 5291 SHA512:79f337d379c644068dc78941404d02da45cfbec7b2c02a1ca1c85d84f9e3f8c5fb757e6b50fd37492f0a17ca5880ee589b6212a32379787e28898d1ed7bc3b90
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.4.debian.tar.xz' systemd_245.4-4ubuntu3.4.debian.tar.xz 231188 SHA512:74c689a0e180aed1eca344399f49dcb0a83bef93451db4d911a768106dd791cb33c9bfd9a269b2dc5312fca9915a3bd4890bf23051997d1701154798840c2175
+```
 
 ### `dpkg` source package: `sysvinit=2.96-2.1ubuntu1`
 
@@ -5042,11 +5061,11 @@ $ apt-get source -qq --print-uris sysvinit=2.96-2.1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_2.96-2.1ubuntu1.debian.tar.xz' sysvinit_2.96-2.1ubuntu1.debian.tar.xz 128840 SHA256:528041e261c90a957d9794bddb07217c89484d9c76a0279da508baec9684c4e6
 ```
 
-### `dpkg` source package: `tar=1.30+dfsg-7`
+### `dpkg` source package: `tar=1.30+dfsg-7ubuntu0.20.04.1`
 
 Binary Packages:
 
-- `tar=1.30+dfsg-7`
+- `tar=1.30+dfsg-7ubuntu0.20.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
@@ -5056,10 +5075,10 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tar=1.30+dfsg-7
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30+dfsg-7.dsc' tar_1.30+dfsg-7.dsc 1981 SHA256:5117afe47b5aab94c592d52c11c74dba146a11a7cdc22dbe067a4b5a5e895729
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30+dfsg.orig.tar.xz' tar_1.30+dfsg.orig.tar.xz 1883220 SHA256:c02f3747ffe02017878303dde8b78e79cd220364c5e8048cf92320232e38912d
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30+dfsg-7.debian.tar.xz' tar_1.30+dfsg-7.debian.tar.xz 22168 SHA256:12763df7f214458a56edc4a4b27adb2cb2041d597d74212ba34736f02bb68cd3
+$ apt-get source -qq --print-uris tar=1.30+dfsg-7ubuntu0.20.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30+dfsg-7ubuntu0.20.04.1.dsc' tar_1.30+dfsg-7ubuntu0.20.04.1.dsc 1946 SHA512:beea3a39a93de0702e33e7ef666bf489e6b1521091b9068ab3bab757e8427cefa6fbf9dbb971fbb391188e8463cf465176f8b36869c9eea9fb198171b2617614
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30+dfsg.orig.tar.xz' tar_1.30+dfsg.orig.tar.xz 1883220 SHA512:f9b3843bd4da03f58d6f88de70ecb36b8ac29312714fd2120ff00f17c99e6d77cc82a8f9de348f4c2bdba9a6cc8e8c6c78039b6c14cdee15d68f2517000c36f2
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30+dfsg-7ubuntu0.20.04.1.debian.tar.xz' tar_1.30+dfsg-7ubuntu0.20.04.1.debian.tar.xz 22616 SHA512:015cf0e3eadb05e07b1c555afadf2f8d6af21f82a375ad0f87682af5e2c4b10e38e0f7ee6ac72fa5ecea5bc40cd4600cd0f2aed06c3c8051a6191d51d124003e
 ```
 
 ### `dpkg` source package: `tinyxml2=7.0.0+dfsg-1build1`
@@ -5084,19 +5103,24 @@ $ apt-get source -qq --print-uris tinyxml2=7.0.0+dfsg-1build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/t/tinyxml2/tinyxml2_7.0.0+dfsg-1build1.debian.tar.xz' tinyxml2_7.0.0+dfsg-1build1.debian.tar.xz 5832 SHA256:2544da0103456b5d9dd8e372cd6e4b0e74921ed878203c80d0319aa87d970f47
 ```
 
-### `dpkg` source package: `tzdata=2020d-0ubuntu0.20.04`
+### `dpkg` source package: `tzdata=2020f-0ubuntu0.20.04.1`
 
 Binary Packages:
 
-- `tzdata=2020d-0ubuntu0.20.04`
+- `tzdata=2020f-0ubuntu0.20.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2020f-0ubuntu0.20.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020f-0ubuntu0.20.04.1.dsc' tzdata_2020f-0ubuntu0.20.04.1.dsc 2149 SHA512:0875ee801239786f8f2a22cb54592ebfd77797bacc4ce51d84c3fa3b3524f50568b550579c302dc1c8abb0412539b65ac1addb0e96ee36a3a31e45449807faa5
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020f.orig.tar.gz' tzdata_2020f.orig.tar.gz 411739 SHA512:dd312def18c807452fda2e697514e2064c5f51ebdbedd0cfe6f231252c76ee5d4409f653b295ed5657b7d30b868690047fdb70a10942e69eaa40b77473e3f9ca
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020f-0ubuntu0.20.04.1.debian.tar.xz' tzdata_2020f-0ubuntu0.20.04.1.debian.tar.xz 166416 SHA512:449efefe43374fdd75a27b3e86398b1bcd9eafdfce8b5f244fa7f4a3e9f45c3fb2f5d54899a53fa0932fd3284dc910d0f08506a7ae93f302360c10c74fcd7d8d
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.2`
 
