@@ -77,8 +77,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=2.0.2ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.2ubuntu0.2.dsc' apt_2.0.2ubuntu0.2.dsc 2850 SHA512:42d09fd15c7c38e695ca2a4db810e488884938ba9a140a28ee04646a63983909c825944bdd3014e8a5d6ec52bb2e09b62f5b7af4861d580eabed38f1d20a0610
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.2ubuntu0.2.tar.xz' apt_2.0.2ubuntu0.2.tar.xz 2171832 SHA512:6de24ceea2e4ada7df66215cf1c281a8862884ac9564cd924ad1873ce65b7880873c45b3fb180a0f9516f32e6d3a3d46e5b80977a3cf60b933d0e45a9e7bae38
+'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.2ubuntu0.2.dsc' apt_2.0.2ubuntu0.2.dsc 2850 SHA512:42d09fd15c7c38e695ca2a4db810e488884938ba9a140a28ee04646a63983909c825944bdd3014e8a5d6ec52bb2e09b62f5b7af4861d580eabed38f1d20a0610
+'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.2ubuntu0.2.tar.xz' apt_2.0.2ubuntu0.2.tar.xz 2171832 SHA512:6de24ceea2e4ada7df66215cf1c281a8862884ac9564cd924ad1873ce65b7880873c45b3fb180a0f9516f32e6d3a3d46e5b80977a3cf60b933d0e45a9e7bae38
 ```
 
 ### `dpkg` source package: `attr=1:2.4.48-5`
