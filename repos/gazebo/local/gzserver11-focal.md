@@ -139,8 +139,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=2.0.2ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.2ubuntu0.2.dsc' apt_2.0.2ubuntu0.2.dsc 2850 SHA512:42d09fd15c7c38e695ca2a4db810e488884938ba9a140a28ee04646a63983909c825944bdd3014e8a5d6ec52bb2e09b62f5b7af4861d580eabed38f1d20a0610
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.2ubuntu0.2.tar.xz' apt_2.0.2ubuntu0.2.tar.xz 2171832 SHA512:6de24ceea2e4ada7df66215cf1c281a8862884ac9564cd924ad1873ce65b7880873c45b3fb180a0f9516f32e6d3a3d46e5b80977a3cf60b933d0e45a9e7bae38
+'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.2ubuntu0.2.dsc' apt_2.0.2ubuntu0.2.dsc 2850 SHA512:42d09fd15c7c38e695ca2a4db810e488884938ba9a140a28ee04646a63983909c825944bdd3014e8a5d6ec52bb2e09b62f5b7af4861d580eabed38f1d20a0610
+'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.2ubuntu0.2.tar.xz' apt_2.0.2ubuntu0.2.tar.xz 2171832 SHA512:6de24ceea2e4ada7df66215cf1c281a8862884ac9564cd924ad1873ce65b7880873c45b3fb180a0f9516f32e6d3a3d46e5b80977a3cf60b933d0e45a9e7bae38
 ```
 
 ### `dpkg` source package: `armadillo=1:9.800.4+dfsg-1build1`
@@ -1773,13 +1773,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-common3/copyright`)
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-common3=3.10.0-1~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-common3/ignition-common3_3.10.0-1~focal.dsc' ignition-common3_3.10.0-1~focal.dsc 1891 SHA256:f409b3fad1b495ff4eb9bc64467c535506b718b66a44dbaf84e18a4f48f613bc
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-common3/ignition-common3_3.10.0-1~focal.tar.xz' ignition-common3_3.10.0-1~focal.tar.xz 6692240 SHA256:bb9a66303fc6bc66615a71573fe8e06437162fd065de69fe1dd91b2abdb29ed8
-```
 
 ### `dpkg` source package: `ignition-fuel-tools4=4.3.0-1~focal`
 
