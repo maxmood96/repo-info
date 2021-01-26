@@ -1,10 +1,10 @@
-# `openjdk:16-ea-32-jdk-oraclelinux7`
+# `openjdk:16-ea-33-jdk-oraclelinux7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2b4cd894cf107d9804fad7c5e436c478223faf92d58186be2c3b13e7c765dc74`
-- Created: `2021-01-15T23:24:03.333305505Z`
-- Virtual Size: ~ 490.29 Mb  
+- Image ID: `sha256:56065b59c7de0c081ee890ad4d39b046e96cf0f99544949505cf7b071ea74192`
+- Created: `2021-01-23T01:24:21.367745653Z`
+- Virtual Size: ~ 490.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/java/openjdk-16/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.UTF-8`
   - `JAVA_HOME=/usr/java/openjdk-16`
-  - `JAVA_VERSION=16-ea+32`
+  - `JAVA_VERSION=16-ea+33`
 
 ## `rpm` (`.rpm`-based packages)
 
