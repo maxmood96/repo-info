@@ -3306,14 +3306,9 @@ Licenses: (parsed from: `/usr/share/doc/libsndfile1/copyright`)
 
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsndfile=1.0.25-10ubuntu0.16.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsndfile/libsndfile_1.0.25-10ubuntu0.16.04.2.dsc' libsndfile_1.0.25-10ubuntu0.16.04.2.dsc 2260 SHA512:18c933bf5d1836afbf54e0ab8a3401bf46602b2be1385a5bc16bf2fafccadbd6dc3888ce3a436435bc4414740120fe10c59faaff4867e44d543bde098cd36ff2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsndfile/libsndfile_1.0.25.orig.tar.gz' libsndfile_1.0.25.orig.tar.gz 1060692 SHA512:4ca9780ed0a915aca8a10ef91bf4bf48b05ecb85285c2c3fe7eef1d46d3e0747e61416b6bddbef369bd69adf4b796ff5f61380e0bc998906b170a93341ba6f78
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsndfile/libsndfile_1.0.25-10ubuntu0.16.04.2.debian.tar.xz' libsndfile_1.0.25-10ubuntu0.16.04.2.debian.tar.xz 20616 SHA512:5d1076a90aa6cfbd7b17e4e8a97213ad9a1288929dbdd5521fe9bec17b8365194f88a935a211120cc9ffc6ecadec1b6ddc84f7de5d08b44a3c259edda0c22de3
-```
 
 ### `dpkg` source package: `libsodium=1.0.8-5`
 
@@ -4088,14 +4083,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `GPL-2`
 - `redpine-signals`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-200.232
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-200.232.dsc' linux_4.4.0-200.232.dsc 11596 SHA512:f50087e03ceefcd787c8e0ecf1b8cd4400e49d6837da0e351e809f0fe6dbe6ffd5fbff0c2f64e9167bfe644208d83807ec65dffea9e575b3aa32a193f67b130e
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA512:28ef89b62f663f2d90b58274799b7ebeff04699f08d0b83f650b0de179d4ef354450c81ecda07522b493c43d5eb2d530fa0f552a2794d48f84878e05efa39cc3
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-200.232.diff.gz' linux_4.4.0-200.232.diff.gz 16904146 SHA512:b75129ed595bc79a9aeee1cbe90a7615cce90e96cd77478a0e5c676d2248ebb66d90ae128cd7c81ed63436d5bbe286aac0828b94913de35023692bc5c14b5577
-```
 
 ### `dpkg` source package: `llvm-toolchain-6.0=1:6.0-1ubuntu2~16.04.1`
 
