@@ -1,10 +1,10 @@
-# `wordpress:beta-5.6.0-php8.0-apache`
+# `wordpress:beta-5.6.1-RC1-php8.0-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:332efaf311605e5d4278a89437747afd763d7863a8b43e54eb8300b21d715746`
-- Created: `2021-01-21T20:56:53.84440069Z`
-- Virtual Size: ~ 518.37 Mb  
+- Image ID: `sha256:98c4f34fa9b457ee17ec1d24f4a6a407440009f5d1960356b40d3078f104e79d`
+- Created: `2021-01-29T05:00:20.581091597Z`
+- Virtual Size: ~ 518.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
