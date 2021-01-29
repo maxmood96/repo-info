@@ -2486,14 +2486,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2020f-0ubuntu0.20.10.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020f-0ubuntu0.20.10.1.dsc' tzdata_2020f-0ubuntu0.20.10.1.dsc 2149 SHA512:113693a43d1a18837c1c62508e796ce0de218307030d1697050467c63a390e029893ec9c93d4f0be31061bb36d6a3b23e169284321f0a55fa13fcd9d3f528129
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020f.orig.tar.gz' tzdata_2020f.orig.tar.gz 411739 SHA512:dd312def18c807452fda2e697514e2064c5f51ebdbedd0cfe6f231252c76ee5d4409f653b295ed5657b7d30b868690047fdb70a10942e69eaa40b77473e3f9ca
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020f-0ubuntu0.20.10.1.debian.tar.xz' tzdata_2020f-0ubuntu0.20.10.1.debian.tar.xz 165240 SHA512:e3b571a250fc9319b35fc9e8f9cd1152856cec2e0bc144e3512a76b846c7caa596073ac0b1c2af1e14d41ce7134ae8df4d732a7a69ef97de5bff2175e00a078a
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.06.17.1`
 

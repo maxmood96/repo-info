@@ -2948,14 +2948,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.8.0-40.45
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.8.0-40.45.dsc' linux_5.8.0-40.45.dsc 8184 SHA512:c195176bd6c577039a02726dd306966c24f104d07110463f770be89a8888b3f76df579f330d1e86cb68f9c713644b7afc65a7e2b65b52f1ea44d8dca2f2f16f6
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.8.0.orig.tar.gz' linux_5.8.0.orig.tar.gz 178322327 SHA512:24b71be99aa6b599b237f26c891ed6ed5d255f81adf73cdc65d72d1497edd9303001fb4c4ee1bfd30be821f6883321cb17400493547c0023f4e9137d60ea4e97
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.8.0-40.45.diff.gz' linux_5.8.0-40.45.diff.gz 3614986 SHA512:8151746a190128b29bf3a656b35bdbc255daa5f6e50d39051ae1d6f0e0f6ddb58c5cadaacb74c9ab7a5e9df51ff1613bfa7d0b6ffc3b9ea219b339d5a620cbfa
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
 
@@ -4258,14 +4253,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2020f-0ubuntu0.20.10.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020f-0ubuntu0.20.10.1.dsc' tzdata_2020f-0ubuntu0.20.10.1.dsc 2149 SHA512:113693a43d1a18837c1c62508e796ce0de218307030d1697050467c63a390e029893ec9c93d4f0be31061bb36d6a3b23e169284321f0a55fa13fcd9d3f528129
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020f.orig.tar.gz' tzdata_2020f.orig.tar.gz 411739 SHA512:dd312def18c807452fda2e697514e2064c5f51ebdbedd0cfe6f231252c76ee5d4409f653b295ed5657b7d30b868690047fdb70a10942e69eaa40b77473e3f9ca
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020f-0ubuntu0.20.10.1.debian.tar.xz' tzdata_2020f-0ubuntu0.20.10.1.debian.tar.xz 165240 SHA512:e3b571a250fc9319b35fc9e8f9cd1152856cec2e0bc144e3512a76b846c7caa596073ac0b1c2af1e14d41ce7134ae8df4d732a7a69ef97de5bff2175e00a078a
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.06.17.1`
 

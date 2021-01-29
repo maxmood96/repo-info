@@ -1817,21 +1817,13 @@ Licenses: (parsed from: `/usr/share/doc/libilmbase-dev/copyright`, `/usr/share/d
 - `boost`
 - `ilmbase`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ilmbase=2.5.3-2
-'http://deb.debian.org/debian/pool/main/i/ilmbase/ilmbase_2.5.3-2.dsc' ilmbase_2.5.3-2.dsc 2468 SHA256:30d4cd0cf76475ce83db4726dd859b4b391ad903eb0c53e04175c35968695696
-'http://deb.debian.org/debian/pool/main/i/ilmbase/ilmbase_2.5.3.orig.tar.gz' ilmbase_2.5.3.orig.tar.gz 27534825 SHA256:6a6525e6e3907715c6a55887716d7e42d09b54d2457323fcee35a0376960bebf
-'http://deb.debian.org/debian/pool/main/i/ilmbase/ilmbase_2.5.3.orig.tar.gz.asc' ilmbase_2.5.3.orig.tar.gz.asc 287 SHA256:a2c4ac5151789903ca8ab3093a2798491463ccf2abfd003a20f96453e505dd5f
-'http://deb.debian.org/debian/pool/main/i/ilmbase/ilmbase_2.5.3-2.debian.tar.xz' ilmbase_2.5.3-2.debian.tar.xz 14304 SHA256:0ad17f0376a146819aa0652f46b2ebb0b2f6458903274dfbfb5fdbc0216a633b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ilmbase/2.5.3-2/
 
-- https://sources.debian.net/src/ilmbase/2.5.3-2/ (for browsing the source)
-- https://sources.debian.net/src/ilmbase/2.5.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ilmbase/2.5.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imagemagick=8:6.9.11.24+dfsg-1`
 
@@ -3747,20 +3739,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `X11`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.10.4-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.4-1.dsc' linux_5.10.4-1.dsc 194929 SHA256:b58cfa50674272129f26b236a5c5d5195f57d83e0ab06e5e9f80bbd726233b40
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.4.orig.tar.xz' linux_5.10.4.orig.tar.xz 121437192 SHA256:9bb96abf9766ad35d06ae40f0328626bba2e3791947f3eba3d03879c29402c8f
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.4-1.debian.tar.xz' linux_5.10.4-1.debian.tar.xz 1292196 SHA256:b4ecb6c31f35a1d120a353ca3231fbb873a8c021ea9d155325d107f7d362726f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/5.10.4-1/
 
-- https://sources.debian.net/src/linux/5.10.4-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.10.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.10.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
@@ -4324,21 +4309,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenexr-dev/copyright`, `/usr/share/d
 - `BSD-3-clause`
 - `openexr`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openexr=2.5.3-2
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.5.3-2.dsc' openexr_2.5.3-2.dsc 2683 SHA256:ab67a65d797848b82aad47e065655f777a80f3115ec9e6b3b539aa817adae8ea
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.5.3.orig.tar.gz' openexr_2.5.3.orig.tar.gz 27534825 SHA256:6a6525e6e3907715c6a55887716d7e42d09b54d2457323fcee35a0376960bebf
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.5.3.orig.tar.gz.asc' openexr_2.5.3.orig.tar.gz.asc 287 SHA256:a2c4ac5151789903ca8ab3093a2798491463ccf2abfd003a20f96453e505dd5f
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.5.3-2.debian.tar.xz' openexr_2.5.3-2.debian.tar.xz 21400 SHA256:ee2e4cc45979d8da1cdd3ce0462a1df7ab6dca9214ac0a8bbbfe2987504dfa52
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openexr/2.5.3-2/
 
-- https://sources.debian.net/src/openexr/2.5.3-2/ (for browsing the source)
-- https://sources.debian.net/src/openexr/2.5.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openexr/2.5.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjpeg2=2.3.1-1`
 
@@ -4384,20 +4361,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.56+dfsg-1
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.56+dfsg-1.dsc' openldap_2.4.56+dfsg-1.dsc 3061 SHA256:e9c0f2ec40b811b2c88b034bafc68c70fce630db36900aefc1d166820103a6bf
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.56+dfsg.orig.tar.gz' openldap_2.4.56+dfsg.orig.tar.gz 5054166 SHA256:868bf5a6b2c6ed4b525b88cb725f5782657c3a95dd27cb09525ab47e8d736d81
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.56+dfsg-1.debian.tar.xz' openldap_2.4.56+dfsg-1.debian.tar.xz 168016 SHA256:1f31919bca235c94814963a862b9d5c0697028cc33e908d6aae973749e4949bc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openldap/2.4.56+dfsg-1/
 
-- https://sources.debian.net/src/openldap/2.4.56+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.4.56+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.4.56+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssh=1:8.4p1-3`
 

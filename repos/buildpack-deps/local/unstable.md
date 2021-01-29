@@ -3058,20 +3058,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 - `Unlicense,`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.50.2+dfsg-1
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.50.2+dfsg-1.dsc' librsvg_2.50.2+dfsg-1.dsc 2963 SHA256:2797e965cb6c60e77312ea0324f0c2d7bf546940389b6dc9c4dd640f98d85411
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.50.2+dfsg.orig.tar.xz' librsvg_2.50.2+dfsg.orig.tar.xz 13703308 SHA256:329caa20ee437b7155254ec2c694aa568dfa5be800a2583e5f19f58dcf9e04a0
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.50.2+dfsg-1.debian.tar.xz' librsvg_2.50.2+dfsg-1.debian.tar.xz 30372 SHA256:49fc6045e2fdf5140a6556defc4e41f4ccb0d632b5e494653d6ebe9cbd9ca4a5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/librsvg/2.50.2+dfsg-1/
 
-- https://sources.debian.net/src/librsvg/2.50.2+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/librsvg/2.50.2+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/librsvg/2.50.2+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.5.1-1`
 
@@ -4425,20 +4418,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc
 - `ZLIB`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjpeg2=2.3.1-1
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.3.1-1.dsc' openjpeg2_2.3.1-1.dsc 2585 SHA256:5d7d50db6a138c9f7a92563375cd95955651f63131a765e83e1722ef4aa72b1c
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.3.1.orig.tar.xz' openjpeg2_2.3.1.orig.tar.xz 1381768 SHA256:69d39843a25f1a482e1b568fd042eb34837ffc0d708ab7717edeb52e592ecbeb
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.3.1-1.debian.tar.xz' openjpeg2_2.3.1-1.debian.tar.xz 18456 SHA256:ae77564e1fb581fbed5a6bc09e6948de018f0c457f6b7c9d34721985d236c9fe
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openjpeg2/2.3.1-1/
 
-- https://sources.debian.net/src/openjpeg2/2.3.1-1/ (for browsing the source)
-- https://sources.debian.net/src/openjpeg2/2.3.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjpeg2/2.3.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.56+dfsg-1`
 

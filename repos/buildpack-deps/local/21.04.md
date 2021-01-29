@@ -1292,14 +1292,9 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gzip=1.10-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10-2ubuntu2.dsc' gzip_1.10-2ubuntu2.dsc 2074 SHA512:584fff23ee573aa9d677c0fa08ec7dda1adaee1b282aeb074769b9ecc0fdd9ded07c496d9fffdc6758414974f2d5e26578a0d422bfeb131fb6009c59f05d13a8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10.orig.tar.gz' gzip_1.10.orig.tar.gz 1201421 SHA512:7939043e74554ced0c1c05d354ab4eb36cd6dce89ad79d02ccdc5ed6b7ee390759689b2d47c07227b9b44a62851afe7c76c4cae9f92527d999f3f1b4df1cccff
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10-2ubuntu2.debian.tar.xz' gzip_1.10-2ubuntu2.debian.tar.xz 33904 SHA512:015aed9693eb925cb0557c87762ecbae01b08c090946d7199d0e1428a4f378f8dfb85c2dcfeedd0fa2a1c329b6ecc5bac560b8ff760bdaffd01c27e3edd334cf
-```
 
 ### `dpkg` source package: `harfbuzz=2.6.7-1ubuntu1`
 
@@ -1499,13 +1494,13 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.59
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.59.dsc' init-system-helpers_1.59.dsc 1896 SHA512:34b6612cd4bc55991cebce066052f45ff2c79d8aa3656443de994eb6c42a0d1f5bc671a3dfb0962e7e55436dd5ebeb29e8763e78b457abacfe62cf42407022a2
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.59.tar.xz' init-system-helpers_1.59.tar.xz 40720 SHA512:634eb90830113fb696458406b9d044eae2f154cfe075f41747dd732d26f6e57e59c6e3e54caaec841cf77aae9a375698cd5e23f97a0393318b52add03c0a3a22
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/init-system-helpers/1.59/
+
 
 ### `dpkg` source package: `isl=0.23-1`
 
@@ -3378,14 +3373,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.56+dfsg-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.56+dfsg-1ubuntu1.dsc' openldap_2.4.56+dfsg-1ubuntu1.dsc 3155 SHA512:27daa004808b784be8db526ceec3119f69858fe44c42179f12a2c7c444a258285d81ef7724ea9ab02a9bfb5a1daaf4d376a246e31c6f6b0977e9312adc84cec7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.56+dfsg.orig.tar.gz' openldap_2.4.56+dfsg.orig.tar.gz 5054166 SHA512:6dcd8f9297c2ef5424ece69640bb0e7d23d925ac18fc219ff1e462549e63a927f6ecb70d56638458ec1cc92fe18399dd4672c7c47b15003372c7f94062eb8012
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.56+dfsg-1ubuntu1.debian.tar.xz' openldap_2.4.56+dfsg-1ubuntu1.debian.tar.xz 182140 SHA512:43a5315d43e5ecd38aaffe8e03bea8b28ab02e5017b798b0c2b2dc1704d08922fe9533aeaaf8f8432f5c2ed6e0227fdc05a586e6bc0d99b9601d4d8832cdf23c
-```
 
 ### `dpkg` source package: `openssh=1:8.4p1-3`
 
@@ -3500,14 +3490,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.46.2-3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.46.2-3.dsc' pango1.0_1.46.2-3.dsc 3542 SHA512:80dabc6b570ead14f54c924121f963c792d600c50469e07ea2e91601208582fd3bd9aa181dadda199e2fa3abedb06f637147482bdd9815cee9ff15cafd78cd5d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.46.2.orig.tar.xz' pango1.0_1.46.2.orig.tar.xz 535108 SHA512:84308b217e5e0f80d7342b95fba0591788177b5954634aaaf92779a30d2f76dc757ba99607d951bf01478d2564a6480ecaa3f50853320d3a6b1f1145200d275e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.46.2-3.debian.tar.xz' pango1.0_1.46.2-3.debian.tar.xz 38956 SHA512:c72f642423a5d367a09df48572da691b740e252391d9b56623ff5677f5d35fe8d68cce8a07c45a270142a2af43049384d3677baf99141a6bf77080be8ca1a6d7
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pango1.0/1.46.2-3/
+
 
 ### `dpkg` source package: `patch=2.7.6-7`
 
@@ -4147,15 +4136,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2020f-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020f-1ubuntu2.dsc' tzdata_2020f-1ubuntu2.dsc 2358 SHA512:5c001c3d152626345ba3851da0769ed2f426c7a4e56538d903e7e0ccce62294a48e70b6915b68cde8352dd4156c2a11f668e6c40917eeaea9d8f1d3d668124da
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020f.orig.tar.gz' tzdata_2020f.orig.tar.gz 411739 SHA512:dd312def18c807452fda2e697514e2064c5f51ebdbedd0cfe6f231252c76ee5d4409f653b295ed5657b7d30b868690047fdb70a10942e69eaa40b77473e3f9ca
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020f.orig.tar.gz.asc' tzdata_2020f.orig.tar.gz.asc 833 SHA512:2955c999900878eac5d620c9afba363e01197c502286e85643c643e5a82c67c0c0a24bb2381a17e305079523c419e33ef9fdb2e276ad53ccfab368b61de497b5
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2020f-1ubuntu2.debian.tar.xz' tzdata_2020f-1ubuntu2.debian.tar.xz 165148 SHA512:0db241ff10e9782ae009ca7aad5e1a0d0eb0779833437ab1697cd0c0211cb23da0cfcdcb0b60f05e585ff33094ca4ff25174c046c4773c9cda30704bebe665d1
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.06.17.1`
 
