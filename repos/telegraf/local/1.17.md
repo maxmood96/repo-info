@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:372c5b23db5c4c32cb8a4f96700df4a27f9910f7104fbd2d032ef2e4097d3a6d`
-- Created: `2021-01-13T04:54:06.887259901Z`
-- Virtual Size: ~ 279.87 Mb  
+- Image ID: `sha256:2fe56be3a20fc85dc845c8c73e677bb9c51a4757cb632af00f18c63b27a3ce05`
+- Created: `2021-01-29T04:32:25.31959078Z`
+- Virtual Size: ~ 280.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["telegraf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `TELEGRAF_VERSION=1.17.0`
+  - `TELEGRAF_VERSION=1.17.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2489,11 +2489,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tcp-wrappers/7.6.q-28/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tcp-wrappers/7.6.q-28/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `telegraf=1.17.0-1`
+### `dpkg` source package: `telegraf=1.17.2-1`
 
 Binary Packages:
 
-- `telegraf=1.17.0-1`
+- `telegraf=1.17.2-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2513,21 +2513,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2020e-0+deb10u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2020e-0+deb10u1.dsc' tzdata_2020e-0+deb10u1.dsc 2264 SHA256:5a71897dde8b6c3ff6240ebe0c550b2287432e2a3f30f8eccc47722e3f809a00
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2020e.orig.tar.gz' tzdata_2020e.orig.tar.gz 411619 SHA256:0be1ba329eae29ae1b54057c3547b3e672f73b3ae7643aa87dac85122bec037e
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2020e.orig.tar.gz.asc' tzdata_2020e.orig.tar.gz.asc 833 SHA256:3d3f95883bdfb1a9b06a1f8a1010378421e6d603a281f3d3085ce84a10e0e722
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2020e-0+deb10u1.debian.tar.xz' tzdata_2020e-0+deb10u1.debian.tar.xz 106176 SHA256:9c895355a497621b27dbcdf74271efc3512136b1a07d07b0e3c179b5582beda3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2020e-0+deb10u1/
 
-- https://sources.debian.net/src/tzdata/2020e-0+deb10u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2020e-0+deb10u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2020e-0+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.33.1-0.1`
 
