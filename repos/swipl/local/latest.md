@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9e4953c9e2530ce41b40ee3d2bdadaa509ea28e48005fe21b80a6c6cf186d92d`
-- Created: `2021-01-12T19:33:15.440587361Z`
-- Virtual Size: ~ 147.56 Mb  
+- Image ID: `sha256:0b307188c3983cf629d7318844e634571a77ca3d80b216580e9db7f628a6274a`
+- Created: `2021-01-27T21:15:43.411202256Z`
+- Virtual Size: ~ 147.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["swipl"]`
