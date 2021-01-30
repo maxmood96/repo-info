@@ -1,7 +1,7 @@
 ## `adoptopenjdk:15-jdk-openj9-windowsservercore-1809`
 
 ```console
-$ docker pull adoptopenjdk@sha256:efd5a316c0a833661a77b69ad55e9ab9d3c5e389da0c1d65dd6416b6afe4d8f8
+$ docker pull adoptopenjdk@sha256:4482ac4c58be42492fd81b7f8ab5517149c06c392211961150d230fff24896d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull adoptopenjdk@sha256:efd5a316c0a833661a77b69ad55e9ab9d3c5e389da0c1d
 ### `adoptopenjdk:15-jdk-openj9-windowsservercore-1809` - windows version 10.0.17763.1697; amd64
 
 ```console
-$ docker pull adoptopenjdk@sha256:1d42be7556c2b7e781a1626022ceba04e16d367cd8442fea8d2afcd61b792784
+$ docker pull adoptopenjdk@sha256:9d1ecec75531117a0bb83bed77e7a6d45707a8fdf1194c06daa4c983c2766986
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.8 GB (2817903278 bytes)**  
+-	Total Size: **2.8 GB (2818748961 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c46e976671525ecfab4048c2e250dc1f2175b10b1f21137c5ef799d32dfa3d70`
+-	Image ID: `sha256:3b0c0b98cf230d669b24a3fb4c5f3cc685cc355696ef18de35c8770bf0b8f350`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -29,13 +29,13 @@ RUN Apply image 1809-RTM-amd64
 RUN Install update 1809-amd64
 # Wed, 13 Jan 2021 13:13:16 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 13 Jan 2021 22:54:02 GMT
-ENV JAVA_VERSION=jdk-15.0.1+9_openj9-0.23.0
-# Wed, 13 Jan 2021 22:56:39 GMT
-RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.1%2B9_openj9-0.23.0/OpenJDK15U-jdk_x64_windows_openj9_15.0.1_9_openj9-0.23.0.msi ...');     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     wget https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.1%2B9_openj9-0.23.0/OpenJDK15U-jdk_x64_windows_openj9_15.0.1_9_openj9-0.23.0.msi -O 'openjdk.msi';     Write-Host ('Verifying sha256 (6745ab134f86bdb27154800fd0164a6d957c31a78a2cd812234d3c25639b0bf9) ...');     if ((Get-FileHash openjdk.msi -Algorithm sha256).Hash -ne '6745ab134f86bdb27154800fd0164a6d957c31a78a2cd812234d3c25639b0bf9') {             Write-Host 'FAILED!';             exit 1;     };         New-Item -ItemType Directory -Path C:\temp | Out-Null;         Write-Host 'Installing using MSI ...';     Start-Process -FilePath "msiexec.exe" -ArgumentList '/i', 'openjdk.msi', '/L*V', 'C:\temp\OpenJDK.log',     '/quiet', 'ADDLOCAL=FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome' -Wait -Passthru;     Remove-Item -Path C:\temp -Recurse | Out-Null;     Write-Host 'Removing openjdk.msi ...';     Remove-Item openjdk.msi -Force
-# Wed, 13 Jan 2021 22:56:40 GMT
+# Sat, 30 Jan 2021 02:01:36 GMT
+ENV JAVA_VERSION=jdk-15.0.2+7_openj9-0.24.0
+# Sat, 30 Jan 2021 02:04:02 GMT
+RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.2%2B7_openj9-0.24.0/OpenJDK15U-jdk_x64_windows_openj9_15.0.2_7_openj9-0.24.0.msi ...');     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     wget https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.2%2B7_openj9-0.24.0/OpenJDK15U-jdk_x64_windows_openj9_15.0.2_7_openj9-0.24.0.msi -O 'openjdk.msi';     Write-Host ('Verifying sha256 (f366ebd9f9b4243a86bbf72975f9357a7fa6aec5dac40af4edd4c97ddb4d28b8) ...');     if ((Get-FileHash openjdk.msi -Algorithm sha256).Hash -ne 'f366ebd9f9b4243a86bbf72975f9357a7fa6aec5dac40af4edd4c97ddb4d28b8') {             Write-Host 'FAILED!';             exit 1;     };         New-Item -ItemType Directory -Path C:\temp | Out-Null;         Write-Host 'Installing using MSI ...';     Start-Process -FilePath "msiexec.exe" -ArgumentList '/i', 'openjdk.msi', '/L*V', 'C:\temp\OpenJDK.log',     '/quiet', 'ADDLOCAL=FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome' -Wait -Passthru;     Remove-Item -Path C:\temp -Recurse | Out-Null;     Write-Host 'Removing openjdk.msi ...';     Remove-Item openjdk.msi -Force
+# Sat, 30 Jan 2021 02:04:04 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle
-# Wed, 13 Jan 2021 22:56:41 GMT
+# Sat, 30 Jan 2021 02:04:05 GMT
 CMD ["jshell"]
 ```
 
@@ -50,19 +50,19 @@ CMD ["jshell"]
 		Last Modified: Wed, 13 Jan 2021 13:17:19 GMT  
 		Size: 1.2 KB (1154 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74cd0a4f8118706ac36acb06c2dd21098e835a5eb24d5cf957abe72c3c47dc0f`  
-		Last Modified: Wed, 13 Jan 2021 23:38:13 GMT  
-		Size: 1.1 KB (1137 bytes)  
+	-	`sha256:61ffb13abd1d90a4766a5d1047adcb1b2622366b5be0a504850c8de2fcb922c7`  
+		Last Modified: Sat, 30 Jan 2021 02:51:00 GMT  
+		Size: 1.3 KB (1330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91b941f0981ead5a08599201d776eaa44f44b4afdb1b39b51c7654dffdf53a59`  
-		Last Modified: Wed, 13 Jan 2021 23:45:26 GMT  
-		Size: 382.1 MB (382126616 bytes)  
+	-	`sha256:5dfbfa46aa649dcf5b0eaaccaab3f846e7095297a7c01f392d5288216b7c33ec`  
+		Last Modified: Sat, 30 Jan 2021 02:51:29 GMT  
+		Size: 383.0 MB (382971693 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9e0d922d335e5afe33484d74c77bba668e6ae4802a719b1053a52163b65b7df`  
-		Last Modified: Wed, 13 Jan 2021 23:38:14 GMT  
-		Size: 1.2 KB (1154 bytes)  
+	-	`sha256:71f140aec14739ab8b3df53ce8a2947a56b9b7ed185a4e4f0e172937c96a8bff`  
+		Last Modified: Sat, 30 Jan 2021 02:51:00 GMT  
+		Size: 1.4 KB (1355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a9b48cefb63819ef60e0bcefa2dc09c662dfea4c1e1951166b7c516e95233a5`  
-		Last Modified: Wed, 13 Jan 2021 23:38:14 GMT  
-		Size: 1.1 KB (1122 bytes)  
+	-	`sha256:05a70157f5a5b6b889eda763baf53d7320f00c036e92f4f9a82475848ca93a06`  
+		Last Modified: Sat, 30 Jan 2021 02:51:00 GMT  
+		Size: 1.3 KB (1334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

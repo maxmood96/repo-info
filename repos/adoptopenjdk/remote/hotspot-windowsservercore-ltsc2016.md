@@ -1,7 +1,7 @@
 ## `adoptopenjdk:hotspot-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull adoptopenjdk@sha256:31011675ea5bf677c9e5df194261506dbae24ef0a8c23b516ca1334023b06af1
+$ docker pull adoptopenjdk@sha256:ac4e53935cbf93146841e8634942700680aaef974a9792b51f72d1edb8daaec6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull adoptopenjdk@sha256:31011675ea5bf677c9e5df194261506dbae24ef0a8c23b
 ### `adoptopenjdk:hotspot-windowsservercore-ltsc2016` - windows version 10.0.14393.4169; amd64
 
 ```console
-$ docker pull adoptopenjdk@sha256:d41fe9e623af5642a4bd1a8fd286f95b3209558cf4f6c87481f306747a0637a5
+$ docker pull adoptopenjdk@sha256:5b19e8bf46bd5a2b9ddfe4b1a1d664cf697997ce37a8cb2bf6eed5e33b094a25
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.2 GB (6172328170 bytes)**  
+-	Total Size: **6.2 GB (6172525120 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cecc5570c2dda81a109aac90d60b6ebc8ec9e354d6a98825acc144da25f5f307`
+-	Image ID: `sha256:733dd4648d13484bb2119bcff1ea0020f2fe4cf8edc7e75cb75b9ba7e7edeca3`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -29,11 +29,11 @@ RUN Apply image 1607-RTM-amd64
 RUN Install update ltsc2016-amd64
 # Wed, 13 Jan 2021 13:37:06 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 13 Jan 2021 22:18:18 GMT
-ENV JAVA_VERSION=jdk-15.0.1+9
-# Wed, 13 Jan 2021 22:21:30 GMT
-RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.1%2B9/OpenJDK15U-jdk_x64_windows_hotspot_15.0.1_9.msi ...');     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     wget https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.1%2B9/OpenJDK15U-jdk_x64_windows_hotspot_15.0.1_9.msi -O 'openjdk.msi';     Write-Host ('Verifying sha256 (7254fbe32e77a6cb8c6e36fd1da8ee0744fb323addb0bfda4c32a4d6cf9d22ce) ...');     if ((Get-FileHash openjdk.msi -Algorithm sha256).Hash -ne '7254fbe32e77a6cb8c6e36fd1da8ee0744fb323addb0bfda4c32a4d6cf9d22ce') {             Write-Host 'FAILED!';             exit 1;     };         New-Item -ItemType Directory -Path C:\temp | Out-Null;         Write-Host 'Installing using MSI ...';     Start-Process -FilePath "msiexec.exe" -ArgumentList '/i', 'openjdk.msi', '/L*V', 'C:\temp\OpenJDK.log',     '/quiet', 'ADDLOCAL=FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome' -Wait -Passthru;     Remove-Item -Path C:\temp -Recurse | Out-Null;     Write-Host 'Removing openjdk.msi ...';     Remove-Item openjdk.msi -Force
-# Wed, 13 Jan 2021 22:21:31 GMT
+# Sat, 30 Jan 2021 01:35:56 GMT
+ENV JAVA_VERSION=jdk-15.0.2+7
+# Sat, 30 Jan 2021 01:39:04 GMT
+RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.2%2B7/OpenJDK15U-jdk_x64_windows_hotspot_15.0.2_7.msi ...');     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     wget https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.2%2B7/OpenJDK15U-jdk_x64_windows_hotspot_15.0.2_7.msi -O 'openjdk.msi';     Write-Host ('Verifying sha256 (bff27f4c7b8b562e5ab11b43b1fd257be89fab5779a68fb5cbef1d42a95ff449) ...');     if ((Get-FileHash openjdk.msi -Algorithm sha256).Hash -ne 'bff27f4c7b8b562e5ab11b43b1fd257be89fab5779a68fb5cbef1d42a95ff449') {             Write-Host 'FAILED!';             exit 1;     };         New-Item -ItemType Directory -Path C:\temp | Out-Null;         Write-Host 'Installing using MSI ...';     Start-Process -FilePath "msiexec.exe" -ArgumentList '/i', 'openjdk.msi', '/L*V', 'C:\temp\OpenJDK.log',     '/quiet', 'ADDLOCAL=FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome' -Wait -Passthru;     Remove-Item -Path C:\temp -Recurse | Out-Null;     Write-Host 'Removing openjdk.msi ...';     Remove-Item openjdk.msi -Force
+# Sat, 30 Jan 2021 01:39:06 GMT
 CMD ["jshell"]
 ```
 
@@ -49,15 +49,15 @@ CMD ["jshell"]
 		Last Modified: Wed, 13 Jan 2021 15:10:27 GMT  
 		Size: 1.2 KB (1164 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43f872b275848bfad3e1d392677f28c74848868bf387c5e3e2590b87a142f77b`  
-		Last Modified: Wed, 13 Jan 2021 23:26:52 GMT  
-		Size: 1.1 KB (1132 bytes)  
+	-	`sha256:3ec2ca503ec4c498611f6b6dcaa9050722abe98059555e1776999190ef53c548`  
+		Last Modified: Sat, 30 Jan 2021 02:31:27 GMT  
+		Size: 1.3 KB (1309 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f46d8785f38a89e48ba89a2a18904615247d99413fe97b739b2fe026d667d44`  
-		Last Modified: Wed, 13 Jan 2021 23:27:22 GMT  
-		Size: 378.4 MB (378430680 bytes)  
+	-	`sha256:81f211ae4bf0c0d2b96078f6e188b44b04ebe270d15fe545e8e20fb56700fb97`  
+		Last Modified: Sat, 30 Jan 2021 02:32:04 GMT  
+		Size: 378.6 MB (378627322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a165c8d09e7e65c343fac0707cd9a0964d4e49722ec4a5d15e4e1bfcb636cae`  
-		Last Modified: Wed, 13 Jan 2021 23:26:52 GMT  
-		Size: 1.2 KB (1152 bytes)  
+	-	`sha256:25138d445aa6e119394a81c0e6cd22d6c1b8fca7b2eefe68877cc0b353bb4a74`  
+		Last Modified: Sat, 30 Jan 2021 02:31:27 GMT  
+		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

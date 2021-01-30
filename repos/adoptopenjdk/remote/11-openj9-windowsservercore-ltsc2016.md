@@ -1,7 +1,7 @@
 ## `adoptopenjdk:11-openj9-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull adoptopenjdk@sha256:092c95e53b3bc9726ed15f47a2120258fbdcc418ea0f5c94b42011d6d9703a50
+$ docker pull adoptopenjdk@sha256:d948f364ea85b84896cbd0d447114c696d0a970e33eddc0cfbff795b8440e9c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull adoptopenjdk@sha256:092c95e53b3bc9726ed15f47a2120258fbdcc418ea0f5c
 ### `adoptopenjdk:11-openj9-windowsservercore-ltsc2016` - windows version 10.0.14393.4169; amd64
 
 ```console
-$ docker pull adoptopenjdk@sha256:51432ecc21c3baf05889307bcdbd77e7fd461916c48748e8e6257210d8584224
+$ docker pull adoptopenjdk@sha256:6e6ba7d68a4ef1ce793448aeae3f409b6a2bf0e10f0cf8136d4a7996f747ab17
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.2 GB (6174089838 bytes)**  
+-	Total Size: **6.2 GB (6174290876 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:89ca8eaf74ad5f322116762b6ff245e6a2373754e6c83c3bc144a5cef060a644`
+-	Image ID: `sha256:5b9c1405d21bfe8269fa287b7abd42a3e4a0b54288f9726d98068739cf5e1d4a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -29,13 +29,13 @@ RUN Apply image 1607-RTM-amd64
 RUN Install update ltsc2016-amd64
 # Wed, 13 Jan 2021 13:37:06 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 13 Jan 2021 22:36:53 GMT
-ENV JAVA_VERSION=jdk-11.0.9+11_openj9-0.23.0
-# Wed, 13 Jan 2021 22:40:09 GMT
-RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.9%2B11_openj9-0.23.0/OpenJDK11U-jdk_x64_windows_openj9_11.0.9_11_openj9-0.23.0.msi ...');     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.9%2B11_openj9-0.23.0/OpenJDK11U-jdk_x64_windows_openj9_11.0.9_11_openj9-0.23.0.msi -O 'openjdk.msi';     Write-Host ('Verifying sha256 (c4885100b0565a63dc3e21a47c6e344ea863ec533d67664e06494385c5923cb3) ...');     if ((Get-FileHash openjdk.msi -Algorithm sha256).Hash -ne 'c4885100b0565a63dc3e21a47c6e344ea863ec533d67664e06494385c5923cb3') {             Write-Host 'FAILED!';             exit 1;     };         New-Item -ItemType Directory -Path C:\temp | Out-Null;         Write-Host 'Installing using MSI ...';     Start-Process -FilePath "msiexec.exe" -ArgumentList '/i', 'openjdk.msi', '/L*V', 'C:\temp\OpenJDK.log',     '/quiet', 'ADDLOCAL=FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome' -Wait -Passthru;     Remove-Item -Path C:\temp -Recurse | Out-Null;     Write-Host 'Removing openjdk.msi ...';     Remove-Item openjdk.msi -Force
-# Wed, 13 Jan 2021 22:40:10 GMT
+# Sat, 30 Jan 2021 01:54:28 GMT
+ENV JAVA_VERSION=jdk-11.0.10+9_openj9-0.24.0
+# Sat, 30 Jan 2021 01:57:32 GMT
+RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.10%2B9_openj9-0.24.0/OpenJDK11U-jdk_x64_windows_openj9_11.0.10_9_openj9-0.24.0.msi ...');     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     wget https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.10%2B9_openj9-0.24.0/OpenJDK11U-jdk_x64_windows_openj9_11.0.10_9_openj9-0.24.0.msi -O 'openjdk.msi';     Write-Host ('Verifying sha256 (f0abd0ad0fcecb0afee310d19655db680b2758f015d26bbb28ca50eaf263b09c) ...');     if ((Get-FileHash openjdk.msi -Algorithm sha256).Hash -ne 'f0abd0ad0fcecb0afee310d19655db680b2758f015d26bbb28ca50eaf263b09c') {             Write-Host 'FAILED!';             exit 1;     };         New-Item -ItemType Directory -Path C:\temp | Out-Null;         Write-Host 'Installing using MSI ...';     Start-Process -FilePath "msiexec.exe" -ArgumentList '/i', 'openjdk.msi', '/L*V', 'C:\temp\OpenJDK.log',     '/quiet', 'ADDLOCAL=FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome' -Wait -Passthru;     Remove-Item -Path C:\temp -Recurse | Out-Null;     Write-Host 'Removing openjdk.msi ...';     Remove-Item openjdk.msi -Force
+# Sat, 30 Jan 2021 01:57:34 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle
-# Wed, 13 Jan 2021 22:40:10 GMT
+# Sat, 30 Jan 2021 01:57:35 GMT
 CMD ["jshell"]
 ```
 
@@ -51,19 +51,19 @@ CMD ["jshell"]
 		Last Modified: Wed, 13 Jan 2021 15:10:27 GMT  
 		Size: 1.2 KB (1164 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78a44801bccd0230b8f13bb549ea45256e2b79a9e0d3f310c745f7ae5c7cba6e`  
-		Last Modified: Wed, 13 Jan 2021 23:33:32 GMT  
-		Size: 1.1 KB (1127 bytes)  
+	-	`sha256:03c4ae13690ad5320bc9cc3176bcb07b03d9646974fe629628eadb9917585f22`  
+		Last Modified: Sat, 30 Jan 2021 02:48:09 GMT  
+		Size: 1.4 KB (1367 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45aea7e4ff276ca83c8bdd48c2ce8cf5a82ab806bda0e764e11633b39292b5e0`  
-		Last Modified: Wed, 13 Jan 2021 23:34:07 GMT  
-		Size: 380.2 MB (380191223 bytes)  
+	-	`sha256:bbc2747659c13bac2d99cb7ff920acef0bd661388bad3bedab77b4cf1cd256cb`  
+		Last Modified: Sat, 30 Jan 2021 02:48:38 GMT  
+		Size: 380.4 MB (380391605 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:631feff7356baf48188eab9e4da68a24b58a97c347817fa8d3e036741601728b`  
-		Last Modified: Wed, 13 Jan 2021 23:33:31 GMT  
-		Size: 1.1 KB (1132 bytes)  
+	-	`sha256:dde958d1eb11156e3c4092f23b7c9314ce61d3e11d0321b9d4e457659283592b`  
+		Last Modified: Sat, 30 Jan 2021 02:48:09 GMT  
+		Size: 1.4 KB (1364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f9e593c8f2dc232bb2227d5db238036517a66d6e3437c26de94e63f52d0beba`  
-		Last Modified: Wed, 13 Jan 2021 23:33:33 GMT  
-		Size: 1.1 KB (1150 bytes)  
+	-	`sha256:5427802abe941287fc3c141ec4b11e277baf697bebbc3a8a68ae7cb9f222bf3a`  
+		Last Modified: Sat, 30 Jan 2021 02:48:09 GMT  
+		Size: 1.3 KB (1334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
