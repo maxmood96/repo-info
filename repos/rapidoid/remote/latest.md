@@ -1,7 +1,7 @@
 ## `rapidoid:latest`
 
 ```console
-$ docker pull rapidoid@sha256:97cd9ac93ebad51109d241c6fc6815271772c17723609329d2523e625cd5d3c3
+$ docker pull rapidoid@sha256:5c4ea426e8151756ed9d5796aeefed783f228d3b220acded47ef3f76256a3344
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull rapidoid@sha256:97cd9ac93ebad51109d241c6fc6815271772c17723609329d2
 ### `rapidoid:latest` - linux; amd64
 
 ```console
-$ docker pull rapidoid@sha256:7cea4c1a76130f22157f7a42ac55352014f0f78872e17db56b2076d42bf5f956
+$ docker pull rapidoid@sha256:a2ff81fe806b3e0236ae2e3db0023e773add322ec9c09272f995a168cf25b9a1
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **87.4 MB (87436983 bytes)**  
+-	Total Size: **88.0 MB (88040840 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:858cc443c604c173013fe5f6d5f8d63de5ac643913facd7b82b6f521d8282691`
+-	Image ID: `sha256:88a7f9a2a2e4abc30d2ca82d0cef914bb0b3a969334b202a86add55990c4a2d1`
 -	Entrypoint: `["\/opt\/entrypoint.sh"]`
 
 ```dockerfile
@@ -29,41 +29,41 @@ ADD file:422aca8901ae3d869a815051cea7f1e4c0204fad16884e7cd01da57d142f2e3a in /
 CMD ["bash"]
 # Tue, 12 Jan 2021 10:53:01 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 12 Jan 2021 10:53:01 GMT
-ENV LANG=C.UTF-8
-# Tue, 12 Jan 2021 11:00:19 GMT
+# Mon, 01 Feb 2021 19:56:56 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Tue, 12 Jan 2021 11:00:19 GMT
+# Mon, 01 Feb 2021 19:56:57 GMT
+RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
+# Mon, 01 Feb 2021 19:56:58 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 12 Jan 2021 11:00:20 GMT
-RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 21 Jan 2021 02:40:10 GMT
+# Mon, 01 Feb 2021 19:56:58 GMT
+ENV LANG=C.UTF-8
+# Mon, 01 Feb 2021 19:56:58 GMT
 ENV JAVA_VERSION=8u282
-# Thu, 21 Jan 2021 02:40:59 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | i386:x86-64) downloadUrl=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u282-b08/OpenJDK8U-jre_x64_linux_8u282b08.tar.gz ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O openjdk.tgz.asc "$downloadUrl.sign"; 	wget -O openjdk.tgz "$downloadUrl" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Thu, 21 Jan 2021 04:25:01 GMT
+# Mon, 01 Feb 2021 19:57:42 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u282-b08/OpenJDK8U-jre_x64_linux_8u282b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
+# Mon, 01 Feb 2021 22:15:27 GMT
 MAINTAINER Nikolche Mihajlovski
-# Thu, 21 Jan 2021 04:25:01 GMT
+# Mon, 01 Feb 2021 22:15:27 GMT
 ENV GPG_KEY=E306FEF548C686C23DC00242B9B08D8F616EF49C
-# Thu, 21 Jan 2021 04:25:01 GMT
+# Mon, 01 Feb 2021 22:15:27 GMT
 ENV RAPIDOID_JAR=/opt/rapidoid.jar
-# Thu, 21 Jan 2021 04:25:01 GMT
+# Mon, 01 Feb 2021 22:15:27 GMT
 ENV RAPIDOID_TMP=/tmp/rapidoid
-# Thu, 21 Jan 2021 04:25:02 GMT
+# Mon, 01 Feb 2021 22:15:27 GMT
 WORKDIR /opt
-# Thu, 21 Jan 2021 04:25:02 GMT
+# Mon, 01 Feb 2021 22:15:28 GMT
 EXPOSE 8888
-# Thu, 21 Jan 2021 04:25:02 GMT
+# Mon, 01 Feb 2021 22:15:28 GMT
 VOLUME [/data]
-# Thu, 21 Jan 2021 04:25:02 GMT
+# Mon, 01 Feb 2021 22:15:28 GMT
 ENV RAPIDOID_VERSION=5.4.6
-# Thu, 21 Jan 2021 04:25:03 GMT
+# Mon, 01 Feb 2021 22:15:28 GMT
 ENV RAPIDOID_URL=https://repo1.maven.org/maven2/org/rapidoid/rapidoid-platform/5.4.6/rapidoid-platform-5.4.6.jar
-# Thu, 21 Jan 2021 04:25:03 GMT
+# Mon, 01 Feb 2021 22:15:28 GMT
 COPY file:54eb4a0f21aca6721ebea0745a2cbfeb12c799c7a0902f588f490fc0afa8e8ea in /opt/ 
-# Thu, 21 Jan 2021 04:25:11 GMT
+# Mon, 01 Feb 2021 22:15:41 GMT
 RUN set -xe     && apt-get update     && apt-get install -y --no-install-recommends         ca-certificates curl dirmngr gnupg     && mkdir /platform     && mkdir -p "$RAPIDOID_TMP" 	&& curl -SL "$RAPIDOID_URL" -o $RAPIDOID_JAR 	&& curl -SL "$RAPIDOID_URL.asc" -o $RAPIDOID_JAR.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys $GPG_KEY 	&& gpg --batch --verify $RAPIDOID_JAR.asc $RAPIDOID_JAR 	&& rm -rf "$GNUPGHOME" 	&& rm "$RAPIDOID_JAR.asc" 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 21 Jan 2021 04:25:11 GMT
+# Mon, 01 Feb 2021 22:15:41 GMT
 ENTRYPOINT ["/opt/entrypoint.sh"]
 ```
 
@@ -76,21 +76,21 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 		Last Modified: Tue, 12 Jan 2021 11:07:22 GMT  
 		Size: 3.2 MB (3248558 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:70f86203e039c27f537e28e948fa433f363d37ce7a7a53cad8ee6b6191852082`  
-		Last Modified: Tue, 12 Jan 2021 11:18:23 GMT  
-		Size: 211.0 B  
+	-	`sha256:8bf659c946760b22203efd07517094398c96b09cf88600f4fa5246e91aeafe21`  
+		Last Modified: Mon, 01 Feb 2021 20:11:24 GMT  
+		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:514b3f6024bebb27e08a9091f4e6eea489e0ee61d2b533451a62a16ee358a829`  
-		Last Modified: Thu, 21 Jan 2021 02:52:09 GMT  
-		Size: 41.6 MB (41591012 bytes)  
+	-	`sha256:a0a1f3c619047861843d3b26e2dd68858d324eb1aed3d99c8f6a5077571ebbca`  
+		Last Modified: Mon, 01 Feb 2021 20:12:09 GMT  
+		Size: 41.6 MB (41590978 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f18c5e29e9231ebd397c90cd90fb504f468536de96e3d852b57198e986c7b6b5`  
-		Last Modified: Thu, 21 Jan 2021 04:25:22 GMT  
-		Size: 363.0 B  
+	-	`sha256:e60d2788be5dbe8bd39f18f2465ba8a9ddcf28444145e89fab3289dfcfbf8ce2`  
+		Last Modified: Mon, 01 Feb 2021 22:15:51 GMT  
+		Size: 366.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:23d567b28f5e7a9538958b8761149e1c31cccdc68add164284d7097f76176341`  
-		Last Modified: Thu, 21 Jan 2021 04:25:23 GMT  
-		Size: 15.5 MB (15488770 bytes)  
+	-	`sha256:ad54500a7bc8bc1f1a470714f5308f9ad80abb285ede629aec00142178f98da0`  
+		Last Modified: Mon, 01 Feb 2021 22:15:52 GMT  
+		Size: 16.1 MB (16092654 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rapidoid:latest` - linux; arm64 variant v8
