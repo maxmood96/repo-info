@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:029a4786372eb3e86d184e6ae10021e15b267d751239ae674f6088d19b336907`
-- Created: `2021-01-15T00:32:18.504085077Z`
+- Image ID: `sha256:90266c62c82136346c25c0ebbb7b6d7f7e2ff62c57b6b4e450e5746cd4cd5371`
+- Created: `2021-02-01T20:33:17.615414735Z`
 - Virtual Size: ~ 119.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -657,26 +657,26 @@ $ yumdownloader --quiet --source --urls nss-3.44.0-7.0.1.el6_10
 https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/nss-3.44.0-7.0.1.el6_10.src.rpm
 ```
 
-### `rpm` package: `nss-softokn-3.44.0-6.0.1.el6_10.x86_64`
+### `rpm` package: `nss-softokn-3.44.0-6.0.2.el6_10.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nss-softokn-3.44.0-6.0.1.el6_10
-https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/nss-softokn-3.44.0-6.0.1.el6_10.src.rpm
+$ yumdownloader --quiet --source --urls nss-softokn-3.44.0-6.0.2.el6_10
+https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/nss-softokn-3.44.0-6.0.2.el6_10.src.rpm
 ```
 
-### `rpm` package: `nss-softokn-freebl-3.44.0-6.0.1.el6_10.x86_64`
+### `rpm` package: `nss-softokn-freebl-3.44.0-6.0.2.el6_10.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls nss-softokn-freebl-3.44.0-6.0.1.el6_10
-https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/nss-softokn-3.44.0-6.0.1.el6_10.src.rpm
+$ yumdownloader --quiet --source --urls nss-softokn-freebl-3.44.0-6.0.2.el6_10
+https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/nss-softokn-3.44.0-6.0.2.el6_10.src.rpm
 ```
 
 ### `rpm` package: `nss-sysinit-3.44.0-7.0.1.el6_10.x86_64`
@@ -1009,15 +1009,15 @@ $ yumdownloader --quiet --source --urls sqlite-3.6.20-1.el6_7.2
 https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/sqlite-3.6.20-1.el6_7.2.src.rpm
 ```
 
-### `rpm` package: `tzdata-2020d-1.el6.noarch`
+### `rpm` package: `tzdata-2021a-1.el6.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls tzdata-2020d-1.el6.noarch
-https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/tzdata-2020d-1.el6.src.rpm
+$ yumdownloader --quiet --source --urls tzdata-2021a-1.el6.noarch
+https://yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64//getPackageSource/tzdata-2021a-1.el6.src.rpm
 ```
 
 ### `rpm` package: `ustr-1.0.4-9.1.el6.x86_64`
