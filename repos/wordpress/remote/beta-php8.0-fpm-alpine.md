@@ -1,7 +1,7 @@
 ## `wordpress:beta-php8.0-fpm-alpine`
 
 ```console
-$ docker pull wordpress@sha256:6d058287d4b6d9366b3db3ba7bb3d3695cf801334ce8455a1f59b52219b262c1
+$ docker pull wordpress@sha256:42bf00df7b7c69561a0c79a729b1167d2331749c8ff8dc59c585498c9c15142f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull wordpress@sha256:6d058287d4b6d9366b3db3ba7bb3d3695cf801334ce8455a1
 ### `wordpress:beta-php8.0-fpm-alpine` - linux; amd64
 
 ```console
-$ docker pull wordpress@sha256:18934dabf4a5cf1fa486f2f090d3cb9ac6b59e5245178f2ff4f3dcd5bdd05b83
+$ docker pull wordpress@sha256:424b1e36d765182026dffad39ffaebb83ddbc95c163b374ae12247ddfbd4a49a
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **65.4 MB (65400418 bytes)**  
+-	Total Size: **65.5 MB (65492533 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eee5b1e9e7a2bacfecd9b0bf79452c9494d06a6f0b775697e141a27fdb33a270`
+-	Image ID: `sha256:17319e6381fc59a64032d24762ee0650c8244beda53559814011bfee16d65eb6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -89,17 +89,17 @@ RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		freetyp
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 # Fri, 29 Jan 2021 04:54:02 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini
-# Fri, 29 Jan 2021 05:01:06 GMT
-RUN set -eux; 	version='5.6.1-RC1'; 	sha1='d594881caaa270371ee42a6fd64817bdb6e66d6b'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
-# Fri, 29 Jan 2021 05:01:07 GMT
+# Wed, 03 Feb 2021 21:42:09 GMT
+RUN set -eux; 	version='5.7-beta1'; 	sha1='abff1a094f816136e9a5c2da0ba7b2e188fb304d'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
+# Wed, 03 Feb 2021 21:42:09 GMT
 VOLUME [/var/www/html]
-# Fri, 29 Jan 2021 05:01:07 GMT
+# Wed, 03 Feb 2021 21:42:09 GMT
 COPY --chown=www-data:www-datafile:0c72cdf4bfc53e48a50a27b4181a810916f30eb16f37044bd4298ee8328646d5 in /usr/src/wordpress/ 
-# Fri, 29 Jan 2021 05:01:07 GMT
+# Wed, 03 Feb 2021 21:42:10 GMT
 COPY file:eb627edb8cc2c73847c3ec2586b852ebd606f4562928fd73ce4c5efc0763085d in /usr/local/bin/ 
-# Fri, 29 Jan 2021 05:01:07 GMT
+# Wed, 03 Feb 2021 21:42:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 29 Jan 2021 05:01:07 GMT
+# Wed, 03 Feb 2021 21:42:10 GMT
 CMD ["php-fpm"]
 ```
 
@@ -160,17 +160,17 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 29 Jan 2021 05:03:45 GMT  
 		Size: 394.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19e773e8d5ae79a45882cfc804fba01c26f99178f3c656da1e1120c1d366d2d7`  
-		Last Modified: Fri, 29 Jan 2021 05:06:32 GMT  
-		Size: 15.5 MB (15457138 bytes)  
+	-	`sha256:7aae09219443c62c975b7f874183c5c33fbcb2583fda713bb6fa94c2b52b1469`  
+		Last Modified: Wed, 03 Feb 2021 21:46:07 GMT  
+		Size: 15.5 MB (15549247 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f393f117fada863b6475660780dd01ff18bfa67750bde77912ef8356aae0c3c1`  
-		Last Modified: Fri, 29 Jan 2021 05:06:27 GMT  
-		Size: 2.1 KB (2093 bytes)  
+	-	`sha256:4386a6858c5cdf84db55e3fea41840414ded380fad43c4ef3d30992af283efc0`  
+		Last Modified: Wed, 03 Feb 2021 21:46:04 GMT  
+		Size: 2.1 KB (2095 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca38285bb6d5b34212f3d897fb03e636a2aa68659fcc6816964d7fc80fe50b2`  
-		Last Modified: Fri, 29 Jan 2021 05:06:27 GMT  
-		Size: 1.6 KB (1635 bytes)  
+	-	`sha256:12d3d018d83acecd269dd6081f932085047f13e12ea273dd0d08a19c71f54d4e`  
+		Last Modified: Wed, 03 Feb 2021 21:46:04 GMT  
+		Size: 1.6 KB (1639 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:beta-php8.0-fpm-alpine` - linux; arm variant v6

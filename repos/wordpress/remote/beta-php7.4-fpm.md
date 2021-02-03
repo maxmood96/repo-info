@@ -1,7 +1,7 @@
 ## `wordpress:beta-php7.4-fpm`
 
 ```console
-$ docker pull wordpress@sha256:ca83501072551c49dab5cb96307d23c6ea470195fd7d2ae1d6f2756fd02b44e5
+$ docker pull wordpress@sha256:f9a14a39aa83eb14e12645ba844c61646b447a16256c65e593154a04d5e2e16a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18,14 +18,14 @@ $ docker pull wordpress@sha256:ca83501072551c49dab5cb96307d23c6ea470195fd7d2ae1d
 ### `wordpress:beta-php7.4-fpm` - linux; amd64
 
 ```console
-$ docker pull wordpress@sha256:882f89e1dc39858e145c5d3d32a9bcd153ab680543280370499a2ae18e912295
+$ docker pull wordpress@sha256:9d003f1c17071a213e057cf185006ada4ecaed124ee3c366720856d8228f191e
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.5 MB (184545801 bytes)**  
+-	Total Size: **184.6 MB (184637766 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f8990710687503b195b30c0d26e1d66236e0b21a5d725ab692de0f7493dedce8`
+-	Image ID: `sha256:9f38519f7c044e93cb30a91e0c796b9e622176f07976fd74a51be5d0df7fb44e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -90,17 +90,17 @@ RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 # Thu, 21 Jan 2021 20:40:28 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini
-# Fri, 29 Jan 2021 04:58:59 GMT
-RUN set -eux; 	version='5.6.1-RC1'; 	sha1='d594881caaa270371ee42a6fd64817bdb6e66d6b'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
-# Fri, 29 Jan 2021 04:59:00 GMT
+# Wed, 03 Feb 2021 21:40:44 GMT
+RUN set -eux; 	version='5.7-beta1'; 	sha1='abff1a094f816136e9a5c2da0ba7b2e188fb304d'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
+# Wed, 03 Feb 2021 21:40:44 GMT
 VOLUME [/var/www/html]
-# Fri, 29 Jan 2021 04:59:00 GMT
+# Wed, 03 Feb 2021 21:40:44 GMT
 COPY --chown=www-data:www-datafile:0c72cdf4bfc53e48a50a27b4181a810916f30eb16f37044bd4298ee8328646d5 in /usr/src/wordpress/ 
-# Fri, 29 Jan 2021 04:59:00 GMT
+# Wed, 03 Feb 2021 21:40:45 GMT
 COPY file:eb627edb8cc2c73847c3ec2586b852ebd606f4562928fd73ce4c5efc0763085d in /usr/local/bin/ 
-# Fri, 29 Jan 2021 04:59:00 GMT
+# Wed, 03 Feb 2021 21:40:45 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 29 Jan 2021 04:59:00 GMT
+# Wed, 03 Feb 2021 21:40:45 GMT
 CMD ["php-fpm"]
 ```
 
@@ -161,17 +161,17 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 21 Jan 2021 20:59:36 GMT  
 		Size: 400.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a14c6a71ce14a0fe57424f11c65fcd2cc036d4e1dfa72fe2aeed3ae37311f24f`  
-		Last Modified: Fri, 29 Jan 2021 05:04:56 GMT  
-		Size: 15.5 MB (15455445 bytes)  
+	-	`sha256:4317a3f7a6a71ab59404684ab64bb22480e96c52058375714f8ccbee1882e49b`  
+		Last Modified: Wed, 03 Feb 2021 21:44:42 GMT  
+		Size: 15.5 MB (15547411 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36a1a0fda013a87534f888196299513aae2fe138a77e00db4dd4296ab682ded6`  
-		Last Modified: Fri, 29 Jan 2021 05:04:52 GMT  
-		Size: 2.1 KB (2096 bytes)  
+	-	`sha256:681f56054d879b178e9dfe594e1d54193f4c9ea649d0eae370b341efbca083c2`  
+		Last Modified: Wed, 03 Feb 2021 21:44:39 GMT  
+		Size: 2.1 KB (2097 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3790ba16f70a300b182d9ed992dfc16d524e6e31c295c50ce2135166a5c0e73`  
-		Last Modified: Fri, 29 Jan 2021 05:04:52 GMT  
-		Size: 1.6 KB (1639 bytes)  
+	-	`sha256:aa89fc9b5dc40894f0e2bc66f0b9274b2961738c6f39d0ef20239e2723236e00`  
+		Last Modified: Wed, 03 Feb 2021 21:44:39 GMT  
+		Size: 1.6 KB (1637 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:beta-php7.4-fpm` - linux; arm variant v5
