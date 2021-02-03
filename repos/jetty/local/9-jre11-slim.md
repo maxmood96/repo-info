@@ -2,17 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4422b446e6c88a748a1288b34c8a9f65242b5a5683730c4f08f64b38aa506e63`
-- Created: `2021-01-27T20:21:07.087908346Z`
-- Virtual Size: ~ 217.81 Mb  
+- Image ID: `sha256:2c0f1320737d212f6f9038b75c57ed3cdfe18f7eebb980070c76af8508610c78`
+- Created: `2021-02-01T22:56:46.379735882Z`
+- Virtual Size: ~ 234.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["java","-jar","/usr/local/jetty/start.jar"]`
 - Environment:
   - `PATH=/usr/local/jetty/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/local/openjdk-11`
+  - `LANG=C.UTF-8`
   - `JAVA_VERSION=11.0.10`
   - `JETTY_VERSION=9.4.36.v20210114`
   - `JETTY_HOME=/usr/local/jetty`
@@ -259,11 +259,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.6-9.2~deb10u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.6-9.2~deb10u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20200601~deb10u1`
+### `dpkg` source package: `ca-certificates=20200601~deb10u2`
 
 Binary Packages:
 
-- `ca-certificates=20200601~deb10u1`
+- `ca-certificates=20200601~deb10u2`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -274,16 +274,16 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20200601~deb10u1
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20200601~deb10u1.dsc' ca-certificates_20200601~deb10u1.dsc 1837 SHA256:41120aa922b9520b73b88ef3fef18b807c7e5b6dd98c9dec51a3841dabe7fcb8
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20200601~deb10u1.tar.xz' ca-certificates_20200601~deb10u1.tar.xz 245828 SHA256:5911c0471fd83141285c56c414be7f6e7176f28dc8d14a3c55f06303b79a92aa
+$ apt-get source -qq --print-uris ca-certificates=20200601~deb10u2
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20200601~deb10u2.dsc' ca-certificates_20200601~deb10u2.dsc 1907 SHA256:b89cbd8c235e131ee10cb85a9bd4b3e429874c1e0577c5ed35121f8590d4d029
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20200601~deb10u2.tar.xz' ca-certificates_20200601~deb10u2.tar.xz 245804 SHA256:13ffd04d36230309ff383ad4ccbefb1852b1483f0ac3da75b4979906933ba5e8
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates/20200601~deb10u1/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20200601~deb10u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20200601~deb10u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ca-certificates/20200601~deb10u2/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20200601~deb10u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20200601~deb10u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.249`
 
