@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7547ae0aa9ee14672d07fa27f1767b070f424ba2fcfbaf683fad42fac775b471`
-- Created: `2021-01-29T05:30:55.480726549Z`
-- Virtual Size: ~ 472.25 Mb  
+- Image ID: `sha256:0541275b47dfcd6a9273fa994fe19ebac4033dc35023e197d8626deca989f584`
+- Created: `2021-02-04T22:11:30.841739836Z`
+- Virtual Size: ~ 472.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.26`
-  - `PHP_URL=https://www.php.net/distributions/php-7.3.26.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.26.tar.xz.asc`
-  - `PHP_SHA256=d93052f4cb2882090b6a37fd1e0c764be1605a2461152b7f6b8f04fa48875208`
+  - `PHP_VERSION=7.3.27`
+  - `PHP_URL=https://www.php.net/distributions/php-7.3.27.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.27.tar.xz.asc`
+  - `PHP_SHA256=65f616e2d5b6faacedf62830fa047951b0136d5da34ae59e6744cbaf5dca148d`
   - `MEDIAWIKI_MAJOR_VERSION=1.35`
   - `MEDIAWIKI_VERSION=1.35.1`
 
@@ -880,16 +880,16 @@ Libpng
 ### `apk` package: `librsvg`
 
 ```console
-librsvg-2.50.2-r0 description:
+librsvg-2.50.3-r0 description:
 SAX-based renderer for SVG files into a GdkPixbuf
 
-librsvg-2.50.2-r0 webpage:
+librsvg-2.50.3-r0 webpage:
 https://wiki.gnome.org/Projects/LibRsvg
 
-librsvg-2.50.2-r0 installed size:
-10670080
+librsvg-2.50.3-r0 installed size:
+10653696
 
-librsvg-2.50.2-r0 license:
+librsvg-2.50.3-r0 license:
 LGPL-2.1-or-later
 
 ```
