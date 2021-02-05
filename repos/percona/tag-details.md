@@ -2842,7 +2842,12 @@ CMD ["mongod"]
 
 ## `percona:psmdb-4.2.12`
 
-**does not exist** (yet?)
+```console
+$ docker pull percona@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms:
 
 ## `percona:psmdb-4.4`
 
