@@ -227,13 +227,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20201027ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20201027ubuntu0.20.04.1.dsc' ca-certificates_20201027ubuntu0.20.04.1.dsc 1945 SHA512:32df164149775001a030721767a21b99133638d9293ff4085bbee56a8e38219d8d4f7d8b2ddfee021dcdb05e300c8f94312707881bbeb1bffa406728b319d7fe
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20201027ubuntu0.20.04.1.tar.xz' ca-certificates_20201027ubuntu0.20.04.1.tar.xz 242452 SHA512:4639732f2445a495c861ea933d43fc431b5ea907272e31f72cb6a955ecf827c76f6d043cb82da0e8742af6abc6a80b20b96540c17a75d0b6452c01eb8203cd76
-```
 
 ### `dpkg` source package: `cdebconf=0.251ubuntu1`
 
@@ -2713,14 +2709,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-rospkg-modules=1.2.9-1
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rospkg-modules/python3-rospkg-modules_1.2.9-1.debian.tar.xz' python3-rospkg-modules_1.2.9-1.debian.tar.xz 1192 SHA512:295709184d1b19fd06fab12a2d2e01dbd0b6df5937242c8d8bc7a150a0dfb7b43e2e081bd97adf93c4027239120288c6bb2d58be54a4de34ac7af911bff79461
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rospkg-modules/python3-rospkg-modules_1.2.9-1.dsc' python3-rospkg-modules_1.2.9-1.dsc 973 SHA512:1e8b6e2c8718be5bc8387b5afdd8556b5bdea0ab8e313bd4a5c87b0555772d80e1c1d70d7e968f6b38efd53d486802dd54955d1938da85bac6d935885bff85b3
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rospkg-modules/python3-rospkg-modules_1.2.9.orig.tar.gz' python3-rospkg-modules_1.2.9.orig.tar.gz 40854 SHA512:c7c5b1df647cd8ee3e802e200c0fabf65dd1a1d36aad2dc55db68156ec4e504102e480210f60a167d8ec4a14d972429f7857343a1fc7730ffade3b13c7ee170c
-```
 
 ### `dpkg` source package: `python3-stdlib-extensions=3.8.5-1~20.04.1`
 
