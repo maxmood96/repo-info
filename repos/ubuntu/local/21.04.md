@@ -346,13 +346,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.20.5ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.20.5ubuntu3.dsc' dpkg_1.20.5ubuntu3.dsc 2264 SHA512:3db9a8a933e6932316da0e6ed6f68cb8d4dc636df72ab9d3c62cd6b2b3632aabfc0cdff2c24ec826acdadbe64288967277c76f0a978676c04d85b8508cad0c50
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.20.5ubuntu3.tar.xz' dpkg_1.20.5ubuntu3.tar.xz 4743056 SHA512:d2b7d4fbc3149be78ec86e01a88980018c4299d944e1631d76abaf596641d9b7d6fc45b08af116c4f60cab56b7eb2009c946ecaee1813ec35fc2ec8b8e190192
-```
 
 ### `dpkg` source package: `e2fsprogs=1.45.6-1ubuntu1`
 
@@ -561,14 +557,9 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gzip=1.10-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10-2ubuntu2.dsc' gzip_1.10-2ubuntu2.dsc 2074 SHA512:584fff23ee573aa9d677c0fa08ec7dda1adaee1b282aeb074769b9ecc0fdd9ded07c496d9fffdc6758414974f2d5e26578a0d422bfeb131fb6009c59f05d13a8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10.orig.tar.gz' gzip_1.10.orig.tar.gz 1201421 SHA512:7939043e74554ced0c1c05d354ab4eb36cd6dce89ad79d02ccdc5ed6b7ee390759689b2d47c07227b9b44a62851afe7c76c4cae9f92527d999f3f1b4df1cccff
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10-2ubuntu2.debian.tar.xz' gzip_1.10-2ubuntu2.debian.tar.xz 33904 SHA512:015aed9693eb925cb0557c87762ecbae01b08c090946d7199d0e1428a4f378f8dfb85c2dcfeedd0fa2a1c329b6ecc5bac560b8ff760bdaffd01c27e3edd334cf
-```
 
 ### `dpkg` source package: `hostname=3.23`
 
@@ -600,13 +591,13 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.59
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.59.dsc' init-system-helpers_1.59.dsc 1896 SHA512:34b6612cd4bc55991cebce066052f45ff2c79d8aa3656443de994eb6c42a0d1f5bc671a3dfb0962e7e55436dd5ebeb29e8763e78b457abacfe62cf42407022a2
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.59.tar.xz' init-system-helpers_1.59.tar.xz 40720 SHA512:634eb90830113fb696458406b9d044eae2f154cfe075f41747dd732d26f6e57e59c6e3e54caaec841cf77aae9a375698cd5e23f97a0393318b52add03c0a3a22
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/init-system-helpers/1.59/
+
 
 ### `dpkg` source package: `keyutils=1.6.1-2ubuntu1`
 
@@ -643,14 +634,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.17-10ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-10ubuntu1.dsc' krb5_1.17-10ubuntu1.dsc 3639 SHA512:3340542b574f9459cdff666ca68ec98387ab11feaee97ff93be94933c9d1926602bdc1910e65d8b5b0ae3489031341f0cd233e803338dd148967b6d93f89f4aa
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA512:7462a578b936bd17f155a362dbb5d388e157a80a096549028be6c55400b11361c7f8a28e424fd5674801873651df4e694d536cae66728b7ae5e840e532358c52
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-10ubuntu1.debian.tar.xz' krb5_1.17-10ubuntu1.debian.tar.xz 144960 SHA512:424203dabaf1527d3290ce94a3c83b725becd4367a3303473796420f48ac6f433db070307d22fce89f35955ac2c91ea4a88266eafdd8f46d85e5ab1a168ffa2c
-```
 
 ### `dpkg` source package: `libcap-ng=0.7.9-2.2build1`
 
@@ -1182,15 +1168,13 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed6/copyright`, `/usr/share/doc/
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nettle=3.6-2
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.6-2.dsc' nettle_3.6-2.dsc 2254 SHA512:1b5f93a849d74d97c8d211444c50a333f4592c0c54a1348e5adab3b9392c20fbc454c9f4f3f831ee946f83310d10bd649de3b5f8797ba76eed709fd8d699f4b4
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.6.orig.tar.gz' nettle_3.6.orig.tar.gz 2288173 SHA512:2471af875e51327af61af8bda53cd9c3adc27b6e32592a4b5b10b3ec60999ebf771ab9c54c747b0bade4b3b5a717e77fdbdb53699dd9e8a9ed4eee07f46aed51
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.6.orig.tar.gz.asc' nettle_3.6.orig.tar.gz.asc 573 SHA512:006c821e599d8fb64b3e5b71182909c5e5921b35e5223f749b69a2c5507b41220595c3c2fa46a484ae1254b8eb4f4c7bfccfd808a03ca79e9c1fd7cbb8ed7216
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.6-2.debian.tar.xz' nettle_3.6-2.debian.tar.xz 21136 SHA512:00aa9109859953aa0dd25c5f68661174acff20271d7f5f2991edbb2f997acfffc927c772e298486d6f438d4402d8e79c64fef6864ecad3c464600771e34b8436
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/nettle/3.6-2/
+
 
 ### `dpkg` source package: `openssl=1.1.1f-1ubuntu5`
 
