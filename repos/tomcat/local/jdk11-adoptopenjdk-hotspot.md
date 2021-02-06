@@ -1,10 +1,10 @@
-# `tomcat:9.0.41-jdk11-adoptopenjdk-hotspot`
+# `tomcat:9.0.43-jdk11-adoptopenjdk-hotspot`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7b73fc65113e013d977d4482ebc8e4d54f806be2486a8dc23f143487f9df9830`
-- Created: `2021-01-21T21:13:48.803621215Z`
-- Virtual Size: ~ 461.53 Mb  
+- Image ID: `sha256:9c9dd6f50897dd45530373bdeae584fa395df3fee1eeff9a19abe5f3a6551d61`
+- Created: `2021-02-03T01:44:15.44298192Z`
+- Virtual Size: ~ 475.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -13,15 +13,15 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.9.1+1`
+  - `JAVA_VERSION=jdk-11.0.10+9`
   - `JAVA_HOME=/opt/java/openjdk`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.41`
-  - `TOMCAT_SHA512=b6450e590a37c5bccf049b1176c441f0964796995e80d4c7c7d9fb74f9ad817107c303b6b83ed3d71c9251b2b8acf334b90a4abdf9deea122e338643cece0766`
+  - `TOMCAT_VERSION=9.0.43`
+  - `TOMCAT_SHA512=3dbc5a1b621598beb3219bac8c78fcaeac9b2169b5aa83fc8c0937275dd9f7701147573336804b28389f8e761a92a2da3327e66f46b97fed37fa374d52126e9d`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -243,11 +243,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-2
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-2.debian.tar.bz2' bzip2_1.0.8-2.debian.tar.bz2 26032 SHA256:237c8619bc9bc16f357b1077064a3e58aa1a230dadb4b9bb3bd8dc8f454afc0b
 ```
 
-### `dpkg` source package: `ca-certificates=20201027ubuntu0.20.04.1`
+### `dpkg` source package: `ca-certificates=20210119~20.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20201027ubuntu0.20.04.1`
+- `ca-certificates=20210119~20.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -258,9 +258,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20201027ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20201027ubuntu0.20.04.1.dsc' ca-certificates_20201027ubuntu0.20.04.1.dsc 1945 SHA512:32df164149775001a030721767a21b99133638d9293ff4085bbee56a8e38219d8d4f7d8b2ddfee021dcdb05e300c8f94312707881bbeb1bffa406728b319d7fe
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20201027ubuntu0.20.04.1.tar.xz' ca-certificates_20201027ubuntu0.20.04.1.tar.xz 242452 SHA512:4639732f2445a495c861ea933d43fc431b5ea907272e31f72cb6a955ecf827c76f6d043cb82da0e8742af6abc6a80b20b96540c17a75d0b6452c01eb8203cd76
+$ apt-get source -qq --print-uris ca-certificates=20210119~20.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20210119~20.04.1.dsc' ca-certificates_20210119~20.04.1.dsc 1917 SHA512:51e73e623563dc6023abd1502bc476be7558c1cb6dba8a03549f8f3a91cc960e02d47caa67aa7102fae9c72a14b7da3a0fcb7544c637f14ce5fe29fffc3ccc62
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20210119~20.04.1.tar.xz' ca-certificates_20210119~20.04.1.tar.xz 232772 SHA512:d1edd53ff9a6731703cc93a0281fdb4055cb39b90f53b79a784887d9e0c5db04311a726788bfcc66a556453c7481ea5873f1689b5c46080e23b6aa466e5b8a1b
 ```
 
 ### `dpkg` source package: `cdebconf=0.251ubuntu1`
@@ -640,10 +640,9 @@ $ apt-get source -qq --print-uris gcc-10=10.2.0-5ubuntu1~20.04
 Binary Packages:
 
 - `libc-bin=2.31-0ubuntu9.1`
-- `libc6:amd64=2.31-0ubuntu9.1`
 - `locales=2.31-0ubuntu9.1`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/locales/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -651,6 +650,26 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `glibc=2.31-0ubuntu9.2`
+
+Binary Packages:
+
+- `libc6:amd64=2.31-0ubuntu9.2`
+
+Licenses: (parsed from: `/usr/share/doc/libc6/copyright`)
+
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.31-0ubuntu9.2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.2.dsc' glibc_2.31-0ubuntu9.2.dsc 9561 SHA512:12afcea8313015a2de4bfed05818d5a52dccfa82a4dcf2264f155b38bcb39507d5a765aa6dd58105194af364d2366ae4c88ac1877173c2ef3776b5d0fc75443c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17317924 SHA512:2ff56628fe935cacbdf1825534f15d45cb87a159cbdb2e6a981590eeb6174ed4b3ff7041519cdecbd4f624ac20b745e2dd9614c420dd3ea186b8f36bc4c2453c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.2.debian.tar.xz' glibc_2.31-0ubuntu9.2.debian.tar.xz 847208 SHA512:6985930d47b70f2c3cfd0ece3d5dce8414befd061cfbae7a1e8804f02ef81d73d4a219bc780492c8a6ca3c5a559b58082bea57372b2b9072539059a1694578e0
+```
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-4`
 

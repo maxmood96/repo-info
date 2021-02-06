@@ -1,25 +1,25 @@
-# `tomcat:10.0.0-jdk15-openjdk-oraclelinux7`
+# `tomcat:10.0.2-jdk15-openjdk-oraclelinux7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c4076983fb3edc07410aaf291fa411bce2dd29dbd55b4f1a1a0bd38f99b3aa28`
-- Created: `2021-01-20T01:47:21.095564154Z`
-- Virtual Size: ~ 546.94 Mb  
+- Image ID: `sha256:992794023f69c089cfba9e4723ffa04db5b866fe82af5009edc6eabb2530f991`
+- Created: `2021-02-03T01:27:31.434374973Z`
+- Virtual Size: ~ 547.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
 - Environment:
   - `PATH=/usr/local/tomcat/bin:/usr/java/openjdk-15/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `LANG=en_US.UTF-8`
   - `JAVA_HOME=/usr/java/openjdk-15`
+  - `LANG=en_US.UTF-8`
   - `JAVA_VERSION=15.0.2`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=A9C5DF4D22E99998D9875A5110C01C5A2F6059E7`
   - `TOMCAT_MAJOR=10`
-  - `TOMCAT_VERSION=10.0.0`
-  - `TOMCAT_SHA512=bf3592ef3807af6284060aacaf44174fe7d51079196cfe06fd30c17414a4dd59b7b0c8288ccc2c93fbbd38b090f3bbc43fa06ecf971217b8ec1fa383d8095497`
+  - `TOMCAT_VERSION=10.0.2`
+  - `TOMCAT_SHA512=eff1b4eab98c0f5cda196eb413f82bad9aec551d00f9ae0c0d5a17f5b21b1c62b0e8349291269fd15f5fff173b70099f4105821655ae98ced71238b593476d62`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -1217,15 +1217,15 @@ $ yumdownloader --quiet --source --urls tar-1.26-35.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/tar-1.26-35.el7.src.rpm
 ```
 
-### `rpm` package: `tzdata-2020f-1.el7.noarch`
+### `rpm` package: `tzdata-2021a-1.el7.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls tzdata-2020f-1.el7.noarch
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/tzdata-2020f-1.el7.src.rpm
+$ yumdownloader --quiet --source --urls tzdata-2021a-1.el7.noarch
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/tzdata-2021a-1.el7.src.rpm
 ```
 
 ### `rpm` package: `ustr-1.0.4-16.el7.x86_64`
