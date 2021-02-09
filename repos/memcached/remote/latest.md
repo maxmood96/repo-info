@@ -1,7 +1,7 @@
 ## `memcached:latest`
 
 ```console
-$ docker pull memcached@sha256:15b9a27158ef79d113ad28c679c202336f9bacdf893e17b2001639975c276223
+$ docker pull memcached@sha256:4864bee476ec386e1f2bc2f0ea421191a35beddfffac8d5dad73031f9b275c9c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -432,69 +432,69 @@ CMD ["memcached"]
 ### `memcached:latest` - linux; ppc64le
 
 ```console
-$ docker pull memcached@sha256:72adbe5e3b69d81573f033bfa53970506d7c800990a1612acade9af2e7893e2b
+$ docker pull memcached@sha256:fb138578aac1704fb7617d1a9abfc39a8dc63b0933bbf5118cb9c25737046e7a
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.1 MB (34093788 bytes)**  
+-	Total Size: **34.1 MB (34080782 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:16f1ec15094ccb3e5861b65a6b5f7d4afdff0013a277ce4482027a8cc50cccc6`
+-	Image ID: `sha256:bbc76cad1c1bc474df6523c999d481e4afe23ff61e03a2d3a6cb7cb8c2e42dbe`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["memcached"]`
 
 ```dockerfile
-# Tue, 12 Jan 2021 00:25:06 GMT
-ADD file:9d7252c169da9a089a0caa2f26cea24678267c15c0e129e7320d4defe0d4637b in / 
-# Tue, 12 Jan 2021 00:25:16 GMT
+# Tue, 09 Feb 2021 02:19:19 GMT
+ADD file:9a8cfdf0eab394a693b5cde0700ad47b6e8506ef0b79fabb8a07874b96e6c394 in / 
+# Tue, 09 Feb 2021 02:19:34 GMT
 CMD ["bash"]
-# Tue, 12 Jan 2021 04:04:19 GMT
+# Tue, 09 Feb 2021 09:45:49 GMT
 RUN groupadd --system --gid 11211 memcache && useradd --system --gid memcache --uid 11211 memcache
-# Tue, 12 Jan 2021 04:04:53 GMT
+# Tue, 09 Feb 2021 09:46:11 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libsasl2-modules 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 12 Jan 2021 04:04:55 GMT
+# Tue, 09 Feb 2021 09:46:17 GMT
 ENV MEMCACHED_VERSION=1.6.9
-# Tue, 12 Jan 2021 04:04:59 GMT
+# Tue, 09 Feb 2021 09:46:23 GMT
 ENV MEMCACHED_SHA1=42ae062094fdf083cfe7b21ff377c781011c2be1
-# Tue, 12 Jan 2021 04:11:58 GMT
+# Tue, 09 Feb 2021 09:54:19 GMT
 RUN set -x 		&& savedAptMark="$(apt-mark showmanual)" 	&& apt-get update 	&& apt-get install -y --no-install-recommends 		ca-certificates 		dpkg-dev 		gcc 		libc6-dev 		libevent-dev 		libio-socket-ssl-perl 		libsasl2-dev 		libssl-dev 		make 		perl 		wget 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O memcached.tar.gz "https://memcached.org/files/memcached-$MEMCACHED_VERSION.tar.gz" 	&& echo "$MEMCACHED_SHA1  memcached.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/memcached 	&& tar -xzf memcached.tar.gz -C /usr/src/memcached --strip-components=1 	&& rm memcached.tar.gz 		&& cd /usr/src/memcached 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& enableExtstore="$( 		case "$gnuArch" in 			s390x-*) ;; 			*) echo '--enable-extstore' ;; 		esac 	)" 	&& ./configure 		--build="$gnuArch" 		--enable-sasl 		--enable-sasl-pwdb 		--enable-tls 		$enableExtstore 	&& nproc="$(nproc)" 	&& make -j "$nproc" 		&& sed -i.bak 's/SECLEVEL=2/SECLEVEL=1/g' /etc/ssl/openssl.cnf 	&& make test PARALLEL="$nproc" 	&& mv /etc/ssl/openssl.cnf.bak /etc/ssl/openssl.cnf 		&& make install 		&& cd / && rm -rf /usr/src/memcached 		&& apt-mark auto '.*' > /dev/null 	&& apt-mark manual $savedAptMark > /dev/null 	&& find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false 		&& memcached -V
-# Tue, 12 Jan 2021 04:12:01 GMT
+# Tue, 09 Feb 2021 09:54:23 GMT
 COPY file:bf641b13ea5b37f5830b299ebe9d72f194ee5d897db14faf8b133dc7a66a48ad in /usr/local/bin/ 
-# Tue, 12 Jan 2021 04:12:13 GMT
+# Tue, 09 Feb 2021 09:54:40 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Tue, 12 Jan 2021 04:12:16 GMT
+# Tue, 09 Feb 2021 09:54:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 12 Jan 2021 04:12:20 GMT
+# Tue, 09 Feb 2021 09:54:48 GMT
 USER memcache
-# Tue, 12 Jan 2021 04:12:25 GMT
+# Tue, 09 Feb 2021 09:54:53 GMT
 EXPOSE 11211
-# Tue, 12 Jan 2021 04:12:35 GMT
+# Tue, 09 Feb 2021 09:55:00 GMT
 CMD ["memcached"]
 ```
 
 -	Layers:
-	-	`sha256:cb701c1e59a3b25dcb09b089f31d61af3065659cd29a7c748f66f3e3c8a96d58`  
-		Last Modified: Tue, 12 Jan 2021 00:34:11 GMT  
-		Size: 30.5 MB (30532837 bytes)  
+	-	`sha256:9996b4fb6bc1c50f95ba30f8988c9c89526556fa320d3fda59d3d8359f7810d6`  
+		Last Modified: Tue, 09 Feb 2021 02:27:59 GMT  
+		Size: 30.5 MB (30519509 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c25802b0208f89a3169edeba37505b32cab62d9479ab5bb14f33f638b85f2ff`  
-		Last Modified: Tue, 12 Jan 2021 04:13:07 GMT  
-		Size: 5.0 KB (4992 bytes)  
+	-	`sha256:d561dd0ad27f8506579149a1207a4a7e56d32097134cbcb5f5c1c6cdd65b4881`  
+		Last Modified: Tue, 09 Feb 2021 09:55:33 GMT  
+		Size: 5.0 KB (4987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20ab0caeb2a3adc740566f4d647c2cd4e0e6f45bdc8b43c5c764c4d0adca245e`  
-		Last Modified: Tue, 12 Jan 2021 04:13:08 GMT  
-		Size: 2.3 MB (2322937 bytes)  
+	-	`sha256:65ce7e8a7984b013486e40e970ea7d7a475c97afe9b24735d64b30430ee14029`  
+		Last Modified: Tue, 09 Feb 2021 09:55:34 GMT  
+		Size: 2.3 MB (2322966 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4a1c58fb2bed91165d035bdaa1d48e00c960b1cd946552b37e2e85cace0136a`  
-		Last Modified: Tue, 12 Jan 2021 04:13:08 GMT  
-		Size: 1.2 MB (1232614 bytes)  
+	-	`sha256:772e4cf704856c5c858935d6979bbd91c095d6faa6c8742c904aab5eec88a371`  
+		Last Modified: Tue, 09 Feb 2021 09:55:33 GMT  
+		Size: 1.2 MB (1232915 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cbc04a740e206762de63ae5e7d2221f456701dbe48398dfddbab985686e05a9b`  
-		Last Modified: Tue, 12 Jan 2021 04:13:08 GMT  
-		Size: 287.0 B  
+	-	`sha256:43829f86705f7ff25f785896a47ee02c895ef7f38c5c825f3fe7b01058ba3151`  
+		Last Modified: Tue, 09 Feb 2021 09:55:33 GMT  
+		Size: 284.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e3cf1b6d71174b27e50ed94ac614ba3516abdb6ea9805e7bebc72cbcee7f6eb`  
-		Last Modified: Tue, 12 Jan 2021 04:13:08 GMT  
+	-	`sha256:82b0117a03a6a143844e6f7e755d2ca7fd1570b31fdb0127501594c1efa9a6d8`  
+		Last Modified: Tue, 09 Feb 2021 09:55:33 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
