@@ -1,7 +1,7 @@
 ## `influxdb:latest`
 
 ```console
-$ docker pull influxdb@sha256:4b309fde55b0c06dbdf24670bc7905d7b4ce8e3b698452fc798b0433937eae72
+$ docker pull influxdb@sha256:32865dbd78e71987d3546095adfb0b20c20ba9bf8a338616500db61769e15ee0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -171,78 +171,78 @@ CMD ["influxd"]
 ### `influxdb:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull influxdb@sha256:c3f9723fd7a97f94fb6c4b7cb76b378fddc15a64c262e84d9a48756d944b2b4a
+$ docker pull influxdb@sha256:cecdf09bdae2736f4cfeea2157e2e04baf728ae09a2d087bdd8081dfdc387277
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **118.1 MB (118090799 bytes)**  
+-	Total Size: **118.1 MB (118090458 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f52765e4250c0031f3b338634567d6aabd89172f8d11b7945769d6d4c674a92f`
+-	Image ID: `sha256:a9473609f3c55065609f52855ca8def2f9a505f5876b1f1eedc16049206fd35c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Tue, 12 Jan 2021 00:45:18 GMT
-ADD file:bc4af94773a01defa7a79adb22199dde2229843dae224d13d3385c522cb71652 in / 
-# Tue, 12 Jan 2021 00:45:22 GMT
+# Tue, 09 Feb 2021 02:43:17 GMT
+ADD file:fb69ff7b2a28f793efbd16e04b74ffb4557d39e1844b3789075b4d3ff97a0eaa in / 
+# Tue, 09 Feb 2021 02:43:20 GMT
 CMD ["bash"]
-# Fri, 05 Feb 2021 22:41:00 GMT
+# Tue, 09 Feb 2021 04:50:24 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		apt-transport-https 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 05 Feb 2021 22:41:10 GMT
+# Tue, 09 Feb 2021 04:50:35 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 06 Feb 2021 01:34:48 GMT
+# Tue, 09 Feb 2021 23:17:18 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Sat, 06 Feb 2021 01:35:08 GMT
+# Tue, 09 Feb 2021 23:17:49 GMT
 ENV INFLUXDB_VERSION=1.8.4
-# Sat, 06 Feb 2021 01:35:16 GMT
+# Tue, 09 Feb 2021 23:17:59 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb_${INFLUXDB_VERSION}_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     gpg --batch --verify influxdb_${INFLUXDB_VERSION}_${ARCH}.deb.asc influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     dpkg -i influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     rm -f influxdb_${INFLUXDB_VERSION}_${ARCH}.deb*
-# Sat, 06 Feb 2021 01:35:18 GMT
+# Tue, 09 Feb 2021 23:18:00 GMT
 COPY file:3d8a606d61e1fc0042cf34d036eda4550a18d140c47376dacc02d96ee6f2dd8b in /etc/influxdb/influxdb.conf 
-# Sat, 06 Feb 2021 01:35:18 GMT
+# Tue, 09 Feb 2021 23:18:00 GMT
 EXPOSE 8086
-# Sat, 06 Feb 2021 01:35:19 GMT
+# Tue, 09 Feb 2021 23:18:01 GMT
 VOLUME [/var/lib/influxdb]
-# Sat, 06 Feb 2021 01:35:20 GMT
+# Tue, 09 Feb 2021 23:18:02 GMT
 COPY file:61c4af7a0e637328374ec46266ed6dde40adf7d14ac6c5081100924991beb7f3 in /entrypoint.sh 
-# Sat, 06 Feb 2021 01:35:21 GMT
+# Tue, 09 Feb 2021 23:18:03 GMT
 COPY file:e7af69cde81ffb6eddc175488941183d1244772c36c27b74751d54389fb71701 in /init-influxdb.sh 
-# Sat, 06 Feb 2021 01:35:22 GMT
+# Tue, 09 Feb 2021 23:18:03 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 06 Feb 2021 01:35:23 GMT
+# Tue, 09 Feb 2021 23:18:04 GMT
 CMD ["influxd"]
 ```
 
 -	Layers:
-	-	`sha256:ec4f0a0f30ab1b4fc2e412a926b8608502de98203ca1994c7916de2017136729`  
-		Last Modified: Tue, 12 Jan 2021 00:54:45 GMT  
-		Size: 43.2 MB (43177964 bytes)  
+	-	`sha256:296c9f0bf5f2cf24e87bc5abd674fc486e8df419d4aa2d362453f64d38900504`  
+		Last Modified: Tue, 09 Feb 2021 02:49:43 GMT  
+		Size: 43.2 MB (43177550 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e25980bf93101cf6e28f2866b5d55dde2a817c6c5e5c9e82be93f55c872b9a9f`  
-		Last Modified: Fri, 05 Feb 2021 22:48:57 GMT  
-		Size: 10.2 MB (10182590 bytes)  
+	-	`sha256:84d546321c8e11789c75187b5b592633207519d75f96e8f03e8378d2da4a72a9`  
+		Last Modified: Tue, 09 Feb 2021 05:00:16 GMT  
+		Size: 10.2 MB (10182589 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:117548f2863b6d36f3c3df656a2e64c9847e7e6ee40e86ee1619be68045f47d9`  
-		Last Modified: Fri, 05 Feb 2021 22:48:56 GMT  
-		Size: 4.1 MB (4096578 bytes)  
+	-	`sha256:f91c8ffe219846d18819503633eb252121c21cd20dbff74278b85c4029370992`  
+		Last Modified: Tue, 09 Feb 2021 05:00:15 GMT  
+		Size: 4.1 MB (4096615 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:815c6a68a5364839b085dc54139fd5ed8d77606f647da8a10453cbf0269ff2ff`  
-		Last Modified: Sat, 06 Feb 2021 01:35:38 GMT  
-		Size: 2.9 KB (2855 bytes)  
+	-	`sha256:3dc3bb22e13ab89a21825455644f82709870c5ca9d0f5dcc186f2794e987fbb0`  
+		Last Modified: Tue, 09 Feb 2021 23:18:20 GMT  
+		Size: 2.9 KB (2853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40f82e170f46607610fa98358b5fbe24b8a4c62ea0c6c40bed7022c6022dc09c`  
-		Last Modified: Sat, 06 Feb 2021 01:36:13 GMT  
-		Size: 60.6 MB (60629097 bytes)  
+	-	`sha256:c2b55933c9b8cf91ab120a56ebee961c795c2f781c696d2ce72ce6ffd35190d7`  
+		Last Modified: Tue, 09 Feb 2021 23:18:53 GMT  
+		Size: 60.6 MB (60629135 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36b579c36ecb0d049b44db963fe8c494eedc0c71bdb9efaa0c64acb2e3a13723`  
-		Last Modified: Sat, 06 Feb 2021 01:36:00 GMT  
+	-	`sha256:739b5dbd7dbd5e775bb785f8311d2446b7da2b091ffcf6388f0649af38d4413e`  
+		Last Modified: Tue, 09 Feb 2021 23:18:41 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2353b4dc3f9340b753a518c1e2e49534859ede9b4fdd1fd0dc306a387f8eaf58`  
-		Last Modified: Sat, 06 Feb 2021 01:36:01 GMT  
-		Size: 209.0 B  
+	-	`sha256:ee0f5eef745245986f16357dd49791608ad6e8b60307d32bfbe1412b22d8c298`  
+		Last Modified: Tue, 09 Feb 2021 23:18:41 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba1898f6d94620b4068b2289edcb4e422d4f1b2b13510f33359e3752d0c03a09`  
-		Last Modified: Sat, 06 Feb 2021 01:36:00 GMT  
+	-	`sha256:556a000a3eaa8c4c8c0043bfc2c731ff16a702b0d1909eb2893f2cd8e26f1033`  
+		Last Modified: Tue, 09 Feb 2021 23:18:41 GMT  
 		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
