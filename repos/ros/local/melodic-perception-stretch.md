@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4773c131de58b1944c85bdef86507b5bbbd8f23c788b731f901de5b9e03c1ed8`
-- Created: `2021-01-12T01:08:05.798898594Z`
+- Image ID: `sha256:6f68d9b9ac0c4190853c809dae33b38004f78528f9a9add2731b804161ab2efb`
+- Created: `2021-02-09T11:30:54.078237955Z`
 - Virtual Size: ~ 2.48 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1683,22 +1683,22 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/explorercanvas/0.r3-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/explorercanvas/0.r3-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ffmpeg=7:3.2.15-0+deb9u1`
+### `dpkg` source package: `ffmpeg=7:3.2.15-0+deb9u2`
 
 Binary Packages:
 
-- `libavcodec-dev:amd64=7:3.2.15-0+deb9u1`
-- `libavcodec57:amd64=7:3.2.15-0+deb9u1`
-- `libavformat-dev:amd64=7:3.2.15-0+deb9u1`
-- `libavformat57:amd64=7:3.2.15-0+deb9u1`
-- `libavresample-dev:amd64=7:3.2.15-0+deb9u1`
-- `libavresample3:amd64=7:3.2.15-0+deb9u1`
-- `libavutil-dev:amd64=7:3.2.15-0+deb9u1`
-- `libavutil55:amd64=7:3.2.15-0+deb9u1`
-- `libswresample-dev:amd64=7:3.2.15-0+deb9u1`
-- `libswresample2:amd64=7:3.2.15-0+deb9u1`
-- `libswscale-dev:amd64=7:3.2.15-0+deb9u1`
-- `libswscale4:amd64=7:3.2.15-0+deb9u1`
+- `libavcodec-dev:amd64=7:3.2.15-0+deb9u2`
+- `libavcodec57:amd64=7:3.2.15-0+deb9u2`
+- `libavformat-dev:amd64=7:3.2.15-0+deb9u2`
+- `libavformat57:amd64=7:3.2.15-0+deb9u2`
+- `libavresample-dev:amd64=7:3.2.15-0+deb9u2`
+- `libavresample3:amd64=7:3.2.15-0+deb9u2`
+- `libavutil-dev:amd64=7:3.2.15-0+deb9u2`
+- `libavutil55:amd64=7:3.2.15-0+deb9u2`
+- `libswresample-dev:amd64=7:3.2.15-0+deb9u2`
+- `libswresample2:amd64=7:3.2.15-0+deb9u2`
+- `libswscale-dev:amd64=7:3.2.15-0+deb9u2`
+- `libswscale4:amd64=7:3.2.15-0+deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/libavcodec-dev/copyright`, `/usr/share/doc/libavcodec57/copyright`, `/usr/share/doc/libavformat-dev/copyright`, `/usr/share/doc/libavformat57/copyright`, `/usr/share/doc/libavresample-dev/copyright`, `/usr/share/doc/libavresample3/copyright`, `/usr/share/doc/libavutil-dev/copyright`, `/usr/share/doc/libavutil55/copyright`, `/usr/share/doc/libswresample-dev/copyright`, `/usr/share/doc/libswresample2/copyright`, `/usr/share/doc/libswscale-dev/copyright`, `/usr/share/doc/libswscale4/copyright`)
 
@@ -1723,13 +1723,20 @@ Licenses: (parsed from: `/usr/share/doc/libavcodec-dev/copyright`, `/usr/share/d
 - `man-page`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris ffmpeg=7:3.2.15-0+deb9u2
+'http://security.debian.org/debian-security/pool/updates/main/f/ffmpeg/ffmpeg_3.2.15-0+deb9u2.dsc' ffmpeg_3.2.15-0+deb9u2.dsc 4914 SHA256:c6dab98db84b6fe8fe60a5a70f2f8844457bc0390a5f611c3237ff002ebe515b
+'http://security.debian.org/debian-security/pool/updates/main/f/ffmpeg/ffmpeg_3.2.15.orig.tar.xz' ffmpeg_3.2.15.orig.tar.xz 8055152 SHA256:3d8bc9b12413b98811106f1c24df48ff14d6ea7ef65b31c4d8beec632382098e
+'http://security.debian.org/debian-security/pool/updates/main/f/ffmpeg/ffmpeg_3.2.15-0+deb9u2.debian.tar.xz' ffmpeg_3.2.15-0+deb9u2.debian.tar.xz 41292 SHA256:ca6887259ea8f498d746a2a0b7c12a1ca5fc2712a057ea0c1b7f66f7595c113b
+```
 
-- http://snapshot.debian.org/package/ffmpeg/7:3.2.15-0+deb9u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/ffmpeg/7:3.2.15-0+deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/ffmpeg/7:3.2.15-0+deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ffmpeg/7:3.2.15-0+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20161106-2`
 
@@ -6509,13 +6516,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/make-dfsg/4.1-9.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/make-dfsg/4.1-9.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mariadb-10.1=10.1.47-0+deb9u1`
+### `dpkg` source package: `mariadb-10.1=10.1.48-0+deb9u1`
 
 Binary Packages:
 
-- `libmariadbclient-dev=10.1.47-0+deb9u1`
-- `libmariadbclient-dev-compat:amd64=10.1.47-0+deb9u1`
-- `libmariadbclient18:amd64=10.1.47-0+deb9u1`
+- `libmariadbclient-dev=10.1.48-0+deb9u1`
+- `libmariadbclient-dev-compat:amd64=10.1.48-0+deb9u1`
+- `libmariadbclient18:amd64=10.1.48-0+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libmariadbclient-dev/copyright`, `/usr/share/doc/libmariadbclient-dev-compat/copyright`, `/usr/share/doc/libmariadbclient18/copyright`)
 
@@ -6539,13 +6546,21 @@ Licenses: (parsed from: `/usr/share/doc/libmariadbclient-dev/copyright`, `/usr/s
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris mariadb-10.1=10.1.48-0+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.48-0+deb9u1.dsc' mariadb-10.1_10.1.48-0+deb9u1.dsc 4530 SHA256:4e56388e48003b70794b13744381dcaad61c64b290b720a3e1ba96077b921965
+'http://security.debian.org/debian-security/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.48.orig.tar.gz' mariadb-10.1_10.1.48.orig.tar.gz 63769566 SHA256:069d58b1e2c06bb1e6c31249eda34138f41fb8ae3dec7ecaeba8035812c87cf9
+'http://security.debian.org/debian-security/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.48.orig.tar.gz.asc' mariadb-10.1_10.1.48.orig.tar.gz.asc 195 SHA256:6f66d57dadaf6b22c5310e4f7eeb5352e99ab918f6a249a1c81d32a1900e132c
+'http://security.debian.org/debian-security/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.48-0+deb9u1.debian.tar.xz' mariadb-10.1_10.1.48-0+deb9u1.debian.tar.xz 230568 SHA256:734a621e5d35a072766d2aeba5989f8bc4c635c94c018e9052b93c8846a6c35d
+```
 
-- http://snapshot.debian.org/package/mariadb-10.1/10.1.47-0+deb9u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/mariadb-10.1/10.1.48-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/mariadb-10.1/10.1.48-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mariadb-10.1/10.1.48-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
@@ -7380,12 +7395,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openexr/2.2.0-11+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openexr/2.2.0-11+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjpeg2=2.1.2-1.1+deb9u5`
+### `dpkg` source package: `openjpeg2=2.1.2-1.1+deb9u6`
 
 Binary Packages:
 
-- `libopenjp2-7:amd64=2.1.2-1.1+deb9u5`
-- `libopenjp2-7-dev=2.1.2-1.1+deb9u5`
+- `libopenjp2-7:amd64=2.1.2-1.1+deb9u6`
+- `libopenjp2-7-dev=2.1.2-1.1+deb9u6`
 
 Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc/libopenjp2-7-dev/copyright`)
 
@@ -7399,33 +7414,47 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc
 - `ZLIB`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openjpeg2=2.1.2-1.1+deb9u6
+'http://security.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u6.dsc' openjpeg2_2.1.2-1.1+deb9u6.dsc 2797 SHA256:d53d34aae6b64f554e98639faec5ff58fcdd2b72118f8f15ac3b8807b152e063
+'http://security.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.1.2.orig.tar.gz' openjpeg2_2.1.2.orig.tar.gz 1987071 SHA256:4ce77b6ef538ef090d9bde1d5eeff8b3069ab56c4906f083475517c2c023dfa7
+'http://security.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u6.debian.tar.xz' openjpeg2_2.1.2-1.1+deb9u6.debian.tar.xz 30240 SHA256:2eca1f4dcabef3ab1695f6b309bddb1aefbfca6e48c8f8189d425b17cb5685e4
+```
 
-- http://snapshot.debian.org/package/openjpeg2/2.1.2-1.1+deb9u5/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openjpeg2/2.1.2-1.1+deb9u6/ (for browsing the source)
+- https://sources.debian.net/src/openjpeg2/2.1.2-1.1+deb9u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjpeg2/2.1.2-1.1+deb9u6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openldap=2.4.44+dfsg-5+deb9u6`
+### `dpkg` source package: `openldap=2.4.44+dfsg-5+deb9u7`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.44+dfsg-5+deb9u6`
-- `libldap-common=2.4.44+dfsg-5+deb9u6`
-- `libldap2-dev:amd64=2.4.44+dfsg-5+deb9u6`
+- `libldap-2.4-2:amd64=2.4.44+dfsg-5+deb9u7`
+- `libldap-common=2.4.44+dfsg-5+deb9u7`
+- `libldap2-dev:amd64=2.4.44+dfsg-5+deb9u7`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openldap=2.4.44+dfsg-5+deb9u7
+'http://security.debian.org/debian-security/pool/updates/main/o/openldap/openldap_2.4.44+dfsg-5+deb9u7.dsc' openldap_2.4.44+dfsg-5+deb9u7.dsc 3017 SHA256:9b00375bbc5c65d7cc1923d2a1ee236e1434e1293895160bd4369f4e16c01177
+'http://security.debian.org/debian-security/pool/updates/main/o/openldap/openldap_2.4.44+dfsg.orig.tar.gz' openldap_2.4.44+dfsg.orig.tar.gz 4826590 SHA256:d5187c229bec163c5d97845846e1b87917755f85b04f444c08836384f4bd7ffe
+'http://security.debian.org/debian-security/pool/updates/main/o/openldap/openldap_2.4.44+dfsg-5+deb9u7.debian.tar.xz' openldap_2.4.44+dfsg-5+deb9u7.debian.tar.xz 173548 SHA256:e66b4686c6fc47be154bb528a2936f1ab12632953d3d4c6ec4d2ebaf5ea0b681
+```
 
-- http://snapshot.debian.org/package/openldap/2.4.44+dfsg-5+deb9u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openldap/2.4.44+dfsg-5+deb9u7/ (for browsing the source)
+- https://sources.debian.net/src/openldap/2.4.44+dfsg-5+deb9u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openldap/2.4.44+dfsg-5+deb9u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openmpi=2.0.2-2`
 
@@ -8968,33 +8997,43 @@ $ apt-get source -qq --print-uris python-rosinstall=0.7.8-1
 'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosinstall/python-rosinstall_0.7.8.orig.tar.gz' python-rosinstall_0.7.8.orig.tar.gz 26425 SHA512:013b313b9e442e9b68f7aad0a372d2c1dfb9efeb66b9f20d01943bf58808e0e0bc69db848ba1c2460f0ecfaba89d385e987ccb574a7139b6500d5f958eda4d1b
 ```
 
-### `dpkg` source package: `python-rospkg-modules=1.2.9-1`
+### `dpkg` source package: `python-rospkg-modules=1.2.10-1`
 
 Binary Packages:
 
-- `python-rospkg-modules=1.2.9-1`
+- `python-rospkg-modules=1.2.10-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rospkg-modules=1.2.10-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.2.10-1.debian.tar.xz' python-rospkg-modules_1.2.10-1.debian.tar.xz 1104 SHA512:5eb528271060d7c780a57fd0d3203ab52a5b9f1a0eb06b2ccce23911f29f4f1e71806f2174a36cbbe332b61d0758ec19e1c80dcf15f32a04133e0288739c780c
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.2.10-1.dsc' python-rospkg-modules_1.2.10-1.dsc 960 SHA512:db5d3ec1e633c20500cb6a5eeb0b2209df9d41368a9ad21492ea7716ada0dee14e37ce79b97ca0a625374c0f676ac4a49ee74ad6b5cd1b34310d87739eff0269
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.2.10.orig.tar.gz' python-rospkg-modules_1.2.10.orig.tar.gz 41489 SHA512:ed459c6a9600697ee768ec17527fd024d63257a6f6cb6cc291ac650c9e6ea079a5ab15d394fa0108e1628752dc6224a4e0a2f8722ef0da0fb5ce0b2eee9207c0
+```
 
-### `dpkg` source package: `python-rospkg=1.2.9-100`
+### `dpkg` source package: `python-rospkg=1.2.10-100`
 
 Binary Packages:
 
-- `python-rospkg=1.2.9-100`
+- `python-rospkg=1.2.10-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rospkg=1.2.10-100
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.2.10-100.debian.tar.xz' python-rospkg_1.2.10-100.debian.tar.xz 1080 SHA512:34682a59ec5a0624273d3073744e45870a01006cf2e0ddac00c16e14248347b5efb061dda8f88db65f1b363ec79368a742120f07b79ed93b1f2d6eea381a094c
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.2.10-100.dsc' python-rospkg_1.2.10-100.dsc 896 SHA512:0db446e5fe94bac6313a74dd75ee6b2dfb97329664ea2124696ffa4058c7974d24af819707133b1b62c384a420017d48a7bf003683461cc8d5ac7495ed67ded8
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.2.10.orig.tar.gz' python-rospkg_1.2.10.orig.tar.gz 17967 SHA512:6a56af35adce7d4723143cbd2124807305b716f0c6d24d0188bdba34ba6db0cc6621c95b3946265182ab08fcc02462c1a9163ce040bc8a496d94fe6a0e02e6c8
+```
 
 ### `dpkg` source package: `python-service-identity=16.0.0-2`
 
@@ -11736,11 +11775,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/subversion/1.9.5-1+deb9u5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/subversion/1.9.5-1+deb9u5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `sudo=1.8.19p1-2.1+deb9u2`
+### `dpkg` source package: `sudo=1.8.19p1-2.1+deb9u3`
 
 Binary Packages:
 
-- `sudo=1.8.19p1-2.1+deb9u2`
+- `sudo=1.8.19p1-2.1+deb9u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11749,17 +11788,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sudo=1.8.19p1-2.1+deb9u2
-'http://deb.debian.org/debian/pool/main/s/sudo/sudo_1.8.19p1-2.1+deb9u2.dsc' sudo_1.8.19p1-2.1+deb9u2.dsc 2190 SHA256:c8abb3023236db85cbba81e2b28751216a49c1a4eb9687b0c8f50bdb198c2093
-'http://deb.debian.org/debian/pool/main/s/sudo/sudo_1.8.19p1.orig.tar.gz' sudo_1.8.19p1.orig.tar.gz 2860124 SHA256:b8afb1cf8736b6c61f171f2bf4b174818d9e00e92ef73da55fabcd01286ffc92
-'http://deb.debian.org/debian/pool/main/s/sudo/sudo_1.8.19p1-2.1+deb9u2.debian.tar.xz' sudo_1.8.19p1-2.1+deb9u2.debian.tar.xz 29220 SHA256:ed50fd5a87829ecdfe678197bd05f171e436ec4c3ccada4319bcdbeec59c2563
+$ apt-get source -qq --print-uris sudo=1.8.19p1-2.1+deb9u3
+'http://security.debian.org/debian-security/pool/updates/main/s/sudo/sudo_1.8.19p1-2.1+deb9u3.dsc' sudo_1.8.19p1-2.1+deb9u3.dsc 2190 SHA256:81e70db0805f097cb8a4c184d2aaa5de7389b93711d9761aa6e01f40ea6c99c9
+'http://security.debian.org/debian-security/pool/updates/main/s/sudo/sudo_1.8.19p1.orig.tar.gz' sudo_1.8.19p1.orig.tar.gz 2860124 SHA256:b8afb1cf8736b6c61f171f2bf4b174818d9e00e92ef73da55fabcd01286ffc92
+'http://security.debian.org/debian-security/pool/updates/main/s/sudo/sudo_1.8.19p1-2.1+deb9u3.debian.tar.xz' sudo_1.8.19p1-2.1+deb9u3.debian.tar.xz 32284 SHA256:8b0b705dfbd723a91d4eb43b5d90ed36a92d28129bb26a6147e9b1459cb37f67
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/sudo/1.8.19p1-2.1+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/sudo/1.8.19p1-2.1+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sudo/1.8.19p1-2.1+deb9u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/sudo/1.8.19p1-2.1+deb9u3/ (for browsing the source)
+- https://sources.debian.net/src/sudo/1.8.19p1-2.1+deb9u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sudo/1.8.19p1-2.1+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `superlu=5.2.1+dfsg1-2`
 
@@ -12129,23 +12168,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/twolame/0.3.13-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/twolame/0.3.13-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2020e-0+deb9u1`
+### `dpkg` source package: `tzdata=2021a-0+deb9u1`
 
 Binary Packages:
 
-- `tzdata=2020e-0+deb9u1`
+- `tzdata=2021a-0+deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2021a-0+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2021a-0+deb9u1.dsc' tzdata_2021a-0+deb9u1.dsc 2029 SHA256:cea5ffa909e7463a567405b6e8f997b16517b525d4d3a213f498d206dfff3204
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2021a.orig.tar.gz' tzdata_2021a.orig.tar.gz 411892 SHA256:39e7d2ba08c68cbaefc8de3227aab0dec2521be8042cf56855f7dc3a9fb14e08
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2021a-0+deb9u1.debian.tar.xz' tzdata_2021a-0+deb9u1.debian.tar.xz 103220 SHA256:4e8f5eab78b57e8bd6d1de652c1fc6bc63e08b29ccda795276d3ee293fb71bb8
+```
 
-- http://snapshot.debian.org/package/tzdata/2020e-0+deb9u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2021a-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2021a-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2021a-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0036`
 
@@ -12378,11 +12424,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/vtk6/6.3.0+dfsg1-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/vtk6/6.3.0+dfsg1-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `wavpack=5.0.0-2+deb9u2`
+### `dpkg` source package: `wavpack=5.0.0-2+deb9u3`
 
 Binary Packages:
 
-- `libwavpack1:amd64=5.0.0-2+deb9u2`
+- `libwavpack1:amd64=5.0.0-2+deb9u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -12391,17 +12437,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris wavpack=5.0.0-2+deb9u2
-'http://deb.debian.org/debian/pool/main/w/wavpack/wavpack_5.0.0-2+deb9u2.dsc' wavpack_5.0.0-2+deb9u2.dsc 2154 SHA256:14f110f0d6ef0ac18475a16106e49a53f009423eab3472cd30021d30f824c4fc
-'http://deb.debian.org/debian/pool/main/w/wavpack/wavpack_5.0.0.orig.tar.bz2' wavpack_5.0.0.orig.tar.bz2 807953 SHA256:918d7e32a19598df543b17fff840b10a0880f87296f9e32af454d256b6a64049
-'http://deb.debian.org/debian/pool/main/w/wavpack/wavpack_5.0.0-2+deb9u2.debian.tar.xz' wavpack_5.0.0-2+deb9u2.debian.tar.xz 8856 SHA256:e4aff1c196aa664bbd1c251be1fc09081e5b66ef929eb3e3fffb2100f65356e4
+$ apt-get source -qq --print-uris wavpack=5.0.0-2+deb9u3
+'http://security.debian.org/debian-security/pool/updates/main/w/wavpack/wavpack_5.0.0-2+deb9u3.dsc' wavpack_5.0.0-2+deb9u3.dsc 2186 SHA256:6ca7dab0d20d6d87d7bb34713ec1fee2b8e44b15d57461289358641fcb33d62c
+'http://security.debian.org/debian-security/pool/updates/main/w/wavpack/wavpack_5.0.0.orig.tar.bz2' wavpack_5.0.0.orig.tar.bz2 807953 SHA256:918d7e32a19598df543b17fff840b10a0880f87296f9e32af454d256b6a64049
+'http://security.debian.org/debian-security/pool/updates/main/w/wavpack/wavpack_5.0.0-2+deb9u3.debian.tar.xz' wavpack_5.0.0-2+deb9u3.debian.tar.xz 11000 SHA256:b723ce16c9e2b3070ce5b2b2289d0eb9926d5c62e339ebe39a715c63d6fb486b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/wavpack/5.0.0-2+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/wavpack/5.0.0-2+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/wavpack/5.0.0-2+deb9u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/wavpack/5.0.0-2+deb9u3/ (for browsing the source)
+- https://sources.debian.net/src/wavpack/5.0.0-2+deb9u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/wavpack/5.0.0-2+deb9u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wayland=1.12.0-1+deb9u1`
 
