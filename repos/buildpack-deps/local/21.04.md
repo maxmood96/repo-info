@@ -1451,14 +1451,9 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `TatcherUlrichPublicDomain`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.10.23+dfsg-2.1ubuntu15
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_6.9.10.23+dfsg-2.1ubuntu15.dsc' imagemagick_6.9.10.23+dfsg-2.1ubuntu15.dsc 5054 SHA512:1e0da7882334332d47551a4bbb450aecfd636e06228cf51230707eab8aec21d27297dd47dc7955043cb9bfa8475a3b6a0170139bfc265a543ac0eb57a0a9bde2
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_6.9.10.23+dfsg.orig.tar.xz' imagemagick_6.9.10.23+dfsg.orig.tar.xz 9081188 SHA512:0c5fdfb82d12fef09d79c3a3d03167a57732e566980ca89e977d04502779506eae34e6bc4260c35558db63c572c64fe80d69f6627e180ffc8e8679ebe8574972
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_6.9.10.23+dfsg-2.1ubuntu15.debian.tar.xz' imagemagick_6.9.10.23+dfsg-2.1ubuntu15.debian.tar.xz 241652 SHA512:38574d2e35e6a2241bdfea8e0e22b69bdc4db2bc4a6696b261099c2aed064e695bba3a09b0578ed05b41913564f1a8e79795848b5a8766a353e467b12625f293
-```
 
 ### `dpkg` source package: `init-system-helpers=1.59`
 
@@ -3712,13 +3707,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.9.0-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.9.0-3ubuntu1.dsc' python3-defaults_3.9.0-3ubuntu1.dsc 2905 SHA512:5ce197109b6f810ef324fd13fa3a9dda01111c5bc5f2dd7ef2f47d74be9dc84ba48471420ca19a41e2f3f8c8b23db9878d3cd6bb39da57b5727d5df0a0d3e89c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.9.0-3ubuntu1.tar.gz' python3-defaults_3.9.0-3ubuntu1.tar.gz 139237 SHA512:39c580ee0a12d5c00bdf6c53724f2a650302ef1a301b0a9a25dcd2a7b875c1a37424a51620a892736ae7fe633c901f45917996619d5464933f143599946678b4
-```
 
 ### `dpkg` source package: `python3-stdlib-extensions=3.9.0-1`
 
@@ -3731,14 +3722,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-stdlib-extensions=3.9.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.9.0-1.dsc' python3-stdlib-extensions_3.9.0-1.dsc 2602 SHA512:075ee9e46778c98585e6881bd9d6101547e0d95228b77d8cbf309126786e29f187ed6275c344fe9f8e79ccc9aade83fc8f1f3faa501f4fe1424b289f826e3c6c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.9.0.orig.tar.xz' python3-stdlib-extensions_3.9.0.orig.tar.xz 1091160 SHA512:4cdf22265af71148a4399775c30d639a740d231b5604ed1e45e90ecd337d6c51066a722cf9baae75fe730222c4972160a366e5d03778c549031b4f86b5863903
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.9.0-1.debian.tar.xz' python3-stdlib-extensions_3.9.0-1.debian.tar.xz 18428 SHA512:20960d20dd1a0555068277f0102096f3e9d9bd643d6070d577317b81a2c1b5a9b64e624df2cc5de5c71e5121fde2de8308291b3780bac62859c6ac4220e9229f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3-stdlib-extensions/3.9.0-1/
+
 
 ### `dpkg` source package: `python3.9=3.9.1-1`
 

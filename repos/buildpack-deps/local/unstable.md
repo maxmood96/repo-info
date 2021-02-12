@@ -632,20 +632,13 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.27+dfsg-2
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27+dfsg-2.dsc' cyrus-sasl2_2.1.27+dfsg-2.dsc 3393 SHA256:e7e09491a1c2589c9947164db091d0f9b21b7d122f128841b6eac1adfc51b6c2
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27+dfsg.orig.tar.xz' cyrus-sasl2_2.1.27+dfsg.orig.tar.xz 2058596 SHA256:108b0c691c423837264f05abb559ea76c3dfdd91246555e8abe87c129a6e37cd
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27+dfsg-2.debian.tar.xz' cyrus-sasl2_2.1.27+dfsg-2.debian.tar.xz 99956 SHA256:ee894aeee645e842e39b434d5130e1bd15ea24b84c8eeeea3f5077511a87341a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.27+dfsg-2/
 
-- https://sources.debian.net/src/cyrus-sasl2/2.1.27+dfsg-2/ (for browsing the source)
-- https://sources.debian.net/src/cyrus-sasl2/2.1.27+dfsg-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cyrus-sasl2/2.1.27+dfsg-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.11+git20200708+dd9ef66-5`
 
@@ -1272,20 +1265,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-9-base/copyright`)
 - `LGPL`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-9=9.3.0-21
-'http://deb.debian.org/debian/pool/main/g/gcc-9/gcc-9_9.3.0-21.dsc' gcc-9_9.3.0-21.dsc 21926 SHA256:d8fd6b102002ebc694e32f56b923e4af64a9085a56f1485003278982323c849f
-'http://deb.debian.org/debian/pool/main/g/gcc-9/gcc-9_9.3.0.orig.tar.gz' gcc-9_9.3.0.orig.tar.gz 88686943 SHA256:824044ffa96eb337bb1c1d4cf6a82691d0290d6f42e1d13362eea855458de060
-'http://deb.debian.org/debian/pool/main/g/gcc-9/gcc-9_9.3.0-21.debian.tar.xz' gcc-9_9.3.0-21.debian.tar.xz 900368 SHA256:d12054718bdd913803c3dcd0a55e4cbb83c20a41ffb91d4313f3c3c8f91db35d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-9/9.3.0-21/
 
-- https://sources.debian.net/src/gcc-9/9.3.0-21/ (for browsing the source)
-- https://sources.debian.net/src/gcc-9/9.3.0-21/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-9/9.3.0-21/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.190`
 
@@ -1435,20 +1421,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.66.6-2
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.66.6-2.dsc' glib2.0_2.66.6-2.dsc 3383 SHA256:16d3a8a979860754db141f31633d82ba39f12d97d1d2eb8865dcc22115b5dc7b
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.66.6.orig.tar.xz' glib2.0_2.66.6.orig.tar.xz 4841768 SHA256:80fff9c63d2725834328071c42003c311f77f91caf2285195c587c62f5638329
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.66.6-2.debian.tar.xz' glib2.0_2.66.6-2.debian.tar.xz 99948 SHA256:e89b29e2e23efc4c05566987f09b9c4725b347eee392378b9475c7c58e2d74b0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.66.6-2/
 
-- https://sources.debian.net/src/glib2.0/2.66.6-2/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.66.6-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.66.6-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.31-9`
 
@@ -2724,20 +2703,13 @@ Licenses: (parsed from: `/usr/share/doc/libmaxminddb-dev/copyright`, `/usr/share
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libmaxminddb=1.5.0-2
-'http://deb.debian.org/debian/pool/main/libm/libmaxminddb/libmaxminddb_1.5.0-2.dsc' libmaxminddb_1.5.0-2.dsc 2322 SHA256:c2fd5a988c900a20759470291e7b6509739e1ab4d1f03478cbb963469b4f8d6a
-'http://deb.debian.org/debian/pool/main/libm/libmaxminddb/libmaxminddb_1.5.0.orig.tar.gz' libmaxminddb_1.5.0.orig.tar.gz 249562 SHA256:2cac69efe9d7e43bf5d403cc02f14c5102f6e4585357b98e296a62421a0f013f
-'http://deb.debian.org/debian/pool/main/libm/libmaxminddb/libmaxminddb_1.5.0-2.debian.tar.xz' libmaxminddb_1.5.0-2.debian.tar.xz 14952 SHA256:02d92766d96099b50d1a91f917b86cd063c6454da15ac9abd405e163cfb72bab
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libmaxminddb/1.5.0-2/
 
-- https://sources.debian.net/src/libmaxminddb/1.5.0-2/ (for browsing the source)
-- https://sources.debian.net/src/libmaxminddb/1.5.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libmaxminddb/1.5.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libmd=1.0.3-3`
 
@@ -4290,20 +4262,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc
 - `ZLIB`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjpeg2=2.4.0-2
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.4.0-2.dsc' openjpeg2_2.4.0-2.dsc 2760 SHA256:14615ed6548f83c6e1d107970a97b83e7d0f9f7cd43f930452ef9f4727c0d3d8
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.4.0.orig.tar.xz' openjpeg2_2.4.0.orig.tar.xz 1396964 SHA256:4b89da8abea5ea4e8dd5b214f1633a492554d784b5aebc22cb6495a1e5fe681c
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.4.0-2.debian.tar.xz' openjpeg2_2.4.0-2.debian.tar.xz 19488 SHA256:0f4c620192867947e697e2752f3a896903b84a07750515298fc38d14b450cbc4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openjpeg2/2.4.0-2/
 
-- https://sources.debian.net/src/openjpeg2/2.4.0-2/ (for browsing the source)
-- https://sources.debian.net/src/openjpeg2/2.4.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjpeg2/2.4.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.57+dfsg-1`
 
@@ -4726,20 +4691,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-13=13.1-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-13/postgresql-13_13.1-1.dsc' postgresql-13_13.1-1.dsc 3622 SHA256:79c94566c09b7bc8ca47ac69ff93c80eb1d8d32488c5abf6cd01361a4e5716a0
-'http://deb.debian.org/debian/pool/main/p/postgresql-13/postgresql-13_13.1.orig.tar.bz2' postgresql-13_13.1.orig.tar.bz2 21034192 SHA256:12345c83b89aa29808568977f5200d6da00f88a035517f925293355432ffe61f
-'http://deb.debian.org/debian/pool/main/p/postgresql-13/postgresql-13_13.1-1.debian.tar.xz' postgresql-13_13.1-1.debian.tar.xz 26128 SHA256:35871a63aea15adea96efa10def456c8cdc5461d30f80492761c6ca904c9c90c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-13/13.1-1/
 
-- https://sources.debian.net/src/postgresql-13/13.1-1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-13/13.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-13/13.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.16-5`
 

@@ -2020,13 +2020,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.9.0-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.9.0-3ubuntu1.dsc' python3-defaults_3.9.0-3ubuntu1.dsc 2905 SHA512:5ce197109b6f810ef324fd13fa3a9dda01111c5bc5f2dd7ef2f47d74be9dc84ba48471420ca19a41e2f3f8c8b23db9878d3cd6bb39da57b5727d5df0a0d3e89c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.9.0-3ubuntu1.tar.gz' python3-defaults_3.9.0-3ubuntu1.tar.gz 139237 SHA512:39c580ee0a12d5c00bdf6c53724f2a650302ef1a301b0a9a25dcd2a7b875c1a37424a51620a892736ae7fe633c901f45917996619d5464933f143599946678b4
-```
 
 ### `dpkg` source package: `python3.9=3.9.1-1`
 
