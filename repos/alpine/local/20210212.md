@@ -1,10 +1,10 @@
-# `alpine:20201218`
+# `alpine:20210212`
 
 ## Docker Metadata
 
-- Image ID: `sha256:430cc6504dbd5a0acf9058733dc015452aa0af1b826c3c408c539f4f302591b7`
-- Created: `2020-12-18T19:33:58.370845825Z`
-- Virtual Size: ~ 5.61 Mb  
+- Image ID: `sha256:34dac78053209f08ed66b41b4730ac08603e06a1888072d7145efb68a3b2aa8a`
+- Created: `2021-02-12T20:19:59.864166354Z`
+- Virtual Size: ~ 5.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -16,16 +16,16 @@
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.2.0-r8 description:
+alpine-baselayout-3.2.0-r9 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.2.0-r8 webpage:
+alpine-baselayout-3.2.0-r9 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.2.0-r8 installed size:
+alpine-baselayout-3.2.0-r9 installed size:
 409600
 
-alpine-baselayout-3.2.0-r8 license:
+alpine-baselayout-3.2.0-r9 license:
 GPL-2.0-only
 
 ```
@@ -50,16 +50,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.12.0-r3 description:
+apk-tools-2.12.3-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.12.0-r3 webpage:
+apk-tools-2.12.3-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.12.0-r3 installed size:
+apk-tools-2.12.3-r0 installed size:
 311296
 
-apk-tools-2.12.0-r3 license:
+apk-tools-2.12.3-r0 license:
 GPL-2.0-only
 
 ```
@@ -67,16 +67,16 @@ GPL-2.0-only
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.32.0-r8 description:
+busybox-1.33.0-r2 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.32.0-r8 webpage:
+busybox-1.33.0-r2 webpage:
 https://busybox.net/
 
-busybox-1.32.0-r8 installed size:
-946176
+busybox-1.33.0-r2 installed size:
+950272
 
-busybox-1.32.0-r8 license:
+busybox-1.33.0-r2 license:
 GPL-2.0-only
 
 ```
@@ -169,16 +169,16 @@ ISC
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.2_pre6-r0 description:
+musl-1.2.2-r1 description:
 the musl c library (libc) implementation
 
-musl-1.2.2_pre6-r0 webpage:
+musl-1.2.2-r1 webpage:
 https://musl.libc.org/
 
-musl-1.2.2_pre6-r0 installed size:
+musl-1.2.2-r1 installed size:
 622592
 
-musl-1.2.2_pre6-r0 license:
+musl-1.2.2-r1 license:
 MIT
 
 ```
@@ -186,16 +186,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.2_pre6-r0 description:
+musl-utils-1.2.2-r1 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.2_pre6-r0 webpage:
+musl-utils-1.2.2-r1 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.2_pre6-r0 installed size:
-143360
+musl-utils-1.2.2-r1 installed size:
+147456
 
-musl-utils-1.2.2_pre6-r0 license:
+musl-utils-1.2.2-r1 license:
 MIT BSD GPL2+
 
 ```
@@ -203,16 +203,16 @@ MIT BSD GPL2+
 ### `apk` package: `scanelf`
 
 ```console
-scanelf-1.2.6-r1 description:
+scanelf-1.2.9-r0 description:
 Scan ELF binaries for stuff
 
-scanelf-1.2.6-r1 webpage:
+scanelf-1.2.9-r0 webpage:
 https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities
 
-scanelf-1.2.6-r1 installed size:
+scanelf-1.2.9-r0 installed size:
 94208
 
-scanelf-1.2.6-r1 license:
+scanelf-1.2.9-r0 license:
 GPL-2.0-only
 
 ```
@@ -220,16 +220,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.32.0-r8 description:
+ssl_client-1.33.0-r2 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.32.0-r8 webpage:
+ssl_client-1.33.0-r2 webpage:
 https://busybox.net/
 
-ssl_client-1.32.0-r8 installed size:
+ssl_client-1.33.0-r2 installed size:
 28672
 
-ssl_client-1.32.0-r8 license:
+ssl_client-1.33.0-r2 license:
 GPL-2.0-only
 
 ```
