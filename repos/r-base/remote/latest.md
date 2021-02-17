@@ -1,7 +1,7 @@
 ## `r-base:latest`
 
 ```console
-$ docker pull r-base@sha256:681bd27bbeccefbf9cf94a1982ddc033d12f71c2ab27b02596eac2c039de1b99
+$ docker pull r-base@sha256:443840ab9aef2897027f71bf636ea45cc3edc1c4e3e0a84c64aa6e26bf72816c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,14 +14,14 @@ $ docker pull r-base@sha256:681bd27bbeccefbf9cf94a1982ddc033d12f71c2ab27b02596ea
 ### `r-base:latest` - linux; amd64
 
 ```console
-$ docker pull r-base@sha256:9737d0c00160f483c09415336e34cb9bad01571c1feac93c0a5e5eb40ed84268
+$ docker pull r-base@sha256:99fafd1e982dde584939f687f59fe63dd0b72c2c7feb57fe9028adb0ab7dfd39
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **323.8 MB (323787075 bytes)**  
+-	Total Size: **323.9 MB (323862469 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab694d121fd77e4f9abf6b19c8e46306ca842b3be1d218e775befd9e31c6e6cf`
+-	Image ID: `sha256:c20a3d431fd4eb1ea9f611b08b9dcd65901eddd7c77709e7912dd3541ef8f0db`
 -	Default Command: `["R"]`
 
 ```dockerfile
@@ -43,11 +43,11 @@ ENV LC_ALL=en_US.UTF-8
 ENV LANG=en_US.UTF-8
 # Tue, 09 Feb 2021 09:54:34 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default         && echo 'APT::Install-Recommends "false";' > /etc/apt/apt.conf.d/90local-no-recommends
-# Tue, 09 Feb 2021 09:54:34 GMT
-ENV R_BASE_VERSION=4.0.3
-# Tue, 09 Feb 2021 09:55:41 GMT
+# Wed, 17 Feb 2021 21:21:45 GMT
+ENV R_BASE_VERSION=4.0.4
+# Wed, 17 Feb 2021 21:22:33 GMT
 RUN apt-get update         && apt-get install -t unstable -y --no-install-recommends                 gcc-9-base                 libopenblas0-pthread 		littler                 r-cran-littler 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-* 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installDeps.r /usr/local/bin/installDeps.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& install.r docopt 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 09 Feb 2021 09:55:42 GMT
+# Wed, 17 Feb 2021 21:22:34 GMT
 CMD ["R"]
 ```
 
@@ -72,9 +72,9 @@ CMD ["R"]
 		Last Modified: Tue, 09 Feb 2021 09:55:53 GMT  
 		Size: 351.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c6ef537a6dd44243e14a5e244a0e22ee53aa9b8f801613ef8bb397d97931257`  
-		Last Modified: Tue, 09 Feb 2021 09:56:48 GMT  
-		Size: 242.5 MB (242539010 bytes)  
+	-	`sha256:c14174657a99f91567db8ca53fe593d1f4e997c2d2e2c1dba129c7f784e3e04b`  
+		Last Modified: Wed, 17 Feb 2021 21:23:19 GMT  
+		Size: 242.6 MB (242614404 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `r-base:latest` - linux; arm64 variant v8
@@ -146,14 +146,14 @@ CMD ["R"]
 ### `r-base:latest` - linux; ppc64le
 
 ```console
-$ docker pull r-base@sha256:803cd460dd7a7cd659abe49874effe49565bcd7f43150d6332afd6ee18cdd223
+$ docker pull r-base@sha256:765c664cbc5f2de9c256ec2bb538dd9742e5c1521c38e8b4283a245e73190680
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **321.6 MB (321616695 bytes)**  
+-	Total Size: **321.7 MB (321680498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d94730e92c8682bf12cf0a9fbeaf1c133ca2c2b937640427bb408651bdc801ac`
+-	Image ID: `sha256:f0bc88b1695224575976f91957ae8c5fb4e5234681301f8533c5cc14e6996ee3`
 -	Default Command: `["R"]`
 
 ```dockerfile
@@ -175,11 +175,11 @@ ENV LC_ALL=en_US.UTF-8
 ENV LANG=en_US.UTF-8
 # Tue, 09 Feb 2021 21:52:04 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default         && echo 'APT::Install-Recommends "false";' > /etc/apt/apt.conf.d/90local-no-recommends
-# Tue, 09 Feb 2021 21:52:10 GMT
-ENV R_BASE_VERSION=4.0.3
-# Tue, 09 Feb 2021 22:03:09 GMT
+# Wed, 17 Feb 2021 21:22:08 GMT
+ENV R_BASE_VERSION=4.0.4
+# Wed, 17 Feb 2021 21:35:14 GMT
 RUN apt-get update         && apt-get install -t unstable -y --no-install-recommends                 gcc-9-base                 libopenblas0-pthread 		littler                 r-cran-littler 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-* 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installDeps.r /usr/local/bin/installDeps.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& install.r docopt 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 09 Feb 2021 22:03:17 GMT
+# Wed, 17 Feb 2021 21:35:21 GMT
 CMD ["R"]
 ```
 
@@ -204,9 +204,9 @@ CMD ["R"]
 		Last Modified: Tue, 09 Feb 2021 22:03:45 GMT  
 		Size: 348.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0e8c240bf047ef7037995212858044ade5231debeaab5506ee8a6a3dc115726`  
-		Last Modified: Tue, 09 Feb 2021 22:04:25 GMT  
-		Size: 236.3 MB (236270795 bytes)  
+	-	`sha256:212798d782a6e222135d41499413f111aae7958e886a33c45908a5f66bf3df9c`  
+		Last Modified: Wed, 17 Feb 2021 21:36:17 GMT  
+		Size: 236.3 MB (236334598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `r-base:latest` - linux; s390x
