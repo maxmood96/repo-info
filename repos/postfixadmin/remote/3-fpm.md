@@ -1,7 +1,7 @@
 ## `postfixadmin:3-fpm`
 
 ```console
-$ docker pull postfixadmin@sha256:5f2c480916682729ca886b592c09aaeb9596926dcfd8c19511d37affed5a6ecf
+$ docker pull postfixadmin@sha256:e0b035592656f7692a79fffa4267b1398f52b901b28ddc60306cffcec82d8524
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -167,14 +167,14 @@ CMD ["php-fpm"]
 ### `postfixadmin:3-fpm` - linux; arm variant v5
 
 ```console
-$ docker pull postfixadmin@sha256:69cecd924ab60ac3570731efdd646b8bcb683f0dc9bd6545aec47926f4e71ce0
+$ docker pull postfixadmin@sha256:8f9a366fda174d4b4f74457b535f8485b1aac707e79d698deb409fd1b895111f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **125.4 MB (125414008 bytes)**  
+-	Total Size: **125.4 MB (125414162 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90a536a09c2f92236da6b177ea431005b4a797bb85c6131109c32516aab3ff5b`
+-	Image ID: `sha256:9f6bad06b28657757860c023e5fa82070ac5f1c86d23bd64f233b717bd8b842b`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -237,21 +237,21 @@ LABEL maintainer=David Goodwin <david@codepoets.co.uk> (@DavidGoodwin)
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		gosu 	; 	rm -rf /var/lib/apt/lists/*
 # Tue, 09 Feb 2021 17:59:39 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 	libc-client2007e-dev 	libkrb5-dev 	libpq-dev 	libsqlite3-dev 	; 		docker-php-ext-configure 		imap --with-imap-ssl --with-kerberos 	; 		docker-php-ext-install -j "$(nproc)" 		imap 		pdo_mysql 		pdo_pgsql 		pdo_sqlite 		pgsql 	; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 		ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 			apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
-# Wed, 17 Feb 2021 20:12:54 GMT
-ARG POSTFIXADMIN_VERSION=3.3.6
-# Wed, 17 Feb 2021 20:12:56 GMT
-ARG POSTFIXADMIN_SHA512=9a54ff22f8ddad03378823e6fcf105c71b5c35812d7153bbf99752cfbeb09dd57c8a149351bdc42493724f288fd15a5495c02f448cd99642ebbb871d40231b46
-# Wed, 17 Feb 2021 20:12:57 GMT
-ENV POSTFIXADMIN_VERSION=3.3.6
-# Wed, 17 Feb 2021 20:12:58 GMT
-ENV POSTFIXADMIN_SHA512=9a54ff22f8ddad03378823e6fcf105c71b5c35812d7153bbf99752cfbeb09dd57c8a149351bdc42493724f288fd15a5495c02f448cd99642ebbb871d40231b46
-# Wed, 17 Feb 2021 20:13:02 GMT
+# Thu, 18 Feb 2021 00:49:05 GMT
+ARG POSTFIXADMIN_VERSION=3.3.7
+# Thu, 18 Feb 2021 00:49:07 GMT
+ARG POSTFIXADMIN_SHA512=c635b885235f2683532ff4fcd6d3e123fa5af8314cfcdbcdf412d7242444bb9c040a6eeb2f6b0669b9f5dd9fc56c53127779727768c68699885cc642717453ca
+# Thu, 18 Feb 2021 00:49:08 GMT
+ENV POSTFIXADMIN_VERSION=3.3.7
+# Thu, 18 Feb 2021 00:49:10 GMT
+ENV POSTFIXADMIN_SHA512=c635b885235f2683532ff4fcd6d3e123fa5af8314cfcdbcdf412d7242444bb9c040a6eeb2f6b0669b9f5dd9fc56c53127779727768c68699885cc642717453ca
+# Thu, 18 Feb 2021 00:49:14 GMT
 RUN set -eu; 	curl -fsSL -o postfixadmin.tar.gz "https://github.com/postfixadmin/postfixadmin/archive/postfixadmin-${POSTFIXADMIN_VERSION}.tar.gz"; 	echo "$POSTFIXADMIN_SHA512 *postfixadmin.tar.gz" | sha512sum -c -; 	mkdir /usr/src/postfixadmin; 	tar -xf postfixadmin.tar.gz -C /usr/src/postfixadmin --strip-components=1; 	rm postfixadmin.tar.gz; 	mkdir -p /usr/src/postfixadmin/templates_c; 	chown -R www-data:www-data /usr/src/postfixadmin
-# Wed, 17 Feb 2021 20:13:03 GMT
+# Thu, 18 Feb 2021 00:49:15 GMT
 COPY file:fdbbe9338cbed384d6b0de0652a7f3fd36623703b7f7ad586b41efefd5ef4bba in /usr/local/bin/ 
-# Wed, 17 Feb 2021 20:13:03 GMT
+# Thu, 18 Feb 2021 00:49:17 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Wed, 17 Feb 2021 20:13:04 GMT
+# Thu, 18 Feb 2021 00:49:18 GMT
 CMD ["php-fpm"]
 ```
 
@@ -304,13 +304,13 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 09 Feb 2021 18:00:31 GMT  
 		Size: 1.1 MB (1108230 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7c62732698d02b535910e357699ed554c994cc06a45f71be8a61397a9b3c573`  
-		Last Modified: Wed, 17 Feb 2021 20:13:39 GMT  
-		Size: 1.9 MB (1855011 bytes)  
+	-	`sha256:4ce142b1b0f00adaf97d05ee039c8cbfbf6759262ea0bc5d7c5ee571d61f5148`  
+		Last Modified: Thu, 18 Feb 2021 00:49:54 GMT  
+		Size: 1.9 MB (1855167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75fd7a5ab2ad9d124c9427557d0902d60ac5285205538e911f67aab7131e5cc1`  
-		Last Modified: Wed, 17 Feb 2021 20:13:38 GMT  
-		Size: 1.6 KB (1563 bytes)  
+	-	`sha256:b88a5a4f2a60c40d3408010e35e8682f66844160d0377beb8a9adae6dc5eb4ff`  
+		Last Modified: Thu, 18 Feb 2021 00:49:53 GMT  
+		Size: 1.6 KB (1561 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postfixadmin:3-fpm` - linux; arm variant v7
