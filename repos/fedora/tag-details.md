@@ -6,6 +6,7 @@
 -	[`fedora:32`](#fedora32)
 -	[`fedora:33`](#fedora33)
 -	[`fedora:34`](#fedora34)
+-	[`fedora:35`](#fedora35)
 -	[`fedora:latest`](#fedoralatest)
 -	[`fedora:rawhide`](#fedorarawhide)
 
@@ -571,6 +572,10 @@ CMD ["/bin/bash"]
 		Last Modified: Tue, 26 Jan 2021 01:41:58 GMT  
 		Size: 70.5 MB (70501644 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `fedora:35`
+
+**does not exist** (yet?)
 
 ## `fedora:latest`
 
