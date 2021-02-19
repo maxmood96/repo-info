@@ -1,18 +1,18 @@
-# `nginx:1.19.6`
+# `nginx:1.19.7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:298ec0e28760b8eb1aad79711dc29c19041c61d7cf342dd1f445e91f30500549`
-- Created: `2021-02-09T06:52:32.852494095Z`
-- Virtual Size: ~ 132.97 Mb  
+- Image ID: `sha256:35c43ace9216212c0f0e546a65eec93fa9fc8e96b25880ee222b7ed2ca1d2151`
+- Created: `2021-02-17T19:20:26.056161789Z`
+- Virtual Size: ~ 133.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.19.6`
-  - `NJS_VERSION=0.5.0`
+  - `NGINX_VERSION=1.19.7`
+  - `NJS_VERSION=0.5.1`
   - `PKG_RELEASE=1~buster`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
@@ -2068,11 +2068,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp2/1.36.0-2+deb10u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp2/1.36.0-2+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-geoip=1.19.6-1~buster`
+### `dpkg` source package: `nginx-module-geoip=1.19.7-1~buster`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.19.6-1~buster`
+- `nginx-module-geoip=1.19.7-1~buster`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2082,11 +2082,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-image-filter=1.19.6-1~buster`
+### `dpkg` source package: `nginx-module-image-filter=1.19.7-1~buster`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.19.6-1~buster`
+- `nginx-module-image-filter=1.19.7-1~buster`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2096,11 +2096,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-njs=1.19.6+0.5.0-1~buster`
+### `dpkg` source package: `nginx-module-njs=1.19.7+0.5.1-1~buster`
 
 Binary Packages:
 
-- `nginx-module-njs=1.19.6+0.5.0-1~buster`
+- `nginx-module-njs=1.19.7+0.5.1-1~buster`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2110,11 +2110,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-xslt=1.19.6-1~buster`
+### `dpkg` source package: `nginx-module-xslt=1.19.7-1~buster`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.19.6-1~buster`
+- `nginx-module-xslt=1.19.7-1~buster`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2124,11 +2124,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx=1.19.6-1~buster`
+### `dpkg` source package: `nginx=1.19.7-1~buster`
 
 Binary Packages:
 
-- `nginx=1.19.6-1~buster`
+- `nginx=1.19.7-1~buster`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.

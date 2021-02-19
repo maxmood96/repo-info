@@ -1,18 +1,18 @@
-# `nginx:1.19.6-perl`
+# `nginx:1.19.7-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d3215b5fa7c06e43f28b8c3c3fc07ef87fdd2e3609a1953798ab301c625b2742`
-- Created: `2021-02-09T06:53:45.211196597Z`
-- Virtual Size: ~ 178.64 Mb  
+- Image ID: `sha256:2acb1236d13ecc7c45991b5ab2bbedb307c38a7a10762ac40c719c2dccfa1d08`
+- Created: `2021-02-17T19:20:56.440212093Z`
+- Virtual Size: ~ 178.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.19.6`
-  - `NJS_VERSION=0.5.0`
+  - `NGINX_VERSION=1.19.7`
+  - `NJS_VERSION=0.5.1`
   - `PKG_RELEASE=1~buster`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
@@ -2099,11 +2099,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp2/1.36.0-2+deb10u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp2/1.36.0-2+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-geoip=1.19.6-1~buster`
+### `dpkg` source package: `nginx-module-geoip=1.19.7-1~buster`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.19.6-1~buster`
+- `nginx-module-geoip=1.19.7-1~buster`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2113,11 +2113,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-image-filter=1.19.6-1~buster`
+### `dpkg` source package: `nginx-module-image-filter=1.19.7-1~buster`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.19.6-1~buster`
+- `nginx-module-image-filter=1.19.7-1~buster`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2127,11 +2127,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-njs=1.19.6+0.5.0-1~buster`
+### `dpkg` source package: `nginx-module-njs=1.19.7+0.5.1-1~buster`
 
 Binary Packages:
 
-- `nginx-module-njs=1.19.6+0.5.0-1~buster`
+- `nginx-module-njs=1.19.7+0.5.1-1~buster`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2141,11 +2141,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-perl=1.19.6-1~buster`
+### `dpkg` source package: `nginx-module-perl=1.19.7-1~buster`
 
 Binary Packages:
 
-- `nginx-module-perl=1.19.6-1~buster`
+- `nginx-module-perl=1.19.7-1~buster`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2155,11 +2155,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-xslt=1.19.6-1~buster`
+### `dpkg` source package: `nginx-module-xslt=1.19.7-1~buster`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.19.6-1~buster`
+- `nginx-module-xslt=1.19.7-1~buster`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2169,11 +2169,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx=1.19.6-1~buster`
+### `dpkg` source package: `nginx=1.19.7-1~buster`
 
 Binary Packages:
 
-- `nginx=1.19.6-1~buster`
+- `nginx=1.19.7-1~buster`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2209,12 +2209,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.4.47+dfsg-3+deb10u5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.4.47+dfsg-3+deb10u5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.1.1d-0+deb10u4`
+### `dpkg` source package: `openssl=1.1.1d-0+deb10u5`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1d-0+deb10u4`
-- `openssl=1.1.1d-0+deb10u4`
+- `libssl1.1:amd64=1.1.1d-0+deb10u5`
+- `openssl=1.1.1d-0+deb10u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2223,18 +2223,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.1.1d-0+deb10u4
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1d-0+deb10u4.dsc' openssl_1.1.1d-0+deb10u4.dsc 2472 SHA256:b902902750711baf35c087bd220f0fc055ad41f9e810df07246e035fac195cf1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1d.orig.tar.gz' openssl_1.1.1d.orig.tar.gz 8845861 SHA256:1e3a91bc1f9dfce01af26026f856e064eab4c8ee0a8f457b5ae30b40b8b711f2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1d.orig.tar.gz.asc' openssl_1.1.1d.orig.tar.gz.asc 488 SHA256:f3fd3299a79421fffd51d35f62636b8e987dab1d3033d93a19d7685868e15395
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1d-0+deb10u4.debian.tar.xz' openssl_1.1.1d-0+deb10u4.debian.tar.xz 91472 SHA256:3f6a76b437f5407fe9dba0a47b9d5ba427c83255f17769c4d8532788146fa6ca
+$ apt-get source -qq --print-uris openssl=1.1.1d-0+deb10u5
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1d-0+deb10u5.dsc' openssl_1.1.1d-0+deb10u5.dsc 2472 SHA256:a09e1135475dc740ceeb86c3c9ce8eec6bcc931df2a06a70f461ff0ce477c180
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1d.orig.tar.gz' openssl_1.1.1d.orig.tar.gz 8845861 SHA256:1e3a91bc1f9dfce01af26026f856e064eab4c8ee0a8f457b5ae30b40b8b711f2
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1d.orig.tar.gz.asc' openssl_1.1.1d.orig.tar.gz.asc 488 SHA256:f3fd3299a79421fffd51d35f62636b8e987dab1d3033d93a19d7685868e15395
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1d-0+deb10u5.debian.tar.xz' openssl_1.1.1d-0+deb10u5.debian.tar.xz 95940 SHA256:70c3d201429bf5cdb198837da7ebe9e2bfe956f929ddc069f06cbb7508989c50
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/1.1.1d-0+deb10u4/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.1d-0+deb10u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.1d-0+deb10u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/1.1.1d-0+deb10u5/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.1d-0+deb10u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.1d-0+deb10u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.15-2+deb10u1`
 
