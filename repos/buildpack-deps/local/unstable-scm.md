@@ -823,20 +823,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.30.0-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.30.0-1.dsc' git_2.30.0-1.dsc 2867 SHA256:03e68585c8a2e0a1f1ee70aa1e80b10a6b771dacc29972b39916cdc23eeb81b4
-'http://deb.debian.org/debian/pool/main/g/git/git_2.30.0.orig.tar.xz' git_2.30.0.orig.tar.xz 6325652 SHA256:55735021109565721af805af382c45cce73c3cfaa59daad22443d1477d334d19
-'http://deb.debian.org/debian/pool/main/g/git/git_2.30.0-1.debian.tar.xz' git_2.30.0-1.debian.tar.xz 669656 SHA256:96406d78b1a1497d15502aba49903353067703fbe367d8ff0af2d322ab3275b2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.30.0-1/
 
-- https://sources.debian.net/src/git/1:2.30.0-1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.30.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.30.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.31-9`
 
@@ -1844,20 +1837,13 @@ Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 - `GPL-2`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-1
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.4.8+dfsg-1.dsc' libzstd_1.4.8+dfsg-1.dsc 2291 SHA256:f2d02ff2c386a2cf77d7d5b942aba42adc4083107bb9fe09a25666bdbfe6e4a7
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.4.8+dfsg.orig.tar.xz' libzstd_1.4.8+dfsg.orig.tar.xz 1331996 SHA256:1e8ce5c4880a6d5bd8d3186e4186607dd19b64fc98a3877fc13aeefd566d67c5
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.4.8+dfsg-1.debian.tar.xz' libzstd_1.4.8+dfsg-1.debian.tar.xz 13240 SHA256:064fe623d03eb5985cf05278d762bc3d6d3e7ac6232cfa7d1642637ae119e06b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-1/
 
-- https://sources.debian.net/src/libzstd/1.4.8+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/libzstd/1.4.8+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
@@ -2215,21 +2201,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1i-3
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1i-3.dsc' openssl_1.1.1i-3.dsc 2446 SHA256:ea07827ed727f6b41d5c4c609362e9f4dc6345edd00fa07e4aac7f18544d6d7d
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1i.orig.tar.gz' openssl_1.1.1i.orig.tar.gz 9808346 SHA256:e8be6a35fe41d10603c3cc635e93289ed00bf34b79671a3a4de64fcee00d5242
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1i.orig.tar.gz.asc' openssl_1.1.1i.orig.tar.gz.asc 488 SHA256:da48cfca2d64bdfca7a2c39c13571e2f1d3d7ea996d9365de5cae5a9e33b9791
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1i-3.debian.tar.xz' openssl_1.1.1i-3.debian.tar.xz 93392 SHA256:171a86280ff021714eeb461b7672643eb7a6bb83359463541da0f904d6c0ec6a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/1.1.1i-3/
 
-- https://sources.debian.net/src/openssl/1.1.1i-3/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.1i-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.1i-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.22-1`
 
@@ -2713,21 +2691,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `Unicode`
 - `Utfwidth`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.14.0-3
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.0-3.dsc' subversion_1.14.0-3.dsc 3807 SHA256:ebe6e2417a79ad5254072d994ccf6313489a90f299304ee2ccfb6ebe1392c580
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.0.orig.tar.gz' subversion_1.14.0.orig.tar.gz 11519871 SHA256:ef3d1147535e41874c304fb5b9ea32745fbf5d7faecf2ce21d4115b567e937d0
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.0.orig.tar.gz.asc' subversion_1.14.0.orig.tar.gz.asc 3917 SHA256:98333df38d29a64500d4ad1693741d3d087485555207289b4e53af309abac71a
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.0-3.debian.tar.xz' subversion_1.14.0-3.debian.tar.xz 427396 SHA256:fd5383bf82ccf89acd7caf0fd80dc01ee2f7a3e163dcab6b2646ad01b7b746d9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.14.0-3/
 
-- https://sources.debian.net/src/subversion/1.14.0-3/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.14.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.14.0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=247.3-1`
 

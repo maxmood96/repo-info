@@ -944,20 +944,13 @@ Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 - `GPL-3`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.182+20210205-1
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.182+20210205-1.dsc' elfutils_0.182+20210205-1.dsc 3091 SHA256:62aaa46ac26ff7b242fd2fb7204ad877dde84da526dd17294b500335138254ba
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.182+20210205.orig.tar.xz' elfutils_0.182+20210205.orig.tar.xz 8540748 SHA256:8fcea314275198fbcf11122087096751cd469e18e2b81ff97e823653dd5aa488
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.182+20210205-1.debian.tar.xz' elfutils_0.182+20210205-1.debian.tar.xz 33304 SHA256:604d82780ecc65065c414e9f0f3e3b2485b599ac71cf45f1cef8efdab97b6d28
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/elfutils/0.182+20210205-1/
 
-- https://sources.debian.net/src/elfutils/0.182+20210205-1/ (for browsing the source)
-- https://sources.debian.net/src/elfutils/0.182+20210205-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/elfutils/0.182+20210205-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.2.10-1`
 
@@ -3990,19 +3983,13 @@ Licenses: (parsed from: `/usr/share/doc/default-libmysqlclient-dev/copyright`, `
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-defaults=1.0.6
-'http://deb.debian.org/debian/pool/main/m/mysql-defaults/mysql-defaults_1.0.6.dsc' mysql-defaults_1.0.6.dsc 2235 SHA256:006f99f1fd9ea7ffdba1474860011d058e8a91c830571c3c3943299358cc6359
-'http://deb.debian.org/debian/pool/main/m/mysql-defaults/mysql-defaults_1.0.6.tar.xz' mysql-defaults_1.0.6.tar.xz 7168 SHA256:5de6b532989d7c6cc7bc4ae03f3a23682f11a6d0db52bf72e4ce301b78c4b409
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mysql-defaults/1.0.6/
 
-- https://sources.debian.net/src/mysql-defaults/1.0.6/ (for browsing the source)
-- https://sources.debian.net/src/mysql-defaults/1.0.6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mysql-defaults/1.0.6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.2+20201114-2`
 
@@ -5290,20 +5277,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.36.1-6
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.36.1-6.dsc' util-linux_2.36.1-6.dsc 4337 SHA256:84cc7a7805f5eae34d7682284c44dbf895620efa951d2abd255e27e02d0cd222
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.36.1.orig.tar.xz' util-linux_2.36.1.orig.tar.xz 5231880 SHA256:09fac242172cd8ec27f0739d8d192402c69417617091d8c6e974841568f37eed
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.36.1-6.debian.tar.xz' util-linux_2.36.1-6.debian.tar.xz 97300 SHA256:69277b9e6d205fec38f06d115371decadb5b1d7962084073d4aad0735c3d843c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.36.1-6/
 
-- https://sources.debian.net/src/util-linux/2.36.1-6/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.36.1-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.36.1-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21-1`
 
