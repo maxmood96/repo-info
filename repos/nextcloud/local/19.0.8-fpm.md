@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8d6d103b493a759ec6795f36713b413dfde3532a62726345592d89306c89dc0b`
-- Created: `2021-02-10T09:19:55.183120372Z`
+- Image ID: `sha256:2c898cdbb87fcca768368ad033db3653638f095b383626d5854615732f3cc042`
+- Created: `2021-02-19T22:18:26.454948309Z`
 - Virtual Size: ~ 732.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,6 +22,8 @@
   - `PHP_URL=https://www.php.net/distributions/php-7.4.15.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.15.tar.xz.asc`
   - `PHP_SHA256=9b859c65f0cf7b3eff9d4a28cfab719fb3d36a1db3c20d874a79b5ec44d43cb8`
+  - `PHP_MEMORY_LIMIT=512M`
+  - `PHP_UPLOAD_LIMIT=512M`
   - `NEXTCLOUD_VERSION=19.0.8`
 
 ## `dpkg` (`.deb`-based packages)

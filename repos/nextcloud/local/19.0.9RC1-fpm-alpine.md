@@ -1,10 +1,10 @@
-# `nextcloud:21.0.0RC1-fpm-alpine`
+# `nextcloud:19.0.9RC1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f05bba6199419a6ee1b2d19ddcafc756b4cc13c7208e1a5229bfbe1d84354663`
-- Created: `2021-02-10T09:27:47.311466797Z`
-- Virtual Size: ~ 505.03 Mb  
+- Image ID: `sha256:9cf39d651c11f97c107035c347ca90c29b03b1a6bbfc33a6ad7fe013eac18a2d`
+- Created: `2021-02-19T22:21:10.673669598Z`
+- Virtual Size: ~ 413.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,7 +22,9 @@
   - `PHP_URL=https://www.php.net/distributions/php-7.4.15.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.15.tar.xz.asc`
   - `PHP_SHA256=9b859c65f0cf7b3eff9d4a28cfab719fb3d36a1db3c20d874a79b5ec44d43cb8`
-  - `NEXTCLOUD_VERSION=21.0.0RC1`
+  - `PHP_MEMORY_LIMIT=512M`
+  - `PHP_UPLOAD_LIMIT=512M`
+  - `NEXTCLOUD_VERSION=19.0.9RC1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -114,16 +116,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.32.1-r2 description:
+busybox-1.32.1-r3 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.32.1-r2 webpage:
+busybox-1.32.1-r3 webpage:
 https://busybox.net/
 
-busybox-1.32.1-r2 installed size:
+busybox-1.32.1-r3 installed size:
 946176
 
-busybox-1.32.1-r2 license:
+busybox-1.32.1-r3 license:
 GPL-2.0-only
 
 ```
@@ -386,16 +388,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1i-r0 description:
+libcrypto1.1-1.1.1j-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1i-r0 webpage:
+libcrypto1.1-1.1.1j-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1i-r0 installed size:
+libcrypto1.1-1.1.1j-r0 installed size:
 2768896
 
-libcrypto1.1-1.1.1i-r0 license:
+libcrypto1.1-1.1.1j-r0 license:
 OpenSSL
 
 ```
@@ -471,16 +473,16 @@ BSD-3-Clause IJG Zlib
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.4.56-r0 description:
+libldap-2.4.57-r0 description:
 OpenLDAP libraries
 
-libldap-2.4.56-r0 webpage:
+libldap-2.4.57-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.4.56-r0 installed size:
+libldap-2.4.57-r0 installed size:
 630784
 
-libldap-2.4.56-r0 license:
+libldap-2.4.57-r0 license:
 custom
 
 ```
@@ -590,16 +592,16 @@ ISC
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1i-r0 description:
+libssl1.1-1.1.1j-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1i-r0 webpage:
+libssl1.1-1.1.1j-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1i-r0 installed size:
+libssl1.1-1.1.1j-r0 installed size:
 540672
 
-libssl1.1-1.1.1i-r0 license:
+libssl1.1-1.1.1j-r0 license:
 OpenSSL
 
 ```
@@ -896,16 +898,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1i-r0 description:
+openssl-1.1.1j-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-1.1.1i-r0 webpage:
+openssl-1.1.1j-r0 webpage:
 https://www.openssl.org/
 
-openssl-1.1.1i-r0 installed size:
-679936
+openssl-1.1.1j-r0 installed size:
+675840
 
-openssl-1.1.1i-r0 license:
+openssl-1.1.1j-r0 license:
 OpenSSL
 
 ```
@@ -981,16 +983,16 @@ Public-Domain
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.32.1-r2 description:
+ssl_client-1.32.1-r3 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.32.1-r2 webpage:
+ssl_client-1.32.1-r3 webpage:
 https://busybox.net/
 
-ssl_client-1.32.1-r2 installed size:
+ssl_client-1.32.1-r3 installed size:
 28672
 
-ssl_client-1.32.1-r2 license:
+ssl_client-1.32.1-r3 license:
 GPL-2.0-only
 
 ```
