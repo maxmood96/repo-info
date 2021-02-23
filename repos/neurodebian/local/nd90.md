@@ -1431,13 +1431,9 @@ Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris neurodebian=0.40.1~nd90+1
-'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.40.1~nd90+1.dsc' neurodebian_0.40.1~nd90+1.dsc 1629 SHA256:a41664956221a52772f61a7d3e5ba7967c6df5f1efff66512b12fcf51bf7da0d
-'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.40.1~nd90+1.tar.xz' neurodebian_0.40.1~nd90+1.tar.xz 8318464 SHA256:c9f790b0fd17e4f85a49e0b5e0e0b0031dd6c58a9a7597031a3321c87106174d
-```
 
 ### `dpkg` source package: `npth=1.3-1`
 
@@ -1478,20 +1474,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.44+dfsg-5+deb9u7
-'http://security.debian.org/debian-security/pool/updates/main/o/openldap/openldap_2.4.44+dfsg-5+deb9u7.dsc' openldap_2.4.44+dfsg-5+deb9u7.dsc 3017 SHA256:9b00375bbc5c65d7cc1923d2a1ee236e1434e1293895160bd4369f4e16c01177
-'http://security.debian.org/debian-security/pool/updates/main/o/openldap/openldap_2.4.44+dfsg.orig.tar.gz' openldap_2.4.44+dfsg.orig.tar.gz 4826590 SHA256:d5187c229bec163c5d97845846e1b87917755f85b04f444c08836384f4bd7ffe
-'http://security.debian.org/debian-security/pool/updates/main/o/openldap/openldap_2.4.44+dfsg-5+deb9u7.debian.tar.xz' openldap_2.4.44+dfsg-5+deb9u7.debian.tar.xz 173548 SHA256:e66b4686c6fc47be154bb528a2936f1ab12632953d3d4c6ec4d2ebaf5ea0b681
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openldap/2.4.44+dfsg-5+deb9u7/
 
-- https://sources.debian.net/src/openldap/2.4.44+dfsg-5+deb9u7/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.4.44+dfsg-5+deb9u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.4.44+dfsg-5+deb9u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.3-2+deb9u1`
 
