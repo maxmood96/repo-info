@@ -26,6 +26,10 @@
 -	[`influxdb:1.8-data-alpine`](#influxdb18-data-alpine)
 -	[`influxdb:1.8-meta`](#influxdb18-meta)
 -	[`influxdb:1.8-meta-alpine`](#influxdb18-meta-alpine)
+-	[`influxdb:2.0`](#influxdb20)
+-	[`influxdb:2.0.4`](#influxdb204)
+-	[`influxdb:2.0.4-alpine`](#influxdb204-alpine)
+-	[`influxdb:2.0-alpine`](#influxdb20-alpine)
 -	[`influxdb:alpine`](#influxdbalpine)
 -	[`influxdb:data`](#influxdbdata)
 -	[`influxdb:data-alpine`](#influxdbdata-alpine)
@@ -2688,6 +2692,22 @@ CMD ["influxd-meta"]
 		Last Modified: Thu, 17 Dec 2020 13:51:22 GMT  
 		Size: 373.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `influxdb:2.0`
+
+**does not exist** (yet?)
+
+## `influxdb:2.0.4`
+
+**does not exist** (yet?)
+
+## `influxdb:2.0.4-alpine`
+
+**does not exist** (yet?)
+
+## `influxdb:2.0-alpine`
+
+**does not exist** (yet?)
 
 ## `influxdb:alpine`
 
