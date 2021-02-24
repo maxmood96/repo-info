@@ -265,10 +265,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris boot=1.3-27-1
-'http://http.debian.net/debian/pool/main/b/boot/boot_1.3-27-1.dsc' boot_1.3-27-1.dsc 1802 SHA256:4ba059c42eed209da21f6a8499579e94c38fff402b08c93f89312e41c0c6e46f
-'http://http.debian.net/debian/pool/main/b/boot/boot_1.3-27.orig.tar.gz' boot_1.3-27.orig.tar.gz 236799 SHA256:34b2db5b4570377eaaff99d91882ad522c528842def907489b035d22fbb52aed
-'http://http.debian.net/debian/pool/main/b/boot/boot_1.3-27-1.debian.tar.xz' boot_1.3-27-1.debian.tar.xz 5240 SHA256:477313e0342dc76f23ac950a05a33f8de892c2d24b2b1f1e79f21f80cb268021
+'http://deb.debian.org/debian/pool/main/b/boot/boot_1.3-27-1.dsc' boot_1.3-27-1.dsc 1802 SHA256:4ba059c42eed209da21f6a8499579e94c38fff402b08c93f89312e41c0c6e46f
+'http://deb.debian.org/debian/pool/main/b/boot/boot_1.3-27.orig.tar.gz' boot_1.3-27.orig.tar.gz 236799 SHA256:34b2db5b4570377eaaff99d91882ad522c528842def907489b035d22fbb52aed
+'http://deb.debian.org/debian/pool/main/b/boot/boot_1.3-27-1.debian.tar.xz' boot_1.3-27-1.debian.tar.xz 5240 SHA256:477313e0342dc76f23ac950a05a33f8de892c2d24b2b1f1e79f21f80cb268021
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/boot/1.3-27-1/ (for browsing the source)
+- https://sources.debian.net/src/boot/1.3-27-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/boot/1.3-27-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `brotli=1.0.9-2`
 
@@ -512,10 +518,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris curl=7.74.0-1.1
-'http://http.debian.net/debian/pool/main/c/curl/curl_7.74.0-1.1.dsc' curl_7.74.0-1.1.dsc 2667 SHA256:38a98f50c870a7be3891ef15c06eb5d8be48dacfbfc2d96765081de07ef4dd36
-'http://http.debian.net/debian/pool/main/c/curl/curl_7.74.0.orig.tar.gz' curl_7.74.0.orig.tar.gz 4043409 SHA256:e56b3921eeb7a2951959c02db0912b5fcd5fdba5aca071da819e1accf338bbd7
-'http://http.debian.net/debian/pool/main/c/curl/curl_7.74.0-1.1.debian.tar.xz' curl_7.74.0-1.1.debian.tar.xz 31456 SHA256:7cbb5cff7442e71598997e83059221df6550276af35899775445218d020f9de6
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.74.0-1.1.dsc' curl_7.74.0-1.1.dsc 2667 SHA256:38a98f50c870a7be3891ef15c06eb5d8be48dacfbfc2d96765081de07ef4dd36
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.74.0.orig.tar.gz' curl_7.74.0.orig.tar.gz 4043409 SHA256:e56b3921eeb7a2951959c02db0912b5fcd5fdba5aca071da819e1accf338bbd7
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.74.0-1.1.debian.tar.xz' curl_7.74.0-1.1.debian.tar.xz 31456 SHA256:7cbb5cff7442e71598997e83059221df6550276af35899775445218d020f9de6
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/curl/7.74.0-1.1/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.74.0-1.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.74.0-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2.1`
 
@@ -534,10 +546,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cyrus-sasl2=2.1.27+dfsg-2.1
-'http://http.debian.net/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27+dfsg-2.1.dsc' cyrus-sasl2_2.1.27+dfsg-2.1.dsc 3433 SHA256:714b4f59fdf5e3c436b0f10d15535f0048f5164a9a40763f2537fadbd2175da8
-'http://http.debian.net/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27+dfsg.orig.tar.xz' cyrus-sasl2_2.1.27+dfsg.orig.tar.xz 2058596 SHA256:108b0c691c423837264f05abb559ea76c3dfdd91246555e8abe87c129a6e37cd
-'http://http.debian.net/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27+dfsg-2.1.debian.tar.xz' cyrus-sasl2_2.1.27+dfsg-2.1.debian.tar.xz 101356 SHA256:0b2cf5e3118a8d99fc39a8133e5508de298b90507fb8c0846d4dae840bf4ec60
+'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27+dfsg-2.1.dsc' cyrus-sasl2_2.1.27+dfsg-2.1.dsc 3433 SHA256:714b4f59fdf5e3c436b0f10d15535f0048f5164a9a40763f2537fadbd2175da8
+'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27+dfsg.orig.tar.xz' cyrus-sasl2_2.1.27+dfsg.orig.tar.xz 2058596 SHA256:108b0c691c423837264f05abb559ea76c3dfdd91246555e8abe87c129a6e37cd
+'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27+dfsg-2.1.debian.tar.xz' cyrus-sasl2_2.1.27+dfsg-2.1.debian.tar.xz 101356 SHA256:0b2cf5e3118a8d99fc39a8133e5508de298b90507fb8c0846d4dae840bf4ec60
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/cyrus-sasl2/2.1.27+dfsg-2.1/ (for browsing the source)
+- https://sources.debian.net/src/cyrus-sasl2/2.1.27+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.27+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.11+git20200708+dd9ef66-5`
 
@@ -737,17 +755,11 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris e2fsprogs=1.45.7-1
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.45.7-1.dsc' e2fsprogs_1.45.7-1.dsc 2967 SHA256:7a8cd1f61063b28472be1d0313246bc657ac15dd41ffcc8b8583fc8c0056d16b
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.45.7.orig.tar.gz' e2fsprogs_1.45.7.orig.tar.gz 7950063 SHA256:5e39f74b9e2a19510d40cf64ab875a1aebe7186cdb60545409e0659867de8f7c
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.45.7.orig.tar.gz.asc' e2fsprogs_1.45.7.orig.tar.gz.asc 7950063 SHA256:5e39f74b9e2a19510d40cf64ab875a1aebe7186cdb60545409e0659867de8f7c
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.45.7-1.debian.tar.xz' e2fsprogs_1.45.7-1.debian.tar.xz 81004 SHA256:286ee5d7effd700da9ec1a81c8756b3ec99650e0fdc2fb68edc902e63de3382f
+'http://http.debian.net/debian/pool/main/e/e2fsprogs/e2fsprogs_1.45.7-1.dsc' e2fsprogs_1.45.7-1.dsc 2967 SHA256:7a8cd1f61063b28472be1d0313246bc657ac15dd41ffcc8b8583fc8c0056d16b
+'http://http.debian.net/debian/pool/main/e/e2fsprogs/e2fsprogs_1.45.7.orig.tar.gz' e2fsprogs_1.45.7.orig.tar.gz 7950063 SHA256:5e39f74b9e2a19510d40cf64ab875a1aebe7186cdb60545409e0659867de8f7c
+'http://http.debian.net/debian/pool/main/e/e2fsprogs/e2fsprogs_1.45.7.orig.tar.gz.asc' e2fsprogs_1.45.7.orig.tar.gz.asc 7950063 SHA256:5e39f74b9e2a19510d40cf64ab875a1aebe7186cdb60545409e0659867de8f7c
+'http://http.debian.net/debian/pool/main/e/e2fsprogs/e2fsprogs_1.45.7-1.debian.tar.xz' e2fsprogs_1.45.7-1.debian.tar.xz 81004 SHA256:286ee5d7effd700da9ec1a81c8756b3ec99650e0fdc2fb68edc902e63de3382f
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/e2fsprogs/1.45.7-1/ (for browsing the source)
-- https://sources.debian.net/src/e2fsprogs/1.45.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/e2fsprogs/1.45.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ed=1.17-1`
 
@@ -1942,15 +1954,13 @@ Licenses: (parsed from: `/usr/share/doc/libjpeg-dev/copyright`, `/usr/share/doc/
 - `NTP`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libjpeg-turbo=1:2.0.6-1
-'http://http.debian.net/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.0.6-1.dsc' libjpeg-turbo_2.0.6-1.dsc 2577 SHA256:679caab1e9c75fa085e487ce1f9cccfae42599e4b59eda37b881be71bff7b181
-'http://http.debian.net/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.0.6.orig.tar.gz' libjpeg-turbo_2.0.6.orig.tar.gz 2192315 SHA256:d74b92ac33b0e3657123ddcf6728788c90dc84dcb6a52013d758af3c4af481bb
-'http://http.debian.net/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.0.6.orig.tar.gz.asc' libjpeg-turbo_2.0.6.orig.tar.gz.asc 793 SHA256:ab2d95f62c2f25b39823c2b0ee3d72979786f5c310c19943a74eed8c2abc7b4b
-'http://http.debian.net/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.0.6-1.debian.tar.xz' libjpeg-turbo_2.0.6-1.debian.tar.xz 99628 SHA256:59207eb7709478508e79b44bccb0211a88c968a1930dabe11d4183c7d66a5ec1
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libjpeg-turbo/1:2.0.6-1/
+
 
 ### `dpkg` source package: `libmd=1.0.3-3`
 
@@ -2146,20 +2156,13 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libselinux=3.1-2
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.1-2.dsc' libselinux_3.1-2.dsc 2310 SHA256:9d9a31ac3e11dcaa1bbdaa28c3bdc7dc44a94b0b3d6b380e5c5e69f6f57c5901
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.1.orig.tar.gz' libselinux_3.1.orig.tar.gz 204703 SHA256:ea5dcbb4d859e3f999c26a13c630da2f16dff9462e3cc8cb7b458ac157d112e7
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.1-2.debian.tar.xz' libselinux_3.1-2.debian.tar.xz 23788 SHA256:336c6df026daf947f37c74d3e3efdfc6b235491d402096f050ce2c9d8bbad415
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libselinux/3.1-2/
 
-- https://sources.debian.net/src/libselinux/3.1-2/ (for browsing the source)
-- https://sources.debian.net/src/libselinux/3.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libselinux/3.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsemanage=3.1-1`
 
@@ -2688,20 +2691,13 @@ Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 - `GPL-2`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-1
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.4.8+dfsg-1.dsc' libzstd_1.4.8+dfsg-1.dsc 2291 SHA256:f2d02ff2c386a2cf77d7d5b942aba42adc4083107bb9fe09a25666bdbfe6e4a7
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.4.8+dfsg.orig.tar.xz' libzstd_1.4.8+dfsg.orig.tar.xz 1331996 SHA256:1e8ce5c4880a6d5bd8d3186e4186607dd19b64fc98a3877fc13aeefd566d67c5
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.4.8+dfsg-1.debian.tar.xz' libzstd_1.4.8+dfsg-1.debian.tar.xz 13240 SHA256:064fe623d03eb5985cf05278d762bc3d6d3e7ac6232cfa7d1642637ae119e06b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-1/
 
-- https://sources.debian.net/src/libzstd/1.4.8+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/libzstd/1.4.8+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `linux=5.10.13-1`
 
@@ -3026,10 +3022,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris nghttp2=1.43.0-1
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.43.0-1.dsc' nghttp2_1.43.0-1.dsc 2548 SHA256:287a6fa84523ad2e6bb2215bcfc7ecc413a536fc9af20b0b20f0984e64bb034d
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.43.0.orig.tar.bz2' nghttp2_1.43.0.orig.tar.bz2 4521786 SHA256:556f24653397c71ebb8270b3c5e5507f0893e6eac2c6eeda6be2ecf6e1f50f62
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.43.0-1.debian.tar.xz' nghttp2_1.43.0-1.debian.tar.xz 16308 SHA256:5dbb013a6f2152354fee33a2ecf08817738d4f8f4d78bec0cd0cb3bcac690821
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.43.0-1.dsc' nghttp2_1.43.0-1.dsc 2548 SHA256:287a6fa84523ad2e6bb2215bcfc7ecc413a536fc9af20b0b20f0984e64bb034d
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.43.0.orig.tar.bz2' nghttp2_1.43.0.orig.tar.bz2 4521786 SHA256:556f24653397c71ebb8270b3c5e5507f0893e6eac2c6eeda6be2ecf6e1f50f62
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.43.0-1.debian.tar.xz' nghttp2_1.43.0-1.debian.tar.xz 16308 SHA256:5dbb013a6f2152354fee33a2ecf08817738d4f8f4d78bec0cd0cb3bcac690821
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/nghttp2/1.43.0-1/ (for browsing the source)
+- https://sources.debian.net/src/nghttp2/1.43.0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nghttp2/1.43.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nlme=3.1.152-1`
 
@@ -3100,10 +3102,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openldap=2.4.57+dfsg-2
-'http://http.debian.net/debian/pool/main/o/openldap/openldap_2.4.57+dfsg-2.dsc' openldap_2.4.57+dfsg-2.dsc 3061 SHA256:1fcfd2ce54964068ddf36b64727c99d767e73f7520d6525a286f8e3564821971
-'http://http.debian.net/debian/pool/main/o/openldap/openldap_2.4.57+dfsg.orig.tar.gz' openldap_2.4.57+dfsg.orig.tar.gz 5054318 SHA256:009cc88733eaf41a21607e073a19bce53d7d6ed90a5c280e80880978c4e91db7
-'http://http.debian.net/debian/pool/main/o/openldap/openldap_2.4.57+dfsg-2.debian.tar.xz' openldap_2.4.57+dfsg-2.debian.tar.xz 168496 SHA256:e1ca889e9e7a6ea2eb8adde95119df4a08199c10bd772263989138e85171cc62
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.57+dfsg-2.dsc' openldap_2.4.57+dfsg-2.dsc 3061 SHA256:1fcfd2ce54964068ddf36b64727c99d767e73f7520d6525a286f8e3564821971
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.57+dfsg.orig.tar.gz' openldap_2.4.57+dfsg.orig.tar.gz 5054318 SHA256:009cc88733eaf41a21607e073a19bce53d7d6ed90a5c280e80880978c4e91db7
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.57+dfsg-2.debian.tar.xz' openldap_2.4.57+dfsg-2.debian.tar.xz 168496 SHA256:e1ca889e9e7a6ea2eb8adde95119df4a08199c10bd772263989138e85171cc62
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/openldap/2.4.57+dfsg-2/ (for browsing the source)
+- https://sources.debian.net/src/openldap/2.4.57+dfsg-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openldap/2.4.57+dfsg-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.1i-3`
 
@@ -3116,21 +3124,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1i-3
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1i-3.dsc' openssl_1.1.1i-3.dsc 2446 SHA256:ea07827ed727f6b41d5c4c609362e9f4dc6345edd00fa07e4aac7f18544d6d7d
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1i.orig.tar.gz' openssl_1.1.1i.orig.tar.gz 9808346 SHA256:e8be6a35fe41d10603c3cc635e93289ed00bf34b79671a3a4de64fcee00d5242
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1i.orig.tar.gz.asc' openssl_1.1.1i.orig.tar.gz.asc 488 SHA256:da48cfca2d64bdfca7a2c39c13571e2f1d3d7ea996d9365de5cae5a9e33b9791
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1i-3.debian.tar.xz' openssl_1.1.1i-3.debian.tar.xz 93392 SHA256:171a86280ff021714eeb461b7672643eb7a6bb83359463541da0f904d6c0ec6a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/1.1.1i-3/
 
-- https://sources.debian.net/src/openssl/1.1.1i-3/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.1i-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.1i-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.22-1`
 
@@ -3472,10 +3472,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris r-cran-mass=7.3-53.1-1
-'http://http.debian.net/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-53.1-1.dsc' r-cran-mass_7.3-53.1-1.dsc 1865 SHA256:757a78d569a3d7f8a6cc0c7193fd0cf2acec8688b70ebaa23104944bc5786091
-'http://http.debian.net/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-53.1.orig.tar.gz' r-cran-mass_7.3-53.1.orig.tar.gz 505007 SHA256:e45b1eb97ee32db9a3a211ce42b972094827d93ef2f48bda653c121f08314465
-'http://http.debian.net/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-53.1-1.debian.tar.xz' r-cran-mass_7.3-53.1-1.debian.tar.xz 6300 SHA256:f45fcb1952d3d5bca99078e1d96568056dbae0c0957f7d7155201dda9ac8ebc5
+'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-53.1-1.dsc' r-cran-mass_7.3-53.1-1.dsc 1865 SHA256:757a78d569a3d7f8a6cc0c7193fd0cf2acec8688b70ebaa23104944bc5786091
+'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-53.1.orig.tar.gz' r-cran-mass_7.3-53.1.orig.tar.gz 505007 SHA256:e45b1eb97ee32db9a3a211ce42b972094827d93ef2f48bda653c121f08314465
+'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-53.1-1.debian.tar.xz' r-cran-mass_7.3-53.1-1.debian.tar.xz 6300 SHA256:f45fcb1952d3d5bca99078e1d96568056dbae0c0957f7d7155201dda9ac8ebc5
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/r-cran-mass/7.3-53.1-1/ (for browsing the source)
+- https://sources.debian.net/src/r-cran-mass/7.3-53.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/r-cran-mass/7.3-53.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-nnet=7.3-15-1`
 
