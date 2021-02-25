@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:89e70ffdd31faaf97a6ce82f96e84f8f26bbb8c16e3577744868c094bf9e3130`
-- Created: `2021-02-10T06:32:23.201024811Z`
-- Virtual Size: ~ 581.20 Mb  
+- Image ID: `sha256:294746328488d64aa817fdaf10b95122ef42a405832f9d5a3e47cd66adf6464d`
+- Created: `2021-02-25T03:38:55.523561144Z`
+- Virtual Size: ~ 581.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
@@ -13,8 +13,8 @@
   - `JAVA_HOME=/usr/local/openjdk-8`
   - `LANG=C.UTF-8`
   - `JAVA_VERSION=8u282`
-  - `JRUBY_VERSION=9.2.14.0`
-  - `JRUBY_SHA256=32e73b2551f01e459ece84f732bcbf80712c3b71b6df7dbd063354b4d277e0b5`
+  - `JRUBY_VERSION=9.2.15.0`
+  - `JRUBY_SHA256=9e8e5d73c42d1dad8a795a6dc39bd87e88fc8863f76e065e4099c32d085205b0`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
