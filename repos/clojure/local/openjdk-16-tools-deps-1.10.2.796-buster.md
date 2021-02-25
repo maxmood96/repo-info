@@ -1,19 +1,19 @@
-# `clojure:openjdk-11-tools-deps`
+# `clojure:openjdk-16-tools-deps-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2aa6cdb9ffe58d32750c1d855c2e63ae39f4a4194e6dd1560e6cae33ff90b5c6`
-- Created: `2021-02-10T06:18:58.071669288Z`
-- Virtual Size: ~ 698.31 Mb  
+- Image ID: `sha256:e75c325abbebfcb7327d099d43de58d54b29d2cc882e3b8616a21eee330499c2`
+- Created: `2021-02-24T18:27:06.927983677Z`
+- Virtual Size: ~ 701.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["sh","-c","sleep 1 && exec clj"]`
 - Environment:
-  - `PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/local/openjdk-11`
+  - `PATH=/usr/local/openjdk-16/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `JAVA_HOME=/usr/local/openjdk-16`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=11.0.10`
-  - `CLOJURE_VERSION=1.10.2.774`
+  - `JAVA_VERSION=16`
+  - `CLOJURE_VERSION=1.10.2.796`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -278,6 +278,36 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bash/5.0-4/ (for browsing the source)
 - https://sources.debian.net/src/bash/5.0-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bash/5.0-4/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `binutils=2.31.1-16`
+
+Binary Packages:
+
+- `binutils=2.31.1-16`
+- `binutils-common:amd64=2.31.1-16`
+- `binutils-x86-64-linux-gnu=2.31.1-16`
+- `libbinutils:amd64=2.31.1-16`
+
+Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`)
+
+- `GFDL`
+- `GPL`
+- `LGPL`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris binutils=2.31.1-16
+'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.31.1-16.dsc' binutils_2.31.1-16.dsc 11421 SHA256:ec76c13684d922a3619d7ec982db191714927bde6de6a3ff89e95d1ce7a61f33
+'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.31.1.orig.tar.xz' binutils_2.31.1.orig.tar.xz 21649228 SHA256:e398a2d579faa0f2b5a988add5f7481af8e21a21f63b6ea5702e6f517960c5eb
+'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.31.1-16.debian.tar.xz' binutils_2.31.1-16.debian.tar.xz 127464 SHA256:15fc82a7c682da6bcbf56caf57da8f059655369cbfeb58b8312040e53e4fa11d
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/binutils/2.31.1-16/ (for browsing the source)
+- https://sources.debian.net/src/binutils/2.31.1-16/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/binutils/2.31.1-16/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.6-9.2~deb10u1`
 
