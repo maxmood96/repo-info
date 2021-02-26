@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9859a8cdeedb56f85d812ba6a95a1ec3c0430c8a8424f8f7db56c705026bd3ba`
-- Created: `2021-01-29T04:32:35.131043289Z`
-- Virtual Size: ~ 89.22 Mb  
+- Image ID: `sha256:2543a379287e378b03dac2d8befcb34c5d3d8b6eaa973ea234d1b641ac139982`
+- Created: `2021-02-25T03:10:53.8321701Z`
+- Virtual Size: ~ 90.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["telegraf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `TELEGRAF_VERSION=1.17.2`
+  - `TELEGRAF_VERSION=1.17.3`
 
 ## `apk` (`.apk`-based packages)
 
@@ -188,16 +188,16 @@ BSD-3-Clause OR GPL-2.0-only
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1i-r0 description:
+libcrypto1.1-1.1.1j-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1i-r0 webpage:
+libcrypto1.1-1.1.1j-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1i-r0 installed size:
+libcrypto1.1-1.1.1j-r0 installed size:
 2764800
 
-libcrypto1.1-1.1.1i-r0 license:
+libcrypto1.1-1.1.1j-r0 license:
 OpenSSL
 
 ```
@@ -239,16 +239,16 @@ GPL-2.0 LGPL-2.1+
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1i-r0 description:
+libssl1.1-1.1.1j-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1i-r0 webpage:
+libssl1.1-1.1.1j-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1i-r0 installed size:
+libssl1.1-1.1.1j-r0 installed size:
 540672
 
-libssl1.1-1.1.1i-r0 license:
+libssl1.1-1.1.1j-r0 license:
 OpenSSL
 
 ```
@@ -494,16 +494,16 @@ GPL-2.0-only AND LGPL-2.1-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2020c-r1 description:
+tzdata-2021a-r0 description:
 Timezone data
 
-tzdata-2020c-r1 webpage:
+tzdata-2021a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2020c-r1 installed size:
-3526656
+tzdata-2021a-r0 installed size:
+3518464
 
-tzdata-2020c-r1 license:
+tzdata-2021a-r0 license:
 Public-Domain
 
 ```
