@@ -10,30 +10,46 @@
 -	[`pypy:2-7.3.3-buster`](#pypy2-733-buster)
 -	[`pypy:2-7.3.3-slim`](#pypy2-733-slim)
 -	[`pypy:2-7.3.3-slim-buster`](#pypy2-733-slim-buster)
+-	[`pypy:2-7.3.3-windowsservercore`](#pypy2-733-windowsservercore)
+-	[`pypy:2-7.3.3-windowsservercore-1809`](#pypy2-733-windowsservercore-1809)
 -	[`pypy:2-7.3-buster`](#pypy2-73-buster)
 -	[`pypy:2-7.3-slim`](#pypy2-73-slim)
 -	[`pypy:2-7.3-slim-buster`](#pypy2-73-slim-buster)
+-	[`pypy:2-7.3-windowsservercore`](#pypy2-73-windowsservercore)
+-	[`pypy:2-7.3-windowsservercore-1809`](#pypy2-73-windowsservercore-1809)
 -	[`pypy:2.7-7`](#pypy27-7)
 -	[`pypy:2.7-7.3`](#pypy27-73)
 -	[`pypy:2.7-7.3.3`](#pypy27-733)
 -	[`pypy:2.7-7.3.3-buster`](#pypy27-733-buster)
 -	[`pypy:2.7-7.3.3-slim`](#pypy27-733-slim)
 -	[`pypy:2.7-7.3.3-slim-buster`](#pypy27-733-slim-buster)
+-	[`pypy:2.7-7.3.3-windowsservercore`](#pypy27-733-windowsservercore)
+-	[`pypy:2.7-7.3.3-windowsservercore-1809`](#pypy27-733-windowsservercore-1809)
 -	[`pypy:2.7-7.3-buster`](#pypy27-73-buster)
 -	[`pypy:2.7-7.3-slim`](#pypy27-73-slim)
 -	[`pypy:2.7-7.3-slim-buster`](#pypy27-73-slim-buster)
+-	[`pypy:2.7-7.3-windowsservercore`](#pypy27-73-windowsservercore)
+-	[`pypy:2.7-7.3-windowsservercore-1809`](#pypy27-73-windowsservercore-1809)
 -	[`pypy:2.7-7-buster`](#pypy27-7-buster)
 -	[`pypy:2.7-7-slim`](#pypy27-7-slim)
 -	[`pypy:2.7-7-slim-buster`](#pypy27-7-slim-buster)
+-	[`pypy:2.7-7-windowsservercore`](#pypy27-7-windowsservercore)
+-	[`pypy:2.7-7-windowsservercore-1809`](#pypy27-7-windowsservercore-1809)
 -	[`pypy:2-7-buster`](#pypy2-7-buster)
 -	[`pypy:2.7-buster`](#pypy27-buster)
 -	[`pypy:2-7-slim`](#pypy2-7-slim)
 -	[`pypy:2.7-slim`](#pypy27-slim)
 -	[`pypy:2-7-slim-buster`](#pypy2-7-slim-buster)
 -	[`pypy:2.7-slim-buster`](#pypy27-slim-buster)
+-	[`pypy:2-7-windowsservercore`](#pypy2-7-windowsservercore)
+-	[`pypy:2.7-windowsservercore`](#pypy27-windowsservercore)
+-	[`pypy:2-7-windowsservercore-1809`](#pypy2-7-windowsservercore-1809)
+-	[`pypy:2.7-windowsservercore-1809`](#pypy27-windowsservercore-1809)
 -	[`pypy:2-buster`](#pypy2-buster)
 -	[`pypy:2-slim`](#pypy2-slim)
 -	[`pypy:2-slim-buster`](#pypy2-slim-buster)
+-	[`pypy:2-windowsservercore`](#pypy2-windowsservercore)
+-	[`pypy:2-windowsservercore-1809`](#pypy2-windowsservercore-1809)
 -	[`pypy:3`](#pypy3)
 -	[`pypy:3.6`](#pypy36)
 -	[`pypy:3.6-7`](#pypy36-7)
@@ -42,15 +58,23 @@
 -	[`pypy:3.6-7.3.3-buster`](#pypy36-733-buster)
 -	[`pypy:3.6-7.3.3-slim`](#pypy36-733-slim)
 -	[`pypy:3.6-7.3.3-slim-buster`](#pypy36-733-slim-buster)
+-	[`pypy:3.6-7.3.3-windowsservercore`](#pypy36-733-windowsservercore)
+-	[`pypy:3.6-7.3.3-windowsservercore-1809`](#pypy36-733-windowsservercore-1809)
 -	[`pypy:3.6-7.3-buster`](#pypy36-73-buster)
 -	[`pypy:3.6-7.3-slim`](#pypy36-73-slim)
 -	[`pypy:3.6-7.3-slim-buster`](#pypy36-73-slim-buster)
+-	[`pypy:3.6-7.3-windowsservercore`](#pypy36-73-windowsservercore)
+-	[`pypy:3.6-7.3-windowsservercore-1809`](#pypy36-73-windowsservercore-1809)
 -	[`pypy:3.6-7-buster`](#pypy36-7-buster)
 -	[`pypy:3.6-7-slim`](#pypy36-7-slim)
 -	[`pypy:3.6-7-slim-buster`](#pypy36-7-slim-buster)
+-	[`pypy:3.6-7-windowsservercore`](#pypy36-7-windowsservercore)
+-	[`pypy:3.6-7-windowsservercore-1809`](#pypy36-7-windowsservercore-1809)
 -	[`pypy:3.6-buster`](#pypy36-buster)
 -	[`pypy:3.6-slim`](#pypy36-slim)
 -	[`pypy:3.6-slim-buster`](#pypy36-slim-buster)
+-	[`pypy:3.6-windowsservercore`](#pypy36-windowsservercore)
+-	[`pypy:3.6-windowsservercore-1809`](#pypy36-windowsservercore-1809)
 -	[`pypy:3-7`](#pypy3-7)
 -	[`pypy:3.7`](#pypy37)
 -	[`pypy:3-7.3`](#pypy3-73)
@@ -58,34 +82,52 @@
 -	[`pypy:3-7.3.3-buster`](#pypy3-733-buster)
 -	[`pypy:3-7.3.3-slim`](#pypy3-733-slim)
 -	[`pypy:3-7.3.3-slim-buster`](#pypy3-733-slim-buster)
+-	[`pypy:3-7.3.3-windowsservercore`](#pypy3-733-windowsservercore)
+-	[`pypy:3-7.3.3-windowsservercore-1809`](#pypy3-733-windowsservercore-1809)
 -	[`pypy:3-7.3-buster`](#pypy3-73-buster)
 -	[`pypy:3-7.3-slim`](#pypy3-73-slim)
 -	[`pypy:3-7.3-slim-buster`](#pypy3-73-slim-buster)
+-	[`pypy:3-7.3-windowsservercore`](#pypy3-73-windowsservercore)
+-	[`pypy:3-7.3-windowsservercore-1809`](#pypy3-73-windowsservercore-1809)
 -	[`pypy:3.7-7`](#pypy37-7)
 -	[`pypy:3.7-7.3`](#pypy37-73)
 -	[`pypy:3.7-7.3.3`](#pypy37-733)
 -	[`pypy:3.7-7.3.3-buster`](#pypy37-733-buster)
 -	[`pypy:3.7-7.3.3-slim`](#pypy37-733-slim)
 -	[`pypy:3.7-7.3.3-slim-buster`](#pypy37-733-slim-buster)
+-	[`pypy:3.7-7.3.3-windowsservercore`](#pypy37-733-windowsservercore)
+-	[`pypy:3.7-7.3.3-windowsservercore-1809`](#pypy37-733-windowsservercore-1809)
 -	[`pypy:3.7-7.3-buster`](#pypy37-73-buster)
 -	[`pypy:3.7-7.3-slim`](#pypy37-73-slim)
 -	[`pypy:3.7-7.3-slim-buster`](#pypy37-73-slim-buster)
+-	[`pypy:3.7-7.3-windowsservercore`](#pypy37-73-windowsservercore)
+-	[`pypy:3.7-7.3-windowsservercore-1809`](#pypy37-73-windowsservercore-1809)
 -	[`pypy:3.7-7-buster`](#pypy37-7-buster)
 -	[`pypy:3.7-7-slim`](#pypy37-7-slim)
 -	[`pypy:3.7-7-slim-buster`](#pypy37-7-slim-buster)
+-	[`pypy:3.7-7-windowsservercore`](#pypy37-7-windowsservercore)
+-	[`pypy:3.7-7-windowsservercore-1809`](#pypy37-7-windowsservercore-1809)
 -	[`pypy:3-7-buster`](#pypy3-7-buster)
 -	[`pypy:3.7-buster`](#pypy37-buster)
 -	[`pypy:3-7-slim`](#pypy3-7-slim)
 -	[`pypy:3.7-slim`](#pypy37-slim)
 -	[`pypy:3-7-slim-buster`](#pypy3-7-slim-buster)
 -	[`pypy:3.7-slim-buster`](#pypy37-slim-buster)
+-	[`pypy:3-7-windowsservercore`](#pypy3-7-windowsservercore)
+-	[`pypy:3.7-windowsservercore`](#pypy37-windowsservercore)
+-	[`pypy:3-7-windowsservercore-1809`](#pypy3-7-windowsservercore-1809)
+-	[`pypy:3.7-windowsservercore-1809`](#pypy37-windowsservercore-1809)
 -	[`pypy:3-buster`](#pypy3-buster)
 -	[`pypy:3-slim`](#pypy3-slim)
 -	[`pypy:3-slim-buster`](#pypy3-slim-buster)
+-	[`pypy:3-windowsservercore`](#pypy3-windowsservercore)
+-	[`pypy:3-windowsservercore-1809`](#pypy3-windowsservercore-1809)
 -	[`pypy:buster`](#pypybuster)
 -	[`pypy:latest`](#pypylatest)
 -	[`pypy:slim`](#pypyslim)
 -	[`pypy:slim-buster`](#pypyslim-buster)
+-	[`pypy:windowsservercore`](#pypywindowsservercore)
+-	[`pypy:windowsservercore-1809`](#pypywindowsservercore-1809)
 
 ## `pypy:2`
 
@@ -2007,6 +2049,14 @@ CMD ["pypy"]
 		Size: 2.2 MB (2238786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `pypy:2-7.3.3-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:2-7.3.3-windowsservercore-1809`
+
+**does not exist** (yet?)
+
 ## `pypy:2-7.3-buster`
 
 ```console
@@ -2636,6 +2686,14 @@ CMD ["pypy"]
 		Last Modified: Thu, 18 Feb 2021 23:47:23 GMT  
 		Size: 2.2 MB (2238786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `pypy:2-7.3-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:2-7.3-windowsservercore-1809`
+
+**does not exist** (yet?)
 
 ## `pypy:2.7-7`
 
@@ -4041,6 +4099,14 @@ CMD ["pypy"]
 		Size: 2.2 MB (2238786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `pypy:2.7-7.3.3-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:2.7-7.3.3-windowsservercore-1809`
+
+**does not exist** (yet?)
+
 ## `pypy:2.7-7.3-buster`
 
 ```console
@@ -4671,6 +4737,14 @@ CMD ["pypy"]
 		Size: 2.2 MB (2238786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `pypy:2.7-7.3-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:2.7-7.3-windowsservercore-1809`
+
+**does not exist** (yet?)
+
 ## `pypy:2.7-7-buster`
 
 ```console
@@ -5300,6 +5374,14 @@ CMD ["pypy"]
 		Last Modified: Thu, 18 Feb 2021 23:47:23 GMT  
 		Size: 2.2 MB (2238786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `pypy:2.7-7-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:2.7-7-windowsservercore-1809`
+
+**does not exist** (yet?)
 
 ## `pypy:2-7-buster`
 
@@ -6561,6 +6643,22 @@ CMD ["pypy"]
 		Size: 2.2 MB (2238786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `pypy:2-7-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:2.7-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:2-7-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `pypy:2.7-windowsservercore-1809`
+
+**does not exist** (yet?)
+
 ## `pypy:2-buster`
 
 ```console
@@ -7190,6 +7288,14 @@ CMD ["pypy"]
 		Last Modified: Thu, 18 Feb 2021 23:47:23 GMT  
 		Size: 2.2 MB (2238786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `pypy:2-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:2-windowsservercore-1809`
+
+**does not exist** (yet?)
 
 ## `pypy:3`
 
@@ -9727,6 +9833,14 @@ CMD ["pypy3"]
 		Size: 2.4 MB (2414098 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `pypy:3.6-7.3.3-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:3.6-7.3.3-windowsservercore-1809`
+
+**does not exist** (yet?)
+
 ## `pypy:3.6-7.3-buster`
 
 ```console
@@ -10557,6 +10671,14 @@ CMD ["pypy3"]
 		Last Modified: Thu, 18 Feb 2021 23:47:25 GMT  
 		Size: 2.4 MB (2414098 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `pypy:3.6-7.3-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:3.6-7.3-windowsservercore-1809`
+
+**does not exist** (yet?)
 
 ## `pypy:3.6-7-buster`
 
@@ -11389,6 +11511,14 @@ CMD ["pypy3"]
 		Size: 2.4 MB (2414098 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `pypy:3.6-7-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:3.6-7-windowsservercore-1809`
+
+**does not exist** (yet?)
+
 ## `pypy:3.6-buster`
 
 ```console
@@ -12219,6 +12349,14 @@ CMD ["pypy3"]
 		Last Modified: Thu, 18 Feb 2021 23:47:25 GMT  
 		Size: 2.4 MB (2414098 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `pypy:3.6-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:3.6-windowsservercore-1809`
+
+**does not exist** (yet?)
 
 ## `pypy:3-7`
 
@@ -14415,6 +14553,14 @@ CMD ["pypy3"]
 		Size: 2.4 MB (2414098 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `pypy:3-7.3.3-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:3-7.3.3-windowsservercore-1809`
+
+**does not exist** (yet?)
+
 ## `pypy:3-7.3-buster`
 
 ```console
@@ -15245,6 +15391,14 @@ CMD ["pypy3"]
 		Last Modified: Thu, 18 Feb 2021 23:47:25 GMT  
 		Size: 2.4 MB (2414098 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `pypy:3-7.3-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:3-7.3-windowsservercore-1809`
+
+**does not exist** (yet?)
 
 ## `pypy:3.7-7`
 
@@ -17100,6 +17254,14 @@ CMD ["pypy3"]
 		Size: 2.6 MB (2565233 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `pypy:3.7-7.3.3-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:3.7-7.3.3-windowsservercore-1809`
+
+**does not exist** (yet?)
+
 ## `pypy:3.7-7.3-buster`
 
 ```console
@@ -17931,6 +18093,14 @@ CMD ["pypy3"]
 		Size: 2.6 MB (2565233 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `pypy:3.7-7.3-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:3.7-7.3-windowsservercore-1809`
+
+**does not exist** (yet?)
+
 ## `pypy:3.7-7-buster`
 
 ```console
@@ -18761,6 +18931,14 @@ CMD ["pypy3"]
 		Last Modified: Thu, 18 Feb 2021 23:46:38 GMT  
 		Size: 2.6 MB (2565233 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `pypy:3.7-7-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:3.7-7-windowsservercore-1809`
+
+**does not exist** (yet?)
 
 ## `pypy:3-7-buster`
 
@@ -20424,6 +20602,22 @@ CMD ["pypy3"]
 		Size: 2.6 MB (2565233 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `pypy:3-7-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:3.7-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:3-7-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `pypy:3.7-windowsservercore-1809`
+
+**does not exist** (yet?)
+
 ## `pypy:3-buster`
 
 ```console
@@ -21254,6 +21448,14 @@ CMD ["pypy3"]
 		Last Modified: Thu, 18 Feb 2021 23:47:25 GMT  
 		Size: 2.4 MB (2414098 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `pypy:3-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:3-windowsservercore-1809`
+
+**does not exist** (yet?)
 
 ## `pypy:buster`
 
@@ -22426,3 +22628,11 @@ CMD ["pypy3"]
 		Last Modified: Thu, 18 Feb 2021 23:47:25 GMT  
 		Size: 2.4 MB (2414098 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `pypy:windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:windowsservercore-1809`
+
+**does not exist** (yet?)
