@@ -15,7 +15,7 @@
 ## `mysql:5`
 
 ```console
-$ docker pull mysql@sha256:853105ad984a9fe87dd109be6756e1fbdba8b003b303d88ac0dda6b455f36556
+$ docker pull mysql@sha256:9fc60b229633ce1d1f2ee306705152d4b001056fb27c1b5debe23a732df72b70
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -25,14 +25,14 @@ $ docker pull mysql@sha256:853105ad984a9fe87dd109be6756e1fbdba8b003b303d88ac0dda
 ### `mysql:5` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:8662f14f7b7cb7ab1fd45595d6057278f9405bec0de7b494b14157ed5f6c3038
+$ docker pull mysql@sha256:c64d80f84bea7c8812e20b688a1ed127108cd4a871d48f81d55d3db37596e596
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **154.6 MB (154589310 bytes)**  
+-	Total Size: **154.6 MB (154589398 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5f47254ca5817f99cdd387ce7345d43e770e0682a4c81b62776f3347551b1d85`
+-	Image ID: `sha256:d54bd1054823adac521a08c227f8f7106e93158184f0978eda0eb6ab7b4a5b38`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -65,15 +65,15 @@ RUN echo 'deb http://repo.mysql.com/apt/debian/ buster mysql-5.7' > /etc/apt/sou
 RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		mysql-server="${MYSQL_VERSION}" 	&& find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/' 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 1777 /var/run/mysqld /var/lib/mysql
 # Tue, 09 Feb 2021 06:58:27 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 09 Feb 2021 06:58:27 GMT
-COPY file:a209112a748b68e09c2f024b0d9630bcca79e1f73e9152a984e09a9b94b1df93 in /usr/local/bin/ 
-# Tue, 09 Feb 2021 06:58:28 GMT
+# Fri, 26 Feb 2021 22:42:07 GMT
+COPY file:74c3ab1ae4fa929ca3dc5f3cc1e9d17cad9e3b3c8bdfdc747b12bfa93d45389f in /usr/local/bin/ 
+# Fri, 26 Feb 2021 22:42:08 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Tue, 09 Feb 2021 06:58:29 GMT
+# Fri, 26 Feb 2021 22:42:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 09 Feb 2021 06:58:29 GMT
+# Fri, 26 Feb 2021 22:42:08 GMT
 EXPOSE 3306 33060
-# Tue, 09 Feb 2021 06:58:29 GMT
+# Fri, 26 Feb 2021 22:42:09 GMT
 CMD ["mysqld"]
 ```
 
@@ -114,19 +114,19 @@ CMD ["mysqld"]
 		Last Modified: Tue, 09 Feb 2021 07:00:47 GMT  
 		Size: 108.4 MB (108439650 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:349a839d5e2792753b5ff7856ed34d0ec364f085d6d165315219715fc90f0598`  
-		Last Modified: Tue, 09 Feb 2021 07:00:24 GMT  
-		Size: 5.1 KB (5139 bytes)  
+	-	`sha256:a6510e5d6228331eaf1cb0c15479113fdf7cfdaec9971f600d5827faa64db511`  
+		Last Modified: Fri, 26 Feb 2021 22:42:35 GMT  
+		Size: 5.2 KB (5230 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40b03e3e598043eb522e82aeca2d1a52cff4a4ddea8cf396a4bf70876f8b20a0`  
-		Last Modified: Tue, 09 Feb 2021 07:00:24 GMT  
-		Size: 121.0 B  
+	-	`sha256:90ca045d52c581ecd9a22452bdc39d058e43320c8fd814b8322d42250ede1823`  
+		Last Modified: Fri, 26 Feb 2021 22:42:35 GMT  
+		Size: 118.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mysql:5.6`
 
 ```console
-$ docker pull mysql@sha256:62683d6a788498befa3378b7841aed32a7647e0317230ef44cb777992a3ca490
+$ docker pull mysql@sha256:6cacab35e5b6485621c20f54a27e3024965e5bebbd465edb5de8c5c556347392
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -136,14 +136,14 @@ $ docker pull mysql@sha256:62683d6a788498befa3378b7841aed32a7647e0317230ef44cb77
 ### `mysql:5.6` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:e29f4d4b43951c766cd6bacca8d05ac545ec76bb7f42e798bed5e2038c5e2753
+$ docker pull mysql@sha256:19fc1ff0d34a3373628f57137f700da9b8d703b51defecaa6f1e8127565868c5
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **103.0 MB (102977610 bytes)**  
+-	Total Size: **103.0 MB (102977703 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:262ce970a22c570b33cb311766d27888d764ec45146be70d122f6272b739129d`
+-	Image ID: `sha256:0abf1c71efa33776bdfb1d042776e1ddd82ab25da946d3eaf43329dc56050d94`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -176,15 +176,15 @@ RUN echo 'deb http://repo.mysql.com/apt/debian/ stretch mysql-5.6' > /etc/apt/so
 RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		mysql-server="${MYSQL_VERSION}" 	&& find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/' 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 1777 /var/run/mysqld /var/lib/mysql
 # Tue, 09 Feb 2021 06:59:32 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 09 Feb 2021 06:59:33 GMT
-COPY file:a209112a748b68e09c2f024b0d9630bcca79e1f73e9152a984e09a9b94b1df93 in /usr/local/bin/ 
-# Tue, 09 Feb 2021 06:59:34 GMT
+# Fri, 26 Feb 2021 22:42:13 GMT
+COPY file:74c3ab1ae4fa929ca3dc5f3cc1e9d17cad9e3b3c8bdfdc747b12bfa93d45389f in /usr/local/bin/ 
+# Fri, 26 Feb 2021 22:42:14 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Tue, 09 Feb 2021 06:59:34 GMT
+# Fri, 26 Feb 2021 22:42:15 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 09 Feb 2021 06:59:34 GMT
+# Fri, 26 Feb 2021 22:42:15 GMT
 EXPOSE 3306
-# Tue, 09 Feb 2021 06:59:34 GMT
+# Fri, 26 Feb 2021 22:42:15 GMT
 CMD ["mysqld"]
 ```
 
@@ -225,19 +225,19 @@ CMD ["mysqld"]
 		Last Modified: Tue, 09 Feb 2021 07:01:15 GMT  
 		Size: 64.3 MB (64273829 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52b425b76887aa00db6f0615f7add1ef86080b56598ff7381b4281f2749aa04c`  
-		Last Modified: Tue, 09 Feb 2021 07:00:55 GMT  
-		Size: 5.2 KB (5151 bytes)  
+	-	`sha256:0321b62dc9a81a686e399008989d6fe924f37b9a3d544d07b8f7d54b60cd592a`  
+		Last Modified: Fri, 26 Feb 2021 22:42:40 GMT  
+		Size: 5.2 KB (5244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1bab029bc8463847c53c992c0a8339b02f05cad362ada93ae08dece0cd4196a2`  
-		Last Modified: Tue, 09 Feb 2021 07:00:55 GMT  
+	-	`sha256:520080f8d31717eb10d94ecf0be6cb6b7f9e7dd523acbcd77d2963c02f9f6d87`  
+		Last Modified: Fri, 26 Feb 2021 22:42:40 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mysql:5.6.51`
 
 ```console
-$ docker pull mysql@sha256:62683d6a788498befa3378b7841aed32a7647e0317230ef44cb777992a3ca490
+$ docker pull mysql@sha256:6cacab35e5b6485621c20f54a27e3024965e5bebbd465edb5de8c5c556347392
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -247,14 +247,14 @@ $ docker pull mysql@sha256:62683d6a788498befa3378b7841aed32a7647e0317230ef44cb77
 ### `mysql:5.6.51` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:e29f4d4b43951c766cd6bacca8d05ac545ec76bb7f42e798bed5e2038c5e2753
+$ docker pull mysql@sha256:19fc1ff0d34a3373628f57137f700da9b8d703b51defecaa6f1e8127565868c5
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **103.0 MB (102977610 bytes)**  
+-	Total Size: **103.0 MB (102977703 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:262ce970a22c570b33cb311766d27888d764ec45146be70d122f6272b739129d`
+-	Image ID: `sha256:0abf1c71efa33776bdfb1d042776e1ddd82ab25da946d3eaf43329dc56050d94`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -287,15 +287,15 @@ RUN echo 'deb http://repo.mysql.com/apt/debian/ stretch mysql-5.6' > /etc/apt/so
 RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		mysql-server="${MYSQL_VERSION}" 	&& find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/' 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 1777 /var/run/mysqld /var/lib/mysql
 # Tue, 09 Feb 2021 06:59:32 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 09 Feb 2021 06:59:33 GMT
-COPY file:a209112a748b68e09c2f024b0d9630bcca79e1f73e9152a984e09a9b94b1df93 in /usr/local/bin/ 
-# Tue, 09 Feb 2021 06:59:34 GMT
+# Fri, 26 Feb 2021 22:42:13 GMT
+COPY file:74c3ab1ae4fa929ca3dc5f3cc1e9d17cad9e3b3c8bdfdc747b12bfa93d45389f in /usr/local/bin/ 
+# Fri, 26 Feb 2021 22:42:14 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Tue, 09 Feb 2021 06:59:34 GMT
+# Fri, 26 Feb 2021 22:42:15 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 09 Feb 2021 06:59:34 GMT
+# Fri, 26 Feb 2021 22:42:15 GMT
 EXPOSE 3306
-# Tue, 09 Feb 2021 06:59:34 GMT
+# Fri, 26 Feb 2021 22:42:15 GMT
 CMD ["mysqld"]
 ```
 
@@ -336,19 +336,19 @@ CMD ["mysqld"]
 		Last Modified: Tue, 09 Feb 2021 07:01:15 GMT  
 		Size: 64.3 MB (64273829 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52b425b76887aa00db6f0615f7add1ef86080b56598ff7381b4281f2749aa04c`  
-		Last Modified: Tue, 09 Feb 2021 07:00:55 GMT  
-		Size: 5.2 KB (5151 bytes)  
+	-	`sha256:0321b62dc9a81a686e399008989d6fe924f37b9a3d544d07b8f7d54b60cd592a`  
+		Last Modified: Fri, 26 Feb 2021 22:42:40 GMT  
+		Size: 5.2 KB (5244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1bab029bc8463847c53c992c0a8339b02f05cad362ada93ae08dece0cd4196a2`  
-		Last Modified: Tue, 09 Feb 2021 07:00:55 GMT  
+	-	`sha256:520080f8d31717eb10d94ecf0be6cb6b7f9e7dd523acbcd77d2963c02f9f6d87`  
+		Last Modified: Fri, 26 Feb 2021 22:42:40 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mysql:5.7`
 
 ```console
-$ docker pull mysql@sha256:853105ad984a9fe87dd109be6756e1fbdba8b003b303d88ac0dda6b455f36556
+$ docker pull mysql@sha256:9fc60b229633ce1d1f2ee306705152d4b001056fb27c1b5debe23a732df72b70
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -358,14 +358,14 @@ $ docker pull mysql@sha256:853105ad984a9fe87dd109be6756e1fbdba8b003b303d88ac0dda
 ### `mysql:5.7` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:8662f14f7b7cb7ab1fd45595d6057278f9405bec0de7b494b14157ed5f6c3038
+$ docker pull mysql@sha256:c64d80f84bea7c8812e20b688a1ed127108cd4a871d48f81d55d3db37596e596
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **154.6 MB (154589310 bytes)**  
+-	Total Size: **154.6 MB (154589398 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5f47254ca5817f99cdd387ce7345d43e770e0682a4c81b62776f3347551b1d85`
+-	Image ID: `sha256:d54bd1054823adac521a08c227f8f7106e93158184f0978eda0eb6ab7b4a5b38`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -398,15 +398,15 @@ RUN echo 'deb http://repo.mysql.com/apt/debian/ buster mysql-5.7' > /etc/apt/sou
 RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		mysql-server="${MYSQL_VERSION}" 	&& find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/' 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 1777 /var/run/mysqld /var/lib/mysql
 # Tue, 09 Feb 2021 06:58:27 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 09 Feb 2021 06:58:27 GMT
-COPY file:a209112a748b68e09c2f024b0d9630bcca79e1f73e9152a984e09a9b94b1df93 in /usr/local/bin/ 
-# Tue, 09 Feb 2021 06:58:28 GMT
+# Fri, 26 Feb 2021 22:42:07 GMT
+COPY file:74c3ab1ae4fa929ca3dc5f3cc1e9d17cad9e3b3c8bdfdc747b12bfa93d45389f in /usr/local/bin/ 
+# Fri, 26 Feb 2021 22:42:08 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Tue, 09 Feb 2021 06:58:29 GMT
+# Fri, 26 Feb 2021 22:42:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 09 Feb 2021 06:58:29 GMT
+# Fri, 26 Feb 2021 22:42:08 GMT
 EXPOSE 3306 33060
-# Tue, 09 Feb 2021 06:58:29 GMT
+# Fri, 26 Feb 2021 22:42:09 GMT
 CMD ["mysqld"]
 ```
 
@@ -447,19 +447,19 @@ CMD ["mysqld"]
 		Last Modified: Tue, 09 Feb 2021 07:00:47 GMT  
 		Size: 108.4 MB (108439650 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:349a839d5e2792753b5ff7856ed34d0ec364f085d6d165315219715fc90f0598`  
-		Last Modified: Tue, 09 Feb 2021 07:00:24 GMT  
-		Size: 5.1 KB (5139 bytes)  
+	-	`sha256:a6510e5d6228331eaf1cb0c15479113fdf7cfdaec9971f600d5827faa64db511`  
+		Last Modified: Fri, 26 Feb 2021 22:42:35 GMT  
+		Size: 5.2 KB (5230 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40b03e3e598043eb522e82aeca2d1a52cff4a4ddea8cf396a4bf70876f8b20a0`  
-		Last Modified: Tue, 09 Feb 2021 07:00:24 GMT  
-		Size: 121.0 B  
+	-	`sha256:90ca045d52c581ecd9a22452bdc39d058e43320c8fd814b8322d42250ede1823`  
+		Last Modified: Fri, 26 Feb 2021 22:42:35 GMT  
+		Size: 118.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mysql:5.7.33`
 
 ```console
-$ docker pull mysql@sha256:853105ad984a9fe87dd109be6756e1fbdba8b003b303d88ac0dda6b455f36556
+$ docker pull mysql@sha256:9fc60b229633ce1d1f2ee306705152d4b001056fb27c1b5debe23a732df72b70
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -469,14 +469,14 @@ $ docker pull mysql@sha256:853105ad984a9fe87dd109be6756e1fbdba8b003b303d88ac0dda
 ### `mysql:5.7.33` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:8662f14f7b7cb7ab1fd45595d6057278f9405bec0de7b494b14157ed5f6c3038
+$ docker pull mysql@sha256:c64d80f84bea7c8812e20b688a1ed127108cd4a871d48f81d55d3db37596e596
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **154.6 MB (154589310 bytes)**  
+-	Total Size: **154.6 MB (154589398 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5f47254ca5817f99cdd387ce7345d43e770e0682a4c81b62776f3347551b1d85`
+-	Image ID: `sha256:d54bd1054823adac521a08c227f8f7106e93158184f0978eda0eb6ab7b4a5b38`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -509,15 +509,15 @@ RUN echo 'deb http://repo.mysql.com/apt/debian/ buster mysql-5.7' > /etc/apt/sou
 RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update 	&& apt-get install -y 		mysql-server="${MYSQL_VERSION}" 	&& find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/' 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 1777 /var/run/mysqld /var/lib/mysql
 # Tue, 09 Feb 2021 06:58:27 GMT
 VOLUME [/var/lib/mysql]
-# Tue, 09 Feb 2021 06:58:27 GMT
-COPY file:a209112a748b68e09c2f024b0d9630bcca79e1f73e9152a984e09a9b94b1df93 in /usr/local/bin/ 
-# Tue, 09 Feb 2021 06:58:28 GMT
+# Fri, 26 Feb 2021 22:42:07 GMT
+COPY file:74c3ab1ae4fa929ca3dc5f3cc1e9d17cad9e3b3c8bdfdc747b12bfa93d45389f in /usr/local/bin/ 
+# Fri, 26 Feb 2021 22:42:08 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Tue, 09 Feb 2021 06:58:29 GMT
+# Fri, 26 Feb 2021 22:42:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 09 Feb 2021 06:58:29 GMT
+# Fri, 26 Feb 2021 22:42:08 GMT
 EXPOSE 3306 33060
-# Tue, 09 Feb 2021 06:58:29 GMT
+# Fri, 26 Feb 2021 22:42:09 GMT
 CMD ["mysqld"]
 ```
 
@@ -558,19 +558,19 @@ CMD ["mysqld"]
 		Last Modified: Tue, 09 Feb 2021 07:00:47 GMT  
 		Size: 108.4 MB (108439650 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:349a839d5e2792753b5ff7856ed34d0ec364f085d6d165315219715fc90f0598`  
-		Last Modified: Tue, 09 Feb 2021 07:00:24 GMT  
-		Size: 5.1 KB (5139 bytes)  
+	-	`sha256:a6510e5d6228331eaf1cb0c15479113fdf7cfdaec9971f600d5827faa64db511`  
+		Last Modified: Fri, 26 Feb 2021 22:42:35 GMT  
+		Size: 5.2 KB (5230 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40b03e3e598043eb522e82aeca2d1a52cff4a4ddea8cf396a4bf70876f8b20a0`  
-		Last Modified: Tue, 09 Feb 2021 07:00:24 GMT  
-		Size: 121.0 B  
+	-	`sha256:90ca045d52c581ecd9a22452bdc39d058e43320c8fd814b8322d42250ede1823`  
+		Last Modified: Fri, 26 Feb 2021 22:42:35 GMT  
+		Size: 118.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mysql:8`
 
 ```console
-$ docker pull mysql@sha256:b1cc887ed32cc6c2f217b12703bd05f503f2037892c8bb226047fe5dff85a109
+$ docker pull mysql@sha256:7706e4c382be813b58ef514f2bdac747cd463a6866c6c81165d42a1d0e4fe947
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -580,14 +580,14 @@ $ docker pull mysql@sha256:b1cc887ed32cc6c2f217b12703bd05f503f2037892c8bb226047f
 ### `mysql:8` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:870892ea5cc8c623b389717c2eedd58248c82a8569d7601ede62a63d527641bd
+$ docker pull mysql@sha256:03306a1f248727ec979f61424c5fb5150e2c5fd2436f2561c5259b1258d6063c
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.3 MB (159258922 bytes)**  
+-	Total Size: **159.3 MB (159259013 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2933adc350f3b62c05a66f700fba68ef93997d67263121250ec7848c50dcf3f5`
+-	Image ID: `sha256:8457e9155715d4e1c80c9e048d94c9b47b5b733fa927756280382dd326403644`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -622,15 +622,15 @@ RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 	
 VOLUME [/var/lib/mysql]
 # Tue, 09 Feb 2021 06:57:43 GMT
 COPY dir:2e040acc386ebd23b8571951a51e6cb93647df091bc26159b8c757ef82b3fcda in /etc/mysql/ 
-# Tue, 09 Feb 2021 06:57:43 GMT
-COPY file:a209112a748b68e09c2f024b0d9630bcca79e1f73e9152a984e09a9b94b1df93 in /usr/local/bin/ 
-# Tue, 09 Feb 2021 06:57:45 GMT
+# Fri, 26 Feb 2021 22:42:01 GMT
+COPY file:74c3ab1ae4fa929ca3dc5f3cc1e9d17cad9e3b3c8bdfdc747b12bfa93d45389f in /usr/local/bin/ 
+# Fri, 26 Feb 2021 22:42:02 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Tue, 09 Feb 2021 06:57:45 GMT
+# Fri, 26 Feb 2021 22:42:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 09 Feb 2021 06:57:45 GMT
+# Fri, 26 Feb 2021 22:42:02 GMT
 EXPOSE 3306 33060
-# Tue, 09 Feb 2021 06:57:45 GMT
+# Fri, 26 Feb 2021 22:42:03 GMT
 CMD ["mysqld"]
 ```
 
@@ -675,19 +675,19 @@ CMD ["mysqld"]
 		Last Modified: Tue, 09 Feb 2021 06:59:53 GMT  
 		Size: 846.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18602acc97e1360f5cf8203cb4465c5b1ba080b4da79130957720f81a08db600`  
-		Last Modified: Tue, 09 Feb 2021 06:59:53 GMT  
-		Size: 5.1 KB (5139 bytes)  
+	-	`sha256:b0ddd5d1b5434f1163befba0e098adcd39d884f807b29d292da0a7c4ed293b0b`  
+		Last Modified: Fri, 26 Feb 2021 22:42:30 GMT  
+		Size: 5.2 KB (5230 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:365caa3500d0f19fd1003a5dc5be46e578fc84c0b9a2ae15b96e1b2ff69f2546`  
-		Last Modified: Tue, 09 Feb 2021 06:59:53 GMT  
+	-	`sha256:1aefd67cb33d07c00f83cfd8a20cd3fb69984201836caa9d178e7fda4eec2d95`  
+		Last Modified: Fri, 26 Feb 2021 22:42:30 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mysql:8.0`
 
 ```console
-$ docker pull mysql@sha256:b1cc887ed32cc6c2f217b12703bd05f503f2037892c8bb226047fe5dff85a109
+$ docker pull mysql@sha256:7706e4c382be813b58ef514f2bdac747cd463a6866c6c81165d42a1d0e4fe947
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -697,14 +697,14 @@ $ docker pull mysql@sha256:b1cc887ed32cc6c2f217b12703bd05f503f2037892c8bb226047f
 ### `mysql:8.0` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:870892ea5cc8c623b389717c2eedd58248c82a8569d7601ede62a63d527641bd
+$ docker pull mysql@sha256:03306a1f248727ec979f61424c5fb5150e2c5fd2436f2561c5259b1258d6063c
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.3 MB (159258922 bytes)**  
+-	Total Size: **159.3 MB (159259013 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2933adc350f3b62c05a66f700fba68ef93997d67263121250ec7848c50dcf3f5`
+-	Image ID: `sha256:8457e9155715d4e1c80c9e048d94c9b47b5b733fa927756280382dd326403644`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -739,15 +739,15 @@ RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 	
 VOLUME [/var/lib/mysql]
 # Tue, 09 Feb 2021 06:57:43 GMT
 COPY dir:2e040acc386ebd23b8571951a51e6cb93647df091bc26159b8c757ef82b3fcda in /etc/mysql/ 
-# Tue, 09 Feb 2021 06:57:43 GMT
-COPY file:a209112a748b68e09c2f024b0d9630bcca79e1f73e9152a984e09a9b94b1df93 in /usr/local/bin/ 
-# Tue, 09 Feb 2021 06:57:45 GMT
+# Fri, 26 Feb 2021 22:42:01 GMT
+COPY file:74c3ab1ae4fa929ca3dc5f3cc1e9d17cad9e3b3c8bdfdc747b12bfa93d45389f in /usr/local/bin/ 
+# Fri, 26 Feb 2021 22:42:02 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Tue, 09 Feb 2021 06:57:45 GMT
+# Fri, 26 Feb 2021 22:42:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 09 Feb 2021 06:57:45 GMT
+# Fri, 26 Feb 2021 22:42:02 GMT
 EXPOSE 3306 33060
-# Tue, 09 Feb 2021 06:57:45 GMT
+# Fri, 26 Feb 2021 22:42:03 GMT
 CMD ["mysqld"]
 ```
 
@@ -792,19 +792,19 @@ CMD ["mysqld"]
 		Last Modified: Tue, 09 Feb 2021 06:59:53 GMT  
 		Size: 846.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18602acc97e1360f5cf8203cb4465c5b1ba080b4da79130957720f81a08db600`  
-		Last Modified: Tue, 09 Feb 2021 06:59:53 GMT  
-		Size: 5.1 KB (5139 bytes)  
+	-	`sha256:b0ddd5d1b5434f1163befba0e098adcd39d884f807b29d292da0a7c4ed293b0b`  
+		Last Modified: Fri, 26 Feb 2021 22:42:30 GMT  
+		Size: 5.2 KB (5230 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:365caa3500d0f19fd1003a5dc5be46e578fc84c0b9a2ae15b96e1b2ff69f2546`  
-		Last Modified: Tue, 09 Feb 2021 06:59:53 GMT  
+	-	`sha256:1aefd67cb33d07c00f83cfd8a20cd3fb69984201836caa9d178e7fda4eec2d95`  
+		Last Modified: Fri, 26 Feb 2021 22:42:30 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mysql:8.0.23`
 
 ```console
-$ docker pull mysql@sha256:b1cc887ed32cc6c2f217b12703bd05f503f2037892c8bb226047fe5dff85a109
+$ docker pull mysql@sha256:7706e4c382be813b58ef514f2bdac747cd463a6866c6c81165d42a1d0e4fe947
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -814,14 +814,14 @@ $ docker pull mysql@sha256:b1cc887ed32cc6c2f217b12703bd05f503f2037892c8bb226047f
 ### `mysql:8.0.23` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:870892ea5cc8c623b389717c2eedd58248c82a8569d7601ede62a63d527641bd
+$ docker pull mysql@sha256:03306a1f248727ec979f61424c5fb5150e2c5fd2436f2561c5259b1258d6063c
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.3 MB (159258922 bytes)**  
+-	Total Size: **159.3 MB (159259013 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2933adc350f3b62c05a66f700fba68ef93997d67263121250ec7848c50dcf3f5`
+-	Image ID: `sha256:8457e9155715d4e1c80c9e048d94c9b47b5b733fa927756280382dd326403644`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -856,15 +856,15 @@ RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 	
 VOLUME [/var/lib/mysql]
 # Tue, 09 Feb 2021 06:57:43 GMT
 COPY dir:2e040acc386ebd23b8571951a51e6cb93647df091bc26159b8c757ef82b3fcda in /etc/mysql/ 
-# Tue, 09 Feb 2021 06:57:43 GMT
-COPY file:a209112a748b68e09c2f024b0d9630bcca79e1f73e9152a984e09a9b94b1df93 in /usr/local/bin/ 
-# Tue, 09 Feb 2021 06:57:45 GMT
+# Fri, 26 Feb 2021 22:42:01 GMT
+COPY file:74c3ab1ae4fa929ca3dc5f3cc1e9d17cad9e3b3c8bdfdc747b12bfa93d45389f in /usr/local/bin/ 
+# Fri, 26 Feb 2021 22:42:02 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Tue, 09 Feb 2021 06:57:45 GMT
+# Fri, 26 Feb 2021 22:42:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 09 Feb 2021 06:57:45 GMT
+# Fri, 26 Feb 2021 22:42:02 GMT
 EXPOSE 3306 33060
-# Tue, 09 Feb 2021 06:57:45 GMT
+# Fri, 26 Feb 2021 22:42:03 GMT
 CMD ["mysqld"]
 ```
 
@@ -909,19 +909,19 @@ CMD ["mysqld"]
 		Last Modified: Tue, 09 Feb 2021 06:59:53 GMT  
 		Size: 846.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18602acc97e1360f5cf8203cb4465c5b1ba080b4da79130957720f81a08db600`  
-		Last Modified: Tue, 09 Feb 2021 06:59:53 GMT  
-		Size: 5.1 KB (5139 bytes)  
+	-	`sha256:b0ddd5d1b5434f1163befba0e098adcd39d884f807b29d292da0a7c4ed293b0b`  
+		Last Modified: Fri, 26 Feb 2021 22:42:30 GMT  
+		Size: 5.2 KB (5230 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:365caa3500d0f19fd1003a5dc5be46e578fc84c0b9a2ae15b96e1b2ff69f2546`  
-		Last Modified: Tue, 09 Feb 2021 06:59:53 GMT  
+	-	`sha256:1aefd67cb33d07c00f83cfd8a20cd3fb69984201836caa9d178e7fda4eec2d95`  
+		Last Modified: Fri, 26 Feb 2021 22:42:30 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mysql:latest`
 
 ```console
-$ docker pull mysql@sha256:b1cc887ed32cc6c2f217b12703bd05f503f2037892c8bb226047fe5dff85a109
+$ docker pull mysql@sha256:7706e4c382be813b58ef514f2bdac747cd463a6866c6c81165d42a1d0e4fe947
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -931,14 +931,14 @@ $ docker pull mysql@sha256:b1cc887ed32cc6c2f217b12703bd05f503f2037892c8bb226047f
 ### `mysql:latest` - linux; amd64
 
 ```console
-$ docker pull mysql@sha256:870892ea5cc8c623b389717c2eedd58248c82a8569d7601ede62a63d527641bd
+$ docker pull mysql@sha256:03306a1f248727ec979f61424c5fb5150e2c5fd2436f2561c5259b1258d6063c
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.3 MB (159258922 bytes)**  
+-	Total Size: **159.3 MB (159259013 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2933adc350f3b62c05a66f700fba68ef93997d67263121250ec7848c50dcf3f5`
+-	Image ID: `sha256:8457e9155715d4e1c80c9e048d94c9b47b5b733fa927756280382dd326403644`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -973,15 +973,15 @@ RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 	
 VOLUME [/var/lib/mysql]
 # Tue, 09 Feb 2021 06:57:43 GMT
 COPY dir:2e040acc386ebd23b8571951a51e6cb93647df091bc26159b8c757ef82b3fcda in /etc/mysql/ 
-# Tue, 09 Feb 2021 06:57:43 GMT
-COPY file:a209112a748b68e09c2f024b0d9630bcca79e1f73e9152a984e09a9b94b1df93 in /usr/local/bin/ 
-# Tue, 09 Feb 2021 06:57:45 GMT
+# Fri, 26 Feb 2021 22:42:01 GMT
+COPY file:74c3ab1ae4fa929ca3dc5f3cc1e9d17cad9e3b3c8bdfdc747b12bfa93d45389f in /usr/local/bin/ 
+# Fri, 26 Feb 2021 22:42:02 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Tue, 09 Feb 2021 06:57:45 GMT
+# Fri, 26 Feb 2021 22:42:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 09 Feb 2021 06:57:45 GMT
+# Fri, 26 Feb 2021 22:42:02 GMT
 EXPOSE 3306 33060
-# Tue, 09 Feb 2021 06:57:45 GMT
+# Fri, 26 Feb 2021 22:42:03 GMT
 CMD ["mysqld"]
 ```
 
@@ -1026,11 +1026,11 @@ CMD ["mysqld"]
 		Last Modified: Tue, 09 Feb 2021 06:59:53 GMT  
 		Size: 846.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18602acc97e1360f5cf8203cb4465c5b1ba080b4da79130957720f81a08db600`  
-		Last Modified: Tue, 09 Feb 2021 06:59:53 GMT  
-		Size: 5.1 KB (5139 bytes)  
+	-	`sha256:b0ddd5d1b5434f1163befba0e098adcd39d884f807b29d292da0a7c4ed293b0b`  
+		Last Modified: Fri, 26 Feb 2021 22:42:30 GMT  
+		Size: 5.2 KB (5230 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:365caa3500d0f19fd1003a5dc5be46e578fc84c0b9a2ae15b96e1b2ff69f2546`  
-		Last Modified: Tue, 09 Feb 2021 06:59:53 GMT  
+	-	`sha256:1aefd67cb33d07c00f83cfd8a20cd3fb69984201836caa9d178e7fda4eec2d95`  
+		Last Modified: Fri, 26 Feb 2021 22:42:30 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
