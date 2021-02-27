@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0a746f7f6907afeb68de17d4afefd6344b665108c1c02415ed2b3fa8603c6e23`
-- Created: `2021-02-18T06:54:48.771326587Z`
-- Virtual Size: ~ 144.26 Mb  
+- Image ID: `sha256:6a8c25f470f7f4fa18b9ef9495462a783d9d37d8d8242e1531bdfc52d2a18c1d`
+- Created: `2021-02-26T21:44:35.864899021Z`
+- Virtual Size: ~ 144.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,8 +14,8 @@
   - `OPENSSL_VERSION=1.1.1j`
   - `OPENSSL_SOURCE_SHA256=aaf2fcb575cdf6491b98ab4829abf78a3dec8402b8b81efc8f23c00d443981bf`
   - `OPENSSL_PGP_KEY_IDS=0x8657ABB260F056B1E5190839D9C4D26D0E604491 0x5B2545DAB21995F4088CEFAA36CEE4DEB00CFE33 0xED230BEC4D4F2518B9D7DF41F0DB4D21C1D35231 0xC1F33DD8CE1D4CC613AF14DA9195C48241FBF7DD 0x7953AC1FBC3DC8B3B292393ED5E9E43F7DF9EE8C 0xE5E52560DD91C556DDBDA5D02064C53641C25E5D`
-  - `OTP_VERSION=23.2.5`
-  - `OTP_SOURCE_SHA256=0b1ca7d60f4f5a70b56cd0bef77cec2087a53a9a1812d5276a8cd4ce1acfa962`
+  - `OTP_VERSION=23.2.6`
+  - `OTP_SOURCE_SHA256=fd0d9228ca43c108dc09334e2e5fbf3c826b6beb5a53ba35818edb3c476836a7`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
   - `RABBITMQ_VERSION=3.8.12`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
@@ -388,16 +388,16 @@ GPL-2.0 LGPL-2.1+
 ### `apk` package: `python3`
 
 ```console
-python3-3.8.7-r0 description:
+python3-3.8.7-r1 description:
 A high-level scripting language
 
-python3-3.8.7-r0 webpage:
+python3-3.8.7-r1 webpage:
 https://www.python.org/
 
-python3-3.8.7-r0 installed size:
-47054848
+python3-3.8.7-r1 installed size:
+47058944
 
-python3-3.8.7-r0 license:
+python3-3.8.7-r1 license:
 PSF-2.0
 
 ```
