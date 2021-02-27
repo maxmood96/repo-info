@@ -1,4 +1,4 @@
-# `pypy:2.7-7.3.3`
+# `pypy:2.7-7.3.3-buster`
 
 ## Docker Metadata
 
