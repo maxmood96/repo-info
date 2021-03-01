@@ -5285,14 +5285,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7/copyright`, `/usr/share/doc
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.12-1ubuntu0~16.04.13
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.13.dsc' python2.7_2.7.12-1ubuntu0~16.04.13.dsc 3391 SHA512:1e81dceda74f2b7f19b73df055761c85e5d07d35895ffe76fb63834d9b14cafdc9857027f640d4fb54bbe67e20adac3ec8edc2307f9bf1d5ae24732066f7d538
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12.orig.tar.gz' python2.7_2.7.12.orig.tar.gz 16935960 SHA512:e3c04b1c66ff659c08e09a5adc34fd856ca0c786e5820c05471747416fef38555f1711978ac5e81ff4fdf7c16311796212f638e5e2d43e2404b2a42fc139edb0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.13.diff.gz' python2.7_2.7.12-1ubuntu0~16.04.13.diff.gz 310476 SHA512:f5eb6d6759fdaacf395b4418f8fb539db80017b35bbceed97c90d30f7a3585d2bab16ea03d0073d95dec79a7042e0123067640feaa8004f6d0740999f2b3fb30
-```
 
 ### `dpkg` source package: `python3-defaults=3.5.1-3`
 
@@ -5352,14 +5347,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.5=3.5.2-2ubuntu0~16.04.12
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2-2ubuntu0~16.04.12.dsc' python3.5_3.5.2-2ubuntu0~16.04.12.dsc 3391 SHA512:6499399e153d15cbec33b00f77e1eeb8a5f2442532702449572011c1c8270eff586094345a8a3bbd3a3942542c98aa4589c066bb8f3fa83dbca088d6b1d1cfc5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2.orig.tar.xz' python3.5_3.5.2.orig.tar.xz 15222676 SHA512:c07c3366f1c81e214241444bb9da6db9d11da32ad66bfa29cdad5a3b2e34e4d870bda6d4ce3c3910b582942e91f1d8c8a1c1a7b9464cc147b83c9e0007012742
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2-2ubuntu0~16.04.12.debian.tar.xz' python3.5_3.5.2-2ubuntu0~16.04.12.debian.tar.xz 237660 SHA512:d1ff7da471138f23e13d021a38e74b4e1b1fd3b8bca820ac9ef2265e465121a0f2d3fb93e4ac002c085a995bb96eabeddd008da1ce1a48e5724120b25a3baecf
-```
 
 ### `dpkg` source package: `qtbase-opensource-src=5.5.1+dfsg-16ubuntu7.7`
 
@@ -5943,14 +5933,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.6-1ubuntu0.7
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6-1ubuntu0.7.dsc' tiff_4.0.6-1ubuntu0.7.dsc 2399 SHA512:4e81b6c50f1e84e1a58e034c92f2acaacdb916ac169987c190725b0774b47757bc490b2dd810cf2b479ca882662ee6dee2c9f679c06606310934eb79b0c26e4b
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6.orig.tar.gz' tiff_4.0.6.orig.tar.gz 2192991 SHA512:2c8dbaaaab9f82a7722bfe8cb6fcfcf67472beb692f1b7dafaf322759e7016dad1bc58457c0f03db50aa5bd088fef2b37358fcbc1524e20e9e14a9620373fdf8
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6-1ubuntu0.7.debian.tar.xz' tiff_4.0.6-1ubuntu0.7.debian.tar.xz 63940 SHA512:ca2b3fc10697d4254854308d084c1a90d39a2fed4784457189edde377abc98f2fca001d73d25a38963153ff95e96403135bb6c4e3ff1facb7c142d00b17cde05
-```
 
 ### `dpkg` source package: `tinyxml2=2.2.0-1.1ubuntu1`
 

@@ -3847,14 +3847,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.5=3.5.2-2ubuntu0~16.04.12
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2-2ubuntu0~16.04.12.dsc' python3.5_3.5.2-2ubuntu0~16.04.12.dsc 3391 SHA512:6499399e153d15cbec33b00f77e1eeb8a5f2442532702449572011c1c8270eff586094345a8a3bbd3a3942542c98aa4589c066bb8f3fa83dbca088d6b1d1cfc5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2.orig.tar.xz' python3.5_3.5.2.orig.tar.xz 15222676 SHA512:c07c3366f1c81e214241444bb9da6db9d11da32ad66bfa29cdad5a3b2e34e4d870bda6d4ce3c3910b582942e91f1d8c8a1c1a7b9464cc147b83c9e0007012742
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2-2ubuntu0~16.04.12.debian.tar.xz' python3.5_3.5.2-2ubuntu0~16.04.12.debian.tar.xz 237660 SHA512:d1ff7da471138f23e13d021a38e74b4e1b1fd3b8bca820ac9ef2265e465121a0f2d3fb93e4ac002c085a995bb96eabeddd008da1ce1a48e5724120b25a3baecf
-```
 
 ### `dpkg` source package: `qt4-x11=4:4.8.7+dfsg-5ubuntu2`
 
@@ -4287,14 +4282,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.6-1ubuntu0.7
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6-1ubuntu0.7.dsc' tiff_4.0.6-1ubuntu0.7.dsc 2399 SHA512:4e81b6c50f1e84e1a58e034c92f2acaacdb916ac169987c190725b0774b47757bc490b2dd810cf2b479ca882662ee6dee2c9f679c06606310934eb79b0c26e4b
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6.orig.tar.gz' tiff_4.0.6.orig.tar.gz 2192991 SHA512:2c8dbaaaab9f82a7722bfe8cb6fcfcf67472beb692f1b7dafaf322759e7016dad1bc58457c0f03db50aa5bd088fef2b37358fcbc1524e20e9e14a9620373fdf8
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6-1ubuntu0.7.debian.tar.xz' tiff_4.0.6-1ubuntu0.7.debian.tar.xz 63940 SHA512:ca2b3fc10697d4254854308d084c1a90d39a2fed4784457189edde377abc98f2fca001d73d25a38963153ff95e96403135bb6c4e3ff1facb7c142d00b17cde05
-```
 
 ### `dpkg` source package: `tinyxml2=2.2.0-1.1ubuntu1`
 
