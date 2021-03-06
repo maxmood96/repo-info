@@ -1,7 +1,7 @@
 ## `nextcloud:19-apache`
 
 ```console
-$ docker pull nextcloud@sha256:395815304a14e8769322db76e432064e5dd071dafda7d7f4336b9827b90d2f4c
+$ docker pull nextcloud@sha256:d5864e40e8323111f65b7363705649ba9f1288751be8855b9472dc8d7dc55308
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1152,14 +1152,14 @@ CMD ["apache2-foreground"]
 ### `nextcloud:19-apache` - linux; ppc64le
 
 ```console
-$ docker pull nextcloud@sha256:b6bb827dc41d44bb2c0588c0bd63cefa1e22baa660bf50fde49d1bbfd19e15b7
+$ docker pull nextcloud@sha256:0b067a6ce032bcfd486fc365ceb2a579a4ccef25334757ff6102ebabb9e836d5
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.0 MB (268955736 bytes)**  
+-	Total Size: **269.0 MB (268955877 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f28ff3dafcccbc45f47cebe68eacb7cc904061150e45b6853c2ccf5cc0ce36d7`
+-	Image ID: `sha256:d8e3a2718294b4364596fa5b8cd349b14ec0a2d3c14f0c7e156601520738bffa`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1234,25 +1234,25 @@ RUN set -ex;         apt-get update;     apt-get install -y --no-install-recomme
 ENV PHP_MEMORY_LIMIT=512M
 # Fri, 05 Mar 2021 04:18:16 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Fri, 05 Mar 2021 04:42:06 GMT
-RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libevent-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng-dev         libpq-dev         libxml2-dev         libmagickwand-dev         libzip-dev         libwebp-dev         libgmp-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install -j "$(nproc)"         bcmath         exif         gd         intl         ldap         opcache         pcntl         pdo_mysql         pdo_pgsql         zip         gmp     ;         pecl install APCu-5.1.19;     pecl install memcached-3.1.5;     pecl install redis-5.3.3;     pecl install imagick-3.4.4;         docker-php-ext-enable         apcu         memcached         redis         imagick     ;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
-# Fri, 05 Mar 2021 04:42:21 GMT
+# Sat, 06 Mar 2021 01:36:53 GMT
+RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libevent-dev         libfreetype6-dev         libicu-dev         libjpeg-dev         libldap2-dev         libmcrypt-dev         libmemcached-dev         libpng-dev         libpq-dev         libxml2-dev         libmagickwand-dev         libzip-dev         libwebp-dev         libgmp-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install -j "$(nproc)"         bcmath         exif         gd         intl         ldap         opcache         pcntl         pdo_mysql         pdo_pgsql         zip         gmp     ;         pecl install APCu-5.1.20;     pecl install memcached-3.1.5;     pecl install redis-5.3.3;     pecl install imagick-3.4.4;         docker-php-ext-enable         apcu         memcached         redis         imagick     ;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
+# Sat, 06 Mar 2021 01:37:10 GMT
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/nextcloud.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
-# Fri, 05 Mar 2021 04:42:27 GMT
+# Sat, 06 Mar 2021 01:37:13 GMT
 VOLUME [/var/www/html]
-# Fri, 05 Mar 2021 04:42:40 GMT
+# Sat, 06 Mar 2021 01:37:25 GMT
 RUN a2enmod headers rewrite remoteip ;    {     echo RemoteIPHeader X-Real-IP ;     echo RemoteIPTrustedProxy 10.0.0.0/8 ;     echo RemoteIPTrustedProxy 172.16.0.0/12 ;     echo RemoteIPTrustedProxy 192.168.0.0/16 ;    } > /etc/apache2/conf-available/remoteip.conf;    a2enconf remoteip
-# Fri, 05 Mar 2021 04:42:49 GMT
+# Sat, 06 Mar 2021 01:37:32 GMT
 ENV NEXTCLOUD_VERSION=19.0.9
-# Fri, 05 Mar 2021 04:46:19 GMT
+# Sat, 06 Mar 2021 01:39:32 GMT
 RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc         "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
-# Fri, 05 Mar 2021 04:46:31 GMT
+# Sat, 06 Mar 2021 01:39:42 GMT
 COPY multi:735a0b44f536c26b775ae5b6d0dc6331e21972d82c38b6571980561dc6f483ee in / 
-# Fri, 05 Mar 2021 04:46:34 GMT
+# Sat, 06 Mar 2021 01:39:45 GMT
 COPY multi:8fe33713160eb79aae18ddf12940fb599bff4e4514085aecc68afa3935aec08e in /usr/src/nextcloud/config/ 
-# Fri, 05 Mar 2021 04:46:38 GMT
+# Sat, 06 Mar 2021 01:39:50 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 05 Mar 2021 04:46:44 GMT
+# Sat, 06 Mar 2021 01:39:55 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1313,28 +1313,28 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 05 Mar 2021 05:50:06 GMT  
 		Size: 1.8 MB (1827569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:030f34ca1f653e1bda6b1592d6596cbe6522709b0b3eff082cbb27cd050d0eec`  
-		Last Modified: Fri, 05 Mar 2021 05:50:27 GMT  
-		Size: 16.6 MB (16611259 bytes)  
+	-	`sha256:f6b9c101fcdaa831a712cc72bc1ac501db0bc0287c2cf6eaae23a3aac4a86068`  
+		Last Modified: Sat, 06 Mar 2021 02:39:08 GMT  
+		Size: 16.6 MB (16611718 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f655f167a255b655afc062389b3e0844a4e3d6ec81e56140f59c2e112397d8f`  
-		Last Modified: Fri, 05 Mar 2021 05:50:01 GMT  
-		Size: 598.0 B  
+	-	`sha256:4424dd0feb892e047937262a6b565d968950fb4ceef2c375868564d2ce78a9d1`  
+		Last Modified: Sat, 06 Mar 2021 02:38:38 GMT  
+		Size: 597.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a7e00f6365ea90b9d2553a410d093a22b7b213c0cfca549f3524ecb8a07ea09`  
-		Last Modified: Fri, 05 Mar 2021 05:50:00 GMT  
-		Size: 590.0 B  
+	-	`sha256:06824c55d6c8eaa535d1a506f4ca03f76fd99893f1480bd19d1081592385d2ed`  
+		Last Modified: Sat, 06 Mar 2021 02:38:37 GMT  
+		Size: 581.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7af4481c0327dbd9e4368254e2abf6b4e7c2dc73447bcf09b0ccb02adb04d8fa`  
-		Last Modified: Fri, 05 Mar 2021 05:53:13 GMT  
-		Size: 90.3 MB (90332462 bytes)  
+	-	`sha256:e437b7a3e1dab86074953ca87bcf87b2ca664b92d3fe29390bec5a02b4be2956`  
+		Last Modified: Sat, 06 Mar 2021 02:41:21 GMT  
+		Size: 90.3 MB (90332153 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39317f150a3522eec660052367a8aa22116d6f33b1fa7a8534f553fdf65c867c`  
-		Last Modified: Fri, 05 Mar 2021 05:50:01 GMT  
-		Size: 2.5 KB (2531 bytes)  
+	-	`sha256:ff11af11d86769d50152866bcc0a8333dd7ac91f5e1649b0e4560e89711ec0a5`  
+		Last Modified: Sat, 06 Mar 2021 02:38:37 GMT  
+		Size: 2.5 KB (2532 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e2f1e8e48fd2d3c2517a392227f88fe7b045f0e588ffb808da90c086423d8cd1`  
-		Last Modified: Fri, 05 Mar 2021 05:50:00 GMT  
+	-	`sha256:1739f260aae496f5086ddf36b7de6db6691bdf2ed810cbfa370a1dddaacf701e`  
+		Last Modified: Sat, 06 Mar 2021 02:38:37 GMT  
 		Size: 2.0 KB (2016 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
