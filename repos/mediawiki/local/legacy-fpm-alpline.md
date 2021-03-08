@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ea7e7d9a471752dccf52c84735efc520d08689e3ec30662fcca2de28b24c983b`
-- Created: `2021-02-18T07:44:03.939603813Z`
-- Virtual Size: ~ 430.76 Mb  
+- Image ID: `sha256:da571e71b5252933a491771bfbf40f6231d7e2c350f53d4aa6ebd9dc7e3551f9`
+- Created: `2021-03-06T09:49:49.150154425Z`
+- Virtual Size: ~ 430.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -251,16 +251,16 @@ GPL-2.0-only
 ### `apk` package: `curl`
 
 ```console
-curl-7.74.0-r0 description:
+curl-7.74.0-r1 description:
 URL retrival utility and library
 
-curl-7.74.0-r0 webpage:
+curl-7.74.0-r1 webpage:
 https://curl.haxx.se/
 
-curl-7.74.0-r0 installed size:
+curl-7.74.0-r1 installed size:
 245760
 
-curl-7.74.0-r0 license:
+curl-7.74.0-r1 license:
 MIT
 
 ```
@@ -693,16 +693,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.74.0-r0 description:
+libcurl-7.74.0-r1 description:
 The multiprotocol file transfer library
 
-libcurl-7.74.0-r0 webpage:
+libcurl-7.74.0-r1 webpage:
 https://curl.haxx.se/
 
-libcurl-7.74.0-r0 installed size:
+libcurl-7.74.0-r1 installed size:
 495616
 
-libcurl-7.74.0-r0 license:
+libcurl-7.74.0-r1 license:
 MIT
 
 ```
@@ -1390,16 +1390,16 @@ ISC
 ### `apk` package: `python3`
 
 ```console
-python3-3.8.7-r0 description:
+python3-3.8.7-r1 description:
 A high-level scripting language
 
-python3-3.8.7-r0 webpage:
+python3-3.8.7-r1 webpage:
 https://www.python.org/
 
-python3-3.8.7-r0 installed size:
-47054848
+python3-3.8.7-r1 installed size:
+47058944
 
-python3-3.8.7-r0 license:
+python3-3.8.7-r1 license:
 PSF-2.0
 
 ```
