@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1d4f9031be1c07e7948adc99095fe31aaf054793e2a82915a8e8ae41e54d318d`
-- Created: `2021-03-02T00:24:19.040869989Z`
+- Image ID: `sha256:b70f392d203c735f0787b34faf847c299ef9f4e7cebc7246bafa5c12caba1a8c`
+- Created: `2021-03-06T09:40:09.157702348Z`
 - Virtual Size: ~ 141.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.15`
-  - `PHP_URL=https://www.php.net/distributions/php-7.4.15.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.15.tar.xz.asc`
-  - `PHP_SHA256=9b859c65f0cf7b3eff9d4a28cfab719fb3d36a1db3c20d874a79b5ec44d43cb8`
+  - `PHP_VERSION=7.4.16`
+  - `PHP_URL=https://www.php.net/distributions/php-7.4.16.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.16.tar.xz.asc`
+  - `PHP_SHA256=1c16cefaf88ded4c92eed6a8a41eb682bb2ef42429deb55f1c4ba159053fb98b`
   - `MATOMO_VERSION=4.2.1`
 - Labels:
   - `maintainer=pierre@piwik.org`
@@ -167,16 +167,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-7.74.0-r0 description:
+curl-7.74.0-r1 description:
 URL retrival utility and library
 
-curl-7.74.0-r0 webpage:
+curl-7.74.0-r1 webpage:
 https://curl.haxx.se/
 
-curl-7.74.0-r0 installed size:
+curl-7.74.0-r1 installed size:
 245760
 
-curl-7.74.0-r0 license:
+curl-7.74.0-r1 license:
 MIT
 
 ```
@@ -286,16 +286,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.74.0-r0 description:
+libcurl-7.74.0-r1 description:
 The multiprotocol file transfer library
 
-libcurl-7.74.0-r0 webpage:
+libcurl-7.74.0-r1 webpage:
 https://curl.haxx.se/
 
-libcurl-7.74.0-r0 installed size:
+libcurl-7.74.0-r1 installed size:
 495616
 
-libcurl-7.74.0-r0 license:
+libcurl-7.74.0-r1 license:
 MIT
 
 ```
@@ -337,16 +337,16 @@ BSD-3-Clause IJG Zlib
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.4.57-r0 description:
+libldap-2.4.57-r1 description:
 OpenLDAP libraries
 
-libldap-2.4.57-r0 webpage:
+libldap-2.4.57-r1 webpage:
 https://www.openldap.org/
 
-libldap-2.4.57-r0 installed size:
+libldap-2.4.57-r1 installed size:
 630784
 
-libldap-2.4.57-r0 license:
+libldap-2.4.57-r1 license:
 custom
 
 ```
