@@ -1,10 +1,10 @@
-# `yourls:1.8-fpm-alpine`
+# `yourls:1.8.1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:829e89908430a71325c05b80e1fa8fb9a9760b29968566aa0c5252e08911387c`
-- Created: `2021-02-23T02:24:22.250921936Z`
-- Virtual Size: ~ 92.79 Mb  
+- Image ID: `sha256:289720714804f84ab7c9c1e39fedfcef3ca4c1aeab4681fca6be1d3f8dd24537`
+- Created: `2021-03-09T01:44:45.685783199Z`
+- Virtual Size: ~ 92.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -18,12 +18,12 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F`
-  - `PHP_VERSION=8.0.2`
-  - `PHP_URL=https://www.php.net/distributions/php-8.0.2.tar.xz?a=1`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.2.tar.xz.asc?a=1`
-  - `PHP_SHA256=84dd6e36f48c3a71ff5dceba375c1f6b34b71d4fa9e06b720780127176468ccc`
-  - `YOURLS_VERSION=1.8`
-  - `YOURLS_SHA256=76c6db3b37a9c9f2570d280dce03b0fc34cd690767af77a2aed2cb2fbbaf546f`
+  - `PHP_VERSION=8.0.3`
+  - `PHP_URL=https://www.php.net/distributions/php-8.0.3.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.3.tar.xz.asc`
+  - `PHP_SHA256=c9816aa9745a9695672951eaff3a35ca5eddcb9cacf87a4f04b9fb1169010251`
+  - `YOURLS_VERSION=1.8.1`
+  - `YOURLS_SHA256=92b0666af3e3ad4a783e78cba93687e9a24acf216606a6d457819c5d36d2cfe4`
 
 ## `apk` (`.apk`-based packages)
 
@@ -183,16 +183,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-7.74.0-r0 description:
+curl-7.74.0-r1 description:
 URL retrival utility and library
 
-curl-7.74.0-r0 webpage:
+curl-7.74.0-r1 webpage:
 https://curl.haxx.se/
 
-curl-7.74.0-r0 installed size:
+curl-7.74.0-r1 installed size:
 245760
 
-curl-7.74.0-r0 license:
+curl-7.74.0-r1 license:
 MIT
 
 ```
@@ -251,16 +251,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.74.0-r0 description:
+libcurl-7.74.0-r1 description:
 The multiprotocol file transfer library
 
-libcurl-7.74.0-r0 webpage:
+libcurl-7.74.0-r1 webpage:
 https://curl.haxx.se/
 
-libcurl-7.74.0-r0 installed size:
+libcurl-7.74.0-r1 installed size:
 495616
 
-libcurl-7.74.0-r0 license:
+libcurl-7.74.0-r1 license:
 MIT
 
 ```
