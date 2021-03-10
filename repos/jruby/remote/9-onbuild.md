@@ -1,7 +1,7 @@
 ## `jruby:9-onbuild`
 
 ```console
-$ docker pull jruby@sha256:caa8cc9bf3ecd32913e95e7b81f679527e4ab909ea164208603489634fb73565
+$ docker pull jruby@sha256:b24fcf83ba8e2ac1080d5431728fad162a0e2ed8cf3d728bb82ff599b8d20ae6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull jruby@sha256:caa8cc9bf3ecd32913e95e7b81f679527e4ab909ea16420860348
 ### `jruby:9-onbuild` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:5796be26ec7ec8f14b57d135968f59cf78d9eb015a3264f5c35fa7d33f4c3bbc
+$ docker pull jruby@sha256:b321c68fb6afa99d55b2c656c8dce8f10cb9702ce7ca4c8e79e3579a52d79898
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.9 MB (265902089 bytes)**  
+-	Total Size: **265.9 MB (265906248 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:294746328488d64aa817fdaf10b95122ef42a405832f9d5a3e47cd66adf6464d`
+-	Image ID: `sha256:c238be2338b802f6ad9f5296ecaeb272b171aa5cc44af96fe270aed75f378ab8`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -32,55 +32,55 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Tue, 09 Feb 2021 04:35:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 09 Feb 2021 17:13:28 GMT
+# Tue, 09 Mar 2021 21:02:41 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 09 Feb 2021 17:15:51 GMT
+# Tue, 09 Mar 2021 21:04:23 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Tue, 09 Feb 2021 17:15:52 GMT
+# Tue, 09 Mar 2021 21:04:24 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Tue, 09 Feb 2021 17:15:52 GMT
+# Tue, 09 Mar 2021 21:04:24 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Feb 2021 17:15:53 GMT
+# Tue, 09 Mar 2021 21:04:25 GMT
 ENV LANG=C.UTF-8
-# Tue, 09 Feb 2021 17:15:53 GMT
+# Tue, 09 Mar 2021 21:04:25 GMT
 ENV JAVA_VERSION=8u282
-# Tue, 09 Feb 2021 17:16:02 GMT
+# Tue, 09 Mar 2021 21:04:31 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u282-b08/OpenJDK8U-jdk_x64_linux_8u282b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/jre/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
-# Wed, 10 Feb 2021 06:30:48 GMT
+# Wed, 10 Mar 2021 00:12:55 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Thu, 25 Feb 2021 03:37:24 GMT
+# Wed, 10 Mar 2021 00:12:55 GMT
 ENV JRUBY_VERSION=9.2.15.0
-# Thu, 25 Feb 2021 03:37:24 GMT
+# Wed, 10 Mar 2021 00:12:55 GMT
 ENV JRUBY_SHA256=9e8e5d73c42d1dad8a795a6dc39bd87e88fc8863f76e065e4099c32d085205b0
-# Thu, 25 Feb 2021 03:37:26 GMT
+# Wed, 10 Mar 2021 00:12:58 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Thu, 25 Feb 2021 03:37:27 GMT
+# Wed, 10 Mar 2021 00:12:58 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Feb 2021 03:37:28 GMT
+# Wed, 10 Mar 2021 00:12:59 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Thu, 25 Feb 2021 03:37:42 GMT
+# Wed, 10 Mar 2021 00:13:09 GMT
 RUN gem install bundler rake net-telnet xmlrpc
-# Thu, 25 Feb 2021 03:37:43 GMT
+# Wed, 10 Mar 2021 00:13:09 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 25 Feb 2021 03:37:43 GMT
+# Wed, 10 Mar 2021 00:13:10 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 25 Feb 2021 03:37:43 GMT
+# Wed, 10 Mar 2021 00:13:10 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 25 Feb 2021 03:37:44 GMT
+# Wed, 10 Mar 2021 00:13:11 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME"
-# Thu, 25 Feb 2021 03:37:44 GMT
+# Wed, 10 Mar 2021 00:13:11 GMT
 CMD ["irb"]
-# Thu, 25 Feb 2021 03:38:54 GMT
+# Wed, 10 Mar 2021 00:14:07 GMT
 RUN mkdir -p /usr/src/app
-# Thu, 25 Feb 2021 03:38:54 GMT
+# Wed, 10 Mar 2021 00:14:07 GMT
 WORKDIR /usr/src/app
-# Thu, 25 Feb 2021 03:38:54 GMT
+# Wed, 10 Mar 2021 00:14:07 GMT
 ONBUILD ADD Gemfile /usr/src/app/
-# Thu, 25 Feb 2021 03:38:55 GMT
+# Wed, 10 Mar 2021 00:14:08 GMT
 ONBUILD ADD Gemfile.lock /usr/src/app/
-# Thu, 25 Feb 2021 03:38:55 GMT
+# Wed, 10 Mar 2021 00:14:08 GMT
 ONBUILD RUN bundle install --system
-# Thu, 25 Feb 2021 03:38:55 GMT
+# Wed, 10 Mar 2021 00:14:08 GMT
 ONBUILD ADD . /usr/src/app
 ```
 
@@ -101,39 +101,39 @@ ONBUILD ADD . /usr/src/app
 		Last Modified: Tue, 09 Feb 2021 04:46:23 GMT  
 		Size: 51.8 MB (51830963 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26cb1dfcbebb21160622ee663cb64f65e625a9f3d98c55b9555e21e2cb15e400`  
-		Last Modified: Tue, 09 Feb 2021 17:23:29 GMT  
-		Size: 5.3 MB (5285248 bytes)  
+	-	`sha256:b4735181ba0c236211ac3061b9b64a3c6b6c49be666302913fd5fb9c5a9ef113`  
+		Last Modified: Tue, 09 Mar 2021 21:20:32 GMT  
+		Size: 5.3 MB (5286471 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b224ce6d4ea5ecf6e54c119d0f23e07374d56d8a23ee8af05d6b4c690226fd0`  
-		Last Modified: Tue, 09 Feb 2021 17:25:45 GMT  
-		Size: 207.0 B  
+	-	`sha256:4c5aad20509be0c57b6d7e749b8a82b03dbe4c782dffa2136f255b739917866a`  
+		Last Modified: Tue, 09 Mar 2021 21:23:54 GMT  
+		Size: 209.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c932fe81bb4029be327b923bbc3f1c8996616a209ae020ec61909f7bcfea0dcb`  
-		Last Modified: Tue, 09 Feb 2021 17:25:58 GMT  
-		Size: 105.9 MB (105913795 bytes)  
+	-	`sha256:b9b9a5340f335269ac98c8223018e7a117a3770301ecd499150af3f31a16c9cb`  
+		Last Modified: Tue, 09 Mar 2021 21:24:05 GMT  
+		Size: 105.9 MB (105913877 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50e7d1c980c111ff58211ec83dbbfc8a0b09e067d3193e00b556f67a27f6aca1`  
-		Last Modified: Wed, 10 Feb 2021 06:33:55 GMT  
-		Size: 7.8 MB (7775978 bytes)  
+	-	`sha256:ee246af1cd679ce4d536c696a82ef7a50a3b6a98bd5db12207aa78419d78fc02`  
+		Last Modified: Wed, 10 Mar 2021 00:16:20 GMT  
+		Size: 7.8 MB (7776403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1525194e71e54b90cdf1f4b486ba0182fbcce5af07e45358b1281a687ada5e3c`  
-		Last Modified: Thu, 25 Feb 2021 03:39:50 GMT  
-		Size: 25.8 MB (25844851 bytes)  
+	-	`sha256:91352df3c2fdc43bd39a2bae0fabfb66100ac86c8c84717f3a167bf0b838bd76`  
+		Last Modified: Wed, 10 Mar 2021 00:16:20 GMT  
+		Size: 25.8 MB (25845114 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e7dcb7095eb8be214a1e5fdd0d42dadbcbd8e7f9ed4799d01438d1e2337815d`  
-		Last Modified: Thu, 25 Feb 2021 03:39:48 GMT  
-		Size: 197.0 B  
+	-	`sha256:6187fba2627ec74fb3c97da176166d48d25d6df0245f0f8614bfa3ccc056ed1a`  
+		Last Modified: Wed, 10 Mar 2021 00:16:18 GMT  
+		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:984f2decc40816883f37f14dbd4668425c85e4a52464a7196cce7791fabfea5a`  
-		Last Modified: Thu, 25 Feb 2021 03:39:48 GMT  
-		Size: 1.0 MB (1023238 bytes)  
+	-	`sha256:0903372cfbc77d13720f375e2e20518004114c68d08111bd351d1298ae538bec`  
+		Last Modified: Wed, 10 Mar 2021 00:16:18 GMT  
+		Size: 1.0 MB (1025305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50a2c232e54015cc4c87057550608819e09dec37d90d308d8a2514b34a20533d`  
-		Last Modified: Thu, 25 Feb 2021 03:39:48 GMT  
-		Size: 140.0 B  
+	-	`sha256:8237dc615eaf2d5540fcd772419a95610e56090ce02c7f925e5afd4a481d27a1`  
+		Last Modified: Wed, 10 Mar 2021 00:16:18 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f468ae225c59f057a10299fffee3e3e1cc7fd6bd3016c89653bad2bb34a192fd`  
-		Last Modified: Thu, 25 Feb 2021 03:40:18 GMT  
-		Size: 131.0 B  
+	-	`sha256:ee9ffa6aec23f723cf2da5e744b920b90175d5fb6ccde30e70b8fa6726db68a5`  
+		Last Modified: Wed, 10 Mar 2021 00:17:29 GMT  
+		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
