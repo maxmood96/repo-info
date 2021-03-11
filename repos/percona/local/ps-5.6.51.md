@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:848ac686b85c61fa4d21842a80f375076003350203ffc06c66cbfba9f48a6464`
-- Created: `2021-02-10T09:34:41.636459816Z`
+- Image ID: `sha256:ca7e1e950ef9a769c3f9876824d95c42c47ccbb442c600175a25d143e1389ca6`
+- Created: `2021-03-06T01:10:52.937483953Z`
 - Virtual Size: ~ 430.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1628,7 +1628,7 @@ Enabling extras-source repository
 http://vault.centos.org/centos/7/os/Source//SPackages/pcre-8.32-17.el7.src.rpm
 ```
 
-### `rpm` package: `percona-release-1.0-25.noarch`
+### `rpm` package: `percona-release-1.0-26.noarch`
 
 Licenses (from `rpm --query`): GPL-3.0+
 
