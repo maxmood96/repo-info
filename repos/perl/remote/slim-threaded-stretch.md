@@ -1,7 +1,7 @@
 ## `perl:slim-threaded-stretch`
 
 ```console
-$ docker pull perl@sha256:b8c1227c6b278f3b77e47e75fa01a8d045bb0994643430d7892618ccb2e81372
+$ docker pull perl@sha256:3665c9d2f946f8f660c1cee37bc85e7538680737a404fec5cdea7cc6c9e5e134
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -60,137 +60,137 @@ CMD ["perl5.32.1" "-de0"]
 ### `perl:slim-threaded-stretch` - linux; arm variant v7
 
 ```console
-$ docker pull perl@sha256:2a64f98845a1fccc1807f33694a476a335bc86372951b860f1a451bc7eb12251
+$ docker pull perl@sha256:f61ad5222a53f118202f95a31afd9216ee826cf655e465968f0b24ce55650478
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.1 MB (33077375 bytes)**  
+-	Total Size: **33.1 MB (33077657 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e1420add333c13183f0dc98caa16956e30d035781e91fbc20eac711f0c158ce`
+-	Image ID: `sha256:cfa5361fdcf4a605270e5fdeefabd206825d089eca9f93870f3ddca7f4597555`
 -	Default Command: `["perl5.32.1","-de0"]`
 
 ```dockerfile
-# Tue, 09 Feb 2021 03:05:17 GMT
-ADD file:42ae9de4db7ca66ccb0a5bc0291a00b2b1ad3c62e6e2d6bad1f99c693e981676 in / 
-# Tue, 09 Feb 2021 03:05:19 GMT
+# Fri, 12 Mar 2021 02:05:43 GMT
+ADD file:37f1c27246cb6d0d42be6f807f54c620cc083043d7395656a56178df89e5d6d9 in / 
+# Fri, 12 Mar 2021 02:05:45 GMT
 CMD ["bash"]
-# Tue, 09 Feb 2021 08:25:20 GMT
+# Fri, 12 Mar 2021 05:30:35 GMT
 LABEL maintainer=Peter Martini <PeterCMartini@GMail.com>, Zak B. Elep <zakame@cpan.org>
-# Tue, 09 Feb 2021 08:25:20 GMT
+# Fri, 12 Mar 2021 05:30:35 GMT
 COPY file:3744c5cc39cdbdcae10db09a1f0f399005a79f93c237b387a72ff5710cdd458c in /usr/src/perl/ 
-# Tue, 09 Feb 2021 08:25:21 GMT
+# Fri, 12 Mar 2021 05:30:36 GMT
 WORKDIR /usr/src/perl
-# Tue, 09 Feb 2021 09:13:59 GMT
+# Fri, 12 Mar 2021 06:19:13 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends        bzip2        ca-certificates        curl        dpkg-dev        gcc        libc6-dev        make        netbase        patch        xz-utils     && curl -SL https://www.cpan.org/src/5.0/perl-5.32.1.tar.xz -o perl-5.32.1.tar.xz     && echo '57cc47c735c8300a8ce2fa0643507b44c4ae59012bfdad0121313db639e02309 *perl-5.32.1.tar.xz' | sha256sum -c -     && tar --strip-components=1 -xaf perl-5.32.1.tar.xz -C /usr/src/perl     && rm perl-5.32.1.tar.xz     && cat *.patch | patch -p1     && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"     && archBits="$(dpkg-architecture --query DEB_BUILD_ARCH_BITS)"     && archFlag="$([ "$archBits" = '64' ] && echo '-Duse64bitall' || echo '-Duse64bitint')"     && ./Configure -Darchname="$gnuArch" "$archFlag" -Dusethreads -Duseshrplib -Dvendorprefix=/usr/local  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://www.cpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.7044.tar.gz     && echo '9b60767fe40752ef7a9d3f13f19060a63389a5c23acc3e9827e19b75500f81f3 *App-cpanminus-1.7044.tar.gz' | sha256sum -c -     && tar -xzf App-cpanminus-1.7044.tar.gz && cd App-cpanminus-1.7044 && perl bin/cpanm . && cd /root     && savedPackages="make netbase"     && apt-mark auto '.*' > /dev/null     && apt-mark manual $savedPackages     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && rm -fr /var/cache/apt/* /var/lib/apt/lists/*     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /usr/src/App-cpanminus-1.7044* /tmp/*
-# Tue, 09 Feb 2021 09:14:01 GMT
+# Fri, 12 Mar 2021 06:19:15 GMT
 WORKDIR /
-# Tue, 09 Feb 2021 09:14:02 GMT
+# Fri, 12 Mar 2021 06:19:16 GMT
 CMD ["perl5.32.1" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:ebe5f2b760402bf53dfee026659ac0188dc5418dfde6839893f442bbfe23e42f`  
-		Last Modified: Tue, 09 Feb 2021 03:13:48 GMT  
-		Size: 19.3 MB (19316094 bytes)  
+	-	`sha256:61211de2ba721a5e516c346a68bf2ae409d80525a872c3ad47ccefce648dc07c`  
+		Last Modified: Fri, 12 Mar 2021 02:14:31 GMT  
+		Size: 19.3 MB (19316567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10f5e5d3d8d46e92a38465819071196c252183789ecabec6a9686cd220c9ac5f`  
-		Last Modified: Tue, 09 Feb 2021 11:47:31 GMT  
+	-	`sha256:f111b755ad5c9dabb6951b2ae70635499104b8df1dc50f274cd4b9cec21e6e7d`  
+		Last Modified: Fri, 12 Mar 2021 08:52:22 GMT  
 		Size: 202.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d85d348ec7a50720e32617ceaa4a170a70c24967fd121ead266cefb5bbb2213`  
-		Last Modified: Tue, 09 Feb 2021 11:49:00 GMT  
-		Size: 13.8 MB (13761079 bytes)  
+	-	`sha256:d31bf0e31f05366c8706cf6afea64ed7b6b8fe9e6b6f989038632bf9fdf887fb`  
+		Last Modified: Fri, 12 Mar 2021 08:53:43 GMT  
+		Size: 13.8 MB (13760888 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `perl:slim-threaded-stretch` - linux; arm64 variant v8
 
 ```console
-$ docker pull perl@sha256:fdaf0308b3c33e93158aade993abaf52583e99180c50b4e8b302de3bed84168f
+$ docker pull perl@sha256:d1c969c238d610264b653f3cda427142a1a049b1d235ac41985b4a7245a8ebfa
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.8 MB (34824037 bytes)**  
+-	Total Size: **34.8 MB (34823920 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7aa36c52f2cff389b7b698f9cae50d053dbbd2aca9159b8981d27aae6f314a38`
+-	Image ID: `sha256:f6a1a1555367d9b443643ac1ec66b929c0d09f6f56a2ecebf1da9efe4024a146`
 -	Default Command: `["perl5.32.1","-de0"]`
 
 ```dockerfile
-# Tue, 09 Feb 2021 02:43:38 GMT
-ADD file:ec0f3f5aad51202b992acbfa7ec19738608d022983bc1918d7d9eecdd35e4800 in / 
-# Tue, 09 Feb 2021 02:43:40 GMT
+# Fri, 12 Mar 2021 01:57:19 GMT
+ADD file:cd70de3ff9dab2f20378f87a36ca54171a79fde726291a9c5c7eae7b5435cfa2 in / 
+# Fri, 12 Mar 2021 01:57:20 GMT
 CMD ["bash"]
-# Tue, 09 Feb 2021 09:20:30 GMT
+# Fri, 12 Mar 2021 07:24:14 GMT
 LABEL maintainer=Peter Martini <PeterCMartini@GMail.com>, Zak B. Elep <zakame@cpan.org>
-# Tue, 09 Feb 2021 09:20:31 GMT
+# Fri, 12 Mar 2021 07:24:15 GMT
 COPY file:3744c5cc39cdbdcae10db09a1f0f399005a79f93c237b387a72ff5710cdd458c in /usr/src/perl/ 
-# Tue, 09 Feb 2021 09:20:32 GMT
+# Fri, 12 Mar 2021 07:24:15 GMT
 WORKDIR /usr/src/perl
-# Tue, 09 Feb 2021 10:11:40 GMT
+# Fri, 12 Mar 2021 08:16:07 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends        bzip2        ca-certificates        curl        dpkg-dev        gcc        libc6-dev        make        netbase        patch        xz-utils     && curl -SL https://www.cpan.org/src/5.0/perl-5.32.1.tar.xz -o perl-5.32.1.tar.xz     && echo '57cc47c735c8300a8ce2fa0643507b44c4ae59012bfdad0121313db639e02309 *perl-5.32.1.tar.xz' | sha256sum -c -     && tar --strip-components=1 -xaf perl-5.32.1.tar.xz -C /usr/src/perl     && rm perl-5.32.1.tar.xz     && cat *.patch | patch -p1     && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"     && archBits="$(dpkg-architecture --query DEB_BUILD_ARCH_BITS)"     && archFlag="$([ "$archBits" = '64' ] && echo '-Duse64bitall' || echo '-Duse64bitint')"     && ./Configure -Darchname="$gnuArch" "$archFlag" -Dusethreads -Duseshrplib -Dvendorprefix=/usr/local  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://www.cpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.7044.tar.gz     && echo '9b60767fe40752ef7a9d3f13f19060a63389a5c23acc3e9827e19b75500f81f3 *App-cpanminus-1.7044.tar.gz' | sha256sum -c -     && tar -xzf App-cpanminus-1.7044.tar.gz && cd App-cpanminus-1.7044 && perl bin/cpanm . && cd /root     && savedPackages="make netbase"     && apt-mark auto '.*' > /dev/null     && apt-mark manual $savedPackages     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && rm -fr /var/cache/apt/* /var/lib/apt/lists/*     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /usr/src/App-cpanminus-1.7044* /tmp/*
-# Tue, 09 Feb 2021 10:11:42 GMT
+# Fri, 12 Mar 2021 08:16:09 GMT
 WORKDIR /
-# Tue, 09 Feb 2021 10:11:43 GMT
+# Fri, 12 Mar 2021 08:16:09 GMT
 CMD ["perl5.32.1" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:b373a42fa9174db1e441a19411c9622d41f6db219878945ed0cb256efa32c8a6`  
-		Last Modified: Tue, 09 Feb 2021 02:50:08 GMT  
-		Size: 20.4 MB (20389427 bytes)  
+	-	`sha256:9cb8532b12b699d7151babb99e22315d94bfbf317f3c1db01c532a61fc38a748`  
+		Last Modified: Fri, 12 Mar 2021 02:04:16 GMT  
+		Size: 20.4 MB (20389391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:374946d6a2b49e1cdb996304bd7f962136efdec55e0df3701e50c19473bffd86`  
-		Last Modified: Tue, 09 Feb 2021 13:18:19 GMT  
-		Size: 204.0 B  
+	-	`sha256:c6ab08d4bbb12b4ce531cd4be4681c92c1606a074cf365454a35e5be15ff5d0c`  
+		Last Modified: Fri, 12 Mar 2021 11:02:46 GMT  
+		Size: 202.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc1d92e56d657ce3c7ee80505250b791c271360c189c3433fa2fe387b57daf70`  
-		Last Modified: Tue, 09 Feb 2021 13:19:38 GMT  
-		Size: 14.4 MB (14434406 bytes)  
+	-	`sha256:434bde81d59c01932c22b5f6aaf2be0ee40df6db01d96693b90086f2a472a8f9`  
+		Last Modified: Fri, 12 Mar 2021 11:04:11 GMT  
+		Size: 14.4 MB (14434327 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `perl:slim-threaded-stretch` - linux; 386
 
 ```console
-$ docker pull perl@sha256:a897b12b3d300907dcb0a7dd1a7f2f100292922155cf0d5971270fb88e5fc478
+$ docker pull perl@sha256:a26cc345448231e96a61c050b7b76be929de8b147d31166d64d323573f00d746
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.3 MB (37344807 bytes)**  
+-	Total Size: **37.3 MB (37346562 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9611c5eac84aa0ddec9d990c191719b5ebd414b08ef5ed922b62514de039f8f`
+-	Image ID: `sha256:05496803d99fff4c144ce1cf6a7b2c114f11ec70a14a66aa11e631d099fb3736`
 -	Default Command: `["perl5.32.1","-de0"]`
 
 ```dockerfile
-# Tue, 09 Feb 2021 02:42:24 GMT
-ADD file:cbde3f6182462511b6b1013086d92b88abfce7d6e0c2e0c2cb849985e0eeaa55 in / 
-# Tue, 09 Feb 2021 02:42:24 GMT
+# Fri, 12 Mar 2021 01:47:05 GMT
+ADD file:c28d9f74d54dc681d8eead21e2a40e131bdb3ffc9aab1eb33adab7a920fbf65e in / 
+# Fri, 12 Mar 2021 01:47:05 GMT
 CMD ["bash"]
-# Tue, 09 Feb 2021 08:16:04 GMT
+# Fri, 12 Mar 2021 16:13:37 GMT
 LABEL maintainer=Peter Martini <PeterCMartini@GMail.com>, Zak B. Elep <zakame@cpan.org>
-# Tue, 09 Feb 2021 08:16:04 GMT
+# Fri, 12 Mar 2021 16:13:37 GMT
 COPY file:3744c5cc39cdbdcae10db09a1f0f399005a79f93c237b387a72ff5710cdd458c in /usr/src/perl/ 
-# Tue, 09 Feb 2021 08:16:04 GMT
+# Fri, 12 Mar 2021 16:13:37 GMT
 WORKDIR /usr/src/perl
-# Tue, 09 Feb 2021 09:25:11 GMT
+# Fri, 12 Mar 2021 17:20:17 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends        bzip2        ca-certificates        curl        dpkg-dev        gcc        libc6-dev        make        netbase        patch        xz-utils     && curl -SL https://www.cpan.org/src/5.0/perl-5.32.1.tar.xz -o perl-5.32.1.tar.xz     && echo '57cc47c735c8300a8ce2fa0643507b44c4ae59012bfdad0121313db639e02309 *perl-5.32.1.tar.xz' | sha256sum -c -     && tar --strip-components=1 -xaf perl-5.32.1.tar.xz -C /usr/src/perl     && rm perl-5.32.1.tar.xz     && cat *.patch | patch -p1     && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"     && archBits="$(dpkg-architecture --query DEB_BUILD_ARCH_BITS)"     && archFlag="$([ "$archBits" = '64' ] && echo '-Duse64bitall' || echo '-Duse64bitint')"     && ./Configure -Darchname="$gnuArch" "$archFlag" -Dusethreads -Duseshrplib -Dvendorprefix=/usr/local  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://www.cpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.7044.tar.gz     && echo '9b60767fe40752ef7a9d3f13f19060a63389a5c23acc3e9827e19b75500f81f3 *App-cpanminus-1.7044.tar.gz' | sha256sum -c -     && tar -xzf App-cpanminus-1.7044.tar.gz && cd App-cpanminus-1.7044 && perl bin/cpanm . && cd /root     && savedPackages="make netbase"     && apt-mark auto '.*' > /dev/null     && apt-mark manual $savedPackages     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && rm -fr /var/cache/apt/* /var/lib/apt/lists/*     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /usr/src/App-cpanminus-1.7044* /tmp/*
-# Tue, 09 Feb 2021 09:25:11 GMT
+# Fri, 12 Mar 2021 17:20:17 GMT
 WORKDIR /
-# Tue, 09 Feb 2021 09:25:11 GMT
+# Fri, 12 Mar 2021 17:20:17 GMT
 CMD ["perl5.32.1" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:9e9426d613b02f63e8619dbc5092a9ba00ac975b6fe58648bdcff2b9b73004f9`  
-		Last Modified: Tue, 09 Feb 2021 02:49:44 GMT  
-		Size: 23.2 MB (23156630 bytes)  
+	-	`sha256:20676323c2cd7ba78c7914c2d0cd4b9c7f22c9dcdb7e8c86d64f3808c127afe9`  
+		Last Modified: Fri, 12 Mar 2021 01:57:04 GMT  
+		Size: 23.2 MB (23156851 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:610e3ff386276f4c576fa9351c6a9df16aa58aa983a3ba060c81db2b87b8e7f3`  
-		Last Modified: Tue, 09 Feb 2021 12:49:38 GMT  
-		Size: 178.0 B  
+	-	`sha256:e14dc268eaf2bd194965d75c6c0bb96286d7bfbc561e91d585b5b344324e24cb`  
+		Last Modified: Fri, 12 Mar 2021 20:12:16 GMT  
+		Size: 202.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03d480b002dde0b7e521a378803532406bdab77bf290b1cc9db148df1a00f749`  
-		Last Modified: Tue, 09 Feb 2021 12:50:52 GMT  
-		Size: 14.2 MB (14187999 bytes)  
+	-	`sha256:5269c48c5cd4f6ff58851f298d017effa2cdc6119bd083add7dfb28c5ef41faf`  
+		Last Modified: Fri, 12 Mar 2021 20:14:33 GMT  
+		Size: 14.2 MB (14189509 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
