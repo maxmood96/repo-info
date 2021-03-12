@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ea8d377c46f3f3567bb2e6e802e489b9c88ef222c31c669b8565d26a6198566d`
-- Created: `2021-02-09T04:28:02.8367276Z`
-- Virtual Size: ~ 269.84 Mb  
+- Image ID: `sha256:40cab44d74db166b32c02c1b4370a91117bb634c1ccdce0d51c873a799b00290`
+- Created: `2021-03-12T08:51:00.680597315Z`
+- Virtual Size: ~ 269.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
@@ -1073,11 +1073,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libtool/2.4.6-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libtool/2.4.6-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.9.246-2`
+### `dpkg` source package: `linux=4.9.258-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.9.246-2`
+- `linux-libc-dev:amd64=4.9.258-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1090,17 +1090,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.9.246-2
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.246-2.dsc' linux_4.9.246-2.dsc 125025 SHA256:d1d8a9c43152bdf9d29d53ad588d80ca39909c75146c1737d28b3959365400e4
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.246.orig.tar.xz' linux_4.9.246.orig.tar.xz 94928260 SHA256:410c2a08d2c64afeee5ea8ae0077eb0f03b12e3d594c12e2ea1f7c7f47c70221
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.246-2.debian.tar.xz' linux_4.9.246-2.debian.tar.xz 2175748 SHA256:d16d0d13a9d167c3757d490b507c67071d6442cb4c71d4c8acae8a9b977f621a
+$ apt-get source -qq --print-uris linux=4.9.258-1
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.258-1.dsc' linux_4.9.258-1.dsc 125025 SHA256:ff37a5b00748eab759bc2d7d2ed0429a7d001f34517564813568b34e24014fd2
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.258.orig.tar.xz' linux_4.9.258.orig.tar.xz 94938520 SHA256:9ce4411eb1fe1262f2aa64890ebcf9a40e8c161931b8b1902cd0929f853d8e29
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.258-1.debian.tar.xz' linux_4.9.258-1.debian.tar.xz 1345948 SHA256:29347a7d10edc34823689db995b0b5d143bae3bedb3c3dcf7986ca051f5717ff
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/4.9.246-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.9.246-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.9.246-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/4.9.258-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.9.258-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.9.258-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-1`
 
@@ -1274,23 +1274,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl1.0=1.0.2u-1~deb9u3`
+### `dpkg` source package: `openssl1.0=1.0.2u-1~deb9u4`
 
 Binary Packages:
 
-- `libssl1.0.2:amd64=1.0.2u-1~deb9u3`
+- `libssl1.0.2:amd64=1.0.2u-1~deb9u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl1.0=1.0.2u-1~deb9u4
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2u-1~deb9u4.dsc' openssl1.0_1.0.2u-1~deb9u4.dsc 2304 SHA256:6efcbe988fe4397c0f5719867cb8bd4424c7dd5a5dbea96fd086e902ffd263c1
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2u.orig.tar.gz' openssl1.0_1.0.2u.orig.tar.gz 5355412 SHA256:ecd0c6ffb493dd06707d38b14bb4d8c2288bb7033735606569d8f90f89669d16
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2u-1~deb9u4.debian.tar.xz' openssl1.0_1.0.2u-1~deb9u4.debian.tar.xz 100204 SHA256:7192b63ce719400c71b14be26fae75491debd87095b949ad4731ed3bc10b3d70
+```
 
-- http://snapshot.debian.org/package/openssl1.0/1.0.2u-1~deb9u3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl1.0/1.0.2u-1~deb9u4/ (for browsing the source)
+- https://sources.debian.net/src/openssl1.0/1.0.2u-1~deb9u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl1.0/1.0.2u-1~deb9u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.1.8-3.6`
 

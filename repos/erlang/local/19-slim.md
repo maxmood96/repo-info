@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:00437cfe968c9410f17e67745579df502a5afcf1aa34004e74f9cddb67c20b31`
-- Created: `2021-02-09T04:14:08.630205389Z`
-- Virtual Size: ~ 514.92 Mb  
+- Image ID: `sha256:478b11a828971bf190af7fef00d8b2c84cea5521fbc02cb355dae7900704cbb4`
+- Created: `2021-03-12T08:27:42.754758948Z`
+- Virtual Size: ~ 514.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
@@ -1441,11 +1441,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/krb5/1.15-1+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/krb5/1.15-1+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libbsd=0.8.3-1`
+### `dpkg` source package: `libbsd=0.8.3-1+deb9u1`
 
 Binary Packages:
 
-- `libbsd0:amd64=0.8.3-1`
+- `libbsd0:amd64=0.8.3-1+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libbsd0/copyright`)
 
@@ -1469,18 +1469,18 @@ Licenses: (parsed from: `/usr/share/doc/libbsd0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libbsd=0.8.3-1
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.3-1.dsc' libbsd_0.8.3-1.dsc 2212 SHA256:8b53b3731a95f00a0f47195e6afdf8dc4bcb3ed3b9b0d3e7046d8c9c98e5c8f2
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.3.orig.tar.xz' libbsd_0.8.3.orig.tar.xz 356772 SHA256:934b634f4dfd865b6482650b8f522c70ae65c463529de8be907b53c89c3a34a8
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.3.orig.tar.xz.asc' libbsd_0.8.3.orig.tar.xz.asc 819 SHA256:c0e26a577d19404d05515e0559b9224106a59ecd30910d6896694c4a5a4b021d
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.3-1.debian.tar.xz' libbsd_0.8.3-1.debian.tar.xz 14924 SHA256:c2beb8b2c4678c9f700b09834d1083fb6b1f883b112e493bd1ed1177355114fc
+$ apt-get source -qq --print-uris libbsd=0.8.3-1+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/libb/libbsd/libbsd_0.8.3-1+deb9u1.dsc' libbsd_0.8.3-1+deb9u1.dsc 2413 SHA256:dfb47f704674611973bfa38ed9afd32e3febcb60c63687b3a9b8b62393386708
+'http://security.debian.org/debian-security/pool/updates/main/libb/libbsd/libbsd_0.8.3.orig.tar.xz' libbsd_0.8.3.orig.tar.xz 356772 SHA256:934b634f4dfd865b6482650b8f522c70ae65c463529de8be907b53c89c3a34a8
+'http://security.debian.org/debian-security/pool/updates/main/libb/libbsd/libbsd_0.8.3.orig.tar.xz.asc' libbsd_0.8.3.orig.tar.xz.asc 819 SHA256:c0e26a577d19404d05515e0559b9224106a59ecd30910d6896694c4a5a4b021d
+'http://security.debian.org/debian-security/pool/updates/main/libb/libbsd/libbsd_0.8.3-1+deb9u1.debian.tar.xz' libbsd_0.8.3-1+deb9u1.debian.tar.xz 15632 SHA256:3627593370b371f219682b9852d6d53ad85e923e9a6adf9953ef4c8b290e3b77
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libbsd/0.8.3-1/ (for browsing the source)
-- https://sources.debian.net/src/libbsd/0.8.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libbsd/0.8.3-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libbsd/0.8.3-1+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/libbsd/0.8.3-1+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libbsd/0.8.3-1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.7.7-3`
 
@@ -2592,11 +2592,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxxf86vm/1:1.1.4-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxxf86vm/1:1.1.4-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.9.246-2`
+### `dpkg` source package: `linux=4.9.258-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.9.246-2`
+- `linux-libc-dev:amd64=4.9.258-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2609,17 +2609,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.9.246-2
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.246-2.dsc' linux_4.9.246-2.dsc 125025 SHA256:d1d8a9c43152bdf9d29d53ad588d80ca39909c75146c1737d28b3959365400e4
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.246.orig.tar.xz' linux_4.9.246.orig.tar.xz 94928260 SHA256:410c2a08d2c64afeee5ea8ae0077eb0f03b12e3d594c12e2ea1f7c7f47c70221
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.246-2.debian.tar.xz' linux_4.9.246-2.debian.tar.xz 2175748 SHA256:d16d0d13a9d167c3757d490b507c67071d6442cb4c71d4c8acae8a9b977f621a
+$ apt-get source -qq --print-uris linux=4.9.258-1
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.258-1.dsc' linux_4.9.258-1.dsc 125025 SHA256:ff37a5b00748eab759bc2d7d2ed0429a7d001f34517564813568b34e24014fd2
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.258.orig.tar.xz' linux_4.9.258.orig.tar.xz 94938520 SHA256:9ce4411eb1fe1262f2aa64890ebcf9a40e8c161931b8b1902cd0929f853d8e29
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.258-1.debian.tar.xz' linux_4.9.258-1.debian.tar.xz 1345948 SHA256:29347a7d10edc34823689db995b0b5d143bae3bedb3c3dcf7986ca051f5717ff
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/4.9.246-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.9.246-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.9.246-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/4.9.258-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.9.258-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.9.258-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-1`
 
@@ -2823,23 +2823,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl1.0=1.0.2u-1~deb9u3`
+### `dpkg` source package: `openssl1.0=1.0.2u-1~deb9u4`
 
 Binary Packages:
 
-- `libssl1.0.2:amd64=1.0.2u-1~deb9u3`
+- `libssl1.0.2:amd64=1.0.2u-1~deb9u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl1.0=1.0.2u-1~deb9u4
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2u-1~deb9u4.dsc' openssl1.0_1.0.2u-1~deb9u4.dsc 2304 SHA256:6efcbe988fe4397c0f5719867cb8bd4424c7dd5a5dbea96fd086e902ffd263c1
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2u.orig.tar.gz' openssl1.0_1.0.2u.orig.tar.gz 5355412 SHA256:ecd0c6ffb493dd06707d38b14bb4d8c2288bb7033735606569d8f90f89669d16
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2u-1~deb9u4.debian.tar.xz' openssl1.0_1.0.2u-1~deb9u4.debian.tar.xz 100204 SHA256:7192b63ce719400c71b14be26fae75491debd87095b949ad4731ed3bc10b3d70
+```
 
-- http://snapshot.debian.org/package/openssl1.0/1.0.2u-1~deb9u3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl1.0/1.0.2u-1~deb9u4/ (for browsing the source)
+- https://sources.debian.net/src/openssl1.0/1.0.2u-1~deb9u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl1.0/1.0.2u-1~deb9u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.3-2+deb9u1`
 
