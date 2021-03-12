@@ -1,4 +1,4 @@
-## `debian:unstable-slim`
+## `debian:unstable-20210311-slim`
 
 ```console
 $ docker pull debian@sha256:ba06f965fae5c8dd215fcc8516d8b6855c7bb919dcf74e9353556069bc62c455
@@ -15,7 +15,7 @@ $ docker pull debian@sha256:ba06f965fae5c8dd215fcc8516d8b6855c7bb919dcf74e935355
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `debian:unstable-slim` - linux; amd64
+### `debian:unstable-20210311-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:a7d45592371e040910bac139129b3222d7bee5155434776828da25cb4623daf0
@@ -41,7 +41,7 @@ CMD ["bash"]
 		Size: 31.3 MB (31325551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; arm variant v5
+### `debian:unstable-20210311-slim` - linux; arm variant v5
 
 ```console
 $ docker pull debian@sha256:8540ac198c299a5182205baf45ead771c7c31856a420db0ae6f34a2aa4be959b
@@ -67,7 +67,7 @@ CMD ["bash"]
 		Size: 28.9 MB (28864302 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; arm variant v7
+### `debian:unstable-20210311-slim` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:3bad7c509c8137303b5d2522247ea1a6a9d7d10a81b8d38cdc34a29f1ba275d1
@@ -93,7 +93,7 @@ CMD ["bash"]
 		Size: 26.5 MB (26530901 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; arm64 variant v8
+### `debian:unstable-20210311-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:d589973cba37a894e4ccdf9603f489fce37c5d7659c17f9dbacae1b53bd0da39
@@ -119,7 +119,7 @@ CMD ["bash"]
 		Size: 30.0 MB (30014534 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; 386
+### `debian:unstable-20210311-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:81a0b51bb9ff10816e79482da3516be175e84cb9eb5826bb923599881a204f94
@@ -145,7 +145,7 @@ CMD ["bash"]
 		Size: 32.3 MB (32343433 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; mips64le
+### `debian:unstable-20210311-slim` - linux; mips64le
 
 ```console
 $ docker pull debian@sha256:68cfb69a1a16d685a96f171bebdd02feadbe5aa01da2f9d7a1d1e13a44c73a6a
@@ -171,7 +171,7 @@ CMD ["bash"]
 		Size: 29.6 MB (29590509 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; ppc64le
+### `debian:unstable-20210311-slim` - linux; ppc64le
 
 ```console
 $ docker pull debian@sha256:fe06ac1ce2c97fe32759565e96238e1524f7bb831781b0d28d52bece768ec8ae
@@ -197,7 +197,7 @@ CMD ["bash"]
 		Size: 35.2 MB (35228774 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; s390x
+### `debian:unstable-20210311-slim` - linux; s390x
 
 ```console
 $ docker pull debian@sha256:17442777b45d204d4f631c18647f49b4ff1bd3272c068fa784f790076bdc1c23

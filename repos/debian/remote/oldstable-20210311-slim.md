@@ -1,4 +1,4 @@
-## `debian:oldstable-slim`
+## `debian:oldstable-20210311-slim`
 
 ```console
 $ docker pull debian@sha256:d77295a1362479739b338a18e992b8a53c1a41e5096766632bae5f16ff7542bb
@@ -12,7 +12,7 @@ $ docker pull debian@sha256:d77295a1362479739b338a18e992b8a53c1a41e5096766632bae
 	-	linux; arm64 variant v8
 	-	linux; 386
 
-### `debian:oldstable-slim` - linux; amd64
+### `debian:oldstable-20210311-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:ce51e09d27e15854d82fdd50669f1d36eef6280892011d9064260e9b18aad245
@@ -38,7 +38,7 @@ CMD ["bash"]
 		Size: 22.5 MB (22528845 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:oldstable-slim` - linux; arm variant v5
+### `debian:oldstable-20210311-slim` - linux; arm variant v5
 
 ```console
 $ docker pull debian@sha256:5296f0896ec83453e85d7e944a0faedde29436968fe2ff1773ed7836a530ee97
@@ -64,7 +64,7 @@ CMD ["bash"]
 		Size: 21.2 MB (21204126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:oldstable-slim` - linux; arm variant v7
+### `debian:oldstable-20210311-slim` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:a41f6f03d7b400d37c7bd445d98b5a3a737dbaa68edd3dc3d9f4d1c8e1d7bc29
@@ -90,7 +90,7 @@ CMD ["bash"]
 		Size: 19.3 MB (19316524 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:oldstable-slim` - linux; arm64 variant v8
+### `debian:oldstable-20210311-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:cccf2ed5389bf1f08379adde57bcfe6484847c5fb78b210e0590b0bd38d00468
@@ -116,7 +116,7 @@ CMD ["bash"]
 		Size: 20.4 MB (20389416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:oldstable-slim` - linux; 386
+### `debian:oldstable-20210311-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:26acde5509702948ace475276cb40bcaaabbd9bf9973740a2f87e4a30a4c200a
