@@ -1,7 +1,7 @@
 ## `xwiki:lts-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:70f4567e3e0772f7ebaa3beba5c67763f0bda8eb5db8f699089c663ace0c42f4
+$ docker pull xwiki@sha256:707b2ad3425c0466374e89c5cabed6539207ce346dfc2236f234e760ec05851c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull xwiki@sha256:70f4567e3e0772f7ebaa3beba5c67763f0bda8eb5db8f699089c6
 ### `xwiki:lts-mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:5d00f7a93a3a37b828fe11d8011bbb0c7f3920f44cf42fa284ddb1c8430cd15d
+$ docker pull xwiki@sha256:4c44618c8561bdbe319a04cc8cd396efb29f97cec66d1ea8c84f7b9bd32a91f7
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **718.0 MB (718012005 bytes)**  
+-	Total Size: **718.0 MB (717992347 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11df6ea07ab861caef454bcf5d46c03cd62d2f52ddfeb170b59d5d94d0a93a62`
+-	Image ID: `sha256:d4613345ac8a44dd47e79dbfb8504ef4193770cee2fd4bc6c1aeeab750712927`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -77,39 +77,39 @@ CMD ["catalina.sh" "run"]
 MAINTAINER Vincent Massol <vincent@massol.net>
 # Thu, 11 Mar 2021 01:40:34 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Thu, 11 Mar 2021 01:42:57 GMT
-ENV XWIKI_VERSION=12.10.4
-# Thu, 11 Mar 2021 01:42:57 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/12.10.4
-# Thu, 11 Mar 2021 01:42:58 GMT
-ENV XWIKI_DOWNLOAD_SHA256=fd213ff52d575cfec4c7f0c2c1e20312075d131fbc08285cc7d3b1234437eaa4
-# Thu, 11 Mar 2021 01:43:37 GMT
+# Sat, 13 Mar 2021 12:27:24 GMT
+ENV XWIKI_VERSION=12.10.5
+# Sat, 13 Mar 2021 12:27:25 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/12.10.5
+# Sat, 13 Mar 2021 12:27:25 GMT
+ENV XWIKI_DOWNLOAD_SHA256=3ec3d0ea12e763cc8eb7a1d818428f033c3d5fd6804bced52f33c29c13db0cc5
+# Sat, 13 Mar 2021 12:28:04 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Thu, 11 Mar 2021 01:43:38 GMT
+# Sat, 13 Mar 2021 12:28:05 GMT
 ENV MYSQL_JDBC_VERSION=8.0.22
-# Thu, 11 Mar 2021 01:43:38 GMT
+# Sat, 13 Mar 2021 12:28:05 GMT
 ENV MYSQL_JDBC_SHA256=5019defbd12316295e97a6e88f2a9b07f118345a4e982710bba232e499b22f4f
-# Thu, 11 Mar 2021 01:43:38 GMT
+# Sat, 13 Mar 2021 12:28:05 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.22
-# Thu, 11 Mar 2021 01:43:38 GMT
+# Sat, 13 Mar 2021 12:28:05 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-java-8.0.22.jar
-# Thu, 11 Mar 2021 01:43:39 GMT
+# Sat, 13 Mar 2021 12:28:06 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.22.jar
-# Thu, 11 Mar 2021 01:43:40 GMT
+# Sat, 13 Mar 2021 12:28:07 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Thu, 11 Mar 2021 01:43:40 GMT
+# Sat, 13 Mar 2021 12:28:07 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Thu, 11 Mar 2021 01:43:40 GMT
+# Sat, 13 Mar 2021 12:28:07 GMT
 COPY file:2ddb14ac28e30d814fb2fc4772408aeb1bad06733f2b02f99ac544ada515f776 in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Thu, 11 Mar 2021 01:43:41 GMT
+# Sat, 13 Mar 2021 12:28:08 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Thu, 11 Mar 2021 01:43:41 GMT
+# Sat, 13 Mar 2021 12:28:08 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Thu, 11 Mar 2021 01:43:42 GMT
+# Sat, 13 Mar 2021 12:28:09 GMT
 VOLUME [/usr/local/xwiki]
-# Thu, 11 Mar 2021 01:43:42 GMT
+# Sat, 13 Mar 2021 12:28:09 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 11 Mar 2021 01:43:42 GMT
+# Sat, 13 Mar 2021 12:28:09 GMT
 CMD ["xwiki"]
 ```
 
@@ -150,27 +150,27 @@ CMD ["xwiki"]
 		Last Modified: Thu, 11 Mar 2021 01:47:28 GMT  
 		Size: 167.4 MB (167445086 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9dc73bc0b1e413d1dabf25b7f79b259d971a3769e6be21e338bd47946082886`  
-		Last Modified: Thu, 11 Mar 2021 01:49:24 GMT  
-		Size: 297.1 MB (297074042 bytes)  
+	-	`sha256:d83c05fc36b2014bb0ef0b22f1d29bffcb9225fa875d93de1ee3c0351a3941e4`  
+		Last Modified: Sat, 13 Mar 2021 12:30:20 GMT  
+		Size: 297.1 MB (297054416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2372b20c3fcdefef4146a10127910b87af2930d19e3a70461ca20d8888d0c7d4`  
-		Last Modified: Thu, 11 Mar 2021 01:49:05 GMT  
-		Size: 2.3 MB (2257825 bytes)  
+	-	`sha256:36a15c1fedc3821ad5f3c71ca3ed9958fd371d34d586f7824076e2dd54077994`  
+		Last Modified: Sat, 13 Mar 2021 12:29:53 GMT  
+		Size: 2.3 MB (2257806 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b664abeb8a6f7cfa0b309b6760acfa602cc4d89592773d381880fd727227cd07`  
-		Last Modified: Thu, 11 Mar 2021 01:49:05 GMT  
-		Size: 1.3 KB (1345 bytes)  
+	-	`sha256:a3db5100fe02520a1ca3a9c7db8b7bd98d69f4d6e52f1268989bcfdb09fc0ca3`  
+		Last Modified: Sat, 13 Mar 2021 12:29:52 GMT  
+		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5971b1f46689e19ce583b1ee508b916fdf50aa1f1e09bff675b11b91cdc942e8`  
-		Last Modified: Thu, 11 Mar 2021 01:49:04 GMT  
-		Size: 2.3 KB (2313 bytes)  
+	-	`sha256:2a6a69aee0ba75a20a3688cd5c3218152a37c9838497d1322e140339685ae700`  
+		Last Modified: Sat, 13 Mar 2021 12:29:52 GMT  
+		Size: 2.3 KB (2311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b05ffdab548fd0bb9a3718687adabd31f03b6d974f1c3643b89132ef5c0574c0`  
-		Last Modified: Thu, 11 Mar 2021 01:49:04 GMT  
-		Size: 5.2 KB (5204 bytes)  
+	-	`sha256:d1974387b0d945bdf812deb986fefda50d496a8a2b39de1d65b15c88c79a5441`  
+		Last Modified: Sat, 13 Mar 2021 12:29:53 GMT  
+		Size: 5.2 KB (5201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:264cf21dd5457a134e49cd111fd9d5cf95fb24c89965543c628930edbe289605`  
-		Last Modified: Thu, 11 Mar 2021 01:49:04 GMT  
-		Size: 2.5 KB (2504 bytes)  
+	-	`sha256:937887e96aada18e979efdb546cfc2457d805865e2ee6163e5d93010bde94a2b`  
+		Last Modified: Sat, 13 Mar 2021 12:29:52 GMT  
+		Size: 2.5 KB (2500 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
