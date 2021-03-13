@@ -1,7 +1,7 @@
 ## `clojure:openjdk-16`
 
 ```console
-$ docker pull clojure@sha256:dd4186df0af7335ab964b29ecfb6f0194f261a3438aef99f0aac72c191e485b8
+$ docker pull clojure@sha256:55fbe1422fdc25a7bcac99cbe1b68877536ba8b4f4355b95792012c27c1b80d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,73 +12,73 @@ $ docker pull clojure@sha256:dd4186df0af7335ab964b29ecfb6f0194f261a3438aef99f0aa
 ### `clojure:openjdk-16` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:5f7f48ec0b285b03c5069b6c5262381aec6012eb2c50df8175364981b92ae167
+$ docker pull clojure@sha256:6f435229fb555921a39af447d7d4f1bd8bfc6bf4eeb7a3d2034127355f0d88dc
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **231.5 MB (231520314 bytes)**  
+-	Total Size: **231.5 MB (231526320 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a288a4639dba44fde37dfb209b291270883df1037bfe4254b5a472bad3acac7`
+-	Image ID: `sha256:abe22416c13c0235c44db94ea2d830c7df607ceb6661d50d078990802aec2f9c`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
-# Tue, 09 Feb 2021 02:20:55 GMT
-ADD file:d5c41bfaf15180481d8606f50799297e3f49b8a258c7c2cd988ab2bf0013272d in / 
-# Tue, 09 Feb 2021 02:20:56 GMT
+# Fri, 12 Mar 2021 02:20:40 GMT
+ADD file:3c32f1cd03198e141dd233a7ffd13444157d4150ad917d548f3ee9bf5953ce22 in / 
+# Fri, 12 Mar 2021 02:20:41 GMT
 CMD ["bash"]
-# Tue, 09 Mar 2021 20:57:00 GMT
+# Fri, 12 Mar 2021 22:10:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 09 Mar 2021 20:59:55 GMT
+# Fri, 12 Mar 2021 22:11:42 GMT
 ENV JAVA_HOME=/usr/local/openjdk-16
-# Tue, 09 Mar 2021 20:59:55 GMT
+# Fri, 12 Mar 2021 22:11:43 GMT
 ENV PATH=/usr/local/openjdk-16/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 09 Mar 2021 20:59:55 GMT
+# Fri, 12 Mar 2021 22:11:43 GMT
 ENV LANG=C.UTF-8
-# Tue, 09 Mar 2021 20:59:56 GMT
+# Fri, 12 Mar 2021 22:11:44 GMT
 ENV JAVA_VERSION=16
-# Tue, 09 Mar 2021 21:00:09 GMT
+# Fri, 12 Mar 2021 22:12:04 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/GA/jdk16/7863447f0ab643c585b9bdebf67c69db/36/GPL/openjdk-16_linux-x64_bin.tar.gz'; 			downloadSha256='e952958f16797ad7dc7cd8b724edd69ec7e0e0434537d80d6b5165193e33b931'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/GA/jdk16/7863447f0ab643c585b9bdebf67c69db/36/GPL/openjdk-16_linux-aarch64_bin.tar.gz'; 			downloadSha256='273d3ae0ff14af801c5ffa71fd081f1cc505354f308ce11c77af55302c83d2bf'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Tue, 09 Mar 2021 21:00:09 GMT
+# Fri, 12 Mar 2021 22:12:05 GMT
 CMD ["jshell"]
-# Tue, 09 Mar 2021 21:50:39 GMT
+# Sat, 13 Mar 2021 13:14:08 GMT
 ENV LEIN_VERSION=2.9.5
-# Tue, 09 Mar 2021 21:50:39 GMT
+# Sat, 13 Mar 2021 13:14:08 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Tue, 09 Mar 2021 21:50:39 GMT
+# Sat, 13 Mar 2021 13:14:09 GMT
 WORKDIR /tmp
-# Tue, 09 Mar 2021 21:50:49 GMT
+# Sat, 13 Mar 2021 13:14:19 GMT
 RUN apt-get update && apt-get install -y gnupg wget && rm -rf /var/lib/apt/lists/* && mkdir -p $LEIN_INSTALL && wget -q https://raw.githubusercontent.com/technomancy/leiningen/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "3601d55c4b5ac5c654e4ebd0d75abf7ad683f48cba8a7af1a8730b6590187b8a *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip && wget -q https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc && gpg --batch --keyserver keys.openpgp.org --recv-key 20242BACBBE95ADA22D0AFD7808A33D379C806C3 && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.zip.asc leiningen-$LEIN_VERSION-standalone.zip && rm leiningen-$LEIN_VERSION-standalone.zip.asc && mkdir -p /usr/share/java && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apt-get purge -y --auto-remove gnupg wget
-# Tue, 09 Mar 2021 21:50:49 GMT
+# Sat, 13 Mar 2021 13:14:20 GMT
 ENV PATH=/usr/local/openjdk-16/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Tue, 09 Mar 2021 21:50:49 GMT
+# Sat, 13 Mar 2021 13:14:20 GMT
 ENV LEIN_ROOT=1
-# Tue, 09 Mar 2021 21:50:52 GMT
+# Sat, 13 Mar 2021 13:14:23 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.10.2"]])' > project.clj   && lein deps && rm project.clj
-# Tue, 09 Mar 2021 21:50:53 GMT
+# Sat, 13 Mar 2021 13:14:24 GMT
 CMD ["lein" "repl"]
 ```
 
 -	Layers:
-	-	`sha256:45b42c59be334ecda0daaa139b2f7d310e45c564c5f12263b1b8e68ec9e810ed`  
-		Last Modified: Tue, 09 Feb 2021 02:26:39 GMT  
-		Size: 27.1 MB (27095142 bytes)  
+	-	`sha256:6f28985ad1843afd6fd4fe0b42a30bfab63c27d302362e7341e3316e8ba25ced`  
+		Last Modified: Fri, 12 Mar 2021 02:26:11 GMT  
+		Size: 27.1 MB (27101001 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3f1fbf102b7eaa0998133d35bbcc37641d4d23626a4a2673cb9a2393cb7c34c`  
-		Last Modified: Tue, 09 Mar 2021 21:10:48 GMT  
-		Size: 3.3 MB (3268548 bytes)  
+	-	`sha256:b3555c3885852c38ecf4a297b798053677bc7553f9c7631788ef75e35cb4262c`  
+		Last Modified: Fri, 12 Mar 2021 22:22:18 GMT  
+		Size: 3.3 MB (3268564 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57ccab748b0184655ff89a7b21f0844c8635ebb7eaa0ac2c0d5e2fe441fc8c52`  
-		Last Modified: Tue, 09 Mar 2021 21:14:52 GMT  
-		Size: 185.2 MB (185153170 bytes)  
+	-	`sha256:cd9c100e068de7dc9d460f49084914b105640e863a2e812ca5c33e068232a808`  
+		Last Modified: Fri, 12 Mar 2021 22:24:25 GMT  
+		Size: 185.2 MB (185153273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83832c27e5b2aa5a95aafc98ab89312720870bfd67142d60ac5cdfdb3f0d247f`  
-		Last Modified: Tue, 09 Mar 2021 22:05:07 GMT  
-		Size: 11.8 MB (11798331 bytes)  
+	-	`sha256:16bea51c96b19a67f43b0fc2a46f523f88a7f18834864cd6e17c86c20a823979`  
+		Last Modified: Sat, 13 Mar 2021 13:27:05 GMT  
+		Size: 11.8 MB (11798353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a490279219d53af1656df979befd068c8f8c296b6f8357a63058d3b7c28eab60`  
-		Last Modified: Tue, 09 Mar 2021 22:05:09 GMT  
-		Size: 4.2 MB (4205123 bytes)  
+	-	`sha256:590c4c8ebcccd9f7eeaf2c1facf08bb3660e213673eb03b17af570cbec190a0b`  
+		Last Modified: Sat, 13 Mar 2021 13:27:05 GMT  
+		Size: 4.2 MB (4205129 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `clojure:openjdk-16` - linux; arm64 variant v8
