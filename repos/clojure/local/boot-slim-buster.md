@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:248cfe193634e3d714b559f0c3d00cb560da3395bd6d9f98fa85ff87bd979450`
-- Created: `2021-03-09T21:47:31.938697922Z`
+- Image ID: `sha256:a6f4a2e37385c8ef3069ea8ae4b2d267dff20cb7aa80e26b448fc575c86cf503`
+- Created: `2021-03-13T13:11:07.280356608Z`
 - Virtual Size: ~ 485.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1133,11 +1133,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libunistring/0.9.10-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libunistring/0.9.10-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libzstd=1.3.8+dfsg-3`
+### `dpkg` source package: `libzstd=1.3.8+dfsg-3+deb10u2`
 
 Binary Packages:
 
-- `libzstd1:amd64=1.3.8+dfsg-3`
+- `libzstd1:amd64=1.3.8+dfsg-3+deb10u2`
 
 Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 
@@ -1150,17 +1150,17 @@ Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libzstd=1.3.8+dfsg-3
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.3.8+dfsg-3.dsc' libzstd_1.3.8+dfsg-3.dsc 2285 SHA256:d5a46f4c8ecaffac70eb8799a7a221cf8c877d830bb2803364aeb6c825afa6e3
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.3.8+dfsg.orig.tar.xz' libzstd_1.3.8+dfsg.orig.tar.xz 1299276 SHA256:03851f2c26ffbf1d43633df3f98966f3c62e698e91ef4dc90523915bc934e5f7
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.3.8+dfsg-3.debian.tar.xz' libzstd_1.3.8+dfsg-3.debian.tar.xz 10396 SHA256:392a971d6bba30b6cb3e5ff04efb10c45b052e458dfc6631ede9e024341321f9
+$ apt-get source -qq --print-uris libzstd=1.3.8+dfsg-3+deb10u2
+'http://security.debian.org/debian-security/pool/updates/main/libz/libzstd/libzstd_1.3.8+dfsg-3+deb10u2.dsc' libzstd_1.3.8+dfsg-3+deb10u2.dsc 1947 SHA256:572fae1c7dc9bace3b9f7fcdeabf30dd1d00d0462e319ccec7b58b0adbf7dc85
+'http://security.debian.org/debian-security/pool/updates/main/libz/libzstd/libzstd_1.3.8+dfsg.orig.tar.xz' libzstd_1.3.8+dfsg.orig.tar.xz 1299276 SHA256:03851f2c26ffbf1d43633df3f98966f3c62e698e91ef4dc90523915bc934e5f7
+'http://security.debian.org/debian-security/pool/updates/main/libz/libzstd/libzstd_1.3.8+dfsg-3+deb10u2.debian.tar.xz' libzstd_1.3.8+dfsg-3+deb10u2.debian.tar.xz 11648 SHA256:1f107f6cdc3bf46fb2aebf9c5c997ed2a125ac2fb1d28e939da857d5b061079e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libzstd/1.3.8+dfsg-3/ (for browsing the source)
-- https://sources.debian.net/src/libzstd/1.3.8+dfsg-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libzstd/1.3.8+dfsg-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libzstd/1.3.8+dfsg-3+deb10u2/ (for browsing the source)
+- https://sources.debian.net/src/libzstd/1.3.8+dfsg-3+deb10u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libzstd/1.3.8+dfsg-3+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=10.2019051400`
 
