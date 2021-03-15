@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:58b40397de53aa5b31fdc275f8b93fbfb49fa0826a7acf942b75798da57eca72`
-- Created: `2021-02-18T09:04:31.367448745Z`
-- Virtual Size: ~ 358.55 Mb  
+- Image ID: `sha256:612b07e0d10fc491ea9ffcc86bf2edfe900637d56daf9b53c17e3bda5c3f46ba`
+- Created: `2021-03-13T11:29:56.393343609Z`
+- Virtual Size: ~ 358.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -470,16 +470,16 @@ GPL
 ### `apk` package: `git`
 
 ```console
-git-2.30.1-r0 description:
+git-2.30.2-r0 description:
 Distributed version control system
 
-git-2.30.1-r0 webpage:
+git-2.30.2-r0 webpage:
 https://www.git-scm.com/
 
-git-2.30.1-r0 installed size:
+git-2.30.2-r0 installed size:
 10612736
 
-git-2.30.1-r0 license:
+git-2.30.2-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -487,16 +487,16 @@ GPL-2.0-or-later
 ### `apk` package: `glib`
 
 ```console
-glib-2.66.7-r0 description:
+glib-2.66.7-r1 description:
 Common C routines used by Gtk+ and other libs
 
-glib-2.66.7-r0 webpage:
+glib-2.66.7-r1 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.66.7-r0 installed size:
+glib-2.66.7-r1 installed size:
 3403776
 
-glib-2.66.7-r0 license:
+glib-2.66.7-r1 license:
 LGPL-2.1-or-later
 
 ```
@@ -538,16 +538,16 @@ LGPL-3.0-or-later OR GPL-2.0-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.7.0-r0 description:
+gnutls-3.7.1-r0 description:
 TLS protocol implementation
 
-gnutls-3.7.0-r0 webpage:
+gnutls-3.7.1-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.7.0-r0 installed size:
-1912832
+gnutls-3.7.1-r0 installed size:
+1892352
 
-gnutls-3.7.0-r0 license:
+gnutls-3.7.1-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -742,16 +742,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.74.0-r0 description:
+libcurl-7.74.0-r1 description:
 The multiprotocol file transfer library
 
-libcurl-7.74.0-r0 webpage:
+libcurl-7.74.0-r1 webpage:
 https://curl.haxx.se/
 
-libcurl-7.74.0-r0 installed size:
+libcurl-7.74.0-r1 installed size:
 495616
 
-libcurl-7.74.0-r0 license:
+libcurl-7.74.0-r1 license:
 MIT
 
 ```
@@ -929,16 +929,16 @@ BSD-3-Clause IJG Zlib
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.4.57-r0 description:
+libldap-2.4.57-r1 description:
 OpenLDAP libraries
 
-libldap-2.4.57-r0 webpage:
+libldap-2.4.57-r1 webpage:
 https://www.openldap.org/
 
-libldap-2.4.57-r0 installed size:
+libldap-2.4.57-r1 installed size:
 630784
 
-libldap-2.4.57-r0 license:
+libldap-2.4.57-r1 license:
 custom
 
 ```
@@ -997,16 +997,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-13.1-r2 description:
+libpq-13.2-r0 description:
 PostgreSQL libraries
 
-libpq-13.1-r2 webpage:
+libpq-13.2-r0 webpage:
 https://www.postgresql.org/
 
-libpq-13.1-r2 installed size:
+libpq-13.2-r0 installed size:
 335872
 
-libpq-13.1-r2 license:
+libpq-13.2-r0 license:
 PostgreSQL
 
 ```
@@ -1643,16 +1643,16 @@ GPL-2.0 LGPL-2.1+
 ### `apk` package: `python3`
 
 ```console
-python3-3.8.7-r0 description:
+python3-3.8.7-r1 description:
 A high-level scripting language
 
-python3-3.8.7-r0 webpage:
+python3-3.8.7-r1 webpage:
 https://www.python.org/
 
-python3-3.8.7-r0 installed size:
-47054848
+python3-3.8.7-r1 installed size:
+47058944
 
-python3-3.8.7-r0 license:
+python3-3.8.7-r1 license:
 PSF-2.0
 
 ```
