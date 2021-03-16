@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:edb441f9ef1883978a1e5bb228b3e0f3542aed948c492dcfa39cb81c113840f0`
-- Created: `2020-09-26T01:16:14.942641146Z`
-- Virtual Size: ~ 1.22 Gb  
+- Image ID: `sha256:6ca2c7f0edcd9c9569e3865086e83954e6a38454774df7407f5dfcf8a977faa5`
+- Created: `2021-03-15T20:48:10.854553024Z`
+- Virtual Size: ~ 1.19 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/usr/local/bin/run"]`
@@ -53,21 +53,25 @@ $ apt-get source -qq --print-uris adduser=3.116ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.116ubuntu1.tar.xz' adduser_3.116ubuntu1.tar.xz 216868 SHA256:f34f1d95e96ecae3b068a3dd666848f82f06cbb26152c56a6b72bd71555a8f18
 ```
 
-### `dpkg` source package: `apt=1.6.12ubuntu0.1`
+### `dpkg` source package: `apt=1.6.12ubuntu0.2`
 
 Binary Packages:
 
-- `apt=1.6.12ubuntu0.1`
-- `libapt-pkg5.0:amd64=1.6.12ubuntu0.1`
+- `apt=1.6.12ubuntu0.2`
+- `libapt-pkg5.0:amd64=1.6.12ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=1.6.12ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.12ubuntu0.2.dsc' apt_1.6.12ubuntu0.2.dsc 2869 SHA512:25da70d550b26552df598eb68129d939afffb4a840bdb37d3bce11167b79692eecc90e886e4c5833fc5248808658646627318f94276fc3eae570921ac60ad9ed
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.12ubuntu0.2.tar.xz' apt_1.6.12ubuntu0.2.tar.xz 2174360 SHA512:2a1b7aee29aae1581d78513c99062314f1c0beb1b99a9a245d78022ee96487af815f325d43ce4b698c5aa5e6ce6f55047926e7683c894645db3aabe21bb0c6c7
+```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
@@ -89,12 +93,12 @@ $ apt-get source -qq --print-uris attr=1:2.4.47-2build1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.4.47-2build1.debian.tar.xz' attr_2.4.47-2build1.debian.tar.xz 8168 SHA256:6732a8874190a1f792c7f9cb95fadc1dc852baf2e164b0d7b4bcea525f5c0882
 ```
 
-### `dpkg` source package: `audit=1:2.8.2-1ubuntu1`
+### `dpkg` source package: `audit=1:2.8.2-1ubuntu1.1`
 
 Binary Packages:
 
-- `libaudit-common=1:2.8.2-1ubuntu1`
-- `libaudit1:amd64=1:2.8.2-1ubuntu1`
+- `libaudit-common=1:2.8.2-1ubuntu1.1`
+- `libaudit1:amd64=1:2.8.2-1ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/doc/libaudit1/copyright`)
 
@@ -105,10 +109,10 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris audit=1:2.8.2-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.8.2-1ubuntu1.dsc' audit_2.8.2-1ubuntu1.dsc 2903 SHA256:454c231dc2268ee4862f87d65720354699be9b807a411556a536bc2b4e581a90
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.8.2.orig.tar.gz' audit_2.8.2.orig.tar.gz 1121970 SHA256:67b59b2b77afee9ed87afa4d80ffc8e6f3a1f4bbedd5f2871f387c952147bcba
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.8.2-1ubuntu1.debian.tar.xz' audit_2.8.2-1ubuntu1.debian.tar.xz 21344 SHA256:2bc93230e3bf01eef5e9a5acff8f904af074e6e39003f1db8941118fbd041ec2
+$ apt-get source -qq --print-uris audit=1:2.8.2-1ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.8.2-1ubuntu1.1.dsc' audit_2.8.2-1ubuntu1.1.dsc 2907 SHA512:a6975ce1dcc522d033bba69eb9d719d04307c4652753bd44c2c950bc27077d273215a318a768e761770c5dd662e435fcc461a8b8790693523c90c8286703fa1a
+'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.8.2.orig.tar.gz' audit_2.8.2.orig.tar.gz 1121970 SHA512:888ebf5e8e9d285b82d87377fc8836886d7a8b089c1be4091420a77a0250c9baf09aebb7a6330ff5043fb35f51eb6baf8d4491e26da7ad0811f0087e395b5012
+'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.8.2-1ubuntu1.1.debian.tar.xz' audit_2.8.2-1ubuntu1.1.debian.tar.xz 21984 SHA512:69f9b8f6a891069b3194d6460a8fe897946b8d28887ca4a41a0b22f8793947a7604da868c4a2372d2610cbe9f3a7da75616e0abf392b7f7c9fb85ebd63f8459a
 ```
 
 ### `dpkg` source package: `base-files=10.1ubuntu2.10`
@@ -187,11 +191,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.6-8.1ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-8.1ubuntu0.2.debian.tar.bz2' bzip2_1.0.6-8.1ubuntu0.2.debian.tar.bz2 61477 SHA512:f895cded216bd210eed7356be97630de75f650bb40d3bb0c7a26b0fadf9991188005ab1c5438e4b8f95614e6ff8c2ad5b2a94f0cc048580bcdc387a219ba7495
 ```
 
-### `dpkg` source package: `ca-certificates=20190110~18.04.1`
+### `dpkg` source package: `ca-certificates=20210119~18.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20190110~18.04.1`
+- `ca-certificates=20210119~18.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -199,9 +203,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20210119~18.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20210119~18.04.1.dsc' ca-certificates_20210119~18.04.1.dsc 1909 SHA512:ef80f6fc7c981b85cd581c7c905e7d4aefef41ed8de6a73baba15a4c021e1a5fc7a54402de5efc3b4bad525573554f609cd84de5e6cbe2a6dd85f97f57288a16
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20210119~18.04.1.tar.xz' ca-certificates_20210119~18.04.1.tar.xz 232432 SHA512:f2006309c8f18abce07d79214df36166618171f511b4dc25e2513016ead96e0da9113bbc580f1bc7bc40d918f9321a3a67ae3b9502c3c4f4c337d5a9f6d15fab
+```
 
 ### `dpkg` source package: `cdebconf=0.213ubuntu1`
 
@@ -241,13 +249,13 @@ $ apt-get source -qq --print-uris coreutils=8.28-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.28-1ubuntu1.debian.tar.xz' coreutils_8.28-1ubuntu1.debian.tar.xz 37940 SHA256:71ba2e83edc675a79e1e0556aff326ab2ae812332692e3db29615e8ed1b427f4
 ```
 
-### `dpkg` source package: `curl=7.58.0-2ubuntu3.10`
+### `dpkg` source package: `curl=7.58.0-2ubuntu3.12`
 
 Binary Packages:
 
-- `curl=7.58.0-2ubuntu3.10`
-- `libcurl3-gnutls:amd64=7.58.0-2ubuntu3.10`
-- `libcurl4:amd64=7.58.0-2ubuntu3.10`
+- `curl=7.58.0-2ubuntu3.12`
+- `libcurl3-gnutls:amd64=7.58.0-2ubuntu3.12`
+- `libcurl4:amd64=7.58.0-2ubuntu3.12`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -258,17 +266,22 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.58.0-2ubuntu3.12
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.12.dsc' curl_7.58.0-2ubuntu3.12.dsc 2781 SHA512:7ac71894de33ac39e49198d76d90a219e0cd4e1bc0d1878732f2c559b26a7f09b3383c5fd1dbe645eccd859945f644006b2d8e1043a955ff3d98a40af3c9b72a
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0.orig.tar.gz' curl_7.58.0.orig.tar.gz 3879728 SHA512:7b12b79107558bb266672d6e128615fe5a8149c37f4ae540197e3298f5d312beb2d78fbb23e3ea84ea7afc41549898a1e5cd38509f0388b11707b48d5efb8ca3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.12.debian.tar.xz' curl_7.58.0-2ubuntu3.12.debian.tar.xz 45640 SHA512:00aa535bb43ab14eafc758a4faa50c6b81f24dde828d790f119c2a5aedb4e6f2f83cf109314560ca1ab31a6614c2aa7227093338f34cf913a6de128573c693b6
+```
 
-### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2.1`
+### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2.3`
 
 Binary Packages:
 
-- `libsasl2-2:amd64=2.1.27~101-g0780600+dfsg-3ubuntu2.1`
-- `libsasl2-modules:amd64=2.1.27~101-g0780600+dfsg-3ubuntu2.1`
-- `libsasl2-modules-db:amd64=2.1.27~101-g0780600+dfsg-3ubuntu2.1`
+- `libsasl2-2:amd64=2.1.27~101-g0780600+dfsg-3ubuntu2.3`
+- `libsasl2-modules:amd64=2.1.27~101-g0780600+dfsg-3ubuntu2.3`
+- `libsasl2-modules-db:amd64=2.1.27~101-g0780600+dfsg-3ubuntu2.3`
 
 Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
 
@@ -276,9 +289,14 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `GPL-3+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2.3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg-3ubuntu2.3.dsc' cyrus-sasl2_2.1.27~101-g0780600+dfsg-3ubuntu2.3.dsc 2968 SHA512:d5989a35ee05a90e88f61dbe325238627d2f4349efd7376314dada58ef1ff5283f57a63afb5ea3ae81fb169c40e136b79187d4de75a41d80e37c5f74d978de22
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg.orig.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg.orig.tar.xz 1143888 SHA512:cd684133dcea5856301f50e378ff105e88f8008af06bd4e02fb9a62a88ece2ee1901ea2776ef3d941d6a3cfc2a77875c08054326293818db89e5f9995c4cd524
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg-3ubuntu2.3.debian.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg-3ubuntu2.3.debian.tar.xz 97164 SHA512:96ebeac028396c12a7b3b876c8cb7305234c3c9dc0e4e882eab4f5996739cb7d7d32cb3fecfebd2637d58835fd50c1ebefd30949480745c69a16212caae1f2c4
+```
 
 ### `dpkg` source package: `dash=0.5.8-2.10`
 
@@ -544,11 +562,11 @@ $ apt-get source -qq --print-uris freetds=1.00.82-2ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/f/freetds/freetds_1.00.82-2ubuntu0.1.diff.gz' freetds_1.00.82-2ubuntu0.1.diff.gz 33523 SHA512:41408929b87eafe30824ddc21bc8e2224a3cccacbe190d1e7f472ab87c6745189c248a270e6802dca6e8bf63dd986815e8b339c069ec5d596f00369907b0065f
 ```
 
-### `dpkg` source package: `freetype=2.8.1-2ubuntu2`
+### `dpkg` source package: `freetype=2.8.1-2ubuntu2.1`
 
 Binary Packages:
 
-- `libfreetype6:amd64=2.8.1-2ubuntu2`
+- `libfreetype6:amd64=2.8.1-2ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 
@@ -564,10 +582,10 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris freetype=2.8.1-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.8.1-2ubuntu2.dsc' freetype_2.8.1-2ubuntu2.dsc 2288 SHA256:f7a1e8715cc35405d814fd97478e37ff22fad2bb639c049e058298c9f5847015
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.8.1.orig.tar.gz' freetype_2.8.1.orig.tar.gz 4242784 SHA256:a7531cb8c2f6b709896f018380ad97e677e243847ff8a098d1b8b5d23e9d74d7
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.8.1-2ubuntu2.diff.gz' freetype_2.8.1-2ubuntu2.diff.gz 44335 SHA256:ec498da97b3c1715b67f8d6ed85e6d9a2eb8b709cabce38519a8ab5ca995b85a
+$ apt-get source -qq --print-uris freetype=2.8.1-2ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.8.1-2ubuntu2.1.dsc' freetype_2.8.1-2ubuntu2.1.dsc 1951 SHA512:90e7186c8550b7daceb1adfa35059ea8c08672d01a65f800a63edeabc328fb9f74d66e8d330288c7f97c2751862dc23e5c9cb7a62299a1463d8541a7ae2eafab
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.8.1.orig.tar.gz' freetype_2.8.1.orig.tar.gz 4242784 SHA512:60164caefc506c096142a05e4b578f48d65350fca3082527cd421ed5d0b9671c1123c2303b50ea09dc204288d6d4cbb548a761f67bd8260220f2c83b8f144d42
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.8.1-2ubuntu2.1.diff.gz' freetype_2.8.1-2ubuntu2.1.diff.gz 44970 SHA512:f3906b19118934019b61afa47f7be110fa56815cebe3d08fc82990c6eb9228e2ed43f0767bdb38d313a1e04217fe5d543f7efc7539437d197666e80462332525
 ```
 
 ### `dpkg` source package: `gcc-8=8.4.0-1ubuntu1~18.04`
@@ -659,12 +677,12 @@ $ apt-get source -qq --print-uris geoip=1.6.12-1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/geoip/geoip_1.6.12-1.debian.tar.xz' geoip_1.6.12-1.debian.tar.xz 22308 SHA256:57e8c35fc909a32c624a26f75489adf20be886b663c49a926e328595d286ea6f
 ```
 
-### `dpkg` source package: `git=1:2.17.1-1ubuntu0.7`
+### `dpkg` source package: `git=1:2.17.1-1ubuntu0.8`
 
 Binary Packages:
 
-- `git=1:2.17.1-1ubuntu0.7`
-- `git-man=1:2.17.1-1ubuntu0.7`
+- `git=1:2.17.1-1ubuntu0.8`
+- `git-man=1:2.17.1-1ubuntu0.8`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -687,17 +705,22 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.17.1-1ubuntu0.8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.8.dsc' git_2.17.1-1ubuntu0.8.dsc 2959 SHA512:0ad14eb64dfcf83ff5a233a7b1f31b063266b8c9ade33a9d70254e97e9901a242ec06603293955158a29137b8811368d2364c46f243751e248a70f5699a21d88
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1.orig.tar.xz' git_2.17.1.orig.tar.xz 5015484 SHA512:77c27569d40fbae1842130baa0cdda674a02e384631bd8fb1f2ddf67ce372dd4903b2ce6b4283a4ae506cdedd5daa55baa2afe6a6689528511e24e4beb864960
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.8.debian.tar.xz' git_2.17.1-1ubuntu0.8.debian.tar.xz 616652 SHA512:3307d2ba77b0a81eabcd2ce4ec0da2bdffd92f5ce51f43abc89390dbf3757048cc6d90d5c9ea624bbdff5c79f8b7b5a7f67713acd7722726836f92e73c7f2e8e
+```
 
-### `dpkg` source package: `glibc=2.27-3ubuntu1.2`
+### `dpkg` source package: `glibc=2.27-3ubuntu1.4`
 
 Binary Packages:
 
-- `libc-bin=2.27-3ubuntu1.2`
-- `libc6:amd64=2.27-3ubuntu1.2`
-- `multiarch-support=2.27-3ubuntu1.2`
+- `libc-bin=2.27-3ubuntu1.4`
+- `libc6:amd64=2.27-3ubuntu1.4`
+- `multiarch-support=2.27-3ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
@@ -707,10 +730,10 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.27-3ubuntu1.2
-'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.27-3ubuntu1.2.dsc' glibc_2.27-3ubuntu1.2.dsc 9364 SHA512:3c04622e913a85fe8d32a65a14114310aad0df92c848ac00ecea6ad99cc3d4ebb5efd40c562cad0684151edc2348bc229a469662c55f19731d82971295f5cea8
-'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.27.orig.tar.xz' glibc_2.27.orig.tar.xz 15923832 SHA512:a0580fb52bc4ea8bb6e6734086b0dc66bd661060cdd837965880b989866490063c2420f250fb19b54e3547c58a5a7f8e012699e6513ce413746fd236ddd239e8
-'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.27-3ubuntu1.2.debian.tar.xz' glibc_2.27-3ubuntu1.2.debian.tar.xz 1014508 SHA512:0013d939c1c8be3b5a06fb71e710b7912a475c178e8daff27ece31b8cfb3fbab586f09da22a506a28d4af6aadc6ca8953b6acd1272c2a9010f38d400eec24358
+$ apt-get source -qq --print-uris glibc=2.27-3ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.27-3ubuntu1.4.dsc' glibc_2.27-3ubuntu1.4.dsc 9612 SHA512:2b01f38445584e62aa5e8c796d968ac82d0c4d6cbcb06aadfe769ec19327cd9faa1b5fa97999e9e95c3d8dbd1630d837037e5fe1c5d5ef843cace67cdab5deb3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.27.orig.tar.xz' glibc_2.27.orig.tar.xz 15923832 SHA512:a0580fb52bc4ea8bb6e6734086b0dc66bd661060cdd837965880b989866490063c2420f250fb19b54e3547c58a5a7f8e012699e6513ce413746fd236ddd239e8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.27-3ubuntu1.4.debian.tar.xz' glibc_2.27-3ubuntu1.4.debian.tar.xz 1091320 SHA512:d5023ae92a5a6e40a62944e70a5fe41a2e4f09c0f56d5bef3369d4b22e68177fa441bfdb22ade6ea971ced42fbbc2351defa3a583c87347211a8ec510519ef0b
 ```
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-2`
@@ -735,21 +758,21 @@ $ apt-get source -qq --print-uris gmp=2:6.1.2+dfsg-2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.1.2+dfsg-2.debian.tar.xz' gmp_6.1.2+dfsg-2.debian.tar.xz 20744 SHA256:33cf6cc65827c9df744e4e07b216ca2d02eb57327a949f80a7b7dddd0485ee85
 ```
 
-### `dpkg` source package: `gnupg2=2.2.4-1ubuntu1.3`
+### `dpkg` source package: `gnupg2=2.2.4-1ubuntu1.4`
 
 Binary Packages:
 
-- `dirmngr=2.2.4-1ubuntu1.3`
-- `gnupg=2.2.4-1ubuntu1.3`
-- `gnupg-l10n=2.2.4-1ubuntu1.3`
-- `gnupg-utils=2.2.4-1ubuntu1.3`
-- `gpg=2.2.4-1ubuntu1.3`
-- `gpg-agent=2.2.4-1ubuntu1.3`
-- `gpg-wks-client=2.2.4-1ubuntu1.3`
-- `gpg-wks-server=2.2.4-1ubuntu1.3`
-- `gpgconf=2.2.4-1ubuntu1.3`
-- `gpgsm=2.2.4-1ubuntu1.3`
-- `gpgv=2.2.4-1ubuntu1.3`
+- `dirmngr=2.2.4-1ubuntu1.4`
+- `gnupg=2.2.4-1ubuntu1.4`
+- `gnupg-l10n=2.2.4-1ubuntu1.4`
+- `gnupg-utils=2.2.4-1ubuntu1.4`
+- `gpg=2.2.4-1ubuntu1.4`
+- `gpg-agent=2.2.4-1ubuntu1.4`
+- `gpg-wks-client=2.2.4-1ubuntu1.4`
+- `gpg-wks-server=2.2.4-1ubuntu1.4`
+- `gpgconf=2.2.4-1ubuntu1.4`
+- `gpgsm=2.2.4-1ubuntu1.4`
+- `gpgv=2.2.4-1ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-l10n/copyright`, `/usr/share/doc/gnupg-utils/copyright`, `/usr/share/doc/gpg/copyright`, `/usr/share/doc/gpg-agent/copyright`, `/usr/share/doc/gpg-wks-client/copyright`, `/usr/share/doc/gpg-wks-server/copyright`, `/usr/share/doc/gpgconf/copyright`, `/usr/share/doc/gpgsm/copyright`, `/usr/share/doc/gpgv/copyright`)
 
@@ -768,11 +791,11 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg2=2.2.4-1ubuntu1.3
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4-1ubuntu1.3.dsc' gnupg2_2.2.4-1ubuntu1.3.dsc 3816 SHA512:3efcaaf8b3c15d75f160447fef982d6ada0b13ef97622a61b7f10d8990dc6dda9d38667e7f80cb8d895a90b00bf118f3b795c36084d68c981f766df76dd1f45e
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4.orig.tar.bz2' gnupg2_2.2.4.orig.tar.bz2 6571487 SHA512:3d5c93b7662433103e9549d066a6b1a0c09d595851fab712d2ee844a55157e952a8a2dd5deff70fa8dd6817481f81c3fe5135603bca03206857310d04c1067a8
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4.orig.tar.bz2.asc' gnupg2_2.2.4.orig.tar.bz2.asc 952 SHA512:85c60b8ff5f7d307d5b741e446915ea067804ad27b4a4b779fbafc11800b0cfb2a94d956b502164a3781b5ad2807434215a3413b913ce22d656838163dc1dabb
-'http://security.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4-1ubuntu1.3.debian.tar.bz2' gnupg2_2.2.4-1ubuntu1.3.debian.tar.bz2 85796 SHA512:76e34e17b0df0647a60a7216ebc5d9f7a6ad6d35165514cc7fbffe579668e78ce152449eb460a462e2522d2d3b5c06f9681da9686ba31ffe115917e4818030df
+$ apt-get source -qq --print-uris gnupg2=2.2.4-1ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4-1ubuntu1.4.dsc' gnupg2_2.2.4-1ubuntu1.4.dsc 3816 SHA512:91f9bcbf3149df9f2627f934d760965b2012b7d4374b269837ae86d79f2db8aef8f2d26829f478c7535a287ad7d8d5b08ce775662f45046e4a91734817fb4992
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4.orig.tar.bz2' gnupg2_2.2.4.orig.tar.bz2 6571487 SHA512:3d5c93b7662433103e9549d066a6b1a0c09d595851fab712d2ee844a55157e952a8a2dd5deff70fa8dd6817481f81c3fe5135603bca03206857310d04c1067a8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4.orig.tar.bz2.asc' gnupg2_2.2.4.orig.tar.bz2.asc 952 SHA512:85c60b8ff5f7d307d5b741e446915ea067804ad27b4a4b779fbafc11800b0cfb2a94d956b502164a3781b5ad2807434215a3413b913ce22d656838163dc1dabb
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.4-1ubuntu1.4.debian.tar.bz2' gnupg2_2.2.4-1ubuntu1.4.debian.tar.bz2 86485 SHA512:0021eeedf7c624f0b1bf4633ad7c314856002ee269f46845a2221fc75b7832431e5aff10930fdfb7c573482f56a1a5fffb81fe46bd03d9867a6826ac46630733
 ```
 
 ### `dpkg` source package: `gnutls28=3.5.18-1ubuntu1.4`
@@ -944,19 +967,24 @@ $ apt-get source -qq --print-uris init-system-helpers=1.51
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.51.tar.xz' init-system-helpers_1.51.tar.xz 37468 SHA256:e18b28efe8df087146d9c1e4e9c25386ee1b7312f518d48a2a38469a6c661be0
 ```
 
-### `dpkg` source package: `iproute2=4.15.0-2ubuntu1.2`
+### `dpkg` source package: `iproute2=4.15.0-2ubuntu1.3`
 
 Binary Packages:
 
-- `iproute2=4.15.0-2ubuntu1.2`
+- `iproute2=4.15.0-2ubuntu1.3`
 
 Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris iproute2=4.15.0-2ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_4.15.0-2ubuntu1.3.dsc' iproute2_4.15.0-2ubuntu1.3.dsc 2282 SHA512:1251a00b46ddb31f07619ba47ac3c3da1f4ab79fb29e84104b6f3b7888c2c79acda3b554c63f6a199affbf51b2637ed49bcacf48ed0ebe5f6c3a8dafb380f483
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_4.15.0.orig.tar.xz' iproute2_4.15.0.orig.tar.xz 648836 SHA512:bcc54b8dc83d7b0e759a2de77eb38fed483d7f7f82698f482e0259000f2f55ba79c556b721730eb999e85c865ad136fd7549304ebe936545e02e848ba7f698bc
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_4.15.0-2ubuntu1.3.debian.tar.xz' iproute2_4.15.0-2ubuntu1.3.debian.tar.xz 143640 SHA512:2726b8fb013b2dab1f8cead21fb21f2ad4cb45b1ec79d69dde6d7a090d13bc0e99b7df75898a7d95a0409a6156057e6bd518597a419cdb07e27f5632ff4d2c8d
+```
 
 ### `dpkg` source package: `iptables=1.6.1-2ubuntu2`
 
@@ -1022,23 +1050,28 @@ $ apt-get source -qq --print-uris keyutils=1.5.9-9.2ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.5.9-9.2ubuntu2.debian.tar.xz' keyutils_1.5.9-9.2ubuntu2.debian.tar.xz 18492 SHA256:51706bd0d480913584d3fa8fcfe32dcf210742bb75c08e6a2d5f022748654086
 ```
 
-### `dpkg` source package: `krb5=1.16-2ubuntu0.1`
+### `dpkg` source package: `krb5=1.16-2ubuntu0.2`
 
 Binary Packages:
 
-- `krb5-locales=1.16-2ubuntu0.1`
-- `libgssapi-krb5-2:amd64=1.16-2ubuntu0.1`
-- `libk5crypto3:amd64=1.16-2ubuntu0.1`
-- `libkrb5-3:amd64=1.16-2ubuntu0.1`
-- `libkrb5support0:amd64=1.16-2ubuntu0.1`
+- `krb5-locales=1.16-2ubuntu0.2`
+- `libgssapi-krb5-2:amd64=1.16-2ubuntu0.2`
+- `libk5crypto3:amd64=1.16-2ubuntu0.2`
+- `libkrb5-3:amd64=1.16-2ubuntu0.2`
+- `libkrb5support0:amd64=1.16-2ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris krb5=1.16-2ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.16-2ubuntu0.2.dsc' krb5_1.16-2ubuntu0.2.dsc 3566 SHA512:04d0fe2c659918de633560296f62b19b4f358efc714be7ce90938bdfd1d9b1c13d4de597761ef162077fb5a53b48cfa49583be0057d9c232d26736856a89dcae
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.16.orig.tar.gz' krb5_1.16.orig.tar.gz 9474479 SHA512:7e162467b95dad2b6aaa11686d08a00f1cc4eb08247fca8f0e5a8bcaa5f9f7b42cdf00db69c5c6111bdf9eb8063d53cef3bb207ce5d6a287615ca10b710153f9
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.16-2ubuntu0.2.debian.tar.xz' krb5_1.16-2ubuntu0.2.debian.tar.xz 100948 SHA512:77a936bb4cbcefdecc24b9c2d45c4275b40cb363dda386f02347bc4d6668408c405a23bc795722315d4dfd77db49584d6e494235f84dc6b93db0563c749c558b
+```
 
 ### `dpkg` source package: `less=487-0.1`
 
@@ -1907,7 +1940,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `lighttpd-zend-server=1.4.41+b106`
+- `lighttpd-zend-server=1.4.55+b56`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2021,11 +2054,11 @@ $ apt-get source -qq --print-uris mawk=1.3.3-17ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3-17ubuntu3.diff.gz' mawk_1.3.3-17ubuntu3.diff.gz 64052 SHA256:d1be148525885cb1869e35514f55005b5043f3310b08c444625005a3e14c81fc
 ```
 
-### `dpkg` source package: `mysql-5.7=5.7.31-0ubuntu0.18.04.1`
+### `dpkg` source package: `mysql-5.7=5.7.33-0ubuntu0.18.04.1`
 
 Binary Packages:
 
-- `libmysqlclient20:amd64=5.7.31-0ubuntu0.18.04.1`
+- `libmysqlclient20:amd64=5.7.33-0ubuntu0.18.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient20/copyright`)
 
@@ -2043,9 +2076,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient20/copyright`)
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.7=5.7.33-0ubuntu0.18.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.33-0ubuntu0.18.04.1.dsc' mysql-5.7_5.7.33-0ubuntu0.18.04.1.dsc 3446 SHA512:253eb01c581df8913e8a0e287c77a27ad70347968149dc80b2270a92afa167777ad5916794f13ee0149b4c1650a40f1e19c1d7c66caa17e8b61d176c26623c85
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.33.orig.tar.gz' mysql-5.7_5.7.33.orig.tar.gz 52912380 SHA512:1d1e1e5934fb17ff731fea45b88d4af6a394c2fbf0177a87803b18cb0eb4fb8d4939f82fc22b6cbc2af64022a44e206cd23e2e88ce11cc119c3ea22129d54e7a
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.33-0ubuntu0.18.04.1.debian.tar.xz' mysql-5.7_5.7.33-0ubuntu0.18.04.1.debian.tar.xz 156432 SHA512:f21dfaf14ef19746ec63c084e7c28ecaba5ecd2d0dbe52227723dd009eeb03d1148d1d4b63c56da91ae3ebf1a6246f91c242789d04c1d68b415ef1235d4b199b
+```
 
 ### `dpkg` source package: `mysql-defaults=1.0.4`
 
@@ -2213,20 +2251,25 @@ $ apt-get source -qq --print-uris npth=1.5-3
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.5-3.debian.tar.xz' npth_1.5-3.debian.tar.xz 10480 SHA256:5cbaf91c95c90ab82053110eeec5ac72f5a3cab36829edb0579f1fb759ec5fec
 ```
 
-### `dpkg` source package: `openldap=2.4.45+dfsg-1ubuntu1.6`
+### `dpkg` source package: `openldap=2.4.45+dfsg-1ubuntu1.10`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.45+dfsg-1ubuntu1.6`
-- `libldap-common=2.4.45+dfsg-1ubuntu1.6`
+- `libldap-2.4-2:amd64=2.4.45+dfsg-1ubuntu1.10`
+- `libldap-common=2.4.45+dfsg-1ubuntu1.10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openldap=2.4.45+dfsg-1ubuntu1.10
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg-1ubuntu1.10.dsc' openldap_2.4.45+dfsg-1ubuntu1.10.dsc 2888 SHA512:d66df6215f7afdc6cade06c71e95ae67c3f4f8acd4f43ca92f7e135d4dd5b5bab6fc1869fa968693b19d7a88fdaae1f3a3f4d3a7792580439a01b2fa72c662c8
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg.orig.tar.gz' openldap_2.4.45+dfsg.orig.tar.gz 4846458 SHA512:fb2089aa6949ecced1d48242b203bc2f744e920ecea41559209f7d3a1cfe626c1d81e8a9234b6997b2379832d62e439ca1f674a8a06635fdaa359fc09d1b414e
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45+dfsg-1ubuntu1.10.debian.tar.xz' openldap_2.4.45+dfsg-1ubuntu1.10.debian.tar.xz 183732 SHA512:41b401e4a4d42653dcf016c685402e8866262c050131bf5aa5436643ed14d6979a9bbacca40a3d8be9115e0aa0b0839156c490f3b1f50ca64ecebde25cb84375
+```
 
 ### `dpkg` source package: `openssh=1:7.6p1-4ubuntu0.3`
 
@@ -2255,40 +2298,52 @@ $ apt-get source -qq --print-uris openssh=1:7.6p1-4ubuntu0.3
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.6p1-4ubuntu0.3.debian.tar.xz' openssh_7.6p1-4ubuntu0.3.debian.tar.xz 167500 SHA512:7f627306cf98fd96511c817528bba2727d88be655633486d8b6821a73e7d5e055ec7088fd155fc4b1f8db48dbe5996f299f3a33d55c2bb9f09e9fa6a3fcba301
 ```
 
-### `dpkg` source package: `openssl1.0=1.0.2n-1ubuntu5.4`
+### `dpkg` source package: `openssl1.0=1.0.2n-1ubuntu5.6`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.2n-1ubuntu5.4`
+- `libssl1.0.0:amd64=1.0.2n-1ubuntu5.6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl1.0=1.0.2n-1ubuntu5.6
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl1.0/openssl1.0_1.0.2n-1ubuntu5.6.dsc' openssl1.0_1.0.2n-1ubuntu5.6.dsc 2713 SHA512:d4f5a206a5a759f68e282e361b9ea851419fba22ec38edbb651d6bddce0e5ad76881fcc899f077fb667e2edc9055a2eecd69e8a09c4528be7d39e168e72a4ecc
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl1.0/openssl1.0_1.0.2n.orig.tar.gz' openssl1.0_1.0.2n.orig.tar.gz 5375802 SHA512:144bf0d6aa27b4af01df0b7b734c39962649e1711554247d42e05e14d8945742b18745aefdba162e2dfc762b941fd7d3b2d5dc6a781ae4ba10a6f5a3cadb0687
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl1.0/openssl1.0_1.0.2n.orig.tar.gz.asc' openssl1.0_1.0.2n.orig.tar.gz.asc 455 SHA512:7a4d82d1abbfdac92f87839321a40348099fa32193e97042c1d5ff0b0ac719104e0e2b079e0669e603c98c7d2313d0e0de4c1aec0c9180eadd1dd241e7f1985a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl1.0/openssl1.0_1.0.2n-1ubuntu5.6.debian.tar.xz' openssl1.0_1.0.2n-1ubuntu5.6.debian.tar.xz 122292 SHA512:8354b0ea08e1919ee9009617e0861a258f002dd8c66573bc2d488b7490b64a6fd6dab65a00d714ff8ec3255933a5370785868d4fb97694543c5251e02d0cd9b0
+```
 
-### `dpkg` source package: `openssl=1.1.1-1ubuntu2.1~18.04.6`
+### `dpkg` source package: `openssl=1.1.1-1ubuntu2.1~18.04.8`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1-1ubuntu2.1~18.04.6`
-- `openssl=1.1.1-1ubuntu2.1~18.04.6`
+- `libssl1.1:amd64=1.1.1-1ubuntu2.1~18.04.8`
+- `openssl=1.1.1-1ubuntu2.1~18.04.8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1-1ubuntu2.1~18.04.8
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.8.dsc' openssl_1.1.1-1ubuntu2.1~18.04.8.dsc 2754 SHA512:55539bdf23d2911987a93eb03694bcde90ddae804919f4d2040172855678dbc9427f998b5b2d0c833c533705893c38ac16bba3113e6a7a72887254dab32df816
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz' openssl_1.1.1.orig.tar.gz 8337920 SHA512:c0284a4fe84bdf765ca5bc5148da4441ffc36392cfecaf9d372af00cf93b6de5681cab1248b6f8246474532155dc205da5ad49549ad7c61c07c917145e7c9c71
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz.asc' openssl_1.1.1.orig.tar.gz.asc 488 SHA512:cc69ad07a2edc17b579018bac4683f7d48deb8cde4a0f53eb777d2546eec9be6d13a610299705f3b87a7e4e8492432260cd7efc89d124c7fe1def309bbee461f
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.8.debian.tar.xz' openssl_1.1.1-1ubuntu2.1~18.04.8.debian.tar.xz 111332 SHA512:335a2837a05e5a1ca6456ad523a328d469c202713effb16959c579f3e3186aa7d220c47a184f4247ee132755e098ca9610d8ea2b27a5748fc5cdf79a41822009
+```
 
-### `dpkg` source package: `p11-kit=0.23.9-2`
+### `dpkg` source package: `p11-kit=0.23.9-2ubuntu0.1`
 
 Binary Packages:
 
-- `libp11-kit0:amd64=0.23.9-2`
+- `libp11-kit0:amd64=0.23.9-2ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 
@@ -2301,11 +2356,11 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris p11-kit=0.23.9-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.9-2.dsc' p11-kit_0.23.9-2.dsc 2458 SHA256:e4c271a89abf52a95d23cca02bd6fb6ea5d5611b139ac63b0db728e7d9895449
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.9.orig.tar.gz' p11-kit_0.23.9.orig.tar.gz 1091561 SHA256:e1c1649c335107a8d33cf3762eb7f57b2d0681f0c7d8353627293a58d6b4db63
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.9.orig.tar.gz.asc' p11-kit_0.23.9.orig.tar.gz.asc 900 SHA256:334562f6a37f96339173a33a90b246466e0b2673e03658b205d75ebbb63bad10
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.9-2.debian.tar.xz' p11-kit_0.23.9-2.debian.tar.xz 21704 SHA256:fa6af69f96f6ccdce95d61e39662a38768b05f8872b2b2008d56cc4fff0ed3fd
+$ apt-get source -qq --print-uris p11-kit=0.23.9-2ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.9-2ubuntu0.1.dsc' p11-kit_0.23.9-2ubuntu0.1.dsc 2573 SHA512:f7494e246f8a092a240fa0eecc2c0352a6f48ea5f245dfb46ce3daae2579384c418534d18d0dfde6ee973b01aa5376676d9c7829262e36854881a6d1b0eb3030
+'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.9.orig.tar.gz' p11-kit_0.23.9.orig.tar.gz 1091561 SHA512:6a8a569483763d3ffacadf669b8ba9b9be38a77dd8dc366ca0cb91c44753517fa1879d4422e4e8dfbcac594565727839a619566a170c0f94f8e112f18b0086ed
+'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.9.orig.tar.gz.asc' p11-kit_0.23.9.orig.tar.gz.asc 900 SHA512:c6e3cda0a2f3a75126fa046ead97e2914c277bda7e7cb6712f48bd993f5f441b6f5c14d6e74a2042c600cfe4526494872e6fef2fd7453aebb975696de1bff9b2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.9-2ubuntu0.1.debian.tar.xz' p11-kit_0.23.9-2ubuntu0.1.debian.tar.xz 24380 SHA512:460f4179781768a4a4b686955f16f335565d50f7a2d74c298216fe6725ce4e04119f49605752026f65bf56e143e560718969c5983decc906d3246f0a01c46178
 ```
 
 ### `dpkg` source package: `pam=1.1.8-3.6ubuntu2.18.04.2`
@@ -2371,7 +2426,7 @@ $ apt-get source -qq --print-uris pcre3=2:8.39-9
 
 Binary Packages:
 
-- `php-pdo-mysql-zend-server=2019.0.4+b90`
+- `php-pdo-mysql-zend-server=2019.0.7+b96`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2381,14 +2436,14 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `perl=5.26.1-6ubuntu0.3`
+### `dpkg` source package: `perl=5.26.1-6ubuntu0.5`
 
 Binary Packages:
 
-- `libperl5.26:amd64=5.26.1-6ubuntu0.3`
-- `perl=5.26.1-6ubuntu0.3`
-- `perl-base=5.26.1-6ubuntu0.3`
-- `perl-modules-5.26=5.26.1-6ubuntu0.3`
+- `libperl5.26:amd64=5.26.1-6ubuntu0.5`
+- `perl=5.26.1-6ubuntu0.5`
+- `perl-base=5.26.1-6ubuntu0.5`
+- `perl-modules-5.26=5.26.1-6ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.26/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.26/copyright`)
 
@@ -2421,15 +2476,21 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.26/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.26.1-6ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-6ubuntu0.5.dsc' perl_5.26.1-6ubuntu0.5.dsc 2768 SHA512:bc90544acc5f20ce216819c617607e3ee0b9f30e1244ebcc2b52b473bea72dc2f8159d9b5945fffca1ba27ae24aa4567b24b6a2558a004a6b4c0532a9bde5a62
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig-regen-configure.tar.gz' perl_5.26.1.orig-regen-configure.tar.gz 712883 SHA512:3a8ecf16483d87d40bf428e952a3f5c287af8e4f64977133b61188855120d5896b3c5af845a19ad1912f469d9345dddd728708f6171498a7fd0dd0f56b463139
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1.orig.tar.xz' perl_5.26.1.orig.tar.xz 11922848 SHA512:13faa7bcd7ed8c490c37e9032c115af06c9b8152b75f8062409dd72d263d1314480e8a9a883490de1b448b2e6d53b6a87d108e2eceb17de2524d5857c6a7d300
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-6ubuntu0.5.debian.tar.xz' perl_5.26.1-6ubuntu0.5.debian.tar.xz 179176 SHA512:0d8612be05063b50a59cad031ef6c3572f1a747295df186a24ad646b897f0e0df7ff00bd914480c094d3702f1b249d822d8262202e8d25c5ed96b9403d5e86ed
+```
 
 ### `dpkg` source package: `php-bcmath=7.0.0`
 
 Binary Packages:
 
-- `php-bcmath-zend-server=2019.0.4+b92`
+- `php-bcmath-zend-server=2019.0.7+b98`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2443,7 +2504,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-bin-zend-server=2019.0.4+b106`
+- `php-bin-zend-server=2019.0.7+b112`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2457,7 +2518,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-bz2-zend-server=2019.0.4+b100`
+- `php-bz2-zend-server=2019.0.7+b106`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2471,7 +2532,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-calendar-zend-server=2019.0.4+b90`
+- `php-calendar-zend-server=2019.0.7+b96`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2485,7 +2546,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-ctype-zend-server=2019.0.4+b90`
+- `php-ctype-zend-server=2019.0.7+b96`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2499,7 +2560,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-curl-zend-server=2019.0.4+b93`
+- `php-curl-zend-server=2019.0.7+b100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2513,7 +2574,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-dev-zend-server=2019.0.4+b96`
+- `php-dev-zend-server=2019.0.7+b102`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2527,7 +2588,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-exif-zend-server=2019.0.4+b90`
+- `php-exif-zend-server=2019.0.7+b96`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2541,7 +2602,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-fcgi-zend-server=2019.0.4+b92`
+- `php-fcgi-zend-server=2019.0.7+b98`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2555,7 +2616,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-fileinfo-zend-server=2019.0.4+b90`
+- `php-fileinfo-zend-server=2019.0.7+b96`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2569,7 +2630,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-fpm-zend-server=2019.0.4+b100`
+- `php-fpm-zend-server=2019.0.7+b106`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2583,7 +2644,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-ftp-zend-server=2019.0.4+b90`
+- `php-ftp-zend-server=2019.0.7+b96`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2597,7 +2658,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-gd-zend-server=2019.0.4+b90`
+- `php-gd-zend-server=2019.0.7+b96`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2611,7 +2672,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-gettext-zend-server=2019.0.4+b90`
+- `php-gettext-zend-server=2019.0.7+b96`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2625,7 +2686,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-gmp-zend-server=2019.0.4+b90`
+- `php-gmp-zend-server=2019.0.7+b96`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2639,7 +2700,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-imagick-zend-server=2019.0.4+b90`
+- `php-imagick-zend-server=2019.0.7+b96`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2653,7 +2714,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-imap-zend-server=2019.0.4+b90`
+- `php-imap-zend-server=2019.0.7+b96`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2667,7 +2728,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-intl-zend-server=2019.0.4+b90`
+- `php-intl-zend-server=2019.0.7+b96`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2681,7 +2742,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-ldap-zend-server=2019.0.4+b92`
+- `php-ldap-zend-server=2019.0.7+b98`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2695,7 +2756,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-mbstring-zend-server=2019.0.4+b89`
+- `php-mbstring-zend-server=2019.0.7+b95`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2709,7 +2770,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-mcrypt-zend-server=2019.0.4+b29`
+- `php-mcrypt-zend-server=2019.0.7+b35`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2723,7 +2784,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-memcached-zend-server=2019.0.4+b89`
+- `php-memcached-zend-server=2019.0.7+b95`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2737,7 +2798,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-mongodb-zend-server=2019.0.4+b90`
+- `php-mongodb-zend-server=2019.0.7+b96`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2751,7 +2812,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-mysqli-zend-server=2019.0.4+b88`
+- `php-mysqli-zend-server=2019.0.7+b94`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2765,7 +2826,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-oci8-zend-server=2019.0.4+b89`
+- `php-oci8-zend-server=2019.0.7+b95`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2779,7 +2840,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-odbc-zend-server=2019.0.4+b89`
+- `php-odbc-zend-server=2019.0.7+b95`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2793,7 +2854,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-pcntl-zend-server=2019.0.4+b88`
+- `php-pcntl-zend-server=2019.0.7+b94`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2807,7 +2868,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-pdo-dblib-zend-server=2019.0.4+b88`
+- `php-pdo-dblib-zend-server=2019.0.7+b94`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2821,7 +2882,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-pdo-odbc-zend-server=2019.0.4+b89`
+- `php-pdo-odbc-zend-server=2019.0.7+b95`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2835,7 +2896,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-pdo-pgsql-zend-server=2019.0.4+b90`
+- `php-pdo-pgsql-zend-server=2019.0.7+b96`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2849,7 +2910,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-pgsql-zend-server=2019.0.4+b90`
+- `php-pgsql-zend-server=2019.0.7+b96`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2863,7 +2924,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-phar-zend-server=2019.0.4+b89`
+- `php-phar-zend-server=2019.0.7+b95`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2877,7 +2938,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-posix-zend-server=2019.0.4+b88`
+- `php-posix-zend-server=2019.0.7+b94`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2891,7 +2952,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-redis-zend-server=2019.0.4+b90`
+- `php-redis-zend-server=2019.0.7+b96`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2905,7 +2966,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-shmop-zend-server=2019.0.4+b88`
+- `php-shmop-zend-server=2019.0.7+b94`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2919,7 +2980,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-soap-zend-server=2019.0.4+b88`
+- `php-soap-zend-server=2019.0.7+b94`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2933,7 +2994,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-sockets-zend-server=2019.0.4+b88`
+- `php-sockets-zend-server=2019.0.7+b94`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2947,7 +3008,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-ssh2-zend-server=2019.0.4+b87`
+- `php-ssh2-zend-server=2019.0.7+b93`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2961,7 +3022,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-sysvmsg-zend-server=2019.0.4+b87`
+- `php-sysvmsg-zend-server=2019.0.7+b93`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2975,7 +3036,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-sysvsem-zend-server=2019.0.4+b87`
+- `php-sysvsem-zend-server=2019.0.7+b93`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2989,7 +3050,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-sysvshm-zend-server=2019.0.4+b87`
+- `php-sysvshm-zend-server=2019.0.7+b93`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3003,7 +3064,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-tidy-zend-server=2019.0.4+b87`
+- `php-tidy-zend-server=2019.0.7+b93`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3017,7 +3078,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-tokenizer-zend-server=2019.0.4+b87`
+- `php-tokenizer-zend-server=2019.0.7+b93`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3031,7 +3092,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-wddx-zend-server=2019.0.4+b87`
+- `php-wddx-zend-server=2019.0.7+b93`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3045,7 +3106,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-xdebug-zend-server=2019.0.4+b88`
+- `php-xdebug-zend-server=2019.0.7+b95`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3059,7 +3120,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-xmlrpc-zend-server=2019.0.4+b87`
+- `php-xmlrpc-zend-server=2019.0.7+b93`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3073,7 +3134,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-xsl-zend-server=2019.0.4+b87`
+- `php-xsl-zend-server=2019.0.7+b93`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3087,7 +3148,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-zip-zend-server=2019.0.4+b91`
+- `php-zip-zend-server=2019.0.7+b97`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3329,12 +3390,12 @@ $ apt-get source -qq --print-uris sqlite3=3.22.0-1ubuntu0.4
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0-1ubuntu0.4.debian.tar.xz' sqlite3_3.22.0-1ubuntu0.4.debian.tar.xz 47632 SHA512:1b280b6c301b2f3c15ebdfe6085584cef34257edae14c94d7d6e8d06a7b884a96029d354cb3f09df6b6427f671a24cc25ee1ebc178c7168cd0a52bce8c8b5cf0
 ```
 
-### `dpkg` source package: `systemd=237-3ubuntu10.42`
+### `dpkg` source package: `systemd=237-3ubuntu10.44`
 
 Binary Packages:
 
-- `libsystemd0:amd64=237-3ubuntu10.42`
-- `libudev1:amd64=237-3ubuntu10.42`
+- `libsystemd0:amd64=237-3ubuntu10.44`
+- `libudev1:amd64=237-3ubuntu10.44`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -3346,9 +3407,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=237-3ubuntu10.44
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.44.dsc' systemd_237-3ubuntu10.44.dsc 5220 SHA512:37eaf84e1c83462aaceb4b32a0d28bcf983beab30d293ef92f5ee74bf8ebdfdd7eb954be377bdfd931b9f941f9cee11a421617d356dc9c45dfc8cdb0b9bc5ac3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA512:15ef4b92815a6dd9a6c51672dbc00fd7cd0f08068ef0cbeaca574f68d330b28bc67ba1946f24f75ef3d9e7b63843a73eea700db54688061dbf5c9f8470394c3b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.44.debian.tar.xz' systemd_237-3ubuntu10.44.debian.tar.xz 283916 SHA512:02e65b13363a07aa835bbc70c326faf3cd48e8e0b71f6b738faf9041cea1852cf208b491b59ac7d3e38d0c9e0429f4def5a6362cfc0dd08f531350301a2eb991
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
@@ -3369,34 +3435,44 @@ $ apt-get source -qq --print-uris sysvinit=2.88dsf-59.10ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_2.88dsf-59.10ubuntu1.debian.tar.xz' sysvinit_2.88dsf-59.10ubuntu1.debian.tar.xz 132736 SHA256:faee591309aa0065aa43f44a1e840eb01db7f55379af2b45949534bd0317b734
 ```
 
-### `dpkg` source package: `tar=1.29b-2ubuntu0.1`
+### `dpkg` source package: `tar=1.29b-2ubuntu0.2`
 
 Binary Packages:
 
-- `tar=1.29b-2ubuntu0.1`
+- `tar=1.29b-2ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
 - `GPL-2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tar=1.29b-2ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.29b-2ubuntu0.2.dsc' tar_1.29b-2ubuntu0.2.dsc 1906 SHA512:0b82b33e124d2aa84685cf179c966186cc5bdc0d2ad3479e2ec14fc7569fb323179521d2cdb956d09c72bd5c23ab3757734012b837e46752d03c926de8c7e1a0
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.29b.orig.tar.xz' tar_1.29b.orig.tar.xz 1822008 SHA512:6814c906f3bf3d1421d46e63aff7921acffbd2b2a0a7e5c20b472a821eab839d6eab93653d964ae16376b65da223c57a92455f44793522c84c8b1343af20b106
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.29b-2ubuntu0.2.debian.tar.xz' tar_1.29b-2ubuntu0.2.debian.tar.xz 34136 SHA512:83c56c1c111a48ed4e1e8dc77bef53b8348a73bc37bdf567c2bb0b887f351892c586256f936eecd865d8422151820861e919165d84e45a036adf5c904453100a
+```
 
-### `dpkg` source package: `tiff=4.0.9-5ubuntu0.3`
+### `dpkg` source package: `tiff=4.0.9-5ubuntu0.4`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.0.9-5ubuntu0.3`
+- `libtiff5:amd64=4.0.9-5ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff=4.0.9-5ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9-5ubuntu0.4.dsc' tiff_4.0.9-5ubuntu0.4.dsc 2299 SHA512:01520930c1011dc249737d46a88a75cb2d9f80f1229b57fea6dd65c55f1935dfced7a1a0d428bca4e15deaba1d10906140baf321f4275cadc0e78c35f0792c2e
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9.orig.tar.gz' tiff_4.0.9.orig.tar.gz 2305681 SHA512:04f3d5eefccf9c1a0393659fe27f3dddd31108c401ba0dc587bca152a1c1f6bc844ba41622ff5572da8cc278593eff8c402b44e7af0a0090e91d326c2d79f6cd
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9-5ubuntu0.4.debian.tar.xz' tiff_4.0.9-5ubuntu0.4.debian.tar.xz 32912 SHA512:a5b662e893a052584c83253b17ffacf4b966718d0eb7b193ee65434465b12b55800ba3c0e120c4a4bcf9c332136f3793459fb77ea522e2d317d6f76f8cf36590
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2018.09.18.1~18.04.0`
 
@@ -3459,11 +3535,11 @@ $ apt-get source -qq --print-uris unixodbc=2.3.4-1.1ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/u/unixodbc/unixodbc_2.3.4-1.1ubuntu3.diff.gz' unixodbc_2.3.4-1.1ubuntu3.diff.gz 19700 SHA256:7b533e947f1a0c49541668924b3679e8fe7dac75a3759081a6ac82f0c55f9184
 ```
 
-### `dpkg` source package: `unzip=6.0-21ubuntu1`
+### `dpkg` source package: `unzip=6.0-21ubuntu1.1`
 
 Binary Packages:
 
-- `unzip=6.0-21ubuntu1`
+- `unzip=6.0-21ubuntu1.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3472,10 +3548,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris unzip=6.0-21ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-21ubuntu1.dsc' unzip_6.0-21ubuntu1.dsc 1800 SHA256:76f9c291eae4039e31fda029426c96a332d3ce905a2306998ff55798d03ea44d
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-21ubuntu1.debian.tar.xz' unzip_6.0-21ubuntu1.debian.tar.xz 21080 SHA256:8db974c22a5ef50029eb9a7e5429ff099e1cf7cfd36d3951fa4e00e4fd47843f
+$ apt-get source -qq --print-uris unzip=6.0-21ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-21ubuntu1.1.dsc' unzip_6.0-21ubuntu1.1.dsc 1630 SHA512:41b5ffb55fffe5da1e7f441c28981086f222ac6a05fd62ea914246f44d6bc7b8e96c9ae2faf8fc8bb685a7a0dda6ebc1218f0b7c1dd5d21f8b2bc74356e2639a
+'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA512:0694e403ebc57b37218e00ec1a406cae5cc9c5b52b6798e0d4590840b6cdbf9ddc0d9471f67af783e960f8fa2e620394d51384257dca23d06bcd90224a80ce5d
+'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-21ubuntu1.1.debian.tar.xz' unzip_6.0-21ubuntu1.1.debian.tar.xz 26240 SHA512:360f425ed634602cc3cc2bb4e2bd6ca9c3f514ec315f3cc32b5dbb47a6f7e582bfad1517e1f0a256d4fc701f55dc0d79ff7420868d132d9f0903137f646da0d3
 ```
 
 ### `dpkg` source package: `util-linux=2.31.1-0.4ubuntu3.7`
@@ -3577,7 +3653,7 @@ $ apt-get source -qq --print-uris xz-utils=5.2.2-1.3
 
 Binary Packages:
 
-- `zend-base=2019.0.4`
+- `zend-base=2019.0.7`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3591,7 +3667,7 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `zend-server-doc=8.5.1+b2`
+- `zend-server-doc=8.5.1+b50`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3605,11 +3681,11 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `php-common-extensions-zend-server=2019.0.4+b90`
-- `php-extra-extensions-zend-server=2019.0.4+b90`
-- `php-unix-extensions-zend-server=2019.0.4+b90`
-- `zend-server-common=2019.0.4+b392`
-- `zend-server-nginx=2019.0.4+b392`
+- `php-common-extensions-zend-server=2019.0.7+b96`
+- `php-extra-extensions-zend-server=2019.0.7+b96`
+- `php-unix-extensions-zend-server=2019.0.7+b96`
+- `zend-server-common=2019.0.7+b403`
+- `zend-server-nginx=2019.0.7+b403`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
