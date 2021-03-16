@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:471f00bdc339c9fba7d95f8f4ddaffbe6c8e2b66e09aa03b9c023f3efe80c02f`
-- Created: `2021-03-04T05:54:49.778865945Z`
-- Virtual Size: ~ 757.57 Mb  
+- Image ID: `sha256:3bd5676474b6db565d5c59167e16e78bfd2648b286cdb2aad9f9984e4b61fefa`
+- Created: `2021-03-12T14:56:37.358655114Z`
+- Virtual Size: ~ 758.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -1076,12 +1076,12 @@ $ apt-get source -qq --print-uris gdbm=1.18.1-5
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.18.1-5.debian.tar.xz' gdbm_1.18.1-5.debian.tar.xz 16348 SHA256:3c1a0e05b40a97ee51ce77c736c72c37738ba31b2720111d3bc99175a2c3a3ed
 ```
 
-### `dpkg` source package: `git=1:2.25.1-1ubuntu3`
+### `dpkg` source package: `git=1:2.25.1-1ubuntu3.1`
 
 Binary Packages:
 
-- `git=1:2.25.1-1ubuntu3`
-- `git-man=1:2.25.1-1ubuntu3`
+- `git=1:2.25.1-1ubuntu3.1`
+- `git-man=1:2.25.1-1ubuntu3.1`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1107,17 +1107,17 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris git=1:2.25.1-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.dsc' git_2.25.1-1ubuntu3.dsc 2954 SHA256:7f47dc333299979e969f9b87a8cfd8926312e6bee01e44eef6d5a60c19bc7316
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1.orig.tar.xz' git_2.25.1.orig.tar.xz 5875548 SHA256:222796cc6e3bf2f9fd765f8f097daa3c3999bb7865ac88a8c974d98182e29f26
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.debian.tar.xz' git_2.25.1-1ubuntu3.debian.tar.xz 650520 SHA256:384e8710d6136d7b0b2541cc950de8a0b9f8bc680cc7b889b059eb758b35792c
+$ apt-get source -qq --print-uris git=1:2.25.1-1ubuntu3.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.1.dsc' git_2.25.1-1ubuntu3.1.dsc 2962 SHA512:edb02508cc111889d584bb3050b0eeee11bbbbb276f7d4a8001c490814006940440f5473eba8a674c2f94c73fa3688af0a9d1007936762a8f15fe8e039aa890d
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1.orig.tar.xz' git_2.25.1.orig.tar.xz 5875548 SHA512:15241143acfd8542d85d2709ac3c80dbd6e8d5234438f70c4f33cc71a2bdec3e32938df7f6351e2746d570b021d3bd0b70474ea4beec0c51d1fc45f9c287b344
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.1.debian.tar.xz' git_2.25.1-1ubuntu3.1.debian.tar.xz 653244 SHA512:30db2c9e910dff8f144c6a1ab0d78afd2a51ebe52f115be8b817e5891fd1d1ac1fda8799a574a97cb3bc4d810495349477334cb04ffe347e6b26725eb6a46d52
 ```
 
-### `dpkg` source package: `glib2.0=2.64.6-1~ubuntu20.04.1`
+### `dpkg` source package: `glib2.0=2.64.6-1~ubuntu20.04.2`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.64.6-1~ubuntu20.04.1`
+- `libglib2.0-0:amd64=2.64.6-1~ubuntu20.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 
@@ -2692,12 +2692,12 @@ $ apt-get source -qq --print-uris libyaml=0.2.2-1
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.2.2-1.debian.tar.xz' libyaml_0.2.2-1.debian.tar.xz 4112 SHA256:186aad3e4bcd95891a8c59249c59f862f5f71601058fda0bf020a9e9e39320fe
 ```
 
-### `dpkg` source package: `libzstd=1.4.4+dfsg-3`
+### `dpkg` source package: `libzstd=1.4.4+dfsg-3ubuntu0.1`
 
 Binary Packages:
 
-- `libzstd-dev:amd64=1.4.4+dfsg-3`
-- `libzstd1:amd64=1.4.4+dfsg-3`
+- `libzstd-dev:amd64=1.4.4+dfsg-3ubuntu0.1`
+- `libzstd1:amd64=1.4.4+dfsg-3ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libzstd-dev/copyright`, `/usr/share/doc/libzstd1/copyright`)
 
@@ -2710,10 +2710,10 @@ Licenses: (parsed from: `/usr/share/doc/libzstd-dev/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libzstd=1.4.4+dfsg-3
-'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4+dfsg-3.dsc' libzstd_1.4.4+dfsg-3.dsc 2266 SHA256:f6e3cc2b022b9812daca4f427a00fc6e109e6e1e72e64d6a254add040853b110
-'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4+dfsg.orig.tar.xz' libzstd_1.4.4+dfsg.orig.tar.xz 1357144 SHA256:be9f9bfd3f6816f21e1108869a9acad6efdc4882ed3f7a1f58ec752f67864890
-'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4+dfsg-3.debian.tar.xz' libzstd_1.4.4+dfsg-3.debian.tar.xz 16068 SHA256:f7fec89f1fae04dfa551d124973167e09e84c864a25961aa20727cc91277b0e6
+$ apt-get source -qq --print-uris libzstd=1.4.4+dfsg-3ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4+dfsg-3ubuntu0.1.dsc' libzstd_1.4.4+dfsg-3ubuntu0.1.dsc 2381 SHA512:a135412be4afdea573f991d8e4822f9885dbd607c87fb22e72d2defa160cf64f85a6047a9c9120b6eda3b8927306407278779f9e7a6976d7b15fb08750f32f74
+'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4+dfsg.orig.tar.xz' libzstd_1.4.4+dfsg.orig.tar.xz 1357144 SHA512:85c64662303dda72d61fcbe41dfc6b310e63b20b043f41d4fb5a5ebc38ea83986c8c217fb259dfc2c024538ee8a519bb944914542a0b3a5c4dd988d5fdb248b7
+'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4+dfsg-3ubuntu0.1.debian.tar.xz' libzstd_1.4.4+dfsg-3ubuntu0.1.debian.tar.xz 17300 SHA512:0484891be5603d00bd57b799c708b9395fccbaa8c6c44f535377f6fa2c7ac22c01c8a3c1b45e1c1f3c30f19dc74d510626bf82067fcbfb53c39f1bcc2249affe
 ```
 
 ### `dpkg` source package: `linux=5.4.0-66.74`
@@ -2726,14 +2726,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.4.0-66.74
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-66.74.dsc' linux_5.4.0-66.74.dsc 7253 SHA512:280a3defcfcd67b3365de8ea8e7abc0e9f70804287e4b9d8d1bdbb2bb45444bb4bc44f971b82f729cb6b1729368ecfff44747fb5974e040ef2674b556affe7fd
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-66.74.diff.gz' linux_5.4.0-66.74.diff.gz 6287188 SHA512:736d4e8c3d1194a4b139b0cd6a046d396f66d112f173a26f2aa863c5f6552e802d8d49665ceb7fc596368d881daa469f146c703e423964119366d0db899f9a25
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
 

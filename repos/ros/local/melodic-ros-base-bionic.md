@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ee42fdcddd5221dcaaf86e31bf705bc3d875eafc43ffb1578f1ae592b66f4ea9`
-- Created: `2021-03-04T05:21:31.407974656Z`
+- Image ID: `sha256:5e1d5ee4623aa1def9d6e005c23e4e5b74b55573a8ffc5777b32f1f79ae453dc`
+- Created: `2021-03-12T13:56:49.038218178Z`
 - Virtual Size: ~ 1.28 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1388,12 +1388,12 @@ $ apt-get source -qq --print-uris gdk-pixbuf=2.36.11-2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.11-2.debian.tar.xz' gdk-pixbuf_2.36.11-2.debian.tar.xz 15204 SHA256:064020524e80e3ac713dd6bdf861660df26c61d9aceb75be74df44a9979c0a0c
 ```
 
-### `dpkg` source package: `git=1:2.17.1-1ubuntu0.7`
+### `dpkg` source package: `git=1:2.17.1-1ubuntu0.8`
 
 Binary Packages:
 
-- `git=1:2.17.1-1ubuntu0.7`
-- `git-man=1:2.17.1-1ubuntu0.7`
+- `git=1:2.17.1-1ubuntu0.8`
+- `git-man=1:2.17.1-1ubuntu0.8`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1416,9 +1416,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.17.1-1ubuntu0.8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.8.dsc' git_2.17.1-1ubuntu0.8.dsc 2959 SHA512:0ad14eb64dfcf83ff5a233a7b1f31b063266b8c9ade33a9d70254e97e9901a242ec06603293955158a29137b8811368d2364c46f243751e248a70f5699a21d88
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1.orig.tar.xz' git_2.17.1.orig.tar.xz 5015484 SHA512:77c27569d40fbae1842130baa0cdda674a02e384631bd8fb1f2ddf67ce372dd4903b2ce6b4283a4ae506cdedd5daa55baa2afe6a6689528511e24e4beb864960
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.8.debian.tar.xz' git_2.17.1-1ubuntu0.8.debian.tar.xz 616652 SHA512:3307d2ba77b0a81eabcd2ce4ec0da2bdffd92f5ce51f43abc89390dbf3757048cc6d90d5c9ea624bbdff5c79f8b7b5a7f67713acd7722726836f92e73c7f2e8e
+```
 
 ### `dpkg` source package: `glib-networking=2.56.0-1ubuntu0.1`
 
@@ -1442,15 +1447,15 @@ $ apt-get source -qq --print-uris glib-networking=2.56.0-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib-networking/glib-networking_2.56.0-1ubuntu0.1.debian.tar.xz' glib-networking_2.56.0-1ubuntu0.1.debian.tar.xz 31224 SHA512:da8f8169d2eb29abb568a4005e1d912c621e87ce19ffb3e88ef5aae9975ae2b05252106533a2823322d3550be3a8cf217cb888a1718de7d7556a930b03dfe16f
 ```
 
-### `dpkg` source package: `glib2.0=2.56.4-0ubuntu0.18.04.6`
+### `dpkg` source package: `glib2.0=2.56.4-0ubuntu0.18.04.7`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.56.4-0ubuntu0.18.04.6`
-- `libglib2.0-bin=2.56.4-0ubuntu0.18.04.6`
-- `libglib2.0-data=2.56.4-0ubuntu0.18.04.6`
-- `libglib2.0-dev:amd64=2.56.4-0ubuntu0.18.04.6`
-- `libglib2.0-dev-bin=2.56.4-0ubuntu0.18.04.6`
+- `libglib2.0-0:amd64=2.56.4-0ubuntu0.18.04.7`
+- `libglib2.0-bin=2.56.4-0ubuntu0.18.04.7`
+- `libglib2.0-data=2.56.4-0ubuntu0.18.04.7`
+- `libglib2.0-dev:amd64=2.56.4-0ubuntu0.18.04.7`
+- `libglib2.0-dev-bin=2.56.4-0ubuntu0.18.04.7`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-bin/copyright`, `/usr/share/doc/libglib2.0-data/copyright`, `/usr/share/doc/libglib2.0-dev/copyright`, `/usr/share/doc/libglib2.0-dev-bin/copyright`)
 
@@ -3400,14 +3405,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.15.0-136.140
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-136.140.dsc' linux_4.15.0-136.140.dsc 7406 SHA512:eeb352b4e3ba2a7c45bd3323b2da5c9068af1ed358dc449b07fd39c4f3b76887944d5eb82ca926901403e3d6fd866073d8d791bc9a070e2a0a021ab44bd1f4aa
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA512:0fab606a295e0857f774f8adaa9d56bf2cb227fbab2daed374415da216391b156f49e606ba37ac402987c5796d408807da5d1a42c0d85a8552f109a3e279443d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-136.140.diff.gz' linux_4.15.0-136.140.diff.gz 10700121 SHA512:60af1324d728dc7ada5ad26c99a66d8e8eb2d70bc5b962a623dbeec327b8ec1762d3709b4ed2584ee7256686145f4a54a90863c16cde5e1218e3f1b59a20414c
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-2`
 

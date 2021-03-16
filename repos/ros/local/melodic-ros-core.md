@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4a8653be134b25e97d64a0faa0dab993a7c2b1f08d5378822e12a9a66e4ce5b8`
-- Created: `2021-03-04T05:20:11.160033445Z`
+- Image ID: `sha256:cbe585c03c1a96b54c22cea321c656f5a9ac16d39c5d2350cb8b8d1a9839f85b`
+- Created: `2021-03-12T13:54:13.734492678Z`
 - Virtual Size: ~ 862.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -994,15 +994,15 @@ $ apt-get source -qq --print-uris gdbm=1.14.1-6
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.14.1-6.debian.tar.xz' gdbm_1.14.1-6.debian.tar.xz 27492 SHA256:c9da59f11d5e40ecd877f1256c53ea4750b9d614c7885800e42d0f1885996658
 ```
 
-### `dpkg` source package: `glib2.0=2.56.4-0ubuntu0.18.04.6`
+### `dpkg` source package: `glib2.0=2.56.4-0ubuntu0.18.04.7`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.56.4-0ubuntu0.18.04.6`
-- `libglib2.0-bin=2.56.4-0ubuntu0.18.04.6`
-- `libglib2.0-data=2.56.4-0ubuntu0.18.04.6`
-- `libglib2.0-dev:amd64=2.56.4-0ubuntu0.18.04.6`
-- `libglib2.0-dev-bin=2.56.4-0ubuntu0.18.04.6`
+- `libglib2.0-0:amd64=2.56.4-0ubuntu0.18.04.7`
+- `libglib2.0-bin=2.56.4-0ubuntu0.18.04.7`
+- `libglib2.0-data=2.56.4-0ubuntu0.18.04.7`
+- `libglib2.0-dev:amd64=2.56.4-0ubuntu0.18.04.7`
+- `libglib2.0-dev-bin=2.56.4-0ubuntu0.18.04.7`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-bin/copyright`, `/usr/share/doc/libglib2.0-data/copyright`, `/usr/share/doc/libglib2.0-dev/copyright`, `/usr/share/doc/libglib2.0-dev-bin/copyright`)
 
@@ -2078,14 +2078,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.15.0-136.140
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-136.140.dsc' linux_4.15.0-136.140.dsc 7406 SHA512:eeb352b4e3ba2a7c45bd3323b2da5c9068af1ed358dc449b07fd39c4f3b76887944d5eb82ca926901403e3d6fd866073d8d791bc9a070e2a0a021ab44bd1f4aa
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA512:0fab606a295e0857f774f8adaa9d56bf2cb227fbab2daed374415da216391b156f49e606ba37ac402987c5796d408807da5d1a42c0d85a8552f109a3e279443d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-136.140.diff.gz' linux_4.15.0-136.140.diff.gz 10700121 SHA512:60af1324d728dc7ada5ad26c99a66d8e8eb2d70bc5b962a623dbeec327b8ec1762d3709b4ed2584ee7256686145f4a54a90863c16cde5e1218e3f1b59a20414c
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-2`
 

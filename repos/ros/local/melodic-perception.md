@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:81a8dca99af01fb1eb573a1b358a39955b498801f54fb19b38628efd118b0521`
-- Created: `2021-03-04T05:26:12.514797594Z`
+- Image ID: `sha256:e635cbb1a13f9f37770f2dd1c3983568e65cc2b3f4dcfb13a16812564f3b3372`
+- Created: `2021-03-12T14:04:28.661498261Z`
 - Virtual Size: ~ 2.32 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1920,12 +1920,12 @@ $ apt-get source -qq --print-uris giflib=5.1.4-2ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/giflib/giflib_5.1.4-2ubuntu0.1.debian.tar.xz' giflib_5.1.4-2ubuntu0.1.debian.tar.xz 8768 SHA512:e1dc47d73443a9d436482b8945e9f35012f6de278976bdee125d7fd4baa54dcd3c5ee3643e9a1052cfa871917ee5047b22610f4336d8643958ba1e849dfe7b9e
 ```
 
-### `dpkg` source package: `git=1:2.17.1-1ubuntu0.7`
+### `dpkg` source package: `git=1:2.17.1-1ubuntu0.8`
 
 Binary Packages:
 
-- `git=1:2.17.1-1ubuntu0.7`
-- `git-man=1:2.17.1-1ubuntu0.7`
+- `git=1:2.17.1-1ubuntu0.8`
+- `git-man=1:2.17.1-1ubuntu0.8`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1948,9 +1948,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.17.1-1ubuntu0.8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.8.dsc' git_2.17.1-1ubuntu0.8.dsc 2959 SHA512:0ad14eb64dfcf83ff5a233a7b1f31b063266b8c9ade33a9d70254e97e9901a242ec06603293955158a29137b8811368d2364c46f243751e248a70f5699a21d88
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1.orig.tar.xz' git_2.17.1.orig.tar.xz 5015484 SHA512:77c27569d40fbae1842130baa0cdda674a02e384631bd8fb1f2ddf67ce372dd4903b2ce6b4283a4ae506cdedd5daa55baa2afe6a6689528511e24e4beb864960
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.17.1-1ubuntu0.8.debian.tar.xz' git_2.17.1-1ubuntu0.8.debian.tar.xz 616652 SHA512:3307d2ba77b0a81eabcd2ce4ec0da2bdffd92f5ce51f43abc89390dbf3757048cc6d90d5c9ea624bbdff5c79f8b7b5a7f67713acd7722726836f92e73c7f2e8e
+```
 
 ### `dpkg` source package: `gl2ps=1.4.0+dfsg1-1`
 
@@ -1996,15 +2001,15 @@ $ apt-get source -qq --print-uris glib-networking=2.56.0-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib-networking/glib-networking_2.56.0-1ubuntu0.1.debian.tar.xz' glib-networking_2.56.0-1ubuntu0.1.debian.tar.xz 31224 SHA512:da8f8169d2eb29abb568a4005e1d912c621e87ce19ffb3e88ef5aae9975ae2b05252106533a2823322d3550be3a8cf217cb888a1718de7d7556a930b03dfe16f
 ```
 
-### `dpkg` source package: `glib2.0=2.56.4-0ubuntu0.18.04.6`
+### `dpkg` source package: `glib2.0=2.56.4-0ubuntu0.18.04.7`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.56.4-0ubuntu0.18.04.6`
-- `libglib2.0-bin=2.56.4-0ubuntu0.18.04.6`
-- `libglib2.0-data=2.56.4-0ubuntu0.18.04.6`
-- `libglib2.0-dev:amd64=2.56.4-0ubuntu0.18.04.6`
-- `libglib2.0-dev-bin=2.56.4-0ubuntu0.18.04.6`
+- `libglib2.0-0:amd64=2.56.4-0ubuntu0.18.04.7`
+- `libglib2.0-bin=2.56.4-0ubuntu0.18.04.7`
+- `libglib2.0-data=2.56.4-0ubuntu0.18.04.7`
+- `libglib2.0-dev:amd64=2.56.4-0ubuntu0.18.04.7`
+- `libglib2.0-dev-bin=2.56.4-0ubuntu0.18.04.7`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-bin/copyright`, `/usr/share/doc/libglib2.0-data/copyright`, `/usr/share/doc/libglib2.0-dev/copyright`, `/usr/share/doc/libglib2.0-dev-bin/copyright`)
 
@@ -5205,14 +5210,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.15.0-136.140
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-136.140.dsc' linux_4.15.0-136.140.dsc 7406 SHA512:eeb352b4e3ba2a7c45bd3323b2da5c9068af1ed358dc449b07fd39c4f3b76887944d5eb82ca926901403e3d6fd866073d8d791bc9a070e2a0a021ab44bd1f4aa
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA512:0fab606a295e0857f774f8adaa9d56bf2cb227fbab2daed374415da216391b156f49e606ba37ac402987c5796d408807da5d1a42c0d85a8552f109a3e279443d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-136.140.diff.gz' linux_4.15.0-136.140.diff.gz 10700121 SHA512:60af1324d728dc7ada5ad26c99a66d8e8eb2d70bc5b962a623dbeec327b8ec1762d3709b4ed2584ee7256686145f4a54a90863c16cde5e1218e3f1b59a20414c
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-2`
 
@@ -6485,19 +6485,24 @@ $ apt-get source -qq --print-uris perl=5.26.1-6ubuntu0.5
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-6ubuntu0.5.debian.tar.xz' perl_5.26.1-6ubuntu0.5.debian.tar.xz 179176 SHA512:0d8612be05063b50a59cad031ef6c3572f1a747295df186a24ad646b897f0e0df7ff00bd914480c094d3702f1b249d822d8262202e8d25c5ed96b9403d5e86ed
 ```
 
-### `dpkg` source package: `pillow=5.1.0-1ubuntu0.4`
+### `dpkg` source package: `pillow=5.1.0-1ubuntu0.5`
 
 Binary Packages:
 
-- `python-pil:amd64=5.1.0-1ubuntu0.4`
+- `python-pil:amd64=5.1.0-1ubuntu0.5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris pillow=5.1.0-1ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pillow/pillow_5.1.0-1ubuntu0.5.dsc' pillow_5.1.0-1ubuntu0.5.dsc 2883 SHA512:03571e188e733a10a2240790bc43b15c95be56c0e5f97e4dcadaddd5e49ba5850b5b8f9cdbd3fc5b28bdcf23c27ad469b05e7b008441b9584dac71c9b81017e1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pillow/pillow_5.1.0.orig.tar.xz' pillow_5.1.0.orig.tar.xz 10771012 SHA512:40262690ef24ae1b4a5e8f7da5070d9e7a9d85a2ae990ef859f0af9270bb447dff249501abbd76352248ca9ec26c6f49862240270f1cb0b8dc3ab5b449e3801e
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pillow/pillow_5.1.0-1ubuntu0.5.debian.tar.xz' pillow_5.1.0-1ubuntu0.5.debian.tar.xz 42508 SHA512:65ef970e347a44050a848e1884c331be8d26194104cc1a131a728f102d0406cff79f388a01071c82a2152a674fa07babaf4ce2e1995910f156785dbb90ffd80b
+```
 
 ### `dpkg` source package: `pinentry=1.1.0-1`
 

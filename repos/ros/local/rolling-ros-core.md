@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:81f7462987640a18fd45955d23e95192cc64c097392adde141cb7d092375e05b`
-- Created: `2021-03-04T05:53:47.779183789Z`
+- Image ID: `sha256:6047bb77144e30eda99ea202c9e5886cff7fc94d3e5b5bd0b3fe5825c5ef9e8f`
+- Created: `2021-03-12T14:55:49.685681259Z`
 - Virtual Size: ~ 485.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -688,11 +688,11 @@ $ apt-get source -qq --print-uris gdbm=1.18.1-5
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.18.1-5.debian.tar.xz' gdbm_1.18.1-5.debian.tar.xz 16348 SHA256:3c1a0e05b40a97ee51ce77c736c72c37738ba31b2720111d3bc99175a2c3a3ed
 ```
 
-### `dpkg` source package: `glib2.0=2.64.6-1~ubuntu20.04.1`
+### `dpkg` source package: `glib2.0=2.64.6-1~ubuntu20.04.2`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.64.6-1~ubuntu20.04.1`
+- `libglib2.0-0:amd64=2.64.6-1~ubuntu20.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 
@@ -1566,14 +1566,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.4.0-66.74
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-66.74.dsc' linux_5.4.0-66.74.dsc 7253 SHA512:280a3defcfcd67b3365de8ea8e7abc0e9f70804287e4b9d8d1bdbb2bb45444bb4bc44f971b82f729cb6b1729368ecfff44747fb5974e040ef2674b556affe7fd
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-66.74.diff.gz' linux_5.4.0-66.74.diff.gz 6287188 SHA512:736d4e8c3d1194a4b139b0cd6a046d396f66d112f173a26f2aa863c5f6552e802d8d49665ceb7fc596368d881daa469f146c703e423964119366d0db899f9a25
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
 
