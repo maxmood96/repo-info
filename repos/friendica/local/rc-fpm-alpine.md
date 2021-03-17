@@ -1,9 +1,9 @@
-# `friendica:2021.03-dev-fpm-alpine`
+# `friendica:2021.03-rc-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:57e89355eb7424df221d3e422d4e1ed329f637baffe5598768d1e1bd44051d7d`
-- Created: `2021-03-13T16:03:44.729303914Z`
+- Image ID: `sha256:05707df3d1f2a5df764195ec7e4a5a462ddbe0178a134bc8cbc9cef0cbec2e8d`
+- Created: `2021-03-13T16:03:58.14513751Z`
 - Virtual Size: ~ 119.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,8 +22,8 @@
   - `PHP_URL=https://www.php.net/distributions/php-7.3.27.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.27.tar.xz.asc`
   - `PHP_SHA256=65f616e2d5b6faacedf62830fa047951b0136d5da34ae59e6744cbaf5dca148d`
-  - `FRIENDICA_VERSION=2021.03-dev`
-  - `FRIENDICA_ADDONS=2021.03-dev`
+  - `FRIENDICA_VERSION=2021.03-rc`
+  - `FRIENDICA_ADDONS=2021.03-rc`
 
 ## `apk` (`.apk`-based packages)
 
