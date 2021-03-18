@@ -1439,14 +1439,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 - `GPL-2+`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.64.6-1~ubuntu20.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.64.6-1~ubuntu20.04.2.dsc' glib2.0_2.64.6-1~ubuntu20.04.2.dsc 3338 SHA512:e115b94aaaf3fe1464734217384bb2a0e386cbb77b9eb34c00d40a5f02f6c6016bd9dc7be47af68f2406503fd1ef7cc6d9a139e5426dc0750d7d6ad54cff0f8f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.64.6.orig.tar.xz' glib2.0_2.64.6.orig.tar.xz 4781576 SHA512:5cd82c4d9b143e7aa130c24e25fb9def06dd915ef8ad8ed3883931bf5cddecf69c2e669ef6aa1d910484ede75b671e7c48a4f3fe50aa78955bff57b04f0cf958
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.64.6-1~ubuntu20.04.2.debian.tar.xz' glib2.0_2.64.6-1~ubuntu20.04.2.debian.tar.xz 108060 SHA512:2a4d3a9886bfdf2a503ffe4dd95cf28942a5ec14d739b918c7824cab5e29e2b090410f46b68be1d7098a56d2ae4738eaf4d3cd97001df8a62e657aba4c78262c
-```
 
 ### `dpkg` source package: `glibc=2.31-0ubuntu9.2`
 
@@ -1833,14 +1828,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-msgs5/copyright`)
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-msgs5=5.6.0-1~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-msgs5/ignition-msgs5_5.6.0-1~focal.dsc' ignition-msgs5_5.6.0-1~focal.dsc 1305 SHA256:b08e1db6d30032f3cea79a56b05396ee6b48b6d4894d53ce1047c2774ebfa73f
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-msgs5/ignition-msgs5_5.6.0.orig.tar.bz2' ignition-msgs5_5.6.0.orig.tar.bz2 311022 SHA256:54a08e2b194d9d4857f4930f62c1c66ef85a518a742c60597d91908e91b609ba
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-msgs5/ignition-msgs5_5.6.0-1~focal.debian.tar.xz' ignition-msgs5_5.6.0-1~focal.debian.tar.xz 2312 SHA256:dfba5169a5b804c44a698270dce8a5403ccef97356cce23a65aa0c0b3f12a1c9
-```
 
 ### `dpkg` source package: `ignition-transport8=8.2.0-1~focal`
 

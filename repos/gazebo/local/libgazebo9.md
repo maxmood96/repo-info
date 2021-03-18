@@ -1494,14 +1494,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.56.4-0ubuntu0.18.04.7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.4-0ubuntu0.18.04.7.dsc' glib2.0_2.56.4-0ubuntu0.18.04.7.dsc 3612 SHA512:b8d19b4216637928449bf9b5bea413c5e791968c303a6bf0e3e8dac3bc8fa714e96fcdac2f79e4beffd02b49d296b275a75464618b9208db3bec68babbf212cd
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.4.orig.tar.xz' glib2.0_2.56.4.orig.tar.xz 7029768 SHA512:280a46c2af13283a08c15ff0b4f5492659c2884521930600ad45310ed181c44a878ad8f9b36bae68ed6e7d92db6f1630f7bf015148c513dc317d25807f13abb0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.4-0ubuntu0.18.04.7.debian.tar.xz' glib2.0_2.56.4-0ubuntu0.18.04.7.debian.tar.xz 102932 SHA512:e64261afb5cd6f6ad96a85e255f0b85b0f4e4b1a404666a91e327a3e0b363225e48e22c65cd3c3d767218303cb47de3fb7b8499476270d69bf7ba3b3e1108525
-```
 
 ### `dpkg` source package: `glibc=2.27-3ubuntu1.4`
 
@@ -4488,14 +4483,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.15.0-136.140
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-136.140.dsc' linux_4.15.0-136.140.dsc 7406 SHA512:eeb352b4e3ba2a7c45bd3323b2da5c9068af1ed358dc449b07fd39c4f3b76887944d5eb82ca926901403e3d6fd866073d8d791bc9a070e2a0a021ab44bd1f4aa
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA512:0fab606a295e0857f774f8adaa9d56bf2cb227fbab2daed374415da216391b156f49e606ba37ac402987c5796d408807da5d1a42c0d85a8552f109a3e279443d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-136.140.diff.gz' linux_4.15.0-136.140.diff.gz 10700121 SHA512:60af1324d728dc7ada5ad26c99a66d8e8eb2d70bc5b962a623dbeec327b8ec1762d3709b4ed2584ee7256686145f4a54a90863c16cde5e1218e3f1b59a20414c
-```
 
 ### `dpkg` source package: `llvm-toolchain-10=1:10.0.0-4ubuntu1~18.04.2`
 

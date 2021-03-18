@@ -1971,14 +1971,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.64.6-1~ubuntu20.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.64.6-1~ubuntu20.04.2.dsc' glib2.0_2.64.6-1~ubuntu20.04.2.dsc 3338 SHA512:e115b94aaaf3fe1464734217384bb2a0e386cbb77b9eb34c00d40a5f02f6c6016bd9dc7be47af68f2406503fd1ef7cc6d9a139e5426dc0750d7d6ad54cff0f8f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.64.6.orig.tar.xz' glib2.0_2.64.6.orig.tar.xz 4781576 SHA512:5cd82c4d9b143e7aa130c24e25fb9def06dd915ef8ad8ed3883931bf5cddecf69c2e669ef6aa1d910484ede75b671e7c48a4f3fe50aa78955bff57b04f0cf958
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.64.6-1~ubuntu20.04.2.debian.tar.xz' glib2.0_2.64.6-1~ubuntu20.04.2.debian.tar.xz 108060 SHA512:2a4d3a9886bfdf2a503ffe4dd95cf28942a5ec14d739b918c7824cab5e29e2b090410f46b68be1d7098a56d2ae4738eaf4d3cd97001df8a62e657aba4c78262c
-```
 
 ### `dpkg` source package: `glibc=2.31-0ubuntu9.2`
 
@@ -2430,14 +2425,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-msgs5/copyright`, `/usr/shar
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-msgs5=5.6.0-1~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-msgs5/ignition-msgs5_5.6.0-1~focal.dsc' ignition-msgs5_5.6.0-1~focal.dsc 1305 SHA256:b08e1db6d30032f3cea79a56b05396ee6b48b6d4894d53ce1047c2774ebfa73f
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-msgs5/ignition-msgs5_5.6.0.orig.tar.bz2' ignition-msgs5_5.6.0.orig.tar.bz2 311022 SHA256:54a08e2b194d9d4857f4930f62c1c66ef85a518a742c60597d91908e91b609ba
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-msgs5/ignition-msgs5_5.6.0-1~focal.debian.tar.xz' ignition-msgs5_5.6.0-1~focal.debian.tar.xz 2312 SHA256:dfba5169a5b804c44a698270dce8a5403ccef97356cce23a65aa0c0b3f12a1c9
-```
 
 ### `dpkg` source package: `ignition-tools=1.0.0-1~focal`
 
@@ -5283,14 +5273,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.4.0-66.74
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-66.74.dsc' linux_5.4.0-66.74.dsc 7253 SHA512:280a3defcfcd67b3365de8ea8e7abc0e9f70804287e4b9d8d1bdbb2bb45444bb4bc44f971b82f729cb6b1729368ecfff44747fb5974e040ef2674b556affe7fd
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-66.74.diff.gz' linux_5.4.0-66.74.diff.gz 6287188 SHA512:736d4e8c3d1194a4b139b0cd6a046d396f66d112f173a26f2aa863c5f6552e802d8d49665ceb7fc596368d881daa469f146c703e423964119366d0db899f9a25
-```
 
 ### `dpkg` source package: `llvm-toolchain-11=1:11.0.0-2~ubuntu20.04.1`
 

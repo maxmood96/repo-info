@@ -1217,14 +1217,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.48.2-0ubuntu4.7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu4.7.dsc' glib2.0_2.48.2-0ubuntu4.7.dsc 3173 SHA512:168056634b3f91d6b7576296d6637714630d2562bb4ee84718fcf76f06433a77a60993f3ff1f5da1a6a0281714fa1c65650df5989b26c89e92a341ec98d32646
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2.orig.tar.xz' glib2.0_2.48.2.orig.tar.xz 6408644 SHA512:2eac104eb2207d0a6488992e48069a34b417f51e141364f281ab7b0953a6de88be177b1c694dd9464a856c9a5d8021e3cf0193a8d9c5aaf6ea11f1f9ff743c43
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu4.7.debian.tar.xz' glib2.0_2.48.2-0ubuntu4.7.debian.tar.xz 91564 SHA512:147af4cbb491cc370c67db0a43082b6b298d7311e1358a0ed8c64b5dd8d40c4608743a2efc90c81e50136f9d33c26a1b2836affebecc095d47fe92cbec48cfed
-```
 
 ### `dpkg` source package: `glibc=2.23-0ubuntu11.2`
 
@@ -4246,14 +4241,9 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`)
 - `ZLIB`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjpeg2=2.1.2-1.1+deb9u5build0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u5build0.16.04.1.dsc' openjpeg2_2.1.2-1.1+deb9u5build0.16.04.1.dsc 2853 SHA512:f206c64675c1b8414348b18b38964ec9871a12c8e6212ba2a1f3a8ecf42eeff9ebf2c65c572257b8716789606bcb65c9551fcc3b0d47b695c3a5fa620b099600
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/openjpeg2/openjpeg2_2.1.2.orig.tar.gz' openjpeg2_2.1.2.orig.tar.gz 1987071 SHA512:411067e33c8e4da9921d0281e932a4ac2af592cf822bfad828daea9e2b9c414859455bcec6d912ce76460ea462fa4cbd94a401333bda5716ec017d18b8e5942c
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/openjpeg2/openjpeg2_2.1.2-1.1+deb9u5build0.16.04.1.debian.tar.xz' openjpeg2_2.1.2-1.1+deb9u5build0.16.04.1.debian.tar.xz 28732 SHA512:2d628223bd5a417b20df9dffb7d2f6090fcbd43d327a39ae47f2384edf174041defc707cb73d5dde6829a289590d977e65c5dc60d26b557659e2cce77119a0dd
-```
 
 ### `dpkg` source package: `openjpeg=1:1.5.2-3.1`
 
