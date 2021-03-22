@@ -1,7 +1,7 @@
 ## `wordpress:5-php7.4-fpm`
 
 ```console
-$ docker pull wordpress@sha256:4ef5e44c33d50ef21c91c6c423f8fe45da7fe407e5d806c4087a030f6e0fbbab
+$ docker pull wordpress@sha256:9fa777b1b6af0597881277fb24b8cda02436931a178310194d781f2316ce02f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18,14 +18,14 @@ $ docker pull wordpress@sha256:4ef5e44c33d50ef21c91c6c423f8fe45da7fe407e5d806c40
 ### `wordpress:5-php7.4-fpm` - linux; amd64
 
 ```console
-$ docker pull wordpress@sha256:e9b98323dc5d43a451a0b6e302dbef7ddbaf4b2fa66324de7f171da7d9c4780e
+$ docker pull wordpress@sha256:57e8872909cf1be42b1a9b341cdc8ae1da8e447946fcc55d394dfce5f8a7ef6d
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.7 MB (184722094 bytes)**  
+-	Total Size: **184.7 MB (184722184 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7eb3054f3c57e3ed7b38a4954c2005c709fbca129c31ff40245ff6fd5603c2c`
+-	Image ID: `sha256:2192d924ecff6eab919e3badd6e5e6f659f16361f2a00e46a483498364c4aaa1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -96,11 +96,11 @@ RUN set -eux; 	version='5.7'; 	sha1='76d1332cfcbc5f8b17151b357999d1f758faf897'; 
 VOLUME [/var/www/html]
 # Wed, 17 Mar 2021 20:22:23 GMT
 COPY --chown=www-data:www-datafile:9beb76b36e5a8771e2d474e3ff2f225e755dc51e60553800642ac1aeed4e7df4 in /usr/src/wordpress/ 
-# Wed, 17 Mar 2021 20:22:23 GMT
-COPY file:eb627edb8cc2c73847c3ec2586b852ebd606f4562928fd73ce4c5efc0763085d in /usr/local/bin/ 
-# Wed, 17 Mar 2021 20:22:23 GMT
+# Mon, 22 Mar 2021 19:35:48 GMT
+COPY file:a51824881aca383b635e8ed3ca10d868a6077d73814d1570cfa5d9b630590b9b in /usr/local/bin/ 
+# Mon, 22 Mar 2021 19:35:48 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Mar 2021 20:22:24 GMT
+# Mon, 22 Mar 2021 19:35:48 GMT
 CMD ["php-fpm"]
 ```
 
@@ -169,22 +169,22 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 17 Mar 2021 20:25:31 GMT  
 		Size: 2.3 KB (2273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ac5f120b7f0d4f2007b8d02229a10b9cf6ff45e58c76c08c503744e7c5dbcfb`  
-		Last Modified: Wed, 17 Mar 2021 20:25:31 GMT  
-		Size: 1.6 KB (1634 bytes)  
+	-	`sha256:04ee2eb6ff5dce14d8aa87fa0000ed801c96c9b1dce94b644c1182ec43c196eb`  
+		Last Modified: Mon, 22 Mar 2021 19:38:45 GMT  
+		Size: 1.7 KB (1724 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:5-php7.4-fpm` - linux; arm variant v5
 
 ```console
-$ docker pull wordpress@sha256:de0c5b3f03e8a268b11335911e1b21752745eb384138a505a7d104a28acc0960
+$ docker pull wordpress@sha256:c6eb2786cd3cc67db0beeaf7d3fe1e50571dcb71fc8363a856bb37bde99d42f4
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **161.6 MB (161648593 bytes)**  
+-	Total Size: **161.6 MB (161648686 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7dd9b4b29076f024dbd12d6b449c39d6ed6ba4e172fbfa23d8b457a57e969030`
+-	Image ID: `sha256:59f06ba43309b4d4e89144dc3b9dbed04e4bb0823bf69c7f981193cbf8476ed0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -255,11 +255,11 @@ RUN set -eux; 	version='5.7'; 	sha1='76d1332cfcbc5f8b17151b357999d1f758faf897'; 
 VOLUME [/var/www/html]
 # Wed, 17 Mar 2021 20:28:58 GMT
 COPY --chown=www-data:www-datafile:9beb76b36e5a8771e2d474e3ff2f225e755dc51e60553800642ac1aeed4e7df4 in /usr/src/wordpress/ 
-# Wed, 17 Mar 2021 20:28:59 GMT
-COPY file:eb627edb8cc2c73847c3ec2586b852ebd606f4562928fd73ce4c5efc0763085d in /usr/local/bin/ 
-# Wed, 17 Mar 2021 20:29:02 GMT
+# Mon, 22 Mar 2021 20:29:21 GMT
+COPY file:a51824881aca383b635e8ed3ca10d868a6077d73814d1570cfa5d9b630590b9b in /usr/local/bin/ 
+# Mon, 22 Mar 2021 20:29:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Mar 2021 20:29:04 GMT
+# Mon, 22 Mar 2021 20:29:22 GMT
 CMD ["php-fpm"]
 ```
 
@@ -328,22 +328,22 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 17 Mar 2021 20:31:35 GMT  
 		Size: 2.3 KB (2273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a46a0309b8bc330f19e62036ece9c00cfeec4c1ed6dffc47d90c7f68d0366d5`  
-		Last Modified: Wed, 17 Mar 2021 20:31:35 GMT  
-		Size: 1.6 KB (1632 bytes)  
+	-	`sha256:5b48bc9e93b5f0d7657b1d7cb2212bea364401ae43f6d398f921a2ec9274a9e4`  
+		Last Modified: Mon, 22 Mar 2021 20:31:24 GMT  
+		Size: 1.7 KB (1725 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:5-php7.4-fpm` - linux; arm variant v7
 
 ```console
-$ docker pull wordpress@sha256:758e9d035948cc0df85d6568f3192da9640eb536da0099dc2e3edfde08e5d8b5
+$ docker pull wordpress@sha256:24ec68a52fae979cbba3b6d442a519741555d438d06db2682e8212e78df6138c
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.9 MB (157945227 bytes)**  
+-	Total Size: **157.9 MB (157945315 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef1b77b098431a99fc7d00ad911553e63c4bcc69e1087f286a566f8bf5256148`
+-	Image ID: `sha256:16379b71cbe507fc5777fb27a89f23404f97e401951d0dcf6bc81981e457fefb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -414,11 +414,11 @@ RUN set -eux; 	version='5.7'; 	sha1='76d1332cfcbc5f8b17151b357999d1f758faf897'; 
 VOLUME [/var/www/html]
 # Wed, 17 Mar 2021 20:35:31 GMT
 COPY --chown=www-data:www-datafile:9beb76b36e5a8771e2d474e3ff2f225e755dc51e60553800642ac1aeed4e7df4 in /usr/src/wordpress/ 
-# Wed, 17 Mar 2021 20:35:32 GMT
-COPY file:eb627edb8cc2c73847c3ec2586b852ebd606f4562928fd73ce4c5efc0763085d in /usr/local/bin/ 
-# Wed, 17 Mar 2021 20:35:33 GMT
+# Mon, 22 Mar 2021 20:37:38 GMT
+COPY file:a51824881aca383b635e8ed3ca10d868a6077d73814d1570cfa5d9b630590b9b in /usr/local/bin/ 
+# Mon, 22 Mar 2021 20:37:39 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Mar 2021 20:35:34 GMT
+# Mon, 22 Mar 2021 20:37:40 GMT
 CMD ["php-fpm"]
 ```
 
@@ -487,22 +487,22 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 17 Mar 2021 20:38:42 GMT  
 		Size: 2.3 KB (2275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5bfc0ca9bc1705367eb73f3c34df9793c1c62246a0b52667a30cd5535aa42fc`  
-		Last Modified: Wed, 17 Mar 2021 20:38:43 GMT  
-		Size: 1.6 KB (1633 bytes)  
+	-	`sha256:30fb4b643f3085c393dcb0da42017e776c591e06546769559539899ee5f0e681`  
+		Last Modified: Mon, 22 Mar 2021 20:40:37 GMT  
+		Size: 1.7 KB (1721 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:5-php7.4-fpm` - linux; arm64 variant v8
 
 ```console
-$ docker pull wordpress@sha256:f61b683773ae89190d86ed8c87c6c97b8a7a173bfd5289c858396491218f10e3
+$ docker pull wordpress@sha256:3d24bff8fc6e3b75cee904c54838045d9f02f5ce1ec6c3d72ae195180b72ab33
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **175.3 MB (175275767 bytes)**  
+-	Total Size: **175.3 MB (175275860 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b3d39ef1bad5a267faf35c535d685c53d5c358f3c0c98e66e2e7f12d64ffdf9`
+-	Image ID: `sha256:346c62fda09ed421724d18fef47e54d453c2558531eec252d4ff8536b27ea357`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -573,11 +573,11 @@ RUN set -eux; 	version='5.7'; 	sha1='76d1332cfcbc5f8b17151b357999d1f758faf897'; 
 VOLUME [/var/www/html]
 # Wed, 17 Mar 2021 19:42:38 GMT
 COPY --chown=www-data:www-datafile:9beb76b36e5a8771e2d474e3ff2f225e755dc51e60553800642ac1aeed4e7df4 in /usr/src/wordpress/ 
-# Wed, 17 Mar 2021 19:42:39 GMT
-COPY file:eb627edb8cc2c73847c3ec2586b852ebd606f4562928fd73ce4c5efc0763085d in /usr/local/bin/ 
-# Wed, 17 Mar 2021 19:42:40 GMT
+# Mon, 22 Mar 2021 19:53:09 GMT
+COPY file:a51824881aca383b635e8ed3ca10d868a6077d73814d1570cfa5d9b630590b9b in /usr/local/bin/ 
+# Mon, 22 Mar 2021 19:53:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Mar 2021 19:42:41 GMT
+# Mon, 22 Mar 2021 19:53:11 GMT
 CMD ["php-fpm"]
 ```
 
@@ -646,22 +646,22 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 17 Mar 2021 19:45:51 GMT  
 		Size: 2.3 KB (2274 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b8b595c94e234670ddaac7d59028cf31809653664380802e8d0906f82eb783ec`  
-		Last Modified: Wed, 17 Mar 2021 19:45:53 GMT  
-		Size: 1.6 KB (1635 bytes)  
+	-	`sha256:daf0e3c3b507d031d1ff4578201323121aeb05a8b3cb5742d410900e492abebc`  
+		Last Modified: Mon, 22 Mar 2021 19:56:40 GMT  
+		Size: 1.7 KB (1728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:5-php7.4-fpm` - linux; 386
 
 ```console
-$ docker pull wordpress@sha256:f947e0d0b6f920568bd3920efa5c5a59368682920de86f50d9489c4a9b9c7a65
+$ docker pull wordpress@sha256:8dda550e5d54347ba5c0bfc489da2c7fa1d7e3dfb91875d6cc3721aac15e58be
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **190.1 MB (190101918 bytes)**  
+-	Total Size: **190.1 MB (190102008 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43601f36e0fbe916cc91806415816f3f8b1e0eb872650e273b3b148f5f29e989`
+-	Image ID: `sha256:39448ebe80986e7b11fcf1f0beaebaadf07063def9313ddbb19152109336088d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -732,11 +732,11 @@ RUN set -eux; 	version='5.7'; 	sha1='76d1332cfcbc5f8b17151b357999d1f758faf897'; 
 VOLUME [/var/www/html]
 # Wed, 17 Mar 2021 19:42:26 GMT
 COPY --chown=www-data:www-datafile:9beb76b36e5a8771e2d474e3ff2f225e755dc51e60553800642ac1aeed4e7df4 in /usr/src/wordpress/ 
-# Wed, 17 Mar 2021 19:42:27 GMT
-COPY file:eb627edb8cc2c73847c3ec2586b852ebd606f4562928fd73ce4c5efc0763085d in /usr/local/bin/ 
-# Wed, 17 Mar 2021 19:42:27 GMT
+# Mon, 22 Mar 2021 19:40:06 GMT
+COPY file:a51824881aca383b635e8ed3ca10d868a6077d73814d1570cfa5d9b630590b9b in /usr/local/bin/ 
+# Mon, 22 Mar 2021 19:40:07 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Mar 2021 19:42:27 GMT
+# Mon, 22 Mar 2021 19:40:07 GMT
 CMD ["php-fpm"]
 ```
 
@@ -805,22 +805,22 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 17 Mar 2021 19:47:57 GMT  
 		Size: 2.3 KB (2273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7dd8c34b634bc4a3d9290170478cbd38e1f1a02b67712fbbf0182fc62f6cf05`  
-		Last Modified: Wed, 17 Mar 2021 19:47:57 GMT  
-		Size: 1.6 KB (1637 bytes)  
+	-	`sha256:01d65a4cc673b5813afecc7350d5e3cd8e9a9267d67c0929b7750e441dd8eafc`  
+		Last Modified: Mon, 22 Mar 2021 19:45:35 GMT  
+		Size: 1.7 KB (1727 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:5-php7.4-fpm` - linux; mips64le
 
 ```console
-$ docker pull wordpress@sha256:d00ab127112e015319d5035e4bddfa3c1d5b8195ba36ebf757d03200a53f29bf
+$ docker pull wordpress@sha256:dd3a2fb9298b5caa7280e6f40cc2003b2a4814cfbdb2dd919d9bd7f9599d0027
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.8 MB (165772593 bytes)**  
+-	Total Size: **165.8 MB (165772679 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9672823bfd10b74d78796bdc399ac6b81449d41510e0215af5b94f14d05113e9`
+-	Image ID: `sha256:a6c346fe88c58e3eeef2e5c580d424ad0f12c6737d3d5022520e8434712372c6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -891,11 +891,11 @@ RUN set -eux; 	version='5.7'; 	sha1='76d1332cfcbc5f8b17151b357999d1f758faf897'; 
 VOLUME [/var/www/html]
 # Wed, 17 Mar 2021 20:09:28 GMT
 COPY --chown=www-data:www-datafile:9beb76b36e5a8771e2d474e3ff2f225e755dc51e60553800642ac1aeed4e7df4 in /usr/src/wordpress/ 
-# Wed, 17 Mar 2021 20:09:28 GMT
-COPY file:eb627edb8cc2c73847c3ec2586b852ebd606f4562928fd73ce4c5efc0763085d in /usr/local/bin/ 
-# Wed, 17 Mar 2021 20:09:29 GMT
+# Mon, 22 Mar 2021 19:09:01 GMT
+COPY file:a51824881aca383b635e8ed3ca10d868a6077d73814d1570cfa5d9b630590b9b in /usr/local/bin/ 
+# Mon, 22 Mar 2021 19:09:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Mar 2021 20:09:29 GMT
+# Mon, 22 Mar 2021 19:09:02 GMT
 CMD ["php-fpm"]
 ```
 
@@ -964,22 +964,22 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 17 Mar 2021 20:11:43 GMT  
 		Size: 2.3 KB (2274 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb15681b1ac790c58e39d95b6dadf7e3a6b51895b0660f85495804576a42d860`  
-		Last Modified: Wed, 17 Mar 2021 20:11:44 GMT  
-		Size: 1.6 KB (1637 bytes)  
+	-	`sha256:c01484031a522f3fec80faf22fa6c8ac5632972af6012a1de5725484bd26dd50`  
+		Last Modified: Mon, 22 Mar 2021 19:11:18 GMT  
+		Size: 1.7 KB (1723 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:5-php7.4-fpm` - linux; ppc64le
 
 ```console
-$ docker pull wordpress@sha256:0c02c8c8fc31533311c7615d5c6c016bda15b87bf2b4b1d6285d1060049891a7
+$ docker pull wordpress@sha256:b14743499dc55ae469116395ed0db811aa57090991d9ca4321362028456604e7
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **196.1 MB (196075345 bytes)**  
+-	Total Size: **196.1 MB (196075436 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08dad8f939f7e0e9bc365f245000b3abb686358c858f828477876a075ecc4492`
+-	Image ID: `sha256:6c7f6a96e0991f39267a1a619da8eb4c4d34fcfe2d6abf472817f2539bce989d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1050,11 +1050,11 @@ RUN set -eux; 	version='5.7'; 	sha1='76d1332cfcbc5f8b17151b357999d1f758faf897'; 
 VOLUME [/var/www/html]
 # Wed, 17 Mar 2021 20:25:58 GMT
 COPY --chown=www-data:www-datafile:9beb76b36e5a8771e2d474e3ff2f225e755dc51e60553800642ac1aeed4e7df4 in /usr/src/wordpress/ 
-# Wed, 17 Mar 2021 20:26:07 GMT
-COPY file:eb627edb8cc2c73847c3ec2586b852ebd606f4562928fd73ce4c5efc0763085d in /usr/local/bin/ 
-# Wed, 17 Mar 2021 20:26:19 GMT
+# Mon, 22 Mar 2021 19:26:15 GMT
+COPY file:a51824881aca383b635e8ed3ca10d868a6077d73814d1570cfa5d9b630590b9b in /usr/local/bin/ 
+# Mon, 22 Mar 2021 19:26:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Mar 2021 20:26:32 GMT
+# Mon, 22 Mar 2021 19:26:33 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1123,22 +1123,22 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 17 Mar 2021 20:33:54 GMT  
 		Size: 2.3 KB (2275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6cf3572dc29540fddeffa806c26766fc0300298319ff24950ea183e931c57ab`  
-		Last Modified: Wed, 17 Mar 2021 20:33:54 GMT  
-		Size: 1.6 KB (1635 bytes)  
+	-	`sha256:bc5c857b8d66c4c552fc15c0127750fe898e3cfc2e4a3eca282b0b9d3bd350b6`  
+		Last Modified: Mon, 22 Mar 2021 19:34:01 GMT  
+		Size: 1.7 KB (1726 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:5-php7.4-fpm` - linux; s390x
 
 ```console
-$ docker pull wordpress@sha256:8cc8ddf16d43082abaf055be865e8014dc9e642280408cc1818efe607a19f9a6
+$ docker pull wordpress@sha256:5380fa1be8bfb1837bc385e55b2758497b95f4e8a8cb2a54f105c15eb7af2af2
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **169.0 MB (168959386 bytes)**  
+-	Total Size: **169.0 MB (168959476 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98ce40d89470d7befb940e8245a9e0069ecee70bf08cd27c1d5b268a0b901414`
+-	Image ID: `sha256:adc9811be6014e47bf590488367ed3eb2ed9b58558e4447ceb148da7cc148603`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1209,11 +1209,11 @@ RUN set -eux; 	version='5.7'; 	sha1='76d1332cfcbc5f8b17151b357999d1f758faf897'; 
 VOLUME [/var/www/html]
 # Wed, 17 Mar 2021 19:44:44 GMT
 COPY --chown=www-data:www-datafile:9beb76b36e5a8771e2d474e3ff2f225e755dc51e60553800642ac1aeed4e7df4 in /usr/src/wordpress/ 
-# Wed, 17 Mar 2021 19:44:45 GMT
-COPY file:eb627edb8cc2c73847c3ec2586b852ebd606f4562928fd73ce4c5efc0763085d in /usr/local/bin/ 
-# Wed, 17 Mar 2021 19:44:45 GMT
+# Mon, 22 Mar 2021 19:43:43 GMT
+COPY file:a51824881aca383b635e8ed3ca10d868a6077d73814d1570cfa5d9b630590b9b in /usr/local/bin/ 
+# Mon, 22 Mar 2021 19:43:43 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 17 Mar 2021 19:44:46 GMT
+# Mon, 22 Mar 2021 19:43:44 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1282,7 +1282,7 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 17 Mar 2021 19:47:31 GMT  
 		Size: 2.3 KB (2270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5eab2bbda0b1ae98b6f32b62d307701e79653854d770dab10c72f3fb053e3fd`  
-		Last Modified: Wed, 17 Mar 2021 19:47:31 GMT  
-		Size: 1.6 KB (1632 bytes)  
+	-	`sha256:103fd95c3533da14c596900a2e8767fcaa8abab9e3a6cfdbd05ec33fc57cb99e`  
+		Last Modified: Mon, 22 Mar 2021 19:46:23 GMT  
+		Size: 1.7 KB (1722 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
