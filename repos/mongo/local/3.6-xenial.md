@@ -1,10 +1,10 @@
-# `mongo:3.6.22-xenial`
+# `mongo:3.6.23-xenial`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b38f112c708c7e021e6df678f70692f0f4bd12de810acea548afa2abfc907397`
-- Created: `2021-02-17T00:17:05.364326275Z`
-- Virtual Size: ~ 447.17 Mb  
+- Image ID: `sha256:f7a0031d25b85ff42832fc287e3370643e3e1166cf089082e2f650132612d0d4`
+- Created: `2021-03-22T19:25:01.093606985Z`
+- Virtual Size: ~ 450.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=3.6`
-  - `MONGO_VERSION=3.6.22`
+  - `MONGO_VERSION=3.6.23`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -218,11 +218,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.6-8ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-8ubuntu0.2.debian.tar.bz2' bzip2_1.0.6-8ubuntu0.2.debian.tar.bz2 61599 SHA512:3c9ee464d8303a7c2c7a6dbaffd4bdd88752a65f1a2f968f8c4ed8084d732fb0c72614e5a88f4b9ee43228befb07ec5c283ab1e5995d38f7cd8239eab9c5101b
 ```
 
-### `dpkg` source package: `ca-certificates=20201027ubuntu0.16.04.1`
+### `dpkg` source package: `ca-certificates=20210119~16.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20201027ubuntu0.16.04.1`
+- `ca-certificates=20210119~16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -230,9 +230,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20210119~16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20210119~16.04.1.dsc' ca-certificates_20210119~16.04.1.dsc 1969 SHA512:06fad3f3dc9b7e540b55b5f1f373809a75bd9ae288bdf191f34f0372e95e512ce1d01672050d70876c562b7f0487ac3a927d7b814b4459ef554d9bd1ae02c791
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20210119~16.04.1.tar.xz' ca-certificates_20210119~16.04.1.tar.xz 231888 SHA512:5318b1b1bd43ef031d6430602a16bec731cd09b3da65aff6a5c26e8a2d4cb04d2f23e5fd2d099d698a9535364fd6daf58e24532c44758093a1c46112cd0de837
+```
 
 ### `dpkg` source package: `cdebconf=0.198ubuntu1`
 
@@ -965,15 +969,15 @@ $ apt-get source -qq --print-uris mawk=1.3.3-17ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3-17ubuntu2.diff.gz' mawk_1.3.3-17ubuntu2.diff.gz 63882 SHA256:670103046767474be29e80f2143dc67e3d0b958972f5942c3df94883f978eded
 ```
 
-### `dpkg` source package: `mongodb-org=3.6.22`
+### `dpkg` source package: `mongodb-org=3.6.23`
 
 Binary Packages:
 
-- `mongodb-org=3.6.22`
-- `mongodb-org-mongos=3.6.22`
-- `mongodb-org-server=3.6.22`
-- `mongodb-org-shell=3.6.22`
-- `mongodb-org-tools=3.6.22`
+- `mongodb-org=3.6.23`
+- `mongodb-org-mongos=3.6.23`
+- `mongodb-org-server=3.6.23`
+- `mongodb-org-shell=3.6.23`
+- `mongodb-org-tools=3.6.23`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1027,20 +1031,25 @@ $ apt-get source -qq --print-uris numactl=2.0.11-1ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/numactl/numactl_2.0.11-1ubuntu1.1.diff.gz' numactl_2.0.11-1ubuntu1.1.diff.gz 7106 SHA512:0978c76dcf4baae21e12fbf02e9cda341c9d73199b912b546b08a3f836f1ec1786e3a7ee78ae158ba339b2f6fa521660b32fad9972ed0fd8e09b93966051a1c9
 ```
 
-### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.18`
+### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.19`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.18`
-- `openssl=1.0.2g-1ubuntu4.18`
+- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.19`
+- `openssl=1.0.2g-1ubuntu4.19`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.19
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.19.dsc' openssl_1.0.2g-1ubuntu4.19.dsc 2453 SHA512:7c0d74264a6d1f43f865f1b240fc7d7231bf403fb4364c55188bd858474b97ffd68f731e006fa1f54271f2c1daf859d53e55cd138e56073fddaa0f32ae277b78
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA512:4d96b6c8a232203483d6e8bee81da01ba10977bfbac92f25304a36dec9ea584b7ef917bc45e097cc7dbe681d71a4570d649c22244c178393ae91fab48323f735
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.19.debian.tar.xz' openssl_1.0.2g-1ubuntu4.19.debian.tar.xz 142620 SHA512:fc0f262ad17581ddcc8758747d874d884c8c7f11dea221ba70b1cb317e3168a00c25f905d4d7a4be3c019df2d717f2595af7cd8fe94f5d3e521f5544e2ec6a88
+```
 
 ### `dpkg` source package: `pam=1.1.8-3.2ubuntu2.3`
 
