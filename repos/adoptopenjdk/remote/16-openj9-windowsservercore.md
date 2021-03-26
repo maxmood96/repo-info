@@ -1,4 +1,4 @@
-## `adoptopenjdk:openj9-windowsservercore`
+## `adoptopenjdk:16-openj9-windowsservercore`
 
 ```console
 $ docker pull adoptopenjdk@sha256:1625753ce4fc1aea13304e7e38451f5cd60ac39f079be2539ea05bb11368878c
@@ -9,7 +9,7 @@ $ docker pull adoptopenjdk@sha256:1625753ce4fc1aea13304e7e38451f5cd60ac39f079be2
 	-	windows version 10.0.17763.1817; amd64
 	-	windows version 10.0.14393.4283; amd64
 
-### `adoptopenjdk:openj9-windowsservercore` - windows version 10.0.17763.1817; amd64
+### `adoptopenjdk:16-openj9-windowsservercore` - windows version 10.0.17763.1817; amd64
 
 ```console
 $ docker pull adoptopenjdk@sha256:1dac1d4ffc59776b653b8eb79b78253cf3b1f5a2e6ca0911c612c217b1ac0d92
@@ -68,7 +68,7 @@ CMD ["jshell"]
 		Size: 1.4 KB (1411 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `adoptopenjdk:openj9-windowsservercore` - windows version 10.0.14393.4283; amd64
+### `adoptopenjdk:16-openj9-windowsservercore` - windows version 10.0.14393.4283; amd64
 
 ```console
 $ docker pull adoptopenjdk@sha256:d5d157ac1495a36ddef667ba8a32783da4e5b17441f7df115435310f0a211c6e

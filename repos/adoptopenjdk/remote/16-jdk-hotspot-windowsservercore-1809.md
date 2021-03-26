@@ -1,4 +1,4 @@
-## `adoptopenjdk:hotspot-windowsservercore-1809`
+## `adoptopenjdk:16-jdk-hotspot-windowsservercore-1809`
 
 ```console
 $ docker pull adoptopenjdk@sha256:e5e1ed2719d314b85168a5791a8399bedf9aadf1146c03dfc9d34b5fedcf5f28
@@ -8,7 +8,7 @@ $ docker pull adoptopenjdk@sha256:e5e1ed2719d314b85168a5791a8399bedf9aadf1146c03
 -	Platforms:
 	-	windows version 10.0.17763.1817; amd64
 
-### `adoptopenjdk:hotspot-windowsservercore-1809` - windows version 10.0.17763.1817; amd64
+### `adoptopenjdk:16-jdk-hotspot-windowsservercore-1809` - windows version 10.0.17763.1817; amd64
 
 ```console
 $ docker pull adoptopenjdk@sha256:ce27df6482af72e3d499b09164c4f737804ce75cbc40e8dba6041766af90987e

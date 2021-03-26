@@ -1,4 +1,4 @@
-## `adoptopenjdk:hotspot-windowsservercore`
+## `adoptopenjdk:16_36-jdk-hotspot`
 
 ```console
 $ docker pull adoptopenjdk@sha256:8898f2ad3006eb44f50a5be87a9f3c5b5ff1c6b90219e3cc99374748ef598d7e
@@ -9,7 +9,7 @@ $ docker pull adoptopenjdk@sha256:8898f2ad3006eb44f50a5be87a9f3c5b5ff1c6b90219e3
 	-	windows version 10.0.17763.1817; amd64
 	-	windows version 10.0.14393.4283; amd64
 
-### `adoptopenjdk:hotspot-windowsservercore` - windows version 10.0.17763.1817; amd64
+### `adoptopenjdk:16_36-jdk-hotspot` - windows version 10.0.17763.1817; amd64
 
 ```console
 $ docker pull adoptopenjdk@sha256:ce27df6482af72e3d499b09164c4f737804ce75cbc40e8dba6041766af90987e
@@ -62,7 +62,7 @@ CMD ["jshell"]
 		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `adoptopenjdk:hotspot-windowsservercore` - windows version 10.0.14393.4283; amd64
+### `adoptopenjdk:16_36-jdk-hotspot` - windows version 10.0.14393.4283; amd64
 
 ```console
 $ docker pull adoptopenjdk@sha256:9ccdf5ba88a103467328ac90eea4da21bc89833ce456f80a2d712ed368c4cd03

@@ -1,4 +1,4 @@
-## `adoptopenjdk:openj9-windowsservercore-ltsc2016`
+## `adoptopenjdk:16-openj9-windowsservercore-ltsc2016`
 
 ```console
 $ docker pull adoptopenjdk@sha256:570f20f6880ad224922de179056b2158259ade1117b1fa9858631dd09ac8f145
@@ -8,7 +8,7 @@ $ docker pull adoptopenjdk@sha256:570f20f6880ad224922de179056b2158259ade1117b1fa
 -	Platforms:
 	-	windows version 10.0.14393.4283; amd64
 
-### `adoptopenjdk:openj9-windowsservercore-ltsc2016` - windows version 10.0.14393.4283; amd64
+### `adoptopenjdk:16-openj9-windowsservercore-ltsc2016` - windows version 10.0.14393.4283; amd64
 
 ```console
 $ docker pull adoptopenjdk@sha256:d5d157ac1495a36ddef667ba8a32783da4e5b17441f7df115435310f0a211c6e
