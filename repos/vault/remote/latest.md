@@ -1,7 +1,7 @@
 ## `vault:latest`
 
 ```console
-$ docker pull vault@sha256:11d81e5c7e9129e1189abe8dabeb64b4a4302e3e90da1cf0e20e5c4e1498ccbd
+$ docker pull vault@sha256:636539e5ab2dd0942061faeb232452774103a25e82bca969cb37945616aeae53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -146,67 +146,67 @@ CMD ["server" "-dev"]
 ### `vault:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull vault@sha256:2ab14caee773684f849e647a99d2d44bf264e3e28022bc9e45256d29ec11843d
+$ docker pull vault@sha256:7bb03087f1872bba59add852953ac3e35a54d63798a5a42d53cc147d335150d4
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.5 MB (68535379 bytes)**  
+-	Total Size: **68.5 MB (68535695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:470459b9ff4cf1eb9b56dbd680c916871a13c5e3b80d641da970c9b0b45c48de`
+-	Image ID: `sha256:ef7c6e9941803130f0b68e0749e872a59bd13cd4c57b0aae51a46a532a37a3d2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["server","-dev"]`
 
 ```dockerfile
-# Wed, 17 Feb 2021 20:39:29 GMT
-ADD file:3bf1497bd250cf7c73c12231dc4ebe3a3a67f2cd99e35bce47ef6674683aeb1d in / 
-# Wed, 17 Feb 2021 20:39:30 GMT
+# Thu, 25 Mar 2021 22:40:10 GMT
+ADD file:8d7431f7e3e42b162a1626e7abf4ef7605146671dccc753d490de6b7fe429261 in / 
+# Thu, 25 Mar 2021 22:40:23 GMT
 CMD ["/bin/sh"]
-# Thu, 25 Mar 2021 00:53:28 GMT
+# Fri, 26 Mar 2021 08:13:10 GMT
 ARG VAULT_VERSION=1.7.0
-# Thu, 25 Mar 2021 00:53:31 GMT
+# Fri, 26 Mar 2021 08:13:13 GMT
 # ARGS: VAULT_VERSION=1.7.0
 RUN addgroup vault &&     adduser -S -G vault vault
-# Thu, 25 Mar 2021 00:53:40 GMT
+# Fri, 26 Mar 2021 08:13:22 GMT
 # ARGS: VAULT_VERSION=1.7.0
 RUN set -eux;     apk add --no-cache ca-certificates gnupg openssl libcap su-exec dumb-init tzdata &&     apkArch="$(apk --print-arch)";     case "$apkArch" in         armhf) ARCH='arm' ;;         aarch64) ARCH='arm64' ;;         x86_64) ARCH='amd64' ;;         x86) ARCH='386' ;;         *) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;;     esac &&     VAULT_GPGKEY=91A6E7F85D05C65630BEF18951852D87348FFC4C;     found='';     for server in         hkp://p80.pool.sks-keyservers.net:80         hkp://keyserver.ubuntu.com:80         hkp://pgp.mit.edu:80     ; do         echo "Fetching GPG key $VAULT_GPGKEY from $server";         gpg --batch --keyserver "$server" --recv-keys "$VAULT_GPGKEY" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch GPG key $VAULT_GPGKEY" && exit 1;     mkdir -p /tmp/build &&     cd /tmp/build &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_linux_${ARCH}.zip &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify vault_${VAULT_VERSION}_SHA256SUMS.sig vault_${VAULT_VERSION}_SHA256SUMS &&     grep vault_${VAULT_VERSION}_linux_${ARCH}.zip vault_${VAULT_VERSION}_SHA256SUMS | sha256sum -c &&     unzip -d /bin vault_${VAULT_VERSION}_linux_${ARCH}.zip &&     cd /tmp &&     rm -rf /tmp/build &&     gpgconf --kill dirmngr &&     gpgconf --kill gpg-agent &&     apk del gnupg openssl &&     rm -rf /root/.gnupg
-# Thu, 25 Mar 2021 00:53:43 GMT
+# Fri, 26 Mar 2021 08:13:25 GMT
 # ARGS: VAULT_VERSION=1.7.0
 RUN mkdir -p /vault/logs &&     mkdir -p /vault/file &&     mkdir -p /vault/config &&     chown -R vault:vault /vault
-# Thu, 25 Mar 2021 00:53:44 GMT
+# Fri, 26 Mar 2021 08:13:27 GMT
 VOLUME [/vault/logs]
-# Thu, 25 Mar 2021 00:53:45 GMT
+# Fri, 26 Mar 2021 08:13:28 GMT
 VOLUME [/vault/file]
-# Thu, 25 Mar 2021 00:53:48 GMT
+# Fri, 26 Mar 2021 08:13:30 GMT
 EXPOSE 8200
-# Thu, 25 Mar 2021 00:53:49 GMT
+# Fri, 26 Mar 2021 08:13:31 GMT
 COPY file:a1e68ac70727f49824592e948e9a677097c8d3752a047b468122ba433b453fc4 in /usr/local/bin/docker-entrypoint.sh 
-# Thu, 25 Mar 2021 00:53:49 GMT
+# Fri, 26 Mar 2021 08:13:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 25 Mar 2021 00:53:50 GMT
+# Fri, 26 Mar 2021 08:13:33 GMT
 CMD ["server" "-dev"]
 ```
 
 -	Layers:
-	-	`sha256:069a56d6d07f6b186fbb82e4486616b9be9a37ce32a63013af6cddcb65898182`  
-		Last Modified: Wed, 17 Feb 2021 20:40:04 GMT  
-		Size: 2.7 MB (2711572 bytes)  
+	-	`sha256:5ceb5101e3b0d54efb5f18318982508a04b181b4d5ae52b096dd35dea3a006cc`  
+		Last Modified: Thu, 25 Mar 2021 22:44:41 GMT  
+		Size: 2.7 MB (2711898 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b8c6fecc92e98ca73f9db0eeea77d62602ec536b4741801da88aaf4f0ec934b0`  
-		Last Modified: Thu, 25 Mar 2021 00:55:02 GMT  
-		Size: 1.3 KB (1257 bytes)  
+	-	`sha256:532760a713fdcc47b0750cf149032179ac109897d27a4a7387254e873782ef5a`  
+		Last Modified: Fri, 26 Mar 2021 08:16:21 GMT  
+		Size: 1.3 KB (1256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf8cc88cb440a933bf9fdff5b23f090379300b5798a0a66609e77b0150615586`  
-		Last Modified: Thu, 25 Mar 2021 00:55:16 GMT  
-		Size: 65.8 MB (65820540 bytes)  
+	-	`sha256:2da9e5d008656a72a376d31d7c1cf4c750c1d20fdc9725470e92748f3d902aeb`  
+		Last Modified: Fri, 26 Mar 2021 08:16:38 GMT  
+		Size: 65.8 MB (65820533 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e539ef663c7cf1331080cdbd98b7082c0b81aa29fa7f9332dfff936cb59c766a`  
-		Last Modified: Thu, 25 Mar 2021 00:55:02 GMT  
-		Size: 190.0 B  
+	-	`sha256:6121bcad7cba7d37518917de5d2e4bb729cc62708b2c847ea1df48ccb757483f`  
+		Last Modified: Fri, 26 Mar 2021 08:16:21 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0882064baebc83a5e57b17aadbf823cfba23d6ba293e4571fb8340b0a67b4a9d`  
-		Last Modified: Thu, 25 Mar 2021 00:55:02 GMT  
-		Size: 1.8 KB (1820 bytes)  
+	-	`sha256:8253019ed837881d065d263f197f95708f7073be3629b60a1e367d07f44a853c`  
+		Last Modified: Fri, 26 Mar 2021 08:16:21 GMT  
+		Size: 1.8 KB (1821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `vault:latest` - linux; 386
