@@ -1,7 +1,7 @@
 ## `ubuntu:xenial`
 
 ```console
-$ docker pull ubuntu@sha256:e74994b7a9ec8e2129cfc6a871f3236940006ed31091de355578492ed140a39c
+$ docker pull ubuntu@sha256:bb84bbf2ff36d46acaf0bb0c6bcb33dae64cd93cba8652d74c9aaf438fada438
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,26 +16,26 @@ $ docker pull ubuntu@sha256:e74994b7a9ec8e2129cfc6a871f3236940006ed31091de355578
 ### `ubuntu:xenial` - linux; amd64
 
 ```console
-$ docker pull ubuntu@sha256:edf232ee7dc18c57c063bc83533ef2c03c6dfae55a0124f7d372aed51cd1d9c8
+$ docker pull ubuntu@sha256:8cfb8f14fbeb9d44174209ccda485e0bfacc910d5624faac8cc876f5c1376781
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **46.0 MB (45963900 bytes)**  
+-	Total Size: **46.0 MB (45963892 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8185511cd5ad68f14aee2bac83a449a6eea2be06f0a4715b008cfe19f07a64f7`
+-	Image ID: `sha256:f6f49faac5cf9e9589f3c34821ba2d36fd093e7eb52d5b6cd000ea3dae3698df`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 21 Jan 2021 03:39:31 GMT
+# Thu, 25 Mar 2021 22:33:52 GMT
 ADD file:925571658dd8453e5c80d862f5791d6b26b3c2a8688937b11741f2f2c5cdbfd7 in / 
-# Thu, 21 Jan 2021 03:39:32 GMT
+# Thu, 25 Mar 2021 22:33:53 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 21 Jan 2021 03:39:34 GMT
+# Thu, 25 Mar 2021 22:33:54 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 21 Jan 2021 03:39:35 GMT
+# Thu, 25 Mar 2021 22:33:55 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 21 Jan 2021 03:39:36 GMT
+# Thu, 25 Mar 2021 22:33:55 GMT
 CMD ["/bin/bash"]
 ```
 
@@ -44,17 +44,17 @@ CMD ["/bin/bash"]
 		Last Modified: Mon, 18 Jan 2021 19:38:08 GMT  
 		Size: 46.0 MB (45962352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5dfa26c6b9c9d1ccbcb1eaa65befa376805d9324174ac580ca76fdedc3575f54`  
-		Last Modified: Thu, 21 Jan 2021 03:41:24 GMT  
-		Size: 852.0 B  
+	-	`sha256:c1de0f9cdfc1f9f595acd2ea8724ea92a509d64a6936f0e645c65b504e7e4bc6`  
+		Last Modified: Thu, 25 Mar 2021 22:36:02 GMT  
+		Size: 846.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ba7bf18aa406cb7dc372ac732de222b04d1c824ff1705d8900831c3d1361ff5`  
-		Last Modified: Thu, 21 Jan 2021 03:41:24 GMT  
-		Size: 527.0 B  
+	-	`sha256:c8ee6ca703b866ac2b74b6129d2db331936292f899e8e3a794474fdf81343605`  
+		Last Modified: Thu, 25 Mar 2021 22:36:02 GMT  
+		Size: 526.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c6ec688ebe374ea7d89ce967576d221a177ebd2c02ca9f053197f954102e30b`  
-		Last Modified: Thu, 21 Jan 2021 03:41:24 GMT  
-		Size: 169.0 B  
+	-	`sha256:b39e2761d3d4971e78914857af4c6bd9989873b53426cf2fef3e76983b166fa2`  
+		Last Modified: Thu, 25 Mar 2021 22:36:02 GMT  
+		Size: 168.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:xenial` - linux; arm variant v7
@@ -148,26 +148,26 @@ CMD ["/bin/bash"]
 ### `ubuntu:xenial` - linux; 386
 
 ```console
-$ docker pull ubuntu@sha256:0eb12402800064cd8f7ae75e9c4ce1a1b5d6b9582bbaf20c539ae19652cc46ec
+$ docker pull ubuntu@sha256:3be32f255b275654cf9bdb1305fa833e553b99ef33219c7ac7fb5d98400c0b45
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.4 MB (45407104 bytes)**  
+-	Total Size: **45.4 MB (45407093 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:641bd255c84e13145408a312f5878975d09d64a1da149a4974aec27ce7fbe75c`
+-	Image ID: `sha256:a6676c94cbb210d2178482aa29fe347f0d5131efd6bbb5602c40a6a6b401d892`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 21 Jan 2021 03:44:39 GMT
+# Thu, 25 Mar 2021 22:57:31 GMT
 ADD file:f0259b34ff9566a47759b946075a90b425b35071a6fcf4181253856267c482d1 in / 
-# Thu, 21 Jan 2021 03:44:40 GMT
+# Thu, 25 Mar 2021 22:57:32 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 21 Jan 2021 03:44:41 GMT
+# Thu, 25 Mar 2021 22:57:33 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 21 Jan 2021 03:44:41 GMT
+# Thu, 25 Mar 2021 22:57:34 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 21 Jan 2021 03:44:42 GMT
+# Thu, 25 Mar 2021 22:57:34 GMT
 CMD ["/bin/bash"]
 ```
 
@@ -176,17 +176,17 @@ CMD ["/bin/bash"]
 		Last Modified: Mon, 18 Jan 2021 20:06:08 GMT  
 		Size: 45.4 MB (45405564 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c43cb87a8c1bc5cbd0f326895a8822f29a84f8d2c44274f27f88103b5991a9f`  
-		Last Modified: Thu, 21 Jan 2021 03:45:16 GMT  
-		Size: 854.0 B  
+	-	`sha256:b36f3f13cfaeb97fa7998706961af96bdaad84e1cfbb3c6f931667c8a2867bda`  
+		Last Modified: Thu, 25 Mar 2021 22:58:57 GMT  
+		Size: 845.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1055fac63ec310fd3d5f85f15fa5fd4d8cf42f416af240cfb7c915aad0b4cc12`  
-		Last Modified: Thu, 21 Jan 2021 03:45:16 GMT  
+	-	`sha256:50c74bdb75c5de991d6238cacb4114722ebd5f678b86bea9455d2b34a954eb68`  
+		Last Modified: Thu, 25 Mar 2021 22:58:57 GMT  
 		Size: 515.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6cc5eaa9ba060369cb187a024e6a86791164acd2f430114d9282f03dd5edcc1`  
-		Last Modified: Thu, 21 Jan 2021 03:45:16 GMT  
-		Size: 171.0 B  
+	-	`sha256:d0f6c5932ac69562c520710b127472d7cebdabe3134cb709da72d625dc260970`  
+		Last Modified: Thu, 25 Mar 2021 22:58:57 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:xenial` - linux; ppc64le
