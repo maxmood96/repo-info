@@ -1684,21 +1684,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1j-1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1j-1.dsc' openssl_1.1.1j-1.dsc 2446 SHA256:6b5054e975a3515acbf6cabf8da4647992156add5091e805a42df13df0d96bbc
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1j.orig.tar.gz' openssl_1.1.1j.orig.tar.gz 9823161 SHA256:aaf2fcb575cdf6491b98ab4829abf78a3dec8402b8b81efc8f23c00d443981bf
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1j.orig.tar.gz.asc' openssl_1.1.1j.orig.tar.gz.asc 488 SHA256:02571ae2fb2de5a1bc613106caabb1c4007b5268312aba221ed873c365fd9c99
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1j-1.debian.tar.xz' openssl_1.1.1j-1.debian.tar.xz 84524 SHA256:b3abac4c4bc7e67d961dc86b2d5b59187f47c534402d7bca9286a3ba411d0e3e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/1.1.1j-1/
 
-- https://sources.debian.net/src/openssl/1.1.1j-1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.1j-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.1j-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.22-1`
 
