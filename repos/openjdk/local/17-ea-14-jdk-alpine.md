@@ -1,17 +1,17 @@
-# `openjdk:17-ea-10-jdk-alpine3.13`
+# `openjdk:17-ea-14-jdk-alpine3.13`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a191e3cf469f43c5f71c1af933bd3d337ab5eec50afd767453b120fb975970bc`
-- Created: `2021-03-09T20:58:11.634617276Z`
-- Virtual Size: ~ 325.65 Mb  
+- Image ID: `sha256:030f5b486428f7e23aba8606fd020a2907ff3d1f7cfdb27c4d29052c66d1428b`
+- Created: `2021-03-26T05:43:51.099004334Z`
+- Virtual Size: ~ 325.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
 - Environment:
   - `PATH=/opt/openjdk-17/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/openjdk-17`
-  - `JAVA_VERSION=17-ea+10`
+  - `JAVA_VERSION=17-ea+14`
 
 ## `apk` (`.apk`-based packages)
 
@@ -154,16 +154,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1j-r0 description:
+libcrypto1.1-1.1.1k-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1j-r0 webpage:
+libcrypto1.1-1.1.1k-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1j-r0 installed size:
+libcrypto1.1-1.1.1k-r0 installed size:
 2768896
 
-libcrypto1.1-1.1.1j-r0 license:
+libcrypto1.1-1.1.1k-r0 license:
 OpenSSL
 
 ```
@@ -188,16 +188,16 @@ MIT
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1j-r0 description:
+libssl1.1-1.1.1k-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1j-r0 webpage:
+libssl1.1-1.1.1k-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1j-r0 installed size:
+libssl1.1-1.1.1k-r0 installed size:
 540672
 
-libssl1.1-1.1.1j-r0 license:
+libssl1.1-1.1.1k-r0 license:
 OpenSSL
 
 ```
