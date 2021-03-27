@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:710282b3a97485839b71b2aef95543e930a98dcd8340dd036922b38e9c42fb61`
-- Created: `2021-03-18T19:23:48.446224862Z`
+- Image ID: `sha256:cf9eeb43457d3dc8aec58bd9484ddb0296b2fd08a3a32173c96e30b45fac8ab0`
+- Created: `2021-03-27T00:09:54.150736534Z`
 - Virtual Size: ~ 173.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -162,19 +162,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=10.3+deb10u8
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_10.3+deb10u8.dsc' base-files_10.3+deb10u8.dsc 1103 SHA256:1fdc1c226eb31801e7834f0cf4496a9274c13f51703269676bc51711fbd9cf26
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_10.3+deb10u8.tar.xz' base-files_10.3+deb10u8.tar.xz 65440 SHA256:0e63c5608844bb80ef6b0a0e09e039379f12e52b54029f246560322c7e4e3cb1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/10.3+deb10u8/
 
-- https://sources.debian.net/src/base-files/10.3+deb10u8/ (for browsing the source)
-- https://sources.debian.net/src/base-files/10.3+deb10u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/10.3+deb10u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.46`
 
@@ -1122,9 +1116,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libzstd=1.3.8+dfsg-3+deb10u2
-'http://security.debian.org/debian-security/pool/updates/main/libz/libzstd/libzstd_1.3.8+dfsg-3+deb10u2.dsc' libzstd_1.3.8+dfsg-3+deb10u2.dsc 1947 SHA256:572fae1c7dc9bace3b9f7fcdeabf30dd1d00d0462e319ccec7b58b0adbf7dc85
-'http://security.debian.org/debian-security/pool/updates/main/libz/libzstd/libzstd_1.3.8+dfsg.orig.tar.xz' libzstd_1.3.8+dfsg.orig.tar.xz 1299276 SHA256:03851f2c26ffbf1d43633df3f98966f3c62e698e91ef4dc90523915bc934e5f7
-'http://security.debian.org/debian-security/pool/updates/main/libz/libzstd/libzstd_1.3.8+dfsg-3+deb10u2.debian.tar.xz' libzstd_1.3.8+dfsg-3+deb10u2.debian.tar.xz 11648 SHA256:1f107f6cdc3bf46fb2aebf9c5c997ed2a125ac2fb1d28e939da857d5b061079e
+'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.3.8+dfsg-3+deb10u2.dsc' libzstd_1.3.8+dfsg-3+deb10u2.dsc 1947 SHA256:572fae1c7dc9bace3b9f7fcdeabf30dd1d00d0462e319ccec7b58b0adbf7dc85
+'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.3.8+dfsg.orig.tar.xz' libzstd_1.3.8+dfsg.orig.tar.xz 1299276 SHA256:03851f2c26ffbf1d43633df3f98966f3c62e698e91ef4dc90523915bc934e5f7
+'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.3.8+dfsg-3+deb10u2.debian.tar.xz' libzstd_1.3.8+dfsg-3+deb10u2.debian.tar.xz 11648 SHA256:1f107f6cdc3bf46fb2aebf9c5c997ed2a125ac2fb1d28e939da857d5b061079e
 ```
 
 Other potentially useful URLs:
@@ -1480,20 +1474,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=241-7~deb10u6
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_241-7~deb10u6.dsc' systemd_241-7~deb10u6.dsc 4946 SHA256:9e8d081a885b06b58a6b328866ec2c1ded20a7342e0ebd7798a57c6612d8d1f8
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_241.orig.tar.gz' systemd_241.orig.tar.gz 7640538 SHA256:b2561a8e1d10a2c248253f0dda31a85dd6d69f2b54177de55e02cd1d2778316e
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_241-7~deb10u6.debian.tar.xz' systemd_241-7~deb10u6.debian.tar.xz 180732 SHA256:588d6e3bbf295ddcf948e36103693ef6ebf36d2ee51d55457343815d83395bf0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/241-7~deb10u6/
 
-- https://sources.debian.net/src/systemd/241-7~deb10u6/ (for browsing the source)
-- https://sources.debian.net/src/systemd/241-7~deb10u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/241-7~deb10u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.93-8`
 
