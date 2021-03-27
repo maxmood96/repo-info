@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9cc28b9bd9ab4d9f55a8e84a23d92e1f7724532dc6dfd1aba164e5f4783afad3`
-- Created: `2021-03-06T07:31:53.554723306Z`
+- Image ID: `sha256:3547c5f087a61cfde7927c87c52a4c5d071419dea63f34506bc8f0dffa095dce`
+- Created: `2021-03-26T07:49:38.421700005Z`
 - Virtual Size: ~ 339.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -585,12 +585,12 @@ $ apt-get source -qq --print-uris gdbm=1.8.3-13.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.8.3-13.1.debian.tar.xz' gdbm_1.8.3-13.1.debian.tar.xz 14748 SHA256:251401e1f5210226f384e936b1b7ea1df40119a918d9f3dbf48b2e51d4df8983
 ```
 
-### `dpkg` source package: `git=1:2.7.4-0ubuntu1.9`
+### `dpkg` source package: `git=1:2.7.4-0ubuntu1.10`
 
 Binary Packages:
 
-- `git=1:2.7.4-0ubuntu1.9`
-- `git-man=1:2.7.4-0ubuntu1.9`
+- `git=1:2.7.4-0ubuntu1.10`
+- `git-man=1:2.7.4-0ubuntu1.10`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -613,9 +613,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.7.4-0ubuntu1.10
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.10.dsc' git_2.7.4-0ubuntu1.10.dsc 2901 SHA512:43f635371d766113c10145ef9fee9156a4d2024b1ce8aac3cea8ee283b03712439d1a86950e3266884c4a789efff0fae2395cc1c25466684ff79d6deec7b8463
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4.orig.tar.xz' git_2.7.4.orig.tar.xz 3909636 SHA512:82a646140834e909bf1748a017e86f37f0711c759fe0a6ad03529beb57c79742cb7bf77c2dba29ccd84fcf3d5f18ad9c85c00f002d3b257be42e058750423da7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.10.debian.tar.xz' git_2.7.4-0ubuntu1.10.debian.tar.xz 574868 SHA512:0d4ea9e95e1f4673dfe1d4e1f71737f6481f4a5354f1bfdc497958ec644506d7e8d66ea78b5b1cbea09a8185c86222084eb7c79df9eaa998ff20d0beabc2ee4a
+```
 
 ### `dpkg` source package: `glibc=2.23-0ubuntu11.2`
 
@@ -1169,20 +1174,25 @@ $ apt-get source -qq --print-uris libusb=2:0.1.12-28
 'http://archive.ubuntu.com/ubuntu/pool/main/libu/libusb/libusb_0.1.12-28.debian.tar.xz' libusb_0.1.12-28.debian.tar.xz 21524 SHA256:eaf2314902b0bb9de3e1fa8c9abfcecea7b78c9824048016beaca34f7cc4351b
 ```
 
-### `dpkg` source package: `linux=4.4.0-203.235`
+### `dpkg` source package: `linux=4.4.0-206.238`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-203.235`
+- `linux-libc-dev:amd64=4.4.0-206.238`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 - `redpine-signals`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-206.238
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-206.238.dsc' linux_4.4.0-206.238.dsc 11941 SHA512:97dfb8bc303fe9ba2ba6909f356f77ecc3c06e3fc781b301b961d209e3d2c8c7fefe70a73aa406fecf4fed71e1c94fb2f68134ff33db68e4c293434b7785c4e3
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA512:28ef89b62f663f2d90b58274799b7ebeff04699f08d0b83f650b0de179d4ef354450c81ecda07522b493c43d5eb2d530fa0f552a2794d48f84878e05efa39cc3
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-206.238.diff.gz' linux_4.4.0-206.238.diff.gz 16987911 SHA512:42e20df61b84cc5e1cfe96e254155a9564f3164b7b2a4a4ed228267225cb529c7af694259deac751c105da165bf98c3bcfa15b0929e75e35f7f3cee710c2877d
+```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu0.2`
 
