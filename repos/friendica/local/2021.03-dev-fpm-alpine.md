@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:57e89355eb7424df221d3e422d4e1ed329f637baffe5598768d1e1bd44051d7d`
-- Created: `2021-03-13T16:03:44.729303914Z`
-- Virtual Size: ~ 119.66 Mb  
+- Image ID: `sha256:713982bbaa98f4510437b187e4a7deb680f7b15e476723c7d7bcf08c22c2bd94`
+- Created: `2021-03-26T17:33:36.86570197Z`
+- Virtual Size: ~ 119.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -251,16 +251,16 @@ GPL-3.0-or-later
 ### `apk` package: `git`
 
 ```console
-git-2.30.1-r0 description:
+git-2.30.2-r0 description:
 Distributed version control system
 
-git-2.30.1-r0 webpage:
+git-2.30.2-r0 webpage:
 https://www.git-scm.com/
 
-git-2.30.1-r0 installed size:
+git-2.30.2-r0 installed size:
 10612736
 
-git-2.30.1-r0 license:
+git-2.30.2-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -285,16 +285,16 @@ LGPL-3.0-or-later OR GPL-2.0-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.7.0-r0 description:
+gnutls-3.7.1-r0 description:
 TLS protocol implementation
 
-gnutls-3.7.0-r0 webpage:
+gnutls-3.7.1-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.7.0-r0 installed size:
-1912832
+gnutls-3.7.1-r0 installed size:
+1892352
 
-gnutls-3.7.0-r0 license:
+gnutls-3.7.1-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -404,16 +404,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1j-r0 description:
+libcrypto1.1-1.1.1k-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1j-r0 webpage:
+libcrypto1.1-1.1.1k-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1j-r0 installed size:
+libcrypto1.1-1.1.1k-r0 installed size:
 2768896
 
-libcrypto1.1-1.1.1j-r0 license:
+libcrypto1.1-1.1.1k-r0 license:
 OpenSSL
 
 ```
@@ -625,16 +625,16 @@ ISC
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1j-r0 description:
+libssl1.1-1.1.1k-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1j-r0 webpage:
+libssl1.1-1.1.1k-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1j-r0 installed size:
+libssl1.1-1.1.1k-r0 installed size:
 540672
 
-libssl1.1-1.1.1j-r0 license:
+libssl1.1-1.1.1k-r0 license:
 OpenSSL
 
 ```
@@ -982,16 +982,16 @@ MIT
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1j-r0 description:
+openssl-1.1.1k-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-1.1.1j-r0 webpage:
+openssl-1.1.1k-r0 webpage:
 https://www.openssl.org/
 
-openssl-1.1.1j-r0 installed size:
+openssl-1.1.1k-r0 installed size:
 675840
 
-openssl-1.1.1j-r0 license:
+openssl-1.1.1k-r0 license:
 OpenSSL
 
 ```
