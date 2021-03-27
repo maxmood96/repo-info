@@ -13,7 +13,7 @@
 ## `zookeeper:3.4`
 
 ```console
-$ docker pull zookeeper@sha256:d243cef83ebb601eb74005b6a3b8a7cde924b2699aa8ac592f0f33dc6d80b76c
+$ docker pull zookeeper@sha256:3d66a6f60e30785476d41d9632a4690f35aa503daaa06fdab1b3d57bf0ac68cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23,103 +23,103 @@ $ docker pull zookeeper@sha256:d243cef83ebb601eb74005b6a3b8a7cde924b2699aa8ac592
 ### `zookeeper:3.4` - linux; amd64
 
 ```console
-$ docker pull zookeeper@sha256:a40a72c077c3f61e7d14a49085d915b04e531ce971af29dcef3c18329ddf611d
+$ docker pull zookeeper@sha256:ab1b2967d1731813981b4b4161482fc2b2fbd887c68a0d4d10001d5676e3f732
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **115.1 MB (115079337 bytes)**  
+-	Total Size: **115.1 MB (115079520 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3f2b96e104a637682991d53dad89cfe835504792163194403423f439a4b3334c`
+-	Image ID: `sha256:99753ad08d96869c3507ff55343b48b269c39412571b68af6905c8a9d3a0da4e`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Fri, 12 Mar 2021 02:20:40 GMT
-ADD file:3c32f1cd03198e141dd233a7ffd13444157d4150ad917d548f3ee9bf5953ce22 in / 
-# Fri, 12 Mar 2021 02:20:41 GMT
+# Fri, 26 Mar 2021 15:20:59 GMT
+ADD file:b2085f4b0a7cb0e5754874c712254e5cd941062b27b8d7ed2080520196b91597 in / 
+# Fri, 26 Mar 2021 15:20:59 GMT
 CMD ["bash"]
-# Fri, 12 Mar 2021 22:10:14 GMT
+# Fri, 26 Mar 2021 19:24:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 12 Mar 2021 22:16:05 GMT
+# Fri, 26 Mar 2021 19:28:00 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Fri, 12 Mar 2021 22:16:06 GMT
+# Fri, 26 Mar 2021 19:28:01 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Fri, 12 Mar 2021 22:16:06 GMT
+# Fri, 26 Mar 2021 19:28:02 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 12 Mar 2021 22:16:06 GMT
+# Fri, 26 Mar 2021 19:28:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 12 Mar 2021 22:16:06 GMT
+# Fri, 26 Mar 2021 19:28:02 GMT
 ENV JAVA_VERSION=8u282
-# Fri, 12 Mar 2021 22:17:04 GMT
+# Fri, 26 Mar 2021 19:28:37 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u282-b08/OpenJDK8U-jre_x64_linux_8u282b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Sat, 13 Mar 2021 15:53:00 GMT
+# Fri, 26 Mar 2021 19:59:46 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60
-# Sat, 13 Mar 2021 15:53:01 GMT
+# Fri, 26 Mar 2021 19:59:49 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR"
-# Sat, 13 Mar 2021 15:53:07 GMT
+# Fri, 26 Mar 2021 20:00:01 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Sat, 13 Mar 2021 15:53:07 GMT
+# Fri, 26 Mar 2021 20:00:02 GMT
 ARG GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA
-# Sat, 13 Mar 2021 15:53:07 GMT
+# Fri, 26 Mar 2021 20:00:02 GMT
 ARG DISTRO_NAME=zookeeper-3.4.14
-# Sat, 13 Mar 2021 15:53:24 GMT
+# Fri, 26 Mar 2021 20:00:51 GMT
 # ARGS: DISTRO_NAME=zookeeper-3.4.14 GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
-# Sat, 13 Mar 2021 15:53:24 GMT
+# Fri, 26 Mar 2021 20:00:51 GMT
 WORKDIR /zookeeper-3.4.14
-# Sat, 13 Mar 2021 15:53:24 GMT
+# Fri, 26 Mar 2021 20:00:51 GMT
 VOLUME [/data /datalog /logs]
-# Sat, 13 Mar 2021 15:53:24 GMT
+# Fri, 26 Mar 2021 20:00:51 GMT
 EXPOSE 2181 2888 3888
-# Sat, 13 Mar 2021 15:53:25 GMT
+# Fri, 26 Mar 2021 20:00:52 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/zookeeper-3.4.14/bin ZOOCFGDIR=/conf
-# Sat, 13 Mar 2021 15:53:25 GMT
+# Fri, 26 Mar 2021 20:00:52 GMT
 COPY file:9258d11b841666f12bf936a305dadf163c99aafb023da4df314c3076c6f2450b in / 
-# Sat, 13 Mar 2021 15:53:25 GMT
+# Fri, 26 Mar 2021 20:00:52 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 13 Mar 2021 15:53:25 GMT
+# Fri, 26 Mar 2021 20:00:52 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:6f28985ad1843afd6fd4fe0b42a30bfab63c27d302362e7341e3316e8ba25ced`  
-		Last Modified: Fri, 12 Mar 2021 02:26:11 GMT  
-		Size: 27.1 MB (27101001 bytes)  
+	-	`sha256:ac2522cc72690febc428fb46fb39a4efc5e0a721c3ad15d9992b01515f2fad1a`  
+		Last Modified: Fri, 26 Mar 2021 15:27:47 GMT  
+		Size: 27.1 MB (27100996 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3555c3885852c38ecf4a297b798053677bc7553f9c7631788ef75e35cb4262c`  
-		Last Modified: Fri, 12 Mar 2021 22:22:18 GMT  
-		Size: 3.3 MB (3268564 bytes)  
+	-	`sha256:42f37f3c8df9c4599e86451848bc7d181558d9106306657ffef1e8a59f44b7f7`  
+		Last Modified: Fri, 26 Mar 2021 19:32:50 GMT  
+		Size: 3.3 MB (3268744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99f49df8bb3a34e1e6feea06c1db6e5d15668f61c819d7a06665bb1c3bd8858c`  
-		Last Modified: Fri, 12 Mar 2021 22:30:23 GMT  
-		Size: 211.0 B  
+	-	`sha256:1a5dc4469e71a8ac53551a9411feed57b8fa2b79e9648a475948ea16fb2ee052`  
+		Last Modified: Fri, 26 Mar 2021 19:37:37 GMT  
+		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3cc836f7a28c4588db98b0540b154ab5aad3126dd01bce3b06685cf4045e9a60`  
-		Last Modified: Fri, 12 Mar 2021 22:31:25 GMT  
-		Size: 41.6 MB (41596093 bytes)  
+	-	`sha256:684de723e8b3c2bf92f8ea5f1e941f06f990330ca5318c85510bcdf43f29c124`  
+		Last Modified: Fri, 26 Mar 2021 19:38:28 GMT  
+		Size: 41.6 MB (41596053 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc180958456402051b9fba2411b75ed4afb58e9b434f10394ad04d5adec08daa`  
-		Last Modified: Sat, 13 Mar 2021 15:54:28 GMT  
-		Size: 1.9 KB (1872 bytes)  
+	-	`sha256:d6230669e4f8fe6a7d05bb1fc9f521b31485ee2f13a79c80ef401ddba3513438`  
+		Last Modified: Fri, 26 Mar 2021 20:01:53 GMT  
+		Size: 1.9 KB (1870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfe370a1c846ea6f9efdae2816a1e1c54015db332918eac3c4afea6abc60916f`  
-		Last Modified: Sat, 13 Mar 2021 15:54:29 GMT  
-		Size: 5.4 MB (5384478 bytes)  
+	-	`sha256:1d8c4b739dcd368804eaaca58fa362e2e3340373dbb3383e5a9f6b69300d29d6`  
+		Last Modified: Fri, 26 Mar 2021 20:01:54 GMT  
+		Size: 5.4 MB (5384529 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49a036c230d17fc39434662fafb3da93eac713cf6fd78c4e9c75ce3300e16b20`  
-		Last Modified: Sat, 13 Mar 2021 15:54:36 GMT  
-		Size: 37.7 MB (37726473 bytes)  
+	-	`sha256:6e28c36300cf0e833146f17b164b7782cb232a974fba765557329e6122b9da3d`  
+		Last Modified: Fri, 26 Mar 2021 20:01:56 GMT  
+		Size: 37.7 MB (37726472 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc4bcc45dd5be37afa770772652d98ed4d02bdf111c8474fa96d7dff3041d682`  
-		Last Modified: Sat, 13 Mar 2021 15:54:28 GMT  
-		Size: 645.0 B  
+	-	`sha256:a309ac4a902301acb76d02c15cf78d0719cc5bbe19d9f3b413982b7fce115c3a`  
+		Last Modified: Fri, 26 Mar 2021 20:01:53 GMT  
+		Size: 644.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `zookeeper:3.4.14`
 
 ```console
-$ docker pull zookeeper@sha256:d243cef83ebb601eb74005b6a3b8a7cde924b2699aa8ac592f0f33dc6d80b76c
+$ docker pull zookeeper@sha256:3d66a6f60e30785476d41d9632a4690f35aa503daaa06fdab1b3d57bf0ac68cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -129,103 +129,103 @@ $ docker pull zookeeper@sha256:d243cef83ebb601eb74005b6a3b8a7cde924b2699aa8ac592
 ### `zookeeper:3.4.14` - linux; amd64
 
 ```console
-$ docker pull zookeeper@sha256:a40a72c077c3f61e7d14a49085d915b04e531ce971af29dcef3c18329ddf611d
+$ docker pull zookeeper@sha256:ab1b2967d1731813981b4b4161482fc2b2fbd887c68a0d4d10001d5676e3f732
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **115.1 MB (115079337 bytes)**  
+-	Total Size: **115.1 MB (115079520 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3f2b96e104a637682991d53dad89cfe835504792163194403423f439a4b3334c`
+-	Image ID: `sha256:99753ad08d96869c3507ff55343b48b269c39412571b68af6905c8a9d3a0da4e`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Fri, 12 Mar 2021 02:20:40 GMT
-ADD file:3c32f1cd03198e141dd233a7ffd13444157d4150ad917d548f3ee9bf5953ce22 in / 
-# Fri, 12 Mar 2021 02:20:41 GMT
+# Fri, 26 Mar 2021 15:20:59 GMT
+ADD file:b2085f4b0a7cb0e5754874c712254e5cd941062b27b8d7ed2080520196b91597 in / 
+# Fri, 26 Mar 2021 15:20:59 GMT
 CMD ["bash"]
-# Fri, 12 Mar 2021 22:10:14 GMT
+# Fri, 26 Mar 2021 19:24:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 12 Mar 2021 22:16:05 GMT
+# Fri, 26 Mar 2021 19:28:00 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Fri, 12 Mar 2021 22:16:06 GMT
+# Fri, 26 Mar 2021 19:28:01 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Fri, 12 Mar 2021 22:16:06 GMT
+# Fri, 26 Mar 2021 19:28:02 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 12 Mar 2021 22:16:06 GMT
+# Fri, 26 Mar 2021 19:28:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 12 Mar 2021 22:16:06 GMT
+# Fri, 26 Mar 2021 19:28:02 GMT
 ENV JAVA_VERSION=8u282
-# Fri, 12 Mar 2021 22:17:04 GMT
+# Fri, 26 Mar 2021 19:28:37 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u282-b08/OpenJDK8U-jre_x64_linux_8u282b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Sat, 13 Mar 2021 15:53:00 GMT
+# Fri, 26 Mar 2021 19:59:46 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60
-# Sat, 13 Mar 2021 15:53:01 GMT
+# Fri, 26 Mar 2021 19:59:49 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR"
-# Sat, 13 Mar 2021 15:53:07 GMT
+# Fri, 26 Mar 2021 20:00:01 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Sat, 13 Mar 2021 15:53:07 GMT
+# Fri, 26 Mar 2021 20:00:02 GMT
 ARG GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA
-# Sat, 13 Mar 2021 15:53:07 GMT
+# Fri, 26 Mar 2021 20:00:02 GMT
 ARG DISTRO_NAME=zookeeper-3.4.14
-# Sat, 13 Mar 2021 15:53:24 GMT
+# Fri, 26 Mar 2021 20:00:51 GMT
 # ARGS: DISTRO_NAME=zookeeper-3.4.14 GPG_KEY=3F7A1D16FA4217B1DC75E1C9FFE35B7F15DFA1BA
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
-# Sat, 13 Mar 2021 15:53:24 GMT
+# Fri, 26 Mar 2021 20:00:51 GMT
 WORKDIR /zookeeper-3.4.14
-# Sat, 13 Mar 2021 15:53:24 GMT
+# Fri, 26 Mar 2021 20:00:51 GMT
 VOLUME [/data /datalog /logs]
-# Sat, 13 Mar 2021 15:53:24 GMT
+# Fri, 26 Mar 2021 20:00:51 GMT
 EXPOSE 2181 2888 3888
-# Sat, 13 Mar 2021 15:53:25 GMT
+# Fri, 26 Mar 2021 20:00:52 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/zookeeper-3.4.14/bin ZOOCFGDIR=/conf
-# Sat, 13 Mar 2021 15:53:25 GMT
+# Fri, 26 Mar 2021 20:00:52 GMT
 COPY file:9258d11b841666f12bf936a305dadf163c99aafb023da4df314c3076c6f2450b in / 
-# Sat, 13 Mar 2021 15:53:25 GMT
+# Fri, 26 Mar 2021 20:00:52 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 13 Mar 2021 15:53:25 GMT
+# Fri, 26 Mar 2021 20:00:52 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:6f28985ad1843afd6fd4fe0b42a30bfab63c27d302362e7341e3316e8ba25ced`  
-		Last Modified: Fri, 12 Mar 2021 02:26:11 GMT  
-		Size: 27.1 MB (27101001 bytes)  
+	-	`sha256:ac2522cc72690febc428fb46fb39a4efc5e0a721c3ad15d9992b01515f2fad1a`  
+		Last Modified: Fri, 26 Mar 2021 15:27:47 GMT  
+		Size: 27.1 MB (27100996 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3555c3885852c38ecf4a297b798053677bc7553f9c7631788ef75e35cb4262c`  
-		Last Modified: Fri, 12 Mar 2021 22:22:18 GMT  
-		Size: 3.3 MB (3268564 bytes)  
+	-	`sha256:42f37f3c8df9c4599e86451848bc7d181558d9106306657ffef1e8a59f44b7f7`  
+		Last Modified: Fri, 26 Mar 2021 19:32:50 GMT  
+		Size: 3.3 MB (3268744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99f49df8bb3a34e1e6feea06c1db6e5d15668f61c819d7a06665bb1c3bd8858c`  
-		Last Modified: Fri, 12 Mar 2021 22:30:23 GMT  
-		Size: 211.0 B  
+	-	`sha256:1a5dc4469e71a8ac53551a9411feed57b8fa2b79e9648a475948ea16fb2ee052`  
+		Last Modified: Fri, 26 Mar 2021 19:37:37 GMT  
+		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3cc836f7a28c4588db98b0540b154ab5aad3126dd01bce3b06685cf4045e9a60`  
-		Last Modified: Fri, 12 Mar 2021 22:31:25 GMT  
-		Size: 41.6 MB (41596093 bytes)  
+	-	`sha256:684de723e8b3c2bf92f8ea5f1e941f06f990330ca5318c85510bcdf43f29c124`  
+		Last Modified: Fri, 26 Mar 2021 19:38:28 GMT  
+		Size: 41.6 MB (41596053 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc180958456402051b9fba2411b75ed4afb58e9b434f10394ad04d5adec08daa`  
-		Last Modified: Sat, 13 Mar 2021 15:54:28 GMT  
-		Size: 1.9 KB (1872 bytes)  
+	-	`sha256:d6230669e4f8fe6a7d05bb1fc9f521b31485ee2f13a79c80ef401ddba3513438`  
+		Last Modified: Fri, 26 Mar 2021 20:01:53 GMT  
+		Size: 1.9 KB (1870 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfe370a1c846ea6f9efdae2816a1e1c54015db332918eac3c4afea6abc60916f`  
-		Last Modified: Sat, 13 Mar 2021 15:54:29 GMT  
-		Size: 5.4 MB (5384478 bytes)  
+	-	`sha256:1d8c4b739dcd368804eaaca58fa362e2e3340373dbb3383e5a9f6b69300d29d6`  
+		Last Modified: Fri, 26 Mar 2021 20:01:54 GMT  
+		Size: 5.4 MB (5384529 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49a036c230d17fc39434662fafb3da93eac713cf6fd78c4e9c75ce3300e16b20`  
-		Last Modified: Sat, 13 Mar 2021 15:54:36 GMT  
-		Size: 37.7 MB (37726473 bytes)  
+	-	`sha256:6e28c36300cf0e833146f17b164b7782cb232a974fba765557329e6122b9da3d`  
+		Last Modified: Fri, 26 Mar 2021 20:01:56 GMT  
+		Size: 37.7 MB (37726472 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc4bcc45dd5be37afa770772652d98ed4d02bdf111c8474fa96d7dff3041d682`  
-		Last Modified: Sat, 13 Mar 2021 15:54:28 GMT  
-		Size: 645.0 B  
+	-	`sha256:a309ac4a902301acb76d02c15cf78d0719cc5bbe19d9f3b413982b7fce115c3a`  
+		Last Modified: Fri, 26 Mar 2021 20:01:53 GMT  
+		Size: 644.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `zookeeper:3.5`
 
 ```console
-$ docker pull zookeeper@sha256:64741f26f2dab3c5d72793b91de6c176845a4d73c463144d0c32a27829b67431
+$ docker pull zookeeper@sha256:2869e7c1375e9aee323d7200a9b46cd04a5f0c7b5f82f0b19682c88a0f461592
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -236,203 +236,203 @@ $ docker pull zookeeper@sha256:64741f26f2dab3c5d72793b91de6c176845a4d73c463144d0
 ### `zookeeper:3.5` - linux; amd64
 
 ```console
-$ docker pull zookeeper@sha256:7ede57dae62ac21e22292117554100a88d8bca67a4460aabe84f8bb53b5260c7
+$ docker pull zookeeper@sha256:c2938296664903ef002bd7c04b29e5ba1f22a4d7e1168c7bebe648eea220e02d
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.4 MB (92381447 bytes)**  
+-	Total Size: **92.4 MB (92381631 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76a2948c97202a123c468461cc9082bb7b22edddc07803a52e38d31a383e3b7f`
+-	Image ID: `sha256:19065e017acce142466f2b2a2d0cb5729652796de46dfb88b606fba6ca8e8f22`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Fri, 12 Mar 2021 02:20:40 GMT
-ADD file:3c32f1cd03198e141dd233a7ffd13444157d4150ad917d548f3ee9bf5953ce22 in / 
-# Fri, 12 Mar 2021 02:20:41 GMT
+# Fri, 26 Mar 2021 15:20:59 GMT
+ADD file:b2085f4b0a7cb0e5754874c712254e5cd941062b27b8d7ed2080520196b91597 in / 
+# Fri, 26 Mar 2021 15:20:59 GMT
 CMD ["bash"]
-# Fri, 12 Mar 2021 22:10:14 GMT
+# Fri, 26 Mar 2021 19:24:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 12 Mar 2021 22:14:08 GMT
+# Fri, 26 Mar 2021 19:26:55 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 12 Mar 2021 22:14:10 GMT
+# Fri, 26 Mar 2021 19:26:57 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Fri, 12 Mar 2021 22:14:10 GMT
+# Fri, 26 Mar 2021 19:26:57 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 12 Mar 2021 22:14:10 GMT
+# Fri, 26 Mar 2021 19:26:58 GMT
 ENV LANG=C.UTF-8
-# Fri, 12 Mar 2021 22:14:10 GMT
+# Fri, 26 Mar 2021 19:26:58 GMT
 ENV JAVA_VERSION=11.0.10
-# Fri, 12 Mar 2021 22:15:26 GMT
+# Fri, 26 Mar 2021 19:27:45 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_x64_linux_11.0.10_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_aarch64_linux_11.0.10_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Sat, 13 Mar 2021 15:53:30 GMT
+# Fri, 26 Mar 2021 20:00:58 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Sat, 13 Mar 2021 15:53:31 GMT
+# Fri, 26 Mar 2021 20:00:59 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR"
-# Sat, 13 Mar 2021 15:53:37 GMT
+# Fri, 26 Mar 2021 20:01:05 GMT
 RUN set -eux;     apt-get -qq update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Sat, 13 Mar 2021 15:53:37 GMT
+# Fri, 26 Mar 2021 20:01:05 GMT
 ARG GPG_KEY=3D296268A36FACA1B7EAF110792D43153B5B5147
-# Sat, 13 Mar 2021 15:53:37 GMT
+# Fri, 26 Mar 2021 20:01:06 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.5.9
-# Sat, 13 Mar 2021 15:53:37 GMT
+# Fri, 26 Mar 2021 20:01:06 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.5.9-bin
-# Sat, 13 Mar 2021 15:53:54 GMT
+# Fri, 26 Mar 2021 20:01:14 GMT
 # ARGS: DISTRO_NAME=apache-zookeeper-3.5.9-bin GPG_KEY=3D296268A36FACA1B7EAF110792D43153B5B5147 SHORT_DISTRO_NAME=zookeeper-3.5.9
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
-# Sat, 13 Mar 2021 15:53:54 GMT
+# Fri, 26 Mar 2021 20:01:14 GMT
 WORKDIR /apache-zookeeper-3.5.9-bin
-# Sat, 13 Mar 2021 15:53:54 GMT
+# Fri, 26 Mar 2021 20:01:15 GMT
 VOLUME [/data /datalog /logs]
-# Sat, 13 Mar 2021 15:53:54 GMT
+# Fri, 26 Mar 2021 20:01:15 GMT
 EXPOSE 2181 2888 3888 8080
-# Sat, 13 Mar 2021 15:53:55 GMT
+# Fri, 26 Mar 2021 20:01:15 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.5.9-bin/bin ZOOCFGDIR=/conf
-# Sat, 13 Mar 2021 15:53:55 GMT
+# Fri, 26 Mar 2021 20:01:15 GMT
 COPY file:876dd2fa348f66a85a81dab4d431046f781ebc426b6fd355fdac0b388935e8d1 in / 
-# Sat, 13 Mar 2021 15:53:55 GMT
+# Fri, 26 Mar 2021 20:01:16 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 13 Mar 2021 15:53:55 GMT
+# Fri, 26 Mar 2021 20:01:16 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:6f28985ad1843afd6fd4fe0b42a30bfab63c27d302362e7341e3316e8ba25ced`  
-		Last Modified: Fri, 12 Mar 2021 02:26:11 GMT  
-		Size: 27.1 MB (27101001 bytes)  
+	-	`sha256:ac2522cc72690febc428fb46fb39a4efc5e0a721c3ad15d9992b01515f2fad1a`  
+		Last Modified: Fri, 26 Mar 2021 15:27:47 GMT  
+		Size: 27.1 MB (27100996 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3555c3885852c38ecf4a297b798053677bc7553f9c7631788ef75e35cb4262c`  
-		Last Modified: Fri, 12 Mar 2021 22:22:18 GMT  
-		Size: 3.3 MB (3268564 bytes)  
+	-	`sha256:42f37f3c8df9c4599e86451848bc7d181558d9106306657ffef1e8a59f44b7f7`  
+		Last Modified: Fri, 26 Mar 2021 19:32:50 GMT  
+		Size: 3.3 MB (3268744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42965fccf40100a915fa0b4b20946987c4e330948b82f687f22d7b6575473af0`  
-		Last Modified: Fri, 12 Mar 2021 22:27:57 GMT  
+	-	`sha256:a456ec241295190817bf2dc268114e0680561fcd6bdf987721a8d84391cfd1bf`  
+		Last Modified: Fri, 26 Mar 2021 19:35:57 GMT  
 		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:484bb3bd28a7ad59d605f58597d0bf81c9b10fcea21d4b7f705d594cc4c793c5`  
-		Last Modified: Fri, 12 Mar 2021 22:29:24 GMT  
-		Size: 47.0 MB (47042875 bytes)  
+	-	`sha256:fc8a22e415cfb290fead90c0f86c1aa4e0ac2c1d0b86722ea7e1da90873f2527`  
+		Last Modified: Fri, 26 Mar 2021 19:37:07 GMT  
+		Size: 47.0 MB (47042908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7e2399eaa776bd55e614f71d3420e014413d46b34f56b3bf66fb3f40d43b6be`  
-		Last Modified: Sat, 13 Mar 2021 15:54:46 GMT  
-		Size: 1.9 KB (1872 bytes)  
+	-	`sha256:0992e1d972cfde0058cdf5e014872f4f70f047c43a0eea8b6bdce61c6c807bfa`  
+		Last Modified: Fri, 26 Mar 2021 20:02:10 GMT  
+		Size: 1.9 KB (1871 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1e24c01cd7ef35982896e23c9fb0b38ebe2190970be5508ddac5a2b1b2b1e56`  
-		Last Modified: Sat, 13 Mar 2021 15:54:47 GMT  
-		Size: 5.4 MB (5384516 bytes)  
+	-	`sha256:871b29f1747d74a8a9e91184856150ad3e5705febc0e910ff7d1108e4e713300`  
+		Last Modified: Fri, 26 Mar 2021 20:02:11 GMT  
+		Size: 5.4 MB (5384482 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a692fca624e31966e0fc0c84b4cc268ae49f270a08e648f608e83728c5b2594`  
-		Last Modified: Sat, 13 Mar 2021 15:54:47 GMT  
-		Size: 9.6 MB (9581631 bytes)  
+	-	`sha256:cf3d05e15ba96b51a304c7139dc261b3b20000993cb9274708607040e0cd90ae`  
+		Last Modified: Fri, 26 Mar 2021 20:02:11 GMT  
+		Size: 9.6 MB (9581642 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5c1496cbfe982df82c2dcd417a095577f0e4145a0fe0e63dba820cca3993a59`  
-		Last Modified: Sat, 13 Mar 2021 15:54:46 GMT  
+	-	`sha256:4c4847100ff9cfdec8f841937bffa875ff20d82f01576005a10b3540e6b3aeb0`  
+		Last Modified: Fri, 26 Mar 2021 20:02:10 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `zookeeper:3.5` - linux; arm64 variant v8
 
 ```console
-$ docker pull zookeeper@sha256:650f0c89e382595fcd968604d8ac602479e6db053015497b4c6452b7c43c595f
+$ docker pull zookeeper@sha256:9b204d45d68fbc79f43221fecb25818c6cf2147cae159a952d23cbaff2fc2ec0
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **90.0 MB (89987916 bytes)**  
+-	Total Size: **90.0 MB (89986468 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e77b243bcfa802c74e983b248185de60e46a62782d9d435ae28f6146cc4576a2`
+-	Image ID: `sha256:2a80ef648339435304ac995903e61886f0c103907137dd80f898331e4358c0e1`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Fri, 12 Mar 2021 01:53:53 GMT
-ADD file:6130ddc0a939dd72c0614de4aa77de47aa16fe211274bacb31995aa1a0526164 in / 
-# Fri, 12 Mar 2021 01:53:56 GMT
+# Fri, 26 Mar 2021 15:41:54 GMT
+ADD file:c8c0d923527574a26725e0a1995051870ed169ff6b6ebfe77c50810f5583690b in / 
+# Fri, 26 Mar 2021 15:41:56 GMT
 CMD ["bash"]
-# Fri, 12 Mar 2021 06:34:53 GMT
+# Fri, 26 Mar 2021 19:43:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 12 Mar 2021 06:40:23 GMT
+# Fri, 26 Mar 2021 19:46:29 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 12 Mar 2021 06:40:25 GMT
+# Fri, 26 Mar 2021 19:46:31 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Fri, 12 Mar 2021 06:40:26 GMT
+# Fri, 26 Mar 2021 19:46:45 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 12 Mar 2021 06:40:26 GMT
+# Fri, 26 Mar 2021 19:46:46 GMT
 ENV LANG=C.UTF-8
-# Fri, 12 Mar 2021 06:40:27 GMT
+# Fri, 26 Mar 2021 19:46:46 GMT
 ENV JAVA_VERSION=11.0.10
-# Fri, 12 Mar 2021 06:42:19 GMT
+# Fri, 26 Mar 2021 19:48:06 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_x64_linux_11.0.10_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_aarch64_linux_11.0.10_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Sat, 13 Mar 2021 02:31:41 GMT
+# Fri, 26 Mar 2021 20:53:17 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Sat, 13 Mar 2021 02:31:44 GMT
+# Fri, 26 Mar 2021 20:53:22 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR"
-# Sat, 13 Mar 2021 02:31:57 GMT
+# Fri, 26 Mar 2021 20:53:44 GMT
 RUN set -eux;     apt-get -qq update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Sat, 13 Mar 2021 02:31:58 GMT
+# Fri, 26 Mar 2021 20:53:47 GMT
 ARG GPG_KEY=3D296268A36FACA1B7EAF110792D43153B5B5147
-# Sat, 13 Mar 2021 02:31:59 GMT
+# Fri, 26 Mar 2021 20:53:49 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.5.9
-# Sat, 13 Mar 2021 02:31:59 GMT
+# Fri, 26 Mar 2021 20:53:51 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.5.9-bin
-# Sat, 13 Mar 2021 02:32:06 GMT
+# Fri, 26 Mar 2021 20:54:04 GMT
 # ARGS: DISTRO_NAME=apache-zookeeper-3.5.9-bin GPG_KEY=3D296268A36FACA1B7EAF110792D43153B5B5147 SHORT_DISTRO_NAME=zookeeper-3.5.9
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
-# Sat, 13 Mar 2021 02:32:07 GMT
+# Fri, 26 Mar 2021 20:54:06 GMT
 WORKDIR /apache-zookeeper-3.5.9-bin
-# Sat, 13 Mar 2021 02:32:08 GMT
+# Fri, 26 Mar 2021 20:54:08 GMT
 VOLUME [/data /datalog /logs]
-# Sat, 13 Mar 2021 02:32:09 GMT
+# Fri, 26 Mar 2021 20:54:09 GMT
 EXPOSE 2181 2888 3888 8080
-# Sat, 13 Mar 2021 02:32:10 GMT
+# Fri, 26 Mar 2021 20:54:10 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.5.9-bin/bin ZOOCFGDIR=/conf
-# Sat, 13 Mar 2021 02:32:11 GMT
+# Fri, 26 Mar 2021 20:54:12 GMT
 COPY file:876dd2fa348f66a85a81dab4d431046f781ebc426b6fd355fdac0b388935e8d1 in / 
-# Sat, 13 Mar 2021 02:32:12 GMT
+# Fri, 26 Mar 2021 20:54:13 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 13 Mar 2021 02:32:13 GMT
+# Fri, 26 Mar 2021 20:54:14 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:706ee5d0a6b53d9257cbea22d8409fb22c867ab3a001c65f6b8bfd37dace0e58`  
-		Last Modified: Fri, 12 Mar 2021 02:01:39 GMT  
-		Size: 25.9 MB (25856512 bytes)  
+	-	`sha256:989f98f7e44fde3e2eb49bc6d2bfed15401201d21cd90f42cd9fc4c26eef8bb0`  
+		Last Modified: Fri, 26 Mar 2021 15:48:47 GMT  
+		Size: 25.9 MB (25856384 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:303a8d33f3a602102b6a15a1f7974fc79449cdcff2c2fa6709b56cd1ac792384`  
-		Last Modified: Fri, 12 Mar 2021 06:45:08 GMT  
-		Size: 3.1 MB (3118728 bytes)  
+	-	`sha256:844d8de9377aa4bd4c66d812b6226ebe8ebcb1dbbbdf3be6e3e9d0ea7363e0d3`  
+		Last Modified: Fri, 26 Mar 2021 19:50:29 GMT  
+		Size: 3.1 MB (3118857 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93b8b66a2613c2e81c20d5f33497aaa0c185225f7b1a0fc1478b628ad5bce829`  
-		Last Modified: Fri, 12 Mar 2021 06:49:58 GMT  
+	-	`sha256:a9e37c5f201dfc8f5b1032ffbbb31bc89047cdb56fad97bca2c885cc5a87f381`  
+		Last Modified: Fri, 26 Mar 2021 19:53:28 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b08a8fe7570eea8d3f52461e1667f5809826377f1ee2f99e5cc9690946de148`  
-		Last Modified: Fri, 12 Mar 2021 06:51:30 GMT  
-		Size: 46.1 MB (46108061 bytes)  
+	-	`sha256:388b7806583b38dcbfbb8b480904bd1aacbd80ec22df41d6ebedcba9632a2f5a`  
+		Last Modified: Fri, 26 Mar 2021 19:54:38 GMT  
+		Size: 46.1 MB (46106643 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1aad7c84afd135cda15e27d77b38fd5cf60ee1598f595f1d2af0ffca1243ba8c`  
-		Last Modified: Sat, 13 Mar 2021 02:33:06 GMT  
-		Size: 1.9 KB (1874 bytes)  
+	-	`sha256:499d693bf53f54b960c6a63c26b405f7922be22c21ef72d44e7797db1257c8aa`  
+		Last Modified: Fri, 26 Mar 2021 20:55:38 GMT  
+		Size: 1.9 KB (1875 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82f8f266d9716220e0c73195728d9ff57ae7400d61dbc8ebe560caf25d78c54c`  
-		Last Modified: Sat, 13 Mar 2021 02:33:08 GMT  
-		Size: 5.3 MB (5320113 bytes)  
+	-	`sha256:c495f7abf662cec05ec67961bf6e14d68941af88af9a827b304dcd48447b2fb9`  
+		Last Modified: Fri, 26 Mar 2021 20:55:39 GMT  
+		Size: 5.3 MB (5320129 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2cefc83107070e61999f1c3d37a477a012383b6ed3030f5c6266144b29138753`  
-		Last Modified: Sat, 13 Mar 2021 02:33:08 GMT  
-		Size: 9.6 MB (9581641 bytes)  
+	-	`sha256:ecc9972f6fc491d53ec5208e815a1c17bdefb69207b4d7a0531c72b0c0f1a7d2`  
+		Last Modified: Fri, 26 Mar 2021 20:55:40 GMT  
+		Size: 9.6 MB (9581593 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9740cb6f23b9136030f3c5478d27302febb6347c10f754e419ac5538bec0e2bd`  
-		Last Modified: Sat, 13 Mar 2021 02:33:06 GMT  
+	-	`sha256:5f5e5d790d8a1657d48b47672ba3a1312f818a2472a77272725a5f1c4d4832ea`  
+		Last Modified: Fri, 26 Mar 2021 20:55:38 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `zookeeper:3.5.9`
 
 ```console
-$ docker pull zookeeper@sha256:64741f26f2dab3c5d72793b91de6c176845a4d73c463144d0c32a27829b67431
+$ docker pull zookeeper@sha256:2869e7c1375e9aee323d7200a9b46cd04a5f0c7b5f82f0b19682c88a0f461592
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -443,203 +443,203 @@ $ docker pull zookeeper@sha256:64741f26f2dab3c5d72793b91de6c176845a4d73c463144d0
 ### `zookeeper:3.5.9` - linux; amd64
 
 ```console
-$ docker pull zookeeper@sha256:7ede57dae62ac21e22292117554100a88d8bca67a4460aabe84f8bb53b5260c7
+$ docker pull zookeeper@sha256:c2938296664903ef002bd7c04b29e5ba1f22a4d7e1168c7bebe648eea220e02d
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.4 MB (92381447 bytes)**  
+-	Total Size: **92.4 MB (92381631 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76a2948c97202a123c468461cc9082bb7b22edddc07803a52e38d31a383e3b7f`
+-	Image ID: `sha256:19065e017acce142466f2b2a2d0cb5729652796de46dfb88b606fba6ca8e8f22`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Fri, 12 Mar 2021 02:20:40 GMT
-ADD file:3c32f1cd03198e141dd233a7ffd13444157d4150ad917d548f3ee9bf5953ce22 in / 
-# Fri, 12 Mar 2021 02:20:41 GMT
+# Fri, 26 Mar 2021 15:20:59 GMT
+ADD file:b2085f4b0a7cb0e5754874c712254e5cd941062b27b8d7ed2080520196b91597 in / 
+# Fri, 26 Mar 2021 15:20:59 GMT
 CMD ["bash"]
-# Fri, 12 Mar 2021 22:10:14 GMT
+# Fri, 26 Mar 2021 19:24:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 12 Mar 2021 22:14:08 GMT
+# Fri, 26 Mar 2021 19:26:55 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 12 Mar 2021 22:14:10 GMT
+# Fri, 26 Mar 2021 19:26:57 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Fri, 12 Mar 2021 22:14:10 GMT
+# Fri, 26 Mar 2021 19:26:57 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 12 Mar 2021 22:14:10 GMT
+# Fri, 26 Mar 2021 19:26:58 GMT
 ENV LANG=C.UTF-8
-# Fri, 12 Mar 2021 22:14:10 GMT
+# Fri, 26 Mar 2021 19:26:58 GMT
 ENV JAVA_VERSION=11.0.10
-# Fri, 12 Mar 2021 22:15:26 GMT
+# Fri, 26 Mar 2021 19:27:45 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_x64_linux_11.0.10_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_aarch64_linux_11.0.10_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Sat, 13 Mar 2021 15:53:30 GMT
+# Fri, 26 Mar 2021 20:00:58 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Sat, 13 Mar 2021 15:53:31 GMT
+# Fri, 26 Mar 2021 20:00:59 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR"
-# Sat, 13 Mar 2021 15:53:37 GMT
+# Fri, 26 Mar 2021 20:01:05 GMT
 RUN set -eux;     apt-get -qq update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Sat, 13 Mar 2021 15:53:37 GMT
+# Fri, 26 Mar 2021 20:01:05 GMT
 ARG GPG_KEY=3D296268A36FACA1B7EAF110792D43153B5B5147
-# Sat, 13 Mar 2021 15:53:37 GMT
+# Fri, 26 Mar 2021 20:01:06 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.5.9
-# Sat, 13 Mar 2021 15:53:37 GMT
+# Fri, 26 Mar 2021 20:01:06 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.5.9-bin
-# Sat, 13 Mar 2021 15:53:54 GMT
+# Fri, 26 Mar 2021 20:01:14 GMT
 # ARGS: DISTRO_NAME=apache-zookeeper-3.5.9-bin GPG_KEY=3D296268A36FACA1B7EAF110792D43153B5B5147 SHORT_DISTRO_NAME=zookeeper-3.5.9
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
-# Sat, 13 Mar 2021 15:53:54 GMT
+# Fri, 26 Mar 2021 20:01:14 GMT
 WORKDIR /apache-zookeeper-3.5.9-bin
-# Sat, 13 Mar 2021 15:53:54 GMT
+# Fri, 26 Mar 2021 20:01:15 GMT
 VOLUME [/data /datalog /logs]
-# Sat, 13 Mar 2021 15:53:54 GMT
+# Fri, 26 Mar 2021 20:01:15 GMT
 EXPOSE 2181 2888 3888 8080
-# Sat, 13 Mar 2021 15:53:55 GMT
+# Fri, 26 Mar 2021 20:01:15 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.5.9-bin/bin ZOOCFGDIR=/conf
-# Sat, 13 Mar 2021 15:53:55 GMT
+# Fri, 26 Mar 2021 20:01:15 GMT
 COPY file:876dd2fa348f66a85a81dab4d431046f781ebc426b6fd355fdac0b388935e8d1 in / 
-# Sat, 13 Mar 2021 15:53:55 GMT
+# Fri, 26 Mar 2021 20:01:16 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 13 Mar 2021 15:53:55 GMT
+# Fri, 26 Mar 2021 20:01:16 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:6f28985ad1843afd6fd4fe0b42a30bfab63c27d302362e7341e3316e8ba25ced`  
-		Last Modified: Fri, 12 Mar 2021 02:26:11 GMT  
-		Size: 27.1 MB (27101001 bytes)  
+	-	`sha256:ac2522cc72690febc428fb46fb39a4efc5e0a721c3ad15d9992b01515f2fad1a`  
+		Last Modified: Fri, 26 Mar 2021 15:27:47 GMT  
+		Size: 27.1 MB (27100996 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3555c3885852c38ecf4a297b798053677bc7553f9c7631788ef75e35cb4262c`  
-		Last Modified: Fri, 12 Mar 2021 22:22:18 GMT  
-		Size: 3.3 MB (3268564 bytes)  
+	-	`sha256:42f37f3c8df9c4599e86451848bc7d181558d9106306657ffef1e8a59f44b7f7`  
+		Last Modified: Fri, 26 Mar 2021 19:32:50 GMT  
+		Size: 3.3 MB (3268744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42965fccf40100a915fa0b4b20946987c4e330948b82f687f22d7b6575473af0`  
-		Last Modified: Fri, 12 Mar 2021 22:27:57 GMT  
+	-	`sha256:a456ec241295190817bf2dc268114e0680561fcd6bdf987721a8d84391cfd1bf`  
+		Last Modified: Fri, 26 Mar 2021 19:35:57 GMT  
 		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:484bb3bd28a7ad59d605f58597d0bf81c9b10fcea21d4b7f705d594cc4c793c5`  
-		Last Modified: Fri, 12 Mar 2021 22:29:24 GMT  
-		Size: 47.0 MB (47042875 bytes)  
+	-	`sha256:fc8a22e415cfb290fead90c0f86c1aa4e0ac2c1d0b86722ea7e1da90873f2527`  
+		Last Modified: Fri, 26 Mar 2021 19:37:07 GMT  
+		Size: 47.0 MB (47042908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7e2399eaa776bd55e614f71d3420e014413d46b34f56b3bf66fb3f40d43b6be`  
-		Last Modified: Sat, 13 Mar 2021 15:54:46 GMT  
-		Size: 1.9 KB (1872 bytes)  
+	-	`sha256:0992e1d972cfde0058cdf5e014872f4f70f047c43a0eea8b6bdce61c6c807bfa`  
+		Last Modified: Fri, 26 Mar 2021 20:02:10 GMT  
+		Size: 1.9 KB (1871 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1e24c01cd7ef35982896e23c9fb0b38ebe2190970be5508ddac5a2b1b2b1e56`  
-		Last Modified: Sat, 13 Mar 2021 15:54:47 GMT  
-		Size: 5.4 MB (5384516 bytes)  
+	-	`sha256:871b29f1747d74a8a9e91184856150ad3e5705febc0e910ff7d1108e4e713300`  
+		Last Modified: Fri, 26 Mar 2021 20:02:11 GMT  
+		Size: 5.4 MB (5384482 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a692fca624e31966e0fc0c84b4cc268ae49f270a08e648f608e83728c5b2594`  
-		Last Modified: Sat, 13 Mar 2021 15:54:47 GMT  
-		Size: 9.6 MB (9581631 bytes)  
+	-	`sha256:cf3d05e15ba96b51a304c7139dc261b3b20000993cb9274708607040e0cd90ae`  
+		Last Modified: Fri, 26 Mar 2021 20:02:11 GMT  
+		Size: 9.6 MB (9581642 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5c1496cbfe982df82c2dcd417a095577f0e4145a0fe0e63dba820cca3993a59`  
-		Last Modified: Sat, 13 Mar 2021 15:54:46 GMT  
+	-	`sha256:4c4847100ff9cfdec8f841937bffa875ff20d82f01576005a10b3540e6b3aeb0`  
+		Last Modified: Fri, 26 Mar 2021 20:02:10 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `zookeeper:3.5.9` - linux; arm64 variant v8
 
 ```console
-$ docker pull zookeeper@sha256:650f0c89e382595fcd968604d8ac602479e6db053015497b4c6452b7c43c595f
+$ docker pull zookeeper@sha256:9b204d45d68fbc79f43221fecb25818c6cf2147cae159a952d23cbaff2fc2ec0
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **90.0 MB (89987916 bytes)**  
+-	Total Size: **90.0 MB (89986468 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e77b243bcfa802c74e983b248185de60e46a62782d9d435ae28f6146cc4576a2`
+-	Image ID: `sha256:2a80ef648339435304ac995903e61886f0c103907137dd80f898331e4358c0e1`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Fri, 12 Mar 2021 01:53:53 GMT
-ADD file:6130ddc0a939dd72c0614de4aa77de47aa16fe211274bacb31995aa1a0526164 in / 
-# Fri, 12 Mar 2021 01:53:56 GMT
+# Fri, 26 Mar 2021 15:41:54 GMT
+ADD file:c8c0d923527574a26725e0a1995051870ed169ff6b6ebfe77c50810f5583690b in / 
+# Fri, 26 Mar 2021 15:41:56 GMT
 CMD ["bash"]
-# Fri, 12 Mar 2021 06:34:53 GMT
+# Fri, 26 Mar 2021 19:43:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 12 Mar 2021 06:40:23 GMT
+# Fri, 26 Mar 2021 19:46:29 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 12 Mar 2021 06:40:25 GMT
+# Fri, 26 Mar 2021 19:46:31 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Fri, 12 Mar 2021 06:40:26 GMT
+# Fri, 26 Mar 2021 19:46:45 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 12 Mar 2021 06:40:26 GMT
+# Fri, 26 Mar 2021 19:46:46 GMT
 ENV LANG=C.UTF-8
-# Fri, 12 Mar 2021 06:40:27 GMT
+# Fri, 26 Mar 2021 19:46:46 GMT
 ENV JAVA_VERSION=11.0.10
-# Fri, 12 Mar 2021 06:42:19 GMT
+# Fri, 26 Mar 2021 19:48:06 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_x64_linux_11.0.10_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_aarch64_linux_11.0.10_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Sat, 13 Mar 2021 02:31:41 GMT
+# Fri, 26 Mar 2021 20:53:17 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Sat, 13 Mar 2021 02:31:44 GMT
+# Fri, 26 Mar 2021 20:53:22 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR"
-# Sat, 13 Mar 2021 02:31:57 GMT
+# Fri, 26 Mar 2021 20:53:44 GMT
 RUN set -eux;     apt-get -qq update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Sat, 13 Mar 2021 02:31:58 GMT
+# Fri, 26 Mar 2021 20:53:47 GMT
 ARG GPG_KEY=3D296268A36FACA1B7EAF110792D43153B5B5147
-# Sat, 13 Mar 2021 02:31:59 GMT
+# Fri, 26 Mar 2021 20:53:49 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.5.9
-# Sat, 13 Mar 2021 02:31:59 GMT
+# Fri, 26 Mar 2021 20:53:51 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.5.9-bin
-# Sat, 13 Mar 2021 02:32:06 GMT
+# Fri, 26 Mar 2021 20:54:04 GMT
 # ARGS: DISTRO_NAME=apache-zookeeper-3.5.9-bin GPG_KEY=3D296268A36FACA1B7EAF110792D43153B5B5147 SHORT_DISTRO_NAME=zookeeper-3.5.9
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
-# Sat, 13 Mar 2021 02:32:07 GMT
+# Fri, 26 Mar 2021 20:54:06 GMT
 WORKDIR /apache-zookeeper-3.5.9-bin
-# Sat, 13 Mar 2021 02:32:08 GMT
+# Fri, 26 Mar 2021 20:54:08 GMT
 VOLUME [/data /datalog /logs]
-# Sat, 13 Mar 2021 02:32:09 GMT
+# Fri, 26 Mar 2021 20:54:09 GMT
 EXPOSE 2181 2888 3888 8080
-# Sat, 13 Mar 2021 02:32:10 GMT
+# Fri, 26 Mar 2021 20:54:10 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.5.9-bin/bin ZOOCFGDIR=/conf
-# Sat, 13 Mar 2021 02:32:11 GMT
+# Fri, 26 Mar 2021 20:54:12 GMT
 COPY file:876dd2fa348f66a85a81dab4d431046f781ebc426b6fd355fdac0b388935e8d1 in / 
-# Sat, 13 Mar 2021 02:32:12 GMT
+# Fri, 26 Mar 2021 20:54:13 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 13 Mar 2021 02:32:13 GMT
+# Fri, 26 Mar 2021 20:54:14 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:706ee5d0a6b53d9257cbea22d8409fb22c867ab3a001c65f6b8bfd37dace0e58`  
-		Last Modified: Fri, 12 Mar 2021 02:01:39 GMT  
-		Size: 25.9 MB (25856512 bytes)  
+	-	`sha256:989f98f7e44fde3e2eb49bc6d2bfed15401201d21cd90f42cd9fc4c26eef8bb0`  
+		Last Modified: Fri, 26 Mar 2021 15:48:47 GMT  
+		Size: 25.9 MB (25856384 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:303a8d33f3a602102b6a15a1f7974fc79449cdcff2c2fa6709b56cd1ac792384`  
-		Last Modified: Fri, 12 Mar 2021 06:45:08 GMT  
-		Size: 3.1 MB (3118728 bytes)  
+	-	`sha256:844d8de9377aa4bd4c66d812b6226ebe8ebcb1dbbbdf3be6e3e9d0ea7363e0d3`  
+		Last Modified: Fri, 26 Mar 2021 19:50:29 GMT  
+		Size: 3.1 MB (3118857 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93b8b66a2613c2e81c20d5f33497aaa0c185225f7b1a0fc1478b628ad5bce829`  
-		Last Modified: Fri, 12 Mar 2021 06:49:58 GMT  
+	-	`sha256:a9e37c5f201dfc8f5b1032ffbbb31bc89047cdb56fad97bca2c885cc5a87f381`  
+		Last Modified: Fri, 26 Mar 2021 19:53:28 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b08a8fe7570eea8d3f52461e1667f5809826377f1ee2f99e5cc9690946de148`  
-		Last Modified: Fri, 12 Mar 2021 06:51:30 GMT  
-		Size: 46.1 MB (46108061 bytes)  
+	-	`sha256:388b7806583b38dcbfbb8b480904bd1aacbd80ec22df41d6ebedcba9632a2f5a`  
+		Last Modified: Fri, 26 Mar 2021 19:54:38 GMT  
+		Size: 46.1 MB (46106643 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1aad7c84afd135cda15e27d77b38fd5cf60ee1598f595f1d2af0ffca1243ba8c`  
-		Last Modified: Sat, 13 Mar 2021 02:33:06 GMT  
-		Size: 1.9 KB (1874 bytes)  
+	-	`sha256:499d693bf53f54b960c6a63c26b405f7922be22c21ef72d44e7797db1257c8aa`  
+		Last Modified: Fri, 26 Mar 2021 20:55:38 GMT  
+		Size: 1.9 KB (1875 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82f8f266d9716220e0c73195728d9ff57ae7400d61dbc8ebe560caf25d78c54c`  
-		Last Modified: Sat, 13 Mar 2021 02:33:08 GMT  
-		Size: 5.3 MB (5320113 bytes)  
+	-	`sha256:c495f7abf662cec05ec67961bf6e14d68941af88af9a827b304dcd48447b2fb9`  
+		Last Modified: Fri, 26 Mar 2021 20:55:39 GMT  
+		Size: 5.3 MB (5320129 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2cefc83107070e61999f1c3d37a477a012383b6ed3030f5c6266144b29138753`  
-		Last Modified: Sat, 13 Mar 2021 02:33:08 GMT  
-		Size: 9.6 MB (9581641 bytes)  
+	-	`sha256:ecc9972f6fc491d53ec5208e815a1c17bdefb69207b4d7a0531c72b0c0f1a7d2`  
+		Last Modified: Fri, 26 Mar 2021 20:55:40 GMT  
+		Size: 9.6 MB (9581593 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9740cb6f23b9136030f3c5478d27302febb6347c10f754e419ac5538bec0e2bd`  
-		Last Modified: Sat, 13 Mar 2021 02:33:06 GMT  
+	-	`sha256:5f5e5d790d8a1657d48b47672ba3a1312f818a2472a77272725a5f1c4d4832ea`  
+		Last Modified: Fri, 26 Mar 2021 20:55:38 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `zookeeper:3.6`
 
 ```console
-$ docker pull zookeeper@sha256:db63555c570ce9e9c52328e5a943edabc27d6b569e7d26791b7faa3f3d4d45ed
+$ docker pull zookeeper@sha256:ae4e5931adaa451812e14f9836bf82c2ea97ceab4d1d11e651595326841990e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -650,203 +650,203 @@ $ docker pull zookeeper@sha256:db63555c570ce9e9c52328e5a943edabc27d6b569e7d26791
 ### `zookeeper:3.6` - linux; amd64
 
 ```console
-$ docker pull zookeeper@sha256:00abf44186e442b19bb08bbe37700ac5a000d1df6ec0d06bc0dd5f9739ff9d00
+$ docker pull zookeeper@sha256:fb5b5b9bf4d3628a542a1b3872174154f4d5cfec10931519a42f99e3565c4b42
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **95.2 MB (95234133 bytes)**  
+-	Total Size: **95.2 MB (95234304 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5abde4d19465194825be129b2af1f40e63b96fbdf24d3b9de14dbe5854c6dec2`
+-	Image ID: `sha256:a7dfca58680ac01c83044a646671f66365eb868d6d1b095e4d65c0c998ac81ae`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Fri, 12 Mar 2021 02:20:40 GMT
-ADD file:3c32f1cd03198e141dd233a7ffd13444157d4150ad917d548f3ee9bf5953ce22 in / 
-# Fri, 12 Mar 2021 02:20:41 GMT
+# Fri, 26 Mar 2021 15:20:59 GMT
+ADD file:b2085f4b0a7cb0e5754874c712254e5cd941062b27b8d7ed2080520196b91597 in / 
+# Fri, 26 Mar 2021 15:20:59 GMT
 CMD ["bash"]
-# Fri, 12 Mar 2021 22:10:14 GMT
+# Fri, 26 Mar 2021 19:24:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 12 Mar 2021 22:14:08 GMT
+# Fri, 26 Mar 2021 19:26:55 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 12 Mar 2021 22:14:10 GMT
+# Fri, 26 Mar 2021 19:26:57 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Fri, 12 Mar 2021 22:14:10 GMT
+# Fri, 26 Mar 2021 19:26:57 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 12 Mar 2021 22:14:10 GMT
+# Fri, 26 Mar 2021 19:26:58 GMT
 ENV LANG=C.UTF-8
-# Fri, 12 Mar 2021 22:14:10 GMT
+# Fri, 26 Mar 2021 19:26:58 GMT
 ENV JAVA_VERSION=11.0.10
-# Fri, 12 Mar 2021 22:15:26 GMT
+# Fri, 26 Mar 2021 19:27:45 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_x64_linux_11.0.10_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_aarch64_linux_11.0.10_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Sat, 13 Mar 2021 15:53:30 GMT
+# Fri, 26 Mar 2021 20:00:58 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Sat, 13 Mar 2021 15:53:31 GMT
+# Fri, 26 Mar 2021 20:00:59 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR"
-# Sat, 13 Mar 2021 15:54:06 GMT
+# Fri, 26 Mar 2021 20:01:25 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Sat, 13 Mar 2021 15:54:06 GMT
+# Fri, 26 Mar 2021 20:01:26 GMT
 ARG GPG_KEY=BBE7232D7991050B54C8EA0ADC08637CA615D22C
-# Sat, 13 Mar 2021 15:54:06 GMT
+# Fri, 26 Mar 2021 20:01:26 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.6.2
-# Sat, 13 Mar 2021 15:54:06 GMT
+# Fri, 26 Mar 2021 20:01:26 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.6.2-bin
-# Sat, 13 Mar 2021 15:54:11 GMT
+# Fri, 26 Mar 2021 20:01:34 GMT
 # ARGS: DISTRO_NAME=apache-zookeeper-3.6.2-bin GPG_KEY=BBE7232D7991050B54C8EA0ADC08637CA615D22C SHORT_DISTRO_NAME=zookeeper-3.6.2
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
-# Sat, 13 Mar 2021 15:54:12 GMT
+# Fri, 26 Mar 2021 20:01:34 GMT
 WORKDIR /apache-zookeeper-3.6.2-bin
-# Sat, 13 Mar 2021 15:54:12 GMT
+# Fri, 26 Mar 2021 20:01:34 GMT
 VOLUME [/data /datalog /logs]
-# Sat, 13 Mar 2021 15:54:12 GMT
+# Fri, 26 Mar 2021 20:01:35 GMT
 EXPOSE 2181 2888 3888 8080
-# Sat, 13 Mar 2021 15:54:12 GMT
+# Fri, 26 Mar 2021 20:01:35 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.6.2-bin/bin ZOOCFGDIR=/conf
-# Sat, 13 Mar 2021 15:54:13 GMT
+# Fri, 26 Mar 2021 20:01:35 GMT
 COPY file:876dd2fa348f66a85a81dab4d431046f781ebc426b6fd355fdac0b388935e8d1 in / 
-# Sat, 13 Mar 2021 15:54:13 GMT
+# Fri, 26 Mar 2021 20:01:35 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 13 Mar 2021 15:54:13 GMT
+# Fri, 26 Mar 2021 20:01:36 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:6f28985ad1843afd6fd4fe0b42a30bfab63c27d302362e7341e3316e8ba25ced`  
-		Last Modified: Fri, 12 Mar 2021 02:26:11 GMT  
-		Size: 27.1 MB (27101001 bytes)  
+	-	`sha256:ac2522cc72690febc428fb46fb39a4efc5e0a721c3ad15d9992b01515f2fad1a`  
+		Last Modified: Fri, 26 Mar 2021 15:27:47 GMT  
+		Size: 27.1 MB (27100996 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3555c3885852c38ecf4a297b798053677bc7553f9c7631788ef75e35cb4262c`  
-		Last Modified: Fri, 12 Mar 2021 22:22:18 GMT  
-		Size: 3.3 MB (3268564 bytes)  
+	-	`sha256:42f37f3c8df9c4599e86451848bc7d181558d9106306657ffef1e8a59f44b7f7`  
+		Last Modified: Fri, 26 Mar 2021 19:32:50 GMT  
+		Size: 3.3 MB (3268744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42965fccf40100a915fa0b4b20946987c4e330948b82f687f22d7b6575473af0`  
-		Last Modified: Fri, 12 Mar 2021 22:27:57 GMT  
+	-	`sha256:a456ec241295190817bf2dc268114e0680561fcd6bdf987721a8d84391cfd1bf`  
+		Last Modified: Fri, 26 Mar 2021 19:35:57 GMT  
 		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:484bb3bd28a7ad59d605f58597d0bf81c9b10fcea21d4b7f705d594cc4c793c5`  
-		Last Modified: Fri, 12 Mar 2021 22:29:24 GMT  
-		Size: 47.0 MB (47042875 bytes)  
+	-	`sha256:fc8a22e415cfb290fead90c0f86c1aa4e0ac2c1d0b86722ea7e1da90873f2527`  
+		Last Modified: Fri, 26 Mar 2021 19:37:07 GMT  
+		Size: 47.0 MB (47042908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7e2399eaa776bd55e614f71d3420e014413d46b34f56b3bf66fb3f40d43b6be`  
-		Last Modified: Sat, 13 Mar 2021 15:54:46 GMT  
-		Size: 1.9 KB (1872 bytes)  
+	-	`sha256:0992e1d972cfde0058cdf5e014872f4f70f047c43a0eea8b6bdce61c6c807bfa`  
+		Last Modified: Fri, 26 Mar 2021 20:02:10 GMT  
+		Size: 1.9 KB (1871 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0de4824788ba7d4e5f186a6432f9f59410276e49ed00612973a8226c13f5852`  
-		Last Modified: Sat, 13 Mar 2021 15:54:59 GMT  
-		Size: 5.4 MB (5384573 bytes)  
+	-	`sha256:9dbfd93de908f32945153a3a8510ca44c8cefec551a82fe91838cfa2e1769453`  
+		Last Modified: Fri, 26 Mar 2021 20:02:23 GMT  
+		Size: 5.4 MB (5384527 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60733754d5d35ec8230c4173eaab7a0872a305e3ccc222e64333c9bcf804470a`  
-		Last Modified: Sat, 13 Mar 2021 15:54:59 GMT  
-		Size: 12.4 MB (12434260 bytes)  
+	-	`sha256:f95cab5fa2376700a5ec5628fe17e3634c9c7b49533ae29b37232680799e7b88`  
+		Last Modified: Fri, 26 Mar 2021 20:02:23 GMT  
+		Size: 12.4 MB (12434270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aaa735978890c16ce89d04516d0e915a153601ae9fbad37f295c8247bed5eb61`  
-		Last Modified: Sat, 13 Mar 2021 15:54:57 GMT  
+	-	`sha256:87a10fd62e0ef513e11e58cc61bf71ed2e382381c27657c800eb6bb207906d15`  
+		Last Modified: Fri, 26 Mar 2021 20:02:22 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `zookeeper:3.6` - linux; arm64 variant v8
 
 ```console
-$ docker pull zookeeper@sha256:7249ca02269b5abd1e036eaef38da3711bcd7dfc92877e7139730a598e031544
+$ docker pull zookeeper@sha256:abc5e56aecdd068df0bb0540ab9a31f13ae66c659fbf3ba06e17595f504c765f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.8 MB (92840523 bytes)**  
+-	Total Size: **92.8 MB (92839030 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:857c130363ef3493ea83859affd3ec5b10f57e75b4b3251f04ad78ec0e221f6a`
+-	Image ID: `sha256:7ab50176826c2511d1297d8c7d1a9f9e508fb948d956099888812bbba655c636`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Fri, 12 Mar 2021 01:53:53 GMT
-ADD file:6130ddc0a939dd72c0614de4aa77de47aa16fe211274bacb31995aa1a0526164 in / 
-# Fri, 12 Mar 2021 01:53:56 GMT
+# Fri, 26 Mar 2021 15:41:54 GMT
+ADD file:c8c0d923527574a26725e0a1995051870ed169ff6b6ebfe77c50810f5583690b in / 
+# Fri, 26 Mar 2021 15:41:56 GMT
 CMD ["bash"]
-# Fri, 12 Mar 2021 06:34:53 GMT
+# Fri, 26 Mar 2021 19:43:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 12 Mar 2021 06:40:23 GMT
+# Fri, 26 Mar 2021 19:46:29 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 12 Mar 2021 06:40:25 GMT
+# Fri, 26 Mar 2021 19:46:31 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Fri, 12 Mar 2021 06:40:26 GMT
+# Fri, 26 Mar 2021 19:46:45 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 12 Mar 2021 06:40:26 GMT
+# Fri, 26 Mar 2021 19:46:46 GMT
 ENV LANG=C.UTF-8
-# Fri, 12 Mar 2021 06:40:27 GMT
+# Fri, 26 Mar 2021 19:46:46 GMT
 ENV JAVA_VERSION=11.0.10
-# Fri, 12 Mar 2021 06:42:19 GMT
+# Fri, 26 Mar 2021 19:48:06 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_x64_linux_11.0.10_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_aarch64_linux_11.0.10_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Sat, 13 Mar 2021 02:31:41 GMT
+# Fri, 26 Mar 2021 20:53:17 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Sat, 13 Mar 2021 02:31:44 GMT
+# Fri, 26 Mar 2021 20:53:22 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR"
-# Sat, 13 Mar 2021 02:32:36 GMT
+# Fri, 26 Mar 2021 20:54:37 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Sat, 13 Mar 2021 02:32:37 GMT
+# Fri, 26 Mar 2021 20:54:38 GMT
 ARG GPG_KEY=BBE7232D7991050B54C8EA0ADC08637CA615D22C
-# Sat, 13 Mar 2021 02:32:37 GMT
+# Fri, 26 Mar 2021 20:54:39 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.6.2
-# Sat, 13 Mar 2021 02:32:38 GMT
+# Fri, 26 Mar 2021 20:54:40 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.6.2-bin
-# Sat, 13 Mar 2021 02:32:46 GMT
+# Fri, 26 Mar 2021 20:55:03 GMT
 # ARGS: DISTRO_NAME=apache-zookeeper-3.6.2-bin GPG_KEY=BBE7232D7991050B54C8EA0ADC08637CA615D22C SHORT_DISTRO_NAME=zookeeper-3.6.2
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
-# Sat, 13 Mar 2021 02:32:47 GMT
+# Fri, 26 Mar 2021 20:55:04 GMT
 WORKDIR /apache-zookeeper-3.6.2-bin
-# Sat, 13 Mar 2021 02:32:48 GMT
+# Fri, 26 Mar 2021 20:55:06 GMT
 VOLUME [/data /datalog /logs]
-# Sat, 13 Mar 2021 02:32:49 GMT
+# Fri, 26 Mar 2021 20:55:08 GMT
 EXPOSE 2181 2888 3888 8080
-# Sat, 13 Mar 2021 02:32:50 GMT
+# Fri, 26 Mar 2021 20:55:10 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.6.2-bin/bin ZOOCFGDIR=/conf
-# Sat, 13 Mar 2021 02:32:51 GMT
+# Fri, 26 Mar 2021 20:55:11 GMT
 COPY file:876dd2fa348f66a85a81dab4d431046f781ebc426b6fd355fdac0b388935e8d1 in / 
-# Sat, 13 Mar 2021 02:32:51 GMT
+# Fri, 26 Mar 2021 20:55:13 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 13 Mar 2021 02:32:52 GMT
+# Fri, 26 Mar 2021 20:55:14 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:706ee5d0a6b53d9257cbea22d8409fb22c867ab3a001c65f6b8bfd37dace0e58`  
-		Last Modified: Fri, 12 Mar 2021 02:01:39 GMT  
-		Size: 25.9 MB (25856512 bytes)  
+	-	`sha256:989f98f7e44fde3e2eb49bc6d2bfed15401201d21cd90f42cd9fc4c26eef8bb0`  
+		Last Modified: Fri, 26 Mar 2021 15:48:47 GMT  
+		Size: 25.9 MB (25856384 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:303a8d33f3a602102b6a15a1f7974fc79449cdcff2c2fa6709b56cd1ac792384`  
-		Last Modified: Fri, 12 Mar 2021 06:45:08 GMT  
-		Size: 3.1 MB (3118728 bytes)  
+	-	`sha256:844d8de9377aa4bd4c66d812b6226ebe8ebcb1dbbbdf3be6e3e9d0ea7363e0d3`  
+		Last Modified: Fri, 26 Mar 2021 19:50:29 GMT  
+		Size: 3.1 MB (3118857 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93b8b66a2613c2e81c20d5f33497aaa0c185225f7b1a0fc1478b628ad5bce829`  
-		Last Modified: Fri, 12 Mar 2021 06:49:58 GMT  
+	-	`sha256:a9e37c5f201dfc8f5b1032ffbbb31bc89047cdb56fad97bca2c885cc5a87f381`  
+		Last Modified: Fri, 26 Mar 2021 19:53:28 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b08a8fe7570eea8d3f52461e1667f5809826377f1ee2f99e5cc9690946de148`  
-		Last Modified: Fri, 12 Mar 2021 06:51:30 GMT  
-		Size: 46.1 MB (46108061 bytes)  
+	-	`sha256:388b7806583b38dcbfbb8b480904bd1aacbd80ec22df41d6ebedcba9632a2f5a`  
+		Last Modified: Fri, 26 Mar 2021 19:54:38 GMT  
+		Size: 46.1 MB (46106643 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1aad7c84afd135cda15e27d77b38fd5cf60ee1598f595f1d2af0ffca1243ba8c`  
-		Last Modified: Sat, 13 Mar 2021 02:33:06 GMT  
-		Size: 1.9 KB (1874 bytes)  
+	-	`sha256:499d693bf53f54b960c6a63c26b405f7922be22c21ef72d44e7797db1257c8aa`  
+		Last Modified: Fri, 26 Mar 2021 20:55:38 GMT  
+		Size: 1.9 KB (1875 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25f16ab0b78dab1dc9e800cb756cce41d6ba0b1e3c40e2dae9a9f399130c5e00`  
-		Last Modified: Sat, 13 Mar 2021 02:33:16 GMT  
-		Size: 5.3 MB (5320117 bytes)  
+	-	`sha256:fe83dab2ee5efeb3e3f5cb6165da0171e286ddeb18b2e7aab198985229b090a7`  
+		Last Modified: Fri, 26 Mar 2021 20:55:47 GMT  
+		Size: 5.3 MB (5320008 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:056f6684a5621d51ea1554664fb528cadb4fb6506e6a299b3fc3f8dfc6d60025`  
-		Last Modified: Sat, 13 Mar 2021 02:33:17 GMT  
-		Size: 12.4 MB (12434244 bytes)  
+	-	`sha256:1271da6928ed673280257965025e378b61bf5532aaad43e9ac38ea8a4efae57f`  
+		Last Modified: Fri, 26 Mar 2021 20:55:53 GMT  
+		Size: 12.4 MB (12434279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e63f3284bb15ae11aecf37479a00bd2bc85807c21b6ca48323b76dd96d228687`  
-		Last Modified: Sat, 13 Mar 2021 02:33:15 GMT  
-		Size: 776.0 B  
+	-	`sha256:f5c1ed49d31edc63da58740187f789f2ab70dbf65edd477caa26ba95b600e763`  
+		Last Modified: Fri, 26 Mar 2021 20:55:46 GMT  
+		Size: 773.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `zookeeper:3.6.2`
 
 ```console
-$ docker pull zookeeper@sha256:db63555c570ce9e9c52328e5a943edabc27d6b569e7d26791b7faa3f3d4d45ed
+$ docker pull zookeeper@sha256:ae4e5931adaa451812e14f9836bf82c2ea97ceab4d1d11e651595326841990e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -857,203 +857,203 @@ $ docker pull zookeeper@sha256:db63555c570ce9e9c52328e5a943edabc27d6b569e7d26791
 ### `zookeeper:3.6.2` - linux; amd64
 
 ```console
-$ docker pull zookeeper@sha256:00abf44186e442b19bb08bbe37700ac5a000d1df6ec0d06bc0dd5f9739ff9d00
+$ docker pull zookeeper@sha256:fb5b5b9bf4d3628a542a1b3872174154f4d5cfec10931519a42f99e3565c4b42
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **95.2 MB (95234133 bytes)**  
+-	Total Size: **95.2 MB (95234304 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5abde4d19465194825be129b2af1f40e63b96fbdf24d3b9de14dbe5854c6dec2`
+-	Image ID: `sha256:a7dfca58680ac01c83044a646671f66365eb868d6d1b095e4d65c0c998ac81ae`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Fri, 12 Mar 2021 02:20:40 GMT
-ADD file:3c32f1cd03198e141dd233a7ffd13444157d4150ad917d548f3ee9bf5953ce22 in / 
-# Fri, 12 Mar 2021 02:20:41 GMT
+# Fri, 26 Mar 2021 15:20:59 GMT
+ADD file:b2085f4b0a7cb0e5754874c712254e5cd941062b27b8d7ed2080520196b91597 in / 
+# Fri, 26 Mar 2021 15:20:59 GMT
 CMD ["bash"]
-# Fri, 12 Mar 2021 22:10:14 GMT
+# Fri, 26 Mar 2021 19:24:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 12 Mar 2021 22:14:08 GMT
+# Fri, 26 Mar 2021 19:26:55 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 12 Mar 2021 22:14:10 GMT
+# Fri, 26 Mar 2021 19:26:57 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Fri, 12 Mar 2021 22:14:10 GMT
+# Fri, 26 Mar 2021 19:26:57 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 12 Mar 2021 22:14:10 GMT
+# Fri, 26 Mar 2021 19:26:58 GMT
 ENV LANG=C.UTF-8
-# Fri, 12 Mar 2021 22:14:10 GMT
+# Fri, 26 Mar 2021 19:26:58 GMT
 ENV JAVA_VERSION=11.0.10
-# Fri, 12 Mar 2021 22:15:26 GMT
+# Fri, 26 Mar 2021 19:27:45 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_x64_linux_11.0.10_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_aarch64_linux_11.0.10_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Sat, 13 Mar 2021 15:53:30 GMT
+# Fri, 26 Mar 2021 20:00:58 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Sat, 13 Mar 2021 15:53:31 GMT
+# Fri, 26 Mar 2021 20:00:59 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR"
-# Sat, 13 Mar 2021 15:54:06 GMT
+# Fri, 26 Mar 2021 20:01:25 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Sat, 13 Mar 2021 15:54:06 GMT
+# Fri, 26 Mar 2021 20:01:26 GMT
 ARG GPG_KEY=BBE7232D7991050B54C8EA0ADC08637CA615D22C
-# Sat, 13 Mar 2021 15:54:06 GMT
+# Fri, 26 Mar 2021 20:01:26 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.6.2
-# Sat, 13 Mar 2021 15:54:06 GMT
+# Fri, 26 Mar 2021 20:01:26 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.6.2-bin
-# Sat, 13 Mar 2021 15:54:11 GMT
+# Fri, 26 Mar 2021 20:01:34 GMT
 # ARGS: DISTRO_NAME=apache-zookeeper-3.6.2-bin GPG_KEY=BBE7232D7991050B54C8EA0ADC08637CA615D22C SHORT_DISTRO_NAME=zookeeper-3.6.2
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
-# Sat, 13 Mar 2021 15:54:12 GMT
+# Fri, 26 Mar 2021 20:01:34 GMT
 WORKDIR /apache-zookeeper-3.6.2-bin
-# Sat, 13 Mar 2021 15:54:12 GMT
+# Fri, 26 Mar 2021 20:01:34 GMT
 VOLUME [/data /datalog /logs]
-# Sat, 13 Mar 2021 15:54:12 GMT
+# Fri, 26 Mar 2021 20:01:35 GMT
 EXPOSE 2181 2888 3888 8080
-# Sat, 13 Mar 2021 15:54:12 GMT
+# Fri, 26 Mar 2021 20:01:35 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.6.2-bin/bin ZOOCFGDIR=/conf
-# Sat, 13 Mar 2021 15:54:13 GMT
+# Fri, 26 Mar 2021 20:01:35 GMT
 COPY file:876dd2fa348f66a85a81dab4d431046f781ebc426b6fd355fdac0b388935e8d1 in / 
-# Sat, 13 Mar 2021 15:54:13 GMT
+# Fri, 26 Mar 2021 20:01:35 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 13 Mar 2021 15:54:13 GMT
+# Fri, 26 Mar 2021 20:01:36 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:6f28985ad1843afd6fd4fe0b42a30bfab63c27d302362e7341e3316e8ba25ced`  
-		Last Modified: Fri, 12 Mar 2021 02:26:11 GMT  
-		Size: 27.1 MB (27101001 bytes)  
+	-	`sha256:ac2522cc72690febc428fb46fb39a4efc5e0a721c3ad15d9992b01515f2fad1a`  
+		Last Modified: Fri, 26 Mar 2021 15:27:47 GMT  
+		Size: 27.1 MB (27100996 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3555c3885852c38ecf4a297b798053677bc7553f9c7631788ef75e35cb4262c`  
-		Last Modified: Fri, 12 Mar 2021 22:22:18 GMT  
-		Size: 3.3 MB (3268564 bytes)  
+	-	`sha256:42f37f3c8df9c4599e86451848bc7d181558d9106306657ffef1e8a59f44b7f7`  
+		Last Modified: Fri, 26 Mar 2021 19:32:50 GMT  
+		Size: 3.3 MB (3268744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42965fccf40100a915fa0b4b20946987c4e330948b82f687f22d7b6575473af0`  
-		Last Modified: Fri, 12 Mar 2021 22:27:57 GMT  
+	-	`sha256:a456ec241295190817bf2dc268114e0680561fcd6bdf987721a8d84391cfd1bf`  
+		Last Modified: Fri, 26 Mar 2021 19:35:57 GMT  
 		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:484bb3bd28a7ad59d605f58597d0bf81c9b10fcea21d4b7f705d594cc4c793c5`  
-		Last Modified: Fri, 12 Mar 2021 22:29:24 GMT  
-		Size: 47.0 MB (47042875 bytes)  
+	-	`sha256:fc8a22e415cfb290fead90c0f86c1aa4e0ac2c1d0b86722ea7e1da90873f2527`  
+		Last Modified: Fri, 26 Mar 2021 19:37:07 GMT  
+		Size: 47.0 MB (47042908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7e2399eaa776bd55e614f71d3420e014413d46b34f56b3bf66fb3f40d43b6be`  
-		Last Modified: Sat, 13 Mar 2021 15:54:46 GMT  
-		Size: 1.9 KB (1872 bytes)  
+	-	`sha256:0992e1d972cfde0058cdf5e014872f4f70f047c43a0eea8b6bdce61c6c807bfa`  
+		Last Modified: Fri, 26 Mar 2021 20:02:10 GMT  
+		Size: 1.9 KB (1871 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0de4824788ba7d4e5f186a6432f9f59410276e49ed00612973a8226c13f5852`  
-		Last Modified: Sat, 13 Mar 2021 15:54:59 GMT  
-		Size: 5.4 MB (5384573 bytes)  
+	-	`sha256:9dbfd93de908f32945153a3a8510ca44c8cefec551a82fe91838cfa2e1769453`  
+		Last Modified: Fri, 26 Mar 2021 20:02:23 GMT  
+		Size: 5.4 MB (5384527 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60733754d5d35ec8230c4173eaab7a0872a305e3ccc222e64333c9bcf804470a`  
-		Last Modified: Sat, 13 Mar 2021 15:54:59 GMT  
-		Size: 12.4 MB (12434260 bytes)  
+	-	`sha256:f95cab5fa2376700a5ec5628fe17e3634c9c7b49533ae29b37232680799e7b88`  
+		Last Modified: Fri, 26 Mar 2021 20:02:23 GMT  
+		Size: 12.4 MB (12434270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aaa735978890c16ce89d04516d0e915a153601ae9fbad37f295c8247bed5eb61`  
-		Last Modified: Sat, 13 Mar 2021 15:54:57 GMT  
+	-	`sha256:87a10fd62e0ef513e11e58cc61bf71ed2e382381c27657c800eb6bb207906d15`  
+		Last Modified: Fri, 26 Mar 2021 20:02:22 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `zookeeper:3.6.2` - linux; arm64 variant v8
 
 ```console
-$ docker pull zookeeper@sha256:7249ca02269b5abd1e036eaef38da3711bcd7dfc92877e7139730a598e031544
+$ docker pull zookeeper@sha256:abc5e56aecdd068df0bb0540ab9a31f13ae66c659fbf3ba06e17595f504c765f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.8 MB (92840523 bytes)**  
+-	Total Size: **92.8 MB (92839030 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:857c130363ef3493ea83859affd3ec5b10f57e75b4b3251f04ad78ec0e221f6a`
+-	Image ID: `sha256:7ab50176826c2511d1297d8c7d1a9f9e508fb948d956099888812bbba655c636`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Fri, 12 Mar 2021 01:53:53 GMT
-ADD file:6130ddc0a939dd72c0614de4aa77de47aa16fe211274bacb31995aa1a0526164 in / 
-# Fri, 12 Mar 2021 01:53:56 GMT
+# Fri, 26 Mar 2021 15:41:54 GMT
+ADD file:c8c0d923527574a26725e0a1995051870ed169ff6b6ebfe77c50810f5583690b in / 
+# Fri, 26 Mar 2021 15:41:56 GMT
 CMD ["bash"]
-# Fri, 12 Mar 2021 06:34:53 GMT
+# Fri, 26 Mar 2021 19:43:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 12 Mar 2021 06:40:23 GMT
+# Fri, 26 Mar 2021 19:46:29 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 12 Mar 2021 06:40:25 GMT
+# Fri, 26 Mar 2021 19:46:31 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Fri, 12 Mar 2021 06:40:26 GMT
+# Fri, 26 Mar 2021 19:46:45 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 12 Mar 2021 06:40:26 GMT
+# Fri, 26 Mar 2021 19:46:46 GMT
 ENV LANG=C.UTF-8
-# Fri, 12 Mar 2021 06:40:27 GMT
+# Fri, 26 Mar 2021 19:46:46 GMT
 ENV JAVA_VERSION=11.0.10
-# Fri, 12 Mar 2021 06:42:19 GMT
+# Fri, 26 Mar 2021 19:48:06 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_x64_linux_11.0.10_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_aarch64_linux_11.0.10_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Sat, 13 Mar 2021 02:31:41 GMT
+# Fri, 26 Mar 2021 20:53:17 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Sat, 13 Mar 2021 02:31:44 GMT
+# Fri, 26 Mar 2021 20:53:22 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR"
-# Sat, 13 Mar 2021 02:32:36 GMT
+# Fri, 26 Mar 2021 20:54:37 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Sat, 13 Mar 2021 02:32:37 GMT
+# Fri, 26 Mar 2021 20:54:38 GMT
 ARG GPG_KEY=BBE7232D7991050B54C8EA0ADC08637CA615D22C
-# Sat, 13 Mar 2021 02:32:37 GMT
+# Fri, 26 Mar 2021 20:54:39 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.6.2
-# Sat, 13 Mar 2021 02:32:38 GMT
+# Fri, 26 Mar 2021 20:54:40 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.6.2-bin
-# Sat, 13 Mar 2021 02:32:46 GMT
+# Fri, 26 Mar 2021 20:55:03 GMT
 # ARGS: DISTRO_NAME=apache-zookeeper-3.6.2-bin GPG_KEY=BBE7232D7991050B54C8EA0ADC08637CA615D22C SHORT_DISTRO_NAME=zookeeper-3.6.2
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
-# Sat, 13 Mar 2021 02:32:47 GMT
+# Fri, 26 Mar 2021 20:55:04 GMT
 WORKDIR /apache-zookeeper-3.6.2-bin
-# Sat, 13 Mar 2021 02:32:48 GMT
+# Fri, 26 Mar 2021 20:55:06 GMT
 VOLUME [/data /datalog /logs]
-# Sat, 13 Mar 2021 02:32:49 GMT
+# Fri, 26 Mar 2021 20:55:08 GMT
 EXPOSE 2181 2888 3888 8080
-# Sat, 13 Mar 2021 02:32:50 GMT
+# Fri, 26 Mar 2021 20:55:10 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.6.2-bin/bin ZOOCFGDIR=/conf
-# Sat, 13 Mar 2021 02:32:51 GMT
+# Fri, 26 Mar 2021 20:55:11 GMT
 COPY file:876dd2fa348f66a85a81dab4d431046f781ebc426b6fd355fdac0b388935e8d1 in / 
-# Sat, 13 Mar 2021 02:32:51 GMT
+# Fri, 26 Mar 2021 20:55:13 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 13 Mar 2021 02:32:52 GMT
+# Fri, 26 Mar 2021 20:55:14 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:706ee5d0a6b53d9257cbea22d8409fb22c867ab3a001c65f6b8bfd37dace0e58`  
-		Last Modified: Fri, 12 Mar 2021 02:01:39 GMT  
-		Size: 25.9 MB (25856512 bytes)  
+	-	`sha256:989f98f7e44fde3e2eb49bc6d2bfed15401201d21cd90f42cd9fc4c26eef8bb0`  
+		Last Modified: Fri, 26 Mar 2021 15:48:47 GMT  
+		Size: 25.9 MB (25856384 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:303a8d33f3a602102b6a15a1f7974fc79449cdcff2c2fa6709b56cd1ac792384`  
-		Last Modified: Fri, 12 Mar 2021 06:45:08 GMT  
-		Size: 3.1 MB (3118728 bytes)  
+	-	`sha256:844d8de9377aa4bd4c66d812b6226ebe8ebcb1dbbbdf3be6e3e9d0ea7363e0d3`  
+		Last Modified: Fri, 26 Mar 2021 19:50:29 GMT  
+		Size: 3.1 MB (3118857 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93b8b66a2613c2e81c20d5f33497aaa0c185225f7b1a0fc1478b628ad5bce829`  
-		Last Modified: Fri, 12 Mar 2021 06:49:58 GMT  
+	-	`sha256:a9e37c5f201dfc8f5b1032ffbbb31bc89047cdb56fad97bca2c885cc5a87f381`  
+		Last Modified: Fri, 26 Mar 2021 19:53:28 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b08a8fe7570eea8d3f52461e1667f5809826377f1ee2f99e5cc9690946de148`  
-		Last Modified: Fri, 12 Mar 2021 06:51:30 GMT  
-		Size: 46.1 MB (46108061 bytes)  
+	-	`sha256:388b7806583b38dcbfbb8b480904bd1aacbd80ec22df41d6ebedcba9632a2f5a`  
+		Last Modified: Fri, 26 Mar 2021 19:54:38 GMT  
+		Size: 46.1 MB (46106643 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1aad7c84afd135cda15e27d77b38fd5cf60ee1598f595f1d2af0ffca1243ba8c`  
-		Last Modified: Sat, 13 Mar 2021 02:33:06 GMT  
-		Size: 1.9 KB (1874 bytes)  
+	-	`sha256:499d693bf53f54b960c6a63c26b405f7922be22c21ef72d44e7797db1257c8aa`  
+		Last Modified: Fri, 26 Mar 2021 20:55:38 GMT  
+		Size: 1.9 KB (1875 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25f16ab0b78dab1dc9e800cb756cce41d6ba0b1e3c40e2dae9a9f399130c5e00`  
-		Last Modified: Sat, 13 Mar 2021 02:33:16 GMT  
-		Size: 5.3 MB (5320117 bytes)  
+	-	`sha256:fe83dab2ee5efeb3e3f5cb6165da0171e286ddeb18b2e7aab198985229b090a7`  
+		Last Modified: Fri, 26 Mar 2021 20:55:47 GMT  
+		Size: 5.3 MB (5320008 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:056f6684a5621d51ea1554664fb528cadb4fb6506e6a299b3fc3f8dfc6d60025`  
-		Last Modified: Sat, 13 Mar 2021 02:33:17 GMT  
-		Size: 12.4 MB (12434244 bytes)  
+	-	`sha256:1271da6928ed673280257965025e378b61bf5532aaad43e9ac38ea8a4efae57f`  
+		Last Modified: Fri, 26 Mar 2021 20:55:53 GMT  
+		Size: 12.4 MB (12434279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e63f3284bb15ae11aecf37479a00bd2bc85807c21b6ca48323b76dd96d228687`  
-		Last Modified: Sat, 13 Mar 2021 02:33:15 GMT  
-		Size: 776.0 B  
+	-	`sha256:f5c1ed49d31edc63da58740187f789f2ab70dbf65edd477caa26ba95b600e763`  
+		Last Modified: Fri, 26 Mar 2021 20:55:46 GMT  
+		Size: 773.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `zookeeper:latest`
 
 ```console
-$ docker pull zookeeper@sha256:db63555c570ce9e9c52328e5a943edabc27d6b569e7d26791b7faa3f3d4d45ed
+$ docker pull zookeeper@sha256:ae4e5931adaa451812e14f9836bf82c2ea97ceab4d1d11e651595326841990e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1064,195 +1064,195 @@ $ docker pull zookeeper@sha256:db63555c570ce9e9c52328e5a943edabc27d6b569e7d26791
 ### `zookeeper:latest` - linux; amd64
 
 ```console
-$ docker pull zookeeper@sha256:00abf44186e442b19bb08bbe37700ac5a000d1df6ec0d06bc0dd5f9739ff9d00
+$ docker pull zookeeper@sha256:fb5b5b9bf4d3628a542a1b3872174154f4d5cfec10931519a42f99e3565c4b42
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **95.2 MB (95234133 bytes)**  
+-	Total Size: **95.2 MB (95234304 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5abde4d19465194825be129b2af1f40e63b96fbdf24d3b9de14dbe5854c6dec2`
+-	Image ID: `sha256:a7dfca58680ac01c83044a646671f66365eb868d6d1b095e4d65c0c998ac81ae`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Fri, 12 Mar 2021 02:20:40 GMT
-ADD file:3c32f1cd03198e141dd233a7ffd13444157d4150ad917d548f3ee9bf5953ce22 in / 
-# Fri, 12 Mar 2021 02:20:41 GMT
+# Fri, 26 Mar 2021 15:20:59 GMT
+ADD file:b2085f4b0a7cb0e5754874c712254e5cd941062b27b8d7ed2080520196b91597 in / 
+# Fri, 26 Mar 2021 15:20:59 GMT
 CMD ["bash"]
-# Fri, 12 Mar 2021 22:10:14 GMT
+# Fri, 26 Mar 2021 19:24:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 12 Mar 2021 22:14:08 GMT
+# Fri, 26 Mar 2021 19:26:55 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 12 Mar 2021 22:14:10 GMT
+# Fri, 26 Mar 2021 19:26:57 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Fri, 12 Mar 2021 22:14:10 GMT
+# Fri, 26 Mar 2021 19:26:57 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 12 Mar 2021 22:14:10 GMT
+# Fri, 26 Mar 2021 19:26:58 GMT
 ENV LANG=C.UTF-8
-# Fri, 12 Mar 2021 22:14:10 GMT
+# Fri, 26 Mar 2021 19:26:58 GMT
 ENV JAVA_VERSION=11.0.10
-# Fri, 12 Mar 2021 22:15:26 GMT
+# Fri, 26 Mar 2021 19:27:45 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_x64_linux_11.0.10_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_aarch64_linux_11.0.10_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Sat, 13 Mar 2021 15:53:30 GMT
+# Fri, 26 Mar 2021 20:00:58 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Sat, 13 Mar 2021 15:53:31 GMT
+# Fri, 26 Mar 2021 20:00:59 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR"
-# Sat, 13 Mar 2021 15:54:06 GMT
+# Fri, 26 Mar 2021 20:01:25 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Sat, 13 Mar 2021 15:54:06 GMT
+# Fri, 26 Mar 2021 20:01:26 GMT
 ARG GPG_KEY=BBE7232D7991050B54C8EA0ADC08637CA615D22C
-# Sat, 13 Mar 2021 15:54:06 GMT
+# Fri, 26 Mar 2021 20:01:26 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.6.2
-# Sat, 13 Mar 2021 15:54:06 GMT
+# Fri, 26 Mar 2021 20:01:26 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.6.2-bin
-# Sat, 13 Mar 2021 15:54:11 GMT
+# Fri, 26 Mar 2021 20:01:34 GMT
 # ARGS: DISTRO_NAME=apache-zookeeper-3.6.2-bin GPG_KEY=BBE7232D7991050B54C8EA0ADC08637CA615D22C SHORT_DISTRO_NAME=zookeeper-3.6.2
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
-# Sat, 13 Mar 2021 15:54:12 GMT
+# Fri, 26 Mar 2021 20:01:34 GMT
 WORKDIR /apache-zookeeper-3.6.2-bin
-# Sat, 13 Mar 2021 15:54:12 GMT
+# Fri, 26 Mar 2021 20:01:34 GMT
 VOLUME [/data /datalog /logs]
-# Sat, 13 Mar 2021 15:54:12 GMT
+# Fri, 26 Mar 2021 20:01:35 GMT
 EXPOSE 2181 2888 3888 8080
-# Sat, 13 Mar 2021 15:54:12 GMT
+# Fri, 26 Mar 2021 20:01:35 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.6.2-bin/bin ZOOCFGDIR=/conf
-# Sat, 13 Mar 2021 15:54:13 GMT
+# Fri, 26 Mar 2021 20:01:35 GMT
 COPY file:876dd2fa348f66a85a81dab4d431046f781ebc426b6fd355fdac0b388935e8d1 in / 
-# Sat, 13 Mar 2021 15:54:13 GMT
+# Fri, 26 Mar 2021 20:01:35 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 13 Mar 2021 15:54:13 GMT
+# Fri, 26 Mar 2021 20:01:36 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:6f28985ad1843afd6fd4fe0b42a30bfab63c27d302362e7341e3316e8ba25ced`  
-		Last Modified: Fri, 12 Mar 2021 02:26:11 GMT  
-		Size: 27.1 MB (27101001 bytes)  
+	-	`sha256:ac2522cc72690febc428fb46fb39a4efc5e0a721c3ad15d9992b01515f2fad1a`  
+		Last Modified: Fri, 26 Mar 2021 15:27:47 GMT  
+		Size: 27.1 MB (27100996 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3555c3885852c38ecf4a297b798053677bc7553f9c7631788ef75e35cb4262c`  
-		Last Modified: Fri, 12 Mar 2021 22:22:18 GMT  
-		Size: 3.3 MB (3268564 bytes)  
+	-	`sha256:42f37f3c8df9c4599e86451848bc7d181558d9106306657ffef1e8a59f44b7f7`  
+		Last Modified: Fri, 26 Mar 2021 19:32:50 GMT  
+		Size: 3.3 MB (3268744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42965fccf40100a915fa0b4b20946987c4e330948b82f687f22d7b6575473af0`  
-		Last Modified: Fri, 12 Mar 2021 22:27:57 GMT  
+	-	`sha256:a456ec241295190817bf2dc268114e0680561fcd6bdf987721a8d84391cfd1bf`  
+		Last Modified: Fri, 26 Mar 2021 19:35:57 GMT  
 		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:484bb3bd28a7ad59d605f58597d0bf81c9b10fcea21d4b7f705d594cc4c793c5`  
-		Last Modified: Fri, 12 Mar 2021 22:29:24 GMT  
-		Size: 47.0 MB (47042875 bytes)  
+	-	`sha256:fc8a22e415cfb290fead90c0f86c1aa4e0ac2c1d0b86722ea7e1da90873f2527`  
+		Last Modified: Fri, 26 Mar 2021 19:37:07 GMT  
+		Size: 47.0 MB (47042908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7e2399eaa776bd55e614f71d3420e014413d46b34f56b3bf66fb3f40d43b6be`  
-		Last Modified: Sat, 13 Mar 2021 15:54:46 GMT  
-		Size: 1.9 KB (1872 bytes)  
+	-	`sha256:0992e1d972cfde0058cdf5e014872f4f70f047c43a0eea8b6bdce61c6c807bfa`  
+		Last Modified: Fri, 26 Mar 2021 20:02:10 GMT  
+		Size: 1.9 KB (1871 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0de4824788ba7d4e5f186a6432f9f59410276e49ed00612973a8226c13f5852`  
-		Last Modified: Sat, 13 Mar 2021 15:54:59 GMT  
-		Size: 5.4 MB (5384573 bytes)  
+	-	`sha256:9dbfd93de908f32945153a3a8510ca44c8cefec551a82fe91838cfa2e1769453`  
+		Last Modified: Fri, 26 Mar 2021 20:02:23 GMT  
+		Size: 5.4 MB (5384527 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60733754d5d35ec8230c4173eaab7a0872a305e3ccc222e64333c9bcf804470a`  
-		Last Modified: Sat, 13 Mar 2021 15:54:59 GMT  
-		Size: 12.4 MB (12434260 bytes)  
+	-	`sha256:f95cab5fa2376700a5ec5628fe17e3634c9c7b49533ae29b37232680799e7b88`  
+		Last Modified: Fri, 26 Mar 2021 20:02:23 GMT  
+		Size: 12.4 MB (12434270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aaa735978890c16ce89d04516d0e915a153601ae9fbad37f295c8247bed5eb61`  
-		Last Modified: Sat, 13 Mar 2021 15:54:57 GMT  
+	-	`sha256:87a10fd62e0ef513e11e58cc61bf71ed2e382381c27657c800eb6bb207906d15`  
+		Last Modified: Fri, 26 Mar 2021 20:02:22 GMT  
 		Size: 776.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `zookeeper:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull zookeeper@sha256:7249ca02269b5abd1e036eaef38da3711bcd7dfc92877e7139730a598e031544
+$ docker pull zookeeper@sha256:abc5e56aecdd068df0bb0540ab9a31f13ae66c659fbf3ba06e17595f504c765f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.8 MB (92840523 bytes)**  
+-	Total Size: **92.8 MB (92839030 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:857c130363ef3493ea83859affd3ec5b10f57e75b4b3251f04ad78ec0e221f6a`
+-	Image ID: `sha256:7ab50176826c2511d1297d8c7d1a9f9e508fb948d956099888812bbba655c636`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Fri, 12 Mar 2021 01:53:53 GMT
-ADD file:6130ddc0a939dd72c0614de4aa77de47aa16fe211274bacb31995aa1a0526164 in / 
-# Fri, 12 Mar 2021 01:53:56 GMT
+# Fri, 26 Mar 2021 15:41:54 GMT
+ADD file:c8c0d923527574a26725e0a1995051870ed169ff6b6ebfe77c50810f5583690b in / 
+# Fri, 26 Mar 2021 15:41:56 GMT
 CMD ["bash"]
-# Fri, 12 Mar 2021 06:34:53 GMT
+# Fri, 26 Mar 2021 19:43:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 12 Mar 2021 06:40:23 GMT
+# Fri, 26 Mar 2021 19:46:29 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Fri, 12 Mar 2021 06:40:25 GMT
+# Fri, 26 Mar 2021 19:46:31 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Fri, 12 Mar 2021 06:40:26 GMT
+# Fri, 26 Mar 2021 19:46:45 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 12 Mar 2021 06:40:26 GMT
+# Fri, 26 Mar 2021 19:46:46 GMT
 ENV LANG=C.UTF-8
-# Fri, 12 Mar 2021 06:40:27 GMT
+# Fri, 26 Mar 2021 19:46:46 GMT
 ENV JAVA_VERSION=11.0.10
-# Fri, 12 Mar 2021 06:42:19 GMT
+# Fri, 26 Mar 2021 19:48:06 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_x64_linux_11.0.10_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_aarch64_linux_11.0.10_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Sat, 13 Mar 2021 02:31:41 GMT
+# Fri, 26 Mar 2021 20:53:17 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Sat, 13 Mar 2021 02:31:44 GMT
+# Fri, 26 Mar 2021 20:53:22 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR"
-# Sat, 13 Mar 2021 02:32:36 GMT
+# Fri, 26 Mar 2021 20:54:37 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Sat, 13 Mar 2021 02:32:37 GMT
+# Fri, 26 Mar 2021 20:54:38 GMT
 ARG GPG_KEY=BBE7232D7991050B54C8EA0ADC08637CA615D22C
-# Sat, 13 Mar 2021 02:32:37 GMT
+# Fri, 26 Mar 2021 20:54:39 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.6.2
-# Sat, 13 Mar 2021 02:32:38 GMT
+# Fri, 26 Mar 2021 20:54:40 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.6.2-bin
-# Sat, 13 Mar 2021 02:32:46 GMT
+# Fri, 26 Mar 2021 20:55:03 GMT
 # ARGS: DISTRO_NAME=apache-zookeeper-3.6.2-bin GPG_KEY=BBE7232D7991050B54C8EA0ADC08637CA615D22C SHORT_DISTRO_NAME=zookeeper-3.6.2
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
-# Sat, 13 Mar 2021 02:32:47 GMT
+# Fri, 26 Mar 2021 20:55:04 GMT
 WORKDIR /apache-zookeeper-3.6.2-bin
-# Sat, 13 Mar 2021 02:32:48 GMT
+# Fri, 26 Mar 2021 20:55:06 GMT
 VOLUME [/data /datalog /logs]
-# Sat, 13 Mar 2021 02:32:49 GMT
+# Fri, 26 Mar 2021 20:55:08 GMT
 EXPOSE 2181 2888 3888 8080
-# Sat, 13 Mar 2021 02:32:50 GMT
+# Fri, 26 Mar 2021 20:55:10 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.6.2-bin/bin ZOOCFGDIR=/conf
-# Sat, 13 Mar 2021 02:32:51 GMT
+# Fri, 26 Mar 2021 20:55:11 GMT
 COPY file:876dd2fa348f66a85a81dab4d431046f781ebc426b6fd355fdac0b388935e8d1 in / 
-# Sat, 13 Mar 2021 02:32:51 GMT
+# Fri, 26 Mar 2021 20:55:13 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 13 Mar 2021 02:32:52 GMT
+# Fri, 26 Mar 2021 20:55:14 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:706ee5d0a6b53d9257cbea22d8409fb22c867ab3a001c65f6b8bfd37dace0e58`  
-		Last Modified: Fri, 12 Mar 2021 02:01:39 GMT  
-		Size: 25.9 MB (25856512 bytes)  
+	-	`sha256:989f98f7e44fde3e2eb49bc6d2bfed15401201d21cd90f42cd9fc4c26eef8bb0`  
+		Last Modified: Fri, 26 Mar 2021 15:48:47 GMT  
+		Size: 25.9 MB (25856384 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:303a8d33f3a602102b6a15a1f7974fc79449cdcff2c2fa6709b56cd1ac792384`  
-		Last Modified: Fri, 12 Mar 2021 06:45:08 GMT  
-		Size: 3.1 MB (3118728 bytes)  
+	-	`sha256:844d8de9377aa4bd4c66d812b6226ebe8ebcb1dbbbdf3be6e3e9d0ea7363e0d3`  
+		Last Modified: Fri, 26 Mar 2021 19:50:29 GMT  
+		Size: 3.1 MB (3118857 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93b8b66a2613c2e81c20d5f33497aaa0c185225f7b1a0fc1478b628ad5bce829`  
-		Last Modified: Fri, 12 Mar 2021 06:49:58 GMT  
+	-	`sha256:a9e37c5f201dfc8f5b1032ffbbb31bc89047cdb56fad97bca2c885cc5a87f381`  
+		Last Modified: Fri, 26 Mar 2021 19:53:28 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b08a8fe7570eea8d3f52461e1667f5809826377f1ee2f99e5cc9690946de148`  
-		Last Modified: Fri, 12 Mar 2021 06:51:30 GMT  
-		Size: 46.1 MB (46108061 bytes)  
+	-	`sha256:388b7806583b38dcbfbb8b480904bd1aacbd80ec22df41d6ebedcba9632a2f5a`  
+		Last Modified: Fri, 26 Mar 2021 19:54:38 GMT  
+		Size: 46.1 MB (46106643 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1aad7c84afd135cda15e27d77b38fd5cf60ee1598f595f1d2af0ffca1243ba8c`  
-		Last Modified: Sat, 13 Mar 2021 02:33:06 GMT  
-		Size: 1.9 KB (1874 bytes)  
+	-	`sha256:499d693bf53f54b960c6a63c26b405f7922be22c21ef72d44e7797db1257c8aa`  
+		Last Modified: Fri, 26 Mar 2021 20:55:38 GMT  
+		Size: 1.9 KB (1875 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25f16ab0b78dab1dc9e800cb756cce41d6ba0b1e3c40e2dae9a9f399130c5e00`  
-		Last Modified: Sat, 13 Mar 2021 02:33:16 GMT  
-		Size: 5.3 MB (5320117 bytes)  
+	-	`sha256:fe83dab2ee5efeb3e3f5cb6165da0171e286ddeb18b2e7aab198985229b090a7`  
+		Last Modified: Fri, 26 Mar 2021 20:55:47 GMT  
+		Size: 5.3 MB (5320008 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:056f6684a5621d51ea1554664fb528cadb4fb6506e6a299b3fc3f8dfc6d60025`  
-		Last Modified: Sat, 13 Mar 2021 02:33:17 GMT  
-		Size: 12.4 MB (12434244 bytes)  
+	-	`sha256:1271da6928ed673280257965025e378b61bf5532aaad43e9ac38ea8a4efae57f`  
+		Last Modified: Fri, 26 Mar 2021 20:55:53 GMT  
+		Size: 12.4 MB (12434279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e63f3284bb15ae11aecf37479a00bd2bc85807c21b6ca48323b76dd96d228687`  
-		Last Modified: Sat, 13 Mar 2021 02:33:15 GMT  
-		Size: 776.0 B  
+	-	`sha256:f5c1ed49d31edc63da58740187f789f2ab70dbf65edd477caa26ba95b600e763`  
+		Last Modified: Fri, 26 Mar 2021 20:55:46 GMT  
+		Size: 773.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
