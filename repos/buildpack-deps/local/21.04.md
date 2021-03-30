@@ -1416,14 +1416,13 @@ Licenses: (parsed from: `/usr/share/doc/libisl23/copyright`)
 - `LGPL-2.1+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris isl=0.23-1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isl/isl_0.23-1.dsc' isl_0.23-1.dsc 1832 SHA512:a6bb9d9993fe59e90963a007cf1134a62b1454e244b08259af879ff21764c897edf3ccdcd9e36392df8ae1a1367d6e4bdef7610870ef5e37f12cd8da91694b64
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isl/isl_0.23.orig.tar.xz' isl_0.23.orig.tar.xz 1729656 SHA512:da4e7cbd5045d074581d4e1c212acb074a8b2345a96515151b0543cbe2601db6ac2bbd93f9ad6643e98f845b68f438f3882c05b8b90969ae542802a3c78fea20
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isl/isl_0.23-1.debian.tar.xz' isl_0.23-1.debian.tar.xz 26044 SHA512:79868f2f377ddf8e68714b3b05b9d4cf5ec8c41f1c951975ed82df8ccca2a05db32f802983ce29f38007bc2b33fa5e99f9a0f7cd4d64af370191a4faa09e67d7
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/isl/0.23-1/
+
 
 ### `dpkg` source package: `jbigkit=2.1-3.1build1`
 
@@ -2915,14 +2914,13 @@ Licenses: (parsed from: `/usr/share/doc/libmpc3/copyright`)
 
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mpclib3=1.2.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpclib3/mpclib3_1.2.0-1.dsc' mpclib3_1.2.0-1.dsc 1851 SHA512:b68a2e0ea822170dcfb7b7b5b538fec1fc1d130a64eb325114ee5e7a6fa129eeed617293a2aefb296273e3d6c56d3bd8bd0a5ab3be4b88be7d2bfa55d07b5daa
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpclib3/mpclib3_1.2.0.orig.tar.gz' mpclib3_1.2.0.orig.tar.gz 840711 SHA512:84fa3338f51d369111456a63ad040256a1beb70699e21e2a932c779aa1c3bd08b201412c1659ecbb58403ea0548faacc35996d94f88f0639549269b7563c61b7
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpclib3/mpclib3_1.2.0-1.diff.gz' mpclib3_1.2.0-1.diff.gz 4281 SHA512:eb877cab746ff3d1fa79e431c01cc48f936739d8b69074cfbf881716690cfab78ccb916afb39065b04ffebf03a52cdb47c99ad6716c30fd8136e141e7f2f7768
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/mpclib3/1.2.0-1/
+
 
 ### `dpkg` source package: `mpfr4=4.1.0-3`
 
@@ -3495,14 +3493,9 @@ Licenses: (parsed from: `/usr/share/doc/libprocps8/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:3.3.16-5ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16-5ubuntu2.dsc' procps_3.3.16-5ubuntu2.dsc 2234 SHA512:565d002c6b01a3d50dcac0ba9f1f9428aa6969509a3fd0e977b85fb3bffc4892e05ed5baa8a114ffe8552f5ac11d8aba48a4705d47dc38f0a6fde27ab3f62ea1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16.orig.tar.xz' procps_3.3.16.orig.tar.xz 621892 SHA512:38db4f72fe40c2f027b23b18bbc8c29cfcdf6bcdb029199fe4bebede153943aa884157f56e792c399f9a4949cc514687500bb99a75a5e7ad7b9e878f52090304
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16-5ubuntu2.debian.tar.xz' procps_3.3.16-5ubuntu2.debian.tar.xz 34056 SHA512:b3e95ef3cfd671d9683f2e6ba136f8f0a22a1ab6f7a87e27cfc255b533dc985c0d3fc87f8e180d8bf376390d88dd5bf1aa0316edfdb5ca99f952b0b5c9d63e33
-```
 
 ### `dpkg` source package: `python3-defaults=3.9.0-3ubuntu1`
 
