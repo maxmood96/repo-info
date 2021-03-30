@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ad7c2b9ec8e1582b8796df4c0518167c6d65ec78c74549b5cdfff8993bca6a6a`
-- Created: `2021-03-26T15:24:25.748316744Z`
+- Image ID: `sha256:5763c6e8ebb66e9dd2d141a1042ec90338c393a8a4c9fe375dddabdbc593394b`
+- Created: `2021-03-30T21:51:40.663378738Z`
 - Virtual Size: ~ 80.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1279,11 +1279,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libunistring/0.9.10-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libunistring/0.9.10-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxcrypt=1:4.4.18-1`
+### `dpkg` source package: `libxcrypt=1:4.4.18-2`
 
 Binary Packages:
 
-- `libcrypt1:amd64=1:4.4.18-1`
+- `libcrypt1:amd64=1:4.4.18-2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1292,17 +1292,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxcrypt=1:4.4.18-1
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.18-1.dsc' libxcrypt_4.4.18-1.dsc 1476 SHA256:5c85ea753bc023ac9ff774a218cb25ae27c7104924a4786edc0d469b46d66dae
+$ apt-get source -qq --print-uris libxcrypt=1:4.4.18-2
+'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.18-2.dsc' libxcrypt_4.4.18-2.dsc 1463 SHA256:52fc0204433da9c0a53034db0e70f0418cb671cd6e2e50518cac702ddb7af0de
 'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.18.orig.tar.xz' libxcrypt_4.4.18.orig.tar.xz 397776 SHA256:4cd2a06e98519d57a5572ee8885b6cc23c70a559d234c161d3f22c487edaa3fa
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.18-1.debian.tar.xz' libxcrypt_4.4.18-1.debian.tar.xz 5652 SHA256:c372be50590416d5342bb841ef452a549c21e9443f6fa8ed7aa73cecfade3144
+'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.18-2.debian.tar.xz' libxcrypt_4.4.18-2.debian.tar.xz 7184 SHA256:1c6c4bd9e14c5022c8897a922391caa2c8b1a34dff1cd59d3bd2f229166c7247
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxcrypt/1:4.4.18-1/ (for browsing the source)
-- https://sources.debian.net/src/libxcrypt/1:4.4.18-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxcrypt/1:4.4.18-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libxcrypt/1:4.4.18-2/ (for browsing the source)
+- https://sources.debian.net/src/libxcrypt/1:4.4.18-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxcrypt/1:4.4.18-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libzstd=1.4.8+dfsg-2.1`
 

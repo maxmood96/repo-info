@@ -616,13 +616,20 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris glibc=2.31-10
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-10.dsc' glibc_2.31-10.dsc 8315 SHA256:76e69265d37a253bee7e81e842fc984479df68ec939cb8c464f7f5c71ba7a08c
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-10.debian.tar.xz' glibc_2.31-10.debian.tar.xz 906616 SHA256:f72c53818b5f7d3ab9e0ab8743a6e1fd4506c32dc0e54bc99601aa13f603bcb3
+```
 
-- http://snapshot.debian.org/package/glibc/2.31-10/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/glibc/2.31-10/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.31-10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.31-10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-1`
 
@@ -1539,13 +1546,20 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris pam=1.4.0-7
+'http://deb.debian.org/debian/pool/main/p/pam/pam_1.4.0-7.dsc' pam_1.4.0-7.dsc 1909 SHA256:6608ca39e9da67a59e7096e1badb2336737224d8d791ee15e05c94554485e3a2
+'http://deb.debian.org/debian/pool/main/p/pam/pam_1.4.0.orig.tar.xz' pam_1.4.0.orig.tar.xz 988908 SHA256:cd6d928c51e64139be3bdb38692c68183a509b83d4f2c221024ccd4bcddfd034
+'http://deb.debian.org/debian/pool/main/p/pam/pam_1.4.0-7.debian.tar.xz' pam_1.4.0-7.debian.tar.xz 119620 SHA256:4104b41ea90c86fb6ab50c7ca6e7735dda0139b6898350206f2e09d542a39783
+```
 
-- http://snapshot.debian.org/package/pam/1.4.0-7/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/pam/1.4.0-7/ (for browsing the source)
+- https://sources.debian.net/src/pam/1.4.0-7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pam/1.4.0-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre2=10.36-2`
 
