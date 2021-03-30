@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a7d12843e6aa8dc0260cbe6c1f1e2f8844d34c6efeed7b7cf0a3a17fd87f9102`
-- Created: `2021-03-12T14:10:57.824557759Z`
+- Image ID: `sha256:ddf5648900708daec77878a199287ab52eb6437e8b59fbdb38e7a30b715cf09f`
+- Created: `2021-03-27T09:18:20.727271796Z`
 - Virtual Size: ~ 2.48 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -743,11 +743,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzr/2.7.0+bzr6619-7+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzr/2.7.0+bzr6619-7+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ca-certificates=20200601~deb9u1`
+### `dpkg` source package: `ca-certificates=20200601~deb9u2`
 
 Binary Packages:
 
-- `ca-certificates=20200601~deb9u1`
+- `ca-certificates=20200601~deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -758,16 +758,16 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20200601~deb9u1
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20200601~deb9u1.dsc' ca-certificates_20200601~deb9u1.dsc 1855 SHA256:81772ce188acf4ef93aface3dc9fc0516fb193d1e7242c23a6e18a002a455302
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20200601~deb9u1.tar.xz' ca-certificates_20200601~deb9u1.tar.xz 245956 SHA256:873a9eb9ec66db1d9bc7c6829ee789fe6b1ba4ed497745df699b35145a3c98cd
+$ apt-get source -qq --print-uris ca-certificates=20200601~deb9u2
+'http://security.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20200601~deb9u2.dsc' ca-certificates_20200601~deb9u2.dsc 1884 SHA256:55ad676772332c16f12efc1bc40c78afe0d8591c57054f298555fe91b5d2a326
+'http://security.debian.org/debian-security/pool/updates/main/c/ca-certificates/ca-certificates_20200601~deb9u2.tar.xz' ca-certificates_20200601~deb9u2.tar.xz 245860 SHA256:777e7ffe341a4a6ef33cdeae23d77514b502a4cdf37730fcc1d82930063a23b0
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ca-certificates/20200601~deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/ca-certificates/20200601~deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ca-certificates/20200601~deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ca-certificates/20200601~deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20200601~deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20200601~deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cairo=1.14.8-1+deb9u1`
 
@@ -3339,11 +3339,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/jbigkit/2.1-3.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/jbigkit/2.1-3.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `jquery=3.1.1-2+deb9u1`
+### `dpkg` source package: `jquery=3.1.1-2+deb9u2`
 
 Binary Packages:
 
-- `libjs-jquery=3.1.1-2+deb9u1`
+- `libjs-jquery=3.1.1-2+deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/libjs-jquery/copyright`)
 
@@ -3354,17 +3354,17 @@ Licenses: (parsed from: `/usr/share/doc/libjs-jquery/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris jquery=3.1.1-2+deb9u1
-'http://deb.debian.org/debian/pool/main/j/jquery/jquery_3.1.1-2+deb9u1.dsc' jquery_3.1.1-2+deb9u1.dsc 2139 SHA256:917e2d072c06547ccc0642181322dace7f820d47e3461d7aa7f8e8bd67c568f8
-'http://deb.debian.org/debian/pool/main/j/jquery/jquery_3.1.1.orig.tar.gz' jquery_3.1.1.orig.tar.gz 410492 SHA256:9fa7fe0ff812732dbef26e53431091e260f457fb56abf3964b92e521343268f3
-'http://deb.debian.org/debian/pool/main/j/jquery/jquery_3.1.1-2+deb9u1.debian.tar.xz' jquery_3.1.1-2+deb9u1.debian.tar.xz 9132 SHA256:e00067007eae4106309da9682944f1754a4a28200f504cdf9af84398c22b9ab1
+$ apt-get source -qq --print-uris jquery=3.1.1-2+deb9u2
+'http://security.debian.org/debian-security/pool/updates/main/j/jquery/jquery_3.1.1-2+deb9u2.dsc' jquery_3.1.1-2+deb9u2.dsc 2142 SHA256:a625a521f0e4824dfb979e7edc4a676ae2de7f701e0ff25e0060bd0853aa03f8
+'http://security.debian.org/debian-security/pool/updates/main/j/jquery/jquery_3.1.1.orig.tar.gz' jquery_3.1.1.orig.tar.gz 410492 SHA256:9fa7fe0ff812732dbef26e53431091e260f457fb56abf3964b92e521343268f3
+'http://security.debian.org/debian-security/pool/updates/main/j/jquery/jquery_3.1.1-2+deb9u2.debian.tar.xz' jquery_3.1.1-2+deb9u2.debian.tar.xz 23832 SHA256:3774263f8a772bb0638b8e8c49fa65b746ebd23c5a5c5ec16683b9c016756848
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/jquery/3.1.1-2+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/jquery/3.1.1-2+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/jquery/3.1.1-2+deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/jquery/3.1.1-2+deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/jquery/3.1.1-2+deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/jquery/3.1.1-2+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `json-c=0.12.1-1.1+deb9u1`
 
@@ -6516,13 +6516,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/make-dfsg/4.1-9.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/make-dfsg/4.1-9.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mariadb-10.1=10.1.48-0+deb9u1`
+### `dpkg` source package: `mariadb-10.1=10.1.48-0+deb9u2`
 
 Binary Packages:
 
-- `libmariadbclient-dev=10.1.48-0+deb9u1`
-- `libmariadbclient-dev-compat:amd64=10.1.48-0+deb9u1`
-- `libmariadbclient18:amd64=10.1.48-0+deb9u1`
+- `libmariadbclient-dev=10.1.48-0+deb9u2`
+- `libmariadbclient-dev-compat:amd64=10.1.48-0+deb9u2`
+- `libmariadbclient18:amd64=10.1.48-0+deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/libmariadbclient-dev/copyright`, `/usr/share/doc/libmariadbclient-dev-compat/copyright`, `/usr/share/doc/libmariadbclient18/copyright`)
 
@@ -6546,13 +6546,21 @@ Licenses: (parsed from: `/usr/share/doc/libmariadbclient-dev/copyright`, `/usr/s
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris mariadb-10.1=10.1.48-0+deb9u2
+'http://security.debian.org/debian-security/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.48-0+deb9u2.dsc' mariadb-10.1_10.1.48-0+deb9u2.dsc 4530 SHA256:d5c6f4723ea9f2f74cd3382d78b975c5038b89e47e66f9e5692cc5178faeea4a
+'http://security.debian.org/debian-security/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.48.orig.tar.gz' mariadb-10.1_10.1.48.orig.tar.gz 63769566 SHA256:069d58b1e2c06bb1e6c31249eda34138f41fb8ae3dec7ecaeba8035812c87cf9
+'http://security.debian.org/debian-security/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.48.orig.tar.gz.asc' mariadb-10.1_10.1.48.orig.tar.gz.asc 195 SHA256:6f66d57dadaf6b22c5310e4f7eeb5352e99ab918f6a249a1c81d32a1900e132c
+'http://security.debian.org/debian-security/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.48-0+deb9u2.debian.tar.xz' mariadb-10.1_10.1.48-0+deb9u2.debian.tar.xz 233652 SHA256:77d7b5bd8ba0e45c1186deff7a051c2aa834dca92600ed5ecaeff70d60e7c825
+```
 
-- http://snapshot.debian.org/package/mariadb-10.1/10.1.48-0+deb9u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/mariadb-10.1/10.1.48-0+deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/mariadb-10.1/10.1.48-0+deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mariadb-10.1/10.1.48-0+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
@@ -11439,12 +11447,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sgml-base/1.29/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sgml-base/1.29/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `shadow=1:4.4-4.1`
+### `dpkg` source package: `shadow=1:4.4-4.1+deb9u1`
 
 Binary Packages:
 
-- `login=1:4.4-4.1`
-- `passwd=1:4.4-4.1`
+- `login=1:4.4-4.1+deb9u1`
+- `passwd=1:4.4-4.1+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
@@ -11453,17 +11461,17 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 Source:
 
 ```console
-$ apt-get source -qq --print-uris shadow=1:4.4-4.1
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.4-4.1.dsc' shadow_4.4-4.1.dsc 2453 SHA256:6760f8ee90562ed02cb3902b81167e6153923a979c61dc06671426321e575f74
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.4.orig.tar.gz' shadow_4.4.orig.tar.gz 3003036 SHA256:1323e7e932836e03dbfa441f7eeb349ede2c92d62b788ade0732411fd516be3d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.4-4.1.debian.tar.xz' shadow_4.4-4.1.debian.tar.xz 600560 SHA256:42610e666c762b88b9e60ea878b522b0639240dc9a74fe627b1ac497dd3d7424
+$ apt-get source -qq --print-uris shadow=1:4.4-4.1+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/s/shadow/shadow_4.4-4.1+deb9u1.dsc' shadow_4.4-4.1+deb9u1.dsc 2326 SHA256:b26ba339cc5a60a15173eb6fa3d4f700aece86c6f34e89e04f9d8e11a589e8f7
+'http://security.debian.org/debian-security/pool/updates/main/s/shadow/shadow_4.4.orig.tar.gz' shadow_4.4.orig.tar.gz 3003036 SHA256:1323e7e932836e03dbfa441f7eeb349ede2c92d62b788ade0732411fd516be3d
+'http://security.debian.org/debian-security/pool/updates/main/s/shadow/shadow_4.4-4.1+deb9u1.debian.tar.xz' shadow_4.4-4.1+deb9u1.debian.tar.xz 601380 SHA256:d9cb3b85cac743cc2b16e07601d1a6ccc261981117948694058e557d7baeec08
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/shadow/1:4.4-4.1/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.4-4.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.4-4.1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/shadow/1:4.4-4.1+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/shadow/1:4.4-4.1+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/shadow/1:4.4-4.1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `shared-mime-info=1.8-1+deb9u1`
 
