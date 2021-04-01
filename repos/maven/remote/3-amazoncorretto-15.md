@@ -1,7 +1,7 @@
 ## `maven:3-amazoncorretto-15`
 
 ```console
-$ docker pull maven@sha256:c1e044f0775bfd695dd912f5d5c26f9c91daea9aa96f39c42f3c3da76dbcb66a
+$ docker pull maven@sha256:5dba8d9259ad9c44f0a444c872f810d881c3ff727232e1477d659101be8409ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,83 +12,83 @@ $ docker pull maven@sha256:c1e044f0775bfd695dd912f5d5c26f9c91daea9aa96f39c42f3c3
 ### `maven:3-amazoncorretto-15` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:5e3ef12663c0970d93e6737debe9a271aefcbf71de40be21d50e81f2b594adfc
+$ docker pull maven@sha256:ce972a8b8efc0fbd9e64a03ff8a2f4c83483d5cd30966e2c46bf6de070fcce5f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.8 MB (230760411 bytes)**  
+-	Total Size: **230.7 MB (230743187 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9eecefdc415e85ed1d2229e42bfc88618aab4bd187ed4b3b2efabaeaad8b336`
+-	Image ID: `sha256:010a064178bb9d3421cc23bc4039faa8e54a1f02509faf9bb1306fc8830afbff`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Wed, 24 Feb 2021 19:19:48 GMT
-ADD file:40bc6ac9b95149d9077e8e692feea2208fcd1c5883673953b295e6acd014ea38 in / 
-# Wed, 24 Feb 2021 19:19:48 GMT
+# Tue, 30 Mar 2021 21:59:20 GMT
+ADD file:3b750ce7e7425c1cb02261d65b1e301d5818cda51a80dc8ab3b915ee5ca37d4e in / 
+# Tue, 30 Mar 2021 21:59:21 GMT
 CMD ["/bin/bash"]
-# Thu, 18 Mar 2021 01:20:48 GMT
+# Wed, 31 Mar 2021 16:18:21 GMT
 ARG version=15.0.2.7-1
-# Thu, 18 Mar 2021 01:21:03 GMT
+# Wed, 31 Mar 2021 16:18:48 GMT
 # ARGS: version=15.0.2.7-1
 RUN set -eux     && export GNUPGHOME="$(mktemp -d)"     && curl -fL -o corretto.key https://yum.corretto.aws/corretto.key     && gpg --batch --import corretto.key     && gpg --batch --export --armor '6DC3636DAE534049C8B94623A122542AB04F24E3' > corretto.key     && rpm --import corretto.key     && rm -r "$GNUPGHOME" corretto.key     && curl -fL -o /etc/yum.repos.d/corretto.repo https://yum.corretto.aws/corretto.repo     && grep -q '^gpgcheck=1' /etc/yum.repos.d/corretto.repo     && yum install -y java-15-amazon-corretto-devel-$version     && (find /usr/lib/jvm/java-15-amazon-corretto -name src.zip -delete || true)     && yum install -y fontconfig     && yum clean all
-# Thu, 18 Mar 2021 01:21:04 GMT
+# Wed, 31 Mar 2021 16:18:49 GMT
 ENV LANG=C.UTF-8
-# Thu, 18 Mar 2021 01:21:04 GMT
+# Wed, 31 Mar 2021 16:18:49 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-15-amazon-corretto
-# Thu, 18 Mar 2021 01:43:59 GMT
+# Thu, 01 Apr 2021 02:46:32 GMT
 ARG MAVEN_VERSION=3.6.3
-# Thu, 18 Mar 2021 01:44:00 GMT
+# Thu, 01 Apr 2021 02:46:32 GMT
 ARG USER_HOME_DIR=/root
-# Thu, 18 Mar 2021 01:44:00 GMT
+# Thu, 01 Apr 2021 02:46:33 GMT
 ARG SHA=c35a1803a6e70a126e80b2b3ae33eed961f83ed74d18fcd16909b2d44d7dada3203f1ffe726c17ef8dcca2dcaa9fca676987befeadc9b9f759967a8cb77181c0
-# Thu, 18 Mar 2021 01:44:00 GMT
+# Thu, 01 Apr 2021 02:46:33 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.6.3/binaries
-# Thu, 18 Mar 2021 01:44:06 GMT
+# Thu, 01 Apr 2021 02:46:42 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.6.3/binaries MAVEN_VERSION=3.6.3 SHA=c35a1803a6e70a126e80b2b3ae33eed961f83ed74d18fcd16909b2d44d7dada3203f1ffe726c17ef8dcca2dcaa9fca676987befeadc9b9f759967a8cb77181c0 USER_HOME_DIR=/root
 RUN yum install -y tar which gzip   && rm -rf /var/cache/yum/*   && yum clean all
-# Thu, 18 Mar 2021 01:44:07 GMT
+# Thu, 01 Apr 2021 02:46:49 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.6.3/binaries MAVEN_VERSION=3.6.3 SHA=c35a1803a6e70a126e80b2b3ae33eed961f83ed74d18fcd16909b2d44d7dada3203f1ffe726c17ef8dcca2dcaa9fca676987befeadc9b9f759967a8cb77181c0 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Thu, 18 Mar 2021 01:44:07 GMT
+# Thu, 01 Apr 2021 02:46:49 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Thu, 18 Mar 2021 01:44:08 GMT
+# Thu, 01 Apr 2021 02:46:49 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Thu, 18 Mar 2021 01:44:08 GMT
+# Thu, 01 Apr 2021 02:46:50 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Thu, 18 Mar 2021 01:44:08 GMT
+# Thu, 01 Apr 2021 02:46:50 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Thu, 18 Mar 2021 01:44:08 GMT
+# Thu, 01 Apr 2021 02:46:50 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Thu, 18 Mar 2021 01:44:08 GMT
+# Thu, 01 Apr 2021 02:46:50 GMT
 CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:9da98c321efd693e1dc19cc24c7c2cfa365c649f178da8ebdfdc5243d0b2f91a`  
-		Last Modified: Wed, 24 Feb 2021 10:37:31 GMT  
-		Size: 61.9 MB (61935160 bytes)  
+	-	`sha256:99a21848b482c10fd4b103b7ab95e1446142e76e3dfa673efd0a23fb264ec5e5`  
+		Last Modified: Tue, 30 Mar 2021 13:54:37 GMT  
+		Size: 61.9 MB (61946585 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36a1b14848cc4fca9939aa433239aa0f8bd6085758a3e249d95a797d5be2dfec`  
-		Last Modified: Thu, 18 Mar 2021 01:25:20 GMT  
-		Size: 155.7 MB (155669518 bytes)  
+	-	`sha256:ab3379c3b288ddbf110cbd7b0253fb21fe3f2a2d3ffd94a0e9900addbae96511`  
+		Last Modified: Wed, 31 Mar 2021 16:21:36 GMT  
+		Size: 155.7 MB (155665050 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5a714a7ef5f1deae517081f8c858f9863f20b45cf86383b7d251f8a30206824`  
-		Last Modified: Thu, 18 Mar 2021 01:47:16 GMT  
-		Size: 3.6 MB (3573309 bytes)  
+	-	`sha256:6496ece16b04f53799d5639161ed7a90d13d8e1060c28b4c8ad72b234ba266a1`  
+		Last Modified: Thu, 01 Apr 2021 02:52:57 GMT  
+		Size: 3.5 MB (3549143 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aea938eb7319c0f482864f4adda6c14c6db8f8917fdc1e1b4824ca4041596aa2`  
-		Last Modified: Thu, 18 Mar 2021 01:47:17 GMT  
-		Size: 9.6 MB (9581213 bytes)  
+	-	`sha256:f24beebecfec041f74be1c8a100063ba88f327e7db0ff26882352f16af69dedf`  
+		Last Modified: Thu, 01 Apr 2021 02:52:59 GMT  
+		Size: 9.6 MB (9581200 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5089d3e5ec073f35cedf9f1a4c36f62ad669eaf3b22ad7492110031b73a7be74`  
-		Last Modified: Thu, 18 Mar 2021 01:47:16 GMT  
-		Size: 850.0 B  
+	-	`sha256:ff4d9b00e4f5f20e09730dba2aba72d291c2f8c979678c0d40cb84448737b39a`  
+		Last Modified: Thu, 01 Apr 2021 02:52:55 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78271cae5eab0a5819050d1a33ddf4d8de3a7cae0235929ca6da6ef4069335fb`  
-		Last Modified: Thu, 18 Mar 2021 01:47:16 GMT  
-		Size: 361.0 B  
+	-	`sha256:d494a8077bb9f4ea8ef22621ced9a372172de41a0d0e098314d86f20c5bf27d2`  
+		Last Modified: Thu, 01 Apr 2021 02:52:55 GMT  
+		Size: 360.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3-amazoncorretto-15` - linux; arm64 variant v8
