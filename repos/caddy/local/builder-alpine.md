@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cbb316b87d6dde8cd686c821c20c173f5f8549e5c77963486a3644d2ee7a989f`
-- Created: `2021-03-26T19:22:47.684111128Z`
-- Virtual Size: ~ 318.49 Mb  
+- Image ID: `sha256:b9b85122de32749bb4ce99c4ec210d0b3f4ae7520aeb96d1b3409d7e164a5419`
+- Created: `2021-04-02T00:49:48.704199368Z`
+- Virtual Size: ~ 318.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.15.10`
+  - `GOLANG_VERSION=1.15.11`
   - `GOPATH=/go`
   - `XCADDY_VERSION=v0.1.8`
   - `CADDY_VERSION=v2.3.0`
@@ -72,16 +72,16 @@ GPL-2.0-only
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.31.1-r19 description:
+busybox-1.31.1-r20 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.31.1-r19 webpage:
+busybox-1.31.1-r20 webpage:
 https://busybox.net/
 
-busybox-1.31.1-r19 installed size:
+busybox-1.31.1-r20 installed size:
 962560
 
-busybox-1.31.1-r19 license:
+busybox-1.31.1-r20 license:
 GPL-2.0-only
 
 ```
@@ -327,16 +327,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.31.1-r19 description:
+ssl_client-1.31.1-r20 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.31.1-r19 webpage:
+ssl_client-1.31.1-r20 webpage:
 https://busybox.net/
 
-ssl_client-1.31.1-r19 installed size:
+ssl_client-1.31.1-r20 installed size:
 28672
 
-ssl_client-1.31.1-r19 license:
+ssl_client-1.31.1-r20 license:
 GPL-2.0-only
 
 ```
