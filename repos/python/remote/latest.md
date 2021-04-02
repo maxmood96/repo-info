@@ -1,7 +1,7 @@
 ## `python:latest`
 
 ```console
-$ docker pull python@sha256:d5d25f8ddcf983c0164bdcdc87b330d31417e2ce302dbd3e1d0e90fddf3ddff1
+$ docker pull python@sha256:5abc2f9aba1b0739d61b75f738aeeae69c81b7bf1499f244ffeac71d968bd2d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -740,14 +740,14 @@ CMD ["python3"]
 ### `python:latest` - windows version 10.0.17763.1817; amd64
 
 ```console
-$ docker pull python@sha256:e4c124e7a79697c053bdea36ed163b7f4e789f59d09f4b95a46260f00741f2c5
+$ docker pull python@sha256:3c9be396a1d5ce93ffa3a9d2831704b474c2ba971b6b650f9ef497a50216c70a
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2530874416 bytes)**  
+-	Total Size: **2.5 GB (2530933600 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d990e33bd92f502a645b1d5a35c1d92921328e7f60d58b07954c378ef1d78ad2`
+-	Image ID: `sha256:2803fade5873055af3d4de2238276c6b3cb9444ff494ad0f414dcad95fa047bf`
 -	Default Command: `["python"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -760,21 +760,21 @@ RUN Install update 1809-amd64
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
 # Wed, 10 Mar 2021 13:15:52 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Wed, 10 Mar 2021 17:11:06 GMT
-ENV PYTHON_VERSION=3.9.2
-# Wed, 10 Mar 2021 17:11:07 GMT
-ENV PYTHON_RELEASE=3.9.2
-# Wed, 10 Mar 2021 17:12:51 GMT
+# Fri, 02 Apr 2021 20:18:21 GMT
+ENV PYTHON_VERSION=3.9.3
+# Fri, 02 Apr 2021 20:18:22 GMT
+ENV PYTHON_RELEASE=3.9.3
+# Fri, 02 Apr 2021 20:20:05 GMT
 RUN $url = ('https://www.python.org/ftp/python/{0}/python-{1}-amd64.exe' -f $env:PYTHON_RELEASE, $env:PYTHON_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'python.exe'; 		Write-Host 'Installing ...'; 	Start-Process python.exe -Wait 		-ArgumentList @( 			'/quiet', 			'InstallAllUsers=1', 			'TargetDir=C:\Python', 			'PrependPath=1', 			'Shortcuts=0', 			'Include_doc=0', 			'Include_pip=0', 			'Include_test=0' 		); 		$env:PATH = [Environment]::GetEnvironmentVariable('PATH', [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  python --version'; python --version; 		Write-Host 'Removing ...'; 	Remove-Item python.exe -Force; 		Write-Host 'Complete.'
-# Wed, 10 Mar 2021 17:12:52 GMT
+# Fri, 02 Apr 2021 20:20:07 GMT
 ENV PYTHON_PIP_VERSION=21.0.1
-# Wed, 10 Mar 2021 17:12:53 GMT
-ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/b60e2320d9e8d02348525bd74e871e466afdf77c/get-pip.py
-# Wed, 10 Mar 2021 17:12:54 GMT
-ENV PYTHON_GET_PIP_SHA256=c3b81e5d06371e135fb3156dc7d8fd6270735088428c4a9a5ec1f342e2024565
-# Wed, 10 Mar 2021 17:13:44 GMT
+# Fri, 02 Apr 2021 20:20:08 GMT
+ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/29f37dbe6b3842ccd52d61816a3044173962ebeb/public/get-pip.py
+# Fri, 02 Apr 2021 20:20:09 GMT
+ENV PYTHON_GET_PIP_SHA256=e03eb8a33d3b441ff484c56a436ff10680479d4bd14e59268e67977ed40904de
+# Fri, 02 Apr 2021 20:21:06 GMT
 RUN Write-Host ('Downloading get-pip.py ({0}) ...' -f $env:PYTHON_GET_PIP_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:PYTHON_GET_PIP_URL -OutFile 'get-pip.py'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:PYTHON_GET_PIP_SHA256); 	if ((Get-FileHash 'get-pip.py' -Algorithm sha256).Hash -ne $env:PYTHON_GET_PIP_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host ('Installing pip=={0} ...' -f $env:PYTHON_PIP_VERSION); 	python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		('pip=={0}' -f $env:PYTHON_PIP_VERSION) 	; 	Remove-Item get-pip.py -Force; 		Write-Host 'Verifying pip install ...'; 	pip --version; 		Write-Host 'Complete.'
-# Wed, 10 Mar 2021 17:13:45 GMT
+# Fri, 02 Apr 2021 20:21:07 GMT
 CMD ["python"]
 ```
 
@@ -793,50 +793,50 @@ CMD ["python"]
 		Last Modified: Wed, 10 Mar 2021 13:23:23 GMT  
 		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f419097bf38c392546f7473fff3ef4bef857c2dd326a59e5a1b3f27003962138`  
-		Last Modified: Wed, 10 Mar 2021 17:28:18 GMT  
-		Size: 1.4 KB (1430 bytes)  
+	-	`sha256:c2025645bfa47cb6c01e6238b48c8eb99d0b58d1677ff4762396d39a57f23fac`  
+		Last Modified: Fri, 02 Apr 2021 20:35:04 GMT  
+		Size: 1.4 KB (1398 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a37ad21c96936c92cef209684ae9c62dc0b5270208801e1dba6f67d728062d5f`  
-		Last Modified: Wed, 10 Mar 2021 17:28:16 GMT  
-		Size: 1.4 KB (1392 bytes)  
+	-	`sha256:a841e6593ffc14d41ccfc1cee4f2577d994570e470e77e8e7300a1fdf8361088`  
+		Last Modified: Fri, 02 Apr 2021 20:35:04 GMT  
+		Size: 1.3 KB (1334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98d18657e6eb1d7ef660459bfa48a10749861bafe39a369ea9fe6692ae7b7e04`  
-		Last Modified: Wed, 10 Mar 2021 17:28:25 GMT  
-		Size: 59.0 MB (59029097 bytes)  
+	-	`sha256:f4334fc7919639a11a5aefec15223380e6e029d54ebabb069dada5e1db48f21e`  
+		Last Modified: Fri, 02 Apr 2021 20:35:13 GMT  
+		Size: 59.1 MB (59087309 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3ca5f081210afe7540eafddedb64191fca1cc8b3e04d01543e033aa9eb3529c`  
-		Last Modified: Wed, 10 Mar 2021 17:28:16 GMT  
-		Size: 1.4 KB (1411 bytes)  
+	-	`sha256:67e3403581f7dde1221769c3f4fca281c78df722c3f10be40688203485d8e406`  
+		Last Modified: Fri, 02 Apr 2021 20:35:01 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:daf17a21afb65d55d9d955212ddfe7a3be823b747f501872c0f3528bef68a747`  
-		Last Modified: Wed, 10 Mar 2021 17:28:15 GMT  
-		Size: 1.4 KB (1389 bytes)  
+	-	`sha256:0ce0e2a2ff17b6bca7be538710f26cf54f426b852d46bb4cf0d6d45f484d482b`  
+		Last Modified: Fri, 02 Apr 2021 20:35:01 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b22b76e8edbfe7b923a39a32ff1ec7fbdcc3d178be13e3f9a0802b5b76a50a7c`  
-		Last Modified: Wed, 10 Mar 2021 17:28:13 GMT  
-		Size: 1.4 KB (1436 bytes)  
+	-	`sha256:9e6a527d58ab3005fb5e8c113047c55c88046ba4fe6dd0ef70bd446fc677b726`  
+		Last Modified: Fri, 02 Apr 2021 20:35:01 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:281a46d3598ec2e0fc07cb20bceef10534ba388066f14e1453b3bb48f9210dce`  
-		Last Modified: Wed, 10 Mar 2021 17:28:17 GMT  
-		Size: 10.3 MB (10299571 bytes)  
+	-	`sha256:55f26d98c62ded21f148b20ac40852c4847e5212a68be41ca051adcf6a30da19`  
+		Last Modified: Fri, 02 Apr 2021 20:35:04 GMT  
+		Size: 10.3 MB (10300496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ef5280b2ab166d7a378395edc349d1bfddd9033858cca13c2b1ef22f94cd7f5`  
-		Last Modified: Wed, 10 Mar 2021 17:28:13 GMT  
-		Size: 1.4 KB (1357 bytes)  
+	-	`sha256:85d07ec3589870fbce012e0a1ae005d930016ca4c2a029ef21fab3cffeaf28d6`  
+		Last Modified: Fri, 02 Apr 2021 20:35:01 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:latest` - windows version 10.0.14393.4283; amd64
 
 ```console
-$ docker pull python@sha256:238f32f98492b75484d1f00f8cfb91deafd0d5b692ead87e2dadce9b718c1984
+$ docker pull python@sha256:18cd76ba3373b5c9ea891441caf300e3bad3a0bb2e15d287a846145624d5dbaf
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 GB (5872315635 bytes)**  
+-	Total Size: **5.9 GB (5872405180 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:708a275597fcefecfdf27835b7be053d6fc16575aeaa026e40344613e6eb8a8f`
+-	Image ID: `sha256:9992c9c999a8ffdc23f4d681855e6757dbebe9c1f090391a4efd1844999cc135`
 -	Default Command: `["python"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -849,21 +849,21 @@ RUN Install update ltsc2016-amd64
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
 # Wed, 10 Mar 2021 17:06:22 GMT
 ENV PYTHONIOENCODING=UTF-8
-# Wed, 10 Mar 2021 17:14:04 GMT
-ENV PYTHON_VERSION=3.9.2
-# Wed, 10 Mar 2021 17:14:05 GMT
-ENV PYTHON_RELEASE=3.9.2
-# Wed, 10 Mar 2021 17:16:33 GMT
+# Fri, 02 Apr 2021 20:21:21 GMT
+ENV PYTHON_VERSION=3.9.3
+# Fri, 02 Apr 2021 20:21:22 GMT
+ENV PYTHON_RELEASE=3.9.3
+# Fri, 02 Apr 2021 20:23:45 GMT
 RUN $url = ('https://www.python.org/ftp/python/{0}/python-{1}-amd64.exe' -f $env:PYTHON_RELEASE, $env:PYTHON_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'python.exe'; 		Write-Host 'Installing ...'; 	Start-Process python.exe -Wait 		-ArgumentList @( 			'/quiet', 			'InstallAllUsers=1', 			'TargetDir=C:\Python', 			'PrependPath=1', 			'Shortcuts=0', 			'Include_doc=0', 			'Include_pip=0', 			'Include_test=0' 		); 		$env:PATH = [Environment]::GetEnvironmentVariable('PATH', [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ...'; 	Write-Host '  python --version'; python --version; 		Write-Host 'Removing ...'; 	Remove-Item python.exe -Force; 		Write-Host 'Complete.'
-# Wed, 10 Mar 2021 17:16:34 GMT
+# Fri, 02 Apr 2021 20:23:46 GMT
 ENV PYTHON_PIP_VERSION=21.0.1
-# Wed, 10 Mar 2021 17:16:35 GMT
-ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/b60e2320d9e8d02348525bd74e871e466afdf77c/get-pip.py
-# Wed, 10 Mar 2021 17:16:36 GMT
-ENV PYTHON_GET_PIP_SHA256=c3b81e5d06371e135fb3156dc7d8fd6270735088428c4a9a5ec1f342e2024565
-# Wed, 10 Mar 2021 17:18:33 GMT
+# Fri, 02 Apr 2021 20:23:48 GMT
+ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/29f37dbe6b3842ccd52d61816a3044173962ebeb/public/get-pip.py
+# Fri, 02 Apr 2021 20:23:49 GMT
+ENV PYTHON_GET_PIP_SHA256=e03eb8a33d3b441ff484c56a436ff10680479d4bd14e59268e67977ed40904de
+# Fri, 02 Apr 2021 20:25:41 GMT
 RUN Write-Host ('Downloading get-pip.py ({0}) ...' -f $env:PYTHON_GET_PIP_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:PYTHON_GET_PIP_URL -OutFile 'get-pip.py'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:PYTHON_GET_PIP_SHA256); 	if ((Get-FileHash 'get-pip.py' -Algorithm sha256).Hash -ne $env:PYTHON_GET_PIP_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host ('Installing pip=={0} ...' -f $env:PYTHON_PIP_VERSION); 	python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		('pip=={0}' -f $env:PYTHON_PIP_VERSION) 	; 	Remove-Item get-pip.py -Force; 		Write-Host 'Verifying pip install ...'; 	pip --version; 		Write-Host 'Complete.'
-# Wed, 10 Mar 2021 17:18:34 GMT
+# Fri, 02 Apr 2021 20:25:43 GMT
 CMD ["python"]
 ```
 
@@ -883,35 +883,35 @@ CMD ["python"]
 		Last Modified: Wed, 10 Mar 2021 17:27:40 GMT  
 		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ed2e9a44384a6d453a04b3313aaa12467471d177d8c0ed4980d82be57c4ea15`  
-		Last Modified: Wed, 10 Mar 2021 17:28:47 GMT  
-		Size: 1.4 KB (1402 bytes)  
+	-	`sha256:e45239c0e27b8081da161618ea129ab1daee2c2c4b9f8d1de77d1f42df0b051d`  
+		Last Modified: Fri, 02 Apr 2021 20:35:32 GMT  
+		Size: 1.4 KB (1398 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bdbad875fe96756c8299fe929c78e5423c7a400ef49b1dee295f5df8c019e439`  
-		Last Modified: Wed, 10 Mar 2021 17:28:47 GMT  
-		Size: 1.4 KB (1437 bytes)  
+	-	`sha256:6377f60bc26534bda5a1264aa21385e20b13688ff8fa70fde638cbc1b77e9aea`  
+		Last Modified: Fri, 02 Apr 2021 20:35:32 GMT  
+		Size: 1.4 KB (1418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b403c9d04546f8c300967f024060d3996779400e3a50bf9e74b22e3ee575e80`  
-		Last Modified: Wed, 10 Mar 2021 17:28:56 GMT  
-		Size: 59.7 MB (59696576 bytes)  
+	-	`sha256:fbfa26bf3051ab92c137bc07bba414063c68c1f95485ce3fad94e723a314b265`  
+		Last Modified: Fri, 02 Apr 2021 20:36:42 GMT  
+		Size: 59.8 MB (59774437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b295d07e874de0e134b80bb9067428afad98fac5f8a3882694e66b4b0dce4d1b`  
-		Last Modified: Wed, 10 Mar 2021 17:28:43 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:1c36384e4e3e7fdf16cdcc39dfe16d27f5e08b8df70262b722538253d4dd6c96`  
+		Last Modified: Fri, 02 Apr 2021 20:35:31 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2bfe82913f6294c6f655377f2dc26edc587734a94fb83783ad92a0d7ea3d325`  
-		Last Modified: Wed, 10 Mar 2021 17:28:44 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:01a1700873b0274e5d17ccc915921dbc871ca64bcb1c2dd0fc4e679d2870d614`  
+		Last Modified: Fri, 02 Apr 2021 20:35:30 GMT  
+		Size: 1.4 KB (1409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0e45e00b9ab192f80d299a33a043e4a4e933540f39f05bdace8e89878dd48bd`  
-		Last Modified: Wed, 10 Mar 2021 17:28:43 GMT  
-		Size: 1.4 KB (1411 bytes)  
+	-	`sha256:4459cb871382153d31c165b9caabb7d7612b49b7bd1a7f8030edc53f098c92ad`  
+		Last Modified: Fri, 02 Apr 2021 20:35:30 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b82f656531e8942eb7a4967bf407d1b5a97212554388f0ef8549caf41f1181df`  
-		Last Modified: Wed, 10 Mar 2021 17:28:47 GMT  
-		Size: 15.7 MB (15696959 bytes)  
+	-	`sha256:09d7b1de00b1f0f3c5a2568e10de6aaeb631e431a33b7efcf6237756ee2a8153`  
+		Last Modified: Fri, 02 Apr 2021 20:35:48 GMT  
+		Size: 15.7 MB (15708706 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:70e1ed09d483a2ef163c76967626b23ae6432b2c12f9ed8ffe74b0eba7525fef`  
-		Last Modified: Wed, 10 Mar 2021 17:28:46 GMT  
-		Size: 1.4 KB (1427 bytes)  
+	-	`sha256:733db938bcc37b9e255ec29d0bb6541f9f1faa2e5c6fba81c91012765f62a2b5`  
+		Last Modified: Fri, 02 Apr 2021 20:35:30 GMT  
+		Size: 1.4 KB (1405 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
