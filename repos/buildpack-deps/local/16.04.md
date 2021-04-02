@@ -574,14 +574,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.18
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.18.dsc' curl_7.47.0-1ubuntu2.18.dsc 2733 SHA512:80b1f030901705f12a3ba3ecec1b2da34f76c5ffc4ed54055cc160ffacf1b677dc069179b2d3ffb24c22176f68cd761e0b93cc94165c035ce5a94fc7ba2670f0
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0.orig.tar.gz' curl_7.47.0.orig.tar.gz 4563163 SHA512:567d6a17bad1439147a419eff7e3b4a8f81104e903d856a33a1ccfaf77723cc70004fa697505443a5edcee1b644eba2c79484b41c00e35320bec6ef928db43d9
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.18.debian.tar.xz' curl_7.47.0-1ubuntu2.18.debian.tar.xz 60604 SHA512:435f81a36d17e098f879795a51483562829a84406383f65430a34f40f7efb58e35be5dc61ba5c2895e3cef5d35e6b8908147f1f8f47f2d6b6598ba8b0c15e228
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14ubuntu0.2`
 
@@ -3285,14 +3280,9 @@ Licenses: (parsed from: `/usr/share/doc/libopenexr-dev/copyright`, `/usr/share/d
 
 - `openexr`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openexr=2.2.0-10ubuntu2.4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openexr/openexr_2.2.0-10ubuntu2.4.dsc' openexr_2.2.0-10ubuntu2.4.dsc 2395 SHA512:106406eeefdf722914e9b3c3eaf0d72b8358865dadef35c230d9a7f56a6fbe506e89e43fb994b20014ea7148c656450c1cf6d34fdcfe0f3afd5881d026180557
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openexr/openexr_2.2.0.orig.tar.gz' openexr_2.2.0.orig.tar.gz 14489661 SHA512:017abbeeb6b814508180721bc8e8940094965c4c55b135a198c6bcb109a04bf7f72e4aee81ee72cb2185fe818a41d892b383e8d2d59f40c673198948cb79279a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openexr/openexr_2.2.0-10ubuntu2.4.debian.tar.xz' openexr_2.2.0-10ubuntu2.4.debian.tar.xz 45728 SHA512:f748a1caaa35a2f92f5cea3c852168054f9802f3a6a12a43c62a82723b39d80d463c110a1c46461dafec7cb0ef69be72716a9fa7fd34d589f1dde033253c9b16
-```
 
 ### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.13`
 

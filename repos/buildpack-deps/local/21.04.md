@@ -331,14 +331,9 @@ Licenses: (parsed from: `/usr/share/doc/bzip2/copyright`, `/usr/share/doc/libbz2
 - `BSD-variant`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bzip2=1.0.8-4ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-4ubuntu2.dsc' bzip2_1.0.8-4ubuntu2.dsc 2212 SHA512:bbb7850c0dca5f3c06ddd057addff1ecad68378fd448f739f8b074e039b03eeceea323ec873bf08864367f7240bddb364735f56ac15a2bc5fb4d83fdd71f83ce
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8.orig.tar.gz' bzip2_1.0.8.orig.tar.gz 810029 SHA512:083f5e675d73f3233c7930ebe20425a533feedeaaa9d8cc86831312a6581cefbe6ed0d08d2fa89be81082f2a5abdabca8b3c080bf97218a1bd59dc118a30b9f3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-4ubuntu2.debian.tar.bz2' bzip2_1.0.8-4ubuntu2.debian.tar.bz2 26561 SHA512:6ac1e2e3e22d989ab49e8f01aab592c35dff9950e2ed4439e9df650d3cd2ed7061796bc1e76c7fe9216e2fef4e1b59991fadb508f7c7bed9178d6dcb26247f8e
-```
 
 ### `dpkg` source package: `ca-certificates=20200601`
 
@@ -2591,14 +2586,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.10+dfsg-6.3build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10+dfsg-6.3build1.dsc' libxml2_2.9.10+dfsg-6.3build1.dsc 2721 SHA512:8741ad74e53b0ce1972b1f97e38d93eaef9c3430d2de462345d2a95bd116bdfa1d8138292fb94635efc428f251cd0d014afd5bcc36f6e3a151d96fc37c4c76e4
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10+dfsg.orig.tar.xz' libxml2_2.9.10+dfsg.orig.tar.xz 2503560 SHA512:605c6c0f8bf2c53208d0a036ff09a4025843f45139b711c90dc83066feda2f285a5578d55d4a58d33eedbe7485a5c1ec5608ba6c6beed1fb55649f87dca0cec3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10+dfsg-6.3build1.debian.tar.xz' libxml2_2.9.10+dfsg-6.3build1.debian.tar.xz 29936 SHA512:6de6c51f4b7351432ad06ef859d24bcfc0daf9919c3819e1e1d9e374a1158d03ac38308f6846fa740db758521862f42cd1485e867985e41c9d4394e198eecca5
-```
 
 ### `dpkg` source package: `libxrender=1:0.9.10-1`
 
@@ -2933,14 +2923,13 @@ Licenses: (parsed from: `/usr/share/doc/libmpfr6/copyright`)
 - `GFDL-1.2`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mpfr4=4.1.0-3
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.1.0-3.dsc' mpfr4_4.1.0-3.dsc 1959 SHA512:ff99a80c7468e508efab5e4135e6fd54d7a50e55ccb168eda22a788ace44aae8b5bcf4091ed691b603ca96da0fb1af1f3e52411d61806e40d20b5923e5bd0bf4
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.1.0.orig.tar.xz' mpfr4_4.1.0.orig.tar.xz 1525476 SHA512:1bd1c349741a6529dfa53af4f0da8d49254b164ece8a46928cdb13a99460285622d57fe6f68cef19c6727b3f9daa25ddb3d7d65c201c8f387e421c7f7bee6273
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.1.0-3.debian.tar.xz' mpfr4_4.1.0-3.debian.tar.xz 12372 SHA512:a0472b95ab7d7c8a00d7716039fefbd30142939f2077a930f0dafc056a3a5b9debc65bb9ddbfb88fbfdb6bcf9fb7871631bdb7376ca24d400e11a4c1a371df3e
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/mpfr4/4.1.0-3/
+
 
 ### `dpkg` source package: `mysql-8.0=8.0.22-0ubuntu0.20.10.2`
 
