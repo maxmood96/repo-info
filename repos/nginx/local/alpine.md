@@ -1,9 +1,9 @@
-# `nginx:1.19.8-alpine`
+# `nginx:1.19.9-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:86a0129045b74ad86b3e4b0d2aff3402f892ba86da368c8fb2f11588178c785e`
-- Created: `2021-03-26T05:57:13.968375849Z`
+- Image ID: `sha256:72ab4137bd85aae7970407cbf4ba98ec0a7cb9d302e93a38bb665ba5fddf6f5d`
+- Created: `2021-04-01T15:19:52.70421184Z`
 - Virtual Size: ~ 22.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,8 +11,8 @@
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.19.8`
-  - `NJS_VERSION=0.5.2`
+  - `NGINX_VERSION=1.19.9`
+  - `NJS_VERSION=0.5.3`
   - `PKG_RELEASE=1`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
@@ -56,16 +56,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.12.1-r0 description:
+apk-tools-2.12.4-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.12.1-r0 webpage:
+apk-tools-2.12.4-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.12.1-r0 installed size:
+apk-tools-2.12.4-r0 installed size:
 311296
 
-apk-tools-2.12.1-r0 license:
+apk-tools-2.12.4-r0 license:
 GPL-2.0-only
 
 ```
@@ -90,16 +90,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.32.1-r3 description:
+busybox-1.32.1-r5 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.32.1-r3 webpage:
+busybox-1.32.1-r5 webpage:
 https://busybox.net/
 
-busybox-1.32.1-r3 installed size:
+busybox-1.32.1-r5 installed size:
 946176
 
-busybox-1.32.1-r3 license:
+busybox-1.32.1-r5 license:
 GPL-2.0-only
 
 ```
@@ -549,16 +549,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.19.8-r1 description:
+nginx-1.19.9-r1 description:
 High performance web server
 
-nginx-1.19.8-r1 webpage:
+nginx-1.19.9-r1 webpage:
 https://nginx.org/
 
-nginx-1.19.8-r1 installed size:
+nginx-1.19.9-r1 installed size:
 2641920
 
-nginx-1.19.8-r1 license:
+nginx-1.19.9-r1 license:
 2-clause BSD-like license
 
 ```
@@ -566,16 +566,16 @@ nginx-1.19.8-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.19.8-r1 description:
+nginx-module-geoip-1.19.9-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.19.8-r1 webpage:
+nginx-module-geoip-1.19.9-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.19.8-r1 installed size:
+nginx-module-geoip-1.19.9-r1 installed size:
 118784
 
-nginx-module-geoip-1.19.8-r1 license:
+nginx-module-geoip-1.19.9-r1 license:
 2-clause BSD-like license
 
 ```
@@ -583,16 +583,16 @@ nginx-module-geoip-1.19.8-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.19.8-r1 description:
+nginx-module-image-filter-1.19.9-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.19.8-r1 webpage:
+nginx-module-image-filter-1.19.9-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.19.8-r1 installed size:
+nginx-module-image-filter-1.19.9-r1 installed size:
 90112
 
-nginx-module-image-filter-1.19.8-r1 license:
+nginx-module-image-filter-1.19.9-r1 license:
 2-clause BSD-like license
 
 ```
@@ -600,16 +600,16 @@ nginx-module-image-filter-1.19.8-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.19.8.0.5.2-r1 description:
+nginx-module-njs-1.19.9.0.5.3-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.19.8.0.5.2-r1 webpage:
+nginx-module-njs-1.19.9.0.5.3-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.19.8.0.5.2-r1 installed size:
+nginx-module-njs-1.19.9.0.5.3-r1 installed size:
 3538944
 
-nginx-module-njs-1.19.8.0.5.2-r1 license:
+nginx-module-njs-1.19.9.0.5.3-r1 license:
 2-clause BSD-like license
 
 ```
@@ -617,16 +617,16 @@ nginx-module-njs-1.19.8.0.5.2-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.19.8-r1 description:
+nginx-module-xslt-1.19.9-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.19.8-r1 webpage:
+nginx-module-xslt-1.19.9-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.19.8-r1 installed size:
+nginx-module-xslt-1.19.9-r1 installed size:
 86016
 
-nginx-module-xslt-1.19.8-r1 license:
+nginx-module-xslt-1.19.9-r1 license:
 2-clause BSD-like license
 
 ```
@@ -668,16 +668,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.32.1-r3 description:
+ssl_client-1.32.1-r5 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.32.1-r3 webpage:
+ssl_client-1.32.1-r5 webpage:
 https://busybox.net/
 
-ssl_client-1.32.1-r3 installed size:
+ssl_client-1.32.1-r5 installed size:
 28672
 
-ssl_client-1.32.1-r3 license:
+ssl_client-1.32.1-r5 license:
 GPL-2.0-only
 
 ```
