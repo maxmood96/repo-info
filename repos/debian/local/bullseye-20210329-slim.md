@@ -1,10 +1,10 @@
-# `debian:experimental`
+# `debian:bullseye-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9e70b2d362969f4827158a910933dfdacf806179bec392253e89a36e4ac0b433`
-- Created: `2021-03-26T15:24:32.432883009Z`
-- Virtual Size: ~ 123.79 Mb  
+- Image ID: `sha256:8e2c5d2c34d8d613d5a70e9db1206f2407941fb62072be5ebdb96368f2deebba`
+- Created: `2021-03-30T21:49:06.86382235Z`
+- Virtual Size: ~ 80.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -249,11 +249,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.8-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.8-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `cdebconf=0.257`
+### `dpkg` source package: `cdebconf=0.256`
 
 Binary Packages:
 
-- `libdebconfclient0:amd64=0.257`
+- `libdebconfclient0:amd64=0.256`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -262,16 +262,16 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cdebconf=0.257
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.257.dsc' cdebconf_0.257.dsc 2750 SHA256:ee295b4389c60c43d69bf56dcceec1f002cbc52e8df8d4dc6e9bb8fef9d20a0d
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.257.tar.xz' cdebconf_0.257.tar.xz 278384 SHA256:86f961c12cbaffeec88f5b15c04c6fda2df4670b0bde793e052b929361867986
+$ apt-get source -qq --print-uris cdebconf=0.256
+'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.256.dsc' cdebconf_0.256.dsc 2750 SHA256:a4a90c0d0116f9892c2d627a34ed13c538742702165e75c10fa62994329ad78d
+'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.256.tar.xz' cdebconf_0.256.tar.xz 278240 SHA256:c6265de643520976b7deee12912da06956bbe401ec011f3a5aabaf38e376c711
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/cdebconf/0.257/ (for browsing the source)
-- https://sources.debian.net/src/cdebconf/0.257/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cdebconf/0.257/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/cdebconf/0.256/ (for browsing the source)
+- https://sources.debian.net/src/cdebconf/0.256/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cdebconf/0.256/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `coreutils=8.32-4`
 
@@ -299,11 +299,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.32-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.32-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `dash=0.5.11+git20210120+802ebd4-1`
+### `dpkg` source package: `dash=0.5.11+git20200708+dd9ef66-5`
 
 Binary Packages:
 
-- `dash=0.5.11+git20210120+802ebd4-1`
+- `dash=0.5.11+git20200708+dd9ef66-5`
 
 Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 
@@ -319,17 +319,17 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris dash=0.5.11+git20210120+802ebd4-1
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.11+git20210120+802ebd4-1.dsc' dash_0.5.11+git20210120+802ebd4-1.dsc 1646 SHA256:2d08964cf9ad4f59c7ea11f65248b6b95f25265be41214b14464f89b55d4609e
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.11+git20210120+802ebd4.orig.tar.xz' dash_0.5.11+git20210120+802ebd4.orig.tar.xz 133332 SHA256:eb30fbd87ea01f0f8b55e34f8fa68745c1134cd756b6bbeba3d3938563912431
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.11+git20210120+802ebd4-1.debian.tar.xz' dash_0.5.11+git20210120+802ebd4-1.debian.tar.xz 42504 SHA256:8f5551046677b8ef24aa92d19f6b7ff59f241ec3f6515593307bb69138cb514a
+$ apt-get source -qq --print-uris dash=0.5.11+git20200708+dd9ef66-5
+'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.11+git20200708+dd9ef66-5.dsc' dash_0.5.11+git20200708+dd9ef66-5.dsc 1906 SHA256:b0568c34647dc2aa0b8e2656c5e7449d9a1feb4b89d6857f507173b1f9a42ee7
+'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.11+git20200708+dd9ef66.orig.tar.gz' dash_0.5.11+git20200708+dd9ef66.orig.tar.gz 167776 SHA256:ab70b1f165bfedadd1282da546f1c917f1b7ccb2c5c2f898310a963e2ab5520c
+'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.11+git20200708+dd9ef66-5.debian.tar.xz' dash_0.5.11+git20200708+dd9ef66-5.debian.tar.xz 43120 SHA256:5da6039e043c953ff91a31c767ed703699870682ff356a1642f4798ce04a2926
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/dash/0.5.11+git20210120+802ebd4-1/ (for browsing the source)
-- https://sources.debian.net/src/dash/0.5.11+git20210120+802ebd4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dash/0.5.11+git20210120+802ebd4-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/dash/0.5.11+git20200708+dd9ef66-5/ (for browsing the source)
+- https://sources.debian.net/src/dash/0.5.11+git20200708+dd9ef66-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/dash/0.5.11+git20200708+dd9ef66-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db5.3=5.3.28+dfsg1-0.8`
 
@@ -356,11 +356,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/db5.3/5.3.28+dfsg1-0.8/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/db5.3/5.3.28+dfsg1-0.8/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `debconf=1.5.76`
+### `dpkg` source package: `debconf=1.5.75`
 
 Binary Packages:
 
-- `debconf=1.5.76`
+- `debconf=1.5.75`
 
 Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
@@ -369,16 +369,16 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris debconf=1.5.76
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.76.dsc' debconf_1.5.76.dsc 2082 SHA256:8721e7ec2a99878b44f63855288abfd9b94aaa6e7d1d6972b2cf75280ee5abc8
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.76.tar.xz' debconf_1.5.76.tar.xz 571228 SHA256:0d06a42493a54b44e5e0572d0217e3ca1d95dd89a5cd914491f32be79c82cc9e
+$ apt-get source -qq --print-uris debconf=1.5.75
+'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.75.dsc' debconf_1.5.75.dsc 2082 SHA256:8ff77c467efc63a295f387cf24a5f131828227cb7d1770c13ca1ffad3032e71f
+'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.75.tar.xz' debconf_1.5.75.tar.xz 571160 SHA256:82356178d1ff99b3bb2b6d40a40c2d9f968541bcd5b0433464bcc6f4ad607ee8
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/debconf/1.5.76/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.76/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.76/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/debconf/1.5.75/ (for browsing the source)
+- https://sources.debian.net/src/debconf/1.5.75/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/debconf/1.5.75/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2021.1.1`
 
@@ -1279,11 +1279,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libunistring/0.9.10-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libunistring/0.9.10-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxcrypt=1:4.4.18-1`
+### `dpkg` source package: `libxcrypt=1:4.4.17-1`
 
 Binary Packages:
 
-- `libcrypt1:amd64=1:4.4.18-1`
+- `libcrypt1:amd64=1:4.4.17-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1292,17 +1292,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxcrypt=1:4.4.18-1
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.18-1.dsc' libxcrypt_4.4.18-1.dsc 1476 SHA256:5c85ea753bc023ac9ff774a218cb25ae27c7104924a4786edc0d469b46d66dae
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.18.orig.tar.xz' libxcrypt_4.4.18.orig.tar.xz 397776 SHA256:4cd2a06e98519d57a5572ee8885b6cc23c70a559d234c161d3f22c487edaa3fa
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.18-1.debian.tar.xz' libxcrypt_4.4.18-1.debian.tar.xz 5652 SHA256:c372be50590416d5342bb841ef452a549c21e9443f6fa8ed7aa73cecfade3144
+$ apt-get source -qq --print-uris libxcrypt=1:4.4.17-1
+'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.17-1.dsc' libxcrypt_4.4.17-1.dsc 1463 SHA256:404666b7959510140e036344184d1648c51c410c7d65fbc7b6cad871d41bfd77
+'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.17.orig.tar.xz' libxcrypt_4.4.17.orig.tar.xz 389052 SHA256:b6189c6076ee88df6fe2bd14b1e90a73a5ca3a808052e16c7fcd0bf16448c677
+'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.17-1.debian.tar.xz' libxcrypt_4.4.17-1.debian.tar.xz 5536 SHA256:dc69cdb7c48521231ff13ebc3d432d3775a41fbbc534bf89a60b526a538eca4d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxcrypt/1:4.4.18-1/ (for browsing the source)
-- https://sources.debian.net/src/libxcrypt/1:4.4.18-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxcrypt/1:4.4.18-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libxcrypt/1:4.4.17-1/ (for browsing the source)
+- https://sources.debian.net/src/libxcrypt/1:4.4.17-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxcrypt/1:4.4.17-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libzstd=1.4.8+dfsg-2.1`
 
@@ -1898,11 +1898,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/xxhash/0.8.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/xxhash/0.8.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `xz-utils=5.2.5-2`
+### `dpkg` source package: `xz-utils=5.2.5-1.0`
 
 Binary Packages:
 
-- `liblzma5:amd64=5.2.5-2`
+- `liblzma5:amd64=5.2.5-1.0`
 
 Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 
@@ -1925,18 +1925,18 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris xz-utils=5.2.5-2
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.2.5-2.dsc' xz-utils_5.2.5-2.dsc 2312 SHA256:fa2706f0c863bee4715460bc9103c6fb73ad2cbc12d8d6d7d5dced81ab349949
+$ apt-get source -qq --print-uris xz-utils=5.2.5-1.0
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.2.5-1.0.dsc' xz-utils_5.2.5-1.0.dsc 2527 SHA256:21fef59fb4b1ee054f5a29830e7e1416348c3a56cf24efbb422eefebbcbe094d
 'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.2.5.orig.tar.xz' xz-utils_5.2.5.orig.tar.xz 1148824 SHA256:3e1e518ffc912f86608a8cb35e4bd41ad1aec210df2a47aaa1f95e7f5576ef56
 'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.2.5.orig.tar.xz.asc' xz-utils_5.2.5.orig.tar.xz.asc 833 SHA256:6efc0075a58912e640119d2b52ef7d1518b260d8720fadc73df21ab7fc727624
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.2.5-2.debian.tar.xz' xz-utils_5.2.5-2.debian.tar.xz 33532 SHA256:7bf06a86c35cc6b21a7731df9e11d241f8d3c16b0fe6ed78d64506d1bc29b06e
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.2.5-1.0.debian.tar.xz' xz-utils_5.2.5-1.0.debian.tar.xz 31636 SHA256:163c5236a25cc8432fe6c2785c4c66916ea71e1e966130492bbe34f9a1ee679a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/xz-utils/5.2.5-2/ (for browsing the source)
-- https://sources.debian.net/src/xz-utils/5.2.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xz-utils/5.2.5-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/xz-utils/5.2.5-1.0/ (for browsing the source)
+- https://sources.debian.net/src/xz-utils/5.2.5-1.0/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xz-utils/5.2.5-1.0/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `zlib=1:1.2.11.dfsg-2`
 

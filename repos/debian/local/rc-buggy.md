@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:96a33784650a6bda52922f13b3db7b7d2c27d6f7b056666395ba877b35d1f631`
-- Created: `2021-03-26T15:24:39.028849615Z`
+- Image ID: `sha256:715351f44d35062da9f23fed3e17c8db31795edf2266cf82cb00cf7e80ca672f`
+- Created: `2021-03-30T21:51:48.38190499Z`
 - Virtual Size: ~ 123.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -616,20 +616,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.31-10
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-10.dsc' glibc_2.31-10.dsc 8315 SHA256:76e69265d37a253bee7e81e842fc984479df68ec939cb8c464f7f5c71ba7a08c
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-10.debian.tar.xz' glibc_2.31-10.debian.tar.xz 906616 SHA256:f72c53818b5f7d3ab9e0ab8743a6e1fd4506c32dc0e54bc99601aa13f603bcb3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glibc/2.31-10/
 
-- https://sources.debian.net/src/glibc/2.31-10/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.31-10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.31-10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-1`
 
@@ -1279,11 +1272,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libunistring/0.9.10-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libunistring/0.9.10-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxcrypt=1:4.4.18-1`
+### `dpkg` source package: `libxcrypt=1:4.4.18-2`
 
 Binary Packages:
 
-- `libcrypt1:amd64=1:4.4.18-1`
+- `libcrypt1:amd64=1:4.4.18-2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1292,17 +1285,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxcrypt=1:4.4.18-1
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.18-1.dsc' libxcrypt_4.4.18-1.dsc 1476 SHA256:5c85ea753bc023ac9ff774a218cb25ae27c7104924a4786edc0d469b46d66dae
+$ apt-get source -qq --print-uris libxcrypt=1:4.4.18-2
+'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.18-2.dsc' libxcrypt_4.4.18-2.dsc 1463 SHA256:52fc0204433da9c0a53034db0e70f0418cb671cd6e2e50518cac702ddb7af0de
 'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.18.orig.tar.xz' libxcrypt_4.4.18.orig.tar.xz 397776 SHA256:4cd2a06e98519d57a5572ee8885b6cc23c70a559d234c161d3f22c487edaa3fa
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.18-1.debian.tar.xz' libxcrypt_4.4.18-1.debian.tar.xz 5652 SHA256:c372be50590416d5342bb841ef452a549c21e9443f6fa8ed7aa73cecfade3144
+'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.18-2.debian.tar.xz' libxcrypt_4.4.18-2.debian.tar.xz 7184 SHA256:1c6c4bd9e14c5022c8897a922391caa2c8b1a34dff1cd59d3bd2f229166c7247
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxcrypt/1:4.4.18-1/ (for browsing the source)
-- https://sources.debian.net/src/libxcrypt/1:4.4.18-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxcrypt/1:4.4.18-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libxcrypt/1:4.4.18-2/ (for browsing the source)
+- https://sources.debian.net/src/libxcrypt/1:4.4.18-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxcrypt/1:4.4.18-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libzstd=1.4.8+dfsg-2.1`
 
