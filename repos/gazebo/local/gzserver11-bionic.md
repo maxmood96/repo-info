@@ -1162,14 +1162,9 @@ Licenses: (parsed from: `/usr/share/doc/gazebo11/copyright`, `/usr/share/doc/gaz
 - `LGPL-3+`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gazebo11=11.3.0-1~bionic
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.3.0-1~bionic.dsc' gazebo11_11.3.0-1~bionic.dsc 2354 SHA256:b3d55efbae4c3507565b8e3cf030bc02c498907dda372fccce746b2298acb2af
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.3.0.orig.tar.bz2' gazebo11_11.3.0.orig.tar.bz2 56778002 SHA256:09462946a1841256c57aa2635cbebd9b625a744533603b81b693ee2e370082f4
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.3.0-1~bionic.debian.tar.xz' gazebo11_11.3.0-1~bionic.debian.tar.xz 6656 SHA256:11c1377e9445929c3522753b969cc8d33f2dcccae7d0773b76d3fb1d6425965e
-```
 
 ### `dpkg` source package: `gcc-7=7.5.0-3ubuntu1~18.04`
 
@@ -4807,14 +4802,9 @@ Licenses: (parsed from: `/usr/share/doc/libopenexr22/copyright`)
 
 - `openexr`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openexr=2.2.0-11.1ubuntu1.4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openexr/openexr_2.2.0-11.1ubuntu1.4.dsc' openexr_2.2.0-11.1ubuntu1.4.dsc 2403 SHA512:5d3b4d70e582e42397381bd25ee47372f8389ba67899d3e3f7174cd47f8f5f80e27c30431b0314ddcbb90b66fb469dd6dfd81668e6713f3aa12b69ef0ca977c0
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openexr/openexr_2.2.0.orig.tar.gz' openexr_2.2.0.orig.tar.gz 14489661 SHA512:017abbeeb6b814508180721bc8e8940094965c4c55b135a198c6bcb109a04bf7f72e4aee81ee72cb2185fe818a41d892b383e8d2d59f40c673198948cb79279a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openexr/openexr_2.2.0-11.1ubuntu1.4.debian.tar.xz' openexr_2.2.0-11.1ubuntu1.4.debian.tar.xz 31236 SHA512:e9d898fa8f412bd503007ec9b9d86985e520b3f2058464e51a65a5a2850acacd1684e85db6757bba6e74840cd541a947ee982416c034e8008d954aba99b3756d
-```
 
 ### `dpkg` source package: `openjpeg2=2.3.0-2build0.18.04.1`
 
