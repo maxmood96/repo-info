@@ -1,10 +1,10 @@
-# `tomcat:10.0.4-jdk16-openjdk-slim-buster`
+# `tomcat:10.0.5-jdk16-openjdk-slim-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:944a841c18ab7b2678d3e28d30196d2b1196333d60fd376b86bf749fe61c029d`
-- Created: `2021-03-27T12:04:54.269938435Z`
-- Virtual Size: ~ 416.06 Mb  
+- Image ID: `sha256:8537509026953c84de699971c6f0e1ec852da732def9002eb0dcd6d571da3993`
+- Created: `2021-04-06T22:25:10.633871158Z`
+- Virtual Size: ~ 416.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -18,8 +18,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=A9C5DF4D22E99998D9875A5110C01C5A2F6059E7`
   - `TOMCAT_MAJOR=10`
-  - `TOMCAT_VERSION=10.0.4`
-  - `TOMCAT_SHA512=c88e2068e33ed0e08985770da252440f3341c6e1ef7198aacba84492084ada3cd888f7fe52297898f44668672b80c97a39057b8c46a9dcdc4c981d36c05a9969`
+  - `TOMCAT_VERSION=10.0.5`
+  - `TOMCAT_SHA512=27271e17c8daf52503490c6657c992cc150cf2942e1b0179b738f34e9aa5e1aac3c7b947c67441d17294a8f1e772a00e38e30b2135372d6ee9d71207ac7261c3`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -185,23 +185,29 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/audit/1:2.8.4-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/audit/1:2.8.4-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `base-files=10.3+deb10u8`
+### `dpkg` source package: `base-files=10.3+deb10u9`
 
 Binary Packages:
 
-- `base-files=10.3+deb10u8`
+- `base-files=10.3+deb10u9`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris base-files=10.3+deb10u9
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_10.3+deb10u9.dsc' base-files_10.3+deb10u9.dsc 1103 SHA256:9b365291e8da86412c97d3dee80e2570287d21dc105d916137334e36415918cf
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_10.3+deb10u9.tar.xz' base-files_10.3+deb10u9.tar.xz 65484 SHA256:8527cedc376063fb5fa8f58b0f1444e2d72453b0c885c686b85857c13b592a93
+```
 
-- http://snapshot.debian.org/package/base-files/10.3+deb10u8/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/base-files/10.3+deb10u9/ (for browsing the source)
+- https://sources.debian.net/src/base-files/10.3+deb10u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/10.3+deb10u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.46`
 
@@ -428,11 +434,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/debconf/1.5.71/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/debconf/1.5.71/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `debian-archive-keyring=2019.1`
+### `dpkg` source package: `debian-archive-keyring=2019.1+deb10u1`
 
 Binary Packages:
 
-- `debian-archive-keyring=2019.1`
+- `debian-archive-keyring=2019.1+deb10u1`
 
 Licenses: (parsed from: `/usr/share/doc/debian-archive-keyring/copyright`)
 
@@ -441,16 +447,16 @@ Licenses: (parsed from: `/usr/share/doc/debian-archive-keyring/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris debian-archive-keyring=2019.1
-'http://deb.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2019.1.dsc' debian-archive-keyring_2019.1.dsc 1808 SHA256:c41d15f22974aa3c8b2a6535327f8c4b6bdeea050e3bf070c4bc6c4d8860f598
-'http://deb.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2019.1.tar.xz' debian-archive-keyring_2019.1.tar.xz 116772 SHA256:cdb12d8b78889593dc9a37f639cbd9efd164cfc058c07b039f74581dc22a4b6e
+$ apt-get source -qq --print-uris debian-archive-keyring=2019.1+deb10u1
+'http://deb.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2019.1+deb10u1.dsc' debian-archive-keyring_2019.1+deb10u1.dsc 1878 SHA256:5e331767f3b49a6da251e0723604ac953496536965dfddc1d527d23d028f0de0
+'http://deb.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2019.1+deb10u1.tar.xz' debian-archive-keyring_2019.1+deb10u1.tar.xz 149144 SHA256:ffb63bc54d67f3d9125ebbb7298fdf3be1d18a6df1816d5ae96f1cf0f141eb39
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/debian-archive-keyring/2019.1/ (for browsing the source)
-- https://sources.debian.net/src/debian-archive-keyring/2019.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debian-archive-keyring/2019.1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/debian-archive-keyring/2019.1+deb10u1/ (for browsing the source)
+- https://sources.debian.net/src/debian-archive-keyring/2019.1+deb10u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/debian-archive-keyring/2019.1+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debianutils=4.8.6.1`
 
@@ -1520,12 +1526,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/shadow/1:4.5-1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/shadow/1:4.5-1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=241-7~deb10u6`
+### `dpkg` source package: `systemd=241-7~deb10u7`
 
 Binary Packages:
 
-- `libsystemd0:amd64=241-7~deb10u6`
-- `libudev1:amd64=241-7~deb10u6`
+- `libsystemd0:amd64=241-7~deb10u7`
+- `libudev1:amd64=241-7~deb10u7`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1537,13 +1543,20 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris systemd=241-7~deb10u7
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_241-7~deb10u7.dsc' systemd_241-7~deb10u7.dsc 4946 SHA256:1abfa0f64d2ff59ab43b67dca133c8852cfdfd018ceaf5b661b6a2e4eda9954c
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_241.orig.tar.gz' systemd_241.orig.tar.gz 7640538 SHA256:b2561a8e1d10a2c248253f0dda31a85dd6d69f2b54177de55e02cd1d2778316e
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_241-7~deb10u7.debian.tar.xz' systemd_241-7~deb10u7.debian.tar.xz 181896 SHA256:b46079f75db2a5e496a2e6e14893e11477a58b8634e0fccbb3f09f9191907806
+```
 
-- http://snapshot.debian.org/package/systemd/241-7~deb10u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/systemd/241-7~deb10u7/ (for browsing the source)
+- https://sources.debian.net/src/systemd/241-7~deb10u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/241-7~deb10u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.93-8`
 
