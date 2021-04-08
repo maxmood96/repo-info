@@ -1,7 +1,7 @@
 ## `traefik:maroilles`
 
 ```console
-$ docker pull traefik@sha256:104e0d832ae7a26f56d8f22c92df8a94cb4fbbbb2a6a4f50a710434c40145847
+$ docker pull traefik@sha256:74ad612be1014a519ed5e9a168dab7228ca8ae7bb946a80c27c190895ccf0b9c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,14 +13,14 @@ $ docker pull traefik@sha256:104e0d832ae7a26f56d8f22c92df8a94cb4fbbbb2a6a4f50a71
 ### `traefik:maroilles` - linux; amd64
 
 ```console
-$ docker pull traefik@sha256:e00ee616a3b242471dfd37fc4a47224500fb650d8472e80585bbce4af3758ff3
+$ docker pull traefik@sha256:353827cc14120a14b1eccbb2714039763d9cefc284213b53d82d14e110fadc39
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.1 MB (18137157 bytes)**  
+-	Total Size: **18.1 MB (18124621 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:906db490f80d11b8292995bafb68f446c473a489529213f82847242ae262b9d0`
+-	Image ID: `sha256:2a2126389e0b0dbd13da033d79636b0f0626d73f1a6da0935ce6ce9eccae112a`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
@@ -28,16 +28,16 @@ $ docker pull traefik@sha256:e00ee616a3b242471dfd37fc4a47224500fb650d8472e80585b
 COPY file:cd6264d9a7514a8fbc3eb7b400566d36178794d2b757959812cc3abc6f13a97b in /etc/ssl/certs/ 
 # Tue, 09 Mar 2021 01:32:49 GMT
 COPY dir:379603788862c2a6c57432d70b0a67f561fe00310e1b958c9ecf85381b1c9cd9 in /usr/share/ 
-# Mon, 29 Mar 2021 20:21:39 GMT
-COPY file:7412e1ec4df789a7c412d984053a91d6cbcfa5e717664daefd86f56d52133131 in / 
-# Mon, 29 Mar 2021 20:21:39 GMT
+# Thu, 08 Apr 2021 20:07:38 GMT
+COPY file:bc0b1c0235bda22a75d2ef00a982989cdf1da3240f077584bca5c6b560a4c13a in / 
+# Thu, 08 Apr 2021 20:07:38 GMT
 EXPOSE 80
-# Mon, 29 Mar 2021 20:21:39 GMT
+# Thu, 08 Apr 2021 20:07:39 GMT
 VOLUME [/tmp]
-# Mon, 29 Mar 2021 20:21:40 GMT
+# Thu, 08 Apr 2021 20:07:39 GMT
 ENTRYPOINT ["/traefik"]
-# Mon, 29 Mar 2021 20:21:40 GMT
-LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v1.7.29 org.opencontainers.image.documentation=https://docs.traefik.io
+# Thu, 08 Apr 2021 20:07:40 GMT
+LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v1.7.30 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
@@ -49,22 +49,22 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Tue, 09 Mar 2021 01:33:59 GMT  
 		Size: 308.8 KB (308823 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94cd79ea7d84d34c942e13e7ef49f4d9b4d37a2c59fef618dc5ca44a93b5f66a`  
-		Last Modified: Mon, 29 Mar 2021 20:22:35 GMT  
-		Size: 17.7 MB (17697464 bytes)  
+	-	`sha256:2eb3d26b40720e4da5cbeb15193c698565e23551a24cc4abc4acd1b7de414279`  
+		Last Modified: Thu, 08 Apr 2021 20:08:34 GMT  
+		Size: 17.7 MB (17684928 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `traefik:maroilles` - linux; arm variant v6
 
 ```console
-$ docker pull traefik@sha256:ef4135732d30c6209b85cf47d6ce104df48f6c9139fde1f2f3eb5925704fa62a
+$ docker pull traefik@sha256:5c7347d0c834b82833b1d344eb84d8491f4afff9c180aad1e287bfb28612d5ec
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.0 MB (16957254 bytes)**  
+-	Total Size: **17.0 MB (16956529 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f28c73e8f22c4d8b96ece80d2d6e3b65ae6246aa2ae4f356615714c2a7e79768`
+-	Image ID: `sha256:90f7d007bf10f706fa796c9f4cc9ad283fd98d0a8ae604e72748f96e43aa9565`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
@@ -72,16 +72,16 @@ $ docker pull traefik@sha256:ef4135732d30c6209b85cf47d6ce104df48f6c9139fde1f2f3e
 COPY file:cd6264d9a7514a8fbc3eb7b400566d36178794d2b757959812cc3abc6f13a97b in /etc/ssl/certs/ 
 # Wed, 24 Feb 2021 23:34:19 GMT
 COPY dir:379603788862c2a6c57432d70b0a67f561fe00310e1b958c9ecf85381b1c9cd9 in /usr/share/ 
-# Mon, 29 Mar 2021 20:07:01 GMT
-COPY file:021b5194c9f396ca24aaadd4ab3f8978febba7dff422827e0a613bb38224e5a2 in / 
-# Mon, 29 Mar 2021 20:07:03 GMT
+# Thu, 08 Apr 2021 19:28:36 GMT
+COPY file:440b6b1ebd389a2397ffb187ded4c85dcf37b7284d94c693b0b603d51247c683 in / 
+# Thu, 08 Apr 2021 19:28:38 GMT
 EXPOSE 80
-# Mon, 29 Mar 2021 20:07:03 GMT
+# Thu, 08 Apr 2021 19:28:39 GMT
 VOLUME [/tmp]
-# Mon, 29 Mar 2021 20:07:04 GMT
+# Thu, 08 Apr 2021 19:28:41 GMT
 ENTRYPOINT ["/traefik"]
-# Mon, 29 Mar 2021 20:07:05 GMT
-LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v1.7.29 org.opencontainers.image.documentation=https://docs.traefik.io
+# Thu, 08 Apr 2021 19:28:42 GMT
+LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v1.7.30 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
@@ -93,9 +93,9 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Last Modified: Wed, 24 Feb 2021 23:36:10 GMT  
 		Size: 308.9 KB (308855 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e0c903ccfa53274059f2a4921657f10271ac6374b3f7f9094c4f026cc5a5b22`  
-		Last Modified: Mon, 29 Mar 2021 20:07:50 GMT  
-		Size: 16.5 MB (16517526 bytes)  
+	-	`sha256:ba2277a3749c5a6efdb45bc2ff1ce8c98de01e3225fb4b0df258523fe93391c5`  
+		Last Modified: Thu, 08 Apr 2021 19:29:27 GMT  
+		Size: 16.5 MB (16516801 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `traefik:maroilles` - linux; arm64 variant v8
