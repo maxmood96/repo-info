@@ -1,4 +1,4 @@
-## `debian:stretch-slim`
+## `debian:stretch-20210408-slim`
 
 ```console
 $ docker pull debian@sha256:66a2b17d011cbb3317296f24a72cb9cdbbb3cc05ccc487f08a5082ca4b7cedb8
@@ -12,7 +12,7 @@ $ docker pull debian@sha256:66a2b17d011cbb3317296f24a72cb9cdbbb3cc05ccc487f08a50
 	-	linux; arm64 variant v8
 	-	linux; 386
 
-### `debian:stretch-slim` - linux; amd64
+### `debian:stretch-20210408-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:ad483dd81b2144de35ffeb410a6a665904452542ba26b2bcee69f97fa51f4ae0
@@ -38,7 +38,7 @@ CMD ["bash"]
 		Size: 22.5 MB (22528265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:stretch-slim` - linux; arm variant v5
+### `debian:stretch-20210408-slim` - linux; arm variant v5
 
 ```console
 $ docker pull debian@sha256:bfb069386746e31241330e4bc27a4f4a0262136e244b1acb8c1d562c1fccd2fe
@@ -64,7 +64,7 @@ CMD ["bash"]
 		Size: 21.2 MB (21203935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:stretch-slim` - linux; arm variant v7
+### `debian:stretch-20210408-slim` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:e6d489e89bba9b693622711f1cc58ea53c6748a24353985c1974c181ce8ea024
@@ -90,7 +90,7 @@ CMD ["bash"]
 		Size: 19.3 MB (19315172 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:stretch-slim` - linux; arm64 variant v8
+### `debian:stretch-20210408-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:c299191200bc73906b096506fe105a053c6e784b974b97dc79f2ab24936b2d0f
@@ -116,7 +116,7 @@ CMD ["bash"]
 		Size: 20.4 MB (20389366 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:stretch-slim` - linux; 386
+### `debian:stretch-20210408-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:e6a50e25e7068549e0db47d5553a7d22da8d7df14ad1f298de0f05bb24d8cebd

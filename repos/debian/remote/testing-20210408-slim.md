@@ -1,4 +1,4 @@
-## `debian:testing-slim`
+## `debian:testing-20210408-slim`
 
 ```console
 $ docker pull debian@sha256:8c4ee8db258c28037ef1e495bf5631f3ca01e8ff1f927859ee63f42571f8e3c3
@@ -15,7 +15,7 @@ $ docker pull debian@sha256:8c4ee8db258c28037ef1e495bf5631f3ca01e8ff1f927859ee63
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `debian:testing-slim` - linux; amd64
+### `debian:testing-20210408-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:fc6ffbeacc42796221357ff5e21c345ad3db707601095a1c3834a8fc1333ac2a
@@ -41,7 +41,7 @@ CMD ["bash"]
 		Size: 31.3 MB (31347656 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:testing-slim` - linux; arm variant v5
+### `debian:testing-20210408-slim` - linux; arm variant v5
 
 ```console
 $ docker pull debian@sha256:4c2639325002876740c14dccdd661ba885359bfdb4deb46841d926a5ce7ae5f7
@@ -67,7 +67,7 @@ CMD ["bash"]
 		Size: 28.9 MB (28887376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:testing-slim` - linux; arm variant v7
+### `debian:testing-20210408-slim` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:a05503d815ec62656a2c80541c13d1a7a9049ba1d49b3ad28b348e8ec8b5d25d
@@ -93,7 +93,7 @@ CMD ["bash"]
 		Size: 26.6 MB (26552180 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:testing-slim` - linux; arm64 variant v8
+### `debian:testing-20210408-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:1c5496e27c729b70d22823ed940764b7c3bc874b2a530fefa26dc0a00a359d58
@@ -119,7 +119,7 @@ CMD ["bash"]
 		Size: 30.0 MB (30037095 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:testing-slim` - linux; 386
+### `debian:testing-20210408-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:dbc0bedae8c51381d889b605689f2e4d2af6aa43f20d3d6083bbff63d4352ce5
@@ -145,7 +145,7 @@ CMD ["bash"]
 		Size: 32.4 MB (32365916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:testing-slim` - linux; mips64le
+### `debian:testing-20210408-slim` - linux; mips64le
 
 ```console
 $ docker pull debian@sha256:1f5a4a708a2ee7160ff26e7cac64c6c99805305e4652e50132755bfee0ee811d
@@ -171,7 +171,7 @@ CMD ["bash"]
 		Size: 29.6 MB (29611265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:testing-slim` - linux; ppc64le
+### `debian:testing-20210408-slim` - linux; ppc64le
 
 ```console
 $ docker pull debian@sha256:1ff648c2db63bb58b96d0c6a04dcff5184cadb68151f746fd97b4e5e79641d4e
@@ -197,7 +197,7 @@ CMD ["bash"]
 		Size: 35.3 MB (35250338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:testing-slim` - linux; s390x
+### `debian:testing-20210408-slim` - linux; s390x
 
 ```console
 $ docker pull debian@sha256:60638f9594bb1e71acb6eb0d8a9e4f421d9daf83459f375e8d8e2ec6a7ee4aeb

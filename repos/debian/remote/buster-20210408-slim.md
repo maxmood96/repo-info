@@ -1,4 +1,4 @@
-## `debian:10.9-slim`
+## `debian:buster-20210408-slim`
 
 ```console
 $ docker pull debian@sha256:b586cf8c850cada85a47599f08eb34ede4a7c473551fd7c68cbf20ce5f8dbbf1
@@ -15,7 +15,7 @@ $ docker pull debian@sha256:b586cf8c850cada85a47599f08eb34ede4a7c473551fd7c68cbf
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `debian:10.9-slim` - linux; amd64
+### `debian:buster-20210408-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:f4793ff7e177674c0b8541165f67289907aaf4391f60d71ba2a3db8a70fa76dc
@@ -41,7 +41,7 @@ CMD ["bash"]
 		Size: 27.1 MB (27139373 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:10.9-slim` - linux; arm variant v5
+### `debian:buster-20210408-slim` - linux; arm variant v5
 
 ```console
 $ docker pull debian@sha256:ed2569b9207276b983a5ef1a9905ffa50e6a25a1605bd34d64e103c3d8636a07
@@ -67,7 +67,7 @@ CMD ["bash"]
 		Size: 24.9 MB (24873199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:10.9-slim` - linux; arm variant v7
+### `debian:buster-20210408-slim` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:51fe18eaf32d116a5b5ffb6db4ca91078764a6da9a51b092e24080a7a5417ef7
@@ -93,7 +93,7 @@ CMD ["bash"]
 		Size: 22.7 MB (22739801 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:10.9-slim` - linux; arm64 variant v8
+### `debian:buster-20210408-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:974bcc813dc88275b57f8fc7af7960ab83e5846d7ff60c240c2edab821ac1a42
@@ -119,7 +119,7 @@ CMD ["bash"]
 		Size: 25.9 MB (25904582 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:10.9-slim` - linux; 386
+### `debian:buster-20210408-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:b1893f5cd30a1ac844beeed095e3acf1d77376725003793f1f862479fc7eafc5
@@ -145,7 +145,7 @@ CMD ["bash"]
 		Size: 27.8 MB (27788987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:10.9-slim` - linux; mips64le
+### `debian:buster-20210408-slim` - linux; mips64le
 
 ```console
 $ docker pull debian@sha256:d8ab79f7011307898d91b64c556c9a5512f2d13e7da7f63bc178af27855033c9
@@ -171,7 +171,7 @@ CMD ["bash"]
 		Size: 25.8 MB (25806410 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:10.9-slim` - linux; ppc64le
+### `debian:buster-20210408-slim` - linux; ppc64le
 
 ```console
 $ docker pull debian@sha256:ad6bd7ed5b3548d6148a586284ea7ed8034f3cd91bf763437908e71b1de4cf4a
@@ -197,7 +197,7 @@ CMD ["bash"]
 		Size: 30.5 MB (30545933 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:10.9-slim` - linux; s390x
+### `debian:buster-20210408-slim` - linux; s390x
 
 ```console
 $ docker pull debian@sha256:13131e531e8daca2efcb6e2d34289589d2cbeef10f322a256dd337138d042a25
