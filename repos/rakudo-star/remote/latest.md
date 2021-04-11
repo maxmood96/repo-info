@@ -1,7 +1,7 @@
 ## `rakudo-star:latest`
 
 ```console
-$ docker pull rakudo-star@sha256:06b2b77fad0f37c04dda67947a0094909d66ce55b2ad3632169124edbb80591b
+$ docker pull rakudo-star@sha256:282410749c9839659289037c78a406ab2fe69e7b30223a70706567a9a33e8f03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -78,65 +78,65 @@ CMD ["raku"]
 ### `rakudo-star:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull rakudo-star@sha256:4688d7742e2356a6874e9279067c656170afc0a22edb070538217f46048f5685
+$ docker pull rakudo-star@sha256:2ae4fb22e82cc3c5b77058d0227344c25b8b4ba6cdd2f1775be892fee34859ec
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **158.8 MB (158785848 bytes)**  
+-	Total Size: **158.6 MB (158632348 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f7330f75606d80f441997c7ff27a090eb9b399a4d391d51b8de234143f8d7004`
+-	Image ID: `sha256:6bf2d4b5d1edaed889a22cd037da106aa43d85930b4d96ca776ee76dd25f683c`
 -	Default Command: `["raku"]`
 
 ```dockerfile
-# Tue, 30 Mar 2021 21:46:50 GMT
-ADD file:6a5cce92f1039ef2cb7ac6dd999c9f84289a9f6e1c0891d1edf791ea73b7e125 in / 
-# Tue, 30 Mar 2021 21:46:53 GMT
+# Sat, 10 Apr 2021 00:40:59 GMT
+ADD file:320ad0e2a3d6c676ddb8ce5646b5a94d18d82a8868955da3a9379a261dfe1ffe in / 
+# Sat, 10 Apr 2021 00:41:01 GMT
 CMD ["bash"]
-# Wed, 31 Mar 2021 00:15:08 GMT
+# Sat, 10 Apr 2021 01:46:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 31 Mar 2021 00:15:20 GMT
+# Sat, 10 Apr 2021 01:46:45 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 31 Mar 2021 00:15:58 GMT
+# Sat, 10 Apr 2021 01:47:28 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Mar 2021 22:58:21 GMT
+# Sat, 10 Apr 2021 23:11:58 GMT
 MAINTAINER Rob Hoelz
-# Wed, 31 Mar 2021 22:58:26 GMT
+# Sat, 10 Apr 2021 23:12:01 GMT
 RUN groupadd -r raku && useradd -r -g raku raku
-# Wed, 31 Mar 2021 22:58:28 GMT
+# Sat, 10 Apr 2021 23:12:02 GMT
 ARG rakudo_version=2020.10
-# Wed, 31 Mar 2021 22:58:29 GMT
+# Sat, 10 Apr 2021 23:12:03 GMT
 ENV rakudo_version=2020.10
-# Wed, 31 Mar 2021 23:22:14 GMT
+# Sat, 10 Apr 2021 23:30:32 GMT
 RUN buildDeps='         gcc         libc6-dev         make     '         url="https://rakudo.org/dl/star/rakudo-star-${rakudo_version}.tar.gz"     keyserver='ha.pool.sks-keyservers.net'     keyfp='B6F697742EFCAF5F23CE51D5031D65902E840821'     tmpdir="$(mktemp -d)"     && set -eux     && export GNUPGHOME="$tmpdir"     && apt-get update     && apt-get install -y --no-install-recommends $buildDeps     && rm -rf /var/lib/apt/lists/*     && mkdir ${tmpdir}/rakudo         && curl -fsSL ${url}.asc -o ${tmpdir}/rakudo.tar.gz.asc     && curl -fsSL $url -o ${tmpdir}/rakudo.tar.gz     && gpg --batch --keyserver $keyserver --recv-keys $keyfp     && gpg --batch --verify ${tmpdir}/rakudo.tar.gz.asc ${tmpdir}/rakudo.tar.gz         && tar xzf ${tmpdir}/rakudo.tar.gz --strip-components=1 -C ${tmpdir}/rakudo     && (         cd ${tmpdir}/rakudo         && bash bin/rstar install -p /usr     )     && rm -rf $tmpdir     && apt-get purge -y --auto-remove $buildDeps
-# Wed, 31 Mar 2021 23:22:18 GMT
+# Sat, 10 Apr 2021 23:30:34 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/core/bin:/usr/share/perl6/site/bin:/usr/share/perl6/vendor/bin
-# Wed, 31 Mar 2021 23:22:21 GMT
+# Sat, 10 Apr 2021 23:30:35 GMT
 CMD ["raku"]
 ```
 
 -	Layers:
-	-	`sha256:ef28e7e77ecbd3b3b426832bc12e8f5e629959683767466e9bac149c3286e126`  
-		Last Modified: Tue, 30 Mar 2021 21:54:03 GMT  
-		Size: 49.2 MB (49225808 bytes)  
+	-	`sha256:01cf0f0da10ede0eec0fc1c5fbfdeb63a447dfcc0a3c4419c0a4c3f0a2826636`  
+		Last Modified: Sat, 10 Apr 2021 00:47:28 GMT  
+		Size: 49.2 MB (49225782 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:344d2d9a9cf41c137b0dbb41df255f95fb812a23771a10ee2ab5a8a5047c62c4`  
-		Last Modified: Wed, 31 Mar 2021 00:29:59 GMT  
-		Size: 7.7 MB (7694530 bytes)  
+	-	`sha256:c667eb56cd05909001c1c50e81cbc75e290fd8e353f974bab4246a0d4fc484ca`  
+		Last Modified: Sat, 10 Apr 2021 02:01:00 GMT  
+		Size: 7.7 MB (7695101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:299f3631f6b52be065a7342da0a46978d55cbd0d15c57fae22f4ca24efcc295a`  
-		Last Modified: Wed, 31 Mar 2021 00:29:59 GMT  
-		Size: 10.0 MB (9984391 bytes)  
+	-	`sha256:27ca15a4cef673e0e1a7bc3e659f4653df9bce82b945e367475e436852cc7880`  
+		Last Modified: Sat, 10 Apr 2021 02:00:59 GMT  
+		Size: 10.0 MB (9984406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba70c372ae296f23e908bf1e1ed9f4c0c81a8a6d7fc48c0e2db16035bb9b7a54`  
-		Last Modified: Wed, 31 Mar 2021 00:30:24 GMT  
-		Size: 52.2 MB (52165620 bytes)  
+	-	`sha256:6b7f1cf823a7fca9771e278355d8924fac8d9cef1f8e3ecbc87332c4859d1d4f`  
+		Last Modified: Sat, 10 Apr 2021 02:01:23 GMT  
+		Size: 52.2 MB (52167974 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12945505f3ff2f188283b14454ea3f441c209d0106b6a7556949926495d39b7c`  
-		Last Modified: Wed, 31 Mar 2021 23:49:48 GMT  
-		Size: 1.8 KB (1757 bytes)  
+	-	`sha256:376ec91eeff59c699a87777eec779bda588bab043c013bdfbf51316e428ac63e`  
+		Last Modified: Sat, 10 Apr 2021 23:31:05 GMT  
+		Size: 1.8 KB (1754 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:409c2b36ccc63aa007c5a70c5c4687ea050c1cf05c79be422a78132d2ac071e5`  
-		Last Modified: Wed, 31 Mar 2021 23:50:01 GMT  
-		Size: 39.7 MB (39713742 bytes)  
+	-	`sha256:e18afd6edfb9c37b4fa99a98a6703724fae985e000bccba35958d71879da2805`  
+		Last Modified: Sat, 10 Apr 2021 23:31:18 GMT  
+		Size: 39.6 MB (39557331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
