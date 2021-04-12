@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b45bcdd074f917c2fd0bde9713d55f462ee042009139d35c23bb5636298b8a8f`
-- Created: `2021-04-07T19:52:37.85810869Z`
+- Image ID: `sha256:6085d42f19a023b54f5174a53417a7893112d971bbe2f9a70154ac645546d2ef`
+- Created: `2021-04-10T12:34:29.730761026Z`
 - Virtual Size: ~ 1.40 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -506,12 +506,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.30-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.30-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.64.0-4+deb10u1`
+### `dpkg` source package: `curl=7.64.0-4+deb10u2`
 
 Binary Packages:
 
-- `curl=7.64.0-4+deb10u1`
-- `libcurl4:amd64=7.64.0-4+deb10u1`
+- `curl=7.64.0-4+deb10u2`
+- `libcurl4:amd64=7.64.0-4+deb10u2`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -525,17 +525,17 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.64.0-4+deb10u1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.64.0-4+deb10u1.dsc' curl_7.64.0-4+deb10u1.dsc 2719 SHA256:bdbc61f9785516009ae74bb3775e21bed7ab8fdd7bfef4a1a4f471d5218adf3e
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.64.0.orig.tar.gz' curl_7.64.0.orig.tar.gz 4032645 SHA256:cb90d2eb74d4e358c1ed1489f8e3af96b50ea4374ad71f143fa4595e998d81b5
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.64.0-4+deb10u1.debian.tar.xz' curl_7.64.0-4+deb10u1.debian.tar.xz 34156 SHA256:911407ad8d73d0592db7f1a015656089563bb7dab279ec33bff855adf56bcf1b
+$ apt-get source -qq --print-uris curl=7.64.0-4+deb10u2
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.64.0-4+deb10u2.dsc' curl_7.64.0-4+deb10u2.dsc 2719 SHA256:3cc585f4c22c0c001527f5f26f5a6154a86d1df9752aa118bf7d8e892ec4fac2
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.64.0.orig.tar.gz' curl_7.64.0.orig.tar.gz 4032645 SHA256:cb90d2eb74d4e358c1ed1489f8e3af96b50ea4374ad71f143fa4595e998d81b5
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.64.0-4+deb10u2.debian.tar.xz' curl_7.64.0-4+deb10u2.debian.tar.xz 43572 SHA256:6b7f793e0cd41e2ccb49301ad4e58c83282f46be7c9415c9280164834efd0e52
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/7.64.0-4+deb10u1/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.64.0-4+deb10u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.64.0-4+deb10u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/7.64.0-4+deb10u2/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.64.0-4+deb10u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.64.0-4+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-1+deb10u1`
 
@@ -11844,11 +11844,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ucf/3.0038+nmu1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ucf/3.0038+nmu1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `underscore=1.9.1~dfsg-1`
+### `dpkg` source package: `underscore=1.9.1~dfsg-1+deb10u1`
 
 Binary Packages:
 
-- `libjs-underscore=1.9.1~dfsg-1`
+- `libjs-underscore=1.9.1~dfsg-1+deb10u1`
 
 Licenses: (parsed from: `/usr/share/doc/libjs-underscore/copyright`)
 
@@ -11860,17 +11860,17 @@ Licenses: (parsed from: `/usr/share/doc/libjs-underscore/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris underscore=1.9.1~dfsg-1
-'http://deb.debian.org/debian/pool/main/u/underscore/underscore_1.9.1~dfsg-1.dsc' underscore_1.9.1~dfsg-1.dsc 2120 SHA256:bfde87b5ba9a09f41a7b8397cbb77516608a252c92eee934224ec1ec77fad5f7
-'http://deb.debian.org/debian/pool/main/u/underscore/underscore_1.9.1~dfsg.orig.tar.xz' underscore_1.9.1~dfsg.orig.tar.xz 138080 SHA256:26832038e5282c0bde14d5cbe511a42053b5f440e1670f99ba67224a4fd45702
-'http://deb.debian.org/debian/pool/main/u/underscore/underscore_1.9.1~dfsg-1.debian.tar.xz' underscore_1.9.1~dfsg-1.debian.tar.xz 7832 SHA256:3923aff7d44f499c385891883bb250fa3594ade08201f8708afcfae04311329e
+$ apt-get source -qq --print-uris underscore=1.9.1~dfsg-1+deb10u1
+'http://security.debian.org/debian-security/pool/updates/main/u/underscore/underscore_1.9.1~dfsg-1+deb10u1.dsc' underscore_1.9.1~dfsg-1+deb10u1.dsc 2152 SHA256:d679f4ff436f310d3930c024179ae49def4a367a7d83616aee5dec57b68914e8
+'http://security.debian.org/debian-security/pool/updates/main/u/underscore/underscore_1.9.1~dfsg.orig.tar.xz' underscore_1.9.1~dfsg.orig.tar.xz 138080 SHA256:26832038e5282c0bde14d5cbe511a42053b5f440e1670f99ba67224a4fd45702
+'http://security.debian.org/debian-security/pool/updates/main/u/underscore/underscore_1.9.1~dfsg-1+deb10u1.debian.tar.xz' underscore_1.9.1~dfsg-1+deb10u1.debian.tar.xz 9076 SHA256:7b16380d4b23af32743a9870279eb43d90ef26837b581bd97f3038a16ffdc410
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/underscore/1.9.1~dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/underscore/1.9.1~dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/underscore/1.9.1~dfsg-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/underscore/1.9.1~dfsg-1+deb10u1/ (for browsing the source)
+- https://sources.debian.net/src/underscore/1.9.1~dfsg-1+deb10u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/underscore/1.9.1~dfsg-1+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unidecode=1.0.23-1`
 
