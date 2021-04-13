@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ca23348a5738509e77fd8aac741f932f1878e6c88cebde4025380e6f4c49e0d4`
-- Created: `2021-03-31T04:56:55.414550112Z`
-- Virtual Size: ~ 144.57 Mb  
+- Image ID: `sha256:ac8db74bed5bde1e7e070231d6d2de8d04be3b24cc10a9afebcd715ebe7dff0c`
+- Created: `2021-04-10T07:29:08.039689847Z`
+- Virtual Size: ~ 144.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -632,25 +632,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gcc-9/9.3.0-22/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gcc-9/9.3.0-22/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.31-10`
+### `dpkg` source package: `glibc=2.31-11`
 
 Binary Packages:
 
-- `libc-bin=2.31-10`
-- `libc6:amd64=2.31-10`
+- `libc-bin=2.31-11`
+- `libc6:amd64=2.31-11`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris glibc=2.31-11
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-11.dsc' glibc_2.31-11.dsc 8315 SHA256:3ac44dc944e7d90e07a097f3799334eec1008b9a8c59ff130124ad131d70140c
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-11.debian.tar.xz' glibc_2.31-11.debian.tar.xz 906700 SHA256:f45496f2283617f4f8aaef680a61b3b4ead5717bb5692834974a84ab7b562f09
+```
 
-- http://snapshot.debian.org/package/glibc/2.31-10/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/glibc/2.31-11/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.31-11/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.31-11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-1`
 
@@ -727,11 +734,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnupg2/2.2.27-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnupg2/2.2.27-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnutls28=3.7.1-1`
+### `dpkg` source package: `gnutls28=3.7.1-3`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.7.1-1`
+- `libgnutls30:amd64=3.7.1-3`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -752,18 +759,18 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.7.1-1
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1-1.dsc' gnutls28_3.7.1-1.dsc 3480 SHA256:58738c9d3e1b884e953cd29f79356c00447a1d4508b527ea898d688b42528721
+$ apt-get source -qq --print-uris gnutls28=3.7.1-3
+'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1-3.dsc' gnutls28_3.7.1-3.dsc 3480 SHA256:53f520761f34236884c343a6c3c54155bcfd9b8e3d8d2f04ef58456079b4a79d
 'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz' gnutls28_3.7.1.orig.tar.xz 6038388 SHA256:3777d7963eca5e06eb315686163b7b3f5045e2baac5e54e038ace9835e5cac6f
 'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz.asc' gnutls28_3.7.1.orig.tar.xz.asc 854 SHA256:13a683b12602c169a7ad7827ab0e3f35c8fa1f98675d0073cf7d54a8cd635582
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1-1.debian.tar.xz' gnutls28_3.7.1-1.debian.tar.xz 64680 SHA256:b8a8862b806fa8b237f707fb82d27ece1cfaa2c0200b8cf3a82501c97efd71fe
+'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1-3.debian.tar.xz' gnutls28_3.7.1-3.debian.tar.xz 68008 SHA256:918c1cb46aa4d4b3156cf115669076baca120f00cd46dde53fa8e0a9dc8ad299
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnutls28/3.7.1-1/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.7.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.7.1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnutls28/3.7.1-3/ (for browsing the source)
+- https://sources.debian.net/src/gnutls28/3.7.1-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnutls28/3.7.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.6-1`
 
@@ -1563,12 +1570,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ncurses/6.2+20201114-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ncurses/6.2+20201114-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nettle=3.7-2.1`
+### `dpkg` source package: `nettle=3.7.2-3`
 
 Binary Packages:
 
-- `libhogweed6:amd64=3.7-2.1`
-- `libnettle8:amd64=3.7-2.1`
+- `libhogweed6:amd64=3.7.2-3`
+- `libnettle8:amd64=3.7.2-3`
 
 Licenses: (parsed from: `/usr/share/doc/libhogweed6/copyright`, `/usr/share/doc/libnettle8/copyright`)
 
@@ -1585,13 +1592,21 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed6/copyright`, `/usr/share/doc/
 - `LGPL-3+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris nettle=3.7.2-3
+'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.7.2-3.dsc' nettle_3.7.2-3.dsc 2274 SHA256:fe98e5b915f8db8f1ade4c584550e07aa66013d3ad2a0012baad021b5bef284f
+'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.7.2.orig.tar.gz' nettle_3.7.2.orig.tar.gz 2382309 SHA256:8d2a604ef1cde4cd5fb77e422531ea25ad064679ff0adf956e78b3352e0ef162
+'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.7.2.orig.tar.gz.asc' nettle_3.7.2.orig.tar.gz.asc 573 SHA256:6183e94ac98dbd68ed25af0c54b7d76ebf2f0c80b415f8fffc7bb416aafa6ff2
+'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.7.2-3.debian.tar.xz' nettle_3.7.2-3.debian.tar.xz 21876 SHA256:afaa3a2f43de7e1317cad111d5bb3095ac4dbd855e044afbd93f00a5a99c607d
+```
 
-- http://snapshot.debian.org/package/nettle/3.7-2.1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/nettle/3.7.2-3/ (for browsing the source)
+- https://sources.debian.net/src/nettle/3.7.2-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nettle/3.7.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `neurodebian=0.41.0`
 
