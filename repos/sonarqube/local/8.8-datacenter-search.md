@@ -1,4 +1,4 @@
-# `sonarqube:8.8-datacenter-search`
+# `sonarqube:8.8.0-datacenter-search`
 
 ## Docker Metadata
 

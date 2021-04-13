@@ -1,4 +1,4 @@
-# `sonarqube:8.8-enterprise`
+# `sonarqube:8.8.0-enterprise`
 
 ## Docker Metadata
 

@@ -1,4 +1,4 @@
-# `sonarqube:8.8-community`
+# `sonarqube:8.8.0-community`
 
 ## Docker Metadata
 

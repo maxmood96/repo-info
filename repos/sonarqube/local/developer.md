@@ -1,4 +1,4 @@
-# `sonarqube:8.8-developer`
+# `sonarqube:8.8.0-developer`
 
 ## Docker Metadata
 
