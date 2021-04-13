@@ -1,9 +1,9 @@
-# `debian:stretch-slim`
+# `debian:oldstable-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a663cad14868602df295892c53316906307c36ffe2d1afda2b6d0f2de07db8bd`
-- Created: `2021-03-30T21:50:55.715850744Z`
+- Image ID: `sha256:9cb7e14e7addaff740633decb4b1bd16a864d9891f2ce4729d04b97111a8fc9e`
+- Created: `2021-04-10T01:20:46.461815183Z`
 - Virtual Size: ~ 55.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
