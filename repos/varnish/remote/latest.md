@@ -1,7 +1,7 @@
 ## `varnish:latest`
 
 ```console
-$ docker pull varnish@sha256:cd01701adbc3cab85bdd30272f349dbf4eecd8074dcf1b7abc5951b41e3a108d
+$ docker pull varnish@sha256:71a81db8bdf24dd90914d53c38eafd441d1e1ef9a939e1e3a92266e871bd44ba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,15 +11,15 @@ $ docker pull varnish@sha256:cd01701adbc3cab85bdd30272f349dbf4eecd8074dcf1b7abc5
 ### `varnish:latest` - linux; amd64
 
 ```console
-$ docker pull varnish@sha256:93c252822a0fb7af536ed4b9bf99b887c128ff499035f5dd1843ecff784c7779
+$ docker pull varnish@sha256:f3b546c1a2b9c692d747e19f3a253e1dbc30af708a2f1c84fde211ef65d1e64e
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.1 MB (77059949 bytes)**  
+-	Total Size: **77.1 MB (77059845 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea141d9d469c46905d72c97bfe0196fd4acd7413a5a87df5eb232e692f85a6ed`
--	Entrypoint: `["docker-varnish-entrypoint"]`
+-	Image ID: `sha256:48dd3aac2d9d901d6be746cd2523ea6449d58aa3549ab494da071db835275a6e`
+-	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
 -	Default Command: `[]`
 
 ```dockerfile
@@ -35,13 +35,13 @@ ENV VARNISH_SIZE=100M
 RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends apt-transport-https ca-certificates $fetchDeps; 	key=A0378A38E4EACA3660789E570BAC19E3F6C90CD5; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys $key; 	gpg --batch --export export $key > /etc/apt/trusted.gpg.d/varnish.gpg; 	gpgconf --kill all; 	rm -rf $GNUPGHOME; 	echo deb https://packagecloud.io/varnishcache/varnish66/debian/ buster main > /etc/apt/sources.list.d/varnish.list; 	apt-get update; 	apt-get install -y --no-install-recommends varnish=$VARNISH_VERSION; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/*
 # Sat, 10 Apr 2021 18:28:31 GMT
 WORKDIR /etc/varnish
-# Sat, 10 Apr 2021 18:28:31 GMT
-COPY file:9aaa50c9659d4d213c8c91d6b2b20db18172b64d4b8485112a4b97157ef1eb9e in /usr/local/bin/ 
-# Sat, 10 Apr 2021 18:28:31 GMT
-ENTRYPOINT ["docker-varnish-entrypoint"]
-# Sat, 10 Apr 2021 18:28:31 GMT
+# Thu, 15 Apr 2021 09:31:37 GMT
+COPY dir:81cfdf3570a33a2213eb3396395161c2375769c233d0e51a4b70c65b389fabfa in /usr/local/bin/ 
+# Thu, 15 Apr 2021 09:31:37 GMT
+ENTRYPOINT ["/usr/local/bin/docker-varnish-entrypoint"]
+# Thu, 15 Apr 2021 09:31:38 GMT
 EXPOSE 80 8443
-# Sat, 10 Apr 2021 18:28:32 GMT
+# Thu, 15 Apr 2021 09:31:38 GMT
 CMD []
 ```
 
@@ -54,7 +54,7 @@ CMD []
 		Last Modified: Sat, 10 Apr 2021 18:29:21 GMT  
 		Size: 49.9 MB (49919779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dde437595c75381edf46cec0f22f9bee9f5f45c4fb22d9b17828398ab06ba5ee`  
-		Last Modified: Sat, 10 Apr 2021 18:29:13 GMT  
-		Size: 797.0 B  
+	-	`sha256:5819de27b48cee692679eb70f5c88f3a4c7e1528625e559642b0369b23fbdc18`  
+		Last Modified: Thu, 15 Apr 2021 09:32:12 GMT  
+		Size: 693.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
