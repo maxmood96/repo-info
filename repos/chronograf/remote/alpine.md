@@ -1,7 +1,7 @@
 ## `chronograf:alpine`
 
 ```console
-$ docker pull chronograf@sha256:32581b9c7942291322f71995d0f7cf2fe16af026dea5d30e59aa5519752d38a9
+$ docker pull chronograf@sha256:a5cbcfd2bfc1c933986ccca221a0d540377ce3c034476353415125e083ae5e38
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,72 +11,72 @@ $ docker pull chronograf@sha256:32581b9c7942291322f71995d0f7cf2fe16af026dea5d30e
 ### `chronograf:alpine` - linux; amd64
 
 ```console
-$ docker pull chronograf@sha256:93b30530319fd27a77ecef88d9c5c920a7e549643a300f24670dd05d1a1c4f41
+$ docker pull chronograf@sha256:6a22d2aa10b70b8b5cde2994229c5c586e371e24f31d5180fd4e44814710d89a
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.4 MB (25350795 bytes)**  
+-	Total Size: **25.4 MB (25351611 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:03d21d9dab635cb33064bc93cea8cddade8fb2b65a722d836a7a43d4c8f97643`
+-	Image ID: `sha256:f8f8be3a981be5d1db8847952e656de841d06af31f8aaf6389ede18a35878a09`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 20:10:13 GMT
-ADD file:f77db8e5b937d8ebb7e254eccd4d311798ea9f4dd5081ea2a7e2b1d3790300c2 in / 
-# Wed, 31 Mar 2021 20:10:13 GMT
+# Wed, 14 Apr 2021 19:19:49 GMT
+ADD file:4f526aa99067d82b341f7ca538f7826b7c23a628f1b615eea2883a2d434c1b90 in / 
+# Wed, 14 Apr 2021 19:19:49 GMT
 CMD ["/bin/sh"]
-# Wed, 31 Mar 2021 22:08:42 GMT
+# Wed, 14 Apr 2021 20:12:38 GMT
 RUN echo 'hosts: files dns' >> /etc/nsswitch.conf
-# Wed, 31 Mar 2021 22:17:19 GMT
+# Wed, 14 Apr 2021 20:12:40 GMT
 RUN apk add --no-cache ca-certificates &&     update-ca-certificates
-# Thu, 01 Apr 2021 13:33:57 GMT
+# Wed, 14 Apr 2021 20:13:04 GMT
 ENV CHRONOGRAF_VERSION=1.8.8
-# Thu, 01 Apr 2021 13:34:06 GMT
+# Wed, 14 Apr 2021 20:13:10 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apk add --no-cache --virtual .build-deps wget gnupg tar &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done &&     wget --no-verbose https://dl.influxdata.com/chronograf/releases/chronograf-${CHRONOGRAF_VERSION}-static_linux_amd64.tar.gz.asc &&     wget --no-verbose https://dl.influxdata.com/chronograf/releases/chronograf-${CHRONOGRAF_VERSION}-static_linux_amd64.tar.gz &&     gpg --batch --verify chronograf-${CHRONOGRAF_VERSION}-static_linux_amd64.tar.gz.asc chronograf-${CHRONOGRAF_VERSION}-static_linux_amd64.tar.gz &&     mkdir -p /usr/src &&     tar -C /usr/src -xzf chronograf-${CHRONOGRAF_VERSION}-static_linux_amd64.tar.gz &&     rm -f /usr/src/chronograf-*/chronograf.conf &&     chmod +x /usr/src/chronograf-*/* &&     cp -a /usr/src/chronograf-*/* /usr/bin/ &&     gpgconf --kill all &&     rm -rf *.tar.gz* /usr/src /root/.gnupg &&     apk del .build-deps
-# Thu, 01 Apr 2021 13:34:06 GMT
+# Wed, 14 Apr 2021 20:13:10 GMT
 COPY file:6403df1bf15a98453f66ca6b38ee538c184409065ea1d3c321788dec9eaa5c77 in /usr/share/chronograf/LICENSE 
-# Thu, 01 Apr 2021 13:34:07 GMT
+# Wed, 14 Apr 2021 20:13:10 GMT
 COPY file:6a5854b87d89e3055231dd56f8f199c325f44eeed8faed4cf32833126a5b9cd9 in /usr/share/chronograf/agpl-3.0.md 
-# Thu, 01 Apr 2021 13:34:07 GMT
+# Wed, 14 Apr 2021 20:13:11 GMT
 EXPOSE 8888
-# Thu, 01 Apr 2021 13:34:07 GMT
+# Wed, 14 Apr 2021 20:13:11 GMT
 VOLUME [/var/lib/chronograf]
-# Thu, 01 Apr 2021 13:34:07 GMT
+# Wed, 14 Apr 2021 20:13:11 GMT
 COPY file:91fe01086b7984524af1eeb6657c6aea15ce5e169fd42a42e1ef2c54374d30a2 in /entrypoint.sh 
-# Thu, 01 Apr 2021 13:34:07 GMT
+# Wed, 14 Apr 2021 20:13:11 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 01 Apr 2021 13:34:08 GMT
+# Wed, 14 Apr 2021 20:13:11 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:532819f3e44cebad88c82f5393801acb876b7a61d36b84bce646561789bb2018`  
-		Last Modified: Wed, 31 Mar 2021 20:11:03 GMT  
-		Size: 2.8 MB (2799712 bytes)  
+	-	`sha256:339de151aab4bc06eed8409daae147c408478cb538dacb90cc63f19ad4eba80b`  
+		Last Modified: Wed, 14 Apr 2021 19:20:51 GMT  
+		Size: 2.8 MB (2800567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b38a141eb441d0521693dd710eb5a2a3ceae66767667e8820f152011f8f8a1de`  
-		Last Modified: Wed, 31 Mar 2021 22:12:27 GMT  
-		Size: 155.0 B  
+	-	`sha256:d4496f95da0ff203c55ba4ff45e6cc518bfd24507a21516931244d25e8db7d14`  
+		Last Modified: Wed, 14 Apr 2021 20:13:37 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b28ec0c47ed2e19e5d27fab02ef23b68ffd819172e08050fa1da307311f9c707`  
-		Last Modified: Wed, 31 Mar 2021 22:18:17 GMT  
-		Size: 280.9 KB (280883 bytes)  
+	-	`sha256:9162e7666a3906b38fdfed2592cc2e4df967e365a3fcf17c8d6320caed7fd960`  
+		Last Modified: Wed, 14 Apr 2021 20:13:33 GMT  
+		Size: 280.9 KB (280875 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb6b9f165f4bdd3f21be30f28578343a65c63e0817fdb73b574c2fa83e2028fc`  
-		Last Modified: Thu, 01 Apr 2021 13:35:11 GMT  
-		Size: 22.2 MB (22245645 bytes)  
+	-	`sha256:4ba38a1f02c9de9fb4aaffaca80c92ad2fecaabbf0afe54b81331fb3bab94e36`  
+		Last Modified: Wed, 14 Apr 2021 20:14:10 GMT  
+		Size: 22.2 MB (22245617 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0350481f214ad36651d1ea1fb25e58e4e80c0cb4c5c6adf0cdc98dc70636ca9`  
-		Last Modified: Thu, 01 Apr 2021 13:35:06 GMT  
-		Size: 12.3 KB (12266 bytes)  
+	-	`sha256:911ddedf41d4e2c1c792681fdb37a8cdc228aacce7bc520c0155a8abdef24867`  
+		Last Modified: Wed, 14 Apr 2021 20:14:05 GMT  
+		Size: 12.3 KB (12262 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8005335f5454a8a550fc208952bd9cef9d1345c78e4bec1498895d290711771`  
-		Last Modified: Thu, 01 Apr 2021 13:35:06 GMT  
-		Size: 11.9 KB (11897 bytes)  
+	-	`sha256:b4896f07f3bdcc32cc856a2f9ef4169f64096b1b8566ae4d50983a9a3ad3d485`  
+		Last Modified: Wed, 14 Apr 2021 20:14:05 GMT  
+		Size: 11.9 KB (11898 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89cbedf48918106de8db9c17064a34d3f550861f043c93a94e424f41115f302b`  
-		Last Modified: Thu, 01 Apr 2021 13:35:06 GMT  
-		Size: 237.0 B  
+	-	`sha256:736cbd00b8d9ec9952f27cc06af1eff2a238e8d06ddff183157196dfc82cb962`  
+		Last Modified: Wed, 14 Apr 2021 20:14:06 GMT  
+		Size: 238.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
