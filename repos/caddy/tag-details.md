@@ -42,7 +42,7 @@
 ## `caddy:2`
 
 ```console
-$ docker pull caddy@sha256:e0561602b41351448ab80bdb6302b6f2aa7bb6ca5bfefe02886387414d9ff0d9
+$ docker pull caddy@sha256:88fc125055b8c4dafe67a48219fd3a89c0a472aa254d2835b2e298b93493b28e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -53,265 +53,265 @@ $ docker pull caddy@sha256:e0561602b41351448ab80bdb6302b6f2aa7bb6ca5bfefe0288638
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
 	-	linux; s390x
-	-	windows version 10.0.17763.1817; amd64
-	-	windows version 10.0.14393.4283; amd64
+	-	windows version 10.0.17763.1879; amd64
+	-	windows version 10.0.14393.4350; amd64
 
 ### `caddy:2` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:629c5800ccf51df482a4e63266e4570de3e573e862d902398b03cbfca2212b4d
+$ docker pull caddy@sha256:6fbf52298c46c55c572670b5395ecaee5d399338003c9bb4e4abed875c542f4f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.7 MB (14728095 bytes)**  
+-	Total Size: **14.7 MB (14728953 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e073d63a624f18bd8e2f94b9e84715e5a33a817db19afa42afc8ea95e59d568`
+-	Image ID: `sha256:7395cc3713b2ca5574a9b4aafc468a1533d16582efe47dcab74ed547540d698a`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 20:10:13 GMT
-ADD file:f77db8e5b937d8ebb7e254eccd4d311798ea9f4dd5081ea2a7e2b1d3790300c2 in / 
-# Wed, 31 Mar 2021 20:10:13 GMT
+# Wed, 14 Apr 2021 19:19:49 GMT
+ADD file:4f526aa99067d82b341f7ca538f7826b7c23a628f1b615eea2883a2d434c1b90 in / 
+# Wed, 14 Apr 2021 19:19:49 GMT
 CMD ["/bin/sh"]
-# Thu, 01 Apr 2021 13:53:15 GMT
+# Wed, 14 Apr 2021 20:10:47 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Thu, 01 Apr 2021 13:53:17 GMT
+# Wed, 14 Apr 2021 20:10:49 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Thu, 01 Apr 2021 13:53:17 GMT
+# Wed, 14 Apr 2021 20:10:49 GMT
 ENV CADDY_VERSION=v2.3.0
-# Thu, 01 Apr 2021 13:53:20 GMT
+# Wed, 14 Apr 2021 20:10:52 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 ENV XDG_CONFIG_HOME=/config
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 ENV XDG_DATA_HOME=/data
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 VOLUME [/config]
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 VOLUME [/data]
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 EXPOSE 80
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 EXPOSE 443
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 EXPOSE 2019
-# Thu, 01 Apr 2021 13:53:24 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 WORKDIR /srv
-# Thu, 01 Apr 2021 13:53:24 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:532819f3e44cebad88c82f5393801acb876b7a61d36b84bce646561789bb2018`  
-		Last Modified: Wed, 31 Mar 2021 20:11:03 GMT  
-		Size: 2.8 MB (2799712 bytes)  
+	-	`sha256:339de151aab4bc06eed8409daae147c408478cb538dacb90cc63f19ad4eba80b`  
+		Last Modified: Wed, 14 Apr 2021 19:20:51 GMT  
+		Size: 2.8 MB (2800567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccc82ca1670c70e5b605729b271409acba02ca26c3f669bf1d95a067fb853a90`  
-		Last Modified: Thu, 01 Apr 2021 13:54:20 GMT  
-		Size: 300.0 KB (300021 bytes)  
+	-	`sha256:8b7a0cd9cca5be9b30bbc70611052d1456502e1f338ce4b14946233b21cd6a9a`  
+		Last Modified: Wed, 14 Apr 2021 20:11:46 GMT  
+		Size: 300.0 KB (300016 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21d66f69260e9358ba74c27e0ed110b9ff7781c5f90d5d01f86d6ef289834382`  
-		Last Modified: Thu, 01 Apr 2021 13:54:17 GMT  
-		Size: 5.8 KB (5829 bytes)  
+	-	`sha256:b5666523658a43fbbdff6b8fca498a988f4dcecc3ce027f1701414658c21d4ea`  
+		Last Modified: Wed, 14 Apr 2021 20:11:46 GMT  
+		Size: 5.8 KB (5832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9b38557b1fd80a7712b7263f0896f076afdeb9f25f68a79e288b87490aa3047`  
-		Last Modified: Thu, 01 Apr 2021 13:54:19 GMT  
-		Size: 11.6 MB (11622380 bytes)  
+	-	`sha256:b097228407f13a161f68b188b0a4f255855b64d84e7b076745a744d5aa7ed8cf`  
+		Last Modified: Wed, 14 Apr 2021 20:11:49 GMT  
+		Size: 11.6 MB (11622383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd37d6fba45d5f1633f00b6a9d204abacad2a6918dc355706fe0decc0bc4e565`  
-		Last Modified: Thu, 01 Apr 2021 13:54:18 GMT  
-		Size: 153.0 B  
+	-	`sha256:40682d93cc09b4592a1b9c08d48d0a956b5eef4f123d80d1a12942482edb6aab`  
+		Last Modified: Wed, 14 Apr 2021 20:11:46 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2` - linux; arm variant v6
 
 ```console
-$ docker pull caddy@sha256:b57cdc61b54865a7ff2ea4ef9d16458537d40e0dc25559d6540111874abbe4ce
+$ docker pull caddy@sha256:0df9df9725cab39fe073887c98b54bf7bf1c96b3ed0e23916737c7c4877576c6
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.9 MB (13855580 bytes)**  
+-	Total Size: **13.9 MB (13856181 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88293e19906b6b2275ff6e127e29960b1fdf0cf0c4baa4bbce4ea297e90db731`
+-	Image ID: `sha256:fce1c33ce4509195edc1c67d2dcd15c6c5fc0b35cec2e90714ec3007739600eb`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 17:19:11 GMT
-ADD file:00ac3d0df16779e7564cda9cbf94eef90ffa8043778a867272ff0135a1fb537f in / 
-# Wed, 31 Mar 2021 17:19:12 GMT
+# Wed, 14 Apr 2021 18:49:49 GMT
+ADD file:82fa6a18d24e3f535c9061d2e111d63fe6d8a27710bb34a17b326e605ff478be in / 
+# Wed, 14 Apr 2021 18:49:50 GMT
 CMD ["/bin/sh"]
-# Wed, 31 Mar 2021 17:36:32 GMT
+# Wed, 14 Apr 2021 19:45:19 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Wed, 31 Mar 2021 17:36:36 GMT
+# Wed, 14 Apr 2021 19:45:33 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Wed, 31 Mar 2021 17:36:38 GMT
+# Wed, 14 Apr 2021 19:45:36 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 31 Mar 2021 17:36:45 GMT
+# Wed, 14 Apr 2021 19:45:54 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Wed, 31 Mar 2021 17:36:51 GMT
+# Wed, 14 Apr 2021 19:46:03 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Wed, 31 Mar 2021 17:36:52 GMT
+# Wed, 14 Apr 2021 19:46:04 GMT
 ENV XDG_CONFIG_HOME=/config
-# Wed, 31 Mar 2021 17:36:53 GMT
+# Wed, 14 Apr 2021 19:46:05 GMT
 ENV XDG_DATA_HOME=/data
-# Wed, 31 Mar 2021 17:36:55 GMT
+# Wed, 14 Apr 2021 19:46:07 GMT
 VOLUME [/config]
-# Wed, 31 Mar 2021 17:36:55 GMT
+# Wed, 14 Apr 2021 19:46:08 GMT
 VOLUME [/data]
-# Wed, 31 Mar 2021 17:36:56 GMT
+# Wed, 14 Apr 2021 19:46:10 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 31 Mar 2021 17:36:58 GMT
+# Wed, 14 Apr 2021 19:46:11 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 31 Mar 2021 17:36:59 GMT
+# Wed, 14 Apr 2021 19:46:13 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 31 Mar 2021 17:37:00 GMT
+# Wed, 14 Apr 2021 19:46:16 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 31 Mar 2021 17:37:01 GMT
+# Wed, 14 Apr 2021 19:46:16 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 31 Mar 2021 17:37:03 GMT
+# Wed, 14 Apr 2021 19:46:18 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 31 Mar 2021 17:37:04 GMT
+# Wed, 14 Apr 2021 19:46:19 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 31 Mar 2021 17:37:05 GMT
+# Wed, 14 Apr 2021 19:46:20 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 31 Mar 2021 17:37:07 GMT
+# Wed, 14 Apr 2021 19:46:21 GMT
 EXPOSE 80
-# Wed, 31 Mar 2021 17:37:08 GMT
+# Wed, 14 Apr 2021 19:46:21 GMT
 EXPOSE 443
-# Wed, 31 Mar 2021 17:37:10 GMT
+# Wed, 14 Apr 2021 19:46:22 GMT
 EXPOSE 2019
-# Wed, 31 Mar 2021 17:37:11 GMT
+# Wed, 14 Apr 2021 19:46:23 GMT
 WORKDIR /srv
-# Wed, 31 Mar 2021 17:37:13 GMT
+# Wed, 14 Apr 2021 19:46:24 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:66e54586dae0889b30da12f7a66838d9b86511b58696c83c3b9166ff1a534bbe`  
-		Last Modified: Wed, 31 Mar 2021 17:20:05 GMT  
-		Size: 2.6 MB (2604658 bytes)  
+	-	`sha256:b452d2916bdfd021add56f1eda6bdea35400671ef07b38316ef82fce92a88fee`  
+		Last Modified: Wed, 14 Apr 2021 18:50:38 GMT  
+		Size: 2.6 MB (2605253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1532456df32c320ccd3c9ff5433c9e44d873ef87a0dc9fc29f9cf256b517eb4`  
-		Last Modified: Wed, 31 Mar 2021 17:38:50 GMT  
-		Size: 300.1 KB (300103 bytes)  
+	-	`sha256:6b83e8a6ea044be2a9e3c87c5fdc047ce9a52d1a64e48f8330d9a19002ecffe1`  
+		Last Modified: Wed, 14 Apr 2021 19:47:50 GMT  
+		Size: 300.1 KB (300117 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7263f61714ef61a0c59bef8e70bc49a741a357b0a0fc556b44f8344df37ea0f8`  
-		Last Modified: Wed, 31 Mar 2021 17:38:52 GMT  
-		Size: 5.8 KB (5830 bytes)  
+	-	`sha256:b9949bdfbb1d296dd158f8c2bb959f96c8da162a0d579f68fa3f5a4af58bed5b`  
+		Last Modified: Wed, 14 Apr 2021 19:47:50 GMT  
+		Size: 5.8 KB (5826 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:818002dab28746359de43d5a88d06c77cc3a353c838e15c6b6a67d48352cc5c0`  
-		Last Modified: Wed, 31 Mar 2021 17:38:54 GMT  
-		Size: 10.9 MB (10944835 bytes)  
+	-	`sha256:c2c5cc316af29a89f9a1d4e279b5d1bb964095a15795647d013f40921bc808c3`  
+		Last Modified: Wed, 14 Apr 2021 19:47:54 GMT  
+		Size: 10.9 MB (10944831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7979a3c808bf5c07c668f5966a15458dbfe9aba5aa7d761e690dd3a5cadf45eb`  
-		Last Modified: Wed, 31 Mar 2021 17:38:52 GMT  
+	-	`sha256:2f6670cc680ce5e5d9a0adfc380fe4a89ac2a2dcef5a7adeb874967a356e6742`  
+		Last Modified: Wed, 14 Apr 2021 19:47:50 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2` - linux; arm variant v7
 
 ```console
-$ docker pull caddy@sha256:6d510324512c20fc0d40aeb8b6e5b98255c857ad2dee894b6cb6e66f0231cf9b
+$ docker pull caddy@sha256:1a41623f53d582c8b503ae859f6ae98c7c0695eddb11bdbf8514b9b914955c3d
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.6 MB (13638799 bytes)**  
+-	Total Size: **13.6 MB (13639723 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42db38da968682707e6cf0fabb16f93770388907d8a208fca0db74cae3183ba2`
+-	Image ID: `sha256:9a4b837694902a1a259a4915444feda59d895ed37ffbef66b8518b9a884f029c`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 18:13:45 GMT
-ADD file:1270a9135e4e3d6bcd51f9c8bb7a5129c493366412591f1a6885db98056a572e in / 
-# Wed, 31 Mar 2021 18:13:47 GMT
+# Wed, 14 Apr 2021 18:57:50 GMT
+ADD file:d844cc7b5e00fb62be39d903a2fb4a08f700e75112c8eef1f31101e846ed010d in / 
+# Wed, 14 Apr 2021 18:57:52 GMT
 CMD ["/bin/sh"]
-# Thu, 01 Apr 2021 08:11:44 GMT
+# Wed, 14 Apr 2021 19:39:25 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Thu, 01 Apr 2021 08:11:47 GMT
+# Wed, 14 Apr 2021 19:39:32 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Thu, 01 Apr 2021 08:11:48 GMT
+# Wed, 14 Apr 2021 19:39:34 GMT
 ENV CADDY_VERSION=v2.3.0
-# Thu, 01 Apr 2021 08:11:52 GMT
+# Wed, 14 Apr 2021 19:39:38 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Thu, 01 Apr 2021 08:11:55 GMT
+# Wed, 14 Apr 2021 19:39:40 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Thu, 01 Apr 2021 08:11:56 GMT
+# Wed, 14 Apr 2021 19:39:41 GMT
 ENV XDG_CONFIG_HOME=/config
-# Thu, 01 Apr 2021 08:11:57 GMT
+# Wed, 14 Apr 2021 19:39:42 GMT
 ENV XDG_DATA_HOME=/data
-# Thu, 01 Apr 2021 08:11:58 GMT
+# Wed, 14 Apr 2021 19:39:43 GMT
 VOLUME [/config]
-# Thu, 01 Apr 2021 08:11:59 GMT
+# Wed, 14 Apr 2021 19:39:45 GMT
 VOLUME [/data]
-# Thu, 01 Apr 2021 08:12:00 GMT
+# Wed, 14 Apr 2021 19:39:46 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Thu, 01 Apr 2021 08:12:01 GMT
+# Wed, 14 Apr 2021 19:39:49 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Thu, 01 Apr 2021 08:12:02 GMT
+# Wed, 14 Apr 2021 19:39:51 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Thu, 01 Apr 2021 08:12:03 GMT
+# Wed, 14 Apr 2021 19:39:52 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Thu, 01 Apr 2021 08:12:05 GMT
+# Wed, 14 Apr 2021 19:39:53 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Thu, 01 Apr 2021 08:12:06 GMT
+# Wed, 14 Apr 2021 19:39:54 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Thu, 01 Apr 2021 08:12:07 GMT
+# Wed, 14 Apr 2021 19:39:55 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Thu, 01 Apr 2021 08:12:08 GMT
+# Wed, 14 Apr 2021 19:39:55 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Thu, 01 Apr 2021 08:12:09 GMT
+# Wed, 14 Apr 2021 19:39:56 GMT
 EXPOSE 80
-# Thu, 01 Apr 2021 08:12:11 GMT
+# Wed, 14 Apr 2021 19:39:57 GMT
 EXPOSE 443
-# Thu, 01 Apr 2021 08:12:13 GMT
+# Wed, 14 Apr 2021 19:39:58 GMT
 EXPOSE 2019
-# Thu, 01 Apr 2021 08:12:15 GMT
+# Wed, 14 Apr 2021 19:39:59 GMT
 WORKDIR /srv
-# Thu, 01 Apr 2021 08:12:16 GMT
+# Wed, 14 Apr 2021 19:40:00 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:b04429a2165487924dcbfedfff74fa262e6828327d04bb4b1c6a477096f5010e`  
-		Last Modified: Wed, 31 Mar 2021 18:15:12 GMT  
-		Size: 2.4 MB (2408269 bytes)  
+	-	`sha256:420c7481a3a76d5d12df768d2745ddbe40357df0af780c756a5a7d1f2a43d288`  
+		Last Modified: Wed, 14 Apr 2021 18:58:46 GMT  
+		Size: 2.4 MB (2409178 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:547b5d01ba24abc02b4f05f8134bfb156ce1840f496ed03a1316c882625bd41f`  
-		Last Modified: Thu, 01 Apr 2021 08:13:34 GMT  
-		Size: 299.2 KB (299199 bytes)  
+	-	`sha256:b239ad5e698454501b0de011bffea35a660806a0b85a6141776581e3a98bc467`  
+		Last Modified: Wed, 14 Apr 2021 19:41:24 GMT  
+		Size: 299.2 KB (299210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a883a914d37801ae97b0fac82c62e4f70ef4c92fc53417a91a23b2e69d36d9bb`  
-		Last Modified: Thu, 01 Apr 2021 08:13:34 GMT  
+	-	`sha256:8a0460b038be93717158ad9cdb6f83768b7129eaf4fcaef8620adc7509d0e5fe`  
+		Last Modified: Wed, 14 Apr 2021 19:41:23 GMT  
 		Size: 5.8 KB (5833 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:475143e7b89d1a36700916ec3c8f0caae9b57d5cd9ba187b9f3fd5d9a71eddcf`  
-		Last Modified: Thu, 01 Apr 2021 08:13:38 GMT  
-		Size: 10.9 MB (10925346 bytes)  
+	-	`sha256:0905d1ca8c4f74966ae8a7b5ebe8fdb33854c4a759d543d767dd9a0add81f155`  
+		Last Modified: Wed, 14 Apr 2021 19:41:29 GMT  
+		Size: 10.9 MB (10925348 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e79cdab22a3397c4a98f63a7e96c51881033744b1f198c4984072e7303e9f73`  
-		Last Modified: Thu, 01 Apr 2021 08:13:34 GMT  
-		Size: 152.0 B  
+	-	`sha256:2f02da274f552e184a7fa5527990e666d77c70e3715a0d96b7588e7433b3022a`  
+		Last Modified: Wed, 14 Apr 2021 19:41:23 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2` - linux; arm64 variant v8
@@ -403,235 +403,235 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ### `caddy:2` - linux; ppc64le
 
 ```console
-$ docker pull caddy@sha256:bffc665d927b1ed51d5f36dafc191678472776dea35931198b09deebbe4d31fb
+$ docker pull caddy@sha256:f551e1db7910e2d5235d303760aff5b514fc6e8b49d8d67d434bb23c40ac25db
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.4 MB (13355782 bytes)**  
+-	Total Size: **13.4 MB (13356454 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60f81a6d1059252f032458e7bf5dff42ef2844beec6f1c212b5901fb867fdf0a`
+-	Image ID: `sha256:982bd235f46e537404cdab42c3dfb3d0058f97ed5d7984f2e71ad8734adcc6a8`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 18:56:11 GMT
-ADD file:d51af61c5955c980d18387ab532110c3874f95a87768be84dfd1eeb3e701d3a4 in / 
-# Wed, 31 Mar 2021 18:56:16 GMT
+# Wed, 14 Apr 2021 19:31:22 GMT
+ADD file:f8b081207f6d35f8ebd06aa471e350644151d183801f678def586d8f37e81366 in / 
+# Wed, 14 Apr 2021 19:31:29 GMT
 CMD ["/bin/sh"]
-# Thu, 01 Apr 2021 20:19:14 GMT
+# Wed, 14 Apr 2021 22:09:04 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Thu, 01 Apr 2021 20:19:27 GMT
+# Wed, 14 Apr 2021 22:09:16 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Thu, 01 Apr 2021 20:19:34 GMT
+# Wed, 14 Apr 2021 22:09:24 GMT
 ENV CADDY_VERSION=v2.3.0
-# Thu, 01 Apr 2021 20:19:48 GMT
+# Wed, 14 Apr 2021 22:09:39 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Thu, 01 Apr 2021 20:20:00 GMT
+# Wed, 14 Apr 2021 22:09:51 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Thu, 01 Apr 2021 20:20:05 GMT
+# Wed, 14 Apr 2021 22:09:56 GMT
 ENV XDG_CONFIG_HOME=/config
-# Thu, 01 Apr 2021 20:20:12 GMT
+# Wed, 14 Apr 2021 22:10:01 GMT
 ENV XDG_DATA_HOME=/data
-# Thu, 01 Apr 2021 20:20:18 GMT
+# Wed, 14 Apr 2021 22:10:06 GMT
 VOLUME [/config]
-# Thu, 01 Apr 2021 20:20:23 GMT
+# Wed, 14 Apr 2021 22:10:15 GMT
 VOLUME [/data]
-# Thu, 01 Apr 2021 20:20:31 GMT
+# Wed, 14 Apr 2021 22:10:22 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Thu, 01 Apr 2021 20:20:39 GMT
+# Wed, 14 Apr 2021 22:10:32 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Thu, 01 Apr 2021 20:20:48 GMT
+# Wed, 14 Apr 2021 22:10:40 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Thu, 01 Apr 2021 20:20:54 GMT
+# Wed, 14 Apr 2021 22:10:46 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Thu, 01 Apr 2021 20:21:00 GMT
+# Wed, 14 Apr 2021 22:10:52 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Thu, 01 Apr 2021 20:21:05 GMT
+# Wed, 14 Apr 2021 22:10:58 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Thu, 01 Apr 2021 20:21:09 GMT
+# Wed, 14 Apr 2021 22:11:03 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Thu, 01 Apr 2021 20:21:14 GMT
+# Wed, 14 Apr 2021 22:11:08 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Thu, 01 Apr 2021 20:21:21 GMT
+# Wed, 14 Apr 2021 22:11:14 GMT
 EXPOSE 80
-# Thu, 01 Apr 2021 20:21:27 GMT
+# Wed, 14 Apr 2021 22:11:20 GMT
 EXPOSE 443
-# Thu, 01 Apr 2021 20:21:33 GMT
+# Wed, 14 Apr 2021 22:11:27 GMT
 EXPOSE 2019
-# Thu, 01 Apr 2021 20:21:42 GMT
+# Wed, 14 Apr 2021 22:11:35 GMT
 WORKDIR /srv
-# Thu, 01 Apr 2021 20:21:47 GMT
+# Wed, 14 Apr 2021 22:11:41 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:d6d4557865d9cec3513c1a5e744cb1073a563d464b8d546911289b9df9998f1b`  
-		Last Modified: Wed, 31 Mar 2021 18:57:36 GMT  
-		Size: 2.8 MB (2806070 bytes)  
+	-	`sha256:45707b9629c4ab8c6046680737229218fe844f38d08e5458b24605e1dbfd2709`  
+		Last Modified: Wed, 14 Apr 2021 19:32:50 GMT  
+		Size: 2.8 MB (2806750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afc0e09b51c0cca190757d6fc9c2b15a635a361717a65973c8d6edf77918d6d5`  
-		Last Modified: Thu, 01 Apr 2021 20:27:39 GMT  
-		Size: 302.3 KB (302335 bytes)  
+	-	`sha256:d93dd31358a6e859a05bb506b946720f02c7ec7969776d811b20eaaa84508cd7`  
+		Last Modified: Wed, 14 Apr 2021 22:15:41 GMT  
+		Size: 302.3 KB (302339 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:091713ba252aea42d1ddb0424ba2c2861b3afd2d0102c5d0a6070bacd31e8b49`  
-		Last Modified: Thu, 01 Apr 2021 20:27:39 GMT  
-		Size: 5.8 KB (5832 bytes)  
+	-	`sha256:f8077b8c9cca163d9a34281a866cf5fe991ff8c160ebd1ab1b617c6b722ec690`  
+		Last Modified: Wed, 14 Apr 2021 22:15:41 GMT  
+		Size: 5.8 KB (5831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1840f6bc70853fb9cc5e9c5752486488368649459a0beaa0684081a5b4a44bd4`  
-		Last Modified: Thu, 01 Apr 2021 20:27:42 GMT  
-		Size: 10.2 MB (10241392 bytes)  
+	-	`sha256:55884816b8eca8150db9473989410e372c69c5431deb51a6cacd029895cf3dd6`  
+		Last Modified: Wed, 14 Apr 2021 22:15:43 GMT  
+		Size: 10.2 MB (10241380 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1fb03f086aa28c855432404e128ff2009c1198d61578654e584a12062e24953f`  
-		Last Modified: Thu, 01 Apr 2021 20:27:39 GMT  
-		Size: 153.0 B  
+	-	`sha256:51efee06e0a650ff5f146fc54a695d4bf2b44e19da18120fdc494982d52cdd62`  
+		Last Modified: Wed, 14 Apr 2021 22:15:41 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2` - linux; s390x
 
 ```console
-$ docker pull caddy@sha256:9d992badb7530225182676af12ae945f5f2de2f5ad7d3946b397892a6de4c123
+$ docker pull caddy@sha256:68aaf625a22bff4e71edf895129baa2d562765c24ac81a5c68aff2995ebf89c2
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.1 MB (14145974 bytes)**  
+-	Total Size: **14.1 MB (14146947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b9c8a68869d0806c29e6c2c9c655d3e9085af285c6c24ea651ad3bdffd714e38`
+-	Image ID: `sha256:dbfd454f0dfa64ee1a952f9ed74a3f3bda3688a9565f062c3ea37e48b54eb210`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 17:15:04 GMT
-ADD file:1f37b92ea1f573c4810b1d056dc4880cf4035e143451d9b2b76fac1e3b462248 in / 
-# Wed, 31 Mar 2021 17:15:04 GMT
+# Wed, 14 Apr 2021 18:41:42 GMT
+ADD file:c73a5ff435939cdc9d621ee9dc2aa5a54a5f5e0241caae8dc948c03c423d9fef in / 
+# Wed, 14 Apr 2021 18:41:42 GMT
 CMD ["/bin/sh"]
-# Wed, 31 Mar 2021 18:55:58 GMT
+# Wed, 14 Apr 2021 20:07:21 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Wed, 31 Mar 2021 18:56:00 GMT
+# Wed, 14 Apr 2021 20:07:22 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Wed, 31 Mar 2021 18:56:00 GMT
+# Wed, 14 Apr 2021 20:07:22 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 31 Mar 2021 18:56:04 GMT
+# Wed, 14 Apr 2021 20:07:25 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:26 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:26 GMT
 ENV XDG_CONFIG_HOME=/config
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 ENV XDG_DATA_HOME=/data
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 VOLUME [/config]
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 VOLUME [/data]
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 EXPOSE 80
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 EXPOSE 443
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 EXPOSE 2019
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:30 GMT
 WORKDIR /srv
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:30 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:38ca5430c9af12b6b6dee7c10eb6b1eb0e4eb4f5f02a97890579c4b049d00233`  
-		Last Modified: Wed, 31 Mar 2021 17:15:46 GMT  
-		Size: 2.6 MB (2567453 bytes)  
+	-	`sha256:27efec644c4207cbc4d1400f84f3402937aab5ce72489976148896e42a219820`  
+		Last Modified: Wed, 14 Apr 2021 18:42:24 GMT  
+		Size: 2.6 MB (2568428 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe8eb19b6319d0b09121581759094c3eb58e5574e2063affb6c42c0e1a1937a0`  
-		Last Modified: Wed, 31 Mar 2021 18:57:00 GMT  
+	-	`sha256:5dab58470b754d248933aa56b48394e3ee4db4561d430d23ea378f0371ca59cb`  
+		Last Modified: Wed, 14 Apr 2021 20:08:16 GMT  
 		Size: 300.5 KB (300471 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbd6e269a873b8a21e2787b0ea05662c0f2676aa9043f52b8884081965be7112`  
-		Last Modified: Wed, 31 Mar 2021 18:57:00 GMT  
-		Size: 5.8 KB (5830 bytes)  
+	-	`sha256:fd514b608428ea44dae7dc67e641a276593e7715178d86d7702153521de849d7`  
+		Last Modified: Wed, 14 Apr 2021 20:08:16 GMT  
+		Size: 5.8 KB (5832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02f6a8a7e19cb11edbda771ce361181202915f4760cdaef5e290b1758cc7b88c`  
-		Last Modified: Wed, 31 Mar 2021 18:57:02 GMT  
-		Size: 11.3 MB (11272066 bytes)  
+	-	`sha256:a437814dab55b178c71f55598a70d0b532b3f645bdeb43e89244a6ebcde01446`  
+		Last Modified: Wed, 14 Apr 2021 20:08:18 GMT  
+		Size: 11.3 MB (11272061 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec92d2dcab4ee41e4e626d8b360a6feff3822db894894865a36bbe9cfc759df0`  
-		Last Modified: Wed, 31 Mar 2021 18:57:00 GMT  
-		Size: 154.0 B  
+	-	`sha256:412be9af105c69ee35fec76e8c0dbde8c8ba61c774b7d354e9c9fc8f538e8155`  
+		Last Modified: Wed, 14 Apr 2021 20:08:16 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `caddy:2` - windows version 10.0.17763.1817; amd64
+### `caddy:2` - windows version 10.0.17763.1879; amd64
 
 ```console
-$ docker pull caddy@sha256:5203e8707456e06dfc8d03ba99cdfe84d4b3dc00be512770827ef5e692ec18e0
+$ docker pull caddy@sha256:fdb259b96e8413c959258115e3cc0ed6272cd362b32dcee80b7c5875b3cca213
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2487805125 bytes)**  
+-	Total Size: **2.5 GB (2487217133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f93dd36e27e04e9ac5d0bc9da46fbeebc4541b2a242f90a7bc7003d2bc636fe`
+-	Image ID: `sha256:db78127126d7dbe748dc638552655f6a86f11faa664f34ed256da804f77de223`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 07 May 2020 05:09:25 GMT
 RUN Apply image 1809-RTM-amd64
-# Sat, 27 Feb 2021 09:32:06 GMT
+# Fri, 09 Apr 2021 20:34:41 GMT
 RUN Install update 1809-amd64
-# Wed, 10 Mar 2021 13:08:20 GMT
+# Wed, 14 Apr 2021 12:09:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 21:27:31 GMT
+# Wed, 14 Apr 2021 20:04:03 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Wed, 10 Mar 2021 21:27:32 GMT
+# Wed, 14 Apr 2021 20:04:04 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 10 Mar 2021 21:28:05 GMT
+# Wed, 14 Apr 2021 20:04:43 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('afc504cb0a641729ba546c0cadea524a170dcca2a915473aaf032a7c666c7c56ac059752f34b5d50700a692647b9b395b530cd8299ac3650c729adce5daa1ba5')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Wed, 10 Mar 2021 21:28:06 GMT
+# Wed, 14 Apr 2021 20:04:45 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Wed, 10 Mar 2021 21:28:07 GMT
+# Wed, 14 Apr 2021 20:04:46 GMT
 ENV XDG_DATA_HOME=c:/data
-# Wed, 10 Mar 2021 21:28:08 GMT
+# Wed, 14 Apr 2021 20:04:47 GMT
 VOLUME [c:/config]
-# Wed, 10 Mar 2021 21:28:09 GMT
+# Wed, 14 Apr 2021 20:04:48 GMT
 VOLUME [c:/data]
-# Wed, 10 Mar 2021 21:28:11 GMT
+# Wed, 14 Apr 2021 20:04:49 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 10 Mar 2021 21:28:12 GMT
+# Wed, 14 Apr 2021 20:04:50 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 10 Mar 2021 21:28:13 GMT
+# Wed, 14 Apr 2021 20:04:51 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 10 Mar 2021 21:28:14 GMT
+# Wed, 14 Apr 2021 20:04:53 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 10 Mar 2021 21:28:15 GMT
+# Wed, 14 Apr 2021 20:04:54 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 10 Mar 2021 21:28:16 GMT
+# Wed, 14 Apr 2021 20:04:55 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 10 Mar 2021 21:28:17 GMT
+# Wed, 14 Apr 2021 20:04:56 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 10 Mar 2021 21:28:18 GMT
+# Wed, 14 Apr 2021 20:04:57 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 10 Mar 2021 21:28:19 GMT
+# Wed, 14 Apr 2021 20:04:58 GMT
 EXPOSE 80
-# Wed, 10 Mar 2021 21:28:20 GMT
+# Wed, 14 Apr 2021 20:05:00 GMT
 EXPOSE 443
-# Wed, 10 Mar 2021 21:28:21 GMT
+# Wed, 14 Apr 2021 20:05:01 GMT
 EXPOSE 2019
-# Wed, 10 Mar 2021 21:28:41 GMT
+# Wed, 14 Apr 2021 20:05:27 GMT
 RUN caddy version
-# Wed, 10 Mar 2021 21:28:42 GMT
+# Wed, 14 Apr 2021 20:05:28 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -639,154 +639,154 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 	-	`sha256:4612f6d0b889cad0ed0292fae3a0b0c8a9e49aff6dea8eb049b2386d9b07986f`  
 		Size: 1.7 GB (1718332879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ff1512f88ecd4ff0a91ade34d43733c48834433e35f062f80e6e70d706f8d73`  
-		Size: 743.2 MB (743201590 bytes)  
+	-	`sha256:399f118dfaa9a753e98d128238b944432c7bcabea88a2998a6efbbece28ed303`  
+		Size: 751.4 MB (751421005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ebe61daec6d671bc2c1c6fe61ac9825fb552e9cef3672d0a7dbec719d125ae64`  
-		Last Modified: Wed, 10 Mar 2021 13:21:09 GMT  
+	-	`sha256:106dbf3373fce4f0ba5e00ad54824c597f2894605fa7d8ef446ad7ea3b97449f`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1413 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a98036a79f108b7c08eb62f3ef539549a6fe005aced8f3fa4971a4e576e8c045`  
+		Last Modified: Wed, 14 Apr 2021 20:24:07 GMT  
+		Size: 5.1 MB (5081237 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9a1c0c34e473966a69a26492fc168338b6ee1afadedd4cfd3b84537129685128`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
 		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31a02199a38f7dde446e1c919797037b896dc0d954cc313cd49d1fd7ef7b309a`  
-		Last Modified: Wed, 10 Mar 2021 21:43:28 GMT  
-		Size: 9.5 MB (9466151 bytes)  
+	-	`sha256:88365dd5b6b4b0188ad00f31b1114067b79a05d3eeaecbcdf86385c18e1e2bff`  
+		Last Modified: Wed, 14 Apr 2021 20:24:16 GMT  
+		Size: 12.0 MB (12047588 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:928fadc2fce7089b23d0e2d915e1cf2211aec3ffdc88b5eb66c67f18f7fb2c6e`  
-		Last Modified: Wed, 10 Mar 2021 21:43:26 GMT  
-		Size: 1.4 KB (1433 bytes)  
+	-	`sha256:1d8761bc4a54d10c3f03507406d03f0161fece0b4f80913bc67f5218cf7acc0e`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
+		Size: 1.4 KB (1394 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd7bb988dcbf796f3839a524b32be07309d29f50ec4273ded91973b631e0ad00`  
-		Last Modified: Wed, 10 Mar 2021 21:43:45 GMT  
-		Size: 16.5 MB (16453921 bytes)  
+	-	`sha256:f23987f8593afe96ed2b00e5744c51d5678851dac567bde07c230d882b31db5b`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d621047471067d3c16923f7c3b79f8615ddbcc2f9a879832c456f67fe3cd1544`  
-		Last Modified: Wed, 10 Mar 2021 21:43:25 GMT  
-		Size: 1.4 KB (1438 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9f148a6aba7a2d10970470390d5229567735df01114acfbdad1c661bdc8dc22`  
-		Last Modified: Wed, 10 Mar 2021 21:43:24 GMT  
-		Size: 1.4 KB (1436 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc608f5d46fef14425bc80c9c7062532f20bec43d7073a8e17e8278f9c60cc7a`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1436 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cda8fe89940ce8986995aee365da1f58c22d0d3b8a050600e429ef1cdd8c5fc`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:403d8611297f60270051c62d4bb7d7dff6aeeb33dc0c5cecd06ae94080fd1802`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1401 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab2df9d9f268b91b0f5bd3e27ba3e1cd03694b62c48ad901fa7fc47ebd2956db`  
-		Last Modified: Wed, 10 Mar 2021 21:43:22 GMT  
-		Size: 1.4 KB (1416 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6eabd07d0fd9430b675ce97b3bd926812eb4e9f4c4cf0872d68b91be65dd9d9`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1403 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec389e155c01fcd9625c110db8b62baac443eb2bee04a5f631e7cecc534c0818`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca8fad2b33541d43c28d6113e51b250763c7ec33d8503df271481f615a1f99bc`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1372 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cf0c1f7ba714c558dd8ed7e0336f84c91c25a35766d2efa592b1f39b1e448d6`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea93772cd9ce84491fa183154e0972b941a4379f628a54f9213bf36c4311dbbb`  
-		Last Modified: Wed, 10 Mar 2021 21:43:20 GMT  
+	-	`sha256:27edd7d612a33644ef095d4bd52c800d8e8a1bd73a56ddbeba0a2cda230947a6`  
+		Last Modified: Wed, 14 Apr 2021 20:24:02 GMT  
 		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:842fa064b906d0bd7b584ea5f181fbca29305d9ad824eaed29bf341c1abbcea3`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 1.4 KB (1440 bytes)  
+	-	`sha256:81c5b86f636ca1020805b216bf4ea83e1aaa4e5da4145ec671280678483c8084`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:48b753cdd37ef6dce0fbecce933fdf1957f9d72cf512be44c11d32181611a433`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 1.4 KB (1434 bytes)  
+	-	`sha256:8f097631ca96d803dd63f72849f1b76728a05c89e8451675f669fc655ae07600`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0205b004a4016df290e2fd8b362003adad13b56a6fbc17c35209de56b2bac034`  
-		Last Modified: Wed, 10 Mar 2021 21:43:16 GMT  
+	-	`sha256:6ace7f5f948c892db540a9734d885fb0695faf8cc55e9fa2df27c4aff76e485d`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1424 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:57476c73327d061921cee32adad6344e762c80c1142357a6de89819e8577d3e6`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1393 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8aaad63b2ff3aa00f636a1f988a02040c9832ae1a184093cef2471115a787a8f`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1407 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b1aef5aebcec7bd144ab11a819f8406f07a0dcfaf11684f464b56f5835633fb4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1413 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e7cd29f97bbc5cd627a79fc205fd6f63257d27e45e45264ec1e1c3ab94b319e4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c8aeafc40e34b5ef3464715c082ddb0910edbd9a59ac2d4d9d6586a0022271b4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4fe3fa5d1767b62495151be377ed814c0ce5766f1cb875b724b922d378249bb8`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b89f7d63263e3b381a5386cd4b13b21226da398d0c8d2bf59f111efb466b9959`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1436 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aab5798a12c9581184fa73f7b74913b0cf6c4ae638f2886f07d70a9f32181d9a`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1406 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bf434bfce197fbac09ffe0409a20f2a1ba646801b7dac739c6cea7bed0ce2fad`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1420 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ec0defeab0b694a738dc4b945c883e44f4118a4127f00e4cea32ab589fb194dc`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 308.9 KB (308863 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:51d70335c993ba29c3325465e90a310fce3b41a934bc25ec1bc5220fd3424bfe`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
 		Size: 1.4 KB (1425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e5f63eec622fd92f0ce90d6e06bd12c2687cbdf86aae3cdbbb8d3fdc92ef028`  
-		Last Modified: Wed, 10 Mar 2021 21:43:19 GMT  
-		Size: 1.4 KB (1369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:446a62c8913c6a60f39e8053d6ad0d6dfaf69ec7d8cf3fcc2665386e362238d6`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 325.1 KB (325114 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43fc4417c46cd53b142f42f58ded86ccf383c9f9b6e5f97d8a8183abbd1bd7aa`  
-		Last Modified: Wed, 10 Mar 2021 21:43:17 GMT  
-		Size: 1.4 KB (1383 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `caddy:2` - windows version 10.0.14393.4283; amd64
+### `caddy:2` - windows version 10.0.14393.4350; amd64
 
 ```console
-$ docker pull caddy@sha256:e9416497e1d43fd04e244f89af4e210714a28b676cf1e2279487484087b8ee39
+$ docker pull caddy@sha256:0a27a5dee7d386c823f3ad85b0ad3c7c6ebb739e7d7ad1cbc37662a3e955dfbc
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 GB (5829241236 bytes)**  
+-	Total Size: **5.8 GB (5818160037 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b987ba0d14c06619541f1cb51215c36133a17cfbfea49a9bc79b021564ab785`
+-	Image ID: `sha256:c5d01f580a5360a74b845ce6ffbd196e0930731b656954f6dafd810f4b69ae72`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sat, 19 Nov 2016 17:05:00 GMT
 RUN Apply image 1607-RTM-amd64
-# Wed, 03 Mar 2021 18:02:00 GMT
+# Wed, 07 Apr 2021 21:54:00 GMT
 RUN Install update ltsc2016-amd64
-# Wed, 10 Mar 2021 13:42:05 GMT
+# Wed, 14 Apr 2021 12:35:33 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 21:30:30 GMT
+# Wed, 14 Apr 2021 20:07:14 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Wed, 10 Mar 2021 21:30:31 GMT
+# Wed, 14 Apr 2021 20:07:15 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 10 Mar 2021 21:32:11 GMT
+# Wed, 14 Apr 2021 20:09:01 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('afc504cb0a641729ba546c0cadea524a170dcca2a915473aaf032a7c666c7c56ac059752f34b5d50700a692647b9b395b530cd8299ac3650c729adce5daa1ba5')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Wed, 10 Mar 2021 21:32:12 GMT
+# Wed, 14 Apr 2021 20:09:02 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Wed, 10 Mar 2021 21:32:13 GMT
+# Wed, 14 Apr 2021 20:09:04 GMT
 ENV XDG_DATA_HOME=c:/data
-# Wed, 10 Mar 2021 21:32:14 GMT
+# Wed, 14 Apr 2021 20:09:05 GMT
 VOLUME [c:/config]
-# Wed, 10 Mar 2021 21:32:15 GMT
+# Wed, 14 Apr 2021 20:09:06 GMT
 VOLUME [c:/data]
-# Wed, 10 Mar 2021 21:32:16 GMT
+# Wed, 14 Apr 2021 20:09:07 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 10 Mar 2021 21:32:18 GMT
+# Wed, 14 Apr 2021 20:09:08 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 10 Mar 2021 21:32:19 GMT
+# Wed, 14 Apr 2021 20:09:09 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 10 Mar 2021 21:32:20 GMT
+# Wed, 14 Apr 2021 20:09:10 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 10 Mar 2021 21:32:21 GMT
+# Wed, 14 Apr 2021 20:09:11 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 10 Mar 2021 21:32:23 GMT
+# Wed, 14 Apr 2021 20:09:12 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 10 Mar 2021 21:32:24 GMT
+# Wed, 14 Apr 2021 20:09:14 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 10 Mar 2021 21:32:25 GMT
+# Wed, 14 Apr 2021 20:09:15 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 10 Mar 2021 21:32:26 GMT
+# Wed, 14 Apr 2021 20:09:16 GMT
 EXPOSE 80
-# Wed, 10 Mar 2021 21:32:27 GMT
+# Wed, 14 Apr 2021 20:09:17 GMT
 EXPOSE 443
-# Wed, 10 Mar 2021 21:32:28 GMT
+# Wed, 14 Apr 2021 20:09:18 GMT
 EXPOSE 2019
-# Wed, 10 Mar 2021 21:33:17 GMT
+# Wed, 14 Apr 2021 20:10:29 GMT
 RUN caddy version
-# Wed, 10 Mar 2021 21:33:18 GMT
+# Wed, 14 Apr 2021 20:10:30 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -795,98 +795,98 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Last Modified: Tue, 18 Sep 2018 20:20:50 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:30bda99601c5cbd3b2118409f401852ea648e2319bd81518723e476b28d764c5`  
-		Size: 1.7 GB (1726924885 bytes)  
+	-	`sha256:00b4edb823e6a375d179a28cbfa682c2379d62179e1518485902d6e68b9a9d1e`  
+		Size: 1.7 GB (1724897968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:76680da9dc6db108ddf2e353c494b45e8486a6751619a13ed8fb3ad64b9a16e9`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bb52885e05952959b0fa7aaff23561fcf14d294aed336112b388c94e67709e4f`  
+		Last Modified: Wed, 14 Apr 2021 12:59:14 GMT  
+		Size: 1.4 KB (1406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0c9e18c1004b748968faecba6f9d1b5e6233e7e0b82b1c1259cf945eb3334e6`  
-		Last Modified: Wed, 10 Mar 2021 21:44:17 GMT  
-		Size: 10.2 MB (10181612 bytes)  
+	-	`sha256:398ea9969fcb8e31829ad2a30ccb77a30f56d17d992051bf6a04b0bd4ebb24a7`  
+		Last Modified: Wed, 14 Apr 2021 20:24:45 GMT  
+		Size: 5.7 MB (5661064 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08f9c532d82c90ea9fc2e2c6a591988abfb79e551caabead3fe56f8ba69c31f6`  
-		Last Modified: Wed, 10 Mar 2021 21:44:12 GMT  
-		Size: 1.4 KB (1404 bytes)  
+	-	`sha256:1d2d2fcf25a0097bf75ef1b7b207a765b3c93bce2eb96e7ebf2ce894a0ca0bf1`  
+		Last Modified: Wed, 14 Apr 2021 20:24:43 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5695a08e71ba7869b2e8b11e6f3f228a8a6d303878131e1f3abdc655757b5f2`  
-		Last Modified: Wed, 10 Mar 2021 21:44:19 GMT  
-		Size: 21.9 MB (21867123 bytes)  
+	-	`sha256:6f1814c5a2050da8e869a225b62ac936693d7904fed473ed6d703acd42542916`  
+		Last Modified: Wed, 14 Apr 2021 20:24:46 GMT  
+		Size: 17.3 MB (17333583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fabb7c4e3c2c8cdeef81bd8a6fcaed6b082e5ea4120a15ae4e277258c03de007`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1372 bytes)  
+	-	`sha256:93803b6c6c1e5befb69d029873c92020261e4faf5f97fa1ebe4474f2fcd761da`  
+		Last Modified: Wed, 14 Apr 2021 20:24:39 GMT  
+		Size: 1.4 KB (1403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82ec41ded5794a348cd9c06286dcbe7ca964197008812567791bc45b22bc4dd1`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1427 bytes)  
+	-	`sha256:5bef042a1c15ba4cca6086f36ad82e03f037ebae2ec5218dc528ce8afa0cbbe7`  
+		Last Modified: Wed, 14 Apr 2021 20:24:39 GMT  
+		Size: 1.4 KB (1409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d20ab0530e5214beccbf36a30fe1618f9752274c51a313bb71e9b9b130870164`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc0a7b2c54a3fa027e26d52abd2013c77fc0e69bf93446d70990dc40a6e00d98`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1366 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e0051bde2db70124d244a1337ccc824629e18f2be3b800ec577a7794ff1f7f3`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:271b14baf3d87c6aa3bd2da952290cec023b40b90b62688c79fa26d9253770ac`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1391 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bc9b324fb71cb6bdc3dfd42355efbd64634f7d2ec678a5a15757e69145f671d`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
+	-	`sha256:0c22fd29bd95221222824495015750f062fcf337845032c4d11be1c8166d9911`  
+		Last Modified: Wed, 14 Apr 2021 20:24:37 GMT  
 		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69d93b07db92b46680fe5ba78d29058e6f5b2ce49ba20cb10aeccb751b37d497`  
-		Last Modified: Wed, 10 Mar 2021 21:44:08 GMT  
-		Size: 1.4 KB (1433 bytes)  
+	-	`sha256:e034d998c8e3152093c8f2c30b0ac9122c528b8ba0889cadf3a3282059a8f96c`  
+		Last Modified: Wed, 14 Apr 2021 20:24:37 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bb6dc81911c7b01e751b8d5a08f7cf494f5542f166b2e1471a08ef82b4ebcb4`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1410 bytes)  
+	-	`sha256:80cd579cdba6539c678c1cfd7184427e5b0777e34c965e8c6ca62f8301dd629f`  
+		Last Modified: Wed, 14 Apr 2021 20:24:36 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a53bfaf85823badcda6fa4470993f24b9772597b13989ee71ec0b5686be93cbc`  
-		Last Modified: Wed, 10 Mar 2021 21:44:07 GMT  
-		Size: 1.4 KB (1410 bytes)  
+	-	`sha256:1ea0c59c3768ba8d3f4943669c834e3b8043899a0ee61ed325fa453559243f95`  
+		Last Modified: Wed, 14 Apr 2021 20:24:36 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5077aa28e94279b15dbe048f37904704877b5b4a932e67a3a12adf8bdfe9ada`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1436 bytes)  
+	-	`sha256:bc5f4c914fc136d87d2e00167556104cf17827c516e84c53785225cfeb214a42`  
+		Last Modified: Wed, 14 Apr 2021 20:24:40 GMT  
+		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5851fcb607a8afd06548b48e611020418ed88f0c0e1abcba7854089c8bf9729e`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1395 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:498aa4d3ee4135d0aaeccdf4fe0d8ec98c3ba95a92fd0b56dc73a461be700516`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1418 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0651b67304c2388b503cbd386e0235ec00a5a8437a9d115ba871152ae9d07103`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
+	-	`sha256:164712f851736c62b6da95357e6056173e390402e1a17b2f7559af8f42ce0134`  
+		Last Modified: Wed, 14 Apr 2021 20:24:35 GMT  
 		Size: 1.4 KB (1408 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1418b36ca2fc9603d0a6a28d6f4849cdfd80c3069ea494baeba2ce37e66b73d4`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1390 bytes)  
+	-	`sha256:5d73f78d7b9ccdb5963233ef77dab1188e2678cc7c9136ff183494cd28f893f0`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a50dd910f71fe0ceefc794aaee3e6669cd578ae8286348a76c60dc926778da33`  
-		Last Modified: Wed, 10 Mar 2021 21:44:04 GMT  
-		Size: 256.4 KB (256438 bytes)  
+	-	`sha256:b455a43ac6d0be6faf8dce0c59c609cc832963d9cc649b301f49ff79f218e439`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43a39a5ecfed250f608279f4544ced05934bd84e326d05f119a12081aa38b39f`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1397 bytes)  
+	-	`sha256:916f00b0ac9199b716d513a33d44003af6cd00e4b9b7a2feab64b84649d80640`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1431 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7ece2a763e6182c580aadb07399f77037c831dd03ee9cdad4f70b18759458094`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac88310e829bdb746ec804044c2a238dc2c6f64660688285a64205a255283c47`  
+		Last Modified: Wed, 14 Apr 2021 20:24:32 GMT  
+		Size: 1.4 KB (1404 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ed384ae90a546f9aad4b539596228057299114b9662407a708465a0ed7de3691`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1411 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9de7a040e97ee693dc826cc6130e42fe7597fbf48fe035d0e5f9f039166edae5`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e4c1c4ddd499c8a111514a0d3bc3b97381c76a6b33d1cb3f74752d42ddc3e43c`  
+		Last Modified: Wed, 14 Apr 2021 20:24:32 GMT  
+		Size: 255.9 KB (255932 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:96251eba56a444a75ccc3480986386b2d2abcce41beadf2f267bedaee332c54a`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2-alpine`
 
 ```console
-$ docker pull caddy@sha256:ff7266e7f0a93ad9b10c28b3625331d1162124c07a0a46b06958b01972ab33e8
+$ docker pull caddy@sha256:fa1ae85dc9b12ee47e98d7ef21db409eada3ed48f1865e4b1f1dd78f417132fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -901,259 +901,259 @@ $ docker pull caddy@sha256:ff7266e7f0a93ad9b10c28b3625331d1162124c07a0a46b06958b
 ### `caddy:2-alpine` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:629c5800ccf51df482a4e63266e4570de3e573e862d902398b03cbfca2212b4d
+$ docker pull caddy@sha256:6fbf52298c46c55c572670b5395ecaee5d399338003c9bb4e4abed875c542f4f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.7 MB (14728095 bytes)**  
+-	Total Size: **14.7 MB (14728953 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e073d63a624f18bd8e2f94b9e84715e5a33a817db19afa42afc8ea95e59d568`
+-	Image ID: `sha256:7395cc3713b2ca5574a9b4aafc468a1533d16582efe47dcab74ed547540d698a`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 20:10:13 GMT
-ADD file:f77db8e5b937d8ebb7e254eccd4d311798ea9f4dd5081ea2a7e2b1d3790300c2 in / 
-# Wed, 31 Mar 2021 20:10:13 GMT
+# Wed, 14 Apr 2021 19:19:49 GMT
+ADD file:4f526aa99067d82b341f7ca538f7826b7c23a628f1b615eea2883a2d434c1b90 in / 
+# Wed, 14 Apr 2021 19:19:49 GMT
 CMD ["/bin/sh"]
-# Thu, 01 Apr 2021 13:53:15 GMT
+# Wed, 14 Apr 2021 20:10:47 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Thu, 01 Apr 2021 13:53:17 GMT
+# Wed, 14 Apr 2021 20:10:49 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Thu, 01 Apr 2021 13:53:17 GMT
+# Wed, 14 Apr 2021 20:10:49 GMT
 ENV CADDY_VERSION=v2.3.0
-# Thu, 01 Apr 2021 13:53:20 GMT
+# Wed, 14 Apr 2021 20:10:52 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 ENV XDG_CONFIG_HOME=/config
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 ENV XDG_DATA_HOME=/data
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 VOLUME [/config]
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 VOLUME [/data]
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 EXPOSE 80
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 EXPOSE 443
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 EXPOSE 2019
-# Thu, 01 Apr 2021 13:53:24 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 WORKDIR /srv
-# Thu, 01 Apr 2021 13:53:24 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:532819f3e44cebad88c82f5393801acb876b7a61d36b84bce646561789bb2018`  
-		Last Modified: Wed, 31 Mar 2021 20:11:03 GMT  
-		Size: 2.8 MB (2799712 bytes)  
+	-	`sha256:339de151aab4bc06eed8409daae147c408478cb538dacb90cc63f19ad4eba80b`  
+		Last Modified: Wed, 14 Apr 2021 19:20:51 GMT  
+		Size: 2.8 MB (2800567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccc82ca1670c70e5b605729b271409acba02ca26c3f669bf1d95a067fb853a90`  
-		Last Modified: Thu, 01 Apr 2021 13:54:20 GMT  
-		Size: 300.0 KB (300021 bytes)  
+	-	`sha256:8b7a0cd9cca5be9b30bbc70611052d1456502e1f338ce4b14946233b21cd6a9a`  
+		Last Modified: Wed, 14 Apr 2021 20:11:46 GMT  
+		Size: 300.0 KB (300016 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21d66f69260e9358ba74c27e0ed110b9ff7781c5f90d5d01f86d6ef289834382`  
-		Last Modified: Thu, 01 Apr 2021 13:54:17 GMT  
-		Size: 5.8 KB (5829 bytes)  
+	-	`sha256:b5666523658a43fbbdff6b8fca498a988f4dcecc3ce027f1701414658c21d4ea`  
+		Last Modified: Wed, 14 Apr 2021 20:11:46 GMT  
+		Size: 5.8 KB (5832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9b38557b1fd80a7712b7263f0896f076afdeb9f25f68a79e288b87490aa3047`  
-		Last Modified: Thu, 01 Apr 2021 13:54:19 GMT  
-		Size: 11.6 MB (11622380 bytes)  
+	-	`sha256:b097228407f13a161f68b188b0a4f255855b64d84e7b076745a744d5aa7ed8cf`  
+		Last Modified: Wed, 14 Apr 2021 20:11:49 GMT  
+		Size: 11.6 MB (11622383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd37d6fba45d5f1633f00b6a9d204abacad2a6918dc355706fe0decc0bc4e565`  
-		Last Modified: Thu, 01 Apr 2021 13:54:18 GMT  
-		Size: 153.0 B  
+	-	`sha256:40682d93cc09b4592a1b9c08d48d0a956b5eef4f123d80d1a12942482edb6aab`  
+		Last Modified: Wed, 14 Apr 2021 20:11:46 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull caddy@sha256:b57cdc61b54865a7ff2ea4ef9d16458537d40e0dc25559d6540111874abbe4ce
+$ docker pull caddy@sha256:0df9df9725cab39fe073887c98b54bf7bf1c96b3ed0e23916737c7c4877576c6
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.9 MB (13855580 bytes)**  
+-	Total Size: **13.9 MB (13856181 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88293e19906b6b2275ff6e127e29960b1fdf0cf0c4baa4bbce4ea297e90db731`
+-	Image ID: `sha256:fce1c33ce4509195edc1c67d2dcd15c6c5fc0b35cec2e90714ec3007739600eb`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 17:19:11 GMT
-ADD file:00ac3d0df16779e7564cda9cbf94eef90ffa8043778a867272ff0135a1fb537f in / 
-# Wed, 31 Mar 2021 17:19:12 GMT
+# Wed, 14 Apr 2021 18:49:49 GMT
+ADD file:82fa6a18d24e3f535c9061d2e111d63fe6d8a27710bb34a17b326e605ff478be in / 
+# Wed, 14 Apr 2021 18:49:50 GMT
 CMD ["/bin/sh"]
-# Wed, 31 Mar 2021 17:36:32 GMT
+# Wed, 14 Apr 2021 19:45:19 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Wed, 31 Mar 2021 17:36:36 GMT
+# Wed, 14 Apr 2021 19:45:33 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Wed, 31 Mar 2021 17:36:38 GMT
+# Wed, 14 Apr 2021 19:45:36 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 31 Mar 2021 17:36:45 GMT
+# Wed, 14 Apr 2021 19:45:54 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Wed, 31 Mar 2021 17:36:51 GMT
+# Wed, 14 Apr 2021 19:46:03 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Wed, 31 Mar 2021 17:36:52 GMT
+# Wed, 14 Apr 2021 19:46:04 GMT
 ENV XDG_CONFIG_HOME=/config
-# Wed, 31 Mar 2021 17:36:53 GMT
+# Wed, 14 Apr 2021 19:46:05 GMT
 ENV XDG_DATA_HOME=/data
-# Wed, 31 Mar 2021 17:36:55 GMT
+# Wed, 14 Apr 2021 19:46:07 GMT
 VOLUME [/config]
-# Wed, 31 Mar 2021 17:36:55 GMT
+# Wed, 14 Apr 2021 19:46:08 GMT
 VOLUME [/data]
-# Wed, 31 Mar 2021 17:36:56 GMT
+# Wed, 14 Apr 2021 19:46:10 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 31 Mar 2021 17:36:58 GMT
+# Wed, 14 Apr 2021 19:46:11 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 31 Mar 2021 17:36:59 GMT
+# Wed, 14 Apr 2021 19:46:13 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 31 Mar 2021 17:37:00 GMT
+# Wed, 14 Apr 2021 19:46:16 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 31 Mar 2021 17:37:01 GMT
+# Wed, 14 Apr 2021 19:46:16 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 31 Mar 2021 17:37:03 GMT
+# Wed, 14 Apr 2021 19:46:18 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 31 Mar 2021 17:37:04 GMT
+# Wed, 14 Apr 2021 19:46:19 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 31 Mar 2021 17:37:05 GMT
+# Wed, 14 Apr 2021 19:46:20 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 31 Mar 2021 17:37:07 GMT
+# Wed, 14 Apr 2021 19:46:21 GMT
 EXPOSE 80
-# Wed, 31 Mar 2021 17:37:08 GMT
+# Wed, 14 Apr 2021 19:46:21 GMT
 EXPOSE 443
-# Wed, 31 Mar 2021 17:37:10 GMT
+# Wed, 14 Apr 2021 19:46:22 GMT
 EXPOSE 2019
-# Wed, 31 Mar 2021 17:37:11 GMT
+# Wed, 14 Apr 2021 19:46:23 GMT
 WORKDIR /srv
-# Wed, 31 Mar 2021 17:37:13 GMT
+# Wed, 14 Apr 2021 19:46:24 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:66e54586dae0889b30da12f7a66838d9b86511b58696c83c3b9166ff1a534bbe`  
-		Last Modified: Wed, 31 Mar 2021 17:20:05 GMT  
-		Size: 2.6 MB (2604658 bytes)  
+	-	`sha256:b452d2916bdfd021add56f1eda6bdea35400671ef07b38316ef82fce92a88fee`  
+		Last Modified: Wed, 14 Apr 2021 18:50:38 GMT  
+		Size: 2.6 MB (2605253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1532456df32c320ccd3c9ff5433c9e44d873ef87a0dc9fc29f9cf256b517eb4`  
-		Last Modified: Wed, 31 Mar 2021 17:38:50 GMT  
-		Size: 300.1 KB (300103 bytes)  
+	-	`sha256:6b83e8a6ea044be2a9e3c87c5fdc047ce9a52d1a64e48f8330d9a19002ecffe1`  
+		Last Modified: Wed, 14 Apr 2021 19:47:50 GMT  
+		Size: 300.1 KB (300117 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7263f61714ef61a0c59bef8e70bc49a741a357b0a0fc556b44f8344df37ea0f8`  
-		Last Modified: Wed, 31 Mar 2021 17:38:52 GMT  
-		Size: 5.8 KB (5830 bytes)  
+	-	`sha256:b9949bdfbb1d296dd158f8c2bb959f96c8da162a0d579f68fa3f5a4af58bed5b`  
+		Last Modified: Wed, 14 Apr 2021 19:47:50 GMT  
+		Size: 5.8 KB (5826 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:818002dab28746359de43d5a88d06c77cc3a353c838e15c6b6a67d48352cc5c0`  
-		Last Modified: Wed, 31 Mar 2021 17:38:54 GMT  
-		Size: 10.9 MB (10944835 bytes)  
+	-	`sha256:c2c5cc316af29a89f9a1d4e279b5d1bb964095a15795647d013f40921bc808c3`  
+		Last Modified: Wed, 14 Apr 2021 19:47:54 GMT  
+		Size: 10.9 MB (10944831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7979a3c808bf5c07c668f5966a15458dbfe9aba5aa7d761e690dd3a5cadf45eb`  
-		Last Modified: Wed, 31 Mar 2021 17:38:52 GMT  
+	-	`sha256:2f6670cc680ce5e5d9a0adfc380fe4a89ac2a2dcef5a7adeb874967a356e6742`  
+		Last Modified: Wed, 14 Apr 2021 19:47:50 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull caddy@sha256:6d510324512c20fc0d40aeb8b6e5b98255c857ad2dee894b6cb6e66f0231cf9b
+$ docker pull caddy@sha256:1a41623f53d582c8b503ae859f6ae98c7c0695eddb11bdbf8514b9b914955c3d
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.6 MB (13638799 bytes)**  
+-	Total Size: **13.6 MB (13639723 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42db38da968682707e6cf0fabb16f93770388907d8a208fca0db74cae3183ba2`
+-	Image ID: `sha256:9a4b837694902a1a259a4915444feda59d895ed37ffbef66b8518b9a884f029c`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 18:13:45 GMT
-ADD file:1270a9135e4e3d6bcd51f9c8bb7a5129c493366412591f1a6885db98056a572e in / 
-# Wed, 31 Mar 2021 18:13:47 GMT
+# Wed, 14 Apr 2021 18:57:50 GMT
+ADD file:d844cc7b5e00fb62be39d903a2fb4a08f700e75112c8eef1f31101e846ed010d in / 
+# Wed, 14 Apr 2021 18:57:52 GMT
 CMD ["/bin/sh"]
-# Thu, 01 Apr 2021 08:11:44 GMT
+# Wed, 14 Apr 2021 19:39:25 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Thu, 01 Apr 2021 08:11:47 GMT
+# Wed, 14 Apr 2021 19:39:32 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Thu, 01 Apr 2021 08:11:48 GMT
+# Wed, 14 Apr 2021 19:39:34 GMT
 ENV CADDY_VERSION=v2.3.0
-# Thu, 01 Apr 2021 08:11:52 GMT
+# Wed, 14 Apr 2021 19:39:38 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Thu, 01 Apr 2021 08:11:55 GMT
+# Wed, 14 Apr 2021 19:39:40 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Thu, 01 Apr 2021 08:11:56 GMT
+# Wed, 14 Apr 2021 19:39:41 GMT
 ENV XDG_CONFIG_HOME=/config
-# Thu, 01 Apr 2021 08:11:57 GMT
+# Wed, 14 Apr 2021 19:39:42 GMT
 ENV XDG_DATA_HOME=/data
-# Thu, 01 Apr 2021 08:11:58 GMT
+# Wed, 14 Apr 2021 19:39:43 GMT
 VOLUME [/config]
-# Thu, 01 Apr 2021 08:11:59 GMT
+# Wed, 14 Apr 2021 19:39:45 GMT
 VOLUME [/data]
-# Thu, 01 Apr 2021 08:12:00 GMT
+# Wed, 14 Apr 2021 19:39:46 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Thu, 01 Apr 2021 08:12:01 GMT
+# Wed, 14 Apr 2021 19:39:49 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Thu, 01 Apr 2021 08:12:02 GMT
+# Wed, 14 Apr 2021 19:39:51 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Thu, 01 Apr 2021 08:12:03 GMT
+# Wed, 14 Apr 2021 19:39:52 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Thu, 01 Apr 2021 08:12:05 GMT
+# Wed, 14 Apr 2021 19:39:53 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Thu, 01 Apr 2021 08:12:06 GMT
+# Wed, 14 Apr 2021 19:39:54 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Thu, 01 Apr 2021 08:12:07 GMT
+# Wed, 14 Apr 2021 19:39:55 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Thu, 01 Apr 2021 08:12:08 GMT
+# Wed, 14 Apr 2021 19:39:55 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Thu, 01 Apr 2021 08:12:09 GMT
+# Wed, 14 Apr 2021 19:39:56 GMT
 EXPOSE 80
-# Thu, 01 Apr 2021 08:12:11 GMT
+# Wed, 14 Apr 2021 19:39:57 GMT
 EXPOSE 443
-# Thu, 01 Apr 2021 08:12:13 GMT
+# Wed, 14 Apr 2021 19:39:58 GMT
 EXPOSE 2019
-# Thu, 01 Apr 2021 08:12:15 GMT
+# Wed, 14 Apr 2021 19:39:59 GMT
 WORKDIR /srv
-# Thu, 01 Apr 2021 08:12:16 GMT
+# Wed, 14 Apr 2021 19:40:00 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:b04429a2165487924dcbfedfff74fa262e6828327d04bb4b1c6a477096f5010e`  
-		Last Modified: Wed, 31 Mar 2021 18:15:12 GMT  
-		Size: 2.4 MB (2408269 bytes)  
+	-	`sha256:420c7481a3a76d5d12df768d2745ddbe40357df0af780c756a5a7d1f2a43d288`  
+		Last Modified: Wed, 14 Apr 2021 18:58:46 GMT  
+		Size: 2.4 MB (2409178 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:547b5d01ba24abc02b4f05f8134bfb156ce1840f496ed03a1316c882625bd41f`  
-		Last Modified: Thu, 01 Apr 2021 08:13:34 GMT  
-		Size: 299.2 KB (299199 bytes)  
+	-	`sha256:b239ad5e698454501b0de011bffea35a660806a0b85a6141776581e3a98bc467`  
+		Last Modified: Wed, 14 Apr 2021 19:41:24 GMT  
+		Size: 299.2 KB (299210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a883a914d37801ae97b0fac82c62e4f70ef4c92fc53417a91a23b2e69d36d9bb`  
-		Last Modified: Thu, 01 Apr 2021 08:13:34 GMT  
+	-	`sha256:8a0460b038be93717158ad9cdb6f83768b7129eaf4fcaef8620adc7509d0e5fe`  
+		Last Modified: Wed, 14 Apr 2021 19:41:23 GMT  
 		Size: 5.8 KB (5833 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:475143e7b89d1a36700916ec3c8f0caae9b57d5cd9ba187b9f3fd5d9a71eddcf`  
-		Last Modified: Thu, 01 Apr 2021 08:13:38 GMT  
-		Size: 10.9 MB (10925346 bytes)  
+	-	`sha256:0905d1ca8c4f74966ae8a7b5ebe8fdb33854c4a759d543d767dd9a0add81f155`  
+		Last Modified: Wed, 14 Apr 2021 19:41:29 GMT  
+		Size: 10.9 MB (10925348 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e79cdab22a3397c4a98f63a7e96c51881033744b1f198c4984072e7303e9f73`  
-		Last Modified: Thu, 01 Apr 2021 08:13:34 GMT  
-		Size: 152.0 B  
+	-	`sha256:2f02da274f552e184a7fa5527990e666d77c70e3715a0d96b7588e7433b3022a`  
+		Last Modified: Wed, 14 Apr 2021 19:41:23 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2-alpine` - linux; arm64 variant v8
@@ -1245,179 +1245,179 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ### `caddy:2-alpine` - linux; ppc64le
 
 ```console
-$ docker pull caddy@sha256:bffc665d927b1ed51d5f36dafc191678472776dea35931198b09deebbe4d31fb
+$ docker pull caddy@sha256:f551e1db7910e2d5235d303760aff5b514fc6e8b49d8d67d434bb23c40ac25db
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.4 MB (13355782 bytes)**  
+-	Total Size: **13.4 MB (13356454 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60f81a6d1059252f032458e7bf5dff42ef2844beec6f1c212b5901fb867fdf0a`
+-	Image ID: `sha256:982bd235f46e537404cdab42c3dfb3d0058f97ed5d7984f2e71ad8734adcc6a8`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 18:56:11 GMT
-ADD file:d51af61c5955c980d18387ab532110c3874f95a87768be84dfd1eeb3e701d3a4 in / 
-# Wed, 31 Mar 2021 18:56:16 GMT
+# Wed, 14 Apr 2021 19:31:22 GMT
+ADD file:f8b081207f6d35f8ebd06aa471e350644151d183801f678def586d8f37e81366 in / 
+# Wed, 14 Apr 2021 19:31:29 GMT
 CMD ["/bin/sh"]
-# Thu, 01 Apr 2021 20:19:14 GMT
+# Wed, 14 Apr 2021 22:09:04 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Thu, 01 Apr 2021 20:19:27 GMT
+# Wed, 14 Apr 2021 22:09:16 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Thu, 01 Apr 2021 20:19:34 GMT
+# Wed, 14 Apr 2021 22:09:24 GMT
 ENV CADDY_VERSION=v2.3.0
-# Thu, 01 Apr 2021 20:19:48 GMT
+# Wed, 14 Apr 2021 22:09:39 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Thu, 01 Apr 2021 20:20:00 GMT
+# Wed, 14 Apr 2021 22:09:51 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Thu, 01 Apr 2021 20:20:05 GMT
+# Wed, 14 Apr 2021 22:09:56 GMT
 ENV XDG_CONFIG_HOME=/config
-# Thu, 01 Apr 2021 20:20:12 GMT
+# Wed, 14 Apr 2021 22:10:01 GMT
 ENV XDG_DATA_HOME=/data
-# Thu, 01 Apr 2021 20:20:18 GMT
+# Wed, 14 Apr 2021 22:10:06 GMT
 VOLUME [/config]
-# Thu, 01 Apr 2021 20:20:23 GMT
+# Wed, 14 Apr 2021 22:10:15 GMT
 VOLUME [/data]
-# Thu, 01 Apr 2021 20:20:31 GMT
+# Wed, 14 Apr 2021 22:10:22 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Thu, 01 Apr 2021 20:20:39 GMT
+# Wed, 14 Apr 2021 22:10:32 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Thu, 01 Apr 2021 20:20:48 GMT
+# Wed, 14 Apr 2021 22:10:40 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Thu, 01 Apr 2021 20:20:54 GMT
+# Wed, 14 Apr 2021 22:10:46 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Thu, 01 Apr 2021 20:21:00 GMT
+# Wed, 14 Apr 2021 22:10:52 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Thu, 01 Apr 2021 20:21:05 GMT
+# Wed, 14 Apr 2021 22:10:58 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Thu, 01 Apr 2021 20:21:09 GMT
+# Wed, 14 Apr 2021 22:11:03 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Thu, 01 Apr 2021 20:21:14 GMT
+# Wed, 14 Apr 2021 22:11:08 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Thu, 01 Apr 2021 20:21:21 GMT
+# Wed, 14 Apr 2021 22:11:14 GMT
 EXPOSE 80
-# Thu, 01 Apr 2021 20:21:27 GMT
+# Wed, 14 Apr 2021 22:11:20 GMT
 EXPOSE 443
-# Thu, 01 Apr 2021 20:21:33 GMT
+# Wed, 14 Apr 2021 22:11:27 GMT
 EXPOSE 2019
-# Thu, 01 Apr 2021 20:21:42 GMT
+# Wed, 14 Apr 2021 22:11:35 GMT
 WORKDIR /srv
-# Thu, 01 Apr 2021 20:21:47 GMT
+# Wed, 14 Apr 2021 22:11:41 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:d6d4557865d9cec3513c1a5e744cb1073a563d464b8d546911289b9df9998f1b`  
-		Last Modified: Wed, 31 Mar 2021 18:57:36 GMT  
-		Size: 2.8 MB (2806070 bytes)  
+	-	`sha256:45707b9629c4ab8c6046680737229218fe844f38d08e5458b24605e1dbfd2709`  
+		Last Modified: Wed, 14 Apr 2021 19:32:50 GMT  
+		Size: 2.8 MB (2806750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afc0e09b51c0cca190757d6fc9c2b15a635a361717a65973c8d6edf77918d6d5`  
-		Last Modified: Thu, 01 Apr 2021 20:27:39 GMT  
-		Size: 302.3 KB (302335 bytes)  
+	-	`sha256:d93dd31358a6e859a05bb506b946720f02c7ec7969776d811b20eaaa84508cd7`  
+		Last Modified: Wed, 14 Apr 2021 22:15:41 GMT  
+		Size: 302.3 KB (302339 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:091713ba252aea42d1ddb0424ba2c2861b3afd2d0102c5d0a6070bacd31e8b49`  
-		Last Modified: Thu, 01 Apr 2021 20:27:39 GMT  
-		Size: 5.8 KB (5832 bytes)  
+	-	`sha256:f8077b8c9cca163d9a34281a866cf5fe991ff8c160ebd1ab1b617c6b722ec690`  
+		Last Modified: Wed, 14 Apr 2021 22:15:41 GMT  
+		Size: 5.8 KB (5831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1840f6bc70853fb9cc5e9c5752486488368649459a0beaa0684081a5b4a44bd4`  
-		Last Modified: Thu, 01 Apr 2021 20:27:42 GMT  
-		Size: 10.2 MB (10241392 bytes)  
+	-	`sha256:55884816b8eca8150db9473989410e372c69c5431deb51a6cacd029895cf3dd6`  
+		Last Modified: Wed, 14 Apr 2021 22:15:43 GMT  
+		Size: 10.2 MB (10241380 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1fb03f086aa28c855432404e128ff2009c1198d61578654e584a12062e24953f`  
-		Last Modified: Thu, 01 Apr 2021 20:27:39 GMT  
-		Size: 153.0 B  
+	-	`sha256:51efee06e0a650ff5f146fc54a695d4bf2b44e19da18120fdc494982d52cdd62`  
+		Last Modified: Wed, 14 Apr 2021 22:15:41 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2-alpine` - linux; s390x
 
 ```console
-$ docker pull caddy@sha256:9d992badb7530225182676af12ae945f5f2de2f5ad7d3946b397892a6de4c123
+$ docker pull caddy@sha256:68aaf625a22bff4e71edf895129baa2d562765c24ac81a5c68aff2995ebf89c2
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.1 MB (14145974 bytes)**  
+-	Total Size: **14.1 MB (14146947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b9c8a68869d0806c29e6c2c9c655d3e9085af285c6c24ea651ad3bdffd714e38`
+-	Image ID: `sha256:dbfd454f0dfa64ee1a952f9ed74a3f3bda3688a9565f062c3ea37e48b54eb210`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 17:15:04 GMT
-ADD file:1f37b92ea1f573c4810b1d056dc4880cf4035e143451d9b2b76fac1e3b462248 in / 
-# Wed, 31 Mar 2021 17:15:04 GMT
+# Wed, 14 Apr 2021 18:41:42 GMT
+ADD file:c73a5ff435939cdc9d621ee9dc2aa5a54a5f5e0241caae8dc948c03c423d9fef in / 
+# Wed, 14 Apr 2021 18:41:42 GMT
 CMD ["/bin/sh"]
-# Wed, 31 Mar 2021 18:55:58 GMT
+# Wed, 14 Apr 2021 20:07:21 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Wed, 31 Mar 2021 18:56:00 GMT
+# Wed, 14 Apr 2021 20:07:22 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Wed, 31 Mar 2021 18:56:00 GMT
+# Wed, 14 Apr 2021 20:07:22 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 31 Mar 2021 18:56:04 GMT
+# Wed, 14 Apr 2021 20:07:25 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:26 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:26 GMT
 ENV XDG_CONFIG_HOME=/config
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 ENV XDG_DATA_HOME=/data
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 VOLUME [/config]
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 VOLUME [/data]
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 EXPOSE 80
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 EXPOSE 443
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 EXPOSE 2019
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:30 GMT
 WORKDIR /srv
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:30 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:38ca5430c9af12b6b6dee7c10eb6b1eb0e4eb4f5f02a97890579c4b049d00233`  
-		Last Modified: Wed, 31 Mar 2021 17:15:46 GMT  
-		Size: 2.6 MB (2567453 bytes)  
+	-	`sha256:27efec644c4207cbc4d1400f84f3402937aab5ce72489976148896e42a219820`  
+		Last Modified: Wed, 14 Apr 2021 18:42:24 GMT  
+		Size: 2.6 MB (2568428 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe8eb19b6319d0b09121581759094c3eb58e5574e2063affb6c42c0e1a1937a0`  
-		Last Modified: Wed, 31 Mar 2021 18:57:00 GMT  
+	-	`sha256:5dab58470b754d248933aa56b48394e3ee4db4561d430d23ea378f0371ca59cb`  
+		Last Modified: Wed, 14 Apr 2021 20:08:16 GMT  
 		Size: 300.5 KB (300471 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbd6e269a873b8a21e2787b0ea05662c0f2676aa9043f52b8884081965be7112`  
-		Last Modified: Wed, 31 Mar 2021 18:57:00 GMT  
-		Size: 5.8 KB (5830 bytes)  
+	-	`sha256:fd514b608428ea44dae7dc67e641a276593e7715178d86d7702153521de849d7`  
+		Last Modified: Wed, 14 Apr 2021 20:08:16 GMT  
+		Size: 5.8 KB (5832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02f6a8a7e19cb11edbda771ce361181202915f4760cdaef5e290b1758cc7b88c`  
-		Last Modified: Wed, 31 Mar 2021 18:57:02 GMT  
-		Size: 11.3 MB (11272066 bytes)  
+	-	`sha256:a437814dab55b178c71f55598a70d0b532b3f645bdeb43e89244a6ebcde01446`  
+		Last Modified: Wed, 14 Apr 2021 20:08:18 GMT  
+		Size: 11.3 MB (11272061 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec92d2dcab4ee41e4e626d8b360a6feff3822db894894865a36bbe9cfc759df0`  
-		Last Modified: Wed, 31 Mar 2021 18:57:00 GMT  
-		Size: 154.0 B  
+	-	`sha256:412be9af105c69ee35fec76e8c0dbde8c8ba61c774b7d354e9c9fc8f538e8155`  
+		Last Modified: Wed, 14 Apr 2021 20:08:16 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2-builder`
 
 ```console
-$ docker pull caddy@sha256:24e707cb4e7f90c12ca1f5fb4c1df08134db8d1ede9b2bce4075f12176f270b2
+$ docker pull caddy@sha256:c17fff95c980a166938258ea9cc32f1fc40d9e6e566ac63b502ccac45262c38b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1428,8 +1428,8 @@ $ docker pull caddy@sha256:24e707cb4e7f90c12ca1f5fb4c1df08134db8d1ede9b2bce4075f
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
 	-	linux; s390x
-	-	windows version 10.0.17763.1817; amd64
-	-	windows version 10.0.14393.4283; amd64
+	-	windows version 10.0.17763.1879; amd64
+	-	windows version 10.0.14393.4350; amd64
 
 ### `caddy:2-builder` - linux; amd64
 
@@ -1947,58 +1947,58 @@ WORKDIR /usr/bin
 		Size: 405.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `caddy:2-builder` - windows version 10.0.17763.1817; amd64
+### `caddy:2-builder` - windows version 10.0.17763.1879; amd64
 
 ```console
-$ docker pull caddy@sha256:89576372020fc2eb4c0a7f3a3e1202a7b5833822dcac78836f6f48dc05cf1b15
+$ docker pull caddy@sha256:5d074fc96daecf65b6ea7aaaf9d2217f2c8f4e27a44e13800ee34ce2110620a1
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 GB (2636681347 bytes)**  
+-	Total Size: **2.6 GB (2636098719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:433619fcb10b7d636ff7d2ab6165f3648a45f1587bf0fc5a17c16bb0b4ea13f9`
+-	Image ID: `sha256:85e88c818aa8954ae57e277c9730cdfa1dceee6b1cc34304b32f23f94a4ee916`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 07 May 2020 05:09:25 GMT
 RUN Apply image 1809-RTM-amd64
-# Sat, 27 Feb 2021 09:32:06 GMT
+# Fri, 09 Apr 2021 20:34:41 GMT
 RUN Install update 1809-amd64
-# Wed, 10 Mar 2021 13:08:20 GMT
+# Wed, 14 Apr 2021 12:09:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 13:37:21 GMT
+# Wed, 14 Apr 2021 12:30:33 GMT
 ENV GIT_VERSION=2.23.0
-# Wed, 10 Mar 2021 13:37:22 GMT
+# Wed, 14 Apr 2021 12:30:35 GMT
 ENV GIT_TAG=v2.23.0.windows.1
-# Wed, 10 Mar 2021 13:37:23 GMT
+# Wed, 14 Apr 2021 12:30:36 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/MinGit-2.23.0-64-bit.zip
-# Wed, 10 Mar 2021 13:37:24 GMT
+# Wed, 14 Apr 2021 12:30:37 GMT
 ENV GIT_DOWNLOAD_SHA256=8f65208f92c0b4c3ae4c0cf02d4b5f6791d539cd1a07b2df62b7116467724735
-# Wed, 10 Mar 2021 13:38:55 GMT
+# Wed, 14 Apr 2021 12:31:55 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Wed, 10 Mar 2021 13:38:56 GMT
+# Wed, 14 Apr 2021 12:31:57 GMT
 ENV GOPATH=C:\gopath
-# Wed, 10 Mar 2021 13:39:22 GMT
+# Wed, 14 Apr 2021 12:32:38 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 02 Apr 2021 00:25:42 GMT
+# Wed, 14 Apr 2021 12:47:04 GMT
 ENV GOLANG_VERSION=1.15.11
-# Fri, 02 Apr 2021 00:28:23 GMT
+# Wed, 14 Apr 2021 12:50:03 GMT
 RUN $url = 'https://storage.googleapis.com/golang/go1.15.11.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '56f63de17cd739287de6d9f3cfdad3b781ad3e4a18aae20ece994ee97c1819fd'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 02 Apr 2021 00:28:25 GMT
+# Wed, 14 Apr 2021 12:50:05 GMT
 WORKDIR C:\gopath
-# Fri, 02 Apr 2021 01:03:34 GMT
+# Wed, 14 Apr 2021 20:10:39 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 02 Apr 2021 01:03:35 GMT
+# Wed, 14 Apr 2021 20:10:40 GMT
 ENV XCADDY_VERSION=v0.1.8
-# Fri, 02 Apr 2021 01:03:36 GMT
+# Wed, 14 Apr 2021 20:10:41 GMT
 ENV CADDY_VERSION=v2.3.0
-# Fri, 02 Apr 2021 01:03:38 GMT
+# Wed, 14 Apr 2021 20:10:42 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Fri, 02 Apr 2021 01:04:03 GMT
+# Wed, 14 Apr 2021 20:11:15 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.1.8/xcaddy_0.1.8_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('ccbc594da07adff41098959a78efaaee42fca4e5feb7806661d00841229b20ff1c47fed024c7a84e8554d3e8be3f162d3750e5e8347d6a230c496d4b133213e8')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Fri, 02 Apr 2021 01:04:05 GMT
+# Wed, 14 Apr 2021 20:11:16 GMT
 WORKDIR C:\
 ```
 
@@ -2006,130 +2006,130 @@ WORKDIR C:\
 	-	`sha256:4612f6d0b889cad0ed0292fae3a0b0c8a9e49aff6dea8eb049b2386d9b07986f`  
 		Size: 1.7 GB (1718332879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ff1512f88ecd4ff0a91ade34d43733c48834433e35f062f80e6e70d706f8d73`  
-		Size: 743.2 MB (743201590 bytes)  
+	-	`sha256:399f118dfaa9a753e98d128238b944432c7bcabea88a2998a6efbbece28ed303`  
+		Size: 751.4 MB (751421005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ebe61daec6d671bc2c1c6fe61ac9825fb552e9cef3672d0a7dbec719d125ae64`  
-		Last Modified: Wed, 10 Mar 2021 13:21:09 GMT  
-		Size: 1.4 KB (1430 bytes)  
+	-	`sha256:106dbf3373fce4f0ba5e00ad54824c597f2894605fa7d8ef446ad7ea3b97449f`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55f55c0bb3b38761f0aaeef923efdf23ab140f64a5549388e9aa125fe79780b0`  
-		Last Modified: Wed, 10 Mar 2021 14:02:53 GMT  
-		Size: 1.4 KB (1439 bytes)  
+	-	`sha256:ac56922ba0ee0ac19bcae98f5fb4b7427d31ef3c709f27cfb2c785fd13a611c4`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a312e589b5b4b52c93afc65c4053591faf5d602a159699e1d8fd7cb7257a1e19`  
-		Last Modified: Wed, 10 Mar 2021 14:02:53 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:0f1723430d5101a2d617d3dbf4bc2a121b3f4b4432105aa2941e1afab8f130b9`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
+		Size: 1.4 KB (1407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5a36351186e9a8092baf10dfbdfd28b7dce39bcb5b543246f650bf4ad9549d6`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
+	-	`sha256:ab2f4dc6e9a77d69a3d172368f4ae471b31c588d6201c2386e4ac62fd83faa16`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
+		Size: 1.4 KB (1434 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aaea47861a9221a4f1e5750db237c619796c612756a5e75e2cb443b1731ae8a8`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
+		Size: 1.4 KB (1410 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2b4be4ebd8eabefdb01f27dafad85e65289b95ca15591c14304c7792db99b54b`  
+		Last Modified: Wed, 14 Apr 2021 12:58:35 GMT  
+		Size: 30.2 MB (30155601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f6f66ae3738a83ea41b428b49261d4522d57df1617fbd1aa362d93f1e2802643`  
+		Last Modified: Wed, 14 Apr 2021 12:57:58 GMT  
+		Size: 1.4 KB (1442 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e2108b314c24064a0c250f72017cc64b3bf68915655327728a267c98985a5ff7`  
+		Last Modified: Wed, 14 Apr 2021 12:57:58 GMT  
+		Size: 324.6 KB (324649 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c28a6b8d8a4b8aea18e07888051dac03e88f4132fba08dca72e5795d9533dd3d`  
+		Last Modified: Wed, 14 Apr 2021 13:04:59 GMT  
+		Size: 1.3 KB (1300 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dc67fec1bfee8619d88a924c4f9b9f4a04d2a0a1d199406157bb073b9f48d588`  
+		Last Modified: Wed, 14 Apr 2021 13:07:33 GMT  
+		Size: 134.1 MB (134133939 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:09fe57ae793e79818d065737c8e995bb1b73296275794af222be695733711652`  
+		Last Modified: Wed, 14 Apr 2021 13:04:59 GMT  
+		Size: 1.6 KB (1562 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5134c3d8291dc3a52f7fad327cccf50377f2f362488fbcb8405addc74c0eedcf`  
+		Last Modified: Wed, 14 Apr 2021 20:25:05 GMT  
 		Size: 1.4 KB (1431 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85bf84abeceee0a3b5a380cf6aa46e231424d48c1781e88f7f96344fdd400753`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
-		Size: 1.4 KB (1425 bytes)  
+	-	`sha256:9d60772069c77cb2a80fec9f6e4d18084a4a919d4f776079dfee7903331331e7`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfcb0c1de08b3116c910ff0e9573389536913cddb0462da67f13cc24f09b479b`  
-		Last Modified: Wed, 10 Mar 2021 14:02:55 GMT  
-		Size: 34.5 MB (34540168 bytes)  
+	-	`sha256:4716fdd15cdffc3b1aa557c81d58c2d0c343f9bfbfb501325b4cdc3bfeb426d9`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:121ca5c84aae657554fc278543816ed7a73aa34867b296c486181ff025bde056`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
-		Size: 1.4 KB (1408 bytes)  
+	-	`sha256:4bc11d2d339a72dd92f86f4fcc8e6fc299da2b6b381147f41dbd8d789e0c944e`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e1fde90e4880470a95a23f5277f201512a5e7cad1fc6c1bf100e06df43201b0`  
-		Last Modified: Wed, 10 Mar 2021 14:02:44 GMT  
-		Size: 338.8 KB (338777 bytes)  
+	-	`sha256:2909c1d8e32571506ce36cda43c7b113b299e280d6d7dfffafe5cd6284595348`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.7 MB (1712288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddf005729e9b7c9f2912ff8e30bec3d383755302fe0b20e361d87ed43a703519`  
-		Last Modified: Fri, 02 Apr 2021 00:43:41 GMT  
-		Size: 1.4 KB (1409 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6be9af25c23d2108f315f14a45d27ecfe24ceb05852132cf721a61ee44495e1a`  
-		Last Modified: Fri, 02 Apr 2021 00:44:11 GMT  
-		Size: 138.5 MB (138534624 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1592b7415bb7c21ec31f9b97bed86b4b01c96621f385d9da5903fa7c320d4e47`  
-		Last Modified: Fri, 02 Apr 2021 00:43:41 GMT  
-		Size: 1.6 KB (1590 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aae6b99eb587e6a00f40f4c134c6b7d4b8d1bc9d9d17b14538d30b6c689e5bc2`  
-		Last Modified: Fri, 02 Apr 2021 01:09:29 GMT  
-		Size: 1.3 KB (1334 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f38d285524127fff971c8f6c086256b3907c8428d162347bcba0f3bcf6d64fa9`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.3 KB (1345 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de22f3dc30fb1b76d85e47461eb558cc38cd60ccd8d02c6d8bd9aea7cce3e909`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5063c8d06382902b304af0538c9114e087db04e693551e92d15ffd12dcca542`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.4 KB (1378 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:313a2e87390c3ef15da4fd9f3b978ef539bc6b5bf8d3e54d23f28e4acd386563`  
-		Last Modified: Fri, 02 Apr 2021 01:09:29 GMT  
-		Size: 1.7 MB (1715051 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a4ed62f1fbb34e8dfbbf3e11e5f7aa91c4e21c7ac1debbbf86e2561d6ecc5ea`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:a5e56de156a63d8492bf70144c9e28ae975db36a6a57c54e734c96e20fb8bb13`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1362 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `caddy:2-builder` - windows version 10.0.14393.4283; amd64
+### `caddy:2-builder` - windows version 10.0.14393.4350; amd64
 
 ```console
-$ docker pull caddy@sha256:017255652cc26ea2af428ecc3b6f2222ee64d88cfdf1c34e3522f048aa461ee9
+$ docker pull caddy@sha256:436f2a16a677c719d951ddd10a1f475e81cc61b0726c7a4d5f76bdea16e3d215
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 GB (5997836720 bytes)**  
+-	Total Size: **6.0 GB (5982128974 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08a9fde1e66982a65a46dea5c07548ac8afcd29b6f304afe23a8ea9bcdcf186f`
+-	Image ID: `sha256:3d1658b3cebc6cc5691856945858057a4e3925a991ead9db618b5058d55e445e`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sat, 19 Nov 2016 17:05:00 GMT
 RUN Apply image 1607-RTM-amd64
-# Wed, 03 Mar 2021 18:02:00 GMT
+# Wed, 07 Apr 2021 21:54:00 GMT
 RUN Install update ltsc2016-amd64
-# Wed, 10 Mar 2021 13:42:05 GMT
+# Wed, 14 Apr 2021 12:35:33 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 13:42:06 GMT
+# Wed, 14 Apr 2021 12:35:34 GMT
 ENV GIT_VERSION=2.23.0
-# Wed, 10 Mar 2021 13:42:07 GMT
+# Wed, 14 Apr 2021 12:35:35 GMT
 ENV GIT_TAG=v2.23.0.windows.1
-# Wed, 10 Mar 2021 13:42:08 GMT
+# Wed, 14 Apr 2021 12:35:36 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/MinGit-2.23.0-64-bit.zip
-# Wed, 10 Mar 2021 13:42:09 GMT
+# Wed, 14 Apr 2021 12:35:38 GMT
 ENV GIT_DOWNLOAD_SHA256=8f65208f92c0b4c3ae4c0cf02d4b5f6791d539cd1a07b2df62b7116467724735
-# Wed, 10 Mar 2021 13:44:31 GMT
+# Wed, 14 Apr 2021 12:38:01 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Wed, 10 Mar 2021 13:44:32 GMT
+# Wed, 14 Apr 2021 12:38:02 GMT
 ENV GOPATH=C:\gopath
-# Wed, 10 Mar 2021 13:45:47 GMT
+# Wed, 14 Apr 2021 12:39:34 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 02 Apr 2021 00:28:41 GMT
+# Wed, 14 Apr 2021 12:50:19 GMT
 ENV GOLANG_VERSION=1.15.11
-# Fri, 02 Apr 2021 00:32:35 GMT
+# Wed, 14 Apr 2021 12:54:08 GMT
 RUN $url = 'https://storage.googleapis.com/golang/go1.15.11.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '56f63de17cd739287de6d9f3cfdad3b781ad3e4a18aae20ece994ee97c1819fd'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 02 Apr 2021 00:32:37 GMT
+# Wed, 14 Apr 2021 12:54:10 GMT
 WORKDIR C:\gopath
-# Fri, 02 Apr 2021 01:04:13 GMT
+# Wed, 14 Apr 2021 20:11:23 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 02 Apr 2021 01:04:14 GMT
+# Wed, 14 Apr 2021 20:11:24 GMT
 ENV XCADDY_VERSION=v0.1.8
-# Fri, 02 Apr 2021 01:04:15 GMT
+# Wed, 14 Apr 2021 20:11:25 GMT
 ENV CADDY_VERSION=v2.3.0
-# Fri, 02 Apr 2021 01:04:16 GMT
+# Wed, 14 Apr 2021 20:11:26 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Fri, 02 Apr 2021 01:05:43 GMT
+# Wed, 14 Apr 2021 20:12:59 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.1.8/xcaddy_0.1.8_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('ccbc594da07adff41098959a78efaaee42fca4e5feb7806661d00841229b20ff1c47fed024c7a84e8554d3e8be3f162d3750e5e8347d6a230c496d4b133213e8')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Fri, 02 Apr 2021 01:05:45 GMT
+# Wed, 14 Apr 2021 20:13:01 GMT
 WORKDIR C:\
 ```
 
@@ -2138,76 +2138,76 @@ WORKDIR C:\
 		Last Modified: Tue, 18 Sep 2018 20:20:50 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:30bda99601c5cbd3b2118409f401852ea648e2319bd81518723e476b28d764c5`  
-		Size: 1.7 GB (1726924885 bytes)  
+	-	`sha256:00b4edb823e6a375d179a28cbfa682c2379d62179e1518485902d6e68b9a9d1e`  
+		Size: 1.7 GB (1724897968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:76680da9dc6db108ddf2e353c494b45e8486a6751619a13ed8fb3ad64b9a16e9`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bb52885e05952959b0fa7aaff23561fcf14d294aed336112b388c94e67709e4f`  
+		Last Modified: Wed, 14 Apr 2021 12:59:14 GMT  
+		Size: 1.4 KB (1406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea2092de86b10f822dfd3a0d8e8dc35924823393cf8301e6db8f8a0a2879fb18`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1306 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ac6e05dba1a284b10130ada4ed7581f5a1c5a90986038e31cc8213e215ca23`  
-		Last Modified: Wed, 10 Mar 2021 14:06:07 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a636ee1e87a6b10caeaef03b68f084d58b5c8412fe4b10ba5d851a6965917196`  
-		Last Modified: Wed, 10 Mar 2021 14:06:01 GMT  
-		Size: 1.3 KB (1322 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a9e03ef5102108f3595c37759ead10b0cfb624aa0f102dbae3b6abb18f03b56`  
-		Last Modified: Wed, 10 Mar 2021 14:06:01 GMT  
-		Size: 1.4 KB (1414 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:840634d0d343cc458ff1f028b165fab14415bf252ce2b7fdb726c41d035c64ff`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 35.3 MB (35273703 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b968b2b2cb37afe5893ed1aa040b1055605f41e8371fe42fca9c6e06bb96c2ed`  
-		Last Modified: Wed, 10 Mar 2021 14:05:55 GMT  
-		Size: 1.4 KB (1381 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b01350c0465bbc3ff96b788fef94740af9378a1cfe9f3c1fb50ffed30c8a7ad`  
-		Last Modified: Wed, 10 Mar 2021 14:05:59 GMT  
-		Size: 10.1 MB (10139029 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a055a610a3b2e63b54d561bc3512bd068b4443a7417486b9dc65a4ad292583c7`  
-		Last Modified: Fri, 02 Apr 2021 00:44:26 GMT  
+	-	`sha256:2c3360763b706a564d93471b21a342ebbda7e047567cf1cbee82dd592ad33e0c`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
 		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c202a262d335726e6d079774ca9e11f52da7326ee18860265595a97527a7b545`  
-		Last Modified: Fri, 02 Apr 2021 00:44:55 GMT  
-		Size: 144.0 MB (143966864 bytes)  
+	-	`sha256:c1a0f653700ac9b57cf3d694cc90107e3220fc678581d1e985219677733ce242`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
+		Size: 1.4 KB (1398 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:737da401effa5536406d2508db65af6f54d9be0a3c5f1347ae56dc5ad1b8c1a4`  
-		Last Modified: Fri, 02 Apr 2021 00:44:26 GMT  
-		Size: 1.6 KB (1579 bytes)  
+	-	`sha256:2a59d82702c225a2ca8cd2a5476122f55d8619eae959c9cb8323b68d70a2ed19`  
+		Last Modified: Wed, 14 Apr 2021 12:59:06 GMT  
+		Size: 1.4 KB (1395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c52d85af463d5a66468c058122750336a2d002544c19dbaff721875cb8c6c24`  
-		Last Modified: Fri, 02 Apr 2021 01:09:48 GMT  
-		Size: 1.3 KB (1309 bytes)  
+	-	`sha256:62435cd2b7652fc97ef3dc1a8968446f3f6e95f0ff1d6dcb176a3f0c2b14c2f8`  
+		Last Modified: Wed, 14 Apr 2021 12:59:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82f1bf71cbf1adab82ad5a9d8f5b71571306bf6bcf254b686963f2ed7562e7fc`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.3 KB (1315 bytes)  
+	-	`sha256:a6d78a3a3d6cb25f55dc9d9947f7449a14717e6b787e49571a837e72b79334cf`  
+		Last Modified: Wed, 14 Apr 2021 12:59:41 GMT  
+		Size: 30.8 MB (30752513 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba22c0fd4b07e8d5ff2ab18028eb3f4d87c20420e43a2afbf78c8da9032399b2`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:0b774a32e346c00e004abbbd7290530d0a3f3dfb11915be2b2fa73c402da6bdd`  
+		Last Modified: Wed, 14 Apr 2021 12:59:03 GMT  
+		Size: 1.4 KB (1409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:562b238ffe2f30d1bebcac0de5c7d019504926664c08f5730389c7c1e426c12a`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.4 KB (1394 bytes)  
+	-	`sha256:2d153061f2f0d8ef33f71c4b9afd90899e21556e320d7103a8a9fb544c1cb521`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
+		Size: 5.6 MB (5608025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f0b00fc7a9cc9546977571c1922da63009fc89865ee5ae6b603cdf38d5b56ad`  
-		Last Modified: Fri, 02 Apr 2021 01:09:47 GMT  
-		Size: 11.5 MB (11528518 bytes)  
+	-	`sha256:1388c10d71d4f1005ced63001aeb1392f019139011ddf961220ee27a412cbadb`  
+		Last Modified: Wed, 14 Apr 2021 13:07:44 GMT  
+		Size: 1.4 KB (1395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:606193453afd7f6b2c5d21cdd640e297c0e3b0514642cc7044ff5a83ef6e66c7`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.3 KB (1309 bytes)  
+	-	`sha256:913a59644a65d5f7183aa7bebce08c8b09d1f627c257105a7db7514919858b6e`  
+		Last Modified: Wed, 14 Apr 2021 13:08:21 GMT  
+		Size: 143.9 MB (143889855 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a71b095a33aa8cc59c703b0a8f3b0bb53508123d89c531d6369de947b72b26f5`  
+		Last Modified: Wed, 14 Apr 2021 13:07:46 GMT  
+		Size: 1.5 KB (1492 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:07c7a21f93788806d3510b3cc8f7692b086c096861b42c218993697d04a890de`  
+		Last Modified: Wed, 14 Apr 2021 20:25:25 GMT  
+		Size: 1.4 KB (1408 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:04fbdf3acf4f09ad44474940358b0b044863361fee2bb201478a8b4b40cced75`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.4 KB (1404 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:600e2fd01e09ce5bb623f7dbf3080c7127a8c2dc0b54422dee1525e75e6ae6de`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.4 KB (1434 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d594e3e36caa66775e5660018a80c02ef6bf4b16e626bdbca53a885634db4a29`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.4 KB (1428 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d06f5b24d29c79d20732eaf23dc495c89959ba869fbcb3bb88d35b42f38616a1`  
+		Last Modified: Wed, 14 Apr 2021 20:25:24 GMT  
+		Size: 7.0 MB (6976405 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c11b840b2827a9bb3da231a34e716b4fbd570dffa0b711f9fcbb7ff630c90052`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2-builder-alpine`
@@ -2744,65 +2744,65 @@ WORKDIR /usr/bin
 ## `caddy:2-builder-windowsservercore-1809`
 
 ```console
-$ docker pull caddy@sha256:0c67e10ec967bbb5febbb8307b0e4a234df003c616262fde938f75631cacd2e5
+$ docker pull caddy@sha256:0ee0dd2e13c7c2d8b1a3514be4c8a71a5da92f756386f549bdd51c0bd62700c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.17763.1817; amd64
+	-	windows version 10.0.17763.1879; amd64
 
-### `caddy:2-builder-windowsservercore-1809` - windows version 10.0.17763.1817; amd64
+### `caddy:2-builder-windowsservercore-1809` - windows version 10.0.17763.1879; amd64
 
 ```console
-$ docker pull caddy@sha256:89576372020fc2eb4c0a7f3a3e1202a7b5833822dcac78836f6f48dc05cf1b15
+$ docker pull caddy@sha256:5d074fc96daecf65b6ea7aaaf9d2217f2c8f4e27a44e13800ee34ce2110620a1
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 GB (2636681347 bytes)**  
+-	Total Size: **2.6 GB (2636098719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:433619fcb10b7d636ff7d2ab6165f3648a45f1587bf0fc5a17c16bb0b4ea13f9`
+-	Image ID: `sha256:85e88c818aa8954ae57e277c9730cdfa1dceee6b1cc34304b32f23f94a4ee916`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 07 May 2020 05:09:25 GMT
 RUN Apply image 1809-RTM-amd64
-# Sat, 27 Feb 2021 09:32:06 GMT
+# Fri, 09 Apr 2021 20:34:41 GMT
 RUN Install update 1809-amd64
-# Wed, 10 Mar 2021 13:08:20 GMT
+# Wed, 14 Apr 2021 12:09:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 13:37:21 GMT
+# Wed, 14 Apr 2021 12:30:33 GMT
 ENV GIT_VERSION=2.23.0
-# Wed, 10 Mar 2021 13:37:22 GMT
+# Wed, 14 Apr 2021 12:30:35 GMT
 ENV GIT_TAG=v2.23.0.windows.1
-# Wed, 10 Mar 2021 13:37:23 GMT
+# Wed, 14 Apr 2021 12:30:36 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/MinGit-2.23.0-64-bit.zip
-# Wed, 10 Mar 2021 13:37:24 GMT
+# Wed, 14 Apr 2021 12:30:37 GMT
 ENV GIT_DOWNLOAD_SHA256=8f65208f92c0b4c3ae4c0cf02d4b5f6791d539cd1a07b2df62b7116467724735
-# Wed, 10 Mar 2021 13:38:55 GMT
+# Wed, 14 Apr 2021 12:31:55 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Wed, 10 Mar 2021 13:38:56 GMT
+# Wed, 14 Apr 2021 12:31:57 GMT
 ENV GOPATH=C:\gopath
-# Wed, 10 Mar 2021 13:39:22 GMT
+# Wed, 14 Apr 2021 12:32:38 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 02 Apr 2021 00:25:42 GMT
+# Wed, 14 Apr 2021 12:47:04 GMT
 ENV GOLANG_VERSION=1.15.11
-# Fri, 02 Apr 2021 00:28:23 GMT
+# Wed, 14 Apr 2021 12:50:03 GMT
 RUN $url = 'https://storage.googleapis.com/golang/go1.15.11.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '56f63de17cd739287de6d9f3cfdad3b781ad3e4a18aae20ece994ee97c1819fd'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 02 Apr 2021 00:28:25 GMT
+# Wed, 14 Apr 2021 12:50:05 GMT
 WORKDIR C:\gopath
-# Fri, 02 Apr 2021 01:03:34 GMT
+# Wed, 14 Apr 2021 20:10:39 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 02 Apr 2021 01:03:35 GMT
+# Wed, 14 Apr 2021 20:10:40 GMT
 ENV XCADDY_VERSION=v0.1.8
-# Fri, 02 Apr 2021 01:03:36 GMT
+# Wed, 14 Apr 2021 20:10:41 GMT
 ENV CADDY_VERSION=v2.3.0
-# Fri, 02 Apr 2021 01:03:38 GMT
+# Wed, 14 Apr 2021 20:10:42 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Fri, 02 Apr 2021 01:04:03 GMT
+# Wed, 14 Apr 2021 20:11:15 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.1.8/xcaddy_0.1.8_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('ccbc594da07adff41098959a78efaaee42fca4e5feb7806661d00841229b20ff1c47fed024c7a84e8554d3e8be3f162d3750e5e8347d6a230c496d4b133213e8')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Fri, 02 Apr 2021 01:04:05 GMT
+# Wed, 14 Apr 2021 20:11:16 GMT
 WORKDIR C:\
 ```
 
@@ -2810,140 +2810,140 @@ WORKDIR C:\
 	-	`sha256:4612f6d0b889cad0ed0292fae3a0b0c8a9e49aff6dea8eb049b2386d9b07986f`  
 		Size: 1.7 GB (1718332879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ff1512f88ecd4ff0a91ade34d43733c48834433e35f062f80e6e70d706f8d73`  
-		Size: 743.2 MB (743201590 bytes)  
+	-	`sha256:399f118dfaa9a753e98d128238b944432c7bcabea88a2998a6efbbece28ed303`  
+		Size: 751.4 MB (751421005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ebe61daec6d671bc2c1c6fe61ac9825fb552e9cef3672d0a7dbec719d125ae64`  
-		Last Modified: Wed, 10 Mar 2021 13:21:09 GMT  
-		Size: 1.4 KB (1430 bytes)  
+	-	`sha256:106dbf3373fce4f0ba5e00ad54824c597f2894605fa7d8ef446ad7ea3b97449f`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55f55c0bb3b38761f0aaeef923efdf23ab140f64a5549388e9aa125fe79780b0`  
-		Last Modified: Wed, 10 Mar 2021 14:02:53 GMT  
-		Size: 1.4 KB (1439 bytes)  
+	-	`sha256:ac56922ba0ee0ac19bcae98f5fb4b7427d31ef3c709f27cfb2c785fd13a611c4`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a312e589b5b4b52c93afc65c4053591faf5d602a159699e1d8fd7cb7257a1e19`  
-		Last Modified: Wed, 10 Mar 2021 14:02:53 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:0f1723430d5101a2d617d3dbf4bc2a121b3f4b4432105aa2941e1afab8f130b9`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
+		Size: 1.4 KB (1407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5a36351186e9a8092baf10dfbdfd28b7dce39bcb5b543246f650bf4ad9549d6`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
+	-	`sha256:ab2f4dc6e9a77d69a3d172368f4ae471b31c588d6201c2386e4ac62fd83faa16`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
+		Size: 1.4 KB (1434 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aaea47861a9221a4f1e5750db237c619796c612756a5e75e2cb443b1731ae8a8`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
+		Size: 1.4 KB (1410 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2b4be4ebd8eabefdb01f27dafad85e65289b95ca15591c14304c7792db99b54b`  
+		Last Modified: Wed, 14 Apr 2021 12:58:35 GMT  
+		Size: 30.2 MB (30155601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f6f66ae3738a83ea41b428b49261d4522d57df1617fbd1aa362d93f1e2802643`  
+		Last Modified: Wed, 14 Apr 2021 12:57:58 GMT  
+		Size: 1.4 KB (1442 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e2108b314c24064a0c250f72017cc64b3bf68915655327728a267c98985a5ff7`  
+		Last Modified: Wed, 14 Apr 2021 12:57:58 GMT  
+		Size: 324.6 KB (324649 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c28a6b8d8a4b8aea18e07888051dac03e88f4132fba08dca72e5795d9533dd3d`  
+		Last Modified: Wed, 14 Apr 2021 13:04:59 GMT  
+		Size: 1.3 KB (1300 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dc67fec1bfee8619d88a924c4f9b9f4a04d2a0a1d199406157bb073b9f48d588`  
+		Last Modified: Wed, 14 Apr 2021 13:07:33 GMT  
+		Size: 134.1 MB (134133939 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:09fe57ae793e79818d065737c8e995bb1b73296275794af222be695733711652`  
+		Last Modified: Wed, 14 Apr 2021 13:04:59 GMT  
+		Size: 1.6 KB (1562 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5134c3d8291dc3a52f7fad327cccf50377f2f362488fbcb8405addc74c0eedcf`  
+		Last Modified: Wed, 14 Apr 2021 20:25:05 GMT  
 		Size: 1.4 KB (1431 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85bf84abeceee0a3b5a380cf6aa46e231424d48c1781e88f7f96344fdd400753`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
-		Size: 1.4 KB (1425 bytes)  
+	-	`sha256:9d60772069c77cb2a80fec9f6e4d18084a4a919d4f776079dfee7903331331e7`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfcb0c1de08b3116c910ff0e9573389536913cddb0462da67f13cc24f09b479b`  
-		Last Modified: Wed, 10 Mar 2021 14:02:55 GMT  
-		Size: 34.5 MB (34540168 bytes)  
+	-	`sha256:4716fdd15cdffc3b1aa557c81d58c2d0c343f9bfbfb501325b4cdc3bfeb426d9`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:121ca5c84aae657554fc278543816ed7a73aa34867b296c486181ff025bde056`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
-		Size: 1.4 KB (1408 bytes)  
+	-	`sha256:4bc11d2d339a72dd92f86f4fcc8e6fc299da2b6b381147f41dbd8d789e0c944e`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e1fde90e4880470a95a23f5277f201512a5e7cad1fc6c1bf100e06df43201b0`  
-		Last Modified: Wed, 10 Mar 2021 14:02:44 GMT  
-		Size: 338.8 KB (338777 bytes)  
+	-	`sha256:2909c1d8e32571506ce36cda43c7b113b299e280d6d7dfffafe5cd6284595348`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.7 MB (1712288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddf005729e9b7c9f2912ff8e30bec3d383755302fe0b20e361d87ed43a703519`  
-		Last Modified: Fri, 02 Apr 2021 00:43:41 GMT  
-		Size: 1.4 KB (1409 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6be9af25c23d2108f315f14a45d27ecfe24ceb05852132cf721a61ee44495e1a`  
-		Last Modified: Fri, 02 Apr 2021 00:44:11 GMT  
-		Size: 138.5 MB (138534624 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1592b7415bb7c21ec31f9b97bed86b4b01c96621f385d9da5903fa7c320d4e47`  
-		Last Modified: Fri, 02 Apr 2021 00:43:41 GMT  
-		Size: 1.6 KB (1590 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aae6b99eb587e6a00f40f4c134c6b7d4b8d1bc9d9d17b14538d30b6c689e5bc2`  
-		Last Modified: Fri, 02 Apr 2021 01:09:29 GMT  
-		Size: 1.3 KB (1334 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f38d285524127fff971c8f6c086256b3907c8428d162347bcba0f3bcf6d64fa9`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.3 KB (1345 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de22f3dc30fb1b76d85e47461eb558cc38cd60ccd8d02c6d8bd9aea7cce3e909`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5063c8d06382902b304af0538c9114e087db04e693551e92d15ffd12dcca542`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.4 KB (1378 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:313a2e87390c3ef15da4fd9f3b978ef539bc6b5bf8d3e54d23f28e4acd386563`  
-		Last Modified: Fri, 02 Apr 2021 01:09:29 GMT  
-		Size: 1.7 MB (1715051 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a4ed62f1fbb34e8dfbbf3e11e5f7aa91c4e21c7ac1debbbf86e2561d6ecc5ea`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:a5e56de156a63d8492bf70144c9e28ae975db36a6a57c54e734c96e20fb8bb13`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1362 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2-builder-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull caddy@sha256:707fee0b94dcb8bb07e1cc0f86e10c540509ee572b69240bc0556cfafa586cd6
+$ docker pull caddy@sha256:80d881fa828e30f1c7d44ae2d3bebe98ef9185d4e43e597ac5205ba32ad13c63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.4283; amd64
+	-	windows version 10.0.14393.4350; amd64
 
-### `caddy:2-builder-windowsservercore-ltsc2016` - windows version 10.0.14393.4283; amd64
+### `caddy:2-builder-windowsservercore-ltsc2016` - windows version 10.0.14393.4350; amd64
 
 ```console
-$ docker pull caddy@sha256:017255652cc26ea2af428ecc3b6f2222ee64d88cfdf1c34e3522f048aa461ee9
+$ docker pull caddy@sha256:436f2a16a677c719d951ddd10a1f475e81cc61b0726c7a4d5f76bdea16e3d215
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 GB (5997836720 bytes)**  
+-	Total Size: **6.0 GB (5982128974 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08a9fde1e66982a65a46dea5c07548ac8afcd29b6f304afe23a8ea9bcdcf186f`
+-	Image ID: `sha256:3d1658b3cebc6cc5691856945858057a4e3925a991ead9db618b5058d55e445e`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sat, 19 Nov 2016 17:05:00 GMT
 RUN Apply image 1607-RTM-amd64
-# Wed, 03 Mar 2021 18:02:00 GMT
+# Wed, 07 Apr 2021 21:54:00 GMT
 RUN Install update ltsc2016-amd64
-# Wed, 10 Mar 2021 13:42:05 GMT
+# Wed, 14 Apr 2021 12:35:33 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 13:42:06 GMT
+# Wed, 14 Apr 2021 12:35:34 GMT
 ENV GIT_VERSION=2.23.0
-# Wed, 10 Mar 2021 13:42:07 GMT
+# Wed, 14 Apr 2021 12:35:35 GMT
 ENV GIT_TAG=v2.23.0.windows.1
-# Wed, 10 Mar 2021 13:42:08 GMT
+# Wed, 14 Apr 2021 12:35:36 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/MinGit-2.23.0-64-bit.zip
-# Wed, 10 Mar 2021 13:42:09 GMT
+# Wed, 14 Apr 2021 12:35:38 GMT
 ENV GIT_DOWNLOAD_SHA256=8f65208f92c0b4c3ae4c0cf02d4b5f6791d539cd1a07b2df62b7116467724735
-# Wed, 10 Mar 2021 13:44:31 GMT
+# Wed, 14 Apr 2021 12:38:01 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Wed, 10 Mar 2021 13:44:32 GMT
+# Wed, 14 Apr 2021 12:38:02 GMT
 ENV GOPATH=C:\gopath
-# Wed, 10 Mar 2021 13:45:47 GMT
+# Wed, 14 Apr 2021 12:39:34 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 02 Apr 2021 00:28:41 GMT
+# Wed, 14 Apr 2021 12:50:19 GMT
 ENV GOLANG_VERSION=1.15.11
-# Fri, 02 Apr 2021 00:32:35 GMT
+# Wed, 14 Apr 2021 12:54:08 GMT
 RUN $url = 'https://storage.googleapis.com/golang/go1.15.11.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '56f63de17cd739287de6d9f3cfdad3b781ad3e4a18aae20ece994ee97c1819fd'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 02 Apr 2021 00:32:37 GMT
+# Wed, 14 Apr 2021 12:54:10 GMT
 WORKDIR C:\gopath
-# Fri, 02 Apr 2021 01:04:13 GMT
+# Wed, 14 Apr 2021 20:11:23 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 02 Apr 2021 01:04:14 GMT
+# Wed, 14 Apr 2021 20:11:24 GMT
 ENV XCADDY_VERSION=v0.1.8
-# Fri, 02 Apr 2021 01:04:15 GMT
+# Wed, 14 Apr 2021 20:11:25 GMT
 ENV CADDY_VERSION=v2.3.0
-# Fri, 02 Apr 2021 01:04:16 GMT
+# Wed, 14 Apr 2021 20:11:26 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Fri, 02 Apr 2021 01:05:43 GMT
+# Wed, 14 Apr 2021 20:12:59 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.1.8/xcaddy_0.1.8_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('ccbc594da07adff41098959a78efaaee42fca4e5feb7806661d00841229b20ff1c47fed024c7a84e8554d3e8be3f162d3750e5e8347d6a230c496d4b133213e8')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Fri, 02 Apr 2021 01:05:45 GMT
+# Wed, 14 Apr 2021 20:13:01 GMT
 WORKDIR C:\
 ```
 
@@ -2952,149 +2952,149 @@ WORKDIR C:\
 		Last Modified: Tue, 18 Sep 2018 20:20:50 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:30bda99601c5cbd3b2118409f401852ea648e2319bd81518723e476b28d764c5`  
-		Size: 1.7 GB (1726924885 bytes)  
+	-	`sha256:00b4edb823e6a375d179a28cbfa682c2379d62179e1518485902d6e68b9a9d1e`  
+		Size: 1.7 GB (1724897968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:76680da9dc6db108ddf2e353c494b45e8486a6751619a13ed8fb3ad64b9a16e9`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bb52885e05952959b0fa7aaff23561fcf14d294aed336112b388c94e67709e4f`  
+		Last Modified: Wed, 14 Apr 2021 12:59:14 GMT  
+		Size: 1.4 KB (1406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea2092de86b10f822dfd3a0d8e8dc35924823393cf8301e6db8f8a0a2879fb18`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1306 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ac6e05dba1a284b10130ada4ed7581f5a1c5a90986038e31cc8213e215ca23`  
-		Last Modified: Wed, 10 Mar 2021 14:06:07 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a636ee1e87a6b10caeaef03b68f084d58b5c8412fe4b10ba5d851a6965917196`  
-		Last Modified: Wed, 10 Mar 2021 14:06:01 GMT  
-		Size: 1.3 KB (1322 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a9e03ef5102108f3595c37759ead10b0cfb624aa0f102dbae3b6abb18f03b56`  
-		Last Modified: Wed, 10 Mar 2021 14:06:01 GMT  
-		Size: 1.4 KB (1414 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:840634d0d343cc458ff1f028b165fab14415bf252ce2b7fdb726c41d035c64ff`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 35.3 MB (35273703 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b968b2b2cb37afe5893ed1aa040b1055605f41e8371fe42fca9c6e06bb96c2ed`  
-		Last Modified: Wed, 10 Mar 2021 14:05:55 GMT  
-		Size: 1.4 KB (1381 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b01350c0465bbc3ff96b788fef94740af9378a1cfe9f3c1fb50ffed30c8a7ad`  
-		Last Modified: Wed, 10 Mar 2021 14:05:59 GMT  
-		Size: 10.1 MB (10139029 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a055a610a3b2e63b54d561bc3512bd068b4443a7417486b9dc65a4ad292583c7`  
-		Last Modified: Fri, 02 Apr 2021 00:44:26 GMT  
+	-	`sha256:2c3360763b706a564d93471b21a342ebbda7e047567cf1cbee82dd592ad33e0c`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
 		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c202a262d335726e6d079774ca9e11f52da7326ee18860265595a97527a7b545`  
-		Last Modified: Fri, 02 Apr 2021 00:44:55 GMT  
-		Size: 144.0 MB (143966864 bytes)  
+	-	`sha256:c1a0f653700ac9b57cf3d694cc90107e3220fc678581d1e985219677733ce242`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
+		Size: 1.4 KB (1398 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:737da401effa5536406d2508db65af6f54d9be0a3c5f1347ae56dc5ad1b8c1a4`  
-		Last Modified: Fri, 02 Apr 2021 00:44:26 GMT  
-		Size: 1.6 KB (1579 bytes)  
+	-	`sha256:2a59d82702c225a2ca8cd2a5476122f55d8619eae959c9cb8323b68d70a2ed19`  
+		Last Modified: Wed, 14 Apr 2021 12:59:06 GMT  
+		Size: 1.4 KB (1395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c52d85af463d5a66468c058122750336a2d002544c19dbaff721875cb8c6c24`  
-		Last Modified: Fri, 02 Apr 2021 01:09:48 GMT  
-		Size: 1.3 KB (1309 bytes)  
+	-	`sha256:62435cd2b7652fc97ef3dc1a8968446f3f6e95f0ff1d6dcb176a3f0c2b14c2f8`  
+		Last Modified: Wed, 14 Apr 2021 12:59:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82f1bf71cbf1adab82ad5a9d8f5b71571306bf6bcf254b686963f2ed7562e7fc`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.3 KB (1315 bytes)  
+	-	`sha256:a6d78a3a3d6cb25f55dc9d9947f7449a14717e6b787e49571a837e72b79334cf`  
+		Last Modified: Wed, 14 Apr 2021 12:59:41 GMT  
+		Size: 30.8 MB (30752513 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba22c0fd4b07e8d5ff2ab18028eb3f4d87c20420e43a2afbf78c8da9032399b2`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:0b774a32e346c00e004abbbd7290530d0a3f3dfb11915be2b2fa73c402da6bdd`  
+		Last Modified: Wed, 14 Apr 2021 12:59:03 GMT  
+		Size: 1.4 KB (1409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:562b238ffe2f30d1bebcac0de5c7d019504926664c08f5730389c7c1e426c12a`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.4 KB (1394 bytes)  
+	-	`sha256:2d153061f2f0d8ef33f71c4b9afd90899e21556e320d7103a8a9fb544c1cb521`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
+		Size: 5.6 MB (5608025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f0b00fc7a9cc9546977571c1922da63009fc89865ee5ae6b603cdf38d5b56ad`  
-		Last Modified: Fri, 02 Apr 2021 01:09:47 GMT  
-		Size: 11.5 MB (11528518 bytes)  
+	-	`sha256:1388c10d71d4f1005ced63001aeb1392f019139011ddf961220ee27a412cbadb`  
+		Last Modified: Wed, 14 Apr 2021 13:07:44 GMT  
+		Size: 1.4 KB (1395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:606193453afd7f6b2c5d21cdd640e297c0e3b0514642cc7044ff5a83ef6e66c7`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.3 KB (1309 bytes)  
+	-	`sha256:913a59644a65d5f7183aa7bebce08c8b09d1f627c257105a7db7514919858b6e`  
+		Last Modified: Wed, 14 Apr 2021 13:08:21 GMT  
+		Size: 143.9 MB (143889855 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a71b095a33aa8cc59c703b0a8f3b0bb53508123d89c531d6369de947b72b26f5`  
+		Last Modified: Wed, 14 Apr 2021 13:07:46 GMT  
+		Size: 1.5 KB (1492 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:07c7a21f93788806d3510b3cc8f7692b086c096861b42c218993697d04a890de`  
+		Last Modified: Wed, 14 Apr 2021 20:25:25 GMT  
+		Size: 1.4 KB (1408 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:04fbdf3acf4f09ad44474940358b0b044863361fee2bb201478a8b4b40cced75`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.4 KB (1404 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:600e2fd01e09ce5bb623f7dbf3080c7127a8c2dc0b54422dee1525e75e6ae6de`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.4 KB (1434 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d594e3e36caa66775e5660018a80c02ef6bf4b16e626bdbca53a885634db4a29`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.4 KB (1428 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d06f5b24d29c79d20732eaf23dc495c89959ba869fbcb3bb88d35b42f38616a1`  
+		Last Modified: Wed, 14 Apr 2021 20:25:24 GMT  
+		Size: 7.0 MB (6976405 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c11b840b2827a9bb3da231a34e716b4fbd570dffa0b711f9fcbb7ff630c90052`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2-windowsservercore`
 
 ```console
-$ docker pull caddy@sha256:0d7ec2ae02e36f8374b028af66afcca548c8995638a733f0ad2e7861e2775e7e
+$ docker pull caddy@sha256:6a199f80cee0da0b39f4deffc53efac536c60672f4d8d26887f8f8ec194da3b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.17763.1817; amd64
-	-	windows version 10.0.14393.4283; amd64
+	-	windows version 10.0.17763.1879; amd64
+	-	windows version 10.0.14393.4350; amd64
 
-### `caddy:2-windowsservercore` - windows version 10.0.17763.1817; amd64
+### `caddy:2-windowsservercore` - windows version 10.0.17763.1879; amd64
 
 ```console
-$ docker pull caddy@sha256:5203e8707456e06dfc8d03ba99cdfe84d4b3dc00be512770827ef5e692ec18e0
+$ docker pull caddy@sha256:fdb259b96e8413c959258115e3cc0ed6272cd362b32dcee80b7c5875b3cca213
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2487805125 bytes)**  
+-	Total Size: **2.5 GB (2487217133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f93dd36e27e04e9ac5d0bc9da46fbeebc4541b2a242f90a7bc7003d2bc636fe`
+-	Image ID: `sha256:db78127126d7dbe748dc638552655f6a86f11faa664f34ed256da804f77de223`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 07 May 2020 05:09:25 GMT
 RUN Apply image 1809-RTM-amd64
-# Sat, 27 Feb 2021 09:32:06 GMT
+# Fri, 09 Apr 2021 20:34:41 GMT
 RUN Install update 1809-amd64
-# Wed, 10 Mar 2021 13:08:20 GMT
+# Wed, 14 Apr 2021 12:09:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 21:27:31 GMT
+# Wed, 14 Apr 2021 20:04:03 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Wed, 10 Mar 2021 21:27:32 GMT
+# Wed, 14 Apr 2021 20:04:04 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 10 Mar 2021 21:28:05 GMT
+# Wed, 14 Apr 2021 20:04:43 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('afc504cb0a641729ba546c0cadea524a170dcca2a915473aaf032a7c666c7c56ac059752f34b5d50700a692647b9b395b530cd8299ac3650c729adce5daa1ba5')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Wed, 10 Mar 2021 21:28:06 GMT
+# Wed, 14 Apr 2021 20:04:45 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Wed, 10 Mar 2021 21:28:07 GMT
+# Wed, 14 Apr 2021 20:04:46 GMT
 ENV XDG_DATA_HOME=c:/data
-# Wed, 10 Mar 2021 21:28:08 GMT
+# Wed, 14 Apr 2021 20:04:47 GMT
 VOLUME [c:/config]
-# Wed, 10 Mar 2021 21:28:09 GMT
+# Wed, 14 Apr 2021 20:04:48 GMT
 VOLUME [c:/data]
-# Wed, 10 Mar 2021 21:28:11 GMT
+# Wed, 14 Apr 2021 20:04:49 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 10 Mar 2021 21:28:12 GMT
+# Wed, 14 Apr 2021 20:04:50 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 10 Mar 2021 21:28:13 GMT
+# Wed, 14 Apr 2021 20:04:51 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 10 Mar 2021 21:28:14 GMT
+# Wed, 14 Apr 2021 20:04:53 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 10 Mar 2021 21:28:15 GMT
+# Wed, 14 Apr 2021 20:04:54 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 10 Mar 2021 21:28:16 GMT
+# Wed, 14 Apr 2021 20:04:55 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 10 Mar 2021 21:28:17 GMT
+# Wed, 14 Apr 2021 20:04:56 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 10 Mar 2021 21:28:18 GMT
+# Wed, 14 Apr 2021 20:04:57 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 10 Mar 2021 21:28:19 GMT
+# Wed, 14 Apr 2021 20:04:58 GMT
 EXPOSE 80
-# Wed, 10 Mar 2021 21:28:20 GMT
+# Wed, 14 Apr 2021 20:05:00 GMT
 EXPOSE 443
-# Wed, 10 Mar 2021 21:28:21 GMT
+# Wed, 14 Apr 2021 20:05:01 GMT
 EXPOSE 2019
-# Wed, 10 Mar 2021 21:28:41 GMT
+# Wed, 14 Apr 2021 20:05:27 GMT
 RUN caddy version
-# Wed, 10 Mar 2021 21:28:42 GMT
+# Wed, 14 Apr 2021 20:05:28 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -3102,154 +3102,154 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 	-	`sha256:4612f6d0b889cad0ed0292fae3a0b0c8a9e49aff6dea8eb049b2386d9b07986f`  
 		Size: 1.7 GB (1718332879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ff1512f88ecd4ff0a91ade34d43733c48834433e35f062f80e6e70d706f8d73`  
-		Size: 743.2 MB (743201590 bytes)  
+	-	`sha256:399f118dfaa9a753e98d128238b944432c7bcabea88a2998a6efbbece28ed303`  
+		Size: 751.4 MB (751421005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ebe61daec6d671bc2c1c6fe61ac9825fb552e9cef3672d0a7dbec719d125ae64`  
-		Last Modified: Wed, 10 Mar 2021 13:21:09 GMT  
+	-	`sha256:106dbf3373fce4f0ba5e00ad54824c597f2894605fa7d8ef446ad7ea3b97449f`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1413 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a98036a79f108b7c08eb62f3ef539549a6fe005aced8f3fa4971a4e576e8c045`  
+		Last Modified: Wed, 14 Apr 2021 20:24:07 GMT  
+		Size: 5.1 MB (5081237 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9a1c0c34e473966a69a26492fc168338b6ee1afadedd4cfd3b84537129685128`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
 		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31a02199a38f7dde446e1c919797037b896dc0d954cc313cd49d1fd7ef7b309a`  
-		Last Modified: Wed, 10 Mar 2021 21:43:28 GMT  
-		Size: 9.5 MB (9466151 bytes)  
+	-	`sha256:88365dd5b6b4b0188ad00f31b1114067b79a05d3eeaecbcdf86385c18e1e2bff`  
+		Last Modified: Wed, 14 Apr 2021 20:24:16 GMT  
+		Size: 12.0 MB (12047588 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:928fadc2fce7089b23d0e2d915e1cf2211aec3ffdc88b5eb66c67f18f7fb2c6e`  
-		Last Modified: Wed, 10 Mar 2021 21:43:26 GMT  
-		Size: 1.4 KB (1433 bytes)  
+	-	`sha256:1d8761bc4a54d10c3f03507406d03f0161fece0b4f80913bc67f5218cf7acc0e`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
+		Size: 1.4 KB (1394 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd7bb988dcbf796f3839a524b32be07309d29f50ec4273ded91973b631e0ad00`  
-		Last Modified: Wed, 10 Mar 2021 21:43:45 GMT  
-		Size: 16.5 MB (16453921 bytes)  
+	-	`sha256:f23987f8593afe96ed2b00e5744c51d5678851dac567bde07c230d882b31db5b`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d621047471067d3c16923f7c3b79f8615ddbcc2f9a879832c456f67fe3cd1544`  
-		Last Modified: Wed, 10 Mar 2021 21:43:25 GMT  
-		Size: 1.4 KB (1438 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9f148a6aba7a2d10970470390d5229567735df01114acfbdad1c661bdc8dc22`  
-		Last Modified: Wed, 10 Mar 2021 21:43:24 GMT  
-		Size: 1.4 KB (1436 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc608f5d46fef14425bc80c9c7062532f20bec43d7073a8e17e8278f9c60cc7a`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1436 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cda8fe89940ce8986995aee365da1f58c22d0d3b8a050600e429ef1cdd8c5fc`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:403d8611297f60270051c62d4bb7d7dff6aeeb33dc0c5cecd06ae94080fd1802`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1401 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab2df9d9f268b91b0f5bd3e27ba3e1cd03694b62c48ad901fa7fc47ebd2956db`  
-		Last Modified: Wed, 10 Mar 2021 21:43:22 GMT  
-		Size: 1.4 KB (1416 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6eabd07d0fd9430b675ce97b3bd926812eb4e9f4c4cf0872d68b91be65dd9d9`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1403 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec389e155c01fcd9625c110db8b62baac443eb2bee04a5f631e7cecc534c0818`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca8fad2b33541d43c28d6113e51b250763c7ec33d8503df271481f615a1f99bc`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1372 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cf0c1f7ba714c558dd8ed7e0336f84c91c25a35766d2efa592b1f39b1e448d6`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea93772cd9ce84491fa183154e0972b941a4379f628a54f9213bf36c4311dbbb`  
-		Last Modified: Wed, 10 Mar 2021 21:43:20 GMT  
+	-	`sha256:27edd7d612a33644ef095d4bd52c800d8e8a1bd73a56ddbeba0a2cda230947a6`  
+		Last Modified: Wed, 14 Apr 2021 20:24:02 GMT  
 		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:842fa064b906d0bd7b584ea5f181fbca29305d9ad824eaed29bf341c1abbcea3`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 1.4 KB (1440 bytes)  
+	-	`sha256:81c5b86f636ca1020805b216bf4ea83e1aaa4e5da4145ec671280678483c8084`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:48b753cdd37ef6dce0fbecce933fdf1957f9d72cf512be44c11d32181611a433`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 1.4 KB (1434 bytes)  
+	-	`sha256:8f097631ca96d803dd63f72849f1b76728a05c89e8451675f669fc655ae07600`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0205b004a4016df290e2fd8b362003adad13b56a6fbc17c35209de56b2bac034`  
-		Last Modified: Wed, 10 Mar 2021 21:43:16 GMT  
+	-	`sha256:6ace7f5f948c892db540a9734d885fb0695faf8cc55e9fa2df27c4aff76e485d`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1424 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:57476c73327d061921cee32adad6344e762c80c1142357a6de89819e8577d3e6`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1393 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8aaad63b2ff3aa00f636a1f988a02040c9832ae1a184093cef2471115a787a8f`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1407 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b1aef5aebcec7bd144ab11a819f8406f07a0dcfaf11684f464b56f5835633fb4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1413 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e7cd29f97bbc5cd627a79fc205fd6f63257d27e45e45264ec1e1c3ab94b319e4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c8aeafc40e34b5ef3464715c082ddb0910edbd9a59ac2d4d9d6586a0022271b4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4fe3fa5d1767b62495151be377ed814c0ce5766f1cb875b724b922d378249bb8`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b89f7d63263e3b381a5386cd4b13b21226da398d0c8d2bf59f111efb466b9959`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1436 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aab5798a12c9581184fa73f7b74913b0cf6c4ae638f2886f07d70a9f32181d9a`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1406 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bf434bfce197fbac09ffe0409a20f2a1ba646801b7dac739c6cea7bed0ce2fad`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1420 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ec0defeab0b694a738dc4b945c883e44f4118a4127f00e4cea32ab589fb194dc`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 308.9 KB (308863 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:51d70335c993ba29c3325465e90a310fce3b41a934bc25ec1bc5220fd3424bfe`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
 		Size: 1.4 KB (1425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e5f63eec622fd92f0ce90d6e06bd12c2687cbdf86aae3cdbbb8d3fdc92ef028`  
-		Last Modified: Wed, 10 Mar 2021 21:43:19 GMT  
-		Size: 1.4 KB (1369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:446a62c8913c6a60f39e8053d6ad0d6dfaf69ec7d8cf3fcc2665386e362238d6`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 325.1 KB (325114 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43fc4417c46cd53b142f42f58ded86ccf383c9f9b6e5f97d8a8183abbd1bd7aa`  
-		Last Modified: Wed, 10 Mar 2021 21:43:17 GMT  
-		Size: 1.4 KB (1383 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `caddy:2-windowsservercore` - windows version 10.0.14393.4283; amd64
+### `caddy:2-windowsservercore` - windows version 10.0.14393.4350; amd64
 
 ```console
-$ docker pull caddy@sha256:e9416497e1d43fd04e244f89af4e210714a28b676cf1e2279487484087b8ee39
+$ docker pull caddy@sha256:0a27a5dee7d386c823f3ad85b0ad3c7c6ebb739e7d7ad1cbc37662a3e955dfbc
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 GB (5829241236 bytes)**  
+-	Total Size: **5.8 GB (5818160037 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b987ba0d14c06619541f1cb51215c36133a17cfbfea49a9bc79b021564ab785`
+-	Image ID: `sha256:c5d01f580a5360a74b845ce6ffbd196e0930731b656954f6dafd810f4b69ae72`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sat, 19 Nov 2016 17:05:00 GMT
 RUN Apply image 1607-RTM-amd64
-# Wed, 03 Mar 2021 18:02:00 GMT
+# Wed, 07 Apr 2021 21:54:00 GMT
 RUN Install update ltsc2016-amd64
-# Wed, 10 Mar 2021 13:42:05 GMT
+# Wed, 14 Apr 2021 12:35:33 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 21:30:30 GMT
+# Wed, 14 Apr 2021 20:07:14 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Wed, 10 Mar 2021 21:30:31 GMT
+# Wed, 14 Apr 2021 20:07:15 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 10 Mar 2021 21:32:11 GMT
+# Wed, 14 Apr 2021 20:09:01 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('afc504cb0a641729ba546c0cadea524a170dcca2a915473aaf032a7c666c7c56ac059752f34b5d50700a692647b9b395b530cd8299ac3650c729adce5daa1ba5')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Wed, 10 Mar 2021 21:32:12 GMT
+# Wed, 14 Apr 2021 20:09:02 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Wed, 10 Mar 2021 21:32:13 GMT
+# Wed, 14 Apr 2021 20:09:04 GMT
 ENV XDG_DATA_HOME=c:/data
-# Wed, 10 Mar 2021 21:32:14 GMT
+# Wed, 14 Apr 2021 20:09:05 GMT
 VOLUME [c:/config]
-# Wed, 10 Mar 2021 21:32:15 GMT
+# Wed, 14 Apr 2021 20:09:06 GMT
 VOLUME [c:/data]
-# Wed, 10 Mar 2021 21:32:16 GMT
+# Wed, 14 Apr 2021 20:09:07 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 10 Mar 2021 21:32:18 GMT
+# Wed, 14 Apr 2021 20:09:08 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 10 Mar 2021 21:32:19 GMT
+# Wed, 14 Apr 2021 20:09:09 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 10 Mar 2021 21:32:20 GMT
+# Wed, 14 Apr 2021 20:09:10 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 10 Mar 2021 21:32:21 GMT
+# Wed, 14 Apr 2021 20:09:11 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 10 Mar 2021 21:32:23 GMT
+# Wed, 14 Apr 2021 20:09:12 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 10 Mar 2021 21:32:24 GMT
+# Wed, 14 Apr 2021 20:09:14 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 10 Mar 2021 21:32:25 GMT
+# Wed, 14 Apr 2021 20:09:15 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 10 Mar 2021 21:32:26 GMT
+# Wed, 14 Apr 2021 20:09:16 GMT
 EXPOSE 80
-# Wed, 10 Mar 2021 21:32:27 GMT
+# Wed, 14 Apr 2021 20:09:17 GMT
 EXPOSE 443
-# Wed, 10 Mar 2021 21:32:28 GMT
+# Wed, 14 Apr 2021 20:09:18 GMT
 EXPOSE 2019
-# Wed, 10 Mar 2021 21:33:17 GMT
+# Wed, 14 Apr 2021 20:10:29 GMT
 RUN caddy version
-# Wed, 10 Mar 2021 21:33:18 GMT
+# Wed, 14 Apr 2021 20:10:30 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -3258,164 +3258,164 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Last Modified: Tue, 18 Sep 2018 20:20:50 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:30bda99601c5cbd3b2118409f401852ea648e2319bd81518723e476b28d764c5`  
-		Size: 1.7 GB (1726924885 bytes)  
+	-	`sha256:00b4edb823e6a375d179a28cbfa682c2379d62179e1518485902d6e68b9a9d1e`  
+		Size: 1.7 GB (1724897968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:76680da9dc6db108ddf2e353c494b45e8486a6751619a13ed8fb3ad64b9a16e9`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bb52885e05952959b0fa7aaff23561fcf14d294aed336112b388c94e67709e4f`  
+		Last Modified: Wed, 14 Apr 2021 12:59:14 GMT  
+		Size: 1.4 KB (1406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0c9e18c1004b748968faecba6f9d1b5e6233e7e0b82b1c1259cf945eb3334e6`  
-		Last Modified: Wed, 10 Mar 2021 21:44:17 GMT  
-		Size: 10.2 MB (10181612 bytes)  
+	-	`sha256:398ea9969fcb8e31829ad2a30ccb77a30f56d17d992051bf6a04b0bd4ebb24a7`  
+		Last Modified: Wed, 14 Apr 2021 20:24:45 GMT  
+		Size: 5.7 MB (5661064 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08f9c532d82c90ea9fc2e2c6a591988abfb79e551caabead3fe56f8ba69c31f6`  
-		Last Modified: Wed, 10 Mar 2021 21:44:12 GMT  
-		Size: 1.4 KB (1404 bytes)  
+	-	`sha256:1d2d2fcf25a0097bf75ef1b7b207a765b3c93bce2eb96e7ebf2ce894a0ca0bf1`  
+		Last Modified: Wed, 14 Apr 2021 20:24:43 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5695a08e71ba7869b2e8b11e6f3f228a8a6d303878131e1f3abdc655757b5f2`  
-		Last Modified: Wed, 10 Mar 2021 21:44:19 GMT  
-		Size: 21.9 MB (21867123 bytes)  
+	-	`sha256:6f1814c5a2050da8e869a225b62ac936693d7904fed473ed6d703acd42542916`  
+		Last Modified: Wed, 14 Apr 2021 20:24:46 GMT  
+		Size: 17.3 MB (17333583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fabb7c4e3c2c8cdeef81bd8a6fcaed6b082e5ea4120a15ae4e277258c03de007`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1372 bytes)  
+	-	`sha256:93803b6c6c1e5befb69d029873c92020261e4faf5f97fa1ebe4474f2fcd761da`  
+		Last Modified: Wed, 14 Apr 2021 20:24:39 GMT  
+		Size: 1.4 KB (1403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82ec41ded5794a348cd9c06286dcbe7ca964197008812567791bc45b22bc4dd1`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1427 bytes)  
+	-	`sha256:5bef042a1c15ba4cca6086f36ad82e03f037ebae2ec5218dc528ce8afa0cbbe7`  
+		Last Modified: Wed, 14 Apr 2021 20:24:39 GMT  
+		Size: 1.4 KB (1409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d20ab0530e5214beccbf36a30fe1618f9752274c51a313bb71e9b9b130870164`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc0a7b2c54a3fa027e26d52abd2013c77fc0e69bf93446d70990dc40a6e00d98`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1366 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e0051bde2db70124d244a1337ccc824629e18f2be3b800ec577a7794ff1f7f3`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:271b14baf3d87c6aa3bd2da952290cec023b40b90b62688c79fa26d9253770ac`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1391 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bc9b324fb71cb6bdc3dfd42355efbd64634f7d2ec678a5a15757e69145f671d`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
+	-	`sha256:0c22fd29bd95221222824495015750f062fcf337845032c4d11be1c8166d9911`  
+		Last Modified: Wed, 14 Apr 2021 20:24:37 GMT  
 		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69d93b07db92b46680fe5ba78d29058e6f5b2ce49ba20cb10aeccb751b37d497`  
-		Last Modified: Wed, 10 Mar 2021 21:44:08 GMT  
-		Size: 1.4 KB (1433 bytes)  
+	-	`sha256:e034d998c8e3152093c8f2c30b0ac9122c528b8ba0889cadf3a3282059a8f96c`  
+		Last Modified: Wed, 14 Apr 2021 20:24:37 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bb6dc81911c7b01e751b8d5a08f7cf494f5542f166b2e1471a08ef82b4ebcb4`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1410 bytes)  
+	-	`sha256:80cd579cdba6539c678c1cfd7184427e5b0777e34c965e8c6ca62f8301dd629f`  
+		Last Modified: Wed, 14 Apr 2021 20:24:36 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a53bfaf85823badcda6fa4470993f24b9772597b13989ee71ec0b5686be93cbc`  
-		Last Modified: Wed, 10 Mar 2021 21:44:07 GMT  
-		Size: 1.4 KB (1410 bytes)  
+	-	`sha256:1ea0c59c3768ba8d3f4943669c834e3b8043899a0ee61ed325fa453559243f95`  
+		Last Modified: Wed, 14 Apr 2021 20:24:36 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5077aa28e94279b15dbe048f37904704877b5b4a932e67a3a12adf8bdfe9ada`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1436 bytes)  
+	-	`sha256:bc5f4c914fc136d87d2e00167556104cf17827c516e84c53785225cfeb214a42`  
+		Last Modified: Wed, 14 Apr 2021 20:24:40 GMT  
+		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5851fcb607a8afd06548b48e611020418ed88f0c0e1abcba7854089c8bf9729e`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1395 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:498aa4d3ee4135d0aaeccdf4fe0d8ec98c3ba95a92fd0b56dc73a461be700516`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1418 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0651b67304c2388b503cbd386e0235ec00a5a8437a9d115ba871152ae9d07103`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
+	-	`sha256:164712f851736c62b6da95357e6056173e390402e1a17b2f7559af8f42ce0134`  
+		Last Modified: Wed, 14 Apr 2021 20:24:35 GMT  
 		Size: 1.4 KB (1408 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1418b36ca2fc9603d0a6a28d6f4849cdfd80c3069ea494baeba2ce37e66b73d4`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1390 bytes)  
+	-	`sha256:5d73f78d7b9ccdb5963233ef77dab1188e2678cc7c9136ff183494cd28f893f0`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a50dd910f71fe0ceefc794aaee3e6669cd578ae8286348a76c60dc926778da33`  
-		Last Modified: Wed, 10 Mar 2021 21:44:04 GMT  
-		Size: 256.4 KB (256438 bytes)  
+	-	`sha256:b455a43ac6d0be6faf8dce0c59c609cc832963d9cc649b301f49ff79f218e439`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43a39a5ecfed250f608279f4544ced05934bd84e326d05f119a12081aa38b39f`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1397 bytes)  
+	-	`sha256:916f00b0ac9199b716d513a33d44003af6cd00e4b9b7a2feab64b84649d80640`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1431 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7ece2a763e6182c580aadb07399f77037c831dd03ee9cdad4f70b18759458094`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac88310e829bdb746ec804044c2a238dc2c6f64660688285a64205a255283c47`  
+		Last Modified: Wed, 14 Apr 2021 20:24:32 GMT  
+		Size: 1.4 KB (1404 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ed384ae90a546f9aad4b539596228057299114b9662407a708465a0ed7de3691`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1411 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9de7a040e97ee693dc826cc6130e42fe7597fbf48fe035d0e5f9f039166edae5`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e4c1c4ddd499c8a111514a0d3bc3b97381c76a6b33d1cb3f74752d42ddc3e43c`  
+		Last Modified: Wed, 14 Apr 2021 20:24:32 GMT  
+		Size: 255.9 KB (255932 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:96251eba56a444a75ccc3480986386b2d2abcce41beadf2f267bedaee332c54a`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2-windowsservercore-1809`
 
 ```console
-$ docker pull caddy@sha256:dfa33ff752c331d4b76bfe3817fd42ef3ef0bc24d9167cdfdd39f137054ea298
+$ docker pull caddy@sha256:89f75ffc06d5f7a7cc6d37f38c9198d869993fa7426542d14c1a8bfdbb467694
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.17763.1817; amd64
+	-	windows version 10.0.17763.1879; amd64
 
-### `caddy:2-windowsservercore-1809` - windows version 10.0.17763.1817; amd64
+### `caddy:2-windowsservercore-1809` - windows version 10.0.17763.1879; amd64
 
 ```console
-$ docker pull caddy@sha256:5203e8707456e06dfc8d03ba99cdfe84d4b3dc00be512770827ef5e692ec18e0
+$ docker pull caddy@sha256:fdb259b96e8413c959258115e3cc0ed6272cd362b32dcee80b7c5875b3cca213
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2487805125 bytes)**  
+-	Total Size: **2.5 GB (2487217133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f93dd36e27e04e9ac5d0bc9da46fbeebc4541b2a242f90a7bc7003d2bc636fe`
+-	Image ID: `sha256:db78127126d7dbe748dc638552655f6a86f11faa664f34ed256da804f77de223`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 07 May 2020 05:09:25 GMT
 RUN Apply image 1809-RTM-amd64
-# Sat, 27 Feb 2021 09:32:06 GMT
+# Fri, 09 Apr 2021 20:34:41 GMT
 RUN Install update 1809-amd64
-# Wed, 10 Mar 2021 13:08:20 GMT
+# Wed, 14 Apr 2021 12:09:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 21:27:31 GMT
+# Wed, 14 Apr 2021 20:04:03 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Wed, 10 Mar 2021 21:27:32 GMT
+# Wed, 14 Apr 2021 20:04:04 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 10 Mar 2021 21:28:05 GMT
+# Wed, 14 Apr 2021 20:04:43 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('afc504cb0a641729ba546c0cadea524a170dcca2a915473aaf032a7c666c7c56ac059752f34b5d50700a692647b9b395b530cd8299ac3650c729adce5daa1ba5')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Wed, 10 Mar 2021 21:28:06 GMT
+# Wed, 14 Apr 2021 20:04:45 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Wed, 10 Mar 2021 21:28:07 GMT
+# Wed, 14 Apr 2021 20:04:46 GMT
 ENV XDG_DATA_HOME=c:/data
-# Wed, 10 Mar 2021 21:28:08 GMT
+# Wed, 14 Apr 2021 20:04:47 GMT
 VOLUME [c:/config]
-# Wed, 10 Mar 2021 21:28:09 GMT
+# Wed, 14 Apr 2021 20:04:48 GMT
 VOLUME [c:/data]
-# Wed, 10 Mar 2021 21:28:11 GMT
+# Wed, 14 Apr 2021 20:04:49 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 10 Mar 2021 21:28:12 GMT
+# Wed, 14 Apr 2021 20:04:50 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 10 Mar 2021 21:28:13 GMT
+# Wed, 14 Apr 2021 20:04:51 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 10 Mar 2021 21:28:14 GMT
+# Wed, 14 Apr 2021 20:04:53 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 10 Mar 2021 21:28:15 GMT
+# Wed, 14 Apr 2021 20:04:54 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 10 Mar 2021 21:28:16 GMT
+# Wed, 14 Apr 2021 20:04:55 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 10 Mar 2021 21:28:17 GMT
+# Wed, 14 Apr 2021 20:04:56 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 10 Mar 2021 21:28:18 GMT
+# Wed, 14 Apr 2021 20:04:57 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 10 Mar 2021 21:28:19 GMT
+# Wed, 14 Apr 2021 20:04:58 GMT
 EXPOSE 80
-# Wed, 10 Mar 2021 21:28:20 GMT
+# Wed, 14 Apr 2021 20:05:00 GMT
 EXPOSE 443
-# Wed, 10 Mar 2021 21:28:21 GMT
+# Wed, 14 Apr 2021 20:05:01 GMT
 EXPOSE 2019
-# Wed, 10 Mar 2021 21:28:41 GMT
+# Wed, 14 Apr 2021 20:05:27 GMT
 RUN caddy version
-# Wed, 10 Mar 2021 21:28:42 GMT
+# Wed, 14 Apr 2021 20:05:28 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -3423,164 +3423,164 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 	-	`sha256:4612f6d0b889cad0ed0292fae3a0b0c8a9e49aff6dea8eb049b2386d9b07986f`  
 		Size: 1.7 GB (1718332879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ff1512f88ecd4ff0a91ade34d43733c48834433e35f062f80e6e70d706f8d73`  
-		Size: 743.2 MB (743201590 bytes)  
+	-	`sha256:399f118dfaa9a753e98d128238b944432c7bcabea88a2998a6efbbece28ed303`  
+		Size: 751.4 MB (751421005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ebe61daec6d671bc2c1c6fe61ac9825fb552e9cef3672d0a7dbec719d125ae64`  
-		Last Modified: Wed, 10 Mar 2021 13:21:09 GMT  
+	-	`sha256:106dbf3373fce4f0ba5e00ad54824c597f2894605fa7d8ef446ad7ea3b97449f`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1413 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a98036a79f108b7c08eb62f3ef539549a6fe005aced8f3fa4971a4e576e8c045`  
+		Last Modified: Wed, 14 Apr 2021 20:24:07 GMT  
+		Size: 5.1 MB (5081237 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9a1c0c34e473966a69a26492fc168338b6ee1afadedd4cfd3b84537129685128`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
 		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31a02199a38f7dde446e1c919797037b896dc0d954cc313cd49d1fd7ef7b309a`  
-		Last Modified: Wed, 10 Mar 2021 21:43:28 GMT  
-		Size: 9.5 MB (9466151 bytes)  
+	-	`sha256:88365dd5b6b4b0188ad00f31b1114067b79a05d3eeaecbcdf86385c18e1e2bff`  
+		Last Modified: Wed, 14 Apr 2021 20:24:16 GMT  
+		Size: 12.0 MB (12047588 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:928fadc2fce7089b23d0e2d915e1cf2211aec3ffdc88b5eb66c67f18f7fb2c6e`  
-		Last Modified: Wed, 10 Mar 2021 21:43:26 GMT  
-		Size: 1.4 KB (1433 bytes)  
+	-	`sha256:1d8761bc4a54d10c3f03507406d03f0161fece0b4f80913bc67f5218cf7acc0e`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
+		Size: 1.4 KB (1394 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd7bb988dcbf796f3839a524b32be07309d29f50ec4273ded91973b631e0ad00`  
-		Last Modified: Wed, 10 Mar 2021 21:43:45 GMT  
-		Size: 16.5 MB (16453921 bytes)  
+	-	`sha256:f23987f8593afe96ed2b00e5744c51d5678851dac567bde07c230d882b31db5b`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d621047471067d3c16923f7c3b79f8615ddbcc2f9a879832c456f67fe3cd1544`  
-		Last Modified: Wed, 10 Mar 2021 21:43:25 GMT  
-		Size: 1.4 KB (1438 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9f148a6aba7a2d10970470390d5229567735df01114acfbdad1c661bdc8dc22`  
-		Last Modified: Wed, 10 Mar 2021 21:43:24 GMT  
-		Size: 1.4 KB (1436 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc608f5d46fef14425bc80c9c7062532f20bec43d7073a8e17e8278f9c60cc7a`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1436 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cda8fe89940ce8986995aee365da1f58c22d0d3b8a050600e429ef1cdd8c5fc`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:403d8611297f60270051c62d4bb7d7dff6aeeb33dc0c5cecd06ae94080fd1802`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1401 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab2df9d9f268b91b0f5bd3e27ba3e1cd03694b62c48ad901fa7fc47ebd2956db`  
-		Last Modified: Wed, 10 Mar 2021 21:43:22 GMT  
-		Size: 1.4 KB (1416 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6eabd07d0fd9430b675ce97b3bd926812eb4e9f4c4cf0872d68b91be65dd9d9`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1403 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec389e155c01fcd9625c110db8b62baac443eb2bee04a5f631e7cecc534c0818`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca8fad2b33541d43c28d6113e51b250763c7ec33d8503df271481f615a1f99bc`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1372 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cf0c1f7ba714c558dd8ed7e0336f84c91c25a35766d2efa592b1f39b1e448d6`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea93772cd9ce84491fa183154e0972b941a4379f628a54f9213bf36c4311dbbb`  
-		Last Modified: Wed, 10 Mar 2021 21:43:20 GMT  
+	-	`sha256:27edd7d612a33644ef095d4bd52c800d8e8a1bd73a56ddbeba0a2cda230947a6`  
+		Last Modified: Wed, 14 Apr 2021 20:24:02 GMT  
 		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:842fa064b906d0bd7b584ea5f181fbca29305d9ad824eaed29bf341c1abbcea3`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 1.4 KB (1440 bytes)  
+	-	`sha256:81c5b86f636ca1020805b216bf4ea83e1aaa4e5da4145ec671280678483c8084`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:48b753cdd37ef6dce0fbecce933fdf1957f9d72cf512be44c11d32181611a433`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 1.4 KB (1434 bytes)  
+	-	`sha256:8f097631ca96d803dd63f72849f1b76728a05c89e8451675f669fc655ae07600`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0205b004a4016df290e2fd8b362003adad13b56a6fbc17c35209de56b2bac034`  
-		Last Modified: Wed, 10 Mar 2021 21:43:16 GMT  
+	-	`sha256:6ace7f5f948c892db540a9734d885fb0695faf8cc55e9fa2df27c4aff76e485d`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1424 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:57476c73327d061921cee32adad6344e762c80c1142357a6de89819e8577d3e6`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1393 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8aaad63b2ff3aa00f636a1f988a02040c9832ae1a184093cef2471115a787a8f`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1407 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b1aef5aebcec7bd144ab11a819f8406f07a0dcfaf11684f464b56f5835633fb4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1413 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e7cd29f97bbc5cd627a79fc205fd6f63257d27e45e45264ec1e1c3ab94b319e4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c8aeafc40e34b5ef3464715c082ddb0910edbd9a59ac2d4d9d6586a0022271b4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4fe3fa5d1767b62495151be377ed814c0ce5766f1cb875b724b922d378249bb8`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b89f7d63263e3b381a5386cd4b13b21226da398d0c8d2bf59f111efb466b9959`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1436 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aab5798a12c9581184fa73f7b74913b0cf6c4ae638f2886f07d70a9f32181d9a`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1406 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bf434bfce197fbac09ffe0409a20f2a1ba646801b7dac739c6cea7bed0ce2fad`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1420 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ec0defeab0b694a738dc4b945c883e44f4118a4127f00e4cea32ab589fb194dc`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 308.9 KB (308863 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:51d70335c993ba29c3325465e90a310fce3b41a934bc25ec1bc5220fd3424bfe`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
 		Size: 1.4 KB (1425 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e5f63eec622fd92f0ce90d6e06bd12c2687cbdf86aae3cdbbb8d3fdc92ef028`  
-		Last Modified: Wed, 10 Mar 2021 21:43:19 GMT  
-		Size: 1.4 KB (1369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:446a62c8913c6a60f39e8053d6ad0d6dfaf69ec7d8cf3fcc2665386e362238d6`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 325.1 KB (325114 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43fc4417c46cd53b142f42f58ded86ccf383c9f9b6e5f97d8a8183abbd1bd7aa`  
-		Last Modified: Wed, 10 Mar 2021 21:43:17 GMT  
-		Size: 1.4 KB (1383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull caddy@sha256:971ecb6797495e16d5ee3ede15138f5ceaee0930af2ee0b6fbc9dbae848302fa
+$ docker pull caddy@sha256:a42a67f914fd976a839e8c725f15fec79415b331ffeaa3972e7bff363bec4ada
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.4283; amd64
+	-	windows version 10.0.14393.4350; amd64
 
-### `caddy:2-windowsservercore-ltsc2016` - windows version 10.0.14393.4283; amd64
+### `caddy:2-windowsservercore-ltsc2016` - windows version 10.0.14393.4350; amd64
 
 ```console
-$ docker pull caddy@sha256:e9416497e1d43fd04e244f89af4e210714a28b676cf1e2279487484087b8ee39
+$ docker pull caddy@sha256:0a27a5dee7d386c823f3ad85b0ad3c7c6ebb739e7d7ad1cbc37662a3e955dfbc
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 GB (5829241236 bytes)**  
+-	Total Size: **5.8 GB (5818160037 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b987ba0d14c06619541f1cb51215c36133a17cfbfea49a9bc79b021564ab785`
+-	Image ID: `sha256:c5d01f580a5360a74b845ce6ffbd196e0930731b656954f6dafd810f4b69ae72`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sat, 19 Nov 2016 17:05:00 GMT
 RUN Apply image 1607-RTM-amd64
-# Wed, 03 Mar 2021 18:02:00 GMT
+# Wed, 07 Apr 2021 21:54:00 GMT
 RUN Install update ltsc2016-amd64
-# Wed, 10 Mar 2021 13:42:05 GMT
+# Wed, 14 Apr 2021 12:35:33 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 21:30:30 GMT
+# Wed, 14 Apr 2021 20:07:14 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Wed, 10 Mar 2021 21:30:31 GMT
+# Wed, 14 Apr 2021 20:07:15 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 10 Mar 2021 21:32:11 GMT
+# Wed, 14 Apr 2021 20:09:01 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('afc504cb0a641729ba546c0cadea524a170dcca2a915473aaf032a7c666c7c56ac059752f34b5d50700a692647b9b395b530cd8299ac3650c729adce5daa1ba5')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Wed, 10 Mar 2021 21:32:12 GMT
+# Wed, 14 Apr 2021 20:09:02 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Wed, 10 Mar 2021 21:32:13 GMT
+# Wed, 14 Apr 2021 20:09:04 GMT
 ENV XDG_DATA_HOME=c:/data
-# Wed, 10 Mar 2021 21:32:14 GMT
+# Wed, 14 Apr 2021 20:09:05 GMT
 VOLUME [c:/config]
-# Wed, 10 Mar 2021 21:32:15 GMT
+# Wed, 14 Apr 2021 20:09:06 GMT
 VOLUME [c:/data]
-# Wed, 10 Mar 2021 21:32:16 GMT
+# Wed, 14 Apr 2021 20:09:07 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 10 Mar 2021 21:32:18 GMT
+# Wed, 14 Apr 2021 20:09:08 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 10 Mar 2021 21:32:19 GMT
+# Wed, 14 Apr 2021 20:09:09 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 10 Mar 2021 21:32:20 GMT
+# Wed, 14 Apr 2021 20:09:10 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 10 Mar 2021 21:32:21 GMT
+# Wed, 14 Apr 2021 20:09:11 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 10 Mar 2021 21:32:23 GMT
+# Wed, 14 Apr 2021 20:09:12 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 10 Mar 2021 21:32:24 GMT
+# Wed, 14 Apr 2021 20:09:14 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 10 Mar 2021 21:32:25 GMT
+# Wed, 14 Apr 2021 20:09:15 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 10 Mar 2021 21:32:26 GMT
+# Wed, 14 Apr 2021 20:09:16 GMT
 EXPOSE 80
-# Wed, 10 Mar 2021 21:32:27 GMT
+# Wed, 14 Apr 2021 20:09:17 GMT
 EXPOSE 443
-# Wed, 10 Mar 2021 21:32:28 GMT
+# Wed, 14 Apr 2021 20:09:18 GMT
 EXPOSE 2019
-# Wed, 10 Mar 2021 21:33:17 GMT
+# Wed, 14 Apr 2021 20:10:29 GMT
 RUN caddy version
-# Wed, 10 Mar 2021 21:33:18 GMT
+# Wed, 14 Apr 2021 20:10:30 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -3589,98 +3589,98 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Last Modified: Tue, 18 Sep 2018 20:20:50 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:30bda99601c5cbd3b2118409f401852ea648e2319bd81518723e476b28d764c5`  
-		Size: 1.7 GB (1726924885 bytes)  
+	-	`sha256:00b4edb823e6a375d179a28cbfa682c2379d62179e1518485902d6e68b9a9d1e`  
+		Size: 1.7 GB (1724897968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:76680da9dc6db108ddf2e353c494b45e8486a6751619a13ed8fb3ad64b9a16e9`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bb52885e05952959b0fa7aaff23561fcf14d294aed336112b388c94e67709e4f`  
+		Last Modified: Wed, 14 Apr 2021 12:59:14 GMT  
+		Size: 1.4 KB (1406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0c9e18c1004b748968faecba6f9d1b5e6233e7e0b82b1c1259cf945eb3334e6`  
-		Last Modified: Wed, 10 Mar 2021 21:44:17 GMT  
-		Size: 10.2 MB (10181612 bytes)  
+	-	`sha256:398ea9969fcb8e31829ad2a30ccb77a30f56d17d992051bf6a04b0bd4ebb24a7`  
+		Last Modified: Wed, 14 Apr 2021 20:24:45 GMT  
+		Size: 5.7 MB (5661064 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08f9c532d82c90ea9fc2e2c6a591988abfb79e551caabead3fe56f8ba69c31f6`  
-		Last Modified: Wed, 10 Mar 2021 21:44:12 GMT  
-		Size: 1.4 KB (1404 bytes)  
+	-	`sha256:1d2d2fcf25a0097bf75ef1b7b207a765b3c93bce2eb96e7ebf2ce894a0ca0bf1`  
+		Last Modified: Wed, 14 Apr 2021 20:24:43 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5695a08e71ba7869b2e8b11e6f3f228a8a6d303878131e1f3abdc655757b5f2`  
-		Last Modified: Wed, 10 Mar 2021 21:44:19 GMT  
-		Size: 21.9 MB (21867123 bytes)  
+	-	`sha256:6f1814c5a2050da8e869a225b62ac936693d7904fed473ed6d703acd42542916`  
+		Last Modified: Wed, 14 Apr 2021 20:24:46 GMT  
+		Size: 17.3 MB (17333583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fabb7c4e3c2c8cdeef81bd8a6fcaed6b082e5ea4120a15ae4e277258c03de007`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1372 bytes)  
+	-	`sha256:93803b6c6c1e5befb69d029873c92020261e4faf5f97fa1ebe4474f2fcd761da`  
+		Last Modified: Wed, 14 Apr 2021 20:24:39 GMT  
+		Size: 1.4 KB (1403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82ec41ded5794a348cd9c06286dcbe7ca964197008812567791bc45b22bc4dd1`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1427 bytes)  
+	-	`sha256:5bef042a1c15ba4cca6086f36ad82e03f037ebae2ec5218dc528ce8afa0cbbe7`  
+		Last Modified: Wed, 14 Apr 2021 20:24:39 GMT  
+		Size: 1.4 KB (1409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d20ab0530e5214beccbf36a30fe1618f9752274c51a313bb71e9b9b130870164`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc0a7b2c54a3fa027e26d52abd2013c77fc0e69bf93446d70990dc40a6e00d98`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1366 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e0051bde2db70124d244a1337ccc824629e18f2be3b800ec577a7794ff1f7f3`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:271b14baf3d87c6aa3bd2da952290cec023b40b90b62688c79fa26d9253770ac`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1391 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bc9b324fb71cb6bdc3dfd42355efbd64634f7d2ec678a5a15757e69145f671d`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
+	-	`sha256:0c22fd29bd95221222824495015750f062fcf337845032c4d11be1c8166d9911`  
+		Last Modified: Wed, 14 Apr 2021 20:24:37 GMT  
 		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69d93b07db92b46680fe5ba78d29058e6f5b2ce49ba20cb10aeccb751b37d497`  
-		Last Modified: Wed, 10 Mar 2021 21:44:08 GMT  
-		Size: 1.4 KB (1433 bytes)  
+	-	`sha256:e034d998c8e3152093c8f2c30b0ac9122c528b8ba0889cadf3a3282059a8f96c`  
+		Last Modified: Wed, 14 Apr 2021 20:24:37 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bb6dc81911c7b01e751b8d5a08f7cf494f5542f166b2e1471a08ef82b4ebcb4`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1410 bytes)  
+	-	`sha256:80cd579cdba6539c678c1cfd7184427e5b0777e34c965e8c6ca62f8301dd629f`  
+		Last Modified: Wed, 14 Apr 2021 20:24:36 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a53bfaf85823badcda6fa4470993f24b9772597b13989ee71ec0b5686be93cbc`  
-		Last Modified: Wed, 10 Mar 2021 21:44:07 GMT  
-		Size: 1.4 KB (1410 bytes)  
+	-	`sha256:1ea0c59c3768ba8d3f4943669c834e3b8043899a0ee61ed325fa453559243f95`  
+		Last Modified: Wed, 14 Apr 2021 20:24:36 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5077aa28e94279b15dbe048f37904704877b5b4a932e67a3a12adf8bdfe9ada`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1436 bytes)  
+	-	`sha256:bc5f4c914fc136d87d2e00167556104cf17827c516e84c53785225cfeb214a42`  
+		Last Modified: Wed, 14 Apr 2021 20:24:40 GMT  
+		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5851fcb607a8afd06548b48e611020418ed88f0c0e1abcba7854089c8bf9729e`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1395 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:498aa4d3ee4135d0aaeccdf4fe0d8ec98c3ba95a92fd0b56dc73a461be700516`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1418 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0651b67304c2388b503cbd386e0235ec00a5a8437a9d115ba871152ae9d07103`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
+	-	`sha256:164712f851736c62b6da95357e6056173e390402e1a17b2f7559af8f42ce0134`  
+		Last Modified: Wed, 14 Apr 2021 20:24:35 GMT  
 		Size: 1.4 KB (1408 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1418b36ca2fc9603d0a6a28d6f4849cdfd80c3069ea494baeba2ce37e66b73d4`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1390 bytes)  
+	-	`sha256:5d73f78d7b9ccdb5963233ef77dab1188e2678cc7c9136ff183494cd28f893f0`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a50dd910f71fe0ceefc794aaee3e6669cd578ae8286348a76c60dc926778da33`  
-		Last Modified: Wed, 10 Mar 2021 21:44:04 GMT  
-		Size: 256.4 KB (256438 bytes)  
+	-	`sha256:b455a43ac6d0be6faf8dce0c59c609cc832963d9cc649b301f49ff79f218e439`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43a39a5ecfed250f608279f4544ced05934bd84e326d05f119a12081aa38b39f`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1397 bytes)  
+	-	`sha256:916f00b0ac9199b716d513a33d44003af6cd00e4b9b7a2feab64b84649d80640`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1431 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7ece2a763e6182c580aadb07399f77037c831dd03ee9cdad4f70b18759458094`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac88310e829bdb746ec804044c2a238dc2c6f64660688285a64205a255283c47`  
+		Last Modified: Wed, 14 Apr 2021 20:24:32 GMT  
+		Size: 1.4 KB (1404 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ed384ae90a546f9aad4b539596228057299114b9662407a708465a0ed7de3691`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1411 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9de7a040e97ee693dc826cc6130e42fe7597fbf48fe035d0e5f9f039166edae5`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e4c1c4ddd499c8a111514a0d3bc3b97381c76a6b33d1cb3f74752d42ddc3e43c`  
+		Last Modified: Wed, 14 Apr 2021 20:24:32 GMT  
+		Size: 255.9 KB (255932 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:96251eba56a444a75ccc3480986386b2d2abcce41beadf2f267bedaee332c54a`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2.3.0`
 
 ```console
-$ docker pull caddy@sha256:e0561602b41351448ab80bdb6302b6f2aa7bb6ca5bfefe02886387414d9ff0d9
+$ docker pull caddy@sha256:88fc125055b8c4dafe67a48219fd3a89c0a472aa254d2835b2e298b93493b28e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3691,265 +3691,265 @@ $ docker pull caddy@sha256:e0561602b41351448ab80bdb6302b6f2aa7bb6ca5bfefe0288638
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
 	-	linux; s390x
-	-	windows version 10.0.17763.1817; amd64
-	-	windows version 10.0.14393.4283; amd64
+	-	windows version 10.0.17763.1879; amd64
+	-	windows version 10.0.14393.4350; amd64
 
 ### `caddy:2.3.0` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:629c5800ccf51df482a4e63266e4570de3e573e862d902398b03cbfca2212b4d
+$ docker pull caddy@sha256:6fbf52298c46c55c572670b5395ecaee5d399338003c9bb4e4abed875c542f4f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.7 MB (14728095 bytes)**  
+-	Total Size: **14.7 MB (14728953 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e073d63a624f18bd8e2f94b9e84715e5a33a817db19afa42afc8ea95e59d568`
+-	Image ID: `sha256:7395cc3713b2ca5574a9b4aafc468a1533d16582efe47dcab74ed547540d698a`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 20:10:13 GMT
-ADD file:f77db8e5b937d8ebb7e254eccd4d311798ea9f4dd5081ea2a7e2b1d3790300c2 in / 
-# Wed, 31 Mar 2021 20:10:13 GMT
+# Wed, 14 Apr 2021 19:19:49 GMT
+ADD file:4f526aa99067d82b341f7ca538f7826b7c23a628f1b615eea2883a2d434c1b90 in / 
+# Wed, 14 Apr 2021 19:19:49 GMT
 CMD ["/bin/sh"]
-# Thu, 01 Apr 2021 13:53:15 GMT
+# Wed, 14 Apr 2021 20:10:47 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Thu, 01 Apr 2021 13:53:17 GMT
+# Wed, 14 Apr 2021 20:10:49 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Thu, 01 Apr 2021 13:53:17 GMT
+# Wed, 14 Apr 2021 20:10:49 GMT
 ENV CADDY_VERSION=v2.3.0
-# Thu, 01 Apr 2021 13:53:20 GMT
+# Wed, 14 Apr 2021 20:10:52 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 ENV XDG_CONFIG_HOME=/config
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 ENV XDG_DATA_HOME=/data
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 VOLUME [/config]
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 VOLUME [/data]
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 EXPOSE 80
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 EXPOSE 443
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 EXPOSE 2019
-# Thu, 01 Apr 2021 13:53:24 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 WORKDIR /srv
-# Thu, 01 Apr 2021 13:53:24 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:532819f3e44cebad88c82f5393801acb876b7a61d36b84bce646561789bb2018`  
-		Last Modified: Wed, 31 Mar 2021 20:11:03 GMT  
-		Size: 2.8 MB (2799712 bytes)  
+	-	`sha256:339de151aab4bc06eed8409daae147c408478cb538dacb90cc63f19ad4eba80b`  
+		Last Modified: Wed, 14 Apr 2021 19:20:51 GMT  
+		Size: 2.8 MB (2800567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccc82ca1670c70e5b605729b271409acba02ca26c3f669bf1d95a067fb853a90`  
-		Last Modified: Thu, 01 Apr 2021 13:54:20 GMT  
-		Size: 300.0 KB (300021 bytes)  
+	-	`sha256:8b7a0cd9cca5be9b30bbc70611052d1456502e1f338ce4b14946233b21cd6a9a`  
+		Last Modified: Wed, 14 Apr 2021 20:11:46 GMT  
+		Size: 300.0 KB (300016 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21d66f69260e9358ba74c27e0ed110b9ff7781c5f90d5d01f86d6ef289834382`  
-		Last Modified: Thu, 01 Apr 2021 13:54:17 GMT  
-		Size: 5.8 KB (5829 bytes)  
+	-	`sha256:b5666523658a43fbbdff6b8fca498a988f4dcecc3ce027f1701414658c21d4ea`  
+		Last Modified: Wed, 14 Apr 2021 20:11:46 GMT  
+		Size: 5.8 KB (5832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9b38557b1fd80a7712b7263f0896f076afdeb9f25f68a79e288b87490aa3047`  
-		Last Modified: Thu, 01 Apr 2021 13:54:19 GMT  
-		Size: 11.6 MB (11622380 bytes)  
+	-	`sha256:b097228407f13a161f68b188b0a4f255855b64d84e7b076745a744d5aa7ed8cf`  
+		Last Modified: Wed, 14 Apr 2021 20:11:49 GMT  
+		Size: 11.6 MB (11622383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd37d6fba45d5f1633f00b6a9d204abacad2a6918dc355706fe0decc0bc4e565`  
-		Last Modified: Thu, 01 Apr 2021 13:54:18 GMT  
-		Size: 153.0 B  
+	-	`sha256:40682d93cc09b4592a1b9c08d48d0a956b5eef4f123d80d1a12942482edb6aab`  
+		Last Modified: Wed, 14 Apr 2021 20:11:46 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2.3.0` - linux; arm variant v6
 
 ```console
-$ docker pull caddy@sha256:b57cdc61b54865a7ff2ea4ef9d16458537d40e0dc25559d6540111874abbe4ce
+$ docker pull caddy@sha256:0df9df9725cab39fe073887c98b54bf7bf1c96b3ed0e23916737c7c4877576c6
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.9 MB (13855580 bytes)**  
+-	Total Size: **13.9 MB (13856181 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88293e19906b6b2275ff6e127e29960b1fdf0cf0c4baa4bbce4ea297e90db731`
+-	Image ID: `sha256:fce1c33ce4509195edc1c67d2dcd15c6c5fc0b35cec2e90714ec3007739600eb`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 17:19:11 GMT
-ADD file:00ac3d0df16779e7564cda9cbf94eef90ffa8043778a867272ff0135a1fb537f in / 
-# Wed, 31 Mar 2021 17:19:12 GMT
+# Wed, 14 Apr 2021 18:49:49 GMT
+ADD file:82fa6a18d24e3f535c9061d2e111d63fe6d8a27710bb34a17b326e605ff478be in / 
+# Wed, 14 Apr 2021 18:49:50 GMT
 CMD ["/bin/sh"]
-# Wed, 31 Mar 2021 17:36:32 GMT
+# Wed, 14 Apr 2021 19:45:19 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Wed, 31 Mar 2021 17:36:36 GMT
+# Wed, 14 Apr 2021 19:45:33 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Wed, 31 Mar 2021 17:36:38 GMT
+# Wed, 14 Apr 2021 19:45:36 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 31 Mar 2021 17:36:45 GMT
+# Wed, 14 Apr 2021 19:45:54 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Wed, 31 Mar 2021 17:36:51 GMT
+# Wed, 14 Apr 2021 19:46:03 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Wed, 31 Mar 2021 17:36:52 GMT
+# Wed, 14 Apr 2021 19:46:04 GMT
 ENV XDG_CONFIG_HOME=/config
-# Wed, 31 Mar 2021 17:36:53 GMT
+# Wed, 14 Apr 2021 19:46:05 GMT
 ENV XDG_DATA_HOME=/data
-# Wed, 31 Mar 2021 17:36:55 GMT
+# Wed, 14 Apr 2021 19:46:07 GMT
 VOLUME [/config]
-# Wed, 31 Mar 2021 17:36:55 GMT
+# Wed, 14 Apr 2021 19:46:08 GMT
 VOLUME [/data]
-# Wed, 31 Mar 2021 17:36:56 GMT
+# Wed, 14 Apr 2021 19:46:10 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 31 Mar 2021 17:36:58 GMT
+# Wed, 14 Apr 2021 19:46:11 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 31 Mar 2021 17:36:59 GMT
+# Wed, 14 Apr 2021 19:46:13 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 31 Mar 2021 17:37:00 GMT
+# Wed, 14 Apr 2021 19:46:16 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 31 Mar 2021 17:37:01 GMT
+# Wed, 14 Apr 2021 19:46:16 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 31 Mar 2021 17:37:03 GMT
+# Wed, 14 Apr 2021 19:46:18 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 31 Mar 2021 17:37:04 GMT
+# Wed, 14 Apr 2021 19:46:19 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 31 Mar 2021 17:37:05 GMT
+# Wed, 14 Apr 2021 19:46:20 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 31 Mar 2021 17:37:07 GMT
+# Wed, 14 Apr 2021 19:46:21 GMT
 EXPOSE 80
-# Wed, 31 Mar 2021 17:37:08 GMT
+# Wed, 14 Apr 2021 19:46:21 GMT
 EXPOSE 443
-# Wed, 31 Mar 2021 17:37:10 GMT
+# Wed, 14 Apr 2021 19:46:22 GMT
 EXPOSE 2019
-# Wed, 31 Mar 2021 17:37:11 GMT
+# Wed, 14 Apr 2021 19:46:23 GMT
 WORKDIR /srv
-# Wed, 31 Mar 2021 17:37:13 GMT
+# Wed, 14 Apr 2021 19:46:24 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:66e54586dae0889b30da12f7a66838d9b86511b58696c83c3b9166ff1a534bbe`  
-		Last Modified: Wed, 31 Mar 2021 17:20:05 GMT  
-		Size: 2.6 MB (2604658 bytes)  
+	-	`sha256:b452d2916bdfd021add56f1eda6bdea35400671ef07b38316ef82fce92a88fee`  
+		Last Modified: Wed, 14 Apr 2021 18:50:38 GMT  
+		Size: 2.6 MB (2605253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1532456df32c320ccd3c9ff5433c9e44d873ef87a0dc9fc29f9cf256b517eb4`  
-		Last Modified: Wed, 31 Mar 2021 17:38:50 GMT  
-		Size: 300.1 KB (300103 bytes)  
+	-	`sha256:6b83e8a6ea044be2a9e3c87c5fdc047ce9a52d1a64e48f8330d9a19002ecffe1`  
+		Last Modified: Wed, 14 Apr 2021 19:47:50 GMT  
+		Size: 300.1 KB (300117 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7263f61714ef61a0c59bef8e70bc49a741a357b0a0fc556b44f8344df37ea0f8`  
-		Last Modified: Wed, 31 Mar 2021 17:38:52 GMT  
-		Size: 5.8 KB (5830 bytes)  
+	-	`sha256:b9949bdfbb1d296dd158f8c2bb959f96c8da162a0d579f68fa3f5a4af58bed5b`  
+		Last Modified: Wed, 14 Apr 2021 19:47:50 GMT  
+		Size: 5.8 KB (5826 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:818002dab28746359de43d5a88d06c77cc3a353c838e15c6b6a67d48352cc5c0`  
-		Last Modified: Wed, 31 Mar 2021 17:38:54 GMT  
-		Size: 10.9 MB (10944835 bytes)  
+	-	`sha256:c2c5cc316af29a89f9a1d4e279b5d1bb964095a15795647d013f40921bc808c3`  
+		Last Modified: Wed, 14 Apr 2021 19:47:54 GMT  
+		Size: 10.9 MB (10944831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7979a3c808bf5c07c668f5966a15458dbfe9aba5aa7d761e690dd3a5cadf45eb`  
-		Last Modified: Wed, 31 Mar 2021 17:38:52 GMT  
+	-	`sha256:2f6670cc680ce5e5d9a0adfc380fe4a89ac2a2dcef5a7adeb874967a356e6742`  
+		Last Modified: Wed, 14 Apr 2021 19:47:50 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2.3.0` - linux; arm variant v7
 
 ```console
-$ docker pull caddy@sha256:6d510324512c20fc0d40aeb8b6e5b98255c857ad2dee894b6cb6e66f0231cf9b
+$ docker pull caddy@sha256:1a41623f53d582c8b503ae859f6ae98c7c0695eddb11bdbf8514b9b914955c3d
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.6 MB (13638799 bytes)**  
+-	Total Size: **13.6 MB (13639723 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42db38da968682707e6cf0fabb16f93770388907d8a208fca0db74cae3183ba2`
+-	Image ID: `sha256:9a4b837694902a1a259a4915444feda59d895ed37ffbef66b8518b9a884f029c`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 18:13:45 GMT
-ADD file:1270a9135e4e3d6bcd51f9c8bb7a5129c493366412591f1a6885db98056a572e in / 
-# Wed, 31 Mar 2021 18:13:47 GMT
+# Wed, 14 Apr 2021 18:57:50 GMT
+ADD file:d844cc7b5e00fb62be39d903a2fb4a08f700e75112c8eef1f31101e846ed010d in / 
+# Wed, 14 Apr 2021 18:57:52 GMT
 CMD ["/bin/sh"]
-# Thu, 01 Apr 2021 08:11:44 GMT
+# Wed, 14 Apr 2021 19:39:25 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Thu, 01 Apr 2021 08:11:47 GMT
+# Wed, 14 Apr 2021 19:39:32 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Thu, 01 Apr 2021 08:11:48 GMT
+# Wed, 14 Apr 2021 19:39:34 GMT
 ENV CADDY_VERSION=v2.3.0
-# Thu, 01 Apr 2021 08:11:52 GMT
+# Wed, 14 Apr 2021 19:39:38 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Thu, 01 Apr 2021 08:11:55 GMT
+# Wed, 14 Apr 2021 19:39:40 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Thu, 01 Apr 2021 08:11:56 GMT
+# Wed, 14 Apr 2021 19:39:41 GMT
 ENV XDG_CONFIG_HOME=/config
-# Thu, 01 Apr 2021 08:11:57 GMT
+# Wed, 14 Apr 2021 19:39:42 GMT
 ENV XDG_DATA_HOME=/data
-# Thu, 01 Apr 2021 08:11:58 GMT
+# Wed, 14 Apr 2021 19:39:43 GMT
 VOLUME [/config]
-# Thu, 01 Apr 2021 08:11:59 GMT
+# Wed, 14 Apr 2021 19:39:45 GMT
 VOLUME [/data]
-# Thu, 01 Apr 2021 08:12:00 GMT
+# Wed, 14 Apr 2021 19:39:46 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Thu, 01 Apr 2021 08:12:01 GMT
+# Wed, 14 Apr 2021 19:39:49 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Thu, 01 Apr 2021 08:12:02 GMT
+# Wed, 14 Apr 2021 19:39:51 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Thu, 01 Apr 2021 08:12:03 GMT
+# Wed, 14 Apr 2021 19:39:52 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Thu, 01 Apr 2021 08:12:05 GMT
+# Wed, 14 Apr 2021 19:39:53 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Thu, 01 Apr 2021 08:12:06 GMT
+# Wed, 14 Apr 2021 19:39:54 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Thu, 01 Apr 2021 08:12:07 GMT
+# Wed, 14 Apr 2021 19:39:55 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Thu, 01 Apr 2021 08:12:08 GMT
+# Wed, 14 Apr 2021 19:39:55 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Thu, 01 Apr 2021 08:12:09 GMT
+# Wed, 14 Apr 2021 19:39:56 GMT
 EXPOSE 80
-# Thu, 01 Apr 2021 08:12:11 GMT
+# Wed, 14 Apr 2021 19:39:57 GMT
 EXPOSE 443
-# Thu, 01 Apr 2021 08:12:13 GMT
+# Wed, 14 Apr 2021 19:39:58 GMT
 EXPOSE 2019
-# Thu, 01 Apr 2021 08:12:15 GMT
+# Wed, 14 Apr 2021 19:39:59 GMT
 WORKDIR /srv
-# Thu, 01 Apr 2021 08:12:16 GMT
+# Wed, 14 Apr 2021 19:40:00 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:b04429a2165487924dcbfedfff74fa262e6828327d04bb4b1c6a477096f5010e`  
-		Last Modified: Wed, 31 Mar 2021 18:15:12 GMT  
-		Size: 2.4 MB (2408269 bytes)  
+	-	`sha256:420c7481a3a76d5d12df768d2745ddbe40357df0af780c756a5a7d1f2a43d288`  
+		Last Modified: Wed, 14 Apr 2021 18:58:46 GMT  
+		Size: 2.4 MB (2409178 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:547b5d01ba24abc02b4f05f8134bfb156ce1840f496ed03a1316c882625bd41f`  
-		Last Modified: Thu, 01 Apr 2021 08:13:34 GMT  
-		Size: 299.2 KB (299199 bytes)  
+	-	`sha256:b239ad5e698454501b0de011bffea35a660806a0b85a6141776581e3a98bc467`  
+		Last Modified: Wed, 14 Apr 2021 19:41:24 GMT  
+		Size: 299.2 KB (299210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a883a914d37801ae97b0fac82c62e4f70ef4c92fc53417a91a23b2e69d36d9bb`  
-		Last Modified: Thu, 01 Apr 2021 08:13:34 GMT  
+	-	`sha256:8a0460b038be93717158ad9cdb6f83768b7129eaf4fcaef8620adc7509d0e5fe`  
+		Last Modified: Wed, 14 Apr 2021 19:41:23 GMT  
 		Size: 5.8 KB (5833 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:475143e7b89d1a36700916ec3c8f0caae9b57d5cd9ba187b9f3fd5d9a71eddcf`  
-		Last Modified: Thu, 01 Apr 2021 08:13:38 GMT  
-		Size: 10.9 MB (10925346 bytes)  
+	-	`sha256:0905d1ca8c4f74966ae8a7b5ebe8fdb33854c4a759d543d767dd9a0add81f155`  
+		Last Modified: Wed, 14 Apr 2021 19:41:29 GMT  
+		Size: 10.9 MB (10925348 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e79cdab22a3397c4a98f63a7e96c51881033744b1f198c4984072e7303e9f73`  
-		Last Modified: Thu, 01 Apr 2021 08:13:34 GMT  
-		Size: 152.0 B  
+	-	`sha256:2f02da274f552e184a7fa5527990e666d77c70e3715a0d96b7588e7433b3022a`  
+		Last Modified: Wed, 14 Apr 2021 19:41:23 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2.3.0` - linux; arm64 variant v8
@@ -4041,235 +4041,235 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ### `caddy:2.3.0` - linux; ppc64le
 
 ```console
-$ docker pull caddy@sha256:bffc665d927b1ed51d5f36dafc191678472776dea35931198b09deebbe4d31fb
+$ docker pull caddy@sha256:f551e1db7910e2d5235d303760aff5b514fc6e8b49d8d67d434bb23c40ac25db
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.4 MB (13355782 bytes)**  
+-	Total Size: **13.4 MB (13356454 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60f81a6d1059252f032458e7bf5dff42ef2844beec6f1c212b5901fb867fdf0a`
+-	Image ID: `sha256:982bd235f46e537404cdab42c3dfb3d0058f97ed5d7984f2e71ad8734adcc6a8`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 18:56:11 GMT
-ADD file:d51af61c5955c980d18387ab532110c3874f95a87768be84dfd1eeb3e701d3a4 in / 
-# Wed, 31 Mar 2021 18:56:16 GMT
+# Wed, 14 Apr 2021 19:31:22 GMT
+ADD file:f8b081207f6d35f8ebd06aa471e350644151d183801f678def586d8f37e81366 in / 
+# Wed, 14 Apr 2021 19:31:29 GMT
 CMD ["/bin/sh"]
-# Thu, 01 Apr 2021 20:19:14 GMT
+# Wed, 14 Apr 2021 22:09:04 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Thu, 01 Apr 2021 20:19:27 GMT
+# Wed, 14 Apr 2021 22:09:16 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Thu, 01 Apr 2021 20:19:34 GMT
+# Wed, 14 Apr 2021 22:09:24 GMT
 ENV CADDY_VERSION=v2.3.0
-# Thu, 01 Apr 2021 20:19:48 GMT
+# Wed, 14 Apr 2021 22:09:39 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Thu, 01 Apr 2021 20:20:00 GMT
+# Wed, 14 Apr 2021 22:09:51 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Thu, 01 Apr 2021 20:20:05 GMT
+# Wed, 14 Apr 2021 22:09:56 GMT
 ENV XDG_CONFIG_HOME=/config
-# Thu, 01 Apr 2021 20:20:12 GMT
+# Wed, 14 Apr 2021 22:10:01 GMT
 ENV XDG_DATA_HOME=/data
-# Thu, 01 Apr 2021 20:20:18 GMT
+# Wed, 14 Apr 2021 22:10:06 GMT
 VOLUME [/config]
-# Thu, 01 Apr 2021 20:20:23 GMT
+# Wed, 14 Apr 2021 22:10:15 GMT
 VOLUME [/data]
-# Thu, 01 Apr 2021 20:20:31 GMT
+# Wed, 14 Apr 2021 22:10:22 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Thu, 01 Apr 2021 20:20:39 GMT
+# Wed, 14 Apr 2021 22:10:32 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Thu, 01 Apr 2021 20:20:48 GMT
+# Wed, 14 Apr 2021 22:10:40 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Thu, 01 Apr 2021 20:20:54 GMT
+# Wed, 14 Apr 2021 22:10:46 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Thu, 01 Apr 2021 20:21:00 GMT
+# Wed, 14 Apr 2021 22:10:52 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Thu, 01 Apr 2021 20:21:05 GMT
+# Wed, 14 Apr 2021 22:10:58 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Thu, 01 Apr 2021 20:21:09 GMT
+# Wed, 14 Apr 2021 22:11:03 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Thu, 01 Apr 2021 20:21:14 GMT
+# Wed, 14 Apr 2021 22:11:08 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Thu, 01 Apr 2021 20:21:21 GMT
+# Wed, 14 Apr 2021 22:11:14 GMT
 EXPOSE 80
-# Thu, 01 Apr 2021 20:21:27 GMT
+# Wed, 14 Apr 2021 22:11:20 GMT
 EXPOSE 443
-# Thu, 01 Apr 2021 20:21:33 GMT
+# Wed, 14 Apr 2021 22:11:27 GMT
 EXPOSE 2019
-# Thu, 01 Apr 2021 20:21:42 GMT
+# Wed, 14 Apr 2021 22:11:35 GMT
 WORKDIR /srv
-# Thu, 01 Apr 2021 20:21:47 GMT
+# Wed, 14 Apr 2021 22:11:41 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:d6d4557865d9cec3513c1a5e744cb1073a563d464b8d546911289b9df9998f1b`  
-		Last Modified: Wed, 31 Mar 2021 18:57:36 GMT  
-		Size: 2.8 MB (2806070 bytes)  
+	-	`sha256:45707b9629c4ab8c6046680737229218fe844f38d08e5458b24605e1dbfd2709`  
+		Last Modified: Wed, 14 Apr 2021 19:32:50 GMT  
+		Size: 2.8 MB (2806750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afc0e09b51c0cca190757d6fc9c2b15a635a361717a65973c8d6edf77918d6d5`  
-		Last Modified: Thu, 01 Apr 2021 20:27:39 GMT  
-		Size: 302.3 KB (302335 bytes)  
+	-	`sha256:d93dd31358a6e859a05bb506b946720f02c7ec7969776d811b20eaaa84508cd7`  
+		Last Modified: Wed, 14 Apr 2021 22:15:41 GMT  
+		Size: 302.3 KB (302339 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:091713ba252aea42d1ddb0424ba2c2861b3afd2d0102c5d0a6070bacd31e8b49`  
-		Last Modified: Thu, 01 Apr 2021 20:27:39 GMT  
-		Size: 5.8 KB (5832 bytes)  
+	-	`sha256:f8077b8c9cca163d9a34281a866cf5fe991ff8c160ebd1ab1b617c6b722ec690`  
+		Last Modified: Wed, 14 Apr 2021 22:15:41 GMT  
+		Size: 5.8 KB (5831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1840f6bc70853fb9cc5e9c5752486488368649459a0beaa0684081a5b4a44bd4`  
-		Last Modified: Thu, 01 Apr 2021 20:27:42 GMT  
-		Size: 10.2 MB (10241392 bytes)  
+	-	`sha256:55884816b8eca8150db9473989410e372c69c5431deb51a6cacd029895cf3dd6`  
+		Last Modified: Wed, 14 Apr 2021 22:15:43 GMT  
+		Size: 10.2 MB (10241380 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1fb03f086aa28c855432404e128ff2009c1198d61578654e584a12062e24953f`  
-		Last Modified: Thu, 01 Apr 2021 20:27:39 GMT  
-		Size: 153.0 B  
+	-	`sha256:51efee06e0a650ff5f146fc54a695d4bf2b44e19da18120fdc494982d52cdd62`  
+		Last Modified: Wed, 14 Apr 2021 22:15:41 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2.3.0` - linux; s390x
 
 ```console
-$ docker pull caddy@sha256:9d992badb7530225182676af12ae945f5f2de2f5ad7d3946b397892a6de4c123
+$ docker pull caddy@sha256:68aaf625a22bff4e71edf895129baa2d562765c24ac81a5c68aff2995ebf89c2
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.1 MB (14145974 bytes)**  
+-	Total Size: **14.1 MB (14146947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b9c8a68869d0806c29e6c2c9c655d3e9085af285c6c24ea651ad3bdffd714e38`
+-	Image ID: `sha256:dbfd454f0dfa64ee1a952f9ed74a3f3bda3688a9565f062c3ea37e48b54eb210`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 17:15:04 GMT
-ADD file:1f37b92ea1f573c4810b1d056dc4880cf4035e143451d9b2b76fac1e3b462248 in / 
-# Wed, 31 Mar 2021 17:15:04 GMT
+# Wed, 14 Apr 2021 18:41:42 GMT
+ADD file:c73a5ff435939cdc9d621ee9dc2aa5a54a5f5e0241caae8dc948c03c423d9fef in / 
+# Wed, 14 Apr 2021 18:41:42 GMT
 CMD ["/bin/sh"]
-# Wed, 31 Mar 2021 18:55:58 GMT
+# Wed, 14 Apr 2021 20:07:21 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Wed, 31 Mar 2021 18:56:00 GMT
+# Wed, 14 Apr 2021 20:07:22 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Wed, 31 Mar 2021 18:56:00 GMT
+# Wed, 14 Apr 2021 20:07:22 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 31 Mar 2021 18:56:04 GMT
+# Wed, 14 Apr 2021 20:07:25 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:26 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:26 GMT
 ENV XDG_CONFIG_HOME=/config
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 ENV XDG_DATA_HOME=/data
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 VOLUME [/config]
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 VOLUME [/data]
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 EXPOSE 80
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 EXPOSE 443
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 EXPOSE 2019
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:30 GMT
 WORKDIR /srv
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:30 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:38ca5430c9af12b6b6dee7c10eb6b1eb0e4eb4f5f02a97890579c4b049d00233`  
-		Last Modified: Wed, 31 Mar 2021 17:15:46 GMT  
-		Size: 2.6 MB (2567453 bytes)  
+	-	`sha256:27efec644c4207cbc4d1400f84f3402937aab5ce72489976148896e42a219820`  
+		Last Modified: Wed, 14 Apr 2021 18:42:24 GMT  
+		Size: 2.6 MB (2568428 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe8eb19b6319d0b09121581759094c3eb58e5574e2063affb6c42c0e1a1937a0`  
-		Last Modified: Wed, 31 Mar 2021 18:57:00 GMT  
+	-	`sha256:5dab58470b754d248933aa56b48394e3ee4db4561d430d23ea378f0371ca59cb`  
+		Last Modified: Wed, 14 Apr 2021 20:08:16 GMT  
 		Size: 300.5 KB (300471 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbd6e269a873b8a21e2787b0ea05662c0f2676aa9043f52b8884081965be7112`  
-		Last Modified: Wed, 31 Mar 2021 18:57:00 GMT  
-		Size: 5.8 KB (5830 bytes)  
+	-	`sha256:fd514b608428ea44dae7dc67e641a276593e7715178d86d7702153521de849d7`  
+		Last Modified: Wed, 14 Apr 2021 20:08:16 GMT  
+		Size: 5.8 KB (5832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02f6a8a7e19cb11edbda771ce361181202915f4760cdaef5e290b1758cc7b88c`  
-		Last Modified: Wed, 31 Mar 2021 18:57:02 GMT  
-		Size: 11.3 MB (11272066 bytes)  
+	-	`sha256:a437814dab55b178c71f55598a70d0b532b3f645bdeb43e89244a6ebcde01446`  
+		Last Modified: Wed, 14 Apr 2021 20:08:18 GMT  
+		Size: 11.3 MB (11272061 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec92d2dcab4ee41e4e626d8b360a6feff3822db894894865a36bbe9cfc759df0`  
-		Last Modified: Wed, 31 Mar 2021 18:57:00 GMT  
-		Size: 154.0 B  
+	-	`sha256:412be9af105c69ee35fec76e8c0dbde8c8ba61c774b7d354e9c9fc8f538e8155`  
+		Last Modified: Wed, 14 Apr 2021 20:08:16 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `caddy:2.3.0` - windows version 10.0.17763.1817; amd64
+### `caddy:2.3.0` - windows version 10.0.17763.1879; amd64
 
 ```console
-$ docker pull caddy@sha256:5203e8707456e06dfc8d03ba99cdfe84d4b3dc00be512770827ef5e692ec18e0
+$ docker pull caddy@sha256:fdb259b96e8413c959258115e3cc0ed6272cd362b32dcee80b7c5875b3cca213
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2487805125 bytes)**  
+-	Total Size: **2.5 GB (2487217133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f93dd36e27e04e9ac5d0bc9da46fbeebc4541b2a242f90a7bc7003d2bc636fe`
+-	Image ID: `sha256:db78127126d7dbe748dc638552655f6a86f11faa664f34ed256da804f77de223`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 07 May 2020 05:09:25 GMT
 RUN Apply image 1809-RTM-amd64
-# Sat, 27 Feb 2021 09:32:06 GMT
+# Fri, 09 Apr 2021 20:34:41 GMT
 RUN Install update 1809-amd64
-# Wed, 10 Mar 2021 13:08:20 GMT
+# Wed, 14 Apr 2021 12:09:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 21:27:31 GMT
+# Wed, 14 Apr 2021 20:04:03 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Wed, 10 Mar 2021 21:27:32 GMT
+# Wed, 14 Apr 2021 20:04:04 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 10 Mar 2021 21:28:05 GMT
+# Wed, 14 Apr 2021 20:04:43 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('afc504cb0a641729ba546c0cadea524a170dcca2a915473aaf032a7c666c7c56ac059752f34b5d50700a692647b9b395b530cd8299ac3650c729adce5daa1ba5')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Wed, 10 Mar 2021 21:28:06 GMT
+# Wed, 14 Apr 2021 20:04:45 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Wed, 10 Mar 2021 21:28:07 GMT
+# Wed, 14 Apr 2021 20:04:46 GMT
 ENV XDG_DATA_HOME=c:/data
-# Wed, 10 Mar 2021 21:28:08 GMT
+# Wed, 14 Apr 2021 20:04:47 GMT
 VOLUME [c:/config]
-# Wed, 10 Mar 2021 21:28:09 GMT
+# Wed, 14 Apr 2021 20:04:48 GMT
 VOLUME [c:/data]
-# Wed, 10 Mar 2021 21:28:11 GMT
+# Wed, 14 Apr 2021 20:04:49 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 10 Mar 2021 21:28:12 GMT
+# Wed, 14 Apr 2021 20:04:50 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 10 Mar 2021 21:28:13 GMT
+# Wed, 14 Apr 2021 20:04:51 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 10 Mar 2021 21:28:14 GMT
+# Wed, 14 Apr 2021 20:04:53 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 10 Mar 2021 21:28:15 GMT
+# Wed, 14 Apr 2021 20:04:54 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 10 Mar 2021 21:28:16 GMT
+# Wed, 14 Apr 2021 20:04:55 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 10 Mar 2021 21:28:17 GMT
+# Wed, 14 Apr 2021 20:04:56 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 10 Mar 2021 21:28:18 GMT
+# Wed, 14 Apr 2021 20:04:57 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 10 Mar 2021 21:28:19 GMT
+# Wed, 14 Apr 2021 20:04:58 GMT
 EXPOSE 80
-# Wed, 10 Mar 2021 21:28:20 GMT
+# Wed, 14 Apr 2021 20:05:00 GMT
 EXPOSE 443
-# Wed, 10 Mar 2021 21:28:21 GMT
+# Wed, 14 Apr 2021 20:05:01 GMT
 EXPOSE 2019
-# Wed, 10 Mar 2021 21:28:41 GMT
+# Wed, 14 Apr 2021 20:05:27 GMT
 RUN caddy version
-# Wed, 10 Mar 2021 21:28:42 GMT
+# Wed, 14 Apr 2021 20:05:28 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -4277,154 +4277,154 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 	-	`sha256:4612f6d0b889cad0ed0292fae3a0b0c8a9e49aff6dea8eb049b2386d9b07986f`  
 		Size: 1.7 GB (1718332879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ff1512f88ecd4ff0a91ade34d43733c48834433e35f062f80e6e70d706f8d73`  
-		Size: 743.2 MB (743201590 bytes)  
+	-	`sha256:399f118dfaa9a753e98d128238b944432c7bcabea88a2998a6efbbece28ed303`  
+		Size: 751.4 MB (751421005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ebe61daec6d671bc2c1c6fe61ac9825fb552e9cef3672d0a7dbec719d125ae64`  
-		Last Modified: Wed, 10 Mar 2021 13:21:09 GMT  
+	-	`sha256:106dbf3373fce4f0ba5e00ad54824c597f2894605fa7d8ef446ad7ea3b97449f`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1413 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a98036a79f108b7c08eb62f3ef539549a6fe005aced8f3fa4971a4e576e8c045`  
+		Last Modified: Wed, 14 Apr 2021 20:24:07 GMT  
+		Size: 5.1 MB (5081237 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9a1c0c34e473966a69a26492fc168338b6ee1afadedd4cfd3b84537129685128`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
 		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31a02199a38f7dde446e1c919797037b896dc0d954cc313cd49d1fd7ef7b309a`  
-		Last Modified: Wed, 10 Mar 2021 21:43:28 GMT  
-		Size: 9.5 MB (9466151 bytes)  
+	-	`sha256:88365dd5b6b4b0188ad00f31b1114067b79a05d3eeaecbcdf86385c18e1e2bff`  
+		Last Modified: Wed, 14 Apr 2021 20:24:16 GMT  
+		Size: 12.0 MB (12047588 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:928fadc2fce7089b23d0e2d915e1cf2211aec3ffdc88b5eb66c67f18f7fb2c6e`  
-		Last Modified: Wed, 10 Mar 2021 21:43:26 GMT  
-		Size: 1.4 KB (1433 bytes)  
+	-	`sha256:1d8761bc4a54d10c3f03507406d03f0161fece0b4f80913bc67f5218cf7acc0e`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
+		Size: 1.4 KB (1394 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd7bb988dcbf796f3839a524b32be07309d29f50ec4273ded91973b631e0ad00`  
-		Last Modified: Wed, 10 Mar 2021 21:43:45 GMT  
-		Size: 16.5 MB (16453921 bytes)  
+	-	`sha256:f23987f8593afe96ed2b00e5744c51d5678851dac567bde07c230d882b31db5b`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d621047471067d3c16923f7c3b79f8615ddbcc2f9a879832c456f67fe3cd1544`  
-		Last Modified: Wed, 10 Mar 2021 21:43:25 GMT  
-		Size: 1.4 KB (1438 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9f148a6aba7a2d10970470390d5229567735df01114acfbdad1c661bdc8dc22`  
-		Last Modified: Wed, 10 Mar 2021 21:43:24 GMT  
-		Size: 1.4 KB (1436 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc608f5d46fef14425bc80c9c7062532f20bec43d7073a8e17e8278f9c60cc7a`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1436 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cda8fe89940ce8986995aee365da1f58c22d0d3b8a050600e429ef1cdd8c5fc`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:403d8611297f60270051c62d4bb7d7dff6aeeb33dc0c5cecd06ae94080fd1802`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1401 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab2df9d9f268b91b0f5bd3e27ba3e1cd03694b62c48ad901fa7fc47ebd2956db`  
-		Last Modified: Wed, 10 Mar 2021 21:43:22 GMT  
-		Size: 1.4 KB (1416 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6eabd07d0fd9430b675ce97b3bd926812eb4e9f4c4cf0872d68b91be65dd9d9`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1403 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec389e155c01fcd9625c110db8b62baac443eb2bee04a5f631e7cecc534c0818`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca8fad2b33541d43c28d6113e51b250763c7ec33d8503df271481f615a1f99bc`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1372 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cf0c1f7ba714c558dd8ed7e0336f84c91c25a35766d2efa592b1f39b1e448d6`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea93772cd9ce84491fa183154e0972b941a4379f628a54f9213bf36c4311dbbb`  
-		Last Modified: Wed, 10 Mar 2021 21:43:20 GMT  
+	-	`sha256:27edd7d612a33644ef095d4bd52c800d8e8a1bd73a56ddbeba0a2cda230947a6`  
+		Last Modified: Wed, 14 Apr 2021 20:24:02 GMT  
 		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:842fa064b906d0bd7b584ea5f181fbca29305d9ad824eaed29bf341c1abbcea3`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 1.4 KB (1440 bytes)  
+	-	`sha256:81c5b86f636ca1020805b216bf4ea83e1aaa4e5da4145ec671280678483c8084`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:48b753cdd37ef6dce0fbecce933fdf1957f9d72cf512be44c11d32181611a433`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 1.4 KB (1434 bytes)  
+	-	`sha256:8f097631ca96d803dd63f72849f1b76728a05c89e8451675f669fc655ae07600`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0205b004a4016df290e2fd8b362003adad13b56a6fbc17c35209de56b2bac034`  
-		Last Modified: Wed, 10 Mar 2021 21:43:16 GMT  
+	-	`sha256:6ace7f5f948c892db540a9734d885fb0695faf8cc55e9fa2df27c4aff76e485d`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1424 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:57476c73327d061921cee32adad6344e762c80c1142357a6de89819e8577d3e6`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1393 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8aaad63b2ff3aa00f636a1f988a02040c9832ae1a184093cef2471115a787a8f`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1407 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b1aef5aebcec7bd144ab11a819f8406f07a0dcfaf11684f464b56f5835633fb4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1413 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e7cd29f97bbc5cd627a79fc205fd6f63257d27e45e45264ec1e1c3ab94b319e4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c8aeafc40e34b5ef3464715c082ddb0910edbd9a59ac2d4d9d6586a0022271b4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4fe3fa5d1767b62495151be377ed814c0ce5766f1cb875b724b922d378249bb8`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b89f7d63263e3b381a5386cd4b13b21226da398d0c8d2bf59f111efb466b9959`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1436 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aab5798a12c9581184fa73f7b74913b0cf6c4ae638f2886f07d70a9f32181d9a`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1406 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bf434bfce197fbac09ffe0409a20f2a1ba646801b7dac739c6cea7bed0ce2fad`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1420 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ec0defeab0b694a738dc4b945c883e44f4118a4127f00e4cea32ab589fb194dc`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 308.9 KB (308863 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:51d70335c993ba29c3325465e90a310fce3b41a934bc25ec1bc5220fd3424bfe`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
 		Size: 1.4 KB (1425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e5f63eec622fd92f0ce90d6e06bd12c2687cbdf86aae3cdbbb8d3fdc92ef028`  
-		Last Modified: Wed, 10 Mar 2021 21:43:19 GMT  
-		Size: 1.4 KB (1369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:446a62c8913c6a60f39e8053d6ad0d6dfaf69ec7d8cf3fcc2665386e362238d6`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 325.1 KB (325114 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43fc4417c46cd53b142f42f58ded86ccf383c9f9b6e5f97d8a8183abbd1bd7aa`  
-		Last Modified: Wed, 10 Mar 2021 21:43:17 GMT  
-		Size: 1.4 KB (1383 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `caddy:2.3.0` - windows version 10.0.14393.4283; amd64
+### `caddy:2.3.0` - windows version 10.0.14393.4350; amd64
 
 ```console
-$ docker pull caddy@sha256:e9416497e1d43fd04e244f89af4e210714a28b676cf1e2279487484087b8ee39
+$ docker pull caddy@sha256:0a27a5dee7d386c823f3ad85b0ad3c7c6ebb739e7d7ad1cbc37662a3e955dfbc
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 GB (5829241236 bytes)**  
+-	Total Size: **5.8 GB (5818160037 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b987ba0d14c06619541f1cb51215c36133a17cfbfea49a9bc79b021564ab785`
+-	Image ID: `sha256:c5d01f580a5360a74b845ce6ffbd196e0930731b656954f6dafd810f4b69ae72`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sat, 19 Nov 2016 17:05:00 GMT
 RUN Apply image 1607-RTM-amd64
-# Wed, 03 Mar 2021 18:02:00 GMT
+# Wed, 07 Apr 2021 21:54:00 GMT
 RUN Install update ltsc2016-amd64
-# Wed, 10 Mar 2021 13:42:05 GMT
+# Wed, 14 Apr 2021 12:35:33 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 21:30:30 GMT
+# Wed, 14 Apr 2021 20:07:14 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Wed, 10 Mar 2021 21:30:31 GMT
+# Wed, 14 Apr 2021 20:07:15 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 10 Mar 2021 21:32:11 GMT
+# Wed, 14 Apr 2021 20:09:01 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('afc504cb0a641729ba546c0cadea524a170dcca2a915473aaf032a7c666c7c56ac059752f34b5d50700a692647b9b395b530cd8299ac3650c729adce5daa1ba5')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Wed, 10 Mar 2021 21:32:12 GMT
+# Wed, 14 Apr 2021 20:09:02 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Wed, 10 Mar 2021 21:32:13 GMT
+# Wed, 14 Apr 2021 20:09:04 GMT
 ENV XDG_DATA_HOME=c:/data
-# Wed, 10 Mar 2021 21:32:14 GMT
+# Wed, 14 Apr 2021 20:09:05 GMT
 VOLUME [c:/config]
-# Wed, 10 Mar 2021 21:32:15 GMT
+# Wed, 14 Apr 2021 20:09:06 GMT
 VOLUME [c:/data]
-# Wed, 10 Mar 2021 21:32:16 GMT
+# Wed, 14 Apr 2021 20:09:07 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 10 Mar 2021 21:32:18 GMT
+# Wed, 14 Apr 2021 20:09:08 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 10 Mar 2021 21:32:19 GMT
+# Wed, 14 Apr 2021 20:09:09 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 10 Mar 2021 21:32:20 GMT
+# Wed, 14 Apr 2021 20:09:10 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 10 Mar 2021 21:32:21 GMT
+# Wed, 14 Apr 2021 20:09:11 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 10 Mar 2021 21:32:23 GMT
+# Wed, 14 Apr 2021 20:09:12 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 10 Mar 2021 21:32:24 GMT
+# Wed, 14 Apr 2021 20:09:14 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 10 Mar 2021 21:32:25 GMT
+# Wed, 14 Apr 2021 20:09:15 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 10 Mar 2021 21:32:26 GMT
+# Wed, 14 Apr 2021 20:09:16 GMT
 EXPOSE 80
-# Wed, 10 Mar 2021 21:32:27 GMT
+# Wed, 14 Apr 2021 20:09:17 GMT
 EXPOSE 443
-# Wed, 10 Mar 2021 21:32:28 GMT
+# Wed, 14 Apr 2021 20:09:18 GMT
 EXPOSE 2019
-# Wed, 10 Mar 2021 21:33:17 GMT
+# Wed, 14 Apr 2021 20:10:29 GMT
 RUN caddy version
-# Wed, 10 Mar 2021 21:33:18 GMT
+# Wed, 14 Apr 2021 20:10:30 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -4433,98 +4433,98 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Last Modified: Tue, 18 Sep 2018 20:20:50 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:30bda99601c5cbd3b2118409f401852ea648e2319bd81518723e476b28d764c5`  
-		Size: 1.7 GB (1726924885 bytes)  
+	-	`sha256:00b4edb823e6a375d179a28cbfa682c2379d62179e1518485902d6e68b9a9d1e`  
+		Size: 1.7 GB (1724897968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:76680da9dc6db108ddf2e353c494b45e8486a6751619a13ed8fb3ad64b9a16e9`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bb52885e05952959b0fa7aaff23561fcf14d294aed336112b388c94e67709e4f`  
+		Last Modified: Wed, 14 Apr 2021 12:59:14 GMT  
+		Size: 1.4 KB (1406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0c9e18c1004b748968faecba6f9d1b5e6233e7e0b82b1c1259cf945eb3334e6`  
-		Last Modified: Wed, 10 Mar 2021 21:44:17 GMT  
-		Size: 10.2 MB (10181612 bytes)  
+	-	`sha256:398ea9969fcb8e31829ad2a30ccb77a30f56d17d992051bf6a04b0bd4ebb24a7`  
+		Last Modified: Wed, 14 Apr 2021 20:24:45 GMT  
+		Size: 5.7 MB (5661064 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08f9c532d82c90ea9fc2e2c6a591988abfb79e551caabead3fe56f8ba69c31f6`  
-		Last Modified: Wed, 10 Mar 2021 21:44:12 GMT  
-		Size: 1.4 KB (1404 bytes)  
+	-	`sha256:1d2d2fcf25a0097bf75ef1b7b207a765b3c93bce2eb96e7ebf2ce894a0ca0bf1`  
+		Last Modified: Wed, 14 Apr 2021 20:24:43 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5695a08e71ba7869b2e8b11e6f3f228a8a6d303878131e1f3abdc655757b5f2`  
-		Last Modified: Wed, 10 Mar 2021 21:44:19 GMT  
-		Size: 21.9 MB (21867123 bytes)  
+	-	`sha256:6f1814c5a2050da8e869a225b62ac936693d7904fed473ed6d703acd42542916`  
+		Last Modified: Wed, 14 Apr 2021 20:24:46 GMT  
+		Size: 17.3 MB (17333583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fabb7c4e3c2c8cdeef81bd8a6fcaed6b082e5ea4120a15ae4e277258c03de007`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1372 bytes)  
+	-	`sha256:93803b6c6c1e5befb69d029873c92020261e4faf5f97fa1ebe4474f2fcd761da`  
+		Last Modified: Wed, 14 Apr 2021 20:24:39 GMT  
+		Size: 1.4 KB (1403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82ec41ded5794a348cd9c06286dcbe7ca964197008812567791bc45b22bc4dd1`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1427 bytes)  
+	-	`sha256:5bef042a1c15ba4cca6086f36ad82e03f037ebae2ec5218dc528ce8afa0cbbe7`  
+		Last Modified: Wed, 14 Apr 2021 20:24:39 GMT  
+		Size: 1.4 KB (1409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d20ab0530e5214beccbf36a30fe1618f9752274c51a313bb71e9b9b130870164`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc0a7b2c54a3fa027e26d52abd2013c77fc0e69bf93446d70990dc40a6e00d98`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1366 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e0051bde2db70124d244a1337ccc824629e18f2be3b800ec577a7794ff1f7f3`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:271b14baf3d87c6aa3bd2da952290cec023b40b90b62688c79fa26d9253770ac`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1391 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bc9b324fb71cb6bdc3dfd42355efbd64634f7d2ec678a5a15757e69145f671d`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
+	-	`sha256:0c22fd29bd95221222824495015750f062fcf337845032c4d11be1c8166d9911`  
+		Last Modified: Wed, 14 Apr 2021 20:24:37 GMT  
 		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69d93b07db92b46680fe5ba78d29058e6f5b2ce49ba20cb10aeccb751b37d497`  
-		Last Modified: Wed, 10 Mar 2021 21:44:08 GMT  
-		Size: 1.4 KB (1433 bytes)  
+	-	`sha256:e034d998c8e3152093c8f2c30b0ac9122c528b8ba0889cadf3a3282059a8f96c`  
+		Last Modified: Wed, 14 Apr 2021 20:24:37 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bb6dc81911c7b01e751b8d5a08f7cf494f5542f166b2e1471a08ef82b4ebcb4`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1410 bytes)  
+	-	`sha256:80cd579cdba6539c678c1cfd7184427e5b0777e34c965e8c6ca62f8301dd629f`  
+		Last Modified: Wed, 14 Apr 2021 20:24:36 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a53bfaf85823badcda6fa4470993f24b9772597b13989ee71ec0b5686be93cbc`  
-		Last Modified: Wed, 10 Mar 2021 21:44:07 GMT  
-		Size: 1.4 KB (1410 bytes)  
+	-	`sha256:1ea0c59c3768ba8d3f4943669c834e3b8043899a0ee61ed325fa453559243f95`  
+		Last Modified: Wed, 14 Apr 2021 20:24:36 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5077aa28e94279b15dbe048f37904704877b5b4a932e67a3a12adf8bdfe9ada`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1436 bytes)  
+	-	`sha256:bc5f4c914fc136d87d2e00167556104cf17827c516e84c53785225cfeb214a42`  
+		Last Modified: Wed, 14 Apr 2021 20:24:40 GMT  
+		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5851fcb607a8afd06548b48e611020418ed88f0c0e1abcba7854089c8bf9729e`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1395 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:498aa4d3ee4135d0aaeccdf4fe0d8ec98c3ba95a92fd0b56dc73a461be700516`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1418 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0651b67304c2388b503cbd386e0235ec00a5a8437a9d115ba871152ae9d07103`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
+	-	`sha256:164712f851736c62b6da95357e6056173e390402e1a17b2f7559af8f42ce0134`  
+		Last Modified: Wed, 14 Apr 2021 20:24:35 GMT  
 		Size: 1.4 KB (1408 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1418b36ca2fc9603d0a6a28d6f4849cdfd80c3069ea494baeba2ce37e66b73d4`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1390 bytes)  
+	-	`sha256:5d73f78d7b9ccdb5963233ef77dab1188e2678cc7c9136ff183494cd28f893f0`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a50dd910f71fe0ceefc794aaee3e6669cd578ae8286348a76c60dc926778da33`  
-		Last Modified: Wed, 10 Mar 2021 21:44:04 GMT  
-		Size: 256.4 KB (256438 bytes)  
+	-	`sha256:b455a43ac6d0be6faf8dce0c59c609cc832963d9cc649b301f49ff79f218e439`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43a39a5ecfed250f608279f4544ced05934bd84e326d05f119a12081aa38b39f`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1397 bytes)  
+	-	`sha256:916f00b0ac9199b716d513a33d44003af6cd00e4b9b7a2feab64b84649d80640`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1431 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7ece2a763e6182c580aadb07399f77037c831dd03ee9cdad4f70b18759458094`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac88310e829bdb746ec804044c2a238dc2c6f64660688285a64205a255283c47`  
+		Last Modified: Wed, 14 Apr 2021 20:24:32 GMT  
+		Size: 1.4 KB (1404 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ed384ae90a546f9aad4b539596228057299114b9662407a708465a0ed7de3691`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1411 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9de7a040e97ee693dc826cc6130e42fe7597fbf48fe035d0e5f9f039166edae5`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e4c1c4ddd499c8a111514a0d3bc3b97381c76a6b33d1cb3f74752d42ddc3e43c`  
+		Last Modified: Wed, 14 Apr 2021 20:24:32 GMT  
+		Size: 255.9 KB (255932 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:96251eba56a444a75ccc3480986386b2d2abcce41beadf2f267bedaee332c54a`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2.3.0-alpine`
 
 ```console
-$ docker pull caddy@sha256:ff7266e7f0a93ad9b10c28b3625331d1162124c07a0a46b06958b01972ab33e8
+$ docker pull caddy@sha256:fa1ae85dc9b12ee47e98d7ef21db409eada3ed48f1865e4b1f1dd78f417132fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4539,259 +4539,259 @@ $ docker pull caddy@sha256:ff7266e7f0a93ad9b10c28b3625331d1162124c07a0a46b06958b
 ### `caddy:2.3.0-alpine` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:629c5800ccf51df482a4e63266e4570de3e573e862d902398b03cbfca2212b4d
+$ docker pull caddy@sha256:6fbf52298c46c55c572670b5395ecaee5d399338003c9bb4e4abed875c542f4f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.7 MB (14728095 bytes)**  
+-	Total Size: **14.7 MB (14728953 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e073d63a624f18bd8e2f94b9e84715e5a33a817db19afa42afc8ea95e59d568`
+-	Image ID: `sha256:7395cc3713b2ca5574a9b4aafc468a1533d16582efe47dcab74ed547540d698a`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 20:10:13 GMT
-ADD file:f77db8e5b937d8ebb7e254eccd4d311798ea9f4dd5081ea2a7e2b1d3790300c2 in / 
-# Wed, 31 Mar 2021 20:10:13 GMT
+# Wed, 14 Apr 2021 19:19:49 GMT
+ADD file:4f526aa99067d82b341f7ca538f7826b7c23a628f1b615eea2883a2d434c1b90 in / 
+# Wed, 14 Apr 2021 19:19:49 GMT
 CMD ["/bin/sh"]
-# Thu, 01 Apr 2021 13:53:15 GMT
+# Wed, 14 Apr 2021 20:10:47 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Thu, 01 Apr 2021 13:53:17 GMT
+# Wed, 14 Apr 2021 20:10:49 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Thu, 01 Apr 2021 13:53:17 GMT
+# Wed, 14 Apr 2021 20:10:49 GMT
 ENV CADDY_VERSION=v2.3.0
-# Thu, 01 Apr 2021 13:53:20 GMT
+# Wed, 14 Apr 2021 20:10:52 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 ENV XDG_CONFIG_HOME=/config
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 ENV XDG_DATA_HOME=/data
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 VOLUME [/config]
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 VOLUME [/data]
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 EXPOSE 80
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 EXPOSE 443
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 EXPOSE 2019
-# Thu, 01 Apr 2021 13:53:24 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 WORKDIR /srv
-# Thu, 01 Apr 2021 13:53:24 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:532819f3e44cebad88c82f5393801acb876b7a61d36b84bce646561789bb2018`  
-		Last Modified: Wed, 31 Mar 2021 20:11:03 GMT  
-		Size: 2.8 MB (2799712 bytes)  
+	-	`sha256:339de151aab4bc06eed8409daae147c408478cb538dacb90cc63f19ad4eba80b`  
+		Last Modified: Wed, 14 Apr 2021 19:20:51 GMT  
+		Size: 2.8 MB (2800567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccc82ca1670c70e5b605729b271409acba02ca26c3f669bf1d95a067fb853a90`  
-		Last Modified: Thu, 01 Apr 2021 13:54:20 GMT  
-		Size: 300.0 KB (300021 bytes)  
+	-	`sha256:8b7a0cd9cca5be9b30bbc70611052d1456502e1f338ce4b14946233b21cd6a9a`  
+		Last Modified: Wed, 14 Apr 2021 20:11:46 GMT  
+		Size: 300.0 KB (300016 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21d66f69260e9358ba74c27e0ed110b9ff7781c5f90d5d01f86d6ef289834382`  
-		Last Modified: Thu, 01 Apr 2021 13:54:17 GMT  
-		Size: 5.8 KB (5829 bytes)  
+	-	`sha256:b5666523658a43fbbdff6b8fca498a988f4dcecc3ce027f1701414658c21d4ea`  
+		Last Modified: Wed, 14 Apr 2021 20:11:46 GMT  
+		Size: 5.8 KB (5832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9b38557b1fd80a7712b7263f0896f076afdeb9f25f68a79e288b87490aa3047`  
-		Last Modified: Thu, 01 Apr 2021 13:54:19 GMT  
-		Size: 11.6 MB (11622380 bytes)  
+	-	`sha256:b097228407f13a161f68b188b0a4f255855b64d84e7b076745a744d5aa7ed8cf`  
+		Last Modified: Wed, 14 Apr 2021 20:11:49 GMT  
+		Size: 11.6 MB (11622383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd37d6fba45d5f1633f00b6a9d204abacad2a6918dc355706fe0decc0bc4e565`  
-		Last Modified: Thu, 01 Apr 2021 13:54:18 GMT  
-		Size: 153.0 B  
+	-	`sha256:40682d93cc09b4592a1b9c08d48d0a956b5eef4f123d80d1a12942482edb6aab`  
+		Last Modified: Wed, 14 Apr 2021 20:11:46 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2.3.0-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull caddy@sha256:b57cdc61b54865a7ff2ea4ef9d16458537d40e0dc25559d6540111874abbe4ce
+$ docker pull caddy@sha256:0df9df9725cab39fe073887c98b54bf7bf1c96b3ed0e23916737c7c4877576c6
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.9 MB (13855580 bytes)**  
+-	Total Size: **13.9 MB (13856181 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88293e19906b6b2275ff6e127e29960b1fdf0cf0c4baa4bbce4ea297e90db731`
+-	Image ID: `sha256:fce1c33ce4509195edc1c67d2dcd15c6c5fc0b35cec2e90714ec3007739600eb`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 17:19:11 GMT
-ADD file:00ac3d0df16779e7564cda9cbf94eef90ffa8043778a867272ff0135a1fb537f in / 
-# Wed, 31 Mar 2021 17:19:12 GMT
+# Wed, 14 Apr 2021 18:49:49 GMT
+ADD file:82fa6a18d24e3f535c9061d2e111d63fe6d8a27710bb34a17b326e605ff478be in / 
+# Wed, 14 Apr 2021 18:49:50 GMT
 CMD ["/bin/sh"]
-# Wed, 31 Mar 2021 17:36:32 GMT
+# Wed, 14 Apr 2021 19:45:19 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Wed, 31 Mar 2021 17:36:36 GMT
+# Wed, 14 Apr 2021 19:45:33 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Wed, 31 Mar 2021 17:36:38 GMT
+# Wed, 14 Apr 2021 19:45:36 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 31 Mar 2021 17:36:45 GMT
+# Wed, 14 Apr 2021 19:45:54 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Wed, 31 Mar 2021 17:36:51 GMT
+# Wed, 14 Apr 2021 19:46:03 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Wed, 31 Mar 2021 17:36:52 GMT
+# Wed, 14 Apr 2021 19:46:04 GMT
 ENV XDG_CONFIG_HOME=/config
-# Wed, 31 Mar 2021 17:36:53 GMT
+# Wed, 14 Apr 2021 19:46:05 GMT
 ENV XDG_DATA_HOME=/data
-# Wed, 31 Mar 2021 17:36:55 GMT
+# Wed, 14 Apr 2021 19:46:07 GMT
 VOLUME [/config]
-# Wed, 31 Mar 2021 17:36:55 GMT
+# Wed, 14 Apr 2021 19:46:08 GMT
 VOLUME [/data]
-# Wed, 31 Mar 2021 17:36:56 GMT
+# Wed, 14 Apr 2021 19:46:10 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 31 Mar 2021 17:36:58 GMT
+# Wed, 14 Apr 2021 19:46:11 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 31 Mar 2021 17:36:59 GMT
+# Wed, 14 Apr 2021 19:46:13 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 31 Mar 2021 17:37:00 GMT
+# Wed, 14 Apr 2021 19:46:16 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 31 Mar 2021 17:37:01 GMT
+# Wed, 14 Apr 2021 19:46:16 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 31 Mar 2021 17:37:03 GMT
+# Wed, 14 Apr 2021 19:46:18 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 31 Mar 2021 17:37:04 GMT
+# Wed, 14 Apr 2021 19:46:19 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 31 Mar 2021 17:37:05 GMT
+# Wed, 14 Apr 2021 19:46:20 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 31 Mar 2021 17:37:07 GMT
+# Wed, 14 Apr 2021 19:46:21 GMT
 EXPOSE 80
-# Wed, 31 Mar 2021 17:37:08 GMT
+# Wed, 14 Apr 2021 19:46:21 GMT
 EXPOSE 443
-# Wed, 31 Mar 2021 17:37:10 GMT
+# Wed, 14 Apr 2021 19:46:22 GMT
 EXPOSE 2019
-# Wed, 31 Mar 2021 17:37:11 GMT
+# Wed, 14 Apr 2021 19:46:23 GMT
 WORKDIR /srv
-# Wed, 31 Mar 2021 17:37:13 GMT
+# Wed, 14 Apr 2021 19:46:24 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:66e54586dae0889b30da12f7a66838d9b86511b58696c83c3b9166ff1a534bbe`  
-		Last Modified: Wed, 31 Mar 2021 17:20:05 GMT  
-		Size: 2.6 MB (2604658 bytes)  
+	-	`sha256:b452d2916bdfd021add56f1eda6bdea35400671ef07b38316ef82fce92a88fee`  
+		Last Modified: Wed, 14 Apr 2021 18:50:38 GMT  
+		Size: 2.6 MB (2605253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1532456df32c320ccd3c9ff5433c9e44d873ef87a0dc9fc29f9cf256b517eb4`  
-		Last Modified: Wed, 31 Mar 2021 17:38:50 GMT  
-		Size: 300.1 KB (300103 bytes)  
+	-	`sha256:6b83e8a6ea044be2a9e3c87c5fdc047ce9a52d1a64e48f8330d9a19002ecffe1`  
+		Last Modified: Wed, 14 Apr 2021 19:47:50 GMT  
+		Size: 300.1 KB (300117 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7263f61714ef61a0c59bef8e70bc49a741a357b0a0fc556b44f8344df37ea0f8`  
-		Last Modified: Wed, 31 Mar 2021 17:38:52 GMT  
-		Size: 5.8 KB (5830 bytes)  
+	-	`sha256:b9949bdfbb1d296dd158f8c2bb959f96c8da162a0d579f68fa3f5a4af58bed5b`  
+		Last Modified: Wed, 14 Apr 2021 19:47:50 GMT  
+		Size: 5.8 KB (5826 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:818002dab28746359de43d5a88d06c77cc3a353c838e15c6b6a67d48352cc5c0`  
-		Last Modified: Wed, 31 Mar 2021 17:38:54 GMT  
-		Size: 10.9 MB (10944835 bytes)  
+	-	`sha256:c2c5cc316af29a89f9a1d4e279b5d1bb964095a15795647d013f40921bc808c3`  
+		Last Modified: Wed, 14 Apr 2021 19:47:54 GMT  
+		Size: 10.9 MB (10944831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7979a3c808bf5c07c668f5966a15458dbfe9aba5aa7d761e690dd3a5cadf45eb`  
-		Last Modified: Wed, 31 Mar 2021 17:38:52 GMT  
+	-	`sha256:2f6670cc680ce5e5d9a0adfc380fe4a89ac2a2dcef5a7adeb874967a356e6742`  
+		Last Modified: Wed, 14 Apr 2021 19:47:50 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2.3.0-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull caddy@sha256:6d510324512c20fc0d40aeb8b6e5b98255c857ad2dee894b6cb6e66f0231cf9b
+$ docker pull caddy@sha256:1a41623f53d582c8b503ae859f6ae98c7c0695eddb11bdbf8514b9b914955c3d
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.6 MB (13638799 bytes)**  
+-	Total Size: **13.6 MB (13639723 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42db38da968682707e6cf0fabb16f93770388907d8a208fca0db74cae3183ba2`
+-	Image ID: `sha256:9a4b837694902a1a259a4915444feda59d895ed37ffbef66b8518b9a884f029c`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 18:13:45 GMT
-ADD file:1270a9135e4e3d6bcd51f9c8bb7a5129c493366412591f1a6885db98056a572e in / 
-# Wed, 31 Mar 2021 18:13:47 GMT
+# Wed, 14 Apr 2021 18:57:50 GMT
+ADD file:d844cc7b5e00fb62be39d903a2fb4a08f700e75112c8eef1f31101e846ed010d in / 
+# Wed, 14 Apr 2021 18:57:52 GMT
 CMD ["/bin/sh"]
-# Thu, 01 Apr 2021 08:11:44 GMT
+# Wed, 14 Apr 2021 19:39:25 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Thu, 01 Apr 2021 08:11:47 GMT
+# Wed, 14 Apr 2021 19:39:32 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Thu, 01 Apr 2021 08:11:48 GMT
+# Wed, 14 Apr 2021 19:39:34 GMT
 ENV CADDY_VERSION=v2.3.0
-# Thu, 01 Apr 2021 08:11:52 GMT
+# Wed, 14 Apr 2021 19:39:38 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Thu, 01 Apr 2021 08:11:55 GMT
+# Wed, 14 Apr 2021 19:39:40 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Thu, 01 Apr 2021 08:11:56 GMT
+# Wed, 14 Apr 2021 19:39:41 GMT
 ENV XDG_CONFIG_HOME=/config
-# Thu, 01 Apr 2021 08:11:57 GMT
+# Wed, 14 Apr 2021 19:39:42 GMT
 ENV XDG_DATA_HOME=/data
-# Thu, 01 Apr 2021 08:11:58 GMT
+# Wed, 14 Apr 2021 19:39:43 GMT
 VOLUME [/config]
-# Thu, 01 Apr 2021 08:11:59 GMT
+# Wed, 14 Apr 2021 19:39:45 GMT
 VOLUME [/data]
-# Thu, 01 Apr 2021 08:12:00 GMT
+# Wed, 14 Apr 2021 19:39:46 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Thu, 01 Apr 2021 08:12:01 GMT
+# Wed, 14 Apr 2021 19:39:49 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Thu, 01 Apr 2021 08:12:02 GMT
+# Wed, 14 Apr 2021 19:39:51 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Thu, 01 Apr 2021 08:12:03 GMT
+# Wed, 14 Apr 2021 19:39:52 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Thu, 01 Apr 2021 08:12:05 GMT
+# Wed, 14 Apr 2021 19:39:53 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Thu, 01 Apr 2021 08:12:06 GMT
+# Wed, 14 Apr 2021 19:39:54 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Thu, 01 Apr 2021 08:12:07 GMT
+# Wed, 14 Apr 2021 19:39:55 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Thu, 01 Apr 2021 08:12:08 GMT
+# Wed, 14 Apr 2021 19:39:55 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Thu, 01 Apr 2021 08:12:09 GMT
+# Wed, 14 Apr 2021 19:39:56 GMT
 EXPOSE 80
-# Thu, 01 Apr 2021 08:12:11 GMT
+# Wed, 14 Apr 2021 19:39:57 GMT
 EXPOSE 443
-# Thu, 01 Apr 2021 08:12:13 GMT
+# Wed, 14 Apr 2021 19:39:58 GMT
 EXPOSE 2019
-# Thu, 01 Apr 2021 08:12:15 GMT
+# Wed, 14 Apr 2021 19:39:59 GMT
 WORKDIR /srv
-# Thu, 01 Apr 2021 08:12:16 GMT
+# Wed, 14 Apr 2021 19:40:00 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:b04429a2165487924dcbfedfff74fa262e6828327d04bb4b1c6a477096f5010e`  
-		Last Modified: Wed, 31 Mar 2021 18:15:12 GMT  
-		Size: 2.4 MB (2408269 bytes)  
+	-	`sha256:420c7481a3a76d5d12df768d2745ddbe40357df0af780c756a5a7d1f2a43d288`  
+		Last Modified: Wed, 14 Apr 2021 18:58:46 GMT  
+		Size: 2.4 MB (2409178 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:547b5d01ba24abc02b4f05f8134bfb156ce1840f496ed03a1316c882625bd41f`  
-		Last Modified: Thu, 01 Apr 2021 08:13:34 GMT  
-		Size: 299.2 KB (299199 bytes)  
+	-	`sha256:b239ad5e698454501b0de011bffea35a660806a0b85a6141776581e3a98bc467`  
+		Last Modified: Wed, 14 Apr 2021 19:41:24 GMT  
+		Size: 299.2 KB (299210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a883a914d37801ae97b0fac82c62e4f70ef4c92fc53417a91a23b2e69d36d9bb`  
-		Last Modified: Thu, 01 Apr 2021 08:13:34 GMT  
+	-	`sha256:8a0460b038be93717158ad9cdb6f83768b7129eaf4fcaef8620adc7509d0e5fe`  
+		Last Modified: Wed, 14 Apr 2021 19:41:23 GMT  
 		Size: 5.8 KB (5833 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:475143e7b89d1a36700916ec3c8f0caae9b57d5cd9ba187b9f3fd5d9a71eddcf`  
-		Last Modified: Thu, 01 Apr 2021 08:13:38 GMT  
-		Size: 10.9 MB (10925346 bytes)  
+	-	`sha256:0905d1ca8c4f74966ae8a7b5ebe8fdb33854c4a759d543d767dd9a0add81f155`  
+		Last Modified: Wed, 14 Apr 2021 19:41:29 GMT  
+		Size: 10.9 MB (10925348 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e79cdab22a3397c4a98f63a7e96c51881033744b1f198c4984072e7303e9f73`  
-		Last Modified: Thu, 01 Apr 2021 08:13:34 GMT  
-		Size: 152.0 B  
+	-	`sha256:2f02da274f552e184a7fa5527990e666d77c70e3715a0d96b7588e7433b3022a`  
+		Last Modified: Wed, 14 Apr 2021 19:41:23 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2.3.0-alpine` - linux; arm64 variant v8
@@ -4883,179 +4883,179 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ### `caddy:2.3.0-alpine` - linux; ppc64le
 
 ```console
-$ docker pull caddy@sha256:bffc665d927b1ed51d5f36dafc191678472776dea35931198b09deebbe4d31fb
+$ docker pull caddy@sha256:f551e1db7910e2d5235d303760aff5b514fc6e8b49d8d67d434bb23c40ac25db
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.4 MB (13355782 bytes)**  
+-	Total Size: **13.4 MB (13356454 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60f81a6d1059252f032458e7bf5dff42ef2844beec6f1c212b5901fb867fdf0a`
+-	Image ID: `sha256:982bd235f46e537404cdab42c3dfb3d0058f97ed5d7984f2e71ad8734adcc6a8`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 18:56:11 GMT
-ADD file:d51af61c5955c980d18387ab532110c3874f95a87768be84dfd1eeb3e701d3a4 in / 
-# Wed, 31 Mar 2021 18:56:16 GMT
+# Wed, 14 Apr 2021 19:31:22 GMT
+ADD file:f8b081207f6d35f8ebd06aa471e350644151d183801f678def586d8f37e81366 in / 
+# Wed, 14 Apr 2021 19:31:29 GMT
 CMD ["/bin/sh"]
-# Thu, 01 Apr 2021 20:19:14 GMT
+# Wed, 14 Apr 2021 22:09:04 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Thu, 01 Apr 2021 20:19:27 GMT
+# Wed, 14 Apr 2021 22:09:16 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Thu, 01 Apr 2021 20:19:34 GMT
+# Wed, 14 Apr 2021 22:09:24 GMT
 ENV CADDY_VERSION=v2.3.0
-# Thu, 01 Apr 2021 20:19:48 GMT
+# Wed, 14 Apr 2021 22:09:39 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Thu, 01 Apr 2021 20:20:00 GMT
+# Wed, 14 Apr 2021 22:09:51 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Thu, 01 Apr 2021 20:20:05 GMT
+# Wed, 14 Apr 2021 22:09:56 GMT
 ENV XDG_CONFIG_HOME=/config
-# Thu, 01 Apr 2021 20:20:12 GMT
+# Wed, 14 Apr 2021 22:10:01 GMT
 ENV XDG_DATA_HOME=/data
-# Thu, 01 Apr 2021 20:20:18 GMT
+# Wed, 14 Apr 2021 22:10:06 GMT
 VOLUME [/config]
-# Thu, 01 Apr 2021 20:20:23 GMT
+# Wed, 14 Apr 2021 22:10:15 GMT
 VOLUME [/data]
-# Thu, 01 Apr 2021 20:20:31 GMT
+# Wed, 14 Apr 2021 22:10:22 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Thu, 01 Apr 2021 20:20:39 GMT
+# Wed, 14 Apr 2021 22:10:32 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Thu, 01 Apr 2021 20:20:48 GMT
+# Wed, 14 Apr 2021 22:10:40 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Thu, 01 Apr 2021 20:20:54 GMT
+# Wed, 14 Apr 2021 22:10:46 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Thu, 01 Apr 2021 20:21:00 GMT
+# Wed, 14 Apr 2021 22:10:52 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Thu, 01 Apr 2021 20:21:05 GMT
+# Wed, 14 Apr 2021 22:10:58 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Thu, 01 Apr 2021 20:21:09 GMT
+# Wed, 14 Apr 2021 22:11:03 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Thu, 01 Apr 2021 20:21:14 GMT
+# Wed, 14 Apr 2021 22:11:08 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Thu, 01 Apr 2021 20:21:21 GMT
+# Wed, 14 Apr 2021 22:11:14 GMT
 EXPOSE 80
-# Thu, 01 Apr 2021 20:21:27 GMT
+# Wed, 14 Apr 2021 22:11:20 GMT
 EXPOSE 443
-# Thu, 01 Apr 2021 20:21:33 GMT
+# Wed, 14 Apr 2021 22:11:27 GMT
 EXPOSE 2019
-# Thu, 01 Apr 2021 20:21:42 GMT
+# Wed, 14 Apr 2021 22:11:35 GMT
 WORKDIR /srv
-# Thu, 01 Apr 2021 20:21:47 GMT
+# Wed, 14 Apr 2021 22:11:41 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:d6d4557865d9cec3513c1a5e744cb1073a563d464b8d546911289b9df9998f1b`  
-		Last Modified: Wed, 31 Mar 2021 18:57:36 GMT  
-		Size: 2.8 MB (2806070 bytes)  
+	-	`sha256:45707b9629c4ab8c6046680737229218fe844f38d08e5458b24605e1dbfd2709`  
+		Last Modified: Wed, 14 Apr 2021 19:32:50 GMT  
+		Size: 2.8 MB (2806750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afc0e09b51c0cca190757d6fc9c2b15a635a361717a65973c8d6edf77918d6d5`  
-		Last Modified: Thu, 01 Apr 2021 20:27:39 GMT  
-		Size: 302.3 KB (302335 bytes)  
+	-	`sha256:d93dd31358a6e859a05bb506b946720f02c7ec7969776d811b20eaaa84508cd7`  
+		Last Modified: Wed, 14 Apr 2021 22:15:41 GMT  
+		Size: 302.3 KB (302339 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:091713ba252aea42d1ddb0424ba2c2861b3afd2d0102c5d0a6070bacd31e8b49`  
-		Last Modified: Thu, 01 Apr 2021 20:27:39 GMT  
-		Size: 5.8 KB (5832 bytes)  
+	-	`sha256:f8077b8c9cca163d9a34281a866cf5fe991ff8c160ebd1ab1b617c6b722ec690`  
+		Last Modified: Wed, 14 Apr 2021 22:15:41 GMT  
+		Size: 5.8 KB (5831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1840f6bc70853fb9cc5e9c5752486488368649459a0beaa0684081a5b4a44bd4`  
-		Last Modified: Thu, 01 Apr 2021 20:27:42 GMT  
-		Size: 10.2 MB (10241392 bytes)  
+	-	`sha256:55884816b8eca8150db9473989410e372c69c5431deb51a6cacd029895cf3dd6`  
+		Last Modified: Wed, 14 Apr 2021 22:15:43 GMT  
+		Size: 10.2 MB (10241380 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1fb03f086aa28c855432404e128ff2009c1198d61578654e584a12062e24953f`  
-		Last Modified: Thu, 01 Apr 2021 20:27:39 GMT  
-		Size: 153.0 B  
+	-	`sha256:51efee06e0a650ff5f146fc54a695d4bf2b44e19da18120fdc494982d52cdd62`  
+		Last Modified: Wed, 14 Apr 2021 22:15:41 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2.3.0-alpine` - linux; s390x
 
 ```console
-$ docker pull caddy@sha256:9d992badb7530225182676af12ae945f5f2de2f5ad7d3946b397892a6de4c123
+$ docker pull caddy@sha256:68aaf625a22bff4e71edf895129baa2d562765c24ac81a5c68aff2995ebf89c2
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.1 MB (14145974 bytes)**  
+-	Total Size: **14.1 MB (14146947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b9c8a68869d0806c29e6c2c9c655d3e9085af285c6c24ea651ad3bdffd714e38`
+-	Image ID: `sha256:dbfd454f0dfa64ee1a952f9ed74a3f3bda3688a9565f062c3ea37e48b54eb210`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 17:15:04 GMT
-ADD file:1f37b92ea1f573c4810b1d056dc4880cf4035e143451d9b2b76fac1e3b462248 in / 
-# Wed, 31 Mar 2021 17:15:04 GMT
+# Wed, 14 Apr 2021 18:41:42 GMT
+ADD file:c73a5ff435939cdc9d621ee9dc2aa5a54a5f5e0241caae8dc948c03c423d9fef in / 
+# Wed, 14 Apr 2021 18:41:42 GMT
 CMD ["/bin/sh"]
-# Wed, 31 Mar 2021 18:55:58 GMT
+# Wed, 14 Apr 2021 20:07:21 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Wed, 31 Mar 2021 18:56:00 GMT
+# Wed, 14 Apr 2021 20:07:22 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Wed, 31 Mar 2021 18:56:00 GMT
+# Wed, 14 Apr 2021 20:07:22 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 31 Mar 2021 18:56:04 GMT
+# Wed, 14 Apr 2021 20:07:25 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:26 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:26 GMT
 ENV XDG_CONFIG_HOME=/config
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 ENV XDG_DATA_HOME=/data
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 VOLUME [/config]
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 VOLUME [/data]
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 EXPOSE 80
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 EXPOSE 443
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 EXPOSE 2019
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:30 GMT
 WORKDIR /srv
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:30 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:38ca5430c9af12b6b6dee7c10eb6b1eb0e4eb4f5f02a97890579c4b049d00233`  
-		Last Modified: Wed, 31 Mar 2021 17:15:46 GMT  
-		Size: 2.6 MB (2567453 bytes)  
+	-	`sha256:27efec644c4207cbc4d1400f84f3402937aab5ce72489976148896e42a219820`  
+		Last Modified: Wed, 14 Apr 2021 18:42:24 GMT  
+		Size: 2.6 MB (2568428 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe8eb19b6319d0b09121581759094c3eb58e5574e2063affb6c42c0e1a1937a0`  
-		Last Modified: Wed, 31 Mar 2021 18:57:00 GMT  
+	-	`sha256:5dab58470b754d248933aa56b48394e3ee4db4561d430d23ea378f0371ca59cb`  
+		Last Modified: Wed, 14 Apr 2021 20:08:16 GMT  
 		Size: 300.5 KB (300471 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbd6e269a873b8a21e2787b0ea05662c0f2676aa9043f52b8884081965be7112`  
-		Last Modified: Wed, 31 Mar 2021 18:57:00 GMT  
-		Size: 5.8 KB (5830 bytes)  
+	-	`sha256:fd514b608428ea44dae7dc67e641a276593e7715178d86d7702153521de849d7`  
+		Last Modified: Wed, 14 Apr 2021 20:08:16 GMT  
+		Size: 5.8 KB (5832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02f6a8a7e19cb11edbda771ce361181202915f4760cdaef5e290b1758cc7b88c`  
-		Last Modified: Wed, 31 Mar 2021 18:57:02 GMT  
-		Size: 11.3 MB (11272066 bytes)  
+	-	`sha256:a437814dab55b178c71f55598a70d0b532b3f645bdeb43e89244a6ebcde01446`  
+		Last Modified: Wed, 14 Apr 2021 20:08:18 GMT  
+		Size: 11.3 MB (11272061 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec92d2dcab4ee41e4e626d8b360a6feff3822db894894865a36bbe9cfc759df0`  
-		Last Modified: Wed, 31 Mar 2021 18:57:00 GMT  
-		Size: 154.0 B  
+	-	`sha256:412be9af105c69ee35fec76e8c0dbde8c8ba61c774b7d354e9c9fc8f538e8155`  
+		Last Modified: Wed, 14 Apr 2021 20:08:16 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2.3.0-builder`
 
 ```console
-$ docker pull caddy@sha256:24e707cb4e7f90c12ca1f5fb4c1df08134db8d1ede9b2bce4075f12176f270b2
+$ docker pull caddy@sha256:c17fff95c980a166938258ea9cc32f1fc40d9e6e566ac63b502ccac45262c38b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5066,8 +5066,8 @@ $ docker pull caddy@sha256:24e707cb4e7f90c12ca1f5fb4c1df08134db8d1ede9b2bce4075f
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
 	-	linux; s390x
-	-	windows version 10.0.17763.1817; amd64
-	-	windows version 10.0.14393.4283; amd64
+	-	windows version 10.0.17763.1879; amd64
+	-	windows version 10.0.14393.4350; amd64
 
 ### `caddy:2.3.0-builder` - linux; amd64
 
@@ -5585,58 +5585,58 @@ WORKDIR /usr/bin
 		Size: 405.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `caddy:2.3.0-builder` - windows version 10.0.17763.1817; amd64
+### `caddy:2.3.0-builder` - windows version 10.0.17763.1879; amd64
 
 ```console
-$ docker pull caddy@sha256:89576372020fc2eb4c0a7f3a3e1202a7b5833822dcac78836f6f48dc05cf1b15
+$ docker pull caddy@sha256:5d074fc96daecf65b6ea7aaaf9d2217f2c8f4e27a44e13800ee34ce2110620a1
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 GB (2636681347 bytes)**  
+-	Total Size: **2.6 GB (2636098719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:433619fcb10b7d636ff7d2ab6165f3648a45f1587bf0fc5a17c16bb0b4ea13f9`
+-	Image ID: `sha256:85e88c818aa8954ae57e277c9730cdfa1dceee6b1cc34304b32f23f94a4ee916`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 07 May 2020 05:09:25 GMT
 RUN Apply image 1809-RTM-amd64
-# Sat, 27 Feb 2021 09:32:06 GMT
+# Fri, 09 Apr 2021 20:34:41 GMT
 RUN Install update 1809-amd64
-# Wed, 10 Mar 2021 13:08:20 GMT
+# Wed, 14 Apr 2021 12:09:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 13:37:21 GMT
+# Wed, 14 Apr 2021 12:30:33 GMT
 ENV GIT_VERSION=2.23.0
-# Wed, 10 Mar 2021 13:37:22 GMT
+# Wed, 14 Apr 2021 12:30:35 GMT
 ENV GIT_TAG=v2.23.0.windows.1
-# Wed, 10 Mar 2021 13:37:23 GMT
+# Wed, 14 Apr 2021 12:30:36 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/MinGit-2.23.0-64-bit.zip
-# Wed, 10 Mar 2021 13:37:24 GMT
+# Wed, 14 Apr 2021 12:30:37 GMT
 ENV GIT_DOWNLOAD_SHA256=8f65208f92c0b4c3ae4c0cf02d4b5f6791d539cd1a07b2df62b7116467724735
-# Wed, 10 Mar 2021 13:38:55 GMT
+# Wed, 14 Apr 2021 12:31:55 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Wed, 10 Mar 2021 13:38:56 GMT
+# Wed, 14 Apr 2021 12:31:57 GMT
 ENV GOPATH=C:\gopath
-# Wed, 10 Mar 2021 13:39:22 GMT
+# Wed, 14 Apr 2021 12:32:38 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 02 Apr 2021 00:25:42 GMT
+# Wed, 14 Apr 2021 12:47:04 GMT
 ENV GOLANG_VERSION=1.15.11
-# Fri, 02 Apr 2021 00:28:23 GMT
+# Wed, 14 Apr 2021 12:50:03 GMT
 RUN $url = 'https://storage.googleapis.com/golang/go1.15.11.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '56f63de17cd739287de6d9f3cfdad3b781ad3e4a18aae20ece994ee97c1819fd'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 02 Apr 2021 00:28:25 GMT
+# Wed, 14 Apr 2021 12:50:05 GMT
 WORKDIR C:\gopath
-# Fri, 02 Apr 2021 01:03:34 GMT
+# Wed, 14 Apr 2021 20:10:39 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 02 Apr 2021 01:03:35 GMT
+# Wed, 14 Apr 2021 20:10:40 GMT
 ENV XCADDY_VERSION=v0.1.8
-# Fri, 02 Apr 2021 01:03:36 GMT
+# Wed, 14 Apr 2021 20:10:41 GMT
 ENV CADDY_VERSION=v2.3.0
-# Fri, 02 Apr 2021 01:03:38 GMT
+# Wed, 14 Apr 2021 20:10:42 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Fri, 02 Apr 2021 01:04:03 GMT
+# Wed, 14 Apr 2021 20:11:15 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.1.8/xcaddy_0.1.8_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('ccbc594da07adff41098959a78efaaee42fca4e5feb7806661d00841229b20ff1c47fed024c7a84e8554d3e8be3f162d3750e5e8347d6a230c496d4b133213e8')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Fri, 02 Apr 2021 01:04:05 GMT
+# Wed, 14 Apr 2021 20:11:16 GMT
 WORKDIR C:\
 ```
 
@@ -5644,130 +5644,130 @@ WORKDIR C:\
 	-	`sha256:4612f6d0b889cad0ed0292fae3a0b0c8a9e49aff6dea8eb049b2386d9b07986f`  
 		Size: 1.7 GB (1718332879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ff1512f88ecd4ff0a91ade34d43733c48834433e35f062f80e6e70d706f8d73`  
-		Size: 743.2 MB (743201590 bytes)  
+	-	`sha256:399f118dfaa9a753e98d128238b944432c7bcabea88a2998a6efbbece28ed303`  
+		Size: 751.4 MB (751421005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ebe61daec6d671bc2c1c6fe61ac9825fb552e9cef3672d0a7dbec719d125ae64`  
-		Last Modified: Wed, 10 Mar 2021 13:21:09 GMT  
-		Size: 1.4 KB (1430 bytes)  
+	-	`sha256:106dbf3373fce4f0ba5e00ad54824c597f2894605fa7d8ef446ad7ea3b97449f`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55f55c0bb3b38761f0aaeef923efdf23ab140f64a5549388e9aa125fe79780b0`  
-		Last Modified: Wed, 10 Mar 2021 14:02:53 GMT  
-		Size: 1.4 KB (1439 bytes)  
+	-	`sha256:ac56922ba0ee0ac19bcae98f5fb4b7427d31ef3c709f27cfb2c785fd13a611c4`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a312e589b5b4b52c93afc65c4053591faf5d602a159699e1d8fd7cb7257a1e19`  
-		Last Modified: Wed, 10 Mar 2021 14:02:53 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:0f1723430d5101a2d617d3dbf4bc2a121b3f4b4432105aa2941e1afab8f130b9`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
+		Size: 1.4 KB (1407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5a36351186e9a8092baf10dfbdfd28b7dce39bcb5b543246f650bf4ad9549d6`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
+	-	`sha256:ab2f4dc6e9a77d69a3d172368f4ae471b31c588d6201c2386e4ac62fd83faa16`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
+		Size: 1.4 KB (1434 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aaea47861a9221a4f1e5750db237c619796c612756a5e75e2cb443b1731ae8a8`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
+		Size: 1.4 KB (1410 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2b4be4ebd8eabefdb01f27dafad85e65289b95ca15591c14304c7792db99b54b`  
+		Last Modified: Wed, 14 Apr 2021 12:58:35 GMT  
+		Size: 30.2 MB (30155601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f6f66ae3738a83ea41b428b49261d4522d57df1617fbd1aa362d93f1e2802643`  
+		Last Modified: Wed, 14 Apr 2021 12:57:58 GMT  
+		Size: 1.4 KB (1442 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e2108b314c24064a0c250f72017cc64b3bf68915655327728a267c98985a5ff7`  
+		Last Modified: Wed, 14 Apr 2021 12:57:58 GMT  
+		Size: 324.6 KB (324649 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c28a6b8d8a4b8aea18e07888051dac03e88f4132fba08dca72e5795d9533dd3d`  
+		Last Modified: Wed, 14 Apr 2021 13:04:59 GMT  
+		Size: 1.3 KB (1300 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dc67fec1bfee8619d88a924c4f9b9f4a04d2a0a1d199406157bb073b9f48d588`  
+		Last Modified: Wed, 14 Apr 2021 13:07:33 GMT  
+		Size: 134.1 MB (134133939 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:09fe57ae793e79818d065737c8e995bb1b73296275794af222be695733711652`  
+		Last Modified: Wed, 14 Apr 2021 13:04:59 GMT  
+		Size: 1.6 KB (1562 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5134c3d8291dc3a52f7fad327cccf50377f2f362488fbcb8405addc74c0eedcf`  
+		Last Modified: Wed, 14 Apr 2021 20:25:05 GMT  
 		Size: 1.4 KB (1431 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85bf84abeceee0a3b5a380cf6aa46e231424d48c1781e88f7f96344fdd400753`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
-		Size: 1.4 KB (1425 bytes)  
+	-	`sha256:9d60772069c77cb2a80fec9f6e4d18084a4a919d4f776079dfee7903331331e7`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfcb0c1de08b3116c910ff0e9573389536913cddb0462da67f13cc24f09b479b`  
-		Last Modified: Wed, 10 Mar 2021 14:02:55 GMT  
-		Size: 34.5 MB (34540168 bytes)  
+	-	`sha256:4716fdd15cdffc3b1aa557c81d58c2d0c343f9bfbfb501325b4cdc3bfeb426d9`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:121ca5c84aae657554fc278543816ed7a73aa34867b296c486181ff025bde056`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
-		Size: 1.4 KB (1408 bytes)  
+	-	`sha256:4bc11d2d339a72dd92f86f4fcc8e6fc299da2b6b381147f41dbd8d789e0c944e`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e1fde90e4880470a95a23f5277f201512a5e7cad1fc6c1bf100e06df43201b0`  
-		Last Modified: Wed, 10 Mar 2021 14:02:44 GMT  
-		Size: 338.8 KB (338777 bytes)  
+	-	`sha256:2909c1d8e32571506ce36cda43c7b113b299e280d6d7dfffafe5cd6284595348`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.7 MB (1712288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddf005729e9b7c9f2912ff8e30bec3d383755302fe0b20e361d87ed43a703519`  
-		Last Modified: Fri, 02 Apr 2021 00:43:41 GMT  
-		Size: 1.4 KB (1409 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6be9af25c23d2108f315f14a45d27ecfe24ceb05852132cf721a61ee44495e1a`  
-		Last Modified: Fri, 02 Apr 2021 00:44:11 GMT  
-		Size: 138.5 MB (138534624 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1592b7415bb7c21ec31f9b97bed86b4b01c96621f385d9da5903fa7c320d4e47`  
-		Last Modified: Fri, 02 Apr 2021 00:43:41 GMT  
-		Size: 1.6 KB (1590 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aae6b99eb587e6a00f40f4c134c6b7d4b8d1bc9d9d17b14538d30b6c689e5bc2`  
-		Last Modified: Fri, 02 Apr 2021 01:09:29 GMT  
-		Size: 1.3 KB (1334 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f38d285524127fff971c8f6c086256b3907c8428d162347bcba0f3bcf6d64fa9`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.3 KB (1345 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de22f3dc30fb1b76d85e47461eb558cc38cd60ccd8d02c6d8bd9aea7cce3e909`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5063c8d06382902b304af0538c9114e087db04e693551e92d15ffd12dcca542`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.4 KB (1378 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:313a2e87390c3ef15da4fd9f3b978ef539bc6b5bf8d3e54d23f28e4acd386563`  
-		Last Modified: Fri, 02 Apr 2021 01:09:29 GMT  
-		Size: 1.7 MB (1715051 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a4ed62f1fbb34e8dfbbf3e11e5f7aa91c4e21c7ac1debbbf86e2561d6ecc5ea`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:a5e56de156a63d8492bf70144c9e28ae975db36a6a57c54e734c96e20fb8bb13`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1362 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `caddy:2.3.0-builder` - windows version 10.0.14393.4283; amd64
+### `caddy:2.3.0-builder` - windows version 10.0.14393.4350; amd64
 
 ```console
-$ docker pull caddy@sha256:017255652cc26ea2af428ecc3b6f2222ee64d88cfdf1c34e3522f048aa461ee9
+$ docker pull caddy@sha256:436f2a16a677c719d951ddd10a1f475e81cc61b0726c7a4d5f76bdea16e3d215
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 GB (5997836720 bytes)**  
+-	Total Size: **6.0 GB (5982128974 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08a9fde1e66982a65a46dea5c07548ac8afcd29b6f304afe23a8ea9bcdcf186f`
+-	Image ID: `sha256:3d1658b3cebc6cc5691856945858057a4e3925a991ead9db618b5058d55e445e`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sat, 19 Nov 2016 17:05:00 GMT
 RUN Apply image 1607-RTM-amd64
-# Wed, 03 Mar 2021 18:02:00 GMT
+# Wed, 07 Apr 2021 21:54:00 GMT
 RUN Install update ltsc2016-amd64
-# Wed, 10 Mar 2021 13:42:05 GMT
+# Wed, 14 Apr 2021 12:35:33 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 13:42:06 GMT
+# Wed, 14 Apr 2021 12:35:34 GMT
 ENV GIT_VERSION=2.23.0
-# Wed, 10 Mar 2021 13:42:07 GMT
+# Wed, 14 Apr 2021 12:35:35 GMT
 ENV GIT_TAG=v2.23.0.windows.1
-# Wed, 10 Mar 2021 13:42:08 GMT
+# Wed, 14 Apr 2021 12:35:36 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/MinGit-2.23.0-64-bit.zip
-# Wed, 10 Mar 2021 13:42:09 GMT
+# Wed, 14 Apr 2021 12:35:38 GMT
 ENV GIT_DOWNLOAD_SHA256=8f65208f92c0b4c3ae4c0cf02d4b5f6791d539cd1a07b2df62b7116467724735
-# Wed, 10 Mar 2021 13:44:31 GMT
+# Wed, 14 Apr 2021 12:38:01 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Wed, 10 Mar 2021 13:44:32 GMT
+# Wed, 14 Apr 2021 12:38:02 GMT
 ENV GOPATH=C:\gopath
-# Wed, 10 Mar 2021 13:45:47 GMT
+# Wed, 14 Apr 2021 12:39:34 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 02 Apr 2021 00:28:41 GMT
+# Wed, 14 Apr 2021 12:50:19 GMT
 ENV GOLANG_VERSION=1.15.11
-# Fri, 02 Apr 2021 00:32:35 GMT
+# Wed, 14 Apr 2021 12:54:08 GMT
 RUN $url = 'https://storage.googleapis.com/golang/go1.15.11.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '56f63de17cd739287de6d9f3cfdad3b781ad3e4a18aae20ece994ee97c1819fd'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 02 Apr 2021 00:32:37 GMT
+# Wed, 14 Apr 2021 12:54:10 GMT
 WORKDIR C:\gopath
-# Fri, 02 Apr 2021 01:04:13 GMT
+# Wed, 14 Apr 2021 20:11:23 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 02 Apr 2021 01:04:14 GMT
+# Wed, 14 Apr 2021 20:11:24 GMT
 ENV XCADDY_VERSION=v0.1.8
-# Fri, 02 Apr 2021 01:04:15 GMT
+# Wed, 14 Apr 2021 20:11:25 GMT
 ENV CADDY_VERSION=v2.3.0
-# Fri, 02 Apr 2021 01:04:16 GMT
+# Wed, 14 Apr 2021 20:11:26 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Fri, 02 Apr 2021 01:05:43 GMT
+# Wed, 14 Apr 2021 20:12:59 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.1.8/xcaddy_0.1.8_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('ccbc594da07adff41098959a78efaaee42fca4e5feb7806661d00841229b20ff1c47fed024c7a84e8554d3e8be3f162d3750e5e8347d6a230c496d4b133213e8')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Fri, 02 Apr 2021 01:05:45 GMT
+# Wed, 14 Apr 2021 20:13:01 GMT
 WORKDIR C:\
 ```
 
@@ -5776,76 +5776,76 @@ WORKDIR C:\
 		Last Modified: Tue, 18 Sep 2018 20:20:50 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:30bda99601c5cbd3b2118409f401852ea648e2319bd81518723e476b28d764c5`  
-		Size: 1.7 GB (1726924885 bytes)  
+	-	`sha256:00b4edb823e6a375d179a28cbfa682c2379d62179e1518485902d6e68b9a9d1e`  
+		Size: 1.7 GB (1724897968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:76680da9dc6db108ddf2e353c494b45e8486a6751619a13ed8fb3ad64b9a16e9`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bb52885e05952959b0fa7aaff23561fcf14d294aed336112b388c94e67709e4f`  
+		Last Modified: Wed, 14 Apr 2021 12:59:14 GMT  
+		Size: 1.4 KB (1406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea2092de86b10f822dfd3a0d8e8dc35924823393cf8301e6db8f8a0a2879fb18`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1306 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ac6e05dba1a284b10130ada4ed7581f5a1c5a90986038e31cc8213e215ca23`  
-		Last Modified: Wed, 10 Mar 2021 14:06:07 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a636ee1e87a6b10caeaef03b68f084d58b5c8412fe4b10ba5d851a6965917196`  
-		Last Modified: Wed, 10 Mar 2021 14:06:01 GMT  
-		Size: 1.3 KB (1322 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a9e03ef5102108f3595c37759ead10b0cfb624aa0f102dbae3b6abb18f03b56`  
-		Last Modified: Wed, 10 Mar 2021 14:06:01 GMT  
-		Size: 1.4 KB (1414 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:840634d0d343cc458ff1f028b165fab14415bf252ce2b7fdb726c41d035c64ff`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 35.3 MB (35273703 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b968b2b2cb37afe5893ed1aa040b1055605f41e8371fe42fca9c6e06bb96c2ed`  
-		Last Modified: Wed, 10 Mar 2021 14:05:55 GMT  
-		Size: 1.4 KB (1381 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b01350c0465bbc3ff96b788fef94740af9378a1cfe9f3c1fb50ffed30c8a7ad`  
-		Last Modified: Wed, 10 Mar 2021 14:05:59 GMT  
-		Size: 10.1 MB (10139029 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a055a610a3b2e63b54d561bc3512bd068b4443a7417486b9dc65a4ad292583c7`  
-		Last Modified: Fri, 02 Apr 2021 00:44:26 GMT  
+	-	`sha256:2c3360763b706a564d93471b21a342ebbda7e047567cf1cbee82dd592ad33e0c`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
 		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c202a262d335726e6d079774ca9e11f52da7326ee18860265595a97527a7b545`  
-		Last Modified: Fri, 02 Apr 2021 00:44:55 GMT  
-		Size: 144.0 MB (143966864 bytes)  
+	-	`sha256:c1a0f653700ac9b57cf3d694cc90107e3220fc678581d1e985219677733ce242`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
+		Size: 1.4 KB (1398 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:737da401effa5536406d2508db65af6f54d9be0a3c5f1347ae56dc5ad1b8c1a4`  
-		Last Modified: Fri, 02 Apr 2021 00:44:26 GMT  
-		Size: 1.6 KB (1579 bytes)  
+	-	`sha256:2a59d82702c225a2ca8cd2a5476122f55d8619eae959c9cb8323b68d70a2ed19`  
+		Last Modified: Wed, 14 Apr 2021 12:59:06 GMT  
+		Size: 1.4 KB (1395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c52d85af463d5a66468c058122750336a2d002544c19dbaff721875cb8c6c24`  
-		Last Modified: Fri, 02 Apr 2021 01:09:48 GMT  
-		Size: 1.3 KB (1309 bytes)  
+	-	`sha256:62435cd2b7652fc97ef3dc1a8968446f3f6e95f0ff1d6dcb176a3f0c2b14c2f8`  
+		Last Modified: Wed, 14 Apr 2021 12:59:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82f1bf71cbf1adab82ad5a9d8f5b71571306bf6bcf254b686963f2ed7562e7fc`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.3 KB (1315 bytes)  
+	-	`sha256:a6d78a3a3d6cb25f55dc9d9947f7449a14717e6b787e49571a837e72b79334cf`  
+		Last Modified: Wed, 14 Apr 2021 12:59:41 GMT  
+		Size: 30.8 MB (30752513 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba22c0fd4b07e8d5ff2ab18028eb3f4d87c20420e43a2afbf78c8da9032399b2`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:0b774a32e346c00e004abbbd7290530d0a3f3dfb11915be2b2fa73c402da6bdd`  
+		Last Modified: Wed, 14 Apr 2021 12:59:03 GMT  
+		Size: 1.4 KB (1409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:562b238ffe2f30d1bebcac0de5c7d019504926664c08f5730389c7c1e426c12a`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.4 KB (1394 bytes)  
+	-	`sha256:2d153061f2f0d8ef33f71c4b9afd90899e21556e320d7103a8a9fb544c1cb521`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
+		Size: 5.6 MB (5608025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f0b00fc7a9cc9546977571c1922da63009fc89865ee5ae6b603cdf38d5b56ad`  
-		Last Modified: Fri, 02 Apr 2021 01:09:47 GMT  
-		Size: 11.5 MB (11528518 bytes)  
+	-	`sha256:1388c10d71d4f1005ced63001aeb1392f019139011ddf961220ee27a412cbadb`  
+		Last Modified: Wed, 14 Apr 2021 13:07:44 GMT  
+		Size: 1.4 KB (1395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:606193453afd7f6b2c5d21cdd640e297c0e3b0514642cc7044ff5a83ef6e66c7`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.3 KB (1309 bytes)  
+	-	`sha256:913a59644a65d5f7183aa7bebce08c8b09d1f627c257105a7db7514919858b6e`  
+		Last Modified: Wed, 14 Apr 2021 13:08:21 GMT  
+		Size: 143.9 MB (143889855 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a71b095a33aa8cc59c703b0a8f3b0bb53508123d89c531d6369de947b72b26f5`  
+		Last Modified: Wed, 14 Apr 2021 13:07:46 GMT  
+		Size: 1.5 KB (1492 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:07c7a21f93788806d3510b3cc8f7692b086c096861b42c218993697d04a890de`  
+		Last Modified: Wed, 14 Apr 2021 20:25:25 GMT  
+		Size: 1.4 KB (1408 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:04fbdf3acf4f09ad44474940358b0b044863361fee2bb201478a8b4b40cced75`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.4 KB (1404 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:600e2fd01e09ce5bb623f7dbf3080c7127a8c2dc0b54422dee1525e75e6ae6de`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.4 KB (1434 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d594e3e36caa66775e5660018a80c02ef6bf4b16e626bdbca53a885634db4a29`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.4 KB (1428 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d06f5b24d29c79d20732eaf23dc495c89959ba869fbcb3bb88d35b42f38616a1`  
+		Last Modified: Wed, 14 Apr 2021 20:25:24 GMT  
+		Size: 7.0 MB (6976405 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c11b840b2827a9bb3da231a34e716b4fbd570dffa0b711f9fcbb7ff630c90052`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2.3.0-builder-alpine`
@@ -6382,65 +6382,65 @@ WORKDIR /usr/bin
 ## `caddy:2.3.0-builder-windowsservercore-1809`
 
 ```console
-$ docker pull caddy@sha256:0c67e10ec967bbb5febbb8307b0e4a234df003c616262fde938f75631cacd2e5
+$ docker pull caddy@sha256:0ee0dd2e13c7c2d8b1a3514be4c8a71a5da92f756386f549bdd51c0bd62700c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.17763.1817; amd64
+	-	windows version 10.0.17763.1879; amd64
 
-### `caddy:2.3.0-builder-windowsservercore-1809` - windows version 10.0.17763.1817; amd64
+### `caddy:2.3.0-builder-windowsservercore-1809` - windows version 10.0.17763.1879; amd64
 
 ```console
-$ docker pull caddy@sha256:89576372020fc2eb4c0a7f3a3e1202a7b5833822dcac78836f6f48dc05cf1b15
+$ docker pull caddy@sha256:5d074fc96daecf65b6ea7aaaf9d2217f2c8f4e27a44e13800ee34ce2110620a1
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 GB (2636681347 bytes)**  
+-	Total Size: **2.6 GB (2636098719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:433619fcb10b7d636ff7d2ab6165f3648a45f1587bf0fc5a17c16bb0b4ea13f9`
+-	Image ID: `sha256:85e88c818aa8954ae57e277c9730cdfa1dceee6b1cc34304b32f23f94a4ee916`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 07 May 2020 05:09:25 GMT
 RUN Apply image 1809-RTM-amd64
-# Sat, 27 Feb 2021 09:32:06 GMT
+# Fri, 09 Apr 2021 20:34:41 GMT
 RUN Install update 1809-amd64
-# Wed, 10 Mar 2021 13:08:20 GMT
+# Wed, 14 Apr 2021 12:09:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 13:37:21 GMT
+# Wed, 14 Apr 2021 12:30:33 GMT
 ENV GIT_VERSION=2.23.0
-# Wed, 10 Mar 2021 13:37:22 GMT
+# Wed, 14 Apr 2021 12:30:35 GMT
 ENV GIT_TAG=v2.23.0.windows.1
-# Wed, 10 Mar 2021 13:37:23 GMT
+# Wed, 14 Apr 2021 12:30:36 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/MinGit-2.23.0-64-bit.zip
-# Wed, 10 Mar 2021 13:37:24 GMT
+# Wed, 14 Apr 2021 12:30:37 GMT
 ENV GIT_DOWNLOAD_SHA256=8f65208f92c0b4c3ae4c0cf02d4b5f6791d539cd1a07b2df62b7116467724735
-# Wed, 10 Mar 2021 13:38:55 GMT
+# Wed, 14 Apr 2021 12:31:55 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Wed, 10 Mar 2021 13:38:56 GMT
+# Wed, 14 Apr 2021 12:31:57 GMT
 ENV GOPATH=C:\gopath
-# Wed, 10 Mar 2021 13:39:22 GMT
+# Wed, 14 Apr 2021 12:32:38 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 02 Apr 2021 00:25:42 GMT
+# Wed, 14 Apr 2021 12:47:04 GMT
 ENV GOLANG_VERSION=1.15.11
-# Fri, 02 Apr 2021 00:28:23 GMT
+# Wed, 14 Apr 2021 12:50:03 GMT
 RUN $url = 'https://storage.googleapis.com/golang/go1.15.11.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '56f63de17cd739287de6d9f3cfdad3b781ad3e4a18aae20ece994ee97c1819fd'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 02 Apr 2021 00:28:25 GMT
+# Wed, 14 Apr 2021 12:50:05 GMT
 WORKDIR C:\gopath
-# Fri, 02 Apr 2021 01:03:34 GMT
+# Wed, 14 Apr 2021 20:10:39 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 02 Apr 2021 01:03:35 GMT
+# Wed, 14 Apr 2021 20:10:40 GMT
 ENV XCADDY_VERSION=v0.1.8
-# Fri, 02 Apr 2021 01:03:36 GMT
+# Wed, 14 Apr 2021 20:10:41 GMT
 ENV CADDY_VERSION=v2.3.0
-# Fri, 02 Apr 2021 01:03:38 GMT
+# Wed, 14 Apr 2021 20:10:42 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Fri, 02 Apr 2021 01:04:03 GMT
+# Wed, 14 Apr 2021 20:11:15 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.1.8/xcaddy_0.1.8_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('ccbc594da07adff41098959a78efaaee42fca4e5feb7806661d00841229b20ff1c47fed024c7a84e8554d3e8be3f162d3750e5e8347d6a230c496d4b133213e8')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Fri, 02 Apr 2021 01:04:05 GMT
+# Wed, 14 Apr 2021 20:11:16 GMT
 WORKDIR C:\
 ```
 
@@ -6448,140 +6448,140 @@ WORKDIR C:\
 	-	`sha256:4612f6d0b889cad0ed0292fae3a0b0c8a9e49aff6dea8eb049b2386d9b07986f`  
 		Size: 1.7 GB (1718332879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ff1512f88ecd4ff0a91ade34d43733c48834433e35f062f80e6e70d706f8d73`  
-		Size: 743.2 MB (743201590 bytes)  
+	-	`sha256:399f118dfaa9a753e98d128238b944432c7bcabea88a2998a6efbbece28ed303`  
+		Size: 751.4 MB (751421005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ebe61daec6d671bc2c1c6fe61ac9825fb552e9cef3672d0a7dbec719d125ae64`  
-		Last Modified: Wed, 10 Mar 2021 13:21:09 GMT  
-		Size: 1.4 KB (1430 bytes)  
+	-	`sha256:106dbf3373fce4f0ba5e00ad54824c597f2894605fa7d8ef446ad7ea3b97449f`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55f55c0bb3b38761f0aaeef923efdf23ab140f64a5549388e9aa125fe79780b0`  
-		Last Modified: Wed, 10 Mar 2021 14:02:53 GMT  
-		Size: 1.4 KB (1439 bytes)  
+	-	`sha256:ac56922ba0ee0ac19bcae98f5fb4b7427d31ef3c709f27cfb2c785fd13a611c4`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a312e589b5b4b52c93afc65c4053591faf5d602a159699e1d8fd7cb7257a1e19`  
-		Last Modified: Wed, 10 Mar 2021 14:02:53 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:0f1723430d5101a2d617d3dbf4bc2a121b3f4b4432105aa2941e1afab8f130b9`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
+		Size: 1.4 KB (1407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5a36351186e9a8092baf10dfbdfd28b7dce39bcb5b543246f650bf4ad9549d6`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
+	-	`sha256:ab2f4dc6e9a77d69a3d172368f4ae471b31c588d6201c2386e4ac62fd83faa16`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
+		Size: 1.4 KB (1434 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aaea47861a9221a4f1e5750db237c619796c612756a5e75e2cb443b1731ae8a8`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
+		Size: 1.4 KB (1410 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2b4be4ebd8eabefdb01f27dafad85e65289b95ca15591c14304c7792db99b54b`  
+		Last Modified: Wed, 14 Apr 2021 12:58:35 GMT  
+		Size: 30.2 MB (30155601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f6f66ae3738a83ea41b428b49261d4522d57df1617fbd1aa362d93f1e2802643`  
+		Last Modified: Wed, 14 Apr 2021 12:57:58 GMT  
+		Size: 1.4 KB (1442 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e2108b314c24064a0c250f72017cc64b3bf68915655327728a267c98985a5ff7`  
+		Last Modified: Wed, 14 Apr 2021 12:57:58 GMT  
+		Size: 324.6 KB (324649 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c28a6b8d8a4b8aea18e07888051dac03e88f4132fba08dca72e5795d9533dd3d`  
+		Last Modified: Wed, 14 Apr 2021 13:04:59 GMT  
+		Size: 1.3 KB (1300 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dc67fec1bfee8619d88a924c4f9b9f4a04d2a0a1d199406157bb073b9f48d588`  
+		Last Modified: Wed, 14 Apr 2021 13:07:33 GMT  
+		Size: 134.1 MB (134133939 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:09fe57ae793e79818d065737c8e995bb1b73296275794af222be695733711652`  
+		Last Modified: Wed, 14 Apr 2021 13:04:59 GMT  
+		Size: 1.6 KB (1562 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5134c3d8291dc3a52f7fad327cccf50377f2f362488fbcb8405addc74c0eedcf`  
+		Last Modified: Wed, 14 Apr 2021 20:25:05 GMT  
 		Size: 1.4 KB (1431 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85bf84abeceee0a3b5a380cf6aa46e231424d48c1781e88f7f96344fdd400753`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
-		Size: 1.4 KB (1425 bytes)  
+	-	`sha256:9d60772069c77cb2a80fec9f6e4d18084a4a919d4f776079dfee7903331331e7`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfcb0c1de08b3116c910ff0e9573389536913cddb0462da67f13cc24f09b479b`  
-		Last Modified: Wed, 10 Mar 2021 14:02:55 GMT  
-		Size: 34.5 MB (34540168 bytes)  
+	-	`sha256:4716fdd15cdffc3b1aa557c81d58c2d0c343f9bfbfb501325b4cdc3bfeb426d9`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:121ca5c84aae657554fc278543816ed7a73aa34867b296c486181ff025bde056`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
-		Size: 1.4 KB (1408 bytes)  
+	-	`sha256:4bc11d2d339a72dd92f86f4fcc8e6fc299da2b6b381147f41dbd8d789e0c944e`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e1fde90e4880470a95a23f5277f201512a5e7cad1fc6c1bf100e06df43201b0`  
-		Last Modified: Wed, 10 Mar 2021 14:02:44 GMT  
-		Size: 338.8 KB (338777 bytes)  
+	-	`sha256:2909c1d8e32571506ce36cda43c7b113b299e280d6d7dfffafe5cd6284595348`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.7 MB (1712288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddf005729e9b7c9f2912ff8e30bec3d383755302fe0b20e361d87ed43a703519`  
-		Last Modified: Fri, 02 Apr 2021 00:43:41 GMT  
-		Size: 1.4 KB (1409 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6be9af25c23d2108f315f14a45d27ecfe24ceb05852132cf721a61ee44495e1a`  
-		Last Modified: Fri, 02 Apr 2021 00:44:11 GMT  
-		Size: 138.5 MB (138534624 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1592b7415bb7c21ec31f9b97bed86b4b01c96621f385d9da5903fa7c320d4e47`  
-		Last Modified: Fri, 02 Apr 2021 00:43:41 GMT  
-		Size: 1.6 KB (1590 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aae6b99eb587e6a00f40f4c134c6b7d4b8d1bc9d9d17b14538d30b6c689e5bc2`  
-		Last Modified: Fri, 02 Apr 2021 01:09:29 GMT  
-		Size: 1.3 KB (1334 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f38d285524127fff971c8f6c086256b3907c8428d162347bcba0f3bcf6d64fa9`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.3 KB (1345 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de22f3dc30fb1b76d85e47461eb558cc38cd60ccd8d02c6d8bd9aea7cce3e909`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5063c8d06382902b304af0538c9114e087db04e693551e92d15ffd12dcca542`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.4 KB (1378 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:313a2e87390c3ef15da4fd9f3b978ef539bc6b5bf8d3e54d23f28e4acd386563`  
-		Last Modified: Fri, 02 Apr 2021 01:09:29 GMT  
-		Size: 1.7 MB (1715051 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a4ed62f1fbb34e8dfbbf3e11e5f7aa91c4e21c7ac1debbbf86e2561d6ecc5ea`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:a5e56de156a63d8492bf70144c9e28ae975db36a6a57c54e734c96e20fb8bb13`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1362 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2.3.0-builder-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull caddy@sha256:707fee0b94dcb8bb07e1cc0f86e10c540509ee572b69240bc0556cfafa586cd6
+$ docker pull caddy@sha256:80d881fa828e30f1c7d44ae2d3bebe98ef9185d4e43e597ac5205ba32ad13c63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.4283; amd64
+	-	windows version 10.0.14393.4350; amd64
 
-### `caddy:2.3.0-builder-windowsservercore-ltsc2016` - windows version 10.0.14393.4283; amd64
+### `caddy:2.3.0-builder-windowsservercore-ltsc2016` - windows version 10.0.14393.4350; amd64
 
 ```console
-$ docker pull caddy@sha256:017255652cc26ea2af428ecc3b6f2222ee64d88cfdf1c34e3522f048aa461ee9
+$ docker pull caddy@sha256:436f2a16a677c719d951ddd10a1f475e81cc61b0726c7a4d5f76bdea16e3d215
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 GB (5997836720 bytes)**  
+-	Total Size: **6.0 GB (5982128974 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08a9fde1e66982a65a46dea5c07548ac8afcd29b6f304afe23a8ea9bcdcf186f`
+-	Image ID: `sha256:3d1658b3cebc6cc5691856945858057a4e3925a991ead9db618b5058d55e445e`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sat, 19 Nov 2016 17:05:00 GMT
 RUN Apply image 1607-RTM-amd64
-# Wed, 03 Mar 2021 18:02:00 GMT
+# Wed, 07 Apr 2021 21:54:00 GMT
 RUN Install update ltsc2016-amd64
-# Wed, 10 Mar 2021 13:42:05 GMT
+# Wed, 14 Apr 2021 12:35:33 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 13:42:06 GMT
+# Wed, 14 Apr 2021 12:35:34 GMT
 ENV GIT_VERSION=2.23.0
-# Wed, 10 Mar 2021 13:42:07 GMT
+# Wed, 14 Apr 2021 12:35:35 GMT
 ENV GIT_TAG=v2.23.0.windows.1
-# Wed, 10 Mar 2021 13:42:08 GMT
+# Wed, 14 Apr 2021 12:35:36 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/MinGit-2.23.0-64-bit.zip
-# Wed, 10 Mar 2021 13:42:09 GMT
+# Wed, 14 Apr 2021 12:35:38 GMT
 ENV GIT_DOWNLOAD_SHA256=8f65208f92c0b4c3ae4c0cf02d4b5f6791d539cd1a07b2df62b7116467724735
-# Wed, 10 Mar 2021 13:44:31 GMT
+# Wed, 14 Apr 2021 12:38:01 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Wed, 10 Mar 2021 13:44:32 GMT
+# Wed, 14 Apr 2021 12:38:02 GMT
 ENV GOPATH=C:\gopath
-# Wed, 10 Mar 2021 13:45:47 GMT
+# Wed, 14 Apr 2021 12:39:34 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 02 Apr 2021 00:28:41 GMT
+# Wed, 14 Apr 2021 12:50:19 GMT
 ENV GOLANG_VERSION=1.15.11
-# Fri, 02 Apr 2021 00:32:35 GMT
+# Wed, 14 Apr 2021 12:54:08 GMT
 RUN $url = 'https://storage.googleapis.com/golang/go1.15.11.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '56f63de17cd739287de6d9f3cfdad3b781ad3e4a18aae20ece994ee97c1819fd'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 02 Apr 2021 00:32:37 GMT
+# Wed, 14 Apr 2021 12:54:10 GMT
 WORKDIR C:\gopath
-# Fri, 02 Apr 2021 01:04:13 GMT
+# Wed, 14 Apr 2021 20:11:23 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 02 Apr 2021 01:04:14 GMT
+# Wed, 14 Apr 2021 20:11:24 GMT
 ENV XCADDY_VERSION=v0.1.8
-# Fri, 02 Apr 2021 01:04:15 GMT
+# Wed, 14 Apr 2021 20:11:25 GMT
 ENV CADDY_VERSION=v2.3.0
-# Fri, 02 Apr 2021 01:04:16 GMT
+# Wed, 14 Apr 2021 20:11:26 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Fri, 02 Apr 2021 01:05:43 GMT
+# Wed, 14 Apr 2021 20:12:59 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.1.8/xcaddy_0.1.8_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('ccbc594da07adff41098959a78efaaee42fca4e5feb7806661d00841229b20ff1c47fed024c7a84e8554d3e8be3f162d3750e5e8347d6a230c496d4b133213e8')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Fri, 02 Apr 2021 01:05:45 GMT
+# Wed, 14 Apr 2021 20:13:01 GMT
 WORKDIR C:\
 ```
 
@@ -6590,149 +6590,149 @@ WORKDIR C:\
 		Last Modified: Tue, 18 Sep 2018 20:20:50 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:30bda99601c5cbd3b2118409f401852ea648e2319bd81518723e476b28d764c5`  
-		Size: 1.7 GB (1726924885 bytes)  
+	-	`sha256:00b4edb823e6a375d179a28cbfa682c2379d62179e1518485902d6e68b9a9d1e`  
+		Size: 1.7 GB (1724897968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:76680da9dc6db108ddf2e353c494b45e8486a6751619a13ed8fb3ad64b9a16e9`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bb52885e05952959b0fa7aaff23561fcf14d294aed336112b388c94e67709e4f`  
+		Last Modified: Wed, 14 Apr 2021 12:59:14 GMT  
+		Size: 1.4 KB (1406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea2092de86b10f822dfd3a0d8e8dc35924823393cf8301e6db8f8a0a2879fb18`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1306 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ac6e05dba1a284b10130ada4ed7581f5a1c5a90986038e31cc8213e215ca23`  
-		Last Modified: Wed, 10 Mar 2021 14:06:07 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a636ee1e87a6b10caeaef03b68f084d58b5c8412fe4b10ba5d851a6965917196`  
-		Last Modified: Wed, 10 Mar 2021 14:06:01 GMT  
-		Size: 1.3 KB (1322 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a9e03ef5102108f3595c37759ead10b0cfb624aa0f102dbae3b6abb18f03b56`  
-		Last Modified: Wed, 10 Mar 2021 14:06:01 GMT  
-		Size: 1.4 KB (1414 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:840634d0d343cc458ff1f028b165fab14415bf252ce2b7fdb726c41d035c64ff`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 35.3 MB (35273703 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b968b2b2cb37afe5893ed1aa040b1055605f41e8371fe42fca9c6e06bb96c2ed`  
-		Last Modified: Wed, 10 Mar 2021 14:05:55 GMT  
-		Size: 1.4 KB (1381 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b01350c0465bbc3ff96b788fef94740af9378a1cfe9f3c1fb50ffed30c8a7ad`  
-		Last Modified: Wed, 10 Mar 2021 14:05:59 GMT  
-		Size: 10.1 MB (10139029 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a055a610a3b2e63b54d561bc3512bd068b4443a7417486b9dc65a4ad292583c7`  
-		Last Modified: Fri, 02 Apr 2021 00:44:26 GMT  
+	-	`sha256:2c3360763b706a564d93471b21a342ebbda7e047567cf1cbee82dd592ad33e0c`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
 		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c202a262d335726e6d079774ca9e11f52da7326ee18860265595a97527a7b545`  
-		Last Modified: Fri, 02 Apr 2021 00:44:55 GMT  
-		Size: 144.0 MB (143966864 bytes)  
+	-	`sha256:c1a0f653700ac9b57cf3d694cc90107e3220fc678581d1e985219677733ce242`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
+		Size: 1.4 KB (1398 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:737da401effa5536406d2508db65af6f54d9be0a3c5f1347ae56dc5ad1b8c1a4`  
-		Last Modified: Fri, 02 Apr 2021 00:44:26 GMT  
-		Size: 1.6 KB (1579 bytes)  
+	-	`sha256:2a59d82702c225a2ca8cd2a5476122f55d8619eae959c9cb8323b68d70a2ed19`  
+		Last Modified: Wed, 14 Apr 2021 12:59:06 GMT  
+		Size: 1.4 KB (1395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c52d85af463d5a66468c058122750336a2d002544c19dbaff721875cb8c6c24`  
-		Last Modified: Fri, 02 Apr 2021 01:09:48 GMT  
-		Size: 1.3 KB (1309 bytes)  
+	-	`sha256:62435cd2b7652fc97ef3dc1a8968446f3f6e95f0ff1d6dcb176a3f0c2b14c2f8`  
+		Last Modified: Wed, 14 Apr 2021 12:59:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82f1bf71cbf1adab82ad5a9d8f5b71571306bf6bcf254b686963f2ed7562e7fc`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.3 KB (1315 bytes)  
+	-	`sha256:a6d78a3a3d6cb25f55dc9d9947f7449a14717e6b787e49571a837e72b79334cf`  
+		Last Modified: Wed, 14 Apr 2021 12:59:41 GMT  
+		Size: 30.8 MB (30752513 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba22c0fd4b07e8d5ff2ab18028eb3f4d87c20420e43a2afbf78c8da9032399b2`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:0b774a32e346c00e004abbbd7290530d0a3f3dfb11915be2b2fa73c402da6bdd`  
+		Last Modified: Wed, 14 Apr 2021 12:59:03 GMT  
+		Size: 1.4 KB (1409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:562b238ffe2f30d1bebcac0de5c7d019504926664c08f5730389c7c1e426c12a`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.4 KB (1394 bytes)  
+	-	`sha256:2d153061f2f0d8ef33f71c4b9afd90899e21556e320d7103a8a9fb544c1cb521`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
+		Size: 5.6 MB (5608025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f0b00fc7a9cc9546977571c1922da63009fc89865ee5ae6b603cdf38d5b56ad`  
-		Last Modified: Fri, 02 Apr 2021 01:09:47 GMT  
-		Size: 11.5 MB (11528518 bytes)  
+	-	`sha256:1388c10d71d4f1005ced63001aeb1392f019139011ddf961220ee27a412cbadb`  
+		Last Modified: Wed, 14 Apr 2021 13:07:44 GMT  
+		Size: 1.4 KB (1395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:606193453afd7f6b2c5d21cdd640e297c0e3b0514642cc7044ff5a83ef6e66c7`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.3 KB (1309 bytes)  
+	-	`sha256:913a59644a65d5f7183aa7bebce08c8b09d1f627c257105a7db7514919858b6e`  
+		Last Modified: Wed, 14 Apr 2021 13:08:21 GMT  
+		Size: 143.9 MB (143889855 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a71b095a33aa8cc59c703b0a8f3b0bb53508123d89c531d6369de947b72b26f5`  
+		Last Modified: Wed, 14 Apr 2021 13:07:46 GMT  
+		Size: 1.5 KB (1492 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:07c7a21f93788806d3510b3cc8f7692b086c096861b42c218993697d04a890de`  
+		Last Modified: Wed, 14 Apr 2021 20:25:25 GMT  
+		Size: 1.4 KB (1408 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:04fbdf3acf4f09ad44474940358b0b044863361fee2bb201478a8b4b40cced75`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.4 KB (1404 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:600e2fd01e09ce5bb623f7dbf3080c7127a8c2dc0b54422dee1525e75e6ae6de`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.4 KB (1434 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d594e3e36caa66775e5660018a80c02ef6bf4b16e626bdbca53a885634db4a29`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.4 KB (1428 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d06f5b24d29c79d20732eaf23dc495c89959ba869fbcb3bb88d35b42f38616a1`  
+		Last Modified: Wed, 14 Apr 2021 20:25:24 GMT  
+		Size: 7.0 MB (6976405 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c11b840b2827a9bb3da231a34e716b4fbd570dffa0b711f9fcbb7ff630c90052`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2.3.0-windowsservercore`
 
 ```console
-$ docker pull caddy@sha256:0d7ec2ae02e36f8374b028af66afcca548c8995638a733f0ad2e7861e2775e7e
+$ docker pull caddy@sha256:6a199f80cee0da0b39f4deffc53efac536c60672f4d8d26887f8f8ec194da3b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.17763.1817; amd64
-	-	windows version 10.0.14393.4283; amd64
+	-	windows version 10.0.17763.1879; amd64
+	-	windows version 10.0.14393.4350; amd64
 
-### `caddy:2.3.0-windowsservercore` - windows version 10.0.17763.1817; amd64
+### `caddy:2.3.0-windowsservercore` - windows version 10.0.17763.1879; amd64
 
 ```console
-$ docker pull caddy@sha256:5203e8707456e06dfc8d03ba99cdfe84d4b3dc00be512770827ef5e692ec18e0
+$ docker pull caddy@sha256:fdb259b96e8413c959258115e3cc0ed6272cd362b32dcee80b7c5875b3cca213
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2487805125 bytes)**  
+-	Total Size: **2.5 GB (2487217133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f93dd36e27e04e9ac5d0bc9da46fbeebc4541b2a242f90a7bc7003d2bc636fe`
+-	Image ID: `sha256:db78127126d7dbe748dc638552655f6a86f11faa664f34ed256da804f77de223`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 07 May 2020 05:09:25 GMT
 RUN Apply image 1809-RTM-amd64
-# Sat, 27 Feb 2021 09:32:06 GMT
+# Fri, 09 Apr 2021 20:34:41 GMT
 RUN Install update 1809-amd64
-# Wed, 10 Mar 2021 13:08:20 GMT
+# Wed, 14 Apr 2021 12:09:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 21:27:31 GMT
+# Wed, 14 Apr 2021 20:04:03 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Wed, 10 Mar 2021 21:27:32 GMT
+# Wed, 14 Apr 2021 20:04:04 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 10 Mar 2021 21:28:05 GMT
+# Wed, 14 Apr 2021 20:04:43 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('afc504cb0a641729ba546c0cadea524a170dcca2a915473aaf032a7c666c7c56ac059752f34b5d50700a692647b9b395b530cd8299ac3650c729adce5daa1ba5')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Wed, 10 Mar 2021 21:28:06 GMT
+# Wed, 14 Apr 2021 20:04:45 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Wed, 10 Mar 2021 21:28:07 GMT
+# Wed, 14 Apr 2021 20:04:46 GMT
 ENV XDG_DATA_HOME=c:/data
-# Wed, 10 Mar 2021 21:28:08 GMT
+# Wed, 14 Apr 2021 20:04:47 GMT
 VOLUME [c:/config]
-# Wed, 10 Mar 2021 21:28:09 GMT
+# Wed, 14 Apr 2021 20:04:48 GMT
 VOLUME [c:/data]
-# Wed, 10 Mar 2021 21:28:11 GMT
+# Wed, 14 Apr 2021 20:04:49 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 10 Mar 2021 21:28:12 GMT
+# Wed, 14 Apr 2021 20:04:50 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 10 Mar 2021 21:28:13 GMT
+# Wed, 14 Apr 2021 20:04:51 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 10 Mar 2021 21:28:14 GMT
+# Wed, 14 Apr 2021 20:04:53 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 10 Mar 2021 21:28:15 GMT
+# Wed, 14 Apr 2021 20:04:54 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 10 Mar 2021 21:28:16 GMT
+# Wed, 14 Apr 2021 20:04:55 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 10 Mar 2021 21:28:17 GMT
+# Wed, 14 Apr 2021 20:04:56 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 10 Mar 2021 21:28:18 GMT
+# Wed, 14 Apr 2021 20:04:57 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 10 Mar 2021 21:28:19 GMT
+# Wed, 14 Apr 2021 20:04:58 GMT
 EXPOSE 80
-# Wed, 10 Mar 2021 21:28:20 GMT
+# Wed, 14 Apr 2021 20:05:00 GMT
 EXPOSE 443
-# Wed, 10 Mar 2021 21:28:21 GMT
+# Wed, 14 Apr 2021 20:05:01 GMT
 EXPOSE 2019
-# Wed, 10 Mar 2021 21:28:41 GMT
+# Wed, 14 Apr 2021 20:05:27 GMT
 RUN caddy version
-# Wed, 10 Mar 2021 21:28:42 GMT
+# Wed, 14 Apr 2021 20:05:28 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -6740,154 +6740,154 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 	-	`sha256:4612f6d0b889cad0ed0292fae3a0b0c8a9e49aff6dea8eb049b2386d9b07986f`  
 		Size: 1.7 GB (1718332879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ff1512f88ecd4ff0a91ade34d43733c48834433e35f062f80e6e70d706f8d73`  
-		Size: 743.2 MB (743201590 bytes)  
+	-	`sha256:399f118dfaa9a753e98d128238b944432c7bcabea88a2998a6efbbece28ed303`  
+		Size: 751.4 MB (751421005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ebe61daec6d671bc2c1c6fe61ac9825fb552e9cef3672d0a7dbec719d125ae64`  
-		Last Modified: Wed, 10 Mar 2021 13:21:09 GMT  
+	-	`sha256:106dbf3373fce4f0ba5e00ad54824c597f2894605fa7d8ef446ad7ea3b97449f`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1413 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a98036a79f108b7c08eb62f3ef539549a6fe005aced8f3fa4971a4e576e8c045`  
+		Last Modified: Wed, 14 Apr 2021 20:24:07 GMT  
+		Size: 5.1 MB (5081237 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9a1c0c34e473966a69a26492fc168338b6ee1afadedd4cfd3b84537129685128`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
 		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31a02199a38f7dde446e1c919797037b896dc0d954cc313cd49d1fd7ef7b309a`  
-		Last Modified: Wed, 10 Mar 2021 21:43:28 GMT  
-		Size: 9.5 MB (9466151 bytes)  
+	-	`sha256:88365dd5b6b4b0188ad00f31b1114067b79a05d3eeaecbcdf86385c18e1e2bff`  
+		Last Modified: Wed, 14 Apr 2021 20:24:16 GMT  
+		Size: 12.0 MB (12047588 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:928fadc2fce7089b23d0e2d915e1cf2211aec3ffdc88b5eb66c67f18f7fb2c6e`  
-		Last Modified: Wed, 10 Mar 2021 21:43:26 GMT  
-		Size: 1.4 KB (1433 bytes)  
+	-	`sha256:1d8761bc4a54d10c3f03507406d03f0161fece0b4f80913bc67f5218cf7acc0e`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
+		Size: 1.4 KB (1394 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd7bb988dcbf796f3839a524b32be07309d29f50ec4273ded91973b631e0ad00`  
-		Last Modified: Wed, 10 Mar 2021 21:43:45 GMT  
-		Size: 16.5 MB (16453921 bytes)  
+	-	`sha256:f23987f8593afe96ed2b00e5744c51d5678851dac567bde07c230d882b31db5b`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d621047471067d3c16923f7c3b79f8615ddbcc2f9a879832c456f67fe3cd1544`  
-		Last Modified: Wed, 10 Mar 2021 21:43:25 GMT  
-		Size: 1.4 KB (1438 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9f148a6aba7a2d10970470390d5229567735df01114acfbdad1c661bdc8dc22`  
-		Last Modified: Wed, 10 Mar 2021 21:43:24 GMT  
-		Size: 1.4 KB (1436 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc608f5d46fef14425bc80c9c7062532f20bec43d7073a8e17e8278f9c60cc7a`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1436 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cda8fe89940ce8986995aee365da1f58c22d0d3b8a050600e429ef1cdd8c5fc`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:403d8611297f60270051c62d4bb7d7dff6aeeb33dc0c5cecd06ae94080fd1802`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1401 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab2df9d9f268b91b0f5bd3e27ba3e1cd03694b62c48ad901fa7fc47ebd2956db`  
-		Last Modified: Wed, 10 Mar 2021 21:43:22 GMT  
-		Size: 1.4 KB (1416 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6eabd07d0fd9430b675ce97b3bd926812eb4e9f4c4cf0872d68b91be65dd9d9`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1403 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec389e155c01fcd9625c110db8b62baac443eb2bee04a5f631e7cecc534c0818`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca8fad2b33541d43c28d6113e51b250763c7ec33d8503df271481f615a1f99bc`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1372 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cf0c1f7ba714c558dd8ed7e0336f84c91c25a35766d2efa592b1f39b1e448d6`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea93772cd9ce84491fa183154e0972b941a4379f628a54f9213bf36c4311dbbb`  
-		Last Modified: Wed, 10 Mar 2021 21:43:20 GMT  
+	-	`sha256:27edd7d612a33644ef095d4bd52c800d8e8a1bd73a56ddbeba0a2cda230947a6`  
+		Last Modified: Wed, 14 Apr 2021 20:24:02 GMT  
 		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:842fa064b906d0bd7b584ea5f181fbca29305d9ad824eaed29bf341c1abbcea3`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 1.4 KB (1440 bytes)  
+	-	`sha256:81c5b86f636ca1020805b216bf4ea83e1aaa4e5da4145ec671280678483c8084`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:48b753cdd37ef6dce0fbecce933fdf1957f9d72cf512be44c11d32181611a433`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 1.4 KB (1434 bytes)  
+	-	`sha256:8f097631ca96d803dd63f72849f1b76728a05c89e8451675f669fc655ae07600`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0205b004a4016df290e2fd8b362003adad13b56a6fbc17c35209de56b2bac034`  
-		Last Modified: Wed, 10 Mar 2021 21:43:16 GMT  
+	-	`sha256:6ace7f5f948c892db540a9734d885fb0695faf8cc55e9fa2df27c4aff76e485d`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1424 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:57476c73327d061921cee32adad6344e762c80c1142357a6de89819e8577d3e6`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1393 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8aaad63b2ff3aa00f636a1f988a02040c9832ae1a184093cef2471115a787a8f`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1407 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b1aef5aebcec7bd144ab11a819f8406f07a0dcfaf11684f464b56f5835633fb4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1413 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e7cd29f97bbc5cd627a79fc205fd6f63257d27e45e45264ec1e1c3ab94b319e4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c8aeafc40e34b5ef3464715c082ddb0910edbd9a59ac2d4d9d6586a0022271b4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4fe3fa5d1767b62495151be377ed814c0ce5766f1cb875b724b922d378249bb8`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b89f7d63263e3b381a5386cd4b13b21226da398d0c8d2bf59f111efb466b9959`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1436 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aab5798a12c9581184fa73f7b74913b0cf6c4ae638f2886f07d70a9f32181d9a`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1406 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bf434bfce197fbac09ffe0409a20f2a1ba646801b7dac739c6cea7bed0ce2fad`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1420 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ec0defeab0b694a738dc4b945c883e44f4118a4127f00e4cea32ab589fb194dc`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 308.9 KB (308863 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:51d70335c993ba29c3325465e90a310fce3b41a934bc25ec1bc5220fd3424bfe`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
 		Size: 1.4 KB (1425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e5f63eec622fd92f0ce90d6e06bd12c2687cbdf86aae3cdbbb8d3fdc92ef028`  
-		Last Modified: Wed, 10 Mar 2021 21:43:19 GMT  
-		Size: 1.4 KB (1369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:446a62c8913c6a60f39e8053d6ad0d6dfaf69ec7d8cf3fcc2665386e362238d6`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 325.1 KB (325114 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43fc4417c46cd53b142f42f58ded86ccf383c9f9b6e5f97d8a8183abbd1bd7aa`  
-		Last Modified: Wed, 10 Mar 2021 21:43:17 GMT  
-		Size: 1.4 KB (1383 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `caddy:2.3.0-windowsservercore` - windows version 10.0.14393.4283; amd64
+### `caddy:2.3.0-windowsservercore` - windows version 10.0.14393.4350; amd64
 
 ```console
-$ docker pull caddy@sha256:e9416497e1d43fd04e244f89af4e210714a28b676cf1e2279487484087b8ee39
+$ docker pull caddy@sha256:0a27a5dee7d386c823f3ad85b0ad3c7c6ebb739e7d7ad1cbc37662a3e955dfbc
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 GB (5829241236 bytes)**  
+-	Total Size: **5.8 GB (5818160037 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b987ba0d14c06619541f1cb51215c36133a17cfbfea49a9bc79b021564ab785`
+-	Image ID: `sha256:c5d01f580a5360a74b845ce6ffbd196e0930731b656954f6dafd810f4b69ae72`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sat, 19 Nov 2016 17:05:00 GMT
 RUN Apply image 1607-RTM-amd64
-# Wed, 03 Mar 2021 18:02:00 GMT
+# Wed, 07 Apr 2021 21:54:00 GMT
 RUN Install update ltsc2016-amd64
-# Wed, 10 Mar 2021 13:42:05 GMT
+# Wed, 14 Apr 2021 12:35:33 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 21:30:30 GMT
+# Wed, 14 Apr 2021 20:07:14 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Wed, 10 Mar 2021 21:30:31 GMT
+# Wed, 14 Apr 2021 20:07:15 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 10 Mar 2021 21:32:11 GMT
+# Wed, 14 Apr 2021 20:09:01 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('afc504cb0a641729ba546c0cadea524a170dcca2a915473aaf032a7c666c7c56ac059752f34b5d50700a692647b9b395b530cd8299ac3650c729adce5daa1ba5')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Wed, 10 Mar 2021 21:32:12 GMT
+# Wed, 14 Apr 2021 20:09:02 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Wed, 10 Mar 2021 21:32:13 GMT
+# Wed, 14 Apr 2021 20:09:04 GMT
 ENV XDG_DATA_HOME=c:/data
-# Wed, 10 Mar 2021 21:32:14 GMT
+# Wed, 14 Apr 2021 20:09:05 GMT
 VOLUME [c:/config]
-# Wed, 10 Mar 2021 21:32:15 GMT
+# Wed, 14 Apr 2021 20:09:06 GMT
 VOLUME [c:/data]
-# Wed, 10 Mar 2021 21:32:16 GMT
+# Wed, 14 Apr 2021 20:09:07 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 10 Mar 2021 21:32:18 GMT
+# Wed, 14 Apr 2021 20:09:08 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 10 Mar 2021 21:32:19 GMT
+# Wed, 14 Apr 2021 20:09:09 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 10 Mar 2021 21:32:20 GMT
+# Wed, 14 Apr 2021 20:09:10 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 10 Mar 2021 21:32:21 GMT
+# Wed, 14 Apr 2021 20:09:11 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 10 Mar 2021 21:32:23 GMT
+# Wed, 14 Apr 2021 20:09:12 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 10 Mar 2021 21:32:24 GMT
+# Wed, 14 Apr 2021 20:09:14 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 10 Mar 2021 21:32:25 GMT
+# Wed, 14 Apr 2021 20:09:15 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 10 Mar 2021 21:32:26 GMT
+# Wed, 14 Apr 2021 20:09:16 GMT
 EXPOSE 80
-# Wed, 10 Mar 2021 21:32:27 GMT
+# Wed, 14 Apr 2021 20:09:17 GMT
 EXPOSE 443
-# Wed, 10 Mar 2021 21:32:28 GMT
+# Wed, 14 Apr 2021 20:09:18 GMT
 EXPOSE 2019
-# Wed, 10 Mar 2021 21:33:17 GMT
+# Wed, 14 Apr 2021 20:10:29 GMT
 RUN caddy version
-# Wed, 10 Mar 2021 21:33:18 GMT
+# Wed, 14 Apr 2021 20:10:30 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -6896,164 +6896,164 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Last Modified: Tue, 18 Sep 2018 20:20:50 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:30bda99601c5cbd3b2118409f401852ea648e2319bd81518723e476b28d764c5`  
-		Size: 1.7 GB (1726924885 bytes)  
+	-	`sha256:00b4edb823e6a375d179a28cbfa682c2379d62179e1518485902d6e68b9a9d1e`  
+		Size: 1.7 GB (1724897968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:76680da9dc6db108ddf2e353c494b45e8486a6751619a13ed8fb3ad64b9a16e9`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bb52885e05952959b0fa7aaff23561fcf14d294aed336112b388c94e67709e4f`  
+		Last Modified: Wed, 14 Apr 2021 12:59:14 GMT  
+		Size: 1.4 KB (1406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0c9e18c1004b748968faecba6f9d1b5e6233e7e0b82b1c1259cf945eb3334e6`  
-		Last Modified: Wed, 10 Mar 2021 21:44:17 GMT  
-		Size: 10.2 MB (10181612 bytes)  
+	-	`sha256:398ea9969fcb8e31829ad2a30ccb77a30f56d17d992051bf6a04b0bd4ebb24a7`  
+		Last Modified: Wed, 14 Apr 2021 20:24:45 GMT  
+		Size: 5.7 MB (5661064 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08f9c532d82c90ea9fc2e2c6a591988abfb79e551caabead3fe56f8ba69c31f6`  
-		Last Modified: Wed, 10 Mar 2021 21:44:12 GMT  
-		Size: 1.4 KB (1404 bytes)  
+	-	`sha256:1d2d2fcf25a0097bf75ef1b7b207a765b3c93bce2eb96e7ebf2ce894a0ca0bf1`  
+		Last Modified: Wed, 14 Apr 2021 20:24:43 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5695a08e71ba7869b2e8b11e6f3f228a8a6d303878131e1f3abdc655757b5f2`  
-		Last Modified: Wed, 10 Mar 2021 21:44:19 GMT  
-		Size: 21.9 MB (21867123 bytes)  
+	-	`sha256:6f1814c5a2050da8e869a225b62ac936693d7904fed473ed6d703acd42542916`  
+		Last Modified: Wed, 14 Apr 2021 20:24:46 GMT  
+		Size: 17.3 MB (17333583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fabb7c4e3c2c8cdeef81bd8a6fcaed6b082e5ea4120a15ae4e277258c03de007`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1372 bytes)  
+	-	`sha256:93803b6c6c1e5befb69d029873c92020261e4faf5f97fa1ebe4474f2fcd761da`  
+		Last Modified: Wed, 14 Apr 2021 20:24:39 GMT  
+		Size: 1.4 KB (1403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82ec41ded5794a348cd9c06286dcbe7ca964197008812567791bc45b22bc4dd1`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1427 bytes)  
+	-	`sha256:5bef042a1c15ba4cca6086f36ad82e03f037ebae2ec5218dc528ce8afa0cbbe7`  
+		Last Modified: Wed, 14 Apr 2021 20:24:39 GMT  
+		Size: 1.4 KB (1409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d20ab0530e5214beccbf36a30fe1618f9752274c51a313bb71e9b9b130870164`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc0a7b2c54a3fa027e26d52abd2013c77fc0e69bf93446d70990dc40a6e00d98`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1366 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e0051bde2db70124d244a1337ccc824629e18f2be3b800ec577a7794ff1f7f3`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:271b14baf3d87c6aa3bd2da952290cec023b40b90b62688c79fa26d9253770ac`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1391 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bc9b324fb71cb6bdc3dfd42355efbd64634f7d2ec678a5a15757e69145f671d`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
+	-	`sha256:0c22fd29bd95221222824495015750f062fcf337845032c4d11be1c8166d9911`  
+		Last Modified: Wed, 14 Apr 2021 20:24:37 GMT  
 		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69d93b07db92b46680fe5ba78d29058e6f5b2ce49ba20cb10aeccb751b37d497`  
-		Last Modified: Wed, 10 Mar 2021 21:44:08 GMT  
-		Size: 1.4 KB (1433 bytes)  
+	-	`sha256:e034d998c8e3152093c8f2c30b0ac9122c528b8ba0889cadf3a3282059a8f96c`  
+		Last Modified: Wed, 14 Apr 2021 20:24:37 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bb6dc81911c7b01e751b8d5a08f7cf494f5542f166b2e1471a08ef82b4ebcb4`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1410 bytes)  
+	-	`sha256:80cd579cdba6539c678c1cfd7184427e5b0777e34c965e8c6ca62f8301dd629f`  
+		Last Modified: Wed, 14 Apr 2021 20:24:36 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a53bfaf85823badcda6fa4470993f24b9772597b13989ee71ec0b5686be93cbc`  
-		Last Modified: Wed, 10 Mar 2021 21:44:07 GMT  
-		Size: 1.4 KB (1410 bytes)  
+	-	`sha256:1ea0c59c3768ba8d3f4943669c834e3b8043899a0ee61ed325fa453559243f95`  
+		Last Modified: Wed, 14 Apr 2021 20:24:36 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5077aa28e94279b15dbe048f37904704877b5b4a932e67a3a12adf8bdfe9ada`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1436 bytes)  
+	-	`sha256:bc5f4c914fc136d87d2e00167556104cf17827c516e84c53785225cfeb214a42`  
+		Last Modified: Wed, 14 Apr 2021 20:24:40 GMT  
+		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5851fcb607a8afd06548b48e611020418ed88f0c0e1abcba7854089c8bf9729e`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1395 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:498aa4d3ee4135d0aaeccdf4fe0d8ec98c3ba95a92fd0b56dc73a461be700516`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1418 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0651b67304c2388b503cbd386e0235ec00a5a8437a9d115ba871152ae9d07103`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
+	-	`sha256:164712f851736c62b6da95357e6056173e390402e1a17b2f7559af8f42ce0134`  
+		Last Modified: Wed, 14 Apr 2021 20:24:35 GMT  
 		Size: 1.4 KB (1408 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1418b36ca2fc9603d0a6a28d6f4849cdfd80c3069ea494baeba2ce37e66b73d4`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1390 bytes)  
+	-	`sha256:5d73f78d7b9ccdb5963233ef77dab1188e2678cc7c9136ff183494cd28f893f0`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a50dd910f71fe0ceefc794aaee3e6669cd578ae8286348a76c60dc926778da33`  
-		Last Modified: Wed, 10 Mar 2021 21:44:04 GMT  
-		Size: 256.4 KB (256438 bytes)  
+	-	`sha256:b455a43ac6d0be6faf8dce0c59c609cc832963d9cc649b301f49ff79f218e439`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43a39a5ecfed250f608279f4544ced05934bd84e326d05f119a12081aa38b39f`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1397 bytes)  
+	-	`sha256:916f00b0ac9199b716d513a33d44003af6cd00e4b9b7a2feab64b84649d80640`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1431 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7ece2a763e6182c580aadb07399f77037c831dd03ee9cdad4f70b18759458094`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac88310e829bdb746ec804044c2a238dc2c6f64660688285a64205a255283c47`  
+		Last Modified: Wed, 14 Apr 2021 20:24:32 GMT  
+		Size: 1.4 KB (1404 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ed384ae90a546f9aad4b539596228057299114b9662407a708465a0ed7de3691`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1411 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9de7a040e97ee693dc826cc6130e42fe7597fbf48fe035d0e5f9f039166edae5`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e4c1c4ddd499c8a111514a0d3bc3b97381c76a6b33d1cb3f74752d42ddc3e43c`  
+		Last Modified: Wed, 14 Apr 2021 20:24:32 GMT  
+		Size: 255.9 KB (255932 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:96251eba56a444a75ccc3480986386b2d2abcce41beadf2f267bedaee332c54a`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2.3.0-windowsservercore-1809`
 
 ```console
-$ docker pull caddy@sha256:dfa33ff752c331d4b76bfe3817fd42ef3ef0bc24d9167cdfdd39f137054ea298
+$ docker pull caddy@sha256:89f75ffc06d5f7a7cc6d37f38c9198d869993fa7426542d14c1a8bfdbb467694
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.17763.1817; amd64
+	-	windows version 10.0.17763.1879; amd64
 
-### `caddy:2.3.0-windowsservercore-1809` - windows version 10.0.17763.1817; amd64
+### `caddy:2.3.0-windowsservercore-1809` - windows version 10.0.17763.1879; amd64
 
 ```console
-$ docker pull caddy@sha256:5203e8707456e06dfc8d03ba99cdfe84d4b3dc00be512770827ef5e692ec18e0
+$ docker pull caddy@sha256:fdb259b96e8413c959258115e3cc0ed6272cd362b32dcee80b7c5875b3cca213
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2487805125 bytes)**  
+-	Total Size: **2.5 GB (2487217133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f93dd36e27e04e9ac5d0bc9da46fbeebc4541b2a242f90a7bc7003d2bc636fe`
+-	Image ID: `sha256:db78127126d7dbe748dc638552655f6a86f11faa664f34ed256da804f77de223`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 07 May 2020 05:09:25 GMT
 RUN Apply image 1809-RTM-amd64
-# Sat, 27 Feb 2021 09:32:06 GMT
+# Fri, 09 Apr 2021 20:34:41 GMT
 RUN Install update 1809-amd64
-# Wed, 10 Mar 2021 13:08:20 GMT
+# Wed, 14 Apr 2021 12:09:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 21:27:31 GMT
+# Wed, 14 Apr 2021 20:04:03 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Wed, 10 Mar 2021 21:27:32 GMT
+# Wed, 14 Apr 2021 20:04:04 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 10 Mar 2021 21:28:05 GMT
+# Wed, 14 Apr 2021 20:04:43 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('afc504cb0a641729ba546c0cadea524a170dcca2a915473aaf032a7c666c7c56ac059752f34b5d50700a692647b9b395b530cd8299ac3650c729adce5daa1ba5')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Wed, 10 Mar 2021 21:28:06 GMT
+# Wed, 14 Apr 2021 20:04:45 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Wed, 10 Mar 2021 21:28:07 GMT
+# Wed, 14 Apr 2021 20:04:46 GMT
 ENV XDG_DATA_HOME=c:/data
-# Wed, 10 Mar 2021 21:28:08 GMT
+# Wed, 14 Apr 2021 20:04:47 GMT
 VOLUME [c:/config]
-# Wed, 10 Mar 2021 21:28:09 GMT
+# Wed, 14 Apr 2021 20:04:48 GMT
 VOLUME [c:/data]
-# Wed, 10 Mar 2021 21:28:11 GMT
+# Wed, 14 Apr 2021 20:04:49 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 10 Mar 2021 21:28:12 GMT
+# Wed, 14 Apr 2021 20:04:50 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 10 Mar 2021 21:28:13 GMT
+# Wed, 14 Apr 2021 20:04:51 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 10 Mar 2021 21:28:14 GMT
+# Wed, 14 Apr 2021 20:04:53 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 10 Mar 2021 21:28:15 GMT
+# Wed, 14 Apr 2021 20:04:54 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 10 Mar 2021 21:28:16 GMT
+# Wed, 14 Apr 2021 20:04:55 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 10 Mar 2021 21:28:17 GMT
+# Wed, 14 Apr 2021 20:04:56 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 10 Mar 2021 21:28:18 GMT
+# Wed, 14 Apr 2021 20:04:57 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 10 Mar 2021 21:28:19 GMT
+# Wed, 14 Apr 2021 20:04:58 GMT
 EXPOSE 80
-# Wed, 10 Mar 2021 21:28:20 GMT
+# Wed, 14 Apr 2021 20:05:00 GMT
 EXPOSE 443
-# Wed, 10 Mar 2021 21:28:21 GMT
+# Wed, 14 Apr 2021 20:05:01 GMT
 EXPOSE 2019
-# Wed, 10 Mar 2021 21:28:41 GMT
+# Wed, 14 Apr 2021 20:05:27 GMT
 RUN caddy version
-# Wed, 10 Mar 2021 21:28:42 GMT
+# Wed, 14 Apr 2021 20:05:28 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -7061,164 +7061,164 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 	-	`sha256:4612f6d0b889cad0ed0292fae3a0b0c8a9e49aff6dea8eb049b2386d9b07986f`  
 		Size: 1.7 GB (1718332879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ff1512f88ecd4ff0a91ade34d43733c48834433e35f062f80e6e70d706f8d73`  
-		Size: 743.2 MB (743201590 bytes)  
+	-	`sha256:399f118dfaa9a753e98d128238b944432c7bcabea88a2998a6efbbece28ed303`  
+		Size: 751.4 MB (751421005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ebe61daec6d671bc2c1c6fe61ac9825fb552e9cef3672d0a7dbec719d125ae64`  
-		Last Modified: Wed, 10 Mar 2021 13:21:09 GMT  
+	-	`sha256:106dbf3373fce4f0ba5e00ad54824c597f2894605fa7d8ef446ad7ea3b97449f`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1413 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a98036a79f108b7c08eb62f3ef539549a6fe005aced8f3fa4971a4e576e8c045`  
+		Last Modified: Wed, 14 Apr 2021 20:24:07 GMT  
+		Size: 5.1 MB (5081237 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9a1c0c34e473966a69a26492fc168338b6ee1afadedd4cfd3b84537129685128`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
 		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31a02199a38f7dde446e1c919797037b896dc0d954cc313cd49d1fd7ef7b309a`  
-		Last Modified: Wed, 10 Mar 2021 21:43:28 GMT  
-		Size: 9.5 MB (9466151 bytes)  
+	-	`sha256:88365dd5b6b4b0188ad00f31b1114067b79a05d3eeaecbcdf86385c18e1e2bff`  
+		Last Modified: Wed, 14 Apr 2021 20:24:16 GMT  
+		Size: 12.0 MB (12047588 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:928fadc2fce7089b23d0e2d915e1cf2211aec3ffdc88b5eb66c67f18f7fb2c6e`  
-		Last Modified: Wed, 10 Mar 2021 21:43:26 GMT  
-		Size: 1.4 KB (1433 bytes)  
+	-	`sha256:1d8761bc4a54d10c3f03507406d03f0161fece0b4f80913bc67f5218cf7acc0e`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
+		Size: 1.4 KB (1394 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd7bb988dcbf796f3839a524b32be07309d29f50ec4273ded91973b631e0ad00`  
-		Last Modified: Wed, 10 Mar 2021 21:43:45 GMT  
-		Size: 16.5 MB (16453921 bytes)  
+	-	`sha256:f23987f8593afe96ed2b00e5744c51d5678851dac567bde07c230d882b31db5b`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d621047471067d3c16923f7c3b79f8615ddbcc2f9a879832c456f67fe3cd1544`  
-		Last Modified: Wed, 10 Mar 2021 21:43:25 GMT  
-		Size: 1.4 KB (1438 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9f148a6aba7a2d10970470390d5229567735df01114acfbdad1c661bdc8dc22`  
-		Last Modified: Wed, 10 Mar 2021 21:43:24 GMT  
-		Size: 1.4 KB (1436 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc608f5d46fef14425bc80c9c7062532f20bec43d7073a8e17e8278f9c60cc7a`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1436 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cda8fe89940ce8986995aee365da1f58c22d0d3b8a050600e429ef1cdd8c5fc`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:403d8611297f60270051c62d4bb7d7dff6aeeb33dc0c5cecd06ae94080fd1802`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1401 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab2df9d9f268b91b0f5bd3e27ba3e1cd03694b62c48ad901fa7fc47ebd2956db`  
-		Last Modified: Wed, 10 Mar 2021 21:43:22 GMT  
-		Size: 1.4 KB (1416 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6eabd07d0fd9430b675ce97b3bd926812eb4e9f4c4cf0872d68b91be65dd9d9`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1403 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec389e155c01fcd9625c110db8b62baac443eb2bee04a5f631e7cecc534c0818`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca8fad2b33541d43c28d6113e51b250763c7ec33d8503df271481f615a1f99bc`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1372 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cf0c1f7ba714c558dd8ed7e0336f84c91c25a35766d2efa592b1f39b1e448d6`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea93772cd9ce84491fa183154e0972b941a4379f628a54f9213bf36c4311dbbb`  
-		Last Modified: Wed, 10 Mar 2021 21:43:20 GMT  
+	-	`sha256:27edd7d612a33644ef095d4bd52c800d8e8a1bd73a56ddbeba0a2cda230947a6`  
+		Last Modified: Wed, 14 Apr 2021 20:24:02 GMT  
 		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:842fa064b906d0bd7b584ea5f181fbca29305d9ad824eaed29bf341c1abbcea3`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 1.4 KB (1440 bytes)  
+	-	`sha256:81c5b86f636ca1020805b216bf4ea83e1aaa4e5da4145ec671280678483c8084`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:48b753cdd37ef6dce0fbecce933fdf1957f9d72cf512be44c11d32181611a433`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 1.4 KB (1434 bytes)  
+	-	`sha256:8f097631ca96d803dd63f72849f1b76728a05c89e8451675f669fc655ae07600`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0205b004a4016df290e2fd8b362003adad13b56a6fbc17c35209de56b2bac034`  
-		Last Modified: Wed, 10 Mar 2021 21:43:16 GMT  
+	-	`sha256:6ace7f5f948c892db540a9734d885fb0695faf8cc55e9fa2df27c4aff76e485d`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1424 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:57476c73327d061921cee32adad6344e762c80c1142357a6de89819e8577d3e6`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1393 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8aaad63b2ff3aa00f636a1f988a02040c9832ae1a184093cef2471115a787a8f`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1407 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b1aef5aebcec7bd144ab11a819f8406f07a0dcfaf11684f464b56f5835633fb4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1413 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e7cd29f97bbc5cd627a79fc205fd6f63257d27e45e45264ec1e1c3ab94b319e4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c8aeafc40e34b5ef3464715c082ddb0910edbd9a59ac2d4d9d6586a0022271b4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4fe3fa5d1767b62495151be377ed814c0ce5766f1cb875b724b922d378249bb8`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b89f7d63263e3b381a5386cd4b13b21226da398d0c8d2bf59f111efb466b9959`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1436 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aab5798a12c9581184fa73f7b74913b0cf6c4ae638f2886f07d70a9f32181d9a`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1406 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bf434bfce197fbac09ffe0409a20f2a1ba646801b7dac739c6cea7bed0ce2fad`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1420 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ec0defeab0b694a738dc4b945c883e44f4118a4127f00e4cea32ab589fb194dc`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 308.9 KB (308863 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:51d70335c993ba29c3325465e90a310fce3b41a934bc25ec1bc5220fd3424bfe`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
 		Size: 1.4 KB (1425 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e5f63eec622fd92f0ce90d6e06bd12c2687cbdf86aae3cdbbb8d3fdc92ef028`  
-		Last Modified: Wed, 10 Mar 2021 21:43:19 GMT  
-		Size: 1.4 KB (1369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:446a62c8913c6a60f39e8053d6ad0d6dfaf69ec7d8cf3fcc2665386e362238d6`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 325.1 KB (325114 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43fc4417c46cd53b142f42f58ded86ccf383c9f9b6e5f97d8a8183abbd1bd7aa`  
-		Last Modified: Wed, 10 Mar 2021 21:43:17 GMT  
-		Size: 1.4 KB (1383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2.3.0-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull caddy@sha256:971ecb6797495e16d5ee3ede15138f5ceaee0930af2ee0b6fbc9dbae848302fa
+$ docker pull caddy@sha256:a42a67f914fd976a839e8c725f15fec79415b331ffeaa3972e7bff363bec4ada
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.4283; amd64
+	-	windows version 10.0.14393.4350; amd64
 
-### `caddy:2.3.0-windowsservercore-ltsc2016` - windows version 10.0.14393.4283; amd64
+### `caddy:2.3.0-windowsservercore-ltsc2016` - windows version 10.0.14393.4350; amd64
 
 ```console
-$ docker pull caddy@sha256:e9416497e1d43fd04e244f89af4e210714a28b676cf1e2279487484087b8ee39
+$ docker pull caddy@sha256:0a27a5dee7d386c823f3ad85b0ad3c7c6ebb739e7d7ad1cbc37662a3e955dfbc
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 GB (5829241236 bytes)**  
+-	Total Size: **5.8 GB (5818160037 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b987ba0d14c06619541f1cb51215c36133a17cfbfea49a9bc79b021564ab785`
+-	Image ID: `sha256:c5d01f580a5360a74b845ce6ffbd196e0930731b656954f6dafd810f4b69ae72`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sat, 19 Nov 2016 17:05:00 GMT
 RUN Apply image 1607-RTM-amd64
-# Wed, 03 Mar 2021 18:02:00 GMT
+# Wed, 07 Apr 2021 21:54:00 GMT
 RUN Install update ltsc2016-amd64
-# Wed, 10 Mar 2021 13:42:05 GMT
+# Wed, 14 Apr 2021 12:35:33 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 21:30:30 GMT
+# Wed, 14 Apr 2021 20:07:14 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Wed, 10 Mar 2021 21:30:31 GMT
+# Wed, 14 Apr 2021 20:07:15 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 10 Mar 2021 21:32:11 GMT
+# Wed, 14 Apr 2021 20:09:01 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('afc504cb0a641729ba546c0cadea524a170dcca2a915473aaf032a7c666c7c56ac059752f34b5d50700a692647b9b395b530cd8299ac3650c729adce5daa1ba5')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Wed, 10 Mar 2021 21:32:12 GMT
+# Wed, 14 Apr 2021 20:09:02 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Wed, 10 Mar 2021 21:32:13 GMT
+# Wed, 14 Apr 2021 20:09:04 GMT
 ENV XDG_DATA_HOME=c:/data
-# Wed, 10 Mar 2021 21:32:14 GMT
+# Wed, 14 Apr 2021 20:09:05 GMT
 VOLUME [c:/config]
-# Wed, 10 Mar 2021 21:32:15 GMT
+# Wed, 14 Apr 2021 20:09:06 GMT
 VOLUME [c:/data]
-# Wed, 10 Mar 2021 21:32:16 GMT
+# Wed, 14 Apr 2021 20:09:07 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 10 Mar 2021 21:32:18 GMT
+# Wed, 14 Apr 2021 20:09:08 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 10 Mar 2021 21:32:19 GMT
+# Wed, 14 Apr 2021 20:09:09 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 10 Mar 2021 21:32:20 GMT
+# Wed, 14 Apr 2021 20:09:10 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 10 Mar 2021 21:32:21 GMT
+# Wed, 14 Apr 2021 20:09:11 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 10 Mar 2021 21:32:23 GMT
+# Wed, 14 Apr 2021 20:09:12 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 10 Mar 2021 21:32:24 GMT
+# Wed, 14 Apr 2021 20:09:14 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 10 Mar 2021 21:32:25 GMT
+# Wed, 14 Apr 2021 20:09:15 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 10 Mar 2021 21:32:26 GMT
+# Wed, 14 Apr 2021 20:09:16 GMT
 EXPOSE 80
-# Wed, 10 Mar 2021 21:32:27 GMT
+# Wed, 14 Apr 2021 20:09:17 GMT
 EXPOSE 443
-# Wed, 10 Mar 2021 21:32:28 GMT
+# Wed, 14 Apr 2021 20:09:18 GMT
 EXPOSE 2019
-# Wed, 10 Mar 2021 21:33:17 GMT
+# Wed, 14 Apr 2021 20:10:29 GMT
 RUN caddy version
-# Wed, 10 Mar 2021 21:33:18 GMT
+# Wed, 14 Apr 2021 20:10:30 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -7227,98 +7227,98 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Last Modified: Tue, 18 Sep 2018 20:20:50 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:30bda99601c5cbd3b2118409f401852ea648e2319bd81518723e476b28d764c5`  
-		Size: 1.7 GB (1726924885 bytes)  
+	-	`sha256:00b4edb823e6a375d179a28cbfa682c2379d62179e1518485902d6e68b9a9d1e`  
+		Size: 1.7 GB (1724897968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:76680da9dc6db108ddf2e353c494b45e8486a6751619a13ed8fb3ad64b9a16e9`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bb52885e05952959b0fa7aaff23561fcf14d294aed336112b388c94e67709e4f`  
+		Last Modified: Wed, 14 Apr 2021 12:59:14 GMT  
+		Size: 1.4 KB (1406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0c9e18c1004b748968faecba6f9d1b5e6233e7e0b82b1c1259cf945eb3334e6`  
-		Last Modified: Wed, 10 Mar 2021 21:44:17 GMT  
-		Size: 10.2 MB (10181612 bytes)  
+	-	`sha256:398ea9969fcb8e31829ad2a30ccb77a30f56d17d992051bf6a04b0bd4ebb24a7`  
+		Last Modified: Wed, 14 Apr 2021 20:24:45 GMT  
+		Size: 5.7 MB (5661064 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08f9c532d82c90ea9fc2e2c6a591988abfb79e551caabead3fe56f8ba69c31f6`  
-		Last Modified: Wed, 10 Mar 2021 21:44:12 GMT  
-		Size: 1.4 KB (1404 bytes)  
+	-	`sha256:1d2d2fcf25a0097bf75ef1b7b207a765b3c93bce2eb96e7ebf2ce894a0ca0bf1`  
+		Last Modified: Wed, 14 Apr 2021 20:24:43 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5695a08e71ba7869b2e8b11e6f3f228a8a6d303878131e1f3abdc655757b5f2`  
-		Last Modified: Wed, 10 Mar 2021 21:44:19 GMT  
-		Size: 21.9 MB (21867123 bytes)  
+	-	`sha256:6f1814c5a2050da8e869a225b62ac936693d7904fed473ed6d703acd42542916`  
+		Last Modified: Wed, 14 Apr 2021 20:24:46 GMT  
+		Size: 17.3 MB (17333583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fabb7c4e3c2c8cdeef81bd8a6fcaed6b082e5ea4120a15ae4e277258c03de007`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1372 bytes)  
+	-	`sha256:93803b6c6c1e5befb69d029873c92020261e4faf5f97fa1ebe4474f2fcd761da`  
+		Last Modified: Wed, 14 Apr 2021 20:24:39 GMT  
+		Size: 1.4 KB (1403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82ec41ded5794a348cd9c06286dcbe7ca964197008812567791bc45b22bc4dd1`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1427 bytes)  
+	-	`sha256:5bef042a1c15ba4cca6086f36ad82e03f037ebae2ec5218dc528ce8afa0cbbe7`  
+		Last Modified: Wed, 14 Apr 2021 20:24:39 GMT  
+		Size: 1.4 KB (1409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d20ab0530e5214beccbf36a30fe1618f9752274c51a313bb71e9b9b130870164`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc0a7b2c54a3fa027e26d52abd2013c77fc0e69bf93446d70990dc40a6e00d98`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1366 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e0051bde2db70124d244a1337ccc824629e18f2be3b800ec577a7794ff1f7f3`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:271b14baf3d87c6aa3bd2da952290cec023b40b90b62688c79fa26d9253770ac`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1391 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bc9b324fb71cb6bdc3dfd42355efbd64634f7d2ec678a5a15757e69145f671d`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
+	-	`sha256:0c22fd29bd95221222824495015750f062fcf337845032c4d11be1c8166d9911`  
+		Last Modified: Wed, 14 Apr 2021 20:24:37 GMT  
 		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69d93b07db92b46680fe5ba78d29058e6f5b2ce49ba20cb10aeccb751b37d497`  
-		Last Modified: Wed, 10 Mar 2021 21:44:08 GMT  
-		Size: 1.4 KB (1433 bytes)  
+	-	`sha256:e034d998c8e3152093c8f2c30b0ac9122c528b8ba0889cadf3a3282059a8f96c`  
+		Last Modified: Wed, 14 Apr 2021 20:24:37 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bb6dc81911c7b01e751b8d5a08f7cf494f5542f166b2e1471a08ef82b4ebcb4`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1410 bytes)  
+	-	`sha256:80cd579cdba6539c678c1cfd7184427e5b0777e34c965e8c6ca62f8301dd629f`  
+		Last Modified: Wed, 14 Apr 2021 20:24:36 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a53bfaf85823badcda6fa4470993f24b9772597b13989ee71ec0b5686be93cbc`  
-		Last Modified: Wed, 10 Mar 2021 21:44:07 GMT  
-		Size: 1.4 KB (1410 bytes)  
+	-	`sha256:1ea0c59c3768ba8d3f4943669c834e3b8043899a0ee61ed325fa453559243f95`  
+		Last Modified: Wed, 14 Apr 2021 20:24:36 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5077aa28e94279b15dbe048f37904704877b5b4a932e67a3a12adf8bdfe9ada`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1436 bytes)  
+	-	`sha256:bc5f4c914fc136d87d2e00167556104cf17827c516e84c53785225cfeb214a42`  
+		Last Modified: Wed, 14 Apr 2021 20:24:40 GMT  
+		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5851fcb607a8afd06548b48e611020418ed88f0c0e1abcba7854089c8bf9729e`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1395 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:498aa4d3ee4135d0aaeccdf4fe0d8ec98c3ba95a92fd0b56dc73a461be700516`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1418 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0651b67304c2388b503cbd386e0235ec00a5a8437a9d115ba871152ae9d07103`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
+	-	`sha256:164712f851736c62b6da95357e6056173e390402e1a17b2f7559af8f42ce0134`  
+		Last Modified: Wed, 14 Apr 2021 20:24:35 GMT  
 		Size: 1.4 KB (1408 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1418b36ca2fc9603d0a6a28d6f4849cdfd80c3069ea494baeba2ce37e66b73d4`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1390 bytes)  
+	-	`sha256:5d73f78d7b9ccdb5963233ef77dab1188e2678cc7c9136ff183494cd28f893f0`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a50dd910f71fe0ceefc794aaee3e6669cd578ae8286348a76c60dc926778da33`  
-		Last Modified: Wed, 10 Mar 2021 21:44:04 GMT  
-		Size: 256.4 KB (256438 bytes)  
+	-	`sha256:b455a43ac6d0be6faf8dce0c59c609cc832963d9cc649b301f49ff79f218e439`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43a39a5ecfed250f608279f4544ced05934bd84e326d05f119a12081aa38b39f`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1397 bytes)  
+	-	`sha256:916f00b0ac9199b716d513a33d44003af6cd00e4b9b7a2feab64b84649d80640`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1431 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7ece2a763e6182c580aadb07399f77037c831dd03ee9cdad4f70b18759458094`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac88310e829bdb746ec804044c2a238dc2c6f64660688285a64205a255283c47`  
+		Last Modified: Wed, 14 Apr 2021 20:24:32 GMT  
+		Size: 1.4 KB (1404 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ed384ae90a546f9aad4b539596228057299114b9662407a708465a0ed7de3691`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1411 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9de7a040e97ee693dc826cc6130e42fe7597fbf48fe035d0e5f9f039166edae5`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e4c1c4ddd499c8a111514a0d3bc3b97381c76a6b33d1cb3f74752d42ddc3e43c`  
+		Last Modified: Wed, 14 Apr 2021 20:24:32 GMT  
+		Size: 255.9 KB (255932 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:96251eba56a444a75ccc3480986386b2d2abcce41beadf2f267bedaee332c54a`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2.4.0-beta.2`
 
 ```console
-$ docker pull caddy@sha256:e460ce1466ae1f6c10df00cf022bd0a1c26fffb0b08d5b0d6204595bef07e681
+$ docker pull caddy@sha256:d8fabc6268aa54ca4fcf66c4e08fe092e9f3d7c5b9dafea4dff860d6ccae9d76
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7329,264 +7329,264 @@ $ docker pull caddy@sha256:e460ce1466ae1f6c10df00cf022bd0a1c26fffb0b08d5b0d62045
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
 	-	linux; s390x
-	-	windows version 10.0.17763.1817; amd64
-	-	windows version 10.0.14393.4283; amd64
+	-	windows version 10.0.17763.1879; amd64
+	-	windows version 10.0.14393.4350; amd64
 
 ### `caddy:2.4.0-beta.2` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:fa50efe45a26d4e0d4ee53589eefc94adc848e23599088e3a23fa8a46e37b0ef
+$ docker pull caddy@sha256:008590d156dcc7a1533fd34be8e2e452454e27e49ffa533e083c2cdc87292137
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.5 MB (14525653 bytes)**  
+-	Total Size: **14.5 MB (14525666 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48c90ba77981732d04067f9d48287ef8cabe5c59a33c4561d4668fbe43695bc0`
+-	Image ID: `sha256:9e49e451428790254800f544ebb051811973a83c34de9eaf1147f7df2914119e`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 20:10:06 GMT
-ADD file:7119167b56ff1228b2fb639c768955ce9db7a999cd947179240b216dfa5ccbb9 in / 
-# Wed, 31 Mar 2021 20:10:06 GMT
+# Wed, 14 Apr 2021 19:19:39 GMT
+ADD file:8ec69d882e7f29f0652d537557160e638168550f738d0d49f90a7ef96bf31787 in / 
+# Wed, 14 Apr 2021 19:19:39 GMT
 CMD ["/bin/sh"]
-# Fri, 02 Apr 2021 18:19:32 GMT
+# Wed, 14 Apr 2021 20:11:05 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Fri, 02 Apr 2021 18:19:34 GMT
+# Wed, 14 Apr 2021 20:11:07 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/welcome/index.html"
-# Fri, 02 Apr 2021 18:19:34 GMT
+# Wed, 14 Apr 2021 20:11:07 GMT
 ENV CADDY_VERSION=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:19:36 GMT
+# Wed, 14 Apr 2021 20:11:09 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='41daeac683d503264496689c6271645293c95518c5b97870c3f3a17127ae35b820622720315901c0c5856b42e0201b7eaad153dfa4a1045502a99f41d0b9785d' ;; 		armhf)   binArch='armv6'; checksum='51e4d7220064e1948232c8c54996b012d01fe0e2caa71200e34f0da59bd6267cdc318124e1a7a44e83ce54b7276f6d0fb32381d3080e05902d3c3528ff423dd7' ;; 		armv7)   binArch='armv7'; checksum='9c3b4eea4840a1fe633d45d436789edf6839e96527783d2eac309d24e5085c0cdee8beffd7e5ad2f1d7d31e16004e916aa29456d8ac52007e9d904e644d6db40' ;; 		aarch64) binArch='arm64'; checksum='86cf83d11aee266d32c262982df3e286aa0a4b391fc4fbded0e299ace043c753e9a1f53bef1f95a292a71107e1f9578a8615b038871eedb171437eebe7db47d2' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='81b050dae2892feb517db6c782acc506dfe21399b0a79073e5191656f57c6d0a5a511caf1086ffc671712ab198715cca6a2a120812a4df8d774ba17d6242aa39' ;; 		s390x)   binArch='s390x'; checksum='763256d267ad8832c37fa1a902fc06dfb6b9871b75e38545cbc199b50251f78b0cc2400104d31fc18d2c98408f02a74e581a7f7746974837dcdef51a4a259bf2' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.4.0-beta.2/caddy_2.4.0-beta.2_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Fri, 02 Apr 2021 18:19:38 GMT
+# Wed, 14 Apr 2021 20:11:10 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Fri, 02 Apr 2021 18:19:38 GMT
+# Wed, 14 Apr 2021 20:11:10 GMT
 ENV XDG_CONFIG_HOME=/config
-# Fri, 02 Apr 2021 18:19:38 GMT
+# Wed, 14 Apr 2021 20:11:10 GMT
 ENV XDG_DATA_HOME=/data
-# Fri, 02 Apr 2021 18:19:38 GMT
+# Wed, 14 Apr 2021 20:11:11 GMT
 VOLUME [/config]
-# Fri, 02 Apr 2021 18:19:38 GMT
+# Wed, 14 Apr 2021 20:11:11 GMT
 VOLUME [/data]
-# Fri, 02 Apr 2021 18:19:38 GMT
+# Wed, 14 Apr 2021 20:11:11 GMT
 LABEL org.opencontainers.image.version=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:19:39 GMT
+# Wed, 14 Apr 2021 20:11:11 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Fri, 02 Apr 2021 18:19:39 GMT
+# Wed, 14 Apr 2021 20:11:12 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Fri, 02 Apr 2021 18:19:39 GMT
+# Wed, 14 Apr 2021 20:11:12 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Fri, 02 Apr 2021 18:19:39 GMT
+# Wed, 14 Apr 2021 20:11:12 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Fri, 02 Apr 2021 18:19:39 GMT
+# Wed, 14 Apr 2021 20:11:12 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Fri, 02 Apr 2021 18:19:40 GMT
+# Wed, 14 Apr 2021 20:11:12 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Fri, 02 Apr 2021 18:19:40 GMT
+# Wed, 14 Apr 2021 20:11:13 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Fri, 02 Apr 2021 18:19:40 GMT
+# Wed, 14 Apr 2021 20:11:13 GMT
 EXPOSE 80
-# Fri, 02 Apr 2021 18:19:40 GMT
+# Wed, 14 Apr 2021 20:11:13 GMT
 EXPOSE 443
-# Fri, 02 Apr 2021 18:19:40 GMT
+# Wed, 14 Apr 2021 20:11:13 GMT
 EXPOSE 2019
-# Fri, 02 Apr 2021 18:19:41 GMT
+# Wed, 14 Apr 2021 20:11:13 GMT
 WORKDIR /srv
-# Fri, 02 Apr 2021 18:19:41 GMT
+# Wed, 14 Apr 2021 20:11:14 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:ca3cd42a7c9525f6ce3d64c1a70982613a8235f0cc057ec9244052921853ef15`  
-		Last Modified: Wed, 31 Mar 2021 20:10:46 GMT  
-		Size: 2.8 MB (2811947 bytes)  
+	-	`sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba`  
+		Last Modified: Wed, 14 Apr 2021 17:59:29 GMT  
+		Size: 2.8 MB (2811969 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:212f6a1c9e4977bde3df77a8a6c46bf7757d599f51a15eb01c63bd2be543cb40`  
-		Last Modified: Fri, 02 Apr 2021 18:20:13 GMT  
-		Size: 300.4 KB (300408 bytes)  
+	-	`sha256:8294633c5b5606f8e98aaf81da701b7a7e2018dbf82355d1d73830c677034f19`  
+		Last Modified: Wed, 14 Apr 2021 20:12:08 GMT  
+		Size: 300.4 KB (300403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db5ded8b3705333f72888d4cf854eb5f4940ce814721660bbd55d109a8826a03`  
-		Last Modified: Fri, 02 Apr 2021 18:20:14 GMT  
-		Size: 5.8 KB (5825 bytes)  
+	-	`sha256:f815e2ab15b24629c79357f527072ba057b7da6a993f0c1d5e36ad122667869f`  
+		Last Modified: Wed, 14 Apr 2021 20:12:08 GMT  
+		Size: 5.8 KB (5832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9afb4b7cde85cac613122e5ebf2d7f97cdc4457913475e0af127a9ad83467baf`  
-		Last Modified: Fri, 02 Apr 2021 18:20:15 GMT  
-		Size: 11.4 MB (11407320 bytes)  
+	-	`sha256:866e77b5ab7364d6fd10d9aac10241c645d81761011f2544041e03e42d694266`  
+		Last Modified: Wed, 14 Apr 2021 20:12:11 GMT  
+		Size: 11.4 MB (11407308 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a44ff6c0ff0fd070875236cb70163a5b5d10a6c91a029e468a1b507939aca9a`  
-		Last Modified: Fri, 02 Apr 2021 18:20:13 GMT  
-		Size: 153.0 B  
+	-	`sha256:d93ab174db6c235a141fac119c490f18169f74691e5a11eab453949b232584d5`  
+		Last Modified: Wed, 14 Apr 2021 20:12:09 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2.4.0-beta.2` - linux; arm variant v6
 
 ```console
-$ docker pull caddy@sha256:aa5fedf546f66c9c7479220756a01f8ca9c421a5e78117db86fc54c14bb340cf
+$ docker pull caddy@sha256:97c65847ce7dedfc97f2a8c45a23e4b98500dbaf64ff859470f3dec89051f96d
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.7 MB (13740480 bytes)**  
+-	Total Size: **13.7 MB (13740478 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8be8c4334d684912f0cae439c7fb5d51334993ca3b5c417380b4b35e63b29f1f`
+-	Image ID: `sha256:c86bf0a2b49de4347cab1ee9820ae0679841542148383a0768a5c937063a6acc`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 17:18:49 GMT
-ADD file:988879d74f643b89539e5a0b6d74221621f19f4f87f722614addadc46ce47200 in / 
-# Wed, 31 Mar 2021 17:18:50 GMT
+# Wed, 14 Apr 2021 18:49:39 GMT
+ADD file:4479f0a51530e039edf231d87201896dcff908aa542a613cdccb015f93dda8a3 in / 
+# Wed, 14 Apr 2021 18:49:40 GMT
 CMD ["/bin/sh"]
-# Fri, 02 Apr 2021 18:49:47 GMT
+# Wed, 14 Apr 2021 19:46:41 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Fri, 02 Apr 2021 18:49:52 GMT
+# Wed, 14 Apr 2021 19:46:45 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/welcome/index.html"
-# Fri, 02 Apr 2021 18:49:55 GMT
+# Wed, 14 Apr 2021 19:46:46 GMT
 ENV CADDY_VERSION=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:50:03 GMT
+# Wed, 14 Apr 2021 19:46:53 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='41daeac683d503264496689c6271645293c95518c5b97870c3f3a17127ae35b820622720315901c0c5856b42e0201b7eaad153dfa4a1045502a99f41d0b9785d' ;; 		armhf)   binArch='armv6'; checksum='51e4d7220064e1948232c8c54996b012d01fe0e2caa71200e34f0da59bd6267cdc318124e1a7a44e83ce54b7276f6d0fb32381d3080e05902d3c3528ff423dd7' ;; 		armv7)   binArch='armv7'; checksum='9c3b4eea4840a1fe633d45d436789edf6839e96527783d2eac309d24e5085c0cdee8beffd7e5ad2f1d7d31e16004e916aa29456d8ac52007e9d904e644d6db40' ;; 		aarch64) binArch='arm64'; checksum='86cf83d11aee266d32c262982df3e286aa0a4b391fc4fbded0e299ace043c753e9a1f53bef1f95a292a71107e1f9578a8615b038871eedb171437eebe7db47d2' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='81b050dae2892feb517db6c782acc506dfe21399b0a79073e5191656f57c6d0a5a511caf1086ffc671712ab198715cca6a2a120812a4df8d774ba17d6242aa39' ;; 		s390x)   binArch='s390x'; checksum='763256d267ad8832c37fa1a902fc06dfb6b9871b75e38545cbc199b50251f78b0cc2400104d31fc18d2c98408f02a74e581a7f7746974837dcdef51a4a259bf2' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.4.0-beta.2/caddy_2.4.0-beta.2_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Fri, 02 Apr 2021 18:50:08 GMT
+# Wed, 14 Apr 2021 19:47:00 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Fri, 02 Apr 2021 18:50:10 GMT
+# Wed, 14 Apr 2021 19:47:01 GMT
 ENV XDG_CONFIG_HOME=/config
-# Fri, 02 Apr 2021 18:50:12 GMT
+# Wed, 14 Apr 2021 19:47:02 GMT
 ENV XDG_DATA_HOME=/data
-# Fri, 02 Apr 2021 18:50:14 GMT
+# Wed, 14 Apr 2021 19:47:02 GMT
 VOLUME [/config]
-# Fri, 02 Apr 2021 18:50:16 GMT
+# Wed, 14 Apr 2021 19:47:03 GMT
 VOLUME [/data]
-# Fri, 02 Apr 2021 18:50:18 GMT
+# Wed, 14 Apr 2021 19:47:04 GMT
 LABEL org.opencontainers.image.version=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:50:20 GMT
+# Wed, 14 Apr 2021 19:47:05 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Fri, 02 Apr 2021 18:50:23 GMT
+# Wed, 14 Apr 2021 19:47:07 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Fri, 02 Apr 2021 18:50:25 GMT
+# Wed, 14 Apr 2021 19:47:08 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Fri, 02 Apr 2021 18:50:29 GMT
+# Wed, 14 Apr 2021 19:47:09 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Fri, 02 Apr 2021 18:50:35 GMT
+# Wed, 14 Apr 2021 19:47:10 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Fri, 02 Apr 2021 18:50:40 GMT
+# Wed, 14 Apr 2021 19:47:11 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Fri, 02 Apr 2021 18:50:45 GMT
+# Wed, 14 Apr 2021 19:47:13 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Fri, 02 Apr 2021 18:50:48 GMT
+# Wed, 14 Apr 2021 19:47:14 GMT
 EXPOSE 80
-# Fri, 02 Apr 2021 18:50:53 GMT
+# Wed, 14 Apr 2021 19:47:16 GMT
 EXPOSE 443
-# Fri, 02 Apr 2021 18:50:55 GMT
+# Wed, 14 Apr 2021 19:47:16 GMT
 EXPOSE 2019
-# Fri, 02 Apr 2021 18:50:58 GMT
+# Wed, 14 Apr 2021 19:47:17 GMT
 WORKDIR /srv
-# Fri, 02 Apr 2021 18:51:00 GMT
+# Wed, 14 Apr 2021 19:47:18 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:bb87125c6ee1ce30c6b33d2c96a9fbe46da4a290f7cb1dd73fd62d4e06503699`  
-		Last Modified: Wed, 31 Mar 2021 17:19:55 GMT  
-		Size: 2.6 MB (2622116 bytes)  
+	-	`sha256:740c950346cf39c85b52576998695c9b909c24a58a8bb1b64cce91fda3ef1d3a`  
+		Last Modified: Wed, 14 Apr 2021 18:50:30 GMT  
+		Size: 2.6 MB (2622131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a1e1bc72d95e03e28e991fa53bb7f7238ffd16a125465b7a73ef9f68a4484bd`  
-		Last Modified: Fri, 02 Apr 2021 18:52:14 GMT  
-		Size: 300.5 KB (300514 bytes)  
+	-	`sha256:fdf1089ae45174c5bef4f470e0e4c2337f99090005f19e104781d0b048ea9c3b`  
+		Last Modified: Wed, 14 Apr 2021 19:48:05 GMT  
+		Size: 300.5 KB (300511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c99f0b778282aad6bc6b2e941fec2708198912824fd2ca2a0ae63ff9920bd387`  
-		Last Modified: Fri, 02 Apr 2021 18:52:14 GMT  
-		Size: 5.8 KB (5831 bytes)  
+	-	`sha256:b57bfdaecc4b43b7518a479f577a5afb7ef6539918e03b27d7cb7865dda8ceaa`  
+		Last Modified: Wed, 14 Apr 2021 19:48:05 GMT  
+		Size: 5.8 KB (5833 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1263c98147d8e73b762bb9ae4979f3c6eaecb780937aa25344f7a8f26734b09`  
-		Last Modified: Fri, 02 Apr 2021 18:52:18 GMT  
-		Size: 10.8 MB (10811865 bytes)  
+	-	`sha256:fb354d82c5c45ab0a1d4b541ed0368301bb0aa5d98d569dcca44ba52af1c82ac`  
+		Last Modified: Wed, 14 Apr 2021 19:48:11 GMT  
+		Size: 10.8 MB (10811849 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:379c3d17de6d89ea87e3f4b22fee1451995467ceafe97afb45ff52d6c391ada1`  
-		Last Modified: Fri, 02 Apr 2021 18:52:14 GMT  
+	-	`sha256:4825a384a1336a9aa743168ca8598059188ff162e307fd919af7d232553d8d00`  
+		Last Modified: Wed, 14 Apr 2021 19:48:05 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2.4.0-beta.2` - linux; arm variant v7
 
 ```console
-$ docker pull caddy@sha256:8977e27736ba1604ad1d09d8ad8c19324842597ddfd01ef8a91f754a308be597
+$ docker pull caddy@sha256:cb08eec441907897f1f1d5b49e9fc1c25520f50e4ea6b102d9cac96611357924
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.5 MB (13522013 bytes)**  
+-	Total Size: **13.5 MB (13522050 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b879077000bbeb58c1b52b2fc34fd349f34a2376856dbaa2f9fc886ff4a9c4ff`
+-	Image ID: `sha256:abdd47f39bf49de697e4c8c9a7e7a120b0e177759e932df849a7f529c8c7c52c`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 18:13:27 GMT
-ADD file:56e92c06393237a87e0a1ff475e9c9dc80e897d69ec20f45359b587906da345b in / 
-# Wed, 31 Mar 2021 18:13:31 GMT
+# Wed, 14 Apr 2021 18:57:39 GMT
+ADD file:028c5b473d862250586e174c5dd19b37f8fc3bffbc02d888e72df30f32fd6129 in / 
+# Wed, 14 Apr 2021 18:57:39 GMT
 CMD ["/bin/sh"]
-# Thu, 01 Apr 2021 08:12:32 GMT
+# Wed, 14 Apr 2021 19:40:17 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Fri, 02 Apr 2021 18:59:38 GMT
+# Wed, 14 Apr 2021 19:40:20 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/welcome/index.html"
-# Fri, 02 Apr 2021 18:59:41 GMT
+# Wed, 14 Apr 2021 19:40:21 GMT
 ENV CADDY_VERSION=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:59:49 GMT
+# Wed, 14 Apr 2021 19:40:26 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='41daeac683d503264496689c6271645293c95518c5b97870c3f3a17127ae35b820622720315901c0c5856b42e0201b7eaad153dfa4a1045502a99f41d0b9785d' ;; 		armhf)   binArch='armv6'; checksum='51e4d7220064e1948232c8c54996b012d01fe0e2caa71200e34f0da59bd6267cdc318124e1a7a44e83ce54b7276f6d0fb32381d3080e05902d3c3528ff423dd7' ;; 		armv7)   binArch='armv7'; checksum='9c3b4eea4840a1fe633d45d436789edf6839e96527783d2eac309d24e5085c0cdee8beffd7e5ad2f1d7d31e16004e916aa29456d8ac52007e9d904e644d6db40' ;; 		aarch64) binArch='arm64'; checksum='86cf83d11aee266d32c262982df3e286aa0a4b391fc4fbded0e299ace043c753e9a1f53bef1f95a292a71107e1f9578a8615b038871eedb171437eebe7db47d2' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='81b050dae2892feb517db6c782acc506dfe21399b0a79073e5191656f57c6d0a5a511caf1086ffc671712ab198715cca6a2a120812a4df8d774ba17d6242aa39' ;; 		s390x)   binArch='s390x'; checksum='763256d267ad8832c37fa1a902fc06dfb6b9871b75e38545cbc199b50251f78b0cc2400104d31fc18d2c98408f02a74e581a7f7746974837dcdef51a4a259bf2' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.4.0-beta.2/caddy_2.4.0-beta.2_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Fri, 02 Apr 2021 19:00:09 GMT
+# Wed, 14 Apr 2021 19:40:29 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Fri, 02 Apr 2021 19:00:16 GMT
+# Wed, 14 Apr 2021 19:40:30 GMT
 ENV XDG_CONFIG_HOME=/config
-# Fri, 02 Apr 2021 19:00:19 GMT
+# Wed, 14 Apr 2021 19:40:31 GMT
 ENV XDG_DATA_HOME=/data
-# Fri, 02 Apr 2021 19:00:22 GMT
+# Wed, 14 Apr 2021 19:40:33 GMT
 VOLUME [/config]
-# Fri, 02 Apr 2021 19:00:30 GMT
+# Wed, 14 Apr 2021 19:40:35 GMT
 VOLUME [/data]
-# Fri, 02 Apr 2021 19:00:36 GMT
+# Wed, 14 Apr 2021 19:40:37 GMT
 LABEL org.opencontainers.image.version=v2.4.0-beta.2
-# Fri, 02 Apr 2021 19:00:41 GMT
+# Wed, 14 Apr 2021 19:40:38 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Fri, 02 Apr 2021 19:00:46 GMT
+# Wed, 14 Apr 2021 19:40:39 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Fri, 02 Apr 2021 19:00:51 GMT
+# Wed, 14 Apr 2021 19:40:40 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Fri, 02 Apr 2021 19:00:54 GMT
+# Wed, 14 Apr 2021 19:40:41 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Fri, 02 Apr 2021 19:00:57 GMT
+# Wed, 14 Apr 2021 19:40:41 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Fri, 02 Apr 2021 19:01:03 GMT
+# Wed, 14 Apr 2021 19:40:43 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Fri, 02 Apr 2021 19:01:16 GMT
+# Wed, 14 Apr 2021 19:40:44 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Fri, 02 Apr 2021 19:01:23 GMT
+# Wed, 14 Apr 2021 19:40:45 GMT
 EXPOSE 80
-# Fri, 02 Apr 2021 19:01:30 GMT
+# Wed, 14 Apr 2021 19:40:46 GMT
 EXPOSE 443
-# Fri, 02 Apr 2021 19:01:42 GMT
+# Wed, 14 Apr 2021 19:40:47 GMT
 EXPOSE 2019
-# Fri, 02 Apr 2021 19:02:07 GMT
+# Wed, 14 Apr 2021 19:40:48 GMT
 WORKDIR /srv
-# Fri, 02 Apr 2021 19:02:10 GMT
+# Wed, 14 Apr 2021 19:40:49 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:07389e51ea05e1c9a3cb0ef92d31181f2afa1e445207ad99ffd8a94d6d6af295`  
-		Last Modified: Wed, 31 Mar 2021 18:14:57 GMT  
-		Size: 2.4 MB (2424108 bytes)  
+	-	`sha256:e160e00eb35d5bc2373770873fbc9c8f5706045b0b06bfd1c364fcf69f02e9fe`  
+		Last Modified: Wed, 14 Apr 2021 18:58:36 GMT  
+		Size: 2.4 MB (2424145 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:005f2c85bbb34689fa5969c0cda8fda42d2b7848e654ff9efd67e02219a40b8f`  
-		Last Modified: Thu, 01 Apr 2021 08:13:51 GMT  
+	-	`sha256:78f77b739097bd5400613d0daa0adde01d99993ce236a374da6748f11f866bf0`  
+		Last Modified: Wed, 14 Apr 2021 19:41:38 GMT  
 		Size: 299.7 KB (299662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:447e6bb723906fc976d81f3c33ba05a5541e43675b2ef9c40091303bb8bddb04`  
-		Last Modified: Fri, 02 Apr 2021 19:05:04 GMT  
-		Size: 5.8 KB (5834 bytes)  
+	-	`sha256:9788d846329505d64f04c5f1dbd3f0d27d905fb498de7c5c456f5823672b6cff`  
+		Last Modified: Wed, 14 Apr 2021 19:41:38 GMT  
+		Size: 5.8 KB (5829 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:017a0481e097bef99cf346fa602697e6ec6e92dd192bfc8154f4a48f26ab7422`  
-		Last Modified: Fri, 02 Apr 2021 19:05:09 GMT  
-		Size: 10.8 MB (10792254 bytes)  
+	-	`sha256:f14c35ff970ff73407531ea1f8a1f74a02a827115108af34bd60e0be6c45682a`  
+		Last Modified: Wed, 14 Apr 2021 19:41:47 GMT  
+		Size: 10.8 MB (10792259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5166e8b56ad50e701cf797364485ea83aee29b1f3adceb2ba10c24fc86bdb011`  
-		Last Modified: Fri, 02 Apr 2021 19:05:05 GMT  
+	-	`sha256:78f4cac5d7458d5bd60076049902c4aaf4870551a9ba90d095db1e318e8c6de3`  
+		Last Modified: Wed, 14 Apr 2021 19:41:38 GMT  
 		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -7679,235 +7679,235 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ### `caddy:2.4.0-beta.2` - linux; ppc64le
 
 ```console
-$ docker pull caddy@sha256:69bf6d485cca04a1d5b497061ff8a3465aab5a0f56aa14e09c9840d73deeb557
+$ docker pull caddy@sha256:3604464281aef38cf182199e6e9d487be73d952aa9293cc27bcd3c47f3a5e08e
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.1 MB (13079861 bytes)**  
+-	Total Size: **13.1 MB (13079793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b36fb90d1135bfbf325f21736498234b14ee036830d05b110230f91a7b2c873`
+-	Image ID: `sha256:18e6e9d8437131af51b8524a58ca3de724aba1064d7220e22fdfb31fba739983`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 18:55:41 GMT
-ADD file:1dd3315eb685a1b6729efb6f5b634e414f3da0f065078952bc6c0339dc09512d in / 
-# Wed, 31 Mar 2021 18:55:49 GMT
+# Wed, 14 Apr 2021 19:30:57 GMT
+ADD file:52162c4413e3597dad4ccb790c379b67ef40d50c0d0659e8b6c65d833886b3af in / 
+# Wed, 14 Apr 2021 19:31:02 GMT
 CMD ["/bin/sh"]
-# Thu, 01 Apr 2021 20:23:26 GMT
+# Wed, 14 Apr 2021 22:12:15 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Fri, 02 Apr 2021 18:19:53 GMT
+# Wed, 14 Apr 2021 22:12:28 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/welcome/index.html"
-# Fri, 02 Apr 2021 18:20:04 GMT
+# Wed, 14 Apr 2021 22:12:32 GMT
 ENV CADDY_VERSION=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:20:48 GMT
+# Wed, 14 Apr 2021 22:12:49 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='41daeac683d503264496689c6271645293c95518c5b97870c3f3a17127ae35b820622720315901c0c5856b42e0201b7eaad153dfa4a1045502a99f41d0b9785d' ;; 		armhf)   binArch='armv6'; checksum='51e4d7220064e1948232c8c54996b012d01fe0e2caa71200e34f0da59bd6267cdc318124e1a7a44e83ce54b7276f6d0fb32381d3080e05902d3c3528ff423dd7' ;; 		armv7)   binArch='armv7'; checksum='9c3b4eea4840a1fe633d45d436789edf6839e96527783d2eac309d24e5085c0cdee8beffd7e5ad2f1d7d31e16004e916aa29456d8ac52007e9d904e644d6db40' ;; 		aarch64) binArch='arm64'; checksum='86cf83d11aee266d32c262982df3e286aa0a4b391fc4fbded0e299ace043c753e9a1f53bef1f95a292a71107e1f9578a8615b038871eedb171437eebe7db47d2' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='81b050dae2892feb517db6c782acc506dfe21399b0a79073e5191656f57c6d0a5a511caf1086ffc671712ab198715cca6a2a120812a4df8d774ba17d6242aa39' ;; 		s390x)   binArch='s390x'; checksum='763256d267ad8832c37fa1a902fc06dfb6b9871b75e38545cbc199b50251f78b0cc2400104d31fc18d2c98408f02a74e581a7f7746974837dcdef51a4a259bf2' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.4.0-beta.2/caddy_2.4.0-beta.2_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Fri, 02 Apr 2021 18:21:13 GMT
+# Wed, 14 Apr 2021 22:13:03 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Fri, 02 Apr 2021 18:21:30 GMT
+# Wed, 14 Apr 2021 22:13:08 GMT
 ENV XDG_CONFIG_HOME=/config
-# Fri, 02 Apr 2021 18:21:54 GMT
+# Wed, 14 Apr 2021 22:13:12 GMT
 ENV XDG_DATA_HOME=/data
-# Fri, 02 Apr 2021 18:22:17 GMT
+# Wed, 14 Apr 2021 22:13:34 GMT
 VOLUME [/config]
-# Fri, 02 Apr 2021 18:22:36 GMT
+# Wed, 14 Apr 2021 22:13:49 GMT
 VOLUME [/data]
-# Fri, 02 Apr 2021 18:22:43 GMT
+# Wed, 14 Apr 2021 22:13:57 GMT
 LABEL org.opencontainers.image.version=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:22:53 GMT
+# Wed, 14 Apr 2021 22:14:02 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Fri, 02 Apr 2021 18:23:02 GMT
+# Wed, 14 Apr 2021 22:14:09 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Fri, 02 Apr 2021 18:23:11 GMT
+# Wed, 14 Apr 2021 22:14:16 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Fri, 02 Apr 2021 18:23:21 GMT
+# Wed, 14 Apr 2021 22:14:23 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Fri, 02 Apr 2021 18:23:31 GMT
+# Wed, 14 Apr 2021 22:14:28 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Fri, 02 Apr 2021 18:23:37 GMT
+# Wed, 14 Apr 2021 22:14:35 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Fri, 02 Apr 2021 18:23:44 GMT
+# Wed, 14 Apr 2021 22:14:42 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Fri, 02 Apr 2021 18:23:48 GMT
+# Wed, 14 Apr 2021 22:14:49 GMT
 EXPOSE 80
-# Fri, 02 Apr 2021 18:23:56 GMT
+# Wed, 14 Apr 2021 22:14:55 GMT
 EXPOSE 443
-# Fri, 02 Apr 2021 18:24:05 GMT
+# Wed, 14 Apr 2021 22:15:00 GMT
 EXPOSE 2019
-# Fri, 02 Apr 2021 18:24:15 GMT
+# Wed, 14 Apr 2021 22:15:06 GMT
 WORKDIR /srv
-# Fri, 02 Apr 2021 18:24:21 GMT
+# Wed, 14 Apr 2021 22:15:12 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:dc4792b25345295bf964e1db1bceedb2338bfad8f0fb64f0cc07b152df9aef84`  
-		Last Modified: Wed, 31 Mar 2021 18:57:19 GMT  
-		Size: 2.8 MB (2813219 bytes)  
+	-	`sha256:771d2590aa602a0d4a922e322f02b22cc9d193f8cd159d9d1a140cadf1f8b4d4`  
+		Last Modified: Wed, 14 Apr 2021 19:32:33 GMT  
+		Size: 2.8 MB (2813141 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4dd67c6c19ed1d5aad6173157b10ed430dc4b79f7aefd9b15968e3d6f2515ef8`  
-		Last Modified: Thu, 01 Apr 2021 20:28:17 GMT  
-		Size: 302.5 KB (302540 bytes)  
+	-	`sha256:25908330df11bb7bc2ed71aa9b4de279db5492df2b03ced3f6650b25821c4584`  
+		Last Modified: Wed, 14 Apr 2021 22:16:00 GMT  
+		Size: 302.6 KB (302554 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:446396dbb30a2925d80e617fbeabd659f039220522d910dd811c13927bf36c2a`  
-		Last Modified: Fri, 02 Apr 2021 18:25:25 GMT  
-		Size: 5.8 KB (5833 bytes)  
+	-	`sha256:7db38e9079ac39fb587a66fb19194d3b826ebb61f448eec8d7d1881c57d743ee`  
+		Last Modified: Wed, 14 Apr 2021 22:16:00 GMT  
+		Size: 5.8 KB (5828 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:977297ea362b91438c0d23b7a5e054d023732d70ff45dbf0e856b88504a5a0d5`  
-		Last Modified: Fri, 02 Apr 2021 18:25:27 GMT  
+	-	`sha256:ddb3d6ca707ceaa50eb1f2531e22cf89a6048b70374e81f0380914881e0fd229`  
+		Last Modified: Wed, 14 Apr 2021 22:16:02 GMT  
 		Size: 10.0 MB (9958115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:304ddb1940c4a291b09e86d1f35f1591e61597f37f91859016cf0e28f91f46c2`  
-		Last Modified: Fri, 02 Apr 2021 18:25:25 GMT  
-		Size: 154.0 B  
+	-	`sha256:46d38adbdd5557c52260b3374adc032cf15b098ae41cdb2c58a8ed4afb6cb9da`  
+		Last Modified: Wed, 14 Apr 2021 22:15:59 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2.4.0-beta.2` - linux; s390x
 
 ```console
-$ docker pull caddy@sha256:c093c6df07e976c6544777eef3dbec8efb22231132046ef67a400bad8b75083f
+$ docker pull caddy@sha256:7236cb39ac16745ad402c814cc38fe206ee611029901ef34ddf5bbc38cc3b4dd
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.9 MB (13897301 bytes)**  
+-	Total Size: **13.9 MB (13897385 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:31b2cdf76b47d28ab04dfb908fcd67535e75e5c3ccf8867fc11e928f3e97c1b6`
+-	Image ID: `sha256:92516f58ee45d35db423aab69a6495fd9ec244bd0b00af83ca97d262ff6e9892`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 17:14:58 GMT
-ADD file:3f5fe04867af3c9f2cfc5b315d97097145ae11343399985386321a8db21d7786 in / 
-# Wed, 31 Mar 2021 17:14:58 GMT
+# Wed, 14 Apr 2021 18:41:35 GMT
+ADD file:c715fef757fe2b022ae1bbff71dbc58bddf5a858deb0aac5a6fbcf10d5f3111c in / 
+# Wed, 14 Apr 2021 18:41:36 GMT
 CMD ["/bin/sh"]
-# Fri, 02 Apr 2021 18:41:35 GMT
+# Wed, 14 Apr 2021 20:07:40 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Fri, 02 Apr 2021 18:41:36 GMT
+# Wed, 14 Apr 2021 20:07:42 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/welcome/index.html"
-# Fri, 02 Apr 2021 18:41:37 GMT
+# Wed, 14 Apr 2021 20:07:42 GMT
 ENV CADDY_VERSION=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:41:39 GMT
+# Wed, 14 Apr 2021 20:07:44 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='41daeac683d503264496689c6271645293c95518c5b97870c3f3a17127ae35b820622720315901c0c5856b42e0201b7eaad153dfa4a1045502a99f41d0b9785d' ;; 		armhf)   binArch='armv6'; checksum='51e4d7220064e1948232c8c54996b012d01fe0e2caa71200e34f0da59bd6267cdc318124e1a7a44e83ce54b7276f6d0fb32381d3080e05902d3c3528ff423dd7' ;; 		armv7)   binArch='armv7'; checksum='9c3b4eea4840a1fe633d45d436789edf6839e96527783d2eac309d24e5085c0cdee8beffd7e5ad2f1d7d31e16004e916aa29456d8ac52007e9d904e644d6db40' ;; 		aarch64) binArch='arm64'; checksum='86cf83d11aee266d32c262982df3e286aa0a4b391fc4fbded0e299ace043c753e9a1f53bef1f95a292a71107e1f9578a8615b038871eedb171437eebe7db47d2' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='81b050dae2892feb517db6c782acc506dfe21399b0a79073e5191656f57c6d0a5a511caf1086ffc671712ab198715cca6a2a120812a4df8d774ba17d6242aa39' ;; 		s390x)   binArch='s390x'; checksum='763256d267ad8832c37fa1a902fc06dfb6b9871b75e38545cbc199b50251f78b0cc2400104d31fc18d2c98408f02a74e581a7f7746974837dcdef51a4a259bf2' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.4.0-beta.2/caddy_2.4.0-beta.2_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Fri, 02 Apr 2021 18:41:40 GMT
+# Wed, 14 Apr 2021 20:07:45 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Fri, 02 Apr 2021 18:41:40 GMT
+# Wed, 14 Apr 2021 20:07:46 GMT
 ENV XDG_CONFIG_HOME=/config
-# Fri, 02 Apr 2021 18:41:40 GMT
+# Wed, 14 Apr 2021 20:07:46 GMT
 ENV XDG_DATA_HOME=/data
-# Fri, 02 Apr 2021 18:41:40 GMT
+# Wed, 14 Apr 2021 20:07:46 GMT
 VOLUME [/config]
-# Fri, 02 Apr 2021 18:41:41 GMT
+# Wed, 14 Apr 2021 20:07:46 GMT
 VOLUME [/data]
-# Fri, 02 Apr 2021 18:41:41 GMT
+# Wed, 14 Apr 2021 20:07:46 GMT
 LABEL org.opencontainers.image.version=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:41:41 GMT
+# Wed, 14 Apr 2021 20:07:47 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Fri, 02 Apr 2021 18:41:41 GMT
+# Wed, 14 Apr 2021 20:07:47 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Fri, 02 Apr 2021 18:41:42 GMT
+# Wed, 14 Apr 2021 20:07:47 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Fri, 02 Apr 2021 18:41:42 GMT
+# Wed, 14 Apr 2021 20:07:47 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Fri, 02 Apr 2021 18:41:42 GMT
+# Wed, 14 Apr 2021 20:07:48 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Fri, 02 Apr 2021 18:41:42 GMT
+# Wed, 14 Apr 2021 20:07:48 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Fri, 02 Apr 2021 18:41:42 GMT
+# Wed, 14 Apr 2021 20:07:48 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Fri, 02 Apr 2021 18:41:43 GMT
+# Wed, 14 Apr 2021 20:07:48 GMT
 EXPOSE 80
-# Fri, 02 Apr 2021 18:41:43 GMT
+# Wed, 14 Apr 2021 20:07:48 GMT
 EXPOSE 443
-# Fri, 02 Apr 2021 18:41:43 GMT
+# Wed, 14 Apr 2021 20:07:49 GMT
 EXPOSE 2019
-# Fri, 02 Apr 2021 18:41:43 GMT
+# Wed, 14 Apr 2021 20:07:49 GMT
 WORKDIR /srv
-# Fri, 02 Apr 2021 18:41:43 GMT
+# Wed, 14 Apr 2021 20:07:49 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:1d4058bbeedf5296bcaf5ae8f37c8cd58152acad3ec45a536e08b83f5d3abe83`  
-		Last Modified: Wed, 31 Mar 2021 17:15:36 GMT  
-		Size: 2.6 MB (2602591 bytes)  
+	-	`sha256:afadee6ad6a38d3172beeeca818219604c782efbe93201ef4d39512f289b05ae`  
+		Last Modified: Wed, 14 Apr 2021 18:42:16 GMT  
+		Size: 2.6 MB (2602650 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21bdee00e0d42aa0eac225d6882199a22161798072f0c25e30b7b4b8896545cc`  
-		Last Modified: Fri, 02 Apr 2021 18:42:14 GMT  
-		Size: 300.8 KB (300829 bytes)  
+	-	`sha256:9db3c8b812fcb0d1bfd42c16c2e9ac68f4f3006382c5362e969d1c9eb3a9fab5`  
+		Last Modified: Wed, 14 Apr 2021 20:08:26 GMT  
+		Size: 300.8 KB (300847 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:070fe2ada5f147f27af3e4a6091cc3f466f9af385177076a766396c3e2634c02`  
-		Last Modified: Fri, 02 Apr 2021 18:42:15 GMT  
-		Size: 5.8 KB (5830 bytes)  
+	-	`sha256:89655d5853714574393844228f501cd2caed22a1af84d0b24b3f3614aa4177d5`  
+		Last Modified: Wed, 14 Apr 2021 20:08:26 GMT  
+		Size: 5.8 KB (5823 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8391d5bf2258305005739ed98cbb49ec466fc95757fa0cb14f40a89262ffe13e`  
-		Last Modified: Fri, 02 Apr 2021 18:42:16 GMT  
-		Size: 11.0 MB (10987897 bytes)  
+	-	`sha256:e4d56d7197473fe4c06e215810298ce281307fc5f2bc659b633f400198ada755`  
+		Last Modified: Wed, 14 Apr 2021 20:08:28 GMT  
+		Size: 11.0 MB (10987911 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a6dd4c5ad3aa33d5340696408e521f09c1cfc35c26779f22707d51ccc50809c`  
-		Last Modified: Fri, 02 Apr 2021 18:42:14 GMT  
+	-	`sha256:2fe6ca41447c64f973dcf67a370126053ec58952f1e3381e3e97b642a320270b`  
+		Last Modified: Wed, 14 Apr 2021 20:08:26 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `caddy:2.4.0-beta.2` - windows version 10.0.17763.1817; amd64
+### `caddy:2.4.0-beta.2` - windows version 10.0.17763.1879; amd64
 
 ```console
-$ docker pull caddy@sha256:6f39355785ee4e6f020cd3755adb37e0f09f396afd9fcaa7330e15d424e225b4
+$ docker pull caddy@sha256:57007a2384bbff9e730072565519dbdb596e6eb66e59969ba33cc31b8a5cea77
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2487602702 bytes)**  
+-	Total Size: **2.5 GB (2487035062 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11dbe1305e7cbce4d507512474f6d9c114c88ecf4c1e6ac3802065b47d6c175c`
+-	Image ID: `sha256:21166c4140d929d0caccfb9e9ff5b3af4641c7594112345c1d3d87a5bf7f52ac`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 07 May 2020 05:09:25 GMT
 RUN Apply image 1809-RTM-amd64
-# Sat, 27 Feb 2021 09:32:06 GMT
+# Fri, 09 Apr 2021 20:34:41 GMT
 RUN Install update 1809-amd64
-# Wed, 10 Mar 2021 13:08:20 GMT
+# Wed, 14 Apr 2021 12:09:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 02 Apr 2021 18:16:22 GMT
+# Wed, 14 Apr 2021 20:13:54 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Fri, 02 Apr 2021 18:16:24 GMT
+# Wed, 14 Apr 2021 20:13:55 GMT
 ENV CADDY_VERSION=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:16:54 GMT
+# Wed, 14 Apr 2021 20:14:32 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.4.0-beta.2/caddy_2.4.0-beta.2_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('9f41c88fc8c2c28230c5eb67fb7d9ef23477a351fb716a44486b3d1a37569fb141112cd3582adcd44424b2819c22723fb49023a6d371e1bf8d92eefe4e7e9ed4')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Fri, 02 Apr 2021 18:16:55 GMT
+# Wed, 14 Apr 2021 20:14:33 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Fri, 02 Apr 2021 18:16:56 GMT
+# Wed, 14 Apr 2021 20:14:34 GMT
 ENV XDG_DATA_HOME=c:/data
-# Fri, 02 Apr 2021 18:16:58 GMT
+# Wed, 14 Apr 2021 20:14:35 GMT
 VOLUME [c:/config]
-# Fri, 02 Apr 2021 18:16:59 GMT
+# Wed, 14 Apr 2021 20:14:36 GMT
 VOLUME [c:/data]
-# Fri, 02 Apr 2021 18:17:00 GMT
+# Wed, 14 Apr 2021 20:14:37 GMT
 LABEL org.opencontainers.image.version=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:17:01 GMT
+# Wed, 14 Apr 2021 20:14:38 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Fri, 02 Apr 2021 18:17:02 GMT
+# Wed, 14 Apr 2021 20:14:39 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Fri, 02 Apr 2021 18:17:03 GMT
+# Wed, 14 Apr 2021 20:14:40 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Fri, 02 Apr 2021 18:17:04 GMT
+# Wed, 14 Apr 2021 20:14:41 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Fri, 02 Apr 2021 18:17:06 GMT
+# Wed, 14 Apr 2021 20:14:42 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Fri, 02 Apr 2021 18:17:07 GMT
+# Wed, 14 Apr 2021 20:14:43 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Fri, 02 Apr 2021 18:17:08 GMT
+# Wed, 14 Apr 2021 20:14:44 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Fri, 02 Apr 2021 18:17:09 GMT
+# Wed, 14 Apr 2021 20:14:45 GMT
 EXPOSE 80
-# Fri, 02 Apr 2021 18:17:10 GMT
+# Wed, 14 Apr 2021 20:14:46 GMT
 EXPOSE 443
-# Fri, 02 Apr 2021 18:17:11 GMT
+# Wed, 14 Apr 2021 20:14:47 GMT
 EXPOSE 2019
-# Fri, 02 Apr 2021 18:17:29 GMT
+# Wed, 14 Apr 2021 20:15:12 GMT
 RUN caddy version
-# Fri, 02 Apr 2021 18:17:30 GMT
+# Wed, 14 Apr 2021 20:15:13 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -7915,154 +7915,154 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 	-	`sha256:4612f6d0b889cad0ed0292fae3a0b0c8a9e49aff6dea8eb049b2386d9b07986f`  
 		Size: 1.7 GB (1718332879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ff1512f88ecd4ff0a91ade34d43733c48834433e35f062f80e6e70d706f8d73`  
-		Size: 743.2 MB (743201590 bytes)  
+	-	`sha256:399f118dfaa9a753e98d128238b944432c7bcabea88a2998a6efbbece28ed303`  
+		Size: 751.4 MB (751421005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ebe61daec6d671bc2c1c6fe61ac9825fb552e9cef3672d0a7dbec719d125ae64`  
-		Last Modified: Wed, 10 Mar 2021 13:21:09 GMT  
-		Size: 1.4 KB (1430 bytes)  
+	-	`sha256:106dbf3373fce4f0ba5e00ad54824c597f2894605fa7d8ef446ad7ea3b97449f`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95e2248c328b7b25c2cbbab7676a8e86d131ea6ad52f5f7bd35647a14893a0a2`  
-		Last Modified: Fri, 02 Apr 2021 18:25:36 GMT  
-		Size: 9.5 MB (9465706 bytes)  
+	-	`sha256:1de472ba1df2f836f9b4125180bedb0ca0f6c425460dd8535a92764dff8169f8`  
+		Last Modified: Wed, 14 Apr 2021 20:25:56 GMT  
+		Size: 5.1 MB (5080859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c94271d4a9ce601138f36c7f2d749d748b9ced3d0f52764ca356d32860edb5c5`  
-		Last Modified: Fri, 02 Apr 2021 18:25:33 GMT  
+	-	`sha256:55627e36839779d3cfb370ec41774f50d7db4ff914a3077c70b75f96287e5af0`  
+		Last Modified: Wed, 14 Apr 2021 20:25:52 GMT  
+		Size: 1.4 KB (1350 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:78f2e16d47aeed21efafcfe34553edd6166984a4ae765a5420a50d46f1d204b6`  
+		Last Modified: Wed, 14 Apr 2021 20:25:56 GMT  
+		Size: 11.9 MB (11867562 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4d62c501d3d5d88099b96f7b95b3f58cdc7baea8006662464c5677f3d8abbad2`  
+		Last Modified: Wed, 14 Apr 2021 20:25:52 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cee81a85c97e2bebd04246c72c2e9093a2fc92d5b3a1c61092a47ca2dbca3195`  
+		Last Modified: Wed, 14 Apr 2021 20:25:51 GMT  
+		Size: 1.3 KB (1328 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2c473eb70ede949ae95779d72ada5e737f68bee537a5892368b21c219b7ae8f2`  
+		Last Modified: Wed, 14 Apr 2021 20:25:51 GMT  
+		Size: 1.4 KB (1374 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:962e4b4d5583a800a5fa99d1c9f8344405685fc162718cfab1c851df0b149bf4`  
+		Last Modified: Wed, 14 Apr 2021 20:25:50 GMT  
+		Size: 1.4 KB (1406 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4277207668aa329a0fcf285a3e8044549f14fcdc258b54941786b2dbac2b738f`  
+		Last Modified: Wed, 14 Apr 2021 20:25:49 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8932075115714c24da0e0b15ca784e45621efdac23f763feac93a8d63e51dc18`  
+		Last Modified: Wed, 14 Apr 2021 20:25:49 GMT  
+		Size: 1.3 KB (1304 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b3ec24942a02e14cc4f3627742e1a9ba37a831854d99e25e35ab78c7603f4cbd`  
+		Last Modified: Wed, 14 Apr 2021 20:25:49 GMT  
+		Size: 1.3 KB (1339 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e554d5e240ec502a081852a31141622d738e021388206ba4f43cb159c7c7d7a5`  
+		Last Modified: Wed, 14 Apr 2021 20:25:48 GMT  
 		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ca5665516d898633290e493cef794521852475d69230732409986f3ad81705`  
-		Last Modified: Fri, 02 Apr 2021 18:25:38 GMT  
-		Size: 16.3 MB (16274695 bytes)  
+	-	`sha256:73e6d8e32fb60c802dc23aa51a0c38e0588aebbf5461bd4d3b66de34e80d2eb6`  
+		Last Modified: Wed, 14 Apr 2021 20:25:47 GMT  
+		Size: 1.4 KB (1383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0de70870a5fa3de27854447c44c6ba786981cc938c0f362048da4170553463a`  
-		Last Modified: Fri, 02 Apr 2021 18:25:32 GMT  
-		Size: 1.4 KB (1399 bytes)  
+	-	`sha256:a339de9553d5fd226cedff68f9c92d817957f2f7809f9d64da67f12fb23bed32`  
+		Last Modified: Wed, 14 Apr 2021 20:25:46 GMT  
+		Size: 1.3 KB (1311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a3568445127d07f06bf99e10ae664cca603cc31e68c728060dcac8f7e608881`  
-		Last Modified: Fri, 02 Apr 2021 18:25:32 GMT  
-		Size: 1.4 KB (1443 bytes)  
+	-	`sha256:51272577d8785b827aa7bb896767009a940ee9343189459c6e3c675e566f9f0d`  
+		Last Modified: Wed, 14 Apr 2021 20:25:46 GMT  
+		Size: 1.3 KB (1332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da65ebebad5059d100ae2af112ca25285129bee6131023aa4c8ce7f0f830793a`  
-		Last Modified: Fri, 02 Apr 2021 18:25:30 GMT  
-		Size: 1.4 KB (1427 bytes)  
+	-	`sha256:bde8de3cc19d01e8b1d8624b50438d1fa257a16237f41b1d73cff4fa65768a4d`  
+		Last Modified: Wed, 14 Apr 2021 20:25:46 GMT  
+		Size: 1.3 KB (1329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a48067c5e57f31ce03ffc3422870602c673527153e446f55fe44dc813bebf9b4`  
-		Last Modified: Fri, 02 Apr 2021 18:25:30 GMT  
-		Size: 1.4 KB (1430 bytes)  
+	-	`sha256:455f5cdc11de43d196e81d074362a41abcaed1366315581b689ba2a88d3f4857`  
+		Last Modified: Wed, 14 Apr 2021 20:25:44 GMT  
+		Size: 1.3 KB (1303 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7f2e781673fc6a350cf8b08667e71ffdf90d42f5b0a6a1d9da8e29771f1ffc6`  
-		Last Modified: Fri, 02 Apr 2021 18:25:29 GMT  
-		Size: 1.4 KB (1426 bytes)  
+	-	`sha256:86d7b5d207b9968f7f40e32437e99ef85d2dde4afba849a8825896ee82ed5f50`  
+		Last Modified: Wed, 14 Apr 2021 20:25:43 GMT  
+		Size: 1.3 KB (1332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8493be2eceb4e6ea31b450a179859bfd185e92ffd3bbf301fcbd9cb409bcb911`  
-		Last Modified: Fri, 02 Apr 2021 18:25:30 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:8c9dc90818d729c2fd0cb0bac96912bd2969512c4a029b3a3b21b3764b004500`  
+		Last Modified: Wed, 14 Apr 2021 20:25:44 GMT  
+		Size: 1.3 KB (1326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c7a94659f6ba05b7478802b8b57b48e51bbc397ddd845b315891c3e32c1be32`  
-		Last Modified: Fri, 02 Apr 2021 18:25:29 GMT  
-		Size: 1.4 KB (1397 bytes)  
+	-	`sha256:d304d34d98bbc8fed2a3f472757c6377c204ec57a87fd6a3823cf4236f26e877`  
+		Last Modified: Wed, 14 Apr 2021 20:25:46 GMT  
+		Size: 308.5 KB (308506 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0db2eb1ebe3b7e3abc59d777a66b0b0b8f51cb3378cc265655f1bfcd7e79312`  
-		Last Modified: Fri, 02 Apr 2021 18:25:27 GMT  
-		Size: 1.4 KB (1426 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d6c27364edfca6e69e47b72493bac0aa0242ed5630222b468f2511911e9db14`  
-		Last Modified: Fri, 02 Apr 2021 18:25:27 GMT  
-		Size: 1.4 KB (1426 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88ed9f38d63bbcecb70291bbc12286363d05cd6e3fb4be3863ea7332dfd32df8`  
-		Last Modified: Fri, 02 Apr 2021 18:25:27 GMT  
-		Size: 1.4 KB (1393 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b92c3fb781472d906952c139a15a924de551954360d972757c2b7fa70127fc7`  
-		Last Modified: Fri, 02 Apr 2021 18:25:27 GMT  
-		Size: 1.4 KB (1430 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccc395ee40c1f92ebe4a8630100e8e3a0323cd404b6e2b4a13b8cd01e17514c1`  
-		Last Modified: Fri, 02 Apr 2021 18:25:27 GMT  
-		Size: 1.4 KB (1409 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7daab2d67688cedff5bdcbd07535b3be37f2493b23cd92a902e0f241d46be09f`  
-		Last Modified: Fri, 02 Apr 2021 18:25:24 GMT  
-		Size: 1.4 KB (1411 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cebc8f200f7b9a010feb0546619b1dee830f1b1ec0dc747ad7158ecb0088482c`  
-		Last Modified: Fri, 02 Apr 2021 18:25:24 GMT  
-		Size: 1.4 KB (1393 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2cd8989a8ea6c4f623b19785b82af238aee316ee6b72e732262a87011c74d62`  
-		Last Modified: Fri, 02 Apr 2021 18:25:24 GMT  
-		Size: 1.4 KB (1437 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d6b1aa36e5bfef2dfa42970c937fc34573ad9f72508693cda371163b8da379`  
-		Last Modified: Fri, 02 Apr 2021 18:25:25 GMT  
-		Size: 302.3 KB (302255 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34ec29f6e55d821e399842d426dab17fde9d0ddebeb312cbb9e2a7c07cbdf0b3`  
-		Last Modified: Fri, 02 Apr 2021 18:25:25 GMT  
-		Size: 1.4 KB (1430 bytes)  
+	-	`sha256:701310ad80f85832364aa3313c02e66c8a9e60cd165a937c96075db0496b486c`  
+		Last Modified: Wed, 14 Apr 2021 20:25:43 GMT  
+		Size: 1.4 KB (1403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `caddy:2.4.0-beta.2` - windows version 10.0.14393.4283; amd64
+### `caddy:2.4.0-beta.2` - windows version 10.0.14393.4350; amd64
 
 ```console
-$ docker pull caddy@sha256:484c688cb48fa269829e7f6b85bc623bc1b5061043c0e673cc323ccb7c465abc
+$ docker pull caddy@sha256:fa30c18bcdf91806b54ea7ed3a348627df09108ceebc6d0d5550fb0ad3455cde
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 GB (5829094060 bytes)**  
+-	Total Size: **5.8 GB (5817979261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86b0dff6059a7f821d34de02f7303fd43d1f41212c68037dd2876ebd5663e534`
+-	Image ID: `sha256:421de0d93291fba46ed24305b5fe5fe3f674bd381400d00c5bf45a608e170018`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sat, 19 Nov 2016 17:05:00 GMT
 RUN Apply image 1607-RTM-amd64
-# Wed, 03 Mar 2021 18:02:00 GMT
+# Wed, 07 Apr 2021 21:54:00 GMT
 RUN Install update ltsc2016-amd64
-# Wed, 10 Mar 2021 13:42:05 GMT
+# Wed, 14 Apr 2021 12:35:33 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 02 Apr 2021 18:19:03 GMT
+# Wed, 14 Apr 2021 20:16:50 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Fri, 02 Apr 2021 18:19:04 GMT
+# Wed, 14 Apr 2021 20:16:51 GMT
 ENV CADDY_VERSION=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:20:44 GMT
+# Wed, 14 Apr 2021 20:18:39 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.4.0-beta.2/caddy_2.4.0-beta.2_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('9f41c88fc8c2c28230c5eb67fb7d9ef23477a351fb716a44486b3d1a37569fb141112cd3582adcd44424b2819c22723fb49023a6d371e1bf8d92eefe4e7e9ed4')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Fri, 02 Apr 2021 18:20:45 GMT
+# Wed, 14 Apr 2021 20:18:40 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Fri, 02 Apr 2021 18:20:47 GMT
+# Wed, 14 Apr 2021 20:18:41 GMT
 ENV XDG_DATA_HOME=c:/data
-# Fri, 02 Apr 2021 18:20:48 GMT
+# Wed, 14 Apr 2021 20:18:42 GMT
 VOLUME [c:/config]
-# Fri, 02 Apr 2021 18:20:49 GMT
+# Wed, 14 Apr 2021 20:18:43 GMT
 VOLUME [c:/data]
-# Fri, 02 Apr 2021 18:20:50 GMT
+# Wed, 14 Apr 2021 20:18:45 GMT
 LABEL org.opencontainers.image.version=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:20:52 GMT
+# Wed, 14 Apr 2021 20:18:46 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Fri, 02 Apr 2021 18:20:53 GMT
+# Wed, 14 Apr 2021 20:18:47 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Fri, 02 Apr 2021 18:20:54 GMT
+# Wed, 14 Apr 2021 20:18:48 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Fri, 02 Apr 2021 18:20:55 GMT
+# Wed, 14 Apr 2021 20:18:49 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Fri, 02 Apr 2021 18:20:57 GMT
+# Wed, 14 Apr 2021 20:18:50 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Fri, 02 Apr 2021 18:20:58 GMT
+# Wed, 14 Apr 2021 20:18:51 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Fri, 02 Apr 2021 18:20:59 GMT
+# Wed, 14 Apr 2021 20:18:52 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Fri, 02 Apr 2021 18:21:00 GMT
+# Wed, 14 Apr 2021 20:18:53 GMT
 EXPOSE 80
-# Fri, 02 Apr 2021 18:21:01 GMT
+# Wed, 14 Apr 2021 20:18:54 GMT
 EXPOSE 443
-# Fri, 02 Apr 2021 18:21:02 GMT
+# Wed, 14 Apr 2021 20:18:55 GMT
 EXPOSE 2019
-# Fri, 02 Apr 2021 18:21:57 GMT
+# Wed, 14 Apr 2021 20:20:11 GMT
 RUN caddy version
-# Fri, 02 Apr 2021 18:21:58 GMT
+# Wed, 14 Apr 2021 20:20:12 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -8071,98 +8071,98 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Last Modified: Tue, 18 Sep 2018 20:20:50 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:30bda99601c5cbd3b2118409f401852ea648e2319bd81518723e476b28d764c5`  
-		Size: 1.7 GB (1726924885 bytes)  
+	-	`sha256:00b4edb823e6a375d179a28cbfa682c2379d62179e1518485902d6e68b9a9d1e`  
+		Size: 1.7 GB (1724897968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:76680da9dc6db108ddf2e353c494b45e8486a6751619a13ed8fb3ad64b9a16e9`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bb52885e05952959b0fa7aaff23561fcf14d294aed336112b388c94e67709e4f`  
+		Last Modified: Wed, 14 Apr 2021 12:59:14 GMT  
+		Size: 1.4 KB (1406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3839f3b2a37673d4006f18951ce8d65dac9f9e7a60c481cf4fa86898372bcc72`  
-		Last Modified: Fri, 02 Apr 2021 18:25:59 GMT  
-		Size: 10.2 MB (10196223 bytes)  
+	-	`sha256:b068c1eb113cc4e93590b9ea7cd57796316b3b21ba390abfe889d79e702cec3c`  
+		Last Modified: Wed, 14 Apr 2021 20:26:14 GMT  
+		Size: 5.7 MB (5660433 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b35d02bac712107cd6e45e8ecf4c379e9fe8ba144b8b1af73c9fbaeeb9b5ea21`  
-		Last Modified: Fri, 02 Apr 2021 18:25:54 GMT  
-		Size: 1.4 KB (1424 bytes)  
+	-	`sha256:3d97864bd63ccf6806c9e9849c61e19f7a4b476e59b63ac9d243241fdd271e3d`  
+		Last Modified: Wed, 14 Apr 2021 20:26:12 GMT  
+		Size: 1.4 KB (1440 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66f861c5228e163fdd027d65ffdb9bf65e90a1940df415ad2c0ce25ab35cd093`  
-		Last Modified: Fri, 02 Apr 2021 18:26:01 GMT  
-		Size: 21.7 MB (21693316 bytes)  
+	-	`sha256:2ab97c72d1ce9fea13fa1e516f83d28adc8a155bfa23822ce7752d2da4f74c5b`  
+		Last Modified: Wed, 14 Apr 2021 20:26:17 GMT  
+		Size: 17.2 MB (17151549 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:70f4820276b1680a1ec83d16ac48637c3bb3a276c31baaaf17dd757edd9f4188`  
-		Last Modified: Fri, 02 Apr 2021 18:25:54 GMT  
-		Size: 1.4 KB (1408 bytes)  
+	-	`sha256:e8acb6e1c103fe19721c692609bc6eb55acdd0326bb9d027768a6ba92e7e0202`  
+		Last Modified: Wed, 14 Apr 2021 20:26:11 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1d3d58a6632e499c498ca0addf11c2b22067f5427a93e69885d6b38e1b10596`  
-		Last Modified: Fri, 02 Apr 2021 18:25:54 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:d3cdd68811b5c180d1153a0f2b6d8edceb94aad8069b64040d2d8db829dd448e`  
+		Last Modified: Wed, 14 Apr 2021 20:26:11 GMT  
+		Size: 1.4 KB (1405 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f28b4d2afe9acc4864ab15a603e8672fb2482c1dd648c57e32456bf7765c3c63`  
-		Last Modified: Fri, 02 Apr 2021 18:25:53 GMT  
-		Size: 1.4 KB (1407 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6489ff70b21ce91518922c0d1bfd94e89f92403b67f5a24a1825fd37f28f5aaf`  
-		Last Modified: Fri, 02 Apr 2021 18:25:52 GMT  
-		Size: 1.4 KB (1435 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86c0ad8640bb2534d11d722e0777eca31ac10db266abae4cbeefcdfc9f1936a8`  
-		Last Modified: Fri, 02 Apr 2021 18:25:51 GMT  
-		Size: 1.4 KB (1442 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7885acef6da7eb82e08e66cab23b2890f3f3dafef9ec189e81f8045c1954afc`  
-		Last Modified: Fri, 02 Apr 2021 18:25:51 GMT  
-		Size: 1.4 KB (1427 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c1f28035d278c150033dbc5d05f6fa9dd3ece81bba6b2a85b3453414398f8aa`  
-		Last Modified: Fri, 02 Apr 2021 18:25:51 GMT  
-		Size: 1.4 KB (1391 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d19f2df18981d5ee49e3c45183b1d251f5c4ab848c5f6dc0c0816224f900d287`  
-		Last Modified: Fri, 02 Apr 2021 18:25:50 GMT  
-		Size: 1.4 KB (1436 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:786ed8d22ae84118b965493f2dc3e79c27bb76f8e34470a569d40d5b9197d008`  
-		Last Modified: Fri, 02 Apr 2021 18:25:49 GMT  
+	-	`sha256:6ab6a4bef16e77771e00038b7a77d618e3fc0da8ef554e67d5a8c4e0400f1809`  
+		Last Modified: Wed, 14 Apr 2021 20:26:09 GMT  
 		Size: 1.4 KB (1399 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:203b1cde58cdb206802bae3748fc1791648ec167a9addfc05d71af8ef80a7263`  
-		Last Modified: Fri, 02 Apr 2021 18:25:49 GMT  
-		Size: 1.4 KB (1393 bytes)  
+	-	`sha256:558d80b23de2d6fb99e705591d268689266afd67afef1012302baf76d43c6a0c`  
+		Last Modified: Wed, 14 Apr 2021 20:26:09 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17a08c62e43e038c439e7b271c524bc1b032913ef0a7838c7a28574564267f4d`  
-		Last Modified: Fri, 02 Apr 2021 18:25:48 GMT  
-		Size: 1.4 KB (1370 bytes)  
+	-	`sha256:6382ddb421f9b6ed0c2a785186cf291be684523ec1ddc96d4cfe2963b4f37b79`  
+		Last Modified: Wed, 14 Apr 2021 20:26:09 GMT  
+		Size: 1.4 KB (1425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:629328a7926be76a0105b548d269200ac4213b329ac924c6dc34399747a0a6e4`  
-		Last Modified: Fri, 02 Apr 2021 18:25:48 GMT  
-		Size: 1.4 KB (1413 bytes)  
+	-	`sha256:991b64532293d0a7f622cce85a5709f33577f5803fda5d8838a8cc850532054c`  
+		Last Modified: Wed, 14 Apr 2021 20:26:08 GMT  
+		Size: 1.4 KB (1351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:33b6aec700c2791f546afb2dc6d5045b6ea036c6117b574d5ed06454a2eb5e42`  
-		Last Modified: Fri, 02 Apr 2021 18:25:47 GMT  
-		Size: 1.4 KB (1393 bytes)  
+	-	`sha256:10bf3364ee0158cad4826de8a57245fcb5a54a4f33f0d07fa1867d70b482812d`  
+		Last Modified: Wed, 14 Apr 2021 20:26:09 GMT  
+		Size: 1.4 KB (1440 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ded6ed75772c3a5c3485bda081d2914ed7b8b0850d62e3d9b9dcfcb86b97961`  
-		Last Modified: Fri, 02 Apr 2021 18:25:46 GMT  
+	-	`sha256:4572b72928444624d70624bd4188a957e1cbcdc364bacd3026fc6e46d2154e72`  
+		Last Modified: Wed, 14 Apr 2021 20:26:06 GMT  
+		Size: 1.4 KB (1422 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2fae1b86448ffecd80365e375393080c5484925ed877f02fcc8f9bd3389c725c`  
+		Last Modified: Wed, 14 Apr 2021 20:26:06 GMT  
+		Size: 1.4 KB (1432 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5ae7cbf677188f13aae6856b110af11696cac21e78313f3d225815d7fb16b55b`  
+		Last Modified: Wed, 14 Apr 2021 20:26:06 GMT  
+		Size: 1.4 KB (1406 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e925b48c88da00efc465f3291af0f81734fa9088838bf99e2b21c9763c76aa80`  
+		Last Modified: Wed, 14 Apr 2021 20:26:06 GMT  
+		Size: 1.4 KB (1388 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:325a0551f6981da1e92d3974f95db9dbc5553b1acd629302ab8f2ed5aaf64a41`  
+		Last Modified: Wed, 14 Apr 2021 20:26:06 GMT  
+		Size: 1.4 KB (1434 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:33fbbe5b0ac1c5adbe504a0bded280a2ebc8133939e17035cdf61e5f811a9d79`  
+		Last Modified: Wed, 14 Apr 2021 20:26:03 GMT  
+		Size: 1.4 KB (1434 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4c7999335cd30f75fd39b8d9ebfaac1dfad63e643813eeabfd572210dc15f442`  
+		Last Modified: Wed, 14 Apr 2021 20:26:03 GMT  
 		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d55d3e22aa51f274d765555ceb7acfe4c95dfdf06ed747cb78ff3955ec37b43a`  
-		Last Modified: Fri, 02 Apr 2021 18:25:46 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:11f9edc21a0f3503cc8695bfb1f0f2bf825fe586c31c14112ebaffc2cccb32be`  
+		Last Modified: Wed, 14 Apr 2021 20:26:04 GMT  
+		Size: 1.4 KB (1392 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f1282f41e60a0e981888559572f13a307d872bb4fb6d636ea2af4a71aa953d4`  
-		Last Modified: Fri, 02 Apr 2021 18:25:46 GMT  
-		Size: 268.3 KB (268326 bytes)  
+	-	`sha256:654c270965f7a90556b3aa0fa48d1fea0ff65f6918708e24ebd83c36be1e0ae9`  
+		Last Modified: Wed, 14 Apr 2021 20:26:04 GMT  
+		Size: 258.0 KB (257960 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f86a7b2d83b6c9a47753c8f82981aefe854fefc34fa7f1ee836fd656fc47f38d`  
-		Last Modified: Fri, 02 Apr 2021 18:25:46 GMT  
-		Size: 1.4 KB (1434 bytes)  
+	-	`sha256:893d5403793a417c0e1beac002e47a4e1d311d6aca319395cd9422949b7d393c`  
+		Last Modified: Wed, 14 Apr 2021 20:26:03 GMT  
+		Size: 1.4 KB (1397 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2.4.0-beta.2-alpine`
 
 ```console
-$ docker pull caddy@sha256:7fb91c8bcb40af77ad66c03340ba0e1c6c8f5d1d4e07005597a93fac27b4a464
+$ docker pull caddy@sha256:0455b5b7afa12030489e596f302430886c669d365ab904971421f74b8a5eba92
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8177,258 +8177,258 @@ $ docker pull caddy@sha256:7fb91c8bcb40af77ad66c03340ba0e1c6c8f5d1d4e07005597a93
 ### `caddy:2.4.0-beta.2-alpine` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:fa50efe45a26d4e0d4ee53589eefc94adc848e23599088e3a23fa8a46e37b0ef
+$ docker pull caddy@sha256:008590d156dcc7a1533fd34be8e2e452454e27e49ffa533e083c2cdc87292137
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.5 MB (14525653 bytes)**  
+-	Total Size: **14.5 MB (14525666 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48c90ba77981732d04067f9d48287ef8cabe5c59a33c4561d4668fbe43695bc0`
+-	Image ID: `sha256:9e49e451428790254800f544ebb051811973a83c34de9eaf1147f7df2914119e`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 20:10:06 GMT
-ADD file:7119167b56ff1228b2fb639c768955ce9db7a999cd947179240b216dfa5ccbb9 in / 
-# Wed, 31 Mar 2021 20:10:06 GMT
+# Wed, 14 Apr 2021 19:19:39 GMT
+ADD file:8ec69d882e7f29f0652d537557160e638168550f738d0d49f90a7ef96bf31787 in / 
+# Wed, 14 Apr 2021 19:19:39 GMT
 CMD ["/bin/sh"]
-# Fri, 02 Apr 2021 18:19:32 GMT
+# Wed, 14 Apr 2021 20:11:05 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Fri, 02 Apr 2021 18:19:34 GMT
+# Wed, 14 Apr 2021 20:11:07 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/welcome/index.html"
-# Fri, 02 Apr 2021 18:19:34 GMT
+# Wed, 14 Apr 2021 20:11:07 GMT
 ENV CADDY_VERSION=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:19:36 GMT
+# Wed, 14 Apr 2021 20:11:09 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='41daeac683d503264496689c6271645293c95518c5b97870c3f3a17127ae35b820622720315901c0c5856b42e0201b7eaad153dfa4a1045502a99f41d0b9785d' ;; 		armhf)   binArch='armv6'; checksum='51e4d7220064e1948232c8c54996b012d01fe0e2caa71200e34f0da59bd6267cdc318124e1a7a44e83ce54b7276f6d0fb32381d3080e05902d3c3528ff423dd7' ;; 		armv7)   binArch='armv7'; checksum='9c3b4eea4840a1fe633d45d436789edf6839e96527783d2eac309d24e5085c0cdee8beffd7e5ad2f1d7d31e16004e916aa29456d8ac52007e9d904e644d6db40' ;; 		aarch64) binArch='arm64'; checksum='86cf83d11aee266d32c262982df3e286aa0a4b391fc4fbded0e299ace043c753e9a1f53bef1f95a292a71107e1f9578a8615b038871eedb171437eebe7db47d2' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='81b050dae2892feb517db6c782acc506dfe21399b0a79073e5191656f57c6d0a5a511caf1086ffc671712ab198715cca6a2a120812a4df8d774ba17d6242aa39' ;; 		s390x)   binArch='s390x'; checksum='763256d267ad8832c37fa1a902fc06dfb6b9871b75e38545cbc199b50251f78b0cc2400104d31fc18d2c98408f02a74e581a7f7746974837dcdef51a4a259bf2' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.4.0-beta.2/caddy_2.4.0-beta.2_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Fri, 02 Apr 2021 18:19:38 GMT
+# Wed, 14 Apr 2021 20:11:10 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Fri, 02 Apr 2021 18:19:38 GMT
+# Wed, 14 Apr 2021 20:11:10 GMT
 ENV XDG_CONFIG_HOME=/config
-# Fri, 02 Apr 2021 18:19:38 GMT
+# Wed, 14 Apr 2021 20:11:10 GMT
 ENV XDG_DATA_HOME=/data
-# Fri, 02 Apr 2021 18:19:38 GMT
+# Wed, 14 Apr 2021 20:11:11 GMT
 VOLUME [/config]
-# Fri, 02 Apr 2021 18:19:38 GMT
+# Wed, 14 Apr 2021 20:11:11 GMT
 VOLUME [/data]
-# Fri, 02 Apr 2021 18:19:38 GMT
+# Wed, 14 Apr 2021 20:11:11 GMT
 LABEL org.opencontainers.image.version=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:19:39 GMT
+# Wed, 14 Apr 2021 20:11:11 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Fri, 02 Apr 2021 18:19:39 GMT
+# Wed, 14 Apr 2021 20:11:12 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Fri, 02 Apr 2021 18:19:39 GMT
+# Wed, 14 Apr 2021 20:11:12 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Fri, 02 Apr 2021 18:19:39 GMT
+# Wed, 14 Apr 2021 20:11:12 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Fri, 02 Apr 2021 18:19:39 GMT
+# Wed, 14 Apr 2021 20:11:12 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Fri, 02 Apr 2021 18:19:40 GMT
+# Wed, 14 Apr 2021 20:11:12 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Fri, 02 Apr 2021 18:19:40 GMT
+# Wed, 14 Apr 2021 20:11:13 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Fri, 02 Apr 2021 18:19:40 GMT
+# Wed, 14 Apr 2021 20:11:13 GMT
 EXPOSE 80
-# Fri, 02 Apr 2021 18:19:40 GMT
+# Wed, 14 Apr 2021 20:11:13 GMT
 EXPOSE 443
-# Fri, 02 Apr 2021 18:19:40 GMT
+# Wed, 14 Apr 2021 20:11:13 GMT
 EXPOSE 2019
-# Fri, 02 Apr 2021 18:19:41 GMT
+# Wed, 14 Apr 2021 20:11:13 GMT
 WORKDIR /srv
-# Fri, 02 Apr 2021 18:19:41 GMT
+# Wed, 14 Apr 2021 20:11:14 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:ca3cd42a7c9525f6ce3d64c1a70982613a8235f0cc057ec9244052921853ef15`  
-		Last Modified: Wed, 31 Mar 2021 20:10:46 GMT  
-		Size: 2.8 MB (2811947 bytes)  
+	-	`sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba`  
+		Last Modified: Wed, 14 Apr 2021 17:59:29 GMT  
+		Size: 2.8 MB (2811969 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:212f6a1c9e4977bde3df77a8a6c46bf7757d599f51a15eb01c63bd2be543cb40`  
-		Last Modified: Fri, 02 Apr 2021 18:20:13 GMT  
-		Size: 300.4 KB (300408 bytes)  
+	-	`sha256:8294633c5b5606f8e98aaf81da701b7a7e2018dbf82355d1d73830c677034f19`  
+		Last Modified: Wed, 14 Apr 2021 20:12:08 GMT  
+		Size: 300.4 KB (300403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db5ded8b3705333f72888d4cf854eb5f4940ce814721660bbd55d109a8826a03`  
-		Last Modified: Fri, 02 Apr 2021 18:20:14 GMT  
-		Size: 5.8 KB (5825 bytes)  
+	-	`sha256:f815e2ab15b24629c79357f527072ba057b7da6a993f0c1d5e36ad122667869f`  
+		Last Modified: Wed, 14 Apr 2021 20:12:08 GMT  
+		Size: 5.8 KB (5832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9afb4b7cde85cac613122e5ebf2d7f97cdc4457913475e0af127a9ad83467baf`  
-		Last Modified: Fri, 02 Apr 2021 18:20:15 GMT  
-		Size: 11.4 MB (11407320 bytes)  
+	-	`sha256:866e77b5ab7364d6fd10d9aac10241c645d81761011f2544041e03e42d694266`  
+		Last Modified: Wed, 14 Apr 2021 20:12:11 GMT  
+		Size: 11.4 MB (11407308 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a44ff6c0ff0fd070875236cb70163a5b5d10a6c91a029e468a1b507939aca9a`  
-		Last Modified: Fri, 02 Apr 2021 18:20:13 GMT  
-		Size: 153.0 B  
+	-	`sha256:d93ab174db6c235a141fac119c490f18169f74691e5a11eab453949b232584d5`  
+		Last Modified: Wed, 14 Apr 2021 20:12:09 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2.4.0-beta.2-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull caddy@sha256:aa5fedf546f66c9c7479220756a01f8ca9c421a5e78117db86fc54c14bb340cf
+$ docker pull caddy@sha256:97c65847ce7dedfc97f2a8c45a23e4b98500dbaf64ff859470f3dec89051f96d
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.7 MB (13740480 bytes)**  
+-	Total Size: **13.7 MB (13740478 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8be8c4334d684912f0cae439c7fb5d51334993ca3b5c417380b4b35e63b29f1f`
+-	Image ID: `sha256:c86bf0a2b49de4347cab1ee9820ae0679841542148383a0768a5c937063a6acc`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 17:18:49 GMT
-ADD file:988879d74f643b89539e5a0b6d74221621f19f4f87f722614addadc46ce47200 in / 
-# Wed, 31 Mar 2021 17:18:50 GMT
+# Wed, 14 Apr 2021 18:49:39 GMT
+ADD file:4479f0a51530e039edf231d87201896dcff908aa542a613cdccb015f93dda8a3 in / 
+# Wed, 14 Apr 2021 18:49:40 GMT
 CMD ["/bin/sh"]
-# Fri, 02 Apr 2021 18:49:47 GMT
+# Wed, 14 Apr 2021 19:46:41 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Fri, 02 Apr 2021 18:49:52 GMT
+# Wed, 14 Apr 2021 19:46:45 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/welcome/index.html"
-# Fri, 02 Apr 2021 18:49:55 GMT
+# Wed, 14 Apr 2021 19:46:46 GMT
 ENV CADDY_VERSION=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:50:03 GMT
+# Wed, 14 Apr 2021 19:46:53 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='41daeac683d503264496689c6271645293c95518c5b97870c3f3a17127ae35b820622720315901c0c5856b42e0201b7eaad153dfa4a1045502a99f41d0b9785d' ;; 		armhf)   binArch='armv6'; checksum='51e4d7220064e1948232c8c54996b012d01fe0e2caa71200e34f0da59bd6267cdc318124e1a7a44e83ce54b7276f6d0fb32381d3080e05902d3c3528ff423dd7' ;; 		armv7)   binArch='armv7'; checksum='9c3b4eea4840a1fe633d45d436789edf6839e96527783d2eac309d24e5085c0cdee8beffd7e5ad2f1d7d31e16004e916aa29456d8ac52007e9d904e644d6db40' ;; 		aarch64) binArch='arm64'; checksum='86cf83d11aee266d32c262982df3e286aa0a4b391fc4fbded0e299ace043c753e9a1f53bef1f95a292a71107e1f9578a8615b038871eedb171437eebe7db47d2' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='81b050dae2892feb517db6c782acc506dfe21399b0a79073e5191656f57c6d0a5a511caf1086ffc671712ab198715cca6a2a120812a4df8d774ba17d6242aa39' ;; 		s390x)   binArch='s390x'; checksum='763256d267ad8832c37fa1a902fc06dfb6b9871b75e38545cbc199b50251f78b0cc2400104d31fc18d2c98408f02a74e581a7f7746974837dcdef51a4a259bf2' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.4.0-beta.2/caddy_2.4.0-beta.2_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Fri, 02 Apr 2021 18:50:08 GMT
+# Wed, 14 Apr 2021 19:47:00 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Fri, 02 Apr 2021 18:50:10 GMT
+# Wed, 14 Apr 2021 19:47:01 GMT
 ENV XDG_CONFIG_HOME=/config
-# Fri, 02 Apr 2021 18:50:12 GMT
+# Wed, 14 Apr 2021 19:47:02 GMT
 ENV XDG_DATA_HOME=/data
-# Fri, 02 Apr 2021 18:50:14 GMT
+# Wed, 14 Apr 2021 19:47:02 GMT
 VOLUME [/config]
-# Fri, 02 Apr 2021 18:50:16 GMT
+# Wed, 14 Apr 2021 19:47:03 GMT
 VOLUME [/data]
-# Fri, 02 Apr 2021 18:50:18 GMT
+# Wed, 14 Apr 2021 19:47:04 GMT
 LABEL org.opencontainers.image.version=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:50:20 GMT
+# Wed, 14 Apr 2021 19:47:05 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Fri, 02 Apr 2021 18:50:23 GMT
+# Wed, 14 Apr 2021 19:47:07 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Fri, 02 Apr 2021 18:50:25 GMT
+# Wed, 14 Apr 2021 19:47:08 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Fri, 02 Apr 2021 18:50:29 GMT
+# Wed, 14 Apr 2021 19:47:09 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Fri, 02 Apr 2021 18:50:35 GMT
+# Wed, 14 Apr 2021 19:47:10 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Fri, 02 Apr 2021 18:50:40 GMT
+# Wed, 14 Apr 2021 19:47:11 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Fri, 02 Apr 2021 18:50:45 GMT
+# Wed, 14 Apr 2021 19:47:13 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Fri, 02 Apr 2021 18:50:48 GMT
+# Wed, 14 Apr 2021 19:47:14 GMT
 EXPOSE 80
-# Fri, 02 Apr 2021 18:50:53 GMT
+# Wed, 14 Apr 2021 19:47:16 GMT
 EXPOSE 443
-# Fri, 02 Apr 2021 18:50:55 GMT
+# Wed, 14 Apr 2021 19:47:16 GMT
 EXPOSE 2019
-# Fri, 02 Apr 2021 18:50:58 GMT
+# Wed, 14 Apr 2021 19:47:17 GMT
 WORKDIR /srv
-# Fri, 02 Apr 2021 18:51:00 GMT
+# Wed, 14 Apr 2021 19:47:18 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:bb87125c6ee1ce30c6b33d2c96a9fbe46da4a290f7cb1dd73fd62d4e06503699`  
-		Last Modified: Wed, 31 Mar 2021 17:19:55 GMT  
-		Size: 2.6 MB (2622116 bytes)  
+	-	`sha256:740c950346cf39c85b52576998695c9b909c24a58a8bb1b64cce91fda3ef1d3a`  
+		Last Modified: Wed, 14 Apr 2021 18:50:30 GMT  
+		Size: 2.6 MB (2622131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a1e1bc72d95e03e28e991fa53bb7f7238ffd16a125465b7a73ef9f68a4484bd`  
-		Last Modified: Fri, 02 Apr 2021 18:52:14 GMT  
-		Size: 300.5 KB (300514 bytes)  
+	-	`sha256:fdf1089ae45174c5bef4f470e0e4c2337f99090005f19e104781d0b048ea9c3b`  
+		Last Modified: Wed, 14 Apr 2021 19:48:05 GMT  
+		Size: 300.5 KB (300511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c99f0b778282aad6bc6b2e941fec2708198912824fd2ca2a0ae63ff9920bd387`  
-		Last Modified: Fri, 02 Apr 2021 18:52:14 GMT  
-		Size: 5.8 KB (5831 bytes)  
+	-	`sha256:b57bfdaecc4b43b7518a479f577a5afb7ef6539918e03b27d7cb7865dda8ceaa`  
+		Last Modified: Wed, 14 Apr 2021 19:48:05 GMT  
+		Size: 5.8 KB (5833 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1263c98147d8e73b762bb9ae4979f3c6eaecb780937aa25344f7a8f26734b09`  
-		Last Modified: Fri, 02 Apr 2021 18:52:18 GMT  
-		Size: 10.8 MB (10811865 bytes)  
+	-	`sha256:fb354d82c5c45ab0a1d4b541ed0368301bb0aa5d98d569dcca44ba52af1c82ac`  
+		Last Modified: Wed, 14 Apr 2021 19:48:11 GMT  
+		Size: 10.8 MB (10811849 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:379c3d17de6d89ea87e3f4b22fee1451995467ceafe97afb45ff52d6c391ada1`  
-		Last Modified: Fri, 02 Apr 2021 18:52:14 GMT  
+	-	`sha256:4825a384a1336a9aa743168ca8598059188ff162e307fd919af7d232553d8d00`  
+		Last Modified: Wed, 14 Apr 2021 19:48:05 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2.4.0-beta.2-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull caddy@sha256:8977e27736ba1604ad1d09d8ad8c19324842597ddfd01ef8a91f754a308be597
+$ docker pull caddy@sha256:cb08eec441907897f1f1d5b49e9fc1c25520f50e4ea6b102d9cac96611357924
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.5 MB (13522013 bytes)**  
+-	Total Size: **13.5 MB (13522050 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b879077000bbeb58c1b52b2fc34fd349f34a2376856dbaa2f9fc886ff4a9c4ff`
+-	Image ID: `sha256:abdd47f39bf49de697e4c8c9a7e7a120b0e177759e932df849a7f529c8c7c52c`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 18:13:27 GMT
-ADD file:56e92c06393237a87e0a1ff475e9c9dc80e897d69ec20f45359b587906da345b in / 
-# Wed, 31 Mar 2021 18:13:31 GMT
+# Wed, 14 Apr 2021 18:57:39 GMT
+ADD file:028c5b473d862250586e174c5dd19b37f8fc3bffbc02d888e72df30f32fd6129 in / 
+# Wed, 14 Apr 2021 18:57:39 GMT
 CMD ["/bin/sh"]
-# Thu, 01 Apr 2021 08:12:32 GMT
+# Wed, 14 Apr 2021 19:40:17 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Fri, 02 Apr 2021 18:59:38 GMT
+# Wed, 14 Apr 2021 19:40:20 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/welcome/index.html"
-# Fri, 02 Apr 2021 18:59:41 GMT
+# Wed, 14 Apr 2021 19:40:21 GMT
 ENV CADDY_VERSION=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:59:49 GMT
+# Wed, 14 Apr 2021 19:40:26 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='41daeac683d503264496689c6271645293c95518c5b97870c3f3a17127ae35b820622720315901c0c5856b42e0201b7eaad153dfa4a1045502a99f41d0b9785d' ;; 		armhf)   binArch='armv6'; checksum='51e4d7220064e1948232c8c54996b012d01fe0e2caa71200e34f0da59bd6267cdc318124e1a7a44e83ce54b7276f6d0fb32381d3080e05902d3c3528ff423dd7' ;; 		armv7)   binArch='armv7'; checksum='9c3b4eea4840a1fe633d45d436789edf6839e96527783d2eac309d24e5085c0cdee8beffd7e5ad2f1d7d31e16004e916aa29456d8ac52007e9d904e644d6db40' ;; 		aarch64) binArch='arm64'; checksum='86cf83d11aee266d32c262982df3e286aa0a4b391fc4fbded0e299ace043c753e9a1f53bef1f95a292a71107e1f9578a8615b038871eedb171437eebe7db47d2' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='81b050dae2892feb517db6c782acc506dfe21399b0a79073e5191656f57c6d0a5a511caf1086ffc671712ab198715cca6a2a120812a4df8d774ba17d6242aa39' ;; 		s390x)   binArch='s390x'; checksum='763256d267ad8832c37fa1a902fc06dfb6b9871b75e38545cbc199b50251f78b0cc2400104d31fc18d2c98408f02a74e581a7f7746974837dcdef51a4a259bf2' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.4.0-beta.2/caddy_2.4.0-beta.2_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Fri, 02 Apr 2021 19:00:09 GMT
+# Wed, 14 Apr 2021 19:40:29 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Fri, 02 Apr 2021 19:00:16 GMT
+# Wed, 14 Apr 2021 19:40:30 GMT
 ENV XDG_CONFIG_HOME=/config
-# Fri, 02 Apr 2021 19:00:19 GMT
+# Wed, 14 Apr 2021 19:40:31 GMT
 ENV XDG_DATA_HOME=/data
-# Fri, 02 Apr 2021 19:00:22 GMT
+# Wed, 14 Apr 2021 19:40:33 GMT
 VOLUME [/config]
-# Fri, 02 Apr 2021 19:00:30 GMT
+# Wed, 14 Apr 2021 19:40:35 GMT
 VOLUME [/data]
-# Fri, 02 Apr 2021 19:00:36 GMT
+# Wed, 14 Apr 2021 19:40:37 GMT
 LABEL org.opencontainers.image.version=v2.4.0-beta.2
-# Fri, 02 Apr 2021 19:00:41 GMT
+# Wed, 14 Apr 2021 19:40:38 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Fri, 02 Apr 2021 19:00:46 GMT
+# Wed, 14 Apr 2021 19:40:39 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Fri, 02 Apr 2021 19:00:51 GMT
+# Wed, 14 Apr 2021 19:40:40 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Fri, 02 Apr 2021 19:00:54 GMT
+# Wed, 14 Apr 2021 19:40:41 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Fri, 02 Apr 2021 19:00:57 GMT
+# Wed, 14 Apr 2021 19:40:41 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Fri, 02 Apr 2021 19:01:03 GMT
+# Wed, 14 Apr 2021 19:40:43 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Fri, 02 Apr 2021 19:01:16 GMT
+# Wed, 14 Apr 2021 19:40:44 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Fri, 02 Apr 2021 19:01:23 GMT
+# Wed, 14 Apr 2021 19:40:45 GMT
 EXPOSE 80
-# Fri, 02 Apr 2021 19:01:30 GMT
+# Wed, 14 Apr 2021 19:40:46 GMT
 EXPOSE 443
-# Fri, 02 Apr 2021 19:01:42 GMT
+# Wed, 14 Apr 2021 19:40:47 GMT
 EXPOSE 2019
-# Fri, 02 Apr 2021 19:02:07 GMT
+# Wed, 14 Apr 2021 19:40:48 GMT
 WORKDIR /srv
-# Fri, 02 Apr 2021 19:02:10 GMT
+# Wed, 14 Apr 2021 19:40:49 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:07389e51ea05e1c9a3cb0ef92d31181f2afa1e445207ad99ffd8a94d6d6af295`  
-		Last Modified: Wed, 31 Mar 2021 18:14:57 GMT  
-		Size: 2.4 MB (2424108 bytes)  
+	-	`sha256:e160e00eb35d5bc2373770873fbc9c8f5706045b0b06bfd1c364fcf69f02e9fe`  
+		Last Modified: Wed, 14 Apr 2021 18:58:36 GMT  
+		Size: 2.4 MB (2424145 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:005f2c85bbb34689fa5969c0cda8fda42d2b7848e654ff9efd67e02219a40b8f`  
-		Last Modified: Thu, 01 Apr 2021 08:13:51 GMT  
+	-	`sha256:78f77b739097bd5400613d0daa0adde01d99993ce236a374da6748f11f866bf0`  
+		Last Modified: Wed, 14 Apr 2021 19:41:38 GMT  
 		Size: 299.7 KB (299662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:447e6bb723906fc976d81f3c33ba05a5541e43675b2ef9c40091303bb8bddb04`  
-		Last Modified: Fri, 02 Apr 2021 19:05:04 GMT  
-		Size: 5.8 KB (5834 bytes)  
+	-	`sha256:9788d846329505d64f04c5f1dbd3f0d27d905fb498de7c5c456f5823672b6cff`  
+		Last Modified: Wed, 14 Apr 2021 19:41:38 GMT  
+		Size: 5.8 KB (5829 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:017a0481e097bef99cf346fa602697e6ec6e92dd192bfc8154f4a48f26ab7422`  
-		Last Modified: Fri, 02 Apr 2021 19:05:09 GMT  
-		Size: 10.8 MB (10792254 bytes)  
+	-	`sha256:f14c35ff970ff73407531ea1f8a1f74a02a827115108af34bd60e0be6c45682a`  
+		Last Modified: Wed, 14 Apr 2021 19:41:47 GMT  
+		Size: 10.8 MB (10792259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5166e8b56ad50e701cf797364485ea83aee29b1f3adceb2ba10c24fc86bdb011`  
-		Last Modified: Fri, 02 Apr 2021 19:05:05 GMT  
+	-	`sha256:78f4cac5d7458d5bd60076049902c4aaf4870551a9ba90d095db1e318e8c6de3`  
+		Last Modified: Wed, 14 Apr 2021 19:41:38 GMT  
 		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -8521,179 +8521,179 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ### `caddy:2.4.0-beta.2-alpine` - linux; ppc64le
 
 ```console
-$ docker pull caddy@sha256:69bf6d485cca04a1d5b497061ff8a3465aab5a0f56aa14e09c9840d73deeb557
+$ docker pull caddy@sha256:3604464281aef38cf182199e6e9d487be73d952aa9293cc27bcd3c47f3a5e08e
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.1 MB (13079861 bytes)**  
+-	Total Size: **13.1 MB (13079793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b36fb90d1135bfbf325f21736498234b14ee036830d05b110230f91a7b2c873`
+-	Image ID: `sha256:18e6e9d8437131af51b8524a58ca3de724aba1064d7220e22fdfb31fba739983`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 18:55:41 GMT
-ADD file:1dd3315eb685a1b6729efb6f5b634e414f3da0f065078952bc6c0339dc09512d in / 
-# Wed, 31 Mar 2021 18:55:49 GMT
+# Wed, 14 Apr 2021 19:30:57 GMT
+ADD file:52162c4413e3597dad4ccb790c379b67ef40d50c0d0659e8b6c65d833886b3af in / 
+# Wed, 14 Apr 2021 19:31:02 GMT
 CMD ["/bin/sh"]
-# Thu, 01 Apr 2021 20:23:26 GMT
+# Wed, 14 Apr 2021 22:12:15 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Fri, 02 Apr 2021 18:19:53 GMT
+# Wed, 14 Apr 2021 22:12:28 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/welcome/index.html"
-# Fri, 02 Apr 2021 18:20:04 GMT
+# Wed, 14 Apr 2021 22:12:32 GMT
 ENV CADDY_VERSION=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:20:48 GMT
+# Wed, 14 Apr 2021 22:12:49 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='41daeac683d503264496689c6271645293c95518c5b97870c3f3a17127ae35b820622720315901c0c5856b42e0201b7eaad153dfa4a1045502a99f41d0b9785d' ;; 		armhf)   binArch='armv6'; checksum='51e4d7220064e1948232c8c54996b012d01fe0e2caa71200e34f0da59bd6267cdc318124e1a7a44e83ce54b7276f6d0fb32381d3080e05902d3c3528ff423dd7' ;; 		armv7)   binArch='armv7'; checksum='9c3b4eea4840a1fe633d45d436789edf6839e96527783d2eac309d24e5085c0cdee8beffd7e5ad2f1d7d31e16004e916aa29456d8ac52007e9d904e644d6db40' ;; 		aarch64) binArch='arm64'; checksum='86cf83d11aee266d32c262982df3e286aa0a4b391fc4fbded0e299ace043c753e9a1f53bef1f95a292a71107e1f9578a8615b038871eedb171437eebe7db47d2' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='81b050dae2892feb517db6c782acc506dfe21399b0a79073e5191656f57c6d0a5a511caf1086ffc671712ab198715cca6a2a120812a4df8d774ba17d6242aa39' ;; 		s390x)   binArch='s390x'; checksum='763256d267ad8832c37fa1a902fc06dfb6b9871b75e38545cbc199b50251f78b0cc2400104d31fc18d2c98408f02a74e581a7f7746974837dcdef51a4a259bf2' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.4.0-beta.2/caddy_2.4.0-beta.2_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Fri, 02 Apr 2021 18:21:13 GMT
+# Wed, 14 Apr 2021 22:13:03 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Fri, 02 Apr 2021 18:21:30 GMT
+# Wed, 14 Apr 2021 22:13:08 GMT
 ENV XDG_CONFIG_HOME=/config
-# Fri, 02 Apr 2021 18:21:54 GMT
+# Wed, 14 Apr 2021 22:13:12 GMT
 ENV XDG_DATA_HOME=/data
-# Fri, 02 Apr 2021 18:22:17 GMT
+# Wed, 14 Apr 2021 22:13:34 GMT
 VOLUME [/config]
-# Fri, 02 Apr 2021 18:22:36 GMT
+# Wed, 14 Apr 2021 22:13:49 GMT
 VOLUME [/data]
-# Fri, 02 Apr 2021 18:22:43 GMT
+# Wed, 14 Apr 2021 22:13:57 GMT
 LABEL org.opencontainers.image.version=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:22:53 GMT
+# Wed, 14 Apr 2021 22:14:02 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Fri, 02 Apr 2021 18:23:02 GMT
+# Wed, 14 Apr 2021 22:14:09 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Fri, 02 Apr 2021 18:23:11 GMT
+# Wed, 14 Apr 2021 22:14:16 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Fri, 02 Apr 2021 18:23:21 GMT
+# Wed, 14 Apr 2021 22:14:23 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Fri, 02 Apr 2021 18:23:31 GMT
+# Wed, 14 Apr 2021 22:14:28 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Fri, 02 Apr 2021 18:23:37 GMT
+# Wed, 14 Apr 2021 22:14:35 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Fri, 02 Apr 2021 18:23:44 GMT
+# Wed, 14 Apr 2021 22:14:42 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Fri, 02 Apr 2021 18:23:48 GMT
+# Wed, 14 Apr 2021 22:14:49 GMT
 EXPOSE 80
-# Fri, 02 Apr 2021 18:23:56 GMT
+# Wed, 14 Apr 2021 22:14:55 GMT
 EXPOSE 443
-# Fri, 02 Apr 2021 18:24:05 GMT
+# Wed, 14 Apr 2021 22:15:00 GMT
 EXPOSE 2019
-# Fri, 02 Apr 2021 18:24:15 GMT
+# Wed, 14 Apr 2021 22:15:06 GMT
 WORKDIR /srv
-# Fri, 02 Apr 2021 18:24:21 GMT
+# Wed, 14 Apr 2021 22:15:12 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:dc4792b25345295bf964e1db1bceedb2338bfad8f0fb64f0cc07b152df9aef84`  
-		Last Modified: Wed, 31 Mar 2021 18:57:19 GMT  
-		Size: 2.8 MB (2813219 bytes)  
+	-	`sha256:771d2590aa602a0d4a922e322f02b22cc9d193f8cd159d9d1a140cadf1f8b4d4`  
+		Last Modified: Wed, 14 Apr 2021 19:32:33 GMT  
+		Size: 2.8 MB (2813141 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4dd67c6c19ed1d5aad6173157b10ed430dc4b79f7aefd9b15968e3d6f2515ef8`  
-		Last Modified: Thu, 01 Apr 2021 20:28:17 GMT  
-		Size: 302.5 KB (302540 bytes)  
+	-	`sha256:25908330df11bb7bc2ed71aa9b4de279db5492df2b03ced3f6650b25821c4584`  
+		Last Modified: Wed, 14 Apr 2021 22:16:00 GMT  
+		Size: 302.6 KB (302554 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:446396dbb30a2925d80e617fbeabd659f039220522d910dd811c13927bf36c2a`  
-		Last Modified: Fri, 02 Apr 2021 18:25:25 GMT  
-		Size: 5.8 KB (5833 bytes)  
+	-	`sha256:7db38e9079ac39fb587a66fb19194d3b826ebb61f448eec8d7d1881c57d743ee`  
+		Last Modified: Wed, 14 Apr 2021 22:16:00 GMT  
+		Size: 5.8 KB (5828 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:977297ea362b91438c0d23b7a5e054d023732d70ff45dbf0e856b88504a5a0d5`  
-		Last Modified: Fri, 02 Apr 2021 18:25:27 GMT  
+	-	`sha256:ddb3d6ca707ceaa50eb1f2531e22cf89a6048b70374e81f0380914881e0fd229`  
+		Last Modified: Wed, 14 Apr 2021 22:16:02 GMT  
 		Size: 10.0 MB (9958115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:304ddb1940c4a291b09e86d1f35f1591e61597f37f91859016cf0e28f91f46c2`  
-		Last Modified: Fri, 02 Apr 2021 18:25:25 GMT  
-		Size: 154.0 B  
+	-	`sha256:46d38adbdd5557c52260b3374adc032cf15b098ae41cdb2c58a8ed4afb6cb9da`  
+		Last Modified: Wed, 14 Apr 2021 22:15:59 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2.4.0-beta.2-alpine` - linux; s390x
 
 ```console
-$ docker pull caddy@sha256:c093c6df07e976c6544777eef3dbec8efb22231132046ef67a400bad8b75083f
+$ docker pull caddy@sha256:7236cb39ac16745ad402c814cc38fe206ee611029901ef34ddf5bbc38cc3b4dd
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.9 MB (13897301 bytes)**  
+-	Total Size: **13.9 MB (13897385 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:31b2cdf76b47d28ab04dfb908fcd67535e75e5c3ccf8867fc11e928f3e97c1b6`
+-	Image ID: `sha256:92516f58ee45d35db423aab69a6495fd9ec244bd0b00af83ca97d262ff6e9892`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 17:14:58 GMT
-ADD file:3f5fe04867af3c9f2cfc5b315d97097145ae11343399985386321a8db21d7786 in / 
-# Wed, 31 Mar 2021 17:14:58 GMT
+# Wed, 14 Apr 2021 18:41:35 GMT
+ADD file:c715fef757fe2b022ae1bbff71dbc58bddf5a858deb0aac5a6fbcf10d5f3111c in / 
+# Wed, 14 Apr 2021 18:41:36 GMT
 CMD ["/bin/sh"]
-# Fri, 02 Apr 2021 18:41:35 GMT
+# Wed, 14 Apr 2021 20:07:40 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Fri, 02 Apr 2021 18:41:36 GMT
+# Wed, 14 Apr 2021 20:07:42 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/welcome/index.html"
-# Fri, 02 Apr 2021 18:41:37 GMT
+# Wed, 14 Apr 2021 20:07:42 GMT
 ENV CADDY_VERSION=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:41:39 GMT
+# Wed, 14 Apr 2021 20:07:44 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='41daeac683d503264496689c6271645293c95518c5b97870c3f3a17127ae35b820622720315901c0c5856b42e0201b7eaad153dfa4a1045502a99f41d0b9785d' ;; 		armhf)   binArch='armv6'; checksum='51e4d7220064e1948232c8c54996b012d01fe0e2caa71200e34f0da59bd6267cdc318124e1a7a44e83ce54b7276f6d0fb32381d3080e05902d3c3528ff423dd7' ;; 		armv7)   binArch='armv7'; checksum='9c3b4eea4840a1fe633d45d436789edf6839e96527783d2eac309d24e5085c0cdee8beffd7e5ad2f1d7d31e16004e916aa29456d8ac52007e9d904e644d6db40' ;; 		aarch64) binArch='arm64'; checksum='86cf83d11aee266d32c262982df3e286aa0a4b391fc4fbded0e299ace043c753e9a1f53bef1f95a292a71107e1f9578a8615b038871eedb171437eebe7db47d2' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='81b050dae2892feb517db6c782acc506dfe21399b0a79073e5191656f57c6d0a5a511caf1086ffc671712ab198715cca6a2a120812a4df8d774ba17d6242aa39' ;; 		s390x)   binArch='s390x'; checksum='763256d267ad8832c37fa1a902fc06dfb6b9871b75e38545cbc199b50251f78b0cc2400104d31fc18d2c98408f02a74e581a7f7746974837dcdef51a4a259bf2' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.4.0-beta.2/caddy_2.4.0-beta.2_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Fri, 02 Apr 2021 18:41:40 GMT
+# Wed, 14 Apr 2021 20:07:45 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Fri, 02 Apr 2021 18:41:40 GMT
+# Wed, 14 Apr 2021 20:07:46 GMT
 ENV XDG_CONFIG_HOME=/config
-# Fri, 02 Apr 2021 18:41:40 GMT
+# Wed, 14 Apr 2021 20:07:46 GMT
 ENV XDG_DATA_HOME=/data
-# Fri, 02 Apr 2021 18:41:40 GMT
+# Wed, 14 Apr 2021 20:07:46 GMT
 VOLUME [/config]
-# Fri, 02 Apr 2021 18:41:41 GMT
+# Wed, 14 Apr 2021 20:07:46 GMT
 VOLUME [/data]
-# Fri, 02 Apr 2021 18:41:41 GMT
+# Wed, 14 Apr 2021 20:07:46 GMT
 LABEL org.opencontainers.image.version=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:41:41 GMT
+# Wed, 14 Apr 2021 20:07:47 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Fri, 02 Apr 2021 18:41:41 GMT
+# Wed, 14 Apr 2021 20:07:47 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Fri, 02 Apr 2021 18:41:42 GMT
+# Wed, 14 Apr 2021 20:07:47 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Fri, 02 Apr 2021 18:41:42 GMT
+# Wed, 14 Apr 2021 20:07:47 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Fri, 02 Apr 2021 18:41:42 GMT
+# Wed, 14 Apr 2021 20:07:48 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Fri, 02 Apr 2021 18:41:42 GMT
+# Wed, 14 Apr 2021 20:07:48 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Fri, 02 Apr 2021 18:41:42 GMT
+# Wed, 14 Apr 2021 20:07:48 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Fri, 02 Apr 2021 18:41:43 GMT
+# Wed, 14 Apr 2021 20:07:48 GMT
 EXPOSE 80
-# Fri, 02 Apr 2021 18:41:43 GMT
+# Wed, 14 Apr 2021 20:07:48 GMT
 EXPOSE 443
-# Fri, 02 Apr 2021 18:41:43 GMT
+# Wed, 14 Apr 2021 20:07:49 GMT
 EXPOSE 2019
-# Fri, 02 Apr 2021 18:41:43 GMT
+# Wed, 14 Apr 2021 20:07:49 GMT
 WORKDIR /srv
-# Fri, 02 Apr 2021 18:41:43 GMT
+# Wed, 14 Apr 2021 20:07:49 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:1d4058bbeedf5296bcaf5ae8f37c8cd58152acad3ec45a536e08b83f5d3abe83`  
-		Last Modified: Wed, 31 Mar 2021 17:15:36 GMT  
-		Size: 2.6 MB (2602591 bytes)  
+	-	`sha256:afadee6ad6a38d3172beeeca818219604c782efbe93201ef4d39512f289b05ae`  
+		Last Modified: Wed, 14 Apr 2021 18:42:16 GMT  
+		Size: 2.6 MB (2602650 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21bdee00e0d42aa0eac225d6882199a22161798072f0c25e30b7b4b8896545cc`  
-		Last Modified: Fri, 02 Apr 2021 18:42:14 GMT  
-		Size: 300.8 KB (300829 bytes)  
+	-	`sha256:9db3c8b812fcb0d1bfd42c16c2e9ac68f4f3006382c5362e969d1c9eb3a9fab5`  
+		Last Modified: Wed, 14 Apr 2021 20:08:26 GMT  
+		Size: 300.8 KB (300847 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:070fe2ada5f147f27af3e4a6091cc3f466f9af385177076a766396c3e2634c02`  
-		Last Modified: Fri, 02 Apr 2021 18:42:15 GMT  
-		Size: 5.8 KB (5830 bytes)  
+	-	`sha256:89655d5853714574393844228f501cd2caed22a1af84d0b24b3f3614aa4177d5`  
+		Last Modified: Wed, 14 Apr 2021 20:08:26 GMT  
+		Size: 5.8 KB (5823 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8391d5bf2258305005739ed98cbb49ec466fc95757fa0cb14f40a89262ffe13e`  
-		Last Modified: Fri, 02 Apr 2021 18:42:16 GMT  
-		Size: 11.0 MB (10987897 bytes)  
+	-	`sha256:e4d56d7197473fe4c06e215810298ce281307fc5f2bc659b633f400198ada755`  
+		Last Modified: Wed, 14 Apr 2021 20:08:28 GMT  
+		Size: 11.0 MB (10987911 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a6dd4c5ad3aa33d5340696408e521f09c1cfc35c26779f22707d51ccc50809c`  
-		Last Modified: Fri, 02 Apr 2021 18:42:14 GMT  
+	-	`sha256:2fe6ca41447c64f973dcf67a370126053ec58952f1e3381e3e97b642a320270b`  
+		Last Modified: Wed, 14 Apr 2021 20:08:26 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2.4.0-beta.2-builder`
 
 ```console
-$ docker pull caddy@sha256:e2a29e282dc9bf0a2441c771d577b438c1e6671b45b6bed959bac282a4a0a131
+$ docker pull caddy@sha256:3827305f25ba695d3bec8c41e70bab91c8162bc73ba4d5a50bd1f17fb81ba366
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8704,8 +8704,8 @@ $ docker pull caddy@sha256:e2a29e282dc9bf0a2441c771d577b438c1e6671b45b6bed959bac
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
 	-	linux; s390x
-	-	windows version 10.0.17763.1817; amd64
-	-	windows version 10.0.14393.4283; amd64
+	-	windows version 10.0.17763.1879; amd64
+	-	windows version 10.0.14393.4350; amd64
 
 ### `caddy:2.4.0-beta.2-builder` - linux; amd64
 
@@ -9223,58 +9223,58 @@ WORKDIR /usr/bin
 		Size: 405.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `caddy:2.4.0-beta.2-builder` - windows version 10.0.17763.1817; amd64
+### `caddy:2.4.0-beta.2-builder` - windows version 10.0.17763.1879; amd64
 
 ```console
-$ docker pull caddy@sha256:9d285ead4bdf8f99fedfbe03501c691819e48f831e0b0084580a59cb8bf0bad4
+$ docker pull caddy@sha256:462cb3e87c34b510101ec4d6e1c3f41c249e50c11fc07a67a4c2f7d87c1e7785
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 GB (2641868622 bytes)**  
+-	Total Size: **2.6 GB (2641308715 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c93dc0b0fa48b343cd322c901f869fc6a46e264b6256d2fec7f4be8f2b219e04`
+-	Image ID: `sha256:e9a58bba31f403a9518e0b663472ff04a42fa6589bae4318605fb61cfc569d61`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 07 May 2020 05:09:25 GMT
 RUN Apply image 1809-RTM-amd64
-# Sat, 27 Feb 2021 09:32:06 GMT
+# Fri, 09 Apr 2021 20:34:41 GMT
 RUN Install update 1809-amd64
-# Wed, 10 Mar 2021 13:08:20 GMT
+# Wed, 14 Apr 2021 12:09:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 13:37:21 GMT
+# Wed, 14 Apr 2021 12:30:33 GMT
 ENV GIT_VERSION=2.23.0
-# Wed, 10 Mar 2021 13:37:22 GMT
+# Wed, 14 Apr 2021 12:30:35 GMT
 ENV GIT_TAG=v2.23.0.windows.1
-# Wed, 10 Mar 2021 13:37:23 GMT
+# Wed, 14 Apr 2021 12:30:36 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/MinGit-2.23.0-64-bit.zip
-# Wed, 10 Mar 2021 13:37:24 GMT
+# Wed, 14 Apr 2021 12:30:37 GMT
 ENV GIT_DOWNLOAD_SHA256=8f65208f92c0b4c3ae4c0cf02d4b5f6791d539cd1a07b2df62b7116467724735
-# Wed, 10 Mar 2021 13:38:55 GMT
+# Wed, 14 Apr 2021 12:31:55 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Wed, 10 Mar 2021 13:38:56 GMT
+# Wed, 14 Apr 2021 12:31:57 GMT
 ENV GOPATH=C:\gopath
-# Wed, 10 Mar 2021 13:39:22 GMT
+# Wed, 14 Apr 2021 12:32:38 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 02 Apr 2021 00:15:25 GMT
+# Wed, 14 Apr 2021 12:32:39 GMT
 ENV GOLANG_VERSION=1.16.3
-# Fri, 02 Apr 2021 00:18:07 GMT
+# Wed, 14 Apr 2021 12:35:13 GMT
 RUN $url = 'https://storage.googleapis.com/golang/go1.16.3.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'a4400345135b36cb7942e52bbaf978b66814738b855eeff8de879a09fd99de7f'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 02 Apr 2021 00:18:09 GMT
+# Wed, 14 Apr 2021 12:35:15 GMT
 WORKDIR C:\gopath
-# Fri, 02 Apr 2021 18:22:06 GMT
+# Wed, 14 Apr 2021 20:20:22 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 02 Apr 2021 18:22:07 GMT
+# Wed, 14 Apr 2021 20:20:23 GMT
 ENV XCADDY_VERSION=v0.1.8
-# Fri, 02 Apr 2021 18:22:09 GMT
+# Wed, 14 Apr 2021 20:20:24 GMT
 ENV CADDY_VERSION=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:22:10 GMT
+# Wed, 14 Apr 2021 20:20:25 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Fri, 02 Apr 2021 18:22:37 GMT
+# Wed, 14 Apr 2021 20:21:00 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.1.8/xcaddy_0.1.8_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('ccbc594da07adff41098959a78efaaee42fca4e5feb7806661d00841229b20ff1c47fed024c7a84e8554d3e8be3f162d3750e5e8347d6a230c496d4b133213e8')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Fri, 02 Apr 2021 18:22:38 GMT
+# Wed, 14 Apr 2021 20:21:01 GMT
 WORKDIR C:\
 ```
 
@@ -9282,130 +9282,130 @@ WORKDIR C:\
 	-	`sha256:4612f6d0b889cad0ed0292fae3a0b0c8a9e49aff6dea8eb049b2386d9b07986f`  
 		Size: 1.7 GB (1718332879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ff1512f88ecd4ff0a91ade34d43733c48834433e35f062f80e6e70d706f8d73`  
-		Size: 743.2 MB (743201590 bytes)  
+	-	`sha256:399f118dfaa9a753e98d128238b944432c7bcabea88a2998a6efbbece28ed303`  
+		Size: 751.4 MB (751421005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ebe61daec6d671bc2c1c6fe61ac9825fb552e9cef3672d0a7dbec719d125ae64`  
-		Last Modified: Wed, 10 Mar 2021 13:21:09 GMT  
-		Size: 1.4 KB (1430 bytes)  
+	-	`sha256:106dbf3373fce4f0ba5e00ad54824c597f2894605fa7d8ef446ad7ea3b97449f`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55f55c0bb3b38761f0aaeef923efdf23ab140f64a5549388e9aa125fe79780b0`  
-		Last Modified: Wed, 10 Mar 2021 14:02:53 GMT  
-		Size: 1.4 KB (1439 bytes)  
+	-	`sha256:ac56922ba0ee0ac19bcae98f5fb4b7427d31ef3c709f27cfb2c785fd13a611c4`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a312e589b5b4b52c93afc65c4053591faf5d602a159699e1d8fd7cb7257a1e19`  
-		Last Modified: Wed, 10 Mar 2021 14:02:53 GMT  
-		Size: 1.4 KB (1435 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5a36351186e9a8092baf10dfbdfd28b7dce39bcb5b543246f650bf4ad9549d6`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85bf84abeceee0a3b5a380cf6aa46e231424d48c1781e88f7f96344fdd400753`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
-		Size: 1.4 KB (1425 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfcb0c1de08b3116c910ff0e9573389536913cddb0462da67f13cc24f09b479b`  
-		Last Modified: Wed, 10 Mar 2021 14:02:55 GMT  
-		Size: 34.5 MB (34540168 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:121ca5c84aae657554fc278543816ed7a73aa34867b296c486181ff025bde056`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
-		Size: 1.4 KB (1408 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e1fde90e4880470a95a23f5277f201512a5e7cad1fc6c1bf100e06df43201b0`  
-		Last Modified: Wed, 10 Mar 2021 14:02:44 GMT  
-		Size: 338.8 KB (338777 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a7e34d0221e19de26b1af5fb6e32ddd3d7af02c7da8f8797c0b1d88608c507e`  
-		Last Modified: Fri, 02 Apr 2021 00:36:22 GMT  
-		Size: 1.4 KB (1426 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf7c9e37d4f37ac6c3bbb4a4ea26623159bd41ab01eeb97ba5f3558f6f0b2e6c`  
-		Last Modified: Fri, 02 Apr 2021 00:36:59 GMT  
-		Size: 143.7 MB (143721828 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14239a8d1f9055a3b8d9d966990a90be84c447b26212c8c31746315beb5af592`  
-		Last Modified: Fri, 02 Apr 2021 00:36:22 GMT  
-		Size: 1.6 KB (1593 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4cf60572a4ce4c53cd6b737d1d0052857aefd64967385c2dfb51ca7ab737d87`  
-		Last Modified: Fri, 02 Apr 2021 18:26:11 GMT  
-		Size: 1.4 KB (1410 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2eb15e0f080d4ffebac67b5651ae2308c376db5d2c6d35645ce7a3df70088d1a`  
-		Last Modified: Fri, 02 Apr 2021 18:26:08 GMT  
-		Size: 1.4 KB (1396 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:933d5696db6c53091e2d4ec83ddc685bd4ac95836dc1adc50e05ed712658a869`  
-		Last Modified: Fri, 02 Apr 2021 18:26:08 GMT  
+	-	`sha256:0f1723430d5101a2d617d3dbf4bc2a121b3f4b4432105aa2941e1afab8f130b9`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
 		Size: 1.4 KB (1407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9fa8b4229fc77631db90295128b3ee38f226ce9855444819dde0ec638023b873`  
-		Last Modified: Fri, 02 Apr 2021 18:26:08 GMT  
-		Size: 1.4 KB (1426 bytes)  
+	-	`sha256:ab2f4dc6e9a77d69a3d172368f4ae471b31c588d6201c2386e4ac62fd83faa16`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42288aa25a7176680ab6a682e44da10f14581942c25ed0cddc0827b54cae0bad`  
-		Last Modified: Fri, 02 Apr 2021 18:26:09 GMT  
-		Size: 1.7 MB (1714787 bytes)  
+	-	`sha256:aaea47861a9221a4f1e5750db237c619796c612756a5e75e2cb443b1731ae8a8`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
+		Size: 1.4 KB (1410 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:284cd2af3a6274b07a526bf01c7021477428137fd0f4938856f2a10d5dc78d0e`  
-		Last Modified: Fri, 02 Apr 2021 18:26:12 GMT  
-		Size: 1.4 KB (1367 bytes)  
+	-	`sha256:2b4be4ebd8eabefdb01f27dafad85e65289b95ca15591c14304c7792db99b54b`  
+		Last Modified: Wed, 14 Apr 2021 12:58:35 GMT  
+		Size: 30.2 MB (30155601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f6f66ae3738a83ea41b428b49261d4522d57df1617fbd1aa362d93f1e2802643`  
+		Last Modified: Wed, 14 Apr 2021 12:57:58 GMT  
+		Size: 1.4 KB (1442 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e2108b314c24064a0c250f72017cc64b3bf68915655327728a267c98985a5ff7`  
+		Last Modified: Wed, 14 Apr 2021 12:57:58 GMT  
+		Size: 324.6 KB (324649 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:770bd74ed4014a95375721a1bce0f4632edee8ed42f7f260a48718ee6f732697`  
+		Last Modified: Wed, 14 Apr 2021 12:57:58 GMT  
+		Size: 1.4 KB (1423 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f58502c76356a17ed82e8b59c7fe44ef794e3264a08a438016d76ad963ca5981`  
+		Last Modified: Wed, 14 Apr 2021 12:58:39 GMT  
+		Size: 139.3 MB (139343790 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8c463edf641e483a77edf915765e64f79175e8153cefcd88cd604e041ce7acb4`  
+		Last Modified: Wed, 14 Apr 2021 12:57:58 GMT  
+		Size: 1.6 KB (1587 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f3dd5b186731eb0c9c02f4d26a06edc29940d8da335802291ec84b521c3b1be0`  
+		Last Modified: Wed, 14 Apr 2021 20:26:32 GMT  
+		Size: 1.4 KB (1364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3f7a65e280ed60592afe5b646957a2b20de28f8c3a15588fbcdc3acee2afa400`  
+		Last Modified: Wed, 14 Apr 2021 20:26:30 GMT  
+		Size: 1.4 KB (1393 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:edd7049cb89a87a22b23b0324d7e9852cda6879a91d0544cba6d9fff99bd6917`  
+		Last Modified: Wed, 14 Apr 2021 20:26:32 GMT  
+		Size: 1.4 KB (1408 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:db63e753a266be0f2b5e0ce8a2a0f3dffddc2e4878e33b607f261f889144e297`  
+		Last Modified: Wed, 14 Apr 2021 20:26:29 GMT  
+		Size: 1.4 KB (1406 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:38640a1c07ea171864b89df9344108633f93264f53c4dfff35687df1c4bbdde9`  
+		Last Modified: Wed, 14 Apr 2021 20:26:30 GMT  
+		Size: 1.7 MB (1712234 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9e3d577f5cd66e2d0b0789d4494605c15f2f8ab159e01e3424f87369b77d45e1`  
+		Last Modified: Wed, 14 Apr 2021 20:26:30 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `caddy:2.4.0-beta.2-builder` - windows version 10.0.14393.4283; amd64
+### `caddy:2.4.0-beta.2-builder` - windows version 10.0.14393.4350; amd64
 
 ```console
-$ docker pull caddy@sha256:c1cfba3a3aa32a96fa4d6b325e56473c26a28d6f3db68ba2d8704a3fc1be6c49
+$ docker pull caddy@sha256:bac307c1e128c3d09f03453016a4566d0184a69a4aec7fdcc557c5cadb453ed1
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 GB (6003045589 bytes)**  
+-	Total Size: **6.0 GB (5987337668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79ee0f3301ee81e21e378ce3f53b7305e6e3db4119c6f6bc1e8ab85411402213`
+-	Image ID: `sha256:7b03d0cdba17b89503ca45d143a167abb87f93b49036f70ee3c0b58031b0b469`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sat, 19 Nov 2016 17:05:00 GMT
 RUN Apply image 1607-RTM-amd64
-# Wed, 03 Mar 2021 18:02:00 GMT
+# Wed, 07 Apr 2021 21:54:00 GMT
 RUN Install update ltsc2016-amd64
-# Wed, 10 Mar 2021 13:42:05 GMT
+# Wed, 14 Apr 2021 12:35:33 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 13:42:06 GMT
+# Wed, 14 Apr 2021 12:35:34 GMT
 ENV GIT_VERSION=2.23.0
-# Wed, 10 Mar 2021 13:42:07 GMT
+# Wed, 14 Apr 2021 12:35:35 GMT
 ENV GIT_TAG=v2.23.0.windows.1
-# Wed, 10 Mar 2021 13:42:08 GMT
+# Wed, 14 Apr 2021 12:35:36 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/MinGit-2.23.0-64-bit.zip
-# Wed, 10 Mar 2021 13:42:09 GMT
+# Wed, 14 Apr 2021 12:35:38 GMT
 ENV GIT_DOWNLOAD_SHA256=8f65208f92c0b4c3ae4c0cf02d4b5f6791d539cd1a07b2df62b7116467724735
-# Wed, 10 Mar 2021 13:44:31 GMT
+# Wed, 14 Apr 2021 12:38:01 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Wed, 10 Mar 2021 13:44:32 GMT
+# Wed, 14 Apr 2021 12:38:02 GMT
 ENV GOPATH=C:\gopath
-# Wed, 10 Mar 2021 13:45:47 GMT
+# Wed, 14 Apr 2021 12:39:34 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 02 Apr 2021 00:18:24 GMT
+# Wed, 14 Apr 2021 12:39:35 GMT
 ENV GOLANG_VERSION=1.16.3
-# Fri, 02 Apr 2021 00:22:41 GMT
+# Wed, 14 Apr 2021 12:43:21 GMT
 RUN $url = 'https://storage.googleapis.com/golang/go1.16.3.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'a4400345135b36cb7942e52bbaf978b66814738b855eeff8de879a09fd99de7f'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 02 Apr 2021 00:22:43 GMT
+# Wed, 14 Apr 2021 12:43:24 GMT
 WORKDIR C:\gopath
-# Fri, 02 Apr 2021 18:22:45 GMT
+# Wed, 14 Apr 2021 20:21:07 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 02 Apr 2021 18:22:46 GMT
+# Wed, 14 Apr 2021 20:21:08 GMT
 ENV XCADDY_VERSION=v0.1.8
-# Fri, 02 Apr 2021 18:22:47 GMT
+# Wed, 14 Apr 2021 20:21:09 GMT
 ENV CADDY_VERSION=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:22:48 GMT
+# Wed, 14 Apr 2021 20:21:10 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Fri, 02 Apr 2021 18:24:19 GMT
+# Wed, 14 Apr 2021 20:22:49 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.1.8/xcaddy_0.1.8_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('ccbc594da07adff41098959a78efaaee42fca4e5feb7806661d00841229b20ff1c47fed024c7a84e8554d3e8be3f162d3750e5e8347d6a230c496d4b133213e8')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Fri, 02 Apr 2021 18:24:20 GMT
+# Wed, 14 Apr 2021 20:22:51 GMT
 WORKDIR C:\
 ```
 
@@ -9414,75 +9414,75 @@ WORKDIR C:\
 		Last Modified: Tue, 18 Sep 2018 20:20:50 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:30bda99601c5cbd3b2118409f401852ea648e2319bd81518723e476b28d764c5`  
-		Size: 1.7 GB (1726924885 bytes)  
+	-	`sha256:00b4edb823e6a375d179a28cbfa682c2379d62179e1518485902d6e68b9a9d1e`  
+		Size: 1.7 GB (1724897968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:76680da9dc6db108ddf2e353c494b45e8486a6751619a13ed8fb3ad64b9a16e9`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bb52885e05952959b0fa7aaff23561fcf14d294aed336112b388c94e67709e4f`  
+		Last Modified: Wed, 14 Apr 2021 12:59:14 GMT  
+		Size: 1.4 KB (1406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea2092de86b10f822dfd3a0d8e8dc35924823393cf8301e6db8f8a0a2879fb18`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1306 bytes)  
+	-	`sha256:2c3360763b706a564d93471b21a342ebbda7e047567cf1cbee82dd592ad33e0c`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ac6e05dba1a284b10130ada4ed7581f5a1c5a90986038e31cc8213e215ca23`  
-		Last Modified: Wed, 10 Mar 2021 14:06:07 GMT  
-		Size: 1.4 KB (1431 bytes)  
+	-	`sha256:c1a0f653700ac9b57cf3d694cc90107e3220fc678581d1e985219677733ce242`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
+		Size: 1.4 KB (1398 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a636ee1e87a6b10caeaef03b68f084d58b5c8412fe4b10ba5d851a6965917196`  
-		Last Modified: Wed, 10 Mar 2021 14:06:01 GMT  
-		Size: 1.3 KB (1322 bytes)  
+	-	`sha256:2a59d82702c225a2ca8cd2a5476122f55d8619eae959c9cb8323b68d70a2ed19`  
+		Last Modified: Wed, 14 Apr 2021 12:59:06 GMT  
+		Size: 1.4 KB (1395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a9e03ef5102108f3595c37759ead10b0cfb624aa0f102dbae3b6abb18f03b56`  
-		Last Modified: Wed, 10 Mar 2021 14:06:01 GMT  
-		Size: 1.4 KB (1414 bytes)  
+	-	`sha256:62435cd2b7652fc97ef3dc1a8968446f3f6e95f0ff1d6dcb176a3f0c2b14c2f8`  
+		Last Modified: Wed, 14 Apr 2021 12:59:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:840634d0d343cc458ff1f028b165fab14415bf252ce2b7fdb726c41d035c64ff`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 35.3 MB (35273703 bytes)  
+	-	`sha256:a6d78a3a3d6cb25f55dc9d9947f7449a14717e6b787e49571a837e72b79334cf`  
+		Last Modified: Wed, 14 Apr 2021 12:59:41 GMT  
+		Size: 30.8 MB (30752513 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b968b2b2cb37afe5893ed1aa040b1055605f41e8371fe42fca9c6e06bb96c2ed`  
-		Last Modified: Wed, 10 Mar 2021 14:05:55 GMT  
-		Size: 1.4 KB (1381 bytes)  
+	-	`sha256:0b774a32e346c00e004abbbd7290530d0a3f3dfb11915be2b2fa73c402da6bdd`  
+		Last Modified: Wed, 14 Apr 2021 12:59:03 GMT  
+		Size: 1.4 KB (1409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b01350c0465bbc3ff96b788fef94740af9378a1cfe9f3c1fb50ffed30c8a7ad`  
-		Last Modified: Wed, 10 Mar 2021 14:05:59 GMT  
-		Size: 10.1 MB (10139029 bytes)  
+	-	`sha256:2d153061f2f0d8ef33f71c4b9afd90899e21556e320d7103a8a9fb544c1cb521`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
+		Size: 5.6 MB (5608025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e7c38f99787bf274ac0a56d06ab8d5ada8675bdbc1b8a41ac4e8e005be67cf3`  
-		Last Modified: Fri, 02 Apr 2021 00:37:20 GMT  
-		Size: 1.4 KB (1390 bytes)  
+	-	`sha256:10a6a8e2ceb8224d343a9fc230793caeca50276050099c458dfdefc5aefe2e3e`  
+		Last Modified: Wed, 14 Apr 2021 12:59:03 GMT  
+		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:858a80496ac8841bb47d698f77d63b80c5bfb5c71f3e836cd63729731eb2d0c3`  
-		Last Modified: Fri, 02 Apr 2021 00:40:16 GMT  
-		Size: 149.2 MB (149164836 bytes)  
+	-	`sha256:a2bc9fe33dd2652413cbaa5c8b9fc73f4b06b66dba8e87bfd17ea2b7e4263308`  
+		Last Modified: Wed, 14 Apr 2021 13:01:47 GMT  
+		Size: 149.1 MB (149098429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17f6bce455ff0310e2c186805aff8794f0ae69ed9bac6df06f7f6240d1ba4212`  
-		Last Modified: Fri, 02 Apr 2021 00:37:20 GMT  
-		Size: 1.6 KB (1589 bytes)  
+	-	`sha256:696c3886196f27d66c781b177bc4321100d92045fccae4986c33b6e2de256243`  
+		Last Modified: Wed, 14 Apr 2021 12:59:03 GMT  
+		Size: 1.6 KB (1586 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad6470d57243826b35d3959d11a867738f749a6118e42d9881bae1d6d022b5cd`  
-		Last Modified: Fri, 02 Apr 2021 18:26:22 GMT  
-		Size: 1.4 KB (1412 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2dc30f3688f8d90d917c010cffed48167b0a15f018655d85d79ffc5b7522885`  
-		Last Modified: Fri, 02 Apr 2021 18:26:19 GMT  
-		Size: 1.4 KB (1430 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d18daa399267ca08468b3402c46122b9aa3e5e80c7fb1860558585100eca16c`  
-		Last Modified: Fri, 02 Apr 2021 18:26:20 GMT  
-		Size: 1.4 KB (1415 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fcedff24a492766afee3560aca62ebae75ec3a54f253d95c44247b79d24b27a`  
-		Last Modified: Fri, 02 Apr 2021 18:26:20 GMT  
+	-	`sha256:fad5bdae0dba2b5f4cc89c5942fb0d5d4a806b899832ff95bd449b5f0fc9c9cb`  
+		Last Modified: Wed, 14 Apr 2021 20:26:44 GMT  
 		Size: 1.4 KB (1408 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d328d81e64b61062f2891b3c48b51ccb4badcbe1efc420c2acbfc43938f5d5ef`  
-		Last Modified: Fri, 02 Apr 2021 18:26:25 GMT  
-		Size: 11.5 MB (11539007 bytes)  
+	-	`sha256:d8b4b163cb6fdb7544e01b1f7d90edfa10ac6cc481d9b57db46ccf7534532207`  
+		Last Modified: Wed, 14 Apr 2021 20:26:41 GMT  
+		Size: 1.4 KB (1409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:228dc315d7ba3fe405accce7eafdd95cd5861cda759a223fae2852cceaa01213`  
-		Last Modified: Fri, 02 Apr 2021 18:26:20 GMT  
+	-	`sha256:877c3eb7550533526d7621a2e42b1846c54be1126384ce86992e67e00dc467d2`  
+		Last Modified: Wed, 14 Apr 2021 20:26:41 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f73d3b8d11f7a8b62d2e8fbd42eabfa48c76d61d6843779b683cf982b7ea1c5e`  
+		Last Modified: Wed, 14 Apr 2021 20:26:41 GMT  
+		Size: 1.4 KB (1437 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:38b56149f1fc75ce46bdf8fe96da4d6d5bf47f88e9e965f9b1649a6bc4e71ae4`  
+		Last Modified: Wed, 14 Apr 2021 20:26:43 GMT  
+		Size: 7.0 MB (6976280 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6124a00cb79bac42b744dd2831c86d6a5b51c9d2f8553c0647369f704a2efb32`  
+		Last Modified: Wed, 14 Apr 2021 20:26:41 GMT  
 		Size: 1.4 KB (1398 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -10020,65 +10020,65 @@ WORKDIR /usr/bin
 ## `caddy:2.4.0-beta.2-builder-windowsservercore-1809`
 
 ```console
-$ docker pull caddy@sha256:05e5bc7c1e9119bf33b65195ab7c34cc5e1f29c2e635cc0adfd7de3dcb51330b
+$ docker pull caddy@sha256:e00a5d56dd2df7e3710bd950089f5387899a4dd83a12cff0d0953273987af6f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.17763.1817; amd64
+	-	windows version 10.0.17763.1879; amd64
 
-### `caddy:2.4.0-beta.2-builder-windowsservercore-1809` - windows version 10.0.17763.1817; amd64
+### `caddy:2.4.0-beta.2-builder-windowsservercore-1809` - windows version 10.0.17763.1879; amd64
 
 ```console
-$ docker pull caddy@sha256:9d285ead4bdf8f99fedfbe03501c691819e48f831e0b0084580a59cb8bf0bad4
+$ docker pull caddy@sha256:462cb3e87c34b510101ec4d6e1c3f41c249e50c11fc07a67a4c2f7d87c1e7785
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 GB (2641868622 bytes)**  
+-	Total Size: **2.6 GB (2641308715 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c93dc0b0fa48b343cd322c901f869fc6a46e264b6256d2fec7f4be8f2b219e04`
+-	Image ID: `sha256:e9a58bba31f403a9518e0b663472ff04a42fa6589bae4318605fb61cfc569d61`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 07 May 2020 05:09:25 GMT
 RUN Apply image 1809-RTM-amd64
-# Sat, 27 Feb 2021 09:32:06 GMT
+# Fri, 09 Apr 2021 20:34:41 GMT
 RUN Install update 1809-amd64
-# Wed, 10 Mar 2021 13:08:20 GMT
+# Wed, 14 Apr 2021 12:09:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 13:37:21 GMT
+# Wed, 14 Apr 2021 12:30:33 GMT
 ENV GIT_VERSION=2.23.0
-# Wed, 10 Mar 2021 13:37:22 GMT
+# Wed, 14 Apr 2021 12:30:35 GMT
 ENV GIT_TAG=v2.23.0.windows.1
-# Wed, 10 Mar 2021 13:37:23 GMT
+# Wed, 14 Apr 2021 12:30:36 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/MinGit-2.23.0-64-bit.zip
-# Wed, 10 Mar 2021 13:37:24 GMT
+# Wed, 14 Apr 2021 12:30:37 GMT
 ENV GIT_DOWNLOAD_SHA256=8f65208f92c0b4c3ae4c0cf02d4b5f6791d539cd1a07b2df62b7116467724735
-# Wed, 10 Mar 2021 13:38:55 GMT
+# Wed, 14 Apr 2021 12:31:55 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Wed, 10 Mar 2021 13:38:56 GMT
+# Wed, 14 Apr 2021 12:31:57 GMT
 ENV GOPATH=C:\gopath
-# Wed, 10 Mar 2021 13:39:22 GMT
+# Wed, 14 Apr 2021 12:32:38 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 02 Apr 2021 00:15:25 GMT
+# Wed, 14 Apr 2021 12:32:39 GMT
 ENV GOLANG_VERSION=1.16.3
-# Fri, 02 Apr 2021 00:18:07 GMT
+# Wed, 14 Apr 2021 12:35:13 GMT
 RUN $url = 'https://storage.googleapis.com/golang/go1.16.3.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'a4400345135b36cb7942e52bbaf978b66814738b855eeff8de879a09fd99de7f'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 02 Apr 2021 00:18:09 GMT
+# Wed, 14 Apr 2021 12:35:15 GMT
 WORKDIR C:\gopath
-# Fri, 02 Apr 2021 18:22:06 GMT
+# Wed, 14 Apr 2021 20:20:22 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 02 Apr 2021 18:22:07 GMT
+# Wed, 14 Apr 2021 20:20:23 GMT
 ENV XCADDY_VERSION=v0.1.8
-# Fri, 02 Apr 2021 18:22:09 GMT
+# Wed, 14 Apr 2021 20:20:24 GMT
 ENV CADDY_VERSION=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:22:10 GMT
+# Wed, 14 Apr 2021 20:20:25 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Fri, 02 Apr 2021 18:22:37 GMT
+# Wed, 14 Apr 2021 20:21:00 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.1.8/xcaddy_0.1.8_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('ccbc594da07adff41098959a78efaaee42fca4e5feb7806661d00841229b20ff1c47fed024c7a84e8554d3e8be3f162d3750e5e8347d6a230c496d4b133213e8')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Fri, 02 Apr 2021 18:22:38 GMT
+# Wed, 14 Apr 2021 20:21:01 GMT
 WORKDIR C:\
 ```
 
@@ -10086,140 +10086,140 @@ WORKDIR C:\
 	-	`sha256:4612f6d0b889cad0ed0292fae3a0b0c8a9e49aff6dea8eb049b2386d9b07986f`  
 		Size: 1.7 GB (1718332879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ff1512f88ecd4ff0a91ade34d43733c48834433e35f062f80e6e70d706f8d73`  
-		Size: 743.2 MB (743201590 bytes)  
+	-	`sha256:399f118dfaa9a753e98d128238b944432c7bcabea88a2998a6efbbece28ed303`  
+		Size: 751.4 MB (751421005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ebe61daec6d671bc2c1c6fe61ac9825fb552e9cef3672d0a7dbec719d125ae64`  
-		Last Modified: Wed, 10 Mar 2021 13:21:09 GMT  
-		Size: 1.4 KB (1430 bytes)  
+	-	`sha256:106dbf3373fce4f0ba5e00ad54824c597f2894605fa7d8ef446ad7ea3b97449f`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55f55c0bb3b38761f0aaeef923efdf23ab140f64a5549388e9aa125fe79780b0`  
-		Last Modified: Wed, 10 Mar 2021 14:02:53 GMT  
-		Size: 1.4 KB (1439 bytes)  
+	-	`sha256:ac56922ba0ee0ac19bcae98f5fb4b7427d31ef3c709f27cfb2c785fd13a611c4`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a312e589b5b4b52c93afc65c4053591faf5d602a159699e1d8fd7cb7257a1e19`  
-		Last Modified: Wed, 10 Mar 2021 14:02:53 GMT  
-		Size: 1.4 KB (1435 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5a36351186e9a8092baf10dfbdfd28b7dce39bcb5b543246f650bf4ad9549d6`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85bf84abeceee0a3b5a380cf6aa46e231424d48c1781e88f7f96344fdd400753`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
-		Size: 1.4 KB (1425 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfcb0c1de08b3116c910ff0e9573389536913cddb0462da67f13cc24f09b479b`  
-		Last Modified: Wed, 10 Mar 2021 14:02:55 GMT  
-		Size: 34.5 MB (34540168 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:121ca5c84aae657554fc278543816ed7a73aa34867b296c486181ff025bde056`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
-		Size: 1.4 KB (1408 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e1fde90e4880470a95a23f5277f201512a5e7cad1fc6c1bf100e06df43201b0`  
-		Last Modified: Wed, 10 Mar 2021 14:02:44 GMT  
-		Size: 338.8 KB (338777 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a7e34d0221e19de26b1af5fb6e32ddd3d7af02c7da8f8797c0b1d88608c507e`  
-		Last Modified: Fri, 02 Apr 2021 00:36:22 GMT  
-		Size: 1.4 KB (1426 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf7c9e37d4f37ac6c3bbb4a4ea26623159bd41ab01eeb97ba5f3558f6f0b2e6c`  
-		Last Modified: Fri, 02 Apr 2021 00:36:59 GMT  
-		Size: 143.7 MB (143721828 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14239a8d1f9055a3b8d9d966990a90be84c447b26212c8c31746315beb5af592`  
-		Last Modified: Fri, 02 Apr 2021 00:36:22 GMT  
-		Size: 1.6 KB (1593 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4cf60572a4ce4c53cd6b737d1d0052857aefd64967385c2dfb51ca7ab737d87`  
-		Last Modified: Fri, 02 Apr 2021 18:26:11 GMT  
-		Size: 1.4 KB (1410 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2eb15e0f080d4ffebac67b5651ae2308c376db5d2c6d35645ce7a3df70088d1a`  
-		Last Modified: Fri, 02 Apr 2021 18:26:08 GMT  
-		Size: 1.4 KB (1396 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:933d5696db6c53091e2d4ec83ddc685bd4ac95836dc1adc50e05ed712658a869`  
-		Last Modified: Fri, 02 Apr 2021 18:26:08 GMT  
+	-	`sha256:0f1723430d5101a2d617d3dbf4bc2a121b3f4b4432105aa2941e1afab8f130b9`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
 		Size: 1.4 KB (1407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9fa8b4229fc77631db90295128b3ee38f226ce9855444819dde0ec638023b873`  
-		Last Modified: Fri, 02 Apr 2021 18:26:08 GMT  
-		Size: 1.4 KB (1426 bytes)  
+	-	`sha256:ab2f4dc6e9a77d69a3d172368f4ae471b31c588d6201c2386e4ac62fd83faa16`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42288aa25a7176680ab6a682e44da10f14581942c25ed0cddc0827b54cae0bad`  
-		Last Modified: Fri, 02 Apr 2021 18:26:09 GMT  
-		Size: 1.7 MB (1714787 bytes)  
+	-	`sha256:aaea47861a9221a4f1e5750db237c619796c612756a5e75e2cb443b1731ae8a8`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
+		Size: 1.4 KB (1410 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:284cd2af3a6274b07a526bf01c7021477428137fd0f4938856f2a10d5dc78d0e`  
-		Last Modified: Fri, 02 Apr 2021 18:26:12 GMT  
-		Size: 1.4 KB (1367 bytes)  
+	-	`sha256:2b4be4ebd8eabefdb01f27dafad85e65289b95ca15591c14304c7792db99b54b`  
+		Last Modified: Wed, 14 Apr 2021 12:58:35 GMT  
+		Size: 30.2 MB (30155601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f6f66ae3738a83ea41b428b49261d4522d57df1617fbd1aa362d93f1e2802643`  
+		Last Modified: Wed, 14 Apr 2021 12:57:58 GMT  
+		Size: 1.4 KB (1442 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e2108b314c24064a0c250f72017cc64b3bf68915655327728a267c98985a5ff7`  
+		Last Modified: Wed, 14 Apr 2021 12:57:58 GMT  
+		Size: 324.6 KB (324649 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:770bd74ed4014a95375721a1bce0f4632edee8ed42f7f260a48718ee6f732697`  
+		Last Modified: Wed, 14 Apr 2021 12:57:58 GMT  
+		Size: 1.4 KB (1423 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f58502c76356a17ed82e8b59c7fe44ef794e3264a08a438016d76ad963ca5981`  
+		Last Modified: Wed, 14 Apr 2021 12:58:39 GMT  
+		Size: 139.3 MB (139343790 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8c463edf641e483a77edf915765e64f79175e8153cefcd88cd604e041ce7acb4`  
+		Last Modified: Wed, 14 Apr 2021 12:57:58 GMT  
+		Size: 1.6 KB (1587 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f3dd5b186731eb0c9c02f4d26a06edc29940d8da335802291ec84b521c3b1be0`  
+		Last Modified: Wed, 14 Apr 2021 20:26:32 GMT  
+		Size: 1.4 KB (1364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3f7a65e280ed60592afe5b646957a2b20de28f8c3a15588fbcdc3acee2afa400`  
+		Last Modified: Wed, 14 Apr 2021 20:26:30 GMT  
+		Size: 1.4 KB (1393 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:edd7049cb89a87a22b23b0324d7e9852cda6879a91d0544cba6d9fff99bd6917`  
+		Last Modified: Wed, 14 Apr 2021 20:26:32 GMT  
+		Size: 1.4 KB (1408 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:db63e753a266be0f2b5e0ce8a2a0f3dffddc2e4878e33b607f261f889144e297`  
+		Last Modified: Wed, 14 Apr 2021 20:26:29 GMT  
+		Size: 1.4 KB (1406 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:38640a1c07ea171864b89df9344108633f93264f53c4dfff35687df1c4bbdde9`  
+		Last Modified: Wed, 14 Apr 2021 20:26:30 GMT  
+		Size: 1.7 MB (1712234 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9e3d577f5cd66e2d0b0789d4494605c15f2f8ab159e01e3424f87369b77d45e1`  
+		Last Modified: Wed, 14 Apr 2021 20:26:30 GMT  
+		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2.4.0-beta.2-builder-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull caddy@sha256:62c5aa2fde38d3dc0b4bdba5d4b8142a001ee2ef8e355243901203318adb8d3e
+$ docker pull caddy@sha256:b13c553a0955492ca7e5e96a9bdcad292aabe138d1edd6e6337e3e19be7b48a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.4283; amd64
+	-	windows version 10.0.14393.4350; amd64
 
-### `caddy:2.4.0-beta.2-builder-windowsservercore-ltsc2016` - windows version 10.0.14393.4283; amd64
+### `caddy:2.4.0-beta.2-builder-windowsservercore-ltsc2016` - windows version 10.0.14393.4350; amd64
 
 ```console
-$ docker pull caddy@sha256:c1cfba3a3aa32a96fa4d6b325e56473c26a28d6f3db68ba2d8704a3fc1be6c49
+$ docker pull caddy@sha256:bac307c1e128c3d09f03453016a4566d0184a69a4aec7fdcc557c5cadb453ed1
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 GB (6003045589 bytes)**  
+-	Total Size: **6.0 GB (5987337668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79ee0f3301ee81e21e378ce3f53b7305e6e3db4119c6f6bc1e8ab85411402213`
+-	Image ID: `sha256:7b03d0cdba17b89503ca45d143a167abb87f93b49036f70ee3c0b58031b0b469`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sat, 19 Nov 2016 17:05:00 GMT
 RUN Apply image 1607-RTM-amd64
-# Wed, 03 Mar 2021 18:02:00 GMT
+# Wed, 07 Apr 2021 21:54:00 GMT
 RUN Install update ltsc2016-amd64
-# Wed, 10 Mar 2021 13:42:05 GMT
+# Wed, 14 Apr 2021 12:35:33 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 13:42:06 GMT
+# Wed, 14 Apr 2021 12:35:34 GMT
 ENV GIT_VERSION=2.23.0
-# Wed, 10 Mar 2021 13:42:07 GMT
+# Wed, 14 Apr 2021 12:35:35 GMT
 ENV GIT_TAG=v2.23.0.windows.1
-# Wed, 10 Mar 2021 13:42:08 GMT
+# Wed, 14 Apr 2021 12:35:36 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/MinGit-2.23.0-64-bit.zip
-# Wed, 10 Mar 2021 13:42:09 GMT
+# Wed, 14 Apr 2021 12:35:38 GMT
 ENV GIT_DOWNLOAD_SHA256=8f65208f92c0b4c3ae4c0cf02d4b5f6791d539cd1a07b2df62b7116467724735
-# Wed, 10 Mar 2021 13:44:31 GMT
+# Wed, 14 Apr 2021 12:38:01 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Wed, 10 Mar 2021 13:44:32 GMT
+# Wed, 14 Apr 2021 12:38:02 GMT
 ENV GOPATH=C:\gopath
-# Wed, 10 Mar 2021 13:45:47 GMT
+# Wed, 14 Apr 2021 12:39:34 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 02 Apr 2021 00:18:24 GMT
+# Wed, 14 Apr 2021 12:39:35 GMT
 ENV GOLANG_VERSION=1.16.3
-# Fri, 02 Apr 2021 00:22:41 GMT
+# Wed, 14 Apr 2021 12:43:21 GMT
 RUN $url = 'https://storage.googleapis.com/golang/go1.16.3.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'a4400345135b36cb7942e52bbaf978b66814738b855eeff8de879a09fd99de7f'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 02 Apr 2021 00:22:43 GMT
+# Wed, 14 Apr 2021 12:43:24 GMT
 WORKDIR C:\gopath
-# Fri, 02 Apr 2021 18:22:45 GMT
+# Wed, 14 Apr 2021 20:21:07 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 02 Apr 2021 18:22:46 GMT
+# Wed, 14 Apr 2021 20:21:08 GMT
 ENV XCADDY_VERSION=v0.1.8
-# Fri, 02 Apr 2021 18:22:47 GMT
+# Wed, 14 Apr 2021 20:21:09 GMT
 ENV CADDY_VERSION=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:22:48 GMT
+# Wed, 14 Apr 2021 20:21:10 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Fri, 02 Apr 2021 18:24:19 GMT
+# Wed, 14 Apr 2021 20:22:49 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.1.8/xcaddy_0.1.8_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('ccbc594da07adff41098959a78efaaee42fca4e5feb7806661d00841229b20ff1c47fed024c7a84e8554d3e8be3f162d3750e5e8347d6a230c496d4b133213e8')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Fri, 02 Apr 2021 18:24:20 GMT
+# Wed, 14 Apr 2021 20:22:51 GMT
 WORKDIR C:\
 ```
 
@@ -10228,149 +10228,149 @@ WORKDIR C:\
 		Last Modified: Tue, 18 Sep 2018 20:20:50 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:30bda99601c5cbd3b2118409f401852ea648e2319bd81518723e476b28d764c5`  
-		Size: 1.7 GB (1726924885 bytes)  
+	-	`sha256:00b4edb823e6a375d179a28cbfa682c2379d62179e1518485902d6e68b9a9d1e`  
+		Size: 1.7 GB (1724897968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:76680da9dc6db108ddf2e353c494b45e8486a6751619a13ed8fb3ad64b9a16e9`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bb52885e05952959b0fa7aaff23561fcf14d294aed336112b388c94e67709e4f`  
+		Last Modified: Wed, 14 Apr 2021 12:59:14 GMT  
+		Size: 1.4 KB (1406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea2092de86b10f822dfd3a0d8e8dc35924823393cf8301e6db8f8a0a2879fb18`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1306 bytes)  
+	-	`sha256:2c3360763b706a564d93471b21a342ebbda7e047567cf1cbee82dd592ad33e0c`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ac6e05dba1a284b10130ada4ed7581f5a1c5a90986038e31cc8213e215ca23`  
-		Last Modified: Wed, 10 Mar 2021 14:06:07 GMT  
-		Size: 1.4 KB (1431 bytes)  
+	-	`sha256:c1a0f653700ac9b57cf3d694cc90107e3220fc678581d1e985219677733ce242`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
+		Size: 1.4 KB (1398 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a636ee1e87a6b10caeaef03b68f084d58b5c8412fe4b10ba5d851a6965917196`  
-		Last Modified: Wed, 10 Mar 2021 14:06:01 GMT  
-		Size: 1.3 KB (1322 bytes)  
+	-	`sha256:2a59d82702c225a2ca8cd2a5476122f55d8619eae959c9cb8323b68d70a2ed19`  
+		Last Modified: Wed, 14 Apr 2021 12:59:06 GMT  
+		Size: 1.4 KB (1395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a9e03ef5102108f3595c37759ead10b0cfb624aa0f102dbae3b6abb18f03b56`  
-		Last Modified: Wed, 10 Mar 2021 14:06:01 GMT  
-		Size: 1.4 KB (1414 bytes)  
+	-	`sha256:62435cd2b7652fc97ef3dc1a8968446f3f6e95f0ff1d6dcb176a3f0c2b14c2f8`  
+		Last Modified: Wed, 14 Apr 2021 12:59:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:840634d0d343cc458ff1f028b165fab14415bf252ce2b7fdb726c41d035c64ff`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 35.3 MB (35273703 bytes)  
+	-	`sha256:a6d78a3a3d6cb25f55dc9d9947f7449a14717e6b787e49571a837e72b79334cf`  
+		Last Modified: Wed, 14 Apr 2021 12:59:41 GMT  
+		Size: 30.8 MB (30752513 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b968b2b2cb37afe5893ed1aa040b1055605f41e8371fe42fca9c6e06bb96c2ed`  
-		Last Modified: Wed, 10 Mar 2021 14:05:55 GMT  
-		Size: 1.4 KB (1381 bytes)  
+	-	`sha256:0b774a32e346c00e004abbbd7290530d0a3f3dfb11915be2b2fa73c402da6bdd`  
+		Last Modified: Wed, 14 Apr 2021 12:59:03 GMT  
+		Size: 1.4 KB (1409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b01350c0465bbc3ff96b788fef94740af9378a1cfe9f3c1fb50ffed30c8a7ad`  
-		Last Modified: Wed, 10 Mar 2021 14:05:59 GMT  
-		Size: 10.1 MB (10139029 bytes)  
+	-	`sha256:2d153061f2f0d8ef33f71c4b9afd90899e21556e320d7103a8a9fb544c1cb521`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
+		Size: 5.6 MB (5608025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e7c38f99787bf274ac0a56d06ab8d5ada8675bdbc1b8a41ac4e8e005be67cf3`  
-		Last Modified: Fri, 02 Apr 2021 00:37:20 GMT  
-		Size: 1.4 KB (1390 bytes)  
+	-	`sha256:10a6a8e2ceb8224d343a9fc230793caeca50276050099c458dfdefc5aefe2e3e`  
+		Last Modified: Wed, 14 Apr 2021 12:59:03 GMT  
+		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:858a80496ac8841bb47d698f77d63b80c5bfb5c71f3e836cd63729731eb2d0c3`  
-		Last Modified: Fri, 02 Apr 2021 00:40:16 GMT  
-		Size: 149.2 MB (149164836 bytes)  
+	-	`sha256:a2bc9fe33dd2652413cbaa5c8b9fc73f4b06b66dba8e87bfd17ea2b7e4263308`  
+		Last Modified: Wed, 14 Apr 2021 13:01:47 GMT  
+		Size: 149.1 MB (149098429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17f6bce455ff0310e2c186805aff8794f0ae69ed9bac6df06f7f6240d1ba4212`  
-		Last Modified: Fri, 02 Apr 2021 00:37:20 GMT  
-		Size: 1.6 KB (1589 bytes)  
+	-	`sha256:696c3886196f27d66c781b177bc4321100d92045fccae4986c33b6e2de256243`  
+		Last Modified: Wed, 14 Apr 2021 12:59:03 GMT  
+		Size: 1.6 KB (1586 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad6470d57243826b35d3959d11a867738f749a6118e42d9881bae1d6d022b5cd`  
-		Last Modified: Fri, 02 Apr 2021 18:26:22 GMT  
-		Size: 1.4 KB (1412 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2dc30f3688f8d90d917c010cffed48167b0a15f018655d85d79ffc5b7522885`  
-		Last Modified: Fri, 02 Apr 2021 18:26:19 GMT  
-		Size: 1.4 KB (1430 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d18daa399267ca08468b3402c46122b9aa3e5e80c7fb1860558585100eca16c`  
-		Last Modified: Fri, 02 Apr 2021 18:26:20 GMT  
-		Size: 1.4 KB (1415 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fcedff24a492766afee3560aca62ebae75ec3a54f253d95c44247b79d24b27a`  
-		Last Modified: Fri, 02 Apr 2021 18:26:20 GMT  
+	-	`sha256:fad5bdae0dba2b5f4cc89c5942fb0d5d4a806b899832ff95bd449b5f0fc9c9cb`  
+		Last Modified: Wed, 14 Apr 2021 20:26:44 GMT  
 		Size: 1.4 KB (1408 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d328d81e64b61062f2891b3c48b51ccb4badcbe1efc420c2acbfc43938f5d5ef`  
-		Last Modified: Fri, 02 Apr 2021 18:26:25 GMT  
-		Size: 11.5 MB (11539007 bytes)  
+	-	`sha256:d8b4b163cb6fdb7544e01b1f7d90edfa10ac6cc481d9b57db46ccf7534532207`  
+		Last Modified: Wed, 14 Apr 2021 20:26:41 GMT  
+		Size: 1.4 KB (1409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:228dc315d7ba3fe405accce7eafdd95cd5861cda759a223fae2852cceaa01213`  
-		Last Modified: Fri, 02 Apr 2021 18:26:20 GMT  
+	-	`sha256:877c3eb7550533526d7621a2e42b1846c54be1126384ce86992e67e00dc467d2`  
+		Last Modified: Wed, 14 Apr 2021 20:26:41 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f73d3b8d11f7a8b62d2e8fbd42eabfa48c76d61d6843779b683cf982b7ea1c5e`  
+		Last Modified: Wed, 14 Apr 2021 20:26:41 GMT  
+		Size: 1.4 KB (1437 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:38b56149f1fc75ce46bdf8fe96da4d6d5bf47f88e9e965f9b1649a6bc4e71ae4`  
+		Last Modified: Wed, 14 Apr 2021 20:26:43 GMT  
+		Size: 7.0 MB (6976280 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6124a00cb79bac42b744dd2831c86d6a5b51c9d2f8553c0647369f704a2efb32`  
+		Last Modified: Wed, 14 Apr 2021 20:26:41 GMT  
 		Size: 1.4 KB (1398 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2.4.0-beta.2-windowsservercore`
 
 ```console
-$ docker pull caddy@sha256:9317eb58acc4a0bcc3d093e9939e76dd3f8f659360c81654b28449972ceeab55
+$ docker pull caddy@sha256:4a9eaf08d3964f22fc0bda6ec4e692cd90829921f2239c380ba4e5d691dbce33
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.17763.1817; amd64
-	-	windows version 10.0.14393.4283; amd64
+	-	windows version 10.0.17763.1879; amd64
+	-	windows version 10.0.14393.4350; amd64
 
-### `caddy:2.4.0-beta.2-windowsservercore` - windows version 10.0.17763.1817; amd64
+### `caddy:2.4.0-beta.2-windowsservercore` - windows version 10.0.17763.1879; amd64
 
 ```console
-$ docker pull caddy@sha256:6f39355785ee4e6f020cd3755adb37e0f09f396afd9fcaa7330e15d424e225b4
+$ docker pull caddy@sha256:57007a2384bbff9e730072565519dbdb596e6eb66e59969ba33cc31b8a5cea77
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2487602702 bytes)**  
+-	Total Size: **2.5 GB (2487035062 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11dbe1305e7cbce4d507512474f6d9c114c88ecf4c1e6ac3802065b47d6c175c`
+-	Image ID: `sha256:21166c4140d929d0caccfb9e9ff5b3af4641c7594112345c1d3d87a5bf7f52ac`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 07 May 2020 05:09:25 GMT
 RUN Apply image 1809-RTM-amd64
-# Sat, 27 Feb 2021 09:32:06 GMT
+# Fri, 09 Apr 2021 20:34:41 GMT
 RUN Install update 1809-amd64
-# Wed, 10 Mar 2021 13:08:20 GMT
+# Wed, 14 Apr 2021 12:09:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 02 Apr 2021 18:16:22 GMT
+# Wed, 14 Apr 2021 20:13:54 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Fri, 02 Apr 2021 18:16:24 GMT
+# Wed, 14 Apr 2021 20:13:55 GMT
 ENV CADDY_VERSION=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:16:54 GMT
+# Wed, 14 Apr 2021 20:14:32 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.4.0-beta.2/caddy_2.4.0-beta.2_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('9f41c88fc8c2c28230c5eb67fb7d9ef23477a351fb716a44486b3d1a37569fb141112cd3582adcd44424b2819c22723fb49023a6d371e1bf8d92eefe4e7e9ed4')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Fri, 02 Apr 2021 18:16:55 GMT
+# Wed, 14 Apr 2021 20:14:33 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Fri, 02 Apr 2021 18:16:56 GMT
+# Wed, 14 Apr 2021 20:14:34 GMT
 ENV XDG_DATA_HOME=c:/data
-# Fri, 02 Apr 2021 18:16:58 GMT
+# Wed, 14 Apr 2021 20:14:35 GMT
 VOLUME [c:/config]
-# Fri, 02 Apr 2021 18:16:59 GMT
+# Wed, 14 Apr 2021 20:14:36 GMT
 VOLUME [c:/data]
-# Fri, 02 Apr 2021 18:17:00 GMT
+# Wed, 14 Apr 2021 20:14:37 GMT
 LABEL org.opencontainers.image.version=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:17:01 GMT
+# Wed, 14 Apr 2021 20:14:38 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Fri, 02 Apr 2021 18:17:02 GMT
+# Wed, 14 Apr 2021 20:14:39 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Fri, 02 Apr 2021 18:17:03 GMT
+# Wed, 14 Apr 2021 20:14:40 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Fri, 02 Apr 2021 18:17:04 GMT
+# Wed, 14 Apr 2021 20:14:41 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Fri, 02 Apr 2021 18:17:06 GMT
+# Wed, 14 Apr 2021 20:14:42 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Fri, 02 Apr 2021 18:17:07 GMT
+# Wed, 14 Apr 2021 20:14:43 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Fri, 02 Apr 2021 18:17:08 GMT
+# Wed, 14 Apr 2021 20:14:44 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Fri, 02 Apr 2021 18:17:09 GMT
+# Wed, 14 Apr 2021 20:14:45 GMT
 EXPOSE 80
-# Fri, 02 Apr 2021 18:17:10 GMT
+# Wed, 14 Apr 2021 20:14:46 GMT
 EXPOSE 443
-# Fri, 02 Apr 2021 18:17:11 GMT
+# Wed, 14 Apr 2021 20:14:47 GMT
 EXPOSE 2019
-# Fri, 02 Apr 2021 18:17:29 GMT
+# Wed, 14 Apr 2021 20:15:12 GMT
 RUN caddy version
-# Fri, 02 Apr 2021 18:17:30 GMT
+# Wed, 14 Apr 2021 20:15:13 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -10378,154 +10378,154 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 	-	`sha256:4612f6d0b889cad0ed0292fae3a0b0c8a9e49aff6dea8eb049b2386d9b07986f`  
 		Size: 1.7 GB (1718332879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ff1512f88ecd4ff0a91ade34d43733c48834433e35f062f80e6e70d706f8d73`  
-		Size: 743.2 MB (743201590 bytes)  
+	-	`sha256:399f118dfaa9a753e98d128238b944432c7bcabea88a2998a6efbbece28ed303`  
+		Size: 751.4 MB (751421005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ebe61daec6d671bc2c1c6fe61ac9825fb552e9cef3672d0a7dbec719d125ae64`  
-		Last Modified: Wed, 10 Mar 2021 13:21:09 GMT  
-		Size: 1.4 KB (1430 bytes)  
+	-	`sha256:106dbf3373fce4f0ba5e00ad54824c597f2894605fa7d8ef446ad7ea3b97449f`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95e2248c328b7b25c2cbbab7676a8e86d131ea6ad52f5f7bd35647a14893a0a2`  
-		Last Modified: Fri, 02 Apr 2021 18:25:36 GMT  
-		Size: 9.5 MB (9465706 bytes)  
+	-	`sha256:1de472ba1df2f836f9b4125180bedb0ca0f6c425460dd8535a92764dff8169f8`  
+		Last Modified: Wed, 14 Apr 2021 20:25:56 GMT  
+		Size: 5.1 MB (5080859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c94271d4a9ce601138f36c7f2d749d748b9ced3d0f52764ca356d32860edb5c5`  
-		Last Modified: Fri, 02 Apr 2021 18:25:33 GMT  
+	-	`sha256:55627e36839779d3cfb370ec41774f50d7db4ff914a3077c70b75f96287e5af0`  
+		Last Modified: Wed, 14 Apr 2021 20:25:52 GMT  
+		Size: 1.4 KB (1350 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:78f2e16d47aeed21efafcfe34553edd6166984a4ae765a5420a50d46f1d204b6`  
+		Last Modified: Wed, 14 Apr 2021 20:25:56 GMT  
+		Size: 11.9 MB (11867562 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4d62c501d3d5d88099b96f7b95b3f58cdc7baea8006662464c5677f3d8abbad2`  
+		Last Modified: Wed, 14 Apr 2021 20:25:52 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cee81a85c97e2bebd04246c72c2e9093a2fc92d5b3a1c61092a47ca2dbca3195`  
+		Last Modified: Wed, 14 Apr 2021 20:25:51 GMT  
+		Size: 1.3 KB (1328 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2c473eb70ede949ae95779d72ada5e737f68bee537a5892368b21c219b7ae8f2`  
+		Last Modified: Wed, 14 Apr 2021 20:25:51 GMT  
+		Size: 1.4 KB (1374 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:962e4b4d5583a800a5fa99d1c9f8344405685fc162718cfab1c851df0b149bf4`  
+		Last Modified: Wed, 14 Apr 2021 20:25:50 GMT  
+		Size: 1.4 KB (1406 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4277207668aa329a0fcf285a3e8044549f14fcdc258b54941786b2dbac2b738f`  
+		Last Modified: Wed, 14 Apr 2021 20:25:49 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8932075115714c24da0e0b15ca784e45621efdac23f763feac93a8d63e51dc18`  
+		Last Modified: Wed, 14 Apr 2021 20:25:49 GMT  
+		Size: 1.3 KB (1304 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b3ec24942a02e14cc4f3627742e1a9ba37a831854d99e25e35ab78c7603f4cbd`  
+		Last Modified: Wed, 14 Apr 2021 20:25:49 GMT  
+		Size: 1.3 KB (1339 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e554d5e240ec502a081852a31141622d738e021388206ba4f43cb159c7c7d7a5`  
+		Last Modified: Wed, 14 Apr 2021 20:25:48 GMT  
 		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ca5665516d898633290e493cef794521852475d69230732409986f3ad81705`  
-		Last Modified: Fri, 02 Apr 2021 18:25:38 GMT  
-		Size: 16.3 MB (16274695 bytes)  
+	-	`sha256:73e6d8e32fb60c802dc23aa51a0c38e0588aebbf5461bd4d3b66de34e80d2eb6`  
+		Last Modified: Wed, 14 Apr 2021 20:25:47 GMT  
+		Size: 1.4 KB (1383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0de70870a5fa3de27854447c44c6ba786981cc938c0f362048da4170553463a`  
-		Last Modified: Fri, 02 Apr 2021 18:25:32 GMT  
-		Size: 1.4 KB (1399 bytes)  
+	-	`sha256:a339de9553d5fd226cedff68f9c92d817957f2f7809f9d64da67f12fb23bed32`  
+		Last Modified: Wed, 14 Apr 2021 20:25:46 GMT  
+		Size: 1.3 KB (1311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a3568445127d07f06bf99e10ae664cca603cc31e68c728060dcac8f7e608881`  
-		Last Modified: Fri, 02 Apr 2021 18:25:32 GMT  
-		Size: 1.4 KB (1443 bytes)  
+	-	`sha256:51272577d8785b827aa7bb896767009a940ee9343189459c6e3c675e566f9f0d`  
+		Last Modified: Wed, 14 Apr 2021 20:25:46 GMT  
+		Size: 1.3 KB (1332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da65ebebad5059d100ae2af112ca25285129bee6131023aa4c8ce7f0f830793a`  
-		Last Modified: Fri, 02 Apr 2021 18:25:30 GMT  
-		Size: 1.4 KB (1427 bytes)  
+	-	`sha256:bde8de3cc19d01e8b1d8624b50438d1fa257a16237f41b1d73cff4fa65768a4d`  
+		Last Modified: Wed, 14 Apr 2021 20:25:46 GMT  
+		Size: 1.3 KB (1329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a48067c5e57f31ce03ffc3422870602c673527153e446f55fe44dc813bebf9b4`  
-		Last Modified: Fri, 02 Apr 2021 18:25:30 GMT  
-		Size: 1.4 KB (1430 bytes)  
+	-	`sha256:455f5cdc11de43d196e81d074362a41abcaed1366315581b689ba2a88d3f4857`  
+		Last Modified: Wed, 14 Apr 2021 20:25:44 GMT  
+		Size: 1.3 KB (1303 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7f2e781673fc6a350cf8b08667e71ffdf90d42f5b0a6a1d9da8e29771f1ffc6`  
-		Last Modified: Fri, 02 Apr 2021 18:25:29 GMT  
-		Size: 1.4 KB (1426 bytes)  
+	-	`sha256:86d7b5d207b9968f7f40e32437e99ef85d2dde4afba849a8825896ee82ed5f50`  
+		Last Modified: Wed, 14 Apr 2021 20:25:43 GMT  
+		Size: 1.3 KB (1332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8493be2eceb4e6ea31b450a179859bfd185e92ffd3bbf301fcbd9cb409bcb911`  
-		Last Modified: Fri, 02 Apr 2021 18:25:30 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:8c9dc90818d729c2fd0cb0bac96912bd2969512c4a029b3a3b21b3764b004500`  
+		Last Modified: Wed, 14 Apr 2021 20:25:44 GMT  
+		Size: 1.3 KB (1326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c7a94659f6ba05b7478802b8b57b48e51bbc397ddd845b315891c3e32c1be32`  
-		Last Modified: Fri, 02 Apr 2021 18:25:29 GMT  
-		Size: 1.4 KB (1397 bytes)  
+	-	`sha256:d304d34d98bbc8fed2a3f472757c6377c204ec57a87fd6a3823cf4236f26e877`  
+		Last Modified: Wed, 14 Apr 2021 20:25:46 GMT  
+		Size: 308.5 KB (308506 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0db2eb1ebe3b7e3abc59d777a66b0b0b8f51cb3378cc265655f1bfcd7e79312`  
-		Last Modified: Fri, 02 Apr 2021 18:25:27 GMT  
-		Size: 1.4 KB (1426 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d6c27364edfca6e69e47b72493bac0aa0242ed5630222b468f2511911e9db14`  
-		Last Modified: Fri, 02 Apr 2021 18:25:27 GMT  
-		Size: 1.4 KB (1426 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88ed9f38d63bbcecb70291bbc12286363d05cd6e3fb4be3863ea7332dfd32df8`  
-		Last Modified: Fri, 02 Apr 2021 18:25:27 GMT  
-		Size: 1.4 KB (1393 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b92c3fb781472d906952c139a15a924de551954360d972757c2b7fa70127fc7`  
-		Last Modified: Fri, 02 Apr 2021 18:25:27 GMT  
-		Size: 1.4 KB (1430 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccc395ee40c1f92ebe4a8630100e8e3a0323cd404b6e2b4a13b8cd01e17514c1`  
-		Last Modified: Fri, 02 Apr 2021 18:25:27 GMT  
-		Size: 1.4 KB (1409 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7daab2d67688cedff5bdcbd07535b3be37f2493b23cd92a902e0f241d46be09f`  
-		Last Modified: Fri, 02 Apr 2021 18:25:24 GMT  
-		Size: 1.4 KB (1411 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cebc8f200f7b9a010feb0546619b1dee830f1b1ec0dc747ad7158ecb0088482c`  
-		Last Modified: Fri, 02 Apr 2021 18:25:24 GMT  
-		Size: 1.4 KB (1393 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2cd8989a8ea6c4f623b19785b82af238aee316ee6b72e732262a87011c74d62`  
-		Last Modified: Fri, 02 Apr 2021 18:25:24 GMT  
-		Size: 1.4 KB (1437 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d6b1aa36e5bfef2dfa42970c937fc34573ad9f72508693cda371163b8da379`  
-		Last Modified: Fri, 02 Apr 2021 18:25:25 GMT  
-		Size: 302.3 KB (302255 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34ec29f6e55d821e399842d426dab17fde9d0ddebeb312cbb9e2a7c07cbdf0b3`  
-		Last Modified: Fri, 02 Apr 2021 18:25:25 GMT  
-		Size: 1.4 KB (1430 bytes)  
+	-	`sha256:701310ad80f85832364aa3313c02e66c8a9e60cd165a937c96075db0496b486c`  
+		Last Modified: Wed, 14 Apr 2021 20:25:43 GMT  
+		Size: 1.4 KB (1403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `caddy:2.4.0-beta.2-windowsservercore` - windows version 10.0.14393.4283; amd64
+### `caddy:2.4.0-beta.2-windowsservercore` - windows version 10.0.14393.4350; amd64
 
 ```console
-$ docker pull caddy@sha256:484c688cb48fa269829e7f6b85bc623bc1b5061043c0e673cc323ccb7c465abc
+$ docker pull caddy@sha256:fa30c18bcdf91806b54ea7ed3a348627df09108ceebc6d0d5550fb0ad3455cde
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 GB (5829094060 bytes)**  
+-	Total Size: **5.8 GB (5817979261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86b0dff6059a7f821d34de02f7303fd43d1f41212c68037dd2876ebd5663e534`
+-	Image ID: `sha256:421de0d93291fba46ed24305b5fe5fe3f674bd381400d00c5bf45a608e170018`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sat, 19 Nov 2016 17:05:00 GMT
 RUN Apply image 1607-RTM-amd64
-# Wed, 03 Mar 2021 18:02:00 GMT
+# Wed, 07 Apr 2021 21:54:00 GMT
 RUN Install update ltsc2016-amd64
-# Wed, 10 Mar 2021 13:42:05 GMT
+# Wed, 14 Apr 2021 12:35:33 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 02 Apr 2021 18:19:03 GMT
+# Wed, 14 Apr 2021 20:16:50 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Fri, 02 Apr 2021 18:19:04 GMT
+# Wed, 14 Apr 2021 20:16:51 GMT
 ENV CADDY_VERSION=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:20:44 GMT
+# Wed, 14 Apr 2021 20:18:39 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.4.0-beta.2/caddy_2.4.0-beta.2_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('9f41c88fc8c2c28230c5eb67fb7d9ef23477a351fb716a44486b3d1a37569fb141112cd3582adcd44424b2819c22723fb49023a6d371e1bf8d92eefe4e7e9ed4')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Fri, 02 Apr 2021 18:20:45 GMT
+# Wed, 14 Apr 2021 20:18:40 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Fri, 02 Apr 2021 18:20:47 GMT
+# Wed, 14 Apr 2021 20:18:41 GMT
 ENV XDG_DATA_HOME=c:/data
-# Fri, 02 Apr 2021 18:20:48 GMT
+# Wed, 14 Apr 2021 20:18:42 GMT
 VOLUME [c:/config]
-# Fri, 02 Apr 2021 18:20:49 GMT
+# Wed, 14 Apr 2021 20:18:43 GMT
 VOLUME [c:/data]
-# Fri, 02 Apr 2021 18:20:50 GMT
+# Wed, 14 Apr 2021 20:18:45 GMT
 LABEL org.opencontainers.image.version=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:20:52 GMT
+# Wed, 14 Apr 2021 20:18:46 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Fri, 02 Apr 2021 18:20:53 GMT
+# Wed, 14 Apr 2021 20:18:47 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Fri, 02 Apr 2021 18:20:54 GMT
+# Wed, 14 Apr 2021 20:18:48 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Fri, 02 Apr 2021 18:20:55 GMT
+# Wed, 14 Apr 2021 20:18:49 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Fri, 02 Apr 2021 18:20:57 GMT
+# Wed, 14 Apr 2021 20:18:50 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Fri, 02 Apr 2021 18:20:58 GMT
+# Wed, 14 Apr 2021 20:18:51 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Fri, 02 Apr 2021 18:20:59 GMT
+# Wed, 14 Apr 2021 20:18:52 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Fri, 02 Apr 2021 18:21:00 GMT
+# Wed, 14 Apr 2021 20:18:53 GMT
 EXPOSE 80
-# Fri, 02 Apr 2021 18:21:01 GMT
+# Wed, 14 Apr 2021 20:18:54 GMT
 EXPOSE 443
-# Fri, 02 Apr 2021 18:21:02 GMT
+# Wed, 14 Apr 2021 20:18:55 GMT
 EXPOSE 2019
-# Fri, 02 Apr 2021 18:21:57 GMT
+# Wed, 14 Apr 2021 20:20:11 GMT
 RUN caddy version
-# Fri, 02 Apr 2021 18:21:58 GMT
+# Wed, 14 Apr 2021 20:20:12 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -10534,164 +10534,164 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Last Modified: Tue, 18 Sep 2018 20:20:50 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:30bda99601c5cbd3b2118409f401852ea648e2319bd81518723e476b28d764c5`  
-		Size: 1.7 GB (1726924885 bytes)  
+	-	`sha256:00b4edb823e6a375d179a28cbfa682c2379d62179e1518485902d6e68b9a9d1e`  
+		Size: 1.7 GB (1724897968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:76680da9dc6db108ddf2e353c494b45e8486a6751619a13ed8fb3ad64b9a16e9`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bb52885e05952959b0fa7aaff23561fcf14d294aed336112b388c94e67709e4f`  
+		Last Modified: Wed, 14 Apr 2021 12:59:14 GMT  
+		Size: 1.4 KB (1406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3839f3b2a37673d4006f18951ce8d65dac9f9e7a60c481cf4fa86898372bcc72`  
-		Last Modified: Fri, 02 Apr 2021 18:25:59 GMT  
-		Size: 10.2 MB (10196223 bytes)  
+	-	`sha256:b068c1eb113cc4e93590b9ea7cd57796316b3b21ba390abfe889d79e702cec3c`  
+		Last Modified: Wed, 14 Apr 2021 20:26:14 GMT  
+		Size: 5.7 MB (5660433 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b35d02bac712107cd6e45e8ecf4c379e9fe8ba144b8b1af73c9fbaeeb9b5ea21`  
-		Last Modified: Fri, 02 Apr 2021 18:25:54 GMT  
-		Size: 1.4 KB (1424 bytes)  
+	-	`sha256:3d97864bd63ccf6806c9e9849c61e19f7a4b476e59b63ac9d243241fdd271e3d`  
+		Last Modified: Wed, 14 Apr 2021 20:26:12 GMT  
+		Size: 1.4 KB (1440 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66f861c5228e163fdd027d65ffdb9bf65e90a1940df415ad2c0ce25ab35cd093`  
-		Last Modified: Fri, 02 Apr 2021 18:26:01 GMT  
-		Size: 21.7 MB (21693316 bytes)  
+	-	`sha256:2ab97c72d1ce9fea13fa1e516f83d28adc8a155bfa23822ce7752d2da4f74c5b`  
+		Last Modified: Wed, 14 Apr 2021 20:26:17 GMT  
+		Size: 17.2 MB (17151549 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:70f4820276b1680a1ec83d16ac48637c3bb3a276c31baaaf17dd757edd9f4188`  
-		Last Modified: Fri, 02 Apr 2021 18:25:54 GMT  
-		Size: 1.4 KB (1408 bytes)  
+	-	`sha256:e8acb6e1c103fe19721c692609bc6eb55acdd0326bb9d027768a6ba92e7e0202`  
+		Last Modified: Wed, 14 Apr 2021 20:26:11 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1d3d58a6632e499c498ca0addf11c2b22067f5427a93e69885d6b38e1b10596`  
-		Last Modified: Fri, 02 Apr 2021 18:25:54 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:d3cdd68811b5c180d1153a0f2b6d8edceb94aad8069b64040d2d8db829dd448e`  
+		Last Modified: Wed, 14 Apr 2021 20:26:11 GMT  
+		Size: 1.4 KB (1405 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f28b4d2afe9acc4864ab15a603e8672fb2482c1dd648c57e32456bf7765c3c63`  
-		Last Modified: Fri, 02 Apr 2021 18:25:53 GMT  
-		Size: 1.4 KB (1407 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6489ff70b21ce91518922c0d1bfd94e89f92403b67f5a24a1825fd37f28f5aaf`  
-		Last Modified: Fri, 02 Apr 2021 18:25:52 GMT  
-		Size: 1.4 KB (1435 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86c0ad8640bb2534d11d722e0777eca31ac10db266abae4cbeefcdfc9f1936a8`  
-		Last Modified: Fri, 02 Apr 2021 18:25:51 GMT  
-		Size: 1.4 KB (1442 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7885acef6da7eb82e08e66cab23b2890f3f3dafef9ec189e81f8045c1954afc`  
-		Last Modified: Fri, 02 Apr 2021 18:25:51 GMT  
-		Size: 1.4 KB (1427 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c1f28035d278c150033dbc5d05f6fa9dd3ece81bba6b2a85b3453414398f8aa`  
-		Last Modified: Fri, 02 Apr 2021 18:25:51 GMT  
-		Size: 1.4 KB (1391 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d19f2df18981d5ee49e3c45183b1d251f5c4ab848c5f6dc0c0816224f900d287`  
-		Last Modified: Fri, 02 Apr 2021 18:25:50 GMT  
-		Size: 1.4 KB (1436 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:786ed8d22ae84118b965493f2dc3e79c27bb76f8e34470a569d40d5b9197d008`  
-		Last Modified: Fri, 02 Apr 2021 18:25:49 GMT  
+	-	`sha256:6ab6a4bef16e77771e00038b7a77d618e3fc0da8ef554e67d5a8c4e0400f1809`  
+		Last Modified: Wed, 14 Apr 2021 20:26:09 GMT  
 		Size: 1.4 KB (1399 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:203b1cde58cdb206802bae3748fc1791648ec167a9addfc05d71af8ef80a7263`  
-		Last Modified: Fri, 02 Apr 2021 18:25:49 GMT  
-		Size: 1.4 KB (1393 bytes)  
+	-	`sha256:558d80b23de2d6fb99e705591d268689266afd67afef1012302baf76d43c6a0c`  
+		Last Modified: Wed, 14 Apr 2021 20:26:09 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17a08c62e43e038c439e7b271c524bc1b032913ef0a7838c7a28574564267f4d`  
-		Last Modified: Fri, 02 Apr 2021 18:25:48 GMT  
-		Size: 1.4 KB (1370 bytes)  
+	-	`sha256:6382ddb421f9b6ed0c2a785186cf291be684523ec1ddc96d4cfe2963b4f37b79`  
+		Last Modified: Wed, 14 Apr 2021 20:26:09 GMT  
+		Size: 1.4 KB (1425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:629328a7926be76a0105b548d269200ac4213b329ac924c6dc34399747a0a6e4`  
-		Last Modified: Fri, 02 Apr 2021 18:25:48 GMT  
-		Size: 1.4 KB (1413 bytes)  
+	-	`sha256:991b64532293d0a7f622cce85a5709f33577f5803fda5d8838a8cc850532054c`  
+		Last Modified: Wed, 14 Apr 2021 20:26:08 GMT  
+		Size: 1.4 KB (1351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:33b6aec700c2791f546afb2dc6d5045b6ea036c6117b574d5ed06454a2eb5e42`  
-		Last Modified: Fri, 02 Apr 2021 18:25:47 GMT  
-		Size: 1.4 KB (1393 bytes)  
+	-	`sha256:10bf3364ee0158cad4826de8a57245fcb5a54a4f33f0d07fa1867d70b482812d`  
+		Last Modified: Wed, 14 Apr 2021 20:26:09 GMT  
+		Size: 1.4 KB (1440 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ded6ed75772c3a5c3485bda081d2914ed7b8b0850d62e3d9b9dcfcb86b97961`  
-		Last Modified: Fri, 02 Apr 2021 18:25:46 GMT  
+	-	`sha256:4572b72928444624d70624bd4188a957e1cbcdc364bacd3026fc6e46d2154e72`  
+		Last Modified: Wed, 14 Apr 2021 20:26:06 GMT  
+		Size: 1.4 KB (1422 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2fae1b86448ffecd80365e375393080c5484925ed877f02fcc8f9bd3389c725c`  
+		Last Modified: Wed, 14 Apr 2021 20:26:06 GMT  
+		Size: 1.4 KB (1432 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5ae7cbf677188f13aae6856b110af11696cac21e78313f3d225815d7fb16b55b`  
+		Last Modified: Wed, 14 Apr 2021 20:26:06 GMT  
+		Size: 1.4 KB (1406 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e925b48c88da00efc465f3291af0f81734fa9088838bf99e2b21c9763c76aa80`  
+		Last Modified: Wed, 14 Apr 2021 20:26:06 GMT  
+		Size: 1.4 KB (1388 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:325a0551f6981da1e92d3974f95db9dbc5553b1acd629302ab8f2ed5aaf64a41`  
+		Last Modified: Wed, 14 Apr 2021 20:26:06 GMT  
+		Size: 1.4 KB (1434 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:33fbbe5b0ac1c5adbe504a0bded280a2ebc8133939e17035cdf61e5f811a9d79`  
+		Last Modified: Wed, 14 Apr 2021 20:26:03 GMT  
+		Size: 1.4 KB (1434 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4c7999335cd30f75fd39b8d9ebfaac1dfad63e643813eeabfd572210dc15f442`  
+		Last Modified: Wed, 14 Apr 2021 20:26:03 GMT  
 		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d55d3e22aa51f274d765555ceb7acfe4c95dfdf06ed747cb78ff3955ec37b43a`  
-		Last Modified: Fri, 02 Apr 2021 18:25:46 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:11f9edc21a0f3503cc8695bfb1f0f2bf825fe586c31c14112ebaffc2cccb32be`  
+		Last Modified: Wed, 14 Apr 2021 20:26:04 GMT  
+		Size: 1.4 KB (1392 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f1282f41e60a0e981888559572f13a307d872bb4fb6d636ea2af4a71aa953d4`  
-		Last Modified: Fri, 02 Apr 2021 18:25:46 GMT  
-		Size: 268.3 KB (268326 bytes)  
+	-	`sha256:654c270965f7a90556b3aa0fa48d1fea0ff65f6918708e24ebd83c36be1e0ae9`  
+		Last Modified: Wed, 14 Apr 2021 20:26:04 GMT  
+		Size: 258.0 KB (257960 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f86a7b2d83b6c9a47753c8f82981aefe854fefc34fa7f1ee836fd656fc47f38d`  
-		Last Modified: Fri, 02 Apr 2021 18:25:46 GMT  
-		Size: 1.4 KB (1434 bytes)  
+	-	`sha256:893d5403793a417c0e1beac002e47a4e1d311d6aca319395cd9422949b7d393c`  
+		Last Modified: Wed, 14 Apr 2021 20:26:03 GMT  
+		Size: 1.4 KB (1397 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2.4.0-beta.2-windowsservercore-1809`
 
 ```console
-$ docker pull caddy@sha256:e7a72a2929cde204c888cc4d457c93dec116ff9429db95a78aebcb5b7cdbce1f
+$ docker pull caddy@sha256:3113033bee6cc942c3e7296b8272fb71bc1394e921982ce6690ecfdff5eeedbd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.17763.1817; amd64
+	-	windows version 10.0.17763.1879; amd64
 
-### `caddy:2.4.0-beta.2-windowsservercore-1809` - windows version 10.0.17763.1817; amd64
+### `caddy:2.4.0-beta.2-windowsservercore-1809` - windows version 10.0.17763.1879; amd64
 
 ```console
-$ docker pull caddy@sha256:6f39355785ee4e6f020cd3755adb37e0f09f396afd9fcaa7330e15d424e225b4
+$ docker pull caddy@sha256:57007a2384bbff9e730072565519dbdb596e6eb66e59969ba33cc31b8a5cea77
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2487602702 bytes)**  
+-	Total Size: **2.5 GB (2487035062 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11dbe1305e7cbce4d507512474f6d9c114c88ecf4c1e6ac3802065b47d6c175c`
+-	Image ID: `sha256:21166c4140d929d0caccfb9e9ff5b3af4641c7594112345c1d3d87a5bf7f52ac`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 07 May 2020 05:09:25 GMT
 RUN Apply image 1809-RTM-amd64
-# Sat, 27 Feb 2021 09:32:06 GMT
+# Fri, 09 Apr 2021 20:34:41 GMT
 RUN Install update 1809-amd64
-# Wed, 10 Mar 2021 13:08:20 GMT
+# Wed, 14 Apr 2021 12:09:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 02 Apr 2021 18:16:22 GMT
+# Wed, 14 Apr 2021 20:13:54 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Fri, 02 Apr 2021 18:16:24 GMT
+# Wed, 14 Apr 2021 20:13:55 GMT
 ENV CADDY_VERSION=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:16:54 GMT
+# Wed, 14 Apr 2021 20:14:32 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.4.0-beta.2/caddy_2.4.0-beta.2_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('9f41c88fc8c2c28230c5eb67fb7d9ef23477a351fb716a44486b3d1a37569fb141112cd3582adcd44424b2819c22723fb49023a6d371e1bf8d92eefe4e7e9ed4')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Fri, 02 Apr 2021 18:16:55 GMT
+# Wed, 14 Apr 2021 20:14:33 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Fri, 02 Apr 2021 18:16:56 GMT
+# Wed, 14 Apr 2021 20:14:34 GMT
 ENV XDG_DATA_HOME=c:/data
-# Fri, 02 Apr 2021 18:16:58 GMT
+# Wed, 14 Apr 2021 20:14:35 GMT
 VOLUME [c:/config]
-# Fri, 02 Apr 2021 18:16:59 GMT
+# Wed, 14 Apr 2021 20:14:36 GMT
 VOLUME [c:/data]
-# Fri, 02 Apr 2021 18:17:00 GMT
+# Wed, 14 Apr 2021 20:14:37 GMT
 LABEL org.opencontainers.image.version=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:17:01 GMT
+# Wed, 14 Apr 2021 20:14:38 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Fri, 02 Apr 2021 18:17:02 GMT
+# Wed, 14 Apr 2021 20:14:39 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Fri, 02 Apr 2021 18:17:03 GMT
+# Wed, 14 Apr 2021 20:14:40 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Fri, 02 Apr 2021 18:17:04 GMT
+# Wed, 14 Apr 2021 20:14:41 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Fri, 02 Apr 2021 18:17:06 GMT
+# Wed, 14 Apr 2021 20:14:42 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Fri, 02 Apr 2021 18:17:07 GMT
+# Wed, 14 Apr 2021 20:14:43 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Fri, 02 Apr 2021 18:17:08 GMT
+# Wed, 14 Apr 2021 20:14:44 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Fri, 02 Apr 2021 18:17:09 GMT
+# Wed, 14 Apr 2021 20:14:45 GMT
 EXPOSE 80
-# Fri, 02 Apr 2021 18:17:10 GMT
+# Wed, 14 Apr 2021 20:14:46 GMT
 EXPOSE 443
-# Fri, 02 Apr 2021 18:17:11 GMT
+# Wed, 14 Apr 2021 20:14:47 GMT
 EXPOSE 2019
-# Fri, 02 Apr 2021 18:17:29 GMT
+# Wed, 14 Apr 2021 20:15:12 GMT
 RUN caddy version
-# Fri, 02 Apr 2021 18:17:30 GMT
+# Wed, 14 Apr 2021 20:15:13 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -10699,164 +10699,164 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 	-	`sha256:4612f6d0b889cad0ed0292fae3a0b0c8a9e49aff6dea8eb049b2386d9b07986f`  
 		Size: 1.7 GB (1718332879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ff1512f88ecd4ff0a91ade34d43733c48834433e35f062f80e6e70d706f8d73`  
-		Size: 743.2 MB (743201590 bytes)  
+	-	`sha256:399f118dfaa9a753e98d128238b944432c7bcabea88a2998a6efbbece28ed303`  
+		Size: 751.4 MB (751421005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ebe61daec6d671bc2c1c6fe61ac9825fb552e9cef3672d0a7dbec719d125ae64`  
-		Last Modified: Wed, 10 Mar 2021 13:21:09 GMT  
-		Size: 1.4 KB (1430 bytes)  
+	-	`sha256:106dbf3373fce4f0ba5e00ad54824c597f2894605fa7d8ef446ad7ea3b97449f`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95e2248c328b7b25c2cbbab7676a8e86d131ea6ad52f5f7bd35647a14893a0a2`  
-		Last Modified: Fri, 02 Apr 2021 18:25:36 GMT  
-		Size: 9.5 MB (9465706 bytes)  
+	-	`sha256:1de472ba1df2f836f9b4125180bedb0ca0f6c425460dd8535a92764dff8169f8`  
+		Last Modified: Wed, 14 Apr 2021 20:25:56 GMT  
+		Size: 5.1 MB (5080859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c94271d4a9ce601138f36c7f2d749d748b9ced3d0f52764ca356d32860edb5c5`  
-		Last Modified: Fri, 02 Apr 2021 18:25:33 GMT  
+	-	`sha256:55627e36839779d3cfb370ec41774f50d7db4ff914a3077c70b75f96287e5af0`  
+		Last Modified: Wed, 14 Apr 2021 20:25:52 GMT  
+		Size: 1.4 KB (1350 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:78f2e16d47aeed21efafcfe34553edd6166984a4ae765a5420a50d46f1d204b6`  
+		Last Modified: Wed, 14 Apr 2021 20:25:56 GMT  
+		Size: 11.9 MB (11867562 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4d62c501d3d5d88099b96f7b95b3f58cdc7baea8006662464c5677f3d8abbad2`  
+		Last Modified: Wed, 14 Apr 2021 20:25:52 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cee81a85c97e2bebd04246c72c2e9093a2fc92d5b3a1c61092a47ca2dbca3195`  
+		Last Modified: Wed, 14 Apr 2021 20:25:51 GMT  
+		Size: 1.3 KB (1328 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2c473eb70ede949ae95779d72ada5e737f68bee537a5892368b21c219b7ae8f2`  
+		Last Modified: Wed, 14 Apr 2021 20:25:51 GMT  
+		Size: 1.4 KB (1374 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:962e4b4d5583a800a5fa99d1c9f8344405685fc162718cfab1c851df0b149bf4`  
+		Last Modified: Wed, 14 Apr 2021 20:25:50 GMT  
+		Size: 1.4 KB (1406 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4277207668aa329a0fcf285a3e8044549f14fcdc258b54941786b2dbac2b738f`  
+		Last Modified: Wed, 14 Apr 2021 20:25:49 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8932075115714c24da0e0b15ca784e45621efdac23f763feac93a8d63e51dc18`  
+		Last Modified: Wed, 14 Apr 2021 20:25:49 GMT  
+		Size: 1.3 KB (1304 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b3ec24942a02e14cc4f3627742e1a9ba37a831854d99e25e35ab78c7603f4cbd`  
+		Last Modified: Wed, 14 Apr 2021 20:25:49 GMT  
+		Size: 1.3 KB (1339 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e554d5e240ec502a081852a31141622d738e021388206ba4f43cb159c7c7d7a5`  
+		Last Modified: Wed, 14 Apr 2021 20:25:48 GMT  
 		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ca5665516d898633290e493cef794521852475d69230732409986f3ad81705`  
-		Last Modified: Fri, 02 Apr 2021 18:25:38 GMT  
-		Size: 16.3 MB (16274695 bytes)  
+	-	`sha256:73e6d8e32fb60c802dc23aa51a0c38e0588aebbf5461bd4d3b66de34e80d2eb6`  
+		Last Modified: Wed, 14 Apr 2021 20:25:47 GMT  
+		Size: 1.4 KB (1383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0de70870a5fa3de27854447c44c6ba786981cc938c0f362048da4170553463a`  
-		Last Modified: Fri, 02 Apr 2021 18:25:32 GMT  
-		Size: 1.4 KB (1399 bytes)  
+	-	`sha256:a339de9553d5fd226cedff68f9c92d817957f2f7809f9d64da67f12fb23bed32`  
+		Last Modified: Wed, 14 Apr 2021 20:25:46 GMT  
+		Size: 1.3 KB (1311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a3568445127d07f06bf99e10ae664cca603cc31e68c728060dcac8f7e608881`  
-		Last Modified: Fri, 02 Apr 2021 18:25:32 GMT  
-		Size: 1.4 KB (1443 bytes)  
+	-	`sha256:51272577d8785b827aa7bb896767009a940ee9343189459c6e3c675e566f9f0d`  
+		Last Modified: Wed, 14 Apr 2021 20:25:46 GMT  
+		Size: 1.3 KB (1332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da65ebebad5059d100ae2af112ca25285129bee6131023aa4c8ce7f0f830793a`  
-		Last Modified: Fri, 02 Apr 2021 18:25:30 GMT  
-		Size: 1.4 KB (1427 bytes)  
+	-	`sha256:bde8de3cc19d01e8b1d8624b50438d1fa257a16237f41b1d73cff4fa65768a4d`  
+		Last Modified: Wed, 14 Apr 2021 20:25:46 GMT  
+		Size: 1.3 KB (1329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a48067c5e57f31ce03ffc3422870602c673527153e446f55fe44dc813bebf9b4`  
-		Last Modified: Fri, 02 Apr 2021 18:25:30 GMT  
-		Size: 1.4 KB (1430 bytes)  
+	-	`sha256:455f5cdc11de43d196e81d074362a41abcaed1366315581b689ba2a88d3f4857`  
+		Last Modified: Wed, 14 Apr 2021 20:25:44 GMT  
+		Size: 1.3 KB (1303 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7f2e781673fc6a350cf8b08667e71ffdf90d42f5b0a6a1d9da8e29771f1ffc6`  
-		Last Modified: Fri, 02 Apr 2021 18:25:29 GMT  
-		Size: 1.4 KB (1426 bytes)  
+	-	`sha256:86d7b5d207b9968f7f40e32437e99ef85d2dde4afba849a8825896ee82ed5f50`  
+		Last Modified: Wed, 14 Apr 2021 20:25:43 GMT  
+		Size: 1.3 KB (1332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8493be2eceb4e6ea31b450a179859bfd185e92ffd3bbf301fcbd9cb409bcb911`  
-		Last Modified: Fri, 02 Apr 2021 18:25:30 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:8c9dc90818d729c2fd0cb0bac96912bd2969512c4a029b3a3b21b3764b004500`  
+		Last Modified: Wed, 14 Apr 2021 20:25:44 GMT  
+		Size: 1.3 KB (1326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c7a94659f6ba05b7478802b8b57b48e51bbc397ddd845b315891c3e32c1be32`  
-		Last Modified: Fri, 02 Apr 2021 18:25:29 GMT  
-		Size: 1.4 KB (1397 bytes)  
+	-	`sha256:d304d34d98bbc8fed2a3f472757c6377c204ec57a87fd6a3823cf4236f26e877`  
+		Last Modified: Wed, 14 Apr 2021 20:25:46 GMT  
+		Size: 308.5 KB (308506 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0db2eb1ebe3b7e3abc59d777a66b0b0b8f51cb3378cc265655f1bfcd7e79312`  
-		Last Modified: Fri, 02 Apr 2021 18:25:27 GMT  
-		Size: 1.4 KB (1426 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d6c27364edfca6e69e47b72493bac0aa0242ed5630222b468f2511911e9db14`  
-		Last Modified: Fri, 02 Apr 2021 18:25:27 GMT  
-		Size: 1.4 KB (1426 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88ed9f38d63bbcecb70291bbc12286363d05cd6e3fb4be3863ea7332dfd32df8`  
-		Last Modified: Fri, 02 Apr 2021 18:25:27 GMT  
-		Size: 1.4 KB (1393 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b92c3fb781472d906952c139a15a924de551954360d972757c2b7fa70127fc7`  
-		Last Modified: Fri, 02 Apr 2021 18:25:27 GMT  
-		Size: 1.4 KB (1430 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccc395ee40c1f92ebe4a8630100e8e3a0323cd404b6e2b4a13b8cd01e17514c1`  
-		Last Modified: Fri, 02 Apr 2021 18:25:27 GMT  
-		Size: 1.4 KB (1409 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7daab2d67688cedff5bdcbd07535b3be37f2493b23cd92a902e0f241d46be09f`  
-		Last Modified: Fri, 02 Apr 2021 18:25:24 GMT  
-		Size: 1.4 KB (1411 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cebc8f200f7b9a010feb0546619b1dee830f1b1ec0dc747ad7158ecb0088482c`  
-		Last Modified: Fri, 02 Apr 2021 18:25:24 GMT  
-		Size: 1.4 KB (1393 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2cd8989a8ea6c4f623b19785b82af238aee316ee6b72e732262a87011c74d62`  
-		Last Modified: Fri, 02 Apr 2021 18:25:24 GMT  
-		Size: 1.4 KB (1437 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74d6b1aa36e5bfef2dfa42970c937fc34573ad9f72508693cda371163b8da379`  
-		Last Modified: Fri, 02 Apr 2021 18:25:25 GMT  
-		Size: 302.3 KB (302255 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34ec29f6e55d821e399842d426dab17fde9d0ddebeb312cbb9e2a7c07cbdf0b3`  
-		Last Modified: Fri, 02 Apr 2021 18:25:25 GMT  
-		Size: 1.4 KB (1430 bytes)  
+	-	`sha256:701310ad80f85832364aa3313c02e66c8a9e60cd165a937c96075db0496b486c`  
+		Last Modified: Wed, 14 Apr 2021 20:25:43 GMT  
+		Size: 1.4 KB (1403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:2.4.0-beta.2-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull caddy@sha256:f57f6f7a4a29f7e389643b3741a63fdaf1bc7956b10bf4227af552477f5f64cf
+$ docker pull caddy@sha256:1fb2c0b974c7bfb254e570702f7d13dcfa8c39e44a21311cb6b7a831ac6a0638
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.4283; amd64
+	-	windows version 10.0.14393.4350; amd64
 
-### `caddy:2.4.0-beta.2-windowsservercore-ltsc2016` - windows version 10.0.14393.4283; amd64
+### `caddy:2.4.0-beta.2-windowsservercore-ltsc2016` - windows version 10.0.14393.4350; amd64
 
 ```console
-$ docker pull caddy@sha256:484c688cb48fa269829e7f6b85bc623bc1b5061043c0e673cc323ccb7c465abc
+$ docker pull caddy@sha256:fa30c18bcdf91806b54ea7ed3a348627df09108ceebc6d0d5550fb0ad3455cde
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 GB (5829094060 bytes)**  
+-	Total Size: **5.8 GB (5817979261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86b0dff6059a7f821d34de02f7303fd43d1f41212c68037dd2876ebd5663e534`
+-	Image ID: `sha256:421de0d93291fba46ed24305b5fe5fe3f674bd381400d00c5bf45a608e170018`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sat, 19 Nov 2016 17:05:00 GMT
 RUN Apply image 1607-RTM-amd64
-# Wed, 03 Mar 2021 18:02:00 GMT
+# Wed, 07 Apr 2021 21:54:00 GMT
 RUN Install update ltsc2016-amd64
-# Wed, 10 Mar 2021 13:42:05 GMT
+# Wed, 14 Apr 2021 12:35:33 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 02 Apr 2021 18:19:03 GMT
+# Wed, 14 Apr 2021 20:16:50 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/e784a6dd41d1cd4f72de2a427961bfb097b72cf9/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Fri, 02 Apr 2021 18:19:04 GMT
+# Wed, 14 Apr 2021 20:16:51 GMT
 ENV CADDY_VERSION=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:20:44 GMT
+# Wed, 14 Apr 2021 20:18:39 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.4.0-beta.2/caddy_2.4.0-beta.2_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('9f41c88fc8c2c28230c5eb67fb7d9ef23477a351fb716a44486b3d1a37569fb141112cd3582adcd44424b2819c22723fb49023a6d371e1bf8d92eefe4e7e9ed4')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Fri, 02 Apr 2021 18:20:45 GMT
+# Wed, 14 Apr 2021 20:18:40 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Fri, 02 Apr 2021 18:20:47 GMT
+# Wed, 14 Apr 2021 20:18:41 GMT
 ENV XDG_DATA_HOME=c:/data
-# Fri, 02 Apr 2021 18:20:48 GMT
+# Wed, 14 Apr 2021 20:18:42 GMT
 VOLUME [c:/config]
-# Fri, 02 Apr 2021 18:20:49 GMT
+# Wed, 14 Apr 2021 20:18:43 GMT
 VOLUME [c:/data]
-# Fri, 02 Apr 2021 18:20:50 GMT
+# Wed, 14 Apr 2021 20:18:45 GMT
 LABEL org.opencontainers.image.version=v2.4.0-beta.2
-# Fri, 02 Apr 2021 18:20:52 GMT
+# Wed, 14 Apr 2021 20:18:46 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Fri, 02 Apr 2021 18:20:53 GMT
+# Wed, 14 Apr 2021 20:18:47 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Fri, 02 Apr 2021 18:20:54 GMT
+# Wed, 14 Apr 2021 20:18:48 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Fri, 02 Apr 2021 18:20:55 GMT
+# Wed, 14 Apr 2021 20:18:49 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Fri, 02 Apr 2021 18:20:57 GMT
+# Wed, 14 Apr 2021 20:18:50 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Fri, 02 Apr 2021 18:20:58 GMT
+# Wed, 14 Apr 2021 20:18:51 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Fri, 02 Apr 2021 18:20:59 GMT
+# Wed, 14 Apr 2021 20:18:52 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Fri, 02 Apr 2021 18:21:00 GMT
+# Wed, 14 Apr 2021 20:18:53 GMT
 EXPOSE 80
-# Fri, 02 Apr 2021 18:21:01 GMT
+# Wed, 14 Apr 2021 20:18:54 GMT
 EXPOSE 443
-# Fri, 02 Apr 2021 18:21:02 GMT
+# Wed, 14 Apr 2021 20:18:55 GMT
 EXPOSE 2019
-# Fri, 02 Apr 2021 18:21:57 GMT
+# Wed, 14 Apr 2021 20:20:11 GMT
 RUN caddy version
-# Fri, 02 Apr 2021 18:21:58 GMT
+# Wed, 14 Apr 2021 20:20:12 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -10865,98 +10865,98 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Last Modified: Tue, 18 Sep 2018 20:20:50 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:30bda99601c5cbd3b2118409f401852ea648e2319bd81518723e476b28d764c5`  
-		Size: 1.7 GB (1726924885 bytes)  
+	-	`sha256:00b4edb823e6a375d179a28cbfa682c2379d62179e1518485902d6e68b9a9d1e`  
+		Size: 1.7 GB (1724897968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:76680da9dc6db108ddf2e353c494b45e8486a6751619a13ed8fb3ad64b9a16e9`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bb52885e05952959b0fa7aaff23561fcf14d294aed336112b388c94e67709e4f`  
+		Last Modified: Wed, 14 Apr 2021 12:59:14 GMT  
+		Size: 1.4 KB (1406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3839f3b2a37673d4006f18951ce8d65dac9f9e7a60c481cf4fa86898372bcc72`  
-		Last Modified: Fri, 02 Apr 2021 18:25:59 GMT  
-		Size: 10.2 MB (10196223 bytes)  
+	-	`sha256:b068c1eb113cc4e93590b9ea7cd57796316b3b21ba390abfe889d79e702cec3c`  
+		Last Modified: Wed, 14 Apr 2021 20:26:14 GMT  
+		Size: 5.7 MB (5660433 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b35d02bac712107cd6e45e8ecf4c379e9fe8ba144b8b1af73c9fbaeeb9b5ea21`  
-		Last Modified: Fri, 02 Apr 2021 18:25:54 GMT  
-		Size: 1.4 KB (1424 bytes)  
+	-	`sha256:3d97864bd63ccf6806c9e9849c61e19f7a4b476e59b63ac9d243241fdd271e3d`  
+		Last Modified: Wed, 14 Apr 2021 20:26:12 GMT  
+		Size: 1.4 KB (1440 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66f861c5228e163fdd027d65ffdb9bf65e90a1940df415ad2c0ce25ab35cd093`  
-		Last Modified: Fri, 02 Apr 2021 18:26:01 GMT  
-		Size: 21.7 MB (21693316 bytes)  
+	-	`sha256:2ab97c72d1ce9fea13fa1e516f83d28adc8a155bfa23822ce7752d2da4f74c5b`  
+		Last Modified: Wed, 14 Apr 2021 20:26:17 GMT  
+		Size: 17.2 MB (17151549 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:70f4820276b1680a1ec83d16ac48637c3bb3a276c31baaaf17dd757edd9f4188`  
-		Last Modified: Fri, 02 Apr 2021 18:25:54 GMT  
-		Size: 1.4 KB (1408 bytes)  
+	-	`sha256:e8acb6e1c103fe19721c692609bc6eb55acdd0326bb9d027768a6ba92e7e0202`  
+		Last Modified: Wed, 14 Apr 2021 20:26:11 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1d3d58a6632e499c498ca0addf11c2b22067f5427a93e69885d6b38e1b10596`  
-		Last Modified: Fri, 02 Apr 2021 18:25:54 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:d3cdd68811b5c180d1153a0f2b6d8edceb94aad8069b64040d2d8db829dd448e`  
+		Last Modified: Wed, 14 Apr 2021 20:26:11 GMT  
+		Size: 1.4 KB (1405 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f28b4d2afe9acc4864ab15a603e8672fb2482c1dd648c57e32456bf7765c3c63`  
-		Last Modified: Fri, 02 Apr 2021 18:25:53 GMT  
-		Size: 1.4 KB (1407 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6489ff70b21ce91518922c0d1bfd94e89f92403b67f5a24a1825fd37f28f5aaf`  
-		Last Modified: Fri, 02 Apr 2021 18:25:52 GMT  
-		Size: 1.4 KB (1435 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86c0ad8640bb2534d11d722e0777eca31ac10db266abae4cbeefcdfc9f1936a8`  
-		Last Modified: Fri, 02 Apr 2021 18:25:51 GMT  
-		Size: 1.4 KB (1442 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7885acef6da7eb82e08e66cab23b2890f3f3dafef9ec189e81f8045c1954afc`  
-		Last Modified: Fri, 02 Apr 2021 18:25:51 GMT  
-		Size: 1.4 KB (1427 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c1f28035d278c150033dbc5d05f6fa9dd3ece81bba6b2a85b3453414398f8aa`  
-		Last Modified: Fri, 02 Apr 2021 18:25:51 GMT  
-		Size: 1.4 KB (1391 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d19f2df18981d5ee49e3c45183b1d251f5c4ab848c5f6dc0c0816224f900d287`  
-		Last Modified: Fri, 02 Apr 2021 18:25:50 GMT  
-		Size: 1.4 KB (1436 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:786ed8d22ae84118b965493f2dc3e79c27bb76f8e34470a569d40d5b9197d008`  
-		Last Modified: Fri, 02 Apr 2021 18:25:49 GMT  
+	-	`sha256:6ab6a4bef16e77771e00038b7a77d618e3fc0da8ef554e67d5a8c4e0400f1809`  
+		Last Modified: Wed, 14 Apr 2021 20:26:09 GMT  
 		Size: 1.4 KB (1399 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:203b1cde58cdb206802bae3748fc1791648ec167a9addfc05d71af8ef80a7263`  
-		Last Modified: Fri, 02 Apr 2021 18:25:49 GMT  
-		Size: 1.4 KB (1393 bytes)  
+	-	`sha256:558d80b23de2d6fb99e705591d268689266afd67afef1012302baf76d43c6a0c`  
+		Last Modified: Wed, 14 Apr 2021 20:26:09 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17a08c62e43e038c439e7b271c524bc1b032913ef0a7838c7a28574564267f4d`  
-		Last Modified: Fri, 02 Apr 2021 18:25:48 GMT  
-		Size: 1.4 KB (1370 bytes)  
+	-	`sha256:6382ddb421f9b6ed0c2a785186cf291be684523ec1ddc96d4cfe2963b4f37b79`  
+		Last Modified: Wed, 14 Apr 2021 20:26:09 GMT  
+		Size: 1.4 KB (1425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:629328a7926be76a0105b548d269200ac4213b329ac924c6dc34399747a0a6e4`  
-		Last Modified: Fri, 02 Apr 2021 18:25:48 GMT  
-		Size: 1.4 KB (1413 bytes)  
+	-	`sha256:991b64532293d0a7f622cce85a5709f33577f5803fda5d8838a8cc850532054c`  
+		Last Modified: Wed, 14 Apr 2021 20:26:08 GMT  
+		Size: 1.4 KB (1351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:33b6aec700c2791f546afb2dc6d5045b6ea036c6117b574d5ed06454a2eb5e42`  
-		Last Modified: Fri, 02 Apr 2021 18:25:47 GMT  
-		Size: 1.4 KB (1393 bytes)  
+	-	`sha256:10bf3364ee0158cad4826de8a57245fcb5a54a4f33f0d07fa1867d70b482812d`  
+		Last Modified: Wed, 14 Apr 2021 20:26:09 GMT  
+		Size: 1.4 KB (1440 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ded6ed75772c3a5c3485bda081d2914ed7b8b0850d62e3d9b9dcfcb86b97961`  
-		Last Modified: Fri, 02 Apr 2021 18:25:46 GMT  
+	-	`sha256:4572b72928444624d70624bd4188a957e1cbcdc364bacd3026fc6e46d2154e72`  
+		Last Modified: Wed, 14 Apr 2021 20:26:06 GMT  
+		Size: 1.4 KB (1422 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2fae1b86448ffecd80365e375393080c5484925ed877f02fcc8f9bd3389c725c`  
+		Last Modified: Wed, 14 Apr 2021 20:26:06 GMT  
+		Size: 1.4 KB (1432 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5ae7cbf677188f13aae6856b110af11696cac21e78313f3d225815d7fb16b55b`  
+		Last Modified: Wed, 14 Apr 2021 20:26:06 GMT  
+		Size: 1.4 KB (1406 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e925b48c88da00efc465f3291af0f81734fa9088838bf99e2b21c9763c76aa80`  
+		Last Modified: Wed, 14 Apr 2021 20:26:06 GMT  
+		Size: 1.4 KB (1388 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:325a0551f6981da1e92d3974f95db9dbc5553b1acd629302ab8f2ed5aaf64a41`  
+		Last Modified: Wed, 14 Apr 2021 20:26:06 GMT  
+		Size: 1.4 KB (1434 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:33fbbe5b0ac1c5adbe504a0bded280a2ebc8133939e17035cdf61e5f811a9d79`  
+		Last Modified: Wed, 14 Apr 2021 20:26:03 GMT  
+		Size: 1.4 KB (1434 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4c7999335cd30f75fd39b8d9ebfaac1dfad63e643813eeabfd572210dc15f442`  
+		Last Modified: Wed, 14 Apr 2021 20:26:03 GMT  
 		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d55d3e22aa51f274d765555ceb7acfe4c95dfdf06ed747cb78ff3955ec37b43a`  
-		Last Modified: Fri, 02 Apr 2021 18:25:46 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:11f9edc21a0f3503cc8695bfb1f0f2bf825fe586c31c14112ebaffc2cccb32be`  
+		Last Modified: Wed, 14 Apr 2021 20:26:04 GMT  
+		Size: 1.4 KB (1392 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f1282f41e60a0e981888559572f13a307d872bb4fb6d636ea2af4a71aa953d4`  
-		Last Modified: Fri, 02 Apr 2021 18:25:46 GMT  
-		Size: 268.3 KB (268326 bytes)  
+	-	`sha256:654c270965f7a90556b3aa0fa48d1fea0ff65f6918708e24ebd83c36be1e0ae9`  
+		Last Modified: Wed, 14 Apr 2021 20:26:04 GMT  
+		Size: 258.0 KB (257960 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f86a7b2d83b6c9a47753c8f82981aefe854fefc34fa7f1ee836fd656fc47f38d`  
-		Last Modified: Fri, 02 Apr 2021 18:25:46 GMT  
-		Size: 1.4 KB (1434 bytes)  
+	-	`sha256:893d5403793a417c0e1beac002e47a4e1d311d6aca319395cd9422949b7d393c`  
+		Last Modified: Wed, 14 Apr 2021 20:26:03 GMT  
+		Size: 1.4 KB (1397 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:alpine`
 
 ```console
-$ docker pull caddy@sha256:ff7266e7f0a93ad9b10c28b3625331d1162124c07a0a46b06958b01972ab33e8
+$ docker pull caddy@sha256:fa1ae85dc9b12ee47e98d7ef21db409eada3ed48f1865e4b1f1dd78f417132fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10971,259 +10971,259 @@ $ docker pull caddy@sha256:ff7266e7f0a93ad9b10c28b3625331d1162124c07a0a46b06958b
 ### `caddy:alpine` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:629c5800ccf51df482a4e63266e4570de3e573e862d902398b03cbfca2212b4d
+$ docker pull caddy@sha256:6fbf52298c46c55c572670b5395ecaee5d399338003c9bb4e4abed875c542f4f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.7 MB (14728095 bytes)**  
+-	Total Size: **14.7 MB (14728953 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e073d63a624f18bd8e2f94b9e84715e5a33a817db19afa42afc8ea95e59d568`
+-	Image ID: `sha256:7395cc3713b2ca5574a9b4aafc468a1533d16582efe47dcab74ed547540d698a`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 20:10:13 GMT
-ADD file:f77db8e5b937d8ebb7e254eccd4d311798ea9f4dd5081ea2a7e2b1d3790300c2 in / 
-# Wed, 31 Mar 2021 20:10:13 GMT
+# Wed, 14 Apr 2021 19:19:49 GMT
+ADD file:4f526aa99067d82b341f7ca538f7826b7c23a628f1b615eea2883a2d434c1b90 in / 
+# Wed, 14 Apr 2021 19:19:49 GMT
 CMD ["/bin/sh"]
-# Thu, 01 Apr 2021 13:53:15 GMT
+# Wed, 14 Apr 2021 20:10:47 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Thu, 01 Apr 2021 13:53:17 GMT
+# Wed, 14 Apr 2021 20:10:49 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Thu, 01 Apr 2021 13:53:17 GMT
+# Wed, 14 Apr 2021 20:10:49 GMT
 ENV CADDY_VERSION=v2.3.0
-# Thu, 01 Apr 2021 13:53:20 GMT
+# Wed, 14 Apr 2021 20:10:52 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 ENV XDG_CONFIG_HOME=/config
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 ENV XDG_DATA_HOME=/data
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 VOLUME [/config]
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 VOLUME [/data]
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 EXPOSE 80
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 EXPOSE 443
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 EXPOSE 2019
-# Thu, 01 Apr 2021 13:53:24 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 WORKDIR /srv
-# Thu, 01 Apr 2021 13:53:24 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:532819f3e44cebad88c82f5393801acb876b7a61d36b84bce646561789bb2018`  
-		Last Modified: Wed, 31 Mar 2021 20:11:03 GMT  
-		Size: 2.8 MB (2799712 bytes)  
+	-	`sha256:339de151aab4bc06eed8409daae147c408478cb538dacb90cc63f19ad4eba80b`  
+		Last Modified: Wed, 14 Apr 2021 19:20:51 GMT  
+		Size: 2.8 MB (2800567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccc82ca1670c70e5b605729b271409acba02ca26c3f669bf1d95a067fb853a90`  
-		Last Modified: Thu, 01 Apr 2021 13:54:20 GMT  
-		Size: 300.0 KB (300021 bytes)  
+	-	`sha256:8b7a0cd9cca5be9b30bbc70611052d1456502e1f338ce4b14946233b21cd6a9a`  
+		Last Modified: Wed, 14 Apr 2021 20:11:46 GMT  
+		Size: 300.0 KB (300016 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21d66f69260e9358ba74c27e0ed110b9ff7781c5f90d5d01f86d6ef289834382`  
-		Last Modified: Thu, 01 Apr 2021 13:54:17 GMT  
-		Size: 5.8 KB (5829 bytes)  
+	-	`sha256:b5666523658a43fbbdff6b8fca498a988f4dcecc3ce027f1701414658c21d4ea`  
+		Last Modified: Wed, 14 Apr 2021 20:11:46 GMT  
+		Size: 5.8 KB (5832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9b38557b1fd80a7712b7263f0896f076afdeb9f25f68a79e288b87490aa3047`  
-		Last Modified: Thu, 01 Apr 2021 13:54:19 GMT  
-		Size: 11.6 MB (11622380 bytes)  
+	-	`sha256:b097228407f13a161f68b188b0a4f255855b64d84e7b076745a744d5aa7ed8cf`  
+		Last Modified: Wed, 14 Apr 2021 20:11:49 GMT  
+		Size: 11.6 MB (11622383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd37d6fba45d5f1633f00b6a9d204abacad2a6918dc355706fe0decc0bc4e565`  
-		Last Modified: Thu, 01 Apr 2021 13:54:18 GMT  
-		Size: 153.0 B  
+	-	`sha256:40682d93cc09b4592a1b9c08d48d0a956b5eef4f123d80d1a12942482edb6aab`  
+		Last Modified: Wed, 14 Apr 2021 20:11:46 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:alpine` - linux; arm variant v6
 
 ```console
-$ docker pull caddy@sha256:b57cdc61b54865a7ff2ea4ef9d16458537d40e0dc25559d6540111874abbe4ce
+$ docker pull caddy@sha256:0df9df9725cab39fe073887c98b54bf7bf1c96b3ed0e23916737c7c4877576c6
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.9 MB (13855580 bytes)**  
+-	Total Size: **13.9 MB (13856181 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88293e19906b6b2275ff6e127e29960b1fdf0cf0c4baa4bbce4ea297e90db731`
+-	Image ID: `sha256:fce1c33ce4509195edc1c67d2dcd15c6c5fc0b35cec2e90714ec3007739600eb`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 17:19:11 GMT
-ADD file:00ac3d0df16779e7564cda9cbf94eef90ffa8043778a867272ff0135a1fb537f in / 
-# Wed, 31 Mar 2021 17:19:12 GMT
+# Wed, 14 Apr 2021 18:49:49 GMT
+ADD file:82fa6a18d24e3f535c9061d2e111d63fe6d8a27710bb34a17b326e605ff478be in / 
+# Wed, 14 Apr 2021 18:49:50 GMT
 CMD ["/bin/sh"]
-# Wed, 31 Mar 2021 17:36:32 GMT
+# Wed, 14 Apr 2021 19:45:19 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Wed, 31 Mar 2021 17:36:36 GMT
+# Wed, 14 Apr 2021 19:45:33 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Wed, 31 Mar 2021 17:36:38 GMT
+# Wed, 14 Apr 2021 19:45:36 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 31 Mar 2021 17:36:45 GMT
+# Wed, 14 Apr 2021 19:45:54 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Wed, 31 Mar 2021 17:36:51 GMT
+# Wed, 14 Apr 2021 19:46:03 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Wed, 31 Mar 2021 17:36:52 GMT
+# Wed, 14 Apr 2021 19:46:04 GMT
 ENV XDG_CONFIG_HOME=/config
-# Wed, 31 Mar 2021 17:36:53 GMT
+# Wed, 14 Apr 2021 19:46:05 GMT
 ENV XDG_DATA_HOME=/data
-# Wed, 31 Mar 2021 17:36:55 GMT
+# Wed, 14 Apr 2021 19:46:07 GMT
 VOLUME [/config]
-# Wed, 31 Mar 2021 17:36:55 GMT
+# Wed, 14 Apr 2021 19:46:08 GMT
 VOLUME [/data]
-# Wed, 31 Mar 2021 17:36:56 GMT
+# Wed, 14 Apr 2021 19:46:10 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 31 Mar 2021 17:36:58 GMT
+# Wed, 14 Apr 2021 19:46:11 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 31 Mar 2021 17:36:59 GMT
+# Wed, 14 Apr 2021 19:46:13 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 31 Mar 2021 17:37:00 GMT
+# Wed, 14 Apr 2021 19:46:16 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 31 Mar 2021 17:37:01 GMT
+# Wed, 14 Apr 2021 19:46:16 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 31 Mar 2021 17:37:03 GMT
+# Wed, 14 Apr 2021 19:46:18 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 31 Mar 2021 17:37:04 GMT
+# Wed, 14 Apr 2021 19:46:19 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 31 Mar 2021 17:37:05 GMT
+# Wed, 14 Apr 2021 19:46:20 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 31 Mar 2021 17:37:07 GMT
+# Wed, 14 Apr 2021 19:46:21 GMT
 EXPOSE 80
-# Wed, 31 Mar 2021 17:37:08 GMT
+# Wed, 14 Apr 2021 19:46:21 GMT
 EXPOSE 443
-# Wed, 31 Mar 2021 17:37:10 GMT
+# Wed, 14 Apr 2021 19:46:22 GMT
 EXPOSE 2019
-# Wed, 31 Mar 2021 17:37:11 GMT
+# Wed, 14 Apr 2021 19:46:23 GMT
 WORKDIR /srv
-# Wed, 31 Mar 2021 17:37:13 GMT
+# Wed, 14 Apr 2021 19:46:24 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:66e54586dae0889b30da12f7a66838d9b86511b58696c83c3b9166ff1a534bbe`  
-		Last Modified: Wed, 31 Mar 2021 17:20:05 GMT  
-		Size: 2.6 MB (2604658 bytes)  
+	-	`sha256:b452d2916bdfd021add56f1eda6bdea35400671ef07b38316ef82fce92a88fee`  
+		Last Modified: Wed, 14 Apr 2021 18:50:38 GMT  
+		Size: 2.6 MB (2605253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1532456df32c320ccd3c9ff5433c9e44d873ef87a0dc9fc29f9cf256b517eb4`  
-		Last Modified: Wed, 31 Mar 2021 17:38:50 GMT  
-		Size: 300.1 KB (300103 bytes)  
+	-	`sha256:6b83e8a6ea044be2a9e3c87c5fdc047ce9a52d1a64e48f8330d9a19002ecffe1`  
+		Last Modified: Wed, 14 Apr 2021 19:47:50 GMT  
+		Size: 300.1 KB (300117 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7263f61714ef61a0c59bef8e70bc49a741a357b0a0fc556b44f8344df37ea0f8`  
-		Last Modified: Wed, 31 Mar 2021 17:38:52 GMT  
-		Size: 5.8 KB (5830 bytes)  
+	-	`sha256:b9949bdfbb1d296dd158f8c2bb959f96c8da162a0d579f68fa3f5a4af58bed5b`  
+		Last Modified: Wed, 14 Apr 2021 19:47:50 GMT  
+		Size: 5.8 KB (5826 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:818002dab28746359de43d5a88d06c77cc3a353c838e15c6b6a67d48352cc5c0`  
-		Last Modified: Wed, 31 Mar 2021 17:38:54 GMT  
-		Size: 10.9 MB (10944835 bytes)  
+	-	`sha256:c2c5cc316af29a89f9a1d4e279b5d1bb964095a15795647d013f40921bc808c3`  
+		Last Modified: Wed, 14 Apr 2021 19:47:54 GMT  
+		Size: 10.9 MB (10944831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7979a3c808bf5c07c668f5966a15458dbfe9aba5aa7d761e690dd3a5cadf45eb`  
-		Last Modified: Wed, 31 Mar 2021 17:38:52 GMT  
+	-	`sha256:2f6670cc680ce5e5d9a0adfc380fe4a89ac2a2dcef5a7adeb874967a356e6742`  
+		Last Modified: Wed, 14 Apr 2021 19:47:50 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:alpine` - linux; arm variant v7
 
 ```console
-$ docker pull caddy@sha256:6d510324512c20fc0d40aeb8b6e5b98255c857ad2dee894b6cb6e66f0231cf9b
+$ docker pull caddy@sha256:1a41623f53d582c8b503ae859f6ae98c7c0695eddb11bdbf8514b9b914955c3d
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.6 MB (13638799 bytes)**  
+-	Total Size: **13.6 MB (13639723 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42db38da968682707e6cf0fabb16f93770388907d8a208fca0db74cae3183ba2`
+-	Image ID: `sha256:9a4b837694902a1a259a4915444feda59d895ed37ffbef66b8518b9a884f029c`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 18:13:45 GMT
-ADD file:1270a9135e4e3d6bcd51f9c8bb7a5129c493366412591f1a6885db98056a572e in / 
-# Wed, 31 Mar 2021 18:13:47 GMT
+# Wed, 14 Apr 2021 18:57:50 GMT
+ADD file:d844cc7b5e00fb62be39d903a2fb4a08f700e75112c8eef1f31101e846ed010d in / 
+# Wed, 14 Apr 2021 18:57:52 GMT
 CMD ["/bin/sh"]
-# Thu, 01 Apr 2021 08:11:44 GMT
+# Wed, 14 Apr 2021 19:39:25 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Thu, 01 Apr 2021 08:11:47 GMT
+# Wed, 14 Apr 2021 19:39:32 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Thu, 01 Apr 2021 08:11:48 GMT
+# Wed, 14 Apr 2021 19:39:34 GMT
 ENV CADDY_VERSION=v2.3.0
-# Thu, 01 Apr 2021 08:11:52 GMT
+# Wed, 14 Apr 2021 19:39:38 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Thu, 01 Apr 2021 08:11:55 GMT
+# Wed, 14 Apr 2021 19:39:40 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Thu, 01 Apr 2021 08:11:56 GMT
+# Wed, 14 Apr 2021 19:39:41 GMT
 ENV XDG_CONFIG_HOME=/config
-# Thu, 01 Apr 2021 08:11:57 GMT
+# Wed, 14 Apr 2021 19:39:42 GMT
 ENV XDG_DATA_HOME=/data
-# Thu, 01 Apr 2021 08:11:58 GMT
+# Wed, 14 Apr 2021 19:39:43 GMT
 VOLUME [/config]
-# Thu, 01 Apr 2021 08:11:59 GMT
+# Wed, 14 Apr 2021 19:39:45 GMT
 VOLUME [/data]
-# Thu, 01 Apr 2021 08:12:00 GMT
+# Wed, 14 Apr 2021 19:39:46 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Thu, 01 Apr 2021 08:12:01 GMT
+# Wed, 14 Apr 2021 19:39:49 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Thu, 01 Apr 2021 08:12:02 GMT
+# Wed, 14 Apr 2021 19:39:51 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Thu, 01 Apr 2021 08:12:03 GMT
+# Wed, 14 Apr 2021 19:39:52 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Thu, 01 Apr 2021 08:12:05 GMT
+# Wed, 14 Apr 2021 19:39:53 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Thu, 01 Apr 2021 08:12:06 GMT
+# Wed, 14 Apr 2021 19:39:54 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Thu, 01 Apr 2021 08:12:07 GMT
+# Wed, 14 Apr 2021 19:39:55 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Thu, 01 Apr 2021 08:12:08 GMT
+# Wed, 14 Apr 2021 19:39:55 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Thu, 01 Apr 2021 08:12:09 GMT
+# Wed, 14 Apr 2021 19:39:56 GMT
 EXPOSE 80
-# Thu, 01 Apr 2021 08:12:11 GMT
+# Wed, 14 Apr 2021 19:39:57 GMT
 EXPOSE 443
-# Thu, 01 Apr 2021 08:12:13 GMT
+# Wed, 14 Apr 2021 19:39:58 GMT
 EXPOSE 2019
-# Thu, 01 Apr 2021 08:12:15 GMT
+# Wed, 14 Apr 2021 19:39:59 GMT
 WORKDIR /srv
-# Thu, 01 Apr 2021 08:12:16 GMT
+# Wed, 14 Apr 2021 19:40:00 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:b04429a2165487924dcbfedfff74fa262e6828327d04bb4b1c6a477096f5010e`  
-		Last Modified: Wed, 31 Mar 2021 18:15:12 GMT  
-		Size: 2.4 MB (2408269 bytes)  
+	-	`sha256:420c7481a3a76d5d12df768d2745ddbe40357df0af780c756a5a7d1f2a43d288`  
+		Last Modified: Wed, 14 Apr 2021 18:58:46 GMT  
+		Size: 2.4 MB (2409178 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:547b5d01ba24abc02b4f05f8134bfb156ce1840f496ed03a1316c882625bd41f`  
-		Last Modified: Thu, 01 Apr 2021 08:13:34 GMT  
-		Size: 299.2 KB (299199 bytes)  
+	-	`sha256:b239ad5e698454501b0de011bffea35a660806a0b85a6141776581e3a98bc467`  
+		Last Modified: Wed, 14 Apr 2021 19:41:24 GMT  
+		Size: 299.2 KB (299210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a883a914d37801ae97b0fac82c62e4f70ef4c92fc53417a91a23b2e69d36d9bb`  
-		Last Modified: Thu, 01 Apr 2021 08:13:34 GMT  
+	-	`sha256:8a0460b038be93717158ad9cdb6f83768b7129eaf4fcaef8620adc7509d0e5fe`  
+		Last Modified: Wed, 14 Apr 2021 19:41:23 GMT  
 		Size: 5.8 KB (5833 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:475143e7b89d1a36700916ec3c8f0caae9b57d5cd9ba187b9f3fd5d9a71eddcf`  
-		Last Modified: Thu, 01 Apr 2021 08:13:38 GMT  
-		Size: 10.9 MB (10925346 bytes)  
+	-	`sha256:0905d1ca8c4f74966ae8a7b5ebe8fdb33854c4a759d543d767dd9a0add81f155`  
+		Last Modified: Wed, 14 Apr 2021 19:41:29 GMT  
+		Size: 10.9 MB (10925348 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e79cdab22a3397c4a98f63a7e96c51881033744b1f198c4984072e7303e9f73`  
-		Last Modified: Thu, 01 Apr 2021 08:13:34 GMT  
-		Size: 152.0 B  
+	-	`sha256:2f02da274f552e184a7fa5527990e666d77c70e3715a0d96b7588e7433b3022a`  
+		Last Modified: Wed, 14 Apr 2021 19:41:23 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:alpine` - linux; arm64 variant v8
@@ -11315,179 +11315,179 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ### `caddy:alpine` - linux; ppc64le
 
 ```console
-$ docker pull caddy@sha256:bffc665d927b1ed51d5f36dafc191678472776dea35931198b09deebbe4d31fb
+$ docker pull caddy@sha256:f551e1db7910e2d5235d303760aff5b514fc6e8b49d8d67d434bb23c40ac25db
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.4 MB (13355782 bytes)**  
+-	Total Size: **13.4 MB (13356454 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60f81a6d1059252f032458e7bf5dff42ef2844beec6f1c212b5901fb867fdf0a`
+-	Image ID: `sha256:982bd235f46e537404cdab42c3dfb3d0058f97ed5d7984f2e71ad8734adcc6a8`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 18:56:11 GMT
-ADD file:d51af61c5955c980d18387ab532110c3874f95a87768be84dfd1eeb3e701d3a4 in / 
-# Wed, 31 Mar 2021 18:56:16 GMT
+# Wed, 14 Apr 2021 19:31:22 GMT
+ADD file:f8b081207f6d35f8ebd06aa471e350644151d183801f678def586d8f37e81366 in / 
+# Wed, 14 Apr 2021 19:31:29 GMT
 CMD ["/bin/sh"]
-# Thu, 01 Apr 2021 20:19:14 GMT
+# Wed, 14 Apr 2021 22:09:04 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Thu, 01 Apr 2021 20:19:27 GMT
+# Wed, 14 Apr 2021 22:09:16 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Thu, 01 Apr 2021 20:19:34 GMT
+# Wed, 14 Apr 2021 22:09:24 GMT
 ENV CADDY_VERSION=v2.3.0
-# Thu, 01 Apr 2021 20:19:48 GMT
+# Wed, 14 Apr 2021 22:09:39 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Thu, 01 Apr 2021 20:20:00 GMT
+# Wed, 14 Apr 2021 22:09:51 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Thu, 01 Apr 2021 20:20:05 GMT
+# Wed, 14 Apr 2021 22:09:56 GMT
 ENV XDG_CONFIG_HOME=/config
-# Thu, 01 Apr 2021 20:20:12 GMT
+# Wed, 14 Apr 2021 22:10:01 GMT
 ENV XDG_DATA_HOME=/data
-# Thu, 01 Apr 2021 20:20:18 GMT
+# Wed, 14 Apr 2021 22:10:06 GMT
 VOLUME [/config]
-# Thu, 01 Apr 2021 20:20:23 GMT
+# Wed, 14 Apr 2021 22:10:15 GMT
 VOLUME [/data]
-# Thu, 01 Apr 2021 20:20:31 GMT
+# Wed, 14 Apr 2021 22:10:22 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Thu, 01 Apr 2021 20:20:39 GMT
+# Wed, 14 Apr 2021 22:10:32 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Thu, 01 Apr 2021 20:20:48 GMT
+# Wed, 14 Apr 2021 22:10:40 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Thu, 01 Apr 2021 20:20:54 GMT
+# Wed, 14 Apr 2021 22:10:46 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Thu, 01 Apr 2021 20:21:00 GMT
+# Wed, 14 Apr 2021 22:10:52 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Thu, 01 Apr 2021 20:21:05 GMT
+# Wed, 14 Apr 2021 22:10:58 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Thu, 01 Apr 2021 20:21:09 GMT
+# Wed, 14 Apr 2021 22:11:03 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Thu, 01 Apr 2021 20:21:14 GMT
+# Wed, 14 Apr 2021 22:11:08 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Thu, 01 Apr 2021 20:21:21 GMT
+# Wed, 14 Apr 2021 22:11:14 GMT
 EXPOSE 80
-# Thu, 01 Apr 2021 20:21:27 GMT
+# Wed, 14 Apr 2021 22:11:20 GMT
 EXPOSE 443
-# Thu, 01 Apr 2021 20:21:33 GMT
+# Wed, 14 Apr 2021 22:11:27 GMT
 EXPOSE 2019
-# Thu, 01 Apr 2021 20:21:42 GMT
+# Wed, 14 Apr 2021 22:11:35 GMT
 WORKDIR /srv
-# Thu, 01 Apr 2021 20:21:47 GMT
+# Wed, 14 Apr 2021 22:11:41 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:d6d4557865d9cec3513c1a5e744cb1073a563d464b8d546911289b9df9998f1b`  
-		Last Modified: Wed, 31 Mar 2021 18:57:36 GMT  
-		Size: 2.8 MB (2806070 bytes)  
+	-	`sha256:45707b9629c4ab8c6046680737229218fe844f38d08e5458b24605e1dbfd2709`  
+		Last Modified: Wed, 14 Apr 2021 19:32:50 GMT  
+		Size: 2.8 MB (2806750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afc0e09b51c0cca190757d6fc9c2b15a635a361717a65973c8d6edf77918d6d5`  
-		Last Modified: Thu, 01 Apr 2021 20:27:39 GMT  
-		Size: 302.3 KB (302335 bytes)  
+	-	`sha256:d93dd31358a6e859a05bb506b946720f02c7ec7969776d811b20eaaa84508cd7`  
+		Last Modified: Wed, 14 Apr 2021 22:15:41 GMT  
+		Size: 302.3 KB (302339 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:091713ba252aea42d1ddb0424ba2c2861b3afd2d0102c5d0a6070bacd31e8b49`  
-		Last Modified: Thu, 01 Apr 2021 20:27:39 GMT  
-		Size: 5.8 KB (5832 bytes)  
+	-	`sha256:f8077b8c9cca163d9a34281a866cf5fe991ff8c160ebd1ab1b617c6b722ec690`  
+		Last Modified: Wed, 14 Apr 2021 22:15:41 GMT  
+		Size: 5.8 KB (5831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1840f6bc70853fb9cc5e9c5752486488368649459a0beaa0684081a5b4a44bd4`  
-		Last Modified: Thu, 01 Apr 2021 20:27:42 GMT  
-		Size: 10.2 MB (10241392 bytes)  
+	-	`sha256:55884816b8eca8150db9473989410e372c69c5431deb51a6cacd029895cf3dd6`  
+		Last Modified: Wed, 14 Apr 2021 22:15:43 GMT  
+		Size: 10.2 MB (10241380 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1fb03f086aa28c855432404e128ff2009c1198d61578654e584a12062e24953f`  
-		Last Modified: Thu, 01 Apr 2021 20:27:39 GMT  
-		Size: 153.0 B  
+	-	`sha256:51efee06e0a650ff5f146fc54a695d4bf2b44e19da18120fdc494982d52cdd62`  
+		Last Modified: Wed, 14 Apr 2021 22:15:41 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:alpine` - linux; s390x
 
 ```console
-$ docker pull caddy@sha256:9d992badb7530225182676af12ae945f5f2de2f5ad7d3946b397892a6de4c123
+$ docker pull caddy@sha256:68aaf625a22bff4e71edf895129baa2d562765c24ac81a5c68aff2995ebf89c2
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.1 MB (14145974 bytes)**  
+-	Total Size: **14.1 MB (14146947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b9c8a68869d0806c29e6c2c9c655d3e9085af285c6c24ea651ad3bdffd714e38`
+-	Image ID: `sha256:dbfd454f0dfa64ee1a952f9ed74a3f3bda3688a9565f062c3ea37e48b54eb210`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 17:15:04 GMT
-ADD file:1f37b92ea1f573c4810b1d056dc4880cf4035e143451d9b2b76fac1e3b462248 in / 
-# Wed, 31 Mar 2021 17:15:04 GMT
+# Wed, 14 Apr 2021 18:41:42 GMT
+ADD file:c73a5ff435939cdc9d621ee9dc2aa5a54a5f5e0241caae8dc948c03c423d9fef in / 
+# Wed, 14 Apr 2021 18:41:42 GMT
 CMD ["/bin/sh"]
-# Wed, 31 Mar 2021 18:55:58 GMT
+# Wed, 14 Apr 2021 20:07:21 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Wed, 31 Mar 2021 18:56:00 GMT
+# Wed, 14 Apr 2021 20:07:22 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Wed, 31 Mar 2021 18:56:00 GMT
+# Wed, 14 Apr 2021 20:07:22 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 31 Mar 2021 18:56:04 GMT
+# Wed, 14 Apr 2021 20:07:25 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:26 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:26 GMT
 ENV XDG_CONFIG_HOME=/config
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 ENV XDG_DATA_HOME=/data
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 VOLUME [/config]
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 VOLUME [/data]
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 EXPOSE 80
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 EXPOSE 443
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 EXPOSE 2019
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:30 GMT
 WORKDIR /srv
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:30 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:38ca5430c9af12b6b6dee7c10eb6b1eb0e4eb4f5f02a97890579c4b049d00233`  
-		Last Modified: Wed, 31 Mar 2021 17:15:46 GMT  
-		Size: 2.6 MB (2567453 bytes)  
+	-	`sha256:27efec644c4207cbc4d1400f84f3402937aab5ce72489976148896e42a219820`  
+		Last Modified: Wed, 14 Apr 2021 18:42:24 GMT  
+		Size: 2.6 MB (2568428 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe8eb19b6319d0b09121581759094c3eb58e5574e2063affb6c42c0e1a1937a0`  
-		Last Modified: Wed, 31 Mar 2021 18:57:00 GMT  
+	-	`sha256:5dab58470b754d248933aa56b48394e3ee4db4561d430d23ea378f0371ca59cb`  
+		Last Modified: Wed, 14 Apr 2021 20:08:16 GMT  
 		Size: 300.5 KB (300471 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbd6e269a873b8a21e2787b0ea05662c0f2676aa9043f52b8884081965be7112`  
-		Last Modified: Wed, 31 Mar 2021 18:57:00 GMT  
-		Size: 5.8 KB (5830 bytes)  
+	-	`sha256:fd514b608428ea44dae7dc67e641a276593e7715178d86d7702153521de849d7`  
+		Last Modified: Wed, 14 Apr 2021 20:08:16 GMT  
+		Size: 5.8 KB (5832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02f6a8a7e19cb11edbda771ce361181202915f4760cdaef5e290b1758cc7b88c`  
-		Last Modified: Wed, 31 Mar 2021 18:57:02 GMT  
-		Size: 11.3 MB (11272066 bytes)  
+	-	`sha256:a437814dab55b178c71f55598a70d0b532b3f645bdeb43e89244a6ebcde01446`  
+		Last Modified: Wed, 14 Apr 2021 20:08:18 GMT  
+		Size: 11.3 MB (11272061 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec92d2dcab4ee41e4e626d8b360a6feff3822db894894865a36bbe9cfc759df0`  
-		Last Modified: Wed, 31 Mar 2021 18:57:00 GMT  
-		Size: 154.0 B  
+	-	`sha256:412be9af105c69ee35fec76e8c0dbde8c8ba61c774b7d354e9c9fc8f538e8155`  
+		Last Modified: Wed, 14 Apr 2021 20:08:16 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:builder`
 
 ```console
-$ docker pull caddy@sha256:24e707cb4e7f90c12ca1f5fb4c1df08134db8d1ede9b2bce4075f12176f270b2
+$ docker pull caddy@sha256:c17fff95c980a166938258ea9cc32f1fc40d9e6e566ac63b502ccac45262c38b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11498,8 +11498,8 @@ $ docker pull caddy@sha256:24e707cb4e7f90c12ca1f5fb4c1df08134db8d1ede9b2bce4075f
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
 	-	linux; s390x
-	-	windows version 10.0.17763.1817; amd64
-	-	windows version 10.0.14393.4283; amd64
+	-	windows version 10.0.17763.1879; amd64
+	-	windows version 10.0.14393.4350; amd64
 
 ### `caddy:builder` - linux; amd64
 
@@ -12017,58 +12017,58 @@ WORKDIR /usr/bin
 		Size: 405.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `caddy:builder` - windows version 10.0.17763.1817; amd64
+### `caddy:builder` - windows version 10.0.17763.1879; amd64
 
 ```console
-$ docker pull caddy@sha256:89576372020fc2eb4c0a7f3a3e1202a7b5833822dcac78836f6f48dc05cf1b15
+$ docker pull caddy@sha256:5d074fc96daecf65b6ea7aaaf9d2217f2c8f4e27a44e13800ee34ce2110620a1
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 GB (2636681347 bytes)**  
+-	Total Size: **2.6 GB (2636098719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:433619fcb10b7d636ff7d2ab6165f3648a45f1587bf0fc5a17c16bb0b4ea13f9`
+-	Image ID: `sha256:85e88c818aa8954ae57e277c9730cdfa1dceee6b1cc34304b32f23f94a4ee916`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 07 May 2020 05:09:25 GMT
 RUN Apply image 1809-RTM-amd64
-# Sat, 27 Feb 2021 09:32:06 GMT
+# Fri, 09 Apr 2021 20:34:41 GMT
 RUN Install update 1809-amd64
-# Wed, 10 Mar 2021 13:08:20 GMT
+# Wed, 14 Apr 2021 12:09:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 13:37:21 GMT
+# Wed, 14 Apr 2021 12:30:33 GMT
 ENV GIT_VERSION=2.23.0
-# Wed, 10 Mar 2021 13:37:22 GMT
+# Wed, 14 Apr 2021 12:30:35 GMT
 ENV GIT_TAG=v2.23.0.windows.1
-# Wed, 10 Mar 2021 13:37:23 GMT
+# Wed, 14 Apr 2021 12:30:36 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/MinGit-2.23.0-64-bit.zip
-# Wed, 10 Mar 2021 13:37:24 GMT
+# Wed, 14 Apr 2021 12:30:37 GMT
 ENV GIT_DOWNLOAD_SHA256=8f65208f92c0b4c3ae4c0cf02d4b5f6791d539cd1a07b2df62b7116467724735
-# Wed, 10 Mar 2021 13:38:55 GMT
+# Wed, 14 Apr 2021 12:31:55 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Wed, 10 Mar 2021 13:38:56 GMT
+# Wed, 14 Apr 2021 12:31:57 GMT
 ENV GOPATH=C:\gopath
-# Wed, 10 Mar 2021 13:39:22 GMT
+# Wed, 14 Apr 2021 12:32:38 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 02 Apr 2021 00:25:42 GMT
+# Wed, 14 Apr 2021 12:47:04 GMT
 ENV GOLANG_VERSION=1.15.11
-# Fri, 02 Apr 2021 00:28:23 GMT
+# Wed, 14 Apr 2021 12:50:03 GMT
 RUN $url = 'https://storage.googleapis.com/golang/go1.15.11.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '56f63de17cd739287de6d9f3cfdad3b781ad3e4a18aae20ece994ee97c1819fd'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 02 Apr 2021 00:28:25 GMT
+# Wed, 14 Apr 2021 12:50:05 GMT
 WORKDIR C:\gopath
-# Fri, 02 Apr 2021 01:03:34 GMT
+# Wed, 14 Apr 2021 20:10:39 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 02 Apr 2021 01:03:35 GMT
+# Wed, 14 Apr 2021 20:10:40 GMT
 ENV XCADDY_VERSION=v0.1.8
-# Fri, 02 Apr 2021 01:03:36 GMT
+# Wed, 14 Apr 2021 20:10:41 GMT
 ENV CADDY_VERSION=v2.3.0
-# Fri, 02 Apr 2021 01:03:38 GMT
+# Wed, 14 Apr 2021 20:10:42 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Fri, 02 Apr 2021 01:04:03 GMT
+# Wed, 14 Apr 2021 20:11:15 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.1.8/xcaddy_0.1.8_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('ccbc594da07adff41098959a78efaaee42fca4e5feb7806661d00841229b20ff1c47fed024c7a84e8554d3e8be3f162d3750e5e8347d6a230c496d4b133213e8')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Fri, 02 Apr 2021 01:04:05 GMT
+# Wed, 14 Apr 2021 20:11:16 GMT
 WORKDIR C:\
 ```
 
@@ -12076,130 +12076,130 @@ WORKDIR C:\
 	-	`sha256:4612f6d0b889cad0ed0292fae3a0b0c8a9e49aff6dea8eb049b2386d9b07986f`  
 		Size: 1.7 GB (1718332879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ff1512f88ecd4ff0a91ade34d43733c48834433e35f062f80e6e70d706f8d73`  
-		Size: 743.2 MB (743201590 bytes)  
+	-	`sha256:399f118dfaa9a753e98d128238b944432c7bcabea88a2998a6efbbece28ed303`  
+		Size: 751.4 MB (751421005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ebe61daec6d671bc2c1c6fe61ac9825fb552e9cef3672d0a7dbec719d125ae64`  
-		Last Modified: Wed, 10 Mar 2021 13:21:09 GMT  
-		Size: 1.4 KB (1430 bytes)  
+	-	`sha256:106dbf3373fce4f0ba5e00ad54824c597f2894605fa7d8ef446ad7ea3b97449f`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55f55c0bb3b38761f0aaeef923efdf23ab140f64a5549388e9aa125fe79780b0`  
-		Last Modified: Wed, 10 Mar 2021 14:02:53 GMT  
-		Size: 1.4 KB (1439 bytes)  
+	-	`sha256:ac56922ba0ee0ac19bcae98f5fb4b7427d31ef3c709f27cfb2c785fd13a611c4`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a312e589b5b4b52c93afc65c4053591faf5d602a159699e1d8fd7cb7257a1e19`  
-		Last Modified: Wed, 10 Mar 2021 14:02:53 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:0f1723430d5101a2d617d3dbf4bc2a121b3f4b4432105aa2941e1afab8f130b9`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
+		Size: 1.4 KB (1407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5a36351186e9a8092baf10dfbdfd28b7dce39bcb5b543246f650bf4ad9549d6`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
+	-	`sha256:ab2f4dc6e9a77d69a3d172368f4ae471b31c588d6201c2386e4ac62fd83faa16`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
+		Size: 1.4 KB (1434 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aaea47861a9221a4f1e5750db237c619796c612756a5e75e2cb443b1731ae8a8`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
+		Size: 1.4 KB (1410 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2b4be4ebd8eabefdb01f27dafad85e65289b95ca15591c14304c7792db99b54b`  
+		Last Modified: Wed, 14 Apr 2021 12:58:35 GMT  
+		Size: 30.2 MB (30155601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f6f66ae3738a83ea41b428b49261d4522d57df1617fbd1aa362d93f1e2802643`  
+		Last Modified: Wed, 14 Apr 2021 12:57:58 GMT  
+		Size: 1.4 KB (1442 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e2108b314c24064a0c250f72017cc64b3bf68915655327728a267c98985a5ff7`  
+		Last Modified: Wed, 14 Apr 2021 12:57:58 GMT  
+		Size: 324.6 KB (324649 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c28a6b8d8a4b8aea18e07888051dac03e88f4132fba08dca72e5795d9533dd3d`  
+		Last Modified: Wed, 14 Apr 2021 13:04:59 GMT  
+		Size: 1.3 KB (1300 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dc67fec1bfee8619d88a924c4f9b9f4a04d2a0a1d199406157bb073b9f48d588`  
+		Last Modified: Wed, 14 Apr 2021 13:07:33 GMT  
+		Size: 134.1 MB (134133939 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:09fe57ae793e79818d065737c8e995bb1b73296275794af222be695733711652`  
+		Last Modified: Wed, 14 Apr 2021 13:04:59 GMT  
+		Size: 1.6 KB (1562 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5134c3d8291dc3a52f7fad327cccf50377f2f362488fbcb8405addc74c0eedcf`  
+		Last Modified: Wed, 14 Apr 2021 20:25:05 GMT  
 		Size: 1.4 KB (1431 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85bf84abeceee0a3b5a380cf6aa46e231424d48c1781e88f7f96344fdd400753`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
-		Size: 1.4 KB (1425 bytes)  
+	-	`sha256:9d60772069c77cb2a80fec9f6e4d18084a4a919d4f776079dfee7903331331e7`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfcb0c1de08b3116c910ff0e9573389536913cddb0462da67f13cc24f09b479b`  
-		Last Modified: Wed, 10 Mar 2021 14:02:55 GMT  
-		Size: 34.5 MB (34540168 bytes)  
+	-	`sha256:4716fdd15cdffc3b1aa557c81d58c2d0c343f9bfbfb501325b4cdc3bfeb426d9`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:121ca5c84aae657554fc278543816ed7a73aa34867b296c486181ff025bde056`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
-		Size: 1.4 KB (1408 bytes)  
+	-	`sha256:4bc11d2d339a72dd92f86f4fcc8e6fc299da2b6b381147f41dbd8d789e0c944e`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e1fde90e4880470a95a23f5277f201512a5e7cad1fc6c1bf100e06df43201b0`  
-		Last Modified: Wed, 10 Mar 2021 14:02:44 GMT  
-		Size: 338.8 KB (338777 bytes)  
+	-	`sha256:2909c1d8e32571506ce36cda43c7b113b299e280d6d7dfffafe5cd6284595348`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.7 MB (1712288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddf005729e9b7c9f2912ff8e30bec3d383755302fe0b20e361d87ed43a703519`  
-		Last Modified: Fri, 02 Apr 2021 00:43:41 GMT  
-		Size: 1.4 KB (1409 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6be9af25c23d2108f315f14a45d27ecfe24ceb05852132cf721a61ee44495e1a`  
-		Last Modified: Fri, 02 Apr 2021 00:44:11 GMT  
-		Size: 138.5 MB (138534624 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1592b7415bb7c21ec31f9b97bed86b4b01c96621f385d9da5903fa7c320d4e47`  
-		Last Modified: Fri, 02 Apr 2021 00:43:41 GMT  
-		Size: 1.6 KB (1590 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aae6b99eb587e6a00f40f4c134c6b7d4b8d1bc9d9d17b14538d30b6c689e5bc2`  
-		Last Modified: Fri, 02 Apr 2021 01:09:29 GMT  
-		Size: 1.3 KB (1334 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f38d285524127fff971c8f6c086256b3907c8428d162347bcba0f3bcf6d64fa9`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.3 KB (1345 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de22f3dc30fb1b76d85e47461eb558cc38cd60ccd8d02c6d8bd9aea7cce3e909`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5063c8d06382902b304af0538c9114e087db04e693551e92d15ffd12dcca542`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.4 KB (1378 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:313a2e87390c3ef15da4fd9f3b978ef539bc6b5bf8d3e54d23f28e4acd386563`  
-		Last Modified: Fri, 02 Apr 2021 01:09:29 GMT  
-		Size: 1.7 MB (1715051 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a4ed62f1fbb34e8dfbbf3e11e5f7aa91c4e21c7ac1debbbf86e2561d6ecc5ea`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:a5e56de156a63d8492bf70144c9e28ae975db36a6a57c54e734c96e20fb8bb13`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1362 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `caddy:builder` - windows version 10.0.14393.4283; amd64
+### `caddy:builder` - windows version 10.0.14393.4350; amd64
 
 ```console
-$ docker pull caddy@sha256:017255652cc26ea2af428ecc3b6f2222ee64d88cfdf1c34e3522f048aa461ee9
+$ docker pull caddy@sha256:436f2a16a677c719d951ddd10a1f475e81cc61b0726c7a4d5f76bdea16e3d215
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 GB (5997836720 bytes)**  
+-	Total Size: **6.0 GB (5982128974 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08a9fde1e66982a65a46dea5c07548ac8afcd29b6f304afe23a8ea9bcdcf186f`
+-	Image ID: `sha256:3d1658b3cebc6cc5691856945858057a4e3925a991ead9db618b5058d55e445e`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sat, 19 Nov 2016 17:05:00 GMT
 RUN Apply image 1607-RTM-amd64
-# Wed, 03 Mar 2021 18:02:00 GMT
+# Wed, 07 Apr 2021 21:54:00 GMT
 RUN Install update ltsc2016-amd64
-# Wed, 10 Mar 2021 13:42:05 GMT
+# Wed, 14 Apr 2021 12:35:33 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 13:42:06 GMT
+# Wed, 14 Apr 2021 12:35:34 GMT
 ENV GIT_VERSION=2.23.0
-# Wed, 10 Mar 2021 13:42:07 GMT
+# Wed, 14 Apr 2021 12:35:35 GMT
 ENV GIT_TAG=v2.23.0.windows.1
-# Wed, 10 Mar 2021 13:42:08 GMT
+# Wed, 14 Apr 2021 12:35:36 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/MinGit-2.23.0-64-bit.zip
-# Wed, 10 Mar 2021 13:42:09 GMT
+# Wed, 14 Apr 2021 12:35:38 GMT
 ENV GIT_DOWNLOAD_SHA256=8f65208f92c0b4c3ae4c0cf02d4b5f6791d539cd1a07b2df62b7116467724735
-# Wed, 10 Mar 2021 13:44:31 GMT
+# Wed, 14 Apr 2021 12:38:01 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Wed, 10 Mar 2021 13:44:32 GMT
+# Wed, 14 Apr 2021 12:38:02 GMT
 ENV GOPATH=C:\gopath
-# Wed, 10 Mar 2021 13:45:47 GMT
+# Wed, 14 Apr 2021 12:39:34 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 02 Apr 2021 00:28:41 GMT
+# Wed, 14 Apr 2021 12:50:19 GMT
 ENV GOLANG_VERSION=1.15.11
-# Fri, 02 Apr 2021 00:32:35 GMT
+# Wed, 14 Apr 2021 12:54:08 GMT
 RUN $url = 'https://storage.googleapis.com/golang/go1.15.11.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '56f63de17cd739287de6d9f3cfdad3b781ad3e4a18aae20ece994ee97c1819fd'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 02 Apr 2021 00:32:37 GMT
+# Wed, 14 Apr 2021 12:54:10 GMT
 WORKDIR C:\gopath
-# Fri, 02 Apr 2021 01:04:13 GMT
+# Wed, 14 Apr 2021 20:11:23 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 02 Apr 2021 01:04:14 GMT
+# Wed, 14 Apr 2021 20:11:24 GMT
 ENV XCADDY_VERSION=v0.1.8
-# Fri, 02 Apr 2021 01:04:15 GMT
+# Wed, 14 Apr 2021 20:11:25 GMT
 ENV CADDY_VERSION=v2.3.0
-# Fri, 02 Apr 2021 01:04:16 GMT
+# Wed, 14 Apr 2021 20:11:26 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Fri, 02 Apr 2021 01:05:43 GMT
+# Wed, 14 Apr 2021 20:12:59 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.1.8/xcaddy_0.1.8_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('ccbc594da07adff41098959a78efaaee42fca4e5feb7806661d00841229b20ff1c47fed024c7a84e8554d3e8be3f162d3750e5e8347d6a230c496d4b133213e8')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Fri, 02 Apr 2021 01:05:45 GMT
+# Wed, 14 Apr 2021 20:13:01 GMT
 WORKDIR C:\
 ```
 
@@ -12208,76 +12208,76 @@ WORKDIR C:\
 		Last Modified: Tue, 18 Sep 2018 20:20:50 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:30bda99601c5cbd3b2118409f401852ea648e2319bd81518723e476b28d764c5`  
-		Size: 1.7 GB (1726924885 bytes)  
+	-	`sha256:00b4edb823e6a375d179a28cbfa682c2379d62179e1518485902d6e68b9a9d1e`  
+		Size: 1.7 GB (1724897968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:76680da9dc6db108ddf2e353c494b45e8486a6751619a13ed8fb3ad64b9a16e9`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bb52885e05952959b0fa7aaff23561fcf14d294aed336112b388c94e67709e4f`  
+		Last Modified: Wed, 14 Apr 2021 12:59:14 GMT  
+		Size: 1.4 KB (1406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea2092de86b10f822dfd3a0d8e8dc35924823393cf8301e6db8f8a0a2879fb18`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1306 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ac6e05dba1a284b10130ada4ed7581f5a1c5a90986038e31cc8213e215ca23`  
-		Last Modified: Wed, 10 Mar 2021 14:06:07 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a636ee1e87a6b10caeaef03b68f084d58b5c8412fe4b10ba5d851a6965917196`  
-		Last Modified: Wed, 10 Mar 2021 14:06:01 GMT  
-		Size: 1.3 KB (1322 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a9e03ef5102108f3595c37759ead10b0cfb624aa0f102dbae3b6abb18f03b56`  
-		Last Modified: Wed, 10 Mar 2021 14:06:01 GMT  
-		Size: 1.4 KB (1414 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:840634d0d343cc458ff1f028b165fab14415bf252ce2b7fdb726c41d035c64ff`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 35.3 MB (35273703 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b968b2b2cb37afe5893ed1aa040b1055605f41e8371fe42fca9c6e06bb96c2ed`  
-		Last Modified: Wed, 10 Mar 2021 14:05:55 GMT  
-		Size: 1.4 KB (1381 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b01350c0465bbc3ff96b788fef94740af9378a1cfe9f3c1fb50ffed30c8a7ad`  
-		Last Modified: Wed, 10 Mar 2021 14:05:59 GMT  
-		Size: 10.1 MB (10139029 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a055a610a3b2e63b54d561bc3512bd068b4443a7417486b9dc65a4ad292583c7`  
-		Last Modified: Fri, 02 Apr 2021 00:44:26 GMT  
+	-	`sha256:2c3360763b706a564d93471b21a342ebbda7e047567cf1cbee82dd592ad33e0c`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
 		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c202a262d335726e6d079774ca9e11f52da7326ee18860265595a97527a7b545`  
-		Last Modified: Fri, 02 Apr 2021 00:44:55 GMT  
-		Size: 144.0 MB (143966864 bytes)  
+	-	`sha256:c1a0f653700ac9b57cf3d694cc90107e3220fc678581d1e985219677733ce242`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
+		Size: 1.4 KB (1398 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:737da401effa5536406d2508db65af6f54d9be0a3c5f1347ae56dc5ad1b8c1a4`  
-		Last Modified: Fri, 02 Apr 2021 00:44:26 GMT  
-		Size: 1.6 KB (1579 bytes)  
+	-	`sha256:2a59d82702c225a2ca8cd2a5476122f55d8619eae959c9cb8323b68d70a2ed19`  
+		Last Modified: Wed, 14 Apr 2021 12:59:06 GMT  
+		Size: 1.4 KB (1395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c52d85af463d5a66468c058122750336a2d002544c19dbaff721875cb8c6c24`  
-		Last Modified: Fri, 02 Apr 2021 01:09:48 GMT  
-		Size: 1.3 KB (1309 bytes)  
+	-	`sha256:62435cd2b7652fc97ef3dc1a8968446f3f6e95f0ff1d6dcb176a3f0c2b14c2f8`  
+		Last Modified: Wed, 14 Apr 2021 12:59:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82f1bf71cbf1adab82ad5a9d8f5b71571306bf6bcf254b686963f2ed7562e7fc`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.3 KB (1315 bytes)  
+	-	`sha256:a6d78a3a3d6cb25f55dc9d9947f7449a14717e6b787e49571a837e72b79334cf`  
+		Last Modified: Wed, 14 Apr 2021 12:59:41 GMT  
+		Size: 30.8 MB (30752513 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba22c0fd4b07e8d5ff2ab18028eb3f4d87c20420e43a2afbf78c8da9032399b2`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:0b774a32e346c00e004abbbd7290530d0a3f3dfb11915be2b2fa73c402da6bdd`  
+		Last Modified: Wed, 14 Apr 2021 12:59:03 GMT  
+		Size: 1.4 KB (1409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:562b238ffe2f30d1bebcac0de5c7d019504926664c08f5730389c7c1e426c12a`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.4 KB (1394 bytes)  
+	-	`sha256:2d153061f2f0d8ef33f71c4b9afd90899e21556e320d7103a8a9fb544c1cb521`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
+		Size: 5.6 MB (5608025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f0b00fc7a9cc9546977571c1922da63009fc89865ee5ae6b603cdf38d5b56ad`  
-		Last Modified: Fri, 02 Apr 2021 01:09:47 GMT  
-		Size: 11.5 MB (11528518 bytes)  
+	-	`sha256:1388c10d71d4f1005ced63001aeb1392f019139011ddf961220ee27a412cbadb`  
+		Last Modified: Wed, 14 Apr 2021 13:07:44 GMT  
+		Size: 1.4 KB (1395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:606193453afd7f6b2c5d21cdd640e297c0e3b0514642cc7044ff5a83ef6e66c7`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.3 KB (1309 bytes)  
+	-	`sha256:913a59644a65d5f7183aa7bebce08c8b09d1f627c257105a7db7514919858b6e`  
+		Last Modified: Wed, 14 Apr 2021 13:08:21 GMT  
+		Size: 143.9 MB (143889855 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a71b095a33aa8cc59c703b0a8f3b0bb53508123d89c531d6369de947b72b26f5`  
+		Last Modified: Wed, 14 Apr 2021 13:07:46 GMT  
+		Size: 1.5 KB (1492 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:07c7a21f93788806d3510b3cc8f7692b086c096861b42c218993697d04a890de`  
+		Last Modified: Wed, 14 Apr 2021 20:25:25 GMT  
+		Size: 1.4 KB (1408 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:04fbdf3acf4f09ad44474940358b0b044863361fee2bb201478a8b4b40cced75`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.4 KB (1404 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:600e2fd01e09ce5bb623f7dbf3080c7127a8c2dc0b54422dee1525e75e6ae6de`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.4 KB (1434 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d594e3e36caa66775e5660018a80c02ef6bf4b16e626bdbca53a885634db4a29`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.4 KB (1428 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d06f5b24d29c79d20732eaf23dc495c89959ba869fbcb3bb88d35b42f38616a1`  
+		Last Modified: Wed, 14 Apr 2021 20:25:24 GMT  
+		Size: 7.0 MB (6976405 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c11b840b2827a9bb3da231a34e716b4fbd570dffa0b711f9fcbb7ff630c90052`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:builder-alpine`
@@ -12814,65 +12814,65 @@ WORKDIR /usr/bin
 ## `caddy:builder-windowsservercore-1809`
 
 ```console
-$ docker pull caddy@sha256:0c67e10ec967bbb5febbb8307b0e4a234df003c616262fde938f75631cacd2e5
+$ docker pull caddy@sha256:0ee0dd2e13c7c2d8b1a3514be4c8a71a5da92f756386f549bdd51c0bd62700c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.17763.1817; amd64
+	-	windows version 10.0.17763.1879; amd64
 
-### `caddy:builder-windowsservercore-1809` - windows version 10.0.17763.1817; amd64
+### `caddy:builder-windowsservercore-1809` - windows version 10.0.17763.1879; amd64
 
 ```console
-$ docker pull caddy@sha256:89576372020fc2eb4c0a7f3a3e1202a7b5833822dcac78836f6f48dc05cf1b15
+$ docker pull caddy@sha256:5d074fc96daecf65b6ea7aaaf9d2217f2c8f4e27a44e13800ee34ce2110620a1
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 GB (2636681347 bytes)**  
+-	Total Size: **2.6 GB (2636098719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:433619fcb10b7d636ff7d2ab6165f3648a45f1587bf0fc5a17c16bb0b4ea13f9`
+-	Image ID: `sha256:85e88c818aa8954ae57e277c9730cdfa1dceee6b1cc34304b32f23f94a4ee916`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 07 May 2020 05:09:25 GMT
 RUN Apply image 1809-RTM-amd64
-# Sat, 27 Feb 2021 09:32:06 GMT
+# Fri, 09 Apr 2021 20:34:41 GMT
 RUN Install update 1809-amd64
-# Wed, 10 Mar 2021 13:08:20 GMT
+# Wed, 14 Apr 2021 12:09:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 13:37:21 GMT
+# Wed, 14 Apr 2021 12:30:33 GMT
 ENV GIT_VERSION=2.23.0
-# Wed, 10 Mar 2021 13:37:22 GMT
+# Wed, 14 Apr 2021 12:30:35 GMT
 ENV GIT_TAG=v2.23.0.windows.1
-# Wed, 10 Mar 2021 13:37:23 GMT
+# Wed, 14 Apr 2021 12:30:36 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/MinGit-2.23.0-64-bit.zip
-# Wed, 10 Mar 2021 13:37:24 GMT
+# Wed, 14 Apr 2021 12:30:37 GMT
 ENV GIT_DOWNLOAD_SHA256=8f65208f92c0b4c3ae4c0cf02d4b5f6791d539cd1a07b2df62b7116467724735
-# Wed, 10 Mar 2021 13:38:55 GMT
+# Wed, 14 Apr 2021 12:31:55 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Wed, 10 Mar 2021 13:38:56 GMT
+# Wed, 14 Apr 2021 12:31:57 GMT
 ENV GOPATH=C:\gopath
-# Wed, 10 Mar 2021 13:39:22 GMT
+# Wed, 14 Apr 2021 12:32:38 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 02 Apr 2021 00:25:42 GMT
+# Wed, 14 Apr 2021 12:47:04 GMT
 ENV GOLANG_VERSION=1.15.11
-# Fri, 02 Apr 2021 00:28:23 GMT
+# Wed, 14 Apr 2021 12:50:03 GMT
 RUN $url = 'https://storage.googleapis.com/golang/go1.15.11.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '56f63de17cd739287de6d9f3cfdad3b781ad3e4a18aae20ece994ee97c1819fd'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 02 Apr 2021 00:28:25 GMT
+# Wed, 14 Apr 2021 12:50:05 GMT
 WORKDIR C:\gopath
-# Fri, 02 Apr 2021 01:03:34 GMT
+# Wed, 14 Apr 2021 20:10:39 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 02 Apr 2021 01:03:35 GMT
+# Wed, 14 Apr 2021 20:10:40 GMT
 ENV XCADDY_VERSION=v0.1.8
-# Fri, 02 Apr 2021 01:03:36 GMT
+# Wed, 14 Apr 2021 20:10:41 GMT
 ENV CADDY_VERSION=v2.3.0
-# Fri, 02 Apr 2021 01:03:38 GMT
+# Wed, 14 Apr 2021 20:10:42 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Fri, 02 Apr 2021 01:04:03 GMT
+# Wed, 14 Apr 2021 20:11:15 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.1.8/xcaddy_0.1.8_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('ccbc594da07adff41098959a78efaaee42fca4e5feb7806661d00841229b20ff1c47fed024c7a84e8554d3e8be3f162d3750e5e8347d6a230c496d4b133213e8')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Fri, 02 Apr 2021 01:04:05 GMT
+# Wed, 14 Apr 2021 20:11:16 GMT
 WORKDIR C:\
 ```
 
@@ -12880,140 +12880,140 @@ WORKDIR C:\
 	-	`sha256:4612f6d0b889cad0ed0292fae3a0b0c8a9e49aff6dea8eb049b2386d9b07986f`  
 		Size: 1.7 GB (1718332879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ff1512f88ecd4ff0a91ade34d43733c48834433e35f062f80e6e70d706f8d73`  
-		Size: 743.2 MB (743201590 bytes)  
+	-	`sha256:399f118dfaa9a753e98d128238b944432c7bcabea88a2998a6efbbece28ed303`  
+		Size: 751.4 MB (751421005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ebe61daec6d671bc2c1c6fe61ac9825fb552e9cef3672d0a7dbec719d125ae64`  
-		Last Modified: Wed, 10 Mar 2021 13:21:09 GMT  
-		Size: 1.4 KB (1430 bytes)  
+	-	`sha256:106dbf3373fce4f0ba5e00ad54824c597f2894605fa7d8ef446ad7ea3b97449f`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55f55c0bb3b38761f0aaeef923efdf23ab140f64a5549388e9aa125fe79780b0`  
-		Last Modified: Wed, 10 Mar 2021 14:02:53 GMT  
-		Size: 1.4 KB (1439 bytes)  
+	-	`sha256:ac56922ba0ee0ac19bcae98f5fb4b7427d31ef3c709f27cfb2c785fd13a611c4`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a312e589b5b4b52c93afc65c4053591faf5d602a159699e1d8fd7cb7257a1e19`  
-		Last Modified: Wed, 10 Mar 2021 14:02:53 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:0f1723430d5101a2d617d3dbf4bc2a121b3f4b4432105aa2941e1afab8f130b9`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
+		Size: 1.4 KB (1407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5a36351186e9a8092baf10dfbdfd28b7dce39bcb5b543246f650bf4ad9549d6`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
+	-	`sha256:ab2f4dc6e9a77d69a3d172368f4ae471b31c588d6201c2386e4ac62fd83faa16`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
+		Size: 1.4 KB (1434 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aaea47861a9221a4f1e5750db237c619796c612756a5e75e2cb443b1731ae8a8`  
+		Last Modified: Wed, 14 Apr 2021 12:58:01 GMT  
+		Size: 1.4 KB (1410 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2b4be4ebd8eabefdb01f27dafad85e65289b95ca15591c14304c7792db99b54b`  
+		Last Modified: Wed, 14 Apr 2021 12:58:35 GMT  
+		Size: 30.2 MB (30155601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f6f66ae3738a83ea41b428b49261d4522d57df1617fbd1aa362d93f1e2802643`  
+		Last Modified: Wed, 14 Apr 2021 12:57:58 GMT  
+		Size: 1.4 KB (1442 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e2108b314c24064a0c250f72017cc64b3bf68915655327728a267c98985a5ff7`  
+		Last Modified: Wed, 14 Apr 2021 12:57:58 GMT  
+		Size: 324.6 KB (324649 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c28a6b8d8a4b8aea18e07888051dac03e88f4132fba08dca72e5795d9533dd3d`  
+		Last Modified: Wed, 14 Apr 2021 13:04:59 GMT  
+		Size: 1.3 KB (1300 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dc67fec1bfee8619d88a924c4f9b9f4a04d2a0a1d199406157bb073b9f48d588`  
+		Last Modified: Wed, 14 Apr 2021 13:07:33 GMT  
+		Size: 134.1 MB (134133939 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:09fe57ae793e79818d065737c8e995bb1b73296275794af222be695733711652`  
+		Last Modified: Wed, 14 Apr 2021 13:04:59 GMT  
+		Size: 1.6 KB (1562 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5134c3d8291dc3a52f7fad327cccf50377f2f362488fbcb8405addc74c0eedcf`  
+		Last Modified: Wed, 14 Apr 2021 20:25:05 GMT  
 		Size: 1.4 KB (1431 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85bf84abeceee0a3b5a380cf6aa46e231424d48c1781e88f7f96344fdd400753`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
-		Size: 1.4 KB (1425 bytes)  
+	-	`sha256:9d60772069c77cb2a80fec9f6e4d18084a4a919d4f776079dfee7903331331e7`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfcb0c1de08b3116c910ff0e9573389536913cddb0462da67f13cc24f09b479b`  
-		Last Modified: Wed, 10 Mar 2021 14:02:55 GMT  
-		Size: 34.5 MB (34540168 bytes)  
+	-	`sha256:4716fdd15cdffc3b1aa557c81d58c2d0c343f9bfbfb501325b4cdc3bfeb426d9`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:121ca5c84aae657554fc278543816ed7a73aa34867b296c486181ff025bde056`  
-		Last Modified: Wed, 10 Mar 2021 14:02:47 GMT  
-		Size: 1.4 KB (1408 bytes)  
+	-	`sha256:4bc11d2d339a72dd92f86f4fcc8e6fc299da2b6b381147f41dbd8d789e0c944e`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e1fde90e4880470a95a23f5277f201512a5e7cad1fc6c1bf100e06df43201b0`  
-		Last Modified: Wed, 10 Mar 2021 14:02:44 GMT  
-		Size: 338.8 KB (338777 bytes)  
+	-	`sha256:2909c1d8e32571506ce36cda43c7b113b299e280d6d7dfffafe5cd6284595348`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.7 MB (1712288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddf005729e9b7c9f2912ff8e30bec3d383755302fe0b20e361d87ed43a703519`  
-		Last Modified: Fri, 02 Apr 2021 00:43:41 GMT  
-		Size: 1.4 KB (1409 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6be9af25c23d2108f315f14a45d27ecfe24ceb05852132cf721a61ee44495e1a`  
-		Last Modified: Fri, 02 Apr 2021 00:44:11 GMT  
-		Size: 138.5 MB (138534624 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1592b7415bb7c21ec31f9b97bed86b4b01c96621f385d9da5903fa7c320d4e47`  
-		Last Modified: Fri, 02 Apr 2021 00:43:41 GMT  
-		Size: 1.6 KB (1590 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aae6b99eb587e6a00f40f4c134c6b7d4b8d1bc9d9d17b14538d30b6c689e5bc2`  
-		Last Modified: Fri, 02 Apr 2021 01:09:29 GMT  
-		Size: 1.3 KB (1334 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f38d285524127fff971c8f6c086256b3907c8428d162347bcba0f3bcf6d64fa9`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.3 KB (1345 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de22f3dc30fb1b76d85e47461eb558cc38cd60ccd8d02c6d8bd9aea7cce3e909`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5063c8d06382902b304af0538c9114e087db04e693551e92d15ffd12dcca542`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.4 KB (1378 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:313a2e87390c3ef15da4fd9f3b978ef539bc6b5bf8d3e54d23f28e4acd386563`  
-		Last Modified: Fri, 02 Apr 2021 01:09:29 GMT  
-		Size: 1.7 MB (1715051 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a4ed62f1fbb34e8dfbbf3e11e5f7aa91c4e21c7ac1debbbf86e2561d6ecc5ea`  
-		Last Modified: Fri, 02 Apr 2021 01:09:26 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:a5e56de156a63d8492bf70144c9e28ae975db36a6a57c54e734c96e20fb8bb13`  
+		Last Modified: Wed, 14 Apr 2021 20:25:02 GMT  
+		Size: 1.4 KB (1362 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:builder-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull caddy@sha256:707fee0b94dcb8bb07e1cc0f86e10c540509ee572b69240bc0556cfafa586cd6
+$ docker pull caddy@sha256:80d881fa828e30f1c7d44ae2d3bebe98ef9185d4e43e597ac5205ba32ad13c63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.4283; amd64
+	-	windows version 10.0.14393.4350; amd64
 
-### `caddy:builder-windowsservercore-ltsc2016` - windows version 10.0.14393.4283; amd64
+### `caddy:builder-windowsservercore-ltsc2016` - windows version 10.0.14393.4350; amd64
 
 ```console
-$ docker pull caddy@sha256:017255652cc26ea2af428ecc3b6f2222ee64d88cfdf1c34e3522f048aa461ee9
+$ docker pull caddy@sha256:436f2a16a677c719d951ddd10a1f475e81cc61b0726c7a4d5f76bdea16e3d215
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 GB (5997836720 bytes)**  
+-	Total Size: **6.0 GB (5982128974 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08a9fde1e66982a65a46dea5c07548ac8afcd29b6f304afe23a8ea9bcdcf186f`
+-	Image ID: `sha256:3d1658b3cebc6cc5691856945858057a4e3925a991ead9db618b5058d55e445e`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sat, 19 Nov 2016 17:05:00 GMT
 RUN Apply image 1607-RTM-amd64
-# Wed, 03 Mar 2021 18:02:00 GMT
+# Wed, 07 Apr 2021 21:54:00 GMT
 RUN Install update ltsc2016-amd64
-# Wed, 10 Mar 2021 13:42:05 GMT
+# Wed, 14 Apr 2021 12:35:33 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 13:42:06 GMT
+# Wed, 14 Apr 2021 12:35:34 GMT
 ENV GIT_VERSION=2.23.0
-# Wed, 10 Mar 2021 13:42:07 GMT
+# Wed, 14 Apr 2021 12:35:35 GMT
 ENV GIT_TAG=v2.23.0.windows.1
-# Wed, 10 Mar 2021 13:42:08 GMT
+# Wed, 14 Apr 2021 12:35:36 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/MinGit-2.23.0-64-bit.zip
-# Wed, 10 Mar 2021 13:42:09 GMT
+# Wed, 14 Apr 2021 12:35:38 GMT
 ENV GIT_DOWNLOAD_SHA256=8f65208f92c0b4c3ae4c0cf02d4b5f6791d539cd1a07b2df62b7116467724735
-# Wed, 10 Mar 2021 13:44:31 GMT
+# Wed, 14 Apr 2021 12:38:01 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Wed, 10 Mar 2021 13:44:32 GMT
+# Wed, 14 Apr 2021 12:38:02 GMT
 ENV GOPATH=C:\gopath
-# Wed, 10 Mar 2021 13:45:47 GMT
+# Wed, 14 Apr 2021 12:39:34 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Fri, 02 Apr 2021 00:28:41 GMT
+# Wed, 14 Apr 2021 12:50:19 GMT
 ENV GOLANG_VERSION=1.15.11
-# Fri, 02 Apr 2021 00:32:35 GMT
+# Wed, 14 Apr 2021 12:54:08 GMT
 RUN $url = 'https://storage.googleapis.com/golang/go1.15.11.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '56f63de17cd739287de6d9f3cfdad3b781ad3e4a18aae20ece994ee97c1819fd'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Fri, 02 Apr 2021 00:32:37 GMT
+# Wed, 14 Apr 2021 12:54:10 GMT
 WORKDIR C:\gopath
-# Fri, 02 Apr 2021 01:04:13 GMT
+# Wed, 14 Apr 2021 20:11:23 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Fri, 02 Apr 2021 01:04:14 GMT
+# Wed, 14 Apr 2021 20:11:24 GMT
 ENV XCADDY_VERSION=v0.1.8
-# Fri, 02 Apr 2021 01:04:15 GMT
+# Wed, 14 Apr 2021 20:11:25 GMT
 ENV CADDY_VERSION=v2.3.0
-# Fri, 02 Apr 2021 01:04:16 GMT
+# Wed, 14 Apr 2021 20:11:26 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Fri, 02 Apr 2021 01:05:43 GMT
+# Wed, 14 Apr 2021 20:12:59 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.1.8/xcaddy_0.1.8_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('ccbc594da07adff41098959a78efaaee42fca4e5feb7806661d00841229b20ff1c47fed024c7a84e8554d3e8be3f162d3750e5e8347d6a230c496d4b133213e8')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Fri, 02 Apr 2021 01:05:45 GMT
+# Wed, 14 Apr 2021 20:13:01 GMT
 WORKDIR C:\
 ```
 
@@ -13022,82 +13022,82 @@ WORKDIR C:\
 		Last Modified: Tue, 18 Sep 2018 20:20:50 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:30bda99601c5cbd3b2118409f401852ea648e2319bd81518723e476b28d764c5`  
-		Size: 1.7 GB (1726924885 bytes)  
+	-	`sha256:00b4edb823e6a375d179a28cbfa682c2379d62179e1518485902d6e68b9a9d1e`  
+		Size: 1.7 GB (1724897968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:76680da9dc6db108ddf2e353c494b45e8486a6751619a13ed8fb3ad64b9a16e9`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bb52885e05952959b0fa7aaff23561fcf14d294aed336112b388c94e67709e4f`  
+		Last Modified: Wed, 14 Apr 2021 12:59:14 GMT  
+		Size: 1.4 KB (1406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea2092de86b10f822dfd3a0d8e8dc35924823393cf8301e6db8f8a0a2879fb18`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1306 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ac6e05dba1a284b10130ada4ed7581f5a1c5a90986038e31cc8213e215ca23`  
-		Last Modified: Wed, 10 Mar 2021 14:06:07 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a636ee1e87a6b10caeaef03b68f084d58b5c8412fe4b10ba5d851a6965917196`  
-		Last Modified: Wed, 10 Mar 2021 14:06:01 GMT  
-		Size: 1.3 KB (1322 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a9e03ef5102108f3595c37759ead10b0cfb624aa0f102dbae3b6abb18f03b56`  
-		Last Modified: Wed, 10 Mar 2021 14:06:01 GMT  
-		Size: 1.4 KB (1414 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:840634d0d343cc458ff1f028b165fab14415bf252ce2b7fdb726c41d035c64ff`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 35.3 MB (35273703 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b968b2b2cb37afe5893ed1aa040b1055605f41e8371fe42fca9c6e06bb96c2ed`  
-		Last Modified: Wed, 10 Mar 2021 14:05:55 GMT  
-		Size: 1.4 KB (1381 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b01350c0465bbc3ff96b788fef94740af9378a1cfe9f3c1fb50ffed30c8a7ad`  
-		Last Modified: Wed, 10 Mar 2021 14:05:59 GMT  
-		Size: 10.1 MB (10139029 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a055a610a3b2e63b54d561bc3512bd068b4443a7417486b9dc65a4ad292583c7`  
-		Last Modified: Fri, 02 Apr 2021 00:44:26 GMT  
+	-	`sha256:2c3360763b706a564d93471b21a342ebbda7e047567cf1cbee82dd592ad33e0c`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
 		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c202a262d335726e6d079774ca9e11f52da7326ee18860265595a97527a7b545`  
-		Last Modified: Fri, 02 Apr 2021 00:44:55 GMT  
-		Size: 144.0 MB (143966864 bytes)  
+	-	`sha256:c1a0f653700ac9b57cf3d694cc90107e3220fc678581d1e985219677733ce242`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
+		Size: 1.4 KB (1398 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:737da401effa5536406d2508db65af6f54d9be0a3c5f1347ae56dc5ad1b8c1a4`  
-		Last Modified: Fri, 02 Apr 2021 00:44:26 GMT  
-		Size: 1.6 KB (1579 bytes)  
+	-	`sha256:2a59d82702c225a2ca8cd2a5476122f55d8619eae959c9cb8323b68d70a2ed19`  
+		Last Modified: Wed, 14 Apr 2021 12:59:06 GMT  
+		Size: 1.4 KB (1395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c52d85af463d5a66468c058122750336a2d002544c19dbaff721875cb8c6c24`  
-		Last Modified: Fri, 02 Apr 2021 01:09:48 GMT  
-		Size: 1.3 KB (1309 bytes)  
+	-	`sha256:62435cd2b7652fc97ef3dc1a8968446f3f6e95f0ff1d6dcb176a3f0c2b14c2f8`  
+		Last Modified: Wed, 14 Apr 2021 12:59:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82f1bf71cbf1adab82ad5a9d8f5b71571306bf6bcf254b686963f2ed7562e7fc`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.3 KB (1315 bytes)  
+	-	`sha256:a6d78a3a3d6cb25f55dc9d9947f7449a14717e6b787e49571a837e72b79334cf`  
+		Last Modified: Wed, 14 Apr 2021 12:59:41 GMT  
+		Size: 30.8 MB (30752513 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba22c0fd4b07e8d5ff2ab18028eb3f4d87c20420e43a2afbf78c8da9032399b2`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:0b774a32e346c00e004abbbd7290530d0a3f3dfb11915be2b2fa73c402da6bdd`  
+		Last Modified: Wed, 14 Apr 2021 12:59:03 GMT  
+		Size: 1.4 KB (1409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:562b238ffe2f30d1bebcac0de5c7d019504926664c08f5730389c7c1e426c12a`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.4 KB (1394 bytes)  
+	-	`sha256:2d153061f2f0d8ef33f71c4b9afd90899e21556e320d7103a8a9fb544c1cb521`  
+		Last Modified: Wed, 14 Apr 2021 12:59:11 GMT  
+		Size: 5.6 MB (5608025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f0b00fc7a9cc9546977571c1922da63009fc89865ee5ae6b603cdf38d5b56ad`  
-		Last Modified: Fri, 02 Apr 2021 01:09:47 GMT  
-		Size: 11.5 MB (11528518 bytes)  
+	-	`sha256:1388c10d71d4f1005ced63001aeb1392f019139011ddf961220ee27a412cbadb`  
+		Last Modified: Wed, 14 Apr 2021 13:07:44 GMT  
+		Size: 1.4 KB (1395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:606193453afd7f6b2c5d21cdd640e297c0e3b0514642cc7044ff5a83ef6e66c7`  
-		Last Modified: Fri, 02 Apr 2021 01:09:44 GMT  
-		Size: 1.3 KB (1309 bytes)  
+	-	`sha256:913a59644a65d5f7183aa7bebce08c8b09d1f627c257105a7db7514919858b6e`  
+		Last Modified: Wed, 14 Apr 2021 13:08:21 GMT  
+		Size: 143.9 MB (143889855 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a71b095a33aa8cc59c703b0a8f3b0bb53508123d89c531d6369de947b72b26f5`  
+		Last Modified: Wed, 14 Apr 2021 13:07:46 GMT  
+		Size: 1.5 KB (1492 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:07c7a21f93788806d3510b3cc8f7692b086c096861b42c218993697d04a890de`  
+		Last Modified: Wed, 14 Apr 2021 20:25:25 GMT  
+		Size: 1.4 KB (1408 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:04fbdf3acf4f09ad44474940358b0b044863361fee2bb201478a8b4b40cced75`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.4 KB (1404 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:600e2fd01e09ce5bb623f7dbf3080c7127a8c2dc0b54422dee1525e75e6ae6de`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.4 KB (1434 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d594e3e36caa66775e5660018a80c02ef6bf4b16e626bdbca53a885634db4a29`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.4 KB (1428 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d06f5b24d29c79d20732eaf23dc495c89959ba869fbcb3bb88d35b42f38616a1`  
+		Last Modified: Wed, 14 Apr 2021 20:25:24 GMT  
+		Size: 7.0 MB (6976405 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c11b840b2827a9bb3da231a34e716b4fbd570dffa0b711f9fcbb7ff630c90052`  
+		Last Modified: Wed, 14 Apr 2021 20:25:23 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:latest`
 
 ```console
-$ docker pull caddy@sha256:e0561602b41351448ab80bdb6302b6f2aa7bb6ca5bfefe02886387414d9ff0d9
+$ docker pull caddy@sha256:88fc125055b8c4dafe67a48219fd3a89c0a472aa254d2835b2e298b93493b28e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13108,265 +13108,265 @@ $ docker pull caddy@sha256:e0561602b41351448ab80bdb6302b6f2aa7bb6ca5bfefe0288638
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
 	-	linux; s390x
-	-	windows version 10.0.17763.1817; amd64
-	-	windows version 10.0.14393.4283; amd64
+	-	windows version 10.0.17763.1879; amd64
+	-	windows version 10.0.14393.4350; amd64
 
 ### `caddy:latest` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:629c5800ccf51df482a4e63266e4570de3e573e862d902398b03cbfca2212b4d
+$ docker pull caddy@sha256:6fbf52298c46c55c572670b5395ecaee5d399338003c9bb4e4abed875c542f4f
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.7 MB (14728095 bytes)**  
+-	Total Size: **14.7 MB (14728953 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e073d63a624f18bd8e2f94b9e84715e5a33a817db19afa42afc8ea95e59d568`
+-	Image ID: `sha256:7395cc3713b2ca5574a9b4aafc468a1533d16582efe47dcab74ed547540d698a`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 20:10:13 GMT
-ADD file:f77db8e5b937d8ebb7e254eccd4d311798ea9f4dd5081ea2a7e2b1d3790300c2 in / 
-# Wed, 31 Mar 2021 20:10:13 GMT
+# Wed, 14 Apr 2021 19:19:49 GMT
+ADD file:4f526aa99067d82b341f7ca538f7826b7c23a628f1b615eea2883a2d434c1b90 in / 
+# Wed, 14 Apr 2021 19:19:49 GMT
 CMD ["/bin/sh"]
-# Thu, 01 Apr 2021 13:53:15 GMT
+# Wed, 14 Apr 2021 20:10:47 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Thu, 01 Apr 2021 13:53:17 GMT
+# Wed, 14 Apr 2021 20:10:49 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Thu, 01 Apr 2021 13:53:17 GMT
+# Wed, 14 Apr 2021 20:10:49 GMT
 ENV CADDY_VERSION=v2.3.0
-# Thu, 01 Apr 2021 13:53:20 GMT
+# Wed, 14 Apr 2021 20:10:52 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 ENV XDG_CONFIG_HOME=/config
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 ENV XDG_DATA_HOME=/data
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:53 GMT
 VOLUME [/config]
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 VOLUME [/data]
-# Thu, 01 Apr 2021 13:53:21 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:54 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Thu, 01 Apr 2021 13:53:22 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:55 GMT
 EXPOSE 80
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 EXPOSE 443
-# Thu, 01 Apr 2021 13:53:23 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 EXPOSE 2019
-# Thu, 01 Apr 2021 13:53:24 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 WORKDIR /srv
-# Thu, 01 Apr 2021 13:53:24 GMT
+# Wed, 14 Apr 2021 20:10:56 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:532819f3e44cebad88c82f5393801acb876b7a61d36b84bce646561789bb2018`  
-		Last Modified: Wed, 31 Mar 2021 20:11:03 GMT  
-		Size: 2.8 MB (2799712 bytes)  
+	-	`sha256:339de151aab4bc06eed8409daae147c408478cb538dacb90cc63f19ad4eba80b`  
+		Last Modified: Wed, 14 Apr 2021 19:20:51 GMT  
+		Size: 2.8 MB (2800567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccc82ca1670c70e5b605729b271409acba02ca26c3f669bf1d95a067fb853a90`  
-		Last Modified: Thu, 01 Apr 2021 13:54:20 GMT  
-		Size: 300.0 KB (300021 bytes)  
+	-	`sha256:8b7a0cd9cca5be9b30bbc70611052d1456502e1f338ce4b14946233b21cd6a9a`  
+		Last Modified: Wed, 14 Apr 2021 20:11:46 GMT  
+		Size: 300.0 KB (300016 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21d66f69260e9358ba74c27e0ed110b9ff7781c5f90d5d01f86d6ef289834382`  
-		Last Modified: Thu, 01 Apr 2021 13:54:17 GMT  
-		Size: 5.8 KB (5829 bytes)  
+	-	`sha256:b5666523658a43fbbdff6b8fca498a988f4dcecc3ce027f1701414658c21d4ea`  
+		Last Modified: Wed, 14 Apr 2021 20:11:46 GMT  
+		Size: 5.8 KB (5832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9b38557b1fd80a7712b7263f0896f076afdeb9f25f68a79e288b87490aa3047`  
-		Last Modified: Thu, 01 Apr 2021 13:54:19 GMT  
-		Size: 11.6 MB (11622380 bytes)  
+	-	`sha256:b097228407f13a161f68b188b0a4f255855b64d84e7b076745a744d5aa7ed8cf`  
+		Last Modified: Wed, 14 Apr 2021 20:11:49 GMT  
+		Size: 11.6 MB (11622383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd37d6fba45d5f1633f00b6a9d204abacad2a6918dc355706fe0decc0bc4e565`  
-		Last Modified: Thu, 01 Apr 2021 13:54:18 GMT  
-		Size: 153.0 B  
+	-	`sha256:40682d93cc09b4592a1b9c08d48d0a956b5eef4f123d80d1a12942482edb6aab`  
+		Last Modified: Wed, 14 Apr 2021 20:11:46 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:latest` - linux; arm variant v6
 
 ```console
-$ docker pull caddy@sha256:b57cdc61b54865a7ff2ea4ef9d16458537d40e0dc25559d6540111874abbe4ce
+$ docker pull caddy@sha256:0df9df9725cab39fe073887c98b54bf7bf1c96b3ed0e23916737c7c4877576c6
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.9 MB (13855580 bytes)**  
+-	Total Size: **13.9 MB (13856181 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88293e19906b6b2275ff6e127e29960b1fdf0cf0c4baa4bbce4ea297e90db731`
+-	Image ID: `sha256:fce1c33ce4509195edc1c67d2dcd15c6c5fc0b35cec2e90714ec3007739600eb`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 17:19:11 GMT
-ADD file:00ac3d0df16779e7564cda9cbf94eef90ffa8043778a867272ff0135a1fb537f in / 
-# Wed, 31 Mar 2021 17:19:12 GMT
+# Wed, 14 Apr 2021 18:49:49 GMT
+ADD file:82fa6a18d24e3f535c9061d2e111d63fe6d8a27710bb34a17b326e605ff478be in / 
+# Wed, 14 Apr 2021 18:49:50 GMT
 CMD ["/bin/sh"]
-# Wed, 31 Mar 2021 17:36:32 GMT
+# Wed, 14 Apr 2021 19:45:19 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Wed, 31 Mar 2021 17:36:36 GMT
+# Wed, 14 Apr 2021 19:45:33 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Wed, 31 Mar 2021 17:36:38 GMT
+# Wed, 14 Apr 2021 19:45:36 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 31 Mar 2021 17:36:45 GMT
+# Wed, 14 Apr 2021 19:45:54 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Wed, 31 Mar 2021 17:36:51 GMT
+# Wed, 14 Apr 2021 19:46:03 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Wed, 31 Mar 2021 17:36:52 GMT
+# Wed, 14 Apr 2021 19:46:04 GMT
 ENV XDG_CONFIG_HOME=/config
-# Wed, 31 Mar 2021 17:36:53 GMT
+# Wed, 14 Apr 2021 19:46:05 GMT
 ENV XDG_DATA_HOME=/data
-# Wed, 31 Mar 2021 17:36:55 GMT
+# Wed, 14 Apr 2021 19:46:07 GMT
 VOLUME [/config]
-# Wed, 31 Mar 2021 17:36:55 GMT
+# Wed, 14 Apr 2021 19:46:08 GMT
 VOLUME [/data]
-# Wed, 31 Mar 2021 17:36:56 GMT
+# Wed, 14 Apr 2021 19:46:10 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 31 Mar 2021 17:36:58 GMT
+# Wed, 14 Apr 2021 19:46:11 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 31 Mar 2021 17:36:59 GMT
+# Wed, 14 Apr 2021 19:46:13 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 31 Mar 2021 17:37:00 GMT
+# Wed, 14 Apr 2021 19:46:16 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 31 Mar 2021 17:37:01 GMT
+# Wed, 14 Apr 2021 19:46:16 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 31 Mar 2021 17:37:03 GMT
+# Wed, 14 Apr 2021 19:46:18 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 31 Mar 2021 17:37:04 GMT
+# Wed, 14 Apr 2021 19:46:19 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 31 Mar 2021 17:37:05 GMT
+# Wed, 14 Apr 2021 19:46:20 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 31 Mar 2021 17:37:07 GMT
+# Wed, 14 Apr 2021 19:46:21 GMT
 EXPOSE 80
-# Wed, 31 Mar 2021 17:37:08 GMT
+# Wed, 14 Apr 2021 19:46:21 GMT
 EXPOSE 443
-# Wed, 31 Mar 2021 17:37:10 GMT
+# Wed, 14 Apr 2021 19:46:22 GMT
 EXPOSE 2019
-# Wed, 31 Mar 2021 17:37:11 GMT
+# Wed, 14 Apr 2021 19:46:23 GMT
 WORKDIR /srv
-# Wed, 31 Mar 2021 17:37:13 GMT
+# Wed, 14 Apr 2021 19:46:24 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:66e54586dae0889b30da12f7a66838d9b86511b58696c83c3b9166ff1a534bbe`  
-		Last Modified: Wed, 31 Mar 2021 17:20:05 GMT  
-		Size: 2.6 MB (2604658 bytes)  
+	-	`sha256:b452d2916bdfd021add56f1eda6bdea35400671ef07b38316ef82fce92a88fee`  
+		Last Modified: Wed, 14 Apr 2021 18:50:38 GMT  
+		Size: 2.6 MB (2605253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1532456df32c320ccd3c9ff5433c9e44d873ef87a0dc9fc29f9cf256b517eb4`  
-		Last Modified: Wed, 31 Mar 2021 17:38:50 GMT  
-		Size: 300.1 KB (300103 bytes)  
+	-	`sha256:6b83e8a6ea044be2a9e3c87c5fdc047ce9a52d1a64e48f8330d9a19002ecffe1`  
+		Last Modified: Wed, 14 Apr 2021 19:47:50 GMT  
+		Size: 300.1 KB (300117 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7263f61714ef61a0c59bef8e70bc49a741a357b0a0fc556b44f8344df37ea0f8`  
-		Last Modified: Wed, 31 Mar 2021 17:38:52 GMT  
-		Size: 5.8 KB (5830 bytes)  
+	-	`sha256:b9949bdfbb1d296dd158f8c2bb959f96c8da162a0d579f68fa3f5a4af58bed5b`  
+		Last Modified: Wed, 14 Apr 2021 19:47:50 GMT  
+		Size: 5.8 KB (5826 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:818002dab28746359de43d5a88d06c77cc3a353c838e15c6b6a67d48352cc5c0`  
-		Last Modified: Wed, 31 Mar 2021 17:38:54 GMT  
-		Size: 10.9 MB (10944835 bytes)  
+	-	`sha256:c2c5cc316af29a89f9a1d4e279b5d1bb964095a15795647d013f40921bc808c3`  
+		Last Modified: Wed, 14 Apr 2021 19:47:54 GMT  
+		Size: 10.9 MB (10944831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7979a3c808bf5c07c668f5966a15458dbfe9aba5aa7d761e690dd3a5cadf45eb`  
-		Last Modified: Wed, 31 Mar 2021 17:38:52 GMT  
+	-	`sha256:2f6670cc680ce5e5d9a0adfc380fe4a89ac2a2dcef5a7adeb874967a356e6742`  
+		Last Modified: Wed, 14 Apr 2021 19:47:50 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:latest` - linux; arm variant v7
 
 ```console
-$ docker pull caddy@sha256:6d510324512c20fc0d40aeb8b6e5b98255c857ad2dee894b6cb6e66f0231cf9b
+$ docker pull caddy@sha256:1a41623f53d582c8b503ae859f6ae98c7c0695eddb11bdbf8514b9b914955c3d
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.6 MB (13638799 bytes)**  
+-	Total Size: **13.6 MB (13639723 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42db38da968682707e6cf0fabb16f93770388907d8a208fca0db74cae3183ba2`
+-	Image ID: `sha256:9a4b837694902a1a259a4915444feda59d895ed37ffbef66b8518b9a884f029c`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 18:13:45 GMT
-ADD file:1270a9135e4e3d6bcd51f9c8bb7a5129c493366412591f1a6885db98056a572e in / 
-# Wed, 31 Mar 2021 18:13:47 GMT
+# Wed, 14 Apr 2021 18:57:50 GMT
+ADD file:d844cc7b5e00fb62be39d903a2fb4a08f700e75112c8eef1f31101e846ed010d in / 
+# Wed, 14 Apr 2021 18:57:52 GMT
 CMD ["/bin/sh"]
-# Thu, 01 Apr 2021 08:11:44 GMT
+# Wed, 14 Apr 2021 19:39:25 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Thu, 01 Apr 2021 08:11:47 GMT
+# Wed, 14 Apr 2021 19:39:32 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Thu, 01 Apr 2021 08:11:48 GMT
+# Wed, 14 Apr 2021 19:39:34 GMT
 ENV CADDY_VERSION=v2.3.0
-# Thu, 01 Apr 2021 08:11:52 GMT
+# Wed, 14 Apr 2021 19:39:38 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Thu, 01 Apr 2021 08:11:55 GMT
+# Wed, 14 Apr 2021 19:39:40 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Thu, 01 Apr 2021 08:11:56 GMT
+# Wed, 14 Apr 2021 19:39:41 GMT
 ENV XDG_CONFIG_HOME=/config
-# Thu, 01 Apr 2021 08:11:57 GMT
+# Wed, 14 Apr 2021 19:39:42 GMT
 ENV XDG_DATA_HOME=/data
-# Thu, 01 Apr 2021 08:11:58 GMT
+# Wed, 14 Apr 2021 19:39:43 GMT
 VOLUME [/config]
-# Thu, 01 Apr 2021 08:11:59 GMT
+# Wed, 14 Apr 2021 19:39:45 GMT
 VOLUME [/data]
-# Thu, 01 Apr 2021 08:12:00 GMT
+# Wed, 14 Apr 2021 19:39:46 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Thu, 01 Apr 2021 08:12:01 GMT
+# Wed, 14 Apr 2021 19:39:49 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Thu, 01 Apr 2021 08:12:02 GMT
+# Wed, 14 Apr 2021 19:39:51 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Thu, 01 Apr 2021 08:12:03 GMT
+# Wed, 14 Apr 2021 19:39:52 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Thu, 01 Apr 2021 08:12:05 GMT
+# Wed, 14 Apr 2021 19:39:53 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Thu, 01 Apr 2021 08:12:06 GMT
+# Wed, 14 Apr 2021 19:39:54 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Thu, 01 Apr 2021 08:12:07 GMT
+# Wed, 14 Apr 2021 19:39:55 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Thu, 01 Apr 2021 08:12:08 GMT
+# Wed, 14 Apr 2021 19:39:55 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Thu, 01 Apr 2021 08:12:09 GMT
+# Wed, 14 Apr 2021 19:39:56 GMT
 EXPOSE 80
-# Thu, 01 Apr 2021 08:12:11 GMT
+# Wed, 14 Apr 2021 19:39:57 GMT
 EXPOSE 443
-# Thu, 01 Apr 2021 08:12:13 GMT
+# Wed, 14 Apr 2021 19:39:58 GMT
 EXPOSE 2019
-# Thu, 01 Apr 2021 08:12:15 GMT
+# Wed, 14 Apr 2021 19:39:59 GMT
 WORKDIR /srv
-# Thu, 01 Apr 2021 08:12:16 GMT
+# Wed, 14 Apr 2021 19:40:00 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:b04429a2165487924dcbfedfff74fa262e6828327d04bb4b1c6a477096f5010e`  
-		Last Modified: Wed, 31 Mar 2021 18:15:12 GMT  
-		Size: 2.4 MB (2408269 bytes)  
+	-	`sha256:420c7481a3a76d5d12df768d2745ddbe40357df0af780c756a5a7d1f2a43d288`  
+		Last Modified: Wed, 14 Apr 2021 18:58:46 GMT  
+		Size: 2.4 MB (2409178 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:547b5d01ba24abc02b4f05f8134bfb156ce1840f496ed03a1316c882625bd41f`  
-		Last Modified: Thu, 01 Apr 2021 08:13:34 GMT  
-		Size: 299.2 KB (299199 bytes)  
+	-	`sha256:b239ad5e698454501b0de011bffea35a660806a0b85a6141776581e3a98bc467`  
+		Last Modified: Wed, 14 Apr 2021 19:41:24 GMT  
+		Size: 299.2 KB (299210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a883a914d37801ae97b0fac82c62e4f70ef4c92fc53417a91a23b2e69d36d9bb`  
-		Last Modified: Thu, 01 Apr 2021 08:13:34 GMT  
+	-	`sha256:8a0460b038be93717158ad9cdb6f83768b7129eaf4fcaef8620adc7509d0e5fe`  
+		Last Modified: Wed, 14 Apr 2021 19:41:23 GMT  
 		Size: 5.8 KB (5833 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:475143e7b89d1a36700916ec3c8f0caae9b57d5cd9ba187b9f3fd5d9a71eddcf`  
-		Last Modified: Thu, 01 Apr 2021 08:13:38 GMT  
-		Size: 10.9 MB (10925346 bytes)  
+	-	`sha256:0905d1ca8c4f74966ae8a7b5ebe8fdb33854c4a759d543d767dd9a0add81f155`  
+		Last Modified: Wed, 14 Apr 2021 19:41:29 GMT  
+		Size: 10.9 MB (10925348 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e79cdab22a3397c4a98f63a7e96c51881033744b1f198c4984072e7303e9f73`  
-		Last Modified: Thu, 01 Apr 2021 08:13:34 GMT  
-		Size: 152.0 B  
+	-	`sha256:2f02da274f552e184a7fa5527990e666d77c70e3715a0d96b7588e7433b3022a`  
+		Last Modified: Wed, 14 Apr 2021 19:41:23 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:latest` - linux; arm64 variant v8
@@ -13458,235 +13458,235 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ### `caddy:latest` - linux; ppc64le
 
 ```console
-$ docker pull caddy@sha256:bffc665d927b1ed51d5f36dafc191678472776dea35931198b09deebbe4d31fb
+$ docker pull caddy@sha256:f551e1db7910e2d5235d303760aff5b514fc6e8b49d8d67d434bb23c40ac25db
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.4 MB (13355782 bytes)**  
+-	Total Size: **13.4 MB (13356454 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60f81a6d1059252f032458e7bf5dff42ef2844beec6f1c212b5901fb867fdf0a`
+-	Image ID: `sha256:982bd235f46e537404cdab42c3dfb3d0058f97ed5d7984f2e71ad8734adcc6a8`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 18:56:11 GMT
-ADD file:d51af61c5955c980d18387ab532110c3874f95a87768be84dfd1eeb3e701d3a4 in / 
-# Wed, 31 Mar 2021 18:56:16 GMT
+# Wed, 14 Apr 2021 19:31:22 GMT
+ADD file:f8b081207f6d35f8ebd06aa471e350644151d183801f678def586d8f37e81366 in / 
+# Wed, 14 Apr 2021 19:31:29 GMT
 CMD ["/bin/sh"]
-# Thu, 01 Apr 2021 20:19:14 GMT
+# Wed, 14 Apr 2021 22:09:04 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Thu, 01 Apr 2021 20:19:27 GMT
+# Wed, 14 Apr 2021 22:09:16 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Thu, 01 Apr 2021 20:19:34 GMT
+# Wed, 14 Apr 2021 22:09:24 GMT
 ENV CADDY_VERSION=v2.3.0
-# Thu, 01 Apr 2021 20:19:48 GMT
+# Wed, 14 Apr 2021 22:09:39 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Thu, 01 Apr 2021 20:20:00 GMT
+# Wed, 14 Apr 2021 22:09:51 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Thu, 01 Apr 2021 20:20:05 GMT
+# Wed, 14 Apr 2021 22:09:56 GMT
 ENV XDG_CONFIG_HOME=/config
-# Thu, 01 Apr 2021 20:20:12 GMT
+# Wed, 14 Apr 2021 22:10:01 GMT
 ENV XDG_DATA_HOME=/data
-# Thu, 01 Apr 2021 20:20:18 GMT
+# Wed, 14 Apr 2021 22:10:06 GMT
 VOLUME [/config]
-# Thu, 01 Apr 2021 20:20:23 GMT
+# Wed, 14 Apr 2021 22:10:15 GMT
 VOLUME [/data]
-# Thu, 01 Apr 2021 20:20:31 GMT
+# Wed, 14 Apr 2021 22:10:22 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Thu, 01 Apr 2021 20:20:39 GMT
+# Wed, 14 Apr 2021 22:10:32 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Thu, 01 Apr 2021 20:20:48 GMT
+# Wed, 14 Apr 2021 22:10:40 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Thu, 01 Apr 2021 20:20:54 GMT
+# Wed, 14 Apr 2021 22:10:46 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Thu, 01 Apr 2021 20:21:00 GMT
+# Wed, 14 Apr 2021 22:10:52 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Thu, 01 Apr 2021 20:21:05 GMT
+# Wed, 14 Apr 2021 22:10:58 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Thu, 01 Apr 2021 20:21:09 GMT
+# Wed, 14 Apr 2021 22:11:03 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Thu, 01 Apr 2021 20:21:14 GMT
+# Wed, 14 Apr 2021 22:11:08 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Thu, 01 Apr 2021 20:21:21 GMT
+# Wed, 14 Apr 2021 22:11:14 GMT
 EXPOSE 80
-# Thu, 01 Apr 2021 20:21:27 GMT
+# Wed, 14 Apr 2021 22:11:20 GMT
 EXPOSE 443
-# Thu, 01 Apr 2021 20:21:33 GMT
+# Wed, 14 Apr 2021 22:11:27 GMT
 EXPOSE 2019
-# Thu, 01 Apr 2021 20:21:42 GMT
+# Wed, 14 Apr 2021 22:11:35 GMT
 WORKDIR /srv
-# Thu, 01 Apr 2021 20:21:47 GMT
+# Wed, 14 Apr 2021 22:11:41 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:d6d4557865d9cec3513c1a5e744cb1073a563d464b8d546911289b9df9998f1b`  
-		Last Modified: Wed, 31 Mar 2021 18:57:36 GMT  
-		Size: 2.8 MB (2806070 bytes)  
+	-	`sha256:45707b9629c4ab8c6046680737229218fe844f38d08e5458b24605e1dbfd2709`  
+		Last Modified: Wed, 14 Apr 2021 19:32:50 GMT  
+		Size: 2.8 MB (2806750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afc0e09b51c0cca190757d6fc9c2b15a635a361717a65973c8d6edf77918d6d5`  
-		Last Modified: Thu, 01 Apr 2021 20:27:39 GMT  
-		Size: 302.3 KB (302335 bytes)  
+	-	`sha256:d93dd31358a6e859a05bb506b946720f02c7ec7969776d811b20eaaa84508cd7`  
+		Last Modified: Wed, 14 Apr 2021 22:15:41 GMT  
+		Size: 302.3 KB (302339 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:091713ba252aea42d1ddb0424ba2c2861b3afd2d0102c5d0a6070bacd31e8b49`  
-		Last Modified: Thu, 01 Apr 2021 20:27:39 GMT  
-		Size: 5.8 KB (5832 bytes)  
+	-	`sha256:f8077b8c9cca163d9a34281a866cf5fe991ff8c160ebd1ab1b617c6b722ec690`  
+		Last Modified: Wed, 14 Apr 2021 22:15:41 GMT  
+		Size: 5.8 KB (5831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1840f6bc70853fb9cc5e9c5752486488368649459a0beaa0684081a5b4a44bd4`  
-		Last Modified: Thu, 01 Apr 2021 20:27:42 GMT  
-		Size: 10.2 MB (10241392 bytes)  
+	-	`sha256:55884816b8eca8150db9473989410e372c69c5431deb51a6cacd029895cf3dd6`  
+		Last Modified: Wed, 14 Apr 2021 22:15:43 GMT  
+		Size: 10.2 MB (10241380 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1fb03f086aa28c855432404e128ff2009c1198d61578654e584a12062e24953f`  
-		Last Modified: Thu, 01 Apr 2021 20:27:39 GMT  
-		Size: 153.0 B  
+	-	`sha256:51efee06e0a650ff5f146fc54a695d4bf2b44e19da18120fdc494982d52cdd62`  
+		Last Modified: Wed, 14 Apr 2021 22:15:41 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:latest` - linux; s390x
 
 ```console
-$ docker pull caddy@sha256:9d992badb7530225182676af12ae945f5f2de2f5ad7d3946b397892a6de4c123
+$ docker pull caddy@sha256:68aaf625a22bff4e71edf895129baa2d562765c24ac81a5c68aff2995ebf89c2
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.1 MB (14145974 bytes)**  
+-	Total Size: **14.1 MB (14146947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b9c8a68869d0806c29e6c2c9c655d3e9085af285c6c24ea651ad3bdffd714e38`
+-	Image ID: `sha256:dbfd454f0dfa64ee1a952f9ed74a3f3bda3688a9565f062c3ea37e48b54eb210`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 
 ```dockerfile
-# Wed, 31 Mar 2021 17:15:04 GMT
-ADD file:1f37b92ea1f573c4810b1d056dc4880cf4035e143451d9b2b76fac1e3b462248 in / 
-# Wed, 31 Mar 2021 17:15:04 GMT
+# Wed, 14 Apr 2021 18:41:42 GMT
+ADD file:c73a5ff435939cdc9d621ee9dc2aa5a54a5f5e0241caae8dc948c03c423d9fef in / 
+# Wed, 14 Apr 2021 18:41:42 GMT
 CMD ["/bin/sh"]
-# Wed, 31 Mar 2021 18:55:58 GMT
+# Wed, 14 Apr 2021 20:07:21 GMT
 RUN apk add --no-cache ca-certificates mailcap
-# Wed, 31 Mar 2021 18:56:00 GMT
+# Wed, 14 Apr 2021 20:07:22 GMT
 RUN set -eux; 	mkdir -p 		/config/caddy 		/data/caddy 		/etc/caddy 		/usr/share/caddy 	; 	wget -O /etc/caddy/Caddyfile "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"; 	wget -O /usr/share/caddy/index.html "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"
-# Wed, 31 Mar 2021 18:56:00 GMT
+# Wed, 14 Apr 2021 20:07:22 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 31 Mar 2021 18:56:04 GMT
+# Wed, 14 Apr 2021 20:07:25 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='7112a03bf341a4ccc5332b5ea715de9a68316d2aa2f468bdc263b192448ce412e002acfda68bd0606088b35c5de1f2e93f2aa64ccc065a039f87ee34e0b85b98' ;; 		armhf)   binArch='armv6'; checksum='a597dbfbd277648881cf51739382a509e5014b3342c78e444f6a680f93836d46c12fc1294e200358fd4a0a40688c5582c81bff14dffd0bba5303170a4d274014' ;; 		armv7)   binArch='armv7'; checksum='99e7703ffa9dd8f636f4624c0972fd3d4af01523953ebf487b919ce93e1989b5513785dd9e902326423eb334bb22dddbcccab382f46763ec11c43c9e513f7c38' ;; 		aarch64) binArch='arm64'; checksum='ef1e44293a935b05602524dbab96b51c862864b8a36c7de48b3329dab9b8a4b7d1930460868fded3afb3a74bdfb5a1c1c0ba46f1401edf648a370c0f7be8a05b' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='62e4a191cae8a1a023ab2653b76439cd4182ca49af4f00bff56507f9f1f4af3e72716a59c59ff157efa87c655110fb2491125baae72590719870dc795d19538d' ;; 		s390x)   binArch='s390x'; checksum='48cac248c29218e153d76408b172510f4f02e3fe7f7b2209371d2c69ed46d2bfa1f572f46390a00eda6f9296a8cac744a36e21cae6df791bd9d98f22b43ea42b' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/caddy.tar.gz "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/caddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; 	rm -f /tmp/caddy.tar.gz; 	chmod +x /usr/bin/caddy; 	caddy version
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:26 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:26 GMT
 ENV XDG_CONFIG_HOME=/config
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 ENV XDG_DATA_HOME=/data
-# Wed, 31 Mar 2021 18:56:05 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 VOLUME [/config]
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 VOLUME [/data]
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:27 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 31 Mar 2021 18:56:06 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:28 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 31 Mar 2021 18:56:07 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 EXPOSE 80
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 EXPOSE 443
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:29 GMT
 EXPOSE 2019
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:30 GMT
 WORKDIR /srv
-# Wed, 31 Mar 2021 18:56:08 GMT
+# Wed, 14 Apr 2021 20:07:30 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
 -	Layers:
-	-	`sha256:38ca5430c9af12b6b6dee7c10eb6b1eb0e4eb4f5f02a97890579c4b049d00233`  
-		Last Modified: Wed, 31 Mar 2021 17:15:46 GMT  
-		Size: 2.6 MB (2567453 bytes)  
+	-	`sha256:27efec644c4207cbc4d1400f84f3402937aab5ce72489976148896e42a219820`  
+		Last Modified: Wed, 14 Apr 2021 18:42:24 GMT  
+		Size: 2.6 MB (2568428 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe8eb19b6319d0b09121581759094c3eb58e5574e2063affb6c42c0e1a1937a0`  
-		Last Modified: Wed, 31 Mar 2021 18:57:00 GMT  
+	-	`sha256:5dab58470b754d248933aa56b48394e3ee4db4561d430d23ea378f0371ca59cb`  
+		Last Modified: Wed, 14 Apr 2021 20:08:16 GMT  
 		Size: 300.5 KB (300471 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbd6e269a873b8a21e2787b0ea05662c0f2676aa9043f52b8884081965be7112`  
-		Last Modified: Wed, 31 Mar 2021 18:57:00 GMT  
-		Size: 5.8 KB (5830 bytes)  
+	-	`sha256:fd514b608428ea44dae7dc67e641a276593e7715178d86d7702153521de849d7`  
+		Last Modified: Wed, 14 Apr 2021 20:08:16 GMT  
+		Size: 5.8 KB (5832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02f6a8a7e19cb11edbda771ce361181202915f4760cdaef5e290b1758cc7b88c`  
-		Last Modified: Wed, 31 Mar 2021 18:57:02 GMT  
-		Size: 11.3 MB (11272066 bytes)  
+	-	`sha256:a437814dab55b178c71f55598a70d0b532b3f645bdeb43e89244a6ebcde01446`  
+		Last Modified: Wed, 14 Apr 2021 20:08:18 GMT  
+		Size: 11.3 MB (11272061 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec92d2dcab4ee41e4e626d8b360a6feff3822db894894865a36bbe9cfc759df0`  
-		Last Modified: Wed, 31 Mar 2021 18:57:00 GMT  
-		Size: 154.0 B  
+	-	`sha256:412be9af105c69ee35fec76e8c0dbde8c8ba61c774b7d354e9c9fc8f538e8155`  
+		Last Modified: Wed, 14 Apr 2021 20:08:16 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `caddy:latest` - windows version 10.0.17763.1817; amd64
+### `caddy:latest` - windows version 10.0.17763.1879; amd64
 
 ```console
-$ docker pull caddy@sha256:5203e8707456e06dfc8d03ba99cdfe84d4b3dc00be512770827ef5e692ec18e0
+$ docker pull caddy@sha256:fdb259b96e8413c959258115e3cc0ed6272cd362b32dcee80b7c5875b3cca213
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2487805125 bytes)**  
+-	Total Size: **2.5 GB (2487217133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f93dd36e27e04e9ac5d0bc9da46fbeebc4541b2a242f90a7bc7003d2bc636fe`
+-	Image ID: `sha256:db78127126d7dbe748dc638552655f6a86f11faa664f34ed256da804f77de223`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 07 May 2020 05:09:25 GMT
 RUN Apply image 1809-RTM-amd64
-# Sat, 27 Feb 2021 09:32:06 GMT
+# Fri, 09 Apr 2021 20:34:41 GMT
 RUN Install update 1809-amd64
-# Wed, 10 Mar 2021 13:08:20 GMT
+# Wed, 14 Apr 2021 12:09:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 21:27:31 GMT
+# Wed, 14 Apr 2021 20:04:03 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Wed, 10 Mar 2021 21:27:32 GMT
+# Wed, 14 Apr 2021 20:04:04 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 10 Mar 2021 21:28:05 GMT
+# Wed, 14 Apr 2021 20:04:43 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('afc504cb0a641729ba546c0cadea524a170dcca2a915473aaf032a7c666c7c56ac059752f34b5d50700a692647b9b395b530cd8299ac3650c729adce5daa1ba5')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Wed, 10 Mar 2021 21:28:06 GMT
+# Wed, 14 Apr 2021 20:04:45 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Wed, 10 Mar 2021 21:28:07 GMT
+# Wed, 14 Apr 2021 20:04:46 GMT
 ENV XDG_DATA_HOME=c:/data
-# Wed, 10 Mar 2021 21:28:08 GMT
+# Wed, 14 Apr 2021 20:04:47 GMT
 VOLUME [c:/config]
-# Wed, 10 Mar 2021 21:28:09 GMT
+# Wed, 14 Apr 2021 20:04:48 GMT
 VOLUME [c:/data]
-# Wed, 10 Mar 2021 21:28:11 GMT
+# Wed, 14 Apr 2021 20:04:49 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 10 Mar 2021 21:28:12 GMT
+# Wed, 14 Apr 2021 20:04:50 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 10 Mar 2021 21:28:13 GMT
+# Wed, 14 Apr 2021 20:04:51 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 10 Mar 2021 21:28:14 GMT
+# Wed, 14 Apr 2021 20:04:53 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 10 Mar 2021 21:28:15 GMT
+# Wed, 14 Apr 2021 20:04:54 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 10 Mar 2021 21:28:16 GMT
+# Wed, 14 Apr 2021 20:04:55 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 10 Mar 2021 21:28:17 GMT
+# Wed, 14 Apr 2021 20:04:56 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 10 Mar 2021 21:28:18 GMT
+# Wed, 14 Apr 2021 20:04:57 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 10 Mar 2021 21:28:19 GMT
+# Wed, 14 Apr 2021 20:04:58 GMT
 EXPOSE 80
-# Wed, 10 Mar 2021 21:28:20 GMT
+# Wed, 14 Apr 2021 20:05:00 GMT
 EXPOSE 443
-# Wed, 10 Mar 2021 21:28:21 GMT
+# Wed, 14 Apr 2021 20:05:01 GMT
 EXPOSE 2019
-# Wed, 10 Mar 2021 21:28:41 GMT
+# Wed, 14 Apr 2021 20:05:27 GMT
 RUN caddy version
-# Wed, 10 Mar 2021 21:28:42 GMT
+# Wed, 14 Apr 2021 20:05:28 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -13694,154 +13694,154 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 	-	`sha256:4612f6d0b889cad0ed0292fae3a0b0c8a9e49aff6dea8eb049b2386d9b07986f`  
 		Size: 1.7 GB (1718332879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ff1512f88ecd4ff0a91ade34d43733c48834433e35f062f80e6e70d706f8d73`  
-		Size: 743.2 MB (743201590 bytes)  
+	-	`sha256:399f118dfaa9a753e98d128238b944432c7bcabea88a2998a6efbbece28ed303`  
+		Size: 751.4 MB (751421005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ebe61daec6d671bc2c1c6fe61ac9825fb552e9cef3672d0a7dbec719d125ae64`  
-		Last Modified: Wed, 10 Mar 2021 13:21:09 GMT  
+	-	`sha256:106dbf3373fce4f0ba5e00ad54824c597f2894605fa7d8ef446ad7ea3b97449f`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1413 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a98036a79f108b7c08eb62f3ef539549a6fe005aced8f3fa4971a4e576e8c045`  
+		Last Modified: Wed, 14 Apr 2021 20:24:07 GMT  
+		Size: 5.1 MB (5081237 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9a1c0c34e473966a69a26492fc168338b6ee1afadedd4cfd3b84537129685128`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
 		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31a02199a38f7dde446e1c919797037b896dc0d954cc313cd49d1fd7ef7b309a`  
-		Last Modified: Wed, 10 Mar 2021 21:43:28 GMT  
-		Size: 9.5 MB (9466151 bytes)  
+	-	`sha256:88365dd5b6b4b0188ad00f31b1114067b79a05d3eeaecbcdf86385c18e1e2bff`  
+		Last Modified: Wed, 14 Apr 2021 20:24:16 GMT  
+		Size: 12.0 MB (12047588 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:928fadc2fce7089b23d0e2d915e1cf2211aec3ffdc88b5eb66c67f18f7fb2c6e`  
-		Last Modified: Wed, 10 Mar 2021 21:43:26 GMT  
-		Size: 1.4 KB (1433 bytes)  
+	-	`sha256:1d8761bc4a54d10c3f03507406d03f0161fece0b4f80913bc67f5218cf7acc0e`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
+		Size: 1.4 KB (1394 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd7bb988dcbf796f3839a524b32be07309d29f50ec4273ded91973b631e0ad00`  
-		Last Modified: Wed, 10 Mar 2021 21:43:45 GMT  
-		Size: 16.5 MB (16453921 bytes)  
+	-	`sha256:f23987f8593afe96ed2b00e5744c51d5678851dac567bde07c230d882b31db5b`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d621047471067d3c16923f7c3b79f8615ddbcc2f9a879832c456f67fe3cd1544`  
-		Last Modified: Wed, 10 Mar 2021 21:43:25 GMT  
-		Size: 1.4 KB (1438 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9f148a6aba7a2d10970470390d5229567735df01114acfbdad1c661bdc8dc22`  
-		Last Modified: Wed, 10 Mar 2021 21:43:24 GMT  
-		Size: 1.4 KB (1436 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc608f5d46fef14425bc80c9c7062532f20bec43d7073a8e17e8278f9c60cc7a`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1436 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cda8fe89940ce8986995aee365da1f58c22d0d3b8a050600e429ef1cdd8c5fc`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:403d8611297f60270051c62d4bb7d7dff6aeeb33dc0c5cecd06ae94080fd1802`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1401 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab2df9d9f268b91b0f5bd3e27ba3e1cd03694b62c48ad901fa7fc47ebd2956db`  
-		Last Modified: Wed, 10 Mar 2021 21:43:22 GMT  
-		Size: 1.4 KB (1416 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6eabd07d0fd9430b675ce97b3bd926812eb4e9f4c4cf0872d68b91be65dd9d9`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1403 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec389e155c01fcd9625c110db8b62baac443eb2bee04a5f631e7cecc534c0818`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca8fad2b33541d43c28d6113e51b250763c7ec33d8503df271481f615a1f99bc`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1372 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cf0c1f7ba714c558dd8ed7e0336f84c91c25a35766d2efa592b1f39b1e448d6`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea93772cd9ce84491fa183154e0972b941a4379f628a54f9213bf36c4311dbbb`  
-		Last Modified: Wed, 10 Mar 2021 21:43:20 GMT  
+	-	`sha256:27edd7d612a33644ef095d4bd52c800d8e8a1bd73a56ddbeba0a2cda230947a6`  
+		Last Modified: Wed, 14 Apr 2021 20:24:02 GMT  
 		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:842fa064b906d0bd7b584ea5f181fbca29305d9ad824eaed29bf341c1abbcea3`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 1.4 KB (1440 bytes)  
+	-	`sha256:81c5b86f636ca1020805b216bf4ea83e1aaa4e5da4145ec671280678483c8084`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:48b753cdd37ef6dce0fbecce933fdf1957f9d72cf512be44c11d32181611a433`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 1.4 KB (1434 bytes)  
+	-	`sha256:8f097631ca96d803dd63f72849f1b76728a05c89e8451675f669fc655ae07600`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0205b004a4016df290e2fd8b362003adad13b56a6fbc17c35209de56b2bac034`  
-		Last Modified: Wed, 10 Mar 2021 21:43:16 GMT  
+	-	`sha256:6ace7f5f948c892db540a9734d885fb0695faf8cc55e9fa2df27c4aff76e485d`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1424 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:57476c73327d061921cee32adad6344e762c80c1142357a6de89819e8577d3e6`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1393 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8aaad63b2ff3aa00f636a1f988a02040c9832ae1a184093cef2471115a787a8f`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1407 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b1aef5aebcec7bd144ab11a819f8406f07a0dcfaf11684f464b56f5835633fb4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1413 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e7cd29f97bbc5cd627a79fc205fd6f63257d27e45e45264ec1e1c3ab94b319e4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c8aeafc40e34b5ef3464715c082ddb0910edbd9a59ac2d4d9d6586a0022271b4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4fe3fa5d1767b62495151be377ed814c0ce5766f1cb875b724b922d378249bb8`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b89f7d63263e3b381a5386cd4b13b21226da398d0c8d2bf59f111efb466b9959`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1436 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aab5798a12c9581184fa73f7b74913b0cf6c4ae638f2886f07d70a9f32181d9a`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1406 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bf434bfce197fbac09ffe0409a20f2a1ba646801b7dac739c6cea7bed0ce2fad`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1420 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ec0defeab0b694a738dc4b945c883e44f4118a4127f00e4cea32ab589fb194dc`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 308.9 KB (308863 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:51d70335c993ba29c3325465e90a310fce3b41a934bc25ec1bc5220fd3424bfe`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
 		Size: 1.4 KB (1425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e5f63eec622fd92f0ce90d6e06bd12c2687cbdf86aae3cdbbb8d3fdc92ef028`  
-		Last Modified: Wed, 10 Mar 2021 21:43:19 GMT  
-		Size: 1.4 KB (1369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:446a62c8913c6a60f39e8053d6ad0d6dfaf69ec7d8cf3fcc2665386e362238d6`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 325.1 KB (325114 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43fc4417c46cd53b142f42f58ded86ccf383c9f9b6e5f97d8a8183abbd1bd7aa`  
-		Last Modified: Wed, 10 Mar 2021 21:43:17 GMT  
-		Size: 1.4 KB (1383 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `caddy:latest` - windows version 10.0.14393.4283; amd64
+### `caddy:latest` - windows version 10.0.14393.4350; amd64
 
 ```console
-$ docker pull caddy@sha256:e9416497e1d43fd04e244f89af4e210714a28b676cf1e2279487484087b8ee39
+$ docker pull caddy@sha256:0a27a5dee7d386c823f3ad85b0ad3c7c6ebb739e7d7ad1cbc37662a3e955dfbc
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 GB (5829241236 bytes)**  
+-	Total Size: **5.8 GB (5818160037 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b987ba0d14c06619541f1cb51215c36133a17cfbfea49a9bc79b021564ab785`
+-	Image ID: `sha256:c5d01f580a5360a74b845ce6ffbd196e0930731b656954f6dafd810f4b69ae72`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sat, 19 Nov 2016 17:05:00 GMT
 RUN Apply image 1607-RTM-amd64
-# Wed, 03 Mar 2021 18:02:00 GMT
+# Wed, 07 Apr 2021 21:54:00 GMT
 RUN Install update ltsc2016-amd64
-# Wed, 10 Mar 2021 13:42:05 GMT
+# Wed, 14 Apr 2021 12:35:33 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 21:30:30 GMT
+# Wed, 14 Apr 2021 20:07:14 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Wed, 10 Mar 2021 21:30:31 GMT
+# Wed, 14 Apr 2021 20:07:15 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 10 Mar 2021 21:32:11 GMT
+# Wed, 14 Apr 2021 20:09:01 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('afc504cb0a641729ba546c0cadea524a170dcca2a915473aaf032a7c666c7c56ac059752f34b5d50700a692647b9b395b530cd8299ac3650c729adce5daa1ba5')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Wed, 10 Mar 2021 21:32:12 GMT
+# Wed, 14 Apr 2021 20:09:02 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Wed, 10 Mar 2021 21:32:13 GMT
+# Wed, 14 Apr 2021 20:09:04 GMT
 ENV XDG_DATA_HOME=c:/data
-# Wed, 10 Mar 2021 21:32:14 GMT
+# Wed, 14 Apr 2021 20:09:05 GMT
 VOLUME [c:/config]
-# Wed, 10 Mar 2021 21:32:15 GMT
+# Wed, 14 Apr 2021 20:09:06 GMT
 VOLUME [c:/data]
-# Wed, 10 Mar 2021 21:32:16 GMT
+# Wed, 14 Apr 2021 20:09:07 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 10 Mar 2021 21:32:18 GMT
+# Wed, 14 Apr 2021 20:09:08 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 10 Mar 2021 21:32:19 GMT
+# Wed, 14 Apr 2021 20:09:09 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 10 Mar 2021 21:32:20 GMT
+# Wed, 14 Apr 2021 20:09:10 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 10 Mar 2021 21:32:21 GMT
+# Wed, 14 Apr 2021 20:09:11 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 10 Mar 2021 21:32:23 GMT
+# Wed, 14 Apr 2021 20:09:12 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 10 Mar 2021 21:32:24 GMT
+# Wed, 14 Apr 2021 20:09:14 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 10 Mar 2021 21:32:25 GMT
+# Wed, 14 Apr 2021 20:09:15 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 10 Mar 2021 21:32:26 GMT
+# Wed, 14 Apr 2021 20:09:16 GMT
 EXPOSE 80
-# Wed, 10 Mar 2021 21:32:27 GMT
+# Wed, 14 Apr 2021 20:09:17 GMT
 EXPOSE 443
-# Wed, 10 Mar 2021 21:32:28 GMT
+# Wed, 14 Apr 2021 20:09:18 GMT
 EXPOSE 2019
-# Wed, 10 Mar 2021 21:33:17 GMT
+# Wed, 14 Apr 2021 20:10:29 GMT
 RUN caddy version
-# Wed, 10 Mar 2021 21:33:18 GMT
+# Wed, 14 Apr 2021 20:10:30 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -13850,165 +13850,165 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Last Modified: Tue, 18 Sep 2018 20:20:50 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:30bda99601c5cbd3b2118409f401852ea648e2319bd81518723e476b28d764c5`  
-		Size: 1.7 GB (1726924885 bytes)  
+	-	`sha256:00b4edb823e6a375d179a28cbfa682c2379d62179e1518485902d6e68b9a9d1e`  
+		Size: 1.7 GB (1724897968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:76680da9dc6db108ddf2e353c494b45e8486a6751619a13ed8fb3ad64b9a16e9`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bb52885e05952959b0fa7aaff23561fcf14d294aed336112b388c94e67709e4f`  
+		Last Modified: Wed, 14 Apr 2021 12:59:14 GMT  
+		Size: 1.4 KB (1406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0c9e18c1004b748968faecba6f9d1b5e6233e7e0b82b1c1259cf945eb3334e6`  
-		Last Modified: Wed, 10 Mar 2021 21:44:17 GMT  
-		Size: 10.2 MB (10181612 bytes)  
+	-	`sha256:398ea9969fcb8e31829ad2a30ccb77a30f56d17d992051bf6a04b0bd4ebb24a7`  
+		Last Modified: Wed, 14 Apr 2021 20:24:45 GMT  
+		Size: 5.7 MB (5661064 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08f9c532d82c90ea9fc2e2c6a591988abfb79e551caabead3fe56f8ba69c31f6`  
-		Last Modified: Wed, 10 Mar 2021 21:44:12 GMT  
-		Size: 1.4 KB (1404 bytes)  
+	-	`sha256:1d2d2fcf25a0097bf75ef1b7b207a765b3c93bce2eb96e7ebf2ce894a0ca0bf1`  
+		Last Modified: Wed, 14 Apr 2021 20:24:43 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5695a08e71ba7869b2e8b11e6f3f228a8a6d303878131e1f3abdc655757b5f2`  
-		Last Modified: Wed, 10 Mar 2021 21:44:19 GMT  
-		Size: 21.9 MB (21867123 bytes)  
+	-	`sha256:6f1814c5a2050da8e869a225b62ac936693d7904fed473ed6d703acd42542916`  
+		Last Modified: Wed, 14 Apr 2021 20:24:46 GMT  
+		Size: 17.3 MB (17333583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fabb7c4e3c2c8cdeef81bd8a6fcaed6b082e5ea4120a15ae4e277258c03de007`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1372 bytes)  
+	-	`sha256:93803b6c6c1e5befb69d029873c92020261e4faf5f97fa1ebe4474f2fcd761da`  
+		Last Modified: Wed, 14 Apr 2021 20:24:39 GMT  
+		Size: 1.4 KB (1403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82ec41ded5794a348cd9c06286dcbe7ca964197008812567791bc45b22bc4dd1`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1427 bytes)  
+	-	`sha256:5bef042a1c15ba4cca6086f36ad82e03f037ebae2ec5218dc528ce8afa0cbbe7`  
+		Last Modified: Wed, 14 Apr 2021 20:24:39 GMT  
+		Size: 1.4 KB (1409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d20ab0530e5214beccbf36a30fe1618f9752274c51a313bb71e9b9b130870164`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc0a7b2c54a3fa027e26d52abd2013c77fc0e69bf93446d70990dc40a6e00d98`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1366 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e0051bde2db70124d244a1337ccc824629e18f2be3b800ec577a7794ff1f7f3`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:271b14baf3d87c6aa3bd2da952290cec023b40b90b62688c79fa26d9253770ac`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1391 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bc9b324fb71cb6bdc3dfd42355efbd64634f7d2ec678a5a15757e69145f671d`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
+	-	`sha256:0c22fd29bd95221222824495015750f062fcf337845032c4d11be1c8166d9911`  
+		Last Modified: Wed, 14 Apr 2021 20:24:37 GMT  
 		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69d93b07db92b46680fe5ba78d29058e6f5b2ce49ba20cb10aeccb751b37d497`  
-		Last Modified: Wed, 10 Mar 2021 21:44:08 GMT  
-		Size: 1.4 KB (1433 bytes)  
+	-	`sha256:e034d998c8e3152093c8f2c30b0ac9122c528b8ba0889cadf3a3282059a8f96c`  
+		Last Modified: Wed, 14 Apr 2021 20:24:37 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bb6dc81911c7b01e751b8d5a08f7cf494f5542f166b2e1471a08ef82b4ebcb4`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1410 bytes)  
+	-	`sha256:80cd579cdba6539c678c1cfd7184427e5b0777e34c965e8c6ca62f8301dd629f`  
+		Last Modified: Wed, 14 Apr 2021 20:24:36 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a53bfaf85823badcda6fa4470993f24b9772597b13989ee71ec0b5686be93cbc`  
-		Last Modified: Wed, 10 Mar 2021 21:44:07 GMT  
-		Size: 1.4 KB (1410 bytes)  
+	-	`sha256:1ea0c59c3768ba8d3f4943669c834e3b8043899a0ee61ed325fa453559243f95`  
+		Last Modified: Wed, 14 Apr 2021 20:24:36 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5077aa28e94279b15dbe048f37904704877b5b4a932e67a3a12adf8bdfe9ada`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1436 bytes)  
+	-	`sha256:bc5f4c914fc136d87d2e00167556104cf17827c516e84c53785225cfeb214a42`  
+		Last Modified: Wed, 14 Apr 2021 20:24:40 GMT  
+		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5851fcb607a8afd06548b48e611020418ed88f0c0e1abcba7854089c8bf9729e`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1395 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:498aa4d3ee4135d0aaeccdf4fe0d8ec98c3ba95a92fd0b56dc73a461be700516`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1418 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0651b67304c2388b503cbd386e0235ec00a5a8437a9d115ba871152ae9d07103`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
+	-	`sha256:164712f851736c62b6da95357e6056173e390402e1a17b2f7559af8f42ce0134`  
+		Last Modified: Wed, 14 Apr 2021 20:24:35 GMT  
 		Size: 1.4 KB (1408 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1418b36ca2fc9603d0a6a28d6f4849cdfd80c3069ea494baeba2ce37e66b73d4`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1390 bytes)  
+	-	`sha256:5d73f78d7b9ccdb5963233ef77dab1188e2678cc7c9136ff183494cd28f893f0`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a50dd910f71fe0ceefc794aaee3e6669cd578ae8286348a76c60dc926778da33`  
-		Last Modified: Wed, 10 Mar 2021 21:44:04 GMT  
-		Size: 256.4 KB (256438 bytes)  
+	-	`sha256:b455a43ac6d0be6faf8dce0c59c609cc832963d9cc649b301f49ff79f218e439`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43a39a5ecfed250f608279f4544ced05934bd84e326d05f119a12081aa38b39f`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1397 bytes)  
+	-	`sha256:916f00b0ac9199b716d513a33d44003af6cd00e4b9b7a2feab64b84649d80640`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1431 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7ece2a763e6182c580aadb07399f77037c831dd03ee9cdad4f70b18759458094`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac88310e829bdb746ec804044c2a238dc2c6f64660688285a64205a255283c47`  
+		Last Modified: Wed, 14 Apr 2021 20:24:32 GMT  
+		Size: 1.4 KB (1404 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ed384ae90a546f9aad4b539596228057299114b9662407a708465a0ed7de3691`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1411 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9de7a040e97ee693dc826cc6130e42fe7597fbf48fe035d0e5f9f039166edae5`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e4c1c4ddd499c8a111514a0d3bc3b97381c76a6b33d1cb3f74752d42ddc3e43c`  
+		Last Modified: Wed, 14 Apr 2021 20:24:32 GMT  
+		Size: 255.9 KB (255932 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:96251eba56a444a75ccc3480986386b2d2abcce41beadf2f267bedaee332c54a`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:windowsservercore`
 
 ```console
-$ docker pull caddy@sha256:0d7ec2ae02e36f8374b028af66afcca548c8995638a733f0ad2e7861e2775e7e
+$ docker pull caddy@sha256:6a199f80cee0da0b39f4deffc53efac536c60672f4d8d26887f8f8ec194da3b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.17763.1817; amd64
-	-	windows version 10.0.14393.4283; amd64
+	-	windows version 10.0.17763.1879; amd64
+	-	windows version 10.0.14393.4350; amd64
 
-### `caddy:windowsservercore` - windows version 10.0.17763.1817; amd64
+### `caddy:windowsservercore` - windows version 10.0.17763.1879; amd64
 
 ```console
-$ docker pull caddy@sha256:5203e8707456e06dfc8d03ba99cdfe84d4b3dc00be512770827ef5e692ec18e0
+$ docker pull caddy@sha256:fdb259b96e8413c959258115e3cc0ed6272cd362b32dcee80b7c5875b3cca213
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2487805125 bytes)**  
+-	Total Size: **2.5 GB (2487217133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f93dd36e27e04e9ac5d0bc9da46fbeebc4541b2a242f90a7bc7003d2bc636fe`
+-	Image ID: `sha256:db78127126d7dbe748dc638552655f6a86f11faa664f34ed256da804f77de223`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 07 May 2020 05:09:25 GMT
 RUN Apply image 1809-RTM-amd64
-# Sat, 27 Feb 2021 09:32:06 GMT
+# Fri, 09 Apr 2021 20:34:41 GMT
 RUN Install update 1809-amd64
-# Wed, 10 Mar 2021 13:08:20 GMT
+# Wed, 14 Apr 2021 12:09:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 21:27:31 GMT
+# Wed, 14 Apr 2021 20:04:03 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Wed, 10 Mar 2021 21:27:32 GMT
+# Wed, 14 Apr 2021 20:04:04 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 10 Mar 2021 21:28:05 GMT
+# Wed, 14 Apr 2021 20:04:43 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('afc504cb0a641729ba546c0cadea524a170dcca2a915473aaf032a7c666c7c56ac059752f34b5d50700a692647b9b395b530cd8299ac3650c729adce5daa1ba5')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Wed, 10 Mar 2021 21:28:06 GMT
+# Wed, 14 Apr 2021 20:04:45 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Wed, 10 Mar 2021 21:28:07 GMT
+# Wed, 14 Apr 2021 20:04:46 GMT
 ENV XDG_DATA_HOME=c:/data
-# Wed, 10 Mar 2021 21:28:08 GMT
+# Wed, 14 Apr 2021 20:04:47 GMT
 VOLUME [c:/config]
-# Wed, 10 Mar 2021 21:28:09 GMT
+# Wed, 14 Apr 2021 20:04:48 GMT
 VOLUME [c:/data]
-# Wed, 10 Mar 2021 21:28:11 GMT
+# Wed, 14 Apr 2021 20:04:49 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 10 Mar 2021 21:28:12 GMT
+# Wed, 14 Apr 2021 20:04:50 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 10 Mar 2021 21:28:13 GMT
+# Wed, 14 Apr 2021 20:04:51 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 10 Mar 2021 21:28:14 GMT
+# Wed, 14 Apr 2021 20:04:53 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 10 Mar 2021 21:28:15 GMT
+# Wed, 14 Apr 2021 20:04:54 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 10 Mar 2021 21:28:16 GMT
+# Wed, 14 Apr 2021 20:04:55 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 10 Mar 2021 21:28:17 GMT
+# Wed, 14 Apr 2021 20:04:56 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 10 Mar 2021 21:28:18 GMT
+# Wed, 14 Apr 2021 20:04:57 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 10 Mar 2021 21:28:19 GMT
+# Wed, 14 Apr 2021 20:04:58 GMT
 EXPOSE 80
-# Wed, 10 Mar 2021 21:28:20 GMT
+# Wed, 14 Apr 2021 20:05:00 GMT
 EXPOSE 443
-# Wed, 10 Mar 2021 21:28:21 GMT
+# Wed, 14 Apr 2021 20:05:01 GMT
 EXPOSE 2019
-# Wed, 10 Mar 2021 21:28:41 GMT
+# Wed, 14 Apr 2021 20:05:27 GMT
 RUN caddy version
-# Wed, 10 Mar 2021 21:28:42 GMT
+# Wed, 14 Apr 2021 20:05:28 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -14016,154 +14016,154 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 	-	`sha256:4612f6d0b889cad0ed0292fae3a0b0c8a9e49aff6dea8eb049b2386d9b07986f`  
 		Size: 1.7 GB (1718332879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ff1512f88ecd4ff0a91ade34d43733c48834433e35f062f80e6e70d706f8d73`  
-		Size: 743.2 MB (743201590 bytes)  
+	-	`sha256:399f118dfaa9a753e98d128238b944432c7bcabea88a2998a6efbbece28ed303`  
+		Size: 751.4 MB (751421005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ebe61daec6d671bc2c1c6fe61ac9825fb552e9cef3672d0a7dbec719d125ae64`  
-		Last Modified: Wed, 10 Mar 2021 13:21:09 GMT  
+	-	`sha256:106dbf3373fce4f0ba5e00ad54824c597f2894605fa7d8ef446ad7ea3b97449f`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1413 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a98036a79f108b7c08eb62f3ef539549a6fe005aced8f3fa4971a4e576e8c045`  
+		Last Modified: Wed, 14 Apr 2021 20:24:07 GMT  
+		Size: 5.1 MB (5081237 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9a1c0c34e473966a69a26492fc168338b6ee1afadedd4cfd3b84537129685128`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
 		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31a02199a38f7dde446e1c919797037b896dc0d954cc313cd49d1fd7ef7b309a`  
-		Last Modified: Wed, 10 Mar 2021 21:43:28 GMT  
-		Size: 9.5 MB (9466151 bytes)  
+	-	`sha256:88365dd5b6b4b0188ad00f31b1114067b79a05d3eeaecbcdf86385c18e1e2bff`  
+		Last Modified: Wed, 14 Apr 2021 20:24:16 GMT  
+		Size: 12.0 MB (12047588 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:928fadc2fce7089b23d0e2d915e1cf2211aec3ffdc88b5eb66c67f18f7fb2c6e`  
-		Last Modified: Wed, 10 Mar 2021 21:43:26 GMT  
-		Size: 1.4 KB (1433 bytes)  
+	-	`sha256:1d8761bc4a54d10c3f03507406d03f0161fece0b4f80913bc67f5218cf7acc0e`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
+		Size: 1.4 KB (1394 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd7bb988dcbf796f3839a524b32be07309d29f50ec4273ded91973b631e0ad00`  
-		Last Modified: Wed, 10 Mar 2021 21:43:45 GMT  
-		Size: 16.5 MB (16453921 bytes)  
+	-	`sha256:f23987f8593afe96ed2b00e5744c51d5678851dac567bde07c230d882b31db5b`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d621047471067d3c16923f7c3b79f8615ddbcc2f9a879832c456f67fe3cd1544`  
-		Last Modified: Wed, 10 Mar 2021 21:43:25 GMT  
-		Size: 1.4 KB (1438 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9f148a6aba7a2d10970470390d5229567735df01114acfbdad1c661bdc8dc22`  
-		Last Modified: Wed, 10 Mar 2021 21:43:24 GMT  
-		Size: 1.4 KB (1436 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc608f5d46fef14425bc80c9c7062532f20bec43d7073a8e17e8278f9c60cc7a`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1436 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cda8fe89940ce8986995aee365da1f58c22d0d3b8a050600e429ef1cdd8c5fc`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:403d8611297f60270051c62d4bb7d7dff6aeeb33dc0c5cecd06ae94080fd1802`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1401 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab2df9d9f268b91b0f5bd3e27ba3e1cd03694b62c48ad901fa7fc47ebd2956db`  
-		Last Modified: Wed, 10 Mar 2021 21:43:22 GMT  
-		Size: 1.4 KB (1416 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6eabd07d0fd9430b675ce97b3bd926812eb4e9f4c4cf0872d68b91be65dd9d9`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1403 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec389e155c01fcd9625c110db8b62baac443eb2bee04a5f631e7cecc534c0818`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca8fad2b33541d43c28d6113e51b250763c7ec33d8503df271481f615a1f99bc`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1372 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cf0c1f7ba714c558dd8ed7e0336f84c91c25a35766d2efa592b1f39b1e448d6`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea93772cd9ce84491fa183154e0972b941a4379f628a54f9213bf36c4311dbbb`  
-		Last Modified: Wed, 10 Mar 2021 21:43:20 GMT  
+	-	`sha256:27edd7d612a33644ef095d4bd52c800d8e8a1bd73a56ddbeba0a2cda230947a6`  
+		Last Modified: Wed, 14 Apr 2021 20:24:02 GMT  
 		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:842fa064b906d0bd7b584ea5f181fbca29305d9ad824eaed29bf341c1abbcea3`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 1.4 KB (1440 bytes)  
+	-	`sha256:81c5b86f636ca1020805b216bf4ea83e1aaa4e5da4145ec671280678483c8084`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:48b753cdd37ef6dce0fbecce933fdf1957f9d72cf512be44c11d32181611a433`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 1.4 KB (1434 bytes)  
+	-	`sha256:8f097631ca96d803dd63f72849f1b76728a05c89e8451675f669fc655ae07600`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0205b004a4016df290e2fd8b362003adad13b56a6fbc17c35209de56b2bac034`  
-		Last Modified: Wed, 10 Mar 2021 21:43:16 GMT  
+	-	`sha256:6ace7f5f948c892db540a9734d885fb0695faf8cc55e9fa2df27c4aff76e485d`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1424 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:57476c73327d061921cee32adad6344e762c80c1142357a6de89819e8577d3e6`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1393 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8aaad63b2ff3aa00f636a1f988a02040c9832ae1a184093cef2471115a787a8f`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1407 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b1aef5aebcec7bd144ab11a819f8406f07a0dcfaf11684f464b56f5835633fb4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1413 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e7cd29f97bbc5cd627a79fc205fd6f63257d27e45e45264ec1e1c3ab94b319e4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c8aeafc40e34b5ef3464715c082ddb0910edbd9a59ac2d4d9d6586a0022271b4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4fe3fa5d1767b62495151be377ed814c0ce5766f1cb875b724b922d378249bb8`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b89f7d63263e3b381a5386cd4b13b21226da398d0c8d2bf59f111efb466b9959`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1436 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aab5798a12c9581184fa73f7b74913b0cf6c4ae638f2886f07d70a9f32181d9a`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1406 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bf434bfce197fbac09ffe0409a20f2a1ba646801b7dac739c6cea7bed0ce2fad`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1420 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ec0defeab0b694a738dc4b945c883e44f4118a4127f00e4cea32ab589fb194dc`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 308.9 KB (308863 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:51d70335c993ba29c3325465e90a310fce3b41a934bc25ec1bc5220fd3424bfe`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
 		Size: 1.4 KB (1425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e5f63eec622fd92f0ce90d6e06bd12c2687cbdf86aae3cdbbb8d3fdc92ef028`  
-		Last Modified: Wed, 10 Mar 2021 21:43:19 GMT  
-		Size: 1.4 KB (1369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:446a62c8913c6a60f39e8053d6ad0d6dfaf69ec7d8cf3fcc2665386e362238d6`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 325.1 KB (325114 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43fc4417c46cd53b142f42f58ded86ccf383c9f9b6e5f97d8a8183abbd1bd7aa`  
-		Last Modified: Wed, 10 Mar 2021 21:43:17 GMT  
-		Size: 1.4 KB (1383 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `caddy:windowsservercore` - windows version 10.0.14393.4283; amd64
+### `caddy:windowsservercore` - windows version 10.0.14393.4350; amd64
 
 ```console
-$ docker pull caddy@sha256:e9416497e1d43fd04e244f89af4e210714a28b676cf1e2279487484087b8ee39
+$ docker pull caddy@sha256:0a27a5dee7d386c823f3ad85b0ad3c7c6ebb739e7d7ad1cbc37662a3e955dfbc
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 GB (5829241236 bytes)**  
+-	Total Size: **5.8 GB (5818160037 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b987ba0d14c06619541f1cb51215c36133a17cfbfea49a9bc79b021564ab785`
+-	Image ID: `sha256:c5d01f580a5360a74b845ce6ffbd196e0930731b656954f6dafd810f4b69ae72`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sat, 19 Nov 2016 17:05:00 GMT
 RUN Apply image 1607-RTM-amd64
-# Wed, 03 Mar 2021 18:02:00 GMT
+# Wed, 07 Apr 2021 21:54:00 GMT
 RUN Install update ltsc2016-amd64
-# Wed, 10 Mar 2021 13:42:05 GMT
+# Wed, 14 Apr 2021 12:35:33 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 21:30:30 GMT
+# Wed, 14 Apr 2021 20:07:14 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Wed, 10 Mar 2021 21:30:31 GMT
+# Wed, 14 Apr 2021 20:07:15 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 10 Mar 2021 21:32:11 GMT
+# Wed, 14 Apr 2021 20:09:01 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('afc504cb0a641729ba546c0cadea524a170dcca2a915473aaf032a7c666c7c56ac059752f34b5d50700a692647b9b395b530cd8299ac3650c729adce5daa1ba5')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Wed, 10 Mar 2021 21:32:12 GMT
+# Wed, 14 Apr 2021 20:09:02 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Wed, 10 Mar 2021 21:32:13 GMT
+# Wed, 14 Apr 2021 20:09:04 GMT
 ENV XDG_DATA_HOME=c:/data
-# Wed, 10 Mar 2021 21:32:14 GMT
+# Wed, 14 Apr 2021 20:09:05 GMT
 VOLUME [c:/config]
-# Wed, 10 Mar 2021 21:32:15 GMT
+# Wed, 14 Apr 2021 20:09:06 GMT
 VOLUME [c:/data]
-# Wed, 10 Mar 2021 21:32:16 GMT
+# Wed, 14 Apr 2021 20:09:07 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 10 Mar 2021 21:32:18 GMT
+# Wed, 14 Apr 2021 20:09:08 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 10 Mar 2021 21:32:19 GMT
+# Wed, 14 Apr 2021 20:09:09 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 10 Mar 2021 21:32:20 GMT
+# Wed, 14 Apr 2021 20:09:10 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 10 Mar 2021 21:32:21 GMT
+# Wed, 14 Apr 2021 20:09:11 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 10 Mar 2021 21:32:23 GMT
+# Wed, 14 Apr 2021 20:09:12 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 10 Mar 2021 21:32:24 GMT
+# Wed, 14 Apr 2021 20:09:14 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 10 Mar 2021 21:32:25 GMT
+# Wed, 14 Apr 2021 20:09:15 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 10 Mar 2021 21:32:26 GMT
+# Wed, 14 Apr 2021 20:09:16 GMT
 EXPOSE 80
-# Wed, 10 Mar 2021 21:32:27 GMT
+# Wed, 14 Apr 2021 20:09:17 GMT
 EXPOSE 443
-# Wed, 10 Mar 2021 21:32:28 GMT
+# Wed, 14 Apr 2021 20:09:18 GMT
 EXPOSE 2019
-# Wed, 10 Mar 2021 21:33:17 GMT
+# Wed, 14 Apr 2021 20:10:29 GMT
 RUN caddy version
-# Wed, 10 Mar 2021 21:33:18 GMT
+# Wed, 14 Apr 2021 20:10:30 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -14172,164 +14172,164 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Last Modified: Tue, 18 Sep 2018 20:20:50 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:30bda99601c5cbd3b2118409f401852ea648e2319bd81518723e476b28d764c5`  
-		Size: 1.7 GB (1726924885 bytes)  
+	-	`sha256:00b4edb823e6a375d179a28cbfa682c2379d62179e1518485902d6e68b9a9d1e`  
+		Size: 1.7 GB (1724897968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:76680da9dc6db108ddf2e353c494b45e8486a6751619a13ed8fb3ad64b9a16e9`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bb52885e05952959b0fa7aaff23561fcf14d294aed336112b388c94e67709e4f`  
+		Last Modified: Wed, 14 Apr 2021 12:59:14 GMT  
+		Size: 1.4 KB (1406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0c9e18c1004b748968faecba6f9d1b5e6233e7e0b82b1c1259cf945eb3334e6`  
-		Last Modified: Wed, 10 Mar 2021 21:44:17 GMT  
-		Size: 10.2 MB (10181612 bytes)  
+	-	`sha256:398ea9969fcb8e31829ad2a30ccb77a30f56d17d992051bf6a04b0bd4ebb24a7`  
+		Last Modified: Wed, 14 Apr 2021 20:24:45 GMT  
+		Size: 5.7 MB (5661064 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08f9c532d82c90ea9fc2e2c6a591988abfb79e551caabead3fe56f8ba69c31f6`  
-		Last Modified: Wed, 10 Mar 2021 21:44:12 GMT  
-		Size: 1.4 KB (1404 bytes)  
+	-	`sha256:1d2d2fcf25a0097bf75ef1b7b207a765b3c93bce2eb96e7ebf2ce894a0ca0bf1`  
+		Last Modified: Wed, 14 Apr 2021 20:24:43 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5695a08e71ba7869b2e8b11e6f3f228a8a6d303878131e1f3abdc655757b5f2`  
-		Last Modified: Wed, 10 Mar 2021 21:44:19 GMT  
-		Size: 21.9 MB (21867123 bytes)  
+	-	`sha256:6f1814c5a2050da8e869a225b62ac936693d7904fed473ed6d703acd42542916`  
+		Last Modified: Wed, 14 Apr 2021 20:24:46 GMT  
+		Size: 17.3 MB (17333583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fabb7c4e3c2c8cdeef81bd8a6fcaed6b082e5ea4120a15ae4e277258c03de007`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1372 bytes)  
+	-	`sha256:93803b6c6c1e5befb69d029873c92020261e4faf5f97fa1ebe4474f2fcd761da`  
+		Last Modified: Wed, 14 Apr 2021 20:24:39 GMT  
+		Size: 1.4 KB (1403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82ec41ded5794a348cd9c06286dcbe7ca964197008812567791bc45b22bc4dd1`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1427 bytes)  
+	-	`sha256:5bef042a1c15ba4cca6086f36ad82e03f037ebae2ec5218dc528ce8afa0cbbe7`  
+		Last Modified: Wed, 14 Apr 2021 20:24:39 GMT  
+		Size: 1.4 KB (1409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d20ab0530e5214beccbf36a30fe1618f9752274c51a313bb71e9b9b130870164`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc0a7b2c54a3fa027e26d52abd2013c77fc0e69bf93446d70990dc40a6e00d98`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1366 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e0051bde2db70124d244a1337ccc824629e18f2be3b800ec577a7794ff1f7f3`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:271b14baf3d87c6aa3bd2da952290cec023b40b90b62688c79fa26d9253770ac`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1391 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bc9b324fb71cb6bdc3dfd42355efbd64634f7d2ec678a5a15757e69145f671d`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
+	-	`sha256:0c22fd29bd95221222824495015750f062fcf337845032c4d11be1c8166d9911`  
+		Last Modified: Wed, 14 Apr 2021 20:24:37 GMT  
 		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69d93b07db92b46680fe5ba78d29058e6f5b2ce49ba20cb10aeccb751b37d497`  
-		Last Modified: Wed, 10 Mar 2021 21:44:08 GMT  
-		Size: 1.4 KB (1433 bytes)  
+	-	`sha256:e034d998c8e3152093c8f2c30b0ac9122c528b8ba0889cadf3a3282059a8f96c`  
+		Last Modified: Wed, 14 Apr 2021 20:24:37 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bb6dc81911c7b01e751b8d5a08f7cf494f5542f166b2e1471a08ef82b4ebcb4`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1410 bytes)  
+	-	`sha256:80cd579cdba6539c678c1cfd7184427e5b0777e34c965e8c6ca62f8301dd629f`  
+		Last Modified: Wed, 14 Apr 2021 20:24:36 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a53bfaf85823badcda6fa4470993f24b9772597b13989ee71ec0b5686be93cbc`  
-		Last Modified: Wed, 10 Mar 2021 21:44:07 GMT  
-		Size: 1.4 KB (1410 bytes)  
+	-	`sha256:1ea0c59c3768ba8d3f4943669c834e3b8043899a0ee61ed325fa453559243f95`  
+		Last Modified: Wed, 14 Apr 2021 20:24:36 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5077aa28e94279b15dbe048f37904704877b5b4a932e67a3a12adf8bdfe9ada`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1436 bytes)  
+	-	`sha256:bc5f4c914fc136d87d2e00167556104cf17827c516e84c53785225cfeb214a42`  
+		Last Modified: Wed, 14 Apr 2021 20:24:40 GMT  
+		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5851fcb607a8afd06548b48e611020418ed88f0c0e1abcba7854089c8bf9729e`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1395 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:498aa4d3ee4135d0aaeccdf4fe0d8ec98c3ba95a92fd0b56dc73a461be700516`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1418 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0651b67304c2388b503cbd386e0235ec00a5a8437a9d115ba871152ae9d07103`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
+	-	`sha256:164712f851736c62b6da95357e6056173e390402e1a17b2f7559af8f42ce0134`  
+		Last Modified: Wed, 14 Apr 2021 20:24:35 GMT  
 		Size: 1.4 KB (1408 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1418b36ca2fc9603d0a6a28d6f4849cdfd80c3069ea494baeba2ce37e66b73d4`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1390 bytes)  
+	-	`sha256:5d73f78d7b9ccdb5963233ef77dab1188e2678cc7c9136ff183494cd28f893f0`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a50dd910f71fe0ceefc794aaee3e6669cd578ae8286348a76c60dc926778da33`  
-		Last Modified: Wed, 10 Mar 2021 21:44:04 GMT  
-		Size: 256.4 KB (256438 bytes)  
+	-	`sha256:b455a43ac6d0be6faf8dce0c59c609cc832963d9cc649b301f49ff79f218e439`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43a39a5ecfed250f608279f4544ced05934bd84e326d05f119a12081aa38b39f`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1397 bytes)  
+	-	`sha256:916f00b0ac9199b716d513a33d44003af6cd00e4b9b7a2feab64b84649d80640`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1431 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7ece2a763e6182c580aadb07399f77037c831dd03ee9cdad4f70b18759458094`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac88310e829bdb746ec804044c2a238dc2c6f64660688285a64205a255283c47`  
+		Last Modified: Wed, 14 Apr 2021 20:24:32 GMT  
+		Size: 1.4 KB (1404 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ed384ae90a546f9aad4b539596228057299114b9662407a708465a0ed7de3691`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1411 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9de7a040e97ee693dc826cc6130e42fe7597fbf48fe035d0e5f9f039166edae5`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e4c1c4ddd499c8a111514a0d3bc3b97381c76a6b33d1cb3f74752d42ddc3e43c`  
+		Last Modified: Wed, 14 Apr 2021 20:24:32 GMT  
+		Size: 255.9 KB (255932 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:96251eba56a444a75ccc3480986386b2d2abcce41beadf2f267bedaee332c54a`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:windowsservercore-1809`
 
 ```console
-$ docker pull caddy@sha256:dfa33ff752c331d4b76bfe3817fd42ef3ef0bc24d9167cdfdd39f137054ea298
+$ docker pull caddy@sha256:89f75ffc06d5f7a7cc6d37f38c9198d869993fa7426542d14c1a8bfdbb467694
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.17763.1817; amd64
+	-	windows version 10.0.17763.1879; amd64
 
-### `caddy:windowsservercore-1809` - windows version 10.0.17763.1817; amd64
+### `caddy:windowsservercore-1809` - windows version 10.0.17763.1879; amd64
 
 ```console
-$ docker pull caddy@sha256:5203e8707456e06dfc8d03ba99cdfe84d4b3dc00be512770827ef5e692ec18e0
+$ docker pull caddy@sha256:fdb259b96e8413c959258115e3cc0ed6272cd362b32dcee80b7c5875b3cca213
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 GB (2487805125 bytes)**  
+-	Total Size: **2.5 GB (2487217133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f93dd36e27e04e9ac5d0bc9da46fbeebc4541b2a242f90a7bc7003d2bc636fe`
+-	Image ID: `sha256:db78127126d7dbe748dc638552655f6a86f11faa664f34ed256da804f77de223`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Thu, 07 May 2020 05:09:25 GMT
 RUN Apply image 1809-RTM-amd64
-# Sat, 27 Feb 2021 09:32:06 GMT
+# Fri, 09 Apr 2021 20:34:41 GMT
 RUN Install update 1809-amd64
-# Wed, 10 Mar 2021 13:08:20 GMT
+# Wed, 14 Apr 2021 12:09:21 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 21:27:31 GMT
+# Wed, 14 Apr 2021 20:04:03 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Wed, 10 Mar 2021 21:27:32 GMT
+# Wed, 14 Apr 2021 20:04:04 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 10 Mar 2021 21:28:05 GMT
+# Wed, 14 Apr 2021 20:04:43 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('afc504cb0a641729ba546c0cadea524a170dcca2a915473aaf032a7c666c7c56ac059752f34b5d50700a692647b9b395b530cd8299ac3650c729adce5daa1ba5')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Wed, 10 Mar 2021 21:28:06 GMT
+# Wed, 14 Apr 2021 20:04:45 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Wed, 10 Mar 2021 21:28:07 GMT
+# Wed, 14 Apr 2021 20:04:46 GMT
 ENV XDG_DATA_HOME=c:/data
-# Wed, 10 Mar 2021 21:28:08 GMT
+# Wed, 14 Apr 2021 20:04:47 GMT
 VOLUME [c:/config]
-# Wed, 10 Mar 2021 21:28:09 GMT
+# Wed, 14 Apr 2021 20:04:48 GMT
 VOLUME [c:/data]
-# Wed, 10 Mar 2021 21:28:11 GMT
+# Wed, 14 Apr 2021 20:04:49 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 10 Mar 2021 21:28:12 GMT
+# Wed, 14 Apr 2021 20:04:50 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 10 Mar 2021 21:28:13 GMT
+# Wed, 14 Apr 2021 20:04:51 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 10 Mar 2021 21:28:14 GMT
+# Wed, 14 Apr 2021 20:04:53 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 10 Mar 2021 21:28:15 GMT
+# Wed, 14 Apr 2021 20:04:54 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 10 Mar 2021 21:28:16 GMT
+# Wed, 14 Apr 2021 20:04:55 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 10 Mar 2021 21:28:17 GMT
+# Wed, 14 Apr 2021 20:04:56 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 10 Mar 2021 21:28:18 GMT
+# Wed, 14 Apr 2021 20:04:57 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 10 Mar 2021 21:28:19 GMT
+# Wed, 14 Apr 2021 20:04:58 GMT
 EXPOSE 80
-# Wed, 10 Mar 2021 21:28:20 GMT
+# Wed, 14 Apr 2021 20:05:00 GMT
 EXPOSE 443
-# Wed, 10 Mar 2021 21:28:21 GMT
+# Wed, 14 Apr 2021 20:05:01 GMT
 EXPOSE 2019
-# Wed, 10 Mar 2021 21:28:41 GMT
+# Wed, 14 Apr 2021 20:05:27 GMT
 RUN caddy version
-# Wed, 10 Mar 2021 21:28:42 GMT
+# Wed, 14 Apr 2021 20:05:28 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -14337,164 +14337,164 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 	-	`sha256:4612f6d0b889cad0ed0292fae3a0b0c8a9e49aff6dea8eb049b2386d9b07986f`  
 		Size: 1.7 GB (1718332879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:5ff1512f88ecd4ff0a91ade34d43733c48834433e35f062f80e6e70d706f8d73`  
-		Size: 743.2 MB (743201590 bytes)  
+	-	`sha256:399f118dfaa9a753e98d128238b944432c7bcabea88a2998a6efbbece28ed303`  
+		Size: 751.4 MB (751421005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ebe61daec6d671bc2c1c6fe61ac9825fb552e9cef3672d0a7dbec719d125ae64`  
-		Last Modified: Wed, 10 Mar 2021 13:21:09 GMT  
+	-	`sha256:106dbf3373fce4f0ba5e00ad54824c597f2894605fa7d8ef446ad7ea3b97449f`  
+		Last Modified: Wed, 14 Apr 2021 12:58:04 GMT  
+		Size: 1.4 KB (1413 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a98036a79f108b7c08eb62f3ef539549a6fe005aced8f3fa4971a4e576e8c045`  
+		Last Modified: Wed, 14 Apr 2021 20:24:07 GMT  
+		Size: 5.1 MB (5081237 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9a1c0c34e473966a69a26492fc168338b6ee1afadedd4cfd3b84537129685128`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
 		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31a02199a38f7dde446e1c919797037b896dc0d954cc313cd49d1fd7ef7b309a`  
-		Last Modified: Wed, 10 Mar 2021 21:43:28 GMT  
-		Size: 9.5 MB (9466151 bytes)  
+	-	`sha256:88365dd5b6b4b0188ad00f31b1114067b79a05d3eeaecbcdf86385c18e1e2bff`  
+		Last Modified: Wed, 14 Apr 2021 20:24:16 GMT  
+		Size: 12.0 MB (12047588 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:928fadc2fce7089b23d0e2d915e1cf2211aec3ffdc88b5eb66c67f18f7fb2c6e`  
-		Last Modified: Wed, 10 Mar 2021 21:43:26 GMT  
-		Size: 1.4 KB (1433 bytes)  
+	-	`sha256:1d8761bc4a54d10c3f03507406d03f0161fece0b4f80913bc67f5218cf7acc0e`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
+		Size: 1.4 KB (1394 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd7bb988dcbf796f3839a524b32be07309d29f50ec4273ded91973b631e0ad00`  
-		Last Modified: Wed, 10 Mar 2021 21:43:45 GMT  
-		Size: 16.5 MB (16453921 bytes)  
+	-	`sha256:f23987f8593afe96ed2b00e5744c51d5678851dac567bde07c230d882b31db5b`  
+		Last Modified: Wed, 14 Apr 2021 20:24:03 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d621047471067d3c16923f7c3b79f8615ddbcc2f9a879832c456f67fe3cd1544`  
-		Last Modified: Wed, 10 Mar 2021 21:43:25 GMT  
-		Size: 1.4 KB (1438 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9f148a6aba7a2d10970470390d5229567735df01114acfbdad1c661bdc8dc22`  
-		Last Modified: Wed, 10 Mar 2021 21:43:24 GMT  
-		Size: 1.4 KB (1436 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc608f5d46fef14425bc80c9c7062532f20bec43d7073a8e17e8278f9c60cc7a`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1436 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0cda8fe89940ce8986995aee365da1f58c22d0d3b8a050600e429ef1cdd8c5fc`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1431 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:403d8611297f60270051c62d4bb7d7dff6aeeb33dc0c5cecd06ae94080fd1802`  
-		Last Modified: Wed, 10 Mar 2021 21:43:23 GMT  
-		Size: 1.4 KB (1401 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab2df9d9f268b91b0f5bd3e27ba3e1cd03694b62c48ad901fa7fc47ebd2956db`  
-		Last Modified: Wed, 10 Mar 2021 21:43:22 GMT  
-		Size: 1.4 KB (1416 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6eabd07d0fd9430b675ce97b3bd926812eb4e9f4c4cf0872d68b91be65dd9d9`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1403 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec389e155c01fcd9625c110db8b62baac443eb2bee04a5f631e7cecc534c0818`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca8fad2b33541d43c28d6113e51b250763c7ec33d8503df271481f615a1f99bc`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1372 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cf0c1f7ba714c558dd8ed7e0336f84c91c25a35766d2efa592b1f39b1e448d6`  
-		Last Modified: Wed, 10 Mar 2021 21:43:21 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea93772cd9ce84491fa183154e0972b941a4379f628a54f9213bf36c4311dbbb`  
-		Last Modified: Wed, 10 Mar 2021 21:43:20 GMT  
+	-	`sha256:27edd7d612a33644ef095d4bd52c800d8e8a1bd73a56ddbeba0a2cda230947a6`  
+		Last Modified: Wed, 14 Apr 2021 20:24:02 GMT  
 		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:842fa064b906d0bd7b584ea5f181fbca29305d9ad824eaed29bf341c1abbcea3`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 1.4 KB (1440 bytes)  
+	-	`sha256:81c5b86f636ca1020805b216bf4ea83e1aaa4e5da4145ec671280678483c8084`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:48b753cdd37ef6dce0fbecce933fdf1957f9d72cf512be44c11d32181611a433`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 1.4 KB (1434 bytes)  
+	-	`sha256:8f097631ca96d803dd63f72849f1b76728a05c89e8451675f669fc655ae07600`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1429 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0205b004a4016df290e2fd8b362003adad13b56a6fbc17c35209de56b2bac034`  
-		Last Modified: Wed, 10 Mar 2021 21:43:16 GMT  
+	-	`sha256:6ace7f5f948c892db540a9734d885fb0695faf8cc55e9fa2df27c4aff76e485d`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1424 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:57476c73327d061921cee32adad6344e762c80c1142357a6de89819e8577d3e6`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1393 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8aaad63b2ff3aa00f636a1f988a02040c9832ae1a184093cef2471115a787a8f`  
+		Last Modified: Wed, 14 Apr 2021 20:24:00 GMT  
+		Size: 1.4 KB (1407 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b1aef5aebcec7bd144ab11a819f8406f07a0dcfaf11684f464b56f5835633fb4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1413 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e7cd29f97bbc5cd627a79fc205fd6f63257d27e45e45264ec1e1c3ab94b319e4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c8aeafc40e34b5ef3464715c082ddb0910edbd9a59ac2d4d9d6586a0022271b4`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4fe3fa5d1767b62495151be377ed814c0ce5766f1cb875b724b922d378249bb8`  
+		Last Modified: Wed, 14 Apr 2021 20:23:58 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b89f7d63263e3b381a5386cd4b13b21226da398d0c8d2bf59f111efb466b9959`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1436 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aab5798a12c9581184fa73f7b74913b0cf6c4ae638f2886f07d70a9f32181d9a`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1406 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bf434bfce197fbac09ffe0409a20f2a1ba646801b7dac739c6cea7bed0ce2fad`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 1.4 KB (1420 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ec0defeab0b694a738dc4b945c883e44f4118a4127f00e4cea32ab589fb194dc`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
+		Size: 308.9 KB (308863 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:51d70335c993ba29c3325465e90a310fce3b41a934bc25ec1bc5220fd3424bfe`  
+		Last Modified: Wed, 14 Apr 2021 20:23:55 GMT  
 		Size: 1.4 KB (1425 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e5f63eec622fd92f0ce90d6e06bd12c2687cbdf86aae3cdbbb8d3fdc92ef028`  
-		Last Modified: Wed, 10 Mar 2021 21:43:19 GMT  
-		Size: 1.4 KB (1369 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:446a62c8913c6a60f39e8053d6ad0d6dfaf69ec7d8cf3fcc2665386e362238d6`  
-		Last Modified: Wed, 10 Mar 2021 21:43:18 GMT  
-		Size: 325.1 KB (325114 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43fc4417c46cd53b142f42f58ded86ccf383c9f9b6e5f97d8a8183abbd1bd7aa`  
-		Last Modified: Wed, 10 Mar 2021 21:43:17 GMT  
-		Size: 1.4 KB (1383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `caddy:windowsservercore-ltsc2016`
 
 ```console
-$ docker pull caddy@sha256:971ecb6797495e16d5ee3ede15138f5ceaee0930af2ee0b6fbc9dbae848302fa
+$ docker pull caddy@sha256:a42a67f914fd976a839e8c725f15fec79415b331ffeaa3972e7bff363bec4ada
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
-	-	windows version 10.0.14393.4283; amd64
+	-	windows version 10.0.14393.4350; amd64
 
-### `caddy:windowsservercore-ltsc2016` - windows version 10.0.14393.4283; amd64
+### `caddy:windowsservercore-ltsc2016` - windows version 10.0.14393.4350; amd64
 
 ```console
-$ docker pull caddy@sha256:e9416497e1d43fd04e244f89af4e210714a28b676cf1e2279487484087b8ee39
+$ docker pull caddy@sha256:0a27a5dee7d386c823f3ad85b0ad3c7c6ebb739e7d7ad1cbc37662a3e955dfbc
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 GB (5829241236 bytes)**  
+-	Total Size: **5.8 GB (5818160037 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b987ba0d14c06619541f1cb51215c36133a17cfbfea49a9bc79b021564ab785`
+-	Image ID: `sha256:c5d01f580a5360a74b845ce6ffbd196e0930731b656954f6dafd810f4b69ae72`
 -	Default Command: `["caddy","run","--config","\/etc\/caddy\/Caddyfile","--adapter","caddyfile"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Sat, 19 Nov 2016 17:05:00 GMT
 RUN Apply image 1607-RTM-amd64
-# Wed, 03 Mar 2021 18:02:00 GMT
+# Wed, 07 Apr 2021 21:54:00 GMT
 RUN Install update ltsc2016-amd64
-# Wed, 10 Mar 2021 13:42:05 GMT
+# Wed, 14 Apr 2021 12:35:33 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 10 Mar 2021 21:30:30 GMT
+# Wed, 14 Apr 2021 20:07:14 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     mkdir /config;     mkdir /data;     mkdir /etc/caddy;     mkdir /usr/share/caddy;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/config/Caddyfile"         -OutFile "/etc/caddy/Caddyfile";     Invoke-WebRequest         -Uri "https://github.com/caddyserver/dist/raw/56302336e0bb7c8c5dff34cbcb1d833791478226/welcome/index.html"         -OutFile "/usr/share/caddy/index.html"
-# Wed, 10 Mar 2021 21:30:31 GMT
+# Wed, 14 Apr 2021 20:07:15 GMT
 ENV CADDY_VERSION=v2.3.0
-# Wed, 10 Mar 2021 21:32:11 GMT
+# Wed, 14 Apr 2021 20:09:01 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/caddy/releases/download/v2.3.0/caddy_2.3.0_windows_amd64.zip"         -OutFile "/caddy.zip";     if (!(Get-FileHash -Path /caddy.zip -Algorithm SHA512).Hash.ToLower().Equals('afc504cb0a641729ba546c0cadea524a170dcca2a915473aaf032a7c666c7c56ac059752f34b5d50700a692647b9b395b530cd8299ac3650c729adce5daa1ba5')) { exit 1; };     Expand-Archive -Path "/caddy.zip" -DestinationPath "/" -Force;     Remove-Item "/caddy.zip" -Force
-# Wed, 10 Mar 2021 21:32:12 GMT
+# Wed, 14 Apr 2021 20:09:02 GMT
 ENV XDG_CONFIG_HOME=c:/config
-# Wed, 10 Mar 2021 21:32:13 GMT
+# Wed, 14 Apr 2021 20:09:04 GMT
 ENV XDG_DATA_HOME=c:/data
-# Wed, 10 Mar 2021 21:32:14 GMT
+# Wed, 14 Apr 2021 20:09:05 GMT
 VOLUME [c:/config]
-# Wed, 10 Mar 2021 21:32:15 GMT
+# Wed, 14 Apr 2021 20:09:06 GMT
 VOLUME [c:/data]
-# Wed, 10 Mar 2021 21:32:16 GMT
+# Wed, 14 Apr 2021 20:09:07 GMT
 LABEL org.opencontainers.image.version=v2.3.0
-# Wed, 10 Mar 2021 21:32:18 GMT
+# Wed, 14 Apr 2021 20:09:08 GMT
 LABEL org.opencontainers.image.title=Caddy
-# Wed, 10 Mar 2021 21:32:19 GMT
+# Wed, 14 Apr 2021 20:09:09 GMT
 LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
-# Wed, 10 Mar 2021 21:32:20 GMT
+# Wed, 14 Apr 2021 20:09:10 GMT
 LABEL org.opencontainers.image.url=https://caddyserver.com
-# Wed, 10 Mar 2021 21:32:21 GMT
+# Wed, 14 Apr 2021 20:09:11 GMT
 LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs
-# Wed, 10 Mar 2021 21:32:23 GMT
+# Wed, 14 Apr 2021 20:09:12 GMT
 LABEL org.opencontainers.image.vendor=Light Code Labs
-# Wed, 10 Mar 2021 21:32:24 GMT
+# Wed, 14 Apr 2021 20:09:14 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Wed, 10 Mar 2021 21:32:25 GMT
+# Wed, 14 Apr 2021 20:09:15 GMT
 LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker
-# Wed, 10 Mar 2021 21:32:26 GMT
+# Wed, 14 Apr 2021 20:09:16 GMT
 EXPOSE 80
-# Wed, 10 Mar 2021 21:32:27 GMT
+# Wed, 14 Apr 2021 20:09:17 GMT
 EXPOSE 443
-# Wed, 10 Mar 2021 21:32:28 GMT
+# Wed, 14 Apr 2021 20:09:18 GMT
 EXPOSE 2019
-# Wed, 10 Mar 2021 21:33:17 GMT
+# Wed, 14 Apr 2021 20:10:29 GMT
 RUN caddy version
-# Wed, 10 Mar 2021 21:33:18 GMT
+# Wed, 14 Apr 2021 20:10:30 GMT
 CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 ```
 
@@ -14503,90 +14503,90 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Last Modified: Tue, 18 Sep 2018 20:20:50 GMT  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:30bda99601c5cbd3b2118409f401852ea648e2319bd81518723e476b28d764c5`  
-		Size: 1.7 GB (1726924885 bytes)  
+	-	`sha256:00b4edb823e6a375d179a28cbfa682c2379d62179e1518485902d6e68b9a9d1e`  
+		Size: 1.7 GB (1724897968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:76680da9dc6db108ddf2e353c494b45e8486a6751619a13ed8fb3ad64b9a16e9`  
-		Last Modified: Wed, 10 Mar 2021 14:06:08 GMT  
-		Size: 1.3 KB (1333 bytes)  
+	-	`sha256:bb52885e05952959b0fa7aaff23561fcf14d294aed336112b388c94e67709e4f`  
+		Last Modified: Wed, 14 Apr 2021 12:59:14 GMT  
+		Size: 1.4 KB (1406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0c9e18c1004b748968faecba6f9d1b5e6233e7e0b82b1c1259cf945eb3334e6`  
-		Last Modified: Wed, 10 Mar 2021 21:44:17 GMT  
-		Size: 10.2 MB (10181612 bytes)  
+	-	`sha256:398ea9969fcb8e31829ad2a30ccb77a30f56d17d992051bf6a04b0bd4ebb24a7`  
+		Last Modified: Wed, 14 Apr 2021 20:24:45 GMT  
+		Size: 5.7 MB (5661064 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08f9c532d82c90ea9fc2e2c6a591988abfb79e551caabead3fe56f8ba69c31f6`  
-		Last Modified: Wed, 10 Mar 2021 21:44:12 GMT  
-		Size: 1.4 KB (1404 bytes)  
+	-	`sha256:1d2d2fcf25a0097bf75ef1b7b207a765b3c93bce2eb96e7ebf2ce894a0ca0bf1`  
+		Last Modified: Wed, 14 Apr 2021 20:24:43 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5695a08e71ba7869b2e8b11e6f3f228a8a6d303878131e1f3abdc655757b5f2`  
-		Last Modified: Wed, 10 Mar 2021 21:44:19 GMT  
-		Size: 21.9 MB (21867123 bytes)  
+	-	`sha256:6f1814c5a2050da8e869a225b62ac936693d7904fed473ed6d703acd42542916`  
+		Last Modified: Wed, 14 Apr 2021 20:24:46 GMT  
+		Size: 17.3 MB (17333583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fabb7c4e3c2c8cdeef81bd8a6fcaed6b082e5ea4120a15ae4e277258c03de007`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1372 bytes)  
+	-	`sha256:93803b6c6c1e5befb69d029873c92020261e4faf5f97fa1ebe4474f2fcd761da`  
+		Last Modified: Wed, 14 Apr 2021 20:24:39 GMT  
+		Size: 1.4 KB (1403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82ec41ded5794a348cd9c06286dcbe7ca964197008812567791bc45b22bc4dd1`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1427 bytes)  
+	-	`sha256:5bef042a1c15ba4cca6086f36ad82e03f037ebae2ec5218dc528ce8afa0cbbe7`  
+		Last Modified: Wed, 14 Apr 2021 20:24:39 GMT  
+		Size: 1.4 KB (1409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d20ab0530e5214beccbf36a30fe1618f9752274c51a313bb71e9b9b130870164`  
-		Last Modified: Wed, 10 Mar 2021 21:44:11 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc0a7b2c54a3fa027e26d52abd2013c77fc0e69bf93446d70990dc40a6e00d98`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1366 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e0051bde2db70124d244a1337ccc824629e18f2be3b800ec577a7794ff1f7f3`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1428 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:271b14baf3d87c6aa3bd2da952290cec023b40b90b62688c79fa26d9253770ac`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
-		Size: 1.4 KB (1391 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bc9b324fb71cb6bdc3dfd42355efbd64634f7d2ec678a5a15757e69145f671d`  
-		Last Modified: Wed, 10 Mar 2021 21:44:09 GMT  
+	-	`sha256:0c22fd29bd95221222824495015750f062fcf337845032c4d11be1c8166d9911`  
+		Last Modified: Wed, 14 Apr 2021 20:24:37 GMT  
 		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69d93b07db92b46680fe5ba78d29058e6f5b2ce49ba20cb10aeccb751b37d497`  
-		Last Modified: Wed, 10 Mar 2021 21:44:08 GMT  
-		Size: 1.4 KB (1433 bytes)  
+	-	`sha256:e034d998c8e3152093c8f2c30b0ac9122c528b8ba0889cadf3a3282059a8f96c`  
+		Last Modified: Wed, 14 Apr 2021 20:24:37 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bb6dc81911c7b01e751b8d5a08f7cf494f5542f166b2e1471a08ef82b4ebcb4`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1410 bytes)  
+	-	`sha256:80cd579cdba6539c678c1cfd7184427e5b0777e34c965e8c6ca62f8301dd629f`  
+		Last Modified: Wed, 14 Apr 2021 20:24:36 GMT  
+		Size: 1.4 KB (1435 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a53bfaf85823badcda6fa4470993f24b9772597b13989ee71ec0b5686be93cbc`  
-		Last Modified: Wed, 10 Mar 2021 21:44:07 GMT  
-		Size: 1.4 KB (1410 bytes)  
+	-	`sha256:1ea0c59c3768ba8d3f4943669c834e3b8043899a0ee61ed325fa453559243f95`  
+		Last Modified: Wed, 14 Apr 2021 20:24:36 GMT  
+		Size: 1.4 KB (1434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5077aa28e94279b15dbe048f37904704877b5b4a932e67a3a12adf8bdfe9ada`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1436 bytes)  
+	-	`sha256:bc5f4c914fc136d87d2e00167556104cf17827c516e84c53785225cfeb214a42`  
+		Last Modified: Wed, 14 Apr 2021 20:24:40 GMT  
+		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5851fcb607a8afd06548b48e611020418ed88f0c0e1abcba7854089c8bf9729e`  
-		Last Modified: Wed, 10 Mar 2021 21:44:06 GMT  
-		Size: 1.4 KB (1395 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:498aa4d3ee4135d0aaeccdf4fe0d8ec98c3ba95a92fd0b56dc73a461be700516`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1418 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0651b67304c2388b503cbd386e0235ec00a5a8437a9d115ba871152ae9d07103`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
+	-	`sha256:164712f851736c62b6da95357e6056173e390402e1a17b2f7559af8f42ce0134`  
+		Last Modified: Wed, 14 Apr 2021 20:24:35 GMT  
 		Size: 1.4 KB (1408 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1418b36ca2fc9603d0a6a28d6f4849cdfd80c3069ea494baeba2ce37e66b73d4`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1390 bytes)  
+	-	`sha256:5d73f78d7b9ccdb5963233ef77dab1188e2678cc7c9136ff183494cd28f893f0`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a50dd910f71fe0ceefc794aaee3e6669cd578ae8286348a76c60dc926778da33`  
-		Last Modified: Wed, 10 Mar 2021 21:44:04 GMT  
-		Size: 256.4 KB (256438 bytes)  
+	-	`sha256:b455a43ac6d0be6faf8dce0c59c609cc832963d9cc649b301f49ff79f218e439`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43a39a5ecfed250f608279f4544ced05934bd84e326d05f119a12081aa38b39f`  
-		Last Modified: Wed, 10 Mar 2021 21:44:03 GMT  
-		Size: 1.4 KB (1397 bytes)  
+	-	`sha256:916f00b0ac9199b716d513a33d44003af6cd00e4b9b7a2feab64b84649d80640`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1431 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7ece2a763e6182c580aadb07399f77037c831dd03ee9cdad4f70b18759458094`  
+		Last Modified: Wed, 14 Apr 2021 20:24:34 GMT  
+		Size: 1.4 KB (1427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac88310e829bdb746ec804044c2a238dc2c6f64660688285a64205a255283c47`  
+		Last Modified: Wed, 14 Apr 2021 20:24:32 GMT  
+		Size: 1.4 KB (1404 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ed384ae90a546f9aad4b539596228057299114b9662407a708465a0ed7de3691`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1411 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9de7a040e97ee693dc826cc6130e42fe7597fbf48fe035d0e5f9f039166edae5`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e4c1c4ddd499c8a111514a0d3bc3b97381c76a6b33d1cb3f74752d42ddc3e43c`  
+		Last Modified: Wed, 14 Apr 2021 20:24:32 GMT  
+		Size: 255.9 KB (255932 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:96251eba56a444a75ccc3480986386b2d2abcce41beadf2f267bedaee332c54a`  
+		Last Modified: Wed, 14 Apr 2021 20:24:31 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
