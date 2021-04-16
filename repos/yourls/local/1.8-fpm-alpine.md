@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d9d4dd9d57ff31b575a57ed955d83b2419e1adbfbd021c6b0208d975d25cb6cc`
-- Created: `2021-04-01T20:24:48.714948916Z`
-- Virtual Size: ~ 92.90 Mb  
+- Image ID: `sha256:a019e3d304f4c774c2c39a2301fd6b1c3e64ef5452bd4a444c891b0c2dc68387`
+- Created: `2021-04-15T10:35:43.513325657Z`
+- Virtual Size: ~ 92.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -64,16 +64,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.12.4-r0 description:
+apk-tools-2.12.5-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.12.4-r0 webpage:
+apk-tools-2.12.5-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.12.4-r0 installed size:
+apk-tools-2.12.5-r0 installed size:
 311296
 
-apk-tools-2.12.4-r0 license:
+apk-tools-2.12.5-r0 license:
 GPL-2.0-only
 
 ```
@@ -132,16 +132,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.32.1-r5 description:
+busybox-1.32.1-r6 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.32.1-r5 webpage:
+busybox-1.32.1-r6 webpage:
 https://busybox.net/
 
-busybox-1.32.1-r5 installed size:
+busybox-1.32.1-r6 installed size:
 946176
 
-busybox-1.32.1-r5 license:
+busybox-1.32.1-r6 license:
 GPL-2.0-only
 
 ```
@@ -183,16 +183,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-7.74.0-r1 description:
+curl-7.76.1-r0 description:
 URL retrival utility and library
 
-curl-7.74.0-r1 webpage:
-https://curl.haxx.se/
+curl-7.76.1-r0 webpage:
+https://curl.se/
 
-curl-7.74.0-r1 installed size:
-245760
+curl-7.76.1-r0 installed size:
+249856
 
-curl-7.74.0-r1 license:
+curl-7.76.1-r0 license:
 MIT
 
 ```
@@ -251,16 +251,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.74.0-r1 description:
+libcurl-7.76.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-7.74.0-r1 webpage:
-https://curl.haxx.se/
+libcurl-7.76.1-r0 webpage:
+https://curl.se/
 
-libcurl-7.74.0-r1 installed size:
-495616
+libcurl-7.76.1-r0 installed size:
+499712
 
-libcurl-7.74.0-r1 license:
+libcurl-7.76.1-r0 license:
 MIT
 
 ```
@@ -523,16 +523,16 @@ Public-Domain
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.32.1-r5 description:
+ssl_client-1.32.1-r6 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.32.1-r5 webpage:
+ssl_client-1.32.1-r6 webpage:
 https://busybox.net/
 
-ssl_client-1.32.1-r5 installed size:
+ssl_client-1.32.1-r6 installed size:
 28672
 
-ssl_client-1.32.1-r5 license:
+ssl_client-1.32.1-r6 license:
 GPL-2.0-only
 
 ```
@@ -540,16 +540,16 @@ GPL-2.0-only
 ### `apk` package: `tar`
 
 ```console
-tar-1.33-r1 description:
+tar-1.34-r0 description:
 Utility used to store, backup, and transport files
 
-tar-1.33-r1 webpage:
+tar-1.34-r0 webpage:
 https://www.gnu.org/software/tar/
 
-tar-1.33-r1 installed size:
+tar-1.34-r0 installed size:
 499712
 
-tar-1.33-r1 license:
+tar-1.34-r0 license:
 GPL-3.0-or-later
 
 ```
