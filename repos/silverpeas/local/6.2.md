@@ -5175,17 +5175,9 @@ Licenses: (parsed from: `/usr/share/doc/fonts-opensymbol/copyright`, `/usr/share
 - `MPL-2.0`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libreoffice=1:6.4.6-0ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.6-0ubuntu0.20.04.1.dsc' libreoffice_6.4.6-0ubuntu0.20.04.1.dsc 30164 SHA512:975d569a50c430ff1e6d1d1b30a8890ed8054916b64efe3db84d81df1f87c5057cb89b39675a057b1d9293d9464e5c5ab445cd2f35cc0f04f597cd0402f214ec
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.6.orig-helpcontent2.tar.xz' libreoffice_6.4.6.orig-helpcontent2.tar.xz 87698848 SHA512:bec6721f1715ae3fc3163c90e0b46e5a86e74b92acad184783d590ff6c3ae127a6477c331227e3b9b29e805bb7e065bf2082f3c45264612876c6b99c1b18fe90
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.6.orig-tarballs.tar.xz' libreoffice_6.4.6.orig-tarballs.tar.xz 206717616 SHA512:4e66f7761c6514818af5f1ce84f20c804048f0253e2754d4d76b8d52ac70fb19c0eb633ff766a3988883ee517b16bca967474b379ca471df469fa14910a74e65
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.6.orig-translations.tar.xz' libreoffice_6.4.6.orig-translations.tar.xz 173767892 SHA512:2df14f038facfcc82b8d7b3de9e84db4cfda54e7ec11f4e31801e7d3b9efd74efd9d6f3d734f534149c7367279f3efe7965f59278e60a9076e5fde90b350a05b
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.6.orig.tar.xz' libreoffice_6.4.6.orig.tar.xz 211915372 SHA512:0a9339c289d0a4cd217932edaa155c790a4daff3f2599131688622e0b77abef7295d705be639b5a5b69ed779ccaaa3ce39837cc1c3259af787002e3ced82ac62
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.6-0ubuntu0.20.04.1.debian.tar.xz' libreoffice_6.4.6-0ubuntu0.20.04.1.debian.tar.xz 2373136 SHA512:82238defb6e019d6547e9210c6d3fb0cb05cf6da0e5cb6dd53cfae7f7bc0cc889bf3573403fbf9eac5ac045d7259f0d4635e18748bd3dc6bf5ef31f6c2f79874
-```
 
 ### `dpkg` source package: `librest=0.8.1-1`
 
