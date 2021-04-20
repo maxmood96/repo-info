@@ -2033,21 +2033,13 @@ Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/do
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.18.3-4
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3-4.dsc' krb5_1.18.3-4.dsc 3437 SHA256:3a400a053bb67ac5e52484a948a768b4d4efb082fa510438dd79b1dc0993ee56
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3.orig.tar.gz' krb5_1.18.3.orig.tar.gz 8715312 SHA256:e61783c292b5efd9afb45c555a80dd267ac67eebabca42185362bee6c4fbd719
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3.orig.tar.gz.asc' krb5_1.18.3.orig.tar.gz.asc 833 SHA256:ded19808ba7320ad0bb3ddfb5202845b2ff36a50613af7832f78dd3cb4437419
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3-4.debian.tar.xz' krb5_1.18.3-4.debian.tar.xz 103628 SHA256:69650fce52c8f3b301d9101913b6c9c4d32dee30da8861d8d2e4a07b76163f64
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.18.3-4/
 
-- https://sources.debian.net/src/krb5/1.18.3-4/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.18.3-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.18.3-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lcms2=2.12~rc1-2`
 
@@ -3446,20 +3438,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxcrypt=1:4.4.17-1
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.17-1.dsc' libxcrypt_4.4.17-1.dsc 1463 SHA256:404666b7959510140e036344184d1648c51c410c7d65fbc7b6cad871d41bfd77
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.17.orig.tar.xz' libxcrypt_4.4.17.orig.tar.xz 389052 SHA256:b6189c6076ee88df6fe2bd14b1e90a73a5ca3a808052e16c7fcd0bf16448c677
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.17-1.debian.tar.xz' libxcrypt_4.4.17-1.debian.tar.xz 5536 SHA256:dc69cdb7c48521231ff13ebc3d432d3775a41fbbc534bf89a60b526a538eca4d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxcrypt/1:4.4.17-1/
 
-- https://sources.debian.net/src/libxcrypt/1:4.4.17-1/ (for browsing the source)
-- https://sources.debian.net/src/libxcrypt/1:4.4.17-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxcrypt/1:4.4.17-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxdmcp=1:1.1.2-3`
 
@@ -3692,20 +3677,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `X11`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.10.26-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.26-1.dsc' linux_5.10.26-1.dsc 195000 SHA256:8c5aae2fe96726282de8712ba9f16de7faf8b021619c23bbad0b92ea52dacdf4
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.26.orig.tar.xz' linux_5.10.26.orig.tar.xz 121499348 SHA256:e351bf3613952608c266d63a30d2629d2d033231cd60b8292eac5ce358ab24cd
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.26-1.debian.tar.xz' linux_5.10.26-1.debian.tar.xz 4147240 SHA256:06553e63779befff2607dad5d7a6b429332d1ab078f2a001e9cb6c4598e3dde4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/5.10.26-1/
 
-- https://sources.debian.net/src/linux/5.10.26-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.10.26-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.10.26-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
@@ -4150,21 +4128,13 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed6/copyright`, `/usr/share/doc/
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nettle=3.7-2.1
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.7-2.1.dsc' nettle_3.7-2.1.dsc 2262 SHA256:13661e99da0ef9455e5c7a0716a93c2918349539e2681db232b8ca2b27409c87
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.7.orig.tar.gz' nettle_3.7.orig.tar.gz 2375067 SHA256:f001f64eb444bf13dd91bceccbc20acbc60c4311d6e2b20878452eb9a9cec75a
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.7.orig.tar.gz.asc' nettle_3.7.orig.tar.gz.asc 573 SHA256:1f5ed81582441eb4d953ef8666521ebc349f41f7dde5e11cb0845a2c049941b1
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.7-2.1.debian.tar.xz' nettle_3.7-2.1.debian.tar.xz 30880 SHA256:343ab79dbe2907eb276b756ad6a90ba8775cf41b49b5cdffc149e142a9d269fb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nettle/3.7-2.1/
 
-- https://sources.debian.net/src/nettle/3.7-2.1/ (for browsing the source)
-- https://sources.debian.net/src/nettle/3.7-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nettle/3.7-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nghttp2=1.43.0-1`
 
@@ -4763,20 +4733,13 @@ Licenses: (parsed from: `/usr/share/doc/libprocps8/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:3.3.17-4
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.17-4.dsc' procps_3.3.17-4.dsc 2136 SHA256:e06cdd7eadc0f7aeb26bf347bbbb15a7274fadf7c77a1a5de17bab12abdbe94e
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.17.orig.tar.xz' procps_3.3.17.orig.tar.xz 1008428 SHA256:4518b3e7aafd34ec07d0063d250fd474999b20b200218c3ae56f5d2113f141b4
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.17-4.debian.tar.xz' procps_3.3.17-4.debian.tar.xz 28576 SHA256:5afd67b31bc2f87f22be5f02ea2316235d42ced3736bb89c3d2a08d4276eb4ba
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/procps/2:3.3.17-4/
 
-- https://sources.debian.net/src/procps/2:3.3.17-4/ (for browsing the source)
-- https://sources.debian.net/src/procps/2:3.3.17-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/procps/2:3.3.17-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.9.2-2`
 
