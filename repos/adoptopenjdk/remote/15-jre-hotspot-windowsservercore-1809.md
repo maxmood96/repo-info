@@ -1,7 +1,7 @@
 ## `adoptopenjdk:15-jre-hotspot-windowsservercore-1809`
 
 ```console
-$ docker pull adoptopenjdk@sha256:dd1614a58c29f9885e0ccd975315e2ff0ca98b1e7f465f4002f1c120b2194962
+$ docker pull adoptopenjdk@sha256:a3667ee79eaf01e1535ceb495555913b009fd8fbdd1af730b252731ef92b16f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull adoptopenjdk@sha256:dd1614a58c29f9885e0ccd975315e2ff0ca98b1e7f465f
 ### `adoptopenjdk:15-jre-hotspot-windowsservercore-1809` - windows version 10.0.17763.1879; amd64
 
 ```console
-$ docker pull adoptopenjdk@sha256:d2e3b0d3a829a0257f5815511998e0bbb06f03f53928561627bdab04271595c3
+$ docker pull adoptopenjdk@sha256:fbd287c87b3ffa19ca576d79f542b94f1f9c5dcbf9a2988963cdfb1898026112
 ```
 
 -	Docker Version: 19.03.5
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 GB (2566150595 bytes)**  
+-	Total Size: **2.6 GB (2566177135 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d51899bd89d4899cdabf860eea9869c91dfc2707241d02ef123f4e1940247b4`
+-	Image ID: `sha256:3caa678347aaa3f6741f688b3bb12417bf6ae9b26565d82d5b7cd49c4408bc11`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -31,8 +31,8 @@ RUN Install update 1809-amd64
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
 # Wed, 14 Apr 2021 18:16:31 GMT
 ENV JAVA_VERSION=jdk-15.0.2+7
-# Wed, 14 Apr 2021 18:22:28 GMT
-RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.2%2B7/OpenJDK15U-jre_x64_windows_hotspot_15.0.2_7.msi ...');     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     wget https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.2%2B7/OpenJDK15U-jre_x64_windows_hotspot_15.0.2_7.msi -O 'openjdk.msi';     Write-Host ('Verifying sha256 (e78fb1b0ccb6413d27dd9ed487f09af3bd0ba204208305c3b20e58607f45a019) ...');     if ((Get-FileHash openjdk.msi -Algorithm sha256).Hash -ne 'e78fb1b0ccb6413d27dd9ed487f09af3bd0ba204208305c3b20e58607f45a019') {             Write-Host 'FAILED!';             exit 1;     };         New-Item -ItemType Directory -Path C:\temp | Out-Null;         Write-Host 'Installing using MSI ...';     Start-Process -FilePath "msiexec.exe" -ArgumentList '/i', 'openjdk.msi', '/L*V', 'C:\temp\OpenJDK.log',     '/quiet', 'ADDLOCAL=FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome' -Wait -Passthru;     Remove-Item -Path C:\temp -Recurse | Out-Null;     Write-Host 'Removing openjdk.msi ...';     Remove-Item openjdk.msi -Force
+# Mon, 19 Apr 2021 19:27:07 GMT
+RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.2%2B7/OpenJDK15U-jre_x64_windows_hotspot_15.0.2_7.msi ...');     curl.exe -LfsSo openjdk.msi https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.2%2B7/OpenJDK15U-jre_x64_windows_hotspot_15.0.2_7.msi ;     Write-Host ('Verifying sha256 (e78fb1b0ccb6413d27dd9ed487f09af3bd0ba204208305c3b20e58607f45a019) ...');     if ((Get-FileHash openjdk.msi -Algorithm sha256).Hash -ne 'e78fb1b0ccb6413d27dd9ed487f09af3bd0ba204208305c3b20e58607f45a019') {             Write-Host 'FAILED!';             exit 1;     };         New-Item -ItemType Directory -Path C:\temp | Out-Null;         Write-Host 'Installing using MSI ...';     $proc = Start-Process -FilePath "msiexec.exe" -ArgumentList '/i', 'openjdk.msi', '/L*V', 'C:\temp\OpenJDK.log',     '/quiet', 'ADDLOCAL=FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome' -Wait -Passthru;     $proc.WaitForExit() ;     if ($proc.ExitCode -ne 0) {             Write-Host 'FAILED installing MSI!' ;             exit 1;     };         Remove-Item -Path C:\temp -Recurse | Out-Null;     Write-Host 'Removing openjdk.msi ...';     Remove-Item openjdk.msi -Force
 ```
 
 -	Layers:
@@ -50,7 +50,7 @@ RUN Write-Host ('Downloading https://github.com/AdoptOpenJDK/openjdk15-binaries/
 		Last Modified: Wed, 14 Apr 2021 19:23:01 GMT  
 		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5173f9719370372f52e5276d4097daa7b1967f3dc4de25f1995ab2a7d7279af4`  
-		Last Modified: Wed, 14 Apr 2021 19:25:02 GMT  
-		Size: 96.4 MB (96393862 bytes)  
+	-	`sha256:46068683c0e3afd84798d202db8cd5693e25c4c307bffee5ccb9e1d016ed4e47`  
+		Last Modified: Mon, 19 Apr 2021 20:43:47 GMT  
+		Size: 96.4 MB (96420402 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
