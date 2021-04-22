@@ -1,7 +1,7 @@
 ## `sonarqube:lts`
 
 ```console
-$ docker pull sonarqube@sha256:ad851a8d661b5cfc855d2ab69353faab8623f3f1af4a3102124fff7041f11216
+$ docker pull sonarqube@sha256:9850cb4ecc08aa7b950b822269340fa87b6be468bcf0b63c6477b84e32eaf972
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull sonarqube@sha256:ad851a8d661b5cfc855d2ab69353faab8623f3f1af4a31021
 ### `sonarqube:lts` - linux; amd64
 
 ```console
-$ docker pull sonarqube@sha256:dfe97750571a821834b429feef4c27d6444ba67ae700d22c35cdc030dbac68b3
+$ docker pull sonarqube@sha256:097b899a94cdcb1640f04cb5470663507d8e5e0642861ad96a2ac9726b5316aa
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **290.7 MB (290660161 bytes)**  
+-	Total Size: **290.7 MB (290694513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40f9672f8b755177eab6f192da28cc47297075095fce55aee27719af6083e762`
+-	Image ID: `sha256:81fe5f0a1278c1e6af249aba66cf7524ab827c68ea4455a8b6851881b99f0889`
 -	Entrypoint: `[".\/bin\/run.sh"]`
 
 ```dockerfile
@@ -36,31 +36,31 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Sat, 10 Apr 2021 12:47:34 GMT
 ENV LANG=C.UTF-8
-# Sat, 10 Apr 2021 12:47:34 GMT
-ENV JAVA_VERSION=11.0.10
-# Sat, 10 Apr 2021 12:48:46 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_x64_linux_11.0.10_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.10%2B9/OpenJDK11U-jre_aarch64_linux_11.0.10_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Sun, 11 Apr 2021 03:20:12 GMT
+# Wed, 21 Apr 2021 21:54:50 GMT
+ENV JAVA_VERSION=11.0.11+9
+# Wed, 21 Apr 2021 21:55:32 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.11%2B9/OpenJDK11U-jre_x64_linux_11.0.11_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.11%2B9/OpenJDK11U-jre_aarch64_linux_11.0.11_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Thu, 22 Apr 2021 00:20:58 GMT
 RUN apt-get update     && apt-get install -y curl gnupg2 unzip     && rm -rf /var/lib/apt/lists/*
-# Sun, 11 Apr 2021 03:20:12 GMT
+# Thu, 22 Apr 2021 00:20:58 GMT
 ENV SONAR_VERSION=7.9.6 SONARQUBE_HOME=/opt/sonarqube SONARQUBE_JDBC_USERNAME=sonar SONARQUBE_JDBC_PASSWORD=sonar SONARQUBE_JDBC_URL=
-# Sun, 11 Apr 2021 03:20:12 GMT
+# Thu, 22 Apr 2021 00:20:58 GMT
 EXPOSE 9000
-# Sun, 11 Apr 2021 03:20:13 GMT
+# Thu, 22 Apr 2021 00:20:59 GMT
 RUN groupadd -r sonarqube && useradd -r -g sonarqube sonarqube
-# Sun, 11 Apr 2021 03:20:14 GMT
+# Thu, 22 Apr 2021 00:21:00 GMT
 RUN for server in $(shuf -e ha.pool.sks-keyservers.net                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys F1182E81C792928921DBCAB4CFCA4A29D26468DE && break || : ;     done
-# Sun, 11 Apr 2021 03:20:44 GMT
+# Thu, 22 Apr 2021 00:21:28 GMT
 RUN set -x     && cd /opt     && curl -o sonarqube.zip -fSL https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip     && curl -o sonarqube.zip.asc -fSL https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip.asc     && gpg --batch --verify sonarqube.zip.asc sonarqube.zip     && unzip -q sonarqube.zip     && mv sonarqube-$SONAR_VERSION sonarqube     && chown -R sonarqube:sonarqube sonarqube     && rm sonarqube.zip*     && rm -rf $SONARQUBE_HOME/bin/*
-# Sun, 11 Apr 2021 03:20:44 GMT
+# Thu, 22 Apr 2021 00:21:29 GMT
 VOLUME [/opt/sonarqube/data]
-# Sun, 11 Apr 2021 03:20:45 GMT
+# Thu, 22 Apr 2021 00:21:29 GMT
 WORKDIR /opt/sonarqube
-# Sun, 11 Apr 2021 03:20:45 GMT
+# Thu, 22 Apr 2021 00:21:29 GMT
 COPY file:d7c6edf99ad4508dcb273783aad5da8017e549d505d617619117cc576bbc8850 in /opt/sonarqube/bin/ 
-# Sun, 11 Apr 2021 03:20:45 GMT
+# Thu, 22 Apr 2021 00:21:30 GMT
 USER sonarqube
-# Sun, 11 Apr 2021 03:20:45 GMT
+# Thu, 22 Apr 2021 00:21:30 GMT
 ENTRYPOINT ["./bin/run.sh"]
 ```
 
@@ -77,27 +77,27 @@ ENTRYPOINT ["./bin/run.sh"]
 		Last Modified: Sat, 10 Apr 2021 12:59:25 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:395682a2fa051e6f6d26afc54672593dc8aca2bb30e24d85c81597671c03e7eb`  
-		Last Modified: Sat, 10 Apr 2021 13:01:05 GMT  
-		Size: 47.0 MB (47045954 bytes)  
+	-	`sha256:ca2026cde8de32d04b7aa32f7b9be9955608bde12eef11290fcaa8ca329ba27c`  
+		Last Modified: Wed, 21 Apr 2021 22:04:34 GMT  
+		Size: 47.1 MB (47080157 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02d48e13c2db207e80cc0471d5e7b01431a13f249fde5310ea73cc9dad312af3`  
-		Last Modified: Sun, 11 Apr 2021 03:21:28 GMT  
-		Size: 6.0 MB (5986995 bytes)  
+	-	`sha256:3eb37a5daf23328949c3bc4f77c48816eeb71cfba73b6e78dc08843d9ab1abc2`  
+		Last Modified: Thu, 22 Apr 2021 00:22:14 GMT  
+		Size: 6.0 MB (5987074 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4dfb5390280680d1396fa1729c0651348bd0da3da471cff1c032dec195e2e275`  
-		Last Modified: Sun, 11 Apr 2021 03:21:27 GMT  
-		Size: 1.7 KB (1746 bytes)  
+	-	`sha256:07633023fb19d053ce57c41726c2dae2267006698bde1a351fa827d9bcac5e0f`  
+		Last Modified: Thu, 22 Apr 2021 00:22:13 GMT  
+		Size: 1.8 KB (1750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:096cf67a0d2fd766bc9be5cb0d253d1dc3ab71b6c97824ec3c1079c6f2534c31`  
-		Last Modified: Sun, 11 Apr 2021 03:21:27 GMT  
-		Size: 1.8 KB (1781 bytes)  
+	-	`sha256:26ac6cf8c45d41149e43de85b9b7b5bc6bdf3a0cddc9db1cf2dc4ea7afa9dbf9`  
+		Last Modified: Thu, 22 Apr 2021 00:22:13 GMT  
+		Size: 1.8 KB (1793 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c361605bd9bde830306ee75d3fdd69f951ece7049fd13c3c9c21cd0593341aaa`  
-		Last Modified: Sun, 11 Apr 2021 03:21:39 GMT  
-		Size: 207.2 MB (207214523 bytes)  
+	-	`sha256:0316d4a8e6eaad233ad3a91cb73a64b440e84ca2a9bc2f7133ae54c00e7a0644`  
+		Last Modified: Thu, 22 Apr 2021 00:22:25 GMT  
+		Size: 207.2 MB (207214574 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9874e2e5445e4db15944b152e7044aebbab2bd4341cb5d4102d103748101acaa`  
-		Last Modified: Sun, 11 Apr 2021 03:21:27 GMT  
-		Size: 815.0 B  
+	-	`sha256:dabcf8944e11eb1c4816350742b95ee9b06e7488184aa68acd390003597443fd`  
+		Last Modified: Thu, 22 Apr 2021 00:22:14 GMT  
+		Size: 818.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
