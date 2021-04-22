@@ -1,9 +1,9 @@
-# `drupal:7.79-php7.4-fpm-buster`
+# `drupal:7.80-php7.4-fpm-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ea0e694d876c37f69715f3072e8d86276a0c1ee74e8a8262873dafe39a3bb5af`
-- Created: `2021-04-11T04:56:09.570764559Z`
+- Image ID: `sha256:b7bc757428509018d4ad08a8379b6a27b38a77f8fe6d983b7324653c327cc3b7`
+- Created: `2021-04-22T01:25:44.578548985Z`
 - Virtual Size: ~ 422.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,8 +22,8 @@
   - `PHP_URL=https://www.php.net/distributions/php-7.4.16.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.16.tar.xz.asc`
   - `PHP_SHA256=1c16cefaf88ded4c92eed6a8a41eb682bb2ef42429deb55f1c4ba159053fb98b`
-  - `DRUPAL_VERSION=7.79`
-  - `DRUPAL_MD5=672d35b4e172721452f351ee01644d76`
+  - `DRUPAL_VERSION=7.80`
+  - `DRUPAL_MD5=cfbbc4cde2782f4e7298db3991ca6f56`
 
 ## `dpkg` (`.deb`-based packages)
 
