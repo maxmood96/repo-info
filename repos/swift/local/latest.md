@@ -1,10 +1,10 @@
-# `swift:5.3.3`
+# `swift:5.4.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d724acf10eb5848331a6a60158922d0541dae7575826784efc8c089abd00608c`
-- Created: `2021-04-24T02:59:55.630497891Z`
-- Virtual Size: ~ 1.76 Gb  
+- Image ID: `sha256:a96910764a175e645ed38bfb84924b44a36c374c54b59d893d817d8ee9f16d1e`
+- Created: `2021-04-28T19:27:57.941048609Z`
+- Virtual Size: ~ 2.10 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561`
   - `SWIFT_PLATFORM=ubuntu18.04`
-  - `SWIFT_BRANCH=swift-5.3.3-release`
-  - `SWIFT_VERSION=swift-5.3.3-RELEASE`
+  - `SWIFT_BRANCH=swift-5.4-release`
+  - `SWIFT_VERSION=swift-5.4-RELEASE`
   - `SWIFT_WEBROOT=https://swift.org/builds/`
 - Labels:
   - `Description=Docker Container for the Swift programming language`
@@ -1908,6 +1908,27 @@ $ apt-get source -qq --print-uris mpclib3=1.1.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpclib3/mpclib3_1.1.0-1.diff.gz' mpclib3_1.1.0-1.diff.gz 3794 SHA256:84b10a4ae958b3015e136b75be5fee22961255d19be655f7d0adae8d4f3bc977
 ```
 
+### `dpkg` source package: `mpdecimal=2.4.2-1ubuntu1`
+
+Binary Packages:
+
+- `libmpdec2:amd64=2.4.2-1ubuntu1`
+
+Licenses: (parsed from: `/usr/share/doc/libmpdec2/copyright`)
+
+- `BSD`
+- `GPL-2`
+- `GPL-2+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris mpdecimal=2.4.2-1ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mpdecimal/mpdecimal_2.4.2-1ubuntu1.dsc' mpdecimal_2.4.2-1ubuntu1.dsc 2051 SHA256:6a1a2c1b839492e178d601dc6b9de26a3173124b35659ccd21362167a4fabda9
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mpdecimal/mpdecimal_2.4.2.orig.tar.gz' mpdecimal_2.4.2.orig.tar.gz 2271529 SHA256:83c628b90f009470981cf084c5418329c88b19835d8af3691b930afccb7d79c7
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mpdecimal/mpdecimal_2.4.2-1ubuntu1.debian.tar.xz' mpdecimal_2.4.2-1ubuntu1.debian.tar.xz 5328 SHA256:091414d364411f1d05b496f877e04d8ad22d52441cb698d739929907e94e0fc7
+```
+
 ### `dpkg` source package: `mpfr4=4.0.1-1`
 
 Binary Packages:
@@ -2355,40 +2376,41 @@ $ apt-get source -qq --print-uris publicsuffix=20180223.1310-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/publicsuffix/publicsuffix_20180223.1310-1.debian.tar.xz' publicsuffix_20180223.1310-1.debian.tar.xz 15436 SHA256:05182da7fd7cb1f2aa9397e0230a43798dfdb082a69ba203e712080efe1fd2bd
 ```
 
-### `dpkg` source package: `python2.7=2.7.17-1~18.04ubuntu1.6`
+### `dpkg` source package: `python3.6=3.6.9-1~18.04ubuntu1.4`
 
 Binary Packages:
 
-- `libpython2.7:amd64=2.7.17-1~18.04ubuntu1.6`
-- `libpython2.7-minimal:amd64=2.7.17-1~18.04ubuntu1.6`
-- `libpython2.7-stdlib:amd64=2.7.17-1~18.04ubuntu1.6`
+- `libpython3.6:amd64=3.6.9-1~18.04ubuntu1.4`
+- `libpython3.6-minimal:amd64=3.6.9-1~18.04ubuntu1.4`
+- `libpython3.6-stdlib:amd64=3.6.9-1~18.04ubuntu1.4`
 
-Licenses: (parsed from: `/usr/share/doc/libpython2.7/copyright`, `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/share/doc/libpython2.7-stdlib/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libpython3.6/copyright`, `/usr/share/doc/libpython3.6-minimal/copyright`, `/usr/share/doc/libpython3.6-stdlib/copyright`)
 
-- `# Licensed to PSF under a Contributor Agreement`
 - `* Permission to use this software in any way is granted without`
-- `Apache`
-- `Apache-2`
-- `Apache-2.0`
-- `Expat`
+- `By obtaining, using, and/or copying this software and/or its`
 - `GPL-2`
-- `ISC`
-- `LGPL-2.1+`
-- `PSF-2`
+- `Permission  is  hereby granted,  free  of charge,  to  any person`
 - `Permission is hereby granted, free of charge, to any person obtaining`
-- `Python`
+- `Permission to use, copy, modify,`
+- `Redistribution`
 - `This software is provided 'as-is', without any express`
 - `This software is provided as-is, without express`
+- `binary forms, with`
+- `distribute this software`
+- `distribute this software and`
+- `distribute this software for any`
 - `implied`
-- `see above, some license as Python`
+- `its`
+- `use in source`
+- `without`
 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python2.7=2.7.17-1~18.04ubuntu1.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17-1~18.04ubuntu1.6.dsc' python2.7_2.7.17-1~18.04ubuntu1.6.dsc 3483 SHA512:fa3e044bf34478dadc6b9cdd843d36f6e58947d975fe152ace9c922df6ab60f8dd6e373f9a58e595b6f78f84b7eeacbe127293271232515e57ac7a9e3dbde317
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17.orig.tar.gz' python2.7_2.7.17.orig.tar.gz 17535962 SHA512:f526baff7f1a9451244edb04e2aca63336b656aac178f4f64c135390b5b1185990ccff0c48f602914dd1c49c9e075951d372b4f2daac39e336c23ae84ef4ca16
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.17-1~18.04ubuntu1.6.diff.gz' python2.7_2.7.17-1~18.04ubuntu1.6.diff.gz 296112 SHA512:37159286b1269347c28ffa6114f610d32b96bf8a0f78ac592211b26a996533d949f6d1151102d9e6a52960adfa9176775518e8031e6f9459ff6be8d937700f7a
+$ apt-get source -qq --print-uris python3.6=3.6.9-1~18.04ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.9-1~18.04ubuntu1.4.dsc' python3.6_3.6.9-1~18.04ubuntu1.4.dsc 3470 SHA512:8ab848889b39f5de01e334a957883ea6cb0e67e380c7db28fe386dd3b7e3f5f2882de0147a89661d68c8a13c75220060d096bee8146d4971c2edd415cc205a5c
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.9.orig.tar.xz' python3.6_3.6.9.orig.tar.xz 17212164 SHA512:05de9c6f44d96a52bfce10ede4312de892573edaf8bece65926d19973a3a800d65eed7a857af945f69efcfb25efa3788e7a54016b03d80b611eb51c3ea074819
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.9-1~18.04ubuntu1.4.debian.tar.xz' python3.6_3.6.9-1~18.04ubuntu1.4.debian.tar.xz 222276 SHA512:f9e9b411953ab8bfb35f8f02a8c8474d4add3e3871a9bb2603f99f6bb085563465088e73e3964ffe98376df16072724ef698af3b76490be61047cb2b5dc76895
 ```
 
 ### `dpkg` source package: `readline=7.0-3`
