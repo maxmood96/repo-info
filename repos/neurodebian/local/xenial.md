@@ -375,13 +375,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.4ubuntu1.6
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.6.dsc' dpkg_1.18.4ubuntu1.6.dsc 2211 SHA512:aad304d96fcfb39f53f04b3ee90b0d648f52881fa66d0dcd8543afaac6b785fc34783b79070e40bb26352a0b7a00f08be4c221edccf11b6f9c8c3a9fa39b45f1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.6.tar.xz' dpkg_1.18.4ubuntu1.6.tar.xz 4297512 SHA512:6b270f36d7d65e93dc8d70c695d1cdb160f7b168588df6cfbf62d8800de130bee01176332e9b13177f47e0c036ec2a3dc586cec2a6c6e18f00f79b3cd7bf6365
-```
 
 ### `dpkg` source package: `e2fsprogs=1.42.13-1ubuntu1.2`
 
