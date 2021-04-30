@@ -2,20 +2,20 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:347583845af10a12e3038d7e156127ccbffee45182c5b84baa764702feb396d2`
-- Created: `2021-04-15T09:18:39.006056258Z`
-- Virtual Size: ~ 85.09 Mb  
+- Image ID: `sha256:8ab40b2261d281ce96b2b0eb130ff49d537530226ae3472142b9e4c74495c5c2`
+- Created: `2021-04-28T20:50:13.782202322Z`
+- Virtual Size: ~ 85.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=23.3.1`
-  - `REBAR3_VERSION=3.14.4`
+  - `OTP_VERSION=23.3.2`
+  - `REBAR3_VERSION=3.15.1`
   - `ELIXIR_VERSION=v1.11.4`
   - `LANG=C.UTF-8`
 - Labels:
-  - `org.opencontainers.image.version=23.3.1`
+  - `org.opencontainers.image.version=23.3.2`
 
 ## `apk` (`.apk`-based packages)
 
