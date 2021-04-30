@@ -2,20 +2,20 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1130753b4a5e75111406446cb6b646b35cf0830e589e86d443ffd0d2a1ad71e4`
-- Created: `2021-04-14T19:45:44.13732258Z`
-- Virtual Size: ~ 344.00 Mb  
+- Image ID: `sha256:f5be9a4808d722e48ae847205ccb33a89018914e72333335531d43854a9ff801`
+- Created: `2021-04-28T18:20:00.855193234Z`
+- Virtual Size: ~ 347.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["arangod"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `ARANGO_VERSION=3.7.10`
+  - `ARANGO_VERSION=3.7.11`
   - `ARANGO_URL=https://download.arangodb.com/arangodb37/DEBIAN/amd64`
-  - `ARANGO_PACKAGE=arangodb3_3.7.10-1_amd64.deb`
-  - `ARANGO_PACKAGE_URL=https://download.arangodb.com/arangodb37/DEBIAN/amd64/arangodb3_3.7.10-1_amd64.deb`
-  - `ARANGO_SIGNATURE_URL=https://download.arangodb.com/arangodb37/DEBIAN/amd64/arangodb3_3.7.10-1_amd64.deb.asc`
+  - `ARANGO_PACKAGE=arangodb3_3.7.11-1_amd64.deb`
+  - `ARANGO_PACKAGE_URL=https://download.arangodb.com/arangodb37/DEBIAN/amd64/arangodb3_3.7.11-1_amd64.deb`
+  - `ARANGO_SIGNATURE_URL=https://download.arangodb.com/arangodb37/DEBIAN/amd64/arangodb3_3.7.11-1_amd64.deb.asc`
   - `GLIBCXX_FORCE_NEW=1`
 
 ## `apk` (`.apk`-based packages)
@@ -74,16 +74,16 @@ GPL2
 ### `apk` package: `binutils`
 
 ```console
-binutils-2.33.1-r0 description:
+binutils-2.33.1-r1 description:
 Tools necessary to build programs
 
-binutils-2.33.1-r0 webpage:
+binutils-2.33.1-r1 webpage:
 https://www.gnu.org/software/binutils/
 
-binutils-2.33.1-r0 installed size:
-9953280
+binutils-2.33.1-r1 installed size:
+9940992
 
-binutils-2.33.1-r0 license:
+binutils-2.33.1-r1 license:
 GPL-2.0 GPL-3.0-or-later LGPL-2.0 BSD
 
 ```
