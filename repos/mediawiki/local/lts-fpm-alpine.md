@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d502d326f7da5c7c35a822ca67bf1bcd528b433735ab75ef1f6559ef773cc332`
-- Created: `2021-04-15T10:49:22.197579425Z`
-- Virtual Size: ~ 472.50 Mb  
+- Image ID: `sha256:7f05eafada690f6c9dd04e6554310579b40e4485354407cc000d3dbad8df92ab`
+- Created: `2021-04-29T21:50:25.915443931Z`
+- Virtual Size: ~ 472.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.27`
-  - `PHP_URL=https://www.php.net/distributions/php-7.3.27.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.27.tar.xz.asc`
-  - `PHP_SHA256=65f616e2d5b6faacedf62830fa047951b0136d5da34ae59e6744cbaf5dca148d`
+  - `PHP_VERSION=7.3.28`
+  - `PHP_URL=https://www.php.net/distributions/php-7.3.28.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.28.tar.xz.asc`
+  - `PHP_SHA256=a2a84dbec8c1eee3f46c5f249eaaa2ecb3f9e7a6f5d0604d2df44ff8d4904dbe`
   - `MEDIAWIKI_MAJOR_VERSION=1.35`
   - `MEDIAWIKI_VERSION=1.35.2`
 
@@ -421,16 +421,16 @@ GPL-2.0-or-later
 ### `apk` package: `glib`
 
 ```console
-glib-2.66.7-r1 description:
+glib-2.66.8-r0 description:
 Common C routines used by Gtk+ and other libs
 
-glib-2.66.7-r1 webpage:
+glib-2.66.8-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.66.7-r1 installed size:
+glib-2.66.8-r0 installed size:
 3403776
 
-glib-2.66.7-r1 license:
+glib-2.66.8-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -812,16 +812,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libjpeg-turbo`
 
 ```console
-libjpeg-turbo-2.0.6-r0 description:
+libjpeg-turbo-2.1.0-r0 description:
 Accelerated baseline JPEG compression and decompression library
 
-libjpeg-turbo-2.0.6-r0 webpage:
+libjpeg-turbo-2.1.0-r0 webpage:
 https://libjpeg-turbo.org/
 
-libjpeg-turbo-2.0.6-r0 installed size:
-1056768
+libjpeg-turbo-2.1.0-r0 installed size:
+1101824
 
-libjpeg-turbo-2.0.6-r0 license:
+libjpeg-turbo-2.1.0-r0 license:
 BSD-3-Clause IJG Zlib
 
 ```
@@ -1237,16 +1237,16 @@ MIT
 ### `apk` package: `nettle`
 
 ```console
-nettle-3.7-r0 description:
+nettle-3.7.2-r0 description:
 A low-level cryptographic library
 
-nettle-3.7-r0 webpage:
+nettle-3.7.2-r0 webpage:
 https://www.lysator.liu.se/~nisse/nettle/
 
-nettle-3.7-r0 installed size:
-573440
+nettle-3.7.2-r0 installed size:
+577536
 
-nettle-3.7-r0 license:
+nettle-3.7.2-r0 license:
 LGPL-2.0-or-later
 
 ```

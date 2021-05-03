@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:debf2174443b5dc6283859a24f22a4c9899ff36614f339aedf9fd60811b71175`
-- Created: `2021-04-11T05:27:13.270352558Z`
+- Image ID: `sha256:9c1acaa5769175cd351c11e6d4e768cdcb77593076b45cdb15350b12f25c8ce4`
+- Created: `2021-04-29T21:50:47.249790957Z`
 - Virtual Size: ~ 743.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -21,10 +21,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.27`
-  - `PHP_URL=https://www.php.net/distributions/php-7.3.27.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.27.tar.xz.asc`
-  - `PHP_SHA256=65f616e2d5b6faacedf62830fa047951b0136d5da34ae59e6744cbaf5dca148d`
+  - `PHP_VERSION=7.3.28`
+  - `PHP_URL=https://www.php.net/distributions/php-7.3.28.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.28.tar.xz.asc`
+  - `PHP_SHA256=a2a84dbec8c1eee3f46c5f249eaaa2ecb3f9e7a6f5d0604d2df44ff8d4904dbe`
   - `MEDIAWIKI_MAJOR_VERSION=1.34`
   - `MEDIAWIKI_VERSION=1.34.4`
 
