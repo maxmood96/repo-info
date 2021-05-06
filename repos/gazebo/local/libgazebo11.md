@@ -67,14 +67,9 @@ Licenses: (parsed from: `/usr/share/doc/libasound2/copyright`, `/usr/share/doc/l
 - `LGPL-2.1`
 - `LPGL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris alsa-lib=1.2.2-2.1ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.2-2.1ubuntu2.3.dsc' alsa-lib_1.2.2-2.1ubuntu2.3.dsc 2324 SHA512:56768b33536ee6c574d9aef45866c61b5d5e601641cf9f5f7c4edd890295c2d00e5758fb7ea901d09b122c6d6f100fad5ba7fc15ed6b66541caa33ad775d4d36
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.2.orig.tar.bz2' alsa-lib_1.2.2.orig.tar.bz2 1030747 SHA512:d21adb3ff998918c7d1820f9ce2aaf4202dd45ccb87cb092d49da8b2402b6ddaad06325be0fd59f17393a5d9958e3743bfccb4b14bdb947a42e7d791d73c7033
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.2-2.1ubuntu2.3.debian.tar.xz' alsa-lib_1.2.2-2.1ubuntu2.3.debian.tar.xz 58720 SHA512:772f4c5ccdc8fb8ed4bae7fe3018c61565081172f22c1de935de9beab2eaffd9da2ca5188b0c9d1ceaccdb96f15bc4752dc01c59327be5494c7bd882dd690419
-```
 
 ### `dpkg` source package: `aom=1.0.0.errata1-3build1`
 
@@ -2337,14 +2332,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-cmake2-dev/copyright`)
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-cmake2=2.7.0-1~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-cmake2/ignition-cmake2_2.7.0-1~focal.dsc' ignition-cmake2_2.7.0-1~focal.dsc 1090 SHA256:00ebf127dc6920b93c4a319fb4514aeed985766cf68b1aa64a7a41b5df5a7608
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-cmake2/ignition-cmake2_2.7.0.orig.tar.bz2' ignition-cmake2_2.7.0.orig.tar.bz2 195730 SHA256:a13758474f80d07b502e11c8659b43ac5a0ce9b489207fedb68a52bdf1599c43
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-cmake2/ignition-cmake2_2.7.0-1~focal.debian.tar.xz' ignition-cmake2_2.7.0-1~focal.debian.tar.xz 1444 SHA256:3f6e947c840187c50d08b849dd833d10009c90ec745eefaed1438425e9bc6760
-```
 
 ### `dpkg` source package: `ignition-common3=3.12.0-1~focal`
 
@@ -2367,13 +2357,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-common3/copyright`, `/usr/sh
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-common3=3.12.0-1~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-common3/ignition-common3_3.12.0-1~focal.dsc' ignition-common3_3.12.0-1~focal.dsc 1891 SHA256:50ba7632765e391faca82a4758ae0418c17b4f2ee93453c8d7bc5b082f9d9979
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-common3/ignition-common3_3.12.0-1~focal.tar.xz' ignition-common3_3.12.0-1~focal.tar.xz 6717244 SHA256:bfafeaf091670492a2c6b18d3b8329b3951e81fb7e6363b8c331ff0d0a597ad2
-```
 
 ### `dpkg` source package: `ignition-fuel-tools4=4.3.0-1~focal`
 

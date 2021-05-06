@@ -2149,14 +2149,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-cmake2-dev/copyright`)
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-cmake2=2.7.0-1~bionic
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-cmake2/ignition-cmake2_2.7.0-1~bionic.dsc' ignition-cmake2_2.7.0-1~bionic.dsc 1094 SHA256:990965fa7b00709b08553754f83bff96be4eda9d6ffab27eaab974bea1b3f3a7
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-cmake2/ignition-cmake2_2.7.0.orig.tar.bz2' ignition-cmake2_2.7.0.orig.tar.bz2 195730 SHA256:a13758474f80d07b502e11c8659b43ac5a0ce9b489207fedb68a52bdf1599c43
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-cmake2/ignition-cmake2_2.7.0-1~bionic.debian.tar.xz' ignition-cmake2_2.7.0-1~bionic.debian.tar.xz 1656 SHA256:3c348afb901d6d1ad3bea64631acd1316393ad03250615faa148acd33e0cb987
-```
 
 ### `dpkg` source package: `ignition-common3=3.12.0-1~bionic`
 
@@ -2179,13 +2174,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-common3/copyright`, `/usr/sh
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-common3=3.12.0-1~bionic
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-common3/ignition-common3_3.12.0-1~bionic.dsc' ignition-common3_3.12.0-1~bionic.dsc 1895 SHA256:e975b1855b4e8d81dd0872f26b024893f6d5e9a602174413786ad86b96dd4071
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-common3/ignition-common3_3.12.0-1~bionic.tar.xz' ignition-common3_3.12.0-1~bionic.tar.xz 6718688 SHA256:8e477aad7d1931a1da67c6f8a1904758c6ab87be81884729a778de3878d1eb96
-```
 
 ### `dpkg` source package: `ignition-fuel-tools4=4.3.0-1~bionic`
 
