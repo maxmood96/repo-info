@@ -110,14 +110,9 @@ Licenses: (parsed from: `/usr/share/doc/libasound2/copyright`, `/usr/share/doc/l
 - `LGPL-2.1`
 - `LPGL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris alsa-lib=1.2.2-2.1ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.2-2.1ubuntu2.3.dsc' alsa-lib_1.2.2-2.1ubuntu2.3.dsc 2324 SHA512:56768b33536ee6c574d9aef45866c61b5d5e601641cf9f5f7c4edd890295c2d00e5758fb7ea901d09b122c6d6f100fad5ba7fc15ed6b66541caa33ad775d4d36
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.2.orig.tar.bz2' alsa-lib_1.2.2.orig.tar.bz2 1030747 SHA512:d21adb3ff998918c7d1820f9ce2aaf4202dd45ccb87cb092d49da8b2402b6ddaad06325be0fd59f17393a5d9958e3743bfccb4b14bdb947a42e7d791d73c7033
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.2-2.1ubuntu2.3.debian.tar.xz' alsa-lib_1.2.2-2.1ubuntu2.3.debian.tar.xz 58720 SHA512:772f4c5ccdc8fb8ed4bae7fe3018c61565081172f22c1de935de9beab2eaffd9da2ca5188b0c9d1ceaccdb96f15bc4752dc01c59327be5494c7bd882dd690419
-```
 
 ### `dpkg` source package: `alsa-topology-conf=1.2.2-1`
 
@@ -148,14 +143,9 @@ Licenses: (parsed from: `/usr/share/doc/alsa-ucm-conf/copyright`)
 
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris alsa-ucm-conf=1.2.2-1ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-ucm-conf/alsa-ucm-conf_1.2.2-1ubuntu0.6.dsc' alsa-ucm-conf_1.2.2-1ubuntu0.6.dsc 1427 SHA512:f8b99d9dafd20fae03fa3f3e245665a9cb2613d2680d2762d2626af66953e6be4d6d73dbb1d5a55f3c09663ab16419a518350ee106c9f33cd1bdb6ff041a7cd4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-ucm-conf/alsa-ucm-conf_1.2.2.orig.tar.bz2' alsa-ucm-conf_1.2.2.orig.tar.bz2 14608 SHA512:25e3f341c110772c7cffc8c7745b320f2ddd12fe6460380c088939b5dc67b99ae4ad92e69375179574e0e1c40d14ff49961e86494e223fde009e51590f00ca8f
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-ucm-conf/alsa-ucm-conf_1.2.2-1ubuntu0.6.debian.tar.xz' alsa-ucm-conf_1.2.2-1ubuntu0.6.debian.tar.xz 15292 SHA512:229a7d2d54dd964e9ad9741c11a9f47330b63a1b88fbdad599ea61adc06eaae88c24ee03ac983dbd37728dd3ababb8ca417af718173ddd6327df2947fa96c427
-```
 
 ### `dpkg` source package: `aom=1.0.0.errata1-3build1`
 
