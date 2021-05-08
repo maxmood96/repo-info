@@ -1,19 +1,19 @@
-# `convertigo:7.9.2`
+# `convertigo:7.9.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7b40b48d2e9f746806a5cf1a548a5ddd8be72998c038b2cf98b6da3257221a11`
-- Created: `2021-04-11T07:11:28.413786536Z`
-- Virtual Size: ~ 819.01 Mb  
+- Image ID: `sha256:4966714b6c1d12602afc3b672d96718c2200102ff18ece873ee0daa1abcdfccb`
+- Created: `2021-05-05T18:21:21.478885176Z`
+- Virtual Size: ~ 800.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
 - Command: `["convertigo"]`
 - Environment:
-  - `PATH=/usr/local/tomcat/bin:/usr/local/openjdk-15/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/local/openjdk-15`
+  - `PATH=/usr/local/tomcat/bin:/usr/local/openjdk-16/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `JAVA_HOME=/usr/local/openjdk-16`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=15.0.2`
+  - `JAVA_VERSION=16.0.1`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
@@ -26,8 +26,8 @@
   - `GOSU_GPG_KEYS=B42F6819007F00F88E364FD4036A9C25BF357DD4`
   - `TINI_VERSION=0.19.0`
   - `TINI_GPG_KEYS=6380DC428747F6C393FEACA59A84159D7001A4E5`
-  - `CONVERTIGO_VERSION=7.9.2`
-  - `CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/7.9.2/convertigo-7.9.2.war`
+  - `CONVERTIGO_VERSION=7.9.3`
+  - `CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/7.9.3/convertigo-7.9.3.war`
   - `CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F`
 
 ## `dpkg` (`.deb`-based packages)
