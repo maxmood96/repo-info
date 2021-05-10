@@ -1167,14 +1167,9 @@ Licenses: (parsed from: `/usr/share/doc/gazebo11/copyright`, `/usr/share/doc/gaz
 - `LGPL-3+`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gazebo11=11.5.0-1~bionic
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.5.0-1~bionic.dsc' gazebo11_11.5.0-1~bionic.dsc 2354 SHA256:b891f343e2ba69f1127aab2f37874d29bc1d0df95d6c5c7968c6ab152ddab3ed
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.5.0.orig.tar.bz2' gazebo11_11.5.0.orig.tar.bz2 56405549 SHA256:79b184ccecd39923cc40ea4c1c2c58402762926d56d70e8a97052bba0aa3058e
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.5.0-1~bionic.debian.tar.xz' gazebo11_11.5.0-1~bionic.debian.tar.xz 6692 SHA256:e7187f4c15de2e59fd0986f36c42e8c37c358215af26339623ec9d5e4d0ca338
-```
 
 ### `dpkg` source package: `gcc-7=7.5.0-3ubuntu1~18.04`
 
@@ -5790,14 +5785,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=237-3ubuntu10.46
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.46.dsc' systemd_237-3ubuntu10.46.dsc 5220 SHA512:b9d8b4443e01c99accd98b1bb10a0999eb3ae6cc90c3d3ee9888115c8f8592997c6f2310581dd7a8b283de0d56c5262ebbaf6abee9fe44abaadf18bd960f7637
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA512:15ef4b92815a6dd9a6c51672dbc00fd7cd0f08068ef0cbeaca574f68d330b28bc67ba1946f24f75ef3d9e7b63843a73eea700db54688061dbf5c9f8470394c3b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.46.debian.tar.xz' systemd_237-3ubuntu10.46.debian.tar.xz 290944 SHA512:e452a765928c5296c8328f86b46b2a393934c51bc4d0c9740d1caf38312406cd966e2f4de830067bfba515fed342961ccfac38102013d75ece6c948e7535c31f
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 

@@ -67,14 +67,9 @@ Licenses: (parsed from: `/usr/share/doc/libasound2/copyright`, `/usr/share/doc/l
 - `LGPL-2.1`
 - `LPGL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris alsa-lib=1.2.2-2.1ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.2-2.1ubuntu2.3.dsc' alsa-lib_1.2.2-2.1ubuntu2.3.dsc 2324 SHA512:56768b33536ee6c574d9aef45866c61b5d5e601641cf9f5f7c4edd890295c2d00e5758fb7ea901d09b122c6d6f100fad5ba7fc15ed6b66541caa33ad775d4d36
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.2.orig.tar.bz2' alsa-lib_1.2.2.orig.tar.bz2 1030747 SHA512:d21adb3ff998918c7d1820f9ce2aaf4202dd45ccb87cb092d49da8b2402b6ddaad06325be0fd59f17393a5d9958e3743bfccb4b14bdb947a42e7d791d73c7033
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.2-2.1ubuntu2.3.debian.tar.xz' alsa-lib_1.2.2-2.1ubuntu2.3.debian.tar.xz 58720 SHA512:772f4c5ccdc8fb8ed4bae7fe3018c61565081172f22c1de935de9beab2eaffd9da2ca5188b0c9d1ceaccdb96f15bc4752dc01c59327be5494c7bd882dd690419
-```
 
 ### `dpkg` source package: `aom=1.0.0.errata1-3build1`
 
@@ -1275,14 +1270,9 @@ Licenses: (parsed from: `/usr/share/doc/gazebo11/copyright`, `/usr/share/doc/gaz
 - `LGPL-3+`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gazebo11=11.5.0-1~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.5.0-1~focal.dsc' gazebo11_11.5.0-1~focal.dsc 2664 SHA256:189428fb679ac2288aa1a60f3ae946eb9a04a9acfc1050d6fd39eada9203f3f9
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.5.0.orig.tar.bz2' gazebo11_11.5.0.orig.tar.bz2 56405549 SHA256:79b184ccecd39923cc40ea4c1c2c58402762926d56d70e8a97052bba0aa3058e
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.5.0-1~focal.debian.tar.xz' gazebo11_11.5.0-1~focal.debian.tar.xz 6764 SHA256:956b1abb6dc0530e9f545bb1b0e92fe885f53bcb3d4b02c43ab3d4110e9873ab
-```
 
 ### `dpkg` source package: `gcc-10=10.2.0-5ubuntu1~20.04`
 
