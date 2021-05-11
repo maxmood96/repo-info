@@ -1,10 +1,10 @@
-# `geonetwork:3.10.6-postgres`
+# `geonetwork:3.12.0-postgres`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3e9938cb8edf00b67c8c3bb7a9c0ce49e7c31d3ec2a26cf74713c4b3798e8835`
-- Created: `2021-04-22T23:46:39.682932705Z`
-- Virtual Size: ~ 955.90 Mb  
+- Image ID: `sha256:cb259547583e95a11f39e1af2788df6971fe2eb9cd3e653280366f21c917cb4e`
+- Created: `2021-05-10T23:56:34.813469826Z`
+- Virtual Size: ~ 990.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -24,8 +24,8 @@
   - `GN_FILE=geonetwork.war`
   - `DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data`
   - `JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:+UseConcMarkSweepGC`
-  - `GN_VERSION=3.10.6`
-  - `GN_DOWNLOAD_MD5=6f6980788a4df8477b20aa114bae2ef9`
+  - `GN_VERSION=3.12.0`
+  - `GN_DOWNLOAD_MD5=75a32704ede85087e6588901b2c1527a`
 
 ## `dpkg` (`.deb`-based packages)
 
