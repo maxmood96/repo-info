@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:08293f84e6f7bd79842c0d1a5c4b770616dc89cdd15e0637e1af28d311e2874c`
-- Created: `2021-04-29T22:09:09.29384815Z`
-- Virtual Size: ~ 127.94 Mb  
+- Image ID: `sha256:6ebdfbc1134c27a085082b87c7392988773dc03a6b81d23b86fb535b8084143b`
+- Created: `2021-05-07T22:03:20.4628535Z`
+- Virtual Size: ~ 128.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F`
-  - `PHP_VERSION=8.0.5`
-  - `PHP_URL=https://www.php.net/distributions/php-8.0.5.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.5.tar.xz.asc`
-  - `PHP_SHA256=5dd358b35ecd5890a4f09fb68035a72fe6b45d3ead6999ea95981a107fd1f2ab`
+  - `PHP_VERSION=8.0.6`
+  - `PHP_URL=https://www.php.net/distributions/php-8.0.6.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.6.tar.xz.asc`
+  - `PHP_SHA256=e9871d3b6c391fe9e89f86f6334852dcc10eeaaa8d5565beb8436e7f0cf30e20`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.4.0`
   - `WORDPRESS_CLI_SHA512=4049c7e45e14276a70a41c3b0864be7a6a8cfa8ea65ebac8b184a4f503a91baa1a0d29260d03248bc74aef70729824330fb6b396336172a624332e16f64e37ef`
