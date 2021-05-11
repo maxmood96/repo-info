@@ -1,10 +1,10 @@
-# `gradle:7.0.0-jre16-openj9`
+# `gradle:7.0.1-jre16-openj9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0c3914a876a50d32eab2d54fc88da6b7007d161338401d428b815acad0ea4b9e`
-- Created: `2021-04-27T22:28:30.339568435Z`
-- Virtual Size: ~ 576.51 Mb  
+- Image ID: `sha256:a103e3a07605d82b31a6d44e6e006924026b9e34ad35ded9161312e0910777bc`
+- Created: `2021-05-11T01:07:45.918301142Z`
+- Virtual Size: ~ 576.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -13,11 +13,11 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-16+36_openj9-0.25.0`
+  - `JAVA_VERSION=jdk-16.0.1+9_openj9-0.26.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=7.0`
+  - `GRADLE_VERSION=7.0.1`
 
 ## `dpkg` (`.deb`-based packages)
 

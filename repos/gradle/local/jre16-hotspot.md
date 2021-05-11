@@ -1,10 +1,10 @@
-# `gradle:7.0.0-jre16`
+# `gradle:7.0.1-jre16`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6d87e129cf68ed1f0d1af95b04defbe5c923c91447f43bebd0aa6d0f32978543`
-- Created: `2021-04-27T22:25:29.763978915Z`
-- Virtual Size: ~ 587.72 Mb  
+- Image ID: `sha256:d1b869a9a3da926b98861586579f31fe7d07ba28c90112710a37b26b7e4490df`
+- Created: `2021-05-11T01:06:51.132591124Z`
+- Virtual Size: ~ 587.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -13,10 +13,10 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-16+36`
+  - `JAVA_VERSION=jdk-16.0.1+9`
   - `JAVA_HOME=/opt/java/openjdk`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=7.0`
+  - `GRADLE_VERSION=7.0.1`
 
 ## `dpkg` (`.deb`-based packages)
 
