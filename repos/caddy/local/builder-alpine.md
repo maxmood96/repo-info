@@ -1,19 +1,19 @@
-# `caddy:2.3.0-builder-alpine`
+# `caddy:2.4.0-builder-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c48e0382f0f224a95381e7fdb346fe40e28931bdec03923e00db3699d75eec90`
-- Created: `2021-05-07T01:56:06.826436949Z`
-- Virtual Size: ~ 318.60 Mb  
+- Image ID: `sha256:cd288b16c2ac5e35de34025c916a8a52cb8c3c35644e3e2beee860100beea6de`
+- Created: `2021-05-11T01:04:38.36469021Z`
+- Virtual Size: ~ 317.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.15.12`
+  - `GOLANG_VERSION=1.16.4`
   - `GOPATH=/go`
   - `XCADDY_VERSION=v0.1.9`
-  - `CADDY_VERSION=v2.3.0`
+  - `CADDY_VERSION=v2.4.0`
   - `XCADDY_SKIP_CLEANUP=1`
 
 ## `apk` (`.apk`-based packages)
@@ -21,16 +21,16 @@
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.2.0-r7 description:
+alpine-baselayout-3.2.0-r8 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.2.0-r7 webpage:
+alpine-baselayout-3.2.0-r8 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.2.0-r7 installed size:
+alpine-baselayout-3.2.0-r8 installed size:
 409600
 
-alpine-baselayout-3.2.0-r7 license:
+alpine-baselayout-3.2.0-r8 license:
 GPL-2.0-only
 
 ```
@@ -55,33 +55,50 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.10.6-r0 description:
+apk-tools-2.12.5-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.10.6-r0 webpage:
+apk-tools-2.12.5-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.10.6-r0 installed size:
-266240
+apk-tools-2.12.5-r0 installed size:
+311296
 
-apk-tools-2.10.6-r0 license:
+apk-tools-2.12.5-r0 license:
 GPL-2.0-only
+
+```
+
+### `apk` package: `brotli-libs`
+
+```console
+brotli-libs-1.0.9-r3 description:
+Generic lossless compressor (libraries)
+
+brotli-libs-1.0.9-r3 webpage:
+https://github.com/google/brotli
+
+brotli-libs-1.0.9-r3 installed size:
+737280
+
+brotli-libs-1.0.9-r3 license:
+MIT
 
 ```
 
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.31.1-r20 description:
+busybox-1.32.1-r6 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.31.1-r20 webpage:
+busybox-1.32.1-r6 webpage:
 https://busybox.net/
 
-busybox-1.31.1-r20 installed size:
-962560
+busybox-1.32.1-r6 installed size:
+946176
 
-busybox-1.31.1-r20 license:
+busybox-1.32.1-r6 license:
 GPL-2.0-only
 
 ```
@@ -89,50 +106,50 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20191127-r4 description:
+ca-certificates-20191127-r5 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20191127-r4 webpage:
+ca-certificates-20191127-r5 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20191127-r4 installed size:
+ca-certificates-20191127-r5 installed size:
 688128
 
-ca-certificates-20191127-r4 license:
-MPL-2.0 GPL-2.0-or-later
+ca-certificates-20191127-r5 license:
+MPL-2.0 AND MIT
 
 ```
 
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20191127-r4 description:
+ca-certificates-bundle-20191127-r5 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20191127-r4 webpage:
+ca-certificates-bundle-20191127-r5 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20191127-r4 installed size:
+ca-certificates-bundle-20191127-r5 installed size:
 233472
 
-ca-certificates-bundle-20191127-r4 license:
-MPL-2.0 GPL-2.0-or-later
+ca-certificates-bundle-20191127-r5 license:
+MPL-2.0 AND MIT
 
 ```
 
 ### `apk` package: `expat`
 
 ```console
-expat-2.2.9-r1 description:
-An XML Parser library written in C
+expat-2.2.10-r1 description:
+XML Parser library written in C
 
-expat-2.2.9-r1 webpage:
+expat-2.2.10-r1 webpage:
 http://www.libexpat.org/
 
-expat-2.2.9-r1 installed size:
+expat-2.2.10-r1 installed size:
 188416
 
-expat-2.2.9-r1 license:
+expat-2.2.10-r1 license:
 MIT
 
 ```
@@ -140,16 +157,16 @@ MIT
 ### `apk` package: `git`
 
 ```console
-git-2.26.3-r0 description:
+git-2.30.2-r0 description:
 Distributed version control system
 
-git-2.26.3-r0 webpage:
+git-2.30.2-r0 webpage:
 https://www.git-scm.com/
 
-git-2.26.3-r0 installed size:
-14835712
+git-2.30.2-r0 installed size:
+10612736
 
-git-2.26.3-r0 license:
+git-2.30.2-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -181,7 +198,7 @@ libcrypto1.1-1.1.1k-r0 webpage:
 https://www.openssl.org/
 
 libcrypto1.1-1.1.1k-r0 installed size:
-2764800
+2768896
 
 libcrypto1.1-1.1.1k-r0 license:
 OpenSSL
@@ -242,16 +259,16 @@ ISC
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.24-r10 description:
+musl-1.2.2-r0 description:
 the musl c library (libc) implementation
 
-musl-1.1.24-r10 webpage:
+musl-1.2.2-r0 webpage:
 https://musl.libc.org/
 
-musl-1.1.24-r10 installed size:
-614400
+musl-1.2.2-r0 installed size:
+622592
 
-musl-1.1.24-r10 license:
+musl-1.2.2-r0 license:
 MIT
 
 ```
@@ -259,16 +276,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.24-r10 description:
+musl-utils-1.2.2-r0 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.24-r10 webpage:
+musl-utils-1.2.2-r0 webpage:
 https://musl.libc.org/
 
-musl-utils-1.1.24-r10 installed size:
-151552
+musl-utils-1.2.2-r0 installed size:
+143360
 
-musl-utils-1.1.24-r10 license:
+musl-utils-1.2.2-r0 license:
 MIT BSD GPL2+
 
 ```
@@ -276,16 +293,16 @@ MIT BSD GPL2+
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.41.0-r0 description:
+nghttp2-libs-1.42.0-r1 description:
 Experimental HTTP/2 client, server and proxy (libraries)
 
-nghttp2-libs-1.41.0-r0 webpage:
+nghttp2-libs-1.42.0-r1 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.41.0-r0 installed size:
-159744
+nghttp2-libs-1.42.0-r1 installed size:
+172032
 
-nghttp2-libs-1.41.0-r0 license:
+nghttp2-libs-1.42.0-r1 license:
 MIT
 
 ```
@@ -293,16 +310,16 @@ MIT
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.35-r0 description:
+pcre2-10.36-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.35-r0 webpage:
+pcre2-10.36-r0 webpage:
 https://pcre.org/
 
-pcre2-10.35-r0 installed size:
-692224
+pcre2-10.36-r0 installed size:
+667648
 
-pcre2-10.35-r0 license:
+pcre2-10.36-r0 license:
 BSD-3-Clause
 
 ```
@@ -310,16 +327,16 @@ BSD-3-Clause
 ### `apk` package: `scanelf`
 
 ```console
-scanelf-1.2.6-r0 description:
+scanelf-1.2.8-r0 description:
 Scan ELF binaries for stuff
 
-scanelf-1.2.6-r0 webpage:
+scanelf-1.2.8-r0 webpage:
 https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities
 
-scanelf-1.2.6-r0 installed size:
+scanelf-1.2.8-r0 installed size:
 94208
 
-scanelf-1.2.6-r0 license:
+scanelf-1.2.8-r0 license:
 GPL-2.0-only
 
 ```
@@ -327,16 +344,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.31.1-r20 description:
+ssl_client-1.32.1-r6 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.31.1-r20 webpage:
+ssl_client-1.32.1-r6 webpage:
 https://busybox.net/
 
-ssl_client-1.31.1-r20 installed size:
+ssl_client-1.32.1-r6 installed size:
 28672
 
-ssl_client-1.31.1-r20 license:
+ssl_client-1.32.1-r6 license:
 GPL-2.0-only
 
 ```
