@@ -626,14 +626,9 @@ Licenses: (parsed from: `/usr/share/doc/libdjvulibre-dev/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris djvulibre=3.5.27.1-8ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.27.1-8ubuntu0.2.dsc' djvulibre_3.5.27.1-8ubuntu0.2.dsc 1870 SHA512:096d825b4c69f8f3cb2468d8bb005c192dfa645c543079d648a7af07286aa0ceead2f73c14a967d3be20d3d36d7396e2e6c7a5056666956faaf52862131e9394
-'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.27.1.orig.tar.gz' djvulibre_3.5.27.1.orig.tar.gz 3231662 SHA512:2ed11daa05995db7bf52113e2f75456c3c804988d2c17d0183b24ab379e52a4ef1871189e8bb132fec6cbc9d629b4d67a4d89ef7df7a995044cb25ff3dcc5de8
-'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.27.1-8ubuntu0.2.debian.tar.xz' djvulibre_3.5.27.1-8ubuntu0.2.debian.tar.xz 59648 SHA512:d6724572b94746374af80bd1165ea1630e282a5a9028d2dc9e49cd5b272b5afa26e1ecb8ade27af1a55a86265945dc7754e5f25bc15423b952afd846ddaa015d
-```
 
 ### `dpkg` source package: `dpkg=1.19.0.5ubuntu2.3`
 
@@ -2886,14 +2881,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-5.7=5.7.33-0ubuntu0.18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.33-0ubuntu0.18.04.1.dsc' mysql-5.7_5.7.33-0ubuntu0.18.04.1.dsc 3446 SHA512:253eb01c581df8913e8a0e287c77a27ad70347968149dc80b2270a92afa167777ad5916794f13ee0149b4c1650a40f1e19c1d7c66caa17e8b61d176c26623c85
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.33.orig.tar.gz' mysql-5.7_5.7.33.orig.tar.gz 52912380 SHA512:1d1e1e5934fb17ff731fea45b88d4af6a394c2fbf0177a87803b18cb0eb4fb8d4939f82fc22b6cbc2af64022a44e206cd23e2e88ce11cc119c3ea22129d54e7a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.33-0ubuntu0.18.04.1.debian.tar.xz' mysql-5.7_5.7.33-0ubuntu0.18.04.1.debian.tar.xz 156432 SHA512:f21dfaf14ef19746ec63c084e7c28ecaba5ecd2d0dbe52227723dd009eeb03d1148d1d4b63c56da91ae3ebf1a6246f91c242789d04c1d68b415ef1235d4b199b
-```
 
 ### `dpkg` source package: `mysql-defaults=1.0.4`
 
