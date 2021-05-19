@@ -28,7 +28,7 @@ alpine-baselayout-3.2.0-r7 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
 alpine-baselayout-3.2.0-r7 installed size:
-409600
+400 KiB
 
 alpine-baselayout-3.2.0-r7 license:
 GPL-2.0-only
@@ -45,7 +45,7 @@ alpine-keys-2.2-r0 webpage:
 https://alpinelinux.org
 
 alpine-keys-2.2-r0 installed size:
-106496
+104 KiB
 
 alpine-keys-2.2-r0 license:
 MIT
@@ -62,7 +62,7 @@ apk-tools-2.10.6-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
 apk-tools-2.10.6-r0 installed size:
-266240
+260 KiB
 
 apk-tools-2.10.6-r0 license:
 GPL-2.0-only
@@ -79,7 +79,7 @@ busybox-1.31.1-r20 webpage:
 https://busybox.net/
 
 busybox-1.31.1-r20 installed size:
-962560
+940 KiB
 
 busybox-1.31.1-r20 license:
 GPL-2.0-only
@@ -96,7 +96,7 @@ ca-certificates-20191127-r4 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
 ca-certificates-20191127-r4 installed size:
-688128
+672 KiB
 
 ca-certificates-20191127-r4 license:
 MPL-2.0 GPL-2.0-or-later
@@ -113,7 +113,7 @@ ca-certificates-bundle-20191127-r4 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
 ca-certificates-bundle-20191127-r4 installed size:
-233472
+228 KiB
 
 ca-certificates-bundle-20191127-r4 license:
 MPL-2.0 GPL-2.0-or-later
@@ -130,7 +130,7 @@ curl-7.76.1-r0 webpage:
 https://curl.se/
 
 curl-7.76.1-r0 installed size:
-249856
+244 KiB
 
 curl-7.76.1-r0 license:
 MIT
@@ -147,7 +147,7 @@ dumb-init-1.2.2-r1 webpage:
 https://github.com/Yelp/dumb-init
 
 dumb-init-1.2.2-r1 installed size:
-61440
+60 KiB
 
 dumb-init-1.2.2-r1 license:
 MIT
@@ -164,7 +164,7 @@ iptables-1.8.4-r2 webpage:
 https://www.netfilter.org/projects/iptables/index.html
 
 iptables-1.8.4-r2 installed size:
-2211840
+2160 KiB
 
 iptables-1.8.4-r2 license:
 GPL-2.0-or-later
@@ -181,7 +181,7 @@ iputils-20190709-r0 webpage:
 https://github.com/iputils/iputils/
 
 iputils-20190709-r0 installed size:
-294912
+288 KiB
 
 iputils-20190709-r0 license:
 BSD-3-Clause GPL-2.0-or-later
@@ -198,7 +198,7 @@ jq-1.6-r1 webpage:
 https://stedolan.github.io/jq/
 
 jq-1.6-r1 installed size:
-573440
+560 KiB
 
 jq-1.6-r1 license:
 MIT
@@ -215,7 +215,7 @@ libc-utils-0.7.2-r3 webpage:
 https://alpinelinux.org
 
 libc-utils-0.7.2-r3 installed size:
-4096
+4096 B
 
 libc-utils-0.7.2-r3 license:
 BSD-2-Clause AND BSD-3-Clause
@@ -232,7 +232,7 @@ libc6-compat-1.1.24-r10 webpage:
 https://musl.libc.org/
 
 libc6-compat-1.1.24-r10 installed size:
-12288
+12 KiB
 
 libc6-compat-1.1.24-r10 license:
 MIT
@@ -249,7 +249,7 @@ libcap-2.27-r0 webpage:
 http://www.friedhoff.org/posixfilecaps.html
 
 libcap-2.27-r0 installed size:
-118784
+116 KiB
 
 libcap-2.27-r0 license:
 BSD-3-Clause OR GPL-2.0-only
@@ -266,7 +266,7 @@ libcrypto1.1-1.1.1k-r0 webpage:
 https://www.openssl.org/
 
 libcrypto1.1-1.1.1k-r0 installed size:
-2764800
+2700 KiB
 
 libcrypto1.1-1.1.1k-r0 license:
 OpenSSL
@@ -283,7 +283,7 @@ libcurl-7.76.1-r0 webpage:
 https://curl.se/
 
 libcurl-7.76.1-r0 installed size:
-499712
+488 KiB
 
 libcurl-7.76.1-r0 license:
 MIT
@@ -300,7 +300,7 @@ libmnl-1.0.4-r0 webpage:
 http://www.netfilter.org/projects/libmnl/
 
 libmnl-1.0.4-r0 installed size:
-40960
+40 KiB
 
 libmnl-1.0.4-r0 license:
 GPL
@@ -317,7 +317,7 @@ libnftnl-libs-1.1.6-r0 webpage:
 https://netfilter.org/projects/libnftnl
 
 libnftnl-libs-1.1.6-r0 installed size:
-196608
+192 KiB
 
 libnftnl-libs-1.1.6-r0 license:
 GPL-2.0-or-later
@@ -334,7 +334,7 @@ libssl1.1-1.1.1k-r0 webpage:
 https://www.openssl.org/
 
 libssl1.1-1.1.1k-r0 installed size:
-540672
+528 KiB
 
 libssl1.1-1.1.1k-r0 license:
 OpenSSL
@@ -351,7 +351,7 @@ libtls-standalone-2.9.1-r1 webpage:
 https://www.libressl.org/
 
 libtls-standalone-2.9.1-r1 installed size:
-110592
+108 KiB
 
 libtls-standalone-2.9.1-r1 license:
 ISC
@@ -368,7 +368,7 @@ musl-1.1.24-r10 webpage:
 https://musl.libc.org/
 
 musl-1.1.24-r10 installed size:
-614400
+600 KiB
 
 musl-1.1.24-r10 license:
 MIT
@@ -385,7 +385,7 @@ musl-utils-1.1.24-r10 webpage:
 https://musl.libc.org/
 
 musl-utils-1.1.24-r10 installed size:
-151552
+148 KiB
 
 musl-utils-1.1.24-r10 license:
 MIT BSD GPL2+
@@ -402,7 +402,7 @@ nghttp2-libs-1.41.0-r0 webpage:
 https://nghttp2.org
 
 nghttp2-libs-1.41.0-r0 installed size:
-159744
+156 KiB
 
 nghttp2-libs-1.41.0-r0 license:
 MIT
@@ -419,7 +419,7 @@ oniguruma-6.9.5-r2 webpage:
 https://github.com/kkos/oniguruma
 
 oniguruma-6.9.5-r2 installed size:
-569344
+556 KiB
 
 oniguruma-6.9.5-r2 license:
 BSD-2-Clause
@@ -436,7 +436,7 @@ scanelf-1.2.6-r0 webpage:
 https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities
 
 scanelf-1.2.6-r0 installed size:
-94208
+92 KiB
 
 scanelf-1.2.6-r0 license:
 GPL-2.0-only
@@ -453,7 +453,7 @@ ssl_client-1.31.1-r20 webpage:
 https://busybox.net/
 
 ssl_client-1.31.1-r20 installed size:
-28672
+28 KiB
 
 ssl_client-1.31.1-r20 license:
 GPL-2.0-only
@@ -470,7 +470,7 @@ su-exec-0.2-r1 webpage:
 https://github.com/ncopa/su-exec
 
 su-exec-0.2-r1 installed size:
-24576
+24 KiB
 
 su-exec-0.2-r1 license:
 MIT
@@ -487,7 +487,7 @@ zlib-1.2.11-r3 webpage:
 https://zlib.net/
 
 zlib-1.2.11-r3 installed size:
-110592
+108 KiB
 
 zlib-1.2.11-r3 license:
 Zlib
