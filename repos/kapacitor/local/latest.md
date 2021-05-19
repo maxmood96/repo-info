@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:af1a02fde366280784ce76db79ea8fe4adceef3c0d4278f94176188a1bf01b87`
-- Created: `2021-04-10T23:34:48.345544204Z`
-- Virtual Size: ~ 243.67 Mb  
+- Image ID: `sha256:9150b2814fc207efe27321ab5c9af985cf7d3d9768453c9cfb498c9e66ce3f30`
+- Created: `2021-05-13T01:43:44.44733132Z`
+- Virtual Size: ~ 243.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -363,20 +363,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u13
-'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u13.dsc' curl_7.52.1-5+deb9u13.dsc 2797 SHA256:394b35eceaaf3c3545b3fcc673ef43c4d81f0f26f27392333e7c593e63c2d24e
-'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u13.debian.tar.xz' curl_7.52.1-5+deb9u13.debian.tar.xz 48744 SHA256:685ebde74e62c02bb6c0c55b0430be76ee85fe038f468b47330c23c18f74647f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u13/
 
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u13/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.52.1-5+deb9u13/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u13/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3+deb9u1`
 
