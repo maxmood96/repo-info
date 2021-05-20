@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8d50ad77922e35e535b5ff1b7d41171e250bd9e379adc3124c89217038fb7a45`
-- Created: `2021-05-06T21:49:19.365779579Z`
+- Image ID: `sha256:eeb9bda322417dd18badc9dd700531d4921db9517a1adc00ee38238d0f2d9da3`
+- Created: `2021-05-18T22:32:21.137120706Z`
 - Virtual Size: ~ 1.40 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -95,12 +95,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/appdirs/1.4.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/appdirs/1.4.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apt=1.8.2.2`
+### `dpkg` source package: `apt=1.8.2.3`
 
 Binary Packages:
 
-- `apt=1.8.2.2`
-- `libapt-pkg5.0:amd64=1.8.2.2`
+- `apt=1.8.2.3`
+- `libapt-pkg5.0:amd64=1.8.2.3`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
@@ -110,16 +110,16 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.8.2.2
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.8.2.2.dsc' apt_1.8.2.2.dsc 2774 SHA256:fb213748b5b829f68b7f6c8d83ad72a21990d0f194b6e6f950509b6b05346f58
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.8.2.2.tar.xz' apt_1.8.2.2.tar.xz 2191728 SHA256:f5030de22a5cc80db6fe0d42373b5df25d7dc56e94d9155f2eaa80dbd65e82fa
+$ apt-get source -qq --print-uris apt=1.8.2.3
+'http://deb.debian.org/debian/pool/main/a/apt/apt_1.8.2.3.dsc' apt_1.8.2.3.dsc 2774 SHA256:03ed672edefe4badbb2c7b32332293403bb03feb2ea0777c0846939a2fcb8bba
+'http://deb.debian.org/debian/pool/main/a/apt/apt_1.8.2.3.tar.xz' apt_1.8.2.3.tar.xz 2191868 SHA256:c21c9b18c4a26bc183432cb49b919af073862954f1ae8a204096b0a68c946d3b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apt/1.8.2.2/ (for browsing the source)
-- https://sources.debian.net/src/apt/1.8.2.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/1.8.2.2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apt/1.8.2.3/ (for browsing the source)
+- https://sources.debian.net/src/apt/1.8.2.3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apt/1.8.2.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.4.48-4`
 
@@ -1363,18 +1363,18 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/graphite2/1.3.13-7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/graphite2/1.3.13-7/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `graphviz=2.40.1-6`
+### `dpkg` source package: `graphviz=2.40.1-6+deb10u1`
 
 Binary Packages:
 
-- `graphviz=2.40.1-6`
-- `libcdt5=2.40.1-6`
-- `libcgraph6=2.40.1-6`
-- `libgvc6=2.40.1-6`
-- `libgvpr2=2.40.1-6`
-- `liblab-gamut1=2.40.1-6`
-- `libpathplan4=2.40.1-6`
-- `libxdot4=2.40.1-6`
+- `graphviz=2.40.1-6+deb10u1`
+- `libcdt5=2.40.1-6+deb10u1`
+- `libcgraph6=2.40.1-6+deb10u1`
+- `libgvc6=2.40.1-6+deb10u1`
+- `libgvpr2=2.40.1-6+deb10u1`
+- `liblab-gamut1=2.40.1-6+deb10u1`
+- `libpathplan4=2.40.1-6+deb10u1`
+- `libxdot4=2.40.1-6+deb10u1`
 
 Licenses: (parsed from: `/usr/share/doc/graphviz/copyright`, `/usr/share/doc/libcdt5/copyright`, `/usr/share/doc/libcgraph6/copyright`, `/usr/share/doc/libgvc6/copyright`, `/usr/share/doc/libgvpr2/copyright`, `/usr/share/doc/liblab-gamut1/copyright`, `/usr/share/doc/libpathplan4/copyright`, `/usr/share/doc/libxdot4/copyright`)
 
@@ -1386,17 +1386,17 @@ Licenses: (parsed from: `/usr/share/doc/graphviz/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris graphviz=2.40.1-6
-'http://deb.debian.org/debian/pool/main/g/graphviz/graphviz_2.40.1-6.dsc' graphviz_2.40.1-6.dsc 3213 SHA256:5566f1b10d9646447102a13f7d5d04763702e2b32fa4e27f4542caf77708a93b
-'http://deb.debian.org/debian/pool/main/g/graphviz/graphviz_2.40.1.orig.tar.gz' graphviz_2.40.1.orig.tar.gz 25633455 SHA256:ca5218fade0204d59947126c38439f432853543b0818d9d728c589dfe7f3a421
-'http://deb.debian.org/debian/pool/main/g/graphviz/graphviz_2.40.1-6.debian.tar.xz' graphviz_2.40.1-6.debian.tar.xz 51348 SHA256:34055a47c6a672fdf60475b58e37264ea431bd008f939f74c8094a0c84ea9b0b
+$ apt-get source -qq --print-uris graphviz=2.40.1-6+deb10u1
+'http://security.debian.org/debian-security/pool/updates/main/g/graphviz/graphviz_2.40.1-6+deb10u1.dsc' graphviz_2.40.1-6+deb10u1.dsc 3245 SHA256:aa4b554ce1a2a048f2f4fb25ea84e5f4d9dbe594f39ca05b7468845f502ba1a3
+'http://security.debian.org/debian-security/pool/updates/main/g/graphviz/graphviz_2.40.1.orig.tar.gz' graphviz_2.40.1.orig.tar.gz 25633455 SHA256:ca5218fade0204d59947126c38439f432853543b0818d9d728c589dfe7f3a421
+'http://security.debian.org/debian-security/pool/updates/main/g/graphviz/graphviz_2.40.1-6+deb10u1.debian.tar.xz' graphviz_2.40.1-6+deb10u1.debian.tar.xz 52100 SHA256:e9990d878a92936a217058988ac83aab24dcbc01c71fc7bb2fc7463957318b09
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/graphviz/2.40.1-6/ (for browsing the source)
-- https://sources.debian.net/src/graphviz/2.40.1-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/graphviz/2.40.1-6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/graphviz/2.40.1-6+deb10u1/ (for browsing the source)
+- https://sources.debian.net/src/graphviz/2.40.1-6+deb10u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/graphviz/2.40.1-6+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.3-1`
 
@@ -9525,11 +9525,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/npth/1.6-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/npth/1.6-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `odoo=14.0.20210506`
+### `dpkg` source package: `odoo=14.0.20210518`
 
 Binary Packages:
 
-- `odoo=14.0.20210506`
+- `odoo=14.0.20210518`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
