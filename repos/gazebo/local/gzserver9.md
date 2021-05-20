@@ -1104,14 +1104,9 @@ Licenses: (parsed from: `/usr/share/doc/gazebo9/copyright`, `/usr/share/doc/gaze
 - `LGPL-3+`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gazebo9=9.17.0-1~bionic
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo9/gazebo9_9.17.0-1~bionic.dsc' gazebo9_9.17.0-1~bionic.dsc 2136 SHA256:c57d75f86dacb0ab4ef530ab8685827f7260f0e73fa714be39e0893df66eab1b
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo9/gazebo9_9.17.0.orig.tar.bz2' gazebo9_9.17.0.orig.tar.bz2 55874005 SHA256:7d33423b855a9fc8da22a65e16628443e0d98aeea06723dca1c79125a57399c6
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo9/gazebo9_9.17.0-1~bionic.debian.tar.xz' gazebo9_9.17.0-1~bionic.debian.tar.xz 6904 SHA256:b743d0128b152072d63a9367d69a92aa8670dc3d3c73bfe5cf759a3996be3580
-```
 
 ### `dpkg` source package: `gcc-7=7.5.0-3ubuntu1~18.04`
 
@@ -4336,14 +4331,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient20/copyright`)
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-5.7=5.7.33-0ubuntu0.18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.33-0ubuntu0.18.04.1.dsc' mysql-5.7_5.7.33-0ubuntu0.18.04.1.dsc 3446 SHA512:253eb01c581df8913e8a0e287c77a27ad70347968149dc80b2270a92afa167777ad5916794f13ee0149b4c1650a40f1e19c1d7c66caa17e8b61d176c26623c85
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.33.orig.tar.gz' mysql-5.7_5.7.33.orig.tar.gz 52912380 SHA512:1d1e1e5934fb17ff731fea45b88d4af6a394c2fbf0177a87803b18cb0eb4fb8d4939f82fc22b6cbc2af64022a44e206cd23e2e88ce11cc119c3ea22129d54e7a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.33-0ubuntu0.18.04.1.debian.tar.xz' mysql-5.7_5.7.33-0ubuntu0.18.04.1.debian.tar.xz 156432 SHA512:f21dfaf14ef19746ec63c084e7c28ecaba5ecd2d0dbe52227723dd009eeb03d1148d1d4b63c56da91ae3ebf1a6246f91c242789d04c1d68b415ef1235d4b199b
-```
 
 ### `dpkg` source package: `mysql-defaults=1.0.4`
 
