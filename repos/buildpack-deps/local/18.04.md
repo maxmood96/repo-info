@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f26a056687ed0232d06fed2cd41423bb28ab7fcadd34518815f967bff36068eb`
-- Created: `2021-04-23T22:44:57.383462093Z`
-- Virtual Size: ~ 621.31 Mb  
+- Image ID: `sha256:f240e74097dc9366b479e2b028ab4b0ab708ffb6bb81a8739aa82c50e530e9d4`
+- Created: `2021-05-19T20:20:38.036528395Z`
+- Virtual Size: ~ 621.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -614,21 +614,26 @@ $ apt-get source -qq --print-uris diffutils=1:3.6-1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.6-1.debian.tar.xz' diffutils_3.6-1.debian.tar.xz 10808 SHA256:f6ab546a134bde18a87ca8e3c98919680e79d81a65a24801ae06ef69b33f24d8
 ```
 
-### `dpkg` source package: `djvulibre=3.5.27.1-8ubuntu0.2`
+### `dpkg` source package: `djvulibre=3.5.27.1-8ubuntu0.3`
 
 Binary Packages:
 
-- `libdjvulibre-dev:amd64=3.5.27.1-8ubuntu0.2`
-- `libdjvulibre-text=3.5.27.1-8ubuntu0.2`
-- `libdjvulibre21:amd64=3.5.27.1-8ubuntu0.2`
+- `libdjvulibre-dev:amd64=3.5.27.1-8ubuntu0.3`
+- `libdjvulibre-text=3.5.27.1-8ubuntu0.3`
+- `libdjvulibre21:amd64=3.5.27.1-8ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libdjvulibre-dev/copyright`, `/usr/share/doc/libdjvulibre-text/copyright`, `/usr/share/doc/libdjvulibre21/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris djvulibre=3.5.27.1-8ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.27.1-8ubuntu0.3.dsc' djvulibre_3.5.27.1-8ubuntu0.3.dsc 2524 SHA512:3a0c7a5b91eb0438c4e92d219184cfba8d040643f5c1dc9d3adbe5b87e9d45bca86ae2b66e7cb975a1d04e84fe6ea7178ba0633d49d83f82e82c37a9f7792e5a
+'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.27.1.orig.tar.gz' djvulibre_3.5.27.1.orig.tar.gz 3231662 SHA512:2ed11daa05995db7bf52113e2f75456c3c804988d2c17d0183b24ab379e52a4ef1871189e8bb132fec6cbc9d629b4d67a4d89ef7df7a995044cb25ff3dcc5de8
+'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.27.1-8ubuntu0.3.debian.tar.xz' djvulibre_3.5.27.1-8ubuntu0.3.debian.tar.xz 61132 SHA512:2cb764d2d014a2ecb15b8ff15f9f970eeb911f7b53329db61ea597a6a2478226ba1440f7190f13dc248bdf6e3243510b6da9116e649d32dfa7ad28d2f4201f08
+```
 
 ### `dpkg` source package: `dpkg=1.19.0.5ubuntu2.3`
 
@@ -2625,19 +2630,24 @@ $ apt-get source -qq --print-uris libzstd=1.3.3+dfsg-2ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.3+dfsg-2ubuntu1.2.debian.tar.xz' libzstd_1.3.3+dfsg-2ubuntu1.2.debian.tar.xz 13764 SHA512:f14aa9e453c7041a79dd90a52b5955b86fa86886b89ef26d4d257aa017a50d97410e8b875593992ad7d4b7e8e8d55743b8c66706be62cd4234f81e49c8bfc05d
 ```
 
-### `dpkg` source package: `linux=4.15.0-142.146`
+### `dpkg` source package: `linux=4.15.0-143.147`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.15.0-142.146`
+- `linux-libc-dev:amd64=4.15.0-143.147`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.15.0-143.147
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-143.147.dsc' linux_4.15.0-143.147.dsc 7028 SHA512:020fdcc5d6c9d31c5e545ee80aa81a043c7fa03f8d0d3e094777ba61099da3d537e124dae3c8114bde0811a402abc7efebeaa48f3f42187d286394c9c9fc96b5
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA512:0fab606a295e0857f774f8adaa9d56bf2cb227fbab2daed374415da216391b156f49e606ba37ac402987c5796d408807da5d1a42c0d85a8552f109a3e279443d
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-143.147.diff.gz' linux_4.15.0-143.147.diff.gz 12213848 SHA512:b90355b4b643572ed76956344b0ab4097d5ded8e5eb3deb4517597d04df38f9794a091824fd908bb50ac637d6a34dbcb00b22f6e300aff291c01aae027f250e5
+```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
 
@@ -2858,12 +2868,12 @@ $ apt-get source -qq --print-uris mpfr4=4.0.1-1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.0.1-1.debian.tar.xz' mpfr4_4.0.1-1.debian.tar.xz 10460 SHA256:9e0d582dea7e88958b8bc1f3782ada59b9c7175f01b4e06e8487fc6cbfc5a2d7
 ```
 
-### `dpkg` source package: `mysql-5.7=5.7.33-0ubuntu0.18.04.1`
+### `dpkg` source package: `mysql-5.7=5.7.34-0ubuntu0.18.04.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.7.33-0ubuntu0.18.04.1`
-- `libmysqlclient20:amd64=5.7.33-0ubuntu0.18.04.1`
+- `libmysqlclient-dev=5.7.34-0ubuntu0.18.04.1`
+- `libmysqlclient20:amd64=5.7.34-0ubuntu0.18.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient20/copyright`)
 
@@ -2881,9 +2891,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.7=5.7.34-0ubuntu0.18.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.34-0ubuntu0.18.04.1.dsc' mysql-5.7_5.7.34-0ubuntu0.18.04.1.dsc 3446 SHA512:4f7acd6cfc99a11f9d9c63e792afbd99bd53e631f03370ca45c969b9e5cd750eabf131f77817d33af373a996bd8eac6ec10ecfa5b378fb08372f6b8a789d495d
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.34.orig.tar.gz' mysql-5.7_5.7.34.orig.tar.gz 52891142 SHA512:4eab7e90477b75643df743d806d5abcfb56572a2aa003a354980287c9148209f4fb7f0158ba969fb0462c32e49fcb4cf2a79f0330ab1bd2b243725dbf6f31d6d
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.34-0ubuntu0.18.04.1.debian.tar.xz' mysql-5.7_5.7.34-0ubuntu0.18.04.1.debian.tar.xz 156504 SHA512:517fa41a1eeb88f0ac5f5b495da35e21d31423ebe4869bb8848efbcdc68744c5ab5c1e0b74129c9493730b5b84b705d4e96f93082d736ab8b1cbb620b76b12a8
+```
 
 ### `dpkg` source package: `mysql-defaults=1.0.4`
 
@@ -3756,12 +3771,12 @@ $ apt-get source -qq --print-uris subversion=1.9.7-4ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.9.7-4ubuntu1.debian.tar.xz' subversion_1.9.7-4ubuntu1.debian.tar.xz 2270568 SHA256:67ea7ddc37e697340eaa9f8fea08980ba01b529f3ab6487eeb8726bc9ae77f29
 ```
 
-### `dpkg` source package: `systemd=237-3ubuntu10.46`
+### `dpkg` source package: `systemd=237-3ubuntu10.47`
 
 Binary Packages:
 
-- `libsystemd0:amd64=237-3ubuntu10.46`
-- `libudev1:amd64=237-3ubuntu10.46`
+- `libsystemd0:amd64=237-3ubuntu10.47`
+- `libudev1:amd64=237-3ubuntu10.47`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -3773,9 +3788,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=237-3ubuntu10.47
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.47.dsc' systemd_237-3ubuntu10.47.dsc 5216 SHA512:7bd3c633c969fb024b1169f36f4588e9850155a651c3478abbaf93b102aa5ced9b597ecaa36ea9f754a0743cb15594934af3dc99e653ad582942b46396e746ad
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA512:15ef4b92815a6dd9a6c51672dbc00fd7cd0f08068ef0cbeaca574f68d330b28bc67ba1946f24f75ef3d9e7b63843a73eea700db54688061dbf5c9f8470394c3b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.47.debian.tar.xz' systemd_237-3ubuntu10.47.debian.tar.xz 291420 SHA512:3db203d14c3fcb9d076c2b40690c9fff9b2268d8a31d51d14f803f1021c8b926cfd6f1dda1b7a87e9698a82bf97cbf1e7b0b0ac404a4bb086a702df1f9cbbe8a
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 

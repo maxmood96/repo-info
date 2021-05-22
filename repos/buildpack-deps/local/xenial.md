@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:60f8efd3e70b48a96939c061dc3a43cf97f97f5acc2526cfa31bfa08b8a8087c`
-- Created: `2021-04-23T22:58:53.738799739Z`
-- Virtual Size: ~ 658.53 Mb  
+- Image ID: `sha256:fd246099079c11d99c295a19d28984536984acc4ed7a188d081f20c13bab0ca9`
+- Created: `2021-05-19T20:30:31.431688518Z`
+- Virtual Size: ~ 670.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -117,10 +117,9 @@ $ apt-get source -qq --print-uris apr=1.5.2-3
 Binary Packages:
 
 - `apt=1.2.32ubuntu0.2`
-- `apt-transport-https=1.2.32ubuntu0.2`
 - `libapt-pkg5.0:amd64=1.2.32ubuntu0.2`
 
-Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-transport-https/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
@@ -131,6 +130,25 @@ Source:
 $ apt-get source -qq --print-uris apt=1.2.32ubuntu0.2
 'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.32ubuntu0.2.dsc' apt_1.2.32ubuntu0.2.dsc 2526 SHA512:c91eba6c9405512c3e53dc1808c9ea17627a077354d2bd571ee37f4ae6ded08a4ee4f28ea75d2e64d76d84197f5479f4fd9522f98e61774679e904d144c9b429
 'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.32ubuntu0.2.tar.xz' apt_1.2.32ubuntu0.2.tar.xz 2099548 SHA512:7145c708f5c42b09b06d208ef352f157040548cfc4228d22148078d55beac06556198fede666ef6753feea1c6fa6a21ebf960510f4773900ba95edcfa83f62e6
+```
+
+### `dpkg` source package: `apt=1.2.35`
+
+Binary Packages:
+
+- `apt-transport-https=1.2.35`
+
+Licenses: (parsed from: `/usr/share/doc/apt-transport-https/copyright`)
+
+- `GPL-2`
+- `GPLv2+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris apt=1.2.35
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.35.dsc' apt_1.2.35.dsc 2548 SHA512:e7e220d4b7017c8772021583731296bb9a2c5a84f911b94e9c8195b84e6e36d0d5571b120e298838845c44911ced5fa93ab7eeb1e4c16fdac8754cb515ce9492
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.35.tar.xz' apt_1.2.35.tar.xz 2095904 SHA512:4d34d4f386eadcdc6bb16befbd752d18c0a8e62b69f3e49659ee051eb58579477b2c708df2507f917294e650384b63a37ac6432b82d93205ce0f26f6b772c32f
 ```
 
 ### `dpkg` source package: `atk1.0=2.18.0-1`
@@ -769,13 +787,13 @@ $ apt-get source -qq --print-uris djvulibre=3.5.27.1-5ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.27.1-5ubuntu0.1.debian.tar.xz' djvulibre_3.5.27.1-5ubuntu0.1.debian.tar.xz 23060 SHA512:02b5225d79b8ac442fffcefce4096446b9383b72d20f2d68c4fef23f6af57e878fda4adc8f6e0110c697bf3709c559634eb5abe8d83bc3e2f3812cfa3a8b0256
 ```
 
-### `dpkg` source package: `dpkg=1.18.4ubuntu1.6`
+### `dpkg` source package: `dpkg=1.18.4ubuntu1.7`
 
 Binary Packages:
 
-- `dpkg=1.18.4ubuntu1.6`
-- `dpkg-dev=1.18.4ubuntu1.6`
-- `libdpkg-perl=1.18.4ubuntu1.6`
+- `dpkg=1.18.4ubuntu1.7`
+- `dpkg-dev=1.18.4ubuntu1.7`
+- `libdpkg-perl=1.18.4ubuntu1.7`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-dev/copyright`, `/usr/share/doc/libdpkg-perl/copyright`)
 
@@ -785,9 +803,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-de
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris dpkg=1.18.4ubuntu1.7
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.7.dsc' dpkg_1.18.4ubuntu1.7.dsc 2196 SHA512:584fcb2ee1876ee6d500f492ba104082e46c5a7d0f89e2fc402114474f89a8166abb90b497b44471ddd7f3d3381fd5fdcc7d9e7e08b286de864710e4334bcd3a
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.7.tar.xz' dpkg_1.18.4ubuntu1.7.tar.xz 4298460 SHA512:4a953d961495ff7172ccb2e1f2e48216e52cf7faf127089039e7b122c2c9a6823c1e8e55f8a3cea353798955d5491f946dc46d4e52145c449980ebe6a981e7e0
+```
 
 ### `dpkg` source package: `e2fsprogs=1.42.13-1ubuntu1.2`
 
@@ -1195,12 +1217,9 @@ $ apt-get source -qq --print-uris glib2.0=2.48.2-0ubuntu4.8
 Binary Packages:
 
 - `libc-bin=2.23-0ubuntu11.2`
-- `libc-dev-bin=2.23-0ubuntu11.2`
-- `libc6:amd64=2.23-0ubuntu11.2`
-- `libc6-dev:amd64=2.23-0ubuntu11.2`
 - `multiarch-support=2.23-0ubuntu11.2`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/multiarch-support/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -1208,6 +1227,28 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `glibc=2.23-0ubuntu11.3`
+
+Binary Packages:
+
+- `libc-dev-bin=2.23-0ubuntu11.3`
+- `libc6:amd64=2.23-0ubuntu11.3`
+- `libc6-dev:amd64=2.23-0ubuntu11.3`
+
+Licenses: (parsed from: `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
+
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.23-0ubuntu11.3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu11.3.dsc' glibc_2.23-0ubuntu11.3.dsc 8547 SHA512:73ec4bcd6e9fd35ec2f7b4a0c646e0974ae302915a525cf3ff5a4aa7a21c04104aa201718d1f18ab792518c64cf803b3d46a560347784e3c96432da140719d49
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23.orig.tar.xz' glibc_2.23.orig.tar.xz 13849968 SHA512:f2c3460d04226cbb5ff54755efb6f337356d9c063d71f736d8e5f631aaa85bfa89c4e2da1cd29f93383310994a18b21327512efd145d4c8dffd6c1412a002191
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu11.3.debian.tar.xz' glibc_2.23-0ubuntu11.3.debian.tar.xz 1253716 SHA512:41c5c9dc2ff20a1c0b781d700a94daeda087f3b58cbccc68f36695d6d3ee83c06eed2083bfaf3220ab7ebbbd35c0cca15f63b087ca981a39ed29a71430ba216c
+```
 
 ### `dpkg` source package: `gmp=2:6.1.0+dfsg-2`
 
@@ -2900,6 +2941,29 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.dsc' libyaml_0.1.6-3.dsc 1893 SHA256:ed5bc299d3bcc0b038206f8780639d4682e65f521dff571b9336e2f8626d0011
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6.orig.tar.gz' libyaml_0.1.6.orig.tar.gz 503012 SHA256:7da6971b4bd08a986dd2a61353bc422362bd0edcc67d7ebaac68c95f74182749
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
+```
+
+### `dpkg` source package: `libzstd=1.3.1+dfsg-1~ubuntu0.16.04.1`
+
+Binary Packages:
+
+- `libzstd1=1.3.1+dfsg-1~ubuntu0.16.04.1`
+
+Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
+
+- `BSD-3-clause-with-patent-grant`
+- `Expat`
+- `GPL-2`
+- `GPL-2+`
+- `zlib`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libzstd=1.3.1+dfsg-1~ubuntu0.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.1+dfsg-1~ubuntu0.16.04.1.dsc' libzstd_1.3.1+dfsg-1~ubuntu0.16.04.1.dsc 2224 SHA512:c0a076cb4d436a100bc9fa2ff49bdd198242c9e1bf886e7b315ad81e345d4aa21b4058001080c4987bc2d5ce1a462f43205bb9b0a6970b52b71e60c36396fc00
+'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.1+dfsg.orig.tar.xz' libzstd_1.3.1+dfsg.orig.tar.xz 1016592 SHA512:a3e8b9592797aa3e62fb006a0b8d41c7eb1a7dd12027830d9b8664e6d2b1189233a1563d6bc006256e52fb18203afb5e05b861372524c4393e255cd55edfb19b
+'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.1+dfsg-1~ubuntu0.16.04.1.debian.tar.xz' libzstd_1.3.1+dfsg-1~ubuntu0.16.04.1.debian.tar.xz 10024 SHA512:d22b513ad3be36fca335fd67b302fb3a08bcfc2fd45527a8592ff56060c15f89061f53a208ed8ca4ea4f10c0b7bb742e9411ad07dd3aa0803c959871f1c6fde3
 ```
 
 ### `dpkg` source package: `linux=4.4.0-210.242`

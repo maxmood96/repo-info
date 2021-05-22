@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:714dfcea1795d31b6c90676208a1c5868961268ed042cd6d8c4eb6ef4c32ab8e`
-- Created: `2021-04-23T22:55:43.846083389Z`
-- Virtual Size: ~ 275.98 Mb  
+- Image ID: `sha256:ae8cd24ecb911b3fad9e8009ac40abe960e45284015d157090131c764ab926fa`
+- Created: `2021-05-19T20:27:31.86530582Z`
+- Virtual Size: ~ 276.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -117,10 +117,9 @@ $ apt-get source -qq --print-uris apr=1.5.2-3
 Binary Packages:
 
 - `apt=1.2.32ubuntu0.2`
-- `apt-transport-https=1.2.32ubuntu0.2`
 - `libapt-pkg5.0:amd64=1.2.32ubuntu0.2`
 
-Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-transport-https/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
@@ -131,6 +130,25 @@ Source:
 $ apt-get source -qq --print-uris apt=1.2.32ubuntu0.2
 'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.32ubuntu0.2.dsc' apt_1.2.32ubuntu0.2.dsc 2526 SHA512:c91eba6c9405512c3e53dc1808c9ea17627a077354d2bd571ee37f4ae6ded08a4ee4f28ea75d2e64d76d84197f5479f4fd9522f98e61774679e904d144c9b429
 'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.32ubuntu0.2.tar.xz' apt_1.2.32ubuntu0.2.tar.xz 2099548 SHA512:7145c708f5c42b09b06d208ef352f157040548cfc4228d22148078d55beac06556198fede666ef6753feea1c6fa6a21ebf960510f4773900ba95edcfa83f62e6
+```
+
+### `dpkg` source package: `apt=1.2.35`
+
+Binary Packages:
+
+- `apt-transport-https=1.2.35`
+
+Licenses: (parsed from: `/usr/share/doc/apt-transport-https/copyright`)
+
+- `GPL-2`
+- `GPLv2+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris apt=1.2.35
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.35.dsc' apt_1.2.35.dsc 2548 SHA512:e7e220d4b7017c8772021583731296bb9a2c5a84f911b94e9c8195b84e6e36d0d5571b120e298838845c44911ced5fa93ab7eeb1e4c16fdac8754cb515ce9492
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.35.tar.xz' apt_1.2.35.tar.xz 2095904 SHA512:4d34d4f386eadcdc6bb16befbd752d18c0a8e62b69f3e49659ee051eb58579477b2c708df2507f917294e650384b63a37ac6432b82d93205ce0f26f6b772c32f
 ```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
@@ -510,11 +528,11 @@ $ apt-get source -qq --print-uris diffutils=1:3.3-3
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.3-3.debian.tar.xz' diffutils_3.3-3.debian.tar.xz 18356 SHA256:a0d1946979196f793a8ca55b21ab7891227de08f15bac2578ed84f4911e8b755
 ```
 
-### `dpkg` source package: `dpkg=1.18.4ubuntu1.6`
+### `dpkg` source package: `dpkg=1.18.4ubuntu1.7`
 
 Binary Packages:
 
-- `dpkg=1.18.4ubuntu1.6`
+- `dpkg=1.18.4ubuntu1.7`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -524,9 +542,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris dpkg=1.18.4ubuntu1.7
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.7.dsc' dpkg_1.18.4ubuntu1.7.dsc 2196 SHA512:584fcb2ee1876ee6d500f492ba104082e46c5a7d0f89e2fc402114474f89a8166abb90b497b44471ddd7f3d3381fd5fdcc7d9e7e08b286de864710e4334bcd3a
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.7.tar.xz' dpkg_1.18.4ubuntu1.7.tar.xz 4298460 SHA512:4a953d961495ff7172ccb2e1f2e48216e52cf7faf127089039e7b122c2c9a6823c1e8e55f8a3cea353798955d5491f946dc46d4e52145c449980ebe6a981e7e0
+```
 
 ### `dpkg` source package: `e2fsprogs=1.42.13-1ubuntu1.2`
 
@@ -1294,6 +1316,29 @@ $ apt-get source -qq --print-uris libusb=2:0.1.12-28
 'http://archive.ubuntu.com/ubuntu/pool/main/libu/libusb/libusb_0.1.12-28.dsc' libusb_0.1.12-28.dsc 2012 SHA256:be0a89935a8764dc64d40a28959397e6582261eef2152c4ce90a13490471dc5f
 'http://archive.ubuntu.com/ubuntu/pool/main/libu/libusb/libusb_0.1.12.orig.tar.gz' libusb_0.1.12.orig.tar.gz 389343 SHA256:37f6f7d9de74196eb5fc0bbe0aea9b5c939de7f500acba3af6fd643f3b538b44
 'http://archive.ubuntu.com/ubuntu/pool/main/libu/libusb/libusb_0.1.12-28.debian.tar.xz' libusb_0.1.12-28.debian.tar.xz 21524 SHA256:eaf2314902b0bb9de3e1fa8c9abfcecea7b78c9824048016beaca34f7cc4351b
+```
+
+### `dpkg` source package: `libzstd=1.3.1+dfsg-1~ubuntu0.16.04.1`
+
+Binary Packages:
+
+- `libzstd1=1.3.1+dfsg-1~ubuntu0.16.04.1`
+
+Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
+
+- `BSD-3-clause-with-patent-grant`
+- `Expat`
+- `GPL-2`
+- `GPL-2+`
+- `zlib`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libzstd=1.3.1+dfsg-1~ubuntu0.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.1+dfsg-1~ubuntu0.16.04.1.dsc' libzstd_1.3.1+dfsg-1~ubuntu0.16.04.1.dsc 2224 SHA512:c0a076cb4d436a100bc9fa2ff49bdd198242c9e1bf886e7b315ad81e345d4aa21b4058001080c4987bc2d5ce1a462f43205bb9b0a6970b52b71e60c36396fc00
+'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.1+dfsg.orig.tar.xz' libzstd_1.3.1+dfsg.orig.tar.xz 1016592 SHA512:a3e8b9592797aa3e62fb006a0b8d41c7eb1a7dd12027830d9b8664e6d2b1189233a1563d6bc006256e52fb18203afb5e05b861372524c4393e255cd55edfb19b
+'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.1+dfsg-1~ubuntu0.16.04.1.debian.tar.xz' libzstd_1.3.1+dfsg-1~ubuntu0.16.04.1.debian.tar.xz 10024 SHA512:d22b513ad3be36fca335fd67b302fb3a08bcfc2fd45527a8592ff56060c15f89061f53a208ed8ca4ea4f10c0b7bb742e9411ad07dd3aa0803c959871f1c6fde3
 ```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu0.2`

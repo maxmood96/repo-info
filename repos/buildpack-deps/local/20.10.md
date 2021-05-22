@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d95634a7a5236d891f6e075b92bda0831daf8707e9a0a3f52fc9a067a0a2257f`
-- Created: `2021-04-23T22:53:46.299904382Z`
-- Virtual Size: ~ 712.32 Mb  
+- Image ID: `sha256:693cac43db41def70e3d8c2d42f2959bcabb25ff94b0137a3710b84f8997b78f`
+- Created: `2021-05-19T20:25:59.945324046Z`
+- Virtual Size: ~ 717.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -669,13 +669,13 @@ $ apt-get source -qq --print-uris diffutils=1:3.7-3ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.7-3ubuntu1.debian.tar.xz' diffutils_3.7-3ubuntu1.debian.tar.xz 11816 SHA512:81e62590049c2441daaddb81aaf5bef4ccac044e4ac25f1e00b5f2e958d1bd9a429aafdebfb58313cdbb170d2ef832161a2782b45c56c522661f2b73c8ff9696
 ```
 
-### `dpkg` source package: `djvulibre=3.5.27.1-15`
+### `dpkg` source package: `djvulibre=3.5.27.1-15ubuntu0.1`
 
 Binary Packages:
 
-- `libdjvulibre-dev:amd64=3.5.27.1-15`
-- `libdjvulibre-text=3.5.27.1-15`
-- `libdjvulibre21:amd64=3.5.27.1-15`
+- `libdjvulibre-dev:amd64=3.5.27.1-15ubuntu0.1`
+- `libdjvulibre-text=3.5.27.1-15ubuntu0.1`
+- `libdjvulibre21:amd64=3.5.27.1-15ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libdjvulibre-dev/copyright`, `/usr/share/doc/libdjvulibre-text/copyright`, `/usr/share/doc/libdjvulibre21/copyright`)
 
@@ -684,10 +684,10 @@ Licenses: (parsed from: `/usr/share/doc/libdjvulibre-dev/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris djvulibre=3.5.27.1-15
-'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.27.1-15.dsc' djvulibre_3.5.27.1-15.dsc 2406 SHA512:e7cb957886f0fcfa6983e510bc8188e99a1a69d7ca84f45072f31ea6d0a8c4cbc243af0af4d19f531588a069f8b57277c181b4611aa71d3280bb9d159cd725e4
+$ apt-get source -qq --print-uris djvulibre=3.5.27.1-15ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.27.1-15ubuntu0.1.dsc' djvulibre_3.5.27.1-15ubuntu0.1.dsc 2500 SHA512:abbacb3c762a9215bd00c9d0964edc1f1fb4cd9d047414c9c49f17163054c0a0e3a1ce8d77c542a80091e16bf0aadde11802ab3bf810d10e784bfebf802455b9
 'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.27.1.orig.tar.gz' djvulibre_3.5.27.1.orig.tar.gz 3231662 SHA512:2ed11daa05995db7bf52113e2f75456c3c804988d2c17d0183b24ab379e52a4ef1871189e8bb132fec6cbc9d629b4d67a4d89ef7df7a995044cb25ff3dcc5de8
-'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.27.1-15.debian.tar.xz' djvulibre_3.5.27.1-15.debian.tar.xz 80508 SHA512:c7658ddeadb2e9c9c29c28dfa18a3928961569b971d61379d385e5b93ec3fe47ad8ddae144f6be879b3903b76042c5cc02d313062128a40fcdbdee7fb79ae78c
+'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.27.1-15ubuntu0.1.debian.tar.xz' djvulibre_3.5.27.1-15ubuntu0.1.debian.tar.xz 82216 SHA512:94c1aa782165b82e1b6a88bc4e4e8b4055aa72ca775d99da3244f3edf5c7de6996d04607942df1790b00bd668c812bb602dbd88aa912506ee67e07cfe9186a99
 ```
 
 ### `dpkg` source package: `dpkg=1.20.5ubuntu2`
@@ -2938,19 +2938,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.5+dfsg-4ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.5+dfsg-4ubuntu0.1.debian.tar.xz' libzstd_1.4.5+dfsg-4ubuntu0.1.debian.tar.xz 14076 SHA512:3fc84e309a3d66858c22f5b46b72471caf38393beba99bc55b183f718f83c569843b22ee3d99de8484730d24690d10bd8a6329800c937115c712b584ec2560dd
 ```
 
-### `dpkg` source package: `linux=5.8.0-50.56`
+### `dpkg` source package: `linux=5.8.0-53.60`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.8.0-50.56`
+- `linux-libc-dev:amd64=5.8.0-53.60`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.8.0-53.60
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.8.0-53.60.dsc' linux_5.8.0-53.60.dsc 8529 SHA512:0e7800a1ffd78709844a6eb199f260a7b15b66dcade5709f2454248fbe0a62480820171dd5d4137d3a240afd8ee756d08e8abb700f6c27d26afd750696eb0992
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.8.0.orig.tar.gz' linux_5.8.0.orig.tar.gz 178322327 SHA512:24b71be99aa6b599b237f26c891ed6ed5d255f81adf73cdc65d72d1497edd9303001fb4c4ee1bfd30be821f6883321cb17400493547c0023f4e9137d60ea4e97
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.8.0-53.60.diff.gz' linux_5.8.0-53.60.diff.gz 6045240 SHA512:c70854f8004f65c5203b1820889bf23fa8b830cdcac46dc056837bde7448d72f5c5a6d970a77b1dae86e398d1f079f90642e53e1cd0e242c4d4f91055d58a130
+```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
 
@@ -3154,12 +3159,12 @@ $ apt-get source -qq --print-uris mpfr4=4.1.0-3
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.1.0-3.debian.tar.xz' mpfr4_4.1.0-3.debian.tar.xz 12372 SHA512:a0472b95ab7d7c8a00d7716039fefbd30142939f2077a930f0dafc056a3a5b9debc65bb9ddbfb88fbfdb6bcf9fb7871631bdb7376ca24d400e11a4c1a371df3e
 ```
 
-### `dpkg` source package: `mysql-8.0=8.0.23-0ubuntu0.20.10.1`
+### `dpkg` source package: `mysql-8.0=8.0.25-0ubuntu0.20.10.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=8.0.23-0ubuntu0.20.10.1`
-- `libmysqlclient21:amd64=8.0.23-0ubuntu0.20.10.1`
+- `libmysqlclient-dev=8.0.25-0ubuntu0.20.10.1`
+- `libmysqlclient21:amd64=8.0.25-0ubuntu0.20.10.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient21/copyright`)
 
@@ -3176,9 +3181,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-8.0=8.0.25-0ubuntu0.20.10.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.25-0ubuntu0.20.10.1.dsc' mysql-8.0_8.0.25-0ubuntu0.20.10.1.dsc 3470 SHA512:3d05042a661cea95c7f80c9e2a14bf2d66ff760233116a2403249bc179ed7c71aef2bd9545899cb41b4adbb57206d77ec0332ca781e43b34e941d5d8910f0ec8
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.25.orig.tar.gz' mysql-8.0_8.0.25.orig.tar.gz 290265324 SHA512:af653ccff66a9d87221b46ad4f7bcc629700549f758998b9a7fb22e4573b9495a28624e031f016f9ad8fe0dfcf481b82f1ffe224aa48c2d45531570026b26081
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.25-0ubuntu0.20.10.1.debian.tar.xz' mysql-8.0_8.0.25-0ubuntu0.20.10.1.debian.tar.xz 157724 SHA512:ec630139f5c6bce5eb419c25cb79cf9bc267e56f3cf4e180057218972ec00f10151fced937d6da8d2d8e5605871376337b935348a6c1a19b33449139055b285b
+```
 
 ### `dpkg` source package: `mysql-defaults=1.0.5ubuntu2`
 
@@ -3419,13 +3429,13 @@ $ apt-get source -qq --print-uris openssh=1:8.3p1-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.3p1-1ubuntu0.1.debian.tar.xz' openssh_8.3p1-1ubuntu0.1.debian.tar.xz 176524 SHA512:14911cf4a7c3925326c49ffee852a3cb867810ddc42c33ac597694aa2bcd12ad250097f3791faaad49cd55a3673eb32119df909c717685d03ef022c7a7a4205f
 ```
 
-### `dpkg` source package: `openssl=1.1.1f-1ubuntu4.3`
+### `dpkg` source package: `openssl=1.1.1f-1ubuntu4.4`
 
 Binary Packages:
 
-- `libssl-dev:amd64=1.1.1f-1ubuntu4.3`
-- `libssl1.1:amd64=1.1.1f-1ubuntu4.3`
-- `openssl=1.1.1f-1ubuntu4.3`
+- `libssl-dev:amd64=1.1.1f-1ubuntu4.4`
+- `libssl1.1:amd64=1.1.1f-1ubuntu4.4`
+- `openssl=1.1.1f-1ubuntu4.4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3434,11 +3444,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu4.3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu4.3.dsc' openssl_1.1.1f-1ubuntu4.3.dsc 2713 SHA512:608cb11678330691bf863ca9b99118d259c527bff6795c3d0775ddac125a0d0e0e1ffa0e71587b82a9ef69486a8e1954e7176e8368cf39c91ace0d079655487d
+$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu4.4
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu4.4.dsc' openssl_1.1.1f-1ubuntu4.4.dsc 2713 SHA512:75534d189c8aca282fb87374543e71517f7f9538cef77bf9e32e0da1f425240b3ee36a001ea916142df76a8d72245aa4b44eb4349c3c3ba25b74c644d601b3cc
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz.asc' openssl_1.1.1f.orig.tar.gz.asc 488 SHA512:63b01ffc23b2fec2cfc147d382b486a136e5610e181be94aa333022803a442ded37e8276fefb62b3176b571b94a1d2243c05b86b52ad7784fe0068d1ad948562
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu4.3.debian.tar.xz' openssl_1.1.1f-1ubuntu4.3.debian.tar.xz 159576 SHA512:c6322b3e71ec8d959d4fe6726360cbcbe2ce5fc78045c24dc7d859819e20af3ad195a51851747620995d161c49c94ba9540b3930c4e4e9669aeb5e476151d807
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu4.4.debian.tar.xz' openssl_1.1.1f-1ubuntu4.4.debian.tar.xz 162164 SHA512:2ea3c248adc8bfa659fa3d0d6df790a642c892de4d695f47a8d8d9dabfaf26c7db8016e9768d2fbf3359ca0a5559e83ffa9c3d0d2cd8466778d3e9162de0c500
 ```
 
 ### `dpkg` source package: `p11-kit=0.23.21-2ubuntu0.1`

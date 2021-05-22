@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a124b00394ed59ea99ddee85504c0e9acb4412a45be87170bff7f853ddf17c94`
-- Created: `2021-04-23T22:41:43.070332868Z`
+- Image ID: `sha256:37c202d251ee5fe5fbadd5459ea0c7c4cb93301620041cdb560bf854d39c3c9d`
+- Created: `2021-05-19T20:17:51.509490705Z`
 - Virtual Size: ~ 219.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2025,12 +2025,12 @@ $ apt-get source -qq --print-uris subversion=1.9.7-4ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.9.7-4ubuntu1.debian.tar.xz' subversion_1.9.7-4ubuntu1.debian.tar.xz 2270568 SHA256:67ea7ddc37e697340eaa9f8fea08980ba01b529f3ab6487eeb8726bc9ae77f29
 ```
 
-### `dpkg` source package: `systemd=237-3ubuntu10.46`
+### `dpkg` source package: `systemd=237-3ubuntu10.47`
 
 Binary Packages:
 
-- `libsystemd0:amd64=237-3ubuntu10.46`
-- `libudev1:amd64=237-3ubuntu10.46`
+- `libsystemd0:amd64=237-3ubuntu10.47`
+- `libudev1:amd64=237-3ubuntu10.47`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -2042,9 +2042,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=237-3ubuntu10.47
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.47.dsc' systemd_237-3ubuntu10.47.dsc 5216 SHA512:7bd3c633c969fb024b1169f36f4588e9850155a651c3478abbaf93b102aa5ced9b597ecaa36ea9f754a0743cb15594934af3dc99e653ad582942b46396e746ad
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA512:15ef4b92815a6dd9a6c51672dbc00fd7cd0f08068ef0cbeaca574f68d330b28bc67ba1946f24f75ef3d9e7b63843a73eea700db54688061dbf5c9f8470394c3b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.47.debian.tar.xz' systemd_237-3ubuntu10.47.debian.tar.xz 291420 SHA512:3db203d14c3fcb9d076c2b40690c9fff9b2268d8a31d51d14f803f1021c8b926cfd6f1dda1b7a87e9698a82bf97cbf1e7b0b0ac404a4bb086a702df1f9cbbe8a
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 

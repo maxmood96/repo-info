@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c1ca2d5cc0bb39466d61b60d00ba53a8a3b63373fa3d71a089d2052d7de2d48a`
-- Created: `2021-04-23T22:50:35.237618922Z`
+- Image ID: `sha256:379b6f8a6b2e2c6ae0648ddd6ca87572218dbb9c26b78a0cf293c04a0e1a0700`
+- Created: `2021-05-19T20:21:52.833343435Z`
 - Virtual Size: ~ 101.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1489,7 +1489,6 @@ $ apt-get source -qq --print-uris openldap=2.4.53+dfsg-1ubuntu1.4
 Binary Packages:
 
 - `libssl1.1:amd64=1.1.1f-1ubuntu4.3`
-- `openssl=1.1.1f-1ubuntu4.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1504,6 +1503,20 @@ $ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu4.3
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz.asc' openssl_1.1.1f.orig.tar.gz.asc 488 SHA512:63b01ffc23b2fec2cfc147d382b486a136e5610e181be94aa333022803a442ded37e8276fefb62b3176b571b94a1d2243c05b86b52ad7784fe0068d1ad948562
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu4.3.debian.tar.xz' openssl_1.1.1f-1ubuntu4.3.debian.tar.xz 159576 SHA512:c6322b3e71ec8d959d4fe6726360cbcbe2ce5fc78045c24dc7d859819e20af3ad195a51851747620995d161c49c94ba9540b3930c4e4e9669aeb5e476151d807
 ```
+
+### `dpkg` source package: `openssl=1.1.1f-1ubuntu4.4`
+
+Binary Packages:
+
+- `openssl=1.1.1f-1ubuntu4.4`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
 
 ### `dpkg` source package: `p11-kit=0.23.21-2ubuntu0.1`
 
