@@ -8,7 +8,7 @@
 ## `sourcemage:0.62`
 
 ```console
-$ docker pull sourcemage@sha256:94d041fa004bc6399ebba5f537e31d2bef4af9f4f1dc30bba853348cec244784
+$ docker pull sourcemage@sha256:f39c8eeadfc81182aaeeb142b196641f7e3dcca5ef278070e0753bd6b784d0c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18,22 +18,22 @@ $ docker pull sourcemage@sha256:94d041fa004bc6399ebba5f537e31d2bef4af9f4f1dc30bb
 ### `sourcemage:0.62` - linux; amd64
 
 ```console
-$ docker pull sourcemage@sha256:6f25ea76baa108293aea7a7d5076c65a3e052f915a2eabe1b4e538acf40c3324
+$ docker pull sourcemage@sha256:07ffe294f2dab74a3a6828626f2aa3b4387a4b0c9deabfb46d1600c13fe54a7e
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **263.2 MB (263237242 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df7212099c4cb062ec9384dd52042350c5bf009efb1940f9f2f51fecd938a24d`
+-	Image ID: `sha256:b63a9ff41eb2e2fd772b91722ca329842c384bf1a8d252c927746a151ce73ab0`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 11 Sep 2020 18:21:53 GMT
+# Sat, 22 May 2021 09:21:20 GMT
 MAINTAINER Vlad Glagolev <stealth@sourcemage.org>
-# Fri, 11 Sep 2020 18:22:28 GMT
+# Sat, 22 May 2021 09:21:44 GMT
 ADD file:363a47d47d444d4a17aaf596e459c5459589f365987a7698c6d4d6062ecee13c in / 
-# Fri, 11 Sep 2020 18:22:32 GMT
+# Sat, 22 May 2021 09:21:47 GMT
 CMD ["/bin/bash"]
 ```
 
@@ -46,7 +46,7 @@ CMD ["/bin/bash"]
 ## `sourcemage:latest`
 
 ```console
-$ docker pull sourcemage@sha256:94d041fa004bc6399ebba5f537e31d2bef4af9f4f1dc30bba853348cec244784
+$ docker pull sourcemage@sha256:f39c8eeadfc81182aaeeb142b196641f7e3dcca5ef278070e0753bd6b784d0c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -56,22 +56,22 @@ $ docker pull sourcemage@sha256:94d041fa004bc6399ebba5f537e31d2bef4af9f4f1dc30bb
 ### `sourcemage:latest` - linux; amd64
 
 ```console
-$ docker pull sourcemage@sha256:6f25ea76baa108293aea7a7d5076c65a3e052f915a2eabe1b4e538acf40c3324
+$ docker pull sourcemage@sha256:07ffe294f2dab74a3a6828626f2aa3b4387a4b0c9deabfb46d1600c13fe54a7e
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **263.2 MB (263237242 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df7212099c4cb062ec9384dd52042350c5bf009efb1940f9f2f51fecd938a24d`
+-	Image ID: `sha256:b63a9ff41eb2e2fd772b91722ca329842c384bf1a8d252c927746a151ce73ab0`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 11 Sep 2020 18:21:53 GMT
+# Sat, 22 May 2021 09:21:20 GMT
 MAINTAINER Vlad Glagolev <stealth@sourcemage.org>
-# Fri, 11 Sep 2020 18:22:28 GMT
+# Sat, 22 May 2021 09:21:44 GMT
 ADD file:363a47d47d444d4a17aaf596e459c5459589f365987a7698c6d4d6062ecee13c in / 
-# Fri, 11 Sep 2020 18:22:32 GMT
+# Sat, 22 May 2021 09:21:47 GMT
 CMD ["/bin/bash"]
 ```
 
