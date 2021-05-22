@@ -25,7 +25,7 @@ alpine-baselayout-3.2.0-r7 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
 alpine-baselayout-3.2.0-r7 installed size:
-409600
+400 KiB
 
 alpine-baselayout-3.2.0-r7 license:
 GPL-2.0-only
@@ -42,7 +42,7 @@ alpine-keys-2.2-r0 webpage:
 https://alpinelinux.org
 
 alpine-keys-2.2-r0 installed size:
-106496
+104 KiB
 
 alpine-keys-2.2-r0 license:
 MIT
@@ -59,7 +59,7 @@ apk-tools-2.10.6-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
 apk-tools-2.10.6-r0 installed size:
-266240
+260 KiB
 
 apk-tools-2.10.6-r0 license:
 GPL-2.0-only
@@ -76,7 +76,7 @@ boost-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-1.72.0-r6 installed size:
-905216
+884 KiB
 
 boost-1.72.0-r6 license:
 custom
@@ -93,7 +93,7 @@ boost-atomic-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-atomic-1.72.0-r6 installed size:
-28672
+28 KiB
 
 boost-atomic-1.72.0-r6 license:
 custom
@@ -110,7 +110,7 @@ boost-chrono-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-chrono-1.72.0-r6 installed size:
-65536
+64 KiB
 
 boost-chrono-1.72.0-r6 license:
 custom
@@ -127,7 +127,7 @@ boost-container-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-container-1.72.0-r6 installed size:
-98304
+96 KiB
 
 boost-container-1.72.0-r6 license:
 custom
@@ -144,7 +144,7 @@ boost-context-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-context-1.72.0-r6 installed size:
-28672
+28 KiB
 
 boost-context-1.72.0-r6 license:
 custom
@@ -161,7 +161,7 @@ boost-contract-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-contract-1.72.0-r6 installed size:
-163840
+160 KiB
 
 boost-contract-1.72.0-r6 license:
 custom
@@ -178,7 +178,7 @@ boost-coroutine-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-coroutine-1.72.0-r6 installed size:
-73728
+72 KiB
 
 boost-coroutine-1.72.0-r6 license:
 custom
@@ -195,7 +195,7 @@ boost-date_time-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-date_time-1.72.0-r6 installed size:
-86016
+84 KiB
 
 boost-date_time-1.72.0-r6 license:
 custom
@@ -212,7 +212,7 @@ boost-fiber-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-fiber-1.72.0-r6 installed size:
-90112
+88 KiB
 
 boost-fiber-1.72.0-r6 license:
 custom
@@ -229,7 +229,7 @@ boost-filesystem-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-filesystem-1.72.0-r6 installed size:
-135168
+132 KiB
 
 boost-filesystem-1.72.0-r6 license:
 custom
@@ -246,7 +246,7 @@ boost-graph-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-graph-1.72.0-r6 installed size:
-335872
+328 KiB
 
 boost-graph-1.72.0-r6 license:
 custom
@@ -263,7 +263,7 @@ boost-iostreams-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-iostreams-1.72.0-r6 installed size:
-147456
+144 KiB
 
 boost-iostreams-1.72.0-r6 license:
 custom
@@ -280,7 +280,7 @@ boost-libs-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-libs-1.72.0-r6 installed size:
-4096
+4096 B
 
 boost-libs-1.72.0-r6 license:
 custom
@@ -297,7 +297,7 @@ boost-locale-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-locale-1.72.0-r6 installed size:
-659456
+644 KiB
 
 boost-locale-1.72.0-r6 license:
 custom
@@ -314,7 +314,7 @@ boost-log-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-log-1.72.0-r6 installed size:
-1028096
+1004 KiB
 
 boost-log-1.72.0-r6 license:
 custom
@@ -331,7 +331,7 @@ boost-log_setup-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-log_setup-1.72.0-r6 installed size:
-778240
+760 KiB
 
 boost-log_setup-1.72.0-r6 license:
 custom
@@ -348,7 +348,7 @@ boost-math-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-math-1.72.0-r6 installed size:
-1388544
+1356 KiB
 
 boost-math-1.72.0-r6 license:
 custom
@@ -365,7 +365,7 @@ boost-prg_exec_monitor-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-prg_exec_monitor-1.72.0-r6 installed size:
-102400
+100 KiB
 
 boost-prg_exec_monitor-1.72.0-r6 license:
 custom
@@ -382,7 +382,7 @@ boost-program_options-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-program_options-1.72.0-r6 installed size:
-593920
+580 KiB
 
 boost-program_options-1.72.0-r6 license:
 custom
@@ -399,7 +399,7 @@ boost-python3-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-python3-1.72.0-r6 installed size:
-274432
+268 KiB
 
 boost-python3-1.72.0-r6 license:
 custom
@@ -416,7 +416,7 @@ boost-random-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-random-1.72.0-r6 installed size:
-61440
+60 KiB
 
 boost-random-1.72.0-r6 license:
 custom
@@ -433,7 +433,7 @@ boost-regex-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-regex-1.72.0-r6 installed size:
-1060864
+1036 KiB
 
 boost-regex-1.72.0-r6 license:
 custom
@@ -450,7 +450,7 @@ boost-serialization-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-serialization-1.72.0-r6 installed size:
-286720
+280 KiB
 
 boost-serialization-1.72.0-r6 license:
 custom
@@ -467,7 +467,7 @@ boost-stacktrace_basic-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-stacktrace_basic-1.72.0-r6 installed size:
-32768
+32 KiB
 
 boost-stacktrace_basic-1.72.0-r6 license:
 custom
@@ -484,7 +484,7 @@ boost-stacktrace_noop-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-stacktrace_noop-1.72.0-r6 installed size:
-28672
+28 KiB
 
 boost-stacktrace_noop-1.72.0-r6 license:
 custom
@@ -501,7 +501,7 @@ boost-system-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-system-1.72.0-r6 installed size:
-28672
+28 KiB
 
 boost-system-1.72.0-r6 license:
 custom
@@ -518,7 +518,7 @@ boost-thread-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-thread-1.72.0-r6 installed size:
-192512
+188 KiB
 
 boost-thread-1.72.0-r6 license:
 custom
@@ -535,7 +535,7 @@ boost-timer-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-timer-1.72.0-r6 installed size:
-49152
+48 KiB
 
 boost-timer-1.72.0-r6 license:
 custom
@@ -552,7 +552,7 @@ boost-type_erasure-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-type_erasure-1.72.0-r6 installed size:
-98304
+96 KiB
 
 boost-type_erasure-1.72.0-r6 license:
 custom
@@ -569,7 +569,7 @@ boost-unit_test_framework-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-unit_test_framework-1.72.0-r6 installed size:
-741376
+724 KiB
 
 boost-unit_test_framework-1.72.0-r6 license:
 custom
@@ -586,7 +586,7 @@ boost-wave-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-wave-1.72.0-r6 installed size:
-897024
+876 KiB
 
 boost-wave-1.72.0-r6 license:
 custom
@@ -603,7 +603,7 @@ boost-wserialization-1.72.0-r6 webpage:
 https://www.boost.org/
 
 boost-wserialization-1.72.0-r6 installed size:
-200704
+196 KiB
 
 boost-wserialization-1.72.0-r6 license:
 custom
@@ -620,7 +620,7 @@ busybox-1.31.1-r20 webpage:
 https://busybox.net/
 
 busybox-1.31.1-r20 installed size:
-962560
+940 KiB
 
 busybox-1.31.1-r20 license:
 GPL-2.0-only
@@ -637,7 +637,7 @@ ca-certificates-20191127-r4 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
 ca-certificates-20191127-r4 installed size:
-688128
+672 KiB
 
 ca-certificates-20191127-r4 license:
 MPL-2.0 GPL-2.0-or-later
@@ -654,7 +654,7 @@ ca-certificates-bundle-20191127-r4 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
 ca-certificates-bundle-20191127-r4 installed size:
-233472
+228 KiB
 
 ca-certificates-bundle-20191127-r4 license:
 MPL-2.0 GPL-2.0-or-later
@@ -671,7 +671,7 @@ cyrus-sasl-2.1.27-r6 webpage:
 https://www.cyrusimap.org/sasl/
 
 cyrus-sasl-2.1.27-r6 installed size:
-167936
+164 KiB
 
 cyrus-sasl-2.1.27-r6 license:
 custom
@@ -688,7 +688,7 @@ db-5.3.28-r1 webpage:
 https://www.oracle.com/technology/software/products/berkeley-db/index.html
 
 db-5.3.28-r1 installed size:
-1564672
+1528 KiB
 
 db-5.3.28-r1 license:
 custom
@@ -705,7 +705,7 @@ expat-2.2.9-r1 webpage:
 http://www.libexpat.org/
 
 expat-2.2.9-r1 installed size:
-188416
+184 KiB
 
 expat-2.2.9-r1 license:
 MIT
@@ -722,7 +722,7 @@ gdbm-1.13-r1 webpage:
 https://www.gnu.org/software/gdbm/
 
 gdbm-1.13-r1 installed size:
-225280
+220 KiB
 
 gdbm-1.13-r1 license:
 GPL
@@ -739,7 +739,7 @@ heimdal-libs-7.7.0-r1 webpage:
 https://github.com/heimdal/
 
 heimdal-libs-7.7.0-r1 installed size:
-3178496
+3104 KiB
 
 heimdal-libs-7.7.0-r1 license:
 BSD-3-Clause
@@ -756,7 +756,7 @@ icu-67.1-r0 webpage:
 http://icu-project.org/
 
 icu-67.1-r0 installed size:
-663552
+648 KiB
 
 icu-67.1-r0 license:
 MIT ICU Unicode-TOU
@@ -773,7 +773,7 @@ icu-libs-67.1-r0 webpage:
 http://icu-project.org/
 
 icu-libs-67.1-r0 installed size:
-33095680
+31 MiB
 
 icu-libs-67.1-r0 license:
 MIT ICU Unicode-TOU
@@ -790,7 +790,7 @@ krb5-conf-1.0-r2 webpage:
 https://web.mit.edu/kerberos/www/
 
 krb5-conf-1.0-r2 installed size:
-12288
+12 KiB
 
 krb5-conf-1.0-r2 license:
 MIT
@@ -807,7 +807,7 @@ libbz2-1.0.8-r1 webpage:
 http://sources.redhat.com/bzip2
 
 libbz2-1.0.8-r1 installed size:
-73728
+72 KiB
 
 libbz2-1.0.8-r1 license:
 bzip2-1.0.6
@@ -824,7 +824,7 @@ libc-utils-0.7.2-r3 webpage:
 https://alpinelinux.org
 
 libc-utils-0.7.2-r3 installed size:
-4096
+4096 B
 
 libc-utils-0.7.2-r3 license:
 BSD-2-Clause AND BSD-3-Clause
@@ -841,7 +841,7 @@ libcom_err-1.45.6-r0 webpage:
 http://e2fsprogs.sourceforge.net
 
 libcom_err-1.45.6-r0 installed size:
-24576
+24 KiB
 
 libcom_err-1.45.6-r0 license:
 GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
@@ -858,7 +858,7 @@ libcrypto1.1-1.1.1k-r0 webpage:
 https://www.openssl.org/
 
 libcrypto1.1-1.1.1k-r0 installed size:
-2764800
+2700 KiB
 
 libcrypto1.1-1.1.1k-r0 license:
 OpenSSL
@@ -875,7 +875,7 @@ libffi-3.3-r2 webpage:
 https://sourceware.org/libffi
 
 libffi-3.3-r2 installed size:
-53248
+52 KiB
 
 libffi-3.3-r2 license:
 MIT
@@ -892,7 +892,7 @@ libgcc-9.3.0-r2 webpage:
 https://gcc.gnu.org
 
 libgcc-9.3.0-r2 installed size:
-90112
+88 KiB
 
 libgcc-9.3.0-r2 license:
 GPL-2.0-or-later LGPL-2.1-or-later
@@ -909,7 +909,7 @@ libressl-3.1.2-r0 webpage:
 http://www.libressl.org/
 
 libressl-3.1.2-r0 installed size:
-528384
+516 KiB
 
 libressl-3.1.2-r0 license:
 custom
@@ -926,7 +926,7 @@ libressl3.1-libcrypto-3.1.2-r0 webpage:
 http://www.libressl.org/
 
 libressl3.1-libcrypto-3.1.2-r0 installed size:
-1875968
+1832 KiB
 
 libressl3.1-libcrypto-3.1.2-r0 license:
 custom
@@ -943,7 +943,7 @@ libressl3.1-libssl-3.1.2-r0 webpage:
 http://www.libressl.org/
 
 libressl3.1-libssl-3.1.2-r0 installed size:
-364544
+356 KiB
 
 libressl3.1-libssl-3.1.2-r0 license:
 custom
@@ -960,7 +960,7 @@ libressl3.1-libtls-3.1.2-r0 webpage:
 http://www.libressl.org/
 
 libressl3.1-libtls-3.1.2-r0 installed size:
-86016
+84 KiB
 
 libressl3.1-libtls-3.1.2-r0 license:
 custom
@@ -977,7 +977,7 @@ libsasl-2.1.27-r6 webpage:
 https://www.cyrusimap.org/sasl/
 
 libsasl-2.1.27-r6 installed size:
-180224
+176 KiB
 
 libsasl-2.1.27-r6 license:
 custom
@@ -994,7 +994,7 @@ libssl1.1-1.1.1k-r0 webpage:
 https://www.openssl.org/
 
 libssl1.1-1.1.1k-r0 installed size:
-540672
+528 KiB
 
 libssl1.1-1.1.1k-r0 license:
 OpenSSL
@@ -1011,7 +1011,7 @@ libstdc++-9.3.0-r2 webpage:
 https://gcc.gnu.org
 
 libstdc++-9.3.0-r2 installed size:
-1671168
+1632 KiB
 
 libstdc++-9.3.0-r2 license:
 GPL-2.0-or-later LGPL-2.1-or-later
@@ -1028,7 +1028,7 @@ libtls-standalone-2.9.1-r1 webpage:
 https://www.libressl.org/
 
 libtls-standalone-2.9.1-r1 installed size:
-110592
+108 KiB
 
 libtls-standalone-2.9.1-r1 license:
 ISC
@@ -1045,7 +1045,7 @@ musl-1.1.24-r10 webpage:
 https://musl.libc.org/
 
 musl-1.1.24-r10 installed size:
-614400
+600 KiB
 
 musl-1.1.24-r10 license:
 MIT
@@ -1062,7 +1062,7 @@ musl-utils-1.1.24-r10 webpage:
 https://musl.libc.org/
 
 musl-utils-1.1.24-r10 installed size:
-151552
+148 KiB
 
 musl-utils-1.1.24-r10 license:
 MIT BSD GPL2+
@@ -1079,7 +1079,7 @@ ncurses-libs-6.2_p20200523-r0 webpage:
 https://invisible-island.net/ncurses/
 
 ncurses-libs-6.2_p20200523-r0 installed size:
-507904
+496 KiB
 
 ncurses-libs-6.2_p20200523-r0 license:
 MIT
@@ -1096,7 +1096,7 @@ ncurses-terminfo-base-6.2_p20200523-r0 webpage:
 https://invisible-island.net/ncurses/
 
 ncurses-terminfo-base-6.2_p20200523-r0 installed size:
-217088
+212 KiB
 
 ncurses-terminfo-base-6.2_p20200523-r0 license:
 MIT
@@ -1113,7 +1113,7 @@ python3-3.8.8-r0 webpage:
 https://www.python.org/
 
 python3-3.8.8-r0 installed size:
-47190016
+45 MiB
 
 python3-3.8.8-r0 license:
 PSF-2.0
@@ -1130,7 +1130,7 @@ readline-8.0.4-r0 webpage:
 https://tiswww.cwru.edu/php/chet/readline/rltop.html
 
 readline-8.0.4-r0 installed size:
-299008
+292 KiB
 
 readline-8.0.4-r0 license:
 GPL-2.0-or-later
@@ -1147,7 +1147,7 @@ runtime-dependencies-20210415.084930 webpage:
 
 
 runtime-dependencies-20210415.084930 installed size:
-0
+0 B
 
 runtime-dependencies-20210415.084930 license:
 
@@ -1164,7 +1164,7 @@ scanelf-1.2.6-r0 webpage:
 https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities
 
 scanelf-1.2.6-r0 installed size:
-94208
+92 KiB
 
 scanelf-1.2.6-r0 license:
 GPL-2.0-only
@@ -1181,7 +1181,7 @@ sqlite-libs-3.32.1-r0 webpage:
 https://www.sqlite.org/
 
 sqlite-libs-3.32.1-r0 installed size:
-962560
+940 KiB
 
 sqlite-libs-3.32.1-r0 license:
 Public-Domain
@@ -1198,7 +1198,7 @@ ssl_client-1.31.1-r20 webpage:
 https://busybox.net/
 
 ssl_client-1.31.1-r20 installed size:
-28672
+28 KiB
 
 ssl_client-1.31.1-r20 license:
 GPL-2.0-only
@@ -1215,7 +1215,7 @@ su-exec-0.2-r1 webpage:
 https://github.com/ncopa/su-exec
 
 su-exec-0.2-r1 installed size:
-24576
+24 KiB
 
 su-exec-0.2-r1 license:
 MIT
@@ -1232,7 +1232,7 @@ tini-0.19.0-r0 webpage:
 https://github.com/krallin/tini
 
 tini-0.19.0-r0 installed size:
-36864
+36 KiB
 
 tini-0.19.0-r0 license:
 MIT
@@ -1249,7 +1249,7 @@ tzdata-2021a-r0 webpage:
 https://www.iana.org/time-zones
 
 tzdata-2021a-r0 installed size:
-3518464
+3436 KiB
 
 tzdata-2021a-r0 license:
 Public-Domain
@@ -1266,7 +1266,7 @@ xz-libs-5.2.5-r0 webpage:
 https://tukaani.org/xz
 
 xz-libs-5.2.5-r0 installed size:
-151552
+148 KiB
 
 xz-libs-5.2.5-r0 license:
 GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
@@ -1283,7 +1283,7 @@ zlib-1.2.11-r3 webpage:
 https://zlib.net/
 
 zlib-1.2.11-r3 installed size:
-110592
+108 KiB
 
 zlib-1.2.11-r3 license:
 Zlib
