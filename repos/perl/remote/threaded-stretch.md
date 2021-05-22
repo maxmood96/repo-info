@@ -1,7 +1,7 @@
 ## `perl:threaded-stretch`
 
 ```console
-$ docker pull perl@sha256:6bbf0c7d32ea18d1aeade2b3405585751bbac79d9bf6ceac6feb86d4e9407702
+$ docker pull perl@sha256:2f846ece0449ea17516491774dff5e90202d47443a3e8d2b34cd9a04c055ccd1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -154,14 +154,14 @@ CMD ["perl5.32.1" "-de0"]
 ### `perl:threaded-stretch` - linux; arm64 variant v8
 
 ```console
-$ docker pull perl@sha256:832fde3601af89beb4fa85a2c34aeaa091e8de1288a1e42c33491496e2726787
+$ docker pull perl@sha256:342764a6671d5e933145b389f1d7e3aa2c06d16c913b136fe993f9bd960b76c2
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **320.9 MB (320865073 bytes)**  
+-	Total Size: **320.9 MB (320865541 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:41f08444e2e49d9f050636a9712ba04cd5836102e3418c5bf7d8c387dbb230a2`
+-	Image ID: `sha256:bd8ac8493a708b87fa6550d76a6cce5e06bf74275a67e04f68adf546fffdb6f1`
 -	Default Command: `["perl5.32.1","-de0"]`
 
 ```dockerfile
@@ -177,17 +177,17 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Wed, 12 May 2021 01:44:31 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 12 May 2021 08:08:28 GMT
+# Sat, 22 May 2021 01:11:49 GMT
 LABEL maintainer=Peter Martini <PeterCMartini@GMail.com>, Zak B. Elep <zakame@cpan.org>
-# Wed, 12 May 2021 08:08:29 GMT
+# Sat, 22 May 2021 01:11:49 GMT
 COPY file:3744c5cc39cdbdcae10db09a1f0f399005a79f93c237b387a72ff5710cdd458c in /usr/src/perl/ 
-# Wed, 12 May 2021 08:08:30 GMT
+# Sat, 22 May 2021 01:11:49 GMT
 WORKDIR /usr/src/perl
-# Wed, 12 May 2021 08:59:41 GMT
+# Sat, 22 May 2021 01:42:42 GMT
 RUN true     && curl -SL https://www.cpan.org/src/5.0/perl-5.32.1.tar.xz -o perl-5.32.1.tar.xz     && echo '57cc47c735c8300a8ce2fa0643507b44c4ae59012bfdad0121313db639e02309 *perl-5.32.1.tar.xz' | sha256sum -c -     && tar --strip-components=1 -xaf perl-5.32.1.tar.xz -C /usr/src/perl     && rm perl-5.32.1.tar.xz     && cat *.patch | patch -p1     && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"     && archBits="$(dpkg-architecture --query DEB_BUILD_ARCH_BITS)"     && archFlag="$([ "$archBits" = '64' ] && echo '-Duse64bitall' || echo '-Duse64bitint')"     && ./Configure -Darchname="$gnuArch" "$archFlag" -Dusethreads -Duseshrplib -Dvendorprefix=/usr/local  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://www.cpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.7044.tar.gz     && echo '9b60767fe40752ef7a9d3f13f19060a63389a5c23acc3e9827e19b75500f81f3 *App-cpanminus-1.7044.tar.gz' | sha256sum -c -     && tar -xzf App-cpanminus-1.7044.tar.gz && cd App-cpanminus-1.7044 && perl bin/cpanm . && cd /root     && true     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /usr/src/App-cpanminus-1.7044* /tmp/*
-# Wed, 12 May 2021 08:59:43 GMT
+# Sat, 22 May 2021 01:42:43 GMT
 WORKDIR /
-# Wed, 12 May 2021 08:59:44 GMT
+# Sat, 22 May 2021 01:42:43 GMT
 CMD ["perl5.32.1" "-de0"]
 ```
 
@@ -212,13 +212,13 @@ CMD ["perl5.32.1" "-de0"]
 		Last Modified: Wed, 12 May 2021 01:52:35 GMT  
 		Size: 201.7 MB (201720830 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c206ecd0d2b55f7ac91c87f20029f4b0d38985eb866f4d487a4ba9d18c7fff4`  
-		Last Modified: Wed, 12 May 2021 12:08:45 GMT  
-		Size: 205.0 B  
+	-	`sha256:e9f1e4dcb368c121149a4c28032d883ab3b40255d5f5121e3faccad20f25c495`  
+		Last Modified: Sat, 22 May 2021 08:26:52 GMT  
+		Size: 203.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9ac02f697e3f318b50b67caf20f51cb740814c783cd27bd54c0106e39adb8b1`  
-		Last Modified: Wed, 12 May 2021 12:11:52 GMT  
-		Size: 13.9 MB (13931901 bytes)  
+	-	`sha256:378481fe7c4cd224cd1e81d732ce72bc19836571d67e888917da7b1cf4d97837`  
+		Last Modified: Sat, 22 May 2021 08:28:21 GMT  
+		Size: 13.9 MB (13932371 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `perl:threaded-stretch` - linux; 386
