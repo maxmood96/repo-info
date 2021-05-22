@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6b42c4fcffd3d88211f3a8239ddad714e632adedafc1384bce256498cd8613b1`
-- Created: `2021-04-24T00:27:04.923297381Z`
-- Virtual Size: ~ 135.02 Mb  
+- Image ID: `sha256:93e458bf4937f24e2509a3d32db6a52d2b24d3ba2d71bcc255dd7804256846ea`
+- Created: `2021-05-19T21:20:08.528028997Z`
+- Virtual Size: ~ 135.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -361,11 +361,11 @@ $ apt-get source -qq --print-uris diffutils=1:3.3-3
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.3-3.debian.tar.xz' diffutils_3.3-3.debian.tar.xz 18356 SHA256:a0d1946979196f793a8ca55b21ab7891227de08f15bac2578ed84f4911e8b755
 ```
 
-### `dpkg` source package: `dpkg=1.18.4ubuntu1.6`
+### `dpkg` source package: `dpkg=1.18.4ubuntu1.7`
 
 Binary Packages:
 
-- `dpkg=1.18.4ubuntu1.6`
+- `dpkg=1.18.4ubuntu1.7`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -375,9 +375,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris dpkg=1.18.4ubuntu1.7
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.7.dsc' dpkg_1.18.4ubuntu1.7.dsc 2196 SHA512:584fcb2ee1876ee6d500f492ba104082e46c5a7d0f89e2fc402114474f89a8166abb90b497b44471ddd7f3d3381fd5fdcc7d9e7e08b286de864710e4334bcd3a
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.7.tar.xz' dpkg_1.18.4ubuntu1.7.tar.xz 4298460 SHA512:4a953d961495ff7172ccb2e1f2e48216e52cf7faf127089039e7b122c2c9a6823c1e8e55f8a3cea353798955d5491f946dc46d4e52145c449980ebe6a981e7e0
+```
 
 ### `dpkg` source package: `e2fsprogs=1.42.13-1ubuntu1.2`
 
@@ -483,14 +487,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.23-0ubuntu11.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu11.2.dsc' glibc_2.23-0ubuntu11.2.dsc 8547 SHA512:ffec943c7f38c6f9dbec447b1bacbb9470207d09fbc3ba65b577a9f1135a5e099029bf54eb8e645ad6f25a9e92543f2ead8d3bd6454a359456c305dec85abffc
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23.orig.tar.xz' glibc_2.23.orig.tar.xz 13849968 SHA512:f2c3460d04226cbb5ff54755efb6f337356d9c063d71f736d8e5f631aaa85bfa89c4e2da1cd29f93383310994a18b21327512efd145d4c8dffd6c1412a002191
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu11.2.debian.tar.xz' glibc_2.23-0ubuntu11.2.debian.tar.xz 1357888 SHA512:65e33ec8c2b9f4f94ec39cc6f330e14d651dc3aba5237d54a3a825b3e9c92afdf489c83d9115ec1324c8e1d602ad7fd43baa120dd03775f1aa47220514c45b02
-```
 
 ### `dpkg` source package: `gnupg=1.4.20-1ubuntu3.3`
 
@@ -812,6 +811,29 @@ $ apt-get source -qq --print-uris libusb=2:0.1.12-28
 'http://archive.ubuntu.com/ubuntu/pool/main/libu/libusb/libusb_0.1.12-28.dsc' libusb_0.1.12-28.dsc 2012 SHA256:be0a89935a8764dc64d40a28959397e6582261eef2152c4ce90a13490471dc5f
 'http://archive.ubuntu.com/ubuntu/pool/main/libu/libusb/libusb_0.1.12.orig.tar.gz' libusb_0.1.12.orig.tar.gz 389343 SHA256:37f6f7d9de74196eb5fc0bbe0aea9b5c939de7f500acba3af6fd643f3b538b44
 'http://archive.ubuntu.com/ubuntu/pool/main/libu/libusb/libusb_0.1.12-28.debian.tar.xz' libusb_0.1.12-28.debian.tar.xz 21524 SHA256:eaf2314902b0bb9de3e1fa8c9abfcecea7b78c9824048016beaca34f7cc4351b
+```
+
+### `dpkg` source package: `libzstd=1.3.1+dfsg-1~ubuntu0.16.04.1`
+
+Binary Packages:
+
+- `libzstd1=1.3.1+dfsg-1~ubuntu0.16.04.1`
+
+Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
+
+- `BSD-3-clause-with-patent-grant`
+- `Expat`
+- `GPL-2`
+- `GPL-2+`
+- `zlib`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libzstd=1.3.1+dfsg-1~ubuntu0.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.1+dfsg-1~ubuntu0.16.04.1.dsc' libzstd_1.3.1+dfsg-1~ubuntu0.16.04.1.dsc 2224 SHA512:c0a076cb4d436a100bc9fa2ff49bdd198242c9e1bf886e7b315ad81e345d4aa21b4058001080c4987bc2d5ce1a462f43205bb9b0a6970b52b71e60c36396fc00
+'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.1+dfsg.orig.tar.xz' libzstd_1.3.1+dfsg.orig.tar.xz 1016592 SHA512:a3e8b9592797aa3e62fb006a0b8d41c7eb1a7dd12027830d9b8664e6d2b1189233a1563d6bc006256e52fb18203afb5e05b861372524c4393e255cd55edfb19b
+'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.1+dfsg-1~ubuntu0.16.04.1.debian.tar.xz' libzstd_1.3.1+dfsg-1~ubuntu0.16.04.1.debian.tar.xz 10024 SHA512:d22b513ad3be36fca335fd67b302fb3a08bcfc2fd45527a8592ff56060c15f89061f53a208ed8ca4ea4f10c0b7bb742e9411ad07dd3aa0803c959871f1c6fde3
 ```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu0.2`
