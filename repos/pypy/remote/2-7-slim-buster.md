@@ -1,7 +1,7 @@
 ## `pypy:2-7-slim-buster`
 
 ```console
-$ docker pull pypy@sha256:69c506d96bacce043a1c51de51231ec477c2a68fafccc9d0f6a9e31b548ae5c0
+$ docker pull pypy@sha256:40bbc7eaf66aacd8cc0620275cc16837b29fbf1daa009be6d0dc616b498ed455
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -129,14 +129,14 @@ CMD ["pypy"]
 ### `pypy:2-7-slim-buster` - linux; 386
 
 ```console
-$ docker pull pypy@sha256:987d114dea0d3aae5b37ac73489a9086b4ed3317e581df3191a0e3a115794a30
+$ docker pull pypy@sha256:6cebbadabaa5775fc83093d1e51af225a08e4853156b65f70dad335c4f3c886b
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.0 MB (63046108 bytes)**  
+-	Total Size: **63.0 MB (63046255 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c52c7bfdc08f997ba8e2d33b40e32ad7149ffa5c864d27ad40d85b41d1cabeee`
+-	Image ID: `sha256:7678380f1e2d4e7ed2ae6493464a036ea27f64528ca2c8278d3ec5550c3819f8`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
@@ -150,19 +150,19 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends ca-ce
 ENV LANG=C.UTF-8
 # Wed, 12 May 2021 12:38:41 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 12 May 2021 12:38:41 GMT
-ENV PYPY_VERSION=7.3.4
-# Wed, 12 May 2021 12:40:38 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.4-linux64.tar.bz2'; 			sha256='d3f7b0625e770d9be62201765d7d2316febc463372fba9c93a12969d26ae03dd'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.4-aarch64.tar.bz2'; 			sha256='9e741162ce486b14fbcf5aa377796d26b0529a9352fb602ee8b66c005f8420d1'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.4-linux32.tar.bz2'; 			sha256='653cc3f0612399e494021027f4463d62639dffa4345736a16d0704f3f8a61d5f'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		wget 		libexpat1 		libncurses5 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib-python -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +
-# Wed, 12 May 2021 12:40:39 GMT
+# Mon, 24 May 2021 19:42:04 GMT
+ENV PYPY_VERSION=7.3.5
+# Mon, 24 May 2021 19:44:06 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.5-linux64.tar.bz2'; 			sha256='4858b347801fba3249ad90af015b3aaec9d57f54d038a58d806a1bd3217d5150'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.5-aarch64.tar.bz2'; 			sha256='8dc2c753f8a94eca1a304d7736c99b439c09274f492eaa3446770c6c32ed010e'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.5-linux32.tar.bz2'; 			sha256='35bb5cb1dcca8e05dc58ba0a4b4d54f8b4787f24dfc93f7562f049190e4f0d94'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		wget 		libexpat1 		libncurses5 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib-python -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +
+# Mon, 24 May 2021 19:44:06 GMT
 ENV PYTHON_PIP_VERSION=20.3.4
-# Wed, 12 May 2021 12:40:39 GMT
+# Mon, 24 May 2021 19:44:06 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3843bff3a0a61da5b63ea0b7d34794c5c51a2f11/get-pip.py
-# Wed, 12 May 2021 12:40:39 GMT
+# Mon, 24 May 2021 19:44:06 GMT
 ENV PYTHON_GET_PIP_SHA256=95c5ee602b2f3cc50ae053d716c3c89bea62c58568f64d7d25924d399b2d5218
-# Wed, 12 May 2021 12:40:52 GMT
+# Mon, 24 May 2021 19:44:20 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 	rm -rf /var/lib/apt/lists/*; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum --check --strict -; 		pypy get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip == $PYTHON_PIP_VERSION" 	; 	apt-get purge -y --auto-remove wget; 	pip --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 12 May 2021 12:40:53 GMT
+# Mon, 24 May 2021 19:44:20 GMT
 CMD ["pypy"]
 ```
 
@@ -175,11 +175,11 @@ CMD ["pypy"]
 		Last Modified: Wed, 12 May 2021 12:44:01 GMT  
 		Size: 2.8 MB (2769460 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ddfd982a011117e12ddca9a8ee6b0105fab2d4e8be33865fc6647ee14744eb3`  
-		Last Modified: Wed, 12 May 2021 12:46:42 GMT  
-		Size: 30.2 MB (30242673 bytes)  
+	-	`sha256:0687dad90852970cf5daeedda52b2ab3d486a9242c283a10c1f3f4da488bca32`  
+		Last Modified: Mon, 24 May 2021 19:49:40 GMT  
+		Size: 30.2 MB (30242865 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:648b86334d66822682c0bd4f9b21d09de6c2476d8885987b0b24ca5d6655e159`  
-		Last Modified: Wed, 12 May 2021 12:46:31 GMT  
-		Size: 2.2 MB (2238901 bytes)  
+	-	`sha256:cba56d13d770ee5156e01fcc64f16956f8f90c904ce89cf5e789be2cdba2b6a2`  
+		Last Modified: Mon, 24 May 2021 19:49:32 GMT  
+		Size: 2.2 MB (2238856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
