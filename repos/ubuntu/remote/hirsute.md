@@ -1,7 +1,7 @@
 ## `ubuntu:hirsute`
 
 ```console
-$ docker pull ubuntu@sha256:414bafe37ddfc22fe0f0ceac1c89d563ee3570afbd2e7aa09ad8939ca6fdfa98
+$ docker pull ubuntu@sha256:a5020e0ba35c74fe90272e36a0526b29c0ed740b30129001feebb50e12512188
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -55,41 +55,41 @@ CMD ["/bin/bash"]
 ### `ubuntu:hirsute` - linux; arm variant v7
 
 ```console
-$ docker pull ubuntu@sha256:2581c675b3727523ea723a0d9a99361a547d03743bd2820cbe58eb48355eac2c
+$ docker pull ubuntu@sha256:c35016ec44a2820882c2a294a977430e44b09985cda43224321370f5cb4eaf89
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.8 MB (24752518 bytes)**  
+-	Total Size: **24.8 MB (24752414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e0d7dd9f74332a1c61c6832ec49514acadb6838d0d8033d4e13496c52db4a4d`
+-	Image ID: `sha256:ce49ccfe866e8fbcbb1236c096a64a8d7200ff8dc2676e9557ad139ff31c8840`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 19 May 2021 20:22:48 GMT
-ADD file:e5870ac6e64d788a9ed34c217ecc70648386b8ffc1fb0bbba393155bb7f93437 in / 
-# Wed, 19 May 2021 20:22:51 GMT
+# Wed, 26 May 2021 17:01:00 GMT
+ADD file:368a4b1f4a61486f765544d689682ccee47df96c1049a56e78d91ae0509cce0d in / 
+# Wed, 26 May 2021 17:01:01 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Wed, 19 May 2021 20:22:52 GMT
+# Wed, 26 May 2021 17:01:01 GMT
 RUN [ -z "$(apt-get indextargets)" ]
-# Wed, 19 May 2021 20:22:54 GMT
+# Wed, 26 May 2021 17:01:02 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Wed, 19 May 2021 20:22:55 GMT
+# Wed, 26 May 2021 17:01:02 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:bdd4355f13aa64cacc203ae21d7f6b50c13e90d4ddce9ce1e27ae5aa46cbdd31`  
-		Last Modified: Wed, 19 May 2021 20:24:29 GMT  
-		Size: 24.8 MB (24751484 bytes)  
+	-	`sha256:7b7018c21d6a206312e1f50b9d23a7fafacc249472a8c920fb44796e487ba801`  
+		Last Modified: Wed, 26 May 2021 17:04:12 GMT  
+		Size: 24.8 MB (24751379 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d8651e11b134edeb4fc951dd121afc6fedf7810f5b2cd90819169fe4abe4d7f`  
-		Last Modified: Wed, 19 May 2021 20:24:23 GMT  
-		Size: 848.0 B  
+	-	`sha256:553e32fdce28182ec070173a5dab89184e46eb501ac006158ebc1393344451c5`  
+		Last Modified: Wed, 26 May 2021 17:04:08 GMT  
+		Size: 847.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6614e7e3c4bd3c9c88b4b28c2ec82a93cf94d5d20cb70a3c944b0f0b2827234c`  
-		Last Modified: Wed, 19 May 2021 20:24:23 GMT  
-		Size: 186.0 B  
+	-	`sha256:8e4fb9d63df26dbb9401c2bfa81ce9d14d399741d20f549555ca0ea22f7234fa`  
+		Last Modified: Wed, 26 May 2021 17:04:07 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:hirsute` - linux; arm64 variant v8
