@@ -1,24 +1,24 @@
-## `clojure:openjdk-17-tools-deps-1.10.3.839-alpine`
+## `clojure:openjdk-17-tools-deps-1.10.3.855-alpine`
 
 ```console
-$ docker pull clojure@sha256:ea555d5cc3f8866bf4b10a31d0dc93bd285c2a82d29b0eac803ffcf40d11fbd4
+$ docker pull clojure@sha256:215c599d96ef17b45e43311c717834d0fa9ceeeb8bf334b33509c594efcde59d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 
-### `clojure:openjdk-17-tools-deps-1.10.3.839-alpine` - linux; amd64
+### `clojure:openjdk-17-tools-deps-1.10.3.855-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:d68d1f796cb9a67b43693c5d72c0a1988199a554e81d535597af856e1d8b294a
+$ docker pull clojure@sha256:26442aba0c63dc22a78103e3b2f3c75f68ffcef0145ea8840ab758a313d0dc60
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.9 MB (208948384 bytes)**  
+-	Total Size: **209.0 MB (208985939 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c50858cdae548f880e6d86e04b5cb606dbf5bfc5f421a6398e4880ce24b95448`
+-	Image ID: `sha256:69ba9906ce7553cbb94f4c045a744c987513af37eb0a35c4bd29994847c6f2b8`
 -	Default Command: `["sh","-c","sleep 1 && exec clj"]`
 
 ```dockerfile
@@ -38,13 +38,13 @@ ENV JAVA_VERSION=17-ea+14
 RUN set -eux; 		arch="$(apk --print-arch)"; 	case "$arch" in 		'x86_64') 			downloadUrl='https://download.java.net/java/early_access/alpine/14/binaries/openjdk-17-ea+14_linux-x64-musl_bin.tar.gz'; 			downloadSha256='f07a1ac921333dafac1cd886ad49600ce143be7efebd32e1a02599a8a0829dd4'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum -c -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/ssl/certs/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
 # Wed, 14 Apr 2021 23:36:40 GMT
 CMD ["jshell"]
-# Mon, 17 May 2021 23:33:55 GMT
-ENV CLOJURE_VERSION=1.10.3.839
-# Mon, 17 May 2021 23:33:55 GMT
+# Wed, 26 May 2021 18:28:51 GMT
+ENV CLOJURE_VERSION=1.10.3.855
+# Wed, 26 May 2021 18:28:51 GMT
 WORKDIR /tmp
-# Mon, 17 May 2021 23:34:02 GMT
-RUN apk add --update --no-cache curl bash make && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "ba754dcf1d88cd1e8fe8337637fe249b91dff4f63115b4b9550947539869c804 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apk del curl
-# Mon, 17 May 2021 23:34:02 GMT
+# Wed, 26 May 2021 18:28:59 GMT
+RUN apk add --update --no-cache curl bash make && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "4bafe3c7343b7d4ef44bd0145bf4203be1c144a30d99a1db53ab67abb2568e2b *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apk del curl
+# Wed, 26 May 2021 18:28:59 GMT
 CMD ["sh" "-c" "sleep 1 && exec clj"]
 ```
 
@@ -61,7 +61,7 @@ CMD ["sh" "-c" "sleep 1 && exec clj"]
 		Last Modified: Wed, 14 Apr 2021 23:42:21 GMT  
 		Size: 186.8 MB (186798307 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08dc4492c54d83de636bbeb2298d7b260b51ab21d4d1665893f1b55e992c500d`  
-		Last Modified: Mon, 17 May 2021 23:39:20 GMT  
-		Size: 18.4 MB (18409687 bytes)  
+	-	`sha256:18bd5b529b43d76d2048b80b5642e61fae1263e9ad9ce15a20b25ae0ecbb7caf`  
+		Last Modified: Wed, 26 May 2021 18:34:49 GMT  
+		Size: 18.4 MB (18447242 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
