@@ -4253,21 +4253,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenexr-dev/copyright`, `/usr/share/d
 - `BSD-3-clause`
 - `openexr`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openexr=2.5.4-1
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.5.4-1.dsc' openexr_2.5.4-1.dsc 2683 SHA256:d809c163948fb286db6cf6804800f1b52ff151cf0839c6338aac52992cf0c578
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.5.4.orig.tar.gz' openexr_2.5.4.orig.tar.gz 27535491 SHA256:dba19e9c6720c6f64fbc8b9d1867eaa75da6438109b941eefdc75ed141b6576d
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.5.4.orig.tar.gz.asc' openexr_2.5.4.orig.tar.gz.asc 287 SHA256:a2c4ac5151789903ca8ab3093a2798491463ccf2abfd003a20f96453e505dd5f
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.5.4-1.debian.tar.xz' openexr_2.5.4-1.debian.tar.xz 21448 SHA256:f50a51a91a1a0a997f6a10a82289b812c62bcf78ef38f30f0979838948ee75be
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openexr/2.5.4-1/
 
-- https://sources.debian.net/src/openexr/2.5.4-1/ (for browsing the source)
-- https://sources.debian.net/src/openexr/2.5.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openexr/2.5.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjpeg2=2.4.0-3`
 
@@ -4313,20 +4305,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.57+dfsg-2
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.57+dfsg-2.dsc' openldap_2.4.57+dfsg-2.dsc 3061 SHA256:1fcfd2ce54964068ddf36b64727c99d767e73f7520d6525a286f8e3564821971
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.57+dfsg.orig.tar.gz' openldap_2.4.57+dfsg.orig.tar.gz 5054318 SHA256:009cc88733eaf41a21607e073a19bce53d7d6ed90a5c280e80880978c4e91db7
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.57+dfsg-2.debian.tar.xz' openldap_2.4.57+dfsg-2.debian.tar.xz 168496 SHA256:e1ca889e9e7a6ea2eb8adde95119df4a08199c10bd772263989138e85171cc62
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openldap/2.4.57+dfsg-2/
 
-- https://sources.debian.net/src/openldap/2.4.57+dfsg-2/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.4.57+dfsg-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.4.57+dfsg-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssh=1:8.4p1-5`
 
