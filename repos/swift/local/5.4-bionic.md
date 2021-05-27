@@ -1,9 +1,9 @@
-# `swift:5.4.0`
+# `swift:5.4.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:581edd0e2da79a3b58d373913965462cb8bd65a4a706edf35d14997800b91dfe`
-- Created: `2021-05-19T22:45:22.552318463Z`
+- Image ID: `sha256:e1be882614f901fa693d1fba775cfbd889a4cca997ecccc642ad49ec8c77f764`
+- Created: `2021-05-26T17:36:40.631165953Z`
 - Virtual Size: ~ 2.10 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561`
   - `SWIFT_PLATFORM=ubuntu18.04`
-  - `SWIFT_BRANCH=swift-5.4-release`
-  - `SWIFT_VERSION=swift-5.4-RELEASE`
+  - `SWIFT_BRANCH=swift-5.4.1-release`
+  - `SWIFT_VERSION=swift-5.4.1-RELEASE`
   - `SWIFT_WEBROOT=https://swift.org/builds/`
 - Labels:
   - `Description=Docker Container for the Swift programming language`
@@ -1596,14 +1596,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libx11=2:1.6.4-3ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4-3ubuntu0.3.dsc' libx11_1.6.4-3ubuntu0.3.dsc 2512 SHA512:30b631362563320c87a82d44cc140374b4a45beb02ddddd3856ef96d87f9f331177bc08a1da125f590fe6433ca80bf6ddd3764621c8831beaea31e1b3662d524
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4.orig.tar.gz' libx11_1.6.4.orig.tar.gz 3095115 SHA512:253597837e9074f962aacf8d9974491b134591b18b61835f5ab14a6488fbcb15b7761b5ce8c43cfbba10db052933a582bab0fe0980e2388189d60e39a46a0107
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.4-3ubuntu0.3.diff.gz' libx11_1.6.4-3ubuntu0.3.diff.gz 49007 SHA512:2ba8f13f173a55da3433946237333c99fc5be9b3e9d9c557eebfc3a620d7a3da71d2c7f89e3c31f17e597d01cb6da978f83727ccebcc76f264fef19cf16bf738
-```
 
 ### `dpkg` source package: `libxau=1:1.0.8-1ubuntu1`
 
