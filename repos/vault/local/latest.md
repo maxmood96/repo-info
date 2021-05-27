@@ -1,10 +1,10 @@
-# `vault:1.7.1`
+# `vault:1.7.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fd2a304f26b777cb8519d3f41d696a3afaf0d9d1b2d0918425350ea4dafe41aa`
-- Created: `2021-04-22T01:11:43.251098907Z`
-- Virtual Size: ~ 204.38 Mb  
+- Image ID: `sha256:aef5a3e15e33006e166b95a6e723d718ecae1b59fadb67e9d7fa0b1099a41b67`
+- Created: `2021-05-25T00:21:32.48263019Z`
+- Virtual Size: ~ 207.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
