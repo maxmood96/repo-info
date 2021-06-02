@@ -7988,14 +7988,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-12=12.6-0ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.6-0ubuntu0.20.04.1.dsc' postgresql-12_12.6-0ubuntu0.20.04.1.dsc 3760 SHA512:22b57582a54c2aef1e083d5b824cce4fd2f3a07fe19cb9960081e01c8636ae6c8a325baabf492191d305e62bb169c9c0226f9bdbbbf3802adaf222f7ceb0307c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.6.orig.tar.bz2' postgresql-12_12.6.orig.tar.bz2 20771172 SHA512:5742c9d861c53bbdd032972e63b706d24ccb39492474c446cf4edac235d57357f036e48727027819004177003c4328123148e3d767d2b3d7866a52f333f8d68d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.6-0ubuntu0.20.04.1.debian.tar.xz' postgresql-12_12.6-0ubuntu0.20.04.1.debian.tar.xz 25136 SHA512:1ce20cbc87cc91be31c44ced301c5e0d64b499958fa96b0d82622d954dee8916d97870a44b3950b2ebe1de7fb9c7ab8ea11297c992c10e16c6711b84b272414a
-```
 
 ### `dpkg` source package: `procps=2:3.3.16-1ubuntu2.1`
 
@@ -8137,14 +8132,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.8/copyright`, `/usr/share/doc
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.8=3.8.5-1~20.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.5-1~20.04.2.dsc' python3.8_3.8.5-1~20.04.2.dsc 3323 SHA512:fc74878958a9447513124b0982ac59e1dbbaf02ba061a0bdc9472e5ee383d5a1f47b483e2844a672745bb275b597f958f8e939f8b32a393e9c665b2a1d9c7dbe
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.5.orig.tar.xz' python3.8_3.8.5.orig.tar.xz 18019640 SHA512:460cee65d7df7150694590575502d7f22e548ebfc99c8f8b363eef8bf30ee72e58d8ffacb1d607824f877f880eb9fd6775a508388029583e1e1df3380f3f9587
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.5-1~20.04.2.debian.tar.xz' python3.8_3.8.5-1~20.04.2.debian.tar.xz 212668 SHA512:5d61547f867e21d46fcc0bbcde38fded6ac0554e46c888d9b454f90974332205969da9eb3ff73796408a3302095f69f2f1e884f81ca975c09b4bf8557c74c67b
-```
 
 ### `dpkg` source package: `raptor2=2.0.15-0ubuntu1.20.04.1`
 
