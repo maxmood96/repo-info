@@ -2,31 +2,31 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8fd30d373b3b24239267aa0eba0f37610b49ae83d972742bad263f10979248a1`
-- Created: `2021-04-14T23:58:03.223401098Z`
-- Virtual Size: ~ 159.56 Mb  
+- Image ID: `sha256:191025b6c889caa8d972f7f2088b56e9fadf2e6dd325216cb2ba2134acf02feb`
+- Created: `2021-06-04T00:11:37.827766918Z`
+- Virtual Size: ~ 168.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["raku"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/core/bin:/usr/share/perl6/site/bin:/usr/share/perl6/vendor/bin`
-  - `rakudo_version=2020.10`
+  - `rakudo_version=2021.04`
 
 ## `apk` (`.apk`-based packages)
 
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.2.0-r7 description:
+alpine-baselayout-3.2.0-r8 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.2.0-r7 webpage:
+alpine-baselayout-3.2.0-r8 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.2.0-r7 installed size:
+alpine-baselayout-3.2.0-r8 installed size:
 400 KiB
 
-alpine-baselayout-3.2.0-r7 license:
+alpine-baselayout-3.2.0-r8 license:
 GPL-2.0-only
 
 ```
@@ -51,16 +51,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.10.6-r0 description:
+apk-tools-2.12.5-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.10.6-r0 webpage:
+apk-tools-2.12.5-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.10.6-r0 installed size:
-260 KiB
+apk-tools-2.12.5-r0 installed size:
+304 KiB
 
-apk-tools-2.10.6-r0 license:
+apk-tools-2.12.5-r0 license:
 GPL-2.0-only
 
 ```
@@ -68,16 +68,16 @@ GPL-2.0-only
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.31.1-r20 description:
+busybox-1.32.1-r6 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.31.1-r20 webpage:
+busybox-1.32.1-r6 webpage:
 https://busybox.net/
 
-busybox-1.31.1-r20 installed size:
-940 KiB
+busybox-1.32.1-r6 installed size:
+924 KiB
 
-busybox-1.31.1-r20 license:
+busybox-1.32.1-r6 license:
 GPL-2.0-only
 
 ```
@@ -85,17 +85,17 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20191127-r4 description:
+ca-certificates-bundle-20191127-r5 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20191127-r4 webpage:
+ca-certificates-bundle-20191127-r5 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20191127-r4 installed size:
+ca-certificates-bundle-20191127-r5 installed size:
 228 KiB
 
-ca-certificates-bundle-20191127-r4 license:
-MPL-2.0 GPL-2.0-or-later
+ca-certificates-bundle-20191127-r5 license:
+MPL-2.0 AND MIT
 
 ```
 
@@ -126,7 +126,7 @@ libcrypto1.1-1.1.1k-r0 webpage:
 https://www.openssl.org/
 
 libcrypto1.1-1.1.1k-r0 installed size:
-2700 KiB
+2704 KiB
 
 libcrypto1.1-1.1.1k-r0 license:
 OpenSSL
@@ -170,16 +170,16 @@ ISC
 ### `apk` package: `musl`
 
 ```console
-musl-1.1.24-r10 description:
+musl-1.2.2-r0 description:
 the musl c library (libc) implementation
 
-musl-1.1.24-r10 webpage:
+musl-1.2.2-r0 webpage:
 https://musl.libc.org/
 
-musl-1.1.24-r10 installed size:
-600 KiB
+musl-1.2.2-r0 installed size:
+608 KiB
 
-musl-1.1.24-r10 license:
+musl-1.2.2-r0 license:
 MIT
 
 ```
@@ -187,16 +187,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.1.24-r10 description:
+musl-utils-1.2.2-r0 description:
 the musl c library (libc) implementation
 
-musl-utils-1.1.24-r10 webpage:
+musl-utils-1.2.2-r0 webpage:
 https://musl.libc.org/
 
-musl-utils-1.1.24-r10 installed size:
-148 KiB
+musl-utils-1.2.2-r0 installed size:
+140 KiB
 
-musl-utils-1.1.24-r10 license:
+musl-utils-1.2.2-r0 license:
 MIT BSD GPL2+
 
 ```
@@ -204,16 +204,16 @@ MIT BSD GPL2+
 ### `apk` package: `scanelf`
 
 ```console
-scanelf-1.2.6-r0 description:
+scanelf-1.2.8-r0 description:
 Scan ELF binaries for stuff
 
-scanelf-1.2.6-r0 webpage:
+scanelf-1.2.8-r0 webpage:
 https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities
 
-scanelf-1.2.6-r0 installed size:
+scanelf-1.2.8-r0 installed size:
 92 KiB
 
-scanelf-1.2.6-r0 license:
+scanelf-1.2.8-r0 license:
 GPL-2.0-only
 
 ```
@@ -221,16 +221,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.31.1-r20 description:
+ssl_client-1.32.1-r6 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.31.1-r20 webpage:
+ssl_client-1.32.1-r6 webpage:
 https://busybox.net/
 
-ssl_client-1.31.1-r20 installed size:
+ssl_client-1.32.1-r6 installed size:
 28 KiB
 
-ssl_client-1.31.1-r20 license:
+ssl_client-1.32.1-r6 license:
 GPL-2.0-only
 
 ```
