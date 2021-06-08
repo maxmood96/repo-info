@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a8068542b3f91a7a6f736d1abd8f196b59455984231c9c91899b210c9e8519d1`
-- Created: `2021-05-17T19:56:30.240641095Z`
-- Virtual Size: ~ 95.11 Mb  
+- Image ID: `sha256:a96c8ad39640fb3e83bf01f202af4088a41d428e5163fed6e56041b17b629134`
+- Created: `2021-06-04T01:31:31.625365901Z`
+- Virtual Size: ~ 95.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.19`
-  - `PHP_URL=https://www.php.net/distributions/php-7.4.19.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.19.tar.xz.asc`
-  - `PHP_SHA256=6c17172c4a411ccb694d9752de899bb63c72a0a3ebe5089116bc13658a1467b2`
+  - `PHP_VERSION=7.4.20`
+  - `PHP_URL=https://www.php.net/distributions/php-7.4.20.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.20.tar.xz.asc`
+  - `PHP_SHA256=1fa46ca6790d780bf2cb48961df65f0ca3640c4533f0bca743cd61b71cb66335`
   - `POSTFIXADMIN_VERSION=3.3.9`
   - `POSTFIXADMIN_SHA512=791b05df34a4f2eec01fe6f6b9038a6630cd60c42e1f2e725fe3d033a692b77d2d688858b947c53d1ce48258c7c87a2e3fb31356e553632b88149d5a29bfa70e`
 - Labels:
@@ -287,16 +287,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.76.1-r0 description:
+libcurl-7.77.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-7.76.1-r0 webpage:
+libcurl-7.77.0-r0 webpage:
 https://curl.se/
 
-libcurl-7.76.1-r0 installed size:
-488 KiB
+libcurl-7.77.0-r0 installed size:
+500 KiB
 
-libcurl-7.76.1-r0 license:
+libcurl-7.77.0-r0 license:
 MIT
 
 ```
@@ -338,16 +338,16 @@ custom
 ### `apk` package: `libpq`
 
 ```console
-libpq-13.2-r0 description:
+libpq-13.3-r0 description:
 PostgreSQL libraries
 
-libpq-13.2-r0 webpage:
+libpq-13.3-r0 webpage:
 https://www.postgresql.org/
 
-libpq-13.2-r0 installed size:
+libpq-13.3-r0 installed size:
 328 KiB
 
-libpq-13.2-r0 license:
+libpq-13.3-r0 license:
 PostgreSQL
 
 ```
