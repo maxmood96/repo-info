@@ -1,4 +1,4 @@
-## `amazoncorretto:8u282-alpine-jre`
+## `amazoncorretto:8u292-alpine-jre`
 
 ```console
 $ docker pull amazoncorretto@sha256:9b512161b10206d94138a47759ca3e1a503f01d6b97169f99bd9fc52f76fb7b4
@@ -8,7 +8,7 @@ $ docker pull amazoncorretto@sha256:9b512161b10206d94138a47759ca3e1a503f01d6b971
 -	Platforms:
 	-	linux; amd64
 
-### `amazoncorretto:8u282-alpine-jre` - linux; amd64
+### `amazoncorretto:8u292-alpine-jre` - linux; amd64
 
 ```console
 $ docker pull amazoncorretto@sha256:efdb98e9a99c921602eed17fb06c2f0661abfdff42a9490589d523a55afad5b1
