@@ -2271,14 +2271,9 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13/copyright`)
 - `Expat`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libarchive=3.2.2-3.1ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.2.2-3.1ubuntu0.6.dsc' libarchive_3.2.2-3.1ubuntu0.6.dsc 2457 SHA512:78492e07afbada93da435195b3c5f4810434d943949e009a0aed20b5742f4cf947191f4e4916aedb9f435ac23dfac39c5d963665355ae2ea4d7032b4936b6299
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.2.2.orig.tar.gz' libarchive_3.2.2.orig.tar.gz 5458241 SHA512:a67920c37d49cf9478032d77fc4fa21827cebb96e9b83d9ecb8466328834052e4ab3d3a9bc4e2edf405d6cb14ffd648c9fa100b578257f6e5842c99bbea558a7
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.2.2-3.1ubuntu0.6.debian.tar.xz' libarchive_3.2.2-3.1ubuntu0.6.debian.tar.xz 24980 SHA512:26caaac93e43556e5e6bdf88924befd06b254959704992f0a076914e9469ac1500f6190fb06670b55ea2addf297bceb0bff52f71104099ee53b11676148d5838
-```
 
 ### `dpkg` source package: `libass=1:0.14.0-1`
 

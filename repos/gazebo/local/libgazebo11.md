@@ -2367,13 +2367,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-common3/copyright`, `/usr/sh
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-common3=3.13.2-1~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-common3/ignition-common3_3.13.2-1~focal.dsc' ignition-common3_3.13.2-1~focal.dsc 1891 SHA256:b8477d8259d872fc3049243d5e91e9fc1c262851a5547fe90cf6a82bf9344221
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-common3/ignition-common3_3.13.2-1~focal.tar.xz' ignition-common3_3.13.2-1~focal.tar.xz 6719596 SHA256:9f011479d040dcf0455fdd10673e5b118f5fbcb620f3d60aed56f1def4b4e59a
-```
 
 ### `dpkg` source package: `ignition-fuel-tools4=4.3.0-1~focal`
 
@@ -5888,14 +5884,9 @@ Licenses: (parsed from: `/usr/share/doc/libxnvctrl0/copyright`)
 - `other-Metrolink`
 - `other-XFree`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nvidia-settings=460.39-0ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nvidia-settings/nvidia-settings_460.39-0ubuntu0.20.04.1.dsc' nvidia-settings_460.39-0ubuntu0.20.04.1.dsc 2477 SHA512:0ef9a5d4f1d32aafb484286c656ce06468e7bf913ef1d1da51041daaa9a7ebbfa8e6f09d473c17bc1eca078c4978dfd3e6c2be7d5845c868183707bc58dad22d
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nvidia-settings/nvidia-settings_460.39.orig.tar.gz' nvidia-settings_460.39.orig.tar.gz 1249350 SHA512:847f78361c7fd2feefba4faa084f6ea6dfecdba2befdbb42c1f0971d3fa5d033858bf8a8729a66afb970d3232bfd182d568b8ced2dbe8909eecc97b77c6abbb2
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nvidia-settings/nvidia-settings_460.39-0ubuntu0.20.04.1.debian.tar.xz' nvidia-settings_460.39-0ubuntu0.20.04.1.debian.tar.xz 24392 SHA512:45cb9d3ff44422d09599d60b949bc5506ca263c6882eaaca02c3a92e7d37325f1b13b4b71c12ef3dd51e6e0ee2cf3e5d18bb79efc60fb58464b52df04acde9c7
-```
 
 ### `dpkg` source package: `ocl-icd=2.2.11-1ubuntu1`
 
