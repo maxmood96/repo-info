@@ -502,21 +502,13 @@ Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/li
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.46.2-1
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.46.2-1.dsc' e2fsprogs_1.46.2-1.dsc 2842 SHA256:8e505e7dc67d9a4eb4c307a7279225fb33fe41836fdcc5699c2407fa22a65c04
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.46.2.orig.tar.gz' e2fsprogs_1.46.2.orig.tar.gz 9496954 SHA256:f79f26b4f65bdc059fca12e1ec6a3040c3ce1a503fb70eb915bee71903815cd5
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.46.2.orig.tar.gz.asc' e2fsprogs_1.46.2.orig.tar.gz.asc 488 SHA256:948552550f23a9e0223cecb51b5b85258c9d94895a20bce1180fce770628a55f
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.46.2-1.debian.tar.xz' e2fsprogs_1.46.2-1.debian.tar.xz 82200 SHA256:64b9cd178243cde5fe9350a43447d0f0447b42e355d73add30beb77345f3d77f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/e2fsprogs/1.46.2-1/
 
-- https://sources.debian.net/src/e2fsprogs/1.46.2-1/ (for browsing the source)
-- https://sources.debian.net/src/e2fsprogs/1.46.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/e2fsprogs/1.46.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.8.0-1`
 
@@ -731,21 +723,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.7.1-4
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1-4.dsc' gnutls28_3.7.1-4.dsc 3487 SHA256:5529e4d874a8e482059617509067c1cc153338615bcc7961ab248756d5ef98a1
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz' gnutls28_3.7.1.orig.tar.xz 6038388 SHA256:3777d7963eca5e06eb315686163b7b3f5045e2baac5e54e038ace9835e5cac6f
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz.asc' gnutls28_3.7.1.orig.tar.xz.asc 854 SHA256:13a683b12602c169a7ad7827ab0e3f35c8fa1f98675d0073cf7d54a8cd635582
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1-4.debian.tar.xz' gnutls28_3.7.1-4.debian.tar.xz 81652 SHA256:061ddee27fad3325b7e63d13bbc7a4aa56291f082349f37b24c594abcb75d609
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.7.1-4/
 
-- https://sources.debian.net/src/gnutls28/3.7.1-4/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.7.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.7.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.6-1`
 
@@ -1559,21 +1543,13 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed6/copyright`, `/usr/share/doc/
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nettle=3.7.2-3
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.7.2-3.dsc' nettle_3.7.2-3.dsc 2274 SHA256:fe98e5b915f8db8f1ade4c584550e07aa66013d3ad2a0012baad021b5bef284f
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.7.2.orig.tar.gz' nettle_3.7.2.orig.tar.gz 2382309 SHA256:8d2a604ef1cde4cd5fb77e422531ea25ad064679ff0adf956e78b3352e0ef162
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.7.2.orig.tar.gz.asc' nettle_3.7.2.orig.tar.gz.asc 573 SHA256:6183e94ac98dbd68ed25af0c54b7d76ebf2f0c80b415f8fffc7bb416aafa6ff2
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.7.2-3.debian.tar.xz' nettle_3.7.2-3.debian.tar.xz 21876 SHA256:afaa3a2f43de7e1317cad111d5bb3095ac4dbd855e044afbd93f00a5a99c607d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nettle/3.7.2-3/
 
-- https://sources.debian.net/src/nettle/3.7.2-3/ (for browsing the source)
-- https://sources.debian.net/src/nettle/3.7.2-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nettle/3.7.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `neurodebian=0.41.0`
 
