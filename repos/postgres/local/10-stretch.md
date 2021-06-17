@@ -1,20 +1,20 @@
-# `postgres:9.5.25`
+# `postgres:10.17`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6d176851b77f575c4380852ee2b795850fdbc832397b2282e63636947f1754bf`
-- Created: `2021-05-12T14:39:14.459636345Z`
-- Virtual Size: ~ 197.21 Mb  
+- Image ID: `sha256:c736bc77fcb54b51f4b4cf051f2d80e7c5225b252058ac9e007ac11ba6f83ad6`
+- Created: `2021-06-16T22:32:56.218971349Z`
+- Virtual Size: ~ 199.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["postgres"]`
 - Environment:
-  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/9.5/bin`
+  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/10/bin`
   - `GOSU_VERSION=1.12`
   - `LANG=en_US.utf8`
-  - `PG_MAJOR=9.5`
-  - `PG_VERSION=9.5.25-1.pgdg90+1`
+  - `PG_MAJOR=10`
+  - `PG_VERSION=10.17-1.pgdg90+1`
   - `PGDATA=/var/lib/postgresql/data`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1165,6 +1165,33 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libidn/1.33-1+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libidn/1.33-1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `libjson-perl=2.90-1`
+
+Binary Packages:
+
+- `libjson-perl=2.90-1`
+
+Licenses: (parsed from: `/usr/share/doc/libjson-perl/copyright`)
+
+- `Artistic`
+- `GPL-1`
+- `GPL-1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libjson-perl=2.90-1
+'http://deb.debian.org/debian/pool/main/libj/libjson-perl/libjson-perl_2.90-1.dsc' libjson-perl_2.90-1.dsc 2434 SHA256:d6dd6c21e3ab7349b721e44ae12063cfa810133228b1855ae6909c601e25c91a
+'http://deb.debian.org/debian/pool/main/libj/libjson-perl/libjson-perl_2.90.orig.tar.gz' libjson-perl_2.90.orig.tar.gz 85333 SHA256:4ddbb3cb985a79f69a34e7c26cde1c81120d03487e87366f9a119f90f7bdfe88
+'http://deb.debian.org/debian/pool/main/libj/libjson-perl/libjson-perl_2.90-1.debian.tar.xz' libjson-perl_2.90-1.debian.tar.xz 4976 SHA256:c7ff22b3e2b9277c8a8ca3dbbe34c3bcc9ca0932595ac99a47cf8d18152fd2db
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libjson-perl/2.90-1/ (for browsing the source)
+- https://sources.debian.net/src/libjson-perl/2.90-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libjson-perl/2.90-1/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `libksba=1.3.5-2`
 
 Binary Packages:
@@ -1298,23 +1325,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libtasn1-6/4.10-1.1+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libtasn1-6/4.10-1.1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxml2=2.9.4+dfsg1-2.2+deb9u4`
+### `dpkg` source package: `libxml2=2.9.4+dfsg1-2.2+deb9u5`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.4+dfsg1-2.2+deb9u4`
+- `libxml2:amd64=2.9.4+dfsg1-2.2+deb9u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-2.2+deb9u5
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2+deb9u5.dsc' libxml2_2.9.4+dfsg1-2.2+deb9u5.dsc 3053 SHA256:9c390ac82ea5dd805a6c06c4c67021d19a49c7a50518da1cb4625797153ec190
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2+deb9u5.debian.tar.xz' libxml2_2.9.4+dfsg1-2.2+deb9u5.debian.tar.xz 38448 SHA256:f12334100f7ef475009bb64a145816280a9ddf1947dd82d990756937bf840236
+```
 
-- http://snapshot.debian.org/package/libxml2/2.9.4+dfsg1-2.2+deb9u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2+deb9u5/ (for browsing the source)
+- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2+deb9u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxml2/2.9.4+dfsg1-2.2+deb9u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxslt=1.1.29-2.1+deb9u2`
 
@@ -1797,43 +1831,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pinentry/1.0.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pinentry/1.0.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-13=13.2-1.pgdg90+1`
+### `dpkg` source package: `postgresql-10=10.17-1.pgdg90+1`
 
 Binary Packages:
 
-- `libpq5:amd64=13.2-1.pgdg90+1`
+- `postgresql-10=10.17-1.pgdg90+1`
+- `postgresql-client-10=10.17-1.pgdg90+1`
 
-Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
-
-- `Artistic`
-- `BSD-2-clause`
-- `BSD-3-Clause`
-- `BSD-3-clause`
-- `Custom-Unicode`
-- `Custom-pg_dump`
-- `Custom-regex`
-- `GPL-1`
-- `PostgreSQL`
-- `Tcl`
-- `blf`
-- `double-metaphone`
-- `imath`
-- `nagaysau-ishii`
-- `rijndael`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `postgresql-9.5=9.5.25-1.pgdg90+1`
-
-Binary Packages:
-
-- `postgresql-9.5=9.5.25-1.pgdg90+1`
-- `postgresql-client-9.5=9.5.25-1.pgdg90+1`
-- `postgresql-contrib-9.5=9.5.25-1.pgdg90+1`
-
-Licenses: (parsed from: `/usr/share/doc/postgresql-9.5/copyright`, `/usr/share/doc/postgresql-client-9.5/copyright`, `/usr/share/doc/postgresql-contrib-9.5/copyright`)
+Licenses: (parsed from: `/usr/share/doc/postgresql-10/copyright`, `/usr/share/doc/postgresql-client-10/copyright`)
 
 - `Artistic`
 - `BSD-2-clause`
@@ -1854,27 +1859,64 @@ Licenses: (parsed from: `/usr/share/doc/postgresql-9.5/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-9.5=9.5.25-1.pgdg90+1
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.25-1.pgdg90+1.dsc' postgresql-9.5_9.5.25-1.pgdg90+1.dsc 2780 SHA256:e9d2627d9a90232de95a8510fe4862dce6b08c7efce6cb4d64d2c667f720ee4e
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.25.orig.tar.bz2' postgresql-9.5_9.5.25.orig.tar.bz2 17923796 SHA256:7628c55eb23768a2c799c018988d8f2ab48ee3d80f5e11259938f7a935f0d603
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.25-1.pgdg90+1.debian.tar.xz' postgresql-9.5_9.5.25-1.pgdg90+1.debian.tar.xz 34600 SHA256:31f5270e6b64b7c647e6941ae2ef67cf5205b4c305bf7995526c66886d79c769
+$ apt-get source -qq --print-uris postgresql-10=10.17-1.pgdg90+1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-10/postgresql-10_10.17-1.pgdg90+1.dsc' postgresql-10_10.17-1.pgdg90+1.dsc 2665 SHA256:c08e9d02478f4c9f5c185249ec04917703e54a0d192d3f7cba86dba79286e21b
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-10/postgresql-10_10.17.orig.tar.bz2' postgresql-10_10.17.orig.tar.bz2 19153278 SHA256:5af28071606c9cd82212c19ba584657a9d240e1c4c2da28fc1f3998a2754b26c
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-10/postgresql-10_10.17-1.pgdg90+1.debian.tar.xz' postgresql-10_10.17-1.pgdg90+1.debian.tar.xz 34616 SHA256:ce960418e828d74260c9d7afaea35f86dc35f9661a5510cdf340fa76499b9a0b
 ```
 
-### `dpkg` source package: `postgresql-common=225.pgdg90+1`
+### `dpkg` source package: `postgresql-13=13.3-1.pgdg90+1`
 
 Binary Packages:
 
-- `postgresql-client-common=225.pgdg90+1`
-- `postgresql-common=225.pgdg90+1`
+- `libpq5:amd64=13.3-1.pgdg90+1`
+
+Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
+
+- `Artistic`
+- `BSD-2-clause`
+- `BSD-3-Clause`
+- `BSD-3-clause`
+- `Custom-Unicode`
+- `Custom-pg_dump`
+- `Custom-regex`
+- `GPL-1`
+- `PostgreSQL`
+- `Tcl`
+- `blf`
+- `double-metaphone`
+- `imath`
+- `nagaysau-ishii`
+- `rijndael`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris postgresql-13=13.3-1.pgdg90+1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-13/postgresql-13_13.3-1.pgdg90+1.dsc' postgresql-13_13.3-1.pgdg90+1.dsc 2618 SHA256:73e870a4d834016bda70d945367847c6e2ec42950133dfd277b1539e94d83f5d
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-13/postgresql-13_13.3.orig.tar.bz2' postgresql-13_13.3.orig.tar.bz2 21119109 SHA256:3cd9454fa8c7a6255b6743b767700925ead1b9ab0d7a0f9dcb1151010f8eb4a1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-13/postgresql-13_13.3-1.pgdg90+1.debian.tar.xz' postgresql-13_13.3-1.pgdg90+1.debian.tar.xz 28052 SHA256:1a676603dd5c7982535ed5ec0e20caf44792a58dc246f9792791dc64efd01fea
+```
+
+### `dpkg` source package: `postgresql-common=226.pgdg90+1`
+
+Binary Packages:
+
+- `postgresql-client-common=226.pgdg90+1`
+- `postgresql-common=226.pgdg90+1`
 
 Licenses: (parsed from: `/usr/share/doc/postgresql-client-common/copyright`, `/usr/share/doc/postgresql-common/copyright`)
 
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-common=226.pgdg90+1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_226.pgdg90+1.dsc' postgresql-common_226.pgdg90+1.dsc 1583 SHA256:86a5cb0bff644fd8e03e6d37aac04fade5d0b553918bb57bc623089e2fa5ada8
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_226.pgdg90+1.tar.xz' postgresql-common_226.pgdg90+1.tar.xz 229024 SHA256:e0b779f90d05ca312db6f2a17ed57a1ca9c7dc82afa2a57a7ab76320c87eaa62
+```
 
 ### `dpkg` source package: `readline=7.0-3`
 

@@ -1,20 +1,20 @@
-# `postgres:13.3`
+# `postgres:10.17-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e36567eeafa19bf09a11b8f56e588bf7f338682d71afef1c9daa20db6868cc2e`
-- Created: `2021-06-16T22:24:51.79354633Z`
-- Virtual Size: ~ 314.68 Mb  
+- Image ID: `sha256:21c6ca43d63ad1f68c6c471b10e229b128e03576df1d2ccac7862371ee7f438f`
+- Created: `2021-06-16T22:32:30.690444255Z`
+- Virtual Size: ~ 230.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["postgres"]`
 - Environment:
-  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/13/bin`
+  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/10/bin`
   - `GOSU_VERSION=1.12`
   - `LANG=en_US.utf8`
-  - `PG_MAJOR=13`
-  - `PG_VERSION=13.3-1.pgdg100+1`
+  - `PG_MAJOR=10`
+  - `PG_VERSION=10.17-1.pgdg100+1`
   - `PGDATA=/var/lib/postgresql/data`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1496,52 +1496,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.3.8+dfsg-3+deb10u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.3.8+dfsg-3+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `llvm-toolchain-7=1:7.0.1-8+deb10u2`
-
-Binary Packages:
-
-- `libllvm7:amd64=1:7.0.1-8+deb10u2`
-
-Licenses: (parsed from: `/usr/share/doc/libllvm7/copyright`)
-
-- `ARM`
-- `Apple`
-- `BSD-3-Clause`
-- `BSD-3-clause`
-- `Expat`
-- `LLVM`
-- `MIT`
-- `NCSA`
-- `Polly`
-- `Python`
-- `U-OF-I-BSD-LIKE`
-- `public-domain`
-- `solar-public-domain`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris llvm-toolchain-7=1:7.0.1-8+deb10u2
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1-8+deb10u2.dsc' llvm-toolchain-7_7.0.1-8+deb10u2.dsc 8285 SHA256:cfaebe2dd6eb4546967ed4cb40c2ab029dad4fdf547c921e749c510726d68349
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1.orig-clang-tools-extra.tar.bz2' llvm-toolchain-7_7.0.1.orig-clang-tools-extra.tar.bz2 954392 SHA256:5bd9a587e321536bfe93619d4260f2c6d85973c7d2212b5a29f4e6d0b081b67a
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1.orig-clang.tar.bz2' llvm-toolchain-7_7.0.1.orig-clang.tar.bz2 13927137 SHA256:78d974b2200cf18e4d711492b601ffbe104fe43682f2626b931eeb89ad4524b1
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1.orig-compiler-rt.tar.bz2' llvm-toolchain-7_7.0.1.orig-compiler-rt.tar.bz2 2364285 SHA256:58c730ee430ebf274946402098c4798e0b8b45ff0d1fa05741236e10b713c06b
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1.orig-libcxx.tar.bz2' llvm-toolchain-7_7.0.1.orig-libcxx.tar.bz2 1797541 SHA256:c54637220202040940d280e7970f1feb917fc0c951e1d4f12e7dfb4ad603ecd3
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1.orig-libcxxabi.tar.bz2' llvm-toolchain-7_7.0.1.orig-libcxxabi.tar.bz2 543991 SHA256:bac1d1855064f1f934080950bd622fa4cccb01aff98d504cbf48ae9a23d2e97e
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1.orig-lld.tar.bz2' llvm-toolchain-7_7.0.1.orig-lld.tar.bz2 996785 SHA256:d51bab2cd2dfe4e19e51f473e511fb10fe845586470bcadf01d33fb739766a40
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1.orig-lldb.tar.bz2' llvm-toolchain-7_7.0.1.orig-lldb.tar.bz2 11361330 SHA256:4ad23cd6eaf71960ad6746c469555b781e398763f383d5f6ab7d6a17f27f85f7
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1.orig-openmp.tar.bz2' llvm-toolchain-7_7.0.1.orig-openmp.tar.bz2 998026 SHA256:99cf464fcbcbfb8bbc80bde455f7a0171cb945970a4d8028ec055ffdfedb5e10
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1.orig-polly.tar.bz2' llvm-toolchain-7_7.0.1.orig-polly.tar.bz2 3319947 SHA256:3a5f5af8efed79763d2e052e75c11e6e987377201fde54fe6f664c8c9faa6b44
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1.orig.tar.bz2' llvm-toolchain-7_7.0.1.orig.tar.bz2 33380406 SHA256:4a45763b46c2d48ab6db5347afdbba520407e9b16134e71163163a4d2a5e0980
-'http://deb.debian.org/debian/pool/main/l/llvm-toolchain-7/llvm-toolchain-7_7.0.1-8+deb10u2.debian.tar.xz' llvm-toolchain-7_7.0.1-8+deb10u2.debian.tar.xz 121352 SHA256:0b9c91c5fb262d8c677ade8a5706ff7f585552f49a7908815fe627c650fbf40f
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/llvm-toolchain-7/1:7.0.1-8+deb10u2/ (for browsing the source)
-- https://sources.debian.net/src/llvm-toolchain-7/1:7.0.1-8+deb10u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/llvm-toolchain-7/1:7.0.1-8+deb10u2/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `lsb=10.2019051400`
 
 Binary Packages:
@@ -1999,15 +1953,47 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pinentry/1.1.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pinentry/1.1.0-2/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `postgresql-10=10.17-1.pgdg100+1`
+
+Binary Packages:
+
+- `postgresql-10=10.17-1.pgdg100+1`
+- `postgresql-client-10=10.17-1.pgdg100+1`
+
+Licenses: (parsed from: `/usr/share/doc/postgresql-10/copyright`, `/usr/share/doc/postgresql-client-10/copyright`)
+
+- `Artistic`
+- `BSD-2-clause`
+- `BSD-3-clause`
+- `Custom-Unicode`
+- `Custom-pg_dump`
+- `Custom-regex`
+- `GPL-1`
+- `PostgreSQL`
+- `Snowball`
+- `Tcl`
+- `blf`
+- `double-metaphone`
+- `imath`
+- `nagaysau-ishii`
+- `rijndael`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris postgresql-10=10.17-1.pgdg100+1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-10/postgresql-10_10.17-1.pgdg100+1.dsc' postgresql-10_10.17-1.pgdg100+1.dsc 2675 SHA256:faf774c05978295c5bbc65282652efe62f2b71237f1271b02bdb599f2c9872ee
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-10/postgresql-10_10.17.orig.tar.bz2' postgresql-10_10.17.orig.tar.bz2 19153278 SHA256:5af28071606c9cd82212c19ba584657a9d240e1c4c2da28fc1f3998a2754b26c
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-10/postgresql-10_10.17-1.pgdg100+1.debian.tar.xz' postgresql-10_10.17-1.pgdg100+1.debian.tar.xz 34580 SHA256:ef0871865531f5f827e9311dd0c5870fcd02bde694bcce75dd672ea845f699ff
+```
+
 ### `dpkg` source package: `postgresql-13=13.3-1.pgdg100+1`
 
 Binary Packages:
 
 - `libpq5:amd64=13.3-1.pgdg100+1`
-- `postgresql-13=13.3-1.pgdg100+1`
-- `postgresql-client-13=13.3-1.pgdg100+1`
 
-Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-13/copyright`, `/usr/share/doc/postgresql-client-13/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
 - `Artistic`
 - `BSD-2-clause`
