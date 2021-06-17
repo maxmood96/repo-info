@@ -1,4 +1,4 @@
-## `postgres:11`
+## `postgres:11-stretch`
 
 ```console
 $ docker pull postgres@sha256:5e4435de8f0e0cbfcd52670d64441dab6f7bbb629d1ac9350c3862b12783ef43
@@ -12,7 +12,7 @@ $ docker pull postgres@sha256:5e4435de8f0e0cbfcd52670d64441dab6f7bbb629d1ac9350c
 	-	linux; arm64 variant v8
 	-	linux; 386
 
-### `postgres:11` - linux; amd64
+### `postgres:11-stretch` - linux; amd64
 
 ```console
 $ docker pull postgres@sha256:deec06c7c7ab8de803d8726033f4ece60a048ae1d9f3819f14d0af65c19a8fdd
@@ -133,7 +133,7 @@ CMD ["postgres"]
 		Size: 4.4 KB (4412 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `postgres:11` - linux; arm variant v5
+### `postgres:11-stretch` - linux; arm variant v5
 
 ```console
 $ docker pull postgres@sha256:a0ee059745b8ba27158f98d6c48f1dcf25e87205f4694b32cb7b40963ef0ea54
@@ -254,7 +254,7 @@ CMD ["postgres"]
 		Size: 4.4 KB (4415 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `postgres:11` - linux; arm variant v7
+### `postgres:11-stretch` - linux; arm variant v7
 
 ```console
 $ docker pull postgres@sha256:90499708350987ad3f50c705840b78ea8649ee1ef1747813bcce9c6606477f68
@@ -375,7 +375,7 @@ CMD ["postgres"]
 		Size: 4.4 KB (4411 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `postgres:11` - linux; arm64 variant v8
+### `postgres:11-stretch` - linux; arm64 variant v8
 
 ```console
 $ docker pull postgres@sha256:23628e13a649e98ca641199912c9d9defdaa8ef83781b6b8f9e7fe86de222bb4
@@ -496,7 +496,7 @@ CMD ["postgres"]
 		Size: 4.4 KB (4413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `postgres:11` - linux; 386
+### `postgres:11-stretch` - linux; 386
 
 ```console
 $ docker pull postgres@sha256:02875d0f3d9c94200175d2662c4e6446caa83f8eb3f293bf5e676361026d2c18

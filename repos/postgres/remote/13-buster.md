@@ -1,4 +1,4 @@
-## `postgres:13.3`
+## `postgres:13-buster`
 
 ```console
 $ docker pull postgres@sha256:a8f25ca44e98a4846cad176be8017f8f9c34028e4eebbf905dd46ccbab77d7a2
@@ -15,7 +15,7 @@ $ docker pull postgres@sha256:a8f25ca44e98a4846cad176be8017f8f9c34028e4eebbf905d
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `postgres:13.3` - linux; amd64
+### `postgres:13-buster` - linux; amd64
 
 ```console
 $ docker pull postgres@sha256:38039b3f2a0784a37244f557cf644a5cedc0c4269d14d9b09d089925586e8384
@@ -136,7 +136,7 @@ CMD ["postgres"]
 		Size: 4.4 KB (4401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `postgres:13.3` - linux; arm variant v5
+### `postgres:13-buster` - linux; arm variant v5
 
 ```console
 $ docker pull postgres@sha256:fb7ff4e89b7fb7ed9648c81a298b26904dc022052c39070b578471d3412c1b15
@@ -257,7 +257,7 @@ CMD ["postgres"]
 		Size: 4.4 KB (4404 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `postgres:13.3` - linux; arm variant v7
+### `postgres:13-buster` - linux; arm variant v7
 
 ```console
 $ docker pull postgres@sha256:70de15e82d00d5a8b63a00df4806f3c567f32263435ccda3fab8cf0f54e7ddd5
@@ -378,7 +378,7 @@ CMD ["postgres"]
 		Size: 4.4 KB (4403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `postgres:13.3` - linux; arm64 variant v8
+### `postgres:13-buster` - linux; arm64 variant v8
 
 ```console
 $ docker pull postgres@sha256:9ed98f786659d97a9d7669629e5f2519ef3a4fe27cc0985c7fdb79cb5fa8fecf
@@ -499,7 +499,7 @@ CMD ["postgres"]
 		Size: 4.4 KB (4403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `postgres:13.3` - linux; 386
+### `postgres:13-buster` - linux; 386
 
 ```console
 $ docker pull postgres@sha256:82c8f43263694eae073783f0314ac15c4a93053a808815aa9549ce2c201cad07
@@ -620,7 +620,7 @@ CMD ["postgres"]
 		Size: 4.4 KB (4403 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `postgres:13.3` - linux; mips64le
+### `postgres:13-buster` - linux; mips64le
 
 ```console
 $ docker pull postgres@sha256:34a1214a1e714f429737206b4b9ea3b1413be34675d6e2eee04e35e3ed8b3b6f
@@ -741,7 +741,7 @@ CMD ["postgres"]
 		Size: 4.4 KB (4404 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `postgres:13.3` - linux; ppc64le
+### `postgres:13-buster` - linux; ppc64le
 
 ```console
 $ docker pull postgres@sha256:58485bd758e4b22c7d26fbdffb50caab2b0de20bf5a928e06e255eaa213657c4
@@ -862,7 +862,7 @@ CMD ["postgres"]
 		Size: 4.4 KB (4404 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `postgres:13.3` - linux; s390x
+### `postgres:13-buster` - linux; s390x
 
 ```console
 $ docker pull postgres@sha256:069649ed36a1c898e508222d39522eafdb297e34ea850bc665a8b47ad08e3e74
