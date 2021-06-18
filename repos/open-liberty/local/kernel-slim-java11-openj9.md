@@ -1347,15 +1347,9 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed5/copyright`, `/usr/share/doc/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nettle=3.5.1+really3.5.1-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.5.1+really3.5.1-2ubuntu0.1.dsc' nettle_3.5.1+really3.5.1-2ubuntu0.1.dsc 2490 SHA512:0b14d05186f6ebf151823a29d85b57a2defc5379b6bd0531750fc67babb3e09e8bcffc3f76aff215d9cfe9e2cdb43db75d1eb26f1ab9ad8f6860014dfdb7202a
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.5.1+really3.5.1.orig.tar.gz' nettle_3.5.1+really3.5.1.orig.tar.gz 1989593 SHA512:f738121b9091cbe79435fb5d46b45cf6f10912320c233829356908127bab1cac6946ca56e022a832380c44f2c10f21d2feef64cb0f4f41e3da4a681dc0131784
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.5.1+really3.5.1.orig.tar.gz.asc' nettle_3.5.1+really3.5.1.orig.tar.gz.asc 573 SHA512:d8921622f2165fb4a05e7e75f75d82c0eabb816f265bae3f3267def20d81386b1da1a29ebfc52bbe26875b94b2050dd5493119d0efcb5143bc21e2f69b8449dd
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.5.1+really3.5.1-2ubuntu0.1.debian.tar.xz' nettle_3.5.1+really3.5.1-2ubuntu0.1.debian.tar.xz 24048 SHA512:6cf14c87f41916f1d0f6c85fde808dfe4c55c8f89f98e01b905149592c65f7d5d632a61991f2eb685e30e4d3301c6a22f7cb7f436687d92e2cfe4ff38a7889e2
-```
 
 ### `dpkg` source package: `nghttp2=1.40.0-1build1`
 
@@ -1713,14 +1707,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.6.dsc' systemd_245.4-4ubuntu3.6.dsc 5291 SHA512:4a864ad8f850ecf4384322a184447d6e0ee52f35202f12b2166156061c48e196bf2aa9203473bfab5d22200ae3bfb3c95b600c6ef8604ca9202a51bce950471d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.6.debian.tar.xz' systemd_245.4-4ubuntu3.6.debian.tar.xz 238468 SHA512:73b87319e61f1c598e47feebf8cdfc58f112982f3d6e574c36ba0c67c31e00138266567083bfd97e8020c536d378623c9345529a1936cbf5deafafbc73f7bf7c
-```
 
 ### `dpkg` source package: `sysvinit=2.96-2.1ubuntu1`
 
