@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7eb2e74a0ca5fd6da89f82e15d1cb79805d18af55801dc7d36c7fdcbc5110b87`
-- Created: `2021-06-01T15:39:34.85671679Z`
+- Image ID: `sha256:d9c515b41fba22bd67c60ce03462ca188897fc1477af425f5413cb93fc86f5cd`
+- Created: `2021-06-17T17:09:40.810443699Z`
 - Virtual Size: ~ 490.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -402,15 +402,15 @@ $ yumdownloader --quiet --source --urls keyutils-libs-1.5.8-3.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/keyutils-1.5.8-3.el7.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.15.1-50.el7.x86_64`
+### `rpm` package: `krb5-libs-1.15.1-50.0.1.el7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls krb5-libs-1.15.1-50.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/krb5-1.15.1-50.el7.src.rpm
+$ yumdownloader --quiet --source --urls krb5-libs-1.15.1-50.0.1.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/krb5-1.15.1-50.0.1.el7.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.2.51-15.el7.x86_64`
@@ -875,15 +875,15 @@ $ yumdownloader --quiet --source --urls oraclelinux-release-7.9-1.0.9.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/oraclelinux-release-7.9-1.0.9.el7.src.rpm
 ```
 
-### `rpm` package: `oraclelinux-release-el7-1.0-16.el7.x86_64`
+### `rpm` package: `oraclelinux-release-el7-1.0-17.el7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls oraclelinux-release-el7-1.0-16.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/oraclelinux-release-el7-1.0-16.el7.src.rpm
+$ yumdownloader --quiet --source --urls oraclelinux-release-el7-1.0-17.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64//getPackageSource/oraclelinux-release-el7-1.0-17.el7.src.rpm
 ```
 
 ### `rpm` package: `p11-kit-0.23.5-3.el7.x86_64`
