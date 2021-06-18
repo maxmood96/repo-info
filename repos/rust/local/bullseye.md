@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d758cff632f96a5c49eff8dfe42360a994fa4c88793d8281463d027c68b448f6`
-- Created: `2021-05-12T19:15:29.5098893Z`
-- Virtual Size: ~ 1.26 Gb  
+- Image ID: `sha256:5d5bf359042fcdb2ca1186c9e9d9d0dd0ae6b5e36fab6f9ca255c4dd27763be6`
+- Created: `2021-06-17T23:24:11.636625759Z`
+- Virtual Size: ~ 1.28 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.52.1`
+  - `RUST_VERSION=1.53.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -3301,20 +3301,13 @@ Licenses: (parsed from: `/usr/share/doc/libwebp-dev/copyright`, `/usr/share/doc/
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libwebp=0.6.1-2
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_0.6.1-2.dsc' libwebp_0.6.1-2.dsc 2064 SHA256:321ee69e44f0d037d5fec47692251e35ed22c9ad0bbf0a6bf0fae990a52319f4
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_0.6.1.orig.tar.gz' libwebp_0.6.1.orig.tar.gz 3554290 SHA256:a86045e3ec24704bddbaa369ca30980d6bf4f2625f4cdca03715e91f9c08bbb4
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_0.6.1-2.debian.tar.xz' libwebp_0.6.1-2.debian.tar.xz 9532 SHA256:5af543e277abb97f6b2c72ca0d7ce95de79108d88da383d511ef729683fa7a45
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libwebp/0.6.1-2/
 
-- https://sources.debian.net/src/libwebp/0.6.1-2/ (for browsing the source)
-- https://sources.debian.net/src/libwebp/0.6.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libwebp/0.6.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libwmf=0.2.8.4-17`
 
@@ -4112,21 +4105,13 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed6/copyright`, `/usr/share/doc/
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nettle=3.7.2-3
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.7.2-3.dsc' nettle_3.7.2-3.dsc 2274 SHA256:fe98e5b915f8db8f1ade4c584550e07aa66013d3ad2a0012baad021b5bef284f
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.7.2.orig.tar.gz' nettle_3.7.2.orig.tar.gz 2382309 SHA256:8d2a604ef1cde4cd5fb77e422531ea25ad064679ff0adf956e78b3352e0ef162
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.7.2.orig.tar.gz.asc' nettle_3.7.2.orig.tar.gz.asc 573 SHA256:6183e94ac98dbd68ed25af0c54b7d76ebf2f0c80b415f8fffc7bb416aafa6ff2
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.7.2-3.debian.tar.xz' nettle_3.7.2-3.debian.tar.xz 21876 SHA256:afaa3a2f43de7e1317cad111d5bb3095ac4dbd855e044afbd93f00a5a99c607d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nettle/3.7.2-3/
 
-- https://sources.debian.net/src/nettle/3.7.2-3/ (for browsing the source)
-- https://sources.debian.net/src/nettle/3.7.2-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nettle/3.7.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nghttp2=1.43.0-1`
 

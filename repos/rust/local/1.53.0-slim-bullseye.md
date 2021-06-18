@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:eee14af37dec0f364e5e81030eeb9c0a9ab057ef542e75870a02037eb7a48513`
-- Created: `2021-05-12T19:16:14.800728458Z`
-- Virtual Size: ~ 669.97 Mb  
+- Image ID: `sha256:c5e1beec97c5e1bfad0f377650b2ade39f0abc3449a86dd605da56ebae0ba7a1`
+- Created: `2021-06-17T23:24:47.246619528Z`
+- Virtual Size: ~ 700.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.52.1`
+  - `RUST_VERSION=1.53.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -314,19 +314,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.257
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.257.dsc' cdebconf_0.257.dsc 2750 SHA256:ee295b4389c60c43d69bf56dcceec1f002cbc52e8df8d4dc6e9bb8fef9d20a0d
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.257.tar.xz' cdebconf_0.257.tar.xz 278384 SHA256:86f961c12cbaffeec88f5b15c04c6fda2df4670b0bde793e052b929361867986
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cdebconf/0.257/
 
-- https://sources.debian.net/src/cdebconf/0.257/ (for browsing the source)
-- https://sources.debian.net/src/cdebconf/0.257/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cdebconf/0.257/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `coreutils=8.32-4`
 
@@ -701,11 +695,8 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libc-bin=2.31-11`
-- `libc-dev-bin=2.31-11`
-- `libc6:amd64=2.31-11`
-- `libc6-dev:amd64=2.31-11`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -724,6 +715,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/glibc/2.31-11/ (for browsing the source)
 - https://sources.debian.net/src/glibc/2.31-11/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/glibc/2.31-11/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `glibc=2.31-12`
+
+Binary Packages:
+
+- `libc-dev-bin=2.31-12`
+- `libc6:amd64=2.31-12`
+- `libc6-dev:amd64=2.31-12`
+
+Licenses: (parsed from: `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
+
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.31-12
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-12.dsc' glibc_2.31-12.dsc 8315 SHA256:2c749d8b218f0802edcb6c9850db968815711f627e66f1c925cece12d652f79a
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.31-12.debian.tar.xz' glibc_2.31-12.debian.tar.xz 911388 SHA256:8377ea637b5c0aaa3afc26805ff39aadc1e58ea3cfcd5ced4a2823f16178c7c8
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/glibc/2.31-12/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.31-12/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.31-12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-1`
 
@@ -1456,11 +1475,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=5.10.28-1`
+### `dpkg` source package: `linux=5.10.40-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.10.28-1`
+- `linux-libc-dev:amd64=5.10.40-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1476,17 +1495,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.10.28-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.28-1.dsc' linux_5.10.28-1.dsc 195000 SHA256:a0224873e39e4f2afc04e33b499d59ee55f10994f966a7c0f7d712fcdf47deea
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.28.orig.tar.xz' linux_5.10.28.orig.tar.xz 121507128 SHA256:4f3e9c9c1b2399f5c292ccc59edaa3ab14508efe56a33cc51639fe0e2975a0dc
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.28-1.debian.tar.xz' linux_5.10.28-1.debian.tar.xz 1366692 SHA256:1367a40724054a540c4d9c92f0ea6f73e9e50b2a99e46b59a987be15bdc4c4b7
+$ apt-get source -qq --print-uris linux=5.10.40-1
+'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.40-1.dsc' linux_5.10.40-1.dsc 195000 SHA256:92f68c076b2718f1a46a2b5a319405d4a7a1476f629cf5e634d898e09235b6f0
+'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.40.orig.tar.xz' linux_5.10.40.orig.tar.xz 121558372 SHA256:1dc6e21b266e8a154b55a05f07e85296c0edf74b4ea4a5782417a1c91bd6f7a0
+'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.40-1.debian.tar.xz' linux_5.10.40-1.debian.tar.xz 4181324 SHA256:01f8646065d3f258c575dff2e66f7a7f95b93ac08a889302279945998f07dd56
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/5.10.28-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.10.28-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.10.28-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/5.10.40-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/5.10.40-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/5.10.40-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
