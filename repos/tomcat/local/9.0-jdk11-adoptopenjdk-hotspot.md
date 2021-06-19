@@ -1,10 +1,10 @@
-# `tomcat:9.0.46-jdk11-adoptopenjdk-hotspot`
+# `tomcat:9.0.48-jdk11-adoptopenjdk-hotspot`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9b17728ec013cc2d6f3313f9c031880960673d916e2076c991064d57e1e18f7a`
-- Created: `2021-05-13T18:40:31.712025115Z`
-- Virtual Size: ~ 457.63 Mb  
+- Image ID: `sha256:b49c4e3c0858640ba91fff789f2c29ec874f0f25843972228b0535b194d39708`
+- Created: `2021-06-17T00:35:42.521489388Z`
+- Virtual Size: ~ 462.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -18,10 +18,10 @@
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
-  - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
+  - `GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.46`
-  - `TOMCAT_SHA512=4a82ed571d4060ae7cd6730718d7b54a3fa7eaaf7c8bb0e3e8abbff92d76856db52f3a87c5b5ee4e8452483bb3b31a5de55e192a18ea4229305780503ed63951`
+  - `TOMCAT_VERSION=9.0.48`
+  - `TOMCAT_SHA512=9fcde76bc192c5b02b467c7fc01727ec7c72acfc207741b03a582c67565218dd9b6ea9b9cf007b5964e7794f271433f66e3452b33352b9b657cd7e2bfff08f02`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1357,15 +1357,9 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed5/copyright`, `/usr/share/doc/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nettle=3.5.1+really3.5.1-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.5.1+really3.5.1-2ubuntu0.1.dsc' nettle_3.5.1+really3.5.1-2ubuntu0.1.dsc 2490 SHA512:0b14d05186f6ebf151823a29d85b57a2defc5379b6bd0531750fc67babb3e09e8bcffc3f76aff215d9cfe9e2cdb43db75d1eb26f1ab9ad8f6860014dfdb7202a
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.5.1+really3.5.1.orig.tar.gz' nettle_3.5.1+really3.5.1.orig.tar.gz 1989593 SHA512:f738121b9091cbe79435fb5d46b45cf6f10912320c233829356908127bab1cac6946ca56e022a832380c44f2c10f21d2feef64cb0f4f41e3da4a681dc0131784
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.5.1+really3.5.1.orig.tar.gz.asc' nettle_3.5.1+really3.5.1.orig.tar.gz.asc 573 SHA512:d8921622f2165fb4a05e7e75f75d82c0eabb816f265bae3f3267def20d81386b1da1a29ebfc52bbe26875b94b2050dd5493119d0efcb5143bc21e2f69b8449dd
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.5.1+really3.5.1-2ubuntu0.1.debian.tar.xz' nettle_3.5.1+really3.5.1-2ubuntu0.1.debian.tar.xz 24048 SHA512:6cf14c87f41916f1d0f6c85fde808dfe4c55c8f89f98e01b905149592c65f7d5d632a61991f2eb685e30e4d3301c6a22f7cb7f436687d92e2cfe4ff38a7889e2
-```
 
 ### `dpkg` source package: `nghttp2=1.40.0-1build1`
 
@@ -1416,7 +1410,6 @@ $ apt-get source -qq --print-uris openldap=2.4.49+dfsg-2ubuntu1.7
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1f-1ubuntu2.3`
 - `openssl=1.1.1f-1ubuntu2.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -1431,6 +1424,26 @@ $ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.3
 'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
 'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz.asc' openssl_1.1.1f.orig.tar.gz.asc 488 SHA512:63b01ffc23b2fec2cfc147d382b486a136e5610e181be94aa333022803a442ded37e8276fefb62b3176b571b94a1d2243c05b86b52ad7784fe0068d1ad948562
 'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.3.debian.tar.xz' openssl_1.1.1f-1ubuntu2.3.debian.tar.xz 151740 SHA512:7613fdfc982aac8efa7504a5d02abbe68659170a42f8d74f18560166eeb98b694b72998863669db3f5a173b44875a03acff5a20791a85d7077d4610b22d6bf0b
+```
+
+### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.4`
+
+Binary Packages:
+
+- `libssl1.1:amd64=1.1.1f-1ubuntu2.4`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.4.dsc' openssl_1.1.1f-1ubuntu2.4.dsc 2713 SHA512:850f1f2fa01d3176558752eb98ec0feaf7d30bf3e477ca59eee0de650717e18abfc68b343966b419f534af5af25330aa4976d054eeca3511aebd04603282b2bd
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz.asc' openssl_1.1.1f.orig.tar.gz.asc 488 SHA512:63b01ffc23b2fec2cfc147d382b486a136e5610e181be94aa333022803a442ded37e8276fefb62b3176b571b94a1d2243c05b86b52ad7784fe0068d1ad948562
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.4.debian.tar.xz' openssl_1.1.1f-1ubuntu2.4.debian.tar.xz 154416 SHA512:39c5d4670990fd06de63eaabeea6f4ca3526487961c75b2cab02d0e0675fb71674b156997cb4841e9c5bb0a5f5304d9b5b03b04457d78f21cb664e25cac36291
 ```
 
 ### `dpkg` source package: `p11-kit=0.23.20-1ubuntu0.1`
@@ -1574,14 +1587,9 @@ Licenses: (parsed from: `/usr/share/doc/libprocps8/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:3.3.16-1ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16-1ubuntu2.1.dsc' procps_3.3.16-1ubuntu2.1.dsc 2242 SHA512:2e1deabf2341a2df75571712153dcea1d3c8fd676ff78714be3878e6aec5acd538624b66f68678a7b9018d15f763a8612b1d3ea7aeeeb26971fe109db2a0eb5e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16.orig.tar.xz' procps_3.3.16.orig.tar.xz 621892 SHA512:38db4f72fe40c2f027b23b18bbc8c29cfcdf6bcdb029199fe4bebede153943aa884157f56e792c399f9a4949cc514687500bb99a75a5e7ad7b9e878f52090304
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16-1ubuntu2.1.debian.tar.xz' procps_3.3.16-1ubuntu2.1.debian.tar.xz 33700 SHA512:cc2c5a5278571784ec66f72948b88f06983ec3a53f7d7314492023ef166ff4c31c914faea849dfdb8a0786c65027773ec538eec06018ae750b7039876bdf9e9a
-```
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-2build1`
 
