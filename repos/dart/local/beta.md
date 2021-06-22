@@ -1,10 +1,10 @@
-# `dart:2.13.3-sdk`
+# `dart:2.14.0-188.3.beta-sdk`
 
 ## Docker Metadata
 
-- Image ID: `sha256:350ad2a269716022bd723090b1857ea77119f38c3e0f8d3d9abe60427e1cf0f3`
-- Created: `2021-06-10T18:21:44.33857658Z`
-- Virtual Size: ~ 707.56 Mb  
+- Image ID: `sha256:74580fef0f029b8bc2b53c056d0f25d0a7950e7caa05548a81e666336ac0c718`
+- Created: `2021-06-18T18:20:54.181043103Z`
+- Virtual Size: ~ 778.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -160,19 +160,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=10.3+deb10u9
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_10.3+deb10u9.dsc' base-files_10.3+deb10u9.dsc 1103 SHA256:9b365291e8da86412c97d3dee80e2570287d21dc105d916137334e36415918cf
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_10.3+deb10u9.tar.xz' base-files_10.3+deb10u9.tar.xz 65484 SHA256:8527cedc376063fb5fa8f58b0f1444e2d72453b0c885c686b85857c13b592a93
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/10.3+deb10u9/
 
-- https://sources.debian.net/src/base-files/10.3+deb10u9/ (for browsing the source)
-- https://sources.debian.net/src/base-files/10.3+deb10u9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/10.3+deb10u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.5.46`
 
@@ -250,9 +244,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris bind9=1:9.11.5.P4+dfsg-5.1+deb10u5
-'http://security.debian.org/debian-security/pool/updates/main/b/bind9/bind9_9.11.5.P4+dfsg-5.1+deb10u5.dsc' bind9_9.11.5.P4+dfsg-5.1+deb10u5.dsc 4096 SHA256:43b9cb0f37672cd98c8f4c1dcba9c12241b751585ccf4081995afce57accefd3
-'http://security.debian.org/debian-security/pool/updates/main/b/bind9/bind9_9.11.5.P4+dfsg.orig.tar.xz' bind9_9.11.5.P4+dfsg.orig.tar.xz 3956484 SHA256:34b20e4e17875d5c4280d52264bae08f527e38eb6bcfca431432b0cafcd03c6d
-'http://security.debian.org/debian-security/pool/updates/main/b/bind9/bind9_9.11.5.P4+dfsg-5.1+deb10u5.debian.tar.xz' bind9_9.11.5.P4+dfsg-5.1+deb10u5.debian.tar.xz 117984 SHA256:ef6884866b35afb5656a46e8e345b14a45b66926895f7c6c255df6c55242b01e
+'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.11.5.P4+dfsg-5.1+deb10u5.dsc' bind9_9.11.5.P4+dfsg-5.1+deb10u5.dsc 4096 SHA256:43b9cb0f37672cd98c8f4c1dcba9c12241b751585ccf4081995afce57accefd3
+'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.11.5.P4+dfsg.orig.tar.xz' bind9_9.11.5.P4+dfsg.orig.tar.xz 3956484 SHA256:34b20e4e17875d5c4280d52264bae08f527e38eb6bcfca431432b0cafcd03c6d
+'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.11.5.P4+dfsg-5.1+deb10u5.debian.tar.xz' bind9_9.11.5.P4+dfsg-5.1+deb10u5.debian.tar.xz 117984 SHA256:ef6884866b35afb5656a46e8e345b14a45b66926895f7c6c255df6c55242b01e
 ```
 
 Other potentially useful URLs:
@@ -383,9 +377,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris curl=7.64.0-4+deb10u2
-'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.64.0-4+deb10u2.dsc' curl_7.64.0-4+deb10u2.dsc 2719 SHA256:3cc585f4c22c0c001527f5f26f5a6154a86d1df9752aa118bf7d8e892ec4fac2
-'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.64.0.orig.tar.gz' curl_7.64.0.orig.tar.gz 4032645 SHA256:cb90d2eb74d4e358c1ed1489f8e3af96b50ea4374ad71f143fa4595e998d81b5
-'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.64.0-4+deb10u2.debian.tar.xz' curl_7.64.0-4+deb10u2.debian.tar.xz 43572 SHA256:6b7f793e0cd41e2ccb49301ad4e58c83282f46be7c9415c9280164834efd0e52
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.64.0-4+deb10u2.dsc' curl_7.64.0-4+deb10u2.dsc 2719 SHA256:3cc585f4c22c0c001527f5f26f5a6154a86d1df9752aa118bf7d8e892ec4fac2
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.64.0.orig.tar.gz' curl_7.64.0.orig.tar.gz 4032645 SHA256:cb90d2eb74d4e358c1ed1489f8e3af96b50ea4374ad71f143fa4595e998d81b5
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.64.0-4+deb10u2.debian.tar.xz' curl_7.64.0-4+deb10u2.debian.tar.xz 43572 SHA256:6b7f793e0cd41e2ccb49301ad4e58c83282f46be7c9415c9280164834efd0e52
 ```
 
 Other potentially useful URLs:
@@ -950,21 +944,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.6.7-4+deb10u6
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7-4+deb10u6.dsc' gnutls28_3.6.7-4+deb10u6.dsc 3354 SHA256:206f6f03abd5d6c83ddb6a454af7e96dcdee14156f877e6b311ceed9e2a2115e
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz' gnutls28_3.6.7.orig.tar.xz 8153728 SHA256:5b3409ad5aaf239808730d1ee12fdcd148c0be00262c7edf157af655a8a188e2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7.orig.tar.xz.asc' gnutls28_3.6.7.orig.tar.xz.asc 534 SHA256:a14d0a7b9295b65ae797a70f8e765024a2e363dca03d008bfce0aec2b3f292b0
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.6.7-4+deb10u6.debian.tar.xz' gnutls28_3.6.7-4+deb10u6.debian.tar.xz 90436 SHA256:6158e0ebb12a23ca44ce90d8e677af355d04bdf66d97ca1d5a59049c1b455b3c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.6.7-4+deb10u6/
 
-- https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u6/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.6.7-4+deb10u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.6.7-4+deb10u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.3-1`
 
@@ -1667,20 +1653,13 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-7+deb10u1
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-7+deb10u1.dsc' libxml2_2.9.4+dfsg1-7+deb10u1.dsc 3008 SHA256:07f3101267382dec2b478f09573dd78e14dae960a95a404fdde74a5240158e19
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-7+deb10u1.debian.tar.xz' libxml2_2.9.4+dfsg1-7+deb10u1.debian.tar.xz 38280 SHA256:f94491b42a58f875c0c08f53c2facb48bfd94e8b66181e1ac7e29b8e965cc9ba
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.9.4+dfsg1-7+deb10u1/
 
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-7+deb10u1/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-7+deb10u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.4+dfsg1-7+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libzstd=1.3.8+dfsg-3+deb10u2`
 
@@ -1752,9 +1731,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris lz4=1.8.3-1
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.8.3-1.dsc' lz4_1.8.3-1.dsc 1932 SHA256:fed178383bc99451256cedf0d39731d106f70103125c043e4ef7112a642190b5
+'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.8.3-1+deb10u1.dsc' lz4_1.8.3-1+deb10u1.dsc 2119 SHA256:22a32d93f1e1525efd33e80b8c8ffb9ad74b5baf441aa3534e875523d9b5eb93
 'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.8.3.orig.tar.gz' lz4_1.8.3.orig.tar.gz 327897 SHA256:33af5936ac06536805f9745e0b6d61da606a1f8b4cc5c04dd3cbaca3b9b4fc43
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.8.3-1.debian.tar.xz' lz4_1.8.3-1.debian.tar.xz 11336 SHA256:e98f02ec04236c616ea003d0a0e50818b2a959436fcd833ba1bcfc14664ab156
+'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.8.3-1+deb10u1.debian.tar.xz' lz4_1.8.3-1+deb10u1.debian.tar.xz 12068 SHA256:6d9896c90c93f312af743b2c6ea1b62ba8defe8696acf7a009bed03b012db60a
 ```
 
 Other potentially useful URLs:
@@ -1959,10 +1938,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssl=1.1.1d-0+deb10u6
-'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1d-0+deb10u6.dsc' openssl_1.1.1d-0+deb10u6.dsc 2472 SHA256:c9e0fa4cb288ceaa8718d1de3b980a5d65f5302eed866de53aff0922707d96e4
-'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1d.orig.tar.gz' openssl_1.1.1d.orig.tar.gz 8845861 SHA256:1e3a91bc1f9dfce01af26026f856e064eab4c8ee0a8f457b5ae30b40b8b711f2
-'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1d.orig.tar.gz.asc' openssl_1.1.1d.orig.tar.gz.asc 488 SHA256:f3fd3299a79421fffd51d35f62636b8e987dab1d3033d93a19d7685868e15395
-'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1d-0+deb10u6.debian.tar.xz' openssl_1.1.1d-0+deb10u6.debian.tar.xz 99740 SHA256:617063d8e99e888198f9aeae9cfc363b5799c4712881a8e525a6339b921580ff
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1d-0+deb10u6.dsc' openssl_1.1.1d-0+deb10u6.dsc 2472 SHA256:c9e0fa4cb288ceaa8718d1de3b980a5d65f5302eed866de53aff0922707d96e4
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1d.orig.tar.gz' openssl_1.1.1d.orig.tar.gz 8845861 SHA256:1e3a91bc1f9dfce01af26026f856e064eab4c8ee0a8f457b5ae30b40b8b711f2
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1d.orig.tar.gz.asc' openssl_1.1.1d.orig.tar.gz.asc 488 SHA256:f3fd3299a79421fffd51d35f62636b8e987dab1d3033d93a19d7685868e15395
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1d-0+deb10u6.debian.tar.xz' openssl_1.1.1d-0+deb10u6.debian.tar.xz 99740 SHA256:617063d8e99e888198f9aeae9cfc363b5799c4712881a8e525a6339b921580ff
 ```
 
 Other potentially useful URLs:
