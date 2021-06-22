@@ -2026,9 +2026,14 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-6.1ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-6.1ubuntu1.4.dsc' libxml2_2.9.4+dfsg1-6.1ubuntu1.4.dsc 2993 SHA512:b50073494274db84f8e19140ffa2b3e63c15086cb56cd83816e41b0015222b50ad44cb73f1e619c22e9302dab7b6ca81b9cea902f6e1219041fe5d720289833a
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA512:c921697db38b530b1a088636cb31226bbe9df8c9e9c83316ce53770f9bd2faeef360d5f526f34e00cd778150c408e8d91b99a67a5f5030a8b279961ff9299ae5
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-6.1ubuntu1.4.debian.tar.xz' libxml2_2.9.4+dfsg1-6.1ubuntu1.4.debian.tar.xz 42172 SHA512:872f047112ccde33b3fed2aa89c9c4c0c7785cb0e1030de94b112bbf46b9dc9af7f82444885c903d834ce6d2b18e1671f4eb4c47dcf8a75541e0f0807f49aa96
+```
 
 ### `dpkg` source package: `libyaml=0.1.7-2ubuntu3`
 
@@ -2412,15 +2417,9 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed4/copyright`, `/usr/share/doc/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nettle=3.4-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.4-1ubuntu0.1.dsc' nettle_3.4-1ubuntu0.1.dsc 2353 SHA512:b005f3128cf0d678148e4e4586d8656368ce600c98734b08ea41b450bd549a6666f9fb619699d594f36889903c595a45a15c25a119375de6be36a7c29225b61c
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.4.orig.tar.gz' nettle_3.4.orig.tar.gz 1935069 SHA512:3bea3aabd2c99cc42d084a94fd6b0b5dbdb24cd6c7020271a6ee87a81a904b21b21756f590cb1afdf2e85fd1cb59e5c3651c5c4032e30204e7ea6f8801d1ea3b
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.4.orig.tar.gz.asc' nettle_3.4.orig.tar.gz.asc 1238 SHA512:0c3f4d1732bbd07447496ed1de66b33d0ea7e1b3ece9725a67bf9d2fa2ad5ce53eb3894bdc5366b184dd03fb9aafb401e38c140d44e7af1f6aeabcfa98be8b83
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.4-1ubuntu0.1.debian.tar.xz' nettle_3.4-1ubuntu0.1.debian.tar.xz 23832 SHA512:69ebe5af89b53a1f12c638f9b87ceac4bf5b4a617f1da16780dbc2b907e06e2d188509126e566faf89c4359f7e6198208b83ba0dd0a5fb234252133df40cd23b
-```
 
 ### `dpkg` source package: `nghttp2=1.30.0-1ubuntu1`
 

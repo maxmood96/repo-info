@@ -7197,14 +7197,9 @@ Licenses: (parsed from: `/usr/share/doc/libprocps8/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:3.3.16-1ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16-1ubuntu2.1.dsc' procps_3.3.16-1ubuntu2.1.dsc 2242 SHA512:2e1deabf2341a2df75571712153dcea1d3c8fd676ff78714be3878e6aec5acd538624b66f68678a7b9018d15f763a8612b1d3ea7aeeeb26971fe109db2a0eb5e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16.orig.tar.xz' procps_3.3.16.orig.tar.xz 621892 SHA512:38db4f72fe40c2f027b23b18bbc8c29cfcdf6bcdb029199fe4bebede153943aa884157f56e792c399f9a4949cc514687500bb99a75a5e7ad7b9e878f52090304
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16-1ubuntu2.1.debian.tar.xz' procps_3.3.16-1ubuntu2.1.debian.tar.xz 33700 SHA512:cc2c5a5278571784ec66f72948b88f06983ec3a53f7d7314492023ef166ff4c31c914faea849dfdb8a0786c65027773ec538eec06018ae750b7039876bdf9e9a
-```
 
 ### `dpkg` source package: `proj=6.3.1-1`
 

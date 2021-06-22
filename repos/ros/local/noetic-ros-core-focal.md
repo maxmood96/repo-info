@@ -1730,9 +1730,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libxml2=2.9.10+dfsg-5ubuntu0.20.04.1
-'http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10+dfsg-5ubuntu0.20.04.1.dsc' libxml2_2.9.10+dfsg-5ubuntu0.20.04.1.dsc 2947 SHA512:04713d4977b666662b0461ebe0ad53316dfc03d28410b51ff80996de9d12d30f70048d5eb21ae7f4b2d63c221637eb5e5fdc7a09d333155a0a5cfc4adf05cedd
-'http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10+dfsg.orig.tar.xz' libxml2_2.9.10+dfsg.orig.tar.xz 2503560 SHA512:605c6c0f8bf2c53208d0a036ff09a4025843f45139b711c90dc83066feda2f285a5578d55d4a58d33eedbe7485a5c1ec5608ba6c6beed1fb55649f87dca0cec3
-'http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10+dfsg-5ubuntu0.20.04.1.debian.tar.xz' libxml2_2.9.10+dfsg-5ubuntu0.20.04.1.debian.tar.xz 31560 SHA512:88f21cdf4a3dc22d9a37204ddd7953eb1b30609530ac784317018be8b0cccb8c1388a3b44794d399d3f04c0c297d1cdab593725a29ece2cbec252cfb2f01a258
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10+dfsg-5ubuntu0.20.04.1.dsc' libxml2_2.9.10+dfsg-5ubuntu0.20.04.1.dsc 2947 SHA512:04713d4977b666662b0461ebe0ad53316dfc03d28410b51ff80996de9d12d30f70048d5eb21ae7f4b2d63c221637eb5e5fdc7a09d333155a0a5cfc4adf05cedd
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10+dfsg.orig.tar.xz' libxml2_2.9.10+dfsg.orig.tar.xz 2503560 SHA512:605c6c0f8bf2c53208d0a036ff09a4025843f45139b711c90dc83066feda2f285a5578d55d4a58d33eedbe7485a5c1ec5608ba6c6beed1fb55649f87dca0cec3
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10+dfsg-5ubuntu0.20.04.1.debian.tar.xz' libxml2_2.9.10+dfsg-5ubuntu0.20.04.1.debian.tar.xz 31560 SHA512:88f21cdf4a3dc22d9a37204ddd7953eb1b30609530ac784317018be8b0cccb8c1388a3b44794d399d3f04c0c297d1cdab593725a29ece2cbec252cfb2f01a258
 ```
 
 ### `dpkg` source package: `libyaml=0.2.2-1`
@@ -2446,14 +2446,9 @@ Licenses: (parsed from: `/usr/share/doc/libprocps8/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:3.3.16-1ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16-1ubuntu2.1.dsc' procps_3.3.16-1ubuntu2.1.dsc 2242 SHA512:2e1deabf2341a2df75571712153dcea1d3c8fd676ff78714be3878e6aec5acd538624b66f68678a7b9018d15f763a8612b1d3ea7aeeeb26971fe109db2a0eb5e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16.orig.tar.xz' procps_3.3.16.orig.tar.xz 621892 SHA512:38db4f72fe40c2f027b23b18bbc8c29cfcdf6bcdb029199fe4bebede153943aa884157f56e792c399f9a4949cc514687500bb99a75a5e7ad7b9e878f52090304
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16-1ubuntu2.1.debian.tar.xz' procps_3.3.16-1ubuntu2.1.debian.tar.xz 33700 SHA512:cc2c5a5278571784ec66f72948b88f06983ec3a53f7d7314492023ef166ff4c31c914faea849dfdb8a0786c65027773ec538eec06018ae750b7039876bdf9e9a
-```
 
 ### `dpkg` source package: `pycryptodome=3.6.1-2build4`
 
