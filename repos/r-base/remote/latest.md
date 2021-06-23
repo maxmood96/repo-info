@@ -1,7 +1,7 @@
 ## `r-base:latest`
 
 ```console
-$ docker pull r-base@sha256:df920a0d5cdb42e54efc7d178cf3c986e97a7cb42c05050d2dc475c9b566e302
+$ docker pull r-base@sha256:54779590ef315e82ee5a01553761d0790074d2835c20a9a1a614b1703fd7226f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -86,73 +86,73 @@ CMD ["R"]
 ### `r-base:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull r-base@sha256:6de4e8b31c4c4a6f59177aeacef5e33a37e6491d0c24fe567cc9237d944bb669
+$ docker pull r-base@sha256:c4ed93854f686fb0ec2f21e5ba793a6e53a9d95b184bb582701c434104ce91ae
 ```
 
 -	Docker Version: 19.03.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **312.3 MB (312317040 bytes)**  
+-	Total Size: **312.3 MB (312346537 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5bce98254e20427df9493acb8555671b1f1a1236ad2de60b0f2ba6c11f196a08`
+-	Image ID: `sha256:b2716b67370d2f8a47922f4975a47fcc555945ba7b0f9bb8ecfc8ba96544b0b5`
 -	Default Command: `["R"]`
 
 ```dockerfile
-# Wed, 12 May 2021 00:57:19 GMT
-ADD file:8547dbbcd16e89317ea6ca0f6e95003b629d9e8cb415ce91c855fb55a99caaa1 in / 
-# Wed, 12 May 2021 00:57:22 GMT
+# Tue, 22 Jun 2021 23:51:21 GMT
+ADD file:8b33a86eaea1ccad9ad34b736951d7b1fc6ad3dfe7fb2a6b433c966b551ec8f8 in / 
+# Tue, 22 Jun 2021 23:51:22 GMT
 CMD ["bash"]
-# Tue, 18 May 2021 22:45:47 GMT
+# Wed, 23 Jun 2021 12:31:08 GMT
 LABEL org.opencontainers.image.licenses=GPL-2.0-or-later org.opencontainers.image.source=https://github.com/rocker-org/rocker org.opencontainers.image.vendor=Rocker Project org.opencontainers.image.authors=Dirk Eddelbuettel <edd@debian.org>
-# Tue, 18 May 2021 22:45:51 GMT
+# Wed, 23 Jun 2021 12:31:09 GMT
 RUN useradd docker 	&& mkdir /home/docker 	&& chown docker:docker /home/docker 	&& addgroup docker staff
-# Tue, 18 May 2021 22:46:12 GMT
+# Wed, 23 Jun 2021 12:31:19 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends 		ed 		less 		locales 		vim-tiny 		wget 		ca-certificates 		fonts-texgyre 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 18 May 2021 22:46:18 GMT
+# Wed, 23 Jun 2021 12:31:22 GMT
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen 	&& locale-gen en_US.utf8 	&& /usr/sbin/update-locale LANG=en_US.UTF-8
-# Tue, 18 May 2021 22:46:20 GMT
+# Wed, 23 Jun 2021 12:31:22 GMT
 ENV LC_ALL=en_US.UTF-8
-# Tue, 18 May 2021 22:46:21 GMT
+# Wed, 23 Jun 2021 12:31:22 GMT
 ENV LANG=en_US.UTF-8
-# Tue, 18 May 2021 22:46:23 GMT
+# Wed, 23 Jun 2021 12:31:23 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default         && echo 'APT::Install-Recommends "false";' > /etc/apt/apt.conf.d/90local-no-recommends
-# Tue, 18 May 2021 22:46:24 GMT
+# Wed, 23 Jun 2021 12:31:23 GMT
 ENV R_BASE_VERSION=4.1.0
-# Tue, 18 May 2021 22:46:26 GMT
+# Wed, 23 Jun 2021 12:31:24 GMT
 RUN echo "deb http://deb.debian.org/debian experimental main" > /etc/apt/sources.list.d/experimental.list     && echo "deb [trusted=yes] https://eddelbuettel.github.io/ppaR400 ./" > /etc/apt/sources.list.d/edd-r4.list
-# Tue, 18 May 2021 22:48:01 GMT
+# Wed, 23 Jun 2021 12:32:17 GMT
 RUN apt-get update         && apt-get install -y --no-install-recommends                 libopenblas0-pthread 		littler                 r-cran-littler 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-*                 r-base-core=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-* 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installDeps.r /usr/local/bin/installDeps.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& install.r docopt 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 18 May 2021 22:48:07 GMT
+# Wed, 23 Jun 2021 12:32:19 GMT
 CMD ["R"]
 ```
 
 -	Layers:
-	-	`sha256:721093678769ac87e8bcbcebe8c3b3e98eb8866bb1fb2613606a100b0dd99fd6`  
-		Last Modified: Wed, 12 May 2021 01:05:06 GMT  
-		Size: 53.6 MB (53582627 bytes)  
+	-	`sha256:ebccb1b0cca36e353580d8c119fa9002e5804d4069c1f1c0f2fd0e41fc820a79`  
+		Last Modified: Tue, 22 Jun 2021 23:58:47 GMT  
+		Size: 53.6 MB (53581906 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:452440f500c95da3d3ce8ae5c240cb319a3c4cd6e572055e0038c68b2591696e`  
-		Last Modified: Tue, 18 May 2021 22:48:29 GMT  
-		Size: 1.9 KB (1889 bytes)  
+	-	`sha256:5b4a1d2316257aff6fb13df61bf9aa39ad48d27c1d23208a466d3d148b962303`  
+		Last Modified: Wed, 23 Jun 2021 12:32:44 GMT  
+		Size: 1.9 KB (1877 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f34797b1bdf5e2248dd61dfe00e4c1f8f822b7bfd1ea9c0cf0edc84a52e8a72`  
-		Last Modified: Tue, 18 May 2021 22:48:31 GMT  
-		Size: 25.6 MB (25629258 bytes)  
+	-	`sha256:fc0a6eed952e2d30fb0ba9fae1c7d53aa883a6fddaf2a0f957aa33b03acfb2e9`  
+		Last Modified: Wed, 23 Jun 2021 12:32:45 GMT  
+		Size: 25.6 MB (25631135 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1ef92220bd2907a6f0ebbf1329976cd0f079414b858b3bac7865d1273a34c50`  
-		Last Modified: Tue, 18 May 2021 22:48:28 GMT  
+	-	`sha256:b302a3135f6e267164a011340d9077b4296f42b4ca0023b2b2240ac8beef0951`  
+		Last Modified: Wed, 23 Jun 2021 12:32:42 GMT  
 		Size: 864.6 KB (864590 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffd52c8b8e8df9e398a0088364f15750f6b5c51fc4e61c901b5118a28edfaf3e`  
-		Last Modified: Tue, 18 May 2021 22:48:26 GMT  
+	-	`sha256:ee6f6dbf87d40d9df6830802a40c398b040c0c7a8db380e69d445a03a8e5de4f`  
+		Last Modified: Wed, 23 Jun 2021 12:32:41 GMT  
 		Size: 351.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39f0e865dbb243d1f52586a2ab7ca2ae8cbd6af400107ce71d4e38995d7d1dc8`  
-		Last Modified: Tue, 18 May 2021 22:48:26 GMT  
-		Size: 293.0 B  
+	-	`sha256:6b346c36dc5a9b2d3798c908273d5fe1fd689c0fe5034f9091d50cc985ed2be6`  
+		Last Modified: Wed, 23 Jun 2021 12:32:42 GMT  
+		Size: 295.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c1e907c3d3bd971d0d9c18ef256ab7980db5a37c6348301e1807236e890237c`  
-		Last Modified: Tue, 18 May 2021 22:49:11 GMT  
-		Size: 232.2 MB (232238032 bytes)  
+	-	`sha256:c512b6cddc2ef85c46b75d59e8f850911146ecd2e3faf2955e182d162d819c44`  
+		Last Modified: Wed, 23 Jun 2021 12:33:13 GMT  
+		Size: 232.3 MB (232266383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `r-base:latest` - linux; ppc64le
