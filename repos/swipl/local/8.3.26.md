@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7c5e44d5aa3d0ee3e068089e45d6ff97fd48c0c27774a8cb07bc7c0626fadc14`
-- Created: `2021-05-12T18:49:39.719022315Z`
-- Virtual Size: ~ 147.66 Mb  
+- Image ID: `sha256:6fcc31d7d258b64365a19e878f3fdf9900ff308c6237eb394292634ef5df614a`
+- Created: `2021-06-23T18:10:25.548888961Z`
+- Virtual Size: ~ 148.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["swipl"]`
@@ -320,11 +320,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.26-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.26-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.52.1-5+deb9u13`
+### `dpkg` source package: `curl=7.52.1-5+deb9u14`
 
 Binary Packages:
 
-- `libcurl3-gnutls:amd64=7.52.1-5+deb9u13`
+- `libcurl3-gnutls:amd64=7.52.1-5+deb9u14`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -335,13 +335,20 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.52.1-5+deb9u14
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u14.dsc' curl_7.52.1-5+deb9u14.dsc 2797 SHA256:eeddbe48282f5ce93ad24d3dd5a431ee294617e104d35ea274b38a0f09c2f568
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
+'http://security.debian.org/debian-security/pool/updates/main/c/curl/curl_7.52.1-5+deb9u14.debian.tar.xz' curl_7.52.1-5+deb9u14.debian.tar.xz 62860 SHA256:1294a6c5f5411b05d4972b97b51b3a72cdc06f250f5d0ccdcf418c5cf3fab615
+```
 
-- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u13/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u14/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.52.1-5+deb9u14/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.52.1-5+deb9u14/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3+deb9u1`
 
@@ -1513,23 +1520,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libunistring/0.9.6+really0.9.3-0.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libunistring/0.9.6+really0.9.3-0.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxml2=2.9.4+dfsg1-2.2+deb9u4`
+### `dpkg` source package: `libxml2=2.9.4+dfsg1-2.2+deb9u5`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.4+dfsg1-2.2+deb9u4`
+- `libxml2:amd64=2.9.4+dfsg1-2.2+deb9u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-2.2+deb9u5
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2+deb9u5.dsc' libxml2_2.9.4+dfsg1-2.2+deb9u5.dsc 3053 SHA256:9c390ac82ea5dd805a6c06c4c67021d19a49c7a50518da1cb4625797153ec190
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
+'http://security.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2+deb9u5.debian.tar.xz' libxml2_2.9.4+dfsg1-2.2+deb9u5.debian.tar.xz 38448 SHA256:f12334100f7ef475009bb64a145816280a9ddf1947dd82d990756937bf840236
+```
 
-- http://snapshot.debian.org/package/libxml2/2.9.4+dfsg1-2.2+deb9u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2+deb9u5/ (for browsing the source)
+- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2+deb9u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxml2/2.9.4+dfsg1-2.2+deb9u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxslt=1.1.29-2.1+deb9u2`
 
@@ -1608,11 +1622,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/lsb/9.20161125/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/lsb/9.20161125/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `lz4=0.0~r131-2`
+### `dpkg` source package: `lz4=0.0~r131-2+deb9u1`
 
 Binary Packages:
 
-- `liblz4-1:amd64=0.0~r131-2+b1`
+- `liblz4-1:amd64=0.0~r131-2+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/liblz4-1/copyright`)
 
@@ -1623,17 +1637,17 @@ Licenses: (parsed from: `/usr/share/doc/liblz4-1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris lz4=0.0~r131-2
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_0.0~r131-2.dsc' lz4_0.0~r131-2.dsc 1973 SHA256:304cf9dddee387377929adf3f2cef0ae19fb2e56b6cc9eab05798845b58bd9b6
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_0.0~r131.orig.tar.gz' lz4_0.0~r131.orig.tar.gz 133784 SHA256:9d4d00614d6b9dec3114b33d1224b6262b99ace24434c53487a0c8fd0b18cfed
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_0.0~r131-2.debian.tar.xz' lz4_0.0~r131-2.debian.tar.xz 4936 SHA256:966df055dd8fa7f292c283452b43a5d2d2047d542fe49e97025006e69525e224
+$ apt-get source -qq --print-uris lz4=0.0~r131-2+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/l/lz4/lz4_0.0~r131-2+deb9u1.dsc' lz4_0.0~r131-2+deb9u1.dsc 2015 SHA256:dd0fe6a29303b74f3269c0c41bbc18df745f039c57c589e9fb7b1b22b6a694bc
+'http://security.debian.org/debian-security/pool/updates/main/l/lz4/lz4_0.0~r131.orig.tar.gz' lz4_0.0~r131.orig.tar.gz 133784 SHA256:9d4d00614d6b9dec3114b33d1224b6262b99ace24434c53487a0c8fd0b18cfed
+'http://security.debian.org/debian-security/pool/updates/main/l/lz4/lz4_0.0~r131-2+deb9u1.debian.tar.xz' lz4_0.0~r131-2+deb9u1.debian.tar.xz 5316 SHA256:cd17d69b2aacc8c7ace3364b8ad1f0e36f7238e9486a60f49f75d8b66e87c006
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/lz4/0.0~r131-2/ (for browsing the source)
-- https://sources.debian.net/src/lz4/0.0~r131-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lz4/0.0~r131-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/lz4/0.0~r131-2+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/lz4/0.0~r131-2+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/lz4/0.0~r131-2+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lzo2=2.08-1.2`
 
@@ -2062,11 +2076,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/perl/5.24.1-3+deb9u7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/perl/5.24.1-3+deb9u7/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-9.6=9.6.20-0+deb9u1`
+### `dpkg` source package: `postgresql-9.6=9.6.22-0+deb9u1`
 
 Binary Packages:
 
-- `libpq5:amd64=9.6.20-0+deb9u1`
+- `libpq5:amd64=9.6.22-0+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -2085,13 +2099,20 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 - `nagaysau-ishii`
 - `rijndael`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris postgresql-9.6=9.6.22-0+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.22-0+deb9u1.dsc' postgresql-9.6_9.6.22-0+deb9u1.dsc 3698 SHA256:c69b4176119c6c0007fd9a03c984c306650c0e4068c5d873112c53e6984e56df
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.22.orig.tar.bz2' postgresql-9.6_9.6.22.orig.tar.bz2 19003741 SHA256:3d32cd101025a0556813397c69feff3df3d63736adb8adeaf365c522f39f2930
+'http://security.debian.org/debian-security/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.22-0+deb9u1.debian.tar.xz' postgresql-9.6_9.6.22-0+deb9u1.debian.tar.xz 31704 SHA256:2ec62b227070c70fadeb47f1ff4309c9fb888960fff182de2cf85057063e24f3
+```
 
-- http://snapshot.debian.org/package/postgresql-9.6/9.6.20-0+deb9u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/postgresql-9.6/9.6.22-0+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-9.6/9.6.22-0+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-9.6/9.6.22-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `psqlodbc=1:09.05.0400-2`
 
