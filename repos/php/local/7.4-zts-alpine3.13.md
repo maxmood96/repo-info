@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ac504eeffb5d094153887a1aed33b45eff97d6c1b73f402b3f2eb169e7317b75`
-- Created: `2021-06-03T22:30:10.119090765Z`
-- Virtual Size: ~ 65.99 Mb  
+- Image ID: `sha256:2bfb78bdf491529036cc9ae884d870134c9686c063a8db8613a790284e6ee165`
+- Created: `2021-06-28T22:50:20.651126709Z`
+- Virtual Size: ~ 66.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -232,16 +232,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.77.0-r0 description:
+libcurl-7.77.0-r1 description:
 The multiprotocol file transfer library
 
-libcurl-7.77.0-r0 webpage:
+libcurl-7.77.0-r1 webpage:
 https://curl.se/
 
-libcurl-7.77.0-r0 installed size:
+libcurl-7.77.0-r1 installed size:
 500 KiB
 
-libcurl-7.77.0-r0 license:
+libcurl-7.77.0-r1 license:
 MIT
 
 ```
@@ -317,16 +317,16 @@ ISC
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.9.10-r6 description:
+libxml2-2.9.10-r7 description:
 XML parsing library, version 2
 
-libxml2-2.9.10-r6 webpage:
+libxml2-2.9.10-r7 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.9.10-r6 installed size:
+libxml2-2.9.10-r7 installed size:
 1196 KiB
 
-libxml2-2.9.10-r6 license:
+libxml2-2.9.10-r7 license:
 MIT
 
 ```
@@ -334,16 +334,16 @@ MIT
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.2-r0 description:
+musl-1.2.2-r1 description:
 the musl c library (libc) implementation
 
-musl-1.2.2-r0 webpage:
+musl-1.2.2-r1 webpage:
 https://musl.libc.org/
 
-musl-1.2.2-r0 installed size:
+musl-1.2.2-r1 installed size:
 608 KiB
 
-musl-1.2.2-r0 license:
+musl-1.2.2-r1 license:
 MIT
 
 ```

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:934bc336da71536f652eab8cde31630878a397e83284f11dc012fda7559f88f2`
-- Created: `2021-06-04T19:14:06.384641155Z`
-- Virtual Size: ~ 84.37 Mb  
+- Image ID: `sha256:b3417cc701253cd70af148cb5b44ffdc3d9f87c0c0e9727506f12f693c929a1a`
+- Created: `2021-06-28T21:34:41.254115745Z`
+- Virtual Size: ~ 84.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -232,16 +232,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.77.0-r0 description:
+libcurl-7.77.0-r1 description:
 The multiprotocol file transfer library
 
-libcurl-7.77.0-r0 webpage:
+libcurl-7.77.0-r1 webpage:
 https://curl.se/
 
-libcurl-7.77.0-r0 installed size:
+libcurl-7.77.0-r1 installed size:
 500 KiB
 
-libcurl-7.77.0-r0 license:
+libcurl-7.77.0-r1 license:
 MIT
 
 ```
@@ -334,16 +334,16 @@ MIT
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.2-r0 description:
+musl-1.2.2-r1 description:
 the musl c library (libc) implementation
 
-musl-1.2.2-r0 webpage:
+musl-1.2.2-r1 webpage:
 https://musl.libc.org/
 
-musl-1.2.2-r0 installed size:
+musl-1.2.2-r1 installed size:
 608 KiB
 
-musl-1.2.2-r0 license:
+musl-1.2.2-r1 license:
 MIT
 
 ```
