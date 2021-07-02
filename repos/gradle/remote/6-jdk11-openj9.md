@@ -1,7 +1,7 @@
 ## `gradle:6-jdk11-openj9`
 
 ```console
-$ docker pull gradle@sha256:342582a8fe6c7bc6853facd8ff68547ef791c545d8448e508f768bd779f3e4a3
+$ docker pull gradle@sha256:7ba0fea82bca2070076d140fa27dd2aadb2b042ee63f0e9e40f5afefbba98517
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,100 +14,86 @@ $ docker pull gradle@sha256:342582a8fe6c7bc6853facd8ff68547ef791c545d8448e508f76
 ### `gradle:6-jdk11-openj9` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:5b4bfe35ce267f29030f03a72257eb80b04eef2b9b02cc5f5b557c299b35aad4
+$ docker pull gradle@sha256:e9ad11ad2be7800c910116281b7fd49a6715b1c53d8fe2aa6187c2d0dd5281fa
 ```
 
--	Docker Version: 19.03.12
+-	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **426.3 MB (426281314 bytes)**  
+-	Total Size: **426.4 MB (426414065 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:15c347367788fc6ab0cd8f806d4ccb399e84f0538a41ffc74f21ad35031d4b33`
+-	Image ID: `sha256:28a58dd4eaaccfc6f127bf464b38fe02dab9d035351b37ed5bb515403f799722`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
-# Fri, 23 Apr 2021 22:21:34 GMT
-ADD file:5c44a80f547b7d68b550b0e64aef898b361666857abf9a5c8f3f8d0567b8e8e4 in / 
-# Fri, 23 Apr 2021 22:21:35 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 23 Apr 2021 22:21:36 GMT
-RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 23 Apr 2021 22:21:37 GMT
-RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 23 Apr 2021 22:21:37 GMT
-CMD ["/bin/bash"]
-# Fri, 23 Apr 2021 23:22:30 GMT
+# Thu, 17 Jun 2021 23:31:29 GMT
+ADD file:920cf788d1ba88f76c97e41e03e4dc2f3005b08d65b5e9da9dd1cbe20a74459b in / 
+# Thu, 17 Jun 2021 23:31:29 GMT
+CMD ["bash"]
+# Fri, 18 Jun 2021 00:28:46 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 23 Apr 2021 23:23:01 GMT
+# Fri, 18 Jun 2021 00:29:23 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 May 2021 18:22:17 GMT
+# Fri, 18 Jun 2021 00:32:42 GMT
 ENV JAVA_VERSION=jdk-11.0.11+9_openj9-0.26.0
-# Mon, 10 May 2021 18:22:29 GMT
+# Fri, 18 Jun 2021 00:32:52 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='691f2b252b5be5e36079177d56ff7b516e3058277f0ba852a16a9a0cd9668224';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.11%2B9_openj9-0.26.0/OpenJDK11U-jdk_ppc64le_linux_openj9_11.0.11_9_openj9-0.26.0.tar.gz';          ;;        s390x)          ESUM='6bc30bfbcf689906e3961ba3fa3c183ba232fbf3ddb3206920e8dcddf5c0aae2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.11%2B9_openj9-0.26.0/OpenJDK11U-jdk_s390x_linux_openj9_11.0.11_9_openj9-0.26.0.tar.gz';          ;;        amd64|x86_64)          ESUM='a605ab06f76533d44ce0828bd96836cc9c0e71ec3df3f8672052ea98dcbcca22';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.11%2B9_openj9-0.26.0/OpenJDK11U-jdk_x64_linux_openj9_11.0.11_9_openj9-0.26.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 10 May 2021 18:22:29 GMT
+# Fri, 18 Jun 2021 00:32:52 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 10 May 2021 18:22:30 GMT
+# Fri, 18 Jun 2021 00:32:53 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Mon, 10 May 2021 18:23:06 GMT
+# Fri, 18 Jun 2021 00:33:28 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Mon, 10 May 2021 18:23:06 GMT
+# Fri, 18 Jun 2021 00:33:29 GMT
 CMD ["jshell"]
-# Mon, 10 May 2021 18:43:11 GMT
+# Fri, 02 Jul 2021 17:35:05 GMT
 CMD ["gradle"]
-# Mon, 10 May 2021 18:43:11 GMT
+# Fri, 02 Jul 2021 17:35:06 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Mon, 10 May 2021 18:43:12 GMT
+# Fri, 02 Jul 2021 17:35:07 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Mon, 10 May 2021 18:43:12 GMT
+# Fri, 02 Jul 2021 17:35:07 GMT
 VOLUME [/home/gradle/.gradle]
-# Mon, 10 May 2021 18:43:12 GMT
+# Fri, 02 Jul 2021 17:35:07 GMT
 WORKDIR /home/gradle
-# Mon, 10 May 2021 18:43:31 GMT
+# Fri, 02 Jul 2021 17:35:25 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 May 2021 18:46:08 GMT
+# Fri, 02 Jul 2021 17:38:04 GMT
 ENV GRADLE_VERSION=6.9
-# Mon, 10 May 2021 18:46:08 GMT
+# Fri, 02 Jul 2021 17:38:04 GMT
 ARG GRADLE_DOWNLOAD_SHA256=765442b8069c6bee2ea70713861c027587591c6b1df2c857a23361512560894e
-# Mon, 10 May 2021 18:46:13 GMT
+# Fri, 02 Jul 2021 17:38:09 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=765442b8069c6bee2ea70713861c027587591c6b1df2c857a23361512560894e
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
 
 -	Layers:
-	-	`sha256:345e3491a907bb7c6f1bdddcf4a94284b8b6ddd77eb7d93f09432b17b20f2bbe`  
-		Last Modified: Fri, 16 Apr 2021 15:20:19 GMT  
-		Size: 28.5 MB (28539626 bytes)  
+	-	`sha256:c549ccf8d472c3bce9ce02e49c62b8f6cbc736ea2b8ba812a1ae9390c69d0b71`  
+		Last Modified: Thu, 17 Jun 2021 23:32:58 GMT  
+		Size: 28.6 MB (28553692 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57671312ef6fdbecf340e5fed0fb0863350cd806c92b1fdd7978adbd02afc5c3`  
-		Last Modified: Fri, 23 Apr 2021 22:23:02 GMT  
-		Size: 851.0 B  
+	-	`sha256:bd7766c75e8fade5c21578ec8566d2929e7238f9ac1dbe88551bf2f147b76c65`  
+		Last Modified: Fri, 18 Jun 2021 00:39:29 GMT  
+		Size: 16.0 MB (16033037 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e9250ddb7d0fa6d13302c7c3e6a0aa40390e42424caed1e5289077ee4054709`  
-		Last Modified: Fri, 23 Apr 2021 22:23:02 GMT  
-		Size: 187.0 B  
+	-	`sha256:3f39e1eee101e2dd5b860d6c6e5777d54bd94c25266df23208a2fff90523ddd8`  
+		Last Modified: Fri, 18 Jun 2021 00:43:35 GMT  
+		Size: 203.0 MB (202968950 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:592ec2d7c1370aca6ef48ee1d20fbb3a4c148db400adc5dc575778c681f5dba0`  
-		Last Modified: Fri, 23 Apr 2021 23:32:39 GMT  
-		Size: 16.0 MB (16034099 bytes)  
+	-	`sha256:13ca1ba5fa7eb250e113ebcd7ee5dcbf4e95a6d2be4dd8ceba5197d2bb526fd3`  
+		Last Modified: Fri, 18 Jun 2021 00:43:19 GMT  
+		Size: 5.1 MB (5078998 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:103c7533e51ebf59132e96ef0cd9c0377cee19ac65f9878047e7ee72b3347019`  
-		Last Modified: Mon, 10 May 2021 18:30:47 GMT  
-		Size: 203.0 MB (202968892 bytes)  
+	-	`sha256:21019c2aa2c0d75e8494fe5f5998c4c183cd3b5fee74aa854c5851d07481fdf5`  
+		Last Modified: Fri, 02 Jul 2021 17:48:05 GMT  
+		Size: 4.4 KB (4358 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85f36ce8aad145550638de8659c593ec5ce5ffaa9cf07844a96f59cea4440bf8`  
-		Last Modified: Mon, 10 May 2021 18:30:33 GMT  
-		Size: 5.0 MB (4973084 bytes)  
+	-	`sha256:d7918e4beded8c0a80cc2c70855a652c5136032c354265ab12d4901a61823289`  
+		Last Modified: Fri, 02 Jul 2021 17:48:17 GMT  
+		Size: 65.6 MB (65625802 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6a90afb1c210bf9c5c96652fceb004b73788b07fda4a59ab92e4b8ca13dd36f`  
-		Last Modified: Mon, 10 May 2021 18:55:30 GMT  
-		Size: 4.4 KB (4364 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5135e5df95bdffc85ee75a7e232a361c4184036044390f472e9968f1009a6a01`  
-		Last Modified: Mon, 10 May 2021 18:55:42 GMT  
-		Size: 65.6 MB (65610968 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7ec09fb9a09d64f533a7db7c8d536be7f0aa6cc84ce9659e9ac6e9ea7caac1e`  
-		Last Modified: Mon, 10 May 2021 19:02:52 GMT  
-		Size: 108.1 MB (108149243 bytes)  
+	-	`sha256:fcbf22b43d250d69e9adcf6669f281e7e09a1ea9034a0dbdd198c3283a114879`  
+		Last Modified: Fri, 02 Jul 2021 17:54:10 GMT  
+		Size: 108.1 MB (108149228 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6-jdk11-openj9` - linux; arm64 variant v8
@@ -311,98 +297,84 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ### `gradle:6-jdk11-openj9` - linux; s390x
 
 ```console
-$ docker pull gradle@sha256:d92c334fb283eb1f45400afe48052fc0643eb23edee3cd342f241425a4b9cf41
+$ docker pull gradle@sha256:288792c4d9784fdd5813945f966e7e3bdc00d840fd5fdebaf315b063d01bbde4
 ```
 
--	Docker Version: 19.03.12
+-	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **422.6 MB (422578097 bytes)**  
+-	Total Size: **422.6 MB (422608255 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a2024ec55fe6a21a9099216b3253a0df6806064002194c1d5559688edbe92f6e`
+-	Image ID: `sha256:0b2bd0a241c749ed0fd15162911046377416863737d7d12ed89e1816fb52623e`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
-# Fri, 23 Apr 2021 21:45:20 GMT
-ADD file:282d950116f923276efabd13c7dc17b942821edb14ffac4b89b9a50bcdf99e17 in / 
-# Fri, 23 Apr 2021 21:45:26 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 23 Apr 2021 21:45:27 GMT
-RUN [ -z "$(apt-get indextargets)" ]
-# Fri, 23 Apr 2021 21:45:29 GMT
-RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 23 Apr 2021 21:45:29 GMT
-CMD ["/bin/bash"]
-# Fri, 23 Apr 2021 22:03:30 GMT
+# Thu, 17 Jun 2021 23:44:00 GMT
+ADD file:737a08bab262cc2abc326912fdb8c8038222b272a5967b25ec6c761539c9d456 in / 
+# Thu, 17 Jun 2021 23:44:02 GMT
+CMD ["bash"]
+# Fri, 18 Jun 2021 00:09:25 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 23 Apr 2021 22:04:03 GMT
+# Fri, 18 Jun 2021 00:09:40 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 May 2021 17:48:06 GMT
+# Fri, 18 Jun 2021 00:14:00 GMT
 ENV JAVA_VERSION=jdk-11.0.11+9_openj9-0.26.0
-# Mon, 10 May 2021 17:48:30 GMT
+# Fri, 18 Jun 2021 00:14:15 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        ppc64el|ppc64le)          ESUM='691f2b252b5be5e36079177d56ff7b516e3058277f0ba852a16a9a0cd9668224';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.11%2B9_openj9-0.26.0/OpenJDK11U-jdk_ppc64le_linux_openj9_11.0.11_9_openj9-0.26.0.tar.gz';          ;;        s390x)          ESUM='6bc30bfbcf689906e3961ba3fa3c183ba232fbf3ddb3206920e8dcddf5c0aae2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.11%2B9_openj9-0.26.0/OpenJDK11U-jdk_s390x_linux_openj9_11.0.11_9_openj9-0.26.0.tar.gz';          ;;        amd64|x86_64)          ESUM='a605ab06f76533d44ce0828bd96836cc9c0e71ec3df3f8672052ea98dcbcca22';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.11%2B9_openj9-0.26.0/OpenJDK11U-jdk_x64_linux_openj9_11.0.11_9_openj9-0.26.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Mon, 10 May 2021 17:48:41 GMT
+# Fri, 18 Jun 2021 00:14:20 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 10 May 2021 17:48:41 GMT
+# Fri, 18 Jun 2021 00:14:20 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Mon, 10 May 2021 17:49:22 GMT
+# Fri, 18 Jun 2021 00:14:54 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Mon, 10 May 2021 17:49:23 GMT
+# Fri, 18 Jun 2021 00:14:54 GMT
 CMD ["jshell"]
-# Mon, 10 May 2021 18:39:10 GMT
+# Fri, 02 Jul 2021 18:19:45 GMT
 CMD ["gradle"]
-# Mon, 10 May 2021 18:39:10 GMT
+# Fri, 02 Jul 2021 18:19:46 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Mon, 10 May 2021 18:39:13 GMT
+# Fri, 02 Jul 2021 18:19:48 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Mon, 10 May 2021 18:39:14 GMT
+# Fri, 02 Jul 2021 18:19:48 GMT
 VOLUME [/home/gradle/.gradle]
-# Mon, 10 May 2021 18:39:15 GMT
+# Fri, 02 Jul 2021 18:19:49 GMT
 WORKDIR /home/gradle
-# Mon, 10 May 2021 18:40:15 GMT
+# Fri, 02 Jul 2021 18:20:36 GMT
 RUN apt-get update     && apt-get install --yes --no-install-recommends         fontconfig         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 May 2021 18:50:03 GMT
+# Fri, 02 Jul 2021 18:29:19 GMT
 ENV GRADLE_VERSION=6.9
-# Mon, 10 May 2021 18:50:03 GMT
+# Fri, 02 Jul 2021 18:29:19 GMT
 ARG GRADLE_DOWNLOAD_SHA256=765442b8069c6bee2ea70713861c027587591c6b1df2c857a23361512560894e
-# Mon, 10 May 2021 18:50:17 GMT
+# Fri, 02 Jul 2021 18:29:31 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=765442b8069c6bee2ea70713861c027587591c6b1df2c857a23361512560894e
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
 
 -	Layers:
-	-	`sha256:de53239ada2db01e7972c3f6eddcf6729f7cf3102be78e0b41363125ce7c2425`  
-		Last Modified: Fri, 23 Apr 2021 21:47:14 GMT  
-		Size: 27.1 MB (27136362 bytes)  
+	-	`sha256:be436b7e641e3737311249dadcc71ad61ba7bc9597248f426c58c8548cff8af0`  
+		Last Modified: Thu, 17 Jun 2021 23:45:32 GMT  
+		Size: 27.1 MB (27140902 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12932016d0f51acb5c5e5ba5b420a369401a7df47a219f24680bbc05ffde7e11`  
-		Last Modified: Fri, 23 Apr 2021 21:47:10 GMT  
-		Size: 840.0 B  
+	-	`sha256:e92cd82b21097d2899d125e539a498d2f79c992bd6ebee596f4d3a3fc26dd7b6`  
+		Last Modified: Fri, 18 Jun 2021 00:20:59 GMT  
+		Size: 15.7 MB (15741691 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46997f76c5876e3274170b667463b3d88475cd696ccbc735d2f63965668673ad`  
-		Last Modified: Fri, 23 Apr 2021 21:47:10 GMT  
-		Size: 186.0 B  
+	-	`sha256:e3777a2e22abb6eb81017d1aed8c84c755d86527ac9e7e365e4b445911693289`  
+		Last Modified: Fri, 18 Jun 2021 00:23:44 GMT  
+		Size: 201.8 MB (201847129 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8bab416938acf6dd045c9fc9097e5768c61b5899b07d110ab3844f447e12b113`  
-		Last Modified: Fri, 23 Apr 2021 22:19:05 GMT  
-		Size: 15.7 MB (15741779 bytes)  
+	-	`sha256:4b50fac38c74ffc80bb40a6036918cacaf05d22de2443a5050b7456bd4357358`  
+		Last Modified: Fri, 18 Jun 2021 00:23:31 GMT  
+		Size: 4.9 MB (4892056 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d23c049007cdc122178a4d4affb8e7f25302bbc3d16931ab59d4e4dfc6c35a76`  
-		Last Modified: Mon, 10 May 2021 18:08:43 GMT  
-		Size: 201.8 MB (201847108 bytes)  
+	-	`sha256:44638edd5409feb6882ddc4f73a8e08e37b798390ff6bd3d5ab4f681fbf97a13`  
+		Last Modified: Fri, 02 Jul 2021 19:25:08 GMT  
+		Size: 4.4 KB (4360 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83d475e3436753f6175e532f720d7453360a378506a3c601ef9e9f7e14fafc5c`  
-		Last Modified: Mon, 10 May 2021 18:08:20 GMT  
-		Size: 4.9 MB (4882372 bytes)  
+	-	`sha256:981751b524c52d8eeed9edc68c8a0dfda147bc548d92189f5d5fe713637a1cfb`  
+		Last Modified: Fri, 02 Jul 2021 19:25:19 GMT  
+		Size: 64.8 MB (64832897 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7de9a1dcd1f9557f80320b9bc7dc1f2ac58c644792ded5840853636e57b51ae`  
-		Last Modified: Mon, 10 May 2021 19:44:10 GMT  
-		Size: 4.4 KB (4361 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d6b279e8a028d60b5283f8b9394b1500729554a4f033926ddf26ac06ba961ef`  
-		Last Modified: Mon, 10 May 2021 19:44:27 GMT  
-		Size: 64.8 MB (64815864 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:264b4b954def91e62cc7b095aa7bf810d68f803fffd18a5ebf978fb005f4db84`  
-		Last Modified: Mon, 10 May 2021 20:18:39 GMT  
-		Size: 108.1 MB (108149225 bytes)  
+	-	`sha256:c61b3901b50f4420454d1fd4c20c93778f90d6c0e79918b0262cebf4d10add5a`  
+		Last Modified: Fri, 02 Jul 2021 19:30:16 GMT  
+		Size: 108.1 MB (108149220 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
