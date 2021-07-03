@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8000b08884e08b9149a543188c534c6ba3a17818e53eed4c9c18a5c0f58f8f85`
-- Created: `2021-06-29T03:54:25.58569512Z`
+- Image ID: `sha256:52b92c6ed3d1fa82c050154cbbf7d1f02b64b8f6879133ec8212fb50ac973519`
+- Created: `2021-07-01T23:44:53.877739742Z`
 - Virtual Size: ~ 501.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -21,10 +21,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.28`
-  - `PHP_URL=https://www.php.net/distributions/php-7.3.28.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.28.tar.xz.asc`
-  - `PHP_SHA256=a2a84dbec8c1eee3f46c5f249eaaa2ecb3f9e7a6f5d0604d2df44ff8d4904dbe`
+  - `PHP_VERSION=7.3.29`
+  - `PHP_URL=https://www.php.net/distributions/php-7.3.29.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.29.tar.xz.asc`
+  - `PHP_SHA256=7db2834511f3d86272dca3daee3f395a5a4afce359b8342aa6edad80e12eb4d0`
   - `TINI_VERSION=v0.19.0`
   - `FRIENDICA_VERSION=2021.06-dev`
   - `FRIENDICA_ADDONS=2021.06-dev`
