@@ -1,10 +1,10 @@
-# `tomcat:9.0.48-jdk8-adoptopenjdk-openj9`
+# `tomcat:9.0.50-jdk8-adoptopenjdk-openj9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d5e2a4a83721b1a7f2e05714b35c7135b991b234af8f198cfaeb36960ffd3be1`
-- Created: `2021-06-22T23:10:26.697477503Z`
-- Virtual Size: ~ 383.70 Mb  
+- Image ID: `sha256:af91c1f04588240b1cc61c61413fde58eac09634762349bd1f665edf6681efc8`
+- Created: `2021-07-02T20:05:03.144920777Z`
+- Virtual Size: ~ 383.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -21,8 +21,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.48`
-  - `TOMCAT_SHA512=9fcde76bc192c5b02b467c7fc01727ec7c72acfc207741b03a582c67565218dd9b6ea9b9cf007b5964e7794f271433f66e3452b33352b9b657cd7e2bfff08f02`
+  - `TOMCAT_VERSION=9.0.50`
+  - `TOMCAT_SHA512=06cd51abbeebba9385f594ed092bd30e510b6314c90c421f4be5d8bec596c6a177785efc2ce27363813f6822af89fc88a2072d7b051960e5387130faf69c447b`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -99,13 +99,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.0.5
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.5.dsc' apt_2.0.5.dsc 2835 SHA512:c5331404643209f8981211bea50746c9209619bf540e7100234eff8f326c7075f6c3110cd39d17ca8df43ef736aeacbd08e763b8858df8951638f351c1507d54
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.5.tar.xz' apt_2.0.5.tar.xz 2173576 SHA512:fa2d42ad98c0cfdf75e6a837eaec73d595005a6ffcd2904cbf6bf6df3a978a5beb62ed7cc67185ba78b41ef0eb0e6f9da9936804f8921b54dbb90b2d94fcfe29
-```
 
 ### `dpkg` source package: `attr=1:2.4.48-5`
 
