@@ -1,10 +1,10 @@
-# `rabbitmq:3.8.18-management`
+# `rabbitmq:3.8.19-management`
 
 ## Docker Metadata
 
-- Image ID: `sha256:415614b8c0718028095acd89add418cf944723ea23c8b163ac5e3f745865e293`
-- Created: `2021-06-29T02:24:20.055731653Z`
-- Virtual Size: ~ 251.91 Mb  
+- Image ID: `sha256:485c275e2364868ba2eb9bd91a7bbe11527502845b498eba82c0d119cc9f413d`
+- Created: `2021-07-06T20:22:38.120177907Z`
+- Virtual Size: ~ 251.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `OTP_VERSION=24.0.3`
   - `OTP_SOURCE_SHA256=64a70fb19da9c94d11f4e756998a2e91d8c8400d7d72960b15ad544af60ebe45`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
-  - `RABBITMQ_VERSION=3.8.18`
+  - `RABBITMQ_VERSION=3.8.19`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
   - `RABBITMQ_HOME=/opt/rabbitmq`
   - `RABBITMQ_LOGS=-`
@@ -1303,14 +1303,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.8.2-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.8.2-0ubuntu2.tar.gz' python3-defaults_3.8.2-0ubuntu2.tar.gz 138226 SHA256:e4969a54306421ebfd195d0c064935db7c53f9f152d8abaae63da33819235e9a
 ```
 
-### `dpkg` source package: `python3.8=3.8.5-1~20.04.3`
+### `dpkg` source package: `python3.8=3.8.10-0ubuntu1~20.04`
 
 Binary Packages:
 
-- `libpython3.8-minimal:amd64=3.8.5-1~20.04.3`
-- `libpython3.8-stdlib:amd64=3.8.5-1~20.04.3`
-- `python3.8=3.8.5-1~20.04.3`
-- `python3.8-minimal=3.8.5-1~20.04.3`
+- `libpython3.8-minimal:amd64=3.8.10-0ubuntu1~20.04`
+- `libpython3.8-stdlib:amd64=3.8.10-0ubuntu1~20.04`
+- `python3.8=3.8.10-0ubuntu1~20.04`
+- `python3.8-minimal=3.8.10-0ubuntu1~20.04`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/share/doc/libpython3.8-stdlib/copyright`, `/usr/share/doc/python3.8/copyright`, `/usr/share/doc/python3.8-minimal/copyright`)
 
@@ -1332,9 +1332,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.8=3.8.10-0ubuntu1~20.04
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1~20.04.dsc' python3.8_3.8.10-0ubuntu1~20.04.dsc 3521 SHA512:be8d21d6cc9b8d5fe8a8df85370cebcc013b2e2deca5c867e6294bcecf3570d8c4aea7b56af6943156423e1e1a44595fd5be54a5a62ac9062b74234db30c430b
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10.orig.tar.xz' python3.8_3.8.10.orig.tar.xz 18433456 SHA512:0be69705483ff9692e12048a96180e586f9d84c8d53066629f7fb2389585eb75c0f3506bb8182936e322508f58b71f4d8c6dfebbab9049b31b49da11d3b98e80
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1~20.04.debian.tar.xz' python3.8_3.8.10-0ubuntu1~20.04.debian.tar.xz 210676 SHA512:2bdb7e1b32badd550abdd3ff1d6728fedf0772f01dface4e0f5da2a9e3456957b7ace47682ed4992cf97d17dc6861d91b7c0e2a5b4eedd90bf31330cd8a1dbe7
+```
 
 ### `dpkg` source package: `readline=8.0-4`
 
