@@ -1,10 +1,10 @@
-# `friendica:2021.04-fpm-alpine`
+# `friendica:2021.07-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e16a443924ac856e953c0561d3558c41ad845eb6feecdd2901edc775ef095330`
-- Created: `2021-07-01T23:44:47.212855227Z`
-- Virtual Size: ~ 234.75 Mb  
+- Image ID: `sha256:2e991a498b2376fd8aff5f2c4859115580ec1e61da953f62293c28edf97064e7`
+- Created: `2021-07-06T18:31:53.505944332Z`
+- Virtual Size: ~ 226.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,8 +22,8 @@
   - `PHP_URL=https://www.php.net/distributions/php-7.3.29.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.29.tar.xz.asc`
   - `PHP_SHA256=7db2834511f3d86272dca3daee3f395a5a4afce359b8342aa6edad80e12eb4d0`
-  - `FRIENDICA_VERSION=2021.04`
-  - `FRIENDICA_ADDONS=2021.04`
+  - `FRIENDICA_VERSION=2021.07`
+  - `FRIENDICA_ADDONS=2021.07`
 
 ## `apk` (`.apk`-based packages)
 
@@ -482,6 +482,23 @@ libgcc-10.3.1_git20210424-r2 installed size:
 112 KiB
 
 libgcc-10.3.1_git20210424-r2 license:
+GPL-2.0-or-later LGPL-2.1-or-later
+
+```
+
+### `apk` package: `libgomp`
+
+```console
+libgomp-10.3.1_git20210424-r2 description:
+GCC shared-memory parallel programming API library
+
+libgomp-10.3.1_git20210424-r2 webpage:
+https://gcc.gnu.org
+
+libgomp-10.3.1_git20210424-r2 installed size:
+264 KiB
+
+libgomp-10.3.1_git20210424-r2 license:
 GPL-2.0-or-later LGPL-2.1-or-later
 
 ```
