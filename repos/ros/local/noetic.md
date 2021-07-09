@@ -2235,14 +2235,9 @@ Licenses: (parsed from: `/usr/share/doc/libuv1/copyright`)
 - `GPL-3+`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libuv1=1.34.2-1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libuv1/libuv1_1.34.2-1ubuntu1.1.dsc' libuv1_1.34.2-1ubuntu1.1.dsc 2128 SHA512:f64f5aafbccc710da77337b04df05aa0b13ccd10035b752b2e5d1783ff00a64c42daac1cf71130d4d21f49d2fe6d05ace1a0bcbcf47131314b609e14185807a9
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libuv1/libuv1_1.34.2.orig.tar.gz' libuv1_1.34.2.orig.tar.gz 1245417 SHA512:c549be16d10c1935150a395126b07b45e93ccb6edfe4a03f24bf4de39476f1e0339f22c3960022ae6170c5bb0667c77b16eb0b434aae280a53145fe5369de033
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libuv1/libuv1_1.34.2-1ubuntu1.1.debian.tar.xz' libuv1_1.34.2-1ubuntu1.1.debian.tar.xz 22588 SHA512:4343f2c0fa21c3e23620a1fa357157d620d2617c819142ee341fc94008740b9727255a19afb4a5d43738fa099f64dda36fba20946ae83af108ad3f7b0ff93206
-```
 
 ### `dpkg` source package: `libx11=2:1.6.9-2ubuntu1.2`
 
