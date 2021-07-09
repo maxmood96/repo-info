@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6d283e4c660118bc002d2d1ae935fa4dca43b47b2f77565ef6943bedab8a3190`
-- Created: `2021-06-18T06:13:00.670388941Z`
-- Virtual Size: ~ 311.31 Mb  
+- Image ID: `sha256:fbc21baab42409b12a777b40ed91791aba3336c46bbd1cded252cd5061def137`
+- Created: `2021-07-08T19:44:38.860041386Z`
+- Virtual Size: ~ 312.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
@@ -14,24 +14,24 @@
   - `JAVA_VERSION=1.8.0_sr6fp31`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-Xshareclasses:name=liberty,readonly,nonfatal,cacheDir=/output/.classCache/ -Dosgi.checkConfiguration=false -XX:+UseContainerSupport`
-  - `LIBERTY_VERSION=21.0.0_06`
+  - `LIBERTY_VERSION=21.0.0_07`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ibm/wlp/output`
   - `OPENJ9_SCC=true`
   - `RANDFILE=/tmp/.rnd`
 - Labels:
-  - `BuildLabel=cl210620210527-1900`
+  - `BuildLabel=cl210720210629-1900`
   - `ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd`
   - `ProductName=WebSphere Application Server Liberty`
-  - `ProductVersion=21.0.0.6`
+  - `ProductVersion=21.0.0.7`
   - `org.opencontainers.image.authors=Arthur De Magalhaes, Chris Potter`
   - `org.opencontainers.image.description=This image contains the WebSphere Liberty runtime with IBM's Java and Ubuntu as the base OS.  For more information on this image please see https://github.com/WASdev/ci.docker#building-an-application-image`
   - `org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html`
-  - `org.opencontainers.image.revision=cl210620210527-1900`
+  - `org.opencontainers.image.revision=cl210720210629-1900`
   - `org.opencontainers.image.title=IBM WebSphere Liberty`
   - `org.opencontainers.image.url=http://wasdev.net`
   - `org.opencontainers.image.vendor=IBM`
-  - `org.opencontainers.image.version=21.0.0.6`
+  - `org.opencontainers.image.version=21.0.0.7`
 
 ## `dpkg` (`.deb`-based packages)
 
