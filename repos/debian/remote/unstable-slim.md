@@ -1,7 +1,7 @@
 ## `debian:unstable-slim`
 
 ```console
-$ docker pull debian@sha256:9c1d95532fa19e5fe1c45f1c84d0b47082c093e8d177773b1f1296c7be45e7be
+$ docker pull debian@sha256:7b4ec75339b73d7c867baa63ddf2d9cbfdce3ba835640fe8c3aecb75a2fb5676
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -175,20 +175,20 @@ CMD ["bash"]
 ### `debian:unstable-slim` - linux; ppc64le
 
 ```console
-$ docker pull debian@sha256:9f52be78b72e2ca62379dce9b05d3439582d82522dddd85fcdb5309bf74d7b1c
+$ docker pull debian@sha256:0e45d5e3801e2d97e74918a8de27660235eb5d3eff0aae9e3f0e8b7a768d578d
 ```
 
--	Docker Version: 19.03.12
+-	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **35.3 MB (35257612 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:826e8e1d7e11c429c6d82f9ee9744b01c3048f1c943237192a855b63b26cbaf5`
+-	Image ID: `sha256:308b713c38b09ceb20ebd55825f5b06ab7d3c558b89df47d14673150c8429d91`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 23 Jun 2021 00:34:11 GMT
+# Fri, 09 Jul 2021 16:02:26 GMT
 ADD file:28d5173a252831200ceeae33de8e5fd7b12e1c679cc3b46f716c2df04d29074c in / 
-# Wed, 23 Jun 2021 00:34:16 GMT
+# Fri, 09 Jul 2021 16:02:37 GMT
 CMD ["bash"]
 ```
 
