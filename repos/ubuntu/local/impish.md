@@ -148,13 +148,13 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.5.50
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.5.50.dsc' base-passwd_3.5.50.dsc 1757 SHA512:e681a55510895fa8fda1ec8f489b7b85e5cf989684ed88eeb52d1e0e2eca5aa25619ec12905319c2c6db2b9155dcf3d4efe090fc0483c312d923482b0e238199
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.5.50.tar.xz' base-passwd_3.5.50.tar.xz 53836 SHA512:ad6d270d84d693739881ace50bd8166a827e8f5beeb70b78f3ecce610e1e85a79b96b95f7dcd8fb56bd8393b51a0587c66e7aee80145a9ba4827eb2ee528f1aa
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/base-passwd/3.5.50/
+
 
 ### `dpkg` source package: `bash=5.1-3ubuntu1`
 
@@ -349,13 +349,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.20.9ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.20.9ubuntu1.dsc' dpkg_1.20.9ubuntu1.dsc 2271 SHA512:6366127d5426c70ec6fe0024f7e5ac60b4bf403d330dc3600c436bff55105cd989f9164f90007b0bc76b7b063d4a8832f30616f6d8c9f694abc6083a8c8528d4
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.20.9ubuntu1.tar.xz' dpkg_1.20.9ubuntu1.tar.xz 4983900 SHA512:952987ca20858056632f0f9777f82e6f0032ad836540236160409f5990f77835326435c65c97d3f4e02800ea78ec867f92ecda68aae02f79d9717f022f6ea4d8
-```
 
 ### `dpkg` source package: `e2fsprogs=1.46.2-1ubuntu2`
 
@@ -1395,14 +1391,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=248.3-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_248.3-1ubuntu1.dsc' systemd_248.3-1ubuntu1.dsc 5366 SHA512:7c1a30831ee3023a13303af5be2e1c91ec8be696fb57baf9c541129de80b09a3c0cc25191c528ad43933a7eee0c61725c2cb99ddcd2a43da7573b7467530a446
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_248.3.orig.tar.gz' systemd_248.3.orig.tar.gz 10320940 SHA512:8e7ff0d5e63cc933e4dc23f7e0bef9707fde90396605eb8822d34de90d7abe8fd37e5739e33b657868218aa7281147cc944c096c007324c3e6fb54d833a83485
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_248.3-1ubuntu1.debian.tar.xz' systemd_248.3-1ubuntu1.debian.tar.xz 198572 SHA512:9404ea5a700630d4da370c1c4c29201f64d7cf0516691777afd14908db86ba2f300fdf5074af17bcb106f06ffc38045802c09cfafcd764b0f5e77e4bf9540a01
-```
 
 ### `dpkg` source package: `sysvinit=2.96-7ubuntu1`
 
