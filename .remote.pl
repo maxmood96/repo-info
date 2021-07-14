@@ -335,7 +335,7 @@ sub image_to_markdown_p ($image) {
 
 		$ret .= "\n";
 		$ret .= "-\t" . 'Manifest MIME: `' . $data->{manifestVersion} . '`' . "\n" if $data->{manifestVersion};
-		$ret .= "-\t" . 'Platforms:' . "\n";
+		$ret .= "-\t" . 'Platforms: ' . (scalar @{ $data->{images} }) . "\n";
 		for my $imageData (@{ $data->{images} }) {
 			$ret .= "\t-\t" . platform_string($imageData->{platform}) . "\n";
 		}
