@@ -22,7 +22,7 @@ $ docker pull backdrop@sha256:e01fbd04e97274366f4bc2fc425d6ba6f230b4fdc477c9584f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -383,7 +383,7 @@ $ docker pull backdrop@sha256:e01fbd04e97274366f4bc2fc425d6ba6f230b4fdc477c9584f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -744,7 +744,7 @@ $ docker pull backdrop@sha256:4ed442aff57cf709922e4c692ee818a5958bdf29f7558e689f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -1045,7 +1045,7 @@ $ docker pull backdrop@sha256:e01fbd04e97274366f4bc2fc425d6ba6f230b4fdc477c9584f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -1406,7 +1406,7 @@ $ docker pull backdrop@sha256:e01fbd04e97274366f4bc2fc425d6ba6f230b4fdc477c9584f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -1767,7 +1767,7 @@ $ docker pull backdrop@sha256:4ed442aff57cf709922e4c692ee818a5958bdf29f7558e689f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -2068,7 +2068,7 @@ $ docker pull backdrop@sha256:e01fbd04e97274366f4bc2fc425d6ba6f230b4fdc477c9584f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -2429,7 +2429,7 @@ $ docker pull backdrop@sha256:e01fbd04e97274366f4bc2fc425d6ba6f230b4fdc477c9584f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -2790,7 +2790,7 @@ $ docker pull backdrop@sha256:4ed442aff57cf709922e4c692ee818a5958bdf29f7558e689f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -3091,7 +3091,7 @@ $ docker pull backdrop@sha256:e01fbd04e97274366f4bc2fc425d6ba6f230b4fdc477c9584f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -3452,7 +3452,7 @@ $ docker pull backdrop@sha256:4ed442aff57cf709922e4c692ee818a5958bdf29f7558e689f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -3753,7 +3753,7 @@ $ docker pull backdrop@sha256:e01fbd04e97274366f4bc2fc425d6ba6f230b4fdc477c9584f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
