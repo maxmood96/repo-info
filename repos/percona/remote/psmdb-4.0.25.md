@@ -5,7 +5,7 @@ $ docker pull percona@sha256:295577b633428b1c5febce8bf81d1447e648c96124687819dfa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:psmdb-4.0.25` - linux; amd64

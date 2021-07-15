@@ -5,7 +5,7 @@ $ docker pull percona@sha256:cff61a41eda66c85e70c7b6857e1d369fbd679a3b476bc54993
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:ps-5.7.34` - linux; amd64

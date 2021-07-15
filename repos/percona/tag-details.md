@@ -44,7 +44,7 @@ $ docker pull percona@sha256:cff61a41eda66c85e70c7b6857e1d369fbd679a3b476bc54993
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:5` - linux; amd64
@@ -131,7 +131,7 @@ $ docker pull percona@sha256:cff61a41eda66c85e70c7b6857e1d369fbd679a3b476bc54993
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:5-centos` - linux; amd64
@@ -218,7 +218,7 @@ $ docker pull percona@sha256:3e00a7f52fae266a9ebef113ca650881efdfd3906259aa1228c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:5.6` - linux; amd64
@@ -307,7 +307,7 @@ $ docker pull percona@sha256:3e00a7f52fae266a9ebef113ca650881efdfd3906259aa1228c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:5.6-centos` - linux; amd64
@@ -396,7 +396,7 @@ $ docker pull percona@sha256:3e00a7f52fae266a9ebef113ca650881efdfd3906259aa1228c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:5.6.51` - linux; amd64
@@ -485,7 +485,7 @@ $ docker pull percona@sha256:3e00a7f52fae266a9ebef113ca650881efdfd3906259aa1228c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:5.6.51-centos` - linux; amd64
@@ -574,7 +574,7 @@ $ docker pull percona@sha256:cff61a41eda66c85e70c7b6857e1d369fbd679a3b476bc54993
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:5.7` - linux; amd64
@@ -661,7 +661,7 @@ $ docker pull percona@sha256:cff61a41eda66c85e70c7b6857e1d369fbd679a3b476bc54993
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:5.7-centos` - linux; amd64
@@ -748,7 +748,7 @@ $ docker pull percona@sha256:cff61a41eda66c85e70c7b6857e1d369fbd679a3b476bc54993
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:5.7.34` - linux; amd64
@@ -835,7 +835,7 @@ $ docker pull percona@sha256:cff61a41eda66c85e70c7b6857e1d369fbd679a3b476bc54993
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:5.7.34-centos` - linux; amd64
@@ -922,7 +922,7 @@ $ docker pull percona@sha256:01a62b5754ea0060bf49ddc3412e81c694ab18311febc1a6b60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:8` - linux; amd64
@@ -1009,7 +1009,7 @@ $ docker pull percona@sha256:01a62b5754ea0060bf49ddc3412e81c694ab18311febc1a6b60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:8-centos` - linux; amd64
@@ -1096,7 +1096,7 @@ $ docker pull percona@sha256:01a62b5754ea0060bf49ddc3412e81c694ab18311febc1a6b60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:8.0` - linux; amd64
@@ -1183,7 +1183,7 @@ $ docker pull percona@sha256:01a62b5754ea0060bf49ddc3412e81c694ab18311febc1a6b60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:8.0-centos` - linux; amd64
@@ -1270,7 +1270,7 @@ $ docker pull percona@sha256:01a62b5754ea0060bf49ddc3412e81c694ab18311febc1a6b60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:8.0.25-15` - linux; amd64
@@ -1357,7 +1357,7 @@ $ docker pull percona@sha256:01a62b5754ea0060bf49ddc3412e81c694ab18311febc1a6b60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:8.0.25-15-centos` - linux; amd64
@@ -1444,7 +1444,7 @@ $ docker pull percona@sha256:cff61a41eda66c85e70c7b6857e1d369fbd679a3b476bc54993
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:centos` - linux; amd64
@@ -1531,7 +1531,7 @@ $ docker pull percona@sha256:cff61a41eda66c85e70c7b6857e1d369fbd679a3b476bc54993
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:latest` - linux; amd64
@@ -1618,7 +1618,7 @@ $ docker pull percona@sha256:cff61a41eda66c85e70c7b6857e1d369fbd679a3b476bc54993
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:ps-5` - linux; amd64
@@ -1705,7 +1705,7 @@ $ docker pull percona@sha256:3e00a7f52fae266a9ebef113ca650881efdfd3906259aa1228c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:ps-5.6` - linux; amd64
@@ -1794,7 +1794,7 @@ $ docker pull percona@sha256:3e00a7f52fae266a9ebef113ca650881efdfd3906259aa1228c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:ps-5.6.51` - linux; amd64
@@ -1883,7 +1883,7 @@ $ docker pull percona@sha256:cff61a41eda66c85e70c7b6857e1d369fbd679a3b476bc54993
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:ps-5.7` - linux; amd64
@@ -1970,7 +1970,7 @@ $ docker pull percona@sha256:cff61a41eda66c85e70c7b6857e1d369fbd679a3b476bc54993
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:ps-5.7.34` - linux; amd64
@@ -2057,7 +2057,7 @@ $ docker pull percona@sha256:01a62b5754ea0060bf49ddc3412e81c694ab18311febc1a6b60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:ps-8` - linux; amd64
@@ -2144,7 +2144,7 @@ $ docker pull percona@sha256:01a62b5754ea0060bf49ddc3412e81c694ab18311febc1a6b60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:ps-8.0` - linux; amd64
@@ -2231,7 +2231,7 @@ $ docker pull percona@sha256:01a62b5754ea0060bf49ddc3412e81c694ab18311febc1a6b60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:ps-8.0.25-15` - linux; amd64
@@ -2318,7 +2318,7 @@ $ docker pull percona@sha256:2f664fccd3960303c73dfe4c29994bed85d05eab5677748c81e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:psmdb-3.6` - linux; amd64
@@ -2419,7 +2419,7 @@ $ docker pull percona@sha256:2f664fccd3960303c73dfe4c29994bed85d05eab5677748c81e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:psmdb-3.6.23` - linux; amd64
@@ -2520,7 +2520,7 @@ $ docker pull percona@sha256:295577b633428b1c5febce8bf81d1447e648c96124687819dfa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:psmdb-4.0` - linux; amd64
@@ -2629,7 +2629,7 @@ $ docker pull percona@sha256:295577b633428b1c5febce8bf81d1447e648c96124687819dfa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:psmdb-4.0.25` - linux; amd64
@@ -2738,7 +2738,7 @@ $ docker pull percona@sha256:e035b6e829aabed64009ce88335c77f0fc8123d98e4f90e7ede
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:psmdb-4.2` - linux; amd64
@@ -2847,7 +2847,7 @@ $ docker pull percona@sha256:e035b6e829aabed64009ce88335c77f0fc8123d98e4f90e7ede
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:psmdb-4.2.14` - linux; amd64
@@ -2956,7 +2956,7 @@ $ docker pull percona@sha256:73425dbf6d2fb4cf9820bdc1c607c37e87d8266f4fc69249ee3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:psmdb-4.4` - linux; amd64
@@ -3065,7 +3065,7 @@ $ docker pull percona@sha256:73425dbf6d2fb4cf9820bdc1c607c37e87d8266f4fc69249ee3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `percona:psmdb-4.4.6` - linux; amd64
