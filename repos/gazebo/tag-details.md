@@ -23,7 +23,7 @@ $ docker pull gazebo@sha256:a875480fcffa3f731ea4e00312287698916bf4dc6f6924230343
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `gazebo:gzserver11` - linux; amd64
@@ -102,7 +102,7 @@ $ docker pull gazebo@sha256:b55b7ce43dfdfceeec8ec5805b5477939a3dd89f3c7a9654c1fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `gazebo:gzserver11-bionic` - linux; amd64
@@ -181,7 +181,7 @@ $ docker pull gazebo@sha256:a875480fcffa3f731ea4e00312287698916bf4dc6f6924230343
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `gazebo:gzserver11-focal` - linux; amd64
@@ -260,7 +260,7 @@ $ docker pull gazebo@sha256:b3b8066a0c49f281974c2f4255a94979318c539eaef535b24263
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `gazebo:gzserver9` - linux; amd64
@@ -339,7 +339,7 @@ $ docker pull gazebo@sha256:b3b8066a0c49f281974c2f4255a94979318c539eaef535b24263
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `gazebo:gzserver9-bionic` - linux; amd64
@@ -418,7 +418,7 @@ $ docker pull gazebo@sha256:1af9b394f6ed81df43c76f39a9ddbe23ebacdf1df931d9784766
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `gazebo:gzserver9-xenial` - linux; amd64
@@ -509,7 +509,7 @@ $ docker pull gazebo@sha256:0cb289b4d925bea4be55a3a7951ff265255e9b94b943cac615d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `gazebo:latest` - linux; amd64
@@ -594,7 +594,7 @@ $ docker pull gazebo@sha256:0cb289b4d925bea4be55a3a7951ff265255e9b94b943cac615d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `gazebo:libgazebo11` - linux; amd64
@@ -679,7 +679,7 @@ $ docker pull gazebo@sha256:dc2b9ccc055fd5c42eaa898ecdf0d6298730af3dcbc783c422e8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `gazebo:libgazebo11-bionic` - linux; amd64
@@ -764,7 +764,7 @@ $ docker pull gazebo@sha256:0cb289b4d925bea4be55a3a7951ff265255e9b94b943cac615d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `gazebo:libgazebo11-focal` - linux; amd64
@@ -849,7 +849,7 @@ $ docker pull gazebo@sha256:43e2c65cf567735f31957211ef21cdb64486232bbc850dfbcd12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `gazebo:libgazebo9` - linux; amd64
@@ -934,7 +934,7 @@ $ docker pull gazebo@sha256:43e2c65cf567735f31957211ef21cdb64486232bbc850dfbcd12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `gazebo:libgazebo9-bionic` - linux; amd64
@@ -1019,7 +1019,7 @@ $ docker pull gazebo@sha256:6f28c114daceb2c1ab55d4ebfc4acbe4e896f8e0b79b4681fa89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `gazebo:libgazebo9-xenial` - linux; amd64

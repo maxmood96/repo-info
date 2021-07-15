@@ -5,7 +5,7 @@ $ docker pull gazebo@sha256:b3b8066a0c49f281974c2f4255a94979318c539eaef535b24263
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `gazebo:gzserver9` - linux; amd64

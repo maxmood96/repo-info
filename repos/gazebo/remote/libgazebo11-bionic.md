@@ -5,7 +5,7 @@ $ docker pull gazebo@sha256:dc2b9ccc055fd5c42eaa898ecdf0d6298730af3dcbc783c422e8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `gazebo:libgazebo11-bionic` - linux; amd64
