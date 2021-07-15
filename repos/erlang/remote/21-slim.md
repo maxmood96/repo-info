@@ -5,7 +5,7 @@ $ docker pull erlang@sha256:0a04649f156cebee539a5ec20b937aeaab6de730998f61a2be69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
