@@ -12,7 +12,7 @@ $ docker pull kibana@sha256:41864056a76eb68a4c39f5cd4dd0f3cdf93f2486f2f6f6f4e27b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `kibana:6.8.17` - linux; amd64
@@ -106,7 +106,7 @@ $ docker pull kibana@sha256:17e13d811898aac8bfe6f4bf58c287381aaafa1fef1435f60b56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
