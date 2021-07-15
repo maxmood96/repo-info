@@ -5,7 +5,7 @@ $ docker pull wordpress@sha256:2a1ff10f413e99b4c22b726aa60300097b4fc5e957f3dd602
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
