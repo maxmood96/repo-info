@@ -5,7 +5,7 @@ $ docker pull lightstreamer@sha256:2b3e5e74af4cab4a1adfad2367108569eb3986f294573
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 

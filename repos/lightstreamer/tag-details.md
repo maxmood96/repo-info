@@ -41,7 +41,7 @@ $ docker pull lightstreamer@sha256:1bb5abb8297f7fa811c15336f310c56af065c3a45a047
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `lightstreamer:6` - linux; amd64
@@ -153,7 +153,7 @@ $ docker pull lightstreamer@sha256:8b74f0b3a9ff7ef0c0287ca259b9dcb94c492fca86efb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `lightstreamer:6.0` - linux; amd64
@@ -265,7 +265,7 @@ $ docker pull lightstreamer@sha256:8b74f0b3a9ff7ef0c0287ca259b9dcb94c492fca86efb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `lightstreamer:6.0.3` - linux; amd64
@@ -377,7 +377,7 @@ $ docker pull lightstreamer@sha256:1bb5abb8297f7fa811c15336f310c56af065c3a45a047
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `lightstreamer:6.1` - linux; amd64
@@ -489,7 +489,7 @@ $ docker pull lightstreamer@sha256:1bb5abb8297f7fa811c15336f310c56af065c3a45a047
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `lightstreamer:6.1.0` - linux; amd64
@@ -601,7 +601,7 @@ $ docker pull lightstreamer@sha256:2b3e5e74af4cab4a1adfad2367108569eb3986f294573
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -808,7 +808,7 @@ $ docker pull lightstreamer@sha256:2b3e5e74af4cab4a1adfad2367108569eb3986f294573
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -1015,7 +1015,7 @@ $ docker pull lightstreamer@sha256:2b3e5e74af4cab4a1adfad2367108569eb3986f294573
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -1222,7 +1222,7 @@ $ docker pull lightstreamer@sha256:4be349ee522dc1d0263197f9c0a02ecec90af27d21635
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `lightstreamer:7-jdk8` - linux; amd64
@@ -1328,7 +1328,7 @@ $ docker pull lightstreamer@sha256:4be349ee522dc1d0263197f9c0a02ecec90af27d21635
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `lightstreamer:7-jdk8-openjdk` - linux; amd64
@@ -1434,7 +1434,7 @@ $ docker pull lightstreamer@sha256:c3feacb6434456556b5710d63b53a9a259f83a462b2b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -1641,7 +1641,7 @@ $ docker pull lightstreamer@sha256:c3feacb6434456556b5710d63b53a9a259f83a462b2b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -1848,7 +1848,7 @@ $ docker pull lightstreamer@sha256:c3feacb6434456556b5710d63b53a9a259f83a462b2b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -2055,7 +2055,7 @@ $ docker pull lightstreamer@sha256:6ac183318b3ade56160c3073fbaeff5e91d34ebde6156
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `lightstreamer:7.0-jdk8` - linux; amd64
@@ -2161,7 +2161,7 @@ $ docker pull lightstreamer@sha256:6ac183318b3ade56160c3073fbaeff5e91d34ebde6156
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `lightstreamer:7.0-jdk8-openjdk` - linux; amd64
@@ -2267,7 +2267,7 @@ $ docker pull lightstreamer@sha256:c3feacb6434456556b5710d63b53a9a259f83a462b2b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -2474,7 +2474,7 @@ $ docker pull lightstreamer@sha256:c3feacb6434456556b5710d63b53a9a259f83a462b2b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -2681,7 +2681,7 @@ $ docker pull lightstreamer@sha256:c3feacb6434456556b5710d63b53a9a259f83a462b2b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -2888,7 +2888,7 @@ $ docker pull lightstreamer@sha256:6ac183318b3ade56160c3073fbaeff5e91d34ebde6156
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `lightstreamer:7.0.3-jdk8` - linux; amd64
@@ -2994,7 +2994,7 @@ $ docker pull lightstreamer@sha256:6ac183318b3ade56160c3073fbaeff5e91d34ebde6156
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `lightstreamer:7.0.3-jdk8-openjdk` - linux; amd64
@@ -3100,7 +3100,7 @@ $ docker pull lightstreamer@sha256:2b3e5e74af4cab4a1adfad2367108569eb3986f294573
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -3307,7 +3307,7 @@ $ docker pull lightstreamer@sha256:2b3e5e74af4cab4a1adfad2367108569eb3986f294573
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -3514,7 +3514,7 @@ $ docker pull lightstreamer@sha256:2b3e5e74af4cab4a1adfad2367108569eb3986f294573
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -3721,7 +3721,7 @@ $ docker pull lightstreamer@sha256:4be349ee522dc1d0263197f9c0a02ecec90af27d21635
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `lightstreamer:7.1-jdk8` - linux; amd64
@@ -3827,7 +3827,7 @@ $ docker pull lightstreamer@sha256:4be349ee522dc1d0263197f9c0a02ecec90af27d21635
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `lightstreamer:7.1-jdk8-openjdk` - linux; amd64
@@ -3933,7 +3933,7 @@ $ docker pull lightstreamer@sha256:2b3e5e74af4cab4a1adfad2367108569eb3986f294573
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -4140,7 +4140,7 @@ $ docker pull lightstreamer@sha256:2b3e5e74af4cab4a1adfad2367108569eb3986f294573
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -4347,7 +4347,7 @@ $ docker pull lightstreamer@sha256:2b3e5e74af4cab4a1adfad2367108569eb3986f294573
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -4554,7 +4554,7 @@ $ docker pull lightstreamer@sha256:4be349ee522dc1d0263197f9c0a02ecec90af27d21635
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `lightstreamer:7.1.2-jdk8` - linux; amd64
@@ -4660,7 +4660,7 @@ $ docker pull lightstreamer@sha256:4be349ee522dc1d0263197f9c0a02ecec90af27d21635
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `lightstreamer:7.1.2-jdk8-openjdk` - linux; amd64
@@ -4766,7 +4766,7 @@ $ docker pull lightstreamer@sha256:2b3e5e74af4cab4a1adfad2367108569eb3986f294573
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
