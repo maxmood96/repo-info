@@ -21,7 +21,7 @@ $ docker pull fsharp@sha256:c3d6055588a433bbe29600ac213b183ff92d469f7d907dd613b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -112,7 +112,7 @@ $ docker pull fsharp@sha256:d203b460c703e950a4081bb1b04876999a0cd03494ff38bf2b84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `fsharp:10-netcore` - linux; amd64
@@ -190,7 +190,7 @@ $ docker pull fsharp@sha256:c3d6055588a433bbe29600ac213b183ff92d469f7d907dd613b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -281,7 +281,7 @@ $ docker pull fsharp@sha256:d203b460c703e950a4081bb1b04876999a0cd03494ff38bf2b84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `fsharp:10.10-netcore` - linux; amd64
@@ -359,7 +359,7 @@ $ docker pull fsharp@sha256:c3d6055588a433bbe29600ac213b183ff92d469f7d907dd613b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -450,7 +450,7 @@ $ docker pull fsharp@sha256:d203b460c703e950a4081bb1b04876999a0cd03494ff38bf2b84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `fsharp:10.10.0-netcore` - linux; amd64
@@ -528,7 +528,7 @@ $ docker pull fsharp@sha256:ef87e2ae7a6ca04e581bee645c601a1399cb4b00a5aaa63a1d36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `fsharp:4` - linux; amd64
@@ -578,7 +578,7 @@ $ docker pull fsharp@sha256:ef87e2ae7a6ca04e581bee645c601a1399cb4b00a5aaa63a1d36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `fsharp:4.1` - linux; amd64
@@ -628,7 +628,7 @@ $ docker pull fsharp@sha256:ef87e2ae7a6ca04e581bee645c601a1399cb4b00a5aaa63a1d36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `fsharp:4.1.34` - linux; amd64
@@ -678,7 +678,7 @@ $ docker pull fsharp@sha256:c3d6055588a433bbe29600ac213b183ff92d469f7d907dd613b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -769,7 +769,7 @@ $ docker pull fsharp@sha256:d203b460c703e950a4081bb1b04876999a0cd03494ff38bf2b84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `fsharp:netcore` - linux; amd64

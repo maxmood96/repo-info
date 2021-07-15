@@ -5,7 +5,7 @@ $ docker pull fsharp@sha256:d203b460c703e950a4081bb1b04876999a0cd03494ff38bf2b84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `fsharp:10-netcore` - linux; amd64
