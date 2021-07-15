@@ -5,7 +5,7 @@ $ docker pull eggdrop@sha256:c1bfc6d7635fb78eb5b3ebfcb48186d0c17c2b3b0691af075b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8

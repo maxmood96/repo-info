@@ -17,7 +17,7 @@ $ docker pull eggdrop@sha256:9cd4a0b8fee593cecf08c504fdda01e5c5059bac191ae3d93d0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `eggdrop:1.8` - linux; amd64
@@ -112,7 +112,7 @@ $ docker pull eggdrop@sha256:9cd4a0b8fee593cecf08c504fdda01e5c5059bac191ae3d93d0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `eggdrop:1.8.4` - linux; amd64
@@ -207,7 +207,7 @@ $ docker pull eggdrop@sha256:c1bfc6d7635fb78eb5b3ebfcb48186d0c17c2b3b0691af075b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -474,7 +474,7 @@ $ docker pull eggdrop@sha256:c1bfc6d7635fb78eb5b3ebfcb48186d0c17c2b3b0691af075b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -741,7 +741,7 @@ $ docker pull eggdrop@sha256:78170f6417446248d6f84fb23b6cf56a11a8195d51e70343a09
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -1020,7 +1020,7 @@ $ docker pull eggdrop@sha256:c1bfc6d7635fb78eb5b3ebfcb48186d0c17c2b3b0691af075b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -1287,7 +1287,7 @@ $ docker pull eggdrop@sha256:c1bfc6d7635fb78eb5b3ebfcb48186d0c17c2b3b0691af075b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
