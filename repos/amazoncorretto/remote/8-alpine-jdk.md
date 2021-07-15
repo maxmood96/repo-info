@@ -5,7 +5,7 @@ $ docker pull amazoncorretto@sha256:73939d6cb017bdb3885ea35ae18af6c6bf403ae0000b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `amazoncorretto:8-alpine-jdk` - linux; amd64

@@ -40,7 +40,7 @@ $ docker pull amazoncorretto@sha256:a103e1e8f4e8f4690c5058ec4a4b1ff7fb869368f7a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -129,7 +129,7 @@ $ docker pull amazoncorretto@sha256:a103e1e8f4e8f4690c5058ec4a4b1ff7fb869368f7a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -218,7 +218,7 @@ $ docker pull amazoncorretto@sha256:a103e1e8f4e8f4690c5058ec4a4b1ff7fb869368f7a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -307,7 +307,7 @@ $ docker pull amazoncorretto@sha256:35e8797e008eac2e05264c8a3894767b8cd4661ddca0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `amazoncorretto:11-alpine` - linux; amd64
@@ -358,7 +358,7 @@ $ docker pull amazoncorretto@sha256:35e8797e008eac2e05264c8a3894767b8cd4661ddca0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `amazoncorretto:11-alpine-full` - linux; amd64
@@ -409,7 +409,7 @@ $ docker pull amazoncorretto@sha256:35e8797e008eac2e05264c8a3894767b8cd4661ddca0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `amazoncorretto:11-alpine-jdk` - linux; amd64
@@ -460,7 +460,7 @@ $ docker pull amazoncorretto@sha256:a103e1e8f4e8f4690c5058ec4a4b1ff7fb869368f7a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -549,7 +549,7 @@ $ docker pull amazoncorretto@sha256:a103e1e8f4e8f4690c5058ec4a4b1ff7fb869368f7a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -638,7 +638,7 @@ $ docker pull amazoncorretto@sha256:35e8797e008eac2e05264c8a3894767b8cd4661ddca0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `amazoncorretto:11.0.11-alpine` - linux; amd64
@@ -689,7 +689,7 @@ $ docker pull amazoncorretto@sha256:29e7212c72c0c545df3d66aca0f80dc3c2fe1e3e055c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -778,7 +778,7 @@ $ docker pull amazoncorretto@sha256:29e7212c72c0c545df3d66aca0f80dc3c2fe1e3e055c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -867,7 +867,7 @@ $ docker pull amazoncorretto@sha256:29e7212c72c0c545df3d66aca0f80dc3c2fe1e3e055c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -956,7 +956,7 @@ $ docker pull amazoncorretto@sha256:da67cfe4028e29830be8096e81fb46e44cee2481c529
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `amazoncorretto:16-alpine` - linux; amd64
@@ -1007,7 +1007,7 @@ $ docker pull amazoncorretto@sha256:da67cfe4028e29830be8096e81fb46e44cee2481c529
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `amazoncorretto:16-alpine-full` - linux; amd64
@@ -1058,7 +1058,7 @@ $ docker pull amazoncorretto@sha256:da67cfe4028e29830be8096e81fb46e44cee2481c529
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `amazoncorretto:16-alpine-jdk` - linux; amd64
@@ -1109,7 +1109,7 @@ $ docker pull amazoncorretto@sha256:29e7212c72c0c545df3d66aca0f80dc3c2fe1e3e055c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -1198,7 +1198,7 @@ $ docker pull amazoncorretto@sha256:29e7212c72c0c545df3d66aca0f80dc3c2fe1e3e055c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -1287,7 +1287,7 @@ $ docker pull amazoncorretto@sha256:da67cfe4028e29830be8096e81fb46e44cee2481c529
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `amazoncorretto:16.0.1-alpine` - linux; amd64
@@ -1338,7 +1338,7 @@ $ docker pull amazoncorretto@sha256:0cfa6afaf5eac3f7a72452e2479503c46dd9932568a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -1427,7 +1427,7 @@ $ docker pull amazoncorretto@sha256:0cfa6afaf5eac3f7a72452e2479503c46dd9932568a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -1516,7 +1516,7 @@ $ docker pull amazoncorretto@sha256:0cfa6afaf5eac3f7a72452e2479503c46dd9932568a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -1605,7 +1605,7 @@ $ docker pull amazoncorretto@sha256:73939d6cb017bdb3885ea35ae18af6c6bf403ae0000b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `amazoncorretto:8-alpine` - linux; amd64
@@ -1656,7 +1656,7 @@ $ docker pull amazoncorretto@sha256:73939d6cb017bdb3885ea35ae18af6c6bf403ae0000b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `amazoncorretto:8-alpine-full` - linux; amd64
@@ -1707,7 +1707,7 @@ $ docker pull amazoncorretto@sha256:73939d6cb017bdb3885ea35ae18af6c6bf403ae0000b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `amazoncorretto:8-alpine-jdk` - linux; amd64
@@ -1758,7 +1758,7 @@ $ docker pull amazoncorretto@sha256:9b512161b10206d94138a47759ca3e1a503f01d6b971
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `amazoncorretto:8-alpine-jre` - linux; amd64
@@ -1807,7 +1807,7 @@ $ docker pull amazoncorretto@sha256:0cfa6afaf5eac3f7a72452e2479503c46dd9932568a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -1896,7 +1896,7 @@ $ docker pull amazoncorretto@sha256:0cfa6afaf5eac3f7a72452e2479503c46dd9932568a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -1985,7 +1985,7 @@ $ docker pull amazoncorretto@sha256:73939d6cb017bdb3885ea35ae18af6c6bf403ae0000b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `amazoncorretto:8u292-alpine` - linux; amd64
@@ -2036,7 +2036,7 @@ $ docker pull amazoncorretto@sha256:9b512161b10206d94138a47759ca3e1a503f01d6b971
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `amazoncorretto:8u292-alpine-jre` - linux; amd64
@@ -2085,7 +2085,7 @@ $ docker pull amazoncorretto@sha256:0cfa6afaf5eac3f7a72452e2479503c46dd9932568a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
