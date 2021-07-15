@@ -5,7 +5,7 @@ $ docker pull websphere-liberty@sha256:6e0573b66793594736908cacaa00be81cfd3d6c40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; 386
 	-	linux; ppc64le

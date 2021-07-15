@@ -27,7 +27,7 @@ $ docker pull websphere-liberty@sha256:293167530decab3d6f4c70cdb051f2efa6aa6fd4b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; ppc64le
 	-	linux; s390x
@@ -492,7 +492,7 @@ $ docker pull websphere-liberty@sha256:d3e23410cf68352366cf8230b18916bde759dee76
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; ppc64le
 	-	linux; s390x
@@ -933,7 +933,7 @@ $ docker pull websphere-liberty@sha256:362557aa8ab4378d61780a70db15582f2b9b14499
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; ppc64le
 	-	linux; s390x
@@ -1326,7 +1326,7 @@ $ docker pull websphere-liberty@sha256:a421524b9315dccbd7fb1fab8d330ff4d6ab748ce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; ppc64le
 	-	linux; s390x
@@ -1695,7 +1695,7 @@ $ docker pull websphere-liberty@sha256:d0e39535289ef81e33abdf026e482524634b5a7c0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; ppc64le
 	-	linux; s390x
@@ -2160,7 +2160,7 @@ $ docker pull websphere-liberty@sha256:c73fbf72635bb72e8a246b0c517e4a18671335db2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; ppc64le
 	-	linux; s390x
@@ -2601,7 +2601,7 @@ $ docker pull websphere-liberty@sha256:78cf1a2fd570ff2cd055139b10e0895c04da6893e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; ppc64le
 	-	linux; s390x
@@ -2994,7 +2994,7 @@ $ docker pull websphere-liberty@sha256:43278d3aeeb8443cdc07329e88492d317edba41bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; ppc64le
 	-	linux; s390x
@@ -3363,7 +3363,7 @@ $ docker pull websphere-liberty@sha256:09b8214be284c8717343331e42fe25ba93251a8be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; ppc64le
 	-	linux; s390x
@@ -3828,7 +3828,7 @@ $ docker pull websphere-liberty@sha256:21e9ffa2969eb61a5406f28d3c6546ec829cf16f0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; ppc64le
 	-	linux; s390x
@@ -4269,7 +4269,7 @@ $ docker pull websphere-liberty@sha256:1884903d3f69ca54e95a87bcd0fea237ba6d1ccec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; ppc64le
 	-	linux; s390x
@@ -4662,7 +4662,7 @@ $ docker pull websphere-liberty@sha256:1873065f33096a0da3f9c53f51f1602dfb90d0f52
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; ppc64le
 	-	linux; s390x
@@ -5031,7 +5031,7 @@ $ docker pull websphere-liberty@sha256:6e0573b66793594736908cacaa00be81cfd3d6c40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; 386
 	-	linux; ppc64le
@@ -5614,7 +5614,7 @@ $ docker pull websphere-liberty@sha256:09b8214be284c8717343331e42fe25ba93251a8be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; ppc64le
 	-	linux; s390x
@@ -6079,7 +6079,7 @@ $ docker pull websphere-liberty@sha256:273f6de9a4050c401b1bd3dc552cc34420b235dfa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; 386
 	-	linux; ppc64le
@@ -6575,7 +6575,7 @@ $ docker pull websphere-liberty@sha256:1884903d3f69ca54e95a87bcd0fea237ba6d1ccec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; ppc64le
 	-	linux; s390x
@@ -6968,7 +6968,7 @@ $ docker pull websphere-liberty@sha256:6e0573b66793594736908cacaa00be81cfd3d6c40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; 386
 	-	linux; ppc64le
