@@ -14,7 +14,7 @@ $ docker pull rapidoid@sha256:d1301611cb753309f292bb5178b662b4b430b03ae0fca239e4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -193,7 +193,7 @@ $ docker pull rapidoid@sha256:d1301611cb753309f292bb5178b662b4b430b03ae0fca239e4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -372,7 +372,7 @@ $ docker pull rapidoid@sha256:d1301611cb753309f292bb5178b662b4b430b03ae0fca239e4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -551,7 +551,7 @@ $ docker pull rapidoid@sha256:d1301611cb753309f292bb5178b662b4b430b03ae0fca239e4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
