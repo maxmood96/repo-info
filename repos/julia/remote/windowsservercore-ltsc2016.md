@@ -5,7 +5,7 @@ $ docker pull julia@sha256:e9cff663fdbf825e6ba31d576a9a1a6fe9ad2e140c497c6a66e2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `julia:windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64

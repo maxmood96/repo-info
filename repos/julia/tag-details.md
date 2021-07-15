@@ -48,7 +48,7 @@ $ docker pull julia@sha256:0a1fdd48362261cf2d66522ccc92fbd416969d8a03be8e70a5623
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -423,7 +423,7 @@ $ docker pull julia@sha256:02c916ffeb84c1455d3196c39ea23c47bbb1b3e70b1db3df3b684
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `julia:1-alpine` - linux; amd64
@@ -475,7 +475,7 @@ $ docker pull julia@sha256:36052a38d8ce24173a714e6f45e15217fc5f6db83f6e3362bea1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `julia:1-alpine3.13` - linux; amd64
@@ -527,7 +527,7 @@ $ docker pull julia@sha256:02c916ffeb84c1455d3196c39ea23c47bbb1b3e70b1db3df3b684
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `julia:1-alpine3.14` - linux; amd64
@@ -579,7 +579,7 @@ $ docker pull julia@sha256:68c46f8146738937986bcac4ced5445d77419f321ce427552dc32
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -833,7 +833,7 @@ $ docker pull julia@sha256:48d77d7e2f9e56041bee05a689e8f9c222aea6900493e426c5e94
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `julia:1-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -902,7 +902,7 @@ $ docker pull julia@sha256:e9cff663fdbf825e6ba31d576a9a1a6fe9ad2e140c497c6a66e2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `julia:1-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -972,7 +972,7 @@ $ docker pull julia@sha256:0d692d7ae5c55e0fe6ab7d576136bee8eff1e021a2ddc75ffd317
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 6
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -1298,7 +1298,7 @@ $ docker pull julia@sha256:cb08e8a8a9f80ea95635bcd8d14630b24f7fdb7e08e47ba502efa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -1503,7 +1503,7 @@ $ docker pull julia@sha256:2e030003383f50a659664e8068874218ec287ad75e4d0a1df3a8e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -1708,7 +1708,7 @@ $ docker pull julia@sha256:0927c2451b09f18ffe35d1bbef444e33c11e05b43f3d3850c6cba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `julia:1.0-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -1777,7 +1777,7 @@ $ docker pull julia@sha256:f2e6daed5332113dd1b26ba6037b454e2f95fa19fe6a78a5e6048
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `julia:1.0-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -1847,7 +1847,7 @@ $ docker pull julia@sha256:0d692d7ae5c55e0fe6ab7d576136bee8eff1e021a2ddc75ffd317
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 6
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -2173,7 +2173,7 @@ $ docker pull julia@sha256:cb08e8a8a9f80ea95635bcd8d14630b24f7fdb7e08e47ba502efa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -2378,7 +2378,7 @@ $ docker pull julia@sha256:2e030003383f50a659664e8068874218ec287ad75e4d0a1df3a8e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -2583,7 +2583,7 @@ $ docker pull julia@sha256:0927c2451b09f18ffe35d1bbef444e33c11e05b43f3d3850c6cba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `julia:1.0.5-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -2652,7 +2652,7 @@ $ docker pull julia@sha256:f2e6daed5332113dd1b26ba6037b454e2f95fa19fe6a78a5e6048
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `julia:1.0.5-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -2722,7 +2722,7 @@ $ docker pull julia@sha256:0a1fdd48362261cf2d66522ccc92fbd416969d8a03be8e70a5623
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -3097,7 +3097,7 @@ $ docker pull julia@sha256:02c916ffeb84c1455d3196c39ea23c47bbb1b3e70b1db3df3b684
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `julia:1.6-alpine` - linux; amd64
@@ -3149,7 +3149,7 @@ $ docker pull julia@sha256:36052a38d8ce24173a714e6f45e15217fc5f6db83f6e3362bea1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `julia:1.6-alpine3.13` - linux; amd64
@@ -3201,7 +3201,7 @@ $ docker pull julia@sha256:02c916ffeb84c1455d3196c39ea23c47bbb1b3e70b1db3df3b684
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `julia:1.6-alpine3.14` - linux; amd64
@@ -3253,7 +3253,7 @@ $ docker pull julia@sha256:68c46f8146738937986bcac4ced5445d77419f321ce427552dc32
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -3507,7 +3507,7 @@ $ docker pull julia@sha256:48d77d7e2f9e56041bee05a689e8f9c222aea6900493e426c5e94
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `julia:1.6-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -3576,7 +3576,7 @@ $ docker pull julia@sha256:e9cff663fdbf825e6ba31d576a9a1a6fe9ad2e140c497c6a66e2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `julia:1.6-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -3646,7 +3646,7 @@ $ docker pull julia@sha256:0a1fdd48362261cf2d66522ccc92fbd416969d8a03be8e70a5623
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -4021,7 +4021,7 @@ $ docker pull julia@sha256:02c916ffeb84c1455d3196c39ea23c47bbb1b3e70b1db3df3b684
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `julia:1.6.1-alpine` - linux; amd64
@@ -4073,7 +4073,7 @@ $ docker pull julia@sha256:36052a38d8ce24173a714e6f45e15217fc5f6db83f6e3362bea1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `julia:1.6.1-alpine3.13` - linux; amd64
@@ -4125,7 +4125,7 @@ $ docker pull julia@sha256:02c916ffeb84c1455d3196c39ea23c47bbb1b3e70b1db3df3b684
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `julia:1.6.1-alpine3.14` - linux; amd64
@@ -4177,7 +4177,7 @@ $ docker pull julia@sha256:68c46f8146738937986bcac4ced5445d77419f321ce427552dc32
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -4431,7 +4431,7 @@ $ docker pull julia@sha256:48d77d7e2f9e56041bee05a689e8f9c222aea6900493e426c5e94
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `julia:1.6.1-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -4500,7 +4500,7 @@ $ docker pull julia@sha256:e9cff663fdbf825e6ba31d576a9a1a6fe9ad2e140c497c6a66e2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `julia:1.6.1-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -4570,7 +4570,7 @@ $ docker pull julia@sha256:02c916ffeb84c1455d3196c39ea23c47bbb1b3e70b1db3df3b684
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `julia:alpine` - linux; amd64
@@ -4622,7 +4622,7 @@ $ docker pull julia@sha256:36052a38d8ce24173a714e6f45e15217fc5f6db83f6e3362bea1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `julia:alpine3.13` - linux; amd64
@@ -4674,7 +4674,7 @@ $ docker pull julia@sha256:02c916ffeb84c1455d3196c39ea23c47bbb1b3e70b1db3df3b684
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `julia:alpine3.14` - linux; amd64
@@ -4726,7 +4726,7 @@ $ docker pull julia@sha256:68c46f8146738937986bcac4ced5445d77419f321ce427552dc32
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -4980,7 +4980,7 @@ $ docker pull julia@sha256:0a1fdd48362261cf2d66522ccc92fbd416969d8a03be8e70a5623
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -5355,7 +5355,7 @@ $ docker pull julia@sha256:48d77d7e2f9e56041bee05a689e8f9c222aea6900493e426c5e94
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `julia:windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -5424,7 +5424,7 @@ $ docker pull julia@sha256:e9cff663fdbf825e6ba31d576a9a1a6fe9ad2e140c497c6a66e2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `julia:windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
