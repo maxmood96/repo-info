@@ -5,7 +5,7 @@ $ docker pull cassandra@sha256:769ae5c6733101696c703fef0769f98e77811f4f33d403cdb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8

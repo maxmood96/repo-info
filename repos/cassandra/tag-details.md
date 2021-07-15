@@ -23,7 +23,7 @@ $ docker pull cassandra@sha256:abc42f054e6de5444104b34de3c406198f57d5789543b05ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; ppc64le
@@ -358,7 +358,7 @@ $ docker pull cassandra@sha256:16fc99096fbaef14d93ea53618dd1204b97728906d29fe794
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
@@ -679,7 +679,7 @@ $ docker pull cassandra@sha256:16fc99096fbaef14d93ea53618dd1204b97728906d29fe794
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
@@ -1000,7 +1000,7 @@ $ docker pull cassandra@sha256:abc42f054e6de5444104b34de3c406198f57d5789543b05ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; ppc64le
@@ -1335,7 +1335,7 @@ $ docker pull cassandra@sha256:eeabfea89e7a0432fc39841c0b5c6d23e55b4ac729795d04c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; ppc64le
 
@@ -1552,7 +1552,7 @@ $ docker pull cassandra@sha256:769ae5c6733101696c703fef0769f98e77811f4f33d403cdb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -1991,7 +1991,7 @@ $ docker pull cassandra@sha256:e5f2d70fe3a5323f9896cf7bf370577deb3539b26a90a3730
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -2430,7 +2430,7 @@ $ docker pull cassandra@sha256:a3c07eb54b32b24b2bb577bf906189f13556794e12f37761f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
@@ -2751,7 +2751,7 @@ $ docker pull cassandra@sha256:769ae5c6733101696c703fef0769f98e77811f4f33d403cdb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -3190,7 +3190,7 @@ $ docker pull cassandra@sha256:52e930a0a8acecba50ba176cc11dcc2abb0706f4172839715
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
@@ -3511,7 +3511,7 @@ $ docker pull cassandra@sha256:fcfee1a01cdb6904a157f4dfdf17ac60fc1527d231c9f2f85
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -3912,7 +3912,7 @@ $ docker pull cassandra@sha256:fcfee1a01cdb6904a157f4dfdf17ac60fc1527d231c9f2f85
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -4313,7 +4313,7 @@ $ docker pull cassandra@sha256:769ae5c6733101696c703fef0769f98e77811f4f33d403cdb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
