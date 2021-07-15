@@ -5,7 +5,7 @@ $ docker pull spiped@sha256:1054032dfae72f0807214d0751246c6675a4527de4b0af06446b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
