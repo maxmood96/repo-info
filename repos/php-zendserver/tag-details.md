@@ -17,7 +17,7 @@ $ docker pull php-zendserver@sha256:f99ba79688b3742995a85b4158d48228767e3897a6f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `php-zendserver:2019.0` - linux; amd64
@@ -137,7 +137,7 @@ $ docker pull php-zendserver@sha256:22202e7a06ea9e6dc0b71816a8bb57f0cce285f46162
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `php-zendserver:2021.0` - linux; amd64
@@ -257,7 +257,7 @@ $ docker pull php-zendserver@sha256:34581269a8ce4c3ec34ff8964b469af35d4ef717c97e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `php-zendserver:5.6` - linux; amd64
@@ -407,7 +407,7 @@ $ docker pull php-zendserver@sha256:34581269a8ce4c3ec34ff8964b469af35d4ef717c97e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `php-zendserver:8.5` - linux; amd64
@@ -557,7 +557,7 @@ $ docker pull php-zendserver@sha256:34581269a8ce4c3ec34ff8964b469af35d4ef717c97e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `php-zendserver:8.5-php5.6` - linux; amd64
@@ -707,7 +707,7 @@ $ docker pull php-zendserver@sha256:36a2bb19b11ff1b30ede523b8203a29b5dd23c62c0ce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `php-zendserver:9.1` - linux; amd64
@@ -851,7 +851,7 @@ $ docker pull php-zendserver@sha256:22202e7a06ea9e6dc0b71816a8bb57f0cce285f46162
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `php-zendserver:latest` - linux; amd64
