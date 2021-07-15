@@ -14,7 +14,7 @@ $ docker pull notary@sha256:141534ec456d58f96094fd956682b7425bd50e90d3428011f4a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 6
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -467,7 +467,7 @@ $ docker pull notary@sha256:141534ec456d58f96094fd956682b7425bd50e90d3428011f4a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 6
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -920,7 +920,7 @@ $ docker pull notary@sha256:a33cc6c8b2d3581afdfd1589496e195d2584582553853d7f036d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 6
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -1385,7 +1385,7 @@ $ docker pull notary@sha256:a33cc6c8b2d3581afdfd1589496e195d2584582553853d7f036d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 6
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
