@@ -5,7 +5,7 @@ $ docker pull redmine@sha256:cae6a4d4227606764c6a75b180a5b675e4d7415888b5a126106
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7

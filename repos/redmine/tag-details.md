@@ -34,7 +34,7 @@ $ docker pull redmine@sha256:cae6a4d4227606764c6a75b180a5b675e4d7415888b5a126106
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -925,7 +925,7 @@ $ docker pull redmine@sha256:7de4015773da4d105b5f43705556003eb3071d781612fa6e7f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `redmine:4-alpine` - linux; amd64
@@ -1062,7 +1062,7 @@ $ docker pull redmine@sha256:9b780f98151823e0e84e1e41974c548143cae7090cd367eb711
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `redmine:4-passenger` - linux; amd64
@@ -1215,7 +1215,7 @@ $ docker pull redmine@sha256:5fe2bfa25e09380eb390b7cca4ad0af896d83a3224478b8ff08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -2106,7 +2106,7 @@ $ docker pull redmine@sha256:9b8ec4df56622e6060cfc701a5059050c3b734da828cc8f1543
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `redmine:4.0-alpine` - linux; amd64
@@ -2243,7 +2243,7 @@ $ docker pull redmine@sha256:5c4cd06fe1b29aa7167a46cc260fc067c63cf4d674b5e23dffb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `redmine:4.0-passenger` - linux; amd64
@@ -2396,7 +2396,7 @@ $ docker pull redmine@sha256:5fe2bfa25e09380eb390b7cca4ad0af896d83a3224478b8ff08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -3287,7 +3287,7 @@ $ docker pull redmine@sha256:9b8ec4df56622e6060cfc701a5059050c3b734da828cc8f1543
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `redmine:4.0.9-alpine` - linux; amd64
@@ -3424,7 +3424,7 @@ $ docker pull redmine@sha256:5c4cd06fe1b29aa7167a46cc260fc067c63cf4d674b5e23dffb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `redmine:4.0.9-passenger` - linux; amd64
@@ -3577,7 +3577,7 @@ $ docker pull redmine@sha256:3842f8b458e034ecec57ede811de2c27a56157afbcfd04dfa17
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -4468,7 +4468,7 @@ $ docker pull redmine@sha256:ab4e088a86875b1b538344cd8bffecef2ae743209af62856f07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `redmine:4.1-alpine` - linux; amd64
@@ -4605,7 +4605,7 @@ $ docker pull redmine@sha256:4334cb7c8b95d9668f01fc9f8c8ffdd56b40964b7a4a82b0cb4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `redmine:4.1-passenger` - linux; amd64
@@ -4758,7 +4758,7 @@ $ docker pull redmine@sha256:3842f8b458e034ecec57ede811de2c27a56157afbcfd04dfa17
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -5649,7 +5649,7 @@ $ docker pull redmine@sha256:ab4e088a86875b1b538344cd8bffecef2ae743209af62856f07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `redmine:4.1.3-alpine` - linux; amd64
@@ -5786,7 +5786,7 @@ $ docker pull redmine@sha256:4334cb7c8b95d9668f01fc9f8c8ffdd56b40964b7a4a82b0cb4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `redmine:4.1.3-passenger` - linux; amd64
@@ -5939,7 +5939,7 @@ $ docker pull redmine@sha256:cae6a4d4227606764c6a75b180a5b675e4d7415888b5a126106
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -6830,7 +6830,7 @@ $ docker pull redmine@sha256:7de4015773da4d105b5f43705556003eb3071d781612fa6e7f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `redmine:4.2-alpine` - linux; amd64
@@ -6967,7 +6967,7 @@ $ docker pull redmine@sha256:9b780f98151823e0e84e1e41974c548143cae7090cd367eb711
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `redmine:4.2-passenger` - linux; amd64
@@ -7120,7 +7120,7 @@ $ docker pull redmine@sha256:cae6a4d4227606764c6a75b180a5b675e4d7415888b5a126106
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -8011,7 +8011,7 @@ $ docker pull redmine@sha256:7de4015773da4d105b5f43705556003eb3071d781612fa6e7f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `redmine:4.2.1-alpine` - linux; amd64
@@ -8148,7 +8148,7 @@ $ docker pull redmine@sha256:9b780f98151823e0e84e1e41974c548143cae7090cd367eb711
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `redmine:4.2.1-passenger` - linux; amd64
@@ -8301,7 +8301,7 @@ $ docker pull redmine@sha256:7de4015773da4d105b5f43705556003eb3071d781612fa6e7f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `redmine:alpine` - linux; amd64
@@ -8438,7 +8438,7 @@ $ docker pull redmine@sha256:cae6a4d4227606764c6a75b180a5b675e4d7415888b5a126106
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -9329,7 +9329,7 @@ $ docker pull redmine@sha256:9b780f98151823e0e84e1e41974c548143cae7090cd367eb711
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `redmine:passenger` - linux; amd64
