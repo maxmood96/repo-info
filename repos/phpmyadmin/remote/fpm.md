@@ -5,7 +5,7 @@ $ docker pull phpmyadmin@sha256:57d9331bda9862c0ebc4349e22b4a322f5ff84522a6abbe2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7

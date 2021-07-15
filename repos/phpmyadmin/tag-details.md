@@ -26,7 +26,7 @@ $ docker pull phpmyadmin@sha256:e217bfbef01cdab468698b447d41e6e750948137d90de827
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -1507,7 +1507,7 @@ $ docker pull phpmyadmin@sha256:e217bfbef01cdab468698b447d41e6e750948137d90de827
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -2988,7 +2988,7 @@ $ docker pull phpmyadmin@sha256:57d9331bda9862c0ebc4349e22b4a322f5ff84522a6abbe2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -4277,7 +4277,7 @@ $ docker pull phpmyadmin@sha256:185d53a08069d064903d1a73c0bd15a7ed2518b6d271d1b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -5448,7 +5448,7 @@ $ docker pull phpmyadmin@sha256:e217bfbef01cdab468698b447d41e6e750948137d90de827
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -6929,7 +6929,7 @@ $ docker pull phpmyadmin@sha256:e217bfbef01cdab468698b447d41e6e750948137d90de827
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -8410,7 +8410,7 @@ $ docker pull phpmyadmin@sha256:57d9331bda9862c0ebc4349e22b4a322f5ff84522a6abbe2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -9699,7 +9699,7 @@ $ docker pull phpmyadmin@sha256:185d53a08069d064903d1a73c0bd15a7ed2518b6d271d1b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -10870,7 +10870,7 @@ $ docker pull phpmyadmin@sha256:e217bfbef01cdab468698b447d41e6e750948137d90de827
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -12351,7 +12351,7 @@ $ docker pull phpmyadmin@sha256:e217bfbef01cdab468698b447d41e6e750948137d90de827
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -13832,7 +13832,7 @@ $ docker pull phpmyadmin@sha256:57d9331bda9862c0ebc4349e22b4a322f5ff84522a6abbe2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -15121,7 +15121,7 @@ $ docker pull phpmyadmin@sha256:185d53a08069d064903d1a73c0bd15a7ed2518b6d271d1b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -16292,7 +16292,7 @@ $ docker pull phpmyadmin@sha256:e217bfbef01cdab468698b447d41e6e750948137d90de827
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -17773,7 +17773,7 @@ $ docker pull phpmyadmin@sha256:57d9331bda9862c0ebc4349e22b4a322f5ff84522a6abbe2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -19062,7 +19062,7 @@ $ docker pull phpmyadmin@sha256:185d53a08069d064903d1a73c0bd15a7ed2518b6d271d1b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -20233,7 +20233,7 @@ $ docker pull phpmyadmin@sha256:e217bfbef01cdab468698b447d41e6e750948137d90de827
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
