@@ -5,7 +5,7 @@ $ docker pull jetty@sha256:6c0c6214a5e0e0ccb81ad15958e2b8e65d9051e9d222eea7955b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9-jdk8` - linux; amd64

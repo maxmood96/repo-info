@@ -63,7 +63,7 @@ $ docker pull jetty@sha256:6f9aac58f97c559c9ffef7114f64564c418118c6903d7c21339bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:10.0.6` - linux; amd64
@@ -158,7 +158,7 @@ $ docker pull jetty@sha256:0f065e3121f3168ab936e40a5ab412bfb7ca6fd817be2f8d67238
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:10.0.6-jdk11` - linux; amd64
@@ -277,7 +277,7 @@ $ docker pull jetty@sha256:0eb1e476ac3b9d6cde3e5e43109821321f1c669bb77c94cd63f19
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:10.0.6-jdk11-slim` - linux; amd64
@@ -378,7 +378,7 @@ $ docker pull jetty@sha256:6f9aac58f97c559c9ffef7114f64564c418118c6903d7c21339bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:10.0.6-jdk16` - linux; amd64
@@ -473,7 +473,7 @@ $ docker pull jetty@sha256:0681b1ac82a0ac30e055ffd746a6f25b804528684850270e26702
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:10.0.6-jdk16-slim` - linux; amd64
@@ -568,7 +568,7 @@ $ docker pull jetty@sha256:bd7863b3b4362136e3445e17bd3af97a147cad7bc0c003a32b958
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:10.0.6-jre11` - linux; amd64
@@ -679,7 +679,7 @@ $ docker pull jetty@sha256:69b6dba9909f27c5063df66fdfc004b7e245ead6d73a98f160f50
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:10.0.6-jre11-slim` - linux; amd64
@@ -778,7 +778,7 @@ $ docker pull jetty@sha256:04e4fbbae61b308a7217892a75acf1e20f2b1064ace917add914a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:11.0.6` - linux; amd64
@@ -873,7 +873,7 @@ $ docker pull jetty@sha256:a5c68baa1a008258575adcbf22712300e38d234f3c2f0da731727
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:11.0.6-jdk11` - linux; amd64
@@ -992,7 +992,7 @@ $ docker pull jetty@sha256:a45ed4050ceff54833988d7666179b0985ed92c92630bf262e097
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:11.0.6-jdk11-slim` - linux; amd64
@@ -1093,7 +1093,7 @@ $ docker pull jetty@sha256:04e4fbbae61b308a7217892a75acf1e20f2b1064ace917add914a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:11.0.6-jdk16` - linux; amd64
@@ -1188,7 +1188,7 @@ $ docker pull jetty@sha256:11178e3b178d54ff58b506eaed00544b0dcce1e15bebc170ef561
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:11.0.6-jdk16-slim` - linux; amd64
@@ -1283,7 +1283,7 @@ $ docker pull jetty@sha256:b78f80c2eabacac666a891c2e8660bd9a7cc72560a0607cf20272
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:11.0.6-jre11` - linux; amd64
@@ -1394,7 +1394,7 @@ $ docker pull jetty@sha256:a70b85b8af57731bbc8aeb2ba296e11417560f8929c80ec48cb97
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:11.0.6-jre11-slim` - linux; amd64
@@ -1493,7 +1493,7 @@ $ docker pull jetty@sha256:2525cce24965a7cef0fa278d7ef8cf3c734770cf906da8eb67f15
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9` - linux; amd64
@@ -1588,7 +1588,7 @@ $ docker pull jetty@sha256:8eb6b84ee9a8db5830722eb4e34ef54d9f04725171fc0000177f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9-jdk11` - linux; amd64
@@ -1707,7 +1707,7 @@ $ docker pull jetty@sha256:90e6e74eb89273f464bf4ae8954f81182e0c4e03c9093cffb6f62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9-jdk11-slim` - linux; amd64
@@ -1808,7 +1808,7 @@ $ docker pull jetty@sha256:2525cce24965a7cef0fa278d7ef8cf3c734770cf906da8eb67f15
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9-jdk16` - linux; amd64
@@ -1903,7 +1903,7 @@ $ docker pull jetty@sha256:9f2d1a5e9677b29c093edeb07377dbdaac4111f0f6335523be673
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9-jdk16-slim` - linux; amd64
@@ -1998,7 +1998,7 @@ $ docker pull jetty@sha256:6c0c6214a5e0e0ccb81ad15958e2b8e65d9051e9d222eea7955b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9-jdk8` - linux; amd64
@@ -2115,7 +2115,7 @@ $ docker pull jetty@sha256:1766163ed757475be3e71a8d1eacfb642bc93955f424f3270f9b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9-jdk8-slim` - linux; amd64
@@ -2214,7 +2214,7 @@ $ docker pull jetty@sha256:4843a7f0d6fe61d62a47e7b0093fd50b462e6587b81d90a0ad630
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -2427,7 +2427,7 @@ $ docker pull jetty@sha256:150993f0e8d96f6c193ffcf657ae7aef9c4b6d695bd6a0338dda2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -2616,7 +2616,7 @@ $ docker pull jetty@sha256:d4546a17fba1a7153692d528c4429cf2fe7c7a194795d95b77598
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9-jre8` - linux; amd64
@@ -2727,7 +2727,7 @@ $ docker pull jetty@sha256:93d27e176a4f5a8e628ca87e4a6f9ab7374e6108e82268a10b542
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9-jre8-slim` - linux; amd64
@@ -2826,7 +2826,7 @@ $ docker pull jetty@sha256:43812f7417f0d9cef917f04748e154bc3bf8e876a96d853289d25
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9.2-jre8` - linux; amd64
@@ -2937,7 +2937,7 @@ $ docker pull jetty@sha256:43812f7417f0d9cef917f04748e154bc3bf8e876a96d853289d25
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9.2.30-jre8` - linux; amd64
@@ -3048,7 +3048,7 @@ $ docker pull jetty@sha256:e463d288877d601fca49363d19d62dfeb129a850ba9686bf55e8f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9.3-jre8` - linux; amd64
@@ -3159,7 +3159,7 @@ $ docker pull jetty@sha256:e463d288877d601fca49363d19d62dfeb129a850ba9686bf55e8f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9.3.29-jre8` - linux; amd64
@@ -3270,7 +3270,7 @@ $ docker pull jetty@sha256:2525cce24965a7cef0fa278d7ef8cf3c734770cf906da8eb67f15
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9.4` - linux; amd64
@@ -3365,7 +3365,7 @@ $ docker pull jetty@sha256:8eb6b84ee9a8db5830722eb4e34ef54d9f04725171fc0000177f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9.4-jdk11` - linux; amd64
@@ -3484,7 +3484,7 @@ $ docker pull jetty@sha256:90e6e74eb89273f464bf4ae8954f81182e0c4e03c9093cffb6f62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9.4-jdk11-slim` - linux; amd64
@@ -3585,7 +3585,7 @@ $ docker pull jetty@sha256:2525cce24965a7cef0fa278d7ef8cf3c734770cf906da8eb67f15
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9.4-jdk16` - linux; amd64
@@ -3680,7 +3680,7 @@ $ docker pull jetty@sha256:9f2d1a5e9677b29c093edeb07377dbdaac4111f0f6335523be673
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9.4-jdk16-slim` - linux; amd64
@@ -3775,7 +3775,7 @@ $ docker pull jetty@sha256:6c0c6214a5e0e0ccb81ad15958e2b8e65d9051e9d222eea7955b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9.4-jdk8` - linux; amd64
@@ -3892,7 +3892,7 @@ $ docker pull jetty@sha256:1766163ed757475be3e71a8d1eacfb642bc93955f424f3270f9b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9.4-jdk8-slim` - linux; amd64
@@ -3991,7 +3991,7 @@ $ docker pull jetty@sha256:4843a7f0d6fe61d62a47e7b0093fd50b462e6587b81d90a0ad630
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -4204,7 +4204,7 @@ $ docker pull jetty@sha256:150993f0e8d96f6c193ffcf657ae7aef9c4b6d695bd6a0338dda2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -4393,7 +4393,7 @@ $ docker pull jetty@sha256:d4546a17fba1a7153692d528c4429cf2fe7c7a194795d95b77598
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9.4-jre8` - linux; amd64
@@ -4504,7 +4504,7 @@ $ docker pull jetty@sha256:93d27e176a4f5a8e628ca87e4a6f9ab7374e6108e82268a10b542
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9.4-jre8-slim` - linux; amd64
@@ -4603,7 +4603,7 @@ $ docker pull jetty@sha256:2525cce24965a7cef0fa278d7ef8cf3c734770cf906da8eb67f15
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9.4.43` - linux; amd64
@@ -4698,7 +4698,7 @@ $ docker pull jetty@sha256:8eb6b84ee9a8db5830722eb4e34ef54d9f04725171fc0000177f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9.4.43-jdk11` - linux; amd64
@@ -4817,7 +4817,7 @@ $ docker pull jetty@sha256:90e6e74eb89273f464bf4ae8954f81182e0c4e03c9093cffb6f62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9.4.43-jdk11-slim` - linux; amd64
@@ -4918,7 +4918,7 @@ $ docker pull jetty@sha256:2525cce24965a7cef0fa278d7ef8cf3c734770cf906da8eb67f15
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9.4.43-jdk16` - linux; amd64
@@ -5013,7 +5013,7 @@ $ docker pull jetty@sha256:9f2d1a5e9677b29c093edeb07377dbdaac4111f0f6335523be673
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9.4.43-jdk16-slim` - linux; amd64
@@ -5108,7 +5108,7 @@ $ docker pull jetty@sha256:6c0c6214a5e0e0ccb81ad15958e2b8e65d9051e9d222eea7955b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9.4.43-jdk8` - linux; amd64
@@ -5225,7 +5225,7 @@ $ docker pull jetty@sha256:1766163ed757475be3e71a8d1eacfb642bc93955f424f3270f9b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9.4.43-jdk8-slim` - linux; amd64
@@ -5324,7 +5324,7 @@ $ docker pull jetty@sha256:4843a7f0d6fe61d62a47e7b0093fd50b462e6587b81d90a0ad630
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -5537,7 +5537,7 @@ $ docker pull jetty@sha256:150993f0e8d96f6c193ffcf657ae7aef9c4b6d695bd6a0338dda2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -5726,7 +5726,7 @@ $ docker pull jetty@sha256:d4546a17fba1a7153692d528c4429cf2fe7c7a194795d95b77598
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9.4.43-jre8` - linux; amd64
@@ -5837,7 +5837,7 @@ $ docker pull jetty@sha256:93d27e176a4f5a8e628ca87e4a6f9ab7374e6108e82268a10b542
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:9.4.43-jre8-slim` - linux; amd64
@@ -5936,7 +5936,7 @@ $ docker pull jetty@sha256:2525cce24965a7cef0fa278d7ef8cf3c734770cf906da8eb67f15
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:jdk16` - linux; amd64
@@ -6031,7 +6031,7 @@ $ docker pull jetty@sha256:2525cce24965a7cef0fa278d7ef8cf3c734770cf906da8eb67f15
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `jetty:latest` - linux; amd64
