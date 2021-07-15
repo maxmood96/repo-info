@@ -5,7 +5,7 @@ $ docker pull openjdk@sha256:50c85f8bc95c66f3eb1d8fd79cbf34e9cd509fe4cc584253e75
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64

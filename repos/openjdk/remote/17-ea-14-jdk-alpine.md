@@ -5,7 +5,7 @@ $ docker pull openjdk@sha256:4b6abae565492dbe9e7a894137c966a7485154238902f2f25e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `openjdk:17-ea-14-jdk-alpine` - linux; amd64

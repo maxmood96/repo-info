@@ -5,7 +5,7 @@ $ docker pull openjdk@sha256:b1e2d01f477fa1ed846518c9816632d00d6148cccc0f122bbf9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:18-jdk-windowsservercore-1809` - windows version 10.0.17763.2061; amd64

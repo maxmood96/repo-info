@@ -466,7 +466,7 @@ $ docker pull openjdk@sha256:93e3f78acd2886145df26a5a3c4ac32f6c82eae7a4656b9cc03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -778,7 +778,7 @@ $ docker pull openjdk@sha256:cc352834dc0c9d48787957e4e293dd9ffabbaca4a1b9e1d0e2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -933,7 +933,7 @@ $ docker pull openjdk@sha256:93e3f78acd2886145df26a5a3c4ac32f6c82eae7a4656b9cc03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -1245,7 +1245,7 @@ $ docker pull openjdk@sha256:cc352834dc0c9d48787957e4e293dd9ffabbaca4a1b9e1d0e2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -1400,7 +1400,7 @@ $ docker pull openjdk@sha256:cd8d40eeccc8aeb8cdfb5a9712d33a2ae245b1dba0d1e8d3172
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11-jdk-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -1488,7 +1488,7 @@ $ docker pull openjdk@sha256:cd8d40eeccc8aeb8cdfb5a9712d33a2ae245b1dba0d1e8d3172
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11-jdk-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -1576,7 +1576,7 @@ $ docker pull openjdk@sha256:11b35fe0df67dd5ab5b3abb177c368451cdc57bf2fcac3edda6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -1683,7 +1683,7 @@ $ docker pull openjdk@sha256:1719b42664ba6432bd1a78a671f43cc0a1856fead0a729d2c8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -1790,7 +1790,7 @@ $ docker pull openjdk@sha256:11b35fe0df67dd5ab5b3abb177c368451cdc57bf2fcac3edda6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -1897,7 +1897,7 @@ $ docker pull openjdk@sha256:6e31f41b4b90650780ccfc2b8060b44cc5ea9d9b8c33edd869c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -2016,7 +2016,7 @@ $ docker pull openjdk@sha256:6e31f41b4b90650780ccfc2b8060b44cc5ea9d9b8c33edd869c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -2135,7 +2135,7 @@ $ docker pull openjdk@sha256:4dc3631350d64fb23d9ea65cd68aa1cbf27767c5188e3863260
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -2301,7 +2301,7 @@ $ docker pull openjdk@sha256:9942f92be9b3b96bff89e659da9d769310e089f93d7e7a4ce96
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11-jdk-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -2388,7 +2388,7 @@ $ docker pull openjdk@sha256:14a559281f39deb7438689532e34542b036ff1ddc296c243b25
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:11-jdk-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -2476,7 +2476,7 @@ $ docker pull openjdk@sha256:50c85f8bc95c66f3eb1d8fd79cbf34e9cd509fe4cc584253e75
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -2760,7 +2760,7 @@ $ docker pull openjdk@sha256:e078fb6dc77e40a2de99b0e60a0dd53a80a3bd5be9575cabb4d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -2899,7 +2899,7 @@ $ docker pull openjdk@sha256:12f709ac7e4b7b9e107e083bfc5cb951303b9f519ee8a7a405b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11-jre-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -2981,7 +2981,7 @@ $ docker pull openjdk@sha256:12f709ac7e4b7b9e107e083bfc5cb951303b9f519ee8a7a405b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11-jre-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -3063,7 +3063,7 @@ $ docker pull openjdk@sha256:24de726604f496a8d34cc960f39c3f3d825ebba522d8be7b256
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -3178,7 +3178,7 @@ $ docker pull openjdk@sha256:24de726604f496a8d34cc960f39c3f3d825ebba522d8be7b256
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -3293,7 +3293,7 @@ $ docker pull openjdk@sha256:319881b388dbefc0e7b6c343d43f3bd378ea492bc6227a0a90f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -3447,7 +3447,7 @@ $ docker pull openjdk@sha256:85804cc6f6b08caf7572ea8e827ea90ffacb9f9161aea5337f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11-jre-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -3528,7 +3528,7 @@ $ docker pull openjdk@sha256:ffa6964a2f5501c2d9d5d2820f7a029502bcf7ccfa172e47e60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:11-jre-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -3610,7 +3610,7 @@ $ docker pull openjdk@sha256:cd8d40eeccc8aeb8cdfb5a9712d33a2ae245b1dba0d1e8d3172
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -3698,7 +3698,7 @@ $ docker pull openjdk@sha256:cd8d40eeccc8aeb8cdfb5a9712d33a2ae245b1dba0d1e8d3172
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -3786,7 +3786,7 @@ $ docker pull openjdk@sha256:11b35fe0df67dd5ab5b3abb177c368451cdc57bf2fcac3edda6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -3893,7 +3893,7 @@ $ docker pull openjdk@sha256:1719b42664ba6432bd1a78a671f43cc0a1856fead0a729d2c8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -4000,7 +4000,7 @@ $ docker pull openjdk@sha256:11b35fe0df67dd5ab5b3abb177c368451cdc57bf2fcac3edda6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -4107,7 +4107,7 @@ $ docker pull openjdk@sha256:6e31f41b4b90650780ccfc2b8060b44cc5ea9d9b8c33edd869c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -4226,7 +4226,7 @@ $ docker pull openjdk@sha256:6e31f41b4b90650780ccfc2b8060b44cc5ea9d9b8c33edd869c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -4345,7 +4345,7 @@ $ docker pull openjdk@sha256:4dc3631350d64fb23d9ea65cd68aa1cbf27767c5188e3863260
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -4511,7 +4511,7 @@ $ docker pull openjdk@sha256:9942f92be9b3b96bff89e659da9d769310e089f93d7e7a4ce96
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -4598,7 +4598,7 @@ $ docker pull openjdk@sha256:14a559281f39deb7438689532e34542b036ff1ddc296c243b25
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:11-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -4686,7 +4686,7 @@ $ docker pull openjdk@sha256:93e3f78acd2886145df26a5a3c4ac32f6c82eae7a4656b9cc03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -4998,7 +4998,7 @@ $ docker pull openjdk@sha256:cc352834dc0c9d48787957e4e293dd9ffabbaca4a1b9e1d0e2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -5153,7 +5153,7 @@ $ docker pull openjdk@sha256:93e3f78acd2886145df26a5a3c4ac32f6c82eae7a4656b9cc03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -5465,7 +5465,7 @@ $ docker pull openjdk@sha256:cc352834dc0c9d48787957e4e293dd9ffabbaca4a1b9e1d0e2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -5620,7 +5620,7 @@ $ docker pull openjdk@sha256:cd8d40eeccc8aeb8cdfb5a9712d33a2ae245b1dba0d1e8d3172
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0-jdk-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -5708,7 +5708,7 @@ $ docker pull openjdk@sha256:cd8d40eeccc8aeb8cdfb5a9712d33a2ae245b1dba0d1e8d3172
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0-jdk-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -5796,7 +5796,7 @@ $ docker pull openjdk@sha256:11b35fe0df67dd5ab5b3abb177c368451cdc57bf2fcac3edda6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -5903,7 +5903,7 @@ $ docker pull openjdk@sha256:1719b42664ba6432bd1a78a671f43cc0a1856fead0a729d2c8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -6010,7 +6010,7 @@ $ docker pull openjdk@sha256:11b35fe0df67dd5ab5b3abb177c368451cdc57bf2fcac3edda6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -6117,7 +6117,7 @@ $ docker pull openjdk@sha256:6e31f41b4b90650780ccfc2b8060b44cc5ea9d9b8c33edd869c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -6236,7 +6236,7 @@ $ docker pull openjdk@sha256:6e31f41b4b90650780ccfc2b8060b44cc5ea9d9b8c33edd869c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -6355,7 +6355,7 @@ $ docker pull openjdk@sha256:4dc3631350d64fb23d9ea65cd68aa1cbf27767c5188e3863260
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -6521,7 +6521,7 @@ $ docker pull openjdk@sha256:9942f92be9b3b96bff89e659da9d769310e089f93d7e7a4ce96
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0-jdk-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -6608,7 +6608,7 @@ $ docker pull openjdk@sha256:14a559281f39deb7438689532e34542b036ff1ddc296c243b25
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:11.0-jdk-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -6696,7 +6696,7 @@ $ docker pull openjdk@sha256:50c85f8bc95c66f3eb1d8fd79cbf34e9cd509fe4cc584253e75
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -6980,7 +6980,7 @@ $ docker pull openjdk@sha256:e078fb6dc77e40a2de99b0e60a0dd53a80a3bd5be9575cabb4d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -7119,7 +7119,7 @@ $ docker pull openjdk@sha256:12f709ac7e4b7b9e107e083bfc5cb951303b9f519ee8a7a405b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0-jre-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -7201,7 +7201,7 @@ $ docker pull openjdk@sha256:12f709ac7e4b7b9e107e083bfc5cb951303b9f519ee8a7a405b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0-jre-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -7283,7 +7283,7 @@ $ docker pull openjdk@sha256:24de726604f496a8d34cc960f39c3f3d825ebba522d8be7b256
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -7398,7 +7398,7 @@ $ docker pull openjdk@sha256:24de726604f496a8d34cc960f39c3f3d825ebba522d8be7b256
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -7513,7 +7513,7 @@ $ docker pull openjdk@sha256:319881b388dbefc0e7b6c343d43f3bd378ea492bc6227a0a90f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -7667,7 +7667,7 @@ $ docker pull openjdk@sha256:85804cc6f6b08caf7572ea8e827ea90ffacb9f9161aea5337f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0-jre-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -7748,7 +7748,7 @@ $ docker pull openjdk@sha256:ffa6964a2f5501c2d9d5d2820f7a029502bcf7ccfa172e47e60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:11.0-jre-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -7830,7 +7830,7 @@ $ docker pull openjdk@sha256:cd8d40eeccc8aeb8cdfb5a9712d33a2ae245b1dba0d1e8d3172
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -7918,7 +7918,7 @@ $ docker pull openjdk@sha256:cd8d40eeccc8aeb8cdfb5a9712d33a2ae245b1dba0d1e8d3172
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -8006,7 +8006,7 @@ $ docker pull openjdk@sha256:11b35fe0df67dd5ab5b3abb177c368451cdc57bf2fcac3edda6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -8113,7 +8113,7 @@ $ docker pull openjdk@sha256:1719b42664ba6432bd1a78a671f43cc0a1856fead0a729d2c8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -8220,7 +8220,7 @@ $ docker pull openjdk@sha256:11b35fe0df67dd5ab5b3abb177c368451cdc57bf2fcac3edda6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -8327,7 +8327,7 @@ $ docker pull openjdk@sha256:6e31f41b4b90650780ccfc2b8060b44cc5ea9d9b8c33edd869c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -8446,7 +8446,7 @@ $ docker pull openjdk@sha256:6e31f41b4b90650780ccfc2b8060b44cc5ea9d9b8c33edd869c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -8565,7 +8565,7 @@ $ docker pull openjdk@sha256:4dc3631350d64fb23d9ea65cd68aa1cbf27767c5188e3863260
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -8731,7 +8731,7 @@ $ docker pull openjdk@sha256:9942f92be9b3b96bff89e659da9d769310e089f93d7e7a4ce96
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -8818,7 +8818,7 @@ $ docker pull openjdk@sha256:14a559281f39deb7438689532e34542b036ff1ddc296c243b25
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:11.0-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -8906,7 +8906,7 @@ $ docker pull openjdk@sha256:93e3f78acd2886145df26a5a3c4ac32f6c82eae7a4656b9cc03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -9218,7 +9218,7 @@ $ docker pull openjdk@sha256:93e3f78acd2886145df26a5a3c4ac32f6c82eae7a4656b9cc03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -9530,7 +9530,7 @@ $ docker pull openjdk@sha256:cc352834dc0c9d48787957e4e293dd9ffabbaca4a1b9e1d0e2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -9685,7 +9685,7 @@ $ docker pull openjdk@sha256:93e3f78acd2886145df26a5a3c4ac32f6c82eae7a4656b9cc03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -9997,7 +9997,7 @@ $ docker pull openjdk@sha256:cc352834dc0c9d48787957e4e293dd9ffabbaca4a1b9e1d0e2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -10152,7 +10152,7 @@ $ docker pull openjdk@sha256:cd8d40eeccc8aeb8cdfb5a9712d33a2ae245b1dba0d1e8d3172
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0.11-9-jdk-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -10240,7 +10240,7 @@ $ docker pull openjdk@sha256:cd8d40eeccc8aeb8cdfb5a9712d33a2ae245b1dba0d1e8d3172
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0.11-9-jdk-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -10328,7 +10328,7 @@ $ docker pull openjdk@sha256:11b35fe0df67dd5ab5b3abb177c368451cdc57bf2fcac3edda6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -10435,7 +10435,7 @@ $ docker pull openjdk@sha256:1719b42664ba6432bd1a78a671f43cc0a1856fead0a729d2c8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -10542,7 +10542,7 @@ $ docker pull openjdk@sha256:11b35fe0df67dd5ab5b3abb177c368451cdc57bf2fcac3edda6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -10649,7 +10649,7 @@ $ docker pull openjdk@sha256:6e31f41b4b90650780ccfc2b8060b44cc5ea9d9b8c33edd869c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -10768,7 +10768,7 @@ $ docker pull openjdk@sha256:6e31f41b4b90650780ccfc2b8060b44cc5ea9d9b8c33edd869c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -10887,7 +10887,7 @@ $ docker pull openjdk@sha256:4dc3631350d64fb23d9ea65cd68aa1cbf27767c5188e3863260
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -11053,7 +11053,7 @@ $ docker pull openjdk@sha256:9942f92be9b3b96bff89e659da9d769310e089f93d7e7a4ce96
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0.11-9-jdk-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -11140,7 +11140,7 @@ $ docker pull openjdk@sha256:14a559281f39deb7438689532e34542b036ff1ddc296c243b25
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:11.0.11-9-jdk-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -11228,7 +11228,7 @@ $ docker pull openjdk@sha256:50c85f8bc95c66f3eb1d8fd79cbf34e9cd509fe4cc584253e75
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -11512,7 +11512,7 @@ $ docker pull openjdk@sha256:e078fb6dc77e40a2de99b0e60a0dd53a80a3bd5be9575cabb4d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -11651,7 +11651,7 @@ $ docker pull openjdk@sha256:12f709ac7e4b7b9e107e083bfc5cb951303b9f519ee8a7a405b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0.11-9-jre-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -11733,7 +11733,7 @@ $ docker pull openjdk@sha256:12f709ac7e4b7b9e107e083bfc5cb951303b9f519ee8a7a405b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0.11-9-jre-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -11815,7 +11815,7 @@ $ docker pull openjdk@sha256:24de726604f496a8d34cc960f39c3f3d825ebba522d8be7b256
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -11930,7 +11930,7 @@ $ docker pull openjdk@sha256:24de726604f496a8d34cc960f39c3f3d825ebba522d8be7b256
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -12045,7 +12045,7 @@ $ docker pull openjdk@sha256:319881b388dbefc0e7b6c343d43f3bd378ea492bc6227a0a90f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -12199,7 +12199,7 @@ $ docker pull openjdk@sha256:85804cc6f6b08caf7572ea8e827ea90ffacb9f9161aea5337f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0.11-9-jre-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -12280,7 +12280,7 @@ $ docker pull openjdk@sha256:ffa6964a2f5501c2d9d5d2820f7a029502bcf7ccfa172e47e60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:11.0.11-9-jre-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -12362,7 +12362,7 @@ $ docker pull openjdk@sha256:cd8d40eeccc8aeb8cdfb5a9712d33a2ae245b1dba0d1e8d3172
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0.11-9-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -12450,7 +12450,7 @@ $ docker pull openjdk@sha256:cd8d40eeccc8aeb8cdfb5a9712d33a2ae245b1dba0d1e8d3172
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0.11-9-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -12538,7 +12538,7 @@ $ docker pull openjdk@sha256:11b35fe0df67dd5ab5b3abb177c368451cdc57bf2fcac3edda6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -12645,7 +12645,7 @@ $ docker pull openjdk@sha256:1719b42664ba6432bd1a78a671f43cc0a1856fead0a729d2c8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -12752,7 +12752,7 @@ $ docker pull openjdk@sha256:11b35fe0df67dd5ab5b3abb177c368451cdc57bf2fcac3edda6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -12859,7 +12859,7 @@ $ docker pull openjdk@sha256:6e31f41b4b90650780ccfc2b8060b44cc5ea9d9b8c33edd869c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -12978,7 +12978,7 @@ $ docker pull openjdk@sha256:6e31f41b4b90650780ccfc2b8060b44cc5ea9d9b8c33edd869c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -13097,7 +13097,7 @@ $ docker pull openjdk@sha256:4dc3631350d64fb23d9ea65cd68aa1cbf27767c5188e3863260
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -13263,7 +13263,7 @@ $ docker pull openjdk@sha256:9942f92be9b3b96bff89e659da9d769310e089f93d7e7a4ce96
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0.11-9-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -13350,7 +13350,7 @@ $ docker pull openjdk@sha256:14a559281f39deb7438689532e34542b036ff1ddc296c243b25
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:11.0.11-9-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -13438,7 +13438,7 @@ $ docker pull openjdk@sha256:cc352834dc0c9d48787957e4e293dd9ffabbaca4a1b9e1d0e2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -13593,7 +13593,7 @@ $ docker pull openjdk@sha256:93e3f78acd2886145df26a5a3c4ac32f6c82eae7a4656b9cc03
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -13905,7 +13905,7 @@ $ docker pull openjdk@sha256:cc352834dc0c9d48787957e4e293dd9ffabbaca4a1b9e1d0e2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -14060,7 +14060,7 @@ $ docker pull openjdk@sha256:cd8d40eeccc8aeb8cdfb5a9712d33a2ae245b1dba0d1e8d3172
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0.11-jdk-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -14148,7 +14148,7 @@ $ docker pull openjdk@sha256:cd8d40eeccc8aeb8cdfb5a9712d33a2ae245b1dba0d1e8d3172
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0.11-jdk-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -14236,7 +14236,7 @@ $ docker pull openjdk@sha256:11b35fe0df67dd5ab5b3abb177c368451cdc57bf2fcac3edda6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -14343,7 +14343,7 @@ $ docker pull openjdk@sha256:1719b42664ba6432bd1a78a671f43cc0a1856fead0a729d2c8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -14450,7 +14450,7 @@ $ docker pull openjdk@sha256:11b35fe0df67dd5ab5b3abb177c368451cdc57bf2fcac3edda6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -14557,7 +14557,7 @@ $ docker pull openjdk@sha256:6e31f41b4b90650780ccfc2b8060b44cc5ea9d9b8c33edd869c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -14676,7 +14676,7 @@ $ docker pull openjdk@sha256:6e31f41b4b90650780ccfc2b8060b44cc5ea9d9b8c33edd869c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -14795,7 +14795,7 @@ $ docker pull openjdk@sha256:4dc3631350d64fb23d9ea65cd68aa1cbf27767c5188e3863260
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -14961,7 +14961,7 @@ $ docker pull openjdk@sha256:9942f92be9b3b96bff89e659da9d769310e089f93d7e7a4ce96
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0.11-jdk-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -15048,7 +15048,7 @@ $ docker pull openjdk@sha256:14a559281f39deb7438689532e34542b036ff1ddc296c243b25
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:11.0.11-jdk-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -15136,7 +15136,7 @@ $ docker pull openjdk@sha256:50c85f8bc95c66f3eb1d8fd79cbf34e9cd509fe4cc584253e75
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -15420,7 +15420,7 @@ $ docker pull openjdk@sha256:e078fb6dc77e40a2de99b0e60a0dd53a80a3bd5be9575cabb4d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -15559,7 +15559,7 @@ $ docker pull openjdk@sha256:12f709ac7e4b7b9e107e083bfc5cb951303b9f519ee8a7a405b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0.11-jre-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -15641,7 +15641,7 @@ $ docker pull openjdk@sha256:12f709ac7e4b7b9e107e083bfc5cb951303b9f519ee8a7a405b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0.11-jre-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -15723,7 +15723,7 @@ $ docker pull openjdk@sha256:24de726604f496a8d34cc960f39c3f3d825ebba522d8be7b256
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -15838,7 +15838,7 @@ $ docker pull openjdk@sha256:24de726604f496a8d34cc960f39c3f3d825ebba522d8be7b256
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -15953,7 +15953,7 @@ $ docker pull openjdk@sha256:319881b388dbefc0e7b6c343d43f3bd378ea492bc6227a0a90f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -16107,7 +16107,7 @@ $ docker pull openjdk@sha256:85804cc6f6b08caf7572ea8e827ea90ffacb9f9161aea5337f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0.11-jre-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -16188,7 +16188,7 @@ $ docker pull openjdk@sha256:ffa6964a2f5501c2d9d5d2820f7a029502bcf7ccfa172e47e60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:11.0.11-jre-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -16270,7 +16270,7 @@ $ docker pull openjdk@sha256:cd8d40eeccc8aeb8cdfb5a9712d33a2ae245b1dba0d1e8d3172
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0.11-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -16358,7 +16358,7 @@ $ docker pull openjdk@sha256:cd8d40eeccc8aeb8cdfb5a9712d33a2ae245b1dba0d1e8d3172
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0.11-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -16446,7 +16446,7 @@ $ docker pull openjdk@sha256:11b35fe0df67dd5ab5b3abb177c368451cdc57bf2fcac3edda6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -16553,7 +16553,7 @@ $ docker pull openjdk@sha256:1719b42664ba6432bd1a78a671f43cc0a1856fead0a729d2c8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -16660,7 +16660,7 @@ $ docker pull openjdk@sha256:11b35fe0df67dd5ab5b3abb177c368451cdc57bf2fcac3edda6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -16767,7 +16767,7 @@ $ docker pull openjdk@sha256:6e31f41b4b90650780ccfc2b8060b44cc5ea9d9b8c33edd869c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -16886,7 +16886,7 @@ $ docker pull openjdk@sha256:6e31f41b4b90650780ccfc2b8060b44cc5ea9d9b8c33edd869c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -17005,7 +17005,7 @@ $ docker pull openjdk@sha256:4dc3631350d64fb23d9ea65cd68aa1cbf27767c5188e3863260
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -17171,7 +17171,7 @@ $ docker pull openjdk@sha256:9942f92be9b3b96bff89e659da9d769310e089f93d7e7a4ce96
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:11.0.11-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -17258,7 +17258,7 @@ $ docker pull openjdk@sha256:14a559281f39deb7438689532e34542b036ff1ddc296c243b25
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:11.0.11-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -17346,7 +17346,7 @@ $ docker pull openjdk@sha256:9667ee3dbe03be6b41ae9e855f0dbf9f2ac2b78a50a3a8b9834
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -17622,7 +17622,7 @@ $ docker pull openjdk@sha256:61f3786a28ed911028f8e7e3b65a57a8a9ed04067d137317d36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -17765,7 +17765,7 @@ $ docker pull openjdk@sha256:9667ee3dbe03be6b41ae9e855f0dbf9f2ac2b78a50a3a8b9834
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -18041,7 +18041,7 @@ $ docker pull openjdk@sha256:61f3786a28ed911028f8e7e3b65a57a8a9ed04067d137317d36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -18184,7 +18184,7 @@ $ docker pull openjdk@sha256:c9977d04cdef3670c028ef7e24eb88733bd2e7faed0998d50a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:16-jdk-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -18272,7 +18272,7 @@ $ docker pull openjdk@sha256:c9977d04cdef3670c028ef7e24eb88733bd2e7faed0998d50a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:16-jdk-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -18360,7 +18360,7 @@ $ docker pull openjdk@sha256:d1d6d6a61221be004663bfa0b5c4d63fa691047995b9b0c3b5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -18467,7 +18467,7 @@ $ docker pull openjdk@sha256:8f8e6b265fbc17a2bfd132ab10760af7c27c6cc6482a24e631e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -18574,7 +18574,7 @@ $ docker pull openjdk@sha256:d1d6d6a61221be004663bfa0b5c4d63fa691047995b9b0c3b5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -18681,7 +18681,7 @@ $ docker pull openjdk@sha256:e20175812fb1b559a3a98d07515c42c030531d9b06d65821d69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -18788,7 +18788,7 @@ $ docker pull openjdk@sha256:e20175812fb1b559a3a98d07515c42c030531d9b06d65821d69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -18895,7 +18895,7 @@ $ docker pull openjdk@sha256:54ed9735b04e61ab8f6a3ebc9043a4072b1b0f814275cd5a4a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -19073,7 +19073,7 @@ $ docker pull openjdk@sha256:771f96bdd364c88ecf9c2f3b1871bfa85dda52eca24077b7a51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:16-jdk-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -19166,7 +19166,7 @@ $ docker pull openjdk@sha256:dd9a76aeb96c7fe59ab217298061feb8529b88f8b4257de0e9a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:16-jdk-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -19260,7 +19260,7 @@ $ docker pull openjdk@sha256:c9977d04cdef3670c028ef7e24eb88733bd2e7faed0998d50a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:16-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -19348,7 +19348,7 @@ $ docker pull openjdk@sha256:c9977d04cdef3670c028ef7e24eb88733bd2e7faed0998d50a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:16-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -19436,7 +19436,7 @@ $ docker pull openjdk@sha256:d1d6d6a61221be004663bfa0b5c4d63fa691047995b9b0c3b5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -19543,7 +19543,7 @@ $ docker pull openjdk@sha256:8f8e6b265fbc17a2bfd132ab10760af7c27c6cc6482a24e631e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -19650,7 +19650,7 @@ $ docker pull openjdk@sha256:d1d6d6a61221be004663bfa0b5c4d63fa691047995b9b0c3b5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -19757,7 +19757,7 @@ $ docker pull openjdk@sha256:e20175812fb1b559a3a98d07515c42c030531d9b06d65821d69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -19864,7 +19864,7 @@ $ docker pull openjdk@sha256:e20175812fb1b559a3a98d07515c42c030531d9b06d65821d69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -19971,7 +19971,7 @@ $ docker pull openjdk@sha256:54ed9735b04e61ab8f6a3ebc9043a4072b1b0f814275cd5a4a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -20149,7 +20149,7 @@ $ docker pull openjdk@sha256:771f96bdd364c88ecf9c2f3b1871bfa85dda52eca24077b7a51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:16-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -20242,7 +20242,7 @@ $ docker pull openjdk@sha256:dd9a76aeb96c7fe59ab217298061feb8529b88f8b4257de0e9a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:16-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -20336,7 +20336,7 @@ $ docker pull openjdk@sha256:9667ee3dbe03be6b41ae9e855f0dbf9f2ac2b78a50a3a8b9834
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -20612,7 +20612,7 @@ $ docker pull openjdk@sha256:61f3786a28ed911028f8e7e3b65a57a8a9ed04067d137317d36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -20755,7 +20755,7 @@ $ docker pull openjdk@sha256:9667ee3dbe03be6b41ae9e855f0dbf9f2ac2b78a50a3a8b9834
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -21031,7 +21031,7 @@ $ docker pull openjdk@sha256:61f3786a28ed911028f8e7e3b65a57a8a9ed04067d137317d36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -21174,7 +21174,7 @@ $ docker pull openjdk@sha256:c9977d04cdef3670c028ef7e24eb88733bd2e7faed0998d50a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:16.0-jdk-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -21262,7 +21262,7 @@ $ docker pull openjdk@sha256:c9977d04cdef3670c028ef7e24eb88733bd2e7faed0998d50a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:16.0-jdk-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -21350,7 +21350,7 @@ $ docker pull openjdk@sha256:d1d6d6a61221be004663bfa0b5c4d63fa691047995b9b0c3b5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -21457,7 +21457,7 @@ $ docker pull openjdk@sha256:8f8e6b265fbc17a2bfd132ab10760af7c27c6cc6482a24e631e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -21564,7 +21564,7 @@ $ docker pull openjdk@sha256:d1d6d6a61221be004663bfa0b5c4d63fa691047995b9b0c3b5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -21671,7 +21671,7 @@ $ docker pull openjdk@sha256:e20175812fb1b559a3a98d07515c42c030531d9b06d65821d69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -21778,7 +21778,7 @@ $ docker pull openjdk@sha256:e20175812fb1b559a3a98d07515c42c030531d9b06d65821d69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -21885,7 +21885,7 @@ $ docker pull openjdk@sha256:54ed9735b04e61ab8f6a3ebc9043a4072b1b0f814275cd5a4a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -22063,7 +22063,7 @@ $ docker pull openjdk@sha256:771f96bdd364c88ecf9c2f3b1871bfa85dda52eca24077b7a51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:16.0-jdk-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -22156,7 +22156,7 @@ $ docker pull openjdk@sha256:dd9a76aeb96c7fe59ab217298061feb8529b88f8b4257de0e9a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:16.0-jdk-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -22250,7 +22250,7 @@ $ docker pull openjdk@sha256:c9977d04cdef3670c028ef7e24eb88733bd2e7faed0998d50a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:16.0-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -22338,7 +22338,7 @@ $ docker pull openjdk@sha256:c9977d04cdef3670c028ef7e24eb88733bd2e7faed0998d50a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:16.0-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -22426,7 +22426,7 @@ $ docker pull openjdk@sha256:d1d6d6a61221be004663bfa0b5c4d63fa691047995b9b0c3b5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -22533,7 +22533,7 @@ $ docker pull openjdk@sha256:8f8e6b265fbc17a2bfd132ab10760af7c27c6cc6482a24e631e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -22640,7 +22640,7 @@ $ docker pull openjdk@sha256:d1d6d6a61221be004663bfa0b5c4d63fa691047995b9b0c3b5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -22747,7 +22747,7 @@ $ docker pull openjdk@sha256:e20175812fb1b559a3a98d07515c42c030531d9b06d65821d69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -22854,7 +22854,7 @@ $ docker pull openjdk@sha256:e20175812fb1b559a3a98d07515c42c030531d9b06d65821d69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -22961,7 +22961,7 @@ $ docker pull openjdk@sha256:54ed9735b04e61ab8f6a3ebc9043a4072b1b0f814275cd5a4a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -23139,7 +23139,7 @@ $ docker pull openjdk@sha256:771f96bdd364c88ecf9c2f3b1871bfa85dda52eca24077b7a51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:16.0-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -23232,7 +23232,7 @@ $ docker pull openjdk@sha256:dd9a76aeb96c7fe59ab217298061feb8529b88f8b4257de0e9a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:16.0-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -23326,7 +23326,7 @@ $ docker pull openjdk@sha256:9667ee3dbe03be6b41ae9e855f0dbf9f2ac2b78a50a3a8b9834
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -23602,7 +23602,7 @@ $ docker pull openjdk@sha256:61f3786a28ed911028f8e7e3b65a57a8a9ed04067d137317d36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -23745,7 +23745,7 @@ $ docker pull openjdk@sha256:9667ee3dbe03be6b41ae9e855f0dbf9f2ac2b78a50a3a8b9834
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -24021,7 +24021,7 @@ $ docker pull openjdk@sha256:61f3786a28ed911028f8e7e3b65a57a8a9ed04067d137317d36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -24164,7 +24164,7 @@ $ docker pull openjdk@sha256:c9977d04cdef3670c028ef7e24eb88733bd2e7faed0998d50a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:16.0.1-jdk-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -24252,7 +24252,7 @@ $ docker pull openjdk@sha256:c9977d04cdef3670c028ef7e24eb88733bd2e7faed0998d50a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:16.0.1-jdk-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -24340,7 +24340,7 @@ $ docker pull openjdk@sha256:d1d6d6a61221be004663bfa0b5c4d63fa691047995b9b0c3b5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -24447,7 +24447,7 @@ $ docker pull openjdk@sha256:8f8e6b265fbc17a2bfd132ab10760af7c27c6cc6482a24e631e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -24554,7 +24554,7 @@ $ docker pull openjdk@sha256:d1d6d6a61221be004663bfa0b5c4d63fa691047995b9b0c3b5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -24661,7 +24661,7 @@ $ docker pull openjdk@sha256:e20175812fb1b559a3a98d07515c42c030531d9b06d65821d69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -24768,7 +24768,7 @@ $ docker pull openjdk@sha256:e20175812fb1b559a3a98d07515c42c030531d9b06d65821d69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -24875,7 +24875,7 @@ $ docker pull openjdk@sha256:54ed9735b04e61ab8f6a3ebc9043a4072b1b0f814275cd5a4a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -25053,7 +25053,7 @@ $ docker pull openjdk@sha256:771f96bdd364c88ecf9c2f3b1871bfa85dda52eca24077b7a51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:16.0.1-jdk-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -25146,7 +25146,7 @@ $ docker pull openjdk@sha256:dd9a76aeb96c7fe59ab217298061feb8529b88f8b4257de0e9a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:16.0.1-jdk-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -25240,7 +25240,7 @@ $ docker pull openjdk@sha256:c9977d04cdef3670c028ef7e24eb88733bd2e7faed0998d50a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:16.0.1-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -25328,7 +25328,7 @@ $ docker pull openjdk@sha256:c9977d04cdef3670c028ef7e24eb88733bd2e7faed0998d50a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:16.0.1-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -25416,7 +25416,7 @@ $ docker pull openjdk@sha256:d1d6d6a61221be004663bfa0b5c4d63fa691047995b9b0c3b5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -25523,7 +25523,7 @@ $ docker pull openjdk@sha256:8f8e6b265fbc17a2bfd132ab10760af7c27c6cc6482a24e631e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -25630,7 +25630,7 @@ $ docker pull openjdk@sha256:d1d6d6a61221be004663bfa0b5c4d63fa691047995b9b0c3b5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -25737,7 +25737,7 @@ $ docker pull openjdk@sha256:e20175812fb1b559a3a98d07515c42c030531d9b06d65821d69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -25844,7 +25844,7 @@ $ docker pull openjdk@sha256:e20175812fb1b559a3a98d07515c42c030531d9b06d65821d69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -25951,7 +25951,7 @@ $ docker pull openjdk@sha256:54ed9735b04e61ab8f6a3ebc9043a4072b1b0f814275cd5a4a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -26129,7 +26129,7 @@ $ docker pull openjdk@sha256:771f96bdd364c88ecf9c2f3b1871bfa85dda52eca24077b7a51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:16.0.1-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -26222,7 +26222,7 @@ $ docker pull openjdk@sha256:dd9a76aeb96c7fe59ab217298061feb8529b88f8b4257de0e9a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:16.0.1-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -26316,7 +26316,7 @@ $ docker pull openjdk@sha256:37bc0df7bf8590cc8679a546a609b17deaf4128e5dc21ef7a16
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -26592,7 +26592,7 @@ $ docker pull openjdk@sha256:4b6abae565492dbe9e7a894137c966a7485154238902f2f25e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `openjdk:17-alpine` - linux; amd64
@@ -26648,7 +26648,7 @@ $ docker pull openjdk@sha256:7ee07585addded886cfea377f2ff6d03c707509ef2426b70bd6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `openjdk:17-alpine3.13` - linux; amd64
@@ -26704,7 +26704,7 @@ $ docker pull openjdk@sha256:4b6abae565492dbe9e7a894137c966a7485154238902f2f25e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `openjdk:17-alpine3.14` - linux; amd64
@@ -26760,7 +26760,7 @@ $ docker pull openjdk@sha256:ca7f7d903e1b9a4b2858a4d24b53387f6ad3a780c8785b12289
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -26903,7 +26903,7 @@ $ docker pull openjdk@sha256:37bc0df7bf8590cc8679a546a609b17deaf4128e5dc21ef7a16
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -27179,7 +27179,7 @@ $ docker pull openjdk@sha256:4b6abae565492dbe9e7a894137c966a7485154238902f2f25e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `openjdk:17-ea-14-alpine` - linux; amd64
@@ -27235,7 +27235,7 @@ $ docker pull openjdk@sha256:7ee07585addded886cfea377f2ff6d03c707509ef2426b70bd6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `openjdk:17-ea-14-alpine3.13` - linux; amd64
@@ -27291,7 +27291,7 @@ $ docker pull openjdk@sha256:4b6abae565492dbe9e7a894137c966a7485154238902f2f25e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `openjdk:17-ea-14-alpine3.14` - linux; amd64
@@ -27347,7 +27347,7 @@ $ docker pull openjdk@sha256:4b6abae565492dbe9e7a894137c966a7485154238902f2f25e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `openjdk:17-ea-14-jdk-alpine` - linux; amd64
@@ -27403,7 +27403,7 @@ $ docker pull openjdk@sha256:7ee07585addded886cfea377f2ff6d03c707509ef2426b70bd6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `openjdk:17-ea-14-jdk-alpine3.13` - linux; amd64
@@ -27459,7 +27459,7 @@ $ docker pull openjdk@sha256:4b6abae565492dbe9e7a894137c966a7485154238902f2f25e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `openjdk:17-ea-14-jdk-alpine3.14` - linux; amd64
@@ -27515,7 +27515,7 @@ $ docker pull openjdk@sha256:37bc0df7bf8590cc8679a546a609b17deaf4128e5dc21ef7a16
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -27791,7 +27791,7 @@ $ docker pull openjdk@sha256:ca7f7d903e1b9a4b2858a4d24b53387f6ad3a780c8785b12289
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -27934,7 +27934,7 @@ $ docker pull openjdk@sha256:37bc0df7bf8590cc8679a546a609b17deaf4128e5dc21ef7a16
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -28210,7 +28210,7 @@ $ docker pull openjdk@sha256:ca7f7d903e1b9a4b2858a4d24b53387f6ad3a780c8785b12289
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -28353,7 +28353,7 @@ $ docker pull openjdk@sha256:4e63ab849817d92e5fdc68ecc50cf51685be241dcf1f0b773c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:17-ea-30-jdk-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -28441,7 +28441,7 @@ $ docker pull openjdk@sha256:4e63ab849817d92e5fdc68ecc50cf51685be241dcf1f0b773c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:17-ea-30-jdk-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -28529,7 +28529,7 @@ $ docker pull openjdk@sha256:c85aadb51eb81cb0df3bf1c68ab7ebb103db5761187f1512942
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -28636,7 +28636,7 @@ $ docker pull openjdk@sha256:f1bdc0cf20096e38bf9b782eff9af70e7d40330550a4c05fd2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -28743,7 +28743,7 @@ $ docker pull openjdk@sha256:c85aadb51eb81cb0df3bf1c68ab7ebb103db5761187f1512942
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -28850,7 +28850,7 @@ $ docker pull openjdk@sha256:3e18ba703630d12a5781f8710fec8a0b68186a2d5fad6e7b08b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -28957,7 +28957,7 @@ $ docker pull openjdk@sha256:3e18ba703630d12a5781f8710fec8a0b68186a2d5fad6e7b08b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -29064,7 +29064,7 @@ $ docker pull openjdk@sha256:81507ff821468180f6ca2dee100cb728d7dcd62e94b3ddc2e84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -29242,7 +29242,7 @@ $ docker pull openjdk@sha256:a8e31ef91cf6cac7a32c42eb3d0eb9d5defa94512cb9361d9a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:17-ea-30-jdk-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -29335,7 +29335,7 @@ $ docker pull openjdk@sha256:1b595689ab245a453264a5c83348a6c7913e1a84b7b90551666
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:17-ea-30-jdk-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -29429,7 +29429,7 @@ $ docker pull openjdk@sha256:4e63ab849817d92e5fdc68ecc50cf51685be241dcf1f0b773c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:17-ea-30-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -29517,7 +29517,7 @@ $ docker pull openjdk@sha256:4e63ab849817d92e5fdc68ecc50cf51685be241dcf1f0b773c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:17-ea-30-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -29605,7 +29605,7 @@ $ docker pull openjdk@sha256:c85aadb51eb81cb0df3bf1c68ab7ebb103db5761187f1512942
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -29712,7 +29712,7 @@ $ docker pull openjdk@sha256:f1bdc0cf20096e38bf9b782eff9af70e7d40330550a4c05fd2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -29819,7 +29819,7 @@ $ docker pull openjdk@sha256:c85aadb51eb81cb0df3bf1c68ab7ebb103db5761187f1512942
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -29926,7 +29926,7 @@ $ docker pull openjdk@sha256:3e18ba703630d12a5781f8710fec8a0b68186a2d5fad6e7b08b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -30033,7 +30033,7 @@ $ docker pull openjdk@sha256:3e18ba703630d12a5781f8710fec8a0b68186a2d5fad6e7b08b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -30140,7 +30140,7 @@ $ docker pull openjdk@sha256:81507ff821468180f6ca2dee100cb728d7dcd62e94b3ddc2e84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -30318,7 +30318,7 @@ $ docker pull openjdk@sha256:a8e31ef91cf6cac7a32c42eb3d0eb9d5defa94512cb9361d9a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:17-ea-30-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -30411,7 +30411,7 @@ $ docker pull openjdk@sha256:1b595689ab245a453264a5c83348a6c7913e1a84b7b90551666
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:17-ea-30-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -30505,7 +30505,7 @@ $ docker pull openjdk@sha256:4b6abae565492dbe9e7a894137c966a7485154238902f2f25e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `openjdk:17-ea-alpine` - linux; amd64
@@ -30561,7 +30561,7 @@ $ docker pull openjdk@sha256:7ee07585addded886cfea377f2ff6d03c707509ef2426b70bd6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `openjdk:17-ea-alpine3.13` - linux; amd64
@@ -30617,7 +30617,7 @@ $ docker pull openjdk@sha256:4b6abae565492dbe9e7a894137c966a7485154238902f2f25e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `openjdk:17-ea-alpine3.14` - linux; amd64
@@ -30673,7 +30673,7 @@ $ docker pull openjdk@sha256:ca7f7d903e1b9a4b2858a4d24b53387f6ad3a780c8785b12289
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -30816,7 +30816,7 @@ $ docker pull openjdk@sha256:37bc0df7bf8590cc8679a546a609b17deaf4128e5dc21ef7a16
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -31092,7 +31092,7 @@ $ docker pull openjdk@sha256:4b6abae565492dbe9e7a894137c966a7485154238902f2f25e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `openjdk:17-ea-jdk-alpine` - linux; amd64
@@ -31148,7 +31148,7 @@ $ docker pull openjdk@sha256:7ee07585addded886cfea377f2ff6d03c707509ef2426b70bd6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `openjdk:17-ea-jdk-alpine3.13` - linux; amd64
@@ -31204,7 +31204,7 @@ $ docker pull openjdk@sha256:4b6abae565492dbe9e7a894137c966a7485154238902f2f25e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `openjdk:17-ea-jdk-alpine3.14` - linux; amd64
@@ -31260,7 +31260,7 @@ $ docker pull openjdk@sha256:ca7f7d903e1b9a4b2858a4d24b53387f6ad3a780c8785b12289
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -31403,7 +31403,7 @@ $ docker pull openjdk@sha256:4e63ab849817d92e5fdc68ecc50cf51685be241dcf1f0b773c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:17-ea-jdk-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -31491,7 +31491,7 @@ $ docker pull openjdk@sha256:4e63ab849817d92e5fdc68ecc50cf51685be241dcf1f0b773c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:17-ea-jdk-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -31579,7 +31579,7 @@ $ docker pull openjdk@sha256:c85aadb51eb81cb0df3bf1c68ab7ebb103db5761187f1512942
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -31686,7 +31686,7 @@ $ docker pull openjdk@sha256:f1bdc0cf20096e38bf9b782eff9af70e7d40330550a4c05fd2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -31793,7 +31793,7 @@ $ docker pull openjdk@sha256:c85aadb51eb81cb0df3bf1c68ab7ebb103db5761187f1512942
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -31900,7 +31900,7 @@ $ docker pull openjdk@sha256:3e18ba703630d12a5781f8710fec8a0b68186a2d5fad6e7b08b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -32007,7 +32007,7 @@ $ docker pull openjdk@sha256:3e18ba703630d12a5781f8710fec8a0b68186a2d5fad6e7b08b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -32114,7 +32114,7 @@ $ docker pull openjdk@sha256:81507ff821468180f6ca2dee100cb728d7dcd62e94b3ddc2e84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -32292,7 +32292,7 @@ $ docker pull openjdk@sha256:a8e31ef91cf6cac7a32c42eb3d0eb9d5defa94512cb9361d9a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:17-ea-jdk-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -32385,7 +32385,7 @@ $ docker pull openjdk@sha256:1b595689ab245a453264a5c83348a6c7913e1a84b7b90551666
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:17-ea-jdk-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -32479,7 +32479,7 @@ $ docker pull openjdk@sha256:4e63ab849817d92e5fdc68ecc50cf51685be241dcf1f0b773c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:17-ea-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -32567,7 +32567,7 @@ $ docker pull openjdk@sha256:4e63ab849817d92e5fdc68ecc50cf51685be241dcf1f0b773c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:17-ea-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -32655,7 +32655,7 @@ $ docker pull openjdk@sha256:c85aadb51eb81cb0df3bf1c68ab7ebb103db5761187f1512942
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -32762,7 +32762,7 @@ $ docker pull openjdk@sha256:f1bdc0cf20096e38bf9b782eff9af70e7d40330550a4c05fd2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -32869,7 +32869,7 @@ $ docker pull openjdk@sha256:c85aadb51eb81cb0df3bf1c68ab7ebb103db5761187f1512942
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -32976,7 +32976,7 @@ $ docker pull openjdk@sha256:3e18ba703630d12a5781f8710fec8a0b68186a2d5fad6e7b08b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -33083,7 +33083,7 @@ $ docker pull openjdk@sha256:3e18ba703630d12a5781f8710fec8a0b68186a2d5fad6e7b08b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -33190,7 +33190,7 @@ $ docker pull openjdk@sha256:81507ff821468180f6ca2dee100cb728d7dcd62e94b3ddc2e84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -33368,7 +33368,7 @@ $ docker pull openjdk@sha256:a8e31ef91cf6cac7a32c42eb3d0eb9d5defa94512cb9361d9a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:17-ea-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -33461,7 +33461,7 @@ $ docker pull openjdk@sha256:1b595689ab245a453264a5c83348a6c7913e1a84b7b90551666
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:17-ea-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -33555,7 +33555,7 @@ $ docker pull openjdk@sha256:37bc0df7bf8590cc8679a546a609b17deaf4128e5dc21ef7a16
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -33831,7 +33831,7 @@ $ docker pull openjdk@sha256:4b6abae565492dbe9e7a894137c966a7485154238902f2f25e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `openjdk:17-jdk-alpine` - linux; amd64
@@ -33887,7 +33887,7 @@ $ docker pull openjdk@sha256:7ee07585addded886cfea377f2ff6d03c707509ef2426b70bd6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `openjdk:17-jdk-alpine3.13` - linux; amd64
@@ -33943,7 +33943,7 @@ $ docker pull openjdk@sha256:4b6abae565492dbe9e7a894137c966a7485154238902f2f25e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `openjdk:17-jdk-alpine3.14` - linux; amd64
@@ -33999,7 +33999,7 @@ $ docker pull openjdk@sha256:ca7f7d903e1b9a4b2858a4d24b53387f6ad3a780c8785b12289
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -34142,7 +34142,7 @@ $ docker pull openjdk@sha256:4e63ab849817d92e5fdc68ecc50cf51685be241dcf1f0b773c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:17-jdk-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -34230,7 +34230,7 @@ $ docker pull openjdk@sha256:4e63ab849817d92e5fdc68ecc50cf51685be241dcf1f0b773c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:17-jdk-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -34318,7 +34318,7 @@ $ docker pull openjdk@sha256:c85aadb51eb81cb0df3bf1c68ab7ebb103db5761187f1512942
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -34425,7 +34425,7 @@ $ docker pull openjdk@sha256:f1bdc0cf20096e38bf9b782eff9af70e7d40330550a4c05fd2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -34532,7 +34532,7 @@ $ docker pull openjdk@sha256:c85aadb51eb81cb0df3bf1c68ab7ebb103db5761187f1512942
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -34639,7 +34639,7 @@ $ docker pull openjdk@sha256:3e18ba703630d12a5781f8710fec8a0b68186a2d5fad6e7b08b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -34746,7 +34746,7 @@ $ docker pull openjdk@sha256:3e18ba703630d12a5781f8710fec8a0b68186a2d5fad6e7b08b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -34853,7 +34853,7 @@ $ docker pull openjdk@sha256:81507ff821468180f6ca2dee100cb728d7dcd62e94b3ddc2e84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -35031,7 +35031,7 @@ $ docker pull openjdk@sha256:a8e31ef91cf6cac7a32c42eb3d0eb9d5defa94512cb9361d9a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:17-jdk-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -35124,7 +35124,7 @@ $ docker pull openjdk@sha256:1b595689ab245a453264a5c83348a6c7913e1a84b7b90551666
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:17-jdk-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -35218,7 +35218,7 @@ $ docker pull openjdk@sha256:4e63ab849817d92e5fdc68ecc50cf51685be241dcf1f0b773c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:17-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -35306,7 +35306,7 @@ $ docker pull openjdk@sha256:4e63ab849817d92e5fdc68ecc50cf51685be241dcf1f0b773c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:17-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -35394,7 +35394,7 @@ $ docker pull openjdk@sha256:c85aadb51eb81cb0df3bf1c68ab7ebb103db5761187f1512942
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -35501,7 +35501,7 @@ $ docker pull openjdk@sha256:f1bdc0cf20096e38bf9b782eff9af70e7d40330550a4c05fd2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -35608,7 +35608,7 @@ $ docker pull openjdk@sha256:c85aadb51eb81cb0df3bf1c68ab7ebb103db5761187f1512942
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -35715,7 +35715,7 @@ $ docker pull openjdk@sha256:3e18ba703630d12a5781f8710fec8a0b68186a2d5fad6e7b08b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -35822,7 +35822,7 @@ $ docker pull openjdk@sha256:3e18ba703630d12a5781f8710fec8a0b68186a2d5fad6e7b08b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -35929,7 +35929,7 @@ $ docker pull openjdk@sha256:81507ff821468180f6ca2dee100cb728d7dcd62e94b3ddc2e84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -36107,7 +36107,7 @@ $ docker pull openjdk@sha256:a8e31ef91cf6cac7a32c42eb3d0eb9d5defa94512cb9361d9a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:17-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -36200,7 +36200,7 @@ $ docker pull openjdk@sha256:1b595689ab245a453264a5c83348a6c7913e1a84b7b90551666
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:17-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -36294,7 +36294,7 @@ $ docker pull openjdk@sha256:68d066870918440490862f12dcf556716bca3d2e775fce3ab88
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -36570,7 +36570,7 @@ $ docker pull openjdk@sha256:066ddb249de1e4f1e43a3879300ea233fa4e4af3120ef05158c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -36713,7 +36713,7 @@ $ docker pull openjdk@sha256:68d066870918440490862f12dcf556716bca3d2e775fce3ab88
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -36989,7 +36989,7 @@ $ docker pull openjdk@sha256:68d066870918440490862f12dcf556716bca3d2e775fce3ab88
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -37265,7 +37265,7 @@ $ docker pull openjdk@sha256:066ddb249de1e4f1e43a3879300ea233fa4e4af3120ef05158c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -37408,7 +37408,7 @@ $ docker pull openjdk@sha256:68d066870918440490862f12dcf556716bca3d2e775fce3ab88
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -37684,7 +37684,7 @@ $ docker pull openjdk@sha256:066ddb249de1e4f1e43a3879300ea233fa4e4af3120ef05158c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -37827,7 +37827,7 @@ $ docker pull openjdk@sha256:6777495762ec153aa468a5bea77a78171ed0e7b172d07bdf5da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:18-ea-5-jdk-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -37915,7 +37915,7 @@ $ docker pull openjdk@sha256:6777495762ec153aa468a5bea77a78171ed0e7b172d07bdf5da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:18-ea-5-jdk-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -38003,7 +38003,7 @@ $ docker pull openjdk@sha256:92b0574e7aae14917e65c6603fe8a7d671f7fcf0998cdd42f30
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -38110,7 +38110,7 @@ $ docker pull openjdk@sha256:90e633dc2f5a72790d1d0db6be5900e636e7113f1084200761e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -38217,7 +38217,7 @@ $ docker pull openjdk@sha256:92b0574e7aae14917e65c6603fe8a7d671f7fcf0998cdd42f30
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -38324,7 +38324,7 @@ $ docker pull openjdk@sha256:2ec6912a8c18f67ea9045d8e48d25c106a332b46274c50eb215
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -38431,7 +38431,7 @@ $ docker pull openjdk@sha256:2ec6912a8c18f67ea9045d8e48d25c106a332b46274c50eb215
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -38538,7 +38538,7 @@ $ docker pull openjdk@sha256:66245a464900acf9ff61e9fbd09c98e03ae01dadad7b32f5091
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -38716,7 +38716,7 @@ $ docker pull openjdk@sha256:b1e2d01f477fa1ed846518c9816632d00d6148cccc0f122bbf9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:18-ea-5-jdk-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -38809,7 +38809,7 @@ $ docker pull openjdk@sha256:5073b43a45ea7ff6156586b24566fb8dcf10fd88c50c53c9a06
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:18-ea-5-jdk-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -38903,7 +38903,7 @@ $ docker pull openjdk@sha256:6777495762ec153aa468a5bea77a78171ed0e7b172d07bdf5da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:18-ea-5-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -38991,7 +38991,7 @@ $ docker pull openjdk@sha256:6777495762ec153aa468a5bea77a78171ed0e7b172d07bdf5da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:18-ea-5-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -39079,7 +39079,7 @@ $ docker pull openjdk@sha256:92b0574e7aae14917e65c6603fe8a7d671f7fcf0998cdd42f30
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -39186,7 +39186,7 @@ $ docker pull openjdk@sha256:90e633dc2f5a72790d1d0db6be5900e636e7113f1084200761e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -39293,7 +39293,7 @@ $ docker pull openjdk@sha256:92b0574e7aae14917e65c6603fe8a7d671f7fcf0998cdd42f30
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -39400,7 +39400,7 @@ $ docker pull openjdk@sha256:2ec6912a8c18f67ea9045d8e48d25c106a332b46274c50eb215
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -39507,7 +39507,7 @@ $ docker pull openjdk@sha256:2ec6912a8c18f67ea9045d8e48d25c106a332b46274c50eb215
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -39614,7 +39614,7 @@ $ docker pull openjdk@sha256:66245a464900acf9ff61e9fbd09c98e03ae01dadad7b32f5091
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -39792,7 +39792,7 @@ $ docker pull openjdk@sha256:b1e2d01f477fa1ed846518c9816632d00d6148cccc0f122bbf9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:18-ea-5-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -39885,7 +39885,7 @@ $ docker pull openjdk@sha256:5073b43a45ea7ff6156586b24566fb8dcf10fd88c50c53c9a06
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:18-ea-5-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -39979,7 +39979,7 @@ $ docker pull openjdk@sha256:066ddb249de1e4f1e43a3879300ea233fa4e4af3120ef05158c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -40122,7 +40122,7 @@ $ docker pull openjdk@sha256:68d066870918440490862f12dcf556716bca3d2e775fce3ab88
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -40398,7 +40398,7 @@ $ docker pull openjdk@sha256:066ddb249de1e4f1e43a3879300ea233fa4e4af3120ef05158c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -40541,7 +40541,7 @@ $ docker pull openjdk@sha256:6777495762ec153aa468a5bea77a78171ed0e7b172d07bdf5da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:18-ea-jdk-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -40629,7 +40629,7 @@ $ docker pull openjdk@sha256:6777495762ec153aa468a5bea77a78171ed0e7b172d07bdf5da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:18-ea-jdk-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -40717,7 +40717,7 @@ $ docker pull openjdk@sha256:92b0574e7aae14917e65c6603fe8a7d671f7fcf0998cdd42f30
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -40824,7 +40824,7 @@ $ docker pull openjdk@sha256:90e633dc2f5a72790d1d0db6be5900e636e7113f1084200761e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -40931,7 +40931,7 @@ $ docker pull openjdk@sha256:92b0574e7aae14917e65c6603fe8a7d671f7fcf0998cdd42f30
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -41038,7 +41038,7 @@ $ docker pull openjdk@sha256:2ec6912a8c18f67ea9045d8e48d25c106a332b46274c50eb215
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -41145,7 +41145,7 @@ $ docker pull openjdk@sha256:2ec6912a8c18f67ea9045d8e48d25c106a332b46274c50eb215
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -41252,7 +41252,7 @@ $ docker pull openjdk@sha256:66245a464900acf9ff61e9fbd09c98e03ae01dadad7b32f5091
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -41430,7 +41430,7 @@ $ docker pull openjdk@sha256:b1e2d01f477fa1ed846518c9816632d00d6148cccc0f122bbf9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:18-ea-jdk-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -41523,7 +41523,7 @@ $ docker pull openjdk@sha256:5073b43a45ea7ff6156586b24566fb8dcf10fd88c50c53c9a06
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:18-ea-jdk-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -41617,7 +41617,7 @@ $ docker pull openjdk@sha256:6777495762ec153aa468a5bea77a78171ed0e7b172d07bdf5da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:18-ea-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -41705,7 +41705,7 @@ $ docker pull openjdk@sha256:6777495762ec153aa468a5bea77a78171ed0e7b172d07bdf5da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:18-ea-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -41793,7 +41793,7 @@ $ docker pull openjdk@sha256:92b0574e7aae14917e65c6603fe8a7d671f7fcf0998cdd42f30
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -41900,7 +41900,7 @@ $ docker pull openjdk@sha256:90e633dc2f5a72790d1d0db6be5900e636e7113f1084200761e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -42007,7 +42007,7 @@ $ docker pull openjdk@sha256:92b0574e7aae14917e65c6603fe8a7d671f7fcf0998cdd42f30
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -42114,7 +42114,7 @@ $ docker pull openjdk@sha256:2ec6912a8c18f67ea9045d8e48d25c106a332b46274c50eb215
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -42221,7 +42221,7 @@ $ docker pull openjdk@sha256:2ec6912a8c18f67ea9045d8e48d25c106a332b46274c50eb215
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -42328,7 +42328,7 @@ $ docker pull openjdk@sha256:66245a464900acf9ff61e9fbd09c98e03ae01dadad7b32f5091
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -42506,7 +42506,7 @@ $ docker pull openjdk@sha256:b1e2d01f477fa1ed846518c9816632d00d6148cccc0f122bbf9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:18-ea-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -42599,7 +42599,7 @@ $ docker pull openjdk@sha256:5073b43a45ea7ff6156586b24566fb8dcf10fd88c50c53c9a06
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:18-ea-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -42693,7 +42693,7 @@ $ docker pull openjdk@sha256:68d066870918440490862f12dcf556716bca3d2e775fce3ab88
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -42969,7 +42969,7 @@ $ docker pull openjdk@sha256:066ddb249de1e4f1e43a3879300ea233fa4e4af3120ef05158c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -43112,7 +43112,7 @@ $ docker pull openjdk@sha256:6777495762ec153aa468a5bea77a78171ed0e7b172d07bdf5da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:18-jdk-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -43200,7 +43200,7 @@ $ docker pull openjdk@sha256:6777495762ec153aa468a5bea77a78171ed0e7b172d07bdf5da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:18-jdk-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -43288,7 +43288,7 @@ $ docker pull openjdk@sha256:92b0574e7aae14917e65c6603fe8a7d671f7fcf0998cdd42f30
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -43395,7 +43395,7 @@ $ docker pull openjdk@sha256:90e633dc2f5a72790d1d0db6be5900e636e7113f1084200761e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -43502,7 +43502,7 @@ $ docker pull openjdk@sha256:92b0574e7aae14917e65c6603fe8a7d671f7fcf0998cdd42f30
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -43609,7 +43609,7 @@ $ docker pull openjdk@sha256:2ec6912a8c18f67ea9045d8e48d25c106a332b46274c50eb215
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -43716,7 +43716,7 @@ $ docker pull openjdk@sha256:2ec6912a8c18f67ea9045d8e48d25c106a332b46274c50eb215
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -43823,7 +43823,7 @@ $ docker pull openjdk@sha256:66245a464900acf9ff61e9fbd09c98e03ae01dadad7b32f5091
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -44001,7 +44001,7 @@ $ docker pull openjdk@sha256:b1e2d01f477fa1ed846518c9816632d00d6148cccc0f122bbf9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:18-jdk-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -44094,7 +44094,7 @@ $ docker pull openjdk@sha256:5073b43a45ea7ff6156586b24566fb8dcf10fd88c50c53c9a06
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:18-jdk-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -44188,7 +44188,7 @@ $ docker pull openjdk@sha256:6777495762ec153aa468a5bea77a78171ed0e7b172d07bdf5da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:18-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -44276,7 +44276,7 @@ $ docker pull openjdk@sha256:6777495762ec153aa468a5bea77a78171ed0e7b172d07bdf5da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:18-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -44364,7 +44364,7 @@ $ docker pull openjdk@sha256:92b0574e7aae14917e65c6603fe8a7d671f7fcf0998cdd42f30
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -44471,7 +44471,7 @@ $ docker pull openjdk@sha256:90e633dc2f5a72790d1d0db6be5900e636e7113f1084200761e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -44578,7 +44578,7 @@ $ docker pull openjdk@sha256:92b0574e7aae14917e65c6603fe8a7d671f7fcf0998cdd42f30
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -44685,7 +44685,7 @@ $ docker pull openjdk@sha256:2ec6912a8c18f67ea9045d8e48d25c106a332b46274c50eb215
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -44792,7 +44792,7 @@ $ docker pull openjdk@sha256:2ec6912a8c18f67ea9045d8e48d25c106a332b46274c50eb215
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -44899,7 +44899,7 @@ $ docker pull openjdk@sha256:66245a464900acf9ff61e9fbd09c98e03ae01dadad7b32f5091
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -45077,7 +45077,7 @@ $ docker pull openjdk@sha256:b1e2d01f477fa1ed846518c9816632d00d6148cccc0f122bbf9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:18-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -45170,7 +45170,7 @@ $ docker pull openjdk@sha256:5073b43a45ea7ff6156586b24566fb8dcf10fd88c50c53c9a06
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:18-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -45264,7 +45264,7 @@ $ docker pull openjdk@sha256:4355999bcc6d1f2e40f7b7fde47bd6fd94d508b26b7d0e7ea8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -45560,7 +45560,7 @@ $ docker pull openjdk@sha256:40cb6ef0fdc9e7a56edcb1e3ce7cf9a7ee16dd18ab4f5d72c29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -45711,7 +45711,7 @@ $ docker pull openjdk@sha256:4355999bcc6d1f2e40f7b7fde47bd6fd94d508b26b7d0e7ea8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -46007,7 +46007,7 @@ $ docker pull openjdk@sha256:40cb6ef0fdc9e7a56edcb1e3ce7cf9a7ee16dd18ab4f5d72c29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -46158,7 +46158,7 @@ $ docker pull openjdk@sha256:24d0e3fd7a3abde78db99e8e584501dbc489a0a232468351d6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:8-jdk-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -46240,7 +46240,7 @@ $ docker pull openjdk@sha256:24d0e3fd7a3abde78db99e8e584501dbc489a0a232468351d6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:8-jdk-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -46322,7 +46322,7 @@ $ docker pull openjdk@sha256:faaf9f6959d5d398e20b2ffcc07f710f3abfd29d839f22659e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -46425,7 +46425,7 @@ $ docker pull openjdk@sha256:2d48f822e857dc2d1577bb0c88b754df6cab6c3e007dbbe094d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -46528,7 +46528,7 @@ $ docker pull openjdk@sha256:faaf9f6959d5d398e20b2ffcc07f710f3abfd29d839f22659e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -46631,7 +46631,7 @@ $ docker pull openjdk@sha256:de95d59866c9b9f7f20cd88e152189ff317f4b2c400ceceb31a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -46746,7 +46746,7 @@ $ docker pull openjdk@sha256:de95d59866c9b9f7f20cd88e152189ff317f4b2c400ceceb31a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -46861,7 +46861,7 @@ $ docker pull openjdk@sha256:3fbb9f3440ceffdb0a6b8b7a7fb040b1daa042230c505408b64
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -47015,7 +47015,7 @@ $ docker pull openjdk@sha256:c666f35248e46cf7de273b9c59f617b01e9c92cdcc419e56fa2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:8-jdk-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -47096,7 +47096,7 @@ $ docker pull openjdk@sha256:099869f125152dcd71f2f2c2b14301804bfbac5ad4652cc39a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:8-jdk-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -47178,7 +47178,7 @@ $ docker pull openjdk@sha256:0edfb17382894b478e88ab7816e4b1d2361fb2f7479ca5539fb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -47462,7 +47462,7 @@ $ docker pull openjdk@sha256:4fd4d0decb8fac0601ea282973137b8eb9ee41559c8b1253058
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -47601,7 +47601,7 @@ $ docker pull openjdk@sha256:4a328efc6e2c1b68000127f5b011d8831b99b2b43988e93b7bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:8-jre-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -47683,7 +47683,7 @@ $ docker pull openjdk@sha256:4a328efc6e2c1b68000127f5b011d8831b99b2b43988e93b7bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:8-jre-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -47765,7 +47765,7 @@ $ docker pull openjdk@sha256:b6f99dc230efd35aab621a5bc0c8e7b8cdd6314edef8a0689d7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -47880,7 +47880,7 @@ $ docker pull openjdk@sha256:b6f99dc230efd35aab621a5bc0c8e7b8cdd6314edef8a0689d7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -47995,7 +47995,7 @@ $ docker pull openjdk@sha256:43d9480334302691ba6118e3b174e3b82eab0524a25cf8dc63e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -48149,7 +48149,7 @@ $ docker pull openjdk@sha256:8245c39ef9f91487c6fdabb951cf37f2e6dfc8c067e1b608d35
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:8-jre-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -48230,7 +48230,7 @@ $ docker pull openjdk@sha256:7f95039d76caf53a3e1db434ec0431535fbadd07311e104aab0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:8-jre-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -48312,7 +48312,7 @@ $ docker pull openjdk@sha256:24d0e3fd7a3abde78db99e8e584501dbc489a0a232468351d6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:8-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -48394,7 +48394,7 @@ $ docker pull openjdk@sha256:24d0e3fd7a3abde78db99e8e584501dbc489a0a232468351d6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:8-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -48476,7 +48476,7 @@ $ docker pull openjdk@sha256:faaf9f6959d5d398e20b2ffcc07f710f3abfd29d839f22659e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -48579,7 +48579,7 @@ $ docker pull openjdk@sha256:2d48f822e857dc2d1577bb0c88b754df6cab6c3e007dbbe094d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -48682,7 +48682,7 @@ $ docker pull openjdk@sha256:faaf9f6959d5d398e20b2ffcc07f710f3abfd29d839f22659e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -48785,7 +48785,7 @@ $ docker pull openjdk@sha256:de95d59866c9b9f7f20cd88e152189ff317f4b2c400ceceb31a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -48900,7 +48900,7 @@ $ docker pull openjdk@sha256:de95d59866c9b9f7f20cd88e152189ff317f4b2c400ceceb31a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -49015,7 +49015,7 @@ $ docker pull openjdk@sha256:3fbb9f3440ceffdb0a6b8b7a7fb040b1daa042230c505408b64
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -49169,7 +49169,7 @@ $ docker pull openjdk@sha256:c666f35248e46cf7de273b9c59f617b01e9c92cdcc419e56fa2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:8-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -49250,7 +49250,7 @@ $ docker pull openjdk@sha256:099869f125152dcd71f2f2c2b14301804bfbac5ad4652cc39a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:8-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -49332,7 +49332,7 @@ $ docker pull openjdk@sha256:4355999bcc6d1f2e40f7b7fde47bd6fd94d508b26b7d0e7ea8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -49628,7 +49628,7 @@ $ docker pull openjdk@sha256:40cb6ef0fdc9e7a56edcb1e3ce7cf9a7ee16dd18ab4f5d72c29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -49779,7 +49779,7 @@ $ docker pull openjdk@sha256:4355999bcc6d1f2e40f7b7fde47bd6fd94d508b26b7d0e7ea8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -50075,7 +50075,7 @@ $ docker pull openjdk@sha256:40cb6ef0fdc9e7a56edcb1e3ce7cf9a7ee16dd18ab4f5d72c29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -50226,7 +50226,7 @@ $ docker pull openjdk@sha256:24d0e3fd7a3abde78db99e8e584501dbc489a0a232468351d6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:8u292-jdk-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -50308,7 +50308,7 @@ $ docker pull openjdk@sha256:24d0e3fd7a3abde78db99e8e584501dbc489a0a232468351d6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:8u292-jdk-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -50390,7 +50390,7 @@ $ docker pull openjdk@sha256:faaf9f6959d5d398e20b2ffcc07f710f3abfd29d839f22659e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -50493,7 +50493,7 @@ $ docker pull openjdk@sha256:2d48f822e857dc2d1577bb0c88b754df6cab6c3e007dbbe094d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -50596,7 +50596,7 @@ $ docker pull openjdk@sha256:faaf9f6959d5d398e20b2ffcc07f710f3abfd29d839f22659e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -50699,7 +50699,7 @@ $ docker pull openjdk@sha256:de95d59866c9b9f7f20cd88e152189ff317f4b2c400ceceb31a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -50814,7 +50814,7 @@ $ docker pull openjdk@sha256:de95d59866c9b9f7f20cd88e152189ff317f4b2c400ceceb31a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -50929,7 +50929,7 @@ $ docker pull openjdk@sha256:3fbb9f3440ceffdb0a6b8b7a7fb040b1daa042230c505408b64
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -51083,7 +51083,7 @@ $ docker pull openjdk@sha256:c666f35248e46cf7de273b9c59f617b01e9c92cdcc419e56fa2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:8u292-jdk-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -51164,7 +51164,7 @@ $ docker pull openjdk@sha256:099869f125152dcd71f2f2c2b14301804bfbac5ad4652cc39a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:8u292-jdk-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -51246,7 +51246,7 @@ $ docker pull openjdk@sha256:0edfb17382894b478e88ab7816e4b1d2361fb2f7479ca5539fb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -51530,7 +51530,7 @@ $ docker pull openjdk@sha256:4fd4d0decb8fac0601ea282973137b8eb9ee41559c8b1253058
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -51669,7 +51669,7 @@ $ docker pull openjdk@sha256:4a328efc6e2c1b68000127f5b011d8831b99b2b43988e93b7bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:8u292-jre-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -51751,7 +51751,7 @@ $ docker pull openjdk@sha256:4a328efc6e2c1b68000127f5b011d8831b99b2b43988e93b7bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:8u292-jre-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -51833,7 +51833,7 @@ $ docker pull openjdk@sha256:b6f99dc230efd35aab621a5bc0c8e7b8cdd6314edef8a0689d7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -51948,7 +51948,7 @@ $ docker pull openjdk@sha256:b6f99dc230efd35aab621a5bc0c8e7b8cdd6314edef8a0689d7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -52063,7 +52063,7 @@ $ docker pull openjdk@sha256:43d9480334302691ba6118e3b174e3b82eab0524a25cf8dc63e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -52217,7 +52217,7 @@ $ docker pull openjdk@sha256:8245c39ef9f91487c6fdabb951cf37f2e6dfc8c067e1b608d35
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:8u292-jre-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -52298,7 +52298,7 @@ $ docker pull openjdk@sha256:7f95039d76caf53a3e1db434ec0431535fbadd07311e104aab0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:8u292-jre-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -52380,7 +52380,7 @@ $ docker pull openjdk@sha256:24d0e3fd7a3abde78db99e8e584501dbc489a0a232468351d6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:8u292-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -52462,7 +52462,7 @@ $ docker pull openjdk@sha256:24d0e3fd7a3abde78db99e8e584501dbc489a0a232468351d6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:8u292-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -52544,7 +52544,7 @@ $ docker pull openjdk@sha256:faaf9f6959d5d398e20b2ffcc07f710f3abfd29d839f22659e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -52647,7 +52647,7 @@ $ docker pull openjdk@sha256:2d48f822e857dc2d1577bb0c88b754df6cab6c3e007dbbe094d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -52750,7 +52750,7 @@ $ docker pull openjdk@sha256:faaf9f6959d5d398e20b2ffcc07f710f3abfd29d839f22659e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -52853,7 +52853,7 @@ $ docker pull openjdk@sha256:de95d59866c9b9f7f20cd88e152189ff317f4b2c400ceceb31a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -52968,7 +52968,7 @@ $ docker pull openjdk@sha256:de95d59866c9b9f7f20cd88e152189ff317f4b2c400ceceb31a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -53083,7 +53083,7 @@ $ docker pull openjdk@sha256:3fbb9f3440ceffdb0a6b8b7a7fb040b1daa042230c505408b64
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -53237,7 +53237,7 @@ $ docker pull openjdk@sha256:c666f35248e46cf7de273b9c59f617b01e9c92cdcc419e56fa2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:8u292-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -53318,7 +53318,7 @@ $ docker pull openjdk@sha256:099869f125152dcd71f2f2c2b14301804bfbac5ad4652cc39a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:8u292-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -53400,7 +53400,7 @@ $ docker pull openjdk@sha256:61f3786a28ed911028f8e7e3b65a57a8a9ed04067d137317d36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -53543,7 +53543,7 @@ $ docker pull openjdk@sha256:9667ee3dbe03be6b41ae9e855f0dbf9f2ac2b78a50a3a8b9834
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -53819,7 +53819,7 @@ $ docker pull openjdk@sha256:61f3786a28ed911028f8e7e3b65a57a8a9ed04067d137317d36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -53962,7 +53962,7 @@ $ docker pull openjdk@sha256:c9977d04cdef3670c028ef7e24eb88733bd2e7faed0998d50a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:jdk-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -54050,7 +54050,7 @@ $ docker pull openjdk@sha256:c9977d04cdef3670c028ef7e24eb88733bd2e7faed0998d50a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:jdk-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -54138,7 +54138,7 @@ $ docker pull openjdk@sha256:d1d6d6a61221be004663bfa0b5c4d63fa691047995b9b0c3b5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -54245,7 +54245,7 @@ $ docker pull openjdk@sha256:8f8e6b265fbc17a2bfd132ab10760af7c27c6cc6482a24e631e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -54352,7 +54352,7 @@ $ docker pull openjdk@sha256:d1d6d6a61221be004663bfa0b5c4d63fa691047995b9b0c3b5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -54459,7 +54459,7 @@ $ docker pull openjdk@sha256:e20175812fb1b559a3a98d07515c42c030531d9b06d65821d69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -54566,7 +54566,7 @@ $ docker pull openjdk@sha256:e20175812fb1b559a3a98d07515c42c030531d9b06d65821d69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -54673,7 +54673,7 @@ $ docker pull openjdk@sha256:54ed9735b04e61ab8f6a3ebc9043a4072b1b0f814275cd5a4a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -54851,7 +54851,7 @@ $ docker pull openjdk@sha256:771f96bdd364c88ecf9c2f3b1871bfa85dda52eca24077b7a51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:jdk-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -54944,7 +54944,7 @@ $ docker pull openjdk@sha256:dd9a76aeb96c7fe59ab217298061feb8529b88f8b4257de0e9a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:jdk-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -55038,7 +55038,7 @@ $ docker pull openjdk@sha256:9667ee3dbe03be6b41ae9e855f0dbf9f2ac2b78a50a3a8b9834
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -55314,7 +55314,7 @@ $ docker pull openjdk@sha256:c9977d04cdef3670c028ef7e24eb88733bd2e7faed0998d50a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:nanoserver` - windows version 10.0.17763.2061; amd64
@@ -55402,7 +55402,7 @@ $ docker pull openjdk@sha256:c9977d04cdef3670c028ef7e24eb88733bd2e7faed0998d50a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -55490,7 +55490,7 @@ $ docker pull openjdk@sha256:d1d6d6a61221be004663bfa0b5c4d63fa691047995b9b0c3b5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -55597,7 +55597,7 @@ $ docker pull openjdk@sha256:8f8e6b265fbc17a2bfd132ab10760af7c27c6cc6482a24e631e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -55704,7 +55704,7 @@ $ docker pull openjdk@sha256:d1d6d6a61221be004663bfa0b5c4d63fa691047995b9b0c3b5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -55811,7 +55811,7 @@ $ docker pull openjdk@sha256:e20175812fb1b559a3a98d07515c42c030531d9b06d65821d69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -55918,7 +55918,7 @@ $ docker pull openjdk@sha256:e20175812fb1b559a3a98d07515c42c030531d9b06d65821d69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -56025,7 +56025,7 @@ $ docker pull openjdk@sha256:54ed9735b04e61ab8f6a3ebc9043a4072b1b0f814275cd5a4a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -56203,7 +56203,7 @@ $ docker pull openjdk@sha256:771f96bdd364c88ecf9c2f3b1871bfa85dda52eca24077b7a51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `openjdk:windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -56296,7 +56296,7 @@ $ docker pull openjdk@sha256:dd9a76aeb96c7fe59ab217298061feb8529b88f8b4257de0e9a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `openjdk:windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
