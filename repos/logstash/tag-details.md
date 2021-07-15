@@ -12,7 +12,7 @@ $ docker pull logstash@sha256:9455903f9b80f59b2aa99c1899a40f8b44911b512fbdcb4630
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `logstash:6.8.17` - linux; amd64
@@ -132,7 +132,7 @@ $ docker pull logstash@sha256:23ccbeb647e65476e32294387d56f79c00e70c997e85088f9a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
