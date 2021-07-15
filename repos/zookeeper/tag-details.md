@@ -17,7 +17,7 @@ $ docker pull zookeeper@sha256:2af7ddbf6098d168f3799a3afafcbc847c35d105fcb4dbc32
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -224,7 +224,7 @@ $ docker pull zookeeper@sha256:2af7ddbf6098d168f3799a3afafcbc847c35d105fcb4dbc32
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -431,7 +431,7 @@ $ docker pull zookeeper@sha256:35d51f3421e1bcc6e5867dd82343abd0651c80db29070de87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -638,7 +638,7 @@ $ docker pull zookeeper@sha256:35d51f3421e1bcc6e5867dd82343abd0651c80db29070de87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -845,7 +845,7 @@ $ docker pull zookeeper@sha256:d5965c84bbfc33f9a718d9eedec0137dd91e2298e21337954
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -1052,7 +1052,7 @@ $ docker pull zookeeper@sha256:d5965c84bbfc33f9a718d9eedec0137dd91e2298e21337954
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -1259,7 +1259,7 @@ $ docker pull zookeeper@sha256:d5965c84bbfc33f9a718d9eedec0137dd91e2298e21337954
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 

@@ -5,7 +5,7 @@ $ docker pull zookeeper@sha256:d5965c84bbfc33f9a718d9eedec0137dd91e2298e21337954
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
