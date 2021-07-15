@@ -5,7 +5,7 @@ $ docker pull traefik@sha256:df90799aaca1ad6fb9e06d311140035d2a0c2295a4f8f508f6b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8

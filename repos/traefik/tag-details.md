@@ -47,7 +47,7 @@ $ docker pull traefik@sha256:ca3883356d24f9fd6d36f0450d7f6f17a233317943517f6036c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -191,7 +191,7 @@ $ docker pull traefik@sha256:239e1a5baace8394d2093c6d157f8b8551d1932593aa34d41da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -362,7 +362,7 @@ $ docker pull traefik@sha256:a927613109ae36ea667ed952fda5996c80a7d017587f34f8a2b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `traefik:1.7-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -431,7 +431,7 @@ $ docker pull traefik@sha256:ca3883356d24f9fd6d36f0450d7f6f17a233317943517f6036c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -575,7 +575,7 @@ $ docker pull traefik@sha256:239e1a5baace8394d2093c6d157f8b8551d1932593aa34d41da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -746,7 +746,7 @@ $ docker pull traefik@sha256:a927613109ae36ea667ed952fda5996c80a7d017587f34f8a2b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `traefik:1.7.30-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -815,7 +815,7 @@ $ docker pull traefik@sha256:be23e1f6e64abd4adf70a61b8b9fa0844e4795a4a7b30551741
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -986,7 +986,7 @@ $ docker pull traefik@sha256:6912788b612a0722d4e4d14d26ab38f619f17d8d7b30228254a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `traefik:2.4-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -1055,7 +1055,7 @@ $ docker pull traefik@sha256:be23e1f6e64abd4adf70a61b8b9fa0844e4795a4a7b30551741
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -1226,7 +1226,7 @@ $ docker pull traefik@sha256:6912788b612a0722d4e4d14d26ab38f619f17d8d7b30228254a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `traefik:2.4.9-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -1295,7 +1295,7 @@ $ docker pull traefik@sha256:df90799aaca1ad6fb9e06d311140035d2a0c2295a4f8f508f6b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -1466,7 +1466,7 @@ $ docker pull traefik@sha256:1c8a42e2baeb9bddde749c870a7358e27f7741967657c1e56f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `traefik:2.5-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -1535,7 +1535,7 @@ $ docker pull traefik@sha256:df90799aaca1ad6fb9e06d311140035d2a0c2295a4f8f508f6b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -1706,7 +1706,7 @@ $ docker pull traefik@sha256:1c8a42e2baeb9bddde749c870a7358e27f7741967657c1e56f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `traefik:2.5.0-rc2-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -1775,7 +1775,7 @@ $ docker pull traefik@sha256:df90799aaca1ad6fb9e06d311140035d2a0c2295a4f8f508f6b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -1946,7 +1946,7 @@ $ docker pull traefik@sha256:1c8a42e2baeb9bddde749c870a7358e27f7741967657c1e56f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `traefik:brie-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -2015,7 +2015,7 @@ $ docker pull traefik@sha256:be23e1f6e64abd4adf70a61b8b9fa0844e4795a4a7b30551741
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -2186,7 +2186,7 @@ $ docker pull traefik@sha256:be23e1f6e64abd4adf70a61b8b9fa0844e4795a4a7b30551741
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -2357,7 +2357,7 @@ $ docker pull traefik@sha256:6912788b612a0722d4e4d14d26ab38f619f17d8d7b30228254a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `traefik:livarot-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -2426,7 +2426,7 @@ $ docker pull traefik@sha256:ca3883356d24f9fd6d36f0450d7f6f17a233317943517f6036c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -2570,7 +2570,7 @@ $ docker pull traefik@sha256:239e1a5baace8394d2093c6d157f8b8551d1932593aa34d41da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -2741,7 +2741,7 @@ $ docker pull traefik@sha256:a927613109ae36ea667ed952fda5996c80a7d017587f34f8a2b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `traefik:maroilles-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -2810,7 +2810,7 @@ $ docker pull traefik@sha256:ca3883356d24f9fd6d36f0450d7f6f17a233317943517f6036c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -2954,7 +2954,7 @@ $ docker pull traefik@sha256:239e1a5baace8394d2093c6d157f8b8551d1932593aa34d41da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -3125,7 +3125,7 @@ $ docker pull traefik@sha256:a927613109ae36ea667ed952fda5996c80a7d017587f34f8a2b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `traefik:v1.7-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -3194,7 +3194,7 @@ $ docker pull traefik@sha256:ca3883356d24f9fd6d36f0450d7f6f17a233317943517f6036c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -3338,7 +3338,7 @@ $ docker pull traefik@sha256:239e1a5baace8394d2093c6d157f8b8551d1932593aa34d41da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -3509,7 +3509,7 @@ $ docker pull traefik@sha256:a927613109ae36ea667ed952fda5996c80a7d017587f34f8a2b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `traefik:v1.7.30-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -3578,7 +3578,7 @@ $ docker pull traefik@sha256:be23e1f6e64abd4adf70a61b8b9fa0844e4795a4a7b30551741
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -3749,7 +3749,7 @@ $ docker pull traefik@sha256:6912788b612a0722d4e4d14d26ab38f619f17d8d7b30228254a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `traefik:v2.4-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -3818,7 +3818,7 @@ $ docker pull traefik@sha256:be23e1f6e64abd4adf70a61b8b9fa0844e4795a4a7b30551741
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -3989,7 +3989,7 @@ $ docker pull traefik@sha256:6912788b612a0722d4e4d14d26ab38f619f17d8d7b30228254a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `traefik:v2.4.9-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -4058,7 +4058,7 @@ $ docker pull traefik@sha256:df90799aaca1ad6fb9e06d311140035d2a0c2295a4f8f508f6b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -4229,7 +4229,7 @@ $ docker pull traefik@sha256:1c8a42e2baeb9bddde749c870a7358e27f7741967657c1e56f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `traefik:v2.5-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -4298,7 +4298,7 @@ $ docker pull traefik@sha256:df90799aaca1ad6fb9e06d311140035d2a0c2295a4f8f508f6b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm64 variant v8
@@ -4469,7 +4469,7 @@ $ docker pull traefik@sha256:1c8a42e2baeb9bddde749c870a7358e27f7741967657c1e56f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `traefik:v2.5.0-rc2-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -4538,7 +4538,7 @@ $ docker pull traefik@sha256:6912788b612a0722d4e4d14d26ab38f619f17d8d7b30228254a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `traefik:windowsservercore-1809` - windows version 10.0.17763.2061; amd64
