@@ -24,7 +24,7 @@ $ docker pull telegraf@sha256:e674ab62ff98d5d3dedf7fc6ffede012b54982991302c270fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -249,7 +249,7 @@ $ docker pull telegraf@sha256:de4e4666bf07239391954b617792669d1b5ac822b2aafb312f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `telegraf:1.17-alpine` - linux; amd64
@@ -318,7 +318,7 @@ $ docker pull telegraf@sha256:e674ab62ff98d5d3dedf7fc6ffede012b54982991302c270fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -543,7 +543,7 @@ $ docker pull telegraf@sha256:de4e4666bf07239391954b617792669d1b5ac822b2aafb312f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `telegraf:1.17.3-alpine` - linux; amd64
@@ -612,7 +612,7 @@ $ docker pull telegraf@sha256:e714b3224a9e8c89fa9d1f4cec332840f4a8a13a771a2598bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -837,7 +837,7 @@ $ docker pull telegraf@sha256:f0b185ac5a9704cf1c235093175707a3d88e60292930d5c030
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `telegraf:1.18-alpine` - linux; amd64
@@ -906,7 +906,7 @@ $ docker pull telegraf@sha256:e714b3224a9e8c89fa9d1f4cec332840f4a8a13a771a2598bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -1131,7 +1131,7 @@ $ docker pull telegraf@sha256:f0b185ac5a9704cf1c235093175707a3d88e60292930d5c030
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `telegraf:1.18.3-alpine` - linux; amd64
@@ -1200,7 +1200,7 @@ $ docker pull telegraf@sha256:d4227f7b427816d4c74fb7043dfb80c7de2d7d9cfe2769f59e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -1425,7 +1425,7 @@ $ docker pull telegraf@sha256:2933b7dd72888ef72e3c4bfc8ee540b929dd5371e5a7636c15
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `telegraf:1.19-alpine` - linux; amd64
@@ -1494,7 +1494,7 @@ $ docker pull telegraf@sha256:d4227f7b427816d4c74fb7043dfb80c7de2d7d9cfe2769f59e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -1719,7 +1719,7 @@ $ docker pull telegraf@sha256:2933b7dd72888ef72e3c4bfc8ee540b929dd5371e5a7636c15
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `telegraf:1.19.1-alpine` - linux; amd64
@@ -1788,7 +1788,7 @@ $ docker pull telegraf@sha256:2933b7dd72888ef72e3c4bfc8ee540b929dd5371e5a7636c15
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `telegraf:alpine` - linux; amd64
@@ -1857,7 +1857,7 @@ $ docker pull telegraf@sha256:d4227f7b427816d4c74fb7043dfb80c7de2d7d9cfe2769f59e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8

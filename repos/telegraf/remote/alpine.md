@@ -5,7 +5,7 @@ $ docker pull telegraf@sha256:2933b7dd72888ef72e3c4bfc8ee540b929dd5371e5a7636c15
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `telegraf:alpine` - linux; amd64
