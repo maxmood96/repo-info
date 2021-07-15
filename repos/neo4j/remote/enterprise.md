@@ -5,7 +5,7 @@ $ docker pull neo4j@sha256:5cef43d903a52349022ea5658b29c15623f033e6fa6ef94bd422c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:enterprise` - linux; amd64

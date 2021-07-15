@@ -169,7 +169,7 @@ $ docker pull neo4j@sha256:9c2f5f60c09442be8b51fceab0df9704bbee50ff534a939fe9d36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5` - linux; amd64
@@ -274,7 +274,7 @@ $ docker pull neo4j@sha256:9c2f5f60c09442be8b51fceab0df9704bbee50ff534a939fe9d36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5-community` - linux; amd64
@@ -379,7 +379,7 @@ $ docker pull neo4j@sha256:97d25c9b7264fc1d3e1a8813b7b7f50d86353510b21c244e677f0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5-enterprise` - linux; amd64
@@ -484,7 +484,7 @@ $ docker pull neo4j@sha256:3da16760ef83c72981a3279301ee6b2fa488ecb92417a66b852d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.20` - linux; amd64
@@ -589,7 +589,7 @@ $ docker pull neo4j@sha256:3da16760ef83c72981a3279301ee6b2fa488ecb92417a66b852d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.20-community` - linux; amd64
@@ -694,7 +694,7 @@ $ docker pull neo4j@sha256:aec5784e4ba694ec352d000295b94de5d211aaa29774ab85e18fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.20-enterprise` - linux; amd64
@@ -799,7 +799,7 @@ $ docker pull neo4j@sha256:98708d88f43765b7da9d85cd25eb73d9d8ef516a71c1b084684e3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.21` - linux; amd64
@@ -904,7 +904,7 @@ $ docker pull neo4j@sha256:98708d88f43765b7da9d85cd25eb73d9d8ef516a71c1b084684e3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.21-community` - linux; amd64
@@ -1009,7 +1009,7 @@ $ docker pull neo4j@sha256:cd0866a7fd730e91ade4b6a2dc91b2c52ddf0248f655e17af54b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.21-enterprise` - linux; amd64
@@ -1114,7 +1114,7 @@ $ docker pull neo4j@sha256:32b0e61b473046c8f91230dc8b1d27f1bac1c19b4dc8bcfbe4b2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.22` - linux; amd64
@@ -1219,7 +1219,7 @@ $ docker pull neo4j@sha256:32b0e61b473046c8f91230dc8b1d27f1bac1c19b4dc8bcfbe4b2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.22-community` - linux; amd64
@@ -1324,7 +1324,7 @@ $ docker pull neo4j@sha256:1a39d18eda58163946c8f9263360f8534daca979107e645564595
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.22-enterprise` - linux; amd64
@@ -1429,7 +1429,7 @@ $ docker pull neo4j@sha256:b566d709323e8e2129001a9a2b6dcddb46e9d976fc27367f852fb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.23` - linux; amd64
@@ -1534,7 +1534,7 @@ $ docker pull neo4j@sha256:b566d709323e8e2129001a9a2b6dcddb46e9d976fc27367f852fb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.23-community` - linux; amd64
@@ -1639,7 +1639,7 @@ $ docker pull neo4j@sha256:ea9ded5b9ef864f80c751244b3073df4cdf94b938505be3f92883
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.23-enterprise` - linux; amd64
@@ -1744,7 +1744,7 @@ $ docker pull neo4j@sha256:66036d73739799155beb0b0e842d1171bcac90f1a4571fca617b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.24` - linux; amd64
@@ -1849,7 +1849,7 @@ $ docker pull neo4j@sha256:66036d73739799155beb0b0e842d1171bcac90f1a4571fca617b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.24-community` - linux; amd64
@@ -1954,7 +1954,7 @@ $ docker pull neo4j@sha256:68a36524c2db3ed42747764bd44dd453fd89aa7749c80963432c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.24-enterprise` - linux; amd64
@@ -2059,7 +2059,7 @@ $ docker pull neo4j@sha256:a23e58c8636183262bb59c3ecfff9609f89158cd5f5c613eb4c2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.25` - linux; amd64
@@ -2164,7 +2164,7 @@ $ docker pull neo4j@sha256:a23e58c8636183262bb59c3ecfff9609f89158cd5f5c613eb4c2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.25-community` - linux; amd64
@@ -2269,7 +2269,7 @@ $ docker pull neo4j@sha256:97d705488056e6f5d3958977ba8161399366ba228d7d36247efbb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.25-enterprise` - linux; amd64
@@ -2374,7 +2374,7 @@ $ docker pull neo4j@sha256:c0d3d443b8429a40196b8dabec2e9c2e9548b3ba0dee04571b98c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.26` - linux; amd64
@@ -2479,7 +2479,7 @@ $ docker pull neo4j@sha256:c0d3d443b8429a40196b8dabec2e9c2e9548b3ba0dee04571b98c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.26-community` - linux; amd64
@@ -2584,7 +2584,7 @@ $ docker pull neo4j@sha256:c949c82cbc3f372fade2297abc3bdde8444f2dfedb56695e3def0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.26-enterprise` - linux; amd64
@@ -2689,7 +2689,7 @@ $ docker pull neo4j@sha256:eda92c63ac5c59b4565c32adc74b7e343b07f23fc463c8413f181
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.27` - linux; amd64
@@ -2794,7 +2794,7 @@ $ docker pull neo4j@sha256:eda92c63ac5c59b4565c32adc74b7e343b07f23fc463c8413f181
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.27-community` - linux; amd64
@@ -2899,7 +2899,7 @@ $ docker pull neo4j@sha256:504886a4da485f0331601039a9d459fdcc590b5f6a9b5a6bd37f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.27-enterprise` - linux; amd64
@@ -3004,7 +3004,7 @@ $ docker pull neo4j@sha256:b5110d85399876af0535eb289592bc5529a1bcb6b248fa27c6115
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.28` - linux; amd64
@@ -3109,7 +3109,7 @@ $ docker pull neo4j@sha256:b5110d85399876af0535eb289592bc5529a1bcb6b248fa27c6115
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.28-community` - linux; amd64
@@ -3214,7 +3214,7 @@ $ docker pull neo4j@sha256:6e699aadcd806e9ae01ee2aa8a13be3e7848f9c5cd2a55834c5b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.28-enterprise` - linux; amd64
@@ -3319,7 +3319,7 @@ $ docker pull neo4j@sha256:9c2f5f60c09442be8b51fceab0df9704bbee50ff534a939fe9d36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.29` - linux; amd64
@@ -3424,7 +3424,7 @@ $ docker pull neo4j@sha256:9c2f5f60c09442be8b51fceab0df9704bbee50ff534a939fe9d36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.29-community` - linux; amd64
@@ -3529,7 +3529,7 @@ $ docker pull neo4j@sha256:97d25c9b7264fc1d3e1a8813b7b7f50d86353510b21c244e677f0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:3.5.29-enterprise` - linux; amd64
@@ -3634,7 +3634,7 @@ $ docker pull neo4j@sha256:e7277ddd6afb5ce36f332030940edaef70adf4af1c05cab00f545
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0` - linux; amd64
@@ -3745,7 +3745,7 @@ $ docker pull neo4j@sha256:e7277ddd6afb5ce36f332030940edaef70adf4af1c05cab00f545
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0-community` - linux; amd64
@@ -3856,7 +3856,7 @@ $ docker pull neo4j@sha256:831290debeb757525c9cfc249f7c42a59c4477be796c07465a499
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0-enterprise` - linux; amd64
@@ -3967,7 +3967,7 @@ $ docker pull neo4j@sha256:df49fb369048560714c84eb4fa90fb15f3e4321efb9556423f6ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.0` - linux; amd64
@@ -4074,7 +4074,7 @@ $ docker pull neo4j@sha256:df49fb369048560714c84eb4fa90fb15f3e4321efb9556423f6ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.0-community` - linux; amd64
@@ -4181,7 +4181,7 @@ $ docker pull neo4j@sha256:fda1c75eb386ea98245a75f8bbf796ebbec5477f0510d7c050de5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.0-enterprise` - linux; amd64
@@ -4288,7 +4288,7 @@ $ docker pull neo4j@sha256:e0834d8bd1844b6aaa617bb1ebedc14524d0cb45f79cd773398c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.1` - linux; amd64
@@ -4395,7 +4395,7 @@ $ docker pull neo4j@sha256:e0834d8bd1844b6aaa617bb1ebedc14524d0cb45f79cd773398c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.1-community` - linux; amd64
@@ -4502,7 +4502,7 @@ $ docker pull neo4j@sha256:bccfb2fee9f0212a6a26613e57058a43ec0d306f7cd2150917c83
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.1-enterprise` - linux; amd64
@@ -4609,7 +4609,7 @@ $ docker pull neo4j@sha256:2f1383b29a8b5ab8e96cced7d915f10ada865d761e2aa51b3cb69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.10` - linux; amd64
@@ -4720,7 +4720,7 @@ $ docker pull neo4j@sha256:2f1383b29a8b5ab8e96cced7d915f10ada865d761e2aa51b3cb69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.10-community` - linux; amd64
@@ -4831,7 +4831,7 @@ $ docker pull neo4j@sha256:d61951c7ce5a7d4a20f44bdb6f76fcafca8baaa4433bb415bb2eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.10-enterprise` - linux; amd64
@@ -4942,7 +4942,7 @@ $ docker pull neo4j@sha256:2b8d71eb2e6e6e162a723c733c1c6a27a62c54774108523a5a4c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.11` - linux; amd64
@@ -5053,7 +5053,7 @@ $ docker pull neo4j@sha256:2b8d71eb2e6e6e162a723c733c1c6a27a62c54774108523a5a4c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.11-community` - linux; amd64
@@ -5164,7 +5164,7 @@ $ docker pull neo4j@sha256:5dce6595c91a4bbcedbf3cd507aa1d19c631a150c085deff34b00
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.11-enterprise` - linux; amd64
@@ -5275,7 +5275,7 @@ $ docker pull neo4j@sha256:e7277ddd6afb5ce36f332030940edaef70adf4af1c05cab00f545
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.12` - linux; amd64
@@ -5386,7 +5386,7 @@ $ docker pull neo4j@sha256:e7277ddd6afb5ce36f332030940edaef70adf4af1c05cab00f545
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.12-community` - linux; amd64
@@ -5497,7 +5497,7 @@ $ docker pull neo4j@sha256:831290debeb757525c9cfc249f7c42a59c4477be796c07465a499
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.12-enterprise` - linux; amd64
@@ -5608,7 +5608,7 @@ $ docker pull neo4j@sha256:b6cbba8608c15e7a6f8c7bab26bf0432c599e5eec393b283b2e8c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.2` - linux; amd64
@@ -5715,7 +5715,7 @@ $ docker pull neo4j@sha256:b6cbba8608c15e7a6f8c7bab26bf0432c599e5eec393b283b2e8c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.2-community` - linux; amd64
@@ -5822,7 +5822,7 @@ $ docker pull neo4j@sha256:d1a8134cc8d2473ffaa69f023abd3beaa6a31f46eb8666e86b274
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.2-enterprise` - linux; amd64
@@ -5929,7 +5929,7 @@ $ docker pull neo4j@sha256:1d5348cd66c30fd5efc48873bbcd02a4d938e67144a47bc8bea10
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.3` - linux; amd64
@@ -6036,7 +6036,7 @@ $ docker pull neo4j@sha256:1d5348cd66c30fd5efc48873bbcd02a4d938e67144a47bc8bea10
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.3-community` - linux; amd64
@@ -6143,7 +6143,7 @@ $ docker pull neo4j@sha256:0d937141bb15221e85db9db4af5c04a46e72cd0e8b17abedf6b3e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.3-enterprise` - linux; amd64
@@ -6250,7 +6250,7 @@ $ docker pull neo4j@sha256:e83ca78d9299534eff8b077656db465dce444af7b2206373e652f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.4` - linux; amd64
@@ -6357,7 +6357,7 @@ $ docker pull neo4j@sha256:e83ca78d9299534eff8b077656db465dce444af7b2206373e652f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.4-community` - linux; amd64
@@ -6464,7 +6464,7 @@ $ docker pull neo4j@sha256:61b60785f9c53da696882562598b50d6ff1439386fffa29be3796
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.4-enterprise` - linux; amd64
@@ -6571,7 +6571,7 @@ $ docker pull neo4j@sha256:ad7c3092ce586db596c8e1fb053fabea09cf5048498167f9e891f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.5` - linux; amd64
@@ -6678,7 +6678,7 @@ $ docker pull neo4j@sha256:ad7c3092ce586db596c8e1fb053fabea09cf5048498167f9e891f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.5-community` - linux; amd64
@@ -6785,7 +6785,7 @@ $ docker pull neo4j@sha256:69fe7713f51acc2bd74f22a23ce98af598ca9bc23d22e5a0f6aa1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.5-enterprise` - linux; amd64
@@ -6892,7 +6892,7 @@ $ docker pull neo4j@sha256:fed8f9ead94c3da2854d0781be977731f4909ea32975c236d894d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.6` - linux; amd64
@@ -6999,7 +6999,7 @@ $ docker pull neo4j@sha256:fed8f9ead94c3da2854d0781be977731f4909ea32975c236d894d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.6-community` - linux; amd64
@@ -7106,7 +7106,7 @@ $ docker pull neo4j@sha256:8ce0014b2102eb456a769a81e11f49c35dd1b0432a6708a65ec79
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.6-enterprise` - linux; amd64
@@ -7213,7 +7213,7 @@ $ docker pull neo4j@sha256:6dd23b135e311113a880953eb0c29423c8becd3a700afae96e1cc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.7` - linux; amd64
@@ -7324,7 +7324,7 @@ $ docker pull neo4j@sha256:6dd23b135e311113a880953eb0c29423c8becd3a700afae96e1cc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.7-community` - linux; amd64
@@ -7435,7 +7435,7 @@ $ docker pull neo4j@sha256:979dfd688f3c96b9ea10472d0b95104347cc477673dce666b58b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.7-enterprise` - linux; amd64
@@ -7546,7 +7546,7 @@ $ docker pull neo4j@sha256:503eb8304819e4cdab4bfc2ffb44354dd5ad239146576f44f8f3b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.8` - linux; amd64
@@ -7657,7 +7657,7 @@ $ docker pull neo4j@sha256:503eb8304819e4cdab4bfc2ffb44354dd5ad239146576f44f8f3b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.8-community` - linux; amd64
@@ -7768,7 +7768,7 @@ $ docker pull neo4j@sha256:a579cddbb5349e0b1070f2aefb51e61d2806002cf312de0ce50b3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.8-enterprise` - linux; amd64
@@ -7879,7 +7879,7 @@ $ docker pull neo4j@sha256:f648fd4d7ee6425ceeee946e42af6f67d980793bc411c2b9e9b76
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.9` - linux; amd64
@@ -7990,7 +7990,7 @@ $ docker pull neo4j@sha256:f648fd4d7ee6425ceeee946e42af6f67d980793bc411c2b9e9b76
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.9-community` - linux; amd64
@@ -8101,7 +8101,7 @@ $ docker pull neo4j@sha256:93355df9ddd17a8f7d3bf608391a48ba94a6cfeca0fe82e771bd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.0.9-enterprise` - linux; amd64
@@ -8212,7 +8212,7 @@ $ docker pull neo4j@sha256:69b21b1385f9b0e3ba30661eb612a0e4adc89704dca1e7d5dda7b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1` - linux; amd64
@@ -8323,7 +8323,7 @@ $ docker pull neo4j@sha256:69b21b1385f9b0e3ba30661eb612a0e4adc89704dca1e7d5dda7b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1-community` - linux; amd64
@@ -8434,7 +8434,7 @@ $ docker pull neo4j@sha256:6a8d900861a06627941d1ac683fa67301e7fb2939af9e675a7ff4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1-enterprise` - linux; amd64
@@ -8545,7 +8545,7 @@ $ docker pull neo4j@sha256:37052efedc1c8a8e92480420fedee89b26347926f873da6efecfc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.0` - linux; amd64
@@ -8652,7 +8652,7 @@ $ docker pull neo4j@sha256:37052efedc1c8a8e92480420fedee89b26347926f873da6efecfc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.0-community` - linux; amd64
@@ -8759,7 +8759,7 @@ $ docker pull neo4j@sha256:ee36467f9f1b1e9fcda39a99e6584f84e0d1b300c943235f79427
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.0-enterprise` - linux; amd64
@@ -8866,7 +8866,7 @@ $ docker pull neo4j@sha256:dbe9b343a67444859e5c2ca9a23d44b9d55f43a346bf257e39e8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.1` - linux; amd64
@@ -8977,7 +8977,7 @@ $ docker pull neo4j@sha256:dbe9b343a67444859e5c2ca9a23d44b9d55f43a346bf257e39e8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.1-community` - linux; amd64
@@ -9088,7 +9088,7 @@ $ docker pull neo4j@sha256:81217adfce628ec618ee927f6b840c27073d16f5729d3f989f7c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.1-enterprise` - linux; amd64
@@ -9199,7 +9199,7 @@ $ docker pull neo4j@sha256:69b21b1385f9b0e3ba30661eb612a0e4adc89704dca1e7d5dda7b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.10` - linux; amd64
@@ -9310,7 +9310,7 @@ $ docker pull neo4j@sha256:69b21b1385f9b0e3ba30661eb612a0e4adc89704dca1e7d5dda7b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.10-community` - linux; amd64
@@ -9421,7 +9421,7 @@ $ docker pull neo4j@sha256:6a8d900861a06627941d1ac683fa67301e7fb2939af9e675a7ff4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.10-enterprise` - linux; amd64
@@ -9532,7 +9532,7 @@ $ docker pull neo4j@sha256:f397eeef4dc1b036a8990fd027a80ca7023b420951a6dd121ca1f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.2` - linux; amd64
@@ -9643,7 +9643,7 @@ $ docker pull neo4j@sha256:f397eeef4dc1b036a8990fd027a80ca7023b420951a6dd121ca1f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.2-community` - linux; amd64
@@ -9754,7 +9754,7 @@ $ docker pull neo4j@sha256:6ded76066022c84d77252d8ba7f752d4313491ea2056c1e4f7728
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.2-enterprise` - linux; amd64
@@ -9865,7 +9865,7 @@ $ docker pull neo4j@sha256:4d0d4bc3e8a636f74900b0817c95921bb398efcffc646ecf87658
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.3` - linux; amd64
@@ -9976,7 +9976,7 @@ $ docker pull neo4j@sha256:4d0d4bc3e8a636f74900b0817c95921bb398efcffc646ecf87658
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.3-community` - linux; amd64
@@ -10087,7 +10087,7 @@ $ docker pull neo4j@sha256:2d8d62b4841caf084081c5cb867db10ce65d076e2350ce70ceb08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.3-enterprise` - linux; amd64
@@ -10198,7 +10198,7 @@ $ docker pull neo4j@sha256:3b9e646d1c1671502ffda68d0006bada779d52f9e206f32bff473
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.4` - linux; amd64
@@ -10309,7 +10309,7 @@ $ docker pull neo4j@sha256:3b9e646d1c1671502ffda68d0006bada779d52f9e206f32bff473
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.4-community` - linux; amd64
@@ -10420,7 +10420,7 @@ $ docker pull neo4j@sha256:ee0e724f09545ea5fc414f94633ea4921e36de35800fde33b8632
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.4-enterprise` - linux; amd64
@@ -10531,7 +10531,7 @@ $ docker pull neo4j@sha256:fd656981bdf536bf4fd1e3c90d0846c42489114f6a4bf5611901a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.5` - linux; amd64
@@ -10642,7 +10642,7 @@ $ docker pull neo4j@sha256:fd656981bdf536bf4fd1e3c90d0846c42489114f6a4bf5611901a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.5-community` - linux; amd64
@@ -10753,7 +10753,7 @@ $ docker pull neo4j@sha256:3e6eff5f017637450d5b12ac9a6ce340751133636c3a4632c79b1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.5-enterprise` - linux; amd64
@@ -10864,7 +10864,7 @@ $ docker pull neo4j@sha256:fa7481303089ab6b41b487b949b9d54d51296b57bbacd759daf91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.6` - linux; amd64
@@ -10975,7 +10975,7 @@ $ docker pull neo4j@sha256:fa7481303089ab6b41b487b949b9d54d51296b57bbacd759daf91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.6-community` - linux; amd64
@@ -11086,7 +11086,7 @@ $ docker pull neo4j@sha256:d85c6793ab40b6deac990c1394429194110fbb5221b8c2d1ca6ee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.6-enterprise` - linux; amd64
@@ -11197,7 +11197,7 @@ $ docker pull neo4j@sha256:06a30783a5c46aec705a40ad4f1fb73b96acf26fb6b89d25fb5cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.7` - linux; amd64
@@ -11308,7 +11308,7 @@ $ docker pull neo4j@sha256:06a30783a5c46aec705a40ad4f1fb73b96acf26fb6b89d25fb5cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.7-community` - linux; amd64
@@ -11419,7 +11419,7 @@ $ docker pull neo4j@sha256:720eb0af2ffd27a93d9daad4e5af0a9bf9706c00216b6ff25dc25
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.7-enterprise` - linux; amd64
@@ -11530,7 +11530,7 @@ $ docker pull neo4j@sha256:8936c76b5c5b7031ae39a602f9c489bf29114ad641f7e3dc93ab6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.8` - linux; amd64
@@ -11641,7 +11641,7 @@ $ docker pull neo4j@sha256:8936c76b5c5b7031ae39a602f9c489bf29114ad641f7e3dc93ab6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.8-community` - linux; amd64
@@ -11752,7 +11752,7 @@ $ docker pull neo4j@sha256:ff4486e186f427236a3f43fbb13ef8e3d5a96a328615bda28c73e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.8-enterprise` - linux; amd64
@@ -11863,7 +11863,7 @@ $ docker pull neo4j@sha256:63051c765441466286f30ead1d94d2a5579249f8405633f7f5d2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.9` - linux; amd64
@@ -11974,7 +11974,7 @@ $ docker pull neo4j@sha256:63051c765441466286f30ead1d94d2a5579249f8405633f7f5d2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.9-community` - linux; amd64
@@ -12085,7 +12085,7 @@ $ docker pull neo4j@sha256:16add40437f735980faf20fb62c1fcda5593e9dd04f6472282ddb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.1.9-enterprise` - linux; amd64
@@ -12196,7 +12196,7 @@ $ docker pull neo4j@sha256:e1a8800a151094b049a231ff005bf1fae68af8f91a5661e5259f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2` - linux; amd64
@@ -12307,7 +12307,7 @@ $ docker pull neo4j@sha256:e1a8800a151094b049a231ff005bf1fae68af8f91a5661e5259f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2-community` - linux; amd64
@@ -12418,7 +12418,7 @@ $ docker pull neo4j@sha256:607bf15c4187727458ce9ef3140c8aaefe95146ed52ea12a2c23c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2-enterprise` - linux; amd64
@@ -12529,7 +12529,7 @@ $ docker pull neo4j@sha256:ce4114a95906502a4141238017a5b1fb4eac41c2fa1ac483bce04
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.0` - linux; amd64
@@ -12640,7 +12640,7 @@ $ docker pull neo4j@sha256:ce4114a95906502a4141238017a5b1fb4eac41c2fa1ac483bce04
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.0-community` - linux; amd64
@@ -12751,7 +12751,7 @@ $ docker pull neo4j@sha256:cfc744a0b78609404635bff970c8265d694bb2e9802f0850f0658
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.0-enterprise` - linux; amd64
@@ -12862,7 +12862,7 @@ $ docker pull neo4j@sha256:6b9e0d4326d9e6ea4d13599a671ac864ba69e92a6bb89dee48a3a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.1` - linux; amd64
@@ -12973,7 +12973,7 @@ $ docker pull neo4j@sha256:6b9e0d4326d9e6ea4d13599a671ac864ba69e92a6bb89dee48a3a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.1-community` - linux; amd64
@@ -13084,7 +13084,7 @@ $ docker pull neo4j@sha256:b7e04860f9984e3e452937fb4a19af6ac028744c904c338361357
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.1-enterprise` - linux; amd64
@@ -13195,7 +13195,7 @@ $ docker pull neo4j@sha256:a19ff0143a4fda9f8b9deb5497f023de9395306ede20ff77eaf55
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.2` - linux; amd64
@@ -13306,7 +13306,7 @@ $ docker pull neo4j@sha256:a19ff0143a4fda9f8b9deb5497f023de9395306ede20ff77eaf55
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.2-community` - linux; amd64
@@ -13417,7 +13417,7 @@ $ docker pull neo4j@sha256:edbdfba82c46213dc9ffa1c27a9195e7ea9081e3a05027d6efadd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.2-enterprise` - linux; amd64
@@ -13528,7 +13528,7 @@ $ docker pull neo4j@sha256:3d44efc1b1cb24926461abece3b23f994768a6a80d7488a29b6ba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.3` - linux; amd64
@@ -13639,7 +13639,7 @@ $ docker pull neo4j@sha256:3d44efc1b1cb24926461abece3b23f994768a6a80d7488a29b6ba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.3-community` - linux; amd64
@@ -13750,7 +13750,7 @@ $ docker pull neo4j@sha256:f4215bbaf5c6e2def108cb40fab319eb7240f8a03400000dbea36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.3-enterprise` - linux; amd64
@@ -13861,7 +13861,7 @@ $ docker pull neo4j@sha256:b16d15c4b8c779cf141fe5cf91a6d00b30c9d75dafbbabd0ef379
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.4` - linux; amd64
@@ -13972,7 +13972,7 @@ $ docker pull neo4j@sha256:b16d15c4b8c779cf141fe5cf91a6d00b30c9d75dafbbabd0ef379
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.4-community` - linux; amd64
@@ -14083,7 +14083,7 @@ $ docker pull neo4j@sha256:908707ce2dd85654a782c4c757cf3c93ca49fc8c50c1969c352e3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.4-enterprise` - linux; amd64
@@ -14194,7 +14194,7 @@ $ docker pull neo4j@sha256:768a67a1856b7a9edcf4ff1a17da556de5016fc444fcb9674177c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.5` - linux; amd64
@@ -14305,7 +14305,7 @@ $ docker pull neo4j@sha256:768a67a1856b7a9edcf4ff1a17da556de5016fc444fcb9674177c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.5-community` - linux; amd64
@@ -14416,7 +14416,7 @@ $ docker pull neo4j@sha256:6634446cf55b120f0ccc02bddbb600c0f29dc08d510e26f31b545
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.5-enterprise` - linux; amd64
@@ -14527,7 +14527,7 @@ $ docker pull neo4j@sha256:fd14d6e85ea010c910104a289befc9b44b05b9ea2419a677f173c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.6` - linux; amd64
@@ -14638,7 +14638,7 @@ $ docker pull neo4j@sha256:fd14d6e85ea010c910104a289befc9b44b05b9ea2419a677f173c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.6-community` - linux; amd64
@@ -14749,7 +14749,7 @@ $ docker pull neo4j@sha256:d4eed17fba85dae957a76dee9b905e77b377031b072e58603c2f4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.6-enterprise` - linux; amd64
@@ -14860,7 +14860,7 @@ $ docker pull neo4j@sha256:2aaf1887cbed2ac66dd0de27acbcf19756630a17fe6999c15295d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.7` - linux; amd64
@@ -14971,7 +14971,7 @@ $ docker pull neo4j@sha256:2aaf1887cbed2ac66dd0de27acbcf19756630a17fe6999c15295d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.7-community` - linux; amd64
@@ -15082,7 +15082,7 @@ $ docker pull neo4j@sha256:5c8e1433e11d88fbb3fed665b4b21aa48c53cd97c0a3669bcf07c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.7-enterprise` - linux; amd64
@@ -15193,7 +15193,7 @@ $ docker pull neo4j@sha256:f62634ba2df865130e0dbb781d730b7a1d32314fd65941e98c088
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.8` - linux; amd64
@@ -15304,7 +15304,7 @@ $ docker pull neo4j@sha256:f62634ba2df865130e0dbb781d730b7a1d32314fd65941e98c088
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.8-community` - linux; amd64
@@ -15415,7 +15415,7 @@ $ docker pull neo4j@sha256:ced2095d6f2c965d7f4d5f506fbaf0088891a9168563a9b9d76c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.8-enterprise` - linux; amd64
@@ -15526,7 +15526,7 @@ $ docker pull neo4j@sha256:e1a8800a151094b049a231ff005bf1fae68af8f91a5661e5259f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.9` - linux; amd64
@@ -15637,7 +15637,7 @@ $ docker pull neo4j@sha256:e1a8800a151094b049a231ff005bf1fae68af8f91a5661e5259f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.9-community` - linux; amd64
@@ -15748,7 +15748,7 @@ $ docker pull neo4j@sha256:607bf15c4187727458ce9ef3140c8aaefe95146ed52ea12a2c23c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.2.9-enterprise` - linux; amd64
@@ -15859,7 +15859,7 @@ $ docker pull neo4j@sha256:78c507172752737eb8e68f0877eb75172100f49f9f6a891829a00
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.3` - linux; amd64
@@ -15970,7 +15970,7 @@ $ docker pull neo4j@sha256:78c507172752737eb8e68f0877eb75172100f49f9f6a891829a00
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.3-community` - linux; amd64
@@ -16081,7 +16081,7 @@ $ docker pull neo4j@sha256:5cef43d903a52349022ea5658b29c15623f033e6fa6ef94bd422c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.3-enterprise` - linux; amd64
@@ -16192,7 +16192,7 @@ $ docker pull neo4j@sha256:fa102230a81fc684e4d340f7a7c12e25359909c15c4636904bddb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.3.0` - linux; amd64
@@ -16303,7 +16303,7 @@ $ docker pull neo4j@sha256:fa102230a81fc684e4d340f7a7c12e25359909c15c4636904bddb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.3.0-community` - linux; amd64
@@ -16414,7 +16414,7 @@ $ docker pull neo4j@sha256:78eb2d4fb137e0ac627acc9988b089fafdbaefe10990ec51b37b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.3.0-enterprise` - linux; amd64
@@ -16525,7 +16525,7 @@ $ docker pull neo4j@sha256:eb7cc378cf00da000893b678c5a49ddbf31b48825fc860b8fc54c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.3.1` - linux; amd64
@@ -16636,7 +16636,7 @@ $ docker pull neo4j@sha256:eb7cc378cf00da000893b678c5a49ddbf31b48825fc860b8fc54c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.3.1-community` - linux; amd64
@@ -16747,7 +16747,7 @@ $ docker pull neo4j@sha256:5083085d423a93a401b1e9fd83b50a60161c4addb0cac575da54e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.3.1-enterprise` - linux; amd64
@@ -16858,7 +16858,7 @@ $ docker pull neo4j@sha256:78c507172752737eb8e68f0877eb75172100f49f9f6a891829a00
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.3.2` - linux; amd64
@@ -16969,7 +16969,7 @@ $ docker pull neo4j@sha256:78c507172752737eb8e68f0877eb75172100f49f9f6a891829a00
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.3.2-community` - linux; amd64
@@ -17080,7 +17080,7 @@ $ docker pull neo4j@sha256:5cef43d903a52349022ea5658b29c15623f033e6fa6ef94bd422c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:4.3.2-enterprise` - linux; amd64
@@ -17191,7 +17191,7 @@ $ docker pull neo4j@sha256:78c507172752737eb8e68f0877eb75172100f49f9f6a891829a00
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:community` - linux; amd64
@@ -17302,7 +17302,7 @@ $ docker pull neo4j@sha256:5cef43d903a52349022ea5658b29c15623f033e6fa6ef94bd422c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:enterprise` - linux; amd64
@@ -17413,7 +17413,7 @@ $ docker pull neo4j@sha256:78c507172752737eb8e68f0877eb75172100f49f9f6a891829a00
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neo4j:latest` - linux; amd64
