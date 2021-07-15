@@ -15,7 +15,7 @@ $ docker pull hitch@sha256:f4b7351e1e14b76c21c5afb4058e226191dd2eb73be8fc456c3b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `hitch:1` - linux; amd64
@@ -74,7 +74,7 @@ $ docker pull hitch@sha256:f4b7351e1e14b76c21c5afb4058e226191dd2eb73be8fc456c3b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `hitch:1.7` - linux; amd64
@@ -133,7 +133,7 @@ $ docker pull hitch@sha256:f4b7351e1e14b76c21c5afb4058e226191dd2eb73be8fc456c3b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `hitch:1.7.0` - linux; amd64
@@ -192,7 +192,7 @@ $ docker pull hitch@sha256:f4b7351e1e14b76c21c5afb4058e226191dd2eb73be8fc456c3b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `hitch:1.7.0-1` - linux; amd64
@@ -251,7 +251,7 @@ $ docker pull hitch@sha256:f4b7351e1e14b76c21c5afb4058e226191dd2eb73be8fc456c3b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `hitch:latest` - linux; amd64
