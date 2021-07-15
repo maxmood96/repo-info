@@ -5,7 +5,7 @@ $ docker pull mongo@sha256:2e9f3a9e9bf92a381546f0d76643a0702e9145139bde8fa81bf07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:nanoserver` - windows version 10.0.17763.2061; amd64

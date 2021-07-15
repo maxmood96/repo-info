@@ -5,7 +5,7 @@ $ docker pull mongo@sha256:8354805ee232b1a652fbdf409d28e2e8529e96f2c7d429f5fec87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 

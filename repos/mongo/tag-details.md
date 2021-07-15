@@ -101,7 +101,7 @@ $ docker pull mongo@sha256:6efa052039903e731e4a5550c68a13c4869ddc93742c716332883
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; s390x
@@ -579,7 +579,7 @@ $ docker pull mongo@sha256:3d0e6df9fd5bc42cbf8ef8bc9e6c4e78f6f26c7157dbd7bdec72d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; s390x
@@ -900,7 +900,7 @@ $ docker pull mongo@sha256:55674081c06a5ab46bd949dd0fb33ef8248915d73fdd3370916da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -1000,7 +1000,7 @@ $ docker pull mongo@sha256:55674081c06a5ab46bd949dd0fb33ef8248915d73fdd3370916da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -1100,7 +1100,7 @@ $ docker pull mongo@sha256:8354805ee232b1a652fbdf409d28e2e8529e96f2c7d429f5fec87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -1266,7 +1266,7 @@ $ docker pull mongo@sha256:b08fd38f6cf0bb21c862aad9ae49350501c58f55dcc01195202b5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -1353,7 +1353,7 @@ $ docker pull mongo@sha256:07ee4653134c8e43a94c58aebc908ff4fb68c446d62b3bbf8e89f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `mongo:4-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -1441,7 +1441,7 @@ $ docker pull mongo@sha256:f94649abaf24fe75c696af6276b634265c7ffec8d3f745f875ac2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -1851,7 +1851,7 @@ $ docker pull mongo@sha256:cd9272a51e04752f1449014cf2d2c098c794c780ed7af074d0c99
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.0-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -1951,7 +1951,7 @@ $ docker pull mongo@sha256:cd9272a51e04752f1449014cf2d2c098c794c780ed7af074d0c99
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.0-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -2051,7 +2051,7 @@ $ docker pull mongo@sha256:34e52598c1d2a3e4f7a85d3b865cdc1f52c09f55ebfe605df022c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -2217,7 +2217,7 @@ $ docker pull mongo@sha256:0b1155288b98fb272c1df435bce8ea522244174a477b959f04630
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.0-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -2304,7 +2304,7 @@ $ docker pull mongo@sha256:5f45a5860ba0d0c3964b0ddf1ae1dd82773db6ca3e1870113be23
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `mongo:4.0-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -2392,7 +2392,7 @@ $ docker pull mongo@sha256:c2b9c16b187184197328c2a88128e25ff568fbcdda1f3c346531f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -2645,7 +2645,7 @@ $ docker pull mongo@sha256:f94649abaf24fe75c696af6276b634265c7ffec8d3f745f875ac2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -3055,7 +3055,7 @@ $ docker pull mongo@sha256:cd9272a51e04752f1449014cf2d2c098c794c780ed7af074d0c99
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.0.25-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -3155,7 +3155,7 @@ $ docker pull mongo@sha256:cd9272a51e04752f1449014cf2d2c098c794c780ed7af074d0c99
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.0.25-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -3255,7 +3255,7 @@ $ docker pull mongo@sha256:34e52598c1d2a3e4f7a85d3b865cdc1f52c09f55ebfe605df022c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -3421,7 +3421,7 @@ $ docker pull mongo@sha256:0b1155288b98fb272c1df435bce8ea522244174a477b959f04630
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.0.25-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -3508,7 +3508,7 @@ $ docker pull mongo@sha256:5f45a5860ba0d0c3964b0ddf1ae1dd82773db6ca3e1870113be23
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `mongo:4.0.25-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -3596,7 +3596,7 @@ $ docker pull mongo@sha256:c2b9c16b187184197328c2a88128e25ff568fbcdda1f3c346531f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -3849,7 +3849,7 @@ $ docker pull mongo@sha256:b71a8068d15e0640ed4957683fff1e442f228c582d48441d4f3b5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -4223,7 +4223,7 @@ $ docker pull mongo@sha256:1177e2c15d151e7c9b447954f0c4b40cb073805c31943a65354e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -4440,7 +4440,7 @@ $ docker pull mongo@sha256:1164738b129d181a1ac37abbd8e95a5a6e02a51aa2811b9d0bed1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.2-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -4540,7 +4540,7 @@ $ docker pull mongo@sha256:1164738b129d181a1ac37abbd8e95a5a6e02a51aa2811b9d0bed1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.2-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -4640,7 +4640,7 @@ $ docker pull mongo@sha256:e8f14404b0e4a61aa43659894af1e399595263c8f0a992af88fe7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -4806,7 +4806,7 @@ $ docker pull mongo@sha256:8de2eb8d4881e8a11538dfc8cdaf95279bac69768bd3aaf4872dc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.2-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -4893,7 +4893,7 @@ $ docker pull mongo@sha256:7b86104ad9ea08eb9ed9f99c8b6f9c88467ea64ff4a0590ecfbcd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `mongo:4.2-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -4981,7 +4981,7 @@ $ docker pull mongo@sha256:b71a8068d15e0640ed4957683fff1e442f228c582d48441d4f3b5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -5355,7 +5355,7 @@ $ docker pull mongo@sha256:1177e2c15d151e7c9b447954f0c4b40cb073805c31943a65354e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -5572,7 +5572,7 @@ $ docker pull mongo@sha256:1164738b129d181a1ac37abbd8e95a5a6e02a51aa2811b9d0bed1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.2.15-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -5672,7 +5672,7 @@ $ docker pull mongo@sha256:1164738b129d181a1ac37abbd8e95a5a6e02a51aa2811b9d0bed1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.2.15-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -5772,7 +5772,7 @@ $ docker pull mongo@sha256:e8f14404b0e4a61aa43659894af1e399595263c8f0a992af88fe7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -5938,7 +5938,7 @@ $ docker pull mongo@sha256:8de2eb8d4881e8a11538dfc8cdaf95279bac69768bd3aaf4872dc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.2.15-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -6025,7 +6025,7 @@ $ docker pull mongo@sha256:7b86104ad9ea08eb9ed9f99c8b6f9c88467ea64ff4a0590ecfbcd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `mongo:4.2.15-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -6113,7 +6113,7 @@ $ docker pull mongo@sha256:6efa052039903e731e4a5550c68a13c4869ddc93742c716332883
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; s390x
@@ -6591,7 +6591,7 @@ $ docker pull mongo@sha256:3d0e6df9fd5bc42cbf8ef8bc9e6c4e78f6f26c7157dbd7bdec72d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; s390x
@@ -6912,7 +6912,7 @@ $ docker pull mongo@sha256:55674081c06a5ab46bd949dd0fb33ef8248915d73fdd3370916da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.4-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -7012,7 +7012,7 @@ $ docker pull mongo@sha256:55674081c06a5ab46bd949dd0fb33ef8248915d73fdd3370916da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.4-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -7112,7 +7112,7 @@ $ docker pull mongo@sha256:d0e3e455bdb9ce0a26f1bef04d6194c00e0133b764535f2503b5d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -7486,7 +7486,7 @@ $ docker pull mongo@sha256:78c6ec5cbf5b04ffd77fc74028abbcaf61ffa9466515f9b83435a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -7703,7 +7703,7 @@ $ docker pull mongo@sha256:a47968e3ba2a00006e17b5d5fc5aeca7efc7b44b9babeceb210f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.4-rc-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -7803,7 +7803,7 @@ $ docker pull mongo@sha256:a47968e3ba2a00006e17b5d5fc5aeca7efc7b44b9babeceb210f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.4-rc-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -7903,7 +7903,7 @@ $ docker pull mongo@sha256:8ff09521ad289b112acfa20dc0d9152aff940b17031db8b603fe8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -8069,7 +8069,7 @@ $ docker pull mongo@sha256:0864246162cad920e8db52072fb7455dd24811fca6d03a054ef48
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.4-rc-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -8156,7 +8156,7 @@ $ docker pull mongo@sha256:a85ad11b4839adafff48b2435c2f5711c323e1bb155dce507875d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `mongo:4.4-rc-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -8244,7 +8244,7 @@ $ docker pull mongo@sha256:8354805ee232b1a652fbdf409d28e2e8529e96f2c7d429f5fec87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -8410,7 +8410,7 @@ $ docker pull mongo@sha256:b08fd38f6cf0bb21c862aad9ae49350501c58f55dcc01195202b5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.4-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -8497,7 +8497,7 @@ $ docker pull mongo@sha256:07ee4653134c8e43a94c58aebc908ff4fb68c446d62b3bbf8e89f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `mongo:4.4-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -8585,7 +8585,7 @@ $ docker pull mongo@sha256:6efa052039903e731e4a5550c68a13c4869ddc93742c716332883
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; s390x
@@ -9063,7 +9063,7 @@ $ docker pull mongo@sha256:3d0e6df9fd5bc42cbf8ef8bc9e6c4e78f6f26c7157dbd7bdec72d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; s390x
@@ -9384,7 +9384,7 @@ $ docker pull mongo@sha256:55674081c06a5ab46bd949dd0fb33ef8248915d73fdd3370916da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.4.6-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -9484,7 +9484,7 @@ $ docker pull mongo@sha256:55674081c06a5ab46bd949dd0fb33ef8248915d73fdd3370916da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.4.6-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -9584,7 +9584,7 @@ $ docker pull mongo@sha256:8354805ee232b1a652fbdf409d28e2e8529e96f2c7d429f5fec87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -9750,7 +9750,7 @@ $ docker pull mongo@sha256:b08fd38f6cf0bb21c862aad9ae49350501c58f55dcc01195202b5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.4.6-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -9837,7 +9837,7 @@ $ docker pull mongo@sha256:07ee4653134c8e43a94c58aebc908ff4fb68c446d62b3bbf8e89f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `mongo:4.4.6-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -9925,7 +9925,7 @@ $ docker pull mongo@sha256:d0e3e455bdb9ce0a26f1bef04d6194c00e0133b764535f2503b5d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -10299,7 +10299,7 @@ $ docker pull mongo@sha256:78c6ec5cbf5b04ffd77fc74028abbcaf61ffa9466515f9b83435a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -10516,7 +10516,7 @@ $ docker pull mongo@sha256:a47968e3ba2a00006e17b5d5fc5aeca7efc7b44b9babeceb210f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.4.7-rc1-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -10616,7 +10616,7 @@ $ docker pull mongo@sha256:a47968e3ba2a00006e17b5d5fc5aeca7efc7b44b9babeceb210f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.4.7-rc1-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -10716,7 +10716,7 @@ $ docker pull mongo@sha256:8ff09521ad289b112acfa20dc0d9152aff940b17031db8b603fe8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -10882,7 +10882,7 @@ $ docker pull mongo@sha256:0864246162cad920e8db52072fb7455dd24811fca6d03a054ef48
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:4.4.7-rc1-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -10969,7 +10969,7 @@ $ docker pull mongo@sha256:a85ad11b4839adafff48b2435c2f5711c323e1bb155dce507875d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `mongo:4.4.7-rc1-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -11057,7 +11057,7 @@ $ docker pull mongo@sha256:f4ff7bb4291eb5d3f530a726fc524ba8e4318d652e64f2d58560f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -11431,7 +11431,7 @@ $ docker pull mongo@sha256:205c832a7bc7d37ea8d1be3a454455170239f8abb2883604471c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -11648,7 +11648,7 @@ $ docker pull mongo@sha256:2e9f3a9e9bf92a381546f0d76643a0702e9145139bde8fa81bf07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:5-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -11748,7 +11748,7 @@ $ docker pull mongo@sha256:2e9f3a9e9bf92a381546f0d76643a0702e9145139bde8fa81bf07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:5-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -11848,7 +11848,7 @@ $ docker pull mongo@sha256:34e7cb91c8305d1dd7ac1fcd270c6493df562dccc9c4cff6d8aec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -12014,7 +12014,7 @@ $ docker pull mongo@sha256:b6be4840e58e4e222837daa8beee4d4b183a758fb2f60cad30da9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:5-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -12101,7 +12101,7 @@ $ docker pull mongo@sha256:21f134dd0989b1e1b734224b2c210d7573e11176f01b8fa51180b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `mongo:5-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -12189,7 +12189,7 @@ $ docker pull mongo@sha256:f4ff7bb4291eb5d3f530a726fc524ba8e4318d652e64f2d58560f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -12563,7 +12563,7 @@ $ docker pull mongo@sha256:205c832a7bc7d37ea8d1be3a454455170239f8abb2883604471c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -12780,7 +12780,7 @@ $ docker pull mongo@sha256:2e9f3a9e9bf92a381546f0d76643a0702e9145139bde8fa81bf07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:5.0-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -12880,7 +12880,7 @@ $ docker pull mongo@sha256:2e9f3a9e9bf92a381546f0d76643a0702e9145139bde8fa81bf07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:5.0-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -12980,7 +12980,7 @@ $ docker pull mongo@sha256:34e7cb91c8305d1dd7ac1fcd270c6493df562dccc9c4cff6d8aec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -13146,7 +13146,7 @@ $ docker pull mongo@sha256:b6be4840e58e4e222837daa8beee4d4b183a758fb2f60cad30da9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:5.0-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -13233,7 +13233,7 @@ $ docker pull mongo@sha256:21f134dd0989b1e1b734224b2c210d7573e11176f01b8fa51180b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `mongo:5.0-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -13321,7 +13321,7 @@ $ docker pull mongo@sha256:f4ff7bb4291eb5d3f530a726fc524ba8e4318d652e64f2d58560f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -13695,7 +13695,7 @@ $ docker pull mongo@sha256:205c832a7bc7d37ea8d1be3a454455170239f8abb2883604471c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -13912,7 +13912,7 @@ $ docker pull mongo@sha256:2e9f3a9e9bf92a381546f0d76643a0702e9145139bde8fa81bf07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:5.0.0-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -14012,7 +14012,7 @@ $ docker pull mongo@sha256:2e9f3a9e9bf92a381546f0d76643a0702e9145139bde8fa81bf07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:5.0.0-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -14112,7 +14112,7 @@ $ docker pull mongo@sha256:34e7cb91c8305d1dd7ac1fcd270c6493df562dccc9c4cff6d8aec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -14278,7 +14278,7 @@ $ docker pull mongo@sha256:b6be4840e58e4e222837daa8beee4d4b183a758fb2f60cad30da9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:5.0.0-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -14365,7 +14365,7 @@ $ docker pull mongo@sha256:21f134dd0989b1e1b734224b2c210d7573e11176f01b8fa51180b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `mongo:5.0.0-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -14453,7 +14453,7 @@ $ docker pull mongo@sha256:205c832a7bc7d37ea8d1be3a454455170239f8abb2883604471c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
@@ -14670,7 +14670,7 @@ $ docker pull mongo@sha256:f4ff7bb4291eb5d3f530a726fc524ba8e4318d652e64f2d58560f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	windows version 10.0.17763.2061; amd64
@@ -15044,7 +15044,7 @@ $ docker pull mongo@sha256:2e9f3a9e9bf92a381546f0d76643a0702e9145139bde8fa81bf07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:nanoserver` - windows version 10.0.17763.2061; amd64
@@ -15144,7 +15144,7 @@ $ docker pull mongo@sha256:2e9f3a9e9bf92a381546f0d76643a0702e9145139bde8fa81bf07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -15244,7 +15244,7 @@ $ docker pull mongo@sha256:34e7cb91c8305d1dd7ac1fcd270c6493df562dccc9c4cff6d8aec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -15410,7 +15410,7 @@ $ docker pull mongo@sha256:b6be4840e58e4e222837daa8beee4d4b183a758fb2f60cad30da9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `mongo:windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -15497,7 +15497,7 @@ $ docker pull mongo@sha256:21f134dd0989b1e1b734224b2c210d7573e11176f01b8fa51180b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `mongo:windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
