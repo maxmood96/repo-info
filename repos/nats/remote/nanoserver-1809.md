@@ -5,7 +5,7 @@ $ docker pull nats@sha256:5a0efd0e8d161d797c966f6e269a09b2c527a6761d49314012f29a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `nats:nanoserver-1809` - windows version 10.0.17763.2061; amd64

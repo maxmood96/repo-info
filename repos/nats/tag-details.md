@@ -50,7 +50,7 @@ $ docker pull nats@sha256:a22f80da6194bad3f89acb878d319d07bef10f6ea86c00c88721e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -272,7 +272,7 @@ $ docker pull nats@sha256:143abb1b17a6c4ef0a1ebcd6980e7e37d3d84c6810b10c5e7c6360
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -497,7 +497,7 @@ $ docker pull nats@sha256:143abb1b17a6c4ef0a1ebcd6980e7e37d3d84c6810b10c5e7c6360
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -722,7 +722,7 @@ $ docker pull nats@sha256:0af0863d42cecaaf08f44e31a170fe6a0d640ed1980f2979e09863
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -883,7 +883,7 @@ $ docker pull nats@sha256:5a0efd0e8d161d797c966f6e269a09b2c527a6761d49314012f29a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `nats:2-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -953,7 +953,7 @@ $ docker pull nats@sha256:5a0efd0e8d161d797c966f6e269a09b2c527a6761d49314012f29a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `nats:2-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -1023,7 +1023,7 @@ $ docker pull nats@sha256:0af0863d42cecaaf08f44e31a170fe6a0d640ed1980f2979e09863
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -1184,7 +1184,7 @@ $ docker pull nats@sha256:0b8e165d4355d79cc830cad2c312463d6c6b26fb861b5d51a4f2e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -1388,7 +1388,7 @@ $ docker pull nats@sha256:de456b6d65e1ee5c7a2a23ed3122872764275185e5f749034e065b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `nats:2-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -1494,7 +1494,7 @@ $ docker pull nats@sha256:b192069a4cfd70392063967b2ce1090d6f8a094812fa4be622ffa3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `nats:2-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -1601,7 +1601,7 @@ $ docker pull nats@sha256:a22f80da6194bad3f89acb878d319d07bef10f6ea86c00c88721e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -1823,7 +1823,7 @@ $ docker pull nats@sha256:143abb1b17a6c4ef0a1ebcd6980e7e37d3d84c6810b10c5e7c6360
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -2048,7 +2048,7 @@ $ docker pull nats@sha256:143abb1b17a6c4ef0a1ebcd6980e7e37d3d84c6810b10c5e7c6360
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -2273,7 +2273,7 @@ $ docker pull nats@sha256:0af0863d42cecaaf08f44e31a170fe6a0d640ed1980f2979e09863
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -2434,7 +2434,7 @@ $ docker pull nats@sha256:5a0efd0e8d161d797c966f6e269a09b2c527a6761d49314012f29a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `nats:2.3-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -2504,7 +2504,7 @@ $ docker pull nats@sha256:5a0efd0e8d161d797c966f6e269a09b2c527a6761d49314012f29a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `nats:2.3-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -2574,7 +2574,7 @@ $ docker pull nats@sha256:0af0863d42cecaaf08f44e31a170fe6a0d640ed1980f2979e09863
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -2735,7 +2735,7 @@ $ docker pull nats@sha256:0b8e165d4355d79cc830cad2c312463d6c6b26fb861b5d51a4f2e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -2939,7 +2939,7 @@ $ docker pull nats@sha256:de456b6d65e1ee5c7a2a23ed3122872764275185e5f749034e065b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `nats:2.3-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -3045,7 +3045,7 @@ $ docker pull nats@sha256:b192069a4cfd70392063967b2ce1090d6f8a094812fa4be622ffa3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `nats:2.3-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -3152,7 +3152,7 @@ $ docker pull nats@sha256:a22f80da6194bad3f89acb878d319d07bef10f6ea86c00c88721e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -3374,7 +3374,7 @@ $ docker pull nats@sha256:143abb1b17a6c4ef0a1ebcd6980e7e37d3d84c6810b10c5e7c6360
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -3599,7 +3599,7 @@ $ docker pull nats@sha256:143abb1b17a6c4ef0a1ebcd6980e7e37d3d84c6810b10c5e7c6360
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -3824,7 +3824,7 @@ $ docker pull nats@sha256:0af0863d42cecaaf08f44e31a170fe6a0d640ed1980f2979e09863
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -3985,7 +3985,7 @@ $ docker pull nats@sha256:5a0efd0e8d161d797c966f6e269a09b2c527a6761d49314012f29a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `nats:2.3.2-nanoserver` - windows version 10.0.17763.2061; amd64
@@ -4055,7 +4055,7 @@ $ docker pull nats@sha256:5a0efd0e8d161d797c966f6e269a09b2c527a6761d49314012f29a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `nats:2.3.2-nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -4125,7 +4125,7 @@ $ docker pull nats@sha256:0af0863d42cecaaf08f44e31a170fe6a0d640ed1980f2979e09863
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -4286,7 +4286,7 @@ $ docker pull nats@sha256:0b8e165d4355d79cc830cad2c312463d6c6b26fb861b5d51a4f2e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -4490,7 +4490,7 @@ $ docker pull nats@sha256:de456b6d65e1ee5c7a2a23ed3122872764275185e5f749034e065b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `nats:2.3.2-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -4596,7 +4596,7 @@ $ docker pull nats@sha256:b192069a4cfd70392063967b2ce1090d6f8a094812fa4be622ffa3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `nats:2.3.2-windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
@@ -4703,7 +4703,7 @@ $ docker pull nats@sha256:143abb1b17a6c4ef0a1ebcd6980e7e37d3d84c6810b10c5e7c6360
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -4928,7 +4928,7 @@ $ docker pull nats@sha256:143abb1b17a6c4ef0a1ebcd6980e7e37d3d84c6810b10c5e7c6360
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -5153,7 +5153,7 @@ $ docker pull nats@sha256:a22f80da6194bad3f89acb878d319d07bef10f6ea86c00c88721e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -5375,7 +5375,7 @@ $ docker pull nats@sha256:0af0863d42cecaaf08f44e31a170fe6a0d640ed1980f2979e09863
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -5536,7 +5536,7 @@ $ docker pull nats@sha256:5a0efd0e8d161d797c966f6e269a09b2c527a6761d49314012f29a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `nats:nanoserver` - windows version 10.0.17763.2061; amd64
@@ -5606,7 +5606,7 @@ $ docker pull nats@sha256:5a0efd0e8d161d797c966f6e269a09b2c527a6761d49314012f29a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `nats:nanoserver-1809` - windows version 10.0.17763.2061; amd64
@@ -5676,7 +5676,7 @@ $ docker pull nats@sha256:0af0863d42cecaaf08f44e31a170fe6a0d640ed1980f2979e09863
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -5837,7 +5837,7 @@ $ docker pull nats@sha256:0b8e165d4355d79cc830cad2c312463d6c6b26fb861b5d51a4f2e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	windows version 10.0.17763.2061; amd64
 	-	windows version 10.0.14393.4530; amd64
 
@@ -6041,7 +6041,7 @@ $ docker pull nats@sha256:de456b6d65e1ee5c7a2a23ed3122872764275185e5f749034e065b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `nats:windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -6147,7 +6147,7 @@ $ docker pull nats@sha256:b192069a4cfd70392063967b2ce1090d6f8a094812fa4be622ffa3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.14393.4530; amd64
 
 ### `nats:windowsservercore-ltsc2016` - windows version 10.0.14393.4530; amd64
