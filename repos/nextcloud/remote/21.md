@@ -5,7 +5,7 @@ $ docker pull nextcloud@sha256:1666ad15e58fa46c4e4d613faf31dbec015e46e30deff17de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
