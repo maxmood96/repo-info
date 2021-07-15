@@ -5,7 +5,7 @@ $ docker pull nginx@sha256:353c20f74d9b6aee359f30e8e4f69c3d7eaea2f610681c4a95849
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
