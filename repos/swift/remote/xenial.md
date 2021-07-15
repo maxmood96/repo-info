@@ -5,7 +5,7 @@ $ docker pull swift@sha256:0084244203d543b43a205b35c5ca8b2c2271f89ff585f841c797e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:xenial` - linux; amd64

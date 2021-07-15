@@ -139,7 +139,7 @@ $ docker pull swift@sha256:cf9c1365d1e73e43717d3ec85dca49793accd8be1a6a3dd200671
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:4` - linux; amd64
@@ -219,7 +219,7 @@ $ docker pull swift@sha256:3ee72721d782ddd2f16e9cfeb6314b440ee5684d863a54adfd329
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:4.0` - linux; amd64
@@ -299,7 +299,7 @@ $ docker pull swift@sha256:3ee72721d782ddd2f16e9cfeb6314b440ee5684d863a54adfd329
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:4.0.3` - linux; amd64
@@ -379,7 +379,7 @@ $ docker pull swift@sha256:0d3ddf7b42b5df2b29566948225ee7c7c8018fbb7a76d2257ad08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:4.1` - linux; amd64
@@ -459,7 +459,7 @@ $ docker pull swift@sha256:0d3ddf7b42b5df2b29566948225ee7c7c8018fbb7a76d2257ad08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:4.1.3` - linux; amd64
@@ -539,7 +539,7 @@ $ docker pull swift@sha256:cf9c1365d1e73e43717d3ec85dca49793accd8be1a6a3dd200671
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:4.2` - linux; amd64
@@ -619,7 +619,7 @@ $ docker pull swift@sha256:cf9c1365d1e73e43717d3ec85dca49793accd8be1a6a3dd200671
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:4.2.4` - linux; amd64
@@ -699,7 +699,7 @@ $ docker pull swift@sha256:0a7dcb6048e20969dd528ecfc97aea6050acba1c4c3520f3f0a64
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.0` - linux; amd64
@@ -761,7 +761,7 @@ $ docker pull swift@sha256:0a7dcb6048e20969dd528ecfc97aea6050acba1c4c3520f3f0a64
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.0-bionic` - linux; amd64
@@ -823,7 +823,7 @@ $ docker pull swift@sha256:0e958ad62d1e335a4576a4b35f8897be131a2410c806c146849b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.0-bionic-slim` - linux; amd64
@@ -897,7 +897,7 @@ $ docker pull swift@sha256:0e958ad62d1e335a4576a4b35f8897be131a2410c806c146849b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.0-slim` - linux; amd64
@@ -971,7 +971,7 @@ $ docker pull swift@sha256:9ea831b3dc3b89bedfac223ed4e29096bb42052fde9222c6d5e42
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.0-xenial` - linux; amd64
@@ -1051,7 +1051,7 @@ $ docker pull swift@sha256:d6068353028c4b0655e762eeb2cf3ada1566cc9181cf68d6aed4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.0-xenial-slim` - linux; amd64
@@ -1129,7 +1129,7 @@ $ docker pull swift@sha256:0a7dcb6048e20969dd528ecfc97aea6050acba1c4c3520f3f0a64
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.0.3` - linux; amd64
@@ -1191,7 +1191,7 @@ $ docker pull swift@sha256:0a7dcb6048e20969dd528ecfc97aea6050acba1c4c3520f3f0a64
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.0.3-bionic` - linux; amd64
@@ -1253,7 +1253,7 @@ $ docker pull swift@sha256:0e958ad62d1e335a4576a4b35f8897be131a2410c806c146849b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.0.3-bionic-slim` - linux; amd64
@@ -1327,7 +1327,7 @@ $ docker pull swift@sha256:0e958ad62d1e335a4576a4b35f8897be131a2410c806c146849b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.0.3-slim` - linux; amd64
@@ -1401,7 +1401,7 @@ $ docker pull swift@sha256:9ea831b3dc3b89bedfac223ed4e29096bb42052fde9222c6d5e42
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.0.3-xenial` - linux; amd64
@@ -1481,7 +1481,7 @@ $ docker pull swift@sha256:d6068353028c4b0655e762eeb2cf3ada1566cc9181cf68d6aed4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.0.3-xenial-slim` - linux; amd64
@@ -1559,7 +1559,7 @@ $ docker pull swift@sha256:6f9047a518a7fc602ad3588a22424fbcf15122f5a5adb5609c634
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.1` - linux; amd64
@@ -1625,7 +1625,7 @@ $ docker pull swift@sha256:6f9047a518a7fc602ad3588a22424fbcf15122f5a5adb5609c634
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.1-bionic` - linux; amd64
@@ -1691,7 +1691,7 @@ $ docker pull swift@sha256:7fdcbfd823e14559580002f4494922a70ae8a0a7ce3dc3adcf7a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.1-bionic-slim` - linux; amd64
@@ -1755,7 +1755,7 @@ $ docker pull swift@sha256:7fdcbfd823e14559580002f4494922a70ae8a0a7ce3dc3adcf7a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.1-slim` - linux; amd64
@@ -1819,7 +1819,7 @@ $ docker pull swift@sha256:517a01b18774fa43524d658b7d67c98810cc3cd2ddbb72deeeac5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.1-xenial` - linux; amd64
@@ -1903,7 +1903,7 @@ $ docker pull swift@sha256:8c457d29fa291fe8b17272bb656f618ca81d230060d49bf8c51a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.1-xenial-slim` - linux; amd64
@@ -1985,7 +1985,7 @@ $ docker pull swift@sha256:6f9047a518a7fc602ad3588a22424fbcf15122f5a5adb5609c634
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.1.5` - linux; amd64
@@ -2051,7 +2051,7 @@ $ docker pull swift@sha256:6f9047a518a7fc602ad3588a22424fbcf15122f5a5adb5609c634
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.1.5-bionic` - linux; amd64
@@ -2117,7 +2117,7 @@ $ docker pull swift@sha256:7fdcbfd823e14559580002f4494922a70ae8a0a7ce3dc3adcf7a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.1.5-bionic-sim` - linux; amd64
@@ -2181,7 +2181,7 @@ $ docker pull swift@sha256:7fdcbfd823e14559580002f4494922a70ae8a0a7ce3dc3adcf7a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.1.5-slim` - linux; amd64
@@ -2245,7 +2245,7 @@ $ docker pull swift@sha256:517a01b18774fa43524d658b7d67c98810cc3cd2ddbb72deeeac5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.1.5-xenial` - linux; amd64
@@ -2329,7 +2329,7 @@ $ docker pull swift@sha256:8c457d29fa291fe8b17272bb656f618ca81d230060d49bf8c51a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.1.5-xenial-slim` - linux; amd64
@@ -2411,7 +2411,7 @@ $ docker pull swift@sha256:1a0d872b1afd5e2d2defad394e574095393d1312ddec6dd187da2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2` - linux; amd64
@@ -2477,7 +2477,7 @@ $ docker pull swift@sha256:ab06c707d0cba49881fdcb1913bf2fa8048484364d8f90f113891
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2-amazonlinux2` - linux; amd64
@@ -2543,7 +2543,7 @@ $ docker pull swift@sha256:f8f319c9703e3d70d4b4221540eca9f19348b82bb7cb586ed15fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2-amazonlinux2-slim` - linux; amd64
@@ -2601,7 +2601,7 @@ $ docker pull swift@sha256:1a0d872b1afd5e2d2defad394e574095393d1312ddec6dd187da2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2-bionic` - linux; amd64
@@ -2667,7 +2667,7 @@ $ docker pull swift@sha256:e38663d2d3b2ed164e8a653e25902349b9579e36f0937b481e3d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2-bionic-slim` - linux; amd64
@@ -2731,7 +2731,7 @@ $ docker pull swift@sha256:3e51d4543497c9a1e4cdc78c31f43286a3708d67f1301d1df2f96
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2-centos7` - linux; amd64
@@ -2805,7 +2805,7 @@ $ docker pull swift@sha256:fcd483b539f73afc83f3ae66aed32355bfbd8d398347d1ffadec9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2-centos7-slim` - linux; amd64
@@ -2865,7 +2865,7 @@ $ docker pull swift@sha256:66b05cd9f6b4fd91eacc6011facbefe9c2b742bf1eb0d3ae7f9b5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2-centos8` - linux; amd64
@@ -2945,7 +2945,7 @@ $ docker pull swift@sha256:9cef2708b4e765046e006d3440284a84ce154f4efabea50d5c9b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2-centos8-slim` - linux; amd64
@@ -3005,7 +3005,7 @@ $ docker pull swift@sha256:ee14ffcf5fa8a564cbca6dd9c815c3bc3496da61a581044535c47
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2-focal` - linux; amd64
@@ -3071,7 +3071,7 @@ $ docker pull swift@sha256:149ad0dd1f3a6db41bf000b87d4ea43d45eeabd256cf65e2b6f23
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2-focal-slim` - linux; amd64
@@ -3135,7 +3135,7 @@ $ docker pull swift@sha256:e38663d2d3b2ed164e8a653e25902349b9579e36f0937b481e3d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2-slim` - linux; amd64
@@ -3199,7 +3199,7 @@ $ docker pull swift@sha256:7309f7b648711389d6c9a3f0c68037911d268673bbe1ffac407b3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2-xenial` - linux; amd64
@@ -3283,7 +3283,7 @@ $ docker pull swift@sha256:1eb7f68548919276994e09bf9f3461b741654052afa9e317e7166
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2-xenial-slim` - linux; amd64
@@ -3365,7 +3365,7 @@ $ docker pull swift@sha256:1a0d872b1afd5e2d2defad394e574095393d1312ddec6dd187da2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2.5` - linux; amd64
@@ -3431,7 +3431,7 @@ $ docker pull swift@sha256:ab06c707d0cba49881fdcb1913bf2fa8048484364d8f90f113891
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2.5-amazonlinux2` - linux; amd64
@@ -3497,7 +3497,7 @@ $ docker pull swift@sha256:f8f319c9703e3d70d4b4221540eca9f19348b82bb7cb586ed15fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2.5-amazonlinux2-slim` - linux; amd64
@@ -3555,7 +3555,7 @@ $ docker pull swift@sha256:1a0d872b1afd5e2d2defad394e574095393d1312ddec6dd187da2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2.5-bionic` - linux; amd64
@@ -3621,7 +3621,7 @@ $ docker pull swift@sha256:e38663d2d3b2ed164e8a653e25902349b9579e36f0937b481e3d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2.5-bionic-slim` - linux; amd64
@@ -3685,7 +3685,7 @@ $ docker pull swift@sha256:3e51d4543497c9a1e4cdc78c31f43286a3708d67f1301d1df2f96
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2.5-centos7` - linux; amd64
@@ -3759,7 +3759,7 @@ $ docker pull swift@sha256:fcd483b539f73afc83f3ae66aed32355bfbd8d398347d1ffadec9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2.5-centos7-slim` - linux; amd64
@@ -3819,7 +3819,7 @@ $ docker pull swift@sha256:66b05cd9f6b4fd91eacc6011facbefe9c2b742bf1eb0d3ae7f9b5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2.5-centos8` - linux; amd64
@@ -3899,7 +3899,7 @@ $ docker pull swift@sha256:9cef2708b4e765046e006d3440284a84ce154f4efabea50d5c9b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2.5-centos8-slim` - linux; amd64
@@ -3959,7 +3959,7 @@ $ docker pull swift@sha256:ee14ffcf5fa8a564cbca6dd9c815c3bc3496da61a581044535c47
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2.5-focal` - linux; amd64
@@ -4025,7 +4025,7 @@ $ docker pull swift@sha256:149ad0dd1f3a6db41bf000b87d4ea43d45eeabd256cf65e2b6f23
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2.5-focal-slim` - linux; amd64
@@ -4089,7 +4089,7 @@ $ docker pull swift@sha256:e38663d2d3b2ed164e8a653e25902349b9579e36f0937b481e3d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2.5-slim` - linux; amd64
@@ -4153,7 +4153,7 @@ $ docker pull swift@sha256:7309f7b648711389d6c9a3f0c68037911d268673bbe1ffac407b3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2.5-xenial` - linux; amd64
@@ -4237,7 +4237,7 @@ $ docker pull swift@sha256:1eb7f68548919276994e09bf9f3461b741654052afa9e317e7166
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.2.5-xenial-slim` - linux; amd64
@@ -4319,7 +4319,7 @@ $ docker pull swift@sha256:c2bd38e59a45304fbe712ad9a2558017aa7607f7f0f1a99de11cf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3` - linux; amd64
@@ -4385,7 +4385,7 @@ $ docker pull swift@sha256:2f8059759494e080a261b94ac66f1a755139f4fb94e761e696001
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3-amazonlinux2` - linux; amd64
@@ -4451,7 +4451,7 @@ $ docker pull swift@sha256:c7bcdc3dfa97f07fa3a7d6069e1a9821dc90d6251c45244b5c0d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3-amazonlinux2-slim` - linux; amd64
@@ -4509,7 +4509,7 @@ $ docker pull swift@sha256:c2bd38e59a45304fbe712ad9a2558017aa7607f7f0f1a99de11cf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3-bionic` - linux; amd64
@@ -4575,7 +4575,7 @@ $ docker pull swift@sha256:5edbcff6aa29d2bd2b57a9ca0459777e335b9220d693d1e0730eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3-bionic-slim` - linux; amd64
@@ -4639,7 +4639,7 @@ $ docker pull swift@sha256:2bae2ecbd82136745459ee02a8e2224a4bb475a1e985686123a5a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3-centos7` - linux; amd64
@@ -4713,7 +4713,7 @@ $ docker pull swift@sha256:cf6fb62480defdffd5620d10e1cb7cdb099856e93fb99f0ff2126
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3-centos7-slim` - linux; amd64
@@ -4773,7 +4773,7 @@ $ docker pull swift@sha256:cd31dce5dd846d478f30975929034f3e677f4658899fa2cdafd3f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3-centos8` - linux; amd64
@@ -4853,7 +4853,7 @@ $ docker pull swift@sha256:1454dc8c0657129922d85d4cbd59b3505a4a1f211eff69a1ba50a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3-centos8-slim` - linux; amd64
@@ -4913,7 +4913,7 @@ $ docker pull swift@sha256:5fd3547b91c2091cc280e4c1c3402794807deb1f3f8abc7cd94e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3-focal` - linux; amd64
@@ -4979,7 +4979,7 @@ $ docker pull swift@sha256:9254e3f557c71222c1f052a6011f0e49768baefb84df2278ea750
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3-focal-slim` - linux; amd64
@@ -5043,7 +5043,7 @@ $ docker pull swift@sha256:5edbcff6aa29d2bd2b57a9ca0459777e335b9220d693d1e0730eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3-slim` - linux; amd64
@@ -5107,7 +5107,7 @@ $ docker pull swift@sha256:dead4050b949eb8311495be42a5f2e38265a6e35351133d31f707
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3-xenial` - linux; amd64
@@ -5191,7 +5191,7 @@ $ docker pull swift@sha256:42a3932f66ef885618b4c68328262d6afbf3ca917b06438ac45d0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3-xenial-slim` - linux; amd64
@@ -5273,7 +5273,7 @@ $ docker pull swift@sha256:c2bd38e59a45304fbe712ad9a2558017aa7607f7f0f1a99de11cf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3.3` - linux; amd64
@@ -5339,7 +5339,7 @@ $ docker pull swift@sha256:2f8059759494e080a261b94ac66f1a755139f4fb94e761e696001
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3.3-amazonlinux2` - linux; amd64
@@ -5405,7 +5405,7 @@ $ docker pull swift@sha256:c7bcdc3dfa97f07fa3a7d6069e1a9821dc90d6251c45244b5c0d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3.3-amazonlinux2-slim` - linux; amd64
@@ -5463,7 +5463,7 @@ $ docker pull swift@sha256:c2bd38e59a45304fbe712ad9a2558017aa7607f7f0f1a99de11cf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3.3-bionic` - linux; amd64
@@ -5529,7 +5529,7 @@ $ docker pull swift@sha256:5edbcff6aa29d2bd2b57a9ca0459777e335b9220d693d1e0730eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3.3-bionic-slim` - linux; amd64
@@ -5593,7 +5593,7 @@ $ docker pull swift@sha256:2bae2ecbd82136745459ee02a8e2224a4bb475a1e985686123a5a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3.3-centos7` - linux; amd64
@@ -5667,7 +5667,7 @@ $ docker pull swift@sha256:cf6fb62480defdffd5620d10e1cb7cdb099856e93fb99f0ff2126
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3.3-centos7-slim` - linux; amd64
@@ -5727,7 +5727,7 @@ $ docker pull swift@sha256:cd31dce5dd846d478f30975929034f3e677f4658899fa2cdafd3f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3.3-centos8` - linux; amd64
@@ -5807,7 +5807,7 @@ $ docker pull swift@sha256:1454dc8c0657129922d85d4cbd59b3505a4a1f211eff69a1ba50a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3.3-centos8-slim` - linux; amd64
@@ -5867,7 +5867,7 @@ $ docker pull swift@sha256:5fd3547b91c2091cc280e4c1c3402794807deb1f3f8abc7cd94e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3.3-focal` - linux; amd64
@@ -5933,7 +5933,7 @@ $ docker pull swift@sha256:9254e3f557c71222c1f052a6011f0e49768baefb84df2278ea750
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3.3-focal-slim` - linux; amd64
@@ -5997,7 +5997,7 @@ $ docker pull swift@sha256:5edbcff6aa29d2bd2b57a9ca0459777e335b9220d693d1e0730eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3.3-slim` - linux; amd64
@@ -6061,7 +6061,7 @@ $ docker pull swift@sha256:dead4050b949eb8311495be42a5f2e38265a6e35351133d31f707
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3.3-xenial` - linux; amd64
@@ -6145,7 +6145,7 @@ $ docker pull swift@sha256:42a3932f66ef885618b4c68328262d6afbf3ca917b06438ac45d0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.3.3-xenial-slim` - linux; amd64
@@ -6227,7 +6227,7 @@ $ docker pull swift@sha256:afeaee88cf71f0f0b15ec3db504257abb63e78f6554e8f9091295
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4` - linux; amd64
@@ -6293,7 +6293,7 @@ $ docker pull swift@sha256:b71a0f63fe276337befe835005e0821da2f8c59a9df476bc2d756
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4-amazonlinux2` - linux; amd64
@@ -6359,7 +6359,7 @@ $ docker pull swift@sha256:8145ffc9fc098d25f0d3883a1f1c4c227ce92ff658355c2f308d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4-amazonlinux2-slim` - linux; amd64
@@ -6417,7 +6417,7 @@ $ docker pull swift@sha256:afeaee88cf71f0f0b15ec3db504257abb63e78f6554e8f9091295
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4-bionic` - linux; amd64
@@ -6483,7 +6483,7 @@ $ docker pull swift@sha256:11d8a8c1b01900fcadbcfca380d9430a5232461cb86d38cfc5b53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4-bionic-slim` - linux; amd64
@@ -6547,7 +6547,7 @@ $ docker pull swift@sha256:ba82e631e75d339fee22e36d776cdf32dd503c6c6c3958fae3c0f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4-centos7` - linux; amd64
@@ -6621,7 +6621,7 @@ $ docker pull swift@sha256:e22002ee891f3a66405d557d1d1139d2be33346d90c3f5ed33c62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4-centos7-slim` - linux; amd64
@@ -6681,7 +6681,7 @@ $ docker pull swift@sha256:737b3e7a959fa17feae21b3383efcb71eb6511e37552956f03a40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4-centos8` - linux; amd64
@@ -6761,7 +6761,7 @@ $ docker pull swift@sha256:8647d9af4ff8c2d685dddb6d1549136255bb2fdc378ab49eae2da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4-centos8-slim` - linux; amd64
@@ -6821,7 +6821,7 @@ $ docker pull swift@sha256:ae8fb6a5a25935f8e25537159c134e1acf0749127eb21cbf38ff2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4-focal` - linux; amd64
@@ -6887,7 +6887,7 @@ $ docker pull swift@sha256:c30c44e2ffa8644d0b3e98b88c093a9e40fedd6336c19481d5949
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4-focal-slim` - linux; amd64
@@ -6951,7 +6951,7 @@ $ docker pull swift@sha256:11d8a8c1b01900fcadbcfca380d9430a5232461cb86d38cfc5b53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4-slim` - linux; amd64
@@ -7015,7 +7015,7 @@ $ docker pull swift@sha256:0084244203d543b43a205b35c5ca8b2c2271f89ff585f841c797e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4-xenial` - linux; amd64
@@ -7099,7 +7099,7 @@ $ docker pull swift@sha256:f13cc3c0cbd96065bcd8fd7171e20996cd5469d7fa933332b44ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4-xenial-slim` - linux; amd64
@@ -7181,7 +7181,7 @@ $ docker pull swift@sha256:afeaee88cf71f0f0b15ec3db504257abb63e78f6554e8f9091295
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4.2` - linux; amd64
@@ -7247,7 +7247,7 @@ $ docker pull swift@sha256:b71a0f63fe276337befe835005e0821da2f8c59a9df476bc2d756
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4.2-amazonlinux2` - linux; amd64
@@ -7313,7 +7313,7 @@ $ docker pull swift@sha256:8145ffc9fc098d25f0d3883a1f1c4c227ce92ff658355c2f308d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4.2-amazonlinux2-slim` - linux; amd64
@@ -7371,7 +7371,7 @@ $ docker pull swift@sha256:afeaee88cf71f0f0b15ec3db504257abb63e78f6554e8f9091295
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4.2-bionic` - linux; amd64
@@ -7437,7 +7437,7 @@ $ docker pull swift@sha256:11d8a8c1b01900fcadbcfca380d9430a5232461cb86d38cfc5b53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4.2-bionic-slim` - linux; amd64
@@ -7501,7 +7501,7 @@ $ docker pull swift@sha256:ba82e631e75d339fee22e36d776cdf32dd503c6c6c3958fae3c0f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4.2-centos7` - linux; amd64
@@ -7575,7 +7575,7 @@ $ docker pull swift@sha256:e22002ee891f3a66405d557d1d1139d2be33346d90c3f5ed33c62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4.2-centos7-slim` - linux; amd64
@@ -7635,7 +7635,7 @@ $ docker pull swift@sha256:737b3e7a959fa17feae21b3383efcb71eb6511e37552956f03a40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4.2-centos8` - linux; amd64
@@ -7715,7 +7715,7 @@ $ docker pull swift@sha256:8647d9af4ff8c2d685dddb6d1549136255bb2fdc378ab49eae2da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4.2-centos8-slim` - linux; amd64
@@ -7775,7 +7775,7 @@ $ docker pull swift@sha256:ae8fb6a5a25935f8e25537159c134e1acf0749127eb21cbf38ff2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4.2-focal` - linux; amd64
@@ -7841,7 +7841,7 @@ $ docker pull swift@sha256:c30c44e2ffa8644d0b3e98b88c093a9e40fedd6336c19481d5949
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4.2-focal-slim` - linux; amd64
@@ -7905,7 +7905,7 @@ $ docker pull swift@sha256:11d8a8c1b01900fcadbcfca380d9430a5232461cb86d38cfc5b53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4.2-slim` - linux; amd64
@@ -7969,7 +7969,7 @@ $ docker pull swift@sha256:0084244203d543b43a205b35c5ca8b2c2271f89ff585f841c797e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4.2-xenial` - linux; amd64
@@ -8053,7 +8053,7 @@ $ docker pull swift@sha256:f13cc3c0cbd96065bcd8fd7171e20996cd5469d7fa933332b44ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:5.4.2-xenial-slim` - linux; amd64
@@ -8135,7 +8135,7 @@ $ docker pull swift@sha256:b71a0f63fe276337befe835005e0821da2f8c59a9df476bc2d756
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:amazonlinux2` - linux; amd64
@@ -8201,7 +8201,7 @@ $ docker pull swift@sha256:8145ffc9fc098d25f0d3883a1f1c4c227ce92ff658355c2f308d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:amazonlinux2-slim` - linux; amd64
@@ -8259,7 +8259,7 @@ $ docker pull swift@sha256:afeaee88cf71f0f0b15ec3db504257abb63e78f6554e8f9091295
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:bionic` - linux; amd64
@@ -8325,7 +8325,7 @@ $ docker pull swift@sha256:11d8a8c1b01900fcadbcfca380d9430a5232461cb86d38cfc5b53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:bionic-slim` - linux; amd64
@@ -8389,7 +8389,7 @@ $ docker pull swift@sha256:ba82e631e75d339fee22e36d776cdf32dd503c6c6c3958fae3c0f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:centos7` - linux; amd64
@@ -8463,7 +8463,7 @@ $ docker pull swift@sha256:e22002ee891f3a66405d557d1d1139d2be33346d90c3f5ed33c62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:centos7-slim` - linux; amd64
@@ -8523,7 +8523,7 @@ $ docker pull swift@sha256:737b3e7a959fa17feae21b3383efcb71eb6511e37552956f03a40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:centos8` - linux; amd64
@@ -8603,7 +8603,7 @@ $ docker pull swift@sha256:8647d9af4ff8c2d685dddb6d1549136255bb2fdc378ab49eae2da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:centos8-slim` - linux; amd64
@@ -8663,7 +8663,7 @@ $ docker pull swift@sha256:ae8fb6a5a25935f8e25537159c134e1acf0749127eb21cbf38ff2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:focal` - linux; amd64
@@ -8729,7 +8729,7 @@ $ docker pull swift@sha256:c30c44e2ffa8644d0b3e98b88c093a9e40fedd6336c19481d5949
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:focal-slim` - linux; amd64
@@ -8793,7 +8793,7 @@ $ docker pull swift@sha256:afeaee88cf71f0f0b15ec3db504257abb63e78f6554e8f9091295
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:latest` - linux; amd64
@@ -8859,7 +8859,7 @@ $ docker pull swift@sha256:11d8a8c1b01900fcadbcfca380d9430a5232461cb86d38cfc5b53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:slim` - linux; amd64
@@ -8923,7 +8923,7 @@ $ docker pull swift@sha256:0084244203d543b43a205b35c5ca8b2c2271f89ff585f841c797e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:xenial` - linux; amd64
@@ -9007,7 +9007,7 @@ $ docker pull swift@sha256:f13cc3c0cbd96065bcd8fd7171e20996cd5469d7fa933332b44ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:xenial-slim` - linux; amd64

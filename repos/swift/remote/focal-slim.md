@@ -5,7 +5,7 @@ $ docker pull swift@sha256:c30c44e2ffa8644d0b3e98b88c093a9e40fedd6336c19481d5949
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:focal-slim` - linux; amd64

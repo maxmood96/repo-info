@@ -5,7 +5,7 @@ $ docker pull swift@sha256:8145ffc9fc098d25f0d3883a1f1c4c227ce92ff658355c2f308d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `swift:amazonlinux2-slim` - linux; amd64
