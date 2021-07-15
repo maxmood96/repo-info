@@ -5,7 +5,7 @@ $ docker pull perl@sha256:cc7d33acaf28cfbf69408a29ba9f3e22c5b2ea7f9ad2f1aed1b8dc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
