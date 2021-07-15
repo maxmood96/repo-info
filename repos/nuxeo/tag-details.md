@@ -25,7 +25,7 @@ $ docker pull nuxeo@sha256:72c566a2372c084a3db9d235b07c59ada4542af9f471775669c4d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `nuxeo:10` - linux; amd64
@@ -181,7 +181,7 @@ $ docker pull nuxeo@sha256:72c566a2372c084a3db9d235b07c59ada4542af9f471775669c4d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `nuxeo:10.10` - linux; amd64
@@ -337,7 +337,7 @@ $ docker pull nuxeo@sha256:270d8dc9a1b4c189d89d459dda477265dda5d510438ec91d8783a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `nuxeo:7` - linux; amd64
@@ -488,7 +488,7 @@ $ docker pull nuxeo@sha256:270d8dc9a1b4c189d89d459dda477265dda5d510438ec91d8783a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `nuxeo:7.10` - linux; amd64
@@ -639,7 +639,7 @@ $ docker pull nuxeo@sha256:da393adc3d0487c36e68bac7d369285301e98b7e0a4bcfde03282
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `nuxeo:8` - linux; amd64
@@ -781,7 +781,7 @@ $ docker pull nuxeo@sha256:da393adc3d0487c36e68bac7d369285301e98b7e0a4bcfde03282
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `nuxeo:8.10` - linux; amd64
@@ -923,7 +923,7 @@ $ docker pull nuxeo@sha256:6a3acbb899968dffea5d9e6074f90193ae95aec647a7c74c3dbd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `nuxeo:9` - linux; amd64
@@ -1079,7 +1079,7 @@ $ docker pull nuxeo@sha256:6a3acbb899968dffea5d9e6074f90193ae95aec647a7c74c3dbd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `nuxeo:9.10` - linux; amd64
@@ -1235,7 +1235,7 @@ $ docker pull nuxeo@sha256:72c566a2372c084a3db9d235b07c59ada4542af9f471775669c4d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `nuxeo:FT` - linux; amd64
@@ -1391,7 +1391,7 @@ $ docker pull nuxeo@sha256:72c566a2372c084a3db9d235b07c59ada4542af9f471775669c4d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `nuxeo:LTS` - linux; amd64
@@ -1547,7 +1547,7 @@ $ docker pull nuxeo@sha256:270d8dc9a1b4c189d89d459dda477265dda5d510438ec91d8783a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `nuxeo:LTS-2015` - linux; amd64
@@ -1698,7 +1698,7 @@ $ docker pull nuxeo@sha256:da393adc3d0487c36e68bac7d369285301e98b7e0a4bcfde03282
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `nuxeo:LTS-2016` - linux; amd64
@@ -1840,7 +1840,7 @@ $ docker pull nuxeo@sha256:6a3acbb899968dffea5d9e6074f90193ae95aec647a7c74c3dbd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `nuxeo:LTS-2017` - linux; amd64
@@ -1996,7 +1996,7 @@ $ docker pull nuxeo@sha256:72c566a2372c084a3db9d235b07c59ada4542af9f471775669c4d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `nuxeo:LTS-2019` - linux; amd64
@@ -2152,7 +2152,7 @@ $ docker pull nuxeo@sha256:72c566a2372c084a3db9d235b07c59ada4542af9f471775669c4d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `nuxeo:latest` - linux; amd64
