@@ -48,7 +48,7 @@ $ docker pull neurodebian@sha256:b0fd331f66e6c33eec1df7459fe4538498b2f478b879a5a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:bionic` - linux; amd64
@@ -108,7 +108,7 @@ $ docker pull neurodebian@sha256:83480bf0323c5ed0fbb8540d2f820d3ebe58c0fc1d15637
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:bionic-non-free` - linux; amd64
@@ -174,7 +174,7 @@ $ docker pull neurodebian@sha256:8e08d076837a26067c28fe149f0e5b9c3601cc99f1b40b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:bullseye` - linux; amd64
@@ -234,7 +234,7 @@ $ docker pull neurodebian@sha256:808c6e2e00b1e33f2937bae109801351c6a6a07c7fb6202
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:bullseye-non-free` - linux; amd64
@@ -300,7 +300,7 @@ $ docker pull neurodebian@sha256:8ba5901883f7c75b4eee3be3c27d8effa62914292e66420
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:buster` - linux; amd64
@@ -360,7 +360,7 @@ $ docker pull neurodebian@sha256:4521b5c4d5d7c927d54eb537aa801ea9b7d927515f15be1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:buster-non-free` - linux; amd64
@@ -426,7 +426,7 @@ $ docker pull neurodebian@sha256:8f7876dc77c57630ce3a62c209e29e0461872bff43d7363
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:focal` - linux; amd64
@@ -486,7 +486,7 @@ $ docker pull neurodebian@sha256:91b4e98452f060fdb303a62553a0edce105b00bb7618f4c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:focal-non-free` - linux; amd64
@@ -552,7 +552,7 @@ $ docker pull neurodebian@sha256:40b8b4f970d3c3152690a007450670aa5860900a5ff8238
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:groovy` - linux; amd64
@@ -612,7 +612,7 @@ $ docker pull neurodebian@sha256:2f59bba9f75c24fbe940f68c286baf4e8b2d0ddb3f0fbd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:groovy-non-free` - linux; amd64
@@ -678,7 +678,7 @@ $ docker pull neurodebian@sha256:f58e887ef774d54aaff62f1d4b42e998f81ed9fc383793d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:hirsute` - linux; amd64
@@ -738,7 +738,7 @@ $ docker pull neurodebian@sha256:fae34ae4ede0fc837cf0b7e8f27d43d401d3c6846c47e07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:hirsute-non-free` - linux; amd64
@@ -804,7 +804,7 @@ $ docker pull neurodebian@sha256:8ba5901883f7c75b4eee3be3c27d8effa62914292e66420
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:latest` - linux; amd64
@@ -864,7 +864,7 @@ $ docker pull neurodebian@sha256:6748a55057c06824e01627101e37be32ad5eb20311bd2d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:nd` - linux; amd64
@@ -924,7 +924,7 @@ $ docker pull neurodebian@sha256:f2030a908c409718d6c90159421711457ef3fcb26647df3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:nd-non-free` - linux; amd64
@@ -990,7 +990,7 @@ $ docker pull neurodebian@sha256:8ba5901883f7c75b4eee3be3c27d8effa62914292e66420
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:nd100` - linux; amd64
@@ -1050,7 +1050,7 @@ $ docker pull neurodebian@sha256:4521b5c4d5d7c927d54eb537aa801ea9b7d927515f15be1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:nd100-non-free` - linux; amd64
@@ -1116,7 +1116,7 @@ $ docker pull neurodebian@sha256:8e08d076837a26067c28fe149f0e5b9c3601cc99f1b40b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:nd110` - linux; amd64
@@ -1176,7 +1176,7 @@ $ docker pull neurodebian@sha256:808c6e2e00b1e33f2937bae109801351c6a6a07c7fb6202
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:nd110-non-free` - linux; amd64
@@ -1242,7 +1242,7 @@ $ docker pull neurodebian@sha256:706422ad8751b16d4421f5c37474d10da64d708f89d0d19
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:nd16.04` - linux; amd64
@@ -1320,7 +1320,7 @@ $ docker pull neurodebian@sha256:937cdaf8ad5054fd931a11a6bb0a8b4c0840a0a115540e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:nd16.04-non-free` - linux; amd64
@@ -1404,7 +1404,7 @@ $ docker pull neurodebian@sha256:b0fd331f66e6c33eec1df7459fe4538498b2f478b879a5a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:nd18.04` - linux; amd64
@@ -1464,7 +1464,7 @@ $ docker pull neurodebian@sha256:83480bf0323c5ed0fbb8540d2f820d3ebe58c0fc1d15637
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:nd18.04-non-free` - linux; amd64
@@ -1530,7 +1530,7 @@ $ docker pull neurodebian@sha256:8f7876dc77c57630ce3a62c209e29e0461872bff43d7363
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:nd20.04` - linux; amd64
@@ -1590,7 +1590,7 @@ $ docker pull neurodebian@sha256:91b4e98452f060fdb303a62553a0edce105b00bb7618f4c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:nd20.04-non-free` - linux; amd64
@@ -1656,7 +1656,7 @@ $ docker pull neurodebian@sha256:40b8b4f970d3c3152690a007450670aa5860900a5ff8238
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:nd20.10` - linux; amd64
@@ -1716,7 +1716,7 @@ $ docker pull neurodebian@sha256:2f59bba9f75c24fbe940f68c286baf4e8b2d0ddb3f0fbd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:nd20.10-non-free` - linux; amd64
@@ -1782,7 +1782,7 @@ $ docker pull neurodebian@sha256:f58e887ef774d54aaff62f1d4b42e998f81ed9fc383793d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:nd21.04` - linux; amd64
@@ -1842,7 +1842,7 @@ $ docker pull neurodebian@sha256:fae34ae4ede0fc837cf0b7e8f27d43d401d3c6846c47e07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:nd21.04-non-free` - linux; amd64
@@ -1908,7 +1908,7 @@ $ docker pull neurodebian@sha256:4bf384b41565dfcda82bb0a51d34be65f4374e282f23bc2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:nd90` - linux; amd64
@@ -1968,7 +1968,7 @@ $ docker pull neurodebian@sha256:d6acc3803cfd1ed66c5db56da11f7d2fe491eca8dba4d2a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:nd90-non-free` - linux; amd64
@@ -2034,7 +2034,7 @@ $ docker pull neurodebian@sha256:4521b5c4d5d7c927d54eb537aa801ea9b7d927515f15be1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:non-free` - linux; amd64
@@ -2100,7 +2100,7 @@ $ docker pull neurodebian@sha256:6748a55057c06824e01627101e37be32ad5eb20311bd2d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:sid` - linux; amd64
@@ -2160,7 +2160,7 @@ $ docker pull neurodebian@sha256:f2030a908c409718d6c90159421711457ef3fcb26647df3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:sid-non-free` - linux; amd64
@@ -2226,7 +2226,7 @@ $ docker pull neurodebian@sha256:4bf384b41565dfcda82bb0a51d34be65f4374e282f23bc2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:stretch` - linux; amd64
@@ -2286,7 +2286,7 @@ $ docker pull neurodebian@sha256:d6acc3803cfd1ed66c5db56da11f7d2fe491eca8dba4d2a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:stretch-non-free` - linux; amd64
@@ -2352,7 +2352,7 @@ $ docker pull neurodebian@sha256:706422ad8751b16d4421f5c37474d10da64d708f89d0d19
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:xenial` - linux; amd64
@@ -2430,7 +2430,7 @@ $ docker pull neurodebian@sha256:937cdaf8ad5054fd931a11a6bb0a8b4c0840a0a115540e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:xenial-non-free` - linux; amd64

@@ -5,7 +5,7 @@ $ docker pull neurodebian@sha256:f58e887ef774d54aaff62f1d4b42e998f81ed9fc383793d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `neurodebian:hirsute` - linux; amd64
