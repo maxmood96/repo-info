@@ -5,7 +5,7 @@ $ docker pull kapacitor@sha256:bf5077a6209a999f3a365940220003b7f17552171e1567948
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
