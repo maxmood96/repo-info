@@ -5,7 +5,7 @@ $ docker pull clearlinux@sha256:6d9898e07daeb5b71a3a01177c57bf9d55552ae5d028f8e8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `clearlinux:base` - linux; amd64
