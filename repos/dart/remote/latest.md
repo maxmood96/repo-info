@@ -5,7 +5,7 @@ $ docker pull dart@sha256:c069b45c0c11a76b575e05394481615ba9ce504e3aba819e6d499f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `dart:latest` - linux; amd64

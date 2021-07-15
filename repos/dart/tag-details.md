@@ -24,7 +24,7 @@ $ docker pull dart@sha256:c069b45c0c11a76b575e05394481615ba9ce504e3aba819e6d499f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `dart:2` - linux; amd64
@@ -84,7 +84,7 @@ $ docker pull dart@sha256:c069b45c0c11a76b575e05394481615ba9ce504e3aba819e6d499f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `dart:2-sdk` - linux; amd64
@@ -144,7 +144,7 @@ $ docker pull dart@sha256:c069b45c0c11a76b575e05394481615ba9ce504e3aba819e6d499f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `dart:2.13` - linux; amd64
@@ -204,7 +204,7 @@ $ docker pull dart@sha256:c069b45c0c11a76b575e05394481615ba9ce504e3aba819e6d499f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `dart:2.13-sdk` - linux; amd64
@@ -264,7 +264,7 @@ $ docker pull dart@sha256:c069b45c0c11a76b575e05394481615ba9ce504e3aba819e6d499f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `dart:2.13.4` - linux; amd64
@@ -324,7 +324,7 @@ $ docker pull dart@sha256:c069b45c0c11a76b575e05394481615ba9ce504e3aba819e6d499f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `dart:2.13.4-sdk` - linux; amd64
@@ -384,7 +384,7 @@ $ docker pull dart@sha256:5860d9af62671a0a7651217f8838de3f8080db729e242855cc88db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `dart:2.14.0-188.5.beta` - linux; amd64
@@ -444,7 +444,7 @@ $ docker pull dart@sha256:5860d9af62671a0a7651217f8838de3f8080db729e242855cc88db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `dart:2.14.0-188.5.beta-sdk` - linux; amd64
@@ -504,7 +504,7 @@ $ docker pull dart@sha256:5860d9af62671a0a7651217f8838de3f8080db729e242855cc88db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `dart:beta` - linux; amd64
@@ -564,7 +564,7 @@ $ docker pull dart@sha256:5860d9af62671a0a7651217f8838de3f8080db729e242855cc88db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `dart:beta-sdk` - linux; amd64
@@ -624,7 +624,7 @@ $ docker pull dart@sha256:c069b45c0c11a76b575e05394481615ba9ce504e3aba819e6d499f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `dart:latest` - linux; amd64
@@ -684,7 +684,7 @@ $ docker pull dart@sha256:c069b45c0c11a76b575e05394481615ba9ce504e3aba819e6d499f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `dart:sdk` - linux; amd64
@@ -744,7 +744,7 @@ $ docker pull dart@sha256:c069b45c0c11a76b575e05394481615ba9ce504e3aba819e6d499f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `dart:stable` - linux; amd64
@@ -804,7 +804,7 @@ $ docker pull dart@sha256:c069b45c0c11a76b575e05394481615ba9ce504e3aba819e6d499f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `dart:stable-sdk` - linux; amd64
