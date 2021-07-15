@@ -5,7 +5,7 @@ $ docker pull debian@sha256:0ee501c41db93e0dc3b9b3851d3995db6ec8c66f71ef8a9fd0f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
