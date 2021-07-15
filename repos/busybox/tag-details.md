@@ -30,7 +30,7 @@ $ docker pull busybox@sha256:0f354ec1728d9ff32edcd7d1b8bbdfc798277ad36120dc3dc68
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 10
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v6
@@ -309,7 +309,7 @@ $ docker pull busybox@sha256:ec254da8ed8bf758edf8a347e9dc2486b8afa52deb3e06b05c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -534,7 +534,7 @@ $ docker pull busybox@sha256:88b20a5fa16ff1ce1f2f8aaff1f3e4fbc7376154e2b22b2e53a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -732,7 +732,7 @@ $ docker pull busybox@sha256:4b0c56a3f6f1b72f7af95084476bb0f474effa19ac162f774ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -930,7 +930,7 @@ $ docker pull busybox@sha256:0f354ec1728d9ff32edcd7d1b8bbdfc798277ad36120dc3dc68
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 10
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v6
@@ -1209,7 +1209,7 @@ $ docker pull busybox@sha256:ec254da8ed8bf758edf8a347e9dc2486b8afa52deb3e06b05c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -1434,7 +1434,7 @@ $ docker pull busybox@sha256:88b20a5fa16ff1ce1f2f8aaff1f3e4fbc7376154e2b22b2e53a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -1632,7 +1632,7 @@ $ docker pull busybox@sha256:4b0c56a3f6f1b72f7af95084476bb0f474effa19ac162f774ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -1830,7 +1830,7 @@ $ docker pull busybox@sha256:0f354ec1728d9ff32edcd7d1b8bbdfc798277ad36120dc3dc68
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 10
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v6
@@ -2109,7 +2109,7 @@ $ docker pull busybox@sha256:ec254da8ed8bf758edf8a347e9dc2486b8afa52deb3e06b05c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -2334,7 +2334,7 @@ $ docker pull busybox@sha256:88b20a5fa16ff1ce1f2f8aaff1f3e4fbc7376154e2b22b2e53a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -2532,7 +2532,7 @@ $ docker pull busybox@sha256:4b0c56a3f6f1b72f7af95084476bb0f474effa19ac162f774ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -2730,7 +2730,7 @@ $ docker pull busybox@sha256:ec254da8ed8bf758edf8a347e9dc2486b8afa52deb3e06b05c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -2955,7 +2955,7 @@ $ docker pull busybox@sha256:0f354ec1728d9ff32edcd7d1b8bbdfc798277ad36120dc3dc68
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 10
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v6
@@ -3234,7 +3234,7 @@ $ docker pull busybox@sha256:88b20a5fa16ff1ce1f2f8aaff1f3e4fbc7376154e2b22b2e53a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -3432,7 +3432,7 @@ $ docker pull busybox@sha256:0f354ec1728d9ff32edcd7d1b8bbdfc798277ad36120dc3dc68
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 10
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v6
@@ -3711,7 +3711,7 @@ $ docker pull busybox@sha256:ec254da8ed8bf758edf8a347e9dc2486b8afa52deb3e06b05c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -3936,7 +3936,7 @@ $ docker pull busybox@sha256:88b20a5fa16ff1ce1f2f8aaff1f3e4fbc7376154e2b22b2e53a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
@@ -4134,7 +4134,7 @@ $ docker pull busybox@sha256:4b0c56a3f6f1b72f7af95084476bb0f474effa19ac162f774ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -4332,7 +4332,7 @@ $ docker pull busybox@sha256:4b0c56a3f6f1b72f7af95084476bb0f474effa19ac162f774ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7

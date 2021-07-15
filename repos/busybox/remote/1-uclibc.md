@@ -5,7 +5,7 @@ $ docker pull busybox@sha256:4b0c56a3f6f1b72f7af95084476bb0f474effa19ac162f774ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
