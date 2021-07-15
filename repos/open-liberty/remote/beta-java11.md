@@ -5,7 +5,7 @@ $ docker pull open-liberty@sha256:6fe3fc527307f24d5c547b3a1ae90df32346c6146ecbcd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; ppc64le
 	-	linux; s390x
