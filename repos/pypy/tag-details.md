@@ -112,7 +112,7 @@ $ docker pull pypy@sha256:864545a2cc0ba2abd86566e5ea4814a3d5a4872f41e4d4d280fafe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -466,7 +466,7 @@ $ docker pull pypy@sha256:864545a2cc0ba2abd86566e5ea4814a3d5a4872f41e4d4d280fafe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -820,7 +820,7 @@ $ docker pull pypy@sha256:e12063287c1eb8301c52ecacc556f5ea9a1cf2a3bec6b86a9d5680
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -1078,7 +1078,7 @@ $ docker pull pypy@sha256:97c11d07c145b7bcc134b44114d7b3302b22de8ec8b519c996ee13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -1264,7 +1264,7 @@ $ docker pull pypy@sha256:97c11d07c145b7bcc134b44114d7b3302b22de8ec8b519c996ee13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -1450,7 +1450,7 @@ $ docker pull pypy@sha256:7e104b91e2bc6d2ab6fbfee7a90d83e36bd09e220e2c95955ed41f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:2-7-windowsservercore` - windows version 10.0.17763.2061; amd64
@@ -1555,7 +1555,7 @@ $ docker pull pypy@sha256:7e104b91e2bc6d2ab6fbfee7a90d83e36bd09e220e2c95955ed41f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:2-7-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -1660,7 +1660,7 @@ $ docker pull pypy@sha256:864545a2cc0ba2abd86566e5ea4814a3d5a4872f41e4d4d280fafe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -2014,7 +2014,7 @@ $ docker pull pypy@sha256:e12063287c1eb8301c52ecacc556f5ea9a1cf2a3bec6b86a9d5680
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -2272,7 +2272,7 @@ $ docker pull pypy@sha256:97c11d07c145b7bcc134b44114d7b3302b22de8ec8b519c996ee13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -2458,7 +2458,7 @@ $ docker pull pypy@sha256:97c11d07c145b7bcc134b44114d7b3302b22de8ec8b519c996ee13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -2644,7 +2644,7 @@ $ docker pull pypy@sha256:7e104b91e2bc6d2ab6fbfee7a90d83e36bd09e220e2c95955ed41f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:2-7.3-windowsservercore` - windows version 10.0.17763.2061; amd64
@@ -2749,7 +2749,7 @@ $ docker pull pypy@sha256:7e104b91e2bc6d2ab6fbfee7a90d83e36bd09e220e2c95955ed41f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:2-7.3-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -2854,7 +2854,7 @@ $ docker pull pypy@sha256:864545a2cc0ba2abd86566e5ea4814a3d5a4872f41e4d4d280fafe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -3208,7 +3208,7 @@ $ docker pull pypy@sha256:e12063287c1eb8301c52ecacc556f5ea9a1cf2a3bec6b86a9d5680
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -3466,7 +3466,7 @@ $ docker pull pypy@sha256:97c11d07c145b7bcc134b44114d7b3302b22de8ec8b519c996ee13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -3652,7 +3652,7 @@ $ docker pull pypy@sha256:97c11d07c145b7bcc134b44114d7b3302b22de8ec8b519c996ee13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -3838,7 +3838,7 @@ $ docker pull pypy@sha256:7e104b91e2bc6d2ab6fbfee7a90d83e36bd09e220e2c95955ed41f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:2-7.3.5-windowsservercore` - windows version 10.0.17763.2061; amd64
@@ -3943,7 +3943,7 @@ $ docker pull pypy@sha256:7e104b91e2bc6d2ab6fbfee7a90d83e36bd09e220e2c95955ed41f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:2-7.3.5-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -4048,7 +4048,7 @@ $ docker pull pypy@sha256:e12063287c1eb8301c52ecacc556f5ea9a1cf2a3bec6b86a9d5680
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -4306,7 +4306,7 @@ $ docker pull pypy@sha256:97c11d07c145b7bcc134b44114d7b3302b22de8ec8b519c996ee13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -4492,7 +4492,7 @@ $ docker pull pypy@sha256:97c11d07c145b7bcc134b44114d7b3302b22de8ec8b519c996ee13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -4678,7 +4678,7 @@ $ docker pull pypy@sha256:7e104b91e2bc6d2ab6fbfee7a90d83e36bd09e220e2c95955ed41f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:2-windowsservercore` - windows version 10.0.17763.2061; amd64
@@ -4783,7 +4783,7 @@ $ docker pull pypy@sha256:7e104b91e2bc6d2ab6fbfee7a90d83e36bd09e220e2c95955ed41f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:2-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -4888,7 +4888,7 @@ $ docker pull pypy@sha256:864545a2cc0ba2abd86566e5ea4814a3d5a4872f41e4d4d280fafe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -5242,7 +5242,7 @@ $ docker pull pypy@sha256:864545a2cc0ba2abd86566e5ea4814a3d5a4872f41e4d4d280fafe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -5596,7 +5596,7 @@ $ docker pull pypy@sha256:e12063287c1eb8301c52ecacc556f5ea9a1cf2a3bec6b86a9d5680
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -5854,7 +5854,7 @@ $ docker pull pypy@sha256:97c11d07c145b7bcc134b44114d7b3302b22de8ec8b519c996ee13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -6040,7 +6040,7 @@ $ docker pull pypy@sha256:97c11d07c145b7bcc134b44114d7b3302b22de8ec8b519c996ee13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -6226,7 +6226,7 @@ $ docker pull pypy@sha256:7e104b91e2bc6d2ab6fbfee7a90d83e36bd09e220e2c95955ed41f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:2.7-7-windowsservercore` - windows version 10.0.17763.2061; amd64
@@ -6331,7 +6331,7 @@ $ docker pull pypy@sha256:7e104b91e2bc6d2ab6fbfee7a90d83e36bd09e220e2c95955ed41f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:2.7-7-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -6436,7 +6436,7 @@ $ docker pull pypy@sha256:864545a2cc0ba2abd86566e5ea4814a3d5a4872f41e4d4d280fafe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -6790,7 +6790,7 @@ $ docker pull pypy@sha256:e12063287c1eb8301c52ecacc556f5ea9a1cf2a3bec6b86a9d5680
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -7048,7 +7048,7 @@ $ docker pull pypy@sha256:97c11d07c145b7bcc134b44114d7b3302b22de8ec8b519c996ee13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -7234,7 +7234,7 @@ $ docker pull pypy@sha256:97c11d07c145b7bcc134b44114d7b3302b22de8ec8b519c996ee13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -7420,7 +7420,7 @@ $ docker pull pypy@sha256:7e104b91e2bc6d2ab6fbfee7a90d83e36bd09e220e2c95955ed41f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:2.7-7.3-windowsservercore` - windows version 10.0.17763.2061; amd64
@@ -7525,7 +7525,7 @@ $ docker pull pypy@sha256:7e104b91e2bc6d2ab6fbfee7a90d83e36bd09e220e2c95955ed41f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:2.7-7.3-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -7630,7 +7630,7 @@ $ docker pull pypy@sha256:864545a2cc0ba2abd86566e5ea4814a3d5a4872f41e4d4d280fafe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -7984,7 +7984,7 @@ $ docker pull pypy@sha256:e12063287c1eb8301c52ecacc556f5ea9a1cf2a3bec6b86a9d5680
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -8242,7 +8242,7 @@ $ docker pull pypy@sha256:97c11d07c145b7bcc134b44114d7b3302b22de8ec8b519c996ee13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -8428,7 +8428,7 @@ $ docker pull pypy@sha256:97c11d07c145b7bcc134b44114d7b3302b22de8ec8b519c996ee13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -8614,7 +8614,7 @@ $ docker pull pypy@sha256:7e104b91e2bc6d2ab6fbfee7a90d83e36bd09e220e2c95955ed41f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:2.7-7.3.5-windowsservercore` - windows version 10.0.17763.2061; amd64
@@ -8719,7 +8719,7 @@ $ docker pull pypy@sha256:7e104b91e2bc6d2ab6fbfee7a90d83e36bd09e220e2c95955ed41f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:2.7-7.3.5-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -8824,7 +8824,7 @@ $ docker pull pypy@sha256:e12063287c1eb8301c52ecacc556f5ea9a1cf2a3bec6b86a9d5680
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -9082,7 +9082,7 @@ $ docker pull pypy@sha256:97c11d07c145b7bcc134b44114d7b3302b22de8ec8b519c996ee13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -9268,7 +9268,7 @@ $ docker pull pypy@sha256:97c11d07c145b7bcc134b44114d7b3302b22de8ec8b519c996ee13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -9454,7 +9454,7 @@ $ docker pull pypy@sha256:7e104b91e2bc6d2ab6fbfee7a90d83e36bd09e220e2c95955ed41f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:2.7-windowsservercore` - windows version 10.0.17763.2061; amd64
@@ -9559,7 +9559,7 @@ $ docker pull pypy@sha256:7e104b91e2bc6d2ab6fbfee7a90d83e36bd09e220e2c95955ed41f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:2.7-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -9664,7 +9664,7 @@ $ docker pull pypy@sha256:71a1dbedbe26e6d04c234229bbe4b9d119e159feadd88b00a7c87d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -10095,7 +10095,7 @@ $ docker pull pypy@sha256:71a1dbedbe26e6d04c234229bbe4b9d119e159feadd88b00a7c87d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -10526,7 +10526,7 @@ $ docker pull pypy@sha256:ba6021c403ddaba3d63991fe6135c91d667de816d98648a667a5fb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -10867,7 +10867,7 @@ $ docker pull pypy@sha256:6bc515e05cdaaef7a35c0088e8b03022a5108426b78691406d4713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -11112,7 +11112,7 @@ $ docker pull pypy@sha256:6bc515e05cdaaef7a35c0088e8b03022a5108426b78691406d4713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -11357,7 +11357,7 @@ $ docker pull pypy@sha256:d2462c8428875722a373660f150484630db4d7b716ad9c0e286edc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:3-7-windowsservercore` - windows version 10.0.17763.2061; amd64
@@ -11456,7 +11456,7 @@ $ docker pull pypy@sha256:d2462c8428875722a373660f150484630db4d7b716ad9c0e286edc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:3-7-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -11555,7 +11555,7 @@ $ docker pull pypy@sha256:71a1dbedbe26e6d04c234229bbe4b9d119e159feadd88b00a7c87d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -11986,7 +11986,7 @@ $ docker pull pypy@sha256:ba6021c403ddaba3d63991fe6135c91d667de816d98648a667a5fb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -12327,7 +12327,7 @@ $ docker pull pypy@sha256:6bc515e05cdaaef7a35c0088e8b03022a5108426b78691406d4713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -12572,7 +12572,7 @@ $ docker pull pypy@sha256:6bc515e05cdaaef7a35c0088e8b03022a5108426b78691406d4713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -12817,7 +12817,7 @@ $ docker pull pypy@sha256:d2462c8428875722a373660f150484630db4d7b716ad9c0e286edc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:3-7.3-windowsservercore` - windows version 10.0.17763.2061; amd64
@@ -12916,7 +12916,7 @@ $ docker pull pypy@sha256:d2462c8428875722a373660f150484630db4d7b716ad9c0e286edc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:3-7.3-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -13015,7 +13015,7 @@ $ docker pull pypy@sha256:71a1dbedbe26e6d04c234229bbe4b9d119e159feadd88b00a7c87d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -13446,7 +13446,7 @@ $ docker pull pypy@sha256:ba6021c403ddaba3d63991fe6135c91d667de816d98648a667a5fb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -13787,7 +13787,7 @@ $ docker pull pypy@sha256:6bc515e05cdaaef7a35c0088e8b03022a5108426b78691406d4713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -14032,7 +14032,7 @@ $ docker pull pypy@sha256:6bc515e05cdaaef7a35c0088e8b03022a5108426b78691406d4713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -14277,7 +14277,7 @@ $ docker pull pypy@sha256:d2462c8428875722a373660f150484630db4d7b716ad9c0e286edc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:3-7.3.5-windowsservercore` - windows version 10.0.17763.2061; amd64
@@ -14376,7 +14376,7 @@ $ docker pull pypy@sha256:d2462c8428875722a373660f150484630db4d7b716ad9c0e286edc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:3-7.3.5-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -14475,7 +14475,7 @@ $ docker pull pypy@sha256:ba6021c403ddaba3d63991fe6135c91d667de816d98648a667a5fb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -14816,7 +14816,7 @@ $ docker pull pypy@sha256:6bc515e05cdaaef7a35c0088e8b03022a5108426b78691406d4713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -15061,7 +15061,7 @@ $ docker pull pypy@sha256:6bc515e05cdaaef7a35c0088e8b03022a5108426b78691406d4713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -15306,7 +15306,7 @@ $ docker pull pypy@sha256:d2462c8428875722a373660f150484630db4d7b716ad9c0e286edc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:3-windowsservercore` - windows version 10.0.17763.2061; amd64
@@ -15405,7 +15405,7 @@ $ docker pull pypy@sha256:d2462c8428875722a373660f150484630db4d7b716ad9c0e286edc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:3-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -15504,7 +15504,7 @@ $ docker pull pypy@sha256:71a1dbedbe26e6d04c234229bbe4b9d119e159feadd88b00a7c87d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -15935,7 +15935,7 @@ $ docker pull pypy@sha256:71a1dbedbe26e6d04c234229bbe4b9d119e159feadd88b00a7c87d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -16366,7 +16366,7 @@ $ docker pull pypy@sha256:ba6021c403ddaba3d63991fe6135c91d667de816d98648a667a5fb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -16707,7 +16707,7 @@ $ docker pull pypy@sha256:6bc515e05cdaaef7a35c0088e8b03022a5108426b78691406d4713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -16952,7 +16952,7 @@ $ docker pull pypy@sha256:6bc515e05cdaaef7a35c0088e8b03022a5108426b78691406d4713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -17197,7 +17197,7 @@ $ docker pull pypy@sha256:d2462c8428875722a373660f150484630db4d7b716ad9c0e286edc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:3.7-7-windowsservercore` - windows version 10.0.17763.2061; amd64
@@ -17296,7 +17296,7 @@ $ docker pull pypy@sha256:d2462c8428875722a373660f150484630db4d7b716ad9c0e286edc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:3.7-7-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -17395,7 +17395,7 @@ $ docker pull pypy@sha256:71a1dbedbe26e6d04c234229bbe4b9d119e159feadd88b00a7c87d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -17826,7 +17826,7 @@ $ docker pull pypy@sha256:ba6021c403ddaba3d63991fe6135c91d667de816d98648a667a5fb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -18167,7 +18167,7 @@ $ docker pull pypy@sha256:6bc515e05cdaaef7a35c0088e8b03022a5108426b78691406d4713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -18412,7 +18412,7 @@ $ docker pull pypy@sha256:6bc515e05cdaaef7a35c0088e8b03022a5108426b78691406d4713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -18657,7 +18657,7 @@ $ docker pull pypy@sha256:d2462c8428875722a373660f150484630db4d7b716ad9c0e286edc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:3.7-7.3-windowsservercore` - windows version 10.0.17763.2061; amd64
@@ -18756,7 +18756,7 @@ $ docker pull pypy@sha256:d2462c8428875722a373660f150484630db4d7b716ad9c0e286edc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:3.7-7.3-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -18855,7 +18855,7 @@ $ docker pull pypy@sha256:71a1dbedbe26e6d04c234229bbe4b9d119e159feadd88b00a7c87d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -19286,7 +19286,7 @@ $ docker pull pypy@sha256:ba6021c403ddaba3d63991fe6135c91d667de816d98648a667a5fb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -19627,7 +19627,7 @@ $ docker pull pypy@sha256:6bc515e05cdaaef7a35c0088e8b03022a5108426b78691406d4713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -19872,7 +19872,7 @@ $ docker pull pypy@sha256:6bc515e05cdaaef7a35c0088e8b03022a5108426b78691406d4713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -20117,7 +20117,7 @@ $ docker pull pypy@sha256:d2462c8428875722a373660f150484630db4d7b716ad9c0e286edc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:3.7-7.3.5-windowsservercore` - windows version 10.0.17763.2061; amd64
@@ -20216,7 +20216,7 @@ $ docker pull pypy@sha256:d2462c8428875722a373660f150484630db4d7b716ad9c0e286edc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:3.7-7.3.5-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -20315,7 +20315,7 @@ $ docker pull pypy@sha256:ba6021c403ddaba3d63991fe6135c91d667de816d98648a667a5fb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -20656,7 +20656,7 @@ $ docker pull pypy@sha256:6bc515e05cdaaef7a35c0088e8b03022a5108426b78691406d4713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -20901,7 +20901,7 @@ $ docker pull pypy@sha256:6bc515e05cdaaef7a35c0088e8b03022a5108426b78691406d4713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -21146,7 +21146,7 @@ $ docker pull pypy@sha256:d2462c8428875722a373660f150484630db4d7b716ad9c0e286edc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:3.7-windowsservercore` - windows version 10.0.17763.2061; amd64
@@ -21245,7 +21245,7 @@ $ docker pull pypy@sha256:d2462c8428875722a373660f150484630db4d7b716ad9c0e286edc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:3.7-windowsservercore-1809` - windows version 10.0.17763.2061; amd64
@@ -21344,7 +21344,7 @@ $ docker pull pypy@sha256:ba6021c403ddaba3d63991fe6135c91d667de816d98648a667a5fb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -21685,7 +21685,7 @@ $ docker pull pypy@sha256:71a1dbedbe26e6d04c234229bbe4b9d119e159feadd88b00a7c87d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -22116,7 +22116,7 @@ $ docker pull pypy@sha256:6bc515e05cdaaef7a35c0088e8b03022a5108426b78691406d4713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -22361,7 +22361,7 @@ $ docker pull pypy@sha256:6bc515e05cdaaef7a35c0088e8b03022a5108426b78691406d4713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -22606,7 +22606,7 @@ $ docker pull pypy@sha256:d2462c8428875722a373660f150484630db4d7b716ad9c0e286edc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:windowsservercore` - windows version 10.0.17763.2061; amd64
@@ -22705,7 +22705,7 @@ $ docker pull pypy@sha256:d2462c8428875722a373660f150484630db4d7b716ad9c0e286edc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.2061; amd64
 
 ### `pypy:windowsservercore-1809` - windows version 10.0.17763.2061; amd64
