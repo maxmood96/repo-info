@@ -5,7 +5,7 @@ $ docker pull hello-world@sha256:908f0ae75cae00369f0067321689f0484dde8a2b47739bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.1999; amd64
 
 ### `hello-world:nanoserver-1809` - windows version 10.0.17763.1999; amd64

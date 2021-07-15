@@ -14,7 +14,7 @@ $ docker pull hello-world@sha256:df5f5184104426b65967e016ff2ac0bfcd44ad7899ca3bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 10
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -302,7 +302,7 @@ $ docker pull hello-world@sha256:bc8f5257eadac35adff3f1259dbc2bcfc48ea3d8eff04b1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 9
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -554,7 +554,7 @@ $ docker pull hello-world@sha256:908f0ae75cae00369f0067321689f0484dde8a2b47739bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.1999; amd64
 
 ### `hello-world:nanoserver` - windows version 10.0.17763.1999; amd64
@@ -599,7 +599,7 @@ $ docker pull hello-world@sha256:908f0ae75cae00369f0067321689f0484dde8a2b47739bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	windows version 10.0.17763.1999; amd64
 
 ### `hello-world:nanoserver-1809` - windows version 10.0.17763.1999; amd64
