@@ -14,7 +14,7 @@ $ docker pull mageia@sha256:30a0be429b4c987bd57697382562aed95a33fc2ed69272397093
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -110,7 +110,7 @@ $ docker pull mageia@sha256:ee8deeb5ab22773a38ee147c98127b2faa5edc72272beef5d497
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -206,7 +206,7 @@ $ docker pull mageia@sha256:c1013793a986cdbb6ff91e1e5db9a264537c34094253c000b6c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -302,7 +302,7 @@ $ docker pull mageia@sha256:ee8deeb5ab22773a38ee147c98127b2faa5edc72272beef5d497
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8

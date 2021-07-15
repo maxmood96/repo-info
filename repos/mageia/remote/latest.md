@@ -5,7 +5,7 @@ $ docker pull mageia@sha256:ee8deeb5ab22773a38ee147c98127b2faa5edc72272beef5d497
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
