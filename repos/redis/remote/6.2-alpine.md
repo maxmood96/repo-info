@@ -5,7 +5,7 @@ $ docker pull redis@sha256:442fbfdeccf203c277827cfd8e7e727ce411611e1a6caeda9cca8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v6
 	-	linux; arm variant v7
