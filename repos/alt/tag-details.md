@@ -14,7 +14,7 @@ $ docker pull alt@sha256:deb2298ce69e3e36b87d304ef13123848822a7b69e4cabea85bc49b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -163,7 +163,7 @@ $ docker pull alt@sha256:b205f28f06e0960ff23d1d41c5087bfa134444661590bf7b722e290
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; 386
 
@@ -242,7 +242,7 @@ $ docker pull alt@sha256:deb2298ce69e3e36b87d304ef13123848822a7b69e4cabea85bc49b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -391,7 +391,7 @@ $ docker pull alt@sha256:9f81bd7c4628ce002bbb6f7fa5e9bf9d33e2ef8e6ade1312273fcfb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; 386
