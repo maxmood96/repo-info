@@ -23,7 +23,7 @@ $ docker pull centos@sha256:dec8f471302de43f4cfcf82f56d99a5227b5ea1aa6d02fa56344
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; 386
 
@@ -94,7 +94,7 @@ $ docker pull centos@sha256:a0d7c1950ac8ada32d3ae7ff0c9c2c9cc061c605aeeec6b27fde
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `centos:6.10` - linux; amd64
@@ -132,7 +132,7 @@ $ docker pull centos@sha256:0f4ec88e21daf75124b8a9e5ca03c37a5e937e0e108a255d8904
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -286,7 +286,7 @@ $ docker pull centos@sha256:0f4ec88e21daf75124b8a9e5ca03c37a5e937e0e108a255d8904
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -440,7 +440,7 @@ $ docker pull centos@sha256:5528e8b1b1719d34604c87e11dcd1c0a20bedf46e83b5632cdea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
@@ -536,7 +536,7 @@ $ docker pull centos@sha256:5528e8b1b1719d34604c87e11dcd1c0a20bedf46e83b5632cdea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
@@ -632,7 +632,7 @@ $ docker pull centos@sha256:dec8f471302de43f4cfcf82f56d99a5227b5ea1aa6d02fa56344
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 2
 	-	linux; amd64
 	-	linux; 386
 
@@ -703,7 +703,7 @@ $ docker pull centos@sha256:a0d7c1950ac8ada32d3ae7ff0c9c2c9cc061c605aeeec6b27fde
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 1
 	-	linux; amd64
 
 ### `centos:centos6.10` - linux; amd64
@@ -741,7 +741,7 @@ $ docker pull centos@sha256:0f4ec88e21daf75124b8a9e5ca03c37a5e937e0e108a255d8904
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -895,7 +895,7 @@ $ docker pull centos@sha256:0f4ec88e21daf75124b8a9e5ca03c37a5e937e0e108a255d8904
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
@@ -1049,7 +1049,7 @@ $ docker pull centos@sha256:5528e8b1b1719d34604c87e11dcd1c0a20bedf46e83b5632cdea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
@@ -1145,7 +1145,7 @@ $ docker pull centos@sha256:5528e8b1b1719d34604c87e11dcd1c0a20bedf46e83b5632cdea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
@@ -1241,7 +1241,7 @@ $ docker pull centos@sha256:5528e8b1b1719d34604c87e11dcd1c0a20bedf46e83b5632cdea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms:
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
