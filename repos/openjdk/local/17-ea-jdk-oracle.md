@@ -1,9 +1,9 @@
-# `openjdk:17-ea-30-jdk-oraclelinux8`
+# `openjdk:17-ea-31-jdk-oraclelinux8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3eb3e3089b9e31c60a05f3ca44d37c32e50c57c49396d05be5a3ca659a69afcf`
-- Created: `2021-07-12T23:35:05.882683227Z`
+- Image ID: `sha256:9901faf47b8c1a53c8d685f9314e8fece7035c88a8a5af113a38ddecbfe58b5e`
+- Created: `2021-07-15T22:22:09.295333977Z`
 - Virtual Size: ~ 470.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,4 +12,4 @@
   - `PATH=/usr/java/openjdk-17/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/java/openjdk-17`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=17-ea+30`
+  - `JAVA_VERSION=17-ea+31`
