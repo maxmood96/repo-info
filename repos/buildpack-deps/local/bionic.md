@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8d0aca27296cd950c4725915afcbb4573940b00ba5fce9b17dcc26329019d19e`
-- Created: `2021-06-18T00:51:13.511354897Z`
-- Virtual Size: ~ 621.80 Mb  
+- Image ID: `sha256:fcb3b554224f4835e1bccbb28a040d6facde26716c7b21fa1335e83f3ff16464`
+- Created: `2021-07-13T23:28:26.965765451Z`
+- Virtual Size: ~ 621.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -91,21 +91,25 @@ $ apt-get source -qq --print-uris apr=1.6.3-2
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.3-2.debian.tar.xz' apr_1.6.3-2.debian.tar.xz 213068 SHA256:ac515f888f7157586631e3de9792ee01d239f9cbf1e768be31ee6daac61f2597
 ```
 
-### `dpkg` source package: `apt=1.6.13`
+### `dpkg` source package: `apt=1.6.14`
 
 Binary Packages:
 
-- `apt=1.6.13`
-- `libapt-pkg5.0:amd64=1.6.13`
+- `apt=1.6.14`
+- `libapt-pkg5.0:amd64=1.6.14`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=1.6.14
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.14.dsc' apt_1.6.14.dsc 2867 SHA512:f8042614d9c52e6512746e967b7a1e4b60a748ed711fd032086e112be597a3f6b10cf57412f971e128f84288cc96a408b3da72b4a3ae5a3ed6078b4bbc9577e9
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.14.tar.xz' apt_1.6.14.tar.xz 2179764 SHA512:6c0f2b6f32d54d6ad5704e47fa96ad2230026a83fb8747a96ddbae72fcf31eeba963a4a5c4218fe5a9ab03294c30cb063de36b33f0b130f6a67b5929428268dc
+```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
@@ -610,21 +614,26 @@ $ apt-get source -qq --print-uris diffutils=1:3.6-1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.6-1.debian.tar.xz' diffutils_3.6-1.debian.tar.xz 10808 SHA256:f6ab546a134bde18a87ca8e3c98919680e79d81a65a24801ae06ef69b33f24d8
 ```
 
-### `dpkg` source package: `djvulibre=3.5.27.1-8ubuntu0.3`
+### `dpkg` source package: `djvulibre=3.5.27.1-8ubuntu0.4`
 
 Binary Packages:
 
-- `libdjvulibre-dev:amd64=3.5.27.1-8ubuntu0.3`
-- `libdjvulibre-text=3.5.27.1-8ubuntu0.3`
-- `libdjvulibre21:amd64=3.5.27.1-8ubuntu0.3`
+- `libdjvulibre-dev:amd64=3.5.27.1-8ubuntu0.4`
+- `libdjvulibre-text=3.5.27.1-8ubuntu0.4`
+- `libdjvulibre21:amd64=3.5.27.1-8ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/libdjvulibre-dev/copyright`, `/usr/share/doc/libdjvulibre-text/copyright`, `/usr/share/doc/libdjvulibre21/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris djvulibre=3.5.27.1-8ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.27.1-8ubuntu0.4.dsc' djvulibre_3.5.27.1-8ubuntu0.4.dsc 2524 SHA512:16daf47b32440be0bbb6906f5663f9eb30dc09f1d8ac4e049706e6e79b7c4be68ef0c75cd8f087d83f20a2e33d5670d93a2a2590e4911667e5087674691ad863
+'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.27.1.orig.tar.gz' djvulibre_3.5.27.1.orig.tar.gz 3231662 SHA512:2ed11daa05995db7bf52113e2f75456c3c804988d2c17d0183b24ab379e52a4ef1871189e8bb132fec6cbc9d629b4d67a4d89ef7df7a995044cb25ff3dcc5de8
+'http://archive.ubuntu.com/ubuntu/pool/main/d/djvulibre/djvulibre_3.5.27.1-8ubuntu0.4.debian.tar.xz' djvulibre_3.5.27.1-8ubuntu0.4.debian.tar.xz 61432 SHA512:7bfd11cb72b80e2f9d33162cac5f6ebe1c51dc72871c47c74389281f26bae0f44cec8a2fc5af20abed6a6d07f8751db824b1ea9358ed3c142075038c1752f66d
+```
 
 ### `dpkg` source package: `dpkg=1.19.0.5ubuntu2.3`
 
@@ -2621,19 +2630,24 @@ $ apt-get source -qq --print-uris libzstd=1.3.3+dfsg-2ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.3+dfsg-2ubuntu1.2.debian.tar.xz' libzstd_1.3.3+dfsg-2ubuntu1.2.debian.tar.xz 13764 SHA512:f14aa9e453c7041a79dd90a52b5955b86fa86886b89ef26d4d257aa017a50d97410e8b875593992ad7d4b7e8e8d55743b8c66706be62cd4234f81e49c8bfc05d
 ```
 
-### `dpkg` source package: `linux=4.15.0-144.148`
+### `dpkg` source package: `linux=4.15.0-147.151`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.15.0-144.148`
+- `linux-libc-dev:amd64=4.15.0-147.151`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.15.0-147.151
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-147.151.dsc' linux_4.15.0-147.151.dsc 7060 SHA512:639809ec48ede697256392dd3c3180eaf0490196553af62d1173504a893c98ecdad923167ee34cb5fcbed2da46cfb07dbc416862b3693cdec7d9279408dd3b4a
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA512:0fab606a295e0857f774f8adaa9d56bf2cb227fbab2daed374415da216391b156f49e606ba37ac402987c5796d408807da5d1a42c0d85a8552f109a3e279443d
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-147.151.diff.gz' linux_4.15.0-147.151.diff.gz 12306637 SHA512:311144ee734c4d3d8c48f622240a90b134565651ffee9f19e9c5666a3205247a03c4628c4900a5955d82594559f0744ca4ed4010d27a8708d71bbf26f5cac7a2
+```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
 
@@ -2951,12 +2965,12 @@ $ apt-get source -qq --print-uris netbase=5.4
 'http://archive.ubuntu.com/ubuntu/pool/main/n/netbase/netbase_5.4.tar.xz' netbase_5.4.tar.xz 31524 SHA256:66ff73d2d162e2d49db43988d8b8cd328cf7fffca042db73397f14c71825e80d
 ```
 
-### `dpkg` source package: `nettle=3.4-1ubuntu0.1`
+### `dpkg` source package: `nettle=3.4.1-0ubuntu0.18.04.1`
 
 Binary Packages:
 
-- `libhogweed4:amd64=3.4-1ubuntu0.1`
-- `libnettle6:amd64=3.4-1ubuntu0.1`
+- `libhogweed4:amd64=3.4.1-0ubuntu0.18.04.1`
+- `libnettle6:amd64=3.4.1-0ubuntu0.18.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libhogweed4/copyright`, `/usr/share/doc/libnettle6/copyright`)
 
@@ -2972,9 +2986,14 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed4/copyright`, `/usr/share/doc/
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris nettle=3.4.1-0ubuntu0.18.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.4.1-0ubuntu0.18.04.1.dsc' nettle_3.4.1-0ubuntu0.18.04.1.dsc 2153 SHA512:01b4b4de8dfcde469729f09e1271af2d39f8728bef22f709f21113e139c81fe8cbe5224582a4eee5699486143b93a67b96d4da357225dd1dcb8be403705ed5e7
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.4.1.orig.tar.gz' nettle_3.4.1.orig.tar.gz 1947053 SHA512:26aefbbe9927e90e28f271e56d2ba876611831222d0e1e1a58bdb75bbd50934fcd84418a4fe47b845f557e60a9786a72a4de2676c930447b104f2256aca7a54f
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.4.1-0ubuntu0.18.04.1.debian.tar.xz' nettle_3.4.1-0ubuntu0.18.04.1.debian.tar.xz 27048 SHA512:424581749cb4e4f30343f788b9a26a2ced0f734b2a8faddc93f27317ff45e071f8f47d845e93d2d3eb5374390f29a868b1020858cc7890107916ec60991c1203
+```
 
 ### `dpkg` source package: `nghttp2=1.30.0-1ubuntu1`
 
@@ -3021,20 +3040,25 @@ $ apt-get source -qq --print-uris npth=1.5-3
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.5-3.debian.tar.xz' npth_1.5-3.debian.tar.xz 10480 SHA256:5cbaf91c95c90ab82053110eeec5ac72f5a3cab36829edb0579f1fb759ec5fec
 ```
 
-### `dpkg` source package: `openexr=2.2.0-11.1ubuntu1.6`
+### `dpkg` source package: `openexr=2.2.0-11.1ubuntu1.7`
 
 Binary Packages:
 
-- `libopenexr-dev=2.2.0-11.1ubuntu1.6`
-- `libopenexr22:amd64=2.2.0-11.1ubuntu1.6`
+- `libopenexr-dev=2.2.0-11.1ubuntu1.7`
+- `libopenexr22:amd64=2.2.0-11.1ubuntu1.7`
 
 Licenses: (parsed from: `/usr/share/doc/libopenexr-dev/copyright`, `/usr/share/doc/libopenexr22/copyright`)
 
 - `openexr`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openexr=2.2.0-11.1ubuntu1.7
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openexr/openexr_2.2.0-11.1ubuntu1.7.dsc' openexr_2.2.0-11.1ubuntu1.7.dsc 2403 SHA512:84c8c0e85dd5e84dbbe0f3681a4cfd7a28323d05f703f70b52b438d5315e5d2cc157d92b118c0edf652e3c27be6f57ca55fbd148c0e343321117cd972e6e8764
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openexr/openexr_2.2.0.orig.tar.gz' openexr_2.2.0.orig.tar.gz 14489661 SHA512:017abbeeb6b814508180721bc8e8940094965c4c55b135a198c6bcb109a04bf7f72e4aee81ee72cb2185fe818a41d892b383e8d2d59f40c673198948cb79279a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openexr/openexr_2.2.0-11.1ubuntu1.7.debian.tar.xz' openexr_2.2.0-11.1ubuntu1.7.debian.tar.xz 39368 SHA512:69f27dbe180cbb7fd1921587bbf75f8f2c109e8ccdbbf19b05b390bcc8afa805ea1ff9abf3071e5802b75becab8ab9c0a3553922955bd0cea35d8564f2c500ef
+```
 
 ### `dpkg` source package: `openldap=2.4.45+dfsg-1ubuntu1.10`
 
@@ -3746,12 +3770,12 @@ $ apt-get source -qq --print-uris subversion=1.9.7-4ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.9.7-4ubuntu1.debian.tar.xz' subversion_1.9.7-4ubuntu1.debian.tar.xz 2270568 SHA256:67ea7ddc37e697340eaa9f8fea08980ba01b529f3ab6487eeb8726bc9ae77f29
 ```
 
-### `dpkg` source package: `systemd=237-3ubuntu10.47`
+### `dpkg` source package: `systemd=237-3ubuntu10.48`
 
 Binary Packages:
 
-- `libsystemd0:amd64=237-3ubuntu10.47`
-- `libudev1:amd64=237-3ubuntu10.47`
+- `libsystemd0:amd64=237-3ubuntu10.48`
+- `libudev1:amd64=237-3ubuntu10.48`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -3763,9 +3787,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=237-3ubuntu10.48
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.48.dsc' systemd_237-3ubuntu10.48.dsc 5220 SHA512:c185bab18222e1d15f4c63e2e7c10679a10116851817a68d531abe7bfd089576b3cc44ca4d0e8f426c7bc13b804ff45c7e9d67a8704260c75a21c190190232f0
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA512:15ef4b92815a6dd9a6c51672dbc00fd7cd0f08068ef0cbeaca574f68d330b28bc67ba1946f24f75ef3d9e7b63843a73eea700db54688061dbf5c9f8470394c3b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.48.debian.tar.xz' systemd_237-3ubuntu10.48.debian.tar.xz 293920 SHA512:b583f105567543222eb4a7851eb26151fe5f88d9b1c3c98c1d9fe45a5363df9cd5d5ea902c0c9e3e382617de34b44801dc9a318e7c3173ff49ee05179b435d95
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 

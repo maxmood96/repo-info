@@ -766,19 +766,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.75
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.75.dsc' debconf_1.5.75.dsc 2082 SHA256:8ff77c467efc63a295f387cf24a5f131828227cb7d1770c13ca1ffad3032e71f
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.75.tar.xz' debconf_1.5.75.tar.xz 571160 SHA256:82356178d1ff99b3bb2b6d40a40c2d9f968541bcd5b0433464bcc6f4ad607ee8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.75/
 
-- https://sources.debian.net/src/debconf/1.5.75/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.75/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.75/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2021.1.1`
 
@@ -4716,20 +4710,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-13=13.2-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-13/postgresql-13_13.2-1.dsc' postgresql-13_13.2-1.dsc 3633 SHA256:87b5a1a4b184705f3d8ef6d044269a1e427329e55fdc76816c3b97a4cb4a626e
-'http://deb.debian.org/debian/pool/main/p/postgresql-13/postgresql-13_13.2.orig.tar.bz2' postgresql-13_13.2.orig.tar.bz2 21057276 SHA256:5fd7fcd08db86f5b2aed28fcfaf9ae0aca8e9428561ac547764c2a2b0f41adfc
-'http://deb.debian.org/debian/pool/main/p/postgresql-13/postgresql-13_13.2-1.debian.tar.xz' postgresql-13_13.2-1.debian.tar.xz 27304 SHA256:6429343f55d95a51232d2fab9473491735a5803086591beb3ffe0848cdfc70f5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-13/13.2-1/
 
-- https://sources.debian.net/src/postgresql-13/13.2-1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-13/13.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-13/13.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.17-5`
 

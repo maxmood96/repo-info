@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2eec94f05d6ee0f30dc4087254fb8c5c7bc132f79aec1c5dafcedb222cd4bb82`
-- Created: `2021-06-18T00:55:59.849282729Z`
-- Virtual Size: ~ 700.45 Mb  
+- Image ID: `sha256:eca85a87b7b925af512d1b4a4f0da9672bc78c9f214ba71ba96d402a6f89eeae`
+- Created: `2021-07-13T23:30:56.068974314Z`
+- Virtual Size: ~ 714.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -93,21 +93,25 @@ $ apt-get source -qq --print-uris apr=1.6.5-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.5-1ubuntu1.debian.tar.xz' apr_1.6.5-1ubuntu1.debian.tar.xz 213596 SHA256:faca1bccb281c7d91bf0846ee908dd0be53b4482c0a1850e03397307682717d1
 ```
 
-### `dpkg` source package: `apt=2.0.5`
+### `dpkg` source package: `apt=2.0.6`
 
 Binary Packages:
 
-- `apt=2.0.5`
-- `libapt-pkg6.0:amd64=2.0.5`
+- `apt=2.0.6`
+- `libapt-pkg6.0:amd64=2.0.6`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg6.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=2.0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.6.dsc' apt_2.0.6.dsc 2835 SHA512:71a27905e35c3c53ed7e7cb255c203ff24b49a53e81d802425eca2ec6b3b587b54d54046f8970e79b51d2d23034b15509dda517d54cfd3699ab0f22111763a23
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.6.tar.xz' apt_2.0.6.tar.xz 2176328 SHA512:a62ca7245039791384137cc5a417a876346e570e1a6c3d9856242003ee393e91c013fe7df2154792ba0b222a95cfda31847a654c444061587353d9020d69a167
+```
 
 ### `dpkg` source package: `attr=1:2.4.48-5`
 
@@ -961,21 +965,21 @@ $ apt-get source -qq --print-uris fribidi=1.0.8-2
 'http://archive.ubuntu.com/ubuntu/pool/main/f/fribidi/fribidi_1.0.8-2.debian.tar.xz' fribidi_1.0.8-2.debian.tar.xz 8980 SHA256:898fc0b48625ce31e29d2f9501f17b9991b16b03816db6467faaedb85d22f00b
 ```
 
-### `dpkg` source package: `gcc-10=10.2.0-5ubuntu1~20.04`
+### `dpkg` source package: `gcc-10=10.3.0-1ubuntu1~20.04`
 
 Binary Packages:
 
-- `gcc-10-base:amd64=10.2.0-5ubuntu1~20.04`
-- `libatomic1:amd64=10.2.0-5ubuntu1~20.04`
-- `libcc1-0:amd64=10.2.0-5ubuntu1~20.04`
-- `libgcc-s1:amd64=10.2.0-5ubuntu1~20.04`
-- `libgomp1:amd64=10.2.0-5ubuntu1~20.04`
-- `libitm1:amd64=10.2.0-5ubuntu1~20.04`
-- `liblsan0:amd64=10.2.0-5ubuntu1~20.04`
-- `libquadmath0:amd64=10.2.0-5ubuntu1~20.04`
-- `libstdc++6:amd64=10.2.0-5ubuntu1~20.04`
-- `libtsan0:amd64=10.2.0-5ubuntu1~20.04`
-- `libubsan1:amd64=10.2.0-5ubuntu1~20.04`
+- `gcc-10-base:amd64=10.3.0-1ubuntu1~20.04`
+- `libatomic1:amd64=10.3.0-1ubuntu1~20.04`
+- `libcc1-0:amd64=10.3.0-1ubuntu1~20.04`
+- `libgcc-s1:amd64=10.3.0-1ubuntu1~20.04`
+- `libgomp1:amd64=10.3.0-1ubuntu1~20.04`
+- `libitm1:amd64=10.3.0-1ubuntu1~20.04`
+- `liblsan0:amd64=10.3.0-1ubuntu1~20.04`
+- `libquadmath0:amd64=10.3.0-1ubuntu1~20.04`
+- `libstdc++6:amd64=10.3.0-1ubuntu1~20.04`
+- `libtsan0:amd64=10.3.0-1ubuntu1~20.04`
+- `libubsan1:amd64=10.3.0-1ubuntu1~20.04`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-10-base/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libcc1-0/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libitm1/copyright`, `/usr/share/doc/liblsan0/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++6/copyright`, `/usr/share/doc/libtsan0/copyright`, `/usr/share/doc/libubsan1/copyright`)
 
@@ -986,9 +990,14 @@ Licenses: (parsed from: `/usr/share/doc/gcc-10-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gcc-10=10.3.0-1ubuntu1~20.04
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.3.0-1ubuntu1~20.04.dsc' gcc-10_10.3.0-1ubuntu1~20.04.dsc 31155 SHA512:c67d612edfbf2a97d4c3f436b1fdbc08b7387907a3e0cc49a9ba2a360db054b3d07082097c4b98abc9ace7b8902637f8d7126de229c164cab743eff4fd5d7520
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.3.0.orig.tar.gz' gcc-10_10.3.0.orig.tar.gz 83679201 SHA512:c7f0fb09c79bc8c372171df7f23af6970a389dcc1237ebc0821c0a754d93c6e4065433f7ad63aed9f9b8fce2da7fce3caa61ae2e2afab494d06bf33b06a10775
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-10/gcc-10_10.3.0-1ubuntu1~20.04.debian.tar.xz' gcc-10_10.3.0-1ubuntu1~20.04.debian.tar.xz 580864 SHA512:3ae060b517a67ae2410b48c83a7836ec25e83422cb3db5dbe55cce9e97609aff82062aa55a84c64ca9c52f405a41d2da20c1d016b15521102cac3b82895f3975
+```
 
 ### `dpkg` source package: `gcc-9=9.3.0-17ubuntu1~20.04`
 
@@ -2805,19 +2814,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.4+dfsg-3ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4+dfsg-3ubuntu0.1.debian.tar.xz' libzstd_1.4.4+dfsg-3ubuntu0.1.debian.tar.xz 17300 SHA512:0484891be5603d00bd57b799c708b9395fccbaa8c6c44f535377f6fa2c7ac22c01c8a3c1b45e1c1f3c30f19dc74d510626bf82067fcbfb53c39f1bcc2249affe
 ```
 
-### `dpkg` source package: `linux=5.4.0-74.83`
+### `dpkg` source package: `linux=5.4.0-77.86`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.4.0-74.83`
+- `linux-libc-dev:amd64=5.4.0-77.86`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.4.0-77.86
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-77.86.dsc' linux_5.4.0-77.86.dsc 6907 SHA512:56c54581af683c803322763467fcebec26757d6f5fbd8971e93d153891ef79bca79d4cb6276879a4b61a2a5108b3f0f53af79ba51dd55e8952e51df112960319
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-77.86.diff.gz' linux_5.4.0-77.86.diff.gz 8046635 SHA512:d01838edef8e5ccc6f085d8ef685fd4b7e405bb6e959801bc95d971e9ff9b8d4104b4e2cff854bbf9b7f59238307ba9fc6adc8847b5e00b18346fdf1c78280e6
+```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
 
@@ -3137,12 +3151,12 @@ $ apt-get source -qq --print-uris netbase=6.1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/netbase/netbase_6.1.tar.xz' netbase_6.1.tar.xz 31984 SHA256:084d743bd84d4d9380bac4c71c51e57406dce44f5a69289bb823c903e9b035d8
 ```
 
-### `dpkg` source package: `nettle=3.5.1+really3.5.1-2ubuntu0.1`
+### `dpkg` source package: `nettle=3.5.1+really3.5.1-2ubuntu0.2`
 
 Binary Packages:
 
-- `libhogweed5:amd64=3.5.1+really3.5.1-2ubuntu0.1`
-- `libnettle7:amd64=3.5.1+really3.5.1-2ubuntu0.1`
+- `libhogweed5:amd64=3.5.1+really3.5.1-2ubuntu0.2`
+- `libnettle7:amd64=3.5.1+really3.5.1-2ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libhogweed5/copyright`, `/usr/share/doc/libnettle7/copyright`)
 
@@ -3158,9 +3172,15 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed5/copyright`, `/usr/share/doc/
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris nettle=3.5.1+really3.5.1-2ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.5.1+really3.5.1-2ubuntu0.2.dsc' nettle_3.5.1+really3.5.1-2ubuntu0.2.dsc 2490 SHA512:a5b45f1154e48fd7d6c48c57ae17cdcb7cd4a352d6b97bb408a49f5f4f3b40388d23bc12b09602fc9d0d6e91e8bc5525b12f98568ec64c18c4d6ca9fe5048c36
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.5.1+really3.5.1.orig.tar.gz' nettle_3.5.1+really3.5.1.orig.tar.gz 1989593 SHA512:f738121b9091cbe79435fb5d46b45cf6f10912320c233829356908127bab1cac6946ca56e022a832380c44f2c10f21d2feef64cb0f4f41e3da4a681dc0131784
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.5.1+really3.5.1.orig.tar.gz.asc' nettle_3.5.1+really3.5.1.orig.tar.gz.asc 573 SHA512:d8921622f2165fb4a05e7e75f75d82c0eabb816f265bae3f3267def20d81386b1da1a29ebfc52bbe26875b94b2050dd5493119d0efcb5143bc21e2f69b8449dd
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.5.1+really3.5.1-2ubuntu0.2.debian.tar.xz' nettle_3.5.1+really3.5.1-2ubuntu0.2.debian.tar.xz 27228 SHA512:389c303e679b6b6714f824f22bc8675c1ea4bdab0108b69e9514613109573d01592e3f80bf9a144866a159a9a09fa0f3218d62b9f6978bdfe5e95a18bcfe3a88
+```
 
 ### `dpkg` source package: `nghttp2=1.40.0-1build1`
 
@@ -3582,12 +3602,12 @@ $ apt-get source -qq --print-uris postgresql-12=12.7-0ubuntu0.20.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.7-0ubuntu0.20.04.1.debian.tar.xz' postgresql-12_12.7-0ubuntu0.20.04.1.debian.tar.xz 25820 SHA512:b8932a6b7f89daffafd3dfad8ad5798f3ba494bbb05296489304bbdbe0ceb7dba9185d173a9251c1be11a733ad72f3f1f32248b937d00a8b2dc9decb2a8fa166
 ```
 
-### `dpkg` source package: `procps=2:3.3.16-1ubuntu2.1`
+### `dpkg` source package: `procps=2:3.3.16-1ubuntu2.2`
 
 Binary Packages:
 
-- `libprocps8:amd64=2:3.3.16-1ubuntu2.1`
-- `procps=2:3.3.16-1ubuntu2.1`
+- `libprocps8:amd64=2:3.3.16-1ubuntu2.2`
+- `procps=2:3.3.16-1ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/libprocps8/copyright`, `/usr/share/doc/procps/copyright`)
 
@@ -3598,9 +3618,14 @@ Licenses: (parsed from: `/usr/share/doc/libprocps8/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris procps=2:3.3.16-1ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16-1ubuntu2.2.dsc' procps_3.3.16-1ubuntu2.2.dsc 2242 SHA512:657223e718cd906db51163974224c04539fdc4a9980901448a11758ddcc7585988dfb55a93b33252920db358d7aa71b113b65a14b6c89c51de824eee60d02458
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16.orig.tar.xz' procps_3.3.16.orig.tar.xz 621892 SHA512:38db4f72fe40c2f027b23b18bbc8c29cfcdf6bcdb029199fe4bebede153943aa884157f56e792c399f9a4949cc514687500bb99a75a5e7ad7b9e878f52090304
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16-1ubuntu2.2.debian.tar.xz' procps_3.3.16-1ubuntu2.2.debian.tar.xz 33748 SHA512:1f6cb098dca2a6d58b9dc23e627bc421639fcf42e101295a868ba87600dacecdf4c87fe9694446f2d74a4be9017321c239a6dd88f6098b4954bf72b43b6ecff6
+```
 
 ### `dpkg` source package: `python-certifi=2019.11.28-1`
 
@@ -3759,14 +3784,14 @@ $ apt-get source -qq --print-uris python3-stdlib-extensions=3.8.10-0ubuntu1~20.0
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.8.10-0ubuntu1~20.04.debian.tar.xz' python3-stdlib-extensions_3.8.10-0ubuntu1~20.04.debian.tar.xz 24508 SHA512:ca4894ddf04e5f89c46183271e65978c4dadd90faac196e13600797b9b451356cea2a0ee2c1d25e82a11b4e192fc11c2125b533035cf75e8e28ff7fdc792c695
 ```
 
-### `dpkg` source package: `python3.8=3.8.5-1~20.04.3`
+### `dpkg` source package: `python3.8=3.8.10-0ubuntu1~20.04`
 
 Binary Packages:
 
-- `libpython3.8-minimal:amd64=3.8.5-1~20.04.3`
-- `libpython3.8-stdlib:amd64=3.8.5-1~20.04.3`
-- `python3.8=3.8.5-1~20.04.3`
-- `python3.8-minimal=3.8.5-1~20.04.3`
+- `libpython3.8-minimal:amd64=3.8.10-0ubuntu1~20.04`
+- `libpython3.8-stdlib:amd64=3.8.10-0ubuntu1~20.04`
+- `python3.8=3.8.10-0ubuntu1~20.04`
+- `python3.8-minimal=3.8.10-0ubuntu1~20.04`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/share/doc/libpython3.8-stdlib/copyright`, `/usr/share/doc/python3.8/copyright`, `/usr/share/doc/python3.8-minimal/copyright`)
 
@@ -3788,9 +3813,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.8=3.8.10-0ubuntu1~20.04
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1~20.04.dsc' python3.8_3.8.10-0ubuntu1~20.04.dsc 3521 SHA512:be8d21d6cc9b8d5fe8a8df85370cebcc013b2e2deca5c867e6294bcecf3570d8c4aea7b56af6943156423e1e1a44595fd5be54a5a62ac9062b74234db30c430b
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10.orig.tar.xz' python3.8_3.8.10.orig.tar.xz 18433456 SHA512:0be69705483ff9692e12048a96180e586f9d84c8d53066629f7fb2389585eb75c0f3506bb8182936e322508f58b71f4d8c6dfebbab9049b31b49da11d3b98e80
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1~20.04.debian.tar.xz' python3.8_3.8.10-0ubuntu1~20.04.debian.tar.xz 210676 SHA512:2bdb7e1b32badd550abdd3ff1d6728fedf0772f01dface4e0f5da2a9e3456957b7ace47682ed4992cf97d17dc6861d91b7c0e2a5b4eedd90bf31330cd8a1dbe7
+```
 
 ### `dpkg` source package: `readline=8.0-4`
 
@@ -4004,12 +4034,12 @@ $ apt-get source -qq --print-uris subversion=1.13.0-3
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.13.0-3.debian.tar.xz' subversion_1.13.0-3.debian.tar.xz 421004 SHA256:4bae277b8c9622ed8475f1b3172239854b5de5d603f6491a11f9fcdc6ce9d04f
 ```
 
-### `dpkg` source package: `systemd=245.4-4ubuntu3.6`
+### `dpkg` source package: `systemd=245.4-4ubuntu3.7`
 
 Binary Packages:
 
-- `libsystemd0:amd64=245.4-4ubuntu3.6`
-- `libudev1:amd64=245.4-4ubuntu3.6`
+- `libsystemd0:amd64=245.4-4ubuntu3.7`
+- `libudev1:amd64=245.4-4ubuntu3.7`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -4022,9 +4052,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.7
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.7.dsc' systemd_245.4-4ubuntu3.7.dsc 5291 SHA512:4af3abd8d317d2d352f196a16a1f8c71556dbab34d11f8504e3f321de14e1be104cb9a19648634259939b752fd92371cd38a25288030b4bc5a0aa21146c15fff
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.7.debian.tar.xz' systemd_245.4-4ubuntu3.7.debian.tar.xz 247648 SHA512:ca9d4e0b1c4bab971d51ce640eb591a6e0fe076b6465bfc620c9962c16f64c248bcd7ed8d0eb4051ccf33c48d228d2af21291b9ca1b010d4f66958b3950499ab
+```
 
 ### `dpkg` source package: `sysvinit=2.96-2.1ubuntu1`
 
