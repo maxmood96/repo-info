@@ -1,10 +1,10 @@
-# `julia:1.6.1-buster`
+# `julia:1.6.2-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:249fb32414cc5b4538c539f43981b46ac27792e85b7147497e7371ca9e6f869f`
-- Created: `2021-06-23T06:49:43.649651736Z`
-- Virtual Size: ~ 486.46 Mb  
+- Image ID: `sha256:4d9bd2781c8011fa041cf451a45bc9a189cce5e83ccf4e92f9c1b0b68453944a`
+- Created: `2021-07-15T17:20:23.365439037Z`
+- Virtual Size: ~ 487.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["julia"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JULIA_PATH=/usr/local/julia`
   - `JULIA_GPG=3673DF529D9049477F76B37566E3C7DC03D6E495`
-  - `JULIA_VERSION=1.6.1`
+  - `JULIA_VERSION=1.6.2`
 
 ## `dpkg` (`.deb`-based packages)
 
