@@ -324,14 +324,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.36.90.20210712-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.36.90.20210712-0ubuntu1.dsc' binutils_2.36.90.20210712-0ubuntu1.dsc 8883 SHA512:1ce3f778d880b8062246b37129958a2ee589416b8626d70d4367dd960065dd1417651dc6945e2694db1a30b0d191a51b080e82dbd86a1d226b8982ca848128bb
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.36.90.20210712.orig.tar.xz' binutils_2.36.90.20210712.orig.tar.xz 22147992 SHA512:2dedf645721b2c4f0f82753c523ee94e42a265cdaacb8b0ba517ff38d22cd60755b703c824c2693b9f8ebcb8b393d9816c5329c7c96159d9611314cd658cc1ba
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.36.90.20210712-0ubuntu1.debian.tar.xz' binutils_2.36.90.20210712-0ubuntu1.debian.tar.xz 107728 SHA512:c3ec837e0af1ed5b9462b80b58273933cf40f97996f97f45df84ee2d232a31939010f684f09fdc5a5219fbd5df69083bc16d3a4a36aecfdad06c43a1e654f37e
-```
 
 ### `dpkg` source package: `brotli=1.0.9-2build2`
 
@@ -3014,13 +3009,9 @@ Licenses: (parsed from: `/usr/share/doc/lto-disabled-list/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lto-disabled-list=12
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lto-disabled-list/lto-disabled-list_12.dsc' lto-disabled-list_12.dsc 1435 SHA512:c11ebf55174d59d72630acd6705b29f7425f7088e4a5ea24d9c8a3d60ff0553ec9991fa22b43525431d03c9406c4b8948188801602a4cbe63e0bf32657c0a6d9
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lto-disabled-list/lto-disabled-list_12.tar.xz' lto-disabled-list_12.tar.xz 11596 SHA512:e26d1c412551ef9fae7fb657809515a370b79ce3bbad72653b131507a17c9839963acf135622b54fc2fc7f822291f328d968709206b0c4ebf9281eeae095ef21
-```
 
 ### `dpkg` source package: `lz4=1.9.3-2`
 
