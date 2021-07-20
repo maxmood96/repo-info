@@ -1,10 +1,10 @@
-# `crate:4.5.3`
+# `crate:4.5.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:972fb234916d4466032fcd1b10fde8f4e7f4a8715bfcdf1997064e474b505038`
-- Created: `2021-06-24T19:21:35.454059632Z`
-- Virtual Size: ~ 692.00 Mb  
+- Image ID: `sha256:8449dee790943dcec917583ed5ee6dd0c69e5eeb85cd900a03fcfc79c64ed873`
+- Created: `2021-07-19T18:03:57.52921739Z`
+- Virtual Size: ~ 692.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -19,14 +19,14 @@
   - `org.label-schema.name=CentOS Base Image`
   - `org.label-schema.schema-version=1.0`
   - `org.label-schema.vendor=CentOS`
-  - `org.opencontainers.image.created=2021-06-22T09:46:38.924581`
+  - `org.opencontainers.image.created=2021-07-13T10:39:35.065268`
   - `org.opencontainers.image.description=CrateDB is a distributed SQL database handles massive amounts of machine data in real-time.`
   - `org.opencontainers.image.licenses=GPL-2.0-only`
   - `org.opencontainers.image.source=https://github.com/crate/docker-crate`
   - `org.opencontainers.image.title=crate`
   - `org.opencontainers.image.url=https://crate.io/products/cratedb/`
   - `org.opencontainers.image.vendor=Crate.io`
-  - `org.opencontainers.image.version=4.5.3`
+  - `org.opencontainers.image.version=4.5.4`
 
 ## `rpm` (`.rpm`-based packages)
 
