@@ -1,14 +1,13 @@
-## `debian:unstable-slim`
+## `debian:unstable-20210721-slim`
 
 ```console
-$ docker pull debian@sha256:ad5d18abacc27ade12baaabe186d097e4d1d8edbee7bec7391f0a968b0c16512
+$ docker pull debian@sha256:0fe7610b7bae490b4163ce4e9f5e9089137a75b622e193370e5ee34cd226648e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 9
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
-	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; mips64le
@@ -16,7 +15,7 @@ $ docker pull debian@sha256:ad5d18abacc27ade12baaabe186d097e4d1d8edbee7bec7391f0
 	-	linux; riscv64
 	-	linux; s390x
 
-### `debian:unstable-slim` - linux; amd64
+### `debian:unstable-20210721-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:d4a8a0c25919217383eb7d3cdf437a09c9a1fef0772aaf5f77022b2aa9a8dd74
@@ -42,7 +41,7 @@ CMD ["bash"]
 		Size: 31.4 MB (31355654 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; arm variant v5
+### `debian:unstable-20210721-slim` - linux; arm variant v5
 
 ```console
 $ docker pull debian@sha256:846db1493d7b2f7054b755b2121800197c2ac9d5bc6d12275bba5e7b7673a897
@@ -68,33 +67,7 @@ CMD ["bash"]
 		Size: 28.9 MB (28897229 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; arm variant v7
-
-```console
-$ docker pull debian@sha256:edd56f4c70fa165ac95eea18f9ad7c7f58f58da8ff8b3febff4464c8ab3d8fb9
-```
-
--	Docker Version: 19.03.12
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.6 MB (26559521 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e28449085dc9f5e780128c35b70242c74ea82906ebd9ac12b06740d6077b3e29`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 23 Jun 2021 00:25:06 GMT
-ADD file:2a63b11bd3f3b20517701a2dbf1e60290b405e7180fc2d02d67134c1ff9cae40 in / 
-# Wed, 23 Jun 2021 00:25:07 GMT
-CMD ["bash"]
-```
-
--	Layers:
-	-	`sha256:6f708886faa903b867397937121e1efe1254bff4b20e6d1ba07f59da41cd98d0`  
-		Last Modified: Wed, 23 Jun 2021 00:39:24 GMT  
-		Size: 26.6 MB (26559521 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `debian:unstable-slim` - linux; arm64 variant v8
+### `debian:unstable-20210721-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:511a90eca1df4f88760142e4308414090fe2f5f0740e31ef87c107d01478c868
@@ -120,7 +93,7 @@ CMD ["bash"]
 		Size: 30.0 MB (30042124 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; 386
+### `debian:unstable-20210721-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:827d9fb647d8dbf54895c544cde4fd008ec289b0649e5e375af60b154858b8cc
@@ -146,7 +119,7 @@ CMD ["bash"]
 		Size: 32.4 MB (32368681 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; mips64le
+### `debian:unstable-20210721-slim` - linux; mips64le
 
 ```console
 $ docker pull debian@sha256:00d8af40951df31ede77f9d67b2df644663bd3e564b96b0b5bd8b387e3ec8c26
@@ -172,7 +145,7 @@ CMD ["bash"]
 		Size: 29.6 MB (29614324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; ppc64le
+### `debian:unstable-20210721-slim` - linux; ppc64le
 
 ```console
 $ docker pull debian@sha256:ebf8170dee5b1e4e1a8ee58a0416d31a78af16d14c4161c57e9afed767110ec0
@@ -198,7 +171,7 @@ CMD ["bash"]
 		Size: 35.3 MB (35258044 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; riscv64
+### `debian:unstable-20210721-slim` - linux; riscv64
 
 ```console
 $ docker pull debian@sha256:88ebd0e46722510d9a0e8da7fb1b5d34226814d71d319f21a7384edea99d754b
@@ -224,7 +197,7 @@ CMD ["bash"]
 		Size: 26.9 MB (26850251 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; s390x
+### `debian:unstable-20210721-slim` - linux; s390x
 
 ```console
 $ docker pull debian@sha256:33b0131111c8abbd87107a51fdfc32e3881dab08d6827a42b98bb83b4494d1c5

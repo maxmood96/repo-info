@@ -1,21 +1,20 @@
-## `debian:10-slim`
+## `debian:buster-20210721-slim`
 
 ```console
-$ docker pull debian@sha256:717b2f6dc55f454df5cca508a33b0e3ff67520db503737fc96c18548cd9c3836
+$ docker pull debian@sha256:5b5e9d8f6880ae00d23169ab6cb1775108974baa38d596ee503a6e62428b357d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 8
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v5
-	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; mips64le
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `debian:10-slim` - linux; amd64
+### `debian:buster-20210721-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:ad3a7712a9e3ac324bee1ee2a214be0fdf365ac7ecdd979240fe24edfbd485b4
@@ -41,7 +40,7 @@ CMD ["bash"]
 		Size: 27.1 MB (27145795 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:10-slim` - linux; arm variant v5
+### `debian:buster-20210721-slim` - linux; arm variant v5
 
 ```console
 $ docker pull debian@sha256:4c17a37e2c03eadce31ad57f29d543678f5440fc85b2f6fcf8d48c03f257bac7
@@ -67,33 +66,7 @@ CMD ["bash"]
 		Size: 24.9 MB (24879093 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:10-slim` - linux; arm variant v7
-
-```console
-$ docker pull debian@sha256:d153da92759d083bfc24a071ad79a970a4ef06980e6ffef8da2074383ffa15e0
-```
-
--	Docker Version: 19.03.12
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **22.7 MB (22746055 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1f994a8deac01dd5b5c373ee2a7044a9bf2c2b59862de0032517e942c111a53`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 23 Jun 2021 00:20:31 GMT
-ADD file:8d200a3bbe985ff355343675c5555852f27550a9e367969df6bc98034efb8fd4 in / 
-# Wed, 23 Jun 2021 00:20:31 GMT
-CMD ["bash"]
-```
-
--	Layers:
-	-	`sha256:8452be1adf00f91570fe21a8e61aaf4c12e014daf67d7de65d984f4e8ecca2f1`  
-		Last Modified: Wed, 23 Jun 2021 00:31:49 GMT  
-		Size: 22.7 MB (22746055 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `debian:10-slim` - linux; arm64 variant v8
+### `debian:buster-20210721-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:0171b23e81160701d4a8cdcb1e7a5b5d16f796465c0638603ceb50ee936f2438
@@ -119,7 +92,7 @@ CMD ["bash"]
 		Size: 25.9 MB (25914794 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:10-slim` - linux; 386
+### `debian:buster-20210721-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:6914dd3617858c0b3f7039565f4e67f2af5b443d0a00fa0fa7500cec9a5dcc3b
@@ -145,7 +118,7 @@ CMD ["bash"]
 		Size: 27.8 MB (27797459 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:10-slim` - linux; mips64le
+### `debian:buster-20210721-slim` - linux; mips64le
 
 ```console
 $ docker pull debian@sha256:23ae0184b314a9b8bd142a5cb79440983e6b7c134b693b8de0ade45bf626ba19
@@ -171,7 +144,7 @@ CMD ["bash"]
 		Size: 25.8 MB (25812771 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:10-slim` - linux; ppc64le
+### `debian:buster-20210721-slim` - linux; ppc64le
 
 ```console
 $ docker pull debian@sha256:c71506a39cfe901a0259f4ecb604c014fc4cb9b6dedf360c2c2d705ba4a59a80
@@ -197,7 +170,7 @@ CMD ["bash"]
 		Size: 30.6 MB (30553709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:10-slim` - linux; s390x
+### `debian:buster-20210721-slim` - linux; s390x
 
 ```console
 $ docker pull debian@sha256:fbcf40c49bd1704be94e065b283f789cd4e8f7f7d72e47daf5fe80589e12b4cf
