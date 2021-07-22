@@ -5283,14 +5283,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.4.0-77.86
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-77.86.dsc' linux_5.4.0-77.86.dsc 6907 SHA512:56c54581af683c803322763467fcebec26757d6f5fbd8971e93d153891ef79bca79d4cb6276879a4b61a2a5108b3f0f53af79ba51dd55e8952e51df112960319
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-77.86.diff.gz' linux_5.4.0-77.86.diff.gz 8046635 SHA512:d01838edef8e5ccc6f085d8ef685fd4b7e405bb6e959801bc95d971e9ff9b8d4104b4e2cff854bbf9b7f59238307ba9fc6adc8847b5e00b18346fdf1c78280e6
-```
 
 ### `dpkg` source package: `llvm-toolchain-11=1:11.0.0-2~ubuntu20.04.1`
 
@@ -5893,14 +5888,9 @@ Licenses: (parsed from: `/usr/share/doc/libxnvctrl0/copyright`)
 - `other-Metrolink`
 - `other-XFree`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nvidia-settings=460.73.01-0ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nvidia-settings/nvidia-settings_460.73.01-0ubuntu0.20.04.1.dsc' nvidia-settings_460.73.01-0ubuntu0.20.04.1.dsc 2501 SHA512:bdf322aa38d2f6537efb287a40a76a0ea49a52e488ef5a4986479788e77db3c5ba9a809d6d2f058b8cec8bcb904e923edfc92293c50e8b791de3434c6e12c32c
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nvidia-settings/nvidia-settings_460.73.01.orig.tar.bz2' nvidia-settings_460.73.01.orig.tar.bz2 1061256 SHA512:7d6ffa6b6d0b78056295b33d91c1e4c5e8b4930ce8f631fb1ff9cd7e82e7168da4ad993f643bf3a61fc3ecc14a7a3075a39dab06a5cccb16042ebae24e1c9c40
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nvidia-settings/nvidia-settings_460.73.01-0ubuntu0.20.04.1.debian.tar.xz' nvidia-settings_460.73.01-0ubuntu0.20.04.1.debian.tar.xz 24504 SHA512:f0702aaaf3777ff5fc3bb512cc064ed1d7a36140955ea0439de54af9ee1420b845959d53a24df2e257148e2de47cd4eef84b2a96f3a278b19b0675fc0fc5af4d
-```
 
 ### `dpkg` source package: `ocl-icd=2.2.11-1ubuntu1`
 
@@ -7183,14 +7173,9 @@ Licenses: (parsed from: `/usr/share/doc/libruby2.7/copyright`, `/usr/share/doc/r
 - `Unicode`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ruby2.7=2.7.0-5ubuntu1.4
-'http://archive.ubuntu.com/ubuntu/pool/main/r/ruby2.7/ruby2.7_2.7.0-5ubuntu1.4.dsc' ruby2.7_2.7.0-5ubuntu1.4.dsc 2578 SHA512:b3b6539aec5990d1991d55d9d2ccb5dec75e1747d2b94e9bfd62704c3191788e9de808876fd9caa387bf678857575dab19a8750e320800845e425cb0c878ed72
-'http://archive.ubuntu.com/ubuntu/pool/main/r/ruby2.7/ruby2.7_2.7.0.orig.tar.xz' ruby2.7_2.7.0.orig.tar.xz 10734268 SHA512:0d39eeb8da43d9f026465df00b30e0e54e726f584e73825486402c940f634464b6f886b2b7badc7786822b4ef0814d9da6bad4479939676d438301c4cf15c881
-'http://archive.ubuntu.com/ubuntu/pool/main/r/ruby2.7/ruby2.7_2.7.0-5ubuntu1.4.debian.tar.xz' ruby2.7_2.7.0-5ubuntu1.4.debian.tar.xz 119612 SHA512:11eb9607bd9f145b3a326c8fe7f19c03209ef38badd53f9980e35573dc00f70c168516a42872bb70c52becb05e2e1704c6dc32d814fba4cf0cef00b8b22b412f
-```
 
 ### `dpkg` source package: `rubygems-integration=1.16`
 
@@ -7591,14 +7576,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.7
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.7.dsc' systemd_245.4-4ubuntu3.7.dsc 5291 SHA512:4af3abd8d317d2d352f196a16a1f8c71556dbab34d11f8504e3f321de14e1be104cb9a19648634259939b752fd92371cd38a25288030b4bc5a0aa21146c15fff
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.7.debian.tar.xz' systemd_245.4-4ubuntu3.7.debian.tar.xz 247648 SHA512:ca9d4e0b1c4bab971d51ce640eb591a6e0fe076b6465bfc620c9962c16f64c248bcd7ed8d0eb4051ccf33c48d228d2af21291b9ca1b010d4f66958b3950499ab
-```
 
 ### `dpkg` source package: `sysvinit=2.96-2.1ubuntu1`
 
