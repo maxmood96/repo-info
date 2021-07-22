@@ -1753,14 +1753,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.15.0-147.151
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-147.151.dsc' linux_4.15.0-147.151.dsc 7060 SHA512:639809ec48ede697256392dd3c3180eaf0490196553af62d1173504a893c98ecdad923167ee34cb5fcbed2da46cfb07dbc416862b3693cdec7d9279408dd3b4a
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA512:0fab606a295e0857f774f8adaa9d56bf2cb227fbab2daed374415da216391b156f49e606ba37ac402987c5796d408807da5d1a42c0d85a8552f109a3e279443d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-147.151.diff.gz' linux_4.15.0-147.151.diff.gz 12306637 SHA512:311144ee734c4d3d8c48f622240a90b134565651ffee9f19e9c5666a3205247a03c4628c4900a5955d82594559f0744ca4ed4010d27a8708d71bbf26f5cac7a2
-```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
 
@@ -2572,14 +2567,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=237-3ubuntu10.48
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.48.dsc' systemd_237-3ubuntu10.48.dsc 5220 SHA512:c185bab18222e1d15f4c63e2e7c10679a10116851817a68d531abe7bfd089576b3cc44ca4d0e8f426c7bc13b804ff45c7e9d67a8704260c75a21c190190232f0
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA512:15ef4b92815a6dd9a6c51672dbc00fd7cd0f08068ef0cbeaca574f68d330b28bc67ba1946f24f75ef3d9e7b63843a73eea700db54688061dbf5c9f8470394c3b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.48.debian.tar.xz' systemd_237-3ubuntu10.48.debian.tar.xz 293920 SHA512:b583f105567543222eb4a7851eb26151fe5f88d9b1c3c98c1d9fe45a5363df9cd5d5ea902c0c9e3e382617de34b44801dc9a318e7c3173ff49ee05179b435d95
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
