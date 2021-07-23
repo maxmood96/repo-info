@@ -1,10 +1,10 @@
-# `openjdk:8u292-jdk-oraclelinux7`
+# `openjdk:8u302-jdk-oraclelinux7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cd6da62356f7686b108e65b6eaecc5769dd3101936850a017b7b1e9d4d1d5314`
-- Created: `2021-06-26T01:14:44.286379089Z`
-- Virtual Size: ~ 382.60 Mb  
+- Image ID: `sha256:258a1ae5cdd5b07b7bebcaea9dcc307fc4339baf656c68072d1e1ee4aa73c113`
+- Created: `2021-07-21T18:25:30.785972668Z`
+- Virtual Size: ~ 382.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/java/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/java/openjdk-8`
   - `LANG=en_US.UTF-8`
-  - `JAVA_VERSION=8u292`
+  - `JAVA_VERSION=8u302`
 
 ## `rpm` (`.rpm`-based packages)
 

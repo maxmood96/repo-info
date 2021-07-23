@@ -1,10 +1,10 @@
-# `openjdk:11.0.11-9-jdk-slim-buster`
+# `openjdk:11.0.12-jdk-slim-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6f92fc6c133ae07b3163da29768e1b512a59756ce6f9f4a8c9f49d3ca9c48c44`
-- Created: `2021-06-26T01:13:51.202857628Z`
-- Virtual Size: ~ 421.47 Mb  
+- Image ID: `sha256:01b008ed1b4489fa7677d6d8342a4ff5b1c3ada2e769494e5492f7fc5e3fab3a`
+- Created: `2021-07-22T13:36:33.662110355Z`
+- Virtual Size: ~ 421.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-11`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=11.0.11+9`
+  - `JAVA_VERSION=11.0.12`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1518,12 +1518,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/shadow/1:4.5-1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/shadow/1:4.5-1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=241-7~deb10u7`
+### `dpkg` source package: `systemd=241-7~deb10u8`
 
 Binary Packages:
 
-- `libsystemd0:amd64=241-7~deb10u7`
-- `libudev1:amd64=241-7~deb10u7`
+- `libsystemd0:amd64=241-7~deb10u8`
+- `libudev1:amd64=241-7~deb10u8`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1538,17 +1538,17 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=241-7~deb10u7
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_241-7~deb10u7.dsc' systemd_241-7~deb10u7.dsc 4946 SHA256:1abfa0f64d2ff59ab43b67dca133c8852cfdfd018ceaf5b661b6a2e4eda9954c
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_241.orig.tar.gz' systemd_241.orig.tar.gz 7640538 SHA256:b2561a8e1d10a2c248253f0dda31a85dd6d69f2b54177de55e02cd1d2778316e
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_241-7~deb10u7.debian.tar.xz' systemd_241-7~deb10u7.debian.tar.xz 181896 SHA256:b46079f75db2a5e496a2e6e14893e11477a58b8634e0fccbb3f09f9191907806
+$ apt-get source -qq --print-uris systemd=241-7~deb10u8
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_241-7~deb10u8.dsc' systemd_241-7~deb10u8.dsc 5101 SHA256:925ac30011dee81ab0e418f27515db2ddead0fa609b34eb7815cee7861c5a561
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_241.orig.tar.gz' systemd_241.orig.tar.gz 7640538 SHA256:b2561a8e1d10a2c248253f0dda31a85dd6d69f2b54177de55e02cd1d2778316e
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_241-7~deb10u8.debian.tar.xz' systemd_241-7~deb10u8.debian.tar.xz 182616 SHA256:6f5419d06f917a0565a55b9c9e7b9b55c094623a32b722f24431c20f7b48491b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/systemd/241-7~deb10u7/ (for browsing the source)
-- https://sources.debian.net/src/systemd/241-7~deb10u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/241-7~deb10u7/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/systemd/241-7~deb10u8/ (for browsing the source)
+- https://sources.debian.net/src/systemd/241-7~deb10u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/241-7~deb10u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.93-8`
 
