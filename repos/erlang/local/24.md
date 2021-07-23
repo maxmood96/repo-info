@@ -1,20 +1,20 @@
-# `erlang:24.0.3.0`
+# `erlang:24.0.4.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f91cd97cd2601b4a11ae8ccbc9cdec1fffd2250e25e80952e7b1080dca21c101`
-- Created: `2021-06-28T18:37:08.500981878Z`
+- Image ID: `sha256:c3759aab1e25a225151a8a3303ccfcc9d152991a0e00f0f19d4c451d67c11c75`
+- Created: `2021-07-23T05:03:40.17273156Z`
 - Virtual Size: ~ 1.25 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=24.0.3`
+  - `OTP_VERSION=24.0.4`
   - `REBAR3_VERSION=3.16.1`
   - `REBAR_VERSION=2.6.4`
 - Labels:
-  - `org.opencontainers.image.version=24.0.3`
+  - `org.opencontainers.image.version=24.0.4`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -4585,11 +4585,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.3.8+dfsg-3+deb10u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.3.8+dfsg-3+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.19.194-1`
+### `dpkg` source package: `linux=4.19.194-3`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.19.194-1`
+- `linux-libc-dev:amd64=4.19.194-3`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -4604,17 +4604,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.19.194-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.19.194-1.dsc' linux_4.19.194-1.dsc 191615 SHA256:a3e26dbec63a18d7ca8f0898ca7bd2fe65a2019ae4c0d3111c05a78926d0dee7
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.19.194.orig.tar.xz' linux_4.19.194.orig.tar.xz 107577844 SHA256:a7c75fc0aed1077e0bc7acfb0a1d3f90898f5bebd9d7699943ba0bda8dcb586a
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.19.194-1.debian.tar.xz' linux_4.19.194-1.debian.tar.xz 1485836 SHA256:17d960df9bf6c2207cdc726b08ed69267deeff3595f7566aa8e3c826354ea608
+$ apt-get source -qq --print-uris linux=4.19.194-3
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.19.194-3.dsc' linux_4.19.194-3.dsc 191615 SHA256:ab90d3cb8e28efac3cd5d847097e17c8062cbe949d6e5b1945954900fe2d6b40
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.19.194.orig.tar.xz' linux_4.19.194.orig.tar.xz 107577844 SHA256:a7c75fc0aed1077e0bc7acfb0a1d3f90898f5bebd9d7699943ba0bda8dcb586a
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.19.194-3.debian.tar.xz' linux_4.19.194-3.debian.tar.xz 3381624 SHA256:0cfb6d71d24881f1ef67ddc79a86dd2f5770019e5fa19220b7b399b2e26ac2ff
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/4.19.194-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.19.194-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.19.194-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/4.19.194-3/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.19.194-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.19.194-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lksctp-tools=1.0.18+dfsg-1`
 
@@ -6265,15 +6265,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/subversion/1.10.4-1+deb10u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/subversion/1.10.4-1+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=241-7~deb10u7`
+### `dpkg` source package: `systemd=241-7~deb10u8`
 
 Binary Packages:
 
-- `libpam-systemd:amd64=241-7~deb10u7`
-- `libsystemd0:amd64=241-7~deb10u7`
-- `libudev1:amd64=241-7~deb10u7`
-- `systemd=241-7~deb10u7`
-- `systemd-sysv=241-7~deb10u7`
+- `libpam-systemd:amd64=241-7~deb10u8`
+- `libsystemd0:amd64=241-7~deb10u8`
+- `libudev1:amd64=241-7~deb10u8`
+- `systemd=241-7~deb10u8`
+- `systemd-sysv=241-7~deb10u8`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
@@ -6288,17 +6288,17 @@ Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=241-7~deb10u7
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_241-7~deb10u7.dsc' systemd_241-7~deb10u7.dsc 4946 SHA256:1abfa0f64d2ff59ab43b67dca133c8852cfdfd018ceaf5b661b6a2e4eda9954c
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_241.orig.tar.gz' systemd_241.orig.tar.gz 7640538 SHA256:b2561a8e1d10a2c248253f0dda31a85dd6d69f2b54177de55e02cd1d2778316e
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_241-7~deb10u7.debian.tar.xz' systemd_241-7~deb10u7.debian.tar.xz 181896 SHA256:b46079f75db2a5e496a2e6e14893e11477a58b8634e0fccbb3f09f9191907806
+$ apt-get source -qq --print-uris systemd=241-7~deb10u8
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_241-7~deb10u8.dsc' systemd_241-7~deb10u8.dsc 5101 SHA256:925ac30011dee81ab0e418f27515db2ddead0fa609b34eb7815cee7861c5a561
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_241.orig.tar.gz' systemd_241.orig.tar.gz 7640538 SHA256:b2561a8e1d10a2c248253f0dda31a85dd6d69f2b54177de55e02cd1d2778316e
+'http://security.debian.org/debian-security/pool/updates/main/s/systemd/systemd_241-7~deb10u8.debian.tar.xz' systemd_241-7~deb10u8.debian.tar.xz 182616 SHA256:6f5419d06f917a0565a55b9c9e7b9b55c094623a32b722f24431c20f7b48491b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/systemd/241-7~deb10u7/ (for browsing the source)
-- https://sources.debian.net/src/systemd/241-7~deb10u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/241-7~deb10u7/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/systemd/241-7~deb10u8/ (for browsing the source)
+- https://sources.debian.net/src/systemd/241-7~deb10u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/241-7~deb10u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.93-8`
 
