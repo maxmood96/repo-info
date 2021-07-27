@@ -1,15 +1,16 @@
 ## `ubuntu:groovy`
 
 ```console
-$ docker pull ubuntu@sha256:1caf59c068c2491671c8e143b4f0af5f6c7684395e367a3da0e2d6112b515077
+$ docker pull ubuntu@sha256:a7b08558af07bcccca994b01e1c84f1d14a2156e0099fcf7fcf73f52d082791e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 5
+-	Platforms: 6
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
+	-	linux; riscv64
 	-	linux; s390x
 
 ### `ubuntu:groovy` - linux; amd64
@@ -41,27 +42,27 @@ CMD ["bash"]
 ### `ubuntu:groovy` - linux; arm variant v7
 
 ```console
-$ docker pull ubuntu@sha256:c6ecf83027c5771ed2f91b721fc693495117c700b11f5ed11af6fe7d1cb31870
+$ docker pull ubuntu@sha256:52dba2769548fe9bd851b817e4c0339c8d0d9bda932968d5191a5e9a616124ee
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.3 MB (26312397 bytes)**  
+-	Total Size: **26.3 MB (26313208 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cda5fc2153cc1581e00706b9ddcb3e07053538cb12bc1992ae869c9dc890e6dc`
+-	Image ID: `sha256:18cadcc0b197dab2d979db2f840b54819e6faec336676d5b7da52d855c0a86b0`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 13 Jul 2021 23:21:33 GMT
-ADD file:80b5f21ffac906a8416f39204cb526afaf64f15559123cb3a8fb311e312a703f in / 
-# Tue, 13 Jul 2021 23:21:34 GMT
+# Mon, 26 Jul 2021 22:52:12 GMT
+ADD file:4e6fd0ac6d6b29ca2b3da1f10b851ca590c1c1f49f75d7ee3f4bea0a19ddc2f0 in / 
+# Mon, 26 Jul 2021 22:52:13 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:7ad80ac50e31c20115b0366841c81a92d1916a7f2113255fe1125324250475e7`  
-		Last Modified: Tue, 13 Jul 2021 23:26:54 GMT  
-		Size: 26.3 MB (26312397 bytes)  
+	-	`sha256:a9e2181154536b422b7147b5cbb6a307b33f02a5fe3f3660fc72d7e6616878c1`  
+		Last Modified: Mon, 26 Jul 2021 22:56:47 GMT  
+		Size: 26.3 MB (26313208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:groovy` - linux; arm64 variant v8
@@ -93,27 +94,53 @@ CMD ["bash"]
 ### `ubuntu:groovy` - linux; ppc64le
 
 ```console
-$ docker pull ubuntu@sha256:09ec5a4f8c30537574711fd78b0a91eb457c7df3c2fe9cc57201e8c7e2d3a336
+$ docker pull ubuntu@sha256:2851a9b80b75b9d102e2eec25023ad73053852f2cc2b3a578b808f242df3c128
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **36.6 MB (36562496 bytes)**  
+-	Total Size: **36.6 MB (36563589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c27089a136350a26e952f483854aa26d35d65fc26546c0d8192a1acf5ec9a07b`
+-	Image ID: `sha256:2c2c20e88786da13ec036f0cff8cd530ea983addd8a85006aa0e45a77a4a41b6`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 13 Jul 2021 23:22:45 GMT
-ADD file:d810eebdcea73da6a0b9c4546fc356b13b60da24827c29923375b8e08f2195b4 in / 
-# Tue, 13 Jul 2021 23:22:53 GMT
+# Mon, 26 Jul 2021 23:13:01 GMT
+ADD file:b35738b25474b22211003d40615f8d2c6f97e8e3b32ecfb1afb9966d49a8cae3 in / 
+# Mon, 26 Jul 2021 23:13:05 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:97b0da8da7b9eb227e28852cb467ba3f76ac379708648200f035c072d3bbf4eb`  
-		Last Modified: Tue, 13 Jul 2021 23:28:00 GMT  
-		Size: 36.6 MB (36562496 bytes)  
+	-	`sha256:95a1187a9d6fcc0e6b6e7651cbefe95105b207b9e90cc3662d593d0c2e9c76c7`  
+		Last Modified: Mon, 26 Jul 2021 23:16:15 GMT  
+		Size: 36.6 MB (36563589 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `ubuntu:groovy` - linux; riscv64
+
+```console
+$ docker pull ubuntu@sha256:5ee48116d5a5ff60bac19e90d89ac1726752a216cca03ea1e97c40ff261d1ad1
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **26.5 MB (26524072 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5175f41c3c29d62b2d1502c9ef71a321a748f5fcc394b5d75f916a9d8b201aa1`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Mon, 26 Jul 2021 23:22:55 GMT
+ADD file:b6af3eb17fceb12f32687c7392bcce88c50d169e89e08ce383b0d151f15e35b4 in / 
+# Mon, 26 Jul 2021 23:22:57 GMT
+CMD ["bash"]
+```
+
+-	Layers:
+	-	`sha256:2854584d46af51653126c966b1f675e9fc2d73b12251e85306724f0c3caeabb0`  
+		Last Modified: Mon, 26 Jul 2021 23:42:20 GMT  
+		Size: 26.5 MB (26524072 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ubuntu:groovy` - linux; s390x
