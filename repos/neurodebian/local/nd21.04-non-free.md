@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c7ec1f95ed830f7eabfa1e441f0bf0b1828ac253b1ef4de221cb0df127aa1e4a`
-- Created: `2021-07-14T01:20:54.922561127Z`
-- Virtual Size: ~ 94.04 Mb  
+- Image ID: `sha256:9445c97ade590117897e42cddf4822b60f20bd87239e97e4bbd859e27dc8608e`
+- Created: `2021-07-27T00:15:45.716416157Z`
+- Virtual Size: ~ 94.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -137,11 +137,11 @@ $ apt-get source -qq --print-uris base-files=11ubuntu19
 'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu19.tar.xz' base-files_11ubuntu19.tar.xz 81020 SHA512:08a5d49d130bb5a05d7b2aa6083cc21de0171bfb9f51a0675b973eaef9b7e3e182e1ee917a6dac0aec3e32dd3e03ce02266151bc163542455b7a19b2c3d47663
 ```
 
-### `dpkg` source package: `base-passwd=3.5.49`
+### `dpkg` source package: `base-passwd=3.5.49ubuntu1`
 
 Binary Packages:
 
-- `base-passwd=3.5.49`
+- `base-passwd=3.5.49ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 
@@ -151,9 +151,9 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris base-passwd=3.5.49
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.5.49.dsc' base-passwd_3.5.49.dsc 1757 SHA512:5127de1a68e2a7b78953e7311651b7c6b7d5936f1d98c92e58ba5ac9cd645a7663933a5368413d1deb96757eb0a3cf4199c33558028692d9b7c18315c9cf23a0
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.5.49.tar.xz' base-passwd_3.5.49.tar.xz 53152 SHA512:38401f96313eef79fa828ff7256edaf7cee897919c47269729b698d6897a1c71af1d7dbf5a70efcee28a06e52e65685a8a5373b544ddb03059d2ac5f41dfddd7
+$ apt-get source -qq --print-uris base-passwd=3.5.49ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.5.49ubuntu1.dsc' base-passwd_3.5.49ubuntu1.dsc 1748 SHA512:3e8a5888a4b88355612424cd77857ec4dc4590854e8221bb9f7445d3eeb2163c054aebc8372aade1a0215e7334e0089930858403a7553baf410d00b1bd876815
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.5.49ubuntu1.tar.xz' base-passwd_3.5.49ubuntu1.tar.xz 53276 SHA512:2752b53d75222b8b733c813e7b97ca68e8421665a2539d898c7240dfb418897b55f09b52312cbc5e9f1350a94cc5adb11f9df39e5cc273f140e704da5c5137e4
 ```
 
 ### `dpkg` source package: `bash=5.1-2ubuntu1`
@@ -1645,12 +1645,12 @@ $ apt-get source -qq --print-uris sqlite3=3.34.1-3
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.34.1-3.debian.tar.xz' sqlite3_3.34.1-3.debian.tar.xz 22828 SHA512:63677f418a303943103684020f4b746da85f7d4d708b7bb303a74c108086138a4aaea0802b066ac38919a4dcf71d77a5b6724753e6a3fa3a1e45fb948e3a8b3f
 ```
 
-### `dpkg` source package: `systemd=247.3-3ubuntu3.1`
+### `dpkg` source package: `systemd=247.3-3ubuntu3.4`
 
 Binary Packages:
 
-- `libsystemd0:amd64=247.3-3ubuntu3.1`
-- `libudev1:amd64=247.3-3ubuntu3.1`
+- `libsystemd0:amd64=247.3-3ubuntu3.4`
+- `libudev1:amd64=247.3-3ubuntu3.4`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1663,9 +1663,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=247.3-3ubuntu3.4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_247.3-3ubuntu3.4.dsc' systemd_247.3-3ubuntu3.4.dsc 5349 SHA512:8d7746f387d65865c360ffadf798dcd9f141555ec0cf73f6baf8fda4d76e91a0446448079cde6fb5ce86d75e5029108cb529ccd5f1a063be7e3a4c3c45cc631c
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_247.3.orig.tar.gz' systemd_247.3.orig.tar.gz 9895385 SHA512:0b12f6b9b02d86ee2f4198dd5f96a6267652fdc4867517e10a214a59b63c996fd14aeb2f47a97806718cdda52d1705a3b2359e4ae5e5d8d52d61ad05e7941d1e
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_247.3-3ubuntu3.4.debian.tar.xz' systemd_247.3-3ubuntu3.4.debian.tar.xz 237984 SHA512:2e1631bc1f11bc7e6e22c1a4b5d2de49c60123c56e0276eef4acd800991afefc93ceae604eb89db177f790cf042004806d11739feac482cc0b527c50dec93e59
+```
 
 ### `dpkg` source package: `sysvinit=2.96-6ubuntu1`
 
