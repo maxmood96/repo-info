@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f9144616a6d0a6c27cfe0384fd34a35fd7a5c2104897ad890518136b9236dff1`
-- Created: `2021-07-02T02:17:15.350278429Z`
-- Virtual Size: ~ 137.56 Mb  
+- Image ID: `sha256:59ca52ce234677fbb9b22df0c2232c57c4ed527e8662564b4dd4977d53b7e90f`
+- Created: `2021-07-30T04:52:48.466943609Z`
+- Virtual Size: ~ 138.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.21`
-  - `PHP_URL=https://www.php.net/distributions/php-7.4.21.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.21.tar.xz.asc`
-  - `PHP_SHA256=cf43384a7806241bc2ff22022619baa4abb9710f12ec1656d0173de992e32a90`
+  - `PHP_VERSION=7.4.22`
+  - `PHP_URL=https://www.php.net/distributions/php-7.4.22.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.22.tar.xz.asc`
+  - `PHP_SHA256=8e078cd7d2f49ac3fcff902490a5bb1addc885e7e3b0d8dd068f42c68297bde8`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.5.0`
   - `WORDPRESS_CLI_SHA512=08dd9035fda1d529807380d5b757839e2809e289eb1a698fe33e7e21a1431d3f77c551c2b2db5adc55083d5075ea4137407994111890f765e790a97e6d9ca7af`
@@ -387,16 +387,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.77.0-r1 description:
+libcurl-7.78.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-7.77.0-r1 webpage:
+libcurl-7.78.0-r0 webpage:
 https://curl.se/
 
-libcurl-7.77.0-r1 installed size:
+libcurl-7.78.0-r0 installed size:
 500 KiB
 
-libcurl-7.77.0-r1 license:
+libcurl-7.78.0-r0 license:
 MIT
 
 ```
