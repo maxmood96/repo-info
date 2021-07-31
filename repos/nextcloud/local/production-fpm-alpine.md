@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ade0d160d8860d370394658588b3868315e6ed8d674678a6839e07fbc06b18f3`
-- Created: `2021-07-02T18:02:45.870386549Z`
-- Virtual Size: ~ 541.19 Mb  
+- Image ID: `sha256:467051bd8b02c085c860899482785793d93cdc631f7004e2a4aadc9abc4f5091`
+- Created: `2021-07-30T04:22:21.594893276Z`
+- Virtual Size: ~ 541.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.21`
-  - `PHP_URL=https://www.php.net/distributions/php-7.4.21.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.21.tar.xz.asc`
-  - `PHP_SHA256=cf43384a7806241bc2ff22022619baa4abb9710f12ec1656d0173de992e32a90`
+  - `PHP_VERSION=7.4.22`
+  - `PHP_URL=https://www.php.net/distributions/php-7.4.22.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.22.tar.xz.asc`
+  - `PHP_SHA256=8e078cd7d2f49ac3fcff902490a5bb1addc885e7e3b0d8dd068f42c68297bde8`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `NEXTCLOUD_VERSION=21.0.3`
@@ -405,16 +405,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.77.0-r1 description:
+libcurl-7.78.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-7.77.0-r1 webpage:
+libcurl-7.78.0-r0 webpage:
 https://curl.se/
 
-libcurl-7.77.0-r1 installed size:
+libcurl-7.78.0-r0 installed size:
 500 KiB
 
-libcurl-7.77.0-r1 license:
+libcurl-7.78.0-r0 license:
 MIT
 
 ```
@@ -966,16 +966,16 @@ MIT
 ### `apk` package: `rsync`
 
 ```console
-rsync-3.2.3-r2 description:
+rsync-3.2.3-r4 description:
 A file transfer program to keep remote files in sync
 
-rsync-3.2.3-r2 webpage:
+rsync-3.2.3-r4 webpage:
 https://rsync.samba.org/
 
-rsync-3.2.3-r2 installed size:
+rsync-3.2.3-r4 installed size:
 428 KiB
 
-rsync-3.2.3-r2 license:
+rsync-3.2.3-r4 license:
 GPL-3.0-or-later
 
 ```
