@@ -1,10 +1,10 @@
-# `redmine:4.2.1`
+# `redmine:4.2.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:be97e87738155b1d102c2b0b7286bd39b06e62a5a8184e8fb0e21b7a2e819743`
-- Created: `2021-07-23T11:04:49.977964028Z`
-- Virtual Size: ~ 505.37 Mb  
+- Image ID: `sha256:5c25a3b03269000ce6a7aa543599b627f73fa5bcc07debf1eb1cd10129f908dd`
+- Created: `2021-08-02T19:26:49.686321559Z`
+- Virtual Size: ~ 505.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -20,8 +20,8 @@
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=4.2.1`
-  - `REDMINE_DOWNLOAD_SHA256=ad4109c3425f1cfe4c8961f6ae6494c76e20d81ed946caa1e297d9eda13b41b4`
+  - `REDMINE_VERSION=4.2.2`
+  - `REDMINE_DOWNLOAD_SHA256=e6fbe9279939a95953d377ef76f180f204a1f3da5229a1d56055d658de7198f6`
 
 ## `dpkg` (`.deb`-based packages)
 
