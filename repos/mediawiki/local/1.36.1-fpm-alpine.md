@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dcca46703cde69fae9e2bccf93363a802d56a486e7af7ff708cd3c8a2548f191`
-- Created: `2021-07-02T01:08:01.924150176Z`
-- Virtual Size: ~ 497.68 Mb  
+- Image ID: `sha256:4156ff7533edecd9a013e58b25e74f9b1773a9fe7aed4b0c4305c59c522472b2`
+- Created: `2021-07-30T03:44:45.883818527Z`
+- Virtual Size: ~ 498.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.21`
-  - `PHP_URL=https://www.php.net/distributions/php-7.4.21.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.21.tar.xz.asc`
-  - `PHP_SHA256=cf43384a7806241bc2ff22022619baa4abb9710f12ec1656d0173de992e32a90`
+  - `PHP_VERSION=7.4.22`
+  - `PHP_URL=https://www.php.net/distributions/php-7.4.22.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.22.tar.xz.asc`
+  - `PHP_SHA256=8e078cd7d2f49ac3fcff902490a5bb1addc885e7e3b0d8dd068f42c68297bde8`
   - `MEDIAWIKI_MAJOR_VERSION=1.36`
   - `MEDIAWIKI_VERSION=1.36.1`
 
@@ -115,16 +115,16 @@ Apache-2.0 CC0-1.0
 ### `apk` package: `avahi-libs`
 
 ```console
-avahi-libs-0.8-r4 description:
+avahi-libs-0.8-r5 description:
 Libraries for avahi run-time use
 
-avahi-libs-0.8-r4 webpage:
+avahi-libs-0.8-r5 webpage:
 https://www.avahi.org/
 
-avahi-libs-0.8-r4 installed size:
+avahi-libs-0.8-r5 installed size:
 128 KiB
 
-avahi-libs-0.8-r4 license:
+avahi-libs-0.8-r5 license:
 LGPL-2.0-or-later
 
 ```
@@ -421,16 +421,16 @@ GPL-2.0-or-later
 ### `apk` package: `glib`
 
 ```console
-glib-2.68.2-r0 description:
+glib-2.68.3-r0 description:
 Common C routines used by Gtk+ and other libs
 
-glib-2.68.2-r0 webpage:
+glib-2.68.3-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.68.2-r0 installed size:
+glib-2.68.3-r0 installed size:
 3352 KiB
 
-glib-2.68.2-r0 license:
+glib-2.68.3-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -693,16 +693,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.77.0-r1 description:
+libcurl-7.78.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-7.77.0-r1 webpage:
+libcurl-7.78.0-r0 webpage:
 https://curl.se/
 
-libcurl-7.77.0-r1 installed size:
+libcurl-7.78.0-r0 installed size:
 500 KiB
 
-libcurl-7.77.0-r1 license:
+libcurl-7.78.0-r0 license:
 MIT
 
 ```
