@@ -483,14 +483,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.74.0-1.2ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.74.0-1.2ubuntu3.dsc' curl_7.74.0-1.2ubuntu3.dsc 2771 SHA512:0a49ffb2e99fb87b2bcae9fc63bd21f996094b22ac844016e8dac22df6ad470bf9f63fed7f056eee4b2ecd214f0b7bccd5c366915814cb4c97e08d4792850148
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.74.0.orig.tar.gz' curl_7.74.0.orig.tar.gz 4043409 SHA512:4b61a23463315dce5529aa5f1dc7d21d7876347912c68855c9cfcb01e06492af1510975fafb213c67ac7b9764287767da69043a79376a4be366aa23ace09f163
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.74.0-1.2ubuntu3.debian.tar.xz' curl_7.74.0-1.2ubuntu3.debian.tar.xz 38808 SHA512:703f08f2131e4faec86a481099aa73b8d7848868b51cfacca3f88255b9a7249ea217bde7e7e577160d0d087dbd5f0f62f349ade5b810d976470ab01c450c1d66
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2.1build1`
 
@@ -994,14 +989,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-11-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-11=11.1.0-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-11/gcc-11_11.1.0-4ubuntu1.dsc' gcc-11_11.1.0-4ubuntu1.dsc 27853 SHA512:3f77e7715266552e95a7ff556a818fbee21bd34a0995a0364a57b6a9c124715c963f3697c7124bdc681dc52789e23b06bceddf50b48c672847052835f4934533
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-11/gcc-11_11.1.0.orig.tar.gz' gcc-11_11.1.0.orig.tar.gz 85847016 SHA512:1335086a43f8ff09d7ec8868b43743e1219627d87527cca14aa186f63cd8a88057e782b370d282e363dbf30da995ef3a33677d4e02313bee87c658ee4fdbe755
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-11/gcc-11_11.1.0-4ubuntu1.debian.tar.xz' gcc-11_11.1.0-4ubuntu1.debian.tar.xz 2227948 SHA512:a3ffb8c0bd6abe9117e3cf7ba012f1c1a3832a2219aa83dfb82ebbeb9b10616736609a9d12ef588a0de6c93bb28cd509323e2b67a24ee422b7138724f1f98d36
-```
 
 ### `dpkg` source package: `gcc-defaults=1.190ubuntu3`
 
@@ -3835,14 +3825,9 @@ Licenses: (parsed from: `/usr/share/doc/libprocps8/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:3.3.17-5ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-5ubuntu2.dsc' procps_3.3.17-5ubuntu2.dsc 2237 SHA512:a55f7783a4f8ef668b3aae12908cce276f36101d3aab72f6e887441b31797adcca1fcae2340a32e105a98af184e4298acd8303ffc738895870866cccc9c7e40f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17.orig.tar.xz' procps_3.3.17.orig.tar.xz 1008428 SHA512:59e9a5013430fd9da508c4655d58375dc32e025bb502bb28fb9a92a48e4f2838b3355e92b4648f7384b2050064d17079bf4595d889822ebb5030006bc154a1a7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-5ubuntu2.debian.tar.xz' procps_3.3.17-5ubuntu2.debian.tar.xz 33552 SHA512:3941ac7bb94ad5676ec81271b1f3407d8d1671fc32687be3cb135413f4475427cdb979f14f5de7d00740a62bdd79b030418e0cb31152416b1729a7bb84e32425
-```
 
 ### `dpkg` source package: `python3-defaults=3.9.4-1`
 
