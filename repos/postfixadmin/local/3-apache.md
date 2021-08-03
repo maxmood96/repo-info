@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2ab6f6bbfafc2ab68b6fb96d1de78332bdbb80b66429915de65262837c08e9a8`
-- Created: `2021-07-23T04:43:36.350078856Z`
-- Virtual Size: ~ 426.95 Mb  
+- Image ID: `sha256:97ec6408b0ccf2619807bc0f5fc8055112f5a34b30837627ba3e9d12ca3b35ce`
+- Created: `2021-07-30T04:35:08.676198224Z`
+- Virtual Size: ~ 428.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -21,10 +21,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.21`
-  - `PHP_URL=https://www.php.net/distributions/php-7.4.21.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.21.tar.xz.asc`
-  - `PHP_SHA256=cf43384a7806241bc2ff22022619baa4abb9710f12ec1656d0173de992e32a90`
+  - `PHP_VERSION=7.4.22`
+  - `PHP_URL=https://www.php.net/distributions/php-7.4.22.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.22.tar.xz.asc`
+  - `PHP_SHA256=8e078cd7d2f49ac3fcff902490a5bb1addc885e7e3b0d8dd068f42c68297bde8`
   - `POSTFIXADMIN_VERSION=3.3.9`
   - `POSTFIXADMIN_SHA512=791b05df34a4f2eec01fe6f6b9038a6630cd60c42e1f2e725fe3d033a692b77d2d688858b947c53d1ce48258c7c87a2e3fb31356e553632b88149d5a29bfa70e`
   - `APACHE_DOCUMENT_ROOT=/var/www/html/public`
@@ -1407,14 +1407,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/keyutils/1.6-6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/keyutils/1.6-6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `krb5=1.17-3+deb10u1`
+### `dpkg` source package: `krb5=1.17-3+deb10u2`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.17-3+deb10u1`
-- `libk5crypto3:amd64=1.17-3+deb10u1`
-- `libkrb5-3:amd64=1.17-3+deb10u1`
-- `libkrb5support0:amd64=1.17-3+deb10u1`
+- `libgssapi-krb5-2:amd64=1.17-3+deb10u2`
+- `libk5crypto3:amd64=1.17-3+deb10u2`
+- `libkrb5-3:amd64=1.17-3+deb10u2`
+- `libkrb5support0:amd64=1.17-3+deb10u2`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -1423,17 +1423,17 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.17-3+deb10u1
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17-3+deb10u1.dsc' krb5_1.17-3+deb10u1.dsc 3573 SHA256:e9edb5d47d4f7dc345e01adc45f1d302f5f19012f8c38d234ef9b2c08bbef7cc
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA256:5a6e2284a53de5702d3dc2be3b9339c963f9b5397d3fbbc53beb249380a781f5
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17-3+deb10u1.debian.tar.xz' krb5_1.17-3+deb10u1.debian.tar.xz 100584 SHA256:396ecf9ec5b4ac91d2ce8527d7f6b2309e70fc5b14ea1158eb7e367c48e9c5ca
+$ apt-get source -qq --print-uris krb5=1.17-3+deb10u2
+'http://security.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.17-3+deb10u2.dsc' krb5_1.17-3+deb10u2.dsc 3728 SHA256:a901f59b3c3ddfa56bf34188f644ecdabcf58ea8bd24734ea028a33c91d58f44
+'http://security.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA256:5a6e2284a53de5702d3dc2be3b9339c963f9b5397d3fbbc53beb249380a781f5
+'http://security.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.17-3+deb10u2.debian.tar.xz' krb5_1.17-3+deb10u2.debian.tar.xz 102064 SHA256:8a943f0b23f68e74809f8e23b55e1b8af638242b464cf04770aa0324b5ba117c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/krb5/1.17-3+deb10u1/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.17-3+deb10u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.17-3+deb10u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/krb5/1.17-3+deb10u2/ (for browsing the source)
+- https://sources.debian.net/src/krb5/1.17-3+deb10u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/krb5/1.17-3+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libbsd=0.9.1-2+deb10u1`
 
