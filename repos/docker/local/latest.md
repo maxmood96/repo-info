@@ -1,17 +1,17 @@
-# `docker:20.10.7`
+# `docker:20.10.8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:08bdaf2f88f90320cd3e92a469969efb1f066c6d318631f94e7864828abd7c75`
-- Created: `2021-06-03T21:21:25.859763741Z`
-- Virtual Size: ~ 246.37 Mb  
+- Image ID: `sha256:51453dcdd9bd51e503f75e6d42a4071469ad2ba816321781985041b6bc7776db`
+- Created: `2021-08-04T21:20:44.630816633Z`
+- Virtual Size: ~ 214.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=20.10.7`
+  - `DOCKER_VERSION=20.10.8`
   - `DOCKER_TLS_CERTDIR=/certs`
 
 ## `apk` (`.apk`-based packages)
@@ -135,6 +135,23 @@ BSD-2-Clause AND BSD-3-Clause
 
 ```
 
+### `apk` package: `libc6-compat`
+
+```console
+libc6-compat-1.2.2-r1 description:
+compatibility libraries for glibc
+
+libc6-compat-1.2.2-r1 webpage:
+https://musl.libc.org/
+
+libc6-compat-1.2.2-r1 installed size:
+12 KiB
+
+libc6-compat-1.2.2-r1 license:
+MIT
+
+```
+
 ### `apk` package: `libcrypto1.1`
 
 ```console
@@ -206,16 +223,16 @@ ISC
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.2-r0 description:
+musl-1.2.2-r1 description:
 the musl c library (libc) implementation
 
-musl-1.2.2-r0 webpage:
+musl-1.2.2-r1 webpage:
 https://musl.libc.org/
 
-musl-1.2.2-r0 installed size:
+musl-1.2.2-r1 installed size:
 608 KiB
 
-musl-1.2.2-r0 license:
+musl-1.2.2-r1 license:
 MIT
 
 ```

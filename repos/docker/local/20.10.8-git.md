@@ -1,17 +1,17 @@
-# `docker:20.10.7-git`
+# `docker:20.10.8-git`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7303fde5f20624623382d7b52fcd3c5f82d10035dbd93c9790385c2cc5e46ac7`
-- Created: `2021-06-03T21:21:51.830149805Z`
-- Virtual Size: ~ 258.99 Mb  
+- Image ID: `sha256:7fda6f821f6eee066c490f4c12941c8ea6069ccb3f5b2974718337ebd4f563e1`
+- Created: `2021-08-04T21:21:06.472643737Z`
+- Virtual Size: ~ 227.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=20.10.7`
+  - `DOCKER_VERSION=20.10.8`
   - `DOCKER_TLS_CERTDIR=/certs`
 
 ## `apk` (`.apk`-based packages)
@@ -186,6 +186,23 @@ BSD-2-Clause AND BSD-3-Clause
 
 ```
 
+### `apk` package: `libc6-compat`
+
+```console
+libc6-compat-1.2.2-r1 description:
+compatibility libraries for glibc
+
+libc6-compat-1.2.2-r1 webpage:
+https://musl.libc.org/
+
+libc6-compat-1.2.2-r1 installed size:
+12 KiB
+
+libc6-compat-1.2.2-r1 license:
+MIT
+
+```
+
 ### `apk` package: `libcrypto1.1`
 
 ```console
@@ -206,16 +223,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.77.0-r0 description:
+libcurl-7.78.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-7.77.0-r0 webpage:
+libcurl-7.78.0-r0 webpage:
 https://curl.se/
 
-libcurl-7.77.0-r0 installed size:
+libcurl-7.78.0-r0 installed size:
 500 KiB
 
-libcurl-7.77.0-r0 license:
+libcurl-7.78.0-r0 license:
 MIT
 
 ```
@@ -274,16 +291,16 @@ ISC
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.2-r0 description:
+musl-1.2.2-r1 description:
 the musl c library (libc) implementation
 
-musl-1.2.2-r0 webpage:
+musl-1.2.2-r1 webpage:
 https://musl.libc.org/
 
-musl-1.2.2-r0 installed size:
+musl-1.2.2-r1 installed size:
 608 KiB
 
-musl-1.2.2-r0 license:
+musl-1.2.2-r1 license:
 MIT
 
 ```

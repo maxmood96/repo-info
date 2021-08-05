@@ -1,16 +1,16 @@
-# `docker:20.10.7-dind-rootless`
+# `docker:20.10.8-dind-rootless`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ff81e7c521ef9185419614e07d935ee9d3fc84633b7779e7b78011d5c3118559`
-- Created: `2021-07-21T18:19:53.358478909Z`
-- Virtual Size: ~ 320.13 Mb  
+- Image ID: `sha256:7347a3756263d56fd413c805bf0cb3bc52910009c4dbc12a4c8e84ba4359ffe6`
+- Created: `2021-08-04T21:21:01.891109759Z`
+- Virtual Size: ~ 285.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=20.10.7`
+  - `DOCKER_VERSION=20.10.8`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=42b1175eda071c0e9121e1d64345928384a93df1`
 
@@ -359,16 +359,16 @@ MIT
 ### `apk` package: `krb5-libs`
 
 ```console
-krb5-libs-1.18.3-r1 description:
+krb5-libs-1.18.4-r0 description:
 The shared libraries used by Kerberos 5
 
-krb5-libs-1.18.3-r1 webpage:
+krb5-libs-1.18.4-r0 webpage:
 https://web.mit.edu/kerberos/www/
 
-krb5-libs-1.18.3-r1 installed size:
+krb5-libs-1.18.4-r0 installed size:
 1960 KiB
 
-krb5-libs-1.18.3-r1 license:
+krb5-libs-1.18.4-r0 license:
 MIT
 
 ```
@@ -421,6 +421,23 @@ libc-utils-0.7.2-r3 installed size:
 
 libc-utils-0.7.2-r3 license:
 BSD-2-Clause AND BSD-3-Clause
+
+```
+
+### `apk` package: `libc6-compat`
+
+```console
+libc6-compat-1.2.2-r1 description:
+compatibility libraries for glibc
+
+libc6-compat-1.2.2-r1 webpage:
+https://musl.libc.org/
+
+libc6-compat-1.2.2-r1 installed size:
+12 KiB
+
+libc6-compat-1.2.2-r1 license:
+MIT
 
 ```
 
@@ -682,16 +699,16 @@ GPL
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.2-r0 description:
+musl-1.2.2-r1 description:
 the musl c library (libc) implementation
 
-musl-1.2.2-r0 webpage:
+musl-1.2.2-r1 webpage:
 https://musl.libc.org/
 
-musl-1.2.2-r0 installed size:
+musl-1.2.2-r1 installed size:
 608 KiB
 
-musl-1.2.2-r0 license:
+musl-1.2.2-r1 license:
 MIT
 
 ```
@@ -971,16 +988,16 @@ Zlib
 ### `apk` package: `zstd-libs`
 
 ```console
-zstd-libs-1.4.5-r3 description:
+zstd-libs-1.4.9-r0 description:
 Zstandard - Fast real-time compression algorithm (libraries)
 
-zstd-libs-1.4.5-r3 webpage:
+zstd-libs-1.4.9-r0 webpage:
 https://www.zstd.net
 
-zstd-libs-1.4.5-r3 installed size:
-876 KiB
+zstd-libs-1.4.9-r0 installed size:
+736 KiB
 
-zstd-libs-1.4.5-r3 license:
+zstd-libs-1.4.9-r0 license:
 BSD-3-Clause GPL-2.0-or-later
 
 ```
