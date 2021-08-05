@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9e05cf28d899c83938da371d8f21102566be497226fa85f8639f0837a2d50cf8`
-- Created: `2021-07-16T00:08:58.554418365Z`
+- Image ID: `sha256:a19ad08cd945ff8116c05611dd0b8442ed21bbbac9d02d662c9e708a6ab75907`
+- Created: `2021-08-02T23:40:43.039116322Z`
 - Virtual Size: ~ 2.46 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -675,16 +675,16 @@ Enabling amzn2-core-source repository
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0c4b5094bba8d46b07c60e3d85cd8baac5f75d07af6a33086b6d0cd9eb2e13f1//../../../../../blobstore/968c079ef8a8a2efee76ff59cd99e06dd242b8813960171d0f5c23f4a6eb0bb2/texinfo-5.1-5.amzn2.src.rpm
 ```
 
-### `rpm` package: `kernel-headers-4.14.238-182.421.amzn2.x86_64`
+### `rpm` package: `kernel-headers-4.14.238-182.422.amzn2.x86_64`
 
 Licenses (from `rpm --query`): GPLv2 and Redistributable, no modification permitted
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls kernel-headers-4.14.238-182.421.amzn2
+$ yumdownloader --quiet --source --urls kernel-headers-4.14.238-182.422.amzn2
 Enabling amzn2-core-source repository
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0c4b5094bba8d46b07c60e3d85cd8baac5f75d07af6a33086b6d0cd9eb2e13f1//../../../../../blobstore/46a3cbd138c14783d4fab6bb456992003b53ab5ea345933d432f41cb03ea9c1a/kernel-4.14.238-182.421.amzn2.src.rpm
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0c4b5094bba8d46b07c60e3d85cd8baac5f75d07af6a33086b6d0cd9eb2e13f1//../../../../../blobstore/df7a75e42172b3a1e456aa5b92a3116848bba38d691ceb892d88f77578d479a2/kernel-4.14.238-182.422.amzn2.src.rpm
 ```
 
 ### `rpm` package: `keyutils-libs-1.5.8-3.amzn2.0.2.x86_64`
@@ -1467,16 +1467,16 @@ Enabling amzn2-core-source repository
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0c4b5094bba8d46b07c60e3d85cd8baac5f75d07af6a33086b6d0cd9eb2e13f1//../../../../../blobstore/f7fb62e6e9ec1d41ddc80780ea1dd542020dcbe7d117fb1c5110d40efdb9c606/openssh-7.4p1-21.amzn2.0.3.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-1.0.2k-19.amzn2.0.6.x86_64`
+### `rpm` package: `openssl-libs-1.0.2k-19.amzn2.0.7.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls openssl-libs-1.0.2k-19.amzn2.0.6
+$ yumdownloader --quiet --source --urls openssl-libs-1.0.2k-19.amzn2.0.7
 Enabling amzn2-core-source repository
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0c4b5094bba8d46b07c60e3d85cd8baac5f75d07af6a33086b6d0cd9eb2e13f1//../../../../../blobstore/96e65fc5c3448c0d5786e4c6c293c14a4bd168ce9a524eb8439c1b8c721c8ded/openssl-1.0.2k-19.amzn2.0.6.src.rpm
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0c4b5094bba8d46b07c60e3d85cd8baac5f75d07af6a33086b6d0cd9eb2e13f1//../../../../../blobstore/5f31c92c41f4f374c18e2bf2f6821da4fb2644d4cba4a2e90cc7d4ad34e94e6e/openssl-1.0.2k-19.amzn2.0.7.src.rpm
 ```
 
 ### `rpm` package: `p11-kit-0.23.22-1.amzn2.0.1.x86_64`
@@ -2031,16 +2031,16 @@ Enabling amzn2-core-source repository
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0c4b5094bba8d46b07c60e3d85cd8baac5f75d07af6a33086b6d0cd9eb2e13f1//../../../../../blobstore/059ccd33bf7223a26eedc0f289477c6c86fa24807e51a00dfbb3b8589ffd60be/python-urlgrabber-3.10-9.amzn2.0.1.src.rpm
 ```
 
-### `rpm` package: `python2-rpm-4.11.3-40.amzn2.0.5.x86_64`
+### `rpm` package: `python2-rpm-4.11.3-40.amzn2.0.6.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls python2-rpm-4.11.3-40.amzn2.0.5
+$ yumdownloader --quiet --source --urls python2-rpm-4.11.3-40.amzn2.0.6
 Enabling amzn2-core-source repository
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0c4b5094bba8d46b07c60e3d85cd8baac5f75d07af6a33086b6d0cd9eb2e13f1//../../../../../blobstore/d62ad87fc4f99ce5544760ef4bedaac867cd9c61474d4f68079d609d5cc2ce9f/rpm-4.11.3-40.amzn2.0.5.src.rpm
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0c4b5094bba8d46b07c60e3d85cd8baac5f75d07af6a33086b6d0cd9eb2e13f1//../../../../../blobstore/f7ca6b7b0c5e475ad63596db4de441b419d92d07558b42fba02255564663d606/rpm-4.11.3-40.amzn2.0.6.src.rpm
 ```
 
 ### `rpm` package: `pyxattr-0.5.1-5.amzn2.0.2.x86_64`
@@ -2079,40 +2079,40 @@ Enabling amzn2-core-source repository
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0c4b5094bba8d46b07c60e3d85cd8baac5f75d07af6a33086b6d0cd9eb2e13f1//../../../../../blobstore/e2b36f4a9d20e84ecb267c1a1b7ac1695a02175ffc08876957103338c6c358a7/readline-6.2-10.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `rpm-4.11.3-40.amzn2.0.5.x86_64`
+### `rpm` package: `rpm-4.11.3-40.amzn2.0.6.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls rpm-4.11.3-40.amzn2.0.5
+$ yumdownloader --quiet --source --urls rpm-4.11.3-40.amzn2.0.6
 Enabling amzn2-core-source repository
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0c4b5094bba8d46b07c60e3d85cd8baac5f75d07af6a33086b6d0cd9eb2e13f1//../../../../../blobstore/d62ad87fc4f99ce5544760ef4bedaac867cd9c61474d4f68079d609d5cc2ce9f/rpm-4.11.3-40.amzn2.0.5.src.rpm
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0c4b5094bba8d46b07c60e3d85cd8baac5f75d07af6a33086b6d0cd9eb2e13f1//../../../../../blobstore/f7ca6b7b0c5e475ad63596db4de441b419d92d07558b42fba02255564663d606/rpm-4.11.3-40.amzn2.0.6.src.rpm
 ```
 
-### `rpm` package: `rpm-build-libs-4.11.3-40.amzn2.0.5.x86_64`
+### `rpm` package: `rpm-build-libs-4.11.3-40.amzn2.0.6.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls rpm-build-libs-4.11.3-40.amzn2.0.5
+$ yumdownloader --quiet --source --urls rpm-build-libs-4.11.3-40.amzn2.0.6
 Enabling amzn2-core-source repository
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0c4b5094bba8d46b07c60e3d85cd8baac5f75d07af6a33086b6d0cd9eb2e13f1//../../../../../blobstore/d62ad87fc4f99ce5544760ef4bedaac867cd9c61474d4f68079d609d5cc2ce9f/rpm-4.11.3-40.amzn2.0.5.src.rpm
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0c4b5094bba8d46b07c60e3d85cd8baac5f75d07af6a33086b6d0cd9eb2e13f1//../../../../../blobstore/f7ca6b7b0c5e475ad63596db4de441b419d92d07558b42fba02255564663d606/rpm-4.11.3-40.amzn2.0.6.src.rpm
 ```
 
-### `rpm` package: `rpm-libs-4.11.3-40.amzn2.0.5.x86_64`
+### `rpm` package: `rpm-libs-4.11.3-40.amzn2.0.6.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls rpm-libs-4.11.3-40.amzn2.0.5
+$ yumdownloader --quiet --source --urls rpm-libs-4.11.3-40.amzn2.0.6
 Enabling amzn2-core-source repository
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0c4b5094bba8d46b07c60e3d85cd8baac5f75d07af6a33086b6d0cd9eb2e13f1//../../../../../blobstore/d62ad87fc4f99ce5544760ef4bedaac867cd9c61474d4f68079d609d5cc2ce9f/rpm-4.11.3-40.amzn2.0.5.src.rpm
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0c4b5094bba8d46b07c60e3d85cd8baac5f75d07af6a33086b6d0cd9eb2e13f1//../../../../../blobstore/f7ca6b7b0c5e475ad63596db4de441b419d92d07558b42fba02255564663d606/rpm-4.11.3-40.amzn2.0.6.src.rpm
 ```
 
 ### `rpm` package: `sed-4.2.2-5.amzn2.0.2.x86_64`
