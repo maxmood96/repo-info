@@ -1,10 +1,10 @@
-# `mongo:5.0.1-focal`
+# `mongo:5.0.2-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:49f9af59c1e4aa8ddee6dd9726d34ee067f7d1b330347cb5a56d0dc803f79b2b`
-- Created: `2021-08-04T21:29:19.374135034Z`
-- Virtual Size: ~ 681.77 Mb  
+- Image ID: `sha256:269b735e72cb9c7173c52d775d56453594f32a37f63a71a5404390ce4d51db7d`
+- Created: `2021-08-05T21:34:30.246203557Z`
+- Virtual Size: ~ 682.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=5.0`
-  - `MONGO_VERSION=5.0.1`
+  - `MONGO_VERSION=5.0.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1274,11 +1274,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-mongosh=1.0.1`
+### `dpkg` source package: `mongodb-mongosh=1.0.4`
 
 Binary Packages:
 
-- `mongodb-mongosh=1.0.1`
+- `mongodb-mongosh=1.0.4`
 
 Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 
@@ -1289,17 +1289,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=5.0.1`
+### `dpkg` source package: `mongodb-org=5.0.2`
 
 Binary Packages:
 
-- `mongodb-org=5.0.1`
-- `mongodb-org-database=5.0.1`
-- `mongodb-org-database-tools-extra=5.0.1`
-- `mongodb-org-mongos=5.0.1`
-- `mongodb-org-server=5.0.1`
-- `mongodb-org-shell=5.0.1`
-- `mongodb-org-tools=5.0.1`
+- `mongodb-org=5.0.2`
+- `mongodb-org-database=5.0.2`
+- `mongodb-org-database-tools-extra=5.0.2`
+- `mongodb-org-mongos=5.0.2`
+- `mongodb-org-server=5.0.2`
+- `mongodb-org-shell=5.0.2`
+- `mongodb-org-tools=5.0.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
