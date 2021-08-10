@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9515286b66bdf8412eecb15744844cefa7bc5403cee7b37909758f12260ab88b`
-- Created: `2021-08-03T19:29:27.446767883Z`
+- Image ID: `sha256:21969defce304e5b2bd417eb6c60622674dad7fe53af7c0d27256ea10021d7a0`
+- Created: `2021-08-06T21:10:57.459865645Z`
 - Virtual Size: ~ 889.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,9 +13,9 @@
   - `LANG=C.UTF-8`
   - `GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D`
   - `PYTHON_VERSION=3.10.0rc1`
-  - `PYTHON_PIP_VERSION=21.2.2`
-  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/a1675ab6c2bd898ed82b1f58c486097f763c74a9/public/get-pip.py`
-  - `PYTHON_GET_PIP_SHA256=6665659241292b2147b58922b9ffe11dda66b39d52d8a6f3aa310bc1d60ea6f7`
+  - `PYTHON_PIP_VERSION=21.2.3`
+  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/c20b0cfd643cd4a19246ccf204e2997af70f6b21/public/get-pip.py`
+  - `PYTHON_GET_PIP_SHA256=fa6f3fb93cce234cd4e8dd2beb54a51ab9c247653b52855a48dd44e6b21ff28b`
 
 ## `dpkg` (`.deb`-based packages)
 
