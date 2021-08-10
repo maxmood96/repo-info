@@ -555,19 +555,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.259
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.259.dsc' cdebconf_0.259.dsc 2746 SHA256:4cae3a15db81588e719f2a9989d121e30f2c338e06a4e2e3150295989ca1c4af
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.259.tar.xz' cdebconf_0.259.tar.xz 279744 SHA256:7fa2951944fe97833ec63384dc7c19bc11ee10ce2bca0731592ff5029b60236a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cdebconf/0.259/
 
-- https://sources.debian.net/src/cdebconf/0.259/ (for browsing the source)
-- https://sources.debian.net/src/cdebconf/0.259/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cdebconf/0.259/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `coreutils=8.32-4`
 
@@ -3695,20 +3689,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `X11`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.10.40-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.40-1.dsc' linux_5.10.40-1.dsc 195000 SHA256:92f68c076b2718f1a46a2b5a319405d4a7a1476f629cf5e634d898e09235b6f0
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.40.orig.tar.xz' linux_5.10.40.orig.tar.xz 121558372 SHA256:1dc6e21b266e8a154b55a05f07e85296c0edf74b4ea4a5782417a1c91bd6f7a0
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.40-1.debian.tar.xz' linux_5.10.40-1.debian.tar.xz 4181324 SHA256:01f8646065d3f258c575dff2e66f7a7f95b93ac08a889302279945998f07dd56
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/5.10.40-1/
 
-- https://sources.debian.net/src/linux/5.10.40-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.10.40-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.10.40-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
@@ -5132,20 +5119,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=247.3-5
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_247.3-5.dsc' systemd_247.3-5.dsc 5167 SHA256:fda5659c26236575dd8a6096a9a99abb7bdc5760df9adea7ab8c069230902aca
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_247.3.orig.tar.gz' systemd_247.3.orig.tar.gz 9895385 SHA256:2869986e219a8dfc96cc0dffac66e0c13bb70a89e16b85a3948876c146cfa3e0
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_247.3-5.debian.tar.xz' systemd_247.3-5.debian.tar.xz 165624 SHA256:3043cb3fe1cee5ded2b898c8f7deb6a367441d63ac8378a97d0477f59a0cd1cd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/247.3-5/
 
-- https://sources.debian.net/src/systemd/247.3-5/ (for browsing the source)
-- https://sources.debian.net/src/systemd/247.3-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/247.3-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.96-7`
 
@@ -5363,20 +5343,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.36.1-7
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.36.1-7.dsc' util-linux_2.36.1-7.dsc 4271 SHA256:659947b09a7c95769e3ac28fed878f8dc73d9655c7386837f3b4fb31f9c382d5
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.36.1.orig.tar.xz' util-linux_2.36.1.orig.tar.xz 5231880 SHA256:09fac242172cd8ec27f0739d8d192402c69417617091d8c6e974841568f37eed
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.36.1-7.debian.tar.xz' util-linux_2.36.1-7.debian.tar.xz 98140 SHA256:85def546377248a05e8af87482458ae6a39f081e626d3752c567e87de8dca24e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.36.1-7/
 
-- https://sources.debian.net/src/util-linux/2.36.1-7/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.36.1-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.36.1-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21-1`
 
