@@ -1,7 +1,7 @@
 ## `lightstreamer:7-jdk11-openjdk`
 
 ```console
-$ docker pull lightstreamer@sha256:4633919b66cfbf8d742727173b449769851fb104e80a767e5a615518d5ecd0fd
+$ docker pull lightstreamer@sha256:a5b89ca06ffeacbea3c4c5d3097b17f0df12a11efdf818a9f9177c4506a6e0b1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull lightstreamer@sha256:4633919b66cfbf8d742727173b449769851fb104e80a7
 ### `lightstreamer:7-jdk11-openjdk` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:302e664d6ccb82b1d59ff631bcd5fd77a0ac48b53e5e10aad91431794e0f77a4
+$ docker pull lightstreamer@sha256:ca249ae37335d2497e57d3a468c9dc573586ac20548d9ade018e8f4b750fe3f0
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **379.8 MB (379843665 bytes)**  
+-	Total Size: **379.8 MB (379843668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f8b913f363686fd61c9ece7d1b2345836405917f7a14c0e578e9dbdbf0d7121`
+-	Image ID: `sha256:10acba09928df879d0b4f019ca9a6f35e267bcb1c6313e080cfe9d3a78b83626`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -57,15 +57,15 @@ RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C
 ENV LIGHTSTREAMER_VERSION=7_2_0
 # Mon, 09 Aug 2021 20:22:25 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://www.lightstreamer.com/repo/distros/Lightstreamer_7_2_0.tar.gz
-# Mon, 09 Aug 2021 20:22:37 GMT
-RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Mon, 09 Aug 2021 20:22:37 GMT
+# Tue, 10 Aug 2021 20:20:34 GMT
+RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
+# Tue, 10 Aug 2021 20:20:34 GMT
 USER lightstreamer
-# Mon, 09 Aug 2021 20:22:38 GMT
+# Tue, 10 Aug 2021 20:20:34 GMT
 EXPOSE 8080
-# Mon, 09 Aug 2021 20:22:38 GMT
+# Tue, 10 Aug 2021 20:20:34 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Mon, 09 Aug 2021 20:22:38 GMT
+# Tue, 10 Aug 2021 20:20:35 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -102,9 +102,9 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Mon, 09 Aug 2021 20:25:38 GMT  
 		Size: 2.4 KB (2404 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e9f87ff0388ff06764a759adb578dfc7651db4570ffc1cfc772431545ecdf0a`  
-		Last Modified: Mon, 09 Aug 2021 20:25:41 GMT  
-		Size: 51.3 MB (51320698 bytes)  
+	-	`sha256:8b2bcccfe78edf3151b86c1096f4377eeb6c279b59d993c2002fc8e117d3abe3`  
+		Last Modified: Tue, 10 Aug 2021 20:21:46 GMT  
+		Size: 51.3 MB (51320701 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7-jdk11-openjdk` - linux; arm64 variant v8
