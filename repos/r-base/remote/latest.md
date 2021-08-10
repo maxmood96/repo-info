@@ -1,7 +1,7 @@
 ## `r-base:latest`
 
 ```console
-$ docker pull r-base@sha256:4f8079455d39e66e3b2ebfe494bfd412c146dcb28931477466b1dbe5a1f01de3
+$ docker pull r-base@sha256:1f4e2fa244a3e9c677ff93bf3a816835f9acefb97c2698c4f7854dfa15e9dd47
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,14 +14,14 @@ $ docker pull r-base@sha256:4f8079455d39e66e3b2ebfe494bfd412c146dcb28931477466b1
 ### `r-base:latest` - linux; amd64
 
 ```console
-$ docker pull r-base@sha256:6389af5f9cf5c3c3268ed83fc9d9993e1321a7d9735bff43a44e026f4f6a0589
+$ docker pull r-base@sha256:c7361b639c83d25cfa3d869dfb4608b9445e9da96b0b13a97c396e286b2fda63
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **324.9 MB (324896043 bytes)**  
+-	Total Size: **330.2 MB (330235437 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:062d8418ba77d109875505c295d28600ade9642f3d3828eb5240a3d4dc0af380`
+-	Image ID: `sha256:e83ee6a20d40957a08ebe836619d888259b4897c9e0e800ad952f5633a8cdb92`
 -	Default Command: `["R"]`
 
 ```dockerfile
@@ -43,13 +43,13 @@ ENV LC_ALL=en_US.UTF-8
 ENV LANG=en_US.UTF-8
 # Thu, 22 Jul 2021 14:25:16 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default         && echo 'APT::Install-Recommends "false";' > /etc/apt/apt.conf.d/90local-no-recommends
-# Thu, 22 Jul 2021 14:25:17 GMT
-ENV R_BASE_VERSION=4.1.0
-# Thu, 22 Jul 2021 14:25:17 GMT
+# Tue, 10 Aug 2021 20:32:35 GMT
+ENV R_BASE_VERSION=4.1.1
+# Tue, 10 Aug 2021 20:32:36 GMT
 RUN echo "deb http://deb.debian.org/debian experimental main" > /etc/apt/sources.list.d/experimental.list     && echo "deb [trusted=yes] https://eddelbuettel.github.io/ppaR400 ./" > /etc/apt/sources.list.d/edd-r4.list
-# Thu, 22 Jul 2021 14:26:07 GMT
+# Tue, 10 Aug 2021 20:33:27 GMT
 RUN apt-get update         && apt-get install -y --no-install-recommends                 libopenblas0-pthread 		littler                 r-cran-littler 		r-base=${R_BASE_VERSION}-* 		r-base-dev=${R_BASE_VERSION}-*                 r-base-core=${R_BASE_VERSION}-* 		r-recommended=${R_BASE_VERSION}-* 	&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installDeps.r /usr/local/bin/installDeps.r 	&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& install.r docopt 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 22 Jul 2021 14:26:09 GMT
+# Tue, 10 Aug 2021 20:33:29 GMT
 CMD ["R"]
 ```
 
@@ -74,13 +74,13 @@ CMD ["R"]
 		Last Modified: Thu, 22 Jul 2021 14:26:20 GMT  
 		Size: 349.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69b7b0952253024702757260108e530df6c9ae666d502264c710da8fec1cfb2b`  
-		Last Modified: Thu, 22 Jul 2021 14:26:20 GMT  
-		Size: 292.0 B  
+	-	`sha256:b1a5465a8d4cda5658398f72d4f6457963e87134ab528e8b85290052426edebf`  
+		Last Modified: Tue, 10 Aug 2021 20:33:42 GMT  
+		Size: 297.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13ddaffde5f2fd497225a2dd814720ed94058b4b8b663074160e4cea4b12c89e`  
-		Last Modified: Thu, 22 Jul 2021 14:26:50 GMT  
-		Size: 243.5 MB (243494878 bytes)  
+	-	`sha256:f80170cdc1529cd3405628fe4d2cf9551838ea19dd0878401a648fb547577f47`  
+		Last Modified: Tue, 10 Aug 2021 20:34:10 GMT  
+		Size: 248.8 MB (248834267 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `r-base:latest` - linux; arm64 variant v8
