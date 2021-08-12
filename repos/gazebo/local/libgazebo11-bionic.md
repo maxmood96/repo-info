@@ -2246,14 +2246,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-msgs5/copyright`, `/usr/shar
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-msgs5=5.7.0-1~bionic
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-msgs5/ignition-msgs5_5.7.0-1~bionic.dsc' ignition-msgs5_5.7.0-1~bionic.dsc 1309 SHA256:49821f39aa60e919309d7713a502be01dbb66489c53ff6a526231b4e582f8b3c
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-msgs5/ignition-msgs5_5.7.0.orig.tar.bz2' ignition-msgs5_5.7.0.orig.tar.bz2 315367 SHA256:a4dc07d8000b63de618231c382e6d1169b15cd6911c2ab1e2f7db10b2689fe5a
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-msgs5/ignition-msgs5_5.7.0-1~bionic.debian.tar.xz' ignition-msgs5_5.7.0-1~bionic.debian.tar.xz 2468 SHA256:f0855b38f9c1597bc5288d16b73da16f3dc52513157423d6d2ad99bc485cb837
-```
 
 ### `dpkg` source package: `ignition-tools=1.2.0-1~bionic`
 
@@ -5728,10 +5723,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssl=1.1.1-1ubuntu2.1~18.04.9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.9.dsc' openssl_1.1.1-1ubuntu2.1~18.04.9.dsc 2754 SHA512:b1c55200f1e749a6336fb20edd783c9ce6ad3e86516cc0b37600bf6fe285954f1553eb96eeb0a5836cfadc603e35721b74eecb85e8f8d2bbe6e6f4bb6be7e5a1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz' openssl_1.1.1.orig.tar.gz 8337920 SHA512:c0284a4fe84bdf765ca5bc5148da4441ffc36392cfecaf9d372af00cf93b6de5681cab1248b6f8246474532155dc205da5ad49549ad7c61c07c917145e7c9c71
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz.asc' openssl_1.1.1.orig.tar.gz.asc 488 SHA512:cc69ad07a2edc17b579018bac4683f7d48deb8cde4a0f53eb777d2546eec9be6d13a610299705f3b87a7e4e8492432260cd7efc89d124c7fe1def309bbee461f
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.9.debian.tar.xz' openssl_1.1.1-1ubuntu2.1~18.04.9.debian.tar.xz 115252 SHA512:93ba43f39b24b1be90e06c7e016ad6ae69bc2f25642956ae6acd4a6f7a64e8a08236aead50c55598738ca958152a58bea908b77b391b8c77a285fe7af184e8df
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.9.dsc' openssl_1.1.1-1ubuntu2.1~18.04.9.dsc 2754 SHA512:b1c55200f1e749a6336fb20edd783c9ce6ad3e86516cc0b37600bf6fe285954f1553eb96eeb0a5836cfadc603e35721b74eecb85e8f8d2bbe6e6f4bb6be7e5a1
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz' openssl_1.1.1.orig.tar.gz 8337920 SHA512:c0284a4fe84bdf765ca5bc5148da4441ffc36392cfecaf9d372af00cf93b6de5681cab1248b6f8246474532155dc205da5ad49549ad7c61c07c917145e7c9c71
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz.asc' openssl_1.1.1.orig.tar.gz.asc 488 SHA512:cc69ad07a2edc17b579018bac4683f7d48deb8cde4a0f53eb777d2546eec9be6d13a610299705f3b87a7e4e8492432260cd7efc89d124c7fe1def309bbee461f
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.9.debian.tar.xz' openssl_1.1.1-1ubuntu2.1~18.04.9.debian.tar.xz 115252 SHA512:93ba43f39b24b1be90e06c7e016ad6ae69bc2f25642956ae6acd4a6f7a64e8a08236aead50c55598738ca958152a58bea908b77b391b8c77a285fe7af184e8df
 ```
 
 ### `dpkg` source package: `opus=1.1.2-1ubuntu1`
