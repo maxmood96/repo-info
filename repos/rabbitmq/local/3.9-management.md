@@ -1,9 +1,9 @@
-# `rabbitmq:3.9.2-management`
+# `rabbitmq:3.9.3-management`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f8588bd62004e7903a4a1d885d5675cbd19032f0a90f52a936efa17d9c474664`
-- Created: `2021-08-09T20:27:38.786271424Z`
+- Image ID: `sha256:a0a2d74e6e6a10946272de31866ab02fd111744d71a742a830e84c38ff879f65`
+- Created: `2021-08-12T21:45:43.958814256Z`
 - Virtual Size: ~ 252.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,7 +17,7 @@
   - `OTP_VERSION=24.0.5`
   - `OTP_SOURCE_SHA256=a5fec674b11d0a2b888963157a9de60fc384be27ff1a2175cd20708a5b9aa97d`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
-  - `RABBITMQ_VERSION=3.9.2`
+  - `RABBITMQ_VERSION=3.9.3`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
   - `RABBITMQ_HOME=/opt/rabbitmq`
   - `RABBITMQ_LOGS=-`
@@ -1117,19 +1117,24 @@ $ apt-get source -qq --print-uris nettle=3.5.1+really3.5.1-2ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.5.1+really3.5.1-2ubuntu0.2.debian.tar.xz' nettle_3.5.1+really3.5.1-2ubuntu0.2.debian.tar.xz 27228 SHA512:389c303e679b6b6714f824f22bc8675c1ea4bdab0108b69e9514613109573d01592e3f80bf9a144866a159a9a09fa0f3218d62b9f6978bdfe5e95a18bcfe3a88
 ```
 
-### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.4`
+### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.5`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1f-1ubuntu2.4`
+- `libssl1.1:amd64=1.1.1f-1ubuntu2.5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.5
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.5.dsc' openssl_1.1.1f-1ubuntu2.5.dsc 2121 SHA512:e7c87002c1201f472137c746cebf0d11cc038af4743a5ba8c80a00d1c2d9764edd94a93a0c9054602332511cb027eff48bed13d1df047dd3a0060b71d7c69e9c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.5.debian.tar.xz' openssl_1.1.1f-1ubuntu2.5.debian.tar.xz 156860 SHA512:0362b6abd1b5c456cc6d4ebde41f4d1b4b2c84ebbefa62e438397ff3f6e93cadfffc9e452d2b697137140d2aa3c0599412d419a926b0d2fb088a52edb6c35ffc
+```
 
 ### `dpkg` source package: `p11-kit=0.23.20-1ubuntu0.1`
 
