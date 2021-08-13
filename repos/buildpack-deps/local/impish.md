@@ -1098,14 +1098,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.31.1-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.31.1-1ubuntu1.dsc' git_2.31.1-1ubuntu1.dsc 2986 SHA512:5cf3d828215d8c339294128335c549b3f4cd977bd65b274abb4341c97bb07140bacadf62f7f7bd2b19983fbc68dfc1775204a3cb8842edaa73462f92ca88deb2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.31.1.orig.tar.xz' git_2.31.1.orig.tar.xz 6413368 SHA512:9aa334a3e8519700ff5d112153ec42677722980094caa9d22aa91afdb65166bd9a98fa445c0d327c428ebfa73bf4832e9b3836109a1d9319feafe3191cfd170e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.31.1-1ubuntu1.debian.tar.xz' git_2.31.1-1ubuntu1.debian.tar.xz 678776 SHA512:c1235d7c143951479ab9160ef26aa088eed6362e109cbf0b6f35942ce15d2f7a62027eef3c78535a8e59a1fbb5307898d69efad6328d3ae4268949531eba6773
-```
 
 ### `dpkg` source package: `glib2.0=2.68.3-1`
 
@@ -2998,13 +2993,9 @@ Licenses: (parsed from: `/usr/share/doc/lto-disabled-list/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lto-disabled-list=14
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lto-disabled-list/lto-disabled-list_14.dsc' lto-disabled-list_14.dsc 1435 SHA512:83ae252aec11792372b4769fb7496b36cb64d3fbf0b34e70e9d2fb4f1c7bf348aaf730f7083a9c17bd0c53ddb59e6dc0f28a8ca69cfffad04bd9738b5914ce2f
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lto-disabled-list/lto-disabled-list_14.tar.xz' lto-disabled-list_14.tar.xz 11684 SHA512:4e4e593441e2e45fc9562bd8ed282143c5a68c545f004f656866f032893da19cb31292a6060fb374fdd0c404bfae655b53112ea9b577051f0ec4387d5d91845e
-```
 
 ### `dpkg` source package: `lz4=1.9.3-2`
 
