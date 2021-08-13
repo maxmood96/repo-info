@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:79a63cfc399aac7c1b4aed6a7c1663e3fae985f58862bd9dc331b4c7082ddd8e`
 - Created: `2021-08-06T20:04:52.011674521Z`
-- Virtual Size: ~ 45.00 Mb  
+- Virtual Size: ~ 45.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
