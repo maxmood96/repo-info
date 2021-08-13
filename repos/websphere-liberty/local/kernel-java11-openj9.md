@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:00d88a24a0ad33daf0918a38a835f5ed0d703577ad0f4985d7066cf56598f3cc`
-- Created: `2021-07-27T04:23:57.187140849Z`
-- Virtual Size: ~ 292.14 Mb  
+- Image ID: `sha256:38c35ad98b46242c62501519f78e603ff45585ebb592b763288fe6cfd843e7cd`
+- Created: `2021-08-07T01:46:53.601732361Z`
+- Virtual Size: ~ 292.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
@@ -17,25 +17,25 @@
   - `JAVA_VERSION=jdk-11.0.11+9_openj9-0.26.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
-  - `LIBERTY_VERSION=21.0.0_07`
+  - `LIBERTY_VERSION=21.0.0_08`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ibm/wlp/output`
   - `OPENJ9_SCC=true`
   - `RANDFILE=/tmp/.rnd`
   - `OPENJ9_JAVA_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal -Dosgi.checkConfiguration=false`
 - Labels:
-  - `BuildLabel=cl210720210629-1900`
+  - `BuildLabel=cl210820210727-1323`
   - `ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd`
   - `ProductName=WebSphere Application Server Liberty`
-  - `ProductVersion=21.0.0.7`
+  - `ProductVersion=21.0.0.8`
   - `org.opencontainers.image.authors=Arthur De Magalhaes, Chris Potter, Christy Jesuraj`
   - `org.opencontainers.image.description=This image contains the WebSphere Liberty runtime with AdoptOpenJDK with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://github.com/WASdev/ci.docker#building-an-application-image`
   - `org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html`
-  - `org.opencontainers.image.revision=cl210720210629-1900`
+  - `org.opencontainers.image.revision=cl210820210727-1323`
   - `org.opencontainers.image.title=IBM WebSphere Liberty`
   - `org.opencontainers.image.url=http://wasdev.net`
   - `org.opencontainers.image.vendor=IBM`
-  - `org.opencontainers.image.version=21.0.0.7`
+  - `org.opencontainers.image.version=21.0.0.8`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1411,15 +1411,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.4.dsc' openssl_1.1.1f-1ubuntu2.4.dsc 2713 SHA512:850f1f2fa01d3176558752eb98ec0feaf7d30bf3e477ca59eee0de650717e18abfc68b343966b419f534af5af25330aa4976d054eeca3511aebd04603282b2bd
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz.asc' openssl_1.1.1f.orig.tar.gz.asc 488 SHA512:63b01ffc23b2fec2cfc147d382b486a136e5610e181be94aa333022803a442ded37e8276fefb62b3176b571b94a1d2243c05b86b52ad7784fe0068d1ad948562
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.4.debian.tar.xz' openssl_1.1.1f-1ubuntu2.4.debian.tar.xz 154416 SHA512:39c5d4670990fd06de63eaabeea6f4ca3526487961c75b2cab02d0e0675fb71674b156997cb4841e9c5bb0a5f5304d9b5b03b04457d78f21cb664e25cac36291
-```
 
 ### `dpkg` source package: `p11-kit=0.23.20-1ubuntu0.1`
 

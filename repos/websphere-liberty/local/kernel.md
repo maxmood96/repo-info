@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:52e67863852a0beecc044a1ac832c9a499f1f0e162d1f4919ae4cadd32fea54a`
-- Created: `2021-07-27T04:23:30.474885903Z`
-- Virtual Size: ~ 311.33 Mb  
+- Image ID: `sha256:490de1bc500a8f25de1a39372ed5cc1821b8676e6f4fb5a5e10d29e4b09101ac`
+- Created: `2021-08-07T01:46:24.198398314Z`
+- Virtual Size: ~ 311.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
@@ -14,24 +14,24 @@
   - `JAVA_VERSION=1.8.0_sr6fp31`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-Xshareclasses:name=liberty,readonly,nonfatal,cacheDir=/output/.classCache/ -Dosgi.checkConfiguration=false -XX:+UseContainerSupport`
-  - `LIBERTY_VERSION=21.0.0_07`
+  - `LIBERTY_VERSION=21.0.0_08`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ibm/wlp/output`
   - `OPENJ9_SCC=true`
   - `RANDFILE=/tmp/.rnd`
 - Labels:
-  - `BuildLabel=cl210720210629-1900`
+  - `BuildLabel=cl210820210727-1323`
   - `ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd`
   - `ProductName=WebSphere Application Server Liberty`
-  - `ProductVersion=21.0.0.7`
+  - `ProductVersion=21.0.0.8`
   - `org.opencontainers.image.authors=Arthur De Magalhaes, Chris Potter`
   - `org.opencontainers.image.description=This image contains the WebSphere Liberty runtime with IBM's Java and Ubuntu as the base OS.  For more information on this image please see https://github.com/WASdev/ci.docker#building-an-application-image`
   - `org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html`
-  - `org.opencontainers.image.revision=cl210720210629-1900`
+  - `org.opencontainers.image.revision=cl210820210727-1323`
   - `org.opencontainers.image.title=IBM WebSphere Liberty`
   - `org.opencontainers.image.url=http://wasdev.net`
   - `org.opencontainers.image.vendor=IBM`
-  - `org.opencontainers.image.version=21.0.0.7`
+  - `org.opencontainers.image.version=21.0.0.8`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1027,10 +1027,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssl=1.1.1-1ubuntu2.1~18.04.9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.9.dsc' openssl_1.1.1-1ubuntu2.1~18.04.9.dsc 2754 SHA512:b1c55200f1e749a6336fb20edd783c9ce6ad3e86516cc0b37600bf6fe285954f1553eb96eeb0a5836cfadc603e35721b74eecb85e8f8d2bbe6e6f4bb6be7e5a1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz' openssl_1.1.1.orig.tar.gz 8337920 SHA512:c0284a4fe84bdf765ca5bc5148da4441ffc36392cfecaf9d372af00cf93b6de5681cab1248b6f8246474532155dc205da5ad49549ad7c61c07c917145e7c9c71
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz.asc' openssl_1.1.1.orig.tar.gz.asc 488 SHA512:cc69ad07a2edc17b579018bac4683f7d48deb8cde4a0f53eb777d2546eec9be6d13a610299705f3b87a7e4e8492432260cd7efc89d124c7fe1def309bbee461f
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.9.debian.tar.xz' openssl_1.1.1-1ubuntu2.1~18.04.9.debian.tar.xz 115252 SHA512:93ba43f39b24b1be90e06c7e016ad6ae69bc2f25642956ae6acd4a6f7a64e8a08236aead50c55598738ca958152a58bea908b77b391b8c77a285fe7af184e8df
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.9.dsc' openssl_1.1.1-1ubuntu2.1~18.04.9.dsc 2754 SHA512:b1c55200f1e749a6336fb20edd783c9ce6ad3e86516cc0b37600bf6fe285954f1553eb96eeb0a5836cfadc603e35721b74eecb85e8f8d2bbe6e6f4bb6be7e5a1
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz' openssl_1.1.1.orig.tar.gz 8337920 SHA512:c0284a4fe84bdf765ca5bc5148da4441ffc36392cfecaf9d372af00cf93b6de5681cab1248b6f8246474532155dc205da5ad49549ad7c61c07c917145e7c9c71
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz.asc' openssl_1.1.1.orig.tar.gz.asc 488 SHA512:cc69ad07a2edc17b579018bac4683f7d48deb8cde4a0f53eb777d2546eec9be6d13a610299705f3b87a7e4e8492432260cd7efc89d124c7fe1def309bbee461f
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.9.debian.tar.xz' openssl_1.1.1-1ubuntu2.1~18.04.9.debian.tar.xz 115252 SHA512:93ba43f39b24b1be90e06c7e016ad6ae69bc2f25642956ae6acd4a6f7a64e8a08236aead50c55598738ca958152a58bea908b77b391b8c77a285fe7af184e8df
 ```
 
 ### `dpkg` source package: `p11-kit=0.23.9-2ubuntu0.1`
