@@ -148,14 +148,9 @@ Licenses: (parsed from: `/usr/share/doc/alsa-ucm-conf/copyright`)
 
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris alsa-ucm-conf=1.2.2-1ubuntu0.8
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-ucm-conf/alsa-ucm-conf_1.2.2-1ubuntu0.8.dsc' alsa-ucm-conf_1.2.2-1ubuntu0.8.dsc 1427 SHA512:63a415ac6bada1ab4300a0d980bce559be3939fa0cd8c353b90106d5853225cc41d842a49897fc1e1a4bcc428b4558203df2b5a2fbc21c0f1c480627602c51f8
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-ucm-conf/alsa-ucm-conf_1.2.2.orig.tar.bz2' alsa-ucm-conf_1.2.2.orig.tar.bz2 14608 SHA512:25e3f341c110772c7cffc8c7745b320f2ddd12fe6460380c088939b5dc67b99ae4ad92e69375179574e0e1c40d14ff49961e86494e223fde009e51590f00ca8f
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-ucm-conf/alsa-ucm-conf_1.2.2-1ubuntu0.8.debian.tar.xz' alsa-ucm-conf_1.2.2-1ubuntu0.8.debian.tar.xz 16784 SHA512:a60aa1477e933900269f200109714e2a8b29757993c30108126d13295f6d6ced2822377907d961b4d85f81623f11db48720b04f45bf0ac5dac87d6b8ef1afa8e
-```
 
 ### `dpkg` source package: `aom=1.0.0.errata1-3build1`
 
@@ -7996,14 +7991,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-12=12.7-0ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.7-0ubuntu0.20.04.1.dsc' postgresql-12_12.7-0ubuntu0.20.04.1.dsc 3760 SHA512:961493cfc1f301d6ab4f573e595adda21566be03cc547e797ec56aea82409327381b165114613023e6fe7c50eeccc9d2a0d14ca78f89b49b755e7169599ac6c5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.7.orig.tar.bz2' postgresql-12_12.7.orig.tar.bz2 20819005 SHA512:47ca347df63a441e52e52442074e85d0ebd3a89f7eb037022c4690cbe88b21a6a959092a812b79bb30db47b5975a5d7908318c73b2685683d48b4789d4ae6a44
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.7-0ubuntu0.20.04.1.debian.tar.xz' postgresql-12_12.7-0ubuntu0.20.04.1.debian.tar.xz 25820 SHA512:b8932a6b7f89daffafd3dfad8ad5798f3ba494bbb05296489304bbdbe0ceb7dba9185d173a9251c1be11a733ad72f3f1f32248b937d00a8b2dc9decb2a8fa166
-```
 
 ### `dpkg` source package: `procps=2:3.3.16-1ubuntu2.2`
 
