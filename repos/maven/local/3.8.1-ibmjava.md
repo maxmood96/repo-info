@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:139467d6567699bebd1851a1eb15d76cea0f4b5ef2a9f34a8af626fcf2d44845`
-- Created: `2021-07-27T04:16:58.663380221Z`
-- Virtual Size: ~ 368.21 Mb  
+- Image ID: `sha256:fd4b89269ff36b46fb6735deba4ad589806b0e0aa2ad907c0ccdac3b29b8ad0f`
+- Created: `2021-08-13T17:59:02.374642967Z`
+- Virtual Size: ~ 367.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
 - Command: `["mvn"]`
 - Environment:
   - `PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr6fp31`
+  - `JAVA_VERSION=8.0.6.35`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
   - `MAVEN_HOME=/usr/share/maven`
@@ -1200,10 +1200,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssl=1.1.1-1ubuntu2.1~18.04.9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.9.dsc' openssl_1.1.1-1ubuntu2.1~18.04.9.dsc 2754 SHA512:b1c55200f1e749a6336fb20edd783c9ce6ad3e86516cc0b37600bf6fe285954f1553eb96eeb0a5836cfadc603e35721b74eecb85e8f8d2bbe6e6f4bb6be7e5a1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz' openssl_1.1.1.orig.tar.gz 8337920 SHA512:c0284a4fe84bdf765ca5bc5148da4441ffc36392cfecaf9d372af00cf93b6de5681cab1248b6f8246474532155dc205da5ad49549ad7c61c07c917145e7c9c71
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz.asc' openssl_1.1.1.orig.tar.gz.asc 488 SHA512:cc69ad07a2edc17b579018bac4683f7d48deb8cde4a0f53eb777d2546eec9be6d13a610299705f3b87a7e4e8492432260cd7efc89d124c7fe1def309bbee461f
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.9.debian.tar.xz' openssl_1.1.1-1ubuntu2.1~18.04.9.debian.tar.xz 115252 SHA512:93ba43f39b24b1be90e06c7e016ad6ae69bc2f25642956ae6acd4a6f7a64e8a08236aead50c55598738ca958152a58bea908b77b391b8c77a285fe7af184e8df
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.9.dsc' openssl_1.1.1-1ubuntu2.1~18.04.9.dsc 2754 SHA512:b1c55200f1e749a6336fb20edd783c9ce6ad3e86516cc0b37600bf6fe285954f1553eb96eeb0a5836cfadc603e35721b74eecb85e8f8d2bbe6e6f4bb6be7e5a1
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz' openssl_1.1.1.orig.tar.gz 8337920 SHA512:c0284a4fe84bdf765ca5bc5148da4441ffc36392cfecaf9d372af00cf93b6de5681cab1248b6f8246474532155dc205da5ad49549ad7c61c07c917145e7c9c71
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz.asc' openssl_1.1.1.orig.tar.gz.asc 488 SHA512:cc69ad07a2edc17b579018bac4683f7d48deb8cde4a0f53eb777d2546eec9be6d13a610299705f3b87a7e4e8492432260cd7efc89d124c7fe1def309bbee461f
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1~18.04.9.debian.tar.xz' openssl_1.1.1-1ubuntu2.1~18.04.9.debian.tar.xz 115252 SHA512:93ba43f39b24b1be90e06c7e016ad6ae69bc2f25642956ae6acd4a6f7a64e8a08236aead50c55598738ca958152a58bea908b77b391b8c77a285fe7af184e8df
 ```
 
 ### `dpkg` source package: `p11-kit=0.23.9-2ubuntu0.1`

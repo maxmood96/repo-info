@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a103254b608432161eb11cc8c84f6b08909a6f419e1078527be96aeb8df6f10f`
-- Created: `2021-06-03T23:26:59.322869298Z`
-- Virtual Size: ~ 274.01 Mb  
+- Image ID: `sha256:2b2f0971412959b96841390efd155f636346efabec22ee5d09c785bd19862110`
+- Created: `2021-08-13T17:59:11.826111144Z`
+- Virtual Size: ~ 272.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
 - Command: `["mvn"]`
 - Environment:
   - `PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr6fp31`
+  - `JAVA_VERSION=8.0.6.35`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
   - `MAVEN_HOME=/usr/share/maven`
@@ -141,16 +141,16 @@ MPL-2.0 GPL-2.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-7.77.0-r0 description:
+curl-7.78.0-r0 description:
 URL retrival utility and library
 
-curl-7.77.0-r0 webpage:
+curl-7.78.0-r0 webpage:
 https://curl.se/
 
-curl-7.77.0-r0 installed size:
+curl-7.78.0-r0 installed size:
 244 KiB
 
-curl-7.77.0-r0 license:
+curl-7.78.0-r0 license:
 MIT
 
 ```
@@ -226,16 +226,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.77.0-r0 description:
+libcurl-7.78.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-7.77.0-r0 webpage:
+libcurl-7.78.0-r0 webpage:
 https://curl.se/
 
-libcurl-7.77.0-r0 installed size:
+libcurl-7.78.0-r0 installed size:
 500 KiB
 
-libcurl-7.77.0-r0 license:
+libcurl-7.78.0-r0 license:
 MIT
 
 ```
