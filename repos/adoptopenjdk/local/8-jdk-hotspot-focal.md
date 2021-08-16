@@ -709,15 +709,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.6.13-2ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.3.dsc' gnutls28_3.6.13-2ubuntu1.3.dsc 3594 SHA512:9a773f3bdf9048448a0ba8fbd9ab3d2883621df20f7bc62f7e298331d32be9c361ce4e9c3cfb702be543cb15c6743ada1a70dc28533beb736305a8e9f0d514c8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz' gnutls28_3.6.13.orig.tar.xz 5958956 SHA512:23581952cb72c9a34f378c002bb62413d5a1243b74b48ad8dc49eaea4020d33c550f8dc1dd374cf7fbfa4187b0ca1c5698c8a0430398268a8b8a863f8633305c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz.asc' gnutls28_3.6.13.orig.tar.xz.asc 667 SHA512:b343a8ace6a5c81c0c44b2cb65d8e83dfe5963c9bab04d9131fa8fd03cdf0c6f990d720af8767084e01bf5f7a7dbd0f048aefe68c3b6f1dc1ea1899d567a72f7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.3.debian.tar.xz' gnutls28_3.6.13-2ubuntu1.3.debian.tar.xz 64836 SHA512:b28fe3c01879a57fe15e39dd8bd23b236c0b7b2addfec1fbc2808034ea6e4d3feb0c365c46f7872fb604feb082116be6313fce008d7c3f4c4574e235404c6f1c
-```
 
 ### `dpkg` source package: `grep=3.4-1`
 
@@ -1396,15 +1390,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.4.dsc' openssl_1.1.1f-1ubuntu2.4.dsc 2713 SHA512:850f1f2fa01d3176558752eb98ec0feaf7d30bf3e477ca59eee0de650717e18abfc68b343966b419f534af5af25330aa4976d054eeca3511aebd04603282b2bd
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz.asc' openssl_1.1.1f.orig.tar.gz.asc 488 SHA512:63b01ffc23b2fec2cfc147d382b486a136e5610e181be94aa333022803a442ded37e8276fefb62b3176b571b94a1d2243c05b86b52ad7784fe0068d1ad948562
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.4.debian.tar.xz' openssl_1.1.1f-1ubuntu2.4.debian.tar.xz 154416 SHA512:39c5d4670990fd06de63eaabeea6f4ca3526487961c75b2cab02d0e0675fb71674b156997cb4841e9c5bb0a5f5304d9b5b03b04457d78f21cb664e25cac36291
-```
 
 ### `dpkg` source package: `p11-kit=0.23.20-1ubuntu0.1`
 
@@ -1633,14 +1621,9 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.8.1-1ubuntu5.20.04
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-1ubuntu5.20.04.dsc' shadow_4.8.1-1ubuntu5.20.04.dsc 1729 SHA512:fc557d6572f8732cc21f8bb69df08f6a289b3615e19f0374a4e4812b89e793e3f071c552a69c43cbb82e659ac735b3ad6d62d3205f3a12591037e3669430ea5d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1.orig.tar.xz' shadow_4.8.1.orig.tar.xz 1611196 SHA512:780a983483d847ed3c91c82064a0fa902b6f4185225978241bc3bc03fcc3aa143975b46aee43151c6ba43efcfdb1819516b76ba7ad3d1d3c34fcc38ea42e917b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-1ubuntu5.20.04.debian.tar.xz' shadow_4.8.1-1ubuntu5.20.04.debian.tar.xz 85640 SHA512:237d007329c915889766807ad85c8954fe8cf81b8aa074cdc8eba46e6157cd9386dc53cd5054f13618af30af30033074e0881c2f3f43d5f7e86224b2a261791c
-```
 
 ### `dpkg` source package: `sqlite3=3.31.1-4ubuntu0.2`
 
