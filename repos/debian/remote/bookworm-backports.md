@@ -1,13 +1,14 @@
 ## `debian:bookworm-backports`
 
 ```console
-$ docker pull debian@sha256:deb714623febb4215e36e1b2c08eabe89173b038f9d353bf1690e6cc77862976
+$ docker pull debian@sha256:b4760995cb29367489d1706b882c13d36f1cf180dd7d396b3143309e204cd33c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 7
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
+	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; mips64le
@@ -75,6 +76,38 @@ RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/s
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:065e8d2c9c53095a415ee66679b1d587ea6a08b5019e363c5c4c95a345815963`  
 		Last Modified: Tue, 17 Aug 2021 02:09:08 GMT  
+		Size: 227.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `debian:bookworm-backports` - linux; arm variant v7
+
+```console
+$ docker pull debian@sha256:066d24e9f150d0612c9a8b7a64d3d6e670b18ac284590e2ded5680cdd1cd7b9e
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **50.1 MB (50113247 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b6dc9cfc80b932f339e1e9ce108f3bcbaa2d3b187d603937238bca60cf5a283a`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Tue, 17 Aug 2021 02:11:31 GMT
+ADD file:18556b52c6e76b082247244eead10cb479f1a05bb07b6caf156f49400f48188d in / 
+# Tue, 17 Aug 2021 02:11:33 GMT
+CMD ["bash"]
+# Tue, 17 Aug 2021 02:11:45 GMT
+RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/sources.list.d/backports.list
+```
+
+-	Layers:
+	-	`sha256:ce73ed8d29a0da6695c615a86a02c7568a7e582bf31ebc08f97915cfabf8037c`  
+		Last Modified: Tue, 17 Aug 2021 02:27:29 GMT  
+		Size: 50.1 MB (50113020 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:456f123b78f0c58123bd13ce30613781d6cd45451ece97e6a564d614d3773391`  
+		Last Modified: Tue, 17 Aug 2021 02:27:41 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
