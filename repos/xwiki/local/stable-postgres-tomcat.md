@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9e2fb7c9d2ca44229860ebd351eddba9f573f6d29885bc7fe423172b93a1a40b`
-- Created: `2021-08-06T00:59:28.657785817Z`
-- Virtual Size: ~ 1.30 Gb  
+- Image ID: `sha256:1ca7404bcd47689e7e955059c1b3e73b25813457c9ccfbceda237e9703cae19b`
+- Created: `2021-08-17T01:04:59.101720418Z`
+- Virtual Size: ~ 1.31 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -21,8 +21,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 5C3C5F3E314C866292F359A8F3AD5C94A67F707E 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 765908099ACF92702C7D949BFA0C35EA8AA299F1 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 8B46CA49EF4837B8C7F292DAA54AD08EA7A0233C 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.5.69`
-  - `TOMCAT_SHA512=3ce092c7b89a12904681f23c9c8a2517c13305b4beb783f7b1e85e947aaba4d2bfe8f954f9cefbe009f678557eeb552995f214d9e98c3f1be395822eb2582a1c`
+  - `TOMCAT_VERSION=8.5.70`
+  - `TOMCAT_SHA512=10d306a2ea27e10b914556678763e2b1295ffdaa3da042db586d39b9ab95640bd3e1b81627f96c61f400f2db98a7d4b4bbdf21dc3238c8d0025bf95b08f2f61c`
   - `XWIKI_VERSION=13.6`
   - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.6`
   - `XWIKI_DOWNLOAD_SHA256=58518900cd01cc8445e0fb098c33d721070180f26542fdce9ce38677c0b06dab`
@@ -3008,7 +3008,6 @@ $ apt-get source -qq --print-uris openldap=2.4.49+dfsg-2ubuntu1.8
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1f-1ubuntu2.4`
 - `openssl=1.1.1f-1ubuntu2.4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -3018,6 +3017,25 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.5`
+
+Binary Packages:
+
+- `libssl1.1:amd64=1.1.1f-1ubuntu2.5`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.5
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.5.dsc' openssl_1.1.1f-1ubuntu2.5.dsc 2121 SHA512:e7c87002c1201f472137c746cebf0d11cc038af4743a5ba8c80a00d1c2d9764edd94a93a0c9054602332511cb027eff48bed13d1df047dd3a0060b71d7c69e9c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.5.debian.tar.xz' openssl_1.1.1f-1ubuntu2.5.debian.tar.xz 156860 SHA512:0362b6abd1b5c456cc6d4ebde41f4d1b4b2c84ebbefa62e438397ff3f6e93cadfffc9e452d2b697137140d2aa3c0599412d419a926b0d2fb088a52edb6c35ffc
+```
 
 ### `dpkg` source package: `orc=1:0.4.31-1`
 
