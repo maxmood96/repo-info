@@ -66,13 +66,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.3.6
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.3.6.dsc' apt_2.3.6.dsc 2779 SHA512:946304d409fe9e15b78791f1bf1c78a8a973c47fd699d2ad395cd468232f54ea5685a1bb24ba902422051accda1268ae0e20f07c03ca5ea8a3e8e1055f863057
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.3.6.tar.xz' apt_2.3.6.tar.xz 2200940 SHA512:86b89ddedcb768eba1699272cc1fbbc17d6fc1b080920d54548213e809200cfe04eb128f2c6d2bf04502c3b1f0441a6a63713d816e656e4a593b82dfd823b369
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/2.3.6/
+
 
 ### `dpkg` source package: `attr=1:2.4.48-6build1`
 
@@ -1493,14 +1493,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.36.1-7ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.36.1-7ubuntu2.dsc' util-linux_2.36.1-7ubuntu2.dsc 4496 SHA512:67550fa43b1e87bcfc2d6e840e312259c2e79996bbc533d377338b5491c7517c2c6c8c5ec3ec33bf330f03f213e798df82351977148499132ecddd55b069304b
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.36.1.orig.tar.xz' util-linux_2.36.1.orig.tar.xz 5231880 SHA512:9dfd01ae4c16fa35015dafd222d555988b72e4d1d2fbadd140791b9ef78f84fa8254d4d08dc67cabf41e873338867f19e786b989d708ccfe5161c4f7679bba7a
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.36.1-7ubuntu2.debian.tar.xz' util-linux_2.36.1-7ubuntu2.debian.tar.xz 102024 SHA512:45378c3291b306980b9715e57826035cebb0637807fe62831a842d063fe8faa9f02ca7a1bbfc36d5981a116a249059eb548dfb424d8cb8027da6fc3d7a574079
-```
 
 ### `dpkg` source package: `xxhash=0.8.0-2`
 
