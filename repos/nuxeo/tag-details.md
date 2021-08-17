@@ -21,7 +21,7 @@
 ## `nuxeo:10`
 
 ```console
-$ docker pull nuxeo@sha256:72c566a2372c084a3db9d235b07c59ada4542af9f471775669c4d629637dd439
+$ docker pull nuxeo@sha256:f0add720e3ac4f281178a0fcec27b9294d4cd8f070d6eb4b909757cadd22edde
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -31,153 +31,153 @@ $ docker pull nuxeo@sha256:72c566a2372c084a3db9d235b07c59ada4542af9f471775669c4d
 ### `nuxeo:10` - linux; amd64
 
 ```console
-$ docker pull nuxeo@sha256:eda9f9feca03da9b7aa844e04a8c3788b10724fe08876ad8907602b7c88bfc0f
+$ docker pull nuxeo@sha256:0d69eaf014da0051456e378b902ab7339d72ad254ac6fc5298aae6df39bb467f
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **954.8 MB (954779473 bytes)**  
+-	Total Size: **956.0 MB (956046761 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d0178397d24ec86ce88faf36f108d161cc380afc9d524b1b2629c3d5ef10eaa`
+-	Image ID: `sha256:2e097f46e7e02e52424d2efb7e0cc739938a149528e5892ffb63a1c1febf4e04`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Thu, 10 Sep 2020 00:22:55 GMT
-ADD file:07a6578d6f507bd9c51bdf4fe41402db5dcf3b9fdf51cd4315778c27da1add39 in / 
-# Thu, 10 Sep 2020 00:22:55 GMT
+# Thu, 22 Jul 2021 00:45:30 GMT
+ADD file:e952f6979e4b0ead00b6906db1dd70eb9beb564a04e2f02e2e0cff8614920216 in / 
+# Thu, 22 Jul 2021 00:45:31 GMT
 CMD ["bash"]
-# Thu, 10 Sep 2020 00:59:15 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 00:59:25 GMT
+# Thu, 22 Jul 2021 01:12:14 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 01:12:20 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 10 Sep 2020 00:59:52 GMT
+# Thu, 22 Jul 2021 01:12:38 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-ENV LANG=C.UTF-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:35:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 13:37:22 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
+# Thu, 22 Jul 2021 13:37:23 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 10 Sep 2020 07:05:35 GMT
-RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 10 Sep 2020 07:05:35 GMT
-ENV JAVA_VERSION=8u265
-# Thu, 10 Sep 2020 07:05:47 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | i386:x86-64) downloadUrl=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u265-b01/OpenJDK8U-jdk_x64_linux_8u265b01.tar.gz ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget -O openjdk.tgz.asc "$downloadUrl.sign"; 	wget -O openjdk.tgz "$downloadUrl" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
-# Fri, 11 Sep 2020 05:56:50 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV LANG=C.UTF-8
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV JAVA_VERSION=8u302
+# Thu, 22 Jul 2021 13:37:31 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_8u302b08.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_8u302b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/jre/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
+# Tue, 17 Aug 2021 20:19:11 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Fri, 11 Sep 2020 06:00:14 GMT
+# Tue, 17 Aug 2021 20:22:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libwpd-tools     exiftool     ghostscript     libreoffice     ffmpeg     x264  && rm -rf /var/lib/apt/lists/*
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:34 GMT
 RUN find / -perm 6000 -type f -exec chmod a-s {} \; || true
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_USER=nuxeo
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:00:17 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:01:39 GMT
+# Tue, 17 Aug 2021 20:24:08 GMT
 ARG NUXEO_VERSION=10.10
-# Fri, 11 Sep 2020 06:01:40 GMT
+# Tue, 17 Aug 2021 20:24:08 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip
-# Fri, 11 Sep 2020 06:01:40 GMT
+# Tue, 17 Aug 2021 20:24:08 GMT
 ARG NUXEO_MD5=90ef2ac005020e880b6277510800c30c
-# Fri, 11 Sep 2020 06:01:41 GMT
+# Tue, 17 Aug 2021 20:24:09 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip NUXEO_MD5=90ef2ac005020e880b6277510800c30c NUXEO_VERSION=10.10
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:47 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip NUXEO_MD5=90ef2ac005020e880b6277510800c30c NUXEO_VERSION=10.10
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && if [ $NUXEO_VERSION != "master" ]; then echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -; fi     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && $NUXEO_HOME/bin/nuxeoctl mp-init     && chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:48 GMT
 COPY dir:d28c2b4bdf31f5817cba5496caa3161d743da596ec68186e0c444ede39dd58ac in /opt/nuxeo/server/templates/docker 
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:48 GMT
 COPY file:dbaa7cc62ad81fbafea7350f8e1ec2045fdc4a962bcfd145d777fefaf7205910 in /etc/nuxeo/nuxeo.conf.template 
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:48 GMT
 ENV NUXEO_CONF=/etc/nuxeo/nuxeo.conf
-# Fri, 11 Sep 2020 06:02:04 GMT
+# Tue, 17 Aug 2021 20:24:49 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip NUXEO_MD5=90ef2ac005020e880b6277510800c30c NUXEO_VERSION=10.10
 RUN chown -R 1000:0 /etc/nuxeo && chmod g+rwX /etc/nuxeo && rm -f $NUXEO_HOME/bin/nuxeo.conf     && mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d      && chmod g=u /etc/passwd
-# Fri, 11 Sep 2020 06:02:04 GMT
+# Tue, 17 Aug 2021 20:24:49 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 11 Sep 2020 06:02:04 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 WORKDIR /opt/nuxeo/server
-# Fri, 11 Sep 2020 06:02:05 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 COPY file:97cc30e1ff0452e9f8e463882c4544e2dc446201ab67f037426aee9cbd1e212a in / 
-# Fri, 11 Sep 2020 06:02:06 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 11 Sep 2020 06:02:07 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 EXPOSE 8080
-# Fri, 11 Sep 2020 06:02:07 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 CMD ["nuxeoctl" "console"]
-# Fri, 11 Sep 2020 06:02:08 GMT
+# Tue, 17 Aug 2021 20:24:51 GMT
 USER 1000
 ```
 
 -	Layers:
-	-	`sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8`  
-		Last Modified: Thu, 10 Sep 2020 00:33:42 GMT  
-		Size: 50.4 MB (50395913 bytes)  
+	-	`sha256:627b765e08d177e63c9a202ca4991b711448905b934435c70b7cbd7d4a9c7959`  
+		Last Modified: Thu, 22 Jul 2021 00:50:07 GMT  
+		Size: 50.4 MB (50435626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71e126169501d71bbbd0d3c8d9f35836c41660869fe8432ac606341ed21f7adb`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 7.8 MB (7811567 bytes)  
+	-	`sha256:c040670e5e559fd936db175530ad4c1dd014bd25b2bf25ea19fa20554fe2d736`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 7.8 MB (7832944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 10.0 MB (9996317 bytes)  
+	-	`sha256:073a180f4992853fa3dd8da604e7b041bc8ea92157749d042c0853312f178f6a`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 10.0 MB (9997222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7`  
-		Last Modified: Thu, 10 Sep 2020 01:15:45 GMT  
-		Size: 51.8 MB (51829661 bytes)  
+	-	`sha256:bf76209566d0c8d78df205b09e6e5b52ff7f10cb4e1c03d9336ed7dd2decd919`  
+		Last Modified: Thu, 22 Jul 2021 01:20:16 GMT  
+		Size: 51.8 MB (51841203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:881ad7aafb13e7b4d01adf37fdc16fec20a8a03256fec5d3cc06b729c9046e6e`  
-		Last Modified: Thu, 10 Sep 2020 07:12:39 GMT  
-		Size: 5.3 MB (5284656 bytes)  
+	-	`sha256:f10db7ba7580dd43abbf34313aab51dae288a6ef8dcd1b60860a97679c47942d`  
+		Last Modified: Thu, 22 Jul 2021 13:48:15 GMT  
+		Size: 5.3 MB (5286518 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db6a1d457bc3b2154fd0a9f801cd6ca095cc9ab734ff6590cc1a34ed61447999`  
-		Last Modified: Thu, 10 Sep 2020 07:14:28 GMT  
+	-	`sha256:5e5dee180760796a18d9e387c8d18020519dd17415ccefe9d33eaddde5e73d62`  
+		Last Modified: Thu, 22 Jul 2021 13:50:48 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7fe4ef083504395bddc738ae3dac4ceab462961ea94f350378399740631ae83`  
-		Last Modified: Thu, 10 Sep 2020 07:14:45 GMT  
-		Size: 104.8 MB (104841710 bytes)  
+	-	`sha256:c26c02f721c269f3df6c3d2cbc36042d2e89cd7bc7aeaf24d0603e30e014ae45`  
+		Last Modified: Thu, 22 Jul 2021 13:50:59 GMT  
+		Size: 106.0 MB (105993014 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd2f6ff01f3099d334648f204a9da076cde41f44261946010777e5e1f2b623ca`  
-		Last Modified: Fri, 11 Sep 2020 06:04:45 GMT  
-		Size: 369.0 MB (369048921 bytes)  
+	-	`sha256:242afdbf2696357fcfd3a8bef1ede95de8d1ffe0f62cc70f3e3811b5db598123`  
+		Last Modified: Tue, 17 Aug 2021 20:27:25 GMT  
+		Size: 369.1 MB (369089508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8746559b1318135f28a7b8ca4eabdabd20353769524d1663cd96c1aa5b13d141`  
-		Last Modified: Fri, 11 Sep 2020 06:05:21 GMT  
-		Size: 4.4 KB (4377 bytes)  
+	-	`sha256:926f48868978085795b72e0a3940945de06d17e9b4dd3c4d0412907893a0f743`  
+		Last Modified: Tue, 17 Aug 2021 20:28:15 GMT  
+		Size: 4.4 KB (4405 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a4b506adc036b94661c5cbee03e28958866f49f4ec8ebbb76a67d4572418a2d`  
-		Last Modified: Fri, 11 Sep 2020 06:05:38 GMT  
-		Size: 355.6 MB (355562082 bytes)  
+	-	`sha256:934bb6a35619fa1bbf758c316f8fd542c376b4069ebc4ceb7f8071d09d2830f9`  
+		Last Modified: Tue, 17 Aug 2021 20:28:30 GMT  
+		Size: 355.6 MB (355561906 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bb6c47b2a099c2906044cb428f17949f96e2f7dfa3eaf20c189296c443b3f47`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 276.0 B  
+	-	`sha256:df9fd885dae9f36308cf81103008e9e5c7ac7e08d334540df781fb542bf4029d`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 303.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93fbbf9a6f3c69cb1ec3e316011863bee5389652028b11c522ae80d5fc2ae97f`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 986.0 B  
+	-	`sha256:8f1a891295cc06d5e48cc0cdafd9d52218579e414d010485a25591b46c3d8238`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 1.0 KB (1015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:947193cd6c3c5b2a9f09e1d2bf21fbc29ce5718be7a064b5d048814ffac2fbff`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 1.8 KB (1777 bytes)  
+	-	`sha256:56637d3d0f28641885dc57388cb0b450c672af41f29f5cefd034bc498199b3e6`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 1.9 KB (1866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b62d93ff574d2b2963a721cb4fdd90b5de802025d151905a4eec46a12d0f702`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 1.0 KB (1019 bytes)  
+	-	`sha256:f34945ea5ae6c778a51044ba558a03b0e3a01ff8d0b9ccbac7001959aa1581d3`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 1.0 KB (1020 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:10.10`
 
 ```console
-$ docker pull nuxeo@sha256:72c566a2372c084a3db9d235b07c59ada4542af9f471775669c4d629637dd439
+$ docker pull nuxeo@sha256:f0add720e3ac4f281178a0fcec27b9294d4cd8f070d6eb4b909757cadd22edde
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -187,153 +187,153 @@ $ docker pull nuxeo@sha256:72c566a2372c084a3db9d235b07c59ada4542af9f471775669c4d
 ### `nuxeo:10.10` - linux; amd64
 
 ```console
-$ docker pull nuxeo@sha256:eda9f9feca03da9b7aa844e04a8c3788b10724fe08876ad8907602b7c88bfc0f
+$ docker pull nuxeo@sha256:0d69eaf014da0051456e378b902ab7339d72ad254ac6fc5298aae6df39bb467f
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **954.8 MB (954779473 bytes)**  
+-	Total Size: **956.0 MB (956046761 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d0178397d24ec86ce88faf36f108d161cc380afc9d524b1b2629c3d5ef10eaa`
+-	Image ID: `sha256:2e097f46e7e02e52424d2efb7e0cc739938a149528e5892ffb63a1c1febf4e04`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Thu, 10 Sep 2020 00:22:55 GMT
-ADD file:07a6578d6f507bd9c51bdf4fe41402db5dcf3b9fdf51cd4315778c27da1add39 in / 
-# Thu, 10 Sep 2020 00:22:55 GMT
+# Thu, 22 Jul 2021 00:45:30 GMT
+ADD file:e952f6979e4b0ead00b6906db1dd70eb9beb564a04e2f02e2e0cff8614920216 in / 
+# Thu, 22 Jul 2021 00:45:31 GMT
 CMD ["bash"]
-# Thu, 10 Sep 2020 00:59:15 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 00:59:25 GMT
+# Thu, 22 Jul 2021 01:12:14 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 01:12:20 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 10 Sep 2020 00:59:52 GMT
+# Thu, 22 Jul 2021 01:12:38 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-ENV LANG=C.UTF-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:35:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 13:37:22 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
+# Thu, 22 Jul 2021 13:37:23 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 10 Sep 2020 07:05:35 GMT
-RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 10 Sep 2020 07:05:35 GMT
-ENV JAVA_VERSION=8u265
-# Thu, 10 Sep 2020 07:05:47 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | i386:x86-64) downloadUrl=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u265-b01/OpenJDK8U-jdk_x64_linux_8u265b01.tar.gz ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget -O openjdk.tgz.asc "$downloadUrl.sign"; 	wget -O openjdk.tgz "$downloadUrl" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
-# Fri, 11 Sep 2020 05:56:50 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV LANG=C.UTF-8
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV JAVA_VERSION=8u302
+# Thu, 22 Jul 2021 13:37:31 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_8u302b08.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_8u302b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/jre/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
+# Tue, 17 Aug 2021 20:19:11 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Fri, 11 Sep 2020 06:00:14 GMT
+# Tue, 17 Aug 2021 20:22:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libwpd-tools     exiftool     ghostscript     libreoffice     ffmpeg     x264  && rm -rf /var/lib/apt/lists/*
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:34 GMT
 RUN find / -perm 6000 -type f -exec chmod a-s {} \; || true
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_USER=nuxeo
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:00:17 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:01:39 GMT
+# Tue, 17 Aug 2021 20:24:08 GMT
 ARG NUXEO_VERSION=10.10
-# Fri, 11 Sep 2020 06:01:40 GMT
+# Tue, 17 Aug 2021 20:24:08 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip
-# Fri, 11 Sep 2020 06:01:40 GMT
+# Tue, 17 Aug 2021 20:24:08 GMT
 ARG NUXEO_MD5=90ef2ac005020e880b6277510800c30c
-# Fri, 11 Sep 2020 06:01:41 GMT
+# Tue, 17 Aug 2021 20:24:09 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip NUXEO_MD5=90ef2ac005020e880b6277510800c30c NUXEO_VERSION=10.10
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:47 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip NUXEO_MD5=90ef2ac005020e880b6277510800c30c NUXEO_VERSION=10.10
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && if [ $NUXEO_VERSION != "master" ]; then echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -; fi     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && $NUXEO_HOME/bin/nuxeoctl mp-init     && chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:48 GMT
 COPY dir:d28c2b4bdf31f5817cba5496caa3161d743da596ec68186e0c444ede39dd58ac in /opt/nuxeo/server/templates/docker 
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:48 GMT
 COPY file:dbaa7cc62ad81fbafea7350f8e1ec2045fdc4a962bcfd145d777fefaf7205910 in /etc/nuxeo/nuxeo.conf.template 
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:48 GMT
 ENV NUXEO_CONF=/etc/nuxeo/nuxeo.conf
-# Fri, 11 Sep 2020 06:02:04 GMT
+# Tue, 17 Aug 2021 20:24:49 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip NUXEO_MD5=90ef2ac005020e880b6277510800c30c NUXEO_VERSION=10.10
 RUN chown -R 1000:0 /etc/nuxeo && chmod g+rwX /etc/nuxeo && rm -f $NUXEO_HOME/bin/nuxeo.conf     && mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d      && chmod g=u /etc/passwd
-# Fri, 11 Sep 2020 06:02:04 GMT
+# Tue, 17 Aug 2021 20:24:49 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 11 Sep 2020 06:02:04 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 WORKDIR /opt/nuxeo/server
-# Fri, 11 Sep 2020 06:02:05 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 COPY file:97cc30e1ff0452e9f8e463882c4544e2dc446201ab67f037426aee9cbd1e212a in / 
-# Fri, 11 Sep 2020 06:02:06 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 11 Sep 2020 06:02:07 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 EXPOSE 8080
-# Fri, 11 Sep 2020 06:02:07 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 CMD ["nuxeoctl" "console"]
-# Fri, 11 Sep 2020 06:02:08 GMT
+# Tue, 17 Aug 2021 20:24:51 GMT
 USER 1000
 ```
 
 -	Layers:
-	-	`sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8`  
-		Last Modified: Thu, 10 Sep 2020 00:33:42 GMT  
-		Size: 50.4 MB (50395913 bytes)  
+	-	`sha256:627b765e08d177e63c9a202ca4991b711448905b934435c70b7cbd7d4a9c7959`  
+		Last Modified: Thu, 22 Jul 2021 00:50:07 GMT  
+		Size: 50.4 MB (50435626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71e126169501d71bbbd0d3c8d9f35836c41660869fe8432ac606341ed21f7adb`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 7.8 MB (7811567 bytes)  
+	-	`sha256:c040670e5e559fd936db175530ad4c1dd014bd25b2bf25ea19fa20554fe2d736`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 7.8 MB (7832944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 10.0 MB (9996317 bytes)  
+	-	`sha256:073a180f4992853fa3dd8da604e7b041bc8ea92157749d042c0853312f178f6a`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 10.0 MB (9997222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7`  
-		Last Modified: Thu, 10 Sep 2020 01:15:45 GMT  
-		Size: 51.8 MB (51829661 bytes)  
+	-	`sha256:bf76209566d0c8d78df205b09e6e5b52ff7f10cb4e1c03d9336ed7dd2decd919`  
+		Last Modified: Thu, 22 Jul 2021 01:20:16 GMT  
+		Size: 51.8 MB (51841203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:881ad7aafb13e7b4d01adf37fdc16fec20a8a03256fec5d3cc06b729c9046e6e`  
-		Last Modified: Thu, 10 Sep 2020 07:12:39 GMT  
-		Size: 5.3 MB (5284656 bytes)  
+	-	`sha256:f10db7ba7580dd43abbf34313aab51dae288a6ef8dcd1b60860a97679c47942d`  
+		Last Modified: Thu, 22 Jul 2021 13:48:15 GMT  
+		Size: 5.3 MB (5286518 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db6a1d457bc3b2154fd0a9f801cd6ca095cc9ab734ff6590cc1a34ed61447999`  
-		Last Modified: Thu, 10 Sep 2020 07:14:28 GMT  
+	-	`sha256:5e5dee180760796a18d9e387c8d18020519dd17415ccefe9d33eaddde5e73d62`  
+		Last Modified: Thu, 22 Jul 2021 13:50:48 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7fe4ef083504395bddc738ae3dac4ceab462961ea94f350378399740631ae83`  
-		Last Modified: Thu, 10 Sep 2020 07:14:45 GMT  
-		Size: 104.8 MB (104841710 bytes)  
+	-	`sha256:c26c02f721c269f3df6c3d2cbc36042d2e89cd7bc7aeaf24d0603e30e014ae45`  
+		Last Modified: Thu, 22 Jul 2021 13:50:59 GMT  
+		Size: 106.0 MB (105993014 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd2f6ff01f3099d334648f204a9da076cde41f44261946010777e5e1f2b623ca`  
-		Last Modified: Fri, 11 Sep 2020 06:04:45 GMT  
-		Size: 369.0 MB (369048921 bytes)  
+	-	`sha256:242afdbf2696357fcfd3a8bef1ede95de8d1ffe0f62cc70f3e3811b5db598123`  
+		Last Modified: Tue, 17 Aug 2021 20:27:25 GMT  
+		Size: 369.1 MB (369089508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8746559b1318135f28a7b8ca4eabdabd20353769524d1663cd96c1aa5b13d141`  
-		Last Modified: Fri, 11 Sep 2020 06:05:21 GMT  
-		Size: 4.4 KB (4377 bytes)  
+	-	`sha256:926f48868978085795b72e0a3940945de06d17e9b4dd3c4d0412907893a0f743`  
+		Last Modified: Tue, 17 Aug 2021 20:28:15 GMT  
+		Size: 4.4 KB (4405 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a4b506adc036b94661c5cbee03e28958866f49f4ec8ebbb76a67d4572418a2d`  
-		Last Modified: Fri, 11 Sep 2020 06:05:38 GMT  
-		Size: 355.6 MB (355562082 bytes)  
+	-	`sha256:934bb6a35619fa1bbf758c316f8fd542c376b4069ebc4ceb7f8071d09d2830f9`  
+		Last Modified: Tue, 17 Aug 2021 20:28:30 GMT  
+		Size: 355.6 MB (355561906 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bb6c47b2a099c2906044cb428f17949f96e2f7dfa3eaf20c189296c443b3f47`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 276.0 B  
+	-	`sha256:df9fd885dae9f36308cf81103008e9e5c7ac7e08d334540df781fb542bf4029d`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 303.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93fbbf9a6f3c69cb1ec3e316011863bee5389652028b11c522ae80d5fc2ae97f`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 986.0 B  
+	-	`sha256:8f1a891295cc06d5e48cc0cdafd9d52218579e414d010485a25591b46c3d8238`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 1.0 KB (1015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:947193cd6c3c5b2a9f09e1d2bf21fbc29ce5718be7a064b5d048814ffac2fbff`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 1.8 KB (1777 bytes)  
+	-	`sha256:56637d3d0f28641885dc57388cb0b450c672af41f29f5cefd034bc498199b3e6`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 1.9 KB (1866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b62d93ff574d2b2963a721cb4fdd90b5de802025d151905a4eec46a12d0f702`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 1.0 KB (1019 bytes)  
+	-	`sha256:f34945ea5ae6c778a51044ba558a03b0e3a01ff8d0b9ccbac7001959aa1581d3`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 1.0 KB (1020 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:7`
 
 ```console
-$ docker pull nuxeo@sha256:270d8dc9a1b4c189d89d459dda477265dda5d510438ec91d8783ae8379850dd5
+$ docker pull nuxeo@sha256:f7073dfb563cfa64cde8a0daeff771bc9aa367f29314f5ab3f6914a065f8e78d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -343,148 +343,148 @@ $ docker pull nuxeo@sha256:270d8dc9a1b4c189d89d459dda477265dda5d510438ec91d8783a
 ### `nuxeo:7` - linux; amd64
 
 ```console
-$ docker pull nuxeo@sha256:1ba4ee0ce52572ec9f21a567f38fcb60a00f88658974b4020e49ec41ad5d80f3
+$ docker pull nuxeo@sha256:5c2c0c04a193d0f3fc371f12f1bdb0845dc3e95db9c6c4bf1c71976595924fbf
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.2 GB (1156091715 bytes)**  
+-	Total Size: **1.2 GB (1157346917 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ea1cf007e3f07944caf7c176afc0de702d1ddd31aea33cf5fd3c4fb622c0f9f`
+-	Image ID: `sha256:51c319ff479992c0c04687f06634526c29767ec15acb3ba8cc843a5f3ee11ef0`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Thu, 10 Sep 2020 00:22:55 GMT
-ADD file:07a6578d6f507bd9c51bdf4fe41402db5dcf3b9fdf51cd4315778c27da1add39 in / 
-# Thu, 10 Sep 2020 00:22:55 GMT
+# Thu, 22 Jul 2021 00:45:30 GMT
+ADD file:e952f6979e4b0ead00b6906db1dd70eb9beb564a04e2f02e2e0cff8614920216 in / 
+# Thu, 22 Jul 2021 00:45:31 GMT
 CMD ["bash"]
-# Thu, 10 Sep 2020 00:59:15 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 00:59:25 GMT
+# Thu, 22 Jul 2021 01:12:14 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 01:12:20 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 10 Sep 2020 00:59:52 GMT
+# Thu, 22 Jul 2021 01:12:38 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-ENV LANG=C.UTF-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:35:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 13:37:22 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
+# Thu, 22 Jul 2021 13:37:23 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 10 Sep 2020 07:05:35 GMT
-RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 10 Sep 2020 07:05:35 GMT
-ENV JAVA_VERSION=8u265
-# Thu, 10 Sep 2020 07:05:47 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | i386:x86-64) downloadUrl=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u265-b01/OpenJDK8U-jdk_x64_linux_8u265b01.tar.gz ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget -O openjdk.tgz.asc "$downloadUrl.sign"; 	wget -O openjdk.tgz "$downloadUrl" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
-# Fri, 11 Sep 2020 05:56:50 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV LANG=C.UTF-8
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV JAVA_VERSION=8u302
+# Thu, 22 Jul 2021 13:37:31 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_8u302b08.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_8u302b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/jre/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
+# Tue, 17 Aug 2021 20:19:11 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Fri, 11 Sep 2020 05:58:09 GMT
+# Tue, 17 Aug 2021 20:20:25 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libreoffice     libwpd-tools     exiftool     ghostscript  && rm -rf /var/lib/apt/lists/*
-# Fri, 11 Sep 2020 05:58:11 GMT
+# Tue, 17 Aug 2021 20:20:32 GMT
 RUN find / -perm 6000 -type f -exec chmod a-s {} \; || true
-# Fri, 11 Sep 2020 05:58:11 GMT
+# Tue, 17 Aug 2021 20:20:32 GMT
 ENV NUXEO_USER=nuxeo
-# Fri, 11 Sep 2020 05:58:11 GMT
+# Tue, 17 Aug 2021 20:20:32 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 05:58:12 GMT
+# Tue, 17 Aug 2021 20:20:32 GMT
 ENV HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 05:58:12 GMT
+# Tue, 17 Aug 2021 20:20:32 GMT
 ARG NUXEO_VERSION=7.10
-# Fri, 11 Sep 2020 05:58:12 GMT
+# Tue, 17 Aug 2021 20:20:32 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip
-# Fri, 11 Sep 2020 05:58:12 GMT
+# Tue, 17 Aug 2021 20:20:33 GMT
 ARG NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2
-# Fri, 11 Sep 2020 05:58:12 GMT
+# Tue, 17 Aug 2021 20:20:33 GMT
 ENV LAUNCHER_DEBUG=-Djvmcheck=nofail
-# Fri, 11 Sep 2020 05:58:13 GMT
+# Tue, 17 Aug 2021 20:20:34 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Fri, 11 Sep 2020 05:58:33 GMT
+# Tue, 17 Aug 2021 20:21:11 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh
-# Fri, 11 Sep 2020 05:58:45 GMT
+# Tue, 17 Aug 2021 20:21:16 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Fri, 11 Sep 2020 05:58:46 GMT
+# Tue, 17 Aug 2021 20:21:17 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d     && chmod g=u /etc/passwd
-# Fri, 11 Sep 2020 05:58:46 GMT
+# Tue, 17 Aug 2021 20:21:17 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 11 Sep 2020 05:58:46 GMT
+# Tue, 17 Aug 2021 20:21:17 GMT
 WORKDIR /opt/nuxeo/server
-# Fri, 11 Sep 2020 05:58:46 GMT
+# Tue, 17 Aug 2021 20:21:18 GMT
 COPY file:9560db752e0d728d2bb67749bc399b34de55ac127e1fda9bab6523a33ac2fd8c in / 
-# Fri, 11 Sep 2020 05:58:47 GMT
+# Tue, 17 Aug 2021 20:21:18 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 11 Sep 2020 05:58:47 GMT
+# Tue, 17 Aug 2021 20:21:18 GMT
 EXPOSE 8080
-# Fri, 11 Sep 2020 05:58:47 GMT
+# Tue, 17 Aug 2021 20:21:18 GMT
 CMD ["nuxeoctl" "console"]
-# Fri, 11 Sep 2020 05:58:47 GMT
+# Tue, 17 Aug 2021 20:21:18 GMT
 USER 1000
 ```
 
 -	Layers:
-	-	`sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8`  
-		Last Modified: Thu, 10 Sep 2020 00:33:42 GMT  
-		Size: 50.4 MB (50395913 bytes)  
+	-	`sha256:627b765e08d177e63c9a202ca4991b711448905b934435c70b7cbd7d4a9c7959`  
+		Last Modified: Thu, 22 Jul 2021 00:50:07 GMT  
+		Size: 50.4 MB (50435626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71e126169501d71bbbd0d3c8d9f35836c41660869fe8432ac606341ed21f7adb`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 7.8 MB (7811567 bytes)  
+	-	`sha256:c040670e5e559fd936db175530ad4c1dd014bd25b2bf25ea19fa20554fe2d736`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 7.8 MB (7832944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 10.0 MB (9996317 bytes)  
+	-	`sha256:073a180f4992853fa3dd8da604e7b041bc8ea92157749d042c0853312f178f6a`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 10.0 MB (9997222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7`  
-		Last Modified: Thu, 10 Sep 2020 01:15:45 GMT  
-		Size: 51.8 MB (51829661 bytes)  
+	-	`sha256:bf76209566d0c8d78df205b09e6e5b52ff7f10cb4e1c03d9336ed7dd2decd919`  
+		Last Modified: Thu, 22 Jul 2021 01:20:16 GMT  
+		Size: 51.8 MB (51841203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:881ad7aafb13e7b4d01adf37fdc16fec20a8a03256fec5d3cc06b729c9046e6e`  
-		Last Modified: Thu, 10 Sep 2020 07:12:39 GMT  
-		Size: 5.3 MB (5284656 bytes)  
+	-	`sha256:f10db7ba7580dd43abbf34313aab51dae288a6ef8dcd1b60860a97679c47942d`  
+		Last Modified: Thu, 22 Jul 2021 13:48:15 GMT  
+		Size: 5.3 MB (5286518 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db6a1d457bc3b2154fd0a9f801cd6ca095cc9ab734ff6590cc1a34ed61447999`  
-		Last Modified: Thu, 10 Sep 2020 07:14:28 GMT  
+	-	`sha256:5e5dee180760796a18d9e387c8d18020519dd17415ccefe9d33eaddde5e73d62`  
+		Last Modified: Thu, 22 Jul 2021 13:50:48 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7fe4ef083504395bddc738ae3dac4ceab462961ea94f350378399740631ae83`  
-		Last Modified: Thu, 10 Sep 2020 07:14:45 GMT  
-		Size: 104.8 MB (104841710 bytes)  
+	-	`sha256:c26c02f721c269f3df6c3d2cbc36042d2e89cd7bc7aeaf24d0603e30e014ae45`  
+		Last Modified: Thu, 22 Jul 2021 13:50:59 GMT  
+		Size: 106.0 MB (105993014 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdeef200b5487174bf904a57cc028e36a8fe429fb7adb27c0b4733f0d8ad7380`  
-		Last Modified: Fri, 11 Sep 2020 06:03:23 GMT  
-		Size: 365.0 MB (365007171 bytes)  
+	-	`sha256:5d8731ada868eef4306f06188227faf93eabcc0810fd049b24edbbaa0ff8ff19`  
+		Last Modified: Tue, 17 Aug 2021 20:26:13 GMT  
+		Size: 365.0 MB (365035427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f439a0bc57954b03dcf1d1dbdb92941151b123ed89d09030c1287403cefaef31`  
-		Last Modified: Fri, 11 Sep 2020 06:02:23 GMT  
-		Size: 4.4 KB (4377 bytes)  
+	-	`sha256:f99462f1b83073be58988b3ee14d67a289e09238372a1d673c8898d89cbe6d8c`  
+		Last Modified: Tue, 17 Aug 2021 20:25:17 GMT  
+		Size: 4.4 KB (4407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38e9a2403c0cbebfd07f3102d3b3cf8bba61a29fc6c79540ae3371c05865e185`  
-		Last Modified: Fri, 11 Sep 2020 06:02:42 GMT  
-		Size: 280.5 MB (280457906 bytes)  
+	-	`sha256:74beb3510dc8e77176f8d4ba3d77839e04be7d274462f05fc1261181c3e7063d`  
+		Last Modified: Tue, 17 Aug 2021 20:25:36 GMT  
+		Size: 280.5 MB (280457992 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4699de0601292a4110d6f783697b800064cee9f57d4d1fa382be203e03759e7a`  
-		Last Modified: Fri, 11 Sep 2020 06:02:43 GMT  
-		Size: 280.5 MB (280459890 bytes)  
+	-	`sha256:8bcd94082a7e1849b8e0e3a716b1dae718612b7383cb65e1b19582684230b750`  
+		Last Modified: Tue, 17 Aug 2021 20:25:36 GMT  
+		Size: 280.5 MB (280459929 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e20653d02986f31604e59ec163e75494b522b1dd05f525b2adafb3f94af802b`  
-		Last Modified: Fri, 11 Sep 2020 06:02:23 GMT  
-		Size: 777.0 B  
+	-	`sha256:ff8920e4d1d2e6d1422b18b5bec2c802ca518ef0a5bb7464809c1d126d8cef21`  
+		Last Modified: Tue, 17 Aug 2021 20:25:18 GMT  
+		Size: 865.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d59073d32ab44db9afa331e23395338864ea14d26587ecbe3933a29c12b9c20`  
-		Last Modified: Fri, 11 Sep 2020 06:02:23 GMT  
+	-	`sha256:dab8c13098fbf29b3a7d15587e84eff58f0dea00c74f31506d6523e927ec3b2f`  
+		Last Modified: Tue, 17 Aug 2021 20:25:17 GMT  
 		Size: 1.6 KB (1559 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:7.10`
 
 ```console
-$ docker pull nuxeo@sha256:270d8dc9a1b4c189d89d459dda477265dda5d510438ec91d8783ae8379850dd5
+$ docker pull nuxeo@sha256:f7073dfb563cfa64cde8a0daeff771bc9aa367f29314f5ab3f6914a065f8e78d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -494,148 +494,148 @@ $ docker pull nuxeo@sha256:270d8dc9a1b4c189d89d459dda477265dda5d510438ec91d8783a
 ### `nuxeo:7.10` - linux; amd64
 
 ```console
-$ docker pull nuxeo@sha256:1ba4ee0ce52572ec9f21a567f38fcb60a00f88658974b4020e49ec41ad5d80f3
+$ docker pull nuxeo@sha256:5c2c0c04a193d0f3fc371f12f1bdb0845dc3e95db9c6c4bf1c71976595924fbf
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.2 GB (1156091715 bytes)**  
+-	Total Size: **1.2 GB (1157346917 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ea1cf007e3f07944caf7c176afc0de702d1ddd31aea33cf5fd3c4fb622c0f9f`
+-	Image ID: `sha256:51c319ff479992c0c04687f06634526c29767ec15acb3ba8cc843a5f3ee11ef0`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Thu, 10 Sep 2020 00:22:55 GMT
-ADD file:07a6578d6f507bd9c51bdf4fe41402db5dcf3b9fdf51cd4315778c27da1add39 in / 
-# Thu, 10 Sep 2020 00:22:55 GMT
+# Thu, 22 Jul 2021 00:45:30 GMT
+ADD file:e952f6979e4b0ead00b6906db1dd70eb9beb564a04e2f02e2e0cff8614920216 in / 
+# Thu, 22 Jul 2021 00:45:31 GMT
 CMD ["bash"]
-# Thu, 10 Sep 2020 00:59:15 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 00:59:25 GMT
+# Thu, 22 Jul 2021 01:12:14 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 01:12:20 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 10 Sep 2020 00:59:52 GMT
+# Thu, 22 Jul 2021 01:12:38 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-ENV LANG=C.UTF-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:35:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 13:37:22 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
+# Thu, 22 Jul 2021 13:37:23 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 10 Sep 2020 07:05:35 GMT
-RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 10 Sep 2020 07:05:35 GMT
-ENV JAVA_VERSION=8u265
-# Thu, 10 Sep 2020 07:05:47 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | i386:x86-64) downloadUrl=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u265-b01/OpenJDK8U-jdk_x64_linux_8u265b01.tar.gz ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget -O openjdk.tgz.asc "$downloadUrl.sign"; 	wget -O openjdk.tgz "$downloadUrl" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
-# Fri, 11 Sep 2020 05:56:50 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV LANG=C.UTF-8
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV JAVA_VERSION=8u302
+# Thu, 22 Jul 2021 13:37:31 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_8u302b08.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_8u302b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/jre/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
+# Tue, 17 Aug 2021 20:19:11 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Fri, 11 Sep 2020 05:58:09 GMT
+# Tue, 17 Aug 2021 20:20:25 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libreoffice     libwpd-tools     exiftool     ghostscript  && rm -rf /var/lib/apt/lists/*
-# Fri, 11 Sep 2020 05:58:11 GMT
+# Tue, 17 Aug 2021 20:20:32 GMT
 RUN find / -perm 6000 -type f -exec chmod a-s {} \; || true
-# Fri, 11 Sep 2020 05:58:11 GMT
+# Tue, 17 Aug 2021 20:20:32 GMT
 ENV NUXEO_USER=nuxeo
-# Fri, 11 Sep 2020 05:58:11 GMT
+# Tue, 17 Aug 2021 20:20:32 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 05:58:12 GMT
+# Tue, 17 Aug 2021 20:20:32 GMT
 ENV HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 05:58:12 GMT
+# Tue, 17 Aug 2021 20:20:32 GMT
 ARG NUXEO_VERSION=7.10
-# Fri, 11 Sep 2020 05:58:12 GMT
+# Tue, 17 Aug 2021 20:20:32 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip
-# Fri, 11 Sep 2020 05:58:12 GMT
+# Tue, 17 Aug 2021 20:20:33 GMT
 ARG NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2
-# Fri, 11 Sep 2020 05:58:12 GMT
+# Tue, 17 Aug 2021 20:20:33 GMT
 ENV LAUNCHER_DEBUG=-Djvmcheck=nofail
-# Fri, 11 Sep 2020 05:58:13 GMT
+# Tue, 17 Aug 2021 20:20:34 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Fri, 11 Sep 2020 05:58:33 GMT
+# Tue, 17 Aug 2021 20:21:11 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh
-# Fri, 11 Sep 2020 05:58:45 GMT
+# Tue, 17 Aug 2021 20:21:16 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Fri, 11 Sep 2020 05:58:46 GMT
+# Tue, 17 Aug 2021 20:21:17 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d     && chmod g=u /etc/passwd
-# Fri, 11 Sep 2020 05:58:46 GMT
+# Tue, 17 Aug 2021 20:21:17 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 11 Sep 2020 05:58:46 GMT
+# Tue, 17 Aug 2021 20:21:17 GMT
 WORKDIR /opt/nuxeo/server
-# Fri, 11 Sep 2020 05:58:46 GMT
+# Tue, 17 Aug 2021 20:21:18 GMT
 COPY file:9560db752e0d728d2bb67749bc399b34de55ac127e1fda9bab6523a33ac2fd8c in / 
-# Fri, 11 Sep 2020 05:58:47 GMT
+# Tue, 17 Aug 2021 20:21:18 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 11 Sep 2020 05:58:47 GMT
+# Tue, 17 Aug 2021 20:21:18 GMT
 EXPOSE 8080
-# Fri, 11 Sep 2020 05:58:47 GMT
+# Tue, 17 Aug 2021 20:21:18 GMT
 CMD ["nuxeoctl" "console"]
-# Fri, 11 Sep 2020 05:58:47 GMT
+# Tue, 17 Aug 2021 20:21:18 GMT
 USER 1000
 ```
 
 -	Layers:
-	-	`sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8`  
-		Last Modified: Thu, 10 Sep 2020 00:33:42 GMT  
-		Size: 50.4 MB (50395913 bytes)  
+	-	`sha256:627b765e08d177e63c9a202ca4991b711448905b934435c70b7cbd7d4a9c7959`  
+		Last Modified: Thu, 22 Jul 2021 00:50:07 GMT  
+		Size: 50.4 MB (50435626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71e126169501d71bbbd0d3c8d9f35836c41660869fe8432ac606341ed21f7adb`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 7.8 MB (7811567 bytes)  
+	-	`sha256:c040670e5e559fd936db175530ad4c1dd014bd25b2bf25ea19fa20554fe2d736`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 7.8 MB (7832944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 10.0 MB (9996317 bytes)  
+	-	`sha256:073a180f4992853fa3dd8da604e7b041bc8ea92157749d042c0853312f178f6a`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 10.0 MB (9997222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7`  
-		Last Modified: Thu, 10 Sep 2020 01:15:45 GMT  
-		Size: 51.8 MB (51829661 bytes)  
+	-	`sha256:bf76209566d0c8d78df205b09e6e5b52ff7f10cb4e1c03d9336ed7dd2decd919`  
+		Last Modified: Thu, 22 Jul 2021 01:20:16 GMT  
+		Size: 51.8 MB (51841203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:881ad7aafb13e7b4d01adf37fdc16fec20a8a03256fec5d3cc06b729c9046e6e`  
-		Last Modified: Thu, 10 Sep 2020 07:12:39 GMT  
-		Size: 5.3 MB (5284656 bytes)  
+	-	`sha256:f10db7ba7580dd43abbf34313aab51dae288a6ef8dcd1b60860a97679c47942d`  
+		Last Modified: Thu, 22 Jul 2021 13:48:15 GMT  
+		Size: 5.3 MB (5286518 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db6a1d457bc3b2154fd0a9f801cd6ca095cc9ab734ff6590cc1a34ed61447999`  
-		Last Modified: Thu, 10 Sep 2020 07:14:28 GMT  
+	-	`sha256:5e5dee180760796a18d9e387c8d18020519dd17415ccefe9d33eaddde5e73d62`  
+		Last Modified: Thu, 22 Jul 2021 13:50:48 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7fe4ef083504395bddc738ae3dac4ceab462961ea94f350378399740631ae83`  
-		Last Modified: Thu, 10 Sep 2020 07:14:45 GMT  
-		Size: 104.8 MB (104841710 bytes)  
+	-	`sha256:c26c02f721c269f3df6c3d2cbc36042d2e89cd7bc7aeaf24d0603e30e014ae45`  
+		Last Modified: Thu, 22 Jul 2021 13:50:59 GMT  
+		Size: 106.0 MB (105993014 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdeef200b5487174bf904a57cc028e36a8fe429fb7adb27c0b4733f0d8ad7380`  
-		Last Modified: Fri, 11 Sep 2020 06:03:23 GMT  
-		Size: 365.0 MB (365007171 bytes)  
+	-	`sha256:5d8731ada868eef4306f06188227faf93eabcc0810fd049b24edbbaa0ff8ff19`  
+		Last Modified: Tue, 17 Aug 2021 20:26:13 GMT  
+		Size: 365.0 MB (365035427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f439a0bc57954b03dcf1d1dbdb92941151b123ed89d09030c1287403cefaef31`  
-		Last Modified: Fri, 11 Sep 2020 06:02:23 GMT  
-		Size: 4.4 KB (4377 bytes)  
+	-	`sha256:f99462f1b83073be58988b3ee14d67a289e09238372a1d673c8898d89cbe6d8c`  
+		Last Modified: Tue, 17 Aug 2021 20:25:17 GMT  
+		Size: 4.4 KB (4407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38e9a2403c0cbebfd07f3102d3b3cf8bba61a29fc6c79540ae3371c05865e185`  
-		Last Modified: Fri, 11 Sep 2020 06:02:42 GMT  
-		Size: 280.5 MB (280457906 bytes)  
+	-	`sha256:74beb3510dc8e77176f8d4ba3d77839e04be7d274462f05fc1261181c3e7063d`  
+		Last Modified: Tue, 17 Aug 2021 20:25:36 GMT  
+		Size: 280.5 MB (280457992 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4699de0601292a4110d6f783697b800064cee9f57d4d1fa382be203e03759e7a`  
-		Last Modified: Fri, 11 Sep 2020 06:02:43 GMT  
-		Size: 280.5 MB (280459890 bytes)  
+	-	`sha256:8bcd94082a7e1849b8e0e3a716b1dae718612b7383cb65e1b19582684230b750`  
+		Last Modified: Tue, 17 Aug 2021 20:25:36 GMT  
+		Size: 280.5 MB (280459929 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e20653d02986f31604e59ec163e75494b522b1dd05f525b2adafb3f94af802b`  
-		Last Modified: Fri, 11 Sep 2020 06:02:23 GMT  
-		Size: 777.0 B  
+	-	`sha256:ff8920e4d1d2e6d1422b18b5bec2c802ca518ef0a5bb7464809c1d126d8cef21`  
+		Last Modified: Tue, 17 Aug 2021 20:25:18 GMT  
+		Size: 865.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d59073d32ab44db9afa331e23395338864ea14d26587ecbe3933a29c12b9c20`  
-		Last Modified: Fri, 11 Sep 2020 06:02:23 GMT  
+	-	`sha256:dab8c13098fbf29b3a7d15587e84eff58f0dea00c74f31506d6523e927ec3b2f`  
+		Last Modified: Tue, 17 Aug 2021 20:25:17 GMT  
 		Size: 1.6 KB (1559 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:8`
 
 ```console
-$ docker pull nuxeo@sha256:da393adc3d0487c36e68bac7d369285301e98b7e0a4bcfde032822518c70a7c3
+$ docker pull nuxeo@sha256:1db6c122fb019cb9b9deb0e9b8d2688c82e79738d440863c5dbdc45f0dcf022a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -645,139 +645,139 @@ $ docker pull nuxeo@sha256:da393adc3d0487c36e68bac7d369285301e98b7e0a4bcfde03282
 ### `nuxeo:8` - linux; amd64
 
 ```console
-$ docker pull nuxeo@sha256:b1518ba670e3022b8f0d10ec17c947974606a0d7f8276c8c7ac76b3e2b6f0a12
+$ docker pull nuxeo@sha256:92ed4623797d7969a54171bd7f10d3cff1f65e90f80b8da0c33767c6141911eb
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **868.8 MB (868840107 bytes)**  
+-	Total Size: **870.1 MB (870107531 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7719bee9e40ead9f8209e43efd85ff4f80dde497392294d29db822ae422d7c28`
+-	Image ID: `sha256:660dcb085c328cf4534f01ae93352b8e33468cde6f5fcfb9645511004331f107`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Thu, 10 Sep 2020 00:22:55 GMT
-ADD file:07a6578d6f507bd9c51bdf4fe41402db5dcf3b9fdf51cd4315778c27da1add39 in / 
-# Thu, 10 Sep 2020 00:22:55 GMT
+# Thu, 22 Jul 2021 00:45:30 GMT
+ADD file:e952f6979e4b0ead00b6906db1dd70eb9beb564a04e2f02e2e0cff8614920216 in / 
+# Thu, 22 Jul 2021 00:45:31 GMT
 CMD ["bash"]
-# Thu, 10 Sep 2020 00:59:15 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 00:59:25 GMT
+# Thu, 22 Jul 2021 01:12:14 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 01:12:20 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 10 Sep 2020 00:59:52 GMT
+# Thu, 22 Jul 2021 01:12:38 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-ENV LANG=C.UTF-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:35:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 13:37:22 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
+# Thu, 22 Jul 2021 13:37:23 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 10 Sep 2020 07:05:35 GMT
-RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 10 Sep 2020 07:05:35 GMT
-ENV JAVA_VERSION=8u265
-# Thu, 10 Sep 2020 07:05:47 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | i386:x86-64) downloadUrl=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u265-b01/OpenJDK8U-jdk_x64_linux_8u265b01.tar.gz ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget -O openjdk.tgz.asc "$downloadUrl.sign"; 	wget -O openjdk.tgz "$downloadUrl" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
-# Fri, 11 Sep 2020 05:56:50 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV LANG=C.UTF-8
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV JAVA_VERSION=8u302
+# Thu, 22 Jul 2021 13:37:31 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_8u302b08.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_8u302b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/jre/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
+# Tue, 17 Aug 2021 20:19:11 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Fri, 11 Sep 2020 06:00:14 GMT
+# Tue, 17 Aug 2021 20:22:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libwpd-tools     exiftool     ghostscript     libreoffice     ffmpeg     x264  && rm -rf /var/lib/apt/lists/*
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:34 GMT
 RUN find / -perm 6000 -type f -exec chmod a-s {} \; || true
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_USER=nuxeo
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:00:17 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:00:17 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ARG NUXEO_VERSION=8.10
-# Fri, 11 Sep 2020 06:00:17 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip
-# Fri, 11 Sep 2020 06:00:17 GMT
+# Tue, 17 Aug 2021 20:22:36 GMT
 ARG NUXEO_MD5=29e67a19bba54099093b51d892926be1
-# Fri, 11 Sep 2020 06:00:18 GMT
+# Tue, 17 Aug 2021 20:22:36 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Fri, 11 Sep 2020 06:00:42 GMT
+# Tue, 17 Aug 2021 20:23:11 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Fri, 11 Sep 2020 06:00:45 GMT
+# Tue, 17 Aug 2021 20:23:12 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d     && chmod g=u /etc/passwd
-# Fri, 11 Sep 2020 06:00:46 GMT
+# Tue, 17 Aug 2021 20:23:12 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 11 Sep 2020 06:00:46 GMT
+# Tue, 17 Aug 2021 20:23:12 GMT
 WORKDIR /opt/nuxeo/server
-# Fri, 11 Sep 2020 06:00:46 GMT
+# Tue, 17 Aug 2021 20:23:13 GMT
 COPY file:bb9febfdc3a76dbd4a80d559b47951e49fca7137ad3b76ce7b7293512f63b257 in / 
-# Fri, 11 Sep 2020 06:00:47 GMT
+# Tue, 17 Aug 2021 20:23:13 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 11 Sep 2020 06:00:47 GMT
+# Tue, 17 Aug 2021 20:23:13 GMT
 EXPOSE 8080
-# Fri, 11 Sep 2020 06:00:47 GMT
+# Tue, 17 Aug 2021 20:23:13 GMT
 CMD ["nuxeoctl" "console"]
-# Fri, 11 Sep 2020 06:00:47 GMT
+# Tue, 17 Aug 2021 20:23:14 GMT
 USER 1000
 ```
 
 -	Layers:
-	-	`sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8`  
-		Last Modified: Thu, 10 Sep 2020 00:33:42 GMT  
-		Size: 50.4 MB (50395913 bytes)  
+	-	`sha256:627b765e08d177e63c9a202ca4991b711448905b934435c70b7cbd7d4a9c7959`  
+		Last Modified: Thu, 22 Jul 2021 00:50:07 GMT  
+		Size: 50.4 MB (50435626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71e126169501d71bbbd0d3c8d9f35836c41660869fe8432ac606341ed21f7adb`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 7.8 MB (7811567 bytes)  
+	-	`sha256:c040670e5e559fd936db175530ad4c1dd014bd25b2bf25ea19fa20554fe2d736`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 7.8 MB (7832944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 10.0 MB (9996317 bytes)  
+	-	`sha256:073a180f4992853fa3dd8da604e7b041bc8ea92157749d042c0853312f178f6a`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 10.0 MB (9997222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7`  
-		Last Modified: Thu, 10 Sep 2020 01:15:45 GMT  
-		Size: 51.8 MB (51829661 bytes)  
+	-	`sha256:bf76209566d0c8d78df205b09e6e5b52ff7f10cb4e1c03d9336ed7dd2decd919`  
+		Last Modified: Thu, 22 Jul 2021 01:20:16 GMT  
+		Size: 51.8 MB (51841203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:881ad7aafb13e7b4d01adf37fdc16fec20a8a03256fec5d3cc06b729c9046e6e`  
-		Last Modified: Thu, 10 Sep 2020 07:12:39 GMT  
-		Size: 5.3 MB (5284656 bytes)  
+	-	`sha256:f10db7ba7580dd43abbf34313aab51dae288a6ef8dcd1b60860a97679c47942d`  
+		Last Modified: Thu, 22 Jul 2021 13:48:15 GMT  
+		Size: 5.3 MB (5286518 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db6a1d457bc3b2154fd0a9f801cd6ca095cc9ab734ff6590cc1a34ed61447999`  
-		Last Modified: Thu, 10 Sep 2020 07:14:28 GMT  
+	-	`sha256:5e5dee180760796a18d9e387c8d18020519dd17415ccefe9d33eaddde5e73d62`  
+		Last Modified: Thu, 22 Jul 2021 13:50:48 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7fe4ef083504395bddc738ae3dac4ceab462961ea94f350378399740631ae83`  
-		Last Modified: Thu, 10 Sep 2020 07:14:45 GMT  
-		Size: 104.8 MB (104841710 bytes)  
+	-	`sha256:c26c02f721c269f3df6c3d2cbc36042d2e89cd7bc7aeaf24d0603e30e014ae45`  
+		Last Modified: Thu, 22 Jul 2021 13:50:59 GMT  
+		Size: 106.0 MB (105993014 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd2f6ff01f3099d334648f204a9da076cde41f44261946010777e5e1f2b623ca`  
-		Last Modified: Fri, 11 Sep 2020 06:04:45 GMT  
-		Size: 369.0 MB (369048921 bytes)  
+	-	`sha256:242afdbf2696357fcfd3a8bef1ede95de8d1ffe0f62cc70f3e3811b5db598123`  
+		Last Modified: Tue, 17 Aug 2021 20:27:25 GMT  
+		Size: 369.1 MB (369089508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47c815bc0010448095a28dcb5a10efefb5f2ec3057d09eb516ac761dd7762d16`  
-		Last Modified: Fri, 11 Sep 2020 06:03:49 GMT  
-		Size: 4.4 KB (4379 bytes)  
+	-	`sha256:511cbb42b2eb439c3c300e48c8b6dc8825d692bc114bef67c3f26cfd1b0c6f4d`  
+		Last Modified: Tue, 17 Aug 2021 20:26:30 GMT  
+		Size: 4.4 KB (4405 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:722804354d71421f1da938c734ef8aa315ced83c72a2f0b97c7f8e0aebeb6985`  
-		Last Modified: Fri, 11 Sep 2020 06:04:04 GMT  
-		Size: 269.6 MB (269624431 bytes)  
+	-	`sha256:eb1c45f4978faf63b3e2a403645853a8bd62adf98cb5c97b375baf6dbbe00aae`  
+		Last Modified: Tue, 17 Aug 2021 20:26:45 GMT  
+		Size: 269.6 MB (269624459 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0aab75368029e1f889f803e51887c844017dddb87d37f507cd648a14dc4ea6ba`  
-		Last Modified: Fri, 11 Sep 2020 06:03:49 GMT  
-		Size: 782.0 B  
+	-	`sha256:7ce5a2be2357908b7d51784fc737ad85fd4f5ed4efe2a4570c0e7b0086d8fa83`  
+		Last Modified: Tue, 17 Aug 2021 20:26:30 GMT  
+		Size: 862.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6de2de84a0dd3c659aa2c3388bb322eb8601c1d8a460260c83575b7a5fd8d29`  
-		Last Modified: Fri, 11 Sep 2020 06:03:48 GMT  
+	-	`sha256:affba5238365261a174513c1770f0975dbe3c6ab71acab769faf3e31894e240d`  
+		Last Modified: Tue, 17 Aug 2021 20:26:30 GMT  
 		Size: 1.6 KB (1559 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:8.10`
 
 ```console
-$ docker pull nuxeo@sha256:da393adc3d0487c36e68bac7d369285301e98b7e0a4bcfde032822518c70a7c3
+$ docker pull nuxeo@sha256:1db6c122fb019cb9b9deb0e9b8d2688c82e79738d440863c5dbdc45f0dcf022a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -787,139 +787,139 @@ $ docker pull nuxeo@sha256:da393adc3d0487c36e68bac7d369285301e98b7e0a4bcfde03282
 ### `nuxeo:8.10` - linux; amd64
 
 ```console
-$ docker pull nuxeo@sha256:b1518ba670e3022b8f0d10ec17c947974606a0d7f8276c8c7ac76b3e2b6f0a12
+$ docker pull nuxeo@sha256:92ed4623797d7969a54171bd7f10d3cff1f65e90f80b8da0c33767c6141911eb
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **868.8 MB (868840107 bytes)**  
+-	Total Size: **870.1 MB (870107531 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7719bee9e40ead9f8209e43efd85ff4f80dde497392294d29db822ae422d7c28`
+-	Image ID: `sha256:660dcb085c328cf4534f01ae93352b8e33468cde6f5fcfb9645511004331f107`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Thu, 10 Sep 2020 00:22:55 GMT
-ADD file:07a6578d6f507bd9c51bdf4fe41402db5dcf3b9fdf51cd4315778c27da1add39 in / 
-# Thu, 10 Sep 2020 00:22:55 GMT
+# Thu, 22 Jul 2021 00:45:30 GMT
+ADD file:e952f6979e4b0ead00b6906db1dd70eb9beb564a04e2f02e2e0cff8614920216 in / 
+# Thu, 22 Jul 2021 00:45:31 GMT
 CMD ["bash"]
-# Thu, 10 Sep 2020 00:59:15 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 00:59:25 GMT
+# Thu, 22 Jul 2021 01:12:14 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 01:12:20 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 10 Sep 2020 00:59:52 GMT
+# Thu, 22 Jul 2021 01:12:38 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-ENV LANG=C.UTF-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:35:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 13:37:22 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
+# Thu, 22 Jul 2021 13:37:23 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 10 Sep 2020 07:05:35 GMT
-RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 10 Sep 2020 07:05:35 GMT
-ENV JAVA_VERSION=8u265
-# Thu, 10 Sep 2020 07:05:47 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | i386:x86-64) downloadUrl=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u265-b01/OpenJDK8U-jdk_x64_linux_8u265b01.tar.gz ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget -O openjdk.tgz.asc "$downloadUrl.sign"; 	wget -O openjdk.tgz "$downloadUrl" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
-# Fri, 11 Sep 2020 05:56:50 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV LANG=C.UTF-8
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV JAVA_VERSION=8u302
+# Thu, 22 Jul 2021 13:37:31 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_8u302b08.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_8u302b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/jre/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
+# Tue, 17 Aug 2021 20:19:11 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Fri, 11 Sep 2020 06:00:14 GMT
+# Tue, 17 Aug 2021 20:22:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libwpd-tools     exiftool     ghostscript     libreoffice     ffmpeg     x264  && rm -rf /var/lib/apt/lists/*
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:34 GMT
 RUN find / -perm 6000 -type f -exec chmod a-s {} \; || true
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_USER=nuxeo
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:00:17 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:00:17 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ARG NUXEO_VERSION=8.10
-# Fri, 11 Sep 2020 06:00:17 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip
-# Fri, 11 Sep 2020 06:00:17 GMT
+# Tue, 17 Aug 2021 20:22:36 GMT
 ARG NUXEO_MD5=29e67a19bba54099093b51d892926be1
-# Fri, 11 Sep 2020 06:00:18 GMT
+# Tue, 17 Aug 2021 20:22:36 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Fri, 11 Sep 2020 06:00:42 GMT
+# Tue, 17 Aug 2021 20:23:11 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Fri, 11 Sep 2020 06:00:45 GMT
+# Tue, 17 Aug 2021 20:23:12 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d     && chmod g=u /etc/passwd
-# Fri, 11 Sep 2020 06:00:46 GMT
+# Tue, 17 Aug 2021 20:23:12 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 11 Sep 2020 06:00:46 GMT
+# Tue, 17 Aug 2021 20:23:12 GMT
 WORKDIR /opt/nuxeo/server
-# Fri, 11 Sep 2020 06:00:46 GMT
+# Tue, 17 Aug 2021 20:23:13 GMT
 COPY file:bb9febfdc3a76dbd4a80d559b47951e49fca7137ad3b76ce7b7293512f63b257 in / 
-# Fri, 11 Sep 2020 06:00:47 GMT
+# Tue, 17 Aug 2021 20:23:13 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 11 Sep 2020 06:00:47 GMT
+# Tue, 17 Aug 2021 20:23:13 GMT
 EXPOSE 8080
-# Fri, 11 Sep 2020 06:00:47 GMT
+# Tue, 17 Aug 2021 20:23:13 GMT
 CMD ["nuxeoctl" "console"]
-# Fri, 11 Sep 2020 06:00:47 GMT
+# Tue, 17 Aug 2021 20:23:14 GMT
 USER 1000
 ```
 
 -	Layers:
-	-	`sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8`  
-		Last Modified: Thu, 10 Sep 2020 00:33:42 GMT  
-		Size: 50.4 MB (50395913 bytes)  
+	-	`sha256:627b765e08d177e63c9a202ca4991b711448905b934435c70b7cbd7d4a9c7959`  
+		Last Modified: Thu, 22 Jul 2021 00:50:07 GMT  
+		Size: 50.4 MB (50435626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71e126169501d71bbbd0d3c8d9f35836c41660869fe8432ac606341ed21f7adb`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 7.8 MB (7811567 bytes)  
+	-	`sha256:c040670e5e559fd936db175530ad4c1dd014bd25b2bf25ea19fa20554fe2d736`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 7.8 MB (7832944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 10.0 MB (9996317 bytes)  
+	-	`sha256:073a180f4992853fa3dd8da604e7b041bc8ea92157749d042c0853312f178f6a`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 10.0 MB (9997222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7`  
-		Last Modified: Thu, 10 Sep 2020 01:15:45 GMT  
-		Size: 51.8 MB (51829661 bytes)  
+	-	`sha256:bf76209566d0c8d78df205b09e6e5b52ff7f10cb4e1c03d9336ed7dd2decd919`  
+		Last Modified: Thu, 22 Jul 2021 01:20:16 GMT  
+		Size: 51.8 MB (51841203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:881ad7aafb13e7b4d01adf37fdc16fec20a8a03256fec5d3cc06b729c9046e6e`  
-		Last Modified: Thu, 10 Sep 2020 07:12:39 GMT  
-		Size: 5.3 MB (5284656 bytes)  
+	-	`sha256:f10db7ba7580dd43abbf34313aab51dae288a6ef8dcd1b60860a97679c47942d`  
+		Last Modified: Thu, 22 Jul 2021 13:48:15 GMT  
+		Size: 5.3 MB (5286518 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db6a1d457bc3b2154fd0a9f801cd6ca095cc9ab734ff6590cc1a34ed61447999`  
-		Last Modified: Thu, 10 Sep 2020 07:14:28 GMT  
+	-	`sha256:5e5dee180760796a18d9e387c8d18020519dd17415ccefe9d33eaddde5e73d62`  
+		Last Modified: Thu, 22 Jul 2021 13:50:48 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7fe4ef083504395bddc738ae3dac4ceab462961ea94f350378399740631ae83`  
-		Last Modified: Thu, 10 Sep 2020 07:14:45 GMT  
-		Size: 104.8 MB (104841710 bytes)  
+	-	`sha256:c26c02f721c269f3df6c3d2cbc36042d2e89cd7bc7aeaf24d0603e30e014ae45`  
+		Last Modified: Thu, 22 Jul 2021 13:50:59 GMT  
+		Size: 106.0 MB (105993014 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd2f6ff01f3099d334648f204a9da076cde41f44261946010777e5e1f2b623ca`  
-		Last Modified: Fri, 11 Sep 2020 06:04:45 GMT  
-		Size: 369.0 MB (369048921 bytes)  
+	-	`sha256:242afdbf2696357fcfd3a8bef1ede95de8d1ffe0f62cc70f3e3811b5db598123`  
+		Last Modified: Tue, 17 Aug 2021 20:27:25 GMT  
+		Size: 369.1 MB (369089508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47c815bc0010448095a28dcb5a10efefb5f2ec3057d09eb516ac761dd7762d16`  
-		Last Modified: Fri, 11 Sep 2020 06:03:49 GMT  
-		Size: 4.4 KB (4379 bytes)  
+	-	`sha256:511cbb42b2eb439c3c300e48c8b6dc8825d692bc114bef67c3f26cfd1b0c6f4d`  
+		Last Modified: Tue, 17 Aug 2021 20:26:30 GMT  
+		Size: 4.4 KB (4405 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:722804354d71421f1da938c734ef8aa315ced83c72a2f0b97c7f8e0aebeb6985`  
-		Last Modified: Fri, 11 Sep 2020 06:04:04 GMT  
-		Size: 269.6 MB (269624431 bytes)  
+	-	`sha256:eb1c45f4978faf63b3e2a403645853a8bd62adf98cb5c97b375baf6dbbe00aae`  
+		Last Modified: Tue, 17 Aug 2021 20:26:45 GMT  
+		Size: 269.6 MB (269624459 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0aab75368029e1f889f803e51887c844017dddb87d37f507cd648a14dc4ea6ba`  
-		Last Modified: Fri, 11 Sep 2020 06:03:49 GMT  
-		Size: 782.0 B  
+	-	`sha256:7ce5a2be2357908b7d51784fc737ad85fd4f5ed4efe2a4570c0e7b0086d8fa83`  
+		Last Modified: Tue, 17 Aug 2021 20:26:30 GMT  
+		Size: 862.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6de2de84a0dd3c659aa2c3388bb322eb8601c1d8a460260c83575b7a5fd8d29`  
-		Last Modified: Fri, 11 Sep 2020 06:03:48 GMT  
+	-	`sha256:affba5238365261a174513c1770f0975dbe3c6ab71acab769faf3e31894e240d`  
+		Last Modified: Tue, 17 Aug 2021 20:26:30 GMT  
 		Size: 1.6 KB (1559 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:9`
 
 ```console
-$ docker pull nuxeo@sha256:6a3acbb899968dffea5d9e6074f90193ae95aec647a7c74c3dbd37346e8a97b8
+$ docker pull nuxeo@sha256:f4a0d36468376dfd8c5bd102810387f21e807b9d14552d5cc0ae1a474ee3ab3b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -929,153 +929,153 @@ $ docker pull nuxeo@sha256:6a3acbb899968dffea5d9e6074f90193ae95aec647a7c74c3dbd3
 ### `nuxeo:9` - linux; amd64
 
 ```console
-$ docker pull nuxeo@sha256:ba901a4fb2ef7508728695c9b6878830508be5aeaf939b73d4f55de0d6ef5664
+$ docker pull nuxeo@sha256:2424ff42d81bf2fd3dcfb06a8ac10d339b2afb58a1d8d815d8820997f3c7e9be
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **984.4 MB (984373768 bytes)**  
+-	Total Size: **985.6 MB (985641465 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2dd145970c37493482b09635f2a684ef3259691c8a305288cb5f633bd328c163`
+-	Image ID: `sha256:40ce92f55d171c18c4a81190e534c7605ccd93e88d1722868d8b0367a28136ea`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Thu, 10 Sep 2020 00:22:55 GMT
-ADD file:07a6578d6f507bd9c51bdf4fe41402db5dcf3b9fdf51cd4315778c27da1add39 in / 
-# Thu, 10 Sep 2020 00:22:55 GMT
+# Thu, 22 Jul 2021 00:45:30 GMT
+ADD file:e952f6979e4b0ead00b6906db1dd70eb9beb564a04e2f02e2e0cff8614920216 in / 
+# Thu, 22 Jul 2021 00:45:31 GMT
 CMD ["bash"]
-# Thu, 10 Sep 2020 00:59:15 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 00:59:25 GMT
+# Thu, 22 Jul 2021 01:12:14 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 01:12:20 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 10 Sep 2020 00:59:52 GMT
+# Thu, 22 Jul 2021 01:12:38 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-ENV LANG=C.UTF-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:35:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 13:37:22 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
+# Thu, 22 Jul 2021 13:37:23 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 10 Sep 2020 07:05:35 GMT
-RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 10 Sep 2020 07:05:35 GMT
-ENV JAVA_VERSION=8u265
-# Thu, 10 Sep 2020 07:05:47 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | i386:x86-64) downloadUrl=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u265-b01/OpenJDK8U-jdk_x64_linux_8u265b01.tar.gz ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget -O openjdk.tgz.asc "$downloadUrl.sign"; 	wget -O openjdk.tgz "$downloadUrl" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
-# Fri, 11 Sep 2020 05:56:50 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV LANG=C.UTF-8
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV JAVA_VERSION=8u302
+# Thu, 22 Jul 2021 13:37:31 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_8u302b08.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_8u302b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/jre/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
+# Tue, 17 Aug 2021 20:19:11 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Fri, 11 Sep 2020 06:00:14 GMT
+# Tue, 17 Aug 2021 20:22:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libwpd-tools     exiftool     ghostscript     libreoffice     ffmpeg     x264  && rm -rf /var/lib/apt/lists/*
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:34 GMT
 RUN find / -perm 6000 -type f -exec chmod a-s {} \; || true
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_USER=nuxeo
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:00:17 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:01:05 GMT
+# Tue, 17 Aug 2021 20:23:17 GMT
 ARG NUXEO_VERSION=9.10
-# Fri, 11 Sep 2020 06:01:05 GMT
+# Tue, 17 Aug 2021 20:23:18 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.10/nuxeo-server-9.10-tomcat.zip
-# Fri, 11 Sep 2020 06:01:05 GMT
+# Tue, 17 Aug 2021 20:23:18 GMT
 ARG NUXEO_MD5=327d23bbd5558565694027b11c0dd82a
-# Fri, 11 Sep 2020 06:01:06 GMT
+# Tue, 17 Aug 2021 20:23:19 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.10/nuxeo-server-9.10-tomcat.zip NUXEO_MD5=327d23bbd5558565694027b11c0dd82a NUXEO_VERSION=9.10
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Fri, 11 Sep 2020 06:01:32 GMT
+# Tue, 17 Aug 2021 20:23:59 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.10/nuxeo-server-9.10-tomcat.zip NUXEO_MD5=327d23bbd5558565694027b11c0dd82a NUXEO_VERSION=9.10
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && if [ $NUXEO_VERSION != "master" ]; then echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -; fi     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && $NUXEO_HOME/bin/nuxeoctl mp-init     && chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Fri, 11 Sep 2020 06:01:32 GMT
+# Tue, 17 Aug 2021 20:24:00 GMT
 COPY dir:1d4b19e1e35500d85eafcc58364498b9325f119ce19917cefc60c7ad98e600e7 in /opt/nuxeo/server/templates/docker 
-# Fri, 11 Sep 2020 06:01:32 GMT
+# Tue, 17 Aug 2021 20:24:00 GMT
 COPY file:8f1eb15b3cc87be8784ed6bc39c958a3a06d1e375bda2ce728f297d14d74d526 in /etc/nuxeo/nuxeo.conf.template 
-# Fri, 11 Sep 2020 06:01:32 GMT
+# Tue, 17 Aug 2021 20:24:00 GMT
 ENV NUXEO_CONF=/etc/nuxeo/nuxeo.conf
-# Fri, 11 Sep 2020 06:01:33 GMT
+# Tue, 17 Aug 2021 20:24:01 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.10/nuxeo-server-9.10-tomcat.zip NUXEO_MD5=327d23bbd5558565694027b11c0dd82a NUXEO_VERSION=9.10
 RUN chown -R 1000:0 /etc/nuxeo && chmod g+rwX /etc/nuxeo && rm -f $NUXEO_HOME/bin/nuxeo.conf     && mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d      && chmod g=u /etc/passwd
-# Fri, 11 Sep 2020 06:01:33 GMT
+# Tue, 17 Aug 2021 20:24:01 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 11 Sep 2020 06:01:34 GMT
+# Tue, 17 Aug 2021 20:24:02 GMT
 WORKDIR /opt/nuxeo/server
-# Fri, 11 Sep 2020 06:01:34 GMT
+# Tue, 17 Aug 2021 20:24:02 GMT
 COPY file:97cc30e1ff0452e9f8e463882c4544e2dc446201ab67f037426aee9cbd1e212a in / 
-# Fri, 11 Sep 2020 06:01:34 GMT
+# Tue, 17 Aug 2021 20:24:02 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 11 Sep 2020 06:01:34 GMT
+# Tue, 17 Aug 2021 20:24:02 GMT
 EXPOSE 8080
-# Fri, 11 Sep 2020 06:01:34 GMT
+# Tue, 17 Aug 2021 20:24:02 GMT
 CMD ["nuxeoctl" "console"]
-# Fri, 11 Sep 2020 06:01:35 GMT
+# Tue, 17 Aug 2021 20:24:03 GMT
 USER 1000
 ```
 
 -	Layers:
-	-	`sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8`  
-		Last Modified: Thu, 10 Sep 2020 00:33:42 GMT  
-		Size: 50.4 MB (50395913 bytes)  
+	-	`sha256:627b765e08d177e63c9a202ca4991b711448905b934435c70b7cbd7d4a9c7959`  
+		Last Modified: Thu, 22 Jul 2021 00:50:07 GMT  
+		Size: 50.4 MB (50435626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71e126169501d71bbbd0d3c8d9f35836c41660869fe8432ac606341ed21f7adb`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 7.8 MB (7811567 bytes)  
+	-	`sha256:c040670e5e559fd936db175530ad4c1dd014bd25b2bf25ea19fa20554fe2d736`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 7.8 MB (7832944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 10.0 MB (9996317 bytes)  
+	-	`sha256:073a180f4992853fa3dd8da604e7b041bc8ea92157749d042c0853312f178f6a`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 10.0 MB (9997222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7`  
-		Last Modified: Thu, 10 Sep 2020 01:15:45 GMT  
-		Size: 51.8 MB (51829661 bytes)  
+	-	`sha256:bf76209566d0c8d78df205b09e6e5b52ff7f10cb4e1c03d9336ed7dd2decd919`  
+		Last Modified: Thu, 22 Jul 2021 01:20:16 GMT  
+		Size: 51.8 MB (51841203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:881ad7aafb13e7b4d01adf37fdc16fec20a8a03256fec5d3cc06b729c9046e6e`  
-		Last Modified: Thu, 10 Sep 2020 07:12:39 GMT  
-		Size: 5.3 MB (5284656 bytes)  
+	-	`sha256:f10db7ba7580dd43abbf34313aab51dae288a6ef8dcd1b60860a97679c47942d`  
+		Last Modified: Thu, 22 Jul 2021 13:48:15 GMT  
+		Size: 5.3 MB (5286518 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db6a1d457bc3b2154fd0a9f801cd6ca095cc9ab734ff6590cc1a34ed61447999`  
-		Last Modified: Thu, 10 Sep 2020 07:14:28 GMT  
+	-	`sha256:5e5dee180760796a18d9e387c8d18020519dd17415ccefe9d33eaddde5e73d62`  
+		Last Modified: Thu, 22 Jul 2021 13:50:48 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7fe4ef083504395bddc738ae3dac4ceab462961ea94f350378399740631ae83`  
-		Last Modified: Thu, 10 Sep 2020 07:14:45 GMT  
-		Size: 104.8 MB (104841710 bytes)  
+	-	`sha256:c26c02f721c269f3df6c3d2cbc36042d2e89cd7bc7aeaf24d0603e30e014ae45`  
+		Last Modified: Thu, 22 Jul 2021 13:50:59 GMT  
+		Size: 106.0 MB (105993014 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd2f6ff01f3099d334648f204a9da076cde41f44261946010777e5e1f2b623ca`  
-		Last Modified: Fri, 11 Sep 2020 06:04:45 GMT  
-		Size: 369.0 MB (369048921 bytes)  
+	-	`sha256:242afdbf2696357fcfd3a8bef1ede95de8d1ffe0f62cc70f3e3811b5db598123`  
+		Last Modified: Tue, 17 Aug 2021 20:27:25 GMT  
+		Size: 369.1 MB (369089508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13bbbfe569acdbef582593f61515723889a47d63635920ad000d7f2dcb42bd9d`  
-		Last Modified: Fri, 11 Sep 2020 06:04:53 GMT  
-		Size: 4.4 KB (4380 bytes)  
+	-	`sha256:f70de5d0fa0716acb29a4db32e1d887c15c99536a85e6afd31c147e2c0a1fe72`  
+		Last Modified: Tue, 17 Aug 2021 20:27:41 GMT  
+		Size: 4.4 KB (4406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbe3d930e6e15e72e4fa1edcc6c049445caef1f3aefda57a5a415d6a0e369a6b`  
-		Last Modified: Fri, 11 Sep 2020 06:05:14 GMT  
-		Size: 385.2 MB (385155987 bytes)  
+	-	`sha256:fcacfa7dcc0fa6ac69758f3aa1c90e6f2ba9bbdbd60500d7fb8b6c5c61381520`  
+		Last Modified: Tue, 17 Aug 2021 20:27:58 GMT  
+		Size: 385.2 MB (385156223 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ca391987e8c7593cff79b5c2317581cced3af2d38e30311a9fc2729124c0ff1`  
-		Last Modified: Fri, 11 Sep 2020 06:04:52 GMT  
-		Size: 610.0 B  
+	-	`sha256:ef6fc2f69c6f616a4053f5c0937ea8d7bdeac51cd39323458047bae907d40219`  
+		Last Modified: Tue, 17 Aug 2021 20:27:39 GMT  
+		Size: 640.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b74ea44b1b10319380c74b60537d9bbe57b336ad33047c5769c053866a3131a7`  
-		Last Modified: Fri, 11 Sep 2020 06:04:52 GMT  
-		Size: 1.0 KB (1014 bytes)  
+	-	`sha256:2c54cf161eaedc035eeccb08460414e5aaa23a1bc24b68f487f7cdfff9c75a17`  
+		Last Modified: Tue, 17 Aug 2021 20:27:39 GMT  
+		Size: 1.0 KB (1039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8eb7704c9e7839cf1c96da9cead0c069972c579a206462d1d099f1b720f95c43`  
-		Last Modified: Fri, 11 Sep 2020 06:04:52 GMT  
-		Size: 1.8 KB (1802 bytes)  
+	-	`sha256:ca0b37a63376003181372f0991b853f72547687da7a741fe190cc9a212e30fb9`  
+		Last Modified: Tue, 17 Aug 2021 20:27:40 GMT  
+		Size: 1.9 KB (1891 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e779e85d578abbe6d675c9b81dbda039d5cbbeefe66f56ed699fd051e91534be`  
-		Last Modified: Fri, 11 Sep 2020 06:04:52 GMT  
-		Size: 1.0 KB (1019 bytes)  
+	-	`sha256:043f5faa2287b006e2a7dbbc072d0e16cd0d98311c7d2cd0bfb3c5e4062905cb`  
+		Last Modified: Tue, 17 Aug 2021 20:27:39 GMT  
+		Size: 1.0 KB (1020 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:9.10`
 
 ```console
-$ docker pull nuxeo@sha256:6a3acbb899968dffea5d9e6074f90193ae95aec647a7c74c3dbd37346e8a97b8
+$ docker pull nuxeo@sha256:f4a0d36468376dfd8c5bd102810387f21e807b9d14552d5cc0ae1a474ee3ab3b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1085,153 +1085,153 @@ $ docker pull nuxeo@sha256:6a3acbb899968dffea5d9e6074f90193ae95aec647a7c74c3dbd3
 ### `nuxeo:9.10` - linux; amd64
 
 ```console
-$ docker pull nuxeo@sha256:ba901a4fb2ef7508728695c9b6878830508be5aeaf939b73d4f55de0d6ef5664
+$ docker pull nuxeo@sha256:2424ff42d81bf2fd3dcfb06a8ac10d339b2afb58a1d8d815d8820997f3c7e9be
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **984.4 MB (984373768 bytes)**  
+-	Total Size: **985.6 MB (985641465 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2dd145970c37493482b09635f2a684ef3259691c8a305288cb5f633bd328c163`
+-	Image ID: `sha256:40ce92f55d171c18c4a81190e534c7605ccd93e88d1722868d8b0367a28136ea`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Thu, 10 Sep 2020 00:22:55 GMT
-ADD file:07a6578d6f507bd9c51bdf4fe41402db5dcf3b9fdf51cd4315778c27da1add39 in / 
-# Thu, 10 Sep 2020 00:22:55 GMT
+# Thu, 22 Jul 2021 00:45:30 GMT
+ADD file:e952f6979e4b0ead00b6906db1dd70eb9beb564a04e2f02e2e0cff8614920216 in / 
+# Thu, 22 Jul 2021 00:45:31 GMT
 CMD ["bash"]
-# Thu, 10 Sep 2020 00:59:15 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 00:59:25 GMT
+# Thu, 22 Jul 2021 01:12:14 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 01:12:20 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 10 Sep 2020 00:59:52 GMT
+# Thu, 22 Jul 2021 01:12:38 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-ENV LANG=C.UTF-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:35:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 13:37:22 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
+# Thu, 22 Jul 2021 13:37:23 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 10 Sep 2020 07:05:35 GMT
-RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 10 Sep 2020 07:05:35 GMT
-ENV JAVA_VERSION=8u265
-# Thu, 10 Sep 2020 07:05:47 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | i386:x86-64) downloadUrl=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u265-b01/OpenJDK8U-jdk_x64_linux_8u265b01.tar.gz ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget -O openjdk.tgz.asc "$downloadUrl.sign"; 	wget -O openjdk.tgz "$downloadUrl" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
-# Fri, 11 Sep 2020 05:56:50 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV LANG=C.UTF-8
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV JAVA_VERSION=8u302
+# Thu, 22 Jul 2021 13:37:31 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_8u302b08.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_8u302b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/jre/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
+# Tue, 17 Aug 2021 20:19:11 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Fri, 11 Sep 2020 06:00:14 GMT
+# Tue, 17 Aug 2021 20:22:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libwpd-tools     exiftool     ghostscript     libreoffice     ffmpeg     x264  && rm -rf /var/lib/apt/lists/*
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:34 GMT
 RUN find / -perm 6000 -type f -exec chmod a-s {} \; || true
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_USER=nuxeo
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:00:17 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:01:05 GMT
+# Tue, 17 Aug 2021 20:23:17 GMT
 ARG NUXEO_VERSION=9.10
-# Fri, 11 Sep 2020 06:01:05 GMT
+# Tue, 17 Aug 2021 20:23:18 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.10/nuxeo-server-9.10-tomcat.zip
-# Fri, 11 Sep 2020 06:01:05 GMT
+# Tue, 17 Aug 2021 20:23:18 GMT
 ARG NUXEO_MD5=327d23bbd5558565694027b11c0dd82a
-# Fri, 11 Sep 2020 06:01:06 GMT
+# Tue, 17 Aug 2021 20:23:19 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.10/nuxeo-server-9.10-tomcat.zip NUXEO_MD5=327d23bbd5558565694027b11c0dd82a NUXEO_VERSION=9.10
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Fri, 11 Sep 2020 06:01:32 GMT
+# Tue, 17 Aug 2021 20:23:59 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.10/nuxeo-server-9.10-tomcat.zip NUXEO_MD5=327d23bbd5558565694027b11c0dd82a NUXEO_VERSION=9.10
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && if [ $NUXEO_VERSION != "master" ]; then echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -; fi     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && $NUXEO_HOME/bin/nuxeoctl mp-init     && chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Fri, 11 Sep 2020 06:01:32 GMT
+# Tue, 17 Aug 2021 20:24:00 GMT
 COPY dir:1d4b19e1e35500d85eafcc58364498b9325f119ce19917cefc60c7ad98e600e7 in /opt/nuxeo/server/templates/docker 
-# Fri, 11 Sep 2020 06:01:32 GMT
+# Tue, 17 Aug 2021 20:24:00 GMT
 COPY file:8f1eb15b3cc87be8784ed6bc39c958a3a06d1e375bda2ce728f297d14d74d526 in /etc/nuxeo/nuxeo.conf.template 
-# Fri, 11 Sep 2020 06:01:32 GMT
+# Tue, 17 Aug 2021 20:24:00 GMT
 ENV NUXEO_CONF=/etc/nuxeo/nuxeo.conf
-# Fri, 11 Sep 2020 06:01:33 GMT
+# Tue, 17 Aug 2021 20:24:01 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.10/nuxeo-server-9.10-tomcat.zip NUXEO_MD5=327d23bbd5558565694027b11c0dd82a NUXEO_VERSION=9.10
 RUN chown -R 1000:0 /etc/nuxeo && chmod g+rwX /etc/nuxeo && rm -f $NUXEO_HOME/bin/nuxeo.conf     && mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d      && chmod g=u /etc/passwd
-# Fri, 11 Sep 2020 06:01:33 GMT
+# Tue, 17 Aug 2021 20:24:01 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 11 Sep 2020 06:01:34 GMT
+# Tue, 17 Aug 2021 20:24:02 GMT
 WORKDIR /opt/nuxeo/server
-# Fri, 11 Sep 2020 06:01:34 GMT
+# Tue, 17 Aug 2021 20:24:02 GMT
 COPY file:97cc30e1ff0452e9f8e463882c4544e2dc446201ab67f037426aee9cbd1e212a in / 
-# Fri, 11 Sep 2020 06:01:34 GMT
+# Tue, 17 Aug 2021 20:24:02 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 11 Sep 2020 06:01:34 GMT
+# Tue, 17 Aug 2021 20:24:02 GMT
 EXPOSE 8080
-# Fri, 11 Sep 2020 06:01:34 GMT
+# Tue, 17 Aug 2021 20:24:02 GMT
 CMD ["nuxeoctl" "console"]
-# Fri, 11 Sep 2020 06:01:35 GMT
+# Tue, 17 Aug 2021 20:24:03 GMT
 USER 1000
 ```
 
 -	Layers:
-	-	`sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8`  
-		Last Modified: Thu, 10 Sep 2020 00:33:42 GMT  
-		Size: 50.4 MB (50395913 bytes)  
+	-	`sha256:627b765e08d177e63c9a202ca4991b711448905b934435c70b7cbd7d4a9c7959`  
+		Last Modified: Thu, 22 Jul 2021 00:50:07 GMT  
+		Size: 50.4 MB (50435626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71e126169501d71bbbd0d3c8d9f35836c41660869fe8432ac606341ed21f7adb`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 7.8 MB (7811567 bytes)  
+	-	`sha256:c040670e5e559fd936db175530ad4c1dd014bd25b2bf25ea19fa20554fe2d736`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 7.8 MB (7832944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 10.0 MB (9996317 bytes)  
+	-	`sha256:073a180f4992853fa3dd8da604e7b041bc8ea92157749d042c0853312f178f6a`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 10.0 MB (9997222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7`  
-		Last Modified: Thu, 10 Sep 2020 01:15:45 GMT  
-		Size: 51.8 MB (51829661 bytes)  
+	-	`sha256:bf76209566d0c8d78df205b09e6e5b52ff7f10cb4e1c03d9336ed7dd2decd919`  
+		Last Modified: Thu, 22 Jul 2021 01:20:16 GMT  
+		Size: 51.8 MB (51841203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:881ad7aafb13e7b4d01adf37fdc16fec20a8a03256fec5d3cc06b729c9046e6e`  
-		Last Modified: Thu, 10 Sep 2020 07:12:39 GMT  
-		Size: 5.3 MB (5284656 bytes)  
+	-	`sha256:f10db7ba7580dd43abbf34313aab51dae288a6ef8dcd1b60860a97679c47942d`  
+		Last Modified: Thu, 22 Jul 2021 13:48:15 GMT  
+		Size: 5.3 MB (5286518 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db6a1d457bc3b2154fd0a9f801cd6ca095cc9ab734ff6590cc1a34ed61447999`  
-		Last Modified: Thu, 10 Sep 2020 07:14:28 GMT  
+	-	`sha256:5e5dee180760796a18d9e387c8d18020519dd17415ccefe9d33eaddde5e73d62`  
+		Last Modified: Thu, 22 Jul 2021 13:50:48 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7fe4ef083504395bddc738ae3dac4ceab462961ea94f350378399740631ae83`  
-		Last Modified: Thu, 10 Sep 2020 07:14:45 GMT  
-		Size: 104.8 MB (104841710 bytes)  
+	-	`sha256:c26c02f721c269f3df6c3d2cbc36042d2e89cd7bc7aeaf24d0603e30e014ae45`  
+		Last Modified: Thu, 22 Jul 2021 13:50:59 GMT  
+		Size: 106.0 MB (105993014 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd2f6ff01f3099d334648f204a9da076cde41f44261946010777e5e1f2b623ca`  
-		Last Modified: Fri, 11 Sep 2020 06:04:45 GMT  
-		Size: 369.0 MB (369048921 bytes)  
+	-	`sha256:242afdbf2696357fcfd3a8bef1ede95de8d1ffe0f62cc70f3e3811b5db598123`  
+		Last Modified: Tue, 17 Aug 2021 20:27:25 GMT  
+		Size: 369.1 MB (369089508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13bbbfe569acdbef582593f61515723889a47d63635920ad000d7f2dcb42bd9d`  
-		Last Modified: Fri, 11 Sep 2020 06:04:53 GMT  
-		Size: 4.4 KB (4380 bytes)  
+	-	`sha256:f70de5d0fa0716acb29a4db32e1d887c15c99536a85e6afd31c147e2c0a1fe72`  
+		Last Modified: Tue, 17 Aug 2021 20:27:41 GMT  
+		Size: 4.4 KB (4406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbe3d930e6e15e72e4fa1edcc6c049445caef1f3aefda57a5a415d6a0e369a6b`  
-		Last Modified: Fri, 11 Sep 2020 06:05:14 GMT  
-		Size: 385.2 MB (385155987 bytes)  
+	-	`sha256:fcacfa7dcc0fa6ac69758f3aa1c90e6f2ba9bbdbd60500d7fb8b6c5c61381520`  
+		Last Modified: Tue, 17 Aug 2021 20:27:58 GMT  
+		Size: 385.2 MB (385156223 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ca391987e8c7593cff79b5c2317581cced3af2d38e30311a9fc2729124c0ff1`  
-		Last Modified: Fri, 11 Sep 2020 06:04:52 GMT  
-		Size: 610.0 B  
+	-	`sha256:ef6fc2f69c6f616a4053f5c0937ea8d7bdeac51cd39323458047bae907d40219`  
+		Last Modified: Tue, 17 Aug 2021 20:27:39 GMT  
+		Size: 640.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b74ea44b1b10319380c74b60537d9bbe57b336ad33047c5769c053866a3131a7`  
-		Last Modified: Fri, 11 Sep 2020 06:04:52 GMT  
-		Size: 1.0 KB (1014 bytes)  
+	-	`sha256:2c54cf161eaedc035eeccb08460414e5aaa23a1bc24b68f487f7cdfff9c75a17`  
+		Last Modified: Tue, 17 Aug 2021 20:27:39 GMT  
+		Size: 1.0 KB (1039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8eb7704c9e7839cf1c96da9cead0c069972c579a206462d1d099f1b720f95c43`  
-		Last Modified: Fri, 11 Sep 2020 06:04:52 GMT  
-		Size: 1.8 KB (1802 bytes)  
+	-	`sha256:ca0b37a63376003181372f0991b853f72547687da7a741fe190cc9a212e30fb9`  
+		Last Modified: Tue, 17 Aug 2021 20:27:40 GMT  
+		Size: 1.9 KB (1891 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e779e85d578abbe6d675c9b81dbda039d5cbbeefe66f56ed699fd051e91534be`  
-		Last Modified: Fri, 11 Sep 2020 06:04:52 GMT  
-		Size: 1.0 KB (1019 bytes)  
+	-	`sha256:043f5faa2287b006e2a7dbbc072d0e16cd0d98311c7d2cd0bfb3c5e4062905cb`  
+		Last Modified: Tue, 17 Aug 2021 20:27:39 GMT  
+		Size: 1.0 KB (1020 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:FT`
 
 ```console
-$ docker pull nuxeo@sha256:72c566a2372c084a3db9d235b07c59ada4542af9f471775669c4d629637dd439
+$ docker pull nuxeo@sha256:f0add720e3ac4f281178a0fcec27b9294d4cd8f070d6eb4b909757cadd22edde
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1241,153 +1241,153 @@ $ docker pull nuxeo@sha256:72c566a2372c084a3db9d235b07c59ada4542af9f471775669c4d
 ### `nuxeo:FT` - linux; amd64
 
 ```console
-$ docker pull nuxeo@sha256:eda9f9feca03da9b7aa844e04a8c3788b10724fe08876ad8907602b7c88bfc0f
+$ docker pull nuxeo@sha256:0d69eaf014da0051456e378b902ab7339d72ad254ac6fc5298aae6df39bb467f
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **954.8 MB (954779473 bytes)**  
+-	Total Size: **956.0 MB (956046761 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d0178397d24ec86ce88faf36f108d161cc380afc9d524b1b2629c3d5ef10eaa`
+-	Image ID: `sha256:2e097f46e7e02e52424d2efb7e0cc739938a149528e5892ffb63a1c1febf4e04`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Thu, 10 Sep 2020 00:22:55 GMT
-ADD file:07a6578d6f507bd9c51bdf4fe41402db5dcf3b9fdf51cd4315778c27da1add39 in / 
-# Thu, 10 Sep 2020 00:22:55 GMT
+# Thu, 22 Jul 2021 00:45:30 GMT
+ADD file:e952f6979e4b0ead00b6906db1dd70eb9beb564a04e2f02e2e0cff8614920216 in / 
+# Thu, 22 Jul 2021 00:45:31 GMT
 CMD ["bash"]
-# Thu, 10 Sep 2020 00:59:15 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 00:59:25 GMT
+# Thu, 22 Jul 2021 01:12:14 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 01:12:20 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 10 Sep 2020 00:59:52 GMT
+# Thu, 22 Jul 2021 01:12:38 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-ENV LANG=C.UTF-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:35:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 13:37:22 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
+# Thu, 22 Jul 2021 13:37:23 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 10 Sep 2020 07:05:35 GMT
-RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 10 Sep 2020 07:05:35 GMT
-ENV JAVA_VERSION=8u265
-# Thu, 10 Sep 2020 07:05:47 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | i386:x86-64) downloadUrl=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u265-b01/OpenJDK8U-jdk_x64_linux_8u265b01.tar.gz ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget -O openjdk.tgz.asc "$downloadUrl.sign"; 	wget -O openjdk.tgz "$downloadUrl" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
-# Fri, 11 Sep 2020 05:56:50 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV LANG=C.UTF-8
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV JAVA_VERSION=8u302
+# Thu, 22 Jul 2021 13:37:31 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_8u302b08.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_8u302b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/jre/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
+# Tue, 17 Aug 2021 20:19:11 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Fri, 11 Sep 2020 06:00:14 GMT
+# Tue, 17 Aug 2021 20:22:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libwpd-tools     exiftool     ghostscript     libreoffice     ffmpeg     x264  && rm -rf /var/lib/apt/lists/*
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:34 GMT
 RUN find / -perm 6000 -type f -exec chmod a-s {} \; || true
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_USER=nuxeo
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:00:17 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:01:39 GMT
+# Tue, 17 Aug 2021 20:24:08 GMT
 ARG NUXEO_VERSION=10.10
-# Fri, 11 Sep 2020 06:01:40 GMT
+# Tue, 17 Aug 2021 20:24:08 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip
-# Fri, 11 Sep 2020 06:01:40 GMT
+# Tue, 17 Aug 2021 20:24:08 GMT
 ARG NUXEO_MD5=90ef2ac005020e880b6277510800c30c
-# Fri, 11 Sep 2020 06:01:41 GMT
+# Tue, 17 Aug 2021 20:24:09 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip NUXEO_MD5=90ef2ac005020e880b6277510800c30c NUXEO_VERSION=10.10
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:47 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip NUXEO_MD5=90ef2ac005020e880b6277510800c30c NUXEO_VERSION=10.10
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && if [ $NUXEO_VERSION != "master" ]; then echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -; fi     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && $NUXEO_HOME/bin/nuxeoctl mp-init     && chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:48 GMT
 COPY dir:d28c2b4bdf31f5817cba5496caa3161d743da596ec68186e0c444ede39dd58ac in /opt/nuxeo/server/templates/docker 
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:48 GMT
 COPY file:dbaa7cc62ad81fbafea7350f8e1ec2045fdc4a962bcfd145d777fefaf7205910 in /etc/nuxeo/nuxeo.conf.template 
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:48 GMT
 ENV NUXEO_CONF=/etc/nuxeo/nuxeo.conf
-# Fri, 11 Sep 2020 06:02:04 GMT
+# Tue, 17 Aug 2021 20:24:49 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip NUXEO_MD5=90ef2ac005020e880b6277510800c30c NUXEO_VERSION=10.10
 RUN chown -R 1000:0 /etc/nuxeo && chmod g+rwX /etc/nuxeo && rm -f $NUXEO_HOME/bin/nuxeo.conf     && mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d      && chmod g=u /etc/passwd
-# Fri, 11 Sep 2020 06:02:04 GMT
+# Tue, 17 Aug 2021 20:24:49 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 11 Sep 2020 06:02:04 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 WORKDIR /opt/nuxeo/server
-# Fri, 11 Sep 2020 06:02:05 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 COPY file:97cc30e1ff0452e9f8e463882c4544e2dc446201ab67f037426aee9cbd1e212a in / 
-# Fri, 11 Sep 2020 06:02:06 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 11 Sep 2020 06:02:07 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 EXPOSE 8080
-# Fri, 11 Sep 2020 06:02:07 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 CMD ["nuxeoctl" "console"]
-# Fri, 11 Sep 2020 06:02:08 GMT
+# Tue, 17 Aug 2021 20:24:51 GMT
 USER 1000
 ```
 
 -	Layers:
-	-	`sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8`  
-		Last Modified: Thu, 10 Sep 2020 00:33:42 GMT  
-		Size: 50.4 MB (50395913 bytes)  
+	-	`sha256:627b765e08d177e63c9a202ca4991b711448905b934435c70b7cbd7d4a9c7959`  
+		Last Modified: Thu, 22 Jul 2021 00:50:07 GMT  
+		Size: 50.4 MB (50435626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71e126169501d71bbbd0d3c8d9f35836c41660869fe8432ac606341ed21f7adb`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 7.8 MB (7811567 bytes)  
+	-	`sha256:c040670e5e559fd936db175530ad4c1dd014bd25b2bf25ea19fa20554fe2d736`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 7.8 MB (7832944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 10.0 MB (9996317 bytes)  
+	-	`sha256:073a180f4992853fa3dd8da604e7b041bc8ea92157749d042c0853312f178f6a`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 10.0 MB (9997222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7`  
-		Last Modified: Thu, 10 Sep 2020 01:15:45 GMT  
-		Size: 51.8 MB (51829661 bytes)  
+	-	`sha256:bf76209566d0c8d78df205b09e6e5b52ff7f10cb4e1c03d9336ed7dd2decd919`  
+		Last Modified: Thu, 22 Jul 2021 01:20:16 GMT  
+		Size: 51.8 MB (51841203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:881ad7aafb13e7b4d01adf37fdc16fec20a8a03256fec5d3cc06b729c9046e6e`  
-		Last Modified: Thu, 10 Sep 2020 07:12:39 GMT  
-		Size: 5.3 MB (5284656 bytes)  
+	-	`sha256:f10db7ba7580dd43abbf34313aab51dae288a6ef8dcd1b60860a97679c47942d`  
+		Last Modified: Thu, 22 Jul 2021 13:48:15 GMT  
+		Size: 5.3 MB (5286518 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db6a1d457bc3b2154fd0a9f801cd6ca095cc9ab734ff6590cc1a34ed61447999`  
-		Last Modified: Thu, 10 Sep 2020 07:14:28 GMT  
+	-	`sha256:5e5dee180760796a18d9e387c8d18020519dd17415ccefe9d33eaddde5e73d62`  
+		Last Modified: Thu, 22 Jul 2021 13:50:48 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7fe4ef083504395bddc738ae3dac4ceab462961ea94f350378399740631ae83`  
-		Last Modified: Thu, 10 Sep 2020 07:14:45 GMT  
-		Size: 104.8 MB (104841710 bytes)  
+	-	`sha256:c26c02f721c269f3df6c3d2cbc36042d2e89cd7bc7aeaf24d0603e30e014ae45`  
+		Last Modified: Thu, 22 Jul 2021 13:50:59 GMT  
+		Size: 106.0 MB (105993014 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd2f6ff01f3099d334648f204a9da076cde41f44261946010777e5e1f2b623ca`  
-		Last Modified: Fri, 11 Sep 2020 06:04:45 GMT  
-		Size: 369.0 MB (369048921 bytes)  
+	-	`sha256:242afdbf2696357fcfd3a8bef1ede95de8d1ffe0f62cc70f3e3811b5db598123`  
+		Last Modified: Tue, 17 Aug 2021 20:27:25 GMT  
+		Size: 369.1 MB (369089508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8746559b1318135f28a7b8ca4eabdabd20353769524d1663cd96c1aa5b13d141`  
-		Last Modified: Fri, 11 Sep 2020 06:05:21 GMT  
-		Size: 4.4 KB (4377 bytes)  
+	-	`sha256:926f48868978085795b72e0a3940945de06d17e9b4dd3c4d0412907893a0f743`  
+		Last Modified: Tue, 17 Aug 2021 20:28:15 GMT  
+		Size: 4.4 KB (4405 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a4b506adc036b94661c5cbee03e28958866f49f4ec8ebbb76a67d4572418a2d`  
-		Last Modified: Fri, 11 Sep 2020 06:05:38 GMT  
-		Size: 355.6 MB (355562082 bytes)  
+	-	`sha256:934bb6a35619fa1bbf758c316f8fd542c376b4069ebc4ceb7f8071d09d2830f9`  
+		Last Modified: Tue, 17 Aug 2021 20:28:30 GMT  
+		Size: 355.6 MB (355561906 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bb6c47b2a099c2906044cb428f17949f96e2f7dfa3eaf20c189296c443b3f47`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 276.0 B  
+	-	`sha256:df9fd885dae9f36308cf81103008e9e5c7ac7e08d334540df781fb542bf4029d`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 303.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93fbbf9a6f3c69cb1ec3e316011863bee5389652028b11c522ae80d5fc2ae97f`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 986.0 B  
+	-	`sha256:8f1a891295cc06d5e48cc0cdafd9d52218579e414d010485a25591b46c3d8238`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 1.0 KB (1015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:947193cd6c3c5b2a9f09e1d2bf21fbc29ce5718be7a064b5d048814ffac2fbff`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 1.8 KB (1777 bytes)  
+	-	`sha256:56637d3d0f28641885dc57388cb0b450c672af41f29f5cefd034bc498199b3e6`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 1.9 KB (1866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b62d93ff574d2b2963a721cb4fdd90b5de802025d151905a4eec46a12d0f702`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 1.0 KB (1019 bytes)  
+	-	`sha256:f34945ea5ae6c778a51044ba558a03b0e3a01ff8d0b9ccbac7001959aa1581d3`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 1.0 KB (1020 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:LTS`
 
 ```console
-$ docker pull nuxeo@sha256:72c566a2372c084a3db9d235b07c59ada4542af9f471775669c4d629637dd439
+$ docker pull nuxeo@sha256:f0add720e3ac4f281178a0fcec27b9294d4cd8f070d6eb4b909757cadd22edde
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1397,153 +1397,153 @@ $ docker pull nuxeo@sha256:72c566a2372c084a3db9d235b07c59ada4542af9f471775669c4d
 ### `nuxeo:LTS` - linux; amd64
 
 ```console
-$ docker pull nuxeo@sha256:eda9f9feca03da9b7aa844e04a8c3788b10724fe08876ad8907602b7c88bfc0f
+$ docker pull nuxeo@sha256:0d69eaf014da0051456e378b902ab7339d72ad254ac6fc5298aae6df39bb467f
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **954.8 MB (954779473 bytes)**  
+-	Total Size: **956.0 MB (956046761 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d0178397d24ec86ce88faf36f108d161cc380afc9d524b1b2629c3d5ef10eaa`
+-	Image ID: `sha256:2e097f46e7e02e52424d2efb7e0cc739938a149528e5892ffb63a1c1febf4e04`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Thu, 10 Sep 2020 00:22:55 GMT
-ADD file:07a6578d6f507bd9c51bdf4fe41402db5dcf3b9fdf51cd4315778c27da1add39 in / 
-# Thu, 10 Sep 2020 00:22:55 GMT
+# Thu, 22 Jul 2021 00:45:30 GMT
+ADD file:e952f6979e4b0ead00b6906db1dd70eb9beb564a04e2f02e2e0cff8614920216 in / 
+# Thu, 22 Jul 2021 00:45:31 GMT
 CMD ["bash"]
-# Thu, 10 Sep 2020 00:59:15 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 00:59:25 GMT
+# Thu, 22 Jul 2021 01:12:14 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 01:12:20 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 10 Sep 2020 00:59:52 GMT
+# Thu, 22 Jul 2021 01:12:38 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-ENV LANG=C.UTF-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:35:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 13:37:22 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
+# Thu, 22 Jul 2021 13:37:23 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 10 Sep 2020 07:05:35 GMT
-RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 10 Sep 2020 07:05:35 GMT
-ENV JAVA_VERSION=8u265
-# Thu, 10 Sep 2020 07:05:47 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | i386:x86-64) downloadUrl=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u265-b01/OpenJDK8U-jdk_x64_linux_8u265b01.tar.gz ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget -O openjdk.tgz.asc "$downloadUrl.sign"; 	wget -O openjdk.tgz "$downloadUrl" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
-# Fri, 11 Sep 2020 05:56:50 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV LANG=C.UTF-8
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV JAVA_VERSION=8u302
+# Thu, 22 Jul 2021 13:37:31 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_8u302b08.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_8u302b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/jre/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
+# Tue, 17 Aug 2021 20:19:11 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Fri, 11 Sep 2020 06:00:14 GMT
+# Tue, 17 Aug 2021 20:22:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libwpd-tools     exiftool     ghostscript     libreoffice     ffmpeg     x264  && rm -rf /var/lib/apt/lists/*
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:34 GMT
 RUN find / -perm 6000 -type f -exec chmod a-s {} \; || true
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_USER=nuxeo
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:00:17 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:01:39 GMT
+# Tue, 17 Aug 2021 20:24:08 GMT
 ARG NUXEO_VERSION=10.10
-# Fri, 11 Sep 2020 06:01:40 GMT
+# Tue, 17 Aug 2021 20:24:08 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip
-# Fri, 11 Sep 2020 06:01:40 GMT
+# Tue, 17 Aug 2021 20:24:08 GMT
 ARG NUXEO_MD5=90ef2ac005020e880b6277510800c30c
-# Fri, 11 Sep 2020 06:01:41 GMT
+# Tue, 17 Aug 2021 20:24:09 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip NUXEO_MD5=90ef2ac005020e880b6277510800c30c NUXEO_VERSION=10.10
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:47 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip NUXEO_MD5=90ef2ac005020e880b6277510800c30c NUXEO_VERSION=10.10
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && if [ $NUXEO_VERSION != "master" ]; then echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -; fi     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && $NUXEO_HOME/bin/nuxeoctl mp-init     && chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:48 GMT
 COPY dir:d28c2b4bdf31f5817cba5496caa3161d743da596ec68186e0c444ede39dd58ac in /opt/nuxeo/server/templates/docker 
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:48 GMT
 COPY file:dbaa7cc62ad81fbafea7350f8e1ec2045fdc4a962bcfd145d777fefaf7205910 in /etc/nuxeo/nuxeo.conf.template 
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:48 GMT
 ENV NUXEO_CONF=/etc/nuxeo/nuxeo.conf
-# Fri, 11 Sep 2020 06:02:04 GMT
+# Tue, 17 Aug 2021 20:24:49 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip NUXEO_MD5=90ef2ac005020e880b6277510800c30c NUXEO_VERSION=10.10
 RUN chown -R 1000:0 /etc/nuxeo && chmod g+rwX /etc/nuxeo && rm -f $NUXEO_HOME/bin/nuxeo.conf     && mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d      && chmod g=u /etc/passwd
-# Fri, 11 Sep 2020 06:02:04 GMT
+# Tue, 17 Aug 2021 20:24:49 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 11 Sep 2020 06:02:04 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 WORKDIR /opt/nuxeo/server
-# Fri, 11 Sep 2020 06:02:05 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 COPY file:97cc30e1ff0452e9f8e463882c4544e2dc446201ab67f037426aee9cbd1e212a in / 
-# Fri, 11 Sep 2020 06:02:06 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 11 Sep 2020 06:02:07 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 EXPOSE 8080
-# Fri, 11 Sep 2020 06:02:07 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 CMD ["nuxeoctl" "console"]
-# Fri, 11 Sep 2020 06:02:08 GMT
+# Tue, 17 Aug 2021 20:24:51 GMT
 USER 1000
 ```
 
 -	Layers:
-	-	`sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8`  
-		Last Modified: Thu, 10 Sep 2020 00:33:42 GMT  
-		Size: 50.4 MB (50395913 bytes)  
+	-	`sha256:627b765e08d177e63c9a202ca4991b711448905b934435c70b7cbd7d4a9c7959`  
+		Last Modified: Thu, 22 Jul 2021 00:50:07 GMT  
+		Size: 50.4 MB (50435626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71e126169501d71bbbd0d3c8d9f35836c41660869fe8432ac606341ed21f7adb`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 7.8 MB (7811567 bytes)  
+	-	`sha256:c040670e5e559fd936db175530ad4c1dd014bd25b2bf25ea19fa20554fe2d736`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 7.8 MB (7832944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 10.0 MB (9996317 bytes)  
+	-	`sha256:073a180f4992853fa3dd8da604e7b041bc8ea92157749d042c0853312f178f6a`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 10.0 MB (9997222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7`  
-		Last Modified: Thu, 10 Sep 2020 01:15:45 GMT  
-		Size: 51.8 MB (51829661 bytes)  
+	-	`sha256:bf76209566d0c8d78df205b09e6e5b52ff7f10cb4e1c03d9336ed7dd2decd919`  
+		Last Modified: Thu, 22 Jul 2021 01:20:16 GMT  
+		Size: 51.8 MB (51841203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:881ad7aafb13e7b4d01adf37fdc16fec20a8a03256fec5d3cc06b729c9046e6e`  
-		Last Modified: Thu, 10 Sep 2020 07:12:39 GMT  
-		Size: 5.3 MB (5284656 bytes)  
+	-	`sha256:f10db7ba7580dd43abbf34313aab51dae288a6ef8dcd1b60860a97679c47942d`  
+		Last Modified: Thu, 22 Jul 2021 13:48:15 GMT  
+		Size: 5.3 MB (5286518 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db6a1d457bc3b2154fd0a9f801cd6ca095cc9ab734ff6590cc1a34ed61447999`  
-		Last Modified: Thu, 10 Sep 2020 07:14:28 GMT  
+	-	`sha256:5e5dee180760796a18d9e387c8d18020519dd17415ccefe9d33eaddde5e73d62`  
+		Last Modified: Thu, 22 Jul 2021 13:50:48 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7fe4ef083504395bddc738ae3dac4ceab462961ea94f350378399740631ae83`  
-		Last Modified: Thu, 10 Sep 2020 07:14:45 GMT  
-		Size: 104.8 MB (104841710 bytes)  
+	-	`sha256:c26c02f721c269f3df6c3d2cbc36042d2e89cd7bc7aeaf24d0603e30e014ae45`  
+		Last Modified: Thu, 22 Jul 2021 13:50:59 GMT  
+		Size: 106.0 MB (105993014 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd2f6ff01f3099d334648f204a9da076cde41f44261946010777e5e1f2b623ca`  
-		Last Modified: Fri, 11 Sep 2020 06:04:45 GMT  
-		Size: 369.0 MB (369048921 bytes)  
+	-	`sha256:242afdbf2696357fcfd3a8bef1ede95de8d1ffe0f62cc70f3e3811b5db598123`  
+		Last Modified: Tue, 17 Aug 2021 20:27:25 GMT  
+		Size: 369.1 MB (369089508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8746559b1318135f28a7b8ca4eabdabd20353769524d1663cd96c1aa5b13d141`  
-		Last Modified: Fri, 11 Sep 2020 06:05:21 GMT  
-		Size: 4.4 KB (4377 bytes)  
+	-	`sha256:926f48868978085795b72e0a3940945de06d17e9b4dd3c4d0412907893a0f743`  
+		Last Modified: Tue, 17 Aug 2021 20:28:15 GMT  
+		Size: 4.4 KB (4405 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a4b506adc036b94661c5cbee03e28958866f49f4ec8ebbb76a67d4572418a2d`  
-		Last Modified: Fri, 11 Sep 2020 06:05:38 GMT  
-		Size: 355.6 MB (355562082 bytes)  
+	-	`sha256:934bb6a35619fa1bbf758c316f8fd542c376b4069ebc4ceb7f8071d09d2830f9`  
+		Last Modified: Tue, 17 Aug 2021 20:28:30 GMT  
+		Size: 355.6 MB (355561906 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bb6c47b2a099c2906044cb428f17949f96e2f7dfa3eaf20c189296c443b3f47`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 276.0 B  
+	-	`sha256:df9fd885dae9f36308cf81103008e9e5c7ac7e08d334540df781fb542bf4029d`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 303.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93fbbf9a6f3c69cb1ec3e316011863bee5389652028b11c522ae80d5fc2ae97f`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 986.0 B  
+	-	`sha256:8f1a891295cc06d5e48cc0cdafd9d52218579e414d010485a25591b46c3d8238`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 1.0 KB (1015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:947193cd6c3c5b2a9f09e1d2bf21fbc29ce5718be7a064b5d048814ffac2fbff`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 1.8 KB (1777 bytes)  
+	-	`sha256:56637d3d0f28641885dc57388cb0b450c672af41f29f5cefd034bc498199b3e6`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 1.9 KB (1866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b62d93ff574d2b2963a721cb4fdd90b5de802025d151905a4eec46a12d0f702`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 1.0 KB (1019 bytes)  
+	-	`sha256:f34945ea5ae6c778a51044ba558a03b0e3a01ff8d0b9ccbac7001959aa1581d3`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 1.0 KB (1020 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:LTS-2015`
 
 ```console
-$ docker pull nuxeo@sha256:270d8dc9a1b4c189d89d459dda477265dda5d510438ec91d8783ae8379850dd5
+$ docker pull nuxeo@sha256:f7073dfb563cfa64cde8a0daeff771bc9aa367f29314f5ab3f6914a065f8e78d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1553,148 +1553,148 @@ $ docker pull nuxeo@sha256:270d8dc9a1b4c189d89d459dda477265dda5d510438ec91d8783a
 ### `nuxeo:LTS-2015` - linux; amd64
 
 ```console
-$ docker pull nuxeo@sha256:1ba4ee0ce52572ec9f21a567f38fcb60a00f88658974b4020e49ec41ad5d80f3
+$ docker pull nuxeo@sha256:5c2c0c04a193d0f3fc371f12f1bdb0845dc3e95db9c6c4bf1c71976595924fbf
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.2 GB (1156091715 bytes)**  
+-	Total Size: **1.2 GB (1157346917 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ea1cf007e3f07944caf7c176afc0de702d1ddd31aea33cf5fd3c4fb622c0f9f`
+-	Image ID: `sha256:51c319ff479992c0c04687f06634526c29767ec15acb3ba8cc843a5f3ee11ef0`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Thu, 10 Sep 2020 00:22:55 GMT
-ADD file:07a6578d6f507bd9c51bdf4fe41402db5dcf3b9fdf51cd4315778c27da1add39 in / 
-# Thu, 10 Sep 2020 00:22:55 GMT
+# Thu, 22 Jul 2021 00:45:30 GMT
+ADD file:e952f6979e4b0ead00b6906db1dd70eb9beb564a04e2f02e2e0cff8614920216 in / 
+# Thu, 22 Jul 2021 00:45:31 GMT
 CMD ["bash"]
-# Thu, 10 Sep 2020 00:59:15 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 00:59:25 GMT
+# Thu, 22 Jul 2021 01:12:14 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 01:12:20 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 10 Sep 2020 00:59:52 GMT
+# Thu, 22 Jul 2021 01:12:38 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-ENV LANG=C.UTF-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:35:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 13:37:22 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
+# Thu, 22 Jul 2021 13:37:23 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 10 Sep 2020 07:05:35 GMT
-RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 10 Sep 2020 07:05:35 GMT
-ENV JAVA_VERSION=8u265
-# Thu, 10 Sep 2020 07:05:47 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | i386:x86-64) downloadUrl=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u265-b01/OpenJDK8U-jdk_x64_linux_8u265b01.tar.gz ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget -O openjdk.tgz.asc "$downloadUrl.sign"; 	wget -O openjdk.tgz "$downloadUrl" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
-# Fri, 11 Sep 2020 05:56:50 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV LANG=C.UTF-8
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV JAVA_VERSION=8u302
+# Thu, 22 Jul 2021 13:37:31 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_8u302b08.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_8u302b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/jre/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
+# Tue, 17 Aug 2021 20:19:11 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Fri, 11 Sep 2020 05:58:09 GMT
+# Tue, 17 Aug 2021 20:20:25 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libreoffice     libwpd-tools     exiftool     ghostscript  && rm -rf /var/lib/apt/lists/*
-# Fri, 11 Sep 2020 05:58:11 GMT
+# Tue, 17 Aug 2021 20:20:32 GMT
 RUN find / -perm 6000 -type f -exec chmod a-s {} \; || true
-# Fri, 11 Sep 2020 05:58:11 GMT
+# Tue, 17 Aug 2021 20:20:32 GMT
 ENV NUXEO_USER=nuxeo
-# Fri, 11 Sep 2020 05:58:11 GMT
+# Tue, 17 Aug 2021 20:20:32 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 05:58:12 GMT
+# Tue, 17 Aug 2021 20:20:32 GMT
 ENV HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 05:58:12 GMT
+# Tue, 17 Aug 2021 20:20:32 GMT
 ARG NUXEO_VERSION=7.10
-# Fri, 11 Sep 2020 05:58:12 GMT
+# Tue, 17 Aug 2021 20:20:32 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip
-# Fri, 11 Sep 2020 05:58:12 GMT
+# Tue, 17 Aug 2021 20:20:33 GMT
 ARG NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2
-# Fri, 11 Sep 2020 05:58:12 GMT
+# Tue, 17 Aug 2021 20:20:33 GMT
 ENV LAUNCHER_DEBUG=-Djvmcheck=nofail
-# Fri, 11 Sep 2020 05:58:13 GMT
+# Tue, 17 Aug 2021 20:20:34 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Fri, 11 Sep 2020 05:58:33 GMT
+# Tue, 17 Aug 2021 20:21:11 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh
-# Fri, 11 Sep 2020 05:58:45 GMT
+# Tue, 17 Aug 2021 20:21:16 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Fri, 11 Sep 2020 05:58:46 GMT
+# Tue, 17 Aug 2021 20:21:17 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d     && chmod g=u /etc/passwd
-# Fri, 11 Sep 2020 05:58:46 GMT
+# Tue, 17 Aug 2021 20:21:17 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 11 Sep 2020 05:58:46 GMT
+# Tue, 17 Aug 2021 20:21:17 GMT
 WORKDIR /opt/nuxeo/server
-# Fri, 11 Sep 2020 05:58:46 GMT
+# Tue, 17 Aug 2021 20:21:18 GMT
 COPY file:9560db752e0d728d2bb67749bc399b34de55ac127e1fda9bab6523a33ac2fd8c in / 
-# Fri, 11 Sep 2020 05:58:47 GMT
+# Tue, 17 Aug 2021 20:21:18 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 11 Sep 2020 05:58:47 GMT
+# Tue, 17 Aug 2021 20:21:18 GMT
 EXPOSE 8080
-# Fri, 11 Sep 2020 05:58:47 GMT
+# Tue, 17 Aug 2021 20:21:18 GMT
 CMD ["nuxeoctl" "console"]
-# Fri, 11 Sep 2020 05:58:47 GMT
+# Tue, 17 Aug 2021 20:21:18 GMT
 USER 1000
 ```
 
 -	Layers:
-	-	`sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8`  
-		Last Modified: Thu, 10 Sep 2020 00:33:42 GMT  
-		Size: 50.4 MB (50395913 bytes)  
+	-	`sha256:627b765e08d177e63c9a202ca4991b711448905b934435c70b7cbd7d4a9c7959`  
+		Last Modified: Thu, 22 Jul 2021 00:50:07 GMT  
+		Size: 50.4 MB (50435626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71e126169501d71bbbd0d3c8d9f35836c41660869fe8432ac606341ed21f7adb`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 7.8 MB (7811567 bytes)  
+	-	`sha256:c040670e5e559fd936db175530ad4c1dd014bd25b2bf25ea19fa20554fe2d736`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 7.8 MB (7832944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 10.0 MB (9996317 bytes)  
+	-	`sha256:073a180f4992853fa3dd8da604e7b041bc8ea92157749d042c0853312f178f6a`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 10.0 MB (9997222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7`  
-		Last Modified: Thu, 10 Sep 2020 01:15:45 GMT  
-		Size: 51.8 MB (51829661 bytes)  
+	-	`sha256:bf76209566d0c8d78df205b09e6e5b52ff7f10cb4e1c03d9336ed7dd2decd919`  
+		Last Modified: Thu, 22 Jul 2021 01:20:16 GMT  
+		Size: 51.8 MB (51841203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:881ad7aafb13e7b4d01adf37fdc16fec20a8a03256fec5d3cc06b729c9046e6e`  
-		Last Modified: Thu, 10 Sep 2020 07:12:39 GMT  
-		Size: 5.3 MB (5284656 bytes)  
+	-	`sha256:f10db7ba7580dd43abbf34313aab51dae288a6ef8dcd1b60860a97679c47942d`  
+		Last Modified: Thu, 22 Jul 2021 13:48:15 GMT  
+		Size: 5.3 MB (5286518 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db6a1d457bc3b2154fd0a9f801cd6ca095cc9ab734ff6590cc1a34ed61447999`  
-		Last Modified: Thu, 10 Sep 2020 07:14:28 GMT  
+	-	`sha256:5e5dee180760796a18d9e387c8d18020519dd17415ccefe9d33eaddde5e73d62`  
+		Last Modified: Thu, 22 Jul 2021 13:50:48 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7fe4ef083504395bddc738ae3dac4ceab462961ea94f350378399740631ae83`  
-		Last Modified: Thu, 10 Sep 2020 07:14:45 GMT  
-		Size: 104.8 MB (104841710 bytes)  
+	-	`sha256:c26c02f721c269f3df6c3d2cbc36042d2e89cd7bc7aeaf24d0603e30e014ae45`  
+		Last Modified: Thu, 22 Jul 2021 13:50:59 GMT  
+		Size: 106.0 MB (105993014 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdeef200b5487174bf904a57cc028e36a8fe429fb7adb27c0b4733f0d8ad7380`  
-		Last Modified: Fri, 11 Sep 2020 06:03:23 GMT  
-		Size: 365.0 MB (365007171 bytes)  
+	-	`sha256:5d8731ada868eef4306f06188227faf93eabcc0810fd049b24edbbaa0ff8ff19`  
+		Last Modified: Tue, 17 Aug 2021 20:26:13 GMT  
+		Size: 365.0 MB (365035427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f439a0bc57954b03dcf1d1dbdb92941151b123ed89d09030c1287403cefaef31`  
-		Last Modified: Fri, 11 Sep 2020 06:02:23 GMT  
-		Size: 4.4 KB (4377 bytes)  
+	-	`sha256:f99462f1b83073be58988b3ee14d67a289e09238372a1d673c8898d89cbe6d8c`  
+		Last Modified: Tue, 17 Aug 2021 20:25:17 GMT  
+		Size: 4.4 KB (4407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38e9a2403c0cbebfd07f3102d3b3cf8bba61a29fc6c79540ae3371c05865e185`  
-		Last Modified: Fri, 11 Sep 2020 06:02:42 GMT  
-		Size: 280.5 MB (280457906 bytes)  
+	-	`sha256:74beb3510dc8e77176f8d4ba3d77839e04be7d274462f05fc1261181c3e7063d`  
+		Last Modified: Tue, 17 Aug 2021 20:25:36 GMT  
+		Size: 280.5 MB (280457992 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4699de0601292a4110d6f783697b800064cee9f57d4d1fa382be203e03759e7a`  
-		Last Modified: Fri, 11 Sep 2020 06:02:43 GMT  
-		Size: 280.5 MB (280459890 bytes)  
+	-	`sha256:8bcd94082a7e1849b8e0e3a716b1dae718612b7383cb65e1b19582684230b750`  
+		Last Modified: Tue, 17 Aug 2021 20:25:36 GMT  
+		Size: 280.5 MB (280459929 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e20653d02986f31604e59ec163e75494b522b1dd05f525b2adafb3f94af802b`  
-		Last Modified: Fri, 11 Sep 2020 06:02:23 GMT  
-		Size: 777.0 B  
+	-	`sha256:ff8920e4d1d2e6d1422b18b5bec2c802ca518ef0a5bb7464809c1d126d8cef21`  
+		Last Modified: Tue, 17 Aug 2021 20:25:18 GMT  
+		Size: 865.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d59073d32ab44db9afa331e23395338864ea14d26587ecbe3933a29c12b9c20`  
-		Last Modified: Fri, 11 Sep 2020 06:02:23 GMT  
+	-	`sha256:dab8c13098fbf29b3a7d15587e84eff58f0dea00c74f31506d6523e927ec3b2f`  
+		Last Modified: Tue, 17 Aug 2021 20:25:17 GMT  
 		Size: 1.6 KB (1559 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:LTS-2016`
 
 ```console
-$ docker pull nuxeo@sha256:da393adc3d0487c36e68bac7d369285301e98b7e0a4bcfde032822518c70a7c3
+$ docker pull nuxeo@sha256:1db6c122fb019cb9b9deb0e9b8d2688c82e79738d440863c5dbdc45f0dcf022a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1704,139 +1704,139 @@ $ docker pull nuxeo@sha256:da393adc3d0487c36e68bac7d369285301e98b7e0a4bcfde03282
 ### `nuxeo:LTS-2016` - linux; amd64
 
 ```console
-$ docker pull nuxeo@sha256:b1518ba670e3022b8f0d10ec17c947974606a0d7f8276c8c7ac76b3e2b6f0a12
+$ docker pull nuxeo@sha256:92ed4623797d7969a54171bd7f10d3cff1f65e90f80b8da0c33767c6141911eb
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **868.8 MB (868840107 bytes)**  
+-	Total Size: **870.1 MB (870107531 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7719bee9e40ead9f8209e43efd85ff4f80dde497392294d29db822ae422d7c28`
+-	Image ID: `sha256:660dcb085c328cf4534f01ae93352b8e33468cde6f5fcfb9645511004331f107`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Thu, 10 Sep 2020 00:22:55 GMT
-ADD file:07a6578d6f507bd9c51bdf4fe41402db5dcf3b9fdf51cd4315778c27da1add39 in / 
-# Thu, 10 Sep 2020 00:22:55 GMT
+# Thu, 22 Jul 2021 00:45:30 GMT
+ADD file:e952f6979e4b0ead00b6906db1dd70eb9beb564a04e2f02e2e0cff8614920216 in / 
+# Thu, 22 Jul 2021 00:45:31 GMT
 CMD ["bash"]
-# Thu, 10 Sep 2020 00:59:15 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 00:59:25 GMT
+# Thu, 22 Jul 2021 01:12:14 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 01:12:20 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 10 Sep 2020 00:59:52 GMT
+# Thu, 22 Jul 2021 01:12:38 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-ENV LANG=C.UTF-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:35:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 13:37:22 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
+# Thu, 22 Jul 2021 13:37:23 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 10 Sep 2020 07:05:35 GMT
-RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 10 Sep 2020 07:05:35 GMT
-ENV JAVA_VERSION=8u265
-# Thu, 10 Sep 2020 07:05:47 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | i386:x86-64) downloadUrl=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u265-b01/OpenJDK8U-jdk_x64_linux_8u265b01.tar.gz ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget -O openjdk.tgz.asc "$downloadUrl.sign"; 	wget -O openjdk.tgz "$downloadUrl" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
-# Fri, 11 Sep 2020 05:56:50 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV LANG=C.UTF-8
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV JAVA_VERSION=8u302
+# Thu, 22 Jul 2021 13:37:31 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_8u302b08.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_8u302b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/jre/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
+# Tue, 17 Aug 2021 20:19:11 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Fri, 11 Sep 2020 06:00:14 GMT
+# Tue, 17 Aug 2021 20:22:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libwpd-tools     exiftool     ghostscript     libreoffice     ffmpeg     x264  && rm -rf /var/lib/apt/lists/*
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:34 GMT
 RUN find / -perm 6000 -type f -exec chmod a-s {} \; || true
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_USER=nuxeo
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:00:17 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:00:17 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ARG NUXEO_VERSION=8.10
-# Fri, 11 Sep 2020 06:00:17 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip
-# Fri, 11 Sep 2020 06:00:17 GMT
+# Tue, 17 Aug 2021 20:22:36 GMT
 ARG NUXEO_MD5=29e67a19bba54099093b51d892926be1
-# Fri, 11 Sep 2020 06:00:18 GMT
+# Tue, 17 Aug 2021 20:22:36 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Fri, 11 Sep 2020 06:00:42 GMT
+# Tue, 17 Aug 2021 20:23:11 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Fri, 11 Sep 2020 06:00:45 GMT
+# Tue, 17 Aug 2021 20:23:12 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d     && chmod g=u /etc/passwd
-# Fri, 11 Sep 2020 06:00:46 GMT
+# Tue, 17 Aug 2021 20:23:12 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 11 Sep 2020 06:00:46 GMT
+# Tue, 17 Aug 2021 20:23:12 GMT
 WORKDIR /opt/nuxeo/server
-# Fri, 11 Sep 2020 06:00:46 GMT
+# Tue, 17 Aug 2021 20:23:13 GMT
 COPY file:bb9febfdc3a76dbd4a80d559b47951e49fca7137ad3b76ce7b7293512f63b257 in / 
-# Fri, 11 Sep 2020 06:00:47 GMT
+# Tue, 17 Aug 2021 20:23:13 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 11 Sep 2020 06:00:47 GMT
+# Tue, 17 Aug 2021 20:23:13 GMT
 EXPOSE 8080
-# Fri, 11 Sep 2020 06:00:47 GMT
+# Tue, 17 Aug 2021 20:23:13 GMT
 CMD ["nuxeoctl" "console"]
-# Fri, 11 Sep 2020 06:00:47 GMT
+# Tue, 17 Aug 2021 20:23:14 GMT
 USER 1000
 ```
 
 -	Layers:
-	-	`sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8`  
-		Last Modified: Thu, 10 Sep 2020 00:33:42 GMT  
-		Size: 50.4 MB (50395913 bytes)  
+	-	`sha256:627b765e08d177e63c9a202ca4991b711448905b934435c70b7cbd7d4a9c7959`  
+		Last Modified: Thu, 22 Jul 2021 00:50:07 GMT  
+		Size: 50.4 MB (50435626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71e126169501d71bbbd0d3c8d9f35836c41660869fe8432ac606341ed21f7adb`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 7.8 MB (7811567 bytes)  
+	-	`sha256:c040670e5e559fd936db175530ad4c1dd014bd25b2bf25ea19fa20554fe2d736`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 7.8 MB (7832944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 10.0 MB (9996317 bytes)  
+	-	`sha256:073a180f4992853fa3dd8da604e7b041bc8ea92157749d042c0853312f178f6a`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 10.0 MB (9997222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7`  
-		Last Modified: Thu, 10 Sep 2020 01:15:45 GMT  
-		Size: 51.8 MB (51829661 bytes)  
+	-	`sha256:bf76209566d0c8d78df205b09e6e5b52ff7f10cb4e1c03d9336ed7dd2decd919`  
+		Last Modified: Thu, 22 Jul 2021 01:20:16 GMT  
+		Size: 51.8 MB (51841203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:881ad7aafb13e7b4d01adf37fdc16fec20a8a03256fec5d3cc06b729c9046e6e`  
-		Last Modified: Thu, 10 Sep 2020 07:12:39 GMT  
-		Size: 5.3 MB (5284656 bytes)  
+	-	`sha256:f10db7ba7580dd43abbf34313aab51dae288a6ef8dcd1b60860a97679c47942d`  
+		Last Modified: Thu, 22 Jul 2021 13:48:15 GMT  
+		Size: 5.3 MB (5286518 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db6a1d457bc3b2154fd0a9f801cd6ca095cc9ab734ff6590cc1a34ed61447999`  
-		Last Modified: Thu, 10 Sep 2020 07:14:28 GMT  
+	-	`sha256:5e5dee180760796a18d9e387c8d18020519dd17415ccefe9d33eaddde5e73d62`  
+		Last Modified: Thu, 22 Jul 2021 13:50:48 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7fe4ef083504395bddc738ae3dac4ceab462961ea94f350378399740631ae83`  
-		Last Modified: Thu, 10 Sep 2020 07:14:45 GMT  
-		Size: 104.8 MB (104841710 bytes)  
+	-	`sha256:c26c02f721c269f3df6c3d2cbc36042d2e89cd7bc7aeaf24d0603e30e014ae45`  
+		Last Modified: Thu, 22 Jul 2021 13:50:59 GMT  
+		Size: 106.0 MB (105993014 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd2f6ff01f3099d334648f204a9da076cde41f44261946010777e5e1f2b623ca`  
-		Last Modified: Fri, 11 Sep 2020 06:04:45 GMT  
-		Size: 369.0 MB (369048921 bytes)  
+	-	`sha256:242afdbf2696357fcfd3a8bef1ede95de8d1ffe0f62cc70f3e3811b5db598123`  
+		Last Modified: Tue, 17 Aug 2021 20:27:25 GMT  
+		Size: 369.1 MB (369089508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47c815bc0010448095a28dcb5a10efefb5f2ec3057d09eb516ac761dd7762d16`  
-		Last Modified: Fri, 11 Sep 2020 06:03:49 GMT  
-		Size: 4.4 KB (4379 bytes)  
+	-	`sha256:511cbb42b2eb439c3c300e48c8b6dc8825d692bc114bef67c3f26cfd1b0c6f4d`  
+		Last Modified: Tue, 17 Aug 2021 20:26:30 GMT  
+		Size: 4.4 KB (4405 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:722804354d71421f1da938c734ef8aa315ced83c72a2f0b97c7f8e0aebeb6985`  
-		Last Modified: Fri, 11 Sep 2020 06:04:04 GMT  
-		Size: 269.6 MB (269624431 bytes)  
+	-	`sha256:eb1c45f4978faf63b3e2a403645853a8bd62adf98cb5c97b375baf6dbbe00aae`  
+		Last Modified: Tue, 17 Aug 2021 20:26:45 GMT  
+		Size: 269.6 MB (269624459 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0aab75368029e1f889f803e51887c844017dddb87d37f507cd648a14dc4ea6ba`  
-		Last Modified: Fri, 11 Sep 2020 06:03:49 GMT  
-		Size: 782.0 B  
+	-	`sha256:7ce5a2be2357908b7d51784fc737ad85fd4f5ed4efe2a4570c0e7b0086d8fa83`  
+		Last Modified: Tue, 17 Aug 2021 20:26:30 GMT  
+		Size: 862.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6de2de84a0dd3c659aa2c3388bb322eb8601c1d8a460260c83575b7a5fd8d29`  
-		Last Modified: Fri, 11 Sep 2020 06:03:48 GMT  
+	-	`sha256:affba5238365261a174513c1770f0975dbe3c6ab71acab769faf3e31894e240d`  
+		Last Modified: Tue, 17 Aug 2021 20:26:30 GMT  
 		Size: 1.6 KB (1559 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:LTS-2017`
 
 ```console
-$ docker pull nuxeo@sha256:6a3acbb899968dffea5d9e6074f90193ae95aec647a7c74c3dbd37346e8a97b8
+$ docker pull nuxeo@sha256:f4a0d36468376dfd8c5bd102810387f21e807b9d14552d5cc0ae1a474ee3ab3b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1846,153 +1846,153 @@ $ docker pull nuxeo@sha256:6a3acbb899968dffea5d9e6074f90193ae95aec647a7c74c3dbd3
 ### `nuxeo:LTS-2017` - linux; amd64
 
 ```console
-$ docker pull nuxeo@sha256:ba901a4fb2ef7508728695c9b6878830508be5aeaf939b73d4f55de0d6ef5664
+$ docker pull nuxeo@sha256:2424ff42d81bf2fd3dcfb06a8ac10d339b2afb58a1d8d815d8820997f3c7e9be
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **984.4 MB (984373768 bytes)**  
+-	Total Size: **985.6 MB (985641465 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2dd145970c37493482b09635f2a684ef3259691c8a305288cb5f633bd328c163`
+-	Image ID: `sha256:40ce92f55d171c18c4a81190e534c7605ccd93e88d1722868d8b0367a28136ea`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Thu, 10 Sep 2020 00:22:55 GMT
-ADD file:07a6578d6f507bd9c51bdf4fe41402db5dcf3b9fdf51cd4315778c27da1add39 in / 
-# Thu, 10 Sep 2020 00:22:55 GMT
+# Thu, 22 Jul 2021 00:45:30 GMT
+ADD file:e952f6979e4b0ead00b6906db1dd70eb9beb564a04e2f02e2e0cff8614920216 in / 
+# Thu, 22 Jul 2021 00:45:31 GMT
 CMD ["bash"]
-# Thu, 10 Sep 2020 00:59:15 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 00:59:25 GMT
+# Thu, 22 Jul 2021 01:12:14 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 01:12:20 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 10 Sep 2020 00:59:52 GMT
+# Thu, 22 Jul 2021 01:12:38 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-ENV LANG=C.UTF-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:35:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 13:37:22 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
+# Thu, 22 Jul 2021 13:37:23 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 10 Sep 2020 07:05:35 GMT
-RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 10 Sep 2020 07:05:35 GMT
-ENV JAVA_VERSION=8u265
-# Thu, 10 Sep 2020 07:05:47 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | i386:x86-64) downloadUrl=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u265-b01/OpenJDK8U-jdk_x64_linux_8u265b01.tar.gz ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget -O openjdk.tgz.asc "$downloadUrl.sign"; 	wget -O openjdk.tgz "$downloadUrl" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
-# Fri, 11 Sep 2020 05:56:50 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV LANG=C.UTF-8
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV JAVA_VERSION=8u302
+# Thu, 22 Jul 2021 13:37:31 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_8u302b08.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_8u302b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/jre/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
+# Tue, 17 Aug 2021 20:19:11 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Fri, 11 Sep 2020 06:00:14 GMT
+# Tue, 17 Aug 2021 20:22:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libwpd-tools     exiftool     ghostscript     libreoffice     ffmpeg     x264  && rm -rf /var/lib/apt/lists/*
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:34 GMT
 RUN find / -perm 6000 -type f -exec chmod a-s {} \; || true
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_USER=nuxeo
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:00:17 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:01:05 GMT
+# Tue, 17 Aug 2021 20:23:17 GMT
 ARG NUXEO_VERSION=9.10
-# Fri, 11 Sep 2020 06:01:05 GMT
+# Tue, 17 Aug 2021 20:23:18 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.10/nuxeo-server-9.10-tomcat.zip
-# Fri, 11 Sep 2020 06:01:05 GMT
+# Tue, 17 Aug 2021 20:23:18 GMT
 ARG NUXEO_MD5=327d23bbd5558565694027b11c0dd82a
-# Fri, 11 Sep 2020 06:01:06 GMT
+# Tue, 17 Aug 2021 20:23:19 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.10/nuxeo-server-9.10-tomcat.zip NUXEO_MD5=327d23bbd5558565694027b11c0dd82a NUXEO_VERSION=9.10
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Fri, 11 Sep 2020 06:01:32 GMT
+# Tue, 17 Aug 2021 20:23:59 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.10/nuxeo-server-9.10-tomcat.zip NUXEO_MD5=327d23bbd5558565694027b11c0dd82a NUXEO_VERSION=9.10
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && if [ $NUXEO_VERSION != "master" ]; then echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -; fi     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && $NUXEO_HOME/bin/nuxeoctl mp-init     && chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Fri, 11 Sep 2020 06:01:32 GMT
+# Tue, 17 Aug 2021 20:24:00 GMT
 COPY dir:1d4b19e1e35500d85eafcc58364498b9325f119ce19917cefc60c7ad98e600e7 in /opt/nuxeo/server/templates/docker 
-# Fri, 11 Sep 2020 06:01:32 GMT
+# Tue, 17 Aug 2021 20:24:00 GMT
 COPY file:8f1eb15b3cc87be8784ed6bc39c958a3a06d1e375bda2ce728f297d14d74d526 in /etc/nuxeo/nuxeo.conf.template 
-# Fri, 11 Sep 2020 06:01:32 GMT
+# Tue, 17 Aug 2021 20:24:00 GMT
 ENV NUXEO_CONF=/etc/nuxeo/nuxeo.conf
-# Fri, 11 Sep 2020 06:01:33 GMT
+# Tue, 17 Aug 2021 20:24:01 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.10/nuxeo-server-9.10-tomcat.zip NUXEO_MD5=327d23bbd5558565694027b11c0dd82a NUXEO_VERSION=9.10
 RUN chown -R 1000:0 /etc/nuxeo && chmod g+rwX /etc/nuxeo && rm -f $NUXEO_HOME/bin/nuxeo.conf     && mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d      && chmod g=u /etc/passwd
-# Fri, 11 Sep 2020 06:01:33 GMT
+# Tue, 17 Aug 2021 20:24:01 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 11 Sep 2020 06:01:34 GMT
+# Tue, 17 Aug 2021 20:24:02 GMT
 WORKDIR /opt/nuxeo/server
-# Fri, 11 Sep 2020 06:01:34 GMT
+# Tue, 17 Aug 2021 20:24:02 GMT
 COPY file:97cc30e1ff0452e9f8e463882c4544e2dc446201ab67f037426aee9cbd1e212a in / 
-# Fri, 11 Sep 2020 06:01:34 GMT
+# Tue, 17 Aug 2021 20:24:02 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 11 Sep 2020 06:01:34 GMT
+# Tue, 17 Aug 2021 20:24:02 GMT
 EXPOSE 8080
-# Fri, 11 Sep 2020 06:01:34 GMT
+# Tue, 17 Aug 2021 20:24:02 GMT
 CMD ["nuxeoctl" "console"]
-# Fri, 11 Sep 2020 06:01:35 GMT
+# Tue, 17 Aug 2021 20:24:03 GMT
 USER 1000
 ```
 
 -	Layers:
-	-	`sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8`  
-		Last Modified: Thu, 10 Sep 2020 00:33:42 GMT  
-		Size: 50.4 MB (50395913 bytes)  
+	-	`sha256:627b765e08d177e63c9a202ca4991b711448905b934435c70b7cbd7d4a9c7959`  
+		Last Modified: Thu, 22 Jul 2021 00:50:07 GMT  
+		Size: 50.4 MB (50435626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71e126169501d71bbbd0d3c8d9f35836c41660869fe8432ac606341ed21f7adb`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 7.8 MB (7811567 bytes)  
+	-	`sha256:c040670e5e559fd936db175530ad4c1dd014bd25b2bf25ea19fa20554fe2d736`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 7.8 MB (7832944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 10.0 MB (9996317 bytes)  
+	-	`sha256:073a180f4992853fa3dd8da604e7b041bc8ea92157749d042c0853312f178f6a`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 10.0 MB (9997222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7`  
-		Last Modified: Thu, 10 Sep 2020 01:15:45 GMT  
-		Size: 51.8 MB (51829661 bytes)  
+	-	`sha256:bf76209566d0c8d78df205b09e6e5b52ff7f10cb4e1c03d9336ed7dd2decd919`  
+		Last Modified: Thu, 22 Jul 2021 01:20:16 GMT  
+		Size: 51.8 MB (51841203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:881ad7aafb13e7b4d01adf37fdc16fec20a8a03256fec5d3cc06b729c9046e6e`  
-		Last Modified: Thu, 10 Sep 2020 07:12:39 GMT  
-		Size: 5.3 MB (5284656 bytes)  
+	-	`sha256:f10db7ba7580dd43abbf34313aab51dae288a6ef8dcd1b60860a97679c47942d`  
+		Last Modified: Thu, 22 Jul 2021 13:48:15 GMT  
+		Size: 5.3 MB (5286518 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db6a1d457bc3b2154fd0a9f801cd6ca095cc9ab734ff6590cc1a34ed61447999`  
-		Last Modified: Thu, 10 Sep 2020 07:14:28 GMT  
+	-	`sha256:5e5dee180760796a18d9e387c8d18020519dd17415ccefe9d33eaddde5e73d62`  
+		Last Modified: Thu, 22 Jul 2021 13:50:48 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7fe4ef083504395bddc738ae3dac4ceab462961ea94f350378399740631ae83`  
-		Last Modified: Thu, 10 Sep 2020 07:14:45 GMT  
-		Size: 104.8 MB (104841710 bytes)  
+	-	`sha256:c26c02f721c269f3df6c3d2cbc36042d2e89cd7bc7aeaf24d0603e30e014ae45`  
+		Last Modified: Thu, 22 Jul 2021 13:50:59 GMT  
+		Size: 106.0 MB (105993014 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd2f6ff01f3099d334648f204a9da076cde41f44261946010777e5e1f2b623ca`  
-		Last Modified: Fri, 11 Sep 2020 06:04:45 GMT  
-		Size: 369.0 MB (369048921 bytes)  
+	-	`sha256:242afdbf2696357fcfd3a8bef1ede95de8d1ffe0f62cc70f3e3811b5db598123`  
+		Last Modified: Tue, 17 Aug 2021 20:27:25 GMT  
+		Size: 369.1 MB (369089508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13bbbfe569acdbef582593f61515723889a47d63635920ad000d7f2dcb42bd9d`  
-		Last Modified: Fri, 11 Sep 2020 06:04:53 GMT  
-		Size: 4.4 KB (4380 bytes)  
+	-	`sha256:f70de5d0fa0716acb29a4db32e1d887c15c99536a85e6afd31c147e2c0a1fe72`  
+		Last Modified: Tue, 17 Aug 2021 20:27:41 GMT  
+		Size: 4.4 KB (4406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbe3d930e6e15e72e4fa1edcc6c049445caef1f3aefda57a5a415d6a0e369a6b`  
-		Last Modified: Fri, 11 Sep 2020 06:05:14 GMT  
-		Size: 385.2 MB (385155987 bytes)  
+	-	`sha256:fcacfa7dcc0fa6ac69758f3aa1c90e6f2ba9bbdbd60500d7fb8b6c5c61381520`  
+		Last Modified: Tue, 17 Aug 2021 20:27:58 GMT  
+		Size: 385.2 MB (385156223 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ca391987e8c7593cff79b5c2317581cced3af2d38e30311a9fc2729124c0ff1`  
-		Last Modified: Fri, 11 Sep 2020 06:04:52 GMT  
-		Size: 610.0 B  
+	-	`sha256:ef6fc2f69c6f616a4053f5c0937ea8d7bdeac51cd39323458047bae907d40219`  
+		Last Modified: Tue, 17 Aug 2021 20:27:39 GMT  
+		Size: 640.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b74ea44b1b10319380c74b60537d9bbe57b336ad33047c5769c053866a3131a7`  
-		Last Modified: Fri, 11 Sep 2020 06:04:52 GMT  
-		Size: 1.0 KB (1014 bytes)  
+	-	`sha256:2c54cf161eaedc035eeccb08460414e5aaa23a1bc24b68f487f7cdfff9c75a17`  
+		Last Modified: Tue, 17 Aug 2021 20:27:39 GMT  
+		Size: 1.0 KB (1039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8eb7704c9e7839cf1c96da9cead0c069972c579a206462d1d099f1b720f95c43`  
-		Last Modified: Fri, 11 Sep 2020 06:04:52 GMT  
-		Size: 1.8 KB (1802 bytes)  
+	-	`sha256:ca0b37a63376003181372f0991b853f72547687da7a741fe190cc9a212e30fb9`  
+		Last Modified: Tue, 17 Aug 2021 20:27:40 GMT  
+		Size: 1.9 KB (1891 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e779e85d578abbe6d675c9b81dbda039d5cbbeefe66f56ed699fd051e91534be`  
-		Last Modified: Fri, 11 Sep 2020 06:04:52 GMT  
-		Size: 1.0 KB (1019 bytes)  
+	-	`sha256:043f5faa2287b006e2a7dbbc072d0e16cd0d98311c7d2cd0bfb3c5e4062905cb`  
+		Last Modified: Tue, 17 Aug 2021 20:27:39 GMT  
+		Size: 1.0 KB (1020 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:LTS-2019`
 
 ```console
-$ docker pull nuxeo@sha256:72c566a2372c084a3db9d235b07c59ada4542af9f471775669c4d629637dd439
+$ docker pull nuxeo@sha256:f0add720e3ac4f281178a0fcec27b9294d4cd8f070d6eb4b909757cadd22edde
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2002,153 +2002,153 @@ $ docker pull nuxeo@sha256:72c566a2372c084a3db9d235b07c59ada4542af9f471775669c4d
 ### `nuxeo:LTS-2019` - linux; amd64
 
 ```console
-$ docker pull nuxeo@sha256:eda9f9feca03da9b7aa844e04a8c3788b10724fe08876ad8907602b7c88bfc0f
+$ docker pull nuxeo@sha256:0d69eaf014da0051456e378b902ab7339d72ad254ac6fc5298aae6df39bb467f
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **954.8 MB (954779473 bytes)**  
+-	Total Size: **956.0 MB (956046761 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d0178397d24ec86ce88faf36f108d161cc380afc9d524b1b2629c3d5ef10eaa`
+-	Image ID: `sha256:2e097f46e7e02e52424d2efb7e0cc739938a149528e5892ffb63a1c1febf4e04`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Thu, 10 Sep 2020 00:22:55 GMT
-ADD file:07a6578d6f507bd9c51bdf4fe41402db5dcf3b9fdf51cd4315778c27da1add39 in / 
-# Thu, 10 Sep 2020 00:22:55 GMT
+# Thu, 22 Jul 2021 00:45:30 GMT
+ADD file:e952f6979e4b0ead00b6906db1dd70eb9beb564a04e2f02e2e0cff8614920216 in / 
+# Thu, 22 Jul 2021 00:45:31 GMT
 CMD ["bash"]
-# Thu, 10 Sep 2020 00:59:15 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 00:59:25 GMT
+# Thu, 22 Jul 2021 01:12:14 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 01:12:20 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 10 Sep 2020 00:59:52 GMT
+# Thu, 22 Jul 2021 01:12:38 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-ENV LANG=C.UTF-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:35:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 13:37:22 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
+# Thu, 22 Jul 2021 13:37:23 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 10 Sep 2020 07:05:35 GMT
-RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 10 Sep 2020 07:05:35 GMT
-ENV JAVA_VERSION=8u265
-# Thu, 10 Sep 2020 07:05:47 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | i386:x86-64) downloadUrl=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u265-b01/OpenJDK8U-jdk_x64_linux_8u265b01.tar.gz ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget -O openjdk.tgz.asc "$downloadUrl.sign"; 	wget -O openjdk.tgz "$downloadUrl" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
-# Fri, 11 Sep 2020 05:56:50 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV LANG=C.UTF-8
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV JAVA_VERSION=8u302
+# Thu, 22 Jul 2021 13:37:31 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_8u302b08.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_8u302b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/jre/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
+# Tue, 17 Aug 2021 20:19:11 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Fri, 11 Sep 2020 06:00:14 GMT
+# Tue, 17 Aug 2021 20:22:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libwpd-tools     exiftool     ghostscript     libreoffice     ffmpeg     x264  && rm -rf /var/lib/apt/lists/*
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:34 GMT
 RUN find / -perm 6000 -type f -exec chmod a-s {} \; || true
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_USER=nuxeo
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:00:17 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:01:39 GMT
+# Tue, 17 Aug 2021 20:24:08 GMT
 ARG NUXEO_VERSION=10.10
-# Fri, 11 Sep 2020 06:01:40 GMT
+# Tue, 17 Aug 2021 20:24:08 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip
-# Fri, 11 Sep 2020 06:01:40 GMT
+# Tue, 17 Aug 2021 20:24:08 GMT
 ARG NUXEO_MD5=90ef2ac005020e880b6277510800c30c
-# Fri, 11 Sep 2020 06:01:41 GMT
+# Tue, 17 Aug 2021 20:24:09 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip NUXEO_MD5=90ef2ac005020e880b6277510800c30c NUXEO_VERSION=10.10
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:47 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip NUXEO_MD5=90ef2ac005020e880b6277510800c30c NUXEO_VERSION=10.10
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && if [ $NUXEO_VERSION != "master" ]; then echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -; fi     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && $NUXEO_HOME/bin/nuxeoctl mp-init     && chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:48 GMT
 COPY dir:d28c2b4bdf31f5817cba5496caa3161d743da596ec68186e0c444ede39dd58ac in /opt/nuxeo/server/templates/docker 
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:48 GMT
 COPY file:dbaa7cc62ad81fbafea7350f8e1ec2045fdc4a962bcfd145d777fefaf7205910 in /etc/nuxeo/nuxeo.conf.template 
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:48 GMT
 ENV NUXEO_CONF=/etc/nuxeo/nuxeo.conf
-# Fri, 11 Sep 2020 06:02:04 GMT
+# Tue, 17 Aug 2021 20:24:49 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip NUXEO_MD5=90ef2ac005020e880b6277510800c30c NUXEO_VERSION=10.10
 RUN chown -R 1000:0 /etc/nuxeo && chmod g+rwX /etc/nuxeo && rm -f $NUXEO_HOME/bin/nuxeo.conf     && mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d      && chmod g=u /etc/passwd
-# Fri, 11 Sep 2020 06:02:04 GMT
+# Tue, 17 Aug 2021 20:24:49 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 11 Sep 2020 06:02:04 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 WORKDIR /opt/nuxeo/server
-# Fri, 11 Sep 2020 06:02:05 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 COPY file:97cc30e1ff0452e9f8e463882c4544e2dc446201ab67f037426aee9cbd1e212a in / 
-# Fri, 11 Sep 2020 06:02:06 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 11 Sep 2020 06:02:07 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 EXPOSE 8080
-# Fri, 11 Sep 2020 06:02:07 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 CMD ["nuxeoctl" "console"]
-# Fri, 11 Sep 2020 06:02:08 GMT
+# Tue, 17 Aug 2021 20:24:51 GMT
 USER 1000
 ```
 
 -	Layers:
-	-	`sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8`  
-		Last Modified: Thu, 10 Sep 2020 00:33:42 GMT  
-		Size: 50.4 MB (50395913 bytes)  
+	-	`sha256:627b765e08d177e63c9a202ca4991b711448905b934435c70b7cbd7d4a9c7959`  
+		Last Modified: Thu, 22 Jul 2021 00:50:07 GMT  
+		Size: 50.4 MB (50435626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71e126169501d71bbbd0d3c8d9f35836c41660869fe8432ac606341ed21f7adb`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 7.8 MB (7811567 bytes)  
+	-	`sha256:c040670e5e559fd936db175530ad4c1dd014bd25b2bf25ea19fa20554fe2d736`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 7.8 MB (7832944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 10.0 MB (9996317 bytes)  
+	-	`sha256:073a180f4992853fa3dd8da604e7b041bc8ea92157749d042c0853312f178f6a`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 10.0 MB (9997222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7`  
-		Last Modified: Thu, 10 Sep 2020 01:15:45 GMT  
-		Size: 51.8 MB (51829661 bytes)  
+	-	`sha256:bf76209566d0c8d78df205b09e6e5b52ff7f10cb4e1c03d9336ed7dd2decd919`  
+		Last Modified: Thu, 22 Jul 2021 01:20:16 GMT  
+		Size: 51.8 MB (51841203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:881ad7aafb13e7b4d01adf37fdc16fec20a8a03256fec5d3cc06b729c9046e6e`  
-		Last Modified: Thu, 10 Sep 2020 07:12:39 GMT  
-		Size: 5.3 MB (5284656 bytes)  
+	-	`sha256:f10db7ba7580dd43abbf34313aab51dae288a6ef8dcd1b60860a97679c47942d`  
+		Last Modified: Thu, 22 Jul 2021 13:48:15 GMT  
+		Size: 5.3 MB (5286518 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db6a1d457bc3b2154fd0a9f801cd6ca095cc9ab734ff6590cc1a34ed61447999`  
-		Last Modified: Thu, 10 Sep 2020 07:14:28 GMT  
+	-	`sha256:5e5dee180760796a18d9e387c8d18020519dd17415ccefe9d33eaddde5e73d62`  
+		Last Modified: Thu, 22 Jul 2021 13:50:48 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7fe4ef083504395bddc738ae3dac4ceab462961ea94f350378399740631ae83`  
-		Last Modified: Thu, 10 Sep 2020 07:14:45 GMT  
-		Size: 104.8 MB (104841710 bytes)  
+	-	`sha256:c26c02f721c269f3df6c3d2cbc36042d2e89cd7bc7aeaf24d0603e30e014ae45`  
+		Last Modified: Thu, 22 Jul 2021 13:50:59 GMT  
+		Size: 106.0 MB (105993014 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd2f6ff01f3099d334648f204a9da076cde41f44261946010777e5e1f2b623ca`  
-		Last Modified: Fri, 11 Sep 2020 06:04:45 GMT  
-		Size: 369.0 MB (369048921 bytes)  
+	-	`sha256:242afdbf2696357fcfd3a8bef1ede95de8d1ffe0f62cc70f3e3811b5db598123`  
+		Last Modified: Tue, 17 Aug 2021 20:27:25 GMT  
+		Size: 369.1 MB (369089508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8746559b1318135f28a7b8ca4eabdabd20353769524d1663cd96c1aa5b13d141`  
-		Last Modified: Fri, 11 Sep 2020 06:05:21 GMT  
-		Size: 4.4 KB (4377 bytes)  
+	-	`sha256:926f48868978085795b72e0a3940945de06d17e9b4dd3c4d0412907893a0f743`  
+		Last Modified: Tue, 17 Aug 2021 20:28:15 GMT  
+		Size: 4.4 KB (4405 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a4b506adc036b94661c5cbee03e28958866f49f4ec8ebbb76a67d4572418a2d`  
-		Last Modified: Fri, 11 Sep 2020 06:05:38 GMT  
-		Size: 355.6 MB (355562082 bytes)  
+	-	`sha256:934bb6a35619fa1bbf758c316f8fd542c376b4069ebc4ceb7f8071d09d2830f9`  
+		Last Modified: Tue, 17 Aug 2021 20:28:30 GMT  
+		Size: 355.6 MB (355561906 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bb6c47b2a099c2906044cb428f17949f96e2f7dfa3eaf20c189296c443b3f47`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 276.0 B  
+	-	`sha256:df9fd885dae9f36308cf81103008e9e5c7ac7e08d334540df781fb542bf4029d`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 303.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93fbbf9a6f3c69cb1ec3e316011863bee5389652028b11c522ae80d5fc2ae97f`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 986.0 B  
+	-	`sha256:8f1a891295cc06d5e48cc0cdafd9d52218579e414d010485a25591b46c3d8238`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 1.0 KB (1015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:947193cd6c3c5b2a9f09e1d2bf21fbc29ce5718be7a064b5d048814ffac2fbff`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 1.8 KB (1777 bytes)  
+	-	`sha256:56637d3d0f28641885dc57388cb0b450c672af41f29f5cefd034bc498199b3e6`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 1.9 KB (1866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b62d93ff574d2b2963a721cb4fdd90b5de802025d151905a4eec46a12d0f702`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 1.0 KB (1019 bytes)  
+	-	`sha256:f34945ea5ae6c778a51044ba558a03b0e3a01ff8d0b9ccbac7001959aa1581d3`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 1.0 KB (1020 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:latest`
 
 ```console
-$ docker pull nuxeo@sha256:72c566a2372c084a3db9d235b07c59ada4542af9f471775669c4d629637dd439
+$ docker pull nuxeo@sha256:f0add720e3ac4f281178a0fcec27b9294d4cd8f070d6eb4b909757cadd22edde
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2158,145 +2158,145 @@ $ docker pull nuxeo@sha256:72c566a2372c084a3db9d235b07c59ada4542af9f471775669c4d
 ### `nuxeo:latest` - linux; amd64
 
 ```console
-$ docker pull nuxeo@sha256:eda9f9feca03da9b7aa844e04a8c3788b10724fe08876ad8907602b7c88bfc0f
+$ docker pull nuxeo@sha256:0d69eaf014da0051456e378b902ab7339d72ad254ac6fc5298aae6df39bb467f
 ```
 
--	Docker Version: 18.09.7
+-	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **954.8 MB (954779473 bytes)**  
+-	Total Size: **956.0 MB (956046761 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d0178397d24ec86ce88faf36f108d161cc380afc9d524b1b2629c3d5ef10eaa`
+-	Image ID: `sha256:2e097f46e7e02e52424d2efb7e0cc739938a149528e5892ffb63a1c1febf4e04`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Thu, 10 Sep 2020 00:22:55 GMT
-ADD file:07a6578d6f507bd9c51bdf4fe41402db5dcf3b9fdf51cd4315778c27da1add39 in / 
-# Thu, 10 Sep 2020 00:22:55 GMT
+# Thu, 22 Jul 2021 00:45:30 GMT
+ADD file:e952f6979e4b0ead00b6906db1dd70eb9beb564a04e2f02e2e0cff8614920216 in / 
+# Thu, 22 Jul 2021 00:45:31 GMT
 CMD ["bash"]
-# Thu, 10 Sep 2020 00:59:15 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 00:59:25 GMT
+# Thu, 22 Jul 2021 01:12:14 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 01:12:20 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 10 Sep 2020 00:59:52 GMT
+# Thu, 22 Jul 2021 01:12:38 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				ca-certificates p11-kit 				fontconfig libfreetype6 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 10 Sep 2020 07:03:35 GMT
-ENV LANG=C.UTF-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:35:50 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
+# Thu, 22 Jul 2021 13:37:22 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Thu, 10 Sep 2020 07:05:33 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
+# Thu, 22 Jul 2021 13:37:23 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 10 Sep 2020 07:05:35 GMT
-RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 10 Sep 2020 07:05:35 GMT
-ENV JAVA_VERSION=8u265
-# Thu, 10 Sep 2020 07:05:47 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		amd64 | i386:x86-64) downloadUrl=https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u265-b01/OpenJDK8U-jdk_x64_linux_8u265b01.tar.gz ;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget -O openjdk.tgz.asc "$downloadUrl.sign"; 	wget -O openjdk.tgz "$downloadUrl" --progress=dot:giga; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 			{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'if ! [ -d "$JAVA_HOME" ]; then echo >&2 "error: missing JAVA_HOME environment variable"; exit 1; fi'; 		echo 'cacertsFile=; for f in "$JAVA_HOME/lib/security/cacerts" "$JAVA_HOME/jre/lib/security/cacerts"; do if [ -e "$f" ]; then cacertsFile="$f"; break; fi; done'; 		echo 'if [ -z "$cacertsFile" ] || ! [ -f "$cacertsFile" ]; then echo >&2 "error: failed to find cacerts file in $JAVA_HOME"; exit 1; fi'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$cacertsFile"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
-# Fri, 11 Sep 2020 05:56:50 GMT
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV LANG=C.UTF-8
+# Thu, 22 Jul 2021 13:37:23 GMT
+ENV JAVA_VERSION=8u302
+# Thu, 22 Jul 2021 13:37:31 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_8u302b08.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_8u302b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/jre/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
+# Tue, 17 Aug 2021 20:19:11 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Fri, 11 Sep 2020 06:00:14 GMT
+# Tue, 17 Aug 2021 20:22:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libwpd-tools     exiftool     ghostscript     libreoffice     ffmpeg     x264  && rm -rf /var/lib/apt/lists/*
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:34 GMT
 RUN find / -perm 6000 -type f -exec chmod a-s {} \; || true
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_USER=nuxeo
-# Fri, 11 Sep 2020 06:00:16 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:00:17 GMT
+# Tue, 17 Aug 2021 20:22:35 GMT
 ENV HOME=/opt/nuxeo/server
-# Fri, 11 Sep 2020 06:01:39 GMT
+# Tue, 17 Aug 2021 20:24:08 GMT
 ARG NUXEO_VERSION=10.10
-# Fri, 11 Sep 2020 06:01:40 GMT
+# Tue, 17 Aug 2021 20:24:08 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip
-# Fri, 11 Sep 2020 06:01:40 GMT
+# Tue, 17 Aug 2021 20:24:08 GMT
 ARG NUXEO_MD5=90ef2ac005020e880b6277510800c30c
-# Fri, 11 Sep 2020 06:01:41 GMT
+# Tue, 17 Aug 2021 20:24:09 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip NUXEO_MD5=90ef2ac005020e880b6277510800c30c NUXEO_VERSION=10.10
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:47 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip NUXEO_MD5=90ef2ac005020e880b6277510800c30c NUXEO_VERSION=10.10
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && if [ $NUXEO_VERSION != "master" ]; then echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -; fi     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && $NUXEO_HOME/bin/nuxeoctl mp-init     && chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:48 GMT
 COPY dir:d28c2b4bdf31f5817cba5496caa3161d743da596ec68186e0c444ede39dd58ac in /opt/nuxeo/server/templates/docker 
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:48 GMT
 COPY file:dbaa7cc62ad81fbafea7350f8e1ec2045fdc4a962bcfd145d777fefaf7205910 in /etc/nuxeo/nuxeo.conf.template 
-# Fri, 11 Sep 2020 06:02:03 GMT
+# Tue, 17 Aug 2021 20:24:48 GMT
 ENV NUXEO_CONF=/etc/nuxeo/nuxeo.conf
-# Fri, 11 Sep 2020 06:02:04 GMT
+# Tue, 17 Aug 2021 20:24:49 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-10.10/nuxeo-server-10.10-tomcat.zip NUXEO_MD5=90ef2ac005020e880b6277510800c30c NUXEO_VERSION=10.10
 RUN chown -R 1000:0 /etc/nuxeo && chmod g+rwX /etc/nuxeo && rm -f $NUXEO_HOME/bin/nuxeo.conf     && mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d      && chmod g=u /etc/passwd
-# Fri, 11 Sep 2020 06:02:04 GMT
+# Tue, 17 Aug 2021 20:24:49 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 11 Sep 2020 06:02:04 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 WORKDIR /opt/nuxeo/server
-# Fri, 11 Sep 2020 06:02:05 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 COPY file:97cc30e1ff0452e9f8e463882c4544e2dc446201ab67f037426aee9cbd1e212a in / 
-# Fri, 11 Sep 2020 06:02:06 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 11 Sep 2020 06:02:07 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 EXPOSE 8080
-# Fri, 11 Sep 2020 06:02:07 GMT
+# Tue, 17 Aug 2021 20:24:50 GMT
 CMD ["nuxeoctl" "console"]
-# Fri, 11 Sep 2020 06:02:08 GMT
+# Tue, 17 Aug 2021 20:24:51 GMT
 USER 1000
 ```
 
 -	Layers:
-	-	`sha256:57df1a1f1ad841deaf50c8f662d77e93b4b17af776ed66148116607f9aceffa8`  
-		Last Modified: Thu, 10 Sep 2020 00:33:42 GMT  
-		Size: 50.4 MB (50395913 bytes)  
+	-	`sha256:627b765e08d177e63c9a202ca4991b711448905b934435c70b7cbd7d4a9c7959`  
+		Last Modified: Thu, 22 Jul 2021 00:50:07 GMT  
+		Size: 50.4 MB (50435626 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71e126169501d71bbbd0d3c8d9f35836c41660869fe8432ac606341ed21f7adb`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 7.8 MB (7811567 bytes)  
+	-	`sha256:c040670e5e559fd936db175530ad4c1dd014bd25b2bf25ea19fa20554fe2d736`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 7.8 MB (7832944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1af28a55c3f320826db8df3146a2c198f9042877ef679f9e32210aa9a7fac9ef`  
-		Last Modified: Thu, 10 Sep 2020 01:15:23 GMT  
-		Size: 10.0 MB (9996317 bytes)  
+	-	`sha256:073a180f4992853fa3dd8da604e7b041bc8ea92157749d042c0853312f178f6a`  
+		Last Modified: Thu, 22 Jul 2021 01:19:54 GMT  
+		Size: 10.0 MB (9997222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03f1c9932170e54fface2382b2550b8052ae3d41f27e66ea1294e2055dd2b2e7`  
-		Last Modified: Thu, 10 Sep 2020 01:15:45 GMT  
-		Size: 51.8 MB (51829661 bytes)  
+	-	`sha256:bf76209566d0c8d78df205b09e6e5b52ff7f10cb4e1c03d9336ed7dd2decd919`  
+		Last Modified: Thu, 22 Jul 2021 01:20:16 GMT  
+		Size: 51.8 MB (51841203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:881ad7aafb13e7b4d01adf37fdc16fec20a8a03256fec5d3cc06b729c9046e6e`  
-		Last Modified: Thu, 10 Sep 2020 07:12:39 GMT  
-		Size: 5.3 MB (5284656 bytes)  
+	-	`sha256:f10db7ba7580dd43abbf34313aab51dae288a6ef8dcd1b60860a97679c47942d`  
+		Last Modified: Thu, 22 Jul 2021 13:48:15 GMT  
+		Size: 5.3 MB (5286518 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db6a1d457bc3b2154fd0a9f801cd6ca095cc9ab734ff6590cc1a34ed61447999`  
-		Last Modified: Thu, 10 Sep 2020 07:14:28 GMT  
+	-	`sha256:5e5dee180760796a18d9e387c8d18020519dd17415ccefe9d33eaddde5e73d62`  
+		Last Modified: Thu, 22 Jul 2021 13:50:48 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7fe4ef083504395bddc738ae3dac4ceab462961ea94f350378399740631ae83`  
-		Last Modified: Thu, 10 Sep 2020 07:14:45 GMT  
-		Size: 104.8 MB (104841710 bytes)  
+	-	`sha256:c26c02f721c269f3df6c3d2cbc36042d2e89cd7bc7aeaf24d0603e30e014ae45`  
+		Last Modified: Thu, 22 Jul 2021 13:50:59 GMT  
+		Size: 106.0 MB (105993014 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd2f6ff01f3099d334648f204a9da076cde41f44261946010777e5e1f2b623ca`  
-		Last Modified: Fri, 11 Sep 2020 06:04:45 GMT  
-		Size: 369.0 MB (369048921 bytes)  
+	-	`sha256:242afdbf2696357fcfd3a8bef1ede95de8d1ffe0f62cc70f3e3811b5db598123`  
+		Last Modified: Tue, 17 Aug 2021 20:27:25 GMT  
+		Size: 369.1 MB (369089508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8746559b1318135f28a7b8ca4eabdabd20353769524d1663cd96c1aa5b13d141`  
-		Last Modified: Fri, 11 Sep 2020 06:05:21 GMT  
-		Size: 4.4 KB (4377 bytes)  
+	-	`sha256:926f48868978085795b72e0a3940945de06d17e9b4dd3c4d0412907893a0f743`  
+		Last Modified: Tue, 17 Aug 2021 20:28:15 GMT  
+		Size: 4.4 KB (4405 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a4b506adc036b94661c5cbee03e28958866f49f4ec8ebbb76a67d4572418a2d`  
-		Last Modified: Fri, 11 Sep 2020 06:05:38 GMT  
-		Size: 355.6 MB (355562082 bytes)  
+	-	`sha256:934bb6a35619fa1bbf758c316f8fd542c376b4069ebc4ceb7f8071d09d2830f9`  
+		Last Modified: Tue, 17 Aug 2021 20:28:30 GMT  
+		Size: 355.6 MB (355561906 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bb6c47b2a099c2906044cb428f17949f96e2f7dfa3eaf20c189296c443b3f47`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 276.0 B  
+	-	`sha256:df9fd885dae9f36308cf81103008e9e5c7ac7e08d334540df781fb542bf4029d`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 303.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93fbbf9a6f3c69cb1ec3e316011863bee5389652028b11c522ae80d5fc2ae97f`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 986.0 B  
+	-	`sha256:8f1a891295cc06d5e48cc0cdafd9d52218579e414d010485a25591b46c3d8238`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 1.0 KB (1015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:947193cd6c3c5b2a9f09e1d2bf21fbc29ce5718be7a064b5d048814ffac2fbff`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 1.8 KB (1777 bytes)  
+	-	`sha256:56637d3d0f28641885dc57388cb0b450c672af41f29f5cefd034bc498199b3e6`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 1.9 KB (1866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b62d93ff574d2b2963a721cb4fdd90b5de802025d151905a4eec46a12d0f702`  
-		Last Modified: Fri, 11 Sep 2020 06:05:20 GMT  
-		Size: 1.0 KB (1019 bytes)  
+	-	`sha256:f34945ea5ae6c778a51044ba558a03b0e3a01ff8d0b9ccbac7001959aa1581d3`  
+		Last Modified: Tue, 17 Aug 2021 20:28:13 GMT  
+		Size: 1.0 KB (1020 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
