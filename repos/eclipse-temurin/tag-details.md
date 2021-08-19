@@ -61,6 +61,14 @@
 -	[`eclipse-temurin:8-jdk-windowsservercore`](#eclipse-temurin8-jdk-windowsservercore)
 -	[`eclipse-temurin:8-jdk-windowsservercore-1809`](#eclipse-temurin8-jdk-windowsservercore-1809)
 -	[`eclipse-temurin:8-jdk-windowsservercore-ltsc2016`](#eclipse-temurin8-jdk-windowsservercore-ltsc2016)
+-	[`eclipse-temurin:8-jre`](#eclipse-temurin8-jre)
+-	[`eclipse-temurin:8-jre-centos7`](#eclipse-temurin8-jre-centos7)
+-	[`eclipse-temurin:8-jre-focal`](#eclipse-temurin8-jre-focal)
+-	[`eclipse-temurin:8-jre-nanoserver`](#eclipse-temurin8-jre-nanoserver)
+-	[`eclipse-temurin:8-jre-nanoserver-1809`](#eclipse-temurin8-jre-nanoserver-1809)
+-	[`eclipse-temurin:8-jre-windowsservercore`](#eclipse-temurin8-jre-windowsservercore)
+-	[`eclipse-temurin:8-jre-windowsservercore-1809`](#eclipse-temurin8-jre-windowsservercore-1809)
+-	[`eclipse-temurin:8-jre-windowsservercore-ltsc2016`](#eclipse-temurin8-jre-windowsservercore-ltsc2016)
 -	[`eclipse-temurin:8-nanoserver`](#eclipse-temurin8-nanoserver)
 -	[`eclipse-temurin:8-nanoserver-1809`](#eclipse-temurin8-nanoserver-1809)
 -	[`eclipse-temurin:8-windowsservercore`](#eclipse-temurin8-windowsservercore)
@@ -74,6 +82,14 @@
 -	[`eclipse-temurin:8u302-b08-jdk-windowsservercore`](#eclipse-temurin8u302-b08-jdk-windowsservercore)
 -	[`eclipse-temurin:8u302-b08-jdk-windowsservercore-1809`](#eclipse-temurin8u302-b08-jdk-windowsservercore-1809)
 -	[`eclipse-temurin:8u302-b08-jdk-windowsservercore-ltsc2016`](#eclipse-temurin8u302-b08-jdk-windowsservercore-ltsc2016)
+-	[`eclipse-temurin:8u302-b08-jre`](#eclipse-temurin8u302-b08-jre)
+-	[`eclipse-temurin:8u302-b08-jre-centos7`](#eclipse-temurin8u302-b08-jre-centos7)
+-	[`eclipse-temurin:8u302-b08-jre-focal`](#eclipse-temurin8u302-b08-jre-focal)
+-	[`eclipse-temurin:8u302-b08-jre-nanoserver`](#eclipse-temurin8u302-b08-jre-nanoserver)
+-	[`eclipse-temurin:8u302-b08-jre-nanoserver-1809`](#eclipse-temurin8u302-b08-jre-nanoserver-1809)
+-	[`eclipse-temurin:8u302-b08-jre-windowsservercore`](#eclipse-temurin8u302-b08-jre-windowsservercore)
+-	[`eclipse-temurin:8u302-b08-jre-windowsservercore-1809`](#eclipse-temurin8u302-b08-jre-windowsservercore-1809)
+-	[`eclipse-temurin:8u302-b08-jre-windowsservercore-ltsc2016`](#eclipse-temurin8u302-b08-jre-windowsservercore-ltsc2016)
 -	[`eclipse-temurin:latest`](#eclipse-temurinlatest)
 
 ## `eclipse-temurin:11`
@@ -8461,6 +8477,38 @@ RUN Write-Host 'Verifying install ...';     Write-Host '  javac -version'; javac
 		Size: 310.8 KB (310837 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `eclipse-temurin:8-jre`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:8-jre-centos7`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:8-jre-focal`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:8-jre-nanoserver`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:8-jre-nanoserver-1809`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:8-jre-windowsservercore`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:8-jre-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:8-jre-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
 ## `eclipse-temurin:8-nanoserver`
 
 ```console
@@ -9879,6 +9927,38 @@ RUN Write-Host 'Verifying install ...';     Write-Host '  javac -version'; javac
 		Last Modified: Fri, 13 Aug 2021 22:00:39 GMT  
 		Size: 310.8 KB (310837 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `eclipse-temurin:8u302-b08-jre`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:8u302-b08-jre-centos7`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:8u302-b08-jre-focal`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:8u302-b08-jre-nanoserver`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:8u302-b08-jre-nanoserver-1809`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:8u302-b08-jre-windowsservercore`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:8u302-b08-jre-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `eclipse-temurin:8u302-b08-jre-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
 
 ## `eclipse-temurin:latest`
 
