@@ -13,7 +13,7 @@
 ## `storm:1.1`
 
 ```console
-$ docker pull storm@sha256:577075799251f18d497f6223e7929701e03f19b5ee4977574905c4b513089ac8
+$ docker pull storm@sha256:2358afa11120d0be7f41a605ef6a4a742c4d0291aebec9947d10a383e48c1376
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23,96 +23,96 @@ $ docker pull storm@sha256:577075799251f18d497f6223e7929701e03f19b5ee4977574905c
 ### `storm:1.1` - linux; amd64
 
 ```console
-$ docker pull storm@sha256:b2db652d7215e86b00f1855a1a8d9e269c78c5d4b07037a1a4c05de90fccb870
+$ docker pull storm@sha256:51168dd48f92e65c2e9e25773846b9ef24c0621a4675ea41b787bf7def5ef621
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.6 MB (168550768 bytes)**  
+-	Total Size: **182.4 MB (182431732 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f82c8933567343ce1b26615f4d7c5e9e6a2d6ee0499f32bdd19cc4ffb0164240`
+-	Image ID: `sha256:b1f2242c9c180b203f6cbc13452a5bdb7552573ed31cff5e9ae29c846087f8a3`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 17 Aug 2021 01:24:06 GMT
-ADD file:87b4e60fe3af680c6815448374365a44e9ea461bc8ade2960b4639c25aed3ba9 in / 
-# Tue, 17 Aug 2021 01:24:06 GMT
+# Tue, 17 Aug 2021 01:23:40 GMT
+ADD file:5e8343ab9a73edc27c2889634896e792ab289b85c206de0fc31183fdc0a32ac7 in / 
+# Tue, 17 Aug 2021 01:23:41 GMT
 CMD ["bash"]
-# Tue, 17 Aug 2021 06:53:10 GMT
+# Thu, 26 Aug 2021 00:33:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 17 Aug 2021 06:55:46 GMT
+# Thu, 26 Aug 2021 00:38:12 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Tue, 17 Aug 2021 06:55:46 GMT
+# Thu, 26 Aug 2021 00:38:13 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Tue, 17 Aug 2021 06:55:47 GMT
+# Thu, 26 Aug 2021 00:38:13 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Aug 2021 06:55:47 GMT
+# Thu, 26 Aug 2021 00:38:13 GMT
 ENV LANG=C.UTF-8
-# Tue, 17 Aug 2021 06:55:47 GMT
+# Thu, 26 Aug 2021 00:38:13 GMT
 ENV JAVA_VERSION=8u302
-# Tue, 17 Aug 2021 06:56:21 GMT
+# Thu, 26 Aug 2021 00:39:00 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jre_x64_linux_8u302b08.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jre_aarch64_linux_8u302b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Tue, 17 Aug 2021 21:06:47 GMT
+# Thu, 26 Aug 2021 03:51:15 GMT
 ENV STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Tue, 17 Aug 2021 21:06:48 GMT
+# Thu, 26 Aug 2021 03:51:16 GMT
 RUN set -eux;     groupadd -r storm --gid=1000;     useradd -r -g storm --uid=1000 storm;     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R storm:storm "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Tue, 17 Aug 2021 21:06:58 GMT
+# Thu, 26 Aug 2021 03:51:27 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         bash         ca-certificates         dirmngr         gosu         gnupg         python         procps         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Tue, 17 Aug 2021 21:06:58 GMT
+# Thu, 26 Aug 2021 03:51:27 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Tue, 17 Aug 2021 21:06:59 GMT
+# Thu, 26 Aug 2021 03:51:27 GMT
 ARG DISTRO_NAME=apache-storm-1.1.3
-# Tue, 17 Aug 2021 21:07:16 GMT
+# Thu, 26 Aug 2021 03:51:51 GMT
 # ARGS: DISTRO_NAME=apache-storm-1.1.3 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R storm:storm "$DISTRO_NAME"
-# Tue, 17 Aug 2021 21:07:17 GMT
+# Thu, 26 Aug 2021 03:51:51 GMT
 WORKDIR /apache-storm-1.1.3
-# Tue, 17 Aug 2021 21:07:17 GMT
+# Thu, 26 Aug 2021 03:51:51 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-1.1.3/bin
-# Tue, 17 Aug 2021 21:07:17 GMT
+# Thu, 26 Aug 2021 03:51:51 GMT
 COPY file:c74c732450146abc9cc672380c7829a8d892099ec5aa1f81e3fe02c4e8f97f32 in / 
-# Tue, 17 Aug 2021 21:07:17 GMT
+# Thu, 26 Aug 2021 03:51:52 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:e1acddbe380c63f0de4b77d3f287b7c81cd9d89563a230692378126b46ea6546`  
-		Last Modified: Tue, 17 Aug 2021 01:30:21 GMT  
-		Size: 27.1 MB (27145985 bytes)  
+	-	`sha256:99046ad9247f8a1cbd1048d9099d026191ad9cda63c08aadeb704b7000a51717`  
+		Last Modified: Tue, 17 Aug 2021 01:29:35 GMT  
+		Size: 31.4 MB (31361314 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:427b7134c0c7b2e1d9cc703e20a84b850cbbf34ef654cfa0db710678a99da78b`  
-		Last Modified: Tue, 17 Aug 2021 07:00:00 GMT  
-		Size: 3.3 MB (3268768 bytes)  
+	-	`sha256:e97c10298fea9915576e7ff72c6eca3d7c589aaafd6bc6481a5814c4271d2251`  
+		Last Modified: Thu, 26 Aug 2021 00:43:26 GMT  
+		Size: 1.6 MB (1581998 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78d3ca35fb9a4f8f161dc8b1007db271091ce462aa5a6c8aada7e7096f9857b5`  
-		Last Modified: Tue, 17 Aug 2021 07:04:10 GMT  
-		Size: 211.0 B  
+	-	`sha256:12127b9e959d71cc3433b3b0fadff2350394a628f731a4573086dab33730b236`  
+		Last Modified: Thu, 26 Aug 2021 00:50:14 GMT  
+		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:684a63cea6ad88087bcbba64a242772c2e579702d67656a067619cf4691f0a09`  
-		Last Modified: Tue, 17 Aug 2021 07:04:50 GMT  
-		Size: 41.6 MB (41641133 bytes)  
+	-	`sha256:3d6b7b86bdf62cb45e87be0b8e9a59e96c4d4e9ebfd06c912c37feae54d97a96`  
+		Last Modified: Thu, 26 Aug 2021 00:51:12 GMT  
+		Size: 41.6 MB (41632788 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b4b84a014626f0c85cfaa7b2f605c106ef006b43905d96cf41819306c1a3fda`  
-		Last Modified: Tue, 17 Aug 2021 21:18:16 GMT  
+	-	`sha256:f29078d55f40e687eb3f0ae412b18d3a76ac36f0a02ec41c70b5b726fc151339`  
+		Last Modified: Thu, 26 Aug 2021 04:04:49 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a0400fc035ce74526328205a20532517dbf55dd8d77597dc06d983888b5c15e`  
-		Last Modified: Tue, 17 Aug 2021 21:18:19 GMT  
-		Size: 13.1 MB (13127124 bytes)  
+	-	`sha256:c127e2e2acb5b81e7ae557faeb0c6533087d588cf811a852e218f07b47c5002f`  
+		Last Modified: Thu, 26 Aug 2021 04:04:55 GMT  
+		Size: 24.5 MB (24487853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85127734da4a32acb4a8d0f02253475f5563073e3e0c06818a6e9650f8f71c1c`  
-		Last Modified: Tue, 17 Aug 2021 21:18:22 GMT  
-		Size: 83.4 MB (83365290 bytes)  
+	-	`sha256:f6043e12b83b59ead18b7ac2b625721623b74993ca16416cfd47988784069976`  
+		Last Modified: Thu, 26 Aug 2021 04:04:55 GMT  
+		Size: 83.4 MB (83365308 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:729af41eb3930889dd8c9e3c38b58db7bcd527932544e5f6efe65361d98004b4`  
-		Last Modified: Tue, 17 Aug 2021 21:18:16 GMT  
+	-	`sha256:113a53b42bf9a553491d3fa68cb7e16e4536c58e9447c6a587d2ebda7ffcd378`  
+		Last Modified: Thu, 26 Aug 2021 04:04:49 GMT  
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `storm:1.1.3`
 
 ```console
-$ docker pull storm@sha256:577075799251f18d497f6223e7929701e03f19b5ee4977574905c4b513089ac8
+$ docker pull storm@sha256:2358afa11120d0be7f41a605ef6a4a742c4d0291aebec9947d10a383e48c1376
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -122,96 +122,96 @@ $ docker pull storm@sha256:577075799251f18d497f6223e7929701e03f19b5ee4977574905c
 ### `storm:1.1.3` - linux; amd64
 
 ```console
-$ docker pull storm@sha256:b2db652d7215e86b00f1855a1a8d9e269c78c5d4b07037a1a4c05de90fccb870
+$ docker pull storm@sha256:51168dd48f92e65c2e9e25773846b9ef24c0621a4675ea41b787bf7def5ef621
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.6 MB (168550768 bytes)**  
+-	Total Size: **182.4 MB (182431732 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f82c8933567343ce1b26615f4d7c5e9e6a2d6ee0499f32bdd19cc4ffb0164240`
+-	Image ID: `sha256:b1f2242c9c180b203f6cbc13452a5bdb7552573ed31cff5e9ae29c846087f8a3`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 17 Aug 2021 01:24:06 GMT
-ADD file:87b4e60fe3af680c6815448374365a44e9ea461bc8ade2960b4639c25aed3ba9 in / 
-# Tue, 17 Aug 2021 01:24:06 GMT
+# Tue, 17 Aug 2021 01:23:40 GMT
+ADD file:5e8343ab9a73edc27c2889634896e792ab289b85c206de0fc31183fdc0a32ac7 in / 
+# Tue, 17 Aug 2021 01:23:41 GMT
 CMD ["bash"]
-# Tue, 17 Aug 2021 06:53:10 GMT
+# Thu, 26 Aug 2021 00:33:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 17 Aug 2021 06:55:46 GMT
+# Thu, 26 Aug 2021 00:38:12 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Tue, 17 Aug 2021 06:55:46 GMT
+# Thu, 26 Aug 2021 00:38:13 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Tue, 17 Aug 2021 06:55:47 GMT
+# Thu, 26 Aug 2021 00:38:13 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Aug 2021 06:55:47 GMT
+# Thu, 26 Aug 2021 00:38:13 GMT
 ENV LANG=C.UTF-8
-# Tue, 17 Aug 2021 06:55:47 GMT
+# Thu, 26 Aug 2021 00:38:13 GMT
 ENV JAVA_VERSION=8u302
-# Tue, 17 Aug 2021 06:56:21 GMT
+# Thu, 26 Aug 2021 00:39:00 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jre_x64_linux_8u302b08.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jre_aarch64_linux_8u302b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Tue, 17 Aug 2021 21:06:47 GMT
+# Thu, 26 Aug 2021 03:51:15 GMT
 ENV STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Tue, 17 Aug 2021 21:06:48 GMT
+# Thu, 26 Aug 2021 03:51:16 GMT
 RUN set -eux;     groupadd -r storm --gid=1000;     useradd -r -g storm --uid=1000 storm;     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R storm:storm "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Tue, 17 Aug 2021 21:06:58 GMT
+# Thu, 26 Aug 2021 03:51:27 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         bash         ca-certificates         dirmngr         gosu         gnupg         python         procps         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Tue, 17 Aug 2021 21:06:58 GMT
+# Thu, 26 Aug 2021 03:51:27 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Tue, 17 Aug 2021 21:06:59 GMT
+# Thu, 26 Aug 2021 03:51:27 GMT
 ARG DISTRO_NAME=apache-storm-1.1.3
-# Tue, 17 Aug 2021 21:07:16 GMT
+# Thu, 26 Aug 2021 03:51:51 GMT
 # ARGS: DISTRO_NAME=apache-storm-1.1.3 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R storm:storm "$DISTRO_NAME"
-# Tue, 17 Aug 2021 21:07:17 GMT
+# Thu, 26 Aug 2021 03:51:51 GMT
 WORKDIR /apache-storm-1.1.3
-# Tue, 17 Aug 2021 21:07:17 GMT
+# Thu, 26 Aug 2021 03:51:51 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-1.1.3/bin
-# Tue, 17 Aug 2021 21:07:17 GMT
+# Thu, 26 Aug 2021 03:51:51 GMT
 COPY file:c74c732450146abc9cc672380c7829a8d892099ec5aa1f81e3fe02c4e8f97f32 in / 
-# Tue, 17 Aug 2021 21:07:17 GMT
+# Thu, 26 Aug 2021 03:51:52 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:e1acddbe380c63f0de4b77d3f287b7c81cd9d89563a230692378126b46ea6546`  
-		Last Modified: Tue, 17 Aug 2021 01:30:21 GMT  
-		Size: 27.1 MB (27145985 bytes)  
+	-	`sha256:99046ad9247f8a1cbd1048d9099d026191ad9cda63c08aadeb704b7000a51717`  
+		Last Modified: Tue, 17 Aug 2021 01:29:35 GMT  
+		Size: 31.4 MB (31361314 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:427b7134c0c7b2e1d9cc703e20a84b850cbbf34ef654cfa0db710678a99da78b`  
-		Last Modified: Tue, 17 Aug 2021 07:00:00 GMT  
-		Size: 3.3 MB (3268768 bytes)  
+	-	`sha256:e97c10298fea9915576e7ff72c6eca3d7c589aaafd6bc6481a5814c4271d2251`  
+		Last Modified: Thu, 26 Aug 2021 00:43:26 GMT  
+		Size: 1.6 MB (1581998 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78d3ca35fb9a4f8f161dc8b1007db271091ce462aa5a6c8aada7e7096f9857b5`  
-		Last Modified: Tue, 17 Aug 2021 07:04:10 GMT  
-		Size: 211.0 B  
+	-	`sha256:12127b9e959d71cc3433b3b0fadff2350394a628f731a4573086dab33730b236`  
+		Last Modified: Thu, 26 Aug 2021 00:50:14 GMT  
+		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:684a63cea6ad88087bcbba64a242772c2e579702d67656a067619cf4691f0a09`  
-		Last Modified: Tue, 17 Aug 2021 07:04:50 GMT  
-		Size: 41.6 MB (41641133 bytes)  
+	-	`sha256:3d6b7b86bdf62cb45e87be0b8e9a59e96c4d4e9ebfd06c912c37feae54d97a96`  
+		Last Modified: Thu, 26 Aug 2021 00:51:12 GMT  
+		Size: 41.6 MB (41632788 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b4b84a014626f0c85cfaa7b2f605c106ef006b43905d96cf41819306c1a3fda`  
-		Last Modified: Tue, 17 Aug 2021 21:18:16 GMT  
+	-	`sha256:f29078d55f40e687eb3f0ae412b18d3a76ac36f0a02ec41c70b5b726fc151339`  
+		Last Modified: Thu, 26 Aug 2021 04:04:49 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a0400fc035ce74526328205a20532517dbf55dd8d77597dc06d983888b5c15e`  
-		Last Modified: Tue, 17 Aug 2021 21:18:19 GMT  
-		Size: 13.1 MB (13127124 bytes)  
+	-	`sha256:c127e2e2acb5b81e7ae557faeb0c6533087d588cf811a852e218f07b47c5002f`  
+		Last Modified: Thu, 26 Aug 2021 04:04:55 GMT  
+		Size: 24.5 MB (24487853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85127734da4a32acb4a8d0f02253475f5563073e3e0c06818a6e9650f8f71c1c`  
-		Last Modified: Tue, 17 Aug 2021 21:18:22 GMT  
-		Size: 83.4 MB (83365290 bytes)  
+	-	`sha256:f6043e12b83b59ead18b7ac2b625721623b74993ca16416cfd47988784069976`  
+		Last Modified: Thu, 26 Aug 2021 04:04:55 GMT  
+		Size: 83.4 MB (83365308 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:729af41eb3930889dd8c9e3c38b58db7bcd527932544e5f6efe65361d98004b4`  
-		Last Modified: Tue, 17 Aug 2021 21:18:16 GMT  
+	-	`sha256:113a53b42bf9a553491d3fa68cb7e16e4536c58e9447c6a587d2ebda7ffcd378`  
+		Last Modified: Thu, 26 Aug 2021 04:04:49 GMT  
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `storm:1.2`
 
 ```console
-$ docker pull storm@sha256:2bb8c6f89768a76e678f5fd6a2ef39e16c727ef448a2862642fe74cbad890e98
+$ docker pull storm@sha256:3e1d7809657216826e89ace9bf20ccb72c3e6dbaa1ed802d97b512cbc510eb66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -221,96 +221,96 @@ $ docker pull storm@sha256:2bb8c6f89768a76e678f5fd6a2ef39e16c727ef448a2862642fe7
 ### `storm:1.2` - linux; amd64
 
 ```console
-$ docker pull storm@sha256:43548a15e605337dfd42d73e4cb5c87b18b1494a7d4c3879017eed118f3b8470
+$ docker pull storm@sha256:b9769de028faf50e567a7667ee2db5fd57f87b32534ac86c9b7a5ddd46ab280c
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.3 MB (254322339 bytes)**  
+-	Total Size: **268.2 MB (268203450 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e02b221b7b1c74f70f792b16d3cac147e0bd508963083b038b461f7c170d2d0f`
+-	Image ID: `sha256:a804d53239f5449ac43311b2c4fc4bc66cfb8186be6c794f58e8de4019dd8187`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 17 Aug 2021 01:24:06 GMT
-ADD file:87b4e60fe3af680c6815448374365a44e9ea461bc8ade2960b4639c25aed3ba9 in / 
-# Tue, 17 Aug 2021 01:24:06 GMT
+# Tue, 17 Aug 2021 01:23:40 GMT
+ADD file:5e8343ab9a73edc27c2889634896e792ab289b85c206de0fc31183fdc0a32ac7 in / 
+# Tue, 17 Aug 2021 01:23:41 GMT
 CMD ["bash"]
-# Tue, 17 Aug 2021 06:53:10 GMT
+# Thu, 26 Aug 2021 00:33:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 17 Aug 2021 06:55:46 GMT
+# Thu, 26 Aug 2021 00:38:12 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Tue, 17 Aug 2021 06:55:46 GMT
+# Thu, 26 Aug 2021 00:38:13 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Tue, 17 Aug 2021 06:55:47 GMT
+# Thu, 26 Aug 2021 00:38:13 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Aug 2021 06:55:47 GMT
+# Thu, 26 Aug 2021 00:38:13 GMT
 ENV LANG=C.UTF-8
-# Tue, 17 Aug 2021 06:55:47 GMT
+# Thu, 26 Aug 2021 00:38:13 GMT
 ENV JAVA_VERSION=8u302
-# Tue, 17 Aug 2021 06:56:21 GMT
+# Thu, 26 Aug 2021 00:39:00 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jre_x64_linux_8u302b08.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jre_aarch64_linux_8u302b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Tue, 17 Aug 2021 21:06:47 GMT
+# Thu, 26 Aug 2021 03:51:15 GMT
 ENV STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Tue, 17 Aug 2021 21:06:48 GMT
+# Thu, 26 Aug 2021 03:51:16 GMT
 RUN set -eux;     groupadd -r storm --gid=1000;     useradd -r -g storm --uid=1000 storm;     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R storm:storm "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Tue, 17 Aug 2021 21:06:58 GMT
+# Thu, 26 Aug 2021 03:51:27 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         bash         ca-certificates         dirmngr         gosu         gnupg         python         procps         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Tue, 17 Aug 2021 21:06:58 GMT
+# Thu, 26 Aug 2021 03:51:27 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Tue, 17 Aug 2021 21:07:23 GMT
+# Thu, 26 Aug 2021 03:51:57 GMT
 ARG DISTRO_NAME=apache-storm-1.2.3
-# Tue, 17 Aug 2021 21:09:37 GMT
+# Thu, 26 Aug 2021 03:56:04 GMT
 # ARGS: DISTRO_NAME=apache-storm-1.2.3 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R storm:storm "$DISTRO_NAME"
-# Tue, 17 Aug 2021 21:09:38 GMT
+# Thu, 26 Aug 2021 03:56:04 GMT
 WORKDIR /apache-storm-1.2.3
-# Tue, 17 Aug 2021 21:09:38 GMT
+# Thu, 26 Aug 2021 03:56:04 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-1.2.3/bin
-# Tue, 17 Aug 2021 21:09:38 GMT
+# Thu, 26 Aug 2021 03:56:05 GMT
 COPY file:c74c732450146abc9cc672380c7829a8d892099ec5aa1f81e3fe02c4e8f97f32 in / 
-# Tue, 17 Aug 2021 21:09:38 GMT
+# Thu, 26 Aug 2021 03:56:05 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:e1acddbe380c63f0de4b77d3f287b7c81cd9d89563a230692378126b46ea6546`  
-		Last Modified: Tue, 17 Aug 2021 01:30:21 GMT  
-		Size: 27.1 MB (27145985 bytes)  
+	-	`sha256:99046ad9247f8a1cbd1048d9099d026191ad9cda63c08aadeb704b7000a51717`  
+		Last Modified: Tue, 17 Aug 2021 01:29:35 GMT  
+		Size: 31.4 MB (31361314 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:427b7134c0c7b2e1d9cc703e20a84b850cbbf34ef654cfa0db710678a99da78b`  
-		Last Modified: Tue, 17 Aug 2021 07:00:00 GMT  
-		Size: 3.3 MB (3268768 bytes)  
+	-	`sha256:e97c10298fea9915576e7ff72c6eca3d7c589aaafd6bc6481a5814c4271d2251`  
+		Last Modified: Thu, 26 Aug 2021 00:43:26 GMT  
+		Size: 1.6 MB (1581998 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78d3ca35fb9a4f8f161dc8b1007db271091ce462aa5a6c8aada7e7096f9857b5`  
-		Last Modified: Tue, 17 Aug 2021 07:04:10 GMT  
-		Size: 211.0 B  
+	-	`sha256:12127b9e959d71cc3433b3b0fadff2350394a628f731a4573086dab33730b236`  
+		Last Modified: Thu, 26 Aug 2021 00:50:14 GMT  
+		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:684a63cea6ad88087bcbba64a242772c2e579702d67656a067619cf4691f0a09`  
-		Last Modified: Tue, 17 Aug 2021 07:04:50 GMT  
-		Size: 41.6 MB (41641133 bytes)  
+	-	`sha256:3d6b7b86bdf62cb45e87be0b8e9a59e96c4d4e9ebfd06c912c37feae54d97a96`  
+		Last Modified: Thu, 26 Aug 2021 00:51:12 GMT  
+		Size: 41.6 MB (41632788 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b4b84a014626f0c85cfaa7b2f605c106ef006b43905d96cf41819306c1a3fda`  
-		Last Modified: Tue, 17 Aug 2021 21:18:16 GMT  
+	-	`sha256:f29078d55f40e687eb3f0ae412b18d3a76ac36f0a02ec41c70b5b726fc151339`  
+		Last Modified: Thu, 26 Aug 2021 04:04:49 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a0400fc035ce74526328205a20532517dbf55dd8d77597dc06d983888b5c15e`  
-		Last Modified: Tue, 17 Aug 2021 21:18:19 GMT  
-		Size: 13.1 MB (13127124 bytes)  
+	-	`sha256:c127e2e2acb5b81e7ae557faeb0c6533087d588cf811a852e218f07b47c5002f`  
+		Last Modified: Thu, 26 Aug 2021 04:04:55 GMT  
+		Size: 24.5 MB (24487853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e51385aa115430287675bd696b6d6c9378d03a769b6f42b400292fd8934690b2`  
-		Last Modified: Tue, 17 Aug 2021 21:18:43 GMT  
-		Size: 169.1 MB (169136861 bytes)  
+	-	`sha256:2afc25467c51bf421d24e35d4bca0d51c6e94e2d70c79fe0982a323973c088fb`  
+		Last Modified: Thu, 26 Aug 2021 04:05:14 GMT  
+		Size: 169.1 MB (169137025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8848b4e67cb582dc9486b84a7e3c2f4569943bce64430e808b03b07480a3dca`  
-		Last Modified: Tue, 17 Aug 2021 21:18:32 GMT  
-		Size: 413.0 B  
+	-	`sha256:968332ba56467e2c79eef80016bfe6e3f33818b33d9866e8e8e3efe1e91af2b6`  
+		Last Modified: Thu, 26 Aug 2021 04:05:05 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `storm:1.2.3`
 
 ```console
-$ docker pull storm@sha256:2bb8c6f89768a76e678f5fd6a2ef39e16c727ef448a2862642fe74cbad890e98
+$ docker pull storm@sha256:3e1d7809657216826e89ace9bf20ccb72c3e6dbaa1ed802d97b512cbc510eb66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -320,96 +320,96 @@ $ docker pull storm@sha256:2bb8c6f89768a76e678f5fd6a2ef39e16c727ef448a2862642fe7
 ### `storm:1.2.3` - linux; amd64
 
 ```console
-$ docker pull storm@sha256:43548a15e605337dfd42d73e4cb5c87b18b1494a7d4c3879017eed118f3b8470
+$ docker pull storm@sha256:b9769de028faf50e567a7667ee2db5fd57f87b32534ac86c9b7a5ddd46ab280c
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.3 MB (254322339 bytes)**  
+-	Total Size: **268.2 MB (268203450 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e02b221b7b1c74f70f792b16d3cac147e0bd508963083b038b461f7c170d2d0f`
+-	Image ID: `sha256:a804d53239f5449ac43311b2c4fc4bc66cfb8186be6c794f58e8de4019dd8187`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 17 Aug 2021 01:24:06 GMT
-ADD file:87b4e60fe3af680c6815448374365a44e9ea461bc8ade2960b4639c25aed3ba9 in / 
-# Tue, 17 Aug 2021 01:24:06 GMT
+# Tue, 17 Aug 2021 01:23:40 GMT
+ADD file:5e8343ab9a73edc27c2889634896e792ab289b85c206de0fc31183fdc0a32ac7 in / 
+# Tue, 17 Aug 2021 01:23:41 GMT
 CMD ["bash"]
-# Tue, 17 Aug 2021 06:53:10 GMT
+# Thu, 26 Aug 2021 00:33:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 17 Aug 2021 06:55:46 GMT
+# Thu, 26 Aug 2021 00:38:12 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Tue, 17 Aug 2021 06:55:46 GMT
+# Thu, 26 Aug 2021 00:38:13 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Tue, 17 Aug 2021 06:55:47 GMT
+# Thu, 26 Aug 2021 00:38:13 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Aug 2021 06:55:47 GMT
+# Thu, 26 Aug 2021 00:38:13 GMT
 ENV LANG=C.UTF-8
-# Tue, 17 Aug 2021 06:55:47 GMT
+# Thu, 26 Aug 2021 00:38:13 GMT
 ENV JAVA_VERSION=8u302
-# Tue, 17 Aug 2021 06:56:21 GMT
+# Thu, 26 Aug 2021 00:39:00 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jre_x64_linux_8u302b08.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jre_aarch64_linux_8u302b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Tue, 17 Aug 2021 21:06:47 GMT
+# Thu, 26 Aug 2021 03:51:15 GMT
 ENV STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Tue, 17 Aug 2021 21:06:48 GMT
+# Thu, 26 Aug 2021 03:51:16 GMT
 RUN set -eux;     groupadd -r storm --gid=1000;     useradd -r -g storm --uid=1000 storm;     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R storm:storm "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Tue, 17 Aug 2021 21:06:58 GMT
+# Thu, 26 Aug 2021 03:51:27 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         bash         ca-certificates         dirmngr         gosu         gnupg         python         procps         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Tue, 17 Aug 2021 21:06:58 GMT
+# Thu, 26 Aug 2021 03:51:27 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Tue, 17 Aug 2021 21:07:23 GMT
+# Thu, 26 Aug 2021 03:51:57 GMT
 ARG DISTRO_NAME=apache-storm-1.2.3
-# Tue, 17 Aug 2021 21:09:37 GMT
+# Thu, 26 Aug 2021 03:56:04 GMT
 # ARGS: DISTRO_NAME=apache-storm-1.2.3 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R storm:storm "$DISTRO_NAME"
-# Tue, 17 Aug 2021 21:09:38 GMT
+# Thu, 26 Aug 2021 03:56:04 GMT
 WORKDIR /apache-storm-1.2.3
-# Tue, 17 Aug 2021 21:09:38 GMT
+# Thu, 26 Aug 2021 03:56:04 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-1.2.3/bin
-# Tue, 17 Aug 2021 21:09:38 GMT
+# Thu, 26 Aug 2021 03:56:05 GMT
 COPY file:c74c732450146abc9cc672380c7829a8d892099ec5aa1f81e3fe02c4e8f97f32 in / 
-# Tue, 17 Aug 2021 21:09:38 GMT
+# Thu, 26 Aug 2021 03:56:05 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:e1acddbe380c63f0de4b77d3f287b7c81cd9d89563a230692378126b46ea6546`  
-		Last Modified: Tue, 17 Aug 2021 01:30:21 GMT  
-		Size: 27.1 MB (27145985 bytes)  
+	-	`sha256:99046ad9247f8a1cbd1048d9099d026191ad9cda63c08aadeb704b7000a51717`  
+		Last Modified: Tue, 17 Aug 2021 01:29:35 GMT  
+		Size: 31.4 MB (31361314 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:427b7134c0c7b2e1d9cc703e20a84b850cbbf34ef654cfa0db710678a99da78b`  
-		Last Modified: Tue, 17 Aug 2021 07:00:00 GMT  
-		Size: 3.3 MB (3268768 bytes)  
+	-	`sha256:e97c10298fea9915576e7ff72c6eca3d7c589aaafd6bc6481a5814c4271d2251`  
+		Last Modified: Thu, 26 Aug 2021 00:43:26 GMT  
+		Size: 1.6 MB (1581998 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78d3ca35fb9a4f8f161dc8b1007db271091ce462aa5a6c8aada7e7096f9857b5`  
-		Last Modified: Tue, 17 Aug 2021 07:04:10 GMT  
-		Size: 211.0 B  
+	-	`sha256:12127b9e959d71cc3433b3b0fadff2350394a628f731a4573086dab33730b236`  
+		Last Modified: Thu, 26 Aug 2021 00:50:14 GMT  
+		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:684a63cea6ad88087bcbba64a242772c2e579702d67656a067619cf4691f0a09`  
-		Last Modified: Tue, 17 Aug 2021 07:04:50 GMT  
-		Size: 41.6 MB (41641133 bytes)  
+	-	`sha256:3d6b7b86bdf62cb45e87be0b8e9a59e96c4d4e9ebfd06c912c37feae54d97a96`  
+		Last Modified: Thu, 26 Aug 2021 00:51:12 GMT  
+		Size: 41.6 MB (41632788 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b4b84a014626f0c85cfaa7b2f605c106ef006b43905d96cf41819306c1a3fda`  
-		Last Modified: Tue, 17 Aug 2021 21:18:16 GMT  
+	-	`sha256:f29078d55f40e687eb3f0ae412b18d3a76ac36f0a02ec41c70b5b726fc151339`  
+		Last Modified: Thu, 26 Aug 2021 04:04:49 GMT  
 		Size: 1.8 KB (1844 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a0400fc035ce74526328205a20532517dbf55dd8d77597dc06d983888b5c15e`  
-		Last Modified: Tue, 17 Aug 2021 21:18:19 GMT  
-		Size: 13.1 MB (13127124 bytes)  
+	-	`sha256:c127e2e2acb5b81e7ae557faeb0c6533087d588cf811a852e218f07b47c5002f`  
+		Last Modified: Thu, 26 Aug 2021 04:04:55 GMT  
+		Size: 24.5 MB (24487853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e51385aa115430287675bd696b6d6c9378d03a769b6f42b400292fd8934690b2`  
-		Last Modified: Tue, 17 Aug 2021 21:18:43 GMT  
-		Size: 169.1 MB (169136861 bytes)  
+	-	`sha256:2afc25467c51bf421d24e35d4bca0d51c6e94e2d70c79fe0982a323973c088fb`  
+		Last Modified: Thu, 26 Aug 2021 04:05:14 GMT  
+		Size: 169.1 MB (169137025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8848b4e67cb582dc9486b84a7e3c2f4569943bce64430e808b03b07480a3dca`  
-		Last Modified: Tue, 17 Aug 2021 21:18:32 GMT  
-		Size: 413.0 B  
+	-	`sha256:968332ba56467e2c79eef80016bfe6e3f33818b33d9866e8e8e3efe1e91af2b6`  
+		Last Modified: Thu, 26 Aug 2021 04:05:05 GMT  
+		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `storm:2.2`
 
 ```console
-$ docker pull storm@sha256:ba0ffa483267aa06620a230928f0d06671c3e9b547b43020d990590f81e6ec00
+$ docker pull storm@sha256:898fb985d567d8a69d5261afec1289c495189e55fd2febe57bab6011b00a0cae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -419,96 +419,96 @@ $ docker pull storm@sha256:ba0ffa483267aa06620a230928f0d06671c3e9b547b43020d9905
 ### `storm:2.2` - linux; amd64
 
 ```console
-$ docker pull storm@sha256:f686f6b36d1bbb5a05a1931f98851522c50d38ec807b6c00331f514303b4178f
+$ docker pull storm@sha256:f1d66510765e3fbce174bdbfa894ea9507a48bc96642b38998f8a66ee6898fa6
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **408.0 MB (407950813 bytes)**  
+-	Total Size: **421.8 MB (421829240 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6da2e973a1140f2f54350e68fc958ea83b29248446ec5cf9f06e000bb77708b2`
+-	Image ID: `sha256:57db2710da2f55c8f20fcc61819349d45e51f6167b0043fbab7a34d36fe942c9`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 17 Aug 2021 01:24:06 GMT
-ADD file:87b4e60fe3af680c6815448374365a44e9ea461bc8ade2960b4639c25aed3ba9 in / 
-# Tue, 17 Aug 2021 01:24:06 GMT
+# Tue, 17 Aug 2021 01:23:40 GMT
+ADD file:5e8343ab9a73edc27c2889634896e792ab289b85c206de0fc31183fdc0a32ac7 in / 
+# Tue, 17 Aug 2021 01:23:41 GMT
 CMD ["bash"]
-# Tue, 17 Aug 2021 06:53:10 GMT
+# Thu, 26 Aug 2021 00:33:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 17 Aug 2021 06:54:44 GMT
+# Thu, 26 Aug 2021 00:36:14 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Tue, 17 Aug 2021 06:54:45 GMT
+# Thu, 26 Aug 2021 00:36:15 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Tue, 17 Aug 2021 06:54:45 GMT
+# Thu, 26 Aug 2021 00:36:15 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Aug 2021 06:54:45 GMT
+# Thu, 26 Aug 2021 00:36:15 GMT
 ENV LANG=C.UTF-8
-# Tue, 17 Aug 2021 06:54:45 GMT
+# Thu, 26 Aug 2021 00:36:15 GMT
 ENV JAVA_VERSION=11.0.12
-# Tue, 17 Aug 2021 06:55:30 GMT
+# Thu, 26 Aug 2021 00:37:39 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jre_x64_linux_11.0.12_7.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jre_aarch64_linux_11.0.12_7.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Tue, 17 Aug 2021 21:09:49 GMT
+# Thu, 26 Aug 2021 03:56:09 GMT
 ENV STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Tue, 17 Aug 2021 21:09:50 GMT
+# Thu, 26 Aug 2021 03:56:10 GMT
 RUN set -eux;     groupadd -r storm --gid=1000;     useradd -r -g storm --uid=1000 storm;     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R storm:storm "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Tue, 17 Aug 2021 21:09:59 GMT
+# Thu, 26 Aug 2021 03:56:20 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         bash         ca-certificates         dirmngr         gosu         gnupg         python         procps         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Tue, 17 Aug 2021 21:10:00 GMT
+# Thu, 26 Aug 2021 03:56:20 GMT
 ARG GPG_KEY=79B03D059E628478FC9F1D8B152CAD0C46E87B61
-# Tue, 17 Aug 2021 21:10:00 GMT
+# Thu, 26 Aug 2021 03:56:20 GMT
 ARG DISTRO_NAME=apache-storm-2.2.0
-# Tue, 17 Aug 2021 21:17:53 GMT
+# Thu, 26 Aug 2021 04:04:25 GMT
 # ARGS: DISTRO_NAME=apache-storm-2.2.0 GPG_KEY=79B03D059E628478FC9F1D8B152CAD0C46E87B61
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R storm:storm "$DISTRO_NAME"
-# Tue, 17 Aug 2021 21:17:54 GMT
+# Thu, 26 Aug 2021 04:04:26 GMT
 WORKDIR /apache-storm-2.2.0
-# Tue, 17 Aug 2021 21:17:54 GMT
+# Thu, 26 Aug 2021 04:04:26 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-2.2.0/bin
-# Tue, 17 Aug 2021 21:17:55 GMT
+# Thu, 26 Aug 2021 04:04:26 GMT
 COPY file:c74c732450146abc9cc672380c7829a8d892099ec5aa1f81e3fe02c4e8f97f32 in / 
-# Tue, 17 Aug 2021 21:17:55 GMT
+# Thu, 26 Aug 2021 04:04:26 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:e1acddbe380c63f0de4b77d3f287b7c81cd9d89563a230692378126b46ea6546`  
-		Last Modified: Tue, 17 Aug 2021 01:30:21 GMT  
-		Size: 27.1 MB (27145985 bytes)  
+	-	`sha256:99046ad9247f8a1cbd1048d9099d026191ad9cda63c08aadeb704b7000a51717`  
+		Last Modified: Tue, 17 Aug 2021 01:29:35 GMT  
+		Size: 31.4 MB (31361314 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:427b7134c0c7b2e1d9cc703e20a84b850cbbf34ef654cfa0db710678a99da78b`  
-		Last Modified: Tue, 17 Aug 2021 07:00:00 GMT  
-		Size: 3.3 MB (3268768 bytes)  
+	-	`sha256:e97c10298fea9915576e7ff72c6eca3d7c589aaafd6bc6481a5814c4271d2251`  
+		Last Modified: Thu, 26 Aug 2021 00:43:26 GMT  
+		Size: 1.6 MB (1581998 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cea848f5155d0f648fc7fd258de1ce56d16d1ab42c2745a55e8adf26f997b45b`  
-		Last Modified: Tue, 17 Aug 2021 07:02:46 GMT  
-		Size: 212.0 B  
+	-	`sha256:1ad67722a7508cc8ca694c9e75efebc7c37f65d179dc2d6f36a9a1615dc5206c`  
+		Last Modified: Thu, 26 Aug 2021 00:48:02 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:663bffc94428db61042052aaa00b98a379ea871642fce53bdc8ac9e06754493b`  
-		Last Modified: Tue, 17 Aug 2021 07:03:45 GMT  
-		Size: 47.1 MB (47137229 bytes)  
+	-	`sha256:cbeb29d69a7c2580a75906597d7cd4d59a9eff12b482810794fa01b105155358`  
+		Last Modified: Thu, 26 Aug 2021 00:49:22 GMT  
+		Size: 47.1 MB (47126663 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d19c5f411b51365720602a5c4472a7fe7cd6b49ac0b12a299afa1cb13723cd6`  
-		Last Modified: Tue, 17 Aug 2021 21:18:54 GMT  
-		Size: 1.8 KB (1839 bytes)  
+	-	`sha256:b5b1fb25d8a84e87d3cf984537638611b1ee7579beb6c53165104f5b84693342`  
+		Last Modified: Thu, 26 Aug 2021 04:05:25 GMT  
+		Size: 1.8 KB (1843 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1881b8d5dd722b9bc1b121e52de721ed632856c4bb52c42cfd9b8a032a13794`  
-		Last Modified: Tue, 17 Aug 2021 21:18:57 GMT  
-		Size: 13.1 MB (13127239 bytes)  
+	-	`sha256:0146bbd32bcef6ae7936e8d7b8a28b882394afd20051c3aef20ee60b4f151b96`  
+		Last Modified: Thu, 26 Aug 2021 04:05:31 GMT  
+		Size: 24.5 MB (24487777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6455e5138404d2541bdf9ba88420237e9e455c0b4ca44dc12c5953c7f2ee4905`  
-		Last Modified: Tue, 17 Aug 2021 21:19:12 GMT  
-		Size: 317.3 MB (317269128 bytes)  
+	-	`sha256:f75d6320849ad3b165bbff1bb63a8ddf43e2f5a4b9a0469ecb480a0fa51c4867`  
+		Last Modified: Thu, 26 Aug 2021 04:05:41 GMT  
+		Size: 317.3 MB (317269022 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:693dfce94ee3bf061c009e7aea2b0e3570dc410dec9275b4c892bff376de1295`  
-		Last Modified: Tue, 17 Aug 2021 21:18:54 GMT  
-		Size: 413.0 B  
+	-	`sha256:f469128570ff9b507bbef937b5845316fafd186dd255bc779d2504a18b7ecdbf`  
+		Last Modified: Thu, 26 Aug 2021 04:05:25 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `storm:2.2.0`
 
 ```console
-$ docker pull storm@sha256:ba0ffa483267aa06620a230928f0d06671c3e9b547b43020d990590f81e6ec00
+$ docker pull storm@sha256:898fb985d567d8a69d5261afec1289c495189e55fd2febe57bab6011b00a0cae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -518,96 +518,96 @@ $ docker pull storm@sha256:ba0ffa483267aa06620a230928f0d06671c3e9b547b43020d9905
 ### `storm:2.2.0` - linux; amd64
 
 ```console
-$ docker pull storm@sha256:f686f6b36d1bbb5a05a1931f98851522c50d38ec807b6c00331f514303b4178f
+$ docker pull storm@sha256:f1d66510765e3fbce174bdbfa894ea9507a48bc96642b38998f8a66ee6898fa6
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **408.0 MB (407950813 bytes)**  
+-	Total Size: **421.8 MB (421829240 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6da2e973a1140f2f54350e68fc958ea83b29248446ec5cf9f06e000bb77708b2`
+-	Image ID: `sha256:57db2710da2f55c8f20fcc61819349d45e51f6167b0043fbab7a34d36fe942c9`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 17 Aug 2021 01:24:06 GMT
-ADD file:87b4e60fe3af680c6815448374365a44e9ea461bc8ade2960b4639c25aed3ba9 in / 
-# Tue, 17 Aug 2021 01:24:06 GMT
+# Tue, 17 Aug 2021 01:23:40 GMT
+ADD file:5e8343ab9a73edc27c2889634896e792ab289b85c206de0fc31183fdc0a32ac7 in / 
+# Tue, 17 Aug 2021 01:23:41 GMT
 CMD ["bash"]
-# Tue, 17 Aug 2021 06:53:10 GMT
+# Thu, 26 Aug 2021 00:33:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 17 Aug 2021 06:54:44 GMT
+# Thu, 26 Aug 2021 00:36:14 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Tue, 17 Aug 2021 06:54:45 GMT
+# Thu, 26 Aug 2021 00:36:15 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Tue, 17 Aug 2021 06:54:45 GMT
+# Thu, 26 Aug 2021 00:36:15 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Aug 2021 06:54:45 GMT
+# Thu, 26 Aug 2021 00:36:15 GMT
 ENV LANG=C.UTF-8
-# Tue, 17 Aug 2021 06:54:45 GMT
+# Thu, 26 Aug 2021 00:36:15 GMT
 ENV JAVA_VERSION=11.0.12
-# Tue, 17 Aug 2021 06:55:30 GMT
+# Thu, 26 Aug 2021 00:37:39 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jre_x64_linux_11.0.12_7.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jre_aarch64_linux_11.0.12_7.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Tue, 17 Aug 2021 21:09:49 GMT
+# Thu, 26 Aug 2021 03:56:09 GMT
 ENV STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Tue, 17 Aug 2021 21:09:50 GMT
+# Thu, 26 Aug 2021 03:56:10 GMT
 RUN set -eux;     groupadd -r storm --gid=1000;     useradd -r -g storm --uid=1000 storm;     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R storm:storm "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Tue, 17 Aug 2021 21:09:59 GMT
+# Thu, 26 Aug 2021 03:56:20 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         bash         ca-certificates         dirmngr         gosu         gnupg         python         procps         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Tue, 17 Aug 2021 21:10:00 GMT
+# Thu, 26 Aug 2021 03:56:20 GMT
 ARG GPG_KEY=79B03D059E628478FC9F1D8B152CAD0C46E87B61
-# Tue, 17 Aug 2021 21:10:00 GMT
+# Thu, 26 Aug 2021 03:56:20 GMT
 ARG DISTRO_NAME=apache-storm-2.2.0
-# Tue, 17 Aug 2021 21:17:53 GMT
+# Thu, 26 Aug 2021 04:04:25 GMT
 # ARGS: DISTRO_NAME=apache-storm-2.2.0 GPG_KEY=79B03D059E628478FC9F1D8B152CAD0C46E87B61
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R storm:storm "$DISTRO_NAME"
-# Tue, 17 Aug 2021 21:17:54 GMT
+# Thu, 26 Aug 2021 04:04:26 GMT
 WORKDIR /apache-storm-2.2.0
-# Tue, 17 Aug 2021 21:17:54 GMT
+# Thu, 26 Aug 2021 04:04:26 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-2.2.0/bin
-# Tue, 17 Aug 2021 21:17:55 GMT
+# Thu, 26 Aug 2021 04:04:26 GMT
 COPY file:c74c732450146abc9cc672380c7829a8d892099ec5aa1f81e3fe02c4e8f97f32 in / 
-# Tue, 17 Aug 2021 21:17:55 GMT
+# Thu, 26 Aug 2021 04:04:26 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:e1acddbe380c63f0de4b77d3f287b7c81cd9d89563a230692378126b46ea6546`  
-		Last Modified: Tue, 17 Aug 2021 01:30:21 GMT  
-		Size: 27.1 MB (27145985 bytes)  
+	-	`sha256:99046ad9247f8a1cbd1048d9099d026191ad9cda63c08aadeb704b7000a51717`  
+		Last Modified: Tue, 17 Aug 2021 01:29:35 GMT  
+		Size: 31.4 MB (31361314 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:427b7134c0c7b2e1d9cc703e20a84b850cbbf34ef654cfa0db710678a99da78b`  
-		Last Modified: Tue, 17 Aug 2021 07:00:00 GMT  
-		Size: 3.3 MB (3268768 bytes)  
+	-	`sha256:e97c10298fea9915576e7ff72c6eca3d7c589aaafd6bc6481a5814c4271d2251`  
+		Last Modified: Thu, 26 Aug 2021 00:43:26 GMT  
+		Size: 1.6 MB (1581998 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cea848f5155d0f648fc7fd258de1ce56d16d1ab42c2745a55e8adf26f997b45b`  
-		Last Modified: Tue, 17 Aug 2021 07:02:46 GMT  
-		Size: 212.0 B  
+	-	`sha256:1ad67722a7508cc8ca694c9e75efebc7c37f65d179dc2d6f36a9a1615dc5206c`  
+		Last Modified: Thu, 26 Aug 2021 00:48:02 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:663bffc94428db61042052aaa00b98a379ea871642fce53bdc8ac9e06754493b`  
-		Last Modified: Tue, 17 Aug 2021 07:03:45 GMT  
-		Size: 47.1 MB (47137229 bytes)  
+	-	`sha256:cbeb29d69a7c2580a75906597d7cd4d59a9eff12b482810794fa01b105155358`  
+		Last Modified: Thu, 26 Aug 2021 00:49:22 GMT  
+		Size: 47.1 MB (47126663 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d19c5f411b51365720602a5c4472a7fe7cd6b49ac0b12a299afa1cb13723cd6`  
-		Last Modified: Tue, 17 Aug 2021 21:18:54 GMT  
-		Size: 1.8 KB (1839 bytes)  
+	-	`sha256:b5b1fb25d8a84e87d3cf984537638611b1ee7579beb6c53165104f5b84693342`  
+		Last Modified: Thu, 26 Aug 2021 04:05:25 GMT  
+		Size: 1.8 KB (1843 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1881b8d5dd722b9bc1b121e52de721ed632856c4bb52c42cfd9b8a032a13794`  
-		Last Modified: Tue, 17 Aug 2021 21:18:57 GMT  
-		Size: 13.1 MB (13127239 bytes)  
+	-	`sha256:0146bbd32bcef6ae7936e8d7b8a28b882394afd20051c3aef20ee60b4f151b96`  
+		Last Modified: Thu, 26 Aug 2021 04:05:31 GMT  
+		Size: 24.5 MB (24487777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6455e5138404d2541bdf9ba88420237e9e455c0b4ca44dc12c5953c7f2ee4905`  
-		Last Modified: Tue, 17 Aug 2021 21:19:12 GMT  
-		Size: 317.3 MB (317269128 bytes)  
+	-	`sha256:f75d6320849ad3b165bbff1bb63a8ddf43e2f5a4b9a0469ecb480a0fa51c4867`  
+		Last Modified: Thu, 26 Aug 2021 04:05:41 GMT  
+		Size: 317.3 MB (317269022 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:693dfce94ee3bf061c009e7aea2b0e3570dc410dec9275b4c892bff376de1295`  
-		Last Modified: Tue, 17 Aug 2021 21:18:54 GMT  
-		Size: 413.0 B  
+	-	`sha256:f469128570ff9b507bbef937b5845316fafd186dd255bc779d2504a18b7ecdbf`  
+		Last Modified: Thu, 26 Aug 2021 04:05:25 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `storm:latest`
 
 ```console
-$ docker pull storm@sha256:ba0ffa483267aa06620a230928f0d06671c3e9b547b43020d990590f81e6ec00
+$ docker pull storm@sha256:898fb985d567d8a69d5261afec1289c495189e55fd2febe57bab6011b00a0cae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -617,88 +617,88 @@ $ docker pull storm@sha256:ba0ffa483267aa06620a230928f0d06671c3e9b547b43020d9905
 ### `storm:latest` - linux; amd64
 
 ```console
-$ docker pull storm@sha256:f686f6b36d1bbb5a05a1931f98851522c50d38ec807b6c00331f514303b4178f
+$ docker pull storm@sha256:f1d66510765e3fbce174bdbfa894ea9507a48bc96642b38998f8a66ee6898fa6
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **408.0 MB (407950813 bytes)**  
+-	Total Size: **421.8 MB (421829240 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6da2e973a1140f2f54350e68fc958ea83b29248446ec5cf9f06e000bb77708b2`
+-	Image ID: `sha256:57db2710da2f55c8f20fcc61819349d45e51f6167b0043fbab7a34d36fe942c9`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
-# Tue, 17 Aug 2021 01:24:06 GMT
-ADD file:87b4e60fe3af680c6815448374365a44e9ea461bc8ade2960b4639c25aed3ba9 in / 
-# Tue, 17 Aug 2021 01:24:06 GMT
+# Tue, 17 Aug 2021 01:23:40 GMT
+ADD file:5e8343ab9a73edc27c2889634896e792ab289b85c206de0fc31183fdc0a32ac7 in / 
+# Tue, 17 Aug 2021 01:23:41 GMT
 CMD ["bash"]
-# Tue, 17 Aug 2021 06:53:10 GMT
+# Thu, 26 Aug 2021 00:33:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 17 Aug 2021 06:54:44 GMT
+# Thu, 26 Aug 2021 00:36:14 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Tue, 17 Aug 2021 06:54:45 GMT
+# Thu, 26 Aug 2021 00:36:15 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Tue, 17 Aug 2021 06:54:45 GMT
+# Thu, 26 Aug 2021 00:36:15 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Aug 2021 06:54:45 GMT
+# Thu, 26 Aug 2021 00:36:15 GMT
 ENV LANG=C.UTF-8
-# Tue, 17 Aug 2021 06:54:45 GMT
+# Thu, 26 Aug 2021 00:36:15 GMT
 ENV JAVA_VERSION=11.0.12
-# Tue, 17 Aug 2021 06:55:30 GMT
+# Thu, 26 Aug 2021 00:37:39 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jre_x64_linux_11.0.12_7.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jre_aarch64_linux_11.0.12_7.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Tue, 17 Aug 2021 21:09:49 GMT
+# Thu, 26 Aug 2021 03:56:09 GMT
 ENV STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
-# Tue, 17 Aug 2021 21:09:50 GMT
+# Thu, 26 Aug 2021 03:56:10 GMT
 RUN set -eux;     groupadd -r storm --gid=1000;     useradd -r -g storm --uid=1000 storm;     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R storm:storm "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Tue, 17 Aug 2021 21:09:59 GMT
+# Thu, 26 Aug 2021 03:56:20 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         bash         ca-certificates         dirmngr         gosu         gnupg         python         procps         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Tue, 17 Aug 2021 21:10:00 GMT
+# Thu, 26 Aug 2021 03:56:20 GMT
 ARG GPG_KEY=79B03D059E628478FC9F1D8B152CAD0C46E87B61
-# Tue, 17 Aug 2021 21:10:00 GMT
+# Thu, 26 Aug 2021 03:56:20 GMT
 ARG DISTRO_NAME=apache-storm-2.2.0
-# Tue, 17 Aug 2021 21:17:53 GMT
+# Thu, 26 Aug 2021 04:04:25 GMT
 # ARGS: DISTRO_NAME=apache-storm-2.2.0 GPG_KEY=79B03D059E628478FC9F1D8B152CAD0C46E87B61
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY" ||     gpg --keyserver pgp.mit.edu --recv-keys "$GPG_KEY" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R storm:storm "$DISTRO_NAME"
-# Tue, 17 Aug 2021 21:17:54 GMT
+# Thu, 26 Aug 2021 04:04:26 GMT
 WORKDIR /apache-storm-2.2.0
-# Tue, 17 Aug 2021 21:17:54 GMT
+# Thu, 26 Aug 2021 04:04:26 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-2.2.0/bin
-# Tue, 17 Aug 2021 21:17:55 GMT
+# Thu, 26 Aug 2021 04:04:26 GMT
 COPY file:c74c732450146abc9cc672380c7829a8d892099ec5aa1f81e3fe02c4e8f97f32 in / 
-# Tue, 17 Aug 2021 21:17:55 GMT
+# Thu, 26 Aug 2021 04:04:26 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:e1acddbe380c63f0de4b77d3f287b7c81cd9d89563a230692378126b46ea6546`  
-		Last Modified: Tue, 17 Aug 2021 01:30:21 GMT  
-		Size: 27.1 MB (27145985 bytes)  
+	-	`sha256:99046ad9247f8a1cbd1048d9099d026191ad9cda63c08aadeb704b7000a51717`  
+		Last Modified: Tue, 17 Aug 2021 01:29:35 GMT  
+		Size: 31.4 MB (31361314 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:427b7134c0c7b2e1d9cc703e20a84b850cbbf34ef654cfa0db710678a99da78b`  
-		Last Modified: Tue, 17 Aug 2021 07:00:00 GMT  
-		Size: 3.3 MB (3268768 bytes)  
+	-	`sha256:e97c10298fea9915576e7ff72c6eca3d7c589aaafd6bc6481a5814c4271d2251`  
+		Last Modified: Thu, 26 Aug 2021 00:43:26 GMT  
+		Size: 1.6 MB (1581998 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cea848f5155d0f648fc7fd258de1ce56d16d1ab42c2745a55e8adf26f997b45b`  
-		Last Modified: Tue, 17 Aug 2021 07:02:46 GMT  
-		Size: 212.0 B  
+	-	`sha256:1ad67722a7508cc8ca694c9e75efebc7c37f65d179dc2d6f36a9a1615dc5206c`  
+		Last Modified: Thu, 26 Aug 2021 00:48:02 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:663bffc94428db61042052aaa00b98a379ea871642fce53bdc8ac9e06754493b`  
-		Last Modified: Tue, 17 Aug 2021 07:03:45 GMT  
-		Size: 47.1 MB (47137229 bytes)  
+	-	`sha256:cbeb29d69a7c2580a75906597d7cd4d59a9eff12b482810794fa01b105155358`  
+		Last Modified: Thu, 26 Aug 2021 00:49:22 GMT  
+		Size: 47.1 MB (47126663 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d19c5f411b51365720602a5c4472a7fe7cd6b49ac0b12a299afa1cb13723cd6`  
-		Last Modified: Tue, 17 Aug 2021 21:18:54 GMT  
-		Size: 1.8 KB (1839 bytes)  
+	-	`sha256:b5b1fb25d8a84e87d3cf984537638611b1ee7579beb6c53165104f5b84693342`  
+		Last Modified: Thu, 26 Aug 2021 04:05:25 GMT  
+		Size: 1.8 KB (1843 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1881b8d5dd722b9bc1b121e52de721ed632856c4bb52c42cfd9b8a032a13794`  
-		Last Modified: Tue, 17 Aug 2021 21:18:57 GMT  
-		Size: 13.1 MB (13127239 bytes)  
+	-	`sha256:0146bbd32bcef6ae7936e8d7b8a28b882394afd20051c3aef20ee60b4f151b96`  
+		Last Modified: Thu, 26 Aug 2021 04:05:31 GMT  
+		Size: 24.5 MB (24487777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6455e5138404d2541bdf9ba88420237e9e455c0b4ca44dc12c5953c7f2ee4905`  
-		Last Modified: Tue, 17 Aug 2021 21:19:12 GMT  
-		Size: 317.3 MB (317269128 bytes)  
+	-	`sha256:f75d6320849ad3b165bbff1bb63a8ddf43e2f5a4b9a0469ecb480a0fa51c4867`  
+		Last Modified: Thu, 26 Aug 2021 04:05:41 GMT  
+		Size: 317.3 MB (317269022 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:693dfce94ee3bf061c009e7aea2b0e3570dc410dec9275b4c892bff376de1295`  
-		Last Modified: Tue, 17 Aug 2021 21:18:54 GMT  
-		Size: 413.0 B  
+	-	`sha256:f469128570ff9b507bbef937b5845316fafd186dd255bc779d2504a18b7ecdbf`  
+		Last Modified: Thu, 26 Aug 2021 04:05:25 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
