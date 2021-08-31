@@ -9,16 +9,19 @@
 -	[`julia:1-buster`](#julia1-buster)
 -	[`julia:1-windowsservercore-1809`](#julia1-windowsservercore-1809)
 -	[`julia:1-windowsservercore-ltsc2016`](#julia1-windowsservercore-ltsc2016)
+-	[`julia:1-windowsservercore-ltsc2022`](#julia1-windowsservercore-ltsc2022)
 -	[`julia:1.0`](#julia10)
 -	[`julia:1.0-buster`](#julia10-buster)
 -	[`julia:1.0-stretch`](#julia10-stretch)
 -	[`julia:1.0-windowsservercore-1809`](#julia10-windowsservercore-1809)
 -	[`julia:1.0-windowsservercore-ltsc2016`](#julia10-windowsservercore-ltsc2016)
+-	[`julia:1.0-windowsservercore-ltsc2022`](#julia10-windowsservercore-ltsc2022)
 -	[`julia:1.0.5`](#julia105)
 -	[`julia:1.0.5-buster`](#julia105-buster)
 -	[`julia:1.0.5-stretch`](#julia105-stretch)
 -	[`julia:1.0.5-windowsservercore-1809`](#julia105-windowsservercore-1809)
 -	[`julia:1.0.5-windowsservercore-ltsc2016`](#julia105-windowsservercore-ltsc2016)
+-	[`julia:1.0.5-windowsservercore-ltsc2022`](#julia105-windowsservercore-ltsc2022)
 -	[`julia:1.6`](#julia16)
 -	[`julia:1.6-alpine`](#julia16-alpine)
 -	[`julia:1.6-alpine3.13`](#julia16-alpine313)
@@ -26,6 +29,7 @@
 -	[`julia:1.6-buster`](#julia16-buster)
 -	[`julia:1.6-windowsservercore-1809`](#julia16-windowsservercore-1809)
 -	[`julia:1.6-windowsservercore-ltsc2016`](#julia16-windowsservercore-ltsc2016)
+-	[`julia:1.6-windowsservercore-ltsc2022`](#julia16-windowsservercore-ltsc2022)
 -	[`julia:1.6.2`](#julia162)
 -	[`julia:1.6.2-alpine`](#julia162-alpine)
 -	[`julia:1.6.2-alpine3.13`](#julia162-alpine313)
@@ -33,6 +37,35 @@
 -	[`julia:1.6.2-buster`](#julia162-buster)
 -	[`julia:1.6.2-windowsservercore-1809`](#julia162-windowsservercore-1809)
 -	[`julia:1.6.2-windowsservercore-ltsc2016`](#julia162-windowsservercore-ltsc2016)
+-	[`julia:1.6.2-windowsservercore-ltsc2022`](#julia162-windowsservercore-ltsc2022)
+-	[`julia:1.7`](#julia17)
+-	[`julia:1.7-alpine`](#julia17-alpine)
+-	[`julia:1.7-alpine3.14`](#julia17-alpine314)
+-	[`julia:1.7-buster`](#julia17-buster)
+-	[`julia:1.7-rc`](#julia17-rc)
+-	[`julia:1.7-rc-alpine`](#julia17-rc-alpine)
+-	[`julia:1.7-rc-alpine3.14`](#julia17-rc-alpine314)
+-	[`julia:1.7-rc-buster`](#julia17-rc-buster)
+-	[`julia:1.7-rc-windowsservercore-1809`](#julia17-rc-windowsservercore-1809)
+-	[`julia:1.7-rc-windowsservercore-ltsc2016`](#julia17-rc-windowsservercore-ltsc2016)
+-	[`julia:1.7-rc-windowsservercore-ltsc2022`](#julia17-rc-windowsservercore-ltsc2022)
+-	[`julia:1.7-windowsservercore-1809`](#julia17-windowsservercore-1809)
+-	[`julia:1.7-windowsservercore-ltsc2016`](#julia17-windowsservercore-ltsc2016)
+-	[`julia:1.7-windowsservercore-ltsc2022`](#julia17-windowsservercore-ltsc2022)
+-	[`julia:1.7.0`](#julia170)
+-	[`julia:1.7.0-alpine`](#julia170-alpine)
+-	[`julia:1.7.0-alpine3.14`](#julia170-alpine314)
+-	[`julia:1.7.0-beta4`](#julia170-beta4)
+-	[`julia:1.7.0-beta4-alpine`](#julia170-beta4-alpine)
+-	[`julia:1.7.0-beta4-alpine3.14`](#julia170-beta4-alpine314)
+-	[`julia:1.7.0-beta4-buster`](#julia170-beta4-buster)
+-	[`julia:1.7.0-beta4-windowsservercore-1809`](#julia170-beta4-windowsservercore-1809)
+-	[`julia:1.7.0-beta4-windowsservercore-ltsc2016`](#julia170-beta4-windowsservercore-ltsc2016)
+-	[`julia:1.7.0-beta4-windowsservercore-ltsc2022`](#julia170-beta4-windowsservercore-ltsc2022)
+-	[`julia:1.7.0-buster`](#julia170-buster)
+-	[`julia:1.7.0-windowsservercore-1809`](#julia170-windowsservercore-1809)
+-	[`julia:1.7.0-windowsservercore-ltsc2016`](#julia170-windowsservercore-ltsc2016)
+-	[`julia:1.7.0-windowsservercore-ltsc2022`](#julia170-windowsservercore-ltsc2022)
 -	[`julia:alpine`](#juliaalpine)
 -	[`julia:alpine3.13`](#juliaalpine313)
 -	[`julia:alpine3.14`](#juliaalpine314)
@@ -40,6 +73,7 @@
 -	[`julia:latest`](#julialatest)
 -	[`julia:windowsservercore-1809`](#juliawindowsservercore-1809)
 -	[`julia:windowsservercore-ltsc2016`](#juliawindowsservercore-ltsc2016)
+-	[`julia:windowsservercore-ltsc2022`](#juliawindowsservercore-ltsc2022)
 
 ## `julia:1`
 
@@ -963,6 +997,10 @@ CMD ["julia"]
 		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `julia:1-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
 ## `julia:1.0`
 
 ```console
@@ -1836,6 +1874,10 @@ CMD ["julia"]
 		Size: 1.4 KB (1417 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `julia:1.0-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
 ## `julia:1.0.5`
 
 ```console
@@ -2708,6 +2750,10 @@ CMD ["julia"]
 		Last Modified: Wed, 25 Aug 2021 16:04:24 GMT  
 		Size: 1.4 KB (1417 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `julia:1.0.5-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
 
 ## `julia:1.6`
 
@@ -3631,6 +3677,10 @@ CMD ["julia"]
 		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `julia:1.6-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
 ## `julia:1.6.2`
 
 ```console
@@ -4553,6 +4603,122 @@ CMD ["julia"]
 		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `julia:1.6.2-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `julia:1.7`
+
+**does not exist** (yet?)
+
+## `julia:1.7-alpine`
+
+**does not exist** (yet?)
+
+## `julia:1.7-alpine3.14`
+
+**does not exist** (yet?)
+
+## `julia:1.7-buster`
+
+**does not exist** (yet?)
+
+## `julia:1.7-rc`
+
+**does not exist** (yet?)
+
+## `julia:1.7-rc-alpine`
+
+**does not exist** (yet?)
+
+## `julia:1.7-rc-alpine3.14`
+
+**does not exist** (yet?)
+
+## `julia:1.7-rc-buster`
+
+**does not exist** (yet?)
+
+## `julia:1.7-rc-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `julia:1.7-rc-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `julia:1.7-rc-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `julia:1.7-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `julia:1.7-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `julia:1.7-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `julia:1.7.0`
+
+**does not exist** (yet?)
+
+## `julia:1.7.0-alpine`
+
+**does not exist** (yet?)
+
+## `julia:1.7.0-alpine3.14`
+
+**does not exist** (yet?)
+
+## `julia:1.7.0-beta4`
+
+**does not exist** (yet?)
+
+## `julia:1.7.0-beta4-alpine`
+
+**does not exist** (yet?)
+
+## `julia:1.7.0-beta4-alpine3.14`
+
+**does not exist** (yet?)
+
+## `julia:1.7.0-beta4-buster`
+
+**does not exist** (yet?)
+
+## `julia:1.7.0-beta4-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `julia:1.7.0-beta4-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `julia:1.7.0-beta4-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `julia:1.7.0-buster`
+
+**does not exist** (yet?)
+
+## `julia:1.7.0-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `julia:1.7.0-windowsservercore-ltsc2016`
+
+**does not exist** (yet?)
+
+## `julia:1.7.0-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
 ## `julia:alpine`
 
 ```console
@@ -5474,3 +5640,7 @@ CMD ["julia"]
 		Last Modified: Wed, 25 Aug 2021 16:01:47 GMT  
 		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `julia:windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
