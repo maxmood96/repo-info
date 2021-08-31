@@ -1,7 +1,7 @@
 ## `ros:galactic-ros-core`
 
 ```console
-$ docker pull ros@sha256:692688917540052463916bb462853ab5f59b6fd3aed63aa6a0f367a4661862e3
+$ docker pull ros@sha256:b24d7cb90852a1bfc52a14ea9a2999596a58e3d12bbf04c0b9ce6abd484fa2d7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -85,72 +85,72 @@ CMD ["bash"]
 ### `ros:galactic-ros-core` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:42dacce98ba7958c04074a346997d440649f8c9734f0783092e749fe7b8781b7
+$ docker pull ros@sha256:c259a3d034d83af526b2dcb957a989fecb8bb7d74cc5f237754d946e2c5ecf13
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **133.9 MB (133904699 bytes)**  
+-	Total Size: **133.9 MB (133909725 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e9379a018281708a6750c342fefa573be49224176d3a1b7c51d67948fb6fc0e`
+-	Image ID: `sha256:e7945809677fd2da50bc1cd2c0807f85dc5ace5635ec2143153283b9c84fb63b`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 26 Jul 2021 21:48:57 GMT
-ADD file:10d7c5e7290ff5627132fb35c51a2143351e184b02e3fb6d9c1c06815ae803ae in / 
-# Mon, 26 Jul 2021 21:48:57 GMT
+# Tue, 31 Aug 2021 01:40:44 GMT
+ADD file:cec21619ecbd37b4cf8da15153b8957a343cd25c6f714e3ac3969b6003704a58 in / 
+# Tue, 31 Aug 2021 01:40:45 GMT
 CMD ["bash"]
-# Mon, 26 Jul 2021 23:03:21 GMT
+# Tue, 31 Aug 2021 02:35:30 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/*
-# Mon, 26 Jul 2021 23:03:29 GMT
+# Tue, 31 Aug 2021 02:35:38 GMT
 RUN apt-get update && apt-get install -q -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Mon, 26 Jul 2021 23:08:14 GMT
+# Tue, 31 Aug 2021 02:40:07 GMT
 RUN echo "deb http://packages.ros.org/ros2/ubuntu focal main" > /etc/apt/sources.list.d/ros2-latest.list
-# Mon, 26 Jul 2021 23:08:16 GMT
+# Tue, 31 Aug 2021 02:40:14 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
-# Mon, 26 Jul 2021 23:08:17 GMT
+# Tue, 31 Aug 2021 02:40:15 GMT
 ENV LANG=C.UTF-8
-# Mon, 26 Jul 2021 23:08:17 GMT
+# Tue, 31 Aug 2021 02:40:15 GMT
 ENV LC_ALL=C.UTF-8
-# Mon, 26 Jul 2021 23:10:43 GMT
+# Tue, 31 Aug 2021 02:42:53 GMT
 ENV ROS_DISTRO=galactic
-# Mon, 26 Jul 2021 23:11:24 GMT
+# Tue, 31 Aug 2021 02:43:31 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-galactic-ros-core=0.9.3-2*     && rm -rf /var/lib/apt/lists/*
-# Mon, 26 Jul 2021 23:11:25 GMT
+# Tue, 31 Aug 2021 02:43:33 GMT
 COPY file:57f71198b74c2c1967889acdfddb85d428137580d18be4211971fc7381557b6c in / 
-# Mon, 26 Jul 2021 23:11:26 GMT
+# Tue, 31 Aug 2021 02:43:33 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Mon, 26 Jul 2021 23:11:26 GMT
+# Tue, 31 Aug 2021 02:43:33 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:be0de17fe24f767ec21bec97d0e8ea8f0d907fe05238a0bf9cce0995f529f7ea`  
-		Last Modified: Mon, 26 Jul 2021 21:50:59 GMT  
-		Size: 27.2 MB (27170255 bytes)  
+	-	`sha256:ab2d02b1ec420fdb84c9f52abda403b6aef20f5de904a2ecda5ae4f5cd6e4d46`  
+		Last Modified: Tue, 31 Aug 2021 01:42:34 GMT  
+		Size: 27.2 MB (27173099 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c47ae118bf19cf825ac83647c1d65d099e24417c73620e6553806e36aa26d8c5`  
-		Last Modified: Mon, 26 Jul 2021 23:20:22 GMT  
-		Size: 1.2 MB (1183453 bytes)  
+	-	`sha256:b869ca97320a7af4e9ce7c382543a1b04a7005c70779507cbb85ace89adde42e`  
+		Last Modified: Tue, 31 Aug 2021 02:52:34 GMT  
+		Size: 1.2 MB (1183579 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a74becffb9ea2d3b903303692f91a3abc607df25339bd7464db56343eefb622e`  
-		Last Modified: Mon, 26 Jul 2021 23:20:20 GMT  
-		Size: 5.5 MB (5512652 bytes)  
+	-	`sha256:39c7b498b8e70b033b401f685710eb46ada1aab199891dfe061488eb0ba40831`  
+		Last Modified: Tue, 31 Aug 2021 02:52:32 GMT  
+		Size: 5.5 MB (5512786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8145ea28ffd9b0942ba98116cde1e498e4572f6c665186683366584a32a0a9c0`  
-		Last Modified: Mon, 26 Jul 2021 23:23:38 GMT  
-		Size: 228.0 B  
+	-	`sha256:153e16b4767757045ca5abd59a845a7b7cbc2916b1d1a63d930661eec9fc232b`  
+		Last Modified: Tue, 31 Aug 2021 02:55:39 GMT  
+		Size: 230.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9fb0e59f8a1856416b541915263ab8419535ec407203cdedec71cee7983a4f28`  
-		Last Modified: Mon, 26 Jul 2021 23:23:37 GMT  
+	-	`sha256:89e90d25ecd370ffb201a02739df5a10f437fb2d2c95060875411cf40d5d0e12`  
+		Last Modified: Tue, 31 Aug 2021 02:55:39 GMT  
 		Size: 2.0 KB (1991 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5c0afa8948e130f316bf6e937a5009c86752b46a86110f2b0bc050963acae9a`  
-		Last Modified: Mon, 26 Jul 2021 23:25:46 GMT  
-		Size: 100.0 MB (100035926 bytes)  
+	-	`sha256:2d77fc4622ebe94f4dbfef84290640d2b0a8cb645e806937cae119da66e0a32c`  
+		Last Modified: Tue, 31 Aug 2021 02:57:26 GMT  
+		Size: 100.0 MB (100037845 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:feacb211dd1e150cea7c549393186087c461f9055c1497d2fe1171b9b691a56e`  
-		Last Modified: Mon, 26 Jul 2021 23:25:23 GMT  
-		Size: 194.0 B  
+	-	`sha256:67a1ce4ccd8df8c236b714872e85748b5011a9c784f1308d3e8b7cde6d55cdcf`  
+		Last Modified: Tue, 31 Aug 2021 02:57:07 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
