@@ -1,7 +1,7 @@
 ## `couchbase:enterprise-7.0.0`
 
 ```console
-$ docker pull couchbase@sha256:005fb3ba97c2362b9ccc9d96f0d94bf09c2fe784d889fe71c5a2ba475e4645a4
+$ docker pull couchbase@sha256:1d5958e7e31427a89b34c3ef3cfaeb12a317d3059eefdc6007b96c99315ecbca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,118 +11,118 @@ $ docker pull couchbase@sha256:005fb3ba97c2362b9ccc9d96f0d94bf09c2fe784d889fe71c
 ### `couchbase:enterprise-7.0.0` - linux; amd64
 
 ```console
-$ docker pull couchbase@sha256:f2a81b4271f0bdec4d2e5f8f2b9e9febced79048b4cd9c144ff3b832272ba76e
+$ docker pull couchbase@sha256:ab19f7e9a2dec339e520fadac5fbf5c9d285e914905773af15e5af80876aea45
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **633.1 MB (633083217 bytes)**  
+-	Total Size: **633.1 MB (633079025 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9022428339d4615af519685439630f4532bb43a64f4c82f29c299271e16d0e56`
+-	Image ID: `sha256:a47887bb55d99c6ff77ed23a48d7c08b17517e38205c61deaa071f12a6fe87ef`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["couchbase-server"]`
 
 ```dockerfile
-# Mon, 26 Jul 2021 21:21:39 GMT
-ADD file:524e8d93ad65f08a0cb0d144268350186e36f508006b05b8faf2e1289499b59f in / 
-# Mon, 26 Jul 2021 21:21:40 GMT
+# Tue, 31 Aug 2021 01:20:55 GMT
+ADD file:d2abf27fe2e8b0b5f4da68c018560c73e11c53098329246e3e6fe176698ef941 in / 
+# Tue, 31 Aug 2021 01:20:56 GMT
 CMD ["bash"]
-# Mon, 26 Jul 2021 22:17:12 GMT
+# Tue, 31 Aug 2021 03:17:15 GMT
 LABEL maintainer=docker@couchbase.com
-# Mon, 26 Jul 2021 22:20:33 GMT
+# Tue, 31 Aug 2021 03:17:35 GMT
 RUN set -x &&     apt-get update &&     apt-get install -yq runit wget chrpath tzdata     lsof lshw sysstat net-tools numactl bzip2 &&     apt-get autoremove && apt-get clean &&     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-# Mon, 26 Jul 2021 22:20:33 GMT
+# Tue, 31 Aug 2021 03:17:36 GMT
 RUN if [ ! -x /usr/sbin/runsvdir-start ]; then         cp -a /etc/runit/2 /usr/sbin/runsvdir-start;     fi
-# Tue, 27 Jul 2021 19:19:36 GMT
+# Tue, 31 Aug 2021 03:17:36 GMT
 ARG CB_VERSION=7.0.0
-# Tue, 27 Jul 2021 19:19:36 GMT
+# Tue, 31 Aug 2021 03:17:37 GMT
 ARG CB_RELEASE_URL=https://packages.couchbase.com/releases/7.0.0
-# Tue, 27 Jul 2021 19:19:37 GMT
+# Tue, 31 Aug 2021 03:17:37 GMT
 ARG CB_PACKAGE=couchbase-server-enterprise_7.0.0-ubuntu20.04_amd64.deb
-# Tue, 27 Jul 2021 19:19:37 GMT
+# Tue, 31 Aug 2021 03:17:37 GMT
 ARG CB_SHA256=6ce174d5ffd22ade6abbf44619e4126c6977635f58f7e08d09553b6b9f8117b7
-# Tue, 27 Jul 2021 19:19:37 GMT
+# Tue, 31 Aug 2021 03:17:37 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/couchbase/bin:/opt/couchbase/bin/tools:/opt/couchbase/bin/install
-# Tue, 27 Jul 2021 19:19:38 GMT
+# Tue, 31 Aug 2021 03:17:38 GMT
 # ARGS: CB_PACKAGE=couchbase-server-enterprise_7.0.0-ubuntu20.04_amd64.deb CB_RELEASE_URL=https://packages.couchbase.com/releases/7.0.0 CB_SHA256=6ce174d5ffd22ade6abbf44619e4126c6977635f58f7e08d09553b6b9f8117b7 CB_VERSION=7.0.0
 RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
-# Tue, 27 Jul 2021 19:20:52 GMT
+# Tue, 31 Aug 2021 03:18:51 GMT
 # ARGS: CB_PACKAGE=couchbase-server-enterprise_7.0.0-ubuntu20.04_amd64.deb CB_RELEASE_URL=https://packages.couchbase.com/releases/7.0.0 CB_SHA256=6ce174d5ffd22ade6abbf44619e4126c6977635f58f7e08d09553b6b9f8117b7 CB_VERSION=7.0.0
 RUN set -x &&     export INSTALL_DONT_START_SERVER=1 &&     wget -N --no-verbose $CB_RELEASE_URL/$CB_PACKAGE &&     echo "$CB_SHA256  $CB_PACKAGE" | sha256sum -c - &&     apt-get update &&     apt-get install -y ./$CB_PACKAGE &&     rm -f ./$CB_PACKAGE &&     apt-get autoremove && apt-get clean &&     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-# Tue, 27 Jul 2021 19:20:58 GMT
+# Tue, 31 Aug 2021 03:18:56 GMT
 # ARGS: CB_PACKAGE=couchbase-server-enterprise_7.0.0-ubuntu20.04_amd64.deb CB_RELEASE_URL=https://packages.couchbase.com/releases/7.0.0 CB_SHA256=6ce174d5ffd22ade6abbf44619e4126c6977635f58f7e08d09553b6b9f8117b7 CB_VERSION=7.0.0
 RUN sed -i -e '1 s/$/\/docker/' /opt/couchbase/VARIANT.txt
-# Tue, 27 Jul 2021 19:20:58 GMT
+# Tue, 31 Aug 2021 03:18:56 GMT
 COPY file:d6a307209223b2df102f46f07fd186e09fac7114db2c965bb54097d3b4d3b989 in /etc/service/couchbase-server/run 
-# Tue, 27 Jul 2021 19:20:59 GMT
+# Tue, 31 Aug 2021 03:18:57 GMT
 # ARGS: CB_PACKAGE=couchbase-server-enterprise_7.0.0-ubuntu20.04_amd64.deb CB_RELEASE_URL=https://packages.couchbase.com/releases/7.0.0 CB_SHA256=6ce174d5ffd22ade6abbf44619e4126c6977635f58f7e08d09553b6b9f8117b7 CB_VERSION=7.0.0
 RUN mkdir -p /etc/runit/runsvdir/default/couchbase-server/supervise     && chown -R couchbase:couchbase                 /etc/service                 /etc/runit/runsvdir/default/couchbase-server/supervise
-# Tue, 27 Jul 2021 19:20:59 GMT
+# Tue, 31 Aug 2021 03:18:57 GMT
 COPY file:1302333e9e56b11ae357341056dee0080efda9457b1ce3de1a1ecb6023e760ae in /usr/local/bin/ 
-# Tue, 27 Jul 2021 19:21:00 GMT
+# Tue, 31 Aug 2021 03:18:58 GMT
 # ARGS: CB_PACKAGE=couchbase-server-enterprise_7.0.0-ubuntu20.04_amd64.deb CB_RELEASE_URL=https://packages.couchbase.com/releases/7.0.0 CB_SHA256=6ce174d5ffd22ade6abbf44619e4126c6977635f58f7e08d09553b6b9f8117b7 CB_VERSION=7.0.0
 RUN ln -s dummy.sh /usr/local/bin/iptables-save &&     ln -s dummy.sh /usr/local/bin/lvdisplay &&     ln -s dummy.sh /usr/local/bin/vgdisplay &&     ln -s dummy.sh /usr/local/bin/pvdisplay
-# Tue, 27 Jul 2021 19:21:00 GMT
+# Tue, 31 Aug 2021 03:18:58 GMT
 # ARGS: CB_PACKAGE=couchbase-server-enterprise_7.0.0-ubuntu20.04_amd64.deb CB_RELEASE_URL=https://packages.couchbase.com/releases/7.0.0 CB_SHA256=6ce174d5ffd22ade6abbf44619e4126c6977635f58f7e08d09553b6b9f8117b7 CB_VERSION=7.0.0
 RUN chrpath -r '$ORIGIN/../lib' /opt/couchbase/bin/curl
-# Tue, 27 Jul 2021 19:21:01 GMT
+# Tue, 31 Aug 2021 03:18:59 GMT
 COPY file:d816a67f62bfba76d2812cefbe92252afa13f3852775c3e68599df7741e90cb7 in / 
-# Tue, 27 Jul 2021 19:21:01 GMT
+# Tue, 31 Aug 2021 03:18:59 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 27 Jul 2021 19:21:01 GMT
+# Tue, 31 Aug 2021 03:18:59 GMT
 CMD ["couchbase-server"]
-# Tue, 27 Jul 2021 19:21:01 GMT
+# Tue, 31 Aug 2021 03:18:59 GMT
 EXPOSE 11207 11210 11211 18091 18092 18093 18094 18095 18096 8091 8092 8093 8094 8095 8096
-# Tue, 27 Jul 2021 19:21:01 GMT
+# Tue, 31 Aug 2021 03:19:00 GMT
 VOLUME [/opt/couchbase/var]
 ```
 
 -	Layers:
-	-	`sha256:16ec32c2132b43494832a05f2b02f7a822479f8250c173d0ab27b3de78b2f058`  
-		Last Modified: Sun, 25 Jul 2021 03:03:29 GMT  
-		Size: 28.6 MB (28567944 bytes)  
+	-	`sha256:35807b77a593c1147d13dc926a91dcc3015616ff7307cc30442c5a8e07546283`  
+		Last Modified: Sat, 28 Aug 2021 03:03:19 GMT  
+		Size: 28.6 MB (28570074 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d887c602d6e2b416c36a7344e07f41278a46971fa08be0eeb2fc78a75d7013b`  
-		Last Modified: Mon, 26 Jul 2021 22:39:49 GMT  
-		Size: 6.3 MB (6272568 bytes)  
+	-	`sha256:909a89f4ffc52b1bc0efc8b382b1da145d18cc3fe8aa349a8c93a0174473f38d`  
+		Last Modified: Tue, 31 Aug 2021 03:25:11 GMT  
+		Size: 6.3 MB (6265547 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b219d16ecda3370190c17757e31f650c0b2db8a483364cebc0add69c976f1fa`  
-		Last Modified: Mon, 26 Jul 2021 22:39:45 GMT  
-		Size: 264.0 B  
+	-	`sha256:669f46faa4219d00fffdc48350b495c094272d77b1505e7438e9786ced31ff1f`  
+		Last Modified: Tue, 31 Aug 2021 03:25:07 GMT  
+		Size: 265.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6cdc5f71c3710468544fa224018c4a47ccf6c406ead41085cedf89ef99d1775`  
-		Last Modified: Tue, 27 Jul 2021 19:22:41 GMT  
-		Size: 1.8 KB (1842 bytes)  
+	-	`sha256:a53f9b2ddfc3ce00356b06b586858b05c8fdab60691fbb96cad5071ffbac765b`  
+		Last Modified: Tue, 31 Aug 2021 03:25:07 GMT  
+		Size: 1.8 KB (1834 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e678d3290280e91fe94b0fc2b0faff059cab446516e5fb869856421c7001f4e`  
-		Last Modified: Tue, 27 Jul 2021 19:23:43 GMT  
-		Size: 598.1 MB (598112447 bytes)  
+	-	`sha256:8f53522d115fbc68bf09df3876ee4b6b45c363ed5121ff1c91a21b420134c4f5`  
+		Last Modified: Tue, 31 Aug 2021 03:26:10 GMT  
+		Size: 598.1 MB (598113159 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6969abcd0ca4371e2769bc97077e2f43ced0451abd159601e138e1edf5b1e283`  
-		Last Modified: Tue, 27 Jul 2021 19:22:41 GMT  
+	-	`sha256:77d1f9b924d9b8d31bf8e1f42941eee07c7ff80d0bbf4603871deba01062a8a1`  
+		Last Modified: Tue, 31 Aug 2021 03:25:06 GMT  
 		Size: 191.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3aa359b4f22f914a20e211ae281fe312fe947736087893320e7c6543ccae9be`  
-		Last Modified: Tue, 27 Jul 2021 19:22:41 GMT  
-		Size: 480.0 B  
+	-	`sha256:eb68a945837054510edc39f1257b2ef3193b2afb17035c202557e686769404fd`  
+		Last Modified: Tue, 31 Aug 2021 03:25:06 GMT  
+		Size: 476.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07230fb0fa2e887a74bad436262a80d194b7ffe238041586fd2b4130b1e9c0d9`  
-		Last Modified: Tue, 27 Jul 2021 19:22:38 GMT  
-		Size: 282.0 B  
+	-	`sha256:2c0637b2abdd1b136a28edd368ec96564d74152c95de7fafa8d12188009c7eef`  
+		Last Modified: Tue, 31 Aug 2021 03:25:04 GMT  
+		Size: 278.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9404dfab9613ac5843b1093f86d2cbaba3da74f61f3f5afb689f34b58298c55a`  
-		Last Modified: Tue, 27 Jul 2021 19:22:39 GMT  
+	-	`sha256:bd5ce4fd6ad511e8d24ce1e11c260dbe3d38422254ae503de847228f1e5b6603`  
+		Last Modified: Tue, 31 Aug 2021 03:25:04 GMT  
 		Size: 236.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e73844eba4f0814d5e3f122bcd4fe4af5b787a43cad92054aa50926896fea85`  
-		Last Modified: Tue, 27 Jul 2021 19:22:39 GMT  
-		Size: 219.0 B  
+	-	`sha256:a8111e8d7191a575a1a12d65de4cc9cb14fbb4d523d0a11d7a766a2fdf415a21`  
+		Last Modified: Tue, 31 Aug 2021 03:25:04 GMT  
+		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90ce7876a709925e51b4b5d0cee4cf4e000bf2bda2719984b15d8977e5256d50`  
-		Last Modified: Tue, 27 Jul 2021 19:22:38 GMT  
-		Size: 125.9 KB (125889 bytes)  
+	-	`sha256:ac33301bae8995be21340628037f93ddf537f43350d0ca71aedb0cb97321a727`  
+		Last Modified: Tue, 31 Aug 2021 03:25:04 GMT  
+		Size: 125.9 KB (125891 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10f13caac7cd9de24759a20e590d18b3ce3c085c8ce971e0a023b96f4ed12c4f`  
-		Last Modified: Tue, 27 Jul 2021 19:22:38 GMT  
-		Size: 855.0 B  
+	-	`sha256:f2a266f608eefe10657eb3fb7fea555c6738fff363e95d1383c49eced696c5d6`  
+		Last Modified: Tue, 31 Aug 2021 03:25:04 GMT  
+		Size: 857.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
