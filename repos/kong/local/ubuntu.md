@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:39c03fd01122d4fdc3c13f128aadfe3e605ccbf2fdee58cac4c3f12deb6ec2b5`
-- Created: `2021-07-26T23:29:23.56137788Z`
+- Image ID: `sha256:70deec2d9da44076bbcd96b7e6a682fa5775fad5352038369858f0c531604a4d`
+- Created: `2021-08-31T03:40:57.407014776Z`
 - Virtual Size: ~ 343.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1416,20 +1416,25 @@ $ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2ubuntu3.13
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.13.debian.tar.xz' openldap_2.4.42+dfsg-2ubuntu3.13.debian.tar.xz 186584 SHA512:9f14c8c34082d1ed9689aa610fffcbdad1396dcacbd763f61d3091ad67170de5fa6f72abde7332336e49d3a0925c475e19f8d7763ca7d66dc5be105abb3ce976
 ```
 
-### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.19`
+### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.20`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.19`
-- `openssl=1.0.2g-1ubuntu4.19`
+- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.20`
+- `openssl=1.0.2g-1ubuntu4.20`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.20
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.20.dsc' openssl_1.0.2g-1ubuntu4.20.dsc 2453 SHA512:5a0545c1882a1395fe6a814059ef136cff64b6b8750004a94459c7703674ec5b0338e662edf52fd0e2b0e2e2c47f81ecb32447503e48b6bd8c9d1d0e0155bcf0
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA512:4d96b6c8a232203483d6e8bee81da01ba10977bfbac92f25304a36dec9ea584b7ef917bc45e097cc7dbe681d71a4570d649c22244c178393ae91fab48323f735
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.20.debian.tar.xz' openssl_1.0.2g-1ubuntu4.20.debian.tar.xz 142424 SHA512:523befa8829271e98e236f1d720ff3575273bd3cae192ea879196b674c4bf9ad17e949fde1b046a4ab764faf06bd51faa4140af402831db331755c47262e05f2
+```
 
 ### `dpkg` source package: `p11-kit=0.23.2-5~ubuntu16.04.2`
 
