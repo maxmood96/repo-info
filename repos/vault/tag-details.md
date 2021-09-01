@@ -11,7 +11,7 @@
 ## `vault:1.5.9`
 
 ```console
-$ docker pull vault@sha256:d5e1ba7d9ab13cd681b11aa0b6ad6c44edd95f11c1169287b7b46a3750c599d9
+$ docker pull vault@sha256:713a192a40bfa0acdb77163a46f3e9c096874fe0984a937f7a2945038c040ece
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -90,67 +90,67 @@ CMD ["server" "-dev"]
 ### `vault:1.5.9` - linux; arm variant v6
 
 ```console
-$ docker pull vault@sha256:e2d2a36481434e70b156344f0f909fbf8c22f8d3b1f252304502453228df8068
+$ docker pull vault@sha256:4cfcea87ecabed6cd3ccf97ee3a3d0e5703cba0270996945a32aa417e4e4ce75
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.7 MB (51676395 bytes)**  
+-	Total Size: **51.7 MB (51678088 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f624a50fd6e60f468a38f2773f681618d2ac97757084862dfc7ea5bba7bc75f`
+-	Image ID: `sha256:3e96b2c38c3c2127ca6c4e2487bc683075a0be6a2dceeddcc2e6fe6e50e6d5ea`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["server","-dev"]`
 
 ```dockerfile
-# Fri, 30 Jul 2021 17:49:55 GMT
-ADD file:4479f0a51530e039edf231d87201896dcff908aa542a613cdccb015f93dda8a3 in / 
-# Fri, 30 Jul 2021 17:49:55 GMT
+# Tue, 31 Aug 2021 22:30:33 GMT
+ADD file:ed2b5e0fbd1e7ae37ab8f808c827d23c6841ce1edd7427552d5bf741d67ebcc0 in / 
+# Tue, 31 Aug 2021 22:30:33 GMT
 CMD ["/bin/sh"]
-# Sat, 31 Jul 2021 07:22:46 GMT
+# Wed, 01 Sep 2021 07:07:21 GMT
 ARG VAULT_VERSION=1.5.9
-# Sat, 31 Jul 2021 07:22:47 GMT
+# Wed, 01 Sep 2021 07:07:23 GMT
 # ARGS: VAULT_VERSION=1.5.9
 RUN addgroup vault &&     adduser -S -G vault vault
-# Sat, 31 Jul 2021 07:23:00 GMT
+# Wed, 01 Sep 2021 07:07:44 GMT
 # ARGS: VAULT_VERSION=1.5.9
 RUN set -eux;     apk add --no-cache ca-certificates gnupg openssl libcap su-exec dumb-init tzdata &&     apkArch="$(apk --print-arch)";     case "$apkArch" in         armhf) ARCH='arm' ;;         aarch64) ARCH='arm64' ;;         x86_64) ARCH='amd64' ;;         x86) ARCH='386' ;;         *) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;;     esac &&     VAULT_GPGKEY=C874011F0AB405110D02105534365D9472D7468F;     found='';     for server in         hkp://p80.pool.sks-keyservers.net:80         hkp://keyserver.ubuntu.com:80         hkp://pgp.mit.edu:80     ; do         echo "Fetching GPG key $VAULT_GPGKEY from $server";         gpg --batch --keyserver "$server" --recv-keys "$VAULT_GPGKEY" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch GPG key $VAULT_GPGKEY" && exit 1;     mkdir -p /tmp/build &&     cd /tmp/build &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_linux_${ARCH}.zip &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify vault_${VAULT_VERSION}_SHA256SUMS.sig vault_${VAULT_VERSION}_SHA256SUMS &&     grep vault_${VAULT_VERSION}_linux_${ARCH}.zip vault_${VAULT_VERSION}_SHA256SUMS | sha256sum -c &&     unzip -d /bin vault_${VAULT_VERSION}_linux_${ARCH}.zip &&     cd /tmp &&     rm -rf /tmp/build &&     gpgconf --kill dirmngr &&     gpgconf --kill gpg-agent &&     apk del gnupg openssl &&     rm -rf /root/.gnupg
-# Sat, 31 Jul 2021 07:23:02 GMT
+# Wed, 01 Sep 2021 07:07:46 GMT
 # ARGS: VAULT_VERSION=1.5.9
 RUN mkdir -p /vault/logs &&     mkdir -p /vault/file &&     mkdir -p /vault/config &&     chown -R vault:vault /vault
-# Sat, 31 Jul 2021 07:23:03 GMT
+# Wed, 01 Sep 2021 07:07:46 GMT
 VOLUME [/vault/logs]
-# Sat, 31 Jul 2021 07:23:03 GMT
+# Wed, 01 Sep 2021 07:07:47 GMT
 VOLUME [/vault/file]
-# Sat, 31 Jul 2021 07:23:04 GMT
+# Wed, 01 Sep 2021 07:07:47 GMT
 EXPOSE 8200
-# Sat, 31 Jul 2021 07:23:04 GMT
+# Wed, 01 Sep 2021 07:07:48 GMT
 COPY file:a1e68ac70727f49824592e948e9a677097c8d3752a047b468122ba433b453fc4 in /usr/local/bin/docker-entrypoint.sh 
-# Sat, 31 Jul 2021 07:23:05 GMT
+# Wed, 01 Sep 2021 07:07:48 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 31 Jul 2021 07:23:05 GMT
+# Wed, 01 Sep 2021 07:07:49 GMT
 CMD ["server" "-dev"]
 ```
 
 -	Layers:
-	-	`sha256:740c950346cf39c85b52576998695c9b909c24a58a8bb1b64cce91fda3ef1d3a`  
-		Last Modified: Wed, 14 Apr 2021 18:50:30 GMT  
-		Size: 2.6 MB (2622131 bytes)  
+	-	`sha256:840d18d84f6afdc3231d126fdd3f84f23f0335b61cbfa9cb8808b888a4308919`  
+		Last Modified: Tue, 31 Aug 2021 22:32:11 GMT  
+		Size: 2.6 MB (2623761 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9cc1b7a148db6c583a6a27f5e8613ae1b1c014e20d85fd56a77b2066dccc073d`  
-		Last Modified: Sat, 31 Jul 2021 07:25:52 GMT  
-		Size: 1.3 KB (1262 bytes)  
+	-	`sha256:2107291f0e709da064928dd447aaf165be6a0b712b651e5b0ff0b609cdc65033`  
+		Last Modified: Wed, 01 Sep 2021 07:08:29 GMT  
+		Size: 1.3 KB (1253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0be7574872e5527c384b760db812d8e322b94483968883a679a28bdd0c921cc`  
-		Last Modified: Sat, 31 Jul 2021 07:26:08 GMT  
-		Size: 49.1 MB (49050993 bytes)  
+	-	`sha256:e401f7fbd59182ba7d9c0e35d40dd847288edfde0971c0c319361381898fa02b`  
+		Last Modified: Wed, 01 Sep 2021 07:08:55 GMT  
+		Size: 49.1 MB (49051063 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9e366ed5ca33bd6e24e5bbbf3ce0393eec99a738b2edd755792a43519c498f4`  
-		Last Modified: Sat, 31 Jul 2021 07:25:52 GMT  
+	-	`sha256:ede0959067494ad5fe9751f205afaff5a47b89e34d43f96406aca555547edd04`  
+		Last Modified: Wed, 01 Sep 2021 07:08:29 GMT  
 		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d42568f4ae17b196a10e05089de9e618fe6f8bc0078ac4b48d921cd8648593d`  
-		Last Modified: Sat, 31 Jul 2021 07:25:52 GMT  
-		Size: 1.8 KB (1821 bytes)  
+	-	`sha256:ba3f48e0dfa7371c6003bc8fb359287257b9f6f941a2932ff196dbf0c6765ab3`  
+		Last Modified: Wed, 01 Sep 2021 07:08:29 GMT  
+		Size: 1.8 KB (1823 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `vault:1.5.9` - linux; arm64 variant v8
