@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b00db2abcfba257fac3dc27dd66b8f1e202ac616f2c592c0310180c929c014d9`
-- Created: `2021-08-12T22:12:05.778497293Z`
-- Virtual Size: ~ 757.68 Mb  
+- Image ID: `sha256:67d358a8779959cbec3cc570c75b642d30a17724b658dd33fd39cc3dd97383f2`
+- Created: `2021-08-31T22:48:52.439413191Z`
+- Virtual Size: ~ 761.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568`
-  - `PYTHON_VERSION=3.8.11`
+  - `PYTHON_VERSION=3.8.12`
   - `PYTHON_PIP_VERSION=21.2.4`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/c20b0cfd643cd4a19246ccf204e2997af70f6b21/public/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=fa6f3fb93cce234cd4e8dd2beb54a51ab9c247653b52855a48dd44e6b21ff28b`
@@ -2649,7 +2649,6 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1d-0+deb10u6`
 - `openssl=1.1.1d-0+deb10u6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -2671,6 +2670,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openssl/1.1.1d-0+deb10u6/ (for browsing the source)
 - https://sources.debian.net/src/openssl/1.1.1d-0+deb10u6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openssl/1.1.1d-0+deb10u6/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `openssl=1.1.1d-0+deb10u7`
+
+Binary Packages:
+
+- `libssl1.1:amd64=1.1.1d-0+deb10u7`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1d-0+deb10u7
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1d-0+deb10u7.dsc' openssl_1.1.1d-0+deb10u7.dsc 2649 SHA256:1cb63c67aedf26f139124e4a9ec5d51fa036948df3964805070da7b816b14581
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1d.orig.tar.gz' openssl_1.1.1d.orig.tar.gz 8845861 SHA256:1e3a91bc1f9dfce01af26026f856e064eab4c8ee0a8f457b5ae30b40b8b711f2
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1d.orig.tar.gz.asc' openssl_1.1.1d.orig.tar.gz.asc 488 SHA256:f3fd3299a79421fffd51d35f62636b8e987dab1d3033d93a19d7685868e15395
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1d-0+deb10u7.debian.tar.xz' openssl_1.1.1d-0+deb10u7.debian.tar.xz 109236 SHA256:8a84cb76bf14a6725ee6b56d76335adadc639513d7c15b24b041fbb5f80cf053
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/openssl/1.1.1d-0+deb10u7/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.1d-0+deb10u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.1d-0+deb10u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.15-2+deb10u1`
 
