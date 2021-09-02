@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a5f202699fd83d7d890d4c19a97077a4b9910879c70361e1725a508b844c4867`
-- Created: `2021-08-07T03:50:07.798665406Z`
-- Virtual Size: ~ 425.71 Mb  
+- Image ID: `sha256:1bfc5aa4d6719a243743d6daf254893b27795c8312fb1986bb84342ea12a5f36`
+- Created: `2021-08-28T02:50:40.982945336Z`
+- Virtual Size: ~ 425.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.29`
-  - `PHP_URL=https://www.php.net/distributions/php-7.3.29.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.29.tar.xz.asc`
-  - `PHP_SHA256=7db2834511f3d86272dca3daee3f395a5a4afce359b8342aa6edad80e12eb4d0`
+  - `PHP_VERSION=7.3.30`
+  - `PHP_URL=https://www.php.net/distributions/php-7.3.30.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.30.tar.xz.asc`
+  - `PHP_SHA256=0ebfd656df0f3b1ea37ff2887f8f2d1a71cd160fb0292547c0ee0a99e58ffd1b`
   - `MEDIAWIKI_MAJOR_VERSION=1.31`
   - `MEDIAWIKI_VERSION=1.31.15`
 
@@ -676,16 +676,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1k-r0 description:
+libcrypto1.1-1.1.1l-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1k-r0 webpage:
+libcrypto1.1-1.1.1l-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1k-r0 installed size:
+libcrypto1.1-1.1.1l-r0 installed size:
 2704 KiB
 
-libcrypto1.1-1.1.1k-r0 license:
+libcrypto1.1-1.1.1l-r0 license:
 OpenSSL
 
 ```
@@ -721,23 +721,6 @@ libde265-1.0.8-r1 installed size:
 
 libde265-1.0.8-r1 license:
 LGPL-3.0-or-later
-
-```
-
-### `apk` package: `libedit`
-
-```console
-libedit-20210216.3.1-r0 description:
-BSD line editing library
-
-libedit-20210216.3.1-r0 webpage:
-https://www.thrysoee.dk/editline
-
-libedit-20210216.3.1-r0 installed size:
-196 KiB
-
-libedit-20210216.3.1-r0 license:
-BSD-3-Clause
 
 ```
 
@@ -914,16 +897,16 @@ ISC AND (BSD-3-Clause OR MIT)
 ### `apk` package: `librsvg`
 
 ```console
-librsvg-2.50.4-r0 description:
+librsvg-2.50.4-r1 description:
 SAX-based renderer for SVG files into a GdkPixbuf
 
-librsvg-2.50.4-r0 webpage:
+librsvg-2.50.4-r1 webpage:
 https://wiki.gnome.org/Projects/LibRsvg
 
-librsvg-2.50.4-r0 installed size:
+librsvg-2.50.4-r1 installed size:
 10 MiB
 
-librsvg-2.50.4-r0 license:
+librsvg-2.50.4-r1 license:
 LGPL-2.1-or-later
 
 ```
@@ -948,16 +931,16 @@ ISC
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1k-r0 description:
+libssl1.1-1.1.1l-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1k-r0 webpage:
+libssl1.1-1.1.1l-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1k-r0 installed size:
+libssl1.1-1.1.1l-r0 installed size:
 528 KiB
 
-libssl1.1-1.1.1k-r0 license:
+libssl1.1-1.1.1l-r0 license:
 OpenSSL
 
 ```
@@ -1305,16 +1288,16 @@ MIT
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1k-r0 description:
+openssl-1.1.1l-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-1.1.1k-r0 webpage:
+openssl-1.1.1l-r0 webpage:
 https://www.openssl.org/
 
-openssl-1.1.1k-r0 installed size:
+openssl-1.1.1l-r0 installed size:
 660 KiB
 
-openssl-1.1.1k-r0 license:
+openssl-1.1.1l-r0 license:
 OpenSSL
 
 ```
