@@ -1,10 +1,10 @@
-# `composer:2.1.5`
+# `composer:2.1.6`
 
 ## Docker Metadata
 
-- Image ID: `sha256:aa855c27138685e3099f5f0565af953d998a1344ead6fc7a053348ccaf0db903`
-- Created: `2021-08-07T03:15:35.349604638Z`
-- Virtual Size: ~ 175.60 Mb  
+- Image ID: `sha256:836de4ae379ca303a979edc88431ee14dbdd790a32f997581f58e5aba3a2ca84`
+- Created: `2021-08-28T02:27:50.054719139Z`
+- Virtual Size: ~ 180.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -17,13 +17,13 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F`
-  - `PHP_VERSION=8.0.9`
-  - `PHP_URL=https://www.php.net/distributions/php-8.0.9.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.9.tar.xz.asc`
-  - `PHP_SHA256=71a01b2b56544e20e28696ad5b366e431a0984eaa39aa5e35426a4843e172010`
+  - `PHP_VERSION=8.0.10`
+  - `PHP_URL=https://www.php.net/distributions/php-8.0.10.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.10.tar.xz.asc`
+  - `PHP_SHA256=66dc4d1bc86d9c1bc255b51b79d337ed1a7a035cf71230daabbf9a4ca35795eb`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
-  - `COMPOSER_VERSION=2.1.5`
+  - `COMPOSER_VERSION=2.1.6`
 
 ## `apk` (`.apk`-based packages)
 
@@ -370,16 +370,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1k-r0 description:
+libcrypto1.1-1.1.1l-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1k-r0 webpage:
+libcrypto1.1-1.1.1l-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1k-r0 installed size:
+libcrypto1.1-1.1.1l-r0 installed size:
 2704 KiB
 
-libcrypto1.1-1.1.1k-r0 license:
+libcrypto1.1-1.1.1l-r0 license:
 OpenSSL
 
 ```
@@ -506,16 +506,16 @@ ISC
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1k-r0 description:
+libssl1.1-1.1.1l-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1k-r0 webpage:
+libssl1.1-1.1.1l-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1k-r0 installed size:
+libssl1.1-1.1.1l-r0 installed size:
 528 KiB
 
-libssl1.1-1.1.1k-r0 license:
+libssl1.1-1.1.1l-r0 license:
 OpenSSL
 
 ```
@@ -812,17 +812,34 @@ BSD
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1k-r0 description:
+openssl-1.1.1l-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-1.1.1k-r0 webpage:
+openssl-1.1.1l-r0 webpage:
 https://www.openssl.org/
 
-openssl-1.1.1k-r0 installed size:
+openssl-1.1.1l-r0 installed size:
 660 KiB
 
-openssl-1.1.1k-r0 license:
+openssl-1.1.1l-r0 license:
 OpenSSL
+
+```
+
+### `apk` package: `p7zip`
+
+```console
+p7zip-16.02-r4 description:
+command-line port of the 7zip compression utility
+
+p7zip-16.02-r4 webpage:
+http://p7zip.sourceforge.net
+
+p7zip-16.02-r4 installed size:
+4568 KiB
+
+p7zip-16.02-r4 license:
+LGPL-2.0-or-later
 
 ```
 
