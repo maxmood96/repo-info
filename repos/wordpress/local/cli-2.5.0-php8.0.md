@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:308d7b053e2a42d7f1028b0e098547f3627a472facd09c366e382285b32759a0`
-- Created: `2021-08-07T04:17:03.620921472Z`
-- Virtual Size: ~ 139.04 Mb  
+- Image ID: `sha256:3216ba23dbb2dcdd51f2ae0b0cf4ae9e6a4fd6c9f6e7da8a857381d13e52a46f`
+- Created: `2021-08-28T03:18:08.374821685Z`
+- Virtual Size: ~ 138.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F`
-  - `PHP_VERSION=8.0.9`
-  - `PHP_URL=https://www.php.net/distributions/php-8.0.9.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.9.tar.xz.asc`
-  - `PHP_SHA256=71a01b2b56544e20e28696ad5b366e431a0984eaa39aa5e35426a4843e172010`
+  - `PHP_VERSION=8.0.10`
+  - `PHP_URL=https://www.php.net/distributions/php-8.0.10.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.10.tar.xz.asc`
+  - `PHP_SHA256=66dc4d1bc86d9c1bc255b51b79d337ed1a7a035cf71230daabbf9a4ca35795eb`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.5.0`
   - `WORDPRESS_CLI_SHA512=08dd9035fda1d529807380d5b757839e2809e289eb1a698fe33e7e21a1431d3f77c551c2b2db5adc55083d5075ea4137407994111890f765e790a97e6d9ca7af`
@@ -370,16 +370,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1k-r0 description:
+libcrypto1.1-1.1.1l-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1k-r0 webpage:
+libcrypto1.1-1.1.1l-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1k-r0 installed size:
+libcrypto1.1-1.1.1l-r0 installed size:
 2704 KiB
 
-libcrypto1.1-1.1.1k-r0 license:
+libcrypto1.1-1.1.1l-r0 license:
 OpenSSL
 
 ```
@@ -398,23 +398,6 @@ libcurl-7.78.0-r0 installed size:
 
 libcurl-7.78.0-r0 license:
 MIT
-
-```
-
-### `apk` package: `libedit`
-
-```console
-libedit-20210216.3.1-r0 description:
-BSD line editing library
-
-libedit-20210216.3.1-r0 webpage:
-https://www.thrysoee.dk/editline
-
-libedit-20210216.3.1-r0 installed size:
-196 KiB
-
-libedit-20210216.3.1-r0 license:
-BSD-3-Clause
 
 ```
 
@@ -557,16 +540,16 @@ ISC
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1k-r0 description:
+libssl1.1-1.1.1l-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1k-r0 webpage:
+libssl1.1-1.1.1l-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1k-r0 installed size:
+libssl1.1-1.1.1l-r0 installed size:
 528 KiB
 
-libssl1.1-1.1.1k-r0 license:
+libssl1.1-1.1.1l-r0 license:
 OpenSSL
 
 ```
@@ -727,16 +710,16 @@ BSD-3-Clause
 ### `apk` package: `mariadb-client`
 
 ```console
-mariadb-client-10.5.11-r0 description:
+mariadb-client-10.5.12-r0 description:
 Client for the MariaDB database
 
-mariadb-client-10.5.11-r0 webpage:
+mariadb-client-10.5.12-r0 webpage:
 https://www.mariadb.org/
 
-mariadb-client-10.5.11-r0 installed size:
+mariadb-client-10.5.12-r0 installed size:
 28 MiB
 
-mariadb-client-10.5.11-r0 license:
+mariadb-client-10.5.12-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -744,16 +727,16 @@ GPL-2.0-or-later
 ### `apk` package: `mariadb-common`
 
 ```console
-mariadb-common-10.5.11-r0 description:
+mariadb-common-10.5.12-r0 description:
 MariaDB common files for both server and client
 
-mariadb-common-10.5.11-r0 webpage:
+mariadb-common-10.5.12-r0 webpage:
 https://www.mariadb.org/
 
-mariadb-common-10.5.11-r0 installed size:
+mariadb-common-10.5.12-r0 installed size:
 2240 KiB
 
-mariadb-common-10.5.11-r0 license:
+mariadb-common-10.5.12-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -795,16 +778,16 @@ MIT BSD GPL2+
 ### `apk` package: `mysql-client`
 
 ```console
-mysql-client-10.5.11-r0 description:
+mysql-client-10.5.12-r0 description:
 Dummy package for mysql-client migration
 
-mysql-client-10.5.11-r0 webpage:
+mysql-client-10.5.12-r0 webpage:
 https://www.mariadb.org/
 
-mysql-client-10.5.11-r0 installed size:
+mysql-client-10.5.12-r0 installed size:
 4096 B
 
-mysql-client-10.5.11-r0 license:
+mysql-client-10.5.12-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -880,16 +863,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1k-r0 description:
+openssl-1.1.1l-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-1.1.1k-r0 webpage:
+openssl-1.1.1l-r0 webpage:
 https://www.openssl.org/
 
-openssl-1.1.1k-r0 installed size:
+openssl-1.1.1l-r0 installed size:
 660 KiB
 
-openssl-1.1.1k-r0 license:
+openssl-1.1.1l-r0 license:
 OpenSSL
 
 ```
