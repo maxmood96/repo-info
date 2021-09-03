@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:09112261a150b58dcde08ca4b1b9c9903ec3d35ac6ec7578443847dd4a61a851`
-- Created: `2021-07-02T17:21:40.908727705Z`
-- Virtual Size: ~ 22.84 Mb  
+- Image ID: `sha256:15447097e0374d1ea165db47231adde6fb63ff6480b16f30134b7a313a3b43e9`
+- Created: `2021-09-01T00:50:29.330404614Z`
+- Virtual Size: ~ 22.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/home/eggdrop/eggdrop/entrypoint.sh"]`
@@ -57,16 +57,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.12.5-r0 description:
+apk-tools-2.12.7-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.12.5-r0 webpage:
+apk-tools-2.12.7-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.12.5-r0 installed size:
+apk-tools-2.12.7-r0 installed size:
 304 KiB
 
-apk-tools-2.12.5-r0 license:
+apk-tools-2.12.7-r0 license:
 GPL-2.0-only
 
 ```
@@ -142,16 +142,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1k-r0 description:
+libcrypto1.1-1.1.1l-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1k-r0 webpage:
+libcrypto1.1-1.1.1l-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1k-r0 installed size:
+libcrypto1.1-1.1.1l-r0 installed size:
 2704 KiB
 
-libcrypto1.1-1.1.1k-r0 license:
+libcrypto1.1-1.1.1l-r0 license:
 OpenSSL
 
 ```
@@ -159,16 +159,16 @@ OpenSSL
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1k-r0 description:
+libssl1.1-1.1.1l-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1k-r0 webpage:
+libssl1.1-1.1.1l-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1k-r0 installed size:
+libssl1.1-1.1.1l-r0 installed size:
 528 KiB
 
-libssl1.1-1.1.1k-r0 license:
+libssl1.1-1.1.1l-r0 license:
 OpenSSL
 
 ```
@@ -210,16 +210,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.2-r0 description:
+musl-utils-1.2.2-r1 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.2-r0 webpage:
+musl-utils-1.2.2-r1 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.2-r0 installed size:
+musl-utils-1.2.2-r1 installed size:
 140 KiB
 
-musl-utils-1.2.2-r0 license:
+musl-utils-1.2.2-r1 license:
 MIT BSD GPL2+
 
 ```
@@ -261,16 +261,16 @@ MIT
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1k-r0 description:
+openssl-1.1.1l-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-1.1.1k-r0 webpage:
+openssl-1.1.1l-r0 webpage:
 https://www.openssl.org/
 
-openssl-1.1.1k-r0 installed size:
+openssl-1.1.1l-r0 installed size:
 660 KiB
 
-openssl-1.1.1k-r0 license:
+openssl-1.1.1l-r0 license:
 OpenSSL
 
 ```
