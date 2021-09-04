@@ -1,17 +1,17 @@
-# `nats:2.3.4-alpine3.14`
+# `nats:2.4.0-alpine3.14`
 
 ## Docker Metadata
 
-- Image ID: `sha256:163732450f029c457fb0826ccdbb6d69696f0d8af625ed2bef5291b807563c38`
-- Created: `2021-08-07T00:12:59.870433514Z`
-- Virtual Size: ~ 18.02 Mb  
+- Image ID: `sha256:cf1cf25eec293c91bbdbf8b721d5bf624068f661f44e98e1e205e8c229cab087`
+- Created: `2021-08-27T20:45:02.117333982Z`
+- Virtual Size: ~ 18.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["nats-server","--config","/etc/nats/nats-server.conf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NATS_SERVER=2.3.4`
+  - `NATS_SERVER=2.4.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -137,16 +137,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1k-r0 description:
+libcrypto1.1-1.1.1l-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1k-r0 webpage:
+libcrypto1.1-1.1.1l-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1k-r0 installed size:
+libcrypto1.1-1.1.1l-r0 installed size:
 2704 KiB
 
-libcrypto1.1-1.1.1k-r0 license:
+libcrypto1.1-1.1.1l-r0 license:
 OpenSSL
 
 ```
@@ -171,16 +171,16 @@ ISC AND (BSD-3-Clause OR MIT)
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1k-r0 description:
+libssl1.1-1.1.1l-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1k-r0 webpage:
+libssl1.1-1.1.1l-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1k-r0 installed size:
+libssl1.1-1.1.1l-r0 installed size:
 528 KiB
 
-libssl1.1-1.1.1k-r0 license:
+libssl1.1-1.1.1l-r0 license:
 OpenSSL
 
 ```
