@@ -1,9 +1,9 @@
-# `joomla:3.10.1-fpm-alpine`
+# `joomla:3.10.1-php7.3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2946a3ee2b20f57d44696b34df80fc4b3da9711062d0955abf593baa119a475d`
-- Created: `2021-08-28T02:42:15.268103334Z`
+- Image ID: `sha256:a9d7adf5e16f6f6e5653e16dbca6c346ecea79932b4421a42159ebea4e1551d6`
+- Created: `2021-09-07T21:42:11.21735058Z`
 - Virtual Size: ~ 129.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -26,7 +26,7 @@
   - `JOOMLA_VERSION=3.10.1`
   - `JOOMLA_SHA512=a397ecfc0c5f8a86ce871d691c8dd721ae2b40f2d05a5eb4f86a3a1598a486b332305de556a547b2e7d6613fa0f4daf4c2bb30a24ce4a50cb1369007302048fa`
 - Labels:
-  - `maintainer=Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
+  - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
 ## `apk` (`.apk`-based packages)
 

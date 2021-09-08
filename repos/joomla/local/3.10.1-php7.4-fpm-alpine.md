@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:806d7e8d93683216f64d2a76a6f9bc6565457af94f62af3eaa69eef2b287cee8`
-- Created: `2021-08-28T02:44:17.439169977Z`
+- Image ID: `sha256:41d65779df7fdccf68e7a541036c306234f0b2da9de80fe62b6b6d24db80ede5`
+- Created: `2021-09-07T21:44:18.543718535Z`
 - Virtual Size: ~ 136.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -26,7 +26,7 @@
   - `JOOMLA_VERSION=3.10.1`
   - `JOOMLA_SHA512=a397ecfc0c5f8a86ce871d691c8dd721ae2b40f2d05a5eb4f86a3a1598a486b332305de556a547b2e7d6613fa0f4daf4c2bb30a24ce4a50cb1369007302048fa`
 - Labels:
-  - `maintainer=Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
+  - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
 ## `apk` (`.apk`-based packages)
 
