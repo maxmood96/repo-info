@@ -1,7 +1,7 @@
 ## `python:3-slim-buster`
 
 ```console
-$ docker pull python@sha256:e892987394cf62af26a7c044566a8804864407041d9abbea6ad35ac87222a0f2
+$ docker pull python@sha256:9669420dbe4e6a6211ee71fcadd4c9ed2028bd33809ebbd750c742336a2028e8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -422,14 +422,14 @@ CMD ["python3"]
 ### `python:3-slim-buster` - linux; ppc64le
 
 ```console
-$ docker pull python@sha256:c940e96b167865168678a228402b14fe09ba29572b60437688fc8ecf3935b3a0
+$ docker pull python@sha256:93874660f2220ee9a8ff9ee02ae2fa15bbfe79692dc775c4dbf7f27a0b129165
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.9 MB (47896295 bytes)**  
+-	Total Size: **47.9 MB (47896616 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4804d5d42595ed2c5d5789610c89026922a472beece9d62cd946c59cf23723b3`
+-	Image ID: `sha256:1d83ea4d0c2f6ca52a3d0598ae5651df5378e5f65480923c9e41243f6dfc16d0`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -453,13 +453,15 @@ RUN set -ex 		&& savedAptMark="$(apt-mark showmanual)" 	&& apt-get update && apt
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
 # Fri, 03 Sep 2021 03:10:47 GMT
 ENV PYTHON_PIP_VERSION=21.2.4
-# Fri, 03 Sep 2021 03:10:50 GMT
+# Wed, 08 Sep 2021 02:47:32 GMT
+ENV PYTHON_SETUPTOOLS_VERSION=57.5.0
+# Wed, 08 Sep 2021 02:47:35 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/c20b0cfd643cd4a19246ccf204e2997af70f6b21/public/get-pip.py
-# Fri, 03 Sep 2021 03:10:56 GMT
+# Wed, 08 Sep 2021 02:47:38 GMT
 ENV PYTHON_GET_PIP_SHA256=fa6f3fb93cce234cd4e8dd2beb54a51ab9c247653b52855a48dd44e6b21ff28b
-# Fri, 03 Sep 2021 03:11:38 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum --check --strict -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Fri, 03 Sep 2021 03:11:41 GMT
+# Wed, 08 Sep 2021 02:49:11 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum --check --strict -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
+# Wed, 08 Sep 2021 02:49:23 GMT
 CMD ["python3"]
 ```
 
@@ -480,9 +482,9 @@ CMD ["python3"]
 		Last Modified: Fri, 03 Sep 2021 05:12:23 GMT  
 		Size: 230.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a5e17bc1ba82e86a142f8d6ae3d4aa4f5eb1f86341af49735a5125cae412fab`  
-		Last Modified: Fri, 03 Sep 2021 05:12:24 GMT  
-		Size: 2.6 MB (2638091 bytes)  
+	-	`sha256:b6fa8d3c4972cf2ba7bce0ffaed92776ca023a249246733d75ff9d9590a3f0f2`  
+		Last Modified: Wed, 08 Sep 2021 05:51:37 GMT  
+		Size: 2.6 MB (2638412 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:3-slim-buster` - linux; s390x

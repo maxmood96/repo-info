@@ -1,7 +1,7 @@
 ## `python:buster`
 
 ```console
-$ docker pull python@sha256:0d6092959c807f637d331e6dc054a6cd87df4babb225c24288f95add5828f784
+$ docker pull python@sha256:5c52e5785f88a86b0e92cbde37d3388888806d9bf758f41e2c1fdbdd9bbd1a9c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -566,14 +566,14 @@ CMD ["python3"]
 ### `python:buster` - linux; ppc64le
 
 ```console
-$ docker pull python@sha256:5030289faa1c458d921f8c65db3524e3ddb673dc73dd8a789b2383bd516d1d6c
+$ docker pull python@sha256:b6f62c603a7cdb750cd2f8ab304a9b0048b45fc77cbff540fed52bdcda5833e9
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **362.9 MB (362946957 bytes)**  
+-	Total Size: **362.9 MB (362947207 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:14d62420368fe9cea0e6f1df87cf32a51a115f0660ff72c604a0e46c2a61c0d2`
+-	Image ID: `sha256:481319ca695ee1fe5873db0101a335da26aff2bb140aeeae064ac3c58e012861`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -605,13 +605,15 @@ RUN set -ex 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTH
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
 # Fri, 03 Sep 2021 22:35:14 GMT
 ENV PYTHON_PIP_VERSION=21.2.4
-# Fri, 03 Sep 2021 22:35:21 GMT
+# Wed, 08 Sep 2021 02:46:39 GMT
+ENV PYTHON_SETUPTOOLS_VERSION=57.5.0
+# Wed, 08 Sep 2021 02:46:42 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/c20b0cfd643cd4a19246ccf204e2997af70f6b21/public/get-pip.py
-# Fri, 03 Sep 2021 22:35:25 GMT
+# Wed, 08 Sep 2021 02:46:44 GMT
 ENV PYTHON_GET_PIP_SHA256=fa6f3fb93cce234cd4e8dd2beb54a51ab9c247653b52855a48dd44e6b21ff28b
-# Fri, 03 Sep 2021 22:36:03 GMT
-RUN set -ex; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum --check --strict -; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Fri, 03 Sep 2021 22:36:08 GMT
+# Wed, 08 Sep 2021 02:47:12 GMT
+RUN set -ex; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum --check --strict -; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
+# Wed, 08 Sep 2021 02:47:18 GMT
 CMD ["python3"]
 ```
 
@@ -648,9 +650,9 @@ CMD ["python3"]
 		Last Modified: Fri, 03 Sep 2021 23:55:30 GMT  
 		Size: 232.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:488d3cb7f65e95fbe32440a5533dbf071c7fe2c6086c60b8809cc6e3005e04ec`  
-		Last Modified: Fri, 03 Sep 2021 23:55:31 GMT  
-		Size: 2.3 MB (2349010 bytes)  
+	-	`sha256:72baee685ea321a24e3db72beb4b09b2bb38b94e8692b4244fa9c2514eeadc3c`  
+		Last Modified: Wed, 08 Sep 2021 05:51:19 GMT  
+		Size: 2.3 MB (2349260 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:buster` - linux; s390x
