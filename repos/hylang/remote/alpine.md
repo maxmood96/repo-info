@@ -1,7 +1,7 @@
 ## `hylang:alpine`
 
 ```console
-$ docker pull hylang@sha256:ce646a77ad428d3d414f30a2048bb098fb94f1c41b7df74b8297c30805cdf00d
+$ docker pull hylang@sha256:3fbaa40e87ed076024838f44d57739c9e9d84056024c181de034c55486af1688
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -327,14 +327,14 @@ CMD ["hy"]
 ### `hylang:alpine` - linux; 386
 
 ```console
-$ docker pull hylang@sha256:2c6db78d44b396c85feaf75996828fba89dadbb883b6157994c7d920baabdc04
+$ docker pull hylang@sha256:bfe9e590fafb4c66eb4353aa1d5c472a11d62c939e65d97fadba7570ba744f9c
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **20.6 MB (20643333 bytes)**  
+-	Total Size: **20.6 MB (20643906 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:81a902d07908eafa719d0d3987a444d8f48a6c80c9824dc10ac635ebdb012a34`
+-	Image ID: `sha256:b0cc5b2441e40f6b26420ab34797fa861be87303fbbf183ad0c7b864e7572a77`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -358,19 +358,21 @@ RUN set -ex 	&& apk add --no-cache --virtual .fetch-deps 		gnupg 		tar 		xz 		&&
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
 # Tue, 31 Aug 2021 19:45:43 GMT
 ENV PYTHON_PIP_VERSION=21.2.4
-# Tue, 31 Aug 2021 19:45:43 GMT
+# Wed, 08 Sep 2021 01:56:39 GMT
+ENV PYTHON_SETUPTOOLS_VERSION=57.5.0
+# Wed, 08 Sep 2021 01:56:40 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/c20b0cfd643cd4a19246ccf204e2997af70f6b21/public/get-pip.py
-# Tue, 31 Aug 2021 19:45:43 GMT
+# Wed, 08 Sep 2021 01:56:40 GMT
 ENV PYTHON_GET_PIP_SHA256=fa6f3fb93cce234cd4e8dd2beb54a51ab9c247653b52855a48dd44e6b21ff28b
-# Tue, 31 Aug 2021 19:45:51 GMT
-RUN set -ex; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Tue, 31 Aug 2021 19:45:52 GMT
+# Wed, 08 Sep 2021 01:56:48 GMT
+RUN set -ex; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
+# Wed, 08 Sep 2021 01:56:48 GMT
 CMD ["python3"]
-# Tue, 31 Aug 2021 21:26:32 GMT
+# Wed, 08 Sep 2021 04:24:03 GMT
 ENV HY_VERSION=1.0a3
-# Tue, 31 Aug 2021 21:26:38 GMT
+# Wed, 08 Sep 2021 04:24:09 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION"
-# Tue, 31 Aug 2021 21:26:39 GMT
+# Wed, 08 Sep 2021 04:24:09 GMT
 CMD ["hy"]
 ```
 
@@ -391,13 +393,13 @@ CMD ["hy"]
 		Last Modified: Tue, 31 Aug 2021 21:07:08 GMT  
 		Size: 230.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f06f7cf6d3d6fd4143ffbc83fab0c05839bfee499a7984ae6486ae905db544e0`  
-		Last Modified: Tue, 31 Aug 2021 21:07:09 GMT  
-		Size: 2.3 MB (2348878 bytes)  
+	-	`sha256:dbef35e1113337d7c15eeb98aec56c77c7c57d5e25bb691ace4350f3df673097`  
+		Last Modified: Wed, 08 Sep 2021 04:02:05 GMT  
+		Size: 2.3 MB (2349024 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e9428dc3f223dea5559b7141db330861a8d18e518ba2ede411d4e3b4d891148`  
-		Last Modified: Tue, 31 Aug 2021 21:32:30 GMT  
-		Size: 3.1 MB (3097000 bytes)  
+	-	`sha256:7a169ec11ef091bd1d6b26b2b78eea69f72f429401108d2d592f6cf9daef4613`  
+		Last Modified: Wed, 08 Sep 2021 04:30:55 GMT  
+		Size: 3.1 MB (3097427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:alpine` - linux; ppc64le
