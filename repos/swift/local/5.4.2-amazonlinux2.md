@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a19ad08cd945ff8116c05611dd0b8442ed21bbbac9d02d662c9e708a6ab75907`
-- Created: `2021-08-02T23:40:43.039116322Z`
-- Virtual Size: ~ 2.46 Gb  
+- Image ID: `sha256:14100567766c696828feb1235798737735791a84543e242459af3c79f113389b`
+- Created: `2021-09-09T00:39:37.586832666Z`
+- Virtual Size: ~ 2.47 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -201,16 +201,16 @@ Enabling amzn2-core-source repository
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f915d0987d73328ab3992d03ddbce189bca8804de19d89f09b847dfcaa6bc1af//../../../../../blobstore/ad16b6f4596e77afa5ae62a92ff619786518ab11b2a6644d0ee53a146b10b021/cryptsetup-1.7.4-4.amzn2.src.rpm
 ```
 
-### `rpm` package: `curl-7.61.1-12.amzn2.0.4.x86_64`
+### `rpm` package: `curl-7.76.1-4.amzn2.0.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls curl-7.61.1-12.amzn2.0.4
+$ yumdownloader --quiet --source --urls curl-7.76.1-4.amzn2.0.1
 Enabling amzn2-core-source repository
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f915d0987d73328ab3992d03ddbce189bca8804de19d89f09b847dfcaa6bc1af//../../../../../blobstore/681c07993ae6517b313132d23b8d0a81770bb9cbd8313cd840e3bf5ad9eeaa04/curl-7.61.1-12.amzn2.0.4.src.rpm
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f915d0987d73328ab3992d03ddbce189bca8804de19d89f09b847dfcaa6bc1af//../../../../../blobstore/8d8d3c595f0de7d934e910aa9dbe43567fb6f0f850fe09e58834687083b9ecef/curl-7.76.1-4.amzn2.0.1.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.26-23.amzn2.x86_64`
@@ -321,16 +321,16 @@ Enabling amzn2-core-source repository
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f915d0987d73328ab3992d03ddbce189bca8804de19d89f09b847dfcaa6bc1af//../../../../../blobstore/7f6cc4b60d3a0fb8499726d64a830d91c97b301955f44418c3f1de3fb6304228/elfutils-0.176-2.amzn2.src.rpm
 ```
 
-### `rpm` package: `emacs-filesystem-27.1-1.amzn2.0.1.noarch`
+### `rpm` package: `emacs-filesystem-27.2-4.amzn2.0.1.noarch`
 
 Licenses (from `rpm --query`): GPLv3+ and CC0-1.0
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls emacs-filesystem-27.1-1.amzn2.0.1.noarch
+$ yumdownloader --quiet --source --urls emacs-filesystem-27.2-4.amzn2.0.1.noarch
 Enabling amzn2-core-source repository
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f915d0987d73328ab3992d03ddbce189bca8804de19d89f09b847dfcaa6bc1af//../../../../../blobstore/e769fc7e45b1b317e6ed5a38c32e5259aaf4b4f8b83c78a05bbe9180088e35ad/emacs-27.1-1.amzn2.0.1.src.rpm
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f915d0987d73328ab3992d03ddbce189bca8804de19d89f09b847dfcaa6bc1af//../../../../../blobstore/7ce594c663e472e56f42a24dfba359ed486ba97755010777cbda3bbb6d2789a5/emacs-27.2-4.amzn2.0.1.src.rpm
 ```
 
 ### `rpm` package: `expat-2.1.0-12.amzn2.x86_64`
@@ -675,16 +675,16 @@ Enabling amzn2-core-source repository
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f915d0987d73328ab3992d03ddbce189bca8804de19d89f09b847dfcaa6bc1af//../../../../../blobstore/968c079ef8a8a2efee76ff59cd99e06dd242b8813960171d0f5c23f4a6eb0bb2/texinfo-5.1-5.amzn2.src.rpm
 ```
 
-### `rpm` package: `kernel-headers-4.14.238-182.422.amzn2.x86_64`
+### `rpm` package: `kernel-headers-4.14.243-185.433.amzn2.x86_64`
 
 Licenses (from `rpm --query`): GPLv2 and Redistributable, no modification permitted
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls kernel-headers-4.14.238-182.422.amzn2
+$ yumdownloader --quiet --source --urls kernel-headers-4.14.243-185.433.amzn2
 Enabling amzn2-core-source repository
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f915d0987d73328ab3992d03ddbce189bca8804de19d89f09b847dfcaa6bc1af//../../../../../blobstore/df7a75e42172b3a1e456aa5b92a3116848bba38d691ceb892d88f77578d479a2/kernel-4.14.238-182.422.amzn2.src.rpm
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f915d0987d73328ab3992d03ddbce189bca8804de19d89f09b847dfcaa6bc1af//../../../../../blobstore/9cc0326910b8d001fbee1dd2e5f272001b7c19677680b7771e9d15514f281fd9/kernel-4.14.243-185.433.amzn2.src.rpm
 ```
 
 ### `rpm` package: `keyutils-libs-1.5.8-3.amzn2.0.2.x86_64`
@@ -867,16 +867,16 @@ Enabling amzn2-core-source repository
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f915d0987d73328ab3992d03ddbce189bca8804de19d89f09b847dfcaa6bc1af//../../../../../blobstore/bfdf8a04d88aff41cacdb519bccfc3830d71fecb83fc522da55ac7e004280b63/glibc-2.26-48.amzn2.src.rpm
 ```
 
-### `rpm` package: `libcurl-7.61.1-12.amzn2.0.4.x86_64`
+### `rpm` package: `libcurl-7.76.1-4.amzn2.0.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls libcurl-7.61.1-12.amzn2.0.4
+$ yumdownloader --quiet --source --urls libcurl-7.76.1-4.amzn2.0.1
 Enabling amzn2-core-source repository
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f915d0987d73328ab3992d03ddbce189bca8804de19d89f09b847dfcaa6bc1af//../../../../../blobstore/681c07993ae6517b313132d23b8d0a81770bb9cbd8313cd840e3bf5ad9eeaa04/curl-7.61.1-12.amzn2.0.4.src.rpm
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/f915d0987d73328ab3992d03ddbce189bca8804de19d89f09b847dfcaa6bc1af//../../../../../blobstore/8d8d3c595f0de7d934e910aa9dbe43567fb6f0f850fe09e58834687083b9ecef/curl-7.76.1-4.amzn2.0.1.src.rpm
 ```
 
 ### `rpm` package: `libdb-5.3.21-24.amzn2.0.3.x86_64`
