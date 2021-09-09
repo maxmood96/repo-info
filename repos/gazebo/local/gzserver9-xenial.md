@@ -669,9 +669,13 @@ Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 
 - `ISC`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris distro-info-data=0.28ubuntu0.18
+'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.18.dsc' distro-info-data_0.28ubuntu0.18.dsc 1761 SHA512:81f97432bfba24effb2acfa49802d3cd43d823c6efa57622aa0d4c62a6e9f924e132a4120cd77edbd1c47d2e6c03f156baefe05f751eea5c454271bc253968ac
+'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.18.tar.xz' distro-info-data_0.28ubuntu0.18.tar.xz 7408 SHA512:a368ba3a7b767b79641b9c81b096eb682af0b47a964b117657f344ea4b0f2f68dfee0c0fd762a5f81ad1ecad2269b37a3fffa61d7be5605dd60609404649e771
+```
 
 ### `dpkg` source package: `dpkg=1.18.4ubuntu1.7`
 
@@ -4325,9 +4329,14 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.20
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.20.dsc' openssl_1.0.2g-1ubuntu4.20.dsc 2453 SHA512:5a0545c1882a1395fe6a814059ef136cff64b6b8750004a94459c7703674ec5b0338e662edf52fd0e2b0e2e2c47f81ecb32447503e48b6bd8c9d1d0e0155bcf0
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA512:4d96b6c8a232203483d6e8bee81da01ba10977bfbac92f25304a36dec9ea584b7ef917bc45e097cc7dbe681d71a4570d649c22244c178393ae91fab48323f735
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.20.debian.tar.xz' openssl_1.0.2g-1ubuntu4.20.debian.tar.xz 142424 SHA512:523befa8829271e98e236f1d720ff3575273bd3cae192ea879196b674c4bf9ad17e949fde1b046a4ab764faf06bd51faa4140af402831db331755c47262e05f2
+```
 
 ### `dpkg` source package: `opus=1.1.2-1ubuntu1`
 

@@ -5258,14 +5258,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.4.0-81.91
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-81.91.dsc' linux_5.4.0-81.91.dsc 6875 SHA512:f31e5b4814a45800ed7edf1bc3e93940ff22a0769b2f62b249f7520fcc5589af319191d761b61f14a87af37513198656dd1ea7c0c2815a91eb1e0386f1ba79b4
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-81.91.diff.gz' linux_5.4.0-81.91.diff.gz 8222118 SHA512:0f994dc176541d1cb44e9949e2033f4c9cddfa506c6d30739db232b6fe203191d66f9dd7767cdbde905570267c16ea3e3aece1f07c366dc7850bae17be6752c8
-```
 
 ### `dpkg` source package: `llvm-toolchain-12=1:12.0.0-3ubuntu1~20.04.3`
 
@@ -7198,14 +7193,9 @@ Licenses: (parsed from: `/usr/share/doc/libsdformat9/copyright`, `/usr/share/doc
 - `Apache-2.0`
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sdformat9=9.6.0-1~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat9/sdformat9_9.6.0-1~focal.dsc' sdformat9_9.6.0-1~focal.dsc 1376 SHA256:c34afa582fa336c19e1e5c1d6104ee5eb66791598c64186b43e97ab1dc13305e
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat9/sdformat9_9.6.0.orig.tar.bz2' sdformat9_9.6.0.orig.tar.bz2 658925 SHA256:b03cf7fb7a8dd56d5dba37087a8f6e04999499fe133bfaa4ec4224369d2b7110
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat9/sdformat9_9.6.0-1~focal.debian.tar.xz' sdformat9_9.6.0-1~focal.debian.tar.xz 3428 SHA256:72bf438f3968ce7f72c68a5e7f1285ee338c4169e80ad76d4e56e64fdc842a9b
-```
 
 ### `dpkg` source package: `sed=4.7-1`
 

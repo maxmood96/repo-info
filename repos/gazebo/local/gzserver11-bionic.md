@@ -5494,14 +5494,9 @@ Licenses: (parsed from: `/usr/share/doc/libsdformat9/copyright`, `/usr/share/doc
 - `Apache-2.0`
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sdformat9=9.6.0-1~bionic
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat9/sdformat9_9.6.0-1~bionic.dsc' sdformat9_9.6.0-1~bionic.dsc 1379 SHA256:d99a49fd093b9c653c783cb0b1389947c8a9fe464228d69766feae7ad98f0c52
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat9/sdformat9_9.6.0.orig.tar.bz2' sdformat9_9.6.0.orig.tar.bz2 658925 SHA256:b03cf7fb7a8dd56d5dba37087a8f6e04999499fe133bfaa4ec4224369d2b7110
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat9/sdformat9_9.6.0-1~bionic.debian.tar.xz' sdformat9_9.6.0-1~bionic.debian.tar.xz 3428 SHA256:6c4f9dd56124d79ac6bc9fab542fc9012b668d6d200f9c9624a6892a499ad5d0
-```
 
 ### `dpkg` source package: `sed=4.4-2`
 
