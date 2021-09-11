@@ -1,16 +1,16 @@
-# `golang:1.17.0-bullseye`
+# `golang:1.17.1-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7ce0aad7247cfefe6a3126e2b8221f5cb81258aa68be12fe750ddd1ad2834c12`
-- Created: `2021-09-04T08:28:31.226734061Z`
-- Virtual Size: ~ 940.56 Mb  
+- Image ID: `sha256:ec365f06285d63175d6ae474a6ddc9d1d22ebf4625903b54b4c54836d2a323a9`
+- Created: `2021-09-09T21:20:12.163167573Z`
+- Virtual Size: ~ 940.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.17`
+  - `GOLANG_VERSION=1.17.1`
   - `GOPATH=/go`
 
 ## `dpkg` (`.deb`-based packages)
