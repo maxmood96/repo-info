@@ -1,7 +1,7 @@
 ## `swift:centos7`
 
 ```console
-$ docker pull swift@sha256:ba82e631e75d339fee22e36d776cdf32dd503c6c6c3958fae3c0f76b0eccb5aa
+$ docker pull swift@sha256:7514e7ac72c0cf4bd818bc6181b8c45d8f70af9839192ef82cc944d62b775874
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull swift@sha256:ba82e631e75d339fee22e36d776cdf32dd503c6c6c3958fae3c0f
 ### `swift:centos7` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:76ba28346351f60bdc423f058fcfab0971ec2efb3cfe9117ba3bd49d9c279e53
+$ docker pull swift@sha256:7bcd5128e5babf671680964a0463d06d89a408a5c407d51f0bd271f164e9c168
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **712.6 MB (712586512 bytes)**  
+-	Total Size: **712.6 MB (712580762 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4875e1989be02aa0ea938c7d1d4fc5965f6c3ce8f924a3e12d87bea73a707f6c`
+-	Image ID: `sha256:5044e996d1b227c37866642366235b5958626f29b512db236ffad348eb6f188e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -40,17 +40,17 @@ RUN sed -i -e 's/\*__block/\*__libc_block/g' /usr/include/unistd.h
 ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
 # Wed, 28 Apr 2021 19:50:15 GMT
 ARG SWIFT_PLATFORM=centos7
-# Tue, 29 Jun 2021 22:58:29 GMT
-ARG SWIFT_BRANCH=swift-5.4.2-release
-# Tue, 29 Jun 2021 22:58:29 GMT
-ARG SWIFT_VERSION=swift-5.4.2-RELEASE
-# Tue, 29 Jun 2021 22:58:29 GMT
+# Mon, 13 Sep 2021 18:50:42 GMT
+ARG SWIFT_BRANCH=swift-5.4.3-release
+# Mon, 13 Sep 2021 18:50:42 GMT
+ARG SWIFT_VERSION=swift-5.4.3-RELEASE
+# Mon, 13 Sep 2021 18:50:42 GMT
 ARG SWIFT_WEBROOT=https://swift.org/builds/
-# Tue, 29 Jun 2021 22:58:29 GMT
-ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=centos7 SWIFT_BRANCH=swift-5.4.2-release SWIFT_VERSION=swift-5.4.2-RELEASE SWIFT_WEBROOT=https://swift.org/builds/
-# Tue, 29 Jun 2021 22:59:59 GMT
-RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)/"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz
-# Tue, 29 Jun 2021 23:00:05 GMT
+# Mon, 13 Sep 2021 18:50:42 GMT
+ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=centos7 SWIFT_BRANCH=swift-5.4.3-release SWIFT_VERSION=swift-5.4.3-RELEASE SWIFT_WEBROOT=https://swift.org/builds/
+# Mon, 13 Sep 2021 18:52:12 GMT
+RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)/"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver keyserver.ubuntu.com --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz
+# Mon, 13 Sep 2021 18:52:17 GMT
 RUN swift --version
 ```
 
@@ -67,7 +67,7 @@ RUN swift --version
 		Last Modified: Wed, 28 Apr 2021 20:13:38 GMT  
 		Size: 11.5 KB (11500 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:036954d5bcc9bef15e92f5d4157b545c49a416b71effa22f6b8ed50f16a7b56d`  
-		Last Modified: Tue, 29 Jun 2021 23:24:11 GMT  
-		Size: 515.7 MB (515738671 bytes)  
+	-	`sha256:5c9a3e731dc1c2630b0281b4879dd6f3b32b3ac703ca298a3f85ff7e730e44c4`  
+		Last Modified: Mon, 13 Sep 2021 19:13:45 GMT  
+		Size: 515.7 MB (515732921 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
