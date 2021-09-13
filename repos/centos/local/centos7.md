@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:8652b9f0cb4c0599575e5a003f5906876e10c1ceb2ab9fe1786712dac14a50cf`
 - Created: `2020-11-14T00:20:04.644613188Z`
-- Virtual Size: ~ 203.93 Mb  
+- Virtual Size: ~ 203.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -31,8 +31,6 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls acl-2.2.51-15.el7
-http://mirror.mia.velocihost.net/centos/7.9.2009/updates/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 403 - Forbidden
-Trying other mirror.
 Enabling updates-source repository
 Enabling base-source repository
 Enabling extras-source repository
