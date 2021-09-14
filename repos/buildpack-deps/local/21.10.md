@@ -127,13 +127,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.3.7
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.3.7.dsc' apt_2.3.7.dsc 2779 SHA512:96fce97c77daf52ca902f3a00ce5685575ccf807e6b3859836ab2639c4b1abfb136edab23a1bd8b5ae5c049e3304298f194f0c4c1ed6c32a7029f6eb170df0e1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.3.7.tar.xz' apt_2.3.7.tar.xz 2202688 SHA512:0fc0476ab1b4d6691e562f307d4152afd07eff28555174762cbd6b9bac93e008af5f19a3f8f858b76410a338ef6d728330f6690aa6d434c7f83490f3e0589a6e
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/2.3.7/
+
 
 ### `dpkg` source package: `attr=1:2.4.48-6build1`
 
@@ -231,15 +231,9 @@ Licenses: (parsed from: `/usr/share/doc/automake/copyright`)
 - `GPL-3+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris automake-1.16=1:1.16.4-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/automake-1.16/automake-1.16_1.16.4-1ubuntu1.dsc' automake-1.16_1.16.4-1ubuntu1.dsc 2596 SHA512:b02dc2561bb9be816b727cb59a74bbdca2dfebef0c33fa83fad904dc02e254417f82a37e4de9dd78a22093abaf36ffd29a9115af523bc46f7ae4761fb27d82c3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/automake-1.16/automake-1.16_1.16.4.orig.tar.xz' automake-1.16_1.16.4.orig.tar.xz 1599336 SHA512:5a8883657e73b75bfa1ee59ab04af6bf4d43f390ab62fb7a9e8e2ac66159dfe4947b2ac7bc1028afffe6a09d88f388339500e03f6cdfa1226985be45ec033246
-'http://archive.ubuntu.com/ubuntu/pool/main/a/automake-1.16/automake-1.16_1.16.4.orig.tar.xz.asc' automake-1.16_1.16.4.orig.tar.xz.asc 833 SHA512:ff96d886ba3613b591186bd14fce51ab1f623a2a970f7c62b4901ec5b55ca4ee3b9491f22a2e05eb29826204c3fd4290d2e746fb878b65f31fb0d91fcbb730d8
-'http://archive.ubuntu.com/ubuntu/pool/main/a/automake-1.16/automake-1.16_1.16.4-1ubuntu1.debian.tar.xz' automake-1.16_1.16.4-1ubuntu1.debian.tar.xz 12868 SHA512:5fa7b6389e4d33e85691589c380b53bc77d03eae179332419dd2b871933e3ff125158c78dc89606e52f69233f4ee33533a18ec46dd7a920b1a65627e5512b8bb
-```
 
 ### `dpkg` source package: `autotools-dev=20180224.1+nmu1`
 
@@ -736,14 +730,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`, `/usr/share/doc/li
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.3.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.3.0-1.dsc' expat_2.3.0-1.dsc 1981 SHA512:a33b683b5df6cd9c4de5295dde86a75921d2611431ffbc6ea6132002bb5e235df3de4eeeac0d9baec44771e800a3b5628de60e41d2603f8c526039a7d1997f06
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.3.0.orig.tar.gz' expat_2.3.0.orig.tar.gz 8283476 SHA512:728ceb1d912fabc7662d4201828dc29c7fdaff124a1d6dc81434b1951eb530b17f1bbb1aec22c1520543cff3844f4751f29d3c59b696dd8a56598abdc25e1d08
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.3.0-1.debian.tar.xz' expat_2.3.0-1.debian.tar.xz 11024 SHA512:332b66d19ae430456d0f508d970794766368f3f7759a8ea608e50ca14bed43f80df9b9a9621a2a389c6a52497c7c369e66b5eb167c6ba9bdeec3ecc94f8f5d94
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/expat/2.3.0-1/
+
 
 ### `dpkg` source package: `fftw3=3.3.8-2ubuntu7`
 

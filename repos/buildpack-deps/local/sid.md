@@ -1337,21 +1337,13 @@ Licenses: (parsed from: `/usr/share/doc/libgdbm-compat4/copyright`, `/usr/share/
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdbm=1.20-1
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.20-1.dsc' gdbm_1.20-1.dsc 2604 SHA256:d46106cfac55f94cf0bc49302800cdbd38aada518bf61cb032b07d255f0753c3
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.20.orig.tar.gz' gdbm_1.20.orig.tar.gz 987628 SHA256:3aeac05648b3482a10a2da986b9f3a380a29ad650be80b9817a435fb8114a292
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.20.orig.tar.gz.asc' gdbm_1.20.orig.tar.gz.asc 181 SHA256:f0fed968dd6b841109d9a1bc44242522bc134af74bdf3473345d33bb19dc67af
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.20-1.debian.tar.xz' gdbm_1.20-1.debian.tar.xz 16800 SHA256:5eb6272edf4184707e480716d1f39ad449ea6125f41bf194e9c4b29c94a1462b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gdbm/1.20-1/
 
-- https://sources.debian.net/src/gdbm/1.20-1/ (for browsing the source)
-- https://sources.debian.net/src/gdbm/1.20-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdbm/1.20-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdk-pixbuf=2.42.6+dfsg-2`
 
@@ -1512,20 +1504,13 @@ Licenses: (parsed from: `/usr/share/doc/libgmp-dev/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gmp=2:6.2.1+dfsg-1
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.2.1+dfsg-1.dsc' gmp_6.2.1+dfsg-1.dsc 2145 SHA256:2644a10ca1e7d2ebbfb74d16449e485cd79d985a73ddffd258a138222178cb91
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.2.1+dfsg.orig.tar.xz' gmp_6.2.1+dfsg.orig.tar.xz 1853476 SHA256:c6ba08e3f079260ab90ff44ab8801eae134cd62cd78f4aa56317c0e70daa40cb
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.2.1+dfsg-1.debian.tar.xz' gmp_6.2.1+dfsg-1.debian.tar.xz 21248 SHA256:5b9fa90b68ca3323bb7a31b60fbd2b495609e39d7b1f21f0f6f1955ca5916163
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gmp/2:6.2.1+dfsg-1/
 
-- https://sources.debian.net/src/gmp/2:6.2.1+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/gmp/2:6.2.1+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gmp/2:6.2.1+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnupg2=2.2.27-2`
 
@@ -2326,20 +2311,13 @@ Licenses: (parsed from: `/usr/share/doc/libedit2/copyright`)
 
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libedit=3.1-20210714-1
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20210714-1.dsc' libedit_3.1-20210714-1.dsc 2208 SHA256:0d16716fe3cd218be760106867e168ff46d9227bab660d44cd0fb80a4765a46a
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20210714.orig.tar.gz' libedit_3.1-20210714.orig.tar.gz 522662 SHA256:3023b498ad593fd7745ae3b20abad546de506b67b8fbb5579637ca69ab82dbc9
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20210714-1.debian.tar.xz' libedit_3.1-20210714-1.debian.tar.xz 14816 SHA256:f49a962a9afd3f14f1624329673a8c317eb5e3e18ba67fa0417fbcbbb6a0f44c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libedit/3.1-20210714-1/
 
-- https://sources.debian.net/src/libedit/3.1-20210714-1/ (for browsing the source)
-- https://sources.debian.net/src/libedit/3.1-20210714-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libedit/3.1-20210714-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `liberror-perl=0.17029-1`
 
@@ -2949,20 +2927,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 - `Unlicense,`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.50.3+dfsg-1
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.50.3+dfsg-1.dsc' librsvg_2.50.3+dfsg-1.dsc 3120 SHA256:71b8fbbcec5d028d514e4b8ac85f93c05fb87745c8ef9f932474bfdb6eb72297
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.50.3+dfsg.orig.tar.xz' librsvg_2.50.3+dfsg.orig.tar.xz 16290880 SHA256:6aa4e614292de77c6b5fa1fd05d6c5d658d4bb9857f678b7b57d0865d5e50116
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.50.3+dfsg-1.debian.tar.xz' librsvg_2.50.3+dfsg-1.debian.tar.xz 30140 SHA256:1922c563a42de3bf7fa991f484f71397fa15ef701e2b3aa6d41eb26a49b25a54
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/librsvg/2.50.3+dfsg-1/
 
-- https://sources.debian.net/src/librsvg/2.50.3+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/librsvg/2.50.3+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/librsvg/2.50.3+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.5.1-1`
 
@@ -3531,20 +3502,13 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.12+dfsg-3
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.12+dfsg-3.dsc' libxml2_2.9.12+dfsg-3.dsc 2664 SHA256:1062a232f5ecbd1c24a2ce8bc52ea6a0a4da746a5d5cf0e634bd6243c4f5f2ba
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.12+dfsg.orig.tar.xz' libxml2_2.9.12+dfsg.orig.tar.xz 2535044 SHA256:e25d1b3e476f01f3c8c6b34950fa1be5535c13ef5207825cafe285bc88fd4ed0
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.12+dfsg-3.debian.tar.xz' libxml2_2.9.12+dfsg-3.debian.tar.xz 30024 SHA256:2c34606ef63ba40225918792758c2ddc161b9f611491c79ecdf009aa2dbc2e9f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.9.12+dfsg-3/
 
-- https://sources.debian.net/src/libxml2/2.9.12+dfsg-3/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.12+dfsg-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.12+dfsg-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrender=1:0.9.10-1`
 

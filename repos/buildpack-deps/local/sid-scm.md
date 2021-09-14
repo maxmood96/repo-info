@@ -825,21 +825,13 @@ Licenses: (parsed from: `/usr/share/doc/libgdbm-compat4/copyright`, `/usr/share/
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdbm=1.20-1
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.20-1.dsc' gdbm_1.20-1.dsc 2604 SHA256:d46106cfac55f94cf0bc49302800cdbd38aada518bf61cb032b07d255f0753c3
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.20.orig.tar.gz' gdbm_1.20.orig.tar.gz 987628 SHA256:3aeac05648b3482a10a2da986b9f3a380a29ad650be80b9817a435fb8114a292
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.20.orig.tar.gz.asc' gdbm_1.20.orig.tar.gz.asc 181 SHA256:f0fed968dd6b841109d9a1bc44242522bc134af74bdf3473345d33bb19dc67af
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.20-1.debian.tar.xz' gdbm_1.20-1.debian.tar.xz 16800 SHA256:5eb6272edf4184707e480716d1f39ad449ea6125f41bf194e9c4b29c94a1462b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gdbm/1.20-1/
 
-- https://sources.debian.net/src/gdbm/1.20-1/ (for browsing the source)
-- https://sources.debian.net/src/gdbm/1.20-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdbm/1.20-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `git=1:2.33.0-1`
 
@@ -923,20 +915,13 @@ Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 - `GPL-3`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gmp=2:6.2.1+dfsg-1
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.2.1+dfsg-1.dsc' gmp_6.2.1+dfsg-1.dsc 2145 SHA256:2644a10ca1e7d2ebbfb74d16449e485cd79d985a73ddffd258a138222178cb91
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.2.1+dfsg.orig.tar.xz' gmp_6.2.1+dfsg.orig.tar.xz 1853476 SHA256:c6ba08e3f079260ab90ff44ab8801eae134cd62cd78f4aa56317c0e70daa40cb
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.2.1+dfsg-1.debian.tar.xz' gmp_6.2.1+dfsg-1.debian.tar.xz 21248 SHA256:5b9fa90b68ca3323bb7a31b60fbd2b495609e39d7b1f21f0f6f1955ca5916163
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gmp/2:6.2.1+dfsg-1/
 
-- https://sources.debian.net/src/gmp/2:6.2.1+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/gmp/2:6.2.1+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gmp/2:6.2.1+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnupg2=2.2.27-2`
 
@@ -1325,20 +1310,13 @@ Licenses: (parsed from: `/usr/share/doc/libedit2/copyright`)
 
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libedit=3.1-20210714-1
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20210714-1.dsc' libedit_3.1-20210714-1.dsc 2208 SHA256:0d16716fe3cd218be760106867e168ff46d9227bab660d44cd0fb80a4765a46a
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20210714.orig.tar.gz' libedit_3.1-20210714.orig.tar.gz 522662 SHA256:3023b498ad593fd7745ae3b20abad546de506b67b8fbb5579637ca69ab82dbc9
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20210714-1.debian.tar.xz' libedit_3.1-20210714-1.debian.tar.xz 14816 SHA256:f49a962a9afd3f14f1624329673a8c317eb5e3e18ba67fa0417fbcbbb6a0f44c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libedit/3.1-20210714-1/
 
-- https://sources.debian.net/src/libedit/3.1-20210714-1/ (for browsing the source)
-- https://sources.debian.net/src/libedit/3.1-20210714-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libedit/3.1-20210714-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `liberror-perl=0.17029-1`
 
