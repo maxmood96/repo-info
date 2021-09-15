@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4ca987b7a7333ef7f5ae26dae4043089cf6e726cfcbc81e3b887093bd789037d`
-- Created: `2021-09-08T19:28:11.539897331Z`
-- Virtual Size: ~ 123.04 Mb  
+- Image ID: `sha256:939e7c1a52e976b0fae125b9ffa4959ad99777e228143333c0c7930a7bf007b7`
+- Created: `2021-09-15T01:57:54.495111113Z`
+- Virtual Size: ~ 122.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -249,20 +249,20 @@ GPL-3.0-or-later
 
 ```
 
-### `apk` package: `git`
+### `apk` package: `glib`
 
 ```console
-git-2.32.0-r0 description:
-Distributed version control system
+glib-2.68.3-r0 description:
+Common C routines used by Gtk+ and other libs
 
-git-2.32.0-r0 webpage:
-https://www.git-scm.com/
+glib-2.68.3-r0 webpage:
+https://developer.gnome.org/glib/
 
-git-2.32.0-r0 installed size:
-10 MiB
+glib-2.68.3-r0 installed size:
+3352 KiB
 
-git-2.32.0-r0 license:
-GPL-2.0-or-later
+glib-2.68.3-r0 license:
+LGPL-2.1-or-later
 
 ```
 
@@ -280,6 +280,23 @@ gmp-6.2.1-r0 installed size:
 
 gmp-6.2.1-r0 license:
 LGPL-3.0-or-later OR GPL-2.0-or-later
+
+```
+
+### `apk` package: `gnupg`
+
+```console
+gnupg-2.2.27-r0 description:
+GNU Privacy Guard 2 - a PGP replacement tool
+
+gnupg-2.2.27-r0 webpage:
+https://www.gnupg.org/
+
+gnupg-2.2.27-r0 installed size:
+4424 KiB
+
+gnupg-2.2.27-r0 license:
+GPL-3.0-or-later
 
 ```
 
@@ -351,6 +368,40 @@ LGPL-2.1-or-later AND GPL-2.0-or-later
 
 ```
 
+### `apk` package: `libassuan`
+
+```console
+libassuan-2.5.5-r0 description:
+IPC library used by some GnuPG related software
+
+libassuan-2.5.5-r0 webpage:
+https://www.gnupg.org/software/libassuan/index.html
+
+libassuan-2.5.5-r0 installed size:
+88 KiB
+
+libassuan-2.5.5-r0 license:
+LGPL-2.1-or-later
+
+```
+
+### `apk` package: `libblkid`
+
+```console
+libblkid-2.37-r0 description:
+Block device identification library from util-linux
+
+libblkid-2.37-r0 webpage:
+https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+
+libblkid-2.37-r0 installed size:
+300 KiB
+
+libblkid-2.37-r0 license:
+GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND
+
+```
+
 ### `apk` package: `libbsd`
 
 ```console
@@ -399,6 +450,23 @@ libc-utils-0.7.2-r3 installed size:
 
 libc-utils-0.7.2-r3 license:
 BSD-2-Clause AND BSD-3-Clause
+
+```
+
+### `apk` package: `libcap`
+
+```console
+libcap-2.50-r0 description:
+POSIX 1003.1e capabilities
+
+libcap-2.50-r0 webpage:
+https://sites.google.com/site/fullycapable/
+
+libcap-2.50-r0 installed size:
+168 KiB
+
+libcap-2.50-r0 license:
+BSD-3-Clause OR GPL-2.0-only
 
 ```
 
@@ -470,6 +538,23 @@ GPL-2.0-or-later LGPL-2.1-or-later
 
 ```
 
+### `apk` package: `libgcrypt`
+
+```console
+libgcrypt-1.9.4-r0 description:
+General purpose crypto library based on the code used in GnuPG
+
+libgcrypt-1.9.4-r0 webpage:
+https://www.gnupg.org/
+
+libgcrypt-1.9.4-r0 installed size:
+1220 KiB
+
+libgcrypt-1.9.4-r0 license:
+LGPL-2.1-or-later
+
+```
+
 ### `apk` package: `libgomp`
 
 ```console
@@ -483,6 +568,23 @@ libgomp-10.3.1_git20210424-r2 installed size:
 264 KiB
 
 libgomp-10.3.1_git20210424-r2 license:
+GPL-2.0-or-later LGPL-2.1-or-later
+
+```
+
+### `apk` package: `libgpg-error`
+
+```console
+libgpg-error-1.42-r0 description:
+Support library for libgcrypt
+
+libgpg-error-1.42-r0 webpage:
+https://www.gnupg.org/
+
+libgpg-error-1.42-r0 installed size:
+212 KiB
+
+libgpg-error-1.42-r0 license:
 GPL-2.0-or-later LGPL-2.1-or-later
 
 ```
@@ -518,6 +620,23 @@ libjpeg-turbo-2.1.0-r0 installed size:
 
 libjpeg-turbo-2.1.0-r0 license:
 BSD-3-Clause IJG Zlib
+
+```
+
+### `apk` package: `libksba`
+
+```console
+libksba-1.5.1-r0 description:
+Libksba is a CMS and X.509 access library
+
+libksba-1.5.1-r0 webpage:
+https://www.gnupg.org/software/libksba/index.html
+
+libksba-1.5.1-r0 installed size:
+224 KiB
+
+libksba-1.5.1-r0 license:
+GPL-2.0-or-later or GPL-3.0-or-later
 
 ```
 
@@ -589,6 +708,23 @@ BSD-3-Clause
 
 ```
 
+### `apk` package: `libmount`
+
+```console
+libmount-2.37-r0 description:
+Block device identification library from util-linux
+
+libmount-2.37-r0 webpage:
+https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+
+libmount-2.37-r0 installed size:
+336 KiB
+
+libmount-2.37-r0 license:
+GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND
+
+```
+
 ### `apk` package: `libpng`
 
 ```console
@@ -637,6 +773,23 @@ libsasl-2.1.27-r12 installed size:
 
 libsasl-2.1.27-r12 license:
 custom
+
+```
+
+### `apk` package: `libsecret`
+
+```console
+libsecret-0.20.4-r1 description:
+Library for storing and retrieving passwords and other secrets
+
+libsecret-0.20.4-r1 webpage:
+https://wiki.gnome.org/Projects/Libsecret
+
+libsecret-0.20.4-r1 installed size:
+432 KiB
+
+libsecret-0.20.4-r1 license:
+LGPL-2.0-or-later
 
 ```
 
@@ -997,6 +1150,23 @@ MIT
 
 ```
 
+### `apk` package: `npth`
+
+```console
+npth-1.6-r0 description:
+The New GNU Portable Threads library
+
+npth-1.6-r0 webpage:
+ftp://ftp.gnupg.org/gcrypt/npth/
+
+npth-1.6-r0 installed size:
+32 KiB
+
+npth-1.6-r0 license:
+LGPL-3.0-or-later or GPL-2.0-or-later or (LGPL-3.0-or-later and GPL-2.0-or-later)
+
+```
+
 ### `apk` package: `openssl`
 
 ```console
@@ -1031,20 +1201,37 @@ BSD-3-Clause
 
 ```
 
-### `apk` package: `pcre2`
+### `apk` package: `pcre`
 
 ```console
-pcre2-10.36-r0 description:
+pcre-8.44-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.36-r0 webpage:
-https://pcre.org/
+pcre-8.44-r0 webpage:
+http://pcre.sourceforge.net
 
-pcre2-10.36-r0 installed size:
-652 KiB
+pcre-8.44-r0 installed size:
+392 KiB
 
-pcre2-10.36-r0 license:
+pcre-8.44-r0 license:
 BSD-3-Clause
+
+```
+
+### `apk` package: `pinentry`
+
+```console
+pinentry-1.1.1-r0 description:
+Collection of simple PIN or passphrase entry dialogs which utilize the Assuan protocol
+
+pinentry-1.1.1-r0 webpage:
+https://www.gnupg.org/aegypten2/
+
+pinentry-1.1.1-r0 installed size:
+80 KiB
+
+pinentry-1.1.1-r0 license:
+GPL-2.0-or-later
 
 ```
 

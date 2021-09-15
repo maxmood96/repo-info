@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ec416e7d90d0fcc30ecc097db852bad73d5ca8b69738245d49ca22ab70d75bb5`
-- Created: `2021-09-09T18:22:38.878819959Z`
-- Virtual Size: ~ 228.80 Mb  
+- Image ID: `sha256:b587dc58ed20a505126715a7cc9b78a260b2adaf0c2c531b7c7798d53dc7a26b`
+- Created: `2021-09-15T01:56:56.248519025Z`
+- Virtual Size: ~ 217.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -248,23 +248,6 @@ gdbm-1.19-r0 installed size:
 
 gdbm-1.19-r0 license:
 GPL-3.0-or-later
-
-```
-
-### `apk` package: `git`
-
-```console
-git-2.32.0-r0 description:
-Distributed version control system
-
-git-2.32.0-r0 webpage:
-https://www.git-scm.com/
-
-git-2.32.0-r0 installed size:
-10 MiB
-
-git-2.32.0-r0 license:
-GPL-2.0-or-later
 
 ```
 
@@ -1029,23 +1012,6 @@ p11-kit-0.23.22-r0 installed size:
 1200 KiB
 
 p11-kit-0.23.22-r0 license:
-BSD-3-Clause
-
-```
-
-### `apk` package: `pcre2`
-
-```console
-pcre2-10.36-r0 description:
-Perl-compatible regular expression library
-
-pcre2-10.36-r0 webpage:
-https://pcre.org/
-
-pcre2-10.36-r0 installed size:
-652 KiB
-
-pcre2-10.36-r0 license:
 BSD-3-Clause
 
 ```
