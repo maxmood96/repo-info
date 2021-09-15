@@ -1,7 +1,7 @@
 ## `friendica:rc-fpm-alpine`
 
 ```console
-$ docker pull friendica@sha256:b10617228d4226f02f9c61d8483bb2e184c7cb56d79bb576eeac114827c30a9c
+$ docker pull friendica@sha256:91203e819f287faad79b00d299270f8f902f3e008d675d1aff457e759c5ec25e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -841,14 +841,14 @@ CMD ["php-fpm"]
 ### `friendica:rc-fpm-alpine` - linux; ppc64le
 
 ```console
-$ docker pull friendica@sha256:739d6a084b9bb85c397a0d173f63e1ecc2e2152e737433963fd05bae79d512c7
+$ docker pull friendica@sha256:1e9f5a6d5ff81e6be466a478fcb01ac49e903c4cfaf77e8680531e40ad209d20
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **52.5 MB (52517271 bytes)**  
+-	Total Size: **51.3 MB (51267889 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a59354ce2c686de82aa8b983794f233bc54e23f1c49ac8aba55e07fe58a6f7a6`
+-	Image ID: `sha256:1e693b9af3862685cd44b2fa0dff9a9c2d59f8886c139f415359500a20a22b22`
 -	Entrypoint: `["\/entrypoint-dev.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -905,29 +905,31 @@ STOPSIGNAL SIGQUIT
 EXPOSE 9000
 # Sat, 28 Aug 2021 01:26:14 GMT
 CMD ["php-fpm"]
-# Sat, 28 Aug 2021 04:03:45 GMT
-RUN set -ex;     apk add --no-cache         rsync         git         msmtp         shadow         tini;
-# Wed, 08 Sep 2021 20:08:28 GMT
+# Wed, 15 Sep 2021 02:44:33 GMT
+RUN set -ex;     apk add --no-cache         rsync         msmtp         shadow         tini;
+# Wed, 15 Sep 2021 02:44:36 GMT
 ENV GOSU_VERSION=1.14
-# Wed, 08 Sep 2021 20:09:15 GMT
+# Wed, 15 Sep 2021 02:44:54 GMT
 RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		ca-certificates 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 08 Sep 2021 20:15:15 GMT
+# Wed, 15 Sep 2021 02:48:57 GMT
 RUN set -ex;         apk add --no-cache --virtual .build-deps         mariadb-client         bash         $PHPIZE_DEPS         libpng-dev         libjpeg-turbo-dev         imagemagick-dev         libtool         libmemcached-dev         cyrus-sasl-dev         libjpeg-turbo-dev         freetype-dev         librsvg         pcre-dev         libzip-dev         icu-dev         openldap-dev     ;         docker-php-ext-configure gd         --with-gd         --with-freetype-dir=/usr/include/         --with-png-dir=/usr/include/         --with-jpeg-dir=/usr/include/     ;         docker-php-ext-install -j "$(nproc)"         pdo_mysql         gd         zip         opcache         pcntl         ldap     ;         pecl install APCu-5.1.20;     pecl install memcached-3.1.5;     pecl install redis-5.3.4;     pecl install imagick-3.5.1;         docker-php-ext-enable         apcu         memcached         redis         imagick     ;         runDeps="$(         scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions             | tr ',' '\n'             | sort -u             | awk 'system("[ -e /usr/local/lib" $1 " ]") == 0 { next } { print "so:" $1 }'     )";     apk add --no-network --virtual .friendica-phpext-rundeps $runDeps;     apk del --no-network .build-deps;
-# Wed, 08 Sep 2021 20:15:41 GMT
+# Wed, 15 Sep 2021 02:49:12 GMT
 RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         echo 'memory_limit=512M' > /usr/local/etc/php/conf.d/memory-limit.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www
-# Wed, 08 Sep 2021 20:15:48 GMT
+# Wed, 15 Sep 2021 02:49:14 GMT
 VOLUME [/var/www/html]
-# Wed, 08 Sep 2021 20:27:49 GMT
+# Wed, 15 Sep 2021 03:06:28 GMT
 ENV FRIENDICA_VERSION=2021.09-rc
-# Wed, 08 Sep 2021 20:27:56 GMT
+# Wed, 15 Sep 2021 03:06:32 GMT
 ENV FRIENDICA_ADDONS=2021.09-rc
-# Wed, 08 Sep 2021 20:28:03 GMT
-COPY multi:105145bfb78d9bd114f02dacac05f54307861674ec62eef9aad961c778eb2415 in / 
-# Wed, 08 Sep 2021 20:28:10 GMT
+# Wed, 15 Sep 2021 03:06:44 GMT
+RUN set -ex;      apk add --no-cache --virtual .fetch-deps             gnupg         ;
+# Wed, 15 Sep 2021 03:06:47 GMT
+COPY multi:5672e202a34d70dd6f39b63a6f74e984eae4079bee1d1699f54cbd68673dc2f8 in / 
+# Wed, 15 Sep 2021 03:06:48 GMT
 COPY multi:33c6df8ca48b360ac89b7ca8e8b370fe30a626687aacfad3b3c3d5c1924a5777 in /usr/src/friendica/config/ 
-# Wed, 08 Sep 2021 20:28:24 GMT
+# Wed, 15 Sep 2021 03:06:50 GMT
 ENTRYPOINT ["/entrypoint-dev.sh"]
-# Wed, 08 Sep 2021 20:28:31 GMT
+# Wed, 15 Sep 2021 03:06:51 GMT
 CMD ["php-fpm"]
 ```
 
@@ -972,27 +974,31 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 28 Aug 2021 01:48:06 GMT  
 		Size: 8.4 KB (8414 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2887e0044ba36e84fc0740b136c493ec66a2f33e1a31d6eb2e31f0a37c1a2e00`  
-		Last Modified: Sat, 28 Aug 2021 04:16:15 GMT  
-		Size: 10.6 MB (10583838 bytes)  
+	-	`sha256:ce36637d5662f6ba9bdbdc9d20d2b2e76e8aab2204d0c582461c228f939e4fbe`  
+		Last Modified: Wed, 15 Sep 2021 03:09:01 GMT  
+		Size: 4.2 MB (4159274 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e2e9c5715a7e97992186da42755a52f411a6bce1a8a64fd539536b2cb1f744d7`  
-		Last Modified: Wed, 08 Sep 2021 20:30:47 GMT  
-		Size: 858.9 KB (858922 bytes)  
+	-	`sha256:6fb5fcad5102f8e926464c186987dc14c763ba91829fc78da60898dacd552388`  
+		Last Modified: Wed, 15 Sep 2021 03:09:00 GMT  
+		Size: 855.5 KB (855502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c45b92184f7b276bb889319dae853747aded4c55e7393fc12bdf8bcbe076e32`  
-		Last Modified: Wed, 08 Sep 2021 20:30:46 GMT  
-		Size: 8.7 MB (8665145 bytes)  
+	-	`sha256:961ce278368ce58082746375b6ee75bb120f19e39d770de803fbc866c1afd47d`  
+		Last Modified: Wed, 15 Sep 2021 03:08:59 GMT  
+		Size: 8.7 MB (8736819 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b80cf363412cbc9dec31e32bee5c9d811b6738d8920118a5c164872e97044bb0`  
-		Last Modified: Wed, 08 Sep 2021 20:30:44 GMT  
-		Size: 569.0 B  
+	-	`sha256:60dd218c119fd8792572951aea33fe3f600383593fc44bd459f969c7e68027cf`  
+		Last Modified: Wed, 15 Sep 2021 03:08:57 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3654d4cda6c6562e3b5214d672c63f863d04144491923da2145f88f6c435d658`  
-		Last Modified: Wed, 08 Sep 2021 20:34:00 GMT  
-		Size: 3.3 KB (3287 bytes)  
+	-	`sha256:44fdfd842eb495bf10856b9b353c409cd8db6e9ccfaef95363ea0fdf18c0b13b`  
+		Last Modified: Wed, 15 Sep 2021 03:12:19 GMT  
+		Size: 5.1 MB (5106924 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:865daa80e8f3bc3f68911a9940da3fa4e1e4ebe528b70e1abaa1fcc820d1e83b`  
-		Last Modified: Wed, 08 Sep 2021 20:34:00 GMT  
-		Size: 1.2 KB (1154 bytes)  
+	-	`sha256:f455a436ea10f8c61bdd74245532555a78234b3ea5105a95b0c1e79c46f1a305`  
+		Last Modified: Wed, 15 Sep 2021 03:12:18 GMT  
+		Size: 3.3 KB (3278 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3839dc787e612c539bf89e6daa0ce5d815b095eaa1f530417769e3e7c2295531`  
+		Last Modified: Wed, 15 Sep 2021 03:12:18 GMT  
+		Size: 1.2 KB (1156 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
