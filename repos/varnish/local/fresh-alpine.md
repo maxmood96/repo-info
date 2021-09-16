@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0b2e847b262d83e7d67482e0c722043c9ec53e72b0bcf97d96e9cb55fabd802a`
-- Created: `2021-08-28T01:10:57.882356489Z`
-- Virtual Size: ~ 146.29 Mb  
+- Image ID: `sha256:16389ffafe79585f08fed86f9c23466e91ee632a5142b9c5e89e2bff6909bdba`
+- Created: `2021-09-15T18:28:12.611104446Z`
+- Virtual Size: ~ 146.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-varnish-entrypoint"]`
@@ -490,19 +490,19 @@ MIT
 
 ```
 
-### `apk` package: `pcre`
+### `apk` package: `pcre2`
 
 ```console
-pcre-8.44-r0 description:
+pcre2-10.36-r0 description:
 Perl-compatible regular expression library
 
-pcre-8.44-r0 webpage:
-http://pcre.sourceforge.net
+pcre2-10.36-r0 webpage:
+https://pcre.org/
 
-pcre-8.44-r0 installed size:
-392 KiB
+pcre2-10.36-r0 installed size:
+652 KiB
 
-pcre-8.44-r0 license:
+pcre2-10.36-r0 license:
 BSD-3-Clause
 
 ```
@@ -561,16 +561,16 @@ GPL-2.0-only
 ### `apk` package: `varnish`
 
 ```console
-varnish-6.6.1-r1 description:
+varnish-7.0.0-r1 description:
 High-performance HTTP accelerator
 
-varnish-6.6.1-r1 webpage:
+varnish-7.0.0-r1 webpage:
 http://www.varnish-cache.org/
 
-varnish-6.6.1-r1 installed size:
-2256 KiB
+varnish-7.0.0-r1 installed size:
+2284 KiB
 
-varnish-6.6.1-r1 license:
+varnish-7.0.0-r1 license:
 BSD
 
 ```
@@ -578,16 +578,16 @@ BSD
 ### `apk` package: `varnish-dbg`
 
 ```console
-varnish-dbg-6.6.1-r1 description:
+varnish-dbg-7.0.0-r1 description:
 High-performance HTTP accelerator (debug symbols)
 
-varnish-dbg-6.6.1-r1 webpage:
+varnish-dbg-7.0.0-r1 webpage:
 http://www.varnish-cache.org/
 
-varnish-dbg-6.6.1-r1 installed size:
-6068 KiB
+varnish-dbg-7.0.0-r1 installed size:
+6180 KiB
 
-varnish-dbg-6.6.1-r1 license:
+varnish-dbg-7.0.0-r1 license:
 BSD
 
 ```
@@ -595,16 +595,16 @@ BSD
 ### `apk` package: `varnish-dev`
 
 ```console
-varnish-dev-6.6.1-r1 description:
+varnish-dev-7.0.0-r1 description:
 High-performance HTTP accelerator (development files)
 
-varnish-dev-6.6.1-r1 webpage:
+varnish-dev-7.0.0-r1 webpage:
 http://www.varnish-cache.org/
 
-varnish-dev-6.6.1-r1 installed size:
-640 KiB
+varnish-dev-7.0.0-r1 installed size:
+648 KiB
 
-varnish-dev-6.6.1-r1 license:
+varnish-dev-7.0.0-r1 license:
 BSD
 
 ```
@@ -612,16 +612,16 @@ BSD
 ### `apk` package: `varnish-doc`
 
 ```console
-varnish-doc-6.6.1-r1 description:
+varnish-doc-7.0.0-r1 description:
 High-performance HTTP accelerator (documentation)
 
-varnish-doc-6.6.1-r1 webpage:
+varnish-doc-7.0.0-r1 webpage:
 http://www.varnish-cache.org/
 
-varnish-doc-6.6.1-r1 installed size:
-224 KiB
+varnish-doc-7.0.0-r1 installed size:
+228 KiB
 
-varnish-doc-6.6.1-r1 license:
+varnish-doc-7.0.0-r1 license:
 BSD
 
 ```
@@ -629,16 +629,16 @@ BSD
 ### `apk` package: `varnish-libs`
 
 ```console
-varnish-libs-6.6.1-r1 description:
+varnish-libs-7.0.0-r1 description:
 High-performance HTTP accelerator (libraries)
 
-varnish-libs-6.6.1-r1 webpage:
+varnish-libs-7.0.0-r1 webpage:
 http://www.varnish-cache.org/
 
-varnish-libs-6.6.1-r1 installed size:
-200 KiB
+varnish-libs-7.0.0-r1 installed size:
+204 KiB
 
-varnish-libs-6.6.1-r1 license:
+varnish-libs-7.0.0-r1 license:
 BSD
 
 ```
