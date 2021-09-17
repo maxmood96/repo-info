@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:77bbec4af24ebcf789e1acd4ddf525e5fc33f432e99b4e6f38031e5bb614f7c4`
-- Created: `2021-09-13T20:16:25.034256393Z`
+- Image ID: `sha256:d5dc9f81d125e0a33edbbb8a6fd5bf1cfd7f58ed419decccd1591a1bc79afd55`
+- Created: `2021-09-16T20:32:50.207033252Z`
 - Virtual Size: ~ 1.28 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -21,8 +21,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 5C3C5F3E314C866292F359A8F3AD5C94A67F707E 765908099ACF92702C7D949BFA0C35EA8AA299F1 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.5.70`
-  - `TOMCAT_SHA512=10d306a2ea27e10b914556678763e2b1295ffdaa3da042db586d39b9ab95640bd3e1b81627f96c61f400f2db98a7d4b4bbdf21dc3238c8d0025bf95b08f2f61c`
+  - `TOMCAT_VERSION=8.5.71`
+  - `TOMCAT_SHA512=292a3f856b0a8c1d11fd1ba252cabd94794201cda4f951dd0522764449bed90f2f43a4a667cd6d28ce13c3b2096736978d9df91709c168ba7133c51544446433`
   - `XWIKI_VERSION=13.7`
   - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.7`
   - `XWIKI_DOWNLOAD_SHA256=33ebdd127ba25e71d374a1e0e2a64a88dd3a32ad42e6ac878659d926dcccf2e3`
@@ -438,13 +438,13 @@ $ apt-get source -qq --print-uris cups=2.3.1-9ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.3.1-9ubuntu1.1.debian.tar.xz' cups_2.3.1-9ubuntu1.1.debian.tar.xz 356268 SHA512:376d76abe39fbec9a206cdb3544e71d8e4a3aa18188e175d4a996be7be05733be00487d0240e0cbbf21592ee657f686f3205384d98ee277fc5b548ac4642911e
 ```
 
-### `dpkg` source package: `curl=7.68.0-1ubuntu2.6`
+### `dpkg` source package: `curl=7.68.0-1ubuntu2.7`
 
 Binary Packages:
 
-- `curl=7.68.0-1ubuntu2.6`
-- `libcurl3-gnutls:amd64=7.68.0-1ubuntu2.6`
-- `libcurl4:amd64=7.68.0-1ubuntu2.6`
+- `curl=7.68.0-1ubuntu2.7`
+- `libcurl3-gnutls:amd64=7.68.0-1ubuntu2.7`
+- `libcurl4:amd64=7.68.0-1ubuntu2.7`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -458,10 +458,10 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.6.dsc' curl_7.68.0-1ubuntu2.6.dsc 2733 SHA512:6c45a3696e658333e0af0b211db8c2b789b6019af28c19499f73cf3fb5c3b4c8d0914be750c33a77607709886bc3202786fda05f16351ab5cfdb52ccce3d3309
+$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.7
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.7.dsc' curl_7.68.0-1ubuntu2.7.dsc 2733 SHA512:e125a9af90ed2bc17af45f0b23b2c145820a1fb61e8836e0aae2c13c43a4b4fff66c65b7464df47ccd0d54addc8062197afa61fe8a62a03e0a4c43b338301537
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.6.debian.tar.xz' curl_7.68.0-1ubuntu2.6.debian.tar.xz 44604 SHA512:83002bd567b8c0a54d7a8bdac4ebd16ab742c7f727a45a0a7a2a920c071b1dea2ea7ffc3a32a7ef692aa01a41288b8bee785649510219b600e1a935edb82fdfa
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.7.debian.tar.xz' curl_7.68.0-1ubuntu2.7.debian.tar.xz 48080 SHA512:9312b57d9adee8f77462aa222ae403c87f38f4729b73929b1ca5444c8e7c42c19102753dccefccdf7bfbff96f475aac61cda3600b630989b0f1bd5de8aa68699
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2`
@@ -3568,9 +3568,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.11
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.11.dsc' systemd_245.4-4ubuntu3.11.dsc 5262 SHA512:cae9d78907b01a82fe35d1dac11bef450b5f8321940a6e84bd9137ad2d1409e572a6f94befb36b165101fbaa33abe1fa8f58c636f1d063a05037cd8db66dfcf1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.11.debian.tar.xz' systemd_245.4-4ubuntu3.11.debian.tar.xz 259092 SHA512:e28761e8436cea11682aaccb7cb5a7a1172a3d344abde4febf244de44de9b55201902ee737d8f9b2994bb6d6cae0bbfd13a7cb795d87d5a0aa49588d26af3d96
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.11.dsc' systemd_245.4-4ubuntu3.11.dsc 5262 SHA512:cae9d78907b01a82fe35d1dac11bef450b5f8321940a6e84bd9137ad2d1409e572a6f94befb36b165101fbaa33abe1fa8f58c636f1d063a05037cd8db66dfcf1
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.11.debian.tar.xz' systemd_245.4-4ubuntu3.11.debian.tar.xz 259092 SHA512:e28761e8436cea11682aaccb7cb5a7a1172a3d344abde4febf244de44de9b55201902ee737d8f9b2994bb6d6cae0bbfd13a7cb795d87d5a0aa49588d26af3d96
 ```
 
 ### `dpkg` source package: `sysvinit=2.96-2.1ubuntu1`
