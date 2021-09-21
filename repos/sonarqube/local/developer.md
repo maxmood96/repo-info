@@ -1,23 +1,22 @@
-# `sonarqube:9.0.1-developer`
+# `sonarqube:9.1.0-developer`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c1d2468da4f532e8e2a41259120a5e1babec730508a6b7ebdd178d7fc8286e02`
-- Created: `2021-08-28T00:59:52.414196458Z`
-- Virtual Size: ~ 576.71 Mb  
+- Image ID: `sha256:f4947b42f11e29d55aad7a2a65133e9010db3c6762b2a0f927e35f17a35de597`
+- Created: `2021-09-17T21:43:53.882671889Z`
+- Virtual Size: ~ 643.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["bin/run.sh"]`
 - Command: `["bin/sonar.sh"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=jdk-11.0.11+9`
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_HOME=/opt/java/openjdk`
+  - `JAVA_HOME=/usr/lib/jvm/java-11-openjdk`
   - `SONARQUBE_HOME=/opt/sonarqube`
-  - `SONAR_VERSION=9.0.1.46107`
+  - `SONAR_VERSION=9.1.0.47736`
   - `SQ_DATA_DIR=/opt/sonarqube/data`
   - `SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions`
   - `SQ_LOGS_DIR=/opt/sonarqube/logs`
@@ -56,6 +55,23 @@ alpine-keys-2.3-r1 installed size:
 
 alpine-keys-2.3-r1 license:
 MIT
+
+```
+
+### `apk` package: `alsa-lib`
+
+```console
+alsa-lib-1.2.5-r2 description:
+Advanced Linux Sound Architecture (ALSA) library
+
+alsa-lib-1.2.5-r2 webpage:
+http://www.alsa-project.org
+
+alsa-lib-1.2.5-r2 installed size:
+1464 KiB
+
+alsa-lib-1.2.5-r2 license:
+LGPL-2.1-or-later
 
 ```
 
@@ -124,6 +140,23 @@ busybox-1.33.1-r3 installed size:
 
 busybox-1.33.1-r3 license:
 GPL-2.0-only
+
+```
+
+### `apk` package: `ca-certificates`
+
+```console
+ca-certificates-20191127-r5 description:
+Common CA certificates PEM files from Mozilla
+
+ca-certificates-20191127-r5 webpage:
+https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
+
+ca-certificates-20191127-r5 installed size:
+672 KiB
+
+ca-certificates-20191127-r5 license:
+MPL-2.0 AND MIT
 
 ```
 
@@ -212,37 +245,88 @@ FTL GPL-2.0-or-later
 
 ```
 
-### `apk` package: `glibc`
+### `apk` package: `giflib`
 
 ```console
-glibc-2.33-r0 description:
-GNU C Library compatibility layer
+giflib-5.2.1-r0 description:
+A library for reading and writing GIF images
 
-glibc-2.33-r0 webpage:
-https://github.com/sgerrand/alpine-pkg-glibc
+giflib-5.2.1-r0 webpage:
+https://sourceforge.net/projects/giflib/
 
-glibc-2.33-r0 installed size:
-9224 KiB
+giflib-5.2.1-r0 installed size:
+52 KiB
 
-glibc-2.33-r0 license:
-LGPL
+giflib-5.2.1-r0 license:
+MIT
 
 ```
 
-### `apk` package: `glibc-bin`
+### `apk` package: `java-cacerts`
 
 ```console
-glibc-bin-2.33-r0 description:
-GNU C Library compatibility layer
+java-cacerts-1.0-r1 description:
+Script to update java cacerts store
 
-glibc-bin-2.33-r0 webpage:
-https://github.com/sgerrand/alpine-pkg-glibc
+java-cacerts-1.0-r1 webpage:
+https://git.alpinelinux.org/aports/tree/community/java-cacerts
 
-glibc-bin-2.33-r0 installed size:
-2572 KiB
+java-cacerts-1.0-r1 installed size:
+32 KiB
 
-glibc-bin-2.33-r0 license:
-LGPL
+java-cacerts-1.0-r1 license:
+MIT
+
+```
+
+### `apk` package: `java-common`
+
+```console
+java-common-0.4-r0 description:
+Java common (updates java links)
+
+java-common-0.4-r0 webpage:
+https://git.alpinelinux.org/aports/
+
+java-common-0.4-r0 installed size:
+12 KiB
+
+java-common-0.4-r0 license:
+GPL-2.0-or-later
+
+```
+
+### `apk` package: `lcms2`
+
+```console
+lcms2-2.12-r1 description:
+Color Management Engine
+
+lcms2-2.12-r1 webpage:
+http://www.littlecms.com
+
+lcms2-2.12-r1 installed size:
+344 KiB
+
+lcms2-2.12-r1 license:
+MIT GPL-3.0-only
+
+```
+
+### `apk` package: `libbsd`
+
+```console
+libbsd-0.11.3-r0 description:
+commonly-used BSD functions not implemented by all libcs
+
+libbsd-0.11.3-r0 webpage:
+https://libbsd.freedesktop.org/
+
+libbsd-0.11.3-r0 installed size:
+80 KiB
+
+libbsd-0.11.3-r0 license:
+BSD
 
 ```
 
@@ -297,6 +381,23 @@ OpenSSL
 
 ```
 
+### `apk` package: `libffi`
+
+```console
+libffi-3.3-r2 description:
+A portable, high level programming interface to various calling conventions.
+
+libffi-3.3-r2 webpage:
+https://sourceware.org/libffi
+
+libffi-3.3-r2 installed size:
+52 KiB
+
+libffi-3.3-r2 license:
+MIT
+
+```
+
 ### `apk` package: `libfontenc`
 
 ```console
@@ -314,20 +415,37 @@ MIT
 
 ```
 
-### `apk` package: `libgcc`
+### `apk` package: `libjpeg-turbo`
 
 ```console
-libgcc-10.3.1_git20210424-r2 description:
-GNU C compiler runtime libraries
+libjpeg-turbo-2.1.0-r0 description:
+Accelerated baseline JPEG compression and decompression library
 
-libgcc-10.3.1_git20210424-r2 webpage:
-https://gcc.gnu.org
+libjpeg-turbo-2.1.0-r0 webpage:
+https://libjpeg-turbo.org/
 
-libgcc-10.3.1_git20210424-r2 installed size:
-112 KiB
+libjpeg-turbo-2.1.0-r0 installed size:
+1076 KiB
 
-libgcc-10.3.1_git20210424-r2 license:
-GPL-2.0-or-later LGPL-2.1-or-later
+libjpeg-turbo-2.1.0-r0 license:
+BSD-3-Clause IJG Zlib
+
+```
+
+### `apk` package: `libmd`
+
+```console
+libmd-1.0.3-r0 description:
+Message Digest functions from BSD systems
+
+libmd-1.0.3-r0 webpage:
+https://www.hadrons.org/software/libmd/
+
+libmd-1.0.3-r0 installed size:
+56 KiB
+
+libmd-1.0.3-r0 license:
+Public Domain
 
 ```
 
@@ -382,6 +500,23 @@ OpenSSL
 
 ```
 
+### `apk` package: `libtasn1`
+
+```console
+libtasn1-4.17.0-r0 description:
+The ASN.1 library used in GNUTLS
+
+libtasn1-4.17.0-r0 webpage:
+https://www.gnu.org/software/gnutls/
+
+libtasn1-4.17.0-r0 installed size:
+88 KiB
+
+libtasn1-4.17.0-r0 license:
+LGPL-2.1-or-later
+
+```
+
 ### `apk` package: `libuuid`
 
 ```console
@@ -396,6 +531,142 @@ libuuid-2.37-r0 installed size:
 
 libuuid-2.37-r0 license:
 GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND
+
+```
+
+### `apk` package: `libx11`
+
+```console
+libx11-1.7.2-r0 description:
+X11 client-side library
+
+libx11-1.7.2-r0 webpage:
+http://xorg.freedesktop.org/
+
+libx11-1.7.2-r0 installed size:
+3240 KiB
+
+libx11-1.7.2-r0 license:
+custom:XFREE86
+
+```
+
+### `apk` package: `libxau`
+
+```console
+libxau-1.0.9-r0 description:
+X11 authorisation library
+
+libxau-1.0.9-r0 webpage:
+http://xorg.freedesktop.org/
+
+libxau-1.0.9-r0 installed size:
+28 KiB
+
+libxau-1.0.9-r0 license:
+MIT
+
+```
+
+### `apk` package: `libxcb`
+
+```console
+libxcb-1.14-r2 description:
+X11 client-side library
+
+libxcb-1.14-r2 webpage:
+https://xcb.freedesktop.org
+
+libxcb-1.14-r2 installed size:
+996 KiB
+
+libxcb-1.14-r2 license:
+MIT
+
+```
+
+### `apk` package: `libxdmcp`
+
+```console
+libxdmcp-1.1.3-r0 description:
+X11 Display Manager Control Protocol library
+
+libxdmcp-1.1.3-r0 webpage:
+http://xorg.freedesktop.org/
+
+libxdmcp-1.1.3-r0 installed size:
+40 KiB
+
+libxdmcp-1.1.3-r0 license:
+MIT
+
+```
+
+### `apk` package: `libxext`
+
+```console
+libxext-1.3.4-r0 description:
+X11 miscellaneous extensions library
+
+libxext-1.3.4-r0 webpage:
+http://xorg.freedesktop.org/
+
+libxext-1.3.4-r0 installed size:
+84 KiB
+
+libxext-1.3.4-r0 license:
+MIT
+
+```
+
+### `apk` package: `libxi`
+
+```console
+libxi-1.7.10-r0 description:
+X11 Input extension library
+
+libxi-1.7.10-r0 webpage:
+https://www.x.org
+
+libxi-1.7.10-r0 installed size:
+76 KiB
+
+libxi-1.7.10-r0 license:
+MIT AND X11
+
+```
+
+### `apk` package: `libxrender`
+
+```console
+libxrender-0.9.10-r3 description:
+X Rendering Extension client library
+
+libxrender-0.9.10-r3 webpage:
+http://xorg.freedesktop.org/
+
+libxrender-0.9.10-r3 installed size:
+56 KiB
+
+libxrender-0.9.10-r3 license:
+custom
+
+```
+
+### `apk` package: `libxtst`
+
+```console
+libxtst-1.2.3-r3 description:
+X11 Testing -- Resource extension library
+
+libxtst-1.2.3-r3 webpage:
+https://wiki.freedesktop.org/xorg/
+
+libxtst-1.2.3-r3 installed size:
+40 KiB
+
+libxtst-1.2.3-r3 license:
+custom
 
 ```
 
@@ -481,6 +752,74 @@ ncurses-terminfo-base-6.2_p20210612-r0 installed size:
 
 ncurses-terminfo-base-6.2_p20210612-r0 license:
 MIT
+
+```
+
+### `apk` package: `openjdk11-jre`
+
+```console
+openjdk11-jre-11.0.11_p9-r0 description:
+Oracle OpenJDK 11 (JRE)
+
+openjdk11-jre-11.0.11_p9-r0 webpage:
+https://github.com/openjdk/jdk11u
+
+openjdk11-jre-11.0.11_p9-r0 installed size:
+696 KiB
+
+openjdk11-jre-11.0.11_p9-r0 license:
+GPL-2.0-with-classpath-exception
+
+```
+
+### `apk` package: `openjdk11-jre-headless`
+
+```console
+openjdk11-jre-headless-11.0.11_p9-r0 description:
+Oracle OpenJDK 11 (JRE headless)
+
+openjdk11-jre-headless-11.0.11_p9-r0 webpage:
+https://github.com/openjdk/jdk11u
+
+openjdk11-jre-headless-11.0.11_p9-r0 installed size:
+159 MiB
+
+openjdk11-jre-headless-11.0.11_p9-r0 license:
+GPL-2.0-with-classpath-exception
+
+```
+
+### `apk` package: `p11-kit`
+
+```console
+p11-kit-0.23.22-r0 description:
+Library for loading and sharing PKCS#11 modules
+
+p11-kit-0.23.22-r0 webpage:
+https://p11-glue.freedesktop.org/
+
+p11-kit-0.23.22-r0 installed size:
+1200 KiB
+
+p11-kit-0.23.22-r0 license:
+BSD-3-Clause
+
+```
+
+### `apk` package: `p11-kit-trust`
+
+```console
+p11-kit-trust-0.23.22-r0 description:
+System trust module from p11-kit
+
+p11-kit-trust-0.23.22-r0 webpage:
+https://p11-glue.freedesktop.org/
+
+p11-kit-trust-0.23.22-r0 installed size:
+452 KiB
+
+p11-kit-trust-0.23.22-r0 license:
+BSD-3-Clause
 
 ```
 
