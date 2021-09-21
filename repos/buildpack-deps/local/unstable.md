@@ -1833,21 +1833,13 @@ Licenses: (parsed from: `/usr/share/doc/libilmbase-dev/copyright`, `/usr/share/d
 - `boost`
 - `ilmbase`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ilmbase=2.5.7-1
-'http://deb.debian.org/debian/pool/main/i/ilmbase/ilmbase_2.5.7-1.dsc' ilmbase_2.5.7-1.dsc 2483 SHA256:f267a0c5789c6ade3895dd7aebb2570d4ca5a0ca17e3d2b713296f3f54b13001
-'http://deb.debian.org/debian/pool/main/i/ilmbase/ilmbase_2.5.7.orig.tar.gz' ilmbase_2.5.7.orig.tar.gz 27539574 SHA256:36ecb2290cba6fc92b2ec9357f8dc0e364b4f9a90d727bf9a57c84760695272d
-'http://deb.debian.org/debian/pool/main/i/ilmbase/ilmbase_2.5.7.orig.tar.gz.asc' ilmbase_2.5.7.orig.tar.gz.asc 27539574 SHA256:36ecb2290cba6fc92b2ec9357f8dc0e364b4f9a90d727bf9a57c84760695272d
-'http://deb.debian.org/debian/pool/main/i/ilmbase/ilmbase_2.5.7-1.debian.tar.xz' ilmbase_2.5.7-1.debian.tar.xz 14420 SHA256:ea9731cfbdd8069c5e042d511788941c3bce30ad8346e812c2072ffa5f63e984
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ilmbase/2.5.7-1/
 
-- https://sources.debian.net/src/ilmbase/2.5.7-1/ (for browsing the source)
-- https://sources.debian.net/src/ilmbase/2.5.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ilmbase/2.5.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.3`
 
@@ -4425,20 +4417,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.48.9+ds1-2
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.48.9+ds1-2.dsc' pango1.0_1.48.9+ds1-2.dsc 3638 SHA256:abe464b8b13275bea0071e54b2a5ff3567fd4aae0f3f9a76f87b2c0a30c4090d
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.48.9+ds1.orig.tar.xz' pango1.0_1.48.9+ds1.orig.tar.xz 715648 SHA256:cca16458cd6885e6a79b2e2e581da3d663be03f5cf098dba37e7c3410531b9e5
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.48.9+ds1-2.debian.tar.xz' pango1.0_1.48.9+ds1-2.debian.tar.xz 46424 SHA256:44ff212e6197396ccce85e808a5a7a2bc739f17679be3ff52b1973aa68286976
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.48.9+ds1-2/
 
-- https://sources.debian.net/src/pango1.0/1.48.9+ds1-2/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.48.9+ds1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.48.9+ds1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.6-7`
 
