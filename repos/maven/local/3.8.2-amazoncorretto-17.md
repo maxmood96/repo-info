@@ -1,10 +1,10 @@
-# `maven:3.8.2-amazoncorretto-16`
+# `maven:3.8.2-amazoncorretto-17`
 
 ## Docker Metadata
 
-- Image ID: `sha256:253cf7ddc1e13cbaaae50f24c028516529daa5ae0e830beeda29f4bce950ffae`
-- Created: `2021-09-09T01:25:50.382207429Z`
-- Virtual Size: ~ 503.28 Mb  
+- Image ID: `sha256:be7b59cd05ad31fd8f1efd2b10bc01081938c3173f543a700d277317a772afd5`
+- Created: `2021-09-21T20:27:23.959476858Z`
+- Virtual Size: ~ 483.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `JAVA_HOME=/usr/lib/jvm/java-16-amazon-corretto`
+  - `JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 
@@ -438,7 +438,7 @@ Enabling amzn2-core-source repository
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ea48783326144ed7e92c4d0113dbe97c2ea9e53b2dcb52459147ab0e0736b2d2//../../../../../blobstore/968c079ef8a8a2efee76ff59cd99e06dd242b8813960171d0f5c23f4a6eb0bb2/texinfo-5.1-5.amzn2.src.rpm
 ```
 
-### `rpm` package: `java-16-amazon-corretto-devel-16.0.2.7-1.x86_64`
+### `rpm` package: `java-17-amazon-corretto-devel-17.0.0.35-1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
