@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a7efea365e22e86832e90a8285c0adbc7a3017d1775a4ffc5277a6333f560173`
-- Created: `2021-08-31T03:31:29.375503877Z`
+- Image ID: `sha256:40160508e92a2f1cfcc0bec73af00b3594cca0aa036bb456ab479f10b704a2f5`
+- Created: `2021-09-22T19:56:18.825706454Z`
 - Virtual Size: ~ 224.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1546,14 +1546,9 @@ Licenses: (parsed from: `/usr/share/doc/libprocps8/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:3.3.16-1ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16-1ubuntu2.2.dsc' procps_3.3.16-1ubuntu2.2.dsc 2242 SHA512:657223e718cd906db51163974224c04539fdc4a9980901448a11758ddcc7585988dfb55a93b33252920db358d7aa71b113b65a14b6c89c51de824eee60d02458
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16.orig.tar.xz' procps_3.3.16.orig.tar.xz 621892 SHA512:38db4f72fe40c2f027b23b18bbc8c29cfcdf6bcdb029199fe4bebede153943aa884157f56e792c399f9a4949cc514687500bb99a75a5e7ad7b9e878f52090304
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16-1ubuntu2.2.debian.tar.xz' procps_3.3.16-1ubuntu2.2.debian.tar.xz 33748 SHA512:1f6cb098dca2a6d58b9dc23e627bc421639fcf42e101295a868ba87600dacecdf4c87fe9694446f2d74a4be9017321c239a6dd88f6098b4954bf72b43b6ecff6
-```
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-2build1`
 
