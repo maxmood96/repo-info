@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fe9154a0461253d629e5797bc8d155c8b76a2617b8262bded7f0e2a880d431bf`
-- Created: `2021-09-13T18:27:25.363337837Z`
+- Image ID: `sha256:43b2cc292b613c07a191e35293e4d70c465d9c8caf4cc80fd672cd22553cd22a`
+- Created: `2021-09-21T19:21:35.955647747Z`
 - Virtual Size: ~ 1.41 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -820,32 +820,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/expat/2.2.6-2+deb10u1/ (for browsing the source)
 - https://sources.debian.net/src/expat/2.2.6-2+deb10u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/expat/2.2.6-2+deb10u1/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `feedparser=5.2.1-1`
-
-Binary Packages:
-
-- `python3-feedparser=5.2.1-1`
-
-Licenses: (parsed from: `/usr/share/doc/python3-feedparser/copyright`)
-
-- `BSD-2-clause`
-- `Feedparser-documentation-license`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris feedparser=5.2.1-1
-'http://deb.debian.org/debian/pool/main/f/feedparser/feedparser_5.2.1-1.dsc' feedparser_5.2.1-1.dsc 1830 SHA256:411970f4af239c290661ce5173767b986d076e063262d5de3e27dd02e62c7fe3
-'http://deb.debian.org/debian/pool/main/f/feedparser/feedparser_5.2.1.orig.tar.bz2' feedparser_5.2.1.orig.tar.bz2 192328 SHA256:ce875495c90ebd74b179855449040003a1beb40cd13d5f037a0654251e260b02
-'http://deb.debian.org/debian/pool/main/f/feedparser/feedparser_5.2.1-1.debian.tar.xz' feedparser_5.2.1-1.debian.tar.xz 8000 SHA256:f53b3e61adf4e41488512da037edefe728557f41dfe2500e5f43cfa6e352f529
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/feedparser/5.2.1-1/ (for browsing the source)
-- https://sources.debian.net/src/feedparser/5.2.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/feedparser/5.2.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20190209-2`
 
@@ -9525,11 +9499,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/npth/1.6-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/npth/1.6-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `odoo=14.0.20210913`
+### `dpkg` source package: `odoo=14.0.20210921`
 
 Binary Packages:
 
-- `odoo=14.0.20210913`
+- `odoo=14.0.20210921`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
