@@ -1613,20 +1613,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `LGPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.68.0-2
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.68.0-2.dsc' gobject-introspection_1.68.0-2.dsc 3072 SHA256:6346658b17b178950fbd9500af17f46a75bd4c33c9e4aa1a097b69ce83cb7410
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.68.0.orig.tar.xz' gobject-introspection_1.68.0.orig.tar.xz 1019732 SHA256:d229242481a201b84a0c66716de1752bca41db4133672cfcfb37c93eb6e54a27
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.68.0-2.debian.tar.xz' gobject-introspection_1.68.0-2.debian.tar.xz 24336 SHA256:543e820840f9f8cc9962d343fedba302b0671a198192792e1e828a8dd430449c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gobject-introspection/1.68.0-2/
 
-- https://sources.debian.net/src/gobject-introspection/1.68.0-2/ (for browsing the source)
-- https://sources.debian.net/src/gobject-introspection/1.68.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gobject-introspection/1.68.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.14-1`
 
@@ -4179,20 +4172,13 @@ Licenses: (parsed from: `/usr/share/doc/libnuma1/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris numactl=2.0.12-1
-'http://deb.debian.org/debian/pool/main/n/numactl/numactl_2.0.12-1.dsc' numactl_2.0.12-1.dsc 2033 SHA256:3b308b110de0728c5524b3135d871e55ebb6e4b93cdc583e93c4222219fe4d08
-'http://deb.debian.org/debian/pool/main/n/numactl/numactl_2.0.12.orig.tar.gz' numactl_2.0.12.orig.tar.gz 421425 SHA256:2e67513a62168de4777da20d89cdab66d75bcd3badc4256f6b190a8111cd93f8
-'http://deb.debian.org/debian/pool/main/n/numactl/numactl_2.0.12-1.debian.tar.xz' numactl_2.0.12-1.debian.tar.xz 6756 SHA256:966724cac8f309b33959ae9922b3e5ab58ea821e2e802d96425e1eaada639a33
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/numactl/2.0.12-1/
 
-- https://sources.debian.net/src/numactl/2.0.12-1/ (for browsing the source)
-- https://sources.debian.net/src/numactl/2.0.12-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/numactl/2.0.12-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openexr=2.5.7-1`
 
@@ -5104,20 +5090,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=247.9-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_247.9-1.dsc' systemd_247.9-1.dsc 5167 SHA256:f07d99148951e380550feae1e2c8d5f6143699376a6dec270bdc6ac02c3ac3ee
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_247.9.orig.tar.gz' systemd_247.9.orig.tar.gz 9915803 SHA256:629b8c895efa000b921092c7a565680c66dcd0ec74ed11cb2dd2b6701492675d
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_247.9-1.debian.tar.xz' systemd_247.9-1.debian.tar.xz 163168 SHA256:2f9192bdc5a9a2b5c6b5cf38111b9e7b7f4cac16cae965dfff851f5165b9c2f9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/247.9-1/
 
-- https://sources.debian.net/src/systemd/247.9-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/247.9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/247.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.96-7`
 
@@ -5130,21 +5109,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=2.96-7
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.96-7.dsc' sysvinit_2.96-7.dsc 2586 SHA256:f8e7afbf2f6a5d1e31bbe75ebebdf6a14917494c32868ead3769f5555cbab62c
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.96.orig.tar.xz' sysvinit_2.96.orig.tar.xz 122164 SHA256:2a2e26b72aa235a23ab1c8471005f890309ce1196c83fbc9413c57b9ab62b587
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.96.orig.tar.xz.asc' sysvinit_2.96.orig.tar.xz.asc 313 SHA256:dfc184b95da12c8c888c8ae6b0f26fe8a23b07fbcdd240f6600a8a78b9439fa0
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.96-7.debian.tar.xz' sysvinit_2.96-7.debian.tar.xz 129040 SHA256:c56a9576fccfd85b4463d4a1bce2f8b006cc4228136c34222734738a4880758f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/2.96-7/
 
-- https://sources.debian.net/src/sysvinit/2.96-7/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/2.96-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/2.96-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.34+dfsg-1`
 
